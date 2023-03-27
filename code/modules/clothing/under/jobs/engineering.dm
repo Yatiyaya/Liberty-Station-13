@@ -4,14 +4,7 @@
 	desc = "A blue-yellow engineering jumpsuit worn by Guild Masters. It has good radiation shielding."
 	icon_state = "chiefengineer"
 	item_state = "g_suit"
-	armor_list = list(
-		melee = 0,
-		bullet = 0,
-		energy = 0,
-		bomb = 0,
-		bio = 0,
-		rad = 30
-	)
+	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 30)
 
 /obj/item/clothing/under/rank/exultant/verb/toggle_style()
 	set name = "Adjust Style"
