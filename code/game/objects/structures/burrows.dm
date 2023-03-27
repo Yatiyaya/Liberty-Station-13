@@ -61,6 +61,7 @@
 	var/reinforcements = 10 //Maximum number of times this burrow may recieve reinforcements
 
 	var/deepmaint_entry_point = FALSE //Will this burrow turn into a deep maint entry point upon getting collapsed?
+	var/deep_disable = TRUE //Disables random chance burrows. Unless someone maps them in or uses a different method to create a hole.
 
 	//Soj edit
 	var/dug_out = FALSE
@@ -95,7 +96,7 @@
 		break_open(TRUE)
 
 	var/turf/T = get_turf(src)
-	if(prob(3) && T.z == 2) //Bottom floor of maints only
+	if(prob(3) && T.z == 2 && !deep_disable) //Bottom floor of maints only
 		deepmaint_entry_point = TRUE
 
 	if(deepmaint_entry_point) //so we can tell at a glace what is a deep maints borrow
