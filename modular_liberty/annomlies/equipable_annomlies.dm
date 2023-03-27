@@ -2,7 +2,7 @@
 	name = "Coder Annomlie"
 	desc = "Something not meant to be seen by the eyes of players, \
 	sad."
-	icon = 'modular_sojourn/annomlies/stalker_annomlies.dmi'
+	icon = 'modular_liberty/annomlies/stalker_annomlies.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	icon_state = "wow_this_is_trash"
 	item_state = "wow_this_is_trash"

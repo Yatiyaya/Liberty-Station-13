@@ -291,7 +291,7 @@
 /obj/structure/bed/roller/attackby(obj/item/I as obj, mob/user as mob)
 	if(istool(I) || istype(I, /obj/item/stack) || I.has_quality(QUALITY_WIRE_CUTTING) || istype(I, /obj/item/bedsheet)) // Rework into Eris tool qualities, preventing padding, bedsheeting and accidentally destroying it. - Seb
 		return
-	if(iv_stand && !beaker && istype(I, /obj/item/reagent_containers/blood)) // Sojourn reagent_containers repathing edit. - Seb
+	if(iv_stand && !beaker && istype(I, /obj/item/reagent_containers/blood)) // Liberty reagent_containers repathing edit. - Seb
 		if(!user.unEquip(I, src))
 			return
 		to_chat(user, "You attach \the [I] to \the [src].")

@@ -2,7 +2,7 @@
 /obj/item/bluespace_leak
 	name = "Leaking bluespace"
 	desc = "It looks like some kind of waterfall made out of space, seemingly endlessly flowing in place. Best not to get close to it."
-	icon = 'modular_sojourn/spaceleak.dmi'
+	icon = 'modular_liberty/spaceleak.dmi'
 	icon_state = "coder_sprite"
 	anchored = TRUE
 	layer = FLY_LAYER

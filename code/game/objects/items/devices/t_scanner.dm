@@ -72,7 +72,7 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["default eris"] = TRUE
-	options["default sojourn"] = FALSE
+	options["default liberty"] = FALSE
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
