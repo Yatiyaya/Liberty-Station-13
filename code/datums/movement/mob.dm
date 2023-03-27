@@ -312,7 +312,7 @@
 	for (var/obj/item/grab/G in mob.grabbed_by)
 		G.adjust_position()
 	*/
-	//Sojourn pixel shift port
+	//Liberty pixel shift port
 	mob.pixel_x = mob.default_pixel_x//Reset pixel shifting x
 	mob.pixel_y = mob.default_pixel_y//Reset pixel shifting y
 	//End of edit

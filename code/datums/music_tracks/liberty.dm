@@ -1,4 +1,4 @@
-/*Sojourn's main lobby music - organized into one file for simplicity and easy creditation. 
+/*Liberty's main lobby music - organized into one file for simplicity and easy creditation.
 Various copyright free songs found using Free Music Archives, protected under cc 3.0.*/
 
 /music_track/almostthere
@@ -40,7 +40,7 @@ Various copyright free songs found using Free Music Archives, protected under cc
 
 
 /*Following music provided by GrimbeardX / Thousandface - permitted to use with proper creditation of his works. Upon request of the artist these can be removed at any time.
-- Not under fair-use copyright (Such as the previous tracks above) but rather given permission for its use by the artist through Sojourn Community Liason Kayzach.*/
+- Not under fair-use copyright (Such as the previous tracks above) but rather given permission for its use by the artist through Liberty Community Liason Kayzach.*/
 
 /music_track/tubeworm
 artist = "GrimbeardX"

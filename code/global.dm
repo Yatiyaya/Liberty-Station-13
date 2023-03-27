@@ -41,7 +41,7 @@ var/const/boss_name			= "High Council"
 var/const/boss_short		= "High Council"
 var/const/company_name		= "Nadezhda Colony"
 var/const/company_short		= "Nadezhda"
-var/game_version			= "Sojourn"
+var/game_version			= "Liberty"
 var/changelog_hash			= ""
 var/game_year				= (text2num(time2text(world.realtime, "YYYY")) + 629)
 

@@ -1,4 +1,4 @@
-//Random mob spawners unique to sojourn, these should primarily be ones for the colony and surrounding areas.
+//Random mob spawners unique to liberty, these should primarily be ones for the colony and surrounding areas.
 //renders
 /obj/random/mob/render
 	name = "random render"

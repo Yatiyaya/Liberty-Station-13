@@ -49,7 +49,7 @@
 	//Character stats modifers
 	var/list/stat_modifiers = list()
 
-	// Sojourn Additions
+	// Liberty Additions
 
 	//Changes max hp
 	var/health_modifier = 0
@@ -63,7 +63,7 @@
 	/// Does this job spawn with an ID?
 	var/has_id = TRUE
 
-	// End Sojourn Additions
+	// End Liberty Additions
 
 	var/list/perks = list()
 

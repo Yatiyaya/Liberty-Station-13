@@ -3,7 +3,7 @@
 	w_class = ITEM_SIZE_SMALL
 	name = "randomizer card box"
 	desc = "A small box that self shuffles every time a card is added or drawn, making it always random. This only fits and works with CardCarpCo Cards. Alt Click to draw a card."
-	icon = 'modular_sojourn/cardgame_2/cardgame_sprites.dmi'
+	icon = 'modular_liberty/cardgame_2/cardgame_sprites.dmi'
 	icon_state = "card_holder"
 	var/obj/item/card_carp/card_target = null //What card were going to get
 	var/endless = FALSE //Are we going to give endless cards?

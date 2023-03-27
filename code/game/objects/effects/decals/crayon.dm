@@ -951,7 +951,8 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 		// Burrow
 		if(istype(carpy, /obj/item/card_carp/warren))
 			var/obj/structure/burrow/diggy_hole = new /obj/structure/burrow(carpy.loc)
-			diggy_hole.deepmaint_entry_point = TRUE
+			if(!diggy_hole.deep_disable)
+				diggy_hole.deepmaint_entry_point = TRUE
 			diggy_hole.isRevealed = TRUE
 			diggy_hole.isSealed = FALSE
 			diggy_hole.invisibility = 0

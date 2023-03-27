@@ -488,7 +488,7 @@
 #define VIS_OBJS			20
 #define VIS_MOBS			21
 
-// Sojourn changes
+// Liberty changes
 
 #define VIS_CH_STATUS_R		22
 #define VIS_CH_HEALTH_VR	23
@@ -527,7 +527,7 @@
 #define EXAMINE_SKIPLEGS			0x0080
 #define EXAMINE_SKIPFEET			0x0100
 
-// Sojourn Additions End
+// Liberty Additions End
 
 #define RANDOM_BLOOD_TYPE pick(4;"O-", 36;"O+", 3;"A-", 28;"A+", 1;"B-", 20;"B+", 1;"AB-", 5;"AB+")
 
