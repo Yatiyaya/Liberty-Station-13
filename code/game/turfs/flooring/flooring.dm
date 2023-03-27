@@ -233,13 +233,20 @@ var/list/flooring_types
 		return
 	var/mob/living/carbon/human/our_trippah = M
 	if(MOVING_QUICKLY(M))
-		if(M.stats.getPerk(PERK_SURE_STEP))
+		if(M.incapacitated() || M.lying) //We cannot fall over again once we already fallen over once
 			return
- // The art of calculating the vectors required to avoid tripping on the metal beams requires big quantities of brain power
-		if(prob(50 - our_trippah.stats.getStat(STAT_COG))) //50 cog makes you unable to trip
-			if(!our_trippah.back)
-				to_chat(our_trippah, SPAN_WARNING("You would have tripped if you didn't balance."))
+		if(M.stats.getPerk(PERK_KLUTZ) || our_trippah.stats.getStat(STAT_VIG) <= 0) //Negative Vig just makes you faceslam hard. This is equal to rolling uneven number with 1 Hand/Eye Coordination. Klutz is self explanatory
+			if(prob(60))
+				to_chat(our_trippah, SPAN_WARNING("Your poor motorics made you slam hard into the plating!"))
+				our_trippah.adjustBruteLoss(15)
+				our_trippah.trip(src, 6)
 				return
+		if(M.stats.getPerk(PERK_SURE_STEP))//You trip even with this perk if klutz or vig below 0
+			return
+		if(!our_trippah.back)
+			return
+		if(prob(50 - our_trippah.stats.getStat(STAT_VIG))) //50 VIG makes you unable to trip
+			to_chat(our_trippah, SPAN_WARNING("You gently slam into the plating!"))
 			our_trippah.adjustBruteLoss(5)
 			our_trippah.trip(src, 6)
 			return
