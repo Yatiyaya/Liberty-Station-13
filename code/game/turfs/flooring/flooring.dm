@@ -235,6 +235,8 @@ var/list/flooring_types
 	if(MOVING_QUICKLY(M))
 		if(M.incapacitated() || M.lying) //We cannot fall over again once we already fallen over once
 			return
+		if(!our_trippah.back) //We cannot trip if we balance ourselves with not having a backpack, including Klutz cause I don't feel like being so mean.
+			return
 		if(M.stats.getPerk(PERK_KLUTZ) || our_trippah.stats.getStat(STAT_VIG) <= 0) //Negative Vig just makes you faceslam hard. This is equal to rolling uneven number with 1 Hand/Eye Coordination. Klutz is self explanatory
 			if(prob(60))
 				to_chat(our_trippah, SPAN_WARNING("Your poor motorics made you slam hard into the plating!"))
@@ -242,8 +244,6 @@ var/list/flooring_types
 				our_trippah.trip(src, 6)
 				return
 		if(M.stats.getPerk(PERK_SURE_STEP))//You trip even with this perk if klutz or vig below 0
-			return
-		if(!our_trippah.back)
 			return
 		if(prob(50 - our_trippah.stats.getStat(STAT_VIG))) //50 VIG makes you unable to trip
 			to_chat(our_trippah, SPAN_WARNING("You gently slam into the plating!"))
