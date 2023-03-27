@@ -27,7 +27,7 @@
 	Cards must be played first in the back row and only move onto the front row at the end of the owner's turn. Only cards moving into or already present in the front row may attack.<BR>\n\
 	If a card has no opposing card opposite to it, the card deals damage the other player.<BR>\n\
 	When a player takes damage, the scale or tally system gets moved towards the person equal to the total amount of damage taken, when a player has 5 or more damage, they lose."
-	icon = 'modular_sojourn/cardgame_2/cardgame_sprites.dmi'
+	icon = 'modular_liberty/cardgame_2/cardgame_sprites.dmi'
 	icon_state = "cardblank"
 	var/cant_box = FALSE
 	w_class = ITEM_SIZE_TINY

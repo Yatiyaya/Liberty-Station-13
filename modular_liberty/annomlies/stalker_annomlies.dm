@@ -2,7 +2,7 @@
 	name = "Coder Annomlie"
 	desc = "Something not meant to be seen by the eyes of players, \
 	sad."
-	icon = 'modular_sojourn/annomlies/stalker_annomlies.dmi'
+	icon = 'modular_liberty/annomlies/stalker_annomlies.dmi'
 	var/active = FALSE
 	pixel_x = 8
 	pixel_y = 8
