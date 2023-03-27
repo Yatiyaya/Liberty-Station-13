@@ -197,3 +197,15 @@ SUBSYSTEM_DEF(vote)
 	set name = "Vote"
 
 	SSvote.interface_client(client)
+
+//Edits
+/datum/controller/subsystem/vote/proc/start_restart_vote_loop()
+	addtimer(CALLBACK(src, /datum/controller/subsystem/vote/proc/recall_vote), 240 MINUTES)
+
+/datum/controller/subsystem/vote/proc/recall_vote_loop()
+	addtimer(CALLBACK(src, /datum/controller/subsystem/vote/proc/recall_vote), 60 MINUTES)
+
+/datum/controller/subsystem/vote/proc/recall_vote()
+	if(SSvote.active_vote) //No sneaky attempt to stop the recall vote
+		stop_vote()
+	start_vote(/datum/poll/restart)
