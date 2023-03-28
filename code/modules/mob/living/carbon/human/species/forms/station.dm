@@ -204,9 +204,9 @@
 	deform = 'icons/mob/human_races/r_def_nevrean.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
 
-/datum/species_form/soteria_synthetic
+/datum/species_form/capsa_synthetic
 	playable = FALSE
-	name = FORM_SOTSYNTH
+	name = FORM_CAPSASYNTH
 	blood_color = "#191919"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'
@@ -215,9 +215,9 @@
 	death_message = "falls over crashing to the ground as their electronic eyes fade off."
 	knockout_message = "has been knocked offline!"
 
-/datum/species_form/artificer_guild_synthetic
+/datum/species_form/terra_therma_synthetic
 	playable = FALSE
-	name = FORM_AGSYNTH
+	name = FORM_TERRAYNTH
 	blood_color = "#191919"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'
@@ -226,9 +226,9 @@
 	death_message = "falls over crashing to the ground as their electronic eyes fade off."
 	knockout_message = "has been knocked offline!"
 
-/datum/species_form/blackshield_synthetic
+/datum/species_form/liberty_synthetic
 	playable = FALSE
-	name = FORM_BSSYNTH
+	name = FORM_LIBYNTH
 	blood_color = "#191919"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'
