@@ -44,6 +44,8 @@
 		//Not porting bay's silly organ checking code here
 		tally += 1 //Small slowdown so wheelchairs aren't turbospeed
 	else
+		if(wear_suit && src.stats.getPerk(PERK_SECOND_SKIN))
+			tally += wear_suit.slowdown/2
 		if(wear_suit && !src.stats.getPerk(PERK_SECOND_SKIN))
 			tally += wear_suit.slowdown
 		if(shoes)

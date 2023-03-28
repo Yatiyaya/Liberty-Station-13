@@ -251,7 +251,7 @@
 	taste_sensitivity = TASTE_HYPERSENSITIVE
 	hunger_factor = 1.25
 	radiation_mod = 0.5
-	total_health = 150
+	total_health = 130
 	siemens_coefficient = 2
 
 	dark_color = "#ff0000"
@@ -292,7 +292,7 @@
 		)
 	permitted_wings = list()
 
-	perks = list(PERK_PERFECT_SHOT, PERK_ENHANCEDSENSES)
+	perks = list(PERK_ENHANCEDSENSES)
 
 /datum/species/kriosan/get_bodytype()
 	return "Kriosan"
@@ -312,6 +312,7 @@
 	blurb = "no."
 	taste_sensitivity = TASTE_DULL
 	hunger_factor = 1.25
+	total_health = 120
 
 	cold_level_1 = 240 //Default 270
 	cold_level_2 = 200 //Default 230
@@ -352,7 +353,7 @@
 	name_language = null
 	min_age = 18
 	max_age = 60
-	slowdown = -0.5
+	slowdown = -0.4
 	blurb = "no."
 	darksight = 2
 
@@ -521,7 +522,7 @@
 	min_age = 18
 	max_age = 90
 	spawn_flags = CAN_JOIN
-	total_health = 130                    // Burn damage multiplier.
+	total_health = 110                   // Burn damage multiplier.
 	radiation_mod = 0
 	darksight = 3
 

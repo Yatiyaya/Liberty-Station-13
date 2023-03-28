@@ -296,7 +296,7 @@
 
 /datum/perk/second_skin
 	name = "Second Skin"
-	desc = "Cindarites, be they bunker born or spacers, are used to wearing bulky enviromental suits. This life time of being acclimated to heavy clothing has become a second skin for many, allowing you to remove clothing instantly and never suffer slowdown from heavy armor."
+	desc = "Cindarites, be they bunker born or spacers, are used to wearing bulky enviromental suits. This life time of being acclimated to heavy clothing has become a second skin for many, allowing you to remove clothing instantly and only suffer half the slowdown from heavy armor."
 
 ///////////////////////////////////////////Opifex perks
 /datum/perk/opifex_backup
