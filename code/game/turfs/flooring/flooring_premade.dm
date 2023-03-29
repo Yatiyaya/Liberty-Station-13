@@ -472,6 +472,9 @@
 	name = "snow"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "snow"
+	temperature = 253.15
+	oxygen = MOLES_O2STANDARD * 1.14 //the multiplier is to compensate the lower pressure, to keep it breathable
+	nitrogen = MOLES_N2STANDARD *1.14
 
 /turf/simulated/floor/beach/coastline
 /turf/simulated/floor/plating/snow
