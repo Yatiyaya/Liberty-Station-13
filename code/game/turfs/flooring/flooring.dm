@@ -238,7 +238,7 @@ var/list/flooring_types
 		if(!our_trippah.back) //We cannot trip if we balance ourselves with not having a backpack, including Klutz cause I don't feel like being so mean.
 			return
 		if(M.stats.getPerk(PERK_KLUTZ) || our_trippah.stats.getStat(STAT_VIG) <= 0) //Negative Vig just makes you faceslam hard. This is equal to rolling uneven number with 1 Hand/Eye Coordination. Klutz is self explanatory
-			if(prob(60))
+			if(prob(60 - our_trippah.stats.getStat(STAT_VIG)))
 				to_chat(our_trippah, SPAN_WARNING("Your poor motorics made you slam hard into the plating!"))
 				our_trippah.adjustBruteLoss(15)
 				our_trippah.trip(src, 6)
