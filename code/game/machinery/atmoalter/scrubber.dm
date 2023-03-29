@@ -333,3 +333,17 @@
 
 /obj/machinery/portable_atmospherics/powered/scrubber/kriostreee/MolesForPressure(var/gasVolume)
 	return (ONE_ATMOSPHERE * gasVolume) / (R_IDEAL_GAS_EQUATION * T20C)
+
+/obj/machinery/portable_atmospherics/powered/scrubber/yggdrasil/cold
+	name = "Skadi Yggdrasil"
+	desc = "You feel cold breeze from winter itself near this tree."
+
+/obj/machinery/portable_atmospherics/powered/scrubber/yggdrasil/cold/Process()
+
+	var/datum/gas_mixture/environment = loc.return_air()
+
+	if(environment)
+		environment.temperature = 253 // around -20 celcius, therefore it needs 14% more moles to keep close to 100kpa
+		environment.gas = list("oxygen" = O2STANDARD * MolesForPressure(environment.volume) * 1.14, \
+							   "nitrogen" = N2STANDARD *  MolesForPressure(environment.volume) * 1.14)
+
