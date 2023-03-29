@@ -617,12 +617,14 @@
 	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate carnivore. You get very little nutrition from standard nutriment, but gain alot from meat and protein \
 	based products."
 	passivePerk = TRUE
+	icon_state = "snack_carn"
 
 /datum/perk/herbivore
 	name = "Herbivore"
 	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate herbivore. You get very little nutrition from standard protein, but gain alot from grown foods and glucose \
 	based products."
 	passivePerk = TRUE
+	icon_state = "snack_herb"
 
 ///////////////////////////////////// Slime perks
 /datum/perk/speed_boost
