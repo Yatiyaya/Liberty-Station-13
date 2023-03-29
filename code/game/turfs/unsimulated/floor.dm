@@ -17,5 +17,6 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "snow"
 	temperature = 253.15
-	oxygen = MOLES_O2STANDARD * 1.14    //multiplier to compensate the lower ressure
+	//multiplier to compensate the lower ressure
+	oxygen = MOLES_O2STANDARD * 1.14
 	nitrogen = MOLES_N2STANDARD * 1.14
