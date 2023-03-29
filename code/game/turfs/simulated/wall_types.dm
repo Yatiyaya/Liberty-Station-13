@@ -356,16 +356,3 @@
 	appearance = us
 
 	return under
-
-/obj/structure/crackedrock  //this is basically used for mapping air sources
-	name = "impassable cracked rock"
-	desc = "This rocks seems impossible to pass through normal means, but you can hear and feel a draft coming from the cracks in it."
-	icon = 'icons/turf/walls.dmi'
-	icon_state = "rock-dark"
-	blocks_air = 0
-	density = 1
-	opacity = 1
-	layer = BELOW_MOB_LAYER
-
-/obj/structure/crackedrock/ex_act(severity) //Making it indestructible, like shuttle walls
-    return 0
