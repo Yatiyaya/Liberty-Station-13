@@ -1,4 +1,4 @@
-/datum/category_item/setup_option/background/ethnicity/cindarbunker
+/datum/category_item/setup_option/background/ancestry/cindar_bunker
 	name = "Bunker Born"
 	desc = "Cindarites born on their death world of Cindar now reside in the radiation proofed bunkers deep underground. \
 			Such a living has its advantages and disadvantages, bunker born cindarites are very communal and focus heavily on maintaining over their domains to keep them in top condition. \
@@ -8,15 +8,15 @@
 	restricted_to_species = list(FORM_CINDAR)
 
 	stat_modifiers = list(
-		STAT_ROB = -5,
-		STAT_TGH = -5,
+		STAT_ROB = 0,
+		STAT_TGH = 0,
 		STAT_VIG = 0,
-		STAT_BIO = 5,
-		STAT_MEC = 5,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
 		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/cindarspacer
+/datum/category_item/setup_option/background/ancestry/cindar_spacer
 	name = "Spacer"
 	desc = "Many cindarites choose to leave the confines of their death world of Cindar and instead choose to become spacers, spending their entire lives living on traveling ships. \
 			Spacers often take work as engineers, merchants, and sometimes pirates as jobs are rarely ever steady. This broadens the already wide range of skills that most cindarites have, but \
@@ -25,10 +25,10 @@
 	restricted_to_species = list(FORM_CINDAR)
 
 	stat_modifiers = list(
-		STAT_ROB = 5,
+		STAT_ROB = 0,
 		STAT_TGH = 0,
 		STAT_VIG = 0,
 		STAT_BIO = 0,
-		STAT_MEC = 5,
-		STAT_COG = -10
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
