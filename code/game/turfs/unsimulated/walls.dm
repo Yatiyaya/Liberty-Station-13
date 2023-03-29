@@ -15,7 +15,7 @@
 
 /turf/unsimulated/wall/crackedrock
 	name = "impassable cracked rock"
-	description = "This rocks seems impossible to pass through normal means, but you can hear and feel a draft coming from the cracks in it."
+	description_info = "This rocks seems impossible to pass through normal means, but you can hear and feel a draft coming from the cracks in it."
 	icon = 'icons/turf/walls.dmi'
 	icon_state = "rock-dark"
 	blocks_air = 0
