@@ -52,7 +52,7 @@
 	M.add_chemical_effect(CE_TOXIN, -1)
 	M.add_chemical_effect(CE_BLOODCLOT, 0.4)
 	M.add_chemical_effect(CE_BLOODRESTORE, 1.1 * effect_multiplier) // Paramount due to how organ efficiency works
-	M.add_chemical_effect(CE_PAINKILLER, 45, TRUE) // Come on, stand up! You can do it!
+	M.add_chemical_effect(CE_PAINKILLER, 30, TRUE) // Come on, stand up! You can do it!
 	M.add_chemical_effect(CE_STABLE)
 
 /datum/reagent/stim/kriotol
@@ -63,14 +63,17 @@
 	reagent_state = LIQUID
 	color = "#5f95e2"
 	nerve_system_accumulations = 0
+	addiction_chance = 100
 	appear_in_default_catalog = FALSE
 
 /datum/reagent/stim/kriotol/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
-	M.stats.addTempStat(STAT_TGH, 10, STIM_TIME, "kriotol")
-	M.stats.addTempStat(STAT_VIG, 20, STIM_TIME, "kriotol")
+	M.stats.addTempStat(STAT_VIG, 30, STIM_TIME, "kriotol")
 	M.add_chemical_effect(CE_DARKSIGHT, SEE_INVISIBLE_NOLIGHTING)
-	M.add_chemical_effect(CE_SPEEDBOOST, 0.2)
 	M.add_chemical_effect(CE_PULSE, 2)
+
+/datum/reagent/drug/robustitol/withdrawal_act(mob/living/carbon/M)
+	M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_BASIC, STIM_TIME, "kriotol_w")
+	M.stats.addTempStat(STAT_VIG, -STAT_LEVEL_ADEPT, STIM_TIME, "kriotol_w") //Just peaked in performance, go calm down just like the other aliens
 
 /datum/reagent/stim/robustitol
 	name = "Robustitol"
@@ -85,15 +88,16 @@
 
 /datum/reagent/stim/robustitol/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.stats.addTempStat(STAT_TGH, 60, STIM_TIME, "robustitol")
-	M.stats.addTempStat(STAT_ROB, 60, STIM_TIME, "robustitol")
-	M.stats.addTempStat(STAT_COG, -100, STIM_TIME, "robustitol")
-	M.stats.addTempStat(STAT_BIO, -100, STIM_TIME, "robustitol")
-	M.stats.addTempStat(STAT_VIG, -100, STIM_TIME, "robustitol")
-	M.stats.addTempStat(STAT_MEC, -100, STIM_TIME, "robustitol")
+	M.stats.addTempStat(STAT_ROB, 80, STIM_TIME, "robustitol")
+	M.stats.addTempStat(STAT_COG, -80, STIM_TIME, "robustitol")
+	M.stats.addTempStat(STAT_BIO, -80, STIM_TIME, "robustitol")
+	M.stats.addTempStat(STAT_VIG, -60, STIM_TIME, "robustitol")
+	M.stats.addTempStat(STAT_MEC, -80, STIM_TIME, "robustitol")
+	M.add_chemical_effect(CE_PAINKILLER, 100, TRUE) //All consuming rage but still somehow feels pain ?
 
 /datum/reagent/drug/robustitol/withdrawal_act(mob/living/carbon/M)
 	M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_BASIC, STIM_TIME, "robustitol_w")
-	M.stats.addTempStat(STAT_ROB, -STAT_LEVEL_BASIC, STIM_TIME, "robustitol_w")
+	M.stats.addTempStat(STAT_ROB, -STAT_LEVEL_ADEPT, STIM_TIME, "robustitol_w")
 
 /datum/reagent/medicine/sergatonin
 	name = "Naratonin"
@@ -103,15 +107,17 @@
 	reagent_state = LIQUID
 	color = "#FF3300"
 	nerve_system_accumulations = 0
+	addiction_chance = 100
 	appear_in_default_catalog = FALSE
 	constant_metabolism = TRUE
 	scannable = TRUE
 
 /datum/reagent/medicine/sergatonin/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
-	M.stats.addTempStat(STAT_TGH, 25, STIM_TIME, "naratonin")
-	M.stats.addTempStat(STAT_ROB, 25, STIM_TIME, "naratonin")
 	M.add_chemical_effect(CE_SPEEDBOOST, 0.6)
 	M.add_chemical_effect(CE_PULSE, 2)
+
+/datum/reagent/drug/robustitol/withdrawal_act(mob/living/carbon/M)
+	M.add_chemical_effect(CE_SPEEDBOOST, -0.4)
 
 /datum/reagent/medicine/spaceacillin/cindicillin
 	name = "Cindicillin"

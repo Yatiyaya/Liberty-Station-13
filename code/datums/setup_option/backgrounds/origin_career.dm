@@ -5,7 +5,7 @@
 	(or dishonest) citizen of the colony. One benefit at least of your raider life style is you got good at getting in and out quickly, regardless of any barriers in your way. Sadly your past is \
 	a known factor and while here on the frontier security can overlook a checkered past, your records should contain a detailed and accurate report of your history."
 
-	perks = list(PERK_PARKOUR )
+	perks = list(PERK_PARKOUR)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,

@@ -1,4 +1,3 @@
-/*
 /datum/category_item/setup_option/background/ethnicity/jaeger
 	name = "Jaeger"
 	desc = "The jaegers are a group of frontier kriosan who plot the course for the spread of the kriosan civilization. \
@@ -7,6 +6,8 @@
 			Unfortunately all that time at the range and tinkering with their rifles hasn't improved much else."
 
 	restricted_to_species = list(FORM_KRIOSAN)
+
+	perks = list(PERK_BOLT_REFLECT)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,
@@ -26,6 +27,8 @@
 	day."
 
 	restricted_to_species = list(FORM_KRIOSAN)
+
+	perks = list(PERK_PERFECT_SHOT)
 
 	stat_modifiers = list(
 		STAT_ROB = 5,
@@ -52,5 +55,3 @@
 		STAT_MEC = 5,
 		STAT_COG = 5
 	)
-*/
-//Delete this the second the other PR gets merged otherwise conflicts - Lamasmaster
