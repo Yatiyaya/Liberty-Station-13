@@ -210,3 +210,42 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	holder.metabolism_effects.nsa_bonus -= 20
 	holder.metabolism_effects.calculate_nsa()
 	..()
+
+/datum/perk/fate/rejected_genius
+	name = "Rejected Genius"
+	desc = "You see the world in different shapes and colors. \
+			Your sanity loss cap is removed, so stay clear of corpses or filth. You have less maximum sanity and no chance to have positive breakdowns. \
+			As tradeoff, you have 50% faster insight gain."
+	icon_state = "knowledge" //https://game-icons.net/
+
+/datum/perk/fate/rejected_genius/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.environment_cap_coeff -= 1
+		holder.sanity.positive_prob_multiplier -= 1
+		holder.sanity.insight_passive_gain_multiplier *= 1.5
+		holder.sanity.max_level -= 20
+
+/datum/perk/fate/rejected_genius/remove()
+	if(holder)
+		holder.sanity.environment_cap_coeff += 1
+		holder.sanity.positive_prob_multiplier += 1
+		holder.sanity.insight_passive_gain_multiplier /= 1.5
+		holder.sanity.max_level += 20
+	..()
+
+/datum/perk/fate/rat
+	name = "Rat"
+	desc = "For all you know, taking what isn't yours is what you were best at. Be that roguery, theft or murder. It’s all the same no matter how you name it, after all. \
+			You start with a +10 to Mechanical stat and -10 to Vigilance. You will have a -10 to overall sanity health, meaning you will incur a breakdown faster than most. \
+			Additionally you have more quiet footsteps and a chance to not trigger traps on the ground."
+	icon_state = "rat" //https://game-icons.net/
+
+/datum/perk/fate/rat/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.max_level -= 10
+
+/datum/perk/fate/rat/remove()
+	if(holder)
+		holder.sanity.max_level += 10
+	..()
+

@@ -772,8 +772,11 @@
 
 		if(CE_PAINKILLER in chem_effects)
 			analgesic = chem_effects[CE_PAINKILLER]
-		if(!(CE_ALCOHOL in chem_effects) && stats.getPerk(PERK_INSPIRATION))
-			stats.removePerk(PERK_ACTIVE_INSPIRATION)
+		if(!(CE_ALCOHOL in chem_effects))
+			if(stats.getPerk(PERK_INSPIRATION))
+				stats.removePerk(PERK_ACTIVE_INSPIRATION)
+			if(stats.getPerk(PERK_ALCOHOLIC))
+				stats.removePerk(PERK_ALCOHOLIC_ACTIVE)
 
 		var/total_plasmaloss = 0
 		for(var/obj/item/I in src)
@@ -840,12 +843,12 @@
 			silent = 0
 			return 1
 		if(health <= death_threshold) //No health = death
-			if(stats.getPerk(PERK_UNFINISHED_DELIVERY) && prob(33)) //Unless you have this perk
+			if(stats.getPerk(PERK_LAZARUS_PROTOCOL) && prob(33)) //Unless you have this perk
 				heal_organ_damage(20, 20)
 				adjustOxyLoss(-100)
 				AdjustSleeping(rand(20,30))
 				updatehealth()
-				stats.removePerk(PERK_UNFINISHED_DELIVERY)
+				stats.removePerk(PERK_LAZARUS_PROTOCOL)
 				learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
 			else
 				death()

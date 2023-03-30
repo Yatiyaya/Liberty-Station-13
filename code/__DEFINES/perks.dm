@@ -4,12 +4,10 @@
 #define PERK_FREELACER /datum/perk/freelancer
 #define PERK_NIHILIST /datum/perk/nihilist
 #define PERK_MORALIST /datum/perk/moralist
-#define PERK_ALCOHOLIC /datum/perk/alcoholic
-#define PERK_ALCOHOLIC_ACTIVE /datum/perk/alcoholic_active
 #define PERK_DRUG_ADDICT /datum/perk/drug_addict
 #define PERK_NOBLE /datum/perk/noble
 #define PERK_RAT /datum/perk/rat
-#define PERK_REJECTED_GENIUS /datum/perk/rejected_genius
+
 #define PERK_OBORIN_SYNDROME /datum/perk/oborin_syndrome
 #define PERK_LOWBORN /datum/perk/lowborn
 #define PERK_TERRIBLE_FATE /datum/perk/oddity/terrible_fate
@@ -17,10 +15,11 @@
 #define PERK_HORRIBLE_DEEDS /datum/perk/oddity/horrible_deeds
 #define PERK_ABSOLUTE_GRAB /datum/perk/oddity/absolute_grab <-- This perk here may be implemented later and its code exists but is commented out.
 */
-// Name changer perk, meant for ghostspawners
-#define PERK_TRUE_NAME /datum/perk/true_name
 
-// oddity perks
+////////////////
+//Oddity Perks//
+////////////////
+
 #define PERK_FAST_WALKER /datum/perk/oddity/fast_walker
 #define PERK_GUNSLINGER /datum/perk/oddity/gunslinger
 #define PERK_TERRIBLE_FATE /datum/perk/oddity/terrible_fate
@@ -37,70 +36,97 @@
 #define PERK_STRANGTH /datum/perk/oddity/strangth
 #define PERK_MIND_OF_MATTER /datum/perk/oddity/mind_of_matter
 #define PERK_IRON_WILL /datum/perk/oddity/iron_will
-#define PERK_SURVIVOR /datum/perk/oddity/survivor
-#define PERK_INSPIRING /datum/perk/oddity/inspiring
 #define PERK_HOLY_LIGHT /datum/perk/nt_oddity/holy_light
-
-//roundstart perks (job / backgrounds)
-#define PERK_NOBLE /datum/perk/noble
-#define PERK_UNFINISHED_DELIVERY /datum/perk/unfinished_delivery
-#define PERK_SANITYBOOST /datum/perk/sanityboost
-#define PERK_CHANNELING /datum/perk/channeling
-#define PERK_IDEALIST /datum/perk/idealist
 #define PERK_LUNGS_OF_IRON /datum/perk/lungs_of_iron
 #define PERK_BLOOD_OF_LEAD /datum/perk/blood_of_lead
+#define PERK_NIGHTCRAWLER /datum/perk/nightcrawler
+#define PERK_FAST_FINGERS /datum/perk/fast_fingers
+#define PERK_QUIET_AS_MOUSE /datum/perk/quiet_as_mouse
+#define PERK_ASS_OF_CONCRETE /datum/perk/ass_of_concrete
+#define PERK_SURE_STEP /datum/perk/sure_step
+
+#define GOOD_ODDITY_PERKS list(
+							PERK_FAST_WALKER, \
+							PERK_GUNSLINGER, \
+							PERK_BALLS_OF_PLASTEEL, \
+							PERK_HARDEN, \
+							PERK_BETTER_TOXINS, \
+							PERK_SHARP_MIND, \
+							PERK_STRANGTH, \
+							PERK_IRON_WILL, \
+							PERK_SNACKIVORE
+							)
+
+////////////////////
+//Background Perks//
+////////////////////
+
+#define PERK_ALCOHOLIC /datum/perk/alcoholic
+#define PERK_ALCOHOLIC_ACTIVE /datum/perk/alcoholic_active
+#define PERK_INSPIRATION /datum/perk/inspiration
+#define PERK_ACTIVE_INSPIRATION /datum/perk/active_inspiration
+#define PERK_REJECTED_GENIUS /datum/perk/rejected_genius
+#define PERK_NOBLE /datum/perk/noble
+#define PERK_IDEALIST /datum/perk/idealist
 #define PERK_SPACE_ASSHOLE /datum/perk/space_asshole
 #define PERK_NIHILIST /datum/perk/nihilist
 #define PERK_PARKOUR /datum/perk/parkour
 #define PERK_CHAINGUN_SMOKER /datum/perk/chaingun_smoker
-#define PERK_NIGHTCRAWLER /datum/perk/nightcrawler
-#define PERK_FAST_FINGERS /datum/perk/fast_fingers
-#define PERK_QUIET_AS_MOUSE /datum/perk/quiet_as_mouse
-#define PERK_EAR_OF_QUICKSILVER /datum/perk/ear_of_quicksilver
-#define PERK_JUNKBORN /datum/perk/junkborn
-#define PERK_ASS_OF_CONCRETE /datum/perk/ass_of_concrete
-#define PERK_SURE_STEP /datum/perk/sure_step
-#define PERK_HANDYMAN /datum/perk/handyman
-#define PERK_STALKER /datum/perk/stalker
 #define PERK_MARKET_PROF /datum/perk/market_prof
 #define PERK_MEDICAL_EXPERT /datum/perk/medicalexpertise
-#define PERK_SURGICAL_MASTER /datum/perk/surgical_master
-#define PERK_ADVANCED_MEDICAL /datum/perk/advanced_medical
-#define PERK_ALCHEMY /datum/perk/alchemist
-#define PERK_SCRIBE /datum/perk/scribe
-#define PERK_NERD /datum/perk/chemist
-#define PERK_ROBOTICS_EXPERT /datum/perk/robotics_expert
-#define PERK_ARTIST /datum/perk/job/artist
 #define PERK_BOLT_REFLECT /datum/perk/job/bolt_reflect
-#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
+#define PERK_ADDICT /datum/perk/addict
+#define PERK_LINGUIST /datum/perk/linguist
+#define PERK_SOLBORN /datum/perk/solborn
+#define PERK_KLUTZ /datum/perk/klutz
+#define PERK_SURVIVOR /datum/perk/oddity/survivor
+
+/////////////
+//Job Perks//
+/////////////
+
+// Command
+#define PERK_SOMELLIER /datum/perk/sommelier
+
+// Guild
+#define PERK_HANDYMAN /datum/perk/handyman
+
+// Hunter
 #define PERK_BUTCHER /datum/perk/job/butcher
 #define PERK_MASTER_HERBALIST /datum/perk/job/master_herbalist
-#define PERK_SI_SCI /datum/perk/si_sci
-#define PERK_ODD_REROLL /datum/perk/oddity_reroll
-#define PERK_MUSH_FOLLOWER /datum/perk/mushroom_follower
-#define PERK_SLIME_FOLLOWER /datum/perk/slime_follower
-#define PERK_GREENTHUMB /datum/perk/greenthumb
-#define PERK_ADDICT /datum/perk/addict
-#define PERK_GUNSMITH /datum/perk/gunsmith
-#define PERK_LINGUIST /datum/perk/linguist
-#define PERK_SOMELLIER /datum/perk/sommelier
-#define PERK_SOLBORN /datum/perk/solborn
+
+// Neotheology
 #define PERK_NEAT /datum/perk/neat
-#define PERK_CHEM_CONTRABAND /datum/perk/chem_contraband
-#define PERK_CHEMIST /datum/perk/chemist
-#define PERK_KLUTZ /datum/perk/klutz
-#define PERK_CODESPEAK /datum/perk/codespeak
-#define PERK_INSPIRATION /datum/perk/inspiration
-#define PERK_ACTIVE_INSPIRATION /datum/perk/active_inspiration
-#define PERK_TIMEISMONEY /datum/perk/timeismoney
-#define PERK_PROSPECTOR_CONDITIONING /datum/perk/job/prospector_conditioning
-#define PERK_BLACKSHIELD_CONDITIONING /datum/perk/job/blackshield_conditioning
+#define PERK_GREENTHUMB /datum/perk/greenthumb //Also hunters and gardeners
+
+// Service / Cargo Perks
 #define PERK_BARTENDER /datum/perk/bartender
+#define PERK_TIMEISMONEY /datum/perk/timeismoney
+#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
+#define PERK_ARTIST /datum/perk/job/artist
+
+// Science
+#define PERK_SI_SCI /datum/perk/si_sci
+#define PERK_ROBOTICS_EXPERT /datum/perk/robotics_expert
+
+// Prospectors
+#define PERK_PROSPECTOR_CONDITIONING /datum/perk/job/prospector_conditioning
+#define PERK_JUNKBORN /datum/perk/junkborn
+#define PERK_STALKER /datum/perk/stalker
+
+// Medical
+#define PERK_CHEMIST /datum/perk/chemist
+#define PERK_SURGICAL_MASTER /datum/perk/surgical_master
+#define PERK_ADVANCED_MEDICAL /datum/perk/advanced_medical
+
+// Military
+#define PERK_BLACKSHIELD_CONDITIONING /datum/perk/job/blackshield_conditioning
+#define PERK_CODESPEAK /datum/perk/codespeak
+#define PERK_EAR_OF_QUICKSILVER /datum/perk/ear_of_quicksilver
+#define PERK_GUNSMITH /datum/perk/gunsmith
+#define PERK_CHEM_CONTRABAND /datum/perk/chem_contraband
 
 
-#define PERK_REZ_SICKNESS /datum/perk/rezsickness
-#define PERK_REZ_SICKNESS_SEVERE /datum/perk/rezsickness/severe
-#define PERK_REZ_SICKNESS_FATAL /datum/perk/rezsickness/severe/fatal
 //////////////
 //Race Perks//
 //////////////
@@ -122,6 +148,7 @@
 //Kriosan
 #define PERK_PERFECT_SHOT /datum/perk/exceptional_aim
 #define PERK_ENHANCEDSENSES /datum/perk/enhancedsenses
+#define PERK_INSPIRING /datum/perk/oddity/inspiring
 //Akula
 #define PERK_IRON_FLESH /datum/perk/iron_flesh
 #define PERK_RECKLESSFRENZY /datum/perk/recklessfrenzy
@@ -148,14 +175,25 @@
 #define PERK_WEBMAKER /datum/perk/webmaker
 //Mycus
 #define PERK_DARK_HEAL /datum/perk/dark_heal
+#define PERK_MUSH_FOLLOWER /datum/perk/mushroom_follower
+#define PERK_SLIME_FOLLOWER /datum/perk/slime_follower
 //Folken
 #define PERK_FOLKEN_HEALING /datum/perk/folken_healing
 #define PERK_FOLKEN_HEALING_YOUNG /datum/perk/folken_healing/young
+#define PERK_ODD_REROLL /datum/perk/oddity_reroll
 //Slime
 #define PERK_LIMB_REGEN /datum/perk/limb_regen
 #define PERK_MIND_BOOST /datum/perk/slime_stat_boost/mental
 #define PERK_BODY_BOOST /datum/perk/slime_stat_boost/physical
 #define PERK_SPEED /datum/perk/speed_boost
+
+//////////////
+//Core Perks//
+//////////////
+// Cruciform Perks
+#define PERK_SANITYBOOST /datum/perk/sanityboost
+#define PERK_CHANNELING /datum/perk/channeling
+#define PERK_LAZARUS_PROTOCOL /datum/perk/lazarus_protocol
 
 // Psionic perks
 #define PERK_PSION /datum/perk/psion
@@ -189,7 +227,9 @@
 #define PERK_NANITE_CHEM_OXYRUSH /datum/perk/nanite_chem/oxyrush
 #define PERK_NANITE_CHEM_NANTIDOTE /datum/perk/nanite_chem/nantidotes
 
-
+////////////////////
+//Specilized Perks//
+////////////////////
 //Wage Perks
 #define PERK_NEPOTISM /datum/perk/nepotism
 #define PERK_DEBTOR /datum/perk/debtor
@@ -197,26 +237,27 @@
 //Genetics Perks
 #define PERK_SPLICED /datum/perk/spliced
 
+// Name changer perk, meant for ghostspawners
+#define PERK_TRUE_NAME /datum/perk/true_name
+
+//Death Perks
+#define PERK_REZ_SICKNESS /datum/perk/rezsickness
+#define PERK_REZ_SICKNESS_SEVERE /datum/perk/rezsickness/severe
+#define PERK_REZ_SICKNESS_FATAL /datum/perk/rezsickness/severe/fatal
+
+//Crayon Magic
+#define PERK_ALCHEMY /datum/perk/alchemist
+#define PERK_SCRIBE /datum/perk/scribe
+
 // Food perks
 #define PERK_CARNIVORE /datum/perk/carnivore
 #define PERK_HERBIVORE /datum/perk/herbivore
 #define PERK_SNACKIVORE /datum/perk/oddity/snackivore
 
-#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, \
-							   PERK_GUNSLINGER, \
-							   PERK_BALLS_OF_PLASTEEL, \
-							   PERK_HARDEN, \
-							   PERK_BETTER_TOXINS, \
-							   PERK_SHARP_MIND, \
-							   PERK_STRANGTH, \
-							   PERK_IRON_WILL, \
-							   PERK_SNACKIVORE)
-
 //Temporary drug perks
 #define PERK_ULTRASURGEON /datum/perk/drug/ultrasurgeon
 #define PERK_NJOY /datum/perk/njoy
 
-
-//cooldown perks
+//Cooldown perks
 #define PERK_COOLDOWN_REASON /datum/perk/cooldown/reason
 #define PERK_COOLDOWN_EXERTION /datum/perk/cooldown/exertion
