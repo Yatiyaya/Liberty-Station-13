@@ -40,14 +40,21 @@
 	var/barometer_predictable = FALSE
 	var/next_hit_time = 0 //For barometers to know when the next storm will hit
 
+	//Lib edits
+	var/force_areas = FALSE //If we force only areas we want in areas_affectares to have this weather
+	var/list/areas_affectares = list() //This is for FORCING the area into the affectareas
+
 /datum/weather/proc/telegraph()
 	if(stage == STARTUP_STAGE)
 		return
 	stage = STARTUP_STAGE
-	for(var/V in get_areas(area_type))
-		affectareas += V
-	for(var/V in protected_areas)
-		affectareas -= get_areas(V)
+	if(!force_areas)
+		for(var/V in get_areas(area_type))
+			affectareas += V
+		for(var/V in protected_areas)
+			affectareas -= get_areas(V)
+	for(var/V in areas_affectares)
+		affectareas += get_areas(V)
 
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)
 	START_PROCESSING(SSweather, src)
