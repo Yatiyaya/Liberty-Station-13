@@ -61,6 +61,12 @@ cannot isolate or combine desired genes.
 
 	var/debug_ui_data = null
 
+	var/raw_data = 0
+
+/obj/machinery/genetics/gene_analyzer/examine(mob/user)
+	..()
+	to_chat(usr, "Raw Points Available Left - [raw_data]")
+
 //upgrading parts
 /obj/machinery/genetics/gene_analyzer/RefreshParts()
 	..()
@@ -98,6 +104,14 @@ cannot isolate or combine desired genes.
 			to_chat(user, SPAN_WARNING("You load a Sample plate into the Analyzer."))
 			//update_icon()
 			return
+
+	else if(istype(I, /obj/item/device/science_tool)) //HAVE to be at the wire stage, to you know, data jack into wires
+		var/obj/item/device/science_tool/ST = I
+		ST.raw_data_points += raw_data
+		raw_data = 0
+		user.visible_message("[user] attaches [I]'s datajack to [src].", "You attach [I]'s datajack to [src] gathering [raw_data] data points")
+		return
+
 	else
 		. = ..()
 
@@ -229,11 +243,7 @@ cannot isolate or combine desired genes.
 						awarding_points += known_mutations[mut_key]
 
 				if(awarding_points > 0)
-					console.files.adjust_research_points(awarding_points) // Give the points
-					var/obj/item/device/radio/radio
-					radio = new /obj/item/device/radio{channels=list("Science")}(src) // Create a new radio
-					radio.autosay("Genetics Research Uploaded, granting [awarding_points] research points~!", "Genetics Announcement System", "Science") // Make the radio say a message.
-					qdel(radio)
+					raw_data += awarding_points
 
 				//Update known mutations from the master console JIC
 				for(var/mut_key in console.known_mutations)

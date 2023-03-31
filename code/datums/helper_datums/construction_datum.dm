@@ -61,21 +61,21 @@
 
 
 /datum/construction/proc/spawn_result()
-	if(result)
+	var/gave_resault = FALSE
+	log_debug("Called spawn_result")
+
+	//First time using components this looks bad cuz it is.
+	if(rnd_point_giver)
+		var/obj/new_item = new result(get_turf(holder))
+		gave_resault = TRUE
+		new_item.givepointscompont(give_points)
+
+	if(result && !gave_resault)
 		new result(get_turf(holder))
 
-	// To grant points when mechs are built
-	if(rnd_point_giver) // We check if it is a mech
-		for(var/obj/machinery/computer/rdconsole/RD in GLOB.computer_list) // Check every RnD computer in existance
-			if(RD.id == 1) // only core gets the science
-				RD.files.research_points += give_points // Give the points
-				var/obj/item/device/radio/radio
-				radio = new /obj/item/device/radio{channels=list("Science")}(src) // Create a new radio
-				radio.autosay("Exosuit constructed, granting [give_points] research points.", "Robotics Research's Announcement System", "Science") // Make the radio say a message.
-				spawn(50) qdel(radio) // Wait 5 seconds before deleting the radio
+	spawn()
+		qdel(holder)
 
-		spawn()
-			qdel(holder)
 	return
 
 /datum/construction/proc/set_desc(index as num)
