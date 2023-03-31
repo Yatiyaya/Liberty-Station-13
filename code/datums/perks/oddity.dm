@@ -223,6 +223,61 @@
 	holder.health -= 20
 	..()
 
+/datum/perk/oddity/blood_of_lead
+	name = "Lead Blood"
+	desc = "Maybe you grew up on a world with a toxic atmosphere, maybe solar radiation was common, or maybe its just genetics but you're adapted well to dealing with toxins."
+	icon_state = "liver" // https://game-icons.net
+
+/datum/perk/oddity/sure_step
+	name = "Sure Step"
+	desc = "Years spent in hazardous areas have made you sure on your footing, you are more likely to avoid traps and less likely to trip while running on under-plating."
+	icon_state = "mantrap"
+
+/datum/perk/oddity/lungs_of_iron
+	name = "Lungs of Iron"
+	desc = "For whatever reason, be it natural evolution or simply spending too much time in space or low oxygen worlds your lungs are adapted to surviving with less oxygen."
+	icon_state = "lungs" // https://game-icons.net/1x1/lorc/one-eyed.html
+
+/datum/perk/oddity/nightcrawler
+	name = "Nightcrawler"
+	desc = "Having lived in a light-deprived enviroment for most of your life has honed your vision more than the average person.\nYour accelerated dark adaptation has also made you more photosensitive to sudden bright lights and flashes."
+	var/init_sight
+	var/init_flash
+	var/obj/screen/lightOverlay = null
+	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
+
+/datum/perk/oddity/nightcrawler/assign(mob/living/carbon/human/H)
+	..()
+	init_sight = holder.additional_darksight
+	init_flash = holder.flash_mod
+	holder.additional_darksight = 8
+	holder.flash_mod += 2
+
+/datum/perk/oddity/nightcrawler/remove()
+	holder.additional_darksight = init_sight
+	holder.flash_mod = init_flash
+	..()
+
+/datum/perk/oddity/fast_fingers
+	name = "Fast Fingers"
+	desc = "Nothing is safe around your hands. You are a true kleptomaniac. Taking items off others makes no sound or prompts, provided its in their pockets, hands, or their ears. \
+	It's also quicker and you can slip pills into drinks unnoticed."
+	icon_state = "robber_hand" // https://game-icons.net/1x1/darkzaitzev/robber-hand.html
+
+/datum/perk/oddity/ass_of_concrete
+	name = "Immovable Object"
+	desc = "Your intense training has perfected your footing, and you're an expert at holding the line. Few things can knock you off balance or push you around."
+	icon_state = "muscular" // https://game-icons.net
+
+/datum/perk/oddity/ass_of_concrete/assign(mob/living/carbon/human/H)
+	..()
+	holder.mob_bump_flag = HEAVY
+
+/datum/perk/oddity/ass_of_concrete/remove()
+	holder.mob_bump_flag = ~HEAVY
+	..()
+
+
 ///////////////////////////////////////
 //////// JOB ODDITYS PERKS ////////////
 ///////////////////////////////////////
@@ -309,58 +364,4 @@
 /datum/perk/guild/blackbox_insight/remove()
 	holder.stats.changeStat(STAT_COG, -10) //we keep 5 of each
 	holder.stats.changeStat(STAT_MEC, -10)
-	..()
-
-/datum/perk/blood_of_lead
-	name = "Lead Blood"
-	desc = "Maybe you grew up on a world with a toxic atmosphere, maybe solar radiation was common, or maybe its just genetics but you're adapted well to dealing with toxins."
-	icon_state = "liver" // https://game-icons.net
-
-/datum/perk/sure_step
-	name = "Sure Step"
-	desc = "Years spent in hazardous areas have made you sure on your footing, you are more likely to avoid traps and less likely to trip while running on under-plating."
-	icon_state = "mantrap"
-
-/datum/perk/lungs_of_iron
-	name = "Lungs of Iron"
-	desc = "For whatever reason, be it natural evolution or simply spending too much time in space or low oxygen worlds your lungs are adapted to surviving with less oxygen."
-	icon_state = "lungs" // https://game-icons.net/1x1/lorc/one-eyed.html
-
-/datum/perk/nightcrawler
-	name = "Nightcrawler"
-	desc = "Having lived in a light-deprived enviroment for most of your life has honed your vision more than the average person.\nYour accelerated dark adaptation has also made you more photosensitive to sudden bright lights and flashes."
-	var/init_sight
-	var/init_flash
-	var/obj/screen/lightOverlay = null
-	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
-
-/datum/perk/nightcrawler/assign(mob/living/carbon/human/H)
-	..()
-	init_sight = holder.additional_darksight
-	init_flash = holder.flash_mod
-	holder.additional_darksight = 8
-	holder.flash_mod += 2
-
-/datum/perk/nightcrawler/remove()
-	holder.additional_darksight = init_sight
-	holder.flash_mod = init_flash
-	..()
-
-/datum/perk/fast_fingers
-	name = "Fast Fingers"
-	desc = "Nothing is safe around your hands. You are a true kleptomaniac. Taking items off others makes no sound or prompts, provided its in their pockets, hands, or their ears. \
-	It's also quicker and you can slip pills into drinks unnoticed."
-	icon_state = "robber_hand" // https://game-icons.net/1x1/darkzaitzev/robber-hand.html
-
-/datum/perk/ass_of_concrete
-	name = "Immovable Object"
-	desc = "Your intense training has perfected your footing, and you're an expert at holding the line. Few things can knock you off balance or push you around."
-	icon_state = "muscular" // https://game-icons.net
-
-/datum/perk/ass_of_concrete/assign(mob/living/carbon/human/H)
-	..()
-	holder.mob_bump_flag = HEAVY
-
-/datum/perk/ass_of_concrete/remove()
-	holder.mob_bump_flag = ~HEAVY
 	..()

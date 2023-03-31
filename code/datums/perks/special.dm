@@ -2,7 +2,7 @@
 /* Ghost Perks */
 /////////////////
 
-/datum/perk/background/true_name //Only in here cause there is legitimetly no better place to put it in
+/datum/perk/special/true_name //Only in here cause there is legitimetly no better place to put it in
 	name = "Rename Self"
 	desc = "No one knows you thus your name is what ever you need or want to be."
 	icon_state = "family"
@@ -10,7 +10,7 @@
 	passivePerk = FALSE
 	var/anti_cheat = FALSE
 
-/datum/perk/true_name/activate()
+/datum/perk/special/true_name/activate()
 	..()
 	if(anti_cheat)
 		to_chat(holder, "You can only keep up so many personallitys.")
@@ -24,7 +24,7 @@
 	anti_cheat = FALSE
 	return TRUE
 
-/datum/perk/true_name/remove()
+/datum/perk/special/true_name/remove()
 	..()
 
 ////////////////

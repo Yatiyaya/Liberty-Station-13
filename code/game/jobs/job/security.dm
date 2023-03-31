@@ -162,10 +162,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	perks = list(PERK_MARKET_PROF,
-				 /datum/perk/codespeak,
-				 /datum/perk/chem_contraband,
-				 /datum/perk/gunsmith)
+	perks = list(PERK_MARKET_PROF)
 
 	description = "The Supply Specialist is the right hand of the warrant officer and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the colony or even the armory.<br>\

@@ -143,8 +143,8 @@
 
 //Folken
 #define PERK_ODD_REROLL /datum/perk/racial/folken_reroll
-#define PERK_FOLKEN_HEALING /datum/perk/racialfolken_healing
-#define PERK_FOLKEN_HEALING_YOUNG /datum/perk/racialfolken_healing/young
+#define PERK_FOLKEN_HEALING /datum/perk/racial/folken_healing
+#define PERK_FOLKEN_HEALING_YOUNG /datum/perk/racial/folken_healing/young
 
 //Mycus
 #define PERK_DARK_HEAL /datum/perk/racial/mycus_heal
@@ -214,12 +214,12 @@
 #define PERK_MIND_OF_MATTER /datum/perk/oddity/mind_of_matter
 #define PERK_IRON_WILL /datum/perk/oddity/iron_will
 #define PERK_HOLY_LIGHT /datum/perk/nt_oddity/holy_light
-#define PERK_LUNGS_OF_IRON /datum/perk/lungs_of_iron
-#define PERK_BLOOD_OF_LEAD /datum/perk/blood_of_lead
-#define PERK_NIGHTCRAWLER /datum/perk/nightcrawler
-#define PERK_FAST_FINGERS /datum/perk/fast_fingers
-#define PERK_ASS_OF_CONCRETE /datum/perk/ass_of_concrete
-#define PERK_SURE_STEP /datum/perk/sure_step
+#define PERK_LUNGS_OF_IRON /datum/perk/oddity/lungs_of_iron
+#define PERK_BLOOD_OF_LEAD /datum/perk/oddity/blood_of_lead
+#define PERK_NIGHTCRAWLER /datum/perk/oddity/nightcrawler
+#define PERK_FAST_FINGERS /datum/perk/oddity/fast_fingers
+#define PERK_ASS_OF_CONCRETE /datum/perk/oddity/ass_of_concrete
+#define PERK_SURE_STEP /datum/perk/oddity/sure_step
 #define PERK_SNACKIVORE /datum/perk/oddity/snackivore
 
 #define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_PLASTEEL, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE)
@@ -229,9 +229,7 @@
 ////////////////////
 
 // Name changer perk, meant for ghostspawners
-#define PERK_TRUE_NAME /datum/perk/true_name
-
-
+#define PERK_TRUE_NAME /datum/perk/special/true_name
 
 //Crayon Magic
 #define PERK_ALCHEMY /datum/perk/alchemist

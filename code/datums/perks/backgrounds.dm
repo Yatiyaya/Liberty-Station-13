@@ -305,10 +305,10 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/solborn/assign(mob/living/carbon/human/H)//You aren't built for these steets cuh
 	if(..())
-	holder.sanity.death_view_multiplier *= 1.2
-	holder.sanity.negative_prob += 10
-	holder.metabolism_effects.nsa_bonus -= 10
-	holder.metabolism_effects.calculate_nsa()
+		holder.sanity.death_view_multiplier *= 1.2
+		holder.sanity.negative_prob += 10
+		holder.metabolism_effects.nsa_bonus -= 10
+		holder.metabolism_effects.calculate_nsa()
 
 /datum/perk/solborn/remove()
 	if(holder)
