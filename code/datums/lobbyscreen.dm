@@ -21,40 +21,12 @@
 	musicTrack = pick(possibleMusic)
 	return ..()
 
-/datum/lobbyscreen/ship
-	image_file = 'icons/title_screens/ship.png'
+/datum/lobbyscreen/liberty_final
+	image_file = 'icons/title_screens/liberty_final.png'
 	possibleMusic = list(
 		'sound/music/lobby/To_Eris-Almost_there.ogg',
 		'sound/music/lobby/Lobo_Loco-Technetium_Planet.ogg'
-		)
-
-
-/datum/lobbyscreen/enroute
-	image_file = 'icons/title_screens/transit.png'
-	possibleMusic = list(
-		'sound/music/lobby/transit.ogg',
-		'sound/music/lobby/Grimbeard-Tubeworm_Instrumental.ogg'
-		)
-
-/datum/lobbyscreen/ironhammer
-	image_file = 'icons/title_screens/ironhammer.png'
-	possibleMusic = list(
-		'sound/music/lobby/Nctrnm-Dos_Lagos.ogg',
-		'sound/music/lobby/Grimbeard-Tubeworm_Instrumental.ogg'
-		)
-
-
-/datum/lobbyscreen/onestar
-	image_file = 'icons/title_screens/onestar.png'
-	possibleMusic = list(
-		'sound/music/lobby/Grimbeard-The_Part_Where_You_Always_Leave.ogg',
-		'sound/music/lobby/Kevin_MacLeod-Impact_Prelude.ogg'
-		)
-
-/datum/lobbyscreen/neotheology
-	image_file = 'icons/title_screens/neotheology.png'
-	possibleMusic = list(
-		'sound/music/lobby/To_Eris-Almost_there.ogg')
+	)
 
 /datum/lobbyscreen/proc/play_music(client/C)
 	if(!musicTrack)
