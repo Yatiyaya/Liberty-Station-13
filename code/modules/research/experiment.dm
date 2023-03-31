@@ -574,7 +574,6 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 	max_points = 20000
 
 /obj/proc/givepointscompont(raw_data_points)
-	..()
 
 	var/datum/component/rnd_points/I = AddComponent(/datum/component/rnd_points)
 	I.data_points = raw_data_points

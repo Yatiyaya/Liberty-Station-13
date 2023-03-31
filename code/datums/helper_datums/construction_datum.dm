@@ -62,7 +62,7 @@
 
 /datum/construction/proc/spawn_result()
 	var/gave_resault = FALSE
-	log_debug("Called spawn_result")
+	//log_debug("Called spawn_result")
 
 	//First time using components this looks bad cuz it is.
 	if(rnd_point_giver)
