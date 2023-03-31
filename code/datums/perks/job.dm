@@ -220,19 +220,6 @@
 	It's also quicker and you can slip pills into drinks unnoticed."
 	icon_state = "robber_hand" // https://game-icons.net/1x1/darkzaitzev/robber-hand.html
 
-/datum/perk/quiet_as_mouse
-	name = "Quiet as a mouse"
-	desc = "Being deadly, easy. Silent? Even easier now. You generate less noise than others."
-	icon_state = "footsteps" // https://game-icons.net
-
-/datum/perk/quiet_as_mouse/assign(mob/living/carbon/human/H)
-	..()
-	holder.noise_coeff -= 0.75
-
-/datum/perk/quiet_as_mouse/remove()
-	holder.noise_coeff += 0.75
-	..()
-
 /datum/perk/junkborn
 	name = "Expert Scavenger"
 	desc = "One man's trash is another man's salary. Removing a trash pile has a chance of revealing a valuable item nobody else would find."

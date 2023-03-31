@@ -235,17 +235,47 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/fate/rat
 	name = "Rat"
-	desc = "For all you know, taking what isn't yours is what you were best at. Be that roguery, theft or murder. It’s all the same no matter how you name it, after all. \
-			You start with a +10 to Mechanical stat and -10 to Vigilance. You will have a -10 to overall sanity health, meaning you will incur a breakdown faster than most. \
-			Additionally you have more quiet footsteps and a chance to not trigger traps on the ground."
-	icon_state = "rat" //https://game-icons.net/
+	desc = "You are a rat." //Give this actual description
+	icon_state = "footsteps" //https://game-icons.net/
 
 /datum/perk/fate/rat/assign(mob/living/carbon/human/H)
 	if(..())
 		holder.sanity.max_level -= 10
+		holder.noise_coeff -= 0.75
 
 /datum/perk/fate/rat/remove()
 	if(holder)
 		holder.sanity.max_level += 10
+		holder.noise_coeff += 0.75
 	..()
 
+/datum/perk/fate/alcoholic
+	name = "Alcoholic"
+	icon_state = "beer" //https://game-icons.net/1x1/delapouite/beer-bottle.html
+	desc = "You imagined the egress from all your trouble and pain at the bottom of the bottle, but the way only led to a labyrinth. \
+			You never stopped from coming back to it, trying again and again, poisoning your mind until you lost control. Now your face bears witness to your self-destruction. \
+			There is only one key to survival, and it is the liquid that has shown you the way down. \
+			You have a permanent alcohol addiction, which gives you a boost to combat stats while under the influence and lowers your cognition permanently."
+
+/datum/perk/fate/alcoholic/assign(mob/living/carbon/human/H)
+	if(..() && !(/datum/reagent/ethanol in holder.metabolism_effects.addiction_list))
+		var/datum/reagent/R = new /datum/reagent/ethanol
+		holder.metabolism_effects.addiction_list.Add(R)
+
+/datum/perk/fate/alcoholic_active
+	name = "Alcoholic - active"
+	icon_state = "drinking" //https://game-icons.net
+	desc = "Combat stats increased."
+
+/datum/perk/fate/alcoholic_active/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.stats.addTempStat(STAT_ROB, 15, INFINITY, "Fate Alcoholic")
+		holder.stats.addTempStat(STAT_TGH, 15, INFINITY, "Fate Alcoholic")
+		holder.stats.addTempStat(STAT_VIG, 15, INFINITY, "Fate Alcoholic")
+
+/datum/perk/fate/alcoholic_active/remove()
+	if(holder)
+		holder.stats.removeTempStat(STAT_ROB, "Fate Alcoholic")
+		holder.stats.removeTempStat(STAT_TGH, "Fate Alcoholic")
+		holder.stats.removeTempStat(STAT_VIG, "Fate Alcoholic")
+	..()

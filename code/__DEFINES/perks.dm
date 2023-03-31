@@ -4,9 +4,7 @@
 #define PERK_FREELACER /datum/perk/freelancer
 #define PERK_NIHILIST /datum/perk/nihilist
 #define PERK_MORALIST /datum/perk/moralist
-#define PERK_DRUG_ADDICT /datum/perk/drug_addict
 #define PERK_NOBLE /datum/perk/noble
-#define PERK_RAT /datum/perk/rat
 
 #define PERK_OBORIN_SYNDROME /datum/perk/oborin_syndrome
 #define PERK_LOWBORN /datum/perk/lowborn
@@ -41,30 +39,17 @@
 #define PERK_BLOOD_OF_LEAD /datum/perk/blood_of_lead
 #define PERK_NIGHTCRAWLER /datum/perk/nightcrawler
 #define PERK_FAST_FINGERS /datum/perk/fast_fingers
-#define PERK_QUIET_AS_MOUSE /datum/perk/quiet_as_mouse
 #define PERK_ASS_OF_CONCRETE /datum/perk/ass_of_concrete
 #define PERK_SURE_STEP /datum/perk/sure_step
 
-#define GOOD_ODDITY_PERKS list(
-							PERK_FAST_WALKER, \
-							PERK_GUNSLINGER, \
-							PERK_BALLS_OF_PLASTEEL, \
-							PERK_HARDEN, \
-							PERK_BETTER_TOXINS, \
-							PERK_SHARP_MIND, \
-							PERK_STRANGTH, \
-							PERK_IRON_WILL, \
-							PERK_SNACKIVORE
-							)
+#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_PLASTEEL, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE)
 
 ////////////////////
 //Background Perks//
 ////////////////////
 
-#define PERK_ALCOHOLIC /datum/perk/alcoholic
-#define PERK_ALCOHOLIC_ACTIVE /datum/perk/alcoholic_active
-#define PERK_INSPIRATION /datum/perk/inspiration
-#define PERK_ACTIVE_INSPIRATION /datum/perk/active_inspiration
+#define PERK_ALCOHOLIC /datum/perk/fate/alcoholic
+#define PERK_ALCOHOLIC_ACTIVE /datum/perk/fate/alcoholic_active
 #define PERK_REJECTED_GENIUS /datum/perk/rejected_genius
 #define PERK_NOBLE /datum/perk/noble
 #define PERK_IDEALIST /datum/perk/idealist
@@ -80,6 +65,7 @@
 #define PERK_SOLBORN /datum/perk/solborn
 #define PERK_KLUTZ /datum/perk/klutz
 #define PERK_SURVIVOR /datum/perk/oddity/survivor
+#define PERK_RAT /datum/perk/fate/rat
 
 /////////////
 //Job Perks//
@@ -90,6 +76,8 @@
 
 // Guild
 #define PERK_HANDYMAN /datum/perk/handyman
+#define PERK_INSPIRATION /datum/perk/inspiration
+#define PERK_ACTIVE_INSPIRATION /datum/perk/active_inspiration
 
 // Hunter
 #define PERK_BUTCHER /datum/perk/job/butcher

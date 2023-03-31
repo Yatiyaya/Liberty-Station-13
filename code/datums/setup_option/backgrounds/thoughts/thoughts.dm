@@ -7,6 +7,8 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
+	stat_modifiers = list(STAT_COG = -5)
+
 /datum/category_item/setup_option/background/thoughts/composure
 	name = "Survivor Mindset"
 	desc = "You were always a survivor from the day you were born, while others cowered you faced your fears head on, even if it cost you few teeth. \
@@ -15,6 +17,8 @@
 	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan.
 
 	perks = list(PERK_SURVIVOR)
+
+	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
 	name = "Living Computer"
@@ -25,6 +29,8 @@
 
 	perks = list(PERK_REJECTED_GENIUS)
 
+	stat_modifiers = list(STAT_COG = -5)
+
 
 /datum/category_item/setup_option/background/thoughts/empathy
 	name = "Baron of Conscience"
@@ -34,6 +40,8 @@
 	Keep in mind however that even the most resillient people can snap and that it's not possible to help everyone."
 
 	perks = list(PERK_IDEALIST)
+
+	stat_modifiers = list(STAT_COG = -5)
 
 
 /datum/category_item/setup_option/background/thoughts/volition
@@ -54,15 +62,21 @@
 
 	perks = list(PERK_KLUTZ)
 
+	stat_modifiers = list(STAT_COG = -5)
+
 /datum/category_item/setup_option/background/thoughts/savior_faire
-	name = "Malfunctioning Motorics"
-	desc = "Your entire life can be sumarized up as series of accidents, from your conception all the way to where we are now.\
-	Basic tasks like tying your shoes or opening doors cause you tremedous distress at which way can you fail them next.\
-	Simply walking over uneven surfaces could result in you recieving a grevious injury on both your body and pride.\
-	But every time you fail you become stronger, determined to prove to everyone that despite all of this you are still better than them."
+	name = "RATional Isolation"
+	desc = "You're a slimy being in more ways than one, as far as your feeble mind can remember always have been, but can anyone truly blame you ? \
+	The ugly mug you wear covered in grease and dirt never attracted the right sort of attention neither from your peers nor your parents. \
+	Isolation does things to the mind, twisting it in ways not imaginable even to professionals but you harnessed this power to your advantage. \
+	Learning to embrace your identity is essential in this day and age otherwise survival cannot be guaranteed but you managed it.\
+	Your feet dance over most surfaces barely letting out a noise and on the off chance restraints try to wring around them, they will find it hard to stick to you."
 
-	perks = list(PERK_KLUTZ)
+	perks = list(PERK_RAT)
 
+	stat_modifiers = list(STAT_COG = -5)
+
+//Temporary names and descriptions
 /datum/category_item/setup_option/background/thoughts/inland_empire
 	name = "Peaceful Life"
 	desc = "You've lived a life of peace and harmony so idyllic that is has given you a special bit of enlightenment. This is not to say your life was easy, nor without trial or consequence, \
@@ -71,6 +85,8 @@
 	to make the most of the essence from which your powers are called, granting you three additional uses of your abilities."
 
 	perks = list(PERK_PSI_HARMONY)
+
+	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/half_light
 	name = "Bedlam"
@@ -81,3 +97,4 @@
 
 	perks = list(PERK_PSI_MANIA)
 
+	stat_modifiers = list(STAT_COG = -5)

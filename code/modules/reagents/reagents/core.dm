@@ -237,6 +237,7 @@
 
 /datum/reagent/toxin/fuel/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_TOXIN, 2 * (issmall(M) ? effect_multiplier * 2 : effect_multiplier))
+	M.add_chemical_effect(CE_ALCOHOL, 1)
 
 /datum/reagent/toxin/fuel/touch_mob(mob/living/L, var/amount)
 	if(istype(L))

@@ -9,7 +9,7 @@
 /datum/category_item/setup_option/background/ancestry
 
 
-//Habits - A quirk of sorts your character has, so say incessant smoker or
+//Habits - A quirk of sorts your character has, so say incessant smoker or just really likes eating veggies
 /datum/category_group/setup_option_category/background/habit
 	name = "Habit"
 	category_item_type = /datum/category_item/setup_option/background/habit
@@ -25,11 +25,10 @@
 /datum/category_item/setup_option/background/path
 
 
-//Thoughts -
+//Thoughts represent psychological profile of your character, what kind of thought process would they go throught basically.
 /datum/category_group/setup_option_category/background/thoughts
 	name = "Thoughts"
 	category_item_type = /datum/category_item/setup_option/background/thoughts
-
 
 /datum/category_item/setup_option/background/thoughts
 
@@ -129,8 +128,6 @@
 	variety of seafood which is gathered directly from the station's water filtration systems. Individuals from Kurilskaya are often cut throat, roguish, share a grim sense of humor, and \
 	are very secretive about where Kurilskaya is actually located. A benefit of living in a dangerous world is you knew how not to draw attention to yourself, taking care so often to keep yourself \
 	quiet that its become second nature to you now."
-
-	perks = list(PERK_QUIET_AS_MOUSE)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,

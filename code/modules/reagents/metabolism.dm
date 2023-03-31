@@ -278,7 +278,7 @@
 				if(40 to 50)
 					R.addiction_act_stage4(parent)
 				if(50 to INFINITY)
-					if((parent.stats.getPerk(PERK_ALCOHOLIC) && istype(R, /datum/reagent/ethanol)) || (parent.stats.getPerk(PERK_DRUG_ADDICT) && istype(R, /datum/reagent/stim)))
+					if((parent.stats.getPerk(PERK_ALCOHOLIC) && istype(R, /datum/reagent/ethanol)) || (parent.stats.getPerk(PERK_ADDICT) && istype(R, /datum/reagent/stim)))
 						R.addiction_act_stage4(parent)
 					else
 						R.addiction_end(parent)

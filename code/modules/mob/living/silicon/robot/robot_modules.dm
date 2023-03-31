@@ -757,7 +757,7 @@ var/global/list/robot_modules = list(
 		R.reset_icon_folder_draw = TRUE
 
 	//Silent cleaners
-	R.stats.addPerk(PERK_QUIET_AS_MOUSE)
+	R.stats.addPerk(PERK_RAT)
 	R.stats.addPerk(PERK_SI_SCI)
 
 	..(R)
@@ -853,7 +853,7 @@ var/global/list/robot_modules = list(
 	src.emag += new /obj/item/reagent_containers/food/drinks/bottle/small/beer_two(src)
 
 	//Seller and cleaner mix, so quite and knowing the deal!
-	R.stats.addPerk(PERK_QUIET_AS_MOUSE)
+	R.stats.addPerk(PERK_RAT)
 	R.stats.addPerk(PERK_MARKET_PROF)
 	R.stats.addPerk(PERK_SI_SCI)
 
