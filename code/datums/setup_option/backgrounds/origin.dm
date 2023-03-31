@@ -46,7 +46,6 @@
 	natural remedies, and as such you instinctively know your way around plants."
 
 	restricted_to_species = list(FORM_MYCUS, FORM_FOLKEN)
-	perks = list(PERK_GREENTHUMB)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,
@@ -87,7 +86,7 @@
 	weaker on average."
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_KRIOSAN, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
-	perks = list(PERK_GREENTHUMB, PERK_HERBIVORE)
+	perks = list(PERK_HERBIVORE)
 
 	stat_modifiers = list(
 		STAT_ROB = -5,
@@ -186,7 +185,7 @@
 	This adaptation, coupled with working the diamond mines, have made them physically tough but comparably weak to people of other home-worlds."
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
-	perks = list(PERK_CHAINGUN_SMOKER)
+	perks = list(PERK_CUBAN_DELIGHT)
 
 	stat_modifiers = list(
 		STAT_ROB = -5,

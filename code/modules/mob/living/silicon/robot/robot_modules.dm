@@ -313,7 +313,7 @@ var/global/list/robot_modules = list(
 	//We are stronk so we get less no knockdowns
 	R.stats.addPerk(PERK_ASS_OF_CONCRETE)
 	//So we cant be escaped as quickly
-	R.stats.addPerk(PERK_PARKOUR)
+	R.stats.addPerk(PERK_ATHLETE)
 	R.stats.addPerk(PERK_SI_SCI)
 
 	..(R)
@@ -668,7 +668,7 @@ var/global/list/robot_modules = list(
 	//We are stronk so we get less no knockdowns
 	R.stats.addPerk(PERK_ASS_OF_CONCRETE)
 	//So we cant be escaped as quickly
-	R.stats.addPerk(PERK_PARKOUR)
+	R.stats.addPerk(PERK_ATHLETE)
 
 	R.stats.addPerk(PERK_SI_SCI)
 	..(R)

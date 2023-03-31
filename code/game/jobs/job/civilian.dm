@@ -20,7 +20,7 @@
 		STAT_VIG = 15,
 	)
 
-	perks = list(PERK_MARKET_PROF, /datum/perk/bartender)
+	perks = list(PERK_MARKET_PROF)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender //Re-using this.
 	description = "The Bartender runs the colony bar, providing colonists with drinks and entertainment.<br>\
@@ -58,7 +58,7 @@
 		STAT_BIO = 10, // They need it to butcher animals without hurting themselves.
 	)
 
-	perks = list(PERK_MARKET_PROF, /datum/perk/bartender, /datum/perk/foodappraise)
+	perks = list(PERK_MARKET_PROF)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/waiter
 	description = "The Chef works in the kitchen, ensuring that the colony remains well-fed and energetic.<br>\
@@ -99,7 +99,7 @@
 		STAT_ROB = 10,
 	)
 
-	perks = list(PERK_MARKET_PROF, /datum/perk/greenthumb, /datum/perk/bartender)
+	perks = list(PERK_MARKET_PROF)
 
 	description = "The Gardener toils in hydroponics - utilising seeds, tools, and fertilisers to grow bountiful crops.<br>\
 	More talented gardeners may dip into ranching. Your paddocks contain a few chickens and a cow. More exotic animals can be acquired as cargo imports.<br>\

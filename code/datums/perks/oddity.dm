@@ -1,35 +1,7 @@
 /datum/perk/oddity
 	gain_text = "You feel different. Exposure to oddities has changed you. Now you can't go back."
 
-/datum/perk/oddity/survivor
-	name = "Survivor"
-	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \
-			Halves sanity loss from seeing people die."
-	icon_state = "survivor" // https://game-icons.net/1x1/lorc/one-eyed.html
 
-/datum/perk/oddity/survivor/assign(mob/living/carbon/human/H)
-	if(..())
-		holder.sanity.death_view_multiplier *= 0.5
-
-/datum/perk/oddity/survivor/remove()
-	if(holder)
-		holder.sanity.death_view_multiplier *= 2
-	..()
-
-/datum/perk/oddity/inspiring
-	name = "Inspiring Presence"
-	desc = "You know just what to say to people and are able to inspire the best - or even worst - in others. \
-			People around you regain their sanity quicker."
-	icon_state = "inspiration"
-
-/datum/perk/oddity/inspiring/assign(mob/living/carbon/human/H)
-	if(..())
-		holder.sanity_damage -= 2
-
-/datum/perk/oddity/inspiring/remove()
-	if(holder)
-		holder.sanity_damage += 2
-	..()
 
 /datum/perk/oddity/terrible_fate
 	name = "Terrible Fate"
@@ -339,32 +311,56 @@
 	holder.stats.changeStat(STAT_MEC, -10)
 	..()
 
+/datum/perk/blood_of_lead
+	name = "Lead Blood"
+	desc = "Maybe you grew up on a world with a toxic atmosphere, maybe solar radiation was common, or maybe its just genetics but you're adapted well to dealing with toxins."
+	icon_state = "liver" // https://game-icons.net
 
-//////////////
-//Drug Perks//
-//////////////
+/datum/perk/sure_step
+	name = "Sure Step"
+	desc = "Years spent in hazardous areas have made you sure on your footing, you are more likely to avoid traps and less likely to trip while running on under-plating."
+	icon_state = "mantrap"
 
-//Basically for drugs to apply a perk for a set amount of time..
+/datum/perk/lungs_of_iron
+	name = "Lungs of Iron"
+	desc = "For whatever reason, be it natural evolution or simply spending too much time in space or low oxygen worlds your lungs are adapted to surviving with less oxygen."
+	icon_state = "lungs" // https://game-icons.net/1x1/lorc/one-eyed.html
 
-/datum/perk/drug/ultrasurgeon
-	name = "Ultrasurgeon Knowledge"
-	desc = "After your fix of ultrasurgeon you can feel your mind ease just as your muscles relax."
-	icon_state = "generic"
+/datum/perk/nightcrawler
+	name = "Nightcrawler"
+	desc = "Having lived in a light-deprived enviroment for most of your life has honed your vision more than the average person.\nYour accelerated dark adaptation has also made you more photosensitive to sudden bright lights and flashes."
+	var/init_sight
+	var/init_flash
+	var/obj/screen/lightOverlay = null
+	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
 
-/datum/perk/njoy
-	name = "Njoy (Active)"
-	desc = "Your mind can focus on what is real, just like when you get rid of a painful earring."
-	icon_state = "generic"
+/datum/perk/nightcrawler/assign(mob/living/carbon/human/H)
+	..()
+	init_sight = holder.additional_darksight
+	init_flash = holder.flash_mod
+	holder.additional_darksight = 8
+	holder.flash_mod += 2
 
-	gain_text = "Your mind feels much clearer now."
-	lose_text = "You feel the shadows once more."
-
-/datum/perk/njoy/assign(mob/living/carbon/human/H)
-	if(..())
-		holder.sanity.insight_gain_multiplier *= 0.5
-
-/datum/perk/njoy/remove()
-	if(holder)
-		holder.sanity.insight_gain_multiplier *= 2
+/datum/perk/nightcrawler/remove()
+	holder.additional_darksight = init_sight
+	holder.flash_mod = init_flash
 	..()
 
+/datum/perk/fast_fingers
+	name = "Fast Fingers"
+	desc = "Nothing is safe around your hands. You are a true kleptomaniac. Taking items off others makes no sound or prompts, provided its in their pockets, hands, or their ears. \
+	It's also quicker and you can slip pills into drinks unnoticed."
+	icon_state = "robber_hand" // https://game-icons.net/1x1/darkzaitzev/robber-hand.html
+
+/datum/perk/ass_of_concrete
+	name = "Immovable Object"
+	desc = "Your intense training has perfected your footing, and you're an expert at holding the line. Few things can knock you off balance or push you around."
+	icon_state = "muscular" // https://game-icons.net
+
+/datum/perk/ass_of_concrete/assign(mob/living/carbon/human/H)
+	..()
+	holder.mob_bump_flag = HEAVY
+
+/datum/perk/ass_of_concrete/remove()
+	holder.mob_bump_flag = ~HEAVY
+	..()

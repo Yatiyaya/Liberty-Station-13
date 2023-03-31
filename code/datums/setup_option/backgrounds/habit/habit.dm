@@ -25,7 +25,7 @@
 	This means you can inexplicably mend small wounds via consumption of cigarettes or cigars."
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
-	perks = list(PERK_CHAINGUN_SMOKER)
+	perks = list(PERK_CUBAN_DELIGHT)
 
 /datum/category_item/setup_option/background/habit/nepotism
 	name = "Friends in High Places"

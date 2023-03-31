@@ -34,9 +34,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, /datum/perk/channeling
-		//, /datum/perk/chemist -Thanos Voice: "A small price to pay for salvation."
-	)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
@@ -94,7 +92,7 @@
 		CRUCIFORM_PRIEST
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, PERK_CHANNELING)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\

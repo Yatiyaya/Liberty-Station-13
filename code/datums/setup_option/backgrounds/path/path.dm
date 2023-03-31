@@ -34,7 +34,7 @@
 	desc = "This is here so that someone can actually write a description for it on basis of me having 'poor grammar' to put it \
 	in very mild  terms, also cause nothing is concrete yet."
 
-	perks = list(PERK_PARKOUR)
+	perks = list(PERK_ATHLETE)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,
@@ -96,7 +96,7 @@
 	desc = "This is here so that someone can actually write a description for it on basis of me having 'poor grammar' to put it \
 	in very mild  terms, also cause nothing is concrete yet."
 
-	perks = list(PERK_SPACE_ASSHOLE)
+	perks = list(PERK_MERCENARY_GRIT)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,

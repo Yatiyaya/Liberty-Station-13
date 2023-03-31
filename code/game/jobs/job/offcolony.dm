@@ -15,7 +15,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/off_colony/hunt_master
 	health_modifier = 15
 
-	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST, PERK_GREENTHUMB)
+	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST)
 	access = list(access_huntmaster, access_hunter)
 
 	stat_modifiers = list(
@@ -99,7 +99,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/off_colony/herbalist
 	health_modifier = 5
 
-	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST, PERK_GREENTHUMB)
+	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST)
 	access = list(access_hunter)
 
 	stat_modifiers = list(

@@ -14,7 +14,7 @@
 	desc = "You were always a survivor from the day you were born, while others cowered you faced your fears head on, even if it cost you few teeth. \
 	Never did you lose your composure in front of others, uttered a singular tear in your entire life, you are the definition of a hard-ass. \
 	But this left you emotionally stunted, unable to feel any empathy for others or being able to relate to simplest emotions besides your own will to survive. \
-	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan.
+	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan."
 
 	perks = list(PERK_SURVIVOR)
 

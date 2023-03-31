@@ -7,34 +7,77 @@ This includes perks from:
 
 This is NOT for racial-specific perks, but rather specifically for general background perks for organizations sake.*/
 
-/datum/perk/sure_step
-	name = "Sure step"
-	desc = "Years spent in hazardous areas have made you sure on your footing, you are more likely to avoid traps and less likely to trip while running on under-plating."
-	icon_state = "mantrap"
+////////////////////
+/* Baseline Perks */
+////////////////////
 
-/datum/perk/lungs_of_iron
-	name = "Lungs of Iron"
-	desc = "For whatever reason, be it natural evolution or simply spending too much time in space or low oxygen worlds your lungs are adapted to surviving with less oxygen."
-	icon_state = "lungs" // https://game-icons.net/1x1/lorc/one-eyed.html
+/datum/perk/background/alcoholic
+	name = "Alcoholic"
+	icon_state = "beer" //https://game-icons.net/1x1/delapouite/beer-bottle.html
+	desc = "You imagined the egress from all your trouble and pain at the bottom of the bottle, but the way only led to a labyrinth. \
+			You never stopped from coming back to it, trying again and again, poisoning your mind until you lost control. Now your face bears witness to your self-destruction. \
+			There is only one key to survival, and it is the liquid that has shown you the way down. \
+			You have a permanent alcohol addiction, which gives you a boost to combat stats while under the influence and lowers your cognition permanently."
 
-/datum/perk/space_asshole
-	name = "Rough Life"
+/datum/perk/background/alcoholic/assign(mob/living/carbon/human/H)
+	if(..() && !(/datum/reagent/ethanol in holder.metabolism_effects.addiction_list))
+		var/datum/reagent/R = new /datum/reagent/ethanol
+		holder.metabolism_effects.addiction_list.Add(R)
+
+/datum/perk/background/alcoholic_active
+	name = "Alcoholic - active"
+	icon_state = "drinking" //https://game-icons.net
+	desc = "Combat stats increased."
+
+/datum/perk/background/alcoholic_active/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.stats.addTempStat(STAT_ROB, 15, INFINITY, "Background Alcoholic")
+		holder.stats.addTempStat(STAT_TGH, 15, INFINITY, "Background Alcoholic")
+		holder.stats.addTempStat(STAT_VIG, 15, INFINITY, "Background Alcoholic")
+
+/datum/perk/background/alcoholic_active/remove()
+	if(holder)
+		holder.stats.removeTempStat(STAT_ROB, "Background Alcoholic")
+		holder.stats.removeTempStat(STAT_TGH, "Background Alcoholic")
+		holder.stats.removeTempStat(STAT_VIG, "Background Alcoholic")
+	..()
+
+/datum/perk/background/addict
+	name = "Drug Addict"
+	desc = "You've been an addict all your life, for whatever piss poor reason you've told yourself. Your body is able to handle a variety of drugs, more than the average person, but you get \
+	easily addicted to all of them."
+	icon_state = "selfmedicated" // https://game-icons.net/1x1/lorc/overdose.html
+
+/datum/perk/background/addict/assign(mob/living/carbon/human/H)
+	..()
+	holder.metabolism_effects.addiction_chance_multiplier = 2
+	holder.metabolism_effects.nsa_bonus += 20
+	holder.metabolism_effects.calculate_nsa()
+
+/datum/perk/background/addict/remove()
+	holder.metabolism_effects.addiction_chance_multiplier = 1
+	holder.metabolism_effects.nsa_bonus -= 20
+	holder.metabolism_effects.calculate_nsa()
+	..()
+
+/datum/perk/background/mercenary_grit
+	name = "Mercenary Grit"
 	desc = "Your past life has been one of turmoil and extremes and as a result has toughened you up severely. Environmental damage from falling or explosives have less of an effect on your toughened body."
 	icon_state = "bomb" // https://game-icons.net
 
-/datum/perk/space_asshole/assign(mob/living/carbon/human/H)
+/datum/perk/background/mercenary_grit/assign(mob/living/carbon/human/H)
 	..()
 	holder.mob_bomb_defense += 25
 	holder.falls_mod -= 0.4
-	holder.sanity.view_damage_threshold += 20
+	holder.sanity.view_damage_threshold += 10
 
-/datum/perk/space_asshole/remove()
+/datum/perk/background/mercenary_grit/remove()
 	holder.mob_bomb_defense -= 25
 	holder.falls_mod += 0.4
-	holder.sanity.view_damage_threshold -= 20
+	holder.sanity.view_damage_threshold -= 10
 	..()
 
-/datum/perk/linguist
+/datum/perk/background/linguist
 	name = "Linguist"
 	desc = "Having dedicated time to learn foreign tongues, you find yourself knowing an extra language. Be it from your upbringing or schooling, you're fluent in one more language than the average person!"
 	icon_state = "knowledge"
@@ -42,7 +85,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	passivePerk = FALSE
 	var/anti_cheat = FALSE
 
-/datum/perk/linguist/activate()
+/datum/perk/background/linguist/activate()
 	..()
 	if(anti_cheat)
 		to_chat(holder, "Recalling more languages is not as easy for someone unskilled as you.")
@@ -65,68 +108,91 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	anti_cheat = FALSE
 	return TRUE
 
-/datum/perk/linguist/remove()
+/datum/perk/background/linguist/remove()
 	..()
 
-/datum/perk/parkour
-	name = "Raiders Leap"
-	desc = "Life as a Void Wolf has given you amazing agility. You can climb railings, walls, and ladders much faster than others. In addition you can dodge, combat roll, and stand up from prone much \
-	faster. Finally, your rough and tumble movement makes falling from high heights deal a lot less damage compared to others and you will always land on your feet."
+/datum/perk/background/athlete
+	name = "Athleticism"
+	desc = "You dedicated your life to being a professional athlete in your younger years, that didn't exactly pan for out for you but you can still move way faster across obstacles than a normal person and land on your feet from high altitude just fine."
 	icon_state = "parkour" //https://game-icons.net/1x1/delapouite/jump-across.html
 
-/datum/perk/parkour/assign(mob/living/carbon/human/H)
+/datum/perk/background/athlete/assign(mob/living/carbon/human/H)
 	..()
 	holder.mod_climb_delay -= 0.95
 	holder.falls_mod -= 0.8
 
-/datum/perk/parkour/remove()
+/datum/perk/background/athlete/remove()
 	holder.mod_climb_delay += 0.95
 	holder.falls_mod += 0.8
 	..()
 
-/datum/perk/chaingun_smoker
-	name = "Unclean Living"
-	desc = "The bad conditions of your upbringing have led you to thrive in toxic environments, so much so that your body is dependent on having an unclean atmosphere. You feel tougher and slowly heal toxin damage when smoking."
+/datum/perk/background/cuban_delight
+	name = "Cuban Delight"
+	desc = "Due to extensive smoker history in your family line or gene-therapy you are now afflicted with a sequence known as 'Cuban Delight' meaning you can slowly recover from effects of venom as long as nicotine is flowing through you."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/blood_of_lead
-	name = "Lead Blood"
-	desc = "Maybe you grew up on a world with a toxic atmosphere, maybe solar radiation was common, or maybe its just genetics but you're adapted well to dealing with toxins."
-	icon_state = "liver" // https://game-icons.net
+/datum/perk/background/medicalexpertise
+	name = "Medical Expertise"
+	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
+	icon_state = "knowledge"
 
-/datum/perk/greenthumb
-	name = "Green Thumb"
-	desc = "After growing plants for years (or at least being around those who do) you have become a botanical expert. You can get all information about plants, from stats \
-	        to harvest reagents, by examining them."
-	icon_state = "greenthumb" // https://game-icons.net/1x1/delapouite/farmer.html
+/datum/perk/background/klutz
+	name = "Klutz"
+	desc = "You find a lot of tasks a little beyond your ability to perform such is using any type of weaponry, but being accident prone has at least made you used to getting hurt."
+	icon_state = "klutz"
 
-	var/virtual_scanner = new /obj/item/device/scanner/plant/perk
-
-/datum/perk/greenthumb/assign(mob/living/carbon/human/H)
+/datum/perk/background/klutz/assign(mob/living/carbon/human/H)
 	..()
-	var/obj/item/device/scanner/V = virtual_scanner
-	V.is_virtual = TRUE
+	holder.mutations.Add(CLUMSY)
 
-/datum/perk/nihilist
+/datum/perk/background/klutz/remove()
+	holder.mutations.Remove(CLUMSY)
+	..()
+
+/datum/perk/background/market_prof
+	name = "Market Professional"
+	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
+	icon_state = "market_prof"
+
+////////////////////////
+/* Sanity-Based Perks */
+////////////////////////
+
+/datum/perk/background/survivor
+	name = "Survivor"
+	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \
+			Halves sanity loss from seeing people die."
+	icon_state = "survivor" // https://game-icons.net/1x1/lorc/one-eyed.html
+
+/datum/perk/background/survivor/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.death_view_multiplier *= 0.5
+
+/datum/perk/background/survivor/remove()
+	if(holder)
+		holder.sanity.death_view_multiplier *= 2
+	..()
+
+/datum/perk/background/nihilist
 	name = "Nihilist"
 	desc = 	"You simply ran out of fucks to give at some point in your life. \
 			This increases chance of positive breakdowns by 10% and negative breakdowns by 20%. Seeing someone die has a random effect on you: \
 			sometimes you won’t take any sanity loss and you can even gain back sanity, or get a boost to your cognition."
 	icon_state = "eye" //https://game-icons.net/1x1/lorc/tear-tracks.html
 
-/datum/perk/nihilist/assign(mob/living/carbon/human/H)
+/datum/perk/background/nihilist/assign(mob/living/carbon/human/H)
 	if(..())
 		holder.sanity.positive_prob += 10
 		holder.sanity.negative_prob += 20
 
-/datum/perk/nihilist/remove()
+/datum/perk/background/nihilist/remove()
 	if(holder)
 		holder.sanity.positive_prob -= 10
 		holder.sanity.negative_prob -= 20
-		holder.stats.removeTempStat(STAT_COG, "Fate Nihilist")
+		holder.stats.removeTempStat(STAT_COG, "Background Nihilist")
 	..()
 
-/datum/perk/idealist
+/datum/perk/background/idealist
 	name = "Idealist"
 	icon_state = "moralist" //https://game-icons.net/
 	desc = "A day may come when the courage of men fails, when we forsake our friends and break all bonds of fellowship. \
@@ -134,13 +200,13 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 			Your Insight gain is faster when you are around sane people and they will recover sanity when around you. \
 			When you are around people that are low on health or sanity, you will take sanity damage."
 
-/datum/perk/noble
-	name = "Wealthy Upbringing"
+/datum/perk/background/noble
+	name = "Noble"
 	icon_state = "family" //https://game-icons.net
 	desc = "You came from a wealthy family of high stature, able to achieve a high education and spent most of your life capable of relaxing. \
 			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
 
-/datum/perk/noble/assign(mob/living/carbon/human/H)
+/datum/perk/background/noble/assign(mob/living/carbon/human/H)
 	if(!..())
 		return
 	holder.sanity.environment_cap_coeff -= 1
@@ -188,44 +254,27 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	spawn(1)
 		holder.equip_to_storage_or_drop(W)
 
-/datum/perk/noble/remove()
+/datum/perk/background/noble/remove()
 	if(holder)
 		holder.sanity.environment_cap_coeff += 1
 	..()
 
-/datum/perk/addict
-	name = "Chem Addict"
-	desc = "You've been an addict all your life, for whatever piss poor reason you've told yourself. Your body is able to handle a variety of drugs, more than the average person, but you get \
-	easily addicted to all of them."
-	icon_state = "selfmedicated" // https://game-icons.net/1x1/lorc/overdose.html
 
-/datum/perk/addict/assign(mob/living/carbon/human/H)
-	..()
-	holder.metabolism_effects.addiction_chance_multiplier = 2
-	holder.metabolism_effects.nsa_bonus += 20
-	holder.metabolism_effects.calculate_nsa()
-
-/datum/perk/addict/remove()
-	holder.metabolism_effects.addiction_chance_multiplier = 1
-	holder.metabolism_effects.nsa_bonus -= 20
-	holder.metabolism_effects.calculate_nsa()
-	..()
-
-/datum/perk/fate/rejected_genius
+/datum/perk/background/rejected_genius
 	name = "Rejected Genius"
 	desc = "You see the world in different shapes and colors. \
 			Your sanity loss cap is removed, so stay clear of corpses or filth. You have less maximum sanity and no chance to have positive breakdowns. \
 			As tradeoff, you have 50% faster insight gain."
 	icon_state = "knowledge" //https://game-icons.net/
 
-/datum/perk/fate/rejected_genius/assign(mob/living/carbon/human/H)
+/datum/perk/background/rejected_genius/assign(mob/living/carbon/human/H)
 	if(..())
 		holder.sanity.environment_cap_coeff -= 1
 		holder.sanity.positive_prob_multiplier -= 1
 		holder.sanity.insight_passive_gain_multiplier *= 1.5
 		holder.sanity.max_level -= 20
 
-/datum/perk/fate/rejected_genius/remove()
+/datum/perk/background/rejected_genius/remove()
 	if(holder)
 		holder.sanity.environment_cap_coeff += 1
 		holder.sanity.positive_prob_multiplier += 1
@@ -233,49 +282,91 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.sanity.max_level += 20
 	..()
 
-/datum/perk/fate/rat
+/datum/perk/background/rat
 	name = "Rat"
-	desc = "You are a rat." //Give this actual description
+	desc = "You are an agile being of small stature, you can easily avoid traps and punches thrown at you while moving quiet as an actual mouse, however anything bad you see might just make you have a bad time."
 	icon_state = "footsteps" //https://game-icons.net/
 
-/datum/perk/fate/rat/assign(mob/living/carbon/human/H)
+/datum/perk/background/rat/assign(mob/living/carbon/human/H)
 	if(..())
 		holder.sanity.max_level -= 10
 		holder.noise_coeff -= 0.75
 
-/datum/perk/fate/rat/remove()
+/datum/perk/background/rat/remove()
 	if(holder)
 		holder.sanity.max_level += 10
 		holder.noise_coeff += 0.75
 	..()
 
-/datum/perk/fate/alcoholic
-	name = "Alcoholic"
-	icon_state = "beer" //https://game-icons.net/1x1/delapouite/beer-bottle.html
-	desc = "You imagined the egress from all your trouble and pain at the bottom of the bottle, but the way only led to a labyrinth. \
-			You never stopped from coming back to it, trying again and again, poisoning your mind until you lost control. Now your face bears witness to your self-destruction. \
-			There is only one key to survival, and it is the liquid that has shown you the way down. \
-			You have a permanent alcohol addiction, which gives you a boost to combat stats while under the influence and lowers your cognition permanently."
+/datum/perk/background/solborn
+	name = "Sol Born"
+	desc = "You are from the cradle of humanity, pampered and caressed you don't know much about struggles of life and as such you have hard time dealing with horrors of the frontier space."
+	icon_state = "sol"
 
-/datum/perk/fate/alcoholic/assign(mob/living/carbon/human/H)
-	if(..() && !(/datum/reagent/ethanol in holder.metabolism_effects.addiction_list))
-		var/datum/reagent/R = new /datum/reagent/ethanol
-		holder.metabolism_effects.addiction_list.Add(R)
-
-/datum/perk/fate/alcoholic_active
-	name = "Alcoholic - active"
-	icon_state = "drinking" //https://game-icons.net
-	desc = "Combat stats increased."
-
-/datum/perk/fate/alcoholic_active/assign(mob/living/carbon/human/H)
+/datum/perk/solborn/assign(mob/living/carbon/human/H)//You aren't built for these steets cuh
 	if(..())
-		holder.stats.addTempStat(STAT_ROB, 15, INFINITY, "Fate Alcoholic")
-		holder.stats.addTempStat(STAT_TGH, 15, INFINITY, "Fate Alcoholic")
-		holder.stats.addTempStat(STAT_VIG, 15, INFINITY, "Fate Alcoholic")
+	holder.sanity.death_view_multiplier *= 1.2
+	holder.sanity.negative_prob += 10
+	holder.metabolism_effects.nsa_bonus -= 10
+	holder.metabolism_effects.calculate_nsa()
 
-/datum/perk/fate/alcoholic_active/remove()
+/datum/perk/solborn/remove()
 	if(holder)
-		holder.stats.removeTempStat(STAT_ROB, "Fate Alcoholic")
-		holder.stats.removeTempStat(STAT_TGH, "Fate Alcoholic")
-		holder.stats.removeTempStat(STAT_VIG, "Fate Alcoholic")
+		holder.sanity.death_view_multiplier = 1
+		holder.sanity.negative_prob -= 10
+		holder.metabolism_effects.nsa_bonus += 10
+		holder.metabolism_effects.calculate_nsa()
 	..()
+
+/////////////////
+/* Money Perks */
+/////////////////
+
+/datum/perk/background/nepotism
+	name = "Nepotism"
+	desc = "You earn about 30% higher pay than your fellow peers- The spirit of capitalism smiles upon you."
+	gain_text = "You feel comforted, knowing the amount of money coming your way."
+	icon_state = "nepotism"
+
+/datum/perk/background/debtor
+	name = "Debtor"
+	desc = "You owe money to someone or something. Unfortunately, your wages have been garnished to make up the difference."
+	gain_text = "You feel annoyed, thinking about how much of your wage is going into paying off your debt."
+	icon_state = "robber_hand"
+
+////////////////
+/* Gene Perks */
+////////////////
+
+/datum/perk/background/splicer
+	name = "Splicer"
+	desc = "Your genes are heavily modified already, your base genetic instability is 20%, even if you don't have any mutations."
+	gain_text = "Your body is modified enough already; pushing it further might be bad."
+	icon_state = "splicer"
+
+//Genetics is made reliably enough that simply increasing total instability, a dynamically changing value, will be permanent until removed.
+/datum/perk/background/splicer/assign(mob/living/carbon/human/H)
+	..()
+	holder.unnatural_mutations.total_instability += 20
+
+/datum/perk/background/splicer/remove()
+	holder.unnatural_mutations.total_instability -= 20
+	..()
+
+////////////////
+/* Food Perks */
+////////////////
+
+/datum/perk/background/carnivore
+	name = "Carnivore"
+	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate carnivore. You get very little nutrition from standard nutriment, but gain alot from meat and protein \
+	based products."
+	passivePerk = TRUE
+	icon_state = "snack_carn"
+
+/datum/perk/background/herbivore
+	name = "Herbivore"
+	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate herbivore. You get very little nutrition from standard protein, but gain alot from grown foods and glucose \
+	based products."
+	passivePerk = TRUE
+	icon_state = "snack_herb"

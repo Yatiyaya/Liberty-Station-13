@@ -47,7 +47,7 @@
 
 	restricted_to_species = list(FORM_KRIOSAN)
 
-	perks = list(PERK_INSPIRING)
+	perks = list(PERK_AUTHORITY)
 
 	stat_modifiers = list(
 		STAT_ROB = 0,

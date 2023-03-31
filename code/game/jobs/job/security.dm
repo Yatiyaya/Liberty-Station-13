@@ -36,7 +36,6 @@
 	)
 
 	perks = list(PERK_ASS_OF_CONCRETE,
-				 PERK_BLACKSHIELD_CONDITIONING,
 				 PERK_BOLT_REFLECT,
 				 PERK_CHEM_CONTRABAND)
 
@@ -217,7 +216,7 @@
 		STAT_VIG = 25,
 	)
 
-	perks = list(PERK_BLACKSHIELD_CONDITIONING, PERK_BOLT_REFLECT, PERK_CHEM_CONTRABAND)
+	perks = list(PERK_BOLT_REFLECT, PERK_CHEM_CONTRABAND)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
@@ -329,8 +328,8 @@
 		STAT_ROB = 10,
 	)
 
-	perks = list(PERK_MEDICAL_EXPERT, PERK_BLACKSHIELD_CONDITIONING)
-				// /datum/perk/chemist -Thanos Voice: "I'm sorry little one..."
+	perks = list(PERK_MEDICAL_EXPERT)
+				// /datum/perk/chemist -Thanos Voice: "I'm sorry little one..." / This wasn't funny even back when it came out
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/suit_sensors,
@@ -373,7 +372,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/security/troop
 
-	perks = list(PERK_BLACKSHIELD_CONDITIONING, PERK_BOLT_REFLECT, PERK_CHEM_CONTRABAND)
+	perks = list(PERK_BOLT_REFLECT, PERK_CHEM_CONTRABAND)
 
 	access = list(
 		access_security, access_eva,

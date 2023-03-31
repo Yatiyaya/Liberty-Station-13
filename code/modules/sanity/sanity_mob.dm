@@ -486,7 +486,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	for(var/obj/structure/sign/warning/smoking/undont in oview(owner, 7))
 		smoking_allowed = TRUE
 
-	if(smoking_no && !owner.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(smoking_no && !owner.stats.getPerk(PERK_CUBAN_DELIGHT))
 		smoking_message += 1
 		if(smoking_message >= 50)
 			to_chat(owner, "Smoking in a non-smoking zone does not rest my nerves!")
