@@ -52,6 +52,25 @@
 	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.prefix = "LTL"
 
+//Silences the weapon, reduces damage multiplier slightly, Legacy port.
+/obj/item/gun_upgrade/muzzle/pepper_spray
+	name = "SD Hot Box"
+	desc = "A threaded chemical box that coats bullets as they fly out of the barrel, produced by Seinemetall Defense GmbH."
+	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	icon_state = "silencer"
+	price_tag = 100
+
+/obj/item/gun_upgrade/muzzle/pepper_spray/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_CHEM = TRUE,
+		GUN_UPGRADE_CHEMICAL = "condensedcapsaicin",
+		UPGRADE_BULK = 1
+		)
+	I.gun_loc_tag = GUN_MUZZLE
+	I.req_gun_tags = list(GUN_SILENCABLE)
+	I.prefix = "spiced"
 
 //Decreases fire delay. Acquired through loot spawns or guild crafting
 /obj/item/gun_upgrade/barrel/forged

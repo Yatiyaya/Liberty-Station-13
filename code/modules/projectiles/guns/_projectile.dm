@@ -45,6 +45,10 @@
 
 	gun_tags = list(GUN_PROJECTILE)
 
+	var/spray
+	var/give_reagents = FALSE
+
+
 /obj/item/gun/projectile/loadAmmoBestGuess()
 	var/obj/item/ammo_magazine/chosenMag = null
 
@@ -129,6 +133,11 @@
 
 /obj/item/gun/projectile/proc/process_chambered()
 	if (!chambered) return
+
+	if(chambered.BB && give_reagents && spray)
+		if(!chambered.BB.coated)
+			BB.reagents.add_reagent(spray, 5)
+			chambered.BB.coated = TRUE
 
 	if(chambered.is_caseless)
 		QDEL_NULL(chambered)
