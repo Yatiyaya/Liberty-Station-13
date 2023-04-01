@@ -13,7 +13,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/alcoholic
 	name = "Alcoholic"
-	icon_state = "beer" //https://game-icons.net/1x1/delapouite/beer-bottle.html
+	icon_state = "electrochemistry" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 	desc = "You imagined the egress from all your trouble and pain at the bottom of the bottle, but the way only led to a labyrinth. \
 			You never stopped from coming back to it, trying again and again, poisoning your mind until you lost control. Now your face bears witness to your self-destruction. \
 			There is only one key to survival, and it is the liquid that has shown you the way down. \
@@ -26,7 +26,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/alcoholic_active
 	name = "Alcoholic - active"
-	icon_state = "drinking" //https://game-icons.net
+	icon_state = "electrochemistry" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 	desc = "Combat stats increased."
 
 /datum/perk/background/alcoholic_active/assign(mob/living/carbon/human/H)
@@ -139,7 +139,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/klutz
 	name = "Klutz"
 	desc = "You find a lot of tasks a little beyond your ability to perform such is using any type of weaponry, but being accident prone has at least made you used to getting hurt."
-	icon_state = "klutz"
+	icon_state = "hand_eye" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/klutz/assign(mob/living/carbon/human/H)
 	..()
@@ -162,7 +162,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	name = "Survivor"
 	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \
 			Halves sanity loss from seeing people die."
-	icon_state = "survivor" // https://game-icons.net/1x1/lorc/one-eyed.html
+	icon_state = "composure" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/survivor/assign(mob/living/carbon/human/H)
 	if(..())
@@ -178,7 +178,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = 	"You simply ran out of fucks to give at some point in your life. \
 			This increases chance of positive breakdowns by 10% and negative breakdowns by 20%. Seeing someone die has a random effect on you: \
 			sometimes you won’t take any sanity loss and you can even gain back sanity, or get a boost to your cognition."
-	icon_state = "eye" //https://game-icons.net/1x1/lorc/tear-tracks.html
+	icon_state = "volition" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/nihilist/assign(mob/living/carbon/human/H)
 	if(..())
@@ -194,7 +194,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/idealist
 	name = "Idealist"
-	icon_state = "moralist" //https://game-icons.net/
+	icon_state = "authority" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 	desc = "A day may come when the courage of men fails, when we forsake our friends and break all bonds of fellowship. \
 			But it is not this day. This day you fight! \
 			Your Insight gain is faster when you are around sane people and they will recover sanity when around you. \
@@ -265,7 +265,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = "You see the world in different shapes and colors. \
 			Your sanity loss cap is removed, so stay clear of corpses or filth. You have less maximum sanity and no chance to have positive breakdowns. \
 			As tradeoff, you have 50% faster insight gain."
-	icon_state = "knowledge" //https://game-icons.net/
+	icon_state = "encyclopedia" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/rejected_genius/assign(mob/living/carbon/human/H)
 	if(..())
@@ -285,7 +285,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/rat
 	name = "Rat"
 	desc = "You are an agile being of small stature, you can easily avoid traps and punches thrown at you while moving quiet as an actual mouse, however anything bad you see might just make you have a bad time."
-	icon_state = "footsteps" //https://game-icons.net/
+	icon_state = "interfacing" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/rat/assign(mob/living/carbon/human/H)
 	if(..())

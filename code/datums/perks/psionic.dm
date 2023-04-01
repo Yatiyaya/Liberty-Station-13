@@ -20,13 +20,13 @@
 	name = "Psionic Psychosis"
 	desc = "You lived a life of unsettled violence. Maybe it was circumstance, maybe it was necessity, or maybe you just liked hurting people. No matter the reason, your mind is attuned to bloody \
 	violence and your potential as a psion reflects that. No matter your stats or physical body, you always deal maximum damage when using scaling psionic weaponry you create."
-	icon_state = "aura_psychosis"
+	icon_state = "half_light" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/psi_harmony
 	name = "Psionic Harmony"
 	desc = "You have achieved inner harmony, your balance of emotion giving you peace of mind and thus expanding your potential as a psion. With this frame of mind, you retain a \
 	higher maximum psi pool than others, increasing your capacity by two."
-	icon_state = "aura_harm"
+	// Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/psi_attunement
 	name = "Psionic Attunement"
