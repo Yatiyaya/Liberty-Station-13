@@ -24,8 +24,7 @@
 /datum/lobbyscreen/liberty_final
 	image_file = 'icons/title_screens/liberty_final.png'
 	possibleMusic = list(
-		'sound/music/lobby/To_Eris-Almost_there.ogg',
-		'sound/music/lobby/Lobo_Loco-Technetium_Planet.ogg'
+		'sound/music/lobby/Phokorus.ogg'
 	)
 
 /datum/lobbyscreen/proc/play_music(client/C)
