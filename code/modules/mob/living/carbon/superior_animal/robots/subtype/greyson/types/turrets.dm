@@ -61,12 +61,12 @@
 	reload_message = "ejects a magazine as it loudly reloads with mechanical speed!"
 	ranged = TRUE //will it shoot?
 	rapid = FALSE //will it shoot fast?
-	projectiletype = /obj/item/projectile/bullet/c10x24
+	projectiletype = /obj/item/projectile/bullet/7mm
 	projectilesound = 'sound/weapons/Gunshot.ogg'
 	limited_ammo = TRUE
 	mag_drop = TRUE
 	rounds_left = 99
-	mag_type = /obj/item/ammo_magazine/c10x24/empty
+	mag_type = /obj/item/ammo_magazine/cl7mm/empty
 	mags_left = 1
 	casingtype = null
 	ranged_cooldown = 5

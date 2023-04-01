@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/boltgun
-	name = "\"Kardashev-Mosin\" boltgun"
-	desc = "Weapon for hunting or endless trench warfare. \
-			If you're on a budget, it's a darn good rifle for just about everything."
+	name = "\"Mosin\" boltgun"
+	desc = "Weapon for hunting or endless trench warfare or hunters on a budget. \
+			Chambered in 7.62mm, it's not great but it sports a bayonet and packs a decent punch."
 	icon = 'icons/obj/guns/projectile/boltgun.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
@@ -16,7 +16,7 @@
 	init_recoil = HMG_RECOIL(0.6)
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING|SPEEDLOADER
-	max_shells = 10
+	max_shells = 5
 	fire_sound = 'sound/weapons/guns/fire/mosin.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rifle_load.ogg'
 	fire_sound_silenced = 'sound/weapons/guns/fire/silenced_rifle.ogg' // More cohesive sound, still loud for its caliber
@@ -35,7 +35,7 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/boltgun/sawn //subtype for code
 	name = "\"obrez\" mosin boltgun"
@@ -172,7 +172,7 @@
 	desc = "A bolt-action rifle frame. For hunting or endless trench warfare."
 	icon_state = "frame_serbrifle"
 	result = /obj/item/gun/projectile/boltgun
-	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/wood)
-	resultvars = list(/obj/item/gun/projectile/boltgun, /obj/item/gun/projectile/boltgun/sa)
+	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/black)
+	resultvars = list(/obj/item/gun/projectile/boltgun, /obj/item/gun/projectile/boltgun/rosefield)
 	mechanismvar = /obj/item/part/gun/mechanism/boltgun
-	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/lrifle/steel) // Novakovic is cheap, Mosin is good barrel
+	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/srifle/steel)

@@ -105,8 +105,8 @@
 		/datum/design/autolathe/ammo/kurtz_ammobox_rubber = 0,
 		/datum/design/autolathe/ammo/kurtz_ammobox = 0,
 		/datum/design/autolathe/ammo/kurtz_ammobox_practice = 0,
-		/datum/design/autolathe/ammo/mag_10x24 = 0,
-		/datum/design/autolathe/ammo/box_10x24 = 3, // Two entire mags of a Pulse Rifle, thus costs 10% of license cost. It's also armory access exclusive.
+		/datum/design/autolathe/ammo/mag_7mm = 0,
+		/datum/design/autolathe/ammo/box_7mm = 3, // Two entire mags of a Pulse Rifle, thus costs 10% of license cost. It's also armory access exclusive.
 		/datum/design/autolathe/ammo/lrifle_ammobox = 1,
 		/datum/design/autolathe/ammo/lrifle_ammobox_lethal = 1,
 		/datum/design/autolathe/ammo/lrifle_ammobox_rubber = 0,
@@ -268,14 +268,14 @@
 //10mm Guns
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/specop
-	disk_name = "NM - 10x24mm Caseless /'Spec-Op/' SMG"
+	disk_name = "NM - 7mm Caseless /'Spec-Op/' SMG"
 	icon_state = "marshal"
 
 	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
 		/datum/design/autolathe/gun/specop = 3,
-		/datum/design/autolathe/ammo/mag_10x24,
-		/datum/design/autolathe/ammo/box_10x24_small = 1,
+		/datum/design/autolathe/ammo/mag_7mm,
+		/datum/design/autolathe/ammo/box_7mm_small = 1,
 	)
 
 // Laser

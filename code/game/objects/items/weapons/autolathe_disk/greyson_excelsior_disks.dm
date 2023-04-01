@@ -100,8 +100,8 @@
 	license = 6
 	designs = list(
 		/datum/design/autolathe/gun/scaffold = 2,
-		/datum/design/autolathe/ammo/c10x24,
-		/datum/design/autolathe/ammo/box_10x24 = 2,
+		/datum/design/autolathe/ammo/cl7mm,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter

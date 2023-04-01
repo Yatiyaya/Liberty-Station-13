@@ -51,7 +51,7 @@
 		//smg mags
 		/datum/design/autolathe/ammo/smg,
 		/datum/design/autolathe/ammo/smg_lethal,
-		/datum/design/autolathe/ammo/mag_10x24, // The specific model of the Spec Ops.
+		/datum/design/autolathe/ammo/clmag_7mm, // The specific model of the Spec Ops.
 		// rifles
 		/datum/design/autolathe/ammo/lrifle,
 		/datum/design/autolathe/ammo/lrifle_short,
@@ -112,7 +112,7 @@
 		/datum/design/autolathe/ammo/hrifle_ammobox_small_rubber,
 		/datum/design/autolathe/ammo/hrifle_ammobox_small_lethal,
 		/datum/design/autolathe/ammo/hrifle_ammobox,
-		/datum/design/autolathe/ammo/box_10x24_small = 2, // Small version moved here for Ranger ease of access, double the cost as the spec ops disk as it has double the points
+		/datum/design/autolathe/ammo/clbox_7mm_small = 2, // Small version moved here for Ranger ease of access, double the cost as the spec ops disk as it has double the points
 		/datum/design/autolathe/ammo/shotgun_box = 5, //35 x 4 (140 shells while a full disk of 5 x 20 = 100)
 		/datum/design/autolathe/ammo/shotgun_pellet_box = 5,
 		/datum/design/autolathe/container/ammocan_serb,
@@ -133,14 +133,14 @@
 		/datum/design/autolathe/ammo/lrifle_belt_empty = 0,
 		/datum/design/autolathe/ammo/hrifle_ammobox_linked_empty = 0,
 		/datum/design/autolathe/ammo/maxim_empty = 0,
-		/datum/design/autolathe/ammo/c10x24 = 3,
+		/datum/design/autolathe/ammo/cl7mm = 3,
 		/datum/design/autolathe/ammo/lrifle_ammobox,
 		/datum/design/autolathe/ammo/rifle_ammobox,
 		/datum/design/autolathe/ammo/hrifle_ammobox,
 		/datum/design/autolathe/ammo/shotgun_box = 3, //35 x 6 (210 shells well a full disk of 5 x 20 = 100)
 		/datum/design/autolathe/ammo/shotgun_pellet_box = 3,
-		/datum/design/autolathe/ammo/mag_10x24 = 1,
-		/datum/design/autolathe/ammo/box_10x24 = 5,
+		/datum/design/autolathe/ammo/clmag_7mm = 1,
+		/datum/design/autolathe/ammo/clbox_7mm = 5,
 		/datum/design/autolathe/ammo/box_antim = 5,
 		/datum/design/autolathe/container/ammocan_serb = 0,
 		/datum/design/autolathe/ammo/lrifle_drum = 2,
@@ -839,28 +839,28 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 
-//10x24mm Guns
+//7mm Guns
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/pulse_rifle
-	disk_name = "PAR - 10x24mm Caseless Pulse Rifle"
+	disk_name = "PAR - 7mm Caseless Pulse Rifle"
 	icon_state = "black"
 
 	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
 		/datum/design/autolathe/gun/pulse_rifle = 3,
-		/datum/design/autolathe/ammo/c10x24,
-		/datum/design/autolathe/ammo/box_10x24 = 2,
+		/datum/design/autolathe/ammo/cl7mm,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/survivalrifle
-	disk_name = "Hunters Inc - 10x24mm Caseless /'Bond/' Rifle"
+	disk_name = "Hunters Inc - 7mm Caseless /'Bond/' Rifle"
 	icon_state = "hunters"
 
 	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
 		/datum/design/autolathe/gun/survivalrifle = 3,
-		/datum/design/autolathe/ammo/mag_10x24,
-		/datum/design/autolathe/ammo/box_10x24_small = 1,
+		/datum/design/autolathe/ammo/mag_cl7mm,
+		/datum/design/autolathe/ammo/box_cl7mm_small = 1,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/rex10

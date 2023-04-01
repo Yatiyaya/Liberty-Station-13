@@ -193,11 +193,11 @@
 	name = "\"Lockpick-o-Matic\""
 	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
 			A mix of several other Slot-o-Matics put together after being sawn apart to make a rainbow and then fitted with a long unreloadable 10x24 caseless mag."
-	caliber = "10x24"
+	caliber = "7mm"
 	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
 	ammo_type = "/obj/item/ammo_casing/pistol"
 	mag_well = MAG_WELL_PULSE
-	magazine_type = /obj/item/ammo_magazine/c10x24
+	magazine_type = /obj/item/ammo_magazine/cl7mm
 	gun_tags = list(GUN_PROJECTILE)
 	possible_colors = list("rainbow")
 	init_recoil = EMBEDDED_RECOIL(0.5)
@@ -256,7 +256,7 @@
 	mag_well = MAG_WELL_H_PISTOL|MAG_WELL_PISTOL
 	damage_multiplier = 1.25
 	penetration_multiplier = 1
-	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM, GUN_MAGWELL)
+	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
 	init_recoil = HANDGUN_RECOIL(0.1)
 
 	init_firemodes = list(
@@ -298,7 +298,7 @@
 	damage_multiplier = 1.5
 	penetration_multiplier = 1.2 // So that it's good for PVE too
 	init_recoil = HANDGUN_RECOIL(0.3)
-	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM, GUN_SILENCABLE, GUN_MAGWELL)
+	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
 	serial_type = "BlueCross"
 
 /obj/item/gun/energy/lasersmg/p9evil

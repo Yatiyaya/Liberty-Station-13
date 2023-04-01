@@ -17,7 +17,7 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	damage_multiplier = 0.9
 	penetration_multiplier = 0.5
-	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM)
+	gun_tags = list(GUN_PROJECTILE)
 	init_recoil = EMBEDDED_RECOIL(0.8)
 	init_firemodes = list(
 		FULL_AUTO_300_NOLOSS,

@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/revolver/detective
-	name = "\"Havelock\" revolver"
+	name = "\"Pocket Princess\" revolver"
 	desc = "A cheap H&S J-frame revolver, simple, reliable, uses 9mm."
 	icon = 'icons/obj/guns/projectile/detective.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_revolver.ogg'
@@ -15,15 +15,15 @@
 	damage_multiplier = 1.15 //because pistol round
 	penetration_multiplier = 1.2
 	init_recoil = HANDGUN_RECOIL(0.5) //Rule of Cool
-	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
-	serial_type = "H&S"
+	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
+	serial_type = "Car-Van"
 
 	wield_delay = 0 SECOND //god it's bad
-	gun_parts = list(/obj/item/part/gun/frame/havelock = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/pistol = 1)
+	gun_parts = list(/obj/item/part/gun/frame/detective= 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/pistol = 1)
 
-/obj/item/part/gun/frame/havelock
-	name = "Havelock frame"
-	desc = "A Havelock revolver frame. Personal defense in a small package."
+/obj/item/part/gun/frame/detective
+	name = "Pocket Princess frame"
+	desc = "A Pocket Princess revolver frame. Personal defense in a small package."
 	icon_state = "frame_havelock"
 	result = /obj/item/gun/projectile/revolver/detective
 	resultvars = list(/obj/item/gun/projectile/revolver/detective)

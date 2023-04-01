@@ -299,10 +299,11 @@
 		GUN_UPGRADE_DAMAGE_TOX = 10,
 		UPGRADE_BULK = 1
 		)
-	I.req_gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM)
+	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "infused"
 
+/*
 // Guild made upgrade kit that makes 12mm guns a bit more viable
 /obj/item/gun_upgrade/mechanism/upgrade_kit
 	name = "Kurtz's refinement kit"
@@ -352,6 +353,7 @@
 	I.req_gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_12MM)
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "brass kitted"
+*/
 
 //Lets any revolver be made into a fully automatic weapon, but increases recoil. Acquirable through guild crafters.
 /obj/item/gun_upgrade/mechanism/weintraub

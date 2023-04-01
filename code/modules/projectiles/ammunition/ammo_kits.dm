@@ -68,12 +68,6 @@
 			"26 points, 30 ammo: 10mm ammo box" = list(26, /obj/item/ammo_magazine/ammobox/magnum_40),
 			"7 points: EMPTY 10mm pistol magazine" = list(7, /obj/item/ammo_magazine/magnum_40/empty)
 			),
-		CAL_50 = list(
-			"8 points, 6 ammo: 12mm ammo pile" = list(8, /obj/item/ammo_casing/kurtz_50/prespawned),
-			"8 points: EMPTY 12mm heavy pistol magazine" = list(8, /obj/item/ammo_magazine/kurtz_50/empty),
-			"10 points, 6 ammo: 12mm speedloader" = list(10, /obj/item/ammo_magazine/speed_loader_kurtz_50),
-			"26 points, 24 ammo: 12mm ammo box" = list(26, /obj/item/ammo_magazine/ammobox/kurtz_50) // Same price for all packets, except 4 less ammo
-			),
 		CAL_SHOTGUN = list(
 			"3 points, 5 ammo: Scrap beanbags pile" = list(3, /obj/item/ammo_casing/shotgun/beanbag/scrap/prespawned),
 			"4 points, 5 ammo: Scrap buckshot pile" = list(4, /obj/item/ammo_casing/shotgun/pellet/scrap/prespawned),
@@ -115,16 +109,6 @@
 			"10 points: EMPTY Rifle extended magazine" = list(10, /obj/item/ammo_magazine/rifle_75/empty),
 			"30 points: EMPTY Rifle drum magazine" = list(30, /obj/item/ammo_magazine/rifle_75_drum/empty),
 			"20 points: EMPTY Rifle linked box" = list(20, /obj/item/ammo_magazine/rifle_75_linked_box/empty)
-			),
-		CAL_HRIFLE = list(
-			"3 points, 10 ammo: Scrap heavy rifle ammo pile" = list(3, /obj/item/ammo_casing/heavy_rifle_408/scrap/prespawned),
-			"15 points, 40 ammo: Scrap heavy rifle ammo box" = list(15, /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap),
-			"8 points, 10 ammo: Heavy rifle ammo pile" = list(8, /obj/item/ammo_casing/heavy_rifle_408/prespawned),
-			"26 points, 40 ammo: Heavy rifle ammo packet" = list(26, /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small),
-			"8 points, 10 ammo: Incendiary heavy rifle ammo pile" = list(8, /obj/item/ammo_casing/heavy_rifle_408/incend/prespawned),
-			"26 points, 40 ammo: Incendiary heavy rifle ammo packet" = list(26, /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/incend),
-			"5 points: EMPTY heavy rifle magazine" = list(5, /obj/item/ammo_magazine/heavy_rifle_408/scrap/empty),
-			"30 points: EMPTY heavy rifle drum magazine" = list(30, /obj/item/ammo_magazine/heavy_rifle_408_drum/empty)
 			),
 		CAL_ANTIM = list(
 			"5 points, 3 ammo: Scrap 14.5mm ammo pile" = list(5, /obj/item/ammo_casing/antim/scrap/prespawned),

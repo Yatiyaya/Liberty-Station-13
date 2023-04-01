@@ -885,24 +885,24 @@
 	materials = list(MATERIAL_STEEL = 15)
 
 //snowflake caseless
-/datum/design/autolathe/ammo/c10x24
-	name = "pulse rifle magazine (10x24mm Caseless)"
-	build_path = /obj/item/ammo_magazine/c10x24
+/datum/design/autolathe/ammo/cl7mm
+	name = "pulse rifle magazine (7mm Caseless)"
+	build_path = /obj/item/ammo_magazine/cl7mm
 	materials = list(MATERIAL_STEEL = 12)
 
-/datum/design/autolathe/ammo/box_10x24_small
-	name = "ammo packet (10x24mm Caseless)"
-	build_path = /obj/item/ammo_magazine/ammobox/c10x24_small
+/datum/design/autolathe/ammo/cl7mm_small
+	name = "ammo packet (7mm Caseless)"
+	build_path = /obj/item/ammo_magazine/ammobox/cl7mm_small
 	materials = list(MATERIAL_STEEL = 5)
 
-/datum/design/autolathe/ammo/box_10x24
-	name = "ammo box (10x24mm Caseless)"
-	build_path = /obj/item/ammo_magazine/ammobox/c10x24
+/datum/design/autolathe/ammo/clbox_7mm
+	name = "ammo box (7mm Caseless)"
+	build_path = /obj/item/ammo_magazine/ammobox/cl7mm
 	materials = list(MATERIAL_STEEL = 25)
 
-/datum/design/autolathe/ammo/mag_10x24
-	name = "high capacity box magazine (10x24mm Caseless)"
-	build_path = /obj/item/ammo_magazine/smg_10x24
+/datum/design/autolathe/ammo/clmag_7mm
+	name = "high capacity box magazine (7mm Caseless)"
+	build_path = /obj/item/ammo_magazine/clsmg_7mm
 	materials = list(MATERIAL_STEEL = 2)
 
 //14.5×114mm anti-materiel

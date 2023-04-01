@@ -23,7 +23,7 @@
 			/obj/item/gun/projectile/shotgun/pump = good_data("Grizzly shotgun", list(1, 5), 700),
 		),
 		"Ammunition" = list(
-			/obj/item/ammo_magazine/c10x24 = custom_good_amount_range(list(1, 10)),
+			/obj/item/ammo_magazine/cl7mm = custom_good_amount_range(list(1, 10)),
 			/obj/item/ammo_magazine/a75 = custom_good_amount_range(list(1, 10)),
 			/obj/item/ammo_magazine/heavy_rifle_408_drum = custom_good_amount_range(list(1, 10)),
 			/obj/item/ammo_magazine/m12/pellet = custom_good_amount_range(list(1, 10)),

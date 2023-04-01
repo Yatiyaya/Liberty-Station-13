@@ -1,35 +1,48 @@
 /obj/item/gun/projectile/automatic/duty
-	name = "\"Duty\" carbine"
-	desc = "The Duty is a carbine designed by Marshall and Blackshield gunsmiths \
-	to suplement the ancient pattern boltguns as a standard issue rifle of Blackshield. \
-	Having the stopping power of the Kardashev-Mosin but with a faster fire rate and less recoil. \
-	The design took a lot of old world designs yet modernized it with the new caliber of 6.5mm \
-	and a light polymer body balanced with heavy steel and plasteel. \
-	A full production rifle, it also has melee capabilities with its bayonet \
-	and it can be reloaded with a stripper clip due to the adapter guide installed on the receiver. \
-	Overall a solid battle rifle for a Blackshield trooper."
-	icon = 'icons/obj/guns/projectile/duty.dmi'
+	name = "\"Duty\" marksman carbine"
+	desc = "A well-designed wooden stocked marksman rifle, built to take 6.5mm rounds. \
+			While incapable of fully-auomatic fire, the gun can be reloaded either through mags, individual casings, or stripper-clips."
+	icon = 'icons/obj/guns/projectile/liberty/duty.dmi'
 	icon_state = "duty"
 	item_state = "duty"
+	item_suffix = ""
 	w_class = ITEM_SIZE_BULKY
+	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_LRIFLE
-	mag_well = MAG_WELL_RIFLE
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
+	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|SPEEDLOADER|MAGAZINE
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 25)
-	price_tag = 900
+	mag_well = MAG_WELL_RIFLE
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	price_tag = 1000
+	fire_sound = 'sound/weapons/guns/fire/ak.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cocked_sound 	= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	damage_multiplier = 1.1
 	penetration_multiplier = 1.2
-	damage_multiplier = 1.2
-	init_recoil = CARBINE_RECOIL(1.0)
-	fire_sound = 'sound/weapons/guns/fire/carbine.ogg'
-	force = WEAPON_FORCE_ROBUST
-	gun_tags = list(GUN_PROJECTILE, GUN_BAYONET, GUN_SCOPE)
+	init_recoil = RIFLE_RECOIL(0.8)
+	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
+	serial_type = "Car-Van"
+
+	gun_parts = list(/obj/item/part/gun/frame/duty = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
+
 	init_firemodes = list(
-		SEMI_AUTO_NODELAY,
+		BURST_3_ROUND,
 		BURST_2_ROUND,
-		FULL_AUTO_200
+		SEMI_AUTO_NODELAY
 		)
-	serial_type = "NM"
-	gun_parts = list(/obj/item/part/gun/frame/strelki = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
+
+/obj/item/part/gun/frame/duty
+	name = "Duty frame"
+	desc = "A Duty marksman carbine frame. Perfect for small game."
+	icon_state = "frame_ak"
+	matter = list(MATERIAL_PLASTEEL = 8)
+	result = /obj/item/gun/projectile/automatic/duty
+	gripvars = list(/obj/item/part/gun/grip/black)
+	resultvars = list(/obj/item/gun/projectile/automatic/duty)
+	mechanismvar = /obj/item/part/gun/mechanism/autorifle
+	barrelvars = list(/obj/item/part/gun/barrel/srifle)
 
 /obj/item/gun/projectile/automatic/duty/update_icon()
 	..()
@@ -46,6 +59,3 @@
 
 	icon_state = iconstring
 	set_item_state(itemstring)
-
-//SNOWFLAKE CODE
-//TODO make all projectile guns work like this with a flag

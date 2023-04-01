@@ -331,12 +331,12 @@
 
 /obj/item/storage/box/syndie_kit/exl_revolver
 	name = "\"Wayfarer\" caseless revolver kit"
-	desc = "A well made 10x24 claseless revolver and some ammo."
+	desc = "A well made 7mm claseless revolver and some ammo."
 
 /obj/item/storage/box/syndie_kit/exl_revolver/populate_contents()
 	new /obj/item/gun/projectile/revolver/wayfarer(src)
-	new /obj/item/ammo_magazine/ammobox/c10x24_small(src)
-	new /obj/item/ammo_magazine/ammobox/c10x24_small(src)
+	new /obj/item/ammo_magazine/ammobox/7mm_small(src)
+	new /obj/item/ammo_magazine/ammobox/7mm_small(src)
 
 /obj/item/storage/secure/briefcase/money
 	name = "suspicious briefcase"

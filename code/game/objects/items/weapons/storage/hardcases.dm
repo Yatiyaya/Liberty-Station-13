@@ -499,7 +499,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		stamped = TRUE
 		var/list/options = list() // Moved the Galaxy to secondary selection
 		options["Mamba - assault rifle"] = list(/obj/item/gun/projectile/automatic/mamba,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball)
-		options["SWAT - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/pump/swat, /obj/item/ammo_magazine/ammobox/shotgun/beanbags/pepperball, /obj/item/ammo_magazine/ammobox/c10x24_small)
+		options["SWAT - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/pump/swat, /obj/item/ammo_magazine/ammobox/shotgun/beanbags/pepperball, /obj/item/ammo_magazine/ammobox/7mm_small)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
