@@ -11,7 +11,7 @@
 	turns_per_move = 2
 	move_to_delay = 2
 	see_in_dark = 10
-	speak_emote = list("grumbles")
+	speak_emote = list("buzzes loudly.")
 	emote_see = list("looks around for a target.")
 	attacktext = "stings"
 	meat_amount = 4
@@ -44,7 +44,7 @@
 		/datum/stat_modifier/mob/living/speed/flat/negative/low = 5,
 	)
 
-	fire_verb = "flings a sharp stinger shard"
+	fire_verb = "flings a sharp stinger!"
 
 	melee_damage_lower = 12
 	melee_damage_upper = 16
@@ -52,7 +52,7 @@
 	mag_type = /obj/item/stack/ore
 	mags_left = 6 //each vox has 6 rocks normally
 	rounds_per_fire = 1
-	reload_message = "perpares fling a sting!"
+	reload_message = "perpares its stinger!"
 	range_telegraph = "starts to push out its stinger, orienting it towards "
 	bones_amount = 0
 	inherent_mutations = list(MUTATION_BLOOD_BANK)
