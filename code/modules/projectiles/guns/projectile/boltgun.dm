@@ -175,4 +175,4 @@
 	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/black)
 	resultvars = list(/obj/item/gun/projectile/boltgun, /obj/item/gun/projectile/boltgun/rosefield)
 	mechanismvar = /obj/item/part/gun/mechanism/boltgun
-	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/srifle/steel)
+	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/srifle)

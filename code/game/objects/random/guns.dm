@@ -6,35 +6,27 @@
 /obj/random/gun_cheap/item_to_spawn()
 	return pickweight(list(
 				/obj/item/part/gun/frame/boltgun = 0.5,
-				/obj/item/part/gun/frame/roe = 0.5,
+				/obj/item/part/gun/frame/rosefield = 0.5,
 				/obj/item/part/gun/frame/colt = 0.5,
-				/obj/item/part/gun/frame/olivaw = 0.5,
-				/obj/item/part/gun/frame/mk58 = 0.5,
-				/obj/item/part/gun/frame/grizzly = 0.5,
+				/obj/item/part/gun/frame/liberty = 0.5,
 				/obj/item/part/gun/frame/doublebarrel = 0.5,
 				/obj/item/part/gun/frame/kalash = 0.5,
-				/obj/item/part/gun/frame/havelock = 0.5,
-				/obj/item/part/gun/frame/sixshot = 0.5,
-				/obj/item/part/gun/frame/luger = 0.5,
+				/obj/item/part/gun/frame/detective = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
 				/obj/random/gun_parts/frames = 3,
 
-				/obj/item/gun/projectile/revolver/rev10/rex10 = 2,\
 				/obj/item/gun/projectile/revolver/detective = 3,\
 				/obj/item/gun/energy/shrapnel = 3,\
 				/obj/item/gun/energy/lasersmg = 0.5,\
 				/obj/item/ammo_kit = 3,\
-				/obj/item/gun/projectile/giskard = 1,\
-				/obj/item/gun/projectile/automatic/luger = 0.5,\
-				/obj/item/gun/projectile/boltgun/sa = 2,\
+				/obj/item/gun/projectile/clarissa = 1,\
+				/obj/item/gun/projectile/boltgun = 2,\
 				/obj/item/gun/projectile/shotgun/pump = 0.1,\
-				/obj/item/gun/projectile/revolver/sixshot/sawn = 0.5,\
 				/obj/item/gun/projectile/shotgun/pump/sawn = 0.5,\
 				/obj/item/gun/projectile/shotgun/pump/obrez = 1.5,\
-				/obj/item/gun/projectile/boltgun/sawn/light = 0.5,\
 				/obj/item/gun/projectile/boltgun/sawn/true = 0.5,\
-				/obj/item/gun/projectile/boltgun/sawn/sa = 1,\
-				/obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless = 0.1, \
-				/obj/item/gun/projectile/olivaw = 1.5,
+				/obj/item/gun/projectile/automatic/federalist = 0.1, \
+				/obj/item/gun/projectile/automatic/nationale = 0.1, \
 				/obj/item/gun_upgrade/barrel/forged = 1))
 
 /obj/random/gun_cheap/low_chance
@@ -53,34 +45,25 @@
 	spawn_nothing_percentage = 0
 
 /obj/random/gun_normal/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/grizzly = 0.5,
-				/obj/item/part/gun/frame/sixshot = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/grease = 0.5,
-				/obj/item/part/gun/frame/basilisk = 0.5,
-				/obj/item/part/gun/frame/sts = 0.5,
-				/obj/item/part/gun/frame/minotaur = 0.5,
-				/obj/item/part/gun/frame/minstral = 0.5,
-				/obj/item/part/gun/frame/armstrong = 0.5,
-				/obj/item/part/gun/frame/strelki = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/doublebarrel = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
+				/obj/item/part/gun/frame/colt = 0.5,
+				/obj/item/part/gun/frame/liberty = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
+				/obj/item/part/gun/frame/frontier = 0.5,
+				/obj/item/part/gun/frame/umbani = 0.5,
+				/obj/item/part/gun/frame/western = 0.5,
 				/obj/item/part/gun/frame/ak47 = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
 
-				/obj/item/gun/projectile/lamia = 0.1,\
-				/obj/item/gun/projectile/automatic/texan = 0.5,\
-				/obj/item/gun/projectile/lamia/gemini = 0.09,\
-				/obj/item/gun/projectile/revolver/rev10/rex10 = 0.5,\
-				/obj/item/gun/projectile/revolver/rev10 = 0.3,\
-				/obj/item/gun/projectile/basilisk = 0.5,\
-				/obj/item/gun/projectile/ladon = 0.5,\
-				/obj/item/gun/projectile/automatic/nordwind/strelki = 0.3,\
-				/obj/item/gun/projectile/revolver/sixshot = 1,\
-				/obj/item/gun/projectile/boltgun/lever = 1.5,\
-				/obj/item/gun/projectile/automatic/greasegun = 0.1,\
+				/obj/item/gun/projectile/martian = 0.1,\
+				/obj/item/gun/projectile/automatic/specialist = 0.5,\
+				/obj/item/gun/projectile/revolver/frontier = 0.5,\
+				/obj/item/gun/projectile/revolver/ranger = 0.3,\
+				/obj/item/gun/projectile/automatic/duty = 1,\
+				/obj/item/gun/projectile/automatic/operator_rifle = 0.1,\
 				/obj/item/gun/projectile/colt = 2,\
-				/obj/item/gun/projectile/revolver = 2,\
-				/obj/item/gun/projectile/boltgun = 0.5,\
-				/obj/item/gun/projectile/boltgun/sa = 2,\
+				/obj/item/gun/projectile/boltgun = 1,\
+				/obj/item/gun/projectile/boltgun/rosefield = 2,\
 				/obj/item/ammo_kit = 2,
 				/obj/item/gun_upgrade/trigger/dangerzone = 1,
 				/obj/item/gun_upgrade/mechanism/overshooter = 1))
@@ -97,29 +80,28 @@
 	spawn_nothing_percentage = 10
 
 /obj/random/gun_combat/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/grease = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/speicalist = 0.5,
 				/obj/item/part/gun/frame/makarov = 0.5,
-				/obj/item/part/gun/frame/hornet = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
-				/obj/item/part/gun/frame/saiga = 0.5,
-				/obj/item/part/gun/frame/strelki = 0.5,
-				/obj/item/part/gun/frame/thompson = 0.5,
+				/obj/item/part/gun/frame/stinger = 0.5,
+				/obj/item/part/gun/frame/sweeper = 0.5,
+				/obj/item/part/gun/frame/duty = 0.5,
+				/obj/item/part/gun/frame/umbani = 0.5,
 				/obj/item/part/gun/frame/ak47 = 0.5,
-				/obj/item/part/gun/frame/sts = 0.5,
-				/obj/item/part/gun/frame/solmarine = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
+				/obj/item/part/gun/frame/federalist = 0.5,
 				/obj/random/gun_parts/frames = 1,
 
 				/obj/item/gun/projectile/automatic/greasegun = 1,\
 				/obj/item/gun/projectile/automatic/duty = 1,\
 				/obj/item/ammo_kit = 0.8,
-				/obj/item/gun/projectile/automatic/sts/rifle/sawn = 1,\
-				/obj/item/gun/projectile/automatic/omnirifle/solmarine = 1,\
-				/obj/item/gun/projectile/automatic/thompson = 0.5,
-				/obj/item/gun/projectile/automatic/ak47/sa/sawn = 1,\
+				/obj/item/gun/projectile/automatic/nationale = 1,\
+				/obj/item/gun/projectile/automatic/federalist = 1,\
+				/obj/item/gun/projectile/automatic/autopistol = 0.5,
+				/obj/item/gun/projectile/automatic/ak47/sa = 1,\
 				/obj/item/gun/projectile/makarov = 1,\
-				/obj/item/gun/projectile/shotgun/pug = 0.5,
-				/obj/item/gun/projectile/revolver/hornet = 0.5))
+				/obj/item/gun/projectile/shotgun/sweeper = 0.5,
+				/obj/item/gun/projectile/shotgun/judge = 0.5,
+				/obj/item/gun/projectile/revolver/ranger = 0.5))
 
 /obj/random/gun_combat/low_chance
 	name = "low chance assault weapon"

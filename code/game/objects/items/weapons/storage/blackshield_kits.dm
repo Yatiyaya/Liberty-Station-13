@@ -17,7 +17,7 @@
 		new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
 		new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
 		new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-		new /obj/item/gun/projectile/colt/ten(src)
+		new /obj/item/gun/projectile/colt(src)
 		new /obj/item/ammo_magazine/magnum_40(src)
 		new /obj/item/ammo_magazine/magnum_40(src)
 		new /obj/item/clothing/accessory/holster/hip(src)
@@ -44,7 +44,7 @@
 	desc = "The standard Blackshield equipment kit containing a Roe bolt action rifle, kitted with an enhanced scope. A highly accurate sniper rifle used by hunters galaxy wide for hunting medium sized game."
 
 	populate_contents()
-		new /obj/item/gun/projectile/boltgun/light(src)
+		new /obj/item/gun/projectile/boltgun(src)
 		new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
 		new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
 		new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)

@@ -196,8 +196,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/storage/hcases/ammo/ih/ranger_officer/populate_contents()
 	new /obj/item/handcuffs(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/clothing/accessory/badge/holo/inspector(src)
 	new /obj/item/cell/small/high(src)
@@ -498,8 +496,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	if(!stamped)
 		stamped = TRUE
 		var/list/options = list() // Moved the Galaxy to secondary selection
-		options["Mamba - assault rifle"] = list(/obj/item/gun/projectile/automatic/mamba,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball)
-		options["SWAT - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/pump/swat, /obj/item/ammo_magazine/ammobox/shotgun/beanbags/pepperball, /obj/item/ammo_magazine/ammobox/7mm_small)
+		options["Federalist - assault rifle"] = list(/obj/item/gun/projectile/automatic/federalist,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball)
+		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/automatic/judge, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]

@@ -189,9 +189,9 @@
 	desc = "12mm suppressed handgun and its kit."
 
 /obj/item/storage/box/syndie_kit/hpistol/populate_contents()
-	new /obj/item/gun/projectile/lamia/socom(src)
-	new /obj/item/ammo_magazine/kurtz_50/hv(src)
-	new /obj/item/ammo_magazine/kurtz_50/hv(src)
+	new /obj/item/gun/projectile/martian(src)
+	new /obj/item/ammo_magazine/magnum_40/hv(src)
+	new /obj/item/ammo_magazine/magnum_40/hv(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/mask/balaclava(src)
 
@@ -200,10 +200,10 @@
 	desc = "12mm revolver and its kit."
 
 /obj/item/storage/box/syndie_kit/painrevolver/populate_contents()
-	new /obj/item/gun/projectile/revolver/hornet(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/lethal(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/highvelocity(src)
+	new /obj/item/gun/projectile/revolver/ranger(src)
+	new /obj/item/ammo_magazine/speed_loader_magnum_40/rubber(src)
+	new /obj/item/ammo_magazine/speed_loader_magnum_40/lethal(src)
+	new /obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/mask/balaclava(src)
 
@@ -242,7 +242,7 @@
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/storage/box/syndie_kit/pug/populate_contents()
-	new /obj/item/gun/projectile/shotgun/pug(src)
+	new /obj/item/gun/projectile/shotgun/sweeper(src)
 	new /obj/item/ammo_magazine/m12/pellet(src)
 
 /obj/item/storage/box/syndie_kit/antimaterial_rifle
@@ -335,8 +335,8 @@
 
 /obj/item/storage/box/syndie_kit/exl_revolver/populate_contents()
 	new /obj/item/gun/projectile/revolver/wayfarer(src)
-	new /obj/item/ammo_magazine/ammobox/7mm_small(src)
-	new /obj/item/ammo_magazine/ammobox/7mm_small(src)
+	new /obj/item/ammo_magazine/ammobox/cl7mm_small(src)
+	new /obj/item/ammo_magazine/ammobox/cl7mm_small(src)
 
 /obj/item/storage/secure/briefcase/money
 	name = "suspicious briefcase"

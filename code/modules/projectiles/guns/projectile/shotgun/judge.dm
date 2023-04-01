@@ -1,4 +1,4 @@
-/obj/item/gun/projectile/automatic/judge
+/obj/item/gun/projectile/shotgun/judge
 	name = "\"Judge\" automatic shotgun"
 	desc = "A 12 gauge shotgun with an auto-ejector and capability of being fired without the need to pump its action. This impresive model, built by Martian Logistics, is a favorite galaxy wide. \
 			Sporting little in the chance of jamming due to its blow-back feature, this amazing piece of work maintains the simplicity of a shotgun with the automatic firepower of a traditional mag-fed shotgun."
@@ -30,7 +30,17 @@
 	SEMI_AUTO_NODELAY,
 	FULL_AUTO_150_NOLOSS)
 	serial_type = "ML"
+	gun_parts = list(/obj/item/part/gun/frame/judge = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
+/obj/item/part/gun/frame/judge
+	name = "Street Sweeper frame"
+	desc = "A Street Sweeper shotgun frame. Specially designed to sweep streets and spaceship halls."
+	icon_state = "frame_pug"
+	result = /obj/item/gun/projectile/shotgun/judge
+	resultvars = list(/obj/item/gun/projectile/shotgun/judge)
+	gripvars = list(/obj/item/part/gun/grip/rubber)
+	mechanismvar = /obj/item/part/gun/mechanism/shotgun
+	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 
 /obj/item/gun/projectile/automatic/judge/update_icon()
 	..()

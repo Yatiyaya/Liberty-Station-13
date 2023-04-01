@@ -120,16 +120,16 @@
 	icon_state = iconstring
 	set_item_state(itemstring)
 
-/*
+
 /obj/item/gun/projectile/makarov/moebius
-	name = "SI HG 9mm \"Malpractice\"" // SI stands for Soteria Institution
+	name = " 9mm \"Malpractice\""
 	desc = "A small, easily concealable, but somewhat underpowered gun produced by SI as based off the \"Little Comet\" but ended up being a copy of the \"Clarissa\" with white paint. Uses 9mm rounds."
-	icon = 'icons/obj/guns/projectile/clarissa_white.dmi'
+	icon = 'icons/obj/guns/projectile/stinger.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	price_tag = 200
 	serial_type = "SI"
-	icon_state = "clarissa"
-	item_state = "clarissa"
+	icon_state = "stingersop"
+	item_state = "stingersop"
 	gun_parts = list(/obj/item/stack/material/plastic = 4)
 
 /obj/item/gun/projectile/makarov/moebius/auto_eject
@@ -149,23 +149,3 @@
 /obj/item/gun/projectile/makarov/moebius/preloaded/New()
 	. = ..()
 	ammo_magazine = new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)
-
-/obj/item/gun/projectile/makarov/moebius/update_icon()
-	..()
-
-	var/iconstring = initial(icon_state)
-	var/itemstring = ""
-
-	if (ammo_magazine)
-		iconstring += "_mag"
-
-	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
-		iconstring += "_slide"
-
-	if (silenced)
-		iconstring += "_s"
-		itemstring += "_s"
-
-	icon_state = iconstring
-	set_item_state(itemstring)
-*/

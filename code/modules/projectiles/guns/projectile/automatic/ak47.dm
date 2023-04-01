@@ -1,8 +1,8 @@
 /obj/item/gun/projectile/automatic/ak47
-	name = "\"Kalashnikov\" rifle"
+	name = "\"Kalash\" rifle"
 	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-			A copy of the Kalashnikov pattern, shortened into a mid-length rifle and chambered in 7.62mm. This is an polymer, printed copy."
-	icon = 'icons/obj/guns/projectile/ak.dmi'
+			A copy of the Kalashnikov pattern chambered in 7.62mm. This is an polymer, printed copy of the famous wooden design."
+	icon = 'icons/obj/guns/projectile/liberty/ak5.dmi'
 	icon_state = "AK"
 	item_state = "AK"
 	item_suffix = ""
@@ -14,22 +14,22 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
-	price_tag = 1000
+	price_tag = 750
 	fire_sound = 'sound/weapons/guns/fire/ak.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
-	damage_multiplier = 1.2 //the uncheap
-	init_recoil = RIFLE_RECOIL(0.8)
+	damage_multiplier = 1
+	init_recoil = RIFLE_RECOIL(1)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
-	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 	init_firemodes = list(
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY
 		)
-	serial_type = "EXC"
+	serial_type = "Car-Van"
 
 //AK-47 base-frame
 /obj/item/part/gun/frame/ak47
@@ -37,8 +37,8 @@
 	desc = "An AK rifle frame. The eternal firearm."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
-	result = /obj/item/gun/projectile/automatic/ak47/sa
-	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/serb)
+	result = /obj/item/gun/projectile/automatic/ak47
+	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/wood)
 	resultvars = list(/obj/item/gun/projectile/automatic/ak47, /obj/item/gun/projectile/automatic/ak47/sa)
 	mechanismvar = /obj/item/part/gun/mechanism/autorifle
 	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/srifle)
@@ -66,42 +66,34 @@
 /obj/item/gun/projectile/automatic/ak47/sa
 	name = "\"Ugil\" carbine"
 	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-		 	A copy of the AKM pattern, shortened into a mid-length rifle and chambered in 5.56mm. The left arm of the unfree world."
+		 	A copy of the AKM pattern, shortened into a mid-length rifle and chambered in 6.5mm. The left arm of the unfree world."
 	icon = 'icons/obj/guns/projectile/ak_wood.dmi'
 	icon_state = "AK"
 	item_state = "AK"
 	caliber = CAL_LRIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
-	price_tag = 900
+	price_tag = 700
 	init_recoil = RIFLE_RECOIL(0.9)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	saw_off = TRUE
-	sawn = /obj/item/gun/projectile/automatic/ak47/sa/sawn
-	serial_type = "SA"
-	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
-
-/obj/item/gun/projectile/automatic/ak47/sa/sawn
-	name = "sawn-off \"Ugil\" carbine"
-	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
-	A copy of the AKM pattern chambered in 7.62mm and crudely sawed down to a shadow of its former self. Rifle was fine. Was."
-	icon = 'icons/obj/guns/projectile/sawnoff/ak.dmi'
-	icon_state = "AK"
-	item_state = "AK"
-	excelsior = FALSE
-	w_class = ITEM_SIZE_NORMAL
-	force = WEAPON_FORCE_NORMAL
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 5)
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	price_tag = 800
-	init_recoil = RIFLE_RECOIL(1)
-	damage_multiplier = 1
 	saw_off = FALSE
-	serial_type = "SA"
-	wield_delay = 0.8 SECOND
-	wield_delay_factor = 0.2 // 20 vig for insta wield
+	serial_type = "LG"
+	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
+
+	init_firemodes = list(
+		FULL_AUTO_600,
+		SEMI_AUTO_NODELAY
+		)
+
+/obj/item/gun/projectile/automatic/ak47/sa/update_icon()
+	..()
+	if(!folded)
+		iconstring += "_stock"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
 
 /obj/item/gun/projectile/automatic/ak47/makeshift
-	name = "Homemade \"Kalashnikov\" rifle"
+	name = "Homemade \"Kalash\" rifle"
 	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
 			This is a copy of an ancient semi-automatic rifle chambered for 7.62mm. If it won't fire, percussive maintenance should get it working again. \
 			It is known for its easy maintenance, and low price. This gun is not in active military service anymore, but has become ubiquitous among criminals and insurgents. \

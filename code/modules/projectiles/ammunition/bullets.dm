@@ -280,11 +280,11 @@
 	projectile_type = /obj/item/projectile/beam/weak/rifle_75
 
 ///10mm caseless
-/obj/item/ammo_casing/7mm
+/obj/item/ammo_casing/cl7mm
 	desc = "A 7mm caseless cartidge."
 	caliber = "7mm"
 	icon_state = "caseless"
-	projectile_type = /obj/item/projectile/bullet/7mm
+	projectile_type = /obj/item/projectile/bullet/cl7mm
 	is_caseless = TRUE
 
 //Flare, .22
@@ -641,30 +641,12 @@
 	desc = "A 40mm EMP/Flash warhead designed for the RPG-7 launcher. Has a tubular shape."
 	projectile_type = /obj/item/projectile/bullet/rocket/emp
 
-/obj/item/ammo_casing/a75
-	name = "microjet casing"
-	desc = "A 19mm gyrojet rocket."
-	caliber = CAL_70
-	projectile_type = /obj/item/projectile/bullet/gyro
-
-/obj/item/ammo_casing/a75/spent
-	projectile_type = null
-
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
 	caliber = CAL_CAP
 	color = "#FF0000"
 	projectile_type = /obj/item/projectile/bullet/cap
-
-/obj/item/ammo_casing/beam
-	name = "laser casing"
-	desc = "A laser casing thats cal is .223."
-	caliber = CAL_SCI
-	projectile_type = /obj/item/projectile/beam/weak
-
-/obj/item/ammo_casing/beam/spent
-	projectile_type = null
 
 /obj/item/ammo_casing/beam/ap
 	desc = "A piercing laser casing. Meant for penetration of armor thats cal is .223."

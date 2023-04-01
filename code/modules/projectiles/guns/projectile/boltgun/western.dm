@@ -17,7 +17,17 @@
 	serial_type = "ML"
 	extra_bulk = -2
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE)
+	gun_parts = list(/obj/item/part/gun/frame/western = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
+/obj/item/part/gun/frame/western
+	name = "bolt-action rifle frame"
+	desc = "A bolt-action rifle frame. For hunting or endless trench warfare."
+	icon_state = "frame_serbrifle"
+	result = /obj/item/gun/projectile/boltgun/lever/western
+	gripvars = list(/obj/item/part/gun/grip/black)
+	resultvars = list(/obj/item/gun/projectile/boltgunlever/western)
+	mechanismvar = /obj/item/part/gun/mechanism/boltgun
+	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 
 /obj/item/gun/projectile/boltgun/lever/shotgun/sawn
 	name = "sawn \"Western\" repeating shotgun"

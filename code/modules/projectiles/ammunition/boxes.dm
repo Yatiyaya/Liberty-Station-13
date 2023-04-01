@@ -381,65 +381,23 @@
 
 ////snowflake 10x24////
 
-/obj/item/ammo_magazine/ammobox/7mm
+/obj/item/ammo_magazine/ammobox/cl7mm
 	name = "ammunition box (7mm caseless)"
 	icon_state = "box10x24"
 	desc = "A box of 10mm caseless round, how odd."
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = "7mm"
-	ammo_type = /obj/item/ammo_casing/7mm
+	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 200
 
-/obj/item/ammo_magazine/ammobox/7mm_small
+/obj/item/ammo_magazine/ammobox/cl7mm_small
 	name = "ammunition packet (7mm caseless)"
 	icon_state = "box10mm"
 	desc = "A box of 10mm caseless round, how odd."
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = "7mm"
-	ammo_type = /obj/item/ammo_casing/7mm
+	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 80 //6.6 reloads of the SWAT, 2 of the bond, almost 1 full pulse mag
-
-//// 12mm heavy pistol
-
-/obj/item/ammo_magazine/ammobox/kurtz_50
-	name = "ammunition box (12mm)"
-	icon_state = "box50"
-	matter = list(MATERIAL_CARDBOARD = 1)
-	caliber = CAL_50
-	ammo_type = /obj/item/ammo_casing/kurtz_50
-	max_ammo = 24
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/rubber
-	name = "ammunition box (12mm rubber)"
-	icon_state = "box50-rubber"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/rubber
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/rubber/pepperball
-	name = "ammunition box (12mm pepperball)"
-	desc = "A box of police grade 12mm pepperball type rounds; complete with CO2 cartriage casings."
-	icon_state = "box50-pepper"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/rubber/pepperball
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/practice
-	name = "ammunition box (12mm practice)"
-	icon_state = "box50-practice"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/practice
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/hv
-	name = "ammunition box (12mm high-velocity)"
-	icon_state = "box50-hv"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/hv
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/lethal
-	name = "ammunition box (12mm hollow-point)"
-	desc = "A box of self-defense grade 12mm hollow-points."
-	icon_state = "box50-lethal"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/lethal
-
-/obj/item/ammo_magazine/ammobox/kurtz_50/laser
-	name = "ammunition box (12mm laser)"
-	icon_state = "box50-si"
-	ammo_type = /obj/item/ammo_casing/kurtz_50/laser
 
 //// 14.5×114mm ////
 
@@ -476,70 +434,6 @@
 	icon_state = "antim_s"
 	ammo_type = /obj/item/ammo_casing/antim/scrap
 	max_ammo = 5
-
-//// 17.7mm rolled shot ////
-
-///obj/item/ammo_magazine/ammobox/ball
-//	name = "ammunition box (17.7mm rolled shot)"
-//	icon_state = "antim"
-//	desc = "A box of 17.7mm rolled shot."
-//	matter = list(MATERIAL_STEEL = 5)
-//	w_class = ITEM_SIZE_BULKY
-//	caliber = CAL_BALL
-//	ammo_type = /obj/item/ammo_casing/ball
-//	max_ammo = 30
-
-//// 8.6mm Heavy Rifle ////
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small
-	name = "ammunition packet (8.6mm ball)"
-	icon_state = "hrifle"
-	desc = "A box of 8.6x70mm heavy rifle ammunition."
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_CARDBOARD = 1)
-	caliber = CAL_HRIFLE
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
-	max_ammo = 40
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/rubber
-	name = "ammunition packet (8.6mm rubber)"
-	icon_state = "hrifle_r"
-	desc = "A box of 8.6x70mm heavy rifle ammunition."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/rubber
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/practice
-	name = "ammunition packet (8.6mm practice)"
-	icon_state = "hrifle_p"
-	desc = "A box of 8.6x70mm heavy rifle ammunition."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/practice
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/hv
-	name = "ammunition packet (8.6mm SLAP)"
-	icon_state = "hrifle_hv"
-	desc = "A box of 8.6x70mm heavy rifle ammunition. 40ct, 8mm Saboted Light Armor Penetrators, spoon-tipped."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/hv
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/lethal
-	name = "ammunition packet (8.6mm hollow point)"
-	icon_state = "hrifle_l"
-	desc = "A box of 8.6x70mm heavy rifle ammunition. 40ct, 10mm hollow-tipped full-caliber."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/lethal
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/incend
-	name = "ammunition packet (8.6mm incendiary)"
-	icon_state = "hrifle_l"
-	desc = "A box of 8.6x70mm heavy rifle ammunition. 40ct, 10mm incendiary full-caliber."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/incend
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/laser
-	name = "ammunition packet (8.6mm laser)"
-	icon_state = "hrifle_si"
-	desc = "A box of 8.6x70mm heavy rifle ammunition. 40ct, 7mm subcaliber laser rounds."
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/laser
-
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap
-	name = "ammunition packet (old 8.6mm Rifle)"
-	icon_state = "lrifle_s"
-	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/scrap
 
 // Shotgun boxes
 

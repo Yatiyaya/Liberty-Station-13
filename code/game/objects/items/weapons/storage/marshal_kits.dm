@@ -110,9 +110,9 @@
 
 	populate_contents()
 		new /obj/item/gun/projectile/automatic/specop(src)
-		new /obj/item/ammo_magazine/smg_7mm(src)
-		new /obj/item/ammo_magazine/smg_7mm(src)
-		new /obj/item/ammo_magazine/smg_7mm(src)
+		new /obj/item/ammo_magazine/clsmg_7mm(src)
+		new /obj/item/ammo_magazine/clsmg_7mm(src)
+		new /obj/item/ammo_magazine/clsmg_7mm(src)
 
 /obj/item/storage/box/m_kit/peacekeeper
 	name = "Peacekeeper ESG Kit"

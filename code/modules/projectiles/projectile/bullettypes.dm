@@ -604,7 +604,7 @@
 
 ///Snowflake  ///
 
-/obj/item/projectile/bullet/7mm
+/obj/item/projectile/bullet/cl7mm
 	damage_types = list(BRUTE = 19)
 	armor_penetration = 18
 	penetrating = 2

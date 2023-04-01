@@ -23,8 +23,6 @@
 	armor_penetration = 1.1
 	init_recoil = HANDGUN_RECOIL(1.3)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
-	var/drawChargeMeter = TRUE
-	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	fire_animatio = TRUE
 	allow_racking = FALSE
 	serial_type = "ML"

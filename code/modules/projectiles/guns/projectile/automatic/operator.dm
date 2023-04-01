@@ -42,7 +42,7 @@
 	var/itemstring = ""
 
 	if (ammo_magazine)
-			iconstring += "_mag"
+		iconstring += "_mag"
 
 	icon_state = iconstring
 	set_item_state(itemstring)
