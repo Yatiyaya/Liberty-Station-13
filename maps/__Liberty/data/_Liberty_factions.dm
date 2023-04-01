@@ -1,5 +1,5 @@
-/datum/faction/nadezhda
-	name = "Nadezhda High Council"
+/datum/faction/liberty
+	name = "Liberty High Council"
 
 	fax_alert = "HIGH COUNCIL FAX"
 	fax_response = "High Council Directional Decree"
@@ -12,7 +12,7 @@
 	stampshape = "paper_stamp-circle"
 	faxable = TRUE
 
-/datum/faction/nadezhda/marshal
+/datum/faction/liberty/marshal
 	name = "Marshals - Boris Kilmeade"
 
 	fax_alert = "MARSHAL COMMUNIQUE"
@@ -25,7 +25,7 @@
 	stamptext = "This paper has been authorized with the Provost Marshal Boris's Insignia"
 	stampshape = "paper_stamp-x"
 
-/datum/faction/nadezhda/militia
+/datum/faction/liberty/militia
 	name = "Blackshield - Brigadier Ayanda Mwangi"
 
 	fax_alert = "BLACKSHIELD COMMUNIQUE"
@@ -38,7 +38,7 @@
 	stamptext = "This paper has been authorized with the Brigadier Ayanda Mwangi's Insignia."
 	stampshape = "paper_stamp-x"
 
-/datum/faction/nadezhda/soteria
+/datum/faction/liberty/soteria
 	name = "Soteria Institute - Nakharan Mkne"
 
 	fax_alert = "SOTERIA FAX"
@@ -51,7 +51,7 @@
 	stamptext = "This paper has been embossed with the seal of Nakharan Mkne."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/lonestar
+/datum/faction/liberty/lonestar
 	name = "Lonestar Shipping Solutions, LLC - Robert Ryan"
 
 	fax_alert = "LONESTAR REQUISITION FAX"
@@ -64,7 +64,7 @@
 	stamptext = "This paper has been stamped with Robert Ryan's chairman Insignia."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/prospectors
+/datum/faction/liberty/prospectors
 	name = "Prospectors - Jeremiah Hogg"
 
 	fax_alert = "PROSPECTOR FAX"
@@ -77,7 +77,7 @@
 	stamptext = "This paper has been stamped with the notary of Jeremiah Hogg."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/artificer
+/datum/faction/liberty/artificer
 	name = "Artificer's Guild - Tacitus O'Connor"
 
 	fax_alert = "ARTIFICER GUILD REQUISITION FAX"
@@ -90,7 +90,7 @@
 	stamptext = "This paper has been stamped with the grand master's seal."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/church
+/datum/faction/liberty/church
 	name = "Church of Absolute - Augstine Browne"
 
 	fax_alert = "CHURCH FAX"
@@ -103,7 +103,7 @@
 	stamptext = "This paper has been stamped with the sanctified symbol of Cartographer Augustine Browne."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/voidwolves
+/datum/faction/liberty/voidwolves
 	name = "Colony Allies - Void Wolf Coalition"
 
 	fax_alert = "VOID WOLF FAX"
@@ -116,7 +116,7 @@
 	stamptext = "This paper has been stamped with the seal of a void wolf captain."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/nadezhda/puppers
+/datum/faction/liberty/puppers
 	name = "Colony Allies - Kriosan Confederacy"
 
 	fax_alert = "KRIOSAN CONFEDERACY FAX"

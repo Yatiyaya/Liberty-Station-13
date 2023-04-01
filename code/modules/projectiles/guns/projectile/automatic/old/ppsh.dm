@@ -34,7 +34,7 @@
 
 /obj/item/gun/projectile/automatic/ppsh/NM_colony
 	name = "\"Ekaterina\" assault SMG"
-	desc = "An experimental sub-machine gun design made for urban combat with a built in silencer and chambered in 9mm, taking only specific drum magazines.\nThis model of the \"Shpagin\" assault SMG has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	desc = "An experimental sub-machine gun design made for urban combat with a built in silencer and chambered in 9mm, taking only specific drum magazines.\nThis model of the \"Shpagin\" assault SMG has been reclaimed and repurposed by Liberty Marshals, making it free of Excelsior taint."
 	icon = 'icons/obj/guns/projectile/ppsh_bs.dmi'
 	icon_state = "ppsh_bs"
 	item_state = "ppsh_bs"

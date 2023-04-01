@@ -1,16 +1,16 @@
-#include "area/_Nadezhda_areas.dm"
-#include "data/_Nadezhda_factions.dm"
-#include "data/_Nadezhda_Turbolifts.dm"
-#include "data/shuttles-nadezhda.dm"
+#include "area/_Liberty_areas.dm"
+#include "data/_Liberty_factions.dm"
+#include "data/_Liberty_Turbolifts.dm"
+#include "data/shuttles-liberty.dm"
 #include "data/overmap-eris.dm"
 #include "data/shuttles-eris.dm"
 #include "data/reports.dm"
 
-#include "map/_Nadezhda_Colony_New.dmm"
-//#include "_Nadezhda_Colony_Underground.dmm"
-//#include "_Nadezhda_Colony_Transition.dmm"
-//#include "_Nadezhda_Colony_Surface.dmm"
-#include "map/_Nadezhda_Solar_Area.dmm"
+#include "map/_Liberty_Colony_New.dmm"
+//#include "_Liberty_Colony_Underground.dmm"
+//#include "_Liberty_Colony_Transition.dmm"
+//#include "_Liberty_Colony_Surface.dmm"
+#include "map/_Liberty_Solar_Area.dmm"
 
 
 /obj/map_data/eris
@@ -19,8 +19,8 @@
 	height = 1
 
 
-/obj/map_data/nadezda_ues //Omnie level has all three surface underground and stairs
-	name = "Nadezhda Omni Map"
+/obj/map_data/liberty_ues //Omnie level has all three surface underground and stairs
+	name = "Liberty Omni Map"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -30,8 +30,8 @@
 	height = 3
 	digsites = "HOUSE"
 
-/obj/map_data/nadezda_new //Omnie level has all three surface underground and stairs
-	name = "Nadezhda New Map"
+/obj/map_data/liberty_new //Omnie level has all three surface underground and stairs
+	name = "Liberty New Map"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -42,8 +42,8 @@
 	digsites = "HOUSE"
 
 
-/obj/map_data/nadezda_s
-	name = "Nadezhda Surface"
+/obj/map_data/liberty_s
+	name = "Liberty Surface"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -52,8 +52,8 @@
 	generate_asteroid = TRUE
 	height = 1
 
-/obj/map_data/nadezda_u
-	name = "Nadezhda Underground"
+/obj/map_data/liberty_u
+	name = "Liberty Underground"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -61,8 +61,8 @@
 	is_sealed = TRUE
 	height = 1
 
-/obj/map_data/nadezda_e
-	name = "Nadezhda Elevator and Stairs"
+/obj/map_data/liberty_e
+	name = "Liberty Elevator and Stairs"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -76,8 +76,8 @@
 	is_accessable_level = FALSE
 	height = 1
 
-/obj/map_data/nadezda_solars
-	name = "Nadezhda Mountain Solars"
+/obj/map_data/liberty_solars
+	name = "Liberty Mountain Solars"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE
@@ -85,8 +85,8 @@
 	is_sealed = TRUE
 	height = 1
 
-/obj/map_data/nadezda_labor
-	name = "Nadezhda Labor Camp"
+/obj/map_data/liberty_labor
+	name = "Liberty Labor Camp"
 	is_station_level = TRUE
 	is_player_level = TRUE
 	is_contact_level = TRUE

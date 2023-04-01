@@ -90,7 +90,7 @@ var/list/dreams = list(
 
 //Factions/Groups
 	"the marshals","the blackshield","the prospectors","the excelsior institute","lonestar shipping solutions",
-	"the artificers guild","the nadezhda council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
+	"the artificers guild","the liberty council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
 
 //Station Locations
 	"the gate","the bar","the emergency storage","the transfer shuttle","the tool storage","the bar","the chapel",

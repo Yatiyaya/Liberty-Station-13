@@ -1,4 +1,4 @@
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/ElevOne
+/obj/turbolift_map_obj/turbolift_map_base/liberty/ElevOne
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -17,7 +17,7 @@
 		)
 
 /*
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/ElevTwo
+/obj/turbolift_map_obj/turbolift_map_base/Liberty/ElevTwo
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -37,7 +37,7 @@
 */
 
 //MINING ELEVATOR
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/Mining
+/obj/turbolift_map_obj/turbolift_map_base/liberty/Mining
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -57,8 +57,8 @@
 
 
 /area/turbolift/Mining/underground
-	name = "Nadezhda Mining - Mining"
-	lift_floor_label = "Nadezhda Mining"
+	name = "Liberty Mining - Mining"
+	lift_floor_label = "Liberty Mining"
 	lift_floor_name = "Mining"
 	lift_announce_str = "Transition complete. Welcome to Mining.  Please stay safe!"
 	base_turf = /turf/simulated/shuttle/floor/mining
@@ -79,15 +79,15 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Mining/colony
-	name = "Nadezhda Mining - Colony"
-	lift_floor_label = "Nadezhda Colony"
+	name = "Liberty Mining - Colony"
+	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Colony"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Colony Underground."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Colony Underground."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 
 //PROSPECTOR ELEVATOR
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/prospector
+/obj/turbolift_map_obj/turbolift_map_base/liberty/prospector
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -124,18 +124,18 @@
 	name = "Lonestar Underground Access"
 	lift_floor_label = "Lonestar Underground Access"
 	lift_floor_name = "Prospector Prep"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Underground. Be mindful of all longarm firearm regulations."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Underground. Be mindful of all longarm firearm regulations."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/prospector/surface
 	name = "Lonestar Surface Access"
 	lift_floor_label = "Lonestar Surface Access"
 	lift_floor_name = "Surface"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Surface. Be mindful of all longarm firearm regulations."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Surface. Be mindful of all longarm firearm regulations."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 //SOLARS ELEVATOR
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/mountaintop
+/obj/turbolift_map_obj/turbolift_map_base/liberty/mountaintop
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -170,20 +170,20 @@
 
 /area/turbolift/mountain/colony
 	name = "Guild Solars - Colony"
-	lift_floor_label = "Nadezhda Colony"
+	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Engine Room"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Colony Underground."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Colony Underground."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/mountain/solars
 	name = "Guild Solars - Mountain Top"
-	lift_floor_label = "Nadezhda Mountain Top"
+	lift_floor_label = "Liberty Mountain Top"
 	lift_floor_name = "Solars"
 	lift_announce_str = "Transition complete. Welcome to the mountain top. Please stay safe!"
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 //RESEARCH ELEVATOR
-/obj/turbolift_map_obj/turbolift_map_base/Nadezhda/Research
+/obj/turbolift_map_obj/turbolift_map_base/liberty/Research
 	name = "Turbolift"
 	lift_size_x = 3 // Size of the actual lift, shaft walls are extra.
 	lift_size_y = 3
@@ -217,15 +217,15 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Research/colony
-	name = "Nadezhda Research - Colony"
-	lift_floor_label = "Nadezhda Colony"
+	name = "Liberty Research - Colony"
+	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Research Colony"
 	lift_announce_str = "Transition complete."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Research/underground
-	name = "Nadezhda Research - Underground"
-	lift_floor_label = "Nadezhda Research"
+	name = "Liberty Research - Underground"
+	lift_floor_label = "Liberty Research"
 	lift_floor_name = "Research Underground"
 	lift_announce_str = "Transition complete"
 	base_turf = /turf/simulated/shuttle/floor/mining
@@ -237,10 +237,10 @@
 
 //colony
 /area/turbolift/ElevatorOne/underground
-	name = "Nadezhda Underground"
-	lift_floor_label = "Nadezhda Underground"
+	name = "Liberty Underground"
+	lift_floor_label = "Liberty Underground"
 	lift_floor_name = "Floor Two"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Underground."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Underground."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorOne/midlevelOne
@@ -259,8 +259,8 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorOne/surface
-	name = "Nadezhda Surface"
-	lift_floor_label = "Nadezhda Surface"
+	name = "Liberty Surface"
+	lift_floor_label = "Liberty Surface"
 	lift_floor_name = "Floor One"
 	lift_announce_str = "Transition complete. Welcome to the Surface."
 	base_turf = /turf/simulated/shuttle/floor/mining
@@ -269,10 +269,10 @@
 
 
 /area/turbolift/ElevatorTwo/underground
-	name = "Nadezhda Underground"
-	lift_floor_label = "Nadezhda Underground"
+	name = "Liberty Underground"
+	lift_floor_label = "Liberty Underground"
 	lift_floor_name = "Floor Two"
-	lift_announce_str = "Transition complete. Welcome to the Nadezhda Underground."
+	lift_announce_str = "Transition complete. Welcome to the Liberty Underground."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorTwo/midlevelOne
@@ -291,8 +291,8 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorTwo/surface
-	name = "Nadezhda Surface"
-	lift_floor_label = "Nadezhda Surface"
+	name = "Liberty Surface"
+	lift_floor_label = "Liberty Surface"
 	lift_floor_name = "Floor One"
 	lift_announce_str = "Transition complete. Welcome to the Surface."
 	base_turf = /turf/simulated/shuttle/floor/mining

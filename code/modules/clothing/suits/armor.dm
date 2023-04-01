@@ -976,7 +976,7 @@
 
 /obj/item/clothing/suit/storage/vest/ironhammer
 	name = "webbed operator armor"
-	desc = "An armored vest that protects against some damage. This one has been done in Nadezhda Marshal colors and has various pouches and straps attached."
+	desc = "An armored vest that protects against some damage. This one has been done in Liberty Marshal colors and has various pouches and straps attached."
 	icon_state = "webvest_ironhammer"
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.

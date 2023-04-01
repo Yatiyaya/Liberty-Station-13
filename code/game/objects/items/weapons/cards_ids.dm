@@ -348,7 +348,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/secert
 	name = "Marshal ID card"
-	desc = "An ID straight from the Nadezhda Marshals"
+	desc = "An ID straight from the Liberty Marshals"
 	registered_name = "Marshal Agent"
 	assignment = "Marshal Agent"
 	icon_state = "id_hos_all-access"

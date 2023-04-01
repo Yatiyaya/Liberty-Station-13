@@ -129,7 +129,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 		else
 			if(M.antagonist.len)
 				var/area/A = get_area(M.current)
-				if(istype(A, /area/nadezhda/security/prison) || istype(A, /area/nadezhda/security/brig) || M.current.restrained())
+				if(istype(A, /area/liberty/security/prison) || istype(A, /area/liberty/security/brig) || M.current.restrained())
 					GLOB.captured_or_dead_antags++
 				else if(isOnAdminLevel(M.current))
 					GLOB.ironhammer_escaped_antagonists++

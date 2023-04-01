@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/dp
 	name = "\"Pulemyot Degtyaryova\" light machinegun"
-	desc = "A cruedly made yet reliable top-loading machine gun manufactured by the local Nadezhda Marshals. It appears to have specifically been made to use spare pan-magazines from Maxims."
+	desc = "A cruedly made yet reliable top-loading machine gun manufactured by the local Liberty Marshals. It appears to have specifically been made to use spare pan-magazines from Maxims."
 	icon = 'icons/obj/guns/projectile/dp.dmi'
 	icon_state = "dp"
 	item_state = "dp"
