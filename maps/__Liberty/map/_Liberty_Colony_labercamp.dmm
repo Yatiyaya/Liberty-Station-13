@@ -18,7 +18,7 @@
 /turf/unsimulated/mineral,
 /area/mine/gulag)
 "bej" = (
-/obj/map_data/nadezda_labor,
+/obj/map_data/liberty_labor,
 /turf/unsimulated/mineral,
 /area/mine/gulag)
 "bfe" = (

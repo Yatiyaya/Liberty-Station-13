@@ -201,19 +201,19 @@
 
 /obj/item/clothing/under/rank/fatigues/kav //My beautiful baby boi Kavrick, thank u for the sprites.
 	name = "grey Blackshield fatigues"
-	desc = "A robust, grey utility suit bearing the markings of the Nadezhda Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
+	desc = "A robust, grey utility suit bearing the markings of the Liberty Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
 	icon_state = "bsgrey"
 	item_state = "bsgrey"
 
 /obj/item/clothing/under/rank/fatigues/kav/green
 	name = "green Blackshield fatigues"
-	desc = "A robust, geen grey utility suit bearing the markings of the Nadezhda Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
+	desc = "A robust, geen grey utility suit bearing the markings of the Liberty Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
 	icon_state = "bsgreen"
 	item_state = "bsgreen"
 
 /obj/item/clothing/under/rank/fatigues/kav/tan
 	name = "tan Blackshield fatigues"
-	desc = "A robust, tan utility suit bearing the markings of the Nadezhda Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
+	desc = "A robust, tan utility suit bearing the markings of the Liberty Blackshield Militia.comes with EZ roll sleeves, roll-down shirt, including optional corpsman patch and skirt! "
 	icon_state = "bstan"
 	item_state = "bstan"
 
