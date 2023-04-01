@@ -296,7 +296,7 @@
 
 /datum/perk/second_skin
 	name = "Second Skin"
-	desc = "Cindarites, be they bunker born or spacers, are used to wearing bulky enviromental suits. This life time of being acclimated to heavy clothing has become a second skin for many, allowing you to remove clothing instantly and never suffer slowdown from heavy armor."
+	desc = "Cindarites, be they bunker born or spacers, are used to wearing bulky enviromental suits. This life time of being acclimated to heavy clothing has become a second skin for many, allowing you to remove clothing instantly and only suffer half the slowdown from heavy armor."
 
 ///////////////////////////////////////////Opifex perks
 /datum/perk/opifex_backup
@@ -617,12 +617,14 @@
 	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate carnivore. You get very little nutrition from standard nutriment, but gain alot from meat and protein \
 	based products."
 	passivePerk = TRUE
+	icon_state = "snack_carn"
 
 /datum/perk/herbivore
 	name = "Herbivore"
 	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate herbivore. You get very little nutrition from standard protein, but gain alot from grown foods and glucose \
 	based products."
 	passivePerk = TRUE
+	icon_state = "snack_herb"
 
 ///////////////////////////////////// Slime perks
 /datum/perk/speed_boost

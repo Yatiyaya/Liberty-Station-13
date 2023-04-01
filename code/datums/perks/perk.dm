@@ -47,7 +47,7 @@
 /datum/perk
 	var/name = "Perk"
 	var/desc = ""
-	var/icon// = 'icons/effects/perks.dmi'
+	var/icon = 'icons/effects/perks.dmi'
 	var/icon_state = ""
 	var/mob/living/carbon/human/holder
 	var/gain_text

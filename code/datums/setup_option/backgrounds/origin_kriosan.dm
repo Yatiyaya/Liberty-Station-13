@@ -7,6 +7,8 @@
 
 	restricted_to_species = list(FORM_KRIOSAN)
 
+	perks = list(PERK_BOLT_REFLECT)
+
 	stat_modifiers = list(
 		STAT_ROB = 0,
 		STAT_TGH = 0,
@@ -25,6 +27,8 @@
 	day."
 
 	restricted_to_species = list(FORM_KRIOSAN)
+
+	perks = list(PERK_PERFECT_SHOT)
 
 	stat_modifiers = list(
 		STAT_ROB = 5,

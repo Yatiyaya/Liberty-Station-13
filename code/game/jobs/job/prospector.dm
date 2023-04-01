@@ -15,7 +15,7 @@
 	department_account_access = TRUE
 	health_modifier = 15
 
-	disallow_species = list(FORM_SOTSYNTH, FORM_AGSYNTH, FORM_BSSYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	outfit_type = /decl/hierarchy/outfit/job/foreman
@@ -72,7 +72,7 @@
 	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round-start.
 	wage = WAGE_NONE
 
-	disallow_species = list(FORM_BSSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_LIBYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/salv
 
 	health_modifier = 5
@@ -121,7 +121,7 @@
 	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round start.
 	wage = WAGE_NONE
 
-	disallow_species = list(FORM_SOTSYNTH, FORM_AGSYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/pro
 	health_modifier = 10
 
