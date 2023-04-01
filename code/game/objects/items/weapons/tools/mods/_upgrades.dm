@@ -471,6 +471,12 @@
 		if(G.dna_lock_sample == "not_set")
 			G.dna_lock_sample = usr.real_name
 
+	if(weapon_upgrades[GUN_UPGRADE_CHEM])
+		G.give_reagents = TRUE
+
+	if(weapon_upgrades[GUN_UPGRADE_CHEMICAL])
+		G.spray = GUN_UPGRADE_CHEMICAL
+
 	if(!weapon_upgrades[GUN_UPGRADE_DNALOCK])
 		G.dna_user_sample = "not_set"
 

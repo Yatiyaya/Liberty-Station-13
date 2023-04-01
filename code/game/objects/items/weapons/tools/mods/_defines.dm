@@ -11,13 +11,15 @@
 #define UPGRADE_FUELCOST_MULT "fuelcost_mult"
 #define UPGRADE_POWERCOST_MULT "powercost_mult"
 
-//Soj changes ------- -Kaz
+//Soj changes -------
 #define UPGRADE_MELEE_ARMOR "melee"
 #define UPGRADE_BALLISTIC_ARMOR "bullet"
 #define UPGRADE_ENERGY_ARMOR "energy"
 #define UPGRADE_BOMB_ARMOR "bomb"
 #define UPGRADE_ALLOW_GREYON_MODS "allow_gp"
 #define GUN_UPGRADE_ALLOW_GREYON_MODS "allow_gp_gun"
+#define GUN_UPGRADE_CHEM "gives_bullet_chems"
+#define GUN_UPGRADE_CHEMICAL "chemical_we_give"
 // ------------------
 
 #define SANCTIFIED "saint" //Used for weapons that was sanctified

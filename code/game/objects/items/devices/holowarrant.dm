@@ -10,7 +10,7 @@
 	slot_flags = SLOT_BELT|SLOT_POCKET // QOL improvement tbh
 	req_access = list(list(access_heads, access_security))
 	var/boss_name = "Marshals"
-	var/station_name = "The Nadezhda Colony"
+	var/station_name = "The Liberty Colony"
 	var/datum/computer_file/data/warrant/active
 
 //Examine text

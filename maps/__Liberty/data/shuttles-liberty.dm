@@ -12,7 +12,7 @@
 	name = "Surface Transport Shuttle Pad"
 	landmark_tag = "nav_pad_surface_transport"
 	base_turf = /turf/simulated/floor/tiled/dark/cargo
-	base_area = /area/nadezhda/security/maingate
+	base_area = /area/liberty/security/maingate
 
 /obj/effect/shuttle_landmark/transit/surface_transport
 	name = "In transit"
@@ -81,7 +81,7 @@
 	autoset = TRUE
 
 /obj/effect/shuttle_landmark/skipjack_colony
-	name = "Nadezhda Landing Zone"
+	name = "Liberty Landing Zone"
 	landmark_tag = "nav_skipjack_colony"
 	base_turf = /turf/simulated/floor/asteroid/dirt
 	autoset = TRUE
@@ -142,7 +142,7 @@
 	autoset = TRUE
 
 /obj/effect/shuttle_landmark/mercshuttle_colony
-	name = "Nadezhda Landing Pad"
+	name = "Liberty Landing Pad"
 	landmark_tag = "nav_mercshuttle_colony"
 	base_turf = /turf/simulated/floor/tiled/dark/gray_platform
 	autoset = TRUE
