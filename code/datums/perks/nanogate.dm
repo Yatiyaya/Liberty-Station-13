@@ -9,6 +9,15 @@
 	by your nanites."
 	icon_state = "circuitry"
 
+/datum/perk/nanogate/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.insight_passive_gain_multiplier *= 0.4
+
+/datum/perk/nanogate/remove()
+	if(holder)
+		holder.sanity.insight_passive_gain_multiplier /= 1
+	..()
+
 /datum/perk/nanite_regen
 	name = "Nanite Regeneration"
 	desc = "You configure your nanite matrix to begin aiding in your natural healing."

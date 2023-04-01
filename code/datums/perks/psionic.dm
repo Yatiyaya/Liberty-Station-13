@@ -26,7 +26,7 @@
 	name = "Psionic Harmony"
 	desc = "You have achieved inner harmony, your balance of emotion giving you peace of mind and thus expanding your potential as a psion. With this frame of mind, you retain a \
 	higher maximum psi pool than others, increasing your capacity by two."
-	// Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
+	icon_state = "inland_empire" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/psi_attunement
 	name = "Psionic Attunement"

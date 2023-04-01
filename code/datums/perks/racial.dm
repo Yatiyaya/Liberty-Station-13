@@ -134,6 +134,15 @@
 	name = "Inspired Intellect"
 	desc = "Even the most humble Mar'qua is capable of study and extrapolation, your natural intellect allows you to become gain inspiration more easily."
 
+/datum/perk/racial/squid_inspired/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.insight_passive_gain_multiplier *= 1.5
+
+/datum/perk/racial/squid_inspired/remove()
+	if(holder)
+		holder.sanity.insight_passive_gain_multiplier /= 1.5
+	..()
+
 /datum/perk/racial/squid_alien_nerves
 	name = "Adapted Nervous System"
 	desc = "A mar'qua's nervous system has long since adapted to the use of stimulants, chemicals, and different toxins. Unlike lesser races, you can handle a wide variety of chemicals before showing any side effects and you'll never become addicted."

@@ -32,7 +32,7 @@
 	stat_modifiers = list(STAT_COG = -5)
 
 
-/datum/category_item/setup_option/background/thoughts/empathy
+/datum/category_item/setup_option/background/thoughts/authority
 	name = "Baron of Conscience"
 	desc = "Majority of your peers only look out for themselves but not you, you are there for the little man, the poor and downtrodden always believing good times are coming. \
 	Merely standing in presence of such unfortunate individuals lifts their spirit right back up allowing them to go on throught with another day.\
@@ -43,7 +43,6 @@
 
 	stat_modifiers = list(STAT_COG = -5)
 
-
 /datum/category_item/setup_option/background/thoughts/volition
 	name = "Wasteland of the Mind"
 	desc = "Nothing brings you true joy in life never experienced happiness either, about the only thing that only ever got near to that feeling was finding a penny lying on the street. \
@@ -52,6 +51,8 @@
 	Bitterness shields you against the horrors of this world, in face of death you merely smirk without care in the world."
 
 	perks = list(PERK_NIHILIST)
+
+	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
 	name = "Malfunctioning Motorics"
@@ -64,7 +65,7 @@
 
 	stat_modifiers = list(STAT_COG = -5)
 
-/datum/category_item/setup_option/background/thoughts/savior_faire
+/datum/category_item/setup_option/background/thoughts/interfacing
 	name = "RATional Isolation"
 	desc = "You're a slimy being in more ways than one, as far as your feeble mind can remember always have been, but can anyone truly blame you ? \
 	The ugly mug you wear covered in grease and dirt never attracted the right sort of attention neither from your peers nor your parents. \

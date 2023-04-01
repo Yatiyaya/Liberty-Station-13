@@ -25,11 +25,14 @@ Chemical Neutralizer - Reduces addiction chance all the way down to 0.1 and incr
 	icon_state = "imprinter"
 
 /datum/perk/cognitive_enhancer/assign(mob/living/carbon/human/H)
-	..()
-	holder.stats.changeStat(STAT_COG, 30)
+	if(..())
+		holder.sanity.insight_passive_gain_multiplier *= 1.1
+		holder.stats.changeStat(STAT_COG, 30)
 
 /datum/perk/cognitive_enhancer/remove()
-	holder.stats.changeStat(STAT_COG, -30)
+	if(holder)
+		holder.sanity.insight_passive_gain_multiplier /= 1.1
+		holder.stats.changeStat(STAT_COG, -30)
 	..()
 
 /datum/perk/chemical_neutralizer //Cleanses brain and helps dealing with chemicals that way
