@@ -1468,6 +1468,8 @@
 #include "code\game\objects\structures\flora\flora.dm"
 #include "code\game\objects\structures\flora\flora_potted.dm"
 #include "code\game\objects\structures\flora\flora_tree.dm"
+#include "code\game\objects\structures\flora\snowrocks.dm"
+#include "code\game\objects\structures\flora\tree\flora_snowtree.dm"
 #include "code\game\objects\structures\stool_bed_chair_nest\bed.dm"
 #include "code\game\objects\structures\stool_bed_chair_nest\chairs.dm"
 #include "code\game\objects\structures\stool_bed_chair_nest\stools.dm"
