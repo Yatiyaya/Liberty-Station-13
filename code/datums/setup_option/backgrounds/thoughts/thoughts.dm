@@ -7,6 +7,8 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/composure
@@ -18,6 +20,8 @@
 
 	perks = list(PERK_SURVIVOR)
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
@@ -28,6 +32,8 @@
 	Sometimes there is nothing better for you then just let it all out at once, such is the reality of your mind."
 
 	perks = list(PERK_REJECTED_GENIUS)
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -41,6 +47,8 @@
 
 	perks = list(PERK_IDEALIST)
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/volition
@@ -52,6 +60,8 @@
 
 	perks = list(PERK_NIHILIST)
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
@@ -62,6 +72,8 @@
 	But every time you fail you become stronger, determined to prove to everyone that despite all of this you are still better than them."
 
 	perks = list(PERK_KLUTZ)
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -75,17 +87,18 @@
 
 	perks = list(PERK_RAT)
 
-	stat_modifiers = list(STAT_COG = -5)
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
+	stat_modifiers = list(STAT_COG = -5)
+/* Psionics not in game
 //Temporary names and descriptions
 /datum/category_item/setup_option/background/thoughts/inland_empire
 	name = "Peaceful Life"
-	desc = "You've lived a life of peace and harmony so idyllic that is has given you a special bit of enlightenment. This is not to say your life was easy, nor without trial or consequence, \
-	it merely speaks of your approach being serene in ways that have left lasting effects upon you. This early life has left you so deeply effected that your mind is the calm within the storm, \
-	no matter the scenario you cannot be left in turmoil for long. You always find contentment, you always find peace. As such, should you ever become a psion, you're mind is perfectly adapted \
-	to make the most of the essence from which your powers are called, granting you three additional uses of your abilities."
+	desc = "It's too late, like a image on film, the 'Expression' belongs to your primary motor cortex, it would take a minor neurological miracle for you to cease producing it."
 
 	perks = list(PERK_PSI_HARMONY)
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -98,4 +111,7 @@
 
 	perks = list(PERK_PSI_MANIA)
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+
 	stat_modifiers = list(STAT_COG = -5)
+*/

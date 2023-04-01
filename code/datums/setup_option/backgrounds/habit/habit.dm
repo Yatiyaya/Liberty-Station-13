@@ -33,6 +33,7 @@
 	From bankers to cult leaders to even just petty criminals, if it moves you can make it praise your name.\
 	As such you got yourself a hefty raise from the higher ups which you will surely put to good use."
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_NEPOTISM)
 
 /datum/category_item/setup_option/background/habit/linguist
@@ -41,11 +42,14 @@
 	Unlike most you're silver-tongued in both your knowledge of English, your secondary or native language - and your tertiary! \
 	Being tri-lingual has its upsides, making you an adept trader of sorts. Though its downside is that you may have not studied as hard as some others have in other subjects."
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_LINGUIST)
-
+/* Not in game yet
 /datum/category_item/setup_option/background/career/psi_sufficiency
 	name = "Enlightened Scholar"
 	desc = "This is here so that someone can actually write a description for it on basis of me having 'poor grammar' to put it \
 	in very mild  terms, also cause nothing is concrete yet."
 
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_PSI_ATTUNEMENT)
+*/

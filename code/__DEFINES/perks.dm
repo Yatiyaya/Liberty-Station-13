@@ -22,6 +22,10 @@
 #define PERK_KLUTZ /datum/perk/background/klutz
 #define PERK_MARKET_PROF /datum/perk/background/market_prof
 
+//Synthetics
+#define PERK_REAPER /datum/perk/background/reaper
+#define PERK_EQUALIZER /datum/perk/background/equalizer
+
 //Sanity
 #define PERK_SURVIVOR /datum/perk/background/survivor
 #define PERK_NIHILIST /datum/perk/background/nihilist
