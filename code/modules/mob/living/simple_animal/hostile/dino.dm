@@ -69,7 +69,7 @@
 			if(istype(L,/mob/living/carbon/human))
 				var/mob/living/carbon/human/thetarget = L
 				if(thetarget.mind.assigned_job.department_flag == 2 || thetarget.mind.assigned_job.department_flag == 34)
-					if(istype(L.lastarea,/area/nadezhda/pros/prep) || istype(L.lastarea,/area/nadezhda/pros/foreman))
+					if(istype(L.lastarea,/area/liberty/pros/prep) || istype(L.lastarea,/area/liberty/pros/foreman))
 						if(!SA_attackable(thetarget))
 							stance = HOSTILE_STANCE_ATTACK
 							T = L

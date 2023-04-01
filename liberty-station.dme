@@ -3365,7 +3365,7 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_map_shims.dm"
-#include "maps\__Nadezhda\Map_Nadezhda.dm"
+#include "maps\__Liberty\Map_Liberty.dm"
 #include "maps\_dungeons\crawler\crawler.dm"
 #include "maps\_dungeons\deepmaint\deepmaint.dm"
 #include "maps\CEVEris\_Eris_areas.dm"

@@ -46,7 +46,7 @@
 
 /obj/item/gun/projectile/automatic/ak47/NM_colony
 	name = "polymer \"Kalashnikov\" rifle"
-	desc = " A copy of the Kalashnikov pattern, shortened into a mid-length rifle and chambered in 7.62mm. \nThis abysmal, printed copy of a Kalashnikov has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	desc = " A copy of the Kalashnikov pattern, shortened into a mid-length rifle and chambered in 7.62mm. \nThis abysmal, printed copy of a Kalashnikov has been reclaimed and repurposed by Liberty Marshals, making it free of Excelsior taint."
 	excelsior = FALSE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1)
 	price_tag = 800
@@ -90,7 +90,7 @@
 
 /obj/item/gun/projectile/automatic/ak47/saiga/NM_colony
 	name = "\"Saigini 12\" shotgun"
-	desc = "A bulked up and modified version of the Kalashnikov made to fire 20mm shotgun shells, taking magazines similar to the Sol Federation SBAW design. \nThis model of the \"Saiga\" shotgun has been reclaimed and repurposed by Nadezhda Marshals, making it free of Excelsior taint."
+	desc = "A bulked up and modified version of the Kalashnikov made to fire 20mm shotgun shells, taking magazines similar to the Sol Federation SBAW design. \nThis model of the \"Saiga\" shotgun has been reclaimed and repurposed by Liberty Marshals, making it free of Excelsior taint."
 	icon_state = "saiga-bs"
 	item_state = "saiga-bs"
 	penetration_multiplier = 0.9 //Non-Excelsior varient, it's powerful as is. Pug on crack.

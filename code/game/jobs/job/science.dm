@@ -7,7 +7,7 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nadezhda Council"
+	supervisors = "the Liberty Council"
 	difficulty = "Medium."
 	selection_color = "#b39aaf"
 	req_admin_notify = 1

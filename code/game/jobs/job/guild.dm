@@ -9,7 +9,7 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nadezhda Council"
+	supervisors = "the Liberty Council"
 	difficulty = "Medium."
 	selection_color = "#b3a68c"
 	wage = WAGE_COMMAND	//CEO now gets paid the money moola muh [redacted] -Kaz

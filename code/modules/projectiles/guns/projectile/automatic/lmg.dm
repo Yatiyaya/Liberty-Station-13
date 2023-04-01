@@ -188,7 +188,7 @@
 // I AM HEAVY WEAPONS GUY, AND THIS...IS MY WEAPON. - Seb
 /obj/item/gun/projectile/automatic/lmg/heroic
 	name = " \"Heroic\" General Purpose Machinegun"
-	desc = "The \"Heroic\" General Purpose Machinegun was created by Nadezhda Marshals in response to Blackshield's lack of suppressing fire armaments. \
+	desc = "The \"Heroic\" General Purpose Machinegun was created by Liberty Marshals in response to Blackshield's lack of suppressing fire armaments. \
 			Inspired by Seinemetall's Takeshi LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
 			Chambered in 7.62x39mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
 	icon = 'icons/obj/guns/projectile/heroic.dmi'
