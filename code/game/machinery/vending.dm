@@ -152,6 +152,7 @@
 	//Note that a vendor can always accept restocks of things it has had in the past. This is in addition to that
 	var/no_criminals = FALSE //If true, the machine asks if you're wanted by security when you try to order.
 	var/alt_currency_path	// If set, this machine will only take items of the given path as currency.
+	var/alt_currency_research // If set, this machine will use research from disks as currency.
 
 /obj/machinery/vending/New()
 	..()
@@ -361,6 +362,12 @@
 			else
 				var/atom/movable/AM = alt_currency_path
 				to_chat(user, SPAN_WARNING("This vending machine only accepts [initial(AM.name)] as currency."))
+			handled = TRUE
+		if(alt_currency_research)
+			if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
+				paid = pay_with_disk(I, user)
+			else
+				to_chat(user, SPAN_WARNING("This vending machine only accepts research data as currency."))
 			handled = TRUE
 		else
 			if(ID) //for IDs and PDAs and wallets with IDs
@@ -603,6 +610,26 @@
 	if(should_qdel)
 		user.drop_from_inventory(I)
 		qdel(I)
+
+	return TRUE
+
+// Pay with research data
+/obj/machinery/vending/proc/pay_with_disk(obj/item/I, mob/user)
+	var/amount_to_spend = currently_vending.price
+
+	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
+		var obj/item/computer_hardware/hard_drive/portable/disky = I
+		for(var/datum/computer_file/F in disky.stored_files)
+			if(istype(F, /datum/computer_file/binary/research_points))
+				if(F.size >= amount_to_spend) //the size of a research file is the amount of points it is.
+					F.size -= amount_to_spend
+				else
+					to_chat(user, SPAN_WARNING("\icon[I] That disk dosn't have enough data."))
+					return FALSE
+	else
+		return FALSE
+
+	visible_message(SPAN_NOTICE("\The [user] swipes [I.name] onto \the [src]."))
 
 	return TRUE
 
