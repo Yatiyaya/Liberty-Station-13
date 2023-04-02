@@ -1,7 +1,7 @@
 /datum/gear/factionsoteria
 	display_name = "winter coat, soteria research"
 	path = /obj/item/clothing/suit/hooded/wintercoat/science
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 	cost = 0
@@ -16,7 +16,7 @@
 /datum/gear/factionsoteria/cloakmeo
 	display_name = "cloak, research overseer"
 	path = /obj/item/clothing/accessory/job/cape/meo
-	allowed_roles = list("Chief Research Overseer")
+	allowed_roles = list("Research Provost")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 
@@ -30,7 +30,7 @@
 /datum/gear/factionsoteria/cloakscience
 	display_name = "cloak, soteria research"
 	path = /obj/item/clothing/accessory/job/cape/science
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 
@@ -51,7 +51,7 @@
 /datum/gear/factionsoteria/gorka_crew_sci
 	display_name = "gorka jacket, soteria research"
 	path = /obj/item/clothing/suit/gorka/toggle/gorka_crew_sci
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Lifeline Technician")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Lifeline Technician")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 
@@ -65,7 +65,7 @@
 /datum/gear/factionsoteria/gorkamoebiusscientist
 	display_name = "gorka jumpsuit, soteria research"
 	path = /obj/item/clothing/under/rank/scientist/gorka_crew_sci
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_w_uniform
 	sort_category = "Faction: Soteria"
 
@@ -128,7 +128,7 @@
 /datum/gear/factionsoteria/snowsuitscience
 	display_name = "snowsuit, soteria research"
 	path = /obj/item/clothing/suit/storage/snowsuit/science
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 
@@ -142,7 +142,7 @@
 /datum/gear/factionsoteria/winterbootsscience
 	display_name = "winter boots, soteria research"
 	path = /obj/item/clothing/shoes/winter/science
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_shoes
 	sort_category = "Faction: Soteria"
 
@@ -156,21 +156,21 @@
 /datum/gear/factionsoteria/labcoatmembrane
 	display_name = "labcoat, membrane"
 	path = /obj/item/clothing/suit/storage/membrane
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_wear_suit
 	sort_category = "Faction: Soteria"
 
 /datum/gear/factionsoteria/glovesscience
 	display_name = "gloves, scientific"
 	path = /obj/item/clothing/gloves/membrane
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_gloves
 	sort_category = "Faction: Soteria"
 
 /datum/gear/factionsoteria/glovesscience
 	display_name = "gloves, scientific"
 	path = /obj/item/clothing/gloves/membrane
-	allowed_roles = list("Chief Research Overseer","Soteria Scientist","Soteria Roboticist")
+	allowed_roles = list("Research Provost","Soteria Scientist","Soteria Roboticist")
 	slot = slot_gloves
 	sort_category = "Faction: Soteria"
 

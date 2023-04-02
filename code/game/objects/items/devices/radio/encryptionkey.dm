@@ -106,7 +106,7 @@
 	channels = list("Command" = 1, "Blackshield" = 1, "Marshal" = 1)
 
 /obj/item/device/encryptionkey/heads/ce
-	name = "s encryption key"
+	name = "Union Chief's encryption key"
 	icon_state = "ce_cypherkey"
 	channels = list("Engineering" = 1, "Command" = 1)
 

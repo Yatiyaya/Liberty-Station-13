@@ -294,7 +294,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"the station blueprints" = /obj/item/blueprints,
 		"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/reagent_containers/food/snacks/meat/corgi,
-		"a CRO's jumpsuit" = /obj/item/clothing/under/rank/expedition_overseer,
+		"a RP's jumpsuit" = /obj/item/clothing/under/rank/expedition_overseer,
 		"a CEO's jumpsuit" = /obj/item/clothing/under/rank/chief,
 		"a CMO's jumpsuit" = /obj/item/clothing/under/rank/moebius_biolab_officer,
 		"a CO's jumpsuit" = /obj/item/clothing/under/rank/ih_commander,

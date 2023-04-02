@@ -17,8 +17,8 @@
 
 		list("names" = list(), "header" = "Command Staff", "flag" = COMMAND),
 		list("names" = list(), "header" = "Marshal and Blackshield", "flag" = SECURITY),
-		list("names" = list(), "header" = "Soteria Medical", "flag" = MEDICAL),
-		list("names" = list(), "header" = "Soteria Research", "flag" = SCIENCE),
+		list("names" = list(), "header" = "CAPSA Group", "flag" = MEDICAL),
+		list("names" = list(), "header" = "Phokorus Institute", "flag" = SCIENCE),
 		list("names" = list(), "header" = "Church of the Absolute", "flag" = CHURCH),
 		list("names" = list(), "header" = "Lonestar Shipping Solutions", "flag" = LSS),
 		list("names" = list(), "header" = "Terra-Therma Worker's Union", "flag" = ENGINEERING),

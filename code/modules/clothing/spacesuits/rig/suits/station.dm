@@ -277,7 +277,7 @@ Union RIG
 		)
 
 /***************************************
-	Adv Hazmat: Rnd/CRO
+	Adv Hazmat: Rnd/RP
 ****************************************/
 /obj/item/rig/advhazmat
 	name = "Advanced AMI control module"

@@ -571,26 +571,26 @@
 	flags = AREA_FLAG_CRITICAL
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
-/area/liberty/command/cro
-	name = "\improper Research - CRO's Office"
+/area/liberty/command/RP
+	name = "\improper Research - RP's Office"
 	icon_state = "head_quarters"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
 
-/area/liberty/command/cro/quarters
-	name = "\improper Research - CRO's Quarters"
+/area/liberty/command/RP/quarters
+	name = "\improper Research - RP's Quarters"
 	icon_state = "head_quarters"
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/gmaster
-	name = "\improper Engineering - s Office"
+	name = "\improper Engineering - Union Chief's Office"
 	icon_state = "head_quarters"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
 
 /area/liberty/command/gmaster/quarters
-	name = "\improper Engineering - s Quarters"
+	name = "\improper Engineering - Union Chief's Quarters"
 	icon_state = "head_quarters"
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT

@@ -6,8 +6,8 @@
 		/datum/job/merchant,
 		/datum/job/swo,
 		/datum/job/foreman,
-		/datum/job/rd,
-		/datum/job/cmo,
+		/datum/job/rp,
+		/datum/job/cso,
 		/datum/job/chief_engineer,
 		/datum/job/smc,
 		/datum/job/outsider,
@@ -37,13 +37,13 @@
 	implant_organ_type = "cultured tumor"
 	restricted_jobs = list(
 		/datum/job/doctor,
-		/datum/job/recovery_team,
+		/datum/job/medic,
 		/datum/job/premier,
 		/datum/job/pg,
 		/datum/job/chaplain,
 		/datum/job/chief_engineer,
 		/datum/job/merchant,
-		/datum/job/rd,
+		/datum/job/rp,
 		/datum/job/smc,
 		/datum/job/swo,
 		/datum/job/cyborg, //To stop people auto dropping these
@@ -73,9 +73,9 @@
 		/datum/job/premier,
 		/datum/job/pg,
 		/datum/job/chaplain,
-		/datum/job/cmo,
+		/datum/job/cso,
 		/datum/job/merchant,
-		/datum/job/rd,
+		/datum/job/rp,
 		/datum/job/smc,
 		/datum/job/swo,
 		/datum/job/cyborg, //To stop people auto dropping these

@@ -11,7 +11,7 @@
 	"An Akula who WON'T STOP FIGHTING",
 	"Sablekyne fetishists",
 	"Bald thirty-year-olds",
-	"A who can't setup the engine",
+	"A Union Chief who can't setup the engine",
 	"Being sucked out into space",
 	"Officer Beepsky",
 	"Engineering",
