@@ -12,8 +12,8 @@
 			switch(gate_type)
 				if("Standard")
 					B = new /obj/item/organ/internal/nanogate
-				if("Artificer")
-					B = new /obj/item/organ/internal/nanogate/artificer
+				if("Union")
+					B = new /obj/item/organ/internal/nanogate/Union
 				if("Opifex")
 					B = new /obj/item/organ/internal/nanogate/opifex
 			B.replaced(head)

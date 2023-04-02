@@ -1259,8 +1259,8 @@ var/list/rank_prefix = list(\
 					src.make_psion_psych()
 				if("nanogate")
 					src.give_nanogate("Standard")
-				if("artificer nanogate")
-					src.give_nanogate("Artificer")
+				if("Union nanogate")
+					src.give_nanogate("Union")
 				if("opifex nanogate")
 					src.give_nanogate("Opifex")
 

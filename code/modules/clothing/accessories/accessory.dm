@@ -322,7 +322,7 @@
 	desc = "A brown cloak with yellow lining."
 
 /obj/item/clothing/accessory/job/cape/te
-	name = "guild master's cloak"
+	name = "Union Chief's cloak"
 	icon_state = "cecloak"
 	desc = "A brown cloak with blue and orange lining."
 
@@ -402,7 +402,7 @@
 	desc = "A brown cloak with fancy nanoleds displaying an animation of rock being picked."
 
 /obj/item/clothing/accessory/job/cape/technomancer
-	name = "adept cloak"
+	name = "engineering cloak"
 	icon_state = "engicloak"
 	desc = "A yellow cloak with orange lining."
 

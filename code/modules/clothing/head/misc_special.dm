@@ -137,7 +137,7 @@
 		)
 
 /obj/item/clothing/head/welding/technomancer
-	name = "technomancer welding helmet"
+	name = "engineering welding helmet"
 	desc = "A welding helmet painted in Terra-Therma Worker's Union colors."
 	icon_state = "engiewelding"
 	item_state_slots = list(

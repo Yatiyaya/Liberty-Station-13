@@ -45,7 +45,7 @@
 							 /datum/computer_file/program/shield_control,
 							 /datum/computer_file/program/reports)
 
-	description = "The Guild Master is the head of the Artificers Guild, a group of skilled engineers. This colony is your pride.<br>\
+	description = "The Union Chief is the head of the Artificers Guild, a group of skilled engineers. This colony is your pride.<br>\
 	You are to keep the colony running and constantly improve it as much as you are able. Let none question the efficacy of your labors.<br>\
 	As a leader, it is far more efficient for you to delegate work than attempting to solve everything yourself - spread the labor.<br>\
 	Machinery across the colony is your responsibility. Let no outsiders interfere or intrude into your domain - even Command staff are no exception.<br>\
@@ -101,7 +101,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shield_control)
 
-	description = "The Guild Adept is a member of one of the greatest engineering guilds in the galaxy, contracted to maintain this colony.<br>\
+	description = "The Mechanical Technician is a member of one of the greatest engineering guilds in the galaxy, contracted to maintain this colony.<br>\
 Your main priority is ensuring the setup and maintenance of the colonies power grid. Seek guidance on this complex task if untrained.<br>\
 Outside of this, you should devote time to learning and configuring various systems. Everything can be improved, and new constructs can be made.<br>\
 This upgrade culture extends to your own arsenal - mod and upgrade your tools with parts from maintenance, or purchased from Lonestar or the Prospectors.<br>\

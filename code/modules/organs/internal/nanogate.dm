@@ -45,8 +45,8 @@
 		)
 
 // Guild made the original blue prints. There version is better than the one they give to others,
-obj/item/organ/internal/nanogate/artificer
-	name = "Artificer Nanogate"
+obj/item/organ/internal/nanogate/Union
+	name = "Union Nanogate"
 	icon_state = "nanogate_art" //TODO: Replace this with a proper sprite. AG branded.
 	desc = "A custom built nanogate designed from the far superior opifex blueprints. It is implanted right where the spine meets the skull and provides a wide variety of nanite based uses. This \
 	particular design is made by the Terra-Therma Worker's Union, able to store more nanites for additional uses."

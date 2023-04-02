@@ -58,7 +58,7 @@
 	icon_state = "astersguild"
 
 /obj/structure/sign/faction/technomancers
-	name = "Artificer's Guild"
+	name = "Terra-Therma Union"
 	desc = "A sign depicting the insignia of the Terra-Therma Worker's Union, the clan of mechanists, engineers, and technicians."
 	icon_state = "technomancers"
 

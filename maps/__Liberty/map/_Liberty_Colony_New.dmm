@@ -719,7 +719,7 @@
 "ajj" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Guild Master's Office"
+	department = "Union Chief's Office"
 	},
 /obj/structure/sign/warning/nosmoking/small{
 	pixel_x = 32
@@ -13895,7 +13895,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "dpN" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -32414,7 +32414,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "hCn" = (
-/obj/machinery/porta_turret/artificer,
+/obj/machinery/porta_turret/Union,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "hCo" = (
@@ -34109,7 +34109,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/vectorrooms)
 "hWd" = (
-/obj/machinery/porta_turret/artificer,
+/obj/machinery/porta_turret/Union,
 /obj/machinery/firealarm{
 	pixel_y = 32
 	},
@@ -53438,7 +53438,7 @@
 "muV" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -54075,7 +54075,7 @@
 /area/liberty/quartermaster/office)
 "mCX" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

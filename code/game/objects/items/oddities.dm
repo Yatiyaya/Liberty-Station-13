@@ -340,7 +340,7 @@
 
 /obj/item/oddity/techno
 	name = "Unknown technological part"
-	desc = "A technological part made by the Artificer Perfection Cube."
+	desc = "A technological part made by the Union Perfection Cube."
 	icon_state = "techno_part1"
 	prob_perk = 25 //Unknown tech unknown parts unknown uses by a cult much to exspand the mind in
 

@@ -92,7 +92,7 @@
 /datum/individual_objective/tribalism/assign()
 	..()
 	target = pick_faction_item(mind_holder)
-	desc = "It is time to greater sacrifice. Put \the [target] in Artificer Perfection Cube."
+	desc = "It is time to greater sacrifice. Put \the [target] in Union Perfection Cube."
 	RegisterSignal(mind_holder, COMSIG_OBJ_TECHNO_TRIBALISM, .proc/task_completed)
 
 /datum/individual_objective/tribalism/task_completed(obj/item/I)

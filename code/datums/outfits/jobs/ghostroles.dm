@@ -67,7 +67,7 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest
 	r_pocket = /obj/item/device/t_scanner/advanced
 	pda_type = /obj/item/modular_computer/pda/heads/ce
-	belt = /obj/item/storage/belt/webbing/artificer/ert
+	belt = /obj/item/storage/belt/webbing/Union/ert
 	glasses = /obj/item/clothing/glasses/powered/meson
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/insulated

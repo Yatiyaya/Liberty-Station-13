@@ -260,16 +260,16 @@
 	icon_state = "bane"
 	is_alts = FALSE
 
-/obj/item/clothing/mask/gas/artificer
-	name = "artificer's gas mask"
-	desc = "An industrial gas mask bearing the colors of the artificer's guild."
+/obj/item/clothing/mask/gas/Union
+	name = "Union's gas mask"
+	desc = "An industrial gas mask bearing the colors of the Terra-Therma Union."
 	icon_state = "gas_guild" // Sprites by Ezoken/Dromkii
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 60, rad = 80)
 	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/guild_rebreather
-	name = "artificer's rebreather"
-	desc = "An industrial gas mask bearing the colors of the artificer's guild."
+	name = "Union's rebreather"
+	desc = "An industrial gas mask bearing the colors of the Terra-Therma Union."
 	icon_state = "bane_guild" // Sprites by Ezoken/Dromkii
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 30, rad = 40) // Half coverage, half bonuses.
 	flags_inv = BLOCKFACEHAIR

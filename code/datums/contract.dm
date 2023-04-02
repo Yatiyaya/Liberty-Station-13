@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(antag_item_targets,list(
 		"a jetpack" = /obj/item/tank/jetpack,
 		"a premier's jumpsuit" = /obj/item/clothing/under/rank/captain,
 		"a functional AI" = /obj/item/device/aicard,
-		"the Guild Master's advanced voidsuit control module" = /obj/item/rig/ce,
+		"the Union Chief's advanced voidsuit control module" = /obj/item/rig/ce,
 		"the colony blueprints" = /obj/item/blueprints,
 		"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/reagent_containers/food/snacks/meat/corgi,

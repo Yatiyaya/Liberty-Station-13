@@ -37,7 +37,7 @@
 	icon_state = "stamp-hos"
 
 /obj/item/stamp/ce
-	name = "guild master's rubber stamp"
+	name = "s rubber stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/pr

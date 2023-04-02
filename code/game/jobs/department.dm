@@ -220,7 +220,7 @@
 	dept = DEPARTMENT_CIVILIAN
 
 /datum/perk/experienced/artificers
-	name = "Experienced: Artificer's Guild"
+	name = "Experienced: Terra-Therma Union"
 	dept = DEPARTMENT_ENGINEERING
 
 /datum/perk/experienced/shitcurity

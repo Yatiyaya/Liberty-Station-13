@@ -36344,7 +36344,7 @@
 	announcementConsole = 0;
 	department = "Engineering";
 	departmentType = 4;
-	name = "Guild Master RC";
+	name = "Union Chief RC";
 	pixel_x = 0;
 	pixel_y = 30
 	},
@@ -38637,7 +38637,7 @@
 	dir = 8
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Guild Master's Office"
+	department = "Union Chief's Office"
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/command/gmaster)
@@ -62087,7 +62087,7 @@
 	pixel_x = 0
 	},
 /obj/machinery/door/airlock/command{
-	name = "Guild Master's Quarters";
+	name = "Union Chief's Quarters";
 	req_access = list(56)
 	},
 /obj/machinery/door/firedoor,
@@ -62156,7 +62156,7 @@
 /area/liberty/command/cro)
 "cWS" = (
 /obj/machinery/door/airlock/command{
-	name = "Guild Master's Quarters";
+	name = "Union Chief's Quarters";
 	req_access = list(56)
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -66474,7 +66474,7 @@
 /area/liberty/command/captain/quarters)
 "dgS" = (
 /obj/structure/bed/chair/office/light{
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/courtroom)

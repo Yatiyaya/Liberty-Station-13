@@ -513,7 +513,7 @@
 /datum/craft_recipe/guild/webbing
 	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
-	result = /obj/item/storage/belt/webbing/artificer
+	result = /obj/item/storage/belt/webbing/Union
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),
@@ -709,7 +709,7 @@
 	)
 
 /datum/craft_recipe/guild/watchman
-	name = "Artificer's Guild \"Watchman\" scope"
+	name = "Terra-Therma Union \"Watchman\" scope"
 	result = /obj/item/gun_upgrade/scope/watchman
 	icon_state = "gun"
 	steps = list(
@@ -736,7 +736,7 @@
 
 //Machines
 /datum/craft_recipe/guild/turretcircuit
-	name = "Circuit: Artificer Turret"
+	name = "Circuit: Union Turret"
 	result = /obj/item/circuitboard/artificer_turret
 	icon_state = "electronic"
 	steps = list(

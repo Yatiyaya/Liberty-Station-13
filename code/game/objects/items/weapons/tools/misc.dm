@@ -16,7 +16,7 @@
 
 /obj/item/tool/polytool
 	name = "\"Jolly Co-operation\" polytool"
-	desc = "One of the few jointly designed tools by both Lonestar Shipping Solutions and the Artificer's Guild, a rather curious attempt at merging the munchkin 5000 of lonestar infamy and \
+	desc = "One of the few jointly designed tools by both Lonestar Shipping Solutions and the Terra-Therma Union, a rather curious attempt at merging the munchkin 5000 of lonestar infamy and \
 	designs taken directly from the guild arc welder. What it produced was a munchkin and arc welder combo with much finer tuned properties, efficient fuel economy, comfortable hand grips, and plenty of slots for tool augments."
 	icon_state = "polytool"
 	item_state = "polytool"

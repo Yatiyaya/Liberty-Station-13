@@ -28365,7 +28365,7 @@
 /area/liberty/crew_quarters/sleep/cryo2)
 "fAn" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -32036,7 +32036,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/light{
 	dir = 4;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/command/meeting_room)
@@ -35779,7 +35779,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "gUg" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -85605,7 +85605,7 @@
 /obj/machinery/requests_console{
 	department = "Engineering";
 	departmentType = 4;
-	name = "Guild Master RC";
+	name = "Union Chief RC";
 	pixel_y = 30
 	},
 /obj/machinery/light_switch{
@@ -91949,7 +91949,7 @@
 "rND" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Guild Master's Office"
+	department = "Union Chief's Office"
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/gmaster)
@@ -123008,7 +123008,7 @@
 "xNP" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/courtroom)

@@ -255,7 +255,7 @@
 	build_path = /obj/item/tool/tape_roll/bonegel
 
 /datum/design/autolathe/tool/hatton_ammo
-	name = "Artificer's Guild BT \"Hatton\" gas tube"
+	name = "Terra-Therma Union BT \"Hatton\" gas tube"
 	build_path = /obj/item/hatton_magazine
 
 /datum/design/autolathe/tool/mop

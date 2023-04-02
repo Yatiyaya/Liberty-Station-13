@@ -1,6 +1,6 @@
 //Jobs depatment lists for use in constant expressions
 #define JOBS_SECURITY "Blackshield Commander","Warrant Officer","Supply Specialist","Ranger","Corpsman","Blackshield Trooper","Marshal Officer","Sergeant"
-#define JOBS_COMMAND "Premier","Steward","Blackshield Commander","Warrant Officer","Chief Executive Officer","Guild Master","Chief Biolab Overseer","Chief Research Overseer","Prime","Foreman"
+#define JOBS_COMMAND "Premier","Steward","Blackshield Commander","Warrant Officer","Chief Executive Officer","Union Chief","Chief Biolab Overseer","Chief Research Overseer","Prime","Foreman"
 #define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician"
 #define JOBS_MEDICAL "Chief Biolab Overseer","Soteria Doctor","Soteria Psychiatrist","Soteria Lifeline Technician"
 #define JOBS_SCIENCE "Chief Research Overseer","Soteria Scientist","Soteria Roboticist"

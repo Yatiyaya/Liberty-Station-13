@@ -205,7 +205,7 @@
 		return TRUE
 
 /obj/item/device/techno_tribalism
-	name = "Artificer Perfection Cube"
+	name = "Union Perfection Cube"
 	desc = "An anomalous item found by the Terra-Therma Worker's Union and repurposed for use as an oddity creator. Strange, not quite understood, and extremely valuable. Feeding tools, tool mods, and certain \
 	tech items to it will repurpose them."
 	icon = 'icons/obj/device.dmi'

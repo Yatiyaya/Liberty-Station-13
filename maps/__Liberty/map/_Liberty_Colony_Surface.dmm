@@ -13806,7 +13806,7 @@
 /area/liberty/hallway/surface/section1)
 "iDm" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16570,7 +16570,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "lBI" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

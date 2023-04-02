@@ -69,7 +69,7 @@
 	build_path = /obj/item/circuitboard/excelsior_autodoc
 
 /datum/design/autolathe/circuit/turret_artificer
-	name = "artificer turret"
+	name = "Union turret"
 	build_path = /obj/item/circuitboard/artificer_turret
 
 /datum/design/autolathe/circuit/centrifuge

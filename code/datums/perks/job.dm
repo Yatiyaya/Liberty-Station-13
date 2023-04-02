@@ -354,7 +354,7 @@
 
 /datum/perk/handyman
 	name = "Handyman"
-	desc = "Training by the Artificer's Guild has granted you the knowledge of how to take apart machines in the most efficient way possible, finding materials and supplies most people would miss. This training is taken further the more mechanically skilled or cognitively capable you are."
+	desc = "Training by the Terra-Therma Union has granted you the knowledge of how to take apart machines in the most efficient way possible, finding materials and supplies most people would miss. This training is taken further the more mechanically skilled or cognitively capable you are."
 	icon_state = "guild"
 
 /datum/perk/handyman/assign(mob/living/carbon/human/H)

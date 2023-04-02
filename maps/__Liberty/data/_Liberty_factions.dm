@@ -77,8 +77,8 @@
 	stamptext = "This paper has been stamped with the notary of Jeremiah Hogg."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/liberty/artificer
-	name = "Artificer's Guild - Tacitus O'Connor"
+/datum/faction/liberty/Union
+	name = "Terra-Therma Union - Tacitus O'Connor"
 
 	fax_alert = "Terra-Therma Worker's Union REQUISITION FAX"
 	fax_response = "Terra-Therma Worker's Union Advisory"

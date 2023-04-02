@@ -41040,7 +41040,7 @@
 "jKW" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Guild Master's Office"
+	department = "Union Chief's Office"
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/gmaster)
@@ -48589,7 +48589,7 @@
 	announcementConsole = 0;
 	department = "Engineering";
 	departmentType = 4;
-	name = "Guild Master RC";
+	name = "Union Chief RC";
 	pixel_x = 0;
 	pixel_y = 30
 	},
@@ -49410,7 +49410,7 @@
 "pgl" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/courtroom)
@@ -61787,7 +61787,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/light{
 	dir = 4;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/command/meeting_room)
