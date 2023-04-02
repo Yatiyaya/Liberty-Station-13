@@ -18,7 +18,7 @@
 		new /obj/item/storage/pouch/ammo(src)
 
 /obj/item/storage/box/m_kit/gear_lasgun
-	name = "\improper Gear Laser Carbine Kit"
+	name = "Gear Laser Carbine Kit"
 	desc = "The standard Marshal box kit containing a modified Cog laser carbine that also fires stun beams. For the economic officer."
 
 	populate_contents()
@@ -94,8 +94,8 @@
 	populate_contents()
 		new /obj/item/gun/projectile/automatic/operator_rifle(src)
 
-/obj/item/storage/box/m_kit/judge
-	name = "Judge automatic shotgun Kit"
+/obj/item/storage/box/m_kit/sweeper
+	name = "Street Sweeper automatic shotgun Kit"
 	desc = "The standard Marshal box kit containing a Peackeeper energy shotgun, a lethal and non-lethal powerhouse of engineering."
 
 	populate_contents()

@@ -51,10 +51,8 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 		/datum/design/autolathe/part/mechanism/machinegun = 1,
 		/datum/design/autolathe/part/barrel/pistol,
 		/datum/design/autolathe/part/barrel/magnum,
-		/datum/design/autolathe/part/barrel/kurtz = 1,
 		/datum/design/autolathe/part/barrel/carbine = 1,
 		/datum/design/autolathe/part/barrel/rifle = 1,
-		/datum/design/autolathe/part/barrel/heavy = 1,
 		/datum/design/autolathe/part/barrel/shotgun,
 		/datum/design/autolathe/part/barrel/amr = 5,
 	)
@@ -98,10 +96,10 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 	designs = list(
 		/datum/design/autolathe/gun_frame/colt,
 		/datum/design/autolathe/gun_frame/havelock,
-		/datum/design/autolathe/gun_frame/giskard,
-		/datum/design/autolathe/gun_frame/roe,
+		/datum/design/autolathe/gun_frame/clarissa,
+		/datum/design/autolathe/gun_frame/boltaction,
 		/datum/design/autolathe/gun_frame/doublebarrel,
-		/datum/design/autolathe/gun_frame/grizzly,
+		/datum/design/autolathe/gun_frame/trench,
 	)
 
 // Resale disk for LSS to make and sell guns. Higher-end frames, still have to get the parts themselves. Do NOT put this into piles.
@@ -112,28 +110,26 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 	license = 8
 	designs = list(
 		/datum/design/autolathe/gun_frame/ak47 = 2,
-		/datum/design/autolathe/gun_frame/grease,
-		/datum/design/autolathe/gun_frame/pug = 2,
-		/datum/design/autolathe/gun_frame/strelki,
+		/datum/design/autolathe/gun_frame/broz,
+		/datum/design/autolathe/gun_frame/sweeper = 2,
+		/datum/design/autolathe/gun_frame/duty,
 	)
 
 // Marshal gun-frame print disk, allows the printing of what used to be on the Negotiator disk to the Spec and WO. Do NOT put this into piles.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_frames/marshal
-	disk_name = "NM - \"Framework of Dreams\" gun frames"
+	disk_name = "LG - \"Framework of Dreams\" gun frames"
 	icon_state = "marshal"
 
 	license = -1	// No point to limit prints, the gun parts themselves will be the limit.
 	designs = list(
-		/datum/design/autolathe/gun_frame/judiciary,
+		/datum/design/autolathe/gun_frame/stinger,
 		/datum/design/autolathe/gun_frame/colt,
-		/datum/design/autolathe/gun_frame/amnesty,
-		/datum/design/autolathe/gun_frame/freedom,
+		/datum/design/autolathe/gun_frame/frontier,
+		/datum/design/autolathe/gun_frame/specialist,
 		/datum/design/autolathe/gun_frame/judge,
-		/datum/design/autolathe/gun_frame/bastard,
-		/datum/design/autolathe/gun_frame/mamba,
-		/datum/design/autolathe/gun_frame/specop,
-		/datum/design/autolathe/gun_frame/dp,
-		/datum/design/autolathe/gun_frame/opshot,
-		/datum/design/autolathe/gun_frame/takeshi,
-		/datum/design/autolathe/gun_frame/omni
+		/datum/design/autolathe/gun_frame/tactical,
+		/datum/design/autolathe/gun_frame/buzzsaw,
+		/datum/design/autolathe/gun_frame/operator_rifle,
+		/datum/design/autolathe/gun_frame/duty,
+		/datum/design/autolathe/gun_frame/ak
 	)

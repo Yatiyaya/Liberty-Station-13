@@ -206,7 +206,7 @@
 				/obj/item/gun/projectile/shotgun/pump/sawn = 2,\
 				/obj/item/gun/projectile/shotgun/pump/obrez = 2,\
 				/obj/item/gun/projectile/boltgun/lever/shotgun = 1,\
-				/obj/item/gun/projectile/shotgun/lever/shotgun/sawn = 2,\
+				/obj/item/gun/projectile/boltgun/lever/shotgun/sawn = 2,\
 				/obj/item/gun/projectile/shotgun/sweeper = 0.3,\
 				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,\
 				/obj/item/gun/projectile/shotgun/judge = 0.3))

@@ -63,14 +63,9 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/makarov,						//guns
-		/datum/design/autolathe/gun/drozd,
-		/datum/design/autolathe/gun/vintorez,
 		/datum/design/autolathe/gun/boltgun,
 		/datum/design/autolathe/gun/ak47,
-		/datum/design/autolathe/gun/ak47_saiga,
 		/datum/design/autolathe/gun/maxim,
-		/datum/design/autolathe/gun/ppsh,
-		/datum/design/autolathe/gun/reclaimer,
 		/datum/design/autolathe/ammo/pistol,				//makarov ammo
 		/datum/design/autolathe/ammo/pistol_rubber,
 		/datum/design/autolathe/ammo/pistol_ammobox,
@@ -140,13 +135,9 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/makarov,
-		/datum/design/autolathe/gun/drozd,
-		/datum/design/autolathe/gun/vintorez,
 		/datum/design/autolathe/gun/boltgun,
 		/datum/design/autolathe/gun/ak47,
-		/datum/design/autolathe/gun/ak47_saiga,
 		/datum/design/autolathe/gun/maxim,
-		/datum/design/autolathe/gun/ppsh,
 		/datum/design/autolathe/ammo/hpistol,				//makarov ammo
 		/datum/design/autolathe/ammo/hpistol_rubber,
 		/datum/design/autolathe/ammo/pistol_ammobox,

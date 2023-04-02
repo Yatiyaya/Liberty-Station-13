@@ -64,7 +64,7 @@
 	name = "Unknown 10mm \"Umbani\""
 	build_path = /obj/item/gun/projectile/automatic/umbani
 
-/datum/design/autolathe/gun/tacical
+/datum/design/autolathe/gun/tactical
 	name = "LG 10mm \"Tactical\""
 	build_path = /obj/item/gun/projectile/automatic/tactical
 
@@ -93,7 +93,7 @@
 //C A R B I N E S
 //6 . 5 m m
 
-/datum/design/autolathe/gun/krink
+/datum/design/autolathe/gun/akcarbine
 	name = "LG 6.5x39mm \"Ugil\""
 	build_path = /obj/item/gun/projectile/automatic/ak47/sa
 
@@ -113,7 +113,7 @@
 	name = "LG 6.5x39mm \"Pig\""
 	build_path = /obj/item/gun/projectile/automatic/lmg/rhaki
 
-/datum/design/autolathe/gun/roe
+/datum/design/autolathe/gun/rosefield
 	name = "Car-Van 6.5x39mm \"Rosefield\""
 	build_path = /obj/item/gun/projectile/boltgun/rosefield
 

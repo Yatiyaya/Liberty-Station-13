@@ -16,7 +16,7 @@
 		/obj/item/storage/box/m_kit/riot = 5
 		)
 	prices = list( // 500$ for default marshal stuff, 750 for the rest
-		/obj/item/storage/box/m_kit/stinger = 750,
+		/obj/item/storage/box/m_kit/stinger = 500,
 		/obj/item/storage/box/m_kit/trench = 750,
 		/obj/item/storage/box/m_kit/kalash = 750,
 		/obj/item/storage/box/m_kit/gear_lasgun = 750,
@@ -65,9 +65,8 @@
 
 /obj/machinery/vending/marshal_kit/proc/RedeemSpecPrimary(obj/item/voucher/voucher, mob/redeemer)
 	var/items = list(
-					"Spec-Op Kit" = /obj/item/storage/box/m_kit/specop,
-					"State Auto-Shotgun Kit" = /obj/item/storage/box/m_kit/state_auto,
-					"Copperhead Kit" = /obj/item/storage/box/m_kit/copperhead,
+					"Judge Kit" = /obj/item/storage/box/m_kit/judge,
+					"Kalashnikov Kit" = /obj/item/storage/box/m_kit/kalash,
 					"Gear Laser Carbine Kit" = /obj/item/storage/box/m_kit/gear_lasgun,
 					"Sunrise Las-SMG Kit" = /obj/item/storage/box/m_kit/typewriter)
 	var/selection = items[input(redeemer, "Pick your primary weapon", "Marshal Voucher Redemption") as null|anything in items]
@@ -80,9 +79,9 @@
 
 /obj/machinery/vending/marshal_kit/proc/RedeemRangerPrimary(obj/item/voucher/voucher, mob/redeemer)
 	var/items = list(
-					"Spec-Op Kit" = /obj/item/storage/box/m_kit/specop,
-					"Custer Kit" = /obj/item/storage/box/m_kit/custer,
-					"Peacekeeper Kit" = /obj/item/storage/box/m_kit/peacekeeper)
+					"Oeprator Kit" = /obj/item/storage/box/m_kit/operator_rifle,
+					"Street Sweeper Kit" = /obj/item/storage/box/m_kit/sweeper,
+					"Wrist Breaker Kit" = /obj/item/storage/box/m_kit/wristbreaker)
 	var/selection = items[input(redeemer, "Pick your primary weapon", "Marshal Voucher Redemption") as null|anything in items]
 	if(selection)
 		new selection(loc)
@@ -94,34 +93,7 @@
 /obj/machinery/vending/marshal_kit/proc/RedeemSecondary(obj/item/voucher/voucher, mob/redeemer)
 	var/items = list(
 					"Counselor Kit" = /obj/item/storage/box/m_kit/taser,
-					"Liberty Kit" = /obj/item/storage/box/m_kit/liberty,
-					"Judiciary Kit" = /obj/item/storage/box/m_kit/judiciary)
-	var/selection = items[input(redeemer, "Pick your side-arm", "Marshal Voucher Redemption") as null|anything in items]
-	if(selection)
-		new selection(loc)
-		qdel(voucher)
-		return TRUE
-	else
-		voucher.stamped = FALSE
-
-/obj/machinery/vending/marshal_kit/proc/RedeemRangerSecondary(obj/item/voucher/voucher, mob/redeemer)
-	var/items = list(
-					"Deckard Kit" = /obj/item/storage/box/m_kit/deckard,
-					"Zwang Kit" = /obj/item/storage/box/m_kit/zwang,
-					"Judge Revolver Kit" = /obj/item/storage/box/m_kit/judge)
-	var/selection = items[input(redeemer, "Pick your side-arm", "Marshal Voucher Redemption") as null|anything in items]
-	if(selection)
-		new selection(loc)
-		qdel(voucher)
-		return TRUE
-	else
-		voucher.stamped = FALSE
-
-/obj/machinery/vending/marshal_kit/proc/RedeemWOSecondary(obj/item/voucher/voucher, mob/redeemer)
-	var/items = list(
-					"Mateba Kit" = /obj/item/storage/box/m_kit/mateba,
-					"Galaxy Kit" = /obj/item/storage/box/m_kit/galaxy,
-					"Amnesty Kit" = /obj/item/storage/box/m_kit/amnesty)
+					"Stinger Kit" = /obj/item/storage/box/m_kit/stinger)
 	var/selection = items[input(redeemer, "Pick your side-arm", "Marshal Voucher Redemption") as null|anything in items]
 	if(selection)
 		new selection(loc)

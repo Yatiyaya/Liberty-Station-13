@@ -149,7 +149,6 @@
 			list(name="Ammo Strip (7.62mm Rifle)", cost=400, path=/obj/item/ammo_magazine/speed_loader_rifle_75),
 			list(name="Shells (20mm Payload)", cost=500, path=/obj/item/ammo_casing/shotgun/payload/prespawned),
 			list(name="Caseless Magazine (7mm Standard)", cost=500, path=/obj/item/ammo_magazine/cl7mm),
-			list(name="Caseless Light Rifle Magazine (7mm Standard)", cost=100, path=/obj/item/ammo_magazine/clsmg_7mm),
 			list(name="Grenade Shell Baton", cost=250, path=/obj/item/ammo_casing/grenade),
 			list(name="Grenade Shell Flash", cost=250, path=/obj/item/ammo_casing/grenade/flash),
 			list(name="Grenade Shell Blast", cost=350, path=/obj/item/ammo_casing/grenade/blast),

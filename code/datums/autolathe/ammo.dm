@@ -701,11 +701,6 @@
 	build_path = /obj/item/ammo_magazine/ammobox/cl7mm
 	materials = list(MATERIAL_STEEL = 25)
 
-/datum/design/autolathe/ammo/clmag_7mm
-	name = "high capacity box magazine (7mm Caseless)"
-	build_path = /obj/item/ammo_magazine/clsmg_7mm
-	materials = list(MATERIAL_STEEL = 2)
-
 //14.5×114mm anti-materiel
 /datum/design/autolathe/ammo/box_antim
 	name = "ammunition box (14.5×114mm)"

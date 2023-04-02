@@ -62,14 +62,6 @@
 			return
 */
 
-		if("smoothoperator")
-			new /obj/item/storage/box/syndie_kit/pistol(src)
-			new /obj/item/storage/bag/trash(src)
-			new /obj/item/soap/syndie(src)
-			new /obj/item/bodybag(src)
-			new /obj/item/clothing/shoes/reinforced(src)
-			return
-
 /obj/item/storage/box/syndie_kit
 	name = "box"
 	desc = "A sleek, sturdy box. This one is using state of the art folding to hold more inside!"

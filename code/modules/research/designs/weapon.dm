@@ -250,10 +250,6 @@
 	build_path = /obj/item/hydrogen_fuel_cell
 
 //Disks
-/datum/design/research/item/disk/blackshield
-	name = "Blackshield Sovereignty Disk"
-	desc = "A unique disk for printing and creating Blackshield arms and ammunition."
-	build_path = /obj/item/computer_hardware/hard_drive/portable/design/blackshield
 
 /datum/design/research/item/weapon/bastion
 	name = "bastion shield"

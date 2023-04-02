@@ -9,6 +9,10 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 	name = "9mm liberty pistol - frame"
 	build_path = /obj/item/part/gun/frame/liberty
 
+/datum/design/autolathe/gun_frame/stinger
+	name = "9mm stinger pistol - frame"
+	build_path = /obj/item/part/gun/frame/stinger
+
 /datum/design/autolathe/gun_frame/colt
 	name = "10mm colt pistol - frame"
 	build_path = /obj/item/part/gun/frame/colt
@@ -29,6 +33,14 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 	name = "6.5mm federalist carbine - frame"
 	build_path = /obj/item/part/gun/frame/federalist
 
+/datum/design/autolathe/gun_frame/buzzsaw
+	name = "6.5mm buzzsaw LMG - frame"
+	build_path = /obj/item/part/gun/frame/buzzsaw
+
+/datum/design/autolathe/gun_frame/operator_rifle
+	name = "7mm Operator rifle - frame"
+	build_path = /obj/item/part/gun/frame/buzzsaw
+
 /datum/design/autolathe/gun_frame/trench
 	name = "12 gauge trench - frame"
 	build_path = /obj/item/part/gun/frame/trench
@@ -42,6 +54,14 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 /datum/design/autolathe/gun_frame/colt
 	name = "Colt M1911 - frame"
 	build_path = /obj/item/part/gun/frame/colt
+
+/datum/design/autolathe/gun_frame/frontier
+	name = "10mm Frontier - frame"
+	build_path = /obj/item/part/gun/frame/frontier
+
+/datum/design/autolathe/gun_frame/ranger
+	name = "10mm Ranger - frame"
+	build_path = /obj/item/part/gun/frame/ranger
 
 /datum/design/autolathe/gun_frame/clarissa
 	name = "9mm Glass Widow - frame"
