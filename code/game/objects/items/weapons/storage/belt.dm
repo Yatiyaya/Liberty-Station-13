@@ -82,7 +82,7 @@
 	new /obj/item/tool/wirecutters(src)
 	new /obj/item/stack/cable_coil/random(src)
 
-/obj/item/storage/belt/utility/full/guild/populate_contents()
+/obj/item/storage/belt/utility/full/union/populate_contents()
 	new /obj/item/tool/hammer(src)
 	new /obj/item/tool/wrench(src)
 	new /obj/item/tool/weldingtool(src)
@@ -520,8 +520,8 @@
 	item_state = "webbing_ih"
 
 /obj/item/storage/belt/webbing/artificer
-	name = "artificer guild web harness"
-	desc = "Everything you need at hand, at belt. This one is hand crafted by the artificer guild, allowing it to better store larger items by sacrificing space. Better than most tool belts."
+	name = "Terra-Therma Worker's Union web harness"
+	desc = "Everything you need at hand, at belt. This one is hand crafted by the Terra-Therma Worker's Union, allowing it to better store larger items by sacrificing space. Better than most tool belts."
 	cant_hold = list(/obj/item/storage/pouch,
 					 /obj/item/storage/firstaid,
 					 /obj/item/storage/toolbox,

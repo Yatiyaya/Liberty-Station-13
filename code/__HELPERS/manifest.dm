@@ -21,7 +21,7 @@
 		list("names" = list(), "header" = "Soteria Research", "flag" = SCIENCE),
 		list("names" = list(), "header" = "Church of the Absolute", "flag" = CHURCH),
 		list("names" = list(), "header" = "Lonestar Shipping Solutions", "flag" = LSS),
-		list("names" = list(), "header" = "Artificers Guild", "flag" = ENGINEERING),
+		list("names" = list(), "header" = "Terra-Therma Worker's Union", "flag" = ENGINEERING),
 		list("names" = list(), "header" = "Prospector", "flag" = PROSPECTORS),
 		list("names" = list(), "header" = "Civilian", "flag" = CIVILIAN),
 		list("names" = list(), "header" = "Miscellaneous", "flag" = MISC),

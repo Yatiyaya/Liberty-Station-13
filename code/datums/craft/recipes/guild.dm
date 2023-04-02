@@ -496,8 +496,8 @@
 	)
 
 /datum/craft_recipe/guild/swat_yellow
-	name = "Artificers insulated gloves"
-	result = /obj/item/clothing/gloves/insulated/guild
+	name = "Union insulated gloves"
+	result = /obj/item/clothing/gloves/insulated/union
 	steps = list(
 		list(/obj/item/clothing/gloves/thick, 1, "time" = 15),
 		list(QUALITY_CUTTING, 15, 10),
@@ -511,7 +511,7 @@
 	)
 
 /datum/craft_recipe/guild/webbing
-	name = "Artificer Guild web harness"
+	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
 	result = /obj/item/storage/belt/webbing/artificer
 	steps = list(

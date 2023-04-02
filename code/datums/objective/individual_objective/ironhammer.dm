@@ -104,7 +104,7 @@
 /datum/individual_objective/guard/assign()
 	..()
 	target_area = random_ship_area()
-	desc = "[target_area] needs fortification for colony safety. All sorts of bugs and monsters tunnel into the colony constantly. Have a turret built there, preferably an Artificer Guild turret."
+	desc = "[target_area] needs fortification for colony safety. All sorts of bugs and monsters tunnel into the colony constantly. Have a turret built there, preferably an Terra-Therma Worker's Union turret."
 	RegisterSignal(target_area, COMSIG_TURRENT, .proc/task_completed)
 
 /datum/individual_objective/guard/task_completed()

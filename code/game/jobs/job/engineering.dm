@@ -1,6 +1,6 @@
 /datum/job/chief_engineer
-	title = "Guild Master"
-	flag = GUILDMASTER
+	title = "Union Chief"
+	flag = UNIONCHIEF
 	head_position = 1
 	department = DEPARTMENT_ENGINEERING
 	department_flag = ENGINEERING | COMMAND
@@ -18,7 +18,7 @@
 	health_modifier = 5
 
 	disallow_species = list(FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
-	outfit_type = /decl/hierarchy/outfit/job/engineering/exultant
+	outfit_type = /decl/hierarchy/outfit/job/engineering/chief
 
 	access = list(
 		access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
@@ -58,26 +58,26 @@
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
 /obj/landmark/join/start/chief_engineer
-	name = "Guild Master"
+	name = "Union Chief"
 	icon_state = "player-orange-officer"
 	join_tag = /datum/job/chief_engineer
 
 
-/datum/job/technomancer
-	title = "Guild Adept"
-	flag = ADEPT
+/datum/job/engineer
+	title = "Mechanical Technician"
+	flag = TECHNICIAN
 	department = DEPARTMENT_ENGINEERING
 	department_flag = ENGINEERING
 	faction = MAP_FACTION
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Guild Master"
+	supervisors = "the Union Chief"
 	difficulty = "Medium."
 	selection_color = "#d5c88f"
 	wage = WAGE_PROFESSIONAL
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
-	alt_titles = list("Guild Trainee","Guild Electrician", "Guild Mechanical Engineer")
-	noob_name = "Guild Trainee"
+	alt_titles = list("Electrical Technician", "Atmospheric Technician", "Technical Apprentice")
+	noob_name = "Technical Apprentice"
 	access = list(
 		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 		access_external_airlocks, access_construction, access_atmospherics
@@ -114,7 +114,58 @@ Do not let outsiders, even Command Staff, interfere with the duties of the Guild
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
-/obj/landmark/join/start/technomancer
-	name = "Guild Adept"
+/obj/landmark/join/start/engineer
+	name = "Mechanical Technician"
 	icon_state = "player-orange"
-	join_tag = /datum/job/technomancer
+	join_tag = /datum/job/engineer
+
+/datum/job/mining
+	title = "Mining Technician"
+	flag = MINER
+	department = DEPARTMENT_ENGINEERING
+	department_flag = ENGINEERING
+	faction = MAP_FACTION
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Union Chief"
+	difficulty = "Easy."
+	alt_titles = list("Drill Technician", "Mining Apprentice")
+	selection_color = "#d5c88f"
+	wage = WAGE_LABOUR_HAZARD
+	health_modifier = 5
+
+	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
+	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
+
+	description = "The Miner is a professional resource procurer, acquiring valuable minerals for Lonestar Shipping Solutions.<br>\
+Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can.<br>\
+Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use.<br>\
+Whatever you dig up will go to the cargo department, and from then on it is the responsibility of others within Lonestar to sell it.<br>\
+The deep tunnels are far less dangerous than the wilderness, but pack well - disappearances are not unheard of."
+
+	duties = "Dig up ores and minerals to be processed into usable material.<br>\
+	Locate other valuables within the tunnels that may be turned to profit."
+
+	access = list(
+		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
+		access_external_airlocks, access_construction, access_atmospherics
+	)
+
+	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
+
+	stat_modifiers = list(
+		STAT_ROB = 15,
+		STAT_TGH = 15,
+		STAT_VIG = 15,
+		STAT_MEC = 15
+	)
+
+	software_on_spawn = list(
+							 /datum/computer_file/program/wordprocessor,
+							 /datum/computer_file/program/reports
+							 )
+
+/obj/landmark/join/start/mining
+	name = "Mining Technician"
+	icon_state = "player-beige"
+	join_tag = /datum/job/mining

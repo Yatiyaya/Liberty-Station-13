@@ -288,12 +288,6 @@
 	icon_state = "artist"
 	item_state = "artist"
 
-/obj/item/clothing/under/rank/miner
-	desc = "A snappy Lonestar jumpsuit to handle the harshness of the mines."
-	name = "lonestar miner uniform"
-	icon_state = "miner"
-	item_state = "miner"
-
 /obj/item/clothing/under/outcast
 	name = "tactical baggy rags"
 	desc = "A jury rugged set of baggy pants with leather reinforcement paddings and other fibers, as comfortable as clothes can get when made by whatever you scavenged off the land."

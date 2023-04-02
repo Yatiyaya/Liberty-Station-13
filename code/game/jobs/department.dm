@@ -63,13 +63,12 @@
 	account_initial_balance = 46000 //Estimated 4k extra credits than what is required for wages on a full roster.
 	jobs_in_department = list("/datum/job/smc","/datum/job/swo","/datum/job/supsec","/datum/job/serg","/datum/job/inspector","/datum/job/medspec","/datum/job/trooper","/datum/job/officer")
 
-/datum/department/technomancers
-	name = "Artificer's Guild"
+/datum/department/terra_therma
+	name = "Terra-Therma Union Funds"
 	id = DEPARTMENT_ENGINEERING
 	account_initial_balance = 17000 //17000 to cover some expenses but not that much
 	//Full team with nepotism in 5 hours is 15600
-	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/technomancer")
-
+	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/engineer", "/datum/job/mining")
 
 /datum/department/civilian
 	name = "Liberty Contractors"

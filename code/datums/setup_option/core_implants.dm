@@ -66,7 +66,7 @@
 /datum/category_item/setup_option/core_implant/artificer_nanogate
 	name = "Artificer Nanogate"
 	desc = "A custom built nanogate designed from the far superior opifex blueprints. It is implanted right where the spine meets the skull and provides a wide variety of nanite based uses. This \
-	particular design is made by the Artificer Guild, able to store more nanites for additional uses."
+	particular design is made by the Terra-Therma Worker's Union, able to store more nanites for additional uses."
 	implant_organ_type = "artificer nanogate"
 	restricted_jobs = list(
 		/datum/job/outsider, // Nanogates are only available to colonist or allies.

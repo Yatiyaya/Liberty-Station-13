@@ -80,8 +80,8 @@
 /datum/faction/liberty/artificer
 	name = "Artificer's Guild - Tacitus O'Connor"
 
-	fax_alert = "ARTIFICER GUILD REQUISITION FAX"
-	fax_response = "Artificer Guild Advisory"
+	fax_alert = "Terra-Therma Worker's Union REQUISITION FAX"
+	fax_response = "Terra-Therma Worker's Union Advisory"
 
 	color = "#fff000"
 	darkcolor = "#ff8b01"

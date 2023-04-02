@@ -38296,7 +38296,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "bSH" = (
-/obj/landmark/join/start/technomancer,
+/obj/landmark/join/start/engineer,
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/engineering/workshop)
 "bSI" = (

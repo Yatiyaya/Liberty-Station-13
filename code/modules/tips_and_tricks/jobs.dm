@@ -96,58 +96,58 @@
     tipText = "Listen to your fellow Council members. Their input is invaluable, specially in situations regarding their area of expertise."
 
 /tipsAndTricks/jobs/engies_tribe
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
-    tipText = "Since ancient times, the Guild had trained the best Engineers in the galaxy. That is why you are called Master."
+	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
+	tipText = "Since ancient times, the Guild had trained the best Engineers in the galaxy. That is why you are called Master."
 
 /tipsAndTricks/jobs/unlimitedpower
-	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 	tipText = "Solars aren't the only way to power up the colony! There is a Dam at the north side of the Guild controlled by a computer which will notify you through the Guild's communication channel when you can open the floodgates to generate power, as well as diesel and PACMAN-type generators that take different kinds of mats for fuel."
 
 /tipsAndTricks/jobs/youaredamright
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The computer that controls the Dam can detect if the turbines are functioning correctly. If they aren't, manually go check their condition by examining them. If there's debris blocking it, use a crowbar to pull it out. If the turbine is stalling out, pulsing it with a multitool will reset it to its default working state."
 
 /tipsAndTricks/jobs/smithing
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "Entice clients to buy from you by reminding them you can print ANY kind of ammunition from the bullet fabricator, as well as produce interesting gun mods, armor mods, tool mods, and even a flaming sword!"
 
 //	Supermatter tips commented out because we have progressed past the need for a Supermatter.
 //	Might want to re-add these if we ever get the opportunity to build our own Supermatter engines.
 
 //	/tipsAndTricks/jobs/engies_suppermatter_one
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 //	tipText = "The super matter is a fickle mistress and each guild has their own set up method. No method is strictly wrong;those who made such poor choices would be dead by now, surely..."
 
 //	/tipsAndTricks/jobs/engies_suppermatter_two
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 //	tipText = "Venting the super matter's overheated coolant may drop temperatures immediately, but without fresh coolant gas the super matter will almost surely delaminate."
 
 //	tipsAndTricks/jobs/engies_suppermatter_three
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 //	tipText = "Woe betide the guild master who allows the crystal to delaminate, the number of such crystals dwindle. Any who cause such disgrace should go up with the engine rather than live with the shame."
 
 /tipsAndTricks/jobs/engies_lifekeeper
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "You are responsible for keeping this colony powered, habitable, and with breathable air. Make sure it stays like that at all times."
 
 /tipsAndTricks/jobs/engies_glass_fire
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "In case of fire, break glass."
 
 /tipsAndTricks/jobs/engies_firespacesuit
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "No Adept lives long without learning that firesuits are not space-proof suits, and not all void suits are fireproof."
 
 /tipsAndTricks/jobs/theBlackBox
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The NanoForge can be powered with any oddity that boosts Mechanical knowledge and is also an Anomaly. The NanoForge Black Box will always have an Anomaly."
 
 /tipsAndTricks/jobs/bullet_fab
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The Bullet Fabricator generates usable material points based on the worth of the material in cash. The more expensive the material used, the more usable material you'll get."
 
 /tipsAndTricks/jobs/nanoforge
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "NanoForge makes compressed matter, this can fuel RCDs and RCD crossbows, but also is worth quite a lot of credits and makes great fuel in the Bullet Fabricator."
 
 /tipsAndTricks/jobs/tric
@@ -171,7 +171,7 @@
     tipText = "Dylovene, when injected, will clear toxic chemicals like pararein, blattedin, and general toxins. When consumed orally, it will not purge these poisons but will still treat toxin accumulation damage."
 
 /tipsAndTricks/jobs/gas_scanner_pda
-    jobs_list = list(/datum/job/cmo, /datum/job/technomancer)
+    jobs_list = list(/datum/job/cmo, /datum/job/engineer)
     tipText = "Inside of your PDA is an installed gas scanner."
 
 /tipsAndTricks/jobs/carbonPills

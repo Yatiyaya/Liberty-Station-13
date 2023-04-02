@@ -222,7 +222,7 @@
 	name = "\"Bat'ko\" gauss rifle"
 	desc = "A rather heavy rifle sporting a cell-loading mount, an adjustable recoil-compensating stock, a hand-crank to manually chamber the next round and a series of coils lining its front. \
 	This strange gauss coil rifle has valves along the large, external coil mounts. To fire this gun requires constant venting, lest it overheats. \
-	At the stock a large script-styled 'M' appears to be engraved into it, a form of signature from its designer along with an artificer Guild logo."
+	At the stock a large script-styled 'M' appears to be engraved into it, a form of signature from its designer along with an Terra-Therma Worker's Union logo."
 	icon = 'icons/obj/guns/energy/gauss.dmi'
 	icon_state = "gauss"
 	item_state = "gauss"

@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/reinforced/engineering_chief
-	name = "guild master's locker"
+	name = "union chief's locker"
 	req_access = list(access_ce)
 	icon_state = "ce"
 
@@ -9,7 +9,7 @@
 	else
 		new /obj/item/storage/backpack/satchel/industrial(src)
 	new /obj/item/blueprints(src)
-	new /obj/item/clothing/under/rank/exultant(src)
+	new /obj/item/clothing/under/rank/chief(src)
 	new /obj/item/clothing/head/firefighter/chief(src)
 	new /obj/item/clothing/head/welding(src)
 	new /obj/item/clothing/gloves/insulated(src)
@@ -84,7 +84,7 @@
 	new /obj/item/storage/hcases/engi(src)
 
 /obj/structure/closet/secure_closet/personal/engineering_personal
-	name = "guild adept's locker"
+	name = "mechanical engineer's locker"
 	req_access = list(access_ce)
 	access_occupy = list(access_engine_equip)
 	icon_state = "eng"

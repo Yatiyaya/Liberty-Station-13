@@ -1,12 +1,12 @@
 //Contains: Engineering department jumpsuits
-/obj/item/clothing/under/rank/exultant
-	name = "guild master's jumpsuit"
-	desc = "A blue-yellow engineering jumpsuit worn by Guild Masters. It has good radiation shielding."
+/obj/item/clothing/under/rank/chief
+	name = "union chief's jumpsuit"
+	desc = "A blue-yellow engineering jumpsuit worn by Union Chief. It has good radiation shielding."
 	icon_state = "chiefengineer"
 	item_state = "g_suit"
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 30)
 
-/obj/item/clothing/under/rank/exultant/verb/toggle_style()
+/obj/item/clothing/under/rank/chief/verb/toggle_style()
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
@@ -16,9 +16,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["GM jumpsuit"] = "chiefengineer"
-	options["GM jumpskirt"] = "artificer_jumpskirt_master"
-	options["GM High Visiblity Jumpsuit"] = "GM uniform" // Sprites by Ezoken/Dromkii
+	options["UC jumpsuit"] = "chiefengineer"
+	options["UC jumpskirt"] = "artificer_jumpskirt_master"
+	options["UC High Visiblity Jumpsuit"] = "GM uniform" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -110,3 +110,9 @@
 		bio = 70,
 		rad = 100 //Rad proof
 	)
+
+/obj/item/clothing/under/rank/miner
+	name = "union miner uniform"
+	desc = "A snappy union jumpsuit to handle the harshness of the mines."
+	icon_state = "miner"
+	item_state = "miner"

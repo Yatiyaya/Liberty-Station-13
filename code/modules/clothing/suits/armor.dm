@@ -550,7 +550,7 @@
 //Soteria
 /obj/item/clothing/suit/armor/vest/soteriasuit
 	name = "'Mark II' environmental protection suit"
-	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Artificer Guilds original design. \
+	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "armor_engineering"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
