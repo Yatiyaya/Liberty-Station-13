@@ -2,7 +2,7 @@
 	name = "\"Kalash\" rifle"
 	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
 			A copy of the Kalashnikov pattern chambered in 7.62mm. This is an polymer, printed copy of the famous wooden design."
-	icon = 'icons/obj/guns/projectile/liberty/ak5.dmi'
+	icon = 'icons/obj/guns/projectile/ak.dmi'
 	icon_state = "AK"
 	item_state = "AK"
 	item_suffix = ""
@@ -23,6 +23,9 @@
 	init_recoil = RIFLE_RECOIL(1)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
+	saw_off = TRUE
+	sawn = /obj/item/gun/projectile/automatic/ak47/sawn
+
 	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 	init_firemodes = list(
@@ -30,6 +33,26 @@
 		SEMI_AUTO_NODELAY
 		)
 	serial_type = "Car-Van"
+
+/obj/item/gun/projectile/automatic/ak47/sawn
+	name = "sawn-off \"Kalash\" rifle"
+	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
+			A copy of the Kalashnikov pattern chambered in 7.62mm and crudely sawed down to a shadow of its former self. Rifle was fine. Was."
+	icon = 'icons/obj/guns/projectile/sawnoff/ak.dmi'
+	icon_state = "AK"
+	item_state = "AK"
+	excelsior = FALSE
+	w_class = ITEM_SIZE_NORMAL
+	force = WEAPON_FORCE_NORMAL
+	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 5)
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	price_tag = 600
+	init_recoil = RIFLE_RECOIL(1.2)
+	damage_multiplier = 0.9
+	saw_off = FALSE
+	serial_type = "Car-Van"
+	wield_delay = 0.8 SECOND
+	wield_delay_factor = 0.2 // 20 vig for insta wield
 
 //AK-47 base-frame
 /obj/item/part/gun/frame/ak47
@@ -67,7 +90,7 @@
 	name = "\"Ugil\" carbine"
 	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
 		 	A copy of the AKM pattern, shortened into a mid-length rifle and chambered in 6.5mm. The left arm of the unfree world."
-	icon = 'icons/obj/guns/projectile/ak_wood.dmi'
+	icon = 'icons/obj/guns/projectile/ak5.dmi'
 	icon_state = "AK"
 	item_state = "AK"
 	caliber = CAL_LRIFLE
@@ -86,6 +109,10 @@
 
 /obj/item/gun/projectile/automatic/ak47/sa/update_icon()
 	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
 	if(!folded)
 		iconstring += "_stock"
 

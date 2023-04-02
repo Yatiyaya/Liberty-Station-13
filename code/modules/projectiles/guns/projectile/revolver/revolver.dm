@@ -10,8 +10,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 7
-	ammo_type = /obj/item/ammo_casing/magnum
-	magazine_type = /obj/item/ammo_magazine/slmagnum
+	ammo_type = /obj/item/ammo_casing/magnum_40
 	unload_sound = 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rev_magin.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/rev_cock.ogg'

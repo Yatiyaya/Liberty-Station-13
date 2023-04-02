@@ -31,7 +31,7 @@
 	result = /obj/item/gun/projectile/partizaner
 	resultvars = list(/obj/item/gun/projectile/partizaner)
 	gripvars = list(/obj/item/part/gun/grip/wood)
-	mechanismvar = /obj/item/part/gun/mechanism/pistol/cheap
+	mechanismvar = /obj/item/part/gun/mechanism/pistol/steel
 	barrelvars = list(/obj/item/part/gun/barrel/pistol/steel, /obj/item/part/gun/barrel/magnum/steel)	//9mm or 10mm.
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.
 

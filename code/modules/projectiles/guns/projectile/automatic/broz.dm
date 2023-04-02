@@ -25,16 +25,16 @@
 	serial_type = "INDEX"		//No known creator; made in basements. Literally.
 	serial_shown = FALSE
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	gun_parts = list(/obj/item/part/gun/frame/borz = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg/steel = 1, /obj/item/part/gun/barrel/pistol/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/broz = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg/steel = 1, /obj/item/part/gun/barrel/pistol/steel = 1)
 
 	wield_delay = 0 // No delay for this , its litteraly a junk gun
 
-/obj/item/part/gun/frame/borz
+/obj/item/part/gun/frame/broz
 	name = "Borz frame"
 	desc = "A Borz SMG. It's not handmade, but.. it's definetely not quality made either."
 	icon_state = "frame_luty"
 	matter = list(MATERIAL_STEEL = 5)
-	resultvars = list(/obj/item/gun/projectile/automatic/borz)
+	resultvars = list(/obj/item/gun/projectile/automatic/broz)
 	gripvars = list(/obj/item/part/gun/grip/wood)
 	mechanismvar = /obj/item/part/gun/mechanism/smg
 	barrelvars = list(/obj/item/part/gun/barrel/pistol)

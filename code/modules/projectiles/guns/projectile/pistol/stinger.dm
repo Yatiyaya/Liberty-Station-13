@@ -2,9 +2,9 @@
 	name = "\"Stinger\" pistol"
 	desc = "A specialized pistol made for police enforement, the \"Stinger\" is a posterboy image for local security forces and even those back in Federation space. \
 			This design appears to be made locally by gunsmiths, sporting small variations from its Federation design. Chambered in 9mm"
-	icon = 'icons/obj/guns/projectile/clarissa_black.dmi'
-	icon_state = "clarissa"
-	item_state = "clarissa"
+	icon = 'icons/obj/guns/projectile/stinger.dmi'
+	icon_state = "stinger"
+	item_state = "stinger"
 	w_class = ITEM_SIZE_SMALL
 	caliber = CAL_PISTOL
 	can_dual = TRUE
@@ -63,9 +63,11 @@
 	desc = "A specialized pistol made for police enforement, the \"Stinger\" is a posterboy image for local security forces and even those back in Federation space. \
 			This design appears to be made locally by gunsmiths, sporting small variations from its Federation design. Chambered in 9mm. \
 			This specific model appears to be a Liberty Watch variant, a synthaizer built in coating bullets with non-lethal variants of chemicals to take down hostiles."
+	icon_state = "stingerpep"
 
 /obj/item/gun/projectile/stinger/pepperball/sopo
 	name = "\"Stinger-S\" pistol"
 	desc = "A specialized pistol made for police enforement, the \"Stinger\" is a posterboy image for local security forces and even those back in Federation space. \
 			This design appears to be made locally by gunsmiths, sporting small variations from its Federation design. Chambered in 9mm. \
 			This specific model appears to sport CAPSA colors on it, a synthatizer built in coating bullets in non-lethal variants of chemicals such as soporiphics to take down unruly patients."
+	icon_state = "stingersop"

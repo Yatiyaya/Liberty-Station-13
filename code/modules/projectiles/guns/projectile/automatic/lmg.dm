@@ -144,7 +144,7 @@
 	penetration_multiplier = 1.2
 	init_recoil = LMG_RECOIL(0.8)
 	serial_type = "ML"
-	gun_parts = list(/obj/item/part/gun/frame/tk = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 /obj/item/part/gun/frame/buzzsaw
 	name = "Buzzsaw frame"

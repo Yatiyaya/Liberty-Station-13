@@ -26,7 +26,7 @@
 	sharp = FALSE	//Womp-womp
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE, GUN_SILENCABLE)
 	saw_off = TRUE
-	sawn = /obj/item/gun/projectile/boltgun/rosefielf/sawn/true
+	sawn = /obj/item/gun/projectile/boltgun/rosefield/sawn
 	serial_type = "Car-Van"
 
 	wield_delay = 0.3 SECOND

@@ -20,7 +20,7 @@
 	damage_multiplier = 0.8		//Strong full-auto due to fire-rate
 	init_recoil = RIFLE_RECOIL(0.7)
 	serial_type = "LG"
-	gun_parts = list(/obj/item/part/gun/frame/pug = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
+	gun_parts = list(/obj/item/part/gun/frame/sweeper = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 	//while also preserving ability to shoot as fast as you can click and maintain recoil good enough
 	init_firemodes = list(

@@ -85,19 +85,6 @@
 	serial_type = "BlueCross"
 	icon = 'icons/obj/guns/energy/ntpistol_bluecross.dmi'
 
-/obj/item/gun/projectile/automatic/maxim/replica
-	name = "\"Maxim\" light machinegun"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	A common design used by certain nefarious political groups, this model however has been stripped of its fellows evil machinations, making it safe to use by anyone."
-	icon = 'icons/obj/guns/projectile/maxim_colony.dmi'
-	icon_state = "maxim_bluecross"
-	item_state = "maxim_bluecross"
-	price_tag = 1884
-	slowdown_hold = 0
-	init_recoil = LMG_RECOIL(0.5)
-	serial_type = "BlueCross"
-	excelsior = FALSE
-
 /obj/item/gun/energy/lasersmg/inferno
 	name = "Disco Inferno \"Light Show\""
 	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
@@ -138,55 +125,6 @@
 	init_recoil = HANDGUN_RECOIL(0.3)
 	penetration_multiplier = 3.1
 	price_tag = 2350
-	serial_type = "BlueCross"
-
-/obj/item/gun/projectile/boltgun/bluecross
-	name = "\"Krag Jørgensen\" boltgun"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			A single shot rifle; perfect for big game hunters! \
-			Amazing for a budget - or if you hate yourself. One of the two."
-	icon = 'icons/obj/guns/projectile/bluecross.dmi'
-	icon_state = "bluecross"
-	item_state = "bluecross"
-	fire_sound = 'sound/weapons/guns/fire/sniper.ogg'
-	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE)
-	force = WEAPON_FORCE_DANGEROUS
-	bolt_training = FALSE
-	penetration_multiplier  = 2
-	max_shells = 1
-	price_tag = 2750
-	sharp = FALSE
-	saw_off = FALSE
-	serial_type = "BlueCross"
-
-/obj/item/gun/projectile/clarissa/devil_eye
-	name = "\"Devil Eye\" pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			A small red eye has been painted onto the firing pin of this formerly undepowered pistol, this one has been modified with a better feed mechanism to allow \
-			for deadlier shots. Uses 9mm rounds and can take standard pistol magazines, high cap magazines, or submachine gun mags."
-	price_tag = 2000
-	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_SMG
-	damage_multiplier = 1.5
-	icon = 'icons/obj/guns/projectile/clarissa.dmi'
-	icon_state = "clarissa"
-	item_state = "clarissa"
-	serial_type = "BlueCross"
-
-/obj/item/gun/projectile/boltgun/lever/handcock
-	name = "\"Handcock\" lever action rifle"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			This lever action rifle seems to be masterfully rebored, its loading port skillfully enlarged to allow 14.5mm anti-materiel rounds to be loaded! \
-			Wild-west styled antimateriel rifle... who would have thought?"
-	icon = 'icons/obj/guns/projectile/lever.dmi'
-	icon_state = "lever"
-	item_state = "lever"
-	fire_sound = 'sound/weapons/guns/fire/sniper.ogg' // High caliber but not AMR sound
-	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE) //Doesn't take a silencer cuz thats just mean, also 14.5 AMR
-	bolt_training = FALSE
-	caliber = CAL_ANTIM
-	max_shells = 4
-	init_recoil = HMG_RECOIL(2)
-	price_tag = 3000
 	serial_type = "BlueCross"
 
 /obj/item/gun/projectile/automatic/slaught_o_matic/lockpickomatic
@@ -236,33 +174,6 @@
 	gun_tags = list(GUN_LASER, GUN_ENERGY)
 	can_dual = TRUE
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	serial_type = "BlueCross"
-
-
-/obj/item/gun/projectile/that_gun
-	name = "\"That Gun\" revolver pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			A sneaky pistol designed to look like a revolver to fool people into thinking you only have six shots. Feeling lucky, punk?"
-	icon = 'icons/obj/guns/projectile/that_gun.dmi'
-	icon_state = "thatgun"
-	item_state = "thatgun"
-	caliber = CAL_PISTOL
-	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)
-	price_tag = 1420
-	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
-	can_dual = TRUE
-	load_method = MAGAZINE
-	mag_well = MAG_WELL_H_PISTOL|MAG_WELL_PISTOL
-	damage_multiplier = 1.25
-	penetration_multiplier = 1
-	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
-	init_recoil = HANDGUN_RECOIL(0.1)
-
-	init_firemodes = list(
-		SEMI_AUTO_NODELAY,
-		BURST_3_ROUND,
-		)
 	serial_type = "BlueCross"
 
 /obj/item/gun/projectile/that_gun/update_icon()

@@ -888,22 +888,6 @@
 	max_ammo = 8
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/a75
-	name = "ammo magazine (19mm gyro)"
-	desc = "A 4 magazine in 19mm gyro."
-	icon_state = "gyropistol"
-	icon = 'icons/obj/ammo_mags.dmi'
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_PISTOL
-	caliber = CAL_70
-	ammo_type = /obj/item/ammo_casing/a75
-	multiple_sprites = 1
-	max_ammo = 4
-
-/obj/item/ammo_magazine/a75/empty
-	initial_ammo = 0
-	icon_state = "gyropistol-0"
-
 ////////////Shotguns!////////////
 
 /obj/item/ammo_magazine/m12

@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/revolver/frontier
 	name = "\"Frontier\" revolver"
 	desc = "The Caravaner Enterprise's \"Frontier\" is a revolver of choice when you absolutely, positively need to make a fist-sized hole in someone, but can't afford to do it in style. Uses 10mm Magnum bullets... always wanting more."
-	icon = 'icons/obj/guns/projectile/rev10.dmi'
+	icon = 'icons/obj/guns/projectile/frontier.dmi'
 	icon_state = "rev10"
 	item_state = "rev10"
 	caliber = CAL_MAGNUM
@@ -22,8 +22,6 @@
 	armor_penetration = 0.8
 	init_recoil = HANDGUN_RECOIL(1.3)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
-	var/drawChargeMeter = TRUE
-	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	fire_animatio = TRUE
 	allow_racking = FALSE
 	serial_type = "Car-Van"

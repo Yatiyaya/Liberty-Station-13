@@ -2,7 +2,7 @@
 	name = "\"Duty\" marksman carbine"
 	desc = "A well-designed wooden stocked marksman rifle, built to take 6.5mm rounds. \
 			While incapable of fully-auomatic fire, the gun can be reloaded either through mags, individual casings, or stripper-clips."
-	icon = 'icons/obj/guns/projectile/liberty/duty.dmi'
+	icon = 'icons/obj/guns/projectile/duty.dmi'
 	icon_state = "duty"
 	item_state = "duty"
 	item_suffix = ""

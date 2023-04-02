@@ -19,15 +19,11 @@
 	icon_state = "vendor_guns"
 
 	products = list(
-		/obj/item/gun/energy/cog = 3,
-		/obj/item/gun/projectile/spring = 2,
-		/obj/item/gun/projectile/rivet = 1
+		/obj/item/gun/energy/cog = 3
 		)
 
 	prices = list(
-		/obj/item/gun/energy/cog = 50,
-		/obj/item/gun/projectile/spring = 100,
-		/obj/item/gun/projectile/rivet = 200
+		/obj/item/gun/energy/cog = 50
 		)
 
 /obj/machinery/vending/one_star/food

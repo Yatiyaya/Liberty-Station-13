@@ -24,6 +24,9 @@
 	init_recoil = RIFLE_RECOIL(0.8)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
+	saw_off = TRUE
+	sawn = /obj/item/gun/projectile/automatic/federalist/sawn
+
 	gun_parts = list(/obj/item/part/gun/frame/federalist = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 	init_firemodes = list(
@@ -32,13 +35,18 @@
 		)
 	serial_type = "ML"
 
+/obj/item/gun/projectile/automatic/federalist/sawn
+	name = "sawn-off \"Federalist\" carbine"
+	desc = "This gun was fine. Was.. You know for a fact Terran Federal Police would have a field day with this gun."
+	icon = 'icons/obj/guns/projectile/sawnoff/ar.dmi'
+
 /obj/item/part/gun/frame/federalist
 	name = "Federalist frame"
 	desc = "An Federalist carbine frame. The homeowner's dream."
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/federalist
-	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/grip/rubber)
+	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/federalist, /obj/item/gun/projectile/automatic/federalist/homemaker)
 	mechanismvar = /obj/item/part/gun/mechanism/autorifle
 	barrelvars = list(/obj/item/part/gun/barrel/srifle)
@@ -52,6 +60,7 @@
 	extra_damage_mult_scoped = 0.4
 	zoom_factors = list(0.8)
 	init_recoil = RIFLE_RECOIL(0.9)
+	saw_off = FALSE
 
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY

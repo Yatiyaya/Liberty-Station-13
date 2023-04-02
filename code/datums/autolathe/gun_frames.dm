@@ -5,93 +5,76 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 */
 
 // Marshals section
-/datum/design/autolathe/gun_frame/judiciary
-	name = "9mm judiciary pistol - frame"
-	build_path = /obj/item/part/gun/frame/judiciary
+/datum/design/autolathe/gun_frame/liberty
+	name = "9mm liberty pistol - frame"
+	build_path = /obj/item/part/gun/frame/liberty
 
 /datum/design/autolathe/gun_frame/colt
-	name = "10mm liberty pistol - frame"
+	name = "10mm colt pistol - frame"
 	build_path = /obj/item/part/gun/frame/colt
 
-/datum/design/autolathe/gun_frame/amnesty
-	name = "12mm amnesty pistol - frame"
-	build_path = /obj/item/part/gun/frame/amnesty
+/datum/design/autolathe/gun_frame/specialist
+	name = "9mm five-oh SMG - frame"
+	build_path = /obj/item/part/gun/frame/specialist
 
-/datum/design/autolathe/gun_frame/freedom
-	name = "10mm freedom SMG - frame"
-	build_path = /obj/item/part/gun/frame/freedom
+/datum/design/autolathe/gun_frame/tactical
+	name = "10mm tactical SMG - frame"
+	build_path = /obj/item/part/gun/frame/tactical
+
+/datum/design/autolathe/gun_frame/ak
+	name = "6.5mm / 7.62mm kalashnikov - frame"
+	build_path = /obj/item/part/gun/frame/ak47
+
+/datum/design/autolathe/gun_frame/federalist
+	name = "6.5mm federalist carbine - frame"
+	build_path = /obj/item/part/gun/frame/federalist
+
+/datum/design/autolathe/gun_frame/trench
+	name = "12 gauge trench - frame"
+	build_path = /obj/item/part/gun/frame/trench
 
 /datum/design/autolathe/gun_frame/judge
-	name = "7.62mm judge revolver - frame"
+	name = "12 gauge judge - frame"
 	build_path = /obj/item/part/gun/frame/judge
 
-/datum/design/autolathe/gun_frame/bastard
-	name = "6.5mm bastard smg - frame"
-	build_path = /obj/item/part/gun/frame/bastard
-
-/datum/design/autolathe/gun_frame/mamba
-	name = "6.5mm / 7.62mm mamba - frame"
-	build_path = /obj/item/part/gun/frame/mamba
-
-/datum/design/autolathe/gun_frame/specop
-	name = "10x24mm spec-op - frame"
-	build_path = /obj/item/part/gun/frame/specop
-
-/datum/design/autolathe/gun_frame/dp
-	name = "7.62mm DP27 - frame"
-	build_path = /obj/item/part/gun/frame/dp27
-
-/datum/design/autolathe/gun_frame/opshot
-	name = "20mm operator - frame"
-	build_path = /obj/item/part/gun/frame/opshot
-
-/datum/design/autolathe/gun_frame/takeshi
-	name = "6.5mm takeshi - frame"
-	build_path = /obj/item/part/gun/frame/tk
-
-//Blackshield guns.
-
-/datum/design/autolathe/gun_frame/omni
-	name = "8.6mm omni - frame"
-	build_path = /obj/item/part/gun/frame/omni
 
 // Retail section - low-end guns for LSS to order gun-frame disks for. Allows more guns per-disk at a cheaper overall price, realistically.
 /datum/design/autolathe/gun_frame/colt
 	name = "Colt M1911 - frame"
 	build_path = /obj/item/part/gun/frame/colt
 
-/datum/design/autolathe/gun_frame/giskard
-	name = "Giskard - frame"
-	build_path = /obj/item/part/gun/frame/giskard
+/datum/design/autolathe/gun_frame/clarissa
+	name = "9mm Glass Widow - frame"
+	build_path = /obj/item/part/gun/frame/clarissa
 
 /datum/design/autolathe/gun_frame/havelock
-	name = "Havelock - frame"
-	build_path = /obj/item/part/gun/frame/havelock
+	name = "9mm Pocket Princess - frame"
+	build_path = /obj/item/part/gun/frame/detective
 
-/datum/design/autolathe/gun_frame/grease
-	name = "Grease gun - frame"
-	build_path = /obj/item/part/gun/frame/grease
+/datum/design/autolathe/gun_frame/broz
+	name = "9mm Broz SMG - frame"
+	build_path = /obj/item/part/gun/frame/broz
 
 /datum/design/autolathe/gun_frame/ak47
-	name = "Kalashnikov - frame"
+	name = "6.5mm / 7.62mm Kalashnikov - frame"
 	build_path = /obj/item/part/gun/frame/ak47
 
-/datum/design/autolathe/gun_frame/strelki
-	name = "Strelki - frame"
-	build_path = /obj/item/part/gun/frame/strelki
+/datum/design/autolathe/gun_frame/duty
+	name = "6.5mm Duty - frame"
+	build_path = /obj/item/part/gun/frame/duty
 
-/datum/design/autolathe/gun_frame/pug
-	name = "Pug - frame"
-	build_path = /obj/item/part/gun/frame/pug
+/datum/design/autolathe/gun_frame/sweeper
+	name = "Street Sweeper - frame"
+	build_path = /obj/item/part/gun/frame/sweeper
 
-/datum/design/autolathe/gun_frame/roe
-	name = "Roe - frame"
-	build_path = /obj/item/part/gun/frame/roe
+/datum/design/autolathe/gun_frame/boltaction
+	name = "Boltaction - frame"
+	build_path = /obj/item/part/gun/frame/boltgun
 
 /datum/design/autolathe/gun_frame/doublebarrel
 	name = "Double barrel - frame"
 	build_path = /obj/item/part/gun/frame/doublebarrel
 
-/datum/design/autolathe/gun_frame/grizzly
-	name = "Grizzly - frame"
-	build_path = /obj/item/part/gun/frame/grizzly
+/datum/design/autolathe/gun_frame/trench
+	name = "Trench - frame"
+	build_path = /obj/item/part/gun/frame/trench

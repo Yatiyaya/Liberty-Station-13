@@ -497,7 +497,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		stamped = TRUE
 		var/list/options = list() // Moved the Galaxy to secondary selection
 		options["Federalist - assault rifle"] = list(/obj/item/gun/projectile/automatic/federalist,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball)
-		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/automatic/judge, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
+		options["Galaxy - plasma & ion pistol"] = list(/obj/item/gun/energy/glock)
+		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/automatic/judge, /obj/item/ammo_magazine/ammobox/shotgun, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -547,8 +548,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		stamped = TRUE
 		var/list/options = list()
 		// Keeping this in case any other "sensible" option for a primary weapon for Lifeline Techs arrives, just add them as an option here.
-		options["Bullpip SMG with HV ammo"] = list(/obj/item/gun/projectile/automatic/c20r/sci/preloaded,/obj/item/gun_upgrade/muzzle/silencer,/obj/item/ammo_magazine/smg_35/hv,/obj/item/ammo_magazine/smg_35/hv)
-		options["Soteria \"Sprocket\" laser carbine"] = list(/obj/item/gun/energy/cog/sprocket/preloaded,/obj/item/cell/medium/moebius/high)
+		options["\"Stinger\" sopo pistol with HV ammo"] = list(/obj/item/gun/projectile/stinger/pepperball/sopo,/obj/item/gun_upgrade/muzzle/silencer,/obj/item/ammo_magazine/pistol_35,/obj/item/ammo_magazine/pistol_35/rubber,/obj/item/ammo_magazine/pistol_35/rubber)
+		options["\"Sprocket\" laser carbine"] = list(/obj/item/gun/energy/cog/sprocket/preloaded,/obj/item/cell/medium/moebius/high)
 		var/choice = input(user,"Which gun will you take?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]

@@ -67,7 +67,7 @@
 	name = "\"Dragon\" marksman rifle"
 	desc = "An improved version of a \"Nationale\" rifle but with added stability, a more comfortable grip, and forged barrel. \
 			This model seems to have lost its ability of fully-automatic fire, but makes up for it with controlled burst-modes."
-	icon = 'icons/obj/guns/projectile/liberty/marksman.dmi'
+	icon = 'icons/obj/guns/projectile/marksman.dmi'
 	icon_state = "marksman"
 	item_state = "marksman"
 	item_suffix = ""

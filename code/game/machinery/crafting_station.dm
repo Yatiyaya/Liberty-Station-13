@@ -145,10 +145,6 @@
 			required_resources = materials_rocket
 			items_to_spawn = list("" = /obj/item/ammo_casing/rocket/scrap/prespawned)
 
-		if("19mm gyrojet rocket")
-			required_resources = materials_rocket
-			items_to_spawn = list("" = /obj/item/ammo_casing/a75)
-
 		if("Gun parts")
 			choice = input(user, "Which type of part do you want to craft?") as null|anything in list("Small arms", "Long arms", /*"Heavy parts"*/"Cheap parts", "Grips")
 			switch(choice)

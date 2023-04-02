@@ -1,4 +1,4 @@
-/obj/item/gun/projectile/automatic/autopistol
+/obj/item/gun/projectile/automatic/specialist
 	name = "\"Five-Oh\" SMG"
 	desc = "Commonly found around various police forces galaxy wide, the \"Five-Oh\" SMG. \
 			The frame is based off an SMG with a screen for ammunition counting. Chambered in 9mm, it surprisingly punches upwards for its caliber."
@@ -25,7 +25,7 @@
 	serial_type = "INDEX"
 	folding_stock = TRUE //we can fold our stocks
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	gun_parts = list(/obj/item/part/gun/frame/autopistol = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/pistol = 1)
+	gun_parts = list(/obj/item/part/gun/frame/specialist = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/pistol = 1)
 
 	extra_damage_mult_scoped = 0.2		//Holosight
 	zoom_factors = list(0.4)			//Holosight
@@ -33,12 +33,12 @@
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.3 // Heavy smg , 30 vig to insta wield
 
-/obj/item/part/gun/frame/autopistol
+/obj/item/part/gun/frame/specialist
 	name = "Five-Oh frame"
 	desc = "A Five-Oh SMG. A hallway pirate's best dream."
 	icon_state = "frame_luty"
 	matter = list(MATERIAL_STEEL = 5)
-	resultvars = list(/obj/item/gun/projectile/automatic/autopistol)
+	resultvars = list(/obj/item/gun/projectile/automatic/specialist)
 	gripvars = list(/obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/smg
 	barrelvars = list(/obj/item/part/gun/barrel/pistol)

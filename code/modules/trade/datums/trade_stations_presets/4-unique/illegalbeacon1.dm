@@ -22,15 +22,15 @@
 			/obj/item/clothing/head/helmet/space/syndicate = custom_good_amount_range(list(1, 1)),
 			/obj/item/clothing/suit/space/void/merc = custom_good_amount_range(list(1, 1)),
 			/obj/item/gun/projectile/makarov = custom_good_amount_range(list(1, 1)),
-			/obj/item/gun/projectile/lamia/socom = custom_good_amount_range(list(1, 1))
+			/obj/item/gun/projectile/makarov = custom_good_amount_range(list(1, 1))
 		),
-		"Sol Fed Stockpiles" = list(
-			/obj/item/gun/projectile/automatic/thompson = custom_good_amount_range(list(1, 3)),
-			/obj/item/gun/projectile/lamia/gemini = custom_good_amount_range(list(1, 1)),
-			/obj/item/gun/projectile/colt/ten = custom_good_amount_range(list(1, 1)),
-			/obj/item/gun/projectile/automatic/omnirifle/solmarine = custom_good_amount_range(list(1, 1)),
-			/obj/item/gun/projectile/automatic/greasegun = custom_good_amount_range(list(2, 3)),
-			/obj/item/gun/projectile/automatic/omnirifle = custom_good_amount_range(list(1, 1))
+		"Federation Stockpiles" = list(
+			/obj/item/gun/projectile/automatic/federalist = custom_good_amount_range(list(1, 3)),
+			/obj/item/gun/projectile/automatic/federalist/homemaker = custom_good_amount_range(list(1, 1)),
+			/obj/item/gun/projectile/martian = custom_good_amount_range(list(1, 1)),
+			/obj/item/gun/projectile/automatic/operator_rifle = custom_good_amount_range(list(1, 1)),
+			/obj/item/gun/projectile/automatic/specialist = custom_good_amount_range(list(2, 3)),
+			/obj/item/gun/projectile/automatic/kraut = custom_good_amount_range(list(1, 1))
 		),
 		"Useful Stuff" = list(
 			// Autoinjectors defined in hypospray.dm
@@ -59,7 +59,6 @@
 		),
 		"Sydnicate Gun Parts" = list (
 			/obj/item/part/gun/grip/rubber,
-			/obj/item/part/gun/barrel/hrifle,
 			/obj/item/part/gun/mechanism/machinegun,
 			/obj/item/part/gun/barrel/antim
 		)

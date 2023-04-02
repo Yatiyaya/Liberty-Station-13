@@ -23,9 +23,9 @@
 	name = "bolt-action rifle frame"
 	desc = "A bolt-action rifle frame. For hunting or endless trench warfare."
 	icon_state = "frame_serbrifle"
-	result = /obj/item/gun/projectile/boltgun/lever/western
+	result = /obj/item/gun/projectile/boltgun/lever/shotgun
 	gripvars = list(/obj/item/part/gun/grip/black)
-	resultvars = list(/obj/item/gun/projectile/boltgunlever/western)
+	resultvars = list(/obj/item/gun/projectile/boltgun/lever/shotgun)
 	mechanismvar = /obj/item/part/gun/mechanism/boltgun
 	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 

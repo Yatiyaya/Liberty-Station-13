@@ -16,16 +16,6 @@
 	item_cost = 8
 	path = /obj/item/clothing/suit/space/void/merc/xanorath
 
-/datum/uplink_item/item/void_wolf/emporer
-	name = "Void Wolf Emporer"
-	item_cost = 16
-	path = /obj/item/gun/projectile/gyropistol
-
-/datum/uplink_item/item/void_wolf/emporer_ammo
-	name = "Void Wolf Emporer Ammo"
-	item_cost = 4
-	path = /obj/item/ammo_magazine/a75
-
 //Mods
 /datum/uplink_item/item/void_wolf/dangerzone
 	name = "\"Danger Zone\" Trigger"

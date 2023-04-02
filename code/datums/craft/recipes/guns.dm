@@ -37,15 +37,6 @@
 		list(QUALITY_HAMMERING, 10, "time" = 30)
 	)
 
-/datum/craft_recipe/gun/stripper3
-	name = "handmade 8.6mm heavy rifle stripper clip"
-	result = /obj/item/ammo_magazine/speed_loader_heavy_rifle_408/empty
-	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 30),
-		list(QUALITY_SAWING, 10, "time" = 30),
-		list(QUALITY_HAMMERING, 10, "time" = 30)
-	)
-
 /datum/craft_recipe/gun/arrows
 	name = "crude arrows"
 	result = /obj/item/ammo_casing/arrow/bulk
@@ -157,18 +148,6 @@
 		list(QUALITY_BOLT_TURNING, 20, 30)
 	)
 
-/datum/craft_recipe/gun/motherfucker
-	name = "\"Punch Hole\" motherfucker"
-	result = /obj/item/gun/projectile/automatic/motherfucker
-	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
-		list(QUALITY_WELDING, 10, 20),
-		list(CRAFT_MATERIAL, 15, MATERIAL_WOOD),
-		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
 /datum/craft_recipe/gun/maresleg
 	name = "\"Mares Leg\" lever shotgun"
 	result = /obj/item/gun/projectile/boltgun/lever/shotgun
@@ -179,22 +158,6 @@
 		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
 		list(QUALITY_BOLT_TURNING, 20, 30),
 		list(QUALITY_WELDING, 10, 20)
-	)
-
-/datum/craft_recipe/gun/bssts
-	name = "\"STS PARA\" Blackshield rifle"
-	result = /obj/item/gun/projectile/automatic/sts/rifle/blackshield
-	steps = list(
-		list(/obj/item/gun/projectile/automatic/sts/rifle, 1, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 10, "time" = 10),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL),
-		list(QUALITY_WELDING, 10, "time" = 20),
-		list(/obj/item/stock_parts/blackshield/stskit, 1),
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC),
-		list(QUALITY_SAWING, 10, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 20, "time" = 10)
 	)
 
 /datum/craft_recipe/gun/makeshiftlaser
@@ -225,24 +188,20 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
-/datum/craft_recipe/gun/lasersmg
-	name = "Lasblender - Texin"
-	result = /obj/item/gun/energy/lasersmg
-	icon_state = "gun"
+/datum/craft_recipe/gun/partizaner
+	name = "Handmade pistol \"Partizaner\""
+	result = /obj/item/gun/projectile/partizaner
 	steps = list(
-		list(/obj/item/gun/projectile/automatic/texan, 1),
-		list(QUALITY_WELDING, 10, "time" = 30),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL, "time" = 10),
-		list(/obj/item/stock_parts/subspace/crystal, 1),
-		list(/obj/item/computer_hardware/led, 1),
-		list(/obj/item/stack/cable_coil, 5, "time" = 20),
-		list(/obj/item/stock_parts/capacitor, 1, "time" = 5),
-		list(CRAFT_MATERIAL, 2, MATERIAL_GLASS, "time" = 10),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(QUALITY_WELDING, 10, 20),
+		list(CRAFT_MATERIAL, 6, MATERIAL_WOOD),
+		list(QUALITY_SCREW_DRIVING, 10),
+		list(QUALITY_HAMMERING, 10),
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 
 /datum/craft_recipe/gun/luty
-	name = "Handmade SMG 9mm \"Luty\""
+	name = "Handmade SMG \"Luty\""
 	result = /obj/item/gun/projectile/automatic/luty
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),

@@ -1,4 +1,4 @@
-/obj/item/gun/projectile/revolver/detective
+/obj/item/gun/projectile/revolver/wristbreaker
 	name = "\"Wrist Breaker\" revolver"
 	desc = "A somewhat rare revolver found in antique and specialty shops all along the galatic rim. A 6.5mm revolver able to contain 5 rounds. \
 			As its common name suggests, the \"Wrist Breaker\" is commonly know for its high recoil but capability of packing a high-velocity PUNCH!"

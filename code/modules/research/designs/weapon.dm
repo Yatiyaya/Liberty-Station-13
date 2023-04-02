@@ -28,11 +28,6 @@
 	desc = "The lasing medium of this prototype is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core."
 	build_path = /obj/item/gun/energy/lasercannon/rnd
 
-/datum/design/research/item/weapon/c20r
-	name = "Lightweight C20R"
-	desc = "The C-20r is a lightweight and rapid-firing SMG. Uses 9mm rounds."
-	build_path = /obj/item/gun/projectile/automatic/c20r/sci
-
 /datum/design/research/item/weapon/centurio
 	name = "\"Centurio\" Plasma Pistol"
 	build_path = /obj/item/gun/energy/centurio
@@ -205,18 +200,6 @@
 	desc = "7.62mm casings fitted with a one time use laser payload."
 	build_path = /obj/item/ammo_magazine/ammobox/rifle_75_small/laser
 	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
-
-/datum/design/research/item/ammo/heavy_rifle_408
-	name = "Heavy Rifle 8.6mm laser casing."
-	desc = "Heavy Rifle 8.6x70mm casing fitted with a one time use laser payload."
-	build_path = /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/laser
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
-
-/datum/design/research/item/ammo/kurtz_laser
-	name = "Specialized 12mm, laser cases"
-	desc = "12mm cases fitted with a one time use laser payload."
-	build_path = /obj/item/ammo_magazine/ammobox/kurtz_50/laser
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
 /datum/design/research/item/ammo/fancy_dart
 	name = "carbine chem dart"

@@ -1,9 +1,9 @@
 /obj/item/gun/projectile/shotgun/pump
 	name = "\"Trench\" shotgun"
 	desc = "A common open-source pump-action shotgun, a bastard child of the three primary pump shotguns on the market, all rolled together once their patents expired. Can hold up to 4+1 20mm shells in its tube magazine."
-	icon = 'icons/obj/guns/projectile/shotgun.dmi'
-	icon_state = "shotgun"
-	item_state = "shotgun"
+	icon = 'icons/obj/guns/projectile/trench.dmi'
+	icon_state = "trench"
+	item_state = "trench"
 	max_shells = 4
 	w_class = ITEM_SIZE_HUGE
 	force = WEAPON_FORCE_PAINFUL
