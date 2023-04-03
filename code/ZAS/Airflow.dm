@@ -247,9 +247,3 @@ zone/proc/movables()
 			if(!A.simulated || A.anchored || istype(A, /obj/effect) || isobserver(A))
 				continue
 			. += A
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
