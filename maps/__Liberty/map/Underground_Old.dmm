@@ -38296,7 +38296,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "bSH" = (
-/obj/landmark/join/start/technomancer,
+/obj/landmark/join/start/engineer,
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/engineering/workshop)
 "bSI" = (
@@ -48927,7 +48927,7 @@
 	},
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/podrooms)
-"RP" = (
+"cro" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
@@ -49218,7 +49218,7 @@
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/medbay3)
-"RP" = (
+"cr0" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -59742,7 +59742,7 @@
 /obj/structure/boulder,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2south)
-"RP" = (
+"cRo" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -59920,7 +59920,7 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_server_room)
-"RP" = (
+"cR0" = (
 /obj/machinery/cryopod{
 	dir = 4;
 	icon_state = "cryopod_0";
