@@ -5,7 +5,7 @@
 
 /obj/item/clothing/accessory/armband/engine
 	name = "guild armband"
-	desc = "An orange armband with a reflective yellow strip signifying an engineering position within the Artificer's Guild."
+	desc = "An orange armband with a reflective yellow strip signifying an engineering position within the Terra-Therma Union."
 	icon_state = "engie"
 
 /obj/item/clothing/accessory/armband/hydro

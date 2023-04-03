@@ -225,7 +225,7 @@
 //Disables the ability to toggle the safety, toggles the safety permanently off, decreases fire delay. Acquired through loot spawns
 /obj/item/gun_upgrade/trigger/dangerzone
 	name = "\"Danger Zone\" Trigger"
-	desc = "A popular design by the Artificer's Guild used on the frontier by mercenary groups who don't care about collateral, overclocking the firing mechanism by disabling the safety function. A void wolf staple."
+	desc = "A popular design by the Terra-Therma Union used on the frontier by mercenary groups who don't care about collateral, overclocking the firing mechanism by disabling the safety function. A void wolf staple."
 	icon_state = "Danger_Zone"
 	price_tag = 115
 
@@ -284,7 +284,7 @@
 //Adds +3 to the internal magazine of a weapon. Acquired through loot spawns.
 /obj/item/gun_upgrade/mechanism/overshooter
 	name = "\"Overshooter\" internal magazine kit"
-	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. An Artificer's Guild favorite for revolvers and shotguns."
+	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. An Terra-Therma Union favorite for revolvers and shotguns."
 	icon_state = "Overshooter"
 	price_tag = 230
 
@@ -326,7 +326,7 @@
 // Guild made upgrade kit that makes 12mm guns a bit more viable
 /obj/item/gun_upgrade/mechanism/upgrade_kit
 	name = "Kurtz's refinement kit"
-	desc = "A kit made of plasteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Artificer's Guild so even \
+	desc = "A kit made of plasteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Terra-Therma Union so even \
 	the heaviest caliber pistols might stand a chance of competing with their legendary myrmidon design."
 	icon_state = "kit_heavy_alt"
 	can_remove = FALSE
@@ -679,8 +679,8 @@
 //	bad_type = /obj/item/gun_upgrade/scope
 
 /obj/item/gun_upgrade/scope/watchman
-	name = "Artificer's Guild \"Watchman\" scope"
-	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Artificer's Guild are known across the entire Solarian Federation for the quality they have and this one is no different."
+	name = "Terra-Therma Union \"Watchman\" scope"
+	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Terra-Therma Union are known across the entire Solarian Federation for the quality they have and this one is no different."
 	icon_state = "Watchman"
 	matter = list(MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 1)
 	price_tag = 40

@@ -75,7 +75,7 @@
 	qdel(src)
 
 /obj/item/gun/matter/launcher/breaker
-	name = "Artificer \"Breaker\""
+	name = "Union \"Breaker\""
 	desc = "A weapon designed to break down objects and materials to base parts for other uses, a favorite for scavengers and those who hate wasting materials. Uses a cellulose based solution to dissolve matter into its original components, not 100% effective."
 	icon_state = "breaker"
 	icon = 'icons/obj/guns/matter/breaker.dmi'

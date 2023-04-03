@@ -451,8 +451,8 @@
 	)
 
 /datum/craft_recipe/guild/swat_yellow
-	name = "Artificers insulated gloves"
-	result = /obj/item/clothing/gloves/insulated/guild
+	name = "Union insulated gloves"
+	result = /obj/item/clothing/gloves/insulated/union
 	steps = list(
 		list(/obj/item/clothing/gloves/thick, 1, "time" = 15),
 		list(QUALITY_CUTTING, 15, 10),
@@ -466,9 +466,9 @@
 	)
 
 /datum/craft_recipe/guild/webbing
-	name = "Artificer Guild web harness"
+	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
-	result = /obj/item/storage/belt/webbing/artificer
+	result = /obj/item/storage/belt/webbing/Union
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),
@@ -648,7 +648,7 @@
 	)
 
 /datum/craft_recipe/guild/watchman
-	name = "Artificer's Guild \"Watchman\" scope"
+	name = "Terra-Therma Union \"Watchman\" scope"
 	result = /obj/item/gun_upgrade/scope/watchman
 	icon_state = "gun"
 	steps = list(
@@ -675,7 +675,7 @@
 
 //Machines
 /datum/craft_recipe/guild/turretcircuit
-	name = "Circuit: Artificer Turret"
+	name = "Circuit: Union Turret"
 	result = /obj/item/circuitboard/artificer_turret
 	icon_state = "electronic"
 	steps = list(

@@ -80,7 +80,7 @@
 
 /datum/design/research/item/clothing/soteriaarmorchest
 	name = "'Mark II' environmental protection suit"
-	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Artificer Guilds original design. \
+	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build."
 	build_path = /obj/item/clothing/suit/armor/vest/soteriasuit
 
@@ -122,7 +122,7 @@
 /datum/design/research/item/weapon/hatton
 	name = "Soteria Breaching Tool \"Q-del\""
 	desc = "This breaching tool was reverse engineered from the \"Hatton\" design. \
-			Despite the Artificer's Guild \"Hatton\" being traded on the free market through guild channels, \
+			Despite the Terra-Therma Union \"Hatton\" being traded on the free market through guild channels, \
 			this device suffers from a wide number of reliability issues stemming from it being lathe printed."
 	build_path = /obj/item/hatton/moebius
 

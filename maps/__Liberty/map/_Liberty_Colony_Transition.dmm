@@ -342,7 +342,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
@@ -665,7 +665,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /turf/simulated/floor/tiled/white,
@@ -880,7 +880,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /turf/simulated/floor/tiled/white,
@@ -1227,7 +1227,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/structure/cable{

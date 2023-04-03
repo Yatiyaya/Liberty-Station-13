@@ -69,7 +69,7 @@
 
 /tipsAndTricks/jobs/sell_things_you_hoarding_goblins
     jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
-    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Soteria will always love getting materials and Research disks. The Guild (specially a Guild Master) would appreciate Curios, cable coils and materials."
+    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Soteria will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
 
 /tipsAndTricks/jobs/your_perks_are_op
     jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
@@ -96,130 +96,130 @@
     tipText = "Listen to your fellow Council members. Their input is invaluable, specially in situations regarding their area of expertise."
 
 /tipsAndTricks/jobs/engies_tribe
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
-    tipText = "Since ancient times, the Guild had trained the best Engineers in the galaxy. That is why you are called Master."
+	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
+	tipText = "Since ancient times, the Guild had trained the best Engineers in the galaxy. That is why you are called Master."
 
 /tipsAndTricks/jobs/unlimitedpower
-	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 	tipText = "Solars aren't the only way to power up the colony! There is a Dam at the north side of the Guild controlled by a computer which will notify you through the Guild's communication channel when you can open the floodgates to generate power, as well as diesel and PACMAN-type generators that take different kinds of mats for fuel."
 
 /tipsAndTricks/jobs/youaredamright
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The computer that controls the Dam can detect if the turbines are functioning correctly. If they aren't, manually go check their condition by examining them. If there's debris blocking it, use a crowbar to pull it out. If the turbine is stalling out, pulsing it with a multitool will reset it to its default working state."
 
 /tipsAndTricks/jobs/smithing
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "Entice clients to buy from you by reminding them you can print ANY kind of ammunition from the bullet fabricator, as well as produce interesting gun mods, armor mods, tool mods, and even a flaming sword!"
 
 //	Supermatter tips commented out because we have progressed past the need for a Supermatter.
 //	Might want to re-add these if we ever get the opportunity to build our own Supermatter engines.
 
 //	/tipsAndTricks/jobs/engies_suppermatter_one
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 //	tipText = "The super matter is a fickle mistress and each guild has their own set up method. No method is strictly wrong;those who made such poor choices would be dead by now, surely..."
 
 //	/tipsAndTricks/jobs/engies_suppermatter_two
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
 //	tipText = "Venting the super matter's overheated coolant may drop temperatures immediately, but without fresh coolant gas the super matter will almost surely delaminate."
 
 //	tipsAndTricks/jobs/engies_suppermatter_three
-//	jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
-//	tipText = "Woe betide the guild master who allows the crystal to delaminate, the number of such crystals dwindle. Any who cause such disgrace should go up with the engine rather than live with the shame."
+//	jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
+//	tipText = "Woe betide the Union Chief who allows the crystal to delaminate, the number of such crystals dwindle. Any who cause such disgrace should go up with the engine rather than live with the shame."
 
 /tipsAndTricks/jobs/engies_lifekeeper
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "You are responsible for keeping this colony powered, habitable, and with breathable air. Make sure it stays like that at all times."
 
 /tipsAndTricks/jobs/engies_glass_fire
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "In case of fire, break glass."
 
 /tipsAndTricks/jobs/engies_firespacesuit
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "No Adept lives long without learning that firesuits are not space-proof suits, and not all void suits are fireproof."
 
 /tipsAndTricks/jobs/theBlackBox
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The NanoForge can be powered with any oddity that boosts Mechanical knowledge and is also an Anomaly. The NanoForge Black Box will always have an Anomaly."
 
 /tipsAndTricks/jobs/bullet_fab
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "The Bullet Fabricator generates usable material points based on the worth of the material in cash. The more expensive the material used, the more usable material you'll get."
 
 /tipsAndTricks/jobs/nanoforge
-    jobs_list = list(/datum/job/chief_engineer, /datum/job/technomancer)
+    jobs_list = list(/datum/job/chief_engineer,/datum/job/engineer, /datum/job/mining)
     tipText = "NanoForge makes compressed matter, this can fuel RCDs and RCD crossbows, but also is worth quite a lot of credits and makes great fuel in the Bullet Fabricator."
 
 /tipsAndTricks/jobs/tric
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Inaprovaline and Dylovene can be mixed together to produce Tricordazine - a mild regenerative compound that can treat brute/burns/toxin damage and even suffocation. Be careful though, more than thirty units will cause a deadly overdose!"
 
 /tipsAndTricks/jobs/reagent_scanner_pda
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "There is a reagent scanner integrated in your PDA."
 
 /tipsAndTricks/jobs/medical_scanner_pda
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Your PDA has an integrated medical scanner."
 
 /tipsAndTricks/jobs/cryo_bag_scanning
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Medical scanners work through body bags, allowing you to scan people currently inside them. This includes stasis bags as well."
 
 /tipsAndTricks/jobs/detox_chem_clering
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Dylovene, when injected, will clear toxic chemicals like pararein, blattedin, and general toxins. When consumed orally, it will not purge these poisons but will still treat toxin accumulation damage."
 
 /tipsAndTricks/jobs/gas_scanner_pda
-    jobs_list = list(/datum/job/cmo, /datum/job/technomancer)
+    jobs_list = list(/datum/job/cso, /datum/job/engineer)
     tipText = "Inside of your PDA is an installed gas scanner."
 
 /tipsAndTricks/jobs/carbonPills
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Carbon can be ingested to treat cases of poisoning and accidental overdose. 1u of carbon will remove 1u of anything in the stomach. This will not, however, purge chemicals in the bloodstream, nor will injecting carbon have the same effect."
 
 /tipsAndTricks/jobs/inaprov
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Inaprovaline stabilize a patient in many ways and a go to chemical for critical patients."
 
 /tipsAndTricks/jobs/spooder
-	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+	jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
 	tipText = "Cht'mant are unaffected by Tricordazine, Kelotane, Dexalin, and Peridaxon, while Bicaridine is half as effective on them. Every other chem that isn't these will heal them normally."
 
 /tipsAndTricks/jobs/spooder2
-	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+	jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
 	tipText = "For Cht'mant, chemicals obtained from different roach meats will heal them like normal healing chems do to everyone else. Blattedin acts as Tricordazine, Diplopterum as Dexalin, Starkellin as Bicaridine, Seligitilin as Kelotane, Gewaltine as Dylovene and Fuhrerole as Peridaxon. Remember these overdose at 16 units and can be lethal!"
 
 /tipsAndTricks/jobs/spooder3
-	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+	jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
 	tipText = "You can grind roach meat on your industrial grinder for useful chemicals. Blattedin and Diplopterum can be obtained from almost every roach, while you can get Seligitillin from Seuche roaches, Gewaltine from Jagers, Starkellin from Panzers, and Fuhrerole from Fuhrers."
 
 /tipsAndTricks/jobs/birb
-	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+	jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
 	tipText = "Opifex breathe Nitrogen and are poisoned by Oxygen. By no means you should ever try and remove their special masks, not even for anesthesics. If you must perform surgery on one, administer either strong enough painkillers via injection or pills, or soporifics to avoid them suffering through the procedure."
 
 /tipsAndTricks/jobs/overdose
-	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+	jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
 	tipText = "Overdosing will cause adverse (and even lethal) effects to the patient until every single unit of the overdosing chemical is purged from their body. To treat overdose, first purge the overdosing chemical via Dyalisis or Stomach Pump on a Sleeper, or utilize 1u of Haloperidol for blood and Carbon pills for stomach. Only when it's all gone, treat the damage caused by it."
 
 /tipsAndTricks/jobs/lid_draw
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "You can draw reagents from bottles with a syringe, even through a closed lid."
 
 /tipsAndTricks/jobs/crewMonitorHelp
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "You can use the crew monitoring program on computers to locate injured colonists. It can be downloaded on tablets or laptops for a portable solution. Medical storage always has one tablet for this purpose at the start of every shift."
 
 /tipsAndTricks/jobs/odysseus_boons
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "The Odysseus medical mecha is a reliable and fast transport vehicle used best by paramedics or doctors acting as paramedics. The syringe gun module can scan and produce chemicals to deliver on the fly (provided you load it with syringes) and the sleeper module allows you to transport and dose patients inside with basic chems for stabilization on the way to Medbay."
 
 /tipsAndTricks/jobs/thermite
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "Thermite is a great way to take down walls."
 
 /tipsAndTricks/jobs/grenades
-    jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
+    jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "You can make grenades for various purposes, from harmful (like explosion or EMPs) to helpful (like cleaning and weed killing)."
 
 /tipsAndTricks/jobs/cyborgsDontBreathe
@@ -247,7 +247,7 @@
     tipText = "As an AI you can remotely control drone shells."
 
 /tipsAndTricks/jobs/pda_paper_scanner
-    jobs_list = list(/datum/job/premier, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/smc, /datum/job/pg, /datum/job/rd)
+    jobs_list = list(/datum/job/premier, /datum/job/cso, /datum/job/chief_engineer, /datum/job/smc, /datum/job/pg, /datum/job/rp)
     tipText = "Your PDA has an integrated paper scanner and printer."
 
 /tipsAndTricks/jobs/aiCanBeMoved
@@ -255,7 +255,7 @@
     tipText = "The AI core can be unwrenched and moved to a safer location, but is trackable by power consumption."
 
 /tipsAndTricks/jobs/expeditionsAreFUN
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "Expeditions are FUN! Try participating in one."
 
 /tipsAndTricks/jobs/prostheticsForTheMeek
@@ -263,7 +263,7 @@
     tipText = "You can enhance the human body by installing prosthetics and modifications."
 
 /tipsAndTricks/jobs/chem_app
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist, /datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist, /datum/job/cso, /datum/job/doctor, /datum/job/medic)
     tipText = "There is a program in your PDA called SIRC (Soteria Internal Reagent Catalogue) that can help you with chemistry."
 
 /tipsAndTricks/jobs/drink_app
@@ -275,39 +275,39 @@
     tipText = "Your booze and soda dispenser can be hacked with a multitool to give more drink options. It can also be upgraded with advanced parts to charge faster, hold more power, and even make new drinks or chems."
 
 /tipsAndTricks/jobs/upgrades
-    jobs_list = list(/datum/job/rd, /datum/job/scientist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist)
     tipText = "There are many machines that can be upgraded, use an RPED on them to learn what parts it contains, and upgrade those with better ones to increase their efficiency."
 
 /tipsAndTricks/jobs/upgrade_chemdispenders_sleeper
-    jobs_list = list(/datum/job/rd, /datum/job/scientist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist)
     tipText = "Chem dispensers get more chemical capacity the higher their cell capacity is. Omega (Medium) cells are the best for them, don't waste Atomcells on them!"
 
 /tipsAndTricks/jobs/bots
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "Bots are tireless servants that you can create. No janitor? CleanBot to the rescue! Not enough medical staff? MedBot will at least patch them up! Lazy Gardener? Build a Gardenbot for them and charge them extra!"
 
 /tipsAndTricks/jobs/ripley
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Ripley mech is an universal tool for a variety of tasks, be it mining, building, or deconstructing."
 
 /tipsAndTricks/jobs/firefighter
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Ripley Firefighter is an enhanced version of the Ripley sporting more armor and being almost fire proof."
 
 /tipsAndTricks/jobs/odysseus
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Odysseus is a reliable medical mech that can be used as a paramedic vehicle or mobile medical treatment machine."
 
 /tipsAndTricks/jobs/gygax
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Gygax is a combat mech. It is a lighly armored, but rather mobile, nightmare to any threats the colony might face."
 
 /tipsAndTricks/jobs/durand
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Durand is a combat mech. It is heavily armored and extra scary in confined spaces due to its Defense Mode."
 
 /tipsAndTricks/jobs/phazon
-    jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
+    jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)
     tipText = "The Phazon is a combat mech. It has the highest base movespeed, good armor, and can phase through anything thanks to stable bluespace technology."
 
 /tipsAndTricks/jobs/wall_obelisk

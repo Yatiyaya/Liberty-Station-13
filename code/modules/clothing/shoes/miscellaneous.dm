@@ -393,8 +393,8 @@
 	can_hold_knife = TRUE
 
 /obj/item/clothing/shoes/winter/engineering
-	name = "technomancer winter boots"
-	desc = "A pair of winter boots with a technomancer design."
+	name = "engineering winter boots"
+	desc = "A pair of winter boots with a Union design."
 	icon_state = "winterboots_eng"
 	can_hold_knife = TRUE
 

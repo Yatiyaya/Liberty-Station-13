@@ -40,7 +40,7 @@ Various copyright free songs found using Free Music Archives, protected under cc
 
 
 /*Following music provided by GrimbeardX / Thousandface - permitted to use with proper creditation of his works. Upon request of the artist these can be removed at any time.
-- Not under fair-use copyright (Such as the previous tracks above) but rather given permission for its use by the artist through Liberty Community Liason Kayzach.*/
+- Not under fair-use copyright (Such as the previous tracks above) but rather given permission for its use by the artist through Liberty Community Liaison Kayzach.*/
 
 /music_track/tubeworm
 artist = "GrimbeardX"

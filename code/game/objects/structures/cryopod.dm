@@ -69,7 +69,7 @@ Unused file of cryo pods that on click dont even work, these are not used and ar
 /obj/structure/cryopod_spawner/technomancer
 	outfit_type = /decl/hierarchy/outfit/job/engineering/exultant
 	spawn_faction = "Guild"
-	spawn_role = "Guild Master"
+	spawn_role = "Union Chief"
 
 	stat_modifiers = list(
 		STAT_MEC = 40,

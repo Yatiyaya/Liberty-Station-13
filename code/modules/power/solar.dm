@@ -576,7 +576,7 @@
 /obj/item/paper/solarsteupchurch
 	name = "paper- 'Message from Augustine, church cartographer.'"
 	info = "<h1>Greetings</h1><p>For those unaware we have a small solar system set up here to help provide reserve power to the colony, be quite careful as while it is smaller, safer, and easier to \
-	maintain than what the artificer guild uses the wiring under the catwalk will fray over time and may shock you by electrifying the metal. If you find a pair of insulated gloves I \
+	maintain than what the Terra-Therma Worker's Union uses the wiring under the catwalk will fray over time and may shock you by electrifying the metal. If you find a pair of insulated gloves I \
 	highly suggest cutting any splicings and crimping the wires to make them safe and increase power production. If needed it may be usefull to upgrade the glass inside the pannels to harvest more power, reinforced borosilicate works best. \
 	If the colony ever has any brown outs or black outs the third SMES unit in the biogenerator room will charge from these solars and can be hooked up as a temporary solution.</p>"
 

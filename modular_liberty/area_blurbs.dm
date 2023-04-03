@@ -4,7 +4,7 @@
 
 	var/narrate //A text-based description of what this area is for.
 	var/list/blurbed_stated_to = list() //This list of names is here to make sure we don't state our descriptive blurb to a person more than once.
-
+	var/allows_weather_of_snow = FALSE //This us used for weather if snow
 
 
 /area/proc/do_area_blurb(var/mob/living/L)

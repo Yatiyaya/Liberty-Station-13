@@ -1692,7 +1692,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /turf/simulated/floor/tiled/white,
@@ -3310,7 +3310,7 @@
 	})
 "ahj" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

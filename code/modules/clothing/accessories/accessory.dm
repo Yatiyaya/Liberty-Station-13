@@ -322,7 +322,7 @@
 	desc = "A brown cloak with yellow lining."
 
 /obj/item/clothing/accessory/job/cape/te
-	name = "guild master's cloak"
+	name = "Union Chief's cloak"
 	icon_state = "cecloak"
 	desc = "A brown cloak with blue and orange lining."
 
@@ -340,9 +340,9 @@
 	icon_state = "half_cbo"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
-/obj/item/clothing/accessory/halfcape/cro
+/obj/item/clothing/accessory/halfcape/RP
 	name = "Chief Researcher Overseers holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Soteria CRO. Black and purple, a color scheme and style to match the \
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Soteria RP. Black and purple, a color scheme and style to match the \
 	mad scientist in every Overseer."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER
@@ -402,7 +402,7 @@
 	desc = "A brown cloak with fancy nanoleds displaying an animation of rock being picked."
 
 /obj/item/clothing/accessory/job/cape/technomancer
-	name = "adept cloak"
+	name = "engineering cloak"
 	icon_state = "engicloak"
 	desc = "A yellow cloak with orange lining."
 

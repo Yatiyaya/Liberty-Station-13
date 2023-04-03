@@ -11,9 +11,9 @@
 	..()
 	BACKPACK_OVERRIDE_RESEARCH
 
-/decl/hierarchy/outfit/job/science/rd
-	name = OUTFIT_JOB_NAME("Soteria - Expedition Overseer")
-	l_ear = /obj/item/device/radio/headset/heads/rd
+/decl/hierarchy/outfit/job/science/rp
+	name = OUTFIT_JOB_NAME("PIRS - Expedition Overseer")
+	l_ear = /obj/item/device/radio/headset/heads/rp
 	shoes = /obj/item/clothing/shoes/reinforced
 	uniform = /obj/item/clothing/under/rank/expedition_overseer
 	belt = /obj/item/storage/belt/utility/roboticist
@@ -23,13 +23,13 @@
 	backpack_contents = list(/obj/item/oddity/secdocs = 1)
 
 /decl/hierarchy/outfit/job/science/scientist
-	name = OUTFIT_JOB_NAME("Soteria - Scientist")
+	name = OUTFIT_JOB_NAME("PIRS - Scientist")
 
 /decl/hierarchy/outfit/job/science/xenobiologist
-	name = OUTFIT_JOB_NAME("Soteria - Xenobiologist")
+	name = OUTFIT_JOB_NAME("PIRS - Xenobiologist")
 
 /decl/hierarchy/outfit/job/science/roboticist
-	name = OUTFIT_JOB_NAME("Soteria - Roboticist")
+	name = OUTFIT_JOB_NAME("PIRS - Roboticist")
 	uniform = /obj/item/clothing/under/rank/roboticist
 	suit = /obj/item/clothing/suit/storage/rank/robotech_jacket
 	belt = /obj/item/storage/belt/utility/roboticist

@@ -181,8 +181,8 @@
 	icon_state = "beret_navy_warden"
 
 /obj/item/clothing/head/rank/engineering
-	name = "adept beret"
-	desc = "A yellow beret signifying a guild adept position."
+	name = "engineering beret"
+	desc = "A yellow beret signifying a union mechanical technician position."
 	icon_state = "beret_engineering"
 
 /obj/item/clothing/head/beret/purple

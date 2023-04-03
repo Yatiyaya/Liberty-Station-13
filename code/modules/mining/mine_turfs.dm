@@ -51,6 +51,15 @@
 	density = 1
 	opacity = 1
 
+/turf/unsimulated/wall/snow
+	name = "frozen dense forestry"
+	icon = 'icons/turf/flooring/snows.dmi'
+	icon_state = "snowjungle"
+	desc = "A thick, impassable mass of plants and ice."
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
 /turf/simulated/mineral //wall piece
 	name = "Rock"
 	icon = 'icons/turf/walls.dmi'
