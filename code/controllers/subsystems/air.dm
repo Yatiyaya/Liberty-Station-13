@@ -202,9 +202,7 @@ SUBSYSTEM_DEF(air)
 		tiles_to_update.len--
 
 		// Check if the turf is self-zone-blocked
-		var/block
-		ATMOS_CANPASS_TURF(block, T, T)
-		if (block & ZONE_BLOCKED)
+		if(T.c_airblock(T) & ZONE_BLOCKED)
 			deferred_tiles += T
 			if (MC_TICK_CHECK)
 				return
@@ -334,13 +332,10 @@ SUBSYSTEM_DEF(air)
 	ASSERT(isturf(B))
 	#endif
 
-	var/ablock
-	ATMOS_CANPASS_TURF(ablock, A, B)
+	var/ablock = A.c_airblock(B)
 	if(ablock == BLOCKED)
 		return BLOCKED
-	var/bblock
-	ATMOS_CANPASS_TURF(bblock, B, A)
-	return ablock | bblock
+	return ablock | B.c_airblock(A)
 
 /datum/controller/subsystem/air/proc/has_valid_zone(turf/simulated/T)
 	#ifdef ZASDBG
