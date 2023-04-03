@@ -621,8 +621,10 @@
 		var obj/item/computer_hardware/hard_drive/portable/disky = I
 		for(var/datum/computer_file/F in disky.stored_files)
 			if(istype(F, /datum/computer_file/binary/research_points))
-				if(F.size >= amount_to_spend) //the size of a research file is the amount of points it is.
-					F.size -= amount_to_spend
+				var point_value = F.size * 1000 //research points is size * 1000. So we multiply it.
+				if(point_value >= amount_to_spend)
+					point_value -= amount_to_spend
+					F.size = round((point_value / 1000), 1) //we round the size to the nearest whole amount
 				else
 					to_chat(user, SPAN_WARNING("\icon[I] That disk dosn't have enough data."))
 					return FALSE
