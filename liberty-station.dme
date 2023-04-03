@@ -270,7 +270,6 @@
 #include "code\controllers\subsystems\movement\move_handler.dm"
 #include "code\controllers\subsystems\movement\movement.dm"
 #include "code\controllers\subsystems\movement\movement_types.dm"
-#include "code\controllers\subsystems\processing\airflow.dm"
 #include "code\controllers\subsystems\processing\circuit.dm"
 #include "code\controllers\subsystems\processing\fastprocess.dm"
 #include "code\controllers\subsystems\processing\mobs.dm"
