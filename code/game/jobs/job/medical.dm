@@ -156,7 +156,7 @@
 		Act as a nurse for minor injuries, treating patients that a doctor needn't bother with.<br>\
 		Ensure that any outbreaks are contained, such as slimes, infected monkeys, or kudzu."
 
-/obj/landmark/join/start/medic
+/obj/landmark/join/start/medic////////////
 	name = "Paramedic"
 	icon_state = "player-green"
 	join_tag = /datum/job/medic
