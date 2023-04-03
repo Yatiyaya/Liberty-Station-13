@@ -2,7 +2,7 @@
 #define JOBS_SECURITY "Blackshield Commander","Warrant Officer","Supply Specialist","Ranger","Corpsman","Blackshield Trooper","Marshal Officer","Sergeant"
 #define JOBS_COMMAND "Premier","Steward","Blackshield Commander","Warrant Officer","Chief Executive Officer","Union Chief","Chief Surgery Overseer","Research Provost","Prime","Foreman"
 #define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician"
-#define JOBS_MEDICAL "Chief Surgery Overseer","CAPSA Doctor","Emergency Medical Technician","Psychiatrist"
+#define JOBS_MEDICAL "Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
 #define JOBS_SCIENCE "Research Provost","PIRS Scientist","PIRS Roboticist"
 #define JOBS_LSS "Chief Executive Officer","Cargo Technician","Bartender","Chef","Gardener","Janitor","Artist"
 #define JOBS_CIVILIAN "Colonist"

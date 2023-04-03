@@ -60,7 +60,7 @@
 	join_tag = /datum/job/cso
 
 /datum/job/doctor
-	title = "CAPSA Doctor"
+	title = "Medical Doctor"
 	flag = DOCTOR
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
@@ -72,8 +72,8 @@
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
 	minimum_character_age = 25
-	alt_titles = list("Physician", "Surgeon", "Nightingale")
-	noob_name = "CAPSA Medical Student"
+	alt_titles = list("Physician", "CAPSA Surgeon", "Nightingale")
+	noob_name = "Medical Intern"
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	department_account_access = TRUE
 	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
@@ -105,12 +105,12 @@
 		Fill in at chemistry if a Chemist is unavailable."
 
 /obj/landmark/join/start/doctor
-	name = "CAPSA Doctor"
+	name = "Medical Doctor"
 	icon_state = "player-green"
 	join_tag = /datum/job/doctor
 
 /datum/job/medic
-	title = "Emergency Medical Technician"
+	title = "Paramedic"
 	flag = MEDIC
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
@@ -119,7 +119,8 @@
 	spawn_positions = 3
 	supervisors = "the Chief Surgery Overseer"
 	difficulty = "Ungratifying."
-	alt_titles = list("Paramedic", "Protection and Recovery Team")
+	noob_name = "First Aid Responder"
+	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
 	outfit_type = /decl/hierarchy/outfit/job/medical/medic
@@ -156,13 +157,13 @@
 		Ensure that any outbreaks are contained, such as slimes, infected monkeys, or kudzu."
 
 /obj/landmark/join/start/medic
-	name = "Emergency Medical Technician"
+	name = "Paramedic"
 	icon_state = "player-green"
 	join_tag = /datum/job/medic
 
 
 /datum/job/psychiatrist
-	title = "Psychiatrist"
+	title = "Liaison Psychiatrist"
 	flag = PSYCHIATRIST
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
@@ -173,7 +174,7 @@
 	supervisors = "the Soteria Surgery Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
-	alt_titles = list("Liaison Psychiatrist")
+	alt_titles = list("Psychiatrist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_psychiatrist, access_chemistry, access_medical_suits
@@ -205,6 +206,6 @@
 		Use your psionic gifts to assist the colony."
 
 /obj/landmark/join/start/psychiatrist
-	name = "Psychiatrist"
+	name = "Liaison Psychiatrist"
 	icon_state = "player-green"
 	join_tag = /datum/job/psychiatrist
