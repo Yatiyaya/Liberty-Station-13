@@ -31,20 +31,20 @@
 	steps = list(
 		list(/obj/item/gun/projectile/shotgun/pump/sawn, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
-		list(CRAFT_MATERIAL, 6, MATERIAL_WOOD),
+		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTIC),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60)
 	)
 
-/datum/craft_recipe/repairs/obrez_shotgun
-	name = "sawn-down Trench shotgun"
-	result = /obj/item/gun/projectile/shotgun/pump/sawn
+/datum/craft_recipe/repairs/judge
+	name = "Judge automatic shotgun"
+	result = /obj/item/gun/projectile/shotgun/judge
 	steps = list(
-		list(/obj/item/gun/projectile/shotgun/pump/obrez, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
-		list(CRAFT_MATERIAL, 6, MATERIAL_WOOD),
+		list(/obj/item/gun/projectile/shotgun/judge/sawn, 1, "time" = 60),
+		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTIC),
 		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_WELDING, 30, "time" = 60)
+		list(QUALITY_HAMMERING, 30, "time" = 60)
 	)
 
 /datum/craft_recipe/repairs/ak47_rifle

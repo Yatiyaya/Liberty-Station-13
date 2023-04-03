@@ -22,7 +22,6 @@
 				/obj/item/gun/projectile/boltgun = 2,\
 				/obj/item/gun/projectile/shotgun/pump = 0.1,\
 				/obj/item/gun/projectile/shotgun/pump/sawn = 0.5,\
-				/obj/item/gun/projectile/shotgun/pump/obrez = 1.5,\
 				/obj/item/gun/projectile/boltgun/sawn/true = 0.5,\
 				/obj/item/gun/projectile/automatic/federalist = 0.1, \
 				/obj/item/gun/projectile/automatic/nationale = 0.1, \
@@ -204,7 +203,6 @@
 
 				/obj/item/gun/projectile/shotgun/pump = 1,\
 				/obj/item/gun/projectile/shotgun/pump/sawn = 2,\
-				/obj/item/gun/projectile/shotgun/pump/obrez = 2,\
 				/obj/item/gun/projectile/boltgun/lever/shotgun = 1,\
 				/obj/item/gun/projectile/boltgun/lever/shotgun/sawn = 2,\
 				/obj/item/gun/projectile/shotgun/sweeper = 0.3,\

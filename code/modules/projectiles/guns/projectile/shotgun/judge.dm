@@ -22,7 +22,7 @@
 	penetration_multiplier = 1.2 //20% more ap
 	damage_multiplier = 1.1 	//10% more damage
 	fire_delay = 12				//Ouchie-oofie my fire delay - get mods to make it better
-	init_recoil = RIFLE_RECOIL(1.8)
+	init_recoil = RIFLE_RECOIL(1.6)
 	max_upgrades = 5 			// Already too good, let's not get out of hand
 
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL, GUN_SIGHT)
@@ -33,8 +33,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/judge = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 /obj/item/part/gun/frame/judge
-	name = "Street Sweeper frame"
-	desc = "A Street Sweeper shotgun frame. Specially designed to sweep streets and spaceship halls."
+	name = "Judge frame"
+	desc = "A Judge shotgun frame. Judge, jury AND executioner!"
 	icon_state = "frame_pug"
 	result = /obj/item/gun/projectile/shotgun/judge
 	resultvars = list(/obj/item/gun/projectile/shotgun/judge)
@@ -60,6 +60,21 @@
 	icon_state = iconstring
 	set_item_state(itemstring)
 
+/obj/item/gun/projectile/shotgun/judge/sawn
+	name = "sawn-down \"Judge\" automatic shotgun"
+	desc = "A 12 gauge shotgun with an auto-ejector and capability of being fired without the need to pump its action. This impresive model, built by Martian Logistics, is a favorite galaxy wide. \
+			Sporting little in the chance of jamming due to its blow-back feature, this amazing piece of work maintains the simplicity of a shotgun with the automatic firepower of a traditional mag-fed shotgun. \
+			This one appears to have its stock, barrel, and loading tube shortened. Sacrificing capacity and recoil for size."
+	icon = 'icons/obj/guns/projectile/sawnoff/judge.dmi'
+	icon_state = "judge"
+	item_state = "judge"
+	max_shells = 5
+	w_class = ITEM_SIZE_NORMAL
+	init_recoil = RIFLE_RECOIL(2)
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	price_tag = 600
+	penetration_multiplier = 1.1 //10% more ap
+	damage_multiplier = 1.0
 
 /obj/item/gun/projectile/automatic/judge/admin
 	name = "\"Purgeinator\" payload rifle"

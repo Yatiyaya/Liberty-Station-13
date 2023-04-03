@@ -320,7 +320,7 @@
 		/obj/item/gun/projectile/boltgun/sawn,
 		/obj/item/gun/projectile/boltgun/rosefield/sawn,
 		/obj/item/gun/projectile/boltgun/lever/shotgun/sawn,
-		/obj/item/gun/projectile/shotgun/pump/obrez,
+		/obj/item/gun/projectile/shotgun/pump/sawn,
 		/obj/item/gun/projectile/automatic/tactical,
 		/obj/item/gun/projectile/automatic/federalist/sawn,
 		/obj/item/gun/projectile/automatic/luty,

@@ -5,7 +5,7 @@
 	icon_state = "trench"
 	item_state = "trench"
 	max_shells = 4
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
@@ -16,14 +16,14 @@
 	handle_casings = HOLD_CASINGS
 	fire_sound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_insert.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
-	price_tag = 600
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	price_tag = 500
 	damage_multiplier = 1 //Baseline shotgun
 	init_recoil = RIFLE_RECOIL(1.1)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/shotgun/pump/sawn
 	allow_racking = FALSE
-	serial_type = "H&S"
+	serial_type = "ML"
 
 	wield_delay = 0.6 SECOND
 	wield_delay_factor = 0.3 // 30 vig
@@ -67,35 +67,16 @@
 /obj/item/gun/projectile/shotgun/pump/sawn
 	name = "sawn-down \"Trench\" shotgun"
 	desc = "A common open-source pump-action shotgun, a bastard child of the three primary pump shotguns on the market, all rolled together once their patents expired. This one has been slightly cut down."
-	icon = 'icons/obj/guns/projectile/sawnoff/shotgun.dmi'
-	icon_state = "shotgun"
-	item_state = "shotgun"
-	w_class = ITEM_SIZE_BULKY
-	slot_flags = SLOT_BACK|SLOT_BELT
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 10)
-	price_tag = 450
-	damage_multiplier = 1
-	penetration_multiplier = 0.9
-	init_recoil = RIFLE_RECOIL(1.2)
-	saw_off = TRUE
-	sawn = /obj/item/gun/projectile/shotgun/pump/obrez
-
-	wield_delay = 0.4 SECOND
-	wield_delay_factor = 0.3 // 30 vig
-
-/obj/item/gun/projectile/shotgun/pump/obrez
-	name = "obrez \"Trench\" shotgun"
-	desc = "A common open-source pump-action shotgun, hacked up, sawn down, and ready to rob a liquor store."
-	icon = 'icons/obj/guns/projectile/sawnoff/shotgunobrez.dmi'
-	icon_state = "obrez"
-	item_state = "obrez"
+	icon = 'icons/obj/guns/projectile/sawnoff/trench.dmi'
+	icon_state = "trench"
+	item_state = "trench"
 	max_shells = 3
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 5)
-	price_tag = 350
-	damage_multiplier = 0.8
+	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)
+	price_tag = 300
+	damage_multiplier = 0.9
 	penetration_multiplier = 0.8
 	init_recoil = RIFLE_RECOIL(1.3)
 	saw_off = FALSE
