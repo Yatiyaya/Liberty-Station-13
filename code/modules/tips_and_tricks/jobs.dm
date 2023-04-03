@@ -11,44 +11,40 @@
     jobs_list = list(/datum/job/smc, /datum/job/swo, /datum/job/supsec, /datum/job/inspector, /datum/job/medspec, /datum/job/trooper, /datum/job/officer, /datum/job/serg)
     tipText = "As a member of security, you have broad access to chase criminals. This does not mean you can take anything you have access to. Taking things from other departments is theft!"
 
-/tipsAndTricks/jobs/plants_are_dieing_gardener
-    jobs_list = list(/datum/job/hydro)
-    tipText = "As the gardener your exspected to maintain potted plants around the colony."
-
 /tipsAndTricks/jobs/newsprint
     jobs_list = list(/datum/job/janitor)
     tipText = "Your bundle of newsprint will never run out of paper, make sure to keep those news casters all stocked up."
 
 /tipsAndTricks/jobs/guild_resale_profit
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "As Lonestar, you should be buying up valuable things from scavengers and reselling them for a profit. Buy anything of value that's brought to you."
 
 /tipsAndTricks/jobs/guild_price_scanner
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "There is a price scanner that can help you appraise items. Your PDA also has this scanner installed."
 
 /tipsAndTricks/jobs/mines_are_danger
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "The mines might hold a lot of ore, but also a lot of danger. Nightmare Stalkers, Spiders, Roaches and other monsters are commonplace down there."
 
 /tipsAndTricks/jobs/custom_venders
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "Always try to make use of your Custom Vending Machines when you can, they can sell products when you are busy making more deals. Other departments will love you for setting one up for them as well."
 
 /tipsAndTricks/jobs/drillllls
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "The massive drills mine deep into the ground on the tile its drilling, upgrading it will increase its AOE to more tiles."
 
 /tipsAndTricks/jobs/diggyhole
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "The ground itself can be digged to get more ore with a shovel, this will likely give you rocks that can be hammered for more ore fragments."
 
 /tipsAndTricks/jobs/the_wall_of_ore
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "You can use certain types of picks to mine the walls of the mines that are impassable and indestructible, this will yield more ore fragments without destroying the rock."
 
 /tipsAndTricks/jobs/surface_mining
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "For those who want to avoid the dark, lonely, scary mines, you can go to the surface and find a nearby cave by the lakeside to mine out. Sadly, this will not get much ore but could be an interesting prospecting choice..."
 
 /tipsAndTricks/jobs/survive

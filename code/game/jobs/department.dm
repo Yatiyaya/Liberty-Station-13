@@ -65,12 +65,11 @@
 	id = DEPARTMENT_ENGINEERING
 	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/engineer", "/datum/job/mining")
 
-/datum/department/civilian
+/datum/department/service
 	name = "Liberty Contractors"
 	id = DEPARTMENT_CIVILIAN
 	account_initial_balance = 0
-	//No standing balance is kept in the account, this is just for paying gardener, janitor and actor
-	jobs_in_department = list("/datum/job/clubmanager","/datum/job/clubworker","/datum/job/hydro","/datum/job/artist","/datum/job/janitor")
+	jobs_in_department = list()
 
 /******************
 	Benefactors
@@ -97,19 +96,10 @@
 	Independant
 *******************/
 //Self funds and pays wages out of its earnings
-/datum/department/guild
-	name = "Lonestar Shipping Solutions"
-	id = DEPARTMENT_LSS
-
-	/*
-		The LSS account represents the holdings of the local branch, and CEO.
-	*/
-	/* if you want to change this remember to do so in code\game\gamemodes\score.dm as well,
-	if you manage to get this variable refferenced there you're a better man than me. godspeed
-	*/
-	//Note: LSS isnt accounted for wages when starting money as they have the easyest ways to make money
-	account_initial_balance = 18200 //Has a lot of workers to pay - but their /entire/ job is literally to make money. Should cover the base nessessities of hourly payment.
-	jobs_in_department = list("/datum/job/merchant","/datum/job/cargo_tech","/datum/job/mining")
+/datum/department/service
+	name = "Skylight Syndicate Funds"
+	id = DEPARTMENT_SERVICE
+	jobs_in_department = list(JOBS_SERVICE)
 
 /datum/department/prospector
 	name = "Prospectors"
@@ -187,7 +177,7 @@
 
 /datum/perk/experienced/Lonestar
 	name = "Experienced: Lonestar"
-	dept = DEPARTMENT_LSS
+	dept = DEPARTMENT_SERVICE
 	gain_text = "Yay? Lonestar!!!"
 
 /datum/perk/experienced/Lonestar/Station

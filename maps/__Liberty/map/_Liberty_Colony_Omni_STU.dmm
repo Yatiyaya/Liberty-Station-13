@@ -1653,7 +1653,6 @@
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/cryo)
 "aqf" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "aqg" = (
@@ -27678,7 +27677,6 @@
 "ftc" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/generic,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/quartermaster/office)
 "ftd" = (
@@ -32787,7 +32785,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
 "gpK" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/hangarsupply)
 "gpM" = (
@@ -41493,7 +41490,6 @@
 /area/liberty/quartermaster/office)
 "iax" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/quartermaster/hangarsupply)
 "iaz" = (
@@ -65761,7 +65757,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/hallway/side/f2section1)
 "mHh" = (
-/obj/landmark/join/start/cargo_tech,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/quartermaster/miningdock)
@@ -71932,7 +71927,6 @@
 	name = "\improper Outdoors - Pad"
 	})
 "nUe" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "nUg" = (
@@ -93404,7 +93398,6 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/maintenance/undergroundfloor1south)
 "sbr" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "sbs" = (
@@ -103927,7 +103920,6 @@
 	name = "\improper Outdoors - Pad"
 	})
 "uiy" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/liberty/crew_quarters/botanist)
 "uiB" = (
@@ -109353,7 +109345,6 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/security/armoryshop)
 "vjV" = (
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "vjX" = (

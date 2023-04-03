@@ -2,7 +2,7 @@ GLOBAL_LIST_INIT(department_command, list(DEPARTMENT_COMMAND))
 GLOBAL_LIST_INIT(department_security, list(DEPARTMENT_SECURITY))
 GLOBAL_LIST_INIT(department_moebius, list(DEPARTMENT_SCIENCE, DEPARTMENT_MEDICAL))
 GLOBAL_LIST_INIT(department_engineering, list(DEPARTMENT_ENGINEERING))
-GLOBAL_LIST_INIT(department_guild, list(DEPARTMENT_LSS))
+GLOBAL_LIST_INIT(department_guild, list(DEPARTMENT_SERVICE))
 GLOBAL_LIST_INIT(department_church, list(DEPARTMENT_CHURCH))
 
 var/const/ENGINEERING       =(1<<0)
@@ -13,10 +13,9 @@ var/const/CIVILIAN          =(1<<4)
 var/const/COMMAND           =(1<<5)
 var/const/MISC              =(1<<6)
 var/const/SERVICE           =(1<<7)
-var/const/LSS	            =(1<<8)
-var/const/CHURCH           	=(1<<9)
-var/const/PROSPECTORS		=(1<<10)
-var/const/INDEPENDENT		=(1<<11)
+var/const/CHURCH           	=(1<<8)
+var/const/PROSPECTORS		=(1<<9)
+var/const/INDEPENDENT		=(1<<10)
 
 var/const/ENGSEC			=(1<<0)
 
@@ -49,18 +48,14 @@ var/const/ROBOTICIST		=(1<<6)
 
 var/const/STEWARD			=(1<<0)
 var/const/CLUBMANAGER		=(1<<1)
-var/const/CLUBWORKER		=(1<<2)
-var/const/MERCHANT			=(1<<3)
-var/const/CARGOTECH			=(1<<4)
-var/const/ARTIST			=(1<<6)
-var/const/ASSISTANT			=(1<<7)
-var/const/JANITOR			=(1<<8)
-var/const/BOTANIST			=(1<<9)
-var/const/FOREMAN			=(1<<10)
-var/const/SALVAGER			=(1<<11)
-var/const/PROSPECTOR		=(1<<12)
-
-
+var/const/JANITOR			=(1<<2)
+var/const/BOUNCER			=(1<<3)
+var/const/CLUBWORKER		=(1<<4)
+var/const/ARTIST			=(1<<5)
+var/const/ASSISTANT			=(1<<6)
+var/const/FOREMAN			=(1<<7)
+var/const/SALVAGER			=(1<<8)
+var/const/PROSPECTOR		=(1<<9)
 
 var/const/CHAPLAIN			=(1<<0)
 var/const/ACOLYTE			=(1<<1)
@@ -85,7 +80,7 @@ var/list/medical_positions = list(JOBS_MEDICAL)
 var/list/science_positions = list(JOBS_SCIENCE)
 
 //BS12 EDIT
-var/list/cargo_positions = list(JOBS_LSS)
+var/list/service_positions = list(JOBS_SERVICE)
 
 
 var/list/prospector_positions = list(JOBS_PROSPECTOR)

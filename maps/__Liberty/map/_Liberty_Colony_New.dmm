@@ -15203,7 +15203,6 @@
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/maintenance/undergroundfloor1south)
 "dFh" = (
-/obj/landmark/join/start/cargo_tech,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -37424,7 +37423,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
 	},
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "iIc" = (
@@ -38509,7 +38507,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "iVD" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "iVE" = (
@@ -68508,7 +68505,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/bridge)
 "pLB" = (
-/obj/landmark/join/start/hydro,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
@@ -90985,7 +90981,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "uMK" = (
@@ -101531,7 +101526,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/landmark/join/start/cargo_tech,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)

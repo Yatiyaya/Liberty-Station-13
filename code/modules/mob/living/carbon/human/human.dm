@@ -308,7 +308,7 @@ var/list/rank_prefix = list(\
 	"Medical Doctor" = "Doctor",\
 	"Paramedic" = "Paramedic",\
 	"Research Provost" = "Provost",\
-	"Chief Executive Officer" = "Executive",\
+	"Casino Manager" = "Manager",\
 	"Prime" = "Prime",\
 	"Foreman" = "Foreman",\
 	)
@@ -1261,7 +1261,7 @@ var/list/rank_prefix = list(\
 					src.make_psion_psych()
 				if("nanogate")
 					src.give_nanogate("Standard")
-				if("Union nanogate")
+				if("union nanogate")
 					src.give_nanogate("Union")
 				if("opifex nanogate")
 					src.give_nanogate("Opifex")

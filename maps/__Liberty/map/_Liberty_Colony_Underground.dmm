@@ -2833,7 +2833,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/security)
 "agv" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "agw" = (
@@ -5442,7 +5441,6 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/rnd/xenobiology/xenoflora)
 "alL" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/hangarsupply)
 "alM" = (
@@ -7660,7 +7658,6 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "aqa" = (
-/obj/landmark/join/start/cargo_tech,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -18225,7 +18222,6 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/podrooms)
 "aNI" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "aNJ" = (
@@ -25306,7 +25302,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "bhY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "bhZ" = (
@@ -31271,7 +31266,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/engineering/foyer)
 "dkl" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "dkq" = (
@@ -32259,7 +32253,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "dZh" = (
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "dZp" = (
@@ -58227,7 +58220,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/pool)
 "uQE" = (
-/obj/landmark/join/start/hydro,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
@@ -60573,7 +60565,6 @@
 "wts" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/generic,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/quartermaster/office)
 "wtK" = (
