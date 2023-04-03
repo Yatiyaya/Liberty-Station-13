@@ -289,7 +289,7 @@ obj/item/storage/fancy/dogtreats/populate_contents()
 
 /obj/item/storage/fancy/cigarettes/toha
 	name = "\improper TOHA Heavy Industries packet"
-	desc = "A packet of six TOHA Heavy Industries cigarettes. The pack of choice for the engineer, the mechanic, and the technician. A special import as requested by many in the Artificer's Guild with a price to match."
+	desc = "A packet of six TOHA Heavy Industries cigarettes. The pack of choice for the engineer, the mechanic, and the technician. A special import as requested by many in the Terra-Therma Union with a price to match."
 	icon_state = "TOHAHeavyIndustriesCigPacket"
 	item_state = "TOHAHeavyIndustriesCigPacket"
 

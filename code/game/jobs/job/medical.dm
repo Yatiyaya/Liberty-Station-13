@@ -1,6 +1,6 @@
-/datum/job/cmo
-	title = "Chief Biolab Overseer"
-	flag = CBO
+/datum/job/cso
+	title = "Chief Surgery Overseer"
+	flag = CSO
 	head_position = 1
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL | COMMAND
@@ -12,7 +12,7 @@
 	selection_color = "#94a87f"
 	req_admin_notify = 1
 	wage = WAGE_COMMAND
-	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
+	outfit_type = /decl/hierarchy/outfit/job/medical/cso
 	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	access = list(
@@ -55,25 +55,25 @@
 	In times of crisis, lock down the medbay to protect those within, from outside threats."
 
 /obj/landmark/join/start/cmo
-	name = "Chief Biolab Overseer"
+	name = "Chief Surgery Overseer"
 	icon_state = "player-green-officer"
-	join_tag = /datum/job/cmo
+	join_tag = /datum/job/cso
 
 /datum/job/doctor
-	title = "Soteria Doctor"
+	title = "Medical Doctor"
 	flag = DOCTOR
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
 	faction = MAP_FACTION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Chief Biolab Overseer"
+	supervisors = "the Chief Surgery Overseer"
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
 	minimum_character_age = 25
-	alt_titles = list("Soteria Medical Student"=/decl/hierarchy/outfit/job/medical/doctor/medStudent,"Soteria Nurse"=/decl/hierarchy/outfit/job/medical/doctor/medNurse, "Soteria Emergency Physician"=/decl/hierarchy/outfit/job/medical/doctor/medERPhys, "Soteria Surgeon"=/decl/hierarchy/outfit/job/medical/doctor/medSurgeon)
-	noob_name = "Soteria Medical Student"
+	alt_titles = list("Physician", "CAPSA Surgeon", "Nightingale")
+	noob_name = "Medical Intern"
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	department_account_access = TRUE
 	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
@@ -105,23 +105,25 @@
 		Fill in at chemistry if a Chemist is unavailable."
 
 /obj/landmark/join/start/doctor
-	name = "Soteria Doctor"
+	name = "Medical Doctor"
 	icon_state = "player-green"
 	join_tag = /datum/job/doctor
 
-/datum/job/recovery_team
-	title = "Soteria Lifeline Technician"
-	flag = RECOVERYTEAM
+/datum/job/medic
+	title = "Paramedic"
+	flag = MEDIC
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Chief Biolab Overseer"
+	supervisors = "the Chief Surgery Overseer"
 	difficulty = "Ungratifying."
+	noob_name = "First Aid Responder"
+	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
-	outfit_type = /decl/hierarchy/outfit/job/medical/recovery_team
+	outfit_type = /decl/hierarchy/outfit/job/medical/medic
 	disallow_species = list(FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	health_modifier = 5
@@ -154,19 +156,14 @@
 		Act as a nurse for minor injuries, treating patients that a doctor needn't bother with.<br>\
 		Ensure that any outbreaks are contained, such as slimes, infected monkeys, or kudzu."
 
-/obj/landmark/join/start/chemist //This says chemist so I didn't have to edit the map shit when I changed this. Fix later. || Update: Whoever did this, you never fucking fixed it. I hate you. - Rebel0
-	name = "Soteria Recovery Team"
+/obj/landmark/join/start/medic////////////
+	name = "Paramedic"
 	icon_state = "player-green"
-	join_tag = /datum/job/recovery_team
-
-/obj/landmark/join/start/paramedic // Same thing as above tbh. || I still hate you. -Rebel0
-	name = "Soteria Recovery Team"
-	icon_state = "player-green"
-	join_tag = /datum/job/recovery_team
+	join_tag = /datum/job/medic
 
 
 /datum/job/psychiatrist
-	title = "Soteria Psychiatrist"
+	title = "Liaison Psychiatrist"
 	flag = PSYCHIATRIST
 	department = DEPARTMENT_MEDICAL
 	department_flag = MEDICAL
@@ -174,10 +171,10 @@
 	total_positions = 1
 	spawn_positions = 1
 	wage = WAGE_PROFESSIONAL
-	supervisors = "the Soteria Biolab Overseer"
+	supervisors = "the Soteria Surgery Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
-	alt_titles = list("Soteria Psychologist", "Soteria Empath")
+	alt_titles = list("Psychiatrist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_psychiatrist, access_chemistry, access_medical_suits
@@ -209,6 +206,6 @@
 		Use your psionic gifts to assist the colony."
 
 /obj/landmark/join/start/psychiatrist
-	name = "Soteria Psychiatrist"
+	name = "Liaison Psychiatrist"
 	icon_state = "player-green"
 	join_tag = /datum/job/psychiatrist

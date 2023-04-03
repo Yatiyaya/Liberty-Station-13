@@ -79,7 +79,7 @@
 
 //This one's from bay12
 /obj/machinery/vending/engineering
-	name = "Artificer's Tool Maker"
+	name = "Union's Tool Maker"
 	desc = "Everything you need for do-it-yourself colony repair."
 	product_slogans = "Home project planned? Do it yourself!;Legally, I have to ask you not to use those tools to hack into anything.;Locked door? Tools here!;Big project and you're missing your precious wrench? I bet I can replace it!;The most robust tools on the colony!"
 	product_ads = "Best tools!;Cheap!;Reliable!;Do-It-Yourself!"
@@ -88,7 +88,7 @@
 	vendor_department = DEPARTMENT_ENGINEERING
 	products = list(/obj/item/clothing/head/hardhat = 4,
 					/obj/item/storage/belt/utility = 4,
-					/obj/item/storage/belt/webbing/artificer = 2,
+					/obj/item/storage/belt/webbing/Union = 2,
 					/obj/item/clothing/glasses/powered/meson = 4,
 					/obj/item/clothing/glasses/powered/night/guild = 4,
 					/obj/item/clothing/gloves/insulated = 4,
@@ -126,7 +126,7 @@
 					/obj/item/stock_parts/console_screen = 5)
 	prices = list(/obj/item/clothing/head/hardhat = 4,
 					/obj/item/storage/belt/utility = 75,
-					/obj/item/storage/belt/webbing/artificer = 2500,
+					/obj/item/storage/belt/webbing/Union = 2500,
 					/obj/item/clothing/glasses/powered/meson = 150,
 					/obj/item/clothing/glasses/powered/night/guild = 1200,
 					/obj/item/clothing/gloves/insulated = 600,

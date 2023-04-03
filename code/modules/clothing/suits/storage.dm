@@ -317,8 +317,8 @@
 	icon_state = "snowsuit_medical"
 
 /obj/item/clothing/suit/storage/snowsuit/engineering
-	name = "guild snowsuit"
-	desc = "A special technomancer coat designed for cold environments."
+	name = "union snowsuit"
+	desc = "A special union coat designed for cold environments."
 	icon_state = "snowsuit_engineering"
 
 /obj/item/clothing/suit/storage/snowsuit/cargo

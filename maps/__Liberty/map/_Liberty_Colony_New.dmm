@@ -368,7 +368,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/plating/under,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "afb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 1
@@ -719,7 +719,7 @@
 "ajj" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Guild Master's Office"
+	department = "Union Chief's Office"
 	},
 /obj/structure/sign/warning/nosmoking/small{
 	pixel_x = 32
@@ -2074,7 +2074,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "azs" = (
 /obj/machinery/camera/network/colony_surface{
 	dir = 1
@@ -6378,7 +6378,7 @@
 /obj/structure/bed/chair/office/dark,
 /obj/landmark/join/start/rd,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "bAW" = (
 /obj/structure/catwalk,
 /obj/structure/closet/secure_closet/personal/miner,
@@ -8559,7 +8559,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "cdY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8716,7 +8716,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "cge" = (
 /obj/effect/window_lwall_spawn/smartspawn,
 /obj/machinery/door/firedoor/multi_tile,
@@ -9947,7 +9947,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "cvn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/oil,
@@ -13895,7 +13895,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "dpN" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -15380,7 +15380,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "dGL" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
@@ -21106,7 +21106,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "eWl" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/light/small{
@@ -32414,7 +32414,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "hCn" = (
-/obj/machinery/porta_turret/artificer,
+/obj/machinery/porta_turret/Union,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "hCo" = (
@@ -32887,7 +32887,7 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "hHl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -32951,7 +32951,7 @@
 /obj/structure/table/woodentable,
 /obj/item/paper/monitorkey,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "hIk" = (
 /obj/machinery/newscaster{
 	pixel_y = -34
@@ -34109,7 +34109,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/vectorrooms)
 "hWd" = (
-/obj/machinery/porta_turret/artificer,
+/obj/machinery/porta_turret/Union,
 /obj/machinery/firealarm{
 	pixel_y = 32
 	},
@@ -34349,7 +34349,7 @@
 /area/liberty/outside/inside_colony)
 "hYi" = (
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "hYm" = (
 /obj/machinery/door/airlock/glass_engineering{
 	name = "Engineering Lobby Access";
@@ -40215,7 +40215,7 @@
 	pixel_x = 28
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "joQ" = (
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 4
@@ -42430,7 +42430,7 @@
 "jPJ" = (
 /obj/machinery/computer/mecha,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "jPM" = (
 /obj/structure/flora/small/busha2,
 /obj/structure/flora/small/busha2,
@@ -53438,7 +53438,7 @@
 "muV" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4;
-	name = "guild master seat"
+	name = "Union Chief seat"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -54075,7 +54075,7 @@
 /area/liberty/quartermaster/office)
 "mCX" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Artificer Power Substation";
+	name = "Union Power Substation";
 	req_access = list(10)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -55206,7 +55206,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "mPx" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Atmospherics";
@@ -55996,7 +55996,7 @@
 	name = "AI Upload Shield"
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "mYW" = (
 /obj/random/junk,
 /obj/effect/decal/cleanable/dirt,
@@ -59947,7 +59947,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "nQD" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild3,
@@ -60369,7 +60369,7 @@
 /obj/effect/floor_decal/industrial/warningred,
 /obj/machinery/papershredder,
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "nWe" = (
 /obj/structure/closet/wall_mounted/emcloset/escape_pods{
 	pixel_x = 32
@@ -65828,7 +65828,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "pgu" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -66106,7 +66106,7 @@
 	req_one_access = newlist()
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "pjg" = (
 /obj/machinery/photocopier,
 /obj/machinery/camera/network/command,
@@ -67679,7 +67679,7 @@
 "pBD" = (
 /obj/machinery/computer/robotics,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "pBF" = (
 /mob/living/carbon/superior_animal/robot/greyson/roomba/boomba,
 /obj/effect/decal/cleanable/dirt,
@@ -69597,7 +69597,7 @@
 "pWt" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "pWF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cyancorner,
@@ -70400,7 +70400,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "qhA" = (
 /obj/structure/table/standard,
 /obj/item/device/eftpos{
@@ -72904,7 +72904,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "qJG" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/security/detectives_office)
@@ -74222,7 +74222,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "raV" = (
 /obj/structure/closet/random_milsupply,
 /obj/random/contraband,
@@ -74531,7 +74531,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "reF" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/rock,
@@ -75155,7 +75155,7 @@
 /area/liberty/security/detectives_office)
 "rlJ" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "rlQ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -87335,7 +87335,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1west)
 "tXH" = (
-/obj/landmark/join/start/chemist,
+/obj/landmark/join/start/medic,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/sleeper)
 "tXI" = (
@@ -87655,7 +87655,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "uaY" = (
 /obj/machinery/vending/hydronutrients,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -88182,7 +88182,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_perforated,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "ufP" = (
 /obj/random/flora/small_jungle_tree,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -91959,7 +91959,7 @@
 	},
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet/purcarpet,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "uWr" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -95716,7 +95716,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "vPs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -96913,7 +96913,7 @@
 	},
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
-/area/liberty/command/cro)
+/area/liberty/command/RP)
 "wcP" = (
 /obj/structure/sign/warning/nosmoking/small,
 /turf/simulated/wall/r_wall,

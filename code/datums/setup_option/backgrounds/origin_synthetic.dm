@@ -61,7 +61,7 @@
 	name = "Mechanical Adept"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
 	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. While not as sturdy as some other models of FBP's such as the Soteria designs the \
-	artificer guild positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
+	Terra-Therma Worker's Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
 	omni-tool built in your right arm."
 
 	restricted_to_species = list(FORM_TERRAYNTH)
@@ -80,7 +80,7 @@
 /datum/category_item/setup_option/background/ethnicity/tt_synth_sturdy
 	name = "\"Long-Haul\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is the work of Tacitus \
-	O'Conner himself, artificer guild grand master. Unlike the mechanical adept model this chassis is built to last, being far more sturdy and capable of performing alone or with teams of engineers cut \
+	O'Conner himself, Terra-Therma Worker's Union grand master. Unlike the mechanical adept model this chassis is built to last, being far more sturdy and capable of performing alone or with teams of engineers cut \
 	off from the colony for extended periods. While not as capable in combat as a Soteria combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
 	with an engineering omni-tool built in your right arm."
 

@@ -273,8 +273,8 @@
 
 /obj/item/paper/laber_camp_notice
 	name = "Mining Rights and Conservation"
-	info = {"From Artificer Guild and Soteria Xenoarch Division:
-	<BR>\n\tArtificer Guild:
+	info = {"From Terra-Therma Worker's Union and Soteria Xenoarch Division:
+	<BR>\n\tTerra-Therma Worker's Union:
 	<BR>\n\t\tDue to LSS mining operations and Soteria Toxin testing the labor camp might have rock falls refilling the area from time to time.
 	<BR>\n\t\tWith this issue ever present, we are unable to add any power networking down into the camp.
 	<BR>\n

@@ -201,7 +201,7 @@
 	add_field(/datum/report_field/pencode_text, "Classification")
 	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the Research Director should fax the form to both the Corporate Liaison and the Commanding Officer, as well as keep a copy on file in their Office alongside other mission reports.")
 
-//NT reports, mostly for liason but can be used by any NT personnel.
+//NT reports, mostly for Liaison but can be used by any NT personnel.
 
 /datum/computer_file/report/recipient/nt
 	logo = "\[moebius\]"

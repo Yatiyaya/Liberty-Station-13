@@ -129,7 +129,7 @@ the lims and such to pull out the internal bits for other people if needed
 	build_path = /obj/item/organ_module/active/simple/surgical
 
 /datum/design/research/item/mechfab/modules/multitool/engineer
-	name = "Embedded Artificer's Multitool"
+	name = "Embedded Union's Multitool"
 	build_path = /obj/item/organ_module/active/simple/engineer
 
 /datum/design/research/item/mechfab/modules/multitool/miner

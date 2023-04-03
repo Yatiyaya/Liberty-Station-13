@@ -30,8 +30,8 @@
 	permeability_coefficient = 0.05
 	price_tag = 200
 
-/obj/item/clothing/gloves/insulated/guild
-	name = "Artificers insulated gloves"
+/obj/item/clothing/gloves/insulated/union
+	name = "union insulated gloves"
 	desc = "A pare of insulated gloves woven into a thicker fire restant pare."
 	icon_state = "guild_yellow"
 	item_state = "guild_yellow"

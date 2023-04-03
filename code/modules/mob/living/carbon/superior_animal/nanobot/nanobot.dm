@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/nanobot
 	name = "Nanobot"
-	desc = "A robot built from nanites to serve as a personal servant and guard. A product originally designed by the opifex before being mimiced by the Artificer Guild. They come in several variants \
+	desc = "A robot built from nanites to serve as a personal servant and guard. A product originally designed by the opifex before being mimiced by the Terra-Therma Worker's Union. They come in several variants \
 	and are known for being highly versatile."
 	icon = 'icons/mob/nanobot.dmi'
 	icon_state = "nanobot"

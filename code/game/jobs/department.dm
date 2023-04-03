@@ -58,18 +58,12 @@
 /datum/department/ironhammer
 	name = "Marshal and Blackshield Division"
 	id = DEPARTMENT_SECURITY
-	//Without nepotism a full team 34300 in 5 hours
-	//With nepotism a full team 42250 in 5 hours
-	account_initial_balance = 46000 //Estimated 4k extra credits than what is required for wages on a full roster.
 	jobs_in_department = list("/datum/job/smc","/datum/job/swo","/datum/job/supsec","/datum/job/serg","/datum/job/inspector","/datum/job/medspec","/datum/job/trooper","/datum/job/officer")
 
-/datum/department/technomancers
-	name = "Artificer's Guild"
+/datum/department/terra_therma
+	name = "Terra-Therma Union Funds"
 	id = DEPARTMENT_ENGINEERING
-	account_initial_balance = 17000 //17000 to cover some expenses but not that much
-	//Full team with nepotism in 5 hours is 15600
-	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/technomancer")
-
+	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/engineer", "/datum/job/mining")
 
 /datum/department/civilian
 	name = "Liberty Contractors"
@@ -82,19 +76,15 @@
 	Benefactors
 *******************/
 //Departments subsidised by an external organisation. These pay their own employees
-/datum/department/moebius_medical
-	name = "Soteria Institution: Medical Division"
+/datum/department/medical
+	name = "Chirurgeons And Pharmaceutical Sciences Association Funds"
 	id = DEPARTMENT_MEDICAL
-	//30225 in 5 hours with full crew + nepotism
-	account_initial_balance = 30250 //Covers crew-cost. Rest should be made up for by medical fees and chem sales.
-	jobs_in_department = list("datum/job/cmo","/datum/job/doctor","/datum/job/recovery_team","/datum/job/psychiatrist")
+	jobs_in_department = list("datum/job/cso","/datum/job/doctor","/datum/job/medic","/datum/job/psychiatrist")
 
-/datum/department/moebius_research
-	name = "Soteria Institution: Research Division"
+/datum/department/research
+	name = "Phokorus Science Institute Funds"
 	id = DEPARTMENT_SCIENCE
-	//24375 in 5 hours with full crew + nepotism
-	account_initial_balance = 24500 //Covers wages of employees. Sell posis and whatever else to make up for material cost.
-	jobs_in_department = list("/datum/job/rd","/datum/job/scientist","/datum/job/roboticist")
+	jobs_in_department = list("/datum/job/rp","/datum/job/scientist","/datum/job/roboticist")
 
 /datum/department/church
 	name = "Church of Absolute"
@@ -221,7 +211,7 @@
 	dept = DEPARTMENT_CIVILIAN
 
 /datum/perk/experienced/artificers
-	name = "Experienced: Artificer's Guild"
+	name = "Experienced: Terra-Therma Union"
 	dept = DEPARTMENT_ENGINEERING
 
 /datum/perk/experienced/shitcurity

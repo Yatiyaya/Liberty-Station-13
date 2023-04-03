@@ -146,7 +146,7 @@
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
 "aM" = (
-/obj/landmark/join/start/technomancer,
+/obj/landmark/join/start/engineer,
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
