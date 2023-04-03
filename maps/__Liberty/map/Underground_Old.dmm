@@ -49218,7 +49218,7 @@
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/medbay3)
-"cr0" = (
+"crO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -59920,7 +59920,7 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_server_room)
-"cR0" = (
+"cRO" = (
 /obj/machinery/cryopod{
 	dir = 4;
 	icon_state = "cryopod_0";
@@ -107354,7 +107354,7 @@ bmV
 bnl
 bnp
 cYb
-RP
+cRo
 cSn
 cIY
 cIY
@@ -135607,7 +135607,7 @@ cOk
 cPG
 cPG
 cPG
-RP
+cRO
 cLL
 cpN
 cvj
@@ -136401,7 +136401,7 @@ aad
 dcO
 cbL
 cqw
-RP
+crO
 cqw
 bIJ
 ceG
@@ -136603,7 +136603,7 @@ bIJ
 bIJ
 cqw
 cqw
-RP
+crO
 cqw
 bIJ
 ceH
@@ -138420,7 +138420,7 @@ cBV
 cvj
 dda
 cqu
-RP
+cro
 cvf
 cvP
 ddV
@@ -142513,7 +142513,7 @@ cQC
 cQT
 cQX
 cYb
-RP
+cRo
 cSn
 cXf
 cXf
