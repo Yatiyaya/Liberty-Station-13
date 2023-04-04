@@ -1,5 +1,5 @@
 //Jobs depatment lists for use in constant expressions
-#define JOBS_COMMAND "Premier","Steward","Deputy Chief","Union Chief","Chief Surgery Overseer","Research Provost","Casino Manager","Prime","Foreman"
+#define JOBS_COMMAND "Premier","Steward","Deputy Chief","Union Chief","Chief Surgery Overseer","Research Provost","Casino Manager","Prime","Field Shepherd"
 #define JOBS_SECURITY "Deputy Chief", "Armorer", "Criminal Investigator", "Sentry", "Watchmen"
 #define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician"
 #define JOBS_MEDICAL "Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
