@@ -271,3 +271,36 @@
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
+
+/obj/item/tool/engimultitool
+	name = "\"Little Helper\" Omnitool"
+	desc = "The Terra-Therma \"Little Helper\" is a mechanized, handheld all-in-one tool that automatically selects the right tool for the job. Convenient to use and highly customizable but less effecient than specialized tools and not suitable for advanced crafting applications."
+	icon_state = "engi_omni"
+	max_health = 300
+	w_class = ITEM_SIZE_NORMAL
+	worksound = WORKSOUND_DRIVER_TOOL
+	switched_on_qualities = list(QUALITY_SCREW_DRIVING = 30, QUALITY_BOLT_TURNING = 30, QUALITY_DRILLING = 30, QUALITY_PRYING = 30, QUALITY_WIRE_CUTTING = 30, QUALITY_HAMMERING = 30, QUALITY_SHOVELING = 30, QUALITY_SAWING = 30, QUALITY_CUTTING = 30)
+	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 3)
+	price_tag = 1400
+	use_power_cost = 2
+	suitable_cell = /obj/item/cell/medium
+	toggleable = TRUE
+	glow_color = COLOR_BLUE_LIGHT
+	max_upgrades = 5
+	workspeed = 0.8
+
+/obj/item/tool/engimultitool/turn_on(mob/user)
+	if (cell && cell.charge > 0)
+		item_state = "[initial(item_state)]_on"
+		to_chat(user, SPAN_NOTICE("You switch [src] on."))
+		playsound(loc, 'sound/effects/sparks4.ogg', 50, 1)
+		..()
+	else
+		item_state = initial(item_state)
+		to_chat(user, SPAN_WARNING("[src] has no power!"))
+
+/obj/item/tool/engimultitool/turn_off(mob/user)
+	item_state = initial(item_state)
+	playsound(loc, 'sound/effects/sparks1.ogg', 50, 1)
+	to_chat(user, SPAN_NOTICE("You switch [src] off."))
+	..()

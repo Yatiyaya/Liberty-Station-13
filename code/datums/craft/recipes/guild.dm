@@ -197,6 +197,26 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
+/datum/craft_recipe/guild/engimultitool
+	name = "\"Little Helper\" Omnitool"
+	result = /obj/item/tool/engimultitool
+	steps = list(
+		list (/obj/item/tool/multitool_improvised, 1),
+		list (QUALITY_SCREW_DRIVING, 20, 40),
+		list (QUALITY_WIRE_CUTTING, 20, 40),
+		list (CRAFT_MATERIAL, 1, MATERIAL_OSMIUM, 60),
+		list (QUALITY_WELDING, 30, 20),
+		list (CRAFT_Material, 5, MATERIAL_PLASTEEL, 20),
+		list (QUALITY_BOLT_TURNING, 30, 40),
+		list (QUALITY_HAMMERING, 30, 20),
+		list (/obj/item/stack/cable_coil, 30, 20),
+		list (QUALITY_WIRE_CUTTING, 20, 40),
+		list (/obj/item/stock_parts/capacitor/guild, 1, 40),
+		list (QUALITY_PULSING, 30, 20),
+		list (/obj/item/stock_parts/manipulator/guild, 1, 30),
+		list (QUALITY_SCREW_DRIVING, 30)
+	)
+
 //Weapons ------------------------
 /datum/craft_recipe/guild/railgunrifle
 	name = "reductor rail rifle"
