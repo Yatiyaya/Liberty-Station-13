@@ -1,6 +1,6 @@
 //Jobs depatment lists for use in constant expressions
-#define JOBS_SECURITY "Blackshield Commander","Warrant Officer","Supply Specialist","Ranger","Corpsman","Blackshield Trooper","Marshal Officer","Sergeant"
-#define JOBS_COMMAND "Premier","Steward","Blackshield Commander","Warrant Officer","Chief Executive Officer","Union Chief","Chief Surgery Overseer","Research Provost","Prime","Foreman"
+#define JOBS_COMMAND "Premier","Steward","Deputy Chief","Union Chief","Chief Surgery Overseer","Research Provost","Casino Manager","Prime","Foreman"
+#define JOBS_SECURITY "Deputy Chief", "Armorer", "Criminal Investigator", "Sentry", "Watchmen"
 #define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician"
 #define JOBS_MEDICAL "Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
 #define JOBS_SCIENCE "Research Provost","PIRS Scientist","PIRS Roboticist"
@@ -11,7 +11,7 @@
 #define JOBS_NONHUMAN "AI","Robot","pAI"
 #define JOBS_INDEPENDENT "Lodge Hunt Master","Lodge Hunter","Lodge Herbalist","Outsider"
 
-#define JOBS_ANTI_HIVEMIND "Blackshield Commander","Warrant Officer","Supply Specialist","Ranger","Corpsman","Blackshield Trooper","Marshal Officer","Sergeant","Prime","Vector","Foreman","Salvager","Prospector","Premier","Steward","AI","Janitor","Soteria Lifeline Technician","Soteria Roboticist","Lonestar Miner"
+#define JOBS_ANTI_HIVEMIND "Deputy Chief","Armorer","Criminal Investigator","Sentry","Watchmen","Prime","Vector","Foreman","Salvager","Prospector","Premier","Steward","AI","Janitor","Paramedic","PIRS Roboticist","Mining Technician"
 
 #define CREDITS "&cent;"
 #define CREDS "&cent;"
@@ -21,7 +21,7 @@
 #define DEPARTMENT_MEDICAL	"Chirurgeons And Pharmaceutical Sciences Association"
 #define DEPARTMENT_ENGINEERING	"Terra-Therma Worker's Union"
 #define DEPARTMENT_SCIENCE	"Phorous Institute of Research and Science"
-#define DEPARTMENT_SECURITY "Marshal & Blackshield"
+#define DEPARTMENT_SECURITY "Liberty Watch"
 #define DEPARTMENT_SERVICE "Skylight Syndicate"
 #define DEPARTMENT_CIVILIAN	"Contractors"
 #define DEPARTMENT_CHURCH	"Church of Absolute"

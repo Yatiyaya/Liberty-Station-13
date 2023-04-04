@@ -4150,7 +4150,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/prisoncells)
 "aiV" = (
-/obj/landmark/join/start/officer,
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 33
 	},
@@ -7929,7 +7928,6 @@
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
-/obj/landmark/join/start/inspector,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -9596,7 +9594,6 @@
 "asQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair,
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "asR" = (
@@ -35430,7 +35427,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos)
 "fVw" = (
-/obj/landmark/join/start/supsec,
 /obj/structure/bed/chair{
 	dir = 8
 	},
@@ -40211,7 +40207,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/swo,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/command/swo/quarters)
 "jnK" = (
@@ -52266,7 +52261,6 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "rgg" = (
-/obj/landmark/join/start/officer,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
@@ -52351,7 +52345,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "rjI" = (
@@ -56220,7 +56213,6 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/hallway/side/f2section1)
 "tyx" = (
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
 "tyM" = (

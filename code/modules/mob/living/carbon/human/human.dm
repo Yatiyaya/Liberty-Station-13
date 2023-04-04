@@ -293,17 +293,14 @@
 //Trust me I'm an engineer
 //I think we'll put this shit right here
 var/list/rank_prefix = list(\
-	"Warrant Officer" = "Warrant Officer",\
-	"Supply Specialist" = "Specialist",\
-	"Ranger" = "Ranger",\
-	"Marshal Officer" = "Officer",\
-	"Blackshield Commander" = "Commander",\
-	"Sergeant" = "Sergeant",\
-	"Corpsman" = "Corpsman",\
-	"Blackshield Trooper" = "Trooper",\
 	"Premier" = "Premier",\
 	"Steward" = "Steward",\
-	"Union Chief" = "Chief",\
+	"Deputy" = "Deputy Chief",\
+	"Armorer" = "Armorer",\
+	"Criminal Investigator" = "Investigator",\
+	"Sentry" = "Sentry",\
+	"Watchmen" = "Watchman",\
+	"Union Chief" = "Union Chief",\
 	"Chief Surgeon Overseer" = "Overseer",\
 	"Medical Doctor" = "Doctor",\
 	"Paramedic" = "Paramedic",\

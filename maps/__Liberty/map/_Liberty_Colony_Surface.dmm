@@ -1315,7 +1315,6 @@
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "ads" = (
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/tactical_blackshield)
@@ -1601,7 +1600,6 @@
 /area/liberty/security/triage_blackshield)
 "adV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "adW" = (
@@ -18490,7 +18488,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/tactical_blackshield)
 "nCg" = (
@@ -23134,7 +23131,6 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "rTe" = (
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "rTq" = (
@@ -27567,7 +27563,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/smc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "wma" = (

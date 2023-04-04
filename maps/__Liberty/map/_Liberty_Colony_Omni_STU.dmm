@@ -6199,7 +6199,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "bkA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "bkH" = (
@@ -10076,7 +10075,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/smc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "bZB" = (
@@ -20388,7 +20386,6 @@
 /area/liberty/engineering/atmos/storage)
 "dZU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/officer,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light{
 	dir = 8
@@ -20857,7 +20854,6 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/dcave)
 "eec" = (
-/obj/landmark/join/start/inspector,
 /turf/simulated/floor/tiled/white,
 /area/liberty/security/detectives_office)
 "eee" = (
@@ -21548,7 +21544,6 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/hallway/side/f2section1)
 "emg" = (
-/obj/landmark/join/start/swo,
 /obj/structure/bed/chair/office/dark,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/command/swo/quarters)
@@ -35140,7 +35135,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "gMH" = (
@@ -36622,7 +36616,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -45340,7 +45333,6 @@
 "iOv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/officer,
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/machinery/light_switch{
 	dir = 4;
@@ -48470,7 +48462,6 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)
 "jtr" = (
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "jtA" = (
@@ -49475,7 +49466,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/tactical_blackshield)
 "jCX" = (
@@ -67462,7 +67452,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
-/obj/landmark/join/start/trooper,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
 "mYA" = (
@@ -72232,7 +72221,6 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "nWN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/officer,
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
@@ -90358,7 +90346,6 @@
 	})
 "rxV" = (
 /obj/structure/bed/chair/comfy/brown,
-/obj/landmark/join/start/inspector,
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
@@ -95876,7 +95863,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 8
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -100114,7 +100100,6 @@
 "tvG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/supsec,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)
 "tvQ" = (
@@ -110148,7 +110133,6 @@
 /area/eris/crew_quarters/plasma_tag)
 "vrE" = (
 /obj/structure/bed/chair/comfy/brown,
-/obj/landmark/join/start/inspector,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
 	},
@@ -117965,7 +117949,6 @@
 /area/liberty/command/teleporter)
 "wPn" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
 "wPo" = (

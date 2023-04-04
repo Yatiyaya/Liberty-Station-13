@@ -56,14 +56,14 @@
 **************/
 //These departments are paid out of ship funding
 /datum/department/ironhammer
-	name = "Marshal and Blackshield Division"
+	name = "Liberty Watch Funds"
 	id = DEPARTMENT_SECURITY
-	jobs_in_department = list("/datum/job/smc","/datum/job/swo","/datum/job/supsec","/datum/job/serg","/datum/job/inspector","/datum/job/medspec","/datum/job/trooper","/datum/job/officer")
+	jobs_in_department = list(JOBS_SECURITY)
 
 /datum/department/terra_therma
 	name = "Terra-Therma Union Funds"
 	id = DEPARTMENT_ENGINEERING
-	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/engineer", "/datum/job/mining")
+	jobs_in_department = list(JOBS_ENGINEERING)
 
 /datum/department/service
 	name = "Liberty Contractors"
@@ -78,19 +78,19 @@
 /datum/department/medical
 	name = "Chirurgeons And Pharmaceutical Sciences Association Funds"
 	id = DEPARTMENT_MEDICAL
-	jobs_in_department = list("datum/job/cso","/datum/job/doctor","/datum/job/medic","/datum/job/psychiatrist")
+	jobs_in_department = list(JOBS_MEDICAL)
 
 /datum/department/research
 	name = "Phokorus Science Institute Funds"
 	id = DEPARTMENT_SCIENCE
-	jobs_in_department = list("/datum/job/rp","/datum/job/scientist","/datum/job/roboticist")
+	jobs_in_department = list(JOBS_SCIENCE)
 
 /datum/department/church
 	name = "Church of Absolute"
 	id = DEPARTMENT_CHURCH
 	account_initial_balance = 17000 //17000 to cover some expenses but not that much
 	//Full team with nepotism in 5 hours is 15600
-	jobs_in_department = list ("/datum/job/chaplain","/datum/job/acolyte")
+	jobs_in_department = list (JOBS_CHURCH)
 
 /******************
 	Independant

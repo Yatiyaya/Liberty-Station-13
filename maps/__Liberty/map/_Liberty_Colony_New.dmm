@@ -8827,7 +8827,6 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/janitor)
 "chz" = (
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "chC" = (
@@ -11380,7 +11379,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
 "cMK" = (
-/obj/landmark/join/start/officer,
 /obj/item/stool,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
@@ -15230,7 +15228,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "dFv" = (
-/obj/landmark/join/start/medspec,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
@@ -18721,7 +18718,6 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/crew_quarters/dorm2)
 "esF" = (
-/obj/landmark/join/start/inspector,
 /turf/simulated/floor/tiled/white,
 /area/liberty/security/detectives_office)
 "esG" = (
@@ -36327,7 +36323,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -53669,7 +53664,6 @@
 	density = 0;
 	pixel_y = 20
 	},
-/obj/landmark/join/start/supsec,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "myj" = (
@@ -55313,7 +55307,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 8
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -60959,7 +60952,6 @@
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/organ_lab)
 "obE" = (
-/obj/landmark/join/start/supsec,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -71748,7 +71740,6 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "qwW" = (
-/obj/landmark/join/start/officer,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -85782,7 +85773,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
 "tHt" = (
-/obj/landmark/join/start/swo,
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
@@ -88303,7 +88293,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
 "ugN" = (
@@ -89977,7 +89966,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "uCo" = (
@@ -96253,7 +96241,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/smc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "vUS" = (
@@ -102421,7 +102408,6 @@
 /area/liberty/hallway/side/f2section1)
 "xuc" = (
 /obj/structure/bed/chair/comfy/brown,
-/obj/landmark/join/start/inspector,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/detectives_office)

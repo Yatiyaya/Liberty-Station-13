@@ -4,12 +4,12 @@
 	implant_type = /obj/item/implant/core_implant/cruciform
 	restricted_jobs = list(
 		/datum/job/clubmanager,
-		/datum/job/swo,
+		/datum/job/dc,
 		/datum/job/foreman,
 		/datum/job/rp,
 		/datum/job/cso,
 		/datum/job/chief_engineer,
-		/datum/job/smc,
+		/datum/job/dc,
 		/datum/job/outsider,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
@@ -44,8 +44,8 @@
 		/datum/job/chief_engineer,
 		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/smc,
-		/datum/job/swo,
+		/datum/job/dc,
+		/datum/job/dc,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
 	) // The way to restrict this to one job could be done cleaner but this way easier so fuck it. -Kaz
@@ -76,8 +76,8 @@
 		/datum/job/cso,
 		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/smc,
-		/datum/job/swo,
+		/datum/job/dc,
+		/datum/job/dc,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
 		)
