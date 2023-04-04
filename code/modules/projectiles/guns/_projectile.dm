@@ -135,9 +135,7 @@
 	if (!chambered) return
 
 	if(chambered.BB && give_reagents && spray)
-		if(!chambered.BB.coated)
-			BB.reagents.add_reagent(spray, 5)
-			chambered.BB.coated = TRUE
+		chambered.give_chems(spray)
 
 	if(chambered.is_caseless)
 		QDEL_NULL(chambered)

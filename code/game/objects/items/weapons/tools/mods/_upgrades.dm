@@ -471,12 +471,6 @@
 		if(G.dna_lock_sample == "not_set")
 			G.dna_lock_sample = usr.real_name
 
-	if(weapon_upgrades[GUN_UPGRADE_CHEM])
-		G.give_reagents = TRUE
-
-	if(weapon_upgrades[GUN_UPGRADE_CHEMICAL])
-		G.spray = GUN_UPGRADE_CHEMICAL
-
 	if(!weapon_upgrades[GUN_UPGRADE_DNALOCK])
 		G.dna_user_sample = "not_set"
 
@@ -516,6 +510,12 @@
 		var/obj/item/gun/projectile/P = G
 		if(weapon_upgrades[GUN_UPGRADE_MAGUP])
 			P.max_shells += weapon_upgrades[GUN_UPGRADE_MAGUP]
+
+		if(weapon_upgrades[GUN_UPGRADE_CHEM])
+			P.give_reagents = TRUE
+
+		if(weapon_upgrades[GUN_UPGRADE_CHEMICAL])
+			P.spray = GUN_UPGRADE_CHEMICAL
 
 	for(var/datum/firemode/F in G.firemodes)
 		apply_values_firemode(F)
