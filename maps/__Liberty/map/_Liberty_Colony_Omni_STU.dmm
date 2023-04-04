@@ -18463,7 +18463,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "dGf" = (
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
@@ -35756,7 +35756,7 @@
 	name = "\improper Blackshield - Firing Range"
 	})
 "gTM" = (
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
@@ -101898,7 +101898,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
-/obj/landmark/join/start/foreman,
+/obj/landmark/join/start/shepherd,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/pros/foreman)
 "tNN" = (
@@ -112277,7 +112277,7 @@
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/maintenance/undergroundfloor1east)
 "vMu" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)

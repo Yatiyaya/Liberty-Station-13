@@ -15492,7 +15492,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
 "dIv" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "dIB" = (
@@ -35944,7 +35944,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "ipK" = (
@@ -40119,7 +40119,7 @@
 /area/liberty/storage/primary)
 "jnY" = (
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/pros/prep)
 "joe" = (
@@ -63010,7 +63010,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "ozJ" = (
@@ -66189,7 +66189,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "pjU" = (
 /obj/structure/bed/chair,
-/obj/landmark/join/start/foreman,
+/obj/landmark/join/start/shepherd,
 /turf/simulated/floor/carpet,
 /area/liberty/pros/foreman)
 "pkg" = (
@@ -82360,7 +82360,7 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "sTa" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)

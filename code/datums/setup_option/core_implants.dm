@@ -5,7 +5,7 @@
 	restricted_jobs = list(
 		/datum/job/clubmanager,
 		/datum/job/dc,
-		/datum/job/foreman,
+		/datum/job/shepherd,
 		/datum/job/rp,
 		/datum/job/cso,
 		/datum/job/chief_engineer,

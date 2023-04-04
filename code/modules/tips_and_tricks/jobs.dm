@@ -48,27 +48,27 @@
     tipText = "For those who want to avoid the dark, lonely, scary mines, you can go to the surface and find a nearby cave by the lakeside to mine out. Sadly, this will not get much ore but could be an interesting prospecting choice..."
 
 /tipsAndTricks/jobs/survive
-    jobs_list = list(/datum/job/foreman, /datum/job/mining, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/mining, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Don't die."
 
 /tipsAndTricks/jobs/scrap_stuff
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some steel, glass and/or plastic."
 
 /tipsAndTricks/jobs/scrap_ammo_uses
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Scrap ammo, while dealing less damage, has great uses for its availability, like shooting down lockers whenever a hacking tool is not available."
 
 /tipsAndTricks/jobs/pointy_thing
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Daggers and knives when stabbed in the back of monsters and man alike will deal more damage than normal."
 
 /tipsAndTricks/jobs/sell_things_you_hoarding_goblins
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Soteria will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
 
 /tipsAndTricks/jobs/your_perks_are_op
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "You have a perk that lets you tell at a glance what an anomaly on an oddity does, you can market this for a profit!"
 
 /tipsAndTricks/jobs/captain_leader
@@ -329,23 +329,3 @@
 /tipsAndTricks/jobs/cleaning_carbine
     jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
     tipText = "The cleansing carbine as the name suggests fires cleaning pellets that when hit something will make a small bit of slippery foam that cleans. This can be used both defensively as lasting slip to get away from bigger foes and to normally clean the station if theirs no janitor around."
-
-/tipsAndTricks/jobs/hunter_meds
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Tatonkas located in the barn can be bred using wheat and then butchered for bones, leather, and animal parts you can turn into medicine in the crafting menu."
-
-/tipsAndTricks/jobs/hunter_knife
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Your tools are sacred, don't let anyone take or have your skinning knives. But you can still barter your halberds, crossbow, and armor."
-
-/tipsAndTricks/jobs/hunter_stimulants
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "When cluckers are butchered they drop a feather that can be turned into a painkiller in the crafting menu. This can be useful when combined with milk taken from tatonkas to boost your defenses."
-
-/tipsAndTricks/jobs/hunter_mutants
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Tatonkas and cerberuses have a small chance of mutating everytime one grows up. These mutant variants are much more valuable and much more sought after, but quite rare."
-
-/tipsAndTricks/jobs/hunter_allies
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "The cerberus hounds are far sighted and loyal animals who won't ever attack you, they make great hunting allies by acting as distractions against larger enemies and emitting growls when they spot enemies you haven't."

@@ -40,16 +40,8 @@
 /datum/department/command
 	name = "Liberty Council"
 	id = DEPARTMENT_COMMAND
-	/*
-	The command account is the ship account. It is the master account that retainer departments are paid from,
-	and represents the Captain's wealth, assets and holdings
-
-	For now, it is set to an effectively infinitely high amount which shouldn't run out in normal gameplay
-	In future, we will implement largescale missions and research contracts to earn money, and then set it
-	to a much lower starting value
-	*/
-	account_initial_balance = 57800 //50k for emergencies, 7800 for the wages if both have nepotism to last 5 hour shift if it comes to it, shouldn't ever need any more.
-	jobs_in_department = list("/datum/job/premier","/datum/job/pg")
+	account_initial_balance = 2000000
+	jobs_in_department = list(JOBS_COMMAND)
 
 /*************
 	Retainers
@@ -102,16 +94,14 @@
 	jobs_in_department = list(JOBS_SERVICE)
 
 /datum/department/prospector
-	name = "Prospectors"
+	name = "Fontaine Heavy Industries Funds"
 	id = DEPARTMENT_PROSPECTOR
-	//With only the Foreman currently being paid, after 8 hours, it totals to 4800 of payment, leaving an ample 1700 left.
-	account_initial_balance = 6500 //With how Prospectors no longer get paid, they no longer need such an inflated department balance
-	jobs_in_department = list("/datum/job/foreman","/datum/job/salvager","/datum/job/pro")
+	jobs_in_department = list(JOBS_PROSPECTOR)
 
 /datum/department/independent
 	name = "Independent Allied Factions"
 	id = DEPARTMENT_INDEPENDENT
-	jobs_in_department = list("/datum/job/off_colony_hunt_master","/datum/job/off_colony_hunter","/datum/job/off_colony_herbalist","/datum/job/outsider","/datum/job/assistant")
+	jobs_in_department = list("/datum/job/assistant")
 
 /datum/department/greyson_positronic
 	name = "Greyson Positronic"

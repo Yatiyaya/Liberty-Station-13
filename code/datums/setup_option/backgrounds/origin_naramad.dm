@@ -47,7 +47,7 @@
 	restricted_to_species = list(FORM_NARAMAD)
 
 	restricted_depts = SCIENCE | MEDICAL | ENGINEERING | COMMAND
-	restricted_jobs = list(/datum/job/salvager, /datum/job/armorer, /datum/job/investigator, /datum/job/watchmen)
+	restricted_jobs = list(/datum/job/trapper, /datum/job/armorer, /datum/job/investigator, /datum/job/watchmen)
 
 	stat_modifiers = list(
 		STAT_ROB = 10,
