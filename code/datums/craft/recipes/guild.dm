@@ -206,7 +206,7 @@
 		list (QUALITY_WIRE_CUTTING, 20, 40),
 		list (CRAFT_MATERIAL, 1, MATERIAL_OSMIUM, 60),
 		list (QUALITY_WELDING, 30, 20),
-		list (CRAFT_Material, 5, MATERIAL_PLASTEEL, 20),
+		list (CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 20),
 		list (QUALITY_BOLT_TURNING, 30, 40),
 		list (QUALITY_HAMMERING, 30, 20),
 		list (/obj/item/stack/cable_coil, 30, 20),
