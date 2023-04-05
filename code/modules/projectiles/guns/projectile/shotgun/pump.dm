@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump
 	name = "\"Trench\" shotgun"
-	desc = "A common open-source pump-action shotgun, a bastard child of the three primary pump shotguns on the market, all rolled together once their patents expired. Can hold up to 4+1 20mm shells in its tube magazine."
+	desc = "A common open-source pump-action shotgun, a tried and tested design lost to history itself. Can hold up to 4+1 20mm shells in its tube magazine."
 	icon = 'icons/obj/guns/projectile/trench.dmi'
 	icon_state = "trench"
 	item_state = "trench"
@@ -27,7 +27,7 @@
 
 	wield_delay = 0.6 SECOND
 	wield_delay_factor = 0.3 // 30 vig
-	gun_parts = list(/obj/item/part/gun/frame/trench = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
+	gun_parts = list(/obj/item/part/gun/frame/trench = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
 /obj/item/part/gun/frame/trench
 	name = "Trench frame"
@@ -35,7 +35,7 @@
 	icon_state = "frame_shotgun"
 	result = /obj/item/gun/projectile/shotgun/pump
 	resultvars = list(/obj/item/gun/projectile/shotgun/pump)
-	gripvars = list(/obj/item/part/gun/grip/black)
+	gripvars = list(/obj/item/part/gun/grip/wood)
 	mechanismvar = /obj/item/part/gun/mechanism/shotgun
 	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 

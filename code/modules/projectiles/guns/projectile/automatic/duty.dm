@@ -8,7 +8,7 @@
 	item_suffix = ""
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|SPEEDLOADER|MAGAZINE

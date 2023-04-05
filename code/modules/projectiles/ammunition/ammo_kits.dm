@@ -86,7 +86,7 @@
 			"12 points, 5 ammo: 20mm incendiary pile" = list(12, /obj/item/ammo_casing/shotgun/incendiary/prespawned),
 			"28 points, 30 ammo: 20mm incendiary box" = list(28, /obj/item/ammo_magazine/ammobox/shotgun/incendiary)
 			),
-		CAL_LRIFLE = list(
+		CAL_SRIFLE = list(
 			"3 points, 10 ammo: Scrap carbine ammo pile" = list(3, /obj/item/ammo_casing/light_rifle_257/scrap/prespawned),
 			"10 points, 30 ammo: Scrap carbine ammo packet" = list(10, /obj/item/ammo_magazine/ammobox/light_rifle_257/scrap),
 			"8 points, 10 ammo: Carbine ammo pile" = list(8, /obj/item/ammo_casing/light_rifle_257/prespawned),

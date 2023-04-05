@@ -7,7 +7,7 @@
 	item_state = "umbani"
 	w_class = ITEM_SIZE_NORMAL
 	can_dual = TRUE
-	caliber = CAL_PISTOL
+	caliber = CAL_MAGNUM
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	load_method = MAGAZINE
@@ -24,7 +24,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	serial_type = "INDEX"
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	gun_parts = list(/obj/item/part/gun/frame/umbani = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/pistol/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/umbani = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.3 // Heavy smg , 30 vig to insta wield

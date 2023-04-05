@@ -319,7 +319,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = "lrifle"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 5)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 30
@@ -371,7 +371,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = "lrifle"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 5)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 20
@@ -416,7 +416,7 @@
 	mag_well = MAG_WELL_RIFLE
 	w_class = ITEM_SIZE_NORMAL
 	caliber = "lrifle"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 12)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 50
@@ -627,7 +627,7 @@
 	name = "linked ammunition box (6.5mm Carbine)"
 	desc = "A 100 round linked box marked for 6.5mm Carbine."
 	icon_state = "pkl_box"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	matter = list(MATERIAL_STEEL = 2)
 	multiple_sprites = 1
@@ -822,7 +822,7 @@
 	desc = "A 10 round ammo strip for 6.5mm Carbine."
 	icon_state = "stripper_base"
 	icon = 'icons/obj/ammo_speed.dmi'
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 1)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 10

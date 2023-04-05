@@ -9,7 +9,7 @@
 	drawChargeMeter = FALSE
 	w_class = ITEM_SIZE_SMALL
 	max_shells = 5
-	caliber = CAL_LRIFLE				//WRIST DESTROYER!!!
+	caliber = CAL_SRIFLE				//WRIST DESTROYER!!!
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_STEEL = 8, MATERIAL_WOOD = 6)

@@ -139,7 +139,7 @@
 	icon_state = "buzzsaw"
 	item_state = "buzzsaw"
 	mag_well = MAG_WELL_LINKED_BOX|MAG_WELL_RIFLE
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	init_recoil = LMG_RECOIL(0.8)

@@ -2,8 +2,9 @@
 #define CAL_PISTOL "9mm"
 #define CAL_MAGNUM "10mm magnum"
 
-#define CAL_LRIFLE "6.5mm carbine"
+#define CAL_SRIFLE "6.5mm carbine"
 #define CAL_RIFLE "7.62mm rifle"
+#define CAL_CLRIFLE
 
 #define CAL_SHOTGUN "Shotgun Shell"
 

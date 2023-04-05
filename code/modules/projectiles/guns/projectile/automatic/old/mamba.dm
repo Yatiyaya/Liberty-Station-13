@@ -10,7 +10,7 @@
 	fire_sound = 'sound/weapons/guns/fire/carbine.ogg'
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BACK
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10)

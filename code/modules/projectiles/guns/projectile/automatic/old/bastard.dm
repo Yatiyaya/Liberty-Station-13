@@ -10,7 +10,7 @@
 	force = WEAPON_FORCE_NORMAL
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_LINKED_BOX
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	tac_reloads = FALSE
 	penetration_multiplier = 0.8
 	damage_multiplier = 0.9

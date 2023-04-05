@@ -12,7 +12,7 @@
 	damage_multiplier = 1.25
 	force = WEAPON_FORCE_PAINFUL
 	sharp = FALSE
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 10, MATERIAL_GLASS = 10)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
 	saw_off = TRUE
@@ -26,7 +26,7 @@
 	icon = 'icons/obj/guns/projectile/sawnoff/boltgun_wood.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	load_method = SINGLE_CASING
 	init_recoil = HMG_RECOIL(0.6)
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_WOOD = 5)

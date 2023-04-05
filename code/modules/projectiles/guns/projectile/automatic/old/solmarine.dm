@@ -9,7 +9,7 @@
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 6)
 	w_class = ITEM_SIZE_BULKY
 	mag_well = MAG_WELL_RIFLE
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	fire_sound = 'sound/weapons/guns/fire/carbine.ogg'
 	price_tag = 1100
 	damage_multiplier = 1.0

@@ -204,7 +204,7 @@
 	w_class = ITEM_SIZE_BULKY
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_BOX
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 200
 
@@ -241,7 +241,7 @@
 	name = "ammunition packet (6.5mm Carbine FMJ)"
 	icon_state = "lrifle"
 	matter = list(MATERIAL_CARDBOARD = 1)
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 60
 

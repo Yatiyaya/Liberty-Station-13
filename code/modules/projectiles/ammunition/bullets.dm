@@ -156,7 +156,7 @@
 	icon_state = "srifle_c_l"
 	spent_icon = "srifle_c_l-spent"
 	shell_color = "l"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	projectile_type = /obj/item/projectile/bullet/light_rifle_257
 	maxamount = 10
 

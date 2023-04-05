@@ -93,7 +93,7 @@
 	icon = 'icons/obj/guns/projectile/ak5.dmi'
 	icon_state = "AK"
 	item_state = "AK"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
 	price_tag = 700
 	init_recoil = RIFLE_RECOIL(0.9)
