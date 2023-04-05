@@ -52,7 +52,7 @@ SUBSYSTEM_DEF(ticker)
 	var/list/round_start_events
 
 /datum/controller/subsystem/ticker/Initialize(start_timeofday)
-	if(prob(100))
+	if(prob(50))
 		make_all_night()
 	if(!syndicate_code_phrase)
 		syndicate_code_phrase = generate_code_phrase()
