@@ -68,7 +68,7 @@
 	name = "outdoors invisible light"
 
 /obj/structure/invislight/outside/New()
-	if(!GLOB.day_or_night["is_night"])
+	if(SSlighting.isnight)
 		qdel(src)
 	. = ..()
 
@@ -87,7 +87,7 @@
 	name = "outdoors small invisible light"
 
 /obj/structure/invislightsmall/outside/New()
-	if(!GLOB.day_or_night["is_night"])
+	if(SSlighting.isnight)
 		qdel(src)
 	. = ..()
 

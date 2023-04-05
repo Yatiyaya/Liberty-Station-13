@@ -29,8 +29,13 @@ SUBSYSTEM_DEF(lighting)
 	var/cost_lights = 0
 	var/cost_corners = 0
 	var/cost_overlays = 0
+	var/isnight = FALSE
 
 /datum/controller/subsystem/lighting/Initialize(timeofday)
+
+	if(prob(50))
+		isnight = TRUE
+		set_all_areas_to_dark()
 	if(!lighting_overlays_initialised)
 		// TODO - TG initializes starlight here.
 		create_all_lighting_overlays()
