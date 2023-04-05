@@ -38,3 +38,17 @@
 	gripvars = list(/obj/item/part/gun/grip/wood)
 	mechanismvar = /obj/item/part/gun/mechanism/smg
 	barrelvars = list(/obj/item/part/gun/barrel/pistol)
+
+/obj/item/gun/projectile/automatic/specialist/update_icon()
+	..()
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "_mag"
+
+	if (silenced)
+		iconstring += "_s"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
