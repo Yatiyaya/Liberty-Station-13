@@ -32,8 +32,7 @@ SUBSYSTEM_DEF(lighting)
 	var/isnight = FALSE
 
 /datum/controller/subsystem/lighting/Initialize(timeofday)
-
-	if(prob(50))
+	if(!((6 HOURS <= station_time_in_ticks) && (station_time_in_ticks < 18 HOURS)))
 		isnight = TRUE
 		set_all_areas_to_dark()
 	if(!lighting_overlays_initialised)
