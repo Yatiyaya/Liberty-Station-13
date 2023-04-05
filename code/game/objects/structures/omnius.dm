@@ -64,6 +64,14 @@
 	invisibility = 101
 	anchored = TRUE
 
+/obj/structure/invislight/outside
+	name = "outdoors invisible light"
+
+/obj/structure/invislight/outside/New()
+	if(!GLOB.day_or_night["is_night"])
+		qdel(src)
+	. = ..()
+
 /obj/structure/invislight/New()
 	set_light(7, 5, "#999999")
 	. = ..()
@@ -74,6 +82,14 @@
 	layer = HIDING_MOB_PLANE
 	invisibility = 101
 	anchored = TRUE
+
+/obj/structure/invislightsmall/outside
+	name = "outdoors small invisible light"
+
+/obj/structure/invislightsmall/outside/New()
+	if(!GLOB.day_or_night["is_night"])
+		qdel(src)
+	. = ..()
 
 /obj/structure/invislightsmall/New()
 	set_light(1, 1, "#999999")
