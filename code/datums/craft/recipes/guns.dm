@@ -135,19 +135,6 @@
 		list(QUALITY_SCREW_DRIVING, 10)
 	)
 
-/datum/craft_recipe/gun/axedoublebarrel
-	name = "axe double barrel shotgun"
-	result = /obj/item/gun/projectile/shotgun/doublebarrel/axe
-	steps = list(
-		list(/obj/item/gun/projectile/shotgun/doublebarrel, 1, time = 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(QUALITY_WELDING, 10, 20),
-		list(QUALITY_SCREW_DRIVING, 10),
-		list(QUALITY_BOLT_TURNING, 20, 30)
-	)
-
 /datum/craft_recipe/gun/maresleg
 	name = "\"Mares Leg\" lever shotgun"
 	result = /obj/item/gun/projectile/boltgun/lever/shotgun
