@@ -1315,7 +1315,6 @@
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "ads" = (
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/tactical_blackshield)
@@ -1601,7 +1600,6 @@
 /area/liberty/security/triage_blackshield)
 "adV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "adW" = (
@@ -9077,7 +9075,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/hallway/surface/section1)
 "edL" = (
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
@@ -9803,7 +9801,7 @@
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/meadow)
 "eSk" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
@@ -14732,7 +14730,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "jyb" = (
-/obj/landmark/join/start/foreman,
+/obj/landmark/join/start/shepherd,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/pros/foreman)
 "jyt" = (
@@ -18490,7 +18488,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/tactical_blackshield)
 "nCg" = (
@@ -23134,7 +23131,6 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "rTe" = (
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/triage_blackshield)
 "rTq" = (
@@ -25937,7 +25933,7 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/dcave)
 "uKG" = (
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
@@ -27567,7 +27563,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/smc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "wma" = (

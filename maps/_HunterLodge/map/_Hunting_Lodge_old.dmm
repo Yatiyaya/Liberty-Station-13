@@ -1582,7 +1582,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "eN" = (
 /obj/item/stool/padded,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/outside/forest/hunting_lodge_shed_dark)
 "eO" = (
@@ -1816,7 +1815,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "fB" = (
 /obj/structure/bed/chair/office/dark,
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "fC" = (
@@ -1964,7 +1962,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gc" = (
 /obj/structure/bed/chair/wood,
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gd" = (
@@ -2129,7 +2126,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gB" = (
-/obj/landmark/join/start/lodge_hunter,
 /obj/structure/bed/chair/wood,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -3150,7 +3146,6 @@
 /area/liberty/outside/forest/hunting_lodge_shed_dark)
 "jz" = (
 /obj/structure/bed/chair/custom/wood/wings,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "jA" = (

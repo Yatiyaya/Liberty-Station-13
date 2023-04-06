@@ -4,13 +4,13 @@
 	desc = "The implant given to every disciple of the Absolute. This one is a standard Vinculum design, having the base-line of a normal cruciform."
 	implant_type = /obj/item/implant/core_implant/cruciform
 	restricted_jobs = list(
-		/datum/job/merchant,
-		/datum/job/swo,
-		/datum/job/foreman,
+		/datum/job/clubmanager,
+		/datum/job/dc,
+		/datum/job/shepherd,
 		/datum/job/rp,
 		/datum/job/cso,
 		/datum/job/chief_engineer,
-		/datum/job/smc,
+		/datum/job/dc,
 		/datum/job/outsider,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
@@ -43,15 +43,15 @@
 		/datum/job/pg,
 		/datum/job/chaplain,
 		/datum/job/chief_engineer,
-		/datum/job/merchant,
+		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/smc,
-		/datum/job/swo,
+		/datum/job/dc,
+		/datum/job/dc,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
 	) // The way to restrict this to one job could be done cleaner but this way easier so fuck it. -Kaz
 	allow_modifications = FALSE
-	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | LSS
+	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_MYCUS, FORM_FOLKEN, FORM_CHTMANT)
 
 /datum/category_item/setup_option/core_implant/nanogate
@@ -75,16 +75,16 @@
 		/datum/job/pg,
 		/datum/job/chaplain,
 		/datum/job/cso,
-		/datum/job/merchant,
+		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/smc,
-		/datum/job/swo,
+		/datum/job/dc,
+		/datum/job/dc,
 		/datum/job/cyborg, //To stop people auto dropping these
 		/datum/job/ai
 		)
 	allow_modifications = TRUE
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
-	restricted_depts = SECURITY | PROSPECTORS | MEDICAL | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | LSS
+	restricted_depts = SECURITY | PROSPECTORS | MEDICAL | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
 
 /datum/category_item/setup_option/core_implant/opifex_nanogate
 	name = "Opifex Nanogate"

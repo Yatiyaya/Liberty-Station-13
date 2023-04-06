@@ -1,6 +1,6 @@
-/datum/job/foreman
-	title = "Foreman"
-	flag = FOREMAN
+/datum/job/shepherd
+	title = "Field Shepherd"
+	flag = SHEPHERD
 	head_position = 1
 	department = DEPARTMENT_PROSPECTOR
 	department_flag = PROSPECTORS | COMMAND
@@ -18,7 +18,7 @@
 	disallow_species = list(FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
-	outfit_type = /decl/hierarchy/outfit/job/foreman
+	outfit_type = /decl/hierarchy/outfit/job/shepherd
 	playtimerequired = 1200
 	access = list(
 		access_prospector, access_foreman, access_external_airlocks, access_eva, access_heads, access_sec_doors,
@@ -50,30 +50,28 @@
 		Keep everyone alive and ensure nobody is left behind.<br>\
 		Fill in any missing role on your team be it as muscle, medical, or technical support."
 
-/obj/landmark/join/start/foreman
-	name = "Foreman"
+/obj/landmark/join/start/shepherd
+	name = "Field Shepherd"
 	icon_state = "player-blue-officer"
-	join_tag = /datum/job/foreman
+	join_tag = /datum/job/shepherd
 
-/datum/job/salvager
-	title = "Salvager"
-	flag = SALVAGER
+/datum/job/trapper
+	title = "Trapper"
+	flag = TRAPPER
 	department = DEPARTMENT_PROSPECTOR
 	department_flag = PROSPECTORS
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the Foreman"
+	supervisors = "the Field Shepherd"
 	difficulty = "Medium."
-	noob_name = "Rookie Salvager"
-	alt_titles = list("Sawbones", "Rookie Salvager")
-	alt_perks = list("Sawbones"=list(PERK_MEDICAL_EXPERT, PERK_STALKER), "Junk Technician"=list(PERK_JUNKBORN, PERK_ROBOTICS_EXPERT))
+	noob_name = "Rookie Trapper"
 	selection_color = "#a7bbc6"
 	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round-start.
 	wage = WAGE_NONE
 
 	disallow_species = list(FORM_LIBYNTH, FORM_NASHEF)
-	outfit_type = /decl/hierarchy/outfit/job/salv
+	outfit_type = /decl/hierarchy/outfit/job/trapper
 
 	health_modifier = 5
 
@@ -100,14 +98,14 @@
 	Perform medical services on injured colleagues, from patching wounds to full field surgery.<br>\
 	Leave security duties to the hired muscle unless faced with no other option."
 
-/obj/landmark/join/start/salvager
-	name = "Salvager"
+/obj/landmark/join/start/trapper
+	name = "Trapper"
 	icon_state = "player-blue"
-	join_tag = /datum/job/salvager
+	join_tag = /datum/job/trapper
 
-/datum/job/pro
-	title = "Prospector"
-	flag = PROSPECTOR
+/datum/job/shipbreaker
+	title = "Shipbreaker"
+	flag = SHIPBREAKER
 	department = DEPARTMENT_PROSPECTOR
 	department_flag = PROSPECTORS
 	faction = MAP_FACTION
@@ -115,14 +113,13 @@
 	spawn_positions = 2
 	supervisors = "the Foreman"
 	difficulty = "Medium."
-	noob_name = "Rookie Prospector"
-	alt_titles = list("Rookie Prospector", "Hired Muscle")
+	noob_name = "Rookie Shipbreaker"
 	selection_color = "#a7bbc6"
 	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round start.
 	wage = WAGE_NONE
 
 	disallow_species = list(FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
-	outfit_type = /decl/hierarchy/outfit/job/pro
+	outfit_type = /decl/hierarchy/outfit/job/shipbreaker
 	health_modifier = 10
 
 	access = list(
@@ -146,8 +143,7 @@
 	Use whatever measures necessary to ensure survival, but try not to soil the standing of your team.<br>\
 	Help with the more general salvaging and heavy lifting."
 
-/obj/landmark/join/start/pro
-	name = "Prospector"
+/obj/landmark/join/start/shipbreaker
+	name = "Shipbreaker"
 	icon_state = "player-blue"
-	join_tag = /datum/job/pro
-
+	join_tag = /datum/job/shipbreaker
