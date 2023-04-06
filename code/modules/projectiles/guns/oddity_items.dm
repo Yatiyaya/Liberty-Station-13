@@ -32,7 +32,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	item_state = "overlord"
 	serial_type = "Mastercraft"
 
-/obj/item/gun/projectile/revolver/mistral/elite/New()
+/obj/item/gun/projectile/revolver/ranger/gatvolver/New()
 	..()
 	item_flags |= BLUESPACE
 	bluespace_entropy(2, get_turf(src)) //Same as the normal bluespace crystal
