@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/colt
 	name = "\"Colt\" pistol"
-	desc = "An old repoduction of an M1911 produced by Marian Logistics. Uses 10mm rounds."
+	desc = "An old repoduction of an M1911 produced by Marian Logistics. It doesn't feel great to use with its grip. Uses 10mm rounds."
 	icon = 'icons/obj/guns/projectile/colt.dmi'
 	icon_state = "colt"
 	item_state = "colt"
@@ -12,7 +12,7 @@
 	can_dual = TRUE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL
-	damage_multiplier = 1.2
+	damage_multiplier = 0.9
 	init_recoil = HANDGUN_RECOIL(0.4)
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
 	serial_type = "ML"
@@ -23,7 +23,7 @@
 
 /obj/item/gun/projectile/colt/freedom
 	name = "\"Freedom\" pistol"
-	desc = "A classy high-powered automatic and based on the M1911 series handguns, with significant reinforcements produced by Liberty Group. Chambered in 10mm."
+	desc = "A classy high-powered semi-automatic M1911 model with significant reinforcements produced by Liberty Group. Chambered in 10mm."
 	icon_state = "delta"
 	item_state = "colt"
 	w_class = ITEM_SIZE_NORMAL
@@ -39,7 +39,7 @@
 	init_recoil = HANDGUN_RECOIL(0.5)
 	damage_multiplier = 1.1
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL, GUN_SILENCABLE)
-	serial_type = "LB"
+	serial_type = "LG"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig
