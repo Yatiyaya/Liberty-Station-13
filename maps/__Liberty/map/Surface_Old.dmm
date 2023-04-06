@@ -2923,7 +2923,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 8
 	},
-/obj/landmark/join/start/medspec,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/triage)
 "agk" = (
@@ -3535,7 +3534,6 @@
 	name = "Security briefing room"
 	})
 "ahO" = (
-/obj/landmark/join/start/swo,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
@@ -3568,7 +3566,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/supsec,
 /turf/simulated/floor/wood,
 /area/liberty/security/armoryshop)
 "ahT" = (
@@ -3756,7 +3753,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/medspec,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -3836,7 +3832,6 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section2)
 "aix" = (
-/obj/landmark/join/start/smc,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -4015,7 +4010,6 @@
 /area/liberty/security/tactical)
 "aiO" = (
 /obj/structure/bed/chair,
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/security/tactical)
 "aiP" = (
@@ -5848,7 +5842,6 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/officer,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/main{
@@ -5916,7 +5909,6 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/main{
 	name = "Security briefing room"
@@ -5925,7 +5917,6 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/trooper,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/main{
 	name = "Security briefing room"
@@ -6319,7 +6310,6 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/officer,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/main{
@@ -6344,7 +6334,6 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/main{
@@ -10536,7 +10525,6 @@
 /obj/structure/bed/chair/comfy/black{
 	dir = 4
 	},
-/obj/landmark/join/start/inspector,
 /obj/machinery/light_switch{
 	pixel_x = -20
 	},
@@ -27477,7 +27465,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
 	},
-/obj/landmark/join/start/inspector,
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = -22
