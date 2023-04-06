@@ -111,7 +111,7 @@
 	stat_modifiers = list(
 		STAT_TGH = 5,
 		STAT_MEC = -5,
-		STAT_COG = -15
+		STAT_COG = -15,
 		STAT_VIV = 10
 	)
 
