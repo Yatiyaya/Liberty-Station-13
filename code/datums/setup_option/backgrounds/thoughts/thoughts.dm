@@ -90,11 +90,14 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
 	stat_modifiers = list(STAT_COG = -5)
-/* Psionics not in game
-//Temporary names and descriptions
+
 /datum/category_item/setup_option/background/thoughts/inland_empire
-	name = "Peaceful Life"
-	desc = "It's too late, like a image on film, the 'Expression' belongs to your primary motor cortex, it would take a minor neurological miracle for you to cease producing it."
+	name = "Empire of Nothingness"
+	desc = "You achieved what most couldn't, true peace of mind with no stress or violence hampering such state for a very long time. \
+	What once was just a tumor is now inseparable part of you, guiding your thoughts towards harmony between it and your body. \
+	The vast ranges of your thoughts occupy you on quiet days, as shallow as they might be there is never a dull moment. \
+	You are the only ruler of the empire that doesn't exist, of a kingdom never came to be, of a tribe never seen.\
+	Maintaining such balance allows the tumor to work past normal capacities leaving you to reap the benefits."
 
 	perks = list(PERK_PSI_HARMONY)
 
@@ -103,15 +106,15 @@
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/half_light
-	name = "Bedlam"
-	desc = "Your life has been nothing but conflict, violence, and bedlam for as long as you can remember. You were fighting the moment you can stand and nothing has changed. You're always \
-	ready to throw down. You may not be outwardly confrontational, hell, people might not even know the capacity for hurting others you have deep down. But you cannot see violence as anything \
-	but the ultimate authority from which all authority is granted. This bedlam has changed how your mind works and, should you ever become a psion, has made you the perfect example of what \
-	a destructive mind can do. You always deal the maximum level of destruction when using your psionic powers which scale with your body and mind."
+	name = "Dead Man's Hand"
+	desc = "There is no peace to be found for you, entire lifetime of chaos and destruction scarred your brain beyond recognition. \
+	Denied sweet embrace of death so many times by your fellow partner in crime changed you permanently. \
+	From random ramblings to outbursts of aggression for no apparent reason, there is only one thing keeping you from succumbing to the madness fully, your last bits of empathy. \
+	As long as the tumor occupies your cranial complex you will find no true peace even in death, however this does have it's benefits. \
+	Your psychosis allowed the tumor to expand it's capabilities, making your unmatched in combat and your fading mind can take just as much more beating."
 
 	perks = list(PERK_PSI_MANIA)
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 
 	stat_modifiers = list(STAT_COG = -5)
-*/

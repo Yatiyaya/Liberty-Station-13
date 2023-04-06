@@ -26,6 +26,7 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_CUBAN_DELIGHT)
+	stat_modifiers = list(STAT_TGH = -10) //Trade stats for perks
 
 /datum/category_item/setup_option/background/habit/nepotism
 	name = "Friends in High Places"
@@ -35,6 +36,7 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_NEPOTISM)
+	stat_modifiers = list(STAT_COG = -10) //Really dumb
 
 /datum/category_item/setup_option/background/habit/linguist
 	name = "Aspiring Linguist"
@@ -44,12 +46,13 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_LINGUIST)
-/* Not in game yet
-/datum/category_item/setup_option/background/career/psi_sufficiency
+
+/datum/category_item/setup_option/background/habit/psi_sufficiency
 	name = "Enlightened Scholar"
-	desc = "This is here so that someone can actually write a description for it on basis of me having 'poor grammar' to put it \
-	in very mild  terms, also cause nothing is concrete yet."
+	desc = "Due to rigorious studies and self-critique you have learned to master your psionic potential beyond what most can muster. \
+	Your mind is in perfect balance with little being able to tilt it's scales downwards.\
+	As such certain disciplines are way easier to use for you with smaller chance of violently backfiring."
 
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
 	perks = list(PERK_PSI_ATTUNEMENT)
-*/
+	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5)
