@@ -96,7 +96,7 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 	designs = list(
 		/datum/design/autolathe/gun_frame/colt,
 		/datum/design/autolathe/gun_frame/havelock,
-		/datum/design/autolathe/gun_frame/clarissa,
+		/datum/design/autolathe/gun_frame/widowmaker,
 		/datum/design/autolathe/gun_frame/boltaction,
 		/datum/design/autolathe/gun_frame/doublebarrel,
 		/datum/design/autolathe/gun_frame/trench,

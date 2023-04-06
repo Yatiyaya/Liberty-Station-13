@@ -35,12 +35,12 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/boltgun/sawn //subtype for code
-	name = "\"obrez\" mosin boltgun"
+	name = "\"Mosin\" obrez boltgun"
 	desc = "A crudly mangled and sawn-down 7.62mm bolt action rifle. The rifle was fine."
-	icon = 'icons/obj/guns/projectile/sawnoff/boltgun.dmi'
+	icon = 'icons/obj/guns/projectile/sawnoff/mosin.dmi'
 	icon_state = "obrez"
 	item_state = "obrez"
 	force = WEAPON_FORCE_NORMAL
@@ -172,7 +172,7 @@
 	desc = "A bolt-action rifle frame. For hunting or endless trench warfare."
 	icon_state = "frame_serbrifle"
 	result = /obj/item/gun/projectile/boltgun
-	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/black)
+	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/wood)
 	resultvars = list(/obj/item/gun/projectile/boltgun, /obj/item/gun/projectile/boltgun/rosefield)
 	mechanismvar = /obj/item/part/gun/mechanism/boltgun
 	barrelvars = list(/obj/item/part/gun/barrel/lrifle, /obj/item/part/gun/barrel/srifle)

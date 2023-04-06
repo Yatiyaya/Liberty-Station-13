@@ -63,9 +63,9 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 	name = "10mm Ranger - frame"
 	build_path = /obj/item/part/gun/frame/ranger
 
-/datum/design/autolathe/gun_frame/clarissa
+/datum/design/autolathe/gun_frame/widowmaker
 	name = "9mm Glass Widow - frame"
-	build_path = /obj/item/part/gun/frame/clarissa
+	build_path = /obj/item/part/gun/frame/widowmaker
 
 /datum/design/autolathe/gun_frame/havelock
 	name = "9mm Pocket Prince - frame"
