@@ -30430,7 +30430,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/chemistry)
 "fUr" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -30484,7 +30484,7 @@
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1east)
 "fVm" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -59194,7 +59194,7 @@
 	name = "Residential District Maintenance"
 	})
 "ltx" = (
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"

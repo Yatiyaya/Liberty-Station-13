@@ -6404,7 +6404,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "bBk" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -73162,7 +73162,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/engineering/atmos)
 "qNn" = (
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /obj/structure/cable/yellow,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
@@ -84270,7 +84270,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "tra" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
