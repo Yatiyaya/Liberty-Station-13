@@ -2,7 +2,7 @@
 	name = "\"Mosin\" boltgun"
 	desc = "Weapon for hunting or endless trench warfare or hunters on a budget. \
 			Chambered in 7.62mm, it's not great but it sports a bayonet and packs a decent punch."
-	icon = 'icons/obj/guns/projectile/boltgun.dmi'
+	icon = 'icons/obj/guns/projectile/mosin.dmi'
 	icon_state = "boltgun"
 	item_state = "boltgun"
 	w_class = ITEM_SIZE_HUGE

@@ -2,7 +2,7 @@
 	name = "\"Big Game\" boltgun"
 	desc = "A famous and affordable weapon found both within the galaxy's mid-reaches and outer-reaches. \
 			Chambered in 7.62mm, this weapon sports ten more rounds than it's cheaper \"Mosin\" ."
-	icon = 'icons/obj/guns/projectile/boltgun.dmi'
+	icon = 'icons/obj/guns/projectile/game.dmi'
 	icon_state = "game"
 	item_state = "game"
 	w_class = ITEM_SIZE_HUGE
@@ -33,4 +33,4 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
