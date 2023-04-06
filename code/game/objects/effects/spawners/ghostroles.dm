@@ -113,14 +113,14 @@
 
 /obj/effect/mob_spawn/human/marshal_ert
 	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be a Nadezhda Colonial Marshal"
+	desc = "An sleeper, with an unconscious body inside. The occupant seems to be a Liberty Colonial Marshal"
 	mob_name = "a human"
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/marshal_ert
 	ghost_role_perks = list(PERK_ASS_OF_CONCRETE, PERK_BOLT_REFLECT, PERK_CODESPEAK, PERK_CHEM_CONTRABAND, PERK_TRUE_NAME)
 	short_desc = "You are a Marshal agent."
-	flavour_text = "Something has happend to the upper colony to warrant your deployment. Uphold the word of law and ensure peace is upkept in Nadezhda."
+	flavour_text = "Something has happend to the upper colony to warrant your deployment. Uphold the word of law and ensure peace is upkept in Liberty."
 	assignedrole = "Marshal Agent"
 	title = "Marshal Agent"
 	stat_modifiers = list(

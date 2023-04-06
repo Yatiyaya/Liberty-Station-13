@@ -19,7 +19,7 @@
 	name = "Adept Blattin"
 	desc = "Adept Blattin is a golden roach, an special and harmless breed that was made by soteria to be pets and in general help with the trash problem without being a nuisance to the colony. \
 	But this one was adopted by the guild and being called 'Adept Blattin'. \
-	A valuable member of the Artificer's Guild."
+	A valuable member of the Terra-Therma Union."
 
 /obj/item/roach_egg/gold
 	name = "roach egg"

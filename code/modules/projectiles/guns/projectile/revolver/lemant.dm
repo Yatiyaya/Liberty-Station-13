@@ -31,7 +31,7 @@
 
 /obj/item/gun/projectile/revolver/lemant/belt
 	name = "\"Pilgrim Devout\" magnum revolver"
-	desc = "Artificer Guild's revamped design of the Pilgrim to have even more shots before requiring to reload. \
+	desc = "Terra-Therma Worker's Union's revamped design of the Pilgrim to have even more shots before requiring to reload. \
 	Even with the belt design this revolver requires each spent shell individually be removed, and can't be speed loaded. \
 	Holds seventeen 10mm rounds and one single action underslung 20mm shell."
 	icon = 'icons/obj/guns/projectile/lemant_way.dmi'

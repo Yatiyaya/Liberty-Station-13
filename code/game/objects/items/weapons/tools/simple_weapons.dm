@@ -324,8 +324,8 @@
 		overlays += "[icon_state]_power_off"
 
 /obj/item/tool/sword/katana/firebrand //Firebrand. Sprited and Implemented by Sieghardt
-	name = "Artificer Firebrand"
-	desc = "Originally the fever dream of an brave guild master looking for a better way to deal with roaches, the Firebrand ended up as a hellish implement of war. While turned off, this is a blunted hunk of metal. When turned on the Firebrand becomes a bringer of fiery doom to anyone unlucky enough to be its path."
+	name = "Union Firebrand"
+	desc = "Originally the fever dream of an brave Union Chief looking for a better way to deal with roaches, the Firebrand ended up as a hellish implement of war. While turned off, this is a blunted hunk of metal. When turned on the Firebrand becomes a bringer of fiery doom to anyone unlucky enough to be its path."
 	icon_state = "firebrand"
 	item_state = "firebrand"
 	toggleable = TRUE

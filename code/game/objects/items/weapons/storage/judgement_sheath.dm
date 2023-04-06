@@ -86,7 +86,7 @@
 
 /obj/item/tool/sword/katana/spatial_cutter
 	name = "spatial cutter"
-	desc = "A strange sword said to be one of the artificer guild grand master's few forays into weapon design. The blade is curved and thrums in your hand with a coming storm, a single swing leaves a blurred after image carrying all the intent and lethality of strikes past."
+	desc = "A strange sword said to be one of the Terra-Therma Worker's Union grand master's few forays into weapon design. The blade is curved and thrums in your hand with a coming storm, a single swing leaves a blurred after image carrying all the intent and lethality of strikes past."
 
 	icon_state = "2ndkey"
 

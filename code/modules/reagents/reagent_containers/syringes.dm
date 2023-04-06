@@ -419,7 +419,7 @@
 
 /obj/item/reagent_containers/syringe/stim/greasy_lard
 	name = "syringe (Greasy Lard)"
-	desc = "A syringe containing the ethanol based stimulant Greaser. A favored chemical used by the Artificer's Guild to make even the lowliest adept a machine master."
+	desc = "A syringe containing the ethanol based stimulant Greaser. A favored chemical used by the Terra-Therma Union to make even the lowliest adept a machine master."
 	preloaded_reagents = list("greasy lard" = 15)
 
 /obj/item/reagent_containers/syringe/stim/grape_drops

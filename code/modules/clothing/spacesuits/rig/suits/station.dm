@@ -113,7 +113,7 @@
 
 
 /***************************************
-Advanced Voidsuit: Guild Master
+Advanced Voidsuit: Union Chief
 ****************************************/
 /obj/item/rig/ce
 	name = "advanced hardsuit control module"
@@ -173,11 +173,11 @@ Advanced Voidsuit: Guild Master
 	mag_slow = 1
 
 /***************************************
-Technomancer RIG
+Union RIG
 ***************************************/
 /obj/item/rig/techno
-	name = "technomancer suit control module"
-	suit_type = "technomancer RIG suit"
+	name = "Terra-Therma Worker's Union suit control module"
+	suit_type = "Terra-Therma Worker's Union RIG suit"
 	desc = "An advanced RIG suit that protects against hazardous, low pressure and high temperature environments."
 	icon_state = "techno_rig"
 	armor_list = list(
@@ -277,7 +277,7 @@ Technomancer RIG
 		)
 
 /***************************************
-	Adv Hazmat: Rnd/CRO
+	Adv Hazmat: Rnd/RP
 ****************************************/
 /obj/item/rig/advhazmat
 	name = "Advanced AMI control module"

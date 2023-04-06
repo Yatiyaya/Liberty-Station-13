@@ -1,13 +1,13 @@
-/datum/job/rd
-	title = "Chief Research Overseer"
-	flag = CRO
+/datum/job/rp
+	title = "Research Provost"
+	flag = RP
 	head_position = 1
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE | COMMAND
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nadezhda Council"
+	supervisors = "the Liberty Council"
 	difficulty = "Medium."
 	selection_color = "#b39aaf"
 	req_admin_notify = 1
@@ -15,7 +15,7 @@
 	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
-	outfit_type = /decl/hierarchy/outfit/job/science/rd
+	outfit_type = /decl/hierarchy/outfit/job/science/rp
 	playtimerequired = 1200
 	access = list(
 		access_rd, access_heads, access_tox, access_genetics, access_morgue,
@@ -43,7 +43,7 @@
 							/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/reports)
 
-	description = "The Chief Research Overseer is the head of the research branch of the Soteria Institute, directing science activities.<br>\
+	description = "The Research Provost is the head of the research branch of the Soteria Institute, directing science activities.<br>\
 	The scientists under your command are working on a range of projects. Direct them towards the best interests of the organization.<br>\
 	With oversight over the funds, you may also purchase scientific artifacts and anything else of research value - even funding away missions.<br>\
 	Even use your position to request support from other factions if required. Most colonists do not understand your work, but know its value.<br>\
@@ -55,25 +55,25 @@
 	Consider organizing away missions and expeditions to acquire artifacts and other valuable items."
 
 /obj/landmark/join/start/rd
-	name = "Chief Research Overseer"
+	name = "Research Provost"
 	icon_state = "player-purple-officer"
-	join_tag = /datum/job/rd
+	join_tag = /datum/job/rp
 
 
 /datum/job/scientist
-	title = "Soteria Scientist"
+	title = "PIRS Scientist"
 	flag = SCIENTIST
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE
 	faction = MAP_FACTION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Chief Research Overseer"
+	supervisors = "the Research Provost"
 	difficulty = "Medium."
 	selection_color = "#bdb1bb"
 	wage = WAGE_PROFESSIONAL
-	noob_name = "Soteria Research Student"
-	alt_titles = list("Soteria Research Student","Soteria Xenobiologist", "Soteria Xenoarcheologist", "Soteria Xenobotanist", "Soteria Research Fabricator", "Soteria Geneticist")
+	noob_name = "PIRS Intern"
+	alt_titles = list("PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
 	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
@@ -103,23 +103,23 @@
 	Create unusual things, explore, learn, and have a scientific adventure."
 
 /obj/landmark/join/start/scientist
-	name = "Soteria Scientist"
+	name = "PIRS Scientist"
 	icon_state = "player-purple"
 	join_tag = /datum/job/scientist
 
 
 /datum/job/roboticist
-	title = "Soteria Roboticist"
+	title = "PIRS Roboticist"
 	flag = ROBOTICIST
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE
 	faction = MAP_FACTION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Research Overseer"
+	supervisors = "the Research Provost"
 	difficulty = "Medium."
-	noob_name = "Soteria Roboticist Trainee"
-	alt_titles = list("Soteria Roboticist Trainee", "Soteria Cyberneticist", "Soteria Mechanist", "Soteria Biomechanical Engineer")
+	noob_name = "PIRS Roboticist Trainee"
+	alt_titles = list("PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
 	selection_color = "#bdb1bb"
 	wage = WAGE_PROFESSIONAL
 	department_account_access = TRUE
@@ -154,6 +154,6 @@
 	Construct large mechas for specialized use in departments."
 
 /obj/landmark/join/start/roboticist
-	name = "Soteria Roboticist"
+	name = "PIRS Roboticist"
 	icon_state = "player-purple"
 	join_tag = /datum/job/roboticist

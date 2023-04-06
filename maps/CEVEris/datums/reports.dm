@@ -1,5 +1,5 @@
 //Report datums for use with the report editor and other programs.
-/* - These are eris's unused by SoJ see Maps\Nadezhda\data\reports.dm for are reports
+/* - These are eris's unused by SoJ see Maps\Liberty\data\reports.dm for are reports
 /datum/computer_file/report/recipient/crew_transfer
 	form_name = "CTA-AG-01"
 	title = "Crew Transfer Application"
@@ -201,7 +201,7 @@
 	add_field(/datum/report_field/pencode_text, "Classification")
 	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the Research Director should fax the form to both the Corporate Liaison and the Commanding Officer, as well as keep a copy on file in their Office alongside other mission reports.")
 
-//NT reports, mostly for liason but can be used by any NT personnel.
+//NT reports, mostly for Liaison but can be used by any NT personnel.
 
 /datum/computer_file/report/recipient/nt
 	logo = "\[moebius\]"

@@ -137,7 +137,7 @@
 
 /obj/item/mop/guild
 	name = "articulated mop"
-	desc = "An Artificer's Guild-modified mop. Sports a pistol-actuated mop head making it able to hold more cleaning suds and sweep faster. \
+	desc = "An Terra-Therma Union-modified mop. Sports a pistol-actuated mop head making it able to hold more cleaning suds and sweep faster. \
 	The handle is also telescopic allowing for easier storage."
 	icon = 'icons/obj/janitor.dmi'
 	icon_state = "engimop"

@@ -120,7 +120,7 @@
 
 /obj/item/oddity/common/old_newspaper
 	name = "odd newspaper clipping" //Old old news papers are a good joke
-	desc = "It contains a report on some old and strange phenomenon. Maybe it's lies, maybe it's corporate experiments gone wrong. The date listed on it is impossible, yet it bears the stamp of the Nadezhda."
+	desc = "It contains a report on some old and strange phenomenon. Maybe it's lies, maybe it's corporate experiments gone wrong. The date listed on it is impossible, yet it bears the stamp of the Liberty."
 	icon_state = "old_newspaper"
 	prob_perk = 10 //Grounded in rality and able to be discarded as yellow journalism
 	oddity_stats = list(
@@ -340,7 +340,7 @@
 
 /obj/item/oddity/techno
 	name = "Unknown technological part"
-	desc = "A technological part made by the Artificer Perfection Cube."
+	desc = "A technological part made by the Union Perfection Cube."
 	icon_state = "techno_part1"
 	prob_perk = 25 //Unknown tech unknown parts unknown uses by a cult much to exspand the mind in
 

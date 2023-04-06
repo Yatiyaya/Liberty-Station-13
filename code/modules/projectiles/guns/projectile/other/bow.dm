@@ -114,7 +114,7 @@
 
 /obj/item/gun/projectile/bow/xbow
 	name = "\"Whaler\" heavy compound bow"
-	desc = "A heavy compound bow made from plastic, with a plasteel riser. Not originally an Artificer's Guild design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
+	desc = "A heavy compound bow made from plastic, with a plasteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
 	A modified \"Watchman\" scope is attached to the riser, with arrow drop markers for various weights of arrow present."
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_PLASMAGLASS = 2)
 	damage_multiplier = 1.2

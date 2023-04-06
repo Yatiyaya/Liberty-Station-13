@@ -303,9 +303,11 @@ var/list/rank_prefix = list(\
 	"Blackshield Trooper" = "Trooper",\
 	"Premier" = "Premier",\
 	"Steward" = "Steward",\
-	"Guild Master" = "Master",\
-	"Chief Biolab Overseer" = "Overseer",\
-	"Chief Research Overseer" = "Overseer",\
+	"Union Chief" = "Chief",\
+	"Chief Surgeon Overseer" = "Overseer",\
+	"Medical Doctor" = "Doctor",\
+	"Paramedic" = "Paramedic",\
+	"Research Provost" = "Provost",\
 	"Chief Executive Officer" = "Executive",\
 	"Prime" = "Prime",\
 	"Foreman" = "Foreman",\
@@ -1259,8 +1261,8 @@ var/list/rank_prefix = list(\
 					src.make_psion_psych()
 				if("nanogate")
 					src.give_nanogate("Standard")
-				if("artificer nanogate")
-					src.give_nanogate("Artificer")
+				if("Union nanogate")
+					src.give_nanogate("Union")
 				if("opifex nanogate")
 					src.give_nanogate("Opifex")
 

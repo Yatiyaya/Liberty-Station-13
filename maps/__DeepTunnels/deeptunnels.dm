@@ -1,7 +1,7 @@
-#include "map/_Nadezhda_Deep_Tunnels.dmm"
+#include "map/_Liberty_Deep_Tunnels.dmm"
 
-/obj/map_data/nadezda_t
-	name = "Nadezhda Deep Tunnels"
+/obj/map_data/liberty_t
+	name = "Liberty Deep Tunnels"
 	is_player_level = TRUE
 	is_contact_level = TRUE
 	is_accessable_level = FALSE

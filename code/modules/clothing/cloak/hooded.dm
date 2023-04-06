@@ -156,8 +156,8 @@
 	//hoodtype = /obj/item/clothing/head/hood/winter/science
 
 /obj/item/clothing/suit/hooded/wintercoat/engineering
-	name = "artificer winter coat"
-	desc = "A heavy artificer's guild jacket designed for cold environments. The material is somewhat resistant to radiation."
+	name = "Union winter coat"
+	desc = "A heavy Terra-Therma Union jacket designed for cold environments. The material is somewhat resistant to radiation."
 	icon_state = "coatengineer"
 	item_state_slots = list(slot_r_hand_str = "coatengineer", slot_l_hand_str = "coatengineer")
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 20)

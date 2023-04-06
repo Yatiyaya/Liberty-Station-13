@@ -151,10 +151,10 @@
 
 
 //Guild brand auto turrets.
-/obj/machinery/porta_turret/artificer
+/obj/machinery/porta_turret/Union
 	icon = 'icons/obj/machines/excelsior/turret.dmi'
-	name = "artificer turret"
-	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Artificer's Guild. It features a three round burst fire automatic and an integrated \
+	name = "Union turret"
+	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
 	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 7.62mm rounds and holds up to 180."
 	icon_state = "turret_legs"
 	density = TRUE
@@ -174,43 +174,43 @@
 	idle_power_usage = 1
 	active_power_usage = 1
 
-/obj/machinery/porta_turret/artificer/auto_use_power()
+/obj/machinery/porta_turret/Union/auto_use_power()
 	if(disabled)
 		return
 
-/obj/machinery/porta_turret/artificer/powered(chan=1)
+/obj/machinery/porta_turret/Union/powered(chan=1)
 	if (cell?.check_charge(1))
 		cell.charge = cell.charge - 1
 		return TRUE
 	return FALSE
 
-/obj/machinery/porta_turret/artificer/use_power(amount, chan=1, autocalled)
+/obj/machinery/porta_turret/Union/use_power(amount, chan=1, autocalled)
 	return cell?.checked_use(amount)
 
-/obj/machinery/porta_turret/artificer/examine(mob/user)
+/obj/machinery/porta_turret/Union/examine(mob/user)
 	if(!..(user, 2))
 		return
 	to_chat(user, "There [(ammo == 1) ? "is" : "are"] [ammo] round\s left!")
 	if(!powered())
 		to_chat(user, "Seems to be powered down. The battery must be dead.")
 
-/obj/machinery/porta_turret/artificer/Initialize()
+/obj/machinery/porta_turret/Union/Initialize()
 	. = ..()
 	update_icon()
 
-/obj/machinery/porta_turret/artificer/setup()
+/obj/machinery/porta_turret/Union/setup()
 	var/obj/item/ammo_casing/AM = initial(ammo_box.ammo_type)
 	projectile = initial(AM.projectile_type)
 	eprojectile = projectile
 	shot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	eshot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 
-/obj/machinery/porta_turret/artificer/isLocked(mob/user)
+/obj/machinery/porta_turret/Union/isLocked(mob/user)
 	if(ishuman(user))
 		return 0
 	return 1
 
-/obj/machinery/porta_turret/artificer/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
+/obj/machinery/porta_turret/Union/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	var/data[0]
 	data["access"] = !isLocked(user)
 	data["locked"] = locked
@@ -226,17 +226,17 @@
 		ui.open()
 		ui.set_auto_update(1)
 
-/obj/machinery/porta_turret/artificer/Topic(href, href_list)
+/obj/machinery/porta_turret/Union/Topic(href, href_list)
 	if(href_list["command"] == "eject_cell")
 		cell.forceMove(src.loc)
 		cell = null
 		return 1
 	.=..()
 
-/obj/machinery/porta_turret/artificer/HasController()
+/obj/machinery/porta_turret/Union/HasController()
 	return FALSE
 
-/obj/machinery/porta_turret/artificer/attackby(obj/item/I, mob/user)
+/obj/machinery/porta_turret/Union/attackby(obj/item/I, mob/user)
 	if (user.a_intent == I_HELP)
 		if(stat & BROKEN)
 			if(QUALITY_PRYING in I.tool_qualities)
@@ -322,7 +322,7 @@
 	else
 		..()
 
-/obj/machinery/porta_turret/artificer/Process()
+/obj/machinery/porta_turret/Union/Process()
 	if(!powered())
 		disabled = TRUE
 		popDown()
@@ -331,7 +331,7 @@
 		disabled = FALSE
 	..()
 
-/obj/machinery/porta_turret/artificer/assess_living(mob/living/L)
+/obj/machinery/porta_turret/Union/assess_living(mob/living/L)
 	if(!istype(L))
 		return TURRET_NOT_TARGET
 
@@ -364,12 +364,12 @@
 
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
 
-/obj/machinery/porta_turret/artificer/tryToShootAt()
+/obj/machinery/porta_turret/Union/tryToShootAt()
 	if(!ammo)
 		return FALSE
 	..()
 
-/obj/machinery/porta_turret/artificer/shootAt(var/mob/living/target)
+/obj/machinery/porta_turret/Union/shootAt(var/mob/living/target)
 	var/turf/T = get_turf(src)
 	var/turf/U = get_turf(target)
 	if(!istype(T) || !istype(U))
@@ -385,31 +385,31 @@
 	launch_projectile(target)
 
 // this turret has no cover, it is always raised
-/obj/machinery/porta_turret/artificer/popUp()
+/obj/machinery/porta_turret/Union/popUp()
 	raised = TRUE
 
-/obj/machinery/porta_turret/artificer/popDown()
+/obj/machinery/porta_turret/Union/popDown()
 	last_target = null
 	raised = TRUE
 
-/obj/machinery/porta_turret/artificer/update_icon()
+/obj/machinery/porta_turret/Union/update_icon()
 	cut_overlays()
 
 	if(!(stat & BROKEN))
 		add_overlay(image("turret_gun_art"))
 
-/obj/machinery/porta_turret/artificer/launch_projectile()
+/obj/machinery/porta_turret/Union/launch_projectile()
 	ammo--
 	..()
 
-/obj/machinery/porta_turret/artificer/opifex
+/obj/machinery/porta_turret/Union/opifex
 	name = "opifex scrap turret"
 	desc = "A fully automated battery powered anti-wildlife turret designed by the opifex. It features a three round burst barrel and isn't as sturdy nor as functional as other turrets. Fires 7.62mm rounds and holds only a measly 30 rounds."
 	circuit = /obj/item/circuitboard/artificer_turret/opifex
 	ammo_max = 30
 	health = 75
 
-/obj/machinery/porta_turret/artificer/opifex/attackby(obj/item/I, mob/user)
+/obj/machinery/porta_turret/Union/opifex/attackby(obj/item/I, mob/user)
 	if (user.a_intent != I_HURT)
 		if(stat & BROKEN)
 			if(QUALITY_PRYING in I.tool_qualities)
@@ -491,7 +491,7 @@
 	else
 		..()
 
-/obj/machinery/porta_turret/artificer/opifex/update_icon()
+/obj/machinery/porta_turret/Union/opifex/update_icon()
 	cut_overlays()
 
 	if(!(stat & BROKEN))

@@ -269,7 +269,7 @@
 /datum/organ_description/leg/right/capsa_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
-//Artificer
+//Union
 /datum/organ_description/chest/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
