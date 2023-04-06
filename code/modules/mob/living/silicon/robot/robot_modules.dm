@@ -314,7 +314,7 @@ var/global/list/robot_modules = list(
 	R.stats.addPerk(PERK_ASS_OF_CONCRETE)
 	//So we cant be escaped as quickly
 	R.stats.addPerk(PERK_ATHLETE)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -425,7 +425,7 @@ var/global/list/robot_modules = list(
 	R.stats.addPerk(PERK_MEDICAL_EXPERT)
 	R.stats.addPerk(PERK_SURGICAL_MASTER)
 	R.stats.addPerk(PERK_ADVANCED_MEDICAL)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -575,7 +575,7 @@ var/global/list/robot_modules = list(
 	//We know guild work and robotics.
 	R.stats.addPerk(PERK_HANDYMAN)
 	R.stats.addPerk(PERK_ROBOTICS_EXPERT)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -670,7 +670,7 @@ var/global/list/robot_modules = list(
 	//So we cant be escaped as quickly
 	R.stats.addPerk(PERK_ATHLETE)
 
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 	..(R)
 
 /obj/item/robot_module/security/respawn_consumable(var/mob/living/silicon/robot/R, var/amount)
@@ -758,7 +758,7 @@ var/global/list/robot_modules = list(
 
 	//Silent cleaners
 	R.stats.addPerk(PERK_RAT)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -855,7 +855,7 @@ var/global/list/robot_modules = list(
 	//Seller and cleaner mix, so quite and knowing the deal!
 	R.stats.addPerk(PERK_RAT)
 	R.stats.addPerk(PERK_MARKET_PROF)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -925,7 +925,7 @@ var/global/list/robot_modules = list(
 
 	//Seller so quite and knowing the deal!
 	R.stats.addPerk(PERK_MARKET_PROF)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -1001,7 +1001,7 @@ var/global/list/robot_modules = list(
 	R.stats.addPerk(PERK_MEDICAL_EXPERT)
 	R.stats.addPerk(PERK_SURGICAL_MASTER)
 	R.stats.addPerk(PERK_ROBOTICS_EXPERT)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 
@@ -1101,7 +1101,7 @@ var/global/list/robot_modules = list(
 	//We know guild work and robotics.
 	R.stats.addPerk(PERK_HANDYMAN)
 	R.stats.addPerk(PERK_ROBOTICS_EXPERT)
-	R.stats.addPerk(PERK_SI_SCI)
+	R.stats.addPerk(PERK_SCIENCE)
 
 	..(R)
 

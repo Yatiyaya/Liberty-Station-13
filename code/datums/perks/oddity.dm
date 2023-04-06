@@ -326,16 +326,16 @@
 	initial_time = world.time
 	cooldown_time = world.time + rand(20, 60) MINUTES
 	holder.stats.changeStat(STAT_COG, 5) //We keep this 5 per use
-	if(!H.stats?.getPerk(PERK_SI_SCI) && prob(60))
+	if(!H.stats?.getPerk(PERK_SCIENCE) && prob(60))
 		GLOB.bluespace_entropy += rand(80, 150) //You done fucked it up.
-	if(H.stats?.getPerk(PERK_SI_SCI) && prob(50))
+	if(H.stats?.getPerk(PERK_SCIENCE) && prob(50))
 		GLOB.bluespace_entropy -= rand(20, 30) //High odds to do even better!
 	GLOB.bluespace_entropy -= rand(30, 50)
 
 /datum/perk/bluespace/remove(mob/living/carbon/human/H)
-	if(!H.stats?.getPerk(PERK_SI_SCI) && prob(30))
+	if(!H.stats?.getPerk(PERK_SCIENCE) && prob(30))
 		GLOB.bluespace_entropy += rand(80, 150)
-	if(H.stats?.getPerk(PERK_SI_SCI) && prob(50))
+	if(H.stats?.getPerk(PERK_SCIENCE) && prob(50))
 		GLOB.bluespace_entropy -= rand(20, 30)
 	GLOB.bluespace_entropy += rand(30, 50)
 	..()

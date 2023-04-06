@@ -134,9 +134,8 @@
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
-	perks = list(PERK_MARKET_PROF, PERK_ARTIST, /datum/perk/stalker)
-	software_on_spawn = list(///datum/computer_file/program/supply,
-							 ///datum/computer_file/program/deck_management,
+	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
+	software_on_spawn = list(
 							 /datum/computer_file/program/scanner,
 							 /datum/computer_file/program/wordprocessor,
 							 /datum/computer_file/program/reports)

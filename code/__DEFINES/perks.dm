@@ -80,7 +80,7 @@
 #define PERK_ADVANCED_MEDICAL /datum/perk/job/advanced_medical
 
 // Science
-#define PERK_SI_SCI /datum/perk/job/science
+#define PERK_SCIENCE /datum/perk/job/science
 #define PERK_ROBOTICS_EXPERT /datum/perk/job/robotics_expert
 
 // Scavenger
