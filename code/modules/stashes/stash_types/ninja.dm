@@ -16,7 +16,7 @@
 		/obj/item/rig_module/modular_injector/medical = 90, //Weakest chem dispenser rig
 		/obj/item/reagent_containers/food/drinks/bottle/pwine = 70,
 		/obj/item/rig_module/vision/thermal = 10,
-		/obj/item/gun/projectile/revolver/mistral = 3,
+		/obj/item/gun/projectile/revolver/ranger = 3,
 		/obj/item/noslipmodule = 90,
 		/obj/item/soap/syndie = 50,
 		/obj/item/storage/box/syndie_kit/cigarette = 10,
