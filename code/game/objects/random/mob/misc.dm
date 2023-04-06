@@ -267,6 +267,17 @@
 		/mob/living/simple_animal/hostile/republicon/range = 1
 		))
 
+//Space
+/obj/random/mob/space_balkan
+	name = "random balkan military mob"
+	icon_state = "hostilemob-blue"
+	alpha = 128
+
+/obj/random/mob/space_balkan/item_to_spawn()
+	return pickweight(list(/mob/living/carbon/superior_animal/human/balkan = 20,
+		/mob/living/carbon/superior_animal/human/balkan/sts = 10,
+		/mob/living/carbon/superior_animal/human/balkan/bren = 5
+		))
 
 //local fauna - surface
 /obj/random/mob/tengolo

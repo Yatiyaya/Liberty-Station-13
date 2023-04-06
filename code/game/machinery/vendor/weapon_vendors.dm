@@ -334,10 +334,10 @@
 		..()
 
 /obj/machinery/vending/serbomat
-	name = "From Serbia with love"
-	desc = "A strange old world vending machine, for some reason it is still operational."
+	name = "Revanchist's Dream"
+	desc = "A strange vending machine that looks very much out of place. Somehow still operational."
 	icon_state = "serbomat"
-	product_ads = "For Tsar and Country.;Have you fulfilled your nutrition quota today?;Very nice!;We are simple people, for this is all we eat.;If there is a person, there is a problem. If there is no person, then there is no problem."
+	product_ads = "For Rodina.;Have you fulfilled your nutrition quota today?;Very nice!;We are simple people, for this is all we eat.;If there is a person, there is a problem. If there is no person, then there is no problem."
 	products = list(
 					/obj/item/reagent_containers/food/drinks/bottle/vodka = 30, // ghetto antihacking, have fun
 					/obj/item/storage/deferred/crate/uniform_green = 4,

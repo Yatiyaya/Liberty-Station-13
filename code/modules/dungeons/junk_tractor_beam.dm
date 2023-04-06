@@ -108,8 +108,8 @@
 	var/list/affinities = list(  // Put them in the same order than the affinities of /datum/junk_field
 		/datum/map_template/junk/j25_25/neutral,
 		/datum/map_template/junk/j25_25/onestar,
-		/datum/map_template/junk/j25_25/ironhammer,
-		/datum/map_template/junk/j25_25/serbian//,
+		/datum/map_template/junk/j25_25/military,
+		/datum/map_template/junk/j25_25/pirate//,
 		//datum/map_template/junk/j25_25/spacewrecks
 		)
 

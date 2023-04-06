@@ -8826,9 +8826,6 @@
 "chh" = (
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/janitor)
-"chz" = (
-/turf/simulated/floor/tiled/white/cyancorner,
-/area/liberty/security/triage_blackshield)
 "chC" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -18717,9 +18714,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/crew_quarters/dorm2)
-"esF" = (
-/turf/simulated/floor/tiled/white,
-/area/liberty/security/detectives_office)
 "esG" = (
 /obj/structure/closet/l3closet/scientist,
 /obj/effect/decal/cleanable/dirt,
@@ -201879,7 +201873,7 @@ uQS
 gso
 gHX
 oPX
-esF
+mcF
 iYP
 qJG
 liv
@@ -204291,7 +204285,7 @@ fLr
 xsC
 wbF
 lGv
-chz
+eZl
 pGy
 rMa
 xsC
