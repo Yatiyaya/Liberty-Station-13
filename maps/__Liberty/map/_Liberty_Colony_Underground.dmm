@@ -325,7 +325,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/engineering/workshop)
 "aaR" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -2881,7 +2881,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "agA" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -5875,7 +5875,7 @@
 	},
 /area/liberty/hallway/side/f2section1)
 "amM" = (
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
