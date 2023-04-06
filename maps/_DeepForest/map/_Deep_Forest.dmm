@@ -18932,7 +18932,6 @@
 /area/asteroid/rogue)
 "uQx" = (
 /obj/structure/closet/crate/serbcrate,
-/obj/item/gun/projectile/silenced,
 /turf/simulated/floor/wood/wild4,
 /area/asteroid/rogue)
 "uQz" = (

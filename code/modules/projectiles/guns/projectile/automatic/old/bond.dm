@@ -10,7 +10,7 @@
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	ammo_type =  /obj/item/ammo_casing/7mm
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1)
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE

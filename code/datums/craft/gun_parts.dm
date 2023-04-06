@@ -435,7 +435,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 10x24mm caseless."
 	icon_state = "barrel_caseless"
 	matter = list(MATERIAL_PLASTEEL = 8)
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	refence_for_legal = "clrifle"
 
 /obj/item/part/gun/barrel/lrifle

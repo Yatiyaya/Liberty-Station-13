@@ -282,7 +282,7 @@
 ///10mm caseless
 /obj/item/ammo_casing/cl7mm
 	desc = "A 7mm caseless cartidge."
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	icon_state = "caseless"
 	projectile_type = /obj/item/projectile/bullet/cl7mm
 	is_caseless = TRUE

@@ -1,37 +1,70 @@
-//Oddity items are rare rewards from special locations that are usually highly defended by many or very powerful mobs, requiring effort to obtain them. They are often simple equipment with better stats
-//or unique effects. These should never be placed enmasse or in easily reached places. -Kaz
-//Guns
-/obj/item/gun/energy/sniperrifle/saint
-	name = "\"Saint\" laser rifle"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	The normal \"Valkyrie\" design meeting the improvements with Lightfall design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
-	charge_cost = 200
-	extra_damage_mult_scoped = 0.2
-	fire_delay = 25
-	price_tag = 3750
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_GOLD = 9, MATERIAL_URANIUM = 6) //The normal valk needs silver this is gold plated!
-	icon = 'icons/obj/guns/energy/sniper_saint.dmi'
-	fire_sound = 'sound/weapons/energy/aer9fire.ogg'
-	serial_type = "BlueCross"
+/*Mastercraft weapons are rare rewards from dungeons and other places that are hard to get to via difficulty.
+These weapons should be 'reasonable' in terms of their balance; they can be VERY strong but should not be a 1-shot machine on players or boss-tier mobs.
+The idea behind these weapons is that they are 'one-of-a-time' or single batch production limited edition weapons. Oddity weapons refers to Noble background weapons. - Rebel0*/
 
-/obj/item/gun/projectile/revolver/mistral/elite
-	name = "\"Elite\" magnum revolver"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	Unlike a standard Mistral magnum this one has a bluespace crystal in its cylinder and a weighted barrel for better recoil control. How many bullets does it hold? Uses 10mm Magnum rounds."
-	max_shells = 60
+// Ballistic Guns
+
+/obj/item/gun/projectile/clarissa/stealth
+	name = "\"Red Devil\" compact pistol"
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 9mm. \
+			A version of the \"Glass Widow\" this pistol appears to sport a built-in supressor, a better grip, sensative trigger, and an improved barrel. The thing even appears to take SMG mags as well!"
+	icon_state = "devil"
+	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_SMG | MAG_WELL_DRUM		//Gives a reason to use it.
+	damage_multiplier = 1.3		//Bit better than normal. Mag-capacity helps too.
+	penetration_multiplier = 1.2
+	serial_type = "Mastercraft"
+	silenced = TRUE
+
+	init_firemodes = list(
+		SEMI_AUTO_NODELAY,
+		BURST_2_ROUND_NOLOSS
+		)
+
+/obj/item/gun/projectile/revolver/ranger/gatvolver
+	name = "\"Overlord\" magnum revolver"
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 10mm. \
+			Unlike a normal revolver this one appears to have four cylanders somehow! Maybe the bluespace crystal in its center has something to do with it.."
+	max_shells = 30
 	init_recoil = RIFLE_RECOIL(1.1)
 	price_tag = 3000
-	serial_type = "BlueCross"
+	icon = 'icons/obj/guns/projectile/gatvolver.dmi'
+	icon_state = "overlord"
+	item_state = "overlord"
+	serial_type = "Mastercraft"
 
 /obj/item/gun/projectile/revolver/mistral/elite/New()
 	..()
 	item_flags |= BLUESPACE
 	bluespace_entropy(2, get_turf(src)) //Same as the normal bluespace crystal
 
-/obj/item/gun/projectile/shotgun/doublebarrel/bluecross_shotgun
+/obj/item/gun/projectile/automatic/broz/evil
+	name = "\"PM-9 Evil\" SMG"
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 9mm. \
+			This specific weapon looks like a basement made gun, it even lacks a serial number. Oddly this thing hits like a truck, possibly by the strange gauss-like barrel on it. Though.. it jams often."
+	price_tag = 1000
+	init_recoil = RIFLE_RECOIL(1)
+	damage_multiplier = 3.0			//NOW THAT'S A LOTA DAMAGE!! (9mm so needs to be strong)
+	penetration_multiplier = 1.5	//Not much - has a ton of damage already.
+	icon_state = "evil"
+	var/jammed = FALSE
+	var/jam_chance = 15
+
+/obj/item/gun/projectile/automatic/broz/evil/special_check(mob/user)
+	if(jammed)
+		to_chat(user, SPAN_WARNING("[src] is jammed!"))
+		return 0
+	else
+		if(loaded.len && prob(jam_chance))
+			jammed = TRUE
+			playsound(src.loc, 'sound/weapons/guns/interact/hpistol_cock.ogg', 70, 1)
+			to_chat(user, SPAN_DANGER("[src] is jammed!"))
+			return 0
+	return ..()
+
+/obj/item/gun/projectile/shotgun/doublebarrel/king_shotgun
 	name = "\"King's\" shotgun"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	The replication of a prized legendary royal shotgun wielded by a king that was once prophesized to have used it for their own undoing."
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 12 gauge. \
+			A replica of a prized legendary royal shotgun wielded by a king that was once prophesized to have used it for their own undoing. Oddly it seems to sport a firemode to fire two barrels.. but it only has one. For now."
 	icon_state = "shotgun"
 	load_method = SINGLE_CASING|SPEEDLOADER
 	handle_casings = CYCLE_CASINGS
@@ -52,7 +85,6 @@
 		list(mode_name="August Presence", mode_desc="Fires two of the king's decrees at the same time.", burst=2, icon="semi")
 		)
 
-
 /obj/item/gun/projectile/shotgun/doublebarrel/bluecross_shotgun/bolt_act(mob/living/user)
 	bolt_open = !bolt_open
 	if(bolt_open)
@@ -65,9 +97,48 @@
 	add_fingerprint(user)
 	update_icon()
 
+/obj/item/gun/projectile/automatic/slaught_o_matic/lockpickomatic
+	name = "\"Lockpick-o-Matic\""
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 7mm. \
+			A mix of several other Slot-o-Matics put together after being sawn apart to make a rainbow and then fitted with a long unreloadable caseless magazine."
+	caliber = CAL_CLRIFLE
+	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
+	ammo_type = "/obj/item/ammo_casing/pistol"
+	mag_well = MAG_WELL_PULSE
+	magazine_type = /obj/item/ammo_magazine/cl7mm
+	gun_tags = list(GUN_PROJECTILE)
+	possible_colors = list("rainbow")
+	init_recoil = EMBEDDED_RECOIL(0.5)
+	price_tag = 300
+	serial_type = "Mastercraft"
+
+/obj/item/gun/projectile/colt/cult
+	name = "Brass \"Cult\" pistol"
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 10mm. \
+			A normal looking ML Colt but somehow made completely out of brass, with a small light in its chamber that glows an eerie red and feeling warm to the touch. \
+			If you listen in closely, there's a faint sound of whirling cogs coming from the inside.."
+	icon = 'icons/obj/guns/projectile/colt.dmi'
+	icon_state = "brass"
+	item_state = "brass"
+	caliber = CAL_MAGNUM
+	origin_tech = list(TECH_MAGNET = 10) //3500 points for rnd, eh its meant to stay in player hands not be deconned
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
+	price_tag = 2450
+	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
+	can_dual = TRUE
+	load_method = MAGAZINE
+	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL
+	damage_multiplier = 1.5
+	penetration_multiplier = 1.2 // So that it's good for PVE too
+	init_recoil = HANDGUN_RECOIL(0.3)
+	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
+	serial_type = "Mastercraft"
+
+//Energy Guns
+
 /obj/item/gun/energy/ntpistol/mana
 	name = "\"Mana from Heaven\" energy pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
 	A black and blue version of the defunct \"Serenity\" energy pistol, somehow despite looking just like a repainted job it conserves power unusually well."
 	icon_state = "ntpistol"
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
@@ -82,24 +153,12 @@
 	suitable_cell = /obj/item/cell/small
 	cell_type = /obj/item/cell/small
 	price_tag = 2550
-	serial_type = "BlueCross"
+	serial_type = "Mastercraft"
 	icon = 'icons/obj/guns/energy/ntpistol_bluecross.dmi'
-
-/obj/item/gun/energy/lasersmg/inferno
-	name = "Disco Inferno \"Light Show\""
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	Someone has inscribed 'INFERNO' in a stylized multi-color crayon on the side while modifying its internal power capacitor to be much more efficient."
-	charge_cost = 10 // Ridiculously cell efficient
-	projectile_type = /obj/item/projectile/beam/weak/smg/firestorm // DISCO INFERNO
-	fire_sound = 'sound/weapons/guns/fire/sunrise_fire.ogg'
-	icon_state = "lightshow" // 7 colors of the rainbow from pre-existing energy weapons! Woo!
-	item_state = "lightshow"
-	price_tag = 1000
-	serial_type = "BlueCross"
 
 /obj/item/gun/energy/lasersmg/chaos_engine
 	name = "Hell's Teeth \"Chaos Engine\""
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
 			A styled red laser submachine gun often referred to as a chaos engine due to its unpredictability and penchant for letting its user unleash a blended hell of lasers."
 	icon = 'icons/obj/guns/energy/lasersmg_hell.dmi'
 	icon_state = "chaossmg"
@@ -114,38 +173,25 @@
 		BURST_8_ROUND,
 		FULL_AUTO_600 // UNLEASH HELL
 		)
-	serial_type = "BlueCross"
+	serial_type = "Mastercraft"
 
-/obj/item/gun/projectile/silenced/rat
-	name = "\"Rat Man\" silenced pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-	A spray painted decal of a rat man with a grinning face has been placed on the grip, the deadliest killers are often those ignored or underestimated by others after all. \
-	This particular pistol has been oiled, cleaned, and appears to be so well maintained that its become 110% of its normal potential."
-	damage_multiplier = 1.8
-	init_recoil = HANDGUN_RECOIL(0.3)
-	penetration_multiplier = 3.1
-	price_tag = 2350
-	serial_type = "BlueCross"
-
-/obj/item/gun/projectile/automatic/slaught_o_matic/lockpickomatic
-	name = "\"Lockpick-o-Matic\""
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			A mix of several other Slot-o-Matics put together after being sawn apart to make a rainbow and then fitted with a long unreloadable 10x24 caseless mag."
-	caliber = "7mm"
-	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
-	ammo_type = "/obj/item/ammo_casing/pistol"
-	mag_well = MAG_WELL_PULSE
-	magazine_type = /obj/item/ammo_magazine/cl7mm
-	gun_tags = list(GUN_PROJECTILE)
-	possible_colors = list("rainbow")
-	init_recoil = EMBEDDED_RECOIL(0.5)
-	price_tag = 300
-	serial_type = "BlueCross"
+/obj/item/gun/energy/sniperrifle/saint
+	name = "\"Saint\" laser rifle"
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
+	The normal \"Valkyrie\" design meeting the improvements with Lightfall design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
+	charge_cost = 200
+	extra_damage_mult_scoped = 0.2
+	fire_delay = 25
+	price_tag = 3750
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_GOLD = 9, MATERIAL_URANIUM = 6) //The normal valk needs silver this is gold plated!
+	icon = 'icons/obj/guns/energy/sniper_saint.dmi'
+	fire_sound = 'sound/weapons/energy/aer9fire.ogg'
+	serial_type = "Mastercraft"
 
 /obj/item/gun/energy/captain/zapper
 	name = "\"Retro-Funk\" Zapper"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			Not really much of an interesting weapon by Bluecross standards, with no unusual properties besides a self charging battery and incredible shot capacity. Often loved for its simplicity and retro style."
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
+			Not really much of an interesting weapon by Mastercraft standards, with no unusual properties besides a self charging battery and incredible shot capacity. Often loved for its simplicity and retro style."
 	icon = 'icons/obj/guns/energy/zapper.dmi'
 	fire_sound = 'sound/weapons/energy/Laser4.ogg' // Retro!
 	icon_state = "zap"
@@ -153,12 +199,12 @@
 	item_charge_meter = FALSE
 	charge_meter = FALSE
 	price_tag = 1500
-	serial_type = "BlueCross"
+	serial_type = "Mastercraft"
 	allow_greyson_mods = FALSE
 
 /obj/item/gun/energy/xray/psychic_cannon
 	name = "\"Manta-RAY\" cannon"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
 			An unusual gun sought after by the Soteria when it appears for both its utility and its research value. It's durasteel interior and unknown technological function allows \
 			this weapon to use moderately high damage armor penetrating x-ray laser blasts. While a strict step up from a standard x-ray weapon in all ways, this weapon is more valued for \
 			its research points in the deconstrustive analyzer."
@@ -174,7 +220,7 @@
 	gun_tags = list(GUN_LASER, GUN_ENERGY)
 	can_dual = TRUE
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	serial_type = "BlueCross"
+	serial_type = "Mastercraft"
 
 /obj/item/gun/projectile/that_gun/update_icon()
 	..()
@@ -190,31 +236,10 @@
 
 	icon_state = iconstring
 	set_item_state(itemstring)
-
-/obj/item/gun/projectile/colt/cult
-	name = "Brass \"Cult\" pistol"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
-			A normal looking H&S Colt but somehow made completely out of brass, with a small light in its chamber that glows an eerie red and feeling warm to the touch. If you listen in closely, there's a faint sound of whirling cogs coming from the inside."
-	icon = 'icons/obj/guns/projectile/colt.dmi'
-	icon_state = "brass"
-	item_state = "brass"
-	caliber = CAL_PISTOL
-	origin_tech = list(TECH_MAGNET = 10) //3500 points for rnd, eh its meant to stay in player hands not be deconned
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
-	price_tag = 2450
-	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
-	can_dual = TRUE
-	load_method = MAGAZINE
-	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL
-	damage_multiplier = 1.5
-	penetration_multiplier = 1.2 // So that it's good for PVE too
-	init_recoil = HANDGUN_RECOIL(0.3)
-	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	serial_type = "BlueCross"
-
+/*
 /obj/item/gun/energy/lasersmg/p9evil
 	name = "P9 \"Evil\" smg"
-	desc = "An anomalous weapon created by rivals of the unknown person(or group?) of the bluecross, their work marked by a crimson cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "An anomalous weapon created by rivals of the unknown person(or group?) of the Mastercraft, their work marked by a crimson cross, these weapons are known to vanish and reappear when left alone. \
 			An odd looking tool-made smg of sorts, made completely out of stamped metal and hatred. You wonder by looking at this how many people have used this worn weapon of war. \
 			Looking at it long enough appears to make you see red.. feeling as if its draining your life force just to fire it! Let the hatred RISE!"
 	icon = 'icons/obj/guns/energy/p9evil.dmi'
@@ -245,11 +270,12 @@
 	user.maxHealth -=0.1
 	user.health -=0.1
 	return new projectile_type(src)
+*/
 
 //Melee Weapons
 /obj/item/tool/nailstick/ogre
 	name = "\"Oni\" Greatclub"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
 			A wooden club inscribed with several symbols of jana, though they make no sense put together. The wood is of unusual qualities and some lunatic hammered durasteel nails into \
 			it. Either the maker didn't know or didn't care about the value, it still ended up a supremely deadly weapon ... or hammer."
 	icon_state = "oni"
@@ -265,13 +291,13 @@
 
 /obj/item/tool/knife/dagger/assassin/ubersaw //Waiting for code to be done to deal blood damage/take % of blood
 	name = "\"Uber\" syringe-dagger"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
 			Whoever made this was very pro-active about collecting samples in the middle of active combat. They probably lost their medical license."
 	price_tag = 1900
 
 /obj/item/tool/wrench/big_wrench/freedom
 	name = "\"Freedom\" wrench"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
 			The sign of a man is someone who can build and who can break, with a wrench like this, you'll do both."
 	icon_state = "freedom_wrench"
 	w_class = ITEM_SIZE_NORMAL
@@ -286,7 +312,7 @@
 
 /obj/item/tool/saw/hyper/doombringer
 	name = "\"Doombringer\" chainsword"
-	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these weapons are known to vanish and reappear when left alone. \
+	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
 			The only thing they fear is you."
 	icon_state = "rip_and_tear"
 	item_state = "rip_and_tear"

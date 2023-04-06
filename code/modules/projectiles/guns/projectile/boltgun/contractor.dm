@@ -9,7 +9,7 @@
 	force = WEAPON_FORCE_ROBUST
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	fire_delay = 2.5
 	damage_multiplier = 1.6
 	penetration_multiplier  = 1.6

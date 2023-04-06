@@ -518,13 +518,13 @@
 		/datum/design/autolathe/ammo/lrifle_ammobox_rubber,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/rhaki
-	disk_name = "LG - 6.5mm Rhaki LMG"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/hog
+	disk_name = "LG - 6.5mm Hog LMG"
 	icon_state = "frozenstar"
 
 	license = 8 //So we can print 2 and some ammo
 	designs = list(
-		/datum/design/autolathe/gun/rahki = 3,
+		/datum/design/autolathe/gun/hog = 3,
 		/datum/design/autolathe/ammo/lrifle_ammobox = 2,
 		/datum/design/autolathe/ammo/lrifle_belt, //This is its linked ammo
 		/datum/design/autolathe/ammo/lrifle_belt_empty = 0,
@@ -831,5 +831,15 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	designs = list(
 		/datum/design/autolathe/gun/operator_rifle = 3,
 		/datum/design/autolathe/ammo/cl7mm,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/contractor
+	disk_name = "ML - 7mm Caseless Contractor Rifle"
+	icon_state = "black"
+
+	license = 10 //2 guns 2 mags and 1 box
+	designs = list(
+		/datum/design/autolathe/gun/contractor = 3,
 		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)

@@ -23,7 +23,7 @@
 	build_path = /obj/item/gun/projectile/makarov
 
 /datum/design/autolathe/gun/detective
-	name = "Car-Van 9mm \"Pocket Princess\""
+	name = "Car-Van 9mm \"Pocket Prince\""
 	build_path = /obj/item/gun/projectile/revolver/detective
 
 /// 10mm M A G N U M
@@ -109,9 +109,9 @@
 	name = "ML 6.5x39mm \"Buzzsaw\""
 	build_path = /obj/item/gun/projectile/automatic/lmg/buzzsaw
 
-/datum/design/autolathe/gun/rahki
-	name = "LG 6.5x39mm \"Pig\""
-	build_path = /obj/item/gun/projectile/automatic/lmg/rhaki
+/datum/design/autolathe/gun/hog
+	name = "LG 6.5x39mm \"Hog\""
+	build_path = /obj/item/gun/projectile/automatic/lmg/hog
 
 /datum/design/autolathe/gun/rosefield
 	name = "Car-Van 6.5x39mm \"Rosefield\""
@@ -153,6 +153,7 @@
 
 /datum/design/autolathe/gun/contractor
 	name = "Car-Van 7mm Caseless \"Contractor\""
+	build_path = /obj/item/gun/projectile/boltgun/contractor
 
 /datum/design/autolathe/gun/operator_rifle
 	name = "ML 7mm Caseless \"Operator\""

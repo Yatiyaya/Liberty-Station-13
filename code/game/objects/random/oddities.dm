@@ -56,15 +56,15 @@
 /obj/random/oddity_guns/item_to_spawn()
 	return pickweight(list(
 				//Bullet
-				/obj/item/gun/projectile/revolver/mistral/elite = 1,
-				/obj/item/gun/projectile/shotgun/doublebarrel/bluecross_shotgun = 1,
-				/obj/item/gun/projectile/silenced/rat = 1,
+				/obj/item/gun/projectile/revolver/ranger/gatvolver = 1,
+				/obj/item/gun/projectile/shotgun/doublebarrel/king_shotgun = 1,
 				/obj/item/gun/projectile/automatic/slaught_o_matic/lockpickomatic = 1,
-				/obj/item/gun/projectile/that_gun = 1,
+				/obj/item/gun/projectile/automatic/broz/evil = 1,
+				/obj/item/gun/projectile/clarissa/stealth = 1,
+				/obj/item/gun/projectile/revolver/ranger/gatvolver = 1,
 				/obj/item/gun/projectile/colt/cult = 1,
 				//Energy
 				/obj/item/gun/energy/sniperrifle/saint = 1,
-				//obj/item/gun/energy/lasersmg/inferno = 1,
 				/obj/item/gun/energy/ntpistol/mana = 1,
 				/obj/item/gun/energy/captain/zapper = 1,
 				/obj/item/gun/energy/xray/psychic_cannon = 1,

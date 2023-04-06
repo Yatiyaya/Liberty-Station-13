@@ -10,7 +10,7 @@
 	item_state = "wayfarer"
 	excelsior = FALSE
 	drawChargeMeter = FALSE
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 8
 	ammo_type = /obj/item/ammo_magazine/cl7mm

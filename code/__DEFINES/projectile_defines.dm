@@ -4,7 +4,7 @@
 
 #define CAL_SRIFLE "6.5mm carbine"
 #define CAL_RIFLE "7.62mm rifle"
-#define CAL_CLRIFLE
+#define CAL_CLRIFLE "7mm caseless"
 
 #define CAL_SHOTGUN "Shotgun Shell"
 

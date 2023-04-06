@@ -669,30 +669,18 @@
 /obj/item/ammo_magazine/cl7mm
 	name = "caseless magazine"
 	desc = "An unsual magazine, marked for 7mm caseless."
-	icon_state = "10x24"
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_PULSE
-	caliber = "7mm"
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
-	ammo_type = /obj/item/ammo_casing/cl7mm
-	max_ammo = 99
-	multiple_sprites = 1
-
-/obj/item/ammo_magazine/cl7mm/empty
-	icon_state = "10x24"
-	initial_ammo = 0
-
-/obj/item/ammo_magazine/cl7mm // Refactors as it's not intended for a rifle but rather the Spec Ops.
-	name = "high-capacity box magazine"
-	desc = "A 40 round magazine marked for 7mm rounds."
-	icon_state = "rifle"
+	icon_state = "clrifle"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_STEEL = 8)
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
+	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
 	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 40
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/cl7mm/empty
+	icon_state = "clrifle"
+	initial_ammo = 0
 
 ///////// SPEEDLOADERS ///////////
 

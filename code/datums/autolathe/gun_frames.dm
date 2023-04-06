@@ -68,7 +68,7 @@ This is mostly used for Marshal gun crafting to make it so they can make guns bu
 	build_path = /obj/item/part/gun/frame/clarissa
 
 /datum/design/autolathe/gun_frame/havelock
-	name = "9mm Pocket Princess - frame"
+	name = "9mm Pocket Prince - frame"
 	build_path = /obj/item/part/gun/frame/detective
 
 /datum/design/autolathe/gun_frame/broz

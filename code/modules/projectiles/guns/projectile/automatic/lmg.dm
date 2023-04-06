@@ -151,7 +151,7 @@
 	desc = "A Buzzsaw LMG frame. A fine-oiled machine of war and death."
 	icon_state = "frame_mg"
 	result = /obj/item/gun/projectile/automatic/lmg/buzzsaw
-	resultvars = list(/obj/item/gun/projectile/automatic/lmg/buzzsaw, /obj/item/gun/projectile/automatic/lmg/rhaki)
+	resultvars = list(/obj/item/gun/projectile/automatic/lmg/buzzsaw, /obj/item/gun/projectile/automatic/lmg/hog)
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/machinegun
 	barrelvars = list(/obj/item/part/gun/barrel/srifle, /obj/item/part/gun/barrel/lrifle)
@@ -187,9 +187,9 @@
 	update_icon()
 
 // I AM HEAVY WEAPONS GUY, AND THIS...IS MY WEAPON. - Seb
-/obj/item/gun/projectile/automatic/lmg/rhaki
-	name = " \"Rhaki\" General Purpose Machinegun"
-	desc = "The \"Rahki\" General Purpose Machinegun was created by local gunsmiths in response to the dense forest and lack of suppressing fire armaments. \
+/obj/item/gun/projectile/automatic/lmg/hog
+	name = " \"Hog\" General Purpose Machinegun"
+	desc = "The \"Hog\" General Purpose Machinegun was created by local gunsmiths in response to the dense forest and lack of suppressing fire armaments. \
 			Inspired by Martian Logistics' \"Buzzsaw\" LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
 			Chambered in 6.5mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
 	icon = 'icons/obj/guns/projectile/rhaki.dmi'
@@ -213,7 +213,7 @@
 	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 // Even more special than the Takeshi so we have to do this all over again instead of being a Takeshi child
-/obj/item/gun/projectile/automatic/lmg/rhaki/update_icon()
+/obj/item/gun/projectile/automatic/lmg/hog/update_icon()
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
 
@@ -241,7 +241,7 @@
 	set_item_state(itemstring)
 
 
-/obj/item/gun/projectile/automatic/lmg/rhaki/Initialize()
+/obj/item/gun/projectile/automatic/lmg/hog/Initialize()
 	. = ..()
 	update_icon()
 

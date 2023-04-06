@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver
 	name = "Debug revolver"
-	desc = "You shouldn't find this. Tell us if you do. Master-path of revolvers for testing purposes."
+	desc = "You shouldn't find this. Tell us if you do. Master-path of revolvers for testing purposes."			// This exists solely to set revolvers up to work with spinning, cylander, etc.
 	icon = 'icons/obj/guns/projectile/ranger.dmi'
 	icon_state = "ranger"
 	item_state = "ranger"
@@ -16,14 +16,12 @@
 	cocked_sound = 'sound/weapons/guns/interact/rev_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
-	price_tag = 2000 //avasarala of revolver world
 	fire_delay = 3 //all revolvers can fire faster, but have huge recoil
-	damage_multiplier = 1.6
-	penetration_multiplier = -0.3 // Insanely powerful handcannon, but worthless against heavy armor
 	init_recoil = HANDGUN_RECOIL(1.2)
 	var/drawChargeMeter = TRUE
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 
+//Style code - currently no use. Someday (tm)
 /*/obj/item/gun/projectile/revolver/pickup(mob/user)
 	. = ..()
 	if(ishuman(user))

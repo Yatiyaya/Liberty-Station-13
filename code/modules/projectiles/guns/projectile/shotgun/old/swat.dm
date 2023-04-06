@@ -81,7 +81,7 @@
 	twohanded = FALSE
 	load_method = SINGLE_CASING
 	ammo_type = /obj/item/ammo_casing/7mm
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	handle_casings = EJECT_CASINGS
 	init_firemodes = list(
 		BURST_3_ROUND

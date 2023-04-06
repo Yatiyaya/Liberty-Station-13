@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/revolver/detective
-	name = "\"Pocket Princess\" revolver"
+	name = "\"Pocket Prince\" revolver"
 	desc = "A cheap H&S J-frame revolver, simple, reliable, uses 9mm."
 	icon = 'icons/obj/guns/projectile/pocket.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_revolver.ogg'
@@ -22,8 +22,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/detective= 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/pistol = 1)
 
 /obj/item/part/gun/frame/detective
-	name = "Pocket Princess frame"
-	desc = "A Pocket Princess revolver frame. Personal defense in a small package."
+	name = "Pocket Prince frame"
+	desc = "A Pocket Prince revolver frame. Personal defense in a small package."
 	icon_state = "frame_havelock"
 	result = /obj/item/gun/projectile/revolver/detective
 	resultvars = list(/obj/item/gun/projectile/revolver/detective)

@@ -7,10 +7,10 @@
 	item_state = "operator"
 	w_class = ITEM_SIZE_NORMAL
 	can_dual = TRUE
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	load_method = MAGAZINE
-	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG
+	mag_well = MAG_WELL_RIFLE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 12)
 	init_firemodes = list(
 		FULL_AUTO_300,

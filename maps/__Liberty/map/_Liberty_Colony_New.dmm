@@ -60878,7 +60878,6 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "obm" = (
-/obj/item/gun/energy/lasersmg/p9evil,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1east)
 "obo" = (

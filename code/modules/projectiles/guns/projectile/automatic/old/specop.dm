@@ -8,7 +8,7 @@
 	silenced = TRUE
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BACK|SLOT_BELT
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	ammo_type =  /obj/item/ammo_casing/7mm
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well =  MAG_WELL_RIFLE

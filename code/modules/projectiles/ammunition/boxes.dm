@@ -386,7 +386,7 @@
 	icon_state = "box10x24"
 	desc = "A box of 10mm caseless round, how odd."
 	matter = list(MATERIAL_CARDBOARD = 1)
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 200
 
@@ -395,7 +395,7 @@
 	icon_state = "box10mm"
 	desc = "A box of 10mm caseless round, how odd."
 	matter = list(MATERIAL_CARDBOARD = 1)
-	caliber = "7mm"
+	caliber = CAL_CLRIFLE
 	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 80 //6.6 reloads of the SWAT, 2 of the bond, almost 1 full pulse mag
 

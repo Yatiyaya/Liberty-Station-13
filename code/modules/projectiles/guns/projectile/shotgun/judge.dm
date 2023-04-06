@@ -76,6 +76,7 @@
 	penetration_multiplier = 1.1 //10% more ap
 	damage_multiplier = 1.0
 
+//Funni admin gun. Don't use this besides debugging.
 /obj/item/gun/projectile/automatic/judge/admin
 	name = "\"Purgeinator\" payload rifle"
 	desc = "An obscene tool of destruction forged by ancient gods of warfare, sowing horror when you weild this Thunder Striking Wizard Thrasher."
