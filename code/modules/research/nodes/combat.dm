@@ -211,13 +211,9 @@
 	cost = 1500
 
 	unlocks_designs = list(
-							/datum/design/research/item/weapon/c20r,
-							/datum/design/research/item/ammo/smg_mag/lethal,
-							/datum/design/research/item/ammo/smg_mag/rubber,
 							/datum/design/research/item/weapon/katana,
 							/datum/design/research/item/ammo/rifle_75,
 							/datum/design/research/item/ammo/light_rifle_257,
-							/datum/design/research/item/ammo/kurtz_laser
 						)
 
 /datum/technology/exotic_gunmods
@@ -259,7 +255,6 @@
 
 	unlocks_designs = list(/datum/design/research/item/weapon/nuclear_gun,
 							/datum/design/research/item/weapon/lasercannon,
-							/datum/design/research/item/ammo/heavy_rifle_408,
 							/datum/design/research/item/weapon/centauri
 							)
 

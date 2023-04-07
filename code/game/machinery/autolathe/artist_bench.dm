@@ -215,7 +215,7 @@
 				R.fire_sound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 
 			if("rifle")
-				R.caliber = pick(CAL_HRIFLE, CAL_LRIFLE, CAL_RIFLE)
+				R.caliber = pick(CAL_SRIFLE, CAL_RIFLE)
 				R.fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
 			//No gun currently uses CAL_357 far as I know
@@ -226,9 +226,6 @@
 				R.caliber = CAL_ANTIM
 				R.bulletinsert_sound = 'sound/weapons/guns/interact/rifle_load.ogg'
 				R.fire_sound = 'sound/weapons/guns/fire/AMR.ogg'
-
-			if("gyro")//From gyropistol.dm, Arbitrary values
-				R.caliber = CAL_70
 
 			if("grenade")
 				R.caliber = CAL_GRENADE

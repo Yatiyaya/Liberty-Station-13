@@ -31,13 +31,13 @@
 		"Weapons" = list(
 			/obj/item/melee/energy/sword,
 			/obj/item/organ_module/active/simple/armblade/energy_blade,
-			/obj/item/gun/projectile/revolver/tacticool_revolver
+			/obj/item/gun/projectile/revolver/ranger
 		)
 	)
 	hidden_inventory = list(
 		"Firearms" = list(
-			/obj/item/gun/projectile/automatic/c20r = custom_good_amount_range(list(1, 1)),
-			/obj/item/gun/projectile/automatic/omnirifle = custom_good_amount_range(list(1, 1))
+			/obj/item/gun/projectile/automatic/ak47/sa = custom_good_amount_range(list(1, 1)),
+			/obj/item/gun/projectile/automatic/federalist = custom_good_amount_range(list(1, 1))
 		),
 		"RIG Modules" = list(
 			/obj/item/rig_module/autodoc,

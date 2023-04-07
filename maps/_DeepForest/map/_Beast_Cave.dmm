@@ -5760,7 +5760,6 @@
 "wM" = (
 /obj/item/ammo_magazine/rifle_75,
 /obj/item/remains/human,
-/obj/item/gun/projectile/automatic/vintorez/NM_colony,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/beast_cave_dark)
 "wO" = (

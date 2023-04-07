@@ -29,7 +29,7 @@
 		)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/shotgun/doublebarrel/sawn
-	serial_type = "SA"
+	serial_type = "Car-Van"
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.3 // 30 vig , great as a surprise
 	gun_parts = list(/obj/item/part/gun/frame/doublebarrel = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
@@ -118,15 +118,3 @@
 	saw_off = FALSE
 
 	wield_delay = 0 SECOND //KER-BLAM!!!
-
-/obj/item/gun/projectile/shotgun/doublebarrel/axe
-	name = "axe double-barreled shotgun"
-	desc = "A mutilated clasic shotgun chambered in 20mm, this one complete with an axe head towards the barrels!"
-	icon_state = "bshotgun"
-	item_state = "bshotgun"
-	damage_multiplier = 0.8 //slightly weaker due to the fact - you know, you put a fucking axe on it.
-	init_recoil = RIFLE_RECOIL(1)
-	saw_off = FALSE
-	sharp = TRUE //Duh, it's an axe.
-	force = WEAPON_FORCE_ROBUST
-	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG,GUN_BAYONET)

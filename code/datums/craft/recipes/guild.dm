@@ -268,23 +268,6 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/guild_bull
-	name = "bison double barrel shotgun"
-	result = /obj/item/gun/projectile/shotgun/bull/bison
-	steps = list(
-		list(/obj/item/gun/projectile/shotgun/bull, 1, "time" = 80),
-		list(/obj/item/gun_upgrade/barrel/bore, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_DRILLING, 60, "time" = 90),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 45, "time" = 40),
-		list(QUALITY_SAWING, 50, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 40),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
-	)
-
 /datum/craft_recipe/guild/martinupgraded
 	name = "overclocked martin energy pistol"
 	result = /obj/item/gun/energy/gun/martin/upgraded
@@ -350,34 +333,6 @@
 		list(/obj/item/stock_parts/micro_laser, 2, "time" = 80),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
-	)
-
-/datum/craft_recipe/guild/pilgrim_devout
-	name = "pilgrim devout"
-	result = /obj/item/gun/projectile/revolver/lemant/belt
-	steps = list(
-		list(/obj/item/gun/projectile/revolver/lemant, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 40),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 30, "time" = 40),
-	)
-
-/datum/craft_recipe/guild/ten_shot_conversion
-	name = "ten-shot conversion shotgun"
-	result = /obj/item/gun/projectile/revolver/sixshot/conversion
-	steps = list(
-		list(/obj/item/gun/projectile/revolver/sixshot, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 40),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 30, "time" = 40),
 	)
 
 /datum/craft_recipe/guild/heavypulserifle
@@ -676,22 +631,6 @@
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 40),
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
-	)
-
-/datum/craft_recipe/guild/kit
-	name = "Kurtz's refinement kit"
-	result = /obj/item/gun_upgrade/mechanism/upgrade_kit
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 30),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(CRAFT_MATERIAL, 3, MATERIAL_SILVER),
-		list(QUALITY_DRILLING, 60, "time" = 90),
-		list(QUALITY_WELDING, 40, "time" = 40),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 30),
 		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
 	)
 

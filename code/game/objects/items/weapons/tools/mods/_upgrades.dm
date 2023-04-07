@@ -511,6 +511,12 @@
 		if(weapon_upgrades[GUN_UPGRADE_MAGUP])
 			P.max_shells += weapon_upgrades[GUN_UPGRADE_MAGUP]
 
+		if(weapon_upgrades[GUN_UPGRADE_CHEM])
+			P.give_reagents = TRUE
+
+		if(weapon_upgrades[GUN_UPGRADE_CHEMICAL])
+			P.spray = GUN_UPGRADE_CHEMICAL
+
 	for(var/datum/firemode/F in G.firemodes)
 		apply_values_firemode(F)
 

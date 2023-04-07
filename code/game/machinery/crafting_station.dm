@@ -145,10 +145,6 @@
 			required_resources = materials_rocket
 			items_to_spawn = list("" = /obj/item/ammo_casing/rocket/scrap/prespawned)
 
-		if("19mm gyrojet rocket")
-			required_resources = materials_rocket
-			items_to_spawn = list("" = /obj/item/ammo_casing/a75)
-
 		if("Gun parts")
 			choice = input(user, "Which type of part do you want to craft?") as null|anything in list("Small arms", "Long arms", /*"Heavy parts"*/"Cheap parts", "Grips")
 			switch(choice)
@@ -219,9 +215,6 @@
 								if("10mm barrel")
 									required_resources = materials_sbarrel_steel
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/magnum/steel)
-								if("12mm barrel")
-									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/kurtz/steel)
 								if("6.5mm barrel")
 									required_resources = materials_lbarrel_steel
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/srifle/steel)
@@ -231,9 +224,6 @@
 								if("7.62mm barrel")
 									required_resources = materials_lbarrel_steel
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/lrifle/steel)
-								if("8.6mm barrel")
-									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/hrifle/steel)
 								if("Shotgun barrel")
 									required_resources = materials_lbarrel_steel
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/shotgun/steel)

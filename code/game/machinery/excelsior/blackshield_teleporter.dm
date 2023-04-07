@@ -38,49 +38,37 @@ var/global/blackshield_max_energy //Maximaum combined energy of all teleporters
 		/obj/item/ammo_magazine/highcap_pistol_35/drum = 125,
 		/obj/item/ammo_magazine/smg_35 = 35,
 		/obj/item/ammo_magazine/magnum_40 = 40,
-		/obj/item/ammo_magazine/kurtz_50 = 60,
 		/obj/item/ammo_magazine/speed_loader_light_rifle_257 = 15,
 		/obj/item/ammo_magazine/speed_loader_rifle_75 = 15, //More or less for ammo rather then speedloader
 		/obj/item/ammo_magazine/light_rifle_257 = 30,
 		/obj/item/ammo_magazine/rifle_75 = 35,
 		/obj/item/ammo_magazine/speed_loader_shotgun = 35,
 		/obj/item/ammo_magazine/rifle_75_linked_box/empty = 65, // Empty linked mag for balance, making the Heroic actually useable if ordered.
-		/obj/item/ammo_magazine/heavy_rifle_408 = 50,
 		/obj/item/ammo_magazine/sbaw = 50,
 		/obj/item/ammo_magazine/ammobox/pistol_35 = 75,
 		/obj/item/ammo_magazine/ammobox/magnum_40 = 150,
-		/obj/item/ammo_magazine/ammobox/kurtz_50 = 200,
 		/obj/item/ammo_magazine/ammobox/shotgun = 500,
 		/obj/item/ammo_magazine/ammobox/light_rifle_257 = 300,
 		/obj/item/ammo_magazine/ammobox/rifle_75 = 400,
-		/obj/item/ammo_magazine/ammobox/heavy_rifle_408 = 500,
 		//Guns
 		/obj/item/gun/projectile/automatic/slaught_o_matic = 15, //So blackshiled can trade with propis :P
 		/obj/item/gun/projectile/boltgun/flare_gun = 10, //DAZZLATION!
-		/obj/item/gun/projectile/colt/ten = 75,
-		/obj/item/gun/projectile/boltgun/light = 50,
+		/obj/item/gun/projectile/colt/freedom = 75,
+		/obj/item/gun/projectile/boltgun/rosefield = 50,
 		/obj/item/gun/projectile/boltgun = 75,
-		/obj/item/gun/projectile/boltgun/lever/shotgun/bounty = 400,
+		/obj/item/gun/projectile/boltgun/lever/shotgun = 400,
 		/obj/item/gun/projectile/automatic/duty = 325,
 		/obj/item/gun/projectile/automatic/sts/rifle = 400,
-		/obj/item/gun/projectile/automatic/drozd/NM_colony = 375,
-		/obj/item/gun/projectile/automatic/ppsh/NM_colony = 300,
-		/obj/item/gun/projectile/automatic/ak47/NM_colony = 450,
-		/obj/item/gun/projectile/automatic/vintorez/NM_colony = 400,
-		/obj/item/gun/projectile/automatic/ak47/saiga/NM_colony = 500,
 		/obj/item/shield/buckler = 250,
 		/obj/item/shield/riot = 350,
 		//Armor
 		/obj/item/clothing/head/helmet/faceshield/altyn/milisha = 120,
 		/obj/item/clothing/suit/space/void/security/odst/mil = 300,
 		/obj/item/clothing/suit/space/void/odst/corps = 300,
-		/obj/item/storage/box/bs_kit/bullet_armor = 500,
-		/obj/item/storage/box/bs_kit/laser_armor = 750,
 		/obj/item/clothing/suit/space/void/SCAF/blackshield = 1250, //One of the best things we can get
 		//misc
 		/obj/item/tool/baton = 200,
 		/obj/item/storage/firstaid/surgery/traitor = 250, //Advanced tools inside
-		/obj/item/computer_hardware/hard_drive/portable/design/blackshield = 500,
 		/obj/item/storage/firstaid/blackshield/large = 500,
 		/obj/item/stock_parts/blackshield/stskit = 750 //For making STS PARAs
 		)
