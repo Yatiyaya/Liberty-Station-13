@@ -463,7 +463,7 @@
 	icon_state = "regrowth"
 
 /datum/perk/si_sci
-	name = "SI Science Training"
+	name = "PI Science Training"
 	desc = "You know how to use RnD core consoles and Exosuit Fabs."
 	icon_state = "knowledge"
 

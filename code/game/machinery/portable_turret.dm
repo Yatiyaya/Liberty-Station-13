@@ -236,7 +236,7 @@ var/list/turret_icons
 		settings[++settings.len] = list("category" = "Check Arrest Status", "setting" = "check_arrest", "value" = check_arrest)
 		settings[++settings.len] = list("category" = "Check Access Authorization", "setting" = "check_access", "value" = check_access)
 		settings[++settings.len] = list("category" = "Check misc. Lifeforms", "setting" = "check_anomalies", "value" = check_anomalies)
-		settings[++settings.len] = list("category" = "Check misc. Alliement To Local SI Systems", "setting" = "colony_allied_turret", "value" = colony_allied_turret)
+		settings[++settings.len] = list("category" = "Check misc. Alliement To Local PI Systems", "setting" = "colony_allied_turret", "value" = colony_allied_turret)
 		data["settings"] = settings
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)

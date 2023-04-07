@@ -21,4 +21,4 @@
 	cell = new /obj/item/cell/large/super(src)
 	. = ..()
 	update_icon()
-	serial_type = "SI"
+	serial_type = "PI"

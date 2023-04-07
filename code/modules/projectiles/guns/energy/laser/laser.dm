@@ -32,7 +32,7 @@
 	restrict_safety = TRUE
 	damage_multiplier = 0.7
 	twohanded = FALSE
-	serial_type = "SI"
+	serial_type = "PI"
 
 /obj/item/gun/energy/laser/mounted/blitz
 	name = "SDF LR \"Strahl\""

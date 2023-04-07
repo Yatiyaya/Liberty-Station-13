@@ -49,7 +49,7 @@
 
 /obj/item/gun/energy/stunrevolver
 	name = "\"Zeus\" stun revolver"
-	desc = "Also know as stun revolver. Seinemetall Defense GmbH with CAPSA solution for non-lethal takedowns, its rather simple deisign has a smaller capacity in exchange for S-cells use. \
+	desc = "Also know as stun revolver. Seinemetall Defense GmbH with Phokorus Institute solution for non-lethal takedowns, its rather simple deisign has a smaller capacity in exchange for S-cells use. \
 			The now outdated design was the base for the much more successfull \"Counselor\"."
 	icon = 'icons/obj/guns/energy/stunrevolver.dmi'
 	icon_state = "stunrevolver"
@@ -66,10 +66,10 @@
 
 /obj/item/gun/energy/stunrevolver/sci
 	name = "\"Hera\" stun revolver"
-	desc = "Also know as stun revolver. Seinemetall Defense GmbH with CAPSA solution for non-lethal takedowns, its rather simple deisign has a smaller capacity in exchange for S-cells use. \
+	desc = "Also know as stun revolver. Seinemetall Defense GmbH with Phokorus Institute solution for non-lethal takedowns, its rather simple deisign has a smaller capacity in exchange for S-cells use. \
 			The now outdated design was the base for the much more successful \"Counselor\". This verson is almost identical to the \"Zeus\" only being repainted after Seinemetall Defense GmbH moved to ballistics based manufacturing."
 	icon = 'icons/obj/guns/energy/si_stunrevolver.dmi'
-	serial_type = "SI"
+	serial_type = "PI"
 
 /obj/item/gun/energy/taser/blackshield
 

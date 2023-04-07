@@ -1,4 +1,4 @@
-// SI Sword Drone Assembly Steps
+// PI Sword Drone Assembly Steps
 /obj/item/bot_part/sword_part/main_frame/attackby(obj/item/W as obj, mob/user as mob)
 	..() // Default stuff.
 

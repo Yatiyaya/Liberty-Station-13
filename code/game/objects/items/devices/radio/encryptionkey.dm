@@ -64,7 +64,7 @@
 	channels = list("Church" = 1)
 
 /obj/item/device/encryptionkey/headset_sci
-	name = "CAPSA science radio encryption key"
+	name = "Phokorus Institute science radio encryption key"
 	icon_state = "sci_cypherkey"
 	channels = list("Science" = 1, "Medical" = 1)
 

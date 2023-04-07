@@ -1,6 +1,6 @@
 /obj/item/gun/energy/sst
 	name = "\"SST Abnegate\" handgun"
-	desc = "\"CAPSA Surface Tension\" brand handgun. A cooperative project between CAPSA Medical and CAPSA Research, the Abnegate uses Greyson tech to internally synthesize soporific coated 9mm bullets. \
+	desc = "\"CAPSA Surface Tension\" brand handgun. A cooperative project between CAPSA Medical and Phokorus Institute Research, the Abnegate uses Greyson tech to internally synthesize soporific coated 9mm bullets. \
 	Initially designed at the request of Lifeline Technicians for a proper way to sedate rowdy armored targets from a distance."
 	icon = 'icons/obj/guns/energy/abnegate.dmi'
 	icon_state = "abnegate"
@@ -21,7 +21,7 @@
 	damage_multiplier = 1.2
 	projectile_type=/obj/item/projectile/bullet/pistol_35/rubber/soporific
 	price_tag = 1750
-	serial_type = "SI"
+	serial_type = "PI"
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE) // I can't believe I have to do this. Don't turn NL weapons into literal war crimes.
 
 /obj/item/gun/energy/sst/preloaded
@@ -33,7 +33,7 @@
 /*
 /obj/item/gun/energy/sst/formatbound
 	name = "\"SST Format Bound\" handgun"
-	desc = "\"CAPSA Surface Tension\" brand heavy handgun. Further development on the cooperative project between CAPSA Medical and CAPSA Research known as CAPSA Surface Tension. \
+	desc = "\"CAPSA Surface Tension\" brand heavy handgun. Further development on the cooperative project between CAPSA Medical and Phokorus Institute Research known as CAPSA Surface Tension. \
 	This heavy handgun fires a stronger bullet and carries more anesthetics, for the stubborn person that won't get out of your medical bay."
 	icon = 'icons/obj/guns/energy/format_bound.dmi'
 	icon_state = "format_bound"

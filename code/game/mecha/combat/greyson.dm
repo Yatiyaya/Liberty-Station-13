@@ -1,5 +1,5 @@
 /obj/mecha/combat/greyson
-	desc = "One of Greyson's deadliest machines, converted into an exosuit by CAPSA."
+	desc = "One of Greyson's deadliest machines, converted into an exosuit by Phokorus Institute."
 	name = "Type"
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "greyson_mech"

@@ -43,8 +43,8 @@
 	allow_greyson_mods = FALSE
 
 /obj/item/gun/energy/cog/sprocket
-	name = "CAPSA \"Sprocket\" laser carbine"
-	desc = "Originally a Greyson Positronic design, tinkered by Marshals to allow nonlethal reduction of rowdy personnel, this gun has been further modified by CAPSA to include a foldable stock, \
+	name = "Phokorus Institute \"Sprocket\" laser carbine"
+	desc = "Originally a Greyson Positronic design, tinkered by Marshals to allow nonlethal reduction of rowdy personnel, this gun has been further modified by Phokorus Institute to include a foldable stock, \
 			making it lightweight and easy to operate by non-trained personnel. The main disabler laser can neutralize the rowdiest patients at the cost of heavy cell usage."
 	icon = 'icons/obj/guns/energy/sprocket.dmi'
 	icon_state = "sprocket"
@@ -65,7 +65,7 @@
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE, // No warcrimes in medbay please
 							  /obj/item/tool_upgrade/augment/expansion = TRUE, // No cheating either. You get three upgrades, make the most of them.
 							  )
-	serial_type = "GP-SI"
+	serial_type = "GP-PI"
 	allow_greyson_mods = FALSE
 
 /obj/item/gun/energy/cog/sprocket/update_icon() // Necessary for the folded and unfolded states
@@ -122,5 +122,5 @@
 	)
 	twohanded = FALSE
 	init_recoil = HANDGUN_RECOIL(0.2)
-	serial_type = "GP-SI"
+	serial_type = "GP-PI"
 	allow_greyson_mods = FALSE

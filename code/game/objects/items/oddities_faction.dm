@@ -1,7 +1,10 @@
 //Oddities which are specific to factions or certain jobs.
 /obj/item/biosyphon
 	name = "Biosiphon Anomaly"
-	desc = "An exceedingly rare bluespace anomaly discovered by a marshal ranger outside the colony. After weeks of study it was determined its only purpose was duplicating boxes of donuts. CAPSA's disappointment was so great they gave the item to security for safe keeping. Months after its discovery it began to create refined cases of incredibly tasty donuts filled with long-lasting effective stimulants every two hours."
+	desc = "An exceedingly rare bluespace anomaly discovered by a marshal ranger outside the colony. \
+	After weeks of study it was determined its only purpose was duplicating boxes of donuts. \
+	Phokorus Institute's disappointment was so great they gave the item to security for safe keeping. \
+	Months after its discovery it began to create refined cases of incredibly tasty donuts filled with long-lasting effective stimulants every two hours."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "biosyphon"
 	item_state = "biosyphon"
@@ -42,7 +45,7 @@
 
 /obj/item/device/von_krabin
 	name = "Von-Krabin Stimulator"
-	desc = "A strange anomalous item given to the research directors of CAPSA as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of absolute uses to enhance the abilities of others."
+	desc = "A strange anomalous item given to the research directors of Phokorus Institute as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of absolute uses to enhance the abilities of others."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "von-krabin"
 	item_state = "von-krabin"

@@ -16,7 +16,7 @@
 */
 
 /datum/design/research/item/greyson/cog_sprocket
-	name = "CAPSA \"Sprocket\" laser carbine"
+	name = "Phokorus Institute \"Sprocket\" laser carbine"
 	build_path = /obj/item/gun/energy/cog/sprocket
 	category = CAT_WEAPON
 
@@ -66,22 +66,22 @@
 	category = CAT_CLOTHING
 
 /datum/design/research/item/greyson/manhacks_roomba
-	name = "GP-SI roomba grenade"
+	name = "GP-PI roomba grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba
 	category = CAT_WEAPON
 
 /datum/design/research/item/greyson/manhacks_roomba_tripper
-	name = "GP-SI roomba sec grenade"
+	name = "GP-PI roomba sec grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/trippers
 	category = CAT_WEAPON
 
 /datum/design/research/item/greyson/manhacks_roomba_gunne
-	name = "GP-SI sword drone grenade"
+	name = "GP-PI sword drone grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/sword
 	category = CAT_WEAPON
 
 /datum/design/research/item/greyson/manhacks_roomba_fbp
-	name = "GP-SI mantis drone grenade"
+	name = "GP-PI mantis drone grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/mantis
 	category = CAT_WEAPON
 
@@ -96,17 +96,17 @@
 	category = CAT_GUNMODS
 
 /datum/design/research/item/powercell/large/grayson
-	name = "GP-SI \"Posi-cell 16000L\""
+	name = "GP-PI \"Posi-cell 16000L\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/large/greyson
 
 /datum/design/research/item/powercell/medium/grayson
-	name = "GP-SI \"Posi-cell 1600M\""
+	name = "GP-PI \"Posi-cell 1600M\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/medium/greyson
 
 /datum/design/research/item/powercell/small/grayson
-	name = "GP-SI \"Posi-cell 400S\""
+	name = "GP-PI \"Posi-cell 400S\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/small/greyson
 

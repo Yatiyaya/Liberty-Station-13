@@ -1,8 +1,8 @@
-// The Ameridian Knight rig suit, handmade by CAPSA roboticists and CAPSA's answer to the Church's Crusader Armor
+// The Ameridian Knight rig suit, handmade by Phokorus Institute roboticists and CAPSA's answer to the Church's Crusader Armor
 /obj/item/rig/ameridian_knight
 	name = "Ameridian Knight suit control module"
 	suit_type = "ameridian knight"
-	desc = "An armored, knight-like suit designed by CAPSA's best roboticists and powered by an ameridian core."
+	desc = "An armored, knight-like suit designed by Phokorus Institute's best roboticists and powered by an ameridian core."
 	icon_state = "ameridian_knight_rig"
 	armor_list = list(melee = 80, bullet = 80, energy = 80, bomb = 70, bio = 100, rad = 100)
 	slowdown = 0 // Lot of stuff used in its construction that justify not having any slowdown while active

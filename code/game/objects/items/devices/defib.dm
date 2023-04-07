@@ -203,7 +203,7 @@
 
 /obj/item/device/defib_kit/compact/combat/adv
 	name = "advanced defibrillator"
-	desc = "A belt-equipped SI branded defibrillator that can be rapidly deployed. Does not have the restrictions or safeties of conventional defibrillators and can revive through space suits."
+	desc = "A belt-equipped PI branded defibrillator that can be rapidly deployed. Does not have the restrictions or safeties of conventional defibrillators and can revive through space suits."
 	paddle_type = /obj/item/shockpaddles/linked/combat/advanced
 	icon_state = "advdefibcompact"
 

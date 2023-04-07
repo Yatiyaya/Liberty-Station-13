@@ -62,7 +62,7 @@
 	)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science
-	name = "CAPSA scientist labcoat"
+	name = "Phokorus Institute scientist labcoat"
 	desc = "A suit that protects against minor chemical spills. Has a purple stripe on the shoulder."
 	icon_state = "labcoat_tox_open"
 	icon_open = "labcoat_tox_open"

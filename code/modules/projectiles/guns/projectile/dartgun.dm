@@ -50,8 +50,8 @@
 	mag_well = MAG_WELL_DART
 
 /obj/item/gun/projectile/dartgun
-	name = "SI \"Artemis\""
-	desc = "The CAPSA's entry into the arms market, the SI Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
+	name = "PI \"Artemis\""
+	desc = "The Phokorus Institute's entry into the arms market, the PI Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
 	icon = 'icons/obj/guns/projectile/dartgun.dmi'
 	icon_state = "dartgun-empty"
 	item_state = null
@@ -72,7 +72,7 @@
 	var/dart_reagent_amount = 15
 	var/beaker_type = /obj/item/reagent_containers/glass/beaker
 	var/list/starting_chems = null
-	serial_type = "SI"
+	serial_type = "PI"
 
 /obj/item/gun/projectile/dartgun/dartgun/New()
 	..()

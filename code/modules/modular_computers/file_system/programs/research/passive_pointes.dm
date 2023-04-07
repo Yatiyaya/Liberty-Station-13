@@ -5,7 +5,7 @@
 	program_icon_state = "comm_logs"
 	program_key_state = "rd_key"
 	program_menu_icon = "cart"
-	extended_desc = "A SI devolped tool used to sort large databases of filed research reports to gather RnD points onto a local hardrives or disk."
+	extended_desc = "A PI devolped tool used to sort large databases of filed research reports to gather RnD points onto a local hardrives or disk."
 	size = 50
 	available_on_ntnet = FALSE
 	requires_ntnet = FALSE //We are all that we need to run by areselfs, so you can set up in the jungel or well scaving

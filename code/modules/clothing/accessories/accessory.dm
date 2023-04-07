@@ -342,7 +342,7 @@
 
 /obj/item/clothing/accessory/halfcape/RP
 	name = "Chief Researcher Overseers holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the CAPSA RP. Black and purple, a color scheme and style to match the \
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Phokorus Institute RP. Black and purple, a color scheme and style to match the \
 	mad scientist in every Overseer."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER

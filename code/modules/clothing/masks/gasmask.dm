@@ -365,5 +365,5 @@
 
 /obj/item/clothing/mask/gas/bigguy/sleekpurpleguy
 	name = "sleek purple rebreather"
-	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is purple and has a CAPSA Research marking."
+	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is purple and has a Phokorus Institute Research marking."
 	icon_state = "srebreath_purple"

@@ -176,7 +176,7 @@
 
 /obj/structure/noticeboard/research
 	name = "Research bulletin board"
-	desc = "A board containing vital notices and official memos for the CAPSA research"
+	desc = "A board containing vital notices and official memos for the Phokorus Institute research"
 	icon_state = "nboard00"
 	notices = 1
 

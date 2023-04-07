@@ -38,8 +38,8 @@
 	name = "hood"
 
 /obj/item/rig/light/ultra_light
-	name = "SI 'Proto-Spacer' control module"
-	desc = "An ultra light, unarmoured rig suit. The precursor to the CAPSA retainer model, quite lacking in armor and EMP protection but capable of fitting hardsuit modules."
+	name = "PI 'Proto-Spacer' control module"
+	desc = "An ultra light, unarmoured rig suit. The precursor to the Phokorus Institute retainer model, quite lacking in armor and EMP protection but capable of fitting hardsuit modules."
 	icon_state = "hacker_rig"
 	suit_type = "light suit"
 	armor_list = list(
@@ -60,21 +60,21 @@
 	glove_type = /obj/item/clothing/gloves/rig/light/ultra_light
 
 /obj/item/clothing/suit/space/rig/light/ultra_light
-	name = "SI 'Spacer' suit"
+	name = "PI 'Spacer' suit"
 
 /obj/item/clothing/gloves/rig/light/ultra_light
-	name = "SI 'Spacer' gloves"
+	name = "PI 'Spacer' gloves"
 
 /obj/item/clothing/shoes/magboots/rig/light/ultra_light
-	name = "SI 'Spacer' shoes"
+	name = "PI 'Spacer' shoes"
 
 /obj/item/clothing/head/helmet/space/rig/light/ultra_light
-	name = "SI 'Spacer' hood"
+	name = "PI 'Spacer' hood"
 	flags_inv = 0
 
 /obj/item/rig/light/hacker/steward
-	name = "SI 'Retainer' control module"
-	desc = "A CAPSA modification of the traditional light rig built for equal parts utility and defense."
+	name = "PI 'Retainer' control module"
+	desc = "A Phokorus Institute modification of the traditional light rig built for equal parts utility and defense."
 	armor_list = list(
 		melee = 30,
 		bullet = 25,

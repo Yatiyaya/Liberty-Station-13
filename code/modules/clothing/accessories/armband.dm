@@ -25,7 +25,7 @@
 
 /obj/item/clothing/accessory/armband/science
 	name = "science armband"
-	desc = "An armband displaying the purple color of the Research branch of the CAPSA."
+	desc = "An armband displaying the purple color of the Research branch of the Phokorus Institute."
 	icon_state = "rnd"
 
 /obj/item/clothing/accessory/armband

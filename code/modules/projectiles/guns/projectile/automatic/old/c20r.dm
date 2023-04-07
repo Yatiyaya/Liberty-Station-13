@@ -59,13 +59,13 @@
 	update_icon()
 
 /obj/item/gun/projectile/automatic/c20r/sci
-	name = "CAPSA \"Bullpip\" SMG"
-	desc = "A CAPSA copy of the Scarborough Arms C-20r, not quite as good at punching through armor nor as deadly, but still reliable and versatile none the less as its often nicknamed the bullpip. Uses 9mm."
+	name = "Phokorus Institute \"Bullpip\" SMG"
+	desc = "A Phokorus Institute copy of the Scarborough Arms C-20r, not quite as good at punching through armor nor as deadly, but still reliable and versatile none the less as its often nicknamed the bullpip. Uses 9mm."
 	icon = 'icons/obj/guns/projectile/si_cr20.dmi'
 	damage_multiplier = 1
 	penetration_multiplier = 1
 	price_tag = 500
-	serial_type = "SI"
+	serial_type = "PI"
 
 /obj/item/gun/projectile/automatic/c20r/sci/preloaded
 

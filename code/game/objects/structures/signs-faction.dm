@@ -30,7 +30,7 @@
 
 /obj/structure/sign/faction/moebius
 	name = "CAPSA Laboratories"
-	desc = "A sign depicting the insignia of CAPSA, the pharmaceutical and research organisation."
+	desc = "A sign depicting the insignia of CAPSA, the pharmaceutical."
 	icon_state = "moebius"
 
 /obj/structure/sign/faction/neotheology

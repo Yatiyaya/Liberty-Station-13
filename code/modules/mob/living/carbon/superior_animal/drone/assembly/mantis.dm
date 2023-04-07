@@ -1,4 +1,4 @@
-// SI Mantis Drone Assembly Steps
+// PI Mantis Drone Assembly Steps
 /obj/item/bot_part/mantis_part/main_frame/attackby(obj/item/W as obj, mob/user as mob)
 	..() // Default stuff.
 

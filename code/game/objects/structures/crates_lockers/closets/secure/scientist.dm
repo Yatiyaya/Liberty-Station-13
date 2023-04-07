@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/personal/scientist
-	name = "CAPSA scientist's locker"
+	name = "Phokorus Institute scientist's locker"
 	req_access = list(access_rd)
 	access_occupy = list(access_tox_storage)
 	icon_state = "science"
@@ -21,7 +21,7 @@
 	new /obj/item/bodybag/xenobio(src)
 
 /obj/structure/closet/secure_closet/reinforced/RD
-	name = "CAPSA research overseer's locker"
+	name = "Phokorus Institute research overseer's locker"
 	req_access = list(access_rd)
 	icon_state = "rd"
 

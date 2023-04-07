@@ -1,6 +1,6 @@
 /obj/item/gun/energy/centauri
-	name = "SI PDW \"Centauri\""
-	desc = "\"CAPSA\" brand laser sub-machine gun with a great firerate. \
+	name = "PI PDW \"Centauri\""
+	desc = "Phokorus Institute brand laser sub-machine gun with a great firerate. \
 	With a built in red dotted scope and plasma cooling build into the barrel makes recoil and sight not an issue. \
 	Unlike other more scrapped together laser sub-machine guns this one is built to not over-heat itself with added delays in firing."
 	icon = 'icons/obj/guns/energy/centauri.dmi'
@@ -27,7 +27,7 @@
 		SEMI_AUTO_NODELAY,
 		BURST_5_ROUND
 		)
-	serial_type = "SI"
+	serial_type = "PI"
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig

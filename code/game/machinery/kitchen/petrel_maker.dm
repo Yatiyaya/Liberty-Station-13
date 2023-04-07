@@ -3,7 +3,7 @@
 	name = "Greyson Petrol Pump"
 	desc = "A machine for petrol and refined scrap. Originally design by the Greyson Positronic's AI then given to the Terra-Therma Union. \
 	When enough plastic is stored inside, flip the switch on its side to produce a bottle of diesel, consuming a portion of stored plastic. \
-	Thanks to advanced blueprint designs by SI it can also take lumps of scrap to create refined scrap by simply adding them to the pump's storage."
+	Thanks to advanced blueprint designs by PI it can also take lumps of scrap to create refined scrap by simply adding them to the pump's storage."
 	description_info = "Try inserting a sandwich on it for a tasty (and very mechanically educational) snack."
 	icon = 'icons/obj/machines/petrel_maker.dmi'
 	icon_state = "diesel_greyson"

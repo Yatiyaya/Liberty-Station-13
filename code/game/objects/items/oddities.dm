@@ -152,7 +152,7 @@
 
 /obj/item/oddity/common/paper_omega
 	name = "collection of obscure reports"
-	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Greyson, CAPSA, or an independent group."
+	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Greyson, Phokorus Institute, or an independent group."
 	icon_state = "reports1"
 	prob_perk = 45 //The skeptical mind of the inker helps keep it grounded but it shows something unable to be shaken out of the mind
 	oddity_stats = list(

@@ -12,7 +12,7 @@ GLOBAL_LIST_INIT(antag_item_targets,list(
 		"the colony blueprints" = /obj/item/blueprints,
 		"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/reagent_containers/food/snacks/meat/corgi,
-		"a CAPSA research overseer's jumpsuit" = /obj/item/clothing/under/rank/expedition_overseer,
+		"a Phokorus Institute research overseer's jumpsuit" = /obj/item/clothing/under/rank/expedition_overseer,
 		"an union chief's jumpsuit" = /obj/item/clothing/under/rank/chief,
 		"a CAPSA biolab overseer's jumpsuit" = /obj/item/clothing/under/rank/moebius_biolab_officer,
 		"a warrant officer's jumpsuit" = /obj/item/clothing/under/rank/ih_commander,

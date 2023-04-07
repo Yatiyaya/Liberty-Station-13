@@ -118,7 +118,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer
-	disk_name = "CAPSA Computer Parts"
+	disk_name = "Phokorus Institute Computer Parts"
 	icon_state = "moebius"
 	license = 20
 	designs = list(
@@ -158,11 +158,11 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer/rd
-	disk_name = "CAPSA Computer Factory"
+	disk_name = "Phokorus Institute Computer Factory"
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/rped
-	disk_name = "CAPSA RnD Stock Parts Designs"
+	disk_name = "Phokorus Institute RnD Stock Parts Designs"
 	icon_state = "moebius"
 	license = 20
 	designs = list(
@@ -196,11 +196,11 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/rped/rd
-	disk_name = "CAPSA Stock Parts Factory"
+	disk_name = "Phokorus Institute Stock Parts Factory"
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/xenobio
-	disk_name = "CAPSA Xenobio Equipment Designs"
+	disk_name = "Phokorus Institute Xenobio Equipment Designs"
 	icon_state = "moebius"
 	license = 10
 	designs = list(
@@ -214,5 +214,5 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/xenobio/rd
-	disk_name = "CAPSA Xenobio Equipment Factory"
+	disk_name = "Phokorus Institute Xenobio Equipment Factory"
 	license = -1

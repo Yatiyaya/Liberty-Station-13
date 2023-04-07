@@ -103,15 +103,15 @@
 	build_path = /obj/item/clothing/suit/armor/laserproof/rnd
 
 /datum/design/research/item/weapon/katana
-	name = "CAPSA \"Muramasa\" Katana"
+	name = "Phokorus Institute \"Muramasa\" Katana"
 	build_path = /obj/item/tool/sword/katana/nano
 
 /datum/design/research/item/weapon/slimebaton
-	name = "CAPSA xenobio baton"
+	name = "Phokorus Institute xenobio baton"
 	build_path = /obj/item/tool/baton/slimebaton
 
 /datum/design/research/item/weapon/bluespace_dagger
-	name = "CAPSA \"Displacement Dagger\""
+	name = "Phokorus Institute \"Displacement Dagger\""
 	build_path = /obj/item/tool/knife/dagger/bluespace
 
 /datum/design/research/item/clothing/medarmor
@@ -120,7 +120,7 @@
 	build_path = /obj/item/clothing/suit/space/void/medarmor
 
 /datum/design/research/item/weapon/hatton
-	name = "CAPSA Breaching Tool \"Q-del\""
+	name = "Phokorus Institute Breaching Tool \"Q-del\""
 	desc = "This breaching tool was reverse engineered from the \"Hatton\" design. \
 			Despite the Terra-Therma Union \"Hatton\" being traded on the free market through guild channels, \
 			this device suffers from a wide number of reliability issues stemming from it being lathe printed."
@@ -237,7 +237,7 @@
 // Misc Ammo
 
 /datum/design/research/item/ammo/hatton
-	name = "CAPSA BT \"Q-del\" gas tube"
+	name = "Phokorus Institute BT \"Q-del\" gas tube"
 	build_path = /obj/item/hatton_magazine/moebius
 
 /datum/design/research/item/ammo/rapidsyringe
@@ -262,31 +262,31 @@
 	category = CAT_GUNMODS
 
 /datum/design/research/item/weapon/weapon_upgrade/penetrator
-	name = "CAPSA \"Penetrator\" magnetic accelerator barrel"
+	name = "Phokorus Institute \"Penetrator\" magnetic accelerator barrel"
 	build_path = /obj/item/gun_upgrade/barrel/mag_accel
 
 /datum/design/research/item/weapon/weapon_upgrade/overheat
-	name = "CAPSA \"Caster\" magnetic overheat barrel"
+	name = "Phokorus Institute \"Caster\" magnetic overheat barrel"
 	build_path = /obj/item/gun_upgrade/barrel/overheat
 
 /datum/design/research/item/weapon/weapon_upgrade/battery_shunt
-	name = "CAPSA \"Thunder\" battery shunt"
+	name = "Phokorus Institute \"Thunder\" battery shunt"
 	build_path = /obj/item/gun_upgrade/mechanism/battery_shunt
 
 /datum/design/research/item/weapon/weapon_upgrade/overdrive
-	name = "CAPSA \"Tesla\" overdrive chip"
+	name = "Phokorus Institute \"Tesla\" overdrive chip"
 	build_path = /obj/item/gun_upgrade/mechanism/overdrive
 
 /datum/design/research/item/weapon/weapon_upgrade/toxin_coater
-	name = "CAPSA \"Black Viper\" toxin coater"
+	name = "Phokorus Institute \"Black Viper\" toxin coater"
 	build_path = /obj/item/gun_upgrade/barrel/toxin_coater
 
 /datum/design/research/item/weapon/weapon_upgrade/dnalock_mod
-	name = "CAPSA \"DNA lock\" Finger Imprinter Trigger"
+	name = "Phokorus Institute \"DNA lock\" Finger Imprinter Trigger"
 	build_path = /obj/item/gun_upgrade/trigger/dnalock
 
 /datum/design/research/item/weapon/weapon_upgrade/auto_eject_no_removal
-	name = "CAPSA \"Faller\" Magwell Clearer"
+	name = "Phokorus Institute \"Faller\" Magwell Clearer"
 	build_path = /obj/item/gun_upgrade/magwell/auto_eject/no_removal
 
 /*

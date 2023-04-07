@@ -187,7 +187,7 @@
 /var/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
-	desc = "CAPSA Research Overseer"
+	desc = "Phokorus Institute Research Overseer"
 	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_cargo = 31

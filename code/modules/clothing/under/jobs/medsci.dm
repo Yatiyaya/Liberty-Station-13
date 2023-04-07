@@ -11,7 +11,7 @@
 
 /obj/item/clothing/under/rank/scientist
 	desc = "A dark navy scientist's jacket complete with navy pants. The fibre offers minor biohazard protection."
-	name = "CAPSA Scientist's uniform"
+	name = "Phokorus Institute Scientist's uniform"
 	icon_state = "science"
 	item_state = "w_suit"
 

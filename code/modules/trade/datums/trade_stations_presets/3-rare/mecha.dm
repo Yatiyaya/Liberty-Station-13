@@ -80,7 +80,7 @@
 		/obj/item/mech_ammo_box/ultracannon = offer_data("Ultra AC 2 ammunition box", 350, 5),
 		/obj/item/tool_upgrade/reinforcement/plating = offer_data("reinforced plating", 120, 2),
 		/obj/item/gun_upgrade/mechanism/overdrive = offer_data("overdrive chip", 175, 2),
-		/obj/item/cell/large/moebius/nuclear = offer_data("CAPSA \"Atomcell 14000L\"", 575, 3)
+		/obj/item/cell/large/moebius/nuclear = offer_data("Phokorus Institute \"Atomcell 14000L\"", 575, 3)
 	)
 
 /obj/mecha/working/hoverpod/cargo_imported

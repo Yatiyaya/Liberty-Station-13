@@ -205,7 +205,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/gun/energy/xray/psychic_cannon
 	name = "\"Manta-RAY\" cannon"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
-			An unusual gun sought after by the CAPSA when it appears for both its utility and its research value. It's durasteel interior and unknown technological function allows \
+			An unusual gun sought after by the Phokorus Institute when it appears for both its utility and its research value. It's durasteel interior and unknown technological function allows \
 			this weapon to use moderately high damage armor penetrating x-ray laser blasts. While a strict step up from a standard x-ray weapon in all ways, this weapon is more valued for \
 			its research points in the deconstrustive analyzer."
 	icon = 'icons/obj/guns/energy/psychiccannon.dmi'
