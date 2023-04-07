@@ -11,7 +11,7 @@
 
 	armor = list(melee = 50, bullet = 50, energy = 45, bomb = 50, bio = 100, rad = 100)
 
-	casingtype = /obj/item/ammo_casing/heavy_rifle_408/spent
+	casingtype = null
 
     //range/ammo stuff
 	ranged = TRUE
@@ -19,12 +19,12 @@
 	comfy_range = 7
 	rapid = FALSE
 	ranged_cooldown = 2
-	projectiletype = /obj/item/projectile/bullet/heavy_rifle_408 //change to new caliber
-	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
+	projectiletype = /obj/item/projectile/bullet/rifle_75
+	projectilesound = 'sound/weapons/guns/fire/mosin.ogg'
 	limited_ammo = TRUE
 	mag_drop = FALSE
-	rounds_left = 10
-	mag_type = /obj/item/ammo_magazine/heavy_rifle_408/empty
+	rounds_left = 5
+	mag_type = /obj/item/ammo_magazine/speed_loader_rifle_75/empty
 	mags_left = 6 //1+6
 	delay_for_range = 1.0 SECONDS
 
@@ -69,18 +69,17 @@
 /mob/living/carbon/superior_animal/human/balkan/sts
 	icon_state = "balkan_mercenary_sts"
 
-	casingtype = /obj/item/ammo_casing/magnum_40/spent
 
 	//range/ammo stuff
 	rapid = TRUE
 	rapid_fire_shooting_amount = 3
 	comfy_range = 4
 	ranged_cooldown = 2
-	projectiletype = /obj/item/projectile/bullet/magnum_40 //Change to new caliber once able
-	projectilesound = 'sound/weapons/guns/fire/vector_fire.ogg'
+	projectiletype = /obj/item/projectile/bullet/rifle_75
+	projectilesound = 'sound/weapons/guns/fire/ak.ogg'
+	mag_type = /obj/item/ammo_magazine/rifle_75/empty
 	mag_drop = TRUE
 	rounds_left = 40
-	mag_type = /obj/item/ammo_magazine/smg_magnum_40/empty
 	mags_left = 3 //1+5
 
 /mob/living/carbon/superior_animal/human/balkan/bren
@@ -93,7 +92,7 @@
 	rapid = TRUE
 	rapid_fire_shooting_amount = 5
 	ranged_cooldown = 3
-	projectiletype = /obj/item/projectile/bullet/heavy_rifle_408
+	projectiletype = /obj/item/projectile/bullet/rifle_75
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = FALSE
 	mag_drop = FALSE
@@ -112,7 +111,7 @@
 	rapid = TRUE
 	rapid_fire_shooting_amount = 5
 	ranged_cooldown = 3
-	projectiletype = /obj/item/projectile/bullet/heavy_rifle_408
+	projectiletype = /obj/item/projectile/bullet/rifle_75
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = FALSE
 	mag_drop = FALSE
