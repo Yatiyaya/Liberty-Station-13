@@ -498,7 +498,7 @@
 				frost += COLD_GAS_DAMAGE_LEVEL_1
 
             //apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Artic Inhalation") this is here case someone figures out how to give lung damage and show up on authopsy
-            fire_alert = FIRE_ALERT_COLD
+			fire_alert = FIRE_ALERT_COLD
 			if(oof >= 8)
 				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
 				if(L && istype(L))
