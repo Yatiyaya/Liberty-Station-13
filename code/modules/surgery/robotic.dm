@@ -74,7 +74,7 @@
 		SPAN_WARNING("[user]'s hand slips, damaging [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, damaging [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(8,BRUTE,1)
 
 
 
@@ -168,4 +168,4 @@
 		SPAN_WARNING("[user]'s hand slips, scraping [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, scraping [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(8,BRUTE,1)
