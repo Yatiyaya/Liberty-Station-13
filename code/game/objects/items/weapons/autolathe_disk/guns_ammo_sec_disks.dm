@@ -617,8 +617,8 @@
 // Heavy
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/heavysniper
-	disk_name = "SA - 14.5×114mm Penetrator AMR"
-	icon_state = "sa"
+	disk_name = "ML - 14.5×114mm Penetrator AMR"
+	icon_state = "black"
 
 	license = 8
 	designs = list(
