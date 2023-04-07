@@ -1,4 +1,4 @@
-/datum/category_item/setup_option/background/ethnicity/marquaintelligensia
+/datum/category_item/setup_option/background/ancestry/marqua_intelligensia
 	name = "Intelligensia"
 	desc = "The intelligensia of the mar'qua are the formally trained and 'think-tank' of mar'qua society, making up most of their scientists in the fields of biology and mathematics. \
 			As someone who has left the higher folds of the intelligensia you are one of skilled rapport but a life of easy living has made you quite physically weak. \
@@ -10,16 +10,16 @@
 	restricted_jobs = list(/datum/job/shipbreaker, /datum/job/shepherd)
 
 	stat_modifiers = list(
-		STAT_ROB = -10,
-		STAT_TGH = -10,
-		STAT_VIG = -10,
-		STAT_BIO = 5,
-		STAT_MEC = 5,
-		STAT_COG = 5
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
 
-/datum/category_item/setup_option/background/ethnicity/marquamenial
+/datum/category_item/setup_option/background/ancestry/marqua_menial
 	name = "Menial"
 	desc = "Unfortunately for many mar'qua they are born as the gaaran-geraa, often called the menial castes. Your existence, much like your family and friends, was one of toil. \
 			Menials are trained from early childhood to be pragmatic above all else and enjoy the simple toil of their work. Appearance and taste is secondary to function, always. \
@@ -28,16 +28,16 @@
 	restricted_to_species = list(FORM_MARQUA)
 
 	stat_modifiers = list(
-		STAT_ROB = 2,
-		STAT_TGH = 5,
+		STAT_ROB = 0,
+		STAT_TGH = 0,
 		STAT_VIG = 0,
-		STAT_BIO = 2,
+		STAT_BIO = 0,
 		STAT_MEC = 0,
-		STAT_COG = 1
+		STAT_COG = 0
 	)
 
 
-/datum/category_item/setup_option/background/ethnicity/marquamartial
+/datum/category_item/setup_option/background/ancestry/marqua_martial
 	name = "Martial"
 	desc = "Also known as the quoqa-geraa, the martial caste of the mar'qua spends their entire lives training to defend the mar'qua empire. \
 			The martial caste is strong, decisive, and extremely focused on the here and now of a situation to ensure the best choices are made. \
@@ -47,10 +47,10 @@
 	restricted_to_species = list(FORM_MARQUA)
 
 	stat_modifiers = list(
-		STAT_ROB = 4,
-		STAT_TGH = 8,
-		STAT_VIG = 12,
-		STAT_BIO = -4,
-		STAT_MEC = -10,
-		STAT_COG = -10
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)

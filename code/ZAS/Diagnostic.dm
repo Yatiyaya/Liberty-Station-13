@@ -22,23 +22,18 @@ client/proc/Test_ZAS_Connection(var/turf/simulated/T as turf)
 	if(!istype(T))
 		return
 
-	var/direction_list = list(
-		"North" = NORTH,
-		"South" = SOUTH,
-		"East" = EAST,
-		"West" = WEST,
-		"Up" = UP,
-		"Down" = DOWN,
-		"N/A" = null
-	)
+	var/direction_list = list(\
+	"North" = NORTH,\
+	"South" = SOUTH,\
+	"East" = EAST,\
+	"West" = WEST,\
+	"N/A" = null)
 	var/direction = input("What direction do you wish to test?","Set direction") as null|anything in direction_list
 	if(!direction)
 		return
 
 	if(direction == "N/A")
-		var/res
-		ATMOS_CANPASS_TURF(res, T, T)
-		if(!(res & AIR_BLOCKED))
+		if(!(T.c_airblock(T) & AIR_BLOCKED))
 			to_chat(mob, "The turf can pass air! :D")
 		else
 			to_chat(mob, "No air passage :x")
@@ -48,10 +43,8 @@ client/proc/Test_ZAS_Connection(var/turf/simulated/T as turf)
 	if(!istype(other_turf))
 		return
 
-	var/t_block
-	ATMOS_CANPASS_TURF(t_block, T, other_turf)
-	var/o_block
-	ATMOS_CANPASS_TURF(o_block, other_turf, T)
+	var/t_block = T.c_airblock(other_turf)
+	var/o_block = other_turf.c_airblock(T)
 
 	if(o_block & AIR_BLOCKED)
 		if(t_block & AIR_BLOCKED)
@@ -79,7 +72,9 @@ client/proc/Test_ZAS_Connection(var/turf/simulated/T as turf)
 		else
 			to_chat(mob, "both turfs can merge.")
 
-client/proc/ZASSettings()
+
+ADMIN_VERB_ADD(/client/proc/ZASSettings, R_DEBUG, FALSE)
+/client/proc/ZASSettings()
 	set category = "Debug"
 
 	vsc.SetDefault(mob)

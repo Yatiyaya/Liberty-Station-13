@@ -83,7 +83,7 @@ cannot isolate or combine desired genes.
 	max_plates = (bin_rating+1)
 
 /obj/machinery/genetics/gene_analyzer/attackby(obj/item/I, mob/user)
-	if(!user.stats?.getPerk(PERK_SI_SCI) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_NERD) && !usr.stat_check(STAT_BIO, 60))
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 60))
 		to_chat(usr, SPAN_WARNING("After looking at the blinking lights and tons of toggles you relise you have no idea what to do."))
 		return
 	if(default_deconstruction(I, user))
@@ -116,7 +116,7 @@ cannot isolate or combine desired genes.
 		. = ..()
 
 /obj/machinery/genetics/gene_analyzer/attack_hand(mob/user)
-	if(!user.stats?.getPerk(PERK_SI_SCI) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_NERD) && !usr.stat_check(STAT_BIO, 60))
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 60))
 		to_chat(usr, SPAN_WARNING("The analyzer is to complex to use without trainning or being well versed in general biology or sciences."))
 		return
 	if(..())

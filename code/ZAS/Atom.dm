@@ -8,32 +8,31 @@
 	return (!density || !height || air_group)
 
 /turf/CanPass(atom/movable/mover, turf/target, height=1.5,air_group=0)
-	if(!target)
-		return FALSE
+	if(!target) return 0
 
 	if(istype(mover)) // turf/Enter(...) will perform more advanced checks
 		return !density
 
 	else // Now, doing more detailed checks for air movement and air group formation
 		if(target.blocks_air||blocks_air)
-			return FALSE
+			return 0
 
 		for(var/obj/obstacle in src)
 			if(!obstacle.CanPass(mover, target, height, air_group))
-				return FALSE
+				return 0
 		if(target != src)
 			for(var/obj/obstacle in target)
 				if(!obstacle.CanPass(mover, src, height, air_group))
-					return FALSE
+					return 0
 
-		return TRUE
+		return 1
 
 //Convenience function for atoms to update turfs they occupy
 /atom/movable/proc/update_nearby_tiles(need_rebuild)
 	for(var/turf/simulated/turf in locs)
 		SSair.mark_for_update(turf)
 
-	return TRUE
+	return 1
 
 //Basically another way of calling CanPass(null, other, 0, 0) and CanPass(null, other, 1.5, 1).
 //Returns:
@@ -48,36 +47,28 @@ atom/proc/c_airblock(turf/other)
 	return (AIR_BLOCKED*!CanPass(null, other, 0, 0))|(ZONE_BLOCKED*!CanPass(null, other, 1.5, 1))
 
 
+
+
 turf/c_airblock(turf/other)
 	#ifdef ZASDBG
 	ASSERT(isturf(other))
 	#endif
-	if(((blocks_air & AIR_BLOCKED) || (other.blocks_air & AIR_BLOCKED)))
+	if(blocks_air || other.blocks_air)
 		return BLOCKED
 
 	//Z-level handling code. Always block if there isn't an open space.
-	#ifdef MULTIZAS
+	#ifdef ZLEVELS
 	if(other.z != src.z)
 		if(other.z < src.z)
-			if(!isopenturf(src))
-				return BLOCKED
+			if(!istype(src, /turf/simulated/open)) return BLOCKED
 		else
-			if(!isopenturf(other))
-				return BLOCKED
+			if(!istype(other, /turf/simulated/open)) return BLOCKED
 	#endif
 
-	if(((blocks_air & ZONE_BLOCKED) || (other.blocks_air & ZONE_BLOCKED)))
-		if(z == other.z)
-			return ZONE_BLOCKED
-		else
-			return AIR_BLOCKED
-
-	var/result = FALSE
-	for(var/mm in contents)
-		var/atom/movable/M = mm
+	var/result = 0
+	for(var/atom/movable/M in contents)
 		result |= M.c_airblock(other)
-		if(result == BLOCKED)
-			return BLOCKED
+		if(result == BLOCKED) return BLOCKED
 	return result
 
 /atom/movable

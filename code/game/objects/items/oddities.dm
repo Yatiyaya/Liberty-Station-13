@@ -670,7 +670,7 @@
 	. = ..()
 	if(!iscarbon(user) || !issilicon(user))
 		return//Prevents ghosts form making a runtime
-	if(!user.stats?.getPerk(PERK_SI_SCI) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
+	if(!user.stats?.getPerk(PERK_SCIENCE) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
 		to_chat(usr, SPAN_WARNING("This tool is far too complex for you to comprehend how to even use it. The data and formulas displayed look like complete alien gibberish."))
 		return
 	var/area/my_area = get_area(src)
