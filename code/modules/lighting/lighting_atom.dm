@@ -129,5 +129,5 @@
 
 /obj/item/dropped()
 	. = ..()
-	SEND_SIGNAL(src, COMSIG_ITEM_DROPPED, src) //this was SEND_SIGNAL_OLD. In case of break, check eris codebase for it
+	SEND_SIGNAL_OLD(src, COMSIG_ITEM_DROPPED, src)
 	update_light()

@@ -100,11 +100,3 @@ SUBSYSTEM_DEF(lighting)
 #undef STAGE_SOURCES
 #undef STAGE_CORNERS
 #undef STAGE_OVERLAYS
-
-/datum/controller/subsystem/lighting/Recover()
-	initialized = SSlighting.initialized
-	..()
-
-#undef STAGE_SOURCES
-#undef STAGE_CORNERS
-#undef STAGE_OVERLAYS
