@@ -147,7 +147,7 @@
 		SPAN_WARNING("[user]'s hand slips, damaging [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, damaging [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 /datum/surgery_step/break_bone
 	target_organ_type = /obj/item/organ/internal
@@ -181,7 +181,7 @@
 		SPAN_WARNING("[user]'s hand slips, scraping [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, scraping [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 /datum/surgery_step/mend_bone
 	target_organ_type = /obj/item/organ/internal
@@ -221,7 +221,7 @@
 		SPAN_WARNING("[user]'s hand slips, scraping [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, scraping [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 /datum/surgery_step/replace_bone
 	target_organ_type = /obj/item/organ/internal
@@ -292,7 +292,7 @@
 		SPAN_WARNING("[user]'s hand slips, damaging [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, damaging [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 
 
