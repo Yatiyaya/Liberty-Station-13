@@ -6,9 +6,6 @@
 /obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
-"u" = (
-/turf/space,
-/area/template_noop)
 "z" = (
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
@@ -47,7 +44,7 @@ a
 (5,1,1) = {"
 a
 a
-u
+a
 a
 a
 "}
