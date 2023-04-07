@@ -4,7 +4,7 @@ var/global/blackshield_max_energy //Maximaum combined energy of all teleporters
 
 /obj/machinery/blackshield_teleporter
 	name = "blackshield short-range teleporter"
-	desc = "A teleporter form made by the GP AI under the watchful eye of PI as they recrate a safe short range teleporter for \
+	desc = "A teleporter form made by the SD AI under the watchful eye of PI as they recrate a safe short range teleporter for \
 	blackshield to quickly send down and up items at the cost of a lot of power, time and requested items."
 	density = TRUE
 	anchored = TRUE

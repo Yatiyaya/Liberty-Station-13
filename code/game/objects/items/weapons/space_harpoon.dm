@@ -173,7 +173,7 @@
 
 /obj/item/bluespace_harpoon/mounted/blitz
 	name = "OR BSD \"Blauerraumharpune\""
-	desc = "Reverse engineered version of harpoon developed by Nanotrasen, remounted for robotic use only by Greyson Positronics."
+	desc = "Reverse engineered version of harpoon developed by Nanotrasen, remounted for robotic use only by Similacrum Positronics."
 
 /obj/item/bluespace_harpoon/mounted/blitz/update_icon()
 	icon_state = "harpoon-mounted-blitz-[mode]"

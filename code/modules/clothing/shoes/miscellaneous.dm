@@ -27,7 +27,7 @@
 
 /obj/item/clothing/shoes/ablasive/iron_lock_security
 	name = "outdated jackboots"
-	desc = "An \"Iron Lock Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Greyson Positronic."
+	desc = "An \"Iron Lock Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Similacrum Robotics."
 
 /obj/item/clothing/shoes/swat
 	name = "\improper SWAT shoes"

@@ -204,10 +204,10 @@
 	name = "Phazon wreckage"
 	icon_state = "phazon-broken"
 
-/obj/effect/decal/mecha_wreckage/greyson
-	name = "greyson wreckage"
+/obj/effect/decal/mecha_wreckage/similacrum
+	name = "similacrum wreckage"
 	icon = 'icons/mob/64x64.dmi'
-	icon_state = "greyson_mech-broken"
+	icon_state = "similacrum_mech-broken"
 
 /obj/effect/decal/mecha_wreckage/odysseus
 	name = "Odysseus wreckage"

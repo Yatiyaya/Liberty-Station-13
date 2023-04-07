@@ -78,10 +78,11 @@
 	maxcharge = 14000
 	price_tag = 400
 
-/obj/item/cell/large/greyson
-	name = "GP-PI \"Posi-cell 16000L\""
-	desc = "GP-PI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_b_omega"
+/obj/item/cell/large/similacrum
+	name = "SR-PI \"Posi-cell 16000L\""
+	desc = "SR-PI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_b_omega"
+	icon_state = "similacrum_b_omega"
 	maxcharge = 16000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
@@ -223,10 +224,11 @@
 	maxcharge = 1000
 	price_tag = 200
 
-/obj/item/cell/medium/greyson
-	name = "GP-PI \"Posi-cell 1600M\""
-	desc = "GP-PI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_m_omega"
+/obj/item/cell/medium/similacrum
+	name = "SR-PI \"Posi-cell 1600M\""
+	desc = "SR-PI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_m_omega"
+	icon_state = "similacrum_m_omega"
 	maxcharge = 1600
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
@@ -364,10 +366,11 @@
 	recharge_time = 1
 	price_tag = 65
 
-/obj/item/cell/small/greyson
-	name = "GP-PI \"Posi-cell 400S\""
-	desc = "GP-PI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_s_omega"
+/obj/item/cell/small/similacrum
+	name = "SR-PI \"Posi-cell 400S\""
+	desc = "SR-PI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_s_omega"
+	icon_state = "similacrum_s_omega"
 	maxcharge = 400
 	autorecharging = TRUE
 	autorecharge_rate = 0.06

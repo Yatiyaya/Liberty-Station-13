@@ -369,7 +369,7 @@
 
 /datum/technology/omnisurgery
 	name = "Omnitool Surgery Tool"
-	desc = "An all in one tool for surgery based on those that are found in legendary Greyson Positronic models."
+	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
 	tech_type = RESEARCH_BIOTECH
 
 	x = 0.85

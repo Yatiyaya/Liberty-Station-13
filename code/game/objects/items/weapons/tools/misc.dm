@@ -50,8 +50,8 @@
 	max_upgrades = 0 //Superior in all ways to the munchkin and arc welder as a tool, only way to obtain it is through guild crafting or getting really lucky in cargo tech lockers. Give how fuck rare munckins are, balance by scarcity factor. -Kaz
 
 /obj/item/tool/medmultitool
-	name = "Greyson Positronic medical omnitool"
-	desc = "A compact Greyson Positronic medical omnitool. It has all surgery tools and takes a medium cell in its handle."
+	name = "Similacrum Robotics medical omnitool"
+	desc = "A compact Similacrum Robotics medical omnitool. It has all surgery tools and takes a medium cell in its handle."
 	icon_state = "medmulti"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLATINUM = 2)
 	flags = CONDUCT
@@ -63,11 +63,11 @@
 	workspeed = 1.2
 	price_tag = 1400 // Super fancy
 	degradation = 2
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 /obj/item/tool/medmultitool/medimplant
 	name = "CAPSA medical omnitool implant"
-	desc = "An all-in-one medical tool based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
+	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
 	icon_state = "medmulti_sci"
 	matter = null
 	force = WEAPON_FORCE_PAINFUL
@@ -79,7 +79,7 @@
 	degradation = 0.5
 	workspeed = 0.8
 	price_tag = 600 // Not nearly as fancy.
-	allow_greyson_mods = FALSE
+	allow_similacrum_mods = FALSE
 
 	use_power_cost = 1.2
 	suitable_cell = /obj/item/cell/medium
@@ -88,7 +88,7 @@
 
 /obj/item/tool/medmultitool/medimplant/sci
 	name = "CAPSA medical omnitool"
-	desc = "An all-in-one medical tool based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
+	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
 	icon_state = "medimplant"
 	matter = null //Nope
 	degradation = 1
@@ -110,7 +110,7 @@
 
 /obj/item/tool/medmultitool/medimplant/organic
 	name = "organic medical omnitool"
-	desc = "An all-in-one medical tool implant based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels. This version is made of entirely organic materials and doesn't require a power cell, sadly it cannot be upgraded and work takes slightly longer, but at least it is self repairing."
+	desc = "An all-in-one medical tool implant based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels. This version is made of entirely organic materials and doesn't require a power cell, sadly it cannot be upgraded and work takes slightly longer, but at least it is self repairing."
 	icon_state = "organicmedimplant"
 	use_power_cost = 0
 	suitable_cell = null

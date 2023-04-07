@@ -103,9 +103,9 @@
 	id = DEPARTMENT_INDEPENDENT
 	jobs_in_department = list("/datum/job/assistant")
 
-/datum/department/greyson_positronic
-	name = "Greyson Positronic"
-	id = DEPARTMENT_GREYSON
+/datum/department/similacrum_positronic
+	name = "Similacrum Robotics"
+	id = DEPARTMENT_SIMILACRUM
 	jobs_in_department = list()
 
 
