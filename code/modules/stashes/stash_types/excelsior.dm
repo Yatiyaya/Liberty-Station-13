@@ -9,8 +9,7 @@
 	nonmaint_reroll = 100
 	contents_list_base = list(/obj/item/circuitboard/excelsiorautolathe = 1,
 	 /obj/item/circuitboard/excelsior_teleporter = 1,
-	 /obj/item/implanter/excelsior/broken = 2,
-	 /obj/random/lathe_disk/advanced/excelsior/safe = 1)
+	 /obj/item/implanter/excelsior/broken = 2)
 
 	contents_list_random = list(/obj/item/implantcase/excelsior/broken = 70,
 	/obj/item/implantcase/excelsior/broken = 40,
@@ -18,8 +17,6 @@
 	/obj/item/clothing/suit/space/void/excelsior = 70,
 	/obj/item/gun/projectile/automatic/ak47 = 3,
 	/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ak = 30,
-	/obj/item/gun/projectile/automatic/vintorez = 1,
-	/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_vintorez = 10,
 	/obj/item/gun/projectile/makarov = 5,
 	/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_makarov = 50,
 	/obj/item/ammo_magazine/light_rifle_257 = 50,

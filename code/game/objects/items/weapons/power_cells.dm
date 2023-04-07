@@ -78,10 +78,10 @@
 	maxcharge = 14000
 	price_tag = 400
 
-/obj/item/cell/large/greyson
-	name = "GP-SI \"Posi-cell 16000L\""
-	desc = "GP-SI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_b_omega"
+/obj/item/cell/large/similacrum
+	name = "SD-SI \"Posi-cell 16000L\""
+	desc = "SD-SI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_b_omega"
 	maxcharge = 16000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
@@ -223,10 +223,10 @@
 	maxcharge = 1000
 	price_tag = 200
 
-/obj/item/cell/medium/greyson
-	name = "GP-SI \"Posi-cell 1600M\""
-	desc = "GP-SI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_m_omega"
+/obj/item/cell/medium/similacrum
+	name = "SD-SI \"Posi-cell 1600M\""
+	desc = "SD-SI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_m_omega"
 	maxcharge = 1600
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
@@ -364,10 +364,10 @@
 	recharge_time = 1
 	price_tag = 65
 
-/obj/item/cell/small/greyson
-	name = "GP-SI \"Posi-cell 400S\""
-	desc = "GP-SI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
-	icon_state = "greyson_s_omega"
+/obj/item/cell/small/similacrum
+	name = "SD-SI \"Posi-cell 400S\""
+	desc = "SD-SI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	icon_state = "similacrum_s_omega"
 	maxcharge = 400
 	autorecharging = TRUE
 	autorecharge_rate = 0.06

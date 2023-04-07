@@ -13,7 +13,7 @@
 	wealth = 0
 	hidden_inv_threshold = 1000
 	recommendation_threshold = 3000
-	stations_recommended = list("greyson")
+	stations_recommended = list("similacrum")
 	regain_stock = FALSE
 	inventory = list(
 		"Disk Designs" = list(

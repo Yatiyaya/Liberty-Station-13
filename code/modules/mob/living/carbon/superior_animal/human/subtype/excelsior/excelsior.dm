@@ -66,7 +66,7 @@
 /mob/living/carbon/superior_animal/human/excelsior/excel_ppsh
 	icon_state = "excel_ppsh"
 	projectiletype = /obj/item/projectile/bullet/pistol_35/hv
-	drop_items = list(/obj/item/gun/projectile/automatic/ppsh)
+	drop_items = list(/obj/item/gun/projectile/automatic/specialist)
 	projectilesound = 'sound/weapons/guns/fire/grease_fire.ogg'
 	rounds_left = 71
 	mag_type = /obj/item/ammo_magazine/highcap_pistol_35/drum/empty
@@ -85,7 +85,7 @@
 	icon_state = "excel_vintorez"
 	rapid = 0 //The gun cant rapid fire...
 	projectiletype = /obj/item/projectile/bullet/rifle_75/hv
-	drop_items = list(/obj/item/gun/projectile/automatic/vintorez)
+	drop_items = list(/obj/item/gun/projectile/automatic/nationale/dragon)
 	projectilesound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	rounds_left = 10
 	mag_type = /obj/item/ammo_magazine/rifle_75_short/empty
@@ -94,7 +94,7 @@
 /mob/living/carbon/superior_animal/human/excelsior/excel_drozd
 	icon_state = "excel_drozd"
 	projectiletype = /obj/item/projectile/bullet/magnum_40/hv
-	drop_items = list(/obj/item/gun/projectile/automatic/drozd)
+	drop_items = list(/obj/item/gun/projectile/automatic/umbani)
 	projectilesound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	rounds_left = 32
 	mag_type = /obj/item/ammo_magazine/smg_magnum_40/empty

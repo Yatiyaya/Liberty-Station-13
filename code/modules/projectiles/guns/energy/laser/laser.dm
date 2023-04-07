@@ -41,13 +41,13 @@
 	damage_multiplier = 0.9
 	charge_meter = FALSE
 	twohanded = FALSE
-	serial_type = "GP"
+	serial_type = "SD"
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 /obj/item/gun/energy/laser/mounted/cyborg
 	name = "integrated \"Cog\" laser carbine"
-	desc = "A Greyson Positronic design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made."
+	desc = "A Similacrum Robotics design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made."
 	icon = 'icons/obj/guns/energy/cog.dmi'
 	icon_state = "cog"
 	recharge_time = 4 //Time it takes for shots to recharge (in ticks)
@@ -69,7 +69,7 @@
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	item_charge_meter = TRUE
-	desc = "This self-recharging weapon is old, yet still robust and reliable. It's marked with an old Greyson Positronic brand, a distant reminder of what this corporation was, before it fell to ruin. Also has the ablity to have a Master Unmaker integrated into it."
+	desc = "This self-recharging weapon is old, yet still robust and reliable. It's marked with an old Similacrum Robotics brand, a distant reminder of what this corporation was, before it fell to ruin. Also has the ablity to have a Master Unmaker integrated into it."
 	force = WEAPON_FORCE_PAINFUL
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
@@ -85,8 +85,8 @@
 		WEAPON_CHARGE
 	)
 	twohanded = FALSE
-	allow_greyson_mods = TRUE
-	serial_type = "GP"
+	allow_similacrum_mods = TRUE
+	serial_type = "SD"
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig

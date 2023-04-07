@@ -31,12 +31,10 @@
 			/obj/item/gun/energy/tesla_shotgun
 		),
 		"Projectile weapons" = list(
-			/obj/item/gun/projectile/glock = good_data("Sky pistol", list(2, 6), 650),
-			/obj/item/gun/projectile/giskard,
-			/obj/item/gun/projectile/olivaw,
+			/obj/item/gun/projectile/clarissa,
+			/obj/item/gun/projectile/liberty,
 			/obj/item/gun/projectile/revolver/detective = good_data("Havelock revolver", list(2, 10), 300),
-			/obj/item/gun/projectile/automatic/ak47/sa = good_data("Kalshnikov rifle", list(1, 3), 1000),
-			/obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless
+			/obj/item/gun/projectile/automatic/ak47/sa = good_data("Yuri carbine", list(1, 3), 1000)
 		),
 		"Flame Thrower" = list(
 			/obj/item/gun/flamethrower,
@@ -48,11 +46,9 @@
 			/obj/item/grenade/chem_grenade/incendiary,
 			/obj/item/grenade/flashbang,
 
-			/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small,
 			/obj/item/ammo_magazine/ammobox/rifle_75_small,
 			/obj/item/ammo_magazine/ammobox/light_rifle_257_small,
 			/obj/item/ammo_magazine/ammobox/shotgun,
-			/obj/item/ammo_magazine/ammobox/kurtz_50,
 			/obj/item/ammo_magazine/ammobox/magnum_40,
 			/obj/item/ammo_magazine/ammobox/pistol_35
 		),
@@ -87,8 +83,6 @@
 		"Xanorath Smugged Gear" = list(
 			/obj/item/clothing/suit/space/void/merc/xanorath,
 			/obj/item/melee/energy/sword/pirate,
-			/obj/item/gun/projectile/gyropistol,
-			/obj/item/ammo_magazine/a75,
 			/obj/item/reagent_containers/hypospray/autoinjector/drugs,
 			/obj/item/reagent_containers/syringe/drugs,
 			/obj/item/reagent_containers/pill/zoom,

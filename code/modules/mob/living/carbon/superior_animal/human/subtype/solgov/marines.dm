@@ -11,7 +11,7 @@
 
 	armor = list(melee = 50, bullet = 50, energy = 45, bomb = 50, bio = 100, rad = 100)
 
-	casingtype = /obj/item/ammo_casing/heavy_rifle_408/spent
+	casingtype = /obj/item/ammo_casing/magnum_40/spent
 
     //range/ammo stuff
 	ranged = TRUE
@@ -19,12 +19,12 @@
 	comfy_range = 7
 	rapid = FALSE
 	ranged_cooldown = 2
-	projectiletype = /obj/item/projectile/bullet/heavy_rifle_408
+	projectiletype = /obj/item/projectile/bullet/rifle_75
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = TRUE
 	mag_drop = TRUE
 	rounds_left = 20
-	mag_type = /obj/item/ammo_magazine/heavy_rifle_408/empty
+	mag_type = /obj/item/ammo_magazine/rifle_75/empty
 	mags_left = 6 //1+6
 	delay_for_range = 1.0 SECONDS
 
@@ -189,12 +189,12 @@
 
 	armor = list(melee = 25, bullet = 40, energy = 35, bomb = 20, bio = 100, rad = 100)
 
-	casingtype = /obj/item/ammo_casing/heavy_rifle_408/hv/spent
+	casingtype = /obj/item/ammo_casing/magnum_40/spent
 
 	viewRange = 14
 	comfy_range = 12
 	ranged_cooldown = 4
-	projectiletype = /obj/item/projectile/bullet/heavy_rifle_408/hv
+	projectiletype = /obj/item/projectile/bullet/rifle_75/hv
 	projectilesound = 'sound/weapons/guns/fire/heavy_fire.ogg'
 
 /mob/living/carbon/superior_animal/human/marine/sniper/doTargetMessage()

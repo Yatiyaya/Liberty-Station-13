@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/automatic
 	name = "old automatic projectile gun"
 	desc = "A no longer produced hologram of the base of all moder day smgs. Uses 9mm rounds."
-	icon = 'icons/obj/guns/projectile/generic_smg.dmi'
+	icon = 'icons/obj/guns/projectile/old/generic_smg.dmi'
 	icon_state = "generic_smg"
 	w_class = ITEM_SIZE_NORMAL
 	load_method = SINGLE_CASING|SPEEDLOADER //Default is speedloader because all might not have magazine sprites.

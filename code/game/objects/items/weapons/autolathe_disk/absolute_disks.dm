@@ -102,115 +102,6 @@
 		/datum/design/research/item/mechfab/modules/hud/thermal_bio
 	)
 
-// Thorn and Rose Pack - both 10mm and 9mm
-/obj/item/computer_hardware/hard_drive/portable/design/guns/mk58
-	disk_name = "Absolute Armory - Thorn and Rose Handgun Pack"
-	icon_state = "neotheology"
-
-	license = 16
-	designs = list(
-		/datum/design/autolathe/gun/mk58 = 3,
-		/datum/design/autolathe/gun/mk58_wood = 3,
-		/datum/design/autolathe/ammo/pistol_practice = 0,
-		/datum/design/autolathe/ammo/pistol_rubber,
-		/datum/design/autolathe/ammo/pistol,
-		/datum/design/autolathe/ammo/pistol_lethal = 2,
-		/datum/design/autolathe/ammo/magnum_practice = 0,
-		/datum/design/autolathe/ammo/magnum_rubber,
-		/datum/design/autolathe/ammo/magnum,
-		/datum/design/autolathe/ammo/magnum_lethal = 2,
-		/datum/design/autolathe/ammo/pistol_ammobox_biomatter = 3,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 4
-		)
-
-//Church shotgun
-/obj/item/computer_hardware/hard_drive/portable/design/nt/mk58
-	disk_name = "Absolute Armory - Thorn and Rose Handgun Pack Plus"
-	icon_state = "neotheology"
-
-	license = 20
-	designs = list(
-		/datum/design/autolathe/gun/mk58 = 3,
-		/datum/design/autolathe/gun/mk58_wood = 3,
-		/datum/design/autolathe/ammo/pistol_practice = 0,
-		/datum/design/autolathe/ammo/pistol_rubber,
-		/datum/design/autolathe/ammo/pistol,
-		/datum/design/autolathe/ammo/pistol_lethal = 2,
-		/datum/design/autolathe/ammo/magnum_practice = 0,
-		/datum/design/autolathe/ammo/magnum_rubber,
-		/datum/design/autolathe/ammo/magnum,
-		/datum/design/autolathe/ammo/magnum_lethal = 2,
-		/datum/design/autolathe/ammo/pistol_ammobox_biomatter = 2,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 3
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/lemant
-	disk_name = "Absolute Armory - .40/20mm Pilgrim revolver"
-	icon_state = "neotheology"
-
-	license = 12
-	designs = list(
-		/datum/design/autolathe/gun/lemant = 3,
-		/datum/design/autolathe/ammo/slmagnum_practice = 0,
-		/datum/design/autolathe/ammo/slmagnum_rubber,
-		/datum/design/autolathe/ammo/slmagnum,
-		/datum/design/autolathe/ammo/slmagnum_lethal = 2,
-		/datum/design/autolathe/ammo/shotgun_beanbag,
-		/datum/design/autolathe/ammo/shotgun_blanks = 0,
-		/datum/design/autolathe/ammo/shotgun_illumination,
-		/datum/design/autolathe/ammo/shotgun_pellet = 2,
-		/datum/design/autolathe/ammo/shotgun = 2,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 3,
-		)
-
-//Church shotgun
-/obj/item/computer_hardware/hard_drive/portable/design/nt/lemant
-	disk_name = "Absolute Armory - .40/20mm Pilgrim revolver Plus"
-	icon_state = "neotheology"
-
-	license = 12
-	designs = list(
-		/datum/design/autolathe/gun/lemant,
-		/datum/design/autolathe/ammo/slmagnum_practice = 0,
-		/datum/design/autolathe/ammo/slmagnum_rubber,
-		/datum/design/autolathe/ammo/slmagnum,
-		/datum/design/autolathe/ammo/slmagnum_lethal = 2,
-		/datum/design/autolathe/ammo/shotgun_beanbag,
-		/datum/design/autolathe/ammo/shotgun_blanks = 0,
-		/datum/design/autolathe/ammo/shotgun_illumination,
-		/datum/design/autolathe/ammo/shotgun_pellet = 2,
-		/datum/design/autolathe/ammo/shotgun = 2,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 2,
-		)
-
-//Church shotgun
-/obj/item/computer_hardware/hard_drive/portable/design/guns/regulator
-	disk_name = "Absolute Armory - 20mm Regulator Shotgun"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/regulator = 3,
-		/datum/design/autolathe/ammo/shotgun_beanbag,
-		/datum/design/autolathe/ammo/shotgun_blanks = 0,
-		/datum/design/autolathe/ammo/shotgun_illumination,
-		)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/regulator
-	disk_name = "Absolute Armory - 20mm Regulator Shotgun Plus"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/regulator,
-		/datum/design/autolathe/ammo/shotgun_beanbag,
-		/datum/design/autolathe/ammo/shotgun_blanks = 0,
-		/datum/design/autolathe/ammo/shotgun_illumination,
-		/datum/design/autolathe/ammo/shotgun_box = 3,
-		/datum/design/autolathe/ammo/shotgun_pellet_box = 3,
-		)
-
 // ENERGY SMALL ARMS
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor
@@ -493,24 +384,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		/datum/design/bioprinter/nt_cells/medium,
 	)
 
-//Absolute Armory gun packs
-/obj/item/computer_hardware/hard_drive/portable/design/nt_old_guns
-	disk_name = "Absolute Armory of the Old Testament"
-	desc = "A rare and expensive disk containing designs for highly advanced energy and ballistic weaponry from the Old Testament, the Absolutes arms division."
-	icon_state = "neotheology"
-	license = 16
-	designs = list(
-		/datum/design/autolathe/gun/mk58,
-		/datum/design/autolathe/gun/mk58_wood = 2,
-		/datum/design/autolathe/gun/regulator = 3,
-		/datum/design/autolathe/gun/lemant = 3,
-		/datum/design/autolathe/gun/taser,
-		/datum/design/autolathe/gun/laser = 2,
-		/datum/design/autolathe/gun/sniperrifle = 6,
-		/datum/design/autolathe/ammo/pistol_ammobox_biomatter,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 2
-	)
-
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/old_guns
 	disk_name = "Absolute Armory of the Old Testament Plus"
@@ -518,10 +391,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 	icon_state = "neotheology"
 	license = 18
 	designs = list(
-		/datum/design/autolathe/gun/mk58,
-		/datum/design/autolathe/gun/mk58_wood = 2,
-		/datum/design/autolathe/gun/regulator = 3,
-		/datum/design/autolathe/gun/lemant = 3,
 		/datum/design/autolathe/gun/taser,
 		/datum/design/autolathe/gun/laser = 2,
 		/datum/design/autolathe/gun/sniperrifle = 6,

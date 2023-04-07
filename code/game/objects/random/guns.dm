@@ -6,35 +6,25 @@
 /obj/random/gun_cheap/item_to_spawn()
 	return pickweight(list(
 				/obj/item/part/gun/frame/boltgun = 0.5,
-				/obj/item/part/gun/frame/roe = 0.5,
 				/obj/item/part/gun/frame/colt = 0.5,
-				/obj/item/part/gun/frame/olivaw = 0.5,
-				/obj/item/part/gun/frame/mk58 = 0.5,
-				/obj/item/part/gun/frame/grizzly = 0.5,
+				/obj/item/part/gun/frame/liberty = 0.5,
 				/obj/item/part/gun/frame/doublebarrel = 0.5,
 				/obj/item/part/gun/frame/kalash = 0.5,
-				/obj/item/part/gun/frame/havelock = 0.5,
-				/obj/item/part/gun/frame/sixshot = 0.5,
-				/obj/item/part/gun/frame/luger = 0.5,
+				/obj/item/part/gun/frame/detective = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
 				/obj/random/gun_parts/frames = 3,
 
-				/obj/item/gun/projectile/revolver/rev10/rex10 = 2,\
 				/obj/item/gun/projectile/revolver/detective = 3,\
 				/obj/item/gun/energy/shrapnel = 3,\
 				/obj/item/gun/energy/lasersmg = 0.5,\
 				/obj/item/ammo_kit = 3,\
-				/obj/item/gun/projectile/giskard = 1,\
-				/obj/item/gun/projectile/automatic/luger = 0.5,\
-				/obj/item/gun/projectile/boltgun/sa = 2,\
+				/obj/item/gun/projectile/clarissa = 1,\
+				/obj/item/gun/projectile/boltgun = 2,\
 				/obj/item/gun/projectile/shotgun/pump = 0.1,\
-				/obj/item/gun/projectile/revolver/sixshot/sawn = 0.5,\
 				/obj/item/gun/projectile/shotgun/pump/sawn = 0.5,\
-				/obj/item/gun/projectile/shotgun/pump/obrez = 1.5,\
-				/obj/item/gun/projectile/boltgun/sawn/light = 0.5,\
 				/obj/item/gun/projectile/boltgun/sawn/true = 0.5,\
-				/obj/item/gun/projectile/boltgun/sawn/sa = 1,\
-				/obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless = 0.1, \
-				/obj/item/gun/projectile/olivaw = 1.5,
+				/obj/item/gun/projectile/automatic/federalist = 0.1, \
+				/obj/item/gun/projectile/automatic/nationale = 0.1, \
 				/obj/item/gun_upgrade/barrel/forged = 1))
 
 /obj/random/gun_cheap/low_chance
@@ -53,34 +43,25 @@
 	spawn_nothing_percentage = 0
 
 /obj/random/gun_normal/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/grizzly = 0.5,
-				/obj/item/part/gun/frame/sixshot = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/grease = 0.5,
-				/obj/item/part/gun/frame/basilisk = 0.5,
-				/obj/item/part/gun/frame/sts = 0.5,
-				/obj/item/part/gun/frame/minotaur = 0.5,
-				/obj/item/part/gun/frame/minstral = 0.5,
-				/obj/item/part/gun/frame/armstrong = 0.5,
-				/obj/item/part/gun/frame/strelki = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/doublebarrel = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
+				/obj/item/part/gun/frame/colt = 0.5,
+				/obj/item/part/gun/frame/liberty = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
+				/obj/item/part/gun/frame/frontier = 0.5,
+				/obj/item/part/gun/frame/umbani = 0.5,
+				/obj/item/part/gun/frame/western = 0.5,
 				/obj/item/part/gun/frame/ak47 = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
 
-				/obj/item/gun/projectile/lamia = 0.1,\
-				/obj/item/gun/projectile/automatic/texan = 0.5,\
-				/obj/item/gun/projectile/lamia/gemini = 0.09,\
-				/obj/item/gun/projectile/revolver/rev10/rex10 = 0.5,\
-				/obj/item/gun/projectile/revolver/rev10 = 0.3,\
-				/obj/item/gun/projectile/basilisk = 0.5,\
-				/obj/item/gun/projectile/ladon = 0.5,\
-				/obj/item/gun/projectile/automatic/nordwind/strelki = 0.3,\
-				/obj/item/gun/projectile/revolver/sixshot = 1,\
-				/obj/item/gun/projectile/boltgun/lever = 1.5,\
-				/obj/item/gun/projectile/automatic/greasegun = 0.1,\
+				/obj/item/gun/projectile/martian = 0.1,\
+				/obj/item/gun/projectile/automatic/specialist = 0.5,\
+				/obj/item/gun/projectile/revolver/frontier = 0.5,\
+				/obj/item/gun/projectile/revolver/ranger = 0.3,\
+				/obj/item/gun/projectile/automatic/duty = 1,\
+				/obj/item/gun/projectile/automatic/operator_rifle = 0.1,\
 				/obj/item/gun/projectile/colt = 2,\
-				/obj/item/gun/projectile/revolver = 2,\
-				/obj/item/gun/projectile/boltgun = 0.5,\
-				/obj/item/gun/projectile/boltgun/sa = 2,\
+				/obj/item/gun/projectile/boltgun = 1,\
+				/obj/item/gun/projectile/boltgun/rosefield = 2,\
 				/obj/item/ammo_kit = 2,
 				/obj/item/gun_upgrade/trigger/dangerzone = 1,
 				/obj/item/gun_upgrade/mechanism/overshooter = 1))
@@ -97,29 +78,28 @@
 	spawn_nothing_percentage = 10
 
 /obj/random/gun_combat/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/grease = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/specialist = 0.5,
 				/obj/item/part/gun/frame/makarov = 0.5,
-				/obj/item/part/gun/frame/hornet = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
-				/obj/item/part/gun/frame/saiga = 0.5,
-				/obj/item/part/gun/frame/strelki = 0.5,
-				/obj/item/part/gun/frame/thompson = 0.5,
+				/obj/item/part/gun/frame/stinger = 0.5,
+				/obj/item/part/gun/frame/sweeper = 0.5,
+				/obj/item/part/gun/frame/duty = 0.5,
+				/obj/item/part/gun/frame/umbani = 0.5,
 				/obj/item/part/gun/frame/ak47 = 0.5,
-				/obj/item/part/gun/frame/sts = 0.5,
-				/obj/item/part/gun/frame/solmarine = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
+				/obj/item/part/gun/frame/federalist = 0.5,
 				/obj/random/gun_parts/frames = 1,
 
-				/obj/item/gun/projectile/automatic/greasegun = 1,\
+				/obj/item/gun/projectile/automatic/specialist = 1,\
 				/obj/item/gun/projectile/automatic/duty = 1,\
 				/obj/item/ammo_kit = 0.8,
-				/obj/item/gun/projectile/automatic/sts/rifle/sawn = 1,\
-				/obj/item/gun/projectile/automatic/omnirifle/solmarine = 1,\
-				/obj/item/gun/projectile/automatic/thompson = 0.5,
-				/obj/item/gun/projectile/automatic/ak47/sa/sawn = 1,\
+				/obj/item/gun/projectile/automatic/nationale = 1,\
+				/obj/item/gun/projectile/automatic/federalist = 1,\
+				/obj/item/gun/projectile/automatic/tactical = 0.5,
+				/obj/item/gun/projectile/automatic/ak47/sa = 1,\
 				/obj/item/gun/projectile/makarov = 1,\
-				/obj/item/gun/projectile/shotgun/pug = 0.5,
-				/obj/item/gun/projectile/revolver/hornet = 0.5))
+				/obj/item/gun/projectile/shotgun/sweeper = 0.5,
+				/obj/item/gun/projectile/shotgun/judge = 0.5,
+				/obj/item/gun/projectile/revolver/ranger = 0.5))
 
 /obj/random/gun_combat/low_chance
 	name = "low chance assault weapon"
@@ -136,33 +116,28 @@
 
 /obj/random/gun_fancy/item_to_spawn()
 	return pickweight(list(/obj/item/part/gun/frame/makarov = 0.5,
-				/obj/item/part/gun/frame/mamba = 0.5,
-				/obj/item/part/gun/frame/lamia = 0.5,
-				/obj/item/part/gun/frame/minstral = 0.5,
-				/obj/item/part/gun/frame/tacticool = 0.5,
-				/obj/item/part/gun/frame/deckard = 0.5,
-				/obj/item/part/gun/frame/hornet = 0.5,
-				/obj/item/part/gun/frame/scout = 0.5,
-				/obj/item/part/gun/frame/nord = 0.5,
-				/obj/item/part/gun/frame/solmarine = 0.5,
+				/obj/item/part/gun/frame/federalist = 0.5,
+				/obj/item/part/gun/frame/martian = 0.5,
+				/obj/item/part/gun/frame/ranger = 0.5,
+				/obj/item/part/gun/frame/frontier = 0.5,
+				/obj/item/part/gun/frame/breaker = 0.5,
+				///obj/item/part/gun/frame/contractor = 0.5,
+				/obj/item/part/gun/frame/duty = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
 				/obj/random/gun_parts/frames = 2,
 
-				/obj/item/gun/projectile/ladon = 1,\
-				/obj/item/gun/projectile/revolver/lemant = 1,\
-				/obj/item/gun/projectile/basilisk = 2,\
-				/obj/item/gun/projectile/automatic/survivalrifle = 1,\
-				/obj/item/gun/projectile/revolver/tacticool_revolver = 1,\
-				/obj/item/gun/projectile/silenced = 2,\
-				/obj/item/gun/projectile/revolver/mistral = 2,\
-				/obj/item/gun/projectile/colt/ten = 2,\
-				/obj/item/gun/projectile/automatic/nordwind/strelki = 0.3, \
-				/obj/item/gun/projectile/boltgun/lever = 1, \
-				/obj/item/gun/projectile/lamia/scoped = 1,\
-				/obj/item/gun/projectile/revolver/deckard = 0.4,\
+				/obj/item/gun/projectile/revolver/frontier = 1,\
+				/obj/item/gun/projectile/colt/freedom = 1,\
+				/obj/item/gun/projectile/revolver/ranger= 2,\
+				/obj/item/gun/projectile/martian = 2,\
+				/obj/item/gun/projectile/revolver/wristbreaker= 1,\
+				/obj/item/gun/projectile/automatic/duty = 0.3, \
+				/obj/item/gun/projectile/boltgun/lever/shotgun = 1, \
+				/obj/item/gun/projectile/boltgun/gamer = 1, \
 				/obj/item/gun/projectile/makarov = 1.5,\
 				/obj/item/gun/energy/lasercannon = 0.5,\
-				/obj/item/gun/projectile/boltgun/scout = 0.5,\
-				/obj/item/gun/projectile/revolver/rev10/mateba = 0.5))
+				/obj/item/gun/projectile/automatic/nationale/dragon = 0.5,
+				/obj/item/gun/projectile/automatic/federalist/homemaker = 0.5))
 
 /obj/random/gun_fancy/low_chance
 	name = "low chance fancy gun"
@@ -220,20 +195,19 @@
 	spawn_nothing_percentage = 30
 
 /obj/random/gun_shotgun/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/sixshot = 0.5,
-				/obj/item/part/gun/frame/grizzly = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/bull = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/doublebarrel = 0.5,
+				/obj/item/part/gun/frame/judge = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
+				/obj/item/part/gun/frame/western = 0.5,
+				/obj/item/part/gun/frame/sweeper = 0.5,
 
 				/obj/item/gun/projectile/shotgun/pump = 1,\
 				/obj/item/gun/projectile/shotgun/pump/sawn = 2,\
-				/obj/item/gun/projectile/shotgun/pump/obrez = 2,\
-				/obj/item/gun/projectile/shotgun/bull = 0.3,\
+				/obj/item/gun/projectile/boltgun/lever/shotgun = 1,\
+				/obj/item/gun/projectile/boltgun/lever/shotgun/sawn = 2,\
+				/obj/item/gun/projectile/shotgun/sweeper = 0.3,\
 				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,\
-				/obj/item/gun/projectile/shotgun/pump/combat/sawn = 1,\
-				/obj/item/gun/projectile/shotgun/pug = 0.3,\
-				/obj/item/gun/projectile/revolver/sixshot = 0.7))
+				/obj/item/gun/projectile/shotgun/judge = 0.3))
 
 /obj/random/gun_shotgun/low_chance
 	name = "low chance random shotgun"
@@ -247,34 +221,31 @@
 	icon_state = "gun-red"
 
 /obj/random/dungeon_gun_ballistic/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/dallas = 0.5,
-				/obj/item/part/gun/frame/dp27 = 0.5,
-				/obj/item/part/gun/frame/tk = 0.5,
+	return pickweight(list(/obj/item/part/gun/frame/operator_rifle = 0.5,
+				/obj/item/part/gun/frame/kraut = 0.5,
+				/obj/item/part/gun/frame/ak47 = 0.5,
 				/obj/item/part/gun/frame/pk = 0.5,
-				/obj/item/part/gun/frame/bastard = 0.5,
-				/obj/item/part/gun/frame/regulator = 0.5,
-				/obj/item/part/gun/frame/pug = 0.5,
-				/obj/item/part/gun/frame/saiga = 0.5,
-				/obj/item/part/gun/frame/solmarine = 0.5,
-				/obj/item/part/gun/frame/c20r = 0.5,
-				/obj/item/part/gun/frame/omni = 0.5,
+				/obj/item/part/gun/frame/buzzsaw = 0.5,
+				/obj/item/part/gun/frame/trench = 0.5,
+				/obj/item/part/gun/frame/sweeper = 0.5,
+				/obj/item/part/gun/frame/federalist = 0.5,
+				/obj/item/part/gun/frame/nationale = 0.5,
+				/obj/item/part/gun/frame/specialist = 0.5,
+				/obj/item/part/gun/frame/tactical = 0.5,
 				/obj/item/part/gun/frame/ak47 = 0.5,
 				/obj/random/gun_parts/frames/better_spawns = 2,
 
-				/obj/item/gun/projectile/automatic/pulse_rifle = 2,
-				/obj/item/gun/projectile/automatic/sbaw = 0.7, // Too good, needs to be rare.
-				/obj/item/gun/projectile/automatic/chaingun = 1,
-				/obj/item/gun/projectile/automatic/lmg/pk = 3,
-				/obj/item/gun/projectile/automatic/dp = 2,
-				/obj/item/gun/projectile/automatic/bastard = 2,
-				/obj/item/gun/projectile/automatic/ak47/sa/tac = 1,
-				/obj/item/gun/projectile/shotgun/pump/combat = 3,
-				/obj/item/gun/projectile/shotgun/pug = 2,
-				/obj/item/gun/projectile/gyropistol = 1,
-				/obj/item/gun/projectile/automatic/omnirifle/solmarine = 2,
-				/obj/item/gun/projectile/automatic/omnirifle = 1,
-				/obj/item/gun/projectile/automatic/c20r = 3,
-				/obj/item/gun/projectile/revolver/deckard = 2))
+				/obj/item/gun/projectile/automatic/operator_rifle = 2,
+				/obj/item/gun/projectile/automatic/judge = 0.7,
+				/obj/item/gun/projectile/automatic/lmg/buzzsaw = 2,
+				/obj/item/gun/projectile/automatic/lmg/pk = 1.5,
+				/obj/item/gun/projectile/automatic/maxim = 1,
+				/obj/item/gun/projectile/automatic/ak47/sa = 2,
+				/obj/item/gun/projectile/shotgun/sweeper = 2,
+				/obj/item/gun/projectile/automatic/ak47 = 2,
+				/obj/item/gun/projectile/automatic/nationale/dragon = 1,
+				/obj/item/gun/projectile/automatic/specialist = 3,
+				/obj/item/gun/projectile/automatic/tactical = 2))
 
 /obj/random/dungeon_gun_ballistic/low_chance
 	name = "low chance random special ballistic gun"
@@ -333,7 +304,7 @@
 				/obj/item/gun_upgrade/scope/watchman = 0.7,
 				/obj/item/gun_upgrade/scope/killer = 0.7,
 				/obj/item/gun_upgrade/underbarrel/bipod = 1,
-				/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = 0.01))
+				/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = 0.01))
 
 /obj/random/dungeon_gun_mods/low_chance
 	name = "low chance random gun mod"
@@ -380,7 +351,6 @@
 	/obj/item/part/gun/barrel/lrifle/steel = 1,
 	/obj/item/part/gun/barrel/clrifle/steel = 0.5,
 	/obj/item/part/gun/barrel/kurtz/steel = 0.5,
-	/obj/item/part/gun/barrel/hrifle/steel = 0.1,
 	/obj/item/part/gun/barrel/pistol = 5,
 	/obj/item/part/gun/barrel/magnum = 5,
 	/obj/item/part/gun/barrel/kurtz = 1.5,
@@ -388,12 +358,10 @@
 	/obj/item/part/gun/barrel/clrifle = 3,
 	/obj/item/part/gun/barrel/lrifle = 4,
 	/obj/item/part/gun/barrel/shotgun = 4,
-	/obj/item/part/gun/barrel/hrifle = 1,
 	/obj/item/part/gun/grip/wood = 5,
 	/obj/item/part/gun/grip/black = 3,
 	/obj/item/part/gun/grip/serb = 2,
 	/obj/item/part/gun/grip/rubber = 1,
-	/obj/item/part/gun/grip/excel = 0.5,
 	/obj/item/part/gun/mechanism/pistol/steel = 2.5,
 	/obj/item/part/gun/mechanism/revolver/steel = 2,
 	/obj/item/part/gun/mechanism/boltgun = 4,
@@ -422,11 +390,9 @@
 	return pickweight(list(/obj/item/part/gun/mechanism/machinegun = 1,
 	/obj/item/part/gun/mechanism/autorifle = 3,
 	/obj/item/part/gun/mechanism/smg = 2,
-	/obj/item/part/gun/barrel/hrifle = 1,
 	/obj/item/part/gun/barrel/lrifle = 2,
 	/obj/item/part/gun/barrel/clrifle = 1,
 	/obj/item/part/gun/barrel/srifle = 3,
-	/obj/item/part/gun/barrel/kurtz = 2,
 	/obj/item/part/gun/grip/rubber = 2,
 	/obj/item/part/gun/grip/serb = 3,
 	/obj/item/part/gun/barrel/antim = 0.3,
@@ -439,58 +405,29 @@
 	spawn_nothing_percentage = 30
 
 /obj/random/gun_parts/frames/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/omni = 3,
-	//obj/item/part/gun/frame/c20r/sci = 1,
-	//obj/item/part/gun/frame/c20r = 1,
-	//obj/item/part/gun/frame/dp27 = 1,
-	/obj/item/part/gun/frame/drozd = 4,
-	/obj/item/part/gun/frame/judge = 2,
-	/obj/item/part/gun/frame/grease = 5,
-	/obj/item/part/gun/frame/luger = 5,
-	//obj/item/part/gun/frame/pk = 1,
-	//obj/item/part/gun/frame/tk = 1,
-	/obj/item/part/gun/frame/luty = 6,
-	/obj/item/part/gun/frame/mamba = 5,
-	//obj/item/part/gun/frame/maxim = 1,
-	/obj/item/part/gun/frame/motherfucker = 3,
-	//obj/item/part/gun/frame/nord = 1,
-	/obj/item/part/gun/frame/strelki = 2,
-	/obj/item/part/gun/frame/ppsh = 1,
-	//obj/item/part/gun/frame/dallas = 1,
-	/obj/item/part/gun/frame/solmarine = 8,
-	//obj/item/part/gun/frame/specop = 1,
-	/obj/item/part/gun/frame/sts = 7,
-	/obj/item/part/gun/frame/thompson = 5,
-	//obj/item/part/gun/frame/vintorez = 1,
-	//obj/item/part/gun/frame/heavysniper = 1,
-	/obj/item/part/gun/frame/armstrong = 6,
-	//obj/item/part/gun/frame/homemadebolt = 1,
-	/obj/item/part/gun/frame/roe = 8,
-	//obj/item/part/gun/frame/scout = 1,
-	/obj/item/part/gun/frame/basilisk = 4,
-	/obj/item/part/gun/frame/mk58= 8,
+	return pickweight(list(/obj/item/part/gun/frame/federalist = 4,
+	/obj/item/part/gun/frame/umbani = 4,
+	/obj/item/part/gun/frame/judge = 1,
+	/obj/item/part/gun/frame/broz = 5,
+	/obj/item/part/gun/frame/specialist = 3,
+	/obj/item/part/gun/frame/revolver_handmade = 6,
+	/obj/item/part/gun/frame/homemadebolt = 7,
+	/obj/item/part/gun/frame/partizaner = 6,
+	/obj/item/part/gun/frame/luty = 5,
+	/obj/item/part/gun/frame/boltgun = 7,
+	/obj/item/part/gun/frame/nationale = 3,
+	/obj/item/part/gun/frame/ak47 = 4,
+	/obj/item/part/gun/frame/frontier = 5,
+	/obj/item/part/gun/frame/martian = 4,
+	/obj/item/part/gun/frame/colt= 5,
 	/obj/item/part/gun/frame/makarov = 4,
-	/obj/item/part/gun/frame/colt = 7,
-	/obj/item/part/gun/frame/freedom = 2,
-	/obj/item/part/gun/frame/giskard = 4,
-	/obj/item/part/gun/frame/glock = 3,
-	/obj/item/part/gun/frame/judiciary = 2,
-	//obj/item/part/gun/frame/lamia = 1,
-	/obj/item/part/gun/frame/olivaw = 5,
-	//obj/item/part/gun/frame/deckard = 1,
-	/obj/item/part/gun/frame/havelock = 6,
-	//obj/item/part/gun/frame/revolver_handmade = 1,
-	//obj/item/part/gun/frame/hornet = 1,
-	/obj/item/part/gun/frame/minstral = 1,
-	/obj/item/part/gun/frame/minotaur = 4,
-	/obj/item/part/gun/frame/sixshot = 1,
-	/obj/item/part/gun/frame/tacticool = 4,
-	//obj/item/part/gun/frame/wayfarer = 1,
-	//obj/item/part/gun/frame/bull = 1,
-	/obj/item/part/gun/frame/regulator = 2,
+	/obj/item/part/gun/frame/tactical = 3,
+	/obj/item/part/gun/frame/widowmaker = 7,
+	/obj/item/part/gun/frame/liberty = 5,
+	/obj/item/part/gun/frame/detective = 6,
+	/obj/item/part/gun/frame/ranger = 3,
 	/obj/item/part/gun/frame/doublebarrel = 6,
-	//obj/item/part/gun/frame/pug = 1,
-	/obj/item/part/gun/frame/grizzly = 3,
+	/obj/item/part/gun/frame/trench = 5,
 	/obj/random/gun_parts/frames/better_spawns = 1))
 
 /obj/random/gun_parts/frames/better_spawns
@@ -498,44 +435,24 @@
 	spawn_nothing_percentage = 30
 
 /obj/random/gun_parts/frames/better_spawns/item_to_spawn()
-	return pickweight(list(/obj/item/part/gun/frame/omni = 5,
-	//obj/item/part/gun/frame/c20r/sci = 1,
-	/obj/item/part/gun/frame/c20r = 3,
-	/obj/item/part/gun/frame/dp27 = 2,
-	/obj/item/part/gun/frame/pk = 2,
-	/obj/item/part/gun/frame/tk = 2,
-	/obj/item/part/gun/frame/mamba = 3,
+	return pickweight(list(/obj/item/part/gun/frame/federalist = 5,
 	/obj/item/part/gun/frame/maxim = 1,
-	//obj/item/part/gun/frame/motherfucker = 1,
-	/obj/item/part/gun/frame/nord = 2,
-	/obj/item/part/gun/frame/strelki = 1,
-	/obj/item/part/gun/frame/ppsh = 6,
-	/obj/item/part/gun/frame/dallas = 2,
-	/obj/item/part/gun/frame/solmarine = 8,
-	/obj/item/part/gun/frame/specop = 4,
-	/obj/item/part/gun/frame/sts = 8,
-	/obj/item/part/gun/frame/thompson = 7,
-	/obj/item/part/gun/frame/vintorez = 1,
-	/obj/item/part/gun/frame/heavysniper = 1,
-	/obj/item/part/gun/frame/armstrong = 5,
-	//obj/item/part/gun/frame/homemadebolt = 1,
-	/obj/item/part/gun/frame/scout = 4,
-	/obj/item/part/gun/frame/basilisk = 5,
-	/obj/item/part/gun/frame/amnesty = 3,
-	/obj/item/part/gun/frame/opshot = 2,
+	/obj/item/part/gun/frame/pk = 2,
+	/obj/item/part/gun/frame/buzzsaw = 2,
+	/obj/item/part/gun/frame/nationale = 4,
+	/obj/item/part/gun/frame/duty = 4,
+	/obj/item/part/gun/frame/specialist = 6,
+	/obj/item/part/gun/frame/operator_rifle = 2,
+	/obj/item/part/gun/frame/ak47 = 8,
+	/obj/item/part/gun/frame/frontier = 5,
+	/obj/item/part/gun/frame/martian = 3,
+	/obj/item/part/gun/frame/judge = 2,
 	/obj/item/part/gun/frame/makarov = 6,
-	/obj/item/part/gun/frame/glock = 3,
-	/obj/item/part/gun/frame/judiciary = 3,
-	/obj/item/part/gun/frame/lamia = 2,
-	/obj/item/part/gun/frame/deckard = 4,
-	//obj/item/part/gun/frame/revolver_handmade = 1,
-	/obj/item/part/gun/frame/hornet = 2,
-	/obj/item/part/gun/frame/minstral = 4,
-	/obj/item/part/gun/frame/minotaur = 6,
-	/obj/item/part/gun/frame/tacticool = 8,
-	/obj/item/part/gun/frame/mateba = 1,
-	/obj/item/part/gun/frame/wayfarer = 1,
-	/obj/item/part/gun/frame/bull = 5,
-	/obj/item/part/gun/frame/pug = 7
+	/obj/item/part/gun/frame/liberty = 3,
+	/obj/item/part/gun/frame/ranger = 4,
+	/obj/item/part/gun/frame/frontier = 6,
+	/obj/item/part/gun/frame/kraut = 1,
+	/obj/item/part/gun/frame/tactical = 5,
+	/obj/item/part/gun/frame/sweeper = 7
 	))
 

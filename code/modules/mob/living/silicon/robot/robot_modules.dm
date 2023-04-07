@@ -654,7 +654,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/tool/weldingtool/robotic/weaker(src) //cracks and the like.
 	src.modules += new /obj/item/tool/knife/tacknife(src)
 	src.modules += new /obj/item/taperoll/police(src)
-	src.modules += new /obj/item/gun/projectile/automatic/riot_autoshotgun/robo(src)
+	src.modules += new /obj/item/gun/projectile/automatic/judge(src)
 	src.modules += new /obj/item/gripper/ammo(src)
 	src.modules += new /obj/item/gripper/upgrade(src)
 	src.modules += new /obj/item/device/gps(src)
@@ -747,7 +747,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/form_printer(src)
 	src.modules += new /obj/item/gripper/paperwork(src)
 	src.modules += new /obj/item/gripper/ammo(src)
-	src.modules += new /obj/item/gun/projectile/automatic/c20r/sci(src)
+	src.modules += new /obj/item/gun/projectile/automatic/specialist(src)
 	src.emag += new /obj/item/reagent_containers/spray/lube(src)
 
 	if(R.icon_state == "mekajani")
@@ -913,7 +913,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/gripper/miner(src)
 	src.modules += new /obj/item/device/scanner/mining(src)
 	src.modules += new /obj/item/device/t_scanner(src)
-	src.modules += new /obj/item/gun/projectile/automatic/riot_autoshotgun/robo/single_shot(src)
+	src.modules += new /obj/item/gun/projectile/shotgun/doublebarrel(src)
 	src.modules += new /obj/item/gripper/ammo(src)
 	src.modules += new /obj/item/gripper/upgrade(src)
 	src.modules += new /obj/item/device/scanner/price(src)

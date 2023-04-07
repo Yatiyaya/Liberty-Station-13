@@ -21,11 +21,13 @@ GLOBAL_LIST_INIT(custom_kits, list(
 		/obj/item/tank/onestar_regenerator,
 		/obj/item/clothing/mask/gas,
 		/obj/item/clothing/shoes/jackboots,
-		/obj/item/clothing/glasses/powered/thermal/onestar,
+		/obj/item/clothing/glasses/powered/thermal/onestar)))
+		/*
 		/obj/item/gun/projectile/automatic/scaffold,
 		/obj/item/ammo_magazine/ammobox/light_rifle_257,
 		/obj/item/ammo_magazine/ammobox/light_rifle_257,
-		/obj/item/ammo_magazine/ammobox/light_rifle_257)))
+		/obj/item/ammo_magazine/ammobox/light_rifle_257
+		*/
 
 GLOBAL_VAR(log_directory)
 // LOGGING  MOVE ME //

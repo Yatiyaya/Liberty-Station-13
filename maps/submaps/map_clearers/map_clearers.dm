@@ -28,7 +28,7 @@
 	mappath = 'maps/submaps/map_clearers/coras_map.dmm'
 
 /datum/map_template/spider_turns_os_map
-	name = "Spider Outpost Turned GP Event Map (30x30)"
+	name = "Spider Outpost Turned SD Event Map (30x30)"
 	desc = "The start up costs were exsorbident."
 	mappath = 'maps/submaps/map_clearers/os_reclaimed_spider_post.dmm'
 

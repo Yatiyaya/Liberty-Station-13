@@ -153,7 +153,7 @@
 	ranged_cooldown = 4
 	rapid = 0
 	icon_state = "syndicate_shotgun"
-	drop_items = list(/obj/item/gun/projectile/shotgun/pump/combat/sawn)
+	drop_items = list(/obj/item/gun/projectile/shotgun/pump/sawn)
 	projectilesound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 	projectiletype = /obj/item/projectile/bullet/shotgun
 
@@ -183,7 +183,7 @@
 	ranged_cooldown = 4
 	rapid = 0
 	icon_state = "syndicate_space_shotgun"
-	drop_items = list(/obj/item/gun/projectile/shotgun/pump/combat/sawn)
+	drop_items = list(/obj/item/gun/projectile/shotgun/pump/sawn)
 	projectilesound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 	projectiletype = /obj/item/projectile/bullet/shotgun
 
@@ -297,7 +297,7 @@
 	icon_state = "syndicate_stormtrooper_smg"
 	projectilesound = 'sound/weapons/Gunshot_light.ogg'
 	projectiletype = /obj/item/projectile/bullet/pistol_35
-	drop_items = list(/obj/item/gun/projectile/automatic/c20r)
+	drop_items = list(/obj/item/gun/projectile/automatic/specialist)
 
 /mob/living/simple_animal/hostile/elitemercenary/range/gunslinger
 	ranged_cooldown = 2
@@ -305,7 +305,7 @@
 	icon_state = "syndicate_stormtrooper_pistol"
 	projectilesound = 'sound/weapons/guns/fire/revolver_fire.ogg'
 	projectiletype = /obj/item/projectile/bullet/kurtz_50
-	drop_items = list(/obj/item/gun/projectile/revolver/mistral)
+	drop_items = list(/obj/item/gun/projectile/revolver/frontier)
 
 /mob/living/simple_animal/hostile/elitemercenary/range/space/heavy/shotgun
 	ranged_cooldown = 4
@@ -313,4 +313,4 @@
 	icon_state = "syndicate_stormtrooper_shotgun"
 	projectilesound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 	projectiletype = /obj/item/projectile/bullet/shotgun
-	drop_items = list(/obj/item/gun/projectile/shotgun/pump/combat)
+	drop_items = list(/obj/item/gun/projectile/shotgun/pump)
