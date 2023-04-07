@@ -42,9 +42,9 @@
 
 //Derelict tileset
 /obj/structure/low_wall/onestar
-	name = "Greyson low wall"
+	name = "Similacrum low wall"
 	wall_color = "#FFFFFF"
-	icon_state = "greyson"
+	icon_state = "similacrum"
 
 //Churchlowwall
 /obj/structure/low_wall/church

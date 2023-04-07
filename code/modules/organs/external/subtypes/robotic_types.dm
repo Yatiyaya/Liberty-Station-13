@@ -347,9 +347,9 @@ obj/item/organ/external/robotic/synthskin/groin
 /obj/item/organ/external/robotic/excelsior/head
 	default_description = /datum/organ_description/head
 
-// Greyson
+// Similacrum
 /obj/item/organ/external/robotic/one_star
-	name = "Greyson"
+	name = "Similacrum"
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"

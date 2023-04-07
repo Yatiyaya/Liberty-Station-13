@@ -131,7 +131,7 @@ List of powers in this page :
 						/obj/item/gun_upgrade/trigger/boom,			//Illegal
 						/obj/item/gun_upgrade/scope/watchman,
 						/obj/item/gun_upgrade/mechanism/glass_widow,
-						/obj/item/gun_upgrade/mechanism/greyson_master_catalyst,
+						/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst,
 						/obj/item/gun_upgrade/mechanism/brass_kit,
 						/obj/item/gun_upgrade/trigger/honker,
 						/obj/item/gun_upgrade/mechanism/bikehorn,

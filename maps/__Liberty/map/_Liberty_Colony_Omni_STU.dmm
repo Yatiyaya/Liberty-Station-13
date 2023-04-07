@@ -4329,7 +4329,7 @@
 /area/liberty/command/cbo)
 "aRr" = (
 /obj/structure/bed/chair/custom/onestar{
-	desc = "A steel chair manufactured by Greyson Positronics. Doesn't look very comfortable.";
+	desc = "A steel chair manufactured by Similacrum Robotics. Doesn't look very comfortable.";
 	dir = 1;
 	name = "stiff chair"
 	},
@@ -30530,7 +30530,7 @@
 /obj/machinery/camera/network/research_outpost{
 	dir = 10
 	},
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/allied,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/abandoned_solars)
 "fVD" = (
@@ -35081,7 +35081,7 @@
 /area/liberty/rnd/xenobiology)
 "gMn" = (
 /obj/structure/bed/chair/custom/onestar{
-	desc = "A steel chair manufactured by Greyson Positronics. Doesn't look very comfortable.";
+	desc = "A steel chair manufactured by Similacrum Robotics. Doesn't look very comfortable.";
 	dir = 4;
 	name = "stiff chair"
 	},
@@ -68431,7 +68431,7 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1north)
 "niS" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1east)
 "niU" = (
@@ -90980,7 +90980,7 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/undergroundfloor1west)
 "rDA" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/allied,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/abandoned_solars)
 "rDB" = (
@@ -119818,7 +119818,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics/garden)
 "xjc" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "xjo" = (

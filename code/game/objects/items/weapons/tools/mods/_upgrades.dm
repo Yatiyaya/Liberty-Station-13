@@ -39,7 +39,7 @@
 	var/destroy_on_removal = FALSE
 	var/unique_removal = FALSE 		//Flag for unique removals.
 	var/unique_removal_type 		//What slot do we remove when this is removed? Used for rails.
-	var/greyson_moding = FALSE
+	var/similacrum_moding = FALSE
 
 /datum/component/item_upgrade/RegisterWithParent()
 	RegisterSignal(parent, COMSIG_IATTACK, .proc/attempt_install)
@@ -127,7 +127,7 @@
 				return FALSE
 
 	//Bypasses any other checks.
-	if(greyson_moding && T.allow_greyson_mods)
+	if(similacrum_moding && T.allow_similacrum_mods)
 		return TRUE
 
 	if((req_fuel_cell & REQ_FUEL) && !T.use_fuel_cost)
@@ -228,7 +228,7 @@
 			return FALSE
 
 	//Bypasses any other checks.
-	if(greyson_moding && G.allow_greyson_mods)
+	if(similacrum_moding && G.allow_similacrum_mods)
 		return TRUE
 
 	for(var/I in req_gun_tags)
@@ -343,7 +343,7 @@
 	if(tool_upgrades[UPGRADE_SANCTIFY])
 		T.aspects += list(SANCTIFIED)
 	if(tool_upgrades[UPGRADE_ALLOW_GREYON_MODS])
-		T.allow_greyson_mods = tool_upgrades[UPGRADE_ALLOW_GREYON_MODS]
+		T.allow_similacrum_mods = tool_upgrades[UPGRADE_ALLOW_GREYON_MODS]
 	if(tool_upgrades[UPGRADE_PRECISION])
 		T.precision += tool_upgrades[UPGRADE_PRECISION]
 	if(tool_upgrades[UPGRADE_WORKSPEED])
@@ -395,7 +395,7 @@
 
 /datum/component/item_upgrade/proc/apply_values_gun(var/obj/item/gun/G)
 	if(weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS])
-		G.allow_greyson_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS]
+		G.allow_similacrum_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS]
 	if(weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT])
 		G.damage_multiplier *= weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT]
 	if(weapon_upgrades[GUN_UPGRADE_PAIN_MULT])
@@ -572,7 +572,7 @@
 		to_chat(user, SPAN_NOTICE("Increases explosive defense by [tool_upgrades[UPGRADE_BOMB_ARMOR]]"))
 
 	if(tool_upgrades[UPGRADE_ALLOW_GREYON_MODS])
-		to_chat(user, SPAN_NOTICE("This mod allows you to install Greyson Positronic mods"))
+		to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
 
 	if(required_qualities.len)
 		to_chat(user, SPAN_WARNING("Requires a tool with one of the following qualities:"))
@@ -739,7 +739,7 @@
 			to_chat(user, SPAN_WARNING("Adds a scope slot."))
 
 		if(weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS])
-			to_chat(user, SPAN_NOTICE("This mod allows you to install Greyson Positronic mods"))
+			to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
 
 		if(weapon_upgrades[GUN_UPGRADE_ZOOM])
 			var/amount = weapon_upgrades[GUN_UPGRADE_ZOOM]

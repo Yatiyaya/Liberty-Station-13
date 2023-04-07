@@ -213,7 +213,7 @@
 	autoset = TRUE
 
 /obj/effect/shuttle_landmark/rocinante_field_office
-	name = "Greyson Field Office Dock"
+	name = "Similacrum Field Office Dock"
 	landmark_tag = "nav_rocinante_graysonfield"
 	base_turf = /turf/simulated/floor/reinforced
 	autoset = TRUE

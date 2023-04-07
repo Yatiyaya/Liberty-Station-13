@@ -1,9 +1,9 @@
-/obj/mecha/combat/greyson
-	desc = "One of Greyson's deadliest machines, converted into an exosuit by Soteria."
+/obj/mecha/combat/similacrum
+	desc = "One of Similacrum's deadliest machines, converted into an exosuit by Soteria."
 	name = "Type"
 	icon = 'icons/mob/64x64.dmi'
-	icon_state = "greyson_mech"
-	initial_icon = "greyson_mech"
+	icon_state = "similacrum_mech"
+	initial_icon = "similacrum_mech"
 	step_in = 3
 	step_energy_drain = 3
 	dir_in = 1 //Facing North.
@@ -21,7 +21,7 @@
 	pixel_x = -16 // Make the mech centered
 	pixel_y = -16
 
-/obj/mecha/combat/greyson/New()
+/obj/mecha/combat/similacrum/New()
 	..()
 	name += " [rand(0, 9)][rand(0, 9)][rand(0, 9)][rand(0, 9)]" // Random numbers for the name
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/ranged_weapon/ballistic/ultracannon/loaded(src)

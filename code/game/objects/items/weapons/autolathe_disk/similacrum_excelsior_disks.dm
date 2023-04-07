@@ -1,8 +1,8 @@
 // Disks formated as /designpath = pointcost , if no point cost is specified it defaults to 1.
 // To make a design unprotect use -1
-// greyson positronic
+// similacrum positronic
 /obj/item/computer_hardware/hard_drive/portable/design/onestar
-	disk_name = "Greyson Positronics Tool Pack"
+	disk_name = "Similacrum Positronics Tool Pack"
 	icon_state = "onestar"
 	license = 5
 	designs = list(
@@ -18,32 +18,32 @@
 		/datum/design/autolathe/tool/onestar_shovel,
 		/datum/design/autolathe/tool/jackhammer_onestar,
 		/datum/design/autolathe/tool/drill_onestar,
-		/datum/design/autolathe/part/greyson/ai = 3,
+		/datum/design/autolathe/part/similacrum/ai = 3,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts
-	disk_name = "Greyson Positronics Stock Parts Pack"
+	disk_name = "Similacrum Positronics Stock Parts Pack"
 	icon_state = "onestar"
 	license = 8
 	designs = list(
-		/datum/design/autolathe/greyson/laser,
-		/datum/design/autolathe/greyson/matter,
-		/datum/design/autolathe/greyson/module,
-		/datum/design/autolathe/greyson/capacitor,
-		/datum/design/autolathe/greyson/manipulator,
+		/datum/design/autolathe/similacrum/laser,
+		/datum/design/autolathe/similacrum/matter,
+		/datum/design/autolathe/similacrum/module,
+		/datum/design/autolathe/similacrum/capacitor,
+		/datum/design/autolathe/similacrum/manipulator,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/cog
-	disk_name = "Greyson Positronics - Cog"
+	disk_name = "Similacrum Positronics - Cog"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
-		/datum/design/autolathe/gun/greyson_cog = 2,
+		/datum/design/autolathe/gun/similacrum_cog = 2,
 		/datum/design/autolathe/cell/medium/high,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/spring
-	disk_name = "Greyson Positronics - Spring"
+	disk_name = "Similacrum Positronics - Spring"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -55,7 +55,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet
-	disk_name = "Greyson Positronics - Rivet"
+	disk_name = "Similacrum Positronics - Rivet"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -67,7 +67,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar
-	disk_name = "Greyson Positronics - rebar"
+	disk_name = "Similacrum Positronics - rebar"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -79,7 +79,7 @@
 		)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun
-	disk_name = "Greyson Positronics - Nail Gun"
+	disk_name = "Similacrum Positronics - Nail Gun"
 	icon_state = "onestar"
 	license = 16
 	designs = list(
@@ -95,7 +95,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold
-	disk_name = "Greyson Positronics - Scaffold"
+	disk_name = "Similacrum Positronics - Scaffold"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
@@ -105,7 +105,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter
-	disk_name = "Greyson Positronics - Trouble Shooter"
+	disk_name = "Similacrum Positronics - Trouble Shooter"
 	icon_state = "onestar"
 
 	license = 6
@@ -117,7 +117,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/armor
-	disk_name = "Greyson Positronics - Ablative Vest"
+	disk_name = "Similacrum Positronics - Ablative Vest"
 	icon_state = "onestar"
 	license = 6 //3 sets
 	designs = list(

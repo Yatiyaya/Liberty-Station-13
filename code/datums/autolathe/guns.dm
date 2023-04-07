@@ -43,7 +43,7 @@
 	build_path = /obj/item/gun/projectile/mk58
 
 /datum/design/autolathe/gun/spring
-	name = "GP 9mm \"Spring\""
+	name = "SD 9mm \"Spring\""
 	build_path = /obj/item/gun/projectile/spring
 
 /// 10mm M A G N U M
@@ -77,7 +77,7 @@
 	build_path = /obj/item/gun/projectile/revolver/rev10
 
 /datum/design/autolathe/gun/rivet
-	name = "GP 10mm Magnum \"Rivet\""
+	name = "SD 10mm Magnum \"Rivet\""
 	build_path = /obj/item/gun/projectile/rivet
 
 /datum/design/autolathe/gun/liberty
@@ -111,7 +111,7 @@
 	build_path = /obj/item/gun/projectile/lamia/amnesty
 
 /datum/design/autolathe/gun/rebar
-	name = "GP 12mm Rebar"
+	name = "SD 12mm Rebar"
 	build_path = /obj/item/gun/projectile/rebar
 
 /// S M G S
@@ -223,7 +223,7 @@
 	build_path = /obj/item/gun/projectile/boltgun/light
 
 /datum/design/autolathe/gun/nail_gun
-	name = "GP 6.5x39mm \"Nail\""
+	name = "SD 6.5x39mm \"Nail\""
 	build_path = /obj/item/gun/projectile/automatic/nail_gun
 
 /datum/design/autolathe/gun/duty
@@ -302,7 +302,7 @@
 	build_path = /obj/item/gun/projectile/revolver/judge
 
 /datum/design/autolathe/gun/trouble_shooter
-	name = "GP 7.62x39mm \"Trouble Shooter\""
+	name = "SD 7.62x39mm \"Trouble Shooter\""
 	build_path = /obj/item/gun/projectile/trouble_shooter
 
 // . 4 0 8 H E A V Y  R I F L E S
@@ -337,7 +337,7 @@
 // S N O W F L A K E S
 
 /datum/design/autolathe/gun/scaffold
-	name = "GP 10mm Caseless Rifle \"Scaffold\""
+	name = "SD 10mm Caseless Rifle \"Scaffold\""
 	build_path = /obj/item/gun/projectile/automatic/scaffold
 
 /datum/design/autolathe/gun/pulse_rifle
@@ -403,7 +403,7 @@
 /datum/design/autolathe/gun/energygun_martin
 	name = "H&S PDW E \"Martin\""
 	build_path = /obj/item/gun/energy/gun/martin
-	
+
 /datum/design/autolathe/gun/ntpistol
 	name = "NT LP \"Serenity\""
 	build_path = /obj/item/gun/energy/ntpistol
@@ -452,8 +452,8 @@
 	name = "OT cleansing carbine"
 	build_path = /obj/item/gun/matter/launcher/nt_sprayer
 
-/datum/design/autolathe/gun/greyson_cog
-	name = "GP \"Cog\" lasegun"
+/datum/design/autolathe/gun/similacrum_cog
+	name = "SD \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog
 
 /datum/design/autolathe/gun/plasma/martyr

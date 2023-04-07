@@ -43,9 +43,9 @@
 		/obj/item/stock_parts/console_screen = 1
 	)
 
-/obj/item/circuitboard/autolathe_greyson
-	build_name = "greyson autolathe"
-	build_path = /obj/machinery/autolathe/greyson
+/obj/item/circuitboard/autolathe_similacrum
+	build_name = "similacrum autolathe"
+	build_path = /obj/machinery/autolathe/similacrum
 	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2, MATERIAL_PLATINUM = 4)
 	board_type = "machine"
 	origin_tech = list(TECH_ENGINEERING = 8, TECH_DATA = 6)
