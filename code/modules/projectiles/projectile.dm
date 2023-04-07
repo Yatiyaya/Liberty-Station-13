@@ -123,9 +123,13 @@
 
 	var/recoil = 0
 
+	var/volume = 15 //Amount of reagents we can store
+	var/coated = FALSE
+
 /obj/item/projectile/New()
 
 	penetration_holder = new /datum/penetration_holder
+	create_reagents(volume)
 
 	. = ..()
 

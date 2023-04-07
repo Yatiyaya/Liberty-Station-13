@@ -42,6 +42,11 @@
 
 	. = ..()
 
+/obj/item/ammo_casing/proc/give_chems(chem)
+	if(BB && chem && !BB.coated)
+		BB.reagents.add_reagent(chem, 5)
+		BB.coated = TRUE
+
 /obj/item/ammo_casing/add_initial_transforms()
 	. = ..()
 

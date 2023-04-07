@@ -473,12 +473,6 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/hunting_lodge)
-"cp" = (
-/obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,
-/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,
-/turf/simulated/floor/wood/wild3,
-/area/liberty/outside/forest/hunting_lodge_dark)
 "cr" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/barman_recipes,
@@ -581,8 +575,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 6
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "cU" = (
@@ -756,8 +748,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 8
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "dM" = (
@@ -1269,8 +1259,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 9
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gu" = (
@@ -1286,8 +1274,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 10
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gw" = (
@@ -1570,8 +1556,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 4
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "il" = (
@@ -1630,8 +1614,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 5
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "iS" = (
@@ -2040,7 +2022,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "of" = (
@@ -2660,7 +2641,6 @@
 /area/liberty/outside/forest/hunting_lodge)
 "wM" = (
 /obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/boltgun/light,
 /obj/item/ammo_magazine/ammobox/light_rifle_257_small/hv,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -3514,7 +3494,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "IC" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "IE" = (
@@ -4200,7 +4179,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "SM" = (
@@ -4365,11 +4343,6 @@
 	},
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/forest/hunting_lodge)
-"Vu" = (
-/obj/structure/table/rack/shelf,
-/obj/item/organ_module/active/simple/implant_bolt_lance,
-/turf/simulated/floor/wood/wild3,
-/area/liberty/outside/forest/hunting_lodge_dark)
 "VA" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 8
@@ -9659,7 +9632,7 @@ cu
 jj
 xS
 WQ
-Vu
+Pl
 sp
 PF
 WQ
@@ -9737,7 +9710,7 @@ WQ
 WQ
 WQ
 WQ
-cp
+Pl
 sp
 fi
 WQ

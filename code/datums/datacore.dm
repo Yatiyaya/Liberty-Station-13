@@ -73,7 +73,7 @@ var/global/ManifestJSON
 		if(real_rank in science_positions)
 			sci[name] = rank
 			department = 1
-		if(real_rank in cargo_positions)
+		if(real_rank in service_positions)
 			car[name] = rank
 			department = 1
 		if(real_rank in prospector_positions)

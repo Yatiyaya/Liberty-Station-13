@@ -77,7 +77,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /turf/simulated/floor/fixed/hydrotile,
 /area/liberty/engineering/engine_room)
 "aas" = (
@@ -304,7 +304,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /turf/simulated/floor/fixed/hydrotile,
 /area/liberty/engineering/engine_room)
 "abd" = (
@@ -4475,7 +4475,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "alQ" = (
@@ -11714,7 +11714,7 @@
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/crew_quarters/sleep/cryo2)
 "aEG" = (
-/obj/landmark/join/start/foreman,
+/obj/landmark/join/start/shepherd,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/pros/foreman)
 "aEH" = (
@@ -38932,7 +38932,7 @@
 "bUl" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/prep)
 "bUm" = (
@@ -40630,7 +40630,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/prep)
 "bYc" = (
@@ -40693,7 +40693,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/prep)
 "bYm" = (
@@ -43434,7 +43434,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 8
 	},
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "ceM" = (
@@ -65863,7 +65862,6 @@
 /area/liberty/hallway/side/f2section3)
 "dfx" = (
 /obj/structure/bed/chair/office/dark,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/quartermaster/office)
 "dfy" = (
@@ -65903,7 +65901,6 @@
 "dfB" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/generic,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/quartermaster/office)
 "dfC" = (
@@ -74671,7 +74668,6 @@
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "dzW" = (
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "dzX" = (
@@ -82341,7 +82337,7 @@
 /area/liberty/command/RP)
 "dRW" = (
 /obj/structure/bed/chair/custom/bar_special,
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/bar)
 "dRX" = (
@@ -82353,7 +82349,7 @@
 /area/liberty/crew_quarters/hydroponics)
 "dRY" = (
 /obj/structure/bed/chair/custom/bar_special,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/bar)
 "dRZ" = (

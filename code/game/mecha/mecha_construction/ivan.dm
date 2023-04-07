@@ -356,21 +356,21 @@
 					"[usr] places a radio in the conduction port of the [holder]",
 					"You place a radio in the conduction port of the [holder]."
 					)
-					holder.icon_state = "ripley13"
+					holder.icon_state = "ripley12"
 				else
 					usr.visible_message(
 						"[usr] removes the radio from the conduction port of the [holder]", \
 						"You remove the radio from the conduction port of the [holder]."
 					)
 					new /obj/item/robot_parts/robot_component/radio(get_turf(holder))
-					holder.icon_state = "ripley11"
+					holder.icon_state = "ripley12"
 			if(4)
 				if(diff==FORWARD)
 					usr.visible_message(
 						"[usr] secures the radio to the [holder].", \
 						"You secure the radio to the [holder]."
 					)
-					holder.icon_state = "fireripley11"
+					holder.icon_state = "fireripley12"
 				else
 					usr.visible_message(
 						"[usr] unsecures the radio from the [holder].", \

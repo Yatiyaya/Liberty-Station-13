@@ -129,12 +129,6 @@
 	min_cost = 5
 	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/cells
 
-/datum/armament/item/disk/mk58
-	name = "Disk - Rose and Thorn"
-	cost = 10
-	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/mk58
-
 /datum/armament/item/disk/counselor
 	name = "Disk - Counselor"
 	cost = 5
@@ -153,12 +147,6 @@
 	min_cost = 10
 	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/carpedie
 
-/datum/armament/item/disk/regulator
-	name = "Disk - Regulator"
-	cost = 20
-	min_cost = 15
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/regulator
-
 /datum/armament/item/disk/halicon
 	name = "Disk - Halicon"
 	cost = 15
@@ -176,12 +164,6 @@
 	cost = 15
 	min_cost = 10
 	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/protector
-
-/datum/armament/item/disk/lemant
-	name = "Disk - Pilgrim"
-	cost = 10
-	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/lemant
 
 /datum/armament/item/disk/nt_lightfall
 	name = "Disk - Lightfall"

@@ -83,10 +83,10 @@
 			/obj/item/gun/energy/crossbow/largecrossbow = custom_good_amount_range(list(-8, 1))
 		),
 		"Ballistic weapons" = list(
-			/obj/item/gun/projectile/mk58,
-			/obj/item/gun/projectile/mk58/wood,
-			/obj/item/gun/projectile/revolver/lemant,
-			/obj/item/gun/projectile/shotgun/pump/combat,
+			/obj/item/gun/projectile/revolver/detective,
+			/obj/item/gun/projectile/colt,
+			/obj/item/gun/projectile/colt/freedom,
+			/obj/item/gun/projectile/shotgun/pump,
 			/obj/item/gun/projectile/grenade
 		)
 	)

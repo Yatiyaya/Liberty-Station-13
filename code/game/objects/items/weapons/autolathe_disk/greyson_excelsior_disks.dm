@@ -42,80 +42,6 @@
 		/datum/design/autolathe/cell/medium/high,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/spring
-	disk_name = "Greyson Positronics - Spring"
-	icon_state = "onestar"
-	license = 10
-	designs = list(
-		/datum/design/autolathe/gun/spring = 4,
-		/datum/design/autolathe/ammo/pistol_practice = 0,
-		/datum/design/autolathe/ammo/pistol_rubber,
-		/datum/design/autolathe/ammo/pistol,
-		/datum/design/autolathe/ammo/pistol_lethal = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet
-	disk_name = "Greyson Positronics - Rivet"
-	icon_state = "onestar"
-	license = 10
-	designs = list(
-		/datum/design/autolathe/gun/rivet = 4,
-		/datum/design/autolathe/ammo/magnum_practice = 0,
-		/datum/design/autolathe/ammo/magnum_rubber,
-		/datum/design/autolathe/ammo/magnum,
-		/datum/design/autolathe/ammo/magnum_lethal = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar
-	disk_name = "Greyson Positronics - rebar"
-	icon_state = "onestar"
-	license = 10
-	designs = list(
-		/datum/design/autolathe/gun/rebar = 3,
-		/datum/design/autolathe/ammo/kurtz_practice = 0,
-		/datum/design/autolathe/ammo/kurtz_rubber,
-		/datum/design/autolathe/ammo/kurtz,
-		/datum/design/autolathe/ammo/kurtz_lethal = 2,
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun
-	disk_name = "Greyson Positronics - Nail Gun"
-	icon_state = "onestar"
-	license = 16
-	designs = list(
-		/datum/design/autolathe/gun/nail_gun = 6,
-		/datum/design/autolathe/ammo/lrifle_short_practice = 0,
-		/datum/design/autolathe/ammo/lrifle_short_rubber,
-		/datum/design/autolathe/ammo/lrifle_short,
-		/datum/design/autolathe/ammo/lrifle_short_lethal = 2,
-		/datum/design/autolathe/ammo/lrifle_practice = 1,
-		/datum/design/autolathe/ammo/lrifle_rubber = 2,
-		/datum/design/autolathe/ammo/lrifle = 2,
-		/datum/design/autolathe/ammo/lrifle_lethal = 4,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold
-	disk_name = "Greyson Positronics - Scaffold"
-	icon_state = "onestar"
-	license = 6
-	designs = list(
-		/datum/design/autolathe/gun/scaffold = 2,
-		/datum/design/autolathe/ammo/c10x24,
-		/datum/design/autolathe/ammo/box_10x24 = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter
-	disk_name = "Greyson Positronics - Trouble Shooter"
-	icon_state = "onestar"
-
-	license = 6
-	designs = list(
-		/datum/design/autolathe/gun/trouble_shooter = 3,
-		/datum/design/autolathe/ammo/rifle,						//AK ammo
-		/datum/design/autolathe/ammo/rifle_lethal,
-		/datum/design/autolathe/ammo/rifle_ammobox
-	)
-
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/armor
 	disk_name = "Greyson Positronics - Ablative Vest"
 	icon_state = "onestar"
@@ -137,14 +63,9 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/makarov,						//guns
-		/datum/design/autolathe/gun/drozd,
-		/datum/design/autolathe/gun/vintorez,
 		/datum/design/autolathe/gun/boltgun,
 		/datum/design/autolathe/gun/ak47,
-		/datum/design/autolathe/gun/ak47_saiga,
 		/datum/design/autolathe/gun/maxim,
-		/datum/design/autolathe/gun/ppsh,
-		/datum/design/autolathe/gun/reclaimer,
 		/datum/design/autolathe/ammo/pistol,				//makarov ammo
 		/datum/design/autolathe/ammo/pistol_rubber,
 		/datum/design/autolathe/ammo/pistol_ammobox,
@@ -214,13 +135,9 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/makarov,
-		/datum/design/autolathe/gun/drozd,
-		/datum/design/autolathe/gun/vintorez,
 		/datum/design/autolathe/gun/boltgun,
 		/datum/design/autolathe/gun/ak47,
-		/datum/design/autolathe/gun/ak47_saiga,
 		/datum/design/autolathe/gun/maxim,
-		/datum/design/autolathe/gun/ppsh,
 		/datum/design/autolathe/ammo/hpistol,				//makarov ammo
 		/datum/design/autolathe/ammo/hpistol_rubber,
 		/datum/design/autolathe/ammo/pistol_ammobox,
@@ -285,21 +202,6 @@
 		/datum/design/autolathe/cell/medium/excelsior,
 		/datum/design/autolathe/cell/small/excelsior
 	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_drozd
-	name = "design disk 9mm Drozd SMG"
-	disk_name = "Excelsior"
-	desc = "The back has a machine etching: \"Nobody is to be blamed for being born a slave; but a slave who not only eschews a striving for freedom but justifies and eulogies his slavery - such a slave is a lickspittle and a boor, who arouses a legitimate feeling of indignation, contempt, and loathing..\""
-	icon_state = "excelsior"
-
-	license = -1
-	designs = list(
-		/datum/design/autolathe/gun/drozd,
-		/datum/design/autolathe/ammo/smg,
-		/datum/design/autolathe/ammo/smg_rubber,
-		/datum/design/autolathe/container/ammocan_excel
-	)
-
 /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_makarov
 	name = "design disk Makarov"
 	disk_name = "Excelsior"
@@ -311,20 +213,6 @@
 		/datum/design/autolathe/gun/makarov,
 		/datum/design/autolathe/ammo/hpistol,				//makarov ammo
 		/datum/design/autolathe/ammo/hpistol_rubber,
-		/datum/design/autolathe/container/ammocan_excel
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_vintorez
-	name = "design disk Vintorez"
-	disk_name = "Excelsior"
-	desc = "The back has a machine etching: \"The gun of long revolution.\""
-	icon_state = "excelsior"
-
-	license = -1
-	designs = list(
-		/datum/design/autolathe/gun/vintorez,
-		/datum/design/autolathe/ammo/rifle,
-		/datum/design/autolathe/ammo/lrifle_ammobox,
 		/datum/design/autolathe/container/ammocan_excel
 	)
 
@@ -356,31 +244,3 @@
 		/datum/design/autolathe/ammo/rifle_ammobox,
 		/datum/design/autolathe/container/ammocan_excel
 	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_reclaimer
-	name = "design disk Reclaimer"
-	disk_name = "Excelsior"
-	desc = "The back has a machine etching: \"The gun of clean revolution.\""
-	icon_state = "excelsior"
-
-	license = -1
-	designs = list(
-		/datum/design/autolathe/gun/reclaimer
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ppsh
-	name = "design disk Shpagin"
-	disk_name = "Excelsior"
-	desc = "The back has a machine etching: \"The hammer to break the chains.\""
-	icon_state = "excelsior"
-
-	license = -1
-	designs = list(
-		/datum/design/autolathe/gun/ppsh,
-		/datum/design/autolathe/ammo/pistol_35_drum,
-		/datum/design/autolathe/ammo/pistol_35_drum/empty,
-		/datum/design/autolathe/ammo/pistol_35_drum/rubber,
-		/datum/design/autolathe/ammo/pistol_35_drum/hv,
-		/datum/design/autolathe/ammo/pistol_35_drum/lethal,
-		/datum/design/autolathe/container/ammocan_excel
-		)

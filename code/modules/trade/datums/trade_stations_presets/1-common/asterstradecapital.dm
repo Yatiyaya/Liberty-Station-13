@@ -83,8 +83,8 @@
 			/obj/item/clothing/accessory/holster/waist,
 			/obj/item/clothing/accessory/holster/hip,
 			/obj/item/gun/projectile/revolver/detective,
-			/obj/item/gun/projectile/olivaw,
-			/obj/item/gun/projectile/giskard,
+			/obj/item/gun/projectile/clarissa,
+			/obj/item/gun/projectile/colt,
 			/obj/item/gun/energy/gun/martin,
 			/obj/item/gun/energy/gun,
 			/obj/item/ammo_magazine/pistol_35,
@@ -140,7 +140,6 @@
 			/obj/item/gun/projectile/revolver/longboi,
 			/obj/item/gun_upgrade/trigger/honker,
 			/obj/item/clothing/glasses/sunglasses/big,
-			/obj/item/gun/projectile/basilisk,
 		),
 		"LSS Toolmods" = list(
 			/obj/item/tool_upgrade/productivity/diamond_blade,

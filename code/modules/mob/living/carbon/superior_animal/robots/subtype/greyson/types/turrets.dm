@@ -61,12 +61,12 @@
 	reload_message = "ejects a magazine as it loudly reloads with mechanical speed!"
 	ranged = TRUE //will it shoot?
 	rapid = FALSE //will it shoot fast?
-	projectiletype = /obj/item/projectile/bullet/c10x24
+	projectiletype = /obj/item/projectile/bullet/cl7mm
 	projectilesound = 'sound/weapons/Gunshot.ogg'
 	limited_ammo = TRUE
 	mag_drop = TRUE
 	rounds_left = 99
-	mag_type = /obj/item/ammo_magazine/c10x24/empty
+	mag_type = /obj/item/ammo_magazine/cl7mm/empty
 	mags_left = 1
 	casingtype = null
 	ranged_cooldown = 5
@@ -80,7 +80,7 @@
 	pixel_x = 0
 	pixel_y = 0
 	if(prob(1) && (!drop1))
-		drop1 = /obj/item/gun/projectile/automatic/scaffold
+		drop1 = /obj/item/gun/projectile/automatic/specialist
 	if(prob(30) && (!cell_drop))
 		cell_drop = /obj/item/cell/large
 
@@ -101,7 +101,7 @@
 /mob/living/carbon/superior_animal/robot/greyson/stalker/dual/New()
 	. = ..()
 	if(prob(1) && (!drop2))
-		drop2 = /obj/item/gun/projectile/automatic/scaffold
+		drop2 = /obj/item/gun/projectile/automatic/operator_rifle
 
 /obj/item/stalker_fuel_rod
 	name = "plasma fuel rod"

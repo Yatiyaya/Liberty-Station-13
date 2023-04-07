@@ -13,7 +13,7 @@
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_STEEL = 8, MATERIAL_SILVER = 8, MATERIAL_PLATINUM = 0.1)
 	charge_cost = 100
 	twohanded = FALSE
-	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_CALIBRE_9MM)
+	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY)
 	suitable_cell = /obj/item/cell/medium
 	fire_delay = 5
 	init_recoil = CARBINE_RECOIL(1)

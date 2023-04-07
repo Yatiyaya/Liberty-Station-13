@@ -7,7 +7,7 @@
 	restricted_to_species = list(FORM_MARQUA)
 
 	restricted_depts = SECURITY
-	restricted_jobs = list(/datum/job/pro, /datum/job/foreman)
+	restricted_jobs = list(/datum/job/shipbreaker, /datum/job/shepherd)
 
 	stat_modifiers = list(
 		STAT_ROB = -10,

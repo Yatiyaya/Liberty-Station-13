@@ -20,6 +20,7 @@
 	name = "Mecha"
 	desc = "Exosuit"
 	icon = 'icons/mecha/mecha.dmi'
+	description_info = "It is quite known that Mecha's house in built data blackboxes, to access these lines you need a science tool and its wires exposed."
 	density = 1 //Dense. To raise the heat.
 	opacity = 1 ///opaque. Menacing.
 	anchored = 1 //no pulling around.
@@ -336,7 +337,6 @@
 		to_chat(user, "It's equipped with:")
 		for(var/obj/item/mecha_parts/mecha_equipment/ME in equipment)
 			to_chat(user, "\icon[ME] [ME]")
-
 
 /obj/mecha/proc/drop_item()//Derpfix, but may be useful in future for engineering exosuits.
 	return
@@ -1229,6 +1229,9 @@ assassination method if you time it right*/
 				user.visible_message("[user] attaches [I] to [src].", "You attach [I] to [src]")
 				src.log_message("Ammobox [I] inserted by [user]")
 				return
+
+//	else if(state == 3 && istype(I, /obj/item/device/science_tool)) //HAVE to be at the wire stage, to you know, data jack into wires
+//		..()
 
 	else
 		src.log_message("Attacked by [I]. Attacker - [user]")

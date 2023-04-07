@@ -325,7 +325,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/engineering/workshop)
 "aaR" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -2833,7 +2833,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/security)
 "agv" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "agw" = (
@@ -2882,7 +2881,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "agA" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -4151,7 +4150,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/prisoncells)
 "aiV" = (
-/obj/landmark/join/start/officer,
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 33
 	},
@@ -5442,7 +5440,6 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/rnd/xenobiology/xenoflora)
 "alL" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/hangarsupply)
 "alM" = (
@@ -5878,7 +5875,7 @@
 	},
 /area/liberty/hallway/side/f2section1)
 "amM" = (
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
@@ -7660,7 +7657,6 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "aqa" = (
-/obj/landmark/join/start/cargo_tech,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -7932,7 +7928,6 @@
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
-/obj/landmark/join/start/inspector,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -9599,7 +9594,6 @@
 "asQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair,
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "asR" = (
@@ -18225,7 +18219,6 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/podrooms)
 "aNI" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "aNJ" = (
@@ -25306,7 +25299,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "bhY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "bhZ" = (
@@ -31271,7 +31263,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/engineering/foyer)
 "dkl" = (
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "dkq" = (
@@ -32259,7 +32250,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "dZh" = (
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "dZp" = (
@@ -35437,7 +35427,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos)
 "fVw" = (
-/obj/landmark/join/start/supsec,
 /obj/structure/bed/chair{
 	dir = 8
 	},
@@ -40218,7 +40207,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/swo,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/command/swo/quarters)
 "jnK" = (
@@ -52273,7 +52261,6 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "rgg" = (
-/obj/landmark/join/start/officer,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
@@ -52358,7 +52345,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "rjI" = (
@@ -56227,7 +56213,6 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/hallway/side/f2section1)
 "tyx" = (
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
 "tyM" = (
@@ -58227,7 +58212,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/pool)
 "uQE" = (
-/obj/landmark/join/start/hydro,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
@@ -60573,7 +60557,6 @@
 "wts" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/generic,
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/quartermaster/office)
 "wtK" = (

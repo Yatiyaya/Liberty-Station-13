@@ -177,7 +177,7 @@
 	// That account doesn't exist on initialize, hence
 	// cannot be assigned to pre-mapped vendor in sane manner
 	if(!merchants_pocket)
-		merchants_pocket = department_accounts[DEPARTMENT_LSS]
+		merchants_pocket = department_accounts[DEPARTMENT_SERVICE]
 
 	if(!stored_item_value || stored_item_value > vagabond_charity_budget || stored_item_value > merchants_pocket.money)
 		flick("recycle_screen_red", overlays[1])

@@ -72,7 +72,6 @@
 /obj/item/projectile/bullet/pistol_35/rubber/soporific/New()
 	..()
 	if (!testing)
-		create_reagents(2)
 		reagents.add_reagent(spray, 2)
 
 /obj/item/projectile/bullet/pistol_35/rubber/soporific/on_hit(atom/target, def_zone = null)
@@ -106,7 +105,6 @@
 /obj/item/projectile/bullet/pistol_35/rubber/pepperball/New()
 	..()
 	if (!testing)
-		create_reagents(3)
 		reagents.add_reagent(spray, 3)
 
 /obj/item/projectile/bullet/pistol_35/rubber/pepperball/on_hit(atom/target, def_zone = null)
@@ -210,7 +208,6 @@
 /obj/item/projectile/bullet/magnum_40/rubber/pepperball/New()
 	..()
 	if (!testing)
-		create_reagents(5)
 		reagents.add_reagent(spray, 5)
 
 /obj/item/projectile/bullet/magnum_40/rubber/pepperball/on_hit(atom/target, def_zone = null)
@@ -231,7 +228,6 @@
 /obj/item/projectile/bullet/magnum_40/rubber/soporific/New()
 	..()
 	if (!testing)
-		create_reagents(3)
 		reagents.add_reagent(spray, 3)
 
 /obj/item/projectile/bullet/magnum_40/rubber/soporific/on_hit(atom/target, def_zone = null)
@@ -296,7 +292,6 @@
 /obj/item/projectile/bullet/kurtz_50/rubber/pepperball/New()
 	..()
 	if (!testing)
-		create_reagents(8)
 		reagents.add_reagent(spray, 8)
 
 /obj/item/projectile/bullet/kurtz_50/rubber/pepperball/on_hit(atom/target, def_zone = null)
@@ -402,7 +397,6 @@
 /obj/item/projectile/bullet/light_rifle_257/rubber/pepperball/New()
 	..()
 	if (!testing)
-		create_reagents(5)
 		reagents.add_reagent(spray, 5)
 
 /obj/item/projectile/bullet/light_rifle_257/rubber/pepperball/on_hit(atom/target, def_zone = null)
@@ -604,7 +598,7 @@
 
 ///Snowflake  ///
 
-/obj/item/projectile/bullet/c10x24
+/obj/item/projectile/bullet/cl7mm
 	damage_types = list(BRUTE = 19)
 	armor_penetration = 18
 	penetrating = 2
@@ -832,7 +826,6 @@
 /obj/item/projectile/bullet/shotgun/beanbag/pepperball/New()
 	..()
 	if (!testing)
-		create_reagents(10)
 		reagents.add_reagent(spray, 10)
 
 /obj/item/projectile/bullet/shotgun/beanbag/on_hit(atom/target, def_zone = null)
@@ -850,7 +843,6 @@
 /obj/item/projectile/bullet/shotgun/beanbag/soporific/New()
 	..()
 	if (!testing)
-		create_reagents(5)
 		reagents.add_reagent(spray, 5)
 
 /obj/item/projectile/bullet/shotgun/beanbag/soporific/on_hit(atom/target, def_zone = null)
@@ -1222,11 +1214,6 @@
 	armor_penetration = 0.5
 	step_delay = 1
 	create_type = /obj/item/projectile/bullet/reusable/arrow/practice/payload
-	var/volume = 15// We only splash the target with reagents, so we hold a little more than syrette arrows. Good for acids, incindiaries, etc.
-
-/obj/item/projectile/bullet/reusable/arrow/reagent/Initialize()
-	..()
-	create_reagents(volume)
 
 /obj/item/projectile/bullet/reusable/arrow/reagent/on_impact(atom/target)
 	if (!testing)
