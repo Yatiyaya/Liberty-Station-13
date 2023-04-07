@@ -15,13 +15,16 @@ SUBSYSTEM_DEF(lighting)
 	var/list/currentrun_lights
 	var/list/currentrun_corners
 	var/list/currentrun_overlays
-
 	var/resuming_stage = 0
+	var/isnight = FALSE
 
 /datum/controller/subsystem/lighting/stat_entry()
 	..("L:[lighting_update_lights.len]|C:[lighting_update_corners.len]|O:[lighting_update_overlays.len]")
 
 /datum/controller/subsystem/lighting/Initialize(timeofday)
+	if(!((6 HOURS <= station_time_in_ticks) && (station_time_in_ticks < 18 HOURS)))
+		isnight = TRUE
+		set_all_areas_to_dark()
 	create_all_lighting_overlays()
 	. = ..()
 
