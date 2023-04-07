@@ -482,50 +482,50 @@
 		return
 	// Hot air hurts :( :(
 	if((breath.temperature < species.lower_breath_t || breath.temperature > species.upper_breath_t) && !(COLD_RESISTANCE in mutations))
-	    var/oof = 0
-        if(breath.temperature <= species.lower_breath_t)
-            if(prob(20))
-                to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
+		var/oof = 0
+		if(breath.temperature <= species.lower_breath_t)
+			if(prob(20))
+				to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
 
-            if(breath.temperature <= (species.lower_breath_t - 40))
-                oof += COLD_GAS_DAMAGE_LEVEL_3
-                frost += COLD_GAS_DAMAGE_LEVEL_3
-            else if(breath.temperature <= (species.lower_breath_t - 20))
-                oof += COLD_GAS_DAMAGE_LEVEL_2
-                frost += COLD_GAS_DAMAGE_LEVEL_2
-            else
-                oof += COLD_GAS_DAMAGE_LEVEL_1
-                frost += COLD_GAS_DAMAGE_LEVEL_1
+			if(breath.temperature <= (species.lower_breath_t - 40))
+				oof += COLD_GAS_DAMAGE_LEVEL_3
+				frost += COLD_GAS_DAMAGE_LEVEL_3
+			else if(breath.temperature <= (species.lower_breath_t - 20))
+				oof += COLD_GAS_DAMAGE_LEVEL_2
+				frost += COLD_GAS_DAMAGE_LEVEL_2
+			else
+				oof += COLD_GAS_DAMAGE_LEVEL_1
+				frost += COLD_GAS_DAMAGE_LEVEL_1
 
             //apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Artic Inhalation") this is here case someone figures out how to give lung damage and show up on authopsy
             fire_alert = FIRE_ALERT_COLD
-            if(oof >= 8)
-                var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
-                if(L && istype(L))
-                    L.take_damage(oof,BURN)
-                    oof = 0
+			if(oof >= 8)
+				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
+				if(L && istype(L))
+					L.take_damage(oof,BURN)
+					oof = 0
 
 		else if(breath.temperature >= species.upper_breath_t)
 			if(prob(20))
 				to_chat(src, SPAN_DANGER("You feel a searing heat in your lungs!"))
 
 			if(breath.temperature >= (species.upper_breath_t - 40))
-                oof += HEAT_GAS_DAMAGE_LEVEL_3
-                frost -= HEAT_GAS_DAMAGE_LEVEL_3
-            else if(breath.temperature >= (species.upper_breath_t - 20))
-                oof += HEAT_GAS_DAMAGE_LEVEL_2
-                frost -= HEAT_GAS_DAMAGE_LEVEL_2
-            else
-                oof += HEAT_GAS_DAMAGE_LEVEL_1
-                frost -= HEAT_GAS_DAMAGE_LEVEL_1
+				oof += HEAT_GAS_DAMAGE_LEVEL_3
+				frost -= HEAT_GAS_DAMAGE_LEVEL_3
+			else if(breath.temperature >= (species.upper_breath_t - 20))
+				oof += HEAT_GAS_DAMAGE_LEVEL_2
+				frost -= HEAT_GAS_DAMAGE_LEVEL_2
+			else
+				oof += HEAT_GAS_DAMAGE_LEVEL_1
+				frost -= HEAT_GAS_DAMAGE_LEVEL_1
 
 			//apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Excessive Heat") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_HOT
 			if(oof >= 8)
-                var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
-                if(L && istype(L))
-                    L.take_damage(oof,BURN)
-                    oof = 0
+				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
+				if(L && istype(L))
+					L.take_damage(oof,BURN)
+					oof = 0
 
 		//breathing in hot/cold air also heats/cools you a bit
 		var/temp_adj = breath.temperature - bodytemperature
