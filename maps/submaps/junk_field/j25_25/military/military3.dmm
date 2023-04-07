@@ -20,10 +20,6 @@
 /obj/machinery/door/airlock/command,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
-"ah" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/plating/under,
-/area/template_noop)
 "ai" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
@@ -48,7 +44,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "an" = (
-/mob/living/simple_animal/hostile/hivebot,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "ao" = (
@@ -62,7 +58,6 @@
 /obj/structure/bed/chair/office/light{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/hivebot/range,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "ar" = (
@@ -94,11 +89,6 @@
 /obj/machinery/light_construct{
 	dir = 4
 	},
-/turf/simulated/floor/plating/under,
-/area/template_noop)
-"ax" = (
-/mob/living/simple_animal/hostile/hivebot,
-/obj/random/material/low_chance,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "ay" = (
@@ -278,10 +268,6 @@
 	},
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
-"bk" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/bluecorner,
-/area/template_noop)
 "bl" = (
 /obj/random/techpart/low_chance,
 /obj/structure/closet/secure_closet/rare_loot,
@@ -323,7 +309,6 @@
 /area/template_noop)
 "bs" = (
 /obj/item/gun/projectile/glock,
-/obj/item/ammo_casing/pistol,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "bt" = (
@@ -345,7 +330,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "dn" = (
-/mob/living/simple_animal/hostile/hivebot,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "ej" = (
@@ -361,17 +346,6 @@
 /obj/random/structures/low_chance,
 /obj/random/material/low_chance,
 /turf/simulated/floor/plating/under,
-/area/template_noop)
-"jn" = (
-/obj/random/material/low_chance,
-/mob/living/simple_animal/hostile/hivebot,
-/turf/template_noop,
-/area/template_noop)
-"lF" = (
-/obj/structure/lattice,
-/obj/random/material/low_chance,
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/template_noop,
 /area/template_noop)
 "lJ" = (
 /obj/structure/lattice,
@@ -420,30 +394,7 @@
 /obj/random/material/low_chance,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
-"BE" = (
-/obj/structure/lattice,
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/template_noop,
-/area/template_noop)
-"Fq" = (
-/mob/living/simple_animal/hostile/hivebot,
-/turf/template_noop,
-/area/template_noop)
 "Fr" = (
-/obj/random/junk/low_chance,
-/turf/simulated/floor/plating/under,
-/area/template_noop)
-"Ix" = (
-/obj/structure/lattice,
-/mob/living/simple_animal/hostile/hivebot,
-/turf/template_noop,
-/area/template_noop)
-"Pj" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/template_noop,
-/area/template_noop)
-"PU" = (
-/mob/living/simple_animal/hostile/hivebot/range,
 /obj/random/junk/low_chance,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
@@ -494,13 +445,13 @@ aa
 ZH
 aa
 aa
-Pj
+aa
 aa
 ab
 ZH
 aa
 aa
-Ix
+ab
 aa
 YP
 YP
@@ -509,7 +460,7 @@ aa
 ZH
 aa
 aa
-Ix
+ab
 YP
 ZH
 aa
@@ -517,7 +468,7 @@ aa
 "}
 (2,1,1) = {"
 YP
-Fq
+aa
 ae
 ae
 ae
@@ -550,7 +501,7 @@ aV
 aK
 ae
 ab
-Ix
+ab
 aa
 ZH
 aa
@@ -559,13 +510,13 @@ Uz
 ad
 aE
 ZH
-BE
+ab
 RE
 lJ
 ae
 Uz
 aE
-ah
+ad
 yy
 RE
 "}
@@ -582,10 +533,10 @@ ae
 ae
 ae
 lJ
-lF
+lJ
 ad
 Uz
-ax
+yy
 yy
 ad
 yy
@@ -597,10 +548,10 @@ yy
 ab
 "}
 (5,1,1) = {"
-Fq
+aa
 aa
 ae
-ad
+dn
 aj
 aH
 ae
@@ -628,7 +579,7 @@ aa
 lJ
 ac
 ad
-PU
+Fr
 aj
 ae
 aN
@@ -647,7 +598,7 @@ ae
 aj
 bp
 ae
-Ix
+ab
 lJ
 "}
 (7,1,1) = {"
@@ -667,8 +618,8 @@ aj
 aQ
 aQ
 aj
-aj
 an
+aj
 ae
 aX
 aj
@@ -683,7 +634,7 @@ lJ
 ac
 Uz
 yy
-aj
+an
 ae
 ae
 am
@@ -717,7 +668,7 @@ bq
 aj
 aj
 aj
-bk
+aj
 aj
 dg
 aj
@@ -741,7 +692,7 @@ aj
 aL
 aj
 aj
-an
+aj
 aj
 bb
 bc
@@ -760,16 +711,16 @@ ab
 "}
 (11,1,1) = {"
 aa
-Fq
-BE
+aa
+ab
 ac
 yy
-ah
+ad
 ae
 as
 aj
 aj
-aj
+an
 bb
 bd
 To
@@ -781,7 +732,7 @@ aj
 aj
 br
 ae
-Ix
+ab
 aa
 aa
 "}
@@ -830,14 +781,14 @@ bf
 RW
 RW
 bj
-bk
+aj
 dg
 bn
 aQ
 ae
 ab
 Yr
-Pj
+aa
 "}
 (14,1,1) = {"
 aa
@@ -852,7 +803,7 @@ aV
 aQ
 aj
 yy
-an
+aj
 bg
 aT
 aT
@@ -932,9 +883,9 @@ aj
 aT
 aj
 aT
-aj
-aj
 an
+aj
+aj
 aj
 aj
 aj
@@ -949,13 +900,13 @@ aa
 "}
 (18,1,1) = {"
 aa
-Fq
-Pj
+aa
+aa
 Yr
 ac
 yy
 Uz
-ah
+ad
 ad
 aj
 at
@@ -969,7 +920,7 @@ an
 at
 aj
 aE
-BE
+ab
 lJ
 aa
 ZH
@@ -989,7 +940,7 @@ al
 aj
 ad
 ad
-bk
+aj
 ad
 aE
 ay
@@ -997,7 +948,7 @@ ar
 aj
 wz
 ab
-Ix
+ab
 lJ
 aa
 "}
@@ -1005,9 +956,9 @@ aa
 aa
 aa
 ab
-ad
+dn
 ac
-ah
+dn
 aj
 aE
 yy
@@ -1052,7 +1003,7 @@ ad
 aE
 lJ
 YP
-jn
+YP
 aa
 "}
 (22,1,1) = {"
@@ -1063,16 +1014,16 @@ aa
 aG
 ap
 ao
-ah
+ad
 aE
-aj
+an
 ad
 ad
-ax
+yy
 ad
 ad
 ad
-ah
+ad
 Qv
 au
 av
@@ -1084,7 +1035,7 @@ aa
 "}
 (23,1,1) = {"
 aa
-Fq
+aa
 aa
 aa
 aG
@@ -1105,7 +1056,7 @@ wz
 ac
 wz
 ab
-Fq
+aa
 ZH
 aa
 "}
@@ -1113,22 +1064,22 @@ aa
 aa
 aa
 aa
-Fq
+aa
 aa
 aa
 ab
 RE
 ab
 ab
-Ix
+ab
 aa
-BE
+ab
 YP
 ZH
 ab
 YP
 ab
-lF
+lJ
 Yr
 ab
 RE

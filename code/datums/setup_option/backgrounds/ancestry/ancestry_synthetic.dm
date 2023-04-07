@@ -58,12 +58,12 @@
 	)
 
 /datum/category_item/setup_option/background/ancestry/tt_synth_mech_adept
-	name = "Mechanical Adept"
-	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
-	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. While not as sturdy as some other models of FBP's such as the CAPSA designs the \
-	Terra-Therma Worker's Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
+	name = "Card Carrier"
+	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This specific model was designed with \
+	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. These units make up the backbone of the unions synthetic work force, and were named thusly. While not as sturdy as some other models of FBP's.  \
+	Terra-Therma Workers Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
 	omni-tool built in your right arm."
-
+ 
 	restricted_to_species = list(FORM_TERRAYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
 	restricted_jobs = list(/datum/job/outsider)
@@ -78,10 +78,10 @@
 	)
 
 /datum/category_item/setup_option/background/ancestry/tt_synth_sturdy
-	name = "\"Long-Haul\" Body Chassis"
-	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is the work of Tacitus \
-	O'Conner himself, Terra-Therma Worker's Union grand master. Unlike the mechanical adept model this chassis is built to last, being far more sturdy and capable of performing alone or with teams of engineers cut \
-	off from the colony for extended periods. While not as capable in combat as a CAPSA combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
+	name = "\"Wear And tear\" Body Chassis"
+	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is the work of the  \
+	 Terra-Therma Workers Union’s most utilitarian workers, and is named for its design philosophy.The frame bears eerily similar resemblances to security-class designs . Unlike the mechanical adept model this chassis is built to last, being far more sturdy and capable of performing alone or with teams of engineers cut \
+	off from the colony for extended periods. While not quite as capable in offensive engagement as a combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
 	with an engineering omni-tool built in your right arm."
 
 	restricted_to_species = list(FORM_TERRAYNTH)
@@ -98,11 +98,12 @@
 	)
 
 /datum/category_item/setup_option/background/ancestry/tt_synth_mine
-	name = "\"Depts-Class\" Body Chassis"
+	name = "\"Stony Rock\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is made with mining in \
-	mind. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
-	and hard materials alike. While not as capable in combat as a CAPSA combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
+	Mind, and seems almost older than the union itself. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
+	and hard materials alike. While not as capable in combat as a combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
 	This design comes with a mining omnitool, which boasts a munchkin 3000 multitool, a powered jackhammer, advanced ore scanner, and emergency radio."
+
 
 	restricted_to_species = list(FORM_TERRAYNTH)
 	racial_implants = (/obj/item/organ_module/active/multitool/miner)
