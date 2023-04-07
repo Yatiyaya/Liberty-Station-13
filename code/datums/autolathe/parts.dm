@@ -174,7 +174,7 @@
 /datum/design/autolathe/prosthesis/excelsior/head
 	build_path = /obj/item/organ/external/robotic/excelsior/head
 
-//Similacrum Positronics
+//Similacrum Robotics
 
 /datum/design/autolathe/part/similacrum/ai
 	name = "nano-integrated AI"

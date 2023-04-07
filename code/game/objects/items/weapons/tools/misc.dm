@@ -66,7 +66,7 @@
 	allow_similacrum_mods = TRUE
 
 /obj/item/tool/medmultitool/medimplant
-	name = "Soteria medical omnitool implant"
+	name = "CAPSA medical omnitool implant"
 	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
 	icon_state = "medmulti_sci"
 	matter = null
@@ -87,7 +87,7 @@
 	max_upgrades = 1
 
 /obj/item/tool/medmultitool/medimplant/sci
-	name = "Soteria medical omnitool"
+	name = "CAPSA medical omnitool"
 	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
 	icon_state = "medimplant"
 	matter = null //Nope

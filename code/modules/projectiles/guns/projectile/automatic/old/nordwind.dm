@@ -28,7 +28,7 @@
 		SEMI_AUTO_NODELAY,
 		BURST_3_ROUND
 		)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 1.5 SECOND
 	wield_delay_factor = 0.4 // 40 vig to insta wield , heavy class rifle

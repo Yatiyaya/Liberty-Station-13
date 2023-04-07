@@ -270,7 +270,7 @@
 	build_path = /obj/item/gun/matter/launcher/nt_sprayer
 
 /datum/design/autolathe/gun/similacrum_cog
-	name = "SD \"Cog\" lasegun"
+	name = "SR \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog
 
 /datum/design/autolathe/gun/plasma/martyr

@@ -65739,7 +65739,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "pgk" = (
-/mob/living/simple_animal/soteria_roomba,
+/mob/living/simple_animal/capsa_roomba,
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},

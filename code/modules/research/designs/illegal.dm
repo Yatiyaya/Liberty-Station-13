@@ -30,7 +30,7 @@
 	materials = list(MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 15)
 
 /datum/design/research/item/cleaner
-	name = "SI \"Spot\" Cleaning Pistol"
+	name = "PI \"Spot\" Cleaning Pistol"
 	desc = "After extensive study of the cleaner carbine and some schematics obtained under shady circumstances some clean freaks made a lesser but far more compact version of the Old Testament favorite."
 	materials = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 8, MATERIAL_PLASTIC = 20) //No free refills
 	build_path = /obj/item/gun/matter/launcher/nt_sprayer/mini

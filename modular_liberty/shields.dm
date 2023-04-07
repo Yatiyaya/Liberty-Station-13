@@ -1,6 +1,6 @@
 /obj/item/shield/riot/bastion
 	name = "Deployable: Bastion Shield"
-	desc = "A project inspired by an idea for a true deployable barrier, the \"Bastion Shield\" came as a surprisingly successful one, both surprisingly light and insurmountably sturdy enough to be carried out into the most dangerous combat zones. A true marvel of Guild, SI and Blackshield joint effort. When deployed, you can even brace a gun on it."
+	desc = "A project inspired by an idea for a true deployable barrier, the \"Bastion Shield\" came as a surprisingly successful one, both surprisingly light and insurmountably sturdy enough to be carried out into the most dangerous combat zones. A true marvel of Guild, PI and Blackshield joint effort. When deployed, you can even brace a gun on it."
 	icon = 'icons/obj/bastion.dmi'
 	icon_state = "bastion"
 	item_state = "bastion"
@@ -25,7 +25,7 @@
 
 /obj/item/bastion_broken
 	name = "Broken: Bastion Shield"
-	desc = "Once a project inspired by an idea for a true deployable barrier, the \"Bastion Shield\" came as a surprisingly successful one, both surprisingly light and insurmountably sturdy enough to be carried out into the most dangerous combat zones. A true marvel of Guild, SI and Blackshield joint effort. \
+	desc = "Once a project inspired by an idea for a true deployable barrier, the \"Bastion Shield\" came as a surprisingly successful one, both surprisingly light and insurmountably sturdy enough to be carried out into the most dangerous combat zones. A true marvel of Guild, PI and Blackshield joint effort. \
 	Now a broken shell of its former self, maybe it can still be scrapped for what it's worth..."
 	icon = 'icons/obj/bastion.dmi'
 	icon_state = "bastion_broken"

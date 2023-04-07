@@ -328,7 +328,7 @@
 	rand_min = 3
 	rand_max = 7
 
-/obj/item/stack/material/cloth/soteria
+/obj/item/stack/material/cloth/capsa
 	amount = 4
 
 /obj/item/stack/material/silk

@@ -1,6 +1,6 @@
 /datum/trade_station/ningishzida
 	name_pool = list(
-		"SI 'Ningishzida'" = "SI Trade Beacon 'Ningishzida': Connection with the SI surplus network established."
+		"PI 'Ningishzida'" = "PI Trade Beacon 'Ningishzida': Connection with the PI surplus network established."
 	)
 	icon_states = list("moe_capital", "station")
 	uid = "moe_adv"

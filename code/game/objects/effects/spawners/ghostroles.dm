@@ -92,7 +92,7 @@
 
 /obj/effect/mob_spawn/human/si_medical_ert
 	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in SI medical equipment."
+	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in PI medical equipment."
 	mob_name = "a human"
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
@@ -162,7 +162,7 @@
 	outfit = /decl/hierarchy/outfit/lss_ert
 	ghost_role_perks = list(PERK_SCIENCE, PERK_CHEMIST, PERK_SURE_STEP, PERK_TRUE_NAME)
 	short_desc = "You are an Auditor."
-	flavour_text = "The upper colony has done something thats not upto code, weather it be LSS, SI or any other department your job is to look into any matter that HC tells you about. \
+	flavour_text = "The upper colony has done something thats not upto code, weather it be LSS, PI or any other department your job is to look into any matter that HC tells you about. \
 	Your not a cop, your not a medical personal your here to correct some papers not criminals."
 	assignedrole = "Guild Emergency Personnel"
 	title = "Guild Emergency Personnel"

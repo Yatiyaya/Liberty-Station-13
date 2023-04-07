@@ -1,5 +1,5 @@
 /obj/mecha/combat/similacrum
-	desc = "One of Similacrum's deadliest machines, converted into an exosuit by Soteria."
+	desc = "One of Similacrum's deadliest machines, converted into an exosuit by Phokorus Institute."
 	name = "Type"
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "similacrum_mech"

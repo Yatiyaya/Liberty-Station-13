@@ -1,6 +1,6 @@
 /obj/machinery/vending/one_star
 	name = "One Star Vendor"
-	desc = "A vendor of the One Star variety typical made by SD."
+	desc = "A vendor of the One Star variety typical made by SR."
 	icon = 'icons/obj/machines/one_star/vending.dmi'
 	icon_state = "vendor_guns"
 	icon_vend = "vendor_printing"
@@ -15,7 +15,7 @@
 	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
 
 /obj/machinery/vending/one_star/guns
-	desc = "A vendor of the One Star variety typical made by SD. This one sells firearms of the SD variety."
+	desc = "A vendor of the One Star variety typical made by SD. This one sells firearms of the SR variety."
 	icon_state = "vendor_guns"
 
 	products = list(
@@ -27,7 +27,7 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	desc = "A vendor of the One Star variety typical made by SD. This one sells food variety."
+	desc = "A vendor of the One Star variety typical made by SR. This one sells food variety."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"
 
@@ -60,6 +60,6 @@
 		)
 
 /obj/machinery/vending/one_star/health
-	desc = "A vendor of the One Star variety typical made by SD. This one sells medical paraphernalia of the SD variety."
+	desc = "A vendor of the One Star variety typical made by SR. This one sells medical paraphernalia of the SD variety."
 	icon_state = "vendor_health"
 

@@ -38,11 +38,11 @@
 	stamptext = "This paper has been authorized with the Brigadier Ayanda Mwangi's Insignia."
 	stampshape = "paper_stamp-x"
 
-/datum/faction/liberty/soteria
-	name = "Soteria Institute - Nakharan Mkne"
+/datum/faction/liberty/capsa
+	name = "CAPSA - Nakharan Mkne"
 
-	fax_alert = "SOTERIA FAX"
-	fax_response = "Soteria Transmission"
+	fax_alert = "CAPSA FAX"
+	fax_response = "CAPSA Transmission"
 
 	color = "#e903df"
 	darkcolor = "#870481"

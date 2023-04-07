@@ -14,7 +14,7 @@
 	unlocks_designs = list(/datum/design/research/item/binaryencrypt)
 
 /datum/technology/cleaner
-	name = "SI \"Spot\" Cleaning Pistol"
+	name = "PI \"Spot\" Cleaning Pistol"
 	desc = "A mix of less than legal schematics to create a lesser but far more compact version of the cleaning carbine."
 	tech_type = RESEARCH_ILLEGAL
 
@@ -30,7 +30,7 @@
 
 
 /datum/technology/dart_plus
-	name = "SI \"Artemis\" Dart Carbine"
+	name = "PI \"Artemis\" Dart Carbine"
 	desc = "A gas-powered dart carbine capable of delivering chemical cocktails swiftly across short distances."
 	tech_type = RESEARCH_ILLEGAL
 

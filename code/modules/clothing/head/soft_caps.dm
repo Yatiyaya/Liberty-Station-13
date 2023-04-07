@@ -124,7 +124,7 @@
 
 /obj/item/clothing/head/soft/medical
 	name = "medical cap"
-	desc = "Cap worn by soteria medical personnel."
+	desc = "Cap worn by CAPSA medical personnel."
 	icon_state = "medcap"
 	item_state = "medcap"
 

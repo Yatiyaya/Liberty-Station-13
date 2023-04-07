@@ -385,7 +385,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
 
@@ -402,7 +402,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/storage/pill_bottle/njoy/red(src)
 	new /obj/item/storage/pill_bottle/njoy/blue(src)
 	new /obj/item/storage/pill_bottle/njoy/green(src)
@@ -422,7 +422,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 	new /obj/item/gun/projectile/makarov/moebius/preloaded_cbo(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
@@ -435,7 +435,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/gunbox/traumatizedteam(src) // Moved the weapon selection to here
 	new /obj/item/cell/medium/moebius/high(src) // Keeping the cell as a "second mag" for the Abnegate
 	new /obj/item/clothing/suit/straight_jacket(src)
-	new /obj/item/storage/firstaid/soteria/large(src)
+	new /obj/item/storage/firstaid/capsa/large(src)
 	new /obj/item/gun/energy/sst/preloaded(src) // They're now nonlethal and justifies getting an upgrade from science as nobody will ever want a downgrade.
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
@@ -512,7 +512,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/gearbox/traumatizedteam
 	name = "Lifeline Technician's equipment kit"
-	desc = "A secure box containing the heavy duty protective gear of the Soteria Lifeline Technicians."
+	desc = "A secure box containing the heavy duty protective gear of the CAPSA Lifeline Technicians."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "secure"
 
@@ -537,7 +537,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/gunbox/traumatizedteam
 	name = "Lifeline Technician's self-defense guncase"
-	desc = "A secure box containing the weapon of choice for the Soteria Lifeline Technician."
+	desc = "A secure box containing the weapon of choice for the CAPSA Lifeline Technician."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "medbriefcase"
 

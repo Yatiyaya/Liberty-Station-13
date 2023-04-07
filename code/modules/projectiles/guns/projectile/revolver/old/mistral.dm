@@ -15,7 +15,7 @@
 	penetration_multiplier = 1.5
 	init_recoil = RIFLE_RECOIL(0.6)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig
 	gun_parts = list(/obj/item/part/gun/frame/minstral = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/magnum = 1)

@@ -27,7 +27,7 @@
 	init_firemodes = list(
 		list(mode_name="semiauto", mode_desc="Shoot once per pull after chambering", burst=1, fire_delay=5, move_delay=null, icon="semi")
 		)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 0.9 SECOND
 	wield_delay_factor = 0.4 // 40 vig

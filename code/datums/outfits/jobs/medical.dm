@@ -53,9 +53,9 @@
 	backpack_contents = list(/obj/item/storage/hcases/med/medical_job_psyco = 1)
 
 /decl/hierarchy/outfit/job/medical/doctor/medStudent
-	name = OUTFIT_JOB_NAME("CAPSA Group - Soteria Medical Student")
+	name = OUTFIT_JOB_NAME("CAPSA Group - CAPSA Medical Student")
 	suit =  /obj/item/clothing/suit/armor/vest
 
 /decl/hierarchy/outfit/job/medical/doctor/medSurgeon
-	name = OUTFIT_JOB_NAME("CAPSA Group - Soteria Medical Surgeon")
+	name = OUTFIT_JOB_NAME("CAPSA Group - CAPSA Medical Surgeon")
 	suit = /obj/item/clothing/suit/storage/hazardvest

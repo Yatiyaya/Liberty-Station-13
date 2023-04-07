@@ -1,9 +1,9 @@
 // Disks formated as /designpath = pointcost , if no point cost is specified it defaults to 1.
 // To make a design unprotect use -1
 
-// Soteria
+// CAPSA
 /obj/item/computer_hardware/hard_drive/portable/design/medical
-	disk_name = "Soteria Medical Designs"
+	disk_name = "CAPSA Medical Designs"
 	icon_state = "moebius"
 	license = 20
 	designs = list(
@@ -38,7 +38,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/advanced
-	disk_name = "Soteria Advanced Medical Designs"
+	disk_name = "CAPSA Advanced Medical Designs"
 	icon_state = "moebius"
 	license = 10
 	designs = list(
@@ -81,15 +81,15 @@
 
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/cmo
-	disk_name = "Soteria Medical Factory"
+	disk_name = "CAPSA Medical Factory"
 	license = -1 //Same disk, but for the CBO exclusively with endless uses.
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/advanced/cmo
-	disk_name = "Soteria Advanced Medical Designs Factory"
+	disk_name = "CAPSA Advanced Medical Designs Factory"
 	license = -1 //Same disk, but for the CBO exclusively with endless uses.
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/surgery
-	disk_name = "Soteria Standard Organs"
+	disk_name = "CAPSA Standard Organs"
 	license = -1
 	designs = list(
 		/datum/design/organ/heart,
@@ -118,7 +118,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer
-	disk_name = "Soteria Computer Parts"
+	disk_name = "Phokorus Institute Computer Parts"
 	icon_state = "moebius"
 	license = 20
 	designs = list(
@@ -158,11 +158,11 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer/rd
-	disk_name = "Soteria Computer Factory"
+	disk_name = "Phokorus Institute Computer Factory"
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/rped
-	disk_name = "Soteria RnD Stock Parts Designs"
+	disk_name = "Phokorus Institute RnD Stock Parts Designs"
 	icon_state = "moebius"
 	license = 20
 	designs = list(
@@ -196,11 +196,11 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/rped/rd
-	disk_name = "Soteria Stock Parts Factory"
+	disk_name = "Phokorus Institute Stock Parts Factory"
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/xenobio
-	disk_name = "Soteria Xenobio Equipment Designs"
+	disk_name = "Phokorus Institute Xenobio Equipment Designs"
 	icon_state = "moebius"
 	license = 10
 	designs = list(
@@ -214,5 +214,5 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/xenobio/rd
-	disk_name = "Soteria Xenobio Equipment Factory"
+	disk_name = "Phokorus Institute Xenobio Equipment Factory"
 	license = -1

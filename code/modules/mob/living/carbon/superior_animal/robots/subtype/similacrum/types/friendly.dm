@@ -5,8 +5,8 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 //Non-hostile to regular colonists.
 //Roomba
 /mob/living/carbon/superior_animal/robot/similacrum/roomba/allied
-	name = "SI Combat Roomba"
-	desc = "A small round soteria branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat."
+	name = "PI Combat Roomba"
+	desc = "A small round Phokorus Institute branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat."
 	faction = "neutral"
 	icon_state = "roomba_SI"
 	melee_damage_lower = 10
@@ -48,8 +48,8 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	..()
 
 /mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/armored/allied
-	name = "SI Armored Roomba"
-	desc = "A small round soteria branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat and given additional armor."
+	name = "PI Armored Roomba"
+	desc = "A small round Phokorus Institute branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat and given additional armor."
 	faction = "neutral"
 	icon_state = "roomba_SI_armor"
 	melee_damage_lower = 12
@@ -90,8 +90,8 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 //Robots
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied
-	name = "SI Sword Drone"
-	desc = "A soteria branded sword drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
+	name = "PI Sword Drone"
+	desc = "A Phokorus Institute branded sword drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
 	faction = "neutral"
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "soteria"
@@ -145,9 +145,9 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/advanced
-	name = "SI Mantis Drone"
-	desc = "A soteria branded heavily armored mantis drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
-	icon_state = "soteria_mantis"
+	name = "PI Mantis Drone"
+	desc = "A Phokorus Institute branded heavily armored mantis drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
+	icon_state = "pi_mantis"
 	health = 350
 	maxHealth = 350
 	melee_damage_lower = 30
@@ -157,7 +157,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/junkbot
 	name = "Prospector Junkbot"
-	desc = "A prospector forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Soteria the prospector salvagers made these bots to function as disposable shields or \
+	desc = "A prospector forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Phokorus Institute the prospector salvagers made these bots to function as disposable shields or \
 	to gaurd specific locations since they do not wander. While lightweight, fast, and capable of a wickedly damaging slash with its armblade, they are not that durable."
 	icon_state = "junkbot"
 	health = 125

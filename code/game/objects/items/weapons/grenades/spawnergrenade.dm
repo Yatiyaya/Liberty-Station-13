@@ -60,7 +60,7 @@
 
 /obj/item/grenade/spawnergrenade/manhacks/junkbot
 	name = "\improper Prospie 'Eat-shit m8' lobber"
-	desc = "A shitty rapid 'build-a-bot' grenade produced by prospector salvagers using designs 'borrowed' from the Soteria, handy for a build-a-bot guard or as a disposable decoy."
+	desc = "A shitty rapid 'build-a-bot' grenade produced by prospector salvagers using designs 'borrowed' from the Phokorus Institute, handy for a build-a-bot guard or as a disposable decoy."
 	deliveryamt = 1
 	icon_state = "screamer"
 	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/junkbot
@@ -69,7 +69,7 @@
 
 //Similacrum spawner grenades
 /obj/item/grenade/spawnergrenade/manhacks/roomba
-	name = "\improper SD-SI roomba grenade"
+	name = "\improper SR-PI roomba grenade"
 	desc = "Deploys a roomba that will attack animals and non-colony humanoids nearby."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
@@ -78,7 +78,7 @@
 	will_flash = FALSE
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/trippers
-	name = "\improper SD-SI armored roomba grenade"
+	name = "\improper SR-PI armored roomba grenade"
 	desc = "Deploys an armored roomba that will attack animals and non-colony humanoids nearby."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
@@ -86,7 +86,7 @@
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1, MATERIAL_PLASTEEL = 6) //3 plasteel per baton
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/sword
-	name = "\improper SD-SI sword drone grenade"
+	name = "\improper SR-PI sword drone grenade"
 	desc = "Deploys a sword-bearing robot enhanced with incredible speed and augments that will attack animals and non-colony humanoids on sight."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_medium"
@@ -94,7 +94,7 @@
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_SILVER = 6, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/mantis
-	name = "\improper SD-SI mantis drone grenade"
+	name = "\improper SR-PI mantis drone grenade"
 	desc = "Deploys a mantis blade-bearing robot enhanced with incredible speed and augments that will attack animals and non-colony humanoids on sight."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_large"

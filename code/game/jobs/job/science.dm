@@ -43,12 +43,12 @@
 							/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/reports)
 
-	description = "The Research Provost is the head of the research branch of the Soteria Institute, directing science activities.<br>\
+	description = "The Research Provost is the head of the research branch of the Phokorus Institute, directing science activities.<br>\
 	The scientists under your command are working on a range of projects. Direct them towards the best interests of the organization.<br>\
 	With oversight over the funds, you may also purchase scientific artifacts and anything else of research value - even funding away missions.<br>\
 	Even use your position to request support from other factions if required. Most colonists do not understand your work, but know its value.<br>\
 	Of course, remember that you are a scientist yourself - feel free to get into the lab and work on R&D or xeno-related research.<br>\
-	The Medical wing also falls under the ownership of Soteria. You may use their resources - and they may use yours - as needed."
+	The Medical wing also falls under the ownership of Phokorus Institute. You may use their resources - and they may use yours - as needed."
 
 	duties = "Direct the scientists under your command towards the bettering of all mankind.<br>\
 	Ensure a healthy stock of research equipment through management of department funds.<br>\
@@ -92,9 +92,9 @@
 		STAT_BIO = 10,
 	)
 
-	description = "The Scientist is a researcher representing the Soteria Institute, standing at the frontier of human advancement.<br>\
+	description = "The Scientist is a researcher representing the Phokorus Institute, standing at the frontier of human advancement.<br>\
 	You may engage in a variety of research projects in four distinct fields - R&D, Xenoflora, Xenobiology, and Xenoarchaeology.<br>\
-	The manufacture of high tech devices is the primary source of income for Soteria, but artifacts and alien life may offer great potential.<br>\
+	The manufacture of high tech devices is the primary source of income for Phokorus Institute, but artifacts and alien life may offer great potential.<br>\
 	Remember that dedicated specialists exist for robotics projects. You may work closely for general R&D, but avoid taking over robotics."
 
 	duties = "Advance the cause of knowledge with various research projects.<br>\
@@ -142,7 +142,7 @@
 
 	perks = list(PERK_SURGICAL_MASTER, PERK_ROBOTICS_EXPERT, PERK_SCIENCE)
 
-	description = "The Roboticist is a specialized scientist with a busy workload - at the forefront of Soteria's service offerings.<br>\
+	description = "The Roboticist is a specialized scientist with a busy workload - at the forefront of Phokorus Institute's service offerings.<br>\
 	You must maintain and upgrade the fleet of synthetics that keep the ship running, as well as constructing new ones on occasion.<br>\
 	In addition, you may be asked to manufacture prosthetic limbs and enhancements. Medical can perform the installation if you lack surgical skills.<br>\
 	Though not requested often you can also construct massive and powerful mechanized vehicles. These have powerful mining, rescue, and military applications.<br>\

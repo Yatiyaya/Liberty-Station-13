@@ -106,7 +106,7 @@
 				to_chat(user, SPAN_NOTICE("You loosen the safety bolts and overclock the capacitor to unsafe levels, allowing the weapon to destroy empty cells for use as ammunition."))
 
 /obj/item/gun/energy/laser/railgun/mounted
-	name = "SDF SC \"Schrapnell\""
+	name = "SRF SC \"Schrapnell\""
 	desc = "An energy-based railgun, employing a matter fabricator to pull shotgun rounds from thin air and energy before launching them at faster than light speeds. Has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "shrapnel"
 	self_recharge = 1
@@ -121,7 +121,7 @@
 		list(mode_name="Beanbag", mode_desc="Fires a beanbag synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
 		list(mode_name="Blast", mode_desc="Fires a slug synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=null, icon="destroy"),
 	)
-	serial_type = "SD"
+	serial_type = "SR"
 	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	allow_similacrum_mods = TRUE
 

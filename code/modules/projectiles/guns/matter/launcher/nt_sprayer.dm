@@ -47,7 +47,7 @@
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1, TECH_BIO = 2)
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_WOOD = 3, MATERIAL_PLASTIC = 15)
 	matter_type = MATERIAL_WOOD
-	serial_type = "SI"
+	serial_type = "PI"
 
 	max_stored_matter = 3 //Annoying to use do to low ammo
 

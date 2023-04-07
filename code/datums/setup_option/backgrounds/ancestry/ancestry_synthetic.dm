@@ -60,11 +60,10 @@
 /datum/category_item/setup_option/background/ancestry/tt_synth_mech_adept
 	name = "Card Carrier"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This specific model was designed with \
-	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills.These units make up the backbone of the unions synthetic work force, and were named thusly. While not as sturdy as some other models of FBP's.  \
+	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. These units make up the backbone of the unions synthetic work force, and were named thusly. While not as sturdy as some other models of FBP's.  \
 	Terra-Therma Workers Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
 	omni-tool built in your right arm."
-
-
+ 
 	restricted_to_species = list(FORM_TERRAYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
 	restricted_jobs = list(/datum/job/outsider)
@@ -85,8 +84,6 @@
 	off from the colony for extended periods. While not quite as capable in offensive engagement as a combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
 	with an engineering omni-tool built in your right arm."
 
-
-
 	restricted_to_species = list(FORM_TERRAYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
 	restricted_jobs = list(/datum/job/outsider)
@@ -103,7 +100,7 @@
 /datum/category_item/setup_option/background/ancestry/tt_synth_mine
 	name = "\"Stony Rock\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is made with mining in \
-	Mind, and seems almost older than the union itself…. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
+	Mind, and seems almost older than the union itself. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
 	and hard materials alike. While not as capable in combat as a combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
 	This design comes with a mining omnitool, which boasts a munchkin 3000 multitool, a powered jackhammer, advanced ore scanner, and emergency radio."
 
@@ -205,14 +202,14 @@
 /datum/category_item/setup_option/background/ancestry/church_combat
 	name = "Sword Model"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This one was designed for combat. \
-	While not nearly as armored as a soteria or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
+	While not nearly as armored as a CAPSA or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
 	in melee. Use of an AI-supported targeting system allows them to make more precise armor penetrating shots."
 
 	restricted_to_species = list(FORM_CHURCHSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/armblade/longsword)
 	restricted_jobs = list(/datum/job/outsider)
 
-	//Compared to the soteria combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
+	//Compared to the CAPSA combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
 	stat_modifiers = list(
 		STAT_ROB = 25,
 		STAT_TGH = 10,

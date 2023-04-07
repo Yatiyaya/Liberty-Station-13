@@ -47,7 +47,7 @@
 	init_recoil = CARBINE_RECOIL(1)
 	twohanded = FALSE
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 /obj/item/gun/energy/ionpistol/emp_act(severity)
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess

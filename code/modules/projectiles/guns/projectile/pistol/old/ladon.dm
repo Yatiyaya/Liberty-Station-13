@@ -17,7 +17,7 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	auto_eject = 1
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig

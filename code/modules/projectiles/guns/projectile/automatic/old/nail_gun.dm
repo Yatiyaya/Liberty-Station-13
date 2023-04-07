@@ -32,7 +32,7 @@
 		BURST_3_ROUND,
 		FULL_AUTO_300
 		)
-	serial_type = "SD"
+	serial_type = "SR"
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // SMG level

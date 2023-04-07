@@ -1,22 +1,23 @@
 /datum/design/research/item/similacrum/cog
-	name = "SD \"Cog\" laser carbine"
+	name = "SR \"Cog\" laser carbine"
 	build_path = /obj/item/gun/energy/cog
 	category = CAT_WEAPON
 
 /datum/design/research/item/similacrum/cog_sawn
-	name = "SD \"Pinion\" laser pistol"
+	name = "SR \"Pinion\" laser pistol"
 	build_path = /obj/item/gun/energy/cog/sawn
 	category = CAT_WEAPON
 
 /*	// Unneeded with the introduction of the Sprocket, keeps this variant as Marshal exclusive
 /datum/design/research/item/similacrum/cog_gear
-	name = "SD \"Gear\" police laser carbine"
+	name = "SR \"Gear\" police laser carbine"
 	build_path = /obj/item/gun/energy/cog/gear
 	category = CAT_WEAPON
 */
 
+
 /datum/design/research/item/similacrum/cog_sprocket
-	name = "Soteria \"Sprocket\" laser carbine"
+	name = "Phokorus Institute \"Sprocket\" laser carbine"
 	build_path = /obj/item/gun/energy/cog/sprocket
 	category = CAT_WEAPON
 
@@ -56,91 +57,91 @@
 	category = CAT_CLOTHING
 
 /datum/design/research/item/similacrum/thermals
-	name = "SD Thermal Goggles"
+	name = "SR Thermal Goggles"
 	build_path = /obj/item/clothing/glasses/powered/thermal/onestar
 	category = CAT_CLOTHING
 
 /datum/design/research/item/similacrum/combat_shield
-	name = "SD Combat Shield"
+	name = "SR Combat Shield"
 	build_path = /obj/item/shield_projector/rectangle
 	category = CAT_CLOTHING
 
 /datum/design/research/item/similacrum/manhacks_roomba
-	name = "SD-SI roomba grenade"
+	name = "SR-PI roomba grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba
 	category = CAT_WEAPON
 
 /datum/design/research/item/similacrum/manhacks_roomba_tripper
-	name = "SD-SI roomba sec grenade"
+	name = "SR-PI roomba sec grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/trippers
 	category = CAT_WEAPON
 
 /datum/design/research/item/similacrum/manhacks_roomba_gunne
-	name = "SD-SI sword drone grenade"
+	name = "SR-PI sword drone grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/sword
 	category = CAT_WEAPON
 
 /datum/design/research/item/similacrum/manhacks_roomba_fbp
-	name = "SD-SI mantis drone grenade"
+	name = "SR-PI mantis drone grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba/mantis
 	category = CAT_WEAPON
 
 /datum/design/research/item/similacrum/glass_widow
-	name = "SD \"Glass Widow\" infuser"
+	name = "SR \"Glass Widow\" infuser"
 	build_path = /obj/item/gun_upgrade/mechanism/glass_widow
 	category = CAT_GUNMODS
 
 /datum/design/research/item/similacrum/unmaker
-	name = "SD \"Master Unmaker\" infuser"
+	name = "SR \"Master Unmaker\" infuser"
 	build_path = /obj/item/gun_upgrade/mechanism/similacrum_master_catalyst
 	category = CAT_GUNMODS
 
-/datum/design/research/item/powercell/large/grayson
-	name = "SD-SI \"Posi-cell 16000L\""
+/datum/design/research/item/powercell/large/similacrum
+	name = "SR-PI \"Posi-cell 16000L\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/large/similacrum
 
-/datum/design/research/item/powercell/medium/grayson
-	name = "SD-SI \"Posi-cell 1600M\""
+/datum/design/research/item/powercell/medium/similacrum
+	name = "SR-PI \"Posi-cell 1600M\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/medium/similacrum
 
-/datum/design/research/item/powercell/small/grayson
-	name = "SD-SI \"Posi-cell 400S\""
+/datum/design/research/item/powercell/small/similacrum
+	name = "SR-SI \"Posi-cell 400S\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/small/similacrum
 
 //Upgraded prosthesis ========================
-/datum/design/research/item/mechfab/prosthesis_grayson
+/datum/design/research/item/mechfab/prosthesis_similacrum
 	category = CAT_PROSTHESIS
 
-/datum/design/research/item/mechfab/prosthesis_grayson/r_arm
+/datum/design/research/item/mechfab/prosthesis_similacrum/r_arm
 	build_path = /obj/item/organ/external/robotic/one_star/r_arm
 
-/datum/design/research/item/mechfab/prosthesis_grayson/l_arm
+/datum/design/research/item/mechfab/prosthesis_similacrum/l_arm
 	build_path = /obj/item/organ/external/robotic/one_star/l_arm
 
-/datum/design/research/item/mechfab/prosthesis_grayson/r_leg
+/datum/design/research/item/mechfab/prosthesis_similacrum/r_leg
 	build_path = /obj/item/organ/external/robotic/one_star/r_leg
 
-/datum/design/research/item/mechfab/prosthesis_grayson/l_leg
+/datum/design/research/item/mechfab/prosthesis_similacrum/l_leg
 	build_path = /obj/item/organ/external/robotic/one_star/l_leg
 //Todo chest/lower and head?
 
 //Similacrum Tool / Upgrades ========================
 
 /datum/design/research/item/similacrum/holding_tank
-	name = "SD Expanded Fuel Tank of Holding"
+	name = "SR Expanded Fuel Tank of Holding"
 	build_path = /obj/item/tool_upgrade/augment/holding_tank
 	category = CAT_TOOLMODS //Tool mod rather then bluespace for constancy
 
 /datum/design/research/item/similacrum/repair_nano
-	name = "SD Repair Nano Repair Tool Upgrade"
+	name = "SR Repair Nano Repair Tool Upgrade"
 	build_path = /obj/item/tool_upgrade/augment/repair_nano
 	category = CAT_TOOLMODS
 
 /datum/design/research/item/similacrum/ai_tool
-	name = "SD Nano-integrated AI Tool Upgrade"
+	name = "SR Nano-integrated AI Tool Upgrade"
 	build_path = /obj/item/tool_upgrade/augment/ai_tool
 	category = CAT_TOOLMODS
 
