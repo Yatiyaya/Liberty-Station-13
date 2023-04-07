@@ -132,6 +132,7 @@ turf/proc/hotspot_expose(exposed_temperature, exposed_volume, soh = 0)
 
 	var/datum/gas_mixture/air_contents = my_tile.return_air()
 
+
 	if(firelevel > 6)
 		icon_state = "3"
 		set_light(7, 3)
