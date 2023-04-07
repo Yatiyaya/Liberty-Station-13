@@ -24,7 +24,7 @@
 				"It's labelled 'Summary of Faction Capabilities'.",
 				"It's labelled 'The Technology Behind Absolutism'.",
 				"It's labelled 'Sol Federation Research Ethics'.",
-				"It's labelled 'The Collapse of Greyson Positronics'.",
+				"It's labelled 'The Collapse of Similacrum Positronics'.",
 				"It's labelled 'Wanderer - A Dossier'.",
 				"It's labelled 'Ironhammer's Legacy: Our Potential Gain'.",
 				"It's labelled 'Evaluation of Liberty Council Efficiency'.",

@@ -121,9 +121,9 @@
 		list(mode_name="Beanbag", mode_desc="Fires a beanbag synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun/beanbag, charge_cost=25, icon="stun"),
 		list(mode_name="Blast", mode_desc="Fires a slug synth-shell", projectile_type=/obj/item/projectile/bullet/shotgun, charge_cost=null, icon="destroy"),
 	)
-	serial_type = "GP"
+	serial_type = "SD"
 	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_SCOPE)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 //Re-wrote this to be it's own standalone gun to prevent cooling issues.
 /obj/item/gun/energy/laser/railgun/railrifle
@@ -154,7 +154,7 @@
 
 	//Blacklisting now works!
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/battery_shunt = TRUE,
-							/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE)
+							/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE)
 
 /obj/item/gun/energy/laser/railgun/railrifle/consume_next_projectile(mob/user)
 	if(!cell)

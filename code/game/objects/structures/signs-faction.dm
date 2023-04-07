@@ -14,13 +14,13 @@
 	icon_state = "ironhammerold"
 
 /obj/structure/sign/faction/one_star
-	name = "Greyson Positronics"
-	desc = "A rugged banner depicting the all-seeing eye of Greyson Positronics, the fallen mega-corporation."
+	name = "Similacrum Positronics"
+	desc = "A rugged banner depicting the all-seeing eye of Similacrum Positronics, the fallen mega-corporation."
 	icon_state = "one_star"
 
 /obj/structure/sign/faction/one_star_old
-	name = "Greyson Positronics"
-	desc = "A torn banner depicting the all-seeing eye of Greyson Positronics, the fallen mega-corporation."
+	name = "Similacrum Positronics"
+	desc = "A torn banner depicting the all-seeing eye of Similacrum Positronics, the fallen mega-corporation."
 	icon_state = "one_star_old"
 
 /obj/structure/sign/faction/frozenstar

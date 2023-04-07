@@ -1,9 +1,9 @@
-/mob/living/carbon/superior_animal/robot/greyson
-	name = "Greyson Positronic RMB-A unit"
+/mob/living/carbon/superior_animal/robot/similacrum
+	name = "Similacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. This one seems pretty harmless."
 	icon = 'icons/mob/battle_roomba.dmi'
 	icon_state = "roomba"
-	faction = "greyson"
+	faction = "similacrum"
 	cant_be_pulled = TRUE
 
 	get_stat_modifier = TRUE

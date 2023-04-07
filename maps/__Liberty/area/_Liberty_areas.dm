@@ -265,7 +265,7 @@
 	ship_area = FALSE
 
 /area/liberty/outside/one_star
-	name = "Greyson Positronic Base"
+	name = "Similacrum Robotics Base"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen13.ogg', 'sound/ambience/ambigen14.ogg', 'sound/ambience/ambimalf.ogg')
 	dynamic_lighting = TRUE
@@ -273,12 +273,12 @@
 	flags = AREA_FLAG_RAD_SHIELDED
 
 /area/liberty/outside/one_star/fo_outside
-	name = "Greyson Grounds"
+	name = "Similacrum Grounds"
 	icon_state = "erisgreen"
 	dynamic_lighting = FALSE
 
 /area/liberty/outside/one_star/fo_internal
-	name = "Greyson Field Offices"
+	name = "Similacrum Field Offices"
 	icon_state = "erisblue"
 
 /area/liberty/outside/dcave

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/sst
 	name = "\"SST Abnegate\" handgun"
-	desc = "\"Soteria Surface Tension\" brand handgun. A cooperative project between Soteria Medical and Soteria Research, the Abnegate uses Greyson tech to internally synthesize soporific coated 9mm bullets. \
+	desc = "\"Soteria Surface Tension\" brand handgun. A cooperative project between Soteria Medical and Soteria Research, the Abnegate uses Similacrum tech to internally synthesize soporific coated 9mm bullets. \
 	Initially designed at the request of Lifeline Technicians for a proper way to sedate rowdy armored targets from a distance."
 	icon = 'icons/obj/guns/energy/abnegate.dmi'
 	icon_state = "abnegate"
@@ -22,7 +22,7 @@
 	projectile_type=/obj/item/projectile/bullet/pistol_35/rubber/soporific
 	price_tag = 1750
 	serial_type = "SI"
-	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE) // I can't believe I have to do this. Don't turn NL weapons into literal war crimes.
+	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE) // I can't believe I have to do this. Don't turn NL weapons into literal war crimes.
 
 /obj/item/gun/energy/sst/preloaded
 

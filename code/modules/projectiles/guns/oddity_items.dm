@@ -199,8 +199,9 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	item_charge_meter = FALSE
 	charge_meter = FALSE
 	price_tag = 1500
+	allow_similacrum_mods = FALSE
 	serial_type = "Mastercraft"
-	allow_greyson_mods = FALSE
+
 
 /obj/item/gun/energy/xray/psychic_cannon
 	name = "\"Manta-RAY\" cannon"

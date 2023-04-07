@@ -549,7 +549,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "aIz" = (
-/mob/living/carbon/superior_animal/robot/greyson/custodian,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "aIB" = (
@@ -912,7 +912,7 @@
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 4
 	},
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol/esmg,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/esmg,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "bgd" = (
@@ -2287,7 +2287,7 @@
 /area/liberty/outside/meadow)
 "cDo" = (
 /obj/structure/bed/chair/custom/onestar,
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "cDw" = (
@@ -2802,7 +2802,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "djr" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "djP" = (
@@ -4443,7 +4443,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "ffj" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "ffA" = (
@@ -5593,7 +5593,7 @@
 "gvq" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
@@ -6051,7 +6051,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/outsider)
 "gUm" = (
-/mob/living/carbon/superior_animal/robot/greyson/custodian/chef,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian/chef,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "gUq" = (
@@ -6389,7 +6389,7 @@
 /turf/simulated/mineral/planet,
 /area/liberty/outside/meadow)
 "hnK" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "hnL" = (
@@ -7195,7 +7195,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "ikZ" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol/esmg,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/esmg,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "ilh" = (
@@ -7285,7 +7285,7 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "iqW" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "irf" = (
@@ -7439,7 +7439,7 @@
 "ixj" = (
 /obj/structure/catwalk,
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/robot/greyson/custodian,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
 "ixl" = (
@@ -7942,7 +7942,7 @@
 /turf/unsimulated/wall/jungle,
 /area/liberty/outside/meadow)
 "jaz" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "jaO" = (
@@ -8561,7 +8561,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2;
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
@@ -9066,7 +9066,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "kiT" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol/rifle,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/rifle,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star)
 "kjs" = (
@@ -9601,7 +9601,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/safehouse)
 "kQk" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "kQG" = (
@@ -9669,7 +9669,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "kVY" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "kWg" = (
@@ -9829,7 +9829,7 @@
 /area/liberty/outside/one_star)
 "lhf" = (
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
 "lhi" = (
@@ -11461,7 +11461,7 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "mSm" = (
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/robot/greyson/custodian,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
 "mSw" = (
@@ -11610,7 +11610,7 @@
 "mXY" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/one_star)
@@ -11746,7 +11746,7 @@
 "nfx" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
@@ -13697,7 +13697,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
 "pkP" = (
-/mob/living/carbon/superior_animal/robot/greyson/custodian/chef,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian/chef,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "plm" = (
@@ -13905,7 +13905,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/safehouse)
 "pxK" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star)
 "pxV" = (
@@ -15036,7 +15036,7 @@
 "qBZ" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /obj/structure/invislight,
 /turf/simulated/floor/tiled/derelict,
@@ -15544,7 +15544,7 @@
 /area/liberty/dungeon/outside/zoo)
 "rcc" = (
 /obj/machinery/light/floor,
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/outside/one_star)
 "rce" = (
@@ -15633,7 +15633,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "rhw" = (
-/mob/living/carbon/superior_animal/robot/greyson/custodian/engineer,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "rhQ" = (
@@ -15731,7 +15731,7 @@
 "rna" = (
 /obj/structure/catwalk,
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
 "rnb" = (
@@ -15992,7 +15992,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "rBD" = (
 /obj/structure/bed/chair/custom/onestar/red,
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
 "rBM" = (
@@ -16808,7 +16808,7 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/outside/one_star)
 "swF" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol/esmg,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/esmg,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "swH" = (
@@ -17008,7 +17008,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2;
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
@@ -17132,7 +17132,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "sQA" = (
 /obj/structure/bed/chair/custom/onestar,
-/mob/living/carbon/superior_animal/robot/greyson/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "sRz" = (
@@ -17335,7 +17335,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "tdV" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "tfi" = (
@@ -18130,7 +18130,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "tZX" = (
 /obj/structure/bed/chair/custom/onestar,
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "uae" = (
@@ -18209,7 +18209,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "udD" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "udZ" = (
@@ -18392,7 +18392,7 @@
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 4
 	},
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "uoJ" = (
@@ -18577,7 +18577,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "uzO" = (
 /obj/machinery/light/floor,
-/mob/living/carbon/superior_animal/robot/greyson/custodian/engineer,
+/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "uAv" = (
@@ -19124,7 +19124,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "vbJ" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "vbL" = (
@@ -19189,7 +19189,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/meadow)
 "veQ" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "veX" = (
@@ -19543,7 +19543,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vBg" = (
-/mob/living/carbon/superior_animal/robot/greyson/synthetic/epistol/rifle,
+/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/rifle,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
 "vBq" = (
@@ -19981,7 +19981,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2;
 	locked = 1;
-	name = "Grayson Positronic Outpost"
+	name = "Similacrum Robotics Outpost"
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/outside/one_star)
@@ -20751,7 +20751,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "wTe" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/outside/one_star)
 "wTy" = (
@@ -20970,7 +20970,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "xfq" = (
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/robot/greyson/roomba/gun_ba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/one_star)
 "xfE" = (

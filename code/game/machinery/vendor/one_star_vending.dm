@@ -1,21 +1,21 @@
 /obj/machinery/vending/one_star
 	name = "One Star Vendor"
-	desc = "A vendor of the One Star variety typical made by GP."
+	desc = "A vendor of the One Star variety typical made by SD."
 	icon = 'icons/obj/machines/one_star/vending.dmi'
 	icon_state = "vendor_guns"
 	icon_vend = "vendor_printing"
 	//product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
 	//product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
-	vendor_department = DEPARTMENT_GREYSON
+	vendor_department = DEPARTMENT_SIMILACRUM
 	alt_currency_path = /obj/item/stack/os_cash
 
 /obj/machinery/vending/one_star/Initialize()
 	. = ..()
 	set_light(1.4, 1, COLOR_LIGHTING_CYAN_BRIGHT)
-	earnings_account = department_accounts[DEPARTMENT_GREYSON]
+	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
 
 /obj/machinery/vending/one_star/guns
-	desc = "A vendor of the One Star variety typical made by GP. This one sells firearms of the GP variety."
+	desc = "A vendor of the One Star variety typical made by SD. This one sells firearms of the SD variety."
 	icon_state = "vendor_guns"
 
 	products = list(
@@ -27,7 +27,7 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	desc = "A vendor of the One Star variety typical made by GP. This one sells food variety."
+	desc = "A vendor of the One Star variety typical made by SD. This one sells food variety."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"
 
@@ -60,5 +60,6 @@
 		)
 
 /obj/machinery/vending/one_star/health
-	desc = "A vendor of the One Star variety typical made by GP. This one sells medical paraphernalia of the GP variety."
+	desc = "A vendor of the One Star variety typical made by SD. This one sells medical paraphernalia of the SD variety."
 	icon_state = "vendor_health"
+

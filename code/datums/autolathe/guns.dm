@@ -26,6 +26,7 @@
 	name = "Car-Van 9mm \"Pocket Prince\""
 	build_path = /obj/item/gun/projectile/revolver/detective
 
+
 /// 10mm M A G N U M
 
 /datum/design/autolathe/gun/colt
@@ -47,6 +48,7 @@
 /datum/design/autolathe/gun/ranger
 	name = "ML 10mm \"Ranger\""
 	build_path = /obj/item/gun/projectile/revolver/ranger
+
 
 /// S M G S
 
@@ -151,9 +153,11 @@
 //C A S E L E S S
 //7 m m - C L
 
+
 /datum/design/autolathe/gun/contractor
 	name = "Car-Van 7mm Caseless \"Contractor\""
 	build_path = /obj/item/gun/projectile/boltgun/contractor
+
 
 /datum/design/autolathe/gun/operator_rifle
 	name = "ML 7mm Caseless \"Operator\""
@@ -163,11 +167,12 @@
 	name = "ML 7mm Caseless \"Kraut\""
 	build_path = /obj/item/gun/projectile/automatic/kraut
 
-//A N T I M A T E R I A L
-//1 4 . 5 m m - A M R
+
+// Heavy Sniper
+// 14.5 m m
 
 /datum/design/autolathe/gun/heavysniper
-	name = "SA AMR - 14.5mm \"Penetrator\""
+	name = "LM AMR - 14.5mm \"Penetrator\""
 	build_path = /obj/item/gun/projectile/boltgun/heavysniper
 
 //F L A R E
@@ -264,8 +269,8 @@
 	name = "OT cleansing carbine"
 	build_path = /obj/item/gun/matter/launcher/nt_sprayer
 
-/datum/design/autolathe/gun/greyson_cog
-	name = "GP \"Cog\" lasegun"
+/datum/design/autolathe/gun/similacrum_cog
+	name = "SD \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog
 
 /datum/design/autolathe/gun/plasma/martyr

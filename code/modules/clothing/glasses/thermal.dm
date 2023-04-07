@@ -39,10 +39,10 @@
 
 /obj/item/clothing/glasses/powered/thermal/onestar
 	name = "type-73 zhenchayuan goggles"
-	desc = "Previously nothing more than a prototype, these Greyson Positronic thermal goggles are incredibly battery-efficient."
+	desc = "Previously nothing more than a prototype, these Similacrum Robotics thermal goggles are incredibly battery-efficient."
 	icon_state = "onestar_thermal"
 	off_state = "onestar_thermal"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_PLATINUM = 2) // GP tech all use platinum
+	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_PLATINUM = 2) // SD tech all use platinum
 	tick_cost = 0.25 // 400 ticks on a stock cell. Incredibly efficient due to being cutting edge tech, also justifies the research node rather than just taking syndie ones.
 
 /obj/item/clothing/glasses/powered/thermal/plain
