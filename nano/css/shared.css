@@ -1023,16 +1023,16 @@ img.sciTechTreeIconToolTip {
 .icon-cog { background-position: -256px -288px; }
 .icon-window { background-position: -320px -96px; }
 .icon-mastermind { background-position: -320px -64px; }
-.icon-greysoncells { background-position: -288px -128px; }
-.icon-greysonsaw { background-position: -320px -192px; }
-.icon-greysonwelder { background-position: -288px -288px; }
-.icon-greysondrill { background-position: -256px -320px; }
-.icon-greysonai { background-position: -224px -320px; }
-.icon-greysonfuel { background-position: -288px -320px; }
-.icon-greysonstockparts { background-position: -320px 0px; }
-.icon-greysonroboticleg { background-position: -320px -32px; }
-.icon-greysonthermals { background-position: -320px -128px; }
-.icon-greysonarmor { background-position: -320px -160px; }
+.icon-similacrumcells { background-position: -288px -128px; }
+.icon-similacrumsaw { background-position: -320px -192px; }
+.icon-similacrumwelder { background-position: -288px -288px; }
+.icon-similacrumdrill { background-position: -256px -320px; }
+.icon-similacrumai { background-position: -224px -320px; }
+.icon-similacrumfuel { background-position: -288px -320px; }
+.icon-similacrumstockparts { background-position: -320px 0px; }
+.icon-similacrumroboticleg { background-position: -320px -32px; }
+.icon-similacrumthermals { background-position: -320px -128px; }
+.icon-similacrumarmor { background-position: -320px -160px; }
 .icon-roomba_kit { background-position: -320px -224px; }
 
 .sciMenuButton {

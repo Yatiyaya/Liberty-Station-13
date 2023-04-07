@@ -2,7 +2,7 @@
 // To make a design unprotect use -1
 // similacrum positronic
 /obj/item/computer_hardware/hard_drive/portable/design/onestar
-	disk_name = "Similacrum Positronics Tool Pack"
+	disk_name = "Similacrum Robotics Tool Pack"
 	icon_state = "onestar"
 	license = 5
 	designs = list(
@@ -22,7 +22,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts
-	disk_name = "Similacrum Positronics Stock Parts Pack"
+	disk_name = "Similacrum Robotics Stock Parts Pack"
 	icon_state = "onestar"
 	license = 8
 	designs = list(
@@ -34,7 +34,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/cog
-	disk_name = "Similacrum Positronics - Cog"
+	disk_name = "Similacrum Robotics - Cog"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
@@ -43,7 +43,7 @@
 	)
 /*
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/spring
-	disk_name = "Similacrum Positronics - Spring"
+	disk_name = "Similacrum Robotics - Spring"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -55,7 +55,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet
-	disk_name = "Similacrum Positronics - Rivet"
+	disk_name = "Similacrum Robotics - Rivet"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -67,7 +67,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar
-	disk_name = "Similacrum Positronics - rebar"
+	disk_name = "Similacrum Robotics - rebar"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -79,7 +79,7 @@
 		)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun
-	disk_name = "Similacrum Positronics - Nail Gun"
+	disk_name = "Similacrum Robotics - Nail Gun"
 	icon_state = "onestar"
 	license = 16
 	designs = list(
@@ -95,7 +95,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold
-	disk_name = "Similacrum Positronics - Scaffold"
+	disk_name = "Similacrum Robotics - Scaffold"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
@@ -105,7 +105,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter
-	disk_name = "Similacrum Positronics - Trouble Shooter"
+	disk_name = "Similacrum Robotics - Trouble Shooter"
 	icon_state = "onestar"
 
 	license = 6
@@ -117,7 +117,7 @@
 	)
 */
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/armor
-	disk_name = "Similacrum Positronics - Ablative Vest"
+	disk_name = "Similacrum Robotics - Ablative Vest"
 	icon_state = "onestar"
 	license = 6 //3 sets
 	designs = list(

@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/spring
 	name = "Similacrum Robotics \"Spring\" pistol"
-	desc = "SD \"Spring\" pistol, lost tech of a high power pistol using only 9mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
+	desc = "SR \"Spring\" pistol, lost tech of a high power pistol using only 9mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
 	icon = 'icons/obj/guns/projectile/spring.dmi'
 	icon_state = "spring"
 	damage_multiplier = 1.1
@@ -21,7 +21,7 @@
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY
 		)
-	serial_type = "SD"
+	serial_type = "SR"
 
 	wield_delay = 0 SECOND
 

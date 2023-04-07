@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/trouble_shooter
-	name = "SD \"Trouble Shooter\" rifle"
+	name = "SR \"Trouble Shooter\" rifle"
 	desc = "With many issues being raised from rogue robots and people alike, the Similacrum Robotics answer was a gun to shoot though several layers of armor \
 	Its material cost lead to it being mainly used in-house rather than in mass production. With the ablity to have a Master Unmaker integrated into it."
 	icon = 'icons/obj/guns/projectile/type_21.dmi'
@@ -20,7 +20,7 @@
 		SEMI_AUTO_NODELAY,
 		BURST_3_ROUND
 		)
-	serial_type = "SD"
+	serial_type = "SR"
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL, GUN_SILENCABLE)
 	allow_similacrum_mods = TRUE
 

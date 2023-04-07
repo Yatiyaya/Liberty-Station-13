@@ -36,11 +36,11 @@
 
 
 /obj/item/gun/energy/plasma/mounted/blitz
-	name = "SDF PR \"Sprengen\""
+	name = "SRF PR \"Sprengen\""
 	desc = "A miniaturized plasma rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "plasma_turret"
 	charge_meter = FALSE
-	serial_type = "SD"
+	serial_type = "SR"
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
 	allow_similacrum_mods = TRUE
 

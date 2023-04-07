@@ -1,6 +1,6 @@
 /obj/entity_spawner/similacrum/roomba
 
-	name = "Similacrum Positronics roomba dispenser"
+	name = "Similacrum Robotics roomba dispenser"
 	desc = "What appears to be a heavily modified robotics exofab made in the distinctive bronze of similacrum alloys. Are those roombas in its glass top?"
 
 	maximum_spawned = 20

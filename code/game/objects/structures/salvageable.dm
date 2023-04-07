@@ -568,7 +568,7 @@ obj/structure/salvageable/bliss/Initialize()
 
 /obj/structure/salvageable/os/power  //todo:make a system to directly repair to a generator
 	name = "broken generator"
-	desc = "A SD cold fusion reactor, broken beyond repair. You may be able to salvage something from this."
+	desc = "A SR cold fusion reactor, broken beyond repair. You may be able to salvage something from this."
 	icon_state = "generator_broken"
 	salvageable_parts = list(
 		/obj/item/stock_parts/console_screen = 80,

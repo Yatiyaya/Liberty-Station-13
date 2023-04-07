@@ -142,7 +142,7 @@
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	init_recoil = LMG_RECOIL(0.8)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 	gun_parts = list(/obj/item/part/gun/frame/tk = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 /obj/item/part/gun/frame/tk

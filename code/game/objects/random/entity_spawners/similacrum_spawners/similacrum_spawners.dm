@@ -1,5 +1,5 @@
 /obj/entity_spawner/similacrum //basetype, dont use
-	name = "Similacrum Positronics robot dispenser"
+	name = "Similacrum Robotics robot dispenser"
 	desc = "What appears to be a heavily modified robotics exofab made in the distinctive bronze of similacrum alloys."
 
 	death_message = "'s lights dim, ceasing function as it falls apart!"

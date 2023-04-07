@@ -22,7 +22,7 @@
 	damage_multiplier = 1.5 //simular to 257
 	penetration_multiplier = 3
 	init_recoil = LMG_RECOIL(0.6)
-	serial_type = "SD"
+	serial_type = "SR"
 
 	wield_delay = 1.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig for insta wield

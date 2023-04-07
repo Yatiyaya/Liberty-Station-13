@@ -1356,6 +1356,8 @@
 #include "code\game\objects\random\toys.dm"
 #include "code\game\objects\random\voidsuit.dm"
 #include "code\game\objects\random\entity_spawners\entity_spawner.dm"
+#include "code\game\objects\random\entity_spawners\similacrum_spawners\roomba_spawners.dm"
+#include "code\game\objects\random\entity_spawners\similacrum_spawners\similacrum_spawners.dm"
 #include "code\game\objects\random\lathe_disks\guns.dm"
 #include "code\game\objects\random\lathe_disks\lathe_disks.dm"
 #include "code\game\objects\random\lathe_disks\onestar.dm"

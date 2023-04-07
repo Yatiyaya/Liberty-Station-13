@@ -21,7 +21,7 @@
 /obj/item/gun/energy/taser/make_old()
 	. = ..()
 	desc += " This one seems to predate the Church acquisition."
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 /obj/item/gun/energy/taser/mounted
 	name = "mounted taser gun"

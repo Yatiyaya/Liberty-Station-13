@@ -35,13 +35,13 @@
 	serial_type = "PI"
 
 /obj/item/gun/energy/laser/mounted/blitz
-	name = "SDF LR \"Strahl\""
+	name = "SRF LR \"Strahl\""
 	desc = "A miniaturized laser rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "laser_turret"
 	damage_multiplier = 0.9
 	charge_meter = FALSE
 	twohanded = FALSE
-	serial_type = "SD"
+	serial_type = "SR"
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	allow_similacrum_mods = TRUE
 
@@ -86,7 +86,7 @@
 	)
 	twohanded = FALSE
 	allow_similacrum_mods = TRUE
-	serial_type = "SD"
+	serial_type = "SR"
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig

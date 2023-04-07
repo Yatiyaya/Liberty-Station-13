@@ -10,7 +10,7 @@
 	hidden_inv_threshold = 2000
 	recommendation_threshold = 4000
 	stations_recommended = list("similacrum_printer")
-	name_pool = list("Tuixiaoayuan" = "A still functioning, heavily armed similacrum ship that still produces and offers wares, likely entirely unaware of Similacrum Positronics collapse given its \
+	name_pool = list("Tuixiaoayuan" = "A still functioning, heavily armed similacrum ship that still produces and offers wares, likely entirely unaware of Similacrum Robotics collapse given its \
 	automated. It's a wonder it hasn't been raided, but then again it has guns that could level a planet on it. Plus, it hardly offers things of real value...")
 	inventory = list(
 		"Fuzhuang" = list(
@@ -31,21 +31,21 @@
 			/obj/item/clothing/suit/armor/vest/iron_lock_security = custom_good_name("ILS Ablasive Vest")
 		),
 		"Chilun" = list(
-			/obj/item/gun/energy/cog = custom_good_name("SD Cog")
+			/obj/item/gun/energy/cog = custom_good_name("SR Cog")
 		)
 	)
 
 	//Return policy I guess
 
 	offer_types = list(
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts = offer_data("SD Stockparts Disk", 500, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/armor = offer_data("SD Ablasive Armor Disk", 500, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts = offer_data("SR Stockparts Disk", 500, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/armor = offer_data("SR Ablasive Armor Disk", 500, 1),
 		/*/obj/item/computer_hardware/hard_drive/portable/design/onestar/spring = offer_data("GP Spring Disk", 2000, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet = offer_data("GP Rivet Disk", 2000, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar = offer_data("GP Rebar Disk", 2000, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun = offer_data("GP Nail Gun Disk", 2000, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold = offer_data("GP Scaffold Disk", 2000, 1),*/
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/cog = offer_data("SD Cog Disk", 150, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar = offer_data("SD Tools Disk", 100, 1)
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/cog = offer_data("SR Cog Disk", 150, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar = offer_data("SR Tools Disk", 100, 1)
 	)
 

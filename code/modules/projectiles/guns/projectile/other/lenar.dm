@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/grenade/lenar
-	name = "SD GmbH GL \"Lenar\""
+	name = "SR GmbH GL \"Lenar\""
 	desc = "A more than bulky pump-action grenade launcher used by Police during riots. Holds up to 6 grenade shells in a revolving magazine."
 	icon = 'icons/obj/guns/launcher/grenadelauncher.dmi'
 	icon_state = "Grenadelauncher_PMC"
@@ -11,7 +11,7 @@
 	bulletinsert_sound = 'sound/weapons/guns/interact/china_lake_reload.ogg'
 	fire_sound_text = "a metallic thunk"
 	price_tag = 1200
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 1.5 SECOND
 	wield_delay_factor = 0.6 // 60 vig , heavy stuff

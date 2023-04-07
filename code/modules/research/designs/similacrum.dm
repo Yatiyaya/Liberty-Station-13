@@ -112,19 +112,19 @@
 	build_path = /obj/item/cell/small/similacrum
 
 //Upgraded prosthesis ========================
-/datum/design/research/item/mechfab/prosthesis_grayson
+/datum/design/research/item/mechfab/prosthesis_similacrum
 	category = CAT_PROSTHESIS
 
-/datum/design/research/item/mechfab/prosthesis_grayson/r_arm
+/datum/design/research/item/mechfab/prosthesis_similacrum/r_arm
 	build_path = /obj/item/organ/external/robotic/one_star/r_arm
 
-/datum/design/research/item/mechfab/prosthesis_grayson/l_arm
+/datum/design/research/item/mechfab/prosthesis_similacrum/l_arm
 	build_path = /obj/item/organ/external/robotic/one_star/l_arm
 
-/datum/design/research/item/mechfab/prosthesis_grayson/r_leg
+/datum/design/research/item/mechfab/prosthesis_similacrum/r_leg
 	build_path = /obj/item/organ/external/robotic/one_star/r_leg
 
-/datum/design/research/item/mechfab/prosthesis_grayson/l_leg
+/datum/design/research/item/mechfab/prosthesis_similacrum/l_leg
 	build_path = /obj/item/organ/external/robotic/one_star/l_leg
 //Todo chest/lower and head?
 

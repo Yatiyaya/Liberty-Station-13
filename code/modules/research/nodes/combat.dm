@@ -100,7 +100,7 @@
 	tech_type = RESEARCH_COMBAT
 	icon = "abnegate"
 	required_technologies = list(/datum/technology/advanced_nonlethal)
-	required_tech_levels = list(RESEARCH_GREYSON = 3) //Likely people will get parts/cog/bots for this
+	required_tech_levels = list(RESEARCH_SIMILACRUM = 3) //Likely people will get parts/cog/bots for this
 	cost = 5625
 	unlocks_designs = list(/datum/design/research/item/similacrum/abnegate,
 						/datum/design/research/item/similacrum/humility,)
