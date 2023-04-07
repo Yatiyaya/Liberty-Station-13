@@ -156,16 +156,16 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	activate_mobs_in_range(owner, SANITY_MOB_DISTANCE_ACTIVATION)
 	if(sanity_invulnerability)//Sorry, but that needed to be added here :C
 		return
-	var/vig = owner.stats.getStat(STAT_VIG)
+	var/cog = owner.stats.getStat(STAT_COG)
 	for(var/atom/A in view(owner.client ? owner.client : owner))
 		if(A.sanity_damage) //If this thing is not nice to behold
-			. += SANITY_DAMAGE_VIEW(A.sanity_damage, vig, get_dist(owner, A))
+			. += SANITY_DAMAGE_VIEW(A.sanity_damage, cog, get_dist(owner, A))
 
 		if(owner.stats.getPerk(PERK_IDEALIST) && ishuman(A)) //Moralists react negatively to people in distress
 			var/mob/living/carbon/human/H = A
 			if(H.sanity.level < 30 || H.health < 50)
-				. += SANITY_DAMAGE_VIEW(0.1, vig, get_dist(owner, A))
-
+				. += SANITY_DAMAGE_VIEW(0.1, cog, get_dist(owner, A))
+// Hold yourself together. Keep your Morale up.
 
 /datum/sanity/proc/handle_area()
 	var/area/my_area = get_area(owner)
@@ -173,7 +173,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 		return 0
 	. = my_area.sanity.affect
 	if(. < 0)
-		. *= owner.stats.getStat(STAT_VIG) / STAT_LEVEL_MAX
+		. *= owner.stats.getStat(STAT_COG) / STAT_LEVEL_MAX //Mental state should matter more than your perception and agility
 
 /datum/sanity/proc/handle_breakdowns()
 	for(var/datum/breakdown/B in breakdowns)
@@ -187,7 +187,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 		for(var/mob/living/carbon/human/H in view(owner))
 			if(H.sanity.level > 60)
 				moralist_factor += 0.02
-	give_insight((INSIGHT_GAIN(level_change) * insight_passive_gain_multiplier * moralist_factor * life_tick_modifier * GLOB.GLOBAL_INSIGHT_MOD) * (owner.stats.getPerk(PERK_INSPIRED) ? 1.5 : 1) * (owner.stats.getPerk(PERK_NANOGATE) ? 0.4 : 1) * (owner.stats.getPerk(PERK_COGENHANCE) ? 1.1 : 1))
+	give_insight((INSIGHT_GAIN(level_change) * insight_passive_gain_multiplier * moralist_factor * life_tick_modifier * GLOB.GLOBAL_INSIGHT_MOD))
 	if(resting < max_resting && insight >= 100)
 		if(!rest_timer_active)//Prevent any exploits(timer is only active for one minute tops)
 			give_resting(1)
@@ -403,15 +403,15 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	owner.pick_individual_objective()
 
 /datum/sanity/proc/onDamage(amount)
-	changeLevel(-SANITY_DAMAGE_HURT(amount, owner.stats.getStat(STAT_VIG)))
+	changeLevel(-SANITY_DAMAGE_HURT(amount, owner.stats.getStat(STAT_COG)))
 
 /datum/sanity/proc/onPsyDamage(amount)
-	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_VIG)))
+	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_COG)))
 
 /datum/sanity/proc/onSeeDeath(mob/M)
 	var/mob/living/carbon/human/H
 	if(ishuman(H))
-		var/penalty = -SANITY_DAMAGE_DEATH(owner.stats.getStat(STAT_VIG))
+		var/penalty = -SANITY_DAMAGE_DEATH(owner.stats.getStat(STAT_COG))
 		if(owner.stats.getPerk(PERK_NIHILIST))
 			var/effect_prob = rand(1, 100)
 			switch(effect_prob)
@@ -423,13 +423,13 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 					penalty *= -1
 				if(75 to 100)
 					penalty *= 0
-		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && prob(100-owner.stats.getStat(STAT_VIG)))
+		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && prob(100-owner.stats.getStat(STAT_COG)))
 			setLevel(0)
 		else
 			changeLevel(penalty*death_view_multiplier)
 
 /datum/sanity/proc/onShock(amount)
-	changeLevel(-SANITY_DAMAGE_SHOCK(amount, owner.stats.getStat(STAT_VIG)))
+	changeLevel(-SANITY_DAMAGE_SHOCK(amount, owner.stats.getStat(STAT_COG)))
 
 /datum/sanity/proc/onAlcohol(datum/reagent/ethanol/E, multiplier)
 	changeLevel(E.sanity_gain_ingest * multiplier)
@@ -486,7 +486,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	for(var/obj/structure/sign/warning/smoking/undont in oview(owner, 7))
 		smoking_allowed = TRUE
 
-	if(smoking_no && !owner.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(smoking_no && !owner.stats.getPerk(PERK_CUBAN_DELIGHT))
 		smoking_message += 1
 		if(smoking_message >= 50)
 			to_chat(owner, "Smoking in a non-smoking zone does not rest my nerves!")

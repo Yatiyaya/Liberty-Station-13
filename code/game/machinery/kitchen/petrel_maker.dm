@@ -1,12 +1,12 @@
 //Now were cooking with gas!
 /obj/machinery/petrel_maker
-	name = "Greyson Petrol Pump"
-	desc = "A machine for petrol and refined scrap. Originally design by the Greyson Positronic's AI then given to the Artificer's Guild. \
+	name = "Similacrum Petrol Pump"
+	desc = "A machine for petrol and refined scrap. Originally design by the Similacrum Robotics's AI then given to the Terra-Therma Union. \
 	When enough plastic is stored inside, flip the switch on its side to produce a bottle of diesel, consuming a portion of stored plastic. \
 	Thanks to advanced blueprint designs by SI it can also take lumps of scrap to create refined scrap by simply adding them to the pump's storage."
 	description_info = "Try inserting a sandwich on it for a tasty (and very mechanically educational) snack."
 	icon = 'icons/obj/machines/petrel_maker.dmi'
-	icon_state = "diesel_greyson"
+	icon_state = "diesel_similacrum"
 	circuit = /obj/item/circuitboard/petrel_maker
 	var/petrel_form_plastic = 30 //25/5 = 5 so with grayson upgrades this is 29 sheets of plastic into 120 welder fuel.
 	var/stored_plastic = 0 //How much stored plastic we have
@@ -22,7 +22,7 @@
 	idle_power_usage = 120 //Some drain
 
 /obj/item/circuitboard/petrel_maker
-	build_name = "greyson petrol pump"
+	build_name = "similacrum petrol pump"
 	build_path = /obj/machinery/petrel_maker
 	origin_tech = list(TECH_DATA = 16, TECH_ENGINEERING = 8, TECH_POWER = 14)
 	board_type = "machine"

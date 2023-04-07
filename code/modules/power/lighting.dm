@@ -715,7 +715,7 @@
 	brightness_power = 4
 
 /obj/item/light/tube/power_saver
-	name = "Artificer \"Power Cord\" light tube"
+	name = "Union \"Power Cord\" light tube"
 	icon_state = "ltube"
 	base_state = "ltube"
 	item_state = "c_tube"
@@ -736,7 +736,7 @@
 	shatter()
 
 /obj/item/light/bulb/power_saver
-	name = "Artificer \"Power Cord\" light bulb"
+	name = "Union \"Power Cord\" light bulb"
 	icon_state = "ltube"
 	base_state = "ltube"
 	item_state = "c_tube"
@@ -744,7 +744,7 @@
 	brightness_power = 2
 
 /obj/item/light/bulb/spotlight
-	name = "Artificer \"Seer\" light bulb"
+	name = "Union \"Seer\" light bulb"
 	icon_state = "ltube"
 	base_state = "ltube"
 	item_state = "c_tube"

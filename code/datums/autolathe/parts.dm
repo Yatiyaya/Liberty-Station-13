@@ -174,30 +174,30 @@
 /datum/design/autolathe/prosthesis/excelsior/head
 	build_path = /obj/item/organ/external/robotic/excelsior/head
 
-//Greyson Positronics
+//Similacrum Positronics
 
-/datum/design/autolathe/part/greyson/ai
+/datum/design/autolathe/part/similacrum/ai
 	name = "nano-integrated AI"
 	build_path = /obj/item/tool_upgrade/augment/ai_tool
 
-/datum/design/autolathe/greyson/laser
-	name = "greyson positronic micro-laser"
+/datum/design/autolathe/similacrum/laser
+	name = "similacrum positronic micro-laser"
 	build_path = /obj/item/stock_parts/micro_laser/one_star
 
-/datum/design/autolathe/greyson/matter
-	name = "greyson positronic matter bin"
+/datum/design/autolathe/similacrum/matter
+	name = "similacrum positronic matter bin"
 	build_path = /obj/item/stock_parts/matter_bin/one_star
 
-/datum/design/autolathe/greyson/module
-	name = "greyson positronic scanning module"
+/datum/design/autolathe/similacrum/module
+	name = "similacrum positronic scanning module"
 	build_path = /obj/item/stock_parts/scanning_module/one_star
 
-/datum/design/autolathe/greyson/capacitor
-	name = "greyson positronic capacitor"
+/datum/design/autolathe/similacrum/capacitor
+	name = "similacrum positronic capacitor"
 	build_path = /obj/item/stock_parts/capacitor/one_star
 
-/datum/design/autolathe/greyson/manipulator
-	name = "greyson positronic manipulator"
+/datum/design/autolathe/similacrum/manipulator
+	name = "similacrum positronic manipulator"
 	build_path = /obj/item/stock_parts/manipulator/one_star
 
 /datum/design/autolathe/part/guild_capa
@@ -244,9 +244,11 @@
 	name = "firearm bakelite grip"
 	build_path = /obj/item/part/gun/grip/serb
 
+/*
 /datum/design/autolathe/part/grip/excel
 	name = "firearm excelsior spiked grip"
 	build_path = /obj/item/part/gun/grip/excel
+*/
 
 //Mechanisms
 /datum/design/autolathe/part/mechanism/pistol
@@ -286,10 +288,6 @@
 	name = "firearm 10mm pistol barrel"
 	build_path = /obj/item/part/gun/barrel/magnum
 
-/datum/design/autolathe/part/barrel/kurtz
-	name = "firearm 12mm pistol barrel"
-	build_path = /obj/item/part/gun/barrel/kurtz
-
 /datum/design/autolathe/part/barrel/carbine
 	name = "firearm 6.5mm carbine barrel"
 	build_path = /obj/item/part/gun/barrel/srifle
@@ -301,10 +299,6 @@
 /datum/design/autolathe/part/barrel/caseless
 	name = "firearm caseless rifle barrel"
 	build_path = /obj/item/part/gun/barrel/clrifle
-
-/datum/design/autolathe/part/barrel/heavy
-	name = "firearm 8.6mm heavy rifle barrel"
-	build_path = /obj/item/part/gun/barrel/hrifle
 
 /datum/design/autolathe/part/barrel/shotgun
 	name = "firearm 20mm shotgun barrel"

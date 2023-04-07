@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/reinforced/engineering_chief
-	name = "guild master's locker"
+	name = "union chief's locker"
 	req_access = list(access_ce)
 	icon_state = "ce"
 
@@ -9,7 +9,7 @@
 	else
 		new /obj/item/storage/backpack/satchel/industrial(src)
 	new /obj/item/blueprints(src)
-	new /obj/item/clothing/under/rank/exultant(src)
+	new /obj/item/clothing/under/rank/chief(src)
 	new /obj/item/clothing/head/firefighter/chief(src)
 	new /obj/item/clothing/head/welding(src)
 	new /obj/item/clothing/gloves/insulated(src)
@@ -18,7 +18,7 @@
 	new /obj/item/device/radio/headset/heads/ce(src)
 	new /obj/item/storage/toolbox/mechanical(src)
 	new /obj/item/clothing/suit/storage/hazardvest(src)
-	new /obj/item/clothing/mask/gas/artificer(src)
+	new /obj/item/clothing/mask/gas/Union(src)
 	new /obj/item/tool/multitool(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/taperoll/engineering(src)
@@ -84,7 +84,7 @@
 	new /obj/item/storage/hcases/engi(src)
 
 /obj/structure/closet/secure_closet/personal/engineering_personal
-	name = "guild adept's locker"
+	name = "mechanical engineer's locker"
 	req_access = list(access_ce)
 	access_occupy = list(access_engine_equip)
 	icon_state = "eng"
@@ -102,7 +102,7 @@
 	new /obj/item/clothing/gloves/insulated(src)
 	new /obj/item/device/radio/headset/headset_eng(src)
 	new /obj/item/clothing/suit/storage/hazardvest(src)
-	new /obj/item/clothing/mask/gas/artificer(src)
+	new /obj/item/clothing/mask/gas/Union(src)
 	new /obj/item/clothing/glasses/powered/meson(src)
 	new /obj/item/device/t_scanner/advanced(src)
 	new /obj/item/storage/hcases/parts(src)

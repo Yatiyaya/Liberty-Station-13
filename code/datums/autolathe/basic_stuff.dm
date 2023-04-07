@@ -51,7 +51,7 @@
 	build_path = /obj/item/light/tube/large
 
 /datum/design/autolathe/misc/tube_powersaver
-	name = "Artificer \"Power Cord\" light tube"
+	name = "Union \"Power Cord\" light tube"
 	build_path = /obj/item/light/tube/power_saver
 
 /datum/design/autolathe/misc/bulb
@@ -59,11 +59,11 @@
 	build_path = /obj/item/light/bulb
 
 /datum/design/autolathe/misc/bulb_powersaver
-	name = "Artificer \"Power Cord\" light bulb"
+	name = "Union \"Power Cord\" light bulb"
 	build_path = /obj/item/light/bulb/power_saver
 
 /datum/design/autolathe/misc/bulb_spot
-	name = "Artificer \"Seer\" light bulb"
+	name = "Union \"Seer\" light bulb"
 	build_path = /obj/item/light/bulb/spotlight
 
 /datum/design/autolathe/misc/trashbag

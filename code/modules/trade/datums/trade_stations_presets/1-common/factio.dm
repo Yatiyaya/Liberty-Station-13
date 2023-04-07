@@ -13,7 +13,7 @@
 	wealth = 0
 	hidden_inv_threshold = 1000
 	recommendation_threshold = 3000
-	stations_recommended = list("greyson")
+	stations_recommended = list("similacrum")
 	regain_stock = FALSE
 	inventory = list(
 		"Disk Designs" = list(
@@ -56,10 +56,10 @@
 
 	hidden_inventory = list(
 		"Disk II" = list(
-			/obj/item/computer_hardware/hard_drive/portable/design/components = custom_good_nameprice("Artificer's ARK-034 Components", list(800, 1000)),
-			/obj/item/computer_hardware/hard_drive/portable/design/adv_tools = custom_good_nameprice("Artificer's IJIRO-451 Advanced Tools", list(800, 1000)),
-			/obj/item/computer_hardware/hard_drive/portable/design/circuits = custom_good_nameprice("Artificer's ESPO-830 Circuits", list(800, 1000)),
-			/obj/item/computer_hardware/hard_drive/portable/design/logistics = custom_good_nameprice("Artificer's LAT-018 Logistics", list(800, 1000)),
+			/obj/item/computer_hardware/hard_drive/portable/design/components = custom_good_nameprice("Union's ARK-034 Components", list(800, 1000)),
+			/obj/item/computer_hardware/hard_drive/portable/design/adv_tools = custom_good_nameprice("Union's IJIRO-451 Advanced Tools", list(800, 1000)),
+			/obj/item/computer_hardware/hard_drive/portable/design/circuits = custom_good_nameprice("Union's ESPO-830 Circuits", list(800, 1000)),
+			/obj/item/computer_hardware/hard_drive/portable/design/logistics = custom_good_nameprice("Union's LAT-018 Logistics", list(800, 1000)),
 			/obj/item/computer_hardware/hard_drive/portable/design/exotic_ammo = good_data("Exotic Ammo Disk", list(800, 1000), 700)
 		),
 		"Printed II" = list(

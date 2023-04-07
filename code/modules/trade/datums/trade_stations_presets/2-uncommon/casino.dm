@@ -10,7 +10,7 @@
 	wealth = 0
 	hidden_inv_threshold = 1000
 	recommendation_threshold = 4000
-	stations_recommended = list("illegal1", "greyson")
+	stations_recommended = list("illegal1", "similacrum")
 	recommendations_needed = 1
 	inventory = list(
 		"Assorted Goods" = list(

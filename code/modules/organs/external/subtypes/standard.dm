@@ -25,7 +25,7 @@
 		if(amount > 40)
 			if(damage_type == BRUTE && prob(50))
 				disfigure("brute")
-		else
+		else if(amount > 15) //If you take 15 damage in the head you get melty
 			if (damage_type == BURN)
 				disfigure("burn")
 

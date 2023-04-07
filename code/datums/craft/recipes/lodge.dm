@@ -66,24 +66,6 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 */
-/datum/craft_recipe/lodge/hunter_crossbow
-	name = "Lodge Hunting Crossbow"
-	result = /obj/item/gun/projectile/shotgun/pump/hunter_crossbow
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTIC, "time" = 20),
-		list(/obj/item/tool_upgrade/augment/cell_mount, 1, "time" = 20),
-		list(/obj/item/cell/large, 1, "time" = 20),
-		list(/obj/item/tool_upgrade/augment/hydraulic, 1, "time" = 20),
-		list(/obj/item/stack/cable_coil, 10, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 30, 30),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_HAMMERING, 30, "time" = 40),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 60),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
-	)
 
 /datum/craft_recipe/lodge/recurve_bow
 	name = "Recurve Bow"

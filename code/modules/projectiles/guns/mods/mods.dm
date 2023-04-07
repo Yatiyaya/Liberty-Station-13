@@ -52,6 +52,25 @@
 	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.prefix = "LTL"
 
+//Silences the weapon, reduces damage multiplier slightly, Legacy port.
+/obj/item/gun_upgrade/muzzle/pepper_spray
+	name = "SD Hot Box"
+	desc = "A threaded chemical box that coats bullets as they fly out of the barrel, produced by Seinemetall Defense GmbH."
+	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	icon_state = "silencer"
+	price_tag = 100
+
+/obj/item/gun_upgrade/muzzle/pepper_spray/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_CHEM = TRUE,
+		GUN_UPGRADE_CHEMICAL = "condensedcapsaicin",
+		UPGRADE_BULK = 1
+		)
+	I.gun_loc_tag = GUN_MUZZLE
+	I.req_gun_tags = list(GUN_SILENCABLE)
+	I.prefix = "spiced"
 
 //Decreases fire delay. Acquired through loot spawns or guild crafting
 /obj/item/gun_upgrade/barrel/forged
@@ -206,7 +225,7 @@
 //Disables the ability to toggle the safety, toggles the safety permanently off, decreases fire delay. Acquired through loot spawns
 /obj/item/gun_upgrade/trigger/dangerzone
 	name = "\"Danger Zone\" Trigger"
-	desc = "A popular design by the Artificer's Guild used on the frontier by mercenary groups who don't care about collateral, overclocking the firing mechanism by disabling the safety function. A void wolf staple."
+	desc = "A popular design by the Terra-Therma Union used on the frontier by mercenary groups who don't care about collateral, overclocking the firing mechanism by disabling the safety function. A void wolf staple."
 	icon_state = "Danger_Zone"
 	price_tag = 115
 
@@ -265,7 +284,7 @@
 //Adds +3 to the internal magazine of a weapon. Acquired through loot spawns.
 /obj/item/gun_upgrade/mechanism/overshooter
 	name = "\"Overshooter\" internal magazine kit"
-	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. An Artificer's Guild favorite for revolvers and shotguns."
+	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. An Terra-Therma Union favorite for revolvers and shotguns."
 	icon_state = "Overshooter"
 	price_tag = 230
 
@@ -283,10 +302,10 @@
 /* //This mod works fine but if a bullet hits an object it run times, my theory is its trying to make an effect work via rads that isn't coded properly either by ERIS or my bad porting.
 //For now this has been modified to not use rad damage since that has issues.
 */
-//Adds extra burns and toxin damage to 9mm rounds. Acquired through raiding greyson machines or heavy SI investment.
+//Adds extra burns and toxin damage to 9mm rounds. Acquired through raiding similacrum machines or heavy SI investment.
 /obj/item/gun_upgrade/mechanism/glass_widow
-	name = "Greyson \"Glass Widow\" infuser"
-	desc = "An old technology from the Greyson's glory days, used to make formerly useless civilian-grade weaponry into something much more lethal. This mechanism fits 9mm weapons only and coats the bullets in dangerous caustic toxins."
+	name = "Similacrum \"Glass Widow\" infuser"
+	desc = "An old technology from the Similacrum's glory days, used to make formerly useless civilian-grade weaponry into something much more lethal. This mechanism fits 9mm weapons only and coats the bullets in dangerous caustic toxins."
 	icon_state = "Glass_Widow"
 	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 800
@@ -299,14 +318,15 @@
 		GUN_UPGRADE_DAMAGE_TOX = 10,
 		UPGRADE_BULK = 1
 		)
-	I.req_gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM)
+	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "infused"
 
+/*
 // Guild made upgrade kit that makes 12mm guns a bit more viable
 /obj/item/gun_upgrade/mechanism/upgrade_kit
 	name = "Kurtz's refinement kit"
-	desc = "A kit made of plasteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Artificer's Guild so even \
+	desc = "A kit made of plasteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Terra-Therma Union so even \
 	the heaviest caliber pistols might stand a chance of competing with their legendary myrmidon design."
 	icon_state = "kit_heavy_alt"
 	can_remove = FALSE
@@ -352,6 +372,7 @@
 	I.req_gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_12MM)
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "brass kitted"
+*/
 
 //Lets any revolver be made into a fully automatic weapon, but increases recoil. Acquirable through guild crafters.
 /obj/item/gun_upgrade/mechanism/weintraub
@@ -588,14 +609,14 @@
 	I.unique_removal = TRUE
 	I.unique_removal_type = GUN_SCOPE
 */
-/obj/item/gun_upgrade/mechanism/greyson_master_catalyst
-	name = "Greyson \"Master Unmaker\" infuser"
-	desc = "One of the rarest and most powerful weapon modifications ever made by Greyson Positronics and one of the numerous reasons they remain a threat even after the company collapsed into malfunctioning artificial intelligences. It can infuse any weapon with immense power that causes utter ruin to machine and organic matter alike."
+/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst
+	name = "Similacrum \"Master Unmaker\" infuser"
+	desc = "One of the rarest and most powerful weapon modifications ever made by Similacrum Positronics and one of the numerous reasons they remain a threat even after the company collapsed into malfunctioning artificial intelligences. It can infuse any weapon with immense power that causes utter ruin to machine and organic matter alike."
 	icon_state = "psionic_catalyst"
 	matter = list(MATERIAL_PLATINUM = 5, MATERIAL_PLASTEEL = 3, MATERIAL_DIAMOND = 10)
 	price_tag = 4500
 
-/obj/item/gun_upgrade/mechanism/greyson_master_catalyst/New()
+/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst/New()
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
@@ -613,7 +634,7 @@
 	I.gun_loc_tag = GUN_MECHANISM
 	I.req_fuel_cell = REQ_CELL
 	I.prefix = "catalytic"
-	I.greyson_moding = TRUE
+	I.similacrum_moding = TRUE
 
 /obj/item/gun_upgrade/barrel/gauss
 	name = "Void Wolf \"Gauss Coil\" barrel"
@@ -658,8 +679,8 @@
 //	bad_type = /obj/item/gun_upgrade/scope
 
 /obj/item/gun_upgrade/scope/watchman
-	name = "Artificer's Guild \"Watchman\" scope"
-	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Artificer's Guild are known across the entire Solarian Federation for the quality they have and this one is no different."
+	name = "Terra-Therma Union \"Watchman\" scope"
+	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Terra-Therma Union are known across the entire Solarian Federation for the quality they have and this one is no different."
 	icon_state = "Watchman"
 	matter = list(MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 1)
 	price_tag = 40

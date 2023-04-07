@@ -235,103 +235,103 @@
 
 ////SYNTHETIC////
 //Soteria
-/datum/organ_description/chest/soteria_synthetic
+/datum/organ_description/chest/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
 
 
-/datum/organ_description/groin/soteria_synthetic
+/datum/organ_description/groin/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
-/datum/organ_description/head/soteria_synthetic
+/datum/organ_description/head/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 	functions = null
 
-/datum/organ_description/arm/left/soteria_synthetic
+/datum/organ_description/arm/left/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
-/datum/organ_description/arm/right/soteria_synthetic
+/datum/organ_description/arm/right/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
-/datum/organ_description/leg/left/soteria_synthetic
+/datum/organ_description/leg/left/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
-/datum/organ_description/leg/right/soteria_synthetic
+/datum/organ_description/leg/right/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
 //"Full" Body part descriptions. Allows icons to overlay on hands & feet correctly.
-/datum/organ_description/arm/left/soteria_synthetic/full
+/datum/organ_description/arm/left/capsa_synthetic/full
 	additional_limb_parts = BP_L_ARM_EXTRA
-/datum/organ_description/arm/right/soteria_synthetic/full
+/datum/organ_description/arm/right/capsa_synthetic/full
 	additional_limb_parts = BP_R_ARM_EXTRA
-/datum/organ_description/leg/left/soteria_synthetic/full
+/datum/organ_description/leg/left/capsa_synthetic/full
 	additional_limb_parts = BP_L_LEG_EXTRA
-/datum/organ_description/leg/right/soteria_synthetic/full
+/datum/organ_description/leg/right/capsa_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
-//Artificer
-/datum/organ_description/chest/artificer_guild_synthetic
+//Union
+/datum/organ_description/chest/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
-/datum/organ_description/groin/artificer_guild_synthetic
+/datum/organ_description/groin/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
-/datum/organ_description/head/artificer_guild_synthetic
+/datum/organ_description/head/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 	functions = null
 
-/datum/organ_description/arm/left/artificer_guild_synthetic
+/datum/organ_description/arm/left/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
-/datum/organ_description/arm/right/artificer_guild_synthetic
+/datum/organ_description/arm/right/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
-/datum/organ_description/leg/left/artificer_guild_synthetic
+/datum/organ_description/leg/left/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
-/datum/organ_description/leg/right/artificer_guild_synthetic
+/datum/organ_description/leg/right/terra_therma_synthetic
 	default_type = /obj/item/organ/external/robotic/technomancer
 
 
-/datum/organ_description/arm/left/artificer_guild_synthetic/full
+/datum/organ_description/arm/left/terra_therma_synthetic/full
 	additional_limb_parts = BP_L_ARM_EXTRA
-/datum/organ_description/arm/right/artificer_guild_synthetic/full
+/datum/organ_description/arm/right/terra_therma_synthetic/full
 	additional_limb_parts = BP_R_ARM_EXTRA
-/datum/organ_description/leg/left/artificer_guild_synthetic/full
+/datum/organ_description/leg/left/terra_therma_synthetic/full
 	additional_limb_parts = BP_L_LEG_EXTRA
-/datum/organ_description/leg/right/artificer_guild_synthetic/full
+/datum/organ_description/leg/right/terra_therma_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
 //Blackshield
-/datum/organ_description/chest/blackshield_synthetic
+/datum/organ_description/chest/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/groin/blackshield_synthetic
+/datum/organ_description/groin/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/head/blackshield_synthetic
+/datum/organ_description/head/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 	functions = null
 
-/datum/organ_description/arm/left/blackshield_synthetic
+/datum/organ_description/arm/left/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/arm/right/blackshield_synthetic
+/datum/organ_description/arm/right/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/leg/left/blackshield_synthetic
+/datum/organ_description/leg/left/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/leg/right/blackshield_synthetic
+/datum/organ_description/leg/right/liberty_synthetic
 	default_type = /obj/item/organ/external/robotic/blackshield
 
-/datum/organ_description/arm/left/blackshield_synthetic/full
+/datum/organ_description/arm/left/liberty_synthetic/full
 	additional_limb_parts = BP_L_ARM_EXTRA
-/datum/organ_description/arm/right/blackshield_synthetic/full
+/datum/organ_description/arm/right/liberty_synthetic/full
 	additional_limb_parts = BP_R_ARM_EXTRA
-/datum/organ_description/leg/left/blackshield_synthetic/full
+/datum/organ_description/leg/left/liberty_synthetic/full
 	additional_limb_parts = BP_L_LEG_EXTRA
-/datum/organ_description/leg/right/blackshield_synthetic/full
+/datum/organ_description/leg/right/liberty_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
 // Church

@@ -45,11 +45,6 @@
 	item_cost = 3
 	path = /obj/item/ammo_magazine/rifle_75/highvelocity
 
-/datum/uplink_item/item/ammo/hrifle
-	name = "8.6mm Heavy Rifle SLAP Mag"
-	item_cost = 3
-	path = /obj/item/ammo_magazine/heavy_rifle_408/hv
-
 /datum/uplink_item/item/ammo/m12
 	name = "M12 shotgun mag with slugs"
 	item_cost = 2

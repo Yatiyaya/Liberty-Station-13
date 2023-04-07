@@ -7,18 +7,30 @@
 	it detects in the body, which can be harmful when combined with fast-acting genetic modifications."
 	gain_text = "Your head aches for a moment, the effects of your spine having been seperated and an advanced machine slotted inbetween leaving you with a dull pain that is quickly cured \
 	by your nanites."
+	icon_state = "circuitry"
+
+/datum/perk/nanogate/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.insight_passive_gain_multiplier *= 0.4
+
+/datum/perk/nanogate/remove()
+	if(holder)
+		holder.sanity.insight_passive_gain_multiplier /= 1
+	..()
 
 /datum/perk/nanite_regen
 	name = "Nanite Regeneration"
 	desc = "You configure your nanite matrix to begin aiding in your natural healing."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
 	var/regen_rate = 0.5 //This seems low but this is per human handle_chemicals_in_body meaning this is rather robust
+	icon_state = "circuitry"
 
 /datum/perk/nanite_muscle
 	name = "Nanofiber Muscle Therapy"
 	desc = "Through the use of pain killers, implanted nanofibers, and small dispersed drug therapy to critical areas your nanogate has enhanced your physical movement speed and endurance, allowing you to run for \
 	longer stretches at a faster pace without tiring. Though you feel that all this strain might make your slightly weaker to physical trauma."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
+	icon_state = "circuitry"
 
 /datum/perk/nanite_muscle/assign(mob/living/carbon/human/H)
 	..()
@@ -33,6 +45,7 @@
 	desc = "Through the use of reactive nanites designed to plate together into a shield your machines can reform at a lightning pace to let you physically resist incoming damage by forming a \
 	mesh weave shield just before a strike connects."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
+	icon_state = "circuitry"
 
 /datum/perk/nanite_armor/assign(mob/living/carbon/human/H)
 	..()
@@ -48,11 +61,13 @@
 	name = "Nanite Metal Drinker"
 	desc = "Allows the user to drink metals (like Gold/Silver/Iron/Potassium and more) to regain nutrition."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
+	icon_state = "circuitry"
 
 /datum/perk/nanite_chem
 	name = "Nanite Chemicals"
 	desc = "You programmed and set aside a specific subset of nanites who have a singular purpose that you can call upon at any time to engage their effect, but this only works once."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
+	icon_state = "circuitry"
 	active = FALSE
 	passivePerk = FALSE
 	var/chem_id = "nanites"
@@ -72,36 +87,45 @@
 /datum/perk/nanite_chem/implantoids
 	name = "Implantoids Nanites"
 	chem_id = "implant nanites"
+	icon_state = "medicine"
 
 /datum/perk/nanite_chem/trauma_control_system
 	name = "Trauma Control System Nanites"
 	chem_id = "trauma_control_system"
+	icon_state = "medicine"
 
 /datum/perk/nanite_chem/control_booster_utility
 	name = "Control Booster Utility Nanites"
 	chem_id = "cbu"
+	icon_state = "medicine"
+
 
 /datum/perk/nanite_chem/control_booster_combat
 	name = "Control Booster Combat Nanites"
 	chem_id = "cbc"
+	icon_state = "medicine"
 
 /datum/perk/nanite_chem/purgers
 	name = "Purger Nanites"
 	chem_id = "nanopurgers"
+	icon_state = "medicine"
 
 /datum/perk/nanite_chem/oxyrush
 	name = "Oxyrush Nanites"
 	chem_id = "oxyrush"
+	icon_state = "medicine"
 
 /datum/perk/nanite_chem/nantidotes
 	name = "Nantidotes"
 	chem_id = "nantidotes"
+	icon_state = "medicine"
 
 /datum/perk/nanite_ammo
 	name = "Munition Fabrication"
 	desc = "You programmed and set aside a specific subset of nanites whose singular purpose is to reconstruct themselves into ammunition boxes. The process is quite intensive and requires \
 	half an hour between uses."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
+	icon_state = "circuitry"
 	active = FALSE
 	passivePerk = FALSE
 	var/cooldown = 30 MINUTES
@@ -138,15 +162,8 @@
 						/obj/item/ammo_magazine/ammobox/rifle_75/hv,
 						/obj/item/ammo_magazine/ammobox/rifle_75_small/hv,
 						/obj/item/ammo_magazine/ammobox/rifle_75_small/scrap,
-						/obj/item/ammo_magazine/ammobox/kurtz_50/hv,
-						/obj/item/ammo_magazine/ammobox/kurtz_50/laser,
 						/obj/item/ammo_magazine/ammobox/antim, //Unlike the small box holds 15
 						/obj/item/ammo_magazine/ammobox/antim/scrap,
-//						/obj/item/ammo_magazine/ammobox/ball,
-						/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/laser,
-						/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/hv,
-						/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap,
-						/obj/item/ammo_magazine/ammobox/heavy_rifle_408/hv,
 						/obj/item/ammo_magazine/ammobox/shotgun/flashshells, //holds 70 shells, its a map item not meant to be common
 						/obj/item/ammo_magazine/ammobox/shotgun/payload,
 						/obj/item/ammo_magazine/ammobox/shotgun/incendiary,

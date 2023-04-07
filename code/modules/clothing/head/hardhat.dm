@@ -1,6 +1,6 @@
 /obj/item/clothing/head/hardhat
 	name = "hard hat"
-	desc = "Headgear for dangerous working conditions. This one is an Artificer's standard yellow design with a built-in light."
+	desc = "Headgear for dangerous working conditions. This one is an Union's standard yellow design with a built-in light."
 	icon_state = "hardhat-y"
 	item_state = "hardhat-y"
 	action_button_name = "Toggle Headlamp"
@@ -23,7 +23,7 @@
 
 /obj/item/clothing/head/hardhat/yellow
 	name = "yellow hardhat"
-	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Artificer's yellow."
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
 	icon_state = "hardhat-y"
 	item_state = "hardhat-y"
 
@@ -46,7 +46,7 @@
 	item_state = "hardhat-b"
 
 /obj/item/clothing/head/firefighter/chief
-	name = "guild master helmet"
+	name = "Union Chief helmet"
 	desc = "A pure white fire resistant hard hat with a powerful headlight and built in nuclear cell. The best utility helmet the guild has."
 	icon_state = "hardhat_white"
 	item_flags = STOPPRESSUREDAMAGE

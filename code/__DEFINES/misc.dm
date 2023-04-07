@@ -25,16 +25,6 @@
 #define SEE_INVISIBLE_MINIMUM 5
 #define INVISIBILITY_MAXIMUM 100
 
-// MultiZAS directions.
-#define NORTHUP (NORTH|UP)
-#define EASTUP (EAST|UP)
-#define SOUTHUP (SOUTH|UP)
-#define WESTUP (WEST|UP)
-#define NORTHDOWN (NORTH|DOWN)
-#define EASTDOWN (EAST|DOWN)
-#define SOUTHDOWN (SOUTH|DOWN)
-#define WESTDOWN (WEST|DOWN)
-
 // Stat modifier defines
 #define MELEE_STATTAG (1<<1)
 #define RANGED_STATTAG (1<<2)
@@ -196,7 +186,7 @@
 #define TOGGLE_BOTTOM_FLAG 4 //0100
 
 // Default name for announcement system
-#define ANNOUNCER_NAME "Nadezhda Colony System Announcer"
+#define ANNOUNCER_NAME "Liberty Colony System Announcer"
 
 
 #define LIST_OF_CONSONANT list("a", "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z", "á", "â", "ã", "ä", "æ", "ç", "é", "ê", "ë", "ì", "í", "ï", "ð", "ñ", "ò", "ô", "õ", "ö", "÷", "ø", "ù")

@@ -12,17 +12,14 @@
 		//pistol mags
 		/datum/design/autolathe/ammo/pistol_rubber,
 		/datum/design/autolathe/ammo/magnum_rubber,
-		/datum/design/autolathe/ammo/kurtz_rubber,
 		//speed loaders
 		/datum/design/autolathe/ammo/slpistol_rubber,
 		/datum/design/autolathe/ammo/slmagnum_rubber,
-		/datum/design/autolathe/ammo/slkurtz_rubber,
 		//smg mags
 		/datum/design/autolathe/ammo/smg_rubber,
 		// rifles
 		/datum/design/autolathe/ammo/lrifle_short_rubber,
 		/datum/design/autolathe/ammo/rifle_short_rubber,
-		/datum/design/autolathe/ammo/hrifle_rubber,
 		//shells
 		/datum/design/autolathe/ammo/shotgun_blanks = 0,
 		/datum/design/autolathe/ammo/shotgun_beanbag,
@@ -40,18 +37,14 @@
 		/datum/design/autolathe/ammo/pistol_lethal,
 		/datum/design/autolathe/ammo/magnum,
 		/datum/design/autolathe/ammo/magnum_lethal,
-		/datum/design/autolathe/ammo/kurtz_lethal,
 		//speed loaders
 		/datum/design/autolathe/ammo/slpistol,
 		/datum/design/autolathe/ammo/slpistol_lethal,
 		/datum/design/autolathe/ammo/slmagnum,
 		/datum/design/autolathe/ammo/slmagnum_lethal,
-		/datum/design/autolathe/ammo/slkurtz,
-		/datum/design/autolathe/ammo/slkurtz_lethal,
 		//smg mags
 		/datum/design/autolathe/ammo/smg,
 		/datum/design/autolathe/ammo/smg_lethal,
-		/datum/design/autolathe/ammo/mag_10x24, // The specific model of the Spec Ops.
 		// rifles
 		/datum/design/autolathe/ammo/lrifle,
 		/datum/design/autolathe/ammo/lrifle_short,
@@ -60,8 +53,6 @@
 		/datum/design/autolathe/ammo/rifle_short,
 		/datum/design/autolathe/ammo/rifle_lethal,
 		/datum/design/autolathe/ammo/rifle_short_lethal,
-		/datum/design/autolathe/ammo/hrifle,
-		/datum/design/autolathe/ammo/hrifle_lethal,
 		//shells
 		/datum/design/autolathe/ammo/shotgun_pellet,
 		/datum/design/autolathe/ammo/shotgun,
@@ -84,10 +75,6 @@
 		/datum/design/autolathe/ammo/magnum_ammobox_practice = 0,
 		/datum/design/autolathe/ammo/magnum_ammobox_rubber,
 		/datum/design/autolathe/ammo/magnum_ammobox_lethal,
-		/datum/design/autolathe/ammo/kurtz_ammobox,
-		/datum/design/autolathe/ammo/kurtz_ammobox_practice = 0,
-		/datum/design/autolathe/ammo/kurtz_ammobox_rubber,
-		/datum/design/autolathe/ammo/kurtz_ammobox_lethal,
 		/datum/design/autolathe/container/ammocan_serb,
 	)
 
@@ -107,12 +94,6 @@
 		/datum/design/autolathe/ammo/lrifle_ammobox_small_rubber,
 		/datum/design/autolathe/ammo/lrifle_ammobox_small_lethal,
 		/datum/design/autolathe/ammo/lrifle_ammobox,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_practice = 0,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_rubber,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_lethal,
-		/datum/design/autolathe/ammo/hrifle_ammobox,
-		/datum/design/autolathe/ammo/box_10x24_small = 2, // Small version moved here for Ranger ease of access, double the cost as the spec ops disk as it has double the points
 		/datum/design/autolathe/ammo/shotgun_box = 5, //35 x 4 (140 shells while a full disk of 5 x 20 = 100)
 		/datum/design/autolathe/ammo/shotgun_pellet_box = 5,
 		/datum/design/autolathe/container/ammocan_serb,
@@ -128,19 +109,15 @@
 		/datum/design/autolathe/ammo/shotgun_speedloader_empty= 0,
 		/datum/design/autolathe/ammo/sbaw_empty = 0,
 		/datum/design/autolathe/ammo/m12empty = 0,
-		/datum/design/autolathe/ammo/hrifle_drum_empty = 0,
 		/datum/design/autolathe/ammo/rifle_pk_empty = 0,
 		/datum/design/autolathe/ammo/lrifle_belt_empty = 0,
-		/datum/design/autolathe/ammo/hrifle_ammobox_linked_empty = 0,
 		/datum/design/autolathe/ammo/maxim_empty = 0,
-		/datum/design/autolathe/ammo/c10x24 = 3,
+		/datum/design/autolathe/ammo/cl7mm = 3,
 		/datum/design/autolathe/ammo/lrifle_ammobox,
 		/datum/design/autolathe/ammo/rifle_ammobox,
-		/datum/design/autolathe/ammo/hrifle_ammobox,
 		/datum/design/autolathe/ammo/shotgun_box = 3, //35 x 6 (210 shells well a full disk of 5 x 20 = 100)
 		/datum/design/autolathe/ammo/shotgun_pellet_box = 3,
-		/datum/design/autolathe/ammo/mag_10x24 = 1,
-		/datum/design/autolathe/ammo/box_10x24 = 5,
+		/datum/design/autolathe/ammo/clbox_7mm = 5,
 		/datum/design/autolathe/ammo/box_antim = 5,
 		/datum/design/autolathe/container/ammocan_serb = 0,
 		/datum/design/autolathe/ammo/lrifle_drum = 2,
@@ -155,13 +132,13 @@
 // 9mm PISTOLS + REVOLVERS
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/cheap_guns
-	disk_name = "H&S - 9mm Economy Pack"
+	disk_name = "LG - 9mm Economy Pack"
 	icon_state = "frozenstar"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/giskard = 2,
-		/datum/design/autolathe/gun/olivaw = 2,
+		/datum/design/autolathe/gun/liberty = 2,
+		/datum/design/autolathe/gun/clarissa,
 		/datum/design/autolathe/gun/detective,
 		/datum/design/autolathe/ammo/pistol_practice = 0,
 		/datum/design/autolathe/ammo/pistol_rubber,
@@ -174,60 +151,85 @@
 		/datum/design/autolathe/container/ammocan_serb,
 		)
 
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/colt
-	disk_name = "H&S - 9mm M1911"
-	icon_state = "ironhammer"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/detective
+	disk_name = "Car-Van - 9mm Pocket Prince"
+	icon_state = "frozenstar"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/colt = 3,
+		/datum/design/autolathe/gun/detective,
+		/datum/design/autolathe/ammo/slpistol_practice = 0,
+		/datum/design/autolathe/ammo/slpistol_rubber,
+		/datum/design/autolathe/ammo/slpistol,
+		/datum/design/autolathe/ammo/slpistol_lethal = 2
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/liberty
+	disk_name = "LG - 9mm Liberty pistol"
+	icon_state = "frozenstar"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/liberty = 2,
 		/datum/design/autolathe/ammo/pistol_practice = 0,
 		/datum/design/autolathe/ammo/pistol_rubber,
-		/datum/design/autolathe/ammo/pistol,
-		/datum/design/autolathe/ammo/pistol_lethal = 2,
 		/datum/design/autolathe/ammo/hpistol_practice = 1,
 		/datum/design/autolathe/ammo/hpistol_rubber = 2,
 		/datum/design/autolathe/ammo/hpistol = 2,
 		/datum/design/autolathe/ammo/hpistol_lethal = 2,
-	)
+		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/glock
-	disk_name = "Seinemetall Defense GmbH - 9mm Sky Auto Pistol"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/stinger
+	disk_name = "LG - 9mm Stinger pistol"
 	icon_state = "frozenstar"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/glock = 3,
-		/datum/design/autolathe/ammo/hpistol_practice = 0,
-		/datum/design/autolathe/ammo/hpistol_rubber,
-		/datum/design/autolathe/ammo/hpistol,
+		/datum/design/autolathe/gun/stinger = 2,
+		/datum/design/autolathe/ammo/pistol_practice = 0,
+		/datum/design/autolathe/ammo/pistol_rubber,
+		/datum/design/autolathe/ammo/hpistol_practice = 1,
+		/datum/design/autolathe/ammo/hpistol_rubber = 2,
+		/datum/design/autolathe/ammo/hpistol = 2,
 		/datum/design/autolathe/ammo/hpistol_lethal = 2,
-	)
+		)
 
+/obj/item/computer_hardware/hard_drive/portable/design/guns/makarov
+	disk_name = "Car-Van - 9mm Makarov pistol"
+	icon_state = "frozenstar"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/makarov = 2,
+		/datum/design/autolathe/ammo/pistol_practice = 0,
+		/datum/design/autolathe/ammo/pistol_rubber,
+		/datum/design/autolathe/ammo/hpistol_practice = 1,
+		/datum/design/autolathe/ammo/hpistol_rubber = 2,
+		/datum/design/autolathe/ammo/hpistol = 2,
+		/datum/design/autolathe/ammo/hpistol_lethal = 2,
+		)
 
 // 10mm REVOLVERS
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/revolver
-	disk_name = "H&S - 10mm Minotaur Revolver"
+	disk_name = "Car-Van - 10mm Frontier Revolver"
 	icon_state = "frozenstar"
-
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/revolver = 3,
+		/datum/design/autolathe/gun/frontier = 3,
 		/datum/design/autolathe/ammo/slmagnum_practice = 0,
 		/datum/design/autolathe/ammo/slmagnum_rubber,
 		/datum/design/autolathe/ammo/slmagnum,
 		/datum/design/autolathe/ammo/slmagnum_lethal = 2,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/rev10
-	disk_name = "H&S - 10mm Frontier Revolver"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/frontier
+	disk_name = "ML - 10mm Frontier Revolver"
 	icon_state = "ironhammer"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/rev10 = 3,
+		/datum/design/autolathe/gun/ranger = 3,
 		/datum/design/autolathe/ammo/slmagnum_practice = 0,
 		/datum/design/autolathe/ammo/slmagnum_rubber,
 		/datum/design/autolathe/ammo/slmagnum,
@@ -236,66 +238,66 @@
 
 // 10mm pistols
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ladon/dark
-	disk_name = "Seinemetall Defense GmbH - 10mm Auto-Mag Ladon Handgun"
-	icon_state = "onestar"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/colt
+	disk_name = "ML - 10mm M1911"
+	icon_state = "ironhammer"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/ladon = 3,
+		/datum/design/autolathe/gun/colt = 3,
 		/datum/design/autolathe/ammo/magnum_practice = 0,
 		/datum/design/autolathe/ammo/magnum_rubber,
 		/datum/design/autolathe/ammo/magnum,
 		/datum/design/autolathe/ammo/magnum_lethal = 2,
-		)
+	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/colt/ten
-	disk_name = "H&S - 10mm Auto-Mag Delta Elite"
-	icon_state = "frozenstar"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/martian
+	disk_name = "ML - 10mm Martian"
+	icon_state = "ironhammer"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/ten = 3,
+		/datum/design/autolathe/gun/martian = 3,
 		/datum/design/autolathe/ammo/magnum_practice = 0,
 		/datum/design/autolathe/ammo/magnum_rubber,
 		/datum/design/autolathe/ammo/magnum,
 		/datum/design/autolathe/ammo/magnum_lethal = 2,
-		)
+	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/rafale
-	disk_name = "Seinemetall Defense GmbH - 10mm Auto-Mag Rafale"
-	icon_state = "frozenstar"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/frontier
+	disk_name = "ML - 10mm Frontier"
+	icon_state = "ironhammer"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/rafale = 3,
-		/datum/design/autolathe/ammo/magnum_practice = 0,
-		/datum/design/autolathe/ammo/magnum_rubber,
-		/datum/design/autolathe/ammo/magnum,
-		/datum/design/autolathe/ammo/magnum_lethal = 2,
-		)
+		/datum/design/autolathe/gun/frontier = 3,
+		/datum/design/autolathe/ammo/slmagnum_practice = 0,
+		/datum/design/autolathe/ammo/slmagnum_rubber,
+		/datum/design/autolathe/ammo/slmagnum,
+		/datum/design/autolathe/ammo/slmagnum_lethal = 2,
+	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/armstrong
-	disk_name = "H&S - 10mm lever action Armstrong"
-	icon_state = "frozenstar"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/ranger
+	disk_name = "ML - 10mm Ranger"
+	icon_state = "ironhammer"
 
-	license = 16
+	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/lever = 6,
-		/datum/design/autolathe/ammo/magnum_ammobox = 3,
-		/datum/design/autolathe/ammo/magnum_ammobox_practice = 0,
-		/datum/design/autolathe/ammo/magnum_ammobox_rubber = 3,
-		/datum/design/autolathe/ammo/magnum_ammobox_lethal = 4,
-		)
+		/datum/design/autolathe/gun/ranger = 3,
+		/datum/design/autolathe/ammo/slmagnum_practice = 0,
+		/datum/design/autolathe/ammo/slmagnum_rubber,
+		/datum/design/autolathe/ammo/slmagnum,
+		/datum/design/autolathe/ammo/slmagnum_lethal = 2,
+	)
 
 // 10mm SMGS
-/obj/item/computer_hardware/hard_drive/portable/design/guns/vector
-	disk_name = "SA - 10mm Vector SMG"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/tactical
+	disk_name = "SA - 10mm Tactical SMG"
 	icon_state = "sa"
 
-	license = 16
+	license = 12
 	designs = list(
-		/datum/design/autolathe/gun/vector = 0, //The gun is free as this is the only way to get it
+		/datum/design/autolathe/gun/tactical = 4, //The gun is free as this is the only way to get it
 		/datum/design/autolathe/ammo/smg_magnum_40 = 3,
 		/datum/design/autolathe/ammo/smg_magnum_40_rubber = 2,
 		//Free as well do to being the only way to get these mags
@@ -310,71 +312,17 @@
 
 	license = 12
 	designs = list(
-		/datum/design/autolathe/gun/thompson = 4,
+		/datum/design/autolathe/gun/umbani = 4,
 		/datum/design/autolathe/ammo/smg_magnum_40 = 2,
 		/datum/design/autolathe/ammo/smg_magnum_40_rubber = 1,
 		/datum/design/autolathe/ammo/smg_magnum_40_lethal = 3,
 		/datum/design/autolathe/ammo/smg_magnum_40_practice = 0
 		)
 
-// 12mm PISTOLS
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/lamia
-	disk_name = "H&S - 12mm Lamia Handgun"
-	icon_state = "frozenstar"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/lamia = 3,
-		/datum/design/autolathe/ammo/kurtz_practice = 0,
-		/datum/design/autolathe/ammo/kurtz_rubber,
-		/datum/design/autolathe/ammo/kurtz,
-		/datum/design/autolathe/ammo/kurtz_lethal = 2,
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/basilisk
-	disk_name = "H&S - 12mm Basilisk Handgun"
-	icon_state = "frozenstar"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/basilisk = 3,
-		/datum/design/autolathe/ammo/kurtz_practice = 0,
-		/datum/design/autolathe/ammo/kurtz_rubber,
-		/datum/design/autolathe/ammo/kurtz,
-		/datum/design/autolathe/ammo/kurtz_lethal = 2,
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/socom
-	disk_name = "SF - 12mm \"SOCOM\" Silenced Handgun"
-	icon_state = "solfed"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/socom = 3,
-		/datum/design/autolathe/ammo/kurtz_practice = 0,
-		/datum/design/autolathe/ammo/kurtz_rubber,
-		/datum/design/autolathe/ammo/kurtz,
-		/datum/design/autolathe/ammo/kurtz_lethal = 2,
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/mateba
-	disk_name = "Seinemetall Defense GmbH - \"Mateba\" autorevolver"
-	icon_state = "frozenstar"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/mateba = 4,
-		/datum/design/autolathe/ammo/slkurtz_practice = 0,
-		/datum/design/autolathe/ammo/slkurtz_rubber,
-		/datum/design/autolathe/ammo/slkurtz,
-		/datum/design/autolathe/ammo/slkurtz_lethal = 2,
-	)
-
 // SHOTGUNS
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/doublebarrel
-	disk_name = "SA - 20mm Double Barrel Shotgun"
+	disk_name = "No-Owner - 12 gauge Double Barrel Shotgun"
 	icon_state = "sa"
 
 	license = 8
@@ -385,8 +333,20 @@
 		/datum/design/autolathe/ammo/shotgun_illumination,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/grizzly
-	disk_name = "SA - 20mm Grizzly Shotgun"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/western
+	disk_name = "Car-Van - 12 gauge Trench Shotgun"
+	icon_state = "sa"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/western = 3,
+		/datum/design/autolathe/ammo/shotgun_beanbag,
+		/datum/design/autolathe/ammo/shotgun_blanks = 0,
+		/datum/design/autolathe/ammo/shotgun_illumination,
+		)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/trench
+	disk_name = "LG - 12 gauge Trench Shotgun"
 	icon_state = "sa"
 
 	license = 8
@@ -397,66 +357,78 @@
 		/datum/design/autolathe/ammo/shotgun_illumination,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/sbaw
-	disk_name = "20mm SBAW disk"
-	icon_state = "solfed"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/sbaw = 3,
-		/datum/design/autolathe/ammo/sbaw_slug,
-		/datum/design/autolathe/ammo/sbaw_pellet,
-		/datum/design/autolathe/ammo/sbaw_beanbag,
-		/datum/design/autolathe/ammo/sbaw_payload = 3,
-		/datum/design/autolathe/ammo/sbaw_empty = 0, //So we can handload new mags
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/state
-	disk_name = "Seinemetall Defense GmbH - 20mm State Auto Shotgun"
-	desc = "Known as the state, an odd shotgun, often redesigned every few years in a way few people are fully happy with."
+/obj/item/computer_hardware/hard_drive/portable/design/guns/judge
+	disk_name = "ML - 12 gauge Judge Auto Shotgun"
 	icon_state = "frozenstar"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/riot_shotgun = 3,
+		/datum/design/autolathe/gun/judge = 3,
 		/datum/design/autolathe/ammo/shotgun_beanbag,
 		/datum/design/autolathe/ammo/shotgun_blanks = 0,
 		/datum/design/autolathe/ammo/shotgun_illumination,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/pug
-	disk_name = "SA - 20mm Pug Auto Shotgun"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/sweeper
+	disk_name = "Car-Van - 20mm Street Sweeper Auto Shotgun"
 	icon_state = "sa"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/pug = 3,
+		/datum/design/autolathe/gun/sweeper = 3,
 		/datum/design/autolathe/ammo/m12beanbag, // Never add tazershells, for love of god
 		/datum/design/autolathe/ammo/m12pellet,
 		/datum/design/autolathe/ammo/m12slug,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/sixshot
-	disk_name = "SA - 20mm Revolving Shotgun"
-	icon_state = "sa"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/sixshot = 3,
-		/datum/design/autolathe/ammo/shotgun_beanbag,
-		/datum/design/autolathe/ammo/shotgun_blanks = 0,
-		/datum/design/autolathe/ammo/shotgun_illumination,
-		)
-
 // SMGs
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/texan
-	disk_name = "Seinemetall Defense GmbH - 9mm Texan SMG"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/broz
+	disk_name = "No-Owner - 9mm Broz SMG"
 	icon_state = "frozenstar"
 
 	license = 12
 	designs = list(
-		/datum/design/autolathe/gun/texan = 3,
+		/datum/design/autolathe/gun/broz = 3,
+		/datum/design/autolathe/ammo/smg_practice = 0,
+		/datum/design/autolathe/ammo/smg_rubber,
+		/datum/design/autolathe/ammo/smg,
+		/datum/design/autolathe/ammo/smg_lethal = 2,
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/specialist
+	disk_name = "ML - 9mm Specialist SMG"
+	icon_state = "frozenstar"
+
+	license = 12
+	designs = list(
+		/datum/design/autolathe/gun/specialist = 3,
+		/datum/design/autolathe/ammo/smg_practice = 0,
+		/datum/design/autolathe/ammo/smg_rubber,
+		/datum/design/autolathe/ammo/smg,
+		/datum/design/autolathe/ammo/smg_lethal = 2,
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/umbani
+	disk_name = "No-Owner - 10mm Umbani SMG"
+	icon_state = "frozenstar"
+
+	license = 12
+	designs = list(
+		/datum/design/autolathe/gun/umbani = 3,
+		/datum/design/autolathe/ammo/smg_practice = 0,
+		/datum/design/autolathe/ammo/smg_rubber,
+		/datum/design/autolathe/ammo/smg,
+		/datum/design/autolathe/ammo/smg_lethal = 2,
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/tactical
+	disk_name = "LB - 10mm Tactical SMG"
+	icon_state = "frozenstar"
+
+	license = 12
+	designs = list(
+		/datum/design/autolathe/gun/tactical = 3,
 		/datum/design/autolathe/ammo/smg_practice = 0,
 		/datum/design/autolathe/ammo/smg_rubber,
 		/datum/design/autolathe/ammo/smg,
@@ -465,13 +437,13 @@
 
 // 6.5mm carbines
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/sol
-	disk_name = "H&S - 6.5mm \"Solarian\" Carbine"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/federalist
+	disk_name = "ML - 6.5mm \"Federalist\" Carbine"
 	icon_state = "solfed"
 
 	license = 18
 	designs = list(
-		/datum/design/autolathe/gun/sol = 6,
+		/datum/design/autolathe/gun/federalist = 6,
 		/datum/design/autolathe/ammo/lrifle_short_practice = 0,
 		/datum/design/autolathe/ammo/lrifle_short_rubber,
 		/datum/design/autolathe/ammo/lrifle_short,
@@ -480,18 +452,15 @@
 		/datum/design/autolathe/ammo/lrifle_rubber = 2,
 		/datum/design/autolathe/ammo/lrifle = 2,
 		/datum/design/autolathe/ammo/lrifle_lethal = 4,
-		/datum/design/autolathe/ammo/shotgun_pellet = 1,
-		/datum/design/autolathe/ammo/shotgun = 2,
-		/datum/design/autolathe/ammo/shotgun_beanbag = 1,
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ostwind
-	disk_name = "Seinemetall Defense GmbH - 6.5mm Ostwind Carbine"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/ak47carbine
+	disk_name = "LG - 6.5mm Ugil Carbine"
 	icon_state = "frozenstar"
 
 	license = 16
 	designs = list(
-		/datum/design/autolathe/gun/ostwind = 6,
+		/datum/design/autolathe/gun/akcarbine = 6,
 		/datum/design/autolathe/ammo/lrifle_short_practice = 0,
 		/datum/design/autolathe/ammo/lrifle_short_rubber,
 		/datum/design/autolathe/ammo/lrifle_short,
@@ -502,15 +471,46 @@
 		/datum/design/autolathe/ammo/lrifle_lethal = 4,
 	)
 
-// 6.5mm Carbine
+/obj/item/computer_hardware/hard_drive/portable/design/guns/duty
+	disk_name = "Car-Van - 6.5mm Duty Marksman Carbine"
+	icon_state = "frozenstar"
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/tk
-	disk_name = "SD GmbH - 6.5mm Takeshi LMG"
+	license = 16
+	designs = list(
+		/datum/design/autolathe/gun/duty = 6,
+		/datum/design/autolathe/ammo/lrifle_short_practice = 0,
+		/datum/design/autolathe/ammo/lrifle_short_rubber,
+		/datum/design/autolathe/ammo/lrifle_short,
+		/datum/design/autolathe/ammo/lrifle_short_lethal = 2,
+		/datum/design/autolathe/ammo/lrifle_practice = 1,
+		/datum/design/autolathe/ammo/lrifle_rubber = 2,
+		/datum/design/autolathe/ammo/lrifle = 2,
+		/datum/design/autolathe/ammo/lrifle_lethal = 4,
+	)
+
+// 6.5mm Revolver
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/wristbreaker
+	disk_name = "ML - 6.5mm Wristbreaker Revolver"
+	icon_state = "frozenstar"
+
+	license = 6	//Stops a lot of wristbreakers going all around.
+	designs = list(
+		/datum/design/autolathe/gun/wristbreaker = 3,
+		/datum/design/autolathe/ammo/lrifle_ammobox = 2,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small_practice = 0,
+		/datum/design/autolathe/ammo/lrifle_ammobox_rubber,
+	)
+
+// 6.5mm LMG
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/buzzsaw
+	disk_name = "ML - 6.5mm Buzzsaw LMG"
 	icon_state = "frozenstar"
 
 	license = 8 //So we can print 2 and some ammo
 	designs = list(
-		/datum/design/autolathe/gun/tk = 3,
+		/datum/design/autolathe/gun/buzzsaw = 3,
 		/datum/design/autolathe/ammo/lrifle_ammobox = 2,
 		/datum/design/autolathe/ammo/lrifle_belt, //This is its linked ammo
 		/datum/design/autolathe/ammo/lrifle_belt_empty = 0,
@@ -518,13 +518,29 @@
 		/datum/design/autolathe/ammo/lrifle_ammobox_rubber,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/roe
-	disk_name = "Hunters Inc - 6.5mm Roe Rifle"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/hog
+	disk_name = "LG - 6.5mm Hog LMG"
+	icon_state = "frozenstar"
+
+	license = 8 //So we can print 2 and some ammo
+	designs = list(
+		/datum/design/autolathe/gun/hog = 3,
+		/datum/design/autolathe/ammo/lrifle_ammobox = 2,
+		/datum/design/autolathe/ammo/lrifle_belt, //This is its linked ammo
+		/datum/design/autolathe/ammo/lrifle_belt_empty = 0,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small_practice = 0,
+		/datum/design/autolathe/ammo/lrifle_ammobox_rubber,
+	)
+
+//6.5mm Bolt Action Rifle
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/rosefield
+	disk_name = "Car-Van - 6.5mm Rosefield Rifle"
 	icon_state = "hunters"
 
 	license = 8
 	designs = list(
-		/datum/design/autolathe/gun/roe =  3,
+		/datum/design/autolathe/gun/rosefield =  3,
 		/datum/design/autolathe/ammo/lrifle_speed_loader,
 		/datum/design/autolathe/ammo/lrifle_ammobox_small_practice = 0,
 		/datum/design/autolathe/ammo/lrifle_ammobox_small_rubber,
@@ -534,13 +550,13 @@
 
 // 7.62mm Rifles
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/sa_kalashnikov
-	disk_name = "SA - 7.62mm Kalashnikov Rifle"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/ak47
+	disk_name = "LG - 7.62mm Kalashnikov Rifle"
 	icon_state = "sa"
 
 	license = 16
 	designs = list(
-		/datum/design/autolathe/gun/ak47_sa = 6,
+		/datum/design/autolathe/gun/ak47 = 6,
 		/datum/design/autolathe/ammo/rifle_short_practice = 0,
 		/datum/design/autolathe/ammo/rifle_short_rubber,
 		/datum/design/autolathe/ammo/rifle_short,
@@ -551,26 +567,13 @@
 		/datum/design/autolathe/ammo/rifle_lethal = 4,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/strelki
-	disk_name = "Hunters Inc - 7.62mm \"Strelki\""
-	icon_state = "hunters"
-	license = 8
-
-	designs = list(
-		/datum/design/autolathe/gun/strelki = 3,
-		/datum/design/autolathe/ammo/rifle,
-		/datum/design/autolathe/ammo/rifle_rubber,
-		/datum/design/autolathe/ammo/rifle_practice = 0,
-		/datum/design/autolathe/ammo/rifle_lethal = 2
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/tac_kalashnikov
-	disk_name = "SA - 7.62mm Breacher Kalashnikov Rifle"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/nationale
+	disk_name = "Car-Van - 7.62mm Nationale Rifle"
 	icon_state = "sa"
 
-	license = 18
+	license = 16
 	designs = list(
-		/datum/design/autolathe/gun/ak47_tac = 6,
+		/datum/design/autolathe/gun/nationale = 6,
 		/datum/design/autolathe/ammo/rifle_short_practice = 0,
 		/datum/design/autolathe/ammo/rifle_short_rubber,
 		/datum/design/autolathe/ammo/rifle_short,
@@ -579,18 +582,17 @@
 		/datum/design/autolathe/ammo/rifle_rubber = 2,
 		/datum/design/autolathe/ammo/rifle = 2,
 		/datum/design/autolathe/ammo/rifle_lethal = 4,
-		/datum/design/autolathe/ammo/shotgun_pellet = 2,
-		/datum/design/autolathe/ammo/shotgun = 2,
-		/datum/design/autolathe/ammo/shotgun_beanbag = 1
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/boltgun_sa
-	disk_name = "Hunters Inc - 7.62mm Novakovic Rifle"
+// 7.62mm Boltaction Rifles
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/boltgun
+	disk_name = "No-Owner - 7.62mm Novakovic Rifle"
 	icon_state = "hunters"
 
 	license = 12
 	designs = list(
-		/datum/design/autolathe/gun/boltgun_sa = 3,
+		/datum/design/autolathe/gun/boltgun = 3,
 		/datum/design/autolathe/ammo/rifle_ammobox_small_practice = 0,
 		/datum/design/autolathe/ammo/rifle_ammobox_small_rubber,
 		/datum/design/autolathe/ammo/rifle_ammobox,
@@ -598,66 +600,25 @@
 		/datum/design/autolathe/ammo/sl_rifle,
 	)
 
-//8.6mm heavy rifles
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/omni
-	disk_name = "H&S NM - 8.6mm Omnirifle"
-	icon_state = "ironhammer"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/gamer
+	disk_name = "Car-Van - 7.62mm Big Game Rifle"
+	icon_state = "hunters"
 
 	license = 12
 	designs = list(
-		/datum/design/autolathe/gun/omnirifle = 3,
-		/datum/design/autolathe/ammo/hrifle_practice = 0,
-		/datum/design/autolathe/ammo/hrifle_rubber,
-		/datum/design/autolathe/ammo/hrifle,
-		/datum/design/autolathe/ammo/hrifle_lethal = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/omni/longarm
-	disk_name = "H&S NM - 8.6mm Longarm Omnirfile"
-	icon_state = "ironhammer"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/scoped_omnirifle = 4,
-		/datum/design/autolathe/ammo/hrifle_practice = 0,
-		/datum/design/autolathe/ammo/hrifle_rubber,
-		/datum/design/autolathe/ammo/hrifle,
-		/datum/design/autolathe/ammo/hrifle_lethal = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/scout
-	disk_name = "H&S - 8.6mm Scout Sniper Rifle"
-	icon_state = "frozenstar"
-
-	license = 6
-	designs = list(
-		/datum/design/autolathe/gun/scout = 3,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_practice = 0,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_rubber,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_lethal = 2,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_hv = 3,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/custer
-	disk_name = "H&S - 8.6mm Custer Repeating Rifle"
-	icon_state = "sa"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/custer = 3,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_practice = 0,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_rubber,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small,
-		/datum/design/autolathe/ammo/hrifle_ammobox_small_lethal = 2,
+		/datum/design/autolathe/gun/biggame = 3,
+		/datum/design/autolathe/ammo/rifle_ammobox_small_practice = 0,
+		/datum/design/autolathe/ammo/rifle_ammobox_small_rubber,
+		/datum/design/autolathe/ammo/rifle_ammobox,
+		/datum/design/autolathe/ammo/rifle_ammobox_small_lethal = 2,
+		/datum/design/autolathe/ammo/sl_rifle,
 	)
 
 // Heavy
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/heavysniper
-	disk_name = "SA - 14.5×114mm Penetrator AMR"
-	icon_state = "sa"
+	disk_name = "ML - 14.5×114mm Penetrator AMR"
+	icon_state = "black"
 
 	license = 8
 	designs = list(
@@ -704,6 +665,16 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 		)
 
 // ENERGY ARMS
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/sunrise
+	disk_name = "NM - \"Sunrise\" Laser SMG"
+	icon_state = "marshal"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/sunrise = 3,
+		/datum/design/autolathe/cell/medium/high,
+	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/spiderrose
 	disk_name = "H&S - Spider Rose PDW E"
@@ -839,38 +810,36 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 
-//10x24mm Guns
+//7mm Guns
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/pulse_rifle
-	disk_name = "PAR - 10x24mm Caseless Pulse Rifle"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/kraut
+	disk_name = "ML - 7mm Caseless Kraut Rifle"
 	icon_state = "black"
 
 	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
-		/datum/design/autolathe/gun/pulse_rifle = 3,
-		/datum/design/autolathe/ammo/c10x24,
-		/datum/design/autolathe/ammo/box_10x24 = 2,
+		/datum/design/autolathe/gun/kraut = 3,
+		/datum/design/autolathe/ammo/cl7mm,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/survivalrifle
-	disk_name = "Hunters Inc - 10x24mm Caseless /'Bond/' Rifle"
-	icon_state = "hunters"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/operator_rifle
+	disk_name = "ML - 7mm Caseless Operator Rifle"
+	icon_state = "black"
 
 	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
-		/datum/design/autolathe/gun/survivalrifle = 3,
-		/datum/design/autolathe/ammo/mag_10x24,
-		/datum/design/autolathe/ammo/box_10x24_small = 1,
+		/datum/design/autolathe/gun/operator_rifle = 3,
+		/datum/design/autolathe/ammo/cl7mm,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/rex10
-	disk_name = "H&S - Cowboy Revolver"
-	icon_state = "ironhammer"
+/obj/item/computer_hardware/hard_drive/portable/design/guns/contractor
+	disk_name = "ML - 7mm Caseless Contractor Rifle"
+	icon_state = "black"
 
-	license = 12
+	license = 10 //2 guns 2 mags and 1 box
 	designs = list(
-		/datum/design/autolathe/gun/rex10 = 3,
-		/datum/design/autolathe/ammo/slpistol_rubber = 2,
-		/datum/design/autolathe/ammo/slpistol,
-		/datum/design/autolathe/ammo/slpistol_lethal,
+		/datum/design/autolathe/gun/contractor = 3,
+		/datum/design/autolathe/ammo/clbox_7mm = 2,
 	)

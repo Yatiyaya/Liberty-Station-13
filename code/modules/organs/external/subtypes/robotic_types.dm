@@ -92,10 +92,10 @@
 /obj/item/organ/external/robotic/frozen_star/r_leg
 	default_description = /datum/organ_description/leg/right
 
-// Artificer Guild
+// Terra-Therma Worker's Union
 /obj/item/organ/external/robotic/technomancer
-	name = "Artificer Guild \"Homebrew\""
-	desc = "Artificer Guild \"branded\" \"functional\" prosthesis."
+	name = "Terra-Therma Worker's Union \"Homebrew\""
+	desc = "Terra-Therma Worker's Union \"branded\" \"functional\" prosthesis."
 	force_icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi' //Sprites were done by Kirov on request
 	model = "technomancer"
 	price_tag = 300
@@ -113,17 +113,17 @@
 	default_description = /datum/organ_description/leg/right
 
 /obj/item/organ/external/robotic/technomancer/groin
-	name = "\"Artificer Guild\" Groin"
+	name = "\"Terra-Therma Worker's Union\" Groin"
 	default_description = /datum/organ_description/groin
 	max_damage = 200
 
 /obj/item/organ/external/robotic/technomancer/torso
-	name = "\"Artificer Guild\" Torso"
+	name = "\"Terra-Therma Worker's Union\" Torso"
 	default_description = /datum/organ_description/chest
 	max_damage = 200
 
 /obj/item/organ/external/robotic/technomancer/head
-	name = "\"Artificer Guild\" Head"
+	name = "\"Terra-Therma Worker's Union\" Head"
 	default_description = /datum/organ_description/head
 	max_damage = 200
 
@@ -347,9 +347,9 @@ obj/item/organ/external/robotic/synthskin/groin
 /obj/item/organ/external/robotic/excelsior/head
 	default_description = /datum/organ_description/head
 
-// Greyson
+// Similacrum
 /obj/item/organ/external/robotic/one_star
-	name = "Greyson"
+	name = "Similacrum"
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"

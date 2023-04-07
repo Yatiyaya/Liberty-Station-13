@@ -550,7 +550,7 @@
 //Soteria
 /obj/item/clothing/suit/armor/vest/soteriasuit
 	name = "'Mark II' environmental protection suit"
-	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Artificer Guilds original design. \
+	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "armor_engineering"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
@@ -620,7 +620,7 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Greyson Positronic."
+	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
 	icon_state = "northtech"
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
@@ -976,7 +976,7 @@
 
 /obj/item/clothing/suit/storage/vest/ironhammer
 	name = "webbed operator armor"
-	desc = "An armored vest that protects against some damage. This one has been done in Nadezhda Marshal colors and has various pouches and straps attached."
+	desc = "An armored vest that protects against some damage. This one has been done in Liberty Marshal colors and has various pouches and straps attached."
 	icon_state = "webvest_ironhammer"
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.
@@ -1002,7 +1002,7 @@
 	name = "armored rig"
 	desc = "A simple plate carrier modified for personal use, additional pouches have been attached to its front, \
 	with matching knee and arm pads to protect limbs without hindering movement. \
-	Opening the plate pouch would reveal a sheet of some Greyson alloy, welded and forced into shape for the vest, \
+	Opening the plate pouch would reveal a sheet of some Similacrum alloy, welded and forced into shape for the vest, \
 	far lighter and offering more protection than it's more common ceramic counterparts. \
 	Due to its jury-rigged yet robust design, it's able to take more armor plates than a standard heavy vest."
 	icon_state = "forehead_armor"

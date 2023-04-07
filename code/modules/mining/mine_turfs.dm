@@ -51,6 +51,15 @@
 	density = 1
 	opacity = 1
 
+/turf/unsimulated/wall/snow
+	name = "frozen dense forestry"
+	icon = 'icons/turf/flooring/snows.dmi'
+	icon_state = "snowjungle"
+	desc = "A thick, impassable mass of plants and ice."
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
 /turf/simulated/mineral //wall piece
 	name = "Rock"
 	icon = 'icons/turf/walls.dmi'
@@ -248,7 +257,7 @@
 				fail_message = ". <b>[pick("There is a crunching noise [I] collides with some different rock.","Part of the rock face crumbles away.","Something breaks under [I].")]</b>"
 			to_chat(user, SPAN_NOTICE("You start digging the [src]. [fail_message ? fail_message : ""]"))
 			if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB))
-				var/dig_bonus = round(I.tool_qualities[QUALITY_DIGGING] / 5) / 5 //7 for normal pickaxes, 8 for drills, 9 for jackhammers, 10 for diamonddrills and GP pickaxes, 12 for GP drills, 15 for GP jackhammers- leading to ~1.2
+				var/dig_bonus = round(I.tool_qualities[QUALITY_DIGGING] / 5) / 5 //7 for normal pickaxes, 8 for drills, 9 for jackhammers, 10 for diamonddrills and SD pickaxes, 12 for SD drills, 15 for SD jackhammers- leading to ~1.2
 				to_chat(user, SPAN_NOTICE("You finish digging the [src]."))
 				if(fail_message && prob(90))
 					if(prob(25))

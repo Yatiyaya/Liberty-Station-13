@@ -182,7 +182,7 @@ see multiz/movement.dm for some info.
 			if(M == mover)
 				continue
 			if(ishuman(M))
-				if(!M.stats.getPerk(PERK_PARKOUR))
+				if(!M.stats.getPerk(PERK_ATHLETE))
 					M.Weaken(10)
 			else
 				M.Weaken(10)

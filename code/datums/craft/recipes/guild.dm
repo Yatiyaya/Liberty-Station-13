@@ -197,6 +197,26 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
+/datum/craft_recipe/guild/engimultitool
+	name = "\"Little Helper\" Omnitool"
+	result = /obj/item/tool/engimultitool
+	steps = list(
+		list (/obj/item/tool/multitool_improvised, 1),
+		list (QUALITY_SCREW_DRIVING, 20, 40),
+		list (QUALITY_WIRE_CUTTING, 20, 40),
+		list (CRAFT_MATERIAL, 1, MATERIAL_OSMIUM, 60),
+		list (QUALITY_WELDING, 30, 20),
+		list (CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 20),
+		list (QUALITY_BOLT_TURNING, 30, 40),
+		list (QUALITY_HAMMERING, 30, 20),
+		list (/obj/item/stack/cable_coil, 30, 20),
+		list (QUALITY_WIRE_CUTTING, 20, 40),
+		list (/obj/item/stock_parts/capacitor/guild, 1, 40),
+		list (QUALITY_PULSING, 30, 20),
+		list (/obj/item/stock_parts/manipulator/guild, 1, 30),
+		list (QUALITY_SCREW_DRIVING, 30)
+	)
+
 //Weapons ------------------------
 /datum/craft_recipe/guild/railgunrifle
 	name = "reductor rail rifle"
@@ -245,23 +265,6 @@
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
-	)
-
-/datum/craft_recipe/guild/guild_bull
-	name = "bison double barrel shotgun"
-	result = /obj/item/gun/projectile/shotgun/bull/bison
-	steps = list(
-		list(/obj/item/gun/projectile/shotgun/bull, 1, "time" = 80),
-		list(/obj/item/gun_upgrade/barrel/bore, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_DRILLING, 60, "time" = 90),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 45, "time" = 40),
-		list(QUALITY_SAWING, 50, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 40),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
@@ -330,34 +333,6 @@
 		list(/obj/item/stock_parts/micro_laser, 2, "time" = 80),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
-	)
-
-/datum/craft_recipe/guild/pilgrim_devout
-	name = "pilgrim devout"
-	result = /obj/item/gun/projectile/revolver/lemant/belt
-	steps = list(
-		list(/obj/item/gun/projectile/revolver/lemant, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 40),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 30, "time" = 40),
-	)
-
-/datum/craft_recipe/guild/ten_shot_conversion
-	name = "ten-shot conversion shotgun"
-	result = /obj/item/gun/projectile/revolver/sixshot/conversion
-	steps = list(
-		list(/obj/item/gun/projectile/revolver/sixshot, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 40),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 40),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_HAMMERING, 30, "time" = 40),
 	)
 
 /datum/craft_recipe/guild/heavypulserifle
@@ -496,8 +471,8 @@
 	)
 
 /datum/craft_recipe/guild/swat_yellow
-	name = "Artificers insulated gloves"
-	result = /obj/item/clothing/gloves/insulated/guild
+	name = "Union insulated gloves"
+	result = /obj/item/clothing/gloves/insulated/union
 	steps = list(
 		list(/obj/item/clothing/gloves/thick, 1, "time" = 15),
 		list(QUALITY_CUTTING, 15, 10),
@@ -511,9 +486,9 @@
 	)
 
 /datum/craft_recipe/guild/webbing
-	name = "Artificer Guild web harness"
+	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
-	result = /obj/item/storage/belt/webbing/artificer
+	result = /obj/item/storage/belt/webbing/Union
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),
@@ -659,22 +634,6 @@
 		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/kit
-	name = "Kurtz's refinement kit"
-	result = /obj/item/gun_upgrade/mechanism/upgrade_kit
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 30),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(CRAFT_MATERIAL, 3, MATERIAL_SILVER),
-		list(QUALITY_DRILLING, 60, "time" = 90),
-		list(QUALITY_WELDING, 40, "time" = 40),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
-	)
-
 /datum/craft_recipe/guild/heavy_barrel
 	name = "Heavy barrel"
 	result = /obj/item/gun_upgrade/barrel/bore
@@ -709,7 +668,7 @@
 	)
 
 /datum/craft_recipe/guild/watchman
-	name = "Artificer's Guild \"Watchman\" scope"
+	name = "Terra-Therma Union \"Watchman\" scope"
 	result = /obj/item/gun_upgrade/scope/watchman
 	icon_state = "gun"
 	steps = list(
@@ -736,7 +695,7 @@
 
 //Machines
 /datum/craft_recipe/guild/turretcircuit
-	name = "Circuit: Artificer Turret"
+	name = "Circuit: Union Turret"
 	result = /obj/item/circuitboard/artificer_turret
 	icon_state = "electronic"
 	steps = list(

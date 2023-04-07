@@ -213,15 +213,15 @@
 		return -1 //Transciever Disabled.
 	return ..(freq, level, 1)
 
-/obj/item/device/radio/headset/heads/rd
-	name = "research overseer's headset"
+/obj/item/device/radio/headset/heads/rp
+	name = "research provost's headset"
 	desc = "Headset of the researching overseer, a headset belonging to hopefully the most logical person on the colony... Automatically translates binary channels."
 	icon_state = "com_headset"
 	item_state = "headset"
 	translate_binary = TRUE
 	ks2type = /obj/item/device/encryptionkey/heads/rd
 
-/obj/item/device/radio/headset/heads/rd/recalculateChannels(var/setDescription = FALSE)
+/obj/item/device/radio/headset/heads/rp/recalculateChannels(var/setDescription = FALSE)
 	..(setDescription)
 	translate_binary = TRUE
 
@@ -255,7 +255,7 @@
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/ce
-	name = "guild master's headset"
+	name = "Union Chief's headset"
 	desc = "The headset of the guy who is in charge of morons"
 	icon_state = "com_headset"
 	item_state = "headset"

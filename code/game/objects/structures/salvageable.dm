@@ -328,7 +328,7 @@ obj/structure/salvageable/bliss/Initialize()
 			return
 
 ////////////////////////////
-//// Greyson Positronic ////
+//// Similacrum Robotics ////
 ////////////////////////////
 
 /obj/structure/salvageable/machine_os
@@ -397,7 +397,7 @@ obj/structure/salvageable/bliss/Initialize()
 		/obj/item/stack/material/diamond{amount = 1} = 1,
 		/obj/item/gun_upgrade/mechanism/glass_widow = 5,
 		/obj/item/tool_upgrade/augment/randomizer = 20,
-		/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = 0.1 //1 in 1000
+		/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = 0.1 //1 in 1000
 	)
 
 
@@ -568,7 +568,7 @@ obj/structure/salvageable/bliss/Initialize()
 
 /obj/structure/salvageable/os/power  //todo:make a system to directly repair to a generator
 	name = "broken generator"
-	desc = "A GP cold fusion reactor, broken beyond repair. You may be able to salvage something from this."
+	desc = "A SD cold fusion reactor, broken beyond repair. You may be able to salvage something from this."
 	icon_state = "generator_broken"
 	salvageable_parts = list(
 		/obj/item/stock_parts/console_screen = 80,

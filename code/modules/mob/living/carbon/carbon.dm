@@ -359,8 +359,11 @@
 	return 1
 
 /mob/living/carbon/proc/add_chemical_effect(var/effect, var/magnitude = 1, var/limited = FALSE)
-	if(effect == CE_ALCOHOL && stats.getPerk(PERK_INSPIRATION))
-		stats.addPerk(PERK_ACTIVE_INSPIRATION)
+	if(effect == CE_ALCOHOL)
+		if(stats.getPerk(PERK_INSPIRATION))
+			stats.addPerk(PERK_ACTIVE_INSPIRATION)
+		if(stats.getPerk(PERK_ALCOHOLIC))
+			stats.addPerk(PERK_ALCOHOLIC_ACTIVE)
 	if(effect in chem_effects)
 		if(limited)
 			chem_effects[effect] = max(magnitude, chem_effects[effect])

@@ -33,7 +33,7 @@
 		BURST_8_ROUND,
 		FULL_AUTO_300
 		)
-	serial_type = "SA"
+	serial_type = "ML"
 
 	var/cover_open = 0
 
@@ -111,6 +111,7 @@
 	icon_state = "pk_closed"
 	item_state = "pk_closed"
 	damage_multiplier = 1.0 // This becomes x0.8 as forced full auto modes incurr 20% damage penalty.
+	serial_type = "LG"
 	init_firemodes = list(
 		BURST_5_ROUND,
 		BURST_8_ROUND,
@@ -129,29 +130,29 @@
 	barrelvars = list(/obj/item/part/gun/barrel/lrifle)
 
 //This should be in its own file...
-/obj/item/gun/projectile/automatic/lmg/tk
-	name = "\"Takeshi\" suppression machinegun"
-	desc = "The \"Takeshi LMG\" is Seinemetall Defense GmbH's answer to any scenario that requires suppression or meat grinding, a fine oiled machine of war and death. \
+/obj/item/gun/projectile/automatic/lmg/buzzsaw
+	name = "\"Buzzsaw\" suppression machinegun"
+	desc = "The \"Buzzsaw\" LMG is Seinemetall Defense GmbH's answer to any scenario that requires suppression or meat grinding, a fine oiled machine of war and death. \
 			Takes 6.5mm linked boxes as well as normal carbine magazines."
-	icon = 'icons/obj/guns/projectile/tk.dmi'
-	icon_base = "tk"
-	icon_state = "tk"
-	item_state = "tk"
+	icon = 'icons/obj/guns/projectile/buzzsaw.dmi'
+	icon_base = "buzzsaw"
+	icon_state = "buzzsaw"
+	item_state = "buzzsaw"
 	mag_well = MAG_WELL_LINKED_BOX|MAG_WELL_RIFLE
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	init_recoil = LMG_RECOIL(0.8)
-	serial_type = "SD GmbH"
-	gun_parts = list(/obj/item/part/gun/frame/tk = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
+	serial_type = "ML"
+	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
-/obj/item/part/gun/frame/tk
-	name = "Takeshi frame"
-	desc = "A Takeshi LMG frame. A fine-oiled machine of war and death."
+/obj/item/part/gun/frame/buzzsaw
+	name = "Buzzsaw frame"
+	desc = "A Buzzsaw LMG frame. A fine-oiled machine of war and death."
 	icon_state = "frame_mg"
-	result = /obj/item/gun/projectile/automatic/lmg/tk
-	resultvars = list(/obj/item/gun/projectile/automatic/lmg/tk, /obj/item/gun/projectile/automatic/lmg/heroic)
-	gripvars = list(/obj/item/part/gun/grip/rubber, /obj/item/part/gun/grip/black )
+	result = /obj/item/gun/projectile/automatic/lmg/buzzsaw
+	resultvars = list(/obj/item/gun/projectile/automatic/lmg/buzzsaw, /obj/item/gun/projectile/automatic/lmg/hog)
+	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/machinegun
 	barrelvars = list(/obj/item/part/gun/barrel/srifle, /obj/item/part/gun/barrel/lrifle)
 
@@ -186,15 +187,15 @@
 	update_icon()
 
 // I AM HEAVY WEAPONS GUY, AND THIS...IS MY WEAPON. - Seb
-/obj/item/gun/projectile/automatic/lmg/heroic
-	name = " \"Heroic\" General Purpose Machinegun"
-	desc = "The \"Heroic\" General Purpose Machinegun was created by Nadezhda Marshals in response to Blackshield's lack of suppressing fire armaments. \
-			Inspired by Seinemetall's Takeshi LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
-			Chambered in 7.62x39mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
-	icon = 'icons/obj/guns/projectile/heroic.dmi'
-	icon_base = "heroic" // Sprites by Albert7076
-	icon_state = "heroic"
-	item_state = "heroic"
+/obj/item/gun/projectile/automatic/lmg/hog
+	name = " \"Hog\" General Purpose Machinegun"
+	desc = "The \"Hog\" General Purpose Machinegun was created by local gunsmiths in response to the dense forest and lack of suppressing fire armaments. \
+			Inspired by Martian Logistics' \"Buzzsaw\" LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
+			Chambered in 6.5mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
+	icon = 'icons/obj/guns/projectile/rhaki.dmi'
+	icon_base = "rhaki" // Sprites by Albert7076
+	icon_state = "rhaki"
+	item_state = "rhaki"
 	fire_sound = 'sound/weapons/guns/fire/heroic_fire.ogg'
 	fire_sound_silenced = 'sound/weapons/guns/fire/silenced_mg.ogg' // Yay snowflake silenced sound!
 	caliber = CAL_RIFLE
@@ -202,17 +203,17 @@
 	penetration_multiplier = 1.0
 	init_recoil = HMG_RECOIL(0.6) // Better slap a bipod on this one! Impossible to fire steady if not braced.
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE) // Believe it or not, an LMG that CAN be silenced.
-	serial_type = "NM"
+	serial_type = "LG"
 
 	init_firemodes = list(
 		BURST_5_ROUND,
 		BURST_8_ROUND,
 		FULL_AUTO_600 // Meant to be a supressive fire GPMG
 		)
-	gun_parts = list(/obj/item/part/gun/frame/tk = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 // Even more special than the Takeshi so we have to do this all over again instead of being a Takeshi child
-/obj/item/gun/projectile/automatic/lmg/heroic/update_icon()
+/obj/item/gun/projectile/automatic/lmg/hog/update_icon()
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
 
@@ -240,7 +241,7 @@
 	set_item_state(itemstring)
 
 
-/obj/item/gun/projectile/automatic/lmg/heroic/Initialize()
+/obj/item/gun/projectile/automatic/lmg/hog/Initialize()
 	. = ..()
 	update_icon()
 

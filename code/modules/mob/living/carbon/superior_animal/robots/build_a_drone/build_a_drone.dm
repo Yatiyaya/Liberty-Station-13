@@ -4,7 +4,7 @@
 	desc = "A custom-built drone. They come in a variety of color and equipment."
 	icon = 'icons/mob/build_a_drone.dmi'
 	icon_state = "drone_st"
-	health = 100 // 10 more than Greyson's armored roomba
+	health = 100 // 10 more than Similacrum's armored roomba
 	maxHealth = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
@@ -107,7 +107,7 @@
 			possible_ranged_attack.Add(/obj/item/projectile/beam)
 			ranged = TRUE
 		if(TOOL_GUN)
-			drop1 = /obj/item/gun/projectile/spring
+			drop1 = /obj/item/gun/projectile/liberty
 			possible_ranged_attack.Add(/obj/item/projectile/bullet/pistol_35)
 			ranged = TRUE
 		if(TOOL_BOMB)

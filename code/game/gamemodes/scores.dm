@@ -129,11 +129,11 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 		else
 			if(M.antagonist.len)
 				var/area/A = get_area(M.current)
-				if(istype(A, /area/nadezhda/security/prison) || istype(A, /area/nadezhda/security/brig) || M.current.restrained())
+				if(istype(A, /area/liberty/security/prison) || istype(A, /area/liberty/security/brig) || M.current.restrained())
 					GLOB.captured_or_dead_antags++
 				else if(isOnAdminLevel(M.current))
 					GLOB.ironhammer_escaped_antagonists++
-			else if(M.assigned_job && M.assigned_job.department == DEPARTMENT_LSS && ishuman(M.current))
+			else if(M.assigned_job && M.assigned_job.department == DEPARTMENT_SERVICE && ishuman(M.current))
 				var/mob/living/carbon/human/H = M.current
 				guild_fingerprints += H.get_full_print()
 
@@ -144,7 +144,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 				L.client.escaped = TRUE
 		if(ishuman(L))
 			var/mob/living/carbon/human/H = L
-			if(H.mind && H.mind.assigned_job && H.mind.assigned_job.faction == "CEV Eris" && H.mind.assigned_job.department != DEPARTMENT_LSS && !H.mind.antagonist.len)
+			if(H.mind && H.mind.assigned_job && H.mind.assigned_job.faction == "CEV Eris" && H.mind.assigned_job.department != DEPARTMENT_SERVICE && !H.mind.antagonist.len)
 				for(var/obj/item/I in H.GetAllContents())
 					var/full_print = H.get_full_print()
 					if(full_print in guild_fingerprints)
@@ -155,8 +155,8 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 	var/min_charge = initial(HC.maxcharge) * 0.6
 
 	//calculate guild (Liberty: Lonestar!) profits in a sane way
-	var/ending_balance = get_account_credits(department_accounts[DEPARTMENT_LSS])
-	var/datum/department/guild/guild_var = new/datum/department/guild
+	var/ending_balance = get_account_credits(department_accounts[DEPARTMENT_SERVICE])
+	var/datum/department/service/guild_var = new/datum/department/service
 	GLOB.supply_profit = ending_balance - guild_var.account_initial_balance
 
 	//Check station's power levels
@@ -187,7 +187,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 		GLOB.field_radius += S.field_radius
 	GLOB.field_radius = CLAMP(GLOB.field_radius, 0, world.maxx)
 
-	//Artificer's Guild (not to be confused with "Guild" as it is used in code, which means Lonestar on Liberty!) Modifiers
+	//Terra-Therma Union (not to be confused with "Guild" as it is used in code, which means Lonestar on Liberty!) Modifiers
 	if(GLOB.all_smes_powered)
 		GLOB.score_smes_powered = 350 //max = 350
 	GLOB.score_technomancer_objectives = GLOB.technomancer_objectives_completed * 25 //max: ~= 100
@@ -325,7 +325,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 
 	//Guild (Liberty)
 	dat += {"
-	<u>Artificer's Guild scores</u><br>
+	<u>Terra-Therma Union scores</u><br>
 	<b>Base score:</b> [green_text(GLOB.initial_technomancer_score)]<br>
 	<b>Faction objectives completed:</b> [GLOB.technomancer_objectives_completed] ([to_score_color(GLOB.score_technomancer_objectives)] Points)<br>
 	<b>All SMES Charged:</b> [GLOB.all_smes_powered ? "Yes" : "No"] ([to_score_color(GLOB.score_smes_powered)] Points)<br>
@@ -333,7 +333,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 	<b>Lost faction items:</b> [GLOB.technomancer_faction_item_loss] ([to_score_color(GLOB.score_technomancer_faction_item_loss)] Points)<br>
 	<b>Unpowered areas:</b> [GLOB.area_powerloss] ([to_score_color(GLOB.score_powerloss)] Points)<br>
 	<b>Areas with atmospheric problems:</b> [GLOB.area_fireloss] ([to_score_color(GLOB.score_fireloss)] Points)<br>
-	<b>Final Artificer's Guild score:</b> [get_color_score(GLOB.technomancer_score, GLOB.technomancer_score)] Points<br><br>
+	<b>Final Terra-Therma Union score:</b> [get_color_score(GLOB.technomancer_score, GLOB.technomancer_score)] Points<br><br>
 	"}
 
 	dat += "<br><hr>"
@@ -375,7 +375,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 			return GLOB.ironhammer_score
 		else if(mind.assigned_job.department == DEPARTMENT_ENGINEERING)
 			return GLOB.technomancer_score
-		else if(mind.assigned_job.department == DEPARTMENT_LSS)
+		else if(mind.assigned_job.department == DEPARTMENT_SERVICE)
 			return GLOB.guild_score
 		else if(mind.assigned_job.department == DEPARTMENT_CHURCH)
 			return GLOB.neotheology_score
@@ -392,7 +392,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 				. = TRUE
 			if(DEPARTMENT_ENGINEERING)
 				. = TRUE
-			if(DEPARTMENT_LSS)
+			if(DEPARTMENT_SERVICE)
 				. = TRUE
 			if(DEPARTMENT_CHURCH)
 				. = TRUE

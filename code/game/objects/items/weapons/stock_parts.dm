@@ -159,10 +159,10 @@
 	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1)
 	price_tag = 35
 
-//greyson positronic stock parts (rating 4)
+//similacrum positronic stock parts (rating 4)
 
 /obj/item/stock_parts/capacitor/one_star
-	name = "Greyson Positronic capacitor"
+	name = "Similacrum Robotics capacitor"
 	desc = "A super-high capacity capacitor used in the construction of a variety of devices."
 	icon_state = "one_capacitor"
 	origin_tech = list(TECH_POWER = 7, TECH_MATERIAL = 7)
@@ -171,7 +171,7 @@
 	price_tag = 40
 
 /obj/item/stock_parts/scanning_module/one_star
-	name = "Greyson Positronic scanning module"
+	name = "Similacrum Robotics scanning module"
 	desc = "A compact, high resolution phasic scanning module used in the construction of certain devices."
 	icon_state = "one_scan_module"
 	origin_tech = list(TECH_MAGNET = 7)
@@ -180,7 +180,7 @@
 	price_tag = 40
 
 /obj/item/stock_parts/manipulator/one_star
-	name = "Greyson Positronic manipulator"
+	name = "Similacrum Robotics manipulator"
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "one_mani"
 	origin_tech = list(TECH_MATERIAL = 7, TECH_DATA = 6)
@@ -189,7 +189,7 @@
 	price_tag = 40
 
 /obj/item/stock_parts/micro_laser/one_star
-	name = "Greyson Positronic micro-laser"
+	name = "Similacrum Robotics micro-laser"
 	icon_state = "one_laser"
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 7)
@@ -198,7 +198,7 @@
 	price_tag = 40
 
 /obj/item/stock_parts/matter_bin/one_star
-	name = "Greyson Positronic matter bin"
+	name = "Similacrum Robotics matter bin"
 	desc = "A container for hold compressed matter awaiting re-construction."
 	icon_state = "one_matter"
 	origin_tech = list(TECH_MATERIAL = 7)

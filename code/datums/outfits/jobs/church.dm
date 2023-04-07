@@ -25,3 +25,18 @@
 	uniform = /obj/item/clothing/under/rank/acolyte
 	shoes = /obj/item/clothing/shoes/reinforced
 	gloves = /obj/item/clothing/gloves/thick
+
+/decl/hierarchy/outfit/job/cargo/artist
+	name = OUTFIT_JOB_NAME("Lonestar - Artist")
+	uniform = /obj/item/clothing/under/rank/artist
+	suit = /obj/item/clothing/suit/artist
+	shoes = /obj/item/clothing/shoes/artist_shoes
+	head = /obj/item/clothing/head/beret/artist
+	glasses = /obj/item/clothing/glasses/artist
+	mask = /obj/item/clothing/mask/gas/artist_hat
+	l_pocket = /obj/item/bikehorn
+	backpack_contents = list(/obj/item/storage/hcases/scrap/job_artist = 1)
+
+/decl/hierarchy/outfit/job/cargo/artist/clown/post_equip(var/mob/living/carbon/human/H)
+	..()
+	H.mutations.Add(CLUMSY)

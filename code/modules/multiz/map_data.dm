@@ -107,18 +107,17 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 
 	var/default_spawn = "Cryogenic Storage"
 
-	var/allowed_jobs = list(/datum/job/premier, /datum/job/rd, /datum/job/pg, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/smc, /datum/job/swo, /datum/job/foreman,
-						/datum/job/supsec, /datum/job/inspector, /datum/job/medspec, /datum/job/trooper, /datum/job/officer, /datum/job/serg,
-						/datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist,
-						/datum/job/technomancer,
-						/datum/job/cargo_tech, /datum/job/mining, /datum/job/merchant,
-						/datum/job/salvager, /datum/job/pro,
-						/datum/job/clubworker, /datum/job/clubmanager, /datum/job/artist,
-						/datum/job/chaplain, /datum/job/acolyte, /datum/job/janitor, /datum/job/hydro,
+	var/allowed_jobs = list(/datum/job/premier, /datum/job/rp, /datum/job/pg, /datum/job/cso, /datum/job/chief_engineer, /datum/job/clubmanager, /datum/job/dc, /datum/job/shepherd,
+						/datum/job/armorer, /datum/job/investigator, /datum/job/sentry, /datum/job/watchmen,
+						/datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist,
+						/datum/job/engineer, /datum/job/mining,
+						/datum/job/trapper, /datum/job/shipbreaker,
+						/datum/job/bouncer, /datum/job/janitor, /datum/job/clubworker,
+						/datum/job/chaplain, /datum/job/acolyte, /datum/job/artist,
 						/datum/job/scientist, /datum/job/roboticist,
-						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/assistant,
-						/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter, /datum/job/off_colony_herbalist, /datum/job/outsider
+						/datum/job/ai, /datum/job/cyborg,
+						/datum/job/outsider
 						)
 
 	var/overmap_z
@@ -135,8 +134,8 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 	var/shuttle_called_message = "The shift end will happen in %ETA%. Any unfinished work should be completed before final call."
 	var/shuttle_recall_message = "Shift end aborted, return to normal operating conditions."
 
-	var/list/usable_email_tlds = list("nad_col.org","nadezhda.scg","nadezhda.net")
-	var/path = "nadezhda"
+	var/list/usable_email_tlds = list("nad_col.org","liberty.scg","liberty.net")
+	var/path = "liberty"
 
 	var/access_modify_region = list(
 		ACCESS_REGION_SECURITY = list(access_hos, access_change_ids),

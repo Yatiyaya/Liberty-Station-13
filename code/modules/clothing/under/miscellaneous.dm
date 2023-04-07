@@ -281,19 +281,19 @@
 
 /obj/item/clothing/under/iron_lock_security
 	name = "Iron Lock Security Uniform"
-	desc = "An outdated uniform of a now extinct corporation \"Iron Lock Security\". A private security firm that got its start centuries ago subcontracted by Greyson Positronics before being phased out."
+	desc = "An outdated uniform of a now extinct corporation \"Iron Lock Security\". A private security firm that got its start centuries ago subcontracted by Similacrum Positronics before being phased out."
 	icon_state = "northtech"
 	has_sensor = 0
 
 /obj/item/clothing/under/os_jumpsuit
-	name = "Greyson Positronic jumpsuit"
-	desc = "An uniform that was produced by Greyson Positronics, cleaning to enginering this over engineered suit was used. Surprisingly the suit senors still work."
+	name = "Similacrum Robotics jumpsuit"
+	desc = "An uniform that was produced by Similacrum Positronics, cleaning to enginering this over engineered suit was used. Surprisingly the suit senors still work."
 	icon_state = "os_jumpsuit"
 
 /obj/item/clothing/under/os_jumpsuit/bdu
-	name = "Greyson Positronic jumpsuit"
-	desc = "A Battle Dress Uniform produced by Greyson Positronics for their more style oriented personnel"
-	icon_state = "bdugreyson"
+	name = "Similacrum Robotics jumpsuit"
+	desc = "A Battle Dress Uniform produced by Similacrum Positronics for their more style oriented personnel"
+	icon_state = "bdusimilacrum"
 
 /obj/item/clothing/under/os_jumpsuit/bdu/verb/toggle_style()
 	set name = "Adjust style"

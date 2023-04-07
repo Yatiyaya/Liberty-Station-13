@@ -133,6 +133,9 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 /datum/experiment_data/proc/read_science_tool(obj/item/device/science_tool/I)
 	var/points = 0
 
+	points += I.raw_data_points
+	I.raw_data_points = 0
+
 	for(var/weapon in I.scanned_autopsy_weapons)
 		if(!(weapon in saved_autopsy_weapons))
 			saved_autopsy_weapons += weapon
@@ -269,11 +272,13 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 	channels = list("Science" = 1)
 	var/targetBoom
 	var/stored_points //This is how many points we hve stored, we use them up when successfull
+	var/points_to_use = 0
 
 /obj/item/device/radio/beacon/explosion_watcher/examine()
 	..()
 	to_chat(usr, "EXPECTED EXPLOSION - [targetBoom]")
 	to_chat(usr, "Points Left - [stored_points]")
+	to_chat(usr, "Raw Points Available Left - [points_to_use]")
 	return
 
 /obj/item/device/radio/beacon/explosion_watcher/ex_act(severity)
@@ -304,7 +309,7 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 
 
 			stored_points -= calculated_research_points
-			RD.files.adjust_research_points(calculated_research_points)
+			points_to_use = calculated_research_points
 
 	if(calculated_research_points > 0 && stored_points)
 		autosay("Detected explosion with power level [power]. Expected explosion was [targetBoom]. Received [calculated_research_points] Research Points", name ,"Science")
@@ -313,6 +318,15 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 	if(0 >= calculated_research_points)
 		autosay("Detected explosion with power level [power], Expected explosion was [targetBoom]. Test Results Outside Expected Range", name ,"Science")
 	targetBoom = rand(10,35)
+
+/obj/item/device/radio/beacon/explosion_watcher/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/device/science_tool))
+		var/obj/item/device/science_tool/ST = I
+		ST.raw_data_points += points_to_use
+		to_chat(user, SPAN_WARNING("You quickly add the datajack to the watcher and download the [points_to_use] points!"))
+		points_to_use = 0
+		return
+	..()
 
 // Universal tool to get research points from autopsy reports, virus info reports, archeology reports, slime cores
 /obj/item/device/science_tool
@@ -348,13 +362,15 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 	var/list/scanned_fruittraits = list()
 	//Datablock Data
 	var/datablocks = 0
+	//Flat out RnD points 1:1 to give
+	var/raw_data_points = 0
 
 /obj/item/device/science_tool/Initialize()
 	. = ..()
 	experiments = new
 
 /obj/item/device/science_tool/attack(mob/living/M, mob/living/user)
-	if(!usr.stats?.getPerk(PERK_SI_SCI) || !user.stat_check(STAT_COG, STAT_LEVEL_ADEPT))
+	if(!usr.stats?.getPerk(PERK_SCIENCE) || !user.stat_check(STAT_COG, STAT_LEVEL_ADEPT))
 		to_chat(user, SPAN_WARNING("Your cognitive understanding isn't high enough to use this!"))
 		return
 
@@ -556,3 +572,31 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 /obj/item/computer_hardware/hard_drive/portable/research_points/rare
 	min_points = 10000
 	max_points = 20000
+
+/obj/proc/givepointscompont(raw_data_points)
+
+	var/datum/component/rnd_points/I = AddComponent(/datum/component/rnd_points)
+	I.data_points = raw_data_points
+	I.holding_obj = src
+
+/datum/component/rnd_points
+	dupe_mode = COMPONENT_DUPE_UNIQUE
+	can_transfer = TRUE
+	var/data_points = 0
+	var/obj/holding_obj //we ASSUME that are holder is an object, after all what else would be able to *PHYSICALY* hold points????
+
+/datum/component/rnd_points/RegisterWithParent()
+	RegisterSignal(parent, COMSIG_ATTACKBY, .proc/attempt_transfer)
+
+/datum/component/rnd_points/proc/attempt_transfer(obj/I, var/mob/living/user, params)
+	if(!holding_obj)
+		return
+	//Currently only used in mecha's can be exspanded to other things, not sure why you would do that tho
+	if(ismecha(holding_obj))
+		var/obj/mecha/mechtarget = holding_obj
+		if(mechtarget.state == 3 && istype(I, /obj/item/device/science_tool)) //HAVE to be at the wire stage, to you know, data jack into wires
+			var/obj/item/device/science_tool/ST = I
+			ST.raw_data_points += data_points
+			user.visible_message("[user] attaches [I]'s datajack to [mechtarget.name].", "You attach [I]'s datajack to [mechtarget.name] gathering [data_points] data points")
+			data_points = 0
+			return

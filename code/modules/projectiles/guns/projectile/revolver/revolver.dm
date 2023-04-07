@@ -1,47 +1,38 @@
 /obj/item/gun/projectile/revolver
-	name = "\"Minotaur\" magnum revolver"
-	desc = "The \"H&S\" \"Minotaur\" is a revolver of choice when you absolutely, positively need to make a fist-sized hole in someone, but can't afford to do it in style. Uses 10mm Magnum bullets... always wanting more."
-	icon = 'icons/obj/guns/projectile/revolver.dmi'
-	icon_state = "revolver"
-	item_state = "revolver"
+	name = "Debug revolver"
+	desc = "You shouldn't find this. Tell us if you do. Master-path of revolvers for testing purposes."			// This exists solely to set revolvers up to work with spinning, cylander, etc.
+	icon = 'icons/obj/guns/projectile/ranger.dmi'
+	icon_state = "ranger"
+	item_state = "ranger"
 	caliber = CAL_MAGNUM
 	force = WEAPON_FORCE_NORMAL
 	can_dual = TRUE
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
-	max_shells = 6
+	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
-	cocked_sound 	= 'sound/weapons/guns/interact/rev_cock.ogg'
+	unload_sound = 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound = 'sound/weapons/guns/interact/rev_magin.ogg'
+	cocked_sound = 'sound/weapons/guns/interact/rev_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
-	price_tag = 650
 	fire_delay = 3 //all revolvers can fire faster, but have huge recoil
-	damage_multiplier = 1.2
-	armor_penetration = 0.65 // Insanely powerful handcannon, but worthless against heavy armor
-	init_recoil = HANDGUN_RECOIL(1.3)
-	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
+	init_recoil = HANDGUN_RECOIL(1.2)
 	var/drawChargeMeter = TRUE
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
-	fire_animatio = TRUE
-	allow_racking = FALSE
-	serial_type = "H&S"
 
-	wield_delay = 0.4 SECOND
-	wield_delay_factor = 0.4 // 40 vig
-
-	gun_parts = list(/obj/item/part/gun/frame/minotaur = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/magnum = 1)
-
-/obj/item/part/gun/frame/minotaur
-	name = "Minotaur frame"
-	desc = "A Minotaur revolver frame. The officer's choice."
-	icon_state = "frame_revolver"
-	result = /obj/item/gun/projectile/revolver
-	resultvars = list(/obj/item/gun/projectile/revolver)
-	gripvars = list(/obj/item/part/gun/grip/black)
-	mechanismvar = /obj/item/part/gun/mechanism/revolver
-	barrelvars = list(/obj/item/part/gun/barrel/magnum)
+//Style code - currently no use. Someday (tm)
+/*/obj/item/gun/projectile/revolver/pickup(mob/user)
+	. = ..()
+	if(ishuman(user))
+		var/mob/living/carbon/human/stylish = user
+		if(stylish.style > 4)
+			style_damage_multiplier = stylish.style / 4 // this is so two stylish users that both shoot each other once at full slickness
+			to_chat(user, SPAN_NOTICE("You feel more confident with a revolver in your hand.")) // ends with the more stylish being the winner, commonly known as High Noon
+		else
+			style_damage_multiplier = 1
+			to_chat(user, SPAN_WARNING("You don't feel stylish enough to use a revolver properly."))
+*/
 
 /obj/item/gun/projectile/revolver/verb/spin_cylinder()
 	set name = "Spin revolver"
@@ -78,6 +69,6 @@
 	else
 		add_overlay("[icon_state]_on")
 
-
-/obj/item/gun/projectile/revolver/update_icon()
-	update_charge()
+/obj/item/gun/projectile/revolver/Initialize()
+	. = ..()
+	update_icon()

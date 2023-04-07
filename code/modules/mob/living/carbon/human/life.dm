@@ -15,9 +15,9 @@
 #define HEAT_GAS_DAMAGE_LEVEL_2 4 //Amount of damage applied when the current breath's temperature passes the 400K point
 #define HEAT_GAS_DAMAGE_LEVEL_3 8 //Amount of damage applied when the current breath's temperature passes the 1000K point
 
-#define COLD_GAS_DAMAGE_LEVEL_1 0.5 //Amount of damage applied when the current breath's temperature just passes the 260.15k safety point
-#define COLD_GAS_DAMAGE_LEVEL_2 1.5 //Amount of damage applied when the current breath's temperature passes the 200K point
-#define COLD_GAS_DAMAGE_LEVEL_3 3 //Amount of damage applied when the current breath's temperature passes the 120K point
+#define COLD_GAS_DAMAGE_LEVEL_1 0.1 //Amount of damage applied when the current breath's temperature just passes the 260.15k safety point
+#define COLD_GAS_DAMAGE_LEVEL_2 0.5 //Amount of damage applied when the current breath's temperature passes the 200K point
+#define COLD_GAS_DAMAGE_LEVEL_3 1   //Amount of damage applied when the current breath's temperature passes the 120K point
 
 #define FIRE_ALERT_NONE 0 //No fire alert
 #define FIRE_ALERT_COLD 1 //Frostbite
@@ -489,12 +489,15 @@
 			switch(breath.temperature)
 				if(species.cold_level_3 to species.cold_level_2)
 					damage = COLD_GAS_DAMAGE_LEVEL_3
+					frost += COLD_GAS_DAMAGE_LEVEL_3
 				if(species.cold_level_2 to species.cold_level_1)
 					damage = COLD_GAS_DAMAGE_LEVEL_2
+					frost += COLD_GAS_DAMAGE_LEVEL_2
 				else
 					damage = COLD_GAS_DAMAGE_LEVEL_1
+					frost += COLD_GAS_DAMAGE_LEVEL_1
 
-			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Excessive Cold")
+			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Artic Inhalation")
 			fire_alert = FIRE_ALERT_COLD
 		else if(breath.temperature >= species.heat_level_1)
 			if(prob(20))
@@ -503,10 +506,13 @@
 			switch(breath.temperature)
 				if(species.heat_level_1 to species.heat_level_2)
 					damage = HEAT_GAS_DAMAGE_LEVEL_1
+					frost -= HEAT_GAS_DAMAGE_LEVEL_1
 				if(species.heat_level_2 to species.heat_level_3)
 					damage = HEAT_GAS_DAMAGE_LEVEL_2
+					frost -= HEAT_GAS_DAMAGE_LEVEL_2
 				else
 					damage = HEAT_GAS_DAMAGE_LEVEL_3
+					frost -= HEAT_GAS_DAMAGE_LEVEL_3
 
 			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Excessive Heat")
 			fire_alert = FIRE_ALERT_HOT
@@ -531,6 +537,7 @@
 	else if(breath.temperature <= species.cold_discomfort_level)
 		species.get_environment_discomfort(src,"cold")
 
+//Heavilly edited for lib
 /mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
 	if(!environment)
 		return
@@ -594,10 +601,13 @@
 		switch(bodytemperature)
 			if(species.heat_level_1 to species.heat_level_2)
 				burn_dam = HEAT_DAMAGE_LEVEL_1
+				frost -= HEAT_DAMAGE_LEVEL_1
 			if(species.heat_level_2 to species.heat_level_3)
 				burn_dam = HEAT_DAMAGE_LEVEL_2
+				frost -= HEAT_DAMAGE_LEVEL_2
 			if(species.heat_level_3 to INFINITY)
 				burn_dam = HEAT_DAMAGE_LEVEL_3
+				frost -= HEAT_DAMAGE_LEVEL_3
 		take_overall_damage(burn=burn_dam, used_weapon = "High Body Temperature")
 		fire_alert = max(fire_alert, FIRE_ALERT_HOT)
 
@@ -606,15 +616,13 @@
 		if(status_flags & GODMODE)	return 1	//godmode
 
 		if(!istype(loc, /obj/machinery/atmospherics/unary/cryo_cell))
-			var/burn_dam = 0
 			switch(bodytemperature)
 				if(-INFINITY to species.cold_level_3)
-					burn_dam = COLD_DAMAGE_LEVEL_1
+					frost += COLD_DAMAGE_LEVEL_1
 				if(species.cold_level_3 to species.cold_level_2)
-					burn_dam = COLD_DAMAGE_LEVEL_2
+					frost += COLD_DAMAGE_LEVEL_2
 				if(species.cold_level_2 to species.cold_level_1)
-					burn_dam = COLD_DAMAGE_LEVEL_3
-			take_overall_damage(burn=burn_dam, used_weapon = "Low Body Temperature")
+					frost += COLD_DAMAGE_LEVEL_3
 			fire_alert = max(fire_alert, FIRE_ALERT_COLD)
 
 	// Account for massive pressure differences.  Done by Polymorph
@@ -677,6 +685,7 @@
 	if(bodytemperature < species.cold_level_1) //260.15 is 310.15 - 50, the temperature where you start to feel effects.
 		if(nutrition >= 2) //If we are very, very cold we'll use up quite a bit of nutriment to heat us up.
 			nutrition -= 2
+		frost += 0.5
 		var/recovery_amt = max((body_temperature_difference / BODYTEMP_AUTORECOVERY_DIVISOR), BODYTEMP_AUTORECOVERY_MINIMUM)
 		//world << "Cold. Difference = [body_temperature_difference]. Recovering [recovery_amt]"
 //				log_debug("Cold. Difference = [body_temperature_difference]. Recovering [recovery_amt]")
@@ -763,8 +772,11 @@
 
 		if(CE_PAINKILLER in chem_effects)
 			analgesic = chem_effects[CE_PAINKILLER]
-		if(!(CE_ALCOHOL in chem_effects) && stats.getPerk(PERK_INSPIRATION))
-			stats.removePerk(PERK_ACTIVE_INSPIRATION)
+		if(!(CE_ALCOHOL in chem_effects))
+			if(stats.getPerk(PERK_INSPIRATION))
+				stats.removePerk(PERK_ACTIVE_INSPIRATION)
+			if(stats.getPerk(PERK_ALCOHOLIC))
+				stats.removePerk(PERK_ALCOHOLIC_ACTIVE)
 
 		var/total_plasmaloss = 0
 		for(var/obj/item/I in src)
@@ -831,12 +843,12 @@
 			silent = 0
 			return 1
 		if(health <= death_threshold) //No health = death
-			if(stats.getPerk(PERK_UNFINISHED_DELIVERY) && prob(33)) //Unless you have this perk
+			if(stats.getPerk(PERK_LAZARUS_PROTOCOL) && prob(33)) //Unless you have this perk
 				heal_organ_damage(20, 20)
 				adjustOxyLoss(-100)
 				AdjustSleeping(rand(20,30))
 				updatehealth()
-				stats.removePerk(PERK_UNFINISHED_DELIVERY)
+				stats.removePerk(PERK_LAZARUS_PROTOCOL)
 				learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
 			else
 				death()
@@ -1159,6 +1171,7 @@
 /mob/living/carbon/human/rejuvenate()
 	sanity.setLevel(sanity.max_level)
 	restore_blood()
+	frost = 0
 	..()
 
 /mob/living/carbon/human/handle_vision()

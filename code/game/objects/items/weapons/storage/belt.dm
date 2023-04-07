@@ -82,7 +82,7 @@
 	new /obj/item/tool/wirecutters(src)
 	new /obj/item/stack/cable_coil/random(src)
 
-/obj/item/storage/belt/utility/full/guild/populate_contents()
+/obj/item/storage/belt/utility/full/union/populate_contents()
 	new /obj/item/tool/hammer(src)
 	new /obj/item/tool/wrench(src)
 	new /obj/item/tool/weldingtool(src)
@@ -345,13 +345,11 @@
 		/obj/item/device/radio,
 		/obj/item/tool/knife,
 		/obj/item/tool/shovel/combat,
-		/obj/item/gun/projectile/mk58,
+		/obj/item/gun/projectile/liberty,
 		/obj/item/gun/projectile/makarov,
 		/obj/item/gun/projectile/clarissa,
 		/obj/item/gun/projectile/colt,
 		/obj/item/gun/energy/gun,
-		/obj/item/gun/projectile/giskard,
-		/obj/item/gun/projectile/olivaw,
 		/obj/item/gun/projectile/revolver/detective,
 		/obj/item/gun/energy/gun/martin,
 		/obj/item/gun/projectile/boltgun/flare_gun,
@@ -519,15 +517,15 @@
 	icon_state = "webbing_ih"
 	item_state = "webbing_ih"
 
-/obj/item/storage/belt/webbing/artificer
-	name = "artificer guild web harness"
-	desc = "Everything you need at hand, at belt. This one is hand crafted by the artificer guild, allowing it to better store larger items by sacrificing space. Better than most tool belts."
+/obj/item/storage/belt/webbing/Union
+	name = "Terra-Therma Worker's Union web harness"
+	desc = "Everything you need at hand, at belt. This one is hand crafted by the Terra-Therma Worker's Union, allowing it to better store larger items by sacrificing space. Better than most tool belts."
 	cant_hold = list(/obj/item/storage/pouch,
 					 /obj/item/storage/firstaid,
 					 /obj/item/storage/toolbox,
 					 /obj/item/storage/briefcase) //These types of storage in a belt
 
-/obj/item/storage/belt/webbing/artificer/verb/toggle_storage()
+/obj/item/storage/belt/webbing/Union/verb/toggle_storage()
 	set name = "Adjust Storage"
 	set category = "Object"
 	set src in usr
@@ -571,11 +569,11 @@
 		return 1
 
 //Start with normal
-/obj/item/storage/belt/webbing/artificer/ert
+/obj/item/storage/belt/webbing/Union/ert
 	storage_slots = 9 //Like old belts used to be
 	max_w_class = ITEM_SIZE_NORMAL
 
-/obj/item/storage/belt/webbing/artificer/ert/populate_contents()
+/obj/item/storage/belt/webbing/Union/ert/populate_contents()
 	new /obj/item/tool/crowbar/pneumatic(src)
 	new /obj/item/tool/hammer/deadblow(src)
 	new /obj/item/tool/multitool/advanced(src)

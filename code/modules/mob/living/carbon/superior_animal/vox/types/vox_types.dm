@@ -1,7 +1,7 @@
 /mob/living/carbon/superior_animal/vox/posin_thrower
 	name = "Mai jefa guba"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one has spears coated in something..."
-	icon_state = "vox_silversynth"
+	icon_state = "vox_silversynth_tribal"
 
 	melee_damage_lower = 12
 	melee_damage_upper = 16
@@ -19,7 +19,7 @@
 /mob/living/carbon/superior_animal/vox/thrower_spear
 	name = "Sararin samaniya"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one throws spears with deadly speed!"
-	icon_state = "vox_abyssal"
+	icon_state = "vox_abyssal_tribal"
 
 	melee_damage_lower = 12
 	melee_damage_upper = 16
@@ -37,7 +37,7 @@
 /mob/living/carbon/superior_animal/vox/armord
 	name = "Garkuwar bango"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one's chest looks rather tougher than the rest of them."
-	icon_state = "vox_solar"
+	icon_state = "vox_solar_tribal"
 
 	melee_damage_lower = 18
 	melee_damage_upper = 20
@@ -51,7 +51,7 @@
 /mob/living/carbon/superior_animal/vox/hider
 	name = "Inuwa kisa"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one is harder to see as it stalks low to the ground, hiding in bushes or other shadows."
-	icon_state = "vox_ultraviolet"
+	icon_state = "vox_ultraviolet_tribal"
 
 	melee_damage_lower = 16
 	melee_damage_upper = 22
@@ -79,7 +79,7 @@
 /mob/living/carbon/superior_animal/vox/ashen
 	name = "Mai kisan toka"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. It looks rather strong."
-	icon_state = "vox_pitchblack"
+	icon_state = "vox_pitchblack_tribal"
 
 	turns_per_move = 7
 	see_in_dark = 20
@@ -97,7 +97,7 @@
 /mob/living/carbon/superior_animal/vox/weak
 	name = "Yaro mafarauci"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one is young but still deadly."
-	icon_state = "vox_acid"
+	icon_state = "vox_acid_tribal"
 
 	melee_damage_lower = 12
 	melee_damage_upper = 15
@@ -112,7 +112,7 @@
 /mob/living/carbon/superior_animal/vox/rage
 	name = "Jan barazana"
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. Their long arms pack a stronger than normal punch."
-	icon_state = "vox_infrared"
+	icon_state = "vox_infared_tribal"
 
 	reload_message = "picks up a rock!"
 

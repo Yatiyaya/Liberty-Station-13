@@ -69,7 +69,7 @@
 //Common - you can find those everywhere
 /obj/item/oddity/common/blueprint
 	name = "strange blueprint"
-	desc = "There's no telling what this design is supposed to be. Whatever could be built from this likely wouldn't work yet the Greyson Positronic logo near the top makes one wonder."
+	desc = "There's no telling what this design is supposed to be. Whatever could be built from this likely wouldn't work yet the Similacrum Robotics logo near the top makes one wonder."
 	icon_state = "blueprint"
 	prob_perk = 10 //Old blueprints nothing much to manifest on
 	oddity_stats = list(
@@ -120,7 +120,7 @@
 
 /obj/item/oddity/common/old_newspaper
 	name = "odd newspaper clipping" //Old old news papers are a good joke
-	desc = "It contains a report on some old and strange phenomenon. Maybe it's lies, maybe it's corporate experiments gone wrong. The date listed on it is impossible, yet it bears the stamp of the Nadezhda."
+	desc = "It contains a report on some old and strange phenomenon. Maybe it's lies, maybe it's corporate experiments gone wrong. The date listed on it is impossible, yet it bears the stamp of the Liberty."
 	icon_state = "old_newspaper"
 	prob_perk = 10 //Grounded in rality and able to be discarded as yellow journalism
 	oddity_stats = list(
@@ -152,7 +152,7 @@
 
 /obj/item/oddity/common/paper_omega
 	name = "collection of obscure reports"
-	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Greyson, Soteria, or an independent group."
+	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Similacrum, Soteria, or an independent group."
 	icon_state = "reports1"
 	prob_perk = 45 //The skeptical mind of the inker helps keep it grounded but it shows something unable to be shaken out of the mind
 	oddity_stats = list(
@@ -340,7 +340,7 @@
 
 /obj/item/oddity/techno
 	name = "Unknown technological part"
-	desc = "A technological part made by the Artificer Perfection Cube."
+	desc = "A technological part made by the Union Perfection Cube."
 	icon_state = "techno_part1"
 	prob_perk = 25 //Unknown tech unknown parts unknown uses by a cult much to exspand the mind in
 
@@ -670,7 +670,7 @@
 	. = ..()
 	if(!iscarbon(user) || !issilicon(user))
 		return//Prevents ghosts form making a runtime
-	if(!user.stats?.getPerk(PERK_SI_SCI) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
+	if(!user.stats?.getPerk(PERK_SCIENCE) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
 		to_chat(usr, SPAN_WARNING("This tool is far too complex for you to comprehend how to even use it. The data and formulas displayed look like complete alien gibberish."))
 		return
 	var/area/my_area = get_area(src)

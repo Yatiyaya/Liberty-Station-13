@@ -28,11 +28,6 @@
 	desc = "The lasing medium of this prototype is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core."
 	build_path = /obj/item/gun/energy/lasercannon/rnd
 
-/datum/design/research/item/weapon/c20r
-	name = "Lightweight C20R"
-	desc = "The C-20r is a lightweight and rapid-firing SMG. Uses 9mm rounds."
-	build_path = /obj/item/gun/projectile/automatic/c20r/sci
-
 /datum/design/research/item/weapon/centurio
 	name = "\"Centurio\" Plasma Pistol"
 	build_path = /obj/item/gun/energy/centurio
@@ -85,7 +80,7 @@
 
 /datum/design/research/item/clothing/soteriaarmorchest
 	name = "'Mark II' environmental protection suit"
-	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Artificer Guilds original design. \
+	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build."
 	build_path = /obj/item/clothing/suit/armor/vest/soteriasuit
 
@@ -127,7 +122,7 @@
 /datum/design/research/item/weapon/hatton
 	name = "Soteria Breaching Tool \"Q-del\""
 	desc = "This breaching tool was reverse engineered from the \"Hatton\" design. \
-			Despite the Artificer's Guild \"Hatton\" being traded on the free market through guild channels, \
+			Despite the Terra-Therma Union \"Hatton\" being traded on the free market through guild channels, \
 			this device suffers from a wide number of reliability issues stemming from it being lathe printed."
 	build_path = /obj/item/hatton/moebius
 
@@ -206,18 +201,6 @@
 	build_path = /obj/item/ammo_magazine/ammobox/rifle_75_small/laser
 	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
-/datum/design/research/item/ammo/heavy_rifle_408
-	name = "Heavy Rifle 8.6mm laser casing."
-	desc = "Heavy Rifle 8.6x70mm casing fitted with a one time use laser payload."
-	build_path = /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/laser
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
-
-/datum/design/research/item/ammo/kurtz_laser
-	name = "Specialized 12mm, laser cases"
-	desc = "12mm cases fitted with a one time use laser payload."
-	build_path = /obj/item/ammo_magazine/ammobox/kurtz_50/laser
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
-
 /datum/design/research/item/ammo/fancy_dart
 	name = "carbine chem dart"
 	desc = "A hollow dart that loads into a cartridge."
@@ -267,10 +250,6 @@
 	build_path = /obj/item/hydrogen_fuel_cell
 
 //Disks
-/datum/design/research/item/disk/blackshield
-	name = "Blackshield Sovereignty Disk"
-	desc = "A unique disk for printing and creating Blackshield arms and ammunition."
-	build_path = /obj/item/computer_hardware/hard_drive/portable/design/blackshield
 
 /datum/design/research/item/weapon/bastion
 	name = "bastion shield"

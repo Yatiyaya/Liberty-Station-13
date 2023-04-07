@@ -92,7 +92,7 @@
 		material = get_material_by_name(MATERIAL_STEEL)
 		custom_appearance = custom_table_appearance["Onestar"] //one star table
 		reinforced = get_material_by_name(MATERIAL_STEEL)
-		name = "greyson table"
+		name = "similacrum table"
 		..()
 
 //BENCH PRESETS

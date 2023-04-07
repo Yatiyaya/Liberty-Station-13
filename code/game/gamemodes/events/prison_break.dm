@@ -14,25 +14,25 @@
 
 	var/eventDept = "Security"			//Department name in announcement
 	var/list/areaName = list("Brig")	//Names of areas mentioned in AI and Engineering announcements
-	var/list/areaType = list(/area/nadezhda/security/prison, /area/nadezhda/security/brig)	//Area types to include.
+	var/list/areaType = list(/area/liberty/security/prison, /area/liberty/security/brig)	//Area types to include.
 	var/list/areaNotType = list()		//Area types to specifically exclude.
 
 /datum/event/prison_break/virology
 	eventDept = "Medical"
 	areaName = list("Virology")
-	areaType = list(/area/nadezhda/medical/virology, /area/nadezhda/medical/virologyaccess)
+	areaType = list(/area/liberty/medical/virology, /area/liberty/medical/virologyaccess)
 
 /datum/event/prison_break/xenobiology
 	eventDept = "Science"
 	areaName = list("Xenobiology")
-	areaType = list(/area/nadezhda/rnd/xenobiology)
-	areaNotType = list(/area/nadezhda/rnd/xenobiology/xenoflora, /area/nadezhda/rnd/xenobiology/xenoflora_storage)
+	areaType = list(/area/liberty/rnd/xenobiology)
+	areaNotType = list(/area/liberty/rnd/xenobiology/xenoflora, /area/liberty/rnd/xenobiology/xenoflora_storage)
 
 /datum/event/prison_break/station
 	eventDept = "Station"
 	areaName = list("Brig","Virology","Xenobiology")
-	areaType = list(/area/nadezhda/security/prison, /area/nadezhda/security/brig, /area/nadezhda/medical/virology, /area/nadezhda/medical/virologyaccess, /area/nadezhda/rnd/xenobiology)
-	areaNotType = list(/area/nadezhda/rnd/xenobiology/xenoflora, /area/nadezhda/rnd/xenobiology/xenoflora_storage)
+	areaType = list(/area/liberty/security/prison, /area/liberty/security/brig, /area/liberty/medical/virology, /area/liberty/medical/virologyaccess, /area/liberty/rnd/xenobiology)
+	areaNotType = list(/area/liberty/rnd/xenobiology/xenoflora, /area/liberty/rnd/xenobiology/xenoflora_storage)
 
 
 /datum/event/prison_break/setup()

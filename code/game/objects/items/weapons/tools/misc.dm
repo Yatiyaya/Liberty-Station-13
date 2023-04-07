@@ -16,7 +16,7 @@
 
 /obj/item/tool/polytool
 	name = "\"Jolly Co-operation\" polytool"
-	desc = "One of the few jointly designed tools by both Lonestar Shipping Solutions and the Artificer's Guild, a rather curious attempt at merging the munchkin 5000 of lonestar infamy and \
+	desc = "One of the few jointly designed tools by both Lonestar Shipping Solutions and the Terra-Therma Union, a rather curious attempt at merging the munchkin 5000 of lonestar infamy and \
 	designs taken directly from the guild arc welder. What it produced was a munchkin and arc welder combo with much finer tuned properties, efficient fuel economy, comfortable hand grips, and plenty of slots for tool augments."
 	icon_state = "polytool"
 	item_state = "polytool"
@@ -50,8 +50,8 @@
 	max_upgrades = 0 //Superior in all ways to the munchkin and arc welder as a tool, only way to obtain it is through guild crafting or getting really lucky in cargo tech lockers. Give how fuck rare munckins are, balance by scarcity factor. -Kaz
 
 /obj/item/tool/medmultitool
-	name = "Greyson Positronic medical omnitool"
-	desc = "A compact Greyson Positronic medical omnitool. It has all surgery tools and takes a medium cell in its handle."
+	name = "Similacrum Robotics medical omnitool"
+	desc = "A compact Similacrum Robotics medical omnitool. It has all surgery tools and takes a medium cell in its handle."
 	icon_state = "medmulti"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLATINUM = 2)
 	flags = CONDUCT
@@ -63,11 +63,11 @@
 	workspeed = 1.2
 	price_tag = 1400 // Super fancy
 	degradation = 2
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 /obj/item/tool/medmultitool/medimplant
 	name = "Soteria medical omnitool implant"
-	desc = "An all-in-one medical tool based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
+	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
 	icon_state = "medmulti_sci"
 	matter = null
 	force = WEAPON_FORCE_PAINFUL
@@ -79,7 +79,7 @@
 	degradation = 0.5
 	workspeed = 0.8
 	price_tag = 600 // Not nearly as fancy.
-	allow_greyson_mods = FALSE
+	allow_similacrum_mods = FALSE
 
 	use_power_cost = 1.2
 	suitable_cell = /obj/item/cell/medium
@@ -88,7 +88,7 @@
 
 /obj/item/tool/medmultitool/medimplant/sci
 	name = "Soteria medical omnitool"
-	desc = "An all-in-one medical tool based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
+	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
 	icon_state = "medimplant"
 	matter = null //Nope
 	degradation = 1
@@ -110,7 +110,7 @@
 
 /obj/item/tool/medmultitool/medimplant/organic
 	name = "organic medical omnitool"
-	desc = "An all-in-one medical tool implant based on the legendary Greyson Positronic model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels. This version is made of entirely organic materials and doesn't require a power cell, sadly it cannot be upgraded and work takes slightly longer, but at least it is self repairing."
+	desc = "An all-in-one medical tool implant based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels. This version is made of entirely organic materials and doesn't require a power cell, sadly it cannot be upgraded and work takes slightly longer, but at least it is self repairing."
 	icon_state = "organicmedimplant"
 	use_power_cost = 0
 	suitable_cell = null
@@ -271,3 +271,36 @@
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
+
+/obj/item/tool/engimultitool
+	name = "\"Little Helper\" Omnitool"
+	desc = "The Terra-Therma \"Little Helper\" is a mechanized, handheld all-in-one tool that automatically selects the right tool for the job. Convenient to use and highly customizable but less effecient than specialized tools and not suitable for advanced crafting applications."
+	icon_state = "engi_omni"
+	max_health = 300
+	w_class = ITEM_SIZE_NORMAL
+	worksound = WORKSOUND_DRIVER_TOOL
+	switched_on_qualities = list(QUALITY_SCREW_DRIVING = 30, QUALITY_BOLT_TURNING = 30, QUALITY_DRILLING = 30, QUALITY_PRYING = 30, QUALITY_WIRE_CUTTING = 30, QUALITY_HAMMERING = 30, QUALITY_SHOVELING = 30, QUALITY_SAWING = 30, QUALITY_CUTTING = 30)
+	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 3)
+	price_tag = 1400
+	use_power_cost = 2
+	suitable_cell = /obj/item/cell/medium
+	toggleable = TRUE
+	glow_color = COLOR_BLUE_LIGHT
+	max_upgrades = 5
+	workspeed = 0.8
+
+/obj/item/tool/engimultitool/turn_on(mob/user)
+	if (cell && cell.charge > 0)
+		item_state = "[initial(item_state)]_on"
+		to_chat(user, SPAN_NOTICE("You switch [src] on."))
+		playsound(loc, 'sound/effects/sparks4.ogg', 50, 1)
+		..()
+	else
+		item_state = initial(item_state)
+		to_chat(user, SPAN_WARNING("[src] has no power!"))
+
+/obj/item/tool/engimultitool/turn_off(mob/user)
+	item_state = initial(item_state)
+	playsound(loc, 'sound/effects/sparks1.ogg', 50, 1)
+	to_chat(user, SPAN_NOTICE("You switch [src] off."))
+	..()
