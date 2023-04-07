@@ -43,8 +43,8 @@
 	allow_greyson_mods = FALSE
 
 /obj/item/gun/energy/cog/sprocket
-	name = "Soteria \"Sprocket\" laser carbine"
-	desc = "Originally a Greyson Positronic design, tinkered by Marshals to allow nonlethal reduction of rowdy personnel, this gun has been further modified by Soteria to include a foldable stock, \
+	name = "CAPSA \"Sprocket\" laser carbine"
+	desc = "Originally a Greyson Positronic design, tinkered by Marshals to allow nonlethal reduction of rowdy personnel, this gun has been further modified by CAPSA to include a foldable stock, \
 			making it lightweight and easy to operate by non-trained personnel. The main disabler laser can neutralize the rowdiest patients at the cost of heavy cell usage."
 	icon = 'icons/obj/guns/energy/sprocket.dmi'
 	icon_state = "sprocket"

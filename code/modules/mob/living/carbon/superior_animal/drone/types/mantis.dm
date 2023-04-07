@@ -1,8 +1,8 @@
 // Less HP, less damage, but faster and can attack in an AoE and pin down mobs.
 /mob/living/carbon/superior_animal/handmade/mantis
 	name = "Custom-made Mantis Drone"
-	desc = "Built from the Soteria robotics division's craftsmanship, and gathered designs of Greyson positronics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
-	icon_state = "soteria_mantis_handmade"
+	desc = "Built from the CAPSA robotics division's craftsmanship, and gathered designs of Greyson positronics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	icon_state = "CAPSA_mantis_handmade"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	health = 450
 	maxHealth = 450

@@ -31,35 +31,35 @@
 	maxcharge = 20000
 
 /obj/item/cell/large/moebius
-	name = "Soteria \"Power-Geyser 2000L\""
-	desc = "Soteria Institute-brand rechargeable L-standardized power cell. This one is as cheap as Lonestar models, yet improved in all senses."
+	name = "CAPSA \"Power-Geyser 2000L\""
+	desc = "CAPSA-brand rechargeable L-standardized power cell. This one is as cheap as Lonestar models, yet improved in all senses."
 	icon_state = "meb_b_st"
 	maxcharge = 2000
 
 /obj/item/cell/large/moebius/high
-	name = "Soteria \"Power-Geyser 8000L\""
-	desc = "Soteria Laboratories branded rechargeable L-standardized power cell. Popular and reliable version."
+	name = "CAPSA \"Power-Geyser 8000L\""
+	desc = "CAPSA Laboratories branded rechargeable L-standardized power cell. Popular and reliable version."
 	icon_state = "meb_b_hi"
 	origin_tech = list(TECH_POWER = 2)
 	maxcharge = 8000
 
 /obj/item/cell/large/moebius/super
-	name = "Soteria \"Power-Geyser 14000L\""
-	desc = "Soteria Institute-brand rechargeable L-standardized power cell. This industrial version can store even more energy."
+	name = "CAPSA \"Power-Geyser 14000L\""
+	desc = "CAPSA-brand rechargeable L-standardized power cell. This industrial version can store even more energy."
 	icon_state = "meb_b_sup"
 	origin_tech = list(TECH_POWER = 5)
 	maxcharge = 14000
 
 /obj/item/cell/large/moebius/hyper
-	name = "Soteria \"Power-Geyser 18000L\""
-	desc = "Soteria Institute-brand rechargeable L-standardized power cell. Regarded as the second most powerful cell on the market."
+	name = "CAPSA \"Power-Geyser 18000L\""
+	desc = "CAPSA-brand rechargeable L-standardized power cell. Regarded as the second most powerful cell on the market."
 	icon_state = "meb_b_hy"
 	origin_tech = list(TECH_POWER = 6)
 	maxcharge = 18000
 
 /obj/item/cell/large/moebius/omega
-	name = "Soteria \"Omega-Geyser 20000L\""
-	desc = "Soteria Institute-brand rechargeable L-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
+	name = "CAPSA \"Omega-Geyser 20000L\""
+	desc = "CAPSA-brand rechargeable L-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_b_omega"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 6)
 	preloaded_reagents = list("lithium" = 15, "radium" = 10)
@@ -68,8 +68,8 @@
 	max_chargerate = 0.24
 
 /obj/item/cell/large/moebius/nuclear
-	name = "Soteria \"Atomcell 14000L\""
-	desc = "Soteria Institute branded rechargeable L-standardized power cell. This version able to recharge itself over time."
+	name = "CAPSA \"Atomcell 14000L\""
+	desc = "CAPSA branded rechargeable L-standardized power cell. This version able to recharge itself over time."
 	icon_state = "meb_b_nu"
 	autorecharging = TRUE
 	origin_tech = list(TECH_POWER = 6)
@@ -176,35 +176,35 @@
 	starts_max_charge = FALSE
 
 /obj/item/cell/medium/moebius
-	name = "Soteria \"Power-Geyser 800M\""
-	desc = "Soteria branded rechargeable M-standardized power cell. This one is as cheap as Lonestar models come."
+	name = "CAPSA \"Power-Geyser 800M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. This one is as cheap as Lonestar models come."
 	icon_state = "meb_m_st"
 	maxcharge = 800
 
 /obj/item/cell/medium/moebius/high
-	name = "Soteria \"Power-Geyser 1000M\""
-	desc = "Soteria Institute branded rechargeable M-standardized power cell. Popular and reliable version."
+	name = "CAPSA \"Power-Geyser 1000M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. Popular and reliable version."
 	icon_state = "meb_m_hi"
 	origin_tech = list(TECH_POWER = 2)
 	maxcharge = 1000
 
 /obj/item/cell/medium/moebius/super
-	name = "Soteria \"Power-Geyser 1200M\""
-	desc = "Soteria Institute branded rechargeable M-standardized power cell. This industrial version can store even more energy."
+	name = "CAPSA \"Power-Geyser 1200M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. This industrial version can store even more energy."
 	icon_state = "meb_m_sup"
 	origin_tech = list(TECH_POWER = 5)
 	maxcharge = 1200
 
 /obj/item/cell/medium/moebius/hyper
-	name = "Soteria \"Power-Geyser 1400M\""
-	desc = "Soteria Institute branded rechargeable M-standardized power cell. Regarded as the second most powerful cell on the market."
+	name = "CAPSA \"Power-Geyser 1400M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. Regarded as the second most powerful cell on the market."
 	icon_state = "meb_m_hy"
 	origin_tech = list(TECH_POWER = 6)
 	maxcharge = 1400
 
 /obj/item/cell/medium/moebius/omega
-	name = "Soteria \"Omega-Geyser 1600M\""
-	desc = "Soteria Institute branded rechargeable M-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
+	name = "CAPSA \"Omega-Geyser 1600M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_m_omega"
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_GOLD = 4)
 	preloaded_reagents = list("lithium" = 10, "radium" = 5)
@@ -213,8 +213,8 @@
 	max_chargerate = 0.24
 
 /obj/item/cell/medium/moebius/nuclear
-	name = "Soteria \"Atomcell 1000M\""
-	desc = "Soteria Institute branded rechargeable M-standardized power cell. This version able to recharge itself over time."
+	name = "CAPSA \"Atomcell 1000M\""
+	desc = "CAPSA branded rechargeable M-standardized power cell. This version able to recharge itself over time."
 	icon_state = "meb_m_nu"
 	autorecharging = TRUE
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_URANIUM = 4)
@@ -303,35 +303,35 @@
 	maxcharge = 500
 
 /obj/item/cell/small/moebius
-	name = "Soteria \"Power-Geyser 120S\""
-	desc = "Soteria Institute branded rechargeable S-standardized power cell. This one is cheap, yet better than Lonestar models for same price."
+	name = "CAPSA \"Power-Geyser 120S\""
+	desc = "CAPSA branded rechargeable S-standardized power cell. This one is cheap, yet better than Lonestar models for same price."
 	icon_state = "meb_s_st"
 	maxcharge = 120
 
 /obj/item/cell/small/moebius/high
-	name = "Soteria \"Power-Geyser 250S\""
-	desc = "Soteria Institute branded rechargeable S-standardized power cell. Popular and reliable version."
+	name = "CAPSA \"Power-Geyser 250S\""
+	desc = "CAPSA branded rechargeable S-standardized power cell. Popular and reliable version."
 	icon_state = "meb_s_hi"
 	origin_tech = list(TECH_POWER = 2)
 	maxcharge = 250
 
 /obj/item/cell/small/moebius/super
-	name = "Soteria \"Power-Geyser 300S\""
-	desc = "Soteria Institute branded rechargeable S-standardized power cell. This industrial version can store even more energy."
+	name = "CAPSA \"Power-Geyser 300S\""
+	desc = "CAPSA branded rechargeable S-standardized power cell. This industrial version can store even more energy."
 	icon_state = "meb_s_sup"
 	origin_tech = list(TECH_POWER = 5)
 	maxcharge = 300
 
 /obj/item/cell/small/moebius/hyper
-	name = "Soteria \"Power-Geyser 400S\""
-	desc = "Soteria Institute branded rechargeable S-standardized power cell. Regarded as the second most powerful cell on the market."
+	name = "CAPSA \"Power-Geyser 400S\""
+	desc = "CAPSA branded rechargeable S-standardized power cell. Regarded as the second most powerful cell on the market."
 	icon_state = "meb_s_hy"
 	origin_tech = list(TECH_POWER = 6)
 	maxcharge = 400
 
 /obj/item/cell/small/moebius/omega
-	name = "Soteria \"Omega-Geyser 500S\""
-	desc = "Soteria Institute branded rechargeable S-standardized power cell. This one being part of the Omega line making it the be-all-end-all power cell of its type, yet to hit the open market."
+	name = "CAPSA \"Omega-Geyser 500S\""
+	desc = "CAPSA branded rechargeable S-standardized power cell. This one being part of the Omega line making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_s_omega"
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1, MATERIAL_GOLD = 2)
 	preloaded_reagents = list("radium" = 5)
@@ -340,8 +340,8 @@
 	max_chargerate = 0.24
 
 /obj/item/cell/small/moebius/nuclear
-	name = "Soteria \"Atomcell 300S\""
-	desc = "Soteria Institute branded rechargeable S-standardized microreactor cell. Recharges itself over time."
+	name = "CAPSA \"Atomcell 300S\""
+	desc = "CAPSA branded rechargeable S-standardized microreactor cell. Recharges itself over time."
 	icon_state = "meb_s_nu"
 	autorecharging = TRUE
 	origin_tech = list(TECH_POWER = 6)
@@ -351,8 +351,8 @@
 	price_tag = 100
 
 /obj/item/cell/small/moebius/pda
-	name = "Soteria \"Atomcell 50S\""
-	desc = "Soteria Institute branded S-standardized microreactor cell. Recharges itself over time."
+	name = "CAPSA \"Atomcell 50S\""
+	desc = "CAPSA branded S-standardized microreactor cell. Recharges itself over time."
 	icon_state = "meb_pda"
 	origin_tech = list(TECH_POWER = 4)
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_URANIUM = 1)

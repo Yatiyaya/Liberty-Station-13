@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/handmade
 	name = "Custom-made Drone"
-	desc = "Built from the Soteria robotics division's craftsmanship, and gathered designs of Greyson positronics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the CAPSA robotics division's craftsmanship, and gathered designs of Greyson positronics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	icon = 'icons/mob/custom_bot.dmi'
 	faction = "neutral"
 	pass_flags = PASSTABLE

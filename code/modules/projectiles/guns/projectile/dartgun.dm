@@ -51,7 +51,7 @@
 
 /obj/item/gun/projectile/dartgun
 	name = "SI \"Artemis\""
-	desc = "The Soteria Institute's entry into the arms market, the SI Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
+	desc = "The CAPSA's entry into the arms market, the SI Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
 	icon = 'icons/obj/guns/projectile/dartgun.dmi'
 	icon_state = "dartgun-empty"
 	item_state = null

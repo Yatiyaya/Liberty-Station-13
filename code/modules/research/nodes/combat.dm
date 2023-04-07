@@ -93,8 +93,8 @@
 						)
 
 /datum/technology/sst
-	name = "Soteria Surface Tenstion Project"
-	desc = "The development of non-lethal weapons for Soteria Medical using GP technology."
+	name = "CAPSA Surface Tenstion Project"
+	desc = "The development of non-lethal weapons for CAPSA Medical using GP technology."
 	x = 0.6
 	y = 0.3
 	tech_type = RESEARCH_COMBAT
@@ -287,8 +287,8 @@
 	required_tech_levels = list()
 	cost = 750
 
-	unlocks_designs = list(/datum/design/research/item/clothing/soteriaarmorchest,
-							 /datum/design/research/item/clothing/soteriaarmorhead,
+	unlocks_designs = list(/datum/design/research/item/clothing/capsaarmorchest,
+							 /datum/design/research/item/clothing/capsaarmorhead,
 							 /datum/design/research/item/clothing/rig_cheap,
 							 /datum/design/research/item/clothing/tinfoil)
 

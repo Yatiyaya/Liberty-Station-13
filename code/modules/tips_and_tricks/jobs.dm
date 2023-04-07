@@ -65,7 +65,7 @@
 
 /tipsAndTricks/jobs/sell_things_you_hoarding_goblins
     jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
-    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Soteria will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
+    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, CAPSA will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
 
 /tipsAndTricks/jobs/your_perks_are_op
     jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
@@ -260,7 +260,7 @@
 
 /tipsAndTricks/jobs/chem_app
     jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist, /datum/job/cso, /datum/job/doctor, /datum/job/medic)
-    tipText = "There is a program in your PDA called SIRC (Soteria Internal Reagent Catalogue) that can help you with chemistry."
+    tipText = "There is a program in your PDA called SIRC (CAPSA Internal Reagent Catalogue) that can help you with chemistry."
 
 /tipsAndTricks/jobs/drink_app
     jobs_list = list(/datum/job/clubworker, /datum/job/clubmanager)

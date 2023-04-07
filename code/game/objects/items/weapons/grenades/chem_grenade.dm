@@ -197,8 +197,8 @@
 	matter = list(MATERIAL_STEEL = 5)
 
 /obj/item/grenade/chem_grenade/large/moebius
-	name = "large Soteria chem grenade"
-	desc = "An oversized grenade that affects a larger area. Has Soteria markings"
+	name = "large CAPSA chem grenade"
+	desc = "An oversized grenade that affects a larger area. Has CAPSA markings"
 	icon_state = "moebius_grenade"
 
 	//I tried to just put it in the allowed_containers list but

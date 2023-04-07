@@ -160,7 +160,7 @@
 
 /obj/structure/noticeboard/medical
 	name = "Medical bulletin board"
-	desc = "A board containing vital notices and official memos for Soteria Medical"
+	desc = "A board containing vital notices and official memos for CAPSA Medical"
 	icon_state = "nboard01"
 	notices = 1
 
@@ -176,7 +176,7 @@
 
 /obj/structure/noticeboard/research
 	name = "Research bulletin board"
-	desc = "A board containing vital notices and official memos for the Soteria research"
+	desc = "A board containing vital notices and official memos for the CAPSA research"
 	icon_state = "nboard00"
 	notices = 1
 

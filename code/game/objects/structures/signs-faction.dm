@@ -29,8 +29,8 @@
 	icon_state = "frozenstar"
 
 /obj/structure/sign/faction/moebius
-	name = "Soteria Laboratories"
-	desc = "A sign depicting the insignia of Soteria Institute, the pharmaceutical and research organisation."
+	name = "CAPSA Laboratories"
+	desc = "A sign depicting the insignia of CAPSA, the pharmaceutical and research organisation."
 	icon_state = "moebius"
 
 /obj/structure/sign/faction/neotheology

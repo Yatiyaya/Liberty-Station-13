@@ -335,14 +335,14 @@
 
 /obj/item/clothing/accessory/halfcape/cbo
 	name = "Chief Biolab Officers holo-mantle"
-	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the Soteria CBO. While sleek and sterile, it sadly lacks \
+	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the CAPSA CBO. While sleek and sterile, it sadly lacks \
 	protection against man-made horrors beyond our comprehension."
 	icon_state = "half_cbo"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/RP
 	name = "Chief Researcher Overseers holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Soteria RP. Black and purple, a color scheme and style to match the \
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the CAPSA RP. Black and purple, a color scheme and style to match the \
 	mad scientist in every Overseer."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER

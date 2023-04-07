@@ -6,7 +6,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 //Roomba
 /mob/living/carbon/superior_animal/robot/greyson/roomba/allied
 	name = "SI Combat Roomba"
-	desc = "A small round soteria branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat."
+	desc = "A small round CAPSA branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat."
 	faction = "neutral"
 	icon_state = "roomba_SI"
 	melee_damage_lower = 10
@@ -49,7 +49,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 /mob/living/carbon/superior_animal/robot/greyson/roomba/trip/armored/allied
 	name = "SI Armored Roomba"
-	desc = "A small round soteria branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat and given additional armor."
+	desc = "A small round CAPSA branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat and given additional armor."
 	faction = "neutral"
 	icon_state = "roomba_SI_armor"
 	melee_damage_lower = 12
@@ -91,10 +91,10 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 //Robots
 /mob/living/carbon/superior_animal/robot/greyson/synthetic/allied
 	name = "SI Sword Drone"
-	desc = "A soteria branded sword drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
+	desc = "A CAPSA branded sword drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
 	faction = "neutral"
 	icon = 'icons/mob/mobs-humanoid.dmi'
-	icon_state = "soteria"
+	icon_state = "CAPSA"
 	attacktext = "slashed"
 	move_to_delay = 2
 	turns_per_move = 7
@@ -146,8 +146,8 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 /mob/living/carbon/superior_animal/robot/greyson/synthetic/allied/advanced
 	name = "SI Mantis Drone"
-	desc = "A soteria branded heavily armored mantis drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
-	icon_state = "soteria_mantis"
+	desc = "A CAPSA branded heavily armored mantis drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
+	icon_state = "CAPSA_mantis"
 	health = 350
 	maxHealth = 350
 	melee_damage_lower = 30
@@ -157,7 +157,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 /mob/living/carbon/superior_animal/robot/greyson/synthetic/allied/junkbot
 	name = "Prospector Junkbot"
-	desc = "A prospector forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Soteria the prospector salvagers made these bots to function as disposable shields or \
+	desc = "A prospector forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the CAPSA the prospector salvagers made these bots to function as disposable shields or \
 	to gaurd specific locations since they do not wander. While lightweight, fast, and capable of a wickedly damaging slash with its armblade, they are not that durable."
 	icon_state = "junkbot"
 	health = 125

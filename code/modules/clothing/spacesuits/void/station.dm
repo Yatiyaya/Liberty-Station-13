@@ -580,7 +580,7 @@
 
 //Science
 /obj/item/clothing/head/space/void/medarmor
-	name = "soteria medical helmet"
+	name = "CAPSA medical helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor and even a built in light."
 	icon_state = "armor_medical"
 	item_state = "armor_medical"
@@ -610,9 +610,9 @@
 	obscuration = 0
 
 /obj/item/clothing/suit/space/void/medarmor
-	name = "soteria medical void armor"
+	name = "CAPSA medical void armor"
 	icon_state = "armor_medical"
-	desc = "A suit of all purpose soteria medical void armor. Used for operations where oxygen is a rarity and protection is needed."
+	desc = "A suit of all purpose CAPSA medical void armor. Used for operations where oxygen is a rarity and protection is needed."
 	item_state = "armor_medical"
 	armor_list = list(
 		melee = 35,

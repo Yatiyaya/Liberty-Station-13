@@ -59,10 +59,10 @@ var/list/dreams = list(
 	"like a dream","this isn't a dream","are you ready","amazing chest ahead",
 
 //Ranks
-	"the Steward","the Warrant Officer","the Blackshield Commander","the Union Chief","the Soteria Research Overseer",
-	"the Soteria Biolab Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
-	"a Prime","an Entertainer","a Chef","a Doctor","a Psychologist","a Soteria Paramedic",
-	"a Soteria Chemist","a Soteria Scientist","a Soteria Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
+	"the Steward","the Warrant Officer","the Blackshield Commander","the Union Chief","the CAPSA Research Overseer",
+	"the CAPSA Biolab Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
+	"a Prime","an Entertainer","a Chef","a Doctor","a Psychologist","a CAPSA Paramedic",
+	"a CAPSA Chemist","a CAPSA Scientist","a CAPSA Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
 	"a Mechanical Technician", "a Marshal Officer","a Supply Specialist","a Ranger", "the Premier",
 	"a Corpsman", "a Trooper",
 

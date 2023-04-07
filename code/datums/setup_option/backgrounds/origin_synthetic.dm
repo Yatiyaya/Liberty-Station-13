@@ -60,7 +60,7 @@
 /datum/category_item/setup_option/background/ethnicity/tt_synth_mech_adept
 	name = "Mechanical Adept"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
-	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. While not as sturdy as some other models of FBP's such as the Soteria designs the \
+	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. While not as sturdy as some other models of FBP's such as the CAPSA designs the \
 	Terra-Therma Worker's Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
 	omni-tool built in your right arm."
 
@@ -81,7 +81,7 @@
 	name = "\"Long-Haul\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is the work of Tacitus \
 	O'Conner himself, Terra-Therma Worker's Union grand master. Unlike the mechanical adept model this chassis is built to last, being far more sturdy and capable of performing alone or with teams of engineers cut \
-	off from the colony for extended periods. While not as capable in combat as a Soteria combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
+	off from the colony for extended periods. While not as capable in combat as a CAPSA combat chassis this model boasts equal parts sturdiness and improved cogitation computers. This design come \
 	with an engineering omni-tool built in your right arm."
 
 	restricted_to_species = list(FORM_TERRAYNTH)
@@ -101,7 +101,7 @@
 	name = "\"Depts-Class\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is made with mining in \
 	mind. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
-	and hard materials alike. While not as capable in combat as a Soteria combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
+	and hard materials alike. While not as capable in combat as a CAPSA combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
 	This design comes with a mining omnitool, which boasts a munchkin 3000 multitool, a powered jackhammer, advanced ore scanner, and emergency radio."
 
 	restricted_to_species = list(FORM_TERRAYNTH)
@@ -201,14 +201,14 @@
 /datum/category_item/setup_option/background/ethnicity/church_combat
 	name = "Sword Model"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This one was designed for combat. \
-	While not nearly as armored as a soteria or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
+	While not nearly as armored as a CAPSA or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
 	in melee. Use of an AI-supported targeting system allows them to make more precise armor penetrating shots."
 
 	restricted_to_species = list(FORM_CHURCHSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/armblade/longsword)
 	restricted_jobs = list(/datum/job/outsider)
 
-	//Compared to the soteria combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
+	//Compared to the CAPSA combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
 	stat_modifiers = list(
 		STAT_ROB = 25,
 		STAT_TGH = 10,

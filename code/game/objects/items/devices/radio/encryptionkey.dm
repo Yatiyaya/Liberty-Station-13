@@ -64,12 +64,12 @@
 	channels = list("Church" = 1)
 
 /obj/item/device/encryptionkey/headset_sci
-	name = "soteria science radio encryption key"
+	name = "CAPSA science radio encryption key"
 	icon_state = "sci_cypherkey"
 	channels = list("Science" = 1, "Medical" = 1)
 
 /obj/item/device/encryptionkey/headset_moebius
-	name = "soteria medical encryption key"
+	name = "CAPSA medical encryption key"
 	icon_state = "med_cypherkey"
 	channels = list("Science" = 1, "Medical" = 1, "Medical(I)" = 1)
 

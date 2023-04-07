@@ -175,7 +175,7 @@
 /datum/reagent/adminordrazine //An OP chemical for admins
 	name = "Chemical Nakh"
 	id = "adminordrazine"
-	description = "An extremely rare chemical rumored to have been created specifically by soteria director Nakharan Mkne. Believed to be able to bring back even the dead or keep even the most \
+	description = "An extremely rare chemical rumored to have been created specifically by CAPSA director Nakharan Mkne. Believed to be able to bring back even the dead or keep even the most \
 	ruined of people away from death's door. How did you get this?"
 	taste_description = "overpowered bullshit"
 	reagent_state = LIQUID

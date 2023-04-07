@@ -33,7 +33,7 @@
 	new /obj/item/tool/wrench(src)
 
 /obj/structure/closet/secure_closet/personal/doctor
-	name = "Soteria Doctor's locker"
+	name = "CAPSA Doctor's locker"
 	req_access = list(access_cmo)
 	access_occupy = list(access_medical_equip)
 	icon_state = "med"
@@ -78,7 +78,7 @@
 	new /obj/item/clothing/accessory/stethoscope(src)
 
 /obj/structure/closet/secure_closet/personal/paramedic
-	name = "Soteria Field Doctor's locker"
+	name = "CAPSA Field Doctor's locker"
 	req_access = list(access_cmo)
 	access_occupy = list(access_medical_equip)
 	icon_state = "med"
@@ -118,7 +118,7 @@
 	new /obj/item/clothing/glasses/hud/health(src)
 
 /obj/structure/closet/secure_closet/personal/orderly
-	name = "soteria Lifeline Technician locker"
+	name = "CAPSA Lifeline Technician locker"
 	req_access = list(access_cmo)
 	access_occupy = list(access_orderly)
 	icon_state = "traumateam"
@@ -147,7 +147,7 @@
 	new /obj/item/clothing/suit/storage/toggle/labcoat/medspec(src)
 
 /obj/structure/closet/secure_closet/reinforced/CMO
-	name = "Soteria Biolab Overseer's locker"
+	name = "CAPSA Biolab Overseer's locker"
 	req_access = list(access_cmo)
 	icon_state = "cmo"
 

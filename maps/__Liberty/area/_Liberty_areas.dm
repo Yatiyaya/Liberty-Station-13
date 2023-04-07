@@ -166,7 +166,7 @@
 	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/abandoned_solars
-	name = "Soteria Solar Outpost"
+	name = "CAPSA Solar Outpost"
 	icon_state = "erisgreen"
 	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
@@ -1546,7 +1546,7 @@ area/liberty/medical/medbaymeeting
 	flags = AREA_FLAG_CRITICAL
 
 /area/liberty/rnd/rdoffice
-	name = "\improper Soteria Expedition Overseer's Office"
+	name = "\improper CAPSA Expedition Overseer's Office"
 	icon_state = "head_quarters"
 
 /area/liberty/rnd/supermatter

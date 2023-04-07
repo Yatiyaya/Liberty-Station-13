@@ -547,8 +547,8 @@
 						 /obj/item/storage/toolbox)
 	flags_inv = HIDEJUMPSUIT
 
-//Soteria
-/obj/item/clothing/suit/armor/vest/soteriasuit
+//CAPSA
+/obj/item/clothing/suit/armor/vest/capsasuit
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
@@ -690,8 +690,8 @@
 			return PROJECTILE_CONTINUE // complete projectile permutation
 
 /obj/item/clothing/suit/armor/laserproof/rnd
-	name = "soteria reflective armor vest"
-	desc = "A Soteria branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
+	name = "CAPSA reflective armor vest"
+	desc = "A CAPSA branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
 	icon_state = "ablative_ironhammer"
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 15)
 	armor_list = list(

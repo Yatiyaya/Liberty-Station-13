@@ -910,8 +910,8 @@
 		usr.update_action_buttons()
 		return 1
 
-//Soteria
-/obj/item/clothing/head/helmet/soteriasuit
+//CAPSA
+/obj/item/clothing/head/helmet/capsasuit
 	name = "'Mark II' environmental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."
 	icon_state = "armor_engineering"

@@ -24,7 +24,7 @@
 
 /obj/machinery/genetics/pulper/attackby(obj/item/I, mob/user)
 	if(!user.stats?.getPerk(PERK_SI_SCI) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_NERD) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
-		to_chat(usr, SPAN_WARNING("The console pityingly suggests: \"Sorry hun, maybe you should get help from a scientist~?\""))
+		to_chat(usr, SPAN_WARNING("The large operation pannel and data are a small bit complex to handle and theirs no clear operation to turn this on."))
 		return
 
 	if(default_deconstruction(I, user))
@@ -35,16 +35,16 @@
 		to_chat(user, SPAN_WARNING("The pulper is inactive and blessedly silent."))
 		return
 	if(pulping)
-		src.visible_message(SPAN_DANGER("The pulper trills: \"The pulper is running~! Please wait for it to finish~\""))
+		src.visible_message(SPAN_DANGER("The pulper trills: \"The pulper is running! Please wait for it to finish\""))
 		return
 
 	//Inserting a sample
 	if(istype(I, /obj/item/reagent_containers/food/snacks/meat))
 		if(meat.len >= 5)
-			src.visible_message(SPAN_WARNING("The pulper says in a sing-song voice: \"The Pulper is full~!\""))
+			src.visible_message(SPAN_WARNING("The pulper says in a sing-song voice: \"The Pulper is full!\""))
 			return
 		if(occupant)
-			src.visible_message(SPAN_WARNING("The pulper sings: \"The Pulper has a whole creature in there, process that first~!\""))
+			src.visible_message(SPAN_WARNING("The pulper sings: \"The Pulper has a whole creature in there, process that first!\""))
 			return
 
 		user.drop_item()
@@ -61,13 +61,13 @@
 		to_chat(user, SPAN_WARNING("The pulper is inactive and blessedly silent."))
 		return
 	if(pulping)
-		src.visible_message(SPAN_WARNING("The pulper trills: \"The pulper is running~! Please wait for it to finish~!\""))
+		src.visible_message(SPAN_WARNING("The pulper trills: \"The pulper is running! Please wait for it to finish!\""))
 		return
 	if(istype(target, /mob/living/carbon/human))
-		src.visible_message(SPAN_WARNING("The pulper chimes in: \"Uh Oh~ Humans aren't allowed in the pulper~!\""))
+		src.visible_message(SPAN_WARNING("The pulper chimes in: \"Human data detected, rejecting!\""))
 		return
 	if(meat.len > 0)
-		src.visible_message(SPAN_WARNING("The pulper chuckles: \"Not enough room~! Process the meat inside before adding a whole creature to it~!\""))
+		src.visible_message(SPAN_WARNING("The pulper chuckles: \"Not enough room! Process the meat inside before adding a whole creature to it!\""))
 		return
 
 	//Check if the creature actually bears meat, IE: It has DNA
@@ -88,7 +88,7 @@
 		temp_meat_type = /obj/item/reagent_containers/food/snacks/meat
 
 	if(temp_meat_count <= 0)
-		src.visible_message(SPAN_WARNING("The pulper gently reminds: \"That is creature has no genetic material, hun~\""))
+		src.visible_message(SPAN_WARNING("The pulper gently reminds: \"That is creature has no genetic material,\""))
 
 	//Do the insertion step
 	if(do_after(user, 60, target))
@@ -103,10 +103,10 @@
 		to_chat(user, SPAN_WARNING("The pulper is inactive and blessedly silent."))
 		return
 	if(!user.stats?.getPerk(PERK_SI_SCI) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_NERD) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
-		to_chat(usr, SPAN_WARNING("The console pityingly suggests: \"Sorry hun, maybe you should get help from a scientist~?\""))
+		to_chat(usr, SPAN_WARNING("Your not quite sure how to use this with its complex data sheets and operations protocall without being versed in sciences or trainning."))
 		return
 	if(pulping)
-		src.visible_message( SPAN_DANGER("The pulper trills: \"The pulper is running~! Wait for it to finish.\""))
+		src.visible_message( SPAN_DANGER("The pulper trills: \"The pulper is running! Wait for it to finish.\""))
 		return
 	else
 		src.startpulping(user)
@@ -130,7 +130,7 @@
 	update_icon()
 	spawn(gib_time) //Escape in time?
 		if(occupant && (occupant.loc == src)  && occupant_meat_count && ispath(occupant_meat_type, /obj/item/reagent_containers/food/snacks/meat))
-			src.visible_message(SPAN_WARNING("The pulper says ecstatically: \"Pulping~! Creature~!\""))
+			src.visible_message(SPAN_WARNING("The pulper says ecstatically: \"Pulping! Creature!\""))
 			//big-range splatter
 			playsound(src.loc, 'sound/effects/splat.ogg', 50, 1)
 			var/obj/effect/decal/cleanable/blood/splatter/animated/B = new(src.loc)
@@ -156,7 +156,7 @@
 			occupant_meat_count = 0
 
 		if(meat.len >= 0)
-			src.visible_message(SPAN_WARNING("The pulper says ecstatically: \"Pulping~! Meat~!\""))
+			src.visible_message(SPAN_WARNING("The pulper says ecstatically: \"Pulping! Meat!\""))
 
 			//low-range splatter
 			playsound(src.loc, 'sound/effects/splat.ogg', 50, 1)
