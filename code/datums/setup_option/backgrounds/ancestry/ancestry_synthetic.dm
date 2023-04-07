@@ -58,7 +58,7 @@
 	)
 
 /datum/category_item/setup_option/background/ancestry/tt_synth_mech_adept
-name = "Card Carrier"
+	name = "Card Carrier"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This specific model was designed with \
 	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills.These units make up the backbone of the unions synthetic work force, and were named thusly. While not as sturdy as some other models of FBP's.  \
 	Terra-Therma Workers Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
@@ -101,7 +101,7 @@ name = "Card Carrier"
 	)
 
 /datum/category_item/setup_option/background/ancestry/tt_synth_mine
-name = "\"Stony Rock\" Body Chassis"
+	name = "\"Stony Rock\" Body Chassis"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This particular model is made with mining in \
 	Mind, and seems almost older than the union itself…. Unlike the mechanical adept model this chassis is built work long hard hours in the darkness, being far more able to smash down rock veins and dig out tunnels rich with both soft \
 	and hard materials alike. While not as capable in combat as a combat chassis this model boasts equal parts sturdiness and pre-programmed assistants in maintaining tools and one's ownself. \
