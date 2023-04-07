@@ -50,9 +50,8 @@
 		return ..()
 	return STATUS_CLOSE
 
-/mob/living/silicon/CanUseObjTopic(var/obj/O)
-	var/id = src.GetIdCard()
-	return O.check_access(id)
+/mob/living/silicon/CanUseObjTopic()
+	return 1
 
 /mob/proc/CanUseObjTopic()
 	return 1
