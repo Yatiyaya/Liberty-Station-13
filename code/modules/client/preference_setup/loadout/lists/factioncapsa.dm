@@ -34,13 +34,6 @@
 	slot = slot_wear_suit
 	sort_category = "Faction: CAPSA"
 
-/datum/gear/faction/capsa/gorka_crew_sci
-	display_name = "gorka jacket, CAPSA research"
-	path = /obj/item/clothing/suit/gorka/toggle/gorka_crew_sci
-	allowed_roles = list("Research Provost","CAPSA Scientist","CAPSA Lifeline Technician")
-	slot = slot_wear_suit
-	sort_category = "Faction: CAPSA"
-
 /datum/gear/faction/capsa/gorkamoebiusmedical
 	display_name = "gorka jumpsuit, CAPSA medical"
 	path = /obj/item/clothing/under/rank/medical/gorka_crew_med
