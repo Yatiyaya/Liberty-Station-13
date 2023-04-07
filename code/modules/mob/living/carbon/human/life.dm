@@ -476,46 +476,52 @@
 	breath.update_values()
 	return !failed_breath
 
+//this proc handles breathable gas temeperature
 /mob/living/carbon/human/proc/handle_temperature_effects(datum/gas_mixture/breath)
 	if(!species)
 		return
 	// Hot air hurts :( :(
-	if((breath.temperature < species.cold_level_1 || breath.temperature > species.heat_level_1) && !(COLD_RESISTANCE in mutations))
+	if((breath.temperature < species.lower_breath_t || breath.temperature > species.upper_breath_t) && !(COLD_RESISTANCE in mutations))
 		var/damage = 0
-		if(breath.temperature <= species.cold_level_1)
+		if(breath.temperature <= species.lower_breath_t)
 			if(prob(20))
-				to_chat(src, SPAN_DANGER("You feel your face freezing and icicles forming in your lungs!"))
+				to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
 
 			switch(breath.temperature)
-				if(species.cold_level_3 to species.cold_level_2)
+				if((species.lower_breath_t - 40) to (species.lower_breath_t - 20))
 					damage = COLD_GAS_DAMAGE_LEVEL_3
 					frost += COLD_GAS_DAMAGE_LEVEL_3
-				if(species.cold_level_2 to species.cold_level_1)
+				if((species.lower_breath_t - 20) to species.lower_breath_t)
 					damage = COLD_GAS_DAMAGE_LEVEL_2
 					frost += COLD_GAS_DAMAGE_LEVEL_2
 				else
 					damage = COLD_GAS_DAMAGE_LEVEL_1
 					frost += COLD_GAS_DAMAGE_LEVEL_1
 
-			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Artic Inhalation")
+			//apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Artic Inhalation") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_COLD
-		else if(breath.temperature >= species.heat_level_1)
+			var/obj/item/organ/internal/L = species.has_process[OP_LUNGS]
+			L.take_damage(damage)
+
+		else if(breath.temperature >= species.upper_breath_t)
 			if(prob(20))
-				to_chat(src, SPAN_DANGER("You feel your face burning and a searing heat in your lungs!"))
+				to_chat(src, SPAN_DANGER("You feel a searing heat in your lungs!"))
 
 			switch(breath.temperature)
-				if(species.heat_level_1 to species.heat_level_2)
-					damage = HEAT_GAS_DAMAGE_LEVEL_1
-					frost -= HEAT_GAS_DAMAGE_LEVEL_1
-				if(species.heat_level_2 to species.heat_level_3)
+				if((species.upper_breath_t + 40) to (species.upper_breath_t + 20))
+					damage = HEAT_GAS_DAMAGE_LEVEL_3
+					frost -= HEAT_GAS_DAMAGE_LEVEL_3
+				if((species.upper_breath_t + 20) to species.upper_breath_t)
 					damage = HEAT_GAS_DAMAGE_LEVEL_2
 					frost -= HEAT_GAS_DAMAGE_LEVEL_2
 				else
-					damage = HEAT_GAS_DAMAGE_LEVEL_3
-					frost -= HEAT_GAS_DAMAGE_LEVEL_3
+					damage = HEAT_GAS_DAMAGE_LEVEL_1
+					frost -= HEAT_GAS_DAMAGE_LEVEL_1
 
-			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Excessive Heat")
+			//apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Excessive Heat") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_HOT
+			var/obj/item/organ/internal/L = species.has_process[OP_LUNGS]
+			L.take_damage(damage)
 
 		//breathing in hot/cold air also heats/cools you a bit
 		var/temp_adj = breath.temperature - bodytemperature
@@ -623,6 +629,20 @@
 					frost += COLD_DAMAGE_LEVEL_2
 				if(species.cold_level_2 to species.cold_level_1)
 					frost += COLD_DAMAGE_LEVEL_3
+			fire_alert = max(fire_alert, FIRE_ALERT_COLD)
+		else
+			var/burn_dam = 0
+			switch(bodytemperature)
+				if(species.cold_level_1 to species.cold_level_2)
+					burn_dam = COLD_DAMAGE_LEVEL_1
+					frost += COLD_DAMAGE_LEVEL_1
+				if(species.cold_level_2 to species.cold_level_3)
+					burn_dam = COLD_DAMAGE_LEVEL_2
+					frost += COLD_DAMAGE_LEVEL_2
+				if(species.cold_level_3 to -(INFINITY))
+					burn_dam = COLD_DAMAGE_LEVEL_3
+					frost += COLD_DAMAGE_LEVEL_3
+			take_overall_damage(burn=burn_dam, used_weapon = "Low Body Temperature")
 			fire_alert = max(fire_alert, FIRE_ALERT_COLD)
 
 	// Account for massive pressure differences.  Done by Polymorph
