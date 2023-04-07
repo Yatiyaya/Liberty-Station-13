@@ -1,4 +1,4 @@
-/datum/category_item/setup_option/background/ethnicity/naramadnorth
+/datum/category_item/setup_option/background/ancestry/naramad_north
 	name = "Northern Naramad"
 	desc = "The northern naramad has a more simplistic mind compared to its sister species. \
 			Having grown up in large communal families on Norian the northern naramadi hold a general if not extreme distrust of all non-Naramadi. \
@@ -11,14 +11,14 @@
 
 	stat_modifiers = list(
 		STAT_ROB = 0,
-		STAT_TGH = 10,
-		STAT_VIG = -10,
-		STAT_BIO = 5,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
 		STAT_MEC = 0,
-		STAT_COG = -5
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/naramadsouth
+/datum/category_item/setup_option/background/ancestry/naramad_south
 	name = "Southern Naramad"
 	desc = "The southern naramad is perhaps the only thing in naramadi society considered 'intelligent' by any stretch of the word. \
 			In the southern tribes the naramad people are far more enthusiastic towards scavenging the old ruins that dot the landscape of their home-world. \
@@ -32,12 +32,12 @@
 		STAT_ROB = 0,
 		STAT_TGH = 0,
 		STAT_VIG = 0,
-		STAT_BIO = -20,
-		STAT_MEC = 10,
-		STAT_COG = 10
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/naramadeast
+/datum/category_item/setup_option/background/ancestry/naramad_east
 	name = "Eastern Naramad"
 	desc = "Of naramad tribals the eastern tribes are the most primitive and most brutalistic of them. They live for hunting and fighting, making them popular conscripts for military service. \
 			An eastern naramads focus on physical combat improves their already impressive strength and tough bodies but does little improve much else. \
@@ -47,18 +47,18 @@
 	restricted_to_species = list(FORM_NARAMAD)
 
 	restricted_depts = SCIENCE | MEDICAL | ENGINEERING | COMMAND
-	restricted_jobs = list(/datum/job/trapper, /datum/job/armorer, /datum/job/investigator, /datum/job/watchmen)
+	restricted_jobs = list(/datum/job/salvager, /datum/job/supsec, /datum/job/serg, /datum/job/inspector, /datum/job/medspec, /datum/job/officer)
 
 	stat_modifiers = list(
-		STAT_ROB = 10,
-		STAT_TGH = 10,
-		STAT_VIG = 15,
-		STAT_BIO = -20,
-		STAT_MEC = -20,
-		STAT_COG = -15
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/naramadspacer
+/datum/category_item/setup_option/background/ancestry/naramad_spacer
 	name = "Naramad Spacer"
 	desc = "Though more uncommon than common some naramad are born and raised outside the confines of their home-world, unknowing of what their tribal affiliation is or its customs out of \
 			what they are told second hand, if anything at all. A space born naramad is much better educated than their home-world tribals but this time spent being taught makes them less \
@@ -68,10 +68,10 @@
 	restricted_to_species = list(FORM_NARAMAD)
 
 	stat_modifiers = list(
-		STAT_ROB = -10,
-		STAT_TGH = -10,
+		STAT_ROB = 0,
+		STAT_TGH = 0,
 		STAT_VIG = 0,
-		STAT_BIO = 5,
-		STAT_MEC = 5,
-		STAT_COG = 15
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)

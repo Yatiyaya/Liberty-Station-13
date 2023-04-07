@@ -1,3 +1,4 @@
+
 /datum/category_item/setup_option/core_implant/cruciform
 	name = "Vinculum Cruciform"
 	desc = "The implant given to every disciple of the Absolute. This one is a standard Vinculum design, having the base-line of a normal cruciform."

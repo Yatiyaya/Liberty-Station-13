@@ -1,4 +1,4 @@
-/datum/category_item/setup_option/background/ethnicity/slime_1
+/datum/category_item/setup_option/background/ancestry/slime_1
 	name = "TODO"
 	desc = "TODO"
 
@@ -14,7 +14,7 @@
 		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/slime_2
+/datum/category_item/setup_option/background/ancestry/slime_2
 	name = "TODO"
 	desc = "TODO"
 
@@ -31,7 +31,7 @@
 	)
 
 
-/datum/category_item/setup_option/background/ethnicity/slime_3
+/datum/category_item/setup_option/background/ancestry/slime_3
 	name = "TODO"
 	desc = "TODO"
 

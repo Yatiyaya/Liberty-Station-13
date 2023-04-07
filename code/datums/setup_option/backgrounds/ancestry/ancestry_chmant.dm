@@ -1,4 +1,4 @@
-/datum/category_item/setup_option/background/ethnicity/chtmantro
+/datum/category_item/setup_option/background/ancestry/chtmant_ro
 	name = "Ro Caste"
 	desc = "Ro are the worker class, and were the most varied in terms of genetic alterations. Their purpose was always \
 			chosen at birth and their bodies altered to fit whatever best aids in this goal. Their tasks ranged from cutting through \
@@ -10,15 +10,15 @@
 	perks = list(PERK_SCUTTLEBUG, PERK_REPAIR_GOO)
 
 	stat_modifiers = list(
-		STAT_ROB = 4,
-		STAT_TGH = 3,
-		STAT_VIG = 3,
-		STAT_BIO = 3,
-		STAT_MEC = -7,
-		STAT_COG = -6
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/chtmantru
+/datum/category_item/setup_option/background/ancestry/chtmant_ru
 	name = "Ru Caste"
 	desc = "Ru are the primary brain power of the hives. Possessing incredibly weak bodies and short stature, a hive would  \
 			usually have less than ten at most and use them to perform primitive medical care, research, and genetic alterations to  \
@@ -35,15 +35,15 @@
 	restricted_jobs = list(/datum/job/shipbreaker)
 
 	stat_modifiers = list(
-		STAT_ROB = -8,
-		STAT_TGH = -8,
-		STAT_VIG = -8,
-		STAT_BIO = 8,
-		STAT_MEC = 3,
-		STAT_COG = 8
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ethnicity/chtmantra
+/datum/category_item/setup_option/background/ancestry/chtmant_ra
 	name = "Ra Caste"
 	desc = "Ra are the warriors and sentries of the hives. Numbering in the hundreds they would tower over Ru�s and even \
 			most workers, the Ro. Their bodies were highly adapted for combat and they know only loyalty unto death for the good of \
@@ -59,15 +59,16 @@
 	racial_implants = (/obj/item/organ_module/active/simple/cht_mant_claws)
 
 	stat_modifiers = list(
-		STAT_ROB = 15,
-		STAT_TGH = 15,
-		STAT_VIG = 5,
-		STAT_BIO = -10,
-		STAT_MEC = -15,
-		STAT_COG = -10
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
 //Background perk, but placed here since its cht'mant only. -Kaz
+//And then people wonder why I always have an aunerism when I open VSC - Lamasmaster
 /datum/category_item/setup_option/background/bckgrnd/chtmantspider
 	name = "Eight-Legged Ally"
 	desc = "As a cht-mant you have an innate understanding towards insects and crawling things. While most of your kin are naturally adapted to roaches you've developed a sense of  \

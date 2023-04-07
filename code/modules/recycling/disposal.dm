@@ -498,7 +498,7 @@
 /obj/machinery/disposal/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
 	if(ishuman(mover) && mover.throwing)
 		var/mob/living/carbon/human/H = mover
-		if(H.stats.getPerk(PERK_SPACE_ASSHOLE))
+		if(H.stats.getPerk(PERK_MERCENARY_GRIT))
 			H.forceMove(src)
 			visible_message("[H] dives into \the [src]!")
 			flush = TRUE
@@ -596,7 +596,7 @@
 			for(var/mob/living/H in src)
 				if(isdrone(H)) //Drones use the mailing code to move through the disposal system,
 					continue
-				//if(H.stats.getPerk(PERK_SPACE_ASSHOLE)) //Assholes gain disposal immunity
+				//if(H.stats.getPerk(PERK_MERCENARY_GRIT)) //Assholes gain disposal immunity
 				//	continue - SoJ edit, we dont want perfect immunity
 				// Hurt any living creature jumping down disposals
 				var/multiplier = 1

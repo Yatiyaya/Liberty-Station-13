@@ -12,16 +12,16 @@
 		STAT_ROB = 0,
 		STAT_TGH = 0,
 		STAT_VIG = 0,
-		STAT_BIO = 10,
+		STAT_BIO = 0,
 		STAT_MEC = 0,
-		STAT_COG = 20
+		STAT_COG = 0
 	)
 
 /datum/category_item/setup_option/background/ethnicity/folken_sprout
 	name = "Sproutling"
 	desc = "Sproutlings are folken less than a century old who have yet to decide what they seek. These folken are common, often later in life choosing to become elders or shamans \
 	depending on which clique they fall into. Sproutlings have the advantage of refreshed bodies unaffected by age and thus are the most adept for dangerous or risky tasks. \
-	Unlike other folken, a sproutling’s healing organ has yet to wear down from use and thus works far more effectively."
+	Unlike other folken, a sproutlingï¿½s healing organ has yet to wear down from use and thus works far more effectively."
 
 	restricted_to_species = list(FORM_FOLKEN)
 
