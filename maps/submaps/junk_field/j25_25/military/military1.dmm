@@ -40,8 +40,8 @@
 /turf/simulated/floor/plating,
 /area/template_noop)
 "az" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/obj/random/mob/space_balkan,
+/turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "aH" = (
 /obj/item/modular_computer/console{
@@ -77,7 +77,7 @@
 /turf/template_noop,
 /area/template_noop)
 "bl" = (
-/mob/living/simple_animal/hostile/hivebot,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/template_noop)
 "bB" = (
@@ -106,6 +106,7 @@
 /obj/structure/sign/faction/ironhammer{
 	pixel_x = -32
 	},
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "fb" = (
@@ -113,8 +114,12 @@
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "ff" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/template_noop,
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/structure/curtain/open/shower,
+/obj/random/mob/space_balkan,
+/turf/simulated/floor/tiled/dark/gray_platform,
 /area/template_noop)
 "fH" = (
 /obj/structure/sign/department/armory{
@@ -127,10 +132,6 @@
 /area/template_noop)
 "fS" = (
 /obj/random/material/low_chance,
-/turf/simulated/floor/plating/under,
-/area/template_noop)
-"fT" = (
-/mob/living/simple_animal/hostile/hivebot,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "gJ" = (
@@ -182,11 +183,6 @@
 	req_access = list(1)
 	},
 /turf/simulated/floor/wood,
-/area/template_noop)
-"ke" = (
-/obj/structure/lattice,
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/template_noop,
 /area/template_noop)
 "kf" = (
 /obj/machinery/light{
@@ -260,7 +256,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/template_noop)
 "rp" = (
-/mob/living/simple_animal/hostile/hivebot,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "ru" = (
@@ -296,7 +292,7 @@
 /turf/simulated/floor/wood,
 /area/template_noop)
 "to" = (
-/obj/structure/table/rack,
+/obj/machinery/vending/serbomat,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/template_noop)
 "tv" = (
@@ -312,7 +308,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/template_noop)
 "vA" = (
-/mob/living/simple_animal/hostile/hivebot,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/template_noop)
 "wD" = (
@@ -367,11 +362,6 @@
 /obj/random/material/low_chance,
 /obj/random/junk/low_chance,
 /turf/simulated/floor/plating/under,
-/area/template_noop)
-"zm" = (
-/obj/random/junk/low_chance,
-/mob/living/simple_animal/hostile/hivebot,
-/turf/template_noop,
 /area/template_noop)
 "zE" = (
 /turf/simulated/floor/plating/under,
@@ -453,11 +443,6 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/template_noop)
-"Fw" = (
-/obj/structure/lattice,
-/mob/living/simple_animal/hostile/hivebot,
-/turf/template_noop,
-/area/template_noop)
 "FL" = (
 /obj/random/junk/low_chance,
 /turf/simulated/floor/tiled/steel,
@@ -468,10 +453,6 @@
 /area/template_noop)
 "Gs" = (
 /obj/random/junk/low_chance,
-/turf/template_noop,
-/area/template_noop)
-"Hl" = (
-/mob/living/simple_animal/hostile/hivebot,
 /turf/template_noop,
 /area/template_noop)
 "Hn" = (
@@ -533,10 +514,6 @@
 "OP" = (
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
-"OW" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel,
-/area/template_noop)
 "Pa" = (
 /obj/item/stool,
 /obj/random/techpart/low_chance,
@@ -548,11 +525,6 @@
 /obj/item/clothing/mask/gas/tactical,
 /obj/item/clothing/mask/gas/tactical,
 /turf/simulated/floor/tiled/dark/cargo,
-/area/template_noop)
-"Qv" = (
-/obj/random/techpart/low_chance,
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "Qw" = (
 /obj/structure/lattice,
@@ -573,10 +545,6 @@
 /obj/structure/table/standard,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/gray_perforated,
-/area/template_noop)
-"SR" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "Vq" = (
 /obj/structure/sign/department/interrogation{
@@ -606,10 +574,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/template_noop)
-"WY" = (
-/mob/living/simple_animal/hostile/hivebot,
-/turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "Yj" = (
 /obj/structure/bed/chair,
@@ -668,7 +632,7 @@ bi
 bi
 bi
 bi
-ff
+bi
 bi
 bi
 Df
@@ -682,13 +646,13 @@ bi
 bi
 YZ
 Hn
-ke
+Hn
 Hn
 Fi
 Fi
 Hn
 YZ
-Hl
+bi
 bi
 Df
 Zt
@@ -738,30 +702,30 @@ Fi
 bi
 bi
 bi
-Hl
+bi
 bi
 bi
 Zt
 zE
-ke
+Hn
 Qw
 zE
 zh
-rp
+Mb
 dN
 YZ
 sg
-qL
+ff
 YZ
 YZ
 YZ
-fT
+zE
 bi
 "}
 (5,1,1) = {"
 bi
 bi
-Fw
+Hn
 bi
 bi
 Gs
@@ -773,7 +737,7 @@ zh
 zE
 Zt
 bB
-Mb
+rp
 Mb
 La
 YZ
@@ -829,7 +793,7 @@ OP
 mZ
 OP
 OP
-OW
+OP
 OP
 OP
 mZ
@@ -898,8 +862,8 @@ bi
 bi
 YZ
 Mb
+rp
 Mb
-SR
 Mb
 Mb
 Mb
@@ -932,7 +896,7 @@ rd
 Di
 YZ
 OP
-WY
+OP
 YZ
 Yj
 aH
@@ -959,10 +923,10 @@ YZ
 YZ
 YZ
 LB
-OP
+az
 ay
 uK
-az
+um
 um
 gJ
 fS
@@ -990,7 +954,7 @@ FL
 YZ
 Vt
 aq
-um
+bl
 um
 fS
 zE
@@ -1034,7 +998,7 @@ bi
 ay
 sF
 Lj
-IK
+Lj
 wD
 Eo
 Lj
@@ -1046,18 +1010,18 @@ um
 um
 um
 RC
-bl
+um
 um
 uK
 ay
-OP
+az
 Hn
 bi
 Gs
 "}
 (16,1,1) = {"
 bi
-Hl
+bi
 ay
 Bv
 Lj
@@ -1131,7 +1095,7 @@ OP
 OP
 OP
 OP
-OW
+OP
 OP
 Hn
 Df
@@ -1156,7 +1120,7 @@ OP
 Vq
 FL
 OP
-OP
+az
 OP
 OP
 OP
@@ -1201,12 +1165,12 @@ Sy
 xb
 Kz
 OP
-WY
+OP
 OP
 YZ
 ji
+rp
 Mb
-SR
 YZ
 Mb
 Mb
@@ -1221,13 +1185,13 @@ bi
 bi
 bi
 Hn
-zm
+Gs
 bi
 ay
 yJ
 zJ
 Kz
-OP
+az
 OP
 OP
 YZ
@@ -1236,7 +1200,7 @@ Km
 Mb
 YZ
 Mb
-Qv
+EL
 Km
 YZ
 fS
@@ -1315,7 +1279,7 @@ Hn
 bi
 bi
 bi
-ff
+bi
 bi
 Gs
 bi
