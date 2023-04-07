@@ -156,7 +156,7 @@
 	icon_state = "srifle_c_l"
 	spent_icon = "srifle_c_l-spent"
 	shell_color = "l"
-	caliber = CAL_LRIFLE
+	caliber = CAL_SRIFLE
 	projectile_type = /obj/item/projectile/bullet/light_rifle_257
 	maxamount = 10
 
@@ -279,79 +279,12 @@
 	desc = "A 7.62mm laser casing."
 	projectile_type = /obj/item/projectile/beam/weak/rifle_75
 
-//// 8.6mm heavy rifle////
-
-/obj/item/ammo_casing/heavy_rifle_408
-	desc = "A 8.6mm bullet casing."
-	icon_state = "lrifle_c_l"
-	spent_icon = "lrifle_c_l-spent"
-	shell_color = "l"
-	caliber = CAL_HRIFLE
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408
-	maxamount = 10
-
-/obj/item/ammo_casing/heavy_rifle_408/prespawned
-	amount = 10
-
-/obj/item/ammo_casing/heavy_rifle_408/rubber
-	desc = "A 8.6mm rubber bullet casing."
-	icon_state = "lrifle_c_r"
-	spent_icon = "lrifle_c_r-spent"
-	shell_color = "r"
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/rubber
-
-/obj/item/ammo_casing/heavy_rifle_408/practice
-	desc = "A 8.6mm training bullet casing."
-	icon_state = "lrifle_c_p"
-	spent_icon = "lrifle_c_p-spent"
-	shell_color = "p"
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/practice
-
-/obj/item/ammo_casing/heavy_rifle_408/hv
-	desc = "A 8.6mm high-velocity bullet casing."
-	icon_state = "lrifle_c_hv"
-	spent_icon = "lrifle_c_hv-spent"
-	shell_color = "hv"
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/hv
-
-/obj/item/ammo_casing/heavy_rifle_408/lethal
-	desc = "A 8.6mm bullet casing."
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/lethal
-
-/obj/item/ammo_casing/heavy_rifle_408/incend
-	desc = "A 8.6mm incendiary bullet casing."
-	shell_color = "l"
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/incend
-
-/obj/item/ammo_casing/heavy_rifle_408/incend/prespawned
-	amount = 10
-
-/obj/item/ammo_casing/heavy_rifle_408/scrap
-	desc = "An old 8.6mm rifle bullet casing."
-	icon_state = "lrifle_c_s"
-	spent_icon = "lrifle_c_s-spent"
-	shell_color = "p"
-	projectile_type = /obj/item/projectile/bullet/heavy_rifle_408/scrap
-
-/obj/item/ammo_casing/heavy_rifle_408/scrap/prespawned
-	amount = 10
-
-/obj/item/ammo_casing/heavy_rifle_408/laser
-	desc = "A 8.6mm laser casing."
-	projectile_type = /obj/item/projectile/beam/weak/heavy_rifle_408
-
-/obj/item/ammo_casing/heavy_rifle_408/spent
-	projectile_type = null
-
-/obj/item/ammo_casing/heavy_rifle_408/hv/spent
-	projectile_type = null
-
 ///10mm caseless
-/obj/item/ammo_casing/c10x24
-	desc = "A 10x24mm caseless cartidge."
-	caliber = "10x24"
+/obj/item/ammo_casing/cl7mm
+	desc = "A 7mm caseless cartidge."
+	caliber = CAL_CLRIFLE
 	icon_state = "caseless"
-	projectile_type = /obj/item/projectile/bullet/c10x24
+	projectile_type = /obj/item/projectile/bullet/cl7mm
 	is_caseless = TRUE
 
 //Flare, .22
@@ -411,61 +344,6 @@
 /obj/item/ammo_casing/flare/green/prespawn
 	amount = 3
 
-// 12mm HEAVY PISTOL
-
-/obj/item/ammo_casing/kurtz_50
-	desc = "A 12mm bullet casing."
-	caliber = CAL_50
-	projectile_type = /obj/item/projectile/bullet/kurtz_50
-	shell_color = "l"
-	icon_state = "lrifle_c_l"
-	spent_icon = "lrifle_c_l-spent"
-
-/obj/item/ammo_casing/kurtz_50/prespawned
-	amount = 6
-
-/obj/item/ammo_casing/kurtz_50/rubber
-	desc = "A 12mm rubber bullet casing."
-	caliber = CAL_50
-	projectile_type = /obj/item/projectile/bullet/kurtz_50/rubber
-	shell_color = "r"
-	icon_state = "lrifle_c_r"
-	spent_icon = "lrifle_c_r-spent"
-
-/obj/item/ammo_casing/kurtz_50/rubber/pepperball
-	desc = "A 12mm pepper-ball projectile casing."
-	icon_state = "lrifle_c_pepper"
-	spent_icon = "lrifle_c_pepper-spent"
-	shell_color = "l"
-	projectile_type = /obj/item/projectile/bullet/kurtz_50/rubber/pepperball
-
-/obj/item/ammo_casing/kurtz_50/practice
-	desc = "A 12mm practice bullet casing."
-	caliber = CAL_50
-	projectile_type = /obj/item/projectile/bullet/kurtz_50/practice
-	shell_color = "p"
-	icon_state = "lrifle_c_p"
-	spent_icon = "lrifle_c_p-spent"
-
-/obj/item/ammo_casing/kurtz_50/hv
-	desc = "A 12mm high-velocity bullet casing."
-	caliber = CAL_50
-	projectile_type = /obj/item/projectile/bullet/kurtz_50/hv
-	shell_color = "hv"
-	icon_state = "lrifle_c_hv"
-	spent_icon = "lrifle_c_hv-spent"
-
-/obj/item/ammo_casing/kurtz_50/lethal
-	desc = "A 12mm hollow point bullet casing."
-	caliber = CAL_50
-	shell_color = "l"
-	projectile_type = /obj/item/projectile/bullet/kurtz_50/lethal
-
-/obj/item/ammo_casing/kurtz_50/laser
-	desc = "A 12mm laser casing."
-	caliber = CAL_50
-	projectile_type = /obj/item/projectile/beam/weak/kurtz_50
-
 //// .60-06 ////
 /obj/item/ammo_casing/antim
 	name = "shell casing"
@@ -518,19 +396,6 @@
 
 /obj/item/ammo_casing/antim/incend/prespawned
 	amount = 5
-
-//// 17mm rolled shot ////
-///obj/item/ammo_casing/ball
-//	name = "shell casing"
-//	desc = "A 17mm rolled shot casing."
-//	icon_state = "ball"
-//	spent_icon = "ball-spent"
-//	caliber = CAL_BALL
-//	projectile_type = /obj/item/projectile/bullet/ball
-//	maxamount = 5
-
-/obj/item/ammo_casing/ball/prespawned
-	amount = 4
 
 //// Shotgun ammo ////
 /obj/item/ammo_casing/shotgun
@@ -776,30 +641,12 @@
 	desc = "A 40mm EMP/Flash warhead designed for the RPG-7 launcher. Has a tubular shape."
 	projectile_type = /obj/item/projectile/bullet/rocket/emp
 
-/obj/item/ammo_casing/a75
-	name = "microjet casing"
-	desc = "A 19mm gyrojet rocket."
-	caliber = CAL_70
-	projectile_type = /obj/item/projectile/bullet/gyro
-
-/obj/item/ammo_casing/a75/spent
-	projectile_type = null
-
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
 	caliber = CAL_CAP
 	color = "#FF0000"
 	projectile_type = /obj/item/projectile/bullet/cap
-
-/obj/item/ammo_casing/beam
-	name = "laser casing"
-	desc = "A laser casing thats cal is .223."
-	caliber = CAL_SCI
-	projectile_type = /obj/item/projectile/beam/weak
-
-/obj/item/ammo_casing/beam/spent
-	projectile_type = null
 
 /obj/item/ammo_casing/beam/ap
 	desc = "A piercing laser casing. Meant for penetration of armor thats cal is .223."

@@ -119,7 +119,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	gloves = /obj/item/clothing/gloves/thick,
 	mask = /obj/item/clothing/mask/smokable/cigarette,
 	glasses = /obj/item/clothing/glasses/sunglasses,
-	gun = /obj/item/gun/projectile/boltgun/sa,
+	gun = /obj/item/gun/projectile/colt,
 	headset = /obj/item/device/radio/headset)
 
 	var/list/loadout_2 = list(
@@ -131,7 +131,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	gloves = /obj/item/clothing/gloves/stungloves,
 	mask = /obj/item/clothing/mask/balaclava/tactical,
 	glasses = /obj/item/clothing/glasses/sechud/tactical,
-	gun = /obj/item/gun/projectile/automatic/mamba/copperhead,
+	gun = /obj/item/gun/projectile/automatic/ak47,
 	headset = /obj/item/device/radio/headset/headset_sec)
 
 	var/list/loadout_3 = list(
@@ -317,17 +317,6 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	icon_state = "bluetie"
 	item_state = "bluetie"
 	chameleon_type = "accessory"
-
-/obj/item/gun/energy/chameleon
-	name = "\"Basilisk\" heavy pistol"
-	desc = "A hologram projector in the shape of a gun. There is a dial on the side to change the gun's disguise."
-	icon = 'icons/obj/guns/projectile/avasarala.dmi'
-	icon_state = "avasarala"
-	chameleon_type = "gun"
-	fire_sound = 'sound/weapons/Gunshot.ogg'
-	projectile_type = /obj/item/projectile/chameleon
-	charge_meter = FALSE
-	charge_cost = 20
 
 
 /obj/item/gun/energy/chameleon/disguise(newtype, mob/user)

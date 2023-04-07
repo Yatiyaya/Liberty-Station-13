@@ -126,13 +126,10 @@ List of powers in this page :
 						/obj/item/gun_upgrade/barrel/forged,
 						/obj/item/gun_upgrade/barrel/bore,
 						/obj/item/gun_upgrade/barrel/excruciator,	//Sadly has biomatter
-						/obj/item/gun_upgrade/mechanism/upgrade_kit,
 						/obj/item/gun_upgrade/mechanism/clock_block,//Brass and unknown tech
 						/obj/item/gun_upgrade/trigger/boom,			//Illegal
 						/obj/item/gun_upgrade/scope/watchman,
-						/obj/item/gun_upgrade/mechanism/glass_widow,
 						/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst,
-						/obj/item/gun_upgrade/mechanism/brass_kit,
 						/obj/item/gun_upgrade/trigger/honker,
 						/obj/item/gun_upgrade/mechanism/bikehorn,
 						/obj/item/gun_upgrade/mechanism/faulty_trapped,

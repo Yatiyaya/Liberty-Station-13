@@ -16,10 +16,8 @@
 	spawn_always = TRUE //Were right next door
 	inventory = list(
 		"Hunting Gear" = list(
-			/obj/item/gun/projectile/boltgun/light,
-			/obj/item/gun/projectile/boltgun/sa,
-			/obj/item/gun/projectile/automatic/nordwind/strelki,
-			/obj/item/gun/projectile/automatic/survivalrifle,
+			/obj/item/gun/projectile/boltgun,
+			/obj/item/gun/projectile/boltgun/rosefield,
 			/obj/item/gun/projectile/shotgun/doublebarrel,
 			/obj/item/gun/projectile/shotgun/pump,
 			/obj/item/tool/knife/dagger
@@ -27,7 +25,6 @@
 		"Ammo" = list(
 			/obj/item/ammo_magazine/ammobox/rifle_75_small,
 			/obj/item/ammo_magazine/ammobox/light_rifle_257_small,
-			/obj/item/ammo_magazine/smg_10x24,
 			/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 			/obj/item/ammo_magazine/ammobox/shotgun
 		),
@@ -49,7 +46,7 @@
 			/obj/item/gun_upgrade/underbarrel/bipod
 		),
 		"Big Game Hunting Gear" = list(
-			/obj/item/gun/projectile/boltgun/scout = custom_good_amount_range(list(-3, 1)),
+			/obj/item/gun/projectile/boltgun/gamer = custom_good_amount_range(list(-3, 1)),
 			/obj/item/tool/sword/saber = custom_good_amount_range(list(-1, 3)),
 			/obj/item/tool/sword/machete,
 			/obj/item/tool/spear //Useless other then to hand craft and sell it back to them
@@ -73,8 +70,6 @@
 		/obj/item/animal_part/render_claw = offer_data("render claw", 1750, 10),
 		/obj/item/animal_part/tahca_antler = offer_data("tahca antler", 1250, 10),
 		/obj/item/animal_part/wolf_tooth = offer_data("pristine animal fang", 400, 10),
-		/obj/item/gun/projectile/shotgun/pump/hunter_crossbow = offer_data("hunter crossbow", 2500, 3),
-//		/obj/item/gun/projectile/boltgun/baroque = offer_data("hunter baroque", 4500, 1),
 		/obj/item/tool/spear/hunter_halberd = offer_data("hunter halberd", 1300, 2),
 		/obj/item/tool/gauntlet = offer_data("render gauntlet", 2800, 2),
 		/obj/item/tool/fireaxe/woodsman = offer_data("woodsman axe", 900, 3),

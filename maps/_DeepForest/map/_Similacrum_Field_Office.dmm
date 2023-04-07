@@ -779,7 +779,6 @@
 /obj/item/gun/projectile/rpg,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/projectile/spring,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "fH" = (
@@ -968,13 +967,6 @@
 /obj/item/reagent_containers/food/snacks/pastatomato,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/outside/one_star/fo_internal)
-"hc" = (
-/obj/structure/table/onestar,
-/obj/item/clipboard,
-/obj/item/device/camera,
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun,
-/turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/outside/one_star/fo_outside)
 "hd" = (
 /obj/structure/railing{
 	dir = 1
@@ -1622,13 +1614,6 @@
 /obj/item/folder/black,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_outside)
-"mr" = (
-/obj/structure/table/onestar,
-/obj/item/pen/blue,
-/obj/item/paper_bin,
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/spring,
-/turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/outside/one_star/fo_outside)
 "mt" = (
 /obj/structure/table/onestar,
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/cog,
@@ -2106,7 +2091,6 @@
 /obj/structure/table/onestar,
 /obj/item/clipboard,
 /obj/item/device/camera,
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "pK" = (
@@ -3147,7 +3131,6 @@
 "xH" = (
 /obj/item/pen/multi,
 /obj/item/remains,
-/obj/item/gun/projectile/giskard,
 /obj/item/ammo_magazine/highcap_pistol_35/highvelocity,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -3940,7 +3923,6 @@
 /obj/structure/table/onestar,
 /obj/item/pen/blue,
 /obj/item/paper_bin,
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "DV" = (
@@ -4784,7 +4766,6 @@
 /obj/structure/salvageable/autolathe_os,
 /obj/item/stack/material/cardboard/random,
 /obj/item/stack/material/platinum/random,
-/obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "KC" = (
@@ -5539,7 +5520,6 @@
 /obj/item/clothing/suit/armor/vest/iron_lock_security,
 /obj/item/ammo_magazine/ammobox/pistol_35/scrap,
 /obj/item/storage/pouch/pistol_holster,
-/obj/item/gun/projectile/giskard,
 /obj/item/ammo_magazine/highcap_pistol_35/empty,
 /obj/item/ammo_magazine/highcap_pistol_35/empty,
 /turf/simulated/floor/carpet,
@@ -62712,7 +62692,7 @@ Zg
 kv
 ut
 Zr
-hc
+pJ
 Cm
 fc
 Cm
@@ -63928,7 +63908,7 @@ Zg
 kv
 ut
 Zr
-mr
+DR
 Cm
 fc
 Cm

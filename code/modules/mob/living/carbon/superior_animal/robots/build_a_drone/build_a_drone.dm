@@ -107,7 +107,7 @@
 			possible_ranged_attack.Add(/obj/item/projectile/beam)
 			ranged = TRUE
 		if(TOOL_GUN)
-			drop1 = /obj/item/gun/projectile/spring
+			drop1 = /obj/item/gun/projectile/liberty
 			possible_ranged_attack.Add(/obj/item/projectile/bullet/pistol_35)
 			ranged = TRUE
 		if(TOOL_BOMB)

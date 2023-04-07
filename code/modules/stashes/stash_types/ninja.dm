@@ -10,15 +10,13 @@
 	contents_list_base = list(/obj/item/storage/box/smokes)
 	contents_list_random = list(
 		/obj/item/storage/box/anti_photons = 60,
-		/obj/item/gun/projectile/silenced = 50,
+		/obj/item/gun/projectile/clarissa/stealth = 50,
 		/obj/item/material/star/uranium = 70,
 		/obj/item/tool/sword/katana = 20,
 		/obj/item/rig_module/modular_injector/medical = 90, //Weakest chem dispenser rig
 		/obj/item/reagent_containers/food/drinks/bottle/pwine = 70,
 		/obj/item/rig_module/vision/thermal = 10,
-		/obj/item/gun/projectile/lamia/socom = 5,
-		/obj/item/ammo_magazine/kurtz_50/hv = 1,
-		/obj/item/gun/projectile/revolver/mistral = 3,
+		/obj/item/gun/projectile/revolver/ranger = 3,
 		/obj/item/noslipmodule = 90,
 		/obj/item/soap/syndie = 50,
 		/obj/item/storage/box/syndie_kit/cigarette = 10,

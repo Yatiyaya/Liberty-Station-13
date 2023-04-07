@@ -41,10 +41,10 @@ var/global/list/datum/supply_drop_loot/supply_drop
 /datum/supply_drop_loot/ballistics/New()
 	..()
 	contents = list(
-		/obj/item/gun/projectile/mk58,
+		/obj/item/gun/projectile/liberty,
 		/obj/item/gun/projectile/shotgun/doublebarrel,
-		/obj/item/gun/projectile/shotgun/pump/combat,
-		/obj/item/gun/projectile/automatic/texan)
+		/obj/item/gun/projectile/shotgun/pump,
+		/obj/item/gun/projectile/automatic/broz)
 
 /datum/supply_drop_loot/seeds
 	name = "Seeds"

@@ -62,14 +62,6 @@
 			return
 */
 
-		if("smoothoperator")
-			new /obj/item/storage/box/syndie_kit/pistol(src)
-			new /obj/item/storage/bag/trash(src)
-			new /obj/item/soap/syndie(src)
-			new /obj/item/bodybag(src)
-			new /obj/item/clothing/shoes/reinforced(src)
-			return
-
 /obj/item/storage/box/syndie_kit
 	name = "box"
 	desc = "A sleek, sturdy box. This one is using state of the art folding to hold more inside!"
@@ -172,47 +164,23 @@
 	new /obj/item/gun/projectile/dartgun(src)
 	new /obj/item/ammo_magazine/chemdart(src)
 
-/obj/item/storage/box/syndie_kit/pistol
-	name = "\improper smooth operator kit"
-	desc = "10mm suppressed handgun and its kit."
-
-/obj/item/storage/box/syndie_kit/pistol/populate_contents()
-	new /obj/item/gun/projectile/silenced(src)
-	new /obj/item/ammo_magazine/magnum_40/hv(src)
-	new /obj/item/ammo_magazine/magnum_40/hv(src)
-	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/clothing/mask/balaclava(src)
-
-
 /obj/item/storage/box/syndie_kit/hpistol
 	name = "\improper gunfighter kit"
 	desc = "12mm suppressed handgun and its kit."
 
 /obj/item/storage/box/syndie_kit/hpistol/populate_contents()
-	new /obj/item/gun/projectile/lamia/socom(src)
-	new /obj/item/ammo_magazine/kurtz_50/hv(src)
-	new /obj/item/ammo_magazine/kurtz_50/hv(src)
-	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/clothing/mask/balaclava(src)
-
-/obj/item/storage/box/syndie_kit/painrevolver
-	name = "\improper vigilante revolver kit"
-	desc = "12mm revolver and its kit."
-
-/obj/item/storage/box/syndie_kit/painrevolver/populate_contents()
-	new /obj/item/gun/projectile/revolver/hornet(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/lethal(src)
-	new /obj/item/ammo_magazine/speed_loader_kurtz_50/highvelocity(src)
+	new /obj/item/gun/projectile/martian(src)
+	new /obj/item/ammo_magazine/magnum_40/hv(src)
+	new /obj/item/ammo_magazine/magnum_40/hv(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/mask/balaclava(src)
 
 /obj/item/storage/box/syndie_kit/c20r
-	name = "C-20r box"
-	desc = "C-20r kit"
+	name = "Broz box"
+	desc = "Broz kit"
 
 /obj/item/storage/box/syndie_kit/c20r/populate_contents()
-	new /obj/item/gun/projectile/automatic/c20r(src)
+	new /obj/item/gun/projectile/automatic/broz(src)
 	new /obj/item/ammo_magazine/smg_35(src)
 
 /obj/item/storage/box/syndie_kit/revolver
@@ -220,7 +188,7 @@
 	desc = "Revolver kit"
 
 /obj/item/storage/box/syndie_kit/revolver/populate_contents()
-	new /obj/item/gun/projectile/revolver/mistral(src)
+	new /obj/item/gun/projectile/revolver/frontier(src)
 	new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 
 /obj/item/storage/box/syndie_kit/sts
@@ -230,19 +198,19 @@
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/storage/box/syndie_kit/sts/populate_contents()
-	new /obj/item/gun/projectile/automatic/sts/rifle(src)
+	new /obj/item/gun/projectile/automatic/nationale(src)
 	new /obj/item/ammo_magazine/rifle_75(src)
 	new /obj/item/ammo_magazine/rifle_75_short(src)
 	new /obj/item/clothing/suit/storage/toggle/leather/blackjacket(src)
 
 /obj/item/storage/box/syndie_kit/pug
-	name = "Pug box"
-	desc = "Pug kit with one M12 buckshot mag"
+	name = "Street Sweeper box"
+	desc = "Street Sweeper kit with one M12 buckshot mag"
 	icon_state = "box_of_doom_big"
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/storage/box/syndie_kit/pug/populate_contents()
-	new /obj/item/gun/projectile/shotgun/pug(src)
+	new /obj/item/gun/projectile/shotgun/sweeper(src)
 	new /obj/item/ammo_magazine/m12/pellet(src)
 
 /obj/item/storage/box/syndie_kit/antimaterial_rifle
@@ -327,16 +295,6 @@
 	new /obj/item/device/spy_sensor(src)
 	new /obj/item/device/spy_sensor(src)
 	new /obj/item/device/spy_sensor(src)
-
-
-/obj/item/storage/box/syndie_kit/exl_revolver
-	name = "\"Wayfarer\" caseless revolver kit"
-	desc = "A well made 10x24 claseless revolver and some ammo."
-
-/obj/item/storage/box/syndie_kit/exl_revolver/populate_contents()
-	new /obj/item/gun/projectile/revolver/wayfarer(src)
-	new /obj/item/ammo_magazine/ammobox/c10x24_small(src)
-	new /obj/item/ammo_magazine/ammobox/c10x24_small(src)
 
 /obj/item/storage/secure/briefcase/money
 	name = "suspicious briefcase"

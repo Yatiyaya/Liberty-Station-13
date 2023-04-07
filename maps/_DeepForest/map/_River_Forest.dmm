@@ -2180,11 +2180,6 @@
 /obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
-"xZ" = (
-/obj/item/gun/projectile/boltgun/light,
-/obj/effect/decal/cleanable/blood/drip,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/forest/river_forest_light)
 "ya" = (
 /obj/random/flora/jungle_tree,
 /turf/simulated/floor/asteroid/grass/jungle,
@@ -3201,7 +3196,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "HB" = (
 /obj/structure/bed/chair/custom/onestar/red,
-/obj/item/gun/projectile/rivet,
 /obj/item/remains,
 /obj/item/ammo_magazine/magnum_40/hv,
 /mob/living/carbon/superior_animal/xenomorph/runner,
@@ -83280,7 +83274,7 @@ vd
 MX
 sU
 md
-xZ
+SF
 SF
 KO
 ez

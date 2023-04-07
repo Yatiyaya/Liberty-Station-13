@@ -2223,7 +2223,6 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/giskard,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/dungeon/outside/zoo)
 "cBl" = (
@@ -5566,7 +5565,6 @@
 /area/liberty/outside/meadow)
 "guk" = (
 /obj/structure/table/rack/shelf,
-/obj/random/lathe_disk/advanced/excelsior,
 /obj/random/lathe_disk/advanced,
 /obj/random/gun_normal,
 /obj/random/gun_normal,
@@ -7591,7 +7589,7 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "iEF" = (
 /obj/random/scrap/dense_weighted,
-/obj/item/ammo_magazine/c10x24,
+/obj/item/ammo_magazine/cl7mm,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "iFg" = (
@@ -8491,7 +8489,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "jET" = (
-/obj/item/ammo_magazine/c10x24,
+/obj/item/ammo_magazine/cl7mm,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "jEV" = (
@@ -8711,7 +8709,7 @@
 /area/liberty/dungeon/outside/prepper)
 "jOy" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/ammo_magazine/c10x24,
+/obj/item/ammo_magazine/cl7mm,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "jOR" = (
@@ -11994,11 +11992,6 @@
 /obj/item/tool/pickaxe/drill,
 /turf/simulated/floor/wood/wild5,
 /area/asteroid/rogue)
-"ntN" = (
-/obj/structure/closet/cabinet,
-/obj/item/gun/projectile/boltgun/light,
-/turf/simulated/floor/tiled/dark/monofloor,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "nuk" = (
 /turf/simulated/floor/beach/water/jungle,
 /area/liberty/outside/meadow)
@@ -12983,7 +12976,6 @@
 "oBT" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/item/gun/projectile/automatic/pulse_rifle,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "oCd" = (
@@ -13007,12 +12999,8 @@
 /area/colony/exposedsun/pastgate)
 "oCD" = (
 /obj/structure/safe,
-/obj/item/gun/projectile/gyropistol,
-/obj/item/ammo_magazine/a75,
-/obj/item/ammo_magazine/a75,
 /obj/item/storage/box/frag,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/cassad,
-/obj/item/computer_hardware/hard_drive/portable/design/guns/sol,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/dungeon/outside/prepper)
 "oDg" = (
@@ -16805,7 +16793,6 @@
 "sww" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/random/cloth/helmet,
-/obj/item/ammo_magazine/ammobox/c10x24,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "swx" = (
@@ -18262,7 +18249,6 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/obj/random/lathe_disk/advanced/excelsior,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -18946,7 +18932,6 @@
 /area/asteroid/rogue)
 "uQx" = (
 /obj/structure/closet/crate/serbcrate,
-/obj/item/gun/projectile/silenced,
 /turf/simulated/floor/wood/wild4,
 /area/asteroid/rogue)
 "uQz" = (
@@ -48273,7 +48258,7 @@ aJy
 dxG
 aJy
 ixN
-ntN
+cKd
 hHj
 hHj
 dAT

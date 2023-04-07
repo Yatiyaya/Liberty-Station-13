@@ -244,9 +244,11 @@
 	name = "firearm bakelite grip"
 	build_path = /obj/item/part/gun/grip/serb
 
+/*
 /datum/design/autolathe/part/grip/excel
 	name = "firearm excelsior spiked grip"
 	build_path = /obj/item/part/gun/grip/excel
+*/
 
 //Mechanisms
 /datum/design/autolathe/part/mechanism/pistol
@@ -286,10 +288,6 @@
 	name = "firearm 10mm pistol barrel"
 	build_path = /obj/item/part/gun/barrel/magnum
 
-/datum/design/autolathe/part/barrel/kurtz
-	name = "firearm 12mm pistol barrel"
-	build_path = /obj/item/part/gun/barrel/kurtz
-
 /datum/design/autolathe/part/barrel/carbine
 	name = "firearm 6.5mm carbine barrel"
 	build_path = /obj/item/part/gun/barrel/srifle
@@ -301,10 +299,6 @@
 /datum/design/autolathe/part/barrel/caseless
 	name = "firearm caseless rifle barrel"
 	build_path = /obj/item/part/gun/barrel/clrifle
-
-/datum/design/autolathe/part/barrel/heavy
-	name = "firearm 8.6mm heavy rifle barrel"
-	build_path = /obj/item/part/gun/barrel/hrifle
 
 /datum/design/autolathe/part/barrel/shotgun
 	name = "firearm 20mm shotgun barrel"

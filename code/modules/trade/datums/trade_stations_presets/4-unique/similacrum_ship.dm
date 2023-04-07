@@ -40,11 +40,11 @@
 	offer_types = list(
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts = offer_data("SD Stockparts Disk", 500, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/armor = offer_data("SD Ablasive Armor Disk", 500, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/spring = offer_data("SD Spring Disk", 2000, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet = offer_data("SD Rivet Disk", 2000, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar = offer_data("SD Rebar Disk", 2000, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun = offer_data("SD Nail Gun Disk", 2000, 1),
-		/obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold = offer_data("SD Scaffold Disk", 2000, 1),
+		/*/obj/item/computer_hardware/hard_drive/portable/design/onestar/spring = offer_data("GP Spring Disk", 2000, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet = offer_data("GP Rivet Disk", 2000, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar = offer_data("GP Rebar Disk", 2000, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun = offer_data("GP Nail Gun Disk", 2000, 1),
+		/obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold = offer_data("GP Scaffold Disk", 2000, 1),*/
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar/cog = offer_data("SD Cog Disk", 150, 1),
 		/obj/item/computer_hardware/hard_drive/portable/design/onestar = offer_data("SD Tools Disk", 100, 1)
 	)

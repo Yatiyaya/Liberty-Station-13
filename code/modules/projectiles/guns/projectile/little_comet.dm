@@ -17,7 +17,7 @@
 	penetration_multiplier = 20
 	pierce_multiplier =  5
 	init_recoil = RIFLE_RECOIL(0.3)
-	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
+	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
 	serial_type = "XSyndi"
 
 /obj/item/gun/projectile/revolver/little_comet/update_icon()

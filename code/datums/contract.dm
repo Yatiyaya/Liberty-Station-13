@@ -23,14 +23,14 @@ GLOBAL_LIST_INIT(antag_item_targets,list(
 	))
 
 GLOBAL_LIST_INIT(excel_item_targets,list(
-		"a Minotaur revolver" = /obj/item/gun/projectile/revolver,
-		"a Deckard revolver" = /obj/item/gun/projectile/revolver/deckard,
-		"a Grizzly shotgun" = /obj/item/gun/projectile/shotgun/pump,
+		"a Frontier revolver" = /obj/item/gun/projectile/revolver/frontier,
+		"a Ranger revolver" = /obj/item/gun/projectile/revolver/ranger,
+		"a Trench shotgun" = /obj/item/gun/projectile/shotgun/pump,
 		"a Cassad plasma rifle" = /obj/item/gun/energy/plasma/cassad,
 		"a Spider Rose energy gun" = /obj/item/gun/energy/gun,
-		"a Omnirfile heavy rifle" = /obj/item/gun/projectile/automatic/omnirifle,
+		"a Federalist carbine" = /obj/item/gun/projectile/automatic/federalist,
 		"a Duty carbine" = /obj/item/gun/projectile/automatic/duty,
-		"a STS carbine" = /obj/item/gun/projectile/automatic/sts/rifle,
+		"a Nationale rifle" = /obj/item/gun/projectile/automatic/nationale,
 		"a Colt handgun" = /obj/item/gun/projectile/colt,
 		"a RCD" = /obj/item/rcd,
 		"a cruciform" = /obj/item/implant/core_implant/cruciform,
@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"Frenchman butterfly knife" = /obj/item/material/butterfly/frenchman,
 		"Destiny antique laser gun" = /obj/item/gun/energy/captain,
 		"Hand teleporter device" = /obj/item/hand_tele,
-		"Omnirifle" = /obj/item/gun/projectile/automatic/omnirifle,
+		"Federalist carbine" = /obj/item/gun/projectile/automatic/federalist,
 		"bluespace Harpoon" = /obj/item/bluespace_harpoon,
 
 		"thermal glasses" = /obj/item/clothing/glasses/powered/thermal,
@@ -65,13 +65,9 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"design disk Means of Revolution" = /obj/item/computer_hardware/hard_drive/portable/design/excelsior_weapons,
 		"design disk Stocking Revolution" = /obj/item/computer_hardware/hard_drive/portable/design/ex_parts,
 		"design disk Means of Power" = /obj/item/computer_hardware/hard_drive/portable/design/ex_cells,
-		"design disk 9mm Drozd SMG" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_drozd,
 		"design disk Makarov" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_makarov,
-		"design disk Vintorez" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_vintorez,
 		"design disk Kardashev-Mosin" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_boltgun,
 		"design disk Kalashnikov" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ak,
-		"design disk Reclaimer" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_reclaimer,
-		"design disk Shpagin" = /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ppsh,
 
 	))
 

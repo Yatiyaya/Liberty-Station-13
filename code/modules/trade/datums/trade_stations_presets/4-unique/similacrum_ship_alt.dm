@@ -68,7 +68,7 @@
 	)
 
 	//The projectile guns, no selling the disk as they are op guns
-
+/*
 	offer_types = list(
 		/obj/item/gun/projectile/spring = offer_data("SD Spring", 2500, 1),
 		/obj/item/gun/projectile/rivet = offer_data("SD Rivet", 3000, 1),
@@ -77,3 +77,4 @@
 		/obj/item/gun/projectile/trouble_shooter = offer_data("SD Trouble Shooter", 18000, 1),
 		/obj/item/gun/projectile/automatic/scaffold = offer_data("SD Scaffold", 7500, 1)
 	)
+*/

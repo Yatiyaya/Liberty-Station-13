@@ -154,9 +154,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 				/obj/item/tool/sword/nt/longsword = 0.5,
 				/obj/item/tool/sword/nt/shortsword = 0.5,
 				/obj/item/tool/sword/nt/scourge = 0.1,
-				/obj/item/tool/knife/dagger/nt = 0.5,
-				/obj/item/gun/projectile/mk58 = 0.4,
-				/obj/item/gun/projectile/mk58/wood = 0.1))
+				/obj/item/tool/knife/dagger/nt = 0.5))
 	else
 		W = pickweight(list(
 				/obj/item/tool/hammer/mace = 0.2,
@@ -168,7 +166,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 				/obj/item/gun/projectile/colt = 0.2,
 				/obj/item/gun/projectile/revolver/detective = 0.1,
 				/obj/item/tool/knife/dagger/ceremonial = 0.4,
-				/obj/item/gun/projectile/revolver/rev10 = 0.4))
+				/obj/item/gun/projectile/revolver/frontier = 0.4))
 	holder.sanity.valid_inspirations += W
 	W = new W(T)
 	W.desc += " It has been inscribed with the \"[holder.name]\" family name."

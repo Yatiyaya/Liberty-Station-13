@@ -31,7 +31,7 @@
 	gun_tags = list(GUN_AMR, GUN_PROJECTILE) //AMR tag atm does nothing
 	slowdown_hold = 1.5  // Massive, unwieldy rifle
 	pierce_multiplier = 6
-	serial_type = "SA"
+	serial_type = "ML"
 	action_button_name = "Switch zoom level"
 	action_button_proc = "switch_zoom"
 
