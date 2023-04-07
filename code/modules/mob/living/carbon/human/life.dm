@@ -482,7 +482,7 @@
 		return
 	// Hot air hurts :( :(
 	if((breath.temperature < species.lower_breath_t || breath.temperature > species.upper_breath_t) && !(COLD_RESISTANCE in mutations))
-	     var/oof = 0
+	    var/oof = 0
         if(breath.temperature <= species.lower_breath_t)
             if(prob(20))
                 to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
