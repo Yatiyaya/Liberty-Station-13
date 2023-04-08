@@ -38,7 +38,7 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "aft_late_cryo"
 	message = "has completed cryogenic revival"
 	spawn_datum_type = /datum/spawnpoint/cryo
-	disallow_job = list("Robot","Lodge Hunter","Lodge Hunt Master","Outsider","Lodge Herbalist")
+	disallow_job = list("Robot","Outsider")
 
 // Outsider spawn stuff
 /obj/landmark/join/late/cryo/outsider
@@ -47,7 +47,7 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "starboard_late_cryo"
 	message = null
 	spawn_datum_type = /datum/spawnpoint/cryo/outsider
-	disallow_job = list("Robot","Lodge Hunter","Lodge Hunt Master","Lodge Herbalist","Foreman","Salvager","Prospector","Foreman","Salvager","Prospector","Colonist","Chief Executive Officer","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor","Artist","Research Provost","PIRS Scientist","PIRS Roboticist","Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist","Union Chief","Mechanical Engineer","Blackshield Commander","Warrant Officer","Supply Specialist","Ranger","Corpsman","Blackshield Trooper","Marshal Officer","Sergeant","Premier","Steward","Prime","Vector")
+	disallow_job = list("Robot","Field Shepherd","Trapper","Shipbreaker","Colonist","Casino Manager","Janitor","Bouncer","Casino Worker","Research Provost","PIRS Scientist","PIRS Roboticist","Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist","Union Chief","Mechanical Engineer","Deputy Chief", "Armorer", "Criminal Investigator", "Sentry", "Watchmen","Premier","Steward","Prime","Vector","Artist")
 
 /obj/landmark/join/late/cryo/starboard
 	name = "Starboard Cryogenic Storage"
@@ -55,7 +55,7 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "starboard_late_cryo"
 	message = "has completed cryogenic revival"
 	spawn_datum_type = /datum/spawnpoint/cryo/starboard
-	disallow_job = list("Robot","Lodge Hunter","Lodge Hunt Master","Outsider","Lodge Herbalist")
+	disallow_job = list("Robot","Outsider")
 
 /obj/landmark/join/late/cryo/elevator
 	name = "Lower Colony Elevator"
@@ -63,7 +63,7 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "late_elevator"
 	message = "has arrived from the lower level residential district"
 	spawn_datum_type = /datum/spawnpoint/cryo/elevator
-	disallow_job = list("Robot","Lodge Hunter","Lodge Hunt Master","Outsider","Lodge Herbalist")
+	disallow_job = list("Robot","Outsider")
 
 /obj/landmark/join/late/dormitory
 	name = "Dormitory"
@@ -71,7 +71,7 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "late_dormitory"
 	message = null
 	spawn_datum_type = /datum/spawnpoint/dormitory
-	restrict_job = list("Lodge Hunter","Lodge Hunt Master","Lodge Herbalist")
+	restrict_job = list()
 
 /obj/landmark/join/late/dormitory_outsider
 	name = "Outsider Bed"

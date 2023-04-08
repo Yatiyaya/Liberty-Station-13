@@ -40,37 +40,28 @@
 /datum/department/command
 	name = "Liberty Council"
 	id = DEPARTMENT_COMMAND
-	/*
-	The command account is the ship account. It is the master account that retainer departments are paid from,
-	and represents the Captain's wealth, assets and holdings
-
-	For now, it is set to an effectively infinitely high amount which shouldn't run out in normal gameplay
-	In future, we will implement largescale missions and research contracts to earn money, and then set it
-	to a much lower starting value
-	*/
-	account_initial_balance = 57800 //50k for emergencies, 7800 for the wages if both have nepotism to last 5 hour shift if it comes to it, shouldn't ever need any more.
-	jobs_in_department = list("/datum/job/premier","/datum/job/pg")
+	account_initial_balance = 2000000
+	jobs_in_department = list(JOBS_COMMAND)
 
 /*************
 	Retainers
 **************/
 //These departments are paid out of ship funding
 /datum/department/ironhammer
-	name = "Marshal and Blackshield Division"
+	name = "Liberty Watch Funds"
 	id = DEPARTMENT_SECURITY
-	jobs_in_department = list("/datum/job/smc","/datum/job/swo","/datum/job/supsec","/datum/job/serg","/datum/job/inspector","/datum/job/medspec","/datum/job/trooper","/datum/job/officer")
+	jobs_in_department = list(JOBS_SECURITY)
 
 /datum/department/terra_therma
 	name = "Terra-Therma Union Funds"
 	id = DEPARTMENT_ENGINEERING
-	jobs_in_department = list("/datum/job/chief_engineer","/datum/job/engineer", "/datum/job/mining")
+	jobs_in_department = list(JOBS_ENGINEERING)
 
-/datum/department/civilian
+/datum/department/service
 	name = "Liberty Contractors"
 	id = DEPARTMENT_CIVILIAN
 	account_initial_balance = 0
-	//No standing balance is kept in the account, this is just for paying gardener, janitor and actor
-	jobs_in_department = list("/datum/job/clubmanager","/datum/job/clubworker","/datum/job/hydro","/datum/job/artist","/datum/job/janitor")
+	jobs_in_department = list()
 
 /******************
 	Benefactors
@@ -79,53 +70,42 @@
 /datum/department/medical
 	name = "Chirurgeons And Pharmaceutical Sciences Association Funds"
 	id = DEPARTMENT_MEDICAL
-	jobs_in_department = list("datum/job/cso","/datum/job/doctor","/datum/job/medic","/datum/job/psychiatrist")
+	jobs_in_department = list(JOBS_MEDICAL)
 
 /datum/department/research
 	name = "Phokorus Science Institute Funds"
 	id = DEPARTMENT_SCIENCE
-	jobs_in_department = list("/datum/job/rp","/datum/job/scientist","/datum/job/roboticist")
+	jobs_in_department = list(JOBS_SCIENCE)
 
 /datum/department/church
 	name = "Church of Absolute"
 	id = DEPARTMENT_CHURCH
 	account_initial_balance = 17000 //17000 to cover some expenses but not that much
 	//Full team with nepotism in 5 hours is 15600
-	jobs_in_department = list ("/datum/job/chaplain","/datum/job/acolyte")
+	jobs_in_department = list (JOBS_CHURCH)
 
 /******************
 	Independant
 *******************/
 //Self funds and pays wages out of its earnings
-/datum/department/guild
-	name = "Lonestar Shipping Solutions"
-	id = DEPARTMENT_LSS
-
-	/*
-		The LSS account represents the holdings of the local branch, and CEO.
-	*/
-	/* if you want to change this remember to do so in code\game\gamemodes\score.dm as well,
-	if you manage to get this variable refferenced there you're a better man than me. godspeed
-	*/
-	//Note: LSS isnt accounted for wages when starting money as they have the easyest ways to make money
-	account_initial_balance = 18200 //Has a lot of workers to pay - but their /entire/ job is literally to make money. Should cover the base nessessities of hourly payment.
-	jobs_in_department = list("/datum/job/merchant","/datum/job/cargo_tech","/datum/job/mining")
+/datum/department/service
+	name = "Skylight Syndicate Funds"
+	id = DEPARTMENT_SERVICE
+	jobs_in_department = list(JOBS_SERVICE)
 
 /datum/department/prospector
-	name = "Prospectors"
+	name = "Fontaine Heavy Industries Funds"
 	id = DEPARTMENT_PROSPECTOR
-	//With only the Foreman currently being paid, after 8 hours, it totals to 4800 of payment, leaving an ample 1700 left.
-	account_initial_balance = 6500 //With how Prospectors no longer get paid, they no longer need such an inflated department balance
-	jobs_in_department = list("/datum/job/foreman","/datum/job/salvager","/datum/job/pro")
+	jobs_in_department = list(JOBS_PROSPECTOR)
 
 /datum/department/independent
 	name = "Independent Allied Factions"
 	id = DEPARTMENT_INDEPENDENT
-	jobs_in_department = list("/datum/job/off_colony_hunt_master","/datum/job/off_colony_hunter","/datum/job/off_colony_herbalist","/datum/job/outsider","/datum/job/assistant")
+	jobs_in_department = list("/datum/job/assistant")
 
-/datum/department/greyson_positronic
-	name = "Greyson Positronic"
-	id = DEPARTMENT_GREYSON
+/datum/department/similacrum_positronic
+	name = "Similacrum Robotics"
+	id = DEPARTMENT_SIMILACRUM
 	jobs_in_department = list()
 
 
@@ -187,7 +167,7 @@
 
 /datum/perk/experienced/Lonestar
 	name = "Experienced: Lonestar"
-	dept = DEPARTMENT_LSS
+	dept = DEPARTMENT_SERVICE
 	gain_text = "Yay? Lonestar!!!"
 
 /datum/perk/experienced/Lonestar/Station

@@ -348,7 +348,7 @@
 	var/size_y = 3						// Ditto.
 
 //Personal variants
-/obj/item/shield_projector/rectangle/soteria_personal
+/obj/item/shield_projector/rectangle/capsa_personal
 	name = "research overseer personal shield"
 	description_info = "This creates a shield in a square shape around the user, which allows projectiles to leave from inside but blocks projectiles from outside.  \
 	Everything else can pass through the shield freely, including other people and thrown objects. The shield also cannot block certain effects which \
@@ -358,7 +358,7 @@
 
 /obj/item/shield_projector/rectangle/church_personal
 	name = "rosaria personal shield"
-	description_info = "A personal shield designed by the church to rival the Soteria shields, though it is weaker than most soteria shields it none the less provides extra protection, \
+	description_info = "A personal shield designed by the church to rival the Phokorus Institute shields, though it is weaker than most CAPSA shields it none the less provides extra protection, \
 	this allows projectiles to leave from inside but blocks projectiles from outside. Everything else can pass through the shield freely, including other people and thrown objects. \
 	The shield also cannot block certain effects which \
 	take place over an area, such as flashbangs or explosions."

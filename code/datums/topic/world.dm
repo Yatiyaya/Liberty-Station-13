@@ -100,7 +100,7 @@
 			"eng" = engineering_positions,
 			"med" = medical_positions,
 			"sci" = science_positions,
-			"car" = cargo_positions,
+			"ser" = service_positions,
 			"civ" = civilian_positions,
 			"chr" = church_positions,
 			"pro" = prospector_positions,

@@ -76,7 +76,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/hpistol_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/avasarala_cock.ogg'
 	fire_sound 	= 'sound/weapons/guns/fire/avasarala_fire.ogg'
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 /obj/item/gun/projectile/lamia/socom
 	name = "\"SOCOM\" silenced heavy pistol"

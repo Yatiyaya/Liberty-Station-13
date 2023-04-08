@@ -89,10 +89,10 @@
 	natural_remedy = TRUE
 	fancy_icon = FALSE
 
-/obj/item/stack/medical/ointment/soteria
-	name = "Soteria branded ointment"
-	singular_name = "Soteria branded ointment"
-	desc = "Used to treat those nasty burns. Unlike regular ointments this one has a Soteria logo on it, its formula massively improved by including toxin-purging sterilizing crystals."
+/obj/item/stack/medical/ointment/capsa
+	name = "CAPSA branded ointment"
+	singular_name = "CAPSA branded ointment"
+	desc = "Used to treat those nasty burns. Unlike regular ointments this one has a CAPSA logo on it, its formula massively improved by including toxin-purging sterilizing crystals."
 	icon_state = "sr_ointment"
 	preloaded_reagents = list("dermaline" = 5, "sterilizine" = 10)
 	heal_burn = 25

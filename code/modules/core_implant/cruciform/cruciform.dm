@@ -22,11 +22,11 @@ var/list/disciples = list()
 	. = ..()
 	if(.)
 		target.stats.addPerk(PERK_SANITYBOOST)
-		target.stats.addPerk(PERK_UNFINISHED_DELIVERY)
+		target.stats.addPerk(PERK_LAZARUS_PROTOCOL)
 
 /obj/item/implant/core_implant/cruciform/uninstall()
 	wearer.stats.removePerk(PERK_SANITYBOOST)
-	wearer.stats.addPerk(PERK_UNFINISHED_DELIVERY)
+	wearer.stats.addPerk(PERK_LAZARUS_PROTOCOL)
 	return ..()
 
 /obj/item/implant/core_implant/cruciform/get_mob_overlay(gender, form)

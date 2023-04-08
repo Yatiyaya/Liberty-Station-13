@@ -21,7 +21,7 @@
 		SEMI_AUTO_NODELAY,
 		BURST_2_ROUND
 		)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.3 // 30 vig

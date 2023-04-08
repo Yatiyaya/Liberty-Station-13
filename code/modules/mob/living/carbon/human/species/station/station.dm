@@ -27,7 +27,7 @@
 	)
 	darksight = 2
 
-	perks = list(PERK_IWILLSURVIVE, PERK_BATTLECRY, PERK_TENACITY, PERK_DIVERSE_CULTURE)
+	perks = list(PERK_IWILLSURVIVE, PERK_BATTLECRY, PERK_TENACITY)
 
 	spawn_flags = CAN_JOIN
 
@@ -67,7 +67,7 @@
 
 	darksight = 3
 
-	perks = list(PERK_DEBTOR, PERK_SPLICER, PERK_DIVERSE_CULTURE)
+	perks = list(PERK_DEBTOR, PERK_SPLICER)
 
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/exalt,

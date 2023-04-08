@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/rebar
 	name = "\"Rebar\" heavy pistol"
-	desc = "A GP heavy pistol that could punch a whole into several layers of plasteel. Uses 12mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
+	desc = "A SR heavy pistol that could punch a whole into several layers of plasteel. Uses 12mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
 	icon = 'icons/obj/guns/projectile/rebar.dmi'
 	icon_state = "type_90"
 	item_state = "type_90"
@@ -16,13 +16,13 @@
 	init_recoil = HANDGUN_RECOIL(1)
 	penetration_multiplier = 2
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL, GUN_CALIBRE_12MM, GUN_SILENCABLE)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 	fire_sound = 'sound/weapons/guns/fire/deckard_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/hpistol_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/hpistol_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/hpistol_cock.ogg'
-	serial_type = "GP"
+	serial_type = "SR"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig

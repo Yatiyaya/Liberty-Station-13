@@ -547,8 +547,8 @@
 						 /obj/item/storage/toolbox)
 	flags_inv = HIDEJUMPSUIT
 
-//Soteria
-/obj/item/clothing/suit/armor/vest/soteriasuit
+//CAPSA
+/obj/item/clothing/suit/armor/vest/capsasuit
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
@@ -620,7 +620,7 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Greyson Positronic."
+	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
 	icon_state = "northtech"
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
@@ -690,8 +690,8 @@
 			return PROJECTILE_CONTINUE // complete projectile permutation
 
 /obj/item/clothing/suit/armor/laserproof/rnd
-	name = "soteria reflective armor vest"
-	desc = "A Soteria branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
+	name = "Phokorus Institute reflective armor vest"
+	desc = "A Phokorus Institute branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
 	icon_state = "ablative_ironhammer"
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 15)
 	armor_list = list(
@@ -1002,7 +1002,7 @@
 	name = "armored rig"
 	desc = "A simple plate carrier modified for personal use, additional pouches have been attached to its front, \
 	with matching knee and arm pads to protect limbs without hindering movement. \
-	Opening the plate pouch would reveal a sheet of some Greyson alloy, welded and forced into shape for the vest, \
+	Opening the plate pouch would reveal a sheet of some Similacrum alloy, welded and forced into shape for the vest, \
 	far lighter and offering more protection than it's more common ceramic counterparts. \
 	Due to its jury-rigged yet robust design, it's able to take more armor plates than a standard heavy vest."
 	icon_state = "forehead_armor"

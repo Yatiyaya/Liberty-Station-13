@@ -575,7 +575,7 @@
 /datum/reagent/stim/reviver
 	name = "Adenosine+"
 	id = "reviver"
-	description = "A SI branded mix of chemicals that are designed to only to work on a dead body to jumpstart the processes so that it lives once more,\
+	description = "A PI branded mix of chemicals that are designed to only to work on a dead body to jumpstart the processes so that it lives once more,\
 	 only works if a body has died and its admistred within one minute. For some reason only works on high-intelligent beings."
 	taste_description = "sponge cake"
 	reagent_state = LIQUID

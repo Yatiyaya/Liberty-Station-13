@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/trouble_shooter
-	name = "GP \"Trouble Shooter\" rifle"
-	desc = "With many issues being raised from rogue robots and people alike, the Greyson Positronic answer was a gun to shoot though several layers of armor \
+	name = "SR \"Trouble Shooter\" rifle"
+	desc = "With many issues being raised from rogue robots and people alike, the Similacrum Robotics answer was a gun to shoot though several layers of armor \
 	Its material cost lead to it being mainly used in-house rather than in mass production. With the ablity to have a Master Unmaker integrated into it."
 	icon = 'icons/obj/guns/projectile/type_21.dmi'
 	icon_state = "type_21" //Sprite by Valo#3611
@@ -20,9 +20,9 @@
 		SEMI_AUTO_NODELAY,
 		BURST_3_ROUND
 		)
-	serial_type = "GP"
+	serial_type = "SR"
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL, GUN_SILENCABLE)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 	wield_delay = 1.5 SECOND
 	wield_delay_factor = 0.4 // 40 vig to insta wield , heavy class rifle

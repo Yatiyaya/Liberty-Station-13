@@ -88,7 +88,7 @@
 	zoom_factors = list()
 	gun_parts = list(/obj/item/part/gun/frame/mateba = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/kurtz = 1)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_CALIBRE_12MM)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 /obj/item/part/gun/frame/mateba
 	name = "Mateba frame"

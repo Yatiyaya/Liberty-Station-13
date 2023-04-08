@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic/scaffold
-	name = "Greyson Positronic \"Scaffold\" caseless rifle"
-	desc = "A old and lost gun design of a caseless rifle by Greyson Positronic, its high fire rate stopping power and more make it the perfect frame for war. \
+	name = "Similacrum Robotics \"Scaffold\" caseless rifle"
+	desc = "A old and lost gun design of a caseless rifle by Similacrum Robotics, its high fire rate stopping power and more make it the perfect frame for war. \
 	Its'caliber is 10mm and shockingly can be fitted with a silencer, has room for a scope and the ablity for a Master Unmaker to be integrated into it."
 	icon = 'icons/obj/guns/projectile/scaffold.dmi'
 	icon_state = "scaffold"
@@ -22,14 +22,14 @@
 	damage_multiplier = 1.5 //simular to 257
 	penetration_multiplier = 3
 	init_recoil = LMG_RECOIL(0.6)
-	serial_type = "GP"
+	serial_type = "SR"
 
 	wield_delay = 1.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig for insta wield
 	gun_parts = list(/obj/item/part/gun = 2, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/clrifle = 1)
 
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE ,GUN_SCOPE, GUN_MAGWELL)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 	init_firemodes = list(
 		FULL_AUTO_300,

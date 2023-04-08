@@ -2,7 +2,7 @@
 /mob/living/carbon/superior_animal/lodge/cerberus
 	name = "cerberus"
 	desc = "A domesticated hell diver kept fat, happy, and loyal by the local hunting lodge that breed them as hunting allies and guard animals. Favored especially for their asexual \
-	reproduction after being fed various mushrooms, a fact that baffles some soteria scientists. Unlike a standard hell diver the cerberus isn't as \
+	reproduction after being fed various mushrooms, a fact that baffles some Phokorus Institute scientists. Unlike a standard hell diver the cerberus isn't as \
 	obsessed with food but gladly lets itself get pulled along. Special training allows for them to follow anyone who states 'Cerberus Follow', while 'Cerberus Stop' will make them halt."
 	icon = 'icons/mob/mobs-domestic.dmi'
 	icon_state = "pigrat"

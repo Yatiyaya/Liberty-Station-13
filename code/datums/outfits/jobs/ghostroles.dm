@@ -38,7 +38,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	shoes = /obj/item/clothing/shoes/reinforced/medical
 	back = /obj/item/storage/backpack/satchel
-	backpack_contents = list(/obj/item/storage/firstaid/soteria = 1, /obj/item/modular_computer/tablet/moebius/preset = 1, /obj/item/gun/projectile/stinger/pepperball/sopo = 1, \
+	backpack_contents = list(/obj/item/storage/firstaid/capsa = 1, /obj/item/modular_computer/tablet/moebius/preset = 1, /obj/item/gun/projectile/stinger/pepperball/sopo = 1, \
 							/obj/item/gun_upgrade/trigger/dnalock = 1, /obj/item/gun_upgrade/muzzle/silencer = 1, /obj/item/ammo_magazine/pistol_35/rubber, /obj/item/ammo_magazine/pistol_35/rubber,  /obj/item/bodybag/cryobag = 2, \
 							/obj/item/storage/firstaid/blackshield/large = 1, /obj/item/storage/firstaid/surgery/si = 1, /obj/item/roller/compact  = 1, /obj/item/device/defib_kit/compact/combat/adv/loaded = 1)
 	l_pocket = /obj/item/card/id/medical_command

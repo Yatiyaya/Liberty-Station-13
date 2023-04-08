@@ -156,7 +156,7 @@
 	category = "RIG"
 
 /datum/design/research/item/clothing/rig_cheap
-	name = "SI 'Spacer' control module"
+	name = "PI 'Spacer' control module"
 	desc = "An ultra light rig suit that a protolathe is only just able to print off..."
 	build_path = /obj/item/rig/light/ultra_light
 	build_type = MECHFAB | PROTOLATHE

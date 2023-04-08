@@ -616,7 +616,6 @@
 "dt" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/hopdouble,
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge)
 "du" = (
@@ -1238,7 +1237,6 @@
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/outside/forest/hunting_lodge)
 "gK" = (
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gL" = (
@@ -1452,7 +1450,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "it" = (
 /obj/structure/table/bench/wooden,
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/asteroid/grass/colonial1,
 /area/liberty/outside/forest/hunting_lodge)
 "iv" = (
@@ -1593,7 +1590,6 @@
 /turf/simulated/floor/hull,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "jr" = (
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/asteroid/dirt/dark/plough,
 /area/liberty/outside/forest/hunting_lodge)
 "js" = (
@@ -1731,7 +1727,6 @@
 "kw" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/orangedouble,
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/hunting_lodge)
 "kz" = (
@@ -2202,7 +2197,6 @@
 "xo" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/purpledouble,
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge)
 "xv" = (
@@ -2223,7 +2217,6 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/outside/forest/hunting_lodge)
 "xK" = (
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/forest/hunting_lodge)
 "xM" = (
@@ -2467,7 +2460,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/hunting_lodge)
 "Eo" = (
-/obj/landmark/join/start/lodge_hunter,
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/asteroid/dirt/dark/plough,
 /area/liberty/outside/forest/hunting_lodge)
@@ -2754,7 +2746,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/hunting_lodge)
 "LM" = (
-/obj/landmark/join/start/lodge_hunter,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "LO" = (
@@ -3016,7 +3007,6 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "RM" = (
 /obj/structure/bed/chair/office/dark,
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "RR" = (

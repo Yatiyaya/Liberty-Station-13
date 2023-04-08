@@ -16,13 +16,13 @@
 	var/list/dept_data = list(
 
 		list("names" = list(), "header" = "Command Staff", "flag" = COMMAND),
-		list("names" = list(), "header" = "Marshal and Blackshield", "flag" = SECURITY),
+		list("names" = list(), "header" = "Liberty Watch", "flag" = SECURITY),
 		list("names" = list(), "header" = "CAPSA Group", "flag" = MEDICAL),
 		list("names" = list(), "header" = "Phokorus Institute", "flag" = SCIENCE),
 		list("names" = list(), "header" = "Church of the Absolute", "flag" = CHURCH),
-		list("names" = list(), "header" = "Lonestar Shipping Solutions", "flag" = LSS),
+		list("names" = list(), "header" = "Skylight Syndicate", "flag" = SERVICE),
 		list("names" = list(), "header" = "Terra-Therma Worker's Union", "flag" = ENGINEERING),
-		list("names" = list(), "header" = "Prospector", "flag" = PROSPECTORS),
+		list("names" = list(), "header" = "Fontaine Heavy Industries", "flag" = PROSPECTORS),
 		list("names" = list(), "header" = "Civilian", "flag" = CIVILIAN),
 		list("names" = list(), "header" = "Miscellaneous", "flag" = MISC),
 		list("names" = list(), "header" = "Silicon")
@@ -143,7 +143,7 @@
 		"sec" = filtered_nano_crew_manifest(security_positions),\
 		"eng" = filtered_nano_crew_manifest(engineering_positions),\
 		"med" = filtered_nano_crew_manifest(medical_positions),\
-		"sup" = filtered_nano_crew_manifest(cargo_positions),\
+		"ser" = filtered_nano_crew_manifest(service_positions),\
 		"chr" = filtered_nano_crew_manifest(church_positions),\
 		"pro" = filtered_nano_crew_manifest(prospector_positions),\
 		"bot" = silicon_nano_crew_manifest(nonhuman_positions),\

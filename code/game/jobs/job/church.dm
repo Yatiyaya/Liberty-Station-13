@@ -34,9 +34,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, /datum/perk/channeling
-		//, /datum/perk/chemist -Thanos Voice: "A small price to pay for salvation."
-	)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
@@ -94,7 +92,7 @@
 		CRUCIFORM_PRIEST
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, PERK_CHANNELING)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
@@ -110,3 +108,49 @@
 	name = "Vector"
 	icon_state = "player-black"
 	join_tag = /datum/job/acolyte
+
+
+/datum/job/artist
+	title = "Artist"
+	flag = ARTIST
+	department = DEPARTMENT_CHURCH
+	department_flag = CHURCH
+	faction = MAP_FACTION
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Chief Executive Officer"
+	difficulty = "Easy."
+	selection_color = "#dddddd"
+	access = list(access_theatre)
+	outfit_type = /decl/hierarchy/outfit/job/cargo/artist
+	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
+	alt_titles = list("Artist","Clown","Entertainer","Mime")
+	stat_modifiers = list(
+		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
+		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+	)
+
+	//You need insperation to do your job.
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+
+
+	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
+	software_on_spawn = list(
+							 /datum/computer_file/program/scanner,
+							 /datum/computer_file/program/wordprocessor,
+							 /datum/computer_file/program/reports)
+
+	description = "The Artist serves as a versatile performance artist here to entertain the colony.<br>\
+	You may find your colleagues distracted by boring duties or senseless bickering, so work hard to bring them some real culture.<br>\
+	The CEO pays you a terrible retaining fee, so use your wits to sustain yourself - perhaps ask your audience for donations.<br>\
+	In addition you do not gain desires like other members of the colony, instead you spend your insight at your workbench to create expensive works of art worth selling."
+
+	duties = "Provide (family-friendly) entertainment to the crew with your varied talents.<br>\
+		Create and sell valuable works of art in your artist bench.<br>\
+		Try to be a successful rather than starving artist. The costume vendor and equipment in your cramped studio may prove useful."
+
+/obj/landmark/join/start/artist
+	name = "Artist"
+	icon_state = "player-grey"
+	join_tag = /datum/job/artist
+

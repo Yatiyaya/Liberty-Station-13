@@ -42,9 +42,9 @@
 
 	products = list(
 		/obj/item/stack/medical/bruise_pack = 4,
-		/obj/item/stack/medical/bruise_pack/soteria = 4,
+		/obj/item/stack/medical/bruise_pack/capsa = 4,
 		/obj/item/stack/medical/ointment = 4,
-		/obj/item/stack/medical/ointment/soteria = 4,
+		/obj/item/stack/medical/ointment/capsa = 4,
 		/obj/item/stack/medical/splint = 10,
 
 		/obj/item/reagent_containers/hypospray/autoinjector = 4,
@@ -72,10 +72,10 @@
 
 		/obj/item/stack/medical/bruise_pack/handmade = 25,
 		/obj/item/stack/medical/bruise_pack = 50,
-		/obj/item/stack/medical/bruise_pack/soteria = 700,
+		/obj/item/stack/medical/bruise_pack/capsa = 700,
 		/obj/item/stack/medical/ointment/handmade  = 25,
 		/obj/item/stack/medical/ointment = 35,
-		/obj/item/stack/medical/ointment/soteria = 700,
+		/obj/item/stack/medical/ointment/capsa = 700,
 		/obj/item/stack/medical/splint/improvised = 5,
 		/obj/item/stack/medical/splint = 10,
 
@@ -99,10 +99,10 @@
 		/obj/item/device/scanner/health = 6,
 
 		/obj/item/stack/medical/bruise_pack = 6,
-		/obj/item/stack/medical/bruise_pack/soteria = 4,
+		/obj/item/stack/medical/bruise_pack/capsa = 4,
 		/obj/item/stack/medical/bruise_pack/advanced = 2,
 		/obj/item/stack/medical/ointment = 6,
-		/obj/item/stack/medical/ointment/soteria = 4,
+		/obj/item/stack/medical/ointment/capsa = 4,
 		/obj/item/stack/medical/ointment/advanced = 2,
 
 		/obj/item/stack/medical/splint = 20, //Legit dosnt heal, stacks on 1 cuz scam
@@ -139,11 +139,11 @@
 		/obj/item/stack/medical/bruise_pack/handmade = 25,
 		/obj/item/stack/medical/bruise_pack = 50,
 		/obj/item/stack/medical/bruise_pack/advanced = 100,
-		/obj/item/stack/medical/bruise_pack/soteria = 700,
+		/obj/item/stack/medical/bruise_pack/capsa = 700,
 		/obj/item/stack/medical/ointment/handmade  = 25,
 		/obj/item/stack/medical/ointment = 35,
 		/obj/item/stack/medical/ointment/advanced = 100,
-		/obj/item/stack/medical/ointment/soteria = 700,
+		/obj/item/stack/medical/ointment/capsa = 700,
 		/obj/item/stack/medical/splint/improvised = 5,
 		/obj/item/stack/medical/splint = 10,
 		/obj/item/stack/nanopaste = 300,

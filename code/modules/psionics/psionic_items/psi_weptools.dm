@@ -179,7 +179,7 @@
 /obj/item/gun/energy/plasma/cassad/cult
 	name = "\"Unseen Sun\" psi-plasma rifle"
 	desc = "A plasma weapon formed from the mind of a psion who shaped an oddity into a weapon. A psychic copy of the cassad, a widely known weapon for being one of the few examples of plasma tech \
-	outside the Soteria or Church. Perhaps its popularity is what imprinted it in the memory of the psion that made it?"
+	outside the Phokorus Institute or Church. Perhaps its popularity is what imprinted it in the memory of the psion that made it?"
 	icon = 'icons/obj/psionic/occcassad.dmi'
 	icon_state = "manumission"
 	origin_tech = list()
@@ -204,7 +204,7 @@
 
 /obj/item/gun/energy/plasma/auretian/cult
 	name = "\"Meteoroid\" psi-energy pistol"
-	desc = "An energy weapon forged from the mind of a psion who shaped an oddity into a weapon. The iconic auretian is a weapon that the Soteria employs often and frequently among its staff, \
+	desc = "An energy weapon forged from the mind of a psion who shaped an oddity into a weapon. The iconic auretian is a weapon that the Phokorus Institute employs often and frequently among its staff, \
 	yet this copy isn't anywhere near what machine lathes can produce. Is it a cheap imitation? A copy of what yearned to be greater? Perhaps it is but flattery."
 	icon = 'icons/obj/guns/energy/psi_brigador.dmi'
 	icon_state = "brigador"
@@ -218,7 +218,7 @@
 
 /obj/item/gun/energy/plasma/auretian/cult/deepmaints
 	name = "\"Tektite\" psi-energy pistol"
-	desc = "An energy-styled handgun willed into reality from the mind of someone looking to improve just about everything about it. Whether they meant to or not, they made a perfected copy of the SI Auretian."
+	desc = "An energy-styled handgun willed into reality from the mind of someone looking to improve just about everything about it. Whether they meant to or not, they made a perfected copy of the PI Auretian."
 	icon = 'icons/obj/guns/energy/psi_brigador.dmi'
 	icon_state = "brigador"
 	origin_tech = list()

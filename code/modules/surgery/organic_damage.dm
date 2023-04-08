@@ -50,7 +50,7 @@
 		SPAN_WARNING("[user]'s hand slips, damaging [organ.get_surgery_name()] with \the [tool]!"),
 		SPAN_WARNING("Your hand slips, damaging [organ.get_surgery_name()] with \the [tool]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 /datum/surgery_step/fix_bone
 	target_organ_type = /obj/item/organ/internal/bone
@@ -95,7 +95,7 @@
 		SPAN_WARNING("[user]'s hand slips, smearing [tool] all over the [organ.get_surgery_name()]!"),
 		SPAN_WARNING("Your hand slips, smearing [tool] all over the [organ.get_surgery_name()]!")
 	)
-	organ.take_damage(5, 0)
+	organ.take_damage(4,BRUTE,rand(0,2))
 
 /datum/surgery_step/fix_bleeding
 	required_tool_quality = QUALITY_CLAMPING

@@ -31,7 +31,7 @@
 /datum/gear/belt/medbelt
 	display_name = "Medical belt, Selection EMT / Doctor"
 	path = /obj/item/storage/belt/medical
-	allowed_roles = list("Soteria Doctor","Soteria Biolab Officer","Soteria Lifeline Technician")
+	allowed_roles = list("CAPSA Doctor","CAPSA Biolab Officer","CAPSA Lifeline Technician")
 	cost = 1
 	flags = GEAR_HAS_TYPE_SELECTION
 

@@ -108,6 +108,6 @@
 
 /datum/design/research/item/si_bluespace_scanner
 	name = "Bluespace Tuning Device"
-	desc = "A tool used by SI to stablize and get readings of bluespace entropy."
+	desc = "A tool used by PI to stablize and get readings of bluespace entropy."
 	build_path = /obj/item/oddity/si_bluespace_scanner
 	category = "Bluespace Telecoms"

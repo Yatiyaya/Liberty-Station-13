@@ -1026,18 +1026,18 @@
 	max_efficiency = 0.3
 	have_recycling = TRUE
 
-/obj/machinery/autolathe/greyson
-	name = "greyson autolathe"
+/obj/machinery/autolathe/similacrum
+	name = "similacrum autolathe"
 	desc = "It produces items using metal and glass."
-	icon_state = "greyson"
+	icon_state = "similacrum"
 	idle_power_usage = 200
 	active_power_usage = 10000
-	circuit = /obj/item/circuitboard/autolathe_greyson
+	circuit = /obj/item/circuitboard/autolathe_similacrum
 	speed = 4
 	storage_capacity = 240
 	have_recycling = TRUE
 
-/obj/machinery/autolathe/greyson/RefreshParts()
+/obj/machinery/autolathe/similacrum/RefreshParts()
 	..()
 	var/mb_rating = 0
 	var/mb_amount = 0

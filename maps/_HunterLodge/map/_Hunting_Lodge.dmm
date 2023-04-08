@@ -575,8 +575,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 6
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "cU" = (
@@ -750,8 +748,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 8
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "dM" = (
@@ -1263,8 +1259,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 9
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gu" = (
@@ -1280,8 +1274,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 10
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gw" = (
@@ -1564,8 +1556,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 4
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "il" = (
@@ -1624,8 +1614,6 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 5
 	},
-/obj/landmark/join/start/lodge_hunter,
-/obj/landmark/join/start/lodge_herbalist,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "iS" = (
@@ -2034,7 +2022,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "of" = (
@@ -4192,7 +4179,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/hunt_master,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "SM" = (

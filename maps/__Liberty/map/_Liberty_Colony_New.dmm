@@ -6386,7 +6386,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "bBk" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -8808,10 +8808,6 @@
 "chh" = (
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/janitor)
-"chz" = (
-/obj/landmark/join/start/medspec,
-/turf/simulated/floor/tiled/white/cyancorner,
-/area/liberty/security/triage_blackshield)
 "chC" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -11361,7 +11357,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
 "cMK" = (
-/obj/landmark/join/start/officer,
 /obj/item/stool,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security)
@@ -14822,7 +14817,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "dBb" = (
 /obj/structure/bed/chair/custom/onestar{
-	desc = "A steel chair manufactured by Greyson Positronics. Doesn't look very comfortable.";
+	desc = "A steel chair manufactured by Similacrum Robotics. Doesn't look very comfortable.";
 	dir = 4;
 	name = "stiff chair"
 	},
@@ -15183,7 +15178,6 @@
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/maintenance/undergroundfloor1south)
 "dFh" = (
-/obj/landmark/join/start/cargo_tech,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -15211,7 +15205,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "dFv" = (
-/obj/landmark/join/start/medspec,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
@@ -15476,7 +15469,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
 "dIv" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "dIB" = (
@@ -18696,10 +18689,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/crew_quarters/dorm2)
-"esF" = (
-/obj/landmark/join/start/inspector,
-/turf/simulated/floor/tiled/white,
-/area/liberty/security/detectives_office)
 "esG" = (
 /obj/structure/closet/l3closet/scientist,
 /obj/effect/decal/cleanable/dirt,
@@ -35915,7 +35904,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "ipK" = (
@@ -36294,7 +36283,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -37385,7 +37373,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
 	},
-/obj/landmark/join/start/merchant,
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "iIc" = (
@@ -38464,7 +38451,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "iVD" = (
-/obj/landmark/join/start/hydro,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "iVE" = (
@@ -40082,7 +40068,7 @@
 /area/liberty/storage/primary)
 "jnY" = (
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/pros/prep)
 "joe" = (
@@ -53622,7 +53608,6 @@
 	density = 0;
 	pixel_y = 20
 	},
-/obj/landmark/join/start/supsec,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "myj" = (
@@ -55266,7 +55251,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 8
 	},
-/obj/landmark/join/start/trooper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
@@ -60906,7 +60890,6 @@
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/organ_lab)
 "obE" = (
-/obj/landmark/join/start/supsec,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -62957,7 +62940,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/steel,
-/obj/landmark/join/start/pro,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "ozJ" = (
@@ -65756,7 +65739,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "pgk" = (
-/mob/living/simple_animal/soteria_roomba,
+/mob/living/simple_animal/capsa_roomba,
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
@@ -66133,7 +66116,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "pjU" = (
 /obj/structure/bed/chair,
-/obj/landmark/join/start/foreman,
+/obj/landmark/join/start/shepherd,
 /turf/simulated/floor/carpet,
 /area/liberty/pros/foreman)
 "pkg" = (
@@ -67614,7 +67597,7 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
 "pBF" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/boomba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/boomba,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1north)
@@ -68441,7 +68424,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/bridge)
 "pLB" = (
-/obj/landmark/join/start/hydro,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
@@ -71682,7 +71664,6 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "qwW" = (
-/obj/landmark/join/start/officer,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -73105,7 +73086,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/engineering/atmos)
 "qNn" = (
-/obj/machinery/power/hydroelectric_control,
+/obj/machinery/power/thermoelectric_control,
 /obj/structure/cable/yellow,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
@@ -82285,7 +82266,7 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "sTa" = (
-/obj/landmark/join/start/salvager,
+/obj/landmark/join/start/trapper,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
@@ -84195,7 +84176,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "tra" = (
-/obj/machinery/power/hydroelectric,
+/obj/machinery/power/thermoelectric,
 /obj/structure/lattice,
 /obj/structure/cable/yellow{
 	d2 = 4;
@@ -85698,7 +85679,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
 "tHt" = (
-/obj/landmark/join/start/swo,
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
@@ -88213,7 +88193,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/landmark/join/start/serg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/barracks)
 "ugN" = (
@@ -89867,7 +89846,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/landmark/join/start/officer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "uCo" = (
@@ -90871,7 +90849,6 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
-/obj/landmark/join/start/cargo_tech,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "uMK" = (
@@ -96144,7 +96121,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 6
 	},
-/obj/landmark/join/start/smc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/smc/quarters)
 "vUS" = (
@@ -101409,7 +101385,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/landmark/join/start/cargo_tech,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
@@ -102305,7 +102280,6 @@
 /area/liberty/hallway/side/f2section1)
 "xuc" = (
 /obj/structure/bed/chair/comfy/brown,
-/obj/landmark/join/start/inspector,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/detectives_office)
@@ -201777,7 +201751,7 @@ uQS
 gso
 gHX
 oPX
-esF
+mcF
 iYP
 qJG
 liv
@@ -204189,7 +204163,7 @@ fLr
 xsC
 wbF
 lGv
-chz
+eZl
 pGy
 rMa
 xsC

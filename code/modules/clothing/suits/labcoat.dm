@@ -37,7 +37,7 @@
 	icon_drape = null
 
 /obj/item/clothing/suit/storage/toggle/labcoat/chemist
-	name = "soteria chemist labcoat"
+	name = "CAPSA chemist labcoat"
 	desc = "A suit that protects against minor chemical spills. Has an orange stripe on the shoulder."
 	icon_state = "labcoat_chem_open"
 	icon_open = "labcoat_chem_open"
@@ -45,7 +45,7 @@
 	icon_drape = null
 
 /obj/item/clothing/suit/storage/toggle/labcoat/virologist
-	name = "soteria virologist labcoat"
+	name = "CAPSA virologist labcoat"
 	desc = "A suit that protects against minor chemical spills. Offers slightly more protection against biohazards than the standard model. Has a green stripe on the shoulder."
 	icon_state = "labcoat_medspec_open"
 	icon_open = "labcoat_medspec_open"
@@ -62,7 +62,7 @@
 	)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science
-	name = "soteria scientist labcoat"
+	name = "Phokorus Institute scientist labcoat"
 	desc = "A suit that protects against minor chemical spills. Has a purple stripe on the shoulder."
 	icon_state = "labcoat_tox_open"
 	icon_open = "labcoat_tox_open"
@@ -70,7 +70,7 @@
 	icon_drape = null
 
 /obj/item/clothing/suit/storage/toggle/labcoat/medspec
-	name = "soteria specialist's labcoat"
+	name = "CAPSA specialist's labcoat"
 	desc = "A suit that protects against minor chemical spills. This one has marks of security."
 	icon_state = "labcoat_medspec_open"
 	item_state = "labcoat_medspec"

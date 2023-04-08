@@ -8,71 +8,67 @@
     tipText = "As a premier, you function as an internal affairs agent, lawyer, and mediator."
 
 /tipsAndTricks/jobs/ironhammer_theft
-    jobs_list = list(/datum/job/smc, /datum/job/swo, /datum/job/supsec, /datum/job/inspector, /datum/job/medspec, /datum/job/trooper, /datum/job/officer, /datum/job/serg)
+    jobs_list = list(JOBS_SECURITY)
     tipText = "As a member of security, you have broad access to chase criminals. This does not mean you can take anything you have access to. Taking things from other departments is theft!"
-
-/tipsAndTricks/jobs/plants_are_dieing_gardener
-    jobs_list = list(/datum/job/hydro)
-    tipText = "As the gardener your exspected to maintain potted plants around the colony."
 
 /tipsAndTricks/jobs/newsprint
     jobs_list = list(/datum/job/janitor)
     tipText = "Your bundle of newsprint will never run out of paper, make sure to keep those news casters all stocked up."
 
 /tipsAndTricks/jobs/guild_resale_profit
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "As Lonestar, you should be buying up valuable things from scavengers and reselling them for a profit. Buy anything of value that's brought to you."
 
 /tipsAndTricks/jobs/guild_price_scanner
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "There is a price scanner that can help you appraise items. Your PDA also has this scanner installed."
 
 /tipsAndTricks/jobs/mines_are_danger
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "The mines might hold a lot of ore, but also a lot of danger. Nightmare Stalkers, Spiders, Roaches and other monsters are commonplace down there."
 
 /tipsAndTricks/jobs/custom_venders
-    jobs_list = list(/datum/job/merchant, /datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(JOBS_SERVICE)
     tipText = "Always try to make use of your Custom Vending Machines when you can, they can sell products when you are busy making more deals. Other departments will love you for setting one up for them as well."
 
 /tipsAndTricks/jobs/drillllls
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "The massive drills mine deep into the ground on the tile its drilling, upgrading it will increase its AOE to more tiles."
 
 /tipsAndTricks/jobs/diggyhole
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "The ground itself can be digged to get more ore with a shovel, this will likely give you rocks that can be hammered for more ore fragments."
 
 /tipsAndTricks/jobs/the_wall_of_ore
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "You can use certain types of picks to mine the walls of the mines that are impassable and indestructible, this will yield more ore fragments without destroying the rock."
 
 /tipsAndTricks/jobs/surface_mining
-    jobs_list = list(/datum/job/cargo_tech, /datum/job/mining)
+    jobs_list = list(/datum/job/mining)
     tipText = "For those who want to avoid the dark, lonely, scary mines, you can go to the surface and find a nearby cave by the lakeside to mine out. Sadly, this will not get much ore but could be an interesting prospecting choice..."
 
 /tipsAndTricks/jobs/survive
-    jobs_list = list(/datum/job/foreman, /datum/job/mining, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/mining, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Don't die."
 
 /tipsAndTricks/jobs/scrap_stuff
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some steel, glass and/or plastic."
 
 /tipsAndTricks/jobs/scrap_ammo_uses
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Scrap ammo, while dealing less damage, has great uses for its availability, like shooting down lockers whenever a hacking tool is not available."
 
 /tipsAndTricks/jobs/pointy_thing
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "Daggers and knives when stabbed in the back of monsters and man alike will deal more damage than normal."
 
 /tipsAndTricks/jobs/sell_things_you_hoarding_goblins
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
-    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Soteria will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
+    tipText = "Selling things to other departments is part of your job. Blackshield and Marshals like weapons and ammo, Phokorus Institute will always love getting materials and Research disks. The Guild (specially a Union Chief) would appreciate Curios, cable coils and materials."
 
 /tipsAndTricks/jobs/your_perks_are_op
-    jobs_list = list(/datum/job/foreman, /datum/job/salvager, /datum/job/pro)
+    jobs_list = list(/datum/job/shepherd, /datum/job/trapper, /datum/job/shipbreaker)
     tipText = "You have a perk that lets you tell at a glance what an anomaly on an oddity does, you can market this for a profit!"
 
 /tipsAndTricks/jobs/captain_leader
@@ -247,7 +243,7 @@
     tipText = "As an AI you can remotely control drone shells."
 
 /tipsAndTricks/jobs/pda_paper_scanner
-    jobs_list = list(/datum/job/premier, /datum/job/cso, /datum/job/chief_engineer, /datum/job/smc, /datum/job/pg, /datum/job/rp)
+    jobs_list = list(/datum/job/premier, /datum/job/cso, /datum/job/chief_engineer, /datum/job/dc, /datum/job/pg, /datum/job/rp)
     tipText = "Your PDA has an integrated paper scanner and printer."
 
 /tipsAndTricks/jobs/aiCanBeMoved
@@ -264,7 +260,7 @@
 
 /tipsAndTricks/jobs/chem_app
     jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist, /datum/job/cso, /datum/job/doctor, /datum/job/medic)
-    tipText = "There is a program in your PDA called SIRC (Soteria Internal Reagent Catalogue) that can help you with chemistry."
+    tipText = "There is a program in your PDA called SIRC (CAPSA Internal Reagent Catalogue) that can help you with chemistry."
 
 /tipsAndTricks/jobs/drink_app
     jobs_list = list(/datum/job/clubworker, /datum/job/clubmanager)
@@ -333,23 +329,3 @@
 /tipsAndTricks/jobs/cleaning_carbine
     jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
     tipText = "The cleansing carbine as the name suggests fires cleaning pellets that when hit something will make a small bit of slippery foam that cleans. This can be used both defensively as lasting slip to get away from bigger foes and to normally clean the station if theirs no janitor around."
-
-/tipsAndTricks/jobs/hunter_meds
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Tatonkas located in the barn can be bred using wheat and then butchered for bones, leather, and animal parts you can turn into medicine in the crafting menu."
-
-/tipsAndTricks/jobs/hunter_knife
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Your tools are sacred, don't let anyone take or have your skinning knives. But you can still barter your halberds, crossbow, and armor."
-
-/tipsAndTricks/jobs/hunter_stimulants
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "When cluckers are butchered they drop a feather that can be turned into a painkiller in the crafting menu. This can be useful when combined with milk taken from tatonkas to boost your defenses."
-
-/tipsAndTricks/jobs/hunter_mutants
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "Tatonkas and cerberuses have a small chance of mutating everytime one grows up. These mutant variants are much more valuable and much more sought after, but quite rare."
-
-/tipsAndTricks/jobs/hunter_allies
-    jobs_list = list(/datum/job/off_colony_hunt_master, /datum/job/off_colony_hunter)
-    tipText = "The cerberus hounds are far sighted and loyal animals who won't ever attack you, they make great hunting allies by acting as distractions against larger enemies and emitting growls when they spot enemies you haven't."
