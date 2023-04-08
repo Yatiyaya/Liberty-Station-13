@@ -162,9 +162,9 @@
 	id = "holywater"
 
 /datum/reagent/water/holywater/affect_ingest(mob/living/carbon/human/M, alien, effect_multiplier)
-	var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
 	if(M.species.reagent_tag == IS_SLIME)
 		M.take_organ_damage(0, 2)
+	var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
 	if(!I && !I.wearer) //Do we have a core implant?
 		return
 	if(!I.active) //Is it active?
@@ -187,8 +187,6 @@
 	return TRUE
 
 /datum/reagent/water/touch_turf(turf/simulated/T)
-	if(M.species.reagent_tag == IS_SLIME)
-		M.take_organ_damage(0, 2)
 	if(!istype(T))
 		return TRUE
 
@@ -235,6 +233,8 @@
 		*/
 
 /datum/reagent/water/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 	if(isslime(M))
 		var/mob/living/carbon/slime/S = M
 		S.adjustToxLoss(20 * effect_multiplier) // Babies have 150 health, adults have 200; So, 10 units and 13.5
@@ -266,7 +266,6 @@
 
 /datum/reagent/toxin/fuel/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_TOXIN, 2 * (issmall(M) ? effect_multiplier * 2 : effect_multiplier))
-	M.add_chemical_effect(CE_ALCOHOL, 1)
 
 /datum/reagent/toxin/fuel/touch_mob(mob/living/L, var/amount)
 	if(istype(L))

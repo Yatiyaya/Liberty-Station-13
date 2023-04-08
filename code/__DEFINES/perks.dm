@@ -157,7 +157,7 @@
 
 //Slime
 #define PERK_LIMB_REGEN /datum/perk/racial/limb_regen
-#define PERK_SLIMEBODY /datum/perk/slime_metabolism
+#define PERK_SLIMEBODY /datum/perk/racial/slime_metabolism
 
 //////////////
 //Core Perks//

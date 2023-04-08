@@ -640,14 +640,14 @@
 	..()
 
 ///////////////////////////////////// Slime perks
-/datum/perk/limb_regen
+/datum/perk/racial/limb_regen
 	name = "Gelatinous Regeneration"
 	desc = "Spend nutrition to regenerate lost limbs, albeit without fully fixing your injuries."
 	var/cooldown = 30 MINUTES
 	passivePerk = FALSE
 	var/nutrition_cost = 300
 
-/datum/perk/limb_regen/activate()
+/datum/perk/racial/limb_regen/activate()
 	if(world.time < cooldown_time)
 		to_chat(usr, SPAN_NOTICE("You can't regenerate again so soon!"))
 		return FALSE
@@ -660,15 +660,15 @@
 		current_organ.brute_dam = max(0, min((old_brute / 2), (old_brute - 10)))
 		current_organ.burn_dam = max(0, min((old_burn / 2), (old_burn - 10)))
 
-/datum/perk/slime_metabolism
+/datum/perk/racial/slime_metabolism
 	name = "Gelatinous Biology"
 	desc = "Your abnormal biology allows you to benefit from most toxins - however, many antitoxins are outright harmful to you." //This perk doesn't actually cause the slime-specific chem metabolism effects
 	passivePerk = TRUE
 
-/datum/perk/slime_metabolism/assign(mob/living/carbon/human/H)
+/datum/perk/racial/slime_metabolism/assign(mob/living/carbon/human/H)
 	..()
 	holder.toxin_mod_perk -= 0.5
 
-/datum/perk/slime_metabolism/better_toxins/remove()
+/datum/perk/racial/slime_metabolism/better_toxins/remove()
 	holder.toxin_mod_perk += 0.5
 	..()
