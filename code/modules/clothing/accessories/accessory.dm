@@ -978,6 +978,12 @@
 	item_state = "ninja_scarf"
 	siemens_coefficient = 0
 
+/obj/item/clothing/accessory/scarf/fontaine
+	name = "fontaine winter scarf"
+	desc = "A winter scarf made in Fontaine Logistic's colors."
+	icon_state = "fontaine_scarf"
+	item_state = "fontaine_scarf"
+
 //Sprites by Michiyamenotehifunana and Occulist
 /obj/item/clothing/accessory/shemagh
 	name = "shemagh"

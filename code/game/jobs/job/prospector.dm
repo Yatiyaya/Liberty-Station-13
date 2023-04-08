@@ -38,17 +38,17 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	perks = list(PERK_STALKER)
+	perks = list(PERK_STALKER, PERK_JUNKBORN, PERK_BUTCHER)
 
-	description = "The foreman leads the prospectors, a group of independent scavengers seeking fortune from ruins and scrap.<br>\
+	description = "The Field Shepards leads the employees of Fontain Logistics surface side and is to deligate tasks to their co-workers.<br>\
 	Your goal is to lead your team into hostile locations and take everything of value that isn't nailed down - and the nails too!<br>\
 	As potentially the youngest head of staff and the one expected to be in the most danger at all times you should be independent and cunning.<br>\
 	Your work is perhaps the most dangerous within the entire colony, so good combat and survival skills are essential."
 
-	duties = "Assemble your team of prospectors and salvagers by equipping them with whatever you can find in your prep area and elsewhere.<br>\
+	duties = "Assemble your team of Shipbreakers and Trappers by equipping them with whatever you can find in your prep area and elsewhere.<br>\
 		Lead your team through dangerous areas and ensure they recover everything of value.<br>\
 		Keep everyone alive and ensure nobody is left behind.<br>\
-		Fill in any missing role on your team be it as muscle, medical, or technical support."
+		Fill in any missing role on your team be it as muscle, salvager, hunting, or other forms of job responsibilities."
 
 /obj/landmark/join/start/shepherd
 	name = "Field Shepherd"
@@ -80,22 +80,21 @@
 	)
 
 	stat_modifiers = list(
-		STAT_BIO = 15,
 		STAT_MEC = 20,
 		STAT_COG = 10,
 		STAT_TGH = 10,
 		STAT_VIG = 10,
 		STAT_ROB = 10
 	)
-	perks = list(PERK_JUNKBORN, PERK_STALKER)
+	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST)
 
-	description = "The Salvager is an informally trained specialist for the prospectors who functions as both an engineer and a doctor.<br>\
-	Your primary role is that of a field medic. Treat and stabilize the wounded on the combat backlines, and evacuate the critically injured.<br>\
-	Your secondary task is providing technical support to the team by breaching walls, building FOBs, repairing broken equipment, and extracting valuables from junk piles.<br>\
-	Remember that you are here to gain riches from the abandoned wilds. Don't waste time and resources mindlessly hunting creatures."
+	description = "The Trapper is a employee of Fontain dedicated to trapping and hunting wildlife as well as acting as a scout for the Shipbreakers.<br>\
+	Your primary role is that of a game hunter. Hunt and butcher wildlife for sale, distribution, or cooking supplies for the colony or the company.<br>\
+	Your secondary task is providing scouting and forging for your fellow co-workers; such as that of the Shipbreakers.<br>\
+	Remember that you are here to gain riches from the abandoned wilds. Don't waste time and resources mindlessly hunting creatures that don't provide profit unless aiding co-workers."
 
-	duties = "Extract resources for your employer. Use equipment to access new areas and gain a foothold in the wilderness.<br>\
-	Perform medical services on injured colleagues, from patching wounds to full field surgery.<br>\
+	duties = "Extract natural resources for your employer. Use equipment to access new areas and gain a foothold in the wilderness.<br>\
+	Aid your colleagues through scouting and applying field-dressing or forging useful materials from the wilds.<br>\
 	Leave security duties to the hired muscle unless faced with no other option."
 
 /obj/landmark/join/start/trapper
@@ -133,11 +132,11 @@
 		STAT_COG = 10
 	)
 
-	perks = list(PERK_STALKER)
+	perks = list(PERK_STALKER, PERK_JUNKBORN)
 
-	description = "The Prospector serves as hired muscle to the Foreman, positioned somewhere between meat shield and exterminator.<br>\
-	Your job is to keep the Salvagers and anyone else with you protected, handling the fighting and being the first to enter dangerous areas. <br>\
-	While combat is your primary goal, you are still there to salvage valuable technology and make a profit selling said items to the colony."
+	description = "The Shipbreaker serves as hired muscle to the Field Shepard, positioned somewhere between meat shield and exterminator.<br>\
+	Your job is to keep the your co-workers safe and anyone else with you protected, handling the fighting and being the first to enter dangerous areas. <br>\
+	Your primary goal is to provide protection for co-workers while in the wilds and gather all the loot possible from outside the colony, or search in non-owned areas for loot."
 
 	duties = "Guard your peers from hostile creatures and other dangers that cross your path.<br>\
 	Use whatever measures necessary to ensure survival, but try not to soil the standing of your team.<br>\

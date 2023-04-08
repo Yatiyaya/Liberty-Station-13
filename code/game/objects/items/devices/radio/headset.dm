@@ -304,17 +304,17 @@
 	ks2type = /obj/item/device/encryptionkey/headset_service
 
 /obj/item/device/radio/headset/headset_pro
-	name = "prospector radio headset"
-	desc = "A headset used by the prospector thugs. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "pro_headset"
+	name = "Fontaine radio headset"
+	desc = "A headset used by Fontaine Logistics. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "fontaine_headset"
 	item_state = "headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/headset_pro
 
 /obj/item/device/radio/headset/heads/foreman
-	name = "foreman radio headset"
-	desc = "A headset used by the krumpiest git. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "pro_headset"
+	name = "Shepherd radio headset"
+	desc = "A headset used by the Field Shepherd. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "fontaine_bowman"
 	item_state = "headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/heads/foreman
