@@ -1,0 +1,17 @@
+"a" = (/turf/simulated/floor/rock/dark,/area/precursor)
+"b" = (/turf/simulated/floor/rock/grey,/area/precursor)
+"c" = (/mob/living/simple_animal/light_geist,/turf/simulated/floor/rock/grey,/area/precursor)
+
+(1,1,1) = {"
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaabbbaaaa
+aaaabcbaaaa
+aaaabbbaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+"}
