@@ -156,10 +156,8 @@
 #define PERK_SLIME_FOLLOWER /datum/perk/racial/mycus_slime
 
 //Slime
-#define PERK_SPEED /datum/perk/racial/slime_speed
-#define PERK_LIMB_REGEN /datum/perk/racial/slime_regen
-#define PERK_MIND_BOOST /datum/perk/racial/slime_stat_boost/mental
-#define PERK_BODY_BOOST /datum/perk/racial/slime_stat_boost/physical
+#define PERK_LIMB_REGEN /datum/perk/racial/limb_regen
+#define PERK_SLIMEBODY /datum/perk/slime_metabolism
 
 //////////////
 //Core Perks//

@@ -107,8 +107,14 @@
 		M.heal_organ_damage(0.3 * effect_multiplier, 0.3 * effect_multiplier)
 		M.add_chemical_effect(CE_ANTITOX, 0.3 * effect_multiplier)
 		M.add_chemical_effect(CE_BLOODCLOT, 0.1)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 1 * effect_multiplier)
 	if(!ishuman(M))
 		M.adjustHalLoss(-0.5)
+
+/datum/reagent/water/affect_blood(var/mob/living/carbon/M, var/alien)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 
 /datum/reagent/water/extinguisher
 	name = "Extinguisher"
@@ -137,6 +143,17 @@
 	T.color = "white"
 	return TRUE
 
+/datum/reagent/water/extinguisher/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 1 * effect_multiplier)
+
+/datum/reagent/water/extinguisher/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 1 * effect_multiplier)
+
+/datum/reagent/water/extinguisher/affect_blood(var/mob/living/carbon/M, var/alien)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 
 /datum/reagent/water/holywater
 	name = "Holy Water"
@@ -146,12 +163,22 @@
 
 /datum/reagent/water/holywater/affect_ingest(mob/living/carbon/human/M, alien, effect_multiplier)
 	var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 	if(!I && !I.wearer) //Do we have a core implant?
 		return
 	if(!I.active) //Is it active?
 		return
 	M.heal_organ_damage(0, 0.2 * effect_multiplier, 0, 3 * effect_multiplier)
 	..()
+
+/datum/reagent/water/holywater/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 1 * effect_multiplier)
+
+/datum/reagent/water/holywater/affect_blood(var/mob/living/carbon/M, var/alien)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 
 /datum/reagent/water/holywater/touch_turf(turf/T)
 	..()
@@ -160,6 +187,8 @@
 	return TRUE
 
 /datum/reagent/water/touch_turf(turf/simulated/T)
+	if(M.species.reagent_tag == IS_SLIME)
+		M.take_organ_damage(0, 2)
 	if(!istype(T))
 		return TRUE
 
