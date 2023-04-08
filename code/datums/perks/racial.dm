@@ -656,6 +656,8 @@
 	for(var/obj/item/organ/external/current_organ in holder.organs) //grab the current brute/burn of the limb, then re-apply half of it after rejuvenating OR subtract ten, whichever is lower
 		var/old_brute = current_organ.brute_dam
 		var/old_burn = current_organ.burn_dam
+		if(!(current_organ == BP_HEAD))
+			current_organ.replaced()
 		current_organ.rejuvenate()
 		current_organ.brute_dam = max(0, min((old_brute / 2), (old_brute - 10)))
 		current_organ.burn_dam = max(0, min((old_burn / 2), (old_burn - 10)))

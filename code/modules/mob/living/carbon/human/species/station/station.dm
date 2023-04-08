@@ -1124,6 +1124,17 @@
 	toxins_mod = 1 // fuck toxins_mod, we use a perk for this
 	oxy_mod = 0
 
+	cold_discomfort_level = 283
+	heat_discomfort_level = 313
+
+	cold_level_1 = 258 //Default 270
+	cold_level_2 = 243 //Default 230
+	cold_level_3 = 228  //Default 200
+
+	heat_level_1 = 333 //Default 330
+	heat_level_2 = 353 //Default 380
+	heat_level_3 = 372 //Default 460
+
 	has_process = list(
 		BP_BRAIN = /obj/item/organ/internal/brain/slime,
 		)
