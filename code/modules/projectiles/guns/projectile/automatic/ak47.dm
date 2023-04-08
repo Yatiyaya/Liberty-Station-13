@@ -23,6 +23,9 @@
 	init_recoil = RIFLE_RECOIL(1)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
+	wield_delay = 0.8 SECOND
+	wield_delay_factor = 0.3 // 30 vig to insta wield, it is a rifle n' a bit heavy.
+
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/automatic/ak47/sawn
 
@@ -96,11 +99,15 @@
 	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
 	price_tag = 700
-	init_recoil = RIFLE_RECOIL(0.9)
+	init_recoil = RIFLE_RECOIL(1)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	saw_off = FALSE
+	folding_stock = TRUE
 	serial_type = "LG"
 	gun_parts = list(/obj/item/part/gun/frame/ak47 = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
+
+	wield_delay = 0.6 SECOND
+	wield_delay_factor = 0.2 // 20 vig for insta wield
 
 	init_firemodes = list(
 		FULL_AUTO_600,
@@ -127,7 +134,7 @@
 			This crude copy shows just how forgiving the design can be."
 	icon = 'icons/obj/guns/projectile/ak_homemade.dmi'
 	w_class = ITEM_SIZE_HUGE
-	init_recoil = RIFLE_RECOIL(0.7)
+	init_recoil = RIFLE_RECOIL(0.9)
 	mag_well = MAG_WELL_RIFLE
 	excelsior = FALSE
 	gun_parts = list(/obj/item/part/gun = 3 ,/obj/item/stack/material/plasteel = 7)

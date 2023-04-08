@@ -19,15 +19,15 @@
 	price_tag = 650
 	fire_delay = 3 //all revolvers can fire faster, but have huge recoil
 	damage_multiplier = 1.2
-	armor_penetration = 0.8
+	armor_penetration = 0.9
 	init_recoil = HANDGUN_RECOIL(1.3)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
 	fire_animatio = TRUE
 	allow_racking = FALSE
 	serial_type = "Car-Van"
 
-	wield_delay = 0.4 SECOND
-	wield_delay_factor = 0.4 // 40 vig
+	wield_delay = 0.3 SECOND
+	wield_delay_factor = 0.3 // 30 vig
 
 	gun_parts = list(/obj/item/part/gun/frame/frontier = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/magnum = 1)
 

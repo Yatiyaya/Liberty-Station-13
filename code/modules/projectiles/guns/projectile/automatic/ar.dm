@@ -21,7 +21,7 @@
 	cocked_sound 	= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	damage_multiplier = 1.1
 	penetration_multiplier = 1.2
-	init_recoil = RIFLE_RECOIL(0.8)
+	init_recoil = RIFLE_RECOIL(0.9)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
 	saw_off = TRUE
@@ -31,6 +31,7 @@
 
 	init_firemodes = list(
 		FULL_AUTO_300,
+		BURST_3_ROUND,
 		SEMI_AUTO_NODELAY
 		)
 	serial_type = "ML"
@@ -39,6 +40,9 @@
 	name = "sawn-off \"Federalist\" carbine"
 	desc = "This gun was fine. Was.. You know for a fact Terran Federal Police would have a field day with this gun."
 	icon = 'icons/obj/guns/projectile/sawnoff/ar.dmi'
+	init_recoil = RIFLE_RECOIL(1.2)
+	damage_multiplier = 1.1
+	penetration_multiplier = 1
 
 /obj/item/part/gun/frame/federalist
 	name = "Federalist frame"
@@ -54,7 +58,7 @@
 /obj/item/gun/projectile/automatic/federalist/homemaker
 	name = "\"Homemaker\" marksman carbine"
 	desc = "A weapon of a True Solarian Federaltion patriot. A home-owners dream rifle. \
-			A copy of the famous \"Federalist\" carbine, chambered in 6.5mm. This variant appears to have had its fire-selector taken out, but a better barrel and scope attached."
+			A copy of the famous \"Federalist\" carbine, chambered in 6.5mm. This variant appears to have lost its capability to switch to full-auto, but a better barrel and scope attached to compensate."
 
 	price_tag = 800
 	extra_damage_mult_scoped = 0.4
@@ -63,5 +67,6 @@
 	saw_off = FALSE
 
 	init_firemodes = list(
-		SEMI_AUTO_NODELAY
+		SEMI_AUTO_NODELAY,
+		BURST_2_ROUND
 		)

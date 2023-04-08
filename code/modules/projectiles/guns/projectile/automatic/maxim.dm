@@ -1,8 +1,8 @@
 /obj/item/gun/projectile/automatic/maxim
 	name = "\"Maxim\" machine gun"
-	desc = "\"There is only one way in which the murderous death agonies of the old society and the bloody birth throes of the new society can be shortened, \
-			simplified and concentrated, and that way is revolutionary terror.\"\nAn old and unsurprisingly deprecated gun from the Excelsior. \
-			One of their most dangerous weapons, effective at dealing with crowds or suppressing firing lines. Uses the unique 7.62mm pan-magazines."
+	desc = "The design of the \"Maxim\" is centuries old, but still somehow ends up making its way to some war footage somewhere in the universe. \
+			Though, this model differs from the historical Maxim machine gun in some ways. Firstly its light-weight build and use of other non-freezing liquids other than water. \
+			Secondly is its use of unique 7.62mm pan-magazines, likely borrowed from other top-feeding historical models. An odd work of art.. of course its made by Caravan Enterprise."
 	icon = 'icons/obj/guns/projectile/maxim.dmi'
 	icon_state = "maxim"
 	item_state = "maxim"
