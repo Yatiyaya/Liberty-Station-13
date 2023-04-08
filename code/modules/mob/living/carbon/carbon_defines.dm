@@ -46,4 +46,3 @@
 
 	var/movement_hunger_factors = 1
 	//TODO: move to brain
-
