@@ -111,7 +111,7 @@
 	icon_state = "pk_closed"
 	item_state = "pk_closed"
 	damage_multiplier = 1.0 // This becomes x0.8 as forced full auto modes incurr 20% damage penalty.
-	serial_type = "LG"
+	serial_type = "Car-Van"
 	init_firemodes = list(
 		BURST_5_ROUND,
 		BURST_8_ROUND,
