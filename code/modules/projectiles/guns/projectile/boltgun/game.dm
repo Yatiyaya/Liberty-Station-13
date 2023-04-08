@@ -3,8 +3,8 @@
 	desc = "A famous and affordable weapon found both within the galaxy's mid-reaches and outer-reaches. \
 			Chambered in 7.62mm, this weapon sports ten more rounds than it's cheaper \"Mosin\" ."
 	icon = 'icons/obj/guns/projectile/game.dmi'
-	icon_state = "game"
-	item_state = "game"
+	icon_state = "boltgun"
+	item_state = "boltgun"
 	w_class = ITEM_SIZE_HUGE
 	force = WEAPON_FORCE_ROBUST
 	slot_flags = SLOT_BACK

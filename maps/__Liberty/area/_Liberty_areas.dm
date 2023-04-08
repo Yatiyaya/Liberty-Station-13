@@ -158,6 +158,14 @@
 	dynamic_lighting = FALSE
 	is_dungeon_lootable = TRUE
 
+/area/liberty/dungeon/outside/frozen_forest
+	allows_weather_of_snow = TRUE
+
+/area/liberty/dungeon/outside/frozen_forest_caves
+	dynamic_lighting = TRUE
+
+/area/liberty/dungeon/outside/frozen_forest_house
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
