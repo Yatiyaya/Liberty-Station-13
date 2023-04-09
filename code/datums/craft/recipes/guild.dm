@@ -352,17 +352,18 @@
 	)
 
 /datum/craft_recipe/guild/mace
-	name = "war mace"
+	name = "termite truncheon"
 	result = /obj/item/tool/hammer/mace
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
 /datum/craft_recipe/guild/claymore
-	name = "claymore"
+	name = "spider chopper"
 	result = /obj/item/tool/sword
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
@@ -382,7 +383,7 @@
 	)
 
 /datum/craft_recipe/guild/katana
-	name = "katana"
+	name = "roach slicer"
 	result = /obj/item/tool/sword/katana
 	steps = list(
 	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),

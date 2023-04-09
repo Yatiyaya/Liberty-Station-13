@@ -228,11 +228,11 @@
 //Swords
 
 /obj/item/tool/sword
-	name = "claymore"
-	desc = "What are you standing around staring at this for? Get to killing!"
+	name = "spider chopper"
+	desc = "A hefty two-handed bent blade meant for smashing medium creatures.  Someone stuck a big plastic gem on the pommel."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "claymore"
-	item_state = "claymore"
+	icon_state = "shamshir"
+	item_state = "shamshir"
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
 	sharp = TRUE
 	edge = TRUE
@@ -258,10 +258,10 @@
 	alt_mode_lossrate = 0.3
 
 /obj/item/tool/sword/katana
-	name = "katana"
-	desc = "Modern Japanese-style blade that has no curve to it. This one looks pretty sharp."
-	icon_state = "katana" // New sprite courtesy of Kavric
-	item_state = "katana"
+	name = "roach slicer"
+	desc = "A one handed curved sword perfect for mincing up small critters."
+	icon_state = "scimitar" // New sprite courtesy of nayu
+	item_state = "scimitar"
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
 	slot_flags = SLOT_BELT | SLOT_BACK
