@@ -364,7 +364,7 @@
 
 /datum/craft_recipe/guild/claymore
 	name = "spider chopper"
-	result = /obj/item/tool/sword
+	result = /obj/item/tool/sword/union
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
@@ -384,7 +384,7 @@
 
 /datum/craft_recipe/guild/katana
 	name = "roach slicer"
-	result = /obj/item/tool/sword/katana
+	result = /obj/item/tool/sword/katana/union
 	steps = list(
 	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
