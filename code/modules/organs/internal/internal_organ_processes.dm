@@ -223,15 +223,6 @@
 		else
 			adjustNutrition(-(total_nutriment_req * (stomach_efficiency/100)))
 
-/* We dont have vore
-	if(stomach_efficiency <= 1)
-		for(var/mob/living/M in stomach_contents)
-			M.loc = loc
-			stomach_contents.Remove(M)
-			continue
-		ingested.trans_to_turf(get_turf(src))
-*/
-
 /mob/living/carbon/human/var/carrion_stored_chemicals = 0
 /mob/living/carbon/human/var/carrion_hunger = 0
 /mob/living/carbon/human/var/carrion_last_hunger = -2 MINUTES

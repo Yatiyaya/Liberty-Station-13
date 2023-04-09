@@ -11,7 +11,6 @@
 	gender = MALE // barf (unless you're a dorf, dorfs dig chix /w beards :P)
 	species_allowed = list(
 		SPECIES_HUMAN,
-		SPECIES_EXALT_HUMAN,
 		FORM_MARQUA,
 		FORM_SABLEKYNE,
 		FORM_KRIOSAN,

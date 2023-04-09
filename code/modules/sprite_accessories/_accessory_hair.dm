@@ -10,7 +10,6 @@
 	icon = 'icons/mob/human_races/species/human/hair.dmi'
 	species_allowed = list(
 		SPECIES_HUMAN,
-		SPECIES_EXALT_HUMAN,
 		FORM_MARQUA,
 		FORM_SABLEKYNE,
 		FORM_KRIOSAN,
