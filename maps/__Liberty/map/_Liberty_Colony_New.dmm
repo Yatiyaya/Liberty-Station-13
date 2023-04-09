@@ -8808,9 +8808,6 @@
 "chh" = (
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/janitor)
-"chz" = (
-/turf/simulated/floor/tiled/white/cyancorner,
-/area/liberty/security/triage_blackshield)
 "chC" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -14820,7 +14817,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "dBb" = (
 /obj/structure/bed/chair/custom/onestar{
-	desc = "A steel chair manufactured by Greyson Positronics. Doesn't look very comfortable.";
+	desc = "A steel chair manufactured by Similacrum Robotics. Doesn't look very comfortable.";
 	dir = 4;
 	name = "stiff chair"
 	},
@@ -18692,9 +18689,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/crew_quarters/dorm2)
-"esF" = (
-/turf/simulated/floor/tiled/white,
-/area/liberty/security/detectives_office)
 "esG" = (
 /obj/structure/closet/l3closet/scientist,
 /obj/effect/decal/cleanable/dirt,
@@ -65745,7 +65739,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "pgk" = (
-/mob/living/simple_animal/soteria_roomba,
+/mob/living/simple_animal/capsa_roomba,
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
@@ -67603,7 +67597,7 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
 "pBF" = (
-/mob/living/carbon/superior_animal/robot/greyson/roomba/boomba,
+/mob/living/carbon/superior_animal/robot/similacrum/roomba/boomba,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1north)
@@ -201757,7 +201751,7 @@ uQS
 gso
 gHX
 oPX
-esF
+mcF
 iYP
 qJG
 liv
@@ -204169,7 +204163,7 @@ fLr
 xsC
 wbF
 lGv
-chz
+eZl
 pGy
 rMa
 xsC

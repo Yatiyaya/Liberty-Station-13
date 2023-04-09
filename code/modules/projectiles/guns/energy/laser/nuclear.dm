@@ -1,7 +1,7 @@
 /obj/item/gun/energy/gun/nuclear
 	name = "\"EBR-IV\" Nuclear Particle Rifle"
 	desc = "A prototype of a 'self-sustaining' experimental breeder rifle feeding itself off a built-in nuclear reactor. Projecting either high powered tazer shots or deadly particle beams at will of it's user. \
-	Neither Soteria nor Sol Military take any responsiblity for deaths of it's users."
+	Neither Phokorus Institute nor Sol Military take any responsiblity for deaths of it's users."
 	icon = 'icons/obj/guns/energy/nucgun.dmi'
 	icon_state = "nucgun"
 	item_charge_meter = TRUE
@@ -23,7 +23,7 @@
 	)
 
 	var/lightfail = 0
-	serial_type = "SI"
+	serial_type = "PI"
 
 //override for failcheck behaviour
 /obj/item/gun/energy/gun/nuclear/Process()

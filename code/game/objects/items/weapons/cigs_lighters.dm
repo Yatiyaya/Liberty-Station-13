@@ -264,8 +264,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	preloaded_reagents = list("nicotine" = 5, "ishispec" = 5)
 
 /obj/item/clothing/mask/smokable/cigarette/os
-	name = "\improper GP produced cigarette"
-	desc = "A inhouse made cigarette by GP."
+	name = "\improper SR produced cigarette"
+	desc = "A inhouse made cigarette by SR."
 	icon_state = "cigoff"
 	icon_on = "cigon"
 	icon_off = "cigoff"
@@ -514,7 +514,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	throwforce = 1
 
 /obj/item/trash/cigbutt/os
-	name = "\improper GP cigarette butt"
+	name = "\improper SR cigarette butt"
 	icon_state = "cigbutt"
 
 /obj/item/trash/cigbutt/ishimura

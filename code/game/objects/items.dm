@@ -91,7 +91,7 @@
 	var/list/initialized_upgrades = list()
 
 	var/max_upgrades = 3
-	var/allow_greyson_mods = FALSE
+	var/allow_similacrum_mods = FALSE
 	prefixes = list()
 	var/list/blacklist_upgrades = list() //Zebra list. /item/upgrade/thing = TRUE means it IS  blacklisted, /item/upgrade/thing/subtype = FALSE means it won't b blacklisted. subtypes go first.
 	var/my_fuel = "fuel" //If we use fuel, what do we use?
@@ -227,8 +227,8 @@
 	for(var/Q in tool_qualities)
 		message += "\n<blue>It possesses [tool_qualities[Q]] tier of [Q] quality.<blue>"
 
-	if(allow_greyson_mods)
-		message += "\n<blue>This allows for Greyson Positronic based mods to be integrated without normal constraints.<blue>"
+	if(allow_similacrum_mods)
+		message += "\n<blue>This allows for Similacrum Robotics based mods to be integrated without normal constraints.<blue>"
 
 
 	if(ishuman(user))
@@ -627,7 +627,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	item_flags = initial(item_flags)
 	name = initial(name)
 	max_upgrades = initial(max_upgrades)
-	allow_greyson_mods = initial(allow_greyson_mods)
+	allow_similacrum_mods = initial(allow_similacrum_mods)
 	color = initial(color)
 	sharp = initial(sharp)
 	prefixes = list()

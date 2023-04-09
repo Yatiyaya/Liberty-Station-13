@@ -1,3 +1,4 @@
+
 /datum/category_item/setup_option/core_implant/cruciform
 	name = "Vinculum Cruciform"
 	desc = "The implant given to every disciple of the Absolute. This one is a standard Vinculum design, having the base-line of a normal cruciform."
@@ -20,7 +21,7 @@
 
 /datum/category_item/setup_option/core_implant/psionic_tumor
 	name = "Psionic Organ"
-	desc = "An unusual organ implanted by the Soteria research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
+	desc = "An unusual organ implanted by the Phokorus Institute of research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
 	Those with this organ must maintain purity of their bodies, any implants, cruciforms, or synthetic limbs will be violently and painfully rejected while this organ exists in the body."
 	implant_organ_type = "psionic tumor"
 	restricted_jobs = list(
@@ -31,9 +32,9 @@
 
 /datum/category_item/setup_option/core_implant/psionic_tumor_psychiatrist
 	name = "Cultured Psionic Organ"
-	desc = "An unusual organ implanted by the Soteria research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
+	desc = "An unusual organ implanted by the Phokorus Institute of research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
 	Those with this organ must maintain purity of their bodies, any implants, cruciforms, or synthetic limbs will be violently and painfully rejected while this organ exists in the body. This \
-	particular organ is the result of development while inside the brain of someone who understands the mind intimiately, offering them expanded powers and abilities when working as a Soteria psych."
+	particular organ is the result of development while inside the brain of someone who understands the mind intimiately, offering them expanded powers and abilities when working as a CAPSA psych."
 	implant_organ_type = "cultured tumor"
 	restricted_jobs = list(
 		/datum/job/doctor,

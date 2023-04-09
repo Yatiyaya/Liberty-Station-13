@@ -18,9 +18,8 @@
 		BURST_3_ROUND_NOLOSS,
 		SEMI_AUTO_NODELAY
 		)
-	can_dual = 1
-	damage_multiplier = 0.8			//Gets better when stock is unfolded
-	init_recoil = SMG_RECOIL(1)		//Gets better when stock is unfolded
+	damage_multiplier = 0.9			//Gets better when stock is unfolded
+	init_recoil = SMG_RECOIL(1.1)		//Gets better when stock is unfolded
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	serial_type = "INDEX"
 	folding_stock = TRUE //we can fold our stocks

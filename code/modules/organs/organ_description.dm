@@ -216,6 +216,7 @@
 	default_type = /obj/item/organ/external/slime
 	default_bone_type = /obj/item/organ/internal/bone/slime
 	vital = FALSE
+	functions = BODYPART_REAGENT_INTAKE
 
 /datum/organ_description/arm/left/slime
 	default_type = /obj/item/organ/external/slime
@@ -234,7 +235,7 @@
 	default_bone_type = /obj/item/organ/internal/bone/slime
 
 ////SYNTHETIC////
-//Soteria
+//CAPSA
 /datum/organ_description/chest/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 

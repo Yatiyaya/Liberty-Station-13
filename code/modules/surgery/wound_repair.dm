@@ -86,13 +86,12 @@
 		target.adjustToxLoss(5)
 
 	else if (istype(tool, /obj/item/stack/medical/bruise_pack))
-		dam_amt = 5
+		dam_amt = 3
 		target.adjustToxLoss(10)
-		affected.createwound(CUT, 5)
 
-	for(var/obj/item/organ/I in affected.internal_organs)
+	for(var/obj/item/organ/internal/I in affected.internal_organs)
 		if(I && I.damage > 0)
-			I.take_damage(dam_amt,0)
+			I.take_damage(dam_amt,BRUTE,rand(0,8))
 
 // Burn Heal Surgery
 
@@ -153,9 +152,9 @@
 	SPAN_WARNING("Your hand slips, tearing the inside of [target]'s [affected.name] with \the [tool]!"))
 	var/dam_amt = 2
 
-	for(var/obj/item/organ/I in affected.internal_organs)
+	for(var/obj/item/organ/internal/I in affected.internal_organs)
 		if(I && I.damage > 0)
-			I.take_damage(dam_amt,0)
+			I.take_damage(dam_amt,BRUTE,rand(0,8))
 
 // Toxin Heal Surgery
 
@@ -216,6 +215,6 @@
 	SPAN_WARNING("Your hand slips, filtering healthy cells from the inside of [target]'s [affected.name] with \the [tool]!"))
 	var/dam_amt = 2
 
-	for(var/obj/item/organ/I in affected.internal_organs)
+	for(var/obj/item/organ/internal/I in affected.internal_organs)
 		if(I && I.damage > 0)
-			I.take_damage(dam_amt,0)
+			I.take_damage(dam_amt,TOX,rand(0,8))

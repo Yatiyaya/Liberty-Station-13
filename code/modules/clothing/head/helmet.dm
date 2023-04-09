@@ -910,8 +910,8 @@
 		usr.update_action_buttons()
 		return 1
 
-//Soteria
-/obj/item/clothing/head/helmet/soteriasuit
+//CAPSA
+/obj/item/clothing/head/helmet/capsasuit
 	name = "'Mark II' environmental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."
 	icon_state = "armor_engineering"
@@ -927,7 +927,7 @@
 	name = "salvaged helmet"
 	desc = "A helmet patched together by Prospector Salvagers, light and easy to breath in, \
 	the helmet has a few bells and whistles, a set of inbuilt goggles to keep dust and blood out of ones eyes, \
-	salvaged Greyson material coating it's outside it offer superb protection, and even a inbuilt radio. \
+	salvaged Similacrum material coating it's outside it offer superb protection, and even a inbuilt radio. \
 	Tragically the scav in charge of the radio was unable to tune it or turn it on."
 	icon_state = "forehead_helmet"
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 30, MATERIAL_SILVER = 12) //worth stealing
@@ -1157,7 +1157,7 @@
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
-	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Greyson Positronic"
+	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Similacrum Robotics"
 	icon_state = "ablative"
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES

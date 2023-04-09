@@ -201,9 +201,9 @@ obj/item/organ/external/robotic/synthskin/groin
 /obj/item/organ/external/robotic/makeshift/chest
 	default_description = /datum/organ_description/chest
 
-// Soteria
+// CAPSA
 /obj/item/organ/external/robotic/moebius
-	name = "\"Soteria\""
+	name = "\"CAPSA\""
 	desc = "Reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
@@ -231,12 +231,12 @@ obj/item/organ/external/robotic/synthskin/groin
 	max_damage = 200
 
 /obj/item/organ/external/robotic/moebius/torso
-	name = "\"Soteria\" Torso"
+	name = "\"CAPSA\" Torso"
 	default_description = /datum/organ_description/chest
 	max_damage = 200
 
 /obj/item/organ/external/robotic/moebius/head
-	name = "\"Soteria\" Head"
+	name = "\"CAPSA\" Head"
 	default_description = /datum/organ_description/head
 	max_damage = 200
 
@@ -347,9 +347,9 @@ obj/item/organ/external/robotic/synthskin/groin
 /obj/item/organ/external/robotic/excelsior/head
 	default_description = /datum/organ_description/head
 
-// Greyson
+// Similacrum
 /obj/item/organ/external/robotic/one_star
-	name = "Greyson"
+	name = "Similacrum"
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"

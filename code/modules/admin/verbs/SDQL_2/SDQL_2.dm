@@ -189,14 +189,14 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 						SDQL_var(d, query_tree["call"][1], source = d)
 						CHECK_TICK
 
-					to_chat(usr, "SDQL Query done")
+					to_chat(usr, "SRQL Query done")
 
 				if("delete")
 					for(var/datum/d in objs)
 						qdel(d)
 						CHECK_TICK
 
-					to_chat(usr, "SDQL Query done")
+					to_chat(usr, "SRQL Query done")
 
 				if("select")
 					var/list/text_list = list()
@@ -239,7 +239,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 
 							CHECK_TICK
 
-					to_chat(usr, "SDQL Query done")
+					to_chat(usr, "SRQL Query done")
 
 	catch (var/exception/e)
 		to_chat(usr, SPAN_DANGER("An exception has occured during the execution of your query and your query has been aborted."))
@@ -440,7 +440,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 				if("or", "||")
 					result = (result || val)
 				else
-					to_chat(usr, SPAN_WARNING("SDQL2: Unknown op [op]"))
+					to_chat(usr, SPAN_WARNING("SRQL2: Unknown op [op]"))
 					result = null
 		else
 			result = val
@@ -633,7 +633,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 
 		else if(char == "'")
 			if(word != "")
-				to_chat(usr, SPAN_WARNING("SDQL2: You have an error in your SDQL syntax, unexpected ' in query: \"<font color=gray>[query_text]</font>\" following \"<font color=gray>[word]</font>\". Please check your syntax, and try again."))
+				to_chat(usr, SPAN_WARNING("SRQL2: You have an error in your SDQL syntax, unexpected ' in query: \"<font color=gray>[query_text]</font>\" following \"<font color=gray>[word]</font>\". Please check your syntax, and try again."))
 				return null
 
 			word = "'"
@@ -653,7 +653,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 					word += char
 
 			if(i > len)
-				to_chat(usr, SPAN_WARNING("SDQL2: You have an error in your SDQL syntax, unmatched ' in query: \"<font color=gray>[query_text]</font>\". Please check your syntax, and try again."))
+				to_chat(usr, SPAN_WARNING("SRQL2: You have an error in your SDQL syntax, unmatched ' in query: \"<font color=gray>[query_text]</font>\". Please check your syntax, and try again."))
 				return null
 
 			query_list += "[word]'"
@@ -661,7 +661,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 
 		else if(char == "\"")
 			if(word != "")
-				to_chat(usr, SPAN_WARNING("SDQL2: You have an error in your SDQL syntax, unexpected \" in query: \"<font color=gray>[query_text]</font>\" following \"<font color=gray>[word]</font>\". Please check your syntax, and try again."))
+				to_chat(usr, SPAN_WARNING("SRQL2: You have an error in your SDQL syntax, unexpected \" in query: \"<font color=gray>[query_text]</font>\" following \"<font color=gray>[word]</font>\". Please check your syntax, and try again."))
 				return null
 
 			word = "\""
@@ -681,7 +681,7 @@ ADMIN_VERB_ADD(/client/proc/SDQL2_query, R_DEBUG, FALSE)
 					word += char
 
 			if(i > len)
-				to_chat(usr, SPAN_WARNING("SDQL2: You have an error in your SDQL syntax, unmatched \" in query: \"<font color=gray>[query_text]</font>\". Please check your syntax, and try again."))
+				to_chat(usr, SPAN_WARNING("SRQL2: You have an error in your SDQL syntax, unmatched \" in query: \"<font color=gray>[query_text]</font>\". Please check your syntax, and try again."))
 				return null
 
 			query_list += "[word]\""

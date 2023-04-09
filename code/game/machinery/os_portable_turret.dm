@@ -4,8 +4,8 @@
 
 
 /obj/machinery/power/os_turret
-	name = "Greyson Positronic turret"
-	desc = "A turret of the Greyson Positronic variety."
+	name = "Similacrum Robotics turret"
+	desc = "A turret of the Similacrum Robotics variety."
 	icon = 'icons/obj/machines/one_star/machines.dmi'
 	icon_state = "os_gauss" // sprite by Infrared Baron
 	circuit = /obj/item/circuitboard/os_turret
@@ -122,7 +122,7 @@
 			secondarytargets += L
 
 /obj/machinery/power/os_turret/proc/assess_living(var/mob/living/L) //TODO: optimize
-	if(L.faction == "greyson") //The cheatcode
+	if(L.faction == "similacrum") //The cheatcode
 		return TURRET_NOT_TARGET
 
 	if(!istype(L))
@@ -146,7 +146,7 @@
 	if(should_target_players && ishuman(L))
 		return TURRET_PRIORITY_TARGET
 
-	if(should_target_players && issilicon(L)) //We shoot non GP robots
+	if(should_target_players && issilicon(L)) //We shoot non SD robots
 		return TURRET_SECONDARY_TARGET
 
 	if(!should_target_players && !ishuman(L))

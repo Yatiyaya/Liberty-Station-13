@@ -617,8 +617,8 @@
 // Heavy
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/heavysniper
-	disk_name = "SA - 14.5×114mm Penetrator AMR"
-	icon_state = "sa"
+	disk_name = "ML - 14.5×114mm Penetrator AMR"
+	icon_state = "black"
 
 	license = 8
 	designs = list(
@@ -727,7 +727,7 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/auretian
-	disk_name = "SI - \"Auretian\" E Pistol"
+	disk_name = "PI - \"Auretian\" E Pistol"
 	icon_state = "moebius"
 
 	license = 4 //1 gun 1 cell, or 4 good cells that are bette then normal
@@ -737,7 +737,7 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/stun_revolver_sci
-	disk_name = "SI - \"Hera\" Stun Revolver"
+	disk_name = "PI - \"Hera\" Stun Revolver"
 	icon_state = "moebius"
 
 	license = 8 //2 gun 2 cell, or 8 good cells that are bette then normal
@@ -757,7 +757,7 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/lasercannon
-	disk_name = "SI - \"Solaris\" Laser Cannon"
+	disk_name = "PI - \"Solaris\" Laser Cannon"
 	icon_state = "moebius"
 
 	license = 8 //1 gun 1 cell, or 4 good cells that are bette then normal
@@ -767,7 +767,7 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/centauri
-	disk_name = "SI - \"Centauri\" PDW E"
+	disk_name = "PI - \"Centauri\" PDW E"
 	icon_state = "moebius"
 
 	license = 8 //2 gun 1 cell, or 4 good cells that are bette then normal
@@ -800,7 +800,7 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/centurio
-	disk_name = "SI - \"Centurio\" Plasma Pistol"
+	disk_name = "PI - \"Centurio\" Plasma Pistol"
 	icon_state = "moebius"
 
 	license = 8 //1 gun 1 cell, or 4 good cells that are bette then normal

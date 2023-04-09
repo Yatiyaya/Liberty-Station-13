@@ -134,7 +134,7 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 	var/shuttle_called_message = "The shift end will happen in %ETA%. Any unfinished work should be completed before final call."
 	var/shuttle_recall_message = "Shift end aborted, return to normal operating conditions."
 
-	var/list/usable_email_tlds = list("nad_col.org","liberty.scg","liberty.net")
+	var/list/usable_email_tlds = list("freeport.col","free-lib-col.tf","liberty.net","free.mail.lg")
 	var/path = "liberty"
 
 	var/access_modify_region = list(

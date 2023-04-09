@@ -36,6 +36,7 @@
 	)
 
 	perks = list(PERK_ASS_OF_CONCRETE,
+				 PERK_CODESPEAK,
 				 PERK_CHEM_CONTRABAND)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -96,9 +97,9 @@
 							 /datum/computer_file/program/camera_monitor)
 
 	perks = list(PERK_MARKET_PROF,
-				 /datum/perk/codespeak,
-				 /datum/perk/chem_contraband,
-				 /datum/perk/gunsmith)
+				 PERK_CODESPEAK,
+				 PERK_CHEM_CONTRABAND,
+				 PERK_GUNSMITH)
 
 	description = "The Supply Specialist is the right hand of the warrant officer and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the colony or even the armory.<br>\
@@ -193,7 +194,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/security/sentry
 
-	perks = list(PERK_CHEM_CONTRABAND)
+	perks = list(PERK_CHEM_CONTRABAND, PERK_CODESPEAK)
 
 	access = list(
 		access_security, access_eva,
@@ -256,7 +257,7 @@
 		STAT_VIG = 20,
 	)
 
-	perks = list(PERK_CHEM_CONTRABAND)
+	perks = list(PERK_CHEM_CONTRABAND, PERK_CODESPEAK)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)

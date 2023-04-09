@@ -64,8 +64,8 @@
 		return
 	if(chancedrop == 3)
 		new /obj/item/tool/sword/katana/nano (src.loc)
-		new /obj/item/clothing/suit/armor/vest/soteriasuit (src.loc)
-		new /obj/item/clothing/head/helmet/soteriasuit (src.loc)
+		new /obj/item/clothing/suit/armor/vest/capsasuit (src.loc)
+		new /obj/item/clothing/head/helmet/capsasuit (src.loc)
 		qdel(src)
 		return
 	qdel(src)

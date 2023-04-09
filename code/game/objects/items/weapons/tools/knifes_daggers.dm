@@ -211,7 +211,7 @@
 	backstab_damage = 9
 
 /obj/item/tool/knife/dagger/bluespace
-	name = "\improper Soteria \"Displacement Dagger\""
+	name = "\improper Phokorus Institute \"Displacement Dagger\""
 	desc = "A teleportation matrix attached to a dagger, for sending things you stab it into very far away."
 	icon_state = "bluespace_dagger"
 	item_state = "bluespace_dagger"

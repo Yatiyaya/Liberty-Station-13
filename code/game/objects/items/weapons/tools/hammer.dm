@@ -79,7 +79,7 @@
 	..()
 
 /obj/item/tool/hammer/powered_hammer/onestar_hammer
-	name = "Greyson sledgehammer"
+	name = "Similacrum sledgehammer"
 	desc = "Used for applying immeasurable blunt force to anything in your way."
 	icon_state = "onehammer"
 	item_state = "onehammer"
@@ -96,7 +96,7 @@
 	use_power_cost = 1.5
 	workspeed = 1.5
 	max_upgrades = 2
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 /obj/item/tool/hammer/foremansledge
 	name = "foreman's sledgehammer"

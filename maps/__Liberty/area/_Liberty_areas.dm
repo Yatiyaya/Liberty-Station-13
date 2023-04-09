@@ -158,6 +158,14 @@
 	dynamic_lighting = FALSE
 	is_dungeon_lootable = TRUE
 
+/area/liberty/dungeon/outside/frozen_forest
+	allows_weather_of_snow = TRUE
+
+/area/liberty/dungeon/outside/frozen_forest_caves
+	dynamic_lighting = TRUE
+
+/area/liberty/dungeon/outside/frozen_forest_house
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
@@ -166,7 +174,7 @@
 	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/abandoned_solars
-	name = "Soteria Solar Outpost"
+	name = "CAPSA Solar Outpost"
 	icon_state = "erisgreen"
 	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
@@ -265,7 +273,7 @@
 	ship_area = FALSE
 
 /area/liberty/outside/one_star
-	name = "Greyson Positronic Base"
+	name = "Similacrum Robotics Base"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen13.ogg', 'sound/ambience/ambigen14.ogg', 'sound/ambience/ambimalf.ogg')
 	dynamic_lighting = TRUE
@@ -273,12 +281,12 @@
 	flags = AREA_FLAG_RAD_SHIELDED
 
 /area/liberty/outside/one_star/fo_outside
-	name = "Greyson Grounds"
+	name = "Similacrum Grounds"
 	icon_state = "erisgreen"
 	dynamic_lighting = FALSE
 
 /area/liberty/outside/one_star/fo_internal
-	name = "Greyson Field Offices"
+	name = "Similacrum Field Offices"
 	icon_state = "erisblue"
 
 /area/liberty/outside/dcave
@@ -1546,7 +1554,7 @@ area/liberty/medical/medbaymeeting
 	flags = AREA_FLAG_CRITICAL
 
 /area/liberty/rnd/rdoffice
-	name = "\improper Soteria Expedition Overseer's Office"
+	name = "\improper CAPSA Expedition Overseer's Office"
 	icon_state = "head_quarters"
 
 /area/liberty/rnd/supermatter

@@ -81,10 +81,10 @@
 	tool_qualities = list() // So that it can't trigger the screwdriving part.
 	var/damage_boost = 30 // The damage bonus it give to the roomba when installed.
 
-// SI Sword Drone
+// PI Sword Drone
 /obj/item/bot_part/sword_part
 	name = "Sword Drone Parts"
-	desc = "Parts used for the construction of a Soteria Sword Drone."
+	desc = "Parts used for the construction of a Phokorus Institute Sword Drone."
 
 /obj/item/bot_part/sword_part/main_frame
 	name = "Sword Drone Chassis"
@@ -105,10 +105,10 @@
 	to_chat(user, "It has '[created_name]' written on its nametag.")
 	to_chat(user, "[step_message]") // Let the user know what he need to do next.
 
-// SI Mantis Drone
+// PI Mantis Drone
 /obj/item/bot_part/mantis_part
 	name = "Mantis Drone Parts"
-	desc = "Parts used for the construction of a Soteria Mantis Drone."
+	desc = "Parts used for the construction of a Phokorus Institute Mantis Drone."
 
 /obj/item/bot_part/mantis_part/main_frame
 	name = "Mantis Drone Chassis"
@@ -164,7 +164,7 @@
 
 /obj/item/storage/box/sword_drone_kit
 	name = "Custom Sword Drone Fabrication Kit"
-	desc = "Everything to make your own Soteria-brand Sword Drone! Tools not included."
+	desc = "Everything to make your own CAPSA-brand Sword Drone! Tools not included."
 
 /obj/item/storage/box/sword_drone_kit/populate_contents()
 	new /obj/item/bot_part/sword_part/main_frame(src)
@@ -178,12 +178,12 @@
 	new /obj/item/cell/large/moebius(src)
 	new /obj/item/bot_part/control(src)
 	new /obj/item/stack/cable_coil(src, 10, "red")
-	new /obj/item/clothing/suit/armor/vest/soteriasuit(src)
+	new /obj/item/clothing/suit/armor/vest/capsasuit(src)
 	new /obj/item/tool_upgrade/productivity/red_paint(src)
 
 /obj/item/storage/box/mantis_drone_kit
 	name = "Custom Mantis Drone Fabrication Kit"
-	desc = "Everything to make your own Soteria-brand Mantis Drone! Tools not included."
+	desc = "Everything to make your own Phokorus Institute-brand Mantis Drone! Tools not included."
 
 /obj/item/storage/box/mantis_drone_kit/populate_contents()
 	new /obj/item/bot_part/mantis_part/main_frame(src)
@@ -198,5 +198,5 @@
 	new /obj/item/cell/large/moebius(src)
 	new /obj/item/bot_part/control(src)
 	new /obj/item/stack/cable_coil(src, 10, "red")
-	new /obj/item/clothing/suit/armor/vest/soteriasuit(src)
+	new /obj/item/clothing/suit/armor/vest/capsasuit(src)
 	new /obj/item/tool_upgrade/productivity/red_paint(src)

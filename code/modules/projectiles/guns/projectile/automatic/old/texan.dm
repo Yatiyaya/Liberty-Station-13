@@ -17,7 +17,7 @@
 	penetration_multiplier = 1.5
 	init_recoil = SMG_RECOIL(0.5)
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	init_firemodes = list(
 		FULL_AUTO_600_NOLOSS,
