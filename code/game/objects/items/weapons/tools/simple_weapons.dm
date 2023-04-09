@@ -86,23 +86,6 @@
 			var/obj/effect/plant/P = A
 			P.die_off()
 
-/obj/item/tool/fireaxe/woodsman
-	name = "woodsman axe"
-	desc = "Chop the wood to fuel the fire."
-	icon_state = "woodsmanaxe0"
-	wielded_icon = "woodsmanaxe1"
-	force = WEAPON_FORCE_ROBUST
-	slot_flags = SLOT_BELT|SLOT_BACK
-	tool_qualities = list(QUALITY_CUTTING = 40, QUALITY_SAWING = 30)
-	w_class = ITEM_SIZE_BULKY
-	price_tag = 30
-
-	has_alt_mode = TRUE
-	alt_mode_damagetype = HALLOSS
-	alt_mode_verbs = list("bashes", "beats", "clobbers")
-	alt_mode_sharp = FALSE
-	alt_mode_toggle = "flips the axe to its broad side"
-
 /obj/item/tool/fireaxe/militia_tomahawk
 	name = "blackshield tactical tomahawk"
 	desc = "For cutting, sawing, prying, and throwing at targets mid back-flip."
@@ -494,8 +477,8 @@
 	price_tag = 120
 
 /obj/item/tool/sword/cleaver
-	name = "sun cleaver"
-	desc = "A weapon designed by the Hunting Lodge, this massive sword is especially effective against tengolos, xenomorphs, and tengolo berserkers, dealing double its normal damage with every strike."
+	name = "hunters cleaver"
+	desc = "A handcrafted weapon, this massive sword is especially effective against tengolos, xenomorphs, and tengolo berserkers, dealing double its normal damage with every strike."
 	icon = 'icons/obj/weapons-blades.dmi'
 	icon_state = "cleaver"
 	item_state = "cleaver_back"
@@ -511,22 +494,6 @@
 	item_state_slots = list(
 		slot_back_str = "cleaver_back"
 		)
-
-/obj/item/tool/sword/huntingclaw
-	name = "hunting claw"
-	desc = "The second best friend a hunter could ask for, this one handed blade is lightweight and razor sharp thanks to its starworks-grade alloy construction.\
-	 The hilt is made out of wood with gold looking trimmings. A Black Bear has been beautifully etched on the wood. All craftsmanship is of the highest quality."
-	icon = 'icons/obj/weapons-blades.dmi'
-	icon_state = "huntingclaw"
-	item_state = "huntingclaw"
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_WOOD = 2)
-	slot_flags = SLOT_BELT | SLOT_BACK
-	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_SAWING = 20) //Very sharp blade, serrated back
-	force = WEAPON_FORCE_ROBUST
-	armor_penetration = ARMOR_PEN_SHALLOW
-	w_class = ITEM_SIZE_NORMAL
-	price_tag = 500
-
 /obj/item/tool/gauntlet
 	name = "render gauntlet"
 	desc = "A crudely made gauntlet consisting of straps, metal reinforcement and render skin - including it's deadly claws."
