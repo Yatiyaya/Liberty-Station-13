@@ -7,14 +7,14 @@
 	req_access = list(access_foreman)
 	access_occupy = list(access_prospector)
 	icon_state = "prospector" // Mixed dirt/jungle camo for the soul, since they usually brave the jungle a lot. - Seb
-	var/main_weapon_cache
+	//var/main_weapon_cache
 	var/side_arm_cache
 	var/melee_cache
 	var/bag_cache
 
 
 /obj/structure/closet/secure_closet/personal/prospector/proc/gain_rng()
-	main_weapon_cache = pickweight(list("SMG" = 18, "SHOTGUN" = 8, "RIFLE" = 6, "EGUN" = 8))
+	//main_weapon_cache = pickweight(list("SMG" = 18, "SHOTGUN" = 8, "RIFLE" = 6, "EGUN" = 8))
 	side_arm_cache = pickweight(list("PISTOL" = 16, "REVOLVER" = 8, "EGUN_P" = 4))
 	melee_cache = pickweight(list("MACHETE" = 18, "KATANA" = 6, "PHAMMER" = 4))
 	bag_cache = pickweight(list("INDUSTRIAL" = 36, "DUFFEL" = 28, "MILI" = 16))
@@ -25,6 +25,7 @@
 	new /obj/item/device/radio/headset/headset_pro(src)
 	new /obj/item/clothing/accessory/cape/prospie(src)
 	new /obj/item/clothing/mask/gas/fontaine(src)
+	new /obj/item/gunbox/shipbreaker(src)
 
 	switch(bag_cache)
 		if("INDUSTRIAL")
@@ -36,32 +37,6 @@
 			new /obj/item/storage/backpack/duffelbag(src)
 		if("MILI")
 			new /obj/item/storage/backpack/military(src)
-
-	//longarms
-	switch(main_weapon_cache)
-		if("SMG")
-			if(prob(50))
-				new /obj/item/gun/projectile/automatic/broz(src)
-				new /obj/item/ammo_magazine/smg_35(src)
-				new /obj/item/ammo_magazine/smg_35(src)
-			else
-				new /obj/item/gun/projectile/automatic/umbani(src)
-				new /obj/item/ammo_magazine/smg_magnum_40(src)
-				new /obj/item/ammo_magazine/smg_magnum_40(src)
-		if("SHOTGUN")
-			new /obj/item/gun/projectile/shotgun/pump(src)
-			new /obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet(src)
-			new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
-		if("RIFLE")
-			new /obj/item/gun/projectile/automatic/ak47/makeshift(src)
-			new /obj/item/ammo_magazine/rifle_75(src)
-			new /obj/item/ammo_magazine/rifle_75(src)
-			new /obj/item/ammo_magazine/rifle_75(src)
-		if("EGUN")
-			new /obj/item/gun/energy/laser/makeshift(src)
-			new /obj/item/cell/medium(src)
-			new /obj/item/cell/medium(src)
-			new /obj/item/cell/medium(src)
 
 	//pistols
 	new /obj/item/gun/projectile/automatic/slaught_o_matic(src)
@@ -124,14 +99,12 @@
 	req_access = list(access_foreman)
 	access_occupy = list(access_prospector)
 	icon_state = "oldstyle" // Placeholder for lack of a better salvage-oriented looking locker.
-	var/main_weapon_cache
 	var/side_arm_cache
 	var/melee_cache
 	var/bag_cache
 
 
 /obj/structure/closet/secure_closet/personal/salvager/proc/gain_rng()
-	main_weapon_cache = pickweight(list("CROSSBOW" = 12, "SHOTGUN" = 8, "RIFLE" = 6, "EGUN" = 4))
 	side_arm_cache = pickweight(list("PISTOL" = 6, "REVOLVER" = 12))
 	melee_cache = pickweight(list("MACHETE" = 12, "KATANA" = 8))
 	bag_cache = pickweight(list("INDUSTRIAL" = 24, "DUFFEL" = 16, "MILI" = 8))
@@ -142,6 +115,7 @@
 	new /obj/item/device/radio/headset/headset_pro(src)
 	new /obj/item/clothing/accessory/cape/prospie(src)
 	new /obj/item/clothing/mask/gas/fontaine(src)
+	new /obj/item/gunbox/trapper(src)
 
 	switch(bag_cache)
 		if("INDUSTRIAL")
@@ -153,35 +127,6 @@
 			new /obj/item/storage/backpack/duffelbag(src)
 		if("MILI")
 			new /obj/item/storage/backpack/military(src)
-
-	//longarms
-	switch(main_weapon_cache)
-		if("CROSSBOW")
-			new /obj/item/gun/projectile/shotgun/pump/hunter_crossbow(src)
-			new /obj/item/ammo_casing/crossbow_bolts/bulk(src)
-			new /obj/item/ammo_casing/crossbow_bolts/bulk(src)
-		if("SHOTGUN")
-			new /obj/item/gun/projectile/boltgun/lever/shotgun(src)
-			new /obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet(src)
-			new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
-		if("RIFLE")
-			if(prob(50))
-				new /obj/item/gun/projectile/boltgun/rosefield(src)
-				new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
-				new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
-				new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
-				new /obj/item/gun_upgrade/scope/acog(src)	//Not great but OK scope.
-			else
-				new /obj/item/gun/projectile/boltgun(src)
-				new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-				new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-				new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-				new /obj/item/gun_upgrade/scope/acog(src)	//Not great but OK scope.
-		if("EGUN")
-			new /obj/item/gun/energy/cog(src)
-			new /obj/random/powercell/medium_safe_lonestar(src)
-			new /obj/item/cell/medium(src)
-
 
 	//pistols
 	new /obj/item/gun/projectile/automatic/slaught_o_matic(src)
@@ -222,11 +167,6 @@
 		new /obj/item/device/lighting/glowstick/flare(src)
 		new /obj/item/device/lighting/glowstick/flare(src)
 	new /obj/item/device/radio/off(src)
-	new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
-	if(prob(50))
-		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
-	if(prob(20))
-		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
 
 
 //Foremans can technically do the jobs of both prospectors and salvagers (but not as well) and as such have better odds on the gear they start with.
@@ -239,14 +179,11 @@
 //Small note from Trilby: Forman loot picks are basically just the BEST versons of the scav lockers so theirs no doble coin flip
 //Also dosnt have a side arm loot spawn but still has the vars for one if someone wants to mirrow it or do something like that in furchture
 
-	var/main_weapon_cache
 	var/side_arm_cache
-	var/melee_cache
 	var/bag_cache
 
 /obj/structure/closet/secure_closet/reinforced/foreman/proc/gain_rng()
-	main_weapon_cache = pickweight(list("SMG" = 12, "GOOD_SMG" = 10, "SHOTGUN" = 8, "RIFLE" = 6, "EGUN" = 4))
-	side_arm_cache = pickweight(list("PISTOL" = 12, "REVOLVER" = 4, "GOOD_PISTOL" = 10, "HEAVY_PISTOL" = 2, "EGUN_P" = 4))
+	side_arm_cache = pickweight(list("PISTOL" = 12, "REVOLVER" = 8,))
 	bag_cache = pickweight(list("INDUSTRIAL" = 24, "DUFFEL" = 16, "MILI" = 8, "BLUESPACE" = 1))
 
 /obj/structure/closet/secure_closet/reinforced/foreman/populate_contents()
@@ -256,6 +193,7 @@
 	new /obj/item/clothing/accessory/cape/prospie(src)
 	new /obj/item/clothing/accessory/halfcape/foreman(src)
 	new /obj/item/computer_hardware/hard_drive/portable/design/scav/forman(src)
+	new /obj/item/gunbox/shepherd(src)
 	switch(bag_cache)
 		if("INDUSTRIAL")
 			if(prob(80))
@@ -269,32 +207,21 @@
 		if("BLUESPACE")
 			new /obj/item/storage/backpack/holding(src)
 
-	//longarms
-	switch(main_weapon_cache)
-		if("SMG")
-			new /obj/item/gun/projectile/automatic/specialist(src)
-			new /obj/item/ammo_magazine/smg_35(src)
-			new /obj/item/ammo_magazine/smg_35(src)
-		if("SHOTGUN")
-			new /obj/item/gun/projectile/shotgun/judge(src)
-			new /obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet(src)
-			new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
-		if("GOOD_SMG")
-			new /obj/item/gun/projectile/automatic/tactical(src)
-			new /obj/item/ammo_magazine/smg_magnum_40(src)
-			new /obj/item/ammo_magazine/smg_magnum_40(src)
-		if("RIFLE")
-			new /obj/item/gun/projectile/boltgun/gamer(src)
-			new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-			new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-			new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
-		if("EGUN")
-			new /obj/item/gun/energy/cog(src)
-			new /obj/random/powercell/medium_safe_lonestar(src)
-			new /obj/item/cell/medium(src)
-			new /obj/item/cell/medium(src)
 	//pistols
-	new /obj/item/gun/projectile/automatic/slaught_o_matic(src) //has silver eye
+	switch(side_arm_cache)
+		if("PISTOL")
+			if(prob(50))
+				new /obj/item/gun/projectile/colt/freedom(src)
+				new /obj/item/ammo_magazine/magnum_40(src)
+				new /obj/item/ammo_magazine/magnum_40(src)
+			else
+				new /obj/item/gun/projectile/makarov(src)
+				new /obj/item/ammo_magazine/highcap_pistol_35(src)
+				new /obj/item/ammo_magazine/highcap_pistol_35(src)
+		if("REVOLVER")
+			new /obj/item/gun/projectile/revolver/ranger(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 
 
 	//Regular spawns
@@ -315,7 +242,8 @@
 		new /obj/item/storage/firstaid/ifak(src)
 	else
 		new /obj/item/storage/firstaid/combat(src)
-	if(prob(40))
+	new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
+	if(prob(50))
 		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
 	if(prob(20))
 		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
