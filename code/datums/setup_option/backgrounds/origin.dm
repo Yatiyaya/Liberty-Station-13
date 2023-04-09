@@ -45,7 +45,7 @@
 	has resided here for quite some time, you've grown accustomed to the dangers and strangeness of the world. While this hasn't quite given you any advantage, surviving in the wilds requires \
 	natural remedies, and as such you instinctively know your way around plants."
 
-	restricted_to_species = list(FORM_MYCUS, FORM_FOLKEN)
+	restricted_to_species = list()
 
 	stat_modifiers = list(
 		STAT_ROB = 0,

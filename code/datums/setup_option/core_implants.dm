@@ -28,7 +28,7 @@
 		/datum/job/outsider //Psions are only available to colonist or allies.
 		)
 	allow_modifications = FALSE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_MYCUS, FORM_FOLKEN, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
 
 /datum/category_item/setup_option/core_implant/psionic_tumor_psychiatrist
 	name = "Cultured Psionic Organ"
@@ -52,7 +52,7 @@
 	) // The way to restrict this to one job could be done cleaner but this way easier so fuck it. -Kaz
 	allow_modifications = FALSE
 	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_MYCUS, FORM_FOLKEN, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
 
 /datum/category_item/setup_option/core_implant/nanogate
 	name = "Nanogate"

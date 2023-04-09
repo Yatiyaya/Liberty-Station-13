@@ -19,14 +19,12 @@
 		FORM_CINDAR,
 		FORM_NARAMAD,
 		FORM_OPIFEX,
-		FORM_FOLKEN,
 		FORM_FBP,
 		FORM_CAPSASYNTH,
 		FORM_TERRAYNTH,
 		FORM_LIBYNTH,
 		FORM_CHURCHSYNTH,
 		FORM_NASHEF,
-		FORM_MYCUS,
 		FORM_UNBRANDED
 		)
 
@@ -779,64 +777,6 @@
 	name = "Zone Braid"
 	icon_state = "zone"
 
-/*
-/datum/sprite_accessory/hair/teshari_default
-	name = "Teshari default"
-	icon_state = "teshari_default_s"
-
-/datum/sprite_accessory/hair/teshari_upright
-	name = "Teshari upright"
-	icon_state = "teshari_upright_s"
-
-/datum/sprite_accessory/hair/teshari_burst_short
-	name = "Teshari burst short"
-	icon_state = "teshari_burst_short_s"
-
-/datum/sprite_accessory/hair/teshari_burst
-	name = "Teshari burst"
-	icon_state = "teshari_burst_s"
-
-/datum/sprite_accessory/hair/teshari_pointy
-	name = "Teshari pointy"
-	icon_state = "teshari_pointy_s"
-
-/datum/sprite_accessory/hair/teshari_mushroom
-	name = "Teshari mushroom"
-	icon_state = "teshari_mushroom_s"
-
-/datum/sprite_accessory/hair/teshari_droopy
-	name = "Teshari droopy"
-	icon_state = "teshari_droopy_s"
-
-/datum/sprite_accessory/hair/teshari_mane
-	name = "Teshari mane"
-	icon_state = "teshari_mane_s"
-
-/datum/sprite_accessory/hair/teshari_ears
-	name = "Teshari ears"
-	icon_state = "teshari_ears_s"
-
-/datum/sprite_accessory/hair/teshari_spike
-	name = "Teshari spike"
-	icon_state = "teshari_spike_s"
-
-/datum/sprite_accessory/hair/teshari_tight
-	name = "Teshari tight"
-	icon_state = "teshari_tight_s"
-
-/datum/sprite_accessory/hair/teshari_long
-	name = "Teshari long"
-	icon_state = "teshari_long_s"
-
-/datum/sprite_accessory/hair/teshari_mohawk
-	name = "Teshari mohawk"
-	icon_state = "teshari_mohawk_s"
-
-/datum/sprite_accessory/hair/teshari_spiky
-	name = "Teshari spiky"
-	icon_state = "teshari_spiky_s"
-*/
-
 /datum/sprite_accessory/hair/una_hood
 	name = "Lizard Hood"
 	icon_state = "soghun_hood_s"
@@ -961,7 +901,6 @@
 	icon_state = "topears"
 	species_allowed = list(FORM_MARQUA)
 
-
 /datum/sprite_accessory/hair/marqua_veryshort
 	name = "Very Short Headtails"
 	icon_state = "marqua_hair_veryshort_s"
@@ -1017,142 +956,3 @@
 /datum/sprite_accessory/hair/marqua_pullbackverylong
 	name = "Pullback Very Long Headtails"
 	icon_state = "marqua_hair_pullbackverylong_s"
-
-
-/datum/sprite_accessory/hair/folken
-	species_allowed = list(FORM_FOLKEN)
-
-/datum/sprite_accessory/hair/folken/moss_hair_grayscale
-	name = "Folken Moss Hair"
-	icon_state = "moss_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/moss2_hair_grayscale
-	name = "Folken Moss Hair 2"
-	icon_state = "moss2_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/moss3_hair_grayscale
-	name = "Folken Moss Hair 3"
-	icon_state = "moss3_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/bush_hair_grayscale
-	name = "Folken Bush Hair"
-	icon_state = "bush_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/bush2_hair_grayscale
-	name = "Folken Bush Hair 2"
-	icon_state = "bush2_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/bush3_hair_grayscale
-	name = "Folken Bush Hair 3"
-	icon_state = "bush3_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/leaf_hair_grayscale
-	name = "Folken Leafy Hair"
-	icon_state = "leaf_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/leafs_hair_grayscale2
-	name = "Folken Leafy Hair 2"
-	icon_state = "leafs_hair_grayscale2"
-
-/datum/sprite_accessory/hair/folken/shawl_hair_grayscale
-	name = "Folken Leafy Shawl"
-	icon_state = "shawl_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/twig_hair_grayscale
-	name = "Folken Twig Hair"
-	icon_state = "twig_hair_grayscale"
-
-/datum/sprite_accessory/hair/folken/twig2_hair_grayscale
-	name = "Folken Twig Hair 2"
-	icon_state = "twig2_hair_grayscale"
-
-/datum/sprite_accessory/hair/mycus
-	species_allowed = list(FORM_MYCUS)
-
-/datum/sprite_accessory/hair/mycus/broad
-	name = "Mycus Broad Cap"
-	icon_state = "broad"
-
-/datum/sprite_accessory/hair/mycus/pancake
-	name = "Mycus Flat Cap"
-	icon_state = "pancake"
-
-/datum/sprite_accessory/hair/mycus/small_shroom
-	name = "Mycus Small Cap"
-	icon_state = "small_shroom"
-
-/datum/sprite_accessory/hair/mycus/round
-	name = "Mycus Round Cap"
-	icon_state = "round"
-
-/datum/sprite_accessory/hair/mycus/dick
-	name = "Mycus Round Cap 2"
-	icon_state = "dick"
-
-/datum/sprite_accessory/hair/mycus/bark
-	name = "Mycus Bark Cap"
-	icon_state = "bark"
-
-/datum/sprite_accessory/hair/mycus/bark2
-	name = "Mycus Bark Cap 2"
-	icon_state = "bark2"
-
-/datum/sprite_accessory/hair/mycus/tiny
-	name = "Mycus Tiny Cap"
-	icon_state = "tiny"
-
-/datum/sprite_accessory/hair/mycus/standard
-	name = "Mycus Standard Cap"
-	icon_state = "standard"
-
-/datum/sprite_accessory/hair/mycus/standard_wide
-	name = "Mycus Standard Cap 2"
-	icon_state = "standard_wide"
-
-/datum/sprite_accessory/hair/mycus/standard_tall
-	name = "Mycus Standard Cap 3"
-	icon_state = "standard_tall"
-
-/datum/sprite_accessory/hair/mycus/standard_thick
-	name = "Mycus Standard Cap 4"
-	icon_state = "standard_thick"
-
-/datum/sprite_accessory/hair/mycus/cup
-	name = "Mycus Cup Cap"
-	icon_state = "cup"
-
-/datum/sprite_accessory/hair/mycus/cup2
-	name = "Mycus Cup Cap 2"
-	icon_state = "cup2"
-
-/datum/sprite_accessory/hair/mycus/shrooms
-	name = "Mycus Shroom Collection"
-	icon_state = "shrooms"
-
-/datum/sprite_accessory/hair/mycus/shrooms2
-	name = "Mycus Shroom Collection 2"
-	icon_state = "shrooms2"
-
-/datum/sprite_accessory/hair/mycus/flatshrooms
-	name = "Mycus Shroom Collection 3"
-	icon_state = "flatshrooms"
-
-/datum/sprite_accessory/hair/mycus/flatshrooms2
-	name = "Mycus Shroom Collection 4"
-	icon_state = "flatshrooms2"
-
-/datum/sprite_accessory/hair/mycus/doom
-	name = "Mycus Single Shroom"
-	icon_state = "doom"
-
-/datum/sprite_accessory/hair/mycus/spore
-	name = "Mycus Spore Cap"
-	icon_state = "spore"
-
-/datum/sprite_accessory/hair/mycus/spore2
-	name = "Mycus Spore Cap 2"
-	icon_state = "spore2"
-
-/datum/sprite_accessory/hair/mycus/spore3
-	name = "Mycus Spore Cap 3"
-	icon_state = "spore3"
