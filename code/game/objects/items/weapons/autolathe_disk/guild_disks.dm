@@ -86,7 +86,6 @@
 		/datum/design/autolathe/part/spikes,
 		/datum/design/autolathe/part/dampener,
 		/datum/design/research/item/weapon/toolmod/antistaining,
-		/datum/design/research/item/weapon/toolmod/vibcompensator,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
 		/datum/design/research/item/weapon/toolmod/injector,
@@ -230,7 +229,6 @@
 		/datum/design/autolathe/part/spikes,
 		/datum/design/autolathe/part/dampener,
 		/datum/design/research/item/weapon/toolmod/antistaining,
-		/datum/design/research/item/weapon/toolmod/vibcompensator,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
 		/datum/design/research/item/weapon/toolmod/injector,
@@ -320,7 +318,6 @@
 	/datum/design/autolathe/tool/circularsaw,
 	/datum/design/autolathe/tool/powered_hammer,
 	/datum/design/autolathe/tool/deadblow_hammer,
-	/datum/design/autolathe/tool/chainsaw,
 	/datum/design/autolathe/tool/hypersaw,
 	/datum/design/autolathe/tool/electric_screwdriver,
 	/datum/design/autolathe/tool/combi_driver,
@@ -353,7 +350,6 @@
 	/datum/design/autolathe/part/spikes,
 	/datum/design/autolathe/part/dampener,
 	/datum/design/research/item/weapon/toolmod/antistaining,
-	/datum/design/research/item/weapon/toolmod/vibcompensator,
 	/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 	/datum/design/research/item/weapon/toolmod/hydraulic,
 	/datum/design/research/item/weapon/toolmod/injector,
@@ -390,11 +386,15 @@
 	/datum/design/autolathe/container/hcase_parts,
 	/datum/design/autolathe/container/hcase_engi,
 	/datum/design/autolathe/part/consolescreen,
+	/*
+	These are gone due to being strong and making start-of-game T4 upgrades. Removes any struggle. Go to Fontaine, Cargo, or Sci.
+
 	/datum/design/autolathe/part/guild_capa,
 	/datum/design/autolathe/part/guild_scanning,
 	/datum/design/autolathe/part/guild_manip,
 	/datum/design/autolathe/part/guild_laser,
 	/datum/design/autolathe/part/guild_bin,
+	*/
 	/datum/design/autolathe/part/igniter,
 	/datum/design/autolathe/part/signaler,
 	/datum/design/autolathe/part/sensor_infra,
