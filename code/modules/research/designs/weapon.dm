@@ -408,11 +408,6 @@
 	build_path = /obj/item/tool_upgrade/refinement/compensatedbarrel
 	sort_string = "TAAAU"
 
-/datum/design/research/item/weapon/toolmod/vibcompensator
-	name = "Vibration Compensator"
-	build_path = /obj/item/tool_upgrade/refinement/vibcompensator
-	sort_string = "TAAAV"
-
 /datum/design/research/item/weapon/toolmod/cellmount
 	name = "Heavy Cell Mount"
 	build_path = /obj/item/tool_upgrade/augment/cell_mount
