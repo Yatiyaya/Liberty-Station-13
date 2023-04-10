@@ -145,21 +145,9 @@
 #define PERK_OPIFEX_TURRET /datum/perk/racial/opifex_turret
 #define PERK_OPIFEX_PATCHKIT /datum/perk/racial/opifex_patchkit
 
-//Folken
-#define PERK_ODD_REROLL /datum/perk/racial/folken_reroll
-#define PERK_FOLKEN_HEALING /datum/perk/racial/folken_healing
-#define PERK_FOLKEN_HEALING_YOUNG /datum/perk/racial/folken_healing/young
-
-//Mycus
-#define PERK_DARK_HEAL /datum/perk/racial/mycus_heal
-#define PERK_MUSH_FOLLOWER /datum/perk/racial/mycus_mushroom
-#define PERK_SLIME_FOLLOWER /datum/perk/racial/mycus_slime
-
 //Slime
-#define PERK_SPEED /datum/perk/racial/slime_speed
-#define PERK_LIMB_REGEN /datum/perk/racial/slime_regen
-#define PERK_MIND_BOOST /datum/perk/racial/slime_stat_boost/mental
-#define PERK_BODY_BOOST /datum/perk/racial/slime_stat_boost/physical
+#define PERK_LIMB_REGEN /datum/perk/racial/limb_regen
+#define PERK_SLIMEBODY /datum/perk/racial/slime_metabolism
 
 //////////////
 //Core Perks//

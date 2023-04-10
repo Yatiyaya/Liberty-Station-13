@@ -16,16 +16,15 @@
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
 		)
-	can_dual = 1
 	damage_multiplier = 1.0
 	init_recoil = RIFLE_RECOIL(1)
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	serial_type = "INDEX"
+	serial_type = "ML"
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
 	gun_parts = list(/obj/item/part/gun/frame/operator_rifle = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/clrifle = 1)
 
-	wield_delay = 0.4 SECOND
-	wield_delay_factor = 0.3 // Heavy smg , 30 vig to insta wield
+	wield_delay = 0.8 SECOND
+	wield_delay_factor = 0.3 // 30 vig to insta wield, it is a rifle n' a bit heavy.
 
 /obj/item/part/gun/frame/operator_rifle
 	name = "Operator frame"

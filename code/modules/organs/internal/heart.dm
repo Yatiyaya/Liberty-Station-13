@@ -49,8 +49,3 @@
 /obj/item/organ/internal/heart/huge/baboon
 	name = "mega-baboon heart"
 	desc = "Beats to the drums of the jungle."
-
-/obj/item/organ/internal/heart/huge/exalt
-	name = "Exalt heart"
-	desc = "A genetically enhanced heart, pumping with the spirit of capitalism.\
-	Likely worth more on the black market."

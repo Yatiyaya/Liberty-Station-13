@@ -17,7 +17,6 @@
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
 		)
-	can_dual = 1
 	damage_multiplier = 0.9
 	penetration_multiplier = 1
 	init_recoil = SMG_RECOIL(1.1)

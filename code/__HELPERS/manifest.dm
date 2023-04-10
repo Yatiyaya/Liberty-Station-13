@@ -19,7 +19,7 @@
 		list("names" = list(), "header" = "Liberty Watch", "flag" = SECURITY),
 		list("names" = list(), "header" = "CAPSA Group", "flag" = MEDICAL),
 		list("names" = list(), "header" = "Phokorus Institute", "flag" = SCIENCE),
-		list("names" = list(), "header" = "Church of the Absolute", "flag" = CHURCH),
+		list("names" = list(), "header" = "Custodians of Bonfires", "flag" = CHURCH),
 		list("names" = list(), "header" = "Skylight Syndicate", "flag" = SERVICE),
 		list("names" = list(), "header" = "Terra-Therma Worker's Union", "flag" = ENGINEERING),
 		list("names" = list(), "header" = "Fontaine Heavy Industries", "flag" = PROSPECTORS),

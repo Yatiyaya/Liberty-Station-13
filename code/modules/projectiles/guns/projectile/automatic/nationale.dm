@@ -24,6 +24,9 @@
 	init_recoil = RIFLE_RECOIL(0.9)
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 
+	wield_delay = 0.8 SECOND
+	wield_delay_factor = 0.3 // 30 vig to insta wield, it is a rifle n' a bit heavy.
+
 	gun_parts = list(/obj/item/part/gun/frame/nationale = 1, /obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 	init_firemodes = list(

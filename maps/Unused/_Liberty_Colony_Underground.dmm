@@ -26333,7 +26333,7 @@
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1south)
 "bkX" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -37747,7 +37747,7 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor1west)
 "hwy" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/clownoffice)
 "hwz" = (

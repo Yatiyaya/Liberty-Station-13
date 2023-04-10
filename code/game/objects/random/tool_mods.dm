@@ -61,7 +61,6 @@
 	/obj/item/tool_upgrade/reinforcement/plasmablock = 1,
 	/obj/item/tool_upgrade/productivity/antistaining = 1,
 	/obj/item/tool_upgrade/productivity/injector = 1,
-	/obj/item/tool_upgrade/refinement/vibcompensator = 0.5,
 	/obj/item/tool_upgrade/augment/hydraulic = 0.5))
 
 /obj/random/tool_upgrade/rare/low_chance
