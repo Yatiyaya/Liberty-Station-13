@@ -113,7 +113,7 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 						/datum/job/engineer, /datum/job/mining,
 						/datum/job/trapper, /datum/job/shipbreaker,
 						/datum/job/bouncer, /datum/job/janitor, /datum/job/clubworker,
-						/datum/job/chaplain, /datum/job/acolyte, /datum/job/artist,
+						/datum/job/oathpledge, /datum/job/forgemaster, /datum/job/enkindled, /datum/job/oathbound,
 						/datum/job/scientist, /datum/job/roboticist,
 						/datum/job/assistant,
 						/datum/job/ai, /datum/job/cyborg,

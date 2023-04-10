@@ -307,7 +307,7 @@ var/list/rank_prefix = list(\
 	"Research Provost" = "Provost",\
 	"Casino Manager" = "Manager",\
 	"Field Shepherd" = "Shepherd",\
-	"Prime" = "Prime",\
+	"Oathpledge" = "Oathpledge",\
 	)
 
 /mob/living/carbon/human/proc/rank_prefix_name(name)
