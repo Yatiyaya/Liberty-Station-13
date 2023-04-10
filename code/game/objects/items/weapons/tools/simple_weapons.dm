@@ -287,7 +287,8 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_DEEP
-
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
