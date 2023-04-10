@@ -41,7 +41,7 @@
 		/datum/job/medic,
 		/datum/job/premier,
 		/datum/job/pg,
-		/datum/job/chaplain,
+		/datum/job/oathpledge,
 		/datum/job/chief_engineer,
 		/datum/job/clubmanager,
 		/datum/job/rp,
@@ -73,7 +73,7 @@
 		/datum/job/outsider, // Nanogates are only available to colonist or allies.
 		/datum/job/premier,
 		/datum/job/pg,
-		/datum/job/chaplain,
+		/datum/job/oathpledge,
 		/datum/job/cso,
 		/datum/job/clubmanager,
 		/datum/job/rp,

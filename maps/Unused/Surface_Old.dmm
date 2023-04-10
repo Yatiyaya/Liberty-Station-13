@@ -14639,7 +14639,7 @@
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aGR" = (
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /obj/structure/bed/chair/comfy/brown,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
@@ -15052,7 +15052,7 @@
 /area/liberty/absolutism/vectorrooms)
 "aHS" = (
 /obj/structure/bed/chair/wood,
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aHT" = (
@@ -15654,7 +15654,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "aJq" = (
-/obj/landmark/join/start/chaplain,
+/obj/landmark/join/start/oathpledge,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "aJr" = (
@@ -16104,7 +16104,7 @@
 /area/liberty/command/smc/quarters)
 "aKp" = (
 /obj/structure/bed/chair/sofa/brown/right,
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aKq" = (
