@@ -35,12 +35,3 @@
 	stat_modifiers = list(STAT_BIO = -3, STAT_MEC = 3, STAT_VIG = -3, STAT_COG = 3)
 
 	perks = list(PERK_DEBTOR)
-
-//Exalt
-/datum/category_item/setup_option/background/ancestry/human_exalt //Just make it a human_exalt_powergamer if you are gonna make another one of these.
-	name = "Exalted Humanoid"
-	desc = "You are an 'exalted' human, via extensive gene modifications and treatments you became more than just your regular Joe. \
-	Faster, more perceptive and smarter all of those are benefits of such treatements, if you got them the legal way or signing off your soul to some mob is irrelevant. \
-	Whichever the case now you will have to deal with the consequences of your decisions, your DNA is scrambled and unstable and you require expensive treatment every day to keep yourself together, cutting deep into your wages."
-
-	restricted_to_species = list(FORM_EXALT_HUMAN)
