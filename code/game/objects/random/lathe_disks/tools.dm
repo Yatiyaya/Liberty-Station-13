@@ -24,7 +24,7 @@
 				/obj/item/computer_hardware/hard_drive/portable/design/misc = 4,
 				/obj/item/computer_hardware/hard_drive/portable/design/medical = 3,
 				/obj/item/computer_hardware/hard_drive/portable/design/medical/advanced = 2,
-				/obj/item/computer_hardware/hard_drive/portable/design/surgery = 1))
+				/obj/item/computer_hardware/hard_drive/portable/design/medical/surgery/back_alley = 1))
 
 /obj/random/lathe_disk/medical/low_chance
 	name = "low chance advanced lathe disk"

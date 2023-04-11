@@ -328,9 +328,6 @@
 	rand_min = 3
 	rand_max = 7
 
-/obj/item/stack/material/cloth/capsa
-	amount = 4
-
 /obj/item/stack/material/silk
 	name = "silk"
 	icon_state = "sheet_silk_bundle"

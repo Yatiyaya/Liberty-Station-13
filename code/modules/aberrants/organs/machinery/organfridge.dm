@@ -30,8 +30,6 @@
 		return TRUE
 	if(istype(O, /obj/item/computer_hardware/hard_drive/portable/design/medical))
 		return TRUE
-	if(istype(O, /obj/item/computer_hardware/hard_drive/portable/design/surgery))
-		return TRUE	
 	return FALSE
 
 /obj/machinery/smartfridge/secure/medbay/organs/stocked
