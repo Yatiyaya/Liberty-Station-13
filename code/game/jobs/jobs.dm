@@ -47,7 +47,7 @@ var/const/SEVPRO			=(1<<3)
 
 var/const/CLUBMANAGER		=(1<<0)
 var/const/JANITOR			=(1<<1)
-var/const/BOUNCER			=(1<<2)
+var/const/FIXER				=(1<<2)
 var/const/CLUBWORKER		=(1<<3)
 var/const/SHEPHERD			=(1<<4)
 var/const/TRAPPER			=(1<<5)
