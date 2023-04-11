@@ -251,13 +251,9 @@
 	radiation = CLAMP(radiation,0,100)
 
 	if (radiation)
-		var/damage = 0
 		radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-		if(prob(25))
-			damage = 1
 
 		if (radiation > 50)
-			damage = 1
 			radiation -= 1 * RADIATION_SPEED_COEFFICIENT
 			if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT))
 				radiation -= 5 * RADIATION_SPEED_COEFFICIENT
@@ -274,7 +270,6 @@
 
 		if (radiation > 75)
 			radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-			damage = 3
 			if(prob(5))
 				take_overall_damage(0, 5 * RADIATION_SPEED_COEFFICIENT, used_weapon = "Radiation Burns")
 			if(prob(1))
@@ -282,14 +277,6 @@
 				var/obj/item/organ/external/E = pick(organs)
 				E.mutate()
 				emote("gasp")
-
-		if(damage)
-			damage *= species.radiation_mod
-			if(organs.len)
-				var/obj/item/organ/external/O = pick(organs)
-				O.take_damage(damage * RADIATION_SPEED_COEFFICIENT, TOX, silent = TRUE)
-				if(istype(O))
-					O.add_autopsy_data("Radiation Poisoning", damage)
 
 	/** breathing **/
 
@@ -1151,7 +1138,32 @@
 /mob/living/carbon/human/rejuvenate()
 	sanity.setLevel(sanity.max_level)
 	restore_blood()
-	frost = 0
+	frost = 0 //Liberity edit
+
+	// If a limb was missing, regrow
+	if(LAZYLEN(organs) < 7)
+		var/list/tags_to_grow = list(BP_HEAD, BP_CHEST, BP_GROIN, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+		var/upper_body_nature
+
+		for(var/obj/item/organ/external/E in organs)
+			if(!E.is_stump())
+				tags_to_grow -= E.organ_tag
+				if(E.organ_tag == BP_CHEST)
+					upper_body_nature = E.nature
+			else
+				qdel(E)		// Will regrow
+
+		var/datum/preferences/user_pref = client ? client.prefs : null
+
+		for(var/tag in tags_to_grow)
+			// FBP limbs get replaced with makeshift if not defined by user or clientless
+			var/datum/body_modification/BM = user_pref ? user_pref.get_modification(tag) : (upper_body_nature == MODIFICATION_ORGANIC) ? new /datum/body_modification/none : new /datum/body_modification/limb/prosthesis/junktech
+			var/datum/organ_description/OD = species.has_limbs[tag]
+			if(BM.is_allowed(tag, user_pref, src))
+				BM.create_organ(src, OD, user_pref.modifications_colors[tag])
+			else
+				OD.create_organ(src)
+
 	..()
 
 /mob/living/carbon/human/handle_vision()
