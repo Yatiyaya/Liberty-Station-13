@@ -137,7 +137,7 @@
 	SSevent.change_parallax("photon_vortex")	// Vortex is unused at the moment
 
 /datum/event/harmonic_feedback/announce()
-	command_announcement.Announce("The planet is currently passing through intense gravitational wavefronts. They will heavily disrupt hull shields for a short duration.", "Harmonic Feedback Surge Anomaly")
+	command_announcement.Announce("The planet is currently passing through intense gravitational wavefronts. They will heavily disrupt shield generators for a short duration.", "Harmonic Feedback Surge Anomaly")
 
 /datum/event/harmonic_feedback/end()
 	command_announcement.Announce("The gravitational wavefronts have passed.", "Harmonic Feedback Surge Anomaly")
