@@ -133,7 +133,6 @@
 
 	return data
 
-
 /obj/machinery/autolathe/nano_ui_data()
 	var/list/data = list()
 
@@ -247,6 +246,10 @@
 		return
 
 	if(default_part_replacement(I, user))
+		return
+
+	if(istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical))
+		to_chat(user, SPAN_DANGER("[src] isn't capable of replicating medical designs!"))
 		return
 
 	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
