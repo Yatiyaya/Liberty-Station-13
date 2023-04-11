@@ -319,6 +319,8 @@
 	item_state_slots = list(
 		slot_back_str = "katana_back"
 		)
+	effective_faction = list("roach") // Spiders are weak to crushing.
+	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift
 	name = "makeshift katana"
