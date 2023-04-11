@@ -147,7 +147,7 @@
 	for(var/obj/machinery/power/shield_generator/G in GLOB.machines)
 		if(G.running != SHIELD_OFF)
 			G.take_damage(100, SHIELD_DAMTYPE_EM)
-
+/*
 /datum/storyevent/micro_debris
 	id = "micro_debris"
 	name = "micro debris field"
@@ -157,7 +157,7 @@
 	event_type = /datum/event/micro_debris
 	event_pools = list(EVENT_LEVEL_MUNDANE = POOL_THRESHOLD_MUNDANE, EVENT_LEVEL_MODERATE = POOL_THRESHOLD_MODERATE)
 	tags = list(TAG_DESTRUCTIVE, TAG_NEGATIVE)
-
+*/
 /datum/event/micro_debris
 	startWhen	= 1
 	announceWhen = 2
@@ -277,7 +277,7 @@
 	command_announcement.Announce("The dark matter nebula has moved away from the star sector.", "Dark Matter Nebula")
 	GLOB.GLOBAL_INSIGHT_MOD = 1
 	SSevent.change_parallax(GLOB.random_parallax)
-
+/*
 /datum/storyevent/interphase
 	id = "bluespace_interphase"
 	name = "Bluespace Interphase"
@@ -287,7 +287,7 @@
 	event_type = /datum/event/interphase
 	event_pools = list(EVENT_LEVEL_MODERATE = POOL_THRESHOLD_MODERATE, EVENT_LEVEL_MAJOR = POOL_THRESHOLD_MAJOR)
 	tags = list(TAG_SCARY, TAG_NEGATIVE)
-
+*/
 /datum/event/interphase
 	startWhen = 1
 	announceWhen = 3
