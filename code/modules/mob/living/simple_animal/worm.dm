@@ -136,7 +136,7 @@
 	if(istype(target,/turf/simulated/wall))
 		var/turf/simulated/wall/W = target
 		if((!W.reinf_material && eatingDuration >= 100) || eatingDuration >= 200) //need 20 ticks to eat an rwall, 10 for a regular one
-			W.dismantle_wall()
+			W.dismantle_wall(no_product = W.no_matter)
 			return 1
 	else if(istype(target,/atom/movable))
 		if(istype(target,/mob) || eatingDuration >= 50) //5 ticks to eat stuff like airlocks
