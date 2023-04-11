@@ -141,6 +141,11 @@
 	name = "pustule"
 	specific_organ_size_multiplier = 0.20
 
+/// Cheap hack, but prevents unbalanced toxins from killing someone immediately
+/datum/component/internal_wound/organic/poisoning/InheritComponent()
+	if(prob(5))
+		progress()
+
 /datum/component/internal_wound/organic/poisoning/poisoning
 	name = "minor poisoning"
 	blood_req_multiplier = 0.25
@@ -150,6 +155,7 @@
 /datum/component/internal_wound/organic/poisoning/accumulation
 	name = "foreign accumulation"
 	hal_damage = IWOUND_MEDIUM_DAMAGE
+
 
 /*
 /datum/component/internal_wound/organic/poisoning/swelling
