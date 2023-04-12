@@ -81,7 +81,6 @@
 	new /obj/item/clothing/shoes/galoshes(src)
 	new /obj/item/mop(src)
 	new /obj/item/soap/deluxe(src)
-	new /obj/item/storage/pouch/small_generic(src) // Because I feel like poor janitor gets it bad.
 	new /obj/item/newspaper_stack(src)
 	new /obj/item/holyvacuum(src)
 	new /obj/item/clothing/accessory/job/cape/service(src) // Boobles! - Seb
@@ -103,7 +102,6 @@
 	new /obj/item/storage/bag/trash(src)
 	new /obj/item/mop(src)
 	new /obj/item/soap/church(src)
-	new /obj/item/storage/pouch/small_generic(src) // Because I feel like poor janitor gets it bad.
 	new /obj/item/tool/knife/dagger/nt(src)
 	new /obj/item/clothing/suit/armor/vest/custodian(src)
 	new /obj/item/clothing/head/helmet/custodian(src)

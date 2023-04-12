@@ -4,11 +4,9 @@
 
 /obj/random/pouch/item_to_spawn()
 	return pickweight(list(
-	/obj/item/storage/pouch/small_generic = 10,
 	/obj/item/storage/pouch/medium_generic = 5,
 	/obj/item/storage/pouch/large_generic = 1,
 	/obj/item/storage/pouch/medical_supply = 3,
-	/obj/item/storage/pouch/engineering_supply = 3,
 	/obj/item/storage/pouch/engineering_tools = 5,
 	/obj/item/storage/pouch/tubular = 7,
 	/obj/item/storage/pouch/ammo = 3,

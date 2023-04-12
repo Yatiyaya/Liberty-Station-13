@@ -165,6 +165,12 @@
 	src.add_fingerprint(user)
 	return
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 // -----------------------------
 //        Secure Safe
 // -----------------------------

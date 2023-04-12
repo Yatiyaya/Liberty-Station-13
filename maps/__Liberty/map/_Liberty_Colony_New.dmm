@@ -5918,7 +5918,6 @@
 "bve" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/pouch/engineering_tools,
-/obj/item/storage/pouch/engineering_supply,
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/security/armory_blackshield)

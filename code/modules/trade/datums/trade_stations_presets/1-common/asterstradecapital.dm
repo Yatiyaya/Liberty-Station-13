@@ -20,7 +20,6 @@
 	inventory  = list(
 		"Tools and Equipment" = list(
 			/obj/item/clothing/suit/storage/hazardvest,
-			/obj/item/storage/pouch/small_generic,
 			/obj/item/storage/pouch/ammo,
 			/obj/item/storage/belt/utility,
 			/obj/item/device/lighting/toggleable/flashlight,

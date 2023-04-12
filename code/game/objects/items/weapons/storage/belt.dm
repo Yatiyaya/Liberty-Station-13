@@ -316,16 +316,13 @@
 
 /obj/item/storage/belt/security
 	name = "tactical belt"
-	desc = "Can hold various military and security equipment. Even has some clamps to allow you to hold masks and hats."
+	desc = "Can hold various military and security equipment. Even has some clamps to allow you to hold heavier equipment."
 	icon_state = "security"
 	item_state = "security"
 	can_hold = list(
-		/obj/item/clothing/head,
-		/obj/item/clothing/mask,
 		/obj/item/grenade,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/handcuffs,
-		/obj/item/tool/crowbar,
 		/obj/item/device/flash,
 		/obj/item/clothing/gloves,
 		/obj/item/clothing/glasses,
@@ -344,15 +341,9 @@
 		/obj/item/melee,
 		/obj/item/device/radio,
 		/obj/item/tool/knife,
-		/obj/item/tool/shovel/combat,
-		/obj/item/gun/projectile/liberty,
-		/obj/item/gun/projectile/makarov,
-		/obj/item/gun/projectile/clarissa,
-		/obj/item/gun/projectile/colt,
-		/obj/item/gun/energy/gun,
-		/obj/item/gun/projectile/revolver/detective,
-		/obj/item/gun/energy/gun/martin,
-		/obj/item/gun/projectile/boltgun/flare_gun,
+		/obj/item/tool/crowbar,
+		/obj/item/tool/shovel,
+		/obj/item/tool/baton
 		/obj/item/ammo_casing/flare,
 		/obj/item/taperoll,
 		/obj/item/pen,
@@ -360,10 +351,7 @@
 		/obj/item/clipboard,
 		/obj/item/device/camera,
 		/obj/item/folder,
-		/obj/item/reagent_containers/food/snacks,
-		/obj/item/reagent_containers/food/drinks,
-		/obj/item/device/binoculars, // By popular demand. - Seb
-		/obj/item/tool/baton //So it can actually hold both sizes of batons like it used to.
+		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
 /obj/item/storage/belt/holding
@@ -523,7 +511,8 @@
 	cant_hold = list(/obj/item/storage/pouch,
 					 /obj/item/storage/firstaid,
 					 /obj/item/storage/toolbox,
-					 /obj/item/storage/briefcase) //These types of storage in a belt
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
 
 /obj/item/storage/belt/webbing/Union/verb/toggle_storage()
 	set name = "Adjust Storage"
