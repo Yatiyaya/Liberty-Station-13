@@ -343,7 +343,7 @@
 		/obj/item/tool/knife,
 		/obj/item/tool/crowbar,
 		/obj/item/tool/shovel,
-		/obj/item/tool/baton
+		/obj/item/tool/baton,
 		/obj/item/ammo_casing/flare,
 		/obj/item/taperoll,
 		/obj/item/pen,

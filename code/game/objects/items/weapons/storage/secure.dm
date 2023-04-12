@@ -27,6 +27,12 @@
 	max_w_class = ITEM_SIZE_SMALL
 	max_storage_space = DEFAULT_NORMAL_STORAGE
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 /obj/item/storage/secure/examine(mob/user)
 	if(..(user, 1))
 		to_chat(user, text("The service panel is [src.open ? "open" : "closed"]."))
@@ -164,12 +170,6 @@
 		close_all()
 	src.add_fingerprint(user)
 	return
-
-	cant_hold = list(/obj/item/storage/pouch,
-					 /obj/item/storage/firstaid,
-					 /obj/item/storage/toolbox,
-					 /obj/item/storage/briefcase,
-					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
 
 // -----------------------------
 //        Secure Safe

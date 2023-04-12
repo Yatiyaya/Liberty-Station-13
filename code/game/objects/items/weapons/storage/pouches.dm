@@ -142,11 +142,11 @@
 
 /obj/item/storage/pouch/janitor_supply
 	name = "janitorial supply pouch"
-	desc = "Can hold janitorial equipment, but only about four pieces of them."
+	desc = "Can hold janitorial equipment, but only about six pieces of them."
 	icon_state = "janitor_supply"
 	item_state = "janitor_supply"
 
-	storage_slots = 4
+	storage_slots = 6
 	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 
@@ -189,7 +189,6 @@
 		/obj/item/tool/baton,
 		/obj/item/device/lighting/glowstick,
 		/obj/item/device/lighting/toggleable/flashlight,
-		/obj/item/ammo_casing/rocket,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/glass/beaker/vial,
 		/obj/item/reagent_containers/hypospray,
@@ -197,7 +196,6 @@
 		/obj/item/storage/pill_bottle,
 		/obj/item/hatton_magazine,
 		/obj/item/extinguisher,
-		/obj/item/implanter,
 		/obj/item/grenade/chem_grenade,
 		/obj/item/weldpack/canister,
 		/obj/item/cell/medium,
