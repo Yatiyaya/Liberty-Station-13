@@ -13208,7 +13208,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "dil" = (
-/obj/machinery/bioprinter/prosthetics,
 /obj/machinery/camera/network/research{
 	dir = 4
 	},
