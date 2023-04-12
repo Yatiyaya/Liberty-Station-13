@@ -910,11 +910,12 @@
 		usr.update_action_buttons()
 		return 1
 
-//CAPSA
-/obj/item/clothing/head/helmet/capsasuit
+//PIRS
+/obj/item/clothing/head/helmet/pirssuit
 	name = "'Mark II' environmental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."
-	icon_state = "armor_engineering"
+	icon_state = "science_helmet"
+	item_state = "science_helmet"
 	armor_list = list(melee = 15, bullet = 15, energy = 25, bomb = 35, bio = 50, rad = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
