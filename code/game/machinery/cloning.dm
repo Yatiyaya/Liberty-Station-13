@@ -198,7 +198,7 @@
 		for(var/type in BIOMASS_TYPES)
 			if(istype(I,type))
 				to_chat(user, SPAN_NOTICE("\The [src] processes \the [I]."))
-				biomass += BIOMASS_TYPES[type]
+				biomass += MATERIAL_BIOMATTER
 				user.drop_from_inventory(I)
 				qdel(I)
 				return

@@ -28893,7 +28893,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "gNu" = (
-/obj/machinery/bioprinter,
 /obj/item/storage/freezer,
 /obj/machinery/camera/network/medbay{
 	dir = 4

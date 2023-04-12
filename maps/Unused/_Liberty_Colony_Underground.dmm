@@ -35278,7 +35278,6 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/machinery/bioprinter,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/surgery)
 "fRp" = (
@@ -59876,7 +59875,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "vVK" = (
-/obj/machinery/bioprinter/prosthetics,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/rnd/robotics)
 "vVX" = (

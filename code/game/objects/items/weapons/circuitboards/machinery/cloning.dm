@@ -22,7 +22,7 @@
 		/obj/item/stock_parts/console_screen = 1,
 		/obj/item/stack/cable_coil = 2
 	)
-
+/*
 /obj/item/circuitboard/organ_printer
 	build_name = "organ bioprinter"
 	build_path = /obj/machinery/bioprinter
@@ -40,3 +40,4 @@
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 1,
 	)
+*/
