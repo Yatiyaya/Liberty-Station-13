@@ -10,12 +10,10 @@
 	item_state = "lunchbox_heart"
 	w_class = ITEM_SIZE_NORMAL
 	max_w_class = ITEM_SIZE_NORMAL
-	max_storage_space = DEFAULT_NORMAL_STORAGE
+	max_storage_space = DEFAULT_NORMAL_STORAGE * 0.5 //It can contain so much right now so yeah
 	attack_verb = "lunched"
 	price_tag = 5
-	can_hold = list(
-		/obj/item/reagent_containers/food
-		)
+	can_hold = list(/obj/item/reagent_containers/food)
 
 /obj/item/storage/lunchbox/rainbow
 	name = "rainbow lunchbox"

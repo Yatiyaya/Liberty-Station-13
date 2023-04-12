@@ -388,10 +388,6 @@
 	name = "crossbow bolts quiver"
 	build_path = /obj/item/storage/pouch/bolts
 
-/datum/design/bioprinter/pouch/engineering_supply
-	name = "Engineering supplies pouch"
-	build_path = /obj/item/storage/pouch/engineering_supply
-
 /datum/design/bioprinter/pouch/engineering_tools
 	name = "Engineering tools pouch"
 	build_path = /obj/item/storage/pouch/engineering_tools
@@ -399,14 +395,6 @@
 /datum/design/bioprinter/pouch/janitor_supply
 	name = "Janitor supplies pouch"
 	build_path = /obj/item/storage/pouch/janitor_supply
-
-/datum/design/bioprinter/pouch/small_generic/purple
-	name = "Small generic purple pouch"
-	build_path = /obj/item/storage/pouch/small_generic/purple
-
-/datum/design/bioprinter/pouch/small_generic
-	name = "Small generic pouch"
-	build_path = /obj/item/storage/pouch/small_generic
 
 /datum/design/bioprinter/pouch/medium_generic
 	name = "Medium generic pouch"

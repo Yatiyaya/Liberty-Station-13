@@ -17,6 +17,12 @@
 	attack_verb = list("robusted")
 	hitsound = 'sound/weapons/smash.ogg'
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 /obj/item/storage/toolbox/emergency
 	name = "emergency toolbox"
 	icon_state = "red"

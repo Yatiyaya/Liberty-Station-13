@@ -36,7 +36,6 @@
 					/obj/item/clothing/gloves/insulated/cheap = 4,
 					/obj/item/clothing/gloves/insulated = 2,
 					/obj/item/storage/pouch/engineering_tools = 2,
-					/obj/item/storage/pouch/engineering_supply = 2,
 					/obj/item/weldpack/canister = 4,
 					/obj/item/weldpack = 2)
 	prices = list(/obj/item/tool/hammer = 30,
@@ -51,8 +50,7 @@
 					/obj/item/tool/screwdriver = 30,
 					/obj/item/clothing/gloves/insulated/cheap = 80,
 					/obj/item/clothing/gloves/insulated = 600,
-					/obj/item/storage/pouch/engineering_tools = 150,
-					/obj/item/storage/pouch/engineering_supply = 300,
+					/obj/item/storage/pouch/engineering_tools = 250,
 					/obj/item/weldpack/canister = 200,
 					/obj/item/weldpack = 300)
 

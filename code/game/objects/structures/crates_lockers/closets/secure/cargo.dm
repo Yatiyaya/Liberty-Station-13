@@ -70,8 +70,6 @@
 		new /obj/item/ammo_casing/shotgun/pellet/prespawned(src)
 		new /obj/item/ammo_casing/shotgun/pellet/prespawned(src)
 	if(prob(65))
-		new /obj/item/storage/pouch/small_generic(src)
-	if(prob(65))
 		new /obj/item/storage/pouch/medium_generic(src)
 	if(prob(65))
 		new /obj/random/pouch/always_spawn(src)
