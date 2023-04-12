@@ -72,8 +72,6 @@
 		/obj/item/animal_part/wolf_tooth = offer_data("pristine animal fang", 400, 10),
 		/obj/item/tool/spear/hunter_halberd = offer_data("hunter halberd", 1300, 2),
 		/obj/item/tool/gauntlet = offer_data("render gauntlet", 2800, 2),
-		/obj/item/tool/fireaxe/woodsman = offer_data("woodsman axe", 900, 3),
-		/obj/item/shield/buckler/handmade/bone = offer_data("hunter bone shield", 1600, 1),
-		/obj/item/tool/sword/huntingclaw = offer_data("hunting claw", 1500, 2)
+		/obj/item/shield/buckler/handmade/bone = offer_data("hunter bone shield", 1600, 1)
 	)
 
