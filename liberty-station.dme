@@ -1817,6 +1817,7 @@
 #include "code\modules\clothing\suits\labcoat.dm"
 #include "code\modules\clothing\suits\miscellaneous.dm"
 #include "code\modules\clothing\suits\overcloak.dm"
+#include "code\modules\clothing\suits\pirs.dm"
 #include "code\modules\clothing\suits\storage.dm"
 #include "code\modules\clothing\suits\utility.dm"
 #include "code\modules\clothing\under\casual.dm"
