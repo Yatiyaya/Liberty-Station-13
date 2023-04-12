@@ -2,18 +2,18 @@
 "ac" = (
 /obj/machinery/vending/one_star/food,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ao" = (
 /obj/structure/table/onestar,
 /obj/random/junkfood,
 /obj/random/junkfood,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ar" = (
 /obj/structure/table/onestar,
 /obj/random/tool/advanced/onestar/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "as" = (
 /turf/simulated/floor/snow/fresh,
 /area/liberty/dungeon/outside/frozen_forest_house)
@@ -40,12 +40,12 @@
 /area/liberty/dungeon/outside/frozen_forest)
 "aK" = (
 /turf/simulated/floor/tiled/derelict,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "aR" = (
 /obj/effect/floor_decal/industrial/road/straight3,
 /obj/effect/floor_decal/industrial/road,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "aU" = (
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -55,17 +55,17 @@
 /obj/item/paper_bin,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "bc" = (
 /obj/structure/salvageable/console_broken_os{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "bg" = (
 /obj/structure/salvageable/console_os,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "bE" = (
 /obj/random/pack/gun_loot,
 /turf/simulated/floor/rock/dark,
@@ -77,7 +77,7 @@
 "bZ" = (
 /obj/rogue_mobspawner,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "cp" = (
 /obj/structure/sign/faction/one_star_old,
 /turf/simulated/wall/untinted/onestar_reinforced,
@@ -97,7 +97,7 @@
 "cC" = (
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "cD" = (
 /obj/structure/flora/grass/brown,
 /obj/random/traps/low_chance,
@@ -110,13 +110,13 @@
 "cS" = (
 /obj/effect/window_lwall_spawn/smartspawn/onestar,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "cV" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
 /turf/simulated/floor/wood/wild3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "cZ" = (
 /obj/structure/flora/small/snow/boulder1,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -126,11 +126,11 @@
 	pixel_y = -7
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "dp" = (
 /obj/structure/sink/basion,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "dr" = (
 /obj/random/mob/tahca/low_chance,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -145,7 +145,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "dR" = (
 /obj/effect/decal/cleanable/liquid_fuel/flamethrower_fuel,
 /turf/simulated/floor/snow/pathing,
@@ -157,7 +157,7 @@
 "en" = (
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ep" = (
 /obj/random/mob/hakhma/low_chance,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -179,14 +179,14 @@
 	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "eG" = (
 /obj/structure/ore_box,
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "eN" = (
 /obj/structure/flora/small/snow/boulder2,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -195,7 +195,7 @@
 /obj/structure/bed/chair/custom/onestar,
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "eW" = (
 /obj/item/storage/backpack/duffelbag/loot,
 /turf/simulated/floor/rock/dark,
@@ -215,21 +215,25 @@
 "fl" = (
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fn" = (
 /obj/random/mob/spiders/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
+"fz" = (
+/obj/structure/low_wall/onestar,
+/turf/simulated/floor/snow/sleek/alt3,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fA" = (
 /obj/structure/table/rack/shelf,
 /obj/item/tool/pickaxe/drill/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fC" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/hcases/cardcarp,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fE" = (
 /mob/living/simple_animal/hostile/carp/baby,
 /turf/simulated/floor/beach/water/ice,
@@ -250,7 +254,7 @@
 "gA" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "gE" = (
 /obj/item/remains/deer,
 /turf/simulated/floor/rock/dark,
@@ -261,7 +265,7 @@
 	pixel_x = 28
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "gN" = (
 /obj/item/remains/unathi,
 /turf/simulated/floor/rock/dark,
@@ -269,16 +273,16 @@
 "gU" = (
 /obj/machinery/vending/cola,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "gX" = (
 /obj/item/clothing/head/hairflower,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "hf" = (
 /obj/structure/bed/chair/custom/onestar/red,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "hI" = (
 /obj/structure/invislight,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -286,11 +290,11 @@
 "hN" = (
 /obj/machinery/door/airlock/freezer,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "hQ" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "hR" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -298,12 +302,12 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "hS" = (
 /obj/structure/table/woodentable,
 /obj/random/booze/low_chance,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ib" = (
 /mob/living/simple_animal/hostile/tengcharge,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -318,7 +322,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "is" = (
 /obj/structure/flora/tree/snow/three,
 /obj/random/mob/roomba/range,
@@ -338,7 +342,7 @@
 	},
 /obj/random/circuitboard,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iH" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -349,7 +353,7 @@
 	},
 /obj/random/powercell/large_safe_lonestar,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iM" = (
 /obj/item/trash/material/metal,
 /turf/simulated/floor/asteroid/dirt,
@@ -359,14 +363,14 @@
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iQ" = (
 /obj/structure/table/onestar,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "jp" = (
 /obj/item/ammo_casing/rifle_75/scrap/prespawned,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -375,14 +379,14 @@
 /obj/structure/table/onestar,
 /obj/machinery/microwave,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "jt" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "jF" = (
 /obj/random/mob/mukwah/low_chance,
 /obj/item/remains/deer,
@@ -412,7 +416,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "km" = (
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/rock/dark,
@@ -439,14 +443,14 @@
 	},
 /obj/random/cloth/belt/low_chance,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "kY" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "lg" = (
 /obj/item/tool/knife/ritual,
 /turf/simulated/floor/rock/dark,
@@ -456,7 +460,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "lq" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -467,13 +471,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "lF" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed,
 /obj/item/bedsheet,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "lG" = (
 /obj/structure/flora/grass/brown,
 /obj/random/traps,
@@ -496,10 +500,10 @@
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "mf" = (
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "mn" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -507,7 +511,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "mM" = (
 /obj/item/remains/tajaran,
 /turf/simulated/floor/rock/dark,
@@ -524,13 +528,13 @@
 /area/liberty/dungeon/outside/frozen_forest_house)
 "nd" = (
 /turf/simulated/floor/holofloor/beach/water,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nv" = (
 /obj/structure/table/rack,
 /obj/item/tool/hammer/dumbbell,
 /obj/item/tool/hammer/dumbbell,
 /turf/simulated/floor/wood/wild5,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nA" = (
 /obj/structure/salvageable/server_os,
 /turf/simulated/floor/rock/dark,
@@ -539,13 +543,13 @@
 /obj/structure/table/rack/shelf,
 /obj/random/tool_upgrade/rare/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nQ" = (
 /obj/structure/sink{
 	pixel_y = 15
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nU" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -553,7 +557,7 @@
 	},
 /obj/item/device/radio/phone/medbay,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nY" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -565,22 +569,22 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "of" = (
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "og" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "oi" = (
 /obj/structure/material_box,
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "om" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -591,7 +595,7 @@
 	},
 /obj/random/pouch,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ot" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
@@ -600,7 +604,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "oC" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/light/floor{
@@ -608,16 +612,16 @@
 	pixel_x = 6
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "oF" = (
 /obj/structure/table/onestar,
 /obj/item/gun/energy/cog,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "oH" = (
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "oN" = (
 /obj/random/cluster/spiders,
 /turf/simulated/floor/rock/dark,
@@ -640,7 +644,7 @@
 /obj/structure/table/onestar,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "pq" = (
 /obj/machinery/mining/drill,
 /turf/simulated/floor/asteroid/dirt,
@@ -652,7 +656,7 @@
 "pA" = (
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "qa" = (
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest_house)
@@ -672,7 +676,7 @@
 /obj/structure/bed/chair/custom/onestar,
 /mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "qs" = (
 /obj/item/gun_upgrade/barrel/bore,
 /turf/simulated/floor/rock/dark,
@@ -681,7 +685,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "qJ" = (
 /obj/structure/table/woodentable,
 /obj/random/lowkeyrandom,
@@ -693,7 +697,7 @@
 	},
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "qT" = (
 /obj/random/closet_tech/low_chance,
 /turf/simulated/floor/rock/dark,
@@ -709,7 +713,7 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "rq" = (
 /turf/unsimulated/mineral,
 /area/liberty/dungeon/outside/frozen_forest_caves)
@@ -720,13 +724,13 @@
 /obj/structure/table/rack/shelf,
 /obj/random/medical_lowcost,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "rN" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "rQ" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/grass/brown,
@@ -740,7 +744,7 @@
 /obj/machinery/shower,
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "si" = (
 /obj/structure/flora/tree/snow/four,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -779,7 +783,7 @@
 /obj/item/stack/rods/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "sx" = (
 /obj/structure/flora/small/snow/rock1,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -787,23 +791,23 @@
 "sz" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "sV" = (
 /obj/structure/table/onestar,
 /obj/item/pen,
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "sW" = (
 /obj/structure/table/onestar,
 /obj/random/junkfood,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "sX" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tf" = (
 /obj/random/spider_trap_burrowing/low_chance,
 /turf/simulated/floor/rock/dark,
@@ -812,12 +816,12 @@
 /obj/structure/table/onestar,
 /obj/item/tool/crowbar/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/tool/advanced/onestar/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tq" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/window/reinforced{
@@ -827,15 +831,18 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ty" = (
 /obj/machinery/vending/dinnerware/cost,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tA" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
+"tB" = (
+/turf/simulated/floor/rock/manmade/road,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tE" = (
 /turf/simulated/floor/snow/sleek/alt3,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -843,7 +850,7 @@
 /obj/machinery/light/floor,
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tH" = (
 /mob/living/simple_animal/hostile/carp/shark,
 /turf/simulated/floor/beach/water/ocean,
@@ -855,7 +862,7 @@
 /obj/structure/table/onestar,
 /obj/item/tool/multitool/advanced/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tQ" = (
 /obj/structure/scrap_cube,
 /turf/simulated/floor/rock/dark,
@@ -863,7 +870,7 @@
 "tT" = (
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ud" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
@@ -871,7 +878,7 @@
 /obj/machinery/light/floor,
 /obj/random/turret/os,
 /turf/simulated/floor/bluegrid,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "up" = (
 /obj/structure/reagent_dispensers/fueltank/derelict,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -884,7 +891,7 @@
 /obj/structure/table/onestar,
 /obj/structure/salvageable/machine_os,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "uJ" = (
 /obj/structure/salvageable/os/power,
 /turf/simulated/floor/rock/dark,
@@ -905,11 +912,11 @@
 "vo" = (
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "vt" = (
 /obj/random/mob/roomba/job,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "vw" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/light/floor{
@@ -917,7 +924,7 @@
 	pixel_x = -5
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "vy" = (
 /turf/simulated/mineral/planet,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -928,7 +935,7 @@
 /obj/structure/table/onestar,
 /obj/structure/salvageable/console_os,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "wa" = (
 /obj/structure/flora/tree/snow/three,
 /turf/unsimulated/wall/snow,
@@ -952,7 +959,7 @@
 	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "wE" = (
 /obj/random/mob/roomba/job,
 /turf/simulated/floor/rock/manmade/road,
@@ -961,17 +968,17 @@
 /obj/structure/table/onestar,
 /obj/item/tool/weldingtool/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "wX" = (
 /obj/structure/table/onestar,
 /obj/item/pen,
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "wY" = (
 /obj/structure/closet/secure_closet/freezer,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "xa" = (
 /obj/structure/flora/tree/snow/three,
 /obj/structure/flora/grass/green,
@@ -1001,7 +1008,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "xl" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -1010,7 +1017,7 @@
 	},
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "xm" = (
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1020,10 +1027,10 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "xH" = (
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "xI" = (
 /mob/living/simple_animal/hostile/tengstalker,
 /turf/simulated/floor/rock/dark,
@@ -1054,7 +1061,7 @@
 	},
 /obj/random/common_oddities/low_chance,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yr" = (
 /obj/structure/salvageable/machine_os,
 /turf/simulated/floor/rock/dark,
@@ -1074,7 +1081,7 @@
 	},
 /obj/random/cigarettes,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yD" = (
 /obj/item/oddity/common/lighter,
 /turf/simulated/floor/rock/dark,
@@ -1084,11 +1091,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yQ" = (
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/tiled/derelict,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "zl" = (
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1110,7 +1117,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ab" = (
 /obj/item/remains/mummy2,
 /turf/simulated/floor/rock/dark,
@@ -1118,13 +1125,13 @@
 "Ad" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ah" = (
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Aj" = (
 /mob/living/simple_animal/hostile/carp/greatwhite,
 /turf/simulated/floor/beach/water/ocean,
@@ -1152,11 +1159,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "AO" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "AU" = (
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/snow/sleek/alt4,
@@ -1171,11 +1178,11 @@
 /area/liberty/dungeon/outside/frozen_forest)
 "Bp" = (
 /turf/simulated/floor/wood/wild3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Bw" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Bx" = (
 /obj/item/flamethrower/full,
 /obj/effect/decal/cleanable/liquid_fuel/flamethrower_fuel,
@@ -1185,17 +1192,17 @@
 /obj/structure/salvageable/autolathe_os,
 /obj/random/lathe_disk/advanced/onestar/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "BF" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "BL" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "BS" = (
 /obj/item/remains/deer,
 /obj/effect/decal/cleanable/greenglow,
@@ -1221,7 +1228,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "CA" = (
 /obj/random/mob/vox/low_chance,
 /turf/simulated/floor/snow/sleek/alt4,
@@ -1237,7 +1244,7 @@
 "CK" = (
 /obj/structure/reagent_dispensers/watertank/derelict,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "CL" = (
 /obj/structure/flora/stump,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1245,7 +1252,7 @@
 "CN" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "CQ" = (
 /obj/random/gun_cheap,
 /turf/simulated/floor/rock/dark,
@@ -1262,7 +1269,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Dc" = (
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/compressed_matter/random,
@@ -1293,7 +1300,7 @@
 /obj/item/stack/rods/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "DD" = (
 /obj/random/gun_fancy/low_chance,
 /turf/simulated/floor/rock/dark,
@@ -1316,14 +1323,14 @@
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ed" = (
 /obj/machinery/light/floor{
 	pixel_y = -7
 	},
 /obj/random/mob/roomba/job,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ej" = (
 /obj/random/cloth/armor/low_chance,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1331,7 +1338,7 @@
 "EA" = (
 /obj/structure/bed/chair/custom/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "EF" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1342,7 +1349,7 @@
 /obj/random/medical_lowcost/low_chance,
 /obj/random/medical/low_chance,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "EJ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/material_ore/low_chance,
@@ -1351,18 +1358,18 @@
 /obj/random/material_ore/low_chance,
 /obj/random/material_ore/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Fg" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/item/clothing/head/hairflower,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Fj" = (
 /obj/structure/table/rack/shelf,
 /obj/item/device/lighting/toggleable/lantern,
 /obj/item/device/lighting/toggleable/lantern,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Fl" = (
 /obj/structure/scrap/cloth,
 /turf/simulated/floor/rock/dark,
@@ -1370,6 +1377,10 @@
 "Fu" = (
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
+"Fw" = (
+/obj/structure/flora/stump,
+/turf/simulated/floor/snow/sleek/alt3,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Fx" = (
 /obj/effect/decal/cleanable/liquid_fuel/flamethrower_fuel,
 /turf/simulated/floor/snow/fresh,
@@ -1387,16 +1398,16 @@
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost/low_chance,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "FL" = (
 /obj/structure/table/woodentable,
 /obj/item/pack_card_carp,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "FU" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "FW" = (
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1404,7 +1415,7 @@
 "FY" = (
 /obj/rogue_mobspawner,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Gc" = (
 /obj/random/mob/vox/low_chance,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1420,12 +1431,12 @@
 "Gx" = (
 /obj/random/turret/os,
 /turf/simulated/floor/bluegrid,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GB" = (
 /obj/structure/bed/chair/custom/onestar/red,
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GH" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -1436,7 +1447,7 @@
 	},
 /obj/random/powercell/medium_safe_lonestar,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GO" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -1444,12 +1455,12 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GQ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/tool_upgrade/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GR" = (
 /obj/structure/flora/stump,
 /obj/item/tool/saw/onestar_saw,
@@ -1464,7 +1475,7 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Hd" = (
 /obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/rock/dark,
@@ -1472,13 +1483,13 @@
 "Hh" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Hi" = (
 /turf/simulated/wall/untinted/onestar_reinforced,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Hv" = (
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "HG" = (
 /obj/random/mob/vox,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1486,7 +1497,7 @@
 "HQ" = (
 /obj/machinery/vending/gamers,
 /turf/simulated/floor/wood/wild3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "HY" = (
 /obj/random/gun_shotgun,
 /turf/simulated/floor/rock/dark,
@@ -1498,7 +1509,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ih" = (
 /obj/item/modular_computer/laptop/preset/custom_loadout/advanced/golden,
 /turf/simulated/floor/rock/dark,
@@ -1510,7 +1521,7 @@
 "Io" = (
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Iq" = (
 /obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1525,7 +1536,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "IR" = (
 /obj/random/closet_maintloot/low_chance,
 /turf/simulated/floor/rock/dark,
@@ -1533,13 +1544,13 @@
 "IW" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "IY" = (
 /obj/structure/table/onestar,
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ja" = (
 /obj/effect/floor_decal/industrial/road/straight3,
 /obj/effect/floor_decal/industrial/road{
@@ -1547,20 +1558,20 @@
 	},
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ji" = (
 /obj/structure/low_wall/onestar,
 /obj/item/oddity/common/old_money,
 /turf/simulated/floor/snow/sleek/alt3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Jo" = (
 /obj/structure/salvageable/computer_os,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Jq" = (
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "JA" = (
 /obj/random/cluster/tengolo,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1580,7 +1591,7 @@
 "JV" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "JX" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -1591,12 +1602,12 @@
 	},
 /obj/random/cloth/helmet,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Kc" = (
 /obj/structure/table/onestar,
 /obj/machinery/reagentgrinder/portable,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Kd" = (
 /mob/living/carbon/superior_animal/vox/thrower_spear,
 /turf/simulated/floor/wood/wild4,
@@ -1606,7 +1617,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "KA" = (
 /obj/random/traps/low_chance,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1617,7 +1628,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "KG" = (
 /turf/simulated/floor/snow/sleek/alt1,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1629,12 +1640,12 @@
 /obj/structure/table/onestar,
 /obj/item/gun/energy/cog,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Le" = (
 /obj/structure/table/onestar,
 /obj/item/stack/os_cash/random,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Lj" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -1645,7 +1656,7 @@
 	},
 /obj/random/circuitboard,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Lk" = (
 /obj/item/remains,
 /turf/simulated/floor/rock/dark,
@@ -1668,11 +1679,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "LV" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Mg" = (
 /obj/random/rations/crayon,
 /turf/simulated/floor/rock/dark,
@@ -1683,18 +1694,18 @@
 "Mn" = (
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Mo" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Mq" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Mt" = (
 /obj/item/inflatable/door/torn,
 /obj/structure/invislight,
@@ -1703,38 +1714,38 @@
 "Mw" = (
 /obj/machinery/light/floor,
 /turf/simulated/floor/wood/wild3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Mz" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/item/clothing/head/hairflower/white,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "MB" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "MD" = (
 /obj/structure/table/onestar,
 /obj/random/junkfood/onlypizza,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "MM" = (
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/fueltank/derelict,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "MO" = (
 /obj/structure/table/rack,
 /obj/item/towel/random,
 /turf/simulated/floor/wood/wild5,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "MW" = (
 /obj/effect/window_lwall_spawn/smartspawn/onestar,
 /turf/simulated/floor/snow/sleek/alt3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Nh" = (
 /obj/random/pouch/hardcase_scrap,
 /obj/random/pouch/hardcase_scrap,
@@ -1758,12 +1769,12 @@
 "NE" = (
 /obj/machinery/door/airlock/vault/bolted,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "NG" = (
 /obj/structure/low_wall/onestar,
 /obj/item/stack/os_cash/random,
 /turf/simulated/floor/snow/sleek/alt3,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "NI" = (
 /obj/item/device/lighting/toggleable/lantern,
 /turf/simulated/floor/rock/dark,
@@ -1773,13 +1784,13 @@
 /obj/item/material/kitchen/utensil/fork,
 /obj/item/material/kitchen/utensil/fork,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "NS" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Oh" = (
 /obj/structure/flora/bush,
 /turf/unsimulated/wall/snow,
@@ -1793,7 +1804,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "OD" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/simulated/floor/rock/dark,
@@ -1804,7 +1815,7 @@
 	},
 /obj/random/mob/roomba/range,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ON" = (
 /obj/structure/flora/stump,
 /obj/random/traps/low_chance,
@@ -1837,7 +1848,7 @@
 	},
 /obj/random/booze,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Pe" = (
 /turf/simulated/floor/snow/mount,
 /area/liberty/dungeon/outside/frozen_forest_house)
@@ -1850,17 +1861,17 @@
 /obj/item/clothing/head/hairflower/yellow,
 /obj/random/mob/roomba/job,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Pt" = (
 /obj/structure/table/onestar,
 /obj/item/clothing/suit/hooded/wintercoat,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Pv" = (
 /obj/structure/table/woodentable,
 /obj/item/stack/material/cardboard/random,
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "PD" = (
 /obj/item/storage/briefcase/inflatable/empty,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -1873,7 +1884,7 @@
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "PG" = (
 /turf/unsimulated/mineral,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1893,7 +1904,7 @@
 /obj/random/material_ore/low_chance,
 /obj/random/material_ore/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Qd" = (
 /obj/random/closet_maintloot,
 /turf/simulated/floor/rock/dark,
@@ -1906,7 +1917,7 @@
 /obj/structure/table/onestar,
 /obj/structure/salvageable/os/power,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Qg" = (
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1932,7 +1943,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "QN" = (
 /mob/living/carbon/superior_animal/vox/ashen,
 /turf/simulated/floor/wood/wild4,
@@ -1940,18 +1951,18 @@
 "QU" = (
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "QV" = (
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Rb" = (
 /obj/structure/table/rack/shelf,
 /obj/item/tool/pickaxe/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Rm" = (
 /obj/machinery/microwave/burnbarrel,
 /turf/simulated/floor/rock/dark,
@@ -1959,6 +1970,10 @@
 "Rv" = (
 /turf/simulated/floor/beach/water/ocean,
 /area/liberty/dungeon/outside/frozen_forest)
+"RC" = (
+/obj/random/mob/roomba/any,
+/turf/simulated/floor/rock/manmade/road,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "RI" = (
 /obj/structure/table/onestar,
 /obj/item/oddity/common/towel,
@@ -1966,7 +1981,7 @@
 	pixel_x = -27
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Sc" = (
 /obj/structure/flora/tree/snow/three,
 /obj/random/mob/tahca/low_chance,
@@ -1975,7 +1990,7 @@
 "Sd" = (
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Si" = (
 /obj/structure/flora/grass/both,
 /obj/item/storage/hcases/med/has_items_spawn,
@@ -1984,7 +1999,7 @@
 "Sk" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Sn" = (
 /obj/structure/scrap/science,
 /turf/simulated/floor/rock/dark,
@@ -1992,17 +2007,17 @@
 "Sp" = (
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Sv" = (
 /obj/machinery/door/airlock/freezer,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "SC" = (
 /obj/structure/table/onestar,
 /obj/item/tool/knife,
 /obj/item/tool/knife,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "SD" = (
 /obj/random/cloth/bikehelms,
 /turf/simulated/floor/snow/sleek/alt3,
@@ -2017,7 +2032,7 @@
 	},
 /obj/random/powercell/small_safe_lonestar,
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "SQ" = (
 /obj/structure/table/onestar,
 /obj/item/oddity/common/towel,
@@ -2025,20 +2040,20 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Tb" = (
 /obj/machinery/light/floor,
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Tk" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Tq" = (
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Tv" = (
 /mob/living/carbon/superior_animal/vox/rage,
 /turf/simulated/floor/wood/wild4,
@@ -2053,19 +2068,23 @@
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "Ua" = (
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Uc" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/machinery/door/window,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ud" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/machinery/door/window{
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
+"Ue" = (
+/obj/structure/sign/faction/one_star,
+/turf/simulated/wall/untinted/onestar_reinforced,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Uh" = (
 /obj/structure/salvageable/console_broken_os,
 /turf/simulated/floor/rock/dark,
@@ -2077,7 +2096,7 @@
 "Up" = (
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Uq" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
@@ -2085,7 +2104,7 @@
 /obj/machinery/light/floor,
 /obj/random/turret/os,
 /turf/simulated/floor/bluegrid,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Us" = (
 /obj/random/spider_trap_burrowing/low_chance,
 /obj/item/remains/ribcage,
@@ -2108,7 +2127,7 @@
 "UQ" = (
 /obj/effect/window_lwall_spawn/smartspawn/onestar,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "UZ" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/snow/sleek/alt1,
@@ -2117,7 +2136,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/toolbox,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Vq" = (
 /obj/structure/flora/grass/brown,
 /turf/unsimulated/wall/snow,
@@ -2127,14 +2146,14 @@
 /obj/item/stack/rods/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Vx" = (
 /obj/effect/floor_decal/industrial/road/straight3,
 /obj/effect/floor_decal/industrial/road{
 	dir = 1
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "VU" = (
 /obj/item/bedsheet,
 /obj/machinery/portable_atmospherics/hydroponics/soil,
@@ -2144,7 +2163,7 @@
 /obj/structure/table/onestar,
 /obj/item/handcuffs,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Wb" = (
 /mob/living/simple_animal/hostile/tengstalker,
 /obj/item/remains/deer,
@@ -2154,7 +2173,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Wn" = (
 /obj/structure/salvageable/console_os,
 /turf/simulated/floor/rock/dark,
@@ -2177,7 +2196,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "WL" = (
 /obj/effect/decal/cleanable/liquid_fuel/flamethrower_fuel,
 /turf/simulated/floor/wood/wild4,
@@ -2201,7 +2220,7 @@
 "Xg" = (
 /obj/structure/salvageable/os/power,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Xn" = (
 /obj/map_data/frozen_forest,
 /turf/unsimulated/mineral,
@@ -2209,7 +2228,7 @@
 "Xo" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Xp" = (
 /obj/item/remains/ribcage,
 /obj/structure/invislight,
@@ -2223,12 +2242,12 @@
 /obj/structure/table/onestar,
 /obj/item/handcuffs,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Xu" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "XC" = (
 /obj/machinery/mining/brace,
 /turf/simulated/floor/asteroid/dirt,
@@ -2252,11 +2271,11 @@
 "XW" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Yd" = (
 /obj/random/flora/jungle_tree,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Yl" = (
 /obj/structure/flora/tree/snow/three,
 /obj/structure/flora/grass/brown,
@@ -2269,14 +2288,14 @@
 	},
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Yw" = (
 /obj/asteroid_spawner/rogue_teleporter,
 /obj/rogue/teleporter{
 	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "YF" = (
 /obj/random/mob/roomba/any,
 /turf/simulated/floor/rock/manmade/road,
@@ -2285,12 +2304,12 @@
 /obj/machinery/light/floor,
 /obj/structure/salvageable/console_os,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Za" = (
 /obj/item/storage/box/donkpockets,
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Zl" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/item/clothing/head/hairflower/blue,
@@ -2298,7 +2317,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Zm" = (
 /turf/simulated/floor/snow/fresh,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -2316,7 +2335,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/carpet,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Zx" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
@@ -2325,7 +2344,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Zy" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -2335,19 +2354,22 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ZA" = (
 /obj/structure/window/reinforced{
 	dir = 4;
 	pixel_x = 0
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ZB" = (
 /obj/machinery/shower,
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
+"ZC" = (
+/turf/simulated/floor/snow/sleek/alt3,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ZE" = (
 /obj/item/inflatable/door/torn,
 /turf/simulated/floor/snow/grass_poking_out,
@@ -2357,7 +2379,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ZT" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -2365,7 +2387,7 @@
 	},
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
-/area/liberty/dungeon/outside/frozen_forest)
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 
 (1,1,1) = {"
 PG
@@ -25506,7 +25528,7 @@ tE
 tE
 tE
 tE
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -25542,7 +25564,7 @@ Hi
 Hi
 Hi
 Hi
-Qe
+Ue
 PG
 PG
 PG
@@ -29035,7 +29057,7 @@ tE
 tE
 UK
 Hi
-Qe
+Ue
 cS
 mf
 mf
@@ -29269,7 +29291,7 @@ tE
 tE
 eN
 tE
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -29537,7 +29559,7 @@ tE
 tE
 oS
 oS
-CL
+Fw
 Hi
 Hv
 Hv
@@ -29554,7 +29576,7 @@ cS
 cS
 Hi
 Hi
-Qe
+Ue
 Ud
 Ks
 Mq
@@ -29566,7 +29588,7 @@ Hi
 Hi
 Hi
 Hi
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -29789,7 +29811,7 @@ aU
 aU
 aU
 aU
-aU
+tB
 hN
 mf
 mf
@@ -30041,7 +30063,7 @@ aU
 aU
 aU
 YF
-aU
+tB
 hN
 mf
 mf
@@ -30293,7 +30315,7 @@ oS
 oS
 tE
 tE
-tE
+ZC
 Hi
 Hv
 It
@@ -30302,7 +30324,7 @@ CY
 Xo
 mf
 Up
-Qe
+Ue
 Up
 mf
 mf
@@ -30312,7 +30334,7 @@ mf
 mf
 ud
 Hi
-Qe
+Ue
 GO
 ri
 mf
@@ -30546,7 +30568,7 @@ tE
 tE
 tE
 tE
-Qe
+Ue
 Hv
 DT
 Pr
@@ -30780,7 +30802,7 @@ sx
 tE
 KG
 aU
-aU
+tB
 MW
 MW
 MW
@@ -30788,7 +30810,7 @@ AO
 MW
 MW
 MW
-tE
+ZC
 tE
 CL
 aU
@@ -31032,15 +31054,15 @@ tE
 CL
 KG
 aU
-aU
+tB
 Ja
-aU
-aU
-aU
-aU
-aU
+tB
+tB
+tB
+tB
+tB
 aR
-aU
+tB
 wE
 aU
 aU
@@ -31068,7 +31090,7 @@ vt
 MB
 mf
 mf
-Qe
+Ue
 Hv
 Hv
 Mn
@@ -31284,15 +31306,15 @@ tE
 tE
 KG
 aU
-aU
+tB
 Vx
-aU
-aU
-aU
-aU
-aU
+tB
+tB
+tB
+tB
+tB
 aR
-aU
+tB
 aU
 aU
 aU
@@ -31320,7 +31342,7 @@ vt
 mf
 mf
 mf
-Qe
+Ue
 Hv
 Hv
 mf
@@ -31536,7 +31558,7 @@ tE
 tE
 KG
 aU
-aU
+tB
 MW
 MW
 MW
@@ -31544,7 +31566,7 @@ AO
 MW
 MW
 MW
-tE
+ZC
 tE
 oS
 aU
@@ -31806,7 +31828,7 @@ tE
 tE
 UK
 tE
-Qe
+Ue
 Hv
 Ia
 Fg
@@ -32057,7 +32079,7 @@ tE
 tE
 tE
 tE
-tE
+ZC
 Hi
 Hv
 tq
@@ -32066,7 +32088,7 @@ WH
 Xo
 mf
 Up
-Qe
+Ue
 Up
 mf
 mf
@@ -32076,7 +32098,7 @@ mf
 mf
 Uq
 Hi
-Qe
+Ue
 Ks
 mn
 mf
@@ -32309,7 +32331,7 @@ aU
 wE
 aU
 aU
-YF
+RC
 hN
 mf
 mf
@@ -32561,7 +32583,7 @@ aU
 aU
 aU
 aU
-aU
+tB
 hN
 mf
 mf
@@ -32813,7 +32835,7 @@ tE
 oS
 oS
 tE
-tE
+ZC
 Hi
 Hv
 Hv
@@ -32830,7 +32852,7 @@ cS
 cS
 Hi
 Hi
-Qe
+Ue
 Uc
 kY
 ZA
@@ -32842,7 +32864,7 @@ Hi
 Hi
 Hi
 Hi
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -33049,7 +33071,7 @@ tE
 tE
 tE
 tE
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -33319,7 +33341,7 @@ tE
 tE
 tE
 Hi
-Qe
+Ue
 cS
 mf
 MB
@@ -34358,7 +34380,7 @@ FU
 Ua
 cC
 mf
-Qe
+Ue
 mf
 Up
 dp
@@ -34610,7 +34632,7 @@ sW
 ll
 Ua
 mf
-qm
+fz
 Ua
 Ua
 dp
@@ -34862,7 +34884,7 @@ sW
 ll
 Ua
 mf
-qm
+fz
 Ua
 FU
 tT
@@ -35618,7 +35640,7 @@ Ua
 Ua
 tG
 mf
-qm
+fz
 Ua
 cC
 JV
@@ -35870,7 +35892,7 @@ MD
 ll
 Ua
 mf
-qm
+fz
 Ua
 Ua
 wY
@@ -36122,7 +36144,7 @@ ao
 ll
 Ua
 mf
-qm
+fz
 Ua
 Ua
 IW
@@ -36374,7 +36396,7 @@ Ua
 Ua
 Ua
 mf
-qm
+fz
 Ua
 Ua
 tT
@@ -36846,7 +36868,7 @@ tE
 tE
 eN
 tE
-Qe
+Ue
 Hi
 Hi
 Hi
@@ -36882,7 +36904,7 @@ Hi
 Hi
 Hi
 Hi
-Qe
+Ue
 PG
 PG
 PG

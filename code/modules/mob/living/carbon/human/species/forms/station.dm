@@ -9,7 +9,6 @@
 	//No changes.
 
 /*
-#define FORM_EXALT_HUMAN		"Exalt Human"
 #define FORM_HUMAN				"Human"
 #define FORM_CANINE				"Canine"
 #define FORM_SHARK				"Shark"
@@ -30,13 +29,6 @@
 	damage_overlays
 	damage_mask
 	blood_mask*/
-/datum/species_form/exalt
-	name = FORM_EXALT_HUMAN
-	base = 'icons/mob/human_races/r_human_white.dmi'
-	deform = 'icons/mob/human_races/r_def_human_white.dmi'
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
-	playable = TRUE
-
 /datum/species_form/canine
 	playable = TRUE
 	name = FORM_CANINE
@@ -282,20 +274,6 @@
 	death_sound = 'sound/machines/shutdown.ogg'
 	death_message = "falls over crashing to the ground as their electronic eyes fade off."
 	knockout_message = "has been knocked offline!"
-
-/datum/species_form/folken
-	playable = FALSE
-	name = FORM_FOLKEN
-	base = 'icons/mob/human_races/r_folken.dmi'
-	deform = null
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
-
-/datum/species_form/mycus
-	playable = FALSE
-	name = FORM_MYCUS
-	base = 'icons/mob/human_races/r_mycus.dmi'
-	deform = null
-	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
 
 /datum/species_form/axolotl
 	playable = TRUE

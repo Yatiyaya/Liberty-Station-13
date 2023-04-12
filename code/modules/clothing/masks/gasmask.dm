@@ -367,3 +367,10 @@
 	name = "sleek purple rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is purple and has a Phokorus Institute Research marking."
 	icon_state = "srebreath_purple"
+
+//Fontaine Logistics
+/obj/item/clothing/mask/gas/fontaine
+	name = "fontaine gas mask"
+	desc = "A Fontaine-brand gas mask; completed with a rebreather and a green visor."
+	icon_state = "smask_fontaine"
+	item_state = "smask_fontaine"

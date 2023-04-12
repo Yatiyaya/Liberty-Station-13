@@ -29,7 +29,7 @@
 
 /datum/design/autolathe/clothing/formanhat
 	name = "Salvaged Helmet"
-	build_path = /obj/item/clothing/head/helmet/foreman
+	build_path = /obj/item/clothing/head/helmet/shepherd
 
 /datum/design/autolathe/clothing/formansuit
 	name = "Armored Rig"

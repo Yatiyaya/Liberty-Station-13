@@ -287,8 +287,8 @@
 	required_tech_levels = list()
 	cost = 750
 
-	unlocks_designs = list(/datum/design/research/item/clothing/capsaarmorchest,
-							 /datum/design/research/item/clothing/capsaarmorhead,
+	unlocks_designs = list(/datum/design/research/item/clothing/pirsarmorchest,
+							 /datum/design/research/item/clothing/pirsarmorhead,
 							 /datum/design/research/item/clothing/rig_cheap,
 							 /datum/design/research/item/clothing/tinfoil)
 

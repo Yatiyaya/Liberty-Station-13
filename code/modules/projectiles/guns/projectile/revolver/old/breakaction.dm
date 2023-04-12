@@ -81,7 +81,6 @@
 	can_dual = FALSE
 	max_upgrades = 4 // Deckard on steroids, let's not get out of hand
 	blacklist_upgrades = list( // Gun already has amazing recoil control, barrels that reduce recoil interfere with the sliding recoil control mechanism.
-							  /obj/item/tool_upgrade/refinement/vibcompensator = TRUE,
 							  /obj/item/tool_upgrade/reinforcement/guard = TRUE,
 							  /obj/item/tool_upgrade/productivity/ergonomic_grip = TRUE,
 							  /obj/item/tool_upgrade/refinement/ported_barrel = TRUE,)

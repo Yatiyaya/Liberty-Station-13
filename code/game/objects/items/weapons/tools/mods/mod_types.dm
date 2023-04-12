@@ -546,30 +546,6 @@
 	I.prefix = "gravity-compensated"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 
-/obj/item/tool_upgrade/refinement/vibcompensator
-	name = "vibration compensator"
-	desc = "A ground-breaking innovation that dampens the vibration of a tool by emitting sound waves in a frequency nobody can hear. It does not make any sense but neither will you by installing that on your tool. Alternatively, it could fit a gun grip to lessen recoil."
-	icon_state = "vibcompensator"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
-	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)
-	price_tag = 120
-
-/obj/item/tool_upgrade/refinement/vibcompensator/New()
-	..()
-	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
-	I.tool_upgrades = list(
-	UPGRADE_PRECISION = 15,
-	UPGRADE_ITEMFLAGPLUS = SILENT
-	)
-	I.weapon_upgrades = list(
-		GUN_UPGRADE_RECOIL = 0.5,
-		UPGRADE_BULK = 0.5,
-		GUN_UPGRADE_PEN_MULT = 0.7
-	)
-	I.gun_loc_tag = GUN_GRIP
-	I.required_qualities = list(QUALITY_CUTTING, QUALITY_WIRE_CUTTING, QUALITY_SCREW_DRIVING, QUALITY_WELDING ,QUALITY_PULSING, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_BONE_SETTING, QUALITY_LASER_CUTTING, QUALITY_BONE_GRAFTING)
-	I.prefix = "vibration-compensated"
-
 // 		AUGMENTS: MISCELLANEOUS AND UTILITY
 //------------------------------------------------
 

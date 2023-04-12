@@ -94,7 +94,7 @@
 /datum/gear/armament/holster/church
 	display_name = "Absolutist Sword Scabbard"
 	path = /obj/item/clothing/accessory/holster/saber/greatsword/churchprint
-	allowed_roles = list("Prime","Vector")
+	allowed_roles = list(JOBS_CHURCH)
 
 /datum/gear/armament/saber
 	display_name = "Decorative Saber"
@@ -116,5 +116,5 @@
 /datum/gear/armament/holster/nt
 	display_name = "short sword"
 	path = /obj/item/tool/sword/nt/shortsword
-	allowed_roles = list("Prime","Vector")
+	allowed_roles = list(JOBS_CHURCH)
 	cost = 1

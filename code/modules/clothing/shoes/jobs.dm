@@ -160,3 +160,10 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
+
+//Fontaine Industries
+/obj/item/clothing/shoes/jackboots/fontaine
+	name = "Fontaine snowboots"
+	desc = "A pair of standard-issue snowboots with a reinforced metal tip built into them. Branded by Fontaine Logistics."
+	icon_state = "sboots_fontaine"
+	item_state = "sboots_fontaine"

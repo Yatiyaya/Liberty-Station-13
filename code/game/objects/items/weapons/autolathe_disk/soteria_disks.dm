@@ -103,7 +103,7 @@
 		/datum/design/organ/blood_vessel
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/surgery
+/obj/item/computer_hardware/hard_drive/portable/design/medical/surgery/back_alley
 	disk_name = "Back Alley Organs"
 	icon_state = "moebius"
 
@@ -115,6 +115,18 @@
 		/datum/design/organ/back_alley/hyper_nerves,
 		/datum/design/organ/back_alley/super_muscle,
 		/datum/design/organ/back_alley/ex_blood_vessel
+	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/medical/medfab
+	disk_name = "CAPSA Medical Fabricator Designs"
+	icon_state = "moebius"
+	license = -1
+	designs = list(
+		/datum/design/research/item/medical/gauze,
+		/datum/design/research/item/medical/adv_gauze,
+		/datum/design/research/item/medical/ointment,
+		/datum/design/research/item/medical/adv_ointment,
+		/datum/design/research/item/medical/bonegel,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer

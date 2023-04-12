@@ -419,3 +419,51 @@
 	desc = "A styled black divisor cap for showing everyone you are so steadfast in the name of god you don't need a helmet."
 	icon_state = "divisor_cap"
 	item_state = "divisor_cap"
+
+//Fontaine Logistics
+/obj/item/clothing/head/helmet/shepherd
+	name = "Field Shepherd helmet"
+	desc = "A study, handcrafted helmet reinforced with lightweight material and an added line down its center, depicting that of a Shepherd; herding his employees."
+	icon_state = "shepherd_helmet"
+	item_state = "shepherd_helmet"
+	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 30, MATERIAL_SILVER = 12) //worth stealing
+	price_tag = 1200
+	armor_list = list(
+		melee = 40,
+		bullet = 30,
+		energy = 30,
+		bomb = 65,
+		bio = 100,
+		rad = 0
+	)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EARS
+	action_button_name = "Toggle Headlamp"
+	light_overlay = "technohelmet_light"
+	brightness_on = 5 //Slightly better do to the sear costs
+	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/head/helmet/handmade/scavengerhelmet
+	name = "Shipbreaker helmet"
+	desc = "A sturdy, handcrafted helmet. It's well balanced and sits low on your head, with padding on the inside."
+	icon_state = "fontaine_visor"
+	item_state = "fontaine_visor"
+	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 0, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EARS
+	price_tag = 200
+	max_upgrades = 1 // Good baseline already
+	action_button_name = "Toggle Headlamp"
+	light_overlay = "technohelmet_light"
+	brightness_on = 5 //Slightly better do to the sear costs
+	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/head/trapper
+	name = "Trapper brimmed hat"
+	desc = "A brimmed old-fashioned hat made out of animal skin, fleece lining, and furs. It doesn't offer much in the way of protection, but at least it's warm."
+	icon_state = "trapper_hat"
+	item_state = "trapper_hat"
+	flags = THICKMATERIAL
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.9
+	armor_list = list(melee = 20, bullet = 20, energy = 20, bomb = 35, bio = 75, rad = 35)

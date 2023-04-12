@@ -44,6 +44,11 @@
 	var/static/list/damage_overlays
 	is_wall = TRUE
 
+	var/under_turf_setter = /turf/simulated/floor
+	var/no_girder = FALSE
+	var/no_matter = FALSE
+	var/name_changes = TRUE
+
 // Walls always hide the stuff below them.
 /turf/simulated/wall/levelupdate()
 	for(var/obj/O in src)
@@ -312,7 +317,7 @@
 	if(!can_melt())
 		return
 
-	src.ChangeTurf(/turf/simulated/floor/plating)
+	src.ChangeTurf(under_turf_setter)
 
 	var/turf/simulated/floor/F = src
 	if(!F)
@@ -341,7 +346,7 @@
 		if (leftover > 150)
 			dismantle_wall(no_product = TRUE)
 		else
-			dismantle_wall()
+			dismantle_wall(no_product = no_matter)
 	else
 		update_icon()
 
@@ -359,7 +364,7 @@
 
 /turf/simulated/wall/proc/dismantle_wall(devastated, explode, no_product, mob/user)
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
-	if(!no_product)
+	if(!no_product || !no_matter)
 		if(reinf_material)
 			reinf_material.place_dismantled_girder(src, reinf_material)
 		else
@@ -379,7 +384,7 @@
 	reinf_material = null
 	update_connections(1)
 
-	ChangeTurf(/turf/simulated/floor/plating)
+	ChangeTurf(under_turf_setter)
 
 /turf/simulated/wall/ex_act(severity)
 	switch(severity)
@@ -411,7 +416,7 @@
 	O.density = 1
 	O.layer = 5
 
-	src.ChangeTurf(/turf/simulated/floor/plating)
+	src.ChangeTurf(under_turf_setter)
 
 	var/turf/simulated/floor/F = src
 	F.burn_tile()
@@ -437,8 +442,9 @@
 /turf/simulated/wall/proc/burn(temperature)
 	if(material.combustion_effect(src, temperature, 0.7))//it wont return something in any way, this proc is commented and it belongs to plasma material.(see materials.dm:283)
 		spawn(2)
-			new /obj/structure/girder(src)
-			src.ChangeTurf(/turf/simulated/floor)
+			if(!no_girder)
+				new /obj/structure/girder(src)
+			src.ChangeTurf(under_turf_setter)
 			for(var/turf/simulated/wall/W in trange(3, src) - src)
 				W.burn((temperature/4))
 			for(var/obj/machinery/door/airlock/plasma/D in range(3,src))

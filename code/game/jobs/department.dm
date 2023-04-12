@@ -78,7 +78,7 @@
 	jobs_in_department = list(JOBS_SCIENCE)
 
 /datum/department/church
-	name = "Church of Absolute"
+	name = "Custodians of Bonfires Funds"
 	id = DEPARTMENT_CHURCH
 	account_initial_balance = 17000 //17000 to cover some expenses but not that much
 	//Full team with nepotism in 5 hours is 15600
