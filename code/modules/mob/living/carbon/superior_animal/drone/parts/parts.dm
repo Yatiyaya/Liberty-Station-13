@@ -164,7 +164,7 @@
 
 /obj/item/storage/box/sword_drone_kit
 	name = "Custom Sword Drone Fabrication Kit"
-	desc = "Everything to make your own CAPSA-brand Sword Drone! Tools not included."
+	desc = "Everything to make your own PIRS-brand Sword Drone! Tools not included."
 
 /obj/item/storage/box/sword_drone_kit/populate_contents()
 	new /obj/item/bot_part/sword_part/main_frame(src)
@@ -178,7 +178,7 @@
 	new /obj/item/cell/large/moebius(src)
 	new /obj/item/bot_part/control(src)
 	new /obj/item/stack/cable_coil(src, 10, "red")
-	new /obj/item/clothing/suit/armor/vest/capsasuit(src)
+	new /obj/item/clothing/suit/armor/vest/pirssuit(src)
 	new /obj/item/tool_upgrade/productivity/red_paint(src)
 
 /obj/item/storage/box/mantis_drone_kit
@@ -198,5 +198,5 @@
 	new /obj/item/cell/large/moebius(src)
 	new /obj/item/bot_part/control(src)
 	new /obj/item/stack/cable_coil(src, 10, "red")
-	new /obj/item/clothing/suit/armor/vest/capsasuit(src)
+	new /obj/item/clothing/suit/armor/vest/pirssuit(src)
 	new /obj/item/tool_upgrade/productivity/red_paint(src)

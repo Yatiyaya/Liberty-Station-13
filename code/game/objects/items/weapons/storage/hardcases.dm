@@ -586,3 +586,84 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		else
 			stamped = FALSE
 
+/obj/item/gunbox/shipbreaker
+	name = "Shipbreaker primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/shipbreaker/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Broz - SMG"] = list(/obj/item/gun/projectile/automatic/broz,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35)
+		options["Trench - shotgun"] = list(/obj/item/gun/projectile/shotgun/pump,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Kalash - makeshift rifle"] = list(/obj/item/gun/projectile/automatic/ak47/makeshift, /obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75)
+		options["Energy Carbine - makeshift e-gun"] = list(/obj/item/gun/energy/laser/makeshift, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/trapper
+	name = "Trapper primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/trapper/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Lancer - assisted crossbow"] = list(/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,/obj/item/ammo_casing/crossbow_bolts/bulk,/obj/item/ammo_casing/crossbow_bolts/bulk)
+		options["Western - lever shotgun"] = list(/obj/item/gun/projectile/boltgun/lever/shotgun,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Rosefield - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/rosefield, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/gun_upgrade/scope/acog)
+		options["Energy Carbine - makeshift e-gun"] = list(/obj/item/gun/energy/laser/makeshift, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/shepherd
+	name = "Shepherd primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/shepherd/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Specialist - 9mm SMG"] = list(/obj/item/gun/projectile/automatic/specialist,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35)
+		options["Umbani - 10mm SMG"] = list(/obj/item/gun/projectile/automatic/umbani,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40)
+		options["Judge - automatic shotgun"] = list(/obj/item/gun/projectile/shotgun/judge,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Big Game - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/gamer, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/gun_upgrade/scope/acog)
+		options["Cog - energy carbine"] = list(/obj/item/gun/energy/cog, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE

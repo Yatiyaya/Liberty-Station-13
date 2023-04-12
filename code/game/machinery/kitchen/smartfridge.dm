@@ -34,7 +34,21 @@
 	name = "\improper Secure SmartFridge"
 	is_secure = 1
 
+/*******************
+*   Disk Storage
+********************/
+/obj/machinery/smartfridge/disks
+	name = "\improper Disks Storage"
+	desc = "When you need disks fast!"
+	icon_state = "smartfridge"
+	icon_fill10 = "diskfridge-fill10"
+	icon_fill20 = "diskfridge-fill20"
+	icon_fill30 = "diskfridge-fill30"
 
+/obj/machinery/smartfridge/disks/accept_check(obj/item/O as obj)
+	if(istype(O,/obj/item/computer_hardware/hard_drive/portable))
+		return TRUE
+	return FALSE
 
 
 /*******************
@@ -44,10 +58,10 @@
 	name = "\improper Refrigerated Seeds Storage"
 	desc = "When you need seeds fast!"
 
-/obj/machinery/smartfridge/seeds/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/seeds/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/seeds/))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 /obj/machinery/smartfridge/kitchen
 	name = "\improper Agro-Club Fridge"
@@ -73,12 +87,12 @@
 	desc = "A refrigerated storage unit for slime extracts and potions."
 	req_access = list(access_moebius)
 
-/obj/machinery/smartfridge/secure/extract/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/secure/extract/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/slime_extract))
-		return 1
+		return TRUE
 	if(istype(O,/obj/item/slime_potion))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 
 
@@ -90,14 +104,14 @@
 	desc = "A refrigerated storage unit for storing medicine and chemicals."
 	req_one_access = list(access_moebius,access_chemistry)
 
-/obj/machinery/smartfridge/secure/medbay/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/secure/medbay/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/reagent_containers/glass/))
-		return 1
+		return TRUE
 	if(istype(O,/obj/item/storage/pill_bottle/))
-		return 1
+		return TRUE
 	if(istype(O,/obj/item/reagent_containers/pill/))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 
 /*******************
@@ -111,21 +125,21 @@
 	icon_on = "smartfridge_virology"
 	icon_off = "smartfridge_virology-off"
 
-/obj/machinery/smartfridge/secure/virology/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/secure/virology/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/reagent_containers/glass/beaker/vial/))
-		return 1
+		return TRUE
 	if(istype(O,/obj/item/virusdish/))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 /obj/machinery/smartfridge/chemistry
 	name = "\improper chemical SmartFridge"
 	desc = "A refrigerated storage unit for medicine and chemical storage."
 
-/obj/machinery/smartfridge/chemistry/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/chemistry/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/storage/pill_bottle) || (istype(O,/obj/item/reagent_containers) && !istype(O,/obj/item/reagent_containers/borghypo) && !istype(O,/obj/item/reagent_containers/syringe/blitzshell)))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 /obj/machinery/smartfridge/chemistry/virology
 	name = "\improper Smart Virus Storage"
@@ -146,9 +160,9 @@
 	var/icon_fill = "showcase-fill"
 	density = FALSE // For placing atop tables as a proper storage, like on the old layout. - Seb
 
-/obj/machinery/smartfridge/drinks/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/drinks/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/reagent_containers/glass) || istype(O,/obj/item/reagent_containers/food/drinks) || istype(O,/obj/item/reagent_containers/food/condiment))
-		return 1
+		return TRUE
 
 /obj/machinery/smartfridge/drinks/update_icon()
 	cut_overlays()
@@ -178,12 +192,12 @@
 	var/drying_power = 0.1 //should take a bit but. why make people wait a lifetime to DRY PLANTS
 	var/currently_drying = FALSE
 
-/obj/machinery/smartfridge/drying_rack/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/drying_rack/accept_check(obj/item/O as obj)
 	if(istype(O, /obj/item/reagent_containers/food/snacks/))
 		var/obj/item/reagent_containers/food/snacks/S = O
 		if (S.dried_type)
-			return 1
-	return 0
+			return TRUE
+	return FALSE
 
 /obj/machinery/smartfridge/drying_rack/Process()
 	..()
@@ -254,10 +268,10 @@
 	wires = null
 	return ..()
 
-/obj/machinery/smartfridge/proc/accept_check(var/obj/item/O as obj)
+/obj/machinery/smartfridge/proc/accept_check(obj/item/O as obj)
 	if(istype(O,/obj/item/reagent_containers/food/snacks/grown/) || istype(O,/obj/item/seeds/) || istype(O,/obj/item/reagent_containers/food/snacks/meat/) || istype(O,/obj/item/reagent_containers/food/snacks/egg/ || istype(O,/obj/item/reagent_containers/food/snacks/chickenbreast)))
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 
 /obj/machinery/smartfridge/Process()
@@ -296,7 +310,7 @@
 *   Item Adding
 ********************/
 
-/obj/machinery/smartfridge/attackby(var/obj/item/O as obj, var/mob/user as mob)
+/obj/machinery/smartfridge/attackby(obj/item/O as obj, mob/user as mob)
 	if(istype(O, /obj/item/tool/screwdriver))
 		panel_open = !panel_open
 		user.visible_message("[user] [panel_open ? "opens" : "closes"] the maintenance panel of \the [src].", "You [panel_open ? "open" : "close"] the maintenance panel of \the [src].")
@@ -316,7 +330,7 @@
 	if(accept_check(O))
 		if(contents.len >= max_n_of_items)
 			to_chat(user, SPAN_NOTICE("\The [src] is full."))
-			return 1
+			return TRUE
 		else
 			user.remove_from_mob(O)
 			O.forceMove(src)
@@ -332,7 +346,7 @@
 			if(accept_check(G))
 				if(contents.len >= max_n_of_items)
 					to_chat(user, SPAN_NOTICE("\The [src] is full."))
-					return 1
+					return TRUE
 				else
 					P.remove_from_storage(G,src)
 					plants_loaded++
@@ -347,14 +361,14 @@
 
 	else
 		to_chat(user, SPAN_NOTICE("\The [src] smartly refuses [O]."))
-		return 1
+		return TRUE
 
-/obj/machinery/smartfridge/secure/emag_act(var/remaining_charges, var/mob/user)
+/obj/machinery/smartfridge/secure/emag_act(remaining_charges, mob/user)
 	if(!emagged)
-		emagged = 1
+		emagged = TRUE
 		locked = -1
 		to_chat(user, "You short out the product lock on [src].")
-		return 1
+		return TRUE
 
 /obj/machinery/smartfridge/attack_hand(mob/user as mob)
 	if(stat & (NOPOWER|BROKEN))

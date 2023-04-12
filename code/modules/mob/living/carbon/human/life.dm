@@ -251,13 +251,9 @@
 	radiation = CLAMP(radiation,0,100)
 
 	if (radiation)
-		var/damage = 0
 		radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-		if(prob(25))
-			damage = 1
 
 		if (radiation > 50)
-			damage = 1
 			radiation -= 1 * RADIATION_SPEED_COEFFICIENT
 			if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT))
 				radiation -= 5 * RADIATION_SPEED_COEFFICIENT
@@ -274,7 +270,6 @@
 
 		if (radiation > 75)
 			radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-			damage = 3
 			if(prob(5))
 				take_overall_damage(0, 5 * RADIATION_SPEED_COEFFICIENT, used_weapon = "Radiation Burns")
 			if(prob(1))
@@ -282,14 +277,6 @@
 				var/obj/item/organ/external/E = pick(organs)
 				E.mutate()
 				emote("gasp")
-
-		if(damage)
-			damage *= species.radiation_mod
-			if(organs.len)
-				var/obj/item/organ/external/O = pick(organs)
-				O.take_damage(damage * RADIATION_SPEED_COEFFICIENT, TOX, silent = TRUE)
-				if(istype(O))
-					O.add_autopsy_data("Radiation Poisoning", damage)
 
 	/** breathing **/
 
@@ -476,46 +463,56 @@
 	breath.update_values()
 	return !failed_breath
 
+//this proc handles breathable gas temeperature
 /mob/living/carbon/human/proc/handle_temperature_effects(datum/gas_mixture/breath)
 	if(!species)
 		return
 	// Hot air hurts :( :(
-	if((breath.temperature < species.cold_level_1 || breath.temperature > species.heat_level_1) && !(COLD_RESISTANCE in mutations))
-		var/damage = 0
-		if(breath.temperature <= species.cold_level_1)
+	if((breath.temperature < species.lower_breath_t || breath.temperature > species.upper_breath_t) && !(COLD_RESISTANCE in mutations))
+		var/oof = 0
+		if(breath.temperature <= species.lower_breath_t)
 			if(prob(20))
-				to_chat(src, SPAN_DANGER("You feel your face freezing and icicles forming in your lungs!"))
+				to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
 
-			switch(breath.temperature)
-				if(species.cold_level_3 to species.cold_level_2)
-					damage = COLD_GAS_DAMAGE_LEVEL_3
-					frost += COLD_GAS_DAMAGE_LEVEL_3
-				if(species.cold_level_2 to species.cold_level_1)
-					damage = COLD_GAS_DAMAGE_LEVEL_2
-					frost += COLD_GAS_DAMAGE_LEVEL_2
-				else
-					damage = COLD_GAS_DAMAGE_LEVEL_1
-					frost += COLD_GAS_DAMAGE_LEVEL_1
+			if(breath.temperature <= (species.lower_breath_t - 40))
+				oof += COLD_GAS_DAMAGE_LEVEL_3
+				frost += COLD_GAS_DAMAGE_LEVEL_3
+			else if(breath.temperature <= (species.lower_breath_t - 20))
+				oof += COLD_GAS_DAMAGE_LEVEL_2
+				frost += COLD_GAS_DAMAGE_LEVEL_2
+			else
+				oof += COLD_GAS_DAMAGE_LEVEL_1
+				frost += COLD_GAS_DAMAGE_LEVEL_1
 
-			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Artic Inhalation")
+            //apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Artic Inhalation") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_COLD
-		else if(breath.temperature >= species.heat_level_1)
+			if(oof >= 8)
+				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
+				if(L && istype(L))
+					L.take_damage(oof,BURN)
+					oof = 0
+
+		else if(breath.temperature >= species.upper_breath_t)
 			if(prob(20))
-				to_chat(src, SPAN_DANGER("You feel your face burning and a searing heat in your lungs!"))
+				to_chat(src, SPAN_DANGER("You feel a searing heat in your lungs!"))
 
-			switch(breath.temperature)
-				if(species.heat_level_1 to species.heat_level_2)
-					damage = HEAT_GAS_DAMAGE_LEVEL_1
-					frost -= HEAT_GAS_DAMAGE_LEVEL_1
-				if(species.heat_level_2 to species.heat_level_3)
-					damage = HEAT_GAS_DAMAGE_LEVEL_2
-					frost -= HEAT_GAS_DAMAGE_LEVEL_2
-				else
-					damage = HEAT_GAS_DAMAGE_LEVEL_3
-					frost -= HEAT_GAS_DAMAGE_LEVEL_3
+			if(breath.temperature >= (species.upper_breath_t - 40))
+				oof += HEAT_GAS_DAMAGE_LEVEL_3
+				frost -= HEAT_GAS_DAMAGE_LEVEL_3
+			else if(breath.temperature >= (species.upper_breath_t - 20))
+				oof += HEAT_GAS_DAMAGE_LEVEL_2
+				frost -= HEAT_GAS_DAMAGE_LEVEL_2
+			else
+				oof += HEAT_GAS_DAMAGE_LEVEL_1
+				frost -= HEAT_GAS_DAMAGE_LEVEL_1
 
-			apply_damage(damage, BURN, BP_HEAD, used_weapon = "Excessive Heat")
+			//apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Excessive Heat") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_HOT
+			if(oof >= 8)
+				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
+				if(L && istype(L))
+					L.take_damage(oof,BURN)
+					oof = 0
 
 		//breathing in hot/cold air also heats/cools you a bit
 		var/temp_adj = breath.temperature - bodytemperature
@@ -623,6 +620,20 @@
 					frost += COLD_DAMAGE_LEVEL_2
 				if(species.cold_level_2 to species.cold_level_1)
 					frost += COLD_DAMAGE_LEVEL_3
+			fire_alert = max(fire_alert, FIRE_ALERT_COLD)
+		else
+			var/burn_dam = 0
+			switch(bodytemperature)
+				if(species.cold_level_1 to species.cold_level_2)
+					burn_dam = COLD_DAMAGE_LEVEL_1
+					frost += COLD_DAMAGE_LEVEL_1
+				if(species.cold_level_2 to species.cold_level_3)
+					burn_dam = COLD_DAMAGE_LEVEL_2
+					frost += COLD_DAMAGE_LEVEL_2
+				if(species.cold_level_3 to -(INFINITY))
+					burn_dam = COLD_DAMAGE_LEVEL_3
+					frost += COLD_DAMAGE_LEVEL_3
+			take_overall_damage(burn=burn_dam, used_weapon = "Low Body Temperature")
 			fire_alert = max(fire_alert, FIRE_ALERT_COLD)
 
 	// Account for massive pressure differences.  Done by Polymorph
@@ -1151,7 +1162,32 @@
 /mob/living/carbon/human/rejuvenate()
 	sanity.setLevel(sanity.max_level)
 	restore_blood()
-	frost = 0
+	frost = 0 //Liberity edit
+
+	// If a limb was missing, regrow
+	if(LAZYLEN(organs) < 7)
+		var/list/tags_to_grow = list(BP_HEAD, BP_CHEST, BP_GROIN, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+		var/upper_body_nature
+
+		for(var/obj/item/organ/external/E in organs)
+			if(!E.is_stump())
+				tags_to_grow -= E.organ_tag
+				if(E.organ_tag == BP_CHEST)
+					upper_body_nature = E.nature
+			else
+				qdel(E)		// Will regrow
+
+		var/datum/preferences/user_pref = client ? client.prefs : null
+
+		for(var/tag in tags_to_grow)
+			// FBP limbs get replaced with makeshift if not defined by user or clientless
+			var/datum/body_modification/BM = user_pref ? user_pref.get_modification(tag) : (upper_body_nature == MODIFICATION_ORGANIC) ? new /datum/body_modification/none : new /datum/body_modification/limb/prosthesis/junktech
+			var/datum/organ_description/OD = species.has_limbs[tag]
+			if(BM.is_allowed(tag, user_pref, src))
+				BM.create_organ(src, OD, user_pref.modifications_colors[tag])
+			else
+				OD.create_organ(src)
+
 	..()
 
 /mob/living/carbon/human/handle_vision()

@@ -432,6 +432,18 @@ disabled
 	dropamt = 1
 	meteordrop = /obj/item/stack/ore/glass
 
+/obj/effect/meteor/dust/glass
+	name = "glass shard"
+	meteordrop = /obj/item/material/shard
+
+/obj/effect/meteor/dust/rods
+	name = "steel rod"
+	meteordrop = /obj/item/stack/rods
+
+/obj/effect/meteor/dust/metal
+	name = "steel wreck"
+	meteordrop = /obj/item/stack/material/steel
+
 //Medium-sized
 /obj/effect/meteor/medium
 	name = "meteor"

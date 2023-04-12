@@ -334,3 +334,24 @@
 	icon_state = "ballistic"
 	item_state = "ballistic"
 	prescription = 1
+
+//Fontaine Industries
+/obj/item/clothing/glasses/sunglasses/fontaine
+	name = "winter goggles"
+	desc = "A pair of standard winter goggles manufactured by Fontaine Logistics."
+	icon_state = "fontaine_goggles"
+	item_state = "fontaine_goggles"
+	darkness_view = -1
+	prescription = 1
+	flash_protection = FLASH_PROTECTION_MINOR
+	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/glasses/sunglasses/esquimal
+	name = "esquimal goggles"
+	desc = "A pair of specialized winter goggles, specialized for snowy weather. Manufactured by Fontaine Logistics."
+	icon_state = "esquimal_goggles"
+	item_state = "esquimal_goggles"
+	darkness_view = -1
+	prescription = 1
+	flash_protection = FLASH_PROTECTION_MINOR
+	obscuration = LIGHT_OBSCURATION
