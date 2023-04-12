@@ -74,9 +74,9 @@
 	icon_state = "player-black"
 	join_tag = /datum/job/janitor
 
-/datum/job/bouncer
-	title = "Bouncer"
-	flag = BOUNCER
+/datum/job/fixer
+	title = "Fixer"
+	flag = FIXER
 	department = DEPARTMENT_SERVICE
 	department_flag = SERVICE
 	faction = MAP_FACTION
@@ -84,7 +84,7 @@
 	spawn_positions = 2
 	supervisors = "the Casino Manager"
 	difficulty = "Easy."
-	alt_titles = list("Enforcer", "Hired Muscle")
+	alt_titles = list("Hired Muscle")
 	selection_color = "#dddddd"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	initial_balance = 750
@@ -107,10 +107,10 @@
 		Potentially take over bartending duties if a Bartender is not present."
 
 
-/obj/landmark/join/start/bouncer
-	name = "Bouncer"
+/obj/landmark/join/start/fixer
+	name = "Fixer"
 	icon_state = "player-grey"
-	join_tag = /datum/job/bouncer
+	join_tag = /datum/job/fixer
 
 /datum/job/clubworker
 	title = "Casino Worker"

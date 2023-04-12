@@ -307,7 +307,7 @@ var/list/rank_prefix = list(\
 	"Research Provost" = "Provost",\
 	"Casino Manager" = "Manager",\
 	"Field Shepherd" = "Shepherd",\
-	"Prime" = "Prime",\
+	"Oathpledge" = "Oathpledge",\
 	)
 
 /mob/living/carbon/human/proc/rank_prefix_name(name)
@@ -905,14 +905,9 @@ var/list/rank_prefix = list(\
 		reset_view(0)
 
 /mob/living/carbon/human/revive()
-
 	if(species && !(species.flags & NO_BLOOD))
 		vessel.add_reagent("blood",species.blood_volume-vessel.total_volume)
 		fixblood()
-
-	// Fix up all organs.
-	// This will ignore any prosthetics in the prefs currently.
-	rebuild_organs()
 
 	if(!client || !key) //Don't boot out anyone already in the mob.
 		for(var/obj/item/organ/internal/brain/H in world)

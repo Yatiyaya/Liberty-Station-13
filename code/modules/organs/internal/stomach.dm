@@ -30,9 +30,3 @@
 	icon_state = "endless_stomach"
 	organ_efficiency = list(OP_STOMACH = 150)
 	price_tag = 1150
-
-
-/obj/item/organ/internal/stomach/improved/exalt
-	name = "exalt stomach"
-	desc = "A bottomless pit for holding only the most refined of foods.\
-	Likely worth more on the black market."

@@ -159,13 +159,22 @@
 	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest
+	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_caves
+	name = "Frozen Forest Cave system"
 	dynamic_lighting = TRUE
+	allows_weather_of_snow = FALSE
 
 /area/liberty/dungeon/outside/frozen_forest_house
+	name = "Frozen Forest Ruined House"
 	dynamic_lighting = TRUE
+	allows_weather_of_snow = FALSE
+
+/area/liberty/dungeon/outside/frozen_forest_simil_base
+	name = "Frozen Forest Similacrum Robotics Mining Entrence"
+	allows_weather_of_snow = FALSE
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"

@@ -953,7 +953,7 @@
 /area/liberty/outside/forest/river_forest_dark)
 "mo" = (
 /obj/structure/table/onestar,
-/obj/item/computer_hardware/hard_drive/portable/design/surgery,
+/obj/item/computer_hardware/hard_drive/portable/design/medical/surgery/back_alley,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "mr" = (

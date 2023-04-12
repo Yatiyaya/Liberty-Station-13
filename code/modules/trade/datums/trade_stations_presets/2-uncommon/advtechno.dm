@@ -54,7 +54,6 @@
 	hidden_inventory = list(
 		"Silent Mods" = list(
 			/obj/item/tool_upgrade/augment/dampener = custom_good_amount_range(list(1, 3)),
-			/obj/item/tool_upgrade/refinement/vibcompensator = custom_good_amount_range(list(1, 2))
 		)
 	)
 	offer_types = list(

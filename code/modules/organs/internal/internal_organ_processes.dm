@@ -69,7 +69,7 @@
 
 	// Bad stuff
 	if(kidneys_efficiency < BROKEN_2_EFFICIENCY)
-		if(toxin_strength > 0)
+		if(toxin_strength > 0 && prob(10))
 			apply_damage(toxin_strength, TOX)	// If your kidneys aren't working, your body will start to take damage
 
 	if(toxin_damage > 0 && kidney)
@@ -89,7 +89,7 @@
 	if(liver_efficiency < BROKEN_2_EFFICIENCY)
 		if(alcohol_strength)
 			toxin_damage += 0.5 * max(2 - (liver_efficiency * 0.01), 0) * alcohol_strength
-		if(toxin_strength > 0)
+		if(toxin_strength > 0  && prob(10))
 			apply_damage(toxin_strength, TOX)	// If your liver isn't working, your body will start to take damage
 
 	if(toxin_damage > 0 && liver)
@@ -222,15 +222,6 @@
 			nutrition = 0
 		else
 			adjustNutrition(-(total_nutriment_req * (stomach_efficiency/100)))
-
-/* We dont have vore
-	if(stomach_efficiency <= 1)
-		for(var/mob/living/M in stomach_contents)
-			M.loc = loc
-			stomach_contents.Remove(M)
-			continue
-		ingested.trans_to_turf(get_turf(src))
-*/
 
 /mob/living/carbon/human/var/carrion_stored_chemicals = 0
 /mob/living/carbon/human/var/carrion_hunger = 0

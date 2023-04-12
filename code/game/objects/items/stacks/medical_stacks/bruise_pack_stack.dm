@@ -190,7 +190,7 @@
 /obj/item/stack/medical/bruise_pack/capsa
 	name = "CAPSA medical gauze"
 	singular_name = "CAPSA medical gauze"
-	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would. Hand-made, with love, by CAPSA Medical staff."
+	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would. Made, with love, by CAPSA Medical staff."
 	icon_state = "sr_brutepack"
 	preloaded_reagents = list("quickclot" = 5, "sterilizine" = 10)
 	fancy_icon = TRUE

@@ -1,8 +1,8 @@
 /obj/item/gun/projectile/shotgun/pump/hunter_crossbow
 	name = "bolt lance"
 	desc = "A modified crossbow powered by an internal battery device that rapidly winds up a hydraulic winch to deliver a devastating, superheated bolt shot. \
-	Hand-crafted by the local Hunting Lodge, it uses a design commonly found on Onkarth, the homeworld of the Sablekyne."
-	icon = 'icons/obj/guns/projectile/hunter_crossbow.dmi'
+			Hand-produced by Fontain Logistics this crossbow sports a few odd corporate markings. Outfitted commonly to trappers to avoid tainting meat with bullets."
+	icon = 'icons/obj/guns/projectile/old/hunter_crossbow.dmi'
 	icon_state = "hunter_crossbow"
 	item_state = "hunter_crossbow"
 	fire_sound = 'sound/weapons/guns/fire/hydra_crossbow_fire.ogg' // TODO: Decent THWOK noise.
@@ -41,6 +41,7 @@
 	. = ..()
 	update_icon()
 
+/*
 /obj/item/gun/projectile/shotgun/pump/hunter_crossbow_implanted
 	name = "'Shooting Star' implanted bolt lance"
 	desc = "A bolt lance modified to fit inside a prosthetic, this one is painted purple and appears to have an inscription that reads 'Shooting Star'. An effort by a prominent hunt master to be even more edgy."
@@ -80,3 +81,4 @@
 /obj/item/gun/projectile/shotgun/pump/hunter_crossbow_implanted/Initialize()
 	. = ..()
 	update_icon()
+*/

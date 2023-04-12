@@ -30,6 +30,17 @@
 		/obj/item/stock_parts/console_screen = 1
 	)
 
+/obj/item/circuitboard/autolathe_medfab
+	name = "circuit board (medical fabricator)"
+	build_path = /obj/machinery/autolathe/medfab
+	board_type = "machine"
+	origin_tech = list(TECH_ENGINEERING = 2, TECH_DATA = 2)
+	req_components = list(
+		/obj/item/stock_parts/matter_bin = 3,
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/console_screen = 1
+	)
+
 /obj/item/circuitboard/autolathe_industrial
 	build_name = "industrial autolathe"
 	build_path = /obj/machinery/autolathe/industrial

@@ -1,3 +1,4 @@
+/*
 /datum/category_group/setup_option_category/background/example
 	name = "Example"
 	category_item_type = /datum/category_item/setup_option/background/example
@@ -25,3 +26,4 @@
 /datum/category_item/setup_option/background/example/example/apply(mob/living/carbon/human/character)
   ..()
   character.add_language(LANGUAGE_LATIN)
+*/
