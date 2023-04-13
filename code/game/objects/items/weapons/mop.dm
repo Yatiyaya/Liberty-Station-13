@@ -6,6 +6,7 @@
 	name = "mop"
 	icon = 'icons/obj/janitor.dmi'
 	icon_state = "mop"
+	item_state = "mop"
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
 	throw_speed = 5
@@ -139,14 +140,10 @@
 	name = "articulated mop"
 	desc = "An Terra-Therma Union-modified mop. Sports a pistol-actuated mop head making it able to hold more cleaning suds and sweep faster. \
 	The handle is also telescopic allowing for easier storage."
-	icon = 'icons/obj/janitor.dmi'
 	icon_state = "engimop"
 	force = WEAPON_FORCE_WEAK+1
 	throwforce = WEAPON_FORCE_WEAK+1
-	throw_speed = 5
-	throw_range = 10
 	w_class = ITEM_SIZE_SMALL
-	attack_verb = list("mopped", "bashed", "bludgeoned", "whacked")
 	matter = list(MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 4, MATERIAL_STEEL = 4)
 	mopspeed  = 15
 	sweep_time = 4
