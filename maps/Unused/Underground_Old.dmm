@@ -58877,7 +58877,7 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/liberty/crew_quarters/fitness)
 "cPo" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /turf/simulated/floor/wood,
 /area/liberty/maintenance/undergroundfloor2south)
 "cPp" = (
@@ -69766,7 +69766,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/liberty/hallway/side/f2section3)
 "dox" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/carpet/gaycarpet,
 /area/liberty/maintenance/undergroundfloor2south)
@@ -69903,7 +69903,7 @@
 	icon_state = "wooden_chair";
 	tag = "icon-wooden_chair (WEST)"
 	},
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /turf/simulated/floor/carpet/gaycarpet,
 /area/liberty/maintenance/undergroundfloor2south)
 "doL" = (

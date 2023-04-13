@@ -309,7 +309,7 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 		set_dir(get_dir(src,targetted_mob))
 		for(var/turf/simulated/wall/obstacle in get_step(src, dir))
 			if(prob(35))
-				obstacle.dismantle_wall(1)
+				obstacle.dismantle_wall(1, no_product = obstacle.no_matter)
 		for(var/obj/machinery/obstacle in get_step(src, dir))
 			if(prob(65))
 				obstacle.Destroy()

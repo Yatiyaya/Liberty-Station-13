@@ -501,6 +501,14 @@
 	name = "frosted greenery"
 	icon_state = "grass_snow3"
 
+/turf/simulated/floor/snow/transition_snow_grass
+	name = "snowy grass"
+	icon_state = "snow_grass"
+
+/turf/simulated/floor/snow/transition_snow_desert
+	name = "snowy sand"
+	icon_state = "snow_desert"
+
 /turf/simulated/floor/snow/mount
 	name = "snow"
 	icon_state = "snowmound_1"
@@ -697,6 +705,10 @@
 /turf/simulated/floor/asteroid/grass/colonialbeach/corner
 	icon_state = "gbcorner"
 	initial_flooring = /decl/flooring/grass2/colonialbeach/corner
+
+/turf/simulated/floor/asteroid/grass/grass_desert
+	icon_state = "grass_desert"
+	initial_flooring = /decl/flooring/grass2
 
 /*Dirt*/
 

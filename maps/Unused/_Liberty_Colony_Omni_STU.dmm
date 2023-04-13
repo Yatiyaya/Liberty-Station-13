@@ -9064,7 +9064,7 @@
 /area/liberty/outside/pond)
 "bPm" = (
 /obj/structure/bed/chair/sofa/brown/right,
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -21521,7 +21521,7 @@
 	name = "Security Training"
 	})
 "elF" = (
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /obj/structure/bed/chair/comfy/brown,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
@@ -28640,7 +28640,6 @@
 "fCG" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/pouch/engineering_tools,
-/obj/item/storage/pouch/engineering_supply,
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/security/armory_blackshield)
@@ -31426,7 +31425,7 @@
 	},
 /area/liberty/maintenance/undergroundfloor1north)
 "geA" = (
-/obj/landmark/join/start/chaplain,
+/obj/landmark/join/start/oathpledge,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "geD" = (
@@ -39002,7 +39001,7 @@
 /area/liberty/engineering/engine_room)
 "hAv" = (
 /obj/structure/bed/chair/wood,
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "hAC" = (
@@ -48093,7 +48092,7 @@
 /turf/simulated/mineral,
 /area/colony)
 "jpI" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -86371,7 +86370,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "qLn" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/clownoffice)
 "qLp" = (

@@ -25,6 +25,9 @@
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
 	serial_type = "Car-Van"
 
+	wield_delay = 0.8 SECOND
+	wield_delay_factor = 0.2 // 20 vig for insta wield
+
 	gun_parts = list(/obj/item/part/gun/frame/duty = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 	init_firemodes = list(

@@ -68,8 +68,7 @@
 /obj/item/projectile/energy/declone
 	name = "declone"
 	icon_state = "declone"
-	nodamage = 1
-	damage_types = list(CLONE = 0)
+	damage_types = list(CLONE = 12)
 	irradiate = 40
 
 

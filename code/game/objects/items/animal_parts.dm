@@ -64,6 +64,7 @@
 	desc = "A hand of a primal render, severed and sickly green without blood flowing through it. Its deadly sharp claws could be useful, if you know how to weaponize it."
 	icon_state = "gecko_claw"
 	item_state = "gecko_claw"
+	price_tag = 2000
 
 /obj/item/animal_part/tahca_antler
 	name = "tahca antler"

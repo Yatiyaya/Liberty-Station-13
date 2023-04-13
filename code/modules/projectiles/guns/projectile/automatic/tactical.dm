@@ -17,11 +17,10 @@
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
 		)
-	can_dual = 1
-	damage_multiplier = 0.8			//Gets better when stock is unfolded
-	init_recoil = SMG_RECOIL(1)		//Gets better when stock is unfolded
+	damage_multiplier = 0.9			//Gets better when stock is unfolded
+	init_recoil = SMG_RECOIL(1.2)	//Gets better when stock is unfolded
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	serial_type = "INDEX"
+	serial_type = "LG"
 	folding_stock = TRUE //we can fold our stocks
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
 	gun_parts = list(/obj/item/part/gun/frame/tactical = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)

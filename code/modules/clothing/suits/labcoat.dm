@@ -61,14 +61,6 @@
 		rad = 0
 	)
 
-/obj/item/clothing/suit/storage/toggle/labcoat/science
-	name = "Phokorus Institute scientist labcoat"
-	desc = "A suit that protects against minor chemical spills. Has a purple stripe on the shoulder."
-	icon_state = "labcoat_tox_open"
-	icon_open = "labcoat_tox_open"
-	icon_closed = "labcoat_tox"
-	icon_drape = null
-
 /obj/item/clothing/suit/storage/toggle/labcoat/medspec
 	name = "CAPSA specialist's labcoat"
 	desc = "A suit that protects against minor chemical spills. This one has marks of security."

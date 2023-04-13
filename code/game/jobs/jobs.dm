@@ -47,7 +47,7 @@ var/const/SEVPRO			=(1<<3)
 
 var/const/CLUBMANAGER		=(1<<0)
 var/const/JANITOR			=(1<<1)
-var/const/BOUNCER			=(1<<2)
+var/const/FIXER				=(1<<2)
 var/const/CLUBWORKER		=(1<<3)
 var/const/SHEPHERD			=(1<<4)
 var/const/TRAPPER			=(1<<5)
@@ -55,10 +55,11 @@ var/const/SHIPBREAKER		=(1<<6)
 
 var/const/CHUCIV			=(1<<4)
 
-var/const/CHAPLAIN			=(1<<0)
-var/const/ACOLYTE			=(1<<1)
-var/const/ARTIST			=(1<<2)
-var/const/ASSISTANT			=(1<<3)
+var/const/OATHPLEDGE		=(1<<0)
+var/const/FORGEMASTER		=(1<<1)
+var/const/ENKINDLED			=(1<<2)
+var/const/OATHBOUND			=(1<<3)
+var/const/ASSISTANT			=(1<<4)
 
 var/const/ROBOUT			=(1<<5)
 

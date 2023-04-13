@@ -115,8 +115,6 @@
 		new /obj/item/storage/hcases/parts(src)
 	if(prob(5))
 		new /obj/item/storage/hcases/engi(src)
-	if(prob(1))
-		new /obj/item/storage/pouch/engineering_supply(src)
 	if(prob(40))
 		new /obj/item/clothing/head/hardhat(src)
 	new /obj/random/tool_upgrade(src)

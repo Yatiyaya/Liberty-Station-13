@@ -83,6 +83,7 @@
 	cost = 375
 
 	unlocks_designs = list(/datum/design/research/circuit/sleeper,
+							/datum/design/research/circuit/med_fab,
 							/datum/design/research/circuit/slime_compresser,
 							/datum/design/research/item/medical/compact_roller_bed)
 
@@ -180,7 +181,6 @@
 							/datum/design/research/item/medical/defibs,
 							/datum/design/research/item/scalpel_laser,
 							/datum/design/research/item/clothing/health,
-							/datum/design/research/item/bonegel,
 							)
 
 /datum/technology/improved_biotech

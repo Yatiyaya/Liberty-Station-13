@@ -20,7 +20,9 @@
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
 	serial_type = "LG"
 
-	wield_delay = 0 SECOND //god it's bad
+	wield_delay = 0.4 SECOND
+	wield_delay_factor = 0.4 // 40 vig
+
 	gun_parts = list(/obj/item/part/gun/frame/breaker = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/part/gun/frame/breaker

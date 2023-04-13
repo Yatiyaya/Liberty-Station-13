@@ -78,16 +78,16 @@
 	build_path = /obj/item/bluespace_harpoon
 	category = "Bluespace Telecoms"
 
-/datum/design/research/item/clothing/capsaarmorchest
+/datum/design/research/item/clothing/pirsarmorchest
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build."
-	build_path = /obj/item/clothing/suit/armor/vest/capsasuit
+	build_path = /obj/item/clothing/suit/armor/vest/pirssuit
 
-/datum/design/research/item/clothing/capsaarmorhead
+/datum/design/research/item/clothing/pirsarmorhead
 	name = "'Mark II' environmental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."
-	build_path = /obj/item/clothing/head/helmet/capsasuit
+	build_path = /obj/item/clothing/head/helmet/pirssuit
 
 /datum/design/research/item/clothing/paramedic_armor
 	name = "Paramedic armor"
@@ -407,11 +407,6 @@
 	name = "Gravity-Compensated Barrel"
 	build_path = /obj/item/tool_upgrade/refinement/compensatedbarrel
 	sort_string = "TAAAU"
-
-/datum/design/research/item/weapon/toolmod/vibcompensator
-	name = "Vibration Compensator"
-	build_path = /obj/item/tool_upgrade/refinement/vibcompensator
-	sort_string = "TAAAV"
 
 /datum/design/research/item/weapon/toolmod/cellmount
 	name = "Heavy Cell Mount"

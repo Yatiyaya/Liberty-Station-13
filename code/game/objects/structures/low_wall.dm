@@ -44,7 +44,7 @@
 /obj/structure/low_wall/onestar
 	name = "Similacrum low wall"
 	wall_color = "#FFFFFF"
-	icon_state = "similacrum"
+	icon_state = "greyson"
 
 //Churchlowwall
 /obj/structure/low_wall/church

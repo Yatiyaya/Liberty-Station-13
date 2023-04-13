@@ -307,25 +307,25 @@
     tipText = "The Phazon is a combat mech. It has the highest base movespeed, good armor, and can phase through anything thanks to stable bluespace technology."
 
 /tipsAndTricks/jobs/wall_obelisk
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "Around some parts of the colony their are wall obelisks; they run on biomatter, so it might be wise to check them and refill them from time to time."
 
 /tipsAndTricks/jobs/church_wine_anti_toxin
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "The Absolutism Cahors Wine can be drank to help combat toxin damage or injected to be a mild painkiller."
 
 /tipsAndTricks/jobs/best_dagger_ever
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "The absolutism ritual knife can be thrown, this is useful for embedding the knife into someone's back. If thrown into someone that is also a follower of Absolutism, it is less likely to embed."
 
 /tipsAndTricks/jobs/skyfall_timer
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "Scrap Beacon has a thirty minute delay before it can be used again."
 
 /tipsAndTricks/jobs/plants_n_meat
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "If you're ever in need of biomatter, you can always buy or trade for plants and meat with Hunters or Gardener."
 
 /tipsAndTricks/jobs/cleaning_carbine
-    jobs_list = list(/datum/job/chaplain, /datum/job/acolyte)
+    jobs_list = list(JOBS_CHURCH)
     tipText = "The cleansing carbine as the name suggests fires cleaning pellets that when hit something will make a small bit of slippery foam that cleans. This can be used both defensively as lasting slip to get away from bigger foes and to normally clean the station if theirs no janitor around."

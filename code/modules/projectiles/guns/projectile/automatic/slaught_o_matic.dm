@@ -1,6 +1,7 @@
 /obj/item/gun/projectile/automatic/slaught_o_matic
 	name = "\"Slaught-o-Matic\""
-	desc = "This disposable plastic handgun is mass-produced by H&S for civilian use. It often is used by street urchins, thugs, or terrorists on a budget. For what it's worth, it's not an awful handgun - but you only get one magazine before the gun locks up and becomes useless."
+	desc = "This disposable plastic handgun is mass-produced by Liberty Group for civilian use. It often is used by street urchins, thugs, or terrorists on a budget. Resulting in its requied serial numbers. \
+			For what it's worth, it's not an awful handgun - but you only get one magazine before the gun locks up and becomes useless. Reduce, reuse, recycle - but without the reuse."
 	icon = 'icons/obj/guns/projectile/slaught_o_matic.dmi'
 	icon_state = "slaught"
 	item_state = "slaught"
@@ -17,7 +18,7 @@
 	magazine_type = /obj/item/ammo_magazine/smg_35
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 9)
 	price_tag = 10
-	serial_type = "H&S"
+	serial_type = "LG"
 
 	gun_tags = list(GUN_PROJECTILE)
 

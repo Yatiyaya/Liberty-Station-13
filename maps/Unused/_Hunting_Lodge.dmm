@@ -163,10 +163,7 @@
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
-/obj/item/tool/fireaxe/woodsman,
-/obj/item/tool/fireaxe/woodsman,
-/turf/simulated/floor/wood/wild2,
-/area/liberty/outside/forest/hunting_lodge_dark)
+/turf/simulated/floor/wood/wild2)
 "aM" = (
 /obj/structure/table/marble,
 /obj/machinery/cooking_with_jane/grill,
@@ -2149,7 +2146,6 @@
 	rand_max = 50;
 	rand_min = 30
 	},
-/obj/item/tool/fireaxe/woodsman,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "px" = (

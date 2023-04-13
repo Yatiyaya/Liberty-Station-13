@@ -52,19 +52,3 @@
 /obj/item/organ/internal/kidney/prosthetic/left
 /obj/item/organ/internal/kidney/prosthetic/right
 	icon_state = "kidneys-prosthetic2"
-
-/obj/item/organ/internal/kidney/left/exalt
-	name = "Exalt kidney"
-	icon_state = "kidney_left"
-	desc = "A dense set of Artisinal kidneys. Works twice as well as a common peasant's kidney.\
-	Likely worth more on the black market."
-	price_tag = 700
-	organ_efficiency = list(OP_KIDNEYS = 150)
-
-/obj/item/organ/internal/kidney/right/exalt
-	name = "Exalt kidney"
-	icon_state = "kidney_right"
-	desc = "A dense set of Artisinal kidneys. Works twice as well as a common peasant's kidney.\
-	Likely worth more on the black market."
-	price_tag = 700
-	organ_efficiency = list(OP_KIDNEYS = 150)

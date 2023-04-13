@@ -5918,7 +5918,6 @@
 "bve" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/pouch/engineering_tools,
-/obj/item/storage/pouch/engineering_supply,
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/security/armory_blackshield)
@@ -6925,7 +6924,7 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 4
 	},
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "bIi" = (
@@ -34471,7 +34470,7 @@
 /area/liberty/maintenance/substation/bridge)
 "hZr" = (
 /obj/structure/bed/chair/wood,
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "hZt" = (
@@ -39512,7 +39511,7 @@
 	name = "Residential District Maintenance"
 	})
 "jig" = (
-/obj/landmark/join/start/chaplain,
+/obj/landmark/join/start/oathpledge,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "jij" = (
@@ -50118,7 +50117,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "lIp" = (
@@ -76454,7 +76453,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "rCa" = (
-/obj/landmark/join/start/artist,
+/obj/landmark/join/start/forgemaster,
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/clownoffice)
 "rCf" = (
@@ -85245,7 +85244,7 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
 	},
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 32
@@ -101802,7 +101801,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
 "xof" = (
-/obj/landmark/join/start/acolyte,
+/obj/landmark/join/start/oathbound,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/bioreactor)

@@ -33,9 +33,3 @@
 	name = "air sacs"
 	desc = "Lungs made for a plantoid species, works just as well as a normal set."
 	icon_state = "lungs_plant"
-
-/obj/item/organ/internal/lungs/long/exalt
-	name = "exalt lungs"
-	desc = "Augmented lungs for filtering out poor air, and the air of the poors.\
-	Likely worth more on the black market."
-	price_tag = 2250
