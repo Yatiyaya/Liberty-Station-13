@@ -180,7 +180,7 @@
 
 /obj/item/storage/pouch/tubular
 	name = "tubular pouch"
-	desc = "Can hold seven cylindrical and small items, including but not limiting to flares, glowsticks, syringes and even hatton tubes or rockets."
+	desc = "Can hold seven cylindrical and small items, including but not limiting to flares, glowsticks, syringes and even hatton tubes."
 	icon_state = "flare"
 	item_state = "flare"
 
