@@ -83,6 +83,7 @@
 	cost = 375
 
 	unlocks_designs = list(/datum/design/research/circuit/sleeper,
+							/datum/design/research/circuit/med_fab,
 							/datum/design/research/circuit/slime_compresser,
 							/datum/design/research/item/medical/compact_roller_bed)
 
@@ -180,7 +181,6 @@
 							/datum/design/research/item/medical/defibs,
 							/datum/design/research/item/scalpel_laser,
 							/datum/design/research/item/clothing/health,
-							/datum/design/research/item/bonegel,
 							)
 
 /datum/technology/improved_biotech
@@ -293,7 +293,7 @@
 
 /datum/technology/top_biotech
 	name = "Augmentations' Biotech"
-	desc = "Body augmentations in the way of Soteria-brand prosthesis and implantable omnitools."
+	desc = "Body augmentations in the way of CAPSA-brand prosthesis and implantable omnitools."
 	tech_type = RESEARCH_BIOTECH
 
 	x = 0.7
@@ -369,7 +369,7 @@
 
 /datum/technology/omnisurgery
 	name = "Omnitool Surgery Tool"
-	desc = "An all in one tool for surgery based on those that are found in legendary Greyson Positronic models."
+	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
 	tech_type = RESEARCH_BIOTECH
 
 	x = 0.85

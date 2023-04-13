@@ -1,6 +1,6 @@
 /obj/item/gun/energy/sst
-	name = "\"SST Abnegate\" handgun"
-	desc = "\"Soteria Surface Tension\" brand handgun. A cooperative project between Soteria Medical and Soteria Research, the Abnegate uses Greyson tech to internally synthesize soporific coated 9mm bullets. \
+	name = "\"ST Abnegate\" handgun"
+	desc = "\"Surface Tension\" brand handgun. A cooperative project between CAPSA Medical and Phokorus Institute Research, the Abnegate uses Similacrum tech to internally synthesize soporific coated 9mm bullets. \
 	Initially designed at the request of Lifeline Technicians for a proper way to sedate rowdy armored targets from a distance."
 	icon = 'icons/obj/guns/energy/abnegate.dmi'
 	icon_state = "abnegate"
@@ -21,8 +21,8 @@
 	damage_multiplier = 1.2
 	projectile_type=/obj/item/projectile/bullet/pistol_35/rubber/soporific
 	price_tag = 1750
-	serial_type = "SI"
-	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/greyson_master_catalyst = TRUE) // I can't believe I have to do this. Don't turn NL weapons into literal war crimes.
+	serial_type = "PI"
+	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE) // I can't believe I have to do this. Don't turn NL weapons into literal war crimes.
 
 /obj/item/gun/energy/sst/preloaded
 
@@ -32,8 +32,8 @@
 	update_icon()
 /*
 /obj/item/gun/energy/sst/formatbound
-	name = "\"SST Format Bound\" handgun"
-	desc = "\"Soteria Surface Tension\" brand heavy handgun. Further development on the cooperative project between Soteria Medical and Soteria Research known as Soteria Surface Tension. \
+	name = "\"ST Format Bound\" handgun"
+	desc = "\"Surface Tension\" brand heavy handgun. Further development on the cooperative project between CAPSA Medical and Phokorus Institute Research known as CAPSA Surface Tension. \
 	This heavy handgun fires a stronger bullet and carries more anesthetics, for the stubborn person that won't get out of your medical bay."
 	icon = 'icons/obj/guns/energy/format_bound.dmi'
 	icon_state = "format_bound"
@@ -53,9 +53,9 @@
 */
 
 /obj/item/gun/energy/sst/humility
-	name = "\"SST Humility\" shotgun"
-	desc = "\"Soteria Surface Tension\" brand semi-automatic shotgun. Larger threats demanded larger ordinance and Soteria responded to the internal need for such equipment. \
-	Its internal mechanism prints out soporific coated ammunition as it fires. The Humility has the firepower to down larger monstrous targets as well as stop anyone that may be posing a threat to Soteria Medical."
+	name = "\"ST Humility\" shotgun"
+	desc = "\"Surface Tension\" brand semi-automatic shotgun. Larger threats demanded larger ordinance and CAPSA responded to the internal need for such equipment. \
+	Its internal mechanism prints out soporific coated ammunition as it fires. The Humility has the firepower to down larger monstrous targets as well as stop anyone that may be posing a threat to CAPSA Medical."
 	icon = 'icons/obj/guns/energy/humility.dmi'
 	wielded_item_state = "_doble"
 	icon_state = "humility"
@@ -89,8 +89,8 @@
 	set_item_state(itemstring)
 /*
 /obj/item/gun/energy/sst/systemcost
-	name = "\"SST System Cost\" light machinegun"
-	desc = "\"Soteria Surface Tension\" brand light machinegun. The true answer to a horde of either monsters or rubberneckers in the medical bay. \
+	name = "\"System Cost\" light machinegun"
+	desc = "\"Surface Tension\" brand light machinegun. The true answer to a horde of either monsters or rubberneckers in the medical bay. \
 	Able to fire soporific coated bullets at a high rate of fire, the System Cost is a trigger-happy Lifeline Tech's dream come true."
 	icon = 'icons/obj/guns/energy/system_cost.dmi'
 	icon_state = "system_cost"

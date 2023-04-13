@@ -1,6 +1,6 @@
 /obj/machinery/autolathe/organ_fabricator
 	name = "Organ Fabricator"
-	desc = "Soteria machine for printing organs using biomass."
+	desc = "CAPSA machine for printing organs using biomass."
 	description_info = "Quick Guide to Organs:\n\n\
 						Print an organ scaffold\n\
 						Print an input, process, and output teratoma\n\
@@ -106,7 +106,7 @@
 			var/choice = alert("If you deconstruct this machine, the biomatter inside will be destroyed. Are you sure you want to continue?", "Deconstruction Warning", "Deconstruct", "Leave it alone")
 			if(choice != "Deconstruct" || starting_loc != user.loc)
 				return
-	
+
 	..()
 
 /obj/machinery/autolathe/organ_fabricator/on_deconstruction(obj/item/I, mob/user)

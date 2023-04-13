@@ -259,6 +259,17 @@
 /turf/simulated/wall/wood_old/New(var/newloc)
 	..(newloc, MATERIAL_WOOD)
 
+/turf/simulated/wall/ice
+	name = "Ice Block"
+	desc = "A large block of soild ice, melting it down or smashing it would prove rather easy but time consuming."
+	icon_state = "ice_wall" //Sprites by Albert7076#7476
+	icon_base_override = "ice_wall"
+	no_girder = TRUE
+	no_matter = TRUE
+	name_changes = FALSE
+	under_turf_setter = /turf/simulated/floor/beach/water/ice
+
+
 // Kind of wondering if this is going to bite me in the butt.
 /turf/simulated/wall/voxshuttle/New(var/newloc)
 	..(newloc, MATERIAL_VOXALLOY)
@@ -274,7 +285,7 @@
 	reinf_color_override = "#FFFFFF"
 
 /*
-	greyson positronic/Alliance walls, for use on derelict stuff
+	similacrum positronic/Alliance walls, for use on derelict stuff
 */
 /turf/simulated/wall/untinted/onestar
 	icon_state = "onestar_standard"

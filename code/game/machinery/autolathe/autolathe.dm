@@ -133,7 +133,6 @@
 
 	return data
 
-
 /obj/machinery/autolathe/nano_ui_data()
 	var/list/data = list()
 
@@ -247,6 +246,10 @@
 		return
 
 	if(default_part_replacement(I, user))
+		return
+
+	if(istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical))
+		to_chat(user, SPAN_DANGER("[src] isn't capable of replicating medical designs!"))
 		return
 
 	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
@@ -1026,18 +1029,18 @@
 	max_efficiency = 0.3
 	have_recycling = TRUE
 
-/obj/machinery/autolathe/greyson
-	name = "greyson autolathe"
+/obj/machinery/autolathe/similacrum
+	name = "similacrum autolathe"
 	desc = "It produces items using metal and glass."
-	icon_state = "greyson"
+	icon_state = "similacrum"
 	idle_power_usage = 200
 	active_power_usage = 10000
-	circuit = /obj/item/circuitboard/autolathe_greyson
+	circuit = /obj/item/circuitboard/autolathe_similacrum
 	speed = 4
 	storage_capacity = 240
 	have_recycling = TRUE
 
-/obj/machinery/autolathe/greyson/RefreshParts()
+/obj/machinery/autolathe/similacrum/RefreshParts()
 	..()
 	var/mb_rating = 0
 	var/mb_amount = 0

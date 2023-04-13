@@ -228,13 +228,7 @@
 
 /obj/item/organ/external/proc/make_nerves()
 	var/obj/item/organ/internal/nerve/nerve
-	if(nature == MODIFICATION_SUPERIOR)
-		if(organ_tag != BP_L_LEG && organ_tag != BP_R_LEG)
-			nerve = new /obj/item/organ/internal/nerve/sensitive_nerve/exalt
-		else
-			nerve = new /obj/item/organ/internal/nerve/sensitive_nerve/exalt_leg
-
-	else if(nature < MODIFICATION_SILICON)
+	if(nature < MODIFICATION_SILICON)
 		nerve = new /obj/item/organ/internal/nerve
 	else
 		nerve = new /obj/item/organ/internal/nerve/robotic
@@ -243,22 +237,16 @@
 
 /obj/item/organ/external/proc/make_muscles()
 	var/obj/item/organ/internal/muscle/muscle
-	if(nature == MODIFICATION_SUPERIOR)
-		muscle = new /obj/item/organ/internal/muscle/super_muscle/exalt
-	else if(nature < MODIFICATION_SILICON)
+	if(nature < MODIFICATION_SILICON)
 		muscle = new /obj/item/organ/internal/muscle
 	else
-		muscle = new /obj/item/organ/internal/muscle/robotic
-		muscle?.replaced(src)
 		muscle = new /obj/item/organ/internal/muscle/robotic
 
 	muscle?.replaced(src)
 
 /obj/item/organ/external/proc/make_blood_vessels()
 	var/obj/item/organ/internal/blood_vessel/blood_vessel
-	if(nature == MODIFICATION_SUPERIOR)
-		blood_vessel = new /obj/item/organ/internal/blood_vessel/extensive/exalt
-	else if(nature < MODIFICATION_SILICON)	//No robotic blood vesseles
+	if(nature < MODIFICATION_SILICON)	//No robotic blood vesseles
 		blood_vessel = new /obj/item/organ/internal/blood_vessel
 
 	blood_vessel?.replaced(src)

@@ -37,7 +37,7 @@
 /var/const/access_moebius = 5
 /datum/access/moebius
 	id = access_moebius
-	desc = "Soteria General"
+	desc = "CAPSA General"
 	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_morgue = 6
@@ -187,7 +187,7 @@
 /var/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
-	desc = "Soteria Research Overseer"
+	desc = "Phokorus Institute Research Overseer"
 	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_cargo = 31
@@ -247,7 +247,7 @@
 /var/const/access_cmo = 40
 /datum/access/cmo
 	id = access_cmo
-	desc = "Soteria Biolab Overseer"
+	desc = "CAPSA Biolab Overseer"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_merchant = 41
@@ -464,21 +464,6 @@
 	id = access_foreman
 	desc = "Foreman's Quarters"
 	region = ACCESS_REGION_PROSPECTOR
-
-/**************
-* Hunt Lodge *
-***************/
-/var/const/access_huntmaster = 80
-/datum/access/huntmaster
-	id = access_huntmaster
-	desc = "Hunt Master"
-	region = ACCESS_REGION_NONE
-
-/var/const/access_hunter = 81
-/datum/access/hunter
-	id = access_hunter
-	desc = "Hunter"
-	region = ACCESS_REGION_NONE
 
 /******************
 * Central Command *

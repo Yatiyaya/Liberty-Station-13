@@ -1,9 +1,9 @@
 // Admin only for now, big hammer, lots of damage, tanky as fuck.
 /mob/living/carbon/superior_animal/handmade/hammer
 	name = "Custom-made Hammer Drone"
-	desc = "Built from the Soteria robotics division's craftsmanship, and gathered designs of Greyson positronics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the Phokorus Institute division's craftsmanship, and gathered designs of Similacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	icon = 'icons/mob/custom_bot.dmi'
-	icon_state = "soteria_rockethammer_handmade"
+	icon_state = "pi_rockethammer_handmade"
 	health = 800
 	maxHealth = 800
 	melee_damage_lower = 70

@@ -19,6 +19,12 @@
 	price_tag = 200
 	var/empty = FALSE
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 /obj/item/storage/firstaid/regular
 	icon_state = "firstaid"
 
@@ -221,7 +227,7 @@
 	icon = 'icons/obj/storage/deferred.dmi'
 	icon_state = "combat_surgery_kit"
 	item_state = "combat_surgery_kit"
-	storage_slots = 11 // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than Soteria made ones.
+	storage_slots = 11 // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than CAPSA made ones.
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_PLASTIC = 12) // More slots
 	can_hold = list(
@@ -379,9 +385,9 @@
 		item_state = "[initial(item_state)]"
 	..()
 
-/obj/item/storage/firstaid/soteria
+/obj/item/storage/firstaid/capsa
 	name = "triage kit"
-	desc = "A specialized triage kit, outfitted for Soteria personnel only. Contains everything a Doctor would ever need in a case of emergency, in a pinch."
+	desc = "A specialized triage kit, outfitted for CAPSA personnel only. Contains everything a Doctor would ever need in a case of emergency, in a pinch."
 	icon_state = "triagekit"
 	item_state = "triagekit"
 	storage_slots = 10
@@ -403,7 +409,7 @@
 		/obj/item/bodybag/cryobag
 		)
 
-/obj/item/storage/firstaid/soteria/populate_contents()
+/obj/item/storage/firstaid/capsa/populate_contents()
 	if (empty) return
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
@@ -414,9 +420,9 @@
 	new /obj/item/reagent_containers/syringe/tricordrazine(src)
 	new /obj/item/device/scanner/health(src)
 
-/obj/item/storage/firstaid/soteria/large
+/obj/item/storage/firstaid/capsa/large
 	name = "reinforced triage kit"
-	desc = "A reinforced, specialized triage kit outfitted for Soteria personnel only. This one is larger in capacity thanks to Soteria ingenuity, and should help Paramedics carry everything they need for any emergency."
+	desc = "A reinforced, specialized triage kit outfitted for CAPSA personnel only. This one is larger in capacity thanks to CAPSA ingenuity, and should help Paramedics carry everything they need for any emergency."
 	icon_state = "rtk"
 	item_state = "rtk"
 	storage_slots = 12
@@ -435,7 +441,7 @@
 		/obj/item/bodybag/cryobag
 		)
 
-/obj/item/storage/firstaid/soteria/large/populate_contents()
+/obj/item/storage/firstaid/capsa/large/populate_contents()
 	if (empty) return
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
@@ -450,7 +456,7 @@
 
 /obj/item/storage/firstaid/blackshield
 	name = "corpsman's bulk-treatment kit"
-	desc = "A compact version of Soteria creation, this high-capacity CBT Kit allows a Corpsman to carry all the necessary tools for battlefield triage." //Yes, it's exactly what you're thinking.
+	desc = "A compact version of CAPSA creation, this high-capacity CBT Kit allows a Corpsman to carry all the necessary tools for battlefield triage." //Yes, it's exactly what you're thinking.
 	icon_state = "cbtk"
 	item_state = "cbtk"
 	storage_slots = 14 //Having to perform medicine in non-ideal situations, it's apt that they are able to carry more equipment around.

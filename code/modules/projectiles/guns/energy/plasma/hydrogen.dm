@@ -13,7 +13,7 @@ Securing and unsecuring the flask is a long and hard task, and a failure when un
 
 /obj/item/gun/hydrogen
 	name = "\improper \"Venatori\" hydrogen-plasma gun"
-	desc = "A volatile but powerful weapon that uses hydrogen flasks to fire destructive plasma bolts. The brainchild of Soteria Director Nakharan Mkne, meant to compete with and exceed capabilities of Absolutist \
+	desc = "A volatile but powerful weapon that uses hydrogen flasks to fire destructive plasma bolts. The brainchild of Phokorus Institute Director Nakharan Mkne, meant to compete with and exceed capabilities of Absolutist \
 	own plasma weapon designs, it succeeded. However, it did so by being extremely dangerous, requiring an intelligent and careful operator who can correctly manage the weapon's extreme heat generation over heating without being \
 	burnt to a crisp."
 	icon = 'icons/obj/guns/plasma/hydrogen.dmi'
@@ -44,7 +44,7 @@ Securing and unsecuring the flask is a long and hard task, and a failure when un
 	var/overheat = 100 // Max heat before overheating.
 	// Damage dealt when overheating
 	var/overheat_damage = 25 // Applied to the hand holding the gun.
-	serial_type = "SI"
+	serial_type = "PI"
 
 /obj/item/gun/hydrogen/Initialize(mapload = TRUE)
 	..()

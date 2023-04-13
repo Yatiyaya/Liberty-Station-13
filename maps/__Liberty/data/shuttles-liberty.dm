@@ -56,7 +56,7 @@
 /obj/machinery/computer/shuttle_control/multi/surface_transport
 	name = "surface transport shuttle console"
 	shuttle_tag = "Surface Transport Shuttle"
-	req_one_access = list(access_security, access_heads, access_huntmaster)
+	req_one_access = list(access_security, access_heads)
 	//circuit = /obj/item/electronics/circuitboard/shuttle/mining
 
 //Skipjack Code
@@ -213,7 +213,7 @@
 	autoset = TRUE
 
 /obj/effect/shuttle_landmark/rocinante_field_office
-	name = "Greyson Field Office Dock"
+	name = "Similacrum Field Office Dock"
 	landmark_tag = "nav_rocinante_graysonfield"
 	base_turf = /turf/simulated/floor/reinforced
 	autoset = TRUE

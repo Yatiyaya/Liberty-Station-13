@@ -21,9 +21,9 @@
 	serial_shown = FALSE
 
 /obj/item/gun/energy/floragun/si
-	name = "SI Prototype: floral somatoray"
+	name = "PI Prototype: floral somatoray"
 	icon = 'icons/obj/guns/energy/si_flora.dmi'
-	serial_type = "SI"
+	serial_type = "PI"
 	serial_shown = TRUE
 
 /obj/item/gun/energy/floragun/afterattack(obj/target, mob/user, adjacent_flag)

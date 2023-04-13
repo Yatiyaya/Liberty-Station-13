@@ -8,6 +8,7 @@
 	var/datum/core_module/module
 	var/remove_module = TRUE //if TRUE, module will removed on upgrade remove
 	var/mob/living/user
+	unacidable = 1
 
 /obj/item/coreimplant_upgrade/New()
 	..()

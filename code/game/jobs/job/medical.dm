@@ -33,7 +33,7 @@
 		STAT_COG = 25
 	)
 
-	perks = list(PERK_MEDICAL_EXPERT, PERK_ADVANCED_MEDICAL, PERK_SI_SCI, PERK_CHEMIST)
+	perks = list(PERK_MEDICAL_EXPERT, PERK_ADVANCED_MEDICAL, PERK_SCIENCE, PERK_CHEMIST)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,
@@ -41,11 +41,11 @@
 							 /datum/computer_file/program/chem_catalog,
 							 /datum/computer_file/program/reports)
 
-	description = "The Chief Biolab Overseer is the head of the medical branch of the Soteria Institute, preserving and improving lives.<br>\
+	description = "The Chief Biolab Overseer is the head of the medical branch of the CAPSA, preserving and improving lives.<br>\
 	Your main responsibility is to keep everyone alive, as is the objective of your department. Prioritize health over most other concerns. <br>\
 	A variety of medical staff work under your command. Although these roles are clear-cut compared to the research branch, direct them appropriately.<br>\
 	Of course, remember that you are a doctor yourself - feel free to help with less specialized activities to ease the burden.<br>\
-	The Medical wing also falls under the ownership of Soteria. You may use their resources - and they may use yours - as needed."
+	The Medical wing also falls under the ownership of CAPSA. You may use their resources - and they may use yours - as needed."
 
 	duties = "Direct the doctors under your command towards the bettering of all mankind.<br>\
 	Dispatch your paramedics to distress calls, and corpse recoveries as needed.<br>\
@@ -146,9 +146,9 @@
 
 	description = "Members of the recovery team are not men of science nor medicine, they are strictly in charge of enforcing the chief biolabs orders and sometimes the chief research overseer's orders.<br>\
 	Your primary role is that of an armed thug for medical. You make sure that medical remains safe by ensuring people don't trespass or steal items and remove those who shouldn't be there, by force if necessary.<br>\
-	Your secondary responsibility is that of an soteria enforcer. Actions that require in house enforcement such as aiding doctors and security with violent patients in medical, securing the virology lab during an outbreak, and aiding in the destruction of escape slimes or kudzu from science.<br>\
+	Your secondary responsibility is that of an CAPSA enforcer. Actions that require in house enforcement such as aiding doctors and security with violent patients in medical, securing the virology lab during an outbreak, and aiding in the destruction of escape slimes or kudzu from science.<br>\
 	Your third duty is to aid medical doctors and act as a paramedic in fixing patients and collecting patients, this can include retrieving chemicals, doing basic triage, and going out to recover injured patients.<br>\
-	You are fully licensed to enforce the will of the overseer and to protect the soteria, its staff, and your patients with your personal weapons and armor.<br>\
+	You are fully licensed to enforce the will of the overseer and to protect the CAPSA, its staff, and your patients with your personal weapons and armor.<br>\
 	It's worth noting that you function heavily as a nurse when not acting as muscle and treatment of patients should be priority, in particular when assisting doctors."
 
 	duties = "Act as a guard for medical, ensuring unneeded colonist leave and nothing is stolen.<br>\
@@ -171,7 +171,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	wage = WAGE_PROFESSIONAL
-	supervisors = "the Soteria Surgery Overseer"
+	supervisors = "the CAPSA Surgery Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
 	alt_titles = list("Psychiatrist")
@@ -197,7 +197,7 @@
 	In some ways you are a professional conversationalist. Despite knowing advanced therapy techniques, sometimes a mere chat can work wonders.<br>\
 	More eventful days may involve you having particularly unstable colonists sectioned, or interviewing criminals in coordination with Security.<br>\
 	Remember that patient confidentiality is highly important in your profession. Keep sensitive information between you and the patient.<br>\
-	Soteria psychs are also one of the most psionically adept members of the colony, with an innate understanding of how the mind works.<br>\
+	CAPSA psychs are also one of the most psionically adept members of the colony, with an innate understanding of how the mind works.<br>\
 	If you become a psion, you have a greater variety of beneficial powers which you can use to aid the colony."
 
 	duties = "Speak with anyone who desires help, no matter their rank or relation.<br>\

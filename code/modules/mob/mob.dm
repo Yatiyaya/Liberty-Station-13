@@ -1224,11 +1224,11 @@ mob/proc/yank_out_object()
 	data += {"
 		<table width=80%>
 			<th colspan=2>Perks</th>
-			<tr>[Plist.Join()]</tr>
+			<tr>[Plist.Join("</tr><tr>")]</tr>
 		</table>
 	"}
 
-	var/datum/browser/B = new(src, "StatsBrowser","[user == src ? "Your stats:" : "[name]'s stats"]", 1000, 400)
+	var/datum/browser/B = new(src, "StatsBrowser","[user == src ? "Your stats:" : "[name]'s stats"]", 1000, 345)
 	B.set_content(data)
 	B.set_window_options("can_minimize=0")
 	B.open()

@@ -30,8 +30,3 @@
 	price_tag = 150
 	organ_efficiency = list(OP_MUSCLE = 150)
 	specific_organ_size = 1.2
-
-/obj/item/organ/internal/muscle/super_muscle/exalt
-	name = "exalt muscle"
-	desc = "Used for carrying this colony. This muscle makes an Exalt stronger than normal.\
-	Likely worth more on the black market."

@@ -47,7 +47,7 @@
 	path = /obj/item/gun_upgrade/muzzle/pain_maker
 
 /datum/uplink_item/item/stealthy_weapons/dna_trigger
-	name = "SI \"DNA lock\" trigger"
+	name = "PI \"DNA lock\" trigger"
 	item_cost = 2 //low do to like being really really unuseful
 	path = /obj/item/gun_upgrade/trigger/dnalock
 

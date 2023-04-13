@@ -73,8 +73,8 @@
 	siemens_coefficient = 0.5
 
 /obj/item/clothing/shoes/reinforced/medical
-	name = "soteria reinforced shoes"
-	desc = "Slightly reinforced shoes for soteria medical personnel."
+	name = "CAPSA reinforced shoes"
+	desc = "Slightly reinforced shoes for CAPSA medical personnel."
 	icon_state = "medshoes"
 	item_state = "medshoes"
 
@@ -160,3 +160,10 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
+
+//Fontaine Industries
+/obj/item/clothing/shoes/jackboots/fontaine
+	name = "Fontaine snowboots"
+	desc = "A pair of standard-issue snowboots with a reinforced metal tip built into them. Branded by Fontaine Logistics."
+	icon_state = "sboots_fontaine"
+	item_state = "sboots_fontaine"

@@ -232,7 +232,7 @@
 /datum/reagent/drug/psi_juice
 	name = "Cerebrix"
 	id = "psi_juice"
-	description = "A rare chemical originally developed by the Soteria, this quasi-stimulant enhances the mind of a psion and restores their psi essence. However its highly addictive and highly \
+	description = "A rare chemical originally developed by the CAPSA, this quasi-stimulant enhances the mind of a psion and restores their psi essence. However its highly addictive and highly \
 	dangerous if overdosed. Useless to non-psions. Has a secondary effect when drank that causes the user to enhance their cognitive abilities."
 	taste_description = "ascension"
 	color = "#E700E7"
@@ -323,7 +323,7 @@
 	..()
 	M.add_chemical_effect(CE_PULSE, 1) //If you inject it into your blood
 	M.add_chemical_effect(CE_PAINKILLER, 5)
-	if(M.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(M.stats.getPerk(PERK_CUBAN_DELIGHT))
 		M.add_chemical_effect(CE_ANTITOX, 5)
 		M.heal_organ_damage(0.1, 0.1)
 		M.add_chemical_effect(CE_ONCOCIDAL, 0.5)	// STALKER reference
@@ -331,7 +331,7 @@
 /datum/reagent/drug/nicotine/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
 	..()
 	M.add_chemical_effect(CE_PAINKILLER, 5)
-	if(M.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(M.stats.getPerk(PERK_CUBAN_DELIGHT))
 		M.add_chemical_effect(CE_ANTITOX, 5)
 		M.heal_organ_damage(0.1, 0.1)
 
@@ -358,14 +358,14 @@
 	..()
 	M.add_chemical_effect(CE_PULSE, 1)
 	M.add_chemical_effect(CE_PAINKILLER, 10)
-	if(M.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(M.stats.getPerk(PERK_CUBAN_DELIGHT))
 		M.add_chemical_effect(CE_ANTITOX, 10)
 		M.heal_organ_damage(0.2, 0.2)
 
 /datum/reagent/drug/nicotineplus/affect_ingest(mob/living/carbon/M, alien, effect_multiplier) // If you smoke it normally...or drink it liquid
 	..()
 	M.add_chemical_effect(CE_PAINKILLER, 15)
-	if(M.stats.getPerk(PERK_CHAINGUN_SMOKER))
+	if(M.stats.getPerk(PERK_CUBAN_DELIGHT))
 		M.add_chemical_effect(CE_ANTITOX, 10)
 		M.heal_organ_damage(0.2, 0.2)
 

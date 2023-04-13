@@ -61,7 +61,7 @@
 		list(QUALITY_WELDING, 10, "time" = 60)
 	)
 
-// SI Sword Drone
+// PI Sword Drone
 /datum/craft_recipe/robotic/sword_frame
 	name = "Sword Drone Frame"
 	result = /obj/item/bot_part/sword_part/main_frame
@@ -73,7 +73,7 @@
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 90)
 	)
 
-// SI Mantis Drone
+// PI Mantis Drone
 /datum/craft_recipe/robotic/mantis_frame
 	name = "Mantis Drone Frame"
 	result = /obj/item/bot_part/mantis_part/main_frame
@@ -85,7 +85,7 @@
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 90)
 	)
 
-// SI Drone Limbs
+// PI Drone Limbs
 /datum/craft_recipe/robotic/head_frame
 	name = "Head Frame"
 	result = /obj/item/bot_part/head_frame
@@ -188,8 +188,8 @@
 		list(/obj/item/rig, 1, "time" = 20), // Any rig as base
 		list(/obj/item/clothing, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),
-		list(/obj/item/clothing/suit/armor/vest/soteriasuit, 1, "time" = 30),
-		list(/obj/item/clothing/head/helmet/soteriasuit, 1, "time" = 30),
+		list(/obj/item/clothing/suit/armor/vest/pirssuit, 1, "time" = 30),
+		list(/obj/item/clothing/head/helmet/pirssuit, 1, "time" = 30),
 		list(/obj/item/stock_parts/scanning_module/phasic, 1, "time" = 30),
 		list(/obj/item/robot_parts/robot_component/camera, 1, "time" = 30),
 		list(/obj/item/robot_parts/robot_component/diagnosis_unit, 1, "time" = 30),

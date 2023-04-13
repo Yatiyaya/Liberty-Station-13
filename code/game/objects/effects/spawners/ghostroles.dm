@@ -6,7 +6,7 @@
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/escapedprisoner
-	ghost_role_perks = list(PERK_FAST_FINGERS, PERK_QUIET_AS_MOUSE, PERK_TRUE_NAME)
+	ghost_role_perks = list(PERK_FAST_FINGERS, PERK_RAT, PERK_TRUE_NAME)
 	short_desc = "You're a prisoner, sentenced to hard work in one of Kriosan's labor camps, but it seems as \
 	though fate has other plans for you."
 	flavour_text = "Good. It seems as though your ship crashed. You remember that you were convicted of "
@@ -90,14 +90,14 @@
 		STAT_COG = 10
 	)
 
-/obj/effect/mob_spawn/human/si_medical_ert
+/obj/effect/mob_spawn/human/medical_ert
 	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in SI medical equipment."
+	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in medical equipment."
 	mob_name = "a human"
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
-	outfit = /decl/hierarchy/outfit/si_medical_ert
-	ghost_role_perks = list(PERK_MEDICAL_EXPERT, PERK_ADVANCED_MEDICAL, PERK_SI_SCI, PERK_CHEMIST, PERK_SURE_STEP, PERK_TRUE_NAME)
+	outfit = /decl/hierarchy/outfit/medical_ert
+	ghost_role_perks = list(PERK_MEDICAL_EXPERT, PERK_ADVANCED_MEDICAL, PERK_SCIENCE, PERK_CHEMIST, PERK_SURE_STEP, PERK_TRUE_NAME)
 	short_desc = "You are a Medical Emergency Personnel."
 	flavour_text = "Something has happend to the upper colony to warrent your deployment, you are a doctor first, save as many lives as possable with your healing gear not gun."
 	assignedrole = "Medical Emergency Personnel"
@@ -111,39 +111,19 @@
 		STAT_COG = 35
 	)
 
-/obj/effect/mob_spawn/human/marshal_ert
-	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be a Liberty Colonial Marshal"
-	mob_name = "a human"
-	icon = 'icons/obj/Cryogenic2.dmi'
-	icon_state = "sleeper_1"
-	outfit = /decl/hierarchy/outfit/marshal_ert
-	ghost_role_perks = list(PERK_ASS_OF_CONCRETE, PERK_BOLT_REFLECT, PERK_CODESPEAK, PERK_CHEM_CONTRABAND, PERK_TRUE_NAME)
-	short_desc = "You are a Marshal agent."
-	flavour_text = "Something has happend to the upper colony to warrant your deployment. Uphold the word of law and ensure peace is upkept in Liberty."
-	assignedrole = "Marshal Agent"
-	title = "Marshal Agent"
-	stat_modifiers = list(
-		STAT_ROB = 50,
-		STAT_TGH = 45,
-		STAT_BIO = 10,
-		STAT_MEC = 5,
-		STAT_VIG = 45,
-		STAT_COG = 10
-	)
 
 /obj/effect/mob_spawn/human/engi_ert
 	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in advanced Guild equipment."
+	desc = "An sleeper, with an unconscious body inside. The occupant seems to be covered in advanced engineering equipment."
 	mob_name = "a human"
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/engi_ert
 	ghost_role_perks = list(PERK_INSPIRATION, PERK_HANDYMAN, PERK_SURE_STEP, PERK_TRUE_NAME)
-	short_desc = "You are a Medical Emergency Personnel."
+	short_desc = "You are a Engineering Emergency Personnel."
 	flavour_text = "Something has happend to the upper colony to warrent your deployment, you are a engineer first, repair the problem, law breakers are not in your juristiction."
-	assignedrole = "Guild Emergency Personnel"
-	title = "Guild Emergency Personnel"
+	assignedrole = "Engineering Emergency Personnel"
+	title = "Engineering Emergency Personnel"
 	stat_modifiers = list(
 		STAT_ROB = 35,
 		STAT_TGH = 35,
@@ -152,29 +132,6 @@
 		STAT_VIG = 5,
 		STAT_COG = 65
 	)
-
-/obj/effect/mob_spawn/human/lss_ert
-	name = "deployment sleeper"
-	desc = "An sleeper, with an unconscious body inside. The occupant seems to be an Auditor."
-	mob_name = "a human"
-	icon = 'icons/obj/Cryogenic2.dmi'
-	icon_state = "sleeper_1"
-	outfit = /decl/hierarchy/outfit/lss_ert
-	ghost_role_perks = list(PERK_SI_SCI, PERK_CHEMIST, PERK_SURE_STEP, PERK_TRUE_NAME)
-	short_desc = "You are an Auditor."
-	flavour_text = "The upper colony has done something thats not upto code, weather it be LSS, SI or any other department your job is to look into any matter that HC tells you about. \
-	Your not a cop, your not a medical personal your here to correct some papers not criminals."
-	assignedrole = "Guild Emergency Personnel"
-	title = "Guild Emergency Personnel"
-	stat_modifiers = list(
-		STAT_ROB = 45,
-		STAT_TGH = 45,
-		STAT_BIO = 45,
-		STAT_MEC = 45,
-		STAT_VIG = 45,
-		STAT_COG = 65
-	)
-
 
 /obj/effect/mob_spawn/human/kriosan_trooper
 	name = "deployment sleeper"
@@ -196,4 +153,3 @@
 		STAT_VIG = 46,
 		STAT_COG = 18
 	)
-

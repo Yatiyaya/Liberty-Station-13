@@ -1,6 +1,6 @@
 /datum/trade_station/botany
 	name_pool = list(
-		"SI TV \'Arbor\'" = "SI Trade Vessel \'Arbor\': Connection with the SI botanical research network established."
+		"PI TV \'Arbor\'" = "PI Trade Vessel \'Arbor\': Connection with the PI botanical research network established."
 	)
 	icon_states = list("moe_capital", "ship")
 	uid = "botany"

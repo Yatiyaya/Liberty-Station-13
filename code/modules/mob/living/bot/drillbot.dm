@@ -1,11 +1,11 @@
 /mob/living/bot/miningonestar
-	name = "Greyson Positronic Bot"
+	name = "Similacrum Robotics Bot"
 	desc = "It looks like a drillbot. An ancient drillbot"
 	health = 20
 	maxHealth = 20
 	icon = 'icons/mob/build_a_drone.dmi'
 	icon_state = "drone_os"
-	faction = "greyson"
+	faction = "similacrum"
 	layer = MOB_LAYER
 	var/obj/item/loot
 	var/attacktext = "drills"

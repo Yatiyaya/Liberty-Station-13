@@ -36,13 +36,13 @@
 
 
 /obj/item/gun/energy/plasma/mounted/blitz
-	name = "SDF PR \"Sprengen\""
+	name = "SRF PR \"Sprengen\""
 	desc = "A miniaturized plasma rifle, remounted for robotic use only. Also has the ablity to have a Master Unmaker integrated into it."
 	icon_state = "plasma_turret"
 	charge_meter = FALSE
-	serial_type = "GP"
+	serial_type = "SR"
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
-	allow_greyson_mods = TRUE
+	allow_similacrum_mods = TRUE
 
 /obj/item/gun/energy/plasma/destroyer
 	name = "\"Purger\" plasma rifle"
@@ -97,7 +97,7 @@
 
 /obj/item/gun/energy/plasma/super_heavy
 	name = "\"Ragefire\" Experimental Plasma Gun"
-	desc = "A \"Soteria\" brand experimental weapon that uses coolant to fire deadly plasma projectiles without needing to cool down between shots, however the gun is extremely unstable without cooling."
+	desc = "A Phokorus Institute brand experimental weapon that uses coolant to fire deadly plasma projectiles without needing to cool down between shots, however the gun is extremely unstable without cooling."
 	icon = 'icons/obj/guns/energy/plasma.dmi'
 	icon_state = "plasma"
 	fire_sound = 'sound/weapons/energy/lasercannonfire.ogg'
@@ -109,7 +109,7 @@
 	twohanded = FALSE
 	can_dual = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
-	serial_type = "SI"
+	serial_type = "PI"
 
 	var/explode_chance // the % of chance the gun has to explode each time it is fired without coolant. It is random between each gun.
 	var/explode_chance_min = 5 // The mininum of explode_chance

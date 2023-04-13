@@ -1,224 +1,383 @@
 //As a general rule, all origin backgrounds should have sum of +0 of stat values
 
 
-//Race/Ethnicity is a subclass of each race and should be locked to their specific race category. Race bonuses should compliment base racial bonuses.
-/datum/category_group/setup_option_category/background/ethnicity
-	name = "Ethnicity"
-	category_item_type = /datum/category_item/setup_option/background/ethnicity
+//Ancestry - Think of Ethnicity for Humans / Aliens that have it, where they originate from for anyone else.
+/datum/category_group/setup_option_category/background/ancestry
+	name = "Ancestry"
+	category_item_type = /datum/category_item/setup_option/background/ancestry
 
-/datum/category_item/setup_option/background/ethnicity
+/datum/category_item/setup_option/background/ancestry
 
 
-//Homeworlds are where a character is from and includes racial and expanded homeworlds. Homeworlds apart of the federation should be restricted to humans and their respective natives.
-/datum/category_group/setup_option_category/background/homeworld
-	name = "Homeworld"
-	category_item_type = /datum/category_item/setup_option/background/homeworld
+//Habits - A quirk of sorts your character has, so say incessant smoker or just really likes eating veggies
+/datum/category_group/setup_option_category/background/habit
+	name = "Habit"
+	category_item_type = /datum/category_item/setup_option/background/habit
 
+/datum/category_item/setup_option/background/habit
+
+
+//Paths represent former and current careers, showing the adjustment to skills based on years of work in a field.
+/datum/category_group/setup_option_category/background/path
+	name = "Path"
+	category_item_type = /datum/category_item/setup_option/background/path
+
+/datum/category_item/setup_option/background/path
+
+
+//Thoughts represent psychological profile of your character, what kind of thought process would they go throught basically.
+/datum/category_group/setup_option_category/background/thoughts
+	name = "Thoughts"
+	category_item_type = /datum/category_item/setup_option/background/thoughts
+
+/datum/category_item/setup_option/background/thoughts
+
+
+
+/* Purely for record keeping nothing else, also because I deleted the Eris ones so I can just shove these here now, not decided if we keep them if not just delete if I forget, not to be used again - Lamasmaster
 /datum/category_item/setup_option/background/homeworld
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_KRIOSAN, FORM_CINDAR, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_FBP, FORM_UNBRANDED)
 
+/datum/category_item/setup_option/background/homeworld/amethyn
+	name = "Amethyn"
+	desc = "The great jewel of the frontier, Amethyn, the place you have lived formerly as a tribal (or perhaps currently) that contains all the wonder and mystery of the realm. It's \
+	natural splendor has given you an understanding of the potential green wealth on offer, but a world without written history is one of mystery. One that you may or may not know. As someone who \
+	has resided here for quite some time, you've grown accustomed to the dangers and strangeness of the world. While this hasn't quite given you any advantage, surviving in the wilds requires \
+	natural remedies, and as such you instinctively know your way around plants."
 
-//Careers represent former and current careers, showing the adjustment to skills based on years of work in a field.
-/datum/category_group/setup_option_category/background/career
-	name = "Career"
-	category_item_type = /datum/category_item/setup_option/background/career
-
-/datum/category_item/setup_option/background/career
-
-
-//Backgrounds are usually representations of childhoods or how a person grew up, not where. This ranges from being wealthy, poor, a refugee, or having specific influences.
-/datum/category_group/setup_option_category/background/bckgrnd
-	name = "Upbringing"
-	category_item_type = /datum/category_item/setup_option/background/bckgrnd
-
-
-/datum/category_item/setup_option/background/bckgrnd
-
-/*
-/datum/category_item/setup_option/background/origin/new_rome
-	name = "New Rome"
-	desc = "One of the first colonies founded by American settlers, New Rome was rich with biosphere and natural resources and served as Nanotrasen's headquarters when it was still an emerging power. As such, it holds the highest human population of any planet in the galaxy. \
-			Although the War ended before it was sieged, New Rome suffered an economic crisis following the fall of Nanotrasen and never recovered. \
-			Formerly a garden world, it is now dotted with hive cities, decaying ecologies, widespread poverty, and NeoTheology desperately trying to revive the ecosphere artificially with biomatter technology. \
-			On New Rome, one must make the choice: to remain free and die impoverished and starving, or join the cult of NeoTheology to survive with a stable job and a place to live."
+	restricted_to_species = list()
 
 	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = 5,
-		STAT_BIO = 10,
-		STAT_MEC = 5,
-		STAT_VIG = -10,
-		STAT_COG = -10
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/origin/new_rome/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_LATIN)
-
-
-/datum/category_item/setup_option/background/origin/shimatengoku
-	name = "Shimatengoku"
-	desc = "Founded by a Japanese megacorporation, Shimatengoku was - and still is - a high tech paradise. With 95% of its surface covered in seawater, its residents mostly live on islands, or drift along on gigantic oceanborne colonies. \
-			When the time of the Corporation War came, Shimatengoku made the wise decision to side with the Syndicate, and prospered immensely as a result. \
-			While there is a local government administration, the planet is mostly controlled by Frozen Star, an enormous company that is responsible for producing most of the military products found in Hanza. \
-			Frozen Star itself is owned by a family with ties to the Yakuza, organized crime syndicates originating from old Earth's Japan. Fittingly, is a cruelly efficient place."
+/datum/category_item/setup_option/background/homeworld/newdamascus
+	name = "New Damascus"
+	desc = "Once a bustling manufacturing world that was rich in oxygen and low in moisture, New Damascus is an arid world slowly bringing itself back from the brink of economic collapse. \
+	Originally boasting three resource rich moons, this world produced a large amount of ships, weapons, and other metallic goods for the Solarian Federation. Unfortunately the mines eventually \
+	ran dry and it left New Damascus in a state of stagnation with local rulers growing more draconian and desperate as they watched their reserves and their populations slowly drop. Since \
+	the bluespace crash however, New Damascus has seen a resurgence in it's forges with neighboring systems diverting resources to them due to their proximity. Today, New Damascus has tried to \
+	cultivate a reputation for openness and quality of life to draw back expats, however their outlying colonies and stations are still known for being extremely restrictive. Individuals from \
+	New Damascus are often diligent, resourceful, rough mannered, and seeking a better future."
 
 	stat_modifiers = list(
-		STAT_ROB = -6,
-		STAT_TGH = -7,
-		STAT_BIO = -7,
-		STAT_MEC = 10,
-		STAT_VIG = 10,
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 5,
+		STAT_BIO = -5,
+		STAT_MEC = 5,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/neapolis
+	name = "Neapolis"
+	desc = "With a reputation as a resort, this lush garden world has modeled itself as an escape for repressed artists, political exiles, and individuals who would largely be ostracized \
+	by most major powers. Neapolis is covered with endless plains of Vermillion grass, migratory forests, and deep violet colored oceans and it's marble white settlements have proven to be \
+	highly attractive destinations for tourists and vacationers, but the planet does have a number of drawbacks. The primary issue facing the residents of Neapolis is the lack of settle-able \
+	land with only a smattering of plateaus being safe enough for permanent settlements in the face of the ever transient forests. Fortunately the second issue- a lack of valuable ores \
+	or gasses, has so far been a boon for Neapolitians who have managed to evade major interest from their large sometimes hostile neighbors. Individuals from Neapolis are often \
+	idealistic, artistic, and sometimes a little naive. As a lush garden world that boasts a highly productive and often self reliance on growable food, those from Neapolis are often \
+	described as having a green thumb. Decades of living on a garden world have also made many of Neapolis obligate herbivores, preferring organic diets, but the lack of protein makes them \
+	weaker on average."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_KRIOSAN, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
+	perks = list(PERK_HERBIVORE)
+
+	stat_modifiers = list(
+		STAT_ROB = -5,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 5,
+		STAT_MEC = 0,
 		STAT_COG = 5
 	)
 
-/datum/category_item/setup_option/background/origin/shimatengoku/apply(mob/living/carbon/human/character)
-  ..()
-  character.add_language(LANGUAGE_NEOHONGO)
+/datum/category_item/setup_option/background/homeworld/aquafria
+	name = "Aqua Fria"
+	desc = "Tucked away in a heavily populated system, this large aquatic world has made a reputation for being a substantial food source and home to a number of research institutes. \
+	While neighboring worlds boast sprawling hive worlds and smog-filled industrial continents, Agua Fria has raging oceans, thousands of massive fishing trawlers, and less than a dozen \
+	star-ports scattered across rocky, wave battered islands. This has led to a number of local rivalries and power struggles as each of the star-ports harness their fleets of fishmongers to \
+	compete for market shares as they engage in a desperate contest to feed the massive population of their neighboring worlds. These conflicts are often economic, territorial, and electronic, \
+	but since the crash the massive ocean trawlers have begun arming themselves more. These conflicts are becoming increasingly frustrating for local researchers who are being \
+	treated with more and more hostility from both the fish mongers and their port masters. Individuals from Agua Fria are often skeptical of those outside their social circle, \
+	highly adept swimmers, and usually very business minded. Due to an intense need to keep food clean and healthy for consumption, many of those from Aqua Fria treat cleaning their work spaces \
+	and their equipment as second nature."
 
-
-/datum/category_item/setup_option/background/origin/hmss_destined
-	name = "HMSS \"Destined\""
-	desc = "A British colony ship that was one of those who failed to locate a habitable world before exhausting its fuel supply; however, unlike the others, the crew managed to survive by turning their ship into the largest station in Hanza controlled space. \
-			Plated in rusty metal, with high costs of living, a permanent space roach infestation and no natural ecology to speak of, the \"Destined\" can be aptly described as an industrial hell. \
-			While The Corporation War was rather merciful to it, and the station remained neutral throughout most of the conflict, in the end, it succumbed to Syndicate occupation. \
-			The \"Destined\" is widely known for its anachronistic Monarchical government and system of noble peerage, with most successful nobles controlling smaller stations near it and others bent on quelling the chaos within the Colony proper. \
-			They are also members of Asters Guild, and this whole station is considered major Guild territory."
+	perks = list(PERK_NEAT)
 
 	stat_modifiers = list(
-		STAT_ROB = 5,
+		STAT_ROB = 0,
 		STAT_TGH = 5,
-		STAT_BIO = -10,
-		STAT_MEC = 5,
-		STAT_VIG = 10,
-		STAT_COG = -10
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = -5,
+		STAT_COG = 5
 	)
 
-
-/datum/category_item/setup_option/background/origin/crozet
-	name = "Crozet"
-	desc = "A lifeless, unforgiving ice world, rich with rare minerals, life on Crozet is only possible underground. \
-			Originally founded by a French mining company, it was occupied later by exiled nobility from the HMSS \"Destined\". \
-			The exiles founded the Four Great Houses to defend the colony's sovereignty, as well as their right to work the local population to death in the mines. \
-			This lasted until Nanotrasen invaded with the help of one of the Houses, and later, Crozet was left under NeoTheology control under the terms of a peace treaty. \
-			The local population are prone to revolt after decades of mistreatment and generally want to be left alone, making them ripe for recruitment by the Founders."
-
-	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = 10,
-		STAT_BIO = -7,
-		STAT_MEC = -7,
-		STAT_VIG = 10,
-		STAT_COG = -6
-	)
-
-
-/datum/category_item/setup_option/background/origin/first_expeditionary_fleet
-	name = "First Expeditionary Fleet"
-	desc = "A collection of old and modified colony ships, FTL capable shipyards, mobile hydroponics, and an armada of military ships. \
-			The de facto Headquarters of the Ironhammer PMC, the armada can be deployed whenever or wherever is needed for a contract, or even evacuate to deep space if necessary. \
-			It moves from planet to planet in Hanza space, and is often used by larger, being used as a giant power projector over planetary governments. \
-			For the fleet to function, a gigantic amount of manpower is required, and the armada's ships tend to be as populous as small cities, with both civilians and military personnel. \
-			Life in the Fleet is rather dull and spartan most of the time, with deep traditions of asceticism rooted in the crew of every ship. \
-			Needless to say, every planet it visits experiences a large tourism boom, growth in consumerism, and every bar and whorehouse running out of vacancy in under a day."
+/datum/category_item/setup_option/background/homeworld/kurilskaya
+	name = "Kurilskaya"
+	desc = "Originally a small mining facility dug into the crust of a gas giant's moon, Kurilskaya has since been turned into a hive of scum and villainy. With a unique culture of crime \
+	and an overbearing prerogative of secrecy. The people of this rusting, dust filled facility are ruled by a kleptocracy council of ship captains, marine officers, and ore barons. The \
+	pathways and housing habs are often prone to tremors from mining operations, the landing bays are often turned into impromptu market bazaars, and the local restaurants often serve a \
+	variety of seafood which is gathered directly from the station's water filtration systems. Individuals from Kurilskaya are often cut throat, roguish, share a grim sense of humor, and \
+	are very secretive about where Kurilskaya is actually located. A benefit of living in a dangerous world is you knew how not to draw attention to yourself, taking care so often to keep yourself \
+	quiet that its become second nature to you now."
 
 	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = 5,
-		STAT_BIO = -15,
-		STAT_MEC = 5,
-		STAT_VIG = 15,
-		STAT_COG = -10
-	)
-
-
-/datum/category_item/setup_option/background/origin/end_point
-	name = "End Point"
-	desc = "A trinary system with complicated orbits and black hole located in a safe distance from all of the habitable planets in the system. \
-			One of the first colonies, because of how rich the planets are in resources, and their abundance - the system being composed of more than a hundred of large celestial bodies. \
-			It's also an extremely valuable place for scientists, due to its habitable planets, the black hole and rare materials. \
-			End Point was never controlled by a single power. \
-			Smaller colony ships, belonging to third-world countries, damaged ships or just exploration cruisers - they have all found their place here, guided by a black hole and the riches highlighted by it. \
-			Even before the war it was full of conflicts between local governments, pirates and corporations, and it just got worse afterwards. \
-			While it's formally under Hanza control now, the war resulted in a fall of many governments, thus the anarchy spreads, and patchwork states are being born and die every year. \
-			Nations are mixed in a spiral of endless conflict, all of the old Earth languages are present there, and any ideology and religion can be found here. \
-			This system is also known for Moebius HQ - a large station orbiting the End Point black hole."
-
-	stat_modifiers = list(
-		STAT_ROB = -9,
-		STAT_TGH = -8,
-		STAT_BIO = 10,
-		STAT_MEC = 10,
-		STAT_VIG = -8,
-		STAT_COG = 10
-	)
-
-
-/datum/category_item/setup_option/background/origin/nss_forecaster
-	name = "NSS \"Forecaster\""
-	desc = "Designed to serve as large, FTL capable mining platform by the first days of NanoTrasen. \
-			And it was used for that, until stars started coming back from Null Space. \
-			In order to salvage those wonders first, NanoTrasen has sent this platform, reworked to serve as a local forward operating base, and renamed it to Central Command. \
-			The war broke out, and without any support from the mainland, after relentless attacks from the Syndicate, and the destruction of many stations under CentCom's control, such as NSS 13 \"Exodus\", they surrendered to Syndicate. \
-			Now it's an independent station under Ironhammer control, that oversees the spread of Null Space artifacts, or at least is trying to. \
-			It's a place for grand deals to be made, friends to be sold, a place where people run from law and boring life,for a fresh start in Null Space. \
-			And - in most cases - die a horrible death in the end."
-
-	stat_modifiers = list(
-		STAT_ROB = 2,
-		STAT_TGH = 2,
-		STAT_BIO = -10,
-		STAT_MEC = 2,
-		STAT_VIG = 10,
+		STAT_ROB = 0,
+		STAT_TGH = 1,
+		STAT_VIG = 2,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
 		STAT_COG = 2
 	)
 
+/datum/category_item/setup_option/background/homeworld/thalatta
+	name = "Thalatta"
+	desc = "Translated from the ancient Greek term for 'The Sea,' Thalatta is an aptly named city-ship that is ever sailing through the great cosmic sea. Built centuries ago by a small sect of \
+	religious castaways, the ship has been making a slow journey through the Milky Way in search of a promised land for it's void-borne occupants. With no objection towards cybernetics, the \
+	thousands of occupants of the Thalatta have been slowly adopting the use of implants and robotics to both prolong their lifespans and better synergize with their ship. This has led many \
+	outsiders to speculate that the Thalatta and it's occupants will slowly begin mixing their religious beliefs and technology with scary and unimaginable ends. Ironically while the original \
+	beliefs of the Thalattans seem mundane and inoffensive, it may be that another conflict of belief between the Thalattans and their neighbors is inevitable. Individuals from Thalatta are \
+	tech savvy, reverent towards fellow believers, and skeptical of outside authority- especially if it's perceived as being Luddites or Atheists."
 
-/datum/category_item/setup_option/background/origin/eureka
-    name = "Eureka"
-    desc = "Once a paradise for the Australian colonists that lived on it, their neutrality during the corporate wars cost them this paradise. \
-            And thus did the Syndicate and Nanotrasen both bomb Eureka to hell, causing once verdant lands to become hellish deserts of nuclear proportions. \
-            As a side effect of this once the corporate wars ended, Eurekans are known to be eerily good trackers and pathfinders in these conditions and elsewhere, causing what's left of the Eurekan people to pay a tithe to Hansa and Neotheology both in the form of criminals. \
-            All in the name of saving what's left."
+	stat_modifiers = list(
+		STAT_ROB = -5,
+		STAT_TGH = 0,
+		STAT_VIG = 5,
+		STAT_BIO = 0,
+		STAT_MEC = 5,
+		STAT_COG = 0
+	)
 
-    stat_modifiers = list(
-        STAT_ROB = -5,
-        STAT_TGH = 5,
-        STAT_BIO = 10,
-        STAT_MEC = -10,
-        STAT_VIG = 10,
-        STAT_COG = -5
-    )
+/datum/category_item/setup_option/background/homeworld/madinatyunan
+	name = "Madinat Yunan"
+	desc = "Initially selected for habitation for its rich gasses and potential for being located on an upcoming trade lane, this gas giant had many of its economic dreams dashed, with \
+	the gaseous mixture of the atmosphere being poor for fuel production and the trade lane never materializing. The initial colonization efforts soon dried up, and the thousands of colonists \
+	that had been shipped to the low orbit habitats soon found themselves stranded without supplies and had only just begun requesting evacuation when the Bluespace Crash occurred. As contact \
+	was made with the planet again it was discovered that the habitats were destroyed or abandoned and yet the colonists had found a way to survive and thrive. Forming a symbiotic relationship \
+	with a bizarre species of titanic whale-like creature, the colonists had taken to hunting and slaughtering them for food only to discover they were sapient but incapable of communication. \
+	The whale-like creatures saw feeding the struggling colonists as a necessity and had offered their weakest for slaughter for reasons yet unknown. The grizzly almost sacrificial nature of it \
+	makes many outsiders few madinat's as monsters, but their focus on medical pursuits help belay some suspicions."
 
-/datum/category_item/setup_option/background/origin/streltsy
-	name = "Wandering Streltsy"
-	desc = "The Streltsy are known for their actions during the corporate wars on certain worlds such as Eureka and Predstraza. Serbians know them as valuable debt settlers and an escape from the conditions of their worlds, while more civilized worlds view them as despoilers and raiders. \
-			While both of these preconceptions are correct in their own right, a less known fact is that most Streltsy who've survived the corporate war are still suffering the consequences of their participation due to the decimation of their numbers during the war, leading to a miserable quality of life and forcing them to start recruitment from wartorn worlds to desperately replenish their numbers from before the war. \
-			Despite this, the survivors and their newer members are unparalleled in the arts of war, but lacking in the art of general technomancy."
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = -5,
+		STAT_BIO = 10,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/rankorin
+	name = "Rankorin"
+	desc = "Rankorin was originally classified as a death world due to its highly toxic atmosphere caused by a combination of natural flora and common storms of poisonous dusts clouds. \
+	However the discovery of immense diamonds deposits lured potential companies to establish colonies on the planet for a highly lucrative mining operation. Much to misfortune of the first \
+	people to settle there the toxic nature of the world proved most disastrous to kriosans, cindarites, and synthetic life forms despite their usual tolerance to such conditions. Through a quirk of biology the flora of \
+	Rankorin developed toxins that attacked the immune system and turned it against the body, as such, races normally suited for this world avoided it as much as possible where in the case of synthetics, the \
+	exceptional amount of pollution, radiation, dust storms, and electromagnetic pulses prevent synthetic individuals from surviving with any kind of ease. \
+	The remaining people who choose to settle here and work the mines adapted over several generations to thrive in bad atmosphere and have almost become dependent on it. \
+	This adaptation, coupled with working the diamond mines, have made them physically tough but comparably weak to people of other home-worlds."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	perks = list(PERK_CUBAN_DELIGHT)
+
+	stat_modifiers = list(
+		STAT_ROB = -5,
+		STAT_TGH = 10,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/sanperitor
+	name = "Sanperitor"
+	desc = "Sanperitor is a low atmosphere world closer to its systems star then most species are comfortable living with. The intense solar radiation of the planet has caused those who reside their to \
+	naturally adapt to the toxins present in every day life. Sanperitor itself first came to be colonized due to its larger than normal core and already lightly radioactive atmosphere that allowed \
+	for massive thermonuclear power generators to be built. The planet itself supplies a great number of worlds with super charged power cores, artificially crafted super matters, and \
+	technology used to produce star ship engines or planetary nuclear reactors. People from this planet tend to be physically tougher than most, cheerfully resolute and have naturally \
+	evolved to resist most forms of toxins."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	perks = list(PERK_BLOOD_OF_LEAD)
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 5,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/earthandmars
+	name = "Earth and Mars"
+	desc = "Earth and Mars are the political seat of power for the Solarian Federation and considered the wealthiest and most heavily protected planets in the known universe. \
+	People from earth and mars are almost universally wealthy and worldly, with access to broad educations and understandings in philosophies that help them at every step in life. \
+	The melting pot of cultures have made Sol born extremely knowledgeable of other cultures and varied even among themselves, anyone of any race could have once been born and bred in the \
+	Sol system. However, most are still commonly human or abhuman even with the numerous exceptions. As a result of the clean living, free of pollution, drugs, or heavily processed foods \
+	your body is healthy but can't handle as many drugs as other people and you find yourself getting addicted slightly easier."
+
+	perks = list(PERK_SOLBORN)
+
+	stat_modifiers = list(
+		STAT_ROB = 3,
+		STAT_TGH = 3,
+		STAT_VIG = 3,
+		STAT_BIO = 3,
+		STAT_MEC = 3,
+		STAT_COG = 3
+	)
+
+/datum/category_item/setup_option/background/homeworld/onkarth
+	name = "Onkarth"
+	desc = "The planet of Onkarth is the homeworld of the sablekyne, a desert planet of extreme conditions along the equator and northern \
+	fringes of civilization. The conditions on Onkarth are brutal with long blazingly hot days and freezing ice cold nights in even the hottest regions. The planet is also plagued with common \
+	and vicious animals that often attempt to make a meal of anything they find. Native fauna to the planet also have evolved with chitinous or bone-like growths that create a durable layer of \
+	natural armor that require either great strength to break or superior firepower. Due to the planets hostility few other than sablekyne choose to live on the planet, those that do are often \
+	family members to humans, abhumans, or naramads stationed there as part of the Solarian Federation planetary defense force. "
+
+	restricted_to_species = list(FORM_SABLEKYNE, FORM_HUMAN, FORM_EXALT_HUMAN, FORM_NARAMAD)
+
 	stat_modifiers = list(
 		STAT_ROB = 5,
+		STAT_TGH = 5,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/donbettyr
+	name = "Donbettyr"
+	desc = "The planet of Donbettyr is the homeworld of the akula, an old primarily water planet with two moons and few thousand separated areas of land making up a series of islands and archipelagos. \
+	Donbettyr suffers heavily from extreme storms and rainfalls with weather rarely being clear for more than a handful of days. Frequent tsunamis and volcanic activity also commonly appear  \
+	every few years and can have devastating impacts on those ill-prepared. Despite harsh weather however Donbettyr is a tropical paradise in many ways and contains large tropical biomes \
+	that make it an appealing place both to live and visit. Donbettyr is largely home to those well adapted to living in wet environments, with humans, abhumans, akula, and very rarely mar'qua \
+	choosing to live there. The harsh storms and weather, coupled with swimming as the most common leisure activity, toughens most who spend there lives here."
+
+	restricted_to_species = list(FORM_AKULA, FORM_HUMAN, FORM_EXALT_HUMAN, FORM_MARQUA, FORM_SABLEKYNE)
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
 		STAT_TGH = 10,
-		STAT_BIO = -10,
-		STAT_MEC = -5,
-		STAT_VIG = 10,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+
+/datum/category_item/setup_option/background/homeworld/marquahomeworlds
+	name = "Marqua Homeworlds"
+	desc = "The mar'qua homeworlds are a massive collection of varied star systems controlled by the mar'qua empire and its allies within the Solarian Federation. While the mar'qua homeworlds are \
+	largely self sufficient they follow a strict caste system and each world is largely similar to one another. Concepts of family, friendship, and leisure time are foreign ideas to  \
+	worlds controlled by the mar'qua empire and people growing up here may be relocated by the government to new areas or even new worlds far from family or friends at a moments notice. \
+	Mar'qua are practical above all else and as such employ the use of humans and cindarites greatly for their broader skills, allowing them to live within their borders, yet they refuse \
+	citizenship to any other race. Life in the homeworlds is one of monotony, but such living enhances the intelligence of denizens as toil and reassignment happen often enough to \
+	broaden your skill sets."
+
+	restricted_to_species = list(FORM_MARQUA, FORM_HUMAN, FORM_EXALT_HUMAN, FORM_CINDAR)
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 5,
+		STAT_MEC = 5,
+		STAT_COG = 5
+	)
+
+/datum/category_item/setup_option/background/homeworld/marquawanderer
+	name = "Wanderers Armada"
+	desc = "The Wanderer's Armada is a group of nearly a hundred repurposed ships, ranging from small corvettes to the largest Dreadnought that began the Armada. While the size of this fleet \
+	rivals certain Federation fleets, it focuses on being the wandering black market, visiting each system and recruiting those that wish to join them. While originally it was composed of \
+	Mar'Qua exiles, currently nearly every race in the known space has it's part in the Armada."
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 4,
+		STAT_VIG = 4,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 4
+	)
+
+/datum/category_item/setup_option/background/homeworld/norian
+	name = "Norian"
+	desc = "The world of Norian is home to the physically powerful race of the Naramadi. The naramad live amongst the ruins of another civilization long forgotten with the passage of time \
+	who's only remaining mark on the world is many dangerous ruins dotting the landscape. Many areas of Norian remain largely pristine and often treated as sacred locations by the local \
+	naramad tribes who often plunder the location at great risk for what they consider worthwhile rewards. Norian does boast a decent human, abhuman, and sablekyne population as those races of \
+	the Solarian Federation are uniquely capable of adapting to the harsh world. Unfortunately Norian has next to nothing in the way of proper education, even among the Solarian planetary defense forces. \
+	People from this planet tend to be the hardiest of individuals, but just as often they prove to be dull and lacking in attention to detail."
+
+	restricted_to_species = list(FORM_NARAMAD, FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA)
+
+	stat_modifiers = list(
+		STAT_ROB = 10,
+		STAT_TGH = 10,
+		STAT_VIG = -10,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
 		STAT_COG = -10
 	)
 
-	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/chaplain, /datum/job/merchant, /datum/job/cso, /datum/job/rp, /datum/job/ihc)
-	restricted_depts = IRONHAMMER | MEDICAL | SCIENCE | CHURCH | GUILD | CIVILIAN | SERVICE
+/datum/category_item/setup_option/background/homeworld/scavengerfleet
+	name = "Scavenger Fleet"
+	desc = "The scavenger fleets of the Opifex are a mix of massive ships miles long and smaller skip jacks housing clans of populi and dominus opifex. Scavenger fleets are always on the move \
+	and rarely stay in one place for long as they make prey of enemies of the Solarian Federation, pirates, or unaligned colonies just trying to make a living. Due to the opifex superiority  \
+	complexes they absolutely and resolutely refuse to allow anyone besides their own kind and synthetic life forms to even visit the various fleets they call home. Opifex fleets are strangely  \
+	lawful places despite their subsistence largely based upon raiding and every opifex is trained on maintaining their various ships and robots."
 
-/datum/category_item/setup_option/background/origin/ihmaids
-	name = "Ironhammer M.A.I.D.S Corps"
-	desc = "The Ironhammer Medical, Acquisition, Industrial Design and Security Corps are normally posted to construction work of particular importance to Ironhammer assets, such as fortifications or barracks for the garrisons on the way to the null sector, along with triage work for when an accident inevitably happens at those garrisons. \
-			At other times, they're assigned to Ironhammer security teams on exploratory missions into the null sector due to their prowess as construction specialists and medics."
+	restricted_to_species = list(FORM_OPIFEX)
 
 	stat_modifiers = list(
-		STAT_ROB = -10,
-		STAT_TGH = -5,
-		STAT_BIO = 10,
-		STAT_MEC = 10,
-		STAT_VIG = -10,
-		STAT_COG = 10
+		STAT_ROB = 0,
+		STAT_TGH = 0,
+		STAT_VIG = 0,
+		STAT_BIO = 0,
+		STAT_MEC = 5,
+		STAT_COG = 5
 	)
-	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/chaplain, /datum/job/merchant, /datum/job/cso, /datum/job/rp, /datum/job/chief_engineer)
-	restricted_depts = ENGINEERING | MEDICAL | SCIENCE | CHURCH | GUILD | CIVILIAN | SERVICE
-	*/
+
+/datum/category_item/setup_option/background/homeworld/cindar
+	name = "Cindar"
+	desc = "The homeworld of the cindarite, creatively named Cindar, is a hostile death world of radiation and heat where the inhabitants live deep underground in fortified rad proofed bunkers. \
+	Cindar is a place that few can survive, even the more toxin adapted Kriosan would perish after a few years. As such only the Cindarites call this place home. \
+	Life in the underground bunkers left little time for  much physical activity but leisure time spent studying, reading, or maintaining your home has give you a broad set of skills. \
+	The occasional dose of light radiation has also helped improve your toughness a small bit, so maybe Cindar isn't that bad."
+
+	restricted_to_species = list(FORM_CINDAR)
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 3,
+		STAT_VIG = 0,
+		STAT_BIO = 3,
+		STAT_MEC = 3,
+		STAT_COG = 3
+	)
+
+/datum/category_item/setup_option/background/homeworld/krios
+	name = "Krios"
+	desc = "Krios is a land steeped in conflict in the last few decades with the arrival of the Solarian Federation and a subsequent rebellion after the bluespace crash. \
+	Krios is now formerly owned by itself, having opportunistically thrown off Solarian rule, though much of their society is left scarred by the conflict and citizens now spend more time \
+	training and drilling themselves should the federation ever come back. Krios itself is still a toxic and hostile planet with poisonous fauna, as such few federation races choose to live there \
+	except for the cindarite, who due to their own world being even worse, thrive in the conditions of krios better than the natives."
+
+	restricted_to_species = list(FORM_KRIOSAN, FORM_CINDAR)
+
+	stat_modifiers = list(
+		STAT_ROB = 0,
+		STAT_TGH = 5,
+		STAT_VIG = 5,
+		STAT_BIO = 0,
+		STAT_MEC = 0,
+		STAT_COG = 0
+	)
+*/

@@ -5,7 +5,7 @@
 	name = "tree"
 	desc = "A tall tree with a bed of snow over its branches."
 	shadow_overlay = "shadow_overlay"
-	icon_state = "tree"
+	icon_state = "tree1"
 	pixel_x = -45
 	pixel_y = -16
 

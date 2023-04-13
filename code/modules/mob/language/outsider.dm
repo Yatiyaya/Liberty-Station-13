@@ -126,7 +126,7 @@
 	shorthand = "KO"
 	syllables = list("Frau", "Mann", "Waffe", "Schiff", "Bombe", "Explosion", "Grenze", "Strasse", "Halle", "Pistole", "Gewehr", "Uniform", "Kind", "Arzt", \
 					 "und", "ja", "nein", "vielleicht", "ob", "Hund", "Hundt", "katse", "Rüde", "Pleite", "Schreckschraube", "Klammer", "fahren","Raumschiff", \
- 					 "Serbien", "Eisenhammer", "Soteria", "Atmosphaere", "Generator", "Ingenieur", "Religion", "Ratte", "Priester", "Käfer", "Armee", "Regierung", "neu", \
+ 					 "Serbien", "Eisenhammer", "CAPSA", "Atmosphaere", "Generator", "Ingenieur", "Religion", "Ratte", "Priester", "Käfer", "Armee", "Regierung", "neu", \
  					 "fuß", "braver", "Hoffnung", "schauen", "sterben", "elektrisch", "Teufel", "kurieren", "Fleisch", "trinken", "Auftrag", "Hilfe", "Medizin", "zeppelin", \
  					 "verfallen", "Verfall", "National", "Laser", "Strom", "Gruppe", "Verteidigung", "verteidigen", "suche", "Auge", "Hand", "Bein", "Kopf", \
  					 "Flucht", "teufel", "Ritter", "Einfluss", "Einfall", "Muesli", "Wand", "Fenster", "Metall", "Holz", "Glas", "platz",  \
@@ -177,19 +177,6 @@
 	shorthand = "MQ"
 	space_chance = 20
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!") //Todo: Add actual stuff here. This is borrowed from Bay skrell because I'm unoriginal.
-
-//Mycus and Folken language. Lore: Both are native to the planet for centuries yet are not spare-faring. Both are based off fauna life and live 'in touch' with the planet. Therefor, common hivemind language through the plent.
-/datum/language/plant
-	name = LANGUAGE_PLANT
-	desc = "One of the few native languages of the local peoples of Amerith. The transmission of this language is unknown, but believed to be through either local vibrations, transmited through plant life or other anomolous means."
-	speech_verb = list("creaks")
-	ask_verb = list("rattles")
-	exclaim_verb = list("crackles")
-	flags = RESTRICTED | HIVEMIND
-	colour = "plant"
-	key = "p"
-	has_written_form = FALSE //Hiveminds don't get a written language.
-
 
 //Naramad language. full credit to Yanniert for all of the details herein contained.
 /datum/language/merp

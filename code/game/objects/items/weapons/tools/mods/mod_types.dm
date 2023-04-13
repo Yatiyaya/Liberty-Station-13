@@ -546,30 +546,6 @@
 	I.prefix = "gravity-compensated"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 
-/obj/item/tool_upgrade/refinement/vibcompensator
-	name = "vibration compensator"
-	desc = "A ground-breaking innovation that dampens the vibration of a tool by emitting sound waves in a frequency nobody can hear. It does not make any sense but neither will you by installing that on your tool. Alternatively, it could fit a gun grip to lessen recoil."
-	icon_state = "vibcompensator"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
-	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)
-	price_tag = 120
-
-/obj/item/tool_upgrade/refinement/vibcompensator/New()
-	..()
-	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
-	I.tool_upgrades = list(
-	UPGRADE_PRECISION = 15,
-	UPGRADE_ITEMFLAGPLUS = SILENT
-	)
-	I.weapon_upgrades = list(
-		GUN_UPGRADE_RECOIL = 0.5,
-		UPGRADE_BULK = 0.5,
-		GUN_UPGRADE_PEN_MULT = 0.7
-	)
-	I.gun_loc_tag = GUN_GRIP
-	I.required_qualities = list(QUALITY_CUTTING, QUALITY_WIRE_CUTTING, QUALITY_SCREW_DRIVING, QUALITY_WELDING ,QUALITY_PULSING, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_BONE_SETTING, QUALITY_LASER_CUTTING, QUALITY_BONE_GRAFTING)
-	I.prefix = "vibration-compensated"
-
 // 		AUGMENTS: MISCELLANEOUS AND UTILITY
 //------------------------------------------------
 
@@ -638,10 +614,10 @@
 	I.prefix = "expanded"
 	I.req_fuel_cell = REQ_FUEL
 
-//Greyson fuel mod
+//Similacrum fuel mod
 /obj/item/tool_upgrade/augment/holding_tank
 	name = "expanded fuel tank of holding"
-	desc = "Rare relic of Greyson uses the bluetech space to store additional 600 units of fuel at the cost of degradation."
+	desc = "Rare relic of Similacrum uses the bluetech space to store additional 600 units of fuel at the cost of degradation."
 	icon_state = "canister_holding"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 250
@@ -859,7 +835,7 @@
 
 /obj/item/tool_upgrade/augment/ai_tool
 	name = "nanointegrated AI"
-	desc = "A forgotten Greyson Positronic tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
+	desc = "A forgotten Similacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
 		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
@@ -889,11 +865,11 @@
 	)
 	I.prefix = "intelligent"
 	I.req_fuel_cell = REQ_CELL
-	I.greyson_moding = TRUE
+	I.similacrum_moding = TRUE
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior
 	name = "excelsior nanointegrated AI"
-	desc = "An attempt by the excelsior to copy the superior Greyson nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from excelsior teleporation technology.\
+	desc = "An attempt by the excelsior to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from excelsior teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)
@@ -923,7 +899,7 @@
 
 /obj/item/tool_upgrade/augment/repair_nano
 	name = "repair nano"
-	desc = "Very rare tool mod from Greyson powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
+	desc = "Very rare tool mod from Similacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
 	icon_state = "repair_nano"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 1)
 	price_tag = 325
@@ -935,7 +911,7 @@
 	UPGRADE_DEGRADATION_MULT = 0.01,
 	UPGRADE_HEALTH_THRESHOLD = 10
 	)
-	I.greyson_moding = TRUE
+	I.similacrum_moding = TRUE
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 	I.prefix = "self-repairing"
 

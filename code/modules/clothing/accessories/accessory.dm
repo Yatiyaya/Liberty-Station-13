@@ -335,14 +335,14 @@
 
 /obj/item/clothing/accessory/halfcape/cbo
 	name = "Chief Biolab Officers holo-mantle"
-	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the Soteria CBO. While sleek and sterile, it sadly lacks \
+	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the CAPSA CBO. While sleek and sterile, it sadly lacks \
 	protection against man-made horrors beyond our comprehension."
 	icon_state = "half_cbo"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/RP
 	name = "Chief Researcher Overseers holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Soteria RP. Black and purple, a color scheme and style to match the \
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Phokorus Institute RP. Black and purple, a color scheme and style to match the \
 	mad scientist in every Overseer."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER
@@ -977,6 +977,12 @@
 	icon_state = "ninja_scarf"
 	item_state = "ninja_scarf"
 	siemens_coefficient = 0
+
+/obj/item/clothing/accessory/scarf/fontaine
+	name = "fontaine winter scarf"
+	desc = "A winter scarf made in Fontaine Logistic's colors."
+	icon_state = "fontaine_scarf"
+	item_state = "fontaine_scarf"
 
 //Sprites by Michiyamenotehifunana and Occulist
 /obj/item/clothing/accessory/shemagh

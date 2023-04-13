@@ -18,7 +18,7 @@
 	penetration_multiplier = 3
 	init_recoil = HANDGUN_RECOIL(0.4)
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig

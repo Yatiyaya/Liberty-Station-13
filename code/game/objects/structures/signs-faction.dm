@@ -14,13 +14,13 @@
 	icon_state = "ironhammerold"
 
 /obj/structure/sign/faction/one_star
-	name = "Greyson Positronics"
-	desc = "A rugged banner depicting the all-seeing eye of Greyson Positronics, the fallen mega-corporation."
+	name = "Similacrum Robotics"
+	desc = "A rugged banner depicting the all-seeing eye of Similacrum Robotics, the fallen mega-corporation."
 	icon_state = "one_star"
 
 /obj/structure/sign/faction/one_star_old
-	name = "Greyson Positronics"
-	desc = "A torn banner depicting the all-seeing eye of Greyson Positronics, the fallen mega-corporation."
+	name = "Similacrum Robotics"
+	desc = "A torn banner depicting the all-seeing eye of Similacrum Robotics, the fallen mega-corporation."
 	icon_state = "one_star_old"
 
 /obj/structure/sign/faction/frozenstar
@@ -29,8 +29,8 @@
 	icon_state = "frozenstar"
 
 /obj/structure/sign/faction/moebius
-	name = "Soteria Laboratories"
-	desc = "A sign depicting the insignia of Soteria Institute, the pharmaceutical and research organisation."
+	name = "CAPSA Laboratories"
+	desc = "A sign depicting the insignia of CAPSA, the pharmaceutical."
 	icon_state = "moebius"
 
 /obj/structure/sign/faction/neotheology

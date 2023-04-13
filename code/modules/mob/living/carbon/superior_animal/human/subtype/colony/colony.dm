@@ -104,65 +104,7 @@
 	projectiletype = /obj/item/projectile/beam
 	light_range = 5
 	light_color = COLOR_LIGHTING_BLUE_BRIGHT
-/*
-/mob/living/carbon/superior_animal/human/colony_allie/lonestar_merc
-	name = "Lonestar Corporate Infantryman"
-	desc = "A private vatborn from lonestar, Well paid and Geared this veteran soldier is armed with a Laser Carbine ready to anihilate any threat to the Corporation, He Seems To be an Veteran Fighter."
-	icon_state = "LSCICarb"
-	icon_dead = "LSCICarb_dead"
-	rapid = 1
-	rapid_fire_shooting_amount = 2
-	drop_items = list(/obj/item/gun/energy/lasercore)
-	mag_type = /obj/item/cell/medium/high/depleted
-	projectilesound = 'sound/weapons/energy/Laser.ogg'
-	melee_damage_lower = 10
-	melee_damage_upper = 10
-	egun = TRUE
-	suited_for_space = TRUE
-	armor = list(melee = 50, bullet = 50, energy = 40, bomb = 30, bio = 100, rad = 50)
-	projectiletype = /obj/item/projectile/beam
-	light_range = 5
-	light_color = COLOR_LIGHTING_BLUE_BRIGHT
 
-//They are all waring space suits
-	breath_required_type = NONE
-	breath_poison_type = NONE
-	min_breath_required_type = 0
-	min_breath_poison_type = 0
-
-	min_air_pressure = 0
-	min_bodytemperature = 0
-
-/mob/living/carbon/superior_animal/human/colony_allie/lonestar_breacher_merc
-	name = "Lonestar Corporate Breacher"
-	desc = "A Private Vatborn Soldier from Lonestar Well paid and Geared This veteran soldier is armed with An Advanced Laser Handgun Set to kill while on his other hand he is wearing a charged Power Fist, He seems to be an Veteran Fighter."
-	icon_state = "LSCIRvMp"
-	icon_dead = "LSCIRvMp_dead"
-	rapid = 1
-	rapid_fire_shooting_amount = 2
-	drop_items = list(/obj/item/gun/energy, /obj/item/tool/power_fist)
-	mag_type = /obj/item/cell/medium/high/depleted
-	projectilesound = 'sound/weapons/energy/Laser.ogg'
-	melee_damage_lower = 40
-	melee_damage_upper = 40
-	mags_left = 0 //0+1
-	egun = TRUE
-	suited_for_space = TRUE
-	projectiletype = /obj/item/projectile/beam
-	armor = list(melee = 50, bullet = 50, energy = 40, bomb = 30, bio = 100, rad = 50)
-
-//They are all waring space suits
-	breath_required_type = NONE
-	breath_poison_type = NONE
-	min_breath_required_type = 0
-	min_breath_poison_type = 0
-
-	min_air_pressure = 0
-	min_bodytemperature = 0
-
-	light_range = 5
-	light_color = COLOR_LIGHTING_BLUE_BRIGHT
-*/
 /mob/living/carbon/superior_animal/human/colony_allie/handle_breath(datum/gas_mixture/breath) //we have are own air supplies
 	if(suited_for_space)
 		return

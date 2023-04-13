@@ -61,7 +61,7 @@
 /datum/computer_file/report/recipient/borging/generate_fields()
 	..()
 	var/list/xo_fields = list()
-	add_field(/datum/report_field/instruction, "Soteria Institute")
+	add_field(/datum/report_field/instruction, "CAPSA")
 	add_field(/datum/report_field/people/from_manifest, "Name (XO)")
 	add_field(/datum/report_field/people/from_manifest, "Name (subject)", required = 1)
 	add_field(/datum/report_field/date, "Date filed")
@@ -199,7 +199,7 @@
 	add_field(/datum/report_field/pencode_text, "Defense/Offense")
 	add_field(/datum/report_field/pencode_text, "Special Characteristic(s)")
 	add_field(/datum/report_field/pencode_text, "Classification")
-	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the foreman should fax the form to both the chief research overseer and the soteria owner, Nakharan Mkne , as well as keep a copy on file in their office alongside other mission reports.")
+	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the foreman should fax the form to both the chief research overseer and the CAPSA owner, Nakharan Mkne , as well as keep a copy on file in their office alongside other mission reports.")
 
 //NT reports, mostly for Liaison but can be used by any NT personnel.
 

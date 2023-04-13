@@ -385,7 +385,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
 
@@ -402,7 +402,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/storage/pill_bottle/njoy/red(src)
 	new /obj/item/storage/pill_bottle/njoy/blue(src)
 	new /obj/item/storage/pill_bottle/njoy/green(src)
@@ -422,7 +422,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/device/scanner/health(src)
 	//Has medicals items inside it to save on spawn storage.
-	new /obj/item/storage/firstaid/soteria(src)
+	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 	new /obj/item/gun/projectile/makarov/moebius/preloaded_cbo(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
@@ -435,7 +435,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/gunbox/traumatizedteam(src) // Moved the weapon selection to here
 	new /obj/item/cell/medium/moebius/high(src) // Keeping the cell as a "second mag" for the Abnegate
 	new /obj/item/clothing/suit/straight_jacket(src)
-	new /obj/item/storage/firstaid/soteria/large(src)
+	new /obj/item/storage/firstaid/capsa/large(src)
 	new /obj/item/gun/energy/sst/preloaded(src) // They're now nonlethal and justifies getting an upgrade from science as nobody will ever want a downgrade.
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
@@ -512,7 +512,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/gearbox/traumatizedteam
 	name = "Lifeline Technician's equipment kit"
-	desc = "A secure box containing the heavy duty protective gear of the Soteria Lifeline Technicians."
+	desc = "A secure box containing the heavy duty protective gear of the CAPSA Lifeline Technicians."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "secure"
 
@@ -537,7 +537,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/gunbox/traumatizedteam
 	name = "Lifeline Technician's self-defense guncase"
-	desc = "A secure box containing the weapon of choice for the Soteria Lifeline Technician."
+	desc = "A secure box containing the weapon of choice for the CAPSA Lifeline Technician."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "medbriefcase"
 
@@ -586,3 +586,84 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		else
 			stamped = FALSE
 
+/obj/item/gunbox/shipbreaker
+	name = "Shipbreaker primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/shipbreaker/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Broz - SMG"] = list(/obj/item/gun/projectile/automatic/broz,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35)
+		options["Trench - shotgun"] = list(/obj/item/gun/projectile/shotgun/pump,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Kalash - makeshift rifle"] = list(/obj/item/gun/projectile/automatic/ak47/makeshift, /obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75)
+		options["Energy Carbine - makeshift e-gun"] = list(/obj/item/gun/energy/laser/makeshift, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/trapper
+	name = "Trapper primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/trapper/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Lancer - assisted crossbow"] = list(/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,/obj/item/ammo_casing/crossbow_bolts/bulk,/obj/item/ammo_casing/crossbow_bolts/bulk)
+		options["Western - lever shotgun"] = list(/obj/item/gun/projectile/boltgun/lever/shotgun,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Rosefield - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/rosefield, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/gun_upgrade/scope/acog)
+		options["Energy Carbine - makeshift e-gun"] = list(/obj/item/gun/energy/laser/makeshift, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/shepherd
+	name = "Shepherd primary kit"
+	desc = "A secure box containing a selection of low-end weapons primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/shepherd/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Specialist - 9mm SMG"] = list(/obj/item/gun/projectile/automatic/specialist,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35)
+		options["Umbani - 10mm SMG"] = list(/obj/item/gun/projectile/automatic/umbani,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40)
+		options["Judge - automatic shotgun"] = list(/obj/item/gun/projectile/shotgun/judge,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
+		options["Big Game - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/gamer, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/gun_upgrade/scope/acog)
+		options["Cog - energy carbine"] = list(/obj/item/gun/energy/cog, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE

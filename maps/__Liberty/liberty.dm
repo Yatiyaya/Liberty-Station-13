@@ -6,6 +6,7 @@
 #include "data/shuttles-eris.dm"
 #include "data/reports.dm"
 
+//Currently used in testing stuff
 #include "map/_Liberty_Colony_New.dmm"
 //#include "_Liberty_Colony_Underground.dmm"
 //#include "_Liberty_Colony_Transition.dmm"

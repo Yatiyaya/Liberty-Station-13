@@ -27,13 +27,13 @@
 			hitsound = material.hitsound
 		if(reinf_material && reinf_material.explosion_resistance > explosion_resistance)
 			explosion_resistance = reinf_material.explosion_resistance
-
-		if(reinf_material)
-			name = "reinforced [material.display_name] wall"
-			desc = "It seems to be a section of hull reinforced with [reinf_material.display_name] and plated with [material.display_name]."
-		else
-			name = "[material.display_name] wall"
-			desc = "It seems to be a section of hull plated with [material.display_name]."
+		if(name_changes)
+			if(reinf_material)
+				name = "reinforced [material.display_name] wall"
+				desc = "It seems to be a section of hull reinforced with [reinf_material.display_name] and plated with [material.display_name]."
+			else
+				name = "[material.display_name] wall"
+				desc = "It seems to be a section of hull plated with [material.display_name]."
 
 		if(material.opacity > 0.5 && !opacity)
 			set_light(1)

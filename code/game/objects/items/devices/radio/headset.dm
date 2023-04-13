@@ -72,6 +72,14 @@
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/syndicate
 
+/obj/item/device/radio/headset/ert
+	name = "emergency responder's headset"
+	desc = "The headset of a person that is here to save the day. It has an antennae for ad-hoc feedback."
+	icon_state = "cent_headset"
+	item_state = "headset"
+	adhoc_fallback = TRUE
+	ks2type = /obj/item/device/encryptionkey/heads/captain
+
 /obj/item/device/radio/headset/binary
 	origin_tech = list(TECH_ILLEGAL = 3)
 	ks1type = /obj/item/device/encryptionkey/binary
@@ -304,17 +312,17 @@
 	ks2type = /obj/item/device/encryptionkey/headset_service
 
 /obj/item/device/radio/headset/headset_pro
-	name = "prospector radio headset"
-	desc = "A headset used by the prospector thugs. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "pro_headset"
+	name = "Fontaine radio headset"
+	desc = "A headset used by Fontaine Logistics. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "fontaine_headset"
 	item_state = "headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/headset_pro
 
 /obj/item/device/radio/headset/heads/foreman
-	name = "foreman radio headset"
-	desc = "A headset used by the krumpiest git. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "pro_headset"
+	name = "Shepherd radio headset"
+	desc = "A headset used by the Field Shepherd. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "fontaine_bowman"
 	item_state = "headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/heads/foreman

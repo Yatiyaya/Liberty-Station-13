@@ -81,14 +81,13 @@
 	can_dual = FALSE
 	max_upgrades = 4 // Deckard on steroids, let's not get out of hand
 	blacklist_upgrades = list( // Gun already has amazing recoil control, barrels that reduce recoil interfere with the sliding recoil control mechanism.
-							  /obj/item/tool_upgrade/refinement/vibcompensator = TRUE,
 							  /obj/item/tool_upgrade/reinforcement/guard = TRUE,
 							  /obj/item/tool_upgrade/productivity/ergonomic_grip = TRUE,
 							  /obj/item/tool_upgrade/refinement/ported_barrel = TRUE,)
 	zoom_factors = list()
 	gun_parts = list(/obj/item/part/gun/frame/mateba = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/kurtz = 1)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_CALIBRE_12MM)
-	serial_type = "SD GmbH"
+	serial_type = "SR GmbH"
 
 /obj/item/part/gun/frame/mateba
 	name = "Mateba frame"

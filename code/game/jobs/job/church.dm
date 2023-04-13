@@ -1,6 +1,6 @@
-/datum/job/chaplain
-	title = "Prime"
-	flag = CHAPLAIN
+/datum/job/oathpledge
+	title = "Oathpledge"
+	flag = OATHPLEDGE
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH | COMMAND
 	faction = MAP_FACTION
@@ -9,22 +9,19 @@
 	spawn_positions = 1
 	supervisors = "the Liberty Council"
 	difficulty = "Medium."
-	selection_color = "#ecd37d"
+	selection_color = "#caaa42"
 	ideal_character_age = 40
 	minimum_character_age = 25
 	playtimerequired = 1200
 	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_CLERGY
 	health_modifier = 10
-	access = list(
-		access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors
-	)
+	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
-
 
 	wage = WAGE_COMMAND //The church has deep pockets
 	department_account_access = TRUE
-	outfit_type = /decl/hierarchy/outfit/job/church/chaplain
+	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
 
 	stat_modifiers = list(
 		STAT_MEC = 30,
@@ -34,9 +31,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, /datum/perk/channeling
-		//, /datum/perk/chemist -Thanos Voice: "A small price to pay for salvation."
-	)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
@@ -59,28 +54,73 @@
 
 	setup_restricted = TRUE
 
-/obj/landmark/join/start/chaplain
-	name = "Prime"
+/obj/landmark/join/start/oathpledge
+	name = "Oathpledge"
 	icon_state = "player-black"
-	join_tag = /datum/job/chaplain
+	join_tag = /datum/job/oathpledge
 
-/datum/job/acolyte
-	title = "Vector"
-	flag = ACOLYTE
+/datum/job/forgemaster
+	title = "Forgemaster"
+	flag = FORGEMASTER
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH
 	faction = MAP_FACTION
-	total_positions = 4
-	spawn_positions = 4
-	supervisors = "the Prime"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Oathpledge"
+	difficulty = "Easy."
+	also_known_languages = list(LANGUAGE_LATIN = 100)
+	security_clearance = CLEARANCE_COMMON
+	selection_color = "#ecd37d"
+	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
+	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
+	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
+	stat_modifiers = list(
+		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
+		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+	)
+
+	//You need insperation to do your job.
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+
+
+	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
+	software_on_spawn = list(
+							 /datum/computer_file/program/scanner,
+							 /datum/computer_file/program/wordprocessor,
+							 /datum/computer_file/program/reports)
+
+	description = "The Artist serves as a versatile performance artist here to entertain the colony.<br>\
+	You may find your colleagues distracted by boring duties or senseless bickering, so work hard to bring them some real culture.<br>\
+	The CEO pays you a terrible retaining fee, so use your wits to sustain yourself - perhaps ask your audience for donations.<br>\
+	In addition you do not gain desires like other members of the colony, instead you spend your insight at your workbench to create expensive works of art worth selling."
+
+	duties = "Provide (family-friendly) entertainment to the crew with your varied talents.<br>\
+		Create and sell valuable works of art in your artist bench.<br>\
+		Try to be a successful rather than starving artist. The costume vendor and equipment in your cramped studio may prove useful."
+	setup_restricted = TRUE
+
+/obj/landmark/join/start/forgemaster
+	name = "Forgemaster"
+	icon_state = "player-grey"
+	join_tag = /datum/job/forgemaster
+
+/datum/job/enkindled
+	title = "Enkindled"
+	flag = ENKINDLED
+	department = DEPARTMENT_CHURCH
+	department_flag = CHURCH
+	faction = MAP_FACTION
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
 	wage = WAGE_PROFESSIONAL
-	outfit_type = /decl/hierarchy/outfit/job/church/acolyte
+	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_COMMON
-	alt_titles = list("Divisor","Factorial","Monomial","Lemniscate","Tessellate")
 	health_modifier = 5
 	stat_modifiers = list(
 	STAT_MEC = 25,
@@ -94,7 +134,7 @@
 		CRUCIFORM_PRIEST
 	)
 
-	perks = list(PERK_NEAT, PERK_GREENTHUMB, PERK_CHANNELING)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
 	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
@@ -106,54 +146,53 @@
 
 	setup_restricted = TRUE
 
-/obj/landmark/join/start/acolyte
-	name = "Vector"
+/obj/landmark/join/start/enkindled
+	name = "Enkindled"
 	icon_state = "player-black"
-	join_tag = /datum/job/acolyte
+	join_tag = /datum/job/enkindled
 
-
-/datum/job/artist
-	title = "Artist"
-	flag = ARTIST
+/datum/job/oathbound
+	title = "Oathbound"
+	flag = OATHBOUND
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH
 	faction = MAP_FACTION
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Chief Executive Officer"
-	difficulty = "Easy."
-	selection_color = "#dddddd"
-	access = list(access_theatre)
-	outfit_type = /decl/hierarchy/outfit/job/cargo/artist
-	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
-	alt_titles = list("Artist","Clown","Entertainer","Mime")
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Oathpledge"
+	difficulty = "Easy to Medium."
+	selection_color = "#ecd37d"
+	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
+	wage = WAGE_PROFESSIONAL
+	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
+	also_known_languages = list(LANGUAGE_LATIN = 100)
+	security_clearance = CLEARANCE_COMMON
+	health_modifier = 5
 	stat_modifiers = list(
-		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
-		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+	STAT_MEC = 25,
+	STAT_BIO = 10,
+	STAT_VIG = 10,
+	STAT_TGH = 5,
+	)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+
+	core_upgrades = list(
+		CRUCIFORM_PRIEST
 	)
 
-	//You need insperation to do your job.
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	perks = list(PERK_NEAT, PERK_CHANNELING)
 
+	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
+	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
+	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
 
-	perks = list(PERK_MARKET_PROF, PERK_ARTIST, /datum/perk/stalker)
-	software_on_spawn = list(///datum/computer_file/program/supply,
-							 ///datum/computer_file/program/deck_management,
-							 /datum/computer_file/program/scanner,
-							 /datum/computer_file/program/wordprocessor,
-							 /datum/computer_file/program/reports)
+	duties = "Operate the bioreactor and manage biomass for the church machines.<br>\
+		Maintain areas owned by the church, keeping the facilities functional and in good order.<br>\
+		Offer assistance to the faithful and non-faithful alike."
 
-	description = "The Artist serves as a versatile performance artist here to entertain the colony.<br>\
-	You may find your colleagues distracted by boring duties or senseless bickering, so work hard to bring them some real culture.<br>\
-	The CEO pays you a terrible retaining fee, so use your wits to sustain yourself - perhaps ask your audience for donations.<br>\
-	In addition you do not gain desires like other members of the colony, instead you spend your insight at your workbench to create expensive works of art worth selling."
+	setup_restricted = TRUE
 
-	duties = "Provide (family-friendly) entertainment to the crew with your varied talents.<br>\
-		Create and sell valuable works of art in your artist bench.<br>\
-		Try to be a successful rather than starving artist. The costume vendor and equipment in your cramped studio may prove useful."
-
-/obj/landmark/join/start/artist
-	name = "Artist"
-	icon_state = "player-grey"
-	join_tag = /datum/job/artist
-
+/obj/landmark/join/start/oathbound
+	name = "Oathbound"
+	icon_state = "player-black"
+	join_tag = /datum/job/oathbound

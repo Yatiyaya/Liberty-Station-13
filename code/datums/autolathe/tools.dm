@@ -3,7 +3,7 @@
 	build_path = /obj/item/tool/crowbar
 
 /datum/design/autolathe/tool/crowbar_onestar
-	name = "greyson positronic crowbar"
+	name = "similacrum positronic crowbar"
 	build_path = /obj/item/tool/crowbar/onestar
 
 /datum/design/autolathe/tool/multitool
@@ -15,7 +15,7 @@
 	build_path = /obj/item/tool/multitool/advanced
 
 /datum/design/autolathe/tool/multitool/multitool_onestar
-	name = "greyson positronic multitool"
+	name = "similacrum positronic multitool"
 	build_path = /obj/item/tool/multitool/advanced/onestar
 	materials = list(MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 2)
 
@@ -28,7 +28,7 @@
 	build_path = /obj/item/tool/weldingtool/advanced
 
 /datum/design/autolathe/tool/weldertool_onestar
-	name = "greyson positronic welding tool"
+	name = "similacrum positronic welding tool"
 	build_path = /obj/item/tool/weldingtool/onestar
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -54,7 +54,7 @@
 	materials = list(MATERIAL_PLASTEEL = 2)
 
 /datum/design/autolathe/tool/combi_driver_onestar
-	name = "greyson positronic combination drill"
+	name = "similacrum positronic combination drill"
 	build_path = /obj/item/tool/screwdriver/combi_driver/onestar
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -67,7 +67,7 @@
 	build_path = /obj/item/tool/wirecutters/pliers
 
 /datum/design/autolathe/tool/onestar_pliers
-	name = "greyson positronic pliers"
+	name = "similacrum positronic pliers"
 	build_path = /obj/item/tool/wirecutters/onestar_pliers
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -104,7 +104,7 @@
 	build_path = /obj/item/tool/hammer/powered_hammer
 
 /datum/design/autolathe/tool/hammer_onestar
-	name = "greyson sledgehammer"
+	name = "similacrum sledgehammer"
 	build_path = /obj/item/tool/hammer/powered_hammer/onestar_hammer
 	materials = list(MATERIAL_PLASTEEL = 6, MATERIAL_PLATINUM = 2)
 
@@ -121,12 +121,12 @@
 	build_path = /obj/item/tool/pickaxe
 
 /datum/design/autolathe/tool/jackhammer_onestar
-	name = "greyson positronic jackhammer"
+	name = "similacrum positronic jackhammer"
 	build_path = /obj/item/tool/pickaxe/jackhammer/onestar
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
 /datum/design/autolathe/tool/drill_onestar
-	name = "greyson positronic drill"
+	name = "similacrum positronic drill"
 	build_path = /obj/item/tool/pickaxe/drill/onestar
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -135,7 +135,7 @@
 	build_path = /obj/item/tool/pickaxe/excavation
 
 /datum/design/autolathe/tool/pickaxe_onestar
-	name = "greyson positronic pickaxe"
+	name = "similacrum positronic pickaxe"
 	build_path = /obj/item/tool/pickaxe/onestar
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -160,7 +160,7 @@
 	build_path = /obj/item/tool/shovel
 
 /datum/design/autolathe/tool/onestar_shovel
-	name = "greyson positronic shovel"
+	name = "similacrum positronic shovel"
 	build_path = /obj/item/tool/shovel/onestar_shovel
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -193,7 +193,7 @@
 	build_path = /obj/item/tool/saw
 
 /datum/design/autolathe/tool/onestar_saw
-	name = "greyson positronic saw"
+	name = "similacrum positronic saw"
 	build_path = /obj/item/tool/saw/onestar_saw
 	materials = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 1)
 
@@ -246,7 +246,7 @@
 	build_path = /obj/item/tool/crowbar/pneumatic
 
 /datum/design/autolathe/tool/omni_surgery_onestar
-	name = "greyson positronic medical multitool"
+	name = "similacrum positronic medical multitool"
 	build_path = /obj/item/tool/medmultitool
 	materials = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLATINUM = 1)
 

@@ -64,8 +64,8 @@
 			/obj/item/clothing/head/bio_hood/janitor = good_data("Janitor Biohazard Hood", list(3, 4), 800),
 			/obj/item/clothing/suit/bio_suit/security = good_data("Red Sec Biohazard Suit", list(3, 4), 800),
 			/obj/item/clothing/head/bio_hood/security = good_data("Red Sec Biohazard Hood", list(3, 4), 800),
-			/obj/item/clothing/suit/bio_suit/scientist = good_data("SI Biohazard Suit", list(3, 4), 800),
-			/obj/item/clothing/head/bio_hood/scientist = good_data("SI Biohazard Hood", list(3, 4), 800),
+			/obj/item/clothing/suit/bio_suit/scientist = good_data("PI Biohazard Suit", list(3, 4), 800),
+			/obj/item/clothing/head/bio_hood/scientist = good_data("PI Biohazard Hood", list(3, 4), 800),
 			/obj/item/clothing/suit/bio_suit/cmo = good_data("CMO Biohazard Suit", list(3, 4), 800),
 			/obj/item/clothing/head/bio_hood/cmo = good_data("CMO Biohazard Hood", list(3, 4), 800)
 		),

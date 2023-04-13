@@ -910,131 +910,18 @@
 		usr.update_action_buttons()
 		return 1
 
-//Soteria
-/obj/item/clothing/head/helmet/soteriasuit
+//PIRS
+/obj/item/clothing/head/helmet/pirssuit
 	name = "'Mark II' environmental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."
-	icon_state = "armor_engineering"
+	icon_state = "science_helmet"
+	item_state = "science_helmet"
 	armor_list = list(melee = 15, bullet = 15, energy = 25, bomb = 35, bio = 50, rad = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	matter = list(MATERIAL_STEEL = 20)
 	flash_protection = FLASH_PROTECTION_MINOR
 	max_upgrades = 2
-
-//Prospectors
-/obj/item/clothing/head/helmet/foreman
-	name = "salvaged helmet"
-	desc = "A helmet patched together by Prospector Salvagers, light and easy to breath in, \
-	the helmet has a few bells and whistles, a set of inbuilt goggles to keep dust and blood out of ones eyes, \
-	salvaged Greyson material coating it's outside it offer superb protection, and even a inbuilt radio. \
-	Tragically the scav in charge of the radio was unable to tune it or turn it on."
-	icon_state = "forehead_helmet"
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 30, MATERIAL_SILVER = 12) //worth stealing
-	price_tag = 1200
-	armor_list = list(
-		melee = 40,
-		bullet = 30,
-		energy = 30,
-		bomb = 65,
-		bio = 100,
-		rad = 0
-	)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
-	flash_protection = FLASH_PROTECTION_MODERATE
-	action_button_name = "Toggle Headlamp"
-	light_overlay = "technohelmet_light"
-	brightness_on = 5 //Slightly better do to the sear costs
-	obscuration = LIGHT_OBSCURATION
-
-/obj/item/clothing/head/helmet/foreman/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["salvaged helmet"] = "forehead_helmet"
-	options["Rust"] = "alt_scavenger_helmet"
-	options["Ranger"] = "quak" // Due to popular demand
-	options["Rust Radio"] = "Scavrust_helm"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your helmet's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/head/helmet/handmade/scavengerhelmet
-	name = "scavenger helmet"
-	desc = "A sturdy, handcrafted helmet. It's well balanced and sits low on your head, with padding on the inside."
-	icon_state = "scav_helmet"
-	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 0, rad = 0)
-	price_tag = 200
-	max_upgrades = 1 // Good baseline already
-
-/obj/item/clothing/head/helmet/handmade/scavengerhelmet/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["scavenger grey"] = "scav_helmet"
-	options["scavenger brown"] = "quak" // Quad damage!
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your helmet's style into [choice] colors.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/head/helmet/scav_heavy
-	name = "scavenger plate helmet"
-	desc = "A heavy helmet equipped with layers of metal and a reinforced glass visor, ideal for protection and headbutts. It even protects your eyes from welding flares!"
-	icon_state = "scav_heavy"
-	armor_list = list(melee = 40, bullet = 20, energy = 15, bomb = 35, bio = 0, rad = 0)
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	flash_protection = FLASH_PROTECTION_MODERATE
-	price_tag = 150
-
-/obj/item/clothing/head/helmet/scav_heavy/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["scavenger plate"] = "scav_heavy"
-	options["alt scavenger plate"] = "scav_heavy_alt" // Quad damage!
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your helmet's style into [choice] colors.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
 
 //////////////
 
@@ -1157,7 +1044,7 @@
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
-	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Greyson Positronic"
+	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Similacrum Robotics"
 	icon_state = "ablative"
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES

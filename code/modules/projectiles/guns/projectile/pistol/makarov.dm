@@ -62,11 +62,11 @@
 
 /obj/item/gun/projectile/makarov/moebius
 	name = " 9mm \"Malpractice\""
-	desc = "A small, easily concealable, but somewhat underpowered gun produced by SI as based off the \"Little Comet\" but ended up being a copy of the \"Clarissa\" with white paint. Uses 9mm rounds."
+	desc = "A small, easily concealable, but somewhat underpowered gun produced by PI as based off the \"Little Comet\" but ended up being a copy of the \"Clarissa\" with white paint. Uses 9mm rounds."
 	icon = 'icons/obj/guns/projectile/stinger.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	price_tag = 200
-	serial_type = "SI"
+	serial_type = "PI"
 	icon_state = "stingersop"
 	item_state = "stingersop"
 	gun_parts = list(/obj/item/stack/material/plastic = 4)

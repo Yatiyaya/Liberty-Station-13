@@ -1,3 +1,4 @@
+
 /datum/category_item/setup_option/core_implant/cruciform
 	name = "Vinculum Cruciform"
 	desc = "The implant given to every disciple of the Absolute. This one is a standard Vinculum design, having the base-line of a normal cruciform."
@@ -16,31 +17,31 @@
 		)
 	allowed_depts = CHURCH
 	allow_modifications = TRUE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CINDAR, FORM_CHURCHSYNTH)
+	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CINDAR, FORM_CHURCHSYNTH)
 
 /datum/category_item/setup_option/core_implant/psionic_tumor
 	name = "Psionic Organ"
-	desc = "An unusual organ implanted by the Soteria research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
+	desc = "An unusual organ implanted by the Phokorus Institute of research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
 	Those with this organ must maintain purity of their bodies, any implants, cruciforms, or synthetic limbs will be violently and painfully rejected while this organ exists in the body."
 	implant_organ_type = "psionic tumor"
 	restricted_jobs = list(
 		/datum/job/outsider //Psions are only available to colonist or allies.
 		)
 	allow_modifications = FALSE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_MYCUS, FORM_FOLKEN, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
 
 /datum/category_item/setup_option/core_implant/psionic_tumor_psychiatrist
 	name = "Cultured Psionic Organ"
-	desc = "An unusual organ implanted by the Soteria research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
+	desc = "An unusual organ implanted by the Phokorus Institute of research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
 	Those with this organ must maintain purity of their bodies, any implants, cruciforms, or synthetic limbs will be violently and painfully rejected while this organ exists in the body. This \
-	particular organ is the result of development while inside the brain of someone who understands the mind intimiately, offering them expanded powers and abilities when working as a Soteria psych."
+	particular organ is the result of development while inside the brain of someone who understands the mind intimiately, offering them expanded powers and abilities when working as a CAPSA psych."
 	implant_organ_type = "cultured tumor"
 	restricted_jobs = list(
 		/datum/job/doctor,
 		/datum/job/medic,
 		/datum/job/premier,
 		/datum/job/pg,
-		/datum/job/chaplain,
+		/datum/job/oathpledge,
 		/datum/job/chief_engineer,
 		/datum/job/clubmanager,
 		/datum/job/rp,
@@ -51,7 +52,7 @@
 	) // The way to restrict this to one job could be done cleaner but this way easier so fuck it. -Kaz
 	allow_modifications = FALSE
 	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_MYCUS, FORM_FOLKEN, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
 
 /datum/category_item/setup_option/core_implant/nanogate
 	name = "Nanogate"
@@ -61,7 +62,7 @@
 		/datum/job/outsider // Nanogates are only available to colonist or allies.
 		)
 	allow_modifications = TRUE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
+	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
 
 /datum/category_item/setup_option/core_implant/artificer_nanogate
 	name = "Union Nanogate"
@@ -72,7 +73,7 @@
 		/datum/job/outsider, // Nanogates are only available to colonist or allies.
 		/datum/job/premier,
 		/datum/job/pg,
-		/datum/job/chaplain,
+		/datum/job/oathpledge,
 		/datum/job/cso,
 		/datum/job/clubmanager,
 		/datum/job/rp,
@@ -82,7 +83,7 @@
 		/datum/job/ai
 		)
 	allow_modifications = TRUE
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
+	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
 	restricted_depts = SECURITY | PROSPECTORS | MEDICAL | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
 
 /datum/category_item/setup_option/core_implant/opifex_nanogate

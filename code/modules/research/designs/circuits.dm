@@ -466,6 +466,11 @@
 	build_path = /obj/item/circuitboard/industrial_grinder
 	category = CAT_MEDI
 
+/datum/design/research/circuit/med_fab
+	name = "Medical Fabricator"
+	build_path = /obj/item/circuitboard/autolathe_medfab
+	category = CAT_MEDI
+
 //Hydro
 
 /datum/design/research/circuit/extractor

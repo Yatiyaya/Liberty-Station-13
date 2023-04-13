@@ -64,7 +64,7 @@ ty ilu - bear
 	narrate = "Roaches and critters have made this damp and long abandoned cave their nest. A glint of gold shimmers from within the piles of scrap and rock walls, awaiting the curious prospector to unearth its hidden treasures."
 
 /area/liberty/dungeon/outside/abandoned_solars
-	narrate = "Once an abandoned and destroyed ruin, now reclaimed by the colony and maintained by the soteria. With just a few wires, it grants its boon in power, something to offset the cost of the humming drones patrolling around."
+	narrate = "Once an abandoned and destroyed ruin, now reclaimed by the colony and maintained by the CAPSA. With just a few wires, it grants its boon in power, something to offset the cost of the humming drones patrolling around."
 
 /area/liberty/dungeon/outside/burned_outpost
 	narrate = "Perhaps a mere accident, or an intential arson to cover deeds of dubious nature, this small outpost has charred to the ground now, leaving behind only the faintest traces of whatever life inhabited it before."

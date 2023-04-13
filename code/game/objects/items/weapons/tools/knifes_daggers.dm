@@ -175,8 +175,7 @@
 
 /obj/item/tool/knife/dagger/skinning
 	name = "skinning knife"
-	desc = "A sharp tool that is the pride and joy of the local Hunting Lodge. While not well suited as a weapon, its blade is as finely edged as any laser scalpel. Considered sacred by \
-	the hunters that normally carry them."
+	desc = "A sharp tool that is the pride and joy of the local trappers. While not well suited as a weapon, its blade is as finely edged as any laser scalpel."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "skinning"
 	item_state = "skinning"
@@ -211,7 +210,7 @@
 	backstab_damage = 9
 
 /obj/item/tool/knife/dagger/bluespace
-	name = "\improper Soteria \"Displacement Dagger\""
+	name = "\improper Phokorus Institute \"Displacement Dagger\""
 	desc = "A teleportation matrix attached to a dagger, for sending things you stab it into very far away."
 	icon_state = "bluespace_dagger"
 	item_state = "bluespace_dagger"

@@ -8,8 +8,8 @@
 	brightness_on = 4 //luminosity when on
 	light_overlay = "hardhat_light"
 
-	icon_state = "technohelmet_void"
-	item_state = "technohelmet_void"
+	icon_state = "union worker hat"
+	item_state = "union worker hat"
 	light_overlay = "technohelmet_light"
 	item_state_slots = list(
 		slot_l_hand_str = "eng_helm",
@@ -26,35 +26,16 @@
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 	obscuration = MEDIUM_OBSCURATION
 
-/obj/item/clothing/head/helmet/space/void/engineering/verb/toggle_eyeglass()
-	set name = "Adjust Eyeglass node"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["generic"] = "technohelmet_void"
-	options["visor"] = "technohelmet_void_visor"
-	options["googles"] = "technohelmet_void_googles"
-
-	var/choice = input(M,"What kind of eyeglass node do you want to look through?","Adjust visor") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your helmet's eyeglass node into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
+/obj/item/clothing/head/helmet/space/void/engineering/chief
+	icon_state = "union chief hat"
+	item_state = "union chief hat"
+	name = "engineering chief voidsuit helmet"
 
 /obj/item/clothing/suit/space/void/engineering
 	name = "engineering voidsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
-	icon_state = "technosuit_void"
-	item_state = "technosuit_void"
+	icon_state = "union worker"
+	item_state = "union worker"
 	armor_list = list(
 		melee = 35,
 		bullet = 30,
@@ -73,6 +54,16 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/engineering
 
 /obj/item/clothing/suit/space/void/engineering/equipped
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/jetpack/oxygen
+
+/obj/item/clothing/suit/space/void/engineering/chief
+	icon_state = "union chief"
+	item_state = "union chief"
+	name = "engineering chief voidsuit"
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering/chief
+
+/obj/item/clothing/suit/space/void/engineering/chief/equipped
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/jetpack/oxygen
 
@@ -580,7 +571,7 @@
 
 //Science
 /obj/item/clothing/head/space/void/medarmor
-	name = "soteria medical helmet"
+	name = "CAPSA medical helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor and even a built in light."
 	icon_state = "armor_medical"
 	item_state = "armor_medical"
@@ -610,9 +601,9 @@
 	obscuration = 0
 
 /obj/item/clothing/suit/space/void/medarmor
-	name = "soteria medical void armor"
+	name = "CAPSA medical void armor"
 	icon_state = "armor_medical"
-	desc = "A suit of all purpose soteria medical void armor. Used for operations where oxygen is a rarity and protection is needed."
+	desc = "A suit of all purpose CAPSA medical void armor. Used for operations where oxygen is a rarity and protection is needed."
 	item_state = "armor_medical"
 	armor_list = list(
 		melee = 35,
