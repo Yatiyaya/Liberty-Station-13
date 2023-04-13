@@ -67,4 +67,28 @@
 				/obj/structure/flora/tree/jungle/variant4,\
 				/obj/structure/flora/tree/jungle/variant5)
 
+/obj/random/flora/wild
+	name = "random wild flora spawner"
+	icon_state = "nature-purple"
+
+/obj/random/flora/wild/item_to_spawn()
+	return pick(/obj/structure/flora/wild/bruteloss,\
+				/obj/structure/flora/wild/burnloss,\
+				/obj/structure/flora/wild/toxinloss,\
+				/obj/structure/flora/wild/oxyloss)
+
+/obj/random/flora/wild/high
+	name = "random wild flora spawner (75%)"
+	icon_state = "nature-purple"
+	spawn_nothing_percentage = 25
+
+/obj/random/flora/wild/med
+	name = "random wild flora spawner (50%)"
+	icon_state = "nature-purple"
+	spawn_nothing_percentage = 50
+
+/obj/random/flora/wild/low
+	name = "random wild flora spawner (25%)"
+	icon_state = "nature-purple"
+	spawn_nothing_percentage = 75
 
