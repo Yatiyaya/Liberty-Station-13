@@ -208,7 +208,9 @@
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
 		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_magazine/speed_loader_shotgun
+		/obj/item/ammo_magazine/speed_loader_shotgun,
+		/obj/item/ammo_magazine/smg_35,
+		/obj/item/ammo_casing/rocket
 		)
 
 /obj/item/storage/pouch/tubular/vial
