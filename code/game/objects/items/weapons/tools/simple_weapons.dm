@@ -256,6 +256,55 @@
 		slot_back_str = "katana_back"
 		)
 
+/obj/item/tool/sword/union
+	name = "spider chopper"
+	desc = "A hefty two-handed bent blade meant for smashing medium creatures.  Someone stuck a big plastic gem on the pommel."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "shamshir"
+	item_state = "shamshir"
+	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
+	sharp = TRUE
+	edge = TRUE
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	worksound = WORKSOUND_HARD_SLASH
+	force = WEAPON_FORCE_ROBUST
+	armor_penetration = ARMOR_PEN_DEEP
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.5
+	throwforce = WEAPON_FORCE_NORMAL
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	tool_qualities = list(QUALITY_CUTTING = 10, QUALITY_SAWING = 10)
+	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
+	w_class = ITEM_SIZE_BULKY
+	price_tag = 100
+
+	has_alt_mode = TRUE
+	alt_mode_damagetype = HALLOSS
+	alt_mode_sharp = FALSE
+	alt_mode_verbs = list("bashes", "stunts", "hilts", "blunts")
+	alt_mode_toggle = "uses the broad side of their weapon"
+	alt_mode_lossrate = 0.3
+
+/obj/item/tool/sword/katana/union
+	name = "roach slicer"
+	desc = "A one handed curved sword perfect for mincing up small critters."
+	icon_state = "scimitar" // New sprite courtesy of nayu
+	item_state = "scimitar"
+	hitsound = 'sound/weapons/heavyslash.ogg'
+	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
+	slot_flags = SLOT_BELT | SLOT_BACK
+	force = WEAPON_FORCE_BRUTAL
+	armor_penetration = ARMOR_PEN_SHALLOW
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "katana_back"
+		)
+	effective_faction = list("roach") // Spiders are weak to crushing.
+	damage_mult = 1.5
+
 /obj/item/tool/sword/katana_makeshift
 	name = "makeshift katana"
 	desc = "Modern Japanese-style blade that has no curve to it. This one is two knives welded together, proving where there's a will and a weeb there's a way."
