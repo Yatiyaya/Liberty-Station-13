@@ -192,7 +192,7 @@
 	init_template.initTemplateBounds(bounds)
 
 /obj/procedural/jp_DungeonGenerator/proc/initializePrecursorSubmaps()
-	var/datum/map_template/init_template = new /datum/map_template/precursor_template/room
+	var/datum/map_template/init_template = new /datum/map_template/precursor_template/normal
 	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
 	bounds[MAP_MINX] = 1
 	bounds[MAP_MINY] = world.maxy

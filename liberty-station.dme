@@ -3345,6 +3345,8 @@
 #include "maps\submaps\junk_field\j5_5\pirate\pirate.dm"
 #include "maps\submaps\map_clearers\map_clearers.dm"
 #include "maps\submaps\precursor_rooms\template.dm"
+#include "maps\submaps\precursor_rooms\end\end_rooms.dm"
+#include "maps\submaps\precursor_rooms\large\large_rooms.dm"
 #include "maps\submaps\precursor_rooms\normal\normal_rooms.dm"
 #include "maps\submaps\precursor_rooms\starter\starter_rooms.dm"
 #include "modular_liberty\area_blurbs.dm"

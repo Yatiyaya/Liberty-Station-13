@@ -1,0 +1,260 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"b" = (
+/obj/structure/flora/small/snow/rock4,
+/turf/simulated/mineral/random,
+/area/deepmaint)
+"e" = (
+/obj/item/stool,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"i" = (
+/obj/structure/flora/small/snow/rock1,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"j" = (
+/obj/machinery/floodlight{
+	on = 1
+	},
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"k" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/floor/rock/manmade/ruin2,
+/area/deepmaint)
+"l" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"m" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/floor/snow/sleek/alt3,
+/area/deepmaint)
+"o" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/energy/cog,
+/obj/item/cell/medium/super,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"s" = (
+/obj/structure/flora/small/snow/boulder1,
+/turf/simulated/floor/snow/sleek/alt3,
+/area/deepmaint)
+"y" = (
+/obj/structure/table/reinforced,
+/obj/item/device/depth_scanner,
+/obj/item/device/ano_scanner,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"z" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/mineral/random,
+/area/deepmaint)
+"A" = (
+/obj/structure/flora/small/snow/rock8,
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"D" = (
+/obj/structure/table/reinforced,
+/obj/item/device/lighting/toggleable/flashlight/heavy,
+/obj/item/storage/bag/fossils,
+/obj/item/tool/pickaxe/excavation,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"G" = (
+/mob/living/simple_animal/hostile/bear/polar{
+	aggro_vision_range = 0;
+	name = "Ice-lee"
+	},
+/turf/simulated/floor/snow/sleek/alt3,
+/area/deepmaint)
+"H" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+"I" = (
+/turf/simulated/floor/rock/manmade/ruin2,
+/area/deepmaint)
+"M" = (
+/turf/simulated/mineral/random,
+/area/deepmaint)
+"P" = (
+/turf/simulated/floor/snow/sleek/alt3,
+/area/deepmaint)
+"R" = (
+/obj/structure/flora/small/snow/boulder2,
+/turf/simulated/floor/snow/sleek/alt3,
+/area/deepmaint)
+"W" = (
+/obj/structure/flora/small/snow/rock3,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/deepmaint)
+
+(1,1,1) = {"
+M
+M
+a
+a
+a
+a
+P
+P
+a
+H
+z
+M
+M
+"}
+(2,1,1) = {"
+M
+M
+I
+a
+m
+m
+P
+H
+H
+H
+M
+M
+M
+"}
+(3,1,1) = {"
+a
+I
+s
+G
+P
+H
+H
+k
+I
+P
+P
+a
+M
+"}
+(4,1,1) = {"
+a
+I
+a
+a
+a
+I
+a
+A
+P
+P
+m
+m
+a
+"}
+(5,1,1) = {"
+a
+I
+a
+a
+a
+a
+P
+P
+P
+a
+a
+I
+a
+"}
+(6,1,1) = {"
+a
+a
+I
+a
+a
+W
+a
+a
+a
+a
+m
+m
+a
+"}
+(7,1,1) = {"
+a
+i
+I
+a
+a
+a
+a
+I
+I
+a
+I
+P
+m
+"}
+(8,1,1) = {"
+a
+a
+M
+b
+a
+a
+e
+o
+R
+j
+a
+a
+P
+"}
+(9,1,1) = {"
+a
+M
+M
+M
+a
+D
+l
+y
+H
+m
+m
+H
+a
+"}
+(10,1,1) = {"
+a
+a
+M
+a
+a
+a
+m
+m
+P
+a
+a
+a
+I
+"}
+(11,1,1) = {"
+a
+a
+I
+a
+I
+I
+a
+a
+I
+I
+I
+I
+a
+"}
