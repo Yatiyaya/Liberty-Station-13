@@ -142,7 +142,7 @@ var/global/list/starter_precursor_room_templates = list()
 		generate.setDoAccurateRoomPlacementCheck(TRUE)
 		generate.generate()
 
-		testing("Finished procedural generation of [name]. [generate.errString(generate.out_error)] -  Z-level [z], in [(REALTIMEOFDAY - start) / 10] seconds.")
+		//testing("Finished procedural generation of [name]. [generate.errString(generate.out_error)] -  Z-level [z], in [(REALTIMEOFDAY - start) / 10] seconds.")
 
 //DO NOT REMOVE ELSE, it becomes unreachable
 #if defined(UNIT_TESTS) || defined(SPACEMAN_DMM)
