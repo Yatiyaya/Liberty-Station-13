@@ -393,7 +393,7 @@
 /datum/craft_recipe/guild/webbing
 	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
-	result = /obj/item/storage/belt/webbing/Union
+	result = /obj/item/storage/belt/webbing/union
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),

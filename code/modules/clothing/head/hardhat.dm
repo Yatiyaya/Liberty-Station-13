@@ -67,9 +67,9 @@
 	w_class = ITEM_SIZE_NORMAL
 	price_tag = 100
 
-/obj/item/clothing/head/firefighter/guild_emergency
-	name = "emergency guild helmet"
-	desc = "A heavy plated and radiation protected hard helmet meant for emergency guild repairs in the most dangerous areas."
+/obj/item/clothing/head/firefighter/engineer_emergency
+	name = "emergency engineering helmet"
+	desc = "A heavy plated and radiation protected hard helmet meant for emergency repairs in the most dangerous areas."
 	icon_state = "advanced_hardhat"
 	item_flags = STOPPRESSUREDAMAGE
 	heat_protection = HEAD
