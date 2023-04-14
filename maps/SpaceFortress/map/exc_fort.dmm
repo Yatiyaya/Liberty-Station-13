@@ -1253,7 +1253,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/outpost/abandoned_fortress/powered_lit)
 "Cq" = (
-/obj/machinery/bioprinter,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "Cz" = (

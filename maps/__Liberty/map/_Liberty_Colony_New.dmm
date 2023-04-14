@@ -13207,7 +13207,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "dil" = (
-/obj/machinery/bioprinter/prosthetics,
 /obj/machinery/camera/network/research{
 	dir = 4
 	},
@@ -28892,7 +28891,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "gNu" = (
-/obj/machinery/bioprinter,
 /obj/item/storage/freezer,
 /obj/machinery/camera/network/medbay{
 	dir = 4
