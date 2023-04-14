@@ -13,12 +13,12 @@
 	build_path = /obj/item/cell/large/moebius
 
 /datum/design/research/item/powercell/large/high
-	name = "Phokorus Institute \"Power-Geyser 8000L\""
+	name = "Phokorus Institute \"Power-Geyser 7000L\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/large/moebius/high
 
 /datum/design/research/item/powercell/large/super
-	name = "Phokorus Institute \"Power-Geyser 14000L\""
+	name = "Phokorus Institute \"Power-Geyser 13000L\""
 	build_path = /obj/item/cell/large/moebius/super
 
 /datum/design/research/item/powercell/large/hyper
@@ -26,25 +26,25 @@
 	build_path = /obj/item/cell/large/moebius/hyper
 
 /datum/design/research/item/powercell/medium/basic
-	name = "Phokorus Institute \"Power-Geyser 800M\""
+	name = "Phokorus Institute \"Power-Geyser 700M\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/medium/moebius
 
 /datum/design/research/item/powercell/medium/high
-	name = "Phokorus Institute \"Power-Geyser 1000M\""
+	name = "Phokorus Institute \"Power-Geyser 9000M\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/medium/moebius/high
 
 /datum/design/research/item/powercell/medium/super
-	name = "Phokorus Institute \"Power-Geyser 1200M\""
+	name = "Phokorus Institute \"Power-Geyser 1100M\""
 	build_path = /obj/item/cell/medium/moebius/super
 
 /datum/design/research/item/powercell/medium/hyper
-	name = "Phokorus Institute \"Power-Geyser 1400M\""
+	name = "Phokorus Institute \"Power-Geyser 1300M\""
 	build_path = /obj/item/cell/medium/moebius/hyper
 
 /datum/design/research/item/powercell/small/basic
-	name = "Phokorus Institute \"Power-Geyser 120S\""
+	name = "Phokorus Institute \"Power-Geyser 150S\""
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/cell/small/moebius
 
@@ -54,15 +54,15 @@
 	build_path = /obj/item/cell/small/moebius/high
 
 /datum/design/research/item/powercell/small/super
-	name = "Phokorus Institute \"Power-Geyser 300S\""
+	name = "Phokorus Institute \"Power-Geyser 350S\""
 	build_path = /obj/item/cell/small/moebius/super
 
 /datum/design/research/item/powercell/small/hyper
-	name = "Phokorus Institute \"Power-Geyser 400S\""
+	name = "Phokorus Institute \"Power-Geyser 450S\""
 	build_path = /obj/item/cell/small/moebius/hyper
 
 /datum/design/research/item/powercell/large/omega
-	name = "Phokorus Institute \"Omega-Geyser 20000L\""
+	name = "Phokorus Institute \"Omega-Geyser 23000L\""
 	build_path = /obj/item/cell/large/moebius/omega
 
 /datum/design/research/item/powercell/medium/omega
@@ -70,11 +70,11 @@
 	build_path = /obj/item/cell/medium/moebius/omega
 
 /datum/design/research/item/powercell/small/omega
-	name = "Phokorus Institute \"Omega-Geyser 500S\""
+	name = "Phokorus Institute \"Omega-Geyser 550S\""
 	build_path = /obj/item/cell/small/moebius/omega
 
 /datum/design/research/item/powercell/large/nuclear
-	name = "Phokorus Institute \"Atomcell 14000L\""
+	name = "Phokorus Institute \"Atomcell 13000L\""
 	build_path = /obj/item/cell/large/moebius/nuclear
 
 /datum/design/research/item/powercell/medium/nuclear
@@ -88,13 +88,6 @@
 /datum/design/research/item/powercell/small/nuclear/pda
 	name = "Phokorus Institute \"Atomcell 50S\""
 	build_path = /obj/item/cell/small/moebius/pda
-
-//Magic rock cell
-
-/datum/design/research/item/powercell/large/ameridian
-	name = "Phokorus Institute \"Ameridian 20000L\""
-	build_path = /obj/item/cell/large/ameridian
-	chemicals = list(MATERIAL_AMERIDIAN = 120) //Beakers worth on top of normal cell costs
 
 //Hand crank for cells
 /datum/design/research/item/hand_charger
