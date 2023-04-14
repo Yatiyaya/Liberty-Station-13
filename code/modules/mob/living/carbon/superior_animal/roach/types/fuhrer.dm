@@ -9,7 +9,7 @@
 	health = 125
 
 	knockdown_odds = 5
-	melee_damage_lower = 15
+	melee_damage_lower = 25
 	melee_damage_upper = 30
 	move_to_delay = 8
 	mob_size = MOB_MEDIUM
