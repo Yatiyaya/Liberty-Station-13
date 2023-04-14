@@ -4,8 +4,8 @@ Has ability of every roach.
 */
 
 /mob/living/carbon/superior_animal/roach/kaiser
-	name = "Kaiser Roach"
-	desc = "A glorious emperor of roaches."
+	name = "Hivelord Roach"
+	desc = "A glorious emperor of roaches. Watch out for his spit!"
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "kaiser_roach"
 	icon_dead = "kaiser_roach_dead"

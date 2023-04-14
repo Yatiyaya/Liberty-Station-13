@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach
-	name = "Kampfer Roach"
+	name = "Overgrown Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
 	icon = 'icons/mob/mobs-roach.dmi'
 	icon_state = "roach"
