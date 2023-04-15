@@ -61,40 +61,6 @@
 		list(mode_name="rapid fire", mode_desc="Quick firing normal plasma bolts", projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="destroy", projectile_color = "#FF0000", recoil_buildup=3),
 	)
 
-/obj/item/gun/energy/plasma/martyr // or should it be  Zealot
-	name = "\"Martyr\" holdout pistol"
-	desc = "An \"New Testament\" weapon that uses advanced biomass-converted blasts of energized matter. It is a disposable holdout side arm, good enough to save you and be recycled."
-	icon = 'icons/obj/guns/energy/martyr.dmi'
-	icon_state = "martyr"
-	suitable_cell = /obj/item/cell/small    //so if people manage to get the cell out. shouldn't be a huge deal
-	item_state = null	//so the human update icon uses the icon_state instead.
-	item_charge_meter = TRUE
-	w_class = ITEM_SIZE_SMALL
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_POCKET|SLOT_HOLSTER
-	force = WEAPON_FORCE_PAINFUL
-	matter = list(MATERIAL_STEEL = 2, "biomatter" = 20)
-	disposable = TRUE
-	origin_tech = list(TECH_COMBAT = 1, TECH_PLASMA = 1)
-	price_tag = 250
-	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
-	cell_type = /obj/item/cell/small //can't recharge this one
-	sel_mode = 2
-	charge_cost = 10 // for 10 shots
-	init_recoil = HANDGUN_RECOIL(0.1)
-	twohanded = FALSE
-	can_dual = TRUE
-	gun_tags = list(GUN_ENERGY)
-	damage_multiplier = 0.6 		//no holdout belt strats anymore
-	penetration_multiplier = 1
-
-	init_firemodes = list(
-		list(mode_name="Stun", mode_desc="A weakening bolt of plasma that disables people", projectile_type=/obj/item/projectile/plasma/stun, fire_sound='sound/weapons/energy/marauder.ogg', fire_delay=2, icon="stun", projectile_color = "#0000FF"),
-		list(mode_name="Melt", mode_desc="A heavier plasma bolt designed to melt through armor and flesh alike", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=14, icon="destroy", projectile_color = "#FFFFFF"),
-	)
-
-	wield_delay = 0.3 SECOND
-	wield_delay_factor = 0.2 // 20 vig
-
 /obj/item/gun/energy/plasma/super_heavy
 	name = "\"Ragefire\" Experimental Plasma Gun"
 	desc = "A Phokorus Institute brand experimental weapon that uses coolant to fire deadly plasma projectiles without needing to cool down between shots, however the gun is extremely unstable without cooling."

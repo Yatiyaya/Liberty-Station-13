@@ -1,8 +1,9 @@
 // Houses the master railgun file to standardize it for all guns & not have issues with overheating.
+
 /obj/item/gun/energy/laser/railgun
 	name = "Prototype Railgun"
 	desc = "Older designs of the Reductor rail rifle, mixed with scrapped together assets and 3d printed parts, likely not meant to ever really fire but more of a proof of concept that more modern guns are based on. "
-	icon = 'icons/obj/guns/energy/railpistol.dmi'
+	icon = 'icons/obj/guns/energy/old/railpistol.dmi'
 	icon_state = "railpistol"
 	item_state = "railpistol"
 	suitable_cell = /obj/item/cell/large
@@ -19,33 +20,6 @@
 	var/consume_cell = FALSE
 	fire_delay = 14 //Slow, on par with a shotgun pump then fire
 	init_recoil = RIFLE_RECOIL(1)
-
-/obj/item/gun/energy/laser/railgun/pistol
-	name = "\"Myrmidon\" rail pistol"
-	desc = "\"Terra-Therma Union\" brand rail pistol. This gun features a sleek and deadly design with the capability for lethal and non-lethal firing modes. A competant engineer can also overclock it using a wrench, \
-	consuming the cell within for an extra bullet or a powerful explosive round. For the law abiding engineer because rifles are too hard to hide."
-	icon = 'icons/obj/guns/energy/railpistol.dmi'
-	icon_state = "railpistol"
-	item_state = "railpistol"
-	suitable_cell = /obj/item/cell/medium
-	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	w_class = ITEM_SIZE_NORMAL
-	force = WEAPON_FORCE_NORMAL
-	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 4)
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_STEEL = 4, MATERIAL_SILVER = 5)
-	fire_delay = 7
-	charge_cost = 100
-	fire_sound = 'sound/weapons/rail.ogg'
-	gun_tags = list(GUN_PROJECTILE, GUN_ENERGY)
-	init_recoil = RIFLE_RECOIL(0.8)
-	can_dual = TRUE
-	twohanded = FALSE
-	init_firemodes = list(
-		list(mode_name="slug", mode_desc="fires a small metal chunk at light speeds", projectile_type=/obj/item/projectile/bullet/kurtz_50/railgun, icon="kill"),
-		list(mode_name="non-lethal", mode_desc="fires a small rubber chunk at light speeds", projectile_type=/obj/item/projectile/bullet/kurtz_50/rubber/railgun, icon="stun"),
-		list(mode_name="grenade", mode_desc="fires a frag synth-shell", projectile_type=/obj/item/projectile/bullet/grenade/frag, charge_cost=30000, icon="grenade"),
-	)
-	price_tag = 1250
 
 /obj/item/gun/energy/shrapnel
 	name = "\"Shellshock\" scrap rifle"
@@ -130,7 +104,7 @@
 	name = "\"Reductor\" rail rifle"
 	desc = "\"Terra-Therma Union\" brand rail gun. This gun features a sleek and deadly design with the capability for lethal and non-lethal firing modes. A competant engineer can also overclock it using a wrench, \
 	consuming the cell within for an extra bullet or a powerful explosive round."
-	icon = 'icons/obj/guns/energy/railgun.dmi'
+	icon = 'icons/obj/guns/energy/old/railgun.dmi'
 	icon_state = "railgun"
 	item_state = "railgun"
 	slot_flags = SLOT_BACK
@@ -223,7 +197,7 @@
 	desc = "A rather heavy rifle sporting a cell-loading mount, an adjustable recoil-compensating stock, a hand-crank to manually chamber the next round and a series of coils lining its front. \
 	This strange gauss coil rifle has valves along the large, external coil mounts. To fire this gun requires constant venting, lest it overheats. \
 	At the stock a large script-styled 'M' appears to be engraved into it, a form of signature from its designer along with an Terra-Therma Worker's Union logo."
-	icon = 'icons/obj/guns/energy/gauss.dmi'
+	icon = 'icons/obj/guns/energy/old/gauss.dmi'
 	icon_state = "gauss"
 	item_state = "gauss"
 	fire_sound = 'sound/weapons/guns/fire/gaussrifle.ogg'

@@ -12,13 +12,13 @@
 	init_recoil = HMG_RECOIL(3)
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
-	max_shells = 1
+	max_shells = 5							//Fallout New Vegas....... hehe hoho aaaa......
 	ammo_type = /obj/item/ammo_casing/antim
 	fire_sound = 'sound/weapons/guns/fire/AMR.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
 	matter = list(MATERIAL_PLASTEEL = 40, MATERIAL_PLASTIC = 20, MATERIAL_DIAMOND = 3, MATERIAL_OSMIUM = 5, MATERIAL_URANIUM = 2)
 	price_tag = 7500
-	damage_multiplier = 0.9
+	damage_multiplier = 0.8
 	zoom_factors = list(1,2)
 	twohanded = TRUE
 	sharp = FALSE
@@ -30,7 +30,6 @@
 	extra_damage_mult_scoped = 0.2
 	gun_tags = list(GUN_AMR, GUN_PROJECTILE) //AMR tag atm does nothing
 	slowdown_hold = 1.5  // Massive, unwieldy rifle
-	pierce_multiplier = 6
 	serial_type = "ML"
 	action_button_name = "Switch zoom level"
 	action_button_proc = "switch_zoom"

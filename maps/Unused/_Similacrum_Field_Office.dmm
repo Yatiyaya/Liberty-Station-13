@@ -2763,7 +2763,7 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "vh" = (
-/obj/item/gun/energy/gun/martin,
+/obj/item/gun/energy/ntpistol,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "vi" = (

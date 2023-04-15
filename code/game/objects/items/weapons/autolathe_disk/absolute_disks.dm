@@ -166,25 +166,6 @@
 		/datum/design/autolathe/gun/energy_crossbow,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/themis
-	disk_name = "Absolute Armory - Themis Energy Crossbow"
-	icon_state = "neotheology"
-
-	license = 1
-	designs = list(
-		/datum/design/autolathe/gun/large_energy_crossbow,
-	)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/themis
-	disk_name = "Absolute Armory - Themis Energy Crossbow Plus"
-	icon_state = "neotheology"
-
-	license = 2
-	designs = list(
-		/datum/design/autolathe/gun/large_energy_crossbow,
-	)
-
 /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
 	disk_name = "Absolute Armory - Lightfall Laser Gun"
 	icon_state = "neotheology"
@@ -224,48 +205,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/valkirye
 	license = 12
 	designs = list(
 		/datum/design/autolathe/gun/sniperrifle = 2,
-		/datum/design/autolathe/cell/medium/high,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/carpedie
-	disk_name = "Absolute Armory - Carpediem laser musket"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/carpediem = 3,
-		/datum/design/autolathe/cell/medium/high,
-	)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/carpedie
-	disk_name = "Absolute Armory - Carpediem laser musket Plus"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/carpediem = 2,
-		/datum/design/autolathe/cell/medium/high,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/concillium
-	disk_name = "Absolute Armory - Concillium Las-MG"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/concillium = 3,
-		/datum/design/autolathe/cell/medium/high,
-	)
-
-//for the EOTP
-obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
-	disk_name = "Absolute Armory - Concillium Las-MG Plus"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/concillium = 2,
 		/datum/design/autolathe/cell/medium/high,
 	)
 
@@ -360,27 +299,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		/datum/design/autolathe/ammo/grenade/flash = 2
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/antebellum
-	disk_name = "Absolute Armory - Antebellum laser blunderbuss"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/plasma/antebellum = 3,
-		/datum/design/bioprinter/nt_cells/medium,
-	)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/antebellum
-	disk_name = "Absolute Armory - Antebellum laser blunderbuss Plus"
-	icon_state = "neotheology"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/plasma/antebellum,
-		/datum/design/bioprinter/nt_cells/medium,
-	)
-
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/old_guns
 	disk_name = "Absolute Armory of the Old Testament Plus"
@@ -412,8 +330,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		/datum/design/autolathe/sword/nt_power,
 		/datum/design/autolathe/nt/shield/nt_buckler,
 		/datum/design/autolathe/shield/nt_shield,
-		/datum/design/autolathe/gun/plasma/martyr,
-		/datum/design/autolathe/gun/plasma/excubitor,
 		//armor
 		/datum/design/bioprinter/nt_clothes/armor_kit,
 		/datum/design/bioprinter/nt_clothes/acolyte_armor_helm,
@@ -490,15 +406,11 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 	license = 18
 	designs = list(
 		/datum/design/autolathe/gun/energy_crossbow = 10,
-		/datum/design/autolathe/gun/large_energy_crossbow = 12,
 		/datum/design/autolathe/gun/ntpistol,
 		/datum/design/autolathe/gun/laser = 2,
 		/datum/design/autolathe/gun/pulse = 5,
 		/datum/design/autolathe/gun/pulse_destroyer = 8,
 		/datum/design/autolathe/gun/ionrifle = 3,
-		/datum/design/autolathe/gun/plasma/antebellum,
-		/datum/design/autolathe/gun/concillium = 10,
-		/datum/design/autolathe/gun/carpediem = 4
 	)
 
 
@@ -509,14 +421,10 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 	license = 16
 	designs = list(
 		/datum/design/autolathe/gun/energy_crossbow = 10,
-		/datum/design/autolathe/gun/large_energy_crossbow = 12,
 		/datum/design/autolathe/gun/ntpistol,
 		/datum/design/autolathe/gun/pulse = 5,
 		/datum/design/autolathe/gun/pulse_destroyer = 8,
 		/datum/design/autolathe/gun/ionrifle = 3,
-		/datum/design/autolathe/gun/plasma/antebellum,
-		/datum/design/autolathe/gun/concillium = 10,
-		/datum/design/autolathe/gun/carpediem = 4
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_plasma_shells

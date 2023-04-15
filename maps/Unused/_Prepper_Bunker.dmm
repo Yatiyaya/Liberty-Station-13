@@ -8296,7 +8296,7 @@
 	},
 /obj/item/clothing/shoes/ablasive/iron_lock_security,
 /obj/item/remains/mummy2,
-/obj/item/gun/energy/gun/martin,
+/obj/item/gun/energy/ntpistol,
 /obj/random/powercell/small_safe,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,

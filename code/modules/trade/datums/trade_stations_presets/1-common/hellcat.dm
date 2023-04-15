@@ -26,7 +26,7 @@
 			/obj/machinery/deployable/barrier
 		),
 		"Energy weapons" = list(
-			/obj/item/gun/energy/gun/martin,
+			/obj/item/gun/energy/ntpistol,
 			/obj/item/gun/energy/laser,
 			/obj/item/gun/energy/tesla_shotgun
 		),

@@ -36,10 +36,6 @@
 	name = "\"Auretian\" Energy Pistol"
 	build_path = /obj/item/gun/energy/plasma/auretian
 
-/datum/design/research/item/weapon/centauri
-	name = "\"Centauri\" Energy PDW"
-	build_path = /obj/item/gun/energy/centauri
-
 /datum/design/research/item/weapon/clarissa
 	build_path = /obj/item/gun/projectile/makarov/moebius
 

@@ -677,32 +677,12 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/spiderrose
-	disk_name = "H&S - Spider Rose PDW E"
+	disk_name = "H&S - Edison PDW E"
 	icon_state = "frozenstar"
 
 	license = 8
 	designs = list(
 		/datum/design/autolathe/gun/energygun = 3,
-		/datum/design/autolathe/cell/medium/high,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/martin
-	disk_name = "H&S - Martin PDW E"
-	icon_state = "frozenstar"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/energygun_martin = 2,
-		/datum/design/autolathe/cell/small/high,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/lasercore
-	disk_name = "H&S - Laser Core PDW E"
-	icon_state = "frozenstar"
-
-	license = 8
-	designs = list(
-		/datum/design/autolathe/gun/lasercore = 2,
 		/datum/design/autolathe/cell/medium/high,
 	)
 
@@ -764,26 +744,6 @@ obj/item/computer_hardware/hard_drive/portable/design/guns/china
 	designs = list(
 		/datum/design/research/item/weapon/lasercannon = 6,
 		/datum/design/research/item/powercell/medium/basic = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/centauri
-	disk_name = "PI - \"Centauri\" PDW E"
-	icon_state = "moebius"
-
-	license = 8 //2 gun 1 cell, or 4 good cells that are bette then normal
-	designs = list(
-		/datum/design/research/item/weapon/centauri = 3,
-		/datum/design/research/item/powercell/medium/basic = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/ion_pistol
-	disk_name = "Seinemetall Defense GmbH - \"Aedes\" Ion Pistol"
-	icon_state = "frozenstar"
-
-	license = 6//2 guns 2 cells
-	designs = list(
-		/datum/design/autolathe/gun/ion_pistol = 2,
-		/datum/design/autolathe/cell/medium/high,
 	)
 
 

@@ -4287,7 +4287,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "pG" = (
-/obj/item/gun/energy/gun/martin,
+/obj/item/gun/energy/ntpistol,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "pH" = (

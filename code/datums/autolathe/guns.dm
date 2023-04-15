@@ -198,112 +198,68 @@
 // E N E R G Y
 
 /datum/design/autolathe/gun/taser
-	name = "OT SP \"Counselor\""
+	name = "HEC SP \"Counselor\""
 	build_path = /obj/item/gun/energy/taser
 
 /datum/design/autolathe/gun/revolver_taser
-	name = "Seinemetall Defense GmbH - \"Zeus\" Stun Revolver"
+	name = "SR - \"Zeus\" Stun Revolver"
 	build_path = /obj/item/gun/energy/stunrevolver
 
-/datum/design/autolathe/gun/ion_pistol
-	name = "Seinemetall Defense GmbH - \"Aedes\" Ion Pistol"
-	build_path = /obj/item/gun/energy/ionpistol
-
 /datum/design/autolathe/gun/titanica
-	name = "H&S E Cannon \"Titanica\""
+	name = "HEC E Cannon \"Titanica\""
 	build_path = /obj/item/gun/energy/lasercannon
 
 /datum/design/autolathe/gun/energygun
-	name = "H&S PDW E \"Spider Rose\""
+	name = "HEC PDW E \"Edison\""
 	build_path = /obj/item/gun/energy/gun
 
-/datum/design/autolathe/gun/energygun_martin
-	name = "H&S PDW E \"Martin\""
-	build_path = /obj/item/gun/energy/gun/martin
-
 /datum/design/autolathe/gun/ntpistol
-	name = "NT LP \"Serenity\""
+	name = "Ast-Rak LP \"Odesk\""
 	build_path = /obj/item/gun/energy/ntpistol
 
-/datum/design/autolathe/gun/lasercore
-	name = "H&S PDW \"Laser Core\""
-	build_path = /obj/item/gun/energy/lasercore
-
 /datum/design/autolathe/gun/firestorm
-	name = "H&S PDW \"Firestorm\""
+	name = "HEC PDW \"Firestorm\""
 	build_path = /obj/item/gun/energy/firestorm
 
 /datum/design/autolathe/gun/energy_crossbow
-	name = "OT EC \"Nemesis\""
+	name = "SR EC \"Nemesis\""
 	build_path = /obj/item/gun/energy/crossbow
 
-/datum/design/autolathe/gun/large_energy_crossbow
-	name = "OT EC \"Themis\""
-	build_path = /obj/item/gun/energy/crossbow/largecrossbow
-
 /datum/design/autolathe/gun/laser
-	name = "OT LG \"Lightfall\""
+	name = "Ast-Rak LG \"Kalmyk\""
 	build_path = /obj/item/gun/energy/laser
 
 /datum/design/autolathe/gun/ionrifle
-	name = "OT IR \"Halicon\""
+	name = "Ast-Rak IR \"Halicon\""
 	build_path = /obj/item/gun/energy/ionrifle
 
 /datum/design/autolathe/gun/pulse
-	name = "OT PR \"Dominion\""
+	name = "Ast-Rak PR \"Dominion\""
 	build_path = /obj/item/gun/energy/plasma
 
 /datum/design/autolathe/gun/pulse_destroyer
-	name = "OT PR \"Purger\""
+	name = "Ast-Rak PR \"Purger\""
 	build_path = /obj/item/gun/energy/plasma/destroyer
 
 /datum/design/autolathe/gun/pulse_cassad
-	name = "H&S PR \"Cassad\""
+	name = "HEC PR \"Cassad\""
 	build_path = /obj/item/gun/energy/pulse/cassad
 
 /datum/design/autolathe/gun/sniperrifle
-	name = "OT MER \"Valkyrie\""
+	name = "HEC MER \"Valkyrie\""
 	build_path = /obj/item/gun/energy/sniperrifle
 
 /datum/design/autolathe/gun/nt_sprayer
-	name = "OT cleansing carbine"
+	name = "LG cleansing carbine"
 	build_path = /obj/item/gun/matter/launcher/nt_sprayer
 
 /datum/design/autolathe/gun/similacrum_cog
 	name = "SR \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog
 
-/datum/design/autolathe/gun/plasma/martyr
-	name = "NT PR \"Martyr\""
-	build_path = /obj/item/gun/energy/plasma/martyr
-
 /datum/design/autolathe/gun/sunrise
-	name = "NM \"Sunrise\" L-SMG"
+	name = "LG \"Sunrise\" L-SMG"
 	build_path = /obj/item/gun/energy/sunrise
-
-/datum/design/autolathe/gun/concillium
-	name = "NT Las-MG \"Concillium\""
-	build_path = /obj/item/gun/energy/concillium
-
-/datum/design/autolathe/gun/plasma/antebellum
-	name = "NT PR \"Antebellum\""
-	build_path = /obj/item/gun/energy/plasma/antebellum
-
-/datum/design/autolathe/gun/carpediem
-	name = "NT LM \"Carpediem\""
-	build_path = /obj/item/gun/energy/carpediem
-
-/datum/design/autolathe/gun/peacekeeper
-	name = "NM \"Peacekeeper\""
-	build_path = /obj/item/gun/energy/peacekeeper
-
-/datum/design/autolathe/gun/zwang
-	name = "NM \"Zwang\""
-	build_path = /obj/item/gun/energy/zwang
-
-/datum/design/autolathe/gun/plasma/excubitor
-	name = "NT \"Excubitor\""
-	build_path = /obj/item/gun/energy/plasma/excubitor
 
 // Gun mods
 

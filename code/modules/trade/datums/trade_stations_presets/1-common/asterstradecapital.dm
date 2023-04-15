@@ -84,7 +84,7 @@
 			/obj/item/gun/projectile/revolver/detective,
 			/obj/item/gun/projectile/clarissa,
 			/obj/item/gun/projectile/colt,
-			/obj/item/gun/energy/gun/martin,
+			/obj/item/gun/energy/ntpistol,
 			/obj/item/gun/energy/gun,
 			/obj/item/ammo_magazine/pistol_35,
 			/obj/item/ammo_magazine/pistol_35/rubber,

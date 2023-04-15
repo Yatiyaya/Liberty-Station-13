@@ -102,8 +102,7 @@
 	required_technologies = list(/datum/technology/advanced_nonlethal)
 	required_tech_levels = list(RESEARCH_SIMILACRUM = 3) //Likely people will get parts/cog/bots for this
 	cost = 5625
-	unlocks_designs = list(/datum/design/research/item/similacrum/abnegate,
-						/datum/design/research/item/similacrum/humility,)
+	unlocks_designs = list()
 
 /datum/technology/hardsuit_nonlethal
 	name = "Mounted Non-Lethal"
@@ -254,8 +253,7 @@
 	cost = 3750
 
 	unlocks_designs = list(/datum/design/research/item/weapon/nuclear_gun,
-							/datum/design/research/item/weapon/lasercannon,
-							/datum/design/research/item/weapon/centauri
+							/datum/design/research/item/weapon/lasercannon
 							)
 
 /datum/technology/riglaser_weaponry

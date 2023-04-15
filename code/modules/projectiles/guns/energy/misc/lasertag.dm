@@ -46,7 +46,7 @@
 		)
 
 /obj/item/gun/energy/lasertag/blue
-	icon = 'icons/obj/guns/energy/bluetag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/bluetag.dmi'
 	icon_state = "bluetag"
 	item_state = "bluetag"
 	projectile_color = "#004182"
@@ -54,7 +54,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/bluetag
 
 /obj/item/gun/energy/lasertag/shotgun/blue
-	icon = 'icons/obj/guns/energy/bluetag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/bluetag.dmi'
 	icon_state = "bluetag"
 	item_state = "bluetag"
 	projectile_color = "#004182"
@@ -64,7 +64,7 @@
 		list(mode_name="normal", mode_desc="Standered one shot", projectile_type=/obj/item/projectile/plasma/lastertag/blue, fire_sound='sound/weapons/energy/Laser.ogg', icon="destroy"))
 
 /obj/item/gun/energy/lasertag/sniper/blue
-	icon = 'icons/obj/guns/energy/bluetag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/bluetag.dmi'
 	icon_state = "bluetag"
 	item_state = "bluetag"
 	projectile_color = "#004182"
@@ -72,7 +72,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/bluetag
 
 /obj/item/gun/energy/lasertag/pistol/blue
-	icon = 'icons/obj/guns/energy/bluetagpistol.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/bluetagpistol.dmi'
 	icon_state = "ntpistol"
 	item_state = "ntpistol"
 	projectile_color = "#004182"
@@ -80,7 +80,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/bluetag
 
 /obj/item/gun/energy/lasertag/red
-	icon = 'icons/obj/guns/energy/redtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/redtag.dmi'
 	icon_state = "redtag"
 	item_state = "redtag"
 	projectile_color = "#8e0000"
@@ -88,7 +88,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/redtag
 
 /obj/item/gun/energy/lasertag/shotgun/red
-	icon = 'icons/obj/guns/energy/redtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/redtag.dmi'
 	icon_state = "redtag"
 	item_state = "redtag"
 	projectile_color = "#8e0000"
@@ -99,7 +99,7 @@
 		)
 
 /obj/item/gun/energy/lasertag/sniper/red
-	icon = 'icons/obj/guns/energy/redtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/redtag.dmi'
 	icon_state = "redtag"
 	item_state = "redtag"
 	projectile_color = "#8e0000"
@@ -107,7 +107,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/redtag
 
 /obj/item/gun/energy/lasertag/pistol/red
-	icon = 'icons/obj/guns/energy/redtagpistol.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/redtagpistol.dmi'
 	icon_state = "ntpistol"
 	item_state = "ntpistol"
 	projectile_color = "#8e0000"
@@ -115,7 +115,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/redtag
 
 /obj/item/gun/energy/lasertag/green
-	icon = 'icons/obj/guns/energy/greentag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/greentag.dmi'
 	icon_state = "greentag"
 	item_state = "greentag"
 	projectile_color = "#008000"
@@ -123,7 +123,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/greentag
 
 /obj/item/gun/energy/lasertag/shotgun/green
-	icon = 'icons/obj/guns/energy/greentag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/greentag.dmi'
 	icon_state = "greentag"
 	item_state = "greentag"
 	projectile_color = "#008000"
@@ -133,7 +133,7 @@
 		list(mode_name="normal", mode_desc="Standered one shot", projectile_type=/obj/item/projectile/plasma/lastertag/green, fire_sound='sound/weapons/energy/Laser.ogg', icon="destroy"))
 
 /obj/item/gun/energy/lasertag/sniper/green
-	icon = 'icons/obj/guns/energy/greentag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/greentag.dmi'
 	icon_state = "greentag"
 	item_state = "greentag"
 	projectile_color = "#008000"
@@ -141,7 +141,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/greentag
 
 /obj/item/gun/energy/lasertag/pistol/green
-	icon = 'icons/obj/guns/energy/greentagpistol.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/greentagpistol.dmi'
 	icon_state = "ntpistol"
 	item_state = "ntpistol"
 	projectile_color = "#008000"
@@ -149,7 +149,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/greentag
 
 /obj/item/gun/energy/lasertag/yellow
-	icon = 'icons/obj/guns/energy/yellowtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/yellowtag.dmi'
 	icon_state = "yellowtag"
 	item_state = "yellowtag"
 	projectile_color = "#ffff00"
@@ -157,7 +157,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/yellowtag
 
 /obj/item/gun/energy/lasertag/shotgun/yellow
-	icon = 'icons/obj/guns/energy/yellowtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/yellowtag.dmi'
 	icon_state = "yellowtag"
 	item_state = "yellowtag"
 	projectile_color = "#ffff00"
@@ -167,7 +167,7 @@
 		list(mode_name="normal", mode_desc="Standered one shot", projectile_type=/obj/item/projectile/plasma/lastertag/yellow, fire_sound='sound/weapons/energy/Laser.ogg', icon="destroy"))
 
 /obj/item/gun/energy/lasertag/sniper/yellow
-	icon = 'icons/obj/guns/energy/yellowtag.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/yellowtag.dmi'
 	icon_state = "yellowtag"
 	item_state = "yellowtag"
 	projectile_color = "#ffff00"
@@ -175,7 +175,7 @@
 	required_vest = /obj/item/clothing/suit/fluff/yellowtag
 
 /obj/item/gun/energy/lasertag/pistol/yellow
-	icon = 'icons/obj/guns/energy/yellowtagpistol.dmi'
+	icon = 'icons/obj/guns/energy/lasertag/yellowtagpistol.dmi'
 	icon_state = "ntpistol"
 	item_state = "ntpistol"
 	projectile_color = "#ffff00"
