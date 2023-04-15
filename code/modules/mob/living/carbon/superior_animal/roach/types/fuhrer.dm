@@ -1,7 +1,7 @@
 //Fuhrer roach is a colossal, slow moving leader
 /mob/living/carbon/superior_animal/roach/fuhrer
-	name = "Fuhrer Roach"
-	desc = "A glorious leader of cockroaches. Literally Hitler."
+	name = "Overlord Roach"
+	desc = "A glorious leader of cockroaches. Watch out for his deafening scream!"
 	icon_state = "fuhrer"
 
 	turns_per_move = 4
@@ -9,7 +9,7 @@
 	health = 125
 
 	knockdown_odds = 5
-	melee_damage_lower = 15
+	melee_damage_lower = 25
 	melee_damage_upper = 30
 	move_to_delay = 8
 	mob_size = MOB_MEDIUM

@@ -1,12 +1,12 @@
 /mob/living/carbon/superior_animal/roach/bluespace
-	name = "Unbekannt roach"
+	name = "Bluespace roach"
 	desc = "This shimmering insectoid-like creature greatly resembles a giant cockroach. It flickers in and out of reality, as if it didn't really belong here."
 	icon_state = "bluespaceroach"
 	maxHealth = 25
 	health = 25
 	meat_type = /obj/item/bluespace_crystal
-	melee_damage_lower = 3
-	melee_damage_upper = 10
+	melee_damage_lower = 20
+	melee_damage_upper = 30
 	sanity_damage = 1
 
 /* TODO: Make these a threat and not free loot

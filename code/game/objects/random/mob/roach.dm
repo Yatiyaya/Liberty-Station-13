@@ -5,7 +5,7 @@
 
 /obj/random/mob/roaches/item_to_spawn()
 	return pickweight(list(/mob/living/carbon/superior_animal/roach = 9,
-				// /mob/living/carbon/superior_animal/roach/fat = 2,
+				//mob/living/carbon/superior_animal/roach/fat = 2, - Removed do to lag
 				/mob/living/carbon/superior_animal/roach/tank = 2,
 				/mob/living/carbon/superior_animal/roach/toxic = 2,
 				/mob/living/carbon/superior_animal/roach/glowing = 2,
@@ -13,6 +13,9 @@
 				/mob/living/carbon/superior_animal/roach/glowing = 1,
 				/mob/living/carbon/superior_animal/roach/hunter = 4,
 				/mob/living/carbon/superior_animal/roach/support = 4,
+				/mob/living/carbon/superior_animal/roach/benzin = 2,
+				/mob/living/carbon/superior_animal/roach/plasmaroach = 2,
+				/mob/living/carbon/superior_animal/roach/tazntz = 0.5,
 				/mob/living/carbon/superior_animal/roach/fuhrer = 0.5))
 
 /obj/random/mob/roaches/low_chance
