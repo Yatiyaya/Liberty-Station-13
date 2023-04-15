@@ -49,43 +49,40 @@
 /datum/design/research/item/mechfab/prosthesis_moebius/chest
 	build_path = /obj/item/organ/external/robotic/moebius/torso
 
-/*Robotic Internals ====================================
-TODO: Get this all sorted out, atm people will have to print of
-the lims and such to pull out the internal bits for other people if needed
+//Robotic Internals ====================================
+
 /datum/design/research/item/mechfab/robotic_internals
-	category = "Medical"
+	category = CAT_PROSTHESIS
 
 /datum/design/research/item/mechfab/robotic_internals/heart
 	build_path = /obj/item/organ/internal/heart/prosthetic
-	category = "Medical"
-
-/datum/design/research/item/mechfab/robotic_internals/liver
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"
 
 /datum/design/research/item/mechfab/robotic_internals/lung
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"
+	build_path = /obj/item/organ/internal/lungs/prosthetic
 
-/datum/design/research/item/mechfab/robotic_internals/blood
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"
-
-/datum/design/research/item/mechfab/robotic_internals/nerves
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"
+/datum/design/research/item/mechfab/robotic_internals/kidney
+	build_path = /obj/item/organ/internal/kidney/prosthetic
 
 /datum/design/research/item/mechfab/robotic_internals/eyes
 	build_path = /obj/item/organ/internal/eyes/prosthetic
-	category = "Medical"
 
-/datum/design/research/item/mechfab/robotic_internals/
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"
+/datum/design/research/item/mechfab/robotic_internals/liver
+	build_path = /obj/item/organ/internal/liver/prosthetic
 
-/datum/design/research/item/mechfab/robotic_internals
-	build_path = /obj/item/organ/external/robotic/moebius/torso
-	category = "Medical"*/
+/datum/design/research/item/mechfab/robotic_internals/stomach
+	build_path = /obj/item/organ/internal/stomach/prosthetic
+
+/datum/design/research/item/mechfab/robotic_internals/blood
+	build_path = /obj/item/organ/internal/blood_vessel/prosthetic
+
+/datum/design/research/item/mechfab/robotic_internals/muscle
+	build_path = /obj/item/organ/internal/muscle/robotic
+
+/datum/design/research/item/mechfab/robotic_internals/nerves
+	build_path = /obj/item/organ/internal/nerve/robotic
+
+/datum/design/research/item/mechfab/robotic_internals/cell
+	build_path = /obj/item/organ/internal/cell
 
 //Modules ====================================
 
