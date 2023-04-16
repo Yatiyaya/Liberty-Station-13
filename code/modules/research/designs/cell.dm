@@ -62,7 +62,7 @@
 	build_path = /obj/item/cell/small/moebius/hyper
 
 /datum/design/research/item/powercell/large/omega
-	name = "Phokorus Institute \"Omega-Geyser 23000L\""
+	name = "Phokorus Institute \"Omega-Geyser 20000L\""
 	build_path = /obj/item/cell/large/moebius/omega
 
 /datum/design/research/item/powercell/medium/omega

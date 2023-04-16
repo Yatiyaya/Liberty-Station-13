@@ -61,13 +61,13 @@
 	maxcharge = 18000
 
 /obj/item/cell/large/moebius/omega
-	name = "Phokorus Institute \"Omega-Geyser 23000L\""
+	name = "Phokorus Institute \"Omega-Geyser 20000L\""
 	desc = "Phokorus Institute-brand rechargeable L-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_b_omega"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 6)
 	preloaded_reagents = list("lithium" = 15, "radium" = 10)
 	origin_tech = list(TECH_POWER = 7)
-	maxcharge = 23000
+	maxcharge = 20000
 	max_chargerate = 0.24
 
 /obj/item/cell/large/moebius/nuclear
