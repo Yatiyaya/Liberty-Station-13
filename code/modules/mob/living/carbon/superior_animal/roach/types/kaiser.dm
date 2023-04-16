@@ -4,8 +4,8 @@ Has ability of every roach.
 */
 
 /mob/living/carbon/superior_animal/roach/kaiser
-	name = "Kaiser Roach"
-	desc = "A glorious emperor of roaches."
+	name = "Hivelord Roach"
+	desc = "A glorious emperor of roaches. Watch out for his spit!"
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "kaiser_roach"
 	icon_dead = "kaiser_roach_dead"
@@ -21,7 +21,7 @@ Has ability of every roach.
 	armor = list(melee = 30, bullet = 25, energy = 10, bomb = 50, bio = 20, rad = 100, agony = 0)
 
 	knockdown_odds = 10
-	melee_damage_lower = 20
+	melee_damage_lower = 25
 	melee_damage_upper = 35
 	move_to_delay = 8
 	mob_size =  3  // The same as Hivemind Tyrant

@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/roachling
-	name = "Roachling"
+	name = "Roach"
 	desc = "A tiny cockroach. It never stays still for long."
 	icon_state = "roachling"
 

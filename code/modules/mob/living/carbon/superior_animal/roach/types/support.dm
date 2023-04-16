@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/support
-	name = "Seuche Roach"
+	name = "Vapour Roach"
 	desc = "A monstrous, dog-sized cockroach. This one smells like hell and secretes strange vapors."
 	icon_state = "seuche"
 	turns_per_move = 6

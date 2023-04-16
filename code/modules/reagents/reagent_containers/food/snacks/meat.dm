@@ -89,7 +89,7 @@
 	preloaded_reagents = list("protein" = 4, "seligitillin" = 8, "diplopterum" = 6, "iron" = 5)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/benzin
-	desc = "A slab of sickly-green meat cut from a benzin roach. Stinks of welding fuel. Delicious!"
+	desc = "A slab of sickly-green meat cut from a fireball roach. Stinks of welding fuel. Delicious!"
 	preloaded_reagents = list("protein" = 4, "blattedin" = 6, "fuel" = 30)
 
 /obj/item/reagent_containers/food/snacks/meat/spider
