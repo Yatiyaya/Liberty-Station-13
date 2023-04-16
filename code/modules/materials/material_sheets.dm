@@ -114,7 +114,6 @@
 	icon_state = "sheet-iron"
 	default_type = MATERIAL_IRON
 	price_tag = 1
-	novariants = FALSE
 
 /obj/item/stack/material/iron/random
 	rand_min = 3
@@ -139,7 +138,6 @@
 	icon_state = "sheet-diamond"
 	default_type = MATERIAL_DIAMOND
 	price_tag = 25
-	novariants = FALSE
 
 /obj/item/stack/material/diamond/full
 	amount = 120
@@ -163,7 +161,6 @@
 	icon_state = "sheet-uranium"
 	default_type = MATERIAL_URANIUM
 	price_tag = 10
-	novariants = FALSE
 
 /obj/item/stack/material/uranium/full
 	amount = 120
@@ -219,7 +216,6 @@
 	icon_state = "sheet-silver"
 	default_type = MATERIAL_SILVER
 	price_tag = 5
-	novariants = FALSE
 
 /obj/item/stack/material/silver/random
 	rand_min = 3
@@ -280,7 +276,6 @@
 	icon_state = "sheet-metal"
 	default_type = MATERIAL_STEEL
 	price_tag = 2
-	novariants = FALSE
 
 //A stack which starts with the max amount
 /obj/item/stack/material/steel/full
@@ -413,7 +408,6 @@
 	icon_state = "sheet-biomatter"
 	default_type = MATERIAL_BIOMATTER
 	price_tag = 1 //to keep biomatter in the player economy as the church and science use it.
-	novariants = FALSE
 	var/biomatter_in_sheet = 1
 
 /obj/item/stack/material/biomatter/random
