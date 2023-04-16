@@ -8,7 +8,7 @@
 	icon = "cog_alt" //cog
 
 	required_technologies = list(/datum/technology/laser_weaponry)
-	required_tech_levels = list(RESEARCH_COMBAT = 3, RESEARCH_POWERSTORAGE = 5, RESEARCH_ILLEGAL = 2)
+	required_tech_levels = list(RESEARCH_COMBAT = 14, RESEARCH_POWERSTORAGE = 5, RESEARCH_ILLEGAL = 2)
 	cost = 1000
 
 	unlocks_designs = list(/datum/design/research/item/similacrum/cog_sawn,
@@ -24,7 +24,7 @@
 	icon = "roomba_kit"
 
 	required_technologies = list(/datum/technology/SR_Cog_alt)
-	required_tech_levels = list(RESEARCH_COMBAT = 5, RESEARCH_ROBOTICS = 10)
+	required_tech_levels = list(RESEARCH_ROBOTICS = 8)
 	cost = 1875
 
 	unlocks_designs = list(/datum/design/research/item/similacrum/manhacks_roomba,
@@ -44,7 +44,7 @@
 
 	required_technologies = list(/datum/technology/advanced_biotech,
 								 /datum/technology/super_power) // no cheating past level 3s
-	required_tech_levels = list(RESEARCH_ENGINEERING = 20)
+	required_tech_levels = list(RESEARCH_ENGINEERING = 22)
 	cost = 5625
 
 	unlocks_designs = list(/datum/design/research/item/part/similacrum_laser,
@@ -63,7 +63,7 @@
 	icon = "similacrumcells"
 
 	required_technologies = list(/datum/technology/atom_power, /datum/technology/SR_stockparts)
-	required_tech_levels = list(RESEARCH_POWERSTORAGE = 12)
+	required_tech_levels = list(RESEARCH_POWERSTORAGE = 10)
 	cost = 5625
 
 	unlocks_designs = list(
@@ -82,8 +82,8 @@
 	y = 0.7
 	icon = "similacrumroboticleg"
 
-	required_technologies = list()
-	required_tech_levels = list(RESEARCH_BIOTECH = 13, RESEARCH_ROBOTICS = 15) //Max bio and good robotics
+	required_technologies = list(/datum/technology/prosthetic_organs)
+	required_tech_levels = list(RESEARCH_BIOTECH = 10, RESEARCH_ROBOTICS = 8) //Max bio and good robotics
 
 	unlocks_designs = list(/datum/design/research/item/mechfab/prosthesis_similacrum/r_arm,
 						   /datum/design/research/item/mechfab/prosthesis_similacrum/l_arm,

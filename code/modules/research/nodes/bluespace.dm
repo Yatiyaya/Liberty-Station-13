@@ -205,20 +205,3 @@
 							/datum/design/research/item/oresatchel_holding,
 							/datum/design/research/item/robot_upgrade/satchel_of_holding_for_borgs
 						    )
-
-/*
-/datum/technology/bluespace_rped
-	name = "Bluespace RPED"
-	desc = "Bluespace RPED"
-	tech_type = RESEARCH_BLUESPACE
-
-	x = 0.8
-	y = 0.4
-	icon = "bluespacerped"
-
-	required_technologies = list(/datum/technology/teleportation)
-	required_tech_levels = list()
-	cost = 3000
-
-	unlocks_designs = list()
-*/

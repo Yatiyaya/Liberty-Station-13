@@ -205,7 +205,7 @@
 	icon = "omnisurgery"
 
 	required_technologies = list(/datum/technology/augmentations)
-	required_tech_levels = list()
+	required_tech_levels = list(RESEARCH_BIOTECH = 9, RESEARCH_ENGINEERING = 18)
 	cost = 225
 
 	unlocks_designs = list(
