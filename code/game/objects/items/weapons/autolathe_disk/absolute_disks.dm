@@ -43,11 +43,8 @@
 		/datum/design/bioprinter/leather/storage/backpack/neotheology,
 		/datum/design/bioprinter/leather/storage/backpack/sport/neotheology,
 		//pouches
-		/datum/design/bioprinter/pouch/engineering_supply,
 		/datum/design/bioprinter/pouch/engineering_tools,
 		/datum/design/bioprinter/pouch/janitor_supply,
-		/datum/design/bioprinter/pouch/small_generic/purple,
-		/datum/design/bioprinter/pouch/small_generic,
 		/datum/design/bioprinter/pouch/medium_generic,
 		/datum/design/bioprinter/pouch/large_generic,
 		/datum/design/bioprinter/pouch/tubular,

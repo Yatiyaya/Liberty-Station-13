@@ -53,10 +53,10 @@
 		/obj/item/reagent_containers/food/snacks/meat = offer_data("meat", 100, 10),
 		/obj/item/reagent_containers/food/snacks/meat/corgi = offer_data("corgi meat", 1000, 2),
 		/obj/item/reagent_containers/food/snacks/meat/roachmeat = offer_data("roach meat", 300, 0),
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche = offer_data("seuche roach meat", 400, 0),
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk = offer_data("kraftwerk roach meat", 600, 0),
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager = offer_data("seuche roach meat", 350, 0),
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer = offer_data("fuhrer roach meat", 450, 5), //Caps it
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser = offer_data("kaiser roach meat", 5000, 1)
+		/obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche = offer_data("vapour roach meat", 400, 0),
+		/obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk = offer_data("nanite roach meat", 600, 0),
+		/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager = offer_data("hunter-killer roach meat", 350, 0),
+		/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer = offer_data("overlord roach meat", 450, 5), //Caps it
+		/obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser = offer_data("hivelord roach meat", 5000, 1)
 	)
 

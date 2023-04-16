@@ -156,8 +156,8 @@
 	usr.setClickCooldown(DEFAULT_LONG_COOLDOWN)
 
 /obj/item/tool/hammer/mace
-	name = "mace"
-	desc = "Used for applying blunt force trauma to a person's rib cage."
+	name = "termite truncheon"
+	desc = "A heavy, gaudy stick used for crushing bugs."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "mace"
 	item_state = "mace"

@@ -1,5 +1,5 @@
 /datum/job/cso
-	title = "Chief Surgery Overseer"
+	title = "Chief Surgeon Overseer"
 	flag = CSO
 	head_position = 1
 	department = DEPARTMENT_MEDICAL
@@ -55,7 +55,7 @@
 	In times of crisis, lock down the medbay to protect those within, from outside threats."
 
 /obj/landmark/join/start/cmo
-	name = "Chief Surgery Overseer"
+	name = "Chief Surgeon Overseer"
 	icon_state = "player-green-officer"
 	join_tag = /datum/job/cso
 
@@ -67,7 +67,7 @@
 	faction = MAP_FACTION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Chief Surgery Overseer"
+	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
@@ -117,7 +117,7 @@
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Chief Surgery Overseer"
+	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Ungratifying."
 	noob_name = "First Aid Responder"
 	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
@@ -171,7 +171,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	wage = WAGE_PROFESSIONAL
-	supervisors = "the CAPSA Surgery Overseer"
+	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
 	alt_titles = list("Psychiatrist")

@@ -36,7 +36,6 @@
 					/obj/item/clothing/gloves/insulated/cheap = 4,
 					/obj/item/clothing/gloves/insulated = 2,
 					/obj/item/storage/pouch/engineering_tools = 2,
-					/obj/item/storage/pouch/engineering_supply = 2,
 					/obj/item/weldpack/canister = 4,
 					/obj/item/weldpack = 2)
 	prices = list(/obj/item/tool/hammer = 30,
@@ -51,8 +50,7 @@
 					/obj/item/tool/screwdriver = 30,
 					/obj/item/clothing/gloves/insulated/cheap = 80,
 					/obj/item/clothing/gloves/insulated = 600,
-					/obj/item/storage/pouch/engineering_tools = 150,
-					/obj/item/storage/pouch/engineering_supply = 300,
+					/obj/item/storage/pouch/engineering_tools = 250,
 					/obj/item/weldpack/canister = 200,
 					/obj/item/weldpack = 300)
 
@@ -88,7 +86,7 @@
 	vendor_department = DEPARTMENT_ENGINEERING
 	products = list(/obj/item/clothing/head/hardhat = 4,
 					/obj/item/storage/belt/utility = 4,
-					/obj/item/storage/belt/webbing/Union = 2,
+					/obj/item/storage/belt/webbing/union = 2,
 					/obj/item/clothing/glasses/powered/meson = 4,
 					/obj/item/clothing/glasses/powered/night/guild = 4,
 					/obj/item/clothing/gloves/insulated = 4,
@@ -126,7 +124,7 @@
 					/obj/item/stock_parts/console_screen = 5)
 	prices = list(/obj/item/clothing/head/hardhat = 4,
 					/obj/item/storage/belt/utility = 75,
-					/obj/item/storage/belt/webbing/Union = 2500,
+					/obj/item/storage/belt/webbing/union = 2500,
 					/obj/item/clothing/glasses/powered/meson = 150,
 					/obj/item/clothing/glasses/powered/night/guild = 1200,
 					/obj/item/clothing/gloves/insulated = 600,

@@ -23,7 +23,7 @@
 	new /obj/item/device/flash(src)
 	new /obj/item/taperoll/engineering(src)
 	new /obj/item/tool/tape_roll/flextape(src)
-	new /obj/item/storage/pouch/engineering_supply(src)
+	new /obj/item/storage/pouch/engineering_tools(src)
 	new /obj/item/device/t_scanner/advanced(src)
 	new /obj/item/storage/hcases/parts(src)
 	new /obj/item/storage/hcases/engi(src)

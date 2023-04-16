@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/glowing
-	name = "Gluhend Roach"
+	name = "Glowing Roach"
 	desc = "A huge dog-sized roach that been evolved to produce small amouts of uranium in its glad, becoming stronger and glowing sickly green."
 	icon_state = "glowingroach"
 	light_range = 2
