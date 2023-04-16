@@ -14,7 +14,7 @@
 	helm_type =  /obj/item/clothing/head/helmet/space/rig/ameridian_knight
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/ameridian_knight
 	glove_type = /obj/item/clothing/gloves/rig/ameridian_knight
-	cell_type =  /obj/item/cell/large/ameridian/loaded // With how it is made, it start ready to be used
+	cell_type =  /obj/item/cell/large/moebius/omega
 	air_type =   /obj/item/tank/oxygen
 	suitable_cell = /obj/item/cell/large
 	initial_modules = list(	/obj/item/rig_module/storage/expanded,
