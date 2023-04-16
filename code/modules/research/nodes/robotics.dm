@@ -3,7 +3,7 @@
 	desc = "Basic Robotics"
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.3
+	x = 0.1
 	y = 0.5
 	icon = "cyborganalyzer"
 
@@ -24,7 +24,7 @@
 	desc = "Positron links. Man-Machine Interface. Cyborg control systems. Artificial Intelegence mobile storages."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.5
+	x = 0.3
 	y = 0.7
 	icon = "posbrain"
 
@@ -45,9 +45,9 @@
 	desc = "Advanced Cyborg Components"
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.7
+	x = 0.5
 	y = 0.7
-	icon = "rigscanner"
+	icon = "borgmodule"
 
 	required_technologies = list(/datum/technology/cyborg_robo)
 	required_tech_levels = list()
@@ -70,7 +70,7 @@
 	desc = "Construction and programming of artificial intelligence."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.7
+	x = 0.5
 	y = 0.9
 	icon = "aicard"
 
@@ -88,7 +88,7 @@
 	desc = "Artificial intelligence laws sets."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.9
+	x = 0.7
 	y = 0.9
 	icon = "module"
 
@@ -121,7 +121,7 @@
 	desc = "Body augmentations in the way of CAPSA-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.5
+	x = 0.3
 	y = 0.3
 	icon = "scalpelmanager"
 
@@ -148,9 +148,9 @@
 	desc = "Organ augmentations in the way of CAPSA-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.7
+	x = 0.5
 	y = 0.3
-	icon = "scalpelmanager"
+	icon = "cryobag"
 
 	required_technologies = list(/datum/technology/prosthetic_limbs)
 	required_tech_levels = list()
@@ -174,9 +174,9 @@
 	desc = "Refined and end of the line advancements that both body and mind can handle."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.7
+	x = 0.5
 	y = 0.1
-	icon = "scalpelmanager"
+	icon = "medhud"
 
 	required_technologies = list(/datum/technology/prosthetic_limbs)
 	required_tech_levels = list()
@@ -200,7 +200,7 @@
 	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.9
+	x = 0.7
 	y = 0.1
 	icon = "omnisurgery"
 

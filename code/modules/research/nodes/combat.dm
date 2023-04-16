@@ -103,21 +103,6 @@
 	unlocks_designs = list(/datum/design/research/item/similacrum/abnegate,
 						/datum/design/research/item/similacrum/humility,)
 
-/*/datum/technology/sec_computers
-	name = "Security Computers"
-	desc = "Security Computers"
-	tech_type = RESEARCH_COMBAT
-
-	x = 0.2
-	y = 0.6
-	icon = "seccomputer"
-
-	required_technologies = list(/datum/technology/basic_combat)
-	required_tech_levels = list()
-	cost = 500
-
-	unlocks_designs = list(/datum/design/research/circuit/secdata, /datum/design/research/circuit/prisonmanage)*/
-
 /datum/technology/basic_lethal
 	name = "Basic Lethal Weapons"
 	desc = "Chemical grenades with anti-acid coating inside and new laser based ammo."

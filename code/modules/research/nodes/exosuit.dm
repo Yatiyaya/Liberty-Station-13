@@ -4,9 +4,9 @@
 	desc = "Exosuit production and control systems."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.3
+	x = 0.1
 	y = 0.5
-	icon = "ripley"
+	icon = "autolathe"
 
 	required_technologies = list(/datum/technology/basic_robotics)
 	required_tech_levels = list()
@@ -29,8 +29,8 @@
 	desc = "Basic Hardsuit Modules"
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.45
-	y = 0.6
+	x = 0.3
+	y = 0.7
 	icon = "rigscanner"
 
 	required_technologies = list(/datum/technology/exosuit_robotics)
@@ -50,8 +50,8 @@
 	desc = "Electrical-shock weapon for hardsuits."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.55
-	y = 0.7
+	x = 0.45
+	y = 0.85
 	icon = "rigtaser"
 
 	required_technologies = list(/datum/technology/basic_hardsuit_modules)
@@ -69,9 +69,9 @@
 	desc = "Advanced Hardsuit Modules"
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.65
-	y = 0.6
-	icon = "rigtaser"
+	x = 0.6
+	y = 0.7
+	icon = "rigmining"
 
 	required_technologies = list(/datum/technology/basic_hardsuit_modules)
 	required_tech_levels = list(
@@ -93,7 +93,7 @@
 	tech_type = RESEARCH_EXOSUIT
 
 	x = 0.75
-	y = 0.7
+	y = 0.85
 	icon = "riglethals"
 
 	required_technologies = list(/datum/technology/laser_weaponry, /datum/technology/advanced_hardsuit_modules)
@@ -107,9 +107,9 @@
 	desc = "Experimental Hardsuit Modules"
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.85
+	x = 0.9
 	y = 0.6
-	icon = "rignuclearreactor"
+	icon = "rigstorage"
 
 	required_technologies = list(/datum/technology/advanced_hardsuit_modules)
 	required_tech_levels = list()
@@ -129,7 +129,7 @@
 	desc = "Exosuit production and control systems. Exosuit-miner basics."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.45
+	x = 0.4
 	y = 0.4
 	icon = "ripley"
 
@@ -152,7 +152,7 @@
 	desc = "Odysseus - the medical exosuit."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.55
+	x = 0.5
 	y = 0.4
 	icon = "odyssey"
 
@@ -176,7 +176,7 @@
 	desc = "Gygax - the killer exosuit."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.65
+	x = 0.6
 	y = 0.4
 	icon = "gygax"
 
@@ -200,7 +200,7 @@
 	desc = "Durand - the knight exosuit."
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.65
+	x = 0.7
 	y = 0.4
 	icon = "durand"
 
@@ -225,7 +225,7 @@
 	desc = "Phazon - the battle scout exosuit"
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.85
+	x = 0.9
 	y = 0.4
 	icon = "vindicator" // TODO change icon
 
@@ -252,8 +252,8 @@
 	tech_type = RESEARCH_EXOSUIT
 
 	x = 0.3
-	y = 0.35
-	icon = "borgmodule"
+	y = 0.3
+	icon = "drill"
 
 	required_technologies = list(/datum/technology/exosuit_robotics)
 	required_tech_levels = list()
@@ -359,7 +359,7 @@
 	desc = "Exosuit Teleporter Module"
 	tech_type = RESEARCH_EXOSUIT
 
-	x = 0.75
+	x = 0.8
 	y = 0.4
 	icon = "mechteleporter"
 
