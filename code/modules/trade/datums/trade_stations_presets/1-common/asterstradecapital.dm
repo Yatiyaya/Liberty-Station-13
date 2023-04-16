@@ -36,7 +36,7 @@
 			/obj/item/device/geiger,
 			/obj/item/device/toner
 		),
-		"Lonestar Cells" = list(
+		"Hellion Cells" = list(
 			/obj/item/cell/small,
 			/obj/item/cell/small/high,
 			/obj/item/cell/small/super,

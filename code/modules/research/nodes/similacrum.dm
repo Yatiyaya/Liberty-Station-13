@@ -39,7 +39,7 @@
 	tech_type = RESEARCH_SIMILACRUM
 
 	x = 0.1 //Top left corner
-	y = 0.7
+	y = 0.8
 	icon = "similacrumstockparts"
 
 	required_technologies = list(/datum/technology/advanced_biotech,
@@ -53,12 +53,32 @@
 						   /datum/design/research/item/part/similacrum_capacitor,
 						   /datum/design/research/item/part/similacrum_manipulator)
 
+/datum/technology/SR_cells
+	name = "Similacrum Robotics Cells"
+	desc = "A mix of old cell manufacturing with a SR characteristics."
+	tech_type = RESEARCH_SIMILACRUM
+
+	x = 0.2 //Top left corner
+	y = 0.8
+	icon = "similacrumcells"
+
+	required_technologies = list(/datum/technology/atom_power, /datum/technology/SR_stockparts)
+	required_tech_levels = list(RESEARCH_POWERSTORAGE = 12)
+	cost = 5625
+
+	unlocks_designs = list(
+						/datum/design/research/item/powercell/large/similacrum,
+						/datum/design/research/item/powercell/medium/similacrum,
+						/datum/design/research/item/powercell/small/similacrum
+						   )
+
+
 /datum/technology/SR_robotics
 	name = "Similacrum Robotics Positronics"
 	desc = "SR Robotic lims."
 	tech_type = RESEARCH_SIMILACRUM
 
-	x = 0.2 //top right
+	x = 0.1 //top left
 	y = 0.7
 	icon = "similacrumroboticleg"
 
