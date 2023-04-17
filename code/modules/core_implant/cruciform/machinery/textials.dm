@@ -303,30 +303,6 @@
 				to_chat(user, SPAN_WARNING("You can't insert [sheets_amount_to_transphere] in [name]"))
 			return
 
-	if (istype(I, /obj/item/clothing))
-		var/obj/item/clothing/C = I
-		var/cloth_in_clothing = 0
-		if(!C.matter)
-			to_chat(user, SPAN_WARNING("You can't insert [C] in [name], do to it having no useable matter!"))
-			return
-		var/matter_in_clothing = C.get_matter()
-		for (var/a in matter_in_clothing)
-			if(a == MATERIAL_BIOMATTER || a == MATERIAL_CLOTH || a == MATERIAL_SILK)
-				cloth_in_clothing = matter[a]
-				cloth_in_clothing *= 0.3 //Normal cloathing has 15~ biomatter, this is to make it not tooo easy to get tons of silk and cloath
-				cloth_score += cloth_in_clothing
-				user.visible_message(
-									"[user.name] inserted \the [C.name] in \the [name].",
-									"You inserted \the [C.name] in  (in amount: [cloth_in_clothing]) \the [name].\
-									And after that you see how the counter on \the [name] is incremented by [cloth_in_clothing]."
-									)
-				ping()
-				user.drop_from_inventory(C)
-				qdel(C)
-			else
-				to_chat(user, SPAN_WARNING("You can't insert [C] in [name], as it has no useable cloth"))
-			return
-
 /obj/machinery/sewing_artificer/proc/turn_on(mob/living/user as mob)
 	if(is_active)
 		return

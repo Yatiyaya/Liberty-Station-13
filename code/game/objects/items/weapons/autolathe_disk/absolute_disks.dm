@@ -13,9 +13,6 @@
 	license = -1
 
 	designs = list(
-		//Materals
-		/datum/design/bioprinter/carbon_fiber,
-		/datum/design/bioprinter/biopolymer_silk,
 		//Misc
 		/datum/design/bioprinter/belt/utility/neotheology,
 		/datum/design/bioprinter/belt/security/neotheology,

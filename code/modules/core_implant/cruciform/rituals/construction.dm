@@ -307,14 +307,36 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
-/datum/nt_blueprint/machinery/bioprinter
-	name = "Biomatter Textials Autolathe"
-	build_path = /obj/machinery/autolathe/bioprinter
+/datum/nt_blueprint/machinery/textials
+	name = "Biomatter Flarelathe"
+	build_path = /obj/machinery/textials
 	materials = list(
 		/obj/item/stack/material/steel = 10,
 		/obj/item/stack/material/glass = 2,
 		/obj/item/stack/material/wood = 6,
 		/obj/item/storage/toolbox = 1
+	)
+	build_time = 5 SECONDS
+
+/datum/nt_blueprint/machinery/sewing_artificer
+	name = "Sewing Artificer"
+	build_path = /obj/machinery/sewing_artificer
+	materials = list(
+		/obj/item/stack/material/steel = 12,
+		/obj/item/stack/material/glass = 2,
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/tool/weldingtool = 1,
+		/obj/item/reagent_containers/glass/beaker = 1
+	)
+	build_time = 5 SECONDS
+
+/datum/nt_blueprint/machinery/composite_artificer
+	name = "Composite Artificer"
+	build_path = /obj/machinery/composite_artificer
+	materials = list(
+		/obj/item/stack/material/steel = 12,
+		/obj/item/stack/material/glass = 2,
+		/obj/item/tool/saw = 1
 	)
 	build_time = 5 SECONDS
 
