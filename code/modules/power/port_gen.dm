@@ -94,7 +94,7 @@
 //A power generator that runs on solid plasma sheets.
 /obj/machinery/power/port_gen/pacman
 	name = "P.A.C.M.A.N portable generator"
-	desc = "A power generator that runs on solid plasma sheets. Rated for 80 kW max safe output."
+	desc = "A power generator that runs on solid plasma sheets. Rated for 60kW max safe output."
 
 	var/sheet_name = "Plasma Sheets"
 	var/sheet_path = /obj/item/stack/material/plasma
@@ -367,7 +367,7 @@
 		icon_state = "[off_icon]"
 /obj/machinery/power/port_gen/pacman/super
 	name = "S.U.P.E.R.P.A.C.M.A.N portable generator"
-	desc = "A power generator that utilizes uranium sheets as fuel. Can run for much longer than the standard PACMAN type generators. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
+	desc = "A power generator that utilizes uranium sheets as fuel. Can run for much longer than the standard PACMAN type generators. Rated for 60kW max safe output."
 	icon_state = "portgen3"
 	off_icon = "portgen3"
 	on_icon = "portgen3_1"
@@ -394,12 +394,13 @@
 
 /obj/machinery/power/port_gen/pacman/mrs
 	name = "M.R.S.P.A.C.M.A.N portable generator"
-	desc = "An advanced power generator that runs on tritium. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
+	desc = "An advanced power generator that runs on tritium. Rated for 75kW max safe output."
 	icon_state = "portgen2"
 	off_icon = "portgen2"
 	on_icon = "portgen2_1"
 	sheet_path = /obj/item/stack/material/tritium
 	sheet_name = "Tritium Sheets"
+	max_safe_output = 3
 
 	//I don't think tritium has any other use, so we might as well make this rewarding for players
 	//max safe power output (power level = 8) is 200 kW and lasts for 1 hour - 3 or 4 of these could power the station
@@ -418,7 +419,7 @@
 
 /obj/machinery/power/port_gen/pacman/camp
 	name = "C.A.M.P.E.R.P.A.C.M.A.N portable generator"
-	desc = "This power generator got its name from its low power rating through burning wood as fuel. It tends to be used while people go out camping. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
+	desc = "This power generator got its name from its low power rating through burning wood as fuel. It tends to be used while people go out camping. Rated for 36kW max safe output."
 	icon_state = "portgen3"
 	off_icon = "portgen3"
 	on_icon = "portgen3_1"
@@ -438,7 +439,7 @@
 
 /obj/machinery/power/port_gen/pacman/miss
 	name = "M.I.S.S.P.A.C.M.A.N portable generator"
-	desc = "Using a girl's best friend. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
+	desc = "Using a girl's best friend. Rated for 67.5kW max safe output."
 	icon_state = "portgen2"
 	off_icon = "portgen2"
 	on_icon = "portgen2_1"
@@ -459,6 +460,7 @@
 // this generator works with reagent instead of sheets.
 /obj/machinery/power/port_gen/pacman/diesel
 	name = "diesel generator"
+	desc = "The good old 4 stroke engine. Rated for 48kW max safe output."
 	icon = 'icons/obj/machines/excelsior/generator.dmi'
 	icon_state = "base"
 	circuit = /obj/item/circuitboard/diesel
