@@ -107,8 +107,8 @@
 		Setting to 5 or higher can only be done temporarily before the generator overheats.
 	*/
 	power_gen = 20000			//Watts output per power_output level
-	var/max_power_output = 5	//The maximum power setting without emagging.
-	var/max_safe_output = 4		// For UI use, maximal output that won't cause overheat.
+	var/max_power_output = 6	//The maximum power setting without emagging.
+	var/max_safe_output = 3		// For UI use, maximal output that won't cause overheat.
 	var/time_per_fuel_unit = 96		//fuel efficiency - how long 1 unit of sheet/reagent lasts at power level 1
 	var/max_fuel_volume = 100 		//max capacity of the hopper
 	var/max_temperature = 300	//max temperature before overheating increases
@@ -359,66 +359,6 @@
 	if (!anchored)
 		return
 	ui_interact(user)
-/*
-/obj/machinery/power/port_gen/pacman/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
-	if(IsBroken())
-		return
-
-	var/data[0]
-	data["active"] = active
-
-	if(isAI(user))
-		data["is_ai"] = 1
-	else if(isrobot(user) && !Adjacent(user))
-		data["is_ai"] = 1
-	else
-		data["is_ai"] = 0
-
-	data["output_set"] = power_output
-	data["output_max"] = max_power_output
-	data["output_safe"] = max_safe_output
-	data["output_watts"] = power_output * power_gen
-	data["temperature_current"] = src.temperature
-	data["temperature_max"] = src.max_temperature
-	data["temperature_overheat"] = overheating
-	// 1 sheet = 1000cm3?
-	data["fuel_stored"] = !use_reagents_as_fuel ?  round((sheets * 1000) + (sheet_left * 1000)) : round(reagents.total_volume * 1000, 0.1)
-	data["fuel_capacity"] = round(max_fuel_volume * 1000, 0.1)
-	data["fuel_usage"] = active ? round((power_output / time_per_fuel_unit) * 1000) : 0
-	data["fuel_type"] = !use_reagents_as_fuel ? sheet_name : fuel_name
-	data["fuel_units"] = "sheets"
-	data["fuel_ejectable"] = TRUE
-
-	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
-	if (!ui)
-		ui = new(user, src, ui_key, "pacman.tmpl", src.name, 500, 560)
-		ui.set_initial_data(data)
-		ui.open()
-		ui.set_auto_update(1)
-
-/obj/machinery/power/port_gen/pacman/Topic(href, href_list)
-	if(..())
-		return
-
-	if(href_list["action"])
-		if(href_list["action"] == "enable")
-			if(!active && HasFuel() && !IsBroken())
-				active = 1
-				update_icon()
-		if(href_list["action"] == "disable")
-			if (active)
-				active = 0
-				update_icon()
-		if(href_list["action"] == "eject")
-			if(!active)
-				DropFuel()
-		if(href_list["action"] == "lower_power")
-			if (power_output > 1)
-				power_output--
-		if (href_list["action"] == "higher_power")
-			if (power_output < max_power_output || (emagged && power_output < round(max_power_output*2.5)))
-				power_output++
-*/
 
 /obj/machinery/power/port_gen/pacman/update_icon()
 	if(active)
@@ -427,7 +367,7 @@
 		icon_state = "[off_icon]"
 /obj/machinery/power/port_gen/pacman/super
 	name = "S.U.P.E.R.P.A.C.M.A.N portable generator"
-	desc = "A power generator that utilizes uranium sheets as fuel. Can run for much longer than the standard PACMAN type generators. Rated for 80 kW max safe output."
+	desc = "A power generator that utilizes uranium sheets as fuel. Can run for much longer than the standard PACMAN type generators. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
 	icon_state = "portgen3"
 	off_icon = "portgen3"
 	on_icon = "portgen3_1"
@@ -454,7 +394,7 @@
 
 /obj/machinery/power/port_gen/pacman/mrs
 	name = "M.R.S.P.A.C.M.A.N portable generator"
-	desc = "An advanced power generator that runs on tritium. Rated for 200 kW maximum safe output!"
+	desc = "An advanced power generator that runs on tritium. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
 	icon_state = "portgen2"
 	off_icon = "portgen2"
 	on_icon = "portgen2_1"
@@ -478,7 +418,7 @@
 
 /obj/machinery/power/port_gen/pacman/camp
 	name = "C.A.M.P.E.R.P.A.C.M.A.N portable generator"
-	desc = "This power generator got its name from its low power rating through burning wood as fuel. It tends to be used while people go out camping. Rated for 20 kW maximum safe output!"
+	desc = "This power generator got its name from its low power rating through burning wood as fuel. It tends to be used while people go out camping. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
 	icon_state = "portgen3"
 	off_icon = "portgen3"
 	on_icon = "portgen3_1"
@@ -498,7 +438,7 @@
 
 /obj/machinery/power/port_gen/pacman/miss
 	name = "M.I.S.S.P.A.C.M.A.N portable generator"
-	desc = "Using a girl's best friend. Rated for 200 kW maximum safe output!"
+	desc = "Using a girl's best friend. Rated for [(power_gen * max_safe_output) / 1000] kW max safe output."
 	icon_state = "portgen2"
 	off_icon = "portgen2"
 	on_icon = "portgen2_1"
@@ -525,6 +465,7 @@
 	max_fuel_volume = 300
 	power_gen = 16000 // produces 20% less watts output per power level setting.
 	time_per_fuel_unit = 12
+	sheet_name = "Welder Fuel"
 
 	reagent_flags = OPENCONTAINER
 	use_reagents_as_fuel = TRUE
@@ -541,7 +482,7 @@
 	else
 		add_overlay("off")
 
-//anchored versions, for mapping purposes...yeah
+//anchored versions, for mapping and spawning purposes
 /obj/machinery/power/port_gen/pacman/diesel/anchored
 	anchored = 1
 
@@ -613,3 +554,22 @@
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
 		update_icon()
+
+//diesel gen special ui_data
+/obj/machinery/power/port_gen/pacman/diesel/ui_data()
+	var/data = list()
+
+	data["active"] = active
+	data["sheet_name"] = capitalize(sheet_name)
+	//reagents do not obey the same rules as sheets on gens, so we show the tank rather than the current sheet being consumed
+	data["sheets"] = reagents.total_volume
+	data["stack_percent"] = round(reagents.total_volume / reagents.maximum_volume, 0.1)
+
+	data["anchored"] = anchored
+	data["connected"] = (powernet == null ? 0 : 1)
+	data["ready_to_boot"] = anchored && HasFuel()
+	data["power_generated"] = display_power(power_gen)
+	data["power_output"] = display_power(power_gen * power_output)
+	data["power_available"] = (powernet == null ? 0 : display_power(avail()))
+	data["current_heat"] = src.temperature
+	. = data
