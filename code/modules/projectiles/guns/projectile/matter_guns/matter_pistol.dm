@@ -5,7 +5,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 /obj/item/gun/projectile/matter_gun
 	name = "Mk I \"Forger\" compressed-matter pistol"
-	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particals."
+	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particles."
 	icon = 'icons/obj/guns/nano/pistol.dmi'
 	icon_state = "forger"
 	item_state = "froger"
@@ -61,7 +61,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 /obj/item/gun/projectile/matter_gun/shotgun
 	name = "Mk II \"Forger\" compressed-matter pistol"
-	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particals. \
+	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particles. \
 			This version is far more bulkier than its pistol counterpart, but packs quite a punch. Able to fire projectiles that fragment on impact or incendiary rounds."
 	icon = 'icons/obj/guns/nano/shotgun.dmi'
 	icon_state = "railgun"
