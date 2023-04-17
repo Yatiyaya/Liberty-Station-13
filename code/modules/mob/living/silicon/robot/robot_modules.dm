@@ -28,13 +28,13 @@ var/global/list/robot_modules = list(
 					LANGUAGE_KRIOSAN = 1,
 					LANGUAGE_AKULA = 1,
 					LANGUAGE_MARQUA = 1,
+					LANGUAGE_CINDERITE = 1,
 					LANGUAGE_YASSARI = 1,
-					LANGUAGE_ILLYRIAN = 1,
 					LANGUAGE_CYRILLIC = 1,
 					LANGUAGE_EURO = 1,
 					LANGUAGE_JANA = 1,
-					LANGUAGE_LATIN = 1,
-					LANGUAGE_JIVE = 0
+					LANGUAGE_COALITION = 1,
+					LANGUAGE_SIGN = 0
 					)
 	var/sprites = list()
 	var/can_be_pushed = 1
