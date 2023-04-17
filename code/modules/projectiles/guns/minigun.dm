@@ -13,7 +13,7 @@
 	max_upgrades = 3
 	fire_delay = 1
 	fire_sound = 'sound/weapons/guns/fire/chaingun_fire.ogg'
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 15, MATERIAL_DURASTEEL = 5)
+	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 35)
 	init_firemodes = list(BURST_3_ROUND, BURST_8_ROUND, FULL_AUTO_600)
 	serial_type = "Kriosan"
 
