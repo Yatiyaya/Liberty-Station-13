@@ -27,12 +27,13 @@
 
 /decl/hierarchy/outfit/medical_ert
 	name = "Medical Emergency Personnel"
-	l_ear  = /obj/item/device/radio/headset/ert
+	l_ear = /obj/item/device/radio/headset/ert
 	head = /obj/item/clothing/head/helmet/faceshield/paramedic
+	uniform = /obj/item/clothing/under/rank/cso
 	suit = /obj/item/clothing/suit/armor/paramedic
 	uniform = /obj/item/clothing/under/rank/paramedic
 	r_pocket = /obj/item/device/lighting/toggleable/flashlight/pen
-	pda_type = /obj/item/modular_computer/pda/heads/cmo
+	pda_type = /obj/item/modular_computer/pda/heads/cso
 	r_ear  = /obj/item/reagent_containers/syringe/large
 	belt = /obj/item/storage/belt/medical
 	glasses = /obj/item/clothing/glasses/hud/health

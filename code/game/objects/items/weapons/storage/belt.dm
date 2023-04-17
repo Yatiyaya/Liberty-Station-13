@@ -505,6 +505,28 @@
 	icon_state = "webbing_ih"
 	item_state = "webbing_ih"
 
+/obj/item/storage/belt/medical/capsa
+	name = "CAPSA web harness"
+	desc = "A military-grade harness with plenty of pouches and storage for field triage. Has clipping space to hold gas masks and other objects."
+	storage_slots = 14
+	icon_state = "capsa_webbing" // Sprite by Deadly Toy
+	item_state = "capsa_webbing"
+	can_hold_extra = list(
+		/obj/item/grenade,
+		/obj/item/reagent_containers/spray/pepper,
+		/obj/item/handcuffs,
+		/obj/item/device/flash,
+		/obj/item/clothing/mask/gas,
+		/obj/item/extinguisher/mini,
+		/obj/item/ammo_magazine,
+		/obj/item/cell/medium,
+		/obj/item/device/lighting/toggleable/flashlight,
+		/obj/item/modular_computer/pda,
+		/obj/item/melee,
+		/obj/item/tool/knife,
+		/obj/item/device/binoculars
+	)
+
 /obj/item/storage/belt/webbing/union
 	name = "Terra-Therma Worker's Union web harness"
 	desc = "Everything you need at hand, at belt. This one is hand crafted by the Terra-Therma Worker's Union, allowing it to better store larger items by sacrificing space. Better than most tool belts."

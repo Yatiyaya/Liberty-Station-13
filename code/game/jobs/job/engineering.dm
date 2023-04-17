@@ -17,7 +17,7 @@
 	minimum_character_age = 25
 	health_modifier = 5
 
-	disallow_species = list(FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_UNBRANDED, FORM_PIRSYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief
 
 	access = list(
@@ -83,7 +83,7 @@
 		access_external_airlocks, access_construction, access_atmospherics
 	)
 
-	disallow_species = list(FORM_CAPSASYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_PIRSYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 
 	stat_modifiers = list(

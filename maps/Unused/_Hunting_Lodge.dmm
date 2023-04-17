@@ -2506,7 +2506,7 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "uX" = (
 /obj/structure/table/rack/shelf,
-/obj/item/storage/bag/chemistry,
+/obj/item/storage/bag/capsa,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "va" = (

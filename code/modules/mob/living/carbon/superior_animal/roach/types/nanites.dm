@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/nanite
-	name = "Kraftwerk Roach"
+	name = "Nanite Roach"
 	desc = "A deformed mess of a roach that is covered in metallic outcrops and formations. It seems to have a production center on its thorax."
 	icon_state = "naniteroach"
 

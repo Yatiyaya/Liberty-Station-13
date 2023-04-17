@@ -31,8 +31,6 @@
 	unlocks_designs = list(/datum/design/research/item/flash,
 						   /datum/design/research/item/weapon/weapon_upgrade/auto_eject_no_removal)
 
-
-
 /datum/technology/weapon_recharging //You know... Its really not logical that this is even here...
 	name = "Weapon Recharging"
 	desc = "Weapon Recharging"
@@ -104,39 +102,6 @@
 	cost = 5625
 	unlocks_designs = list(/datum/design/research/item/similacrum/abnegate,
 						/datum/design/research/item/similacrum/humility,)
-
-/datum/technology/hardsuit_nonlethal
-	name = "Mounted Non-Lethal"
-	desc = "Electrical-shock weapon for hardsuits."
-	tech_type = RESEARCH_COMBAT
-
-	x = 0.3
-	y = 0.3
-	icon = "rigtaser"
-
-	required_technologies = list(/datum/technology/advanced_nonlethal)
-	required_tech_levels = list()
-	cost = 3375
-
-	unlocks_designs = list(	/datum/design/research/item/rig_grenade_launcher,
-							/datum/design/research/item/rig_flash,
-							/datum/design/research/item/tasermount
-						)
-
-/*/datum/technology/sec_computers
-	name = "Security Computers"
-	desc = "Security Computers"
-	tech_type = RESEARCH_COMBAT
-
-	x = 0.2
-	y = 0.6
-	icon = "seccomputer"
-
-	required_technologies = list(/datum/technology/basic_combat)
-	required_tech_levels = list()
-	cost = 500
-
-	unlocks_designs = list(/datum/design/research/circuit/secdata, /datum/design/research/circuit/prisonmanage)*/
 
 /datum/technology/basic_lethal
 	name = "Basic Lethal Weapons"
@@ -258,21 +223,6 @@
 							/datum/design/research/item/weapon/centauri
 							)
 
-/datum/technology/riglaser_weaponry
-	name = "Hardsuit Laser Weaponry"
-	desc = "Hardsuit Laser Weaponry"
-	tech_type = RESEARCH_COMBAT
-
-	x = 0.8
-	y = 0.5
-	icon = "riglethals"
-
-	required_technologies = list(/datum/technology/laser_weaponry)
-	required_tech_levels = list()
-	cost = 5625
-
-	unlocks_designs = list(/datum/design/research/item/lasercannon, /datum/design/research/item/lasermount)
-
 //Armor
 /datum/technology/basic_armor
 	name = "Basic Armor Designs"
@@ -289,7 +239,6 @@
 
 	unlocks_designs = list(/datum/design/research/item/clothing/pirsarmorchest,
 							 /datum/design/research/item/clothing/pirsarmorhead,
-							 /datum/design/research/item/clothing/rig_cheap,
 							 /datum/design/research/item/clothing/tinfoil)
 
 /datum/technology/advanced_armor
@@ -332,4 +281,4 @@
 							/datum/design/research/item/weapon/hydrogen_welder,
 							/datum/design/research/item/weapon/hydrogrenade,
 							/datum/design/research/item/ammo/hydroflaskette,
-							/datum/design/research/item/ion_jaunt)
+							)

@@ -833,7 +833,7 @@ var/list/name_to_material
 
 /material/refined_scrap
 	name = MATERIAL_RSCRAP
-	stack_type = /obj/item/stack/sheet/refined_scrap
+	stack_type = /obj/item/stack/material/refined_scrap
 	icon_colour = "B7410E"
 	sheet_singular_name = "piece"
 	sheet_plural_name = "pieces"

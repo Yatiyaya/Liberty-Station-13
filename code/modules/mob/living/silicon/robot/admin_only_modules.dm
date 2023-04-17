@@ -6,9 +6,8 @@
 	name = "hunter seeker robot module"
 	languages = list(
 					LANGUAGE_COMMON = 1,
-					LANGUAGE_ILLYRIAN = 1,
 					LANGUAGE_CYRILLIC = 1,
-					LANGUAGE_JIVE = 0
+					LANGUAGE_SIGN = 0
 					//LANGUAGE_TERMINATOR = 1 this is not real
 					)
 
@@ -36,9 +35,8 @@
 	hide_on_manifest = TRUE
 	languages = list(
 					LANGUAGE_COMMON = 1,
-					LANGUAGE_ILLYRIAN = 1,
 					LANGUAGE_CYRILLIC = 1,
-					LANGUAGE_JIVE = 0
+					LANGUAGE_SIGN = 0
 					)
 
 	sprites = list(

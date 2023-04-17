@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/elektromagnetisch
-	name = "Elektromagnetisch Roach"
+	name = "Ion Roach"
 	desc = "A monstrous, dog-sized cockroach. This blue glowing one looks like its plusing with energy."
 	icon_state = "elektromagnetisch"
 	meat_amount = 2

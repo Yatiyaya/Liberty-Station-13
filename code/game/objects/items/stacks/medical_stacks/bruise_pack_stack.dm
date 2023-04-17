@@ -191,7 +191,7 @@
 	name = "CAPSA medical gauze"
 	singular_name = "CAPSA medical gauze"
 	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would. Made, with love, by CAPSA Medical staff."
-	icon_state = "sr_brutepack"
+	icon_state = "capsa_brutepack"
 	preloaded_reagents = list("quickclot" = 5, "sterilizine" = 10)
 	fancy_icon = TRUE
 	disinfectant  = TRUE
@@ -221,3 +221,4 @@
 	if(fancy_icon)
 		icon_state = "[initial(icon_state)][amount]"
 	..()
+

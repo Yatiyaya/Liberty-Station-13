@@ -1,8 +1,8 @@
 //Jobs depatment lists for use in constant expressions
-#define JOBS_COMMAND "Premier","Steward","Deputy Chief","Union Chief","Chief Surgery Overseer","Research Provost","Casino Manager","Oathpledge","Field Shepherd"
+#define JOBS_COMMAND "Premier","Steward","Deputy Chief","Union Chief","Chief Surgeon Overseer","Research Provost","Casino Manager","Oathpledge","Field Shepherd"
 #define JOBS_SECURITY "Deputy Chief", "Armorer", "Criminal Investigator", "Sentry", "Watchmen"
 #define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician"
-#define JOBS_MEDICAL "Chief Surgery Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
+#define JOBS_MEDICAL "Chief Surgeon Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
 #define JOBS_SCIENCE "Research Provost","PIRS Scientist","PIRS Roboticist"
 #define JOBS_SERVICE "Casino Manager","Janitor","Fixer","Casino Worker"
 #define JOBS_PROSPECTOR "Field Shepherd","Trapper","Shipbreaker"
@@ -18,13 +18,13 @@
 
 
 #define DEPARTMENT_COMMAND		"Liberty Employment"
-#define DEPARTMENT_MEDICAL		"Chirurgeons And Pharmaceutical Sciences Association"
+#define DEPARTMENT_MEDICAL		"Chirurgeons And Pharmaceutical Sciences Association Group"
 #define DEPARTMENT_ENGINEERING	"Terra-Therma Worker's Union"
-#define DEPARTMENT_SCIENCE		"Phorous Institute of Research and Science"
+#define DEPARTMENT_SCIENCE		"Phokorus Institute of Research and Science"
 #define DEPARTMENT_SECURITY		"Liberty Watch"
 #define DEPARTMENT_SERVICE		"Skylight Syndicate"
 #define DEPARTMENT_PROSPECTOR	"Fontaine Heavy Industries"
-#define DEPARTMENT_CHURCH		"Custodians of Bonfires"
+#define DEPARTMENT_CHURCH		"Custodians of Bonfire"
 #define DEPARTMENT_CIVILIAN		"Contractors"
 #define DEPARTMENT_INDEPENDENT	"Contractors"
 

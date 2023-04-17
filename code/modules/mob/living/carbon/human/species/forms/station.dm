@@ -196,9 +196,9 @@
 	deform = 'icons/mob/human_races/r_def_nevrean.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
 
-/datum/species_form/capsa_synthetic
+/datum/species_form/pirs_synthetic
 	playable = FALSE
-	name = FORM_CAPSASYNTH
+	name = FORM_PIRSYNTH
 	blood_color = "#191919"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'

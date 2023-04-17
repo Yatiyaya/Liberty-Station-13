@@ -245,12 +245,12 @@ abbr {
 
 .danger
 {
-	color: #ff0000;	
+	color: #ff0000;
 	font-weight: bold;
 }
 .warning
 {
-	color: #ff0000;	
+	color: #ff0000;
 	font-style: italic;
 }
 
@@ -474,10 +474,10 @@ div.notice {
 }
 
 .colorBox {
-	display: inline-block; 
-	width: 20px; 
-	height: 8px; 
-	border:1px solid #000; 
+	display: inline-block;
+	width: 20px;
+	height: 8px;
+	border:1px solid #000;
 	padding: 0px;
 }
 
@@ -648,7 +648,7 @@ div.notice {
     text-align: center;
 }
 
-table.fixed { 
+table.fixed {
 	table-layout:fixed;
 }
 
@@ -834,8 +834,8 @@ th.bot {
 	visibility		: hidden;
 	opacity			: 0;
 	transition		: opacity 0.3s linear;
-	padding			: 10px; 
-	margin-left		: 8px; 
+	padding			: 10px;
+	margin-left		: 8px;
 	width			: 200px;
 	z-index			: 999;
 }
@@ -985,12 +985,12 @@ img.sciTechTreeIconToolTip {
 .icon-gygaxultra { background-position: -160px -224px; }
 .icon-durand { background-position: -192px -224px; }
 .icon-vindicator { background-position: -224px -224px; }
-
 .icon-mechgrenadelauncher { background-position: 0px -256px; }
 .icon-mechlaser { background-position: -32px -256px; }
 .icon-mechrcd { background-position: -64px -256px; }
 .icon-mecharmor { background-position: -96px -256px; }
 .icon-mechteleporter { background-position: -128px -256px; }
+
 .icon-rigscanner { background-position: -160px -256px; }
 .icon-rigtaser { background-position: -192px -256px; }
 .icon-rignuclearreactor { background-position: -224px -256px; }
@@ -1062,7 +1062,7 @@ img.sciTechTreeIconToolTip {
 
 .tradeDiscovered:hover {
     background: #3fB44c;
-}	
+}
 
 .tradeNotDiscovered {
 	background: #942f3c;

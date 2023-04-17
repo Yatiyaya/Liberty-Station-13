@@ -586,9 +586,6 @@
 /obj/item/paper/slavic
 	language = LANGUAGE_CYRILLIC
 
-/obj/item/paper/illyrian
-	language = LANGUAGE_ILLYRIAN
-
 /obj/item/paper/jana
 	language = LANGUAGE_JANA
 
@@ -598,11 +595,11 @@
 /obj/item/paper/opifex
 	language = LANGUAGE_OPIFEXEE
 
-/obj/item/paper/latin
-	language = LANGUAGE_LATIN
-
 /obj/item/paper/romana
 	language = LANGUAGE_ROMANA
+
+/obj/item/paper/coalition
+	language = LANGUAGE_COALITION
 
 /obj/item/paper/cult
 	language = LANGUAGE_CULT	//May god save your soul.

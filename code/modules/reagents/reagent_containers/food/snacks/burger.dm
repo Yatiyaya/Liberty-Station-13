@@ -212,8 +212,8 @@
 //Roach burgers
 
 /obj/item/reagent_containers/food/snacks/kampferburger
-	name = "kampfer burger"
-	desc = "A burger made out of a kampfer roach. Tasty but chewy."
+	name = "roach burger"
+	desc = "A burger made out of a roach. Tasty but chewy."
 	icon_state = "kampferburger"
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=11)
@@ -224,8 +224,8 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/panzerburger
-	name = "panzer burger"
-	desc = "A burger made out of a panzer roach. Surprisingly heavy."
+	name = "exoskeleton roach burger"
+	desc = "A burger made out of a exoskeleton roach. Surprisingly heavy."
 	icon_state = "panzerburger"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=11)
@@ -236,8 +236,8 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/jagerburger
-	name = "jager burger"
-	desc = "A burger made out of a jager roach. The hunter becomes the hunted."
+	name = "hunter-killer roach burger"
+	desc = "A burger made out of a hunter-killer roach. The hunter becomes the hunted."
 	icon_state = "jagerburger"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
@@ -248,8 +248,8 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/seucheburger
-	name = "seuche burger"
-	desc = "A burger made out of a seuche roach. This can't be healthy."
+	name = "vapour burger"
+	desc = "A burger made out of a vapour roach. This can't be healthy."
 	icon_state = "seucheburger"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
@@ -272,7 +272,7 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/fuhrerburger
-	name = "fuhrer burger"
+	name = "overlord roach burger"
 	desc = "A burger made out of a fuhrer roach. Consume the king of bugs."
 	icon_state = "fuhrerburger"
 	bitesize = 3
@@ -284,7 +284,7 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/kaiserburger
-	name = "kaiser Burger"
+	name = "hivelord roach Burger"
 	desc = "The rarest experience for your taste buds"
 	icon_state = "kaiserburger"
 	bitesize = 3

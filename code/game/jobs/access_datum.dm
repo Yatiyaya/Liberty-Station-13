@@ -244,10 +244,10 @@
 	desc = "Virology"
 	region = ACCESS_REGION_MEDBAY
 
-/var/const/access_cmo = 40
-/datum/access/cmo
-	id = access_cmo
-	desc = "CAPSA Biolab Overseer"
+/var/const/access_cso = 40
+/datum/access/cso
+	id = access_cso
+	desc = "CAPSA Surgeon Overseer"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_merchant = 41

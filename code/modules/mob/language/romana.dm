@@ -9,9 +9,7 @@
 	key = "m"
 	shorthand = "LR"
 	partial_understanding = list(
-		LANGUAGE_LATIN = 30,
 		LANGUAGE_CYRILLIC = 20,
-		LANGUAGE_ILLYRIAN = 20,
 		LANGUAGE_EURO = 25,
 		LANGUAGE_COMMON = 10
 	)

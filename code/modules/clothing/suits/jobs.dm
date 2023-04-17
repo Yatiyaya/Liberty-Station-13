@@ -329,9 +329,10 @@
 
 /obj/item/clothing/suit/storage/surgical_apron
 	name = "surgical apron"
-	desc = "Excellent blood collector."
+	desc = "A sterile blue apron used to take the brunt of blood from surgeries."
 	icon_state = "surgeon"
 	item_state = "surgeon"
+	permeability_coefficient = 0.10
 	blood_overlay_type = "armor"
 	extra_allowed = list(
 		/obj/item/tool/bonesetter,

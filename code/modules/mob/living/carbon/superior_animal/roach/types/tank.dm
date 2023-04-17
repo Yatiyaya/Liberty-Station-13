@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/tank
-	name = "Panzer Roach"
+	name = "Exoskeleton Roach"
 	desc = "A monstrous, dog-sized cockroach. This one looks more robust than others."
 	icon_state = "panzer"
 	meat_amount = 4

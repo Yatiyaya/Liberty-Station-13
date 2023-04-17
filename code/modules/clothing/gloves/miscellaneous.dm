@@ -332,3 +332,14 @@
 	siemens_coefficient = 0.5
 	permeability_coefficient = 0.05
 	price_tag = 50
+
+/obj/item/clothing/gloves/thick/swat/capsa
+	name = "CAPSA combat gloves"
+	desc = "Fluffy yet sterile gloves that are temperature and shock proof with additional padding for protection on inclement weather. These are dyed in CAPSA green"
+	icon_state = "capsa_combat"
+	item_state = "capsa_combat"
+	armor_list = list(melee = 25, bullet = 20, energy = 20, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	price_tag = 250
+

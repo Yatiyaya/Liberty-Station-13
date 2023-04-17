@@ -285,7 +285,6 @@
 	name_plural = "Naramadi"
 	default_form = FORM_NARAMAD
 	obligate_form = TRUE
-	reagent_tag = IS_NARAMAD
 	unarmed_types = list(/datum/unarmed_attack/claws/strong, /datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite/strong, /datum/unarmed_attack/tail)
 	num_alternate_languages = 0
 	name_language = null
@@ -452,6 +451,7 @@
 	name = "Cindarite"
 	name_plural = "Cindarites"
 	default_form = FORM_CINDAR
+	reagent_tag = IS_CINDERITE
 	obligate_form = TRUE
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite, /datum/unarmed_attack/tail)
 	num_alternate_languages = 2
@@ -635,7 +635,7 @@
 /datum/species/capsa_synthetic
 	name = "CAPSA synth"
 	name_plural = "synthetics"
-	default_form = FORM_CAPSASYNTH
+	default_form = FORM_PIRSYNTH
 	obligate_name = TRUE
 	obligate_form = TRUE
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)

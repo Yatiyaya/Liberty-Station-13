@@ -225,6 +225,18 @@
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
 
+/datum/craft_recipe/clothing/capsa_fullbody
+	name = "full body CAPSA plate carrier"
+	result = /obj/item/clothing/suit/armor/vest/capsa/fullbody
+	steps = list(
+		list(/obj/item/clothing/suit/armor/vest/capsa, 1, "time" = 30),
+		list(/obj/item/clothing/under, 1),
+		list(QUALITY_CUTTING, 15, 30),
+		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTIC),
+		list(QUALITY_ADHESIVE, 15, 30)
+	)
+
 /datum/craft_recipe/clothing/mtua
 	name = "marshal tactical unit armor"
 	result = /obj/item/clothing/suit/armor/vest/ironhammer/full
