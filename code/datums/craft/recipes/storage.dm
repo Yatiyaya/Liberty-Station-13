@@ -79,8 +79,8 @@
 	related_stats = list(STAT_COG)
 
 /datum/craft_recipe/storage/chem_bag
-	name = "chemistry bag"
-	result = /obj/item/storage/bag/chemistry
+	name = "medical bag"
+	result = /obj/item/storage/bag/capsa
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 30),

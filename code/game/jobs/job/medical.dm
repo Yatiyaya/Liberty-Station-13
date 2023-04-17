@@ -17,7 +17,7 @@
 
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_genetics, access_heads,
-		access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+		access_chemistry, access_virology, access_cso, access_surgery, access_RC_announce,
 		access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels,
 		access_external_airlocks, access_paramedic, access_research_equipment, access_medical_suits,
 		access_robotics, access_xenobiology
@@ -41,20 +41,20 @@
 							 /datum/computer_file/program/chem_catalog,
 							 /datum/computer_file/program/reports)
 
-	description = "The Chief Biolab Overseer is the head of the medical branch of the CAPSA, preserving and improving lives.<br>\
-	Your main responsibility is to keep everyone alive, as is the objective of your department. Prioritize health over most other concerns. <br>\
-	A variety of medical staff work under your command. Although these roles are clear-cut compared to the research branch, direct them appropriately.<br>\
-	Of course, remember that you are a doctor yourself - feel free to help with less specialized activities to ease the burden.<br>\
-	The Medical wing also falls under the ownership of CAPSA. You may use their resources - and they may use yours - as needed."
+	description = "The Chief Surgeon Overseer is the head of the CAPSA Group hospital, preserving and improving lives.<br>\
+	Your main responsibility is to keep everyone alive and healthy, as is the objective of your department. Prioritize health over most other concerns. <br>\
+	A variety of medical staff work under your command. Make sure they maintain a steady workflow by directing their efforts appropiately.<br>\
+	While you are a doctor yourself, remember to direct work to your subordinates first, and assume direct work yourself only on situations that require it.<br>\
+	Your main job is to make sure everyone is doing their job, assign duties to your doctors and only perform surgery or triage to ease the burden on your colleagues."
 
-	duties = "Direct the doctors under your command towards the bettering of all mankind.<br>\
+	duties = "Direct the doctors under your command towards the bettering of all colonists.<br>\
 	Dispatch your paramedics to distress calls, and corpse recoveries as needed.<br>\
 	Use department funds to purchase medical supplies and equipment as needed.<br>\
 	Advise the council on medical issues that concern the crew.<br>\
-	Advise the crew on ethical issues.<br>\
-	In times of crisis, lock down the medbay to protect those within, from outside threats."
+	Make sure the average colonist is mentally sound for the development of their duties.<br>\
+	Your hospital is your sanctuary, protect it, and everyone within, with force - lethal even, if needed be."
 
-/obj/landmark/join/start/cmo
+/obj/landmark/join/start/cso
 	name = "Chief Surgeon Overseer"
 	icon_state = "player-green-officer"
 	join_tag = /datum/job/cso
@@ -95,14 +95,15 @@
 							/datum/computer_file/program/camera_monitor)
 
 	description = "The Doctor is a professional medic and surgeon dedicated to healing the sick and injured, at all costs.<br>\
-	A broad range of medical procedures fall under your purview - diagnostics, general treatment, surgery, and virology.<br>\
-	You are not expected to be an expert in all: specializing in an area is fine. Divide tasks amongst colleagues, with CBO guidance.<br>\
-	Remember that chemistry has a dedicated specialist. Avoid this department unless it is notably short-staffed.<br>\
-	Due to the nature of your work, you may find yourself confined to the department for the shift majority. Don't abandon patients."
+	A broad range of medical procedures fall under your purview - diagnostics, general treatment, surgery, and even genetics, to a degree.<br>\
+	You are not expected to be an expert in all: specializing in an area is fine. Divide tasks amongst colleagues through mutual agreement, or under CSO guidance.<br>\
+	You are expected to perform chemistry above the Paramedics, unless it is not your area of expertise. However, assigning prescriptions is your authority.<br>\
+	You are a medic as much as you are a scholar, always be learning with humbleness how to better provide service to your patients."
 
 	duties = "Heal the sick and injured, whatever their complaint.<br>\
-		Diagnose illnesses, offer general services, perform surgery, or even study viruses.<br>\
-		Fill in at chemistry if a Chemist is unavailable."
+		Diagnose illnesses, offer general services for health improvement, perform surgery.<br>\
+		Fill in colonist's prescriptions at chemistry, diagnose patients and assign prescriptions to them if needed.<br>\
+		Coordinate with the Liaison Psychiatrist for prescriptions and changes to patient's medical records."
 
 /obj/landmark/join/start/doctor
 	name = "Medical Doctor"
@@ -123,7 +124,7 @@
 	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
-	outfit_type = /decl/hierarchy/outfit/job/medical/medic
+	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	disallow_species = list(FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	health_modifier = 5
@@ -144,17 +145,17 @@
 	software_on_spawn = list(/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/scanner)
 
-	description = "Members of the recovery team are not men of science nor medicine, they are strictly in charge of enforcing the chief biolabs orders and sometimes the chief research overseer's orders.<br>\
-	Your primary role is that of an armed thug for medical. You make sure that medical remains safe by ensuring people don't trespass or steal items and remove those who shouldn't be there, by force if necessary.<br>\
-	Your secondary responsibility is that of an CAPSA enforcer. Actions that require in house enforcement such as aiding doctors and security with violent patients in medical, securing the virology lab during an outbreak, and aiding in the destruction of escape slimes or kudzu from science.<br>\
-	Your third duty is to aid medical doctors and act as a paramedic in fixing patients and collecting patients, this can include retrieving chemicals, doing basic triage, and going out to recover injured patients.<br>\
-	You are fully licensed to enforce the will of the overseer and to protect the CAPSA, its staff, and your patients with your personal weapons and armor.<br>\
-	It's worth noting that you function heavily as a nurse when not acting as muscle and treatment of patients should be priority, in particular when assisting doctors."
+	description = "Paramedics are the backbone of any medical situation, responding to distress call to reach dead or dying colonists and rushing to their aid, clearing the site of hostiles and performing field triage before evacuating.<br>\
+	Your primary role is that of recovery. You respond to distress calls within the colony, and make sure to arrive before people succumb to their wounds.<br>\
+	Your secondary responsibility is that of a CAPSA enforcer. Actions that require in house enforcement such as aiding doctors and Watch with violent patients in the hospital, or clearing the entrance for rubberneckers. You are the equivalent of a Watch officer with jurisdiction limited only within the CAPSA hospital.<br>\
+	Your third duty is to aid medical doctors - handle minimal triage for them while they tend to the more critically wounded, perform chemistry if qualified or fetch medicine for the doctors, and make sure patients are stable before and during doctor treatment.<br>\
+	You are fully licensed to enforce the will of the Overseer and to protect the CAPSA Hospital, its staff, and your patients with your personal weapons and armor.<br>\
+	It's worth noting that you are NOT qualified to perform any kind of surgery, barring cases of a COMPLETE lack of doctors on duty."
 
-	duties = "Act as a guard for medical, ensuring unneeded colonist leave and nothing is stolen.<br>\
+	duties = "Act as a guard for medical, ensuring unneeded colonists leave and nothing is stolen.<br>\
 		Aid medical doctors in any way you can.<br>\
 		Act as a nurse for minor injuries, treating patients that a doctor needn't bother with.<br>\
-		Ensure that any outbreaks are contained, such as slimes, infected monkeys, or kudzu."
+		Ensure that people arrive alive to the Hospital if possible, or otherwise retrieve their corpses no matter how dangerous the zone is."
 
 /obj/landmark/join/start/medic////////////
 	name = "Paramedic"
@@ -193,17 +194,18 @@
 							/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/camera_monitor)
 
-	description = "The Psychiatrist is a mental specialist that works to help colonists through their various issues and concerns.<br>\
+	description = "The Liaison Psychiatrist is a mental specialist that works to help colonists through their various issues and concerns.<br>\
 	In some ways you are a professional conversationalist. Despite knowing advanced therapy techniques, sometimes a mere chat can work wonders.<br>\
-	More eventful days may involve you having particularly unstable colonists sectioned, or interviewing criminals in coordination with Security.<br>\
+	More eventful days may involve you having particularly unstable colonists sectioned, or interviewing criminals in coordination with Liberty Watch.<br>\
 	Remember that patient confidentiality is highly important in your profession. Keep sensitive information between you and the patient.<br>\
-	CAPSA psychs are also one of the most psionically adept members of the colony, with an innate understanding of how the mind works.<br>\
-	If you become a psion, you have a greater variety of beneficial powers which you can use to aid the colony."
+	If this confidentiality should place yourself, another person, or the entirety of the colony in danger, this vow may be broken by notifying the Overseer, or the Watch in absence thereof.<br>\
+	Remember to make notes and ammends to patients' Medical Records, to print your conclussions, and to communicate with all doctors regarding your assesment. <br>\
+	Communication is, after all, the very definition of your job, both with patients and with colleagues."
 
-	duties = "Speak with anyone who desires help, no matter their rank or relation.<br>\
-		Prescribe medicine and offer therapy courses for those who need it.<br>\
+	duties = "Speak with anyone who desires help, no matter their rank or relation, and see to the betterment of their psyche.<br>\
+		If a Psychiatrist and not a Psychologist, prescribe medicine and offer therapy courses for those who need it. Otherwise leave prescription to a Doctor.<br>\
 		Determine if individuals are fit for work or not. Help those who are proven unfit.<br>\
-		Use your psionic gifts to assist the colony."
+		Communicate with your department and security regarding the ability or inability of a colonist to continue performing their duties."
 
 /obj/landmark/join/start/psychiatrist
 	name = "Liaison Psychiatrist"

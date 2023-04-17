@@ -43,6 +43,10 @@
 		return
 	..()
 
+/*****************/
+/* PIRS ODDITIES */
+/*****************/
+
 /obj/item/device/von_krabin
 	name = "Von-Krabin Stimulator"
 	desc = "A strange anomalous item given to the research directors of Phokorus Institute as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of absolute uses to enhance the abilities of others."
@@ -127,6 +131,9 @@
 	currently_affected = affected
 	return got_follower
 
+/**************************/
+/* CAPSA MEDICAL ODDITIES */
+/**************************/
 
 /obj/item/reagent_containers/enricher
 	name = "Molitor-Riedel Enricher"
@@ -206,6 +213,49 @@
 		return TRUE
 	if(standard_dispenser_refill(user, target))
 		return TRUE
+
+/obj/item/gun/matter/staff_of_asclepius
+	name = "\improper Staff of Asclepius"
+	desc = "An exquisitely ornate rod with a life-like snake coiling around it. \
+			An expensive piece of Custodian artisan artwork, provided to CAPSA from the very first days \
+			of crashlanding as a symbol of their unity towards the well-being of the people. \
+			Uses biomatter as fuel to fire bolts of miraculous healing to those struck by it."
+	icon = 'icons/obj/guns/matter/CAPSA_staff.dmi' // Sprites by Nayu (Monochrome#9090)
+	icon_state = "rod_of_asclepius"
+	slot_flags = SLOT_BELT|SLOT_BACK
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2, TECH_BIO = 6)
+	matter_type = MATERIAL_BIOMATTER
+	max_stored_matter = 50 // Unless Custodians can provide matter for this, it's gonna have a long use before it becomes a glorified staff
+	projectile_cost = 1
+	projectile_type = /obj/item/projectile/beam/sniper/healing/harmony
+	fire_sound = 'sound/weapons/magical.ogg'
+	force = WEAPON_FORCE_ROBUST
+	armor_penetration = ARMOR_PEN_EXTREME
+	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
+	fire_delay = 15
+	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_BIOMATTER = 20, MATERIAL_SILVER = 10)
+	price_tag = 3000
+	w_class = ITEM_SIZE_HUGE
+
+/obj/item/gun/matter/staff_of_asclepius/attack()
+	..()
+	usr.setClickCooldown(DEFAULT_ATTACK_COOLDOWN*1.2)
+
+/obj/item/gun/matter/staff_of_asclepius/New()
+	..()
+	stored_matter = 50 // Fueled up and ready to go
+	GLOB.all_faction_items[src] = GLOB.department_moebius // TODO: Separate department_moebius into PIRS and CAPSA respectively
+
+/obj/item/gun/matter/staff_of_asclepius/Destroy()
+	for(var/mob/living/carbon/human/H in viewers(get_turf(src)))
+		LEGACY_SEND_SIGNAL(H, COMSIG_OBJ_FACTION_ITEM_DESTROY, src)
+	GLOB.all_faction_items -= src
+	GLOB.moebius_faction_item_loss++
+	..()
+
+/*************************/
+/* TERRA-THERMA ODDITIES */
+/*************************/
 
 /obj/item/device/techno_tribalism
 	name = "Union Perfection Cube"
@@ -468,6 +518,10 @@ No more of that.
 			H.stats.changeStat(stat, -10)
 		var/neko = uppertext(src.name)
 		to_chat(H, SPAN_DANGER(pick("LIFE IS RUINED FOR ME! I CANNOT FIND [neko]!", "WHO STOLE MY [neko]!", "WHERE IS [neko]?!", "WHY I CANNOT FIND [neko]?!")))
+
+/*****************************/
+/* CUSTODIANS OF THE BONFIRE */
+/*****************************/
 
 /obj/item/tool/sword/crusader/nt_sword_truth
 	name = "Joyeuse"

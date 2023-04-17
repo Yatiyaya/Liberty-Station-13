@@ -44,9 +44,8 @@
 #define IS_MARQUA 5
 #define IS_KRIOSAN 6
 #define IS_AKULA 7
-#define IS_TREE 8
+#define IS_CINDERITE 8
 #define IS_OPIFEX 9
-#define IS_NARAMAD 10
 
 #define CE_STABLE			"stable" // Inaprovaline
 #define CE_ANTIBIOTIC		"antibiotic" // Spaceacilin

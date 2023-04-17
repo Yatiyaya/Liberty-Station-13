@@ -923,6 +923,18 @@
 	flash_protection = FLASH_PROTECTION_MINOR
 	max_upgrades = 2
 
+// CAPSA
+
+/obj/item/clothing/head/helmet/pirssuit/cso
+	name = "Surgeon Overseer's cowl helmet"
+	desc = "An airtight and sterile helmet in the form of a plague doctor's mask, hooded with silk fibroins. \
+			Offers excellent protection against bacteria and doubles as a gas mask."
+	icon_state = "plague_knight"
+	item_state = "plague_knight"
+	armor_list = list(melee = 35, bullet = 25, energy = 20, bomb = 35, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+
 //////////////
 
 /*
@@ -1513,9 +1525,10 @@
 
 /obj/item/clothing/head/helmet/faceshield/paramedic
 	name = "advanced paramedic helmet"
-	desc = "A smart helmet that aids in medical tracking."
-	icon_state = "trauma_team"
-	item_state = "trauma_team"
+	desc = "A smart helmet that aids in medical tracking. It will periodically alert its user of people in critical condition."
+	description_info = "Tracking of suit sensors' alert can be turned off by alt-clicking the helmet."
+	icon_state = "paramed_helm"
+	item_state = "paramed_helm"
 	flags_inv = HIDEEARS|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT
 	tint_down = TINT_NONE
@@ -1604,6 +1617,33 @@
 		speaker_enabled = TRUE
 		report_health_alerts()
 
+/obj/item/clothing/head/helmet/faceshield/paramedic/toggle()
+	set category = "Object"
+	set name = "Adjust face shield"
+	set src in usr
 
+	if(!usr.incapacitated())
+		src.set_is_up(!src.up)
 
+		if(src.up)
+			to_chat(usr, "You open the hatches of the [src].")
+		else
+			to_chat(usr, "You close the hatches of the [src] to protect your face.")
+
+		usr.update_action_buttons()
+
+/obj/item/clothing/head/helmet/pirssuit/cso
+	name = "Chief Surgeon Overseer's plague helmet"
+	desc = "A robust, airtight helmet with air filtration systems fashioned in the shape of a crow mask from the plague doctors of antiquity. \
+			An exquisite pattern of silk fibroin adorns its exterior, giving it the appearance of a hood."
+	icon_state = "plague_knight"
+	item_state = "plague_knight"
+	armor_list = list(melee = 35, bullet = 25, energy = 20, bomb = 35, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_STEEL = 20) // TODO: Add silk fibroin matter once it's coded in
+	max_upgrades = 2
 

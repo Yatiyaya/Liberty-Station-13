@@ -126,7 +126,7 @@
 	shorthand = "KO"
 	syllables = list("Frau", "Mann", "Waffe", "Schiff", "Bombe", "Explosion", "Grenze", "Strasse", "Halle", "Pistole", "Gewehr", "Uniform", "Kind", "Arzt", \
 					 "und", "ja", "nein", "vielleicht", "ob", "Hund", "Hundt", "katse", "Rüde", "Pleite", "Schreckschraube", "Klammer", "fahren","Raumschiff", \
- 					 "Serbien", "Eisenhammer", "CAPSA", "Atmosphaere", "Generator", "Ingenieur", "Religion", "Ratte", "Priester", "Käfer", "Armee", "Regierung", "neu", \
+ 					 "Serbien", "Eisenhammer", "Atmosphaere", "Generator", "Ingenieur", "Religion", "Ratte", "Priester", "Käfer", "Armee", "Regierung", "neu", \
  					 "fuß", "braver", "Hoffnung", "schauen", "sterben", "elektrisch", "Teufel", "kurieren", "Fleisch", "trinken", "Auftrag", "Hilfe", "Medizin", "zeppelin", \
  					 "verfallen", "Verfall", "National", "Laser", "Strom", "Gruppe", "Verteidigung", "verteidigen", "suche", "Auge", "Hand", "Bein", "Kopf", \
  					 "Flucht", "teufel", "Ritter", "Einfluss", "Einfall", "Muesli", "Wand", "Fenster", "Metall", "Holz", "Glas", "platz",  \
@@ -152,7 +152,7 @@
 	has_written_form = FALSE //Lore reason - Warrior culture, likely did not adapt much of a writing system since it was unneeded. Literacy / Acedmia done in foreign tongues.
 	partial_understanding = list(
 		LANGUAGE_JANA = 10,
-		LANGUAGE_JIVE = 20
+		LANGUAGE_SIGN = 20
 	)
 	shorthand = "AQ"
 	syllables = list("qy","bok","mok","yok","dy","gly","ryl","byl","dok","forbici", "tarem", "n'ath", "reth", "sh'yro", "eth", "d'raggathnor","niii",
@@ -178,21 +178,25 @@
 	space_chance = 20
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!") //Todo: Add actual stuff here. This is borrowed from Bay skrell because I'm unoriginal.
 
-//Naramad language. full credit to Yanniert for all of the details herein contained.
-/datum/language/merp
-	name = LANGUAGE_MERP
-	desc = "A crude pidgin tongue, not created by it's supposedly native speakers, but by their foreign overlords. Enforced as the only legal native language of the Naramadi people by the Federation as a means to unify the planet and make administrative work easier, while allowing them to keep a semblance of native culture."
-	speech_verb = list("says", "clicks")
-	ask_verb = list("chirps")
-	exclaim_verb = list("croaks")
+//Cinderite racial language. Lore: Nomadic language, one of the oldest around in the known universe that is still alive and spoken.
+/datum/language/cinderite
+	name = LANGUAGE_CINDERITE
+	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "o"
 	flags = RESTRICTED
-	colour = "rough"
-	key = "n"
-	has_written_form = TRUE
-	partial_understanding = list(
-		LANGUAGE_COMMON = 10,
-		LANGUAGE_EURO = 10
+	space_chance = 40
+	syllables = list(
+		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
+		"ha", "ah", "he", "eh", "hi", "ih", "ho", "oh", "hu", "uh", "hs", "sh",
+		"la", "al", "le", "el", "li", "il", "lo", "ol", "lu", "ul", "ls", "sl",
+		"ka", "ak", "ke", "ek", "ki", "ik", "ko", "ok", "ku", "uk", "ks", "sk",
+		"sa", "as", "se", "es", "si", "is", "so", "os", "su", "us", "ss", "ss",
+		"ra", "ar", "re", "er", "ri", "ir", "ro", "or", "ru", "ur", "rs", "sr",
+		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
-	shorthand = "NP"
-	space_chance = 5
-	syllables = list("Punainen", "Koira", "Tuolla", "Rikas", "syvä", "kivääri", "ulkomaalainen", "ihmisen", "sammakko", "taivaaseen", "Koti", "tilaa",  "sinä", "vastustamaton", "heimo", "klaani",  "kotitalous", "raha", "iso", "pieni", "sairaus", "ruokaa", "alkoholia", "kana", "asevelvollisuus", "alus", "joki", "saari", "ase", "veitsi", "juusto", "pää", "häntää", "taistelevat", "halaamalla", "ystävät", "ystävyys", "kansainyhteisö", "liitto", "aurinko", "missä", "mitä", "kun", "Miten", "siksi", "laulu", "kalastaa", "hämärä", "epäilyttävä", "luottamus", "kusipää", "paskiainen", "ääliö", "munata", "*!*")
+	shorthand = "UT"
+	has_written_form = TRUE

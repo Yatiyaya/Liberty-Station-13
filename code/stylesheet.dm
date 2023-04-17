@@ -94,17 +94,15 @@ h1.alert, h2.alert		{color: #000000;}
 .rough					{font-family: Trebuchet MS, cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}
 .slavic					{color: #635d17}
-.illyrian				{color: #Ad6f1d}
-.jive					{color: #666666}
+.sign					{color: #666666}
 .euro					{color: #990000}
 .jana					{color: #993399}
-.latin					{color: #deb63d}
 .romana					{color: #ed7961}
 .yassari				{color: #5fbf4e}
 .kriosan				{color: #ff8000}
 .marqua					{color: #00FFFF}
 .akula					{color: #f8412c}
-.plant					{color: #882d17}
+.cinderite				{color: #228b22;}
 
 .interface				{color: #330033;}
 

@@ -306,10 +306,10 @@
 	icon_state = "meocloak"
 	desc = "A white cloak with black double stripe at edge."
 
-/obj/item/clothing/accessory/job/cape/mbo
-	name = "biolab overseer's cloak"
-	icon_state = "mbocloak"
-	desc = "A neon-cyan cloak with nanoleds on its animated medical cross pattern."
+/obj/item/clothing/accessory/job/cape/cso
+	name = "Chief Surgeon Overseer's cloak"
+	icon_state = "csocloak"
+	desc = "An ornate green cloak with white shoulderpads bearing the logo of the CAPSA Group, adorned with leds on the serpent's eye."
 
 /obj/item/clothing/accessory/job/cape/ihc
 	name = "warrant officer's cloak"
@@ -333,17 +333,17 @@
 	icon_state = "half_co"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
-/obj/item/clothing/accessory/halfcape/cbo
-	name = "Chief Biolab Officers holo-mantle"
-	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the CAPSA CBO. While sleek and sterile, it sadly lacks \
+/obj/item/clothing/accessory/halfcape/cso
+	name = "Chief Surgeon Overseer's holo-mantle"
+	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the CAPSA CSO. While sleek and sterile, it sadly lacks \
 	protection against man-made horrors beyond our comprehension."
-	icon_state = "half_cbo"
+	icon_state = "half_cso"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/RP
-	name = "Chief Researcher Overseers holo-mantle"
+	name = "Researcher Provost's holo-mantle"
 	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Phokorus Institute RP. Black and purple, a color scheme and style to match the \
-	mad scientist in every Overseer."
+	mad scientist in every Provost."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
@@ -983,6 +983,12 @@
 	desc = "A winter scarf made in Fontaine Logistic's colors."
 	icon_state = "fontaine_scarf"
 	item_state = "fontaine_scarf"
+
+/obj/item/clothing/accessory/scarf/capsa
+	name = "CAPSA winter scarf"
+	desc = "A winter scarf made in CAPSA Group's colors."
+	icon_state = "capsa_scarf"
+	item_state = "capsa_scarf"
 
 //Sprites by Michiyamenotehifunana and Occulist
 /obj/item/clothing/accessory/shemagh

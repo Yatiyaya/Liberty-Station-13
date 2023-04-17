@@ -20,7 +20,7 @@
 
 /obj/item/clothing/accessory/armband/medgreen
 	name = "medical EMT armband"
-	desc = "An armband with a teal stripe signifying the Medical branch of the CAPSA."
+	desc = "A white armband with a green stripe, signifying CAPSA medical personnel."
 	icon_state = "medical"
 
 /obj/item/clothing/accessory/armband/science
