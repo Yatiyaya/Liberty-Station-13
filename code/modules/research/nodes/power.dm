@@ -199,7 +199,7 @@
 
 	required_technologies = list(/datum/technology/omega_power)
 
-	required_tech_levels = list()
+	required_tech_levels = list(RESEARCH_ENGINEERING = 18)
 	cost = 2250
 
 	unlocks_designs = list(

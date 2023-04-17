@@ -30,7 +30,8 @@
 #define RESEARCH_POWERSTORAGE  /datum/tech/powerstorage
 #define RESEARCH_BLUESPACE     /datum/tech/bluespace
 #define RESEARCH_ROBOTICS      /datum/tech/robotics
-#define RESEARCH_SIMILACRUM       /datum/tech/similacrum
+#define RESEARCH_EXOSUIT	   /datum/tech/exosuit
+#define RESEARCH_SIMILACRUM    /datum/tech/similacrum
 #define RESEARCH_ILLEGAL       /datum/tech/illegal
 
 
