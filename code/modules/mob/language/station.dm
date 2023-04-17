@@ -4,12 +4,10 @@
 	key = "0"
 	partial_understanding = list(
 		LANGUAGE_MONKEY = 5,			//hehe le monkey
-		LANGUAGE_LATIN = 5,
 		LANGUAGE_JANA = 5,
 		LANGUAGE_ROMANA = 10,
 		LANGUAGE_EURO = 20,
 		LANGUAGE_CYRILLIC = 5,
-		LANGUAGE_ILLYRIAN = 5,
 		LANGUAGE_KRIOSAN = 10
 	)
 	flags = RESTRICTED
@@ -99,7 +97,6 @@
 	ask_verb = list("crudely asks")
 	exclaim_verb = list("blurts out")
 	partial_understanding = list(
-		LANGUAGE_ILLYRIAN = 60,
 		LANGUAGE_ROMANA = 20
 	)
 	space_chance = 80

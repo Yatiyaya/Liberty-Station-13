@@ -223,6 +223,39 @@
 		usr.update_action_buttons()
 		return 1 //Or you could just use this instead of making another subtype just for races
 
+// CAPSA
+/obj/item/clothing/mask/gas/capsa
+	name = "CAPSA gas mask"
+	desc = "A sterile, industrial gas mask designed to keep temperature stable, and block harmful gasses from its wearer.\
+			The visor provides excellent visibility even in snowstorms."
+	icon_state = "headhunter" // Katana ZERO reference. - Seb
+	flags_inv = HIDEEYES|HIDEFACE // Doesn't hide ears as it doesn't cover them
+	permeability_coefficient = 0.50
+	price_tag = 100
+
+
+/obj/item/clothing/mask/gas/capsa/toggle_style()
+	set name = "Adjust Style"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["NULL"] = "headhunter"
+	options["Industrial Black"] = "s10_plain"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your attire's style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
 
 //Sprite by INFRARED_BARON
 /obj/item/clothing/mask/gas/big_shot
@@ -359,8 +392,8 @@
 	icon_state = "srebreath_orange"
 
 /obj/item/clothing/mask/gas/bigguy/sleekmarshalguy
-	name = "sleek marshal rebreather"
-	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one carries the Marshal colors and has thicker filters."
+	name = "sleek Watch rebreather"
+	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one carries Watch colors and has thicker filters."
 	icon_state = "srebreath_marshal"
 
 /obj/item/clothing/mask/gas/bigguy/sleekpurpleguy

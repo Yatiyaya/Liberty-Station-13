@@ -61,14 +61,14 @@
 /datum/computer_file/report/recipient/borging/generate_fields()
 	..()
 	var/list/xo_fields = list()
-	add_field(/datum/report_field/instruction, "CAPSA")
+	add_field(/datum/report_field/instruction, "PIRS")
 	add_field(/datum/report_field/people/from_manifest, "Name (XO)")
 	add_field(/datum/report_field/people/from_manifest, "Name (subject)", required = 1)
 	add_field(/datum/report_field/date, "Date filed")
 	add_field(/datum/report_field/time, "Time filed")
 	add_field(/datum/report_field/instruction, "I, undersigned, hereby agree to willingly undergo a Regulation Lobotimization with intention of cyborgification or AI assimilation, and I am aware of all the consequences of such act. I also understand that this operation may be irreversible, and that my employment contract will be terminated.")
 	add_field(/datum/report_field/signature, "Subject's signature")
-	xo_fields += add_field(/datum/report_field/signature, "Researc Overseer's signature")
+	xo_fields += add_field(/datum/report_field/signature, "Research Provost's signature")
 	xo_fields += add_field(/datum/report_field/options/yes_no, "Approved")
 	for(var/datum/report_field/field in xo_fields)
 		field.set_access(access_edit = access_hop)
@@ -199,7 +199,7 @@
 	add_field(/datum/report_field/pencode_text, "Defense/Offense")
 	add_field(/datum/report_field/pencode_text, "Special Characteristic(s)")
 	add_field(/datum/report_field/pencode_text, "Classification")
-	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the foreman should fax the form to both the chief research overseer and the CAPSA owner, Nakharan Mkne , as well as keep a copy on file in their office alongside other mission reports.")
+	add_field(/datum/report_field/instruction, "On completion of this form and form approval, the Field Shepherd should fax the form to both the Research Provost and the PIRS First Administrator, Antoine Lavoisier, as well as keep a copy on file in their office alongside other mission reports.")
 
 //NT reports, mostly for Liaison but can be used by any NT personnel.
 

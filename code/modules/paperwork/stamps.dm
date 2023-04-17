@@ -45,12 +45,12 @@
 	icon_state = "stamp-pr"
 
 /obj/item/stamp/rd
-	name = "chief research overseer's rubber stamp"
+	name = "Research Provost's rubber stamp"
 	icon_state = "stamp-rd"
 
-/obj/item/stamp/cmo
-	name = "chief biolab overseer's rubber stamp"
-	icon_state = "stamp-cmo"
+/obj/item/stamp/cso
+	name = "Chief Surgeon Overseer's rubber stamp"
+	icon_state = "stamp-cso"
 
 /obj/item/stamp/denied
 	name = "\improper DENIED rubber stamp"

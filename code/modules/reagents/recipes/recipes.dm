@@ -910,19 +910,6 @@
 	result_amount = 3
 	catalysts = list("cronexidone" = 5)
 
-/datum/chemical_reaction/sterilizer_crystal
-	result = null
-	required_reagents = list("sterilizer" = 20, "sulfur" = 20, "tungsten" = 20)
-	result_amount = 1
-	maximum_temperature = 40
-	minimum_temperature = 0
-	blacklist_containers = list(/mob, /obj/machinery/microwave)
-
-/datum/chemical_reaction/sterilizer_crystal/on_reaction(var/datum/reagents/holder, var/created_volume)
-	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= created_volume, i++)
-		new /obj/item/stack/sterilizer_crystal(location)
-
 /datum/chemical_reaction/reviver
 	result = "reviver"
 	required_reagents = list("dermaline" = 1, "cronexidone" = 1, "sterilizine" = 1, "aminazine" = 1, "serotrotium" = 1, "polystem" = 1, "paroxetine" = 1,"rezadone" = 1,"spaceacillin" = 1,"rejuvenating_agent" = 1,"cordradaxon" = 1,"carthatoline" = 1,"dexalinp" = 1)

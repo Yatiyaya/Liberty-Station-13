@@ -225,9 +225,9 @@ Union RIG
 	desc = "Advanced magnetic boots that have a lighter magnetic pull, placing less burden on the wearer."
 	mag_slow = 1
 
-/***************************************
-	Hazmat: Chief Research Overseer
-****************************************/
+/******************************
+	Hazmat: Research Provost
+******************************/
 /obj/item/rig/hazmat
 	name = "AMI control module"
 	suit_type = "hazmat hardsuit"
@@ -375,13 +375,13 @@ Union RIG
 /obj/item/rig/recovery_suit
 	name = "recovery team suit control module"
 	suit_type = "Recovery Team hardsuit"
-	desc = "An upgraded hardsuit designed by the CAPSA for their Recovery Team division. While not as heavily armored as a proper hardsuit, the inbuilt medical systems make it highly prized. \
+	desc = "An upgraded hardsuit designed by the CAPSA Group for their Paramedics. While not as armored as a combat hardsuit, the in-built medical systems make it highly prized. \
 	It is best suited for surviving and combating wild life, but has reasonably decent kevlar plating and impact pads to absorb bullets and energy blasts."
 	icon_state = "response_team"
 	armor_list = list(
-		melee = 60,
+		melee = 45, // This is still barely below a combat hardsuit, mind you.
 		bullet = 35,
-		energy = 25,
+		energy = 30,
 		bomb = 50,
 		bio = 100,
 		rad = 100

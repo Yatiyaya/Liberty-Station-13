@@ -78,6 +78,11 @@
 	icon_state = "medshoes"
 	item_state = "medshoes"
 
+/obj/item/clothing/shoes/jackboots/medical
+	name = "CAPSA snow combat boots"
+	desc = "A pair of fluffy combat boots meant for travelling through snowy terrain, in CAPSA green color."
+	icon_state = "combat_med"
+
 /obj/item/clothing/shoes/workboots
 	name = "workboots"
 	desc = "A pair of steel-toed utility workboots."

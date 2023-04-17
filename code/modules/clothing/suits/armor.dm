@@ -553,7 +553,6 @@
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "science_armor"
-	icon_state = "science_armor"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_upgrades = 2
@@ -566,8 +565,37 @@
 						 /obj/item/device/scanner/gas,
 						 /obj/item/taperoll/engineering,
 						 /obj/item/storage/toolbox)
-	flags_inv = HIDEJUMPSUIT
 	matter = list(MATERIAL_STEEL = 40)
+
+// CAPSA
+
+/obj/item/clothing/suit/armor/vest/capsa
+	name = "CAPSA plate carrier"
+	desc = "A plate carrier with CAPSA stripes and a white cross on its back, denoting its wearer as medical personnel."
+	icon_state = "capsa_armor"
+	armor_list = list(
+		melee = 35,
+		bullet = 35,
+		energy = 35,
+		bomb = 10,
+		bio = 50,
+		rad = 0
+	)
+
+/obj/item/clothing/suit/armor/vest/capsa/fullbody
+	name = "full body CAPSA plate carrier"
+	desc = "A plate carrier with CAPSA stripes and a white cross, denoting its wearer as medical personnel.\nThis one has additional padding on the shoulders and knees for extra coverage."
+	icon_state = "capsa_armor_fullbody"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	stiffness = LIGHT_STIFFNESS
+
+/obj/item/clothing/suit/armor/vest/pirssuit/cso
+	name = "Chief Surgeon Overseer's armor suit"
+	desc = "A variant of the Phokorus Institute's Mark II suit, denoting a cross for medical personnel and sporting additional protection against biohazards."
+	icon_state = "cso_armor"
+	armor_list = list(melee = 35, bullet = 35, energy = 35, bomb = 30, bio = 75, rad = 50)
+	permeability_coefficient = 0.50
 
 /*
  * Specilized Armors
@@ -1430,9 +1458,9 @@
 
 /obj/item/clothing/suit/armor/paramedic
 	name = "advanced paramedic armor"
-	desc = "Lightweight and moderately armored suit meant to be used to rush into danger to save lives. Has a built in Acceleration, that when active gives a speed boost to save people faster."
-	icon_state = "trauma_team"
-	item_state = "trauma_team"
+	desc = "Lightweight and moderately armored suit meant to be used to rush into danger to save lives. Has a built in Acceleration module, that when active gives a speed boost to save people faster."
+	icon_state = "paramedic_armor"
+	item_state = "paramedic_armor"
 	matter = list(
 		MATERIAL_PLASTEEL = 10,
 		MATERIAL_STEEL = 5,
@@ -1442,8 +1470,8 @@
 		MATERIAL_SILVER = 2
 		)
 	armor_list = list(
-		melee = 30,
-		bullet = 30,
+		melee = 40,
+		bullet = 20,
 		energy = 30,
 		bomb = 10,
 		bio = 100,

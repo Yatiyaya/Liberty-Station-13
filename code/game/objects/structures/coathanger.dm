@@ -46,7 +46,7 @@
 	cut_overlays()
 	if (istype(coat, /obj/item/clothing/suit/storage/toggle/labcoat))
 		add_overlay(image(icon, icon_state = "coat_lab"))
-	if (istype(coat, /obj/item/clothing/suit/storage/toggle/labcoat/cmo))
+	if (istype(coat, /obj/item/clothing/suit/storage/toggle/labcoat/cso))
 		add_overlay(image(icon, icon_state = "coat_cmo"))
 	if (istype(coat, /obj/item/clothing/suit/storage/rank/insp_trench))
 		add_overlay(image(icon, icon_state = "coat_det"))

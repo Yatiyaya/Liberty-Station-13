@@ -41,7 +41,7 @@ for reference:
 	access_hydroponics = 35
 	access_manufacturing = 36
 	access_virology = 39
-	access_cmo = 40
+	access_cso = 40
 	access_merchant = 41
 	access_court = 42
 	access_clown = 43

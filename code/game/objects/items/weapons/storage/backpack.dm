@@ -177,6 +177,11 @@
 	desc = "It's a backpack especially designed for use in a sterile environment."
 	icon_state = "backpack_medical"
 
+/obj/item/storage/backpack/military/medical
+	name = "medical MOLLE"
+	desc = "Designed for field medics, holds a lot of equipment."
+	icon_state = "medical_molle"
+
 /obj/item/storage/backpack/security
 	name = "security backpack"
 	desc = "It's a very robust backpack."

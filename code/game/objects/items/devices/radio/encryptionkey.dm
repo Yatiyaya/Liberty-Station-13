@@ -66,12 +66,12 @@
 /obj/item/device/encryptionkey/headset_sci
 	name = "Phokorus Institute science radio encryption key"
 	icon_state = "sci_cypherkey"
-	channels = list("Science" = 1, "Medical" = 1)
+	channels = list("Science" = 1, "Medical(I)" = 1)
 
-/obj/item/device/encryptionkey/headset_moebius
+/obj/item/device/encryptionkey/headset_capsa
 	name = "CAPSA medical encryption key"
 	icon_state = "med_cypherkey"
-	channels = list("Science" = 1, "Medical" = 1, "Medical(I)" = 1)
+	channels = list("Medical" = 1, "Medical(I)" = 1)
 
 /obj/item/device/encryptionkey/headset_com
 	name = "council command radio encryption key"
@@ -90,13 +90,13 @@
 	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 1, "Church" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 1, "Plasmatag R" = 1, "Plasmatag G" = 1, "Plasmatag Y" = 1)
 
 /obj/item/device/encryptionkey/heads/rd
-	name = "research overseer's encryption key"
+	name = "research provost's encryption key"
 	icon_state = "rd_cypherkey"
-	channels = list("Science" = 1, "Medical" = 1, "Command" = 1)
+	channels = list("Science" = 1, "Medical(I)" = 1, "Command" = 1)
 	translate_binary = 1
 
-/obj/item/device/encryptionkey/heads/moebius
-	name = "biolab overseer's encryption key"
+/obj/item/device/encryptionkey/heads/capsa
+	name = "surgeon overseer's encryption key"
 	icon_state = "rd_cypherkey"
 	channels = list("Science" = 1, "Medical" = 1, "Medical(I)" = 1, "Command" = 1)
 

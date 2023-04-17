@@ -400,10 +400,10 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
 
-/obj/item/storage/hcases/med/medical_job_cbo
+/obj/item/storage/hcases/med/medical_job_cso
 	exspand_when_spawned = FALSE //No exspanding cheats
 
-/obj/item/storage/hcases/med/medical_job_cbo/populate_contents()
+/obj/item/storage/hcases/med/medical_job_cso/populate_contents()
 	new /obj/item/stack/medical/bruise_pack/advanced/large(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
@@ -415,7 +415,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	//Has medicals items inside it to save on spawn storage.
 	new /obj/item/storage/firstaid/capsa(src)
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
-	new /obj/item/gun/projectile/makarov/moebius/preloaded_cbo(src)
+	new /obj/item/gun/projectile/makarov/capsa/preloaded_cso(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
 
 /obj/item/storage/hcases/med/medical_job_trama
@@ -501,8 +501,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 			stamped = FALSE
 
 /obj/item/gearbox/traumatizedteam
-	name = "Lifeline Technician's equipment kit"
-	desc = "A secure box containing the heavy duty protective gear of the CAPSA Lifeline Technicians."
+	name = "CAPSA Paramedic's equipment kit"
+	desc = "A secure box containing the heavy duty protective gear of the CAPSA Paramedics."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "secure"
 
@@ -512,7 +512,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	if(!stamped)
 		stamped = TRUE
 		var/list/options = list()
-		options["Recovery Team RIG"] = list(/obj/item/rig/recovery_suit/equipped)
+		options["Combat Paramedic RIG"] = list(/obj/item/rig/recovery_suit/equipped)
 		options["Advanced Paramedic Armor"] = list(/obj/item/clothing/suit/armor/paramedic,/obj/item/clothing/head/helmet/faceshield/paramedic)
 		var/choice = input(user,"Which armor will you take?") as null|anything in options
 		if(src && choice)
@@ -526,8 +526,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 			stamped = FALSE
 
 /obj/item/gunbox/traumatizedteam
-	name = "Lifeline Technician's self-defense guncase"
-	desc = "A secure box containing the weapon of choice for the CAPSA Lifeline Technician."
+	name = "CAPSA Paramedic's self-defense guncase"
+	desc = "A secure box containing the weapon of choice for the CAPSA Paramedics."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "medbriefcase"
 

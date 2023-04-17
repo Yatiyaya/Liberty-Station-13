@@ -320,13 +320,13 @@
 /obj/item/clothing/under/turtleneck/green
 	desc = "A turquoise turtleneck complete with dark blue slacks."
 	name = "green turtleneck"
-	icon_state = "psychturtle"
+	icon_state = "tealturtle"
 	item_state = "b_suit"
 
 /obj/item/clothing/under/turtleneck/greenskirt
 	desc = "A turquoise turtleneck. This one has a plain black skirt, for people who like their neck constrained but their legs free."
 	name = "green turtleneck with skirt"
-	icon_state = "psychturtle_skirt"
+	icon_state = "tealturtle_skirt"
 	item_state = "b_suit"
 
 /obj/item/clothing/under/turtleneck/grey
