@@ -4,11 +4,11 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 */
 
 /obj/item/gun/projectile/matter_gun
-	name = "\"Forger\" compressed-matter pistol"
+	name = "Mk I \"Forger\" compressed-matter pistol"
 	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particals."
-	icon = 'icons/obj/guns/projectile/colt.dmi'
-	icon_state = "colt"
-	item_state = "colt"
+	icon = 'icons/obj/guns/nano/pistol.dmi'
+	icon_state = "forger"
+	item_state = "froger"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 5)
 	price_tag = 300
@@ -60,12 +60,12 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 
 /obj/item/gun/projectile/matter_gun/shotgun
-	name = "\"Forger\" compressed-matter pistol"
+	name = "Mk II \"Forger\" compressed-matter pistol"
 	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particals. \
 			This version is far more bulkier than its pistol counterpart, but packs quite a punch. Able to fire projectiles that fragment on impact or incendiary rounds."
-	icon = 'icons/obj/guns/projectile/colt.dmi'
-	icon_state = "colt"
-	item_state = "colt"
+	icon = 'icons/obj/guns/nano/shotgun.dmi'
+	icon_state = "railgun"
+	item_state = "railngun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 6)
 	price_tag = 650
