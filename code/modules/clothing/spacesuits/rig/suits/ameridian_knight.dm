@@ -8,7 +8,7 @@
 	slowdown = 0 // Lot of stuff used in its construction that justify not having any slowdown while active
 	offline_slowdown = 5 // Very heavy and the suit isn't helping while offline
 	offline_vision_restriction = 2
-	emp_protection = 100 // Osmium plating + Ion Jaunter mean it is pretty much immune to EMPs
+	emp_protection = 80 //No
 	removable_cell = FALSE // Cannot remove the cell
 	chest_type = /obj/item/clothing/suit/space/rig/ameridian_knight
 	helm_type =  /obj/item/clothing/head/helmet/space/rig/ameridian_knight
@@ -43,7 +43,3 @@
 /obj/item/clothing/gloves/rig/ameridian_knight
 	name = "gauntlets"
 	retract_while_active = FALSE
-
-// Osmium plating + Ion Jaunter mean it is pretty much immune to EMPs
-/obj/item/rig/ameridian_knight/emp_act(severity_class)
-	return

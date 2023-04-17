@@ -226,7 +226,6 @@
 		list(/obj/item/clothing/shoes/magboots, 1, "time" = 30),
 		list(CRAFT_MATERIAL, 5, MATERIAL_OSMIUM, "time" = 30),
 		list(/obj/item/tool_upgrade/augment/hydraulic, 2, "time" = 30),
-		list(/obj/item/robot_parts/robot_component/ion_jaunt, 1, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 90),
 		list(QUALITY_WELDING, 60, "time" = WORKTIME_EXTREMELY_LONG)
 	)
