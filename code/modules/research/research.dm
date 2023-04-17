@@ -252,7 +252,12 @@ Procs:
 /datum/tech/robotics
 	name = "Robotics Research"
 	shortname = "Robotics"
-	desc = "Research into the exosuits"
+	desc = "Research into the cyborgs and robots."
+
+/datum/tech/exosuit
+	name = "Exosuit Research"
+	shortname = "Exosuits"
+	desc = "Research into the exosuit fabrication."
 
 /datum/tech/similacrum
 	name = "Similacrum Robotics"

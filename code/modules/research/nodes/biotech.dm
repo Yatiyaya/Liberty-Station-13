@@ -3,8 +3,8 @@
 	desc = "Basic biotech micro manipulations and scanning method."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.1
-	y = 0.8
+	x = 0.2
+	y = 0.5
 	icon = "healthanalyzer"
 
 	required_technologies = list()
@@ -23,8 +23,8 @@
 	desc = "Using cryo based tech in more equipment based gear."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.1
-	y = 0.5
+	x = 0.2
+	y = 0.7
 	icon = "cryobag"
 
 	required_technologies = list(/datum/technology/ice_and_fire, /datum/technology/basic_biotech)
@@ -41,8 +41,8 @@
 	desc = "Basic medical databases and surgical monitoring."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.25
-	y = 0.8
+	x = 0.35
+	y = 0.5
 	icon = "operationcomputer"
 
 	required_technologies = list(/datum/technology/basic_biotech)
@@ -53,29 +53,14 @@
 							/datum/design/research/circuit/operating,
 							/datum/design/research/item/medical/roller_bed
 						)
-/*
-/datum/technology/virology
-	name = "Virology"
-	desc = "Virology"
-	tech_type = RESEARCH_BIOTECH
 
-	x = 0.4
-	y = 0.8
-	icon = "vialbox"
-
-	required_technologies = list(/datum/technology/basic_med_machines)
-	required_tech_levels = list()
-	cost = 500
-
-	unlocks_designs = list()
-*/
 /datum/technology/adv_med_machines
 	name = "Advanced Medical Machines"
 	desc = "Advanced Medical manipulations and fast scan and injection system."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.3 //0.25
-	y = 0.65 //0.6
+	x = 0.45
+	y = 0.5
 	icon = "sleeper"
 
 	required_technologies = list(/datum/technology/basic_med_machines)
@@ -92,8 +77,8 @@
 	desc = "The method of reassembling biomaterials. The flora genetic modifying method."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.2
-	y = 0.9
+	x = 0.45
+	y = 0.7
 	icon = "hydroponics"
 
 	required_technologies = list(/datum/technology/basic_biotech)
@@ -112,8 +97,8 @@
 	desc = "Portable bottle generating and reagent separation. Portable heating system, space for system required: 30 cubic millimeters."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.4
-	y = 0.8
+	x = 0.55
+	y = 0.7
 	icon = "chemdisp"
 
 	required_technologies = list(	/datum/technology/basic_biotech,
@@ -132,44 +117,14 @@
 							/datum/design/research/item/robot_upgrade/medical_hypo_upgrade
 							//datum/design/research/item/robot_upgrade/rescue_hypo_upgrade
 							)
-/*
-/datum/technology/basic_food_processing
-	name = "Basic Food Processing"
-	desc = "Basic Food Processing"
-	tech_type = RESEARCH_BIOTECH
 
-	x = 0.1
-	y = 0.4
-	icon = "microwave"
-
-	required_technologies = list(/datum/technology/hydroponics)
-	required_tech_levels = list()
-	cost = 500
-
-	unlocks_designs = list("deepfryer", "microwave", "oven", "grill")
-
-/datum/technology/adv_food_processing
-	name = "Advanced Food Processing"
-	desc = "Advanced Food Processing"
-	tech_type = RESEARCH_BIOTECH
-
-	x = 0.1
-	y = 0.2
-	icon = "candymachine"
-
-	required_technologies = list(/datum/technology/basic_food_processing)
-	required_tech_levels = list()
-	cost = 600
-
-	unlocks_designs = list("gibber", "monkey_recycler", "processor", "candymaker")
-*/
 /datum/technology/basic_medical_tools
 	name = "Basic Medical Tools"
 	desc = "Mass Spectrometry method. Experimental surgical, laser tools. Medical sensors intergrated HUD in hud-glass and large revival electrical shocks. Artificial quick dry bone gel composite."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.4
-	y = 0.6
+	x = 0.55
+	y = 0.5
 	icon = "medhud"
 
 	required_technologies = list(/datum/technology/adv_med_machines)
@@ -188,8 +143,8 @@
 	desc = "Improved micro manipulations, advanced scanning methods. Chemical implants and better surgical tools, be careful."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.5
-	y = 0.6
+	x = 0.65
+	y = 0.5
 	icon = "handheldmonitor"
 
 	required_technologies = list(/datum/technology/basic_medical_tools)
@@ -219,8 +174,8 @@
 	desc = "Portable injection and scan method, capitalists' and not capitalists portable sleeper. Integrated medical sensors hud with hardsuits' systems."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.55
-	y = 0.8
+	x = 0.65
+	y = 0.7
 	icon = "rignuclearreactor"
 
 	required_technologies = list(/datum/technology/improved_biotech,
@@ -229,22 +184,22 @@
 	required_tech_levels = list()
 	cost = 750
 
-	unlocks_designs = list(	/datum/design/research/item/autodoc,
-							/datum/design/research/item/autodoc_commercial,
-							/datum/design/research/item/chem_dispenser,
-							/datum/design/research/item/medhud,
-							/datum/design/research/structure/bidonadv,
-							/datum/design/research/structure/bidontrigger,
-							/datum/design/research/item/medical/compact_defibs,
-							/datum/design/research/item/implant/alarm,
-							/datum/design/research/item/petite_scanner)
+	unlocks_designs = list(
+						/datum/design/research/item/chem_dispenser,
+						/datum/design/research/item/medhud,
+						/datum/design/research/structure/bidonadv,
+						/datum/design/research/structure/bidontrigger,
+						/datum/design/research/item/medical/compact_defibs,
+						/datum/design/research/item/implant/alarm,
+						/datum/design/research/item/petite_scanner
+						)
 
 /datum/technology/tracker_tablet
 	name = "Tracker tablet"
 	desc = "Modified tablet frame with extra screens for use with sensor monitoring software."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.55
+	x = 0.65
 	y = 0.9
 	icon = "moetablet"
 
@@ -254,29 +209,13 @@
 
 	unlocks_designs = list(/datum/design/research/item/tracker_tablet)
 
-/*
-/datum/technology/med_teleportation
-	name = "Medical Teleportation"
-	desc = "Medical Teleportation"
-	tech_type = RESEARCH_BIOTECH
-
-	x = 0.7
-	y = 0.5
-	icon = "medbeacon"
-
-	required_technologies = list(/datum/technology/improved_biotech)
-	required_tech_levels = list()
-	cost = 1200
-
-	unlocks_designs = list("beacon_warp", "body_warp")
-*/
 /datum/technology/advanced_biotech
 	name = "Advanced Biotech"
 	desc = "Top-tier micro manipulations systems. Top-tier scan method. Upgraded mass spectrometry. Advanced sprayer. Machinegun-like syringe-gun."
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.6
-	y = 0.7
+	x = 0.75
+	y = 0.5
 	icon = "rapidsyringegun"
 
 	required_technologies = list(/datum/technology/improved_biotech)
@@ -290,96 +229,19 @@
 							/datum/design/research/item/weapon/chemsprayer,
 							/datum/design/research/item/weapon/rapidsyringe,
 							/datum/design/research/item/ammo/rapidsyringe)
-
-/datum/technology/top_biotech
-	name = "Augmentations' Biotech"
-	desc = "Body augmentations in the way of CAPSA-brand prosthesis and implantable omnitools."
+/*
+/datum/technology/virology
+	name = "Virology"
+	desc = "Virology"
 	tech_type = RESEARCH_BIOTECH
 
-	x = 0.7
-	y = 0.7
-	icon = "scalpelmanager"
+	x = 0.4
+	y = 0.8
+	icon = "vialbox"
 
-	required_technologies = list(	/datum/technology/advanced_biotech,
-									/datum/technology/portable_biotech
-								)
+	required_technologies = list(/datum/technology/basic_med_machines)
 	required_tech_levels = list()
-	cost = 1500
+	cost = 500
 
-	unlocks_designs = list(
-							/datum/design/research/item/mechfab/modules/multitool/surgical,
-							/datum/design/research/item/mechfab/modules/multitool/engineer,
-							/datum/design/research/item/mechfab/modules/multitool/miner,
-							/datum/design/research/item/mechfab/modules/multitool/farmer,
-							/datum/design/research/item/mechfab/prosthesis_moebius/r_arm,
-							/datum/design/research/item/mechfab/prosthesis_moebius/l_arm,
-							/datum/design/research/item/mechfab/prosthesis_moebius/r_leg,
-							/datum/design/research/item/mechfab/prosthesis_moebius/l_leg,
-							/datum/design/research/item/mechfab/prosthesis_moebius/groin,
-							/datum/design/research/item/mechfab/prosthesis_moebius/head,
-							/datum/design/research/item/mechfab/prosthesis_moebius/chest
-							)
-
-/datum/technology/omega_biotech
-	name = "Advanced Augmentations Biotech"
-	desc = "Refined and end of the line advancements that both body and mind can handle."
-	tech_type = RESEARCH_BIOTECH
-
-	x = 0.7
-	y = 0.9
-	icon = "scalpelmanager"
-
-	required_technologies = list(	/datum/technology/top_biotech
-								)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(	/datum/design/research/item/mechfab/modules/armor,
-							/datum/design/research/item/mechfab/modules/armblade,
-							/datum/design/research/item/mechfab/modules/wolverine,
-							/datum/design/research/item/mechfab/modules/energy_blade,
-							/datum/design/research/item/mechfab/modules/taser,
-							/datum/design/research/item/mechfab/modules/armsmg,
-							/datum/design/research/item/mechfab/modules/armshield,
-							/datum/design/research/item/mechfab/modules/runner,
-							/datum/design/research/item/mechfab/modules/hud/med,
-							/datum/design/research/item/mechfab/modules/hud/sec,
-							/datum/design/research/item/mechfab/modules/hud/welder
-							)
-
-/datum/technology/rig_medical_stuff
-	name = "RIG Medical Adaptation"
-	desc = "Top of the line RIG Modules for medical application."
-	tech_type = RESEARCH_BIOTECH
-
-	x = 0.85
-	y = 0.5
-	icon = "riginjector"
-
-	required_technologies = list(	/datum/technology/top_biotech,
-									/datum/technology/rig_industeral
-								)
-	required_tech_levels = list()
-	cost = 3750
-
-	unlocks_designs = list(	/datum/design/research/item/chem_injector,
-							/datum/design/research/item/healthscanner,
-							/datum/design/research/item/combat_injector,
-							)
-
-/datum/technology/omnisurgery
-	name = "Omnitool Surgery Tool"
-	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
-	tech_type = RESEARCH_BIOTECH
-
-	x = 0.85
-	y = 0.4
-	icon = "omnisurgery"
-
-	required_technologies = list(	/datum/technology/rig_medical_stuff
-								)
-	required_tech_levels = list()
-	cost = 225
-
-	unlocks_designs = list(	/datum/design/research/item/medical/medimplant_sci
-							)
+	unlocks_designs = list()
+*/

@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 15, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3, MATERIAL_GOLD = 2, MATERIAL_BIOMATTER = 30)
-	suitable_cell = /obj/item/cell/medium/neotheology
+	suitable_cell = /obj/item/cell/medium
 	projectile_type = /obj/item/projectile/plasma/light
 	fire_delay = 15
 	charge_cost = 60 // 10 shots out of a 600M
