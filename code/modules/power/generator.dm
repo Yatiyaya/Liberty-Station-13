@@ -1,6 +1,6 @@
 /obj/machinery/power/generator
 	name = "thermoelectric generator"
-	desc = "A high-efficiency thermoelectric generator."
+	desc = "It's a high efficiency thermoelectric generator."
 	icon = 'icons/obj/machines/thermoelectric.dmi'
 	icon_state = "teg-unassembled"
 	density = TRUE
@@ -63,12 +63,12 @@
 
 /obj/machinery/power/generator/update_icon()
 	icon_state = anchored ? "teg-assembled" : "teg-unassembled"
-	overlays.Cut()
+	cut_overlays()
 	if (stat & (NOPOWER|BROKEN) || !anchored)
 		return 1
 	else
 		if (lastgenlev != 0)
-			overlays += image('icons/obj/machines/thermoelectric.dmi', "teg-op[lastgenlev]")
+			add_overlay(image('icons/obj/machines/thermoelectric.dmi', "teg-op[lastgenlev]"))
 			if (circ1 && circ2)
 				var/extreme = (lastgenlev > 9) ? "ex" : ""
 				if (circ1.last_temperature < circ2.last_temperature)
@@ -140,7 +140,7 @@
 	stored_energy -= lastgen1
 	effective_gen = (lastgen1 + lastgen2) / 2
 
-	// update icon overlays and power usage only when necessary
+	// update icon over-lays and power usage only when necessary
 	var/genlev = max(0, min( round(11*effective_gen / max_power), 11))
 	if(effective_gen > 100 && genlev == 0)
 		genlev = 1
@@ -149,21 +149,25 @@
 		update_icon()
 	add_avail(effective_gen)
 
-/obj/machinery/power/generator/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W, /obj/item/tool/wrench))
-		playsound(src.loc, 'sound/items/Ratchet.ogg', 75, 1)
-		anchored = !anchored
-		user.visible_message("[user.name] [anchored ? "secures" : "unsecures"] the bolts holding [src.name] to the floor.", \
-					"You [anchored ? "secure" : "unsecure"] the bolts holding [src] to the floor.", \
-					"You hear a ratchet")
-		use_power = anchored
-		if(anchored) // Powernet connection stuff.
-			connect_to_network()
-		else
-			disconnect_from_network()
-		reconnect()
-	else
-		..()
+/obj/machinery/power/generator/attackby(obj/item/I as obj, mob/user as mob)
+	var/list/usable_qualities = list(QUALITY_BOLT_TURNING)
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_BOLT_TURNING)
+			if(istype(get_turf(src), /turf/space) && !anchored)
+				user << SPAN_NOTICE("You can't anchor something to empty space. Idiot.")
+				return
+			if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_EASY, required_stat = STAT_MEC))
+				user << SPAN_NOTICE("You [anchored ? "un" : ""]anchor the brace with [I].")
+				anchored = !anchored
+				if(anchored)
+					connect_to_network()
+				else
+					disconnect_from_network()
+			reconnect()
+		if(ABORT_CHECK)
+			return
+	..()
 
 /obj/machinery/power/generator/attack_hand(mob/user)
 	add_fingerprint(user)
