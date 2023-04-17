@@ -126,31 +126,31 @@
 	name = "Disk - Counselor"
 	cost = 5
 	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/counselor
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor
 
 /datum/armament/item/disk/halicon
 	name = "Disk - Halicon"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/halicon
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
 
 /datum/armament/item/disk/halicon
 	name = "Disk - Halicon"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/halicon
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
 
 /datum/armament/item/disk/protector
 	name = "Disk - Protector"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/protector
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/protector
 
 /datum/armament/item/disk/nt_lightfall
 	name = "Disk - Lightfall"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/lightfall
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
 
 /datum/armament/item/disk/nukes
 	name = "Disk - Holy Grenades"
@@ -168,19 +168,13 @@
 	name = "Disk - Purger"
 	cost = 40
 	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/purger
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/purger
 
 /datum/armament/item/disk/dominion
 	name = "Disk - Dominion"
 	cost = 80
 	min_cost = 80
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/dominion
-
-/datum/armament/item/disk/old_test_disk
-	name = "Disk - Old Testament"
-	cost = 50
-	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/old_guns
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
 
 /datum/armament/item/disk/new_test_disk
 	name = "Disk - New Testament"

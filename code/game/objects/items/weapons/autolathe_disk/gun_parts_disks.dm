@@ -12,8 +12,8 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 
 // Master-disk for example, full of 'lower-end' regular parts. Unused currently. Maybe consider putting on beacon or RARE loot rotation if gun parts are an issue.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_parts/resale
-	disk_name = "NM - \"Do it yourself!\" firearm parts"
-	icon_state = "marshal"
+	disk_name = "LG - \"Do it yourself!\" firearm parts"
+	icon_state = "liberty"
 
 	license = 20
 	designs = list(
@@ -34,8 +34,8 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 // Marshal-specific disk, used by Marshals for high-end gun crafting. MOST gun parts should be here, but thankfully licenses keep it at limited-use.
 // For mass-production, Guild should be used. Only thing this disk has that Guild does not is heavy rifle barrles, AMR barrels, rubber grips, and machinegun mechanisms.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_parts/marshal
-	disk_name = "NM - \"Gunsmiths United\" firearm parts"
-	icon_state = "marshal"
+	disk_name = "LG - \"Gunsmiths United\" firearm parts"
+	icon_state = "liberty"
 
 	license = 20
 	designs = list(
@@ -57,11 +57,11 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 		/datum/design/autolathe/part/barrel/amr = 5,
 	)
 
-// Bootleg-gun production stuff. Found in loot-piles, can be bought by LSS for a slightly inflated price.
-// Relatively useless, but might be useful for Outsiders, Prospies, and anyone wanting really cheap guns instead of paying inflated prices just for a single normal gun.
+// Bootleg-gun production stuff. Found in loot-piles, can be bought by Skylight for a slightly inflated price.
+// Relatively useless, but might be useful for Outsiders, Scavs, and anyone wanting really cheap guns instead of paying inflated prices just for a single normal gun.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_parts/bootleg
-	disk_name = "No License - \"Anarchist Dream\" gun parts"
-	icon_state = "black"
+	disk_name = "No Owner - \"Partizaner's Paradise\" gun parts"
+	icon_state = "freeworlds"
 
 	license = -1	// No point to limit prints, steel parts can only be used in homemade guns.
 	designs = list(
@@ -84,10 +84,10 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 // Gun frame disks //
 /////////////////////
 
-// This section contains gun frame disks, including Marshal gun frame disks used to make Marshal specific guns.
-// Guns here should keep in mind that you can produce these for retail and resale at LSS, as some are going to be orderable by Cargo. Return for investment and time, really.
+// This section contains gun frame disks, including Liberty Watch gun frame disks used to make Liberty Watch standard issue guns.
+// Guns here should keep in mind that you can produce these for retail and resale at Skylight, as some are going to be orderable by them. Return for investment and time, really.
 
-// Resale disk for LSS to make and sell guns. Maybe put into piles.
+// Resale disk for Skylight to make and sell guns. Maybe put into piles.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_frames/resale
 	disk_name = "Blackmarket - \"Make-Your-Own-Gun! For ages 9+!\" gun frames"
 	icon_state = "black"
@@ -102,10 +102,10 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 		/datum/design/autolathe/gun_frame/trench,
 	)
 
-// Resale disk for LSS to make and sell guns. Higher-end frames, still have to get the parts themselves. Do NOT put this into piles.
+// Resale disk for Skylight to make and sell guns. Higher-end frames, still have to get the parts themselves. Do NOT put this into piles.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_frames/resale/high
-	disk_name = "SA - \"Resale Distributors Pack\" gun frames"
-	icon_state = "frozenstar"
+	disk_name = "LG - \"Resale Distributors Pack\" gun frames"
+	icon_state = "liberty"
 
 	license = 8
 	designs = list(
@@ -115,10 +115,10 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 		/datum/design/autolathe/gun_frame/duty,
 	)
 
-// Marshal gun-frame print disk, allows the printing of what used to be on the Negotiator disk to the Spec and WO. Do NOT put this into piles.
+// Liberty Watch gun-frame print disk, allows the printing of what used to be on the Negotiator disk to the Spec and WO. Do NOT put this into piles.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_frames/marshal
 	disk_name = "LG - \"Framework of Dreams\" gun frames"
-	icon_state = "marshal"
+	icon_state = "liberty"
 
 	license = -1	// No point to limit prints, the gun parts themselves will be the limit.
 	designs = list(

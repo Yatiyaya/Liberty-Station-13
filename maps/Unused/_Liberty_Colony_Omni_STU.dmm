@@ -31476,7 +31476,6 @@
 /obj/item/ammo_magazine/magnum_40,
 /obj/item/ammo_magazine/magnum_40,
 /obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns,
-/obj/item/computer_hardware/hard_drive/portable/design/nt_old_guns,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon,
