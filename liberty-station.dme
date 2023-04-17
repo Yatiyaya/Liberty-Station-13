@@ -1881,6 +1881,7 @@
 #include "code\modules\core_implant\cruciform\machinery\eotp.dm"
 #include "code\modules\core_implant\cruciform\machinery\obelisk.dm"
 #include "code\modules\core_implant\cruciform\machinery\onlooker.dm"
+#include "code\modules\core_implant\cruciform\machinery\textials.dm"
 #include "code\modules\core_implant\cruciform\machinery\wall_obelisk.dm"
 #include "code\modules\core_implant\cruciform\rituals\base.dm"
 #include "code\modules\core_implant\cruciform\rituals\construction.dm"

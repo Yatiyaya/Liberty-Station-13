@@ -615,7 +615,8 @@
 	lst[MATERIAL_URANIUM] = 1
 	lst[MATERIAL_SILVER] = 0.70			//while guild has no problem obtaining, using as fuel for the forge is still not reccomended
 	lst[MATERIAL_PLASTEEL] = 0.70		//hard to happen, Guild needs it far more for crafts
-	lst[MATERIAL_DURASTEEL] = 2.55		//good luck finding a sheet of this
+	lst[MATERIAL_CARBON_FIBER] = 0.55
+	lst[MATERIAL_BIO_SILK] = 0.55
 	lst[MATERIAL_PLASTIC] = 0.45		//"a kilogram of feathers"
 	lst[MATERIAL_TRITIUM] = 1			//only exists if guild mines it themselves
 	lst[MATERIAL_PLATINUM] = 1

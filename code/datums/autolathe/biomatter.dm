@@ -15,6 +15,19 @@
 	name = "Soap"
 	build_path = /obj/item/soap/church
 
+/datum/design/bioprinter/carbon_fiber
+	name = "Carbon Fiber Sheet"
+	build_path = /obj/item/stack/material/carbon_fiber
+	materials = list(MATERIAL_CLOTH = 0.1, MATERIAL_STEEL = 1, MATERIAL_BIOMATTER = 2)
+	time = -4
+
+/datum/design/bioprinter/biopolymer_silk
+	name = "Biopolymer Silk"
+	build_path = /obj/item/stack/material/biopolymer_silk
+	materials = list(MATERIAL_SILK = 1, MATERIAL_BIOMATTER = 2)
+	time = -4
+
+
 //[NUTRIMENTS]
 /datum/design/bioprinter/ez
 	name = "EZ-Nutrient"
@@ -40,6 +53,7 @@
 /datum/design/bioprinter/leather/holster/saber/greatsword/churchprint
 	name = "Absolutist Sword Scabbard"
 	build_path = /obj/item/clothing/accessory/holster/saber/greatsword/churchprint
+	materials = list(MATERIAL_BIO_SILK = 0.1, MATERIAL_CARBON_FIBER = 0.2)
 
 /datum/design/bioprinter/wallet
 	name = "Wallet"
@@ -69,14 +83,6 @@
 	name = "Cruciform Sport Backpack"
 	build_path = /obj/item/storage/backpack/sport/neotheology
 
-/datum/design/bioprinter/leather/leather_jacket
-	name = "Leather jacket"
-	build_path = /obj/item/clothing/suit/storage/toggle/leather
-
-/datum/design/bioprinter/leather/cash_bag
-	name = "Cash Bag"
-	build_path = /obj/item/storage/bag/money
-
 /datum/design/bioprinter/leather/holster
 	name = "shoulder holster"
 	build_path = /obj/item/clothing/accessory/holster
@@ -100,29 +106,15 @@
 /datum/design/bioprinter/belt
 	materials = list(MATERIAL_BIOMATTER = 20)
 
-/datum/design/bioprinter/belt/utility
-	name = "Utility belt"
-	build_path = /obj/item/storage/belt/utility
-
 /datum/design/bioprinter/belt/utility/neotheology
 	name = "Absolutism utility belt"
 	build_path = /obj/item/storage/belt/utility/neotheology
-
-/datum/design/bioprinter/belt/medical
-	name = "Medical belt"
-	build_path = /obj/item/storage/belt/medical
-
-/datum/design/bioprinter/belt/security
-	name = "Tactical belt"
-	build_path = /obj/item/storage/belt/security
+	materials = list(MATERIAL_BIO_SILK = 0.2)
 
 /datum/design/bioprinter/belt/security/neotheology
 	name = "Absolutism tactical belt"
 	build_path = /obj/item/storage/belt/security/neotheology
-
-/datum/design/bioprinter/belt/medical/emt
-	name = "EMT belt"
-	build_path = /obj/item/storage/belt/medical/emt
+	materials = list(MATERIAL_BIO_SILK = 0.1, MATERIAL_CARBON_FIBER = 0.1)
 
 /datum/design/bioprinter/belt/misc/champion
 	name = "Champion belt"
@@ -133,7 +125,7 @@
 /datum/design/bioprinter/nt_clothes/armor_kit
 	name = "Armor Bundle"
 	build_path = /obj/item/gunbox/church
-	materials = list(MATERIAL_BIOMATTER = 20)
+	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 5, MATERIAL_BIOMATTER = 20)
 
 /datum/design/bioprinter/nt_clothes/acolyte_armor
 	name = "Vector Armor"
@@ -182,14 +174,16 @@
 /datum/design/bioprinter/nt_clothes/hermes_shoes
 	name = "Hermes Boots"
 	build_path = /obj/item/clothing/shoes/hermes_shoes
+	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
 
 /datum/design/bioprinter/nt_clothes/NTvoid
 	name = "Angel Voidsuit"
 	build_path = /obj/item/clothing/suit/space/void/NTvoid
+	materials = list(MATERIAL_BIO_SILK = 12, MATERIAL_CARBON_FIBER = 8)
 
 /datum/design/bioprinter/nt_clothes/knight_rig
 	name = "Knight Hardsuit Module"
-	materials = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 100)
+	materials = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 100, MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 28)
 	build_path = /obj/item/rig/combat/knight
 
 //[MELEE]
@@ -265,45 +259,6 @@
 /datum/design/autolathe/grenade/nt_explosive
 	name = "NT OBG \"Holy Grail\""
 	build_path = /obj/item/grenade/explosive/nt
-
-//[MED]
-/datum/design/bioprinter/medical
-	materials = list(MATERIAL_BIOMATTER = 2)
-
-/datum/design/bioprinter/medical/bruise
-	name = "Roll of gauze"
-	build_path = /obj/item/stack/medical/bruise_pack
-
-/datum/design/bioprinter/medical/splints
-	name = "Medical splints"
-	build_path = /obj/item/stack/medical/splint
-
-/datum/design/bioprinter/medical/ointment
-	name = "Ointment"
-	build_path = /obj/item/stack/medical/ointment
-
-/datum/design/bioprinter/medical/advanced
-	materials = list("biomatter" = 2)
-
-/datum/design/bioprinter/medical/advanced/bruise
-	name = "Advanced trauma kit"
-	build_path = /obj/item/stack/medical/bruise_pack/advanced
-
-/datum/design/bioprinter/medical/advanced/ointment
-	name = "Advanced burn kit"
-	build_path = /obj/item/stack/medical/ointment/advanced
-
-/datum/design/bioprinter/medical/advanced/bruise/nt
-	name = "Absolutist trauma kit"
-	build_path = /obj/item/stack/medical/bruise_pack/advanced/nt
-
-/datum/design/bioprinter/medical/advanced/ointment/nt
-	name = "Absolutist burn kit"
-	build_path = /obj/item/stack/medical/ointment/advanced/nt
-
-/datum/design/autolathe/firstaid/nt
-	name = "Absolutism Medkit"
-	build_path = /obj/item/storage/firstaid/nt
 
 //[/IMPLANTS]
 
@@ -387,10 +342,6 @@
 /datum/design/bioprinter/pouch/xbowquiver
 	name = "crossbow bolts quiver"
 	build_path = /obj/item/storage/pouch/bolts
-
-/datum/design/bioprinter/pouch/engineering_tools
-	name = "Engineering tools pouch"
-	build_path = /obj/item/storage/pouch/engineering_tools
 
 /datum/design/bioprinter/pouch/janitor_supply
 	name = "Janitor supplies pouch"

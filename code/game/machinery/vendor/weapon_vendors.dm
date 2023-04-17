@@ -225,8 +225,8 @@
 					/obj/item/gun/energy/ntpistol = 3,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 2,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter/public = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter = 2)
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 3,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 2)
 	contraband = list(/obj/item/tool/knife/neotritual = 3,
 					/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
@@ -265,8 +265,8 @@
 					/obj/item/gun/energy/ntpistol = 120,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 800,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter = 400,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 100,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 400,
 					/obj/item/tool/knife/neotritual = 250,
 					/obj/item/gun/matter/launcher/nt_sprayer = 500)
 	custom_vendor = TRUE // So they can sell pouches and other printed goods, if they bother to stock them

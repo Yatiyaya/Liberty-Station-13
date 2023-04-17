@@ -7,8 +7,65 @@
 	icon_state = "neotheology"
 	license = -1
 
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textials
+	disk_name = "textials disk"
+	icon_state = "neotheology"
+	license = -1
+
+	designs = list(
+		//Materals
+		/datum/design/bioprinter/carbon_fiber,
+		/datum/design/bioprinter/biopolymer_silk,
+		//Misc
+		/datum/design/bioprinter/belt/utility/neotheology,
+		/datum/design/bioprinter/belt/security/neotheology,
+		/datum/design/bioprinter/nt_clothes/church_uniform,
+		/datum/design/bioprinter/nt_clothes/acolyte_uniform,
+		/datum/design/bioprinter/nt_clothes/sports_jacket,
+		/datum/design/bioprinter/sling,
+		/datum/design/bioprinter/botanic_leather,
+		/datum/design/bioprinter/nt_clothes/hermes_shoes,
+		//backpacks
+		/datum/design/bioprinter/leather/storage/backpack/satchel/neotheology,
+		/datum/design/bioprinter/leather/storage/backpack/neotheology,
+		/datum/design/bioprinter/leather/storage/backpack/sport/neotheology,
+		//pouches
+		/datum/design/bioprinter/pouch/janitor_supply,
+		/datum/design/bioprinter/pouch/medium_generic,
+		/datum/design/bioprinter/pouch/large_generic,
+		/datum/design/bioprinter/pouch/tubular,
+		/datum/design/bioprinter/pouch/tubular/vial,
+		//armor
+		/datum/design/bioprinter/nt_clothes/armor_kit,
+		/datum/design/bioprinter/nt_clothes/acolyte_armor_helm,
+		/datum/design/bioprinter/nt_clothes/acolyte_armor,
+		/datum/design/bioprinter/nt_clothes/agrolyte_armor_helm,
+		/datum/design/bioprinter/nt_clothes/agrolyte_armor,
+		/datum/design/bioprinter/nt_clothes/custodian_armor_helm,
+		/datum/design/bioprinter/nt_clothes/custodian_armor,
+		/datum/design/bioprinter/nt_clothes/rosaria_armor_helm,
+		/datum/design/bioprinter/nt_clothes/rosaria_armor,
+		/datum/design/bioprinter/nt_clothes/NTvoid,
+		/datum/design/bioprinter/nt_clothes/knight_rig,
+		//holsters
+		/datum/design/bioprinter/leather/holster/saber/greatsword/churchprint,
+		/datum/design/bioprinter/leather/holster,
+		/datum/design/bioprinter/leather/holster/armpit,
+		/datum/design/bioprinter/leather/holster/waist,
+		/datum/design/bioprinter/leather/holster/hip,
+		/datum/design/bioprinter/leather/holster/leg,
+		//pouches
+		/datum/design/bioprinter/pouch/ammo,
+		/datum/design/bioprinter/pouch/baton_holster,
+		/datum/design/bioprinter/pouch/pistol_holster,
+		/datum/design/bioprinter/pouch/pistol_double,
+		/datum/design/bioprinter/pouch/kniferig,
+		/datum/design/bioprinter/pouch/quiver,
+		/datum/design/bioprinter/pouch/xbowquiver,
+	)
+
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter
-	disk_name = "Church of Absolute Bioprinter Products and Utilities Plus"
+	disk_name = "Church of Absolute Utilities Plus"
 	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Absolute."
 	icon_state = "neotheology_testament_u"
 	license = -1
@@ -24,65 +81,15 @@
 		/datum/design/bioprinter/holyvacuum,
 		/datum/design/autolathe/gun/nt_sprayer,
 		/datum/design/autolathe/device/grenade/nt_cleaner,
-		/datum/design/autolathe/device/grenade/nt_weedkiller,
-		//medical
-		/datum/design/bioprinter/medical/advanced/bruise/nt,
-		/datum/design/bioprinter/medical/advanced/ointment/nt,
-		/datum/design/autolathe/firstaid/nt,
-		//church clothes
-		/datum/design/bioprinter/belt/utility/neotheology,
-		/datum/design/bioprinter/belt/security/neotheology,
-		/datum/design/bioprinter/nt_clothes/church_uniform,
-		/datum/design/bioprinter/nt_clothes/acolyte_uniform,
-		/datum/design/bioprinter/nt_clothes/sports_jacket,
-		/datum/design/bioprinter/sling,
-		/datum/design/bioprinter/botanic_leather,
-		/datum/design/bioprinter/nt_clothes/hermes_shoes,
-		//backpacks
-		/datum/design/bioprinter/leather/storage/backpack/satchel/neotheology,
-		/datum/design/bioprinter/leather/storage/backpack/neotheology,
-		/datum/design/bioprinter/leather/storage/backpack/sport/neotheology,
-		//pouches
-		/datum/design/bioprinter/pouch/engineering_tools,
-		/datum/design/bioprinter/pouch/janitor_supply,
-		/datum/design/bioprinter/pouch/medium_generic,
-		/datum/design/bioprinter/pouch/large_generic,
-		/datum/design/bioprinter/pouch/tubular,
-		/datum/design/bioprinter/pouch/tubular/vial
+		/datum/design/autolathe/device/grenade/nt_weedkiller
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter
-	disk_name = "Church of Absolute Bioprinter Products and Utilities"
-	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Absolute."
-	icon_state = "neotheology_testament_u"
+/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public
+	disk_name = "Church of Absolute Bioprinter Products and Utilities Basic"
+	desc = "A limited design disk for cleaning, gardening and some production of meats and milk."
 	license = 20
-	designs = list(
-		/datum/design/bioprinter/meat,
-		/datum/design/bioprinter/milk,
 
-		/datum/design/bioprinter/ez,
-		/datum/design/bioprinter/l4z,
-		/datum/design/bioprinter/rh,
-
-		/datum/design/bioprinter/wallet,
-		/datum/design/bioprinter/botanic_leather,
-		/datum/design/bioprinter/leather/satchel,
-		/datum/design/bioprinter/leather/leather_jacket,
-		/datum/design/bioprinter/leather/cash_bag,
-		/datum/design/bioprinter/belt/utility,
-		/datum/design/bioprinter/belt/medical,
-		/datum/design/bioprinter/belt/security,
-		/datum/design/bioprinter/belt/medical/emt,
-		/datum/design/bioprinter/belt/misc/champion,
-	)
-
-// Same as the other NT disk, minus the medical designs. Spawns in public access bioprinters.
-/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter/public
-	disk_name = "Church of Absolute Basic Bioprinter Pack"
-	icon_state = "neotheology_testament_u"
-	license = -1
-
-/obj/item/computer_hardware/hard_drive/portable/design/nt_bioaugment
+/obj/item/computer_hardware/hard_drive/portable/design/nt/bioaugment
 	disk_name = "Strange Disk"
 	desc = "Now,where did this come from?"
 	icon_state = "onestar"
@@ -414,33 +421,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		/datum/design/autolathe/shield/nt_shield,
 		/datum/design/autolathe/gun/plasma/martyr,
 		/datum/design/autolathe/gun/plasma/excubitor,
-		//armor
-		/datum/design/bioprinter/nt_clothes/armor_kit,
-		/datum/design/bioprinter/nt_clothes/acolyte_armor_helm,
-		/datum/design/bioprinter/nt_clothes/acolyte_armor,
-		/datum/design/bioprinter/nt_clothes/agrolyte_armor_helm,
-		/datum/design/bioprinter/nt_clothes/agrolyte_armor,
-		/datum/design/bioprinter/nt_clothes/custodian_armor_helm,
-		/datum/design/bioprinter/nt_clothes/custodian_armor,
-		/datum/design/bioprinter/nt_clothes/rosaria_armor_helm,
-		/datum/design/bioprinter/nt_clothes/rosaria_armor,
-		/datum/design/bioprinter/nt_clothes/NTvoid,
-		/datum/design/bioprinter/nt_clothes/knight_rig,
-		//holsters
-		/datum/design/bioprinter/leather/holster/saber/greatsword/churchprint,
-		/datum/design/bioprinter/leather/holster,
-		/datum/design/bioprinter/leather/holster/armpit,
-		/datum/design/bioprinter/leather/holster/waist,
-		/datum/design/bioprinter/leather/holster/hip,
-		/datum/design/bioprinter/leather/holster/leg,
-		//pouches
-		/datum/design/bioprinter/pouch/ammo,
-		/datum/design/bioprinter/pouch/baton_holster,
-		/datum/design/bioprinter/pouch/pistol_holster,
-		/datum/design/bioprinter/pouch/pistol_double,
-		/datum/design/bioprinter/pouch/kniferig,
-		/datum/design/bioprinter/pouch/quiver,
-		/datum/design/bioprinter/pouch/xbowquiver,
 		//mods
 		/datum/design/autolathe/tool_upgrade/sanctifier,
 		/datum/design/autolathe/gun_upgrade/barrel/excruciator,
