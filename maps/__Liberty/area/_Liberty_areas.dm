@@ -612,14 +612,14 @@
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
-/area/liberty/command/cbo
-	name = "\improper Medbay - CBO's Office"
+/area/liberty/command/cso
+	name = "\improper Medbay - CSO's Office"
 	icon_state = "head_quarters"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
 
-/area/liberty/command/cbo/quarters
-	name = "\improper Medbay - CBO's Quarters"
+/area/liberty/command/cso/quarters
+	name = "\improper Medbay - CSO's Quarters"
 	icon_state = "head_quarters"
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT

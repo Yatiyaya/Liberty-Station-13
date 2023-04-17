@@ -216,16 +216,46 @@
 	desc = "A sterile blue surgical cap for medical operations."
 	icon_state = "surgcap_blue"
 	flags_inv = BLOCKHEADHAIR|HIDEEARS
-
-/obj/item/clothing/head/surgery/purple
-	name = "purple surgical cap"
-	desc = "A sterile purple surgical cap for medical operations."
-	icon_state = "surgcap_purple"
+	permeability_coefficient = 0.50
 
 /obj/item/clothing/head/surgery/green
 	name = "green surgical cap"
 	desc = "A sterile green surgical cap for medical operations."
 	icon_state = "surgcap_green"
+
+/obj/item/clothing/head/rank/medical/beret
+	name = "CAPSA beret"
+	desc = "A beret in CAPSA colors, for ease of identification of medical personnel during crisis situations."
+	icon_state = "beret_med"
+
+/obj/item/clothing/head/rank/medical/beret/verb/toggle_style()
+	set name = "Adjust Style"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Green Standard"] = "beret_med"
+	options["White with cross"] = "beret_whitemed"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		item_state = options[choice]
+		to_chat(M, "You adjusted your beret's style into [choice] color.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/ushanka/medical
+	name = "CAPSA Medical Ushanka"
+	desc = "A warm fur cap with a medical cross, in CAPSA colors. For the paramedics that perform triage in inclement weather conditions."
+	icon_state = "ushanka_med"
 
 /obj/item/clothing/head/rank/trooper/beret //blackshield hats
 	name = "blackshield beret"

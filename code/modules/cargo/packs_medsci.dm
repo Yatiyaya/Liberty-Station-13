@@ -37,7 +37,7 @@
 	cost = 200
 	containertype = /obj/structure/closet/crate/secure
 	crate_name = "virus sample crate"
-	access = access_cmo
+	access = access_cso
 	group = "Medical / Science"
 
 /datum/supply_pack/coolanttank

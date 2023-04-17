@@ -500,6 +500,8 @@
 #include "code\datums\setup_option\core_implants.dm"
 #include "code\datums\setup_option\setup_option.dm"
 #include "code\datums\setup_option\backgrounds\origin.dm"
+#include "code\datums\setup_option\backgrounds\ancestry\ancestry_akula.dm"
+#include "code\datums\setup_option\backgrounds\ancestry\ancestry_chmant.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_cindarite.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_human.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_kriosan.dm"

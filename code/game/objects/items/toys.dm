@@ -580,14 +580,14 @@
 /*Moebius*/
 
 /obj/item/toy/figure/character/moebius/cmo
-	name = "biolab overseer action figure"
-	desc = "The health of the crew is in their hands. CAPSA 1/4."
+	name = "surgeon overseer action figure"
+	desc = "The health of the people is in their hands. CAPSA 1/4."
 	icon_state = "cmo"
 	toysay = "Suit sensors on, people!"
 
 /obj/item/toy/figure/character/moebius/rd
-	name = "research overseer action figure"
-	desc = "All research requests go through them. Phokorus Institute 1/4."
+	name = "research provost action figure"
+	desc = "All research requests go through them. PIRS 1/4."
 	icon_state = "rd"
 	toysay = "One day, I'll get a rubber ducky on my office..."
 
@@ -595,7 +595,7 @@
 	name = "medical doctor action figure"
 	desc = "They'll do their best to uphold the oath. CAPSA 2/4."
 	icon_state = "md"
-	toysay = "You got the cash for treatment, right...?"
+	toysay = "All medical treatment will be deduced from your paycheck."
 
 /obj/item/toy/figure/character/moebius/psychologist
 	name = "psychologist action figure"
@@ -604,10 +604,10 @@
 	toysay = "Just come and have a seat."
 
 /obj/item/toy/figure/character/moebius/paramedic
-	name = "lifeline technician action figure"
+	name = "paramedic action figure"
 	desc = "They'll go anywhere to save a life. CAPSA 4/4."
 	icon_state = "paramedic"
-	toysay = "Your sensors are off, where are you?!"
+	toysay = "For the last time, 'HELP MAINT!' is not an accurate location!"
 
 /obj/item/toy/figure/character/moebius/chemist
 	name = "chemist action figure"
@@ -617,19 +617,19 @@
 
 /obj/item/toy/figure/character/moebius/scientist
 	name = "scientist action figure"
-	desc = "Their experiments sometimes go wacky. Phokorus Institute 2/4."
+	desc = "Their experiments sometimes go wacky. PIRS 2/4."
 	icon_state = "scientist"
 	toysay = "I swear that is just a new mutant tobacco strain I discovered, Officer..."
 
 /obj/item/toy/figure/character/moebius/roboticist
 	name = "roboticist action figure"
-	desc = "The master of machine life. Phokorus Institute 3/4."
+	desc = "The master of machine life. PIRS 3/4."
 	icon_state = "roboticist"
 	toysay = "Alright, who wants to buy a Durand?"
 
 /obj/item/toy/figure/character/moebius/borg
 	name = "cyborg action figure"
-	desc = "A mechanical servant made by man. Phokorus Institute 4/4."
+	desc = "A mechanical servant made by man. PIRS 4/4."
 	icon_state = "borg"
 	toysay = "I live again!"
 

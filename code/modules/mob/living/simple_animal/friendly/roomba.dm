@@ -1,6 +1,6 @@
-/mob/living/simple_animal/capsa_roomba
+/mob/living/simple_animal/pirs_roomba
 	name = "7K-Ten"
-	desc = "A pink roomba, the research overseers pet."
+	desc = "A pink roomba, the Research Provost's pet."
 	icon = 'icons/mob/battle_roomba.dmi'
 	icon_state = "roomba_pink"
 	mob_size = MOB_SMALL
@@ -36,7 +36,7 @@
 	sanity_damage = -2
 
 // For repairing damage to the synths.
-/mob/living/simple_animal/capsa_roomba/attackby(obj/item/W as obj, mob/user as mob)
+/mob/living/simple_animal/pirs_roomba/attackby(obj/item/W as obj, mob/user as mob)
 	var/obj/item/T // Define the tool variable early on to avoid compilation problem and to allow us to use tool-unique variables
 	if(user.a_intent == I_HELP) // Are we helping ?
 
@@ -56,7 +56,7 @@
 	// If nothing was ever triggered, continue as normal
 	..()
 
-/mob/living/simple_animal/capsa_roomba/death()
+/mob/living/simple_animal/pirs_roomba/death()
 	..()
 	visible_message("<b>[src]</b> blows apart!")
 	new /obj/effect/decal/cleanable/blood/gibs/robot(src.loc)

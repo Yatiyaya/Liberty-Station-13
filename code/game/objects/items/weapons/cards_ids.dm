@@ -209,13 +209,15 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_syndicate, access_external_airlocks)
 	group = "centcom"
 
-/obj/item/card/id/emergency_response
-	name = "emergency response ID card"
-	desc = "An ID straight from the Central Command."
-	icon_state = "centcom"
-	registered_name = "Emergency Response Team"
-	assignment = "Emergency Response Squadmate"
-	group = "centcom"
+/obj/item/card/id/medical_command
+	name = "Medical ID card"
+	desc = "An ID straight from the CAPSA Group administrative offices."
+	registered_name = "Medical ERT"
+	assignment = "CAPSA Medical ERT"
+	access = list(access_moebius, access_medical_equip, access_morgue, access_genetics, access_heads,
+		access_chemistry, access_virology, access_cso, access_surgery, access_RC_announce,
+		access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels,
+		access_external_airlocks, access_paramedic, access_research_equipment, access_medical_suits)
 
 /obj/item/card/id/emergency_response/New()
 	access = get_all_station_access()
@@ -307,9 +309,9 @@ var/const/NO_EMAG_ACT = -50
 	group = "whitesilver"
 	icon_state = "id_rd"
 
-/obj/item/card/id/cmo
+/obj/item/card/id/cso
 	group = "whitesilver"
-	icon_state = "id_cmo"
+	icon_state = "id_cso"
 
 /obj/item/card/id/det
 	group = "secblue"

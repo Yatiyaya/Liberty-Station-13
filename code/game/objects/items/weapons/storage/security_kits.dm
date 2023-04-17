@@ -116,7 +116,7 @@
 /obj/item/storage/box/m_kit/stinger
 	name = "Stinger Secondary Kit"
 	desc = "The standard Liberty Watch box kit containing a Stinger 9mm pistol. The staple icon of the Watch, commonly found on most hiring posters! \
-			Known for its low recoil, ability to fit a durm magazine and being an overall reliable workhorse."
+			Known for its low recoil, ability to fit a drum magazine and being an overall reliable workhorse."
 
 	populate_contents()
 		new /obj/item/gun/projectile/stinger/pepperball(src)

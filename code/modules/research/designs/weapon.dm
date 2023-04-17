@@ -41,7 +41,7 @@
 	build_path = /obj/item/gun/energy/centauri
 
 /datum/design/research/item/weapon/clarissa
-	build_path = /obj/item/gun/projectile/makarov/moebius
+	build_path = /obj/item/gun/projectile/stinger/pepperball/sopo
 
 /datum/design/research/item/weapon/slimegun
 	name = "Prototype: \"Ranch\" core stopper gun"

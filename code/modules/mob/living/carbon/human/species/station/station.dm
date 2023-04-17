@@ -635,7 +635,7 @@
 /datum/species/capsa_synthetic
 	name = "CAPSA synth"
 	name_plural = "synthetics"
-	default_form = FORM_CAPSASYNTH
+	default_form = FORM_PIRSYNTH
 	obligate_name = TRUE
 	obligate_form = TRUE
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)

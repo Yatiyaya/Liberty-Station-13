@@ -96,7 +96,7 @@
 				/obj/item/clothing/suit/storage/aerostatic_bomber_jacket = 2,
 				/obj/item/clothing/suit/storage/jamrock_blazer = 2,
 				/obj/item/clothing/suit/storage/toggle/labcoat = 3,
-				/obj/item/clothing/suit/storage/toggle/labcoat/cmo = 3,
+				/obj/item/clothing/suit/storage/toggle/labcoat/cso = 3,
 				/obj/item/clothing/suit/storage/toggle/labcoat/medspec = 3,
 				/obj/item/clothing/suit/storage/toggle/labcoat/science = 3,
 				/obj/item/clothing/suit/storage/toggle/labcoat/purple = 3,

@@ -60,9 +60,9 @@ var/list/dreams = list(
 
 //Ranks
 	"the Steward","the Warrant Officer","the Blackshield Commander","the Union Chief","the Phokorus Institute Research Overseer",
-	"the CAPSA Biolab Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
-	"a Prime","an Entertainer","a Chef","a Doctor","a Psychologist","a CAPSA Paramedic",
-	"a CAPSA Chemist","a Phokorus Institute Scientist","a Phokorus Institute Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
+	"the CAPSA Surgeon Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
+	"a Prime","an Entertainer","a Chef","a CAPSA Doctor","a Psychologist","a CAPSA Paramedic",
+	"a Phokorus Institute Scientist","a Phokorus Institute Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
 	"a Mechanical Technician", "a Marshal Officer","a Supply Specialist","a Ranger", "the Premier",
 	"a Corpsman", "a Trooper",
 

@@ -48,22 +48,22 @@
 /obj/item/modular_computer/pda/science
 	hard_drive_type = /obj/item/computer_hardware/hard_drive/small/adv
 
-/obj/item/modular_computer/pda/moebius/install_default_programs()
+/obj/item/modular_computer/pda/science/install_default_programs()
 	..()
 	hard_drive.store_file(new /datum/computer_file/program/signaller)
-	hard_drive.store_file(new /datum/computer_file/program/chem_catalog)
 
 /obj/item/modular_computer/pda/science/science
 	icon_state = "pda-nt"
 	scanner_type = /obj/item/computer_hardware/scanner/reagent
 
-/obj/item/modular_computer/pda/science/medical
+/obj/item/modular_computer/pda/medical
 	icon_state = "pda-m"
+	hard_drive_type = /obj/item/computer_hardware/hard_drive/small/adv
 	scanner_type = /obj/item/computer_hardware/scanner/medical
 
-/obj/item/modular_computer/pda/science/chemistry
-	icon_state = "pda-m"
-	scanner_type = /obj/item/computer_hardware/scanner/reagent
+/obj/item/modular_computer/pda/medical/install_default_programs()
+	..()
+	hard_drive.store_file(new /datum/computer_file/program/chem_catalog)
 
 /obj/item/modular_computer/pda/science/roboticist
 	icon_state = "pda-robot"
@@ -94,11 +94,11 @@
 	icon_state = "pda-ce"
 	scanner_type = /obj/item/computer_hardware/scanner/atmos
 
-/obj/item/modular_computer/pda/heads/cmo
-	icon_state = "pda-cmo"
+/obj/item/modular_computer/pda/heads/cso
+	icon_state = "pda-cso"
 	scanner_type = /obj/item/computer_hardware/scanner/medical
 
-/obj/item/modular_computer/pda/heads/cmo/install_default_programs()
+/obj/item/modular_computer/pda/heads/cso/install_default_programs()
 	..()
 	hard_drive.store_file(new /datum/computer_file/program/chem_catalog())
 
