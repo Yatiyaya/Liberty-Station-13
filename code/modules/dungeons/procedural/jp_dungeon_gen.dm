@@ -180,8 +180,19 @@
 	Post-initializes all submaps
 */
 
-/obj/procedural/jp_DungeonGenerator/proc/initializeSubmaps()
+/obj/procedural/jp_DungeonGenerator/proc/initializeDeepmaintSubmaps()
 	var/datum/map_template/init_template = new /datum/map_template/deepmaint_template/room
+	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
+	bounds[MAP_MINX] = 1
+	bounds[MAP_MINY] = world.maxy
+	bounds[MAP_MINZ] = (get_turf(loc)).z
+	bounds[MAP_MAXX] = world.maxx
+	bounds[MAP_MAXY] = 1
+	bounds[MAP_MAXZ] = (get_turf(loc)).z
+	init_template.initTemplateBounds(bounds)
+
+/obj/procedural/jp_DungeonGenerator/proc/initializePrecursorSubmaps()
+	var/datum/map_template/init_template = new /datum/map_template/precursor_template/normal
 	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
 	bounds[MAP_MINX] = 1
 	bounds[MAP_MINY] = world.maxy
@@ -690,7 +701,8 @@
 	for(var/obj/procedural/jp_DungeonRoom/r in rooms)
 		r.finalise()
 
-	initializeSubmaps()
+	initializeDeepmaintSubmaps()
+	initializePrecursorSubmaps()
 	updateWallConnections()
 
 	out_time = (world.timeofday-timer)

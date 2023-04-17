@@ -20,58 +20,44 @@
 	shoes = /obj/item/clothing/shoes/color/black
 	suit = /obj/item/clothing/suit/armor/flakvest
 	suit_store = /obj/item/gun/projectile/boltgun
-	back = /obj/item/storage/backpack/satchel
+	back = /obj/item/storage/backpack
 	r_pocket = /obj/item/ammo_magazine/speed_loader_rifle_75
 	id_slot = slot_wear_id
 	id_type = /obj/item/card/id
 
-/decl/hierarchy/outfit/si_medical_ert
+/decl/hierarchy/outfit/medical_ert
 	name = "Medical Emergency Personnel"
-	l_ear  =/obj/item/device/radio/headset/heads/cso
+	l_ear = /obj/item/device/radio/headset/ert
 	head = /obj/item/clothing/head/helmet/faceshield/paramedic
 	uniform = /obj/item/clothing/under/rank/cso
 	suit = /obj/item/clothing/suit/armor/paramedic
+	uniform = /obj/item/clothing/under/rank/paramedic
 	r_pocket = /obj/item/device/lighting/toggleable/flashlight/pen
 	pda_type = /obj/item/modular_computer/pda/heads/cso
 	r_ear  = /obj/item/reagent_containers/syringe/large
 	belt = /obj/item/storage/belt/medical
 	glasses = /obj/item/clothing/glasses/hud/health
 	shoes = /obj/item/clothing/shoes/reinforced/medical
-	back = /obj/item/storage/backpack/satchel
+	gloves = /obj/item/clothing/gloves/latex
+	back = /obj/item/storage/backpack
 	backpack_contents = list(/obj/item/storage/firstaid/capsa = 1, /obj/item/modular_computer/tablet/moebius/preset = 1, /obj/item/gun/projectile/stinger/pepperball/sopo = 1, \
-							/obj/item/gun_upgrade/trigger/dnalock = 1, /obj/item/gun_upgrade/muzzle/silencer = 1, /obj/item/ammo_magazine/pistol_35/rubber, /obj/item/ammo_magazine/pistol_35/rubber,  /obj/item/bodybag/cryobag = 2, \
+							/obj/item/gun_upgrade/trigger/dnalock = 1, /obj/item/ammo_magazine/pistol_35/rubber = 2, /obj/item/bodybag/cryobag = 2, \
 							/obj/item/storage/firstaid/blackshield/large = 1, /obj/item/storage/firstaid/surgery/si = 1, /obj/item/roller/compact  = 1, /obj/item/device/defib_kit/compact/combat/adv/loaded = 1)
-	l_pocket = /obj/item/card/id/medical_command
-
-/decl/hierarchy/outfit/marshal_ert
-	name = "Marshal Agent"
-	l_ear  =/obj/item/device/radio/headset/heads/hos
-	uniform = /obj/item/clothing/under/rank/ih_commander
-	suit = /obj/item/clothing/suit/armor/platecarrier
-	suit_store = /obj/item/gun/projectile/automatic/ak47
-	r_pocket = /obj/item/clothing/accessory/badge/marshal
-	l_pocket = /obj/item/card/id/secert
-	gloves = /obj/item/clothing/gloves/stungloves
-	glasses = /obj/item/clothing/glasses/sechud/tactical
-	shoes = /obj/item/clothing/shoes/jackboots
-	belt = /obj/item/storage/belt/security/tactical/marshalert
-	head = /obj/item/clothing/head/seccap
-	back = /obj/item/storage/backpack/security
-	backpack_contents = list(/obj/item/ammo_magazine/rifle_75 = 5, /obj/item/ammo_magazine/rifle_75/highvelocity = 3)
+	l_pocket = /obj/item/card/id/emergency_response
 
 /decl/hierarchy/outfit/engi_ert
-	name = "Guild Emergency Personnel"
-	l_ear = /obj/item/device/radio/headset/heads/ce
-	head = /obj/item/clothing/head/firefighter/guild_emergency
-	uniform = /obj/item/clothing/under/rank/engineer/adv_master
-	suit = /obj/item/clothing/suit/storage/hazardvest
+	name = "Engineering Emergency Personnel"
+	l_ear = /obj/item/device/radio/headset/ert
+	head = /obj/item/clothing/head/firefighter/engineer_emergency
+	suit = /obj/item/clothing/suit/storage/ert_hazardvest
+	uniform = /obj/item/clothing/under/rank/engineer/ert_engineer
 	r_pocket = /obj/item/device/t_scanner/advanced
 	pda_type = /obj/item/modular_computer/pda/heads/ce
-	belt = /obj/item/storage/belt/webbing/Union/ert
+	belt = /obj/item/storage/belt/webbing/union/ert
 	glasses = /obj/item/clothing/glasses/powered/meson
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/workboots
 	gloves = /obj/item/clothing/gloves/insulated
-	back = /obj/item/storage/backpack/satchel
+	back = /obj/item/storage/backpack
 	backpack_contents = list(/obj/item/rcd/industrial = 1, \
 							/obj/item/stack/material/compressed_matter/full = 1, \
 							/obj/item/stack/material/glass/plasmarglass/full = 1, \
@@ -82,28 +68,7 @@
 							/obj/item/rpd = 1, \
 							/obj/item/modular_computer/tablet/lease/preset/command = 1,\
 							/obj/item/extinguisher/mini = 1)
-	l_pocket = /obj/item/card/id/guild_command
-
-/decl/hierarchy/outfit/lss_ert
-	name = "Auditor"
-	l_ear = /obj/item/device/radio/headset/headset_com
-	head = /obj/item/clothing/head/helmet/technomancersuit //Looks good enuff and has good armor I guess
-	uniform = /obj/item/clothing/under/suit_jacket/black
-	suit = /obj/item/clothing/suit/storage/hazardvest
-	r_pocket = /obj/item/device/t_scanner/advanced
-	pda_type = /obj/item/modular_computer/pda/heads
-	glasses = /obj/item/clothing/glasses/regular
-	shoes = /obj/item/clothing/shoes/color/black
-	gloves = /obj/item/clothing/gloves/color/white
-	back = /obj/item/storage/backpack/satchel
-	backpack_contents = list(/obj/item/paper = 2,
-							/obj/item/clipboard = 1,
-							/obj/item/device/taperecorder = 1,
-							/obj/item/pen/multi = 1,
-							/obj/item/reagent_containers/glass/paint/red = 1, //For the papers, in case they want to make a paper red with red link to REALY show that they mean something
-							/obj/item/modular_computer/tablet/lease/preset/command = 1)
-	l_pocket = /obj/item/card/id/lss_command
-
+	l_pocket = /obj/item/card/id/emergency_response
 
 /decl/hierarchy/outfit/doggo
 	name = "Kriosan trooper"

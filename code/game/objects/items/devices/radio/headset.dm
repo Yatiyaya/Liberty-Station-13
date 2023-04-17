@@ -72,6 +72,14 @@
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/syndicate
 
+/obj/item/device/radio/headset/ert
+	name = "emergency responder's headset"
+	desc = "The headset of a person that is here to save the day. It has an antennae for ad-hoc feedback."
+	icon_state = "cent_headset"
+	item_state = "headset"
+	adhoc_fallback = TRUE
+	ks2type = /obj/item/device/encryptionkey/heads/captain
+
 /obj/item/device/radio/headset/binary
 	origin_tech = list(TECH_ILLEGAL = 3)
 	ks1type = /obj/item/device/encryptionkey/binary

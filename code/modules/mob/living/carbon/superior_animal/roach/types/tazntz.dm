@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/tazntz
-	name = "Tazntz Roach"
+	name = "Eldritch Roach"
 	desc = "A mass of twitching and squirming limbs, the seemingly apperent abomination of a frog and roach melded together. It seems to despise all life, even its own."
 	icon_state = "tzantz"
 	meat_amount = 2

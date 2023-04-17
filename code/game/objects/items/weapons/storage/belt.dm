@@ -527,7 +527,7 @@
 		/obj/item/device/binoculars
 	)
 
-/obj/item/storage/belt/webbing/Union
+/obj/item/storage/belt/webbing/union
 	name = "Terra-Therma Worker's Union web harness"
 	desc = "Everything you need at hand, at belt. This one is hand crafted by the Terra-Therma Worker's Union, allowing it to better store larger items by sacrificing space. Better than most tool belts."
 	cant_hold = list(/obj/item/storage/pouch,
@@ -536,7 +536,7 @@
 					 /obj/item/storage/briefcase,
 					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
 
-/obj/item/storage/belt/webbing/Union/verb/toggle_storage()
+/obj/item/storage/belt/webbing/union/verb/toggle_storage()
 	set name = "Adjust Storage"
 	set category = "Object"
 	set src in usr
@@ -580,11 +580,11 @@
 		return 1
 
 //Start with normal
-/obj/item/storage/belt/webbing/Union/ert
+/obj/item/storage/belt/webbing/union/ert
 	storage_slots = 9 //Like old belts used to be
 	max_w_class = ITEM_SIZE_NORMAL
 
-/obj/item/storage/belt/webbing/Union/ert/populate_contents()
+/obj/item/storage/belt/webbing/union/ert/populate_contents()
 	new /obj/item/tool/crowbar/pneumatic(src)
 	new /obj/item/tool/hammer/deadblow(src)
 	new /obj/item/tool/multitool/advanced(src)
