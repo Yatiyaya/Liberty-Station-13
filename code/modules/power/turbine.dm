@@ -3,8 +3,8 @@
 	desc = "The compressor stage of a gas turbine generator."
 	icon = 'icons/obj/pipes.dmi'
 	icon_state = "compressor"
-	anchored = TRUE
-	density = TRUE
+	anchored = 1
+	density = 1
 	var/obj/machinery/power/turbine/turbine
 	var/datum/gas_mixture/gas_contained
 	var/turf/simulated/inturf
@@ -19,21 +19,21 @@
 	desc = "A gas turbine used for backup power generation."
 	icon = 'icons/obj/pipes.dmi'
 	icon_state = "turbine"
-	anchored = TRUE
-	density = TRUE
+	anchored = 1
+	density = 1
 	var/obj/machinery/compressor/compressor
 	var/turf/simulated/outturf
 	var/lastgen
 
 /obj/machinery/computer/turbine_computer
-	name = "Gas turbine control computer"
+	name = "gas turbine control computer"
 	desc = "A computer to remotely control a gas turbine"
 	icon = 'icons/obj/computer.dmi'
 	icon_keyboard = "tech_key"
 	icon_screen = "turbinecomp"
 	circuit = /obj/item/circuitboard/turbine_control
-	anchored = TRUE
-	density = TRUE
+	anchored = 1
+	density = 1
 	var/obj/machinery/compressor/compressor
 	var/list/obj/machinery/door/blast/doors
 	var/id = 0
@@ -62,7 +62,7 @@
 /obj/machinery/compressor/Process()
 	if(!starter)
 		return
-	overlays.Cut()
+	cut_overlays()
 	if(stat & BROKEN)
 		return
 	if(!turbine)
@@ -89,13 +89,13 @@
 
 
 	if(rpm>50000)
-		overlays += image('icons/obj/pipes.dmi', "comp-o4", FLY_LAYER)
+		add_overlay(image('icons/obj/pipes.dmi', "comp-o4", FLY_LAYER))
 	else if(rpm>10000)
-		overlays += image('icons/obj/pipes.dmi', "comp-o3", FLY_LAYER)
+		add_overlay(image('icons/obj/pipes.dmi', "comp-o3", FLY_LAYER))
 	else if(rpm>2000)
-		overlays += image('icons/obj/pipes.dmi', "comp-o2", FLY_LAYER)
+		add_overlay(image('icons/obj/pipes.dmi', "comp-o2", FLY_LAYER))
 	else if(rpm>500)
-		overlays += image('icons/obj/pipes.dmi', "comp-o1", FLY_LAYER)
+		add_overlay(image('icons/obj/pipes.dmi', "comp-o1", FLY_LAYER))
 	 //TODO: DEFERRED
 
 /obj/machinery/power/turbine/New()
@@ -120,7 +120,7 @@
 /obj/machinery/power/turbine/Process()
 	if(!compressor.starter)
 		return
-	overlays.Cut()
+	cut_overlays()
 	if(stat & BROKEN)
 		return
 	if(!compressor)
@@ -141,7 +141,7 @@
 		outturf.assume_air(removed)
 
 	if(lastgen > 100)
-		overlays += image('icons/obj/pipes.dmi', "turb-o", FLY_LAYER)
+		add_overlay(image('icons/obj/pipes.dmi', "turb-o", FLY_LAYER))
 
 
 	for(var/mob/M in viewers(1, src))
