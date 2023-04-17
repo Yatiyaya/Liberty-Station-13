@@ -172,10 +172,17 @@
 
 /obj/item/device/radio/headset/headset_med
 	name = "medical radio headset"
-	desc = "A headset for the department staffed with people who love drugs."
+	desc = "A headset for the department staffed with people who love to be away when needed."
 	icon_state = "med_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_moebius
+	ks2type = /obj/item/device/encryptionkey/headset_capsa
+
+/obj/item/device/radio/headset/headset_med/bowman
+	name = "medical bowman headset"
+	desc = "A headset for the paramedics who think themselves surgeons. \
+			This one has a small symbol denoting its built-in backup transmitter for local communications outside of comms range."
+	icon_state = "bowman_med"
+	adhoc_fallback = TRUE
 
 /obj/item/device/radio/headset/headset_sci
 	name = "science radio headset"
@@ -261,12 +268,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/ce
 
-/obj/item/device/radio/headset/heads/cmo
-	name = "biolab overseer's headset"
+/obj/item/device/radio/headset/heads/cso
+	name = "Chief Surgeon Overseer's headset"
 	desc = "The headset of the highly trained medical chief who is never around when he is actually needed."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/heads/moebius
+	ks2type = /obj/item/device/encryptionkey/heads/capsa
 
 /obj/item/device/radio/headset/heads/hop
 	name = "steward's headset"

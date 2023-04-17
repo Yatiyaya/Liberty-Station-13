@@ -3,7 +3,7 @@
  */
 /obj/item/clothing/under/rank/expedition_overseer
 	desc = "A brown suit complete with a white shirt and green tie. The fibre offers minor biohazard protection."
-	name = "Research Overseer's suit"
+	name = "Research Provost's suit"
 	icon_state = "director"
 	item_state = "lb_suit"
 
@@ -18,28 +18,18 @@
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 10, bio = 0, rad = 0)
 
-/obj/item/clothing/under/rank/chemist
-	desc = "A orange chemist's shirt complete with tan pants. The fiber offers minor biohazard protection."
-	name = "CAPSA Chemist's uniform"
-	icon_state = "chemistry"
-	item_state = "chemistry"
-
-	permeability_coefficient = 0.50
-	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
-
 /*
  * Medical
  */
-/obj/item/clothing/under/rank/moebius_biolab_officer
-	desc = "A Biolab Overseer's outfit in CAPSA Medical colors. The fiber offers minor biohazard protection."
-	name = "Biolab Overseer's uniform"
-	icon_state = "cbo"
-	item_state = "cbo"
-
+/obj/item/clothing/under/rank/cso
+	desc = "A Surgeon Overseer's outfit in CAPSA Group colors. The fiber offers minor biohazard protection."
+	name = "Surgeon Overseer's uniform"
+	icon_state = "cso"
+	item_state = "cso"
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
 
-/obj/item/clothing/under/rank/moebius_biolab_officer/verb/toggle_style()
+/obj/item/clothing/under/rank/cso/verb/toggle_style()
 	set name = "Adjust style"
 	set category = "Object"
 	set src in usr
@@ -49,8 +39,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["shirt and pants"] = "cbo"
-	options["girlboss"] = "cbo_skirt"
+	options["green shirt, white pants"] = "cso"
+	options["white shirt, green pants"] = "cso_alt"
+	options["girlboss"] = "cso_skirt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -65,21 +56,11 @@
 		usr.update_action_buttons()
 		return 1
 
-/obj/item/clothing/under/rank/virologist
-	desc = "A green virologist's shirt complete with tan pants. The fiber offers minor biohazard protection."
-	name = "CAPSA Virologist's uniform"
-	icon_state = "virology"
-	item_state = "w_suit"
-
-	permeability_coefficient = 0.50
-	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
-
 /obj/item/clothing/under/rank/medical
-	desc = "A Doctor's outfit in CAPSA Medical colors. The fiber offers minor biohazard protection."
+	desc = "A Doctor's outfit in CAPSA colors. The polymer fibers offer minor biohazard protection."
 	name = "CAPSA Doctor's uniform"
 	icon_state = "medical"
 	item_state = "medical"
-
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
 
@@ -110,46 +91,14 @@
 		usr.update_action_buttons()
 		return 1
 
-/obj/item/clothing/under/scrubs
-	name = "blue scrubs"
-	desc = "A sterile blue uniform designed to protect against contamination."
-	icon_state = "scrubsblue"
-	item_state = "b_suit"
-
-/obj/item/clothing/under/scrubs/green
-	name = "green scrubs"
-	desc = "A sterile green uniform designed to protect against contamination."
-	icon_state = "scrubsgreen"
-	item_state = "scrubsgreen"
-
-/obj/item/clothing/under/scrubs/purple
-	name = "purple scrubs"
-	desc = "A sterile purple uniform designed to protect against contamination."
-	icon_state = "scrubspurple"
-	item_state = "p_suit"
-
 /obj/item/clothing/under/rank/psych
-	desc = "A calming turquoise turtleneck combined with dark blue slacks."
-	name = "CAPSA psychologist's turtleneck"
-	icon_state = "psychturtle"
+	desc = "A warm and calming turtleneck in CAPSA medical colors."
+	name = "CAPSA turtleneck"
+	icon_state = "capsaturtle"
 	item_state = "b_suit"
-
-/obj/item/clothing/under/rank/paramedic
-	desc = "A jumpsuit made by CAPSA for their Lifeline Technicians. It's made with reinforced fiber to offer more protection for recovery operations."
-	name = "CAPSA Lifeline Technician jumpsuit"
-	icon_state = "paramedic"
-	item_state = "paramedic"
 	permeability_coefficient = 0.50
-	armor_list = list(
-		melee = 10,
-		bullet = 5,
-		energy = 5,
-		bomb = 0,
-		bio = 30,
-		rad = 0
-	)
 
-/obj/item/clothing/under/rank/paramedic/verb/toggle_style()
+/obj/item/clothing/under/rank/psych/verb/toggle_style()
 	set name = "Adjust style"
 	set category = "Object"
 	set src in usr
@@ -159,8 +108,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["shirt and pants"] = "paramedic"
-	options["shirt and skirt"] = "paramedic_skirt"
+	options["green with black pants"] = "capsaturtle"
+	options["white with green pants"] = "capsaturtle_white"
+	options["white with green skirt"] = "capsaturtle_whiteskirt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -175,13 +125,29 @@
 		usr.update_action_buttons()
 		return 1
 
+/obj/item/clothing/under/rank/paramedic
+	desc = "A warm gorka made by CAPSA for their Paramedics. It's made with reinforced fiber to offer more protection for recovery operations in perilously cold climates."
+	name = "CAPSA Paramedic jumpsuit"
+	icon_state = "paramedic"
+	item_state = "paramedic"
+	permeability_coefficient = 0.50
+	armor_list = list(
+		melee = 10,
+		bullet = 5,
+		energy = 5,
+		bomb = 0,
+		bio = 30,
+		rad = 0
+	)
+
 /obj/item/clothing/under/rank/paramedic/bdu
-	desc = "An old BDU that someone appears to have dyed in the signature colours of CAPSA Medical. It is made with reinforced fibers and sterile materials."
-	name = "CAPSA Lifeline Technician bdu"
+	desc = "An old BDU that someone appears to have dyed in the signature colours of CAPSA Group. It is made with reinforced fibers and sterile materials."
+	name = "CAPSA Paramedic bdu"
 	icon_state = "bdutt"
 	item_state = "bdutt"
+	permeability_coefficient = 0.50
 
-/obj/item/clothing/under/rank/paramedic/bdu/toggle_style()
+/obj/item/clothing/under/rank/paramedic/bdu/verb/toggle_style()
 	set name = "Adjust style"
 	set category = "Object"
 	set src in usr
@@ -208,3 +174,38 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
+
+/* Misc CAPSA clothing */
+
+// Scrubs, removed purple because it was horrid and un-fitting
+
+/obj/item/clothing/under/scrubs
+	name = "blue scrubs"
+	desc = "A sterile blue uniform designed to protect against contamination."
+	icon_state = "scrubsblue"
+	item_state = "b_suit"
+	permeability_coefficient = 0.50
+
+/obj/item/clothing/under/scrubs/green
+	name = "green scrubs"
+	desc = "A sterile green uniform designed to protect against contamination."
+	icon_state = "scrubsgreen"
+	item_state = "scrubsgreen"
+
+// Informal clothing, might expand in future.
+
+/obj/item/clothing/under/rank/capsa_camo
+	name = "CAPSA camo shirt with pants"
+	desc = "A green camo combat shirt with matching CAPSA trousers."
+	icon_state = "capsa_camo"
+	item_state = "g_suit"
+	armor_list = list(melee = 5, bullet = 0, energy = 10, bomb = 0, bio = 5, rad = 5)
+	permeability_coefficient = 0.50
+
+/obj/item/clothing/under/rank/capsa_pants
+	name = "CAPSA combat trousers"
+	desc = "Green combat trousers for CAPSA personnel. For those that want to mix and match their own style."
+	icon_state = "capsa_camo"
+	item_state = "g_suit"
+	permeability_coefficient = 0.25 // Half clothing!
+

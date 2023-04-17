@@ -91,8 +91,8 @@
 /obj/item/stack/medical/ointment/capsa
 	name = "CAPSA branded ointment"
 	singular_name = "CAPSA branded ointment"
-	desc = "Used to treat those nasty burns. Unlike regular ointments this one has a CAPSA logo on it, its formula massively improved by including toxin-purging sterilizing crystals."
-	icon_state = "sr_ointment"
+	desc = "Used to treat those nasty burns. Unlike regular ointments this one has CAPSA colors on it, its formula massively improved by including toxin-purging sterilizing crystals."
+	icon_state = "capsa_ointment"
 	preloaded_reagents = list("dermaline" = 5, "sterilizine" = 10)
 	heal_burn = 25
 	amount = 8

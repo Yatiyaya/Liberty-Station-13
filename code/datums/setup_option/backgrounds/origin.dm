@@ -36,7 +36,7 @@
 
 /* Purely for record keeping nothing else, also because I deleted the Eris ones so I can just shove these here now, not decided if we keep them if not just delete if I forget, not to be used again - Lamasmaster
 /datum/category_item/setup_option/background/homeworld
-	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_KRIOSAN, FORM_CINDAR, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_FBP, FORM_UNBRANDED)
+	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_KRIOSAN, FORM_CINDAR, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_FBP, FORM_UNBRANDED)
 
 /datum/category_item/setup_option/background/homeworld/amethyn
 	name = "Amethyn"

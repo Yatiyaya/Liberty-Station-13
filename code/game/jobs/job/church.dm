@@ -17,7 +17,7 @@
 	security_clearance = CLEARANCE_CLERGY
 	health_modifier = 10
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	wage = WAGE_COMMAND //The church has deep pockets
 	department_account_access = TRUE
@@ -81,7 +81,7 @@
 	)
 
 	//You need insperation to do your job.
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
@@ -128,7 +128,7 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST
@@ -174,7 +174,7 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST

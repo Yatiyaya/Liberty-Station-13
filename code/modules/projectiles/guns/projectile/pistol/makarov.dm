@@ -60,31 +60,33 @@
 	set_item_state(itemstring)
 
 
-/obj/item/gun/projectile/makarov/moebius
+/obj/item/gun/projectile/makarov/capsa
 	name = " 9mm \"Malpractice\""
-	desc = "A small, easily concealable, but somewhat underpowered gun produced by PI as based off the \"Little Comet\" but ended up being a copy of the \"Clarissa\" with white paint. Uses 9mm rounds."
+	desc = "A specialized \"Stinger-S\" pistol with improved internals, painted in CAPSA stripes. The CSO's only means of nonlethal defense against problematic patients. Uses 9mm rounds."
 	icon = 'icons/obj/guns/projectile/stinger.dmi'
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
+	damage_multiplier = 1.2
+	penetration_multiplier = 1.1
 	price_tag = 200
 	serial_type = "PI"
-	icon_state = "stingersop"
-	item_state = "stingersop"
-	gun_parts = list(/obj/item/stack/material/plastic = 4)
+	icon_state = "stingercso"
+	item_state = "stingercso"
+	gun_parts = list(/obj/item/stack/material/plastic = 6)
 
-/obj/item/gun/projectile/makarov/moebius/auto_eject
+/obj/item/gun/projectile/makarov/capsa/auto_eject
 	initialized_upgrades = list(/obj/item/gun_upgrade/magwell/auto_eject/no_removal
 								)
 
-/obj/item/gun/projectile/makarov/moebius/preloaded_cbo
+/obj/item/gun/projectile/makarov/capsa/preloaded_cso
 	initialized_upgrades = list(/obj/item/gun_upgrade/muzzle/silencer
 								)
 
-/obj/item/gun/projectile/makarov/moebius/preloaded_cbo/New()
+/obj/item/gun/projectile/makarov/capsa/preloaded_cso/New()
 	. = ..()
-	ammo_magazine = new /obj/item/ammo_magazine/highcap_pistol_35/drum/soporific_cbo(src)
+	ammo_magazine = new /obj/item/ammo_magazine/highcap_pistol_35/drum/soporific_cso(src)
 
-/obj/item/gun/projectile/makarov/moebius/preloaded
+/obj/item/gun/projectile/makarov/capsa/preloaded
 
-/obj/item/gun/projectile/makarov/moebius/preloaded/New()
+/obj/item/gun/projectile/makarov/capsa/preloaded/New()
 	. = ..()
 	ammo_magazine = new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)

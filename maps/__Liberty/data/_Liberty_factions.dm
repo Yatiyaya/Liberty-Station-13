@@ -39,16 +39,29 @@
 	stampshape = "paper_stamp-x"
 
 /datum/faction/liberty/capsa
-	name = "CAPSA - Nakharan Mkne"
+	name = "CAPSA - Francesco Favaloro"
 
 	fax_alert = "CAPSA FAX"
 	fax_response = "CAPSA Transmission"
+
+	color = "#009912"
+	darkcolor = "#00580a"
+	lightcolor = "#47c156"
+
+	stamptext = "This paper has been stamped with the seal of Director-General Francesco Favaloro."
+	stampshape = "paper_stamp-dots"
+
+/datum/faction/liberty/pirs
+	name = "PIRS - Antoine Lavoisser"
+
+	fax_alert = "PIRS FAX"
+	fax_response = "PIRS Transmission"
 
 	color = "#e903df"
 	darkcolor = "#870481"
 	lightcolor = "#ff8afa"
 
-	stamptext = "This paper has been embossed with the seal of Nakharan Mkne."
+	stamptext = "This paper has been stamped with the seal of First Administrator Antoine Lavoisier."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/lonestar

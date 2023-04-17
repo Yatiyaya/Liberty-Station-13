@@ -215,7 +215,7 @@ var/const/NO_EMAG_ACT = -50
 	registered_name = "Medical ERT"
 	assignment = "PI Medical ERT"
 	access = list(access_moebius, access_medical_equip, access_morgue, access_genetics, access_heads,
-		access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+		access_chemistry, access_virology, access_cso, access_surgery, access_RC_announce,
 		access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels,
 		access_external_airlocks, access_paramedic, access_research_equipment, access_medical_suits)
 
@@ -326,9 +326,9 @@ var/const/NO_EMAG_ACT = -50
 	group = "whitesilver"
 	icon_state = "id_rd"
 
-/obj/item/card/id/cmo
+/obj/item/card/id/cso
 	group = "whitesilver"
-	icon_state = "id_cmo"
+	icon_state = "id_cso"
 
 /obj/item/card/id/det
 	group = "secblue"

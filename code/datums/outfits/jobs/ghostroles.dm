@@ -27,12 +27,12 @@
 
 /decl/hierarchy/outfit/si_medical_ert
 	name = "Medical Emergency Personnel"
-	l_ear  =/obj/item/device/radio/headset/heads/cmo
+	l_ear  =/obj/item/device/radio/headset/heads/cso
 	head = /obj/item/clothing/head/helmet/faceshield/paramedic
-	uniform = /obj/item/clothing/under/rank/moebius_biolab_officer
+	uniform = /obj/item/clothing/under/rank/cso
 	suit = /obj/item/clothing/suit/armor/paramedic
 	r_pocket = /obj/item/device/lighting/toggleable/flashlight/pen
-	pda_type = /obj/item/modular_computer/pda/heads/cmo
+	pda_type = /obj/item/modular_computer/pda/heads/cso
 	r_ear  = /obj/item/reagent_containers/syringe/large
 	belt = /obj/item/storage/belt/medical
 	glasses = /obj/item/clothing/glasses/hud/health

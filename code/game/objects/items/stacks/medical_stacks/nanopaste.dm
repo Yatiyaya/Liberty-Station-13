@@ -5,11 +5,17 @@
 	icon = 'icons/obj/stack/items.dmi'
 	icon_state = "nanopaste"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 0.2, MATERIAL_STEEL = 1)
+	preloaded_reagents = list("plasticide" = 4)
 	origin_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
 	amount = 5
+	consumable = FALSE
+	splittable = FALSE // With this it becomes the same as an ATK
 	w_class = ITEM_SIZE_SMALL //just so you can place same places that a brute pack would be
 	price_tag = 80
 
+/obj/item/stack/nanopaste/Initialize()
+	. = ..()
+	update_icon()
 
 /obj/item/stack/nanopaste/attack(mob/living/M as mob, mob/user as mob)
 	if(..())
@@ -26,6 +32,7 @@
 			use(1)
 			user.visible_message(SPAN_NOTICE("\The [user] applied some [src] at [R]'s damaged areas."),\
 				SPAN_NOTICE("You apply some [src] at [R]'s damaged areas."))
+			update_icon()
 		else
 			to_chat(user, SPAN_NOTICE("All [R]'s systems are nominal."))
 
@@ -44,23 +51,17 @@
 						"<span class='notice'>\The [user] applies some nanite paste at[user != M ? " \the [M]'s" : " \the"][S.name] with \the [src].</span>",
 						"<span class='notice'>You apply some nanite paste at [user == M ? "your" : "[M]'s"] [S.name].</span>"
 					)
+					update_icon()
 				else
 					to_chat(user, SPAN_NOTICE("Nothing to fix here."))
 		else
 			if (can_operate(H, user))        //Checks if mob is lying down on table for surgery
 				if (do_surgery(H,user,src))
+					update_icon()
 					return
 			else
 				to_chat(user, SPAN_NOTICE("Nothing to fix in here.")) //back to the original
 
-
-//For medical crafting; not nanopaste but hey, it's close.
-/obj/item/stack/sterilizer_crystal
-	name = "sterilizer crystals"
-	singular_name = "sterilizer crystal"
-	desc = "A solid, crystalized form of steralized reagents. Used by CAPSA typically in making medical supplies. Or by crack-addicts who want a mouth full of cleaning solution."
-	icon = 'icons/obj/stack/items.dmi'
-	icon_state = "sterilizer_crystal"
-	amount = 5
-	w_class = ITEM_SIZE_TINY
-	price_tag = 40
+/obj/item/stack/nanopaste/update_icon()
+	icon_state = "nanopaste_[amount]"
+	..()

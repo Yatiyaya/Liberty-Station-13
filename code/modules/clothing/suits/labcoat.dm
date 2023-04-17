@@ -27,13 +27,13 @@
 	icon_closed = "labcoat_formal"
 	icon_drape = null
 
-/obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	name = "biolab overseer's labcoat"
-	desc = "Bluer than the standard model."
-	icon_state = "labcoat_cmo_open"
-	item_state = "labcoat_cmo"
-	icon_open = "labcoat_cmo_open"
-	icon_closed = "labcoat_cmo"
+/obj/item/clothing/suit/storage/toggle/labcoat/cso
+	name = "surgeon overseer's labcoat"
+	desc = "An ornate and sterile labcoat adorned with extra padding and electronics, the logo of CAPSA Group emblazoned its back."
+	icon_state = "labcoat_cso_open"
+	item_state = "labcoat_cso"
+	icon_open = "labcoat_cso_open"
+	icon_closed = "labcoat_cso"
 	icon_drape = null
 
 /obj/item/clothing/suit/storage/toggle/labcoat/chemist

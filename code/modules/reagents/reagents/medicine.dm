@@ -1170,26 +1170,10 @@ We don't use this but we might find use for it. Porting it since it was updated 
 /datum/reagent/medicine/haloperidol/overdose(mob/living/carbon/M, alien)
 	M.add_chemical_effect(CE_TOXIN, 6)
 
-/*
-/datum/reagent/medicine/vomitol //Why is the same chem defined on two different files?
-	name = "Vomitol"
-	id = "vomitol"
-	description = "Forces patient to vomit - results in total cleaning of his stomach. Has extremely unpleasant taste."
-	taste_description = "worst thing in the world"
-	reagent_state = LIQUID
-	color = "#a6b85b"
-	overdose = REAGENTS_OVERDOSE
-	scannable = TRUE
-
-/datum/reagent/medicine/vomitol/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
-	if(prob(10 * effect_multiplier))
-		M.vomit()
-*/
-
 /datum/reagent/medicine/sterilizer
 	name = "sterilizer"
 	id = "sterilizer"
-	description = "Sterilizing solution used in making medical supplies. Don't.. drink it."
+	description = "Sterilizing solution used in making medical supplies. Don't drink."
 	taste_description = "soap"
 	reagent_state = LIQUID
 	color = "#00FFFF"
