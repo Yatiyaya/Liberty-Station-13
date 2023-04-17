@@ -40,6 +40,7 @@
 	else
 		active = 0
 		handleInactive()
+		STOP_PROCESSING(SSmachines, src)
 
 	update_icon()
 
@@ -586,7 +587,7 @@
 		return
 	switch(action)
 		if("toggle_power")
-			active != active
+			TogglePower()
 			. = TRUE
 
 		if("eject")
@@ -603,3 +604,12 @@
 			if (power_output < max_power_output || (emagged && power_output < round(max_power_output*2.5)))
 				power_output++
 				. = TRUE
+
+/obj/machinery/power/port_gen/proc/TogglePower()
+	if(active)
+		active = FALSE
+		update_icon()
+	else if(!active && HasFuel() && !IsBroken())
+		active = TRUE
+		START_PROCESSING(SSmachines, src)
+		update_icon()
