@@ -565,7 +565,7 @@
 	data["sheet_name"] = capitalize(sheet_name)
 	//reagents do not obey the same rules as sheets on gens, so we show the tank rather than the current sheet being consumed
 	data["sheets"] = reagents.total_volume
-	data["stack_percent"] = round(reagents.total_volume / reagents.maximum_volume, 0.1)
+	data["stack_percent"] = round((reagents.total_volume / reagents.maximum_volume) * 100, 0.1)
 
 	data["anchored"] = anchored
 	data["connected"] = (powernet == null ? 0 : 1)
