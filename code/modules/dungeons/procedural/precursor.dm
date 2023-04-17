@@ -29,49 +29,6 @@ var/global/list/starter_precursor_room_templates = list()
 		var/datum/map_template/precursor_template/S = new submap()
 		precursor_end_room_templates += S
 
-proc/initializePrecursorSubmaps()
-	testing("beginning dungeon map initialization!")
-	var/datum/map_template/dungeon_template/init_template = new /datum/map_template_precursor_template/starter
-	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = 146
-	bounds[MAP_MINZ] = z
-	bounds[MAP_MAXX] = 210
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = z
-	init_template.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template = new /datum/map_template/precursor_template/normal
-	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
-	init_template.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template = new /datum/map_template/precursor_template/large
-	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
-	init_template.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template = new /datum/map_template/precursor_template/end
-	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
-	init_template.initTemplateBounds(bounds)
-	testing("finished dungeon initialization!")
-
 /obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/normal
 	name = "precursor room"
 
@@ -132,6 +89,7 @@ proc/initializePrecursorSubmaps()
 		generate.setLongPathChance(1)
 		generate.setPathEndChance(80)
 		generate.setPathWidth(1)
+		generate.setDoAccurateRoomPlacementCheck(TRUE)
 		generate.generate()
 		//proc for building and connecting the entrance/exit to the dungeon here.
 
@@ -215,7 +173,6 @@ proc/initializePrecursorSubmaps()
 	while(1) //the most horrifying loop type MAKE SURE THERE IS A FUCKING BREAK SOMEWHERE BELOW OR ELSE IT WONT STOP.
 		if(Master.current_runlevel)
 			populatePrecursorMapLists() //It's not a hook because mapping subsystem has to intialize first
-			initializePrecursorSubmaps()
 			break
 		else
 			sleep(150)
