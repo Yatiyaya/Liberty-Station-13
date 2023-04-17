@@ -55351,7 +55351,6 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/chargebay)
 "cGr" = (
-/obj/machinery/bioprinter/prosthetics,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/robotics)
 "cGs" = (

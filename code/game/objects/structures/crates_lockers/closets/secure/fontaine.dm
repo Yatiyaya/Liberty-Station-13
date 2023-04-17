@@ -157,7 +157,7 @@
 
 	//Regular Spawns
 	new /obj/item/device/radio/headset/headset_pro(src)
-	new /obj/item/tool/knife/dagger(src)
+	new /obj/item/tool/knife/dagger/skinning(src)
 	if(prob(50))
 		new /obj/item/gun/projectile/boltgun/flare_gun(src)
 		new /obj/item/ammo_casing/flare/blue/prespawn(src)

@@ -1396,7 +1396,6 @@
 /turf/simulated/floor/asteroid/dirt/dark/plough,
 /area/liberty/outside/forest/hunting_lodge)
 "hM" = (
-/obj/machinery/bioprinter,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "hN" = (

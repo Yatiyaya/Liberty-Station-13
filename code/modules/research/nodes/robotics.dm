@@ -3,296 +3,29 @@
 	desc = "Basic Robotics"
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.5
-	y = 0.45
+	x = 0.1
+	y = 0.5
 	icon = "cyborganalyzer"
 
 	required_technologies = list()
 	required_tech_levels = list()
 	cost = 0
 
-	unlocks_designs = list(	/datum/design/research/circuit/mech_recharger,
+	unlocks_designs = list(
 							/datum/design/research/circuit/recharge_station,
 							/datum/design/research/item/medical/robot_scanner,
-							/datum/design/research/item/mmi,
-							/datum/design/research/circuit/mecha/main,
-							/datum/design/research/circuit/mecha/peripherals,
-							/datum/design/research/circuit/mecha/targeting)
-
-//MECHA BRANCH
-
-/datum/technology/exosuit_robotics
-	name = "Basic Exosuits"
-	desc = "Exosuit production and control systems. Exosuit-miner basics."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.5
-	y = 0.6
-	icon = "ripley"
-
-	required_technologies = list(/datum/technology/basic_robotics)
-	required_tech_levels = list()
-	cost = 375
-
-	unlocks_designs = list(
-		/datum/design/research/circuit/mechacontrol,
-		/datum/design/research/circuit/mechfab,
-		/datum/design/research/circuit/dronecontrol,
-		/datum/design/research/item/mechfab/ripley/chassis,
-		/datum/design/research/item/mechfab/ripley/chassis/firefighter,
-		/datum/design/research/item/mechfab/ripley/torso,
-		/datum/design/research/item/mechfab/ripley/left_arm,
-		/datum/design/research/item/mechfab/ripley/right_arm,
-		/datum/design/research/item/mechfab/ripley/left_leg,
-		/datum/design/research/item/mechfab/ripley/right_leg
-		)
-
-/datum/technology/mech_odysseus
-	name = "Odysseus"
-	desc = "Odysseus - the medical exosuit."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.8
-	y = 0.5
-	icon = "odyssey"
-
-	required_technologies = list(/datum/technology/exosuit_robotics)
-	required_tech_levels = list()
-	cost = 375
-
-	unlocks_designs = list(
-		/datum/design/research/item/mechfab/odysseus/chassis,
-		/datum/design/research/item/mechfab/odysseus/torso,
-		/datum/design/research/item/mechfab/odysseus/head,
-		/datum/design/research/item/mechfab/odysseus/left_arm,
-		/datum/design/research/item/mechfab/odysseus/right_arm,
-		/datum/design/research/item/mechfab/odysseus/left_leg,
-		/datum/design/research/item/mechfab/odysseus/right_leg
-		)
-
-
-/datum/technology/mech_gygax
-	name = "Gygax"
-	desc = "Gygax - the killer exosuit."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.8
-	y = 0.7
-	icon = "gygax"
-
-	required_technologies = list(/datum/technology/exosuit_robotics)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(
-		/datum/design/research/item/mechfab/gygax/chassis,
-		/datum/design/research/item/mechfab/gygax/torso,
-		/datum/design/research/item/mechfab/gygax/head,
-		/datum/design/research/item/mechfab/gygax/left_arm,
-		/datum/design/research/item/mechfab/gygax/right_arm,
-		/datum/design/research/item/mechfab/gygax/left_leg,
-		/datum/design/research/item/mechfab/gygax/right_leg,
-		/datum/design/research/item/mechfab/gygax/armour
-		)
-/*
-/datum/technology/mech_gyrax_ultra
-	name = "Gygax Ultra"
-	desc = "Gygax Ultra"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.4
-	y = 0.9
-	icon = "gygaxultra"
-
-	required_technologies = list(/datum/technology/mech_gygax)
-	required_tech_levels = list()
-	cost = 4000
-
-	unlocks_designs = list("ultra_main", "ultra_peri", "ultra_targ")
-*/
-/datum/technology/mech_durand
-	name = "Durand"
-	desc = "Durand - the knight exosuit."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.7
-	y = 0.8
-	icon = "durand"
-
-	required_technologies = list(/datum/technology/exosuit_robotics)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(
-		/datum/design/research/item/mechfab/durand/chassis,
-		/datum/design/research/item/mechfab/durand/torso,
-		/datum/design/research/item/mechfab/durand/head,
-		/datum/design/research/item/mechfab/durand/left_arm,
-		/datum/design/research/item/mechfab/durand/right_arm,
-		/datum/design/research/item/mechfab/durand/left_leg,
-		/datum/design/research/item/mechfab/durand/right_leg,
-		/datum/design/research/item/mechfab/durand/armour
-	)
-
-
-/datum/technology/mech_phazon
-	name = "Phazon"
-	desc = "Phazon - the battle scout exosuit"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.8
-	y = 0.8
-	icon = "vindicator" // TODO change icon
-
-	required_technologies = list(/datum/technology/mech_durand)
-	required_tech_levels = list() // Add some bluespace requirement?
-	cost = 3000
-
-	unlocks_designs = list(
-		/datum/design/research/item/mechfab/phazon/chassis,
-		/datum/design/research/item/mechfab/phazon/torso,
-		/datum/design/research/item/mechfab/phazon/head,
-		/datum/design/research/item/mechfab/phazon/left_arm,
-		/datum/design/research/item/mechfab/phazon/right_arm,
-		/datum/design/research/item/mechfab/phazon/left_leg,
-		/datum/design/research/item/mechfab/phazon/right_leg,
-		/datum/design/research/item/mechfab/phazon/armour
-		)
-
-
-//Mech Modules
-/datum/technology/mech_modules_core
-	name = "Exosuit Modules Technology"
-	desc = "Roots of exosuits' modularity."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.25
-	y = 0.6
-	icon = "borgmodule"
-
-	required_technologies = list(/datum/technology/exosuit_robotics)
-	required_tech_levels = list()
-	cost = 375
-
-	unlocks_designs = list(
-		/datum/design/research/item/mecha/hydraulic_clamp,
-		/datum/design/research/item/mecha/drill,
-		/datum/design/research/item/mecha/extinguisher,
-		/datum/design/research/item/mecha/cable_layer,
-		/datum/design/research/item/mecha/flaregun,
-		/datum/design/research/item/mecha/passenger
-	)
-
-/datum/technology/mech_utility_modules
-	name = "Exosuit Utility Modules"
-	desc = "Exosuit Utility Modules"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.15
-	y = 0.7
-	icon = "mechrcd"
-
-	required_technologies = list(/datum/technology/mech_modules_core)
-	required_tech_levels = list()
-	cost = 750
-
-	unlocks_designs = list(
-							/datum/design/research/item/mecha/jetpack,
-							/datum/design/research/item/mecha/ai_holder,
-							/datum/design/research/item/mecha/wormhole_gen,
-							/datum/design/research/item/mecha/rcd,
-							/datum/design/research/item/mecha/gravcatapult,
-							/datum/design/research/item/mecha/repair_droid,
-							/datum/design/research/item/mecha/plasma_generator,
-							/datum/design/research/item/mecha/energy_relay,
-							/datum/design/research/item/mecha/sleeper,
-							/datum/design/research/item/mecha/syringe_gun,
-							/datum/design/research/item/mecha/diamond_drill,
-							/datum/design/research/item/mecha/generator_nuclear
+							/datum/design/research/item/mmi
 							)
 
-/datum/technology/mech_teleporter_modules
-	name = "Exosuit Teleporter Module"
-	desc = "Exosuit Teleporter Module"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.1
-	y = 0.8
-	icon = "mechteleporter"
-
-	required_technologies = list(/datum/technology/mech_utility_modules)
-	required_tech_levels = list()
-	cost = 3750
-
-	unlocks_designs = list(/datum/design/research/item/mecha/teleporter)
-
-/datum/technology/mech_armor_modules
-	name = "Exosuit Armor Modules"
-	desc = "Exosuit Armor Modules"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.25
-	y = 0.8
-	icon = "mecharmor"
-
-	required_technologies = list(/datum/technology/mech_utility_modules)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(
-		/datum/design/research/item/mecha/ccw_armor,
-		/datum/design/research/item/mecha/proj_armor,
-		/datum/design/research/item/mecha/shield_droid
-		)
-
-/datum/technology/mech_weaponry_modules
-	name = "Exosuit Weaponry"
-	desc = "Exosuit Weaponry"
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.2
-	y = 0.4
-	icon = "mechgrenadelauncher"
-
-	required_technologies = list(/datum/technology/mech_modules_core)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(
-							/datum/design/research/item/mecha/weapon/scattershot,
-							/datum/design/research/item/mecha/weapon/laser,
-							/datum/design/research/item/mecha/weapon/grenade_launcher
-							)
-
-/datum/technology/mech_heavy_weaponry_modules
-	name = "Exosuit Heavy Weaponry"
-	desc = "Integration of hand lethal weapon in exosuit system."
-	tech_type = RESEARCH_ROBOTICS
-
-	x = 0.1
-	y = 0.45
-	icon = "mechlaser"
-
-	required_technologies = list(/datum/technology/mech_weaponry_modules)
-	required_tech_levels = list()
-	cost = 1500
-
-	unlocks_designs = list(
-							/datum/design/research/item/mecha/weapon/laser_heavy,
-							/datum/design/research/item/mecha/weapon/ion,
-							/datum/design/research/item/mecha/weapon/mecha_sword,
-							/datum/design/research/item/mecha/weapon/mecha_cutlass
-							)
-
-//AI BRANCH
+//Cyborgs
 
 /datum/technology/cyborg_robo
-	name = "AI Robotics"
+	name = "Advanced Robotics"
 	desc = "Positron links. Man-Machine Interface. Cyborg control systems. Artificial Intelegence mobile storages."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.5
-	y = 0.3
+	x = 0.3
+	y = 0.7
 	icon = "posbrain"
 
 	required_technologies = list(/datum/technology/basic_robotics)
@@ -307,13 +40,38 @@
 							/datum/design/research/circuit/robocontrol
 							)
 
+/datum/technology/robot_modules
+	name = "Advanced Cyborg Components"
+	desc = "Advanced Cyborg Components"
+	tech_type = RESEARCH_ROBOTICS
+
+	x = 0.5
+	y = 0.7
+	icon = "borgmodule"
+
+	required_technologies = list(/datum/technology/cyborg_robo)
+	required_tech_levels = list()
+	cost = 1500
+
+	unlocks_designs = list(
+						/datum/design/research/item/mechfab/robot/component/jetpack,
+						/datum/design/research/item/robot_upgrade/vtec,
+						/datum/design/research/item/robot_upgrade/tasercooler,
+						/datum/design/research/item/robot_upgrade/rcd,
+						/datum/design/research/item/robot_upgrade/arc_welder,
+						/datum/design/research/item/mechfab/robot/component/armour,
+						/datum/design/research/circuit/repair_station
+						)
+
+//AI BRANCH
+
 /datum/technology/artificial_intelligence
 	name = "Artificial intelligence"
 	desc = "Construction and programming of artificial intelligence."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.4
-	y = 0.2
+	x = 0.5
+	y = 0.9
 	icon = "aicard"
 
 	required_technologies = list(/datum/technology/cyborg_robo)
@@ -330,8 +88,8 @@
 	desc = "Artificial intelligence laws sets."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.4
-	y = 0.1
+	x = 0.7
+	y = 0.9
 	icon = "module"
 
 	required_technologies = list(/datum/technology/artificial_intelligence)
@@ -357,75 +115,103 @@
 							/datum/design/research/circuit/borgupload
 							)
 
-/datum/technology/robot_modules
-	name = "Advanced Cyborg Components"
-	desc = "Advanced Cyborg Components"
+//FBPS
+/datum/technology/prosthetic_limbs
+	name = "Prosthetic Augmentations"
+	desc = "Body augmentations in the way of CAPSA-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.6
-	y = 0.2
-	icon = "rigscanner"
+	x = 0.3
+	y = 0.3
+	icon = "scalpelmanager"
 
-	required_technologies = list(/datum/technology/cyborg_robo)
+	required_technologies = list(
+								/datum/technology/advanced_biotech,
+								/datum/technology/portable_biotech,
+								/datum/technology/basic_robotics
+								)
 	required_tech_levels = list()
 	cost = 1500
 
 	unlocks_designs = list(
-						/datum/design/research/item/mechfab/robot/component/jetpack,
-						/datum/design/research/item/robot_upgrade/vtec,
-						/datum/design/research/item/robot_upgrade/tasercooler,
-						/datum/design/research/item/robot_upgrade/rcd,
-						/datum/design/research/item/robot_upgrade/arc_welder,
-						/datum/design/research/item/mechfab/robot/component/armour,
-						/datum/design/research/circuit/repair_station
-						)
+							/datum/design/research/item/mechfab/prosthesis_moebius/r_arm,
+							/datum/design/research/item/mechfab/prosthesis_moebius/l_arm,
+							/datum/design/research/item/mechfab/prosthesis_moebius/r_leg,
+							/datum/design/research/item/mechfab/prosthesis_moebius/l_leg,
+							/datum/design/research/item/mechfab/prosthesis_moebius/groin,
+							/datum/design/research/item/mechfab/prosthesis_moebius/head,
+							/datum/design/research/item/mechfab/prosthesis_moebius/chest
+							)
 
-
-/*
-/datum/technology/basic_hardsuit_modules
-	name = "Basic Hardsuit Modules"
-	desc = "Basic Hardsuit Modules"
+/datum/technology/prosthetic_organs
+	name = "Prosthetic Organs"
+	desc = "Organ augmentations in the way of CAPSA-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.35
-	y = 0.1
-	icon = "rigscanner"
+	x = 0.5
+	y = 0.3
+	icon = "cryobag"
 
-	required_technologies = list()
+	required_technologies = list(/datum/technology/prosthetic_limbs)
 	required_tech_levels = list()
-	cost = 500
+	cost = 1500
 
-	unlocks_designs = list("rigsimpleai", "rigflash", "righealthscanner", "riganomalyscanner", "rigorescanner", "rigextinguisher", "rigmetalfoamspray", "rigcoolingunit")
+	unlocks_designs = list(
+							/datum/design/research/item/mechfab/robotic_internals/heart,
+							/datum/design/research/item/mechfab/robotic_internals/lung,
+							/datum/design/research/item/mechfab/robotic_internals/kidney,
+							/datum/design/research/item/mechfab/robotic_internals/eyes,
+							/datum/design/research/item/mechfab/robotic_internals/liver,
+							/datum/design/research/item/mechfab/robotic_internals/stomach,
+							/datum/design/research/item/mechfab/robotic_internals/blood,
+							/datum/design/research/item/mechfab/robotic_internals/muscle,
+							/datum/design/research/item/mechfab/robotic_internals/nerves,
+							/datum/design/research/item/mechfab/robotic_internals/cell
+							)
 
-/datum/technology/advanced_hardsuit_modules
-	name = "Advanced Hardsuit Modules"
-	desc = "Basic Hardsuit Modules"
+/datum/technology/augmentations
+	name = "Advanced Augmentations Biotech"
+	desc = "Refined and end of the line advancements that both body and mind can handle."
 	tech_type = RESEARCH_ROBOTICS
 
 	x = 0.5
 	y = 0.1
-	icon = "rigtaser"
+	icon = "medhud"
 
-	required_technologies = list(/datum/technology/basic_hardsuit_modules)
+	required_technologies = list(/datum/technology/prosthetic_limbs)
 	required_tech_levels = list()
-	cost = 2000
+	cost = 1500
 
-	unlocks_designs = list("rigadvancedai", "riggrenadelauncherflashbang", "rigdrill", "rigselfrepair", "rigmountedtaser", "rigcombatinjector", "rigmedicalinjector")
+	unlocks_designs = list(	/datum/design/research/item/mechfab/modules/armor,
+							/datum/design/research/item/mechfab/modules/armblade,
+							/datum/design/research/item/mechfab/modules/wolverine,
+							/datum/design/research/item/mechfab/modules/energy_blade,
+							/datum/design/research/item/mechfab/modules/taser,
+							/datum/design/research/item/mechfab/modules/armsmg,
+							/datum/design/research/item/mechfab/modules/armshield,
+							/datum/design/research/item/mechfab/modules/runner,
+							/datum/design/research/item/mechfab/modules/hud/med,
+							/datum/design/research/item/mechfab/modules/hud/sec,
+							/datum/design/research/item/mechfab/modules/hud/welder
+							)
 
-/datum/technology/toptier_hardsuit_modules
-	name = "Top-Tier Hardsuit Modules"
-	desc = "Top-Tier Hardsuit Modules"
+/datum/technology/omnitools
+	name = "Omnitool Augments Tool"
+	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
 	tech_type = RESEARCH_ROBOTICS
 
-	x = 0.65
+	x = 0.7
 	y = 0.1
-	icon = "rignuclearreactor"
+	icon = "omnisurgery"
 
-	required_technologies = list(/datum/technology/advanced_hardsuit_modules)
-	required_tech_levels = list()
-	cost = 5000
+	required_technologies = list(/datum/technology/augmentations)
+	required_tech_levels = list(RESEARCH_BIOTECH = 9, RESEARCH_ENGINEERING = 18)
+	cost = 225
 
-	unlocks_designs = list("rigmountedlaserrifle", "rigrcd", "rigmedteleport", "rignuclearreactor")
-*/
-
-
+	unlocks_designs = list(
+						/datum/design/research/item/medical/medimplant_sci,
+						/datum/design/research/item/mechfab/modules/multitool/surgical,
+						/datum/design/research/item/mechfab/modules/multitool/engineer,
+						/datum/design/research/item/mechfab/modules/multitool/miner,
+						/datum/design/research/item/mechfab/modules/multitool/farmer
+						)

@@ -67,11 +67,6 @@
 			/obj/item/grenade/chem_grenade/antiweed/nt_antiweed,
 			/obj/structure/mopbucket
 		),
-		"Non-Recharging Biomatter Cells" = list(
-			/obj/item/cell/small/neotheology,
-			/obj/item/cell/medium/neotheology,
-			/obj/item/cell/large/neotheology
-		),
 		"Energy Weapons" = list(
 			/obj/item/gun/energy/taser,
 			/obj/item/gun/energy/ntpistol,
@@ -108,11 +103,6 @@
 		"Plasma weapons" = list(
 			/obj/item/gun/energy/plasma = custom_good_amount_range(list(-3, 2)),
 			/obj/item/gun/energy/plasma/destroyer = custom_good_amount_range(list(-3, 2))
-		),
-		"Non-Recharging Biomatter Plasma Cells" = list(
-			/obj/item/cell/small/neotheology/plasma,
-			/obj/item/cell/medium/neotheology/plasma,
-			/obj/item/cell/large/neotheology/plasma
 		),
 		"Wine" = list(
 			/obj/item/reagent_containers/food/drinks/cans/cahors/cargo,

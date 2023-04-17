@@ -21,7 +21,6 @@
 							/datum/design/research/circuit/autolathe,
 							/datum/design/research/item/light_replacer,
 							/datum/design/research/item/clothing/weldermask,
-							/datum/design/research/item/mesons
 						)
 
 /datum/technology/monitoring
@@ -156,23 +155,6 @@
 							/datum/design/research/item/cogenhancer
 							)
 
-/* No tesla engine?
-/datum/technology/tesla
-	name = "Tesla"
-	desc = "Tesla"
-	tech_type = RESEARCH_ENGINEERING
-
-	x = 0.3
-	y = 0.2
-	icon = "tesla"
-
-	required_technologies = list(/datum/technology/basic_engineering)
-	required_tech_levels = list()
-	cost = 2000
-
-	unlocks_designs = list("tesla_coil", "grounding_rod")
-*/
-
 // TO ADD: advmop?, holosign, spraycan, spacesuit & helmet?, glowsticks_adv, stimpack
 /datum/technology/supplyanddemand
 	name = "Supply and Demand"
@@ -188,8 +170,6 @@
 	cost = 375
 
 	unlocks_designs = list(/datum/design/research/item/computer_part/price)
-							//datum/design/research/circuit/ordercomp,
-							//datum/design/research/circuit/supplycomp,
 
 //TOOLS BRANCH
 // TO ADD: ore_redemption, mining_equipment_vendor, mining_fabricator?
@@ -206,7 +186,10 @@
 	required_tech_levels = list()
 	cost = 750
 
-	unlocks_designs = list(/datum/design/research/item/weapon/mining/drill)
+	unlocks_designs = list(
+		/datum/design/research/item/weapon/mining/drill,
+		/datum/design/research/item/mesons
+		)
 
 
 /datum/technology/advanced_mining

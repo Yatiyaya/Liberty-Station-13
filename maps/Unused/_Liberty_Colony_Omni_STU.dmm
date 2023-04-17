@@ -54242,7 +54242,6 @@
 /obj/machinery/camera/network/medbay{
 	dir = 8
 	},
-/obj/machinery/bioprinter,
 /obj/item/storage/freezer,
 /obj/structure/sign/department/operational{
 	desc = "This sign indicates the area is an Operating Theatre for surgeries of all kinds.";
@@ -64868,7 +64867,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "mzB" = (
-/obj/machinery/bioprinter/prosthetics,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/rnd/robotics)
 "mzH" = (
