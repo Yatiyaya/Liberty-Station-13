@@ -6,10 +6,6 @@
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
-"c" = (
-/obj/effect/gibspawner/human,
-/turf/simulated/floor/asteroid/grass/grass_desert,
-/area/precursor)
 "d" = (
 /obj/random/psi/guns,
 /turf/simulated/floor/beach/sand/desert,
@@ -68,8 +64,7 @@
 	icon_state = "hivemind_tyrant";
 	color = "#636A91";
 	name = "The Stillborn";
-	desc = "The Stillborn, A creature that was once a machine, and once a living creature, torn apart through a accidently trip through a bluespace portal and reassembled on the otherside in a constant state of living and dead, it's screams are a constant reminder of it's nature.";
-	emote_see = list("twitches violently before going completely still..",{"hums in a quiet voice, \"Die. Die. Die. Di.e\""
+	desc = "The Stillborn, A creature that was once a machine, and once a living creature, torn apart through a accidently trip through a bluespace portal and reassembled on the otherside in a constant state of living and dead, it's screams are a constant reminder of it's nature."
 	},
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
@@ -268,7 +263,7 @@ A
 "}
 (9,1,1) = {"
 Z
-W
+Q
 Z
 Q
 Q
@@ -281,7 +276,7 @@ Z
 "}
 (10,1,1) = {"
 A
-c
+j
 B
 E
 H
@@ -289,7 +284,7 @@ X
 Q
 d
 L
-c
+j
 Z
 "}
 (11,1,1) = {"
