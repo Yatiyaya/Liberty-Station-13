@@ -20,7 +20,6 @@
 	inventory  = list(
 		"Tools and Equipment" = list(
 			/obj/item/clothing/suit/storage/hazardvest,
-			/obj/item/storage/pouch/small_generic,
 			/obj/item/storage/pouch/ammo,
 			/obj/item/storage/belt/utility,
 			/obj/item/device/lighting/toggleable/flashlight,
@@ -37,7 +36,7 @@
 			/obj/item/device/geiger,
 			/obj/item/device/toner
 		),
-		"Lonestar Cells" = list(
+		"Hellion Cells" = list(
 			/obj/item/cell/small,
 			/obj/item/cell/small/high,
 			/obj/item/cell/small/super,

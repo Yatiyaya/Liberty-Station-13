@@ -388,10 +388,6 @@
 	name = "crossbow bolts quiver"
 	build_path = /obj/item/storage/pouch/bolts
 
-/datum/design/bioprinter/pouch/engineering_supply
-	name = "Engineering supplies pouch"
-	build_path = /obj/item/storage/pouch/engineering_supply
-
 /datum/design/bioprinter/pouch/engineering_tools
 	name = "Engineering tools pouch"
 	build_path = /obj/item/storage/pouch/engineering_tools
@@ -399,14 +395,6 @@
 /datum/design/bioprinter/pouch/janitor_supply
 	name = "Janitor supplies pouch"
 	build_path = /obj/item/storage/pouch/janitor_supply
-
-/datum/design/bioprinter/pouch/small_generic/purple
-	name = "Small generic purple pouch"
-	build_path = /obj/item/storage/pouch/small_generic/purple
-
-/datum/design/bioprinter/pouch/small_generic
-	name = "Small generic pouch"
-	build_path = /obj/item/storage/pouch/small_generic
 
 /datum/design/bioprinter/pouch/medium_generic
 	name = "Medium generic pouch"
@@ -440,34 +428,3 @@
 /datum/design/bioprinter/holyvacuum
 	name = "\"Tersus\" Vacuum Cleaner"
 	build_path = /obj/item/holyvacuum
-
-//[CELLS]
-/datum/design/bioprinter/nt_cells/large
-	name = "NT \"Spark 13000L\""
-	build_path = /obj/item/cell/large/neotheology
-	materials = list(MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 30)
-
-/datum/design/bioprinter/nt_cells/large/plasma
-	name = "NT \"Radiance 20000L\""
-	build_path = /obj/item/cell/large/neotheology/plasma
-	materials = list(MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 15, MATERIAL_PLASMA = 3)
-
-/datum/design/bioprinter/nt_cells/medium
-	name = "NT \"Spark 1000M\""
-	build_path = /obj/item/cell/medium/neotheology/
-	materials = list(MATERIAL_STEEL = 2, MATERIAL_BIOMATTER = 20)
-
-/datum/design/bioprinter/nt_cells/medium/plasma
-	name = "NT \"Radiance 1500M\""
-	build_path = /obj/item/cell/medium/neotheology/plasma
-	materials = list(MATERIAL_STEEL = 2, MATERIAL_BIOMATTER = 10, MATERIAL_PLASMA = 2)
-
-/datum/design/bioprinter/nt_cells/small
-	name = "NT \"Spark 300S\""
-	build_path = /obj/item/cell/small/neotheology/
-	materials = list(MATERIAL_STEEL = 1, MATERIAL_BIOMATTER = 10)
-
-/datum/design/bioprinter/nt_cells/small/plasma
-	name = "NT \"Radiance 500S\""
-	build_path = /obj/item/cell/small/neotheology/plasma
-	materials = list(MATERIAL_STEEL = 1, MATERIAL_BIOMATTER = 5, MATERIAL_PLASMA = 1)

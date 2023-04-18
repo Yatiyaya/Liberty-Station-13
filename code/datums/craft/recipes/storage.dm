@@ -79,8 +79,8 @@
 	related_stats = list(STAT_COG)
 
 /datum/craft_recipe/storage/chem_bag
-	name = "chemistry bag"
-	result = /obj/item/storage/bag/chemistry
+	name = "medical bag"
+	result = /obj/item/storage/bag/capsa
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 30),
@@ -152,15 +152,6 @@
 		list(QUALITY_ADHESIVE, 10, "time" = 60)
 	)
 	related_stats = list(STAT_COG)
-
-/datum/craft_recipe/storage/leather_small_pouch
-	name = "small leather pouch"
-	result = /obj/item/storage/pouch/small_generic/leather
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_LEATHER, "time" = 30),
-		list(QUALITY_ADHESIVE, 10, "time" = 60)
-	)
 
 /datum/craft_recipe/storage/backpack/militia
 	name = "blackshield backpack"

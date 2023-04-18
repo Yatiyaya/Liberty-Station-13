@@ -19,6 +19,12 @@
 	price_tag = 200
 	var/empty = FALSE
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 /obj/item/storage/firstaid/regular
 	icon_state = "firstaid"
 

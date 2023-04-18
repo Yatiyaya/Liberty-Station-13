@@ -93,14 +93,13 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	anti_cheat = TRUE
 	var/mob/M = usr
 	var/list/options = list()
-	options["Eurolang"] = LANGUAGE_EURO
-	options["Jive"] = LANGUAGE_JIVE
+	options["Euronord"] = LANGUAGE_EURO
+	options["Galactic Sign Language"] = LANGUAGE_SIGN
 	options["Jana"] = LANGUAGE_JANA
-	options["Illyrian"] = LANGUAGE_ILLYRIAN
 	options["Interslavic"] = LANGUAGE_CYRILLIC
-	options["Lingua Romana"] = LANGUAGE_ROMANA
+	options["Interromanico"] = LANGUAGE_ROMANA
 	options["Yassari"] = LANGUAGE_YASSARI
-	options["Latin"] = LANGUAGE_LATIN
+	options["Rolion Standard"] = LANGUAGE_COALITION
 	var/choice = input(M,"Which language do you know?","Linguist Choice") as null|anything in options
 	if(src && choice)
 		M.add_language(choice)

@@ -40,25 +40,6 @@
 		usr.put_in_hands(I)
 		add_fingerprint(user)
 
-/obj/item/storage/pouch/small_generic
-	name = "small generic pouch"
-	desc = "Can hold nearly anything in it, but only a small amount."
-	icon_state = "small_generic"
-	item_state = "small_generic"
-	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_SMALL_STORAGE * 0.5
-	max_w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_BIOMATTER = 5)
-	level = BELOW_PLATING_LEVEL //We can hide under tiles :D
-
-/obj/item/storage/pouch/small_generic/purple
-	icon_state = "small_generic_p"
-	item_state = "small_generic_p"
-
-/obj/item/storage/pouch/small_generic/leather
-	icon_state = "small_leather"
-	item_state = "small_leather"
-	price_tag = 250
 
 /obj/item/storage/pouch/medium_generic
 	name = "medium generic pouch"
@@ -103,11 +84,11 @@
 
 /obj/item/storage/pouch/medical_supply
 	name = "medical supply pouch"
-	desc = "Can hold medical equipment. But only about four pieces of it."
+	desc = "Can hold medical equipment. But only about six pieces of it."
 	icon_state = "medical_supply"
 	item_state = "medical_supply"
 
-	storage_slots = 4
+	storage_slots = 6
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -130,50 +111,15 @@
 		)
 
 /obj/item/storage/pouch/engineering_tools
-	name = "engineering tools pouch"
-	desc = "Can hold small engineering tools. But only about four pieces of them."
+	name = "engineering equipment pouch"
+	desc = "Can hold engineering equipment. But only about six pieces of them."
 	icon_state = "engineering_tool"
 	item_state = "engineering_tool"
 
-	storage_slots = 4
-	max_w_class = ITEM_SIZE_SMALL
-
-	can_hold = list(
-		/obj/item/tool,
-		/obj/item/device/lighting/toggleable/flashlight,
-		/obj/item/device/radio/headset,
-		/obj/item/stack/cable_coil,
-		/obj/item/device/t_scanner,
-		/obj/item/device/scanner/gas,
-		/obj/item/taperoll/engineering,
-		/obj/item/device/robotanalyzer,
-		/obj/item/tool/minihoe,
-		/obj/item/tool/hatchet,
-		/obj/item/device/scanner/plant,
-		/obj/item/extinguisher/mini,
-		/obj/item/hand_labeler,
-		/obj/item/clothing/gloves,
-		/obj/item/clothing/glasses,
-		/obj/item/flame/lighter,
-		/obj/item/cell/small,
-		/obj/item/cell/medium,
-		/obj/item/gun/projectile/boltgun/flare_gun,
-		/obj/item/ammo_casing/flare
-		)
-
-/obj/item/storage/pouch/engineering_supply
-	name = "engineering supply pouch"
-	desc = "Can hold engineering equipment. But only about three pieces of it."
-	icon_state = "engineering_supply"
-	item_state = "engineering_supply"
-
-	storage_slots = 3
-	w_class = ITEM_SIZE_SMALL
+	storage_slots = 6
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
-		/obj/item/cell,
-		/obj/item/circuitboard,
 		/obj/item/tool,
 		/obj/item/stack/material,
 		/obj/item/material,
@@ -184,20 +130,26 @@
 		/obj/item/device/scanner/gas,
 		/obj/item/taperoll/engineering,
 		/obj/item/device/robotanalyzer,
+		/obj/item/tool/hatchet,
 		/obj/item/extinguisher/mini,
 		/obj/item/airlock_electronics,
 		/obj/item/airalarm_electronics,
 		/obj/item/circuitboard/apc,
+		/obj/item/clothing/gloves,
+		/obj/item/clothing/glasses,
+		/obj/item/flame/lighter,
+		/obj/item/cell,
+		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare
 		)
 
 /obj/item/storage/pouch/janitor_supply
 	name = "janitorial supply pouch"
-	desc = "Can hold janitorial equipment, but only about four pieces of them."
+	desc = "Can hold janitorial equipment, but only about six pieces of them."
 	icon_state = "janitor_supply"
 	item_state = "janitor_supply"
 
-	storage_slots = 4
+	storage_slots = 6
 	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 
@@ -228,7 +180,7 @@
 
 /obj/item/storage/pouch/tubular
 	name = "tubular pouch"
-	desc = "Can hold seven cylindrical and small items, including but not limiting to flares, glowsticks, syringes and even hatton tubes or rockets."
+	desc = "Can hold seven cylindrical and small items, including but not limiting to flares, glowsticks, syringes and even hatton tubes."
 	icon_state = "flare"
 	item_state = "flare"
 
@@ -240,8 +192,6 @@
 		/obj/item/tool/baton,
 		/obj/item/device/lighting/glowstick,
 		/obj/item/device/lighting/toggleable/flashlight,
-		/obj/item/ammo_casing/rocket,
-		/obj/item/ammo_magazine/smg_35,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/glass/beaker/vial,
 		/obj/item/reagent_containers/hypospray,
@@ -249,7 +199,6 @@
 		/obj/item/storage/pill_bottle,
 		/obj/item/hatton_magazine,
 		/obj/item/extinguisher,
-		/obj/item/implanter,
 		/obj/item/grenade/chem_grenade,
 		/obj/item/weldpack/canister,
 		/obj/item/cell/medium,
@@ -259,7 +208,9 @@
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
 		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_magazine/speed_loader_shotgun
+		/obj/item/ammo_magazine/speed_loader_shotgun,
+		/obj/item/ammo_magazine/smg_35,
+		/obj/item/ammo_casing/rocket
 		)
 
 /obj/item/storage/pouch/tubular/vial
@@ -377,6 +328,7 @@
 	matter = list(MATERIAL_BIOMATTER = 24) // Two holsters in one!
 	slot_flags = SLOT_BELT|SLOT_DENYPOCKET
 	max_w_class = ITEM_SIZE_HUGE
+	sliding_behavior = TRUE
 	storage_slots = 2
 
 /obj/item/storage/pouch/pistol_holster/cowboy/update_icon()
@@ -392,9 +344,8 @@
 	item_state = "kniferig"
 	price_tag = 50
 	storage_slots = 4 // 12 knives total counting stacks
-	can_hold = list(
-		/obj/item/stack/thrown/throwing_knife
-		)
+	sliding_behavior = TRUE
+	can_hold = list(/obj/item/stack/thrown/throwing_knife)
 
 /obj/item/storage/pouch/kniferig/update_icon()
 	..()

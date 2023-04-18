@@ -80,7 +80,7 @@
 #define FORM_CHTMANT			"Cht'mant"
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
-#define FORM_CAPSASYNTH			"CAPSA Synthetic"
+#define FORM_PIRSYNTH			"PIRS Synthetic"
 #define FORM_TERRAYNTH			"Terra-Therma Synthetic"
 #define FORM_LIBYNTH			"Liberty Synthetic"
 #define FORM_CHURCHSYNTH		"Knight Synthetic"

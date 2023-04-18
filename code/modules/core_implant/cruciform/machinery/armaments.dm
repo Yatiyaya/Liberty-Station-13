@@ -122,13 +122,6 @@
 		if (text)
 			desc = text
 
-
-/datum/armament/item/disk/cells
-	name = "Disk - Power Cells"
-	cost = 10
-	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/cells
-
 /datum/armament/item/disk/counselor
 	name = "Disk - Counselor"
 	cost = 5

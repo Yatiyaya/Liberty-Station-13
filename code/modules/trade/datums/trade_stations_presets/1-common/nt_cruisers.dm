@@ -21,12 +21,10 @@
 			/obj/item/reagent_containers/food/snacks/meat,
 			/obj/item/reagent_containers/food/drinks/milk,
 			/obj/item/soap/church,
-			/obj/item/storage/pouch/small_generic,
 			/obj/item/storage/pouch/medium_generic,
 			/obj/item/storage/pouch/large_generic,
 			/obj/item/storage/pouch/medical_supply,
 			/obj/item/storage/pouch/engineering_tools,
-			/obj/item/storage/pouch/engineering_supply,
 			/obj/item/storage/pouch/tubular,
 			/obj/item/storage/pouch/tubular/vial,
 			/obj/item/storage/pouch/ammo,
@@ -69,11 +67,6 @@
 			/obj/item/grenade/chem_grenade/antiweed/nt_antiweed,
 			/obj/structure/mopbucket
 		),
-		"Non-Recharging Biomatter Cells" = list(
-			/obj/item/cell/small/neotheology,
-			/obj/item/cell/medium/neotheology,
-			/obj/item/cell/large/neotheology
-		),
 		"Energy Weapons" = list(
 			/obj/item/gun/energy/taser,
 			/obj/item/gun/energy/ntpistol,
@@ -112,11 +105,6 @@
 			/obj/item/gun/energy/plasma/martyr,
 			/obj/item/gun/energy/plasma = custom_good_amount_range(list(-3, 2)),
 			/obj/item/gun/energy/plasma/destroyer = custom_good_amount_range(list(-3, 2))
-		),
-		"Non-Recharging Biomatter Plasma Cells" = list(
-			/obj/item/cell/small/neotheology/plasma,
-			/obj/item/cell/medium/neotheology/plasma,
-			/obj/item/cell/large/neotheology/plasma
 		),
 		"Wine" = list(
 			/obj/item/reagent_containers/food/drinks/cans/cahors/cargo,

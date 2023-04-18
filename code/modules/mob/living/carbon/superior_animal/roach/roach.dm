@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach
-	name = "Kampfer Roach"
+	name = "Overgrown Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
 	icon = 'icons/mob/mobs-roach.dmi'
 	icon_state = "roach"
@@ -34,8 +34,8 @@
 
 	var/blattedin_revives_left = 3 // how many times blattedin can get us back to life (as num for adminbus fun).
 	//The common roach, gets to live 4 times, same as a roachling. They have so much to live for.
-	melee_damage_lower = 3
-	melee_damage_upper = 4
+	melee_damage_lower = 5
+	melee_damage_upper = 10 //Dogsized roach like come on
 	var/knockdown_odds = 1 //1% KO odds
 
 	min_breath_required_type = 3

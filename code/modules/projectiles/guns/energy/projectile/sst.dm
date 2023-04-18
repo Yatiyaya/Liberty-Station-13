@@ -1,7 +1,7 @@
 /obj/item/gun/energy/sst
 	name = "\"ST Abnegate\" handgun"
-	desc = "\"Surface Tension\" brand handgun. A cooperative project between CAPSA Medical and Phokorus Institute Research, the Abnegate uses Similacrum tech to internally synthesize soporific coated 9mm bullets. \
-	Initially designed at the request of Lifeline Technicians for a proper way to sedate rowdy armored targets from a distance."
+	desc = "\"Surface Tension\" brand handgun. A joint project between CAPSA Medical and Phokorus Institute Research, the Abnegate uses Similacrum tech to internally synthesize soporific coated 9mm bullets. \
+	Initially designed at the request of Paramedics for a proper way to sedate rowdy armored targets from a distance."
 	icon = 'icons/obj/guns/energy/abnegate.dmi'
 	icon_state = "abnegate"
 	item_state = "abnegate"
@@ -128,3 +128,4 @@
 	icon_state = iconstring
 	set_item_state(itemstring)
 */
+

@@ -251,7 +251,7 @@
 	gender = FEMALE
 	icon_state = "cat"
 	item_state =  "cat"
-	befriend_job = "Chief Biolab Overseer"
+	befriend_job = "Chief Surgeon Overseer"
 	colony_friend = TRUE
 	friendly_to_colony = TRUE
 

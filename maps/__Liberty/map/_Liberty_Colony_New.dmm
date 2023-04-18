@@ -2025,7 +2025,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "azf" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -2274,7 +2274,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "aBR" = (
 /obj/effect/floor_decal/spline/fancy,
 /obj/effect/decal/cleanable/dirt,
@@ -3695,7 +3695,7 @@
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "aVC" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -5815,7 +5815,7 @@
 "buo" = (
 /obj/structure/sign/warning/smoking/small,
 /turf/simulated/wall/r_wall,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "bur" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -5918,7 +5918,6 @@
 "bve" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/pouch/engineering_tools,
-/obj/item/storage/pouch/engineering_supply,
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/security/armory_blackshield)
@@ -6066,7 +6065,7 @@
 	pixel_y = 25
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "bwY" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
@@ -10788,7 +10787,7 @@
 /area/liberty/rnd/docking)
 "cFI" = (
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "cFK" = (
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/white/cargo,
@@ -11986,7 +11985,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "cTf" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
@@ -13208,7 +13207,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "dil" = (
-/obj/machinery/bioprinter/prosthetics,
 /obj/machinery/camera/network/research{
 	dir = 4
 	},
@@ -13835,7 +13833,7 @@
 	icon_state = "spline_fancy_corner"
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "dpz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/wall_mounted/emcloset{
@@ -19462,8 +19460,8 @@
 "eDh" = (
 /obj/structure/closet/secure_closet/medicine,
 /obj/item/storage/fancy/vials,
-/obj/item/storage/bag/chemistry,
-/obj/item/storage/bag/chemistry,
+/obj/item/storage/bag/capsa,
+/obj/item/storage/bag/capsa,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
@@ -20477,7 +20475,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "ePs" = (
 /obj/item/modular_computer/console/preset/medical/records{
 	dir = 8
@@ -27030,7 +27028,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_perforated,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "goQ" = (
 /obj/structure/table/rack/shelf,
 /obj/item/tool/pickaxe/drill,
@@ -28089,7 +28087,7 @@
 	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "gBu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bookcase/guncase,
@@ -28893,7 +28891,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "gNu" = (
-/obj/machinery/bioprinter,
 /obj/item/storage/freezer,
 /obj/machinery/camera/network/medbay{
 	dir = 4
@@ -33648,7 +33645,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "hRD" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/maintenance{
@@ -44418,7 +44415,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "knY" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/dirt,
@@ -45113,7 +45110,7 @@
 "kwf" = (
 /obj/item/toy/plushie/mouse,
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "kwh" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood,
@@ -45140,7 +45137,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "kwp" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -45522,7 +45519,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "kAj" = (
 /obj/structure/sign/department/armory{
 	name = "ARMORY"
@@ -47685,7 +47682,7 @@
 "ldf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "ldg" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -51256,9 +51253,9 @@
 /obj/structure/bed/chair/comfy/teal{
 	dir = 8
 	},
-/obj/landmark/join/start/cmo,
+/obj/landmark/join/start/cso,
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "lVE" = (
 /obj/effect/floor_decal/industrial/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -56123,7 +56120,7 @@
 	range = 6
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "naz" = (
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/mob/roaches/low_chance,
@@ -59703,7 +59700,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "nNP" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
@@ -60861,9 +60858,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
-"obm" = (
-/turf/simulated/floor/rock,
-/area/liberty/maintenance/undergroundfloor1east)
 "obo" = (
 /obj/structure/flora/small/rock2,
 /turf/simulated/floor/asteroid/dirt,
@@ -62029,7 +62023,7 @@
 /area/liberty/security/armoryshop)
 "ooI" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "ooP" = (
 /obj/structure/table/standard,
 /obj/item/clothing/mask/surgical,
@@ -62789,7 +62783,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "oxW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -65739,7 +65733,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "pgk" = (
-/mob/living/simple_animal/capsa_roomba,
+/mob/living/simple_animal/pirs_roomba,
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
@@ -67968,7 +67962,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "pGp" = (
-/obj/structure/closet/secure_closet/reinforced/CMO,
+/obj/structure/closet/secure_closet/reinforced/cso,
 /obj/item/computer_hardware/hard_drive/portable/design/medical/cmo,
 /obj/machinery/newscaster{
 	dir = 4;
@@ -67976,8 +67970,9 @@
 	},
 /obj/item/tool/baton,
 /obj/item/reagent_containers/enricher,
+/obj/item/gun/matter/staff_of_asclepius,
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "pGq" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/bodybags,
@@ -69843,7 +69838,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "qbp" = (
 /obj/machinery/mech_recharger,
 /obj/mecha/combat/gygax/marshals,
@@ -72084,7 +72079,7 @@
 "qBP" = (
 /obj/structure/sign/warning/nosmoking/small,
 /turf/simulated/wall/r_wall,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "qCb" = (
 /obj/structure/barricade,
 /obj/effect/decal/cleanable/rubble,
@@ -73173,7 +73168,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "qOs" = (
 /obj/structure/table/standard,
 /obj/item/device/defib_kit,
@@ -73680,7 +73675,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "qUO" = (
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "qUU" = (
 /obj/structure/table/standard,
 /obj/item/device/binoculars,
@@ -75204,7 +75199,7 @@
 	icon_state = "spline_fancy_corner"
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "rny" = (
 /obj/structure/railing/grey{
 	dir = 1
@@ -80882,7 +80877,7 @@
 	eftpos_name = "Soteria Biolabs EFTPOS scanner"
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "sBz" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
@@ -82358,7 +82353,7 @@
 /obj/structure/table/woodentable,
 /obj/item/modular_computer/laptop/preset/records,
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "sUw" = (
 /obj/random/mob/spiders/low_chance,
 /turf/simulated/floor/rock,
@@ -83638,7 +83633,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "tjR" = (
 /obj/item/holder/cat/fluff/bones,
 /turf/simulated/floor/asteroid/dirt/dust,
@@ -85909,7 +85904,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "tJz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light,
@@ -87204,7 +87199,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "tXy" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/tiled/dark/cargo,
@@ -88516,7 +88511,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "ukF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -89603,7 +89598,7 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "uyQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -93392,7 +93387,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating/under,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "vpa" = (
 /obj/machinery/account_database{
 	dir = 1
@@ -94506,9 +94501,9 @@
 	pixel_x = -1;
 	pixel_y = 3
 	},
-/obj/item/stamp/cmo,
+/obj/item/stamp/cso,
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "vCz" = (
 /obj/structure/sign/warning/internals_required/small,
 /turf/simulated/wall/r_wall,
@@ -95623,7 +95618,7 @@
 "vPL" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "vPQ" = (
 /obj/machinery/power/breakerbox{
 	RCon_tag = "Mar Substation Bypass"
@@ -96104,7 +96099,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_perforated,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "vUx" = (
 /obj/structure/railing/grey{
 	dir = 1
@@ -97422,7 +97417,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "wkv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -100163,7 +100158,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "wSY" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -100486,7 +100481,7 @@
 	range = 6
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "wWx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -104466,7 +104461,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet/sblucarpet,
-/area/liberty/command/cbo)
+/area/liberty/command/cso)
 "xSF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -125133,7 +125128,7 @@ cZb
 cZb
 cZb
 cZb
-obm
+tpD
 oRn
 cZb
 cZb

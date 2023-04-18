@@ -294,6 +294,21 @@
 		usr.update_action_buttons()
 		return 1
 
+/obj/item/clothing/suit/storage/ert_hazardvest
+	name = "advanced hazard vest"
+	desc = "A high-visibility full-body vest used in work zones."
+	icon_state = "armor_handmade_fullbody"
+	item_state = "armor_handmade_fullbody"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	armor_list = list(
+		melee = 30, //if they are not waring any armor over this then we give *something*
+		bullet = 30,
+		energy = 45,
+		bomb = 80,
+		bio = 70,
+		rad = 100 //Rad proof
+	)
+
 //Roboticist
 /obj/item/clothing/suit/storage/rank/robotech_jacket
 	name = "robotech jacket"
@@ -314,9 +329,10 @@
 
 /obj/item/clothing/suit/storage/surgical_apron
 	name = "surgical apron"
-	desc = "Excellent blood collector."
+	desc = "A sterile blue apron used to take the brunt of blood from surgeries."
 	icon_state = "surgeon"
 	item_state = "surgeon"
+	permeability_coefficient = 0.10
 	blood_overlay_type = "armor"
 	extra_allowed = list(
 		/obj/item/tool/bonesetter,

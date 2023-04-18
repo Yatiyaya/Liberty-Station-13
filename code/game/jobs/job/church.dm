@@ -13,11 +13,10 @@
 	ideal_character_age = 40
 	minimum_character_age = 25
 	playtimerequired = 1200
-	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_CLERGY
 	health_modifier = 10
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	wage = WAGE_COMMAND //The church has deep pockets
 	department_account_access = TRUE
@@ -69,7 +68,6 @@
 	spawn_positions = 2
 	supervisors = "the Oathpledge"
 	difficulty = "Easy."
-	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
@@ -81,7 +79,7 @@
 	)
 
 	//You need insperation to do your job.
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
@@ -119,7 +117,6 @@
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
 	wage = WAGE_PROFESSIONAL
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
-	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
 	stat_modifiers = list(
@@ -128,7 +125,7 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST
@@ -165,7 +162,6 @@
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
 	wage = WAGE_PROFESSIONAL
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
-	also_known_languages = list(LANGUAGE_LATIN = 100)
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
 	stat_modifiers = list(
@@ -174,7 +170,7 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_CAPSASYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
+	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST

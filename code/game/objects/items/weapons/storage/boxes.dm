@@ -33,6 +33,12 @@
 	contained_sprite = TRUE
 	health = 20
 
+	cant_hold = list(/obj/item/storage/pouch,
+					 /obj/item/storage/firstaid,
+					 /obj/item/storage/toolbox,
+					 /obj/item/storage/briefcase,
+					 /obj/item/storage/secure/briefcase) //No more funky stacking pomches
+
 /obj/item/storage/box/Initialize(mapload)
 	. = ..()
 	update_icon()

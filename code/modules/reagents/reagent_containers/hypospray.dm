@@ -4,7 +4,7 @@
 
 /obj/item/reagent_containers/hypospray
 	name = "hypospray"
-	desc = "The CAPSA medical hypospray is a sterile, air-needle autoinjector for rapid administration of drugs to patients."
+	desc = "The CAPSA Group Hypospray is a sterile, air-needle autoinjector for rapid administration of drugs to patients."
 	icon = 'icons/obj/syringe.dmi'
 	item_state = "hypospray"
 	icon_state = "hypospray"
@@ -286,7 +286,7 @@
 
 /obj/item/reagent_containers/hypospray/autoinjector/large //bigger storage, not refillable. great for medical to sell, I suppose?
 	name = "advanced autoinjector" //placeholder
-	desc = "A larger, more robust autoinjector whos design prevents refilling, but allows for much more storage. A proprietary CAPSA design."
+	desc = "A larger, more robust autoinjector whose design prevents refilling, but allows for much more storage. A proprietary CAPSA design."
 	icon_state = "supeyrette" //fancy animated sprite courtesy of Guidesu.
 	item_state = "supeyrette"
 	amount_per_transfer_from_this = 10

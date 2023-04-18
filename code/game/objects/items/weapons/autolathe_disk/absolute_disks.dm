@@ -43,11 +43,8 @@
 		/datum/design/bioprinter/leather/storage/backpack/neotheology,
 		/datum/design/bioprinter/leather/storage/backpack/sport/neotheology,
 		//pouches
-		/datum/design/bioprinter/pouch/engineering_supply,
 		/datum/design/bioprinter/pouch/engineering_tools,
 		/datum/design/bioprinter/pouch/janitor_supply,
-		/datum/design/bioprinter/pouch/small_generic/purple,
-		/datum/design/bioprinter/pouch/small_generic,
 		/datum/design/bioprinter/pouch/medium_generic,
 		/datum/design/bioprinter/pouch/large_generic,
 		/datum/design/bioprinter/pouch/tubular,
@@ -370,7 +367,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 	license = 8
 	designs = list(
 		/datum/design/autolathe/gun/plasma/antebellum = 3,
-		/datum/design/bioprinter/nt_cells/medium,
 	)
 
 //for the EOTP
@@ -381,7 +377,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 	license = 8
 	designs = list(
 		/datum/design/autolathe/gun/plasma/antebellum,
-		/datum/design/bioprinter/nt_cells/medium,
 	)
 
 //for the EOTP
@@ -447,13 +442,6 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		//mods
 		/datum/design/autolathe/tool_upgrade/sanctifier,
 		/datum/design/autolathe/gun_upgrade/barrel/excruciator,
-		//power cells
-		/datum/design/bioprinter/nt_cells/small,
-		/datum/design/bioprinter/nt_cells/small/plasma,
-		/datum/design/bioprinter/nt_cells/medium,
-		/datum/design/bioprinter/nt_cells/medium/plasma,
-		/datum/design/bioprinter/nt_cells/large,
-		/datum/design/bioprinter/nt_cells/large/plasma
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public
@@ -542,32 +530,3 @@ obj/item/computer_hardware/hard_drive/portable/design/nt/concillium
 		/datum/design/autolathe/ammo/shotgun_plasma_heavy = 2,
 		/datum/design/autolathe/ammo/shotgun_plasma,
 	)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/cells
-	disk_name = "Absolute Armory - Power Cells Pack Plus"
-	icon_state = "neotheology_testament"
-
-	license = 12
-	designs = list(
-		/datum/design/bioprinter/nt_cells/large,
-		/datum/design/bioprinter/nt_cells/large/plasma,
-		/datum/design/bioprinter/nt_cells/medium,
-		/datum/design/bioprinter/nt_cells/medium/plasma,
-		/datum/design/bioprinter/nt_cells/small,
-		/datum/design/bioprinter/nt_cells/small/plasma
-		)
-
-/obj/item/computer_hardware/hard_drive/portable/design/nt_cells
-	disk_name = "Absolute Armory - Power Cells Pack"
-	icon_state = "neotheology_testament"
-
-	license = 12
-	designs = list(
-		/datum/design/bioprinter/nt_cells/large = 3,
-		/datum/design/bioprinter/nt_cells/large/plasma = 4,
-		/datum/design/bioprinter/nt_cells/medium = 2,
-		/datum/design/bioprinter/nt_cells/medium/plasma = 3,
-		/datum/design/bioprinter/nt_cells/small,
-		/datum/design/bioprinter/nt_cells/small/plasma = 2
-		)

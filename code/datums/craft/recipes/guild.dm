@@ -257,18 +257,19 @@
 */
 
 /datum/craft_recipe/guild/mace
-	name = "war mace"
+	name = "termite truncheon"
 	result = /obj/item/tool/hammer/mace
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
 /datum/craft_recipe/guild/claymore
-	name = "claymore"
-	result = /obj/item/tool/sword
+	name = "spider chopper"
+	result = /obj/item/tool/sword/union
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
@@ -287,8 +288,8 @@
 	)
 
 /datum/craft_recipe/guild/katana
-	name = "katana"
-	result = /obj/item/tool/sword/katana
+	name = "roach slicer"
+	result = /obj/item/tool/sword/katana/union
 	steps = list(
 	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
@@ -393,7 +394,7 @@
 /datum/craft_recipe/guild/webbing
 	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
-	result = /obj/item/storage/belt/webbing/Union
+	result = /obj/item/storage/belt/webbing/union
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),

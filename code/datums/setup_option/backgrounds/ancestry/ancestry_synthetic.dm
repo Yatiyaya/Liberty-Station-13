@@ -1,10 +1,10 @@
-/datum/category_item/setup_option/background/ancestry/capsa_synth_medical
+/datum/category_item/setup_option/background/ancestry/pirs_synth_medical
 	name = "Medical Positronic"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
 	in-house medical imaging, surgical support systems, and a suite of data stored biological reference documents fed to the brain within through a real-time artificial intelligence system. The entire \
 	system works on a subconscious level, allowing the existing machinery to work with instead of for the user. This model comes with a surgical omnitool implanted in the right arm."
 
-	restricted_to_species = list(FORM_CAPSASYNTH)
+	restricted_to_species = list(FORM_PIRSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/surgical)
 	restricted_jobs = list(/datum/job/outsider)
 
@@ -17,14 +17,14 @@
 		STAT_COG = 0
 	)
 
-/datum/category_item/setup_option/background/ancestry/capsa_synth_engineer
+/datum/category_item/setup_option/background/ancestry/pirs_synth_engineer
 	name = "Engineering Positronic"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
 	sturdy reinforced chassis functions and augmented tool support to further enhance your innate skills. Due to an often times self tinkering habit, engineering FBP's are made sturdy and equipped \
 	with a repository of schematics and tool tips fed directly to the user on a subconscious level, allowing the existing machinery to work with instead of for the user. This model comes with an \
 	engineering omnitool implanted in the right arm."
 
-	restricted_to_species = list(FORM_CAPSASYNTH)
+	restricted_to_species = list(FORM_PIRSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
 	restricted_jobs = list(/datum/job/outsider)
 
@@ -37,14 +37,14 @@
 		STAT_COG = 10
 	)
 
-/datum/category_item/setup_option/background/ancestry/capsa_synth_combat
+/datum/category_item/setup_option/background/ancestry/pirs_synth_combat
 	name = "Combat Positronic"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Combat positronics are built specifically \
 	for the protection of colony interests but allowed to retain their free will, unlike other cyborgs. Combat positronics have the sturdiest physical designs and enhanced hydraulic systems to \
 	further enhance their physical strength. In-built armor plating and AI-fed combat techniques given on a subconscious level allow for robust and study combatants. This model comes with an energy blade \
 	module implanted in the right arm."
 
-	restricted_to_species = list(FORM_CAPSASYNTH)
+	restricted_to_species = list(FORM_PIRSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/armblade/energy_blade)
 	restricted_jobs = list(/datum/job/outsider)
 
@@ -63,7 +63,7 @@
 	a suite of integrated repair AI modules and augmented tool support to further enhance your innate skills. These units make up the backbone of the unions synthetic work force, and were named thusly. While not as sturdy as some other models of FBP's.  \
 	Terra-Therma Workers Union positronics come with a far more advanced mechanical support subsystem, allowing for superior designs, methods, and implementations. This design come with an engineering \
 	omni-tool built in your right arm."
- 
+
 	restricted_to_species = list(FORM_TERRAYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
 	restricted_jobs = list(/datum/job/outsider)
@@ -202,14 +202,14 @@
 /datum/category_item/setup_option/background/ancestry/church_combat
 	name = "Sword Model"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. This one was designed for combat. \
-	While not nearly as armored as a CAPSA or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
+	While not nearly as armored as a PIRS or blackshield synthetic, the knight comes with a built in shortsword and many wire-jack tendons capable of allowing it to punch through armor \
 	in melee. Use of an AI-supported targeting system allows them to make more precise armor penetrating shots."
 
 	restricted_to_species = list(FORM_CHURCHSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/armblade/longsword)
 	restricted_jobs = list(/datum/job/outsider)
 
-	//Compared to the CAPSA combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
+	//Compared to the PIRS combat model and blackshield synths you get 20 armor across the body vs. 30/35 respectively, so what you lack in natural defense is made up in offense. -Kaz
 	stat_modifiers = list(
 		STAT_ROB = 25,
 		STAT_TGH = 10,

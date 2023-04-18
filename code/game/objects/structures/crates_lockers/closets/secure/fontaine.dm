@@ -53,8 +53,8 @@
 				new /obj/item/ammo_magazine/highcap_pistol_35(src)
 		if("REVOLVER")
 			new /obj/item/gun/projectile/revolver/frontier(src)
-			new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
-			new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 		if("EGUN_P")
 			new /obj/item/gun/energy/ntpistol(src)
 			new /obj/random/powercell/small_safe_lonestar(src)
@@ -143,8 +143,8 @@
 				new /obj/item/ammo_magazine/highcap_pistol_35(src)
 		if("REVOLVER")
 			new /obj/item/gun/projectile/revolver/frontier(src)
-			new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
-			new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
+			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 
 	//melee
 	switch(melee_cache)
@@ -157,7 +157,7 @@
 
 	//Regular Spawns
 	new /obj/item/device/radio/headset/headset_pro(src)
-	new /obj/item/tool/knife/dagger(src)
+	new /obj/item/tool/knife/dagger/skinning(src)
 	if(prob(50))
 		new /obj/item/gun/projectile/boltgun/flare_gun(src)
 		new /obj/item/ammo_casing/flare/blue/prespawn(src)

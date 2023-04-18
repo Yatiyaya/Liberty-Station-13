@@ -303,32 +303,6 @@
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/clothing/gloves/thick(src)
 
-/obj/structure/closet/wardrobe/job/chemistry_white
-	name = "chemistry wardrobe"
-	icon_door = "white"
-
-/obj/structure/closet/wardrobe/job/chemistry_white/populate_contents()
-	new /obj/item/clothing/under/rank/chemist(src)
-	new /obj/item/clothing/under/rank/chemist(src)
-	new /obj/item/clothing/shoes/color(src)
-	new /obj/item/clothing/shoes/color(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/chemist(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/chemist(src)
-
-/obj/structure/closet/wardrobe/job/virology_white
-	name = "virology wardrobe"
-	icon_door = "white"
-
-/obj/structure/closet/wardrobe/job/virology_white/populate_contents()
-	new /obj/item/clothing/under/rank/virologist(src)
-	new /obj/item/clothing/under/rank/virologist(src)
-	new /obj/item/clothing/shoes/color(src)
-	new /obj/item/clothing/shoes/color(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/virologist(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/virologist(src)
-	new /obj/item/clothing/mask/surgical(src)
-	new /obj/item/clothing/mask/surgical(src)
-
 /obj/structure/closet/wardrobe/job/medic_white
 	name = "medical wardrobe"
 	icon_door = "white"
@@ -338,7 +312,6 @@
 	new /obj/item/clothing/under/rank/medical(src)
 	new /obj/item/clothing/under/scrubs(src)
 	new /obj/item/clothing/under/scrubs/green(src)
-	new /obj/item/clothing/under/scrubs/purple(src)
 	new /obj/item/clothing/shoes/color(src)
 	new /obj/item/clothing/shoes/color(src)
 	new /obj/item/clothing/shoes/reinforced(src)

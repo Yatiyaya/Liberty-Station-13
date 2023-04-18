@@ -357,10 +357,11 @@
 //          Chemistry bag
 // -----------------------------
 
-/obj/item/storage/bag/chemistry
-	name = "chemistry bag"
+/obj/item/storage/bag/capsa
+	name = "medical bag"
+	desc = "A sterile bag capable of quickly transferring and sorting out medical utilities."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "chemistry_bag"
+	icon_state = "capsae" // This is the origin of the name CAPSA btw. - Seb
 	storage_slots = 10
 	max_storage_space = 100
 	max_w_class = ITEM_SIZE_NORMAL
@@ -369,5 +370,7 @@
 	can_hold = list(/obj/item/reagent_containers/pill,
 		/obj/item/reagent_containers/glass/beaker,
 		/obj/item/reagent_containers/glass/bottle,
-		/obj/item/genetics/sample
+		/obj/item/genetics/sample,
+		/obj/item/stack/medical,
+		/obj/item/reagent_containers/hypospray/autoinjector // On popular demand. - Seb
 	)
