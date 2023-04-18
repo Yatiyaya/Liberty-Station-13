@@ -12,10 +12,6 @@
 /mob/living/simple_animal/snail,
 /turf/simulated/floor/rock/dark,
 /area/precursor)
-"e" = (
-/obj/procedural/dungenerator/precursor,
-/turf/unsimulated/mineral,
-/area/precursor)
 "g" = (
 /turf/simulated/wall/ice,
 /area/precursor)
@@ -23,9 +19,16 @@
 /obj/map_data/precursor,
 /turf/unsimulated/mineral,
 /area/precursor)
-"Z" = (
+"I" = (
 /obj/procedural/dungenerator/precursor,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/precursor)
+"O" = (
+/obj/machinery/floodlight,
 /turf/simulated/floor/rock/dark,
+/area/precursor)
+"Z" = (
+/turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 
 (1,1,1) = {"
@@ -378,7 +381,7 @@ a
 a
 a
 a
-e
+a
 r
 a
 "}
@@ -907,7 +910,7 @@ c
 c
 c
 c
-Z
+c
 b
 a
 a
@@ -1252,11 +1255,11 @@ a
 b
 c
 c
-c
-c
-c
-c
-c
+Z
+Z
+Z
+Z
+Z
 c
 c
 c
@@ -1429,11 +1432,11 @@ a
 b
 c
 c
-c
-c
-c
-c
-c
+Z
+Z
+Z
+Z
+Z
 c
 c
 c
@@ -1606,11 +1609,11 @@ a
 b
 c
 c
-c
-c
-c
-c
-c
+Z
+Z
+I
+Z
+Z
 c
 c
 c
@@ -1783,11 +1786,11 @@ a
 b
 c
 c
-c
-c
-c
-c
-c
+Z
+Z
+Z
+Z
+Z
 c
 c
 c
@@ -1960,11 +1963,11 @@ a
 b
 c
 c
-c
-c
-c
-c
-c
+Z
+Z
+Z
+Z
+Z
 c
 c
 c
@@ -2137,7 +2140,7 @@ a
 b
 c
 c
-c
+O
 c
 c
 c
