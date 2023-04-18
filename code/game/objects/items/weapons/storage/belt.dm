@@ -350,6 +350,7 @@
 		/obj/item/clipboard,
 		/obj/item/device/camera,
 		/obj/item/folder,
+		/obj/item/gun/energy/taser,
 		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
