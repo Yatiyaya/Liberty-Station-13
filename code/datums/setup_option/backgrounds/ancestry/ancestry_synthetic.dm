@@ -129,7 +129,7 @@
 	calming unruly people, your chassis is designed with a wide variety of physical augmentations and comes with an inbuilt taser."
 
 	restricted_to_species = list(FORM_LIBYNTH)
-	racial_implants = (/obj/item/organ_module/active/simple/taser/blackshield)
+	racial_implants = (/obj/item/organ_module/active/simple/taser)
 	restricted_jobs = list(/datum/job/outsider)
 
 	stat_modifiers = list(

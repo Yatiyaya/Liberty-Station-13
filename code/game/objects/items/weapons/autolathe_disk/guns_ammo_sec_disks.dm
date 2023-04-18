@@ -881,7 +881,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
-	disk_name = "Astrakhan - Dominion Plasma Rifle"
+	disk_name = "Astrakhan - Shenyang Plasma Rifle"
 	icon_state = "astrakhan"
 
 	license = 12
@@ -891,7 +891,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/purger
-	disk_name = "Astrakhan - Purger Plasma Rifle"
+	disk_name = "Astrakhan - Hunan Plasma Rifle"
 	icon_state = "astrakhan"
 
 	license = 8

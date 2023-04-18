@@ -234,11 +234,11 @@
 	build_path = /obj/item/gun/energy/ionrifle
 
 /datum/design/autolathe/gun/pulse
-	name = "Ast-Rak PR \"Dominion\""
+	name = "Ast-Rak PR \"Shenyang\""
 	build_path = /obj/item/gun/energy/plasma
 
 /datum/design/autolathe/gun/pulse_destroyer
-	name = "Ast-Rak PR \"Purger\""
+	name = "Ast-Rak PR \"Hunan\""
 	build_path = /obj/item/gun/energy/plasma/destroyer
 
 /datum/design/autolathe/gun/pulse_cassad

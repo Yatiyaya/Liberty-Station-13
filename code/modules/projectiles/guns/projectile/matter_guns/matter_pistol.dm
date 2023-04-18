@@ -65,7 +65,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 			This version is far more bulkier than its pistol counterpart, but packs quite a punch. Able to fire projectiles that fragment on impact or incendiary rounds."
 	icon = 'icons/obj/guns/nano/shotgun.dmi'
 	icon_state = "railgun"
-	item_state = "railngun"
+	item_state = "railgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 6)
 	price_tag = 650

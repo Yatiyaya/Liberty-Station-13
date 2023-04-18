@@ -165,13 +165,13 @@
 	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/plasma_shells
 
 /datum/armament/item/disk/purger
-	name = "Disk - Purger"
+	name = "Disk - Hunan"
 	cost = 40
 	min_cost = 25
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/purger
 
 /datum/armament/item/disk/dominion
-	name = "Disk - Dominion"
+	name = "Disk - Shenyang"
 	cost = 80
 	min_cost = 80
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
