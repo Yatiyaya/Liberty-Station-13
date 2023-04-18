@@ -1,86 +1,86 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "c" = (
 /obj/machinery/floodlight{
 	on = 1
 	},
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "g" = (
 /obj/effect/overlay/palmtree_l,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "i" = (
 /obj/effect/overlay/palmtree_r,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "n" = (
 /obj/item/stool,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "o" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "q" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/wall/tomb_king,
-/area/deepmaint)
+/area/precursor)
 "s" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "u" = (
 /obj/structure/sink/puddle,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "v" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/energy/cog,
 /obj/item/cell/medium/super,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "D" = (
 /turf/simulated/wall/tomb_king,
-/area/deepmaint)
+/area/precursor)
 "H" = (
 /obj/structure/table/reinforced,
 /obj/item/device/lighting/toggleable/flashlight/heavy,
 /obj/item/storage/bag/fossils,
 /obj/item/tool/pickaxe/excavation,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "L" = (
 /mob/living/simple_animal/lizard{
 	name = "lumbo"
 	},
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "M" = (
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "S" = (
 /obj/structure/flora/small/grassa1,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "X" = (
 /obj/effect/overlay/palmtree_l,
 /obj/structure/flora/small/grassa1,
 /turf/simulated/floor/beach/sand/desert,
-/area/deepmaint)
+/area/precursor)
 "Y" = (
 /obj/structure/table/reinforced,
 /obj/item/device/depth_scanner,
 /obj/item/device/ano_scanner,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 "Z" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/rock/manmade/ruin1,
-/area/deepmaint)
+/area/precursor)
 
 (1,1,1) = {"
 M
@@ -105,8 +105,8 @@ M
 M
 M
 g
-D
-q
+M
+s
 s
 M
 M
