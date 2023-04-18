@@ -36,3 +36,9 @@
 	name = "Burnt Post Voidwolf Reclaimed Event Map (30x30)"
 	desc = "When voidwolfs were told to make a repair shop they forgot the colony was located that mountain untill after the repairs were done."
 	mappath = 'maps/submaps/map_clearers/burnt_post_voidwolf_reclaimed.dmm'
+
+/datum/map_template/precursor_icewall_reset
+	name = "MAP RESET 8X7" //cause of the space we work with we need 8x7 for 21 iterations of clear instead of one HUGE one.
+	desc = "REPLACES EVERYTHING WITH ICE WALL"
+	mappath = 'maps/submaps/map_clearers/pruins_icewall_reset.dmm'
+	annihilate = TRUE

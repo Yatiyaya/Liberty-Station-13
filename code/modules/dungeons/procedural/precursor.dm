@@ -65,15 +65,18 @@ var/global/list/starter_precursor_room_templates = list()
 
 /obj/procedural/dungenerator/precursor
 	name = "Precursor Gen"
+	var/resetting = FALSE
+	var/generating = FALSE
 
 /obj/procedural/dungenerator/precursor/proc/make_me_dungeon()
+	set background = 1
 	spawn()
 		//testing_variable(start, REALTIMEOFDAY)
 		var/obj/procedural/jp_DungeonGenerator/precursor/generate = new /obj/procedural/jp_DungeonGenerator/precursor(src)
 		testing("Beginning procedural generation of [name] -  Z-level [z].")
 		generate.name = name
-		generate.setArea(locate(145, 26, z), locate(171, 45, z)) //bottom right corner
-		generate.setWallType(/turf/simulated/wall)
+		generate.setArea(locate(145, 27, z), locate(171, 45, z)) //bottom right corner
+		generate.setWallType(/turf/simulated/wall/ice)
 		generate.setFloorType(/turf/simulated/floor/rock/manmade/ruin2)
 		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/starter))
 		generate.setNumRooms(1) //creates the single starter room they enter other rooms from.
@@ -86,7 +89,9 @@ var/global/list/starter_precursor_room_templates = list()
 		generate.setLongPathChance(1)
 		generate.setPathEndChance(80)
 		generate.setPathWidth(1)
+		generate.setDoAccurateRoomPlacementCheck(TRUE)
 		generate.generate()
+		//proc for building and connecting the entrance/exit to the dungeon here.
 
 		sleep(90)
 
@@ -108,7 +113,7 @@ var/global/list/starter_precursor_room_templates = list()
 
 		sleep(90)
 
-		generate.setArea(locate(05, 26, z), locate(171, 171, z)) //actual dungeon area.
+		generate.setArea(locate(05, 27, z), locate(171, 171, z)) //actual dungeon area.
 		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/large))
 		generate.setNumRooms(6) // 6 main rooms that we don't duplicate. Need miniumum of 6 before I can finish the pull code.
 		generate.setRoomMinSize(10)
@@ -126,7 +131,7 @@ var/global/list/starter_precursor_room_templates = list()
 
 		sleep(90)
 
-		generate.setArea(locate(05, 26, z), locate(171, 171, z)) //actual dungeon area.
+		generate.setArea(locate(05, 27, z), locate(171, 171, z)) //actual dungeon area.
 		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/normal))
 		generate.setNumRooms(30) // whole buncha rooms!
 		generate.setRoomMinSize(5)
@@ -142,20 +147,33 @@ var/global/list/starter_precursor_room_templates = list()
 		generate.setDoAccurateRoomPlacementCheck(TRUE)
 		generate.generate()
 
-//DO NOT REMOVE ELSE, it becomes unreachable
-#if defined(UNIT_TESTS) || defined(SPACEMAN_DMM)
-/obj/procedural/dungenerator/precursor/New()
-	log_test("Skipping precursor generation for unit tests")
-	return
-#else
+/obj/procedural/dungenerator/precursor/proc/reset() //replaces the dungeon with ice walls.
+	set background = 1
+	var/datum/map_template/frozone = new /datum/map_template/precursor_icewall_reset //set frozone to the mapclear we need. Its 8x7.
+	var/turf/targetspot = locate(4, 26, src.z)
+	var/verticalstepcounter = 0 //so we can do the 7 iterations it takes each time before stepping right and doing it again.
+	var/horizontalstepcounter = 0 //so we can do the 7 other step cycles
+
+	resetting = TRUE
+	while(horizontalstepcounter < 7 || targetspot.x < 172)
+		while(verticalstepcounter < 7 || targetspot.y < 172)
+			spawn()
+			frozone.load(targetspot, centered = FALSE, orientation = NORTH, post_init = 1)
+			targetspot = locate(targetspot.x, targetspot.y + 7, targetspot.z)
+			verticalstepcounter += 1
+			message_admins("\red reset proc built ice walls at [targetspot.x], [targetspot.y], [targetspot.z].", 1)
+			sleep(10) //if it shoots thru too fast it dosn't generate them all. Pain.
+		targetspot = locate(targetspot.x + 8, 26, targetspot.z)
+		horizontalstepcounter += 1
+
+	message_admins("\blue Precursor reset proc has finished regenerating the ice walls.", 1)
+	resetting = FALSE
+
 /obj/procedural/dungenerator/precursor/New() //just a object placed on the map to generate it the first time.
-	while(1)
+	while(1) //the most horrifying loop type MAKE SURE THERE IS A FUCKING BREAK SOMEWHERE BELOW OR ELSE IT WONT STOP.
 		if(Master.current_runlevel)
 			populatePrecursorMapLists() //It's not a hook because mapping subsystem has to intialize first
 			break
 		else
 			sleep(150)
 	src.make_me_dungeon()
-	testing("Finished procedural generation of [name]. [generate.errString(generate.out_error)] -  Z-level [z], in [(REALTIMEOFDAY - start) / 10] seconds.")
-	qdel()
-#endif
