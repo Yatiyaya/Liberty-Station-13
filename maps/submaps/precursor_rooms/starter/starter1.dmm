@@ -27,7 +27,7 @@
 /area/precursor)
 "m" = (
 /obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/snow/sleek/alt3,
+/turf/simulated/floor/snow,
 /area/precursor)
 "o" = (
 /obj/structure/table/reinforced,
@@ -37,7 +37,7 @@
 /area/precursor)
 "s" = (
 /obj/structure/flora/small/snow/boulder1,
-/turf/simulated/floor/snow/sleek/alt3,
+/turf/simulated/floor/snow,
 /area/precursor)
 "y" = (
 /obj/structure/table/reinforced,
@@ -66,7 +66,7 @@
 	aggro_vision_range = 0;
 	name = "Ice-lee"
 	},
-/turf/simulated/floor/snow/sleek/alt3,
+/turf/simulated/floor/snow,
 /area/precursor)
 "I" = (
 /turf/simulated/floor/rock/manmade/ruin1,
@@ -75,11 +75,11 @@
 /turf/simulated/mineral/random,
 /area/precursor)
 "P" = (
-/turf/simulated/floor/snow/sleek/alt3,
+/turf/simulated/floor/snow,
 /area/precursor)
 "R" = (
 /obj/structure/flora/small/snow/boulder2,
-/turf/simulated/floor/snow/sleek/alt3,
+/turf/simulated/floor/snow,
 /area/precursor)
 "W" = (
 /obj/structure/flora/small/snow/rock3,

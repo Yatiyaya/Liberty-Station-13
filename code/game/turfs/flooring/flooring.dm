@@ -870,6 +870,18 @@ var/list/flooring_types
 /decl/flooring/grass2/colonialbeach/corner
 	icon_base = "gbcorner"
 
+/*Snow*/
+/decl/flooring/snow
+	name = "snow"
+	icon = 'icons/turf/flooring/snows.dmi'
+	icon_base = "snow"
+	has_base_range = 4
+	flags = TURF_REMOVE_SHOVEL | TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
+	plating_type = /decl/flooring/dirt
+	footstep_sound = "grass"
+	floor_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
 /*Dirt*/
 /decl/flooring/dirt
 	name = "dirt"

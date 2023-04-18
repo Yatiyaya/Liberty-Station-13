@@ -37,14 +37,14 @@
 /area/precursor)
 "p" = (
 /obj/effect/gibspawner/human,
-/turf/simulated/floor/snow/sleek/alt1,
+/turf/simulated/floor/snow,
 /area/precursor)
 "q" = (
-/turf/simulated/floor/snow/transition_snow_desert,
+/turf/simulated/floor/snow,
 /area/precursor)
 "r" = (
 /obj/random/psi/weapons,
-/turf/simulated/floor/snow/transition_snow_desert,
+/turf/simulated/floor/snow,
 /area/precursor)
 "s" = (
 /obj/structure/flora/small/grassa2,
@@ -52,10 +52,10 @@
 /area/precursor)
 "t" = (
 /obj/random/psi/weapons/low_chance,
-/turf/simulated/floor/snow/sleek/alt1,
+/turf/simulated/floor/snow,
 /area/precursor)
 "u" = (
-/turf/simulated/floor/snow/sleek/alt1,
+/turf/simulated/floor/snow,
 /area/precursor)
 "v" = (
 /mob/living/carbon/superior_animal/psi_monster/dreaming_king{
@@ -81,7 +81,7 @@
 /area/precursor)
 "C" = (
 /obj/structure/flora/tree/dead,
-/turf/simulated/floor/snow/sleek/alt1,
+/turf/simulated/floor/snow,
 /area/precursor)
 "D" = (
 /obj/machinery/genetics/cloner{
@@ -151,7 +151,7 @@
 /area/precursor)
 "Y" = (
 /obj/structure/flora/grass/both,
-/turf/simulated/floor/snow/sleek/alt1,
+/turf/simulated/floor/snow,
 /area/precursor)
 "Z" = (
 /turf/simulated/wall/ice,
