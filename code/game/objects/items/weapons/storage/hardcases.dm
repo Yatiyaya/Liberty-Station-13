@@ -176,8 +176,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/handcuffs(src)
 	new /obj/item/voucher/marshal/wosecondary(src) // They no longer spawn with an Amnesty, moved it to this selection of secondaries.
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/clothing/accessory/badge/holo/wo(src)
 
 /obj/item/storage/hcases/ammo/ih/spec_officer
@@ -186,8 +184,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 /obj/item/storage/hcases/ammo/ih/spec_officer/populate_contents()
 	new /obj/item/handcuffs(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/clothing/accessory/badge/holo/warden(src)
 
 
@@ -205,7 +201,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/storage/hcases/ammo/ih/marshal_officer/populate_contents()
 	new /obj/item/handcuffs(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/cell/small/high(src)
 
@@ -225,7 +220,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/voucher/blackshield/COsecondary(src) // They don't spawn with a Lamia anymore, but come with their own secondary voucher.
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/tool/knife/boot/blackshield(src)
 	new /obj/item/clothing/accessory/badge/holo/co(src)
 
@@ -236,7 +230,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/handcuffs(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/tool/knife/boot/blackshield(src)
 
 
@@ -247,7 +240,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/handcuffs(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/tool/knife/boot/blackshield(src)
 
 /obj/item/storage/hcases/ammo/blackmarket/trooper
@@ -257,7 +249,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/handcuffs(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/cell/small/high(src)
-	new /obj/item/gun/energy/gun/martin/preloaded(src)
 	new /obj/item/tool/knife/boot/blackshield(src)
 
 /obj/item/storage/hcases/ammo/excel
@@ -436,7 +427,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/cell/medium/moebius/high(src) // Keeping the cell as a "second mag" for the Abnegate
 	new /obj/item/clothing/suit/straight_jacket(src)
 	new /obj/item/storage/firstaid/capsa/large(src)
-	new /obj/item/gun/energy/sst/preloaded(src) // They're now nonlethal and justifies getting an upgrade from science as nobody will ever want a downgrade.
 	new /obj/item/modular_computer/tablet/moebius/preset(src)
 
 //////////////////////////////////////////Engineering//////////////////////////////////////////
@@ -549,7 +539,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		// Keeping this in case any other "sensible" option for a primary weapon for Lifeline Techs arrives, just add them as an option here.
 		options["\"Stinger\" sopo pistol with HV ammo"] = list(/obj/item/gun/projectile/stinger/pepperball/sopo,/obj/item/gun_upgrade/muzzle/silencer,/obj/item/ammo_magazine/pistol_35,/obj/item/ammo_magazine/pistol_35/rubber,/obj/item/ammo_magazine/pistol_35/rubber)
-		options["\"Sprocket\" laser carbine"] = list(/obj/item/gun/energy/cog/sprocket/preloaded,/obj/item/cell/medium/moebius/high)
+		options["\"Hera\" stun revolver"] = list(/obj/item/gun/energy/stunrevolver/sci,/obj/item/cell/medium/moebius/high)
 		var/choice = input(user,"Which gun will you take?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]

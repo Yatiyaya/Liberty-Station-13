@@ -1,9 +1,8 @@
 /obj/item/gun/energy/sunrise
 	name = "\"Sunrise\" laser SMG"
-	desc = "The \"Sunrise\" laser SMG is a Liberty Marshal's special in terms of its creation.\
-	This once dated SMG design has been completely stripped down and shoved full of hardware from a Firestorm and Discolaser.\
-	However parts themselves appear to have been modified to allow for the beams to keep much of their power through high-focused lenses!\
-	Etched into the guns receiver on the left side is a script \"M\" letter."
+	desc = "The \"Sunrise\" laser SMG is a Liberty Group special in terms of its creation.\
+	This once dated ballistic SMG design has been completely stripped down and shoved full of hardware from a Firestorm SMG.\
+	However parts themselves appear to have been modified to allow for the beams to keep much of their power through high-focused lenses!"
 	icon = 'icons/obj/guns/energy/sunrise.dmi'
 	icon_state = "sunrise"
 	item_state = "sunrise"
@@ -28,7 +27,7 @@
 		BURST_8_ROUND,
 		FULL_AUTO_600
 		)
-	serial_type = "NM"
+	serial_type = "LG"
 
 /obj/item/gun/energy/sunrise/update_icon()
 	..()

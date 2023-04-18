@@ -208,19 +208,6 @@
 
 //Weapons ------------------------
 
-/datum/craft_recipe/guild/martinupgraded
-	name = "overclocked martin energy pistol"
-	result = /obj/item/gun/energy/gun/martin/upgraded
-	steps = list(
-		list(/obj/item/gun/energy/gun/martin, 1, time = 60),
-		list(QUALITY_SCREW_DRIVING, 20, "time" = 40),
-		list(/obj/item/stack/cable_coil, 5, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 15),
-		list(QUALITY_WELDING, 40, "time" = 30),
-		list(CRAFT_MATERIAL, 1, MATERIAL_URANIUM, "time" = 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 20),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
-	)
 /* Kept for reference for now. Replacement soon (tm)
 //An exspensive but powerful CQC weapon that also can be used as a flar gun
 /datum/craft_recipe/guild/abdicatorshotgun

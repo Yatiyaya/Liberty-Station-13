@@ -316,7 +316,6 @@
 			/obj/item/gun/projectile/giskard,
 			/obj/item/gun/projectile/olivaw,
 			/obj/item/gun/projectile/revolver/detective,
-			/obj/item/gun/energy/gun/martin,
 			/obj/item/gun/projectile/boltgun/flare_gun,
 			/obj/item/ammo_casing/flare,
 			/obj/item/taperoll,

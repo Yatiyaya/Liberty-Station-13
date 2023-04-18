@@ -126,43 +126,31 @@
 	name = "Disk - Counselor"
 	cost = 5
 	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/counselor
-
-/datum/armament/item/disk/antebellum
-	name = "Disk - Antebellum"
-	cost = 10
-	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/antebellum
-
-/datum/armament/item/disk/carpedie
-	name = "Disk - Carpedie"
-	cost = 15
-	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/carpedie
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor
 
 /datum/armament/item/disk/halicon
 	name = "Disk - Halicon"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/halicon
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
 
 /datum/armament/item/disk/halicon
 	name = "Disk - Halicon"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/halicon
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
 
 /datum/armament/item/disk/protector
 	name = "Disk - Protector"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/protector
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/protector
 
 /datum/armament/item/disk/nt_lightfall
 	name = "Disk - Lightfall"
 	cost = 15
 	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/lightfall
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
 
 /datum/armament/item/disk/nukes
 	name = "Disk - Holy Grenades"
@@ -176,29 +164,17 @@
 	min_cost = 20
 	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/plasma_shells
 
-/datum/armament/item/disk/themis
-	name = "Disk - Themis"
-	cost = 35
-	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/themis
-
 /datum/armament/item/disk/purger
-	name = "Disk - Purger"
+	name = "Disk - Hunan"
 	cost = 40
 	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/purger
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/purger
 
 /datum/armament/item/disk/dominion
-	name = "Disk - Dominion"
+	name = "Disk - Shenyang"
 	cost = 80
 	min_cost = 80
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/dominion
-
-/datum/armament/item/disk/old_test_disk
-	name = "Disk - Old Testament"
-	cost = 50
-	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/old_guns
+	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
 
 /datum/armament/item/disk/new_test_disk
 	name = "Disk - New Testament"

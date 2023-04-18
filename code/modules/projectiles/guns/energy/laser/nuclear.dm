@@ -1,5 +1,5 @@
 /obj/item/gun/energy/gun/nuclear
-	name = "\"EBR-IV\" Nuclear Particle Rifle"
+	name = "\"EBR-IV\" Nuclear Particle Pistol"
 	desc = "A prototype of a 'self-sustaining' experimental breeder rifle feeding itself off a built-in nuclear reactor. Projecting either high powered tazer shots or deadly particle beams at will of it's user. \
 	Neither Phokorus Institute nor Sol Military take any responsiblity for deaths of it's users."
 	icon = 'icons/obj/guns/energy/nucgun.dmi'
@@ -7,7 +7,7 @@
 	item_charge_meter = TRUE
 	fire_sound = 'sound/weapons/energy/aer14fire.ogg'
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK | SLOT_BELT | SLOT_HOLSTER
 	force = WEAPON_FORCE_PAINFUL //looks heavier than a pistol
 	self_recharge = 1
 	modifystate = null

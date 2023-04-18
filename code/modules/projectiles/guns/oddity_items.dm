@@ -188,21 +188,6 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	fire_sound = 'sound/weapons/energy/aer9fire.ogg'
 	serial_type = "Mastercraft"
 
-/obj/item/gun/energy/captain/zapper
-	name = "\"Retro-Funk\" Zapper"
-	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
-			Not really much of an interesting weapon by Mastercraft standards, with no unusual properties besides a self charging battery and incredible shot capacity. Often loved for its simplicity and retro style."
-	icon = 'icons/obj/guns/energy/zapper.dmi'
-	fire_sound = 'sound/weapons/energy/Laser4.ogg' // Retro!
-	icon_state = "zap"
-	charge_cost = 50
-	item_charge_meter = FALSE
-	charge_meter = FALSE
-	price_tag = 1500
-	allow_similacrum_mods = FALSE
-	serial_type = "Mastercraft"
-
-
 /obj/item/gun/energy/xray/psychic_cannon
 	name = "\"Manta-RAY\" cannon"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \

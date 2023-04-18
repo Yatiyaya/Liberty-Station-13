@@ -78,8 +78,7 @@
 	return pickweight(list(
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/sa_pk = 2,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/buzzsaw = 1.5,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/tactical = 1,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/concillium = 2))
+				/obj/item/computer_hardware/hard_drive/portable/design/guns/tactical = 1))
 
 
 /obj/random/lathe_disk/smg
@@ -157,8 +156,7 @@
 	return pickweight(list(
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/protector = 3,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/lenar = 2,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/china = 4,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/antebellum = 1))
+				/obj/item/computer_hardware/hard_drive/portable/design/guns/china = 4))
 
 /obj/random/lathe_disk/shotgun
 	name = "random shotgun lathe disk"
@@ -225,19 +223,14 @@
 	return pickweight(list(
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/counselor = 6,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/spiderrose = 4,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/martin = 4,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/firestorm = 3,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/lasercore = 2,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/lasercannon = 2,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/sunrise = 1,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/centauri = 1,
 
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/stun_revolver = 1,
 
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/nemesis = 2,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/themis = 4,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall = 4,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/carpedie = 1,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/valkirye = 2,
 				/obj/random/lathe_disk/ion_gun/low_chance = 2,
 
@@ -256,5 +249,4 @@
 
 /obj/random/lathe_disk/ion_gun/item_to_spawn()
 	return pickweight(list(
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/halicon = 2,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/ion_pistol = 1))
+				/obj/item/computer_hardware/hard_drive/portable/design/guns/halicon = 2))
