@@ -464,6 +464,8 @@
 	new_character.update_eyes()
 	new_character.regenerate_icons()
 	new_character.key = key//Manually transfer the key to log them in
+	if(new_character.client && new_character.client.prefs.has_conback)
+		new_character.create_conback()
 
 	return new_character
 

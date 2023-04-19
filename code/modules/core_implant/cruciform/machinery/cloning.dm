@@ -198,7 +198,7 @@
 
 
 		if(progress_percent >= CLONING_MEAT && !occupant)
-			var/datum/core_module/cruciform/cloning/R = reader.implant.get_module(CRUCIFORM_CLONING)
+			var/obj/item/weapon/implant/conback/R = reader.implant
 			if(!R)
 				open_anim()
 				stop()
@@ -206,14 +206,13 @@
 				return
 
 			occupant = new/mob/living/carbon/human(src)
-			occupant.dna = R.dna.Clone()
-			//occupant.stats = R.mind.stats.Clone()
+			occupant.dna = R.host_dna.Clone()
 			occupant.set_species()
-			occupant.real_name = R.dna.real_name
-			occupant.age = R.age
+			occupant.real_name = R.host_dna.real_name
+			occupant.age = R.host_age
 			occupant.UpdateAppearance()
 			occupant.sync_organ_dna()
-			occupant.flavor_text = R.flavor
+			occupant.flavor_text = R.host_flavor_text
 
 		if(progress == CLONING_BODY*cloning_speed )
 			var/datum/effect/effect/system/spark_spread/s = new
@@ -406,23 +405,28 @@
 /////////////////////
 
 /obj/machinery/neotheology/reader
-	name = "strange scanner"
-	desc = "It thrums and seems to be scanning anyone who gets near it judging from the small beeps."
+	name = "Conciousness Implant Reader"
+	desc = "A strangely advanced machine that scans the user for any signs existing conciousness through brainwaves. \
+			Used to check if a user's conciousness backup implant has remained intact; allowing the transfer of conciousness to a new body."
 	icon_state = "reader_off"
 	density = TRUE
 	anchored = TRUE
 
-	var/obj/item/implant/core_implant/cruciform/implant
+	var/obj/item/weapon/implant/conback/implant
 	var/reading = FALSE
 
 
 /obj/machinery/neotheology/reader/attackby(obj/item/I, mob/user as mob)
-	if(istype(I, /obj/item/implant/core_implant/cruciform))
-		var/obj/item/implant/core_implant/cruciform/C = I
+	if(default_deconstruction(I, user))
+		return
+	if(default_part_replacement(I, user))
+		return
+
+	if(istype(I, /obj/item/weapon/implant/conback))
+		var/obj/item/weapon/implant/soulcrypt/C = I
 		user.drop_item()
 		C.forceMove(src)
 		implant = C
-
 	src.add_fingerprint(user)
 	update_icon()
 
@@ -461,8 +465,6 @@
 
 	if(implant)
 		var/image/I = image(icon, "reader_c_green")
-		if(implant.get_module(CRUCIFORM_PRIEST))
-			I = image(icon, "reader_c_red")
 		add_overlay(I)
 
 

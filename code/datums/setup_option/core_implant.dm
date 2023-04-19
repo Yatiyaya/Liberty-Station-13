@@ -10,3 +10,16 @@
 	var/obj/item/implant/core_implant/CI = implant_type
 	if(CI)
 		return icon(initial(CI.icon),initial(CI.icon_state))
+
+/datum/category_item/setup_option/core_implant/conback
+	name = "Conciousness Backup Implant"
+	desc = "An Innovation in the fields of neural networking and biological technology!<br>\
+	This device allows the saving of an in-depth DNA profile of its user,<br>\
+	but also acts as a 'conciousness backup', preserving the user's concious in a dorment state post-death!<br>\
+	Brought to you by Liberty Group, remain free and indepdendent."
+	implant_type = /obj/item/implant/core_implant/conback
+	allow_modifications = TRUE
+
+/datum/category_item/setup_option/core_implant/conback/apply(mob/living/carbon/human/character)
+	if(character.mind.assigned_role != "Robot")	// Checks if a cyborg is the one being implanted.
+		character.create_conback()
