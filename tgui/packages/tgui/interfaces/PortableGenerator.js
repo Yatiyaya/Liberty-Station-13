@@ -52,7 +52,7 @@ export const PortableGenerator = (props, context) => {
                 <Box inline color="good">
                   Nominal
                 </Box>
-              ) : data.current_heat < 250 ? (
+              ) : data.current_heat < 300 ? (
                 <Box inline color="average">
                   Caution
                 </Box>
