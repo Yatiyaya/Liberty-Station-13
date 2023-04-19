@@ -878,7 +878,7 @@ var/list/flooring_types
 	has_base_range = 4
 	flags = TURF_REMOVE_SHOVEL | TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
 	plating_type = /decl/flooring/dirt
-	footstep_sound = "grass"
+	footstep_sound = "asteroid"
 	floor_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
 
