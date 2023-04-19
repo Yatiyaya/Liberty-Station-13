@@ -159,6 +159,7 @@ SUBSYSTEM_DEF(statverbs)
 	var/timer = 160 - (user.stats.getStat(STAT_COG) * 2)
 	if(target.hard_drive.damage == 100)
 		var/datum/repeating_sound/keyboardsound = new(30, timer, 0.15, target, "keyboard", 80, 1)
+		keyboardsound.do_sound()
 		user.visible_message(
 			SPAN_NOTICE("You begin repairing [target]."),
 		)
@@ -199,6 +200,7 @@ SUBSYSTEM_DEF(statverbs)
 	if(target.hacked == 0)
 		var/timer = 220 - (user.stats.getStat(STAT_COG) * 2)
 		var/datum/repeating_sound/keyboardsound = new(30, timer, 0.15, target, "keyboard", 80, 1)
+		keyboardsound.do_sound()
 		user.visible_message(
 			SPAN_DANGER("[user] begins hacking into [target]!"),
 			"You start hacking the access requirement on [target]"

@@ -16,7 +16,6 @@
 	var/recent_fault = 0
 	var/power_output = 1
 
-
 /obj/machinery/power/port_gen/proc/IsBroken()
 	return (stat & (BROKEN|EMPED))
 
@@ -37,6 +36,7 @@
 		add_avail(power_gen * power_output)
 		UseFuel()
 		src.updateDialog()
+		var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 9, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50, 1)
 	else
 		active = 0
 		handleInactive()
@@ -549,13 +549,16 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, null, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50, 1)
 	if(active)
 		active = FALSE
 		update_icon()
+		gensound.do_sound()
 	else if(!active && HasFuel() && !IsBroken())
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
 		update_icon()
+		gensound.stop()
 
 //diesel gen special ui_data
 /obj/machinery/power/port_gen/pacman/diesel/ui_data()

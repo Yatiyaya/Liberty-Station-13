@@ -544,11 +544,6 @@ var/const/FALLOFF_SOUNDS = 0.5
 	use_pressure_ = _use_pressure
 	self_id = "\ref[src]"
 
-	//When created we do our first sound immediately
-	//If you want the first sound delayed, wrap it in a spawn call or something
-	do_sound()
-
-
 /datum/repeating_sound/proc/do_sound()
 	timer_handle = null //This has been successfully called, that handle is no use now
 

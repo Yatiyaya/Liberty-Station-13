@@ -408,6 +408,7 @@
 		if(sound_repeat && time_to_finish)
 			//It will repeat roughly every 2.5 seconds until our tool finishes
 			toolsound = new/datum/repeating_sound(sound_repeat,time_to_finish,0.15, src, soundfile, volume, 1, extrarange)
+			toolsound.do_sound()
 		else
 			playsound(src.loc, soundfile, volume, 1, extrarange)
 
