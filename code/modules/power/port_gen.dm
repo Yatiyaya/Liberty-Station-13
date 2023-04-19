@@ -121,11 +121,9 @@
 	var/use_reagents_as_fuel = FALSE // designed to work with premade classes, rather than for in-game VV editing.
 	var/fuel_name // uses reagent id to get the name
 	var/fuel_reagent_id = "fuel"
-//	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
-//	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 	if(anchored)
 		connect_to_network()
 	if(use_reagents_as_fuel)
@@ -564,7 +562,6 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 	if(active)
 		active = FALSE
 		update_icon()
