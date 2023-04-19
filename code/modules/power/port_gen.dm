@@ -122,6 +122,8 @@
 	var/fuel_name // uses reagent id to get the name
 	var/fuel_reagent_id = "fuel"
 
+	var/decl/sound_player/gensound
+
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
 	if(anchored)
@@ -136,17 +138,16 @@
 	return ..()
 
 /obj/machinery/power/port_gen/pacman/Process()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', 50*power_output, 1)
 	if(active && HasFuel() && !IsBroken() && anchored && powernet)
 		add_avail(power_gen * power_output)
 		UseFuel()
 		src.updateDialog()
+		gensound.play_looping(src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output,)
 	else
 		active = 0
+		gensound.stop_sound()
 		handleInactive()
 		STOP_PROCESSING(SSmachines, src)
-		gensound.stop()
-
 	update_icon()
 
 /obj/machinery/power/port_gen/pacman/RefreshParts()
@@ -562,16 +563,13 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', 50*power_output, 1)
 	if(active)
 		active = FALSE
 		update_icon()
-		gensound.do_sound()
 	else if(!active && HasFuel() && !IsBroken())
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
 		update_icon()
-		gensound.stop()
 
 //diesel gen special ui_data
 /obj/machinery/power/port_gen/pacman/diesel/ui_data()
