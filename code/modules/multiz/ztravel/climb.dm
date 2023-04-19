@@ -57,6 +57,7 @@
 	M.offset_to(surface, 8)
 	spawn(1)
 	travelsound = new /datum/repeating_sound(15,duration,0.25, M, soundfile, 80, 1)
+	travelsound.do_sound()
 	if (direction == DOWN)
 		var/matrix/mat = matrix()
 		mat.Scale(0.9)
