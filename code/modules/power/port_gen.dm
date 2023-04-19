@@ -562,6 +562,7 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50*power_output, 1)
 	if(active)
 		active = FALSE
 		update_icon()
