@@ -198,7 +198,7 @@
 
 
 		if(progress_percent >= CLONING_MEAT && !occupant)
-			var/obj/item/weapon/implant/conback/R = reader.implant
+			var/obj/item/implant/conback/R = reader.implant
 			if(!R)
 				open_anim()
 				stop()
@@ -412,7 +412,7 @@
 	density = TRUE
 	anchored = TRUE
 
-	var/obj/item/weapon/implant/conback/implant
+	var/obj/item/implant/conback/implant
 	var/reading = FALSE
 
 
@@ -422,8 +422,8 @@
 	if(default_part_replacement(I, user))
 		return
 
-	if(istype(I, /obj/item/weapon/implant/conback))
-		var/obj/item/weapon/implant/soulcrypt/C = I
+	if(istype(I, /obj/item/implant/conback))
+		var/obj/item/implant/conback/C = I
 		user.drop_item()
 		C.forceMove(src)
 		implant = C

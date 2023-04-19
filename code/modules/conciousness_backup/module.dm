@@ -22,7 +22,7 @@
 	var/list/req_access = list()
 	var/list/req_one_access = list()
 
-	var/obj/item/weapon/implant/conback/owner //The conciousness backup that owns us.
+	var/obj/item/implant/conback/owner //The conciousness backup that owns us.
 
 	var/obj/effect/conback_stat/stat_line
 	var/datum/nano_module/NMmodule //our nanomodule

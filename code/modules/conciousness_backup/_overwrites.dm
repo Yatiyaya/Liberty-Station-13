@@ -1,5 +1,5 @@
 /mob/living/carbon/human/
-	var/obj/item/weapon/implant/conback/conciousness_pres
+	var/obj/item/implant/conback/conciousness_pres
 
 /mob/living/carbon/human/Destroy()
 	. = ..()
@@ -10,6 +10,6 @@
 
 /mob/living/carbon/human/proc/create_conback()
 	spawn(10) //I know spawn is bad, but a little bit of delay is required.
-		var/obj/item/weapon/implant/conback/conciousness_pres = new
+		var/obj/item/implant/conback/conciousness_pres = new
 		conciousness_pres.install(src)
 		to_chat(src, SPAN_NOTICE("You feel a faint sense of vertigo as your conciousness backup implant boots up."))

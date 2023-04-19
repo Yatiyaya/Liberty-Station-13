@@ -1,37 +1,37 @@
-/obj/item/weapon/holochip
+/obj/item/holochip
 	name = "holochip"
 	desc = "A one-use module containing a software package for a conciousness backup."
-	icon = 'icons/obj/soulcrypt.dmi'
+	icon = 'icons/obj/conback.dmi'
 	icon_state = "holochip_base"
 
 	var/tag_color
 	var/used = FALSE
 	var/list/contained_modules = list()
 
-/obj/item/weapon/holochip/examine(mob/user)
+/obj/item/holochip/examine(mob/user)
 	. = ..()
 
-/obj/item/weapon/holochip/update_icon()
-	overlays.Cut()
-	var/image/I = image('icons/obj/soulcrypt.dmi', "holochip_tags")
+/obj/item/holochip/update_icon()
+	cut_overlays()
+	var/image/I = image("holochip_tags")
 	I.color = tag_color
-	overlays += I
+	add_overlay(I)
 
 	if(!used)
-		overlays += image('icons/obj/soulcrypt.dmi', "holochip_active")
+		add_overlay("holochip_active")
 	else
-		overlays += image('icons/obj/soulcrypt.dmi', "holochip_inactive")
+		add_overlay("holochip_inactive")
 
-/obj/item/weapon/holochip/Initialize()
+/obj/item/holochip/Initialize()
 	update_icon()
 
-/obj/item/weapon/holochip/afterattack(atom/A, mob/user)
+/obj/item/holochip/afterattack(atom/A, mob/user)
 	if(used)
 		to_chat(user, SPAN_WARNING("This holochip is used up."))
 		return
 	if(istype(A, /mob/living/carbon/human))
 		var/mob/living/carbon/human/target = A
-		var/obj/item/weapon/implant/conback/conciousness_pres = target.conciousness_pres
+		var/obj/item/implant/conback/conciousness_pres = target.conciousness_pres
 		if(!conciousness_pres)
 			to_chat(user, SPAN_WARNING("[target] does not have a conciousness backup."))
 			return
@@ -42,26 +42,26 @@
 		used = TRUE
 		update_icon()
 
-/obj/item/weapon/holochip/command
+/obj/item/holochip/command
 	tag_color = COMMS_COLOR_COMMAND
 
-/obj/item/weapon/holochip/security
+/obj/item/holochip/security
 	tag_color = COMMS_COLOR_SECURITY
 
-/obj/item/weapon/holochip/medical
+/obj/item/holochip/medical
 	tag_color = COLOR_OFF_WHITE
 
-/obj/item/weapon/holochip/science
+/obj/item/holochip/science
 	tag_color = COMMS_COLOR_SCIENCE
 
-/obj/item/weapon/holochip/cargo
+/obj/item/holochip/cargo
 	tag_color = COMMS_COLOR_SUPPLY
 
-/obj/item/weapon/holochip/engineering
+/obj/item/holochip/engineering
 	tag_color = COMMS_COLOR_ENGINEER
 
-/obj/item/weapon/holochip/medical/suitsensors
+/obj/item/holochip/medical/suitsensors
 	contained_modules = list(/datum/conback_module/crew_monitor)
 
-/obj/item/weapon/holochip/engineering/alarm_mon
+/obj/item/holochip/engineering/alarm_mon
 	contained_modules = list(/datum/conback_module/alarm_monitor)

@@ -8,5 +8,5 @@
 	nanomodule_type = /datum/nano_module/crew_monitor
 	has_nanomodule = TRUE
 
-/datum/soulcrypt_module/crew_monitor/stat_text()
+/datum/conback_module/crew_monitor/stat_text()
 	return "Engage Crew Monitor"

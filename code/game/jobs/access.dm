@@ -226,7 +226,11 @@ var/obj/item/card/id/all_access/ghost_all_access
 	for(var/obj/item/I in HUMAN_ID_CARDS)
 		. |= I.GetAccess()
 
-	var/obj/item/weapon/implant/conback/C = get_conback()
+	var/obj/item/implant/S = get_conback()
+	if(S)
+		. |= S.GetAccess() //Eclipse add
+
+	var/obj/item/implant/core_implant/C = get_core_implant()
 	if(C)
 		. |= C.GetAccess()
 

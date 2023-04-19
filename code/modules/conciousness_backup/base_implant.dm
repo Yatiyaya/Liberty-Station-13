@@ -5,10 +5,10 @@ The module base code is held in module.dm
 This should be identical to NEV's Soulcrypt; credit to them for this code.
 */
 
-/obj/item/weapon/implant/conback
+/obj/item/implant/conback
 	name = "conciousness backup"
 	desc = "A small, immensely complex biocompatible computer. Basic functions include DNA sequence storage, neural engram backups, access transciever functions, and an internal fuel cell using the host's nutrients."
-	icon = 'icons/obj/soulcrypt.dmi'
+	icon = 'icons/obj/conback.dmi'
 	icon_state = "frame"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL=2, TECH_BIO=7, TECH_DATA=5)
@@ -30,7 +30,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 	var/nutrition_usage_setting = NUTRITION_USAGE_LOW //These can be found in conback.dm, under DEFINES.
 
-	var/stat//Status.
+	//var/stat//Status.
 	//Host variables, stored for cloning.
 	var/datum/dna/host_dna
 	var/datum/mind/host_mind
@@ -55,32 +55,32 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 //Inherited procs
 
-/obj/item/weapon/implant/conback/Initialize()
+/obj/item/implant/conback/Initialize()
 	. = ..()
 	add_modules(starting_modules)
 	update_icon()
 
-/obj/item/weapon/implant/conback/update_icon()
-	overlays.Cut()
+/obj/item/implant/conback/update_icon()
+	cut_overlays()
 	if(host_mind && host_dna)
-		overlays += image('icons/obj/soulcrypt.dmi', "soulcrypt_active")
+		add_overlay("conback_active")
 	else
-		overlays += image('icons/obj/soulcrypt.dmi', "soulcrypt_inactive")
+		add_overlay("conback_inactive")
 
-/obj/item/weapon/implant/conback/examine(mob/user)
+/obj/item/implant/conback/examine(mob/user)
 	. = ..()
 	if(host_name)
 		to_chat(user, SPAN_NOTICE("This one appears to belong to [host_name]."))
 
-/obj/item/weapon/implant/conback/on_install()
+/obj/item/implant/conback/on_install()
 	activate()
 	wearer.conciousness_pres = src
 
-/obj/item/weapon/implant/conback/on_uninstall()
+/obj/item/implant/conback/on_uninstall()
 	. = ..()
 	wearer.conciousness_pres = null
 
-/obj/item/weapon/implant/conback/activate()
+/obj/item/implant/conback/activate()
 	if(!has_stored_info)
 		host_mind = wearer.mind
 		host_dna = wearer.dna.Clone()
@@ -108,18 +108,18 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		START_PROCESSING(SSobj, src)
 	send_host_message("Conciousness backup online: neural backup completed. Welcome to SoulOS v1.53 rev 3.")
 
-/obj/item/weapon/implant/conback/deactivate()
+/obj/item/implant/conback/deactivate()
 	deactivate_modules()
 	STOP_PROCESSING(SSobj, src)
 
-/obj/item/weapon/implant/conback/GetAccess()
+/obj/item/implant/conback/GetAccess()
 	return access
 
-/obj/item/weapon/implant/conback/emp_act()
+/obj/item/implant/conback/emp_act()
 	was_emp = TRUE
 	deactivate_modules()
 
-/obj/item/weapon/implant/conback/Process()
+/obj/item/implant/conback/Process()
 	if(!wearer)
 		return
 	heartbeat()
@@ -130,7 +130,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 //Unique procs
 
-/obj/item/weapon/implant/conback/proc/heartbeat() //Pretty much just checks if the host is alive or dead and does things from there.
+/obj/item/implant/conback/proc/heartbeat() //Pretty much just checks if the host is alive or dead and does things from there.
 	if(wearer.stat == DEAD && !host_dead)
 		host_death_time = world.time
 		host_dead = TRUE
@@ -141,7 +141,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		host_dead = FALSE
 //We use hostmind.current here because the odds are, whoever it is is a ghost.
 
-/obj/item/weapon/implant/conback/proc/send_death_message() //Sends the death message whenever the person who has this dies.
+/obj/item/implant/conback/proc/send_death_message() //Sends the death message whenever the person who has this dies.
 	to_chat(host_mind.current, SPAN_NOTICE("You are dead, whatever the cause, you are dead. With luck, someone will retrieve your conciousness backup and clone you - otherwise, welcome to purgatory."))
 	switch(was_emp)
 		if(TRUE)
@@ -149,7 +149,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		if(FALSE)
 			to_chat(host_mind.current, SPAN_NOTICE("Luckily, your conciousness backup takes neural backups every thirty seconds. When you're cloned, you'll remember everything up to thirty seconds before your death."))
 
-/obj/item/weapon/implant/conback/proc/send_revive_notice() //Triggered by implantation into a mindless mob.
+/obj/item/implant/conback/proc/send_revive_notice() //Triggered by implantation into a mindless mob.
 	to_chat(host_mind.current, SPAN_NOTICE("Congratulations on a new lease on life, you're being cloned."))
 	switch(was_emp)
 		if(TRUE)
@@ -157,7 +157,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		if(FALSE)
 			to_chat(host_mind.current, SPAN_NOTICE("As your conciousness slowly emerges from the muck of resurrection, you remember everything that's occured up to about thirty seconds before your death."))
 
-/obj/item/weapon/implant/conback/proc/handle_modules() //Loops through the modules in the modules list, and handles their effects.
+/obj/item/implant/conback/proc/handle_modules() //Loops through the modules in the modules list, and handles their effects.
 	for(var/datum/conback_module/M in modules)
 		if(M.active)
 			if(energy <= 0) //No energy, just deactivate all the modules.
@@ -165,11 +165,11 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 				continue
 			M.handle_effects()
 
-/obj/item/weapon/implant/conback/proc/add_modules(var/starting_list) //Adds modules from a list.
+/obj/item/implant/conback/proc/add_modules(var/starting_list) //Adds modules from a list.
 	for(var/M in starting_list)
 		add_module(M)
 
-/obj/item/weapon/implant/conback/proc/add_module(var/module_path)
+/obj/item/implant/conback/proc/add_module(var/module_path)
 	for(var/datum/conback_module/M in modules)
 		if(M.type == module_path)
 			return //Prevent adding duplicates.
@@ -177,16 +177,16 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	modules += module
 	module.owner = src
 
-/obj/item/weapon/implant/conback/proc/remove_module(var/datum/conback_module/module) //Removes a module from the implant.
+/obj/item/implant/conback/proc/remove_module(var/datum/conback_module/module) //Removes a module from the implant.
 	module.owner = null
 	qdel(module)
 
-/obj/item/weapon/implant/conback/proc/deactivate_modules() //Deactivates all active modules.
+/obj/item/implant/conback/proc/deactivate_modules() //Deactivates all active modules.
 	for(var/datum/conback_module/M in modules)
 		if(M.active)
 			M.deactivate()
 
-/obj/item/weapon/implant/conback/proc/handle_energy() //Take some nutrition, provide energy. Remove the energy used by any active modules from this amount.
+/obj/item/implant/conback/proc/handle_energy() //Take some nutrition, provide energy. Remove the energy used by any active modules from this amount.
 	var/energy_to_add = 0
 	var/active_module_drain = 0
 	var/nutrition_to_remove = 0
@@ -231,7 +231,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 	wearer.adjustNutrition(nutrition_to_remove)
 
-/obj/item/weapon/implant/conback/proc/handle_integrity()
+/obj/item/implant/conback/proc/handle_integrity()
 	var/integrity_loss = 0
 
 	for(var/datum/conback_module/M in modules)
@@ -245,7 +245,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	integrity -= integrity_loss
 	integrity = CLAMP(integrity, 0, 100)
 
-/obj/item/weapon/implant/conback/proc/send_host_message(var/message, var/message_type = MESSAGE_NOTICE)
+/obj/item/implant/conback/proc/send_host_message(var/message, var/message_type = MESSAGE_NOTICE)
 	switch(message_type)
 		if(MESSAGE_NOTICE)
 			to_chat(wearer, SPAN_NOTICE("\icon[src] [src] transmits calmly, '[message]'"))
@@ -257,22 +257,22 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 			to_chat(wearer, SPAN_DANGER("\icon[src] [src] transmits urgently, '[message]'"))
 			wearer << very_bad_sound
 
-/obj/item/weapon/implant/conback/proc/find_module_by_name(var/name)
+/obj/item/implant/conback/proc/find_module_by_name(var/name)
 	for(var/datum/conback_module/M in modules)
 		if(M.name == name)
 			return M
 
-/obj/item/weapon/implant/conback/proc/store_host_languages()
+/obj/item/implant/conback/proc/store_host_languages()
 	for(var/datum/language/L in wearer.languages)
 		host_languages += L.name
 /*
 /mob/living/carbon/human/verb/open_filemanager()
 	set name = "Open Filemanager"
-	set desc = "Opens the Soulcrypt's filemanager."
-	set category = "Soulcrypt"
-	var/obj/item/weapon/implant/soulcrypt/SC = locate(/obj/item/weapon/implant/soulcrypt) in src.contents
+	set desc = "Opens the Conback's filemanager."
+	set category = "Conback"
+	var/obj/item/implant/conback/SC = locate(/obj/item/implant/conback) in src.contents
 	if(!SC)
-		to_chat(src, SPAN_WARNING("You don't have a soulcrypt, somehow."))
+		to_chat(src, SPAN_WARNING("You don't have a conback, somehow."))
 	if(SC.filemanager)
 		SC.filemanager.activate(src)
 	else

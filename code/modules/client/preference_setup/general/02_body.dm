@@ -19,7 +19,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	var/icon/bgstate = "black"
 	var/list/bgstate_options = list("steel", "dark_steel", "white_tiles", "black_tiles", "wood", "carpet", "white", "black")
-	var/has_soulcrypt = FALSE
+//	var/has_conback = FALSE
 
 	var/size_multiplier = RESIZE_NORMAL
 	var/scale_effect = 0
@@ -49,7 +49,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	from_file(S["scale_effect"], pref.scale_effect)
 	from_file(S["gradient_style"], pref.grad_style)
 	from_file(S["gradient_color"], pref.grad_color)
-	from_file(S["has_conback"], pref.has_conback)
+//	from_file(S["has_conback"], pref.has_conback)
 
 /datum/category_item/player_setup_item/physical/body/save_character(var/savefile/S)
 	to_file(S["species"], pref.species)
@@ -67,7 +67,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	to_file(S["scale_effect"], pref.scale_effect)
 	to_file(S["gradient_style"], pref.grad_style)
 	to_file(S["gradient_color"], pref.grad_color)
-	to_file(S["has_conback"], pref.has_conback)
+//	to_file(S["has_conback"], pref.has_conback)
 
 /datum/category_item/player_setup_item/physical/body/sanitize_character(var/savefile/S)
 	pref.h_style		= sanitize_inlist(pref.h_style, GLOB.hair_styles_list, initial(pref.h_style))
@@ -78,7 +78,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.skin_color		= iscolor(pref.skin_color) ? pref.skin_color : "#FFE0D0"
 	pref.eyes_color		= iscolor(pref.eyes_color) ? pref.eyes_color : "#000000"
 	pref.grad_color		= iscolor(pref.grad_color) ? pref.grad_color : "#000000"
-	pref.has_conback = sanitize_bool(pref.has_conback, initial(pref.has_conback))
+//	pref.has_conback = sanitize_bool(pref.has_conback, initial(pref.has_conback))
 
 	if(pref.size_multiplier == null || pref.size_multiplier < RESIZE_TINY || pref.size_multiplier > RESIZE_HUGE)
 		pref.size_multiplier = initial(pref.size_multiplier)
@@ -136,12 +136,12 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	formstring = "<b>Form:</b> " + formstring
 	. += formstring
 	. += "<br>"
-
+/*
 	. += "Conback: "
 	. += pref.has_conback ? "present." : "<b>not present.</b>"
 	. += " \[<a href='byond://?src=\ref[src];toggle_conback=1'>toggle</a>\]"
 	. += "<br>"
-
+*/
 	. += "<b>Hair:</b> <a href='?src=\ref[src];cycle_hair=right'>&lt;&lt;</a><a href='?src=\ref[src];cycle_hair=left'>&gt;&gt;</a><a href='?src=\ref[src];hair_style=1'>[pref.h_style]</a>"
 	if(has_flag(mob_species_form, HAS_HAIR_COLOR))
 		. += "<a href='?src=\ref[src];hair_color=1'><span class='color_holder_box' style='background-color:[pref.hair_color]'></span></a>"
@@ -223,9 +223,9 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				pref.species_form = new_form
 				return TOPIC_REFRESH_UPDATE_PREVIEW
 
-	else if(href_list["toggle_conback"])
-		pref.has_conback = !pref.has_conback
-		return TOPIC_REFRESH
+//	else if(href_list["toggle_conback"])
+//		pref.has_conback = !pref.has_conback
+//		return TOPIC_REFRESH
 
 	/*else if(href_list["change_descriptor"])
 		if(mob_species.descriptors)
