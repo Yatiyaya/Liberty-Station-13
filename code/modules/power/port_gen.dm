@@ -136,7 +136,7 @@
 	return ..()
 
 /obj/machinery/power/port_gen/pacman/Process()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50*power_output, 1)
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', 50*power_output, 1)
 	if(active && HasFuel() && !IsBroken() && anchored && powernet)
 		add_avail(power_gen * power_output)
 		UseFuel()
@@ -562,7 +562,7 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50*power_output, 1)
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', 50*power_output, 1)
 	if(active)
 		active = FALSE
 		update_icon()
