@@ -36,7 +36,6 @@
 		add_avail(power_gen * power_output)
 		UseFuel()
 		src.updateDialog()
-		var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 9, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50, 1)
 	else
 		active = 0
 		handleInactive()
@@ -122,9 +121,11 @@
 	var/use_reagents_as_fuel = FALSE // designed to work with premade classes, rather than for in-game VV editing.
 	var/fuel_name // uses reagent id to get the name
 	var/fuel_reagent_id = "fuel"
+//	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
+//	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 	if(anchored)
 		connect_to_network()
 	if(use_reagents_as_fuel)
@@ -135,6 +136,20 @@
 /obj/machinery/power/port_gen/pacman/Destroy()
 	DropFuel()
 	return ..()
+
+/obj/machinery/power/port_gen/pacman/Process()
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0.15, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50*power_output, 1)
+	if(active && HasFuel() && !IsBroken() && anchored && powernet)
+		add_avail(power_gen * power_output)
+		UseFuel()
+		src.updateDialog()
+	else
+		active = 0
+		handleInactive()
+		STOP_PROCESSING(SSmachines, src)
+		gensound.stop()
+
+	update_icon()
 
 /obj/machinery/power/port_gen/pacman/RefreshParts()
 	var/temp_rating = 0
@@ -549,7 +564,7 @@
 				. = TRUE
 
 /obj/machinery/power/port_gen/proc/TogglePower()
-	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, null, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", 50, 1)
+	var/datum/repeating_sound/gensound = new/datum/repeating_sound(9, 6 HOURS, 0, src, "sound/machines/sound_machines_generator_generator_mid2.ogg", _vol = 50*power_output)
 	if(active)
 		active = FALSE
 		update_icon()
