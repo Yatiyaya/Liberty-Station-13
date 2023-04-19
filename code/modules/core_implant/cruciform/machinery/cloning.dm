@@ -37,6 +37,7 @@
 
 	var/power_cost = 250
 
+	var/clone_damage = 0
 
 /obj/machinery/neotheology/cloner/New()
 	..()
@@ -107,7 +108,7 @@
 		occupant.forceMove(loc)
 		occupant = null
 	else
-		if(get_progress(progress) >= CLONING_MEAT)
+		if(progress >= CLONING_MEAT)
 			new /obj/item/reagent_containers/food/snacks/meat(loc)
 
 	update_icon()
@@ -159,7 +160,7 @@
 	return TRUE
 
 /obj/machinery/neotheology/cloner/proc/done()
-	occupant.setCloneLoss(0)
+	occupant.setCloneLoss(clone_damage)
 	occupant.setBrainLoss(0)
 	occupant.updatehealth()
 	stop()
@@ -177,8 +178,7 @@
 			update_icon()
 			return
 
-		progress++
-		var/progress_percent = get_progress()
+		progress += cloning_speed
 
 		if(progress <= CLONING_DONE)
 			if(container)
@@ -188,8 +188,8 @@
 				stop()
 
 		if(occupant && ishuman(occupant))
-			occupant.setCloneLoss(CLONING_DONE-progress_percent)
-			occupant.setBrainLoss(CLONING_DONE-progress_percent)
+			occupant.setCloneLoss(max(CLONING_DONE-progress, clone_damage))
+			occupant.setBrainLoss(CLONING_DONE-progress)
 
 			occupant.adjustOxyLoss(-4)
 			occupant.Paralyse(4)
@@ -197,7 +197,7 @@
 			occupant.updatehealth()
 
 
-		if(progress_percent >= CLONING_MEAT && !occupant)
+		if(progress >= CLONING_MEAT && !occupant)
 			var/obj/item/implant/conback/R = reader.implant
 			if(!R)
 				open_anim()
@@ -257,7 +257,7 @@
 
 
 	/////////BODY
-	var/P = get_progress()
+	var/P = progress
 	if(cloning && P >= CLONING_START)
 		var/icon/IC = icon(icon, "clone_bones")
 		var/crop = 32-min(32,round(((P-CLONING_START)/(CLONING_BONES-CLONING_START))*32))
