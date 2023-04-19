@@ -178,7 +178,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/gun/energy/sniperrifle/saint
 	name = "\"Saint\" laser rifle"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
-	The normal \"Valkyrie\" design meeting the improvements with Lightfall design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
+	The normal \"Valkyrie\" design meeting the improvements with Kalmyk design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
 	charge_cost = 200
 	extra_damage_mult_scoped = 0.2
 	fire_delay = 25

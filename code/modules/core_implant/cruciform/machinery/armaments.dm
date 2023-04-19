@@ -147,7 +147,7 @@
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/protector
 
 /datum/armament/item/disk/nt_lightfall
-	name = "Disk - Lightfall"
+	name = "Disk - Kalmyk"
 	cost = 15
 	min_cost = 10
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
