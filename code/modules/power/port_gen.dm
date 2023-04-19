@@ -149,7 +149,7 @@
 	update_icon()
 	updatesound(active)
 
-/obj/machinery/power/port_gen/pacman/updatesound(var/playing)
+/obj/machinery/power/port_gen/pacman/proc/updatesound(var/playing)
 	if(playing && !gensound)
 		gensound.play_looping(src, "generator", 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output)
 	else if(!playing && gensound)
