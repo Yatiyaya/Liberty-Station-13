@@ -142,13 +142,18 @@
 		add_avail(power_gen * power_output)
 		UseFuel()
 		src.updateDialog()
-		gensound.play_looping(src, 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output,)
 	else
 		active = 0
-		gensound.stop_sound()
 		handleInactive()
 		STOP_PROCESSING(SSmachines, src)
 	update_icon()
+	updatesound(active)
+
+/obj/machinery/power/port_gen/pacman/updatesound(var/playing)
+	if(playing && !gensound)
+		gensound.play_looping(src, "generator", 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output)
+	else if(!playing && gensound)
+		QDEL_NULL(gensound)
 
 /obj/machinery/power/port_gen/pacman/RefreshParts()
 	var/temp_rating = 0
@@ -562,15 +567,14 @@
 				power_output++
 				. = TRUE
 
-/obj/machinery/power/port_gen/proc/TogglePower()
+/obj/machinery/power/port_gen/pacman/proc/TogglePower()
 	if(active)
 		active = FALSE
-		update_icon()
 	else if(!active && HasFuel() && !IsBroken())
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
-		update_icon()
-
+	updatesound(active)
+	update_icon()
 //diesel gen special ui_data
 /obj/machinery/power/port_gen/pacman/diesel/ui_data()
 	var/data = list()
