@@ -530,7 +530,7 @@ var/const/FALLOFF_SOUNDS = 0.5
 
 	var/self_id
 
-/datum/repeating_sound/New(var/_interval, var/duration, var/interval_variance = 0, var/atom/_source, var/_soundin, var/_vol, var/_vary, var/_extrarange, var/_falloff, var/_is_global, var/_use_pressure = TRUE)
+/datum/repeating_sound/New(var/_interval = 10, var/duration = 10, var/interval_variance = 0, var/atom/_source, var/_soundin, var/_vol = 50, var/_vary = 0, var/_extrarange = 0, var/_falloff = 0, var/_is_global = FALSE, var/_use_pressure = TRUE)
 	end_time = world.time + duration
 	source = "\ref[_source]"
 	interval = _interval
