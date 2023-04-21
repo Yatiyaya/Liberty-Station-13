@@ -202,7 +202,7 @@
 		SPAN_NOTICE("You finish filtering out any toxins to [target]'s body and repairing any neural degradation with the [tool_name].") )
 		if((needs_regeneration || target.getToxLoss() > 0) && tool.use(1))
 			target.adjustToxLoss(heal_amount)
-			target.timeofdeath = 99999999
+			//target.timeofdeath = 99999999
 
 
 /datum/old_surgery_step/external/tox_heal/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/stack/tool)
