@@ -32,6 +32,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 	//var/stat//Status.
 	//Host variables, stored for cloning.
+	var/host_ckey
 	var/datum/dna/host_dna
 	var/datum/mind/host_mind
 	var/host_age
@@ -88,6 +89,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		host_flavor_text = wearer.flavor_text
 		has_stored_info = TRUE
 		host_name = wearer.dna.real_name
+		host_ckey = wearer.client
 		store_host_languages()
 	stat = CONBACK_ONLINE
 	if(!wearer.mind) //We're in a blank body.

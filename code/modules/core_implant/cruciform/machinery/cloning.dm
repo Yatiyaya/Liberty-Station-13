@@ -9,8 +9,8 @@
 #define ANIM_CLOSE -1
 
 /obj/machinery/neotheology/cloner
-	name = "Strange pod"
-	desc = "This pod seems entirely alien and smells disgustingly of old biomass left to rot."
+	name = "CASPA pod"
+	desc = "A highly revulationy design in both robotics and medical fields at the same time, allowing a crewmember to be cloned."
 	icon = 'icons/obj/neotheology_pod.dmi'
 	icon_state = "preview"
 	density = TRUE
@@ -49,6 +49,19 @@
 		qdel(occupant)
 	return ..()
 
+/obj/machinery/neotheology/cloner/attack_hand(mob/user)
+	src.add_fingerprint(user)
+	reader = find_reader()
+	if(!reader)
+		visible_message("[src]'s control panel flashes \"NO READER\" light.")
+		return
+	if(!reader.implant)
+		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
+		return
+	if(cloning)
+		visible_message("[src]'s control panel flashes \"OCCUPIED\" light.")
+		return
+	start()
 
 /obj/machinery/neotheology/cloner/proc/find_container()
 	for(var/obj/machinery/neotheology/biomass_container/BC in orange(1,src))
@@ -188,9 +201,6 @@
 				stop()
 
 		if(occupant && ishuman(occupant))
-			occupant.setCloneLoss(max(CLONING_DONE-progress, clone_damage))
-			occupant.setBrainLoss(CLONING_DONE-progress)
-
 			occupant.adjustOxyLoss(-4)
 			occupant.Paralyse(4)
 
@@ -205,14 +215,8 @@
 				update_icon()
 				return
 
-			occupant = new/mob/living/carbon/human(src)
-			occupant.dna = R.host_dna.Clone()
-			occupant.set_species()
-			occupant.real_name = R.host_dna.real_name
-			occupant.age = R.host_age
-			occupant.UpdateAppearance()
-			occupant.sync_organ_dna()
-			occupant.flavor_text = R.host_flavor_text
+			occupant = spawn_character()
+			occupant.forceMove(src)
 
 		if(progress == CLONING_BODY*cloning_speed )
 			var/datum/effect/effect/system/spark_spread/s = new
@@ -332,8 +336,8 @@
 /////////////////////
 
 /obj/machinery/neotheology/biomass_container
-	name = "Strange biomass container"
-	desc = "It seems to be a biomass container."
+	name = "Advanced biomass container"
+	desc = "A large container holding biomass as well as materals."
 	icon_state = "biocan"
 	density = TRUE
 	anchored = TRUE
@@ -361,23 +365,18 @@
 		var/obj/item/stack/material/biomatter/B = I
 		if (B.biomatter_in_sheet && B.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Biomatter melting", 1) as num
+			if(sheets_amount_to_transphere > B.amount || sheets_amount_to_transphere < 1) //No cheating!
+				to_chat(user, SPAN_WARNING("You don't have that many [B.name]"))
+				return
 			if(sheets_amount_to_transphere)
-				var/total_transphere_from_stack = 0
-				var/i = 1
-				while(i <= sheets_amount_to_transphere)
-					reagents.add_reagent("biomatter", B.biomatter_in_sheet)
-					total_transphere_from_stack += B.biomatter_in_sheet
-					i++
 				B.use(sheets_amount_to_transphere)
+				reagents.add_reagent("biomatter", (B.biomatter_in_sheet * sheets_amount_to_transphere))
 				user.visible_message(
 									"[user.name] inserted \the [B.name]'s sheets in \the [name].",
 									"You inserted \the [B.name] in  (in amount: [sheets_amount_to_transphere]) \the [name].\
-									And after that you see how the counter on \the [name] is incremented by [total_transphere_from_stack]."
+									And after that you see how the counter on \the [name] is incremented by [sheets_amount_to_transphere]."
 									)
 				ping()
-			else
-				to_chat(user, SPAN_WARNING("You can't insert [sheets_amount_to_transphere] in [name]"))
-			return
 		else
 			to_chat(user, SPAN_WARNING("\The [B.name] is exhausted and can't be melted to biomatter. "))
 
@@ -476,3 +475,25 @@
 #undef ANIM_OPEN
 #undef ANIM_NONE
 #undef ANIM_CLOSE
+
+/obj/machinery/neotheology/cloner/proc/spawn_character()
+	if(!reader.implant)
+		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
+		return
+	var/obj/item/implant/conback/R = reader.implant
+	var/client/player_key = R.host_ckey
+	var/mob/living/carbon/human/new_character
+
+	new_character = new(src.loc)
+
+	player_key.prefs.copy_to(new_character)
+	if(new_character.dna)
+		new_character.dna.ResetUIFrom(new_character)
+		new_character.sync_organ_dna()
+
+
+	//A redraw for good measure
+	new_character.update_icons()
+
+	return new_character
+
