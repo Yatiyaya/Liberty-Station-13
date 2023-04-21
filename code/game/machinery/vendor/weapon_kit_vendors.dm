@@ -7,7 +7,7 @@
 		/obj/item/storage/box/m_kit/stinger = 5,
 		/obj/item/storage/box/m_kit/trench = 5,
 		/obj/item/storage/box/m_kit/kalash = 5,
-		/obj/item/storage/box/m_kit/gear_lasgun = 5,
+		/obj/item/storage/box/m_kit/cog = 5,
 		/obj/item/storage/box/m_kit/taser = 5,
 		/obj/item/storage/box/m_kit/specialist = 5,
 		/obj/item/storage/box/m_kit/standard_armor = 5,
@@ -19,7 +19,7 @@
 		/obj/item/storage/box/m_kit/stinger = 500,
 		/obj/item/storage/box/m_kit/trench = 750,
 		/obj/item/storage/box/m_kit/kalash = 750,
-		/obj/item/storage/box/m_kit/gear_lasgun = 750,
+		/obj/item/storage/box/m_kit/cog = 650,
 		/obj/item/storage/box/m_kit/taser = 500,
 		/obj/item/storage/box/m_kit/specialist = 750,
 		/obj/item/storage/box/m_kit/standard_armor = 500,
@@ -54,7 +54,7 @@
 	var/items = list(
 					"Specialist Kit" = /obj/item/storage/box/m_kit/specialist,
 					"Trench Kit" = /obj/item/storage/box/m_kit/trench,
-					"Gear Laser Carbine Kit" = /obj/item/storage/box/m_kit/gear_lasgun)
+					"Cog Laser Carbine Kit" = /obj/item/storage/box/m_kit/cog)
 	var/selection = items[input(redeemer, "Pick your primary weapon", "Marshal Voucher Redemption") as null|anything in items]
 	if(selection)
 		new selection(loc)
@@ -67,7 +67,6 @@
 	var/items = list(
 					"Judge Kit" = /obj/item/storage/box/m_kit/judge,
 					"Kalashnikov Kit" = /obj/item/storage/box/m_kit/kalash,
-					"Gear Laser Carbine Kit" = /obj/item/storage/box/m_kit/gear_lasgun,
 					"Sunrise Las-SMG Kit" = /obj/item/storage/box/m_kit/typewriter)
 	var/selection = items[input(redeemer, "Pick your primary weapon", "Marshal Voucher Redemption") as null|anything in items]
 	if(selection)

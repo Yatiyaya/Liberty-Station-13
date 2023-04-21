@@ -134,6 +134,16 @@
 	check_armour = ARMOR_BIO
 	recoil = 1
 
+//For Nanoforge pistol
+/obj/item/projectile/bullet/pistol_35/nano
+	damage_types = list(BURN = 14)
+	armor_penetration = 10
+	step_delay = 0.6
+	affective_damage_range = 5
+	affective_ap_range = 5
+	can_ricochet = TRUE
+	recoil = 4
+
 //Revolvers and high-caliber pistols
 //*********************************//
 /// 10mm Magnum ///

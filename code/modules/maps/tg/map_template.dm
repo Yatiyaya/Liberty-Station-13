@@ -8,6 +8,16 @@
 	var/mappath = null
 	var/loaded = 0 // Times loaded this round
 	var/annihilate = FALSE // If true, all (movable) atoms at the location where the map is loaded will be deleted before the map is loaded in.
+	var/list/playableMobs = list(
+		/mob/living/carbon/human,
+		/mob/observer/ghost,
+		/mob/living/simple_animal/mouse,
+		/mob/living/silicon/robot,
+		/mob/living/silicon/pai,
+		/mob/dview,
+		/mob/observer,
+		/mob/living/silicon/robot/drone,
+		/mob/living/silicon/ai)
 
 	var/cost = null // The map generator has a set 'budget' it spends to place down different submaps. It will pick available submaps randomly until
 					// it runs out. The cost of a submap should roughly corrispond with several factors such as size, loot, difficulty, desired scarcity, etc.
@@ -163,9 +173,16 @@
 	var/list/turfs_to_clean = get_affected_turfs(origin, centered, orientation)
 	if(turfs_to_clean.len)
 		for(var/turf/T in turfs_to_clean)
+			/*for(var/mob/M in T)
+				if(M.type in playableMobs || M.ckey != null)
+					do_sparks(1, 0, M.loc)
+					message_admins("\blue Almost annihilated a player!", 1)
+					M.forceMove(random_ship_area(TRUE, TRUE)) */
 			for(var/atom/movable/AM in T)
 			//	++deleted_atoms
-				qdel(AM)
+				if(AM.type in playableMobs)
+					message_admins("\blue Almost annihilated a player!", 1)
+				else qdel(AM)
 	//admin_notice("<span class='danger'>Annihilated [deleted_atoms] objects.</span>", R_DEBUG)
 
 

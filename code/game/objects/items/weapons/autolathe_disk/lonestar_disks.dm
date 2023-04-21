@@ -1,9 +1,8 @@
 // Disks formated as /designpath = pointcost , if no point cost is specified it defaults to 1.
 // To make a design unprotect use -1
-// Lonestar
 /obj/item/computer_hardware/hard_drive/portable/design/misc
-	disk_name = "Lonestar Miscellaneous Pack"
-	icon_state = "guild"
+	disk_name = "Tools Miscellaneous Pack"
+	icon_state = "green"
 	license = 20
 	designs = list(
 		//Basic Tools
@@ -85,8 +84,8 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/robustcells
-	disk_name = "Lonestar Robustcells"
-	icon_state = "guild"
+	disk_name = "Hellion Robustcells"
+	icon_state = "hellion"
 	license = 8
 	designs = list(
 		/datum/design/autolathe/cell/large,
@@ -99,8 +98,8 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/cargo
-	disk_name = "Lonestar Tidbits Factory"
-	icon_state = "guild"
+	disk_name = "Skylight Tidbits Factory"
+	icon_state = "black"
 	license = -1
 	designs = list(
 		//Basic Tools
@@ -187,8 +186,8 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/janitor
-	disk_name = "Lonestar Janitor Pack"
-	icon_state = "guild"
+	disk_name = "Skylight Janitor Pack"
+	icon_state = "black"
 	license = 8
 	designs = list(
 		/datum/design/autolathe/misc/floor_light = 0,

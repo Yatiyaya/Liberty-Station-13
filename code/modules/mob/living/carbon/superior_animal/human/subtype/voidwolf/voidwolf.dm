@@ -138,7 +138,7 @@
 	rapid = FALSE
 	projectiletype = /obj/item/projectile/beam
 	projectilesound = 'sound/weapons/energy/laser.ogg'
-	drop_items = list(/obj/item/tool/weldingtool/advanced, /obj/item/gun/energy/gun/martin)
+	drop_items = list(/obj/item/tool/weldingtool/advanced, /obj/item/gun/energy/ntpistol)
 	limited_ammo = TRUE
 	mag_drop = TRUE
 	rounds_left = 4

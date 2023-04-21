@@ -140,7 +140,7 @@
 
 /obj/machinery/porta_turret/proc/weapon_setup(var/guntype)
 	switch(guntype)
-		if(/obj/item/gun/energy/laser/practice)
+		if(/obj/item/gun/energy/laser)
 			iconholder = 1
 			eprojectile = /obj/item/projectile/beam
 

@@ -1,6 +1,6 @@
 /obj/item/holyvacuum
-	desc = "An advanced vacuum cleaner designed by \"Old Testament\" that compresses trash into reusable biomatter bricks. There is no safety switch and it has several warnings on it about the toxic biomatter bricks."
-	name = "\"Tersus\" vacuum cleaner"
+	desc = "An advanced vacuum cleaner designed by various Federation companies that compresses trash into reusable biomatter bricks. There is no safety switch and it has several warnings on it about the toxic biomatter bricks."
+	name = "\"Swift 200\" vacuum cleaner"
 	icon = 'icons/obj/janitor.dmi'
 	icon_state = "vacuum"
 	force = WEAPON_FORCE_WEAK

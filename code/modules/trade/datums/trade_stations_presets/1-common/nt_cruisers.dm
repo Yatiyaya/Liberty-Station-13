@@ -73,7 +73,6 @@
 			/obj/item/gun/energy/laser = custom_good_amount_range(list(1, 5)),
 			/obj/item/gun/energy/ionrifle = custom_good_amount_range(list(1, 4)),
 			/obj/item/gun/energy/sniperrifle = custom_good_amount_range(list(-8, 1)),
-			/obj/item/gun/energy/crossbow/largecrossbow = custom_good_amount_range(list(-8, 1))
 		),
 		"Ballistic weapons" = list(
 			/obj/item/gun/projectile/revolver/detective,
@@ -102,7 +101,6 @@
 			/obj/item/gun_upgrade/barrel/excruciator = custom_good_amount_range(list(-3, 2))
 		),
 		"Plasma weapons" = list(
-			/obj/item/gun/energy/plasma/martyr,
 			/obj/item/gun/energy/plasma = custom_good_amount_range(list(-3, 2)),
 			/obj/item/gun/energy/plasma/destroyer = custom_good_amount_range(list(-3, 2))
 		),

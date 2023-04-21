@@ -186,7 +186,6 @@
 		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
-		/obj/item/gun/energy/plasma/martyr,
 		/obj/item/gun/energy/ntpistol,
 		/obj/item/device/binoculars
 	)
@@ -351,6 +350,7 @@
 		/obj/item/clipboard,
 		/obj/item/device/camera,
 		/obj/item/folder,
+		/obj/item/gun/energy/taser,
 		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
@@ -397,7 +397,7 @@
 
 /obj/item/storage/belt/security/tactical/marshalert/populate_contents()
 	new /obj/item/tool/shovel/combat(src)
-	new /obj/item/gun/energy/gun/martin(src)
+	new /obj/item/gun/energy/ntpistol(src)
 	new /obj/item/cell/small(src)
 	new /obj/item/cell/small(src)
 	new /obj/item/device/lighting/toggleable/flashlight/heavy(src)
@@ -445,7 +445,6 @@
 		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
-		/obj/item/gun/energy/plasma/martyr,
 		/obj/item/gun/energy/ntpistol,
 		/obj/item/device/binoculars
 	)

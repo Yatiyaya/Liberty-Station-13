@@ -1,6 +1,6 @@
 /obj/item/computer_hardware/hard_drive/portable/design/security
 	disk_name = "Security Miscellaneous Pack"
-	icon_state = "ironhammer"
+	icon_state = "watch"
 	license = 20
 	designs = list(
 		/datum/design/autolathe/sec/secflashlight,

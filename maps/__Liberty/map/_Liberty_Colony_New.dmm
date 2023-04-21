@@ -20311,7 +20311,6 @@
 /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/nemesis,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/purger,
-/obj/item/computer_hardware/hard_drive/portable/design/guns/themis,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/valkirye,
 /obj/item/computer_hardware/hard_drive/portable/design/nt_grenades,
 /obj/item/computer_hardware/hard_drive/portable/design/nt_grenades,
@@ -20319,7 +20318,6 @@
 	disk_name = "Absolute Armory - Plasma Shell Prime Pack";
 	license = 24
 	},
-/obj/item/computer_hardware/hard_drive/portable/design/guns/concillium,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/prime)
@@ -27635,12 +27633,6 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
-	},
-/obj/item/gun/energy/ionpistol{
-	pixel_y = 4
-	},
-/obj/item/gun/energy/ionpistol{
-	pixel_y = -2
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -82137,8 +82129,6 @@
 /obj/item/gun/energy/plasma/destroyer,
 /obj/item/gun/energy/plasma/destroyer,
 /obj/item/gun/energy/plasma/destroyer,
-/obj/item/gun/energy/carpediem,
-/obj/item/gun/energy/concillium,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/prime)
 "sRD" = (
@@ -94447,10 +94437,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "vCk" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/cog/gear,
-/obj/item/gun/energy/cog/gear{
-	pixel_y = 10
-	},
 /obj/machinery/door/window/southleft{
 	dir = 8;
 	name = "Energy weapons";

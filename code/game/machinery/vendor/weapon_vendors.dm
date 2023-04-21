@@ -17,7 +17,7 @@
 	//Firearms, ordered by price and category.
 	//Pistol
 	/obj/item/gun/projectile/automatic/slaught_o_matic = 5,
-	/obj/item/gun/energy/gun/martin = 2,
+	/obj/item/gun/energy/ntpistol = 2,
 	/obj/item/gun/projectile/clarissa = 2,
 	/obj/item/gun/projectile/liberty = 2,
 	/obj/item/gun/projectile/colt = 2,
@@ -86,7 +86,7 @@
 	//Firearms, ordered by price and category.
 	//Pistol
 	/obj/item/gun/projectile/automatic/slaught_o_matic = 100,
-	/obj/item/gun/energy/gun/martin = 250,
+	/obj/item/gun/energy/ntpistol = 250,
 	/obj/item/gun/projectile/clarissa = 300,
 	/obj/item/gun/projectile/liberty = 450,
 	/obj/item/gun/projectile/colt = 450,

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/lasercannon
 	name = "\"Titanica\" laser cannon"
-	desc = "A bulky outdated and now abandoned H&S design for an energy weapon that allows for it to shoot condensed laser beams to really burn a whole in anything. At its time it was compared to the \"Bull\" as one of the worst personal defence laser firearms created."
+	desc = "A bulky outdated and now abandoned HEC design for an energy weapon that allows for it to shoot condensed laser beams to really burn a whole in anything. At its time it was compared to the \"Bull\" as one of the worst personal defence laser firearms created."
 	icon = 'icons/obj/guns/energy/lascannon.dmi'
 	icon_state = "lasercannon"
 	item_state = "lasercannon"
@@ -20,7 +20,7 @@
 		WEAPON_NORMAL
 		)
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
-	serial_type = "H&S"
+	serial_type = "HEC"
 
 /obj/item/gun/energy/lasercannon/mounted
 	name = "mounted laser cannon"

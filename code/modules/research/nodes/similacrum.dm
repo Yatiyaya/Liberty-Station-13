@@ -11,8 +11,7 @@
 	required_tech_levels = list(RESEARCH_COMBAT = 14, RESEARCH_POWERSTORAGE = 5, RESEARCH_ILLEGAL = 2)
 	cost = 1000
 
-	unlocks_designs = list(/datum/design/research/item/similacrum/cog_sawn,
-						   /datum/design/research/item/similacrum/cog_sprocket) // Making the Gear Marshal-only, Soteria gets their own version
+	unlocks_designs = list(/datum/design/research/item/similacrum/cog)
 
 /datum/technology/SR_roomba
 	name = "Similacrum Robotics Roomba Creation"

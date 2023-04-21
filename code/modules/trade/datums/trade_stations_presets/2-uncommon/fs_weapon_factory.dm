@@ -35,7 +35,7 @@
 		),
 		"Energy" = list(
 			/obj/item/gun/energy/gun,
-			/obj/item/gun/energy/gun/martin
+			/obj/item/gun/energy/ntpistol
 		),
 		"Grenades" = list(
 			/obj/item/gun/projectile/shotgun/pump/china,
@@ -66,7 +66,6 @@
 			/obj/item/gun/energy/firestorm,
 			/obj/item/gun/energy/xray,
 			/obj/item/gun/energy/mindflayer,
-			/obj/item/gun/energy/lasercore,
 			/obj/item/gun/energy/pulse/cassad
 		),
 		"Surplus Gun Parts & Disk for Resale" = list(
