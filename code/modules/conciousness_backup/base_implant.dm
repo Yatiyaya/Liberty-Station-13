@@ -27,11 +27,14 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	var/next_integrity_warning //In deciseconds.
 	var/host_death_time //What time did our host die - if null, our host has not yet died, or the revive notice has been sent.
 	var/max_programs = 5 //Maximum amount of programs a conciousness backup can have. add_programs ignores this, but it's only called when the conciousness backup is created.
+	var/hacked_snatcher = FALSE //Can this override minds?
 
 	var/nutrition_usage_setting = NUTRITION_USAGE_LOW //These can be found in conback.dm, under DEFINES.
 
 	//var/stat//Status.
 	//Host variables, stored for cloning.
+
+	external = FALSE
 	var/host_ckey
 	var/datum/dna/host_dna
 	var/datum/mind/host_mind
@@ -47,8 +50,8 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	var/integrity_warning_message = "Warning: system integrity low. Service required soon."
 
 	var/list/starting_modules = list(/datum/conback_module/prosthetic_debug)
-	var/list/modules = list()
-	var/list/access = list()
+	//var/list/modules = list()
+	//var/list/access = list()
 
 	var/good_sound = 'sound/machines/synth_yes.ogg'
 	var/bad_sound = 'sound/machines/synth_no.ogg'
@@ -72,6 +75,18 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	. = ..()
 	if(host_name)
 		to_chat(user, SPAN_NOTICE("This one appears to belong to [host_name]."))
+	if(hacked_snatcher)
+		to_chat(user, SPAN_DANGER("Debug mode light is on."))
+
+/obj/item/implant/conback/soulcrypt/emag_act(mob/user)
+	if(hacked_snatcher)
+		to_chat(user, SPAN_NOTICE("You disable [src]'s debug mode."))
+		hacked_snatcher = FALSE
+		return 1
+	else
+		to_chat(user, SPAN_NOTICE("You enable [src]'s debug mode. It can now override minds."))
+		hacked_snatcher = TRUE
+		return 1
 
 /obj/item/implant/conback/on_install()
 	activate()
@@ -92,7 +107,13 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		host_ckey = wearer.client
 		store_host_languages()
 	stat = CONBACK_ONLINE
-	if(!wearer.mind) //We're in a blank body.
+	if(!wearer.mind || hacked_snatcher) //We're in a blank body. Or we're a bad person.
+
+		if(!hacked_snatcher)
+			for(var/mob/M in GLOB.player_list) //If they've respawned, we don't want to yoink them out of their current body.
+				if(M.ckey == host_mind.key)
+					if(M.stat != DEAD)
+						return
 
 		for(var/mob/M in GLOB.player_list) //If they've respawned, we don't want to yoink them out of their current body.
 			if(M.ckey == host_mind.key)
@@ -109,6 +130,11 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	if(!is_processing)
 		START_PROCESSING(SSobj, src)
 	send_host_message("Conciousness backup online: neural backup completed. Welcome to SoulOS v1.53 rev 3.")
+
+	if(!hacked_snatcher)
+		send_host_message("Conciousness backup online: neural backup completed. Welcome to SoulOS v1.71 rev 1.")
+	else
+		send_host_message("CONCIOUSNESS BACKUP ONLINE. DEBUG MODE INITIATED. MIND TRANSFER COMPLETE. WELCOME TO SOULOS V1.71 REV 1 (DEBUG)")
 
 /obj/item/implant/conback/deactivate()
 	deactivate_modules()

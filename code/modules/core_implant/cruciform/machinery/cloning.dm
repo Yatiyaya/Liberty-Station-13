@@ -426,6 +426,8 @@
 		user.drop_item()
 		C.forceMove(src)
 		implant = C
+		visible_message("[I] slides smoothly into the slot.")
+
 	src.add_fingerprint(user)
 	update_icon()
 

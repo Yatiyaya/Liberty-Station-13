@@ -52,6 +52,9 @@
 	if(dna)
 		dna.ready_dna(src)
 		dna.real_name = real_name
+		dna.age = age
+		dna.flavor_text = flavor_text
+		dna.stats = stats
 		sync_organ_dna()
 
 	make_blood()
