@@ -182,7 +182,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	supervisors = "Union Chief"
 	difficulty = "Easy."
 	selection_color = "#d5c88f"
-	alt_titles = list("Custodian", "Janitor")
+	alt_titles = list ("Janitor")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
 	wage = WAGE_PROFESSIONAL
 	health_modifier = 5
