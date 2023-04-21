@@ -134,7 +134,7 @@ var/list/event_last_fired = list()
 	active_with_role["Scientist"] = 0
 	active_with_role["AI"] = 0
 	active_with_role["Robot"] = 0
-	active_with_role["Janitor"] = 0
+	active_with_role["Sanitation Technician"] = 0
 	active_with_role["Gardener"] = 0
 
 	for(var/mob/M in GLOB.player_list)
@@ -174,8 +174,8 @@ var/list/event_last_fired = list()
 		if(M.mind.assigned_role == "Robot")
 			active_with_role["Robot"]++
 
-		if(M.mind.assigned_role == "Janitor")
-			active_with_role["Janitor"]++
+		if(M.mind.assigned_role == "Sanitation Technician")
+			active_with_role["Sanitation Technician"]++
 
 		if(M.mind.assigned_role == "Gardener")
 			active_with_role["Gardener"]++

@@ -293,8 +293,7 @@
 //Trust me I'm an engineer
 //I think we'll put this shit right here
 var/list/rank_prefix = list(\
-	"Premier" = "Premier",\
-	"Steward" = "Steward",\
+	"Board Secretary" = "Secretary",\
 	"Deputy" = "Deputy Chief",\
 	"Armorer" = "Armorer",\
 	"Criminal Investigator" = "Investigator",\

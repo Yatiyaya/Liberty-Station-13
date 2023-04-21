@@ -7,7 +7,7 @@
 	You however were born in heart of this empire leaving you completely unprepared for the horrors lying within the reach of borders."
 
 	restricted_depts = COMMAND
-	restricted_jobs = list(/datum/job/premier)
+	restricted_jobs = list(/datum/job/secretary)
 
 	restricted_to_species = list(FORM_HUMAN)
 
