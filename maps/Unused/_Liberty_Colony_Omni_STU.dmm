@@ -10385,7 +10385,7 @@
 "ccS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/premier,
+/obj/landmark/join/start/secretary,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "ccU" = (
@@ -41471,7 +41471,6 @@
 /area/liberty/crew_quarters)
 "icq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/pg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)
 "icw" = (

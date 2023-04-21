@@ -373,9 +373,9 @@ SUBSYSTEM_DEF(job)
 					return H.Robotize()
 				if("AI")
 					return H
-				if("Premier")
+				if("Board Secretary")
 					var/sound/announce_sound = (SSticker.current_state <= GAME_STATE_SETTING_UP)? null : sound('sound/misc/boatswain.ogg', volume=20)
-					captain_announcement.Announce("Premier [H.real_name] has signed in.", new_sound=announce_sound)
+					captain_announcement.Announce("Board Secretary [H.real_name] has signed in.", new_sound=announce_sound)
 
 		if(istype(H)) //give humans wheelchairs, if they need them.
 			var/obj/item/organ/external/l_leg = H.get_organ(BP_L_LEG)

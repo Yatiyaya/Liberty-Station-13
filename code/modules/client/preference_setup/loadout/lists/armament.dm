@@ -100,7 +100,7 @@
 	display_name = "Decorative Saber"
 	path = /obj/item/tool/sword/saber
 	cost = 2
-	allowed_roles = list("Premier","Steward","Blackshield Commander","Warrant Officer")
+	allowed_roles = list("Board Secretary","Blackshield Commander","Warrant Officer")
 
 /datum/gear/armament/cheap_melee
 	display_name = "cheap melee selection"
