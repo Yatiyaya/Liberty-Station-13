@@ -525,7 +525,7 @@
 	for(var/mob/living/creature in living_mobs_in_view(1, src))
 		if(creature.faction == "spiders")
 			continue
-		toxin_attack(creature, rand(1, 3))
+		biomatter_attack(creature, rand(1, 3))
 
 /obj/effect/decal/cleanable/solid_biomass/attackby(var/obj/item/I, var/mob/user)
 	if(istype(I, /obj/item/mop) || istype(I, /obj/item/soap))

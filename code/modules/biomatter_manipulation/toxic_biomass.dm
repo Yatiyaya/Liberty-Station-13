@@ -1,11 +1,16 @@
-//Toxic biomass and a few procs used by biomatter manipulation machines
+//burning biomass and a few procs used by biomatter manipulation machines
 
 
-//toxin attack proc, it's used for attacking people with checking their armor
-/proc/toxin_attack(mob/living/victim, var/damage = rand(2, 4))
+//biomatter attack proc, it's used for attacking people with checking their armor
+/proc/biomatter_attack(mob/living/victim, var/damage = rand(2, 4))
 	if(istype(victim))
-		var/hazard_protection = 100 - victim.getarmor(null, ARMOR_BIO)
-		victim.apply_damage(max(0, damage * hazard_protection / 100 * victim.reagent_permeability()), TOX)
+		var/T = get_turf(victim)
+		var/hazard_damage = -100 + victim.getarmor(null, ARMOR_BIO)
+		if(hazard_damage >= 0)
+			return
+		hazard_damage *= -1
+		hazard_damage *= 0.003 //Are armor still does SMOTHING
+		heatwave(T, 0, 0, 80 * hazard_damage, 0, 0)
 
 //this proc spill some biomass on the floor
 //dirs_to_spread - list with dirs where biomass should expand after creation
@@ -41,7 +46,7 @@
 
 /obj/effect/decal/cleanable/solid_biomass/Crossed(mob/living/M as mob|obj)
 	for(M in living_mobs_in_view(1, src))
-		toxin_attack(M, rand(4, 8))
+		biomatter_attack(M, rand(4, 8))
 
 /obj/effect/decal/cleanable/solid_biomass/Initialize()
 	. = ..()
@@ -66,7 +71,7 @@
 
 /obj/effect/decal/cleanable/solid_biomass/aoe/Process()
 	for(var/mob/living/creature in living_mobs_in_view(1, src))
-		toxin_attack(creature, rand(8, 16))
+		biomatter_attack(creature, rand(8, 16))
 
 
 /obj/effect/decal/cleanable/solid_biomass/attackby(var/obj/item/I, var/mob/user)
@@ -74,5 +79,5 @@
 		to_chat(user, SPAN_NOTICE("You started removing this [src]. U-ugh. Disgusting..."))
 		if(do_after(user, 3 SECONDS, src))
 			to_chat(user, SPAN_NOTICE("You removed [src]."))
-			toxin_attack(user, rand(25, 40))
+			biomatter_attack(user, rand(25, 40))
 			qdel(src)

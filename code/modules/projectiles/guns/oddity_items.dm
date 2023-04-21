@@ -262,7 +262,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/tool/nailstick/ogre
 	name = "\"Oni\" Greatclub"
 	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
-			A wooden club inscribed with several symbols of jana, though they make no sense put together. The wood is of unusual qualities and some lunatic hammered durasteel nails into \
+			A wooden club inscribed with several symbols of jana, though they make no sense put together. The wood is of unusual qualities and some lunatic hammered carbon fiber nails into \
 			it. Either the maker didn't know or didn't care about the value, it still ended up a supremely deadly weapon ... or hammer."
 	icon_state = "oni"
 	force = WEAPON_FORCE_BRUTAL
@@ -273,7 +273,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	tool_qualities = list(QUALITY_HAMMERING = 20)
 	max_upgrades = 3
 	price_tag = 3500 // It has durasteel spikes
-	matter = list(MATERIAL_WOOD = 4, MATERIAL_DURASTEEL = 1)
+	matter = list(MATERIAL_WOOD = 4, MATERIAL_CARBON_FIBER = 1)
 
 /obj/item/tool/knife/dagger/assassin/ubersaw //Waiting for code to be done to deal blood damage/take % of blood
 	name = "\"Uber\" syringe-dagger"
