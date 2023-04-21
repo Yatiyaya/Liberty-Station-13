@@ -12,7 +12,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	icon_state = "frame"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL=2, TECH_BIO=7, TECH_DATA=5)
-
+	matter = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
 
 	var/host_dead = FALSE //Our host is dead. Or not? Binary doesn't care for philosphy.
 	var/was_emp  = FALSE//Were we emp'd? This triggers the longer memory gap message.
@@ -50,8 +50,8 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	var/integrity_warning_message = "Warning: system integrity low. Service required soon."
 
 	var/list/starting_modules = list(/datum/conback_module/prosthetic_debug)
-	//var/list/modules = list()
-	//var/list/access = list()
+	var/list/modules = list()
+	var/list/access = list()
 
 	var/good_sound = 'sound/machines/synth_yes.ogg'
 	var/bad_sound = 'sound/machines/synth_no.ogg'
@@ -78,7 +78,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	if(hacked_snatcher)
 		to_chat(user, SPAN_DANGER("Debug mode light is on."))
 
-/obj/item/implant/conback/soulcrypt/emag_act(mob/user)
+/obj/item/implant/conback/emag_act(mob/user)
 	if(hacked_snatcher)
 		to_chat(user, SPAN_NOTICE("You disable [src]'s debug mode."))
 		hacked_snatcher = FALSE
@@ -129,7 +129,6 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 	if(!is_processing)
 		START_PROCESSING(SSobj, src)
-	send_host_message("Conciousness backup online: neural backup completed. Welcome to SoulOS v1.53 rev 3.")
 
 	if(!hacked_snatcher)
 		send_host_message("Conciousness backup online: neural backup completed. Welcome to SoulOS v1.71 rev 1.")

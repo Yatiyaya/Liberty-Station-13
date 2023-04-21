@@ -25,7 +25,7 @@ PLANNED FEATURES
 			All implants produced by this machine are licenced or produced by CAPSA or Liberty Group. \
 			Due to this machines complexity, only technitians in CAPSA and PIRS are trained in its usage."
 	icon = 'icons/obj/neotheology_machinery.dmi'
-	icon_state = "cruciforge"
+	icon_state = "implantforge"
 
 	density = TRUE
 	anchored = TRUE
@@ -36,13 +36,15 @@ PLANNED FEATURES
 	var/working = FALSE
 	var/start_working
 	var/work_time = 30 SECONDS
-	var/storage_capacity = 50
+	var/storage_capacity = 250
 	var/list/stored_material = list()
-	var/list/needed_material = list(MATERIAL_BIOMATTER = 10, MATERIAL_PLASTEEL = 5, MATERIAL_GOLD = 2, MTERIAL_SILVER = 3)
-	var/spawn_type = /obj/item/implant/conback
+	var/list/needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
+	var/spawn_type = /obj/item/implant/death_alarm
 
 	// A vis_contents hack for materials loading animation.
 	var/tmp/obj/effect/flick_light_overlay/image_load
+	var/list/options = list("Print Item", "Pick A Print")
+	var/list/what_to_print = list("Death Alarm", "Conciousness Backup Implant", "Psionic Tumour")
 
 /obj/machinery/neotheology/implantprinter/Initialize()
 	. = ..()
@@ -51,6 +53,46 @@ PLANNED FEATURES
 
 	for(var/_material in needed_material)
 		stored_material[_material] = rand(1, 10)
+
+/obj/machinery/neotheology/implantprinter/attack_hand(mob/living/carbon/human/user as mob)
+	if(!usr.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, STAT_LEVEL_PROF) && !usr.stat_check(STAT_COG, 120))
+		to_chat(user, SPAN_NOTICE("Your not sure how to use this without trainning or being able to read the advanced mumbo jumbo."))
+		return
+	var/choice = input(user, "Choose a what to do", "Selection") as null|anything in options
+	switch(choice)
+		if("Print Item")
+			if(perform(user))
+				produce()
+			return
+		if("Pick A Print")
+			var/new_print = input(user, "What do you want to print", "Printing") as null|anything in what_to_print
+			switch(new_print)
+				if("Death Alarm")
+					spawn_type = /obj/item/implant/death_alarm
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 1, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Metal(Steel), 1 Glass, 1 Silver"))
+					return
+				if("Conciousness Backup Implant")
+					spawn_type = /obj/item/implant/conback
+					needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
+					to_chat(user, SPAN_NOTICE("Now printing Conciousness Backup Implant"))
+					to_chat(user, SPAN_NOTICE("Conciousness Backup Implant Require: 1 Biomatter, 1 Metal(Plasteel), 1 Metal(Steel), 3 Glass, 3 Gold, 3 Silver"))
+					return
+				if("Psionic Tumour")
+					spawn_type = /obj/item/organ/internal/psionic_tumor
+					needed_material = list(MATERIAL_BIOMATTER = 120, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 0, MATERIAL_STEEL = 0)
+					to_chat(user, SPAN_NOTICE("Now printing Psionic Tomours"))
+					to_chat(user, SPAN_NOTICE("Psionic Tomours Require: 120 Biomatter, 1 Gold, 1 Silver"))
+					return
+				else
+					spawn_type = /obj/item/implant/death_alarm
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 1, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Metal(Steel), 1 Glass, 1 Silver"))
+					return
+		else
+			return
 
 /obj/machinery/neotheology/implantprinter/examine(user)
 	. = ..()
@@ -72,6 +114,8 @@ PLANNED FEATURES
 	. = ..()
 
 /obj/machinery/neotheology/implantprinter/proc/produce()
+	if(!perform())
+		return
 	for(var/_material in needed_material)
 		stored_material[_material] -= needed_material[_material]
 
@@ -79,7 +123,28 @@ PLANNED FEATURES
 	working = TRUE
 	start_working = world.time
 	flick_anim(WORK)
+
 	START_PROCESSING(SSmachines, src)
+
+/obj/machinery/neotheology/implantprinter/proc/perform(mob/user)
+	if(working)
+		to_chat(user, SPAN_NOTICE("[src] is already working!"))
+		return FALSE
+
+	if(stat & NOPOWER)
+		to_chat(user, SPAN_NOTICE("[src] is off."))
+		return FALSE
+
+	for(var/_material in needed_material)
+		if(!(_material in stored_material))
+			to_chat(user, SPAN_NOTICE("[src] does not have a [_material] to produce cruciform."))
+			return FALSE
+
+		if(needed_material[_material] > stored_material[_material])
+			to_chat(user, SPAN_NOTICE("[src] does not have enough [_material] to produce cruciform."))
+			return FALSE
+
+	return TRUE
 
 /obj/machinery/neotheology/implantprinter/Process()
 	if(!working)

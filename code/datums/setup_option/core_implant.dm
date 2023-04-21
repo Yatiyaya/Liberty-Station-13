@@ -11,6 +11,8 @@
 	if(CI)
 		return icon(initial(CI.icon),initial(CI.icon_state))
 
+
+/*
 /datum/category_item/setup_option/core_implant/conback
 	name = "Conciousness Backup Implant"
 	desc = "An Innovation in the fields of neural networking and biological technology!<br>\
@@ -23,4 +25,4 @@
 /datum/category_item/setup_option/core_implant/conback/apply(mob/living/carbon/human/character)
 	if(character.mind.assigned_role != "Robot")	// Checks if a cyborg is the one being implanted.
 		character.create_conback()
-
+*/
