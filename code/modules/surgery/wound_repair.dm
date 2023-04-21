@@ -199,7 +199,7 @@
 		if(advanced_medical)
 			heal_amount -= calculate_expert_surgery_bonus(user) * 2
 		user.visible_message(SPAN_NOTICE("[user] finishes [advanced_medical ? "expertly" : ""] filtering out any toxins in [target]'s body and repairing any neural degradation with the [tool_name]."), \
-		SPAN_NOTICE("You finish filtering out any toxins to [target]'s body and repairing any neural degradation with the [tool_name].") )
+		SPAN_NOTICE("You finish filtering out any toxins to [target]'s body with the [tool_name].") )
 		if((needs_regeneration || target.getToxLoss() > 0) && tool.use(1))
 			target.adjustToxLoss(heal_amount)
 			//target.timeofdeath = 99999999
