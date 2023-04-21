@@ -24,7 +24,9 @@
 /datum/lobbyscreen/liberty_final
 	image_file = 'icons/title_screens/liberty_final.png'
 	possibleMusic = list(
-		'sound/music/lobby/Phokorus.ogg'
+		'sound/music/lobby/Phokorus.ogg',
+		'sound/music/lobby/Liberty.ogg',
+		'sound/music/lobby/Richi.ogg'
 	)
 
 /datum/lobbyscreen/proc/play_music(client/C)
