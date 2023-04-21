@@ -150,7 +150,7 @@
 		var/obj/item/stack/material/biomatter/B = I
 		if (B.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Biomatter melting", 1) as num
-			if (sheets_amount_to_transphere > B.amount ) //No cheating!
+			if (sheets_amount_to_transphere > B.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [B.name]"))
 				return
 			if(sheets_amount_to_transphere)
@@ -170,7 +170,7 @@
 		var/obj/item/stack/material/steel/S = I
 		if (S.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Steel loading", 1) as num
-			if (sheets_amount_to_transphere > S.amount ) //No cheating!
+			if (sheets_amount_to_transphere > S.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [S.name]"))
 				return
 			if(sheets_amount_to_transphere)
@@ -190,7 +190,7 @@
 		var/obj/item/stack/material/cloth/C = I
 		if (C.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Cloth loading", 1) as num
-			if (sheets_amount_to_transphere > C.amount ) //No cheating!
+			if (sheets_amount_to_transphere > C.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [C.name]"))
 				return
 			if(sheets_amount_to_transphere)
@@ -210,7 +210,7 @@
 		var/obj/item/stack/material/silk/K = I
 		if (K.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Silk loading", 1) as num
-			if (sheets_amount_to_transphere > K.amount ) //No cheating!
+			if (sheets_amount_to_transphere > K.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [K.name]"))
 				return
 			if(sheets_amount_to_transphere)
@@ -287,7 +287,7 @@
 		var/obj/item/stack/material/cloth/C = I
 		if (C.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Cloth loading", 1) as num
-			if (sheets_amount_to_transphere > C.amount ) //No cheating!
+			if (sheets_amount_to_transphere > C.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [C.name]"))
 				return
 			if(sheets_amount_to_transphere)
