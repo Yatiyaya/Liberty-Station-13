@@ -1,10 +1,11 @@
 /obj/structure/flora/tree/snow
 	icon = 'icons/obj/flora/snowtree.dmi'
+	modular_shadow = FALSE
 
 /obj/structure/flora/tree/snow/snow
 	name = "tree"
 	desc = "A tall tree with a bed of snow over its branches."
-	shadow_overlay = "shadow_overlay"
+	shadow_overlay = "shadow_overlay1"
 	icon_state = "tree1"
 	pixel_x = -45
 	pixel_y = -16
