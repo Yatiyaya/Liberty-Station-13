@@ -181,7 +181,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	spawn_positions = 2
 	supervisors = "the Casino Manager"
 	difficulty = "Easy."
-	selection_color = "#dddddd"
+	selection_color = "#d5c88f"
 	alt_titles = list("Custodian", "Janitor")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
 	wage = WAGE_PROFESSIONAL
