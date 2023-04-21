@@ -179,7 +179,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	faction = MAP_FACTION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Casino Manager"
+	supervisors = "Union Chief"
 	difficulty = "Easy."
 	selection_color = "#d5c88f"
 	alt_titles = list("Custodian", "Janitor")
@@ -210,6 +210,6 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 		Deploy traps on burrows and do your best to handle the ongoing roach and spider problem."
 
 /obj/landmark/join/start/janitor
-	name = "Janitor"
+	name = "Sanitation Technician"
 	icon_state = "player-black"
 	join_tag = /datum/job/janitor
