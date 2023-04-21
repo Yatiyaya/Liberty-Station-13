@@ -17,7 +17,7 @@
 	//Firearms, ordered by price and category.
 	//Pistol
 	/obj/item/gun/projectile/automatic/slaught_o_matic = 5,
-	/obj/item/gun/energy/gun/martin = 2,
+	/obj/item/gun/energy/ntpistol = 2,
 	/obj/item/gun/projectile/clarissa = 2,
 	/obj/item/gun/projectile/liberty = 2,
 	/obj/item/gun/projectile/colt = 2,
@@ -86,7 +86,7 @@
 	//Firearms, ordered by price and category.
 	//Pistol
 	/obj/item/gun/projectile/automatic/slaught_o_matic = 100,
-	/obj/item/gun/energy/gun/martin = 250,
+	/obj/item/gun/energy/ntpistol = 250,
 	/obj/item/gun/projectile/clarissa = 300,
 	/obj/item/gun/projectile/liberty = 450,
 	/obj/item/gun/projectile/colt = 450,
@@ -225,8 +225,8 @@
 					/obj/item/gun/energy/ntpistol = 3,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 2,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter/public = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter = 2)
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 3,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 2)
 	contraband = list(/obj/item/tool/knife/neotritual = 3,
 					/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
@@ -265,8 +265,8 @@
 					/obj/item/gun/energy/ntpistol = 120,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 800,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_bioprinter = 400,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 100,
+					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 400,
 					/obj/item/tool/knife/neotritual = 250,
 					/obj/item/gun/matter/launcher/nt_sprayer = 500)
 	custom_vendor = TRUE // So they can sell pouches and other printed goods, if they bother to stock them

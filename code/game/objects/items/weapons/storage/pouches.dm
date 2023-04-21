@@ -277,14 +277,11 @@
 		/obj/item/gun/projectile/automatic/luty,
 		/obj/item/gun/projectile/automatic/slaught_o_matic,
 		/obj/item/gun/energy/glock,
-		/obj/item/gun/energy/ionpistol,
 		/obj/item/gun/energy/gun,
 		/obj/item/gun/energy/chameleon,
 		/obj/item/gun/energy/centurio,
 		/obj/item/gun/energy/stunrevolver,
 		/obj/item/gun/energy/ntpistol,
-		/obj/item/gun/energy/zwang,
-		/obj/item/gun/energy/captain/zapper,
 		/obj/item/gun/energy/floragun,
 		/obj/item/gun/energy/taser,
 		/obj/item/gun/energy/slimegun,
@@ -298,8 +295,6 @@
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn, //short enough to fit in
 		/obj/item/gun/launcher/syringe,
 		/obj/item/gun/energy/plasma/auretian,
-		/obj/item/gun/energy/plasma/stranger,
-		/obj/item/gun/energy/plasma/martyr,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/gun/matter/launcher/nt_sprayer
 		)
@@ -307,7 +302,6 @@
 	cant_hold = list(/obj/item/storage/pouch,
 					 /obj/item/gun/projectile/revolver/sixshot,
 					 /obj/item/gun/energy/gun/nuclear,
-					 /obj/item/gun/energy/crossbow/largecrossbow,
 					 )
 
 

@@ -150,13 +150,10 @@
 	spawn_nothing_percentage = 30
 
 /obj/random/gun_energy_cheap/item_to_spawn()
-	return pickweight(list(/obj/item/gun/energy/gun/martin = 2,\
-				/obj/item/gun/energy/ntpistol = 2,\
+	return pickweight(list(/obj/item/gun/energy/ntpistol = 2,\
 				/obj/item/gun/energy/gun = 2,\
 				/obj/item/gun/energy/cog = 1,\
-				/obj/item/gun/energy/lasercore = 0.5,\
-				/obj/item/gun/energy/firestorm = 0.5,\
-				/obj/item/gun/energy/centauri = 0.1))
+				/obj/item/gun/energy/firestorm = 0.5))
 
 /obj/random/gun_energy_cheap/low_chance
 	name = "low chance random cheap energy weapon"
@@ -264,7 +261,6 @@
 				/obj/item/gun/energy/laser/railgun/pistol = 1,
 				/obj/item/gun/energy/plasma/auretian = 1,
 				/obj/item/gun/energy/centurio = 2,
-				/obj/item/gun/energy/centauri = 1,
 				/obj/item/gun/energy/gun/nuclear = 2,
 				/obj/item/gun/energy/plasma/destroyer = 1,
 				/obj/item/gun/energy/sunrise = 1))

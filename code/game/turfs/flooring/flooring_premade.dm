@@ -471,89 +471,12 @@
 /turf/simulated/floor/snow
 	name = "snow"
 	icon = 'icons/turf/flooring/snows.dmi'
-	icon_state = "snow"
+	icon_state = "snow0"
 	temperature = 253.15
 	oxygen = MOLES_O2STANDARD * 1.14 //the multiplier is to compensate the lower pressure, to keep it breathable
 	nitrogen = MOLES_N2STANDARD *1.14
-	var/change_dir = TRUE
+	initial_flooring = /decl/flooring/snow
 
-/turf/simulated/floor/snow/New()
-	..()
-	if(change_dir)
-		dir = pick(NORTH,EAST,WEST,SOUTH)
-
-/turf/simulated/floor/snow/grass_poking_out
-	icon_state = "snowgrass"
-
-/turf/simulated/floor/snow/frost_bit_grass
-	name = "frosted greenery"
-	icon_state = "grass_snow0"
-
-/turf/simulated/floor/snow/frost_bit_grass2
-	name = "frosted greenery"
-	icon_state = "grass_snow1"
-
-/turf/simulated/floor/snow/frost_bit_grass3
-	name = "frosted greenery"
-	icon_state = "grass_snow2"
-
-/turf/simulated/floor/snow/frost_bit_grass4
-	name = "frosted greenery"
-	icon_state = "grass_snow3"
-
-/turf/simulated/floor/snow/transition_snow_grass
-	name = "snowy grass"
-	icon_state = "snow_grass"
-
-/turf/simulated/floor/snow/transition_snow_desert
-	name = "snowy sand"
-	icon_state = "snow_desert"
-
-/turf/simulated/floor/snow/mount
-	name = "snow"
-	icon_state = "snowmound_1"
-
-/turf/simulated/floor/snow/mountsmall
-	name = "snow"
-	icon_state = "snowmound_2"
-
-/turf/simulated/floor/snow/pathing
-	name = "snow"
-	icon_state = "snowmodular_1"
-	change_dir = FALSE
-
-/turf/simulated/floor/snow/pathing/alt
-	name = "snow"
-	icon_state = "snowmodular_2"
-	change_dir = FALSE
-
-/turf/simulated/floor/snow/fresh
-	name = "snow"
-	icon_state = "snowempty_1"
-
-/turf/simulated/floor/snow/freshalt
-	name = "snow"
-	icon_state = "snowempty_2"
-
-/turf/simulated/floor/snow/sleek
-	name = "snow"
-	icon_state = "snow1_1"
-
-/turf/simulated/floor/snow/sleek/alt1
-	name = "snow"
-	icon_state = "snow1_2"
-
-/turf/simulated/floor/snow/sleek/alt2
-	name = "snow"
-	icon_state = "snow1_3"
-
-/turf/simulated/floor/snow/sleek/alt3
-	name = "snow"
-	icon_state = "snow1_4"
-
-/turf/simulated/floor/snow/sleek/alt4
-	name = "snow"
-	icon_state = "snow1_5"
 
 /turf/simulated/floor/beach/coastline
 /turf/simulated/floor/plating/snow

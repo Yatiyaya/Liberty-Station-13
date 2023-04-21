@@ -1,6 +1,7 @@
 /obj/item/gun/energy/sniperrifle
 	name = "\"Valkyrie\" laser rifle"
-	desc = "\"Valkyrie\" is one of the original Old Testament designs, the precursor to the \"Lightfall\". A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon for killing from a distance."
+	desc = "\"Valkyrie\" is one of the Hellion Electronics Concern company's designs, a more advanced version of the \"Kalmyk\" developed by Astrakhan. \
+	 		A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon for killing from a distance."
 	icon = 'icons/obj/guns/energy/sniper.dmi'
 	icon_state = "sniper"
 	item_state = "sniper"
@@ -23,6 +24,6 @@
 	)
 	twohanded = TRUE
 	gun_tags = list(GUN_ENERGY)
-	serial_type = "Absolute"
+	serial_type = "HEC"
 	action_button_name = "Switch zoom level"
 	action_button_proc = "switch_zoom"

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/pulse/cassad
 	name = "\"Cassad\" energy rifle"
-	desc = "\"Holland & Sullivan\" brand energy assault rifle, capable of prolonged combat. When surrender is not an option."
+	desc = "\"Hellion Electronics Concern\" brand energy assault rifle, capable of prolonged combat. When surrender is not an option."
 	icon = 'icons/obj/guns/energy/cassad.dmi'
 	icon_state = "cassad"
 	item_state = "cassad"

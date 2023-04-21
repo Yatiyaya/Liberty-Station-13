@@ -10385,7 +10385,7 @@
 "ccS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/premier,
+/obj/landmark/join/start/secretary,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "ccU" = (
@@ -41471,7 +41471,6 @@
 /area/liberty/crew_quarters)
 "icq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/pg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)
 "icw" = (
@@ -49244,7 +49243,6 @@
 /obj/item/gun/energy/plasma/destroyer,
 /obj/item/gun/energy/plasma/destroyer,
 /obj/item/gun/energy/plasma/destroyer,
-/obj/item/gun/energy/carpediem,
 /obj/item/gun/energy/concillium,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/prime)
@@ -63753,10 +63751,6 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
-	},
-/obj/item/gun/energy/cog/gear,
-/obj/item/gun/energy/cog/gear{
-	pixel_y = 10
 	},
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)

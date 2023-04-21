@@ -8,7 +8,7 @@
 // Primary kits
 /obj/item/storage/box/m_kit/specialist
 	name = "Five-Oh Kit"
-	desc = "The standard Marshal box kit containing a \"Five-Oh\" submachine gun. An SMG worthy of main-carry or concealed carry, depending on a user's preference."
+	desc = "The standard Liberty Watch box kit containing a \"Five-Oh\" submachine gun. An SMG worthy of main-carry or concealed carry, depending on a user's preference."
 
 	populate_contents()
 		new /obj/item/gun/projectile/automatic/specialist(src)
@@ -17,28 +17,26 @@
 		new /obj/item/ammo_magazine/smg_35(src)
 		new /obj/item/storage/pouch/ammo(src)
 
-/obj/item/storage/box/m_kit/gear_lasgun
-	name = "Gear Laser Carbine Kit"
-	desc = "The standard Marshal box kit containing a modified Cog laser carbine that also fires stun beams. For the economic officer."
-
-	populate_contents()
-		new /obj/item/gun/energy/cog/gear(src)
-		new /obj/item/cell/medium/high(src)
-		new /obj/item/cell/medium/high(src)
-		new /obj/item/cell/medium/high(src)
-		new /obj/item/cell/medium/high(src)
-		new /obj/item/cell/medium/high(src)
-		new /obj/item/storage/pouch/tubular(src)
-
 /obj/item/storage/box/m_kit/trench
 	name = "Trench Kit"
-	desc = "The standard Marshal box kit containing a Trench shotgun, perfect for trench warfare!"
+	desc = "The standard Liberty Watch box kit containing a Trench shotgun, perfect for trench warfare!"
 
 	populate_contents()
 		new /obj/item/gun/projectile/shotgun/pump(src)
 		new /obj/item/ammo_magazine/speed_loader_shotgun/beanbag(src)
 		new /obj/item/ammo_magazine/speed_loader_shotgun(src)
 		new /obj/item/ammo_magazine/speed_loader_shotgun(src)
+		new /obj/item/storage/pouch/tubular(src)
+
+/obj/item/storage/box/m_kit/cog
+	name = "Cog Kit"
+	desc = "The standard Liberty Watch box kit containing a Cog laser carbine, a common staple of most police forces galaxy wide."
+
+	populate_contents()
+		new /obj/item/gun/energy/cog(src)
+		new /obj/item/cell/medium/high(src)
+		new /obj/item/cell/medium/high(src)
+		new /obj/item/cell/medium/high(src)
 		new /obj/item/storage/pouch/tubular(src)
 
 //Armorer kits

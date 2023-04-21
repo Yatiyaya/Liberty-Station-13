@@ -16,7 +16,6 @@
 	var/recent_fault = 0
 	var/power_output = 1
 
-
 /obj/machinery/power/port_gen/proc/IsBroken()
 	return (stat & (BROKEN|EMPED))
 
@@ -123,6 +122,8 @@
 	var/fuel_name // uses reagent id to get the name
 	var/fuel_reagent_id = "fuel"
 
+	var/decl/sound_player/gensound
+
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
 	if(anchored)
@@ -135,6 +136,24 @@
 /obj/machinery/power/port_gen/pacman/Destroy()
 	DropFuel()
 	return ..()
+
+/obj/machinery/power/port_gen/pacman/Process()
+	if(active && HasFuel() && !IsBroken() && anchored && powernet)
+		add_avail(power_gen * power_output)
+		UseFuel()
+		src.updateDialog()
+	else
+		active = 0
+		handleInactive()
+		STOP_PROCESSING(SSmachines, src)
+	update_icon()
+	updatesound(active)
+
+/obj/machinery/power/port_gen/pacman/proc/updatesound(var/playing)
+	if(playing && !gensound)
+		gensound.play_looping(src, "generator", 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output)
+	else if(!playing && gensound)
+		QDEL_NULL(gensound)
 
 /obj/machinery/power/port_gen/pacman/RefreshParts()
 	var/temp_rating = 0
@@ -548,15 +567,14 @@
 				power_output++
 				. = TRUE
 
-/obj/machinery/power/port_gen/proc/TogglePower()
+/obj/machinery/power/port_gen/pacman/proc/TogglePower()
 	if(active)
 		active = FALSE
-		update_icon()
 	else if(!active && HasFuel() && !IsBroken())
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
-		update_icon()
-
+	updatesound(active)
+	update_icon()
 //diesel gen special ui_data
 /obj/machinery/power/port_gen/pacman/diesel/ui_data()
 	var/data = list()
@@ -565,7 +583,7 @@
 	data["sheet_name"] = capitalize(sheet_name)
 	//reagents do not obey the same rules as sheets on gens, so we show the tank rather than the current sheet being consumed
 	data["sheets"] = reagents.total_volume
-	data["stack_percent"] = round(reagents.total_volume / reagents.maximum_volume, 0.1)
+	data["stack_percent"] = round((reagents.total_volume / reagents.maximum_volume) * 100, 0.1)
 
 	data["anchored"] = anchored
 	data["connected"] = (powernet == null ? 0 : 1)

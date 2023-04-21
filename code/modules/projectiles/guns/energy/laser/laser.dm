@@ -1,6 +1,6 @@
 /obj/item/gun/energy/laser
-	name = "\"Lightfall\" laser rifle"
-	desc = "\"Old Testament\" brand laser carbine. Deadly and radiant, like the divine wrath it represents."
+	name = "\"Kalmyk\" laser rifle"
+	desc = "A Astrakhan brand laser carbine. Cheap, outdated, but decent laser rifle for its cost."
 	icon = 'icons/obj/guns/energy/laser.dmi' // No longer scoped, stop the lies!
 	icon_state = "laser"
 	item_state = "laser"
@@ -20,7 +20,7 @@
 		WEAPON_CHARGE
 	)
 	twohanded = TRUE
-	serial_type = "Absolute"
+	serial_type = "Ast-Rak"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.2 // 20 vig
@@ -56,13 +56,6 @@
 	cell_type = /obj/item/cell/medium/moebius/high
 	charge_cost = 50
 
-/obj/item/gun/energy/laser/practice
-	name = "OT LG \"Lightfall\" - P"
-	desc = "A modified version of \"Old Testament\" brand laser carbine, this one fires less concentrated energy bolts, designed for target practice."
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_WOOD = 2)
-	price_tag = 150
-	projectile_type = /obj/item/projectile/beam/practice
-
 /obj/item/gun/energy/captain
 	name = "\"Destiny\" energy pistol"
 	icon = 'icons/obj/guns/energy/capgun.dmi'
@@ -90,34 +83,3 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-
-/obj/item/gun/energy/zwang
-	name = "\"Zwang\" energy revolver"
-	desc = "The \"Zwang\" is a law enforcer's best friend of a sidearm. Carrying both an extremely effective lethal and non-lethal firemode. \
-	Luckily, it does not sacrifice style for efficiency. The 'cylinder' spins its cell while firing, mimicking a double-action revolver mechanism to make use of multiple connection points."
-	icon = 'icons/obj/guns/energy/zwang.dmi'
-	icon_state = "zwang"
-	item_state = "zwang"
-	item_charge_meter = TRUE
-	can_dual = TRUE
-	charge_cost = 160
-	matter = list(MATERIAL_PLASTEEL = 13, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 6)
-	price_tag = 1400
-
-	init_firemodes = list(
-		list(mode_name="stunshot", projectile_type=/obj/item/projectile/energy/electrode/stunshot, fire_sound = 'sound/weapons/energy/Taser.ogg', fire_delay=35, icon="stun"),
-		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam/midlaser, fire_sound='sound/weapons/energy/laser_pistol.ogg', fire_delay=10, icon="kill"),
-	)
-	serial_type = "NM"
-
-	wield_delay = 0.3 SECOND
-	wield_delay_factor = 0.2 // 20 vig
-
-/obj/item/gun/energy/zwang/update_icon()
-	..()
-	overlays.Cut()
-	var/datum/firemode/current_mode = firemodes[sel_mode]
-	if(current_mode.name == "stunshot")
-		add_overlay("tazer_zwang")
-	else
-		add_overlay("laser_zwang")

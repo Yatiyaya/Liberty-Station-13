@@ -152,12 +152,6 @@
 	rand_min = 10
 	rand_max = 12
 
-/obj/item/stack/material/durasteel
-	name = "durasteel"
-	icon_state = "sheet-durasteel"
-	default_type = MATERIAL_DURASTEEL
-	price_tag = 1000
-
 /obj/item/stack/material/uranium
 	name = MATERIAL_URANIUM
 	icon_state = "sheet-uranium"
@@ -422,6 +416,24 @@
 
 /obj/item/stack/material/biomatter/full
 	amount = 120
+
+/obj/item/stack/material/carbon_fiber
+	name = "carbon fiber"
+	desc = "This is a durable high strange textial base used in cloathing"
+	singular_name = "carbon fiber sheet"
+	icon_state = "sheet-carbon_fiber"
+	default_type = MATERIAL_CARBON_FIBER
+	novariants = FALSE
+	price_tag = 6
+
+/obj/item/stack/material/biopolymer_silk
+	name = "biopolymer silk"
+	desc = "A sleek and study materal made with biomatter and strong silks."
+	singular_name = "biopolymer silk sheet"
+	icon_state = "sheet-biopolymer"
+	default_type = MATERIAL_BIO_SILK
+	novariants = FALSE
+	price_tag = 6
 
 /obj/item/stack/material/compressed_matter
 	name = "compressed matter"

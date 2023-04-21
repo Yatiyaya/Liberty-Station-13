@@ -43,7 +43,6 @@
 	gloves = /obj/item/clothing/gloves/stungloves
 	l_pocket = /obj/item/device/flash
 	shoes = /obj/item/clothing/shoes/reinforced
-	belt = /obj/item/gun/energy/gun/martin
 	r_hand = /obj/item/storage/briefcase/crimekit
 	id_type = /obj/item/card/id/det
 	pda_type = /obj/item/modular_computer/pda/forensics

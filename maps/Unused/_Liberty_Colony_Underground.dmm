@@ -27757,7 +27757,6 @@
 /area/liberty/quartermaster/office)
 "boR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/pg,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)
 "boS" = (
@@ -52861,7 +52860,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "rzW" = (
-/obj/landmark/join/start/premier,
+/obj/landmark/join/start/secretary,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "rAt" = (

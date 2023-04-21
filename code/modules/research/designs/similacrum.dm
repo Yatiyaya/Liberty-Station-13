@@ -3,35 +3,6 @@
 	build_path = /obj/item/gun/energy/cog
 	category = CAT_WEAPON
 
-/datum/design/research/item/similacrum/cog_sawn
-	name = "SR \"Pinion\" laser pistol"
-	build_path = /obj/item/gun/energy/cog/sawn
-	category = CAT_WEAPON
-
-/*	// Unneeded with the introduction of the Sprocket, keeps this variant as Marshal exclusive
-/datum/design/research/item/similacrum/cog_gear
-	name = "SR \"Gear\" police laser carbine"
-	build_path = /obj/item/gun/energy/cog/gear
-	category = CAT_WEAPON
-*/
-
-
-/datum/design/research/item/similacrum/cog_sprocket
-	name = "Phokorus Institute \"Sprocket\" laser carbine"
-	build_path = /obj/item/gun/energy/cog/sprocket
-	category = CAT_WEAPON
-
-
-/datum/design/research/item/similacrum/abnegate
-	name = "\"SST Abnegate\" handgun"
-	build_path = /obj/item/gun/energy/sst
-	category = CAT_WEAPON
-
-/datum/design/research/item/similacrum/humility
-	name = "\"SST Humility\" shotgun"
-	build_path = /obj/item/gun/energy/sst/humility
-	category = CAT_WEAPON
-
 /datum/design/research/item/similacrum/iron_lock_security_armor
 	name = "Similacrum Robotics Ablative Vest"
 	build_path = /obj/item/clothing/suit/armor/vest/iron_lock_security

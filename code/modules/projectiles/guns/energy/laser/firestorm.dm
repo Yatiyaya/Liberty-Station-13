@@ -1,7 +1,7 @@
 /obj/item/gun/energy/firestorm
 	name = "\"Firestorm\" assault SMG"
 	desc = "A front loading laser SMG made for close quarter and medium range combat, its compactness and its high rate of fire leaving its targets aflame has earned its nickname. Luckily it appears to make up for its charge usage by taking medium cell batteries.\
-	On the side of the gun under the barrel appears to be an 'H&S' marking. Surprising considering the quality of the weapon!"
+	On the side of the gun under the barrel appears to be an 'HEC' marking. Surprising considering the quality of the weapon!"
 	icon = 'icons/obj/guns/energy/firestorm.dmi'
 	icon_state = "firestorm"
 	item_state = "firestorm"
@@ -26,7 +26,7 @@
 		FULL_AUTO_600
 		)
 	folding_stock = TRUE //we can fold our stock
-	serial_type = "H&S"
+	serial_type = "HEC"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.2 // 20 vig

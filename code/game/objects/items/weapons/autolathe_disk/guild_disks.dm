@@ -3,7 +3,7 @@
 // Technomancers
 /obj/item/computer_hardware/hard_drive/portable/design/components
 	disk_name = "Union's ARK-034 Components"
-	icon_state = "technomancers"
+	icon_state = "therma"
 	license = 20
 	designs = list(
 		/datum/design/autolathe/part/consolescreen = 0,
@@ -30,7 +30,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/adv_tools
 	disk_name = "Union's IJIRO-451 Advanced Tools"
-	icon_state = "technomancers"
+	icon_state = "therma"
 	license = 10
 	designs = list(
 		/datum/design/autolathe/tool/big_wrench,
@@ -62,7 +62,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/parttoolpack
 	name = "Union's PAK-103 Tool Mods"
-	icon_state = "technomancers"
+	icon_state = "therma"
 	license = 10
 	designs = list(
 		/datum/design/autolathe/part/laserguide,
@@ -94,7 +94,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/circuits
 	disk_name = "Union's ESPO-830 Circuits"
-	icon_state = "technomancers"
+	icon_state = "therma"
 	license = 10
 	designs = list(
 		/datum/design/autolathe/circuit/airlockmodule = 0,
@@ -124,7 +124,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/logistics
 	disk_name = "Union's LAT-018 Logistics"
-	icon_state = "technomancers"
+	icon_state = "therma"
 
 	license = 3
 	designs = list(
@@ -143,7 +143,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/engineering
 	disk_name = "Union's Supply Factory"
-	icon_state = "technomancers"
+	icon_state = "therma"
 	license = -1 //Should make this disk infinite.
 	designs = list(
 		// From Components
@@ -244,7 +244,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/powerwork
 	disk_name = "Union's KW-841 Power Setters"
-	icon_state = "technomancers"
+	icon_state = "therma"
 
 	license = 20
 	designs = list(

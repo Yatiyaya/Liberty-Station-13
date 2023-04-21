@@ -4,7 +4,7 @@
 // CAPSA
 /obj/item/computer_hardware/hard_drive/portable/design/medical
 	disk_name = "CAPSA Medical Designs"
-	icon_state = "moebius"
+	icon_state = "capsa"
 	license = 20
 	designs = list(
 		/datum/design/autolathe/gun/syringe_gun = 4,
@@ -39,7 +39,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/advanced
 	disk_name = "CAPSA Advanced Medical Designs"
-	icon_state = "moebius"
+	icon_state = "capsa"
 	license = 10
 	designs = list(
 		/datum/design/autolathe/gun/syringe_gun,
@@ -105,7 +105,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/surgery/back_alley
 	disk_name = "Back Alley Organs"
-	icon_state = "moebius"
+	icon_state = "black"
 
 	license = 5
 	designs = list(
@@ -119,7 +119,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/medfab
 	disk_name = "CAPSA Medical Fabricator Designs"
-	icon_state = "moebius"
+	icon_state = "capsa"
 	license = -1
 	designs = list(
 		/datum/design/research/item/medical/gauze,
@@ -131,7 +131,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer
 	disk_name = "Phokorus Institute Computer Parts"
-	icon_state = "moebius"
+	icon_state = "pirs"
 	license = 20
 	designs = list(
 		/datum/design/autolathe/computer_part/frame_pda,
@@ -175,7 +175,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/rped
 	disk_name = "Phokorus Institute RnD Stock Parts Designs"
-	icon_state = "moebius"
+	icon_state = "pirs"
 	license = 20
 	designs = list(
 		/datum/design/research/item/part/RPED = 2,
@@ -213,7 +213,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/xenobio
 	disk_name = "Phokorus Institute Xenobio Equipment Designs"
-	icon_state = "moebius"
+	icon_state = "pirs"
 	license = 10
 	designs = list(
 		/datum/design/research/item/weapon/chemsprayer = 2,
