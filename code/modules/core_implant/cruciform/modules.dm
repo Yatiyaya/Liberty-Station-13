@@ -2,7 +2,7 @@
 
 
 /datum/core_module/cruciform/red_light/install()
-	implant.icon_state = "cruciform_purple"
+	implant.icon_state = "hearthcore_purple"
 	implant.max_power += 50
 	implant.power_regen += 0.3
 
@@ -11,7 +11,7 @@
 		H.update_implants()
 
 /datum/core_module/cruciform/red_light/uninstall()
-	implant.icon_state = "cruciform_green"
+	implant.icon_state = "hearthcore_green"
 	implant.max_power -= 50
 	implant.power_regen -= 0.3
 

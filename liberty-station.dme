@@ -1810,6 +1810,7 @@
 #include "code\modules\clothing\suits\armor.dm"
 #include "code\modules\clothing\suits\bio.dm"
 #include "code\modules\clothing\suits\costume.dm"
+#include "code\modules\clothing\suits\custodians.dm"
 #include "code\modules\clothing\suits\fontaine.dm"
 #include "code\modules\clothing\suits\gorka.dm"
 #include "code\modules\clothing\suits\greatcoat.dm"
