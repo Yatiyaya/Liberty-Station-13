@@ -4397,6 +4397,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "bqm" = (
@@ -7931,6 +7937,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/hut_cell2)
 "cqw" = (
@@ -8926,6 +8938,12 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
@@ -29555,6 +29573,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "jbn" = (
@@ -43674,6 +43698,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/hut_cell2)
 "nCy" = (
@@ -51819,6 +51849,9 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/hut_cell2)
 "qby" = (
@@ -56612,8 +56645,6 @@
 /area/liberty/security/detectives_office)
 "rBb" = (
 /obj/effect/floor_decal/industrial/warningwhite,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -56624,6 +56655,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
@@ -74668,6 +74705,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "xeq" = (
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/hut_cell2)
 "xer" = (
