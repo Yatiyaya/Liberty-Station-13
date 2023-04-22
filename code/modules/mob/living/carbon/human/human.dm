@@ -120,7 +120,7 @@
 
 		var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
 		if(C)
-			stat("Faith", "[C.power]/[C.max_power]")
+			stat("Radiance", "[C.power]/[C.max_power]")
 			stat("Channeling Boost", "[C.channeling_boost]")
 
 		var/obj/item/organ/internal/psionic_tumor/B = random_organ_by_process(BP_PSION)
@@ -293,8 +293,7 @@
 //Trust me I'm an engineer
 //I think we'll put this shit right here
 var/list/rank_prefix = list(\
-	"Premier" = "Premier",\
-	"Steward" = "Steward",\
+	"Board Secretary" = "Secretary",\
 	"Deputy" = "Deputy Chief",\
 	"Armorer" = "Armorer",\
 	"Criminal Investigator" = "Investigator",\

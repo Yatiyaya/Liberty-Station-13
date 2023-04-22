@@ -1,6 +1,7 @@
 /decl/hierarchy/outfit/job/shepherd
 	name = OUTFIT_JOB_NAME("Fontaine Heavy Industries - Field Shepherd")
 	uniform = /obj/item/clothing/under/turtleneck/fontaine
+	head = /obj/item/clothing/head/helmet/shepherd
 	suit = /obj/item/clothing/suit/armor/shepherd
 	glasses = /obj/item/clothing/glasses/sunglasses/fontaine
 	gloves = /obj/item/clothing/gloves/thick/fontaine
@@ -12,6 +13,7 @@
 /decl/hierarchy/outfit/job/trapper
 	name = OUTFIT_JOB_NAME("Fontaine Heavy Industries - Trapper")
 	uniform = /obj/item/clothing/under/turtleneck/fontaine/trapper
+	head = /obj/item/clothing/head/trapper
 	suit = /obj/item/clothing/suit/greatcoat/trapper
 	glasses = /obj/item/clothing/glasses/sunglasses/esquimal
 	gloves = /obj/item/clothing/gloves/thick/fontaine
@@ -23,6 +25,7 @@
 /decl/hierarchy/outfit/job/shipbreaker
 	name = OUTFIT_JOB_NAME("Fontaine Heavy Industries - Shipbreaker")
 	uniform = /obj/item/clothing/under/turtleneck/fontaine
+	head = /obj/item/clothing/head/helmet/handmade/scavengerhelmet
 	suit = /obj/item/clothing/suit/storage/scavengerarmor
 	glasses = /obj/item/clothing/glasses/sunglasses/fontaine
 	gloves = /obj/item/clothing/gloves/thick/fontaine

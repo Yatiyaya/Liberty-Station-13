@@ -269,17 +269,6 @@ var/list/name_to_material
 	hardness = 100
 	stack_origin_tech = list(TECH_MATERIAL = 6)
 
-/material/durasteel
-	name = MATERIAL_DURASTEEL
-	stack_type = /obj/item/stack/material/durasteel
-	icon_colour = "#6EA7BE"
-	integrity = 600
-	melting_point = 7000
-	hardness = 100
-	weight = 28
-	explosion_resistance = 75
-	stack_origin_tech = list(TECH_MATERIAL = 8)
-
 /material/gold
 	name = MATERIAL_GOLD
 	stack_type = /obj/item/stack/material/gold
@@ -686,14 +675,30 @@ var/list/name_to_material
 	ignition_point = T0C+232
 	melting_point = T0C+300
 	flags = MATERIAL_PADDING
-	sheet_singular_name = "ball"
-	sheet_plural_name = "balls"
+	sheet_singular_name = "spindle"
+	sheet_plural_name = "spindle"
 
 /material/biomatter
 	name = MATERIAL_BIOMATTER
 	stack_type = /obj/item/stack/material/biomatter
 	icon_colour = "#F48042"
 	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+
+/material/biopolymer_silk
+	name = MATERIAL_BIO_SILK
+	stack_type = /obj/item/stack/material/biopolymer_silk
+	icon_colour = "#F48042"
+	stack_origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 5)
+	sheet_singular_name = "spindle"
+	sheet_plural_name = "spindle"
+
+/material/carbon_fiber
+	name = MATERIAL_CARBON_FIBER
+	stack_type = /obj/item/stack/material/carbon_fiber
+	icon_colour = "#F48042"
+	stack_origin_tech = list(TECH_MATERIAL = 5, TECH_BIO = 1)
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 

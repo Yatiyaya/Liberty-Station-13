@@ -425,7 +425,7 @@
 	item_state = "crusader"
 	force = WEAPON_FORCE_LETHAL
 	armor_penetration = ARMOR_PEN_HALF
-	matter = list(MATERIAL_DURASTEEL = 25, MATERIAL_GOLD = 3)
+	matter = list(MATERIAL_CARBON_FIBER = 120, MATERIAL_GOLD = 3)
 	price_tag = 10000
 
 //Throwables

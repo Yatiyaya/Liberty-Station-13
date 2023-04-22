@@ -30,10 +30,3 @@
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	id_type = /obj/item/card/id/hydro
 	pda_type = /obj/item/modular_computer/pda
-
-/decl/hierarchy/outfit/job/service/janitor
-	name = OUTFIT_JOB_NAME("Skylight Syndicate - Janitor")
-	uniform = /obj/item/clothing/under/rank/janitor
-	pda_type = /obj/item/modular_computer/pda
-	shoes = /obj/item/clothing/shoes/jackboots/janitor
-	belt = /obj/item/keys/janitor

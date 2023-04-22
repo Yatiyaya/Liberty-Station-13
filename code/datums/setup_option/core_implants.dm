@@ -39,8 +39,7 @@
 	restricted_jobs = list(
 		/datum/job/doctor,
 		/datum/job/medic,
-		/datum/job/premier,
-		/datum/job/pg,
+		/datum/job/secretary,
 		/datum/job/oathpledge,
 		/datum/job/chief_engineer,
 		/datum/job/clubmanager,
@@ -71,8 +70,7 @@
 	implant_organ_type = "Union nanogate"
 	restricted_jobs = list(
 		/datum/job/outsider, // Nanogates are only available to colonist or allies.
-		/datum/job/premier,
-		/datum/job/pg,
+		/datum/job/secretary,
 		/datum/job/oathpledge,
 		/datum/job/cso,
 		/datum/job/clubmanager,

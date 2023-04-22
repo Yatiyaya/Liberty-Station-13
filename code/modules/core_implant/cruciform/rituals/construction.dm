@@ -14,8 +14,6 @@ GLOBAL_LIST_INIT(nt_blueprints, init_nt_blueprints())
 			continue
 		if(blueprint_type == /datum/nt_blueprint/cruciform_upgrade)
 			continue
-		if(blueprint_type == /datum/nt_blueprint/health_care)
-			continue
 		var/datum/nt_blueprint/pb = new blueprint_type()
 		list[pb.name] = pb
 	. = list
@@ -307,6 +305,39 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
+/datum/nt_blueprint/machinery/textials
+	name = "Biomatter Flarelathe"
+	build_path = /obj/machinery/textials
+	materials = list(
+		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/glass = 2,
+		/obj/item/stack/material/wood = 6,
+		/obj/item/storage/toolbox = 1
+	)
+	build_time = 5 SECONDS
+
+/datum/nt_blueprint/machinery/sewing_artificer
+	name = "Sewing Artificer"
+	build_path = /obj/machinery/sewing_artificer
+	materials = list(
+		/obj/item/stack/material/steel = 12,
+		/obj/item/stack/material/glass = 2,
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/tool/weldingtool = 1,
+		/obj/item/reagent_containers/glass/beaker = 1
+	)
+	build_time = 5 SECONDS
+
+/datum/nt_blueprint/machinery/composite_artificer
+	name = "Composite Artificer"
+	build_path = /obj/machinery/composite_artificer
+	materials = list(
+		/obj/item/stack/material/steel = 12,
+		/obj/item/stack/material/glass = 2,
+		/obj/item/tool/saw = 1
+	)
+	build_time = 5 SECONDS
+
 /datum/nt_blueprint/machinery/solidifier
 	name = "Biomatter Solidifier"
 	build_path = /obj/machinery/biomatter_solidifier
@@ -566,41 +597,4 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 8 SECONDS
 
-//For making medical stuff
-
-/datum/nt_blueprint/health_care/nt_firstaid
-	name = "Absolutism Medkit"
-	build_path = /obj/item/storage/firstaid/nt
-	materials = list(
-		/obj/item/stack/material/biomatter = 105,
-		/obj/item/stack/material/plastic = 4,
-		/obj/item/stack/material/glass = 2,
-		/obj/item/stack/material/gold = 2,
-		/obj/item/stack/material/silver = 2
-	)
-	build_time = 8 SECONDS
-
-/datum/nt_blueprint/health_care/nt_ointment
-	name = "Absolutism Burnpack"
-	build_path = /obj/item/stack/medical/ointment/advanced/nt
-	materials = list(
-		/obj/item/stack/material/biomatter = 25,
-		/obj/item/stack/material/plastic = 2,
-		/obj/item/stack/material/glass = 1,
-		/obj/item/stack/material/gold = 1,
-		/obj/item/stack/material/silver = 1
-	)
-	build_time = 5 SECONDS
-
-/datum/nt_blueprint/health_care/nt_bruise_pack
-	name = "Absolutism Bruisepack"
-	build_path = /obj/item/stack/medical/bruise_pack/advanced/nt
-	materials = list(
-		/obj/item/stack/material/biomatter = 25,
-		/obj/item/stack/material/plastic = 2,
-		/obj/item/stack/material/glass = 1,
-		/obj/item/stack/material/gold = 1,
-		/obj/item/stack/material/silver = 1
-	)
-	build_time = 5 SECONDS
 

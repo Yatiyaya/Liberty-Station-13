@@ -178,7 +178,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/gun/energy/sniperrifle/saint
 	name = "\"Saint\" laser rifle"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
-	The normal \"Valkyrie\" design meeting the improvements with Lightfall design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
+	The normal \"Valkyrie\" design meeting the improvements with Kalmyk design in a wooden frame with a golden barrel to help conduct the extra little bit of juice to hit as hard as possible."
 	charge_cost = 200
 	extra_damage_mult_scoped = 0.2
 	fire_delay = 25
@@ -262,7 +262,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/tool/nailstick/ogre
 	name = "\"Oni\" Greatclub"
 	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
-			A wooden club inscribed with several symbols of jana, though they make no sense put together. The wood is of unusual qualities and some lunatic hammered durasteel nails into \
+			A wooden club inscribed with several symbols of jana, though they make no sense put together. The wood is of unusual qualities and some lunatic hammered carbon fiber nails into \
 			it. Either the maker didn't know or didn't care about the value, it still ended up a supremely deadly weapon ... or hammer."
 	icon_state = "oni"
 	force = WEAPON_FORCE_BRUTAL
@@ -273,7 +273,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	tool_qualities = list(QUALITY_HAMMERING = 20)
 	max_upgrades = 3
 	price_tag = 3500 // It has durasteel spikes
-	matter = list(MATERIAL_WOOD = 4, MATERIAL_DURASTEEL = 1)
+	matter = list(MATERIAL_WOOD = 4, MATERIAL_CARBON_FIBER = 1)
 
 /obj/item/tool/knife/dagger/assassin/ubersaw //Waiting for code to be done to deal blood damage/take % of blood
 	name = "\"Uber\" syringe-dagger"

@@ -11441,7 +11441,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/security/nuke_storage)
 "cNA" = (
-/obj/landmark/join/start/premier,
+/obj/landmark/join/start/secretary,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
@@ -77046,7 +77046,6 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/sechall)
 "rKs" = (
-/obj/landmark/join/start/pg,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)

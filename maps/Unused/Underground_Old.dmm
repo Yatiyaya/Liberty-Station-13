@@ -29874,7 +29874,6 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/obj/landmark/join/start/pg,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -34834,7 +34833,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/quartermaster/office)
 "bLo" = (
-/obj/landmark/join/start/premier,
+/obj/landmark/join/start/secretary,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "bLp" = (

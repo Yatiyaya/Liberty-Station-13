@@ -169,3 +169,47 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	name = "Mining Technician"
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
+
+
+/datum/job/janitor
+	title = "Sanitation Technician"
+	flag = JANITOR
+	department = DEPARTMENT_SERVICE
+	department_flag = SERVICE
+	faction = MAP_FACTION
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "Union Chief"
+	difficulty = "Easy."
+	selection_color = "#d5c88f"
+	alt_titles = list ("Janitor")
+	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
+	wage = WAGE_PROFESSIONAL
+	health_modifier = 5
+	outfit_type = /decl/hierarchy/outfit/job/engineering/janitor
+
+	perks = list(PERK_JINGLE_JANGLE, PERK_NEAT)
+
+	stat_modifiers = list(
+		STAT_ROB = 15,
+		STAT_TGH = 10,
+		STAT_VIG = 15,
+		STAT_COG = 10,
+	)
+
+
+	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
+	description = "The lowly Janitor, well paid but rarely respected, nevertheless provides a valuable service.<br>\
+	You will trundle around the colony, armed with your trusty janicart full of cleaning supplies, disposing of trash and pests.<br>\
+	Some minor maintenance also falls within your duties. Fix lights, correct broken vendors, replace floor tiles - ease the guild burden.<br>\
+	Although your status is miserable, your knowledge of maintenance may lead you to some valuable salvage for some extra cash."
+
+	duties = "Clean blood, dirt, rubble and messes. Don't clean up crime scenes!<br>\
+		Conduct minor repairs and maintenance when guild adepts aren't available.<br>\
+		Restock Newscasters to at lest 15 prints.<br>\
+		Deploy traps on burrows and do your best to handle the ongoing roach and spider problem."
+
+/obj/landmark/join/start/janitor
+	name = "Sanitation Technician"
+	icon_state = "player-black"
+	join_tag = /datum/job/janitor

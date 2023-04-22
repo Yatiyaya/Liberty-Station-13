@@ -50,3 +50,10 @@
 	name = OUTFIT_JOB_NAME("Terra-Therma - Miner Voidsuit")
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/void/mining
+
+/decl/hierarchy/outfit/job/engineering/janitor
+	name = OUTFIT_JOB_NAME("Terra-Therma - Janitor")
+	uniform = /obj/item/clothing/under/rank/janitor
+	pda_type = /obj/item/modular_computer/pda
+	shoes = /obj/item/clothing/shoes/jackboots/janitor
+	belt = /obj/item/keys/janitor
