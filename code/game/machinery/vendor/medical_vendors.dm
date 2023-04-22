@@ -122,6 +122,7 @@
 		/obj/item/reagent_containers/hypospray/autoinjector/tramadol = 4,
 
 		/obj/item/implantcase/death_alarm = 4,
+		/obj/item/implantcase/conback = 2,
 		/obj/item/implanter = 4,
 
 		/obj/item/device/defib_kit = 2
@@ -162,6 +163,7 @@
 		/obj/item/reagent_containers/hypospray/autoinjector/tramadol = 500,
 
 		/obj/item/implantcase/death_alarm = 25,
+		/obj/item/implantcase/conback = 750,
 		/obj/item/implanter = 25,
 
 		/obj/item/device/defib_kit = 750,
