@@ -150,7 +150,7 @@
 		//area/turbolift/mountain/transition1,
 		/area/turbolift/mountain/transition2,
 		//area/turbolift/mountain/transition3,
-		/area/turbolift/mountain/solars,
+		//area/turbolift/mountain/solars,
 		)
 
 /area/turbolift/mountain/transition1
