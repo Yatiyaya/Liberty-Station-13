@@ -4,8 +4,7 @@
 	protected areas. Anyone caught outside will recieve rapid cooling,
 	and will die without medical attention, or perpared ways to deal with the cold
 
-//temp disabled to randomly trigger do to being wip
-
+*/
 
 /datum/storyevent/snow_storm
 	id = "snow_storm"
@@ -16,7 +15,7 @@
 	event_pools = list(EVENT_LEVEL_MODERATE = POOL_THRESHOLD_MODERATE)
 
 	tags = list(TAG_SCARY, TAG_COMMUNAL)
-*/
+
 
 /datum/event/snow_storm
 	var/const/enterBelt				= 55

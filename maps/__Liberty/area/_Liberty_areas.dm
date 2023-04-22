@@ -161,6 +161,7 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
+	is_dungeon_lootable = FALSE
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
@@ -185,7 +186,7 @@
 /area/liberty/dungeon/outside/abandoned_solars
 	name = "CAPSA Solar Outpost"
 	icon_state = "erisgreen"
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
 /area/liberty/dungeon/outside/abandoned_solars/powered
 	requires_power = FALSE
@@ -309,7 +310,8 @@
 /area/liberty/outside/pond
 	name = "Pond"
 	icon_state = "erisgreen"
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/bcave
 	name = "Tengolo Cave West"
@@ -324,7 +326,7 @@
 	name = "Forest"
 	icon_state = "forest"
 	sound_env = FOREST
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
 /area/liberty/outside/forest/beast_cave_light
 	name = "Swamp Caves"
@@ -391,20 +393,27 @@
 	name = "Lakeside"
 	icon_state = "erisblue"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/lakeamb1.ogg', 'sound/ambience/lakeamb2.ogg', 'sound/ambience/lakeamb3.ogg')
+//	forced_ambience = list('sound/ambience/lakeamb1.ogg', 'sound/ambience/lakeamb2.ogg', 'sound/ambience/lakeamb3.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/meadow
 	name = "Deep Forest"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
 	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/inside_colony
 	name = "Colony Meadow"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
 	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+	allows_weather_of_snow = TRUE
 
+/area/liberty/outside/holes_in_mountain
+	name = "Mountain Pits"
+	icon_state = "meadow"
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/mountainsolars
 	name = "Mountain Solars"
