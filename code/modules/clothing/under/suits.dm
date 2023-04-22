@@ -470,3 +470,34 @@
 	icon_state = "enkindled_turtleneck"
 	item_state = "enkindled_turtleneck"
 
+/obj/item/clothing/under/custodian_enkindled_tn
+	name = "Enkindled Turtleneck"
+	desc = "A formal, A formal, turtleneck that enkindled's wear."
+	icon_state = "enkindled_turtleneck"
+	item_state = "enkindled_turtleneck"
+
+/obj/item/clothing/under/union_chief_jumpsuit
+	name = "Union Chief Jumpsuit"
+	desc = "A red and dark navy jumpsuit, this one is for the union chief."
+	icon_state = "union_chief_jumpsuit"
+	item_state = "union_chief_jumpsuit"
+
+/obj/item/clothing/under/union_engi_jumpsuit
+	name = "Engineer Jumpsuit"
+	desc = "A red and dark navy jumpsuit, this one is for the union chief."
+	icon_state = "union_engi_jumpsuit"
+	item_state = "union_engi_jumpsuit"
+
+/obj/item/clothing/under/union_miner_jumpsuit
+	name = "Miner Jumpsuit"
+	desc = "A red and dark navy jumpsuit, this one is for the union chief."
+	icon_state = "union_miner_jumpsuit"
+	item_state = "union_miner_jumpsuit"
+
+/obj/item/clothing/under/skylight_uniform
+	name = "Skylight uniform"
+	desc = "A fancy neatly pressed white shirt and purple tie with charcoal black pants."
+	icon_state = "skylight_uniform"
+	item_state = "skylight_uniform"
+
+

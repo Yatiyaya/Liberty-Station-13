@@ -120,8 +120,8 @@
 	icon_state = "hop_cypherkey"
 	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 0, "Church" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
 
-/obj/item/device/encryptionkey/heads/merchant
-	name = "lonestar executive radio encryption key"
+/obj/item/device/encryptionkey/heads/clubmanager
+	name = "Starlight Syndicate Club Manager radio encryption key"
 	icon_state = "qm_cypherkey"
 	channels = list("Supply" = 1, "Command" = 1, "Service" = 1)
 

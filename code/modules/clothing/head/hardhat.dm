@@ -21,6 +21,24 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/hardhat/union_chief_helmet
+	name = "union chief helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_chief_helmet"
+	item_state = "union_chief_helmet"
+
+/obj/item/clothing/head/hardhat/union_engi_helmet
+	name = "union engi helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_engi_helmet"
+	item_state = "union_engi_helmet"
+
+/obj/item/clothing/head/hardhat/union_miner_helmet
+	name = "union miner helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_miner_helmet"
+	item_state = "union_miner_helmet"
+
 /obj/item/clothing/head/hardhat/yellow
 	name = "yellow hardhat"
 	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
