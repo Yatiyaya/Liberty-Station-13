@@ -446,3 +446,27 @@
 	icon_state = "hakama_bb"
 	item_state = "hakama_bb"
 
+/obj/item/clothing/under/custodian_oathpledge_tn
+	name = "Oathpledge Turtleneck"
+	desc = "A formal, turtleneck that oathpledge's wear."
+	icon_state = "oathpledge_turtleneck"
+	item_state = "oathpledge_turtleneck"
+
+/obj/item/clothing/under/custodian_forgemaster_tn
+	name = "Forgemaster Turtleneck"
+	desc = "A formal, turtleneck that forgemaster's wear."
+	icon_state = "forgemaster_turtleneck"
+	item_state = "forgemaster_turtleneck"
+
+/obj/item/clothing/under/custodian_oathbound_tn
+	name = "Oathbound Turtleneck"
+	desc = "A formal, turtleneck that oathbound's wear."
+	icon_state = "oathbound_turtleneck"
+	item_state = "oathbound_turtleneck"
+
+/obj/item/clothing/under/custodian_enkindled_tn
+	name = "Enkindled Turtleneck"
+	desc = "A formal, A formal, turtleneck that enkindled's wear."
+	icon_state = "enkindled_turtleneck"
+	item_state = "enkindled_turtleneck"
+

@@ -3,8 +3,8 @@
 var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform
-	name = "vinculum cruciform"
-	icon_state = "cruciform_green"
+	name = "vinculum Hearthcore"
+	icon_state = "hearthcore_green"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
@@ -218,7 +218,7 @@ var/list/disciples = list()
 	security_clearance = CLEARANCE_CLERGY
 
 	name = "omni cruciform"
-	icon_state = "cruciform_omni"
+	icon_state = "hearthcore_omni"
 	max_power += 200
 	power_regen += 1
 
@@ -227,7 +227,7 @@ var/list/disciples = list()
 //Path based cruciforms, these grant additional powers based on what path a cultist walks
 /obj/item/implant/core_implant/cruciform/tessellate
 	name = "tessellate cruciform"
-	icon_state = "cruciform_blue"
+	icon_state = "hearthcore_blue"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/tessellate
 	power = 0
@@ -237,7 +237,7 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/lemniscate
 	name = "lemniscate cruciform"
-	icon_state = "cruciform_red"
+	icon_state = "hearthcore_red"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/lemniscate
 	//access = list(access_nt_disciple) //So they can try and recuit people - Correction people just cant stop abusing everything ever.
@@ -248,7 +248,7 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/monomial
 	name = "monomial cruciform"
-	icon_state = "cruciform_yellow"
+	icon_state = "hearthcore_yellow"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/monomial
 	power = 0
@@ -258,7 +258,7 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/divisor
 	name = "divisor cruciform"
-	icon_state = "cruciform_orange"
+	icon_state = "hearthcore_orange"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/divisor
 	power = 0
@@ -268,7 +268,7 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/factorial
 	name = "factorial cruciform"
-	icon_state = "cruciform_cyan"
+	icon_state = "hearthcore_cyan"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/factorial
 	power = 0
@@ -278,7 +278,7 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/omni
 	name = "Omni-Cruciform"
-	icon_state = "cruciform_omni"
+	icon_state = "hearthcore_omni"
 	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Absolute."
 	implant_type = /obj/item/implant/core_implant/cruciform/omni
 	power = 0
