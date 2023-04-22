@@ -797,7 +797,7 @@ obj/item/clothing/suit/storage/toggle/peacoat
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/toggle/union_chief_jacket
-	name = "Union chief jacket"
+	name = "union chief jacket"
 	desc = "A cozy jacket in engineering's colors. Show your chief pride!"
 	icon_state = "union_chief_jacket"
 	item_state = "union_chief_jacket"
@@ -817,7 +817,7 @@ obj/item/clothing/suit/storage/toggle/peacoat
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/toggle/union_engi_jacket
-	name = "Union engineer jacket"
+	name = "union engineer jacket"
 	desc = "A cozy jacket in engineering's colors. Show your engineer pride!"
 	icon_state = "union_engi_jacket"
 	item_state = "union_engi_jacket"
@@ -837,7 +837,7 @@ obj/item/clothing/suit/storage/toggle/peacoat
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/toggle/union_miner_jacket
-	name = "Union miner jacket"
+	name = "union miner jacket"
 	desc = "A cozy jacket in engineering's colors. Show your miner pride!"
 	icon_state = "union_miner_jacket"
 	item_state = "union_miner_jacket"
@@ -857,7 +857,7 @@ obj/item/clothing/suit/storage/toggle/peacoat
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/toggle/skylight_coat
-	name = "Skylight Coat"
+	name = "skylight coat"
 	desc = "A sleek black coat with some light protection perfect for getting into scrapes with.  Makes you feel pretty wise wearing it."
 	icon_state = "skylight_coat"
 	item_state = "skylight_coat"
