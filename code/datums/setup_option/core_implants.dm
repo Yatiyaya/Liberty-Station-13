@@ -29,7 +29,7 @@
 		)
 	allow_modifications = FALSE
 	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
-
+/*
 /datum/category_item/setup_option/core_implant/psionic_tumor_psychiatrist
 	name = "Cultured Psionic Organ"
 	desc = "An unusual organ implanted by the Phokorus Institute of research or obtained through other methods. It is presently unknown what it is truly capable of and psions are entirely unknown outside of Liberty. \
@@ -52,7 +52,7 @@
 	allow_modifications = FALSE
 	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
 	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_CHTMANT)
-
+*/
 /datum/category_item/setup_option/core_implant/nanogate
 	name = "Nanogate"
 	desc = "A custom built nanogate designed from the far superior opifex blueprints. It is implanted right where the spine meets the skull and provides a wide variety of nanite based uses."

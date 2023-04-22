@@ -1233,6 +1233,7 @@ var/list/rank_prefix = list(\
 				var/organ_type = species.has_process[tag]
 				new organ_type(src)
 
+/*	Should no longer be needed; we've had a new way of handling implants for ages. Sojourn ineptitude moment.
 		var/datum/category_item/setup_option/core_implant/I = Pref.get_option("Core implant")
 		if(I)
 			if(I.implant_type)
@@ -1256,7 +1257,7 @@ var/list/rank_prefix = list(\
 					src.give_nanogate("Union")
 				if("opifex nanogate")
 					src.give_nanogate("Opifex")
-
+*/
 	else
 		var/organ_type
 

@@ -9,8 +9,8 @@
 #define ANIM_CLOSE -1
 
 /obj/machinery/neotheology/cloner
-	name = "Strange pod"
-	desc = "This pod seems entirely alien and smells disgustingly of old biomass left to rot."
+	name = "CASPA pod"
+	desc = "A highly revulationy design in both robotics and medical fields at the same time, allowing a crewmember to be cloned."
 	icon = 'icons/obj/neotheology_pod.dmi'
 	icon_state = "preview"
 	density = TRUE
@@ -37,6 +37,7 @@
 
 	var/power_cost = 250
 
+	var/clone_damage = 0
 
 /obj/machinery/neotheology/cloner/New()
 	..()
@@ -48,6 +49,19 @@
 		qdel(occupant)
 	return ..()
 
+/obj/machinery/neotheology/cloner/attack_hand(mob/user)
+	src.add_fingerprint(user)
+	reader = find_reader()
+	if(!reader)
+		visible_message("[src]'s control panel flashes \"NO READER\" light.")
+		return
+	if(!reader.implant)
+		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
+		return
+	if(cloning)
+		visible_message("[src]'s control panel flashes \"OCCUPIED\" light.")
+		return
+	start()
 
 /obj/machinery/neotheology/cloner/proc/find_container()
 	for(var/obj/machinery/neotheology/biomass_container/BC in orange(1,src))
@@ -107,7 +121,7 @@
 		occupant.forceMove(loc)
 		occupant = null
 	else
-		if(get_progress(progress) >= CLONING_MEAT)
+		if(progress >= CLONING_MEAT)
 			new /obj/item/reagent_containers/food/snacks/meat(loc)
 
 	update_icon()
@@ -159,7 +173,7 @@
 	return TRUE
 
 /obj/machinery/neotheology/cloner/proc/done()
-	occupant.setCloneLoss(0)
+	occupant.setCloneLoss(clone_damage)
 	occupant.setBrainLoss(0)
 	occupant.updatehealth()
 	stop()
@@ -177,8 +191,7 @@
 			update_icon()
 			return
 
-		progress++
-		var/progress_percent = get_progress()
+		progress += cloning_speed
 
 		if(progress <= CLONING_DONE)
 			if(container)
@@ -188,32 +201,22 @@
 				stop()
 
 		if(occupant && ishuman(occupant))
-			occupant.setCloneLoss(CLONING_DONE-progress_percent)
-			occupant.setBrainLoss(CLONING_DONE-progress_percent)
-
 			occupant.adjustOxyLoss(-4)
 			occupant.Paralyse(4)
 
 			occupant.updatehealth()
 
 
-		if(progress_percent >= CLONING_MEAT && !occupant)
-			var/datum/core_module/cruciform/cloning/R = reader.implant.get_module(CRUCIFORM_CLONING)
+		if(progress >= CLONING_MEAT && !occupant)
+			var/obj/item/implant/conback/R = reader.implant
 			if(!R)
 				open_anim()
 				stop()
 				update_icon()
 				return
 
-			occupant = new/mob/living/carbon/human(src)
-			occupant.dna = R.dna.Clone()
-			//occupant.stats = R.mind.stats.Clone()
-			occupant.set_species()
-			occupant.real_name = R.dna.real_name
-			occupant.age = R.age
-			occupant.UpdateAppearance()
-			occupant.sync_organ_dna()
-			occupant.flavor_text = R.flavor
+			occupant = spawn_character()
+			occupant.forceMove(src)
 
 		if(progress == CLONING_BODY*cloning_speed )
 			var/datum/effect/effect/system/spark_spread/s = new
@@ -258,7 +261,7 @@
 
 
 	/////////BODY
-	var/P = get_progress()
+	var/P = progress
 	if(cloning && P >= CLONING_START)
 		var/icon/IC = icon(icon, "clone_bones")
 		var/crop = 32-min(32,round(((P-CLONING_START)/(CLONING_BONES-CLONING_START))*32))
@@ -333,8 +336,8 @@
 /////////////////////
 
 /obj/machinery/neotheology/biomass_container
-	name = "Strange biomass container"
-	desc = "It seems to be a biomass container."
+	name = "Advanced biomass container"
+	desc = "A large container holding biomass as well as materals."
 	icon_state = "biocan"
 	density = TRUE
 	anchored = TRUE
@@ -362,23 +365,18 @@
 		var/obj/item/stack/material/biomatter/B = I
 		if (B.biomatter_in_sheet && B.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Biomatter melting", 1) as num
+			if(sheets_amount_to_transphere > B.amount || sheets_amount_to_transphere < 1) //No cheating!
+				to_chat(user, SPAN_WARNING("You don't have that many [B.name]"))
+				return
 			if(sheets_amount_to_transphere)
-				var/total_transphere_from_stack = 0
-				var/i = 1
-				while(i <= sheets_amount_to_transphere)
-					reagents.add_reagent("biomatter", B.biomatter_in_sheet)
-					total_transphere_from_stack += B.biomatter_in_sheet
-					i++
 				B.use(sheets_amount_to_transphere)
+				reagents.add_reagent("biomatter", (B.biomatter_in_sheet * sheets_amount_to_transphere))
 				user.visible_message(
 									"[user.name] inserted \the [B.name]'s sheets in \the [name].",
 									"You inserted \the [B.name] in  (in amount: [sheets_amount_to_transphere]) \the [name].\
-									And after that you see how the counter on \the [name] is incremented by [total_transphere_from_stack]."
+									And after that you see how the counter on \the [name] is incremented by [sheets_amount_to_transphere]."
 									)
 				ping()
-			else
-				to_chat(user, SPAN_WARNING("You can't insert [sheets_amount_to_transphere] in [name]"))
-			return
 		else
 			to_chat(user, SPAN_WARNING("\The [B.name] is exhausted and can't be melted to biomatter. "))
 
@@ -406,22 +404,29 @@
 /////////////////////
 
 /obj/machinery/neotheology/reader
-	name = "strange scanner"
-	desc = "It thrums and seems to be scanning anyone who gets near it judging from the small beeps."
+	name = "Conciousness Implant Reader"
+	desc = "A strangely advanced machine that scans the user for any signs of existing conciousness through magnetic resonance imaging. \
+			Used to check if a user's conciousness backup implant has remained intact, allowing the transfer of conciousness to a new body."
 	icon_state = "reader_off"
 	density = TRUE
 	anchored = TRUE
 
-	var/obj/item/implant/core_implant/cruciform/implant
+	var/obj/item/implant/conback/implant
 	var/reading = FALSE
 
 
 /obj/machinery/neotheology/reader/attackby(obj/item/I, mob/user as mob)
-	if(istype(I, /obj/item/implant/core_implant/cruciform))
-		var/obj/item/implant/core_implant/cruciform/C = I
+	if(default_deconstruction(I, user))
+		return
+	if(default_part_replacement(I, user))
+		return
+
+	if(istype(I, /obj/item/implant/conback))
+		var/obj/item/implant/conback/C = I
 		user.drop_item()
 		C.forceMove(src)
 		implant = C
+		visible_message("[I] slides smoothly into the slot.")
 
 	src.add_fingerprint(user)
 	update_icon()
@@ -461,8 +466,6 @@
 
 	if(implant)
 		var/image/I = image(icon, "reader_c_green")
-		if(implant.get_module(CRUCIFORM_PRIEST))
-			I = image(icon, "reader_c_red")
 		add_overlay(I)
 
 
@@ -474,3 +477,35 @@
 #undef ANIM_OPEN
 #undef ANIM_NONE
 #undef ANIM_CLOSE
+
+/obj/machinery/neotheology/cloner/proc/spawn_character()
+	var/mob/living/carbon/human/new_character
+	new_character = new(src.loc)
+
+	if(!reader.implant)
+		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
+		return new_character
+
+
+	var/obj/item/implant/conback/R = reader.implant
+	var/client/player_key = R.host_ckey
+
+
+	if(!R.host_ckey)
+		return new_character
+
+	if(!player_key)
+		return new_character
+
+	player_key.prefs.copy_to(new_character)
+	if(new_character.dna)
+		new_character.dna.ResetUIFrom(new_character)
+		new_character.sync_organ_dna()
+
+
+		//A redraw for good measure
+		new_character.update_icons()
+
+	return new_character
+
+
