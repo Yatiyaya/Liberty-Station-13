@@ -290,12 +290,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/hop
 
-/obj/item/device/radio/headset/heads/merchant
+/obj/item/device/radio/headset/heads/clubmanager
 	name = "executive officer's headset"
 	desc = "The headset of the guy who knows the price for everything and absolutely will buy that for a dollar."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/heads/merchant
+	ks2type = /obj/item/device/encryptionkey/heads/clubmanager
 
 /obj/item/device/radio/headset/heads/preacher
 	name = "prime's headset"

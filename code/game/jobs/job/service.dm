@@ -1,5 +1,5 @@
 /datum/job/clubmanager
-	title = "Casino Manager"
+	title = "Club Manager"
 	flag = CLUBMANAGER
 	department = DEPARTMENT_SERVICE
 	department_flag = SERVICE
@@ -9,7 +9,7 @@
 	supervisors = "You"
 	difficulty = "Medium."
 	selection_color = "#dddddd"
-	access = list(access_hydroponics, access_bar, access_kitchen)
+	access = list(access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	wage = WAGE_COMMAND
 	stat_modifiers = list(
 		STAT_ROB = 15,
@@ -19,7 +19,7 @@
 
 	perks = list(PERK_MARKET_PROF)
 
-	outfit_type = /decl/hierarchy/outfit/job/service/bartender //Re-using this.
+	outfit_type = /decl/hierarchy/outfit/job/service/clubmanager //Re-using this.
 	description = "The Bartender runs the colony bar, providing colonists with drinks and entertainment.<br>\
 	Working with the Chef and Gardener, you make the big decisions. Run your business well - perhaps seek to maximise profits.<br>\
 	Although tips are a good source of income, your wider business acumen will truly decide your prosperity here."
@@ -29,7 +29,7 @@
 		Potentially take over cooking duties if a Chef is not present."
 
 /obj/landmark/join/start/clubmanager
-	name = "Casino Manager"
+	name = "Club Manager"
 	icon_state = "player-grey"
 	join_tag = /datum/job/clubmanager
 
@@ -41,7 +41,7 @@
 	faction = MAP_FACTION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Casino Manager"
+	supervisors = "the Club Manager"
 	difficulty = "Easy."
 	alt_titles = list("Hired Muscle")
 	selection_color = "#dddddd"
@@ -55,7 +55,7 @@
 
 	perks = list(PERK_MARKET_PROF)
 
-	outfit_type = /decl/hierarchy/outfit/job/service/waiter
+	outfit_type = /decl/hierarchy/outfit/job/service/fixer
 	description = "The Chef works in the kitchen, ensuring that the colony remains well-fed and energetic.<br>\
 	You will typically work closely with a Bartender while cooking, cleaning, serving, and perhaps entertaining.<br>\
 	You are paid mainly through fulfilling requests for food. The successful Chef takes initiative by asking for customer orders."
@@ -71,14 +71,14 @@
 	join_tag = /datum/job/fixer
 
 /datum/job/clubworker
-	title = "Casino Worker"
+	title = "Club Worker"
 	flag = CLUBWORKER
 	department = DEPARTMENT_SERVICE
 	department_flag = SERVICE
 	faction = MAP_FACTION
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Casino Manager"
+	supervisors = "the Club Manager"
 	difficulty = "Easy."
 	alt_titles = list("Bartender", "Chef", "Gardener")
 	selection_color = "#dddddd"
@@ -102,6 +102,6 @@
 
 
 /obj/landmark/join/start/clubworker
-	name = "Casino Worker"
+	name = "Club Worker"
 	icon_state = "player-grey"
 	join_tag = /datum/job/clubworker

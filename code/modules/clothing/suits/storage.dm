@@ -792,6 +792,88 @@ obj/item/clothing/suit/storage/toggle/peacoat
 		rad = 0
 	)
 	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/storage/toggle/union_chief_jacket
+	name = "union chief jacket"
+	desc = "A cozy jacket in engineering's colors. Show your chief pride!"
+	icon_state = "union_chief_jacket"
+	item_state = "union_chief_jacket"
+	icon_open = "union_chief_jacket_open"
+	icon_closed = "union_chief_jacket"
+	armor_list = list(
+		melee = 5,
+		bullet = 5,
+		energy = 0,
+		bomb = 5,
+		bio = 30,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/storage/toggle/union_engi_jacket
+	name = "union engineer jacket"
+	desc = "A cozy jacket in engineering's colors. Show your engineer pride!"
+	icon_state = "union_engi_jacket"
+	item_state = "union_engi_jacket"
+	icon_open = "union_engi_jacket_open"
+	icon_closed = "union_engi_jacket"
+	armor_list = list(
+		melee = 5,
+		bullet = 5,
+		energy = 0,
+		bomb = 5,
+		bio = 30,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/storage/toggle/union_miner_jacket
+	name = "union miner jacket"
+	desc = "A cozy jacket in engineering's colors. Show your miner pride!"
+	icon_state = "union_miner_jacket"
+	item_state = "union_miner_jacket"
+	icon_open = "union_miner_jacket_open"
+	icon_closed = "union_miner_jacket"
+	armor_list = list(
+		melee = 5,
+		bullet = 5,
+		energy = 0,
+		bomb = 5,
+		bio = 30,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/storage/toggle/skylight_coat
+	name = "skylight coat"
+	desc = "A sleek black coat with some light protection perfect for getting into scrapes with.  Makes you feel pretty wise wearing it."
+	icon_state = "skylight_coat"
+	item_state = "skylight_coat"
+	icon_open = "skylight_coat_open"
+	icon_closed = "skylight_coat"
+	armor_list = list(
+		melee = 20,
+		bullet = 15,
+		energy = 15,
+		bomb = 15,
+		bio = 30,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/jamrock_blazer
