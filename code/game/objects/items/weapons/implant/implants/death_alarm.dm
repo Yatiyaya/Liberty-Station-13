@@ -109,3 +109,8 @@
 /obj/item/implanter/death_alarm
 	name = "implanter (death alarm)"
 	implant = /obj/item/implant/death_alarm
+
+/obj/item/implantcase/conback
+	name = "glass case - 'conciousness backup'"
+	desc = "A case containing a conciousness backup implant."
+	implant = /obj/item/implant/conback
