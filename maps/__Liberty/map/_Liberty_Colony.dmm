@@ -4527,12 +4527,14 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/reception)
 "bsa" = (
-/obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "bsc" = (
@@ -5299,9 +5301,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "bGt" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/structure/cable/cyan{
@@ -5467,6 +5467,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "bIn" = (
@@ -5657,10 +5659,17 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "bLB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/roaches/low_chance,
@@ -7350,9 +7359,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ciJ" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -9536,12 +9543,18 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
 "cPw" = (
-/obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "cPA" = (
@@ -11937,6 +11950,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/outside/inside_colony)
 "dyO" = (
@@ -12372,10 +12387,10 @@
 	name = "Security Post";
 	req_access = list(1)
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "dFa" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom,
@@ -12446,9 +12461,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "dFZ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/costume,
@@ -14850,6 +14863,18 @@
 "ewq" = (
 /turf/simulated/floor/snow,
 /area/liberty/outside/pond)
+"ewr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/hallway/surface/section1)
 "ewt" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -14976,9 +15001,7 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/snow,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "exX" = (
 /obj/machinery/power/thermoelectric_control,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -16943,9 +16966,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ffc" = (
 /obj/structure/closet/firecloset,
 /obj/effect/decal/cleanable/dirt,
@@ -17020,9 +17041,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "fge" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,5";
@@ -17805,6 +17824,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
+"frR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/hallway/surface/section1)
 "frT" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -19794,9 +19823,7 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "fWF" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/wall/r_wall,
@@ -20401,9 +20428,7 @@
 "gfS" = (
 /obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ggn" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -20925,9 +20950,7 @@
 "gpO" = (
 /obj/effect/floor_decal/spline/snow_edge,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "gqg" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -22185,6 +22208,12 @@
 /obj/machinery/computer/guestpass{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "gJV" = (
@@ -23358,6 +23387,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/outside/inside_colony)
 "hcf" = (
@@ -23724,9 +23755,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/wall/r_wall,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hiJ" = (
 /obj/structure/table/standard,
 /obj/random/surgery_tool/low_chance,
@@ -24678,9 +24707,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hxJ" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -24696,9 +24723,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hxO" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -25215,9 +25240,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hEP" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 1;
@@ -25953,9 +25976,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hRv" = (
 /obj/structure/table/reinforced,
 /obj/random/medical/low_chance,
@@ -26270,9 +26291,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "hWM" = (
 /obj/structure/table/woodentable,
 /obj/item/device/lighting/toggleable/lamp,
@@ -26582,9 +26601,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "idk" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -26748,9 +26765,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "igw" = (
 /obj/machinery/door/airlock/glass_research{
 	name = "Robotics Lab";
@@ -27291,9 +27306,7 @@
 "ipI" = (
 /obj/machinery/porta_turret/gate,
 /turf/simulated/floor/snow,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ipM" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 1
@@ -29054,9 +29067,7 @@
 	},
 /obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "iSn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -29550,9 +29561,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/asteroid/dirt/dust,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "iZi" = (
 /obj/effect/floor_decal/industrial/warningdust/fulltile,
 /obj/machinery/shieldwallgen{
@@ -30100,9 +30109,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "jgv" = (
 /obj/random/material_rare,
 /obj/random/material_rare,
@@ -30660,9 +30667,7 @@
 	req_access = list(1)
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "jpz" = (
 /obj/machinery/light{
 	dir = 1
@@ -31118,6 +31123,12 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
@@ -34934,9 +34945,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "kJo" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/cable{
@@ -36594,9 +36603,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ljV" = (
 /obj/machinery/multistructure/biogenerator_part/port,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -36698,9 +36705,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "llC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -36754,9 +36759,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "lmX" = (
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "lnb" = (
 /obj/structure/diamond/wealthy_shovel{
 	pixel_y = 5
@@ -36865,9 +36868,7 @@
 	},
 /obj/structure/cable,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "loR" = (
 /obj/machinery/door/airlock/maintenance_common,
 /obj/structure/barricade,
@@ -37006,9 +37007,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "lrV" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "14,21"
@@ -37279,14 +37278,20 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/engineering/atmos)
 "lwl" = (
-/obj/structure/multiz/stairs/enter/bottom{
-	dir = 8
-	},
 /obj/structure/railing,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/multiz/stairs/enter/bottom{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
@@ -37323,10 +37328,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "lxw" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/rubble,
@@ -38715,9 +38721,7 @@
 	},
 /obj/effect/floor_decal/spline/snow_edge,
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "lSZ" = (
 /obj/machinery/light{
 	dir = 1
@@ -42211,9 +42215,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ndW" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -42367,10 +42369,11 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ngk" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -43251,6 +43254,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "nsI" = (
@@ -43299,9 +43304,7 @@
 /area/shuttle/vasiliy_shuttle_area)
 "nte" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/space)
 "nth" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 9
@@ -43688,14 +43691,18 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "nzw" = (
@@ -43860,9 +43867,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "nBN" = (
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
@@ -47719,12 +47724,18 @@
 	},
 /area/liberty/command/tcommsat/computer)
 "oMZ" = (
-/obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "oNc" = (
@@ -50812,9 +50823,7 @@
 /area/shuttle/rocinante_shuttle_area)
 "pJP" = (
 /turf/simulated/floor/snow,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "pKi" = (
 /obj/item/toy/plushie/spider,
 /obj/effect/spider/stickyweb,
@@ -51135,6 +51144,12 @@
 /obj/effect/floor_decal/industrial/warningred,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "pOr" = (
@@ -51152,9 +51167,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "pOM" = (
 /obj/structure/railing{
 	dir = 8;
@@ -52737,9 +52750,7 @@
 	name = "glass shutter"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "qkd" = (
 /obj/structure/table/rack/shelf,
 /obj/item/cell/large/high,
@@ -54545,6 +54556,12 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/outside/inside_colony)
 "qNz" = (
@@ -55472,9 +55489,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "rbW" = (
 /obj/structure/filingcabinet/employment,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -55646,9 +55661,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "rfx" = (
 /obj/structure/bed/psych{
 	desc = "It can be a bit noisy, but still serves well.";
@@ -56784,10 +56797,20 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
 	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "East APC";
+	pixel_x = 28
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/panels,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "ryd" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -57544,9 +57567,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "rMj" = (
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/hunter_cabin)
@@ -57700,6 +57721,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "rOu" = (
@@ -58411,9 +58434,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "rZD" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/kitchen)
@@ -58488,6 +58509,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/hallway/surface/section1)
 "saw" = (
@@ -58932,9 +58955,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "sfM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/brown_perforated,
@@ -67137,9 +67158,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/snow,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "uCB" = (
 /obj/machinery/conveyor_switch{
 	id = "QMLoad2"
@@ -68537,9 +68556,8 @@
 	name = "Security Post";
 	req_access = list(1)
 	},
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/turf/space,
+/area/liberty/security/maingate_outside)
 "vez" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -69125,9 +69143,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "vnN" = (
 /obj/structure/table/standard,
 /obj/item/device/lighting/toggleable/lamp/green,
@@ -70756,9 +70772,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "vNJ" = (
 /obj/structure/multiz/stairs/active{
 	dir = 1
@@ -74229,6 +74243,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
+"wOU" = (
+/turf/simulated/wall/r_wall,
+/area/liberty/security/maingate_outside)
 "wPf" = (
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/command/cso)
@@ -76597,9 +76614,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "xBp" = (
 /obj/machinery/light{
 	dir = 4
@@ -77229,9 +77244,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "xKQ" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -78133,9 +78146,7 @@
 	icon_state = "1-2"
 	},
 /turf/space,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "xZi" = (
 /obj/random/junk/low_chance,
 /turf/simulated/floor/rock,
@@ -78266,9 +78277,7 @@
 	name = "WARNING: ELECTRIC FENCE"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "yaV" = (
 /obj/effect/floor_decal/industrial/road/straight1,
 /obj/effect/decal/cleanable/dirt,
@@ -78384,9 +78393,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/rock/manmade/road,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "yde" = (
 /obj/structure/table/woodentable,
 /obj/item/paper_bin,
@@ -78759,9 +78766,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/maingate{
-	name = "\improper Outdoors - Pad"
-	})
+/area/liberty/security/maingate_outside)
 "yhr" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -165767,10 +165772,10 @@ omv
 omv
 omv
 omv
-nte
-nte
-nte
-nte
+wOU
+wOU
+wOU
+wOU
 beH
 fhg
 fhg
@@ -165968,9 +165973,9 @@ aRw
 omv
 omv
 omv
-nte
-nte
-nte
+wOU
+wOU
+wOU
 gfS
 yhl
 pjs
@@ -166169,8 +166174,8 @@ byg
 aRw
 cOr
 omv
-nte
-nte
+wOU
+wOU
 ipI
 rMe
 pJP
@@ -166371,7 +166376,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 yaQ
 uCA
 fgd
@@ -167583,7 +167588,7 @@ jjF
 aRw
 aRw
 gpO
-nte
+wOU
 ndL
 ipI
 rMe
@@ -168795,7 +168800,7 @@ ogP
 aRw
 aRw
 gpO
-nte
+wOU
 sfK
 ipI
 rMe
@@ -170007,7 +170012,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 ndL
 ipI
 rMe
@@ -171219,7 +171224,7 @@ qUO
 qUO
 qUO
 lmX
-nte
+wOU
 sfK
 ipI
 rMe
@@ -174418,7 +174423,7 @@ wlH
 ulE
 wlH
 cDi
-wlH
+ewr
 jGc
 fLA
 oEu
@@ -175024,7 +175029,7 @@ laj
 dhO
 dqC
 oQv
-keV
+frR
 rgK
 buv
 aUi
@@ -175439,30 +175444,30 @@ jux
 jux
 uby
 uby
-nte
-nte
-nte
-nte
+wOU
+wOU
+wOU
+wOU
 qkb
 qkb
 qkb
 qkb
 qkb
-nte
+wOU
 qkb
 qkb
 qkb
 qkb
 qkb
-nte
+wOU
 qkb
 qkb
 qkb
 qkb
 qkb
-nte
-nte
-nte
+wOU
+wOU
+wOU
 lrn
 hWE
 exQ
@@ -176247,10 +176252,10 @@ jux
 jux
 uby
 uby
-nte
-nte
-nte
-nte
+wOU
+wOU
+wOU
+wOU
 nBE
 pJP
 lST
@@ -176452,7 +176457,7 @@ uMU
 jux
 aRw
 gpO
-nte
+wOU
 hRf
 ipI
 lST
@@ -177664,7 +177669,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -178876,7 +178881,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -180088,7 +180093,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 hRf
 ipI
 lST
@@ -181300,7 +181305,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -182512,7 +182517,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -183724,7 +183729,7 @@ epC
 epC
 epC
 lmX
-nte
+wOU
 hRf
 ipI
 lST
@@ -184936,7 +184941,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -186148,7 +186153,7 @@ aRw
 aRw
 aRw
 gpO
-nte
+wOU
 nBE
 ipI
 lST
@@ -187360,7 +187365,7 @@ rQX
 rQX
 cOr
 gpO
-nte
+wOU
 hRf
 ipI
 lST
@@ -187764,8 +187769,8 @@ omv
 omv
 omv
 nte
-nte
-nte
+wOU
+wOU
 pJP
 pJP
 pJP
@@ -187967,9 +187972,9 @@ omv
 omv
 omv
 omv
-nte
-nte
-nte
+wOU
+wOU
+wOU
 pJP
 kIS
 rMx
@@ -188171,9 +188176,9 @@ omv
 omv
 omv
 omv
-nte
-nte
-nte
+wOU
+wOU
+wOU
 rMx
 rMx
 rMx

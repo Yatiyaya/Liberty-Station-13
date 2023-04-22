@@ -400,14 +400,14 @@
 	name = "Deep Forest"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/inside_colony
 	name = "Colony Meadow"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/holes_in_mountain
@@ -419,7 +419,7 @@
 	name = "Mountain Solars"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 	is_dungeon_lootable = FALSE
 
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)
@@ -863,7 +863,7 @@
 	name = "\improper Garden"
 	icon_state = "garden"
 	dynamic_lighting = FALSE
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 
 /area/liberty/crew_quarters/clothingstorage
 	name = "Clothing Storage"
@@ -1360,7 +1360,15 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Security - Main Gate"
 	icon_state = "security"
 	dynamic_lighting = FALSE
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+
+/area/liberty/security/maingate_outside
+	name = "\improper Security - Fence Line "
+	icon_state = "security"
+	dynamic_lighting = FALSE
+	allows_weather_of_snow = TRUE
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+
 
 /area/liberty/security/checkpoint/supply
 	name = "Security Post - Cargo Bay"
