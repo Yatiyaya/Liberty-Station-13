@@ -21,7 +21,7 @@
 
 /obj/item/access_update_tool/attack_self(mob/user)
 	if(card)
-		to_chat(user, SPAN_NOTICE("You remove the ID card from [src]'s ID card port."))
+		to_chat(user, SPAN_NOTICE("You remove the ID card from \the [src]'s ID card port."))
 		card.forceMove(get_turf(user))
 		card = null
 
