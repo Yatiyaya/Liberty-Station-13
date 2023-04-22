@@ -7,7 +7,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 
 /obj/item/implant/conback
 	name = "conciousness backup"
-	desc = "A small, immensely complex biocompatible computer. Basic functions include DNA sequence storage, neural engram backups, access transciever functions, and an internal fuel cell using the host's nutrients."
+	desc = "A small, immensely complex biocompatible computer. Basic functions include DNA sequence storage, neural engram backups, access transceiver functions, and a backup internal fuel cell in case the host's nutrients are low."
 	icon = 'icons/obj/conback.dmi'
 	icon_state = "frame"
 	w_class = ITEM_SIZE_SMALL
