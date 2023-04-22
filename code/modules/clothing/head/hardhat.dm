@@ -28,7 +28,7 @@
 	item_state = "union_chief_helmet"
 
 /obj/item/clothing/head/hardhat/union_engi_helmet
-	name = "union engi helmet"
+	name = "union engineer helmet"
 	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
 	icon_state = "union_engi_helmet"
 	item_state = "union_engi_helmet"
