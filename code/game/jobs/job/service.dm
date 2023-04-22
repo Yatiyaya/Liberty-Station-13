@@ -41,7 +41,7 @@
 	faction = MAP_FACTION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "The Club Manager"
+	supervisors = "the Club Manager"
 	difficulty = "Easy."
 	alt_titles = list("Hired Muscle")
 	selection_color = "#dddddd"
