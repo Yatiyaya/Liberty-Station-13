@@ -9,7 +9,7 @@
 /obj/item/access_update_tool/examine(mob/user)
 	. = ..()
 	if(card)
-		to_chat(user, SPAN_NOTICE("It appears to have an ID card in it's ID card port."))
+		to_chat(user, SPAN_NOTICE("It appears to have an ID card in its ID card port."))
 
 
 /obj/item/access_update_tool/attackby(obj/item/I, mob/user as mob)
