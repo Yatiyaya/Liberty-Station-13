@@ -14,7 +14,7 @@
 
 /obj/item/access_update_tool/attackby(obj/item/I, mob/user as mob)
 	if(istype(I, /obj/item/card/id))
-		to_chat(user, SPAN_NOTICE("You slot the [I] into [src]'s ID card port."))
+		to_chat(user, SPAN_NOTICE("You slot \the [I] into \the [src]'s ID card port."))
 		user.drop_item()
 		I.forceMove(src)
 		card = I
