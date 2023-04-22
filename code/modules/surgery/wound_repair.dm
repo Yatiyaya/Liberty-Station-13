@@ -178,8 +178,8 @@
 		return
 
 	if (target.getToxLoss() >= 0 || world.time - target.timeofdeath > DEFIB_TIME_LIMIT)
-		user.visible_message(SPAN_NOTICE("[user] begins filtering out any toxins in [target]'s body and repairing any neural degradation with the [tool_name]."), \
-		SPAN_NOTICE("You begin to filter out any toxins to [target]'s body and repair any neural degradation with the [tool_name].") )
+		user.visible_message(SPAN_NOTICE("[user] begins filtering out any toxins in [target]'s body with the [tool_name]."), \
+		SPAN_NOTICE("You begin to filter out any toxins to [target]'s body with the [tool_name].") )
 
 	target.custom_pain("The pain in your [affected.name] is living hell!",1)
 	..()
@@ -198,11 +198,11 @@
 		var/advanced_medical = user.stats.getPerk(PERK_ADVANCED_MEDICAL)
 		if(advanced_medical)
 			heal_amount -= calculate_expert_surgery_bonus(user) * 2
-		user.visible_message(SPAN_NOTICE("[user] finishes [advanced_medical ? "expertly" : ""] filtering out any toxins in [target]'s body and repairing any neural degradation with the [tool_name]."), \
-		SPAN_NOTICE("You finish filtering out any toxins to [target]'s body and repairing any neural degradation with the [tool_name].") )
+		user.visible_message(SPAN_NOTICE("[user] finishes [advanced_medical ? "expertly" : ""] filtering out any toxins in [target]'s body with the [tool_name]."), \
+		SPAN_NOTICE("You finish filtering out any toxins to [target]'s body with the [tool_name].") )
 		if((needs_regeneration || target.getToxLoss() > 0) && tool.use(1))
 			target.adjustToxLoss(heal_amount)
-			target.timeofdeath = 99999999
+			//target.timeofdeath = 99999999
 
 
 /datum/old_surgery_step/external/tox_heal/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/stack/tool)
