@@ -405,7 +405,7 @@
 
 /obj/machinery/neotheology/reader
 	name = "Conciousness Implant Reader"
-	desc = "A strangely advanced machine that scans the user for any signs existing conciousness through brainwaves. \
+	desc = "A strangely advanced machine that scans the user for any signs of existing conciousness through magnetic resonance imaging. \
 			Used to check if a user's conciousness backup implant has remained intact, allowing the transfer of conciousness to a new body."
 	icon_state = "reader_off"
 	density = TRUE
