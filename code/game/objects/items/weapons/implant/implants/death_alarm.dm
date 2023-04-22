@@ -6,6 +6,7 @@
 	origin_tech = list(TECH_BLUESPACE=1, TECH_MAGNET=2, TECH_DATA=4, TECH_BIO=3)
 
 	overlay_icon = "deathalarm"
+	is_deathalarm = TRUE
 
 /obj/item/implant/death_alarm/get_data()
 	var/data = {"
@@ -97,8 +98,11 @@
 		malfunction--
 
 /obj/item/implant/death_alarm/on_install(mob/living/source)
-	mobname = source.real_name
-	START_PROCESSING(SSobj, src)
+	if(clean_of_death_alarms())
+		mobname = source.real_name
+		START_PROCESSING(SSobj, src)
+	else
+		to_chat(wearer, SPAN_NOTICE("[src]'s fizzes a bit do to other death alarm or OS installed."))
 
 
 /obj/item/implantcase/death_alarm

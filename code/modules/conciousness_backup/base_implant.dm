@@ -56,6 +56,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	var/good_sound = 'sound/machines/synth_yes.ogg'
 	var/bad_sound = 'sound/machines/synth_no.ogg'
 	var/very_bad_sound = 'sound/machines/warning-buzzer.ogg'
+	is_deathalarm = TRUE
 
 //Inherited procs
 
@@ -89,8 +90,12 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		return 1
 
 /obj/item/implant/conback/on_install()
-	activate()
-	wearer.conciousness_pres = src
+	if(clean_of_death_alarms())
+		activate()
+		wearer.conciousness_pres = src
+	else
+		to_chat(wearer, SPAN_NOTICE("[src]'s buzzes stating ''ERROR, DEATH ALARM OR OTHER OS DETECTED.''"))
+
 
 /obj/item/implant/conback/on_uninstall()
 	. = ..()

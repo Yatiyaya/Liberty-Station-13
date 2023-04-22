@@ -479,14 +479,23 @@
 #undef ANIM_CLOSE
 
 /obj/machinery/neotheology/cloner/proc/spawn_character()
+	var/mob/living/carbon/human/new_character
+	new_character = new(src.loc)
+
 	if(!reader.implant)
 		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
-		return
+		return new_character
+
+
 	var/obj/item/implant/conback/R = reader.implant
 	var/client/player_key = R.host_ckey
-	var/mob/living/carbon/human/new_character
 
-	new_character = new(src.loc)
+
+	if(!R.host_ckey)
+		return new_character
+
+	if(!player_key)
+		return new_character
 
 	player_key.prefs.copy_to(new_character)
 	if(new_character.dna)
@@ -494,8 +503,9 @@
 		new_character.sync_organ_dna()
 
 
-	//A redraw for good measure
-	new_character.update_icons()
+		//A redraw for good measure
+		new_character.update_icons()
 
 	return new_character
+
 
