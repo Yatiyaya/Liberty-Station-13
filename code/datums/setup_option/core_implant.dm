@@ -16,7 +16,7 @@
 /datum/category_item/setup_option/core_implant/conback
 	name = "Conciousness Backup Implant"
 	desc = "An Innovation in the fields of neural networking and biological technology!<br>\
-	This device allows the saving of an in-depth DNA profile of its user,<br>\
+	This device allows saving an in-depth DNA profile of its user,<br>\
 	but also acts as a 'conciousness backup', preserving the user's concious in a dormant state post-death!<br>\
 	Brought to you by Liberty Group, remain free and indepdendent."
 	implant_type = /obj/item/implant/conback
