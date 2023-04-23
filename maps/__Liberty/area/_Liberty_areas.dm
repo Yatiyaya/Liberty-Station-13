@@ -161,6 +161,7 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
+	is_dungeon_lootable = FALSE
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
@@ -185,7 +186,7 @@
 /area/liberty/dungeon/outside/abandoned_solars
 	name = "CAPSA Solar Outpost"
 	icon_state = "erisgreen"
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
 /area/liberty/dungeon/outside/abandoned_solars/powered
 	requires_power = FALSE
@@ -309,7 +310,8 @@
 /area/liberty/outside/pond
 	name = "Pond"
 	icon_state = "erisgreen"
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/bcave
 	name = "Tengolo Cave West"
@@ -324,7 +326,7 @@
 	name = "Forest"
 	icon_state = "forest"
 	sound_env = FOREST
-	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
 /area/liberty/outside/forest/beast_cave_light
 	name = "Swamp Caves"
@@ -391,26 +393,33 @@
 	name = "Lakeside"
 	icon_state = "erisblue"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/lakeamb1.ogg', 'sound/ambience/lakeamb2.ogg', 'sound/ambience/lakeamb3.ogg')
+//	forced_ambience = list('sound/ambience/lakeamb1.ogg', 'sound/ambience/lakeamb2.ogg', 'sound/ambience/lakeamb3.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/meadow
 	name = "Deep Forest"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/inside_colony
 	name = "Colony Meadow"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+	allows_weather_of_snow = TRUE
 
+/area/liberty/outside/holes_in_mountain
+	name = "Mountain Pits"
+	icon_state = "meadow"
+	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/mountainsolars
 	name = "Mountain Solars"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 	is_dungeon_lootable = FALSE
 
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)
@@ -572,21 +581,14 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/captain
-	name = "\improper Command - Premier's Office"
+	name = "\improper Command - Secretary's Office"
 	icon_state = "captain"
 	sound_env = SMALL_SOFTFLOOR
 	flags = AREA_FLAG_CRITICAL
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/captain/quarters
-	name = "\improper Command - Premier's Quarters"
-
-/area/liberty/command/fo
-	name = "\improper Command - Steward's Quarters"
-	icon_state = "head_quarters"
-	sound_env = SMALL_SOFTFLOOR
-	flags = AREA_FLAG_CRITICAL
-	area_light_color = COLOR_LIGHTING_CREW_SOFT
+	name = "\improper Command - Secretary's Quarters"
 
 /area/liberty/command/RP
 	name = "\improper Research - RP's Office"
@@ -854,7 +856,7 @@
 	name = "\improper Garden"
 	icon_state = "garden"
 	dynamic_lighting = FALSE
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 
 /area/liberty/crew_quarters/clothingstorage
 	name = "Clothing Storage"
@@ -1351,7 +1353,15 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Security - Main Gate"
 	icon_state = "security"
 	dynamic_lighting = FALSE
-	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+
+/area/liberty/security/maingate_outside
+	name = "\improper Security - Fence Line "
+	icon_state = "security"
+	dynamic_lighting = FALSE
+	allows_weather_of_snow = TRUE
+//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+
 
 /area/liberty/security/checkpoint/supply
 	name = "Security Post - Cargo Bay"

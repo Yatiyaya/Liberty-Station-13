@@ -14,7 +14,7 @@
 //Captain
 
 /obj/item/clothing/head/rank/captain
-	name = "premier's hat"
+	name = "secretary's hat"
 	icon_state = "captain"
 	desc = "It's good being the king."
 	item_state_slots = list(
@@ -33,8 +33,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Premier's Hat"] = "captain"
-	options["Premier's Cap"] = "capcap"
+	options["Secretary's Hat"] = "captain"
+	options["Secretary's Cap"] = "capcap"
 	options["Parade Hat"] = "officercap"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -46,13 +46,6 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
-
-
-//HOP
-/obj/item/clothing/head/rank/first_officer
-	name = "steward's cap"
-	desc = "A stylish field-cover that both protects you from enraged former-crewmembers and gives you a false sense of authority."
-	icon_state = "hopcap"
 
 //Chaplain
 /obj/item/clothing/head/rank/chaplain

@@ -5,7 +5,7 @@
 
 /tipsAndTricks/jobs/captain_boss
     jobs_list = list(/datum/job/secretary)
-    tipText = "As a premier, you function as an internal affairs agent, lawyer, and mediator."
+    tipText = "As a board secretary, you function as an internal affairs agent, lawyer, and mediator."
 
 /tipsAndTricks/jobs/ironhammer_theft
     jobs_list = list(JOBS_SECURITY)

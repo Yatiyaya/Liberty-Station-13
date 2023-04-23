@@ -31,6 +31,70 @@
 		list(QUALITY_CUTTING, 40, "time" = 5)
 	)
 
+//Armor mods ----------------------
+/datum/craft_recipe/guild/melee
+	name = "melee plating"
+	result = /obj/item/tool_upgrade/armor/melee
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 180),
+		list(QUALITY_HAMMERING, 30, "time" = 180),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
+		list(QUALITY_SAWING, 30, "time" = 60)
+	)
+
+/datum/craft_recipe/guild/bullet
+	name = "ballistic plating"
+	result = /obj/item/tool_upgrade/armor/bullet
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC , "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 20),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 180),
+		list(QUALITY_HAMMERING, 30, "time" = 180),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
+		list(QUALITY_SAWING, 30, "time" = 60)
+	)
+
+/datum/craft_recipe/guild/energy
+	name = "energy plating"
+	result = /obj/item/tool_upgrade/armor/energy
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLATINUM, "time" = 30),
+		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTIC , "time" = 30),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 180),
+		list(QUALITY_HAMMERING, 30, "time" = 180),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
+		list(QUALITY_SAWING, 30, "time" = 60)
+	)
+
+/datum/craft_recipe/guild/bomb
+	name = "bomb proofing"
+	result = /obj/item/tool_upgrade/armor/bomb
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 60),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 180),
+		list(QUALITY_HAMMERING, 30, "time" = 180),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
+		list(QUALITY_SAWING, 30, "time" = 60)
+	)
 
 //Robot Armor ----------------------
 
@@ -134,9 +198,9 @@
 		list (QUALITY_HAMMERING, 30, 20),
 		list (/obj/item/stack/cable_coil, 30, 20),
 		list (QUALITY_WIRE_CUTTING, 20, 40),
-		list (/obj/item/stock_parts/capacitor/guild, 1, 40),
+		list (/obj/item/stock_parts/capacitor/handmade, 1, 40),
 		list (QUALITY_PULSING, 30, 20),
-		list (/obj/item/stock_parts/manipulator/guild, 1, 30),
+		list (/obj/item/stock_parts/manipulator/handmade, 1, 30),
 		list (QUALITY_SCREW_DRIVING, 30)
 	)
 

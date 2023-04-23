@@ -1,6 +1,6 @@
 /obj/item/clothing/gloves/captain
 	desc = "A pair of regal blue gloves with a swanky gold trim."
-	name = "premier's gloves"
+	name = "secretary's gloves"
 	icon_state = "captain"
 	item_state = "captain"
 	armor_list = list(melee = 25, bullet = 10, energy = 25, bomb = 0, bio = 0, rad = 0)

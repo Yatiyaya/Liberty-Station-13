@@ -19666,6 +19666,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/rocinante_shuttle_area)
+"eFS" = (
+/obj/item/melee/telebaton,
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/command/fo)
 "eGl" = (
 /obj/structure/catwalk,
 /obj/structure/railing,
@@ -30493,6 +30497,14 @@
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/command/teleporter)
+"hgu" = (
+/obj/structure/closet/cabinet,
+/obj/machinery/keycard_auth{
+	pixel_y = -24
+	},
+/obj/item/reagent_containers/food/drinks/bottle/whiskey,
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/command/fo)
 "hgw" = (
 /obj/structure/railing{
 	dir = 8
@@ -46906,15 +46918,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1south)
-"kSD" = (
-/obj/structure/closet/cabinet,
-/obj/machinery/keycard_auth{
-	pixel_y = -24
-	},
-/obj/item/clothing/under/rank/first_officer,
-/obj/item/reagent_containers/food/drinks/bottle/whiskey,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/fo)
 "kSX" = (
 /turf/simulated/wall,
 /area/liberty/crew_quarters/toilet/public)
@@ -65561,10 +65564,6 @@
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/engineering/atmos)
-"pew" = (
-/obj/item/melee/telebaton,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/fo)
 "pey" = (
 /obj/structure/flora/big/rocks3,
 /turf/simulated/mineral,
@@ -167792,7 +167791,7 @@ twA
 hgf
 ggD
 prz
-pew
+eFS
 tPi
 iZo
 vTq
@@ -168600,7 +168599,7 @@ uUq
 cal
 aij
 kLC
-kSD
+hgu
 tPi
 gUr
 vTq

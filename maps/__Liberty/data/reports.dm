@@ -567,7 +567,7 @@
 	add_field(/datum/report_field/simple_text, "Reason for Request:")
 	add_field(/datum/report_field/signature, "Applicant Signature:")
 	add_field(/datum/report_field/signature, "Signature of Relevant Head Of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -584,7 +584,7 @@
 	add_field(/datum/report_field/signature, "Applicant Signature:")
 	add_field(/datum/report_field/signature, "Signature of Applicant Head Of Staff:")
 	add_field(/datum/report_field/signature, "Signature of Relevant Head Of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 	add_field(/datum/report_field/instruction, "By singing this form as applicant you are agreeing that you understand the faction in question does not provide any warranty whatsoever that the item will be free of defects or faults. In no respect shall the faction in questionincur any liability for any damages, injury or loss, including, but not limited to, direct, indirect, special, or consequential damages arising out of, resulting from, or any way connected to the use of the item. The item if provided, remains the providing factions property and is in no way your own.")
 	add_field(/datum/report_field/instruction, "Stamps of Command Staff placed below this line.")
 
@@ -713,7 +713,7 @@
 	add_field(/datum/report_field/simple_text, "New Position:")
 	add_field(/datum/report_field/simple_text, "Reason for Assignment:")
 	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -729,7 +729,7 @@
 	add_field(/datum/report_field/simple_text, "Access Added/Removed:")
 	add_field(/datum/report_field/simple_text, "Reasoning for Addition/Removal:")
 	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -745,7 +745,7 @@
 	add_field(/datum/report_field/simple_text, "Original Position:")
 	add_field(/datum/report_field/simple_text, "Reason for Dismissal:")
 	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -781,7 +781,7 @@
 	add_field(/datum/report_field/simple_text, "Requested Access:")
 	add_field(/datum/report_field/simple_text, "Reason:")
 	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
 
 /datum/computer_file/report/recipient/transfer_form
 	form_name = "PRM-TRF-02"
@@ -801,4 +801,4 @@
 	add_field(/datum/report_field/signature, "Signature:")
 	add_field(/datum/report_field/signature, "Signature of Transferring Head of Staff:")
 	add_field(/datum/report_field/signature, "Signature of Recieving Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Premier:")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")

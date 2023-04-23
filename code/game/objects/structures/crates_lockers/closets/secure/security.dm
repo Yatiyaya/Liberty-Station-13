@@ -1,26 +1,38 @@
 /obj/structure/closet/secure_closet/reinforced/captains
-	name = "board director's locker"
+	name = "secretary's locker"
 	req_access = list(access_captain)
 	icon_state = "cap"
 
 /obj/structure/closet/secure_closet/reinforced/captains/populate_contents()
 	new /obj/item/storage/backpack/captain(src)
 	new /obj/item/storage/backpack/satchel/captain(src)
-	new /obj/item/clothing/under/rank/captain(src)
-	new /obj/item/clothing/accessory/halfcape/premier(src)
-	new /obj/item/clothing/suit/armor/vest(src)
-	new /obj/item/clothing/head/helmet(src)
-	new /obj/item/clothing/shoes/color/brown(src)
 	new /obj/item/device/radio/headset/heads/captain(src)
+	new /obj/item/clothing/under/rank/captain(src)
+	new /obj/item/clothing/head/rank/captain(src)
+	new /obj/item/clothing/suit/greatcoat/cap(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/gloves/captain(src)
+	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/device/flash(src)
-	new /obj/item/gun/projectile/revolver/ranger(src)
-	new /obj/item/ammo_magazine/magnum_40/rubber(src)
-	new /obj/item/ammo_magazine/magnum_40/rubber(src)
-	new /obj/item/ammo_magazine/magnum_40/rubber(src)
-	new /obj/item/ammo_magazine/magnum_40/rubber(src)
 	new /obj/item/storage/pouch/baton_holster/telebaton(src)
+	new /obj/item/gun/projectile/revolver/ranger(src)
+	new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
+	new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 	new /obj/item/storage/pouch/pistol_holster(src)
+
+/obj/structure/closet/secure_closet/reinforced/hop
+	name = "secretary's accessories locker"
+	req_access = list(access_captain)
+	icon_state = "hop"
+
+/obj/structure/closet/secure_closet/reinforced/hop/populate_contents()
+	new /obj/item/storage/box/medal(src)
+	new /obj/item/storage/box/ids(src)
+	new /obj/item/tool/knife/dagger/ceremonial(src)
+	new /obj/item/clothing/accessory/holster/saber/occupied(src)
+	new /obj/item/clothing/accessory/cross(src)
+	new /obj/item/clothing/accessory/halfcape/premier(src)
+	new /obj/item/modular_computer/tablet/lease/preset/command(src)
 
 /obj/structure/closet/secure_closet/reinforced/hos
 	name = "deputy chief's locker"
