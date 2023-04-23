@@ -183,6 +183,7 @@
 "adG" = (
 /obj/structure/grille,
 /obj/structure/grille,
+/turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/shuttle)
 "adM" = (
 /obj/item/modular_computer/console/preset/security/camera{
@@ -12903,6 +12904,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/turf/simulated/floor/plating/under,
 /area/liberty/outside/inside_colony)
 "dMH" = (
 /obj/structure/bed/chair,
@@ -23643,6 +23645,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/turf/simulated/floor/snow,
 /area/liberty/hallway/surface/section1)
 "hhG" = (
 /obj/structure/cyberplant{
@@ -30426,6 +30429,7 @@
 "jmq" = (
 /obj/structure/railing,
 /obj/structure/invislightsmall/outside,
+/turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "jmr" = (
 /turf/simulated/shuttle/wall/science{
@@ -30585,6 +30589,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/invislightsmall/outside,
+/turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "joF" = (
 /obj/structure/cable/yellow{
@@ -42668,6 +42673,7 @@
 	})
 "nlg" = (
 /obj/structure/grille,
+/turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/shuttle)
 "nlr" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -43250,9 +43256,6 @@
 	icon_state = "6,7"
 	},
 /area/shuttle/vasiliy_shuttle_area)
-"nte" = (
-/turf/simulated/wall/r_wall,
-/area/space)
 "nth" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 9
@@ -48534,11 +48537,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/liberty/rnd/research)
-"oZU" = (
-/obj/structure/catwalk,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating/under,
-/area/liberty/outside/inside_colony)
 "oZW" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -57191,9 +57189,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
-"rGn" = (
-/turf/simulated/floor/snow,
-/area/liberty/security/maingate)
 "rGv" = (
 /obj/structure/table/woodentable,
 /obj/random/credits,
@@ -58233,9 +58228,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
-"rXM" = (
-/obj/structure/low_wall,
-/area/liberty/outside/inside_colony)
 "rXO" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment,
@@ -60549,6 +60541,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/turf/simulated/floor/plating/under,
 /area/liberty/outside/inside_colony)
 "sCV" = (
 /obj/effect/floor_decal/spline/plain{
@@ -62998,6 +62991,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/turf/simulated/floor/plating/under,
 /area/liberty/outside/inside_colony)
 "tqr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -68467,13 +68461,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/liberty/absolutism/skyyard)
-"vel" = (
-/obj/machinery/door/airlock/glass_security{
-	name = "Security Post";
-	req_access = list(1)
-	},
-/turf/space,
-/area/liberty/security/maingate_outside)
 "vez" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -78050,7 +78037,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/space,
+/turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/security/maingate_outside)
 "xZi" = (
 /obj/random/junk/low_chance,
@@ -78266,6 +78253,7 @@
 	dir = 8
 	},
 /obj/structure/invislightsmall/outside,
+/turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "ycP" = (
 /obj/random/mob/roomba/melee,
@@ -78882,6 +78870,7 @@
 	dir = 8;
 	tag = "icon-railing0 (WEST)"
 	},
+/turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/shuttle)
 "yko" = (
 /obj/structure/cable/green{
@@ -172317,7 +172306,7 @@ lmB
 tqm
 poj
 poj
-rXM
+grQ
 jux
 jux
 dqC
@@ -173933,7 +173922,7 @@ lmB
 sCN
 poj
 poj
-rXM
+grQ
 jux
 jux
 kKq
@@ -179214,7 +179203,7 @@ wgB
 wgB
 wgB
 wgB
-rGn
+wgB
 wgB
 wgB
 wgB
@@ -184632,7 +184621,7 @@ rqu
 rqu
 rqu
 rqu
-oZU
+rqu
 rqu
 sbz
 xMC
@@ -187475,7 +187464,7 @@ rQX
 rQX
 rQX
 lmX
-vel
+jpn
 ljI
 rbT
 dFS
@@ -187676,7 +187665,7 @@ omv
 omv
 omv
 omv
-nte
+qrM
 qrM
 qrM
 pJP
