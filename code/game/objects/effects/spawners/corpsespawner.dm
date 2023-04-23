@@ -263,7 +263,6 @@
 /obj/landmark/corpse/bridgeofficer
 	name = "Bridge Officer"
 	corpseradio = /obj/item/device/radio/headset
-	corpseuniform = /obj/item/clothing/under/rank/first_officer
 	corpsesuit = /obj/item/clothing/suit/armor/bulletproof
 	corpseshoes = /obj/item/clothing/shoes/color/black
 	corpseglasses = /obj/item/clothing/glasses/sunglasses
@@ -273,7 +272,6 @@
 
 /obj/landmark/corpse/commander
 	name = "Commander"
-	corpseuniform = /obj/item/clothing/under/rank/first_officer
 	corpsesuit = /obj/item/clothing/suit/armor/bulletproof
 	corpseradio = /obj/item/device/radio/headset/heads/captain
 	corpseglasses = /obj/item/clothing/glasses/eyepatch

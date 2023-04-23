@@ -2,7 +2,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/secretary
 	title = "Board Secretary"
-	flag = PREMIER
+	flag = SECRETARY
 	department = DEPARTMENT_COMMAND
 	head_position = TRUE
 	aster_guild_member = TRUE
@@ -50,13 +50,6 @@ Treat your command officers with respect, and listen to their council. Try not t
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-
-	equip(var/mob/living/carbon/human/H)
-		if(!..())	return 0
-		if(H.age>49)
-			var/obj/item/clothing/under/U = H.w_uniform
-			if(istype(U)) U.accessories += new /obj/item/clothing/accessory/medal/gold/captain(U)
-		return 1
 
 	get_access()
 		return get_all_station_access()

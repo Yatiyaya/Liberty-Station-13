@@ -581,21 +581,14 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/captain
-	name = "\improper Command - Premier's Office"
+	name = "\improper Command - Secretary's Office"
 	icon_state = "captain"
 	sound_env = SMALL_SOFTFLOOR
 	flags = AREA_FLAG_CRITICAL
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/captain/quarters
-	name = "\improper Command - Premier's Quarters"
-
-/area/liberty/command/fo
-	name = "\improper Command - Steward's Quarters"
-	icon_state = "head_quarters"
-	sound_env = SMALL_SOFTFLOOR
-	flags = AREA_FLAG_CRITICAL
-	area_light_color = COLOR_LIGHTING_CREW_SOFT
+	name = "\improper Command - Secretary's Quarters"
 
 /area/liberty/command/RP
 	name = "\improper Research - RP's Office"

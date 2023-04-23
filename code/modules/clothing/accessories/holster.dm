@@ -175,48 +175,6 @@ Sword holsters
 	sound_in = 'sound/effects/sheathin.ogg'
 	sound_out = 'sound/effects/sheathout.ogg'
 
-/obj/item/clothing/accessory/holster/saber/militiacommander
-	name = "blackshield Commander's scabbard"
-	desc = "A brown leather Scabbard with golden lining, on it the emblem of Blackshield, This one is designed for the Commander's Saber."
-	icon_state = "saber_holster"
-	overlay_state = "saber"
-	slot = "utility"
-	can_hold = list(/obj/item/tool/sword/saber)
-	price_tag = 200
-	sound_in = 'sound/effects/sheathin.ogg'
-	sound_out = 'sound/effects/sheathout.ogg'
-
-/obj/item/clothing/accessory/holster/saber/militiacommander/occupied
-	var/holstered_spawn = /obj/item/tool/sword/saber/militiacommander
-
-/obj/item/clothing/accessory/holster/saber/militiacommander/occupied/Initialize()
-	holstered = new holstered_spawn
-	update_icon()
-
-/obj/item/clothing/accessory/holster/saber/militiasergeant
-	name = "blackshield sergeant's scabbard"
-	desc = "A brown leather Scabbard with silver lining, on it the emblem of Blackshield, This one is designed for the Sergeant's Saber."
-	icon_state = "saber_holster"
-	overlay_state = "saber"
-	slot = "utility"
-	can_hold = list(/obj/item/tool/sword/saber)
-	price_tag = 200
-	sound_in = 'sound/effects/sheathin.ogg'
-	sound_out = 'sound/effects/sheathout.ogg'
-
-/obj/item/clothing/accessory/holster/saber/update_icon()
-	..()
-	cut_overlays()
-	if(contents.len)
-		add_overlay(image('icons/inventory/accessory/icon.dmi', "saber_layer"))
-
-/obj/item/clothing/accessory/holster/saber/militiasergeant/occupied
-	var/holstered_spawn = /obj/item/tool/sword/saber/militiasergeant
-
-/obj/item/clothing/accessory/holster/saber/militiasergeant/occupied/Initialize()
-	holstered = new holstered_spawn
-	update_icon()
-
 /obj/item/clothing/accessory/holster/saber/occupied
 	var/holstered_spawn = /obj/item/tool/sword/saber
 

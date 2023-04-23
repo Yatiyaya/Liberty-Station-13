@@ -930,3 +930,22 @@ Boxes with clothing on them, unable to put them back if taken out because...
 	for(var/i in 1 to 3)
 		new /obj/item/storage/pill_bottle/njoy/green(src)
 
+/obj/item/storage/box/medal
+	name = "medal box"
+	desc = "Box full of medals."
+	illustration = null
+
+/obj/item/storage/box/medal/New()
+	. = ..()
+
+/obj/item/storage/box/medal/populate_contents()
+	new /obj/item/clothing/accessory/medal(src)
+	new /obj/item/clothing/accessory/medal/bronze_heart(src)
+	new /obj/item/clothing/accessory/medal/conduct(src)
+	new /obj/item/clothing/accessory/medal/gold(src)
+	new /obj/item/clothing/accessory/medal/gold/captain(src)
+	new /obj/item/clothing/accessory/medal/gold/heroism(src)
+	new /obj/item/clothing/accessory/medal/nobel_science(src)
+	new /obj/item/clothing/accessory/medal/silver(src)
+	new /obj/item/clothing/accessory/medal/silver/security(src)
+	new /obj/item/clothing/accessory/medal/silver/valor(src)
