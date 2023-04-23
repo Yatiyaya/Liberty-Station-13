@@ -33,8 +33,6 @@
 
 
 //Armor mods ----------------------
-/*	Armor mods have been given to Church.
-
 /datum/craft_recipe/guild/melee
 	name = "melee plating"
 	result = /obj/item/tool_upgrade/armor/melee
@@ -98,7 +96,6 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
-*/
 
 /datum/craft_recipe/guild/robotmelee //Lots of steps
 	name = "robot mark v armor plating"

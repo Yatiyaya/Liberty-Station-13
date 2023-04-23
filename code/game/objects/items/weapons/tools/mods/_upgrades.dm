@@ -336,6 +336,12 @@
 		R.armor = R.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR] * -1)
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags &= ~tool_upgrades[UPGRADE_ITEMFLAGPLUS]
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		R.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
 	R.prefixes -= prefix
 	R.updateArmor()
 
