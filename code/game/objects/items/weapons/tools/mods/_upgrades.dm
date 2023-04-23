@@ -306,6 +306,12 @@
 		T.armor = T.armor.modifyRating(energy = tool_upgrades[UPGRADE_ENERGY_ARMOR])
 	if(tool_upgrades[UPGRADE_BOMB_ARMOR])
 		T.armor = T.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR])
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		T.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		T.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		T.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		T.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 
@@ -320,6 +326,13 @@
 		R.armor = R.armor.modifyRating(energy = tool_upgrades[UPGRADE_ENERGY_ARMOR])
 	if(tool_upgrades[UPGRADE_BOMB_ARMOR])
 		R.armor = R.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR])
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		R.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	R.prefixes -= prefix
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 	R.prefixes |= prefix
