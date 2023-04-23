@@ -13,7 +13,7 @@
 	I.tool_upgrades = list(
 	UPGRADE_MELEE_ARMOR = 20,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
-	UPGRADE_STIFFNESS_ARMOR = 0.1,
+	UPGRADE_STIFFNESS_ARMOR = 0.1
 //	UPGRADE_OBSCURATION_ARMOR = 0.1 this is here just so anyone can see that it actually works easier
 	)
 	I.prefix = "reinforced"
