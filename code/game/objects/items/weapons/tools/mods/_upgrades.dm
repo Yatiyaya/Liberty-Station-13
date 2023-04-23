@@ -306,6 +306,12 @@
 		T.armor = T.armor.modifyRating(energy = tool_upgrades[UPGRADE_ENERGY_ARMOR])
 	if(tool_upgrades[UPGRADE_BOMB_ARMOR])
 		T.armor = T.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR])
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		T.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		T.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		T.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		T.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 
@@ -320,6 +326,13 @@
 		R.armor = R.armor.modifyRating(energy = tool_upgrades[UPGRADE_ENERGY_ARMOR])
 	if(tool_upgrades[UPGRADE_BOMB_ARMOR])
 		R.armor = R.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR])
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		R.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	R.prefixes -= prefix
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 	R.prefixes |= prefix
@@ -336,6 +349,12 @@
 		R.armor = R.armor.modifyRating(bomb = tool_upgrades[UPGRADE_BOMB_ARMOR] * -1)
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags &= ~tool_upgrades[UPGRADE_ITEMFLAGPLUS]
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		R.stiffness += tool_upgrades[UPGRADE_STIFFNESS_ARMOR]
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
 	R.prefixes -= prefix
 	R.updateArmor()
 
@@ -538,6 +557,7 @@
 					F.settings[i] *= weapon_upgrades[GUN_UPGRADE_MOVE_DELAY_MULT]
 
 /datum/component/item_upgrade/proc/on_examine(var/mob/user)
+//tool/gun examine
 	if(tool_upgrades[UPGRADE_SANCTIFY])
 		to_chat(user, SPAN_NOTICE("Does additional burn damage to mutants."))
 	if(tool_upgrades[UPGRADE_PRECISION] > 0)
@@ -568,18 +588,25 @@
 	if(tool_upgrades[UPGRADE_BULK])
 		to_chat(user, SPAN_WARNING("Increases tool size by [tool_upgrades[UPGRADE_BULK]]"))
 
+//armor examines
 	if(tool_upgrades[UPGRADE_MELEE_ARMOR])
-		to_chat(user, SPAN_NOTICE("Increases melee defense by [tool_upgrades[UPGRADE_MELEE_ARMOR]]"))
+		to_chat(user, SPAN_NOTICE("Changes melee defense by [tool_upgrades[UPGRADE_MELEE_ARMOR]]"))
 	if(tool_upgrades[UPGRADE_BALLISTIC_ARMOR])
-		to_chat(user, SPAN_NOTICE("Increases bullet defense by [tool_upgrades[UPGRADE_BALLISTIC_ARMOR]]"))
+		to_chat(user, SPAN_NOTICE("Changes bullet defense by [tool_upgrades[UPGRADE_BALLISTIC_ARMOR]]"))
 	if(tool_upgrades[UPGRADE_ENERGY_ARMOR])
-		to_chat(user, SPAN_NOTICE("Increases energy defense by [tool_upgrades[UPGRADE_ENERGY_ARMOR]]"))
+		to_chat(user, SPAN_NOTICE("Changes energy defense by [tool_upgrades[UPGRADE_ENERGY_ARMOR]]"))
 	if(tool_upgrades[UPGRADE_BOMB_ARMOR])
-		to_chat(user, SPAN_NOTICE("Increases explosive defense by [tool_upgrades[UPGRADE_BOMB_ARMOR]]"))
+		to_chat(user, SPAN_NOTICE("Changes explosive defense by [tool_upgrades[UPGRADE_BOMB_ARMOR]]"))
+	if(tool_upgrades[UPGRADE_OBSCURATION_ARMOR])
+		to_chat(user, SPAN_NOTICE("Changes obscuration by [tool_upgrades[UPGRADE_OBSCURATION_ARMOR]]"))
+	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
+		to_chat(user, SPAN_NOTICE("Changes slowdown by [tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]]"))
+	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
+		to_chat(user, SPAN_NOTICE("Changes stiffness by [tool_upgrades[UPGRADE_STIFFNESS_ARMOR]]"))
 
 	if(tool_upgrades[UPGRADE_ALLOW_GREYON_MODS])
 		to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
-
+//tool/gun related examines
 	if(required_qualities.len)
 		to_chat(user, SPAN_WARNING("Requires a tool with one of the following qualities:"))
 		to_chat(user, english_list(required_qualities, and_text = " or "))
