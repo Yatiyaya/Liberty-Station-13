@@ -68,7 +68,7 @@
 	I.tool_upgrades = list(
 	UPGRADE_BOMB_ARMOR = 40,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
-	UPGRADE_STIFFNESS_ARMOR = 0.1,
+	UPGRADE_STIFFNESS_ARMOR = 0.1
 	)
 	I.prefix = "bomb-proofed"
 	I.required_qualities = list(QUALITY_ARMOR)
