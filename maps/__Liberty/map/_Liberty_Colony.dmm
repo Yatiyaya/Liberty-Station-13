@@ -1379,8 +1379,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/modular_computer/tablet/lease/preset/command,
-/obj/item/hand_tele,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "awU" = (
@@ -1699,14 +1697,11 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "aCp" = (
 /obj/structure/table/rack,
-/obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/head/helmet/space/capspace,
-/obj/item/clothing/suit/space/captain,
 /obj/machinery/light,
 /obj/machinery/newscaster{
 	pixel_y = -34
 	},
+/obj/item/hand_tele,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "aCx" = (
@@ -2705,10 +2700,6 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "aPP" = (
 /obj/structure/closet/secure_closet/reinforced/captains,
-/obj/item/tool/chainofcommand,
-/obj/item/tool/sword/saber,
-/obj/item/clothing/accessory/holster/saber,
-/obj/item/clothing/suit/greatcoat/cap,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "aQo" = (
@@ -4364,15 +4355,9 @@
 /area/liberty/absolutism/skyyard)
 "bpq" = (
 /obj/structure/table/rack,
-/obj/item/ammo_magazine/ammobox/light_rifle_257_small,
-/obj/item/ammo_magazine/ammobox/rifle_75_small,
-/obj/item/ammo_magazine/ammobox/magnum_40,
-/obj/item/ammo_magazine/ammobox/shotgun/beanbags,
-/obj/item/ammo_magazine/ammobox/pistol_35,
-/obj/item/ammo_magazine/ammobox/pistol_35,
-/obj/item/ammo_magazine/ammobox/shotgun,
-/obj/item/ammo_magazine/ammobox/cl7mm,
-/obj/item/ammo_magazine/ammobox/pistol_35/large,
+/obj/item/gun/projectile/automatic/kraut{
+	pixel_x = -6
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "bps" = (
@@ -5361,10 +5346,6 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "bHb" = (
-/obj/structure/displaycase,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /turf/simulated/floor/wood,
 /area/liberty/command/captain/quarters)
 "bHd" = (
@@ -9541,13 +9522,14 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
 "cPA" = (
-/obj/machinery/door/airlock/command{
-	name = "Premier Office";
-	req_access = list(20)
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command{
+	name = "Secretary's Office";
+	req_access = list(20)
+	},
+/turf/simulated/floor/wood,
 /area/liberty/command/captain/quarters)
 "cPJ" = (
 /obj/random/junk/low_chance,
@@ -14305,6 +14287,13 @@
 "emu" = (
 /turf/simulated/mineral/planet,
 /area/colony)
+"emK" = (
+/obj/item/reagent_containers/food/snacks/meatsteak{
+	name = "ian's dinner"
+	},
+/obj/structure/table/woodentable,
+/turf/simulated/floor/carpet/turcarpet,
+/area/liberty/command/captain/quarters)
 "emP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -18740,6 +18729,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/liberty/command/captain/quarters)
 "fGX" = (
@@ -23755,13 +23745,8 @@
 /obj/machinery/newscaster{
 	pixel_y = -34
 	},
-/obj/structure/closet/crate/secure/weapon{
-	name = "rifle crate"
-	},
-/obj/item/gun/projectile/automatic/nationale,
-/obj/item/gun/projectile/automatic/nationale,
-/obj/item/gun/projectile/automatic/kraut,
-/obj/item/gun/projectile/automatic/operator_rifle,
+/obj/structure/table/rack,
+/obj/item/storage/pouch/ammo,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "hju" = (
@@ -24091,12 +24076,12 @@
 	dir = 1
 	},
 /obj/machinery/power/smes/buildable{
+	RCon_tag = "Substation - Sci";
 	charge = 5e+006;
 	input_attempt = 1;
 	input_level = 125000;
 	output_attempt = 1;
-	output_level = 100000;
-	RCon_tag = "Substation - Sci"
+	output_level = 100000
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
@@ -25586,12 +25571,12 @@
 /area/liberty/quartermaster/office)
 "hKm" = (
 /obj/machinery/power/smes/buildable{
+	RCon_tag = "Substation - Sci";
 	charge = 5e+006;
 	input_attempt = 1;
 	input_level = 125000;
 	output_attempt = 1;
-	output_level = 100000;
-	RCon_tag = "Substation - Sci"
+	output_level = 100000
 	},
 /obj/structure/cable/green{
 	d2 = 4;
@@ -26094,11 +26079,13 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "hTC" = (
-/obj/structure/closet/crate/secure/weapon{
-	name = "shotgun crate"
-	},
-/obj/item/gun/projectile/shotgun/judge,
-/obj/item/gun/projectile/shotgun/judge,
+/obj/structure/table/rack,
+/obj/item/storage/belt/security,
+/obj/item/clothing/suit/armor/platecarrier,
+/obj/item/clothing/head/helmet/ballistic,
+/obj/item/clothing/shoes/swat,
+/obj/item/clothing/gloves/thick/swat,
+/obj/item/clothing/mask/gas/bigguy,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "hTH" = (
@@ -26511,13 +26498,9 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenobiology/xenoflora)
 "ick" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/condiment/saltshaker{
-	pixel_x = 4
-	},
-/obj/item/tool/knife,
-/obj/item/material/kitchen/utensil/spoon,
-/turf/simulated/floor/tiled/cafe,
+/obj/structure/table/woodentable,
+/obj/item/reagent_containers/atomic_distillery,
+/turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "icB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -27122,13 +27105,9 @@
 /turf/simulated/floor/plating/under,
 /area/turret_protected/ai)
 "ink" = (
-/obj/structure/table/standard,
-/obj/item/reagent_containers/food/condiment/peppermill{
-	pixel_x = -4
-	},
-/obj/item/material/kitchen/rollingpin,
-/obj/item/reagent_containers/atomic_distillery,
-/turf/simulated/floor/tiled/cafe,
+/obj/structure/dogbed,
+/mob/living/simple_animal/corgi/fluff/Ian,
+/turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "inl" = (
 /obj/structure/closet/secure_closet/personal,
@@ -27481,19 +27460,12 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "isE" = (
-/obj/item/device/scanner/health,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 24
-	},
-/obj/effect/floor_decal/industrial/warningred{
-	dir = 4
-	},
-/obj/item/storage/firstaid/ifak,
-/obj/item/storage/firstaid/ifak,
-/obj/item/device/scanner/health,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/pill_bottle/dylovene,
-/obj/structure/table/rack/shelf,
+/obj/structure/table/rack,
+/obj/item/ammo_magazine/cl7mm,
+/obj/item/ammo_magazine/cl7mm,
+/obj/item/ammo_magazine/cl7mm,
+/obj/item/ammo_magazine/cl7mm,
+/obj/item/ammo_magazine/cl7mm,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "isS" = (
@@ -29350,12 +29322,11 @@
 	pixel_y = -24
 	},
 /obj/structure/table/rack,
-/obj/item/storage/belt/security,
-/obj/item/storage/belt/security,
-/obj/item/clothing/suit/armor/platecarrier,
-/obj/item/clothing/suit/armor/platecarrier,
-/obj/item/clothing/gloves/thick/combat,
-/obj/item/clothing/gloves/thick/combat,
+/obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
+/obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
+/obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
+/obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
+/obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "iXI" = (
@@ -30192,6 +30163,16 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/maintenance/undergroundfloor1east)
+"jiK" = (
+/obj/structure/sign/faction/nanotrasen{
+	pixel_x = 1;
+	pixel_y = 28
+	},
+/obj/structure/displaycase{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/command/captain/quarters)
 "jiP" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
@@ -31492,23 +31473,10 @@
 /area/liberty/storage/primary)
 "jDS" = (
 /obj/structure/table/rack,
-/obj/item/ammo_magazine/rifle_75,
-/obj/item/ammo_magazine/rifle_75,
-/obj/item/ammo_magazine/rifle_75,
-/obj/item/storage/pouch/ammo,
-/obj/item/ammo_magazine/pistol_35,
-/obj/item/ammo_magazine/pistol_35,
-/obj/item/ammo_magazine/speed_loader_magnum_40,
-/obj/item/ammo_magazine/speed_loader_magnum_40,
-/obj/item/ammo_magazine/cl7mm,
-/obj/item/ammo_magazine/cl7mm,
-/obj/item/ammo_magazine/cl7mm,
-/obj/item/ammo_magazine/cl7mm,
-/obj/item/ammo_magazine/rifle_75,
-/obj/item/ammo_magazine/smg_35,
-/obj/item/ammo_magazine/smg_35,
-/obj/item/ammo_magazine/smg_35,
-/obj/item/ammo_magazine/smg_35,
+/obj/item/storage/firstaid/combat{
+	pixel_y = 10
+	},
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "jDT" = (
@@ -37727,11 +37695,6 @@
 	pixel_x = 28
 	},
 /obj/structure/cable/green,
-/obj/item/storage/toolbox/emergency,
-/obj/structure/table/rack,
-/obj/item/storage/box/flares,
-/obj/item/storage/box/flares,
-/obj/item/storage/box/handcuffs,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/armory)
 "lEz" = (
@@ -37782,15 +37745,9 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/maintenance/undergroundfloor1south)
 "lFz" = (
-/obj/structure/closet/crate/secure/weapon{
-	name = "pistol crate"
-	},
-/obj/item/gun/projectile/stinger/preloaded,
-/obj/item/gun/projectile/stinger/preloaded,
-/obj/item/gun/projectile/stinger/preloaded,
-/obj/item/gun/projectile/stinger/preloaded,
-/obj/item/gun/projectile/automatic/specialist,
-/obj/item/gun/projectile/automatic/specialist,
+/obj/structure/table/rack,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/captain,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "lFC" = (
@@ -38533,7 +38490,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/cafe,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "lQq" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -39508,7 +39466,8 @@
 "mgd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/cafe,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
 /area/liberty/command/captain/quarters)
 "mgy" = (
 /obj/structure/cable/yellow{
@@ -41930,7 +41889,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "mZY" = (
 /obj/machinery/door/airlock/command{
-	name = "Steward's Quarters";
+	name = "Command Emergency Supply";
 	req_access = list(20)
 	},
 /obj/structure/cable/green{
@@ -44286,9 +44245,9 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/meeting_room)
 "nJp" = (
-/obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/soda,
-/turf/simulated/floor/tiled/cafe,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "nJD" = (
 /obj/structure/table/woodentable,
@@ -47071,6 +47030,10 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 32
+	},
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "oDI" = (
@@ -48928,12 +48891,12 @@
 /area/liberty/command/courtroom)
 "pgl" = (
 /obj/machinery/power/smes/buildable{
+	RCon_tag = "Substation - Church";
 	charge = 5e+006;
 	input_attempt = 1;
 	input_level = 125000;
 	output_attempt = 1;
-	output_level = 100000;
-	RCon_tag = "Substation - Church"
+	output_level = 100000
 	},
 /obj/structure/cable/green{
 	d2 = 2;
@@ -52373,8 +52336,8 @@
 "qfG" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/northright{
-	req_access = list(78);
-	dir = 2
+	dir = 2;
+	req_access = list(78)
 	},
 /obj/machinery/door/blast/regular{
 	id = "ProspShop"
@@ -54568,18 +54531,8 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/maingate)
 "qNV" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/accessory/medal,
-/obj/item/clothing/accessory/medal/bronze_heart,
-/obj/item/clothing/accessory/medal/conduct,
-/obj/item/clothing/accessory/medal/gold,
-/obj/item/clothing/accessory/medal/gold/captain,
-/obj/item/clothing/accessory/medal/gold/heroism,
-/obj/item/clothing/accessory/medal/nobel_science,
-/obj/item/clothing/accessory/medal/silver,
-/obj/item/clothing/accessory/medal/silver/security,
-/obj/item/clothing/accessory/medal/silver/valor,
 /obj/machinery/camera/network/command,
+/obj/structure/closet/secure_closet/reinforced/hop,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "qOq" = (
@@ -60499,12 +60452,10 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/rocinante_shuttle_area)
 "sCB" = (
-/obj/structure/table/standard,
-/obj/machinery/microwave,
 /obj/machinery/camera/network/command{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/cafe,
+/turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "sCD" = (
 /obj/structure/table/reinforced,
@@ -61465,12 +61416,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/dorm3)
-"sQR" = (
-/obj/structure/table/standard,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/storage/box/donkpockets,
-/turf/simulated/floor/tiled/cafe,
-/area/liberty/command/captain/quarters)
 "sRm" = (
 /obj/effect/window_lwall_spawn,
 /turf/simulated/floor/plating/under,
@@ -62632,6 +62577,15 @@
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/engineering/atmos/surface)
+"tkv" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/liberty/command/armory)
 "tkK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -70148,13 +70102,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
-"vFw" = (
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 32
-	},
-/turf/simulated/floor/carpet/turcarpet,
-/area/liberty/command/captain/quarters)
 "vFA" = (
 /obj/random/structures/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -71184,8 +71131,6 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/structure/dogbed,
-/mob/living/simple_animal/corgi/fluff/Ian,
 /turf/simulated/floor/wood,
 /area/liberty/command/captain)
 "vWd" = (
@@ -77020,7 +76965,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "xJd" = (
 /obj/machinery/door/airlock/command{
-	name = "Premier Office";
+	name = "Secretary's Office";
 	req_access = list(20)
 	},
 /obj/structure/cable/green{
@@ -77600,15 +77545,6 @@
 /obj/item/circuitboard/vending,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
-"xSv" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/enzyme,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/storage/fancy/egg_box,
-/turf/simulated/floor/tiled/cafe,
-/area/liberty/command/captain/quarters)
 "xSz" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -78211,10 +78147,7 @@
 	pixel_x = -32
 	},
 /obj/item/device/radio,
-/obj/item/device/radio,
 /obj/item/device/lighting/toggleable/flashlight,
-/obj/item/device/lighting/toggleable/flashlight,
-/obj/item/cell/small,
 /obj/item/cell/small,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
@@ -136087,7 +136020,7 @@ emu
 fnE
 fnE
 nQP
-dEo
+tkv
 ext
 lEd
 isE
@@ -138318,7 +138251,7 @@ lyQ
 mtK
 mtK
 mtK
-esm
+emK
 raH
 adM
 mtK
@@ -138720,8 +138653,8 @@ fGQ
 cPA
 mgd
 lQp
-mgd
-mgd
+nJp
+nJp
 piF
 iUB
 mtK
@@ -138920,10 +138853,10 @@ mtK
 mtK
 mtK
 mtK
-gLg
-gLg
-gLg
-gLg
+mtK
+jiK
+sCB
+iUB
 oDH
 hGG
 mtK
@@ -139122,11 +139055,11 @@ iTN
 biY
 biY
 mtK
-sQR
-xSv
-sCB
-nJp
-vFw
+mtK
+mtK
+mtK
+mtK
+mtK
 mtK
 mtK
 mtK

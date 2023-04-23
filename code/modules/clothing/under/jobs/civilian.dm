@@ -46,8 +46,8 @@
 
 
 /obj/item/clothing/under/rank/captain //Alright, technically not a 'civilian' but its better then giving a .dm file for a single define.
-	desc = "An authoritative green uniform with gold flair denoting the rank of Premier."
-	name = "premier's uniform"
+	desc = "An authoritative green uniform with gold flair denoting the rank of a Board Secretary."
+	name = "secretary's uniform"
 	icon_state = "captain"
 	item_state = "b_suit"
 
@@ -61,8 +61,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["premier's uniform"] = "captain"
-	options["premier's formal uniform"] = "captain_formal"
+	options["secretary's uniform"] = "captain"
+	options["secretary's formal uniform"] = "captain_formal"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -227,38 +227,6 @@
 	name = "chef's uniform"
 	icon_state = "chef"
 	item_state = "w_suit"
-
-/obj/item/clothing/under/rank/first_officer
-	desc = "A tan shirt with a Steward's badge, worn alongside some black leggings."
-	name = "steward's uniform"
-	icon_state = "hop"
-	item_state = "b_suit"
-
-/obj/item/clothing/under/rank/first_officer/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["steward's uniform"] = "hop"
-	options["steward's skirt"] = "hop_skirt"
-	options["steward's suit"] = "teal_suit"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You adjust your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
 
 /obj/item/clothing/under/rank/botanist
 	desc = "A hardy dark green jumpsuit, designed to provide protection from botanic dangers."

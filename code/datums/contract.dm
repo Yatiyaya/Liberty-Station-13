@@ -2,11 +2,11 @@ GLOBAL_LIST_EMPTY(various_antag_contracts)	//Contracts from "Various" emloyers, 
 GLOBAL_LIST_EMPTY(excel_antag_contracts)	//Excelsior contracts
 GLOBAL_LIST_EMPTY(blackshield_antag_contracts)	//Excelsior contracts
 GLOBAL_LIST_INIT(antag_item_targets,list(
-		"the premier's antique laser gun" = /obj/item/gun/energy/captain,
+		"the secretary's antique laser gun" = /obj/item/gun/energy/captain,
 		"a hand teleporter" = /obj/item/hand_tele,
 		"an RCD" = /obj/item/rcd,
 		"a jetpack" = /obj/item/tank/jetpack,
-		"a premier's jumpsuit" = /obj/item/clothing/under/rank/captain,
+		"a secretary's jumpsuit" = /obj/item/clothing/under/rank/captain,
 		"a functional AI" = /obj/item/device/aicard,
 		"the Union Chief's advanced voidsuit control module" = /obj/item/rig/ce,
 		"the colony blueprints" = /obj/item/blueprints,
@@ -16,7 +16,6 @@ GLOBAL_LIST_INIT(antag_item_targets,list(
 		"an union chief's jumpsuit" = /obj/item/clothing/under/rank/chief,
 		"a CAPSA surgeon overseer's jumpsuit" = /obj/item/clothing/under/rank/cso,
 		"a warrant officer's jumpsuit" = /obj/item/clothing/under/rank/ih_commander,
-		"a steward's jumpsuit" = /obj/item/clothing/under/rank/first_officer,
 		"the hypospray" = /obj/item/reagent_containers/hypospray,
 		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,
 		"an marshal hardsuit control module" = /obj/item/rig/combat/ironhammer
@@ -284,7 +283,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"a hand teleporter" = /obj/item/hand_tele,
 		"an RCD" = /obj/item/rcd,
 		"a jetpack" = /obj/item/tank/jetpack,
-		"a premier's jumpsuit" = /obj/item/clothing/under/rank/captain,
+		"a board secretary's jumpsuit" = /obj/item/clothing/under/rank/captain,
 		"a functional AI" = /obj/item/device/aicard,
 		"the GM advanced voidsuit control module" = /obj/item/rig/ce,
 		"the station blueprints" = /obj/item/blueprints,
@@ -294,9 +293,8 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"a CEO's jumpsuit" = /obj/item/clothing/under/rank/chief,
 		"a CMO's jumpsuit" = /obj/item/clothing/under/rank/cso,
 		"a CO's jumpsuit" = /obj/item/clothing/under/rank/ih_commander,
-		"a Steward's jumpsuit" = /obj/item/clothing/under/rank/first_officer,
 		"the hypospray" = /obj/item/reagent_containers/hypospray,
-		"the premier's pinpointer" = /obj/item/pinpointer,
+		"the board secretary's pinpointer" = /obj/item/pinpointer,
 		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,
 		"an Ironhammer hardsuit control module" = /obj/item/rig/combat/ironhammer
 	)
