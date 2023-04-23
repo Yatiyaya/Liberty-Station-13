@@ -200,9 +200,9 @@
 		list (QUALITY_HAMMERING, 30, 20),
 		list (/obj/item/stack/cable_coil, 30, 20),
 		list (QUALITY_WIRE_CUTTING, 20, 40),
-		list (/obj/item/stock_parts/capacitor/guild, 1, 40),
+		list (/obj/item/stock_parts/capacitor/handmade, 1, 40),
 		list (QUALITY_PULSING, 30, 20),
-		list (/obj/item/stock_parts/manipulator/guild, 1, 30),
+		list (/obj/item/stock_parts/manipulator/handmade, 1, 30),
 		list (QUALITY_SCREW_DRIVING, 30)
 	)
 
