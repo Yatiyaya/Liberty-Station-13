@@ -14,7 +14,7 @@
 	UPGRADE_MELEE_ARMOR = 20,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
 	UPGRADE_STIFFNESS_ARMOR = 0.1,
-	UPGRADE_OBSCURATION_ARMOR = 0.1
+//	UPGRADE_OBSCURATION_ARMOR = 0.1 this is here just so anyone can see that it actually works easier
 	)
 	I.prefix = "reinforced"
 	I.required_qualities = list(QUALITY_ARMOR)
@@ -33,7 +33,6 @@
 	UPGRADE_BALLISTIC_ARMOR = 20,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
 	UPGRADE_STIFFNESS_ARMOR = 0.1,
-	UPGRADE_OBSCURATION_ARMOR = 0.1
 	)
 	I.prefix = "kevlar-plated"
 	I.required_qualities = list(QUALITY_ARMOR)
@@ -52,7 +51,6 @@
 	UPGRADE_ENERGY_ARMOR = 20,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
 	UPGRADE_STIFFNESS_ARMOR = 0.1,
-	UPGRADE_OBSCURATION_ARMOR = 0.1
 	)
 	I.prefix = "ablative-plated"
 	I.required_qualities = list(QUALITY_ARMOR)
@@ -71,7 +69,6 @@
 	UPGRADE_BOMB_ARMOR = 40,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
 	UPGRADE_STIFFNESS_ARMOR = 0.1,
-	UPGRADE_OBSCURATION_ARMOR = 0.1
 	)
 	I.prefix = "bomb-proofed"
 	I.required_qualities = list(QUALITY_ARMOR)
