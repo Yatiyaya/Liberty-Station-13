@@ -20,6 +20,13 @@
 	slot = slot_wear_suit
 	sort_category = "Faction: CAPSA"
 
+/datum/gear/factioncapsa/poncho
+	display_name = "poncho, CAPSA medical"
+	path = /obj/item/clothing/accessory/job/poncho/medical
+	allowed_roles = list(JOBS_MEDICAL)
+	slot = slot_wear_suit
+	sort_category = "Faction: CAPSA"
+
 /datum/gear/factioncapsa/gorka_crew_med
 	display_name = "gorka jacket, CAPSA medical"
 	path = /obj/item/clothing/suit/gorka/toggle/crew_med

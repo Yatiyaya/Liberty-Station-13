@@ -408,9 +408,9 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/steel/orangecorner
 
-/decl/flooring/tiling/steel/cyancorner
-	icon_base = "cyancorner"
-	build_type = /obj/item/stack/tile/floor/steel/cyancorner
+/decl/flooring/tiling/steel/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/steel/greencorner
 
 /decl/flooring/tiling/steel/violetcorener
 	icon_base = "violetcorener"
@@ -488,9 +488,9 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/white/orangecorner
 
-/decl/flooring/tiling/white/cyancorner
-	icon_base = "cyancorner"
-	build_type = /obj/item/stack/tile/floor/white/cyancorner
+/decl/flooring/tiling/white/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/white/greencorner
 
 /decl/flooring/tiling/white/violetcorener
 	icon_base = "violetcorener"
@@ -556,9 +556,9 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/dark/orangecorner
 
-/decl/flooring/tiling/dark/cyancorner
-	icon_base = "cyancorner"
-	build_type = /obj/item/stack/tile/floor/dark/cyancorner
+/decl/flooring/tiling/dark/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/dark/greencorner
 
 /decl/flooring/tiling/dark/violetcorener
 	icon_base = "violetcorener"
