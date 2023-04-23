@@ -50,7 +50,7 @@
 	I.tool_upgrades = list(
 	UPGRADE_ENERGY_ARMOR = 20,
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
-	UPGRADE_STIFFNESS_ARMOR = 0.1,
+	UPGRADE_STIFFNESS_ARMOR = 0.1
 	)
 	I.prefix = "ablative-plated"
 	I.required_qualities = list(QUALITY_ARMOR)
