@@ -34,18 +34,19 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 		list(mode_name="flare-shot", mode_desc="fires an illuminating flare of variable colors", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = 20, icon="grenade"),
 	)
 
-/obj/item/gun/projectile/matter_gun/attackby(obj/item/I, mob/user)
-
-	if(!istype(I,/obj/item/stack/sheet))
-		..()
-	var/obj/item/stack/sheet/M = I
-	if(istype(M) && M.name == matter_type)
+/obj/item/gun/projectile/matter_gun/attackby(obj/item/W as obj, mob/user as mob)
+	var/obj/item/stack/material/M = W
+	if(istype(M) && M.material.name == MATERIAL_COMPRESSED_MATTER)
 		var/amount = min(M.get_amount(), round(max_stored_matter - stored_matter))
-		if(M.use(amount))
+		if(M.use(amount) && stored_matter < max_stored_matter)
 			stored_matter += amount
-			to_chat(usr, "You load [amount] [matter_type] into \the [src].")
+			playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
+			to_chat(user, "<span class='notice'>You load [amount] Compressed Matter into \the [src].</span>. The Forger now holds [stored_matter]/[max_stored_matter] matter-units.")
+			update_icon()	//Updates the ammo counter
+		if (M.use(amount) && stored_matter >= max_stored_matter)
+			to_chat(user, "<span class='notice'>The Forger is full.")
 	else
-		return
+		..()
 
 /obj/item/gun/projectile/matter_gun/consume_next_projectile(mob/user)
 	if(stored_matter < projectile_cost) return null
@@ -58,9 +59,23 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	. = ..()
 	to_chat(user, "It holds [stored_matter]/[max_stored_matter] [matter_type].")
 
+/obj/item/gun/projectile/matter_gun/update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (loaded.len)
+		iconstring += "-full"
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+/obj/item/gun/projectile/matter_gun/Initialize()
+	. = ..()
+	update_icon()
 
 /obj/item/gun/projectile/matter_gun/shotgun
-	name = "Mk II \"Forger\" compressed-matter pistol"
+	name = "Mk II \"Forger\" compressed-matter shotgun"
 	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particles. \
 			This version is far more bulkier than its pistol counterpart, but packs quite a punch. Able to fire projectiles that fragment on impact or incendiary rounds."
 	icon = 'icons/obj/guns/nano/shotgun.dmi'
@@ -71,7 +86,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	price_tag = 650
 	fire_sound = 'sound/weapons/energy/emitter2.ogg'
 	can_dual = FALSE
-	init_recoil = SHOTGUN_RECOIL(0.8)
+	init_recoil = RIFLE_RECOIL(0.8)
 	gun_tags = list(GUN_PROJECTILE)
 	serial_type = "Terra"
 

@@ -32,73 +32,7 @@
 	)
 
 
-//Armor mods ----------------------
-/*	Armor mods have been given to Church.
-
-/datum/craft_recipe/guild/melee
-	name = "melee plating"
-	result = /obj/item/tool_upgrade/armor/melee
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/guild/bullet
-	name = "ballistic plating"
-	result = /obj/item/tool_upgrade/armor/bullet
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC , "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 20),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/guild/energy
-	name = "energy plating"
-	result = /obj/item/tool_upgrade/armor/energy
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLATINUM, "time" = 30),
-		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTIC , "time" = 30),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/guild/bomb
-	name = "bomb proofing"
-	result = /obj/item/tool_upgrade/armor/bomb
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 60),
-		list(QUALITY_WELDING, 40, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-*/
+//Robot Armor ----------------------
 
 /datum/craft_recipe/guild/robotmelee //Lots of steps
 	name = "robot mark v armor plating"
@@ -207,6 +141,43 @@
 	)
 
 //Weapons ------------------------
+
+/datum/craft_recipe/guild/nanopistol
+	name = "MKI Forger compressed-matter pistol"
+	result = /obj/item/gun/projectile/matter_gun
+	steps = list(
+		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL, "time" = 15),
+		list(QUALITY_CUTTING, 30, "time" = 10),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 15),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
+		list(/obj/item/cell/medium, 1, "time" = 5),
+		list(/obj/item/computer_hardware/tesla_link, 1, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
+		list(/obj/item/stack/cable_coil, 10, "time" = 15),
+		list(QUALITY_WIRE_CUTTING, 40, "time" = 15),
+		list(/obj/item/stock_parts/manipulator/nano, 1, "time" = 15),
+		list(/obj/item/stock_parts/matter_bin/adv, 1, "time" = 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
+	)
+
+/datum/craft_recipe/guild/nanoshotgun
+	name = "MKII Forger compressed-matter shotgun"
+	result = /obj/item/gun/projectile/matter_gun/shotgun
+	steps = list(
+		list(/obj/item/gun/projectile/matter_gun, 1, "time" = 15),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 15),
+		list(QUALITY_CUTTING, 30, "time" = 10),
+		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTIC, "time" = 15),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
+		list(/obj/item/cell/large, 1, "time" = 5),
+		list(/obj/item/computer_hardware/tesla_link, 1, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
+		list(/obj/item/stack/cable_coil, 20, "time" = 15),
+		list(QUALITY_WIRE_CUTTING, 40, "time" = 15),
+		list(/obj/item/stock_parts/capacitor/handmade, 1, "time" = 10),
+		list(/obj/item/stock_parts/micro_laser/handmade, 1, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
+	)
 
 /* Kept for reference for now. Replacement soon (tm)
 //An exspensive but powerful CQC weapon that also can be used as a flar gun

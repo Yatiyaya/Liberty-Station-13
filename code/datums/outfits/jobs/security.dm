@@ -52,17 +52,6 @@
 	..()
 	backpack_overrides.Cut()
 
-/decl/hierarchy/outfit/job/security/sentry
-	name = OUTFIT_JOB_NAME("Liberty Watch - Sentry")
-	l_ear = /obj/item/device/radio/headset/headset_blackshield
-	l_pocket = /obj/item/device/flash
-	uniform = /obj/item/clothing/under/rank/trooper/gorka
-	mask = /obj/item/clothing/mask/balaclava/tactical
-	glasses = /obj/item/clothing/glasses/ballistic
-	head = /obj/item/clothing/head/rank/trooper/cap
-	gloves = /obj/item/clothing/gloves/thick/swat/blackshield
-	backpack_contents = list(/obj/item/storage/hcases/ammo/blackmarket/trooper = 1)
-
 /decl/hierarchy/outfit/job/security/watchmen
 	name = OUTFIT_JOB_NAME("Liberty Watch - Watchmen")
 	l_pocket = /obj/item/device/flash

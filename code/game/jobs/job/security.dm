@@ -70,6 +70,7 @@
 	spawn_positions = 1
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
+	alt_titles = list("Supply Specialist", "Quartermaster", "Warden")
 	selection_color = "#a7bbc6"
 	department_account_access = TRUE
 	wage = WAGE_LABOUR_HAZARD
@@ -127,8 +128,8 @@
 	spawn_positions = 2
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Detective"
-	alt_titles = list("Forensics Specialist")
+	noob_name = "Criminal Profiler"
+	alt_titles = list("Forensics Specialist", "Crimescene Investigator", "Detective")
 	selection_color = "#a7bbc6"
 	wage = WAGE_PROFESSIONAL
 	playtimerequired = 1200
@@ -175,59 +176,6 @@
 	icon_state = "player-blue"
 	join_tag = /datum/job/investigator
 
-
-/datum/job/sentry
-	title = "Sentry"
-	flag = SENTRY
-	department = DEPARTMENT_SECURITY
-	department_flag = SECURITY
-	faction = MAP_FACTION
-	total_positions = 4
-	spawn_positions = 4
-	supervisors = "the Deputy Chief"
-	difficulty = "Hard."
-	noob_name = "Sentry Cadet"
-	selection_color = "#a7bbc6"
-	wage = WAGE_LABOUR_HAZARD
-	health_modifier = 10
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
-
-	outfit_type = /decl/hierarchy/outfit/job/security/sentry
-
-	perks = list(PERK_CHEM_CONTRABAND, PERK_CODESPEAK)
-
-	access = list(
-		access_security, access_eva,
-		access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks
-	)
-
-	stat_modifiers = list(
-		STAT_ROB = 25,
-		STAT_TGH = 20,
-		STAT_VIG = 25,
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor)
-
-	description = "The Trooper forms the base of the Blackshield, the front line against pirates, terrorists, and xenos.<br>\
-	You are the closest thing to a professional soldier the colony has. Employ your talents to bring an end to threats and conflict situations.<br>\
-	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats - leave otherwise to Marshals.<br>\
-	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the Marshals if explicitly asked. <br>\
-	Watch the main gate and perimeter. You have access to most places to help with your duties - do not abuse this."
-
-	duties = "Patrol the colony, provide a security presence, and look for trouble.<br>\
-		Deal with external threats to the colony such as pirates, hostile xenos, and anything that endangers colonists.<br>\
-		Exterminate monsters, giant vermin and hostile machines.<br>\
-		Follow orders from the chain of command.<br>\
-		Obey the law. You are not above it."
-
-/obj/landmark/join/start/sentry
-	name = "Sentry"
-	icon_state = "player-blue"
-	join_tag = /datum/job/sentry
-
-
 /datum/job/watchmen
 	title = "Watchmen"
 	flag = WATCHMEN
@@ -238,7 +186,8 @@
 	spawn_positions = 4
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Watchmen Cadet"
+	noob_name = "Watchmen Greenhorn"
+	alt_titles = list("Sentry", "Patrolman")
 	selection_color = "#a7bbc6"
 	wage = WAGE_LABOUR_HAZARD
 	health_modifier = 10

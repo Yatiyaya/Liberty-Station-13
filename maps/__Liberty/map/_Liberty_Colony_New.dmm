@@ -65562,7 +65562,6 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/engineering/atmos)
 "pew" = (
-/obj/structure/closet/secure_closet/reinforced/hop,
 /obj/item/melee/telebaton,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)
@@ -77045,10 +77044,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/sechall)
-"rKs" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/fo)
 "rKz" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Disposals";
@@ -168402,7 +168397,7 @@ lRa
 eZT
 cal
 egM
-rKs
+kLC
 dEO
 tPi
 geT
