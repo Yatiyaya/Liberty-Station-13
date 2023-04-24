@@ -16,6 +16,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/bscom
 	uniform = /obj/item/clothing/under/rank/commander
 	suit = /obj/item/clothing/suit/armor/commander/militia
+	belt = /obj/item/gun/energy/taser
 	l_pocket = /obj/item/device/flash
 	gloves = /obj/item/clothing/gloves/stungloves
 	glasses = /obj/item/clothing/glasses/ballistic
@@ -29,6 +30,7 @@
 	uniform = /obj/item/clothing/under/rank/warden
 	suit = /obj/item/clothing/suit/armor/vest/ironhammer
 	head = /obj/item/clothing/head/rank/warden/beret
+	belt = /obj/item/gun/energy/taser
 	glasses = /obj/item/clothing/glasses/hud/security
 	l_pocket = /obj/item/device/flash
 	gloves = /obj/item/clothing/gloves/stungloves
@@ -40,6 +42,7 @@
 	uniform = /obj/item/clothing/under/rank/inspector
 	suit = /obj/item/clothing/suit/storage/rank/insp_trench
 	head = /obj/item/clothing/head/investigator
+	belt = /obj/item/gun/energy/taser
 	gloves = /obj/item/clothing/gloves/stungloves
 	l_pocket = /obj/item/device/flash
 	shoes = /obj/item/clothing/shoes/reinforced
@@ -55,6 +58,7 @@
 /decl/hierarchy/outfit/job/security/watchmen
 	name = OUTFIT_JOB_NAME("Liberty Watch - Watchmen")
 	l_pocket = /obj/item/device/flash
+	belt = /obj/item/gun/energy/taser
 	uniform = /obj/item/clothing/under/rank/security
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/sechud/tactical
