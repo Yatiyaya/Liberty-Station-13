@@ -1,3 +1,4 @@
+#define SLIME_TRANSPARENCY 220 //this define only exists to make it easier to tweak the value in this small file
 /mob/living/carbon/human
 	name = "unknown"
 	real_name = "unknown"
@@ -1171,7 +1172,7 @@ var/list/rank_prefix = list(\
 /mob/living/carbon/human/proc/set_form(var/new_form = FORM_HUMAN, var/default_color)
 	form = GLOB.all_species_form_list[new_form]
 	if(new_form == FORM_SLIME) //slime people snowflake code
-		alpha = 220
+		alpha = SLIME_TRANSPARENCY
 	if(default_color)
 		skin_color = form.base_color
 
@@ -1648,3 +1649,5 @@ var/list/rank_prefix = list(\
 /mob/living/carbon/human/proc/set_remoteview(var/atom/A)
 	remoteview_target = A
 	reset_view(A)
+
+#undef SLIME_TRANSPARENCY
