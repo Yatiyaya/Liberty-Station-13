@@ -1216,7 +1216,7 @@ obj/item/clothing/suit/sweater/blue
 	name = "frontier jacket"
 	desc = "A rough make jacket, patched together from a variety of tough cloth, \
 	the fabric holds up well against wear and tear. Made first by several sewing inclined \
-	Prospectors in order to avoid cuts and scraps while out in the field, \
+	Shipbreakers in order to avoid cuts and scraps while out in the field, \
 	the design soon found itself spread throughout the colony."
 	icon_state = "scav_jacket"
 	item_state = "scav_jacket"

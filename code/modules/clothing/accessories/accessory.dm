@@ -285,8 +285,8 @@
 	icon_state = "browncloak"
 
 /obj/item/clothing/accessory/cape/prospie
-	name = "prospector mantle"
-	desc = "A rough mantle of salvaged hydrophobic materials typically worn around one's shoulders. While some may wear it for style, others prefer its use as decent camouflage in the humid amethian forest."
+	name = "rough mantle"
+	desc = "A rough mantle of salvaged hydrophobic materials typically worn around one's shoulders. Occasionally worn for style."
 	icon_state = "prospie_cape"
 
 // Head of Departments

@@ -630,7 +630,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 ////////////////////
 
 /obj/item/gunbox/forehead
-	name = "Foreman's melee weapon case"
+	name = "Shepherd's melee weapon case"
 	desc = "A secure box containing the melee weapon of choice for Foremen."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "rifle_case" // Placeholder?
@@ -641,7 +641,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	if(!stamped)
 		stamped = TRUE
 		var/list/options = list()
-		options["Foreman's Sledgehammer"] = list(/obj/item/tool/hammer/foremansledge)
+		options["Shepherd's Sledgehammer"] = list(/obj/item/tool/hammer/foremansledge)
 		options["\"Render Slayer\" Greatsword"] = list(/obj/item/tool/sword/foreman)
 		var/choice = input(user,"Which weapon will you take?") as null|anything in options
 		if(src && choice)

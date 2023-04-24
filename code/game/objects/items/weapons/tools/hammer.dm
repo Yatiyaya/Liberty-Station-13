@@ -99,8 +99,8 @@
 	allow_similacrum_mods = TRUE
 
 /obj/item/tool/hammer/foremansledge
-	name = "foreman's sledgehammer"
-	desc = "Once a tool used to nail rivets, now a tool used to crush skulls. The signature weapon of the prospector's foreman."
+	name = "shepherd's sledgehammer"
+	desc = "Once a tool used to nail rivets, now a tool used to crush skulls. The signature weapon of the Fontaine Field Shepherd."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "sledgehammer"
 	item_state = "sledgehammer0"

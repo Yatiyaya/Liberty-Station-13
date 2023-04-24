@@ -1,6 +1,6 @@
 /obj/item/storage/box/vendor_lootbox
 	name = "surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This is the bottom tier box, its unlikely it will have anything worthwhile in it as its entirely random."
 	illustration = "prospector"
 	icon_state = "box_of_doom"
@@ -29,7 +29,7 @@
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_light
 	name = "\"Trash Gremlin\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting weaponry, but this is the lowest tier."
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_light/populate_contents()
@@ -54,7 +54,7 @@
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_medium
 	name = "\"Scrapper's Choice\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting weaponry, with a decent chance of getting something good."
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_medium/populate_contents()
@@ -79,7 +79,7 @@
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_high
 	name = "\"Junk King\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting weaponry, the best available."
 
 /obj/item/storage/box/vendor_lootbox/combat_basic_high/populate_contents()
@@ -104,7 +104,7 @@
 
 /obj/item/storage/box/vendor_lootbox/medicine_basic
 	name = "\"Tokers\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting medical supplies, but its the bottom tier."
 
 /obj/item/storage/box/vendor_lootbox/medicine_basic/populate_contents()
@@ -127,7 +127,7 @@
 
 /obj/item/storage/box/vendor_lootbox/medicine_moderate
 	name = "\"Stoners\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting medical supplies, with a good chance to get something decent. Maybe."
 
 /obj/item/storage/box/vendor_lootbox/medicine_moderate/populate_contents()
@@ -150,7 +150,7 @@
 
 /obj/item/storage/box/vendor_lootbox/medicine_high
 	name = "\"420 Blaze\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box is weighted towards getting medical supplies, this box is the highest tier, meaning you will always (likely) get something good."
 
 /obj/item/storage/box/vendor_lootbox/medicine_high/populate_contents()
@@ -173,7 +173,7 @@
 
 /obj/item/storage/box/vendor_lootbox/oddity_low
 	name = "\"Kinda Strange\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. It contains a single oddity or a bluecross item!"
 
 /obj/item/storage/box/vendor_lootbox/oddity_low/populate_contents()
@@ -184,7 +184,7 @@
 
 /obj/item/storage/box/vendor_lootbox/oddity_moderate
 	name = "\"Really Weird\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. This box has two oddities or a bluecross item!"
 
 /obj/item/storage/box/vendor_lootbox/oddity_moderate/populate_contents()
@@ -196,7 +196,7 @@
 
 /obj/item/storage/box/vendor_lootbox/oddity_high
 	name = "\"Impossible\" surprise mechanics box"
-	desc = "A prospector branded 'surprise mechanics' box, available at the prospector vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
+	desc = "A Fontaine branded 'surprise mechanics' box, available at the Fontaine vending machine. While the practice of loading boxes with random junk and selling it lottery style is questionable, \
 	people do what they will with their money. Triple oddities in this one or a bluecross item! Weird!"
 
 /obj/item/storage/box/vendor_lootbox/oddity_high/populate_contents()

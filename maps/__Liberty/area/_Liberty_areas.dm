@@ -1684,18 +1684,18 @@ area/liberty/medical/medbaymeeting
 	icon_state = "server"
 
 
-//Prospector
+//Fontaine
 
 /area/liberty/pros/dorm
-	name = "\improper Prospector Dorm"
+	name = "\improper Fontaine Dorm"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prep
-	name = "\improper Prospector Prep"
+	name = "\improper Fontaine Prep"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/foreman
-	name = "\improper Foreman Office"
+	name = "\improper Field Shepherd Office"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/shuttle
@@ -1708,7 +1708,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prostorage
-	name = "\improper Prospector Storage"
+	name = "\improper Fontaine Storage"
 	icon_state = "erisgreen"
 
 //Storage
