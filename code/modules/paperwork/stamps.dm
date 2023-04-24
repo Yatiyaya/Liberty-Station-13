@@ -63,7 +63,7 @@
 	icon_state = "stamp-qm"
 
 /obj/item/stamp/fr
-	name = "foreman's stamp"
+	name = "shepherd's stamp"
 	icon_state = "stamp-fr"
 
 // Syndicate stamp to forge documents.

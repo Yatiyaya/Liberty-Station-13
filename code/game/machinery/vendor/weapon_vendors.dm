@@ -339,8 +339,8 @@
 
 //For the propis loot
 /obj/machinery/vending/propis_loot_box
-	name = "Prospectors 'Git-yer-Shit' Vendor"
-	desc = "The prospectors much loved 'Git-yer-Shit' a machine meant to sap the credits... 'reward' people for playing a lottery like system for boxes of items. Please spend responsibly."
+	name = "Fontaine 'Git-yer-Shit' Vendor"
+	desc = "Fontaine's much loved 'Git-yer-Shit' a machine meant to sap the credits... 'reward' people for playing a lottery like system for boxes of items. Please spend responsibly."
 	icon_state = "MagiVend"
 	product_slogans = list("Imagine the rare stuff and buy more!", "Rare stuff if you buy more!", "Buy and get random items!", "Don't quit, buy more!", "Its not a lootbox, its surprise mechanics!")
 	vendor_department = DEPARTMENT_PROSPECTOR

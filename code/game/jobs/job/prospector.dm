@@ -40,7 +40,7 @@
 
 	perks = list(PERK_STALKER, PERK_JUNKBORN, PERK_BUTCHER)
 
-	description = "The Field Shepards leads the employees of Fontain Logistics surface side and is to deligate tasks to their co-workers.<br>\
+	description = "The Field Shepherd leads the employees of Fontaine Logistics surface side and is to deligate tasks to their co-workers.<br>\
 	Your goal is to lead your team into hostile locations and take everything of value that isn't nailed down - and the nails too!<br>\
 	As potentially the youngest head of staff and the one expected to be in the most danger at all times you should be independent and cunning.<br>\
 	Your work is perhaps the most dangerous within the entire colony, so good combat and survival skills are essential."
@@ -88,7 +88,7 @@
 	)
 	perks = list(PERK_BUTCHER, PERK_MASTER_HERBALIST)
 
-	description = "The Trapper is a employee of Fontain dedicated to trapping and hunting wildlife as well as acting as a scout for the Shipbreakers.<br>\
+	description = "The Trapper is a employee of Fontaine dedicated to trapping and hunting wildlife as well as acting as a scout for the Shipbreakers.<br>\
 	Your primary role is that of a game hunter. Hunt and butcher wildlife for sale, distribution, or cooking supplies for the colony or the company.<br>\
 	Your secondary task is providing scouting and forging for your fellow co-workers; such as that of the Shipbreakers.<br>\
 	Remember that you are here to gain riches from the abandoned wilds. Don't waste time and resources mindlessly hunting creatures that don't provide profit unless aiding co-workers."
@@ -110,7 +110,7 @@
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the Foreman"
+	supervisors = "the Field Shepherd"
 	difficulty = "Medium."
 	noob_name = "Rookie Shipbreaker"
 	selection_color = "#a7bbc6"
