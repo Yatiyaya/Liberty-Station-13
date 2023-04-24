@@ -35,7 +35,7 @@
 	new /obj/item/modular_computer/tablet/lease/preset/command(src)
 
 /obj/structure/closet/secure_closet/reinforced/hos
-	name = "warrant officer's locker"
+	name = "deputy chief's locker"
 	req_access = list(access_hos)
 	icon_state = "hos"
 
@@ -57,7 +57,7 @@
 	new /obj/item/device/radio/headset/heads/hos(src)
 	new /obj/item/device/holowarrant(src)
 	new /obj/item/taperoll/police(src)
-	new /obj/item/gunbox/warrantofficer(src) // Primary on their locker, secondary on their hardcase.
+	new /obj/item/gunbox/chief(src) // Primary on their locker, secondary on their hardcase.
 	new /obj/item/clothing/gloves/stungloves(src)
 	new /obj/item/device/taperecorder(src)
 	new /obj/item/clipboard(src)
@@ -69,7 +69,7 @@
 	new /obj/item/device/radio/headset/heads/hos(src)
 
 /obj/structure/closet/secure_closet/warden
-	name = "supply specialist's locker"
+	name = "armorer's locker"
 	req_access = list(access_armory)
 	icon_state = "warden"
 
@@ -98,12 +98,14 @@
 	new /obj/item/oddity/code_book(src)
 	new /obj/item/device/t_scanner/advanced(src)
 	new /obj/item/clothing/head/helmet/marshal_full(src)
-	new /obj/item/voucher/marshal/specprimary(src)
-	new /obj/item/voucher/marshal/secondary(src)
+	new /obj/item/gunbox/armorer(src)
+	new /obj/item/ammo_magazine/pistol_35(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/voucher/marshal/armor(src)
 
 /obj/structure/closet/secure_closet/personal/security
-	name = "marshal officer's locker"
+	name = "watchman's locker"
 	req_access = list(access_hos)
 	access_occupy = list(access_brig)
 	icon_state = "sec"
@@ -114,8 +116,10 @@
 		new /obj/item/storage/backpack/ironhammer(src)
 	else
 		new /obj/item/storage/backpack/sport/ironhammer(src)
-	new /obj/item/voucher/marshal/primary(src)
-	new /obj/item/voucher/marshal/secondary(src)
+	new /obj/item/gunbox/watchman(src)
+	new /obj/item/ammo_magazine/pistol_35(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/voucher/marshal/armor(src)
 	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/device/radio/headset/headset_sec(src)
@@ -134,7 +138,7 @@
 	new /obj/item/device/t_scanner/advanced(src)
 
 /obj/structure/closet/secure_closet/personal/detective
-	name = "ranger's locker"
+	name = "criminal investigator's locker"
 	req_access = list(access_hos)
 	access_occupy = list(access_forensics_lockers) //So we can claim
 	icon_state = "cabinetdetective"
@@ -159,8 +163,11 @@
 	new /obj/item/storage/pouch/pistol_holster/cowboy(src) // More thematic
 	new /obj/item/implantpad(src)
 	new /obj/item/device/t_scanner/advanced(src)
-	new /obj/item/voucher/marshal/rangerprimary(src)
-	new /obj/item/voucher/marshal/rangersecondary(src)
+	new /obj/item/gunbox/investigator(src)
+	new /obj/item/gun/projectile/stinger/pepperball(src)
+	new /obj/item/ammo_magazine/pistol_35(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
+	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/storage/box/m_kit/armored_overcoat(src)
 
 /obj/structure/closet/secure_closet/injection

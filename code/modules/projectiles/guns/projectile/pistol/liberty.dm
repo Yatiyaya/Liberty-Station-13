@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/liberty
 	name = "\"Liberty\" pistol"
-	desc = "A firearm so famous and common around the colony its own history has been lost to hear-say. This pistol lacks proper serialization,\
-	but now is commonly for self-defence. Due to its full plastic internals, it has low stopping power and is impossible to maintain. Uses 9mm rounds."
+	desc = "Staple of the Liberty Group, the \"Liberty\" was designed as a weapon made for civilian markets and sold with self defense in mind. \
+			The gun by this point is a bit outdated, being first introduced to markets nearly 100 years ago now. But this 9mm classic just won't die."
 	icon = 'icons/obj/guns/projectile/liberty.dmi'
 	icon_state = "liberty"
 	item_state = "liberty"
@@ -17,7 +17,6 @@
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
 	init_recoil = HANDGUN_RECOIL(1)
 	serial_type = "LG"
-	gun_parts = list(/obj/item/stack/material/plastic = 4)
 
 	wield_delay = 0 SECOND
 	gun_parts = list(/obj/item/part/gun/frame/liberty = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/pistol = 1)
