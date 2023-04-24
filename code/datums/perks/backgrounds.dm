@@ -143,9 +143,11 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/klutz/assign(mob/living/carbon/human/H)
 	..()
 	holder.mutations.Add(CLUMSY)
+	holder.brute_mod_perk -= 0.2
 
 /datum/perk/background/klutz/remove()
 	holder.mutations.Remove(CLUMSY)
+	holder.brute_mod_perk += 0.2
 	..()
 
 /datum/perk/background/market_prof
@@ -202,7 +204,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/survivor
 	name = "Survivor"
 	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \
-			Halves sanity loss from seeing people die."
+			Halves sanity loss from seeing people die but you cannot recover sanity from talking with people."
 	icon_state = "composure" // Disco Elysium Skills - Simplified	Artist: Glassesblu - Down and Greyscaled by Lamasmaster - Don't own the art just think it's real neat so putting credits behind every one of these so it's clear.
 
 /datum/perk/background/survivor/assign(mob/living/carbon/human/H)

@@ -6,9 +6,6 @@
 	Since then it has massively expanded it's borders way past just the two planets reaching the status of a galactic superpower.\
 	You however were born in heart of this empire leaving you completely unprepared for the horrors lying within the reach of borders."
 
-	restricted_depts = COMMAND
-	restricted_jobs = list(/datum/job/secretary)
-
 	restricted_to_species = list(FORM_HUMAN)
 
 	stat_modifiers = list(STAT_ROB = -3, STAT_TGH = -3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
