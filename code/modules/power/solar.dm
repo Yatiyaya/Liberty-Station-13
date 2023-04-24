@@ -6,19 +6,27 @@
 	desc = "A solar electrical generator."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "sp_base"
-	anchored = TRUE
-	density = TRUE
+	anchored = 1
+	density = 1
 	use_power = NO_POWER_USE
 	idle_power_usage = 0
 	active_power_usage = 0
+	var/glass_power = 1 //How much are more are we getting from the glass?
 	var/id = 0
 	health = 10
-	var/obscured = 0
-	var/sunfrac = 0
+	var/obscured = 0 //When we draw are line to the sun, are we blocked by something?
+	var/sunfrac = 0 //This is used for maths on how much power were getting, based on were the sun is vs pannel angel
 	var/adir = SOUTH // actual dir
 	var/ndir = SOUTH // target dir
 	var/turn_angle = 0
 	var/obj/machinery/power/solar_control/control = null
+
+/obj/machinery/power/solar/examine(mob/user)
+	..()
+	if(glass_power >= 1) //Basiclly lets make sure
+		to_chat(user, "<span class='info'>The pannel reads that its glass power is at : [glass_power]</span>")
+	else
+		to_chat(user, "<span class='info'>The pannel's glass is damage or dirty and generationg : [glass_power] well normal rating is 1x or more!</span>")
 
 /obj/machinery/power/solar/drain_power()
 	return -1
@@ -49,13 +57,20 @@
 	if(!S)
 		S = new /obj/item/solar_assembly(src)
 		S.glass_type = /obj/item/stack/material/glass
-		S.anchored = TRUE
+		S.anchored = 1
 	S.loc = src
+
 	if(S.glass_type == /obj/item/stack/material/glass/reinforced) //if the panel is in reinforced glass
 		health *= 2 								 //this need to be placed here, because panels already on the map don't have an assembly linked to
+		glass_power = 1.1 //1650
+	if(S.glass_type == /obj/item/stack/material/glass/plasmaglass) //if the panel is in plasma glass
+		health *= 2
+		glass_power = 1.2 //1800
+	if(S.glass_type == /obj/item/stack/material/glass/plasmarglass) //if the panel is in reinforced plasma glass
+		health *= 3
+		glass_power = 1.3 //1950
+
 	update_icon()
-
-
 
 /obj/machinery/power/solar/attackby(obj/item/I, mob/user)
 	if(QUALITY_PRYING in I.tool_qualities)
@@ -64,25 +79,23 @@
 			if(S)
 				S.loc = src.loc
 				S.give_glass()
-			playsound(src.loc, 'sound/items/Crowbar.ogg', 50, TRUE)
 			user.visible_message(SPAN_NOTICE("[user] takes the glass off the solar panel."))
 			qdel(src)
 		return
 	else if (I)
 		src.add_fingerprint(user)
 		src.health -= I.force
-		src.healthcheck()
+		src.healthCheck()
 	..()
 
 
-/obj/machinery/power/solar/proc/healthcheck()
+/obj/machinery/power/solar/healthCheck()
 	if (src.health <= 0)
 		if(!(stat & BROKEN))
 			broken()
 		else
 			new /obj/item/material/shard(src.loc)
-			new /obj/item/stack/rods(loc)
-			new /obj/item/stack/rods(loc)
+			new /obj/item/material/shard(src.loc)
 			qdel(src)
 			return
 	return
@@ -90,11 +103,11 @@
 
 /obj/machinery/power/solar/update_icon()
 	..()
-	overlays.Cut()
+	cut_overlays()
 	if(stat & BROKEN)
-		overlays += image('icons/obj/power.dmi', icon_state = "solar_panel-b", layer = FLY_LAYER)
+		add_overlay(image('icons/obj/power.dmi', icon_state = "solar_panel-b", layer = FLY_LAYER))
 	else
-		overlays += image('icons/obj/power.dmi', icon_state = "solar_panel", layer = FLY_LAYER)
+		add_overlay(image('icons/obj/power.dmi', icon_state = "solar_panel", layer = FLY_LAYER))
 		src.set_dir(angle2dir(adir))
 	return
 
@@ -124,7 +137,7 @@
 		if(powernet == control.powernet)//check if the panel is still connected to the computer
 			if(obscured) //get no light from the sun, so don't generate power
 				return
-			var/sgen = SOLARGENRATE * sunfrac
+			var/sgen = SOLARGENRATE * sunfrac * glass_power
 			add_avail(sgen)
 			control.gen += sgen
 		else //if we're no longer on the same powernet, remove from control computer
@@ -139,13 +152,13 @@
 
 /obj/machinery/power/solar/ex_act(severity)
 	switch(severity)
-		if(1)
+		if(1.0)
 			if(prob(15))
 				new /obj/item/material/shard( src.loc )
 			qdel(src)
 			return
 
-		if(2)
+		if(2.0)
 			if (prob(25))
 				new /obj/item/material/shard( src.loc )
 				qdel(src)
@@ -154,7 +167,7 @@
 			if (prob(50))
 				broken()
 
-		if(3)
+		if(3.0)
 			if (prob(25))
 				broken()
 	return
@@ -202,9 +215,7 @@
 	icon_state = "sp_base"
 	item_state = "electropack"
 	w_class = ITEM_SIZE_BULKY // Pretty big!
-	anchored = FALSE
-	price_tag = 100
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
+	anchored = 0
 	var/tracker = 0
 	var/glass_type = null
 
@@ -226,12 +237,16 @@
 	if(tracker)
 		usable_qualities.Add(QUALITY_PRYING)
 
+	if(istype(I, /obj/item/stack/material/cyborg))
+		to_chat(user, SPAN_NOTICE("You cannot put this in \the [src]. Use a sheet loader with glass inside it to build!"))
+		return //Prevents borgs throwing their stuff into it
+
 	var/tool_type = I.get_tool_type(user, usable_qualities, src)
 	switch(tool_type)
 		if(QUALITY_PRYING)
 			if(tracker)
 				if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
-					new /obj/machinery/power/tracker(src.loc)
+					new /obj/item/tracker_electronics(src.loc)
 					tracker = 0
 					user.visible_message(SPAN_NOTICE("[user] takes out the electronics from the solar assembly."))
 					return
@@ -240,40 +255,36 @@
 		if(QUALITY_BOLT_TURNING)
 			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
 				anchored = !anchored
-				user.visible_message(SPAN_NOTICE("[user] [anchored ? "un" : ""]wrenches the solar assembly into place."))
+				user.visible_message(SPAN_NOTICE("[user] [!anchored ? "un" : ""]wrenches the solar assembly into place."))
 				return
 			return
 
 		if(ABORT_CHECK)
 			return
 
-	if(istype(I, /obj/item/stack/material/glass))
-		if(!anchored)
-			to_chat(user, SPAN_WARNING("You need to secure the assembly before you can add glass."))
-			return
-		if(locate(/obj/machinery/power/solar) in get_turf(src))
-			to_chat(user, SPAN_WARNING("A solar panel is already assembled here."))
-			return
-		var/obj/item/stack/material/S = I
-		if(S.use(2))
-			glass_type = S.type
-			playsound(loc, 'sound/machines/click.ogg', 50, TRUE)
-			user.visible_message(SPAN_NOTICE("[user] places the glass on the solar assembly."), SPAN_NOTICE("You place the glass on the solar assembly."))
-			if(tracker)
-				new /obj/machinery/power/tracker(get_turf(src), src)
+	if(anchored && isturf(loc))
+		log_debug("1")
+		if(istype(I, /obj/item/stack/material) && (I.get_material_name() == MATERIAL_GLASS || I.get_material_name() == MATERIAL_RGLASS || I.get_material_name() == MATERIAL_PLASMAGLASS || I.get_material_name() == MATERIAL_RPLASMAGLASS))
+			log_debug("2")
+			var/obj/item/stack/material/S = I
+			if(S.use(2))
+				glass_type = I.type
+				playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
+				user.visible_message(SPAN_NOTICE("[user] places the glass on the solar assembly."))
+				if(tracker)
+					new /obj/machinery/power/tracker(get_turf(src), src)
+				else
+					new /obj/machinery/power/solar(get_turf(src), src)
 			else
-				new /obj/machinery/power/solar(get_turf(src), src)
-		else
-			to_chat(user, SPAN_WARNING("You need two sheets of glass to put them into a solar panel!"))
+				to_chat(user, SPAN_WARNING("You need two sheets of glass to put them into a solar panel."))
+				return
 			return
-		return TRUE
 
 	if(!tracker)
-		if(istype(I, /obj/machinery/power/tracker))
+		if(istype(I, /obj/item/tracker_electronics))
 			tracker = 1
 			user.drop_item()
 			qdel(I)
-			playsound(loc, 'sound/machines/click.ogg', 50, TRUE)
 			user.visible_message(SPAN_NOTICE("[user] inserts the electronics into the solar assembly."))
 			return
 	..()
@@ -383,7 +394,6 @@
 		ui_interact(user) //routed to TGUI
 /*
 /obj/machinery/power/solar_control/interact(mob/user)
-
 	var/t = "<B><span class='highlight'>Generated power</span></B> : [round(lastgen)] W<BR>"
 	t += "<B><span class='highlight'>Star Orientation</span></B>: [SSsun.angle]&deg ([angle2text(SSsun.angle)])<BR>"
 	t += "<B><span class='highlight'>Array Orientation</span></B>: [rate_control(src,"cdir","[cdir]&deg",1,15)] ([angle2text(cdir)])<BR>"
@@ -395,21 +405,15 @@
 			t += "<A href='?src=\ref[src];track=0'>Off</A> <span class='linkOn'>Timed</span> <A href='?src=\ref[src];track=2'>Auto</A><BR>"
 		if(2)
 			t += "<A href='?src=\ref[src];track=0'>Off</A> <A href='?src=\ref[src];track=1'>Timed</A> <span class='linkOn'>Auto</span><BR>"
-
 	t += "Tracking Rate: [rate_control(src,"tdir","[trackrate] deg/h ([trackrate<0 ? "CCW" : "CW"])",1,30,180)]</div><BR>"
-
 	t += "<B><span class='highlight'>Connected devices:</span></B><div class='statusDisplay'>"
-
 	t += "<A href='?src=\ref[src];search_connected=1'>Search for devices</A><BR>"
 	t += "Solar panels : [connected_panels.len] connected<BR>"
 	t += "Solar tracker : [connected_tracker ? "<span class='good'>Found</span>" : "<span class='bad'>Not found</span>"]</div><BR>"
-
 	t += "<A href='?src=\ref[src];close=1'>Close</A>"
-
 	var/datum/browser/popup = new(user, "solar", name)
 	popup.set_content(t)
 	popup.open()
-
 	return
 */
 /obj/machinery/power/solar_control/attackby(obj/item/I, mob/user)
@@ -469,7 +473,6 @@
 		usr << browse(null, "window=solcon")
 		usr.unset_machine()
 		return 0
-
 	if(href_list["rate control"])
 		if(href_list["cdir"])
 			src.cdir = dd_range(0,359,(360+src.cdir+text2num(href_list["cdir"]))%360)
@@ -481,7 +484,6 @@
 		if(href_list["tdir"])
 			src.trackrate = dd_range(-7200,7200,src.trackrate+text2num(href_list["tdir"]))
 			if(src.trackrate) nexttime = world.time + 36000/abs(trackrate)
-
 	if(href_list["track"])
 		track = text2num(href_list["track"])
 		if(track == 2)
@@ -492,13 +494,11 @@
 			src.targetdir = src.cdir
 			if(src.trackrate) nexttime = world.time + 36000/abs(trackrate)
 			set_panels(targetdir)
-
 	if(href_list["search_connected"])
 		src.search_for_connected()
 		if(connected_tracker && track == 2)
 			connected_tracker.set_angle(SSsun.angle)
 		src.set_panels(cdir)
-
 	interact(usr)
 	return 1
 */
