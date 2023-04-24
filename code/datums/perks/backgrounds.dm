@@ -143,11 +143,13 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/klutz/assign(mob/living/carbon/human/H)
 	..()
 	holder.mutations.Add(CLUMSY)
-	holder.brute_mod_perk -= 0.2
+	holder.maxHealth += 10
+	holder.health += 10
 
 /datum/perk/background/klutz/remove()
 	holder.mutations.Remove(CLUMSY)
-	holder.brute_mod_perk += 0.2
+	holder.maxHealth -= 10
+	holder.health -= 10
 	..()
 
 /datum/perk/background/market_prof
