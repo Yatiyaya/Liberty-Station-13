@@ -182,8 +182,8 @@
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
 	noob_name = "Watchmen Greenhorn"
