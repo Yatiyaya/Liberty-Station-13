@@ -1338,6 +1338,9 @@
 /obj/random/material_ore/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"EZ" = (
+/turf/unsimulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "Fg" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/item/clothing/head/hairflower,
@@ -7693,7 +7696,7 @@ LL
 rf
 Fy
 rf
-rf
+EZ
 rf
 rf
 UK
@@ -16481,7 +16484,7 @@ rf
 sx
 rf
 rf
-rf
+EZ
 rf
 jY
 rf
@@ -18341,7 +18344,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 rf
 rf
 Fy
@@ -20895,7 +20898,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 rf
 rf
 rf
@@ -24044,7 +24047,7 @@ jY
 rf
 rf
 rf
-rf
+EZ
 rf
 sx
 rf
@@ -29384,7 +29387,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 rf
 rf
 rf
@@ -29591,7 +29594,7 @@ rf
 UK
 rf
 rf
-rf
+EZ
 jY
 rf
 jY
