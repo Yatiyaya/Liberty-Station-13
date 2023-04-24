@@ -5,7 +5,6 @@
 	permeability_coefficient = 0.05
 	siemens_coefficient = 0 // DAMN BOI
 	item_flags = NOSLIP
-	slowdown = SHOES_SLOWDOWN+1
 	species_restricted = null
 
 /obj/item/clothing/shoes/jackboots
@@ -91,16 +90,6 @@
 	armor_list = list(melee = 10, bullet = 0, energy = 10, bomb = 0, bio = 0, rad = 0) //Worse than jackboots and reinforced boots due to granting shock immunity to legs
 	siemens_coefficient = 0
 	can_hold_knife = 1
-
-/obj/item/clothing/shoes/jackboots/janitor
-	name = "custodian's jackboots"
-	desc = "Specially altered jackboots for custodians to prevent them from slipping."
-	icon_state = "jackboots"
-	item_state = "jackboots"
-	force = WEAPON_FORCE_HARMLESS
-	siemens_coefficient = 0.3
-	item_flags = NOSLIP
-	can_hold_knife = TRUE
 
 /obj/item/clothing/shoes/jackboots/toeless
 	name = "toeless jackboots"

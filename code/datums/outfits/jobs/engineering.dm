@@ -56,6 +56,6 @@
 /decl/hierarchy/outfit/job/engineering/janitor
 	name = OUTFIT_JOB_NAME("Terra-Therma - Janitor")
 	uniform = /obj/item/clothing/under/rank/janitor
-	pda_type = /obj/item/modular_computer/pda
-	shoes = /obj/item/clothing/shoes/jackboots/janitor
+	shoes = /obj/item/clothing/shoes/galoshes
+	suit = /obj/item/clothing/suit/armor/vest/handmade
 	belt = /obj/item/keys/janitor

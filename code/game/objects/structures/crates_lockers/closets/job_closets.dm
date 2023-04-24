@@ -72,18 +72,14 @@
 	new /obj/item/clothing/head/soft/purple(src)
 	new /obj/item/clothing/head/beret/purple(src)
 	new /obj/item/device/lighting/toggleable/flashlight(src)
-	new /obj/item/caution(src)
-	new /obj/item/caution(src)
-	new /obj/item/caution(src)
-	new /obj/item/caution(src)
 	new /obj/item/device/lightreplacer(src)
 	new /obj/item/storage/bag/trash(src)
 	new /obj/item/clothing/shoes/galoshes(src)
 	new /obj/item/mop(src)
+	new /obj/item/tool/shovel(src)
+	new /obj/item/reagent_containers/spray/cleaner(src)
 	new /obj/item/soap/deluxe(src)
-	new /obj/item/newspaper_stack(src)
 	new /obj/item/holyvacuum(src)
-	new /obj/item/clothing/accessory/job/cape/service(src) // Boobles! - Seb
 
 /obj/structure/closet/custodial
 	name = "church custodial closet"

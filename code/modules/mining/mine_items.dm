@@ -18,23 +18,17 @@
 	new /obj/item/cell/medium(src)
 	new /obj/item/cell/medium(src)
 	new /obj/item/cell/small(src)
-	new /obj/item/tool_upgrade/augment/fuel_tank(src)
 	new /obj/item/device/scanner/gas(src)
 	new /obj/item/storage/bag/ore(src)
-	new /obj/item/device/lighting/toggleable/flashlight/heavy(src)
-	new /obj/item/tool/shovel(src)
-	new /obj/item/tool/pickaxe(src)
 	new /obj/item/tool/pickaxe/drill(src)
+	new /obj/item/tool_upgrade/augment/fuel_tank(src)
 	new /obj/item/device/t_scanner(src)
 	new /obj/item/gun/projectile/boltgun/flare_gun(src)
 	new /obj/item/ammo_casing/flare(src)
 	new /obj/item/device/ore_sonar(src)
 	new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
-	new /obj/item/clothing/accessory/job/cape/mining(src) // ROCK AND STONE, BRUDDAH!
-	new /obj/item/gun/projectile/shotgun/pump(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
-	new /obj/item/storage/firstaid/ifak(src)
 
 /******************************Lantern*******************************/
 
