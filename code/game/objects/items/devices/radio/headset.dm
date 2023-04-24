@@ -199,19 +199,13 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_sci
 
-/obj/item/device/radio/headset/headset_com
-	name = "command radio headset"
-	desc = "A headset with a commanding channel. For the self important asshole."
-	icon_state = "com_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_com
-
 /obj/item/device/radio/headset/heads/captain
-	name = "premier's headset"
-	desc = "The headset of the arbiter and man with less power than he pretends he has."
+	name = "secretary's headset"
+	desc = "The headset of the most feared bureaucrat on the colony. Comes in stylish blue and with Ad-Hoc antenae"
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/captain
+	adhoc_fallback = TRUE
 
 /obj/item/device/radio/headset/heads/ai_integrated //No need to care about icons, it should be hidden inside the AI anyway.
 	name = "\improper AI subspace transceiver"

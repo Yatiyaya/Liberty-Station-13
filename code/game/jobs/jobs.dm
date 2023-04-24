@@ -19,8 +19,7 @@ var/const/INDEPENDENT		=(1<<10)
 
 var/const/COM				=(1<<0)
 
-var/const/PREMIER			=(1<<0)
-var/const/STEWARD			=(1<<1)
+var/const/SECRETARY			=(1<<0)
 
 var/const/ENGSEC			=(1<<1)
 

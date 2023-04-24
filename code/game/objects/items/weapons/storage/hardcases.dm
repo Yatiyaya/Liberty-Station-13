@@ -129,16 +129,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/stamp/clown(src)
 	new /obj/item/handcuffs/fake(src)
 
-/obj/item/storage/hcases/preimer
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/preimer/populate_contents()
-	new /obj/item/storage/box/ids(src)
-	new /obj/item/tool/knife/dagger/ceremonial(src)
-	new /obj/item/clothing/accessory/cross(src)
-
-
-
 //////////////////////////////////////////Ammo//////////////////////////////////////////
 
 /obj/item/storage/hcases/ammo

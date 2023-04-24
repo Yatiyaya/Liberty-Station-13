@@ -636,13 +636,13 @@
 /*Command*/
 
 /obj/item/toy/figure/character/command/captain
-	name = "premier action figure"
+	name = "captain action figure"
 	desc = "The man who thinks he is in charge around here. Command 1/4."
 	icon_state = "captain"
 	toysay = "Polish my sabre, peasants."
 
 /obj/item/toy/figure/character/command/firstofficer
-	name = "steward action figure"
+	name = "first officer action figure"
 	desc = "The loyal lieutenant, and second in command. Command 2/4."
 	icon_state = "hop"
 	toysay = "Get down Mr. President!"
