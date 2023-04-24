@@ -79,9 +79,9 @@
 	channels = list("Command" = 1)
 
 /obj/item/device/encryptionkey/heads/captain
-	name = "premier's encryption key"
+	name = "secretary's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 0, "Church" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
+	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 1, "Church" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1, "Blackshield" = 1, "Marshal" = 1)
 
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"

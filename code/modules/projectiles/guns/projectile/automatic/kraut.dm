@@ -10,7 +10,7 @@
 	caliber = CAL_CLRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1)
 	load_method = SINGLE_CASING|MAGAZINE
-	mag_well = MAGAZINE
+	mag_well = MAG_WELL_RIFLE
 	auto_eject = 1
 	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 15)
 	price_tag = 2200 //99 rounds of pure pain and destruction served in auto-fire, so it basically an upgraded LMG

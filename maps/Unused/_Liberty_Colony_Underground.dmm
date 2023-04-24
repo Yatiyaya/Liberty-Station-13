@@ -30979,9 +30979,6 @@
 	pixel_x = 0;
 	pixel_y = -24
 	},
-/obj/item/clothing/under/rank/first_officer/skirt,
-/obj/item/clothing/under/rank/first_officer/suit,
-/obj/item/clothing/under/rank/first_officer,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/fo)

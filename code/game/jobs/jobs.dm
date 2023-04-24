@@ -19,15 +19,13 @@ var/const/INDEPENDENT		=(1<<10)
 
 var/const/COM				=(1<<0)
 
-var/const/PREMIER			=(1<<0)
-var/const/STEWARD			=(1<<1)
+var/const/SECRETARY			=(1<<0)
 
 var/const/ENGSEC			=(1<<1)
 
 var/const/DC				=(1<<0)
 var/const/ARMORER			=(1<<1)
 var/const/INVESTIGATOR		=(1<<2)
-var/const/SENTRY			=(1<<3)
 var/const/WATCHMEN			=(1<<4)
 var/const/UNIONCHIEF		=(1<<5)
 var/const/TECHNICIAN		=(1<<6)

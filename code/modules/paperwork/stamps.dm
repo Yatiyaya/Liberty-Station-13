@@ -19,14 +19,10 @@
 	var/yminus	= -3	//Ditto for Y
 
 /obj/item/stamp/captain
-	name = "premier's rubber stamp"
+	name = "board secretary's rubber stamp"
 	icon_state = "stamp-cap"
 	xplus = 0
 	yminus = -1
-
-/obj/item/stamp/hop
-	name = "steward's rubber stamp"
-	icon_state = "stamp-hop"
 
 /obj/item/stamp/hos
 	name = "warrant officer's rubber stamp"

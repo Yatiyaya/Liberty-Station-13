@@ -129,16 +129,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/stamp/clown(src)
 	new /obj/item/handcuffs/fake(src)
 
-/obj/item/storage/hcases/preimer
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/preimer/populate_contents()
-	new /obj/item/storage/box/ids(src)
-	new /obj/item/tool/knife/dagger/ceremonial(src)
-	new /obj/item/clothing/accessory/cross(src)
-
-
-
 //////////////////////////////////////////Ammo//////////////////////////////////////////
 
 /obj/item/storage/hcases/ammo
@@ -471,23 +461,25 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	max_storage_space = DEFAULT_SMALL_STORAGE * 1.3 //a better fancy box
 
 
-////////////////////////////////////////////Rando 'gear kits'./////////////////////////////////////
+/////////////////////////
+// Liberty Watch Boxes //
+/////////////////////////
 
 
-/obj/item/gunbox/warrantofficer //credit goes to Hestia both for the idea of loadout gun box and for the code, and sprite.
-	name = "\improper Warrant Officers equipment kit"
+/obj/item/gunbox/chief //credit goes to Hestia both for the idea of loadout gun box and for the code, and sprite.
+	name = "Deputy Cheif's equipment kit"
 	desc = "A secure box containing the Warrant Officers primary weapon."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "rifle_case"
 
-/obj/item/gunbox/warrantofficer/attack_self(mob/living/user)
+/obj/item/gunbox/chief/attack_self(mob/living/user)
 	..()
 	var/stamped
 	if(!stamped)
 		stamped = TRUE
-		var/list/options = list() // Moved the Galaxy to secondary selection
-		options["Federalist - assault rifle"] = list(/obj/item/gun/projectile/automatic/federalist,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball)
-		options["Galaxy - plasma & ion pistol"] = list(/obj/item/gun/energy/glock)
+		var/list/options = list()
+		options["Kalashnikov - assault rifle"] = list(/obj/item/gun/projectile/automatic/ak47,/obj/item/ammo_magazine/rifle_75,/obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75/rubber)
+		options["Galaxy - plasma & ion pistol"] = list(/obj/item/gun/energy/glock, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
 		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/automatic/judge, /obj/item/ammo_magazine/ammobox/shotgun, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
@@ -499,6 +491,88 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 			qdel(src)
 		else
 			stamped = FALSE
+
+/obj/item/gunbox/armorer
+	name = "Armorer's equipment kit"
+	desc = "A secure box containing the Armorer's primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/armorer/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Federalist - assault rifle"] = list(/obj/item/gun/projectile/automatic/federalist,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber)
+		options["Sunrise - energy SMG"] = list(/obj/item/gun/energy/sunrise, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		options["Sweeper - automatic combat shotgun"] = list(/obj/item/gun/projectile/shotgun/sweeper, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12/beanbag)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/investigator
+	name = "CI's equipment kit"
+	desc = "A secure box containing the Criminal Investigator's primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/investigator/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Wristbreaker - heavy revolver"] = list(/obj/item/gun/projectile/revolver/wristbreaker,/obj/item/ammo_magazine/speed_loader_rifle_75,/obj/item/ammo_magazine/speed_loader_rifle_75, /obj/item/ammo_magazine/speed_loader_rifle_75)
+		options["Sunrise - energy SMG"] = list(/obj/item/gun/energy/sunrise, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		options["Sweeper - automatic combat shotgun"] = list(/obj/item/gun/projectile/shotgun/sweeper, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12/beanbag)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/obj/item/gunbox/watchman
+	name = "Watchman equipment kit"
+	desc = "A secure box containing the Sentinal primary weapon."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "rifle_case"
+
+/obj/item/gunbox/watchman/attack_self(mob/living/user)
+	..()
+	var/stamped
+	if(!stamped)
+		stamped = TRUE
+		var/list/options = list()
+		options["Ugil - carbine"] = list(/obj/item/gun/projectile/automatic/ak47/sa,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber)
+		options["Cog - laser carbine"] = list(/obj/item/gun/energy/cog, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
+		options["Trench - lever action shotgun"] = list(/obj/item/gun/projectile/shotgun/pump,/obj/item/ammo_magazine/speed_loader_shotgun,/obj/item/ammo_magazine/speed_loader_shotgun,/obj/item/ammo_magazine/speed_loader_shotgun/beanbag)
+		var/choice = input(user,"What type of equipment?") as null|anything in options
+		if(src && choice)
+			var/list/things_to_spawn = options[choice]
+			for(var/new_type in things_to_spawn)
+				var/atom/movable/AM = new new_type(get_turf(src))
+				if(istype(AM, /obj/item/gun/))
+					to_chat(user, "You have chosen \the [AM].")
+			qdel(src)
+		else
+			stamped = FALSE
+
+/////////////////////
+// C.A.P.S.A Boxes //
+/////////////////////
 
 /obj/item/gearbox/traumatizedteam
 	name = "CAPSA Paramedic's equipment kit"
@@ -539,7 +613,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		// Keeping this in case any other "sensible" option for a primary weapon for Lifeline Techs arrives, just add them as an option here.
 		options["\"Stinger\" sopo pistol with HV ammo"] = list(/obj/item/gun/projectile/stinger/pepperball/sopo,/obj/item/gun_upgrade/muzzle/silencer,/obj/item/ammo_magazine/pistol_35,/obj/item/ammo_magazine/pistol_35/rubber,/obj/item/ammo_magazine/pistol_35/rubber)
-		options["\"Hera\" stun revolver"] = list(/obj/item/gun/energy/stunrevolver/sci,/obj/item/cell/medium/moebius/high)
+		options["\"Hera\" stun revolver"] = list(/obj/item/gun/energy/stunrevolver/sci,/obj/item/cell/small/moebius/high)
 		var/choice = input(user,"Which gun will you take?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -550,6 +624,10 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 			qdel(src)
 		else
 			stamped = FALSE
+
+////////////////////
+// Fontaine Boxes //
+////////////////////
 
 /obj/item/gunbox/forehead
 	name = "Foreman's melee weapon case"

@@ -350,8 +350,8 @@
 	center_of_mass = "x=16;y=7"
 
 /obj/item/reagent_containers/food/drinks/flask
-	name = "premier's flask"
-	desc = "A metal flask belonging to the Premier."
+	name = "secretary's flask"
+	desc = "A metal flask belonging to the Board Secretary."
 	icon_state = "flask"
 	volume = 60
 	center_of_mass = list("x"=17, "y"=7)

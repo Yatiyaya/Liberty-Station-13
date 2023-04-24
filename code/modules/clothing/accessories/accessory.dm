@@ -245,11 +245,11 @@
 
 /obj/item/clothing/accessory/medal/gold/captain
 	name = "medal of exceptional statecraft"
-	desc = "A golden medal awarded exclusively to those who show distinguished duty as a premier. It signifies the codified responsibilities of the position and their undisputable qualities within it."
+	desc = "A golden medal awarded exclusively to those who show distinguished duty as a head of staff. It signifies the codified responsibilities of the position and their undisputable qualities within it."
 
 /obj/item/clothing/accessory/medal/gold/heroism
 	name = "medal of exceptional heroism"
-	desc = "An extremely rare golden medal awarded only by faction woners. To recieve such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
+	desc = "An extremely rare golden medal awarded only by faction owners. To recieve such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
 
 /*Capes*/
 
@@ -291,99 +291,85 @@
 
 // Head of Departments
 /obj/item/clothing/accessory/job/cape
-	name = "premier's cloak"
+	name = "secretary's cloak"
 	icon_state = "capcloak"
 	desc = "A green-ish cloak with golden lining."
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
-/obj/item/clothing/accessory/job/cape/fo
-	name = "steward's cloak"
-	icon_state = "focloak"
-	desc = "A blue cloak with red epaulettes."
-
 /obj/item/clothing/accessory/job/cape/meo
-	name = "research overseer's cloak"
+	name = "research provost's cloak"
 	icon_state = "meocloak"
 	desc = "A white cloak with black double stripe at edge."
 
 /obj/item/clothing/accessory/job/cape/cso
-	name = "Chief Surgeon Overseer's cloak"
+	name = "chief surgeon overseer's cloak"
 	icon_state = "csocloak"
 	desc = "An ornate green cloak with white shoulderpads bearing the logo of the CAPSA Group, adorned with leds on the serpent's eye."
 
 /obj/item/clothing/accessory/job/cape/ihc
-	name = "warrant officer's cloak"
+	name = "deputy chief's holo-mantle"
 	icon_state = "ihccloak"
 	desc = "A black cloak with dark-blue lining."
 
 /obj/item/clothing/accessory/job/cape/gm
-	name = "executive officer's cloak"
+	name = "club manager's cloak"
 	icon_state = "gmcloak"
 	desc = "A brown cloak with yellow lining."
 
 /obj/item/clothing/accessory/job/cape/te
-	name = "Union Chief's cloak"
+	name = "union chief's cloak"
 	icon_state = "cecloak"
 	desc = "A brown cloak with blue and orange lining."
 
-/obj/item/clothing/accessory/halfcape
-	name = "Blackshield Commanders holo-mantle"
-	desc = "A fancy holographic mantle cape made from dark fabric and bearing the rank markings of the Blackshield Commander. Despite skillful repair, the signs of multiple back-facing \
-	perforations give no doubt as to who this cloak belongs to."
-	icon_state = "half_co"
-	slot_flags = SLOT_ACCESSORY_BUFFER
-
 /obj/item/clothing/accessory/halfcape/cso
-	name = "Chief Surgeon Overseer's holo-mantle"
+	name = "chief surgeon overseer's holo-mantle"
 	desc = "A fancy holo-mantle made from light fabric and bearing the rank markings of the CAPSA CSO. While sleek and sterile, it sadly lacks \
 	protection against man-made horrors beyond our comprehension."
 	icon_state = "half_cso"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/RP
-	name = "Researcher Provost's holo-mantle"
+	name = "researcher provost's holo-mantle"
 	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Phokorus Institute RP. Black and purple, a color scheme and style to match the \
 	mad scientist in every Provost."
 	icon_state = "half_cro"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/gm
-	name = "Guildmasters holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Guildmaster. A snagging hazard sure to cause even the most hardened of safety inspectors\
+	name = "union chief's holo-mantle"
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Union Chief. A snagging hazard sure to cause even the most hardened of safety inspectors\
 	to blanch."
 	icon_state = "half_gm"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/halfcape/foreman
-	name = "Foreman holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Foreman. The question hangs as to whether or not the color is from dyes, \
+	name = "field shepherd's holo-mantle"
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Field Shepherd. The question hangs as to whether or not the color is from dyes, \
 	or the blood of countless voidwolves."
 	icon_state = "half_fm"
 
 /obj/item/clothing/accessory/halfcape/wo
-	name = "Warrant Officers holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Warrant Officer. A wonderful ostentateous accessory to suit the inflated ego of many a \
+	name = "deputy chief's holo-mantle"
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Deputy Chief. A wonderful ostentateous accessory to suit the inflated ego of many a \
 	frontier mall-cop."
 	icon_state = "half_wo"
 
 /obj/item/clothing/accessory/halfcape/prime
-	name = "Primes holo-mantle"
-	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Prime. Muted browns and golds, a perfectly subdued tone to compliment the \
+	name = "oathpledge's holo-mantle"
+	desc = "A fancy holo-mantle made from dark fabric and bearing the rank markings of the Oathpledge. Muted browns and golds, a perfectly subdued tone to compliment the \
 	usual flare of the church."
 	icon_state = "half_nt"
 
 /obj/item/clothing/accessory/halfcape/ceo
-	name = "CEOs holo-mantle"
-	desc = "A fancy holo-mantle made from light-toned silk and bearing the rank markings of the Prime. Fine alabaster silks and gold trim, despite its seemingly similar \
+	name = "club manager's holo-mantle"
+	desc = "A fancy holo-mantle made from light-toned silk and bearing the rank markings of the Club Manager. Fine alabaster silks and gold trim, despite its seemingly similar \
 	make to similar cloaks, its quality cannot be contested."
 	icon_state = "half_ceo"
 
-
 /obj/item/clothing/accessory/halfcape/premier
-	name = "Premiers holo-mantle"
-	desc = "A fancy, holo-mantle made from fine silk and bearing the rank markings of the Premier. The classic color scheme, coniferous green and tinsel gold. "
+	name = "secretary's holo-mantle"
+	desc = "A fancy, holo-mantle made from fine silk and bearing the rank markings of the Board Secretary. The classic color scheme, coniferous green and tinsel gold. "
 	icon_state = "half_prem"
-
 
 // Department
 /obj/item/clothing/accessory/job/cape/service
