@@ -1,4 +1,4 @@
-#define SLIME_TRANSPARENCY 220 //this define only exists to make it easier to tweak the value in this small file
+#define SLIME_TRANSPARENCY 210 //this define only exists to make it easier to tweak the value in this small file
 /mob/living/carbon/human
 	name = "unknown"
 	real_name = "unknown"
