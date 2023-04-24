@@ -613,7 +613,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		// Keeping this in case any other "sensible" option for a primary weapon for Lifeline Techs arrives, just add them as an option here.
 		options["\"Stinger\" sopo pistol with HV ammo"] = list(/obj/item/gun/projectile/stinger/pepperball/sopo,/obj/item/gun_upgrade/muzzle/silencer,/obj/item/ammo_magazine/pistol_35,/obj/item/ammo_magazine/pistol_35/rubber,/obj/item/ammo_magazine/pistol_35/rubber)
-		options["\"Hera\" stun revolver"] = list(/obj/item/gun/energy/stunrevolver/sci,/obj/item/cell/medium/moebius/high)
+		options["\"Hera\" stun revolver"] = list(/obj/item/gun/energy/stunrevolver/sci,/obj/item/cell/small/moebius/high)
 		var/choice = input(user,"Which gun will you take?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
