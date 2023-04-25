@@ -723,7 +723,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		options["Specialist - 9mm SMG"] = list(/obj/item/gun/projectile/automatic/specialist,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35,/obj/item/ammo_magazine/smg_35)
 		options["Umbani - 10mm SMG"] = list(/obj/item/gun/projectile/automatic/umbani,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40,/obj/item/ammo_magazine/smg_magnum_40)
 		options["Judge - automatic shotgun"] = list(/obj/item/gun/projectile/shotgun/judge,/obj/item/ammo_magazine/ammobox/shotgun/scrap_pellet,/obj/item/ammo_magazine/speed_loader_shotgun/empty,/obj/item/ammo_magazine/speed_loader_shotgun/empty)
-		options["Big Game - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/gamer, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257, /obj/item/gun_upgrade/scope/acog)
+		options["Big Game - boltaction w/ scope"] = list(/obj/item/gun/projectile/boltgun/gamer, /obj/item/ammo_magazine/speed_loader_rifle_75, /obj/item/ammo_magazine/speed_loader_rifle_75, /obj/item/ammo_magazine/speed_loader_rifle_75, /obj/item/gun_upgrade/scope/acog)
 		options["Cog - energy carbine"] = list(/obj/item/gun/energy/cog, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
