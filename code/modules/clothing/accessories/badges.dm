@@ -126,7 +126,7 @@
 /obj/item/clothing/accessory/badge/warden
 	name = "Supply specialist badge"
 	desc = "A silver supply specialist badge. Stamped with the words 'SS.'"
-	icon_state = "silverbadgez"
+	icon_state = "silverbadge"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 

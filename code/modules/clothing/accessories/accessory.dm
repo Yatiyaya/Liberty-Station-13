@@ -1137,8 +1137,8 @@
 /obj/item/clothing/accessory/ranks/sergeantmajor
 	name = "shoulderboards (sergeant major)"
 	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Sergeant Major."
-	icon_state = "sergeantm_tabs"
-	item_state = "sergeantm_tabs"
+	icon_state = "sergeant_tabsm"
+	item_state = "sergeant_tabsm"
 
 /obj/item/clothing/accessory/ranks/commander
 	name = "shoulderboards (commander)"
