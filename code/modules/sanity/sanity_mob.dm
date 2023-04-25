@@ -505,6 +505,8 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	changeLevel(smoking_change)
 
 /datum/sanity/proc/onSay()
+	if(owner.stats.getPerk(PERK_SURVIVOR))
+		return
 	if(world.time < say_time)
 		return
 	say_time = world.time + SANITY_COOLDOWN_SAY

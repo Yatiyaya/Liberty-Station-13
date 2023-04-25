@@ -1,10 +1,10 @@
-/datum/category_item/setup_option/background/ancestry/pirs_synth_medical
+/datum/category_item/setup_option/background/ancestry/capsa_synth_medical
 	name = "Medical Positronic"
 	desc = "Synthetics are often times built with a specific purpose in mind to augment the qualities most appropriate to the purpose they're intended for. Your specific model was designed with \
 	in-house medical imaging, surgical support systems, and a suite of data stored biological reference documents fed to the brain within through a real-time artificial intelligence system. The entire \
 	system works on a subconscious level, allowing the existing machinery to work with instead of for the user. This model comes with a surgical omnitool implanted in the right arm."
 
-	restricted_to_species = list(FORM_PIRSYNTH)
+	restricted_to_species = list(FORM_CAPSA)
 	racial_implants = (/obj/item/organ_module/active/simple/surgical)
 	restricted_jobs = list(/datum/job/outsider)
 

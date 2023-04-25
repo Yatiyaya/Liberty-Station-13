@@ -7,9 +7,9 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_COG = -10, STAT_TGH = 5)
 
 /datum/category_item/setup_option/background/thoughts/composure
 	name = "Survivor Mindset"
@@ -20,7 +20,7 @@
 
 	perks = list(PERK_SURVIVOR)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -33,10 +33,9 @@
 
 	perks = list(PERK_REJECTED_GENIUS)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
-
+	stat_modifiers = list(STAT_COG = 10, STAT_ROB = -5, STAT_VIG = -5, STAT_TGH = -5)
 
 /datum/category_item/setup_option/background/thoughts/authority
 	name = "Baron of Conscience"
@@ -47,9 +46,9 @@
 
 	perks = list(PERK_IDEALIST)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_COG = -10)
 
 /datum/category_item/setup_option/background/thoughts/volition
 	name = "Wasteland of the Mind"
@@ -60,7 +59,7 @@
 
 	perks = list(PERK_NIHILIST)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -73,9 +72,9 @@
 
 	perks = list(PERK_KLUTZ)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_VIG = -10, STAT_TGH = 10)
 
 /datum/category_item/setup_option/background/thoughts/interfacing
 	name = "RATional Isolation"
@@ -87,9 +86,9 @@
 
 	perks = list(PERK_RAT)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_VIG = 10, STAT_TGH = -15)
 
 /datum/category_item/setup_option/background/thoughts/inland_empire
 	name = "Empire of Nothingness"
@@ -101,9 +100,9 @@
 
 	perks = list(PERK_PSI_HARMONY)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_COG = 10)
 
 /datum/category_item/setup_option/background/thoughts/half_light
 	name = "Dead Man's Hand"
@@ -115,6 +114,6 @@
 
 	perks = list(PERK_PSI_MANIA)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_ROB = 10)
