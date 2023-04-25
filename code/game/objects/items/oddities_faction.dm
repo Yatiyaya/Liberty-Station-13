@@ -216,16 +216,16 @@
 
 /obj/item/gun/matter/staff_of_asclepius
 	name = "\improper Staff of Asclepius"
-	desc = "An exquisitely ornate rod with a life-like snake coiling around it. \
-			An expensive piece of Custodian artisan artwork, provided to CAPSA from the very first days \
-			of crashlanding as a symbol of their unity towards the well-being of the people. \
-			Uses biomatter as fuel to fire bolts of miraculous healing to those struck by it."
+	desc = "An exquisitely ornate wooden rod wrapped with Silk Fibroin provided by the Custodians \
+			with a life-like mechanical snake coiling around it. \
+			The pinnacle of CAPSA artifice and ingenuity on long-distance treatment, it uses biomatter \
+			as fuel to fire bolts of reconstructive healing to those struck by it."
 	icon = 'icons/obj/guns/matter/CAPSA_staff.dmi' // Sprites by Nayu (Monochrome#9090)
 	icon_state = "rod_of_asclepius"
 	slot_flags = SLOT_BELT|SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2, TECH_BIO = 6)
 	matter_type = MATERIAL_BIOMATTER
-	max_stored_matter = 50 // Unless Custodians can provide matter for this, it's gonna have a long use before it becomes a glorified staff
+	max_stored_matter = 50
 	projectile_cost = 1
 	projectile_type = /obj/item/projectile/beam/sniper/healing/harmony
 	fire_sound = 'sound/weapons/magical.ogg'

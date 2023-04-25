@@ -85,7 +85,7 @@
 	empty = TRUE
 
 /obj/item/storage/firstaid/toxin/populate_contents()
-	icon_state = pick("antitoxin","antitoxfirstaid2","antitoxfirstaid3")
+	icon_state = pick("antitoxin","antitoxin2")
 
 	if (empty) return
 	new /obj/item/reagent_containers/syringe/antitoxin(src)
@@ -141,8 +141,8 @@
 /obj/item/storage/firstaid/combat
 	name = "combat medical kit"
 	desc = "Contains advanced medical treatments."
-	icon_state = "bezerk"
-	item_state = "bezerk"
+	icon_state = "combat_meds"
+	item_state = "combat_meds"
 
 /obj/item/storage/firstaid/combat/populate_contents()
 	if (empty) return
@@ -200,7 +200,7 @@
 
 /obj/item/storage/firstaid/surgery/traitor
 	name = "conspicuous surgery kit"
-	icon_state = "surgeon_sus"
+	icon_state = "berserk_pack"
 	item_state = "combat_surgery_kit"
 	storage_slots = 13 // Fits all the tools it comes with
 	matter = list(MATERIAL_PLASTIC = 12) // More slots

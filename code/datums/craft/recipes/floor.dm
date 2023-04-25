@@ -162,13 +162,17 @@
 	name = "steel orange corner tile"
 	result = /obj/item/stack/tile/floor/steel/orangecorner
 
-/datum/craft_recipe/floor/steel/cyancorner
-	name = "steel cyan corner tile"
-	result = /obj/item/stack/tile/floor/steel/cyancorner
+/datum/craft_recipe/floor/steel/greencorner
+	name = "steel green corner tile"
+	result = /obj/item/stack/tile/floor/steel/greencorner
 
 /datum/craft_recipe/floor/steel/violetcorener
 	name = "steel violet corner tile"
 	result = /obj/item/stack/tile/floor/steel/violetcorener
+
+/datum/craft_recipe/floor/steel/cyancorner
+	name = "steel cyan corner tile"
+	result = /obj/item/stack/tile/floor/steel/cyancorner
 
 /datum/craft_recipe/floor/steel/monofloor
 	name = "steel mono-floor tile"
@@ -242,13 +246,17 @@
 	name = "white orange corner tile"
 	result = /obj/item/stack/tile/floor/white/orangecorner
 
-/datum/craft_recipe/floor/white/cyancorner
-	name = "white cyan corner tile"
-	result = /obj/item/stack/tile/floor/white/cyancorner
+/datum/craft_recipe/floor/white/greencorner
+	name = "white green corner tile"
+	result = /obj/item/stack/tile/floor/white/greencorner
 
 /datum/craft_recipe/floor/white/violetcorener
 	name = "white violet corner tile"
 	result = /obj/item/stack/tile/floor/white/violetcorener
+
+/datum/craft_recipe/floor/white/cyancorner
+	name = "white cyan corner tile"
+	result = /obj/item/stack/tile/floor/white/cyancorner
 
 /datum/craft_recipe/floor/white/monofloor
 	name = "white mono-floor tile"
@@ -306,13 +314,17 @@
 	name = "dark orange corner tile"
 	result = /obj/item/stack/tile/floor/dark/orangecorner
 
-/datum/craft_recipe/floor/dark/cyancorner
-	name = "dark cyan corner tile"
-	result = /obj/item/stack/tile/floor/dark/cyancorner
+/datum/craft_recipe/floor/dark/greencorner
+	name = "dark green corner tile"
+	result = /obj/item/stack/tile/floor/dark/greencorner
 
 /datum/craft_recipe/floor/dark/violetcorener
 	name = "dark violet corner tile"
 	result = /obj/item/stack/tile/floor/dark/violetcorener
+
+/datum/craft_recipe/floor/dark/cyancorner
+	name = "dark cyan corner tile"
+	result = /obj/item/stack/tile/floor/dark/cyancorner
 
 /datum/craft_recipe/floor/dark/monofloor
 	name = "dark mono-floor tile"
