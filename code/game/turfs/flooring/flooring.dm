@@ -894,6 +894,20 @@ var/list/flooring_types
 	floor_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
 
+/*Ice Water*/
+/decl/flooring/icewater
+	name = "icewater"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_base = "ice_water"
+	has_base_range = 4
+	flags = TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
+	plating_type = /decl/flooring/dirt
+	footstep_sound = "grass"
+	floor_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+	resistance = RESISTANCE_TOUGH
+	health = 9999999
+
 /*Dirt*/
 /decl/flooring/dirt
 	name = "dirt"
