@@ -8,7 +8,8 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	name = "\"Red Devil\" compact pistol"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 9mm. \
 			A version of the \"Glass Widow\" this pistol appears to sport a built-in supressor, a better grip, sensative trigger, and an improved barrel. The thing even appears to take SMG mags as well!"
-	icon_state = "devil"
+	icon = 'icons/obj/guns/projectile/old/clarissa.dmi'
+	icon_state = "clarissa"
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_SMG | MAG_WELL_DRUM		//Gives a reason to use it.
 	damage_multiplier = 1.3		//Bit better than normal. Mag-capacity helps too.
 	penetration_multiplier = 1.2

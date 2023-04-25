@@ -82,7 +82,9 @@
 /obj/item/gun/energy/laser/railgun/mounted
 	name = "SRF SC \"Schrapnell\""
 	desc = "An energy-based railgun, employing a matter fabricator to pull shotgun rounds from thin air and energy before launching them at faster than light speeds. Has the ablity to have a Master Unmaker integrated into it."
-	icon_state = "shrapnel"
+	icon = 'icons/obj/guns/energy/energyshotgun.dmi'
+	icon_state = "eshotgun"
+	item_state = "eshotgun"
 	self_recharge = 1
 	use_external_power = 1
 	safety = FALSE
