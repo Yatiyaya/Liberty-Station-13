@@ -170,6 +170,10 @@
 	name = "steel violet corner tile"
 	result = /obj/item/stack/tile/floor/steel/violetcorener
 
+/datum/craft_recipe/floor/steel/cyancorner
+	name = "steel cyan corner tile"
+	result = /obj/item/stack/tile/floor/steel/cyancorner
+
 /datum/craft_recipe/floor/steel/monofloor
 	name = "steel mono-floor tile"
 	result = /obj/item/stack/tile/floor/steel/monofloor
@@ -250,6 +254,10 @@
 	name = "white violet corner tile"
 	result = /obj/item/stack/tile/floor/white/violetcorener
 
+/datum/craft_recipe/floor/white/cyancorner
+	name = "white cyan corner tile"
+	result = /obj/item/stack/tile/floor/white/cyancorner
+
 /datum/craft_recipe/floor/white/monofloor
 	name = "white mono-floor tile"
 	result = /obj/item/stack/tile/floor/white/monofloor
@@ -313,6 +321,10 @@
 /datum/craft_recipe/floor/dark/violetcorener
 	name = "dark violet corner tile"
 	result = /obj/item/stack/tile/floor/dark/violetcorener
+
+/datum/craft_recipe/floor/dark/cyancorner
+	name = "dark cyan corner tile"
+	result = /obj/item/stack/tile/floor/dark/cyancorner
 
 /datum/craft_recipe/floor/dark/monofloor
 	name = "dark mono-floor tile"

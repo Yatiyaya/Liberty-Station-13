@@ -269,48 +269,53 @@
 
 /obj/item/stack/tile/floor/steel/cargo
 	name = "steel cargo tile"
-	singular_name = "steel cargo tile"
+	singular_name = "steel cargo tiles"
 	icon_state = "tile_steel_cargo"
 
 /obj/item/stack/tile/floor/steel/brown_platform
-	name = "steel brown platform tile"
+	name = "steel brown platform tiles"
 	singular_name = "steel brown platform tile"
 	icon_state = "tile_steel_brownplatform"
 
 /obj/item/stack/tile/floor/steel/gray_platform
-	name = "steel gray platform tile"
+	name = "steel gray platform tiles"
 	singular_name = "steel gray platform tile"
 	icon_state = "tile_steel_grayplatform"
 
 /obj/item/stack/tile/floor/steel/danger
-	name = "steel danger tile"
+	name = "steel danger tiles"
 	singular_name = "steel danger tile"
 	icon_state = "tile_steel_danger"
 
 /obj/item/stack/tile/floor/steel/golden
-	name = "steel golden tile"
+	name = "steel golden tiles"
 	singular_name = "steel golden tile"
 	icon_state = "tile_steel_golden"
 
 /obj/item/stack/tile/floor/steel/bluecorner
 	name = "steel blue corner tile"
-	singular_name = "steel blue corner tile"
+	singular_name = "steel blue corner tiles"
 	icon_state = "tile_steel_bluecorner"
 
 /obj/item/stack/tile/floor/steel/orangecorner
-	name = "steel orange corner tile"
+	name = "steel orange corner tiles"
 	singular_name = "steel orange corner tilee"
 	icon_state = "tile_steel_orangecorner"
 
 /obj/item/stack/tile/floor/steel/greencorner
-	name = "steel green corner tile"
+	name = "steel green corner tiles"
 	singular_name = "steel green corner tile"
 	icon_state = "tile_steel_greencorner"
 
 /obj/item/stack/tile/floor/steel/violetcorener
-	name = "steel violet corener tile"
-	singular_name = "steel violet corener tile"
-	icon_state = "tile_steel_violetcorener"
+	name = "steel violet corner tiles"
+	singular_name = "steel violet corner tile"
+	icon_state = "tile_steel_violetcorner"
+
+/obj/item/stack/tile/floor/steel/cyancorner
+	name = "steel cyan corner tiles"
+	singular_name = "steel cyan corner tile"
+	icon_state = "tile_steel_cyancorner"
 
 /obj/item/stack/tile/floor/steel/monofloor
 	name = "steel monofloor tile"
@@ -404,14 +409,19 @@
 	icon_state = "tile_white_orangecorner"
 
 /obj/item/stack/tile/floor/white/greencorner
-	name = "white green corner tile"
+	name = "white green corner tiles"
 	singular_name = "white green corner tile"
 	icon_state = "tile_white_greencorner"
 
 /obj/item/stack/tile/floor/white/violetcorener
-	name = "white violet corener tile"
-	singular_name = "white violet corener tile"
-	icon_state = "tile_white_violetcorener"
+	name = "white violet corner tiles"
+	singular_name = "white violet corner tile"
+	icon_state = "tile_white_violetcorner"
+
+/obj/item/stack/tile/floor/white/cyancorner
+	name = "white cyan corner tiles"
+	singular_name = "white cyan corner tile"
+	icon_state = "tile_white_cyancorner"
 
 /obj/item/stack/tile/floor/white/monofloor
 	name = "white monofloor tile"
@@ -488,14 +498,19 @@
 	icon_state = "tile_dark_orangecorner"
 
 /obj/item/stack/tile/floor/dark/greencorner
-	name = "dark green corner tile"
+	name = "dark green corner tiles"
 	singular_name = "dark green corner tile"
 	icon_state = "tile_dark_greencorner"
 
 /obj/item/stack/tile/floor/dark/violetcorener
-	name = "dark violet corener tile"
-	singular_name = "dark violet corener tile"
-	icon_state = "tile_dark_violetcorener"
+	name = "dark violet corner tiles"
+	singular_name = "dark violet corner tile"
+	icon_state = "tile_dark_violetcorner"
+
+/obj/item/stack/tile/floor/dark/cyancorner
+	name = "dark cyan corner tiles"
+	singular_name = "dark cyan corner tile"
+	icon_state = "tile_dark_cyancorner"
 
 /obj/item/stack/tile/floor/dark/monofloor
 	name = "dark monofloor tile"
