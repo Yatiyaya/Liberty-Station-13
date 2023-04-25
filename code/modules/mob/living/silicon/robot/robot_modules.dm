@@ -614,7 +614,7 @@ var/global/list/robot_modules = list(
 //Possible todo: Discuss giving security module some kind of lethal ranged weapon
 /obj/item/robot_module/security
 	name = "security robot module"
-	channels = list("Marshal" = 1, "Blackshield" = 1)
+	channels = list("Watch" = 1,)
 	networks = list(NETWORK_SECURITY)
 	can_be_pushed = 0
 	supported_upgrades = list(/obj/item/borg/upgrade/tasercooler,
@@ -705,7 +705,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/custodial
 	name = "custodial robot module"
-	channels = list("Service" = 1)
+	channels = list("Skylight" = 1)
 	sprites = list(
 					"Basic" = "robotjani",
 					"Mopbot"  = "janitorrobot",
@@ -782,7 +782,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/service
 	name = "service robot module"
-	channels = list("Service" = 1)
+	channels = list("Skylight" = 1)
 
 	sprites = list(	"Waitress" = "service",
 					"Kent" = "toiletbot",
@@ -881,7 +881,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/miner
 	name = "miner robot module"
-	channels = list("Supply" = 1)
+	channels = list("Engineering" = 1)
 	networks = list(NETWORK_MINE)
 	sprites = list(
 					"Basic" = "robotmine",

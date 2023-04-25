@@ -272,6 +272,10 @@ em						{font-style: normal;	font-weight: bold;}
 
 .name					{					font-weight: bold;}
 
+/* The codes below are overriden if there is the same entry in browserOutput_override.css
+Go there if you want to see what is overriden
+*/
+
 .say					{}
 .deadsay				{color: #e2c1ff}
 .binarysay    			{color: #20c20e; background-color: #000000; display: block;}
@@ -280,18 +284,18 @@ em						{font-style: normal;	font-weight: bold;}
 .radio					{color: #1ecc43;}
 .sciradio				{color: #c68cfa;}
 .comradio				{color: #008080;}
-.secradio				{color: #dd3535;}
+.secradio				{color: #5177FF;}
 .bsradio				{color: #9d3c38;}
-.proradio				{color: #209848;}
-.medradio				{color: #57b8f0;}
+.proradio				{color: #bac0e2;}
+.medradio				{color: #008160;}
 .medaltradio				{color: #57b8f0;}
-.engradio				{color: #f37746;}
+.engradio				{color: #A66300;}
 .suppradio				{color: #b88646;}
 .servradio, .srvradio	{color: #6ca729;}
 .syndradio				{color: #8f4a4b;}
 .centcomradio			{color: #2681a5;}
 .aiprivradio, .airadio	{color: #d65d95;}
-.ntradio				{color: #D4AF37;}
+.ntradio				{color: #dd3535;}
 .redteamradio           {color: #ff4444;}
 .blueteamradio          {color: #3434fd;}
 

@@ -165,7 +165,7 @@
 		return 1
 
 /obj/item/device/radio/headset/headset_eng
-	name = "guild radio headset"
+	name = "union radio headset"
 	desc = "When the wage slaves wish to chat like girls."
 	icon_state = "eng_headset"
 	item_state = "headset"
@@ -292,8 +292,8 @@
 	ks2type = /obj/item/device/encryptionkey/heads/clubmanager
 
 /obj/item/device/radio/headset/heads/preacher
-	name = "prime's headset"
-	desc = "The headset of the man who leads you to god and into the arms of a cult."
+	name = "oathbound's headset"
+	desc = "The headset of the man who leads the local chapter of the Custodians"
 	icon_state = "nt_com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/preacher
@@ -306,8 +306,8 @@
 	ks2type = /obj/item/device/encryptionkey/headset_cargo
 
 /obj/item/device/radio/headset/headset_service
-	name = "service radio headset"
-	desc = "Headset used by the service staff, tasked with keeping the colony full, happy, and clean."
+	name = "skylight radio headset"
+	desc = "Headset used by the Skylight Syndicate in all their topside activities."
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_service
