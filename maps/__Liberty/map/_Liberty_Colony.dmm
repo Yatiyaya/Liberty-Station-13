@@ -134,7 +134,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "acK" = (
 /obj/structure/ameridian_crystal/spire/range_3,
@@ -315,7 +315,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "afZ" = (
 /obj/random/booze,
@@ -622,7 +622,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "akA" = (
 /obj/structure/cable/green{
@@ -678,7 +678,7 @@
 /obj/machinery/light/floor{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "alM" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
@@ -828,7 +828,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "anY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -874,7 +874,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "aoD" = (
 /obj/structure/cable/green{
@@ -911,7 +911,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "apf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -949,7 +949,7 @@
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "apJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1110,7 +1110,7 @@
 "arz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "arG" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -1247,7 +1247,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/research,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "atF" = (
 /obj/machinery/papershredder,
@@ -1397,7 +1397,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "avv" = (
 /obj/machinery/washing_machine,
@@ -1674,7 +1674,7 @@
 /area/shuttle/vasiliy_shuttle_area)
 "azW" = (
 /obj/landmark/join/start/assistant,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "aAf" = (
 /obj/structure/catwalk,
@@ -1815,7 +1815,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "aDb" = (
 /obj/structure/table/standard,
@@ -1859,7 +1859,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "aDQ" = (
 /obj/machinery/washing_machine,
@@ -1882,7 +1882,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "aEp" = (
 /obj/structure/table/glass,
@@ -2220,7 +2220,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "aIQ" = (
 /turf/simulated/shuttle/wall/mining{
@@ -2650,7 +2650,7 @@
 "aND" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "aNE" = (
 /obj/machinery/door/window/brigdoor/southleft{
@@ -2828,7 +2828,7 @@
 "aPJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "aPK" = (
 /obj/structure/boulder,
@@ -3100,7 +3100,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "aTy" = (
 /obj/effect/floor_decal/industrial/danger{
@@ -3118,7 +3118,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "aTV" = (
 /obj/machinery/light/small{
@@ -3161,7 +3161,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "aUi" = (
 /obj/effect/floor_decal/industrial/warningwhite{
@@ -3353,7 +3353,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "aXC" = (
 /obj/structure/table/standard,
@@ -3466,7 +3466,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "aZE" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -3552,7 +3552,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "bbg" = (
 /obj/structure/flora/tree/snow/snow,
@@ -3636,7 +3636,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "bcB" = (
 /obj/machinery/door/blast/shutters/glass{
@@ -4261,7 +4261,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "bld" = (
 /obj/structure/catwalk,
@@ -4438,7 +4438,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "bnE" = (
 /obj/structure/bed/psych{
@@ -4642,7 +4642,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "brd" = (
 /obj/effect/window_lwall_spawn,
@@ -4974,7 +4974,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "bxk" = (
 /obj/machinery/light{
@@ -5609,7 +5609,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "bHs" = (
 /obj/machinery/telecomms/server/presets/command,
@@ -5848,7 +5848,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "bKL" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -6646,7 +6646,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "bUF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -6688,7 +6688,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "bVm" = (
 /obj/structure/table/rack/shelf,
@@ -6822,7 +6822,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "bWH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -6979,7 +6979,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "bYF" = (
 /obj/machinery/vending/powermat,
@@ -7110,7 +7110,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "caH" = (
 /obj/machinery/telecomms/server/presets/blackshield,
@@ -7152,7 +7152,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cbg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7296,7 +7296,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "ccJ" = (
 /obj/structure/table/rack/shelf,
@@ -7456,7 +7456,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cfr" = (
 /obj/item/clothing/suit/gorka/toggle/gorka/crew_o{
@@ -7569,7 +7569,7 @@
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "chk" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7764,7 +7764,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cjU" = (
 /obj/machinery/vending/wallmed{
@@ -7999,7 +7999,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cms" = (
 /obj/structure/bed/chair/sofa/black/corner{
@@ -8280,7 +8280,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "cpD" = (
 /obj/effect/floor_decal/industrial/arrows{
@@ -8323,7 +8323,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
 /area/liberty/security/hut_cell2)
 "cqw" = (
 /turf/simulated/mineral,
@@ -9008,7 +9007,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cAW" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -9065,7 +9064,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cBB" = (
 /obj/effect/decal/cleanable/dirt/snow,
@@ -9202,7 +9201,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cDO" = (
 /obj/structure/railing{
@@ -9714,7 +9713,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "cKT" = (
 /obj/random/scrap/sparse_weighted,
@@ -9840,7 +9839,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "cNl" = (
 /obj/machinery/door/airlock/security{
@@ -9959,7 +9958,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "cPb" = (
 /obj/structure/table/rack,
@@ -10182,7 +10181,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/absolutism/vectorrooms)
 "cSb" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/robotics)
 "cSn" = (
 /obj/structure/window/reinforced{
@@ -10300,7 +10299,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "cUN" = (
 /obj/random/cluster/roaches/low_chance,
@@ -10320,7 +10319,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "cVa" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/hallway/surface/section1)
 "cVf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
@@ -10363,17 +10361,6 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/hallway/surface/section1)
-"cVp" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/liberty/crew_quarters/sleep/cryo2)
 "cVu" = (
 /obj/effect/floor_decal/rust,
 /obj/random/closet_maintloot,
@@ -10564,10 +10551,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
-"cXT" = (
-/obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/hallway/surface/section1)
 "cXX" = (
 /obj/effect/floor_decal/industrial/stand_clear{
 	dir = 8
@@ -10668,7 +10651,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "cZF" = (
 /obj/structure/bed/chair/wood{
@@ -10813,7 +10796,7 @@
 "daV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "daZ" = (
 /turf/simulated/wall,
@@ -10868,7 +10851,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "dbH" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10916,7 +10899,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "dbV" = (
 /obj/structure/cable/green{
@@ -10955,7 +10938,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "dcb" = (
 /obj/structure/undies_wardrobe,
@@ -11110,7 +11093,7 @@
 /obj/structure/table/standard,
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "deb" = (
 /obj/structure/table/steel,
@@ -11151,7 +11134,7 @@
 "deK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "deL" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -11642,7 +11625,7 @@
 /area/liberty/engineering/foyer)
 "dkV" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "dlg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11691,7 +11674,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "dlU" = (
 /obj/structure/cable/cyan{
@@ -11995,7 +11978,7 @@
 /obj/structure/railing/grey{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "dqJ" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -13297,7 +13280,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "dLc" = (
 /obj/machinery/door/airlock{
@@ -13360,7 +13343,7 @@
 /obj/machinery/vending/wallmed/lobby{
 	pixel_x = 25
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "dLE" = (
 /obj/structure/salvageable/computer{
@@ -13526,7 +13509,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "dNu" = (
 /obj/structure/cable/yellow{
@@ -13838,7 +13821,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "dTi" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "dTl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13863,7 +13846,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "dTv" = (
 /obj/structure/cable/cyan{
@@ -13949,7 +13932,7 @@
 	dir = 4
 	},
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "dUz" = (
 /obj/effect/floor_decal/industrial/warningred{
@@ -13970,7 +13953,7 @@
 	name = "South APC";
 	pixel_y = -28
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "dUJ" = (
 /obj/structure/cable/green{
@@ -14051,7 +14034,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "dWy" = (
 /obj/structure/reagent_dispensers/fueltank/huge,
@@ -14320,7 +14303,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "ebX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14467,7 +14450,7 @@
 "eeB" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eeC" = (
 /obj/machinery/door/blast/shutters/glass{
@@ -14518,7 +14501,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "efC" = (
 /obj/structure/table/glass,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "efD" = (
 /obj/structure/flora/small/lavarock1,
@@ -14596,7 +14579,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "ehd" = (
 /obj/machinery/vending/fortune,
@@ -14829,7 +14812,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/robotics)
 "ekh" = (
 /obj/item/reagent_containers/syringe/drugs,
@@ -14983,7 +14966,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "enm" = (
 /obj/machinery/door/airlock/command{
@@ -15091,7 +15074,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "eoM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15246,7 +15229,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "erD" = (
 /obj/effect/floor_decal/industrial/warningred,
@@ -15736,7 +15719,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eAg" = (
 /obj/machinery/door/blast/regular/open{
@@ -15768,7 +15751,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eAC" = (
 /obj/effect/floor_decal/spline/wood{
@@ -15849,7 +15832,7 @@
 /area/shuttle/rocinante_shuttle_area)
 "eBW" = (
 /obj/machinery/vending/drip,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "eCa" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
@@ -15996,7 +15979,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "eDL" = (
 /obj/structure/invislight/outside,
@@ -16109,7 +16092,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eFs" = (
 /obj/structure/mirror{
@@ -16231,7 +16214,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "eGW" = (
 /obj/structure/disposalpipe/segment{
@@ -16262,7 +16245,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eHh" = (
 /obj/machinery/camera/xray/research{
@@ -16322,7 +16305,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "eIh" = (
 /obj/structure/table/reinforced,
@@ -16471,7 +16454,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eKi" = (
 /obj/structure/cable/cyan{
@@ -16599,7 +16582,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "eLx" = (
 /obj/structure/cable/green{
@@ -16686,7 +16669,7 @@
 "eNv" = (
 /obj/structure/table/rack/shelf,
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "eNE" = (
 /obj/structure/disposalpipe/segment,
@@ -16708,7 +16691,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "eNP" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
@@ -16731,7 +16714,7 @@
 /area/liberty/crew_quarters/dorm4)
 "eNX" = (
 /obj/machinery/autolathe/rnd/imprinter/loaded,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "eOn" = (
 /obj/machinery/light{
@@ -17225,7 +17208,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "eYo" = (
 /obj/structure/sign/department/anomaly,
@@ -17235,7 +17218,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/circuitboard/low_chance,
 /obj/random/material/low_chance,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "eYN" = (
 /obj/machinery/smartfridge/chemistry,
@@ -17251,7 +17234,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/material_resources,
 /obj/random/material/low_chance,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "eZv" = (
 /obj/structure/grille,
@@ -17351,7 +17334,7 @@
 	pixel_x = -28
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "faV" = (
 /obj/machinery/disposal,
@@ -17359,7 +17342,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "fbb" = (
 /obj/structure/disposalpipe/junction{
@@ -17714,7 +17697,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "ffV" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red,
@@ -17777,7 +17760,7 @@
 "fhk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "fhr" = (
 /turf/simulated/shuttle/wall/science{
@@ -17992,7 +17975,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "fle" = (
 /obj/structure/cable/yellow{
@@ -18043,7 +18026,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/barbackroom)
 "flI" = (
 /obj/structure/disposalpipe/segment{
@@ -18147,7 +18130,7 @@
 "fmY" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/floor/plating/under,
 /area/liberty/maintenance/substation/sec)
 "fnd" = (
 /obj/structure/bookcase,
@@ -18173,7 +18156,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "fnh" = (
 /obj/machinery/door/firedoor,
@@ -18412,7 +18395,7 @@
 /obj/structure/table/standard,
 /obj/random/medical,
 /obj/random/medical,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fpQ" = (
 /obj/effect/floor_decal/spline/wood{
@@ -18468,7 +18451,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "fqI" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "fqO" = (
 /obj/structure/closet/random_miscellaneous,
@@ -18505,7 +18488,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "frm" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -18733,7 +18716,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fuJ" = (
 /turf/simulated/shuttle/wall/science{
@@ -18809,7 +18792,7 @@
 "fvx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/colony_underground,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fvA" = (
 /obj/machinery/optable,
@@ -18845,7 +18828,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fvX" = (
 /obj/random/scrap/dense_weighted/low_chance,
@@ -18894,7 +18877,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fxD" = (
 /obj/structure/disposalpipe/segment{
@@ -18977,7 +18960,7 @@
 /obj/effect/floor_decal/industrial/warningred/corner{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "fyL" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -19124,7 +19107,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "fBy" = (
 /obj/effect/floor_decal/industrial/hatch,
@@ -19254,7 +19237,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "fDK" = (
 /obj/machinery/telecomms/hub/preset,
@@ -19278,7 +19261,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fDU" = (
 /obj/structure/disposalpipe/sortjunction/wildcard/flipped,
@@ -19448,7 +19430,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fGB" = (
 /obj/machinery/light,
@@ -19484,7 +19466,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fGJ" = (
 /obj/machinery/alarm{
@@ -19627,7 +19609,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fII" = (
 /obj/structure/table/rack/shelf,
@@ -19636,7 +19618,7 @@
 /obj/machinery/camera/network/research{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "fIJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19700,7 +19682,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "fJE" = (
 /obj/structure/railing,
@@ -19766,7 +19748,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "fLe" = (
 /obj/structure/closet/crate/hydroponics,
@@ -19810,7 +19792,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "fLX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19924,7 +19906,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "fNN" = (
 /obj/machinery/firealarm{
@@ -20292,7 +20274,7 @@
 /area/liberty/absolutism/office)
 "fSo" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fSp" = (
 /obj/structure/disposalpipe/segment{
@@ -20303,7 +20285,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "fSr" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock,
@@ -20314,7 +20296,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "fSR" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -20595,7 +20577,7 @@
 "fWR" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "fWU" = (
 /obj/structure/salvageable/personal,
@@ -20851,13 +20833,13 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
 "gaD" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "gaQ" = (
 /obj/structure/table/standard,
@@ -21024,7 +21006,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "gcy" = (
 /obj/effect/floor_decal/industrial/warningwhite{
@@ -21532,7 +21514,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "glN" = (
 /turf/simulated/floor/tiled/white/brown_perforated,
@@ -21557,7 +21539,7 @@
 /area/liberty/security/sechall)
 "gmj" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "gmu" = (
 /obj/structure/cable/green{
@@ -21713,7 +21695,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "gpi" = (
 /turf/simulated/shuttle/wall/mining{
@@ -21905,7 +21887,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "grH" = (
 /obj/structure/disposalpipe/junction,
@@ -22012,7 +21994,7 @@
 	dir = 8
 	},
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "gsK" = (
 /obj/structure/cable/cyan{
@@ -22261,7 +22243,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "gwS" = (
 /obj/structure/cable/cyan{
@@ -23447,7 +23429,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "gQt" = (
 /obj/random/furniture/pottedplant,
@@ -23637,7 +23619,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "gSu" = (
 /obj/structure/table/steel_reinforced,
@@ -23764,7 +23746,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "gUn" = (
 /obj/random/cluster/roaches/low_chance,
@@ -23923,7 +23905,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "gWZ" = (
 /obj/structure/table/woodentable,
@@ -24185,7 +24167,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "haE" = (
 /obj/effect/decal/cleanable/rubble,
@@ -24194,7 +24176,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "haF" = (
 /obj/machinery/vending/gamers,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "haH" = (
 /obj/structure/table/steel_reinforced,
@@ -24741,7 +24723,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "hko" = (
 /turf/simulated/floor/wood,
@@ -24889,7 +24871,7 @@
 /obj/machinery/camera/network/research{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "hmo" = (
 /obj/random/closet_tech/low_chance,
@@ -25409,7 +25391,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "huI" = (
 /obj/structure/shuttle_part/science{
@@ -25485,7 +25467,7 @@
 "hvn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hvs" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -25569,7 +25551,7 @@
 	name = "West APC";
 	pixel_x = -28
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "hwu" = (
 /obj/structure/flora/small/snow/boulder2,
@@ -25671,7 +25653,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hxU" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -25694,7 +25676,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hyp" = (
 /obj/structure/railing,
@@ -25757,7 +25739,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hyQ" = (
 /obj/item/stool/padded,
@@ -25895,7 +25877,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "hAw" = (
 /obj/item/modular_computer/console/preset/engineering/alarms{
@@ -25999,7 +25981,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "hCc" = (
 /turf/simulated/floor/tiled/steel,
@@ -26012,7 +25994,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hCI" = (
 /obj/structure/disposalpipe/segment,
@@ -26126,7 +26108,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "hEx" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "hEA" = (
 /obj/structure/railing{
@@ -26584,7 +26566,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/material_resources,
 /obj/random/material_resources/low_chance,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "hKH" = (
 /turf/simulated/shuttle/wall/science{
@@ -27354,7 +27336,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "hXQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -27529,7 +27511,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "ibE" = (
 /obj/machinery/door/airlock{
@@ -27760,7 +27742,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "ifT" = (
 /obj/structure/disposalpipe/segment{
@@ -27805,7 +27787,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/robotics)
 "igA" = (
 /obj/structure/largecrate/animal/cow,
@@ -28240,7 +28222,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "iot" = (
 /obj/machinery/vending/engivend,
@@ -28320,7 +28302,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "ipo" = (
 /obj/effect/decal/weldable/cracks,
@@ -28467,7 +28449,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "irj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28631,7 +28613,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "iue" = (
 /turf/simulated/wall/wood_old,
@@ -28794,7 +28776,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "ivU" = (
 /obj/structure/window/reinforced,
@@ -28914,7 +28896,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "ixa" = (
 /obj/machinery/cryopod/elevator,
@@ -29003,7 +28985,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "iyk" = (
 /obj/item/farmbot_arm_assembly,
@@ -29198,7 +29180,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "iBu" = (
 /obj/structure/cable/green{
@@ -29241,7 +29223,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "iBF" = (
 /obj/structure/bed/chair/office/light{
@@ -29752,7 +29734,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "iKv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -29821,7 +29803,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "iLH" = (
 /obj/structure/jtb_pillar,
@@ -30190,7 +30172,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "iSp" = (
 /obj/effect/floor_decal/industrial/danger/corner{
@@ -30253,7 +30235,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "iTi" = (
 /obj/effect/floor_decal/industrial/warningwhite{
@@ -30295,7 +30277,7 @@
 /obj/machinery/camera/network/research{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "iTK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -30330,7 +30312,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "iUa" = (
 /obj/item/contraband/poster/placed/generic/walk{
@@ -30596,7 +30578,7 @@
 /area/liberty/absolutism/chapel)
 "iYk" = (
 /obj/structure/table/rack,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/toilet/public{
 	name = "Lower Public Toilet"
 	})
@@ -31014,7 +30996,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "jda" = (
 /obj/machinery/sleeper,
@@ -31080,7 +31062,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "jdL" = (
 /obj/structure/janitorialcart,
@@ -31272,7 +31254,7 @@
 	dir = 8;
 	pixel_x = -30
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "jgK" = (
 /obj/structure/disposalpipe/segment{
@@ -31309,7 +31291,7 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "jhs" = (
 /obj/structure/bed/psych{
@@ -31716,7 +31698,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "jnD" = (
 /obj/machinery/light/small{
@@ -32573,7 +32555,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "jBW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -32948,7 +32930,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "jHK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -33536,7 +33518,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "jSc" = (
 /obj/structure/disposalpipe/segment{
@@ -33555,7 +33537,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "jSd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -34071,7 +34053,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "jYy" = (
 /obj/structure/disposalpipe/segment{
@@ -34087,7 +34069,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "jYL" = (
 /turf/simulated/shuttle/wall/science{
@@ -34099,7 +34081,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "jYX" = (
 /obj/random/boxes/low_chance,
@@ -34406,7 +34388,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "kcI" = (
 /obj/item/modular_computer/console/preset/command{
@@ -34578,7 +34560,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "kfK" = (
 /obj/machinery/door/blast/regular/open{
@@ -34688,7 +34670,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "kiz" = (
 /obj/machinery/door/airlock{
@@ -34852,7 +34834,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "kky" = (
 /obj/structure/railing/grey{
@@ -34945,7 +34927,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "kmi" = (
 /obj/structure/table/woodentable,
@@ -35021,7 +35003,7 @@
 /area/liberty/crew_quarters/janitor)
 "kmY" = (
 /obj/machinery/camera/network/colony_underground,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "knm" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -35094,7 +35076,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "knV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -35287,7 +35269,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "kqy" = (
 /obj/effect/floor_decal/industrial/danger,
@@ -35489,9 +35471,6 @@
 /obj/effect/floor_decal/spline/fancy/three_quarters,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/rnd/xenobiology/xenoflora)
-"ksD" = (
-/turf/simulated/floor/tiled/dark/cyancorner,
-/area/liberty/crew_quarters/sleep/cryo2)
 "kta" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -35649,7 +35628,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/violetcorener,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "kvG" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -35700,7 +35679,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "kwB" = (
 /obj/random/scrap/sparse_even/low_chance,
@@ -35862,7 +35841,7 @@
 "kyY" = (
 /obj/structure/table/rack/shelf,
 /obj/random/material_rare/low_chance,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "kzd" = (
 /obj/machinery/atmospherics/portables_connector,
@@ -35965,7 +35944,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "kBV" = (
 /obj/effect/decal/cleanable/rubble,
@@ -36625,7 +36604,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "kPu" = (
 /obj/structure/flora/big/bush2,
@@ -37131,7 +37110,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "kWi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -37348,7 +37327,6 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/hallway/surface/section1)
 "laq" = (
 /obj/effect/decal/cleanable/rubble,
@@ -37474,7 +37452,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "ldb" = (
 /obj/machinery/portable_atmospherics/canister/sleeping_agent/roomfiller{
@@ -37746,7 +37724,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "lgP" = (
 /obj/structure/table/rack,
@@ -37909,7 +37887,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "lix" = (
 /obj/structure/cable/yellow{
@@ -38238,7 +38216,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "lon" = (
 /obj/structure/table/rack/shelf,
@@ -38328,7 +38306,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "lpy" = (
 /obj/structure/railing,
@@ -38499,7 +38477,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "lsr" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -38516,7 +38494,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "lsu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -38628,7 +38606,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "luo" = (
 /obj/structure/curtain/open/shower,
@@ -38712,7 +38690,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "lvZ" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "lwd" = (
 /obj/machinery/light/small{
@@ -38850,7 +38828,7 @@
 "lyz" = (
 /obj/effect/floor_decal/industrial/box/white,
 /obj/landmark/join/late/cryo/elevator,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/side/f2section1)
 "lyQ" = (
 /obj/structure/table/woodentable,
@@ -38970,7 +38948,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "lzT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -39235,7 +39213,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "lDY" = (
 /obj/structure/shuttle_part/science{
@@ -39276,7 +39254,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "lFh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -39637,7 +39615,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "lKH" = (
 /obj/structure/table/bench/steel,
@@ -39747,7 +39725,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "lMJ" = (
 /obj/item/stock_parts/manipulator,
@@ -39855,10 +39833,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
-"lNI" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
-/area/liberty/crew_quarters/sleep/cryo2)
 "lNP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -40687,7 +40661,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "lYo" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "lYH" = (
 /obj/effect/floor_decal/industrial/danger{
@@ -40724,7 +40698,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "mad" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -41017,7 +40991,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "meB" = (
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "meC" = (
 /obj/random/mecha/damaged/low_chance,
@@ -41211,7 +41185,7 @@
 	pixel_y = 30
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "mit" = (
 /obj/structure/table/marble,
@@ -41824,7 +41798,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "muw" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -42109,7 +42083,7 @@
 /area/liberty/security/maingate)
 "mzH" = (
 /obj/machinery/vending/style,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "mzO" = (
 /obj/machinery/door/airlock/glass{
@@ -42117,7 +42091,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "mzX" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -42145,7 +42119,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/box/red,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "mAE" = (
 /obj/structure/table/woodentable,
@@ -42554,7 +42528,7 @@
 /obj/structure/table/standard,
 /obj/item/storage/briefcase,
 /obj/item/tool/crowbar,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "mJl" = (
 /obj/effect/floor_decal/industrial/danger{
@@ -42659,7 +42633,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "mKV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -42826,7 +42800,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "mMV" = (
 /obj/structure/table/standard,
@@ -42942,7 +42916,7 @@
 "mOG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/cargo,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "mOO" = (
 /mob/living/simple_animal/chicken,
@@ -43028,7 +43002,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "mQl" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -43139,7 +43113,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/engineering/atmos)
 "mSd" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "mSf" = (
 /obj/item/stamp/clown,
@@ -43194,7 +43168,7 @@
 /area/liberty/maintenance/substation/bridge)
 "mSH" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "mSL" = (
 /turf/simulated/floor/snow,
@@ -43827,7 +43801,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
 "ndd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -44260,7 +44234,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "niu" = (
 /obj/structure/table/rack/shelf,
@@ -44508,7 +44482,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "nlR" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -44725,7 +44699,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "nos" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -44745,7 +44719,7 @@
 	desc = "A wooden shelving unit used for storing all sorts of literature and logs.";
 	name = "Sender Beacon Log Case"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "noM" = (
 /obj/structure/cable/green{
@@ -45186,7 +45160,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "nvj" = (
 /obj/machinery/light/small{
@@ -45219,7 +45193,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "nvI" = (
 /obj/structure/cable{
@@ -45818,7 +45792,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "nET" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -45834,7 +45808,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "nFi" = (
 /obj/random/closet_tech/low_chance,
@@ -46041,7 +46015,7 @@
 "nIb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "nIc" = (
 /obj/structure/table/woodentable,
@@ -46395,7 +46369,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "nOz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -46429,7 +46403,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "nOI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -47045,7 +47019,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "nXK" = (
 /turf/simulated/floor/beach/water/shallow,
@@ -47891,7 +47865,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "onb" = (
 /obj/structure/table/steel,
@@ -47927,7 +47901,7 @@
 	pixel_x = 30
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "onH" = (
 /obj/random/closet,
@@ -47937,7 +47911,7 @@
 "onJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "onL" = (
 /turf/simulated/shuttle/floor/mining{
@@ -47993,7 +47967,7 @@
 /area/liberty/quartermaster/office)
 "ooA" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "ooF" = (
 /obj/structure/table/standard,
@@ -48016,7 +47990,6 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/hallway/surface/section1)
 "ooX" = (
 /obj/structure/cable/green{
@@ -48160,7 +48133,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "oqg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
@@ -48454,7 +48427,7 @@
 /area/liberty/rnd/robotics)
 "ovp" = (
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "ovs" = (
 /obj/machinery/atmospherics/valve/digital{
@@ -49006,7 +48979,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "oDQ" = (
 /obj/item/modular_computer/console/preset/trade,
@@ -49097,7 +49070,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "oEH" = (
 /obj/structure/cable/yellow{
@@ -49333,7 +49306,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "oIR" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
 "oIS" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -49732,7 +49705,7 @@
 /area/liberty/security/sechall)
 "oOi" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "oOn" = (
 /obj/structure/table/glass,
@@ -50463,7 +50436,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "oYJ" = (
 /obj/structure/largecrate/animal/welder_roach,
@@ -50506,7 +50479,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "oZW" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -50560,7 +50533,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "pbq" = (
 /obj/machinery/ai_slipper,
@@ -50608,7 +50581,7 @@
 /area/liberty/crew_quarters/bar)
 "pbT" = (
 /obj/structure/flora/pottedplant/crystal,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "pbZ" = (
 /obj/machinery/chemical_dispenser,
@@ -50958,7 +50931,7 @@
 	dir = 1;
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "pgU" = (
 /obj/structure/flora/small/bushc1,
@@ -51197,7 +51170,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "plb" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -51275,7 +51248,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "pnp" = (
 /obj/structure/table/standard{
@@ -51543,7 +51516,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "pqU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -51555,7 +51528,7 @@
 /area/liberty/dungeon/outside/campground)
 "pqZ" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "pra" = (
 /obj/structure/disposalpipe/segment,
@@ -51630,7 +51603,7 @@
 "pse" = (
 /obj/item/stool,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "psg" = (
 /obj/item/stock_parts/subspace/analyzer,
@@ -52354,7 +52327,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "pDd" = (
 /obj/random/junkfood/rotten,
@@ -52718,7 +52691,7 @@
 "pIV" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "pJd" = (
 /obj/structure/disposalpipe/segment{
@@ -53060,7 +53033,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "pMZ" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -53268,7 +53241,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "pPy" = (
 /obj/structure/disposalpipe/segment,
@@ -53320,7 +53293,7 @@
 	pixel_x = 28
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "pQc" = (
 /obj/machinery/door/airlock/command{
@@ -53626,7 +53599,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "pTp" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -54360,7 +54333,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "qec" = (
 /obj/effect/floor_decal/industrial/road/curvebig3,
@@ -54391,7 +54364,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "qeM" = (
 /obj/structure/sign/warning/nosmoking/small{
@@ -54700,7 +54673,7 @@
 	pixel_x = -25;
 	specialfunctions = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
 "qiK" = (
 /obj/structure/table/rack/shelf,
@@ -54988,7 +54961,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "qlV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -55403,7 +55376,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "qts" = (
 /obj/structure/disposalpipe/segment{
@@ -55420,7 +55393,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "qtH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -55458,7 +55431,7 @@
 "qua" = (
 /obj/structure/table/rack/shelf,
 /obj/random/material_resources/low_chance,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "quf" = (
 /turf/simulated/floor/rock,
@@ -55823,7 +55796,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "qCb" = (
 /obj/machinery/door/airlock/mining{
@@ -56011,7 +55984,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "qDY" = (
 /obj/machinery/computer/prisoner{
@@ -56088,7 +56061,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "qFy" = (
 /obj/structure/railing/grey{
@@ -56510,7 +56483,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "qKZ" = (
 /obj/structure/closet/secure_closet/personal/miner,
@@ -56808,7 +56781,7 @@
 /area/liberty/security/detectives_office)
 "qPF" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "qPG" = (
 /obj/structure/cable/cyan{
@@ -57283,7 +57256,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "qWM" = (
 /obj/machinery/door/window/northleft{
@@ -57447,7 +57420,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "qZL" = (
 /obj/structure/disposalpipe/segment,
@@ -57566,7 +57539,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "rbg" = (
 /obj/machinery/camera/network/colony_surface{
@@ -57610,7 +57583,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "rby" = (
 /obj/structure/disposalpipe/segment,
@@ -58045,7 +58018,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "riW" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "rja" = (
 /obj/effect/floor_decal/industrial/danger{
@@ -58398,7 +58371,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "roC" = (
 /obj/structure/cable/cyan{
@@ -58537,7 +58510,7 @@
 /area/colony)
 "rrB" = (
 /obj/machinery/light,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "rrQ" = (
 /obj/structure/table/steel,
@@ -58719,7 +58692,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "ruL" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "ruP" = (
 /obj/item/modular_computer/console/preset/engineering{
@@ -58755,7 +58728,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "rvg" = (
 /obj/machinery/power/thermoelectric,
@@ -58817,7 +58790,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "rvE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -59170,7 +59143,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "rAu" = (
 /obj/structure/cable/cyan{
@@ -59325,7 +59298,7 @@
 "rDd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "rDl" = (
 /obj/random/closet_tech/low_chance,
@@ -59424,7 +59397,7 @@
 "rFw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "rFH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -59519,7 +59492,7 @@
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "rGS" = (
 /obj/structure/table/rack/shelf,
@@ -59568,14 +59541,9 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/medical/genetics)
 "rHC" = (
-/obj/effect/window_lwall_spawn/reinforced,
-/obj/machinery/door/blast/regular{
-	id = "Armoury";
-	name = "Armory Shop"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/armory)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/white/greencorner,
+/area/liberty/medical/reception)
 "rHD" = (
 /obj/machinery/door/unpowered/simple/wood/saloon{
 	name = "Campground"
@@ -59699,7 +59667,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "rKl" = (
 /obj/structure/table/steel,
@@ -60016,7 +59984,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "rPi" = (
 /turf/simulated/floor/rock,
@@ -60645,7 +60613,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "rZz" = (
 /obj/structure/table/rack,
@@ -61073,7 +61041,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "sdI" = (
 /obj/structure/table/woodentable,
@@ -61194,7 +61162,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "sfr" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -61392,7 +61360,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "shP" = (
 /obj/structure/disposalpipe/segment,
@@ -61496,11 +61464,11 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "siS" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/robotics)
 "siV" = (
 /obj/structure/table/standard,
@@ -61656,7 +61624,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "slE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -61704,7 +61672,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "smu" = (
 /obj/item/mop,
@@ -62362,13 +62330,13 @@
 "suD" = (
 /obj/machinery/door/airlock/glass,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "suP" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "suV" = (
 /obj/structure/closet/crate/trashcart,
@@ -62870,7 +62838,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "sCx" = (
 /obj/structure/shuttle_part/mining{
@@ -63123,7 +63091,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "sFf" = (
 /obj/structure/railing{
@@ -63218,7 +63186,7 @@
 "sFX" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "sFY" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -63609,7 +63577,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "sLH" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -63960,7 +63928,7 @@
 "sRV" = (
 /obj/landmark/join/late/cryo,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "sRY" = (
 /turf/simulated/floor/tiled/steel/orangecorner,
@@ -64343,7 +64311,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
 "sXK" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -64389,7 +64357,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "sYq" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -64691,7 +64659,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tdW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -64738,7 +64706,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tez" = (
 /obj/structure/shuttle_part/mining{
@@ -64837,7 +64805,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tgu" = (
 /obj/structure/cable/green{
@@ -65178,7 +65146,7 @@
 	})
 "tln" = (
 /obj/structure/flora/pottedplant/star_root,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "tlH" = (
 /turf/simulated/floor/tiled/steel,
@@ -65459,7 +65427,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "tqm" = (
 /obj/structure/low_wall,
@@ -65509,7 +65477,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tqB" = (
 /obj/structure/sink{
@@ -65747,7 +65715,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "tuH" = (
 /obj/machinery/vending/engivend,
@@ -66414,7 +66382,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "tFJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -66859,7 +66827,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tLj" = (
 /obj/item/mecha_parts/mecha_equipment/tool/drill,
@@ -66983,7 +66951,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tNh" = (
 /obj/machinery/light{
@@ -67033,7 +67001,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tOb" = (
 /obj/structure/table/glass,
@@ -67266,7 +67234,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "tRb" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -67754,7 +67722,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tZv" = (
 /obj/structure/closet/cabinet,
@@ -67782,7 +67750,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "tZH" = (
 /obj/structure/disposalpipe/segment{
@@ -68064,7 +68032,7 @@
 	req_one_access = list(1,19,80)
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "ueN" = (
 /obj/machinery/light{
@@ -68140,7 +68108,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/box/red/corners,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "ufA" = (
 /obj/machinery/light{
@@ -68200,7 +68168,7 @@
 /area/liberty/security/detectives_office)
 "ufN" = (
 /obj/machinery/vending/props,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "ufU" = (
 /obj/effect/floor_decal/industrial/warningwhite{
@@ -68602,14 +68570,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "ulN" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
 /obj/machinery/camera/network/cargo,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "ulS" = (
 /obj/machinery/door/airlock/security{
@@ -69216,7 +69184,7 @@
 /area/liberty/engineering/atmos)
 "uve" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "uvo" = (
 /obj/structure/table/rack,
@@ -69286,7 +69254,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "uwk" = (
 /obj/random/scrap/dense_weighted/low_chance,
@@ -69366,7 +69334,7 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "uxB" = (
 /obj/structure/table/standard,
@@ -69404,7 +69372,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/colony_underground,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "uyb" = (
 /obj/structure/railing/grey,
@@ -69502,7 +69470,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "uzy" = (
 /obj/effect/decal/cleanable/dirt,
@@ -69721,7 +69689,7 @@
 /area/liberty/absolutism/vectorrooms)
 "uCt" = (
 /obj/machinery/door/airlock/maintenance_rnd,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "uCy" = (
 /obj/structure/railing{
@@ -69819,7 +69787,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "uEq" = (
 /obj/random/spider_trap_burrowing/low_chance,
@@ -69932,7 +69900,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "uGY" = (
 /turf/simulated/shuttle/wall/science{
@@ -70635,7 +70603,7 @@
 	light_color = "#b9e8ea"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "uTx" = (
 /obj/structure/cable/cyan{
@@ -70711,7 +70679,7 @@
 /area/liberty/security/sechall)
 "uUr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "uUW" = (
 /obj/effect/floor_decal/industrial/road/warning4,
@@ -70832,7 +70800,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "uXd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -71366,7 +71334,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "vhe" = (
 /obj/structure/shuttle_part/mining{
@@ -71525,7 +71493,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "vjL" = (
 /turf/simulated/floor/wood,
@@ -71741,7 +71709,7 @@
 /obj/machinery/camera/network/cargo{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "vmC" = (
 /obj/structure/table/standard,
@@ -71767,7 +71735,7 @@
 /obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "vmW" = (
 /obj/structure/flora/ausbushes/sunnybush,
@@ -72255,7 +72223,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "vuP" = (
 /obj/structure/cable/green{
@@ -72406,7 +72374,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "vwl" = (
 /obj/structure/table/standard,
@@ -72784,7 +72752,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "vDe" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -72860,7 +72828,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "vEh" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -72909,7 +72877,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "vEE" = (
 /obj/machinery/constructable_frame/machine_frame{
@@ -73180,7 +73148,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "vIC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -73394,7 +73362,7 @@
 	},
 /obj/landmark/join/start/assistant,
 /obj/effect/floor_decal/industrial/stand_clear/white,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "vMt" = (
 /turf/simulated/shuttle/wall/mining{
@@ -73771,7 +73739,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "vRn" = (
 /obj/structure/invislight/outside,
@@ -73820,7 +73788,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "vSj" = (
 /obj/structure/table/steel,
@@ -73991,7 +73959,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/security/sechall)
 "vUH" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/pros/shuttle)
 "vUN" = (
 /obj/machinery/computer/mecha,
@@ -74145,7 +74113,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "vXE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -74457,7 +74425,7 @@
 /obj/effect/floor_decal/industrial/warningred/corner{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "wbT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -74829,7 +74797,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "whf" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "whg" = (
 /obj/structure/table/steel,
@@ -74858,7 +74826,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters)
 "whL" = (
 /obj/structure/disposalpipe/segment,
@@ -75424,7 +75392,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wra" = (
 /obj/structure/reagent_dispensers/watertank/derelict,
@@ -75562,7 +75530,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "wsO" = (
 /obj/machinery/firealarm{
@@ -75743,7 +75711,7 @@
 "wvo" = (
 /obj/effect/floor_decal/industrial/outline,
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "wvp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -75839,7 +75807,7 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "wxf" = (
 /obj/structure/disposalpipe/segment,
@@ -75987,7 +75955,7 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "wzr" = (
 /obj/effect/floor_decal/industrial/hatch/red,
@@ -76055,7 +76023,7 @@
 /obj/machinery/camera/network/colony_underground{
 	dir = 8
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wzS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -76166,7 +76134,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wCj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -76189,7 +76157,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
 "wCt" = (
 /obj/effect/decal/cleanable/blood,
@@ -76254,7 +76222,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "wCW" = (
 /obj/machinery/door/airlock/command{
@@ -76401,7 +76369,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wFl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -76864,7 +76832,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wLK" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
@@ -77011,7 +76979,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/surface_maints_1)
 "wNJ" = (
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wNS" = (
 /turf/simulated/wall/r_wall,
@@ -77579,7 +77547,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "wWs" = (
 /obj/structure/cable/cyan{
@@ -77724,7 +77692,7 @@
 	dir = 1;
 	pixel_y = -2
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "wZi" = (
 /obj/effect/decal/cleanable/spiderling_remains,
@@ -77911,7 +77879,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "xch" = (
 /obj/machinery/light/small,
@@ -78014,7 +77982,7 @@
 /obj/item/modular_computer/console/preset/medical/monitor{
 	pixel_y = 2
 	},
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
 "xdM" = (
 /obj/structure/flora/ausbushes/sunnybush,
@@ -78044,7 +78012,7 @@
 /area/liberty/security/hut_cell2)
 "xer" = (
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "xex" = (
 /obj/structure/window/reinforced{
@@ -78348,7 +78316,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "xiN" = (
 /obj/structure/sink{
@@ -78373,7 +78341,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "xjc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -78407,7 +78375,6 @@
 	dir = 8;
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
 /area/liberty/hallway/surface/section1)
 "xjh" = (
 /obj/structure/cable/cyan{
@@ -78509,7 +78476,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "xlc" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
 "xlj" = (
 /obj/structure/multiz/stairs/enter/bottom,
@@ -78709,7 +78676,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "xoL" = (
 /obj/structure/railing{
@@ -78756,7 +78723,7 @@
 "xpr" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "xpu" = (
 /obj/machinery/light/small{
@@ -79152,7 +79119,7 @@
 /area/liberty/security/prisoncells)
 "xuW" = (
 /obj/structure/invislight/outside,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/pros/shuttle)
 "xvd" = (
 /obj/machinery/autolathe/industrial,
@@ -79168,7 +79135,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "xvl" = (
 /obj/machinery/vending/gamers,
@@ -79230,7 +79197,7 @@
 "xwj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "xwq" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -79322,7 +79289,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "xxU" = (
 /obj/machinery/light{
@@ -79614,7 +79581,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "xDb" = (
 /obj/structure/disposalpipe/segment{
@@ -79637,7 +79604,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "xDl" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -79690,7 +79657,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "xDP" = (
 /obj/effect/decal/cleanable/rubble,
@@ -79914,7 +79881,7 @@
 /obj/machinery/recharger,
 /obj/item/cell/small,
 /obj/item/cell/small,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "xGU" = (
 /obj/structure/cable/green{
@@ -80268,7 +80235,7 @@
 /area/liberty/medical/medeva)
 "xNq" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/docking)
 "xNs" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -80379,7 +80346,7 @@
 "xPw" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "xPD" = (
 /obj/machinery/power/generator,
@@ -80746,7 +80713,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "xUi" = (
 /turf/simulated/shuttle/wall/mining{
@@ -80770,7 +80737,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/tiled/dark,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "xUm" = (
 /obj/machinery/atmospherics/pipe/manifold/visible,
@@ -81993,7 +81960,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "ylp" = (
 /obj/structure/window/reinforced{
@@ -133105,12 +133072,12 @@ pfd
 lYo
 cjQ
 dgr
-ksD
-ksD
+ruL
+ruL
 rvA
 sCY
 rvA
-ksD
+ruL
 dgr
 fNy
 sRY
@@ -133307,12 +133274,12 @@ fRI
 lYo
 maa
 lFW
-ksD
+ruL
 azW
 bIK
 iOw
 bIK
-lNI
+lvZ
 dgr
 kiG
 sRY
@@ -133716,7 +133683,7 @@ lvZ
 ehM
 pLE
 ehM
-lNI
+lvZ
 dgr
 lgE
 dSc
@@ -134122,8 +134089,8 @@ lvZ
 dqH
 uTu
 dgr
-ksD
-ksD
+ruL
+ruL
 ufy
 ruL
 lgE
@@ -134321,7 +134288,7 @@ jdG
 nEK
 lum
 sLE
-cVp
+lwp
 wCp
 fxu
 wCp
@@ -134526,7 +134493,7 @@ uEj
 lcP
 vmJ
 dgr
-ksD
+ruL
 qqk
 ndd
 qWL
@@ -139985,7 +139952,7 @@ eNG
 lYo
 rug
 wvo
-xlc
+rHC
 erp
 knU
 fWR
@@ -140187,10 +140154,10 @@ eNG
 lYo
 rug
 wvo
-xlc
+rHC
 erp
 eGP
-xlc
+rHC
 liu
 itx
 itx
@@ -141197,10 +141164,10 @@ eNG
 lYo
 rug
 wvo
-xlc
+rHC
 erp
 eGP
-xlc
+rHC
 chj
 itx
 itx
@@ -141399,7 +141366,7 @@ eNG
 lYo
 rug
 wvo
-xlc
+rHC
 erp
 nOr
 jYW
@@ -141601,7 +141568,7 @@ eNG
 lYo
 tBa
 dLy
-xlc
+rHC
 lpn
 nuZ
 nuZ
@@ -175882,7 +175849,7 @@ hDO
 hDO
 kwb
 wje
-rHC
+wje
 hDO
 hDO
 hDO
@@ -178319,7 +178286,7 @@ hrO
 xWw
 hKn
 qmP
-cXT
+nFK
 veD
 saN
 rgr
@@ -178521,7 +178488,7 @@ hrO
 lWX
 woC
 lWX
-cXT
+nFK
 veD
 saN
 aRj
@@ -178723,7 +178690,7 @@ fmY
 bfh
 qmP
 qJU
-cXT
+nFK
 veD
 saN
 rgr
@@ -178925,7 +178892,7 @@ fmY
 lWX
 mfA
 wpl
-cXT
+nFK
 vSS
 oTb
 gTX
@@ -180541,7 +180508,7 @@ eZJ
 vvO
 col
 pvf
-kVq
+nFK
 veD
 saN
 rgr
@@ -180743,7 +180710,7 @@ bzZ
 bzZ
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 rgr
@@ -180945,7 +180912,7 @@ bzZ
 fcI
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 rgr
@@ -181147,7 +181114,7 @@ bzZ
 eDn
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 aRj
@@ -181955,7 +181922,7 @@ bzZ
 vzJ
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 aRj
@@ -182157,7 +182124,7 @@ bzZ
 dJE
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 rgr
@@ -182359,7 +182326,7 @@ bzZ
 bzZ
 bzZ
 unw
-kVq
+nFK
 veD
 saN
 rgr
@@ -182561,7 +182528,7 @@ baD
 xWn
 hcB
 umA
-kVq
+nFK
 veD
 saN
 rgr
@@ -185591,7 +185558,7 @@ eZJ
 vvO
 col
 pvf
-kVq
+nFK
 veD
 ngd
 rgr

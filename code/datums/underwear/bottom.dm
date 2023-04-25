@@ -62,7 +62,7 @@
 	has_color = TRUE
 
 /datum/category_item/underwear/bottom/fishnet_lower
-	name = "Fishnets"
+	name = "Thong with Fishnets"
 	icon_state = "fishnet_lower"
 
 /datum/category_item/underwear/bottom/striped_panties
@@ -74,13 +74,13 @@
 	name = "Long John Bottoms"
 	icon_state = "ljonb"
 	has_color = TRUE
-	
+
 /datum/category_item/underwear/bottom/leotard
-	name = "Leotard"
+	name = "Leotard, feminine"
 	icon_state = "leotard_bra_color"
 	has_color = TRUE
-	
+
 /datum/category_item/underwear/bottom/leotard_turt
-	name = "Leotard Turtleneck"
+	name = "Leotard Turtleneck, feminine"
 	icon_state = "leotard_turt_color"
 	has_color = TRUE

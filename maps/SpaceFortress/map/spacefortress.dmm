@@ -757,16 +757,16 @@
 /area/outpost/abandoned_fortress)
 "cD" = (
 /obj/structure/bed/roller,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "cE" = (
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "cF" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "cG" = (
 /obj/structure/table/reinforced,
@@ -778,7 +778,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "cI" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -981,7 +981,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "dl" = (
 /obj/structure/table/reinforced,
@@ -1049,13 +1049,13 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "ds" = (
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "dt" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -1173,7 +1173,7 @@
 /area/outpost/abandoned_fortress)
 "dK" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "dL" = (
 /obj/structure/table/glass,
@@ -2047,7 +2047,7 @@
 /area/outpost/abandoned_fortress)
 "ge" = (
 /obj/random/cluster/xenomorphs,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "gf" = (
 /obj/structure/table/rack,
@@ -2573,7 +2573,7 @@
 /area/outpost/abandoned_fortress)
 "hG" = (
 /mob/living/carbon/superior_animal/xenomorph/warrior/shrike/praetorian/queen,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "hH" = (
 /obj/random/cluster/xenomorphs,
@@ -2703,7 +2703,7 @@
 /area/outpost/abandoned_fortress)
 "ie" = (
 /obj/item/material/shard,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "if" = (
 /obj/item/material/shard,
@@ -4002,7 +4002,7 @@
 /area/outpost/abandoned_fortress)
 "lR" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "lS" = (
 /obj/structure/table/rack/shelf,
@@ -4029,7 +4029,7 @@
 "lV" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "lW" = (
 /obj/structure/table/rack/shelf,
@@ -4097,7 +4097,7 @@
 /area/outpost/abandoned_fortress)
 "mf" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mg" = (
 /obj/random/structures/low_chance,
@@ -4132,7 +4132,7 @@
 /area/outpost/abandoned_fortress)
 "mk" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "ml" = (
 /obj/item/device/radio/off{
@@ -4209,7 +4209,7 @@
 /area/outpost/abandoned_fortress)
 "mv" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mw" = (
 /obj/random/closet_maintloot,
@@ -4248,15 +4248,15 @@
 "mC" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mD" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mE" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mF" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -4265,12 +4265,12 @@
 "mG" = (
 /obj/random/cluster/xenomorphs,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mH" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/outpost/abandoned_fortress)
 "mI" = (
 /obj/machinery/light/small{

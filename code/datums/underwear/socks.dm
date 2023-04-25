@@ -61,9 +61,9 @@
 	icon_state = "rainbow_knee"
 
 /datum/category_item/underwear/socks/fishnet
-	name = "Fishnet"
+	name = "Fishnets"
 	icon_state = "fishnet"
-	
+
 /datum/category_item/underwear/socks/leggings
 	name = "Leggings"
 	icon_state = "leggings"

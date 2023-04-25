@@ -395,7 +395,12 @@
 /obj/item/clothing/accessory/job/cape/medical
 	name = "medical cloak"
 	icon_state = "medcloak"
-	desc = "A white cloak with a single dark-cyan stripe at edge."
+	desc = "A white cloak with green stripes and a medical cross on its back."
+
+/obj/item/clothing/accessory/job/poncho/medical
+	name = "medical poncho"
+	desc = "A sleek, warm and short poncho in the colors of CAPSA Group. Meant to be worn on top of armor or any other clothing for additional warmth... and style."
+	icon_state = "capsa_poncho"
 
 /obj/item/clothing/accessory/job/cape/science
 	name = "science cloak"
