@@ -153,16 +153,6 @@
 /turf/simulated/wall,
 /area/liberty/crew_quarters/fitness)
 "adb" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/mousetraps,
-/obj/item/clothing/accessory/armband/science{
-	name = "custodial armband"
-	},
-/obj/item/clothing/accessory/armband/science{
-	name = "custodial armband"
-	},
-/obj/item/clothing/head/beret/purple,
-/obj/item/clothing/head/beanie/purple,
 /obj/machinery/button/remote/blast_door{
 	dir = 8;
 	id = "Janitorial";
@@ -171,8 +161,7 @@
 	pixel_y = 8;
 	req_access = list(26)
 	},
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
+/obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/crew_quarters/janitor)
 "adc" = (
@@ -430,6 +419,17 @@
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
+"ahs" = (
+/obj/structure/table/rack/shelf,
+/obj/item/tool/shovel{
+	pixel_x = -8
+	},
+/obj/item/tool/shovel,
+/obj/item/tool/shovel{
+	pixel_x = 8
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/quartermaster/miningdock)
 "aht" = (
 /obj/structure/catwalk,
 /obj/structure/cable/yellow{
@@ -8455,13 +8455,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "cnE" = (
 /obj/structure/table/reinforced,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
@@ -8469,6 +8462,11 @@
 	pixel_x = 28
 	},
 /obj/structure/window/reinforced,
+/obj/item/soap,
+/obj/item/storage/box/lights/mixed,
+/obj/item/grenade/chem_grenade/antiweed,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/storage/bag/trash,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/liberty/crew_quarters/janitor)
 "cnF" = (
@@ -14870,7 +14868,13 @@
 /area/liberty/hallway/surface/section1)
 "dYN" = (
 /obj/structure/table/rack/shelf,
-/obj/random/firstaid/low_chance,
+/obj/item/tool/pickaxe{
+	pixel_y = 8
+	},
+/obj/item/tool/pickaxe,
+/obj/item/tool/pickaxe{
+	pixel_y = -8
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "dYU" = (
@@ -33368,16 +33372,11 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor1east)
 "joy" = (
-/obj/structure/table/rack/shelf,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/soap,
-/obj/item/storage/box/lights/mixed,
-/obj/item/grenade/chem_grenade/antiweed,
-/obj/item/storage/bag/trash,
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/crew_quarters/janitor)
 "joC" = (
 /obj/effect/decal/cleanable/rubble,
@@ -38601,10 +38600,6 @@
 /area/liberty/crew_quarters/botanist)
 "kRz" = (
 /obj/structure/closet/secure_closet/personal/miner,
-/obj/item/storage/firstaid/ifak,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
-/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 /obj/machinery/firealarm{
 	pixel_y = 32
 	},
@@ -42089,6 +42084,17 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/turret_protected/ai)
+"lPA" = (
+/obj/item/storage/firstaid/ifak{
+	pixel_x = -8
+	},
+/obj/structure/table/rack/shelf,
+/obj/item/storage/firstaid/ifak,
+/obj/item/storage/firstaid/ifak{
+	pixel_x = 8
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/quartermaster/miningdock)
 "lPB" = (
 /obj/structure/table/steel,
 /obj/random/lowkeyrandom/low_chance,
@@ -56461,6 +56467,18 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
+"pUn" = (
+/obj/structure/table/rack/shelf,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/obj/item/caution,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/liberty/crew_quarters/janitor)
 "pUo" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/tiled/techmaint,
@@ -59445,10 +59463,6 @@
 /area/liberty/rnd/docking)
 "qKZ" = (
 /obj/structure/closet/secure_closet/personal/miner,
-/obj/item/storage/firstaid/ifak,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
-/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "qLd" = (
@@ -62979,8 +62993,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "rNI" = (
 /obj/structure/table/rack/shelf,
-/obj/random/powercell/low_chance,
-/obj/random/powercell/low_chance,
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/machinery/light{
 	dir = 1
@@ -62988,6 +63000,13 @@
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
+/obj/item/device/lighting/toggleable/flashlight/heavy{
+	pixel_y = 8
+	},
+/obj/item/device/lighting/toggleable/flashlight/heavy{
+	pixel_y = -8
+	},
+/obj/item/device/lighting/toggleable/flashlight/heavy,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "rNL" = (
@@ -64398,14 +64417,8 @@
 "sfV" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/mousetraps,
-/obj/item/clothing/accessory/armband/science{
-	name = "custodial armband"
-	},
-/obj/item/clothing/accessory/armband/science{
-	name = "custodial armband"
-	},
-/obj/item/clothing/head/beret/purple,
-/obj/item/clothing/head/beanie/purple,
+/obj/item/storage/box/mousetraps,
+/obj/item/storage/box/mousetraps,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/liberty/crew_quarters/janitor)
 "sfY" = (
@@ -78219,8 +78232,14 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1north)
 "wcl" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/ifak,
+/obj/structure/table/rack/shelf,
+/obj/item/gun/projectile/shotgun/pump{
+	pixel_y = 8
+	},
+/obj/item/gun/projectile/shotgun/pump,
+/obj/item/gun/projectile/shotgun/pump{
+	pixel_y = -8
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "wcp" = (
@@ -78578,7 +78597,15 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/swo/quarters)
 "wgX" = (
-/obj/structure/closet/l3closet/janitor,
+/obj/structure/table/rack/shelf,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/liberty/crew_quarters/janitor)
 "wgY" = (
@@ -95228,7 +95255,7 @@ kbc
 uHc
 qcn
 uhM
-wgX
+pUn
 let
 cnE
 yfl
@@ -149370,7 +149397,7 @@ emu
 emu
 emu
 wtD
-dYN
+ahs
 uLd
 yij
 wtD
@@ -150584,7 +150611,7 @@ uyV
 vXj
 wtD
 wcl
-wcl
+lPA
 wtD
 wEo
 wLZ
