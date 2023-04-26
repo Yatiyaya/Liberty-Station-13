@@ -887,12 +887,26 @@ var/list/flooring_types
 	name = "snow"
 	icon = 'icons/turf/flooring/snows.dmi'
 	icon_base = "snow"
-	has_base_range = 4
+	has_base_range = 2
 	flags = TURF_REMOVE_SHOVEL | TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
 	plating_type = /decl/flooring/dirt
 	footstep_sound = "grass"
 	floor_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
+
+/*Ice Water*/
+/decl/flooring/icewater
+	name = "icewater"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_base = "ice_water"
+	has_base_range = 2
+	flags = TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
+	plating_type = /decl/flooring/dirt
+	footstep_sound = "ice"
+	floor_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+	resistance = RESISTANCE_TOUGH
+	health = 9999999
 
 /*Dirt*/
 /decl/flooring/dirt
