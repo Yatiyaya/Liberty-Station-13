@@ -143,9 +143,11 @@
 			return custom_emote(m_type, message)
 
 		if ("subtle")
-
-			//if(silent && silent > 0 && findtext(message,"\"",1, null) > 0)
-			//	return //This check does not work and I have no idea why, I'm leaving it in for reference.
+			var/list/non_admin_ghosts	//Checks to see if a ghost is an admin or not. If not, does not get to see the message. This is done for rule enforcement but to prevent harassment by players. Or.. flash-banging players with cursed shit.
+			non_admin_ghosts = list(GLOB.dead_mob_list)
+			for(var/mob/ghostie in GLOB.dead_mob_list)
+				if(ghostie.client && check_rights_for(ghostie.client, R_ADMIN))
+					non_admin_ghosts -= ghostie
 
 			if (src.client)
 				if (client.prefs.muted & MUTE_IC)
