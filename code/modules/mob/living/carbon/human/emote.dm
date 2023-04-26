@@ -157,7 +157,8 @@
 				return
 			if(!(message))
 				return
-			return custom_emote(m_type, "<I>[message]</I>", 1)
+			return custom_emote(m_type, "<I>[message]</I>", 7, TRUE)
+			// The '7' should account for tile-range visible. We don't want subtle emotes to be abused; so they should only be anti-ghost.
 
 		if("pain")
 			if(!message)
