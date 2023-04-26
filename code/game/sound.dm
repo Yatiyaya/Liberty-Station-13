@@ -251,6 +251,12 @@ var/list/footstep_ice = list(\
 		'sound/effects/footstep/ice4.ogg',\
 		'sound/effects/footstep/ice5.ogg')
 
+var/list/footstep_snow = list(\
+		'sound/effects/footstep/snow1.ogg',\
+		'sound/effects/footstep/snow2.ogg',\
+		'sound/effects/footstep/snow3.ogg',\
+		'sound/effects/footstep/snow4.ogg')
+
 var/list/footstep_gravel = list(\
 		'sound/effects/footstep/gravel1.wav',\
 		'sound/effects/footstep/gravel2.wav',\
@@ -315,6 +321,8 @@ var/list/rummage_sound = list(\
 			toplay = pick(footstep_grass)
 		if ("ice")
 			toplay = pick(footstep_ice)
+		if ("snow")
+			toplay = pick(footstep_snow)
 		if ("gravel")
 			toplay = pick(footstep_gravel)
 		if ("hull")
