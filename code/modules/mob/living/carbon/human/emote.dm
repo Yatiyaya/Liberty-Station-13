@@ -143,12 +143,6 @@
 			return custom_emote(m_type, message)
 
 		if ("subtle")
-			var/list/non_admin_ghosts	//Checks to see if a ghost is an admin or not. If not, does not get to see the message. This is done for rule enforcement but to prevent harassment by players. Or.. flash-banging players with cursed shit.
-			non_admin_ghosts = list(GLOB.dead_mob_list)
-			for(var/mob/ghostie in GLOB.dead_mob_list)
-				if(ghostie.client && check_rights_for(ghostie.client, R_ADMIN))
-					non_admin_ghosts -= ghostie
-
 			if (src.client)
 				if (client.prefs.muted & MUTE_IC)
 					src << "\red You cannot send IC messages (muted)."
