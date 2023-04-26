@@ -899,7 +899,7 @@ var/list/flooring_types
 	name = "icewater"
 	icon = 'icons/turf/flooring/icewater.dmi'
 	icon_base = "ice_water"
-	has_base_range = 4
+	has_base_range = 2
 	flags = TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
 	plating_type = /decl/flooring/dirt
 	footstep_sound = "ice"
