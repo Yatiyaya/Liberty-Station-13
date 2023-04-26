@@ -896,7 +896,8 @@ var/list/flooring_types
 
 /*Ice Water*/
 /decl/flooring/icewater
-	name = "icewater"
+	name = "frozen water"
+	desc = "Frozen water, solid enough to stand on, looks too thick to dig through without machines"
 	icon = 'icons/turf/flooring/icewater.dmi'
 	icon_base = "ice_water"
 	has_base_range = 2
