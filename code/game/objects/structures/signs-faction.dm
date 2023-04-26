@@ -29,8 +29,8 @@
 	icon_state = "frozenstar"
 
 /obj/structure/sign/faction/moebius
-	name = "CAPSA Laboratories"
-	desc = "A sign depicting the insignia of CAPSA, the pharmaceutical."
+	name = "Phokorus Institute of Research and Science"
+	desc = "A sign depicting the insignia of PIRS, the forefront of scientific progress."
 	icon_state = "moebius"
 
 /obj/structure/sign/faction/neotheology
@@ -61,6 +61,11 @@
 	name = "Terra-Therma Union"
 	desc = "A sign depicting the insignia of the Terra-Therma Worker's Union, the clan of mechanists, engineers, and technicians."
 	icon_state = "technomancers"
+
+/obj/structure/sign/faction/capsa
+	name = "Chirurgeons and Pharmaceutical Sciences Association"
+	desc = "A sign depicting the insignia of CAPSA Group, medical progress and excellence universe-wide."
+	icon_state = "capsa"
 
 /obj/structure/sign/faction/excelsior
 	name = "Excelsior"

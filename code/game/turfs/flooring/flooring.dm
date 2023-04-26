@@ -408,13 +408,17 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/steel/orangecorner
 
+/decl/flooring/tiling/steel/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/steel/greencorner
+
+/decl/flooring/tiling/steel/violetcorener
+	icon_base = "violetcorner"
+	build_type = /obj/item/stack/tile/floor/steel/violetcorener
+
 /decl/flooring/tiling/steel/cyancorner
 	icon_base = "cyancorner"
 	build_type = /obj/item/stack/tile/floor/steel/cyancorner
-
-/decl/flooring/tiling/steel/violetcorener
-	icon_base = "violetcorener"
-	build_type = /obj/item/stack/tile/floor/steel/violetcorener
 
 /decl/flooring/tiling/steel/monofloor
 	icon_base = "monofloor"
@@ -488,13 +492,17 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/white/orangecorner
 
+/decl/flooring/tiling/white/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/white/greencorner
+
+/decl/flooring/tiling/white/violetcorener
+	icon_base = "violetcorner"
+	build_type = /obj/item/stack/tile/floor/white/violetcorener
+
 /decl/flooring/tiling/white/cyancorner
 	icon_base = "cyancorner"
 	build_type = /obj/item/stack/tile/floor/white/cyancorner
-
-/decl/flooring/tiling/white/violetcorener
-	icon_base = "violetcorener"
-	build_type = /obj/item/stack/tile/floor/white/violetcorener
 
 /decl/flooring/tiling/white/monofloor
 	icon_base = "monofloor"
@@ -556,13 +564,17 @@ var/list/flooring_types
 	icon_base = "orangecorner"
 	build_type = /obj/item/stack/tile/floor/dark/orangecorner
 
+/decl/flooring/tiling/dark/greencorner
+	icon_base = "greencorner"
+	build_type = /obj/item/stack/tile/floor/dark/greencorner
+
+/decl/flooring/tiling/dark/violetcorener
+	icon_base = "violetcorner"
+	build_type = /obj/item/stack/tile/floor/dark/violetcorener
+
 /decl/flooring/tiling/dark/cyancorner
 	icon_base = "cyancorner"
 	build_type = /obj/item/stack/tile/floor/dark/cyancorner
-
-/decl/flooring/tiling/dark/violetcorener
-	icon_base = "violetcorener"
-	build_type = /obj/item/stack/tile/floor/dark/violetcorener
 
 /decl/flooring/tiling/dark/monofloor
 	icon_base = "monofloor"
@@ -875,12 +887,26 @@ var/list/flooring_types
 	name = "snow"
 	icon = 'icons/turf/flooring/snows.dmi'
 	icon_base = "snow"
-	has_base_range = 4
+	has_base_range = 2
 	flags = TURF_REMOVE_SHOVEL | TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
 	plating_type = /decl/flooring/dirt
 	footstep_sound = "asteroid"
 	floor_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
+
+/*Ice Water*/
+/decl/flooring/icewater
+	name = "icewater"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_base = "ice_water"
+	has_base_range = 2
+	flags = TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
+	plating_type = /decl/flooring/dirt
+	footstep_sound = "ice"
+	floor_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+	resistance = RESISTANCE_TOUGH
+	health = 9999999
 
 /*Dirt*/
 /decl/flooring/dirt

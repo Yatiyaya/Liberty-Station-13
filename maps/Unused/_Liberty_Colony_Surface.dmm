@@ -291,11 +291,11 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "aaN" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "aaO" = (
 /obj/structure/table/reinforced,
@@ -328,7 +328,7 @@
 	dir = 1
 	},
 /obj/machinery/computer/shuttle_control/multi/surface_transport,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "aaS" = (
 /obj/structure/flora/big/rocks3,
@@ -715,7 +715,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "abR" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -793,7 +793,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "ace" = (
 /obj/structure/catwalk,
@@ -1348,7 +1348,7 @@
 	})
 "adw" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/nuke_storage{
 	name = "\improper Clinic"
 	})
@@ -1431,7 +1431,7 @@
 /area/liberty/engineering/shield_generator)
 "adE" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "adF" = (
 /obj/structure/table/rack/shelf,
@@ -1596,11 +1596,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "adV" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "adW" = (
 /obj/item/storage/firstaid/adv,
@@ -5226,7 +5226,7 @@
 	dir = 1;
 	icon_state = "box_corners_white"
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "aBB" = (
 /obj/structure/flora/small/busha2,
@@ -9281,7 +9281,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "eqp" = (
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/nuke_storage{
 	name = "\improper Clinic"
 	})
@@ -10265,7 +10265,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "fuk" = (
 /obj/structure/table/rack,
@@ -12887,7 +12887,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "hQN" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -14412,7 +14412,7 @@
 /obj/machinery/camera/network/security{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "jaZ" = (
 /obj/machinery/power/tracker,
@@ -14489,7 +14489,7 @@
 	},
 /obj/machinery/camera/network/third_section,
 /obj/machinery/computer/prisoner,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "jhQ" = (
 /obj/effect/floor_decal/spline/plain{
@@ -16349,7 +16349,7 @@
 	pixel_x = 22
 	},
 /obj/item/modular_computer/console/preset/command/access,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "lpy" = (
 /obj/machinery/light{
@@ -16961,7 +16961,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "lWR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -17231,7 +17231,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "mjb" = (
 /obj/structure/table/woodentable,
@@ -17500,7 +17500,7 @@
 /obj/structure/closet/wall_mounted{
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "mvh" = (
 /obj/machinery/light{
@@ -18527,7 +18527,7 @@
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/nuke_storage{
 	name = "\improper Clinic"
 	})
@@ -18845,7 +18845,7 @@
 /area/liberty/outside/forest)
 "nWc" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "nWP" = (
 /obj/structure/disposalpipe/segment,
@@ -20539,7 +20539,7 @@
 /obj/item/modular_computer/laptop/preset/records{
 	pixel_y = 10
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "pCj" = (
 /obj/machinery/hologram/holopad,
@@ -22133,7 +22133,7 @@
 "qZi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "qZz" = (
 /obj/structure/flora/small/lavarock1,
@@ -22192,7 +22192,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "rdr" = (
 /obj/machinery/light{
@@ -22251,7 +22251,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "rgp" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "rgG" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -23130,7 +23130,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "rTe" = (
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "rTq" = (
 /obj/structure/flora/ausbushes/sunnybush,
@@ -23382,7 +23382,7 @@
 /obj/structure/table/rack/shelf,
 /obj/item/storage/pouch/engineering_tools,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/security/tactical_blackshield)
 "sgP" = (
 /obj/structure/bed/chair{
@@ -23768,7 +23768,7 @@
 /area/liberty/outside/lakeside)
 "sAh" = (
 /obj/structure/medical_stand,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/nuke_storage{
 	name = "\improper Clinic"
 	})
@@ -24428,7 +24428,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "tlO" = (
 /obj/machinery/power/apc{
@@ -24596,7 +24596,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "tuR" = (
 /obj/structure/flora/ausbushes/stalkybush,
@@ -24874,7 +24874,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/nuke_storage{
 	name = "\improper Clinic"
 	})
@@ -26129,7 +26129,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest)
 "uPO" = (
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "uQf" = (
 /obj/machinery/light{
@@ -26202,7 +26202,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "uVp" = (
 /obj/structure/disposalpipe/segment{
@@ -28182,7 +28182,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "wSJ" = (
 /obj/machinery/alarm{
@@ -28300,7 +28300,7 @@
 /area/liberty/outside/forest)
 "wZw" = (
 /obj/structure/bed/chair/office/dark,
-/turf/simulated/floor/tiled/dark/cyancorner,
+/turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/hallway/surface/section1)
 "wZF" = (
 /obj/structure/flora/small/bushb2,
@@ -28388,7 +28388,7 @@
 "xgw" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/medical,
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "xgI" = (
 /obj/structure/catwalk,
@@ -28530,7 +28530,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/security/armory_blackshield)
 "xmP" = (
-/turf/simulated/floor/tiled/white/cyancorner,
+/turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/security/triage_blackshield)
 "xne" = (
 /obj/machinery/door/blast/regular{
@@ -29031,7 +29031,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/cyancorner,
+/turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/surface/section1)
 "xZr" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,

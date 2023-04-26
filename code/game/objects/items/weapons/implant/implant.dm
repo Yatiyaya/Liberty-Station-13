@@ -20,6 +20,7 @@
 	var/cruciform_resist = FALSE
 	var/is_metal = TRUE
 	var/scanner_hidden = FALSE
+	var/is_deathalarm = FALSE
 
 	var/overlay_icon = "deathalarm"
 
@@ -148,3 +149,15 @@
 
 /obj/item/implant/proc/get_scanner_name()
 	return name
+
+/obj/item/implant/proc/clean_of_death_alarms()
+	if(is_deathalarm)
+		var/death_alarm_count = 0
+		for(var/obj/item/implant/possable_death_alarm in wearer.contents)
+			if(possable_death_alarm.is_deathalarm)
+				death_alarm_count += 1
+		if(death_alarm_count > 1)
+			return FALSE
+		else
+			return TRUE
+	return TRUE

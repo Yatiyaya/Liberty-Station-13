@@ -156,9 +156,9 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	friendly_to_colony = TRUE
 
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/junkbot
-	name = "Prospector Junkbot"
-	desc = "A prospector forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Phokorus Institute the prospector salvagers made these bots to function as disposable shields or \
-	to gaurd specific locations since they do not wander. While lightweight, fast, and capable of a wickedly damaging slash with its armblade, they are not that durable."
+	name = "Fontaine Junkbot"
+	desc = "A Fontaine forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Phokorus Institute the Fontaine shipbreakers made these bots to function as disposable shields or \
+	to guard specific locations since they do not wander. While lightweight, fast, and capable of a wickedly damaging slash with its armblade, they are not that durable."
 	icon_state = "junkbot"
 	health = 125
 	maxHealth = 125

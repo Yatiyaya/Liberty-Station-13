@@ -46,3 +46,9 @@
 	name = "medbay"
 	desc = "The Intergalactic symbol of Medical institutions. You'll probably get help here."
 	icon_state = "lifestar"
+
+/obj/structure/sign/medsci/capsa
+	name = "CAPSA Medical"
+	desc = "The Intergalactic logo denoting a CAPSA Medical institution. A sanctuary for those in need of healing."
+	icon_state = "capsa"
+

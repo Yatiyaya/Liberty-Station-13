@@ -112,7 +112,7 @@
 #define COMSIG_HUMAN_ROBOTIC_MODIFICATION "human_robotic_modification"
 #define COMSIG_STAT "current_stat"							   //current stat
 #define COMSIG_HUMAN_BREAKDOWN "human_breakdown"
-#define COMSING_AUTOPSY "human_autopsy"						  //from obj/item/weapon/autopsy_scanner/attack()
+#define COMSING_AUTOPSY "human_autopsy"						  //from obj/item/autopsy_scanner/attack()
 #define COMSIG_HUMAN_LEVEL_UP "human_level_up"
 #define COMSING_HUMAN_EQUITP "human_equip_item"				   //from human/equip_to_slot()
 #define COMSIG_HUMAN_HEALTH "human_health"					   //from human/updatehealth()
@@ -144,7 +144,7 @@
 #define COMSIG_APPVAL "apply_values"									//from /atom/refresh_upgrades(): (/src) Called to upgrade specific values
 #define COMSIG_ADDVAL "add_values" 										//from /atom/refresh_upgrades(): (/src) Called to add specific things to the /src, called before COMSIG_APPVAL
 #define COMSIG_REMOVE "uninstall"
-#define COMSIG_ITEM_DROPPED	"item_dropped"					//from  /obj/item/weapon/tool/attackby(): Called to remove an upgrade
+#define COMSIG_ITEM_DROPPED	"item_dropped"					//from  /obj/item/tool/attackby(): Called to remove an upgrade
 #define COMSIG_ITEM_PICKED "item_picked"
 #define COMSIG_ODDITY_USED "used_oddity"                    //from /datum/sanity/proc/oddity_stat_up(): called to notify the used oddity it was used.
 // /obj/item/clothing signals

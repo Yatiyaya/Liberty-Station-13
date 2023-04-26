@@ -14,7 +14,7 @@
 //Captain
 
 /obj/item/clothing/head/rank/captain
-	name = "premier's hat"
+	name = "secretary's hat"
 	icon_state = "captain"
 	desc = "It's good being the king."
 	item_state_slots = list(
@@ -33,8 +33,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Premier's Hat"] = "captain"
-	options["Premier's Cap"] = "capcap"
+	options["Secretary's Hat"] = "captain"
+	options["Secretary's Cap"] = "capcap"
 	options["Parade Hat"] = "officercap"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -46,13 +46,6 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
-
-
-//HOP
-/obj/item/clothing/head/rank/first_officer
-	name = "steward's cap"
-	desc = "A stylish field-cover that both protects you from enraged former-crewmembers and gives you a false sense of authority."
-	icon_state = "hopcap"
 
 //Chaplain
 /obj/item/clothing/head/rank/chaplain
@@ -454,8 +447,8 @@
 /obj/item/clothing/head/helmet/shepherd
 	name = "Field Shepherd helmet"
 	desc = "A study, handcrafted helmet reinforced with lightweight material and an added line down its center, depicting that of a Shepherd; herding his employees."
-	icon_state = "shepherd_helmet"
-	item_state = "shepherd_helmet"
+	icon_state = "shepherd_visor"
+	item_state = "shepherd_visor"
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 30, MATERIAL_SILVER = 12) //worth stealing
 	price_tag = 1200
 	armor_list = list(

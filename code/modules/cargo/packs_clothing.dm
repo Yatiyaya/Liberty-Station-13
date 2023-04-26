@@ -27,7 +27,6 @@
 					/obj/item/clothing/suit/costume/job/judge,
 					/obj/item/clothing/accessory/waistcoat,
 					/obj/item/clothing/suit/costume/job/nun,
-					/obj/item/clothing/under/rank/first_officer/suit,
 					/obj/item/clothing/suit/costume/history/plaguedoctor,
 					/obj/item/clothing/under/plaid/properblue,
 					/obj/item/clothing/under/costume/animal/owl,

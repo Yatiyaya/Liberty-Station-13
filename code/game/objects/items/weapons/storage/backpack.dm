@@ -53,7 +53,7 @@
 
 /obj/item/storage/backpack/proc/worn_check(var/no_message = FALSE)
 	var/mob/living/L = loc
-	if(istype(L, /mob/living/carbon/human))
+	if(istype(L, /mob/living/carbon/human) && L:species:reagent_tag == IS_SLIME) // Slimes don't have joints.
 		// TODO, special messages
 		return TRUE
 
@@ -163,7 +163,7 @@
 	icon_state = "backpack_botanical"
 
 /obj/item/storage/backpack/captain
-	name = "premier's backpack"
+	name = "secretary's backpack"
 	desc = "It's a special backpack made exclusively for officers."
 	icon_state = "backpack_captain"
 
@@ -370,7 +370,7 @@
 	desc = "A green satchel for plant related work."
 
 /obj/item/storage/backpack/satchel/captain
-	name = "premier's satchel"
+	name = "secretary's satchel"
 	desc = "An exclusive satchel for officers."
 	icon_state = "satchel_captain"
 

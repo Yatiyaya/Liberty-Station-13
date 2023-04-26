@@ -542,7 +542,7 @@
 	max_durability = 500 //Well clearly made to last it should require some repair post crusade
 	durability = 500
 	armor_list = list(melee = 30, bullet = 35, energy = 25, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_GLASS = 3, MATERIAL_STEEL = 10, MATERIAL_DURASTEEL = 20)
+	matter = list(MATERIAL_GLASS = 3, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 80)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(

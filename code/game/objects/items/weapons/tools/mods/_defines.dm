@@ -20,6 +20,9 @@
 #define GUN_UPGRADE_ALLOW_GREYON_MODS "allow_gp_gun"
 #define GUN_UPGRADE_CHEM "gives_bullet_chems"
 #define GUN_UPGRADE_CHEMICAL "chemical_we_give"
+#define UPGRADE_STIFFNESS_ARMOR "stiffness"
+#define UPGRADE_OBSCURATION_ARMOR "obscuration"
+#define UPGRADE_SLOWDOWN_ARMOR "slowdown"
 // ------------------
 
 #define SANCTIFIED "saint" //Used for weapons that was sanctified

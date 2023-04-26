@@ -48,11 +48,11 @@ export const PortableGenerator = (props, context) => {
               />
             </LabeledList.Item>
             <LabeledList.Item label="Heat level">
-              {data.current_heat < 100 ? (
+              {data.current_heat < 150 ? (
                 <Box inline color="good">
                   Nominal
                 </Box>
-              ) : data.current_heat < 200 ? (
+              ) : data.current_heat < 300 ? (
                 <Box inline color="average">
                   Caution
                 </Box>

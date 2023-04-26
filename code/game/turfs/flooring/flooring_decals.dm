@@ -1579,3 +1579,25 @@ obj/effect/floor_decal/corner_techfloor_gray
 /obj/effect/floor_decal/spline/grass_edge/corner
 	name = "grass edge"
 	icon_state = "grass_edge_corner"
+
+/obj/effect/floor_decal/spline/snow_edge
+	name = "snow edge"
+	icon = 'icons/turf/flooring/snows.dmi'
+	icon_state = "snow_edges"
+
+/*
+/obj/effect/floor_decal/spline/snow_edge/corner
+	name = "snow edge"
+	icon = 'icons/turf/flooring/snows.dmi'
+	icon_state = "snow_edges_corner"
+*/
+
+/obj/effect/floor_decal/spline/icewater_edge
+	name = "ice water edge"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_state = "ice_water_edges"
+
+/obj/effect/floor_decal/spline/icewater_corner
+	name = "ice water corner"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_state = "ice_water_corners"

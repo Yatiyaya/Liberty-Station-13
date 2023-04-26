@@ -356,7 +356,7 @@
 //Role:premier-turtlenecks
 
 /obj/item/clothing/under/turtleneck/premier
-	name = "premier turtleneck"
+	name = "secretary's turtleneck"
 	desc = "A green turtleneck complete with black pants and golden buckle."
 	icon_state = "tn_premier"
 	item_state = "tn_premier"
@@ -371,9 +371,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Premier Default"] = "tn_premier"
-	options["Premier Drab"] = "tn_premierdrab"
-	options["Premier Skirt"] = "tn_premierskirt"
+	options["Secretary Default"] = "tn_premier"
+	options["Secretary Drab"] = "tn_premierdrab"
+	options["Secretary Skirt"] = "tn_premierskirt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 

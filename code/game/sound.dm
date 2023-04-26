@@ -244,6 +244,13 @@ var/list/footstep_grass = list(\
 		'sound/effects/footstep/grass3.wav',\
 		'sound/effects/footstep/grass4.wav')
 
+var/list/footstep_ice = list(\
+		'sound/effects/footstep/ice1.ogg',\
+		'sound/effects/footstep/ice2.ogg',\
+		'sound/effects/footstep/ice3.ogg',\
+		'sound/effects/footstep/ice4.ogg',\
+		'sound/effects/footstep/ice5.ogg')
+
 var/list/footstep_gravel = list(\
 		'sound/effects/footstep/gravel1.wav',\
 		'sound/effects/footstep/gravel2.wav',\
@@ -306,6 +313,8 @@ var/list/rummage_sound = list(\
 			toplay = pick(footstep_floor)
 		if ("grass")
 			toplay = pick(footstep_grass)
+		if ("ice")
+			toplay = pick(footstep_ice)
 		if ("gravel")
 			toplay = pick(footstep_gravel)
 		if ("hull")
@@ -530,7 +539,7 @@ var/const/FALLOFF_SOUNDS = 0.5
 
 	var/self_id
 
-/datum/repeating_sound/New(var/_interval, var/duration, var/interval_variance = 0, var/atom/_source, var/_soundin, var/_vol, var/_vary, var/_extrarange, var/_falloff, var/_is_global, var/_use_pressure = TRUE)
+/datum/repeating_sound/New(var/_interval = 10, var/duration = 10, var/interval_variance = 0, var/atom/_source, var/_soundin, var/_vol = 50, var/_vary = 0, var/_extrarange = 0, var/_falloff = 0, var/_is_global = FALSE, var/_use_pressure = TRUE)
 	end_time = world.time + duration
 	source = "\ref[_source]"
 	interval = _interval
@@ -543,11 +552,6 @@ var/const/FALLOFF_SOUNDS = 0.5
 	is_global = _is_global
 	use_pressure_ = _use_pressure
 	self_id = "\ref[src]"
-
-	//When created we do our first sound immediately
-	//If you want the first sound delayed, wrap it in a spawn call or something
-	do_sound()
-
 
 /datum/repeating_sound/proc/do_sound()
 	timer_handle = null //This has been successfully called, that handle is no use now

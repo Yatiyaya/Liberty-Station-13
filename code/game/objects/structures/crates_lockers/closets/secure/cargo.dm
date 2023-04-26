@@ -50,7 +50,7 @@
 		new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
 		new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
 	else
-		new /obj/item/gun/projectile/revolver(src)
+		new /obj/item/gun/projectile/revolver/frontier(src)
 		new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 		new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 	if(prob(75))

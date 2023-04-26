@@ -1,3 +1,4 @@
+#define SLIME_TRANSPARENCY 210 //this define only exists to make it easier to tweak the value in this small file
 /mob/living/carbon/human
 	name = "unknown"
 	real_name = "unknown"
@@ -120,7 +121,7 @@
 
 		var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
 		if(C)
-			stat("Faith", "[C.power]/[C.max_power]")
+			stat("Radiance", "[C.power]/[C.max_power]")
 			stat("Channeling Boost", "[C.channeling_boost]")
 
 		var/obj/item/organ/internal/psionic_tumor/B = random_organ_by_process(BP_PSION)
@@ -293,8 +294,7 @@
 //Trust me I'm an engineer
 //I think we'll put this shit right here
 var/list/rank_prefix = list(\
-	"Premier" = "Premier",\
-	"Steward" = "Steward",\
+	"Board Secretary" = "Secretary",\
 	"Deputy" = "Deputy Chief",\
 	"Armorer" = "Armorer",\
 	"Criminal Investigator" = "Investigator",\
@@ -1171,8 +1171,11 @@ var/list/rank_prefix = list(\
 
 /mob/living/carbon/human/proc/set_form(var/new_form = FORM_HUMAN, var/default_color)
 	form = GLOB.all_species_form_list[new_form]
+	if(new_form == FORM_SLIME) //slime people snowflake code
+		alpha = SLIME_TRANSPARENCY
 	if(default_color)
 		skin_color = form.base_color
+
 
 //Needed for augmentation
 /mob/living/carbon/human/proc/rebuild_organs(from_preference)
@@ -1234,6 +1237,7 @@ var/list/rank_prefix = list(\
 				var/organ_type = species.has_process[tag]
 				new organ_type(src)
 
+/*	Should no longer be needed; we've had a new way of handling implants for ages. Sojourn ineptitude moment.
 		var/datum/category_item/setup_option/core_implant/I = Pref.get_option("Core implant")
 		if(I)
 			if(I.implant_type)
@@ -1257,7 +1261,7 @@ var/list/rank_prefix = list(\
 					src.give_nanogate("Union")
 				if("opifex nanogate")
 					src.give_nanogate("Opifex")
-
+*/
 	else
 		var/organ_type
 
@@ -1645,3 +1649,5 @@ var/list/rank_prefix = list(\
 /mob/living/carbon/human/proc/set_remoteview(var/atom/A)
 	remoteview_target = A
 	reset_view(A)
+
+#undef SLIME_TRANSPARENCY

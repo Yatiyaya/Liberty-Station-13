@@ -89,7 +89,7 @@ var/list/dreams = list(
 	"a seuche roach","a panzer roach","a gestrahlte roach","a disembodied brain","a monkey","a shadekin",
 
 //Factions/Groups
-	"the marshals","the blackshield","the prospectors","the excelsior institute","lonestar shipping solutions",
+	"the marshals","the blackshield","Fontaine","the excelsior institute","lonestar shipping solutions",
 	"the artificers guild","the liberty council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
 
 //Station Locations

@@ -204,7 +204,7 @@
 	notices = 0
 
 /obj/structure/noticeboard/prospectors
-	name = "Prospectors bulletin board"
+	name = "Fontaine bulletin board"
 	desc = "A board containing vital notices and official memos for the colonies most underappreciated trashmen"
 	icon_state = "nboard00"
 	notices = 0

@@ -4,8 +4,8 @@
     textColor = "#22458d"
 
 /tipsAndTricks/jobs/captain_boss
-    jobs_list = list(/datum/job/premier)
-    tipText = "As a premier, you function as an internal affairs agent, lawyer, and mediator."
+    jobs_list = list(/datum/job/secretary)
+    tipText = "As a board secretary, you function as an internal affairs agent, lawyer, and mediator."
 
 /tipsAndTricks/jobs/ironhammer_theft
     jobs_list = list(JOBS_SECURITY)
@@ -72,23 +72,23 @@
     tipText = "You have a perk that lets you tell at a glance what an anomaly on an oddity does, you can market this for a profit!"
 
 /tipsAndTricks/jobs/captain_leader
-    jobs_list = list(/datum/job/premier)
+    jobs_list = list(/datum/job/secretary)
     tipText = "A wise man's advise is always listened to, because a wise man will never give bad advice."
 
 /tipsAndTricks/jobs/captain_free_access
-    jobs_list = list(/datum/job/premier)
+    jobs_list = list(/datum/job/secretary)
     tipText = "You didn't pick this role for the ID, did you?"
 
 /tipsAndTricks/jobs/captain_value_your_ship
-    jobs_list = list(/datum/job/premier)
+    jobs_list = list(/datum/job/secretary)
     tipText = "When two departments come into conflict, don't hesitate to smooth things over."
 
 /tipsAndTricks/jobs/captain_is_overseer
-    jobs_list = list(/datum/job/premier)
+    jobs_list = list(/datum/job/secretary)
     tipText = "You have a vital out-of-character role; you are the quest-giver. If players lacks direction and the colony is getting restless or bored, give them something productive to do."
 
 /tipsAndTricks/jobs/is_captain_right
-    jobs_list = list(/datum/job/premier)
+    jobs_list = list(/datum/job/secretary)
     tipText = "Listen to your fellow Council members. Their input is invaluable, specially in situations regarding their area of expertise."
 
 /tipsAndTricks/jobs/engies_tribe
@@ -243,7 +243,7 @@
     tipText = "As an AI you can remotely control drone shells."
 
 /tipsAndTricks/jobs/pda_paper_scanner
-    jobs_list = list(/datum/job/premier, /datum/job/cso, /datum/job/chief_engineer, /datum/job/dc, /datum/job/pg, /datum/job/rp)
+    jobs_list = list(/datum/job/secretary, /datum/job/cso, /datum/job/chief_engineer, /datum/job/dc, /datum/job/rp)
     tipText = "Your PDA has an integrated paper scanner and printer."
 
 /tipsAndTricks/jobs/aiCanBeMoved

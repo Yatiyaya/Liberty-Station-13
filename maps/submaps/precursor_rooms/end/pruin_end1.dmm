@@ -1,7 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"a" = (
-/turf/simulated/wall/durasteel,
-/area/precursor)
 "b" = (
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/rock/manmade/ruin1,
@@ -52,9 +49,6 @@
 /area/precursor)
 "t" = (
 /obj/random/psi/weapons/low_chance,
-/turf/simulated/floor/snow,
-/area/precursor)
-"u" = (
 /turf/simulated/floor/snow,
 /area/precursor)
 "v" = (
@@ -166,12 +160,12 @@ Z
 Z
 A
 A
-a
-a
+Z
+Z
 A
 "}
 (2,1,1) = {"
-a
+Z
 m
 G
 W
@@ -184,7 +178,7 @@ t
 A
 "}
 (3,1,1) = {"
-a
+Z
 f
 T
 q
@@ -194,7 +188,7 @@ q
 C
 Z
 Y
-a
+Z
 "}
 (4,1,1) = {"
 A
@@ -203,19 +197,19 @@ q
 q
 q
 q
-u
+q
 W
-u
+q
 W
-a
+Z
 "}
 (5,1,1) = {"
 A
 Q
 W
-u
+q
 W
-u
+q
 W
 W
 W
@@ -290,9 +284,9 @@ Z
 (11,1,1) = {"
 A
 A
-a
-a
-a
+Z
+Z
+Z
 A
 A
 A

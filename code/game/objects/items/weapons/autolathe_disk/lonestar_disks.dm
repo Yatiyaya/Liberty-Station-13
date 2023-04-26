@@ -204,7 +204,7 @@
 		)
 
 /obj/item/computer_hardware/hard_drive/portable/design/scav
-	disk_name = "Prospectors Swag"
+	disk_name = "Fontaine Swag"
 	icon_state = "scav"
 	license = 6
 	designs = list(
@@ -217,6 +217,6 @@
 		)
 
 /obj/item/computer_hardware/hard_drive/portable/design/scav/forman
-	disk_name = "Prospectors Sweatshop"
+	disk_name = "Fontaine Sweatshop"
 	icon_state = "scav"
 	license = -1

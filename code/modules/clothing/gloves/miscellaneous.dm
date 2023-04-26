@@ -1,6 +1,6 @@
 /obj/item/clothing/gloves/captain
 	desc = "A pair of regal blue gloves with a swanky gold trim."
-	name = "premier's gloves"
+	name = "secretary's gloves"
 	icon_state = "captain"
 	item_state = "captain"
 	armor_list = list(melee = 25, bullet = 10, energy = 25, bomb = 0, bio = 0, rad = 0)
@@ -32,9 +32,9 @@
 
 /obj/item/clothing/gloves/insulated/union
 	name = "union insulated gloves"
-	desc = "A pare of insulated gloves woven into a thicker fire restant pare."
-	icon_state = "guild_yellow"
-	item_state = "guild_yellow"
+	desc = "A pair of deep brownish red insulated gloves woven that are work and heat safe."
+	icon_state = "union_insuls"
+	item_state = "union_insuls"
 	armor_list = list(melee = 20, bullet = 15, energy = 15, bomb = 10, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05

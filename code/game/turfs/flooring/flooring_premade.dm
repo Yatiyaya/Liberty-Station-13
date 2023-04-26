@@ -152,13 +152,17 @@
 	icon_state = "orangecorner"
 	initial_flooring = /decl/flooring/tiling/steel/orangecorner
 
+/turf/simulated/floor/tiled/steel/greencorner
+	icon_state = "greencorner"
+	initial_flooring = /decl/flooring/tiling/steel/greencorner
+
+/turf/simulated/floor/tiled/steel/violetcorener
+	icon_state = "violetcorner"
+	initial_flooring = /decl/flooring/tiling/steel/violetcorener
+
 /turf/simulated/floor/tiled/steel/cyancorner
 	icon_state = "cyancorner"
 	initial_flooring = /decl/flooring/tiling/steel/cyancorner
-
-/turf/simulated/floor/tiled/steel/violetcorener
-	icon_state = "violetcorener"
-	initial_flooring = /decl/flooring/tiling/steel/violetcorener
 
 /turf/simulated/floor/tiled/steel/monofloor
 	icon_state = "monofloor"
@@ -230,13 +234,17 @@
 	icon_state = "orangecorner"
 	initial_flooring = /decl/flooring/tiling/white/orangecorner
 
+/turf/simulated/floor/tiled/white/greencorner
+	icon_state = "greencorner"
+	initial_flooring = /decl/flooring/tiling/white/greencorner
+
+/turf/simulated/floor/tiled/white/violetcorener
+	icon_state = "violetcorner"
+	initial_flooring = /decl/flooring/tiling/white/violetcorener
+
 /turf/simulated/floor/tiled/white/cyancorner
 	icon_state = "cyancorner"
 	initial_flooring = /decl/flooring/tiling/white/cyancorner
-
-/turf/simulated/floor/tiled/white/violetcorener
-	icon_state = "violetcorener"
-	initial_flooring = /decl/flooring/tiling/white/violetcorener
 
 /turf/simulated/floor/tiled/white/monofloor
 	icon_state = "monofloor"
@@ -296,13 +304,17 @@
 	icon_state = "orangecorner"
 	initial_flooring = /decl/flooring/tiling/dark/orangecorner
 
+/turf/simulated/floor/tiled/dark/greencorner
+	icon_state = "greencorner"
+	initial_flooring = /decl/flooring/tiling/dark/greencorner
+
+/turf/simulated/floor/tiled/dark/violetcorener
+	icon_state = "violetcorner"
+	initial_flooring = /decl/flooring/tiling/dark/violetcorener
+
 /turf/simulated/floor/tiled/dark/cyancorner
 	icon_state = "cyancorner"
 	initial_flooring = /decl/flooring/tiling/dark/cyancorner
-
-/turf/simulated/floor/tiled/dark/violetcorener
-	icon_state = "violetcorener"
-	initial_flooring = /decl/flooring/tiling/dark/violetcorener
 
 /turf/simulated/floor/tiled/dark/monofloor
 	icon_state = "monofloor"
@@ -476,6 +488,15 @@
 	oxygen = MOLES_O2STANDARD * 1.14 //the multiplier is to compensate the lower pressure, to keep it breathable
 	nitrogen = MOLES_N2STANDARD *1.14
 	initial_flooring = /decl/flooring/snow
+
+/turf/simulated/floor/icewater
+	name = "icewater"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_state = "ice_water0"
+	temperature = 253.15
+	oxygen = MOLES_O2STANDARD * 1.14 //the multiplier is to compensate the lower pressure, to keep it breathable
+	nitrogen = MOLES_N2STANDARD *1.14
+	initial_flooring = /decl/flooring/icewater
 
 
 /turf/simulated/floor/beach/coastline

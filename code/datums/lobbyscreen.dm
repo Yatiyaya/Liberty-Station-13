@@ -24,7 +24,21 @@
 /datum/lobbyscreen/liberty_final
 	image_file = 'icons/title_screens/liberty_final.png'
 	possibleMusic = list(
+		'sound/music/lobby/Phokorus.ogg',
+		'sound/music/lobby/Liberty.ogg',
+		'sound/music/lobby/Richi.ogg'
+	)
+
+/datum/lobbyscreen/liberty_therma
+	image_file = 'icons/title_screens/liberty_terra.png'
+	possibleMusic = list(
 		'sound/music/lobby/Phokorus.ogg'
+	)
+
+/datum/lobbyscreen/liberty_blondie
+	image_file = 'icons/title_screens/liberty_blondie.png'
+	possibleMusic = list(
+		'sound/music/lobby/clowndance.ogg'
 	)
 
 /datum/lobbyscreen/proc/play_music(client/C)

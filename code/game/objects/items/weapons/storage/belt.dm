@@ -135,7 +135,7 @@
 
 /obj/item/storage/belt/hunter
 	name = "hunting belt"
-	desc = "Can hold various tools fit for a lodge hunter."
+	desc = "Can hold various tools fit for a trapper."
 	icon_state = "hunting"
 	item_state = "hunting"
 	storage_slots = 11

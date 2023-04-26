@@ -79,15 +79,15 @@
 	channels = list("Command" = 1)
 
 /obj/item/device/encryptionkey/heads/captain
-	name = "premier's encryption key"
+	name = "secretary's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 0, "Church" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
+	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 1, "Church" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1, "Blackshield" = 1, "Marshal" = 1)
 
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"
 	desc = "Integrated encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 1, "Church" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 1, "Plasmatag R" = 1, "Plasmatag G" = 1, "Plasmatag Y" = 1)
+	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 1, "Church" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 1, "Plasmatag R" = 1, "Plasmatag G" = 1, "Plasmatag Y" = 1)
 
 /obj/item/device/encryptionkey/heads/rd
 	name = "research provost's encryption key"
@@ -118,10 +118,10 @@
 /obj/item/device/encryptionkey/heads/hop
 	name = "steward's encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list("Command" = 1, "Prospector" = 1,  "Engineering" = 0, "Church" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
+	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 0, "Church" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Blackshield" = 1, "Marshal" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
 
-/obj/item/device/encryptionkey/heads/merchant
-	name = "lonestar executive radio encryption key"
+/obj/item/device/encryptionkey/heads/clubmanager
+	name = "skylight syndicate club manager radio encryption key"
 	icon_state = "qm_cypherkey"
 	channels = list("Supply" = 1, "Command" = 1, "Service" = 1)
 
@@ -141,14 +141,14 @@
 	channels = list("Service" = 1)
 
 /obj/item/device/encryptionkey/headset_pro
-	name = "prospector radio encryption key"
+	name = "fontaine radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Prospector" = 1)
+	channels = list("Fontaine" = 1)
 
 /obj/item/device/encryptionkey/heads/foreman
-	name = "prospector radio encryption key"
+	name = "fontaine radio encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Prospector" = 1, "Command" = 1)
+	channels = list("Fontaine" = 1, "Command" = 1)
 
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"

@@ -1,6 +1,6 @@
 
 /obj/item/clothing/suit/greatcoat/cap
-	name = "premier's greatcoat"
+	name = "secretary's greatcoat"
 	desc = "A green greatcoat. Makes you feel like the leader you are supposed to be."
 	icon_state = "cap_coat"
 	item_state = "cap_coat"
@@ -22,8 +22,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Premier Cloaked Greatcoat"] = "cap_coat_cloak"
-	options["Premier Greatcoat"] = "cap_coat"
+	options["Secretary's Cloaked Greatcoat"] = "cap_coat_cloak"
+	options["Secretary's Greatcoat"] = "cap_coat"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
