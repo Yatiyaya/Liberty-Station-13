@@ -4293,6 +4293,10 @@
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
+"biz" = (
+/obj/random/flora/wild/low,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "biN" = (
 /obj/structure/grille,
 /obj/effect/decal/cleanable/dirt,
@@ -8883,6 +8887,10 @@
 /obj/random/cluster/termite_no_despawn/lower_chance,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
+"csQ" = (
+/obj/random/flora/wild/high,
+/turf/simulated/floor/snow,
+/area/liberty/outside/inside_colony)
 "ctb" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/ammo_magazine/ammobox/shotgun/practiceshells,
@@ -30632,6 +30640,10 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
+"iwN" = (
+/obj/random/flora/wild/med,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "iwZ" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -42329,8 +42341,8 @@
 /area/liberty/crew_quarters/dorm4)
 "lOH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/trapper,
 /obj/item/stool,
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "lOS" = (
@@ -51507,8 +51519,8 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/crew_quarters/fitness)
 "oxv" = (
-/obj/landmark/join/start/shipbreaker,
 /obj/item/stool,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "oxC" = (
@@ -59491,6 +59503,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
+"qGu" = (
+/obj/random/flora/wild/low,
+/turf/simulated/floor/snow,
+/area/liberty/outside/inside_colony)
 "qGw" = (
 /obj/structure/flora/small/grassb3,
 /turf/simulated/floor/asteroid/grass,
@@ -60057,6 +60073,10 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/storage/primary)
+"qNK" = (
+/obj/random/flora/wild/high,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "qNL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -66335,7 +66355,6 @@
 /obj/structure/table/steel,
 /obj/random/lathe_disk,
 /obj/random/lathe_disk,
-/obj/structure/window/reinforced,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -171283,7 +171302,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -176354,7 +176373,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+iwN
 wgB
 kfM
 kfM
@@ -176754,7 +176773,7 @@ kfM
 kfM
 wgB
 wgB
-wgB
+iwN
 wgB
 wgB
 wgB
@@ -178169,7 +178188,7 @@ cqw
 wgB
 wgB
 wgB
-wgB
+iwN
 wgB
 wgB
 wgB
@@ -178979,7 +178998,7 @@ wgB
 wgB
 rtf
 wgB
-wgB
+iwN
 wgB
 wgB
 kfM
@@ -181181,7 +181200,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -181593,7 +181612,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -183608,7 +183627,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -184008,7 +184027,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -186987,7 +187006,7 @@ ddD
 xMC
 rQC
 rQC
-rQC
+csQ
 rQC
 rQC
 rQC
@@ -189217,7 +189236,7 @@ rQC
 rQC
 rQC
 rQC
-rQC
+csQ
 rQC
 rQC
 rQC
@@ -189685,7 +189704,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -190064,7 +190083,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -192629,7 +192648,7 @@ ddD
 qwd
 rQC
 rQC
-rQC
+qGu
 rQC
 rQC
 rQC
@@ -193456,7 +193475,7 @@ hKS
 rQC
 rQC
 rQC
-rQC
+csQ
 rQC
 rQC
 rQC
@@ -195741,7 +195760,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -199142,7 +199161,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+biz
 wgB
 wgB
 wgB
@@ -204625,7 +204644,7 @@ rtf
 wgB
 wgB
 wgB
-wgB
+qNK
 wgB
 iue
 odh
@@ -204821,7 +204840,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+qNK
 wgB
 wgB
 wgB
@@ -205430,7 +205449,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+qNK
 wgB
 wgB
 wgB
@@ -206031,7 +206050,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+qNK
 wgB
 wgB
 wgB

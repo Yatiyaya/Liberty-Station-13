@@ -652,6 +652,10 @@
 /obj/structure/table/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"pU" = (
+/obj/random/flora/wild,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "qa" = (
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest_house)
@@ -835,6 +839,10 @@
 "tB" = (
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"tE" = (
+/obj/random/flora/wild/high,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "tG" = (
 /obj/machinery/light/floor,
 /obj/random/mob/roomba/any,
@@ -1288,6 +1296,10 @@
 /obj/item/stack/rods/random,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"Dk" = (
+/obj/random/flora/wild/med,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "DD" = (
 /obj/random/gun_fancy/low_chance,
 /turf/simulated/floor/rock/dark,
@@ -1659,6 +1671,10 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"LY" = (
+/obj/random/flora/wild/low,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "Mg" = (
 /obj/random/rations/crayon,
 /turf/simulated/floor/rock/dark,
@@ -5955,7 +5971,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 Qt
 rf
@@ -7722,7 +7738,7 @@ rf
 rf
 Fy
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -8984,7 +9000,7 @@ rf
 JA
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -11232,7 +11248,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -13062,7 +13078,7 @@ rf
 rf
 sx
 rf
-rf
+Dk
 rf
 rf
 Qt
@@ -13243,7 +13259,7 @@ rf
 rf
 eN
 rf
-rf
+LY
 rf
 rf
 rf
@@ -13478,7 +13494,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 cZ
 rf
@@ -13514,7 +13530,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -13819,7 +13835,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -14065,7 +14081,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 Fy
@@ -14227,7 +14243,7 @@ vy
 vy
 rf
 rf
-rf
+tE
 rf
 rf
 rf
@@ -14291,7 +14307,7 @@ FW
 rf
 rf
 rf
-rf
+LY
 rf
 FW
 rf
@@ -14482,7 +14498,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -14573,7 +14589,7 @@ rf
 Iq
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -14591,7 +14607,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -14738,7 +14754,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -15232,7 +15248,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -15490,7 +15506,7 @@ rf
 rf
 jY
 rf
-rf
+tE
 rf
 rf
 rf
@@ -15991,7 +16007,7 @@ Fy
 rf
 rf
 rf
-rf
+Dk
 rf
 sx
 rf
@@ -16248,7 +16264,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -16332,7 +16348,7 @@ rf
 rf
 Fy
 rf
-rf
+tE
 rf
 rf
 rf
@@ -16760,7 +16776,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 sx
 rf
@@ -16801,7 +16817,7 @@ Bk
 rf
 rf
 rf
-rf
+LY
 rf
 Iq
 rf
@@ -17241,7 +17257,7 @@ rf
 jY
 rf
 rf
-rf
+Dk
 rf
 fa
 rf
@@ -17280,7 +17296,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -17409,7 +17425,7 @@ rf
 Iq
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -17547,7 +17563,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -18138,7 +18154,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -18826,7 +18842,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 jY
@@ -19113,6 +19129,7 @@ rf
 rf
 rf
 rf
+tE
 rf
 rf
 rf
@@ -19124,8 +19141,7 @@ rf
 rf
 rf
 rf
-rf
-rf
+pU
 rf
 Iq
 rf
@@ -19288,7 +19304,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -20672,7 +20688,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 si
 rf
@@ -20763,7 +20779,7 @@ rf
 rf
 Fy
 rf
-rf
+Dk
 rf
 FW
 rf
@@ -21078,7 +21094,7 @@ Bk
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -21121,7 +21137,7 @@ rf
 rf
 rf
 rf
-rf
+tE
 rf
 si
 rf
@@ -21846,7 +21862,7 @@ Fy
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -22594,7 +22610,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 FW
 rf
@@ -23874,7 +23890,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -23887,7 +23903,7 @@ rf
 jY
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -24053,7 +24069,7 @@ rf
 rf
 jY
 rf
-rf
+Dk
 rf
 EZ
 rf
@@ -24118,7 +24134,7 @@ rf
 rf
 rf
 UK
-rf
+LY
 rf
 rf
 rf
@@ -24554,7 +24570,7 @@ rf
 jY
 rf
 rf
-rf
+tE
 rf
 CD
 rf
@@ -25057,11 +25073,11 @@ rf
 rf
 rf
 rf
+tE
 rf
 rf
 rf
-rf
-rf
+tE
 Iq
 rf
 rf
@@ -25143,7 +25159,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 FW
 rf
@@ -25156,7 +25172,7 @@ rf
 si
 rf
 rf
-rf
+tE
 rf
 rf
 rf
@@ -25606,7 +25622,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -25943,7 +25959,7 @@ rf
 rf
 Qt
 rf
-rf
+LY
 rf
 rf
 Fy
@@ -26374,7 +26390,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -26630,7 +26646,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -26684,14 +26700,14 @@ rf
 rf
 Fy
 rf
-rf
+LY
 rf
 Fy
 rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -26959,7 +26975,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -27389,7 +27405,7 @@ rf
 Fy
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -27685,7 +27701,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 UK
@@ -27726,7 +27742,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -28179,7 +28195,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 Fy
 rf
@@ -28656,7 +28672,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -28866,7 +28882,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 jY
@@ -29671,7 +29687,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 UK
@@ -31412,7 +31428,7 @@ sx
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -31427,7 +31443,7 @@ rf
 rf
 rf
 rf
-rf
+pU
 rf
 rf
 rf
@@ -31948,7 +31964,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 Mj
@@ -34778,7 +34794,7 @@ Mj
 Mj
 UK
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -35539,7 +35555,7 @@ KA
 rf
 Nj
 rf
-rf
+LY
 rf
 rf
 rf
@@ -35966,7 +35982,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -35978,7 +35994,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -36039,7 +36055,7 @@ Mj
 Mj
 Mj
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -36293,7 +36309,7 @@ Mj
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -37049,7 +37065,7 @@ Mj
 rf
 rf
 rf
-rf
+tE
 rf
 rf
 rf
@@ -37551,7 +37567,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -37693,7 +37709,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -38051,7 +38067,7 @@ Mj
 Mj
 Mj
 rf
-rf
+Dk
 rf
 rf
 rf
@@ -39231,7 +39247,7 @@ XT
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -39758,7 +39774,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -41588,7 +41604,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -43036,7 +43052,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -43215,7 +43231,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 zu
 rf
@@ -44747,7 +44763,7 @@ rf
 rf
 rf
 rf
-rf
+pU
 rf
 rf
 rf
@@ -45211,7 +45227,7 @@ rf
 zu
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -46071,7 +46087,7 @@ rf
 rf
 ep
 rf
-rf
+LY
 rf
 rf
 rf
@@ -46266,7 +46282,7 @@ rf
 rf
 rf
 rf
-rf
+tE
 rf
 rf
 rf
@@ -46799,7 +46815,7 @@ XT
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -48007,7 +48023,7 @@ jY
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -49772,7 +49788,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 cG
 XT
@@ -51012,7 +51028,7 @@ rf
 rf
 Xq
 rf
-rf
+LY
 rf
 rf
 rf
@@ -51513,7 +51529,7 @@ rf
 jY
 rf
 rf
-rf
+LY
 rf
 FW
 rf
@@ -52276,7 +52292,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -52534,7 +52550,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -52773,7 +52789,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -53535,7 +53551,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -53596,7 +53612,7 @@ PY
 rf
 rf
 rf
-rf
+LY
 rf
 FW
 HG
@@ -53897,7 +53913,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -54073,7 +54089,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -54539,7 +54555,7 @@ rf
 rf
 si
 rf
-rf
+LY
 lq
 rf
 rf
@@ -54551,7 +54567,7 @@ si
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -55299,7 +55315,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -55897,7 +55913,7 @@ XQ
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -56313,7 +56329,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -56812,7 +56828,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -60919,7 +60935,7 @@ OO
 rf
 rf
 rf
-rf
+Dk
 rf
 XQ
 rf
@@ -61203,7 +61219,7 @@ rf
 rf
 rf
 rf
-rf
+LY
 rf
 rf
 rf
@@ -61425,7 +61441,7 @@ rf
 rf
 rf
 rf
-rf
+Dk
 rf
 rf
 rf
