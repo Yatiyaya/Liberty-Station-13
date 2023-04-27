@@ -161,21 +161,23 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
-	is_dungeon_lootable = FALSE
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
 	dynamic_lighting = TRUE
 	allows_weather_of_snow = FALSE
+	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_house
 	name = "Frozen Forest Ruined House"
 	dynamic_lighting = TRUE
 	allows_weather_of_snow = FALSE
+	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_simil_base
 	name = "Frozen Forest Similacrum Robotics Mining Entrence"
 	allows_weather_of_snow = FALSE
+	requires_power = FALSE
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
@@ -298,10 +300,12 @@
 /area/liberty/outside/one_star/fo_internal
 	name = "Similacrum Field Offices"
 	icon_state = "erisblue"
+	requires_power = FALSE
 
 /area/liberty/outside/dcave
 	name = "Tengolo Cave East"
 	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
 
 /area/liberty/outside/fnest
 	name = "Fennec Nest"

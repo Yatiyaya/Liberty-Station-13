@@ -61,7 +61,7 @@
 
 /obj/item/part/gun/frame/kraut
 	name = "Kraut frame"
-	desc = "A Ktraut caseless rifle frame. For true Krauts."
+	desc = "A Kraut caseless rifle frame. For true Krauts."
 	icon_state = "frame_dallas"
 	result = /obj/item/gun/projectile/automatic/kraut
 	resultvars = list(/obj/item/gun/projectile/automatic/kraut)

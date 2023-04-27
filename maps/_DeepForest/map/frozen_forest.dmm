@@ -520,6 +520,10 @@
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest_house)
+"nc" = (
+/obj/crawler/teleport_marker,
+/turf/simulated/floor/tiled/derelict/white_big_edges,
+/area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nd" = (
 /turf/simulated/floor/holofloor/beach/water,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
@@ -951,6 +955,10 @@
 /obj/item/tool/weldingtool/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"wR" = (
+/obj/structure/invislightsmall/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest_house)
 "wX" = (
 /obj/structure/table/onestar,
 /obj/item/pen,
@@ -2251,10 +2259,10 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Yw" = (
-/obj/asteroid_spawner/rogue_teleporter,
 /obj/rogue/teleporter{
 	pixel_x = -32
 	},
+/obj/asteroid_spawner/rogue_teleporter,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "YF" = (
@@ -31305,7 +31313,7 @@ pA
 pA
 pA
 Hi
-mf
+nc
 mf
 mf
 Yw
@@ -56146,7 +56154,7 @@ rf
 rf
 ux
 tJ
-Pe
+wR
 Pe
 xd
 Ux
@@ -56904,7 +56912,7 @@ rf
 jJ
 rf
 ux
-Pe
+wR
 Tv
 QN
 tJ
@@ -57658,7 +57666,7 @@ rf
 rf
 ux
 tJ
-Pe
+wR
 Pe
 Pe
 qa
