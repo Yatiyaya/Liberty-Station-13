@@ -46,13 +46,13 @@ em						{font-style: normal;font-weight: bold;}
 .newscaster				{color: #750000;}
 
 /* Radio Channels */
-.comradio				{color: #193A7A;}
+.comradio				{color: #D4AF37;}
 .syndradio				{color: #6D3F40;}
 .centradio				{color: #5C5C8A;}
 .airadio				{color: #FF00FF;}
-.ntradio				{color: #D4AF37;}
+.ntradio				{color: #dd3535;}
 
-.secradio				{color: #A30000;}
+.secradio				{color: #5177FF;}
 .bsradio				{color: #88100a;}
 .engradio				{color: #A66300;}
 .medradio				{color: #0081A3;}
@@ -60,7 +60,7 @@ em						{font-style: normal;font-weight: bold;}
 .sciradio				{color: #993399;}
 .supradio				{color: #5F4519;}
 .srvradio				{color: #6EAA2C;}
-.proradio				{color: #209848;}
+.proradio				{color: #bac0e2;}
 
 /* Miscellaneous */
 .name					{font-weight: bold;}
