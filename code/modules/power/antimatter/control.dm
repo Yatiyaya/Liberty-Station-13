@@ -36,7 +36,7 @@
 	..()
 	linked_shielding = list()
 	linked_cores = list()
-	radio = new /obj/item/device/radio{channels=list("Engineering", "Command")}(src)
+	radio = new /obj/item/device/radio{channels=list("Terra", "Board")}(src)
 
 /obj/machinery/power/am_control_unit/Destroy() //Perhaps damage and run stability checks rather than just qdel on the others
 	for(var/obj/machinery/am_shielding/AMS in linked_shielding)
@@ -247,7 +247,7 @@
 			flick("core_desactivating", Core)
 			Core.icon_state = "core_inactive"
 	if(announce_stability)
-		radio.autosay(alert_msg, "Antimatter Automated Announcement", "Engineering")
+		radio.autosay(alert_msg, "Antimatter Automated Announcement", "Terra")
 	update_icon()
 	check_stability()
 	return
@@ -284,9 +284,9 @@
 	if(announce_stability)
 		var/alert_msg = "WARNING, Antimatter Engine Stability at [stored_core_stability]%!"
 		if(stored_core_stability <= 75)
-			radio.autosay(alert_msg, "Antimatter Automated Announcement", "Engineering")
+			radio.autosay(alert_msg, "Antimatter Automated Announcement", "Terra")
 		if(stored_core_stability <= 50)
-			radio.autosay(alert_msg, "Antimatter Automated Announcement", "Command")
+			radio.autosay(alert_msg, "Antimatter Automated Announcement", "Board")
 		if(stored_core_stability <= 25)
 			radio.autosay(alert_msg, "Antimatter Automated Announcement")
 

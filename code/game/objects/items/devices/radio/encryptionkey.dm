@@ -51,12 +51,14 @@
 /obj/item/device/encryptionkey/headset_eng
 	name = "union radio encryption key"
 	icon_state = "eng_cypherkey"
-	channels = list("Engineering" = 1)
+	channels = list("Terra" = 1)
 
+/*
 /obj/item/device/encryptionkey/headset_rob
 	name = "pirs robotics radio encryption key"
 	icon_state = "rob_cypherkey"
-	channels = list("Engineering" = 1, "Science" = 1)
+	channels = list("Terra" = 1, "PIRS" = 1)
+*/
 
 /obj/item/device/encryptionkey/headset_church
 	name = "custodian radio encryption key"
@@ -66,69 +68,71 @@
 /obj/item/device/encryptionkey/headset_sci
 	name = "Phokorus Institute science radio encryption key"
 	icon_state = "sci_cypherkey"
-	channels = list("Science" = 1,)
+	channels = list("PIRS" = 1, "Medical(I)" = 1)
 
 /obj/item/device/encryptionkey/headset_capsa
 	name = "CAPSA medical encryption key"
 	icon_state = "med_cypherkey"
-	channels = list("Medical" = 1,)
+	channels = list("CAPSA" = 1, "Medical(I)" = 1)
 
 /obj/item/device/encryptionkey/headset_com
 	name = "council command radio encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1)
+	channels = list("Board" = 1)
 
 /obj/item/device/encryptionkey/heads/captain
 	name = "secretary's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 1, "Custodians" = 1, "Science" = 1, "Medical" = 1, "Skylight" = 1, "AI Private" = 1, "Watch" = 1)
+	channels = list("Board" = 1, "Medical(I)" = 1, "Fontaine" = 1,  "Terra" = 1, "Custodians" = 1, "PIRS" = 1, "CAPSA" = 1, "Skylight" = 1, "AI Private" = 1, "Watch" = 1)
 
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"
 	desc = "Integrated encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 1, "Custodians" = 1, "Science" = 1, "Medical" = 1, "Skylight" = 1, "AI Private" = 1, "Watch" = 1, "Plasmatag B" = 1, "Plasmatag R" = 1, "Plasmatag G" = 1, "Plasmatag Y" = 1)
+	channels = list("Board" = 1, "Medical(I)" = 1, "Fontaine" = 1,  "Terra" = 1, "Custodians" = 1, "PIRS" = 1, "CAPSA" = 1, "Skylight" = 1, "AI Private" = 1, "Watch" = 1, "Plasmatag B" = 1, "Plasmatag R" = 1, "Plasmatag G" = 1, "Plasmatag Y" = 1)
 
 /obj/item/device/encryptionkey/heads/rd
 	name = "research provost's encryption key"
 	icon_state = "rd_cypherkey"
-	channels = list("Science" = 1, "Command" = 1)
+	channels = list("PIRS" = 1, "Board" = 1, "Medical(I)" = 1)
 	translate_binary = 1
 
 /obj/item/device/encryptionkey/heads/capsa
 	name = "surgeon overseer's encryption key"
 	icon_state = "rd_cypherkey"
-	channels = list("Medical" = 1, "Command" = 1)
+	channels = list("CAPSA" = 1, "Board" = 1, "Medical(I)" = 1)
 
 /obj/item/device/encryptionkey/heads/hos
 	name = "security commander's encryption key"
 	icon_state = "hos_cypherkey"
-	channels = list("Command" = 1, "Watch" = 1)
+	channels = list("Board" = 1, "Watch" = 1)
 
 /obj/item/device/encryptionkey/heads/ce
 	name = "union chief's encryption key"
 	icon_state = "ce_cypherkey"
-	channels = list("Engineering" = 1, "Command" = 1)
+	channels = list("Terra" = 1, "Board" = 1)
 
+/*
 /obj/item/device/encryptionkey/heads/cmo
 	name = "biolab overseer's encryption key"
 	icon_state = "cmo_cypherkey"
 	channels = list("Medical" = 1, "Command" = 1)
+*/
 
 /obj/item/device/encryptionkey/heads/hop //Probably not used anymore
 	name = "steward's encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list("Command" = 1, "Fontaine" = 1,  "Engineering" = 0, "Custodians" = 0, "Science" = 0, "Medical" = 0, "Skylight" = 0, "Watch" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
+	channels = list("Board" = 1, "Medical(I)" = 1, "Fontaine" = 1,  "Terra" = 0, "Custodians" = 0, "PIRS" = 0, "CAPSA" = 0, "Skylight" = 0, "Watch" = 1, "Plasmatag B" = 0, "Plasmatag R" = 0, "Plasmatag G" = 0, "Plasmatag Y" = 0)
 
 /obj/item/device/encryptionkey/heads/clubmanager
 	name = "skylight syndicate club manager radio encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Skylight" = 1, "Command" = 1)
+	channels = list("Skylight" = 1, "Board" = 1)
 
 /obj/item/device/encryptionkey/heads/preacher
 	name = "oathpledge radio encryption key"
 	icon_state = "preach_cypherkey"
-	channels = list("Custodians" = 1, "Command" = 1)
+	channels = list("Custodians" = 1, "Board" = 1)
 
 /obj/item/device/encryptionkey/headset_cargo
 	name = "unused radio encryption key"
@@ -149,7 +153,7 @@
 /obj/item/device/encryptionkey/heads/foreman
 	name = "shepherd radio encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Fontaine" = 1, "Command" = 1)
+	channels = list("Fontaine" = 1, "Board" = 1)
 
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"

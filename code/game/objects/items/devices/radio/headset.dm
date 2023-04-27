@@ -171,12 +171,14 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_eng
 
+/*
 /obj/item/device/radio/headset/headset_rob
 	name = "robotics radio headset"
 	desc = "Made specifically for the roboticists who cannot decide between departments."
 	icon_state = "rob_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_sci
+*/
 
 /obj/item/device/radio/headset/headset_med
 	name = "medical radio headset"
