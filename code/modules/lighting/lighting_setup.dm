@@ -16,3 +16,9 @@
 		new /atom/movable/lighting_overlay(T, TRUE)
 		if (!T.lighting_corners_initialised)
 			T.generate_missing_corners()
+
+//LL change
+/proc/set_all_areas_to_dark()
+	for(var/area/A in all_areas)
+		if(!A.dynamic_lighting && !A.force_full_lighting)
+			A.dynamic_lighting = TRUE
