@@ -161,6 +161,7 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
+	turf_initializer = null
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
@@ -178,6 +179,7 @@
 	name = "Frozen Forest Similacrum Robotics Mining Entrence"
 	allows_weather_of_snow = FALSE
 	requires_power = FALSE
+	turf_initializer = null
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"

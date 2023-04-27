@@ -21,4 +21,5 @@
 /proc/set_all_areas_to_dark()
 	for(var/area/A in all_areas)
 		if(!A.dynamic_lighting && !A.force_full_lighting)
-			A.dynamic_lighting = TRUE
+			//A.dynamic_lighting = TRUE
+			A.set_dynamic_lighting()
