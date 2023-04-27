@@ -578,6 +578,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/shift_end(round_end_time = config.automatic_restart_delay)
 	command_announcement.Announce("Today's shift will be ending in [round(round_end_time/(1 MINUTE))] minute[round_end_time >= 1 MINUTE && round_end_time < 2 MINUTES ? "" : "s"]. Please finish up all current tasks and return all departmental equipment used.", "Shift End Call", new_sound = 'sound/misc/notice3.ogg')
+	SEND_SOUND(world, sound('sound/misc/endshift.ogg'))
 	automatic_restart_allowed = FALSE
 	scheduled_restart = world.time + round_end_time
 	rounddurationcountdown2text(round_end_time)

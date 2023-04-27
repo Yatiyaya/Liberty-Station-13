@@ -65,7 +65,8 @@
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "al" = (
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "am" = (
 /obj/random/furniture/pottedplant,
@@ -75,29 +76,17 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "av" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock7,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "aw" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
-"ax" = (
-/obj/structure/flora/ausbushes/leafybush,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"aA" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "aB" = (
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/dorm)
-"aD" = (
-/obj/structure/flora/small/busha1,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "aE" = (
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
@@ -105,7 +94,6 @@
 /obj/structure/table/standard,
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
-/obj/item/paper/solarsteup,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -178,10 +166,6 @@
 /obj/random/toolbox,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
-"aQ" = (
-/obj/structure/flora/ausbushes/genericbush,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "aR" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/structure/cable{
@@ -192,20 +176,19 @@
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "aS" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/boulder2,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "aT" = (
-/obj/structure/flora/small/busha3,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock3,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "aU" = (
-/obj/random/flora/small_jungle_tree,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "aV" = (
-/obj/random/flora/small_jungle_tree/low,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock5,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "aW" = (
 /obj/structure/cable{
@@ -279,6 +262,10 @@
 	dir = 8
 	},
 /obj/random/furniture/pottedplant,
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 24
+	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "bk" = (
@@ -386,7 +373,7 @@
 /area/liberty/outside/mountainsolars)
 "bD" = (
 /obj/machinery/camera/network/engineering,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "bE" = (
 /obj/structure/railing{
@@ -429,61 +416,22 @@
 /turf/simulated/shuttle/floor/mining,
 /area/turbolift/mountain/solars)
 "bL" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bM" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/random/flora/small_jungle_tree,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bN" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/boulder1,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "bO" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bP" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bQ" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bR" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/snow/snow,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "bT" = (
-/obj/random/flora/jungle_tree,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"bV" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/dirt,
+/obj/structure/flora/small/snow/rock8,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "ca" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/engineering{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"cc" = (
-/mob/living/simple_animal/jungle_bird,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "cd" = (
 /obj/structure/table/standard,
@@ -495,24 +443,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
-"cg" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"ch" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "ci" = (
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
 "cj" = (
@@ -526,7 +462,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
 "cl" = (
@@ -535,34 +470,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/dorm)
-"cn" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
 "co" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
-"cp" = (
-/obj/structure/railing,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/snow/five,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "cq" = (
 /obj/structure/railing{
@@ -575,84 +487,29 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"ct" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cw" = (
-/obj/structure/flora/small/bushb1,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cx" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
 	tag = "icon-intact (NORTHWEST)"
 	},
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "cy" = (
 /obj/structure/flora/rock/variant1,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cz" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"cA" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cB" = (
-/obj/structure/railing,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cC" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cD" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /obj/structure/railing,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cE" = (
 /obj/structure/railing,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"cH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cI" = (
 /obj/structure/railing{
@@ -690,57 +547,18 @@
 	dir = 1;
 	tag = "icon-railing0 (NORTH)"
 	},
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cN" = (
-/obj/structure/flora/ausbushes/sunnybush,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cO" = (
-/obj/structure/railing{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing{
-	dir = 1;
-	tag = "icon-railing0 (NORTH)"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/asteroid/dirt,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cP" = (
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cQ" = (
-/obj/structure/railing{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"cR" = (
-/obj/structure/flora/small/busha2,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock7,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "cS" = (
 /obj/machinery/light,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"cT" = (
-/obj/random/furniture/pottedplant,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"cU" = (
-/obj/random/flora/small_jungle_tree,
-/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "cV" = (
 /obj/structure/cable{
@@ -752,20 +570,7 @@
 /area/liberty/outside/mountainsolars)
 "cW" = (
 /obj/structure/flora/rock/variant2,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cX" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"cY" = (
-/obj/structure/flora/small/grassb2,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"cZ" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/small/grassb2,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "da" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
@@ -778,120 +583,31 @@
 /turf/simulated/floor/reinforced/airless,
 /area/liberty/outside/mountainsolars)
 "db" = (
-/turf/simulated/floor/asteroid/dirt/mud,
-/area/liberty/outside/mountainsolars)
-"dc" = (
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/turf/simulated/floor/beach/water/shallow,
+/obj/structure/flora/small/trailrockb3,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "dd" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/beach/sand,
+/obj/structure/flora/small/trailrocka1,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "de" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"df" = (
-/mob/living/simple_animal/snail,
-/turf/simulated/floor/asteroid/dirt/mud,
-/area/liberty/outside/mountainsolars)
-"dg" = (
-/obj/structure/flora/ausbushes/reedbush,
-/turf/simulated/floor/asteroid/dirt/mud,
+/obj/structure/flora/small/snow/rock1,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "dh" = (
 /obj/structure/flora/rock,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"di" = (
-/obj/structure/flora/ausbushes/reedbush,
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/turf/simulated/floor/beach/water/shallow,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "dj" = (
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/mob/living/simple_animal/frog,
-/turf/simulated/floor/beach/water/shallow,
-/area/liberty/outside/mountainsolars)
-"dk" = (
-/obj/structure/flora/small/bushc1,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"dl" = (
-/obj/structure/flora/small/grassa3,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"dm" = (
-/obj/structure/flora/ausbushes/sunnybush,
-/turf/simulated/floor/asteroid/dirt/mud,
-/area/liberty/outside/mountainsolars)
-"dn" = (
-/turf/simulated/floor/beach/sand,
-/area/liberty/outside/mountainsolars)
-"do" = (
-/obj/structure/flora/ausbushes/reedbush,
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/asteroid/dirt/mud,
-/area/liberty/outside/mountainsolars)
-"dp" = (
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/mob/living/simple_animal/crab,
-/turf/simulated/floor/beach/water/shallow,
-/area/liberty/outside/mountainsolars)
-"dq" = (
-/obj/structure/flora/small/grassa2,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "dr" = (
 /obj/structure/flora/small/lavarock2,
-/turf/simulated/floor/beach/sand,
-/area/liberty/outside/mountainsolars)
-"ds" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/beach/sand,
-/area/liberty/outside/mountainsolars)
-"dt" = (
-/obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"du" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"dv" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"dw" = (
-/obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"dx" = (
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/mob/living/simple_animal/goose,
-/turf/simulated/floor/beach/water/shallow,
-/area/liberty/outside/mountainsolars)
-"dy" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/flora/small/lavarock3,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "dz" = (
-/obj/structure/flora/small/lavarock3,
-/turf/simulated/floor/beach/sand,
-/area/liberty/outside/mountainsolars)
-"dA" = (
-/obj/random/mob/croaker/low_chance,
-/turf/simulated/floor/beach/sand,
+/obj/structure/flora/small/trailrocka5,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "dB" = (
 /obj/structure/cable{
@@ -915,19 +631,14 @@
 /obj/machinery/power/solar,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"dG" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/mineral/planet,
-/area/liberty/outside/mountainsolars)
 "dI" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/boulder,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "dK" = (
 /obj/effect/floor_decal/industrial/inputgate,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "dL" = (
 /obj/effect/window_lwall_spawn/smartspawnplasma,
@@ -979,33 +690,16 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"eE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/vehicle/train/cargo/trolley,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"eI" = (
-/obj/effect/decal/cleanable/rubble,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/rock,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "eM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
-"eT" = (
-/obj/structure/flora/big/bush2,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "fn" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -1014,7 +708,6 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/engineering/dorm)
 "fo" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard,
 /obj/item/device/pipe_painter,
 /turf/simulated/floor/tiled/steel/orangecorner,
@@ -1024,8 +717,8 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/structure/invislight,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "fq" = (
 /obj/machinery/light{
@@ -1034,12 +727,10 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "fD" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warningnew/radiation,
 /turf/simulated/wall,
 /area/liberty/outside/mountainsolars)
 "fH" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/mountainsolars)
@@ -1052,14 +743,8 @@
 /area/liberty/outside/mountainsolars)
 "fL" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
 /obj/vehicle/train/cargo/trolley,
 /turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"gr" = (
-/obj/effect/decal/cleanable/rubble,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "gD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -1072,7 +757,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "gS" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -1087,7 +771,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "hb" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -1112,16 +795,6 @@
 /obj/structure/railing,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"hG" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
 "hV" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8;
@@ -1149,11 +822,10 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "is" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/rock,
+/obj/structure/flora/small/snow/rock4,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "it" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/radiation,
 /obj/item/contraband/poster/placed/generic/firesafety{
 	pixel_y = 32
@@ -1162,29 +834,17 @@
 /area/liberty/outside/mountainsolars)
 "ix" = (
 /obj/machinery/vending/dinnerware,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/engineering/dorm)
 "iH" = (
 /obj/random/traps/wire_splicing/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"iJ" = (
-/obj/structure/flora/small/grassa2,
-/obj/structure/flora/small/grassa2,
-/obj/structure/flora/small/busha3,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "iY" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
-"iZ" = (
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "ji" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
@@ -1204,8 +864,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/outside/mountainsolars)
 "jr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -1217,7 +875,6 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "jE" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -1225,23 +882,14 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"jH" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "jM" = (
 /obj/structure/catwalk,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "ki" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/mineral,
-/area/liberty/outside/mountainsolars)
-"kp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/binary/circulator,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/obj/structure/flora/small/snow/rock6,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "kq" = (
 /obj/structure/closet/crate/solar,
@@ -1264,22 +912,6 @@
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"kG" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"kO" = (
-/obj/structure/flora/small/bushc3,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "kP" = (
 /obj/effect/decal/cleanable/rubble,
@@ -1308,12 +940,6 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
 /turf/space,
 /area/liberty/outside/mountainsolars)
-"lI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "lJ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
@@ -1321,8 +947,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "lK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/binary/circulator,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
@@ -1330,7 +954,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "lW" = (
 /turf/simulated/floor/reinforced/airless,
@@ -1339,12 +963,6 @@
 /obj/vehicle/train/cargo/trolley,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"mz" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/rock,
-/area/liberty/outside/mountainsolars)
 "mI" = (
 /turf/simulated/floor/rock,
 /area/liberty/outside/mountainsolars)
@@ -1352,30 +970,14 @@
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"ng" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
 "nl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
-"no" = (
-/obj/structure/railing,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "np" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -1384,22 +986,6 @@
 "nt" = (
 /turf/simulated/wall,
 /area/liberty/engineering/dorm)
-"nx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/rock,
-/area/liberty/outside/mountainsolars)
-"nz" = (
-/obj/structure/railing{
-	dir = 1;
-	tag = "icon-railing0 (NORTH)"
-	},
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"nJ" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/outside/mountainsolars)
 "nK" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 9
@@ -1413,11 +999,6 @@
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
-"nU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
 "nW" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/empty,
@@ -1428,20 +1009,10 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"nZ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/holoposter{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "on" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/radiation,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
@@ -1450,10 +1021,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"ox" = (
-/obj/item/reagent_containers/food/drinks/bottle/small/beer_two,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "oG" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1466,18 +1033,8 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/invislight,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"oM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 10
-	},
-/obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "oP" = (
 /obj/effect/decal/cleanable/rubble,
@@ -1495,7 +1052,6 @@
 /area/liberty/outside/mountainsolars)
 "oX" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -1520,7 +1076,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "pq" = (
 /obj/machinery/vending/wallmed{
@@ -1542,26 +1098,9 @@
 /turf/unsimulated/mineral,
 /area/liberty/outside/mountainsolars)
 "qg" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"ql" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/scrap/dense_weighted,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"qB" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "qL" = (
 /obj/structure/table/glass,
 /obj/item/deck/cards,
@@ -1569,8 +1108,6 @@
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
 "qN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -1579,56 +1116,25 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
-"qU" = (
-/obj/structure/flora/small/rock4,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "qX" = (
 /obj/machinery/camera/network/engineering{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"rm" = (
-/obj/random/flora/jungle_tree/low,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"rC" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"rF" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techmaint_perforated,
-/area/liberty/engineering/dorm)
-"rL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/furniture/pottedplant,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
 "rM" = (
 /obj/random/scrap/dense_weighted,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/mountainsolars)
 "rR" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/machinery/light/small,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
 "rW" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "sh" = (
@@ -1637,14 +1143,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 24
-	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "sj" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard,
 /obj/machinery/recharger,
 /obj/item/circuitboard/powermonitor,
@@ -1654,7 +1155,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "st" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
@@ -1664,11 +1164,6 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"sw" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "sS" = (
@@ -1708,24 +1203,14 @@
 	},
 /turf/space,
 /area/liberty/outside/mountainsolars)
-"tg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "tr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/window/southleft,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "tv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "tE" = (
 /obj/structure/window/reinforced{
@@ -1742,15 +1227,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"ug" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/unsimulated/mineral,
-/area/liberty/outside/mountainsolars)
-"ut" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "uz" = (
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/steel/orangecorner,
@@ -1764,19 +1240,12 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "vb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/window/northright,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "vk" = (
 /obj/machinery/pipedispenser,
 /turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"vl" = (
-/obj/structure/flora/ausbushes/brflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "vR" = (
 /obj/machinery/photocopier,
@@ -1786,7 +1255,7 @@
 /obj/structure/bed/chair,
 /obj/item/storage/fancy/cigarettes/toha,
 /obj/item/flame/lighter/zippo/brass,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "vU" = (
 /obj/machinery/light{
@@ -1795,19 +1264,6 @@
 /obj/machinery/vending/engivend,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/engineering/dorm)
-"wi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/rock,
-/area/liberty/outside/mountainsolars)
-"wl" = (
-/obj/machinery/atmospherics/portables_connector,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
 "wm" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/structure/cable{
@@ -1833,10 +1289,6 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"wK" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "wO" = (
 /obj/machinery/air_sensor{
 	id_tag = "SM_sensor";
@@ -1846,9 +1298,8 @@
 /turf/simulated/floor/reinforced/airless,
 /area/liberty/outside/mountainsolars)
 "wR" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/snow/three,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "wU" = (
 /obj/structure/cable{
@@ -1872,8 +1323,6 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/mountainsolars)
 "xf" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
 /turf/simulated/floor/tiled/steel/orangecorner,
@@ -1883,7 +1332,6 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
 "xh" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -1894,11 +1342,10 @@
 /turf/simulated/floor/rock,
 /area/liberty/outside/mountainsolars)
 "xP" = (
-/obj/structure/flora/ausbushes/ywflowers,
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "yc" = (
 /obj/random/scrap/sparse_even/low_chance,
@@ -1923,7 +1370,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/railing,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "yC" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -1933,23 +1380,18 @@
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "yG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/dirt,
+/obj/structure/flora/tree/snow/three,
+/obj/structure/flora/small/snow/rock1,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "yK" = (
 /obj/machinery/vending/cola,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/engineering/dorm)
 "yU" = (
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
 "zb" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5
 	},
@@ -1957,26 +1399,21 @@
 /area/liberty/outside/mountainsolars)
 "zi" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock8,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "zG" = (
 /obj/effect/floor_decal/industrial/warning/full,
 /turf/simulated/floor/reinforced/airless,
 /area/liberty/outside/mountainsolars)
-"zI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techmaint_perforated,
-/area/liberty/engineering/dorm)
 "zV" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Af" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/random/scrap/dense_weighted,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "Az" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -1987,7 +1424,7 @@
 /area/liberty/outside/mountainsolars)
 "AA" = (
 /obj/random/junk/cigbutt,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "AB" = (
 /obj/structure/table/rack/shelf,
@@ -2000,20 +1437,10 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"Be" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "Bg" = (
 /obj/machinery/door/airlock/multi_tile/glass,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/outside/mountainsolars)
-"Bi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "Br" = (
 /obj/machinery/atmospherics/pipe/manifold/visible,
@@ -2037,12 +1464,7 @@
 "BI" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
 /obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"BP" = (
-/obj/structure/boulder,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "BY" = (
 /obj/effect/decal/cleanable/rubble,
@@ -2059,27 +1481,18 @@
 /obj/item/device/lighting/toggleable/lamp/green,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
-"Cn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
 "CE" = (
 /obj/structure/catwalk,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "CP" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "CY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 10
@@ -2087,29 +1500,10 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
-"Dg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"Di" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
 "Dm" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"Dt" = (
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"Dv" = (
-/obj/structure/flora/small/lavarock3,
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "DA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -2131,18 +1525,12 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "DJ" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/generator,
 /obj/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"DS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "DU" = (
 /obj/machinery/door/airlock/hatch{
 	req_one_access = list(24,10)
@@ -2157,21 +1545,14 @@
 /turf/space,
 /area/liberty/outside/mountainsolars)
 "DZ" = (
-/obj/structure/flora/ausbushes/lavendergrass,
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "El" = (
 /obj/effect/floor_decal/industrial/inputgate,
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
-"En" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/rack/shelf,
-/obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/techmaint_perforated,
-/area/liberty/engineering/dorm)
 "Eq" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2206,8 +1587,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "EI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -2223,8 +1602,6 @@
 /area/liberty/engineering/dorm)
 "EN" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -2233,11 +1610,6 @@
 	},
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"EU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "Fk" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -2259,56 +1631,23 @@
 /area/liberty/engineering/dorm)
 "Fo" = (
 /obj/structure/boulder,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"Ft" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/outside/mountainsolars)
-"FC" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "FD" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
 /obj/vehicle/train/cargo/engine,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"FF" = (
-/obj/structure/flora/small/busha3,
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/railing,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"FR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/oracarpet,
-/area/liberty/engineering/dorm)
 "FX" = (
-/obj/structure/invislight,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
-"Gd" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "Gh" = (
 /obj/structure/railing{
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Gj" = (
 /obj/machinery/door/airlock/atmos{
@@ -2344,7 +1683,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "Ht" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 6
@@ -2369,8 +1707,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "HT" = (
@@ -2379,7 +1715,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
@@ -2405,7 +1740,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/structure/invislight,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "Io" = (
@@ -2414,14 +1749,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating/under,
-/area/liberty/outside/mountainsolars)
-"IQ" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/railing{
-	dir = 1;
-	tag = "icon-railing0 (NORTH)"
-	},
-/turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/mountainsolars)
 "IT" = (
 /obj/machinery/papershredder,
@@ -2433,11 +1760,6 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"JB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/junk/cigbutt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
 "JJ" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	target_pressure = 5000
@@ -2446,22 +1768,18 @@
 /area/liberty/engineering/dorm)
 "JU" = (
 /obj/structure/boulder,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "JX" = (
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/engineering/dorm)
 "JZ" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Kb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
@@ -2470,12 +1788,7 @@
 /area/liberty/outside/mountainsolars)
 "Kf" = (
 /obj/random/scrap/dense_weighted,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"Kk" = (
-/obj/structure/flora/small/grassa2,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Kn" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -2488,18 +1801,15 @@
 	dir = 1;
 	tag = "icon-railing0 (NORTH)"
 	},
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "KO" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "KR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/cable{
 	d1 = 4;
@@ -2513,8 +1823,6 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "KX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
@@ -2525,7 +1833,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/railing,
-/obj/structure/invislight,
+/obj/structure/invislight/outside,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
@@ -2538,7 +1846,6 @@
 /turf/simulated/floor/rock,
 /area/liberty/outside/mountainsolars)
 "Lf" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -2548,12 +1855,6 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
-"Lv" = (
-/obj/effect/decal/cleanable/rubble,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/rock,
-/area/liberty/outside/mountainsolars)
 "Lz" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
 /turf/simulated/mineral,
@@ -2562,7 +1863,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
@@ -2576,8 +1876,8 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "LS" = (
-/obj/structure/flora/small/rock5,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/pine,
+/turf/unsimulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Mg" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
@@ -2587,17 +1887,6 @@
 /turf/simulated/floor/plating,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"Mr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "My" = (
 /obj/random/scrap/dense_weighted,
 /turf/simulated/floor/asteroid/dirt,
@@ -2623,8 +1912,8 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "Nh" = (
-/obj/structure/flora/small/bushc2,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/tree/snow/five,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Nn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2638,10 +1927,6 @@
 "Nq" = (
 /obj/structure/flora/small/trailrocka4,
 /turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
-"Nt" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
 /area/liberty/outside/mountainsolars)
 "NF" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -2665,10 +1950,9 @@
 "NQ" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/scrap/moderate_weighted,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Od" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -2687,25 +1971,20 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Ok" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/low_wall,
-/turf/simulated/floor/plating,
-/area/liberty/engineering/dorm)
-"Oq" = (
-/obj/structure/invislight,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/boulder2,
+/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
-"Ot" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techmaint_perforated,
-/area/liberty/engineering/dorm)
+"Oq" = (
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/outside/mountainsolars)
 "Oz" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/scrap/dense_weighted,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "OC" = (
 /obj/structure/table/glass,
@@ -2716,18 +1995,13 @@
 	},
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
-"OJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "OM" = (
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/engineering/dorm)
 "OU" = (
-/obj/structure/flora/big/bush3,
-/turf/simulated/floor/asteroid/grass,
+/obj/structure/flora/small/snow/rock6,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Pd" = (
 /obj/effect/decal/cleanable/rubble,
@@ -2735,9 +2009,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "PE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
+/obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "PQ" = (
@@ -2747,22 +2019,7 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
-"PU" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/liberty/outside/mountainsolars)
-"PX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "Qa" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/engineering/dorm)
@@ -2774,33 +2031,22 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Qm" = (
-/obj/structure/flora/small/bushb1,
 /obj/structure/railing{
 	dir = 1;
 	tag = "icon-railing0 (NORTH)"
 	},
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"Qq" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/mineral,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Qr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/dorm)
-"QH" = (
-/obj/structure/flora/small/busha3,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "QL" = (
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
 "QP" = (
@@ -2815,21 +2061,7 @@
 /area/liberty/engineering/dorm)
 "Rb" = (
 /obj/item/reagent_containers/food/drinks/bottle/small/beer_two,
-/obj/structure/flora/small/bushc3,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"Rd" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"Ri" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/boulder,
-/turf/simulated/floor/rock,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Rj" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
@@ -2841,19 +2073,7 @@
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/mountainsolars)
-"Rq" = (
-/obj/random/junk/cigbutt,
-/obj/structure/flora/big/bush2,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
-"RK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/obj/random/scrap/dense_weighted,
-/turf/simulated/floor/asteroid/dirt,
-/area/liberty/outside/mountainsolars)
 "RO" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/engineering,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -2861,12 +2081,10 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
 "RP" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/railing,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "RS" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
@@ -2884,15 +2102,10 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/mountainsolars)
 "SG" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"SI" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "SO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2915,8 +2128,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
 "Tq" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/random/tool/advanced/low_chance,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
@@ -2937,13 +2148,7 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
-"TD" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/random/junk/cigbutt,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "TF" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -2971,7 +2176,6 @@
 /turf/simulated/floor/reinforced/airless,
 /area/liberty/outside/mountainsolars)
 "Uc" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
@@ -3010,50 +2214,24 @@
 /area/liberty/outside/mountainsolars)
 "Uo" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/effect/decal/cleanable/dirt,
 /obj/random/scrap/dense_weighted,
 /turf/simulated/floor/rock,
 /area/liberty/outside/mountainsolars)
-"Us" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
-"Uu" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
 "UE" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold4w/visible/yellow,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/outside/mountainsolars)
-"UF" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "UN" = (
 /obj/structure/sign/faction/technomancers{
 	pixel_y = 32
 	},
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "UT" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 4
 	},
 /turf/space,
-/area/liberty/outside/mountainsolars)
-"UX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/fixed/hydrotile,
 /area/liberty/outside/mountainsolars)
 "Vd" = (
 /obj/structure/sign/warning/nosmoking/largeburnt,
@@ -3095,30 +2273,13 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/outside/mountainsolars)
 "VZ" = (
-/obj/structure/boulder,
-/turf/simulated/floor/fixed/hydrotile,
-/area/liberty/outside/mountainsolars)
-"Wd" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "Wo" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
-"Wv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/engineering/dorm)
 "Wy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -3137,11 +2298,6 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"WH" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/outside/mountainsolars)
 "WR" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -3153,7 +2309,7 @@
 /area/liberty/outside/mountainsolars)
 "WS" = (
 /obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/snow,
 /area/liberty/outside/mountainsolars)
 "WV" = (
 /obj/machinery/light{
@@ -3181,7 +2337,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "Xj" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
@@ -3206,7 +2361,7 @@
 	dir = 8;
 	tag = "icon-railing0 (WEST)"
 	},
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "XQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -3214,23 +2369,7 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/outside/mountainsolars)
-"XR" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/dorm)
-"Ye" = (
-/obj/structure/flora/small/bushb2,
-/turf/simulated/floor/asteroid/grass,
-/area/liberty/outside/mountainsolars)
 "Yv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/device/radio/intercom{
 	pixel_y = 22
 	},
@@ -3257,9 +2396,6 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/dorm)
 "YR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -3272,7 +2408,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Zj" = (
@@ -3283,23 +2418,16 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
-"Zm" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/rock,
-/area/liberty/outside/mountainsolars)
 "Zo" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/fixed/hydrotile,
+/turf/simulated/floor/icewater,
 /area/liberty/outside/mountainsolars)
 "Zx" = (
 /obj/structure/railing{
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/structure/invislight,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "Zy" = (
@@ -3313,7 +2441,6 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "ZH" = (
@@ -3324,7 +2451,6 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/engineering/dorm)
 "ZY" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/cable{
 	d1 = 1;
@@ -4605,11 +3731,11 @@ ab
 ab
 ac
 ac
-al
-al
-al
-al
-al
+aU
+aU
+aU
+de
+aU
 ac
 ac
 ac
@@ -4706,14 +3832,14 @@ ab
 ac
 ac
 ac
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+bO
+aU
+aU
+aU
+aU
 ac
 ac
 ab
@@ -4724,10 +3850,10 @@ ab
 ab
 ab
 ac
-al
-al
-al
-al
+aU
+av
+aU
+aU
 ac
 ac
 ab
@@ -4790,8 +3916,8 @@ ab
 ab
 ab
 ac
-al
-al
+aU
+aU
 ac
 ac
 ac
@@ -4806,32 +3932,32 @@ ab
 ab
 ac
 ac
+aU
 al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+av
+aU
+aU
+aU
+wR
+aU
+de
 ac
+aU
+aU
+aU
 al
-al
-al
-al
-al
+aU
 ac
 ac
 ac
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+de
+aU
+aU
 ac
 ab
 ab
@@ -4892,24 +4018,24 @@ ab
 ab
 ab
 ac
-al
-al
-al
-al
+wR
+aU
+aU
+aU
 ac
 ac
 ac
 ac
 ac
 ac
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aT
+aU
+aU
+de
+aU
 ac
 ac
 ac
@@ -4917,29 +4043,29 @@ ac
 ac
 ac
 ac
-al
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+av
+aU
+aU
+de
+aU
 ac
 ac
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+bO
+bO
+de
+aU
+aU
 ac
 ac
 ac
 ac
-al
+aU
 ac
 ac
 ac
@@ -4994,17 +4120,17 @@ ab
 ab
 ab
 ac
-al
+aU
+aT
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 av
-av
-av
-al
-al
-av
-bT
-al
-al
-al
 ac
 ac
 ac
@@ -5023,13 +4149,10 @@ ac
 ac
 ac
 ac
-al
+aU
 ac
 ac
-al
-ac
-ac
-ac
+aU
 ac
 ac
 ac
@@ -5040,12 +4163,15 @@ ac
 ac
 ac
 ac
-cU
 ac
 ac
 ac
-al
-al
+ac
+ac
+ac
+ac
+aU
+aU
 ac
 ac
 ac
@@ -5096,12 +4222,12 @@ ab
 ab
 ab
 ac
-al
-aS
 aU
-aS
-aS
-aT
+aU
+aU
+aU
+wR
+aU
 ae
 af
 ah
@@ -5139,18 +4265,18 @@ af
 ah
 ac
 ac
-al
+aU
 ac
-al
-ac
-ac
-al
-al
+bT
 ac
 ac
+aU
+aU
 ac
-al
-al
+ac
+ac
+aU
+aU
 ac
 ac
 ac
@@ -5198,12 +4324,12 @@ ab
 ab
 ab
 ac
-al
-aS
-al
-aS
-aS
-al
+aU
+aU
+aU
+aU
+aT
+aU
 ae
 ag
 dF
@@ -5241,21 +4367,21 @@ ag
 dF
 ac
 ac
-al
-al
-aS
-aS
-al
-al
-al
+aU
+aU
+de
+aU
+aU
+yG
+aU
 dh
 ac
 ac
 aU
-al
-al
+de
+aU
 ac
-al
+aU
 ac
 ac
 ab
@@ -5301,11 +4427,11 @@ ab
 ab
 ac
 ac
-aS
-av
+aU
 al
-aS
-al
+aU
+aU
+aU
 ae
 ag
 dF
@@ -5344,17 +4470,17 @@ dF
 ac
 ac
 ac
-al
-bP
-aS
-av
-bL
-bL
-al
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
-al
+aU
 ac
-al
+aU
 ac
 ac
 ac
@@ -5402,66 +4528,66 @@ ab
 ab
 ab
 ac
-al
-av
 aU
-al
-bL
+aU
+aU
+aU
+aU
+aU
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+aU
+aU
+bO
+aU
+aU
 av
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-al
-al
-aS
-al
-bL
-bL
 de
-al
+aU
 ac
-al
+aU
 ac
-al
+aU
 ac
-al
+aU
 ac
-al
-al
+de
+aU
 ac
 ab
 ab
@@ -5504,12 +4630,12 @@ ab
 ab
 ab
 ac
-al
+de
+aU
+aU
 av
-al
-aS
-bL
-av
+bO
+aU
 ae
 ag
 dF
@@ -5547,18 +4673,18 @@ ag
 dF
 ac
 ac
-al
-al
-aS
-al
-bT
-al
-bL
-al
+aU
+aU
+aU
+de
+bO
+aU
+aU
+aU
 ac
-al
-al
-al
+aU
+aU
+LS
 ac
 ac
 ac
@@ -5607,63 +4733,63 @@ ab
 ab
 ac
 ac
+aU
+aU
+aU
+aU
+aU
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+ac
+aU
 av
-aS
-bP
-aS
-aS
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-ac
-al
-al
+aU
+aU
+aU
 av
-aS
-aS
-bP
-al
+aU
 ac
-al
-bT
+aU
+aU
 ac
 ac
 ac
-ac
+ki
 ac
 ac
 ac
@@ -5709,11 +4835,11 @@ ab
 ab
 ac
 ac
-al
-aS
-bP
-aS
-aS
+aU
+aU
+aU
+aT
+aU
 ae
 ag
 dF
@@ -5751,25 +4877,25 @@ ag
 dF
 ac
 ac
-cU
-al
-al
-al
-al
-al
-al
-al
-al
-al
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
 ac
 ac
 ac
+dd
 ac
-ac
-ac
+db
 ac
 ac
 ac
@@ -5811,11 +4937,11 @@ ab
 ab
 ac
 ac
-av
-bL
-bL
-aS
-bL
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -5853,27 +4979,27 @@ ag
 dF
 ac
 ac
-al
+aU
 ac
 ac
 ac
 ac
 ac
 ac
-al
-al
-al
+bO
+aU
+de
 ac
-dn
-dn
+ac
+ac
 dr
 ac
-dn
-dn
-dn
-dn
-dn
-dn
+ac
+ac
+ac
+ac
+ac
+dz
 ac
 ac
 ab
@@ -5913,11 +5039,11 @@ ab
 ab
 ac
 ac
-al
-bL
-bQ
-bP
-bQ
+wR
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -5955,27 +5081,27 @@ ag
 dF
 ac
 ac
-al
-al
-al
+aS
+aU
+aU
 ac
 ac
 ac
 ac
-al
-al
+av
+aU
+ac
+db
 ac
 ac
 ac
 ac
-dn
-dn
-dd
-dn
-dn
-dn
-dn
-dn
+ac
+ac
+ac
+dz
+ac
+ac
 ac
 ac
 ab
@@ -6015,11 +5141,11 @@ ab
 ab
 ac
 ac
-al
-aS
-bP
-bQ
-bQ
+aU
+av
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6057,27 +5183,27 @@ ag
 dF
 ac
 ac
-al
-aS
-aS
+aU
+de
+aU
 ac
-al
-al
-al
+aU
+aU
+aU
+ac
+ac
+ac
+ac
+ac
+Ok
+ac
+ac
+dj
+ac
+ac
 ac
 ac
 db
-db
-db
-dd
-ds
-ds
-dc
-dd
-dd
-dn
-dn
-dn
 ac
 ab
 ab
@@ -6117,69 +5243,69 @@ ab
 ab
 ac
 ac
-al
-aS
-bP
-bQ
-bP
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-al
-aS
-aS
-ac
+aU
+aU
+aU
 aU
 al
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
 ac
 ac
-db
-db
-dm
-do
-di
-dc
-dc
-dc
-dc
-dc
-dd
-dn
-dn
+aU
+aU
+aU
+ac
+de
+aU
+ac
+ac
+ac
+ac
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+ac
+ac
 ac
 ab
 ab
@@ -6218,12 +5344,12 @@ ab
 ab
 ab
 ac
-al
-al
-aS
-bQ
-bP
-bP
+aU
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6261,28 +5387,28 @@ ag
 dF
 ac
 ac
-al
-aS
-aS
-al
+aU
+bO
+aU
+aU
 ac
 ac
 ac
-db
-db
-db
-dg
-di
-dc
-dc
-dc
-dc
-dc
-dc
-dc
+ac
 dd
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 dz
-dd
+ac
 ab
 ab
 ab
@@ -6320,71 +5446,71 @@ ab
 ab
 ab
 ac
-al
-al
-bM
-bQ
-bR
-bR
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-al
+aU
+aU
+aU
+aU
+aU
 av
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+aU
 av
-ac
+aU
 ac
 ac
 db
-db
-df
-db
-di
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
-dd
+ac
+ac
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+ac
 ab
 ab
 ab
@@ -6423,11 +5549,11 @@ ab
 ab
 ac
 ac
-al
-al
-aS
-aS
-bP
+aT
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6465,28 +5591,28 @@ ag
 dF
 ac
 ac
-al
-av
-av
+aU
+aU
+aU
+ac
+ac
+ac
 ac
 ac
 db
-db
-db
-db
-dg
-di
-dc
-dc
-dc
-dc
-dc
-dc
+ac
 dj
-dc
-dc
-dc
-dd
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -6525,11 +5651,11 @@ ab
 ab
 ac
 ac
-aT
-al
-aS
-aS
-aS
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6567,28 +5693,28 @@ ag
 dF
 ac
 ac
-al
-av
-al
-al
-al
-db
-df
-db
-df
-dg
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
+aU
+aU
+aU
+aU
+aU
+ac
+ac
+ac
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -6626,71 +5752,71 @@ ab
 ab
 ab
 ac
+aU
+aU
+aU
+aU
+aU
+aU
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+aU
 al
-al
-bN
-bL
-aS
-aS
-ae
-ag
-dF
+aU
+aU
+bT
 ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-al
-av
-al
-al
-al
-db
-db
-db
-dg
-dc
-dc
-dc
-dc
-dj
-dc
-dc
-dc
-dc
-dc
-dc
-dc
 dd
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -6728,12 +5854,12 @@ ab
 ab
 ab
 ac
-al
-av
+bL
+aU
 bO
-bL
-aS
-aS
+aU
+aT
+aU
 ae
 ag
 dF
@@ -6771,28 +5897,28 @@ ag
 dF
 ac
 ac
-al
-bL
-aS
+aU
+aU
+aU
 ac
 ac
-db
-db
-dg
-di
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
+ac
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -6830,12 +5956,12 @@ ab
 ab
 ab
 ac
-al
-aS
-av
-av
-aS
-aS
+aU
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6874,27 +6000,27 @@ dF
 ac
 ac
 aU
-aS
-aS
-al
+aU
+aU
+aU
 ac
-db
-dg
-di
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dx
-dc
-dc
-dc
-dc
-dd
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+Ok
 ab
 ab
 ab
@@ -6932,12 +6058,12 @@ ab
 ab
 ab
 ac
-al
-aS
-av
-bL
-aS
-aS
+aU
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -6975,28 +6101,28 @@ ag
 dF
 ac
 ac
-al
-al
-al
-al
+bT
+aU
+aU
+aU
 ac
-db
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -7034,12 +6160,12 @@ ab
 ab
 ab
 ac
-al
-al
-av
-av
-aS
-al
+aT
+aU
+aU
+wR
+aU
+aU
 ae
 ag
 dF
@@ -7077,28 +6203,28 @@ ag
 dF
 ac
 ac
-al
+aU
 cW
-al
+aU
 ac
 ac
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -7136,12 +6262,12 @@ ab
 ab
 ab
 ac
-al
 aU
-al
-al
-al
-al
+aU
+av
+aU
+aU
+aU
 ae
 ag
 dF
@@ -7179,28 +6305,28 @@ ag
 dF
 ac
 ac
-al
-bL
-aS
+aU
+aU
+aU
 ac
+db
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 ac
-dc
-dc
-dc
-dc
-dc
-dc
-dp
-dc
-dd
-dn
-dn
-dn
-dd
-dc
-dc
-dc
-dd
 ab
 ab
 ab
@@ -7238,12 +6364,12 @@ ab
 ab
 ab
 ac
-al
-al
-al
-al
-aS
-aS
+aU
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -7281,28 +6407,28 @@ ag
 dF
 ac
 ac
-al
-bL
-aS
+aU
+aU
+aU
 ac
 ac
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
-dt
-dw
-dt
-dz
-dd
-dc
-dc
-dd
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -7341,11 +6467,11 @@ ab
 ab
 ac
 ac
+aU
+aU
 al
-bN
-av
-aS
-aS
+aU
+aU
 ae
 ag
 dF
@@ -7383,28 +6509,28 @@ ag
 dF
 ac
 ac
-al
-av
-al
+wR
+aU
+aU
 ac
 ac
-dc
-dc
-dc
 dj
-dc
-dc
-dc
-dc
-dd
-bV
-av
-av
-bV
-dn
-dc
-dc
-dd
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -7443,11 +6569,11 @@ ab
 ab
 ac
 ac
-al
-av
-av
-al
-al
+aU
+aU
+aU
+aU
+aU
 ae
 ag
 dF
@@ -7485,28 +6611,28 @@ ag
 dF
 ac
 ac
-al
-bL
-al
-al
+aU
+aU
+aU
+aU
 ac
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dd
-aS
-aS
-aS
-aS
-dn
-dc
-dc
-dd
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 ab
 ab
 ab
@@ -7545,11 +6671,11 @@ ab
 ab
 ac
 ac
-al
-al
-al
-al
 aU
+aU
+aU
+aU
+aT
 ae
 ag
 dF
@@ -7587,28 +6713,28 @@ ag
 dF
 ac
 ac
-al
-aS
-al
-al
+aU
+av
+aU
+aU
 ac
-dc
-dc
-dc
-dc
-dc
-dc
-dp
-dc
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 ac
-du
-du
-dy
-du
-dA
-dc
-dc
-dd
 ab
 ab
 ab
@@ -7647,70 +6773,70 @@ ab
 ab
 ac
 ac
-al
-al
-al
-av
-al
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ac
-cc
-al
-al
-al
-ac
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-ac
-dv
-du
 aU
-du
-dn
-dc
-dc
-dG
+aT
+aU
+aU
+aU
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+aU
+aU
+aU
+aU
+Ok
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ab
 ab
 ab
 ab
@@ -7751,68 +6877,68 @@ ac
 ac
 ac
 ac
+aU
+aU
+aU
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ae
+ag
+dF
+ac
+ac
+aU
+ac
+ac
 al
-al
-al
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
-ac
-ae
-ag
-dF
 ac
 ac
-av
-bV
-ac
-al
-ac
-dd
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-ac
-dv
-du
-du
-dn
-dd
-dc
-dc
-dG
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ab
 ab
 ab
 ab
@@ -7855,7 +6981,7 @@ ac
 ac
 ac
 ac
-al
+aU
 ae
 ag
 dF
@@ -7893,28 +7019,28 @@ ag
 dF
 ac
 ac
-al
-cX
+aU
+ac
 ac
 ac
 ac
 dd
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-ac
-ac
-ac
-dn
-dd
-dc
-dc
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 ab
-dG
+ab
 ab
 ab
 ab
@@ -7955,9 +7081,9 @@ ab
 ac
 ac
 ac
-al
-al
-al
+aU
+aU
+aU
 ae
 ag
 dF
@@ -7995,28 +7121,28 @@ ag
 dF
 ac
 ac
-al
 ac
 ac
 ac
 ac
-dd
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
-dc
+ac
+ac
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 ab
-dG
+ab
 ab
 ab
 ab
@@ -8057,9 +7183,9 @@ ab
 ab
 ac
 ac
-al
-al
+aU
 av
+aU
 ae
 ag
 dF
@@ -8097,28 +7223,28 @@ ag
 dF
 ac
 ac
-al
+ac
 ac
 ac
 ac
 ab
+ac
+ac
+ac
+ac
+ac
 dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dd
-dG
-dG
-dG
-dG
+ac
+ac
+ac
+ac
+db
+ac
+ac
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -8161,7 +7287,7 @@ ab
 ac
 ac
 ac
-av
+aU
 ad
 iH
 iH
@@ -8199,8 +7325,8 @@ iH
 ad
 ac
 ac
-al
-bV
+ac
+ac
 ac
 ab
 ab
@@ -8263,7 +7389,7 @@ ab
 ab
 ac
 ac
-av
+aU
 ac
 ac
 ac
@@ -8301,7 +7427,7 @@ ac
 ac
 ac
 ac
-al
+ac
 ac
 ac
 ab
@@ -8365,21 +7491,21 @@ ab
 ab
 ac
 ac
-al
-av
-av
-al
-ax
-al
-Nh
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
 ac
 ac
-Ye
-aQ
-al
+aU
+aU
+aU
 ac
 ac
 ac
@@ -8387,15 +7513,15 @@ aG
 ac
 ac
 ac
-al
-al
-al
-al
-al
-al
-al
-al
-al
+ac
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
@@ -8403,7 +7529,7 @@ ac
 ac
 ac
 ac
-al
+ac
 ac
 ac
 ac
@@ -8467,49 +7593,49 @@ ab
 ab
 ac
 ac
-al
-av
+aU
+aU
 bL
-aS
-al
-aD
-al
-al
-aS
 av
-aD
-al
-av
-aS
-al
-Ye
+aU
+aU
+aU
+is
+aU
+aU
+aU
+aU
+aU
+is
+aU
+aU
 ac
 ac
 aG
 ac
 ac
 ac
-cw
-al
-aS
-aS
-av
-av
-aS
-cw
-al
-al
-al
-al
-al
-al
-al
-al
+ac
+aU
+aU
+aU
+aU
+de
+aU
+aU
+aU
+aU
 ac
 ac
 ac
-al
-al
+aU
+aU
+ac
+ac
+ac
+ac
+aU
+aU
 ab
 ab
 ab
@@ -8520,8 +7646,8 @@ ab
 ab
 ab
 ab
-al
-al
+ac
+ac
 ac
 ac
 ab
@@ -8570,15 +7696,15 @@ ab
 ac
 ac
 ac
-av
-av
-bT
-Ye
+aU
+aV
+aU
+aT
 aS
-cR
-al
-cR
-Ye
+av
+aU
+aU
+aU
 ac
 ac
 ac
@@ -8591,39 +7717,39 @@ Ib
 ac
 bb
 ac
+aU
+aU
+aU
 al
-al
+aU
+aU
+aU
 av
-al
-cw
-al
-al
-al
-al
-aS
-bP
-aS
-aS
-aS
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
 ac
-cX
-aS
-al
-al
-al
-al
+ac
+aU
+aU
+aU
+aU
+aU
 ab
 ab
 ab
 ab
 ab
 ab
-al
-al
-al
+aU
+ac
+ac
 ac
 ac
 ac
@@ -8672,14 +7798,14 @@ ab
 ac
 ac
 Nh
+aT
+aU
+aU
 al
-OU
-al
-OU
-aQ
-av
-al
-aS
+aU
+aU
+aU
+aU
 ac
 ac
 aa
@@ -8693,39 +7819,39 @@ aR
 aj
 aj
 ac
+aU
+aU
+aU
+aU
+aU
+Nh
+aU
+aU
+aU
+aU
 al
-aS
-av
-bN
-al
-bL
-aS
-al
-av
-bL
-bL
-al
-al
-aS
+aU
+aU
+aU
 ac
 ac
 ac
 ac
-aS
-aS
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+bT
+aU
+aU
+aU
+aU
 ab
 ab
-al
-al
-al
-al
+aU
+aU
+aU
+aU
 ac
 ac
 ac
@@ -8772,15 +7898,15 @@ ab
 ab
 ab
 ac
-al
-eT
+aU
+av
 Rb
-aS
-TD
+aU
+AA
 Rb
 OU
-al
-rm
+bL
+aU
 ac
 ac
 ab
@@ -8795,39 +7921,39 @@ ci
 aX
 ak
 FX
-al
-al
-al
-al
-cc
-al
-al
-al
-al
-al
-al
+ac
+aU
 av
-av
-al
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
-al
-al
-av
-al
-al
-al
-aS
-aS
-al
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+Nh
+aU
+aT
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+wR
+aU
 ac
 ac
 ac
@@ -8874,14 +8000,14 @@ ab
 ab
 ab
 ac
-aS
-al
+bO
+aT
 AA
-aS
+aU
 vS
-Rq
-aS
-Ye
+AA
+aU
+aU
 ac
 ac
 ac
@@ -8889,12 +8015,12 @@ ab
 aa
 nt
 GU
-Ot
-En
+yU
+AB
 aI
 aO
 cj
-zI
+yU
 ak
 FX
 ac
@@ -8905,31 +8031,31 @@ ac
 ac
 ac
 ac
-al
-al
-al
-al
-al
-cw
-ac
-ac
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-aS
-al
-aS
-al
-al
 aU
-al
+aU
+av
+aU
+Nh
+aU
+ac
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+av
+aU
+aU
 ac
 ac
 ac
@@ -8977,12 +8103,12 @@ ab
 ab
 ac
 ac
-al
+aU
 aV
 AA
-ox
-al
-al
+Rb
+aT
+Nh
 ac
 ac
 ac
@@ -8991,12 +8117,12 @@ ab
 aa
 nt
 OM
-Ot
-Ot
+yU
+yU
 cd
 aP
-rF
-zI
+ci
+yU
 ak
 Zx
 au
@@ -9006,32 +8132,32 @@ cq
 cq
 cq
 ac
-al
-al
-al
-al
-al
-al
+ac
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
 ac
 ac
 ac
+aU
+av
+aU
+aU
+aU
+Nh
+aU
+aU
+aU
+aU
 al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
 ac
 ac
 ac
@@ -9079,11 +8205,11 @@ ab
 ab
 ac
 ac
+aU
 al
-al
-OU
-aS
-ax
+aU
+wR
+aU
 ac
 ac
 ab
@@ -9092,49 +8218,49 @@ ab
 ab
 aa
 nt
-nZ
-DS
-Gd
+VL
+Um
+Um
 aB
-ut
+aB
 cl
-ut
+aB
 bc
 au
-cg
 au
-cg
-cg
-cz
+au
+au
+au
+au
 au
 cI
-al
-ac
-al
-al
-ac
-al
-ac
-ac
 ac
 ac
 aU
-al
-al
-al
-al
-al
-aT
-al
-al
-cw
-al
-al
-al
-al
-al
-al
-al
+aU
+ac
+ac
+ac
+dd
+ac
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+ac
+ac
 ac
 ab
 ab
@@ -9182,9 +8308,9 @@ ab
 ac
 ac
 ac
-aS
-aS
-Nh
+aU
+is
+aU
 ac
 ac
 ab
@@ -9195,19 +8321,19 @@ aa
 ab
 nt
 xh
-Gd
-jH
-aA
-ch
+Um
+Um
+aB
+aB
 cl
-aA
+aB
 bd
 au
-cg
 au
-cz
-cF
-cH
+au
+au
+au
+au
 au
 cI
 ac
@@ -9220,22 +8346,22 @@ ac
 ac
 ac
 ac
+aU
+aT
+aU
+aU
+aU
+aU
 al
-al
-al
-al
-al
-al
-al
-al
-al
-al
-cc
-dq
-al
+aU
+aU
+aU
+bT
+aU
+aU
 ac
-al
-al
+aU
+ac
 ab
 ab
 ab
@@ -9284,7 +8410,7 @@ ab
 ab
 ac
 ac
-aS
+av
 ac
 ac
 ac
@@ -9296,46 +8422,46 @@ ab
 aa
 ab
 nt
-Gd
-Gd
+Um
+Um
 Og
-jH
+Um
 Um
 Xq
-Ok
+Og
 ak
 oJ
-ct
 cr
-cA
-cg
-cF
-cg
+cr
+cD
+au
+au
+au
 cI
-aS
-cN
-bL
-bL
-aS
-al
-aS
+ac
+aU
+av
+aU
+aU
+aU
 ac
 ac
-al
-cY
-cZ
-al
-al
-bT
-al
-al
-al
-al
-al
-al
-dq
 ac
-al
+aU
+av
+aU
+aU
+aU
+aU
+aU
+aU
+av
+aU
+aU
+aU
+aU
+ac
+ac
 ac
 ac
 ac
@@ -9398,46 +8524,46 @@ ab
 aa
 ab
 nt
-jH
-jH
+Um
+Um
 QX
 aE
-Di
-cn
+aE
+dB
 cJ
 ak
 Oq
-aS
-al
-cB
-cg
-cz
-cg
+aU
+aU
+cE
+au
+au
+au
 cI
-aS
-av
-bQ
-bL
-aS
-cR
-aS
 ac
 ac
-al
-al
-av
-al
-al
-al
-al
-cR
-cN
-al
+aU
+aU
+aU
+ac
+ac
+ac
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 aT
-al
-dq
-al
-al
+aU
+ac
+ac
+ac
 ac
 ac
 ac
@@ -9500,21 +8626,21 @@ ab
 aa
 ab
 nt
-DS
-DS
-Di
+Um
+Um
+aE
 aE
 Qa
-cn
+dB
 cK
 ak
 Oq
-al
+aU
 cy
-cp
+cE
 au
-cF
-cg
+au
+au
 ac
 ac
 ac
@@ -9534,15 +8660,15 @@ bi
 bi
 bi
 bi
-dk
-al
-al
+aU
+aU
+aU
 dh
 ac
-al
-al
-al
-al
+ac
+aU
+aU
+aU
 ac
 ac
 ac
@@ -9602,20 +8728,20 @@ ab
 aa
 ab
 nt
-DS
-DS
+Um
+Um
 aE
-FR
-FR
+aE
+aE
 dB
 dC
 ak
 Oq
-aS
-aS
-cB
+aU
+aU
+cE
 au
-cF
+au
 au
 ac
 ac
@@ -9636,16 +8762,16 @@ ad
 fq
 ad
 bi
-dk
-dk
-al
-al
+aU
+aU
+aU
+aU
 ac
-al
-al
-al
-al
-al
+aU
+aU
+aU
+bT
+aU
 ac
 ac
 ac
@@ -9705,25 +8831,25 @@ aa
 ab
 nt
 xh
-jH
+Um
 aE
 aE
-Di
-hG
+aE
+dB
 vR
 ak
 Oq
-al
-al
-cp
+aU
+aU
+cE
 au
-cz
+au
 au
 cI
 aS
-av
-cR
-al
+aU
+aU
+aU
 bi
 bi
 bi
@@ -9738,15 +8864,15 @@ dL
 bi
 ad
 bi
+aU
+aU
+aU
+aU
+aU
+aU
 al
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
 ac
 ac
 ac
@@ -9808,24 +8934,24 @@ nt
 nt
 Yv
 Um
-Di
+aE
 aM
 aM
-co
+dB
 rR
-ak
+aj
 Oq
-al
-al
-cp
-cz
-cg
+aU
+aU
+cE
+au
+au
 au
 cI
-cN
-av
-al
-aS
+aU
+aU
+aU
+aU
 mN
 qX
 Es
@@ -9840,14 +8966,14 @@ lW
 dL
 ad
 bi
-al
-al
-al
-al
-al
-al
-al
-al
+aU
+bT
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
 ac
@@ -9913,15 +9039,15 @@ iY
 aE
 aL
 qL
-hG
+dB
 IT
 ak
 Oq
-al
-al
-cp
-cg
-cz
+aU
+Nh
+cE
+au
+au
 au
 cI
 ac
@@ -9942,14 +9068,14 @@ lW
 dL
 BD
 bi
-dl
-dl
-cN
-dq
+aU
+aU
+aU
+aU
 ac
-al
-al
-al
+aU
+aU
+aU
 ac
 ac
 ac
@@ -10012,31 +9138,31 @@ BA
 Gj
 hZ
 qN
-Di
+aE
 Cm
 OC
 dB
 tc
 ak
 Oq
-al
-al
-cp
-cg
-cz
+aU
+aU
+cE
+au
+au
 au
 cI
 ac
 ac
-al
-al
+aU
+aU
 mN
 sX
-Us
+Cg
 PQ
 wZ
 DU
-JB
+sX
 DU
 TO
 da
@@ -10044,18 +9170,18 @@ wO
 dL
 ad
 bi
-al
-al
-al
+aU
+aU
+aU
 ac
 ac
-al
-al
+aU
+aU
 ac
 ac
 ac
 ac
-al
+aU
 ac
 ab
 ab
@@ -10113,25 +9239,25 @@ ku
 Nn
 nt
 RO
-Mr
+Se
 aE
 aM
 aM
-cn
+dB
 tc
 ak
 Oq
+aU
 av
-av
-cp
-cg
-cF
+cE
+au
+au
 au
 cI
 ac
-al
-al
-al
+aU
+aU
+aU
 bi
 bi
 bi
@@ -10146,19 +9272,19 @@ dL
 bi
 ad
 bi
-al
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 ac
 ac
-al
-al
-al
-al
+aU
+aU
+bT
+aU
 ab
 ab
 ab
@@ -10216,28 +9342,28 @@ nt
 nt
 xh
 Se
-rL
+QX
 aE
-Di
+aE
 aW
 aY
 ak
 Oq
-al
-av
-cp
+aU
+aU
+cE
 au
-cz
-cg
+au
+au
 cI
 ac
-al
-bL
+aU
 av
-av
-aS
-al
-al
+aU
+aU
+aU
+aU
+aU
 wZ
 Vd
 bw
@@ -10248,20 +9374,20 @@ ad
 QP
 ad
 bi
-al
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+aT
+aU
 ac
 ac
-al
-al
-al
-al
-al
-dG
+aU
+aU
+aU
+aU
+aU
+ab
 dM
 ab
 ab
@@ -10317,29 +9443,29 @@ ab
 aa
 nt
 VL
-Wv
+Se
 Og
 aB
-aA
+aB
 Og
 Xq
-aj
-al
-al
-al
+ak
+aU
+av
+aU
 cE
 au
-cz
-cg
+au
+au
 cI
 ac
-aS
-bL
-bL
-al
-bP
-bP
-aS
+aU
+aU
+aU
+Nh
+aU
+aU
+aU
 sZ
 bi
 bi
@@ -10350,18 +9476,18 @@ NF
 bi
 bi
 bi
-al
-al
-al
-al
-al
+Nh
+aU
+aU
+aU
+aU
 ac
 ac
+aU
+aU
+aU
 al
-al
-bT
-al
-al
+aU
 ac
 dM
 dM
@@ -10369,7 +9495,7 @@ dM
 dM
 dM
 ac
-gr
+oP
 dM
 dM
 dM
@@ -10419,10 +9545,10 @@ aa
 nt
 nt
 YM
-Wv
-aA
-aA
-aA
+Se
+aB
+aB
+aB
 kq
 gS
 ak
@@ -10430,40 +9556,40 @@ fp
 Gh
 Gh
 yp
-cg
-cz
+au
+au
 au
 cI
 ac
-al
-al
-al
-al
-cN
+aU
+aU
+aU
+aU
 av
-al
+aU
+aU
 wZ
 Qm
-al
+aU
 hV
 Az
 kC
 Hk
 xP
-al
-al
+aU
+aU
+aU
+aU
+aU
 av
-al
-al
-al
-al
+aU
 ac
 ac
 ac
-al
-al
-al
-al
+aU
+aU
+aU
+aU
 ac
 dM
 dM
@@ -10523,18 +9649,18 @@ eq
 QL
 HT
 wU
-XR
-qB
+wU
+wU
 wU
 EI
 Bg
 Jl
-cg
 au
 au
 au
-cg
-cg
+au
+au
+au
 cL
 ac
 ac
@@ -10543,28 +9669,28 @@ ac
 ac
 ac
 ac
-al
+aU
 wZ
-IQ
+Qm
 jm
 bw
 Az
 Mg
 ZC
 kE
-al
-al
+aU
+aU
 av
-al
-al
-al
-al
+aU
+aU
+aU
+aU
 ac
 ac
 ac
-al
-al
-al
+aU
+aU
+aU
 ac
 ac
 dM
@@ -10622,24 +9748,24 @@ ab
 aa
 nt
 tE
-jH
+Um
 nl
 Qr
-Be
-Cn
-tg
+Qr
+Qr
+Qr
 YR
 SO
 lJ
-cg
-cz
-cz
-cg
 au
-cz
-cz
-cO
-cQ
+au
+au
+au
+au
+au
+au
+cL
+cq
 cq
 cq
 cq
@@ -10653,36 +9779,36 @@ lm
 MM
 Td
 uz
-rC
+kE
 bw
 bw
 bw
 bw
 jM
-al
-al
+aU
+aU
 ac
 ac
 ac
-al
-al
+aU
+bT
 ac
 ac
 ac
-Zm
 mI
 mI
-ql
+mI
+My
 ym
 oP
 oP
 ac
 BY
-mz
-yG
+BY
+oP
 fH
-ql
-wi
+My
+Le
 Le
 dM
 dM
@@ -10724,26 +9850,26 @@ ab
 aa
 nt
 nt
-jH
-DS
+Um
+Um
 JX
 JX
 JX
 JX
 fn
 ak
-ct
-ct
-ct
+cr
+cr
+cr
 cD
 au
 au
-cg
-cz
-cg
-cg
-cz
-cg
+au
+au
+au
+au
+au
+au
 au
 bw
 aj
@@ -10761,8 +9887,7 @@ aj
 aj
 aj
 bw
-al
-al
+aU
 ac
 ac
 ac
@@ -10771,18 +9896,19 @@ ac
 ac
 ac
 ac
-eI
-Lv
+ac
+BY
+BY
 Uo
 rM
 xb
-nJ
-Qq
+xb
+dM
 ac
-RK
+Pd
 dI
-nU
-Ft
+oP
+Rm
 Rm
 Rm
 MC
@@ -10835,18 +9961,18 @@ vU
 Fm
 aj
 UN
-al
-al
-cp
+aU
+aU
+cE
 au
 au
-cg
-cg
 au
 au
-cg
 au
-cg
+au
+au
+au
+au
 bw
 pU
 lK
@@ -10860,7 +9986,7 @@ Kn
 ou
 ji
 ik
-cg
+au
 aj
 hd
 ac
@@ -10887,8 +10013,8 @@ dM
 dM
 Rm
 Rm
-Bi
-Ri
+MC
+Le
 dM
 dM
 dM
@@ -10928,8 +10054,8 @@ ab
 aa
 aa
 aj
-Nt
-Nt
+aj
+aj
 aj
 ak
 ak
@@ -10937,8 +10063,8 @@ aj
 aR
 aj
 bD
-cc
-al
+Nh
+aU
 Xc
 sh
 jE
@@ -10947,30 +10073,30 @@ cM
 cP
 cD
 au
-cz
+au
 ca
 bw
 vb
 KX
-cg
-kG
+au
+TB
 CY
-SI
+ad
 TF
 XQ
-oM
+CY
 ad
 oX
 xf
 Xj
 mN
 bw
-al
-al
 ac
 ac
-al
-al
+ac
+ac
+aU
+aT
 dM
 dM
 bw
@@ -10978,19 +10104,19 @@ bw
 dM
 dM
 dM
-wK
-wK
-iZ
-iZ
-wK
-BP
+dj
+dj
+dj
+dj
+dj
+Fo
 dM
 dM
 dM
 dM
 Rm
-Ft
-nx
+Rm
+Le
 Tq
 dM
 dM
@@ -11052,9 +10178,9 @@ bd
 bk
 bi
 bw
-EU
-kp
-cz
+mN
+lK
+au
 LA
 ZY
 RS
@@ -11064,15 +10190,15 @@ Xa
 RS
 oG
 EB
-cg
+au
 tr
 bw
 ac
 ac
 ac
 ac
-al
-al
+aU
+aU
 dM
 dM
 bw
@@ -11080,20 +10206,20 @@ em
 dM
 dM
 dM
-wK
-iZ
-iZ
-iZ
-iZ
-wK
-wK
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 Fo
 dM
 dM
 dM
 MC
-nx
-PE
+Le
+MC
 dM
 dM
 aa
@@ -11135,26 +10261,26 @@ ab
 ab
 ab
 ab
-al
-al
+aU
+aU
 aZ
 be
 bw
 Oj
-al
-al
+aU
+aU
 ac
 bi
 wu
-cg
+au
 am
 au
 am
-cg
-cg
+au
+au
 bi
 bw
-EU
+mN
 fo
 au
 TB
@@ -11163,13 +10289,13 @@ ad
 Lf
 JZ
 KR
-SI
+ad
 EN
-cg
-cg
+au
+au
 gT
 bw
-al
+ac
 ac
 ac
 ac
@@ -11180,22 +10306,22 @@ dM
 bw
 CE
 KB
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-wK
-wK
-wK
-wK
-VZ
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+Fo
 Rm
-nx
-nx
+Le
+Le
 dM
 dM
 aa
@@ -11237,28 +10363,28 @@ ab
 ab
 ab
 ab
-al
-al
-cp
+aU
+aU
+cE
 be
 bw
 Oj
-al
-al
+aU
+aU
 ac
 bi
 bt
-cg
-cz
-cz
-cg
-cH
+au
+au
+au
+au
+au
 cS
 bi
 bw
 mN
 on
-cz
+au
 VU
 DI
 Od
@@ -11267,7 +10393,7 @@ DA
 st
 jr
 Dm
-cg
+au
 vk
 mN
 bw
@@ -11275,29 +10401,29 @@ ac
 ac
 ac
 ac
-al
+aU
 dM
 dM
 dM
 CE
 CE
 KB
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-wK
-Dg
-wK
-wK
-wK
-VZ
-PX
-lI
-PX
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+Fo
+Fo
+Fo
+Fo
 dM
 dM
 aa
@@ -11339,31 +10465,31 @@ ab
 ab
 ab
 ab
-al
-al
-cp
+aU
+aU
+cE
 be
 bw
 bC
 Gh
-al
+aU
 ac
 ak
 au
-cz
-cz
-cz
-cz
-cH
+au
+au
+au
+au
+au
 au
 ak
 bw
 aj
 it
-Wd
-cC
+Cg
+TB
 Rj
-sw
+ju
 ju
 KO
 KO
@@ -11376,30 +10502,30 @@ hd
 ac
 ac
 ac
-al
-al
-al
-al
+aU
+aU
+aU
+ac
 dM
 CE
 CE
 KB
-iZ
-iZ
-iZ
+dj
+dj
+dj
 ac
 ac
 ac
-al
+ac
 dM
 dM
 dM
-BP
-wK
-wK
+Fo
+dj
+dj
 Af
-lI
-lI
+Fo
+Fo
 dM
 dM
 aa
@@ -11441,8 +10567,8 @@ ab
 ab
 ab
 ab
-al
-al
+aU
+aU
 aZ
 be
 bw
@@ -11453,11 +10579,11 @@ ac
 ak
 bj
 au
-cg
-cz
-cz
-cg
-cT
+au
+au
+au
+au
+am
 ak
 bw
 aj
@@ -11478,30 +10604,30 @@ bw
 ac
 ac
 ac
-al
-al
-al
-al
-no
+aU
+bT
+ac
+ac
+RP
 CE
 CE
 KB
-iZ
+dj
 dM
 yc
 dM
 yc
-al
-al
+aU
+aU
 dM
 dM
 dM
 dM
 dM
 dM
-VZ
-OJ
-PX
+Fo
+Zo
+Fo
 dM
 dM
 aa
@@ -11543,7 +10669,7 @@ ab
 ab
 ab
 ab
-al
+aU
 ac
 aZ
 ba
@@ -11579,12 +10705,12 @@ bw
 jM
 ac
 ac
-al
-al
 aU
-al
-mI
-no
+aU
+aU
+ac
+ac
+RP
 CE
 CE
 KB
@@ -11593,17 +10719,17 @@ dM
 dM
 dM
 dM
-al
-al
+aU
+aU
 WS
 aa
 JU
 Kf
 dM
 aa
-Dt
-Uu
-VZ
+Zo
+dj
+Fo
 dM
 dM
 aa
@@ -11676,36 +10802,36 @@ bw
 Zh
 GD
 Ev
-WH
+Ev
 Ev
 fL
 ac
+aU
+aU
 al
-al
-al
-al
-ab
+ac
+ac
 DZ
-FF
+RP
 CE
 CE
 KB
 dM
 dM
 dM
-aT
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+aU
 WS
 WS
 JU
 JU
 aa
-Dt
 Zo
-VZ
+Zo
+Fo
 dM
 dM
 aa
@@ -11773,41 +10899,41 @@ WE
 bB
 ac
 ac
-wl
+zV
 uz
 Br
 rW
 au
 au
-cz
-eE
-al
-al
-al
-al
-al
-iZ
-wK
+au
+lX
+aU
+aU
+aU
+ac
+ac
+dj
+dj
 RP
 CE
 CE
 dM
 dM
-Dv
+aU
+aU
+aT
+aU
+aU
 al
-kO
-aS
-al
-al
-al
-al
+aT
+aU
 WS
 aa
 JU
 aa
-Dt
-Dt
-Dt
+Zo
+Zo
+Zo
 dM
 dM
 aa
@@ -11877,39 +11003,39 @@ ac
 ac
 zV
 ZC
-Rd
-FC
-cg
+Br
+rW
 au
-cg
+au
+au
 lX
-al
-al
-al
-al
+bT
+ac
+ac
+ac
 ab
-iZ
+dj
 DZ
 RP
 CE
 bw
-nz
+cI
 cy
-al
-al
-Kk
+aU
+aU
+aU
 zi
-al
-zi
-zi
-al
-al
-kO
+aU
+VZ
+VZ
+aU
+aU
+aU
 Kf
 aa
-iZ
-OJ
-wK
+dj
+Zo
+dj
 dM
 dM
 aa
@@ -11979,39 +11105,39 @@ ac
 ac
 bw
 bw
-ng
+rW
 rW
 Ev
 Ev
-WH
+Ev
 FD
-al
-al
+ac
+ac
 ab
 ab
-iZ
-iZ
-QH
+dj
+dj
+dj
 RP
 CE
 bw
-nz
-al
-al
-al
-zi
-al
-al
-al
-al
-al
-al
-al
+cI
+aU
+aU
+aU
+VZ
+aU
+aU
+aU
+aU
+aU
+wR
+aU
 JU
 aa
-Dt
-OJ
-PX
+Zo
+Zo
+Fo
 dM
 dM
 aa
@@ -12082,38 +11208,38 @@ jM
 bw
 bw
 HP
-PU
+HP
 bw
 bw
 bw
 bw
 bw
 ab
-iZ
-iZ
-iZ
-iZ
-wK
+dj
+dj
+dj
+dj
+dj
 RP
 em
 bw
-nz
-al
-al
+cI
+aU
+aU
 dM
 dM
 WS
 cy
+aU
+aU
 al
-al
-al
-al
-al
+aU
+aU
 WS
 aa
-Dt
-OJ
-Dt
+Zo
+Zo
+Zo
 dM
 dM
 aa
@@ -12179,7 +11305,7 @@ ab
 bw
 WE
 bB
-al
+aU
 bw
 eA
 pp
@@ -12190,32 +11316,32 @@ pp
 pp
 pp
 pp
-iZ
-iZ
+dj
+dj
 ab
-iZ
-iZ
-al
-cp
+dj
+dj
+ac
+aZ
 bw
 bw
-nz
-al
-al
+cI
+aU
+aT
 dM
 dM
 dM
 WS
 WS
-al
-al
-al
+aU
+aU
+aU
 NQ
 aa
 aa
-VZ
-wK
-iZ
+Fo
+dj
+dj
 dM
 dM
 aa
@@ -12281,43 +11407,43 @@ ab
 bw
 WE
 bB
-al
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iJ
-al
-bw
-bw
-al
-al
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
 aU
-al
-ki
+bw
+bw
+aU
+aU
+aU
+aU
+dM
 Lz
 dM
 BI
-al
-al
-al
+aU
+bT
+aU
 xk
 aa
 aa
-wK
-wK
-wK
+dj
+dj
+dj
 Rm
 dM
 aa
@@ -12383,44 +11509,44 @@ bw
 jM
 WE
 bB
-al
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-aS
-al
-al
-du
-al
-al
-al
-al
-al
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+PE
+aU
+aU
+aU
+Nh
+aU
+aU
+aU
 dM
 dM
 dM
 dM
-al
-al
-is
+aU
+aU
+mI
 aa
 aa
 aa
-wK
-OJ
-wK
-iZ
+dj
+Zo
+dj
+dj
 dM
 aa
 "}
@@ -12485,44 +11611,44 @@ Hw
 Hw
 Zj
 bB
-al
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-aS
-wR
-qU
-al
-al
-al
-bP
-aS
-aS
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+ac
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 mI
 dM
 xk
 dM
-al
-al
+aU
+aU
 aa
 aa
 aa
 aa
 aa
-UF
-OJ
-UX
-iZ
+ac
+Zo
+Zo
+dj
 dM
 aa
 "}
@@ -12587,44 +11713,44 @@ bE
 bE
 bE
 ac
-al
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-vl
-dw
-av
-al
-al
-al
-al
-bL
-al
-al
-al
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+ac
+aU
+wR
+aU
+aT
+aU
+aU
+bT
+aU
+aU
 mI
-al
-al
-al
-al
+aU
+aU
+aU
+aU
 aa
 aa
 aa
 aa
 aa
 xb
-wK
-wK
-iZ
+dj
+dj
+dj
 dM
 aa
 "}
@@ -12688,45 +11814,45 @@ aa
 aa
 aa
 aa
-al
-al
+aU
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-al
-al
+dj
+dj
+dj
+dj
+dj
+dj
+ac
+ac
 bT
-al
-al
-al
-al
-al
-al
-av
-av
-al
-al
-al
-al
-al
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 aa
 aa
 aa
 aa
 aa
-ug
+aa
 SE
 tv
-OJ
-VZ
+Zo
+Fo
 dM
 aa
 "}
@@ -12790,33 +11916,33 @@ aa
 aa
 aa
 aa
-al
-al
+aU
+aU
 bw
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-al
-al
-al
+dj
+dj
+dj
+dj
+dj
+dj
+co
+aU
+aU
 ac
 ac
 Nq
 ac
 ac
+aU
+aU
 al
-al
-al
-al
-al
-al
+aU
+aU
+aU
 aa
 aa
 aa
@@ -12826,10 +11952,10 @@ aa
 aa
 aa
 aa
-Dt
-Dt
+Zo
+Zo
 Oz
-Dt
+Zo
 aa
 "}
 (94,1,1) = {"
@@ -12896,26 +12022,26 @@ tK
 bw
 em
 KB
-iZ
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
-al
-al
+dj
+dj
+dj
+dj
+dj
 ac
 ac
 ac
+ac
+ac
 aa
 aa
 aa
 aa
 aa
 aa
-LS
+aU
 aa
 aa
 aa
@@ -12928,9 +12054,9 @@ aa
 aa
 aa
 aa
-Dt
-Dt
-Dt
+Zo
+Zo
+Zo
 Oz
 aa
 "}
@@ -12989,23 +12115,23 @@ aa
 aa
 aa
 dK
-iZ
-iZ
-iZ
-iZ
-iZ
+dj
+dj
+dj
+dj
+dj
 Xt
 Xt
 Xt
-iZ
-iZ
+dj
+dj
 lL
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
+dj
+dj
+dj
+dj
+dj
 ac
 ac
 ac
@@ -13103,11 +12229,11 @@ Wo
 Wo
 cx
 lL
-iZ
-iZ
-iZ
-iZ
-iZ
+dj
+dj
+dj
+dj
+dj
 aa
 ac
 aa
@@ -13205,11 +12331,11 @@ Wo
 Wo
 Wo
 cx
-iZ
-iZ
-iZ
-iZ
-iZ
+dj
+dj
+dj
+dj
+dj
 aa
 aa
 aa
@@ -13295,23 +12421,23 @@ aa
 aa
 aa
 dK
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
-iZ
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
+dj
 aa
 aa
 aa
