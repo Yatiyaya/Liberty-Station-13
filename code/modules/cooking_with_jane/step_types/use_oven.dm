@@ -27,25 +27,6 @@
 
 	return CWJ_CHECK_VALID
 
-//Reagents are calculated prior to object creation
-/datum/cooking_with_jane/recipe_step/use_oven/calculate_quality(var/obj/used_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
-	var/obj/item/reagent_containers/cooking_with_jane/cooking_container/container = tracker.holder_ref.resolve()
-
-	var/obj/machinery/cooking_with_jane/oven/our_oven = used_item
-
-
-	var/bad_cooking = 0
-	for (var/key in container.oven_data)
-		if (heat != key)
-			bad_cooking += container.oven_data[key]
-
-	bad_cooking = round(bad_cooking/(5 SECONDS))
-
-	var/good_cooking = round(time/3 SECONDS) - bad_cooking + our_oven.quality_mod
-
-	return clamp_quality(good_cooking)
-
-
 /datum/cooking_with_jane/recipe_step/use_oven/follow_step(var/obj/used_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
 	return CWJ_SUCCESS
 

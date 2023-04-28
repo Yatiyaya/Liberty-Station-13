@@ -98,11 +98,6 @@ list(<CWJ_STEP_CLASS><_OPTIONAL>, <REQUIRED_ARGS>, <CUSTOM_ARGS>=value)
 			of the type path is also preferable.
 			Example: exact=TRUE
 
-		qmod
-			CWJ_ADD_ITEM, CWJ_USE_TOOL ONLY:
-			modifier to adjust the inherited_quality_modifier on an add_item recipe step.
-			Example: qmod=0.5 //only 50% of the added item's quality will be inherited.
-
 		remain_percent
 			CWJ_ADD_REAGENT ONLY:
 			Determines the percentage of a reagent that remains in the cooking of an item.

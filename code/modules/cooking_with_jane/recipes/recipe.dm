@@ -27,17 +27,16 @@
 		CWJ_END_OPTION_CHAIN,
 
 		//A steak is needed to start the meal.
-		//qmod- Half of the food quality of the parent will be considered.
 		//exclude_reagents- Blattedin and Carpotoxin will be filtered out of the steak.
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, qmod=0.5, exclude_reagents=list("carpotoxin", "blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, exclude_reagents=list("carpotoxin", "blattedin")),
 		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
 		list(CWJ_ADD_REAGENT, "blackpepper", 1),
 		//Add some mushrooms to give it some zest. Only one kind is allowed!
 		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "mushrooms", qmod=0.2, reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "reishi", qmod=0.4, reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "amanita", qmod=0.4, reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", qmod=0.4, reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "mushrooms", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "reishi", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "amanita", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", reagent_skip=TRUE),
 		CWJ_END_EXCLUSIVE_OPTIONS,
 
 		//Beat that meat to increase its quality

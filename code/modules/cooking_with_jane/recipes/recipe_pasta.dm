@@ -4,7 +4,7 @@
 	cooking_container = CUTTING_BOARD
 	product_type = /obj/item/reagent_containers/food/snacks/spagetti
 	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "flour", 1, base=1),
 		list(CWJ_USE_TOOL, QUALITY_CUTTING, 1)
 	)
@@ -15,7 +15,7 @@
 	step_builder = list(
 		list(CWJ_ADD_REAGENT, "water", 10),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/spagetti, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/spagetti),
 		list(CWJ_USE_STOVE, J_MED, 30 SECONDS)
 	)
 
@@ -25,9 +25,9 @@
 	step_builder = list(
 		list(CWJ_ADD_REAGENT, "water", 10),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti, qmod=0.5),
-		list(CWJ_ADD_PRODUCE, "tomato", qmod=0.4, reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE, "tomato", qmod=0.4, reagent_skip=TRUE),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti),
+		list(CWJ_ADD_PRODUCE, "tomato", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE, "tomato", reagent_skip=TRUE),
 		list(CWJ_USE_STOVE, J_LO, 5 SECONDS)
 	)
 
@@ -37,10 +37,10 @@
 	step_builder = list(
 		list(CWJ_ADD_REAGENT, "water", 10),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti, qmod=0.5),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", qmod=0.4, reagent_skip=TRUE),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_USE_STOVE, J_LO, 5 SECONDS)
 	)
 
@@ -50,11 +50,11 @@
 	step_builder = list(
 		list(CWJ_ADD_REAGENT, "water", 10),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti, qmod=0.5),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, qmod=0.5, exclude_reagents=list("blattedin")),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", qmod=0.4, reagent_skip=TRUE),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledspagetti),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meatball, exclude_reagents=list("blattedin")),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_USE_STOVE, J_LO, 5 SECONDS)
 	)

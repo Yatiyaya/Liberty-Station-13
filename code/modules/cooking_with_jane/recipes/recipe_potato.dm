@@ -22,7 +22,7 @@
 		list(CWJ_ADD_PRODUCE, "potato", 1),
 		list(CWJ_ADD_ITEM_OPTIONAL, /obj/item/reagent_containers/food/snacks/butterslice, base=10),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 

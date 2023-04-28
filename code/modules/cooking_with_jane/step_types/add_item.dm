@@ -53,12 +53,6 @@
 			return CWJ_CHECK_VALID
 	return CWJ_CHECK_INVALID
 
-//The quality of add_item is special, in that it inherits the quality level of its parent and
-//passes it along.
-//May need "Balancing" with var/inherited_quality_modifier
-/datum/cooking_with_jane/recipe_step/add_item/calculate_quality(var/obj/added_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
-	var/raw_quality = added_item?:food_quality * inherited_quality_modifier
-	return clamp_quality(raw_quality)
 
 /datum/cooking_with_jane/recipe_step/add_item/follow_step(var/obj/added_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
 	#ifdef CWJ_DEBUG
