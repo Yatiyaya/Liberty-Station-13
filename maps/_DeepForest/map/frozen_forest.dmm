@@ -373,7 +373,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/random/powercell/large_safe_lonestar,
+/obj/random/powercell/large_safe_Skylight,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iM" = (
@@ -1533,7 +1533,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/random/powercell/medium_safe_lonestar,
+/obj/random/powercell/medium_safe_Skylight,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GO" = (
@@ -2113,7 +2113,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/random/powercell/small_safe_lonestar,
+/obj/random/powercell/small_safe_Skylight,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "SQ" = (

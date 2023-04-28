@@ -1,5 +1,5 @@
 /obj/machinery/power/wall_obelisk
-	name = "Absolutism Protection"
+	name = "Bonfire Protection"
 	desc = "The wall mounted version of the obelisk, unlike the larger version, it can remain active even without an active cruciform nearby. \
 	Despite its extended function, it requires biomatter loaded into it periodically. \
 	One of the few designs created for the church by the Similacrum AI under control by the Phokorus Institute."

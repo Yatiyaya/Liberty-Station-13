@@ -37,7 +37,7 @@ var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called
 #define NETWORK_COLONY_SURFACE "Colony Surface"
 #define NETWORK_COLONY_UNDERGROUND "Colony Underground"
 #define NETWORK_COLONY_TRANSITION "Colony Transition"
-#define NETWORK_CHURCH "Absolute Network"
+#define NETWORK_CHURCH "Bonfire Network"
 #define NETWORK_PROP "Fontaine Network"
 #define NETWORK_GATE "Gate Network"
 #define NETWORK_CARGO "LSS Network"

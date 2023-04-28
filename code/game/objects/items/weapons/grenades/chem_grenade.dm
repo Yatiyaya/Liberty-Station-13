@@ -240,7 +240,7 @@
 
 
 /obj/item/grenade/chem_grenade/metalfoam
-	name = "Lonestar \"Stop-Space\""
+	name = "Skylight \"Stop-Space\""
 	icon_state = "foam"
 	desc = "Used for emergency sealing of air breaches."
 	can_be_modified = FALSE
@@ -286,7 +286,7 @@
 	beakers += B2
 
 /obj/item/grenade/chem_grenade/antiweed
-	name = "Lonestar \"Flora Armageddon\""
+	name = "Skylight \"Flora Armageddon\""
 	desc = "Used for purging large areas of invasive plant species. Contents under pressure. Do not directly inhale contents."
 	icon_state = "foam"
 	can_be_modified = FALSE
@@ -309,14 +309,14 @@
 	icon_state = "grenade"
 
 /obj/item/grenade/chem_grenade/antiweed/nt_antiweed
-	name = "Absolute \"Kudzu Killer\""
+	name = "Bonfire \"Kudzu Killer\""
 	desc = "Church brand weedkiller grenades. Designed to deal with Kudzu infestations. Mixes toxic biomatter with plasticides for great results"
 	icon_state = "foam"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_BIOMATTER = 5)
 	matter_reagents = list("water" = 30)
 
 /obj/item/grenade/chem_grenade/cleaner
-	name = "Lonestar \"Shit-Be-Gone\""
+	name = "Skylight \"Shit-Be-Gone\""
 	icon_state = "foam"
 	desc = "Dirt? Grime? Blood and criminal evidence? Say good-fucking-bye to all of those things with one simple throw!"
 	can_be_modified = FALSE
@@ -324,7 +324,7 @@
 	path = 1
 
 /obj/item/grenade/chem_grenade/cleaner/nt_cleaner
-	name = "Absolutism \"Cleanse Capsule\""
+	name = "Bonfire \"Cleanse Capsule\""
 	desc = "Church brand cleaner grenades. Designed to deal with biogenerator accidents and the aftermaths of wildlife hordes in the colony."
 	icon_state = "foam"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 5)

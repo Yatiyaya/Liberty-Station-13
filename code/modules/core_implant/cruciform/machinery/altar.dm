@@ -1,5 +1,5 @@
 /obj/machinery/optable/altar
-	name = "Absolutism altar"
+	name = "Bonfire altar"
 	desc = "The altar."
 	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "optable-idle"

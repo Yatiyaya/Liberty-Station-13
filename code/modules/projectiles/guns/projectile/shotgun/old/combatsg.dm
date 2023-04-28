@@ -17,7 +17,7 @@
 	init_recoil = RIFLE_RECOIL(1.2)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/shotgun/pump/combat/sawn
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 	wield_delay = 1 SECOND
 	wield_delay_factor = 0.4 // 40 vig

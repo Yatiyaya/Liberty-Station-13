@@ -61,8 +61,8 @@ var/list/dreams = list(
 //Ranks
 	"the Steward","the Warrant Officer","the Blackshield Commander","the Union Chief","the Phokorus Institute Research Overseer",
 	"the CAPSA Surgeon Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
-	"a Prime","an Entertainer","a Chef","a CAPSA Doctor","a Psychologist","a CAPSA Paramedic",
-	"a Phokorus Institute Scientist","a Phokorus Institute Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
+	"a Oathpledge","an Entertainer","a Chef","a CAPSA Doctor","a Psychologist","a CAPSA Paramedic",
+	"a Phokorus Institute Scientist","a Phokorus Institute Roboticist","a Cyborg","a Cargo Technician","a Skylight Miner",
 	"a Mechanical Technician", "a Marshal Officer","a Supply Specialist","a Ranger", "the Premier",
 	"a Corpsman", "a Trooper",
 
@@ -89,7 +89,7 @@ var/list/dreams = list(
 	"a seuche roach","a panzer roach","a gestrahlte roach","a disembodied brain","a monkey","a shadekin",
 
 //Factions/Groups
-	"the marshals","the blackshield","Fontaine","the excelsior institute","lonestar shipping solutions",
+	"the marshals","the blackshield","Fontaine","the excelsior institute","Skylight shipping solutions",
 	"the artificers guild","the liberty council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
 
 //Station Locations

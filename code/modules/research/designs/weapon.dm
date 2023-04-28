@@ -350,7 +350,7 @@
 	sort_string = "TAAAJ"
 
 /datum/design/research/item/weapon/toolmod/dblade
-	name = "Lonestar \"Gleaming Edge\": Diamond Blade"
+	name = "Skylight \"Gleaming Edge\": Diamond Blade"
 	build_path = /obj/item/tool_upgrade/productivity/diamond_blade
 	sort_string = "TAAAK"
 
@@ -380,7 +380,7 @@
 	sort_string = "TAAAP"
 
 /datum/design/research/item/weapon/toolmod/laserguide
-	name = "Lonestar \"Guiding Light\" Laser Guide"
+	name = "Skylight \"Guiding Light\" Laser Guide"
 	build_path = /obj/item/tool_upgrade/refinement/laserguide
 	sort_string = "TAAAQ"
 

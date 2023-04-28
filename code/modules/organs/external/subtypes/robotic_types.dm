@@ -49,7 +49,7 @@
 //Character setup prostheses
 
 /obj/item/organ/external/robotic/asters
-	name = "Lonestars \"Movement Lock\""
+	name = "Skylights \"Movement Lock\""
 	desc = "Generic gray prostesis for everyday use."
 	force_icon = 'icons/mob/human_races/cyberlimbs/asters.dmi' //Sprites were done by Kirov on request
 	model = "asters"
@@ -279,10 +279,10 @@ obj/item/organ/external/robotic/synthskin/groin
 	default_description = /datum/organ_description/head
 	max_damage = 200
 
-// Church of the Absolute
+// Church of the Bonfire
 /obj/item/organ/external/robotic/church
-	name = "\"Absolute\""
-	desc = "Gold and black prosthetics designed by the Church of the Absolute."
+	name = "\"Bonfire\""
+	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
@@ -305,12 +305,12 @@ obj/item/organ/external/robotic/synthskin/groin
 	max_damage = 200
 
 /obj/item/organ/external/robotic/church/torso
-	name = "\"Absolute\" Torso"
+	name = "\"Bonfire\" Torso"
 	default_description = /datum/organ_description/chest
 	max_damage = 200
 
 /obj/item/organ/external/robotic/church/head
-	name = "\"Absolute\" Head"
+	name = "\"Bonfire\" Head"
 	default_description = /datum/organ_description/head
 	max_damage = 200
 

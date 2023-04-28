@@ -67,7 +67,7 @@ GLOBAL_VAR_INIT(grup_ritual_score, 0)
 GLOBAL_VAR_INIT(new_neothecnology_convert_score, 0)
 GLOBAL_VAR_INIT(new_neothecnology_convert, 0)
 
-//guild (Liberty: Lonestar!)
+//guild (Liberty: Skylight!)
 GLOBAL_VAR_INIT(initial_guild_score, 0)
 GLOBAL_VAR_INIT(guild_score, 0)
 
@@ -154,7 +154,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 	var/obj/item/cell/large/high/HC = /obj/item/cell/large/high
 	var/min_charge = initial(HC.maxcharge) * 0.6
 
-	//calculate guild (Liberty: Lonestar!) profits in a sane way
+	//calculate guild (Liberty: Skylight!) profits in a sane way
 	var/ending_balance = get_account_credits(department_accounts[DEPARTMENT_SERVICE])
 	var/datum/department/service/guild_var = new/datum/department/service
 	GLOB.supply_profit = ending_balance - guild_var.account_initial_balance
@@ -187,7 +187,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 		GLOB.field_radius += S.field_radius
 	GLOB.field_radius = CLAMP(GLOB.field_radius, 0, world.maxx)
 
-	//Terra-Therma Union (not to be confused with "Guild" as it is used in code, which means Lonestar on Liberty!) Modifiers
+	//Terra-Therma Union (not to be confused with "Guild" as it is used in code, which means Skylight on Liberty!) Modifiers
 	if(GLOB.all_smes_powered)
 		GLOB.score_smes_powered = 350 //max = 350
 	GLOB.score_technomancer_objectives = GLOB.technomancer_objectives_completed * 25 //max: ~= 100
@@ -240,7 +240,7 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 
 	GLOB.ironhammer_score = GLOB.initial_ironhammer_score + GLOB.ironhammer_objectives_score + GLOB.score_antag_contracts + GLOB.ironhammer_operative_dead_score + GLOB.captured_or_dead_antags_score
 
-	//Lonestar score
+	//Skylight score
 	GLOB.score_guild_faction_item_loss -= 150 * GLOB.guild_faction_item_loss // ~-300
 	GLOB.guild_objectives_score = GLOB.guild_objectives_completed * 25 // ~100
 	GLOB.guild_profit_score	= round(GLOB.supply_profit/50) // ? review it //target_max~500//
@@ -308,26 +308,26 @@ GLOBAL_VAR_INIT(score_technomancer_faction_item_loss, 0)
 
 	//Church
 	dat += {"
-	<u>Church of Absolute scores</u><br>
+	<u>Church of Bonfire scores</u><br>
 	<b>Base score:</b> [green_text(GLOB.initial_neotheology_score)]<br>
 	<b>Lost faction items:</b> [GLOB.neotheology_faction_item_loss] ([to_score_color(GLOB.score_neotheology_faction_item_loss)] Points)<br>
 	<b>Faction objectives completed:</b> [GLOB.neotheology_objectives_completed] ([to_score_color(GLOB.neotheology_objectives_score)] Points)<br>
 	<b>Biomatter produced:</b> [GLOB.biomatter_neothecnology_amt] ([to_score_color(GLOB.biomatter_score)] Points)<br>
 	<b>Total of conversions:</b> [GLOB.new_neothecnology_convert] ([to_score_color(GLOB.new_neothecnology_convert_score)] Points)<br>
 	<b>Group rituals performed:</b> [GLOB.grup_ritual_performed] ([to_score_color(GLOB.grup_ritual_score)] Points)<br>
-	<b>Final Church of Absolute score:</b> [get_color_score(GLOB.neotheology_score, GLOB.neotheology_score)] Points<br><br>
+	<b>Final Church of Bonfire score:</b> [get_color_score(GLOB.neotheology_score, GLOB.neotheology_score)] Points<br><br>
 	"}
 
-	//Lonestar
+	//Skylight
 	dat += {"
-	<u>Lonestar Shipping Solutions scores</u><br>
+	<u>Skylight Shipping Solutions scores</u><br>
 	<b>Base score:</b> [green_text(GLOB.initial_guild_score)]<br>
 	<b>Lost faction items:</b> [GLOB.guild_faction_item_loss] ([to_score_color(GLOB.score_guild_faction_item_loss)] Points)<br>
 	<b>Faction objectives completed:</b> [GLOB.guild_objectives_completed] ([to_score_color(GLOB.guild_objectives_score)] Points)<br>
 	<b>Profit profits:</b> [GLOB.supply_profit] ([to_score_color(GLOB.guild_profit_score)] Points)<br>
-	<b>Crew with items distributed by the Lonestar Shipping Solutions:</b> [GLOB.guild_shared_gears] ([to_score_color(GLOB.guild_shared_gears_score)] Points)<br>
+	<b>Crew with items distributed by the Skylight Shipping Solutions:</b> [GLOB.guild_shared_gears] ([to_score_color(GLOB.guild_shared_gears_score)] Points)<br>
 	<b>Dirty areas:</b> [GLOB.dirt_areas] ([to_score_color(GLOB.score_mess)] Points)<br>
-	<b>Final Lonestar Shipping Solutions score:</b> [get_color_score(GLOB.guild_score, GLOB.guild_score)] Points<br><br><br>
+	<b>Final Skylight Shipping Solutions score:</b> [get_color_score(GLOB.guild_score, GLOB.guild_score)] Points<br><br><br>
 	"}
 
 	//Guild (Liberty)

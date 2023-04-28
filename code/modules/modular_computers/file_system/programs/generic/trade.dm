@@ -856,7 +856,7 @@
 				.["cart_goods"] = null
 
 		if(PRG.trade_screen == ORDER_SCREEN)
-			if(!SStrade.order_queue.Find(PRG.current_order))		// If the order was removed from the queue by someone else (guild/lonestar or hacker),
+			if(!SStrade.order_queue.Find(PRG.current_order))		// If the order was removed from the queue by someone else (guild/Skylight or hacker),
 				PRG.current_order = null							// clear the current order. Else we get a window of undefined values
 
 			var/list/current_orders = list()

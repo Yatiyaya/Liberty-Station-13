@@ -201,8 +201,8 @@
 	price_tag = 25
 
 /obj/item/stack/medical/bruise_pack/advanced/nt
-	name = "Absolutism Bruisepack"
-	singular_name = "Absolutism Bruisepack"
+	name = "Bonfire Bruisepack"
+	singular_name = "Bonfire Bruisepack"
 	desc = "An advanced bruisepack for severe injuries. Created by the will of God and made far easier to use than normal advanced kits."
 	icon_state = "nt_traumakit"
 	heal_brute = 10

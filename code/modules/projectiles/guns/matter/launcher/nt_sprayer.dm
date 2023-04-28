@@ -15,7 +15,7 @@
 		list(mode_name="normal", mode_desc="Small short lasting cleansing bolt that cleans a few tiles", projectile_type=/obj/item/arrow/cleansing, fire_sound='sound/weapons/Genhit.ogg', fire_delay=14, icon="toxin", projectile_cost = 0.5),
 		list(mode_name="stronger", mode_desc="Small long lasting cleansing bolt that cleans a few tiles", projectile_type=/obj/item/arrow/cleansing/bigger, fire_sound='sound/weapons/Genhit.ogg', fire_delay=25, icon="toxin", projectile_cost = 1.5),
 	)
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 /obj/item/arrow
 	var/recoil = 2  // Light recoil, it's just some cleaning stuff

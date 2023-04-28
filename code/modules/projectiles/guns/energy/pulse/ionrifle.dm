@@ -18,7 +18,7 @@
 	init_recoil = CARBINE_RECOIL(1.6)
 	twohanded = TRUE
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 	wield_delay = 0.7 SECOND
 	wield_delay_factor = 0.3 // 30 vig

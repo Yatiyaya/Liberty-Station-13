@@ -308,7 +308,7 @@
 	contents_cost = 1200
 
 /obj/structure/reagent_dispensers/cahorsbarrel
-	name = "Absolutism Cahors barrel"
+	name = "Bonfire Cahors barrel"
 	desc = "Barrel a day - keeps liver away."
 	icon_state = "barrel_alt"
 	volume = 1000

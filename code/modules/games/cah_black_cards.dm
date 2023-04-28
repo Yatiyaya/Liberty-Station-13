@@ -2,7 +2,7 @@
 /obj/item/deck/cah/black/card_text_list = list(
 	"Why am I itchy?",
 	"Today, Security shot ____.",
-	"The Prime this shift is worshiping _____.",
+	"The Oathpledge this shift is worshiping _____.",
 	"Cargo ordered a crate full of _____.",
 	"An ERT was called due to ______.",
 	"Alert! The Premier has armed themselves with _____.",
@@ -21,7 +21,7 @@
 	"No one else was at _______, they wouldn't understand the ______",
 	"Why am I shivering?",
 	"What is this world coming to? First, ________, now _______",
-	"The lonestar's labor union decided to use _______ to raise employee morale.",
+	"The Skylight's labor union decided to use _______ to raise employee morale.",
 	"The Chemist's drug of choice is ______",
 	"It is common practice for _______ to ______ on Earth.",
 	"Mercurial Colonies are _____.",

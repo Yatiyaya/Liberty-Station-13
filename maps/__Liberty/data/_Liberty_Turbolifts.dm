@@ -121,15 +121,15 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/prospector/underground
-	name = "Lonestar Underground Access"
-	lift_floor_label = "Lonestar Underground Access"
+	name = "Skylight Underground Access"
+	lift_floor_label = "Skylight Underground Access"
 	lift_floor_name = "Prospector Prep"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Underground. Be mindful of all longarm firearm regulations."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/prospector/surface
-	name = "Lonestar Surface Access"
-	lift_floor_label = "Lonestar Surface Access"
+	name = "Skylight Surface Access"
+	lift_floor_label = "Skylight Surface Access"
 	lift_floor_name = "Surface"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Surface. Be mindful of all longarm firearm regulations."
 	base_turf = /turf/simulated/shuttle/floor/mining

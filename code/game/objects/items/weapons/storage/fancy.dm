@@ -356,15 +356,15 @@ obj/item/storage/fancy/dogtreats/populate_contents()
 		new /obj/item/clothing/mask/smokable/cigarette/comred(src)
 	create_reagents(15 * storage_slots)//so people can inject cigarettes without opening a packet, now with being able to inject the whole one
 
-/obj/item/storage/fancy/cigarettes/lonestar
-	name = "\improper LoneStar packet"
-	desc = "A packet of six LoneStar cigarettes. Locally grown, rolled, and smoked only by the cheapest of colonists."
-	icon_state = "LoneStarCigPack"
-	item_state = "LoneStarCigPack"
+/obj/item/storage/fancy/cigarettes/Skylight
+	name = "\improper Skylight packet"
+	desc = "A packet of six Skylight cigarettes. Locally grown, rolled, and smoked only by the cheapest of colonists."
+	icon_state = "SkylightCigPack"
+	item_state = "SkylightCigPack"
 
-/obj/item/storage/fancy/cigarettes/lonestar/populate_contents()
+/obj/item/storage/fancy/cigarettes/Skylight/populate_contents()
 	for(var/i in 1 to storage_slots)
-		new /obj/item/clothing/mask/smokable/cigarette/lonestar(src)
+		new /obj/item/clothing/mask/smokable/cigarette/Skylight(src)
 	create_reagents(10 * storage_slots)//so people can inject cigarettes without opening a packet, now with being able to inject the whole one
 
 /obj/item/storage/fancy/cigarettes/faith

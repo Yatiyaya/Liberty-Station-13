@@ -40,7 +40,7 @@
 	spawn_nothing_percentage = 60
 
 /obj/random/powercell/large_safe
-	name = "random large lonestar weighted powercell"
+	name = "random large Skylight weighted powercell"
 	icon_state = "battery-green"
 
 /obj/random/powercell/large_safe/item_to_spawn()
@@ -55,11 +55,11 @@
 				/obj/item/cell/large/moebius/nuclear = 1
 				))
 
-/obj/random/powercell/large_safe_lonestar
-	name = "random large lonestar only powercell"
+/obj/random/powercell/large_safe_Skylight
+	name = "random large Skylight only powercell"
 	icon_state = "battery-green"
 
-/obj/random/powercell/large_safe_lonestar/item_to_spawn()
+/obj/random/powercell/large_safe_Skylight/item_to_spawn()
 	return pickweight(list(
 				/obj/item/cell/large = 20,\
 				/obj/item/cell/large/high = 15,\
@@ -69,7 +69,7 @@
 
 
 /obj/random/powercell/medium_safe
-	name = "random medium lonestar weighted powercell"
+	name = "random medium Skylight weighted powercell"
 	icon_state = "battery-green"
 
 /obj/random/powercell/medium_safe/item_to_spawn()
@@ -85,11 +85,11 @@
 				/obj/item/cell/medium/moebius/nuclear = 2
 				))
 
-/obj/random/powercell/medium_safe_lonestar
-	name = "random medium lonestar only powercell"
+/obj/random/powercell/medium_safe_Skylight
+	name = "random medium Skylight only powercell"
 	icon_state = "battery-green"
 
-/obj/random/powercell/medium_safe_lonestar/item_to_spawn()
+/obj/random/powercell/medium_safe_Skylight/item_to_spawn()
 	return pickweight(list(
 				/obj/item/cell/medium = 30,\
 				/obj/item/cell/medium/high = 15,\
@@ -98,7 +98,7 @@
 				))
 
 /obj/random/powercell/small_safe
-	name = "random small lonestar weighted powercell"
+	name = "random small Skylight weighted powercell"
 	icon_state = "battery-green"
 
 /obj/random/powercell/small_safe/item_to_spawn()
@@ -114,11 +114,11 @@
 				/obj/item/cell/small/moebius/nuclear = 2
 				))
 
-/obj/random/powercell/small_safe_lonestar
-	name = "random small lonestar only powercell"
+/obj/random/powercell/small_safe_Skylight
+	name = "random small Skylight only powercell"
 	icon_state = "battery-green"
 
-/obj/random/powercell/small_safe_lonestar/item_to_spawn()
+/obj/random/powercell/small_safe_Skylight/item_to_spawn()
 	return pickweight(list(
 				/obj/item/cell/small = 20,\
 				/obj/item/cell/small/high = 10,\

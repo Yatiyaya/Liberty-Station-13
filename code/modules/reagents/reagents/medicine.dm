@@ -497,7 +497,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 /datum/reagent/medicine/anodyne //Standard used around
 	name = "Anodyne"
 	id = "anodyne"
-	description = "The power of the Absolute grants a gift of momentary abatement against the dire physical hardships of the body."
+	description = "The power of the Bonfire grants a gift of momentary abatement against the dire physical hardships of the body."
 	taste_description = "numbness"
 	reagent_state = LIQUID
 	color = "#BAA845"

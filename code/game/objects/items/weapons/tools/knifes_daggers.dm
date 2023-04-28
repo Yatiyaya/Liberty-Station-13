@@ -3,7 +3,7 @@
 
 /obj/item/tool/knife
 	name = "kitchen knife"
-	desc = "A general purpose Chef's Knife made by the Lonestar Shipping Solutions, LLC. Guaranteed to stay sharp for years to come."
+	desc = "A general purpose Chef's Knife made by the Skylight Shipping Solutions, LLC. Guaranteed to stay sharp for years to come."
 	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "knife"
 	flags = CONDUCT
@@ -125,7 +125,7 @@
 	price_tag = 14
 
 /obj/item/tool/knife/neotritual
-	name = "absolutism ritual knife"
+	name = "bonfire ritual knife"
 	desc = "The sweet embrace of mercy, for relieving the soul from a tortured vessel."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "neot-knife"

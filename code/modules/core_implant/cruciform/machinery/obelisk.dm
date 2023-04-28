@@ -1,7 +1,7 @@
 GLOBAL_LIST_EMPTY(all_obelisk)
 
 /obj/machinery/power/nt_obelisk
-	name = "Absolutism obelisk"
+	name = "Bonfire obelisk"
 	desc = "The obelisks of the church are said to protect and empower those bearing cruciforms, how it works is not truly known, perhaps it is faith?"
 	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "nt_obelisk"

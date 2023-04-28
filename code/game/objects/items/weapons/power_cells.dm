@@ -34,7 +34,7 @@
 //Morbius (Science) Big
 /obj/item/cell/large/moebius
 	name = "Phokorus Institute \"Power-Geyser 2000L\""
-	desc = "Phokorus Institute-brand rechargeable L-standardized power cell. This one is as cheap as Lonestar models, yet improved in all senses."
+	desc = "Phokorus Institute-brand rechargeable L-standardized power cell. This one is as cheap as Skylight models, yet improved in all senses."
 	icon_state = "meb_b_st"
 	max_chargerate = 0.1
 	maxcharge = 2000
@@ -169,7 +169,7 @@
 //Morbius (Science) Medium
 /obj/item/cell/medium/moebius
 	name = "Phokorus Institute \"Power-Geyser 700M\""
-	desc = "Phokorus Institute branded rechargeable M-standardized power cell. This one is as cheap as Lonestar models come."
+	desc = "Phokorus Institute branded rechargeable M-standardized power cell. This one is as cheap as Skylight models come."
 	icon_state = "meb_m_st"
 	max_chargerate = 0.1
 	maxcharge = 700

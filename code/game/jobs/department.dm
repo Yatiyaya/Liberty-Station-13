@@ -165,18 +165,18 @@
 	name = "Experienced: Medical"
 	dept = DEPARTMENT_MEDICAL
 
-/datum/perk/experienced/Lonestar
-	name = "Experienced: Lonestar"
+/datum/perk/experienced/Skylight
+	name = "Experienced: Skylight"
 	dept = DEPARTMENT_SERVICE
-	gain_text = "Yay? Lonestar!!!"
+	gain_text = "Yay? Skylight!!!"
 
-/datum/perk/experienced/Lonestar/Station
+/datum/perk/experienced/Skylight/Station
 	subPerk = TRUE
 	name = "Station?"
 	gain_text = "STATION!"
 	desc = "Station."
 
-/datum/perk/experienced/Lonestar/DoubleTrouble
+/datum/perk/experienced/Skylight/DoubleTrouble
 	subPerk = TRUE
 	name = "BOUBLE TWOBLE!"
 	gain_text = "I knojsdklakfdj;af"

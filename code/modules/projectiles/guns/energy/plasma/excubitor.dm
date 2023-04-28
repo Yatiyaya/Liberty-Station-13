@@ -4,7 +4,7 @@
 	icon_state = "excubitor"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting those who threaten the Absolute's floak. \
+	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting those who threaten the Bonfire's floak. \
 	The Excubitor is a Halberd of Church design with a experimental plasma weapon built into the halberd itself that uses only Church-branded cells, consuming them and releasing their contents in a formidable burst of plasma and ionized shrapnel."
 	fire_sound = 'sound/weapons/energy/Laser.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
@@ -26,7 +26,7 @@
 	twohanded = TRUE
 	var/consume_cell = TRUE
 	price_tag = 2250
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 /obj/item/gun/energy/plasma/excubitor/consume_next_projectile()
 	if(!cell) return null
