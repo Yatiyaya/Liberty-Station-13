@@ -31,7 +31,28 @@
 		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
 
+/datum/cooking_with_jane/recipe/sausage
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/sausage
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawmeatball, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
 //Reg
+/datum/cooking_with_jane/recipe/hotdog
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/sausage
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/bun, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/sausage, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1, base=1),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
 /datum/cooking_with_jane/recipe/chickensteak
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/chickensteak
@@ -174,5 +195,19 @@
 		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon, qmod=0.5),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 1, base=1),
+		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/taco
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/taco
+	step_builder = list(
+		list(CWJ_ADD_REAGENT, "flour", 5),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_ADD_PRODUCE, "corn"),
+		list(CWJ_ADD_PRODUCE, "cabbage"),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cutlet, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)

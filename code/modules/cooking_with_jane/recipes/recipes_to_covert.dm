@@ -18,13 +18,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/muffinegg
 
-/datum/recipe/hotdog
-	items = list(
-		/obj/item/reagent_containers/food/snacks/bun,
-		/obj/item/reagent_containers/food/snacks/sausage
-	)
-	result = /obj/item/reagent_containers/food/snacks/hotdog
-
 /datum/recipe/donkpocket
 	items = list(
 		/obj/item/reagent_containers/food/snacks/dough,
@@ -277,14 +270,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/jellyburger/cherry
 
-/datum/recipe/sausage
-	reagents = list("sodiumchloride" = 1, "blackpepper" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/rawmeatball,
-		/obj/item/reagent_containers/food/snacks/rawbacon,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sausage
-
 /datum/recipe/fishfingers
 	reagents = list("flour" = 5, "egg" = 3, "cornoil" = 2)
 	items = list(
@@ -325,93 +310,8 @@
 //////////////////////////////////////////
 // bs12 food port stuff
 //////////////////////////////////////////
-
-/datum/recipe/taco
-	reagents = list("flour" = 5)
-	fruit = list("corn" = 1, "cabbage" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/cutlet,
-		/obj/item/reagent_containers/food/snacks/cheesewedge
-	)
-	result = /obj/item/reagent_containers/food/snacks/taco
-
-/datum/recipe/fries
-	reagents = list("cornoil" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/rawsticks
-	)
-	result = /obj/item/reagent_containers/food/snacks/fries
-
 /datum/recipe/mint
 	reagents = list("sugar" = 5, "frostoil" = 5)
 	result = /obj/item/reagent_containers/food/snacks/mint
 
-
-
-//Roach cubes
-
-/datum/recipe/cube/
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 15, "egg" = 3)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach
-
-/datum/recipe/cube/fuhrer
-	fruit = list("potato" = 2)
-	reagents = list("protein" = 25, "fuhrerole" = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer,
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer,
-	)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/fuhrer
-
-/datum/recipe/cube/jager
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, "blattedin" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/jager
-
-/datum/recipe/cube/kraftwerk
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, "gewaltine" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/kraftwerk
-
-/datum/recipe/cube/elektromagnetisch
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, "iron" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/elektromagnetisch)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/elektromagnetisch
-
-/datum/recipe/cube/glowing
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, MATERIAL_URANIUM = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/glowing)
-	result = /obj/item/reagent_containers/food/snacks/meat/roachmeat/glowing
-
-/datum/recipe/cube/roachling
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 5, "seligitillin" = 1)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/roachling
-
-/datum/recipe/cube/seuche
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, "diplopterum" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/seuche
-
-/datum/recipe/cube/panzer
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 20, "starkellin" = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer,
-		/obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer,
-	)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/panzer
-
-/datum/recipe/cube/gestrahlte
-	fruit = list("potato" = 1)
-	reagents = list("protein" = 10, "toxin" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat)
-	result = /obj/item/reagent_containers/food/snacks/cube/roach/grestrahlte
+//We keeping roach cubes to microwave sorry babe

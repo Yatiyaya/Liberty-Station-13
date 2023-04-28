@@ -249,8 +249,6 @@
 			/obj/item/reagent_containers/food/snacks/bigroachburger = good_data("Big Roach Burger", list(-100, -50), 300),
 			/obj/item/reagent_containers/food/snacks/fuhrerburger = good_data("Fuhrer Burger", list(-100, -50), 250),
 			/obj/item/reagent_containers/food/snacks/kaiserburger = good_data("Kaiser Burger", list(-100, -50), 300),
-			/obj/item/reagent_containers/food/snacks/roburger = good_data("Roburger", list(-100, -50), 600),
-			/obj/item/reagent_containers/food/snacks/roburgerbig = good_data("Big Roburger", list(-100, -50), 500),
 			/obj/item/reagent_containers/food/snacks/xenoburger = good_data("Xenoburger", list(-100, -50), 150),
 			/obj/item/reagent_containers/food/snacks/spellburger = good_data("Spell Burger", list(-100, -50), 500)
 		),

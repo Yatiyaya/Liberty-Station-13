@@ -25,3 +25,16 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
+
+/datum/cooking_with_jane/recipe/fries
+	cooking_container = POT
+	product_type = /obj/item/reagent_containers/food/snacks/fries
+
+	replace_reagents = TRUE
+
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawsticks),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
+		list(CWJ_ADD_REAGENT, "cornoil", 1)
+		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
+	)
