@@ -110,7 +110,7 @@
 /obj/item/rig/combat/knight
 	name = "hussar hardsuit control module"
 	desc = "A RIG module for a \"Hussar\" model hardsuit, jointly manufactured by Divisors and Numericals of the New Testament. \
-	The Tau Cross shining brightly upon its shoulder, it offers moderate combat protection against many a type of threat to the Absolute."
+	The Tau Cross shining brightly upon its shoulder, it offers moderate combat protection against many a type of threat to the Bonfire."
 	icon_state = "hussar_rig" //Rig modula by Gundam Tanaka#9565
 	suit_type = "hussar rig"
 	armor_list = list(

@@ -17,7 +17,7 @@
 
 /tipsAndTricks/jobs/guild_resale_profit
     jobs_list = list(JOBS_SERVICE)
-    tipText = "As Lonestar, you should be buying up valuable things from scavengers and reselling them for a profit. Buy anything of value that's brought to you."
+    tipText = "As Skylight, you should be buying up valuable things from scavengers and reselling them for a profit. Buy anything of value that's brought to you."
 
 /tipsAndTricks/jobs/guild_price_scanner
     jobs_list = list(JOBS_SERVICE)
@@ -312,11 +312,11 @@
 
 /tipsAndTricks/jobs/church_wine_anti_toxin
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The Absolutism Cahors Wine can be drank to help combat toxin damage or injected to be a mild painkiller."
+    tipText = "The Bonfire Cahors Wine can be drank to help combat toxin damage or injected to be a mild painkiller."
 
 /tipsAndTricks/jobs/best_dagger_ever
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The absolutism ritual knife can be thrown, this is useful for embedding the knife into someone's back. If thrown into someone that is also a follower of Absolutism, it is less likely to embed."
+    tipText = "The Bonfire ritual knife can be thrown, this is useful for embedding the knife into someone's back. If thrown into someone that is also a follower of Bonfire, it is less likely to embed."
 
 /tipsAndTricks/jobs/skyfall_timer
     jobs_list = list(JOBS_CHURCH)

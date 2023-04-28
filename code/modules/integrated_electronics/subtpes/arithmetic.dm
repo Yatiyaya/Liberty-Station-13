@@ -187,7 +187,7 @@
 	push_data()
 	activate_pin(2)
 
-// Absolute //
+// Bonfire //
 
 /obj/item/integrated_circuit/arithmetic/absolute
 	name = "absolute circuit"

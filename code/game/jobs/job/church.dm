@@ -40,7 +40,7 @@
 		CRUCIFORM_REDLIGHT
 	)
 
-	description = "The Prime serves as the head of the local branch of the Church of the Absolute. <br>\
+	description = "The Oathpledge serves as the head of the local branch of the Church of the Bonfire. <br>\
 	You represent the interest of the church and its disciples within the colony - identified by the cruciform implant upon their breast.<br>\
 	Your most pressing duty is as a spiritual leader. Preach to the flock, inspire faith and strength, and convert those seeking salvation.<br>\
 	While you are no trained psychologist, you can provide support and guidance to all - in both bright and dark times.<br>\
@@ -133,7 +133,7 @@
 
 	perks = list(PERK_NEAT, PERK_CHANNELING)
 
-	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
+	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
 	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
 
@@ -178,7 +178,7 @@
 
 	perks = list(PERK_NEAT, PERK_CHANNELING)
 
-	description = "The Vector serves the Prime, and more generally the church, as a disciple of the Faith.<br>\
+	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
 	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
 

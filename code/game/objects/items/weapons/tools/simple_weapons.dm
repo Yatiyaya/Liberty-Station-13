@@ -713,7 +713,7 @@
 //Shitty loadout weapons
 /obj/item/tool/cheap
 	name = "cheap sword"
-	desc = "A sword of acceptable quality, mass-produced by Lonestar. It's no work art, but it's sharp enough to get the job done."
+	desc = "A sword of acceptable quality, mass-produced by Skylight. It's no work art, but it's sharp enough to get the job done."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "cheap_sword"
 	item_state = "cheap_sword"
@@ -743,7 +743,7 @@
 
 /obj/item/tool/cheap/axe
 	name = "cheap tomahawk"
-	desc = "A tomahawk of acceptable quality, mass-produced by Lonestar. Just expensive enough to be called tactical."
+	desc = "A tomahawk of acceptable quality, mass-produced by Skylight. Just expensive enough to be called tactical."
 	icon_state = "cheap_axe"
 	item_state = "cheap_axe"
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
@@ -751,7 +751,7 @@
 
 /obj/item/tool/cheap/katana
 	name = "cheap katana"
-	desc = "A katana of acceptable quality, mass-produced by Lonestar. Easily their best-selling product from this lineup."
+	desc = "A katana of acceptable quality, mass-produced by Skylight. Easily their best-selling product from this lineup."
 	icon_state = "katana_old"
 	item_state = "katana"
 	force = WEAPON_FORCE_DANGEROUS
@@ -759,7 +759,7 @@
 
 /obj/item/tool/cheap/spear
 	name = "cheap spear"
-	desc = "A spear of acceptable quality, mass-produced by Lonestar. Place sharp end towards enemy."
+	desc = "A spear of acceptable quality, mass-produced by Skylight. Place sharp end towards enemy."
 	icon_state = "cheap_spear"
 	item_state = "cheap_spear"
 	w_class = ITEM_SIZE_HUGE
@@ -781,6 +781,6 @@
 
 /obj/item/tool/cheap/saber
 	name = "cheap saber"
-	desc = "A saber of acceptable quality, mass-produced by Lonestar. Probably not fit for parrying, but why not give it a try?"
+	desc = "A saber of acceptable quality, mass-produced by Skylight. Probably not fit for parrying, but why not give it a try?"
 	icon_state = "cheap_saber"
 	item_state = "cutlass"

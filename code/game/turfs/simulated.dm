@@ -18,7 +18,7 @@
 
 /turf/simulated/New()
 	..()
-	if(istype(loc, /area/liberty/absolutism))
+	if(istype(loc, /area/liberty/bonfire))
 		holy = 1
 	levelupdate()
 

@@ -214,7 +214,7 @@
 /obj/item/device/kit/paint/rust_ivan
 	name = "\"Rust\" Ivan customization kit"
 	new_name = "Ivan \"Rust\""
-	new_desc = "An old Ivan exosuit, rusted after spending Absolute-knows how long in a pile of trash."
+	new_desc = "An old Ivan exosuit, rusted after spending who-knows how long in a pile of trash."
 	new_icon = "ivan-rust"
 	allowed_types = list("ivan")
 

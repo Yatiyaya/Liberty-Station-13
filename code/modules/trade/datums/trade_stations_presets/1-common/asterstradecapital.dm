@@ -25,7 +25,7 @@
 			/obj/item/device/lighting/toggleable/flashlight,
 			/obj/item/device/lighting/toggleable/flashlight/heavy,
 			/obj/item/device/lightreplacer,
-			/obj/item/tool/omnitool = good_data("Lonestar \"Munchkin 5000\"", list(1, 3), 1000),
+			/obj/item/tool/omnitool = good_data("Skylight \"Munchkin 5000\"", list(1, 3), 1000),
 			/obj/item/tool/crowbar,
 			/obj/item/tool/screwdriver,
 			/obj/item/tool/shovel,
@@ -47,7 +47,7 @@
 			/obj/item/cell/large/high,
 			/obj/item/cell/large/super
 		),
-		"Lonestar Grenade" = list(
+		"Skylight Grenade" = list(
 			/obj/item/grenade/chem_grenade/antiweed,
 			/obj/item/grenade/chem_grenade/cleaner,
 			/obj/item/grenade/chem_grenade/metalfoam

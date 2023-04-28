@@ -2,7 +2,7 @@
 /obj/item/tool/sword/nt // not supposed to be in the game, had to make the shortsword its own type to prevent fucking up the scourge. sorry.
 	name = "short sword"
 	desc = "A saintly looking sword, made to do God's work. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shortsword"
 	item_state = "nt_shortsword"
@@ -22,7 +22,7 @@
 /obj/item/tool/sword/nt/shortsword
 	name = "short sword"
 	desc = "A saintly looking sword, made to do God's work. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shortsword"
 	item_state = "nt_shortsword"
@@ -35,7 +35,7 @@
 /obj/item/tool/sword/nt/longsword
 	name = "longsword"
 	desc = "A saintly looking longsword, recommended by experienced crusaders. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon_state = "nt_longsword"
 	item_state = "nt_longsword"
 	force = WEAPON_FORCE_ROBUST
@@ -47,7 +47,7 @@
 /obj/item/tool/knife/dagger/nt
 	name = "dagger"
 	desc = "A saintly looking dagger, may the absolute have mercy. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_dagger"
 	item_state = "nt_dagger"
@@ -73,7 +73,7 @@
 /obj/item/tool/sword/nt/scourge
 	name = "scourge"
 	desc = "A saintly looking scourge, extreme punishment in handheld form. Can be extended to hurt more. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon_state = "nt_scourge"
 	item_state = "nt_scourge"
 	force = WEAPON_FORCE_ROBUST
@@ -175,7 +175,7 @@
 /obj/item/tool/sword/nt/flanged
 	name = "flanged mace"
 	desc = "A saintly looking mace, designed to be a beacon of hope in the darkest of times. Devotees can activate it to light their path. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon_state = "nt_flanged"
 	item_state = "nt_flanged"
 	force = WEAPON_FORCE_ROBUST
@@ -225,7 +225,7 @@
 /obj/item/tool/sword/nt/warhammer
 	name = "warhammer"
 	desc = "A saintly looking warhammer, designed to knock back attackers when held in both hands. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon_state = "nt_warhammer"
 	item_state = "nt_warhammer"
 	wielded_icon = "nt_warhammer_wielded"
@@ -251,7 +251,7 @@
 /obj/item/tool/sword/nt/power
 	name = "\"Vexilar\" forceblade"
 	desc = "A hefty greatsword with golden wiring embedded into its handle and blade, designed to channel the power of a cruciform to project an ultra-sharp energy blade. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division."
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
 	icon_state = "nt_force"
 	item_state = "nt_force"
 	switched_on_icon_state = "nt_force_on"
@@ -285,7 +285,7 @@
 /obj/item/shield/riot/nt
 	name = "shield"
 	desc = "A saintly looking shield, let the God protect you. \
-	It bears a tau cross marking it as produced by the Church of Absolute's New Testament weapons division. \
+	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division. \
 	Has several leather straps on the back to hold melee weapons."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shield"

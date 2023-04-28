@@ -174,7 +174,7 @@
 	)
 
 /obj/item/storage/belt/utility/neotheology
-	name = "Absolutism utility belt"
+	name = "Bonfire utility belt"
 	desc = "Waist-held holy items."
 	icon_state = "utility_neotheology"
 	can_hold_extra = list(
@@ -432,7 +432,7 @@
 	new /obj/item/grenade/chem_grenade/teargas(src)
 
 /obj/item/storage/belt/security/neotheology
-	name = "Absolutism tactical belt"
+	name = "Bonfire tactical belt"
 	desc = "Can hold various military and security equipment for the awakened crusader or skilled divisor. Deus Vult."
 	icon_state = "tactical_neotheology"
 	can_hold_extra = list(
@@ -461,7 +461,7 @@
 	price_tag = 50
 
 /obj/item/storage/belt/church
-	name = "absolutism belt"
+	name = "bonfire belt"
 	desc = "Waist-held holy items."
 	icon_state = "ntbelt"
 

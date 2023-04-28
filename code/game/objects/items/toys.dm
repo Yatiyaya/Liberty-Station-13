@@ -663,19 +663,19 @@
 
 /obj/item/toy/figure/character/guild/qm
 	name = "CEO action figure"
-	desc = "The money-minded manager of all cargo affairs. Lonestar 1/3."
+	desc = "The money-minded manager of all cargo affairs. Skylight 1/3."
 	icon_state = "qm"
 	toysay = "Charge for every drink and meal! Charge them even for breathing!"
 
 /obj/item/toy/figure/character/guild/cargotech
 	name = "technician action figure"
-	desc = "Noone is more experienced at moving crates. Lonestar 2/3."
+	desc = "Noone is more experienced at moving crates. Skylight 2/3."
 	icon_state = "cargotech"
 	toysay = "My back hurts."
 
 /obj/item/toy/figure/character/guild/miner
 	name = "miner action figure"
-	desc = "Will they find minerals, treasure, or monsters? Lonestar 3/3."
+	desc = "Will they find minerals, treasure, or monsters? Skylight 3/3."
 	icon_state = "miner"
 	toysay = "Yeah, yeah, 'I'm here' too- wait, who said that...?"
 
@@ -734,7 +734,7 @@
 
 /obj/item/toy/figure/character/bobblehead/acolyte
 	name = "acolyte figurine"
-	desc = "Church of Absolute \"New Faith Life\" brand figurine of a vector, hooded both physically and spiritually from that which would lead them astray."
+	desc = "Church of Bonfire \"New Faith Life\" brand figurine of a vector, hooded both physically and spiritually from that which would lead them astray."
 	icon_state = "acolyte"
 	toysay = "\"Brotherhood.\""
 
@@ -754,7 +754,7 @@
 
 /obj/item/toy/figure/character/bobblehead/vagabond
 	name = "colonist figurine"
-	desc = "A Lonestar \"Space Life\" brand figurine showcasing the form of a random colonist, wearing one of the colony uniforms and an orange bandana. \
+	desc = "A Skylight \"Space Life\" brand figurine showcasing the form of a random colonist, wearing one of the colony uniforms and an orange bandana. \
 	Must of been custom-made to commemorate the colonies many colonists."
 	icon_state = "vagabond"
 	toysay = "\"What do you mean get a job?\""
@@ -785,7 +785,7 @@
 
 /obj/item/toy/figure/character/bobblehead/shitcurity
 	name = "shitcurity officer figurine"
-	desc = "A Lonestar \"Space Life\" brand figurine of a classic redshirt security employed in most space stations. Their belly distends out into an obvious beer gut, revealing no form of manufacturer bias what-so-ever."
+	desc = "A Skylight \"Space Life\" brand figurine of a classic redshirt security employed in most space stations. Their belly distends out into an obvious beer gut, revealing no form of manufacturer bias what-so-ever."
 	toysay = "\"I joined the force just to kill people.\""
 	icon_state = "shitcurity"
 
@@ -950,7 +950,7 @@
 
 /obj/structure/plushie/carp
 	name = "plush carp"
-	desc = "A plushie of an elated carp! Straight from the wilds of the Chromin 8 frontier, now right here in your hands."
+	desc = "A plushie of an elated carp! Straight from the wilds of the space frontier, now right here in your hands."
 	icon_state = "carpplushie" // Realistically scary
 	phrase = "Glorf!"
 

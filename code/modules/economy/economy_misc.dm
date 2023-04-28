@@ -122,7 +122,7 @@ var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer
 		department_account.can_make_accounts = TRUE
 
 	//create an entry in the account transaction log for when it was created
-	var/datum/transaction/T = new(department.account_initial_balance, department_account.owner_name, "Account creation", "Lonestar Shipping Solutions Terminal #277")
+	var/datum/transaction/T = new(department.account_initial_balance, department_account.owner_name, "Account creation", "Skylight Shipping Solutions Terminal #277")
 	T.date = "2 April, 2649"
 	T.time = "11:24"
 

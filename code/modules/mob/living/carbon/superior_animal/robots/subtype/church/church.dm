@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/robot/church
-	name = "Absolute"
+	name = "Bonfire"
 	desc = "You shouldn't be seeing this"
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = ""

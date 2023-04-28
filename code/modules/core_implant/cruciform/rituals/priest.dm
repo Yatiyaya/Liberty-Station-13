@@ -252,7 +252,7 @@
 /datum/ritual/cruciform/priest/epiphany
 	name = "Epiphany"
 	phrase = "In nomine Patris et Filii et Spiritus sancti."
-	desc = "The Absolute's principal sacrament is a ritual of baptism and merging with cruciform. A body, relieved of clothes should be placed on Absolute's special altar."
+	desc = "The Bonfire's principal sacrament is a ritual of baptism and merging with cruciform. A body, relieved of clothes should be placed on Bonfire's special altar."
 	nutri_cost = 10//low cost
 	blood_cost = 10//low cost
 

@@ -24,7 +24,7 @@
 	)
 	twohanded = FALSE
 	var/consume_cell = TRUE
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 /obj/item/gun/energy/plasma/antebellum/consume_next_projectile()
 	if(!cell) return null
@@ -63,4 +63,4 @@
 		list(mode_name="Musket", burst =1, icon="kill", penetrating = 1)
 	)
 	twohanded = TRUE // NO YOU DON'T
-	serial_type = "Absolute"
+	serial_type = "Bonfire"

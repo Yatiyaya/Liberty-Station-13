@@ -57,7 +57,7 @@
 			new /obj/item/ammo_magazine/speed_loader_magnum_40(src)
 		if("EGUN_P")
 			new /obj/item/gun/energy/ntpistol(src)
-			new /obj/random/powercell/small_safe_lonestar(src)
+			new /obj/random/powercell/small_safe_Skylight(src)
 			new /obj/item/cell/small/high(src)
 
 	//melee

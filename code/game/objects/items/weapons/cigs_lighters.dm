@@ -353,12 +353,12 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_off = "comredoff"
 	preloaded_reagents = list("nicotineplus" = 5, "vodka" = 10)
 
-/obj/item/clothing/mask/smokable/cigarette/lonestar
-	name = "\improper LoneStar light cigarette"
-	type_butt = /obj/item/trash/cigbutt/lonestar
-	icon_state = "lonestaroff"
-	icon_on = "lonestaron"
-	icon_off = "lonestaroff"
+/obj/item/clothing/mask/smokable/cigarette/Skylight
+	name = "\improper Skylight light cigarette"
+	type_butt = /obj/item/trash/cigbutt/Skylight
+	icon_state = "Skylightoff"
+	icon_on = "Skylighton"
+	icon_off = "Skylightoff"
 	preloaded_reagents = list("nicotine" = 5, "cafe_latte" = 5)
 
 /obj/item/clothing/mask/smokable/cigarette/faith
@@ -561,8 +561,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	name = "\improper ComRed cigarette butt"
 	icon_state = "comredbutt"
 
-/obj/item/trash/cigbutt/lonestar
-	name = "\improper LoneStar cigarette butt"
+/obj/item/trash/cigbutt/Skylight
+	name = "\improper Skylight cigarette butt"
 	icon_state = "comredbutt"
 
 /obj/item/trash/cigbutt/faith
@@ -1062,8 +1062,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	desc = "A lighter fashioned out of an old bullet casing."
 	icon_state = "bulletlighter"
 
-/obj/item/flame/lighter/zippo/absolutism
-	name = "\improper Absolutism Zippo lighter"
+/obj/item/flame/lighter/zippo/bonfire
+	name = "\improper Bonfire Zippo lighter"
 	desc = "A Zippo with a golden pattern, bearing a red wax seal in the center. Its purified flames burn bright."
 	icon_state = "absolutelighter"
 

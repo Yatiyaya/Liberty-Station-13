@@ -464,7 +464,7 @@ proc/TextPreview(var/string, var/len=40)
 	t = replacetext(t, "\[row\]", "</td><tr>")
 	t = replacetext(t, "\[cell\]", "<td>")
 	t = replacetext(t, "\[logo\]", "<img src = libertylogo.png>")
-	t = replacetext(t, "\[logolonestar\]", "<img src = lonestarlogo.png>")
+	t = replacetext(t, "\[logoSkylight\]", "<img src = Skylightlogo.png>")
 	t = replacetext(t, "\[editorbr\]", "")
 	return t
 
@@ -495,7 +495,7 @@ proc/TextPreview(var/string, var/len=40)
 	t = replacetext(t, "<tr>", "\[row\]")
 	t = replacetext(t, "<td>", "\[cell\]")
 	t = replacetext(t, "<img src = libertylogo.png>", "\[logo\]")
-	t = replacetext(t, "<img src = lonestarlogo.png>", "\[logolonestar\]")
+	t = replacetext(t, "<img src = Skylightlogo.png>", "\[logoSkylight\]")
 	t = replacetext(t, "<span class=\"paper_field\"></span>", "\[field\]")
 	t = strip_html_properly(t)
 	return t

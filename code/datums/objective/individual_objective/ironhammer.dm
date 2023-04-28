@@ -70,7 +70,7 @@
 */
 /*
 /datum/individual_objective/danger
-	name = "Absolute Danger"
+	name = "Bonfire Danger"
 	req_department = list(DEPARTMENT_SECURITY)
 	limited_antag = TRUE
 	rarity = 4

@@ -64,11 +64,11 @@
 	stamptext = "This paper has been stamped with the seal of First Administrator Antoine Lavoisier."
 	stampshape = "paper_stamp-dots"
 
-/datum/faction/liberty/lonestar
-	name = "Lonestar Shipping Solutions, LLC - Robert Ryan"
+/datum/faction/liberty/Skylight
+	name = "Skylight Shipping Solutions, LLC - Robert Ryan"
 
-	fax_alert = "LONESTAR REQUISITION FAX"
-	fax_response = "Lonestars Reply"
+	fax_alert = "Skylight REQUISITION FAX"
+	fax_response = "Skylights Reply"
 
 	color = "#ff8800"
 	darkcolor = "#be6602"
@@ -104,7 +104,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/church
-	name = "Church of Absolute - Augstine Browne"
+	name = "Church of Bonfire - Augstine Browne"
 
 	fax_alert = "CHURCH FAX"
 	fax_response = "Church Decree"

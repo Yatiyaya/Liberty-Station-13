@@ -7,8 +7,8 @@
 
 //Cargo Tech
 /obj/item/clothing/head/rank/cargosoft
-	name = "lonestar cap"
-	desc = "A grey cap with the Lonestar logo on it."
+	name = "skylight cap"
+	desc = "A grey cap with the Skylight logo on it."
 	icon_state = "cargosoft"
 
 //Captain

@@ -692,7 +692,7 @@
 
 /obj/item/rig_module/cargo_clamp/large
 	name = "large hardsuit cargo clamp"
-	desc = "A pair of folding arm-mounted clamps for a hardsuit, meant for loading crates and other large objects. This one is a Lonestar design, capable of holding a little more cargo."
+	desc = "A pair of folding arm-mounted clamps for a hardsuit, meant for loading crates and other large objects. This one is a Skylight design, capable of holding a little more cargo."
 	cargo_max = 8
 	price_tag = 1600 //can't be obtained outside of purchasing, so higher price is a detriment
 	mutually_exclusive_modules = list(/obj/item/rig_module/mounted, /obj/item/rig_module/held, /obj/item/rig_module/cargo_clamp)

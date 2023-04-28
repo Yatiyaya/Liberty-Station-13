@@ -158,8 +158,8 @@
 	stacktype_alt = null
 
 /obj/item/stack/medical/ointment/advanced/nt
-	name = "Absolutism Burnpack"
-	singular_name = "Absolutism Burnpack"
+	name = "Bonfire Burnpack"
+	singular_name = "Bonfire Burnpack"
 	desc = "An advanced treatment kit for severe burns. Created by the will of God and made far easier to use than normal advanced kits."
 	icon_state = "nt_burnkit"
 	heal_brute = 5
