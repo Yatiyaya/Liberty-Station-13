@@ -252,14 +252,11 @@
 			/obj/item/reagent_containers/food/snacks/roburger = good_data("Roburger", list(-100, -50), 600),
 			/obj/item/reagent_containers/food/snacks/roburgerbig = good_data("Big Roburger", list(-100, -50), 500),
 			/obj/item/reagent_containers/food/snacks/xenoburger = good_data("Xenoburger", list(-100, -50), 150),
-			/obj/item/reagent_containers/food/snacks/clownburger = good_data("Clown Burger", list(-100, -50), 500),
-			/obj/item/reagent_containers/food/snacks/mimeburger = good_data("Mime Burger", list(-100, -50), 500),
 			/obj/item/reagent_containers/food/snacks/spellburger = good_data("Spell Burger", list(-100, -50), 500)
 		),
 		"Human Meat" = list(
 			/obj/item/reagent_containers/food/snacks/human/kabob = good_data("Human Kabob", list(-100, -50), 120),
 			/obj/item/reagent_containers/food/snacks/human = good_data("Human Burger", list(-100, -50), 100),
-			/obj/item/reagent_containers/food/snacks/brainburger = good_data("Brain Burger", list(-100, -50), 700),
 			/obj/item/reagent_containers/food/snacks/sliceable/braincake = good_data("Brain Cake", list(-100, -50), 500),
 			/obj/item/reagent_containers/food/snacks/braincakeslice = good_data("Brain Cake Slice", list(-100, -50), 100),
 			/obj/item/reagent_containers/food/snacks/soylentgreen = good_data("Soylent Green", list(-100, -50), 400)

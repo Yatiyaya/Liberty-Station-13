@@ -1,3 +1,37 @@
+//Ingreds
+
+/datum/cooking_with_jane/recipe/cooked_cutlet
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/cutlet
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawcutlet, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_USE_GRILL, J_LO, 15 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/cooked_meatball
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/meatball
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawmeatball, qmod=0.5),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_USE_STOVE, J_LO, 20 SECONDS)
+	)
+
+
+/datum/cooking_with_jane/recipe/cooked_patty
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/patty
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/patty_raw, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+//Reg
 /datum/cooking_with_jane/recipe/chickensteak
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/chickensteak
@@ -141,37 +175,4 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon, qmod=0.5),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 1, base=1),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
-	)
-
-//Ingreds
-
-/datum/cooking_with_jane/recipe/cooked_cutlet
-	cooking_container = GRILL
-	product_type = /obj/item/reagent_containers/food/snacks/cutlet
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawcutlet, qmod=0.5),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_USE_GRILL, J_LO, 15 SECONDS)
-	)
-
-/datum/cooking_with_jane/recipe/cooked_meatball
-	cooking_container = PAN
-	product_type = /obj/item/reagent_containers/food/snacks/meatball
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawmeatball, qmod=0.5),
-		list(CWJ_ADD_REAGENT, "cornoil", 1),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_USE_STOVE, J_LO, 20 SECONDS)
-	)
-
-
-/datum/cooking_with_jane/recipe/cooked_patty
-	cooking_container = GRILL
-	product_type = /obj/item/reagent_containers/food/snacks/patty
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/patty_raw, qmod=0.5),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
-		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
