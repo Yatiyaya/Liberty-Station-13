@@ -133,10 +133,10 @@
 
 /datum/supply_pack/oddities
 	name = "Luxury Imports Crate"
-	contains = list(/obj/random/lonestar_oddities,
-					/obj/random/lonestar_oddities,
-					/obj/random/lonestar_oddities,
-					/obj/random/lonestar_oddities)
+	contains = list(/obj/random/Skylight_oddities,
+					/obj/random/Skylight_oddities,
+					/obj/random/Skylight_oddities,
+					/obj/random/Skylight_oddities)
 	cost = 1400 //These exports for a small bit
 	crate_name = "luxury imports crate"
 	group = "Recreation"

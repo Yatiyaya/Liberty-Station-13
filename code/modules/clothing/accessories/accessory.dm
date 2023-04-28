@@ -378,7 +378,7 @@
 	desc = "A purple cloak with nanoleds creating sparkling bubbles."
 
 /obj/item/clothing/accessory/job/cape/guild
-	name = "lonestar cloak"
+	name = "skylight cloak"
 	icon_state = "cargocloak"
 	desc = "A light-brown cloak."
 
@@ -1270,7 +1270,7 @@
 
 /obj/item/clothing/accessory/necklace/fractalrosary
 	name = "Fractal Rosary"
-	desc = "This is an insignia given out by the Church of Absolute to people who consider themself to be a Fractal: \
+	desc = "This is an insignia given out by the Church of Bonfire to people who consider themself to be a Fractal: \
 			An individual who believes and follows the Church but has not yet or cannot be inducted to full membership."
 	icon_state = "fractal_rosary"
 	item_state = "fractal_rosary"
@@ -1483,19 +1483,19 @@
 
 /obj/item/clothing/accessory/passcard
 	name = "general passcard"
-	desc = "A passcard issued by the Liberty Colony when someone gains permanent residency on Amethyn, in the Chromin 8 system."
+	desc = "A passcard issued by the Liberty Colony when someone gains permanent residency on Phokorus."
 	icon_state = "passcard_general"
 	item_state = "general_passport"
 
 /obj/item/clothing/accessory/passcard/resident_card
 	name = "resident passcard"
-	desc = "A card issued by the Liberty Colony for colonists who are offered temporary residency on Amethyn, in the Chromin 8 system."
+	desc = "A card issued by the Liberty Colony for colonists who are offered temporary residency on Phokorus."
 	icon_state = "resident_card"
 	item_state = "passport"
 
 /obj/item/clothing/accessory/passcard/work_visa
 	name = "work visa"
-	desc = "A card issued by the Liberty Colony for colonists who are offered residency for the purpose of work on Amethyn, in the Chromin 8 system. "
+	desc = "A card issued by the Liberty Colony for colonists who are offered residency for the purpose of work on Phokorus. "
 	icon_state = "workvisa"
 	item_state = "pass"
 
@@ -1507,7 +1507,7 @@
 
 /obj/item/clothing/accessory/passcard/fringe_colonies
 	name = "Outer Fringe passcard"
-	desc = "A passcard issued to citizens and colonists away from Sol space or Chromin itself. The look of this passcard may vary group to group, but no matter where it comes from, it's generally understood that whoever owns this passcard has never been a Solarian citizen."
+	desc = "A passcard issued to citizens and colonists away from Sol space itself. The look of this passcard may vary group to group, but no matter where it comes from, it's generally understood that whoever owns this passcard has never been a Solarian citizen."
 	icon_state = "passcard_coc"
 	item_state = "badge"
 
@@ -1568,13 +1568,13 @@
 
 /obj/item/clothing/accessory/passcard/passport_general
 	name = "passport"
-	desc = "A passport issued to Liberty Colonists that live on Amethyn, in the Chromin 8 system."
+	desc = "A passport issued to Liberty Colonists that live on Phokorus."
 	icon_state = "general_passport"
 	item_state = "general_passport"
 
 /obj/item/clothing/accessory/passcard/passport_kriosan
 	name = "Kriosan passport"
-	desc = "A passport issued to Kriosans by the Kriosan Government who are working or living on Amethyn, in the Chromin 8 system."
+	desc = "A passport issued to Kriosans by the Kriosan Government who are working or living on Phokorus."
 	icon_state = "workvisa"
 	item_state = "kuri"
 

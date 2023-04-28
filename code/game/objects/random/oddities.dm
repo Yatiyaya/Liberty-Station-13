@@ -95,12 +95,12 @@
 				/obj/item/implant/uplink = 1,
 				/obj/item/device/radio/headset/uplink = 1))
 
-/obj/random/lonestar_oddities
-	name = "lonestar curios"
+/obj/random/Skylight_oddities
+	name = "Skylight curios"
 	icon_state = "techloot-grey"
 	spawn_nothing_percentage = 0
 
-/obj/random/lonestar_oddities/item_to_spawn()
+/obj/random/Skylight_oddities/item_to_spawn()
 	return pickweight(list(
 				/obj/item/oddity/ls/collector_coin = 2,
 				/obj/item/oddity/ls/pamphlet = 2,

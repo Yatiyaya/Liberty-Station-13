@@ -8,7 +8,7 @@
 	vend_delay = 34
 	icon_state = "cigs"
 	products = list(/obj/item/storage/fancy/cigarettes = 7,
-				/obj/item/storage/fancy/cigarettes/lonestar = 7,
+				/obj/item/storage/fancy/cigarettes/Skylight = 7,
 				/obj/item/storage/fancy/cigarettes/ishimura = 7,
 				/obj/item/storage/fancy/cigarettes/tannhauser = 7,
 				/obj/item/storage/fancy/cigarettes/brouzouf = 7,
@@ -45,14 +45,14 @@
 				/obj/item/flame/lighter/zippo/gonzo = 4,
 				/obj/item/flame/lighter/zippo/bullet = 4,
 				/obj/item/flame/lighter/zippo/brass = 3,
-				/obj/item/flame/lighter/zippo/absolutism = 4)
+				/obj/item/flame/lighter/zippo/bonfire = 4)
 	contraband = list(/obj/item/flame/lighter/zippo/communist = 2,
 				/obj/item/flame/lighter/zippo/excelsior = 4,
 				/obj/item/flame/lighter/zippo/soyfed = 2,
 				/obj/item/storage/fancy/cigarettes/khi = 2,
 				/obj/item/storage/fancy/cigarettes/comred = 1)
 	prices = list(/obj/item/storage/fancy/cigarettes = 40,
-				/obj/item/storage/fancy/cigarettes/lonestar = 35,
+				/obj/item/storage/fancy/cigarettes/Skylight = 35,
 				/obj/item/storage/fancy/cigarettes/ishimura = 70,
 				/obj/item/storage/fancy/cigarettes/tannhauser = 45,
 				/obj/item/storage/fancy/cigarettes/brouzouf = 55,
@@ -85,7 +85,7 @@
 				/obj/item/flame/lighter/zippo/bullet = 50,
 				/obj/item/flame/lighter/zippo/communist = 250, // Idiot tax, but still affordable
 				/obj/item/flame/lighter/zippo/brass = 55,
-				/obj/item/flame/lighter/zippo/absolutism = 50,
+				/obj/item/flame/lighter/zippo/bonfire = 50,
 				/obj/item/storage/fancy/cigar = 250,
 				/obj/item/clothing/mask/vape = 150,
 				/obj/item/clothing/mask/smokable/pipe = 75,

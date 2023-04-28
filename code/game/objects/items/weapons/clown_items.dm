@@ -134,12 +134,12 @@
 	reagent_storage = 25 //we can clean 5 more tiles before needing more water
 
 /obj/item/soap/deluxe/New()
-	desc = "A deluxe Lonestar-brand bar of soap. Smells of [pick("lavender", "vanilla", "strawberry", "chocolate" ,"space")]."
+	desc = "A deluxe Skylight-brand bar of soap. Smells of [pick("lavender", "vanilla", "strawberry", "chocolate" ,"space")]."
 	..()
 
 /obj/item/soap/church
 	name = "holy soap" // Be clean or be dead
-	desc = "An Absolutism-brand bar of soap. It has a faithful smell."
+	desc = "An Bonfire-brand bar of soap. It has a faithful smell."
 	icon_state = "soapchurch"
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 6
 	clean_speed = 45

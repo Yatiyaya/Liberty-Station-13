@@ -92,7 +92,7 @@
 	new /obj/item/clothing/accessory/armband/cargo(src)
 
 /obj/structure/closet/secure_closet/personal/artist
-	name = "lonestar artist's locker"
+	name = "Skylight artist's locker"
 	req_access = list(access_theatre)
 	access_occupy = list(access_cargo)
 	icon_state = "cargo"

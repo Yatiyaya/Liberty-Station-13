@@ -209,19 +209,19 @@
 	icon_state = "nboard00"
 	notices = 0
 
-/obj/structure/noticeboard/lonestar_service
-	name = "Lonestar Shipping bulletin board"
-	desc = "A board containing vital notices and official memos for Lonestar-Service Employees"
+/obj/structure/noticeboard/Skylight_service
+	name = "Skylight Shipping bulletin board"
+	desc = "A board containing vital notices and official memos for Skylight-Service Employees"
 	icon_state = "nboard00"
 	notices = 0
 
-/obj/structure/noticeboard/lonestar_supply
-	name = "Lonestar Shipping bulletin board"
-	desc = "A board containing vital notices and official memos for Lonestar-Supply Employees"
+/obj/structure/noticeboard/Skylight_supply
+	name = "Skylight Shipping bulletin board"
+	desc = "A board containing vital notices and official memos for Skylight-Supply Employees"
 	icon_state = "nboard00"
 	notices = 2
 
-/obj/structure/noticeboard/lonestar_supply/New()
+/obj/structure/noticeboard/Skylight_supply/New()
 	var/obj/item/paper/P = new()
 	P.name = "Memo RE: Mining Drills"
 	P.info = "<ul><li>seismic activity 1: The lowest possible pretty much. Should be a cakewalk even if you've got basic equipment or don't quite know what you're doing just yet. \
@@ -254,7 +254,7 @@ P.S - <u><h1>Don't leave the drills running unattended!</u></h1>"
 
 
 /obj/structure/noticeboard/church
-	name = "Church of the Absolute bulletin board"
+	name = "Church of the Bonfire bulletin board"
 	desc = "A board containing vital notices and official memos for the faithful"
 	icon_state = "nboard00"
 	notices = 0

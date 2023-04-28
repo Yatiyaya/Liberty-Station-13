@@ -1,9 +1,9 @@
 // Disks formated as /designpath = pointcost , if no point cost is specified it defaults to 1.
 // To make a design unprotect use -1
-// Absolute
+// Bonfire
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt
-	disk_name = "Absolute Armory"
+	disk_name = "Bonfire Armory"
 	icon_state = "neotheology"
 	license = -1
 
@@ -62,8 +62,8 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter
-	disk_name = "Church of Absolute Utilities Plus"
-	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Absolute."
+	disk_name = "Church of Bonfire Utilities Plus"
+	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Bonfire."
 	icon_state = "neotheology_testament_u"
 	license = -1
 	designs = list(
@@ -82,7 +82,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public
-	disk_name = "Church of Absolute Bioprinter Products and Utilities Basic"
+	disk_name = "Church of Bonfire Bioprinter Products and Utilities Basic"
 	desc = "A limited design disk for cleaning, gardening and some production of meats and milk."
 	license = 20
 
@@ -104,7 +104,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms
-	disk_name = "Absolute Armory - New Testament Armaments"
+	disk_name = "Bonfire Armory - New Testament Armaments"
 	icon_state = "neotheology_testament"
 	license = -1
 	designs = list(
@@ -126,11 +126,11 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public
-	disk_name = "Absolute Armory - Crusade Starter Kit"
+	disk_name = "Bonfire Armory - Crusade Starter Kit"
 	license = 8
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_grenades
-	disk_name = "Absolute Armory - Grenades Pack"
+	disk_name = "Bonfire Armory - Grenades Pack"
 	icon_state = "neotheology"
 	license = 12
 	designs = list(
@@ -143,7 +143,7 @@
 
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/grenades
-	disk_name = "Absolute Armory - Grenades Pack Plus"
+	disk_name = "Bonfire Armory - Grenades Pack Plus"
 	icon_state = "neotheology"
 	license = 16
 	designs = list(
@@ -156,7 +156,7 @@
 
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/new_guns
-	disk_name = "Absolute Armory of the New Testament Plus"
+	disk_name = "Bonfire Armory of the New Testament Plus"
 	desc = "A rare and expensive disk containing designs for highly advanced energy weapons from the Old Testament, the Absolutes arms division. Nicknamed the new testament for containing its latest weaponry designs."
 	icon_state = "neotheology"
 	license = 18
@@ -171,7 +171,7 @@
 
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns
-	disk_name = "Absolute Armory of the New Testament"
+	disk_name = "Bonfire Armory of the New Testament"
 	desc = "A rare and expensive disk containing designs for highly advanced energy weapons from the Old Testament, the Absolutes arms division. Nicknamed the new testament for containing its latest weaponry designs."
 	icon_state = "neotheology"
 	license = 16
@@ -184,7 +184,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt_plasma_shells
-	disk_name = "Absolute Armory - Plasma Shell Pack"
+	disk_name = "Bonfire Armory - Plasma Shell Pack"
 	desc = "A rare and expensive disk containing designs for highly advanced plasma based shotgun shells."
 	icon_state = "neotheology"
 	license = 8 // 20 heavy plasma shells or 40 normal shots.
@@ -195,7 +195,7 @@
 
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/plasma_shells
-	disk_name = "Absolute Armory - Plasma Shell Pack Plus"
+	disk_name = "Bonfire Armory - Plasma Shell Pack Plus"
 	desc = "A rare and expensive disk containing designs for highly advanced plasma based shotgun shells."
 	icon_state = "neotheology"
 	license = 10 // 36 heavy plasma shells or 56 normal shots.

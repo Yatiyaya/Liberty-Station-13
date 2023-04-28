@@ -1,5 +1,5 @@
 /obj/item/storage/sheath
-	name = "absolutism sheath"
+	name = "bonfire sheath"
 	desc = "Made to store only the swords of the church."
 	icon = 'icons/obj/sheath.dmi'
 

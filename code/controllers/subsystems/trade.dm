@@ -344,7 +344,7 @@ SUBSYSTEM_DEF(trade)
 			qdel(AM)
 
 		var/credits_to_account = round(offer_price * 0.8)
-		var/credits_to_lonestar = round(offer_price * 0.2)
+		var/credits_to_Skylight = round(offer_price * 0.2)
 
 		create_log_entry("Special Offer", account.get_name(), invoice_contents_info, offer_price, TRUE, get_turf(beacon))
 
@@ -363,7 +363,7 @@ SUBSYSTEM_DEF(trade)
 		*/
 
 		var/datum/transaction/T = new(credits_to_account, account.get_name(), "Special deal", station.name)
-		var/datum/transaction/TL = new(credits_to_lonestar, department_accounts[DEPARTMENT_SERVICE].get_name(), "Special deal", station.name)
+		var/datum/transaction/TL = new(credits_to_Skylight, department_accounts[DEPARTMENT_SERVICE].get_name(), "Special deal", station.name)
 		T.apply_to(account)
 		TL.apply_to(department_accounts[DEPARTMENT_SERVICE])
 		station.add_to_wealth(offer_price, TRUE)
@@ -410,7 +410,7 @@ SUBSYSTEM_DEF(trade)
 					qdel(AM)
 
 				var/credits_to_account = round(offer_price * 0.8)
-				var/credits_to_lonestar = round(offer_price * 0.2)
+				var/credits_to_Skylight = round(offer_price * 0.2)
 
 				create_log_entry("Special Offer", account.get_name(), invoice_contents_info, offer_price, FALSE, get_turf(beacon))
 
@@ -427,7 +427,7 @@ SUBSYSTEM_DEF(trade)
 				*/
 
 				var/datum/transaction/T = new(credits_to_account, account.get_name(), "Special deal", TS.name)
-				var/datum/transaction/TL = new(credits_to_lonestar, department_accounts[DEPARTMENT_SERVICE].get_name(), "Special deal", TS.name)
+				var/datum/transaction/TL = new(credits_to_Skylight, department_accounts[DEPARTMENT_SERVICE].get_name(), "Special deal", TS.name)
 				T.apply_to(account)
 				TL.apply_to(department_accounts[DEPARTMENT_SERVICE])
 
@@ -540,10 +540,10 @@ SUBSYSTEM_DEF(trade)
 		senderBeacon.activate()
 
 		var/datum/money_account/A = account
-		var/datum/money_account/lonestar_account = department_accounts[DEPARTMENT_SERVICE]
+		var/datum/money_account/Skylight_account = department_accounts[DEPARTMENT_SERVICE]
 		var/datum/transaction/TA = new(cost * 0.8, account.get_name(), "Sold item", station.name)
-		var/datum/transaction/T = new(cost * 0.2, lonestar_account.get_name(), "Sold item", TRADE_SYSTEM_IC_NAME)
-		T.apply_to(lonestar_account)
+		var/datum/transaction/T = new(cost * 0.2, Skylight_account.get_name(), "Sold item", TRADE_SYSTEM_IC_NAME)
+		T.apply_to(Skylight_account)
 		TA.apply_to(A)
 		station.add_to_wealth(cost)
 
@@ -593,12 +593,12 @@ SUBSYSTEM_DEF(trade)
 				item.forceMove(get_turf(AM))		// Should be the same tile
 
 	senderBeacon.start_export()
-	var/datum/money_account/lonestar_account = department_accounts[DEPARTMENT_SERVICE]
-	var/datum/transaction/T = new(cost, lonestar_account.get_name(), "Export", TRADE_SYSTEM_IC_NAME)
-	T.apply_to(lonestar_account)
+	var/datum/money_account/Skylight_account = department_accounts[DEPARTMENT_SERVICE]
+	var/datum/transaction/T = new(cost, Skylight_account.get_name(), "Export", TRADE_SYSTEM_IC_NAME)
+	T.apply_to(Skylight_account)
 
 	if(invoice_contents_info)	// If no info, then nothing was exported
-		create_log_entry("Export", lonestar_account.get_name(), invoice_contents_info, cost, TRUE, get_turf(senderBeacon))
+		create_log_entry("Export", Skylight_account.get_name(), invoice_contents_info, cost, TRUE, get_turf(senderBeacon))
 
 /datum/controller/subsystem/trade/proc/get_export_price_multiplier(atom/movable/target)
 	if(!target || target.anchored)

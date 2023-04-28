@@ -553,7 +553,7 @@
 /obj/item/clothing/suit/space/void/assault
 	name = "assault armor"
 	icon_state = "assaultsuit"
-	desc = "A specialty import from the Kriosan Confederacy, usually imported by Lonestar LLC thanks to the companies' long standing trade agreement. It costs a king's ransom, albeit for a good reason \
+	desc = "A specialty import from the Kriosan Confederacy, usually imported by Skylight LLC thanks to the companies' long standing trade agreement. It costs a king's ransom, albeit for a good reason \
 	given its sturdy craftmenship and reinforced armor layers."
 	item_state = "assaultsuit"
 	armor_list = list(

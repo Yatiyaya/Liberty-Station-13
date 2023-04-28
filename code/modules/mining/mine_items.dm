@@ -43,7 +43,7 @@
 	name = "censer"
 	icon_state = "censer"
 	item_state = "censer"
-	desc = "A silver-gold incense burner that releases a sweet, comforting perfume. Sometimes used in consecration ceremonies by the Church, where the incense is said to clean and purify the air so prayers may better reach the Absolute."
+	desc = "A silver-gold incense burner that releases a sweet, comforting perfume. Sometimes used in consecration ceremonies by the Church, where the incense is said to clean and purify the air so prayers may better reach the Bonfire."
 	brightness_on = 3			// luminosity when on
 	turn_on_sound = 'sound/effects/Custom_flare.ogg'
 

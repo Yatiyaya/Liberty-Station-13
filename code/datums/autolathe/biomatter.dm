@@ -94,11 +94,11 @@
 	materials = list(MATERIAL_BIOMATTER = 20, MATERIAL_BIO_SILK = 1)
 
 /datum/design/bioprinter/belt/utility/neotheology
-	name = "Absolutism utility belt"
+	name = "Bonfire utility belt"
 	build_path = /obj/item/storage/belt/utility/neotheology
 
 /datum/design/bioprinter/belt/security/neotheology
-	name = "Absolutism tactical belt"
+	name = "Bonfire tactical belt"
 	build_path = /obj/item/storage/belt/security/neotheology
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
 

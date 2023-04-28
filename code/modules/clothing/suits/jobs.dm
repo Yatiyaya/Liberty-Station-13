@@ -21,7 +21,7 @@
 
 //Guild Technician
 /obj/item/clothing/suit/storage/rank/cargo_jacket
-	name = "lonestar jacket"
+	name = "skylight jacket"
 	desc = "Stylish jacket lined with pockets. It seems have a little protection from physical harm."
 	icon_state = "cargo_jacket"
 	item_state = "cargo_jacket"
@@ -37,8 +37,8 @@
 	)
 
 /obj/item/clothing/suit/storage/rank/cargoclerk_jacket
-	name = "lonestar office jacket"
-	desc = "Stylish jacket lined for lonestar office workers. It seems have a little protection from physical harm."
+	name = "skylight office jacket"
+	desc = "Stylish jacket lined for Skylight office workers. It seems have a little protection from physical harm."
 	icon_state = "cargoclerk_jacket"
 	item_state = "cargo_jacket"
 	blood_overlay_type = "coat"
@@ -53,8 +53,8 @@
 	)
 
 /obj/item/clothing/suit/storage/cargovest
-	name = "lonestar hazard vest"
-	desc = "A Lonestar hazard vest in grey and orange to be used in work zones."
+	name = "skylight hazard vest"
+	desc = "A Skylight hazard vest in grey and orange to be used in work zones."
 	icon_state = "cargovest"
 	item_state = "hazard"
 	blood_overlay_type = "armor"
@@ -180,7 +180,7 @@
 
 /obj/item/clothing/suit/storage/neotheosports
 	name = "church sports jacket"
-	desc = "Absolutism styled sports jacket to keep the faithful always on their feet."
+	desc = "Bonfire styled sports jacket to keep the faithful always on their feet."
 	icon_state = "nt_sportsjacket"
 	item_state = "nt_sportsjacket"
 	body_parts_covered = UPPER_TORSO|ARMS

@@ -21,7 +21,7 @@
 	var/throw_distance = 7
 	var/release_force = 5
 	twohanded = TRUE
-	serial_type = "Absolute"
+	serial_type = "Bonfire"
 
 	wield_delay = 1.5 SECOND
 	wield_delay_factor = 0.6 // 60 vig , heavy stuff

@@ -77,24 +77,24 @@
 		return 1
 
 /obj/item/clothing/under/rank/cargotech
-	name = "lonestar cargo uniform"
-	desc = "A grey and orange Lonestar jumpsuit to fit Lonestar regulations."
+	name = "skylight cargo uniform"
+	desc = "A grey and orange Skylight jumpsuit to fit Skylight regulations."
 	icon_state = "cargotech"
 	item_state = "miner"
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/rank/cargoclerk
-	name = "lonestar office uniform"
-	desc = "A grey and orange Lonestar suit to fit Lonestar regulations."
+	name = "skylight office uniform"
+	desc = "A grey and orange Skylight suit to fit Skylight regulations."
 	icon_state = "cargoclerk"
 	item_state = "miner"
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/rank/preacher
-	desc = "A dark ceremonial robe tailored for Primes."
-	name = "prime's robe"
+	desc = "A dark ceremonial robe tailored for the Oathpledge."
+	name = "oathpledge 's robe"
 	icon_state = "preacher"
 	item_state = "w_suit"
 
@@ -125,7 +125,7 @@
 		return 1
 
 /obj/item/clothing/under/rank/acolyte
-	desc = "Ceremonial garb of the Absolute's vectors."
+	desc = "Ceremonial garb of the Bonfire's vectors."
 	name = "vector's vestments"
 	icon_state = "acolyte"
 	item_state = "acolyte"
@@ -263,8 +263,8 @@
 	item_state = "tactical_rags"
 	armor_list = list(melee = 5, bullet = 0, energy = 10, bomb = 0, bio = 0, rad = 5)
 
-/obj/item/clothing/under/rank/lonestar_gorka
-	name = "lonestar gorka jumpsuit"
-	desc = "A gorka suit painted over with Lonestar orange and black."
+/obj/item/clothing/under/rank/Skylight_gorka
+	name = "Skylight gorka jumpsuit"
+	desc = "A gorka suit painted over with Skylight orange and black."
 	icon_state = "ls_gorka"
 	item_state = "ls_gorka"
