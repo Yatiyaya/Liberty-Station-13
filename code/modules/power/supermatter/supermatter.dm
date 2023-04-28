@@ -90,7 +90,7 @@
 
 /obj/machinery/power/supermatter/Initialize()
 	. = ..()
-	radio = new /obj/item/device/radio{channels=list("Engineering")}(src)
+	radio = new /obj/item/device/radio{channels=list("Terra")}(src)
 	assign_uid()
 
 
@@ -157,7 +157,7 @@
 	else
 		alert_msg = null
 	if(alert_msg)
-		radio.autosay(alert_msg, "Supermatter Monitor", "Engineering")
+		radio.autosay(alert_msg, "Supermatter Monitor", "Terra")
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
 			radio.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT!", "Supermatter Monitor")

@@ -143,10 +143,10 @@ var/const/SEC_I_FREQ = 1475
 
 var/list/radiochannels = list(
 	"Common"		= PUB_FREQ,
-	"Science"		= SCI_FREQ,
-	"Command"		= COMM_FREQ,
-	"Medical"		= MED_FREQ,
-	"Engineering"	= ENG_FREQ,
+	"PIRS"			= SCI_FREQ,
+	"Board"			= COMM_FREQ,
+	"CAPSA"			= MED_FREQ,
+	"Terra"			= ENG_FREQ,
 	"Security" 		= SEC_FREQ,
 	"Blackshield"	= BLS_FREQ,
 	"Watch"			= MAR_FREQ,

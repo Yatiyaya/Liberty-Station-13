@@ -269,7 +269,7 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 	name = "Kinetic Energy Scanner"
 	desc = "Scans the level of kinetic energy from explosions. This beacon, is in fact bomb proof and to use it properly you must use the bomb within 10 tiles of this scanner."
 
-	channels = list("Science" = 1)
+	channels = list("PIRS" = 1)
 	var/targetBoom
 	var/stored_points //This is how many points we hve stored, we use them up when successfull
 	var/points_to_use = 0
@@ -312,11 +312,11 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 			points_to_use = calculated_research_points
 
 	if(calculated_research_points > 0 && stored_points)
-		autosay("Detected explosion with power level [power]. Expected explosion was [targetBoom]. Received [calculated_research_points] Research Points", name ,"Science")
+		autosay("Detected explosion with power level [power]. Expected explosion was [targetBoom]. Received [calculated_research_points] Research Points", name ,"PIRS")
 	if(0 >= stored_points)
-		autosay("Detected explosion with power level [power]. Expected explosion was [targetBoom]. No Additional Data Points Able To Gather", name ,"Science")
+		autosay("Detected explosion with power level [power]. Expected explosion was [targetBoom]. No Additional Data Points Able To Gather", name ,"PIRS")
 	if(0 >= calculated_research_points)
-		autosay("Detected explosion with power level [power], Expected explosion was [targetBoom]. Test Results Outside Expected Range", name ,"Science")
+		autosay("Detected explosion with power level [power], Expected explosion was [targetBoom]. Test Results Outside Expected Range", name ,"PIRS")
 	targetBoom = rand(10,35)
 
 /obj/item/device/radio/beacon/explosion_watcher/attackby(obj/item/I, mob/user)

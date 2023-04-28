@@ -102,8 +102,8 @@
 	for(var/obj/machinery/computer/rdconsole/RD in GLOB.computer_list) // Check every RnD computer in existance
 		if(RD.id == 1) // only core gets the science
 			RD.files.research_points += points // Give the points
-			var/obj/item/device/radio/radio = new /obj/item/device/radio{channels=list("Science")}(src) // Create a new radio
-			radio.autosay("Liquid Ameridian Sample analyze completed. Transfering [points] research points to primary console.", src.name, "Science") // Make the radio say a message.
+			var/obj/item/device/radio/radio = new /obj/item/device/radio{channels=list("PIRS")}(src) // Create a new radio
+			radio.autosay("Liquid Ameridian Sample analyze completed. Transfering [points] research points to primary console.", src.name, "PIRS") // Make the radio say a message.
 			spawn(1) qdel(radio)
 			points = 0 // No more points to give
 			break
