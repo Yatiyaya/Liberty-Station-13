@@ -144,13 +144,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/sliceable/tofubread
 
-/datum/recipe/cheesyfries
-	items = list(
-		/obj/item/reagent_containers/food/snacks/fries,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/cheesyfries
-
 /datum/recipe/cubancarp
 	fruit = list("chili" = 1)
 	items = list(
