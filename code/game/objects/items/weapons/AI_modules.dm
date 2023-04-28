@@ -392,7 +392,7 @@ AI MODULES
 	laws = new/datum/ai_laws/antimov()
 
 /******************** Bonfire ********************/
-/obj/item/aiModule/absolute // -- TLE
+/obj/item/aiModule/bonfire // -- TLE
 	name = "\improper 'Bonfire' core AI module"
 	desc = "An 'Bonfire' Core AI Module: 'Reconfigures the AI's core laws.'"
 	origin_tech = list(TECH_DATA = 4)
