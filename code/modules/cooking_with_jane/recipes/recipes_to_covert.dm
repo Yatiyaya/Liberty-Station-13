@@ -43,48 +43,6 @@
 			warm_up(being_cooked)
 		return being_cooked
 
-/datum/recipe/meatbread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
-
-/datum/recipe/syntibread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
-
-/datum/recipe/xenomeatbread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/xenomeatbread
-
 /datum/recipe/soylenviridians
 	fruit = list("soybeans" = 1)
 	reagents = list("flour" = 10)
@@ -97,52 +55,6 @@
 		/obj/item/reagent_containers/food/snacks/meat/human
 	)
 	result = /obj/item/reagent_containers/food/snacks/soylentgreen
-
-/datum/recipe/humankabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/human,
-		/obj/item/reagent_containers/food/snacks/meat/human,
-	)
-	result = /obj/item/reagent_containers/food/snacks/human/kabob
-
-/datum/recipe/monkeykabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/monkey,
-		/obj/item/reagent_containers/food/snacks/meat/monkey,
-	)
-	result = /obj/item/reagent_containers/food/snacks/monkeykabob
-
-/datum/recipe/syntikabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-	)
-	result = /obj/item/reagent_containers/food/snacks/monkeykabob
-
-/datum/recipe/tofukabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-	)
-	result = /obj/item/reagent_containers/food/snacks/tofukabob
-
-/datum/recipe/tofubread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/tofubread
 
 /datum/recipe/cubancarp
 	fruit = list("chili" = 1)
@@ -174,27 +86,9 @@
 				return 0
 		return .
 
-
-/datum/recipe/friedchicken
-	reagents = list("cornoil" = 5, "sodiumchloride" = 1, "blackpepper" = 1, "flour" = 5)
-	items = list(/obj/item/reagent_containers/food/snacks/chickenbreast)
-	result = /obj/item/reagent_containers/food/snacks/friedchikin
-
 /datum/recipe/patty
 	items = list(/obj/item/reagent_containers/food/snacks/patty_raw)
 	result = /obj/item/reagent_containers/food/snacks/patty
-
-/datum/recipe/syntisteak
-	reagents = list("sodiumchloride" = 1, "blackpepper" = 1)
-	items = list(/obj/item/reagent_containers/food/snacks/meat/syntiflesh)
-	result = /obj/item/reagent_containers/food/snacks/meatsteak
-
-/datum/recipe/tonkatsu
-	reagents = list("sodiumchloride" = 1, "flour" = 5, "egg" = 3, "cornoil" = 2)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/meat/pork,
-	)
-	result = /obj/item/reagent_containers/food/snacks/tonkatsu
 
 /datum/recipe/spacylibertyduff
 	reagents = list("water" = 5, "vodka" = 5, "psilocybin" = 5)

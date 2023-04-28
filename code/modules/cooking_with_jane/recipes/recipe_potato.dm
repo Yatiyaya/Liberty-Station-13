@@ -41,7 +41,7 @@
 
 /datum/cooking_with_jane/recipe/fries_cheesy
 	cooking_container = POT
-	product_type = /obj/item/reagent_containers/food/snacks/cheesy_fries
+	product_type = /obj/item/reagent_containers/food/snacks/cheesyfries
 
 	replace_reagents = TRUE
 

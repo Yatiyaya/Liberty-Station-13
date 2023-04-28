@@ -44,48 +44,6 @@
 			warm_up(being_cooked)
 		return being_cooked
 
-/datum/recipe/meatbread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
-
-/datum/recipe/syntibread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
-
-/datum/recipe/xenomeatbread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/meat/xenomeat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/xenomeatbread
-
 /datum/recipe/cinnamonroll
 	reagents = list("cinnamonpowder" = 5, "sugar" = 10, "milk" = 5, "egg" = 3) // We have cinnamon now! Updating this recipe, thank you MikieRPG - Seb
 	items = list(
@@ -129,59 +87,6 @@
 		/obj/item/reagent_containers/food/snacks/dough
 	)
 	result = /obj/item/reagent_containers/food/snacks/donut/chaos
-
-/datum/recipe/humankabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/human,
-		/obj/item/reagent_containers/food/snacks/meat/human,
-	)
-	result = /obj/item/reagent_containers/food/snacks/human/kabob
-
-/datum/recipe/monkeykabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/monkey,
-		/obj/item/reagent_containers/food/snacks/meat/monkey,
-	)
-	result = /obj/item/reagent_containers/food/snacks/monkeykabob
-
-/datum/recipe/syntikabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-	)
-	result = /obj/item/reagent_containers/food/snacks/monkeykabob
-
-/datum/recipe/tofukabob
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-	)
-	result = /obj/item/reagent_containers/food/snacks/tofukabob
-
-/datum/recipe/tofubread
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/tofu,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/tofubread
-
-/datum/recipe/cheesyfries
-	items = list(
-		/obj/item/reagent_containers/food/snacks/fries,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-	)
-	result = /obj/item/reagent_containers/food/snacks/cheesyfries
 
 /datum/recipe/cubancarp
 	fruit = list("chili" = 1)

@@ -8,6 +8,66 @@
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
+/datum/cooking_with_jane/recipe/bread_meat
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
+	recipe_guide = "Put dough in an oven, bake for 30 seconds on medium."
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/bread_synthmeat
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
+	recipe_guide = "Put dough in an oven, bake for 30 seconds on medium."
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/syntiflesh, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/syntiflesh, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/bread_xenomeat
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/sliceable/xenomeatbread
+	recipe_guide = "Put dough in an oven, bake for 30 seconds on medium."
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/xenomeat, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/xenomeat, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/bread_tofu
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/sliceable/tofubread
+	recipe_guide = "Put dough in an oven, bake for 30 seconds on medium."
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+
 /datum/cooking_with_jane/recipe/flatbread
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/flatbread

@@ -211,3 +211,44 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge, qmod=0.5),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)
+
+//Kebob - This is just kebab but americans be americans
+/datum/cooking_with_jane/recipe/kebob
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/monkeykabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/stack/rods),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/monkey, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/monkey, qmod=0.5),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/kebob_synth
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/monkeykabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/stack/rods),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/syntiflesh, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/syntiflesh, qmod=0.5),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/kebob_human
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/human/kabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/stack/rods),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/human, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/human, qmod=0.5),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/kebob_tofu
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/tofukabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/stack/rods),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu, qmod=0.5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu, qmod=0.5),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
