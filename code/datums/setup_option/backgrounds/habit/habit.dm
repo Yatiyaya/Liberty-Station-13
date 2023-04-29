@@ -7,7 +7,6 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR)
 	perks = list(PERK_HERBIVORE)
 
-
 /datum/category_item/setup_option/background/habit/carnivore
 	name = "Red Meat Enjoyer"
 	desc = "Steak, meatball, kebab, sausage, name it and you want it, the taste of meat is insepperable from your pallete.\
@@ -16,7 +15,6 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR)
 	perks = list(PERK_CARNIVORE)
-
 
 /datum/category_item/setup_option/background/habit/chainsmoker
 	name = "Terminal Smoker"
@@ -47,6 +45,16 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 	perks = list(PERK_LINGUIST)
 
+/datum/category_item/setup_option/background/habit/generic
+	name = "Loser Lifestyle"
+	desc = "You are, by all means of the word, an incredibly generic person. You say no to drugs, you don't break laws - hell, it's questionable if you've ever even drank before. \
+	Some may call you a loser, but your abstinance from anything dangerous or possibly divisive has gotten you.. oddly far in life. Sure, you can't socialize for shit - but who care? \
+	You feel that this lifestyle has made you smarter than others. Maybe it has. Or maybe it's just your programming, you NPC. Now get a job, you NEET."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	stat_modifiers = list(STAT_ROB = -5, STAT_COG = 10, STAT_BIO = 5)
+
+/*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
 	name = "Enlightened Scholar"
 	desc = "Due to rigorious studies and self-critique you have learned to master your psionic potential beyond what most can muster. \
@@ -56,3 +64,4 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 	perks = list(PERK_PSI_ATTUNEMENT)
 	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5)
+*/

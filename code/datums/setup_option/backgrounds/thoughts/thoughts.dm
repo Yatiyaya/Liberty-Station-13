@@ -22,7 +22,7 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -5)
+	stat_modifiers = list(STAT_COG = -5, STAT_VIG = -5)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
 	name = "Living Computer"
@@ -90,6 +90,7 @@
 
 	stat_modifiers = list(STAT_VIG = 10, STAT_TGH = -15)
 
+/* - Psionics can't be started with currently. Until Psionics are reworked this will be disabled.
 /datum/category_item/setup_option/background/thoughts/inland_empire
 	name = "Empire of Nothingness"
 	desc = "You achieved what most couldn't, true peace of mind with no stress or violence hampering such state for a very long time. \
@@ -104,6 +105,7 @@
 
 	stat_modifiers = list(STAT_COG = 10)
 
+
 /datum/category_item/setup_option/background/thoughts/half_light
 	name = "Dead Man's Hand"
 	desc = "There is no peace to be found for you, entire lifetime of chaos and destruction scarred your brain beyond recognition. \
@@ -117,3 +119,4 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_ROB = 10)
+*/
