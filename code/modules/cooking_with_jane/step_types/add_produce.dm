@@ -36,7 +36,7 @@
 		base_potency = seed.get_trait(TRAIT_POTENCY)
 	else
 		CRASH("/datum/cooking_with_jane/recipe_step/add_produce/New: Seed [produce] not found. Exiting.")
-	..(base_quality_award, our_recipe)
+	..(our_recipe)
 
 /datum/cooking_with_jane/recipe_step/add_produce/check_conditions_met(var/obj/added_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
 	#ifdef CWJ_DEBUG
@@ -52,14 +52,6 @@
 		return CWJ_CHECK_VALID
 
 	return CWJ_CHECK_INVALID
-
-/datum/cooking_with_jane/recipe_step/add_produce/calculate_quality(var/obj/added_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
-
-	var/obj/item/reagent_containers/food/snacks/grown/added_produce = added_item
-
-	var/potency_raw = round(base_quality_award + (added_produce.potency - base_potency) * inherited_quality_modifier)
-
-	return clamp_quality(potency_raw)
 
 /datum/cooking_with_jane/recipe_step/add_produce/follow_step(var/obj/added_item, var/datum/cooking_with_jane/recipe_tracker/tracker)
 	#ifdef CWJ_DEBUG

@@ -16,10 +16,6 @@
 
 	var/list/optional_step_list = list() //List of optional steps that can be followed from this point forward.
 
-	var/max_quality_award = 0 //The maximum quality awarded by following a given step to the letter.
-
-	var/base_quality_award = 0
-
 	var/flags = 0
 
 
@@ -80,16 +76,6 @@
 
 	//We didn't find anything. Return False.
 	return FALSE
-
-//Automatically clamps food based on their maximum and minimum quality, if they are set.
-/datum/cooking_with_jane/recipe_step/proc/clamp_quality(var/raw_quality)
-	if((flags & CWJ_BASE_QUALITY_ENABLED) && (flags & CWJ_MAX_QUALITY_ENABLED))
-		return CLAMP(raw_quality, base_quality_award, max_quality_award)
-	if(flags & CWJ_BASE_QUALITY_ENABLED)
-		return max(raw_quality, base_quality_award)
-	if(flags & CWJ_MAX_QUALITY_ENABLED)
-		return min(raw_quality, max_quality_award)
-	return raw_quality
 
 /datum/cooking_with_jane/recipe_step/proc/get_step_result_text(var/obj/used_obj, step_quality)
 	if(custom_result_desc)
