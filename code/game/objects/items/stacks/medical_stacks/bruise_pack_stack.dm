@@ -147,7 +147,7 @@
 	name = "large advanced trauma kit"
 	singular_name = "large advanced trauma kit"
 	icon = 'icons/obj/stack/medical_big.dmi'
-	list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 6)
+	matter = list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 6)
 	amount = 10
 	max_amount = 10
 	charge_sections = 10
