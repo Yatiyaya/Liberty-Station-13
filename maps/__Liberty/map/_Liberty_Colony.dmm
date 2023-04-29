@@ -9508,9 +9508,9 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "cFs" = (
 /obj/machinery/atmospherics/omni/filter{
-	tag_east = 2;
 	tag_north = 1;
-	tag_west = 5
+	tag_west = 5;
+	tag_south = 2
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark/techfloor,
