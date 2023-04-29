@@ -4242,7 +4242,6 @@
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "pz" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "pA" = (
@@ -4301,7 +4300,6 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "pJ" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -4609,7 +4607,6 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "qM" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/liquid_fuel/flamethrower_fuel,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)

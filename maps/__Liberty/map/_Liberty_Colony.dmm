@@ -12583,7 +12583,6 @@
 /turf/simulated/floor/rock,
 /area/liberty/dungeon/outside/campground)
 "dpF" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/bcave)
 "dpQ" = (
@@ -21557,7 +21556,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "fUn" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/dcave)
 "fUo" = (
@@ -61208,7 +61206,6 @@
 /area/liberty/command/meeting_room)
 "rco" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/maintenance/undergroundfloor1east)
 "rcp" = (
@@ -62561,7 +62558,6 @@
 /area/liberty/security/maingate)
 "rwX" = (
 /obj/structure/boulder,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/bcave)
 "rxa" = (
@@ -85313,7 +85309,6 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "xQk" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor1north)

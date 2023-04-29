@@ -44,7 +44,6 @@
 			/obj/structure/scrap/vehicle = custom_good_amount_range(list(2,5)),
 			/obj/structure/scrap/vehicle/large = custom_good_amount_range(list(2,5)),
 			/obj/structure/scrap/food = custom_good_amount_range(list(2,5)),
-			/obj/structure/scrap/food/large = custom_good_amount_range(list(2,5)),
 			/obj/structure/scrap/guns = custom_good_amount_range(list(2,5)),
 			/obj/structure/scrap/guns/large = custom_good_amount_range(list(2,5)),
 			/obj/structure/scrap/science = custom_good_amount_range(list(2,5)),

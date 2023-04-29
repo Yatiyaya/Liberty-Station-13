@@ -1315,7 +1315,6 @@
 #include "code\game\objects\landmarks\storyevent.dm"
 #include "code\game\objects\random\ameridian.dm"
 #include "code\game\objects\random\ammo.dm"
-#include "code\game\objects\random\booze.dm"
 #include "code\game\objects\random\boxes.dm"
 #include "code\game\objects\random\cigarettes.dm"
 #include "code\game\objects\random\circuitboards.dm"

@@ -96089,7 +96089,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/side/f2section1)
 "sJr" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/dcave)
 "sJt" = (
@@ -98994,7 +98993,6 @@
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/command/courtroom)
 "tnw" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/fnest)
 "tnx" = (
@@ -99083,7 +99081,6 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "tot" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/bcave)
 "tou" = (

@@ -194,7 +194,6 @@
 /turf/simulated/floor/tiled/cafe,
 /area/deepmaint)
 "bd" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "be" = (
@@ -269,7 +268,6 @@
 /turf/simulated/floor/tiled/cafe,
 /area/deepmaint)
 "bE" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/steel,
 /area/deepmaint)
 "bF" = (

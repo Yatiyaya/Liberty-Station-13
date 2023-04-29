@@ -777,7 +777,6 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "rX" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "sb" = (

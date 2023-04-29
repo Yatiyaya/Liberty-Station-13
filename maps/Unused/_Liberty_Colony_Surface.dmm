@@ -15459,7 +15459,6 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/engineering/atmos/surface)
 "kpy" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/dcave)
 "kpE" = (
@@ -23362,7 +23361,6 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/crew_quarters/hydroponics/garden)
 "sfP" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/bcave)
 "sfU" = (
@@ -27405,7 +27403,6 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/farm)
 "weG" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/fnest)
 "weQ" = (

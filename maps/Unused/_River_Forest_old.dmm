@@ -155,8 +155,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/forest/river_forest_underground)
 "aK" = (
-/obj/structure/scrap/food/large,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "aP" = (
@@ -701,7 +699,6 @@
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "lL" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
 "lN" = (
@@ -1194,7 +1191,6 @@
 /turf/simulated/floor/beach/sand/drywater,
 /area/liberty/outside/forest/river_forest_light)
 "rD" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_dark)
 "rK" = (
@@ -1434,7 +1430,6 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_dark)
 "ub" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/alt,
 /area/liberty/outside/forest/river_forest_dark)
 "uc" = (
@@ -1466,7 +1461,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "us" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
 "uu" = (
@@ -1805,7 +1799,6 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
 "xX" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "xZ" = (
@@ -1818,7 +1811,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "yc" = (
 /obj/structure/flora/small/trailrocka2,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "yd" = (
@@ -2244,7 +2236,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "Ch" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/alt,
 /area/liberty/outside/forest/river_forest_dark)
 "Ck" = (
@@ -2596,7 +2587,6 @@
 /area/liberty/outside/forest/river_forest_underground)
 "Gr" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "Gs" = (
@@ -3737,7 +3727,6 @@
 /area/liberty/outside/forest/river_forest_dark)
 "UE" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_dark)
 "UF" = (
@@ -3791,7 +3780,6 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/outside/forest/river_forest_light)
 "Va" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_dark)
 "Vb" = (
@@ -3899,7 +3887,6 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/river_forest_dark)
 "Wm" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "Wn" = (
