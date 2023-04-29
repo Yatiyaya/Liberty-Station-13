@@ -124,8 +124,11 @@
 	designs = list(
 		/datum/design/research/item/medical/gauze,
 		/datum/design/research/item/medical/adv_gauze,
+		/datum/design/research/item/medical/atk,
 		/datum/design/research/item/medical/ointment,
 		/datum/design/research/item/medical/adv_ointment,
+		/datum/design/research/item/medical/abk,
+		/datum/design/research/item/medical/splints,
 		/datum/design/research/item/medical/bonegel,
 	)
 
