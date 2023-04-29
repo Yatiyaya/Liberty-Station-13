@@ -14,7 +14,7 @@
 /obj/random/rations/low_chance
 	name = "low chance preserved rations"
 	icon_state = "food-green-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 95
 
 /obj/random/junkfood
 	name = "random junkfood"
@@ -36,7 +36,7 @@
 /obj/random/junkfood/low_chance
 	name = "low chance junkfood"
 	icon_state = "food-red-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 95
 
 /obj/random/junkfood/onlypizza
 	name = "random pizza"
@@ -81,16 +81,19 @@
 	icon_state = "food-red-low"
 	spawn_nothing_percentage = 60
 
-/obj/random/junkfood/rotten/post_spawn(list/spawns)
-	for(var/obj/item/reagent_containers/food in spawns)
+/obj/spawner/junkfood/rotten/post_spawn(list/spawns)
+	for(var/obj/item/weapon/reagent_containers/food in spawns)
 		if(!food.reagents)
 			return
-		if(prob(80))
-			food.reagents.add_reagent("toxin", 25)
-		if(prob(30)) // So sometimes the rot is visible.
+		var/list/random_reagent_list = list(
+			list("mold" = 20) = 5
+			list("toxin" = 20) = 10
+		var/list/picked_reagents = pickweight(random_reagent_list)
+		for(var/reagent in picked_reagents)
+			reagents.add_reagent(reagent, picked_reagents[reagent])
+		if(prob(50)) // So sometimes the rot is visible.
 			food.make_old()
 	return spawns
-
 
 /obj/random/rations/crayon
 	name = "random crayon rations"
