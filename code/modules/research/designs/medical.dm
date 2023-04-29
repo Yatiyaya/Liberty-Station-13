@@ -210,15 +210,15 @@
 	name = "CAPSA medical gauze"
 	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would."
 	build_path = /obj/item/stack/medical/bruise_pack/capsa
-	materials = list(MATERIAL_CLOTH = 4, MATERIAL_BIOMATTER = 4)
+	materials = list(MATERIAL_CLOTH = 8, MATERIAL_BIOMATTER = 6)
 	chemicals = list("bicaridine" = 5, "quickclot" = 5, "sterilizine" = 5)
 
 /datum/design/research/item/medical/atk
 	name = "Advanced trauma kit"
 	desc = "An advanced trauma kit for severe injuries."
 	build_path = /obj/item/stack/medical/bruise_pack/advanced
-	materials = list(MATERIAL_CLOTH = 6, MATERIAL_BIOMATTER = 6)
-	chemicals = list("bicaridine" = 10, "quickclot" = 10, "sterilizine" = 10)
+	materials = list(MATERIAL_CLOTH = 5, MATERIAL_BIOMATTER = 3)
+	chemicals = list("quickclot" = 5, "sterilizine" = 5)
 
 /datum/design/research/item/medical/ointment
 	name = "Ointment"
@@ -231,15 +231,15 @@
 	name = "CAPSA branded ointment"
 	desc = "Used to treat those nasty burns. Unlike regular ointments this one has a CAPSA logo on it, its formula massively improved by including toxin-purging sterilizing crystals."
 	build_path = /obj/item/stack/medical/ointment/capsa
-	materials = list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 4)
+	materials = list(MATERIAL_PLASTIC = 8, MATERIAL_BIOMATTER = 6)
 	chemicals = list("kelotane" = 5, "dermaline" = 5, "sterilizine" = 5)
 
 /datum/design/research/item/medical/abk
 	name = "Advanced burn kit"
 	desc = "An advanced treatment kit for severe burns."
 	build_path = /obj/item/stack/medical/ointment/advanced
-	materials = list(MATERIAL_PLASTIC = 6, MATERIAL_BIOMATTER = 6)
-	chemicals = list("kelotane" = 10 , "dermaline" = 10, "sterilizine" = 10)
+	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 3)
+	chemicals = list("dermaline" = 5, "sterilizine" = 5)
 
 /datum/design/research/item/medical/nanopaste
 	name = "Nanopaste"
