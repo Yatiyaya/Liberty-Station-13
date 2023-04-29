@@ -72,6 +72,8 @@
 
 #define REAGENTS_SPIDER list(/datum/reagent/toxin/pararein, /datum/reagent/toxin/aranecolmin)
 
+#define REAGENTS_TRASHFOOD list(/datum/reagent/toxin, /datum/reagent/toxin/mold)
+
 #define REAGENTS_METAL list(/datum/reagent/metal/aluminum, /datum/reagent/metal/copper, /datum/reagent/metal/iron, /datum/reagent/metal/lithium,\
 							/datum/reagent/metal/mercury, /datum/reagent/metal/potassium, /datum/reagent/metal/radium, /datum/reagent/metal/sodium,\
 							/datum/reagent/metal/tungsten)

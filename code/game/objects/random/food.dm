@@ -85,12 +85,12 @@
 	for(var/obj/item/reagent_containers/food in spawns)
 		if(!food.reagents)
 			return
-		var/list/random_reagent_list = list(
+		var/list/random_food_reagent_list = list(
 			list("mold" = 20) = 2,
 			list("toxin" = 20) = 1)
-		var/list/picked_reagents = pickweight(random_reagent_list)
-		for(var/reagent in picked_reagents)
-			reagents.add_reagent(reagent, picked_reagents[reagent])
+		var/list/picked_food_reagents = pickweight(random_food_reagent_list)
+		for(var/reagent in picked_food_reagents)
+			reagents.add_reagent(reagent, picked_food_reagents[reagent])
 		if(prob(50)) // So sometimes the rot is visible.
 			food.make_old()
 	return spawns
@@ -153,26 +153,6 @@
 	name = "low chance random booze"
 	icon_state = "cannister-red-low"
 	spawn_nothing_percentage = 90
-
-/obj/random/booze/rotten/low_chance
-	name = "low chance spoiled booze"
-	icon_state = "cannister-red-low"
-	spawn_nothing_percentage = 60
-	has_postspawn = TRUE
-
-/obj/random/booze/rotten/post_spawn(list/spawns)
-	for(var/obj/item/reagent_containers/food in spawns)
-		if(!food.reagents)
-			return
-		var/list/random_reagent_list = list(
-			list("mold" = 20) = 2,
-			list("toxin" = 20) = 1)
-		var/list/picked_reagents = pickweight(random_reagent_list)
-		for(var/reagent in picked_reagents)
-			reagents.add_reagent(reagent, picked_reagents[reagent])
-		if(prob(50)) // So sometimes the rot is visible.
-			food.make_old()
-	return spawns
 
 /obj/random/soda
 	name = "random soda"
