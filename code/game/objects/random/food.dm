@@ -85,12 +85,9 @@
 	for(var/obj/item/reagent_containers/food in spawns)
 		if(!food.reagents)
 			return
-		var/list/random_food_reagent_list = list(
-			list("mold" = 20) = 2,
-			list("toxin" = 20) = 1)
-		var/list/picked_food_reagents = pickweight(random_food_reagent_list)
-		for(var/reagent in picked_food_reagents)
-			reagents.add_reagent(reagent, picked_food_reagents[reagent])
+		if(food.reagents)
+			food.reagents.add_reagent("toxin", 15)
+			food.reagents.add_reagent("mold", 15)
 		if(prob(50)) // So sometimes the rot is visible.
 			food.make_old()
 	return spawns
