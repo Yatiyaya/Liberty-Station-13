@@ -386,9 +386,9 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/junkfood/rotten/low_chance = 3,
 		/obj/random/junkfood/rotten/low_chance = 3,
 		/obj/random/soda/low_chance = 1,
-		/obj/random/booze/rotten/low_chance = 0.5
+		/obj/random/booze/rotten/low_chance = 0.5,
 		/obj/random/cigarettes = 0.3,
-		/obj/random/pack/rare = 0.1,
+		/obj/random/pack/rare = 0.1
 	)
 
 /obj/structure/scrap/guns
