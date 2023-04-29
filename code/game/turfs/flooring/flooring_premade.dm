@@ -799,3 +799,102 @@
 		for(var/mob/living/carbon/human/H in src)
 			if(!H.wear_mask && (H.stat == CONSCIOUS))
 				H.emote("cough")
+
+//industeral
+
+/turf/simulated/floor/industeral
+	name = "concrate slab"
+	icon = 'icons/turf/flooring/tiles_industeral.dmi'
+	icon_state = "concrete_small"
+	initial_flooring = /decl/flooring/industeral/concrate_small
+
+/turf/simulated/floor/industeral/concrete_bricks
+	name = "concrate bricks"
+	icon_state = "concrete_bricks"
+	initial_flooring = /decl/flooring/industeral/concrete_bricks
+
+/turf/simulated/floor/industeral/bricks
+	name = "bricks"
+	icon_state = "brick"
+	initial_flooring = /decl/flooring/industeral/bricks
+
+/turf/simulated/floor/industeral/ornate
+	name = "ornate"
+	icon_state = "ornate"
+	initial_flooring = /decl/flooring/industeral/ornate
+
+/turf/simulated/floor/industeral/sierra
+	name = "ornate"
+	icon_state = "sierra"
+	initial_flooring = /decl/flooring/industeral/sierra
+
+/turf/simulated/floor/industeral/ceramic
+	name = "ceramic"
+	icon_state = "ceramic"
+	initial_flooring = /decl/flooring/industeral/ceramic
+
+/turf/simulated/floor/industeral/grey_slates_long
+	name = "grey slates"
+	icon_state = "grey_long"
+	initial_flooring = /decl/flooring/industeral/grey_slates_long
+
+/turf/simulated/floor/industeral/blue_slates_long
+	name = "blue slates"
+	icon_state = "blue_long"
+	initial_flooring = /decl/flooring/industeral/blue_slates_long
+
+/turf/simulated/floor/industeral/brown_slates_long
+	name = "brown slates"
+	icon_state = "brown_long"
+	initial_flooring = /decl/flooring/industeral/blue_slates_long
+
+/turf/simulated/floor/industeral/grey_slates
+	name = "grey slates"
+	icon_state = "grey"
+	initial_flooring = /decl/flooring/industeral/grey_slates
+
+/turf/simulated/floor/industeral/blue_slates
+	name = "blue slates"
+	icon_state = "blue"
+	initial_flooring = /decl/flooring/industeral/blue_slates
+
+/turf/simulated/floor/industeral/navy_slates
+	name = "navy slates"
+	icon_state = "navy"
+	initial_flooring = /decl/flooring/industeral/navy_slates
+
+/turf/simulated/floor/industeral/fancy_slates
+	name = "disk slates"
+	icon_state = "fancy"
+	initial_flooring = /decl/flooring/industeral/fancy_slates
+
+/turf/simulated/floor/industeral/navy_large_slates
+	name = "large navy slates"
+	icon_state = "navy_large"
+	initial_flooring = /decl/flooring/industeral/navy_large_slates
+
+/turf/simulated/floor/industeral/black_large_slates
+	name = "large black slates"
+	icon_state = "black_large"
+	initial_flooring = /decl/flooring/industeral/black_large_slates
+
+/turf/simulated/floor/industeral/green_large_slates
+	name = "large green slates"
+	icon_state = "black_large"
+	initial_flooring = /decl/flooring/industeral/green_large_slates
+
+/turf/simulated/floor/industeral/white_large_slates
+	name = "large white slates"
+	icon_state = "white_large"
+	initial_flooring = /decl/flooring/industeral/white_large_slates
+
+/turf/simulated/floor/industeral/checker_large
+	name = "large white and black slates"
+	icon_state = "checker_large"
+	initial_flooring = /decl/flooring/industeral/checker_large
+
+/turf/simulated/floor/industeral/cafe_large
+	name = "large white and red slates"
+	icon_state = "cafe_large"
+	initial_flooring = /decl/flooring/industeral/cafe_large
+
