@@ -404,7 +404,7 @@
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#ffb3b7"
-	overdose = REAGENTS_OVERDOSE - 20
+	overdose = REAGENTS_OVERDOSE / 2 // 15u
 	nerve_system_accumulations = 70
 	addiction_chance = 50
 
@@ -450,7 +450,7 @@
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#ffb3b7"
-	overdose = REAGENTS_OVERDOSE - 18
+	overdose = REAGENTS_OVERDOSE / 2 // 15u
 	nerve_system_accumulations = 70
 	addiction_chance = 90
 
@@ -575,7 +575,7 @@
 /datum/reagent/stim/reviver
 	name = "Adenosine+"
 	id = "reviver"
-	description = "A PI branded mix of chemicals that are designed to only to work on a dead body to jumpstart the processes so that it lives once more,\
+	description = "A CAPSA brand mix of chemicals that are designed to only to work on a dead body to jumpstart the processes so that it lives once more,\
 	 only works if a body has died and its admistred within one minute. For some reason only works on high-intelligent beings."
 	taste_description = "sponge cake"
 	reagent_state = LIQUID
@@ -655,3 +655,62 @@
 	if(prob(5 - (3 * M.stats.getMult(STAT_TGH))))
 		M.Stun(rand(1,5))
 	M.bodytemperature += TEMPERATURE_DAMAGE_COEFFICIENT
+
+/datum/reagent/stim/chronos
+	name = "Chronos"
+	id = "chronos"
+	description = "A highly sought-after combat stimulant developed by CAPSA for military applications, \
+				   it relaxes the users' muscles and nerves, making them move faster than ever, \
+				   yet it causes hallucinations on its user on prolonged use. Its overdose is extremely fatal to the brain."
+	taste_description = "the concept of time itself in liquid form"
+	reagent_state = LIQUID
+	color = "#6797cc"
+	metabolism = REM * 0.2
+	overdose = REAGENTS_OVERDOSE * 0.54 // 16 units
+	withdrawal_threshold = 12
+	nerve_system_accumulations = 60
+
+/datum/reagent/stim/chronos/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(prob(5))
+			H.hallucination(10, 25) // Short, standard hallucinations.
+			H.sanity.changeLevel(-0.5) // It will slowly erode your sanity the more it spends on your system.
+		H.add_chemical_effect(CE_SPEEDBOOST, 0.5)
+		H.add_chemical_effect(CE_PULSE, 2)
+
+	// Minuscule muscle healing handling
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/muscle/G = H.random_organ_by_process(OP_MUSCLE)
+		if(H && istype(H))
+			if(BP_IS_ROBOTIC(G))
+				return
+			if(G.damage > 0)
+				G.damage = max(G.damage - 0.5, 0)
+			if(H.health <= 50)
+				H.heal_organ_damage(-0.1, -0.1)
+
+/datum/reagent/stim/chronos/overdose(mob/living/carbon/M, alien)
+// Your nerves get fried, lowering your NSA
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/nerve/N = H.random_organ_by_process(OP_NERVE)
+		if(istype(N) && !BP_IS_ROBOTIC(N))
+			N.take_damage(3, 0)
+// And then you suffer.
+		H.adjustBrainLoss(5)
+		H.sanity.breakdown(TRUE)
+		H.make_jittery(5)
+		H.hallucination(120, 50)
+
+// You're more effective with it. Consume more. More. You need it.
+/datum/reagent/stim/chronos/withdrawal_act(mob/living/carbon/M)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(prob(5))
+			M.make_jittery(3)
+		H.sanity.breakdown(TRUE)
+		H.hallucination(60, 40)
+		H.add_chemical_effect(CE_PULSE, 1)
+

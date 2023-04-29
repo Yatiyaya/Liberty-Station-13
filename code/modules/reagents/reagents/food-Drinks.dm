@@ -586,7 +586,7 @@
 		if(istype(L) && !BP_IS_ROBOTIC(L))
 			L.take_damage(3, 0)
 		if(istype(C) && !BP_IS_ROBOTIC(C))
-			L.take_damage(3, 0)
+			C.take_damage(3, 0)
 
 /datum/reagent/drink/energy_drink_baton
 	name = "Baton Energy Drink"
@@ -607,7 +607,7 @@
 		if(istype(L) && !BP_IS_ROBOTIC(L))
 			L.take_damage(3, 0)
 		if(istype(C) && !BP_IS_ROBOTIC(C))
-			L.take_damage(3, 0)
+			C.take_damage(3, 0)
 
 // Juices
 

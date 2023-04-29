@@ -13,7 +13,7 @@
 //Syretties, the samll 5u refillable injectors
 #define SYRETTE_SPRITES list("syrette", "syrette_red", "syrette_orange", \
 "syrette_yellow", "syrette_green", "syrette_cyan", "syrette_blue", "syrette_magenta", \
-"syrette_spacealine", "syrette_hyperzine", "syrette_fun", "syrette_fun1", "syrette_antitox", \
+"syrette_spacealine", "syrette_chronos", "syrette_fun", "syrette_fun1", "syrette_antitox", \
 "syrette_inopravoline", "syrette_dexalinplus", "syrette_tricord", "syrette_quickclot") //list of available syrette sprites
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -410,7 +410,7 @@
 		"dexalin","dexalinp","tricordrazine",
 		"anti_toxin","synaptizine","hyronalin",
 		"arithrazine","alkysine","imidazoline",
-		"peridaxon","bicaridine","meralyne","hyperzine",
+		"peridaxon","bicaridine","meralyne","chronos",
 		"rezadone","spaceacillin","ethylredoxrazine",
 		"stoxin","chloralhydrate","cryoxadone",
 		"cronexidone","ossisine","noexcutite","kyphotorin",

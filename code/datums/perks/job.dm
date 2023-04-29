@@ -47,9 +47,9 @@
 	holder.sanity.insight_rest_gain_multiplier += old_insight_rest_gain_multiplier
 	..()
 
-/datum/perk/job/timeismoney//Not used anyway so no icon / will once we start using it tho
-	name = "Hyperzine Injections"
-	desc = "A standard issue injector hidden away that is designed for Chief Executive Officers that contains a small on-demand injection of Hyperzine. The injector itself is unable to be seen by prying scanners and comes in both \
+/datum/perk/job/timeismoney // TODO: A perk that doesn't involve a free Chronos injection, specially for the Skylight CEO equivalent.
+	name = "Chronos Injection"
+	desc = "A standard issue injector hidden away that is designed for Chief Executive Officers that contains a small on-demand injection of Chronos. The injector itself is unable to be seen by prying scanners and comes in both \
 	metal and organic material designs to aid in remaining hidden. While useful, the chemical storage takes time to recharge after use."
 	active = FALSE
 	passivePerk = FALSE
@@ -64,7 +64,7 @@
 	cooldown_time = world.time + 15 MINUTES
 	user.visible_message("[user] begins twitching and breathing much quicker!", "You feel your heart rate increasing rapidly as everything seems to speed up!", "You hear someone breathing rapidly...")
 	log_and_message_admins("used their [src] perk.")
-	user.reagents.add_reagent("hyperzine", 5)
+	user.reagents.add_reagent("chronos", 5)
 	return ..()
 
 /datum/perk/job/sanityboost

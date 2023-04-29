@@ -47,28 +47,28 @@
 #define IS_CINDERITE 8
 #define IS_OPIFEX 9
 
-#define CE_STABLE			"stable" // Inaprovaline
-#define CE_ANTIBIOTIC		"antibiotic" // Spaceacilin
-#define CE_BLOODRESTORE		"bloodrestore" // Iron/nutriment
-#define CE_PAINKILLER		"painkiller"
+#define CE_STABLE			"stable" // Stabilizes the body in many things, preventing death in many scenarios
+#define CE_ANTIBIOTIC		"antibiotic" // Halts the stages of infection and decreases germ count, eventually eliminating infections
+#define CE_BLOODRESTORE		"bloodrestore" // Enhanced blood restoration over time
+#define CE_PAINKILLER		"painkiller" // The higher the value, the more damage you can sustain without slowdown or stuttering penalties.
 #define CE_ALCOHOL			"alcohol" // Liver filtering
 #define CE_ALCOHOL_TOXIC	"alcotoxic" // Liver damage
 #define CE_SPEEDBOOST 		"gofast" // Makes you go faster
 #define CE_SLOWDOWN 		"goslower" // Makes you go slower
-#define CE_PULSE      		"xcardic" // increases or decreases heart rate
-#define CE_NOPULSE    		"heartstop" // stops heartbeat
+#define CE_PULSE      		"xcardic" // Increases or decreases heart rate. Additive with PULSE_ definitions on mobs.dm defines.
+#define CE_NOPULSE    		"heartstop" // Stops heartbeat, fake death or otherwise.
 #define CE_MIND    		 	"mindbending"  // Stabilizes or wrecks mind. Used for hallucinations
-#define CE_ANTITOX       	"antitox"      // Dylovene
+#define CE_ANTITOX       	"antitox"      // Used for treating wounds of toxic nature and halting the side effects of certain toxins
 #define CE_TOXIN         	"toxins"       // Generic toxins, stops autoheal.
-#define CE_SPEECH_VOLUME	"speach_volume"    // speech volume multiplier , default volume is integer and equals 2
+#define CE_SPEECH_VOLUME	"speech_volume"    // speech volume multiplier , default volume is integer and equals 2
 #define CE_BLOODCLOT		"bloodclot"	// Promote healing but thickens blood, slows and stops bleeding (range 0 - 1)
-#define CE_OXYGENATED		"oxygen"       // Dexalin.
-#define CE_PURGER			"purger"	//Purger
+#define CE_OXYGENATED		"oxygen"       // Prevents suffocation damage by certain critical conditions
+#define CE_PURGER			"purger"	// Stops addictions from progressing, temporarily purging them, also treats severe poisoning
 #define CE_NOWITHDRAW		"no_withdrawal"
 #define CE_VOICEMIMIC		"voice_mimic"
-#define CE_DYNAMICFINGERS	"dynfingers"
-#define CE_BONE_MEND		"bone mending"   	// Ossisine
-#define CE_ONCOCIDAL        "anticancer"
+#define CE_DYNAMICFINGERS	"dynfingers" // Hides your fingerprints
+#define CE_BONE_MEND		"bone mending"   	// Helps with restoring certain bone wounds
+#define CE_ONCOCIDAL        "anticancer" // Helps fight radiation-induced internal wounds
 #define CE_DARKSIGHT 		"darksight"	//Vision methods built into a mob.
 
 // Chem effects for robotic/assisted organs

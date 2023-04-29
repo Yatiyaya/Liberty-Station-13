@@ -183,7 +183,7 @@
 	nutriment_amt = 3
 	trash = /obj/item/trash/snack_bowl
 	bitesize = 5
-	preloaded_reagents = list("protein" = 12, "capsaicin" = 3, "hyperzine" = 5) // Inherits from bear meat
+	preloaded_reagents = list("protein" = 12, "capsaicin" = 3, "chronos" = 5) // Inherits from bear meat
 
 /obj/item/reagent_containers/food/snacks/tomatosoup
 	name = "tomato soup"
