@@ -2847,7 +2847,6 @@
 #include "code\modules\projectiles\guns\energy\plasma\hydrogen.dm"
 #include "code\modules\projectiles\guns\energy\plasma\plasma.dm"
 #include "code\modules\projectiles\guns\energy\plasma\variant.dm"
-#include "code\modules\projectiles\guns\energy\plasma\welder.dm"
 #include "code\modules\projectiles\guns\energy\projectile\crossbow.dm"
 #include "code\modules\projectiles\guns\energy\projectile\railgun.dm"
 #include "code\modules\projectiles\guns\energy\projectile\slab.dm"

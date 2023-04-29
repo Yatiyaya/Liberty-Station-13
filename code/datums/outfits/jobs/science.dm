@@ -16,7 +16,6 @@
 	l_ear = /obj/item/device/radio/headset/heads/rp
 	shoes = /obj/item/clothing/shoes/reinforced
 	uniform = /obj/item/clothing/under/rank/expedition_overseer
-	belt = /obj/item/storage/belt/utility/roboticist
 	l_hand = /obj/item/clipboard
 	id_type = /obj/item/card/id/rd
 	pda_type = /obj/item/modular_computer/pda/heads/rd
@@ -32,11 +31,9 @@
 	name = OUTFIT_JOB_NAME("PIRS - Roboticist")
 	uniform = /obj/item/clothing/under/rank/roboticist
 	suit = /obj/item/clothing/suit/storage/rank/robotech_jacket
-	belt = /obj/item/storage/belt/utility/roboticist
 	pda_slot = slot_r_store
 	id_type = /obj/item/card/id/dkgrey
 	pda_type = /obj/item/modular_computer/pda/science/roboticist
-	backpack_contents = list(/obj/item/hydrogen_fuel_cell = 1)
 	l_pocket = /obj/item/device/robotanalyzer
 
 /decl/hierarchy/outfit/job/science/roboticist/New()
