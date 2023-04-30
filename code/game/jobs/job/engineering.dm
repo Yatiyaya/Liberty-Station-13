@@ -171,7 +171,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
 
-
+/* maybe they'll want it back in, idk
 /datum/job/janitor
 	title = "Sanitation Technician"
 	flag = JANITOR
@@ -214,3 +214,4 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	name = "Sanitation Technician"
 	icon_state = "player-black"
 	join_tag = /datum/job/janitor
+*/

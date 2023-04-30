@@ -53,9 +53,11 @@
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/void/mining
 
+/* maybe they'll change it back, idk
 /decl/hierarchy/outfit/job/engineering/janitor
 	name = OUTFIT_JOB_NAME("Terra-Therma - Janitor")
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/galoshes
 	suit = /obj/item/clothing/suit/armor/vest/handmade
 	belt = /obj/item/keys/janitor
+*/
