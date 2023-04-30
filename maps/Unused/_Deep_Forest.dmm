@@ -1957,7 +1957,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/outside/one_star)
 "cpK" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "cpP" = (

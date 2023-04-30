@@ -79,7 +79,7 @@
 			filling.color = reagents.get_color()
 			add_overlay(filling)
 
-// for /obj/machinery/vending/sovietsoda
+// for /obj/machinery/vending/citadel
 /obj/item/reagent_containers/food/drinks/drinkingglass/soda
 	preloaded_reagents = list("sodawater" = 50)
 

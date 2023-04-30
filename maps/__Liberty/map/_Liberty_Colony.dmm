@@ -24637,7 +24637,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "gIo" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor1north)
 "gIq" = (
@@ -33175,7 +33175,6 @@
 /turf/simulated/floor/industrial/white_large_slates,
 /area/liberty/maintenance/undergroundfloor1east)
 "jat" = (
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor1east)
 "jaD" = (
@@ -33594,7 +33593,7 @@
 	},
 /area/liberty/command/tcommsat/computer)
 "jfl" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/maintenance/undergroundfloor1east)
 "jfm" = (
@@ -50936,7 +50935,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/cryo)
 "oaG" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/hallway/side/f2section1)
 "oaN" = (
@@ -82723,7 +82722,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/security/maingate)
 "wGv" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -84169,7 +84168,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/colony)
 "xbC" = (
-/obj/machinery/vending/kink,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
@@ -88306,7 +88304,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "ygT" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/machinery/light/small{
 	dir = 8
 	},

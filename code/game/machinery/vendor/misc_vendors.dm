@@ -1,7 +1,6 @@
 
-
 /obj/machinery/vending/cigarette
-	name = "Smooth Cigarettes" //OCD had to be uppercase to look nice with the new formating
+	name = "Cuba Libre Smooth Cigarettes Vendor" //OCD had to be uppercase to look nice with the new formating
 	desc = "If you want to get cancer, might as well do it in style!"
 	product_slogans = "Brand name cigarettes taste good like a cigarette should.;Don't believe the reports - smoke today!;Almost no negative side effects;Addiction? Better get it in style!;A brand for every man!;Don't stop smoking now, You'll get fat!"
 	product_ads = "Probably not bad for you!;Don't believe the scientists!;It's good for you!;Don't quit, buy more!;Smoke!;Nicotine heaven.;Best cigarettes since 2150.;Award-winning cigs.;Cigars avalible for premium customers.;Best taste in space!"
@@ -117,7 +116,7 @@
 	return
 
 /obj/machinery/vending/gamers
-	name = "Game Emporium"
+	name = "Game Emporium Vendor"
 	desc = "A one stop shop for all your card or board game needs!"
 	icon_state = "nutrimat"
 	icon_vend = "nutrimat-vend"
@@ -205,7 +204,7 @@
 					/obj/item/clothing/under/dodgeball_red = 15)
 
 /obj/machinery/vending/gamers/hunters
-	name = "Pre-Payed Game Emporium"
+	name = "Pre-Payed Game Emporium Vendor"
 	desc = "A one time stop for all your card or board game needs! This one has been already payed for in full."
 	products = list(
 					/obj/item/storage/pill_bottle/dice = 3,
@@ -291,8 +290,8 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/gym
-	name = "Club\'s Total Workout"
-	desc = "A LSS vendor that sells exercise equipment."
+	name = "Club's Total Workout Vendor"
+	desc = "A Skylight vendor that sells exercise equipment."
 	product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
 	product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
 	icon_state = "gym"
@@ -300,7 +299,6 @@
 	products = list(
 		/obj/item/gym_ticket = 150,
 		/obj/item/tool/hammer/dumbbell = 10,
-		/obj/item/reagent_containers/food/drinks/cans/energy = 10,
 		/obj/item/reagent_containers/food/drinks/protein_shake = 10
 		)
 
@@ -308,7 +306,6 @@
 		/obj/item/gym_ticket = 150, // Still half a hourly salary
 		/obj/item/tool/hammer/dumbbell = 120,
 		/obj/item/reagent_containers/food/drinks/protein_shake = 150, // Still a total ripoff, but it has mechanical use
-		/obj/item/reagent_containers/food/drinks/cans/energy = 75, // No longer overpriced colonist cola
 		/obj/item/reagent_containers/syringe/paracetamol = 150,
 		/obj/item/reagent_containers/syringe/adrenaline = 450,
 		/obj/item/reagent_containers/syringe/stim/steady = 600,

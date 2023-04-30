@@ -1,6 +1,6 @@
 /obj/machinery/vending/one_star
-	name = "One Star Vendor"
-	desc = "A vendor of the One Star variety typical made by SR."
+	name = "HexaOptimum General Vendor"
+	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo."
 	icon = 'icons/obj/machines/one_star/vending.dmi'
 	icon_state = "vendor_guns"
 	icon_vend = "vendor_printing"
@@ -15,7 +15,8 @@
 	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
 
 /obj/machinery/vending/one_star/guns
-	desc = "A vendor of the One Star variety typical made by SD. This one sells firearms of the SR variety."
+	name = "HexaOptimum Weapon Vendor"
+	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells firearms."
 	icon_state = "vendor_guns"
 
 	products = list(
@@ -27,7 +28,8 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	desc = "A vendor of the One Star variety typical made by SR. This one sells food variety."
+	name = "HexaOptimum Food Vendor"
+	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells food."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"
 
@@ -60,6 +62,34 @@
 		)
 
 /obj/machinery/vending/one_star/health
-	desc = "A vendor of the One Star variety typical made by SR. This one sells medical paraphernalia of the SD variety."
+	name = "HexaOptimum Medical Vendor"
+	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells medical equipment and supplies."
 	icon_state = "vendor_health"
 
+	products = list(
+		/obj/item/storage/pill_bottle/bloodregen = 10,
+		/obj/item/storage/pill_bottle/njoy/red = 10,
+		/obj/item/reagent_containers/syringe/large = 10,
+		/obj/item/reagent_containers/syringe/stim/ultra_surgeon = 10,
+		/obj/item/reagent_containers/syringe/stim/turbo = 10,
+		/obj/item/reagent_containers/syringe/stim/menace = 10,
+		/obj/item/reagent_containers/syringe/stim/party_drops = 10,
+		/obj/item/reagent_containers/syringe/stim/boxer = 10,
+		/obj/item/reagent_containers/syringe/stim/violence_ultra = 10,
+		/obj/item/storage/firstaid/surgery/traitor = 4,
+		/obj/item/storage/firstaid/combat = 4,
+		)
+
+	prices = list(
+		/obj/item/storage/pill_bottle/bloodregen = 40,
+		/obj/item/storage/pill_bottle/njoy/red = 40,
+		/obj/item/reagent_containers/syringe/large = 20,
+		/obj/item/reagent_containers/syringe/stim/ultra_surgeon = 40,
+		/obj/item/reagent_containers/syringe/stim/turbo = 40,
+		/obj/item/reagent_containers/syringe/stim/menace = 40,
+		/obj/item/reagent_containers/syringe/stim/party_drops = 40,
+		/obj/item/reagent_containers/syringe/stim/boxer = 40,
+		/obj/item/reagent_containers/syringe/stim/violence_ultra = 40,
+		/obj/item/storage/firstaid/surgery/traitor = 100,
+		/obj/item/storage/firstaid/combat = 80,
+		)
