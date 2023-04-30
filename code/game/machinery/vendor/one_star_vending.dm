@@ -28,7 +28,7 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	name = "HexaOptimum Weapon Vendor"
+	name = "HexaOptimum Food Vendor"
 	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells food."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"

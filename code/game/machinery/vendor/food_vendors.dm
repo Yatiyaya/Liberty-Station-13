@@ -1,5 +1,5 @@
 /obj/machinery/vending/boozeomat
-	name = "Booze-O-Mat"
+	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor "
 	desc = "A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one."
 	icon_state = "boozeomat"	//24(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	icon_deny = "boozeomat-deny"
@@ -47,8 +47,8 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/coffee
-	name = "Hot Coffee"
-	desc = "A vending machine which dispenses hot drinks."
+	name = "Pallas White Stallion Drinks Vendor"
+	desc = "A vending machine which dispenses hot drinks. Courtesy of Pallas White Stallion Corporation."
 	product_slogans = "Care for a cup of hot joe?;Care for a cup of coffee?;How about a pick-me-upper?;Want a nice tea?;I hope you ask me for a bloody cup o' tea...;Only the finest!"
 	product_ads = "Have a drink!;Drink up!;It's good for you!;Would you like a hot joe?;I'd kill for some coffee!;The best beans in the galaxy.;Only the finest brew for you.;Mmmm. Nothing like a coffee.;I like coffee, don't you?;Coffee helps you work!;Try some tea.;We hope you like the best!;Try our hot chocolate!"
 	icon_state = "coffee"
@@ -144,7 +144,7 @@
 	return
 
 /obj/machinery/vending/hydronutrients
-	name = "NutriMax"
+	name = "NutriMax Vendor"
 	desc = "A plant nutrients vendor."
 	product_slogans = "Aren't you glad you don't have to fertilize the natural way?;Now with 50% less stink!;Plants are people too!;150% of the Effects, 0% of the smell!;We all like plants, don't we?;Remember to Never Underestimate Technology.;Take the spray and ROBUST THOSE PESTS!;Save your plants today!;Your plants deserve only the most Robust chemicals!"
 	product_ads = "We like plants!;Don't you want some?;The greenest thumbs ever.;We like big plants.;Soft soil..."
@@ -161,7 +161,7 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/hydroseeds
-	name = "MegaSeed Servitor"
+	name = "MegaSeed Vendor"
 	desc = "When you need seeds fast!"
 	product_slogans = "This is where the seeds live, git you some!;Hands down the best seed selection on the colony!;Also certain mushroom varieties available, more for experts! Get certified today!;Seeds? We got you covered.;Remember: Glowshrooms are bad for you.;I'm legally advised to tell you that Nettles are poisonous."
 	product_ads = "We like plants!;Grow some crops!;Grow, baby, growww!;Aw h'yeah son!;Just like your ancestors!"
@@ -261,7 +261,7 @@
 
 
 /obj/machinery/vending/dinnerware
-	name = "Delta Dinnerware Express"
+	name = "Delta Dinnerware Express Vendor"
 	desc = "A kitchen and restaurant equipment vendor."
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these...;Need knives? Got you covered."
 	icon_state = "dinnerware"
@@ -316,7 +316,7 @@
 	always_open = TRUE
 
 /obj/machinery/vending/dinnerware/cost //So we can place these around and charge people
-	name = "Consumer Delta Dinnerware Express"
+	name = "Consumer Delta Dinnerware Express Vendor"
 	desc = "A kitchen and restaurant equipment vendor."
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these...;Need knives? Got you covered."
 	icon_state = "dinnerware"
@@ -424,7 +424,7 @@
 	icon_state = "citadel"
 	icon_vend = "citadel-vend"
 	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
-	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Communists got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
+	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,
 					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 4,
 					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 5)
@@ -448,7 +448,7 @@
 	return
 
 /obj/machinery/vending/fitness
-	name = "SweatMAX"
+	name = "SW0L3 SweatMAX Vendor"
 	desc = "Fueled by your inner inadequacy!"
 	product_ads = "Keep working on those gains!;No pain, no gain!;Don't weight - buy today!"
 	icon_state = "fitness"
@@ -474,7 +474,7 @@
 		/obj/item/towel/random = 10)
 
 /obj/machinery/vending/drink_showcase
-	name = "Bar Cocktail Showcase"
+	name = "Bar Cocktail Showcase Vendor"
 	desc = "A vending machine to showcase cocktails."
 	icon_state = "showcase"
 	var/icon_fill = "showcase-fill"
@@ -501,7 +501,7 @@
 		add_overlay(image(icon, icon_fill))
 
 /obj/machinery/vending/plant_gene
-	name = "Eugene's Plant Genes"
+	name = "Eugene's Plant Genes Vendor"
 	desc = "A vendor selling data disks with individual plant genes."
 	product_slogans = "Keep your plants on!;Get back to your roots!;Don't leaf me!"
 	product_ads = "Seed for yourself!;Green!;OMG! Only Modified Genetically!"

@@ -17,7 +17,7 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/tool
-	name = "Terra-Therma YouTool"
+	name = "Terra-Therma YouTool Vendor"
 	desc = "Tools for tools."
 	product_slogans = "Tools, Gloves and everything you would need!; Need a belt?; Top quality tools, only here!; Doors shocked again? We have gloves!;Better than the competitors!"
 	product_ads = "Reliable!;Highest Quality!;Take a belt!;Colorful cables!;Insulated Gloves, only here!"
@@ -250,7 +250,7 @@
 
 //This one's from bay12
 /obj/machinery/vending/plasmaresearch
-	name = "Toximate 3000"
+	name = "Toximate 3000 Vendor"
 	desc = "All the fine parts you need in one vending machine!"
 	shut_up = 1
 	products = list(/obj/item/clothing/under/rank/scientist = 6,
@@ -268,7 +268,7 @@
 
 //This one's from bay12
 /obj/machinery/vending/robotics
-	name = "HexaOptimum Robotech Deluxe"
+	name = "HexaOptimum Robotech Deluxe Vendor"
 	desc = "All the tools you need to create your own robot army."
 	product_slogans = "Build your robot army TODAY!;How about a mech?;You know you need that Durand!;Lost your jumpsuit again?;Let's implant them, we both know they need it."
 	icon_state = "robotics"
