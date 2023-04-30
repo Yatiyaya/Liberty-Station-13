@@ -3,7 +3,7 @@
 	path = /obj/item/flame/lighter/zippo
 	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/utility
+/datum/gear/utility/briefcase
 	display_name = "briefcase"
 	path = /obj/item/storage/briefcase
 	sort_category = "Utility"
