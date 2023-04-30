@@ -3,7 +3,7 @@
 /datum/category_item/setup_option/background/ancestry/human_sol
 	name = "Solarian"
 	desc = "You come from the cradle of civilization - Sol, known as Earth and Mars in the old days to it's residents. \
-			Since then it has massively expanded it's borders way past just the two planets reaching the status of a galactic superpower.\
+			Since then it has massively expanded its borders way past just the two planets reaching the status of a galactic superpower.\
 			You however were born in heart of this empire leaving you completely unprepared for the horrors lying within the reach of borders."
 
 	restricted_to_species = list(FORM_HUMAN)
