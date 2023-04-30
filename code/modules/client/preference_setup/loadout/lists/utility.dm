@@ -1,17 +1,22 @@
-/datum/gear/utility/zippo
-	display_name = "zippo selection"
-	path = /obj/item/flame/lighter/zippo
-	flags = GEAR_HAS_TYPE_SELECTION
+/datum/gear/utility
+	display_name = "briefcase"
+	path = /obj/item/storage/briefcase
+	sort_category = "Utility"
 
 /datum/gear/utility/briefcase
 	display_name = "briefcase"
 	path = /obj/item/storage/briefcase
-	sort_category = "Utility"
+	cost = 1
 
 /datum/gear/utility/briefcasesecure
 	display_name = "briefcase, secure"
 	path = /obj/item/storage/secure/briefcase
 	cost = 2
+
+/datum/gear/utility/zippo
+	display_name = "zippo selection"
+	path = /obj/item/flame/lighter/zippo
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/lunchbox
 	display_name = "lunch box"
