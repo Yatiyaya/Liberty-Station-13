@@ -1,6 +1,6 @@
 //FOR ACTORS GUILD - mainly props that cannot be spawned otherwise
 /obj/machinery/vending/props
-	name = "Portable Stage"
+	name = "Portable Stage Vendor"
 	desc = "All the costumes a performer could need. Probably."
 	product_slogans = "Be witty!;Make them smile!;Honk!;Dress to impress!"
 	product_ads = "All animal costumes made out of real fur!;Now featuring our new history selection!;Want to cause a fright? Try our halloween selection!;Non-set costume pieces found in our surplus kits!"
@@ -134,7 +134,7 @@
 					/obj/item/clothing/mask/gas/big_shot = 25)
 
 /obj/machinery/vending/style
-	name = "Style vendor"
+	name = "Style Vendor"
 	desc = "Vendor selling probably salvaged stylish clothing."
 	product_slogans = "Highly stylish clothing for sale!;Latest fashion trends right here!"
 	product_ads = "Contact our consumer department for refunds, fees apply.;Coolness sold here.;Fashion over function!"
@@ -493,7 +493,7 @@
 		)
 
 /obj/machinery/vending/drip
-	name = "Business Causal" // It's a pun on Causality, not a misspelling.
+	name = "Business Causal Vendor" // It's a pun on Causality, not a misspelling.
 	desc = "Vendor selling the most formal of clothes. Not just for lawyers!"
 	product_slogans = "The suit doesn't make you a CEO, but it sure does help you look like one!;Whatever you do in this life, it's not legendary unless you're doing it in a suit.;You can take on the world in a good suit."
 	product_ads = "Our clothes are guaranteed to suit you, make sure you suit the clothes as well.;The outfit doesn't make you, you make the outfit.;People will stare. Make it worth their while."
@@ -772,7 +772,7 @@
 	)
 
 /obj/machinery/vending/plushies
-	name = "Toys 4 You"
+	name = "Toys 4 You Vendor"
 	desc = "Sells toys of all kinds."
 	density = FALSE
 	light_color = COLOR_LIGHTING_GREEN_BRIGHT

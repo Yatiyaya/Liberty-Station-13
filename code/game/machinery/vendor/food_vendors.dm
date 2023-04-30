@@ -1,5 +1,5 @@
 /obj/machinery/vending/boozeomat
-	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor "
+	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor"
 	desc = "A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one."
 	icon_state = "boozeomat"	//24(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	icon_deny = "boozeomat-deny"
