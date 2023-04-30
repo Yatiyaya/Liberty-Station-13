@@ -173,4 +173,3 @@
 	path = /obj/item/storage/box/costume
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 1 //Style at a cost! - also cardboard
-
