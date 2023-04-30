@@ -540,13 +540,13 @@
 
 //Industeral stuff
 /obj/item/stack/tile/concrete_small
-	name = "concrate slabs"
-	singular_name = "concrate slab"
+	name = "concrete slabs"
+	singular_name = "concrete slab"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/concrete_bricks
-	name = "concrate bricks"
-	singular_name = "concrate brick"
+	name = "concrete bricks"
+	singular_name = "concrete brick"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/bricks

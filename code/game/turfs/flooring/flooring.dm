@@ -1010,7 +1010,7 @@ var/list/flooring_types
 
 // TILE INDUSTERAL
 
-/decl/flooring/industeral
+/decl/flooring/industrial
 	icon = 'icons/turf/flooring/tiles_industeral.dmi'
 	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN | TURF_HIDES_THINGS
 	build_type = /obj/item/stack/tile/floor
@@ -1024,23 +1024,23 @@ var/list/flooring_types
 	damage_temperature = T0C+200
 	footstep_sound = "floor"
 
-/decl/flooring/industeral/concrate_small
-	name = "concrate slab"
+/decl/flooring/industrial/concrete_small
+	name = "concrete slab"
 	desc = "Placed down slab of stone mixed with sand and heated into an aged design."
 	icon_base = "concrete_small"
 	has_base_range = 5
 	descriptor = "concrete"
 	build_type = /obj/item/stack/tile/concrete_small
 
-/decl/flooring/industeral/concrete_bricks
-	name = "concrate bricks"
-	desc = "A bunch of concrate bricks placed down as flooring."
+/decl/flooring/industrial/concrete_bricks
+	name = "concrete bricks"
+	desc = "A bunch of concrete bricks placed down as flooring."
 	icon_base = "concrete_bricks"
 	has_base_range = 8
 	descriptor = "concrete"
 	build_type = /obj/item/stack/tile/concrete_bricks
 
-/decl/flooring/industeral/bricks
+/decl/flooring/industrial/bricks
 	name = "bricks"
 	desc = "A bunch of stone bricks placed down as flooring."
 	icon_base = "concrete_bricks"
@@ -1048,7 +1048,7 @@ var/list/flooring_types
 	descriptor = "brick"
 	build_type = /obj/item/stack/tile/bricks
 
-/decl/flooring/industeral/ornate
+/decl/flooring/industrial/ornate
 	name = "ornate flooring"
 	desc = "Dark tiles with some painting on it."
 	icon_base = "ornate"
@@ -1056,7 +1056,7 @@ var/list/flooring_types
 	descriptor = "ornate"
 	build_type = /obj/item/stack/tile/ornate
 
-/decl/flooring/industeral/sierra
+/decl/flooring/industrial/sierra
 	name = "ornate flooring"
 	desc = "Dark tiles with some painting on it."
 	icon_base = "sierra"
@@ -1064,99 +1064,99 @@ var/list/flooring_types
 	descriptor = "ornate"
 	build_type = /obj/item/stack/tile/sierra
 
-/decl/flooring/industeral/ceramic
+/decl/flooring/industrial/ceramic
 	name = "ceramic"
-	desc = "Harden clay slates locked togther as a flooring."
+	desc = "Hardened clay slates locked together as flooring."
 	icon_base = "ceramic"
 	has_base_range = 2
 	descriptor = "ceramic"
 	build_type = /obj/item/stack/tile/ceramic
 
-/decl/flooring/industeral/grey_slates_long
+/decl/flooring/industrial/grey_slates_long
 	name = "grey slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "grey_long"
 	has_base_range = 6
 	build_type = /obj/item/stack/tile/grey_slates_long
 
-/decl/flooring/industeral/blue_slates_long
+/decl/flooring/industrial/blue_slates_long
 	name = "blue slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "blue_long"
 	has_base_range = 6
 	build_type = /obj/item/stack/tile/blue_slates_long
 
-/decl/flooring/industeral/brown_slates_big
+/decl/flooring/industrial/brown_slates_big
 	name = "brown slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "brown_big"
 	has_base_range = 8
 	build_type = /obj/item/stack/tile/brown_large_slates
 
-/decl/flooring/industeral/grey_slates
+/decl/flooring/industrial/grey_slates
 	name = "grey slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "grey"
 	has_base_range = 8
 	build_type = /obj/item/stack/tile/grey_slates
 
-/decl/flooring/industeral/blue_slates
+/decl/flooring/industrial/blue_slates
 	name = "blue slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "blue"
 	has_base_range = 8
 	build_type = /obj/item/stack/tile/blue_slates
 
-/decl/flooring/industeral/navy_slates
+/decl/flooring/industrial/navy_slates
 	name = "navy slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "navy"
 	has_base_range = 7
 	build_type = /obj/item/stack/tile/navy_slates
 
-/decl/flooring/industeral/fancy_slates
+/decl/flooring/industrial/fancy_slates
 	name = "disk slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "fancy"
 	has_base_range = 7
 	build_type = /obj/item/stack/tile/fancy_slates
 
-/decl/flooring/industeral/navy_large_slates
+/decl/flooring/industrial/navy_large_slates
 	name = "large navy slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "navy_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/navy_large_slates
 
-/decl/flooring/industeral/black_large_slates
+/decl/flooring/industrial/black_large_slates
 	name = "large black slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "black_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/black_large_slates
 
-/decl/flooring/industeral/green_large_slates
+/decl/flooring/industrial/green_large_slates
 	name = "green large slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "green_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/green_large_slates
 
-/decl/flooring/industeral/white_large_slates
+/decl/flooring/industrial/white_large_slates
 	name = "white large slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "white_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/white_large_slates
 
-/decl/flooring/industeral/checker_large
+/decl/flooring/industrial/checker_large
 	name = "white and black large slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "checker_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/checker_large
 
-/decl/flooring/industeral/cafe_large
+/decl/flooring/industrial/cafe_large
 	name = "white and red large slates"
 	desc = "Cut down and thinned rock slates used for flooring."
 	icon_base = "cafe_large"
