@@ -7,6 +7,16 @@
 	item_flags = NOSLIP
 	species_restricted = null
 
+/obj/item/clothing/shoes/galoshesskylight
+	name = "skylight galoshes"
+	desc = "A pair of slip-resistant rubber boots used for janitorial work in sleek skylight blue."
+	icon_state = "galoshesskylight"
+	permeability_coefficient = 0.05
+	siemens_coefficient = 0 // DAMN BOI HE THICK
+	item_flags = NOSLIP
+	species_restricted = null
+
+
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
 	desc = "A pair of standard-issue jackboots typically worn by people who need to stomp things."
