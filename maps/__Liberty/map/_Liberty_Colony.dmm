@@ -9880,8 +9880,8 @@
 "cFs" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_north = 1;
-	tag_west = 5;
-	tag_south = 2
+	tag_south = 2;
+	tag_west = 5
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -10500,9 +10500,9 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "cNM" = (
 /obj/machinery/atmospherics/omni/filter{
+	tag_east = 2;
 	tag_south = 4;
-	tag_west = 1;
-	tag_east = 2
+	tag_west = 1
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/segment{
@@ -20616,8 +20616,8 @@
 /area/liberty/quartermaster/hangarsupply)
 "fDA" = (
 /obj/machinery/holosign/service{
-	id = "room_a";
-	dir = 4
+	dir = 4;
+	id = "room_a"
 	},
 /obj/machinery/door/airlock/hatch{
 	name = "Bar - Room A"
@@ -35386,8 +35386,8 @@
 /area/liberty/engineering/engine_waste)
 "jGt" = (
 /obj/structure/bookcase{
-	desc = "A wooden shelving unit used for storing all sorts of literature. This one seems ligher then others around it and not even that well placed as it has scrape marks under it...";
 	anchored = 0;
+	desc = "A wooden shelving unit used for storing all sorts of literature. This one seems ligher then others around it and not even that well placed as it has scrape marks under it...";
 	name = "sus bookcase"
 	},
 /obj/item/oddity/ls/magazine,
@@ -46869,8 +46869,8 @@
 "mVx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bookcase{
-	desc = "A wooden shelving unit used for storing all sorts of literature. This one seems ligher then others around it and not even that well placed as it has scrape marks under it...";
 	anchored = 0;
+	desc = "A wooden shelving unit used for storing all sorts of literature. This one seems ligher then others around it and not even that well placed as it has scrape marks under it...";
 	name = "sus bookcase"
 	},
 /obj/item/oddity/common/book_omega/closed,
@@ -48668,6 +48668,7 @@
 /obj/structure/closet/wall_mounted/firecloset{
 	pixel_x = -32
 	},
+/obj/machinery/autolathe/medfab/loaded,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
 "ntC" = (
@@ -52873,8 +52874,8 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "oBV" = (
 /obj/item/spider_shadow_trap{
-	pixel_y = -8;
-	pixel_x = -16
+	pixel_x = -16;
+	pixel_y = -8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/blue_slates_long,
@@ -58800,8 +58801,8 @@
 	},
 /obj/machinery/camera/network/research,
 /obj/structure/sign/department/xenolab{
-	pixel_y = 32;
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
@@ -64894,8 +64895,8 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "rPA" = (
 /obj/item/spider_shadow_trap{
-	pixel_y = -8;
-	pixel_x = -16
+	pixel_x = -16;
+	pixel_y = -8
 	},
 /turf/simulated/floor/carpet/sblucarpet,
 /area/colony)
@@ -149520,7 +149521,7 @@ gZO
 pVU
 eVF
 wKz
-kvQ
+mnl
 ntB
 oZn
 nTy
@@ -150934,7 +150935,7 @@ vZg
 lcI
 kWT
 mnl
-mnl
+kvQ
 rZC
 txr
 oft
