@@ -471,6 +471,7 @@
 	description = "The organic compound commonly known as table sugar and sometimes called saccharose. This white, odorless, crystalline powder has a pleasing, sweet taste."
 	taste_description = "sugar"
 	taste_mult = 1.8
+	overdose = 50
 	reagent_state = SOLID
 	color = "#FFFFFF"
 	glass_icon_state = "iceglass"
@@ -479,7 +480,11 @@
 	common = TRUE //everyone knows what sugar is
 
 /datum/reagent/organic/sugar/affect_blood(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
-	M.adjustNutrition(4 * effect_multiplier)
+	M.adjustNutrition(0.5 * effect_multiplier)
+
+/datum/reagent/organic/sugar/overdose(mob/living/carbon/human/user, alien)
+	var/obj/item/organ/internal/blood_vessel/user_vessel = user.random_organ_by_process(OP_BLOOD_VESSEL)
+	create_overdose_wound(user_vessel, user, /datum/component/internal_wound/organic/heavy_poisoning, "accumulation")
 
 /datum/reagent/sulfur
 	name = "Sulfur"
