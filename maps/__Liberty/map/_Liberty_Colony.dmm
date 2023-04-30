@@ -2708,7 +2708,7 @@
 /area/liberty/crew_quarters/dorm4)
 "aMd" = (
 /obj/machinery/door/airlock/glass_command{
-	name = "Bridge";
+	name = "Command";
 	req_access = list(19)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3506,7 +3506,7 @@
 /area/liberty/engineering/shield_generator)
 "aWk" = (
 /obj/machinery/door/airlock/glass_command{
-	name = "Bridge";
+	name = "Command";
 	req_access = list(19)
 	},
 /obj/structure/cable/green{
@@ -8076,7 +8076,7 @@
 /area/liberty/hallway/side/f2section1)
 "chz" = (
 /obj/machinery/door/airlock/glass_command{
-	name = "Bridge";
+	name = "Command";
 	req_access = list(19)
 	},
 /obj/structure/disposalpipe/segment,
@@ -18263,7 +18263,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "eVA" = (
 /obj/machinery/door/airlock/multi_tile/glass{
-	name = "Marshals Brig";
+	name = "Liberty Watch Brig";
 	req_one_access = list(63)
 	},
 /obj/machinery/door/firedoor/multi_tile,
@@ -20662,6 +20662,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fDU" = (
 /obj/structure/disposalpipe/sortjunction/wildcard/flipped,
@@ -40729,7 +40730,7 @@
 /area/liberty/command/bridge)
 "lfS" = (
 /obj/machinery/door/airlock/glass_command{
-	name = "Bridge";
+	name = "Command";
 	req_access = list(19)
 	},
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -41352,7 +41353,7 @@
 "lpG" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Mining Prep";
-	req_one_access = list(40)
+	req_one_access = list(48)
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -49240,7 +49241,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/engineering{
 	name = "Mining Bay";
-	req_one_access = list(40)
+	req_one_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/quartermaster/miningdock)
@@ -60770,14 +60771,14 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/engineering{
-	name = "Mining Bay";
-	req_one_access = list(40)
-	},
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Mining Bay";
+	req_one_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/quartermaster/miningdock)
@@ -67045,12 +67046,6 @@
 /obj/structure/ore_box,
 /turf/simulated/floor/industrial/white_large_slates,
 /area/liberty/maintenance/undergroundfloor1west)
-"sqV" = (
-/obj/turbolift_map_obj/turbolift_map_base/liberty/mountaintop,
-/turf/simulated/shuttle/floor/mining{
-	icon_state = "9,23"
-	},
-/area/turbolift/mountain/colony)
 "sra" = (
 /obj/structure/table/rack/shelf,
 /obj/random/gun_parts/frames,
@@ -153137,7 +153132,7 @@ vXj
 rRK
 uAc
 uAc
-sqV
+uAc
 uyV
 vXj
 wtD
