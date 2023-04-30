@@ -233,7 +233,7 @@
 				/obj/random/gun_parts/frames/better_spawns = 2,
 
 				/obj/item/gun/projectile/automatic/operator_rifle = 2,
-				/obj/item/gun/projectile/automatic/judge = 0.7,
+				/obj/item/gun/projectile/shotgun/judge = 0.7,
 				/obj/item/gun/projectile/automatic/lmg/buzzsaw = 2,
 				/obj/item/gun/projectile/automatic/lmg/pk = 1.5,
 				/obj/item/gun/projectile/automatic/maxim = 1,

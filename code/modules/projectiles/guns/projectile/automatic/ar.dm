@@ -59,7 +59,7 @@
 	name = "\"Homemaker\" marksman carbine"
 	desc = "A weapon of a True Solarian Federaltion patriot. A home-owners dream rifle. \
 			A copy of the famous \"Federalist\" carbine, chambered in 6.5mm. This variant appears to have lost its capability to switch to full-auto, but a better barrel and scope attached to compensate."
-
+	icon = 'icons/obj/guns/projectile/ar_scope.dmi'
 	price_tag = 800
 	extra_damage_mult_scoped = 0.4
 	zoom_factors = list(0.8)
