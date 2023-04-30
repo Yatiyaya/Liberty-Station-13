@@ -1,6 +1,6 @@
 
 // Powers that teleport the user or others around
-
+/*
 /obj/item/organ/internal/psionic_tumor/proc/journey_to_nowhere()
 	set category = "Psionic powers"
 	set name = "Journey to Nowhere (5)"
@@ -37,3 +37,4 @@
 				do_sparks(1, 0, target.loc)						//Visual feedback after the teleport
 			do_sparks(1, 0, owner.loc)							//Visual feedback after the teleport
 			owner.weakened += 10								//Moving like this is stressful and stuns you for a time.
+*/
