@@ -843,11 +843,6 @@
 	icon_state = "blue_long"
 	initial_flooring = /decl/flooring/industrial/blue_slates_long
 
-/turf/simulated/floor/industrial/brown_slates_long
-	name = "brown slates"
-	icon_state = "brown_long"
-	initial_flooring = /decl/flooring/industrial/blue_slates_long
-
 /turf/simulated/floor/industrial/grey_slates
 	name = "grey slates"
 	icon_state = "grey"
@@ -880,7 +875,7 @@
 
 /turf/simulated/floor/industrial/green_large_slates
 	name = "large green slates"
-	icon_state = "black_large"
+	icon_state = "green_large"
 	initial_flooring = /decl/flooring/industrial/green_large_slates
 
 /turf/simulated/floor/industrial/white_large_slates
