@@ -40,17 +40,13 @@
 
 /obj/item/gun/projectile/automatic/maxim/update_icon()
 	..()
-	var/itemstring = ""
-	cut_overlays()
-
 	if(ammo_magazine)
-		overlays += "mag[ammo_magazine.ammo_label_string]"
-		itemstring += "_full"
-
-	if(wielded)
-		itemstring += "_doble"
-
-	set_item_state(itemstring)
+		icon_state = "[initial(icon_state)]-full"
+		set_item_state("-full")
+	else
+		icon_state = initial(icon_state)
+		set_item_state()
+	return
 
 /obj/item/part/gun/frame/maxim
 	name = "Maxim frame"
