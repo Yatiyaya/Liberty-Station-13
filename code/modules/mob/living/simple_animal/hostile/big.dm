@@ -128,22 +128,22 @@
 	pixel_y = 0
 	attack_sound = 'sound/weapons/deathclawattack.ogg'
 	meat_amount = 6
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/primal
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/agape
 	can_burrow = FALSE
 	mob_size = 3
 	leather_amount = 16
 	bones_amount = 20
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/render_claw,/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
 	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE)
 
-/mob/living/simple_animal/hostile/render/FindTarget()
+/mob/living/simple_animal/hostile/agape/FindTarget()
 	. = ..()
 	if(.)
 		visible_emote("lets out a deafening roar and charges at [.]!")
 		playsound(src, 'sound/voice/deathclaw_roar.ogg', 200, 1, -3)
 
-/mob/living/simple_animal/hostile/render/death(gibbed, deathmessage = "lets out a guttural snarl before it crumbles to the ground dead!")
+/mob/living/simple_animal/hostile/agape/death(gibbed, deathmessage = "lets out a guttural snarl before it crumbles to the ground dead!")
 	walk_to(src,0)
 	movement_target = null
 	icon_state = icon_dead
