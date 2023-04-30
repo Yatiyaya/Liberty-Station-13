@@ -316,7 +316,7 @@
 			to_chat(H, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
 			H.vessel.remove_reagent("blood",blood_cost)
 	to_chat(H, "<span class='info'>You feel yourself speeding up, your senses and reaction times quickening!</span>")
-	H.add_chemical_effect(CE_SPEEDBOOST, 0.2, 5 MINUTES, "hyperzine")
+	H.add_chemical_effect(CE_SPEEDBOOST, 0.2, 5 MINUTES, "chronos")
 	H.updatehealth()
 	set_personal_cooldown(H)
 	return TRUE

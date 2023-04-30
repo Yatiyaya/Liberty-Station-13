@@ -194,7 +194,7 @@
 
 /obj/item/storage/belt/medical/opifex/full/populate_contents()
 	new /obj/item/device/scanner/health(src)
-	new /obj/item/reagent_containers/syringe/large/hyperzine(src)
+	new /obj/item/reagent_containers/syringe/large/chronos(src)
 	new /obj/item/reagent_containers/syringe/large/tricordrazine(src)
 	new /obj/item/reagent_containers/syringe/large/inaprovaline(src)
 	new /obj/item/storage/pill_bottle/tramadol(src)

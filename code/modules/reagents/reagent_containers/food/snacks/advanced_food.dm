@@ -386,7 +386,7 @@
 	nutriment_desc = list("acrid peaches" = 2)
 	bitesize = 2
 	nutriment_amt = 3
-	preloaded_reagents = list("hyperzine" = 2, "paracetamol" = 3)
+	preloaded_reagents = list("chronos" = 2, "paracetamol" = 3)
 	matter = list(MATERIAL_BIOMATTER = 3)
 	junk_food = TRUE
 

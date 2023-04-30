@@ -196,7 +196,7 @@
 	filling_color = "#DB0000"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=10)
-	preloaded_reagents = list("protein" = 12, "hyperzine" = 5)
+	preloaded_reagents = list("protein" = 12, "chronos" = 5)
 
 /obj/item/reagent_containers/food/snacks/meat/primal
 	name = "meat"

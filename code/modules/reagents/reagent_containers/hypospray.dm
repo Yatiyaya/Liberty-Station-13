@@ -252,12 +252,12 @@
 	baseline_sprite = "syrette_spacealine"
 	preloaded_reagents = list("spaceacillin" = 5)
 
-/obj/item/reagent_containers/hypospray/autoinjector/hyperzine
-	name = "autoinjector (hyperzine)"
-	icon_state = "syrette_hyperzine"
-	item_state = "syrette_hyperzine"
-	baseline_sprite = "syrette_hyperzine"
-	preloaded_reagents = list("hyperzine" = 5)
+/obj/item/reagent_containers/hypospray/autoinjector/chronos
+	name = "autoinjector (chronos)"
+	icon_state = "syrette_chronos"
+	item_state = "syrette_chronos"
+	baseline_sprite = "syrette_chronos"
+	preloaded_reagents = list("chronos" = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/drugs
 	name = "autoinjector (drugs)"

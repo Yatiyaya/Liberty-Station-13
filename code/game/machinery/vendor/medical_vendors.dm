@@ -128,7 +128,7 @@
 		/obj/item/device/defib_kit = 2
 		)
 	contraband = list(
-		/obj/item/reagent_containers/hypospray/autoinjector/hyperzine = 1,
+		/obj/item/reagent_containers/hypospray/autoinjector/chronos = 1,
 		/obj/item/reagent_containers/hypospray/autoinjector/drugs = 2,
 		/obj/item/stack/medical/bruise_pack/handmade = 10,
 		/obj/item/stack/medical/ointment/handmade  = 10,
@@ -168,7 +168,7 @@
 
 		/obj/item/device/defib_kit = 750,
 
-		/obj/item/reagent_containers/hypospray/autoinjector/hyperzine = 100,
+		/obj/item/reagent_containers/hypospray/autoinjector/chronos = 100,
 		/obj/item/reagent_containers/hypospray/autoinjector/drugs = 100
 		)
 	auto_price = FALSE

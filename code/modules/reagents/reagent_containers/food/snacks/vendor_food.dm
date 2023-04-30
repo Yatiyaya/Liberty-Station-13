@@ -291,7 +291,7 @@
 	name = "\improper sin-pocket"
 	desc = "The food of choice for the veteran. Do <B>NOT</B> overconsume."
 	filling_color = "#6D6D00"
-	heated_reagents = list("doctorsdelight" = 5, "hyperzine" = 1, "preservatives" = 5)
+	heated_reagents = list("doctorsdelight" = 5, "chronos" = 1, "preservatives" = 5)
 	var/has_been_heated = 0
 	junk_food = TRUE
 

@@ -279,7 +279,7 @@
 			data = c_data
 		else
 			data = pick("bicaridine", "kelotane", "anti_toxin", "inaprovaline", "space_drugs", "sugar",
-						"tramadol", "dexalin", "cryptobiolin", "impedrezene", "hyperzine", "ethylredoxrazine",
+						"tramadol", "dexalin", "cryptobiolin", "impedrezene", "chronos", "ethylredoxrazine",
 						"mindbreaker", "glucose")
 		var/datum/reagent/R = GLOB.chemical_reagents_list[data]
 		name = "[initial(name)] ([initial(R.name)])"
@@ -354,8 +354,8 @@
 	stage = 2
 	activate(var/mob/living/carbon/mob,var/multiplier)
 		to_chat(mob, SPAN_NOTICE("You feel a rush of energy inside you!"))
-		if (mob.reagents.get_reagent_amount("hyperzine") < 10)
-			mob.reagents.add_reagent("hyperzine", 4)
+		if (mob.reagents.get_reagent_amount("chronos") < 10)
+			mob.reagents.add_reagent("chronos", 5)
 		if (prob(30))
 			mob.jitteriness += 10
 

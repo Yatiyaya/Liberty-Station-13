@@ -553,7 +553,7 @@
 						  QUALITY_SAWING = 45,
 						  QUALITY_CUTTING = 60,
 						  QUALITY_WIRE_CUTTING = 55,
-						  QUALITY_BONE_GRAFTING = 80,
+						  QUALITY_BONE_FIXING = 80,
 						  QUALITY_DRILLING = 40)
 	force = WEAPON_FORCE_PAINFUL
 	use_power_cost = 0 //Dosnt legitmently use power

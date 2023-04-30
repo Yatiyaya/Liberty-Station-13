@@ -192,7 +192,7 @@
 	name = "Zoom pill"
 	desc = "Zoooom!"
 	icon_state = "pill20"
-	preloaded_reagents = list("impedrezene" = 10, "synaptizine" = 5, "hyperzine" = 5)
+	preloaded_reagents = list("impedrezene" = 10, "synaptizine" = 5, "chronos" = 5)
 
 
 /obj/item/reagent_containers/pill/spaceacillin
@@ -256,13 +256,13 @@
 					list("dexalin" = 15) = 2,\
 					list("dexalinp" = 15) = 2,\
 					list("biomatter" = 15) = 2,\
-					list("impedrezene" = 10, "synaptizine" = 5, "hyperzine" = 5, "citalopram" = 15) = 1,\
+					list("impedrezene" = 10, "synaptizine" = 5, "chronos" = 5, "citalopram" = 15) = 1,\
 					list("space_drugs" = 15, "sugar" = 15) = 1,\
 					list("dermaline" = 15, "citalopram" = 15) = 1,\
 					list("tramadol" = 15, "spaceacillin" = 15) = 1,\
 					list("blattedin" = 15) = 1,\
 					list("imidazoline" = 15, "space_drugs" = 15) = 1,\
-					list("ethylredoxrazine" = 15, "hyperzine" = 35) = 1,\
+					list("ethylredoxrazine" = 15, "chronos" = 35) = 1,\
 					list("potassium_chlorophoride" = 15) = 1,\
 					list("mindbreaker" = 15, "synaptizine" = 5) = 1,\
 					list("plantbgone" = 15, "cleaner" = 15) = 1,\
