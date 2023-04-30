@@ -13,6 +13,7 @@
 
 	//Has a list of items that it can hold.
 	var/list/can_hold = list(
+		/obj/item/bodybag/cryobag,
 		/obj/item/extinguisher,
 		/obj/item/cell,
 		/obj/item/firealarm_electronics,
@@ -244,6 +245,7 @@
 	desc = "A simple grasping tool suited to assist in a wide array of research applications."
 
 	can_hold = list(
+		/obj/item/bodybag/cryobag,
 		/obj/item/cell,
 		/obj/item/stock_parts,
 		/obj/item/device/mmi,
@@ -294,7 +296,7 @@
 		/obj/item/tank,
 		/obj/item/reagent_containers/food/snacks/meat, //For grinding up roaches
 		/obj/item/reagent_containers/food/snacks/grown, //For grinding up herbs
-
+		/obj/item/bodybag/cryobag,
 		/obj/item/stack/material/plasma
 		)
 
