@@ -4737,7 +4737,7 @@
 	frequency = 1380;
 	id_tag = "research_dock_pump"
 	},
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "xU" = (

@@ -1,5 +1,5 @@
 /obj/machinery/vending/signal_electronics
-	name = "Common electronics"
+	name = "Common Electronics Vendor"
 	products = list(
 		/obj/item/device/assembly/signaler = 60,
 		/obj/item/device/assembly/prox_sensor = 25,
@@ -18,7 +18,7 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/integrated_electronics_cases
-	name = "Integrated electronics cases and tools"
+	name = "Integrated Electronics Cases and Tools Vendor"
 	products = list(
 		/obj/item/implant/integrated_circuit = 20,
 		/obj/item/device/electronic_assembly = 20,
@@ -36,7 +36,7 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/integrated_electronics
-	name = "Integrated electronics"
+	name = "Integrated Electronics Vendor"
 	products = list(
 		/obj/item/integrated_circuit/input/button = 40,
 		/obj/item/integrated_circuit/input/toggle_button = 40,

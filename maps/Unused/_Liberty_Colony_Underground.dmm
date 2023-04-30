@@ -20595,7 +20595,6 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1south)
 "aUP" = (
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor1east)
 "aUQ" = (
@@ -38229,7 +38228,7 @@
 /turf/simulated/floor/holofloor/snow,
 /area/liberty/crew_quarters/cafeteria)
 "hMq" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
@@ -43706,7 +43705,7 @@
 /area/liberty/security)
 "lBJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "lBP" = (

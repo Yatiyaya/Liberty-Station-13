@@ -454,7 +454,7 @@
 
 /obj/item/reagent_containers/syringe/stim/menace
 	name = "syringe (MENACE)"
-	desc = "A syringe containing a dose of the powerful electrolyte based stimulant known as menace. A drug made famous for being used by suicidal naramadi shock troops employed by the Solarian Federation."
+	desc = "A syringe containing a dose of the powerful electrolyte based stimulant known as menace. A drug made famous for being used by suicidal naramadi shock troops."
 	preloaded_reagents = list("menace" = 15)
 
 ////////////////////////////////////////////////////////////////////////////////
