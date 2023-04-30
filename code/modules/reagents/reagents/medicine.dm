@@ -1039,7 +1039,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 /datum/reagent/medicine/detox
 	name = "Detox"
 	id = "detox"
-	description = "Boosts neural regeneration, bolstering the nervous system against large doses of chemicals without permanent damage."
+	description = "Boosts neural regeneration, bolstering the nervous system against large doses of chemicals and intoxication without permanent damage."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#229e08"
@@ -1049,6 +1049,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 	nerve_system_accumulations = -100
 
 /datum/reagent/medicine/detox/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	M.add_chemical_effect(CE_PURGER, 1)
 	if(!M.metabolism_effects.nsa_chem_bonus)
 		M.metabolism_effects.nsa_chem_bonus += rand(20, 60)
 		M.metabolism_effects.calculate_nsa()

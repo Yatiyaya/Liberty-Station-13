@@ -36,7 +36,3 @@
 		if(istype(added_item,required_item_type))
 			return CWJ_CHECK_VALID
 	return CWJ_CHECK_INVALID
-
-//Think about a way to make this more intuitive?
-/datum/cooking_with_jane/recipe_step/use_item/calculate_quality(var/obj/added_item)
-	return clamp_quality(0)

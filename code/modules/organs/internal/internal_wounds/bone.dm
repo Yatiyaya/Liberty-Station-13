@@ -1,7 +1,7 @@
 // Blunt
 /datum/component/internal_wound/organic/bone_blunt
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
-	treatments_tool = list(QUALITY_SEALING = FAILCHANCE_NORMAL)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
+	treatments_tool = list(QUALITY_BONE_FIXING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BONE_MEND = 1)
 	severity = 0
 	severity_max = 5
@@ -25,8 +25,8 @@
 
 // Sharp
 /datum/component/internal_wound/organic/bone_sharp
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
-	treatments_tool = list(QUALITY_SEALING = FAILCHANCE_NORMAL)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
+	treatments_tool = list(QUALITY_BONE_FIXING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BONE_MEND = 1)
 	severity = 0
 	severity_max = 5
@@ -50,8 +50,8 @@
 
 // Edge
 /datum/component/internal_wound/organic/bone_edge
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
-	treatments_tool = list(QUALITY_SEALING = FAILCHANCE_NORMAL)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
+	treatments_tool = list(QUALITY_BONE_FIXING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BONE_MEND = 1)
 	severity = 0
 	severity_max = 5

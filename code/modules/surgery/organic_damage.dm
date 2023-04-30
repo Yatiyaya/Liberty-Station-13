@@ -54,7 +54,7 @@
 
 /datum/surgery_step/fix_bone
 	target_organ_type = /obj/item/organ/internal/bone
-	required_tool_quality = QUALITY_BONE_GRAFTING
+	required_tool_quality = QUALITY_BONE_FIXING
 	duration = 80
 	requires_perk = TRUE
 

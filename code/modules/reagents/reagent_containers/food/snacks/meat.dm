@@ -196,11 +196,20 @@
 	filling_color = "#DB0000"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=10)
-	preloaded_reagents = list("protein" = 12, "hyperzine" = 5)
+	preloaded_reagents = list("protein" = 12, "chronos" = 5)
 
 /obj/item/reagent_containers/food/snacks/meat/primal
 	name = "meat"
 	desc = "A massive slab of meat containing a metric ton of protein and chemicals natural to a render."
+	icon_state = "bearmeat"
+	filling_color = "#DB0000"
+	bitesize = 6
+	center_of_mass = list("x"=16, "y"=10)
+	preloaded_reagents = list("protein" = 25, "tramadol" = 5)
+
+/obj/item/reagent_containers/food/snacks/meat/agape
+	name = "agape meat"
+	desc = "A massive slab of meat containing a massive amount of protein, the smell is abominable."
 	icon_state = "bearmeat"
 	filling_color = "#DB0000"
 	bitesize = 6

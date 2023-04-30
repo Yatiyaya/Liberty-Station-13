@@ -203,6 +203,20 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /* Sanity-Based Perks */
 ////////////////////////
 
+/datum/perk/background/veteran
+	name = "Veteran"
+	desc = "You've been trained how to handle tense situations. Shootings, injuries, blood, and death. Preperation to these issues is key. \
+			Your sanity cap is greater by about 1/4th its normal capacity."
+	icon_state = "riotshield"	//https://game-icons.net/1x1/lorc/riot-shield.html
+
+/datum/perk/background/veteran/assign(mob/living/carbon/human/H)
+	..()
+	holder.sanity.view_damage_threshold += 25
+
+/datum/perk/background/veteran/remove()
+	holder.sanity.view_damage_threshold -= 25
+	..()
+
 /datum/perk/background/survivor
 	name = "Survivor"
 	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \

@@ -973,6 +973,7 @@
 
 	has_process = list(
 		BP_BRAIN = /obj/item/organ/internal/brain/slime,
+		OP_STOMACH = /obj/item/organ/internal/stomach,
 		)
 
 	breath_type = null

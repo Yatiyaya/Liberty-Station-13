@@ -34,7 +34,7 @@
 		),
 		"Useful Stuff" = list(
 			// Autoinjectors defined in hypospray.dm
-			/obj/item/reagent_containers/hypospray/autoinjector/hyperzine = custom_good_amount_range(list(5, 10)),
+			/obj/item/reagent_containers/hypospray/autoinjector/chronos = custom_good_amount_range(list(5, 10)),
 			/obj/item/reagent_containers/hypospray/autoinjector/drugs = custom_good_amount_range(list(5, 10)),
 			/obj/item/reagent_containers/hypospray/autoinjector/quickhealbrute = custom_good_amount_range(list(5, 10)),
 			/obj/item/reagent_containers/hypospray/autoinjector/quickhealburn = custom_good_amount_range(list(5, 10))

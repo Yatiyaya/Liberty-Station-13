@@ -5,7 +5,7 @@
 
 // Blunt
 /datum/component/internal_wound/organic/blunt	// Abstract
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
 	treatments_tool = list(QUALITY_CAUTERIZING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BLOODCLOT = 0.55)	// Tricordrazine/polystem + bicaridine + meralyne OR quickclot OD + any brute heal
 	severity = 0
@@ -30,7 +30,7 @@
 
 // Sharp
 /datum/component/internal_wound/organic/sharp
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
 	treatments_tool = list(QUALITY_CAUTERIZING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BLOODCLOT = 0.85)	// Brute heal chem mix + quickclot OD
 	severity = 0
@@ -56,7 +56,7 @@
 
 // Edge
 /datum/component/internal_wound/organic/edge
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
+	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 1)
 	treatments_tool = list(QUALITY_CAUTERIZING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_BLOODCLOT = 0.85)	// Brute heal chem mix + quickclot OD
 	severity = 0
@@ -82,7 +82,7 @@
 
 // Burn
 /datum/component/internal_wound/organic/burn
-	treatments_item = list(/obj/item/stack/medical/bruise_pack/advanced = 2)
+	treatments_item = list(/obj/item/stack/medical/ointment/advanced = 1)
 	treatments_tool = list(QUALITY_CUTTING = FAILCHANCE_NORMAL)
 	treatments_chem = list(CE_STABLE = 1)	// Inaprov will only keep it from killing you
 	scar = /datum/component/internal_wound/organic/necrosis_start
@@ -164,7 +164,7 @@
 
 // Tox (OD/atmos)
 /datum/component/internal_wound/organic/heavy_poisoning
-	treatments_chem = list(CE_PURGER = 3)	// No anti-tox cure, poisoning can occur as a result of too much anti-tox
+	treatments_chem = list(CE_PURGER = 2)	// Shouldn't have to mix TWO chems to be able to meet threshold
 	severity = 0
 	severity_max = IORGAN_MAX_HEALTH / 2
 	hal_damage = IWOUND_MEDIUM_DAMAGE
@@ -340,6 +340,8 @@
 
 /datum/component/internal_wound/organic/infection/standard
 	name = "infection"
+
+// TODO: Do like bay and have these caused by catastrophic failure on organ/wound repair rather than spider poison OD
 
 /datum/component/internal_wound/organic/permanent
 	name = "scar tissue"

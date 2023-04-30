@@ -428,7 +428,7 @@
 		var/list/possible_chems = list(
 			"woodpulp",
 			"bicaridine",
-			"hyperzine",
+			"chronos",
 			"cryoxadone",
 			"blood",
 			"water",

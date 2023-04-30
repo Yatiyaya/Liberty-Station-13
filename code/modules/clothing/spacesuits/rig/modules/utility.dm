@@ -255,13 +255,13 @@
 	name = "mounted combat dispenser"
 	desc = "A specialized system for injecting combat stimulants."
 	price_tag = 7250
-	max_injection_amount = 30
+	max_injection_amount = 15 // Dangerous chems
 	max_beakers = 6
 	initial_beakers = list(
-		list(/obj/item/reagent_containers/glass/beaker/large, "hyperzine", 60),
-		list(/obj/item/reagent_containers/glass/beaker/large, "tramadol", 60),
-		list(/obj/item/reagent_containers/glass/beaker/large, "nutriment", 60),
-		list(/obj/item/reagent_containers/glass/beaker/large, "tricordrazine", 60)
+		list(/obj/item/reagent_containers/glass/beaker/large, "chronos", 60),
+		list(/obj/item/reagent_containers/glass/beaker/large, "violence", 60),
+		list(/obj/item/reagent_containers/glass/beaker/large, "steady", 60),
+		list(/obj/item/reagent_containers/glass/beaker/large, "boxer", 60)
 	)
 	interface_name = "integrated chemical combat dispenser"
 	interface_desc = "Dispenses loaded chemicals directly into the user's bloodstream."

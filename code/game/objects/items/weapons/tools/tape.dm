@@ -30,7 +30,7 @@
 	desc = "A bucket of milky white fluid. Can be used to stick things together, but unlike tape, it cannot be used to seal things."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "glue"
-	tool_qualities = list(QUALITY_ADHESIVE = 40, QUALITY_CAUTERIZING = 5, QUALITY_BONE_GRAFTING = 15) // Better than duct tape, but can't seal things and is mostly used in crafting - also, it's glue, so it can be used as an extremely shitty way of sealing wounds and repairing bones.
+	tool_qualities = list(QUALITY_ADHESIVE = 40, QUALITY_CAUTERIZING = 5, QUALITY_BONE_FIXING = 15) // Better than duct tape, but can't seal things and is mostly used in crafting - also, it's glue, so it can be used as an extremely shitty way of sealing wounds and repairing bones.
 	matter = list(MATERIAL_PLASTIC = 15)
 	worksound = NO_WORKSOUND
 	preloaded_reagents = list("glue" = 30)
@@ -47,16 +47,11 @@
 	preloaded_reagents = list("glue" = 15, "plasticide" = 5)
 	price_tag = 30
 
-/obj/item/tool/tape_roll/fiber/medical
-	name = "osseous tape"
-	desc = "A roll of flexible adhesive bioadaptive tape. Used for sealing minor damage to bones."
-	tool_qualities = list(QUALITY_ADHESIVE = 30, QUALITY_SEALING = 30)
-
 /obj/item/tool/tape_roll/repair_goo
 	name = "repair goo"
 	desc = "A wad of sticky gray goo capable of repairing tools and sealing cracks."
 	icon_state = "repair_goo"
-	tool_qualities = list(QUALITY_ADHESIVE = 50, QUALITY_SEALING = 50, QUALITY_CAUTERIZING = 5, QUALITY_BONE_GRAFTING = 65)
+	tool_qualities = list(QUALITY_ADHESIVE = 50, QUALITY_SEALING = 50, QUALITY_CAUTERIZING = 5, QUALITY_BONE_FIXING = 65)
 	matter = list(MATERIAL_PLASTIC = 20)
 	use_stock_cost = 0.10
 	max_stock = 100
@@ -84,7 +79,7 @@
 	matter = list(MATERIAL_PLASTIC = 20)
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 3)
 	preloaded_reagents = list("milk" = 5)
-	tool_qualities = list(QUALITY_BONE_GRAFTING = 80)
+	tool_qualities = list(QUALITY_BONE_FIXING = 80)
 	max_stock = 200
 	use_stock_cost = 1
 	price_tag = 20
@@ -95,7 +90,7 @@
 	icon = 'icons/obj/stack/items.dmi'
 	icon_state = "bonegel_SI"
 	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 3)
-	tool_qualities = list(QUALITY_BONE_GRAFTING = 150)
+	tool_qualities = list(QUALITY_BONE_FIXING = 150)
 	max_stock = 500
 	preloaded_reagents = null
 	price_tag = 200

@@ -1,14 +1,4 @@
 
-/obj/item/reagent_containers/food/snacks/brainburger
-	name = "brainburger"
-	desc = "A strange looking burger. It looks almost sentient."
-	icon_state = "brainburger"
-	filling_color = "#F2B6EA"
-	center_of_mass = list("x"=15, "y"=11)
-	preloaded_reagents = list("protein" = 6, "alkysine" = 6)
-	bitesize = 2
-	matter = list(MATERIAL_BIOMATTER = 30)
-
 /obj/item/reagent_containers/food/snacks/human
 	var/hname = ""
 	var/job = null
@@ -90,36 +80,6 @@
 	matter = list(MATERIAL_BIOMATTER = 12)
 	cooked = TRUE
 
-/obj/item/reagent_containers/food/snacks/roburger
-	name = "roburger"
-	desc = "The lettuce is the only organic component. Beep."
-	icon_state = "roburger"
-	filling_color = "#CCCCCC"
-	bitesize = 2
-	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("bun" = 2, "metal" = 3)
-	nutriment_amt = 2
-	matter = list(MATERIAL_BIOMATTER = 6)
-
-/obj/item/reagent_containers/food/snacks/roburger/Initialize(mapload)
-	. = ..()
-	if(prob(5))
-		reagents.add_reagent("nanites", 2)
-
-/obj/item/reagent_containers/food/snacks/roburgerbig
-	name = "roburger"
-	desc = "This massive patty looks like poison. Beep."
-	icon_state = "roburger"
-	filling_color = "#CCCCCC"
-	bitesize = 0.1
-	volume = 100
-	center_of_mass = list("x"=16, "y"=11)
-	matter = list(MATERIAL_BIOMATTER = 2)
-
-/obj/item/reagent_containers/food/snacks/roburgerbig/Initialize(mapload)
-	. = ..()
-	reagents.add_reagent("nanites", 100)
-	bitesize = 0.1
 
 /obj/item/reagent_containers/food/snacks/xenoburger
 	name = "xenoburger"
@@ -133,28 +93,6 @@
 	. = ..()
 	reagents.add_reagent("protein", 8)
 	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/clownburger
-	name = "clown burger"
-	desc = "This tastes funny..."
-	icon_state = "clownburger"
-	filling_color = "#FF00FF"
-	bitesize = 2
-	center_of_mass = list("x"=17, "y"=12)
-	nutriment_desc = list("bun" = 2, "clown shoe" = 3)
-	nutriment_amt = 6
-	matter = list(MATERIAL_BIOMATTER = 10)
-
-/obj/item/reagent_containers/food/snacks/mimeburger
-	name = "mime burger"
-	desc = "Its taste defies language."
-	icon_state = "mimeburger"
-	filling_color = "#FFFFFF"
-	bitesize = 2
-	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("bun" = 2, "mime paint" = 3)
-	nutriment_amt = 6
-	matter = list(MATERIAL_BIOMATTER = 10)
 
 /obj/item/reagent_containers/food/snacks/spellburger
 	name = "spell burger"

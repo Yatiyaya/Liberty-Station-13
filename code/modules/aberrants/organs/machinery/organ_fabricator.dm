@@ -97,40 +97,6 @@
 		rip_disk()
 		return TRUE
 
-/obj/machinery/autolathe/organ_fabricator/attackby(obj/item/I, mob/user)
-	// Warn about deconstruction
-	if(panel_open)
-		var/tool_type = I.get_tool_type(user, list(QUALITY_PRYING), src)
-		if(tool_type == QUALITY_PRYING)
-			var/starting_loc = user.loc		// Save location so user can't magically deconstruct it from a distance
-			var/choice = alert("If you deconstruct this machine, the biomatter inside will be destroyed. Are you sure you want to continue?", "Deconstruction Warning", "Deconstruct", "Leave it alone")
-			if(choice != "Deconstruct" || starting_loc != user.loc)
-				return
-
-	..()
-
-/obj/machinery/autolathe/organ_fabricator/on_deconstruction(obj/item/I, mob/user)
-	// Remove biomatter sheets and spill biomass
-	var/biomatter_removed = stored_material[MATERIAL_BIOMATTER]
-	stored_material[MATERIAL_BIOMATTER] = 0
-	var/biomatter_to_spill = round(biomatter_removed / 100, 1)
-	if(biomatter_to_spill)
-		var/list/all_dirs = alldirs.Copy()
-		var/list/dirs = list()
-		for(var/i in 1 to biomatter_to_spill)
-			dirs += pick_n_take(all_dirs)
-		spill_biomass(loc, dirs)
-		visible_message(SPAN_DANGER("Solidified biomass spills out of \the [src]!"))
-
-	..()
-
-/obj/machinery/autolathe/organ_fabricator/eject(material, amount)
-	var/material/M = get_material_by_name(material)
-	if(M.stack_type == /obj/item/stack/material/biomatter)
-		visible_message(SPAN_WARNING("Biomatter cannot be removed from this machine."))
-		return
-	..()
-
 /obj/item/circuitboard/organ_fabricator
 	name = "circuit board (organ fabricator)"
 	build_path = /obj/machinery/autolathe/organ_fabricator

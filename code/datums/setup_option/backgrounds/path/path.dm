@@ -7,6 +7,7 @@
 
 	stat_modifiers = list(
 		STAT_ROB = 10,
+		STAT_TGH = 5,
 		STAT_BIO = -10,
 		STAT_MEC = 10,
 		STAT_COG = -10
@@ -45,7 +46,9 @@
 /datum/category_item/setup_option/background/path/armed_forces //All ex militaries merged under here, also applies to cops like this.
 	name = "Former Armed Forces Member"
 	desc = "You were part of either a police force or enlisted in some military. \
-	You know how to handle a weapon well but any other skill leaves you staring."
+	You feel a mental fortitude many others don't; but many of your skills comes down to sweet-talk and shooting."
+
+	perks = list(PERK_VETERAN)
 
 	stat_modifiers = list(
 		STAT_ROB = 5,
@@ -53,7 +56,7 @@
 		STAT_VIG = 10,
 		STAT_BIO = -10,
 		STAT_MEC = -10,
-		STAT_COG = -5
+		STAT_COG = -10
 	)
 
 /datum/category_item/setup_option/background/path/mercenary //different from armoed forces member, get perk but less points is the idea here
@@ -67,7 +70,6 @@
 		STAT_TGH = 10,
 		STAT_VIG = 5,
 		STAT_BIO = -10,
-		STAT_MEC = 5,
 		STAT_COG = -10
 	)
 
@@ -79,9 +81,9 @@
 	perks = list(PERK_MARKET_PROF) //You have defended the free market one too many times Harry, you are getting political again.
 
 	stat_modifiers = list(
-		STAT_ROB = -10,
-		STAT_VIG = -10,
-		STAT_COG = 15
+		STAT_ROB = -5,
+		STAT_VIG = -5,
+		STAT_COG = 10
 	)
 
 /datum/category_item/setup_option/background/path/noble

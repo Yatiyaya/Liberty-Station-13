@@ -21,6 +21,7 @@
 #define PERK_MEDICAL_EXPERT /datum/perk/background/medicalexpertise
 #define PERK_KLUTZ /datum/perk/background/klutz
 #define PERK_MARKET_PROF /datum/perk/background/market_prof
+#define PERK_VETERAN /datum/perk/background/veteran
 
 //Synthetics
 #define PERK_REAPER /datum/perk/background/reaper
