@@ -207,6 +207,15 @@
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("protein" = 25, "tramadol" = 5)
 
+/obj/item/reagent_containers/food/snacks/meat/agape
+	name = "agape meat"
+	desc = "A massive slab of meat containing a massive amount of protein, the smell is abominable."
+	icon_state = "bearmeat"
+	filling_color = "#DB0000"
+	bitesize = 6
+	center_of_mass = list("x"=16, "y"=10)
+	preloaded_reagents = list("protein" = 25, "tramadol" = 5)
+
 /obj/item/reagent_containers/food/snacks/meat/xenomeat
 	name = "xenomorph meat"
 	desc = "A fatty cut of bright-green meat. The overwhelmingly powerful smell of the acid within burns your sinuses and makes your eyes water."
