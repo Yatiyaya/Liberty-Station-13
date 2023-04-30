@@ -13,7 +13,7 @@
 	mag_well = MAG_WELL_RIFLE
 	auto_eject = 1
 	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 15)
-	price_tag = 2200 //99 rounds of pure pain and destruction served in auto-fire, so it basically an upgraded LMG
+	price_tag = 1200	//Caseless, scope, that shit.
 	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/m41_reload.ogg'
@@ -43,11 +43,8 @@
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
 
-	if(ammo_magazine)
-		add_overlay("_mag[ammo_magazine.max_ammo]")
-	else
-		cut_overlays()
-		return
+	if (ammo_magazine)
+		iconstring += "_mag"
 
 	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
 		iconstring += "_slide"

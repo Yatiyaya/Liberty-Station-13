@@ -1,7 +1,7 @@
 // Using stacks since /obj/item/spacecash has no support for different currencies. Shit code, but cash-handling will need a rework to support alt currencies.
 /obj/item/stack/os_cash
 	name = "Similacrum Robotics Yuan"
-	desc = "Offical Similacrum Robotics Yuan coins, used across the ancient empire. Only compatible with SD One Star vendors."
+	desc = "Offical Similacrum Robotics Yuan coins, still accepted across the company. Only compatible with SD One Star vendors."
 	icon = 'icons/obj/os_cash.dmi'
 	icon_state = "oscash"
 	w_class = ITEM_SIZE_TINY
