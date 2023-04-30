@@ -107,7 +107,7 @@
 	permitted_wings = list()
 
 	darksight = 3 //Cat eyes
-	perks = list(PERK_LASTSTAND, PERK_BONE, PERK_BRAWN, PERK_CARNIVORE)
+	perks = list(PERK_LASTSTAND, PERK_BONE, PERK_BRAWN)
 
 /datum/species/sablekyne/get_bodytype()
 	return "Sablekyne"
@@ -275,7 +275,7 @@
 	permitted_tail  = list("Akula Tail")
 	permitted_wings = list()
 
-	perks = list(PERK_RECKLESSFRENZY, PERK_IRON_FLESH, PERK_CARNIVORE)
+	perks = list(PERK_RECKLESSFRENZY, PERK_IRON_FLESH)
 
 /datum/species/akula/get_bodytype()
 	return "Akula"

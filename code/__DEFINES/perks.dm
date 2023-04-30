@@ -43,10 +43,6 @@
 //Genetics Perks
 #define PERK_SPLICER /datum/perk/background/splicer
 
-// Food perks
-#define PERK_CARNIVORE /datum/perk/background/carnivore
-#define PERK_HERBIVORE /datum/perk/background/herbivore
-
 /////////////
 //Job Perks//
 /////////////
