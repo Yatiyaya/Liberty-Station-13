@@ -874,3 +874,21 @@
 		M.apply_effect(agony_amount, HALLOSS, 0)
 		if(prob(5))
 			to_chat(M, SPAN_DANGER("You feel like your insides are burning!"))
+
+/datum/reagent/toxin/mold
+	name = "Mold"
+	id = "mold"
+	description = "Food that went rotting for so long it liquefied. Do not consume."
+	taste_description = "stale vomit mixed with pineapples"
+	reagent_state = LIQUID
+	color = "#467508"
+	metabolism = REM
+	overdose = REAGENTS_OVERDOSE/2
+	nerve_system_accumulations = 5
+	strength = 0.01
+	sanityloss = 2
+
+/datum/reagent/toxin/mold/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	. = ..()
+	if(prob(20 * effect_multiplier))
+		M.vomit()

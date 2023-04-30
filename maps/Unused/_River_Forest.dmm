@@ -156,8 +156,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/river_forest_light)
 "aK" = (
-/obj/structure/scrap/food/large,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "aP" = (
@@ -886,7 +884,6 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/dungeon/outside/hunter_cabin)
 "lL" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
 "lN" = (
@@ -1475,7 +1472,6 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/outside/forest/plains_farm)
 "rD" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_dark)
 "rI" = (
@@ -1744,7 +1740,6 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_dark)
 "ub" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/alt,
 /area/liberty/outside/forest/river_forest_dark)
 "uc" = (
@@ -1776,7 +1771,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "us" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
 "uu" = (
@@ -2177,7 +2171,6 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/plains_farm)
 "xX" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "ya" = (
@@ -2186,7 +2179,6 @@
 /area/liberty/outside/forest/river_forest_light)
 "yc" = (
 /obj/structure/flora/small/trailrocka2,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "yd" = (
@@ -2669,7 +2661,6 @@
 /area/liberty/dungeon/outside/hunter_cabin)
 "Ch" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/alt,
 /area/liberty/outside/forest/river_forest_dark)
 "Ck" = (
@@ -3084,7 +3075,6 @@
 /area/liberty/dungeon/outside/hunter_cabin)
 "Gr" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/river_forest_underground)
 "Gs" = (
@@ -4406,7 +4396,6 @@
 /area/liberty/dungeon/outside/hunter_cabin)
 "UE" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_dark)
 "UF" = (
@@ -4468,7 +4457,6 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/outside/forest/river_forest_lake)
 "Va" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_dark)
 "Vb" = (
@@ -4583,7 +4571,6 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/river_forest_dark)
 "Wm" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "Wn" = (

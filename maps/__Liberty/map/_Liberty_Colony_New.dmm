@@ -2239,7 +2239,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/maintenance/undergroundfloor1east)
 "aBp" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/dcave)
 "aBx" = (
@@ -22198,7 +22197,6 @@
 /area/shuttle/vasiliy_shuttle_area)
 "fjB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/surface_maints_1)
@@ -22621,7 +22619,6 @@
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/foreman)
 "fnB" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/fnest)
 "fnD" = (
@@ -29497,7 +29494,6 @@
 /area/liberty/medical/sleeper)
 "gTF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -33663,7 +33659,6 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "hRP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/surface_maints_1)
 "hRX" = (
@@ -67403,7 +67398,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
 "pzI" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/bcave)
 "pzR" = (
@@ -103631,7 +103625,6 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "xJy" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor1north)

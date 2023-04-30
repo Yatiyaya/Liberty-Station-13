@@ -12,7 +12,6 @@
 						/obj/structure/scrap/large,
 						/obj/structure/scrap/medical/large,
 						/obj/structure/scrap/vehicle/large,
-						/obj/structure/scrap/food/large,
 						/obj/structure/scrap/guns/large,
 						/obj/structure/scrap/cloth/large,
 						/obj/structure/scrap/poor/structure,
@@ -40,7 +39,6 @@
 						/obj/structure/scrap/science/large = 20,
 						/obj/structure/scrap/vehicle/large = 30,
 						/obj/structure/scrap/cloth/large = 25,
-						/obj/structure/scrap/food/large = 1,
 						/obj/structure/scrap/guns/large = 5
 					))
 
