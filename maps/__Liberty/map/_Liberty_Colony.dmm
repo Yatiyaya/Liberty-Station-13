@@ -4087,6 +4087,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "bhg" = (
@@ -5918,6 +5923,7 @@
 /obj/machinery/light/floor{
 	pixel_y = 15
 	},
+/obj/structure/cyberplant,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "bIQ" = (
@@ -7194,9 +7200,6 @@
 "bZw" = (
 /obj/structure/multiz/stairs/active/bottom{
 	dir = 8
-	},
-/obj/machinery/light{
-	dir = 1
 	},
 /obj/structure/railing{
 	dir = 1;
@@ -13383,6 +13386,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "dFS" = (
@@ -21994,6 +21998,10 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/structure/cyberplant,
+/obj/effect/floor_decal/steeldecal/steel_decals_central6{
+	pixel_y = -7
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "gfS" = (
@@ -28733,9 +28741,6 @@
 /obj/machinery/floor_light,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor1east)
-"ich" = (
-/turf/simulated/mineral/planet,
-/area/liberty/crew_quarters)
 "ici" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
 /obj/effect/decal/cleanable/dirt,
@@ -34206,6 +34211,10 @@
 /obj/machinery/door/blast/shutters/glass,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
+"jFQ" = (
+/obj/structure/cyberplant,
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters/bar)
 "jFS" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "11,11"
@@ -43726,6 +43735,7 @@
 	dir = 8;
 	pixel_x = 15
 	},
+/obj/structure/cyberplant,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "mxd" = (
@@ -45756,9 +45766,6 @@
 /obj/structure/multiz/stairs/active{
 	dir = 8
 	},
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/crew_quarters/bar)
 "ndF" = (
@@ -47118,6 +47125,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
+"nvr" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/open,
+/area/liberty/crew_quarters/bar)
 "nvt" = (
 /obj/machinery/atmospherics/pipe/zpipe/up,
 /obj/structure/sign/warning/nosmoking/small{
@@ -49274,6 +49287,16 @@
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/hallway/side/f2section1)
+"obR" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "obU" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/item/stool,
@@ -53543,6 +53566,10 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "pnT" = (
 /obj/machinery/light,
+/obj/structure/cyberplant,
+/obj/effect/floor_decal/steeldecal/steel_decals_central6{
+	pixel_y = -7
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "pnU" = (
@@ -68744,6 +68771,9 @@
 	icon_state = "pipe-c"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "txL" = (
@@ -84270,7 +84300,7 @@
 	name = "Fireplace  Cover"
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/crew_quarters/bar)
+/area/liberty/crew_quarters/bar/vip)
 "xUO" = (
 /obj/effect/floor_decal/industrial/stand_clear/red,
 /obj/machinery/door/window/brigdoor/southleft{
@@ -99629,7 +99659,7 @@ kaq
 aTu
 jDx
 lcp
-pcS
+kUS
 stx
 pcS
 pcS
@@ -100035,7 +100065,7 @@ hOO
 dFR
 cNN
 eBG
-eAC
+obR
 eAC
 eAC
 lWq
@@ -100631,7 +100661,7 @@ aLr
 aLr
 geT
 sJJ
-ich
+emu
 bDC
 bDC
 bDC
@@ -140042,7 +140072,7 @@ qlM
 qlM
 qlM
 mDk
-mDk
+mrA
 mrA
 goc
 goc
@@ -140232,7 +140262,7 @@ wqB
 fvP
 fIA
 mDk
-ozw
+nvr
 ozw
 wux
 lfF
@@ -140433,7 +140463,7 @@ uIW
 lYo
 fvP
 noo
-mDk
+qlM
 ndB
 pDG
 itX
@@ -140635,7 +140665,7 @@ uIW
 eeB
 cfl
 iBx
-mDk
+qlM
 sZT
 mhw
 fnV
@@ -140648,7 +140678,7 @@ wPh
 nkw
 hRK
 mDk
-mDk
+mrA
 vBK
 lUQ
 vBx
@@ -141045,9 +141075,9 @@ vpS
 woh
 hkF
 eLk
-eLk
 hkF
 eLk
+hkF
 eLk
 hkF
 lQP
@@ -141247,9 +141277,9 @@ nlr
 btF
 edn
 eLQ
-eLQ
 edn
 eLQ
+edn
 eLQ
 edn
 lLn
@@ -141449,9 +141479,9 @@ xSl
 jlI
 nkz
 cfE
-cfE
 nkz
 cfE
+nkz
 cfE
 nkz
 ppS
@@ -143272,7 +143302,7 @@ qmO
 yis
 sYi
 pxd
-djn
+jFQ
 npF
 djn
 djn
