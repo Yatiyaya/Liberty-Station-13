@@ -806,7 +806,7 @@
 	name = "concrate slab"
 	icon = 'icons/turf/flooring/tiles_industeral.dmi'
 	icon_state = "concrete_small"
-	initial_flooring = /decl/flooring/industeral/concrate_small
+	initial_flooring = /decl/flooring/industrial/concrete_small
 
 /turf/simulated/floor/industrial/concrete_bricks
 	name = "concrate bricks"
