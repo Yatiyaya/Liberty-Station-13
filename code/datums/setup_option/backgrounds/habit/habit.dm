@@ -48,7 +48,7 @@
 /datum/category_item/setup_option/background/habit/generic
 	name = "Loser Lifestyle"
 	desc = "You are, by all means of the word, an incredibly generic person. You say no to drugs, you don't break laws - hell, it's questionable if you've ever even drank before. \
-	Some may call you a loser, but your abstinance from anything dangerous or possibly divisive has gotten you.. oddly far in life. Sure, you can't socialize for shit - but who care? \
+	Some may call you a loser, but your abstinence from anything dangerous or possibly divisive has gotten you.. oddly far in life. Sure, you can't socialize for shit - but who cares? \
 	You feel that this lifestyle has made you smarter than others. Maybe it has. Or maybe it's just your programming, you NPC. Now get a job, you NEET."
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
