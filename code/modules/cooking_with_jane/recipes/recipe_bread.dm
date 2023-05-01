@@ -145,15 +145,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/breadslice)
 	)
 
-/datum/cooking_with_jane/recipe/cherrysandwich
-	cooking_container = CUTTING_BOARD
-	product_type = /obj/item/reagent_containers/food/snacks/jellysandwich/cherry
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/breadslice),
-		list(CWJ_ADD_REAGENT, "cherryjelly", 5),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/breadslice)
-	)
-
 /datum/cooking_with_jane/recipe/jelliedtoast
 	cooking_container = CUTTING_BOARD
 	product_type = /obj/item/reagent_containers/food/snacks/jelliedtoast/cherry

@@ -56,6 +56,7 @@
 	// IDK if anyone is ever going to do this, so, adding some of the otherwise unobtainable ghetto chems to it - obey
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat
+	name = "roach meat"
 	desc = "A slab of sickly-green bubbling meat cut from a giant roach. You swear you can see it still twitching occasionally. Delicious!"
 	icon_state = "xenomeat"
 	filling_color = "#E2FFDE"
@@ -63,32 +64,44 @@
 	bitesize = 6
 	preloaded_reagents = list("protein" = 4, "blattedin" = 8, "diplopterum" = 7)
 
+/obj/item/reagent_containers/food/snacks/meat/roachmeat/kampfer
+	name = "overgrown roach meat"
+
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche
+	name = "vapour roach meat"
 	preloaded_reagents = list("protein" = 2, "blattedin"= 12, "seligitillin" = 8, "diplopterum" = 6)
 	// The roach that produces giant clouds of blattedin doesn't contain any blattedin in it's system? Tweaked. To compensate, making Jagers give even less blatt
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer
+	name = "exoskeleton roach meat"
 	preloaded_reagents = list("protein" = 8, "blattedin" = 12, "starkellin" = 15, "diplopterum" = 4)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer
+	name = "overlord roach meat"
 	preloaded_reagents = list("protein" = 6, "seligitillin" = 6, "fuhrerole" = 12, "diplopterum" = 6)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser
+	name = "hivelord roach meat"
 	preloaded_reagents = list("protein" = 6, "blattedin" = 12, "seligitillin" = 6, "starkellin" = 15, "fuhrerole" = 12, "diplopterum" = 6)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager
+	name = "hunter-killer roach meat"
 	preloaded_reagents = list("protein" = 6, "blattedin" = 2, "gewaltine" = 8, "diplopterum" = 2)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/kraftwerk
+	name = "nanite roach meat"
 	preloaded_reagents = list("protein" = 6, "blattedin" = 6, "gewaltine" = 6, "uncap nanites" = 2, "nanites" = 3)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/glowing
+	name = "glowing roach meat"
 	preloaded_reagents = list("protein" = 4, "blattedin" = 8, "diplopterum" = 7, MATERIAL_URANIUM = 5) // half a uranium per roach
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/elektromagnetisch
+	name = "ion roach meat"
 	preloaded_reagents = list("protein" = 4, "seligitillin" = 8, "diplopterum" = 6, "iron" = 5)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/benzin
+	name = "gasoline roach meat"
 	desc = "A slab of sickly-green meat cut from a fireball roach. Stinks of welding fuel. Delicious!"
 	preloaded_reagents = list("protein" = 4, "blattedin" = 6, "fuel" = 30)
 
