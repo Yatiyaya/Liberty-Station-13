@@ -30,7 +30,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
@@ -131,7 +131,7 @@
 		CRUCIFORM_PRIEST
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
 	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
@@ -176,7 +176,7 @@
 		CRUCIFORM_PRIEST
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
 	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
 	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
