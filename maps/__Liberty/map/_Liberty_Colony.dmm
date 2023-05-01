@@ -12356,26 +12356,6 @@
 	opacity = 0
 	},
 /area/liberty/engineering/workshop)
-"djN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/alarm{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/white/brown_platform,
-/area/liberty/medical/sleeper)
 "djS" = (
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood,
@@ -14960,7 +14940,8 @@
 	dir = 8
 	},
 /obj/structure/sign/warning/smoking/small{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 6
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
@@ -18090,6 +18071,17 @@
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/rock,
 /area/colony)
+"eRS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/network/medbay{
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "eRX" = (
 /obj/structure/table/rack,
 /obj/item/storage/backpack/industrial{
@@ -20672,7 +20664,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/white/cargo,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fDU" = (
 /obj/structure/disposalpipe/sortjunction/wildcard/flipped,
@@ -29396,6 +29388,16 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
+"hWj" = (
+/obj/machinery/button/remote/blast_door{
+	id = "bar1";
+	name = "north bar access";
+	pixel_x = -32;
+	pixel_y = 21;
+	req_access = list(25)
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters/barbackroom)
 "hWw" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "2,4"
@@ -39160,12 +39162,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
-"kJi" = (
-/obj/machinery/atm{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/white,
-/area/liberty/medical/sleeper)
 "kJn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -63826,6 +63822,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1east)
+"rxW" = (
+/obj/machinery/atm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "rxX" = (
 /obj/machinery/holoposter{
 	pixel_y = 32
@@ -70871,6 +70873,26 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/turret_protected/ai)
+"tra" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/alarm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/liberty/medical/sleeper)
 "trR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/cyan{
@@ -76519,20 +76541,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "uVM" = (
-/obj/machinery/button/remote/blast_door{
-	id = "bar1";
-	name = "north bar access";
-	pixel_x = -6;
-	pixel_y = 27;
-	req_access = list(25)
-	},
-/obj/machinery/button/remote/blast_door{
-	id = "bar2";
-	name = "south bar access";
-	pixel_x = 5;
-	pixel_y = 27;
-	req_access = list(25)
-	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4
 	},
@@ -88651,17 +88659,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
-"ykv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/medbay{
-	dir = 8
-	},
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 26
-	},
-/turf/simulated/floor/tiled/white,
-/area/liberty/medical/sleeper)
 "ykx" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -145514,7 +145511,7 @@ jXL
 eji
 ncs
 qSX
-yis
+hWj
 yis
 yis
 yis
@@ -148774,7 +148771,7 @@ efC
 gaD
 wZb
 tBa
-kJi
+rxW
 ioE
 ozn
 xkM
@@ -148787,7 +148784,7 @@ qAX
 hWQ
 iIq
 eJw
-ykv
+eRS
 eJw
 eOr
 fHr
@@ -150197,7 +150194,7 @@ ajd
 ajd
 xkM
 xkM
-djN
+tra
 pnM
 lBc
 oaD
