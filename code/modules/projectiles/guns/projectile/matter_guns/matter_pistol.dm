@@ -5,7 +5,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 /obj/item/gun/projectile/matter_gun
 	name = "Mk I \"Forger\" compressed-matter pistol"
-	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particles."
+	desc = "An odd design where a compressed matter cartridge is loaded into the firearm's designated port, effectively producing bullet-like particles."
 	icon = 'icons/obj/guns/nano/pistol.dmi'
 	icon_state = "forger"
 	item_state = "forger"
@@ -21,8 +21,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	var/projectile_type	= /obj/item/projectile/bullet/pistol_35/nano
 
-	var/max_stored_matter = 50
-	var/projectile_cost = 5
+	var/max_stored_matter = 20*2 	//currently the biggest mag on a 9mm, that and the flares are the advantages, not much else...maybe make the same as an extended mag in case it becomes meta
+	var/projectile_cost = 2			//if you think about it, every sheet of plasteel is 1.8 compressed matter...so this ammo is a bit expensive, specially if you thnik the crossbow is like 5 compressed per shot
 	var/stored_matter = 0
 	var/matter_type = MATERIAL_COMPRESSED_MATTER
 
@@ -30,7 +30,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	wield_delay_factor = 0.2 // 20 vig
 
 	init_firemodes = list(
-		list(mode_name="9mm bullet", mode_desc="fires a 9mm pistol round", projectile_type=/obj/item/projectile/bullet/pistol_35/nano, icon="kill"),
+		list(mode_name="9mm bullet", mode_desc="fires a 9mm pistol round", projectile_type=/obj/item/projectile/bullet/pistol_35/nano,projectile_cost = 3 icon="kill"),
 		list(mode_name="flare-shot", mode_desc="fires an illuminating flare of variable colors", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = 20, icon="grenade"),
 	)
 
@@ -76,7 +76,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 /obj/item/gun/projectile/matter_gun/shotgun
 	name = "Mk II \"Forger\" compressed-matter shotgun"
-	desc = "An odd design where a compressed matter cartriage is loaded into the firearm's designated port, effectively producing bullet-like particles. \
+	desc = "An odd design where a compressed matter cartridge is loaded into the firearm's designated port, effectively producing bullet-like particles. \
 			This version is far more bulkier than its pistol counterpart, but packs quite a punch. Able to fire projectiles that fragment on impact or incendiary rounds."
 	icon = 'icons/obj/guns/nano/shotgun.dmi'
 	icon_state = "railgun"
@@ -92,8 +92,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	projectile_type	= /obj/item/projectile/bullet/shotgun/ceramic
 
-	max_stored_matter = 100
-	projectile_cost = 10
+	max_stored_matter = 10*8	//ten shot semi auto? pretty good
+	projectile_cost = 8			//more than the pistol and the RXD, since it's technically stronger
 	stored_matter = 0
 	matter_type = MATERIAL_COMPRESSED_MATTER
 
