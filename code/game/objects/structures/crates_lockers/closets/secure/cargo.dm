@@ -1,19 +1,16 @@
 /obj/structure/closet/secure_closet/reinforced/quartermaster
-	name = "chief executive officer's locker"
+	name = "club manager's locker"
 	req_access = list(access_merchant)
 	icon_state = "qm"
 
 /obj/structure/closet/secure_closet/reinforced/quartermaster/populate_contents()
-	new /obj/item/clothing/under/rank/cargotech(src)
-	new /obj/item/clothing/shoes/color/brown(src)
-	new /obj/item/device/radio/headset/headset_cargo(src)
-	new /obj/item/clothing/gloves/thick(src)
-	new /obj/item/clothing/suit/fire(src)
+	new /obj/item/clothing/under/skylight_sweater(src)
+	new /obj/item/clothing/shoes/laceup(src)
+	new /obj/item/device/radio/headset/heads/clubmanager(src)
 	new /obj/item/clothing/accessory/halfcape/ceo(src)
 	new /obj/item/tank/emergency_oxygen(src)
 	new /obj/item/clothing/mask/gas(src)
-	new /obj/item/clothing/glasses/powered/meson(src)
-	new /obj/item/clothing/head/soft(src)
+	new /obj/item/clothing/head/fedora/feathered(src)
 	new /obj/item/device/scanner/price(src)
 	new /obj/item/gun/projectile/revolver/little_comet(src)
 	new /obj/item/gun_upgrade/mechanism/glass_widow(src)
@@ -21,30 +18,27 @@
 	new /obj/item/ammo_magazine/ammobox/pistol_35/rubber(src)
 	new /obj/item/stack/os_cash/random(src)
 	new /obj/item/direct_line(src)
+	new /obj/item/storage/box/ids(src)
 
 /obj/structure/closet/secure_closet/personal/cargotech
-	name = "cargo technician's locker"
+	name = "fixer's locker"
 	req_access = list(access_merchant)
 	access_occupy = list(access_cargo)
 	icon_state = "cargo"
 
 /obj/structure/closet/secure_closet/personal/cargotech/populate_contents()
-	new /obj/item/clothing/under/rank/cargotech(src)
+	new /obj/item/clothing/under/skylight_outfit(src)
+	new /obj/item/clothing/suit/storage/toggle/skylight_coat(src)
 	new /obj/item/clothing/shoes/color/black(src)
-	new /obj/item/device/radio/headset/headset_cargo(src)
+	new /obj/item/device/radio/headset/headset_service(src) //LL edit. Our cargo and service are together
 	new /obj/item/clothing/gloves/thick(src)
-	new /obj/item/clothing/head/soft(src)
 	new /obj/item/device/scanner/price(src)
 	if(prob(30))
-		new /obj/item/storage/backpack/satchel/industrial(src)
+		new /obj/item/storage/backpack/satchel(src)
 	else if(prob(50))
-		new /obj/item/storage/backpack/industrial(src)
-	else if(prob(50))
-		new /obj/item/storage/backpack/duffelbag(src)
-	else if(prob(75))
-		new /obj/item/storage/backpack/military(src)
+		new /obj/item/storage/backpack(src)
 	else
-		new /obj/item/storage/backpack/holding(src)
+		new /obj/item/storage/backpack/duffelbag(src)
 	if(prob(75))
 		new /obj/item/gun/projectile/revolver/detective(src)
 		new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
@@ -69,27 +63,26 @@
 		new /obj/item/gun/projectile/shotgun/doublebarrel(src)
 		new /obj/item/ammo_casing/shotgun/pellet/prespawned(src)
 		new /obj/item/ammo_casing/shotgun/pellet/prespawned(src)
-	if(prob(65))
-		new /obj/item/storage/pouch/medium_generic(src)
-	if(prob(65))
-		new /obj/random/pouch/always_spawn(src)
+	if(prob(50)) //melee weapons
+		new /obj/item/clothing/gloves/dusters(src)
+	else if(prob(50))
+		new /obj/item/material/baseballbat/metal(src)
+	else if(prob(50))
+		new /obj/item/tool/wrench/big_wrench(src)
+	else
+		new /obj/item/material/butterfly/switchblade(src)
 	if(prob(75))
 		new /obj/item/storage/firstaid/regular(src)
 	if(prob(65))
 		new /obj/item/reagent_containers/syringe/stim/turbo(src)
 		new /obj/item/reagent_containers/syringe/stim/boxer(src)
 		new /obj/item/reagent_containers/syringe/stim/violence_ultra(src)
-	if(prob(15))
-		new /obj/item/oddity/common/old_money(src)
-	if(prob(15))
-		new /obj/item/oddity/common/old_id(src)
-	if(prob(15))
-		new /obj/item/oddity/common/old_newspaper(src)
-	if(prob(15))
-		new /obj/item/oddity/common/old_pda(src)
-	if(prob(15))
-		new /obj/item/oddity/common/old_radio(src)
-	new /obj/item/clothing/accessory/armband/cargo(src)
+	if(prob(50)) //welcome to the mob family
+		new /obj/item/reagent_containers/food/snacks/pastatomato(src)
+	else if(prob(50))
+		new /obj/item/reagent_containers/food/snacks/meatballspagetti(src)
+	else
+		new /obj/item/reagent_containers/food/snacks/boiledspagetti(src)
 
 /obj/structure/closet/secure_closet/personal/artist
 	name = "Skylight artist's locker"
@@ -105,7 +98,7 @@
 	new /obj/item/clothing/head/beret/artist(src)
 	new /obj/item/clothing/glasses/artist(src)
 	new /obj/item/clothing/mask/gas/artist_hat(src)
-	new /obj/item/device/radio/headset/headset_cargo(src)
+	new /obj/item/device/radio/headset/headset_service(src)
 	new /obj/item/circuitboard/artist_bench(src)
 	new /obj/item/storage/pouch/grow_a_gun(src)
 	new /obj/item/toy/badtothebone(src) // They should be able to use this just as much.
