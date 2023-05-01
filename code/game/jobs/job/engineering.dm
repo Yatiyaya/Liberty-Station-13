@@ -148,8 +148,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	Locate other valuables within the tunnels that may be turned to profit."
 
 	access = list(
-		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
-		access_external_airlocks, access_construction, access_atmospherics, access_mining, access_mining_office, access_mining_station
+		access_eva, access_maint_tunnels, access_external_airlocks, access_mining, access_mining_office, access_mining_station
 	)
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
