@@ -21,8 +21,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	var/projectile_type	= /obj/item/projectile/bullet/pistol_35/nano
 
-	var/max_stored_matter = 50
-	var/projectile_cost = 5
+	var/max_stored_matter = 60
+	var/projectile_cost = 1.25
 	var/stored_matter = 0
 	var/matter_type = MATERIAL_COMPRESSED_MATTER
 
@@ -30,8 +30,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	wield_delay_factor = 0.2 // 20 vig
 
 	init_firemodes = list(
-		list(mode_name="9mm bullet", mode_desc="fires a 9mm pistol round", projectile_type=/obj/item/projectile/bullet/pistol_35/nano, icon="kill"),
-		list(mode_name="flare-shot", mode_desc="fires an illuminating flare of variable colors", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = 20, icon="grenade"),
+		list(mode_name="nano bullet", mode_desc="fabricates a bullet directly in the barrel then fires", projectile_type=/obj/item/projectile/bullet/pistol_35/nano, icon="kill"),
+		list(mode_name="superheated slug", mode_desc="overcharge the fabrication mechanism to launch a molten slug that illuminates the area", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = 5, icon="grenade"),
 	)
 
 /obj/item/gun/projectile/matter_gun/attackby(obj/item/W as obj, mob/user as mob)
@@ -92,8 +92,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	projectile_type	= /obj/item/projectile/bullet/shotgun/ceramic
 
-	max_stored_matter = 100
-	projectile_cost = 10
+	max_stored_matter = 120
+	projectile_cost = 2.5
 	stored_matter = 0
 	matter_type = MATERIAL_COMPRESSED_MATTER
 
@@ -101,6 +101,6 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	wield_delay_factor = 0.3 // 30 vig
 
 	init_firemodes = list(
-		list(mode_name="ceramic slug", mode_desc="fires a 12 gauge round", projectile_type=/obj/item/projectile/bullet/shotgun/ceramic, icon="kill"),
-		list(mode_name="super-heated pellets", mode_desc="fires multiple super-heated pellets akin to buckshot", projectile_type=/obj/item/projectile/bullet/pellet/shotgun/energy, icon="grenade"),
+		list(mode_name="ceramic slug", mode_desc="fires a sinlge high-powered slug", projectile_type=/obj/item/projectile/bullet/shotgun/ceramic, icon="kill"),
+		list(mode_name="super-heated pellets", mode_desc="overclock the fabricator to fire a spray of super-heated pellets", projectile_type=/obj/item/projectile/bullet/pellet/shotgun/energy, icon="grenade"),
 	)
