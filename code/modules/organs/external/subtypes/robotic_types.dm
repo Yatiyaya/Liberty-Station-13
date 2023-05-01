@@ -242,7 +242,7 @@ obj/item/organ/external/robotic/synthskin/groin
 
 // Blackshied
 /obj/item/organ/external/robotic/blackshield
-	name = "\"Blackshield\""
+	name = "\"Liberty Watch\""
 	desc = "Reinforced dark prosthesis designed for heavy combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/blackshield.dmi'
 	model = "blackshield"
@@ -270,12 +270,12 @@ obj/item/organ/external/robotic/synthskin/groin
 	max_damage = 200
 
 /obj/item/organ/external/robotic/blackshield/torso
-	name = "\"Blackshield\" Torso"
+	name = "\"Liberty Watch\" Torso"
 	default_description = /datum/organ_description/chest
 	max_damage = 200
 
 /obj/item/organ/external/robotic/blackshield/head
-	name = "\"Blackshield\" Head"
+	name = "\"Liberty Watch\" Head"
 	default_description = /datum/organ_description/head
 	max_damage = 200
 

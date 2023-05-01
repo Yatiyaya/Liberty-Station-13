@@ -1,8 +1,8 @@
 //Colony allies for events to help support players
 
 /mob/living/carbon/superior_animal/human/colony_allie
-	name = "Blackshield Infantryman"
-	desc = "A Blackshield Vatgrown Trooper Ready To Fight for the Colony Armed with a Modern Duty Battle Carbine, He seems able to Fight on Long and Close Quarters, He seems like an Average Fighter"
+	name = "Infantryman"
+	desc = "A Vatgrown Trooper Ready To Fight for the Colony Armed with a Modern Duty Battle Carbine, He seems able to Fight on Long and Close Quarters, He seems like an Average Fighter"
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "BS"
 	icon_dead = "BS_dead"

@@ -202,45 +202,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	icon_state = "ammo_case_blackmarket"
 	desc = "A shady looking ammo can. Can hold ammo magazines, boxes, and bullets. Alt+click to open and close."
 
-/obj/item/storage/hcases/ammo/blackmarket/co
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/co/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/voucher/blackshield/COsecondary(src) // They don't spawn with a Lamia anymore, but come with their own secondary voucher.
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-	new /obj/item/clothing/accessory/badge/holo/co(src)
-
-/obj/item/storage/hcases/ammo/blackmarket/serg
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/serg/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
-
-/obj/item/storage/hcases/ammo/blackmarket/medspec
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/medspec/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
-/obj/item/storage/hcases/ammo/blackmarket/trooper
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/trooper/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
 /obj/item/storage/hcases/ammo/excel
 	icon_state = "ammo_case_excel"
 	desc = "The peoples ammo can! Can hold ammo magazines, boxes, and bullets. Alt+click to open and close."

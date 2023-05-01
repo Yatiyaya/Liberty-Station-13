@@ -61,16 +61,9 @@ var/global/blackshield_max_energy //Maximaum combined energy of all teleporters
 		/obj/item/gun/projectile/automatic/sts/rifle = 400,
 		/obj/item/shield/buckler = 250,
 		/obj/item/shield/riot = 350,
-		//Armor
-		/obj/item/clothing/head/helmet/faceshield/altyn/milisha = 120,
-		/obj/item/clothing/suit/space/void/security/odst/mil = 300,
-		/obj/item/clothing/suit/space/void/odst/corps = 300,
-		/obj/item/clothing/suit/space/void/SCAF/blackshield = 1250, //One of the best things we can get
 		//misc
 		/obj/item/tool/baton = 200,
 		/obj/item/storage/firstaid/surgery/traitor = 250, //Advanced tools inside
-		/obj/item/storage/firstaid/blackshield/large = 500,
-		/obj/item/stock_parts/blackshield/stskit = 750 //For making STS PARAs
 		)
 	var/entropy_value = 1 //It is still bluespace
 

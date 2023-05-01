@@ -340,7 +340,7 @@
 	obscuration = MEDIUM_OBSCURATION
 
 /obj/item/clothing/suit/space/void/odst
-	name = "Sol Federation voidsuit"
+	name = "Terran Federation voidsuit"
 	desc = "Do you wanna be a hero in the sky? High adventure, higher pay, join the Space Marines today."
 	icon_state = "odst"
 	item_state = "odst"
@@ -355,33 +355,6 @@
 	)
 	siemens_coefficient = 0.7
 	helmet = /obj/item/clothing/head/helmet/space/void/odst
-
-
-/obj/item/clothing/head/helmet/space/void/odst/mil
-	name = "blackshield voidsuit helmet"
-	icon_state = "odst_mil"
-	item_state = "odst_mil"
-	camera_networks = list(NETWORK_SECURITY)
-
-/obj/item/clothing/suit/space/void/security/odst/mil
-	name = "blackshield voidsuit"
-	icon_state = "odst_mil"
-	item_state = "odst_mil"
-	helmet = /obj/item/clothing/head/helmet/space/void/odst/mil
-
-/obj/item/clothing/head/helmet/space/void/odst/corps
-	name = "blackshield corpsman voidsuit helmet"
-	icon_state = "odst_mil"
-	item_state = "odst_mil"
-	camera_networks = list(NETWORK_SECURITY)
-
-/obj/item/clothing/suit/space/void/odst/corps
-	name = "blackshield corpsman voidsuit"
-	icon_state = "odst_corps"
-	item_state = "odst_corps"
-	helmet = /obj/item/clothing/head/helmet/space/void/odst/corps
-
-
 
 //Colored military suits//
 /obj/item/clothing/head/helmet/space/void/odst/red

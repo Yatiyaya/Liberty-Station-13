@@ -684,14 +684,6 @@
 	icon_state = "bulletproof_ironhammer"
 	item_state = "bulletproof_ironhammer"
 
-/obj/item/clothing/suit/armor/bulletproof/ironhammer/militia
-	name = "blackshield bulletproof suit"
-	desc = "A set of vest, shoulder guards and leg guards that excel at protecting against high-velocity, solid projectiles. \
-			This particular set seems to have been taken straight from the armory of some low-budget P.D.F or Reserve force, repainted in \
-			Blackshield colors and given their I.F.F markings."
-	icon_state = "bulletproof_bs"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
-
 //Ablatives / Laserproof
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
@@ -781,16 +773,6 @@
 	max_upgrades = 2
 	siemens_coefficient = 0
 	price_tag = 650
-
-/obj/item/clothing/suit/armor/vest/ablative/militia
-	name = "blackshield ablative plate"
-	desc = "An outdated set of ablative armor, utilizing advanced materials to absorb rather than reflect energy projeciles and painted in Blackshield's colors. \
-			A distinctive set of equipment, the MK-II 'Energy Defense Gear' sold more for its distinctive, and some would say 'flashy' \
-			appearance than its capabilities. Despite its bad reputation as a tax-payer credit sink, it serves as a fairly adequate piece of gear."
-	icon_state = "ablative_bs"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
-	slowdown = 0.5
-	armor_list = list(melee = 25, bullet = 25, energy = 60, bomb = 10, bio = 0, rad = 0)
 
 //Flak Vests
 /obj/item/clothing/suit/armor/flakvest
@@ -1070,7 +1052,7 @@
 
 /obj/item/clothing/suit/armor/platecarrier/full
 	name = "full body plate carrier"
-	desc = "An armored vest carrying trauma plates and light ballistic meshes, in Blackshield colors. It has been improved by adding shoulderpads and kneepads for additional coverage."
+	desc = "An armored vest carrying trauma plates and light ballistic meshes. It has been improved by adding shoulderpads and kneepads for additional coverage."
 	icon_state = "platecarrier_fullbody"
 	item_state = "platecarrier_fullbody"
 	blood_overlay_type = "armor"
@@ -1173,48 +1155,6 @@
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 	stiffness = MEDIUM_STIFFNESS
-
-/obj/item/clothing/suit/armor/commander/militia
-	name = "commander's armored coat"
-	desc = "A heavily armored combination of menacing style and cutting-edge body armor wearing the insignia and stripes of the Blackshield Commander."
-	icon_state = "commander_mil"
-	item_state = "commander_mil"
-	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/commander/militia/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Blackshield Colours"] = "commander_mil"
-	options["Desert Combat"] = "commander_tan"
-	options["Woodlands Combat"] = "commander_green"
-	options["Woodlands Blackshield Combat"] = "commander_green_mil"
-	options["BC Cloaked Greatcoat"] = "mc_coat_cloak"
-	options["BC Greatcoat"] = "mc_coat"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/storage/armor/militia_overcoat // Pockets for your hands on the cold.
-	name = "blackshield armored overcoat"
-	desc = "Blackshield greatcoat with kevlar weave and rank epaulettes. Worn in cold environments, guard duty or formal events."
-	armor_list = list(melee = 30, bullet = 35, energy = 20, bomb = 10, bio = 0, rad = 0)
-	icon_state = "overcoat_bm"
-	item_state = "overcoat_bm"
 
 /obj/item/clothing/suit/storage/armor/marshal_coat
 	name = "marshal officers greatcoat"
