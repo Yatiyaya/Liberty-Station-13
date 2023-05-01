@@ -1455,10 +1455,6 @@
 /obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 1
 	},
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/sleeper)
@@ -6312,16 +6308,6 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "bLz" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
 	},
@@ -6336,6 +6322,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/security/maingate_outside)
@@ -14949,7 +14940,8 @@
 	dir = 8
 	},
 /obj/structure/sign/warning/smoking/small{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 6
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
@@ -15377,7 +15369,6 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "edn" = (
-/obj/item/flame/candle/pre_lit/endless,
 /obj/structure/table/bar_special,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/bar)
@@ -18080,6 +18071,17 @@
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/rock,
 /area/colony)
+"eRS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/network/medbay{
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "eRX" = (
 /obj/structure/table/rack,
 /obj/item/storage/backpack/industrial{
@@ -20662,7 +20664,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/white/cargo,
 /area/liberty/crew_quarters/sleep/cryo2)
 "fDU" = (
 /obj/structure/disposalpipe/sortjunction/wildcard/flipped,
@@ -29386,6 +29388,16 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
+"hWj" = (
+/obj/machinery/button/remote/blast_door{
+	id = "bar1";
+	name = "north bar access";
+	pixel_x = -32;
+	pixel_y = 21;
+	req_access = list(25)
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters/barbackroom)
 "hWw" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "2,4"
@@ -34076,7 +34088,7 @@
 	},
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/machinery/light{
-	dir = 4
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/rnd/research)
@@ -35060,9 +35072,7 @@
 /obj/item/tool/tape_roll,
 /obj/item/folder/blue,
 /obj/item/paper/monitorkey,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/light,
 /turf/simulated/floor/wood,
 /area/liberty/command/captain/quarters)
 "jBQ" = (
@@ -36791,12 +36801,12 @@
 /area/liberty/engineering/engine_room)
 "jZG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -41838,18 +41848,18 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "lxt" = (
 /obj/effect/floor_decal/industrial/warningred,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
 	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/security/maingate_outside)
@@ -41885,8 +41895,11 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/security/prisoncells)
 "lxG" = (
-/turf/simulated/floor/tiled/steel/bar_light,
-/area/liberty/maintenance/undergroundfloor1east)
+/obj/turbolift_map_obj/turbolift_map_base/liberty/mountaintop,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "9,23"
+	},
+/area/turbolift/mountain/colony)
 "lxJ" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
@@ -47629,6 +47642,11 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/security/maingate_outside)
@@ -54311,10 +54329,18 @@
 	name = "Security Training"
 	})
 "oWg" = (
-/obj/structure/table/woodentable,
-/obj/item/flame/candle/pre_lit/endless,
-/turf/simulated/floor/tiled/steel/bar_light,
-/area/liberty/crew_quarters/bar)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/network/security{
+	dir = 1
+	},
+/obj/machinery/button/remote/blast_door{
+	id = "Armory";
+	name = "Armory Blast Doors";
+	req_access = list(3);
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark/bluecorner,
+/area/liberty/security/sechall)
 "oWh" = (
 /turf/simulated/shuttle/wall/escpod{
 	icon_state = "escpodwall26";
@@ -60274,6 +60300,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/cryo)
 "qAk" = (
@@ -62812,6 +62843,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
+"rju" = (
+/obj/structure/flora/small/snow/rock2,
+/turf/unsimulated/floor/snow,
+/area/liberty/outside/forest)
 "rjw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -63787,6 +63822,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1east)
+"rxW" = (
+/obj/machinery/atm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "rxX" = (
 /obj/machinery/holoposter{
 	pixel_y = 32
@@ -63824,6 +63865,11 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/gate,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/security/maingate_outside)
 "ryd" = (
@@ -70827,6 +70873,26 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/turret_protected/ai)
+"tra" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/alarm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/liberty/medical/sleeper)
 "trR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/cyan{
@@ -73586,9 +73652,14 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atm{
-	pixel_y = 30
+/obj/machinery/button/remote/airlock{
+	blue_ink_tk_blocker = 1;
+	desc = "It controls doors, remotely. This one has tinfoil like cover on it.";
+	id = "medbay exit";
+	name = "Medbay Exit Button";
+	pixel_y = 32
 	},
+/obj/effect/floor_decal/industrial/loading/red,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
 "ufy" = (
@@ -74329,6 +74400,11 @@
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Post";
 	req_access = list(1)
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/liberty/security/maingate)
@@ -76465,20 +76541,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "uVM" = (
-/obj/machinery/button/remote/blast_door{
-	id = "bar1";
-	name = "north bar access";
-	pixel_x = -6;
-	pixel_y = 27;
-	req_access = list(25)
-	},
-/obj/machinery/button/remote/blast_door{
-	id = "bar2";
-	name = "south bar access";
-	pixel_x = 5;
-	pixel_y = 27;
-	req_access = list(25)
-	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4
 	},
@@ -77262,7 +77324,8 @@
 /obj/machinery/chemical_dispenser,
 /obj/machinery/firealarm{
 	dir = 8;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = -5
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/chemistry)
@@ -79144,7 +79207,7 @@
 /obj/machinery/computer/guestpass{
 	dir = 4;
 	pixel_x = -25;
-	pixel_y = 3
+	pixel_y = 12
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
@@ -107035,7 +107098,7 @@ faG
 smE
 bps
 fIl
-lxG
+jat
 qWX
 bps
 omv
@@ -107439,7 +107502,7 @@ lpd
 rYH
 bps
 ylk
-lxG
+jat
 uqv
 bps
 omv
@@ -107841,7 +107904,7 @@ eKV
 iIj
 pWf
 eKV
-lxG
+jat
 vcT
 vcT
 tnR
@@ -108243,7 +108306,7 @@ vRJ
 vcT
 iuR
 aJK
-lxG
+jat
 iIj
 rri
 faG
@@ -145255,7 +145318,7 @@ sIy
 bIP
 jvq
 pBu
-oWg
+hAo
 iuw
 sCV
 okn
@@ -145448,7 +145511,7 @@ jXL
 eji
 ncs
 qSX
-yis
+hWj
 yis
 yis
 yis
@@ -145659,7 +145722,7 @@ acp
 isu
 jvq
 pBu
-oWg
+hAo
 iuw
 ayD
 rJc
@@ -148708,7 +148771,7 @@ efC
 gaD
 wZb
 tBa
-oZn
+rxW
 ioE
 ozn
 xkM
@@ -148721,7 +148784,7 @@ qAX
 hWQ
 iIq
 eJw
-hsH
+eRS
 eJw
 eOr
 fHr
@@ -150131,7 +150194,7 @@ ajd
 ajd
 xkM
 xkM
-unr
+tra
 pnM
 lBc
 oaD
@@ -152127,11 +152190,11 @@ knO
 qTA
 evs
 wtD
-wtD
-dvL
-dvL
-dvL
 nAc
+dvL
+dvL
+dvL
+wtD
 wtD
 wtD
 mnK
@@ -153130,7 +153193,7 @@ vXj
 rRK
 uAc
 uAc
-uAc
+lxG
 uyV
 vXj
 wtD
@@ -175413,7 +175476,7 @@ wgB
 wgB
 cvY
 wgB
-wgB
+sHG
 fsf
 wgB
 wgB
@@ -177450,7 +177513,7 @@ wgB
 wgB
 wgB
 cvY
-wgB
+sHG
 aHy
 wgB
 wgB
@@ -178415,7 +178478,7 @@ gwv
 rQC
 rQC
 rQC
-rQC
+obA
 ogP
 rQC
 rQC
@@ -179007,7 +179070,7 @@ dyz
 hKS
 hKS
 rQC
-rQC
+obA
 jjF
 rQC
 rQC
@@ -179418,7 +179481,7 @@ rQC
 rQC
 rQC
 rQC
-rQC
+obA
 ogP
 rQC
 rQC
@@ -180263,7 +180326,7 @@ vRC
 vRC
 vRC
 wgB
-rtf
+rju
 oAU
 wgB
 wgB
@@ -183383,7 +183446,7 @@ fMf
 gor
 qqf
 ayF
-tBh
+oWg
 hDO
 awW
 lGS
@@ -187151,7 +187214,7 @@ wgB
 gNC
 wgB
 wgB
-wgB
+sHG
 fsf
 cvY
 wgB
@@ -193211,7 +193274,7 @@ wgB
 wgB
 cvY
 wgB
-wgB
+sHG
 fsf
 wgB
 wgB
@@ -194204,7 +194267,7 @@ dEP
 wgB
 wgB
 wgB
-wgB
+sHG
 aHy
 wgB
 wgB
@@ -195353,7 +195416,7 @@ rQC
 rQC
 gwv
 rQC
-rQC
+obA
 ghI
 rQC
 rQC
@@ -196179,7 +196242,7 @@ gwv
 rQC
 rQC
 rQC
-rQC
+obA
 jkR
 rQC
 rQC
@@ -197437,7 +197500,7 @@ vRC
 wgB
 wgB
 wgB
-wgB
+sHG
 aHy
 wgB
 qwy
@@ -198060,7 +198123,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+sHG
 aHy
 wgB
 wgB
@@ -198646,7 +198709,7 @@ kAf
 wgB
 wgB
 wgB
-wgB
+sHG
 aHy
 wgB
 wgB
@@ -200038,7 +200101,7 @@ kfM
 hWE
 cvY
 wgB
-wgB
+sHG
 fsf
 wmI
 wgB
