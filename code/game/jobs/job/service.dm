@@ -9,7 +9,7 @@
 	supervisors = "You"
 	difficulty = "Medium."
 	selection_color = "#dddddd"
-	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
+	access = list(access_merchant, access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	wage = WAGE_COMMAND
 	stat_modifiers = list(
 		STAT_ROB = 15,
