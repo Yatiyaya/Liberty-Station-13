@@ -52,6 +52,12 @@
 	wall_color = "#FFFFFF"
 	icon_state = "church"
 
+//rusted low wall
+/obj/structure/low_wall/rusted
+	name = "Rusted low wall"
+	wall_color = "FFFFFF"
+	icon_state = "rusted"
+
 
 //Low walls mark the turf they're on as a wall.  This is vital for floor icon updating code
 /obj/structure/low_wall/New()
