@@ -229,7 +229,7 @@
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "fz" = (
 /obj/structure/low_wall/onestar,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fA" = (
 /obj/structure/table/rack/shelf,
@@ -1638,7 +1638,7 @@
 "Ji" = (
 /obj/structure/low_wall/onestar,
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Jo" = (
 /obj/structure/salvageable/computer_os,
@@ -1848,7 +1848,7 @@
 "NG" = (
 /obj/structure/low_wall/onestar,
 /obj/item/stack/os_cash/random,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "NI" = (
 /obj/item/device/lighting/toggleable/lantern,

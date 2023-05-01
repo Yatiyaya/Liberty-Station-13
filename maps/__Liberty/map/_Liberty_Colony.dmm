@@ -1455,10 +1455,6 @@
 /obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 1
 	},
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/sleeper)
@@ -12360,6 +12356,26 @@
 	opacity = 0
 	},
 /area/liberty/engineering/workshop)
+"djN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/alarm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/liberty/medical/sleeper)
 "djS" = (
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood,
@@ -39144,6 +39160,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
+"kJi" = (
+/obj/machinery/atm{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "kJn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -73608,9 +73630,14 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atm{
-	pixel_y = 30
+/obj/machinery/button/remote/airlock{
+	blue_ink_tk_blocker = 1;
+	desc = "It controls doors, remotely. This one has tinfoil like cover on it.";
+	id = "medbay exit";
+	name = "Medbay Exit Button";
+	pixel_y = 32
 	},
+/obj/effect/floor_decal/industrial/loading/red,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
 "ufy" = (
@@ -74351,6 +74378,11 @@
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Post";
 	req_access = list(1)
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/liberty/security/maingate)
@@ -77284,7 +77316,8 @@
 /obj/machinery/chemical_dispenser,
 /obj/machinery/firealarm{
 	dir = 8;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = -5
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/chemistry)
@@ -79166,7 +79199,7 @@
 /obj/machinery/computer/guestpass{
 	dir = 4;
 	pixel_x = -25;
-	pixel_y = 3
+	pixel_y = 12
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
@@ -88618,6 +88651,17 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
+"ykv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/network/medbay{
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/medical/sleeper)
 "ykx" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -148730,7 +148774,7 @@ efC
 gaD
 wZb
 tBa
-oZn
+kJi
 ioE
 ozn
 xkM
@@ -148743,7 +148787,7 @@ qAX
 hWQ
 iIq
 eJw
-hsH
+ykv
 eJw
 eOr
 fHr
@@ -150153,7 +150197,7 @@ ajd
 ajd
 xkM
 xkM
-unr
+djN
 pnM
 lBc
 oaD
