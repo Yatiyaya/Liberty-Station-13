@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/roach/benzin
-	name = "Fireball Roach"
+	name = "Gasoline Roach"
 	desc = "A monstrous, dog-sized cockroach. This one smells like welding fuel and will likely explode when shot!."
 	icon_state = "boomroach"
 	turns_per_move = 4

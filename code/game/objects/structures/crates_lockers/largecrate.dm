@@ -103,7 +103,7 @@
 	held_type = /mob/living/carbon/superior_animal/giant_spider/hunter
 
 /obj/structure/largecrate/animal/welder_roach
-	name = "Benzin Roach crate"
+	name = "Gasoline Roach crate"
 	held_type = /mob/living/carbon/superior_animal/roach/benzin
 
 /obj/structure/largecrate/animal/piano

@@ -186,7 +186,7 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/seucheburger
-	name = "vapour burger"
+	name = "vapour roach burger"
 	desc = "A burger made out of a vapour roach. This can't be healthy."
 	icon_state = "seucheburger"
 	bitesize = 2
