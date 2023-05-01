@@ -1,8 +1,9 @@
 /datum/job/clubmanager
 	title = "Club Manager"
 	flag = CLUBMANAGER
+	head_position = 1
 	department = DEPARTMENT_SERVICE
-	department_flag = SERVICE
+	department_flag = SERVICE | COMMAND
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
@@ -11,6 +12,8 @@
 	selection_color = "#dddddd"
 	access = list(access_merchant, access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	wage = WAGE_COMMAND
+	department_account_access = TRUE
+	playtimerequired = 1200
 	stat_modifiers = list(
 		STAT_ROB = 15,
 		STAT_TGH = 15,
