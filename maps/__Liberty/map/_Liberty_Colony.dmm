@@ -284,8 +284,7 @@
 /area/liberty/crew_quarters)
 "afJ" = (
 /obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/box/red,
-/obj/structure/noticeboard/blackshield{
+/obj/effect/floor_decal/industrial/box/red{
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals10{
@@ -35902,11 +35901,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/bonfire/chapel)
 "jMQ" = (
-/obj/item/clothing/accessory/ranks/brigadier,
 /obj/structure/table/rack/shelf,
-/obj/item/clothing/accessory/patches/blackshield_brigadier,
-/obj/item/clothing/suit/rank/brigdress,
-/obj/item/clothing/under/rank/brigservice,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/contraband/poster/placed/recruitment/blackshield{

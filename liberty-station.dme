@@ -1835,7 +1835,6 @@
 #include "code\modules\clothing\under\jobs\engineering.dm"
 #include "code\modules\clothing\under\jobs\fontaine.dm"
 #include "code\modules\clothing\under\jobs\medsci.dm"
-#include "code\modules\clothing\under\jobs\militia.dm"
 #include "code\modules\clothing\under\jobs\security.dm"
 #include "code\modules\clothing\underwear\base.dm"
 #include "code\modules\conciousness_backup\_overwrites.dm"

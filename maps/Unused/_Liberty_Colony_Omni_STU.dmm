@@ -36813,7 +36813,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/wooden,
-/obj/item/tool/knife/boot/blackshield,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
