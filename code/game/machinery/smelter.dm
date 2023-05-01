@@ -213,11 +213,15 @@
 		CRASH("Attempted to drop an invalid material: [material]")
 
 	var/ejected_amount = min(initial(stack_type.max_amount), round(stored_material[material]), storage_capacity)
-	var/obj/item/stack/material/S = new stack_type(src, ejected_amount)
+	var/remainder = ejected_amount - round(ejected_amount)
+	var/obj/item/stack/material/S = new stack_type(src, round(ejected_amount))
+	var/shard
+	if(remainder)
+		shard = new /obj/item/material/shard(src, material, _amount = remainder)
 	eject(S, output_side)
-	S.reset_plane_and_layer()
+	if(shard)
+		eject(shard, output_side)
 	stored_material[material] -= ejected_amount
-
 
 /obj/machinery/smelter/proc/eject_all_material(material = null)
 	if(!material)
@@ -349,4 +353,4 @@
 
 	SSnano.update_uis(src)
 	return FALSE
-	
+
