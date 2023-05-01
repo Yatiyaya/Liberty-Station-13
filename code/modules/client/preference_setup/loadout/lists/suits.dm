@@ -200,3 +200,7 @@
 /datum/gear/suit/boxer_jacket
 	display_name = "boxer jacket"
 	path = /obj/item/clothing/suit/storage/boxer_jacket
+
+/datum/gear/suit/sling
+	display_name = "universal sling"
+	path = 	/obj/item/clothing/suit/sling
