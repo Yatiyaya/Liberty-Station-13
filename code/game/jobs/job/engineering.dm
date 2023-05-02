@@ -105,7 +105,7 @@
 	description = "The Mechanical Technician is a member of one of the greatest engineering guilds in the galaxy, contracted to maintain this colony.<br>\
 Your main priority is ensuring the setup and maintenance of the colonies power grid. Seek guidance on this complex task if untrained.<br>\
 Outside of this, you should devote time to learning and configuring various systems. Everything can be improved, and new constructs can be made.<br>\
-This upgrade culture extends to your own arsenal - mod and upgrade your tools with parts from maintenance, or purchased from Lonestar or the Prospectors.<br>\
+This upgrade culture extends to your own arsenal - mod and upgrade your tools with parts from maintenance, or purchased from Skylight or the Prospectors.<br>\
 Do not let outsiders, even Command Staff, interfere with the duties of the Guild. And remember - be ready to respond to emergency calls at any time."
 
 	duties = "Start up the solars and generators.<br>\
@@ -138,18 +138,17 @@ Do not let outsiders, even Command Staff, interfere with the duties of the Guild
 	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
-	description = "The Miner is a professional resource procurer, acquiring valuable minerals for Lonestar Shipping Solutions.<br>\
+	description = "The Miner is a professional resource procurer, acquiring valuable minerals for Skylight Shipping Solutions.<br>\
 Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can.<br>\
 Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use.<br>\
-Whatever you dig up will go to the cargo department, and from then on it is the responsibility of others within Lonestar to sell it.<br>\
+Whatever you dig up will go to the cargo department, and from then on it is the responsibility of others within Skylight to sell it.<br>\
 The deep tunnels are far less dangerous than the wilderness, but pack well - disappearances are not unheard of."
 
 	duties = "Dig up ores and minerals to be processed into usable material.<br>\
 	Locate other valuables within the tunnels that may be turned to profit."
 
 	access = list(
-		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
-		access_external_airlocks, access_construction, access_atmospherics, access_mining, access_mining_office, access_mining_station
+		access_eva, access_maint_tunnels, access_external_airlocks, access_mining, access_mining_office, access_mining_station
 	)
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
@@ -171,7 +170,7 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
 
-
+/* maybe they'll want it back in, idk
 /datum/job/janitor
 	title = "Sanitation Technician"
 	flag = JANITOR
@@ -214,3 +213,4 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	name = "Sanitation Technician"
 	icon_state = "player-black"
 	join_tag = /datum/job/janitor
+*/

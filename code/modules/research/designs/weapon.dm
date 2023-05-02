@@ -141,10 +141,6 @@
 	name = "Hydrogen \"Sollex\" Cannon"
 	build_path = /obj/item/gun/hydrogen/cannon
 
-/datum/design/research/item/weapon/hydrogen_welder
-	name = "Hydrogen Torch"
-	build_path = /obj/item/tool/plasma_torch
-
 /datum/design/research/item/weapon/hydrogrenade
 	name = "Hydrogen Grenade"
 	desc = "A hilt that can support an hydrogen fuel cell. It has a flimsy safe guard that prevents it from exploding from the weakest impact."
@@ -350,7 +346,7 @@
 	sort_string = "TAAAJ"
 
 /datum/design/research/item/weapon/toolmod/dblade
-	name = "Lonestar \"Gleaming Edge\": Diamond Blade"
+	name = "Skylight \"Gleaming Edge\": Diamond Blade"
 	build_path = /obj/item/tool_upgrade/productivity/diamond_blade
 	sort_string = "TAAAK"
 
@@ -380,7 +376,7 @@
 	sort_string = "TAAAP"
 
 /datum/design/research/item/weapon/toolmod/laserguide
-	name = "Lonestar \"Guiding Light\" Laser Guide"
+	name = "Skylight \"Guiding Light\" Laser Guide"
 	build_path = /obj/item/tool_upgrade/refinement/laserguide
 	sort_string = "TAAAQ"
 

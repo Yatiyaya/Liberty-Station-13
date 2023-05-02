@@ -85,6 +85,7 @@
 	singular_name = "spider silk salve"
 	desc = "Freshly gathered spider webs that you can slather on burns to prevent infection."
 	icon_state = "spidergoo"
+	matter = list(MATERIAL_SILK = 5)
 	natural_remedy = TRUE
 	fancy_icon = FALSE
 
@@ -93,7 +94,8 @@
 	singular_name = "CAPSA branded ointment"
 	desc = "Used to treat those nasty burns. Unlike regular ointments this one has CAPSA colors on it, its formula massively improved by including toxin-purging sterilizing crystals."
 	icon_state = "capsa_ointment"
-	preloaded_reagents = list("dermaline" = 5, "sterilizine" = 10)
+	matter = list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 4)
+	preloaded_reagents = list("kelotane" = 5, "dermaline" = 5, "sterilizine" = 5)
 	heal_burn = 25
 	amount = 8
 	max_amount = 8
@@ -108,7 +110,8 @@
 	automatic_charge_overlays = TRUE
 	consumable = FALSE	// Will the stack disappear entirely once the amount is used up?
 	splittable = FALSE	// Is the stack capable of being splitted?
-	preloaded_reagents = list("silicon" = 4, "ethanol" = 10, "mercury" = 4)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_BIOMATTER = 3)
+	preloaded_reagents = list("kelotane" = 5, "sterilizine" = 5)
 	w_class = ITEM_SIZE_SMALL
 	perk_required = TRUE
 	needed_perk = PERK_MEDICAL_EXPERT
@@ -122,6 +125,7 @@
 	name = "large advanced burn kit"
 	singular_name = "large advanced burn kit"
 	icon = 'icons/obj/stack/medical_big.dmi'
+	matter = list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 6)
 	amount = 10
 	max_amount = 10
 	charge_sections = 10
@@ -158,13 +162,13 @@
 	stacktype_alt = null
 
 /obj/item/stack/medical/ointment/advanced/nt
-	name = "Absolutism Burnpack"
-	singular_name = "Absolutism Burnpack"
-	desc = "An advanced treatment kit for severe burns. Created by the will of God and made far easier to use than normal advanced kits."
+	name = "Bonfire Burnpack"
+	singular_name = "Bonfire Burnpack"
+	desc = "An advanced treatment kit for severe burns. Created by the work of Custodians and made far easier to use than normal advanced kits."
 	icon_state = "nt_burnkit"
 	heal_brute = 5
 	automatic_charge_overlays = FALSE
-	matter = list(MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_BIO_SILK = 5)
 	origin_tech = list(TECH_BIO = 4)
 	fancy_icon = TRUE
 	w_class = ITEM_SIZE_SMALL

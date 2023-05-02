@@ -136,28 +136,6 @@
 	P.stamped &= STAMP_FACTION
 	src.contents += P
 
-/obj/structure/noticeboard/blackshield
-	name = "Blackshield bulletin board"
-	desc = "A board containing vital notices and official memos for the Blackshield Militia"
-	icon_state = "nboard02"
-	notices = 2
-
-/obj/structure/noticeboard/blackshield/New()
-	var/obj/item/paper/P = new()
-	P.name = "Memo RE: Equipment handling"
-	P.info = "<br>Officers and Troopers alike, remember to properly secure lockers and weaponry. This is not a daycare, you should not need to be reminded that duty-gear is not to be left lying around - Agent Sanja"
-	P.copy_overlays(list("paper_stamp-dots"), TRUE)
-	P.stamped &= STAMP_FACTION
-	src.contents += P
-
-	P = new()
-	P.name = "Memo RE: Gate procedure"
-	P.info = "<br>This is a firm reminder to all Blackshield Personnel to draw their attention to the Gate Operations section of S.O.P, <b>particularly</b> the section detailing proper bolting of the gate when present and \
-	<b><i>UNBOLTING</b></i> of the gate when NOT present. The next trooper to get a fax sent because he left the foreman bolted outside is going to be scrubbing the latrines with his toothbrust - Sgt Dansen"
-	P.copy_overlays(list("paper_stamp-dots"), TRUE)
-	P.stamped &= STAMP_FACTION
-	src.contents += P
-
 /obj/structure/noticeboard/medical
 	name = "Medical bulletin board"
 	desc = "A board containing vital notices and official memos for CAPSA Medical"
@@ -209,19 +187,19 @@
 	icon_state = "nboard00"
 	notices = 0
 
-/obj/structure/noticeboard/lonestar_service
-	name = "Lonestar Shipping bulletin board"
-	desc = "A board containing vital notices and official memos for Lonestar-Service Employees"
+/obj/structure/noticeboard/Skylight_service
+	name = "Skylight Shipping bulletin board"
+	desc = "A board containing vital notices and official memos for Skylight-Service Employees"
 	icon_state = "nboard00"
 	notices = 0
 
-/obj/structure/noticeboard/lonestar_supply
-	name = "Lonestar Shipping bulletin board"
-	desc = "A board containing vital notices and official memos for Lonestar-Supply Employees"
+/obj/structure/noticeboard/Skylight_supply
+	name = "Skylight Shipping bulletin board"
+	desc = "A board containing vital notices and official memos for Skylight-Supply Employees"
 	icon_state = "nboard00"
 	notices = 2
 
-/obj/structure/noticeboard/lonestar_supply/New()
+/obj/structure/noticeboard/Skylight_supply/New()
 	var/obj/item/paper/P = new()
 	P.name = "Memo RE: Mining Drills"
 	P.info = "<ul><li>seismic activity 1: The lowest possible pretty much. Should be a cakewalk even if you've got basic equipment or don't quite know what you're doing just yet. \
@@ -254,7 +232,7 @@ P.S - <u><h1>Don't leave the drills running unattended!</u></h1>"
 
 
 /obj/structure/noticeboard/church
-	name = "Church of the Absolute bulletin board"
+	name = "Church of the Bonfire bulletin board"
 	desc = "A board containing vital notices and official memos for the faithful"
 	icon_state = "nboard00"
 	notices = 0

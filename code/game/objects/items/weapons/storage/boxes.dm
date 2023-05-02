@@ -15,7 +15,7 @@
  *		Handcuff, mousetrap, and pillbottle boxes,
  *		Snap-pops and matchboxes,
  *		Replacement light boxes,
- *		Blackshield uniform boxes.
+
  *
  *		For syndicate call-ins see uplink_kits.dm
  */
@@ -741,82 +741,6 @@
 
 /obj/item/storage/box/data_disk/basic/empty/populate_contents()
 	return
-
-/*
-Boxes with clothing on them, unable to put them back if taken out because...
-...well, boxes can't normally fit clothes on them!
-*/
-
-/obj/item/storage/box/trooperuniform
-	name = "Trooper/Corpsman Service and Dress Kit"
-	desc = "Box that contained a bluespace sealed Blackshield Service Uniform and Dress Uniform. Once items are removed, they won't fit again."
-	icon_state = "box"
-
-	New()
-		..()
-		new /obj/item/clothing/under/rank/trooper/service(src)
-		new /obj/item/clothing/suit/rank/trooper/service(src)
-		new /obj/item/clothing/suit/rank/trooper/dress(src)
-		new /obj/item/clothing/head/rank/trooperdress(src)
-		new /obj/item/clothing/accessory/tie/navy(src)
-		new /obj/item/clothing/shoes/laceup(src)
-		new /obj/item/clothing/accessory/armband/militia(src)
-		new /obj/item/clothing/accessory/armband/corpsman(src)
-
-/obj/item/storage/box/sergeantuniform
-	name = "Sergeant Service and Dress Kit"
-	desc = "Box that contained a bluespace sealed Blackshield Service Uniform and Dress Uniform. Once items are removed, they won't fit again."
-	icon_state = "box"
-
-	New()
-		..()
-		new /obj/item/clothing/under/rank/armorer/service(src)
-		new /obj/item/clothing/suit/rank/armorer/service(src)
-		new /obj/item/clothing/suit/rank/armorer/dress(src)
-		new /obj/item/clothing/head/rank/trooperdress(src)
-		new /obj/item/clothing/accessory/tie/navy(src)
-		new /obj/item/clothing/shoes/laceup(src)
-
-/obj/item/storage/box/commanderuniform
-	name = "Commander Service and Dress Kit"
-	desc = "Box that contained a bluespace sealed Blackshield Service Uniform and Dress Uniform. Once items are removed, they won't fit again."
-	icon_state = "box"
-
-	New()
-		..()
-		new /obj/item/clothing/under/rank/commander_service(src)
-		new /obj/item/clothing/suit/rank/commander_service(src)
-		new /obj/item/clothing/head/rank/commanderdress(src)
-		new /obj/item/clothing/accessory/tie/navy(src)
-		new /obj/item/clothing/shoes/laceup(src)
-
-/obj/item/storage/box/blankranks
-	name = "Box of Blank Ranks"
-	desc = "A box full of solid red, ''blank'' Blackshield ranks, for distribution to volunteers and cadets."
-	icon_state = "box"
-
-	New()
-		..()
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-		new /obj/item/clothing/accessory/ranks/blank(src)
-
-/obj/item/storage/box/team_support
-	name = "Box of Team Support"
-	desc = "A box filled with everything needed to support the team, flag not included."
-	icon_state = "box"
-
-	New()
-		..()
-		new /obj/item/reagent_containers/food/snacks/popcorn(src)
-		new /obj/item/toy/junk/bosunwhistle(src)
-		new /obj/random/toy/plushie_onlysquid(src)
-		new /obj/item/device/binoculars(src)
-
 
 // Guild boxes, exclusively used to mass craft guild parts.
 /obj/item/storage/box/guild_manip

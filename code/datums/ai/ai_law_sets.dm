@@ -159,10 +159,10 @@
 	add_inherent_law("Complete your objectives, as outlined through your handler.")
 	..()
 
-/******************** Absolute ********************/
+/******************** Bonfire ********************/
 /datum/ai_laws/absolute
-	name = "Absolute"
-	law_header = "Commandments of the Absolute"
+	name = "Bonfire"
+	law_header = "Commandments of the Bonfire"
 	selectable = 1
 
 /datum/ai_laws/absolute/New()

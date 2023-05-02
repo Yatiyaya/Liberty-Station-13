@@ -322,7 +322,7 @@
 	icon_state = "snowsuit_engineering"
 
 /obj/item/clothing/suit/storage/snowsuit/cargo
-	name = "lonestar snowsuit"
+	name = "skylight snowsuit"
 	desc = "A special guild coat designed for cold environments."
 	icon_state = "snowsuit_cargo"
 
@@ -920,7 +920,7 @@ obj/item/clothing/suit/storage/toggle/peacoat
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/suit/storage/helltaker_apron // Get your Helltaker apron. - Seb
-	name = "lonestar black apron"
+	name = "skylight black apron"
 	desc = "Make them chocolate pancakes. Demon girls love chocolate pancakes."
 	icon_state = "nalesnik" // Polish pancakes.
 	item_state = "nalesnik"

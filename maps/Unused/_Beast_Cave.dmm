@@ -4073,7 +4073,6 @@
 /area/liberty/outside/forest/beast_cave_light)
 "pE" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/beast_cave_dark)
 "pF" = (
@@ -5708,7 +5707,6 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/beast_cave_dark)
 "vY" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/beast_cave_dark)
 "vZ" = (
@@ -5750,7 +5748,6 @@
 /area/liberty/outside/forest/beast_cave_light)
 "wG" = (
 /obj/structure/flora/big/rocks2,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/beast_cave_dark)
 "wH" = (
@@ -5825,7 +5822,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/forest/beast_cave_light)
 "xo" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/beast_cave_dark)
 "xx" = (
@@ -6018,7 +6014,6 @@
 /turf/simulated/floor/beach/water/swamp,
 /area/liberty/outside/forest/beast_cave_light)
 "zE" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/beast_cave_dark)
 "zH" = (
@@ -6044,7 +6039,6 @@
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/forest/beast_cave_dark)
 "zQ" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/beast_cave_dark)
 "zW" = (
@@ -6470,7 +6464,6 @@
 /area/liberty/outside/forest/beast_cave_dark)
 "Fj" = (
 /obj/structure/flora/rock,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/beast_cave_dark)
 "Fl" = (
@@ -6578,7 +6571,6 @@
 /area/liberty/outside/forest/beast_cave_dark)
 "Gm" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/beast_cave_dark)
 "Gp" = (
@@ -6702,8 +6694,6 @@
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/beast_cave_dark)
 "Hy" = (
-/obj/structure/scrap/food/large,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/beast_cave_dark)
 "HB" = (
@@ -6835,7 +6825,6 @@
 /area/liberty/outside/forest/beast_cave_dark)
 "Jl" = (
 /obj/structure/flora/rock/variant1,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/beast_cave_dark)
 "Jp" = (
@@ -7470,7 +7459,6 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/beast_cave_dark)
 "Qc" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/beach/water/swamp,
 /area/liberty/outside/forest/beast_cave_dark)
 "Qf" = (
@@ -7801,7 +7789,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/beast_cave_light)
 "Uh" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/outside/forest/beast_cave_dark)
 "Uo" = (

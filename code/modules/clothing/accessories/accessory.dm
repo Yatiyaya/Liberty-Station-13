@@ -378,7 +378,7 @@
 	desc = "A purple cloak with nanoleds creating sparkling bubbles."
 
 /obj/item/clothing/accessory/job/cape/guild
-	name = "lonestar cloak"
+	name = "skylight cloak"
 	icon_state = "cargocloak"
 	desc = "A light-brown cloak."
 
@@ -436,46 +436,6 @@
 	name = "security cloak"
 	icon_state = "seccloak"
 	desc = "A blue, navy cloak."
-
-/obj/item/clothing/accessory/job/cape/blackshield
-	name = "grey Blackshield cloak"
-	desc = "A simple, durable cloak for protecting you in any weather conditions! This one comes in a brooding grey."
-	icon_state = "blackshieldcloak"
-
-/obj/item/clothing/accessory/job/cape/blackshield/green
-	name = "green Blackshield cloak"
-	desc = "A simple, durable cloak for protecting you in any weather conditions! This one comes in a fetching green."
-	icon_state = "blackshieldcloak_green"
-
-/obj/item/clothing/accessory/job/cape/blackshield/tan
-	name = "tan Blackshield cloak"
-	desc = "A simple, durable cloak for protecting you in any weather conditions! This one comes in a light tan."
-	icon_state = "blackshieldcloak_tan"
-
-/obj/item/clothing/accessory/job/cape/blackshield/camo
-	name = "camo Blackshield cloak"
-	desc = "A simple, durable cloak for protecting you in any weather conditions! This one comes in a tactical camo pattern."
-	icon_state = "blackshieldcloak_camo"
-
-/obj/item/clothing/accessory/cape/sergeant_cape
-	name = "Sergeants mantle"
-	desc = "A shoulder-mantlee made from black and silver fabric, denoting the position of Sergeant. Allows for identification at a glance."
-	icon_state = "half_sarg"
-	slot_flags = SLOT_ACCESSORY_BUFFER
-
-/obj/item/clothing/accessory/halfcape/corpsman
-	name = "Corpsman mantle"
-	desc = "A half-cape made from blue and black fabric denoting that they are a corpsman, to be easily seen in the jungle."
-	icon_state = "half_corp"
-	slot_flags = SLOT_ACCESSORY_BUFFER
-
-/obj/item/clothing/accessory/halfcape/trooper_cape
-	name = "Troopers mantle"
-	desc = "A half-cape made from blue and white fabric denoting the rank of Trooper. Allows for identification at a glance"
-	icon_state = "half_troop"
-	slot_flags = SLOT_ACCESSORY_BUFFER
-
-
 //Kriosan
 /obj/item/clothing/accessory/kricape
 	name = "holographic capitoleum cape"
@@ -777,26 +737,6 @@
 	desc = "whether hopping into action, or reading your coworkers emails, you'll be ready for any hostage situations"
 	icon_state = "denton"
 	item_state = "denton"
-
-/*BS Coats*/
-
-/obj/item/clothing/accessory/bscloak
-	name = "Blackshield longcoat"
-	desc = "A simple, durable longcoat with Blackshield stripes, intended to be worn over armored vests for protection in inclement weather."
-	icon_state = "bs_longcoat"
-	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
-
-/obj/item/clothing/accessory/bscloak/tan
-	name = "Blackshield tan longcoat"
-	desc = "A simple, durable tan longcoat with Blackshield stripes, intended to be worn over armored vests for protection in inclement weather."
-	icon_state = "bs_longcoat_tan"
-	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER // Made them children of longcoat so should inherit but juuust in case...
-
-/obj/item/clothing/accessory/bscloak/olive
-	name = "Blackshield drab longcoat"
-	desc = "A simple, durable drab longcoat with Blackshield stripes, intended to be worn over armored vests for protection in inclement weather."
-	icon_state = "bs_longcoat_green"
-	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /*Scarves*/
 
@@ -1112,117 +1052,6 @@
 	icon_state = "kneepad_expensive"
 	item_state = "kneepad_expensive"
 
-
-/*Ranks*/
-
-/obj/item/clothing/accessory/ranks/blank
-	name = "shoulderboards (blank)"
-	desc = "Blank red shoulderboards denoting a Blackshield cadet, or, rarely, an emergency volunteer or an off-duty Blackshield Trooper given provisional duty in an emergency."
-	icon_state = "blank_tabs"
-	item_state = "blank_tabs"
-
-/obj/item/clothing/accessory/ranks/trooper
-	name = "shoulderboards (trooper)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Trooper."
-	icon_state = "trooper_tabs"
-	item_state = "trooper_tabs"
-
-/obj/item/clothing/accessory/ranks/corpsman
-	name = "shoulderboards (corpsman)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Corpsman."
-	icon_state = "corps_tabs"
-	item_state = "corps_tabs"
-
-/obj/item/clothing/accessory/ranks/sergeant
-	name = "shoulderboards (sergeant)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Sergeant."
-	icon_state = "sergeant_tabs"
-	item_state = "sergeant_tabs"
-
-/obj/item/clothing/accessory/ranks/sergeantmajor
-	name = "shoulderboards (sergeant major)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Sergeant Major."
-	icon_state = "sergeant_tabsm"
-	item_state = "sergeant_tabsm"
-
-/obj/item/clothing/accessory/ranks/commander
-	name = "shoulderboards (commander)"
-	desc = "Red and gold shoulderboards denoting a Blackshield soldier with the rank of Commander."
-	icon_state = "commander_tabs"
-	item_state = "commander_tabs"
-
-/obj/item/clothing/accessory/ranks/major
-	name = "shoulderboards (major)"
-	desc = "Red and gold shoulderboards denoting a Blackshield soldier with the rank of Major."
-	icon_state = "major_tabs"
-	item_state = "major_tabs"
-
-/obj/item/clothing/accessory/ranks/brigadier
-	name = "shoulderboards (brigadier)"
-	desc = "Red, gold, and silver shoulderboards denoting the Brigadier."
-	icon_state = "brigadier_tabs"
-	item_state = "brigadier_tabs"
-
-/obj/item/clothing/accessory/patches/blackshield
-	name = "blackshield patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "blackshieldpatch"
-	item_state = "blackshieldpatch"
-
-/obj/item/clothing/accessory/patches/blackshield_blank
-	name = "blackshield blank patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_blank"
-	item_state = "bs_blank"
-
-/obj/item/clothing/accessory/patches/blackshield_volunteer
-	name = "blackshield volunteer patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_volunteer"
-	item_state = "bs_volunteer"
-
-/obj/item/clothing/accessory/patches/blackshield_trooper
-	name = "blackshield trooper patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_trooper"
-	item_state = "bs_trooper"
-
-/obj/item/clothing/accessory/patches/blackshield_corpsman
-	name = "blackshield corpsman patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_corpsman"
-	item_state = "bs_corpsman"
-
-/obj/item/clothing/accessory/patches/blackshield_sergeant
-	name = "blackshield sergeant patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_sergeant"
-	item_state = "bs_sergeant"
-
-/obj/item/clothing/accessory/patches/blackshield_sergeantmajor
-	name = "blackshield sergeant major patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_sergeantm"
-	item_state = "bs_sergeantm"
-
-/obj/item/clothing/accessory/patches/blackshield_commander
-	name = "blackshield commander patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_commander"
-	item_state = "bs_commander"
-
-/obj/item/clothing/accessory/patches/blackshield_major
-	name = "blackshield major patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_major"
-	item_state = "bs_major"
-
-/obj/item/clothing/accessory/patches/blackshield_brigadier
-	name = "blackshield brigadier patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_brigadier"
-	item_state = "bs_brigadier"
-
 /* Tacticool Shirts / UBACs */
 
 /obj/item/clothing/accessory/tacticool
@@ -1270,7 +1099,7 @@
 
 /obj/item/clothing/accessory/necklace/fractalrosary
 	name = "Fractal Rosary"
-	desc = "This is an insignia given out by the Church of Absolute to people who consider themself to be a Fractal: \
+	desc = "This is an insignia given out by the Church of Bonfire to people who consider themself to be a Fractal: \
 			An individual who believes and follows the Church but has not yet or cannot be inducted to full membership."
 	icon_state = "fractal_rosary"
 	item_state = "fractal_rosary"
@@ -1320,13 +1149,13 @@
 
 /obj/item/clothing/accessory/choker/gold_tag
 	name = "Leather Collar (Gold Tag)"
-	desc = "A band of supple leather with a locked clasp. A gold-plated dogtag has been attached to show solidarity with our strong, proud, Blackshield militia."
+	desc = "A band of supple leather with a locked clasp. A gold-plated dogtag has been attached to show solidarity with our strong, proud, militia."
 	icon_state = "collar_gold_tag"
 	overlay_state = "collar_gold"
 
 /obj/item/clothing/accessory/choker/silver_tag
 	name = "Leather Collar (Silver Tag)"
-	desc = "A band of supple leather with a locked clasp. A silver-plated dogtag has been attached to show solidarity with our strong, proud, Blackshield militia."
+	desc = "A band of supple leather with a locked clasp. A silver-plated dogtag has been attached to show solidarity with our strong, proud, militia."
 	icon_state = "collar_silver_tag"
 	overlay_state = "collar_silver"
 
@@ -1483,19 +1312,19 @@
 
 /obj/item/clothing/accessory/passcard
 	name = "general passcard"
-	desc = "A passcard issued by the Liberty Colony when someone gains permanent residency on Amethyn, in the Chromin 8 system."
+	desc = "A passcard issued by the Liberty Colony when someone gains permanent residency on Phokorus."
 	icon_state = "passcard_general"
 	item_state = "general_passport"
 
 /obj/item/clothing/accessory/passcard/resident_card
 	name = "resident passcard"
-	desc = "A card issued by the Liberty Colony for colonists who are offered temporary residency on Amethyn, in the Chromin 8 system."
+	desc = "A card issued by the Liberty Colony for colonists who are offered temporary residency on Phokorus."
 	icon_state = "resident_card"
 	item_state = "passport"
 
 /obj/item/clothing/accessory/passcard/work_visa
 	name = "work visa"
-	desc = "A card issued by the Liberty Colony for colonists who are offered residency for the purpose of work on Amethyn, in the Chromin 8 system. "
+	desc = "A card issued by the Liberty Colony for colonists who are offered residency for the purpose of work on Phokorus. "
 	icon_state = "workvisa"
 	item_state = "pass"
 
@@ -1507,7 +1336,7 @@
 
 /obj/item/clothing/accessory/passcard/fringe_colonies
 	name = "Outer Fringe passcard"
-	desc = "A passcard issued to citizens and colonists away from Sol space or Chromin itself. The look of this passcard may vary group to group, but no matter where it comes from, it's generally understood that whoever owns this passcard has never been a Solarian citizen."
+	desc = "A passcard issued to citizens and colonists away from Sol space itself. The look of this passcard may vary group to group, but no matter where it comes from, it's generally understood that whoever owns this passcard has never been a Solarian citizen."
 	icon_state = "passcard_coc"
 	item_state = "badge"
 
@@ -1568,13 +1397,13 @@
 
 /obj/item/clothing/accessory/passcard/passport_general
 	name = "passport"
-	desc = "A passport issued to Liberty Colonists that live on Amethyn, in the Chromin 8 system."
+	desc = "A passport issued to Liberty Colonists that live on Phokorus."
 	icon_state = "general_passport"
 	item_state = "general_passport"
 
 /obj/item/clothing/accessory/passcard/passport_kriosan
 	name = "Kriosan passport"
-	desc = "A passport issued to Kriosans by the Kriosan Government who are working or living on Amethyn, in the Chromin 8 system."
+	desc = "A passport issued to Kriosans by the Kriosan Government who are working or living on Phokorus."
 	icon_state = "workvisa"
 	item_state = "kuri"
 

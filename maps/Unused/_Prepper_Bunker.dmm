@@ -1781,7 +1781,6 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "jJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "jK" = (
@@ -1924,7 +1923,6 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "ky" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "kz" = (
@@ -1961,7 +1959,6 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "kH" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -2008,7 +2005,6 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "kR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -2203,7 +2199,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lI" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lJ" = (
@@ -2241,7 +2237,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lO" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lP" = (

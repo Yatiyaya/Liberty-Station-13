@@ -890,9 +890,24 @@ var/list/flooring_types
 	has_base_range = 4
 	flags = TURF_REMOVE_SHOVEL | TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
 	plating_type = /decl/flooring/dirt
-	footstep_sound = "grass"
+	footstep_sound = "snow"
 	floor_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
+
+/*Ice Water*/
+/decl/flooring/icewater
+	name = "frozen water"
+	desc = "Frozen water, solid enough to stand on, looks too thick to dig through without machines"
+	icon = 'icons/turf/flooring/icewater.dmi'
+	icon_base = "ice_water"
+	has_base_range = 2
+	flags = TURF_EDGES_EXTERNAL | TURF_HAS_CORNERS
+	plating_type = /decl/flooring/dirt
+	footstep_sound = "ice"
+	floor_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+	resistance = RESISTANCE_TOUGH
+	health = 9999999
 
 /*Dirt*/
 /decl/flooring/dirt
@@ -992,3 +1007,349 @@ var/list/flooring_types
 	footstep_sound = "water"
 	resistance = RESISTANCE_TOUGH
 	health = 9999999
+
+// TILE INDUSTERAL
+
+/decl/flooring/industrial
+	icon = 'icons/turf/flooring/tiles_industeral.dmi'
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN | TURF_HIDES_THINGS
+	build_type = /obj/item/stack/tile/floor
+	can_paint = 1
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/industrial/concrete_small
+	name = "concrete slab"
+	desc = "Placed down slab of stone mixed with sand and heated into an aged design."
+	icon_base = "concrete_small"
+	has_base_range = 5
+	descriptor = "concrete"
+	build_type = /obj/item/stack/tile/concrete_small
+
+/decl/flooring/industrial/concrete_bricks
+	name = "concrete bricks"
+	desc = "A bunch of concrete bricks placed down as flooring."
+	icon_base = "concrete_bricks"
+	has_base_range = 8
+	descriptor = "concrete"
+	build_type = /obj/item/stack/tile/concrete_bricks
+
+/decl/flooring/industrial/bricks
+	name = "bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "concrete_bricks"
+	has_base_range = 8
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/bricks
+
+/decl/flooring/industrial/ornate
+	name = "ornate flooring"
+	desc = "Dark tiles with some painting on it."
+	icon_base = "ornate"
+	has_base_range = 3
+	descriptor = "ornate"
+	build_type = /obj/item/stack/tile/ornate
+
+/decl/flooring/industrial/sierra
+	name = "ornate flooring"
+	desc = "Dark tiles with some painting on it."
+	icon_base = "sierra"
+	has_base_range = 3
+	descriptor = "ornate"
+	build_type = /obj/item/stack/tile/sierra
+
+/decl/flooring/industrial/ceramic
+	name = "ceramic"
+	desc = "Hardened clay slates locked together as flooring."
+	icon_base = "ceramic"
+	has_base_range = 2
+	descriptor = "ceramic"
+	build_type = /obj/item/stack/tile/ceramic
+
+/decl/flooring/industrial/grey_slates_long
+	name = "grey slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "grey_long"
+	has_base_range = 6
+	build_type = /obj/item/stack/tile/grey_slates_long
+
+/decl/flooring/industrial/blue_slates_long
+	name = "blue slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "blue_long"
+	has_base_range = 6
+	build_type = /obj/item/stack/tile/blue_slates_long
+
+/decl/flooring/industrial/brown_slates_big
+	name = "brown slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "brown_big"
+	has_base_range = 8
+	build_type = /obj/item/stack/tile/brown_large_slates
+
+/decl/flooring/industrial/grey_slates
+	name = "grey slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "grey"
+	has_base_range = 8
+	build_type = /obj/item/stack/tile/grey_slates
+
+/decl/flooring/industrial/blue_slates
+	name = "blue slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "blue"
+	has_base_range = 8
+	build_type = /obj/item/stack/tile/blue_slates
+
+/decl/flooring/industrial/navy_slates
+	name = "navy slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "navy"
+	has_base_range = 7
+	build_type = /obj/item/stack/tile/navy_slates
+
+/decl/flooring/industrial/fancy_slates
+	name = "disk slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "fancy"
+	has_base_range = 7
+	build_type = /obj/item/stack/tile/fancy_slates
+
+/decl/flooring/industrial/navy_large_slates
+	name = "large navy slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "navy_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/navy_large_slates
+
+/decl/flooring/industrial/black_large_slates
+	name = "large black slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "black_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/black_large_slates
+
+/decl/flooring/industrial/green_large_slates
+	name = "green large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "green_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/green_large_slates
+
+/decl/flooring/industrial/white_large_slates
+	name = "white large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "white_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/white_large_slates
+
+/decl/flooring/industrial/checker_large
+	name = "white and black large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "checker_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/checker_large
+
+/decl/flooring/industrial/cafe_large
+	name = "white and red large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "cafe_large"
+	has_base_range = 3
+	build_type = /obj/item/stack/tile/cafe_large
+
+/decl/flooring/rusted
+	icon = 'icons/turf/flooring/rusted.dmi'
+	icon_base = "tiles"
+	flags = TURF_CAN_BREAK | TURF_HAS_CORNERS | TURF_HAS_INNER_CORNERS
+	build_type = null
+	can_paint = 1
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/rusted/tiles
+	name = "rusty tiles"
+	desc = "floor long lost to the withering of time."
+	icon_base = "tiles"
+
+/decl/flooring/rusted/panels
+	name = "rusty panels"
+	desc = "floor long lost to the withering of time."
+	icon_base = "panels"
+
+/decl/flooring/rusted/techfloor
+	name = "rusty techfloor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor"
+
+/decl/flooring/rusted/techfloor_grid
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor_grid"
+
+/decl/flooring/rusted/brown_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_perforated"
+
+/decl/flooring/rusted/gray_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_perforated"
+
+/decl/flooring/rusted/cargo
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cargo"
+
+/decl/flooring/rusted/brown_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_platform"
+
+/decl/flooring/rusted/gray_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_platform"
+
+/decl/flooring/rusted/danger
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "danger"
+
+/decl/flooring/rusted/golden
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "golden"
+
+/decl/flooring/rusted/bluecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "bluecorner"
+
+/decl/flooring/rusted/orangecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "orangecorner"
+
+/decl/flooring/rusted/cyancorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cyancorner"
+
+/decl/flooring/rusted/violetcorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "violetcorner"
+
+/decl/flooring/rusted/monofloor
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "monofloor"
+	has_base_range = 15
+
+/decl/flooring/rusted2
+	icon = 'icons/turf/flooring/rusted2.dmi'
+	flags = TURF_CAN_BREAK | TURF_HAS_CORNERS | TURF_HAS_INNER_CORNERS
+	build_type = null
+	can_paint = 1
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/rusted2/tiles
+	name = "rusty tiles"
+	desc = "floor long lost to the withering of time."
+	icon_base = "tiles"
+
+/decl/flooring/rusted2/panels
+	name = "rusty panels"
+	desc = "floor long lost to the withering of time."
+	icon_base = "panels"
+
+/decl/flooring/rusted2/techfloor
+	name = "rusty techfloor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor"
+
+/decl/flooring/rusted2/techfloor_grid
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor_grid"
+
+/decl/flooring/rusted2/brown_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_perforated"
+
+/decl/flooring/rusted2/gray_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_perforated"
+
+/decl/flooring/rusted2/cargo
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cargo"
+
+/decl/flooring/rusted2/brown_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_platform"
+
+/decl/flooring/rusted2/gray_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_platform"
+
+/decl/flooring/rusted2/danger
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "danger"
+
+/decl/flooring/rusted2/golden
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "golden"
+
+/decl/flooring/rusted2/bluecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "bluecorner"
+
+/decl/flooring/rusted2/orangecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "orangecorner"
+
+/decl/flooring/rusted2/cyancorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cyancorner"
+
+/decl/flooring/rusted2/violetcorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "violetcorner"
+
+/decl/flooring/rusted2/monofloor
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "monofloor"
+	has_base_range = 15

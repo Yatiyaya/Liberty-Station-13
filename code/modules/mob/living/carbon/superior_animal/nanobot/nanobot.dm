@@ -120,7 +120,7 @@
 		to_chat(src, "You are suddenly shunted out of your nanobot as it dies.")
 		controller.adjustBrainLoss(rand(5, 10)) // Get some brain damage.
 		return_mind() // Send them back
-	//We lose are items as not to make them farmable by lonestar when people leave the round/get lost
+	//We lose are items as not to make them farmable by Skylight when people leave the round/get lost
 	Radio = null
 	Console = null
 	for(var/internals_items in contents)

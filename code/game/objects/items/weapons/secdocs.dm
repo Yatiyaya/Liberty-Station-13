@@ -22,7 +22,7 @@
 				"It's labelled 'The Existence of Alternate Realities'.",
 				"It's labelled 'Humane Applications of Mind Fryers'.",
 				"It's labelled 'Summary of Faction Capabilities'.",
-				"It's labelled 'The Technology Behind Absolutism'.",
+				"It's labelled 'The Technology Behind Bonfire'.",
 				"It's labelled 'Sol Federation Research Ethics'.",
 				"It's labelled 'The Collapse of Similacrum Robotics'.",
 				"It's labelled 'Wanderer - A Dossier'.",

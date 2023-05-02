@@ -25,6 +25,10 @@ SUBSYSTEM_DEF(lighting)
 	if(!((6 HOURS <= station_time_in_ticks) && (station_time_in_ticks < 18 HOURS)))
 		isnight = TRUE
 		set_all_areas_to_dark()
+		for(var/obj/structure/invislightsmall/outside/os in world)
+			os.remove()
+		for(var/obj/structure/invislight/outside/os in world)
+			os.remove()
 	create_all_lighting_overlays()
 	. = ..()
 

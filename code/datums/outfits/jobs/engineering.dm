@@ -45,7 +45,8 @@
 	gloves = /obj/item/clothing/gloves/insulated/union
 	head = /obj/item/clothing/head/hardhat/union_miner_helmet
 	pda_type = /obj/item/modular_computer/pda/science/science
-	backpack_contents = list(/obj/item/tool/crowbar = 1, /obj/item/storage/bag/ore = 1)
+	suit_store = null
+	backpack_contents = list(/obj/item/storage/bag/ore = 1)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/engineering/mining/void
@@ -53,9 +54,11 @@
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/void/mining
 
+/* maybe they'll change it back, idk
 /decl/hierarchy/outfit/job/engineering/janitor
 	name = OUTFIT_JOB_NAME("Terra-Therma - Janitor")
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/galoshes
 	suit = /obj/item/clothing/suit/armor/vest/handmade
 	belt = /obj/item/keys/janitor
+*/

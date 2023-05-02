@@ -3,7 +3,7 @@
 
 /obj/item/tool/knife
 	name = "kitchen knife"
-	desc = "A general purpose Chef's Knife made by the Lonestar Shipping Solutions, LLC. Guaranteed to stay sharp for years to come."
+	desc = "A general purpose Chef's Knife made by the Skylight Shipping Solutions, LLC. Guaranteed to stay sharp for years to come."
 	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "knife"
 	flags = CONDUCT
@@ -61,19 +61,6 @@
 	backstab_damage = 14
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 15)
 
-/obj/item/tool/knife/boot/blackshield
-	name = "blackshield tactical knife"
-	desc = "A small fixed-blade knife for putting inside a boot, this version is painted in Blackshield colours and has sawed teeth."
-	icon = 'icons/obj/weapons.dmi'
-	icon_state = "tacknife_blackguard"
-	item_state = "knife"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2)
-	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5,  QUALITY_SAWING = 1)
-	force = WEAPON_FORCE_DANGEROUS // Serrated teeth
-	armor_penetration = ARMOR_PEN_MODERATE
-	throwforce = WEAPON_FORCE_LETHAL
-	price_tag = 35
-
 /obj/item/tool/knife/hook
 	name = "meat hook"
 	desc = "A sharp plasteel butcher's hook used to hold dressed game in place to butcher. It has quite the sharpened tip to embed more easily in flesh."
@@ -125,7 +112,7 @@
 	price_tag = 14
 
 /obj/item/tool/knife/neotritual
-	name = "absolutism ritual knife"
+	name = "bonfire ritual knife"
 	desc = "The sweet embrace of mercy, for relieving the soul from a tortured vessel."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "neot-knife"

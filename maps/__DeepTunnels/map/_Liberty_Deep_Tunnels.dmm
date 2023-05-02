@@ -391,7 +391,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/cobweb2,
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber,
@@ -788,7 +788,7 @@
 /obj/item/ammo_magazine/ammobox/shotgun/flashshells,
 /obj/item/ammo_magazine/ammobox/shotgun/flashshells,
 /obj/item/ammo_magazine/ammobox/shotgun/flashshells,
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -933,7 +933,7 @@
 /area/mine/atmos)
 "cS" = (
 /obj/machinery/atmospherics/portables_connector,
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /turf/simulated/floor/plating,
@@ -1578,7 +1578,7 @@
 	},
 /obj/machinery/door/airlock/glass_mining{
 	name = "Mining Prep";
-	req_access = list(50)
+	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/lockers)
@@ -8332,7 +8332,7 @@
 "BG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/mining,
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/steel/danger,
@@ -8519,7 +8519,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/mine/medical)
 "Fr" = (
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/steel/monofloor,
@@ -8654,7 +8654,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/noticeboard/lonestar_supply{
+/obj/structure/noticeboard/Skylight_supply{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/steel,

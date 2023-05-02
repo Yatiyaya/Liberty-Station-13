@@ -250,7 +250,7 @@
 /datum/ritual/cruciform/inquisitor/initiation
 	name = "Initiation"
 	phrase = "Habe fiduciam in Domino ex toto corde tuo et ne innitaris prudentiae tuae, in omnibus viis tuis cogita illum et ipse diriget gressus tuos"
-	desc = "The second stage of granting a field promotion to a disciple, upgrading them to Prime. The Prime ascension kit is the first step."
+	desc = "The second stage of granting a field promotion to a disciple, upgrading them to Oathpledge. The Oathpledge ascension kit is the first step."
 	power = 100
 
 /datum/ritual/cruciform/inquisitor/initiation/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)

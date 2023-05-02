@@ -469,7 +469,7 @@
 	icon_state = "mug_old_nt"
 
 /obj/item/reagent_containers/food/drinks/mug/new_nt
-	name = "Absolute mug"
+	name = "Bonfire mug"
 	desc = "A brown mug, it prominently features a tau-cross."
 	icon_state = "mug_new_nt"
 
@@ -484,8 +484,8 @@
 	icon_state = "mug_serb"
 
 /obj/item/reagent_containers/food/drinks/mug/ironhammer
-	name = "Blackshield mug"
-	desc = "A mug with an Blackshield sign on it."
+	name = "Watch mug"
+	desc = "A mug with a Liberty Watch sign on it."
 	icon_state = "mug_hammer"
 
 /obj/item/reagent_containers/food/drinks/mug/league

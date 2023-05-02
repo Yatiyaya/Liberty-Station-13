@@ -44,8 +44,6 @@ Food quality is calculated based on the steps taken.
 
 	var/icon_image_file
 
-	var/quality_description //A decorator description tacked onto items when the recipe is completed. Used in future recipes. "The Bread looks Handmade."
-
 	var/exclusive_option_mode = FALSE //triggers whether two steps in a process are exclusive- IE: you can do one or the other, but not both.
 
 	var/list/active_exclusive_option_list = list() //Only needed during the creation process for tracking a given exclusive option dictionary.
@@ -309,18 +307,8 @@ Food quality is calculated based on the steps taken.
 			if("desc" in step_list)
 				set_step_desc(step_list["desc"])
 
-			if("base" in step_list)
-				set_step_base_quality(step_list["base"])
-
-			if("max" in step_list)
-				set_step_max_quality(step_list["max"])
-
 			if("prod_desc" in step_list)
 				set_step_custom_result_desc(step_list["prod_desc"])
-
-			if("qmod" in step_list)
-				if(!set_inherited_quality_modifier(step_list["qmod"]))
-					reason="qmod / inherited_quality_modifier declared on non add-item recipe step."
 
 			if("remain_percent" in step_list)
 				if(step_list["remain_percent"] > 1 || step_list["remain_percent"] < 0)
@@ -437,17 +425,8 @@ Food quality is calculated based on the steps taken.
 /datum/cooking_with_jane/recipe/proc/set_step_desc(var/new_description)
 	last_created_step.desc = new_description
 
-/datum/cooking_with_jane/recipe/proc/set_step_max_quality(var/quality)
-	last_created_step.flags |= CWJ_BASE_QUALITY_ENABLED
-	last_created_step.max_quality_award = quality
-
-/datum/cooking_with_jane/recipe/proc/set_step_base_quality(var/quality)
-	last_created_step.flags |= CWJ_MAX_QUALITY_ENABLED
-	last_created_step.base_quality_award = quality
-
 /datum/cooking_with_jane/recipe/proc/set_step_custom_result_desc(var/new_description)
 	last_created_step.custom_result_desc = new_description
-
 
 /datum/cooking_with_jane/recipe/proc/set_exact_type_required(var/boolean)
 	if((last_created_step.class == CWJ_ADD_ITEM) || (last_created_step.class == CWJ_USE_ITEM))
@@ -699,9 +678,6 @@ Food quality is calculated based on the steps taken.
 			QDEL_LIST(container.contents)
 			container.contents = list()
 
-			var/reagent_quality = calculate_reagent_quality(pointer)
-
-
 			//Produce Item descriptions based on the steps taken
 			var/cooking_description_modifier = ""
 			for(var/id in pointer.steps_taken)
@@ -724,7 +700,6 @@ Food quality is calculated based on the steps taken.
 				#endif
 				slurry.trans_to_holder(new_item.reagents, amount=slurry.total_volume, copy=1)
 
-				new_item?:food_quality = pointer.tracked_quality + reagent_quality
 				new_item?:cooking_description_modifier = cooking_description_modifier
 				//TODO: Consider making an item's base components show up in the reagents of the product.
 		else
@@ -735,36 +710,13 @@ Food quality is calculated based on the steps taken.
 		container.reagents.clear_reagents()
 
 		if(reagent_id) //Make a reagent
-			//quality handling
-			var/total_quality = pointer.tracked_quality + calculate_reagent_quality(pointer)
 
 			//Create our Reagent
-			container.reagents.add_reagent(reagent_id, reagent_amount, data=list("FOOD_QUALITY" = total_quality))
+			container.reagents.add_reagent(reagent_id, reagent_amount)
 
 		qdel(slurry)
 
-//Extra Reagents in a recipe take away recipe quality for every extra unit added to the concoction.
-//Reagents are calculated in two areas. Here and /datum/cooking_with_jane/recipe_step/add_reagent/calculate_quality
-/datum/cooking_with_jane/recipe/proc/calculate_reagent_quality(var/datum/cooking_with_jane/recipe_pointer/pointer)
-	if(!GLOB.cwj_step_dictionary_ordered["[CWJ_ADD_REAGENT]"])
-		return 0
-	var/datum/cooking_with_jane/recipe_tracker/parent = pointer.parent_ref.resolve()
-	var/obj/item/container = parent.holder_ref.resolve()
-	var/total_volume = container.reagents.total_volume
-
-	var/calculated_volume = 0
-
-	var/calculated_quality = 0
-	for(var/id in pointer.steps_taken)
-		if(!GLOB.cwj_step_dictionary_ordered["[CWJ_ADD_REAGENT]"][id])
-			continue
-		var/datum/cooking_with_jane/recipe_step/add_reagent/active_step = GLOB.cwj_step_dictionary_ordered["[CWJ_ADD_REAGENT]"][id]
-		calculated_volume += active_step.required_reagent_amount
-
-		calculated_quality += active_step.base_quality_award
-
-	return calculated_quality - (total_volume - calculated_volume)
-
+//RIP Quality
 
 
 //-----------------------------------------------------------------------------------

@@ -192,10 +192,10 @@
 	desc = "The \"Hog\" General Purpose Machinegun was created by local gunsmiths in response to the dense forest and lack of suppressing fire armaments. \
 			Inspired by Martian Logistics' \"Buzzsaw\" LMG, this GPMG features decent recoil control for its bore, and the bizarre capability of being silenced. \
 			Chambered in 6.5mm and meant for emplaced defense, its high rate of fire can mow down wave after wave of armored hostiles with sheer brutality."
-	icon = 'icons/obj/guns/projectile/rahki.dmi'
-	icon_base = "rahki" // Sprites by Albert7076
-	icon_state = "rahki"
-	item_state = "rahki"
+	icon = 'icons/obj/guns/projectile/hog.dmi'
+	icon_base = "hog" // Sprites by Albert7076
+	icon_state = "hog"
+	item_state = "hog"
 	fire_sound = 'sound/weapons/guns/fire/heroic_fire.ogg'
 	fire_sound_silenced = 'sound/weapons/guns/fire/silenced_mg.ogg' // Yay snowflake silenced sound!
 	caliber = CAL_RIFLE

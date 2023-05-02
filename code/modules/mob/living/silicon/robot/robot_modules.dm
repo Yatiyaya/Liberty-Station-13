@@ -330,7 +330,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/medical
 	name = "medical robot module"
-	channels = list("Medical" = 1)
+	channels = list("CAPSA" = 1, "Medical(I)" = 1)
 	networks = list(NETWORK_MEDICAL)
 
 	can_be_pushed = 0
@@ -454,7 +454,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/engineering
 	name = "engineering robot module"
-	channels = list("Engineering" = 1)
+	channels = list("Terra" = 1)
 	networks = list(NETWORK_ENGINEERING)
 	supported_upgrades = list(/obj/item/borg/upgrade/arc_welder,
 							  /obj/item/borg/upgrade/rcd,
@@ -614,7 +614,7 @@ var/global/list/robot_modules = list(
 //Possible todo: Discuss giving security module some kind of lethal ranged weapon
 /obj/item/robot_module/security
 	name = "security robot module"
-	channels = list("Marshal" = 1, "Blackshield" = 1)
+	channels = list("Watch" = 1,)
 	networks = list(NETWORK_SECURITY)
 	can_be_pushed = 0
 	supported_upgrades = list(/obj/item/borg/upgrade/tasercooler,
@@ -663,7 +663,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/tool/weldingtool/robotic/weaker(src) //cracks and the like.
 	src.modules += new /obj/item/tool/knife/tacknife(src)
 	src.modules += new /obj/item/taperoll/police(src)
-	src.modules += new /obj/item/gun/projectile/automatic/judge(src)
+	src.modules += new /obj/item/gun/projectile/shotgun/judge(src)
 	src.modules += new /obj/item/gripper/ammo(src)
 	src.modules += new /obj/item/gripper/upgrade(src)
 	src.modules += new /obj/item/device/gps(src)
@@ -705,7 +705,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/custodial
 	name = "custodial robot module"
-	channels = list("Service" = 1)
+	channels = list("Skylight" = 1)
 	sprites = list(
 					"Basic" = "robotjani",
 					"Mopbot"  = "janitorrobot",
@@ -782,7 +782,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/service
 	name = "service robot module"
-	channels = list("Service" = 1)
+	channels = list("Skylight" = 1)
 
 	sprites = list(	"Waitress" = "service",
 					"Kent" = "toiletbot",
@@ -881,7 +881,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/miner
 	name = "miner robot module"
-	channels = list("Supply" = 1)
+	channels = list("Terra" = 1)
 	networks = list(NETWORK_MINE)
 	sprites = list(
 					"Basic" = "robotmine",
@@ -945,7 +945,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/research
 	name = "research module"
-	channels = list("Science" = 1)
+	channels = list("PIRS" = 1, "Medical(I)" = 1)
 	networks = list(NETWORK_RESEARCH)
 	sprites = list(
 					"Droid" = "droid-science",
@@ -1027,7 +1027,7 @@ var/global/list/robot_modules = list(
 	hide_on_manifest = TRUE
 	no_slip = 1
 	networks = list(NETWORK_ENGINEERING)
-	channels = list("Engineering" = 1, "Common" = 1)
+	channels = list("Terra" = 1, "Common" = 1)
 	health = 35 //Basic colony drones and the like should have 35 health as they are not meant for combat
 	stat_modifiers = list(
 		STAT_COG = 120,
@@ -1136,7 +1136,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/drone/construction
 	name = "construction drone module"
-	channels = list("Engineering" = 1)
+	channels = list("Terra" = 1)
 	health = 75 //These spawn in high combat areas and zones, 1 shot by a random person mob isnt fun
 	languages = list()
 

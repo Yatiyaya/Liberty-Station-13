@@ -382,12 +382,13 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	desc = "A pile of expired food and drink. Some of it smells funny."
 	parts_icon = 'icons/obj/structures/scrap/food_trash.dmi'
 	loot_list = list(
-		/obj/random/junkfood = 5,
-		/obj/random/junkfood,
-		/obj/random/booze,
-		/obj/item/material/shard,
-		/obj/random/junk/nondense,
-		/obj/random/pack/rare = 0.3
+		/obj/random/junkfood/rotten = 5,
+		/obj/random/junkfood/rotten/low_chance = 3,
+		/obj/random/junkfood/rotten/low_chance = 3,
+		/obj/random/soda/low_chance = 1,
+		/obj/random/booze/low_chance = 0.5,
+		/obj/random/cigarettes = 0.3,
+		/obj/random/pack/rare = 0.1
 	)
 
 /obj/structure/scrap/guns
@@ -486,23 +487,6 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 /obj/structure/scrap/vehicle/large/beacon
 	beacon = TRUE
 	big_item_chance = 60
-
-/obj/structure/scrap/food/large
-	name = "large food trash pile"
-	desc = "A large pile of expired food and drink. Some of it smells funny."
-	opacity = TRUE
-	density = TRUE
-	icon_state = "big"
-	loot_min = 13
-	loot_max = 20
-	base_min = 9
-	base_max = 14
-	base_spread = 16
-	big_item_chance = 50
-
-/obj/structure/scrap/food/large/beacon
-	beacon = TRUE
-	big_item_chance = 20
 
 /obj/structure/scrap/medical/large
 	name = "large medical refuse pile"

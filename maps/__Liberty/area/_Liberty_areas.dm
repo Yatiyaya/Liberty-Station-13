@@ -161,21 +161,25 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	allows_weather_of_snow = TRUE
-	is_dungeon_lootable = FALSE
+	turf_initializer = null
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
 	dynamic_lighting = TRUE
 	allows_weather_of_snow = FALSE
+	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_house
 	name = "Frozen Forest Ruined House"
 	dynamic_lighting = TRUE
 	allows_weather_of_snow = FALSE
+	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_simil_base
 	name = "Frozen Forest Similacrum Robotics Mining Entrence"
 	allows_weather_of_snow = FALSE
+	requires_power = FALSE
+	turf_initializer = null
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
@@ -298,10 +302,12 @@
 /area/liberty/outside/one_star/fo_internal
 	name = "Similacrum Field Offices"
 	icon_state = "erisblue"
+	requires_power = FALSE
 
 /area/liberty/outside/dcave
 	name = "Tengolo Cave East"
 	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
 
 /area/liberty/outside/fnest
 	name = "Fennec Nest"
@@ -653,20 +659,20 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/prime
-	name = "Prime's Office"
+	name = "Oathpledge's Office"
 	icon_state = "head_quarters"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/prime/quarters
-	name = "Prime's Quarters"
+	name = "Oathpledge's Quarters"
 	icon_state = "head_quarters"
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/merchant
-	name = "\improper Lonestar - CEO's Office"
+	name = "\improper Skylight - CEO's Office"
 	icon_state = "quart"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
@@ -876,42 +882,42 @@
 
 //Church
 
-/area/liberty/absolutism
+/area/liberty/bonfire
 	icon_state = "erisgreen"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
-/area/liberty/absolutism/chapel
+/area/liberty/bonfire/chapel
 	name = "\improper Chapel"
 	icon_state = "chapel"
 	ambience = list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg','sound/ambience/ambicha4.ogg')
 	sound_env = LARGE_ENCLOSED
 
-/area/liberty/absolutism/storage
+/area/liberty/bonfire/storage
 	name = "\improper Church Storage"
 	icon_state = "erisyellow"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
-/area/liberty/absolutism/skyyard
+/area/liberty/bonfire/skyyard
 	name = "\improper Junk Sky Field Teleporter"
 	icon_state = "erisyellow"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
-/area/liberty/absolutism/bioreactor
+/area/liberty/bonfire/bioreactor
 	name = "\improper Church Bioreactor Room"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
-/area/liberty/absolutism/vectorrooms
+/area/liberty/bonfire/vectorrooms
 	name = "\improper Church Vector Commons"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
-/area/liberty/absolutism/office
+/area/liberty/bonfire/office
 	name = "\improper Chapel Office"
 	icon_state = "chapeloffice"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
 
-/area/liberty/absolutism/chapelritualroom
+/area/liberty/bonfire/chapelritualroom
 	name = "Chapel Rituals Room"
 	icon_state = "erisgreen"
 
@@ -1486,7 +1492,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "quartoffice"
 
 /area/liberty/quartermaster/pods
-	name = "\improper Lonestar Pod Dorms"
+	name = "\improper Skylight Pod Dorms"
 	icon_state = "quartoffice"
 
 /area/liberty/quartermaster/storage
@@ -1704,7 +1710,7 @@ area/liberty/medical/medbaymeeting
 	dynamic_lighting = FALSE
 
 /area/liberty/pros/proelav
-	name = "\improper Lonestar Surface Elevator"
+	name = "\improper Skylight Surface Elevator"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prostorage

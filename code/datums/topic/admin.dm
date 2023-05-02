@@ -391,7 +391,7 @@
 	body += source.formatJobGroup(M, "Prospector Positions", "8B4513", "prospectordept", prospector_positions)
 	//Civilian (Grey)
 	body += source.formatJobGroup(M, "Civilian Positions", "dddddd", "civiliandept", civilian_positions)
-	//Lonestar (Grey)
+	//Skylight (Grey)
 	body += source.formatJobGroup(M, "Service Positions", "dddddd", "servicedept", service_positions)
 	//Off-colony (Black)
 	body += source.formatJobGroup(M, "Independent Positions", "191919", "offcolonydept", offcolony_positions)

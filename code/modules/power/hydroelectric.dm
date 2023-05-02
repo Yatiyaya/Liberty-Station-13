@@ -129,7 +129,7 @@
 
 /obj/machinery/power/thermoelectric_control/Initialize()
 	. = ..()
-	radio = new /obj/item/device/radio{channels=list("Engineering")}(src)
+	radio = new /obj/item/device/radio{channels=list("Terra")}(src)
 	assign_uid()
 
 /obj/machinery/power/thermoelectric_control/Destroy()
@@ -185,7 +185,7 @@
 		return
 
 	if(waterheld >= 10000 && !announced)
-		radio.autosay("The Thermoelectric Generator holding tempture is now at maximum capacity.", "Thermoelectric Sensor", "Engineering")
+		radio.autosay("The Thermoelectric Generator holding tempture is now at maximum capacity.", "Thermoelectric Sensor", "Terra")
 		announced = 1
 
 /obj/machinery/power/thermoelectric_control/power_change()

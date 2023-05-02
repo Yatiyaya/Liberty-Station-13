@@ -4,7 +4,7 @@
 
 //All code stored in modules/hivemind
 
-
+/*
 /datum/storyevent/hivemind
 	id = "hivemind"
 	name = "Hivemind Invasion"
@@ -13,6 +13,8 @@
 	event_type = /datum/event/hivemind
 	event_pools = list(EVENT_LEVEL_MAJOR = POOL_THRESHOLD_MAJOR*0.90)
 	tags = list(TAG_COMMUNAL, TAG_DESTRUCTIVE, TAG_NEGATIVE, TAG_SCARY)
+*/
+
 //============================================
 
 /datum/event/hivemind

@@ -27,6 +27,7 @@
 #define PERK_EQUALIZER /datum/perk/background/equalizer
 
 //Sanity
+#define PERK_VETERAN /datum/perk/background/veteran
 #define PERK_SURVIVOR /datum/perk/background/survivor
 #define PERK_NIHILIST /datum/perk/background/nihilist
 #define PERK_IDEALIST /datum/perk/background/idealist
@@ -34,6 +35,7 @@
 #define PERK_REJECTED_GENIUS /datum/perk/background/rejected_genius
 #define PERK_RAT /datum/perk/background/rat
 #define PERK_SOLBORN /datum/perk/background/solborn
+#define PERK_PAPER_WORM /datum/perk/fate/paper_worm
 
 //Wage Perks
 #define PERK_NEPOTISM /datum/perk/background/nepotism
@@ -41,10 +43,6 @@
 
 //Genetics Perks
 #define PERK_SPLICER /datum/perk/background/splicer
-
-// Food perks
-#define PERK_CARNIVORE /datum/perk/background/carnivore
-#define PERK_HERBIVORE /datum/perk/background/herbivore
 
 /////////////
 //Job Perks//

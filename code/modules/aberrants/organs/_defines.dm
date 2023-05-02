@@ -53,7 +53,7 @@
 									/datum/reagent/medicine/inaprovaline, /datum/reagent/medicine/dexalin, /datum/reagent/medicine/hyronalin, /datum/reagent/medicine/alkysine,\
 									/datum/reagent/medicine/imidazoline)
 
-#define REAGENTS_MEDICINE_INTERMEDIATE list(/datum/reagent/medicine/bicaridine, /datum/reagent/medicine/synaptizine, /datum/reagent/drug/hyperzine, /datum/reagent/medicine/tramadol,\
+#define REAGENTS_MEDICINE_INTERMEDIATE list(/datum/reagent/medicine/bicaridine, /datum/reagent/medicine/synaptizine, /datum/reagent/stim/chronos, /datum/reagent/medicine/tramadol,\
 										/datum/reagent/medicine/kelotane, /datum/reagent/medicine/tricordrazine, /datum/reagent/medicine/dylovene, /datum/reagent/medicine/polystem,\
 										/datum/reagent/medicine/inaprovaline, /datum/reagent/medicine/dexalin, /datum/reagent/medicine/hyronalin, /datum/reagent/medicine/alkysine,\
 										/datum/reagent/medicine/imidazoline)

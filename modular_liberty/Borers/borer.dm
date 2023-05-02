@@ -78,7 +78,7 @@
 	// Reagents the borer can secrete into host's blood
 	var/list/produced_reagents = list(
 		"alkysine", "bicaridine", "kelotane", "dexalin", "anti_toxin",
-		"hyperzine", "tramadol", "space_drugs", "mindbreaker"
+		"chronos", "tramadol", "space_drugs", "mindbreaker"
 		)
 
 /mob/living/simple_animal/borer/roundstart

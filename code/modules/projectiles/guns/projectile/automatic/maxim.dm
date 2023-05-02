@@ -38,6 +38,16 @@
 	wield_delay_factor = 0.5 // 50 vig, it's a heavy mf
 	gun_parts = list(/obj/item/part/gun/frame/maxim = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
+/obj/item/gun/projectile/automatic/maxim/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "[initial(icon_state)]-full"
+		set_item_state("-full")
+	else
+		icon_state = initial(icon_state)
+		set_item_state()
+	return
+
 /obj/item/part/gun/frame/maxim
 	name = "Maxim frame"
 	desc = "A Maxim HMG frame. Whatever happens, we have got the Maxim gun and they have not."

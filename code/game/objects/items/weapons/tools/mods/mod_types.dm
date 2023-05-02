@@ -227,7 +227,7 @@
 	I.prefix = "sharpened"
 
 /obj/item/tool_upgrade/productivity/diamond_blade
-	name = "Lonestars \"Gleaming Edge\": diamond blade"
+	name = "Skylights \"Gleaming Edge\": diamond blade"
 	desc = "An adaptable industrial grade cutting disc, with diamond dust worked into the metal. Exceptionally durable. Works for both cutting tools and rifle bayonets."
 	icon_state = "diamond_blade"
 	price_tag = 300
@@ -429,7 +429,7 @@
 // 	 REFINEMENT: INCREASES PRECISION
 //------------------------------------------------
 /obj/item/tool_upgrade/refinement/laserguide
-	name = "\improper Lonestars \"Guiding Light\" laser guide"
+	name = "\improper Skylights \"Guiding Light\" laser guide"
 	desc = "A small visible laser which can be strapped onto any tool, giving an accurate representation of its target. Helps improve precision."
 	icon_state = "laser_guide"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_URANIUM = 1)
@@ -468,7 +468,7 @@
 		GUN_UPGRADE_RECOIL = 0.8
 	)
 	I.gun_loc_tag = GUN_GRIP
-	I.required_qualities = list(QUALITY_CUTTING, QUALITY_WIRE_CUTTING, QUALITY_SCREW_DRIVING, QUALITY_WELDING,QUALITY_PULSING, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_BONE_SETTING, QUALITY_LASER_CUTTING, QUALITY_SHOVELING, QUALITY_DIGGING, QUALITY_WEAVING, QUALITY_BONE_GRAFTING)
+	I.required_qualities = list(QUALITY_CUTTING, QUALITY_WIRE_CUTTING, QUALITY_SCREW_DRIVING, QUALITY_WELDING,QUALITY_PULSING, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_BONE_SETTING, QUALITY_LASER_CUTTING, QUALITY_SHOVELING, QUALITY_DIGGING, QUALITY_WEAVING, QUALITY_BONE_FIXING)
 	I.prefix = "stabilized"
 
 /obj/item/tool_upgrade/refinement/magbit
@@ -775,7 +775,7 @@
 
 /obj/item/tool_upgrade/augment/crusader_seal
 	name = "righteous seal"
-	desc = "A runic seal that interfaces with a weapon in unclear ways, but which enhances its deadliness at the cost of heightened power drain. Often given as a reward to those who risk their safety in the name of the Absolute."
+	desc = "A runic seal that interfaces with a weapon in unclear ways, but which enhances its deadliness at the cost of heightened power drain. Often given as a reward to those who risk their safety in the name of the Bonfire."
 	icon_state = "seal"
 	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
 	price_tag = 160

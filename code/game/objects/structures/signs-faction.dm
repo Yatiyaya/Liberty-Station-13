@@ -34,27 +34,27 @@
 	icon_state = "moebius"
 
 /obj/structure/sign/faction/neotheology
-	name = "Absolutism"
-	desc = "A sign depicting the Tau Cross - the symbol of the Absolute."
+	name = "Bonfire"
+	desc = "A sign depicting the Tau Cross - the symbol of the Bonfire."
 	icon_state = "neotheology"
 
 /obj/structure/sign/faction/neotheology_old
-	name = "Absolutism"
-	desc = "A decaying sign depicting the Tau Cross - the symbol of the Absolute."
+	name = "Bonfire"
+	desc = "A decaying sign depicting the Tau Cross - the symbol of the Bonfire."
 	icon_state = "neotheology-old"
 
 /obj/structure/sign/faction/neotheology_cross
-	name = "Absolutism Tau Cross"
-	desc = "The religious symbol of Absolutism - the Tau cross. This one appears to be decorative."
+	name = "Bonfire Tau Cross"
+	desc = "The religious symbol of Bonfire - the Tau cross. This one appears to be decorative."
 	icon_state = "wall_cross_steel"
 
 /obj/structure/sign/faction/neotheology_cross/gold
-	desc = "The religious symbol of Absolutism - the Tau cross. This one appears to be decorative."
+	desc = "The religious symbol of Bonfire - the Tau cross. This one appears to be decorative."
 	icon_state = "wall_cross_gold"
 
 /obj/structure/sign/faction/astersguild
-	name = "Lonestar Corporation"
-	desc = "A sign depicting the insignia of Lonestar Shipping Solutions, LLC; the transport monopolists."
+	name = "Skylight Corporation"
+	desc = "A sign depicting the insignia of Skylight Shipping Solutions, LLC; the transport monopolists."
 	icon_state = "astersguild"
 
 /obj/structure/sign/faction/technomancers

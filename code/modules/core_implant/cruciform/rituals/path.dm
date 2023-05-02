@@ -316,7 +316,7 @@
 			to_chat(H, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
 			H.vessel.remove_reagent("blood",blood_cost)
 	to_chat(H, "<span class='info'>You feel yourself speeding up, your senses and reaction times quickening!</span>")
-	H.add_chemical_effect(CE_SPEEDBOOST, 0.2, 5 MINUTES, "hyperzine")
+	H.add_chemical_effect(CE_SPEEDBOOST, 0.2, 5 MINUTES, "chronos")
 	H.updatehealth()
 	set_personal_cooldown(H)
 	return TRUE
@@ -509,7 +509,7 @@
 /datum/ritual/targeted/cruciform/divisor/spawn_con
 	name = "Canticle of Defense"
 	phrase = "Sed Dominus autem mihi astitit, et confortavit me, ut per me prædicatio impleatur, et nuntius ut audirent eum omnes gentes."
-	desc = "Request a taser, absolutism tactical belt, and divisor garb from the church armory for defending yourself and your fellow disciples. Establishing the connection takes a lot of power and this litany may only be used once every four hours."
+	desc = "Request a taser, Bonfire tactical belt, and divisor garb from the church armory for defending yourself and your fellow disciples. Establishing the connection takes a lot of power and this litany may only be used once every four hours."
 	power = 50
 	cooldown = TRUE
 	cooldown_time = 4 HOURS

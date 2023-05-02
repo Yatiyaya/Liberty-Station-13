@@ -1173,6 +1173,8 @@ var/list/rank_prefix = list(\
 	form = GLOB.all_species_form_list[new_form]
 	if(new_form == FORM_SLIME) //slime people snowflake code
 		alpha = SLIME_TRANSPARENCY
+	else
+		alpha = 255
 	if(default_color)
 		skin_color = form.base_color
 

@@ -18870,7 +18870,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "aRd" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/bcave)
 "aRe" = (
@@ -19064,7 +19063,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/bcave)
 "aRN" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/dcave)
 "aRO" = (
@@ -19734,7 +19732,6 @@
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/fnest)
 "aUG" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/fnest)
 "aUH" = (

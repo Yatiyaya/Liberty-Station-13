@@ -16,6 +16,8 @@
 	new /obj/item/reagent_containers/glass/bottle/antitoxin(src)
 	new /obj/item/reagent_containers/glass/bottle/antitoxin(src)
 	new /obj/item/storage/hcases/med(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
 
 /obj/structure/closet/secure_closet/anesthetics
 	name = "anesthetics closet"
@@ -31,6 +33,7 @@
 	new /obj/item/clothing/mask/breath/medical(src)
 	new /obj/item/clothing/mask/breath/medical(src)
 	new /obj/item/tool/wrench(src)
+	new /obj/item/bodybag/cryobag(src)
 
 /obj/structure/closet/secure_closet/personal/doctor
 	name = "CAPSA Doctor's locker"
@@ -71,6 +74,8 @@
 	new /obj/item/clothing/glasses/hud/health(src)
 	new /obj/item/clothing/accessory/stethoscope(src)
 	new /obj/item/clothing/suit/armor/vest/capsa(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
 
 /obj/structure/closet/secure_closet/personal/paramedic
 	name = "CAPSA Field Doctor's locker"
@@ -105,6 +110,8 @@
 	new /obj/item/clothing/head/ushanka/medical(src)
 	new /obj/item/clothing/gloves/thick/swat/capsa(src)
 	new /obj/item/storage/pouch/medical_supply(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
 	new /obj/item/bodybag/cryobag(src)
 	new /obj/item/clothing/accessory/stethoscope(src)
 	new /obj/item/clothing/glasses/hud/health(src)
@@ -147,6 +154,8 @@
 	new /obj/item/clothing/glasses/hud/health(src)
 	new /obj/item/clothing/mask/gas/capsa(src)
 	new /obj/item/clothing/suit/armor/vest/capsa(src) // In case of hiring an intern, or requiring an armor suit
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
 
 /obj/structure/closet/secure_closet/reinforced/cso
 	name = "CAPSA Surgeon Overseer's locker"
@@ -199,6 +208,9 @@
 	new /obj/item/circuitboard/sleeper/hyper(src)
 	new /obj/item/oddity/chem_book(src)
 	new /obj/item/storage/hcases/med(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)
 
 /obj/structure/closet/secure_closet/animal
 	name = "animal control closet"
@@ -224,3 +236,5 @@
 	new /obj/item/storage/pouch/tubular/vial(src)
 	new /obj/item/storage/bag/capsa(src)
 	new /obj/item/storage/bag/capsa(src)
+	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/bodybag/cryobag(src)

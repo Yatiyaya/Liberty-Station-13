@@ -33,7 +33,7 @@
 /turf/proc/lighting_build_overlay()
 	if (lighting_overlay)
 		return
-	
+
 	var/area/A = loc
 	if (!A.dynamic_lighting)
 		return

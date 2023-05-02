@@ -7,28 +7,28 @@
 	vessel = null
 
 /area/mine/prep
-	name = "Lonestar Mining Prep"
+	name = "Union Mining Prep"
 
 /area/mine/processing
-	name = "Lonestar Ore Processing"
+	name = "Union Ore Processing"
 
 /area/mine/hallway
-	name = "Lonestar General"
+	name = "Union General"
 
 /area/mine/medical
-	name = "Lonestar Triage"
+	name = "Union Triage"
 
 /area/mine/livingarea
-	name = "Lonestar Quarters"
+	name = "Union Quarters"
 
 /area/mine/atmos
-	name = "Lonestar Atmos"
+	name = "Union Atmos"
 
 /area/mine/power
-	name = "Lonestar Machine Room"
+	name = "Union Machine Room"
 
 /area/mine/lockers
-	name = "Lonestar Locker Room"
+	name = "Union Locker Room"
 
 /area/mine/explored
 	name = "Mine"

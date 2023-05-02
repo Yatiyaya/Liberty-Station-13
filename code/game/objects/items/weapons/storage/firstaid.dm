@@ -171,14 +171,13 @@
 		/obj/item/tool/hemostat,
 		/obj/item/tool/retractor,
 		/obj/item/tool/scalpel,
-		/obj/item/tool/tape_roll/bonegel,
+		/obj/item/tool/tape_roll/bonegel, // No tape roll, no abuse of parents. Only medical stuff.
 		/obj/item/tool/surgicaldrill,
 		/obj/item/device/scanner,
 		/obj/item/storage/pill_bottle,
 		/obj/item/stack/medical,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/tool/medmultitool,
-		/obj/item/tool/tape_roll
 		)
 
 // make_exact_fit() completely ruins the can_hold list,
@@ -196,7 +195,6 @@
 	new /obj/item/tool/tape_roll/bonegel(src)
 	new /obj/item/tool/surgicaldrill(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
-	new /obj/item/tool/tape_roll/fiber/medical(src)
 
 /obj/item/storage/firstaid/surgery/traitor
 	name = "conspicuous surgery kit"
@@ -218,7 +216,6 @@
 	new /obj/item/tool/surgicaldrill/adv(src)
 	new /obj/item/stack/medical/bruise_pack/advanced(src)
 	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/tool/tape_roll/fiber/medical(src)
 	new /obj/item/reagent_containers/syringe/stim/ultra_surgeon(src) // Antags don't come with the medical perk, this helps them make use of the ATK provided
 
 /obj/item/storage/firstaid/surgery/combat
@@ -227,7 +224,7 @@
 	icon = 'icons/obj/storage/deferred.dmi'
 	icon_state = "combat_surgery_kit"
 	item_state = "combat_surgery_kit"
-	storage_slots = 11 // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than CAPSA made ones.
+	storage_slots = 11 // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than PIRS made ones.
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_PLASTIC = 12) // More slots
 	can_hold = list(
@@ -361,7 +358,7 @@
 	return
 
 /obj/item/storage/firstaid/nt
-	name = "absolutism medkit"
+	name = "bonfire medkit"
 	desc = "A medkit filled with a set of high-end trauma kits and anti-toxins."
 	icon_state = "nt_kit"
 	item_state = "nt_kit"
@@ -452,88 +449,6 @@
 	new /obj/item/reagent_containers/glass/bottle/antitoxin(src)
 	new /obj/item/stack/medical/splint(src)
 	new /obj/item/reagent_containers/syringe/spaceacillin(src)
-	new /obj/item/device/scanner/health(src)
-
-/obj/item/storage/firstaid/blackshield
-	name = "corpsman's bulk-treatment kit"
-	desc = "A compact version of CAPSA creation, this high-capacity CBT Kit allows a Corpsman to carry all the necessary tools for battlefield triage." //Yes, it's exactly what you're thinking.
-	icon_state = "cbtk"
-	item_state = "cbtk"
-	storage_slots = 14 //Having to perform medicine in non-ideal situations, it's apt that they are able to carry more equipment around.
-	max_w_class = ITEM_SIZE_NORMAL
-	max_storage_space = DEFAULT_NORMAL_STORAGE
-	can_hold = list(
-		/obj/item/stack/medical,
-		/obj/item/device/scanner/health,
-		/obj/item/reagent_containers/syringe,
-		/obj/item/storage/pill_bottle,
-		/obj/item/reagent_containers/hypospray,
-		/obj/item/reagent_containers/glass/bottle,
-		/obj/item/reagent_containers/glass/beaker,
-		/obj/item/reagent_containers/dropper,
-		/obj/item/clothing/gloves/latex,
-		/obj/item/bodybag/cryobag,
-		/obj/item/tool/medmultitool //They get to perform field surgery so they deserve space inside their kits to store a med multitool.
-		)
-
-/obj/item/storage/firstaid/blackshield/populate_contents()
-	if (empty) return
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/reagent_containers/glass/bottle/stoxin(src)
-	new /obj/item/reagent_containers/glass/bottle/tricord(src)
-	new /obj/item/stack/medical/splint(src)
-	new /obj/item/reagent_containers/syringe/spaceacillin(src)
-	new /obj/item/device/scanner/health(src)
-
-/obj/item/storage/firstaid/blackshield/large
-	name = "blackshield's counter-siege treatment kit"
-	desc = "The bigger brother to the corpsman bulk treatment kit, perfect for extended combat scenarios. Sadly not as compact as other similar designed kits." //Yes, it's exactly what you're thinking.
-	icon_state = "cbtk_large"
-	item_state = "cbtk_large"
-	w_class = ITEM_SIZE_BULKY //Big boy meds
-	storage_slots = 20 //Having to perform medicine in non-ideal situations, it's apt that they are able to carry more equipment around.
-
-	can_hold = list(
-		/obj/item/stack/medical,
-		/obj/item/device/scanner/health,
-		/obj/item/reagent_containers/syringe,
-		/obj/item/storage/pill_bottle,
-		/obj/item/reagent_containers/hypospray,
-		/obj/item/reagent_containers/glass/bottle,
-		/obj/item/reagent_containers/glass/beaker,
-		/obj/item/reagent_containers/dropper,
-		/obj/item/clothing/gloves/latex,
-		/obj/item/bodybag/cryobag,
-		/obj/item/tool/medmultitool //They get to perform field surgery so they deserve space inside their kits to store a med multitool.
-		)
-
-/obj/item/storage/firstaid/blackshield/large/populate_contents()
-	if (empty) return
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/bruise_pack/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/stack/medical/ointment/blacshield(src)
-	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/storage/pill_bottle/bicaridine(src)
-	new /obj/item/storage/pill_bottle/dermaline(src)
-	new /obj/item/storage/pill_bottle/spaceacillin(src)
-	new /obj/item/storage/pill_bottle/carthatoline(src)
-	new /obj/item/storage/pill_bottle/prosurgeon(src)
-	new /obj/item/stack/medical/splint(src)
 	new /obj/item/device/scanner/health(src)
 
 /*

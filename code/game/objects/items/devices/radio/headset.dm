@@ -99,84 +99,21 @@
 	item_state = "headset"
 	adhoc_fallback = TRUE
 
-/obj/item/device/radio/headset/headset_blackshield
-	name = "blackshield radio headset"
-	desc = "This is used by the idiotic chimps with guns."
-	icon_state = "bs_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_bs
-
-/obj/item/device/radio/headset/headset_blackshield/corps
-	name = "corpsman radio headset"
-	ks2type = /obj/item/device/encryptionkey/headset_bs/corps
-
-/obj/item/device/radio/headset/headset_blackshield/sergeant
-	name = "sergeant radio headset"
-	ks2type = /obj/item/device/encryptionkey/headset_bs/sergeant
-
-/obj/item/device/radio/headset/headset_blackshield/bowman
-	name = "blackshield bowman headset"
-	desc = "This headset of questionable quality was made years ago for Sol cargo pilots, it's hard to ingore the rattling noise whenever you turn your head too fast. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "bs_bowman_headset"
-	item_state = "bs_bowman_headset"
-	adhoc_fallback = TRUE
-
-/obj/item/device/radio/headset/headset_blackshield/bowman/corps
-	name = "corpsman bowman headset"
-	ks2type = /obj/item/device/encryptionkey/headset_bs/corps
-
-/obj/item/device/radio/headset/headset_blackshield/bowman/sergeant
-	name = "sergeant bowman headset"
-	ks2type = /obj/item/device/encryptionkey/headset_bs/sergeant
-
-/obj/item/device/radio/headset/radiohat_blackshield // No longer a cap, a honest to god cap with a FUNCTIONAL headset. - Seb
-	name = "blackshield radio hat"
-	desc = "A faded black cap with the badge of the Blackshield. Comes attached with an industrial radio headset for long-range communication."
-	icon = 'icons/inventory/head/icon.dmi'
-	icon_state = "radiohat"
-	item_state = "radiohat"
-	adhoc_fallback = TRUE
-	slot_flags = SLOT_HEAD // No wearing this on your ears and a cap on top, we're not TF2
-	body_parts_covered = HEAD|EARS // Half cap, half headset
-	ks2type = /obj/item/device/encryptionkey/headset_bs
-
-/obj/item/device/radio/headset/radiohat_blackshield/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Blackshield Colours"] = "radiohat"
-	options["Woodlands Blackshield Colours"] = "radiohatgreen"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
 /obj/item/device/radio/headset/headset_eng
-	name = "guild radio headset"
+	name = "union radio headset"
 	desc = "When the wage slaves wish to chat like girls."
 	icon_state = "eng_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_eng
 
+/*
 /obj/item/device/radio/headset/headset_rob
 	name = "robotics radio headset"
 	desc = "Made specifically for the roboticists who cannot decide between departments."
 	icon_state = "rob_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_sci
+*/
 
 /obj/item/device/radio/headset/headset_med
 	name = "medical radio headset"
@@ -292,8 +229,8 @@
 	ks2type = /obj/item/device/encryptionkey/heads/clubmanager
 
 /obj/item/device/radio/headset/heads/preacher
-	name = "prime's headset"
-	desc = "The headset of the man who leads you to god and into the arms of a cult."
+	name = "oathbound's headset"
+	desc = "The headset of the man who leads the local chapter of the Custodians"
 	icon_state = "nt_com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/preacher
@@ -306,8 +243,8 @@
 	ks2type = /obj/item/device/encryptionkey/headset_cargo
 
 /obj/item/device/radio/headset/headset_service
-	name = "service radio headset"
-	desc = "Headset used by the service staff, tasked with keeping the colony full, happy, and clean."
+	name = "skylight radio headset"
+	desc = "Headset used by the Skylight Syndicate in all their topside activities."
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_service

@@ -1100,7 +1100,6 @@
 /area/liberty/dungeon/outside/zoo)
 "bpZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "bqb" = (
@@ -1958,7 +1957,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/outside/one_star)
 "cpK" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "cpP" = (
@@ -2976,7 +2975,6 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "dvL" = (
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -3504,7 +3502,6 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "ebz" = (
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "ebL" = (
@@ -6159,7 +6156,6 @@
 /area/liberty/dungeon/outside/prepper)
 "hbU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "hcG" = (
@@ -14383,7 +14379,6 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "pSG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/scrap/food/large,
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)

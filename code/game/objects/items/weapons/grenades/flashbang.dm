@@ -42,6 +42,7 @@
 		H.flash(3, FALSE , TRUE , TRUE, 15)
 	else
 		M.flash(5, FALSE, TRUE , TRUE)
+	M.stats.addTempStat(STAT_ROB, -STAT_LEVEL_ADEPT, 10 SECONDS, "flashbang")
 	M.stats.addTempStat(STAT_VIG, -STAT_LEVEL_ADEPT, 10 SECONDS, "flashbang")
 	M.stats.addTempStat(STAT_COG, -STAT_LEVEL_ADEPT, 10 SECONDS, "flashbang")
 	M.stats.addTempStat(STAT_BIO, -STAT_LEVEL_ADEPT, 10 SECONDS, "flashbang")
@@ -133,12 +134,14 @@
 		var/obj/item/organ/internal/eyes/E = H.random_organ_by_process(OP_EYES)
 		if (E && E.damage >= E.min_bruised_damage)
 			to_chat(M, SPAN_DANGER("Your eyes start to burn badly!"))
+		H.add_recoil(300 - ear_safety * 100)
 	if (M.ear_damage >= 15)
 		to_chat(M, SPAN_DANGER("Your ears start to ring badly!"))
 	else
 		if (M.ear_damage >= 5)
 			to_chat(M, SPAN_DANGER("Your ears start to ring!"))
 	if(stat_reduction)
+		M.stats.addTempStat(STAT_ROB, stat_def, 10 SECONDS, "flashbang")
 		M.stats.addTempStat(STAT_VIG, stat_def, 10 SECONDS, "flashbang")
 		M.stats.addTempStat(STAT_COG, stat_def, 10 SECONDS, "flashbang")
 		M.stats.addTempStat(STAT_BIO, stat_def, 10 SECONDS, "flashbang")
@@ -147,14 +150,14 @@
 
 /obj/item/grenade/flashbang/nt
 	name = "NT FBG \"Holy Light\""
-	desc = "An \"Absolute\" branded flashbang grenade, to spread the light of god."
+	desc = "An \"Bonfire\" branded flashbang grenade, to spread the light of god."
 	icon_state = "flashbang_nt"
 	item_state = "flashbang_nt"
 	matter = list(MATERIAL_BIOMATTER = 15)
 
 /obj/item/grenade/flashbang/nt/flashbang_without_the_bang(turf/T, mob/living/carbon/M)
 	if(M.get_core_implant(/obj/item/implant/core_implant/cruciform))
-		to_chat(M, span_singing("You are blinded by the Absolute\' light!"))
+		to_chat(M, span_singing("You are blinded by the Bonfire\' light!"))
 		M.flash(0, FALSE, FALSE , FALSE, 0) // angel light , non-harmfull other than the overlay
 		return
 	..()

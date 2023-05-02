@@ -17,7 +17,7 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/tool
-	name = "YouTool"
+	name = "Terra-Therma YouTool Vendor"
 	desc = "Tools for tools."
 	product_slogans = "Tools, Gloves and everything you would need!; Need a belt?; Top quality tools, only here!; Doors shocked again? We have gloves!;Better than the competitors!"
 	product_ads = "Reliable!;Highest Quality!;Take a belt!;Colorful cables!;Insulated Gloves, only here!"
@@ -55,7 +55,7 @@
 					/obj/item/weldpack = 300)
 
 /obj/machinery/vending/engivend
-	name = "Guild-Vend"
+	name = "Therma-Vend"
 	desc = "Spare tool vending. What? Did you expect some witty description?"
 	product_slogans = "Spare tools for your Engineering needs!;Forgot where we keep mesons again, didn't you?;Need a battery?;You need electronics? I got electronics."
 	shut_up = 1
@@ -202,7 +202,7 @@
 					/obj/item/cell/small/super = 300)
 
 /obj/machinery/vending/printomat
-	name = "Lonestar Print-Mat"
+	name = "Skylight Print-Mat"
 	desc = "Everything you can imagine (not really) on a disc! Print your own gun TODAY."
 	product_slogans = "Print your own gun TODAY!;The future is NOW!;Can't stop the industrial revolution!;Everything you can imagine, RIGHT HERE!;Don't copy that floppy!;Who needs dreams when you can print everything you need?"
 	product_ads = "Almost free!;Print it yourself!;Don't copy that floppy!;Industrial Revolution!;Future!;Print your dreams TODAY!;Cheap and reliable!"
@@ -250,7 +250,7 @@
 
 //This one's from bay12
 /obj/machinery/vending/plasmaresearch
-	name = "Toximate 3000"
+	name = "Toximate 3000 Vendor"
 	desc = "All the fine parts you need in one vending machine!"
 	shut_up = 1
 	products = list(/obj/item/clothing/under/rank/scientist = 6,
@@ -268,7 +268,7 @@
 
 //This one's from bay12
 /obj/machinery/vending/robotics
-	name = "Robotech Deluxe"
+	name = "HexaOptimum Robotech Deluxe Vendor"
 	desc = "All the tools you need to create your own robot army."
 	product_slogans = "Build your robot army TODAY!;How about a mech?;You know you need that Durand!;Lost your jumpsuit again?;Let's implant them, we both know they need it."
 	icon_state = "robotics"

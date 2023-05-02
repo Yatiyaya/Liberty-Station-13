@@ -454,7 +454,7 @@
 
 /obj/item/reagent_containers/syringe/stim/menace
 	name = "syringe (MENACE)"
-	desc = "A syringe containing a dose of the powerful electrolyte based stimulant known as menace. A drug made famous for being used by suicidal naramadi shock troops employed by the Solarian Federation."
+	desc = "A syringe containing a dose of the powerful electrolyte based stimulant known as menace. A drug made famous for being used by suicidal naramadi shock troops."
 	preloaded_reagents = list("menace" = 15)
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -481,10 +481,10 @@
 	desc = "Contains spaceacillin - an antibacterial agent."
 	preloaded_reagents = list("spaceacillin" = 15)
 
-/obj/item/reagent_containers/syringe/hyperzine
-	name = "syringe (hyperzine)"
-	desc = "Contains hyperzine - a long lasting muscle stimulant."
-	preloaded_reagents = list("hyperzine" = 15)
+/obj/item/reagent_containers/syringe/chronos
+	name = "syringe (chronos)"
+	desc = "Contains chronos - a long lasting combat speed stimulant."
+	preloaded_reagents = list("chronos" = 15)
 
 /obj/item/reagent_containers/syringe/drugs
 	name = "syringe (drugs)"
@@ -528,7 +528,7 @@
 	desc = "Contains tricordrazine - a weak but universal healing chemical, a label warns that it over doses at thirty units."
 	preloaded_reagents = list("tricordrazine" = 30)
 
-/obj/item/reagent_containers/syringe/large/hyperzine
-	name = "large syringe (hyperzine)"
-	desc = "Contains hyperzine - a powerful stimulant to improve movement speed."
-	preloaded_reagents = list("hyperzine" = 30)
+/obj/item/reagent_containers/syringe/large/chronos
+	name = "large syringe (chronos)"
+	desc = "Contains Chronos - a powerful combat stimulant to improve movement speed. A label warns that it over doses at sixteen units."
+	preloaded_reagents = list("chronos" = 30)

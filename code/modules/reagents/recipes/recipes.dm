@@ -183,12 +183,12 @@
 
 /datum/chemical_reaction/meralyne
 	result = "meralyne"
-	required_reagents = list("hyperzine" = 1, "blattedin" = 2, "tramadol" = 1)
+	required_reagents = list("bicaridine" = 1, "blattedin" = 2, "tramadol" = 1)
 	result_amount = 2
 
-/datum/chemical_reaction/hyperzine
-	result = "hyperzine"
-	required_reagents = list("sugar" = 1, "blattedin" = 1, "sulfur" = 1)
+/datum/chemical_reaction/chronos
+	result = "chronos"
+	required_reagents = list("noexcutite" = 1, "blattedin" = 1, "paroxetine" = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/psi_juice
@@ -691,14 +691,14 @@
 
 /datum/chemical_reaction/violence_ultra
 	result = "violence ultra"
-	required_reagents = list("violence" = 1, "fuhrerole" = 1, "hyperzine" = 1)
+	required_reagents = list("violence" = 1, "fuhrerole" = 1, "chronos" = 1)
 	result_amount = 3
 	maximum_temperature = 258
 	minimum_temperature = 243
 
 /datum/chemical_reaction/bouncer
 	result = "bouncer"
-	required_reagents = list("violence" = 1, "fuhrerole" = 1, "hyperzine" = 1)
+	required_reagents = list("violence" = 1, "pararein" = 1, "chronos" = 1)
 	result_amount = 3
 	maximum_temperature = 333
 	minimum_temperature = 303
@@ -712,14 +712,14 @@
 
 /datum/chemical_reaction/steady
 	result = "steady"
-	required_reagents = list("pararein" = 1, "carpotoxin" = 1, "copper" = 1, "hydrazine" = 1)
-	result_amount = 4
+	required_reagents = list("pararein" = 1, "carpotoxin" = 1, "chronos" = 1)
+	result_amount = 3
 	maximum_temperature = 338
 	minimum_temperature = 323
 
 /datum/chemical_reaction/turbo
 	result = "turbo"
-	required_reagents = list("steady" = 1, "adrenaline" = 1, "synaptizine" = 1)
+	required_reagents = list("steady" = 1, "adrenaline" = 1, "noexcutite" = 1)
 	result_amount = 3
 	maximum_temperature = 293
 	minimum_temperature = 288

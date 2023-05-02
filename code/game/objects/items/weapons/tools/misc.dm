@@ -1,5 +1,5 @@
 /obj/item/tool/omnitool
-	name = "\improper Lonestar \"Munchkin 5000\""
+	name = "\improper Skylight \"Munchkin 5000\""
 	desc = "A fuel-powered monster of a tool. Its welder part is the most advanced one, capable of welding things without harmful glow and sparks, so no protection needed. The complexity of this tool means that regular maintenance is required."
 	icon_state = "omnitool"
 	max_health = 200
@@ -16,7 +16,7 @@
 
 /obj/item/tool/polytool
 	name = "\"Jolly Co-operation\" polytool"
-	desc = "One of the few jointly designed tools by both Lonestar Shipping Solutions and the Terra-Therma Union, a rather curious attempt at merging the munchkin 5000 of lonestar infamy and \
+	desc = "One of the few jointly designed tools by both Skylight and the Terra-Therma Union, a rather curious attempt at merging the munchkin 5000 of Skylight infamy and \
 	designs taken directly from the guild arc welder. What it produced was a munchkin and arc welder combo with much finer tuned properties, efficient fuel economy, comfortable hand grips, and plenty of slots for tool augments."
 	icon_state = "polytool"
 	item_state = "polytool"
@@ -56,7 +56,7 @@
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLATINUM = 2)
 	flags = CONDUCT
 	origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4)
-	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_LASER_CUTTING = 30, QUALITY_WIRE_CUTTING = 25, QUALITY_BONE_GRAFTING = 50)
+	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_LASER_CUTTING = 30, QUALITY_WIRE_CUTTING = 25, QUALITY_BONE_FIXING = 50)
 	suitable_cell = /obj/item/cell/medium
 	use_power_cost = 0.2 //Effective!
 	max_upgrades = 2
@@ -75,7 +75,7 @@
 	edge = TRUE
 	worksound = WORKSOUND_DRIVER_TOOL
 	flags = CONDUCT
-	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_GRAFTING = 40)
+	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_FIXING = 40)
 	degradation = 0.5
 	workspeed = 0.8
 	price_tag = 600 // Not nearly as fancy.

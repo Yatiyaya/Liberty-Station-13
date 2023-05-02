@@ -14,7 +14,7 @@
 /obj/random/rations/low_chance
 	name = "low chance preserved rations"
 	icon_state = "food-green-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 95
 
 /obj/random/junkfood
 	name = "random junkfood"
@@ -36,7 +36,7 @@
 /obj/random/junkfood/low_chance
 	name = "low chance junkfood"
 	icon_state = "food-red-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 95
 
 /obj/random/junkfood/onlypizza
 	name = "random pizza"
@@ -85,12 +85,12 @@
 	for(var/obj/item/reagent_containers/food in spawns)
 		if(!food.reagents)
 			return
-		if(prob(80))
-			food.reagents.add_reagent("toxin", 25)
-		if(prob(30)) // So sometimes the rot is visible.
+		if(food.reagents)
+			food.reagents.add_reagent("toxin", 15)
+			food.reagents.add_reagent("mold", 15)
+		if(prob(50)) // So sometimes the rot is visible.
 			food.make_old()
 	return spawns
-
 
 /obj/random/rations/crayon
 	name = "random crayon rations"
@@ -123,5 +123,48 @@
 						/obj/item/reagent_containers/food/snacks/cube/roach/glowing = 2,\
 						/obj/item/reagent_containers/food/snacks/cube/roach/grestrahlte = 2))
 
+/obj/random/booze
+	name = "random booze"
+	icon_state = "cannister-red"
 
+/obj/random/booze/item_to_spawn()
+	return pickweight(list(/obj/item/reagent_containers/food/drinks/bottle/small/beer = 7,
+				/obj/item/reagent_containers/food/drinks/bottle/small/ale = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/absinthe = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/bluecuracao = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/gin = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/kahlua = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/melonliquor = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/rum = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/tequilla = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka = 2,
+				/obj/item/reagent_containers/food/drinks/bottle/whiskey = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/patron = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/goldschlager = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/wine = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/cognac = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/vermouth = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/pwine = 1))
 
+/obj/random/booze/low_chance
+	name = "low chance random booze"
+	icon_state = "cannister-red-low"
+	spawn_nothing_percentage = 90
+
+/obj/random/soda
+	name = "random soda"
+	icon_state = "cannister-red"
+
+/obj/random/soda/item_to_spawn()
+	return pickweight(list(/obj/item/reagent_containers/food/drinks/cans/cola = 7,
+				/obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 1,
+				/obj/item/reagent_containers/food/drinks/cans/monster_sol = 1,
+				/obj/item/reagent_containers/food/drinks/cans/monster_blood = 1,
+				/obj/item/reagent_containers/food/drinks/cans/monster_jungel = 1,
+				/obj/item/reagent_containers/food/drinks/cans/baton_commando = 1,
+				/obj/item/reagent_containers/food/drinks/cans/baton_rent_a_cop = 1))
+
+/obj/random/soda/low_chance
+	name = "low chance random soda"
+	icon_state = "cannister-red-low"
+	spawn_nothing_percentage = 90
