@@ -154,27 +154,8 @@ TFF
 	add_field(/datum/report_field/simple_text, "Head of Department:")
 	add_field(/datum/report_field/instruction, "Contained review materials are not representative of the views of the relevant faction. Said faction is not liable for any bias or offensive language contained within said review materials. The relevant faction in question withholds the right to action upon any information contained within this assessment.")
 
-/datum/computer_file/report/recipient/command/borging
-	form_name = "FLC-COM-008-CRC"
-	title = "Command - Cyborgification Contract"
-
-/datum/computer_file/report/recipient/command/borging/generate_fields()
-	..()
-	var/list/xo_fields = list()
-	add_field(/datum/report_field/instruction, "PIRS")
-	add_field(/datum/report_field/people/from_manifest, "Name (XO)")
-	add_field(/datum/report_field/people/from_manifest, "Name (subject)", required = 1)
-	add_field(/datum/report_field/date, "Date filed")
-	add_field(/datum/report_field/time, "Time filed")
-	add_field(/datum/report_field/instruction, "I, undersigned, hereby agree to willingly undergo a Regulation Lobotimization with intention of cyborgification or AI assimilation, and I am aware of all the consequences of such act. I also understand that this operation may be irreversible, and that my employment contract will be terminated.")
-	add_field(/datum/report_field/signature, "Subject's signature")
-	xo_fields += add_field(/datum/report_field/signature, "Research Provost's signature")
-	xo_fields += add_field(/datum/report_field/options/yes_no, "Approved")
-	for(var/datum/report_field/field in xo_fields)
-		field.set_access(access_edit = access_hop)
-
 /datum/computer_file/report/recipient/command/docked
-	form_name = "FLC-COM-009-DVR"
+	form_name = "FLC-COM-008-DVR"
 	title = "Command - Docked Vessel Report"
 
 /datum/computer_file/report/recipient/command/docked/generate_fields()
@@ -263,6 +244,24 @@ TFF
 	temp_field.set_access(access_edit = list(access_security, access_armory))
 	temp_field = add_field(/datum/report_field/signature, "Criminal Investigator's signature")
 	temp_field.set_access(access_edit = list(access_security, access_forensics_lockers))
+
+/datum/computer_file/report/recipient/sec/mech
+	form_name = "FLC-FLW-004-CMP"
+	title = "Liberty Watch - Combat Mech Usage Permit"
+
+/datum/computer_file/report/recipient/sec/mech/generate_fields()
+	..()
+	add_field(/datum/report_field/instruction, "Liberty Watch Security Department")
+	add_field(/datum/report_field/people/from_manifest, "Name")
+	add_field(/datum/report_field/date, "Date")
+	add_field(/datum/report_field/time, "Time")
+	add_field(/datum/report_field/simple_text, "Mech's Title:")
+	add_field(/datum/report_field/simple_text, "Mech's Type:")
+	add_field(/datum/report_field/simple_text, "Mech's Equipment:")
+	add_field(/datum/report_field/instruction, "These are non-negotiable, any modifications void this permit.")
+	add_field(/datum/report_field/signature, "Signature of Deputy Chief")
+	add_field(/datum/report_field/signature, "Signature of Board Secretary (if applicable)")
+	set_access(access_edit = access_security)
 
 //////////////////////////////////
 /* Service - Skylight Syndicate */
@@ -359,7 +358,75 @@ TFF
 	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?:")
 	add_field(/datum/report_field/simple_text, "The guard is entilted to:")
 	add_field(/datum/report_field/signature, "Buyer's Signature:")
-	add_field(/datum/report_field/signature, "Guard Signature(if applicabble):")
+	add_field(/datum/report_field/signature, "Guard Signature(if applicable):")
+
+/////////////////////
+/* Research - PIRS */
+/////////////////////
+
+/datum/computer_file/report/recipient/pirs
+	form_name = "FLC-PRI-001-MGR"
+	title = "Phokorus Institute - Excavation Report"
+	logo = "\[solcrest\]" //Placeholder until their actual logo
+
+/datum/computer_file/report/recipient/pirs/New()
+	..()
+	set_access(access_research_equipment)
+
+/datum/computer_file/report/recipient/pirs/generate_fields()
+	..()
+	add_field(/datum/report_field/instruction, "Excavation Report")
+	add_field(/datum/report_field/date, "Date")
+	add_field(/datum/report_field/time, "Time")
+	add_field(/datum/report_field/simple_text, "Excavated by:")
+	add_field(/datum/report_field/simple_text, "Excavated item list:")
+	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?:")
+	add_field(/datum/report_field/simple_text, "The guard is entilted to:")
+	add_field(/datum/report_field/signature, "The guard's signature(if applicable):")
+	add_field(/datum/report_field/simple_text, "The employee is entitled to:")
+	add_field(/datum/report_field/signature, "The employee's signature: ")
+
+/datum/computer_file/report/recipient/pirs/borging
+	form_name = "FLC-PRI-002-CRC"
+	title = "Phokorus Institute - Cyborgification Contract"
+
+/datum/computer_file/report/recipient/pirs/borging/generate_fields()
+	..()
+	var/list/xo_fields = list()
+	add_field(/datum/report_field/instruction, "PIRS")
+	add_field(/datum/report_field/people/from_manifest, "Name (XO)")
+	add_field(/datum/report_field/people/from_manifest, "Name (subject)", required = 1)
+	add_field(/datum/report_field/date, "Date filed")
+	add_field(/datum/report_field/time, "Time filed")
+	add_field(/datum/report_field/instruction, "I, undersigned, hereby agree to willingly undergo a Regulation Lobotimization with intention of cyborgification or AI assimilation, and I am aware of all the consequences of such act. I also understand that this operation may be irreversible, and that my employment contract will be terminated.")
+	add_field(/datum/report_field/signature, "Subject's signature")
+	xo_fields += add_field(/datum/report_field/signature, "Research Provost's signature")
+	xo_fields += add_field(/datum/report_field/options/yes_no, "Approved")
+	for(var/datum/report_field/field in xo_fields)
+		field.set_access(access_edit = access_hop)
+
+/////////////////////
+/* Medical - CAPSA */
+/////////////////////
+
+/datum/computer_file/report/recipient/cap
+	form_name = "FLC-CAP-001-BGR"
+	title = "CAPSA Group - Billing Receipt"
+	logo = "\[solcrest\]" //Placeholder until their actual logo
+
+/datum/computer_file/report/recipient/cap/New()
+	..()
+	set_access(access_medical)
+
+/datum/computer_file/report/recipient/cap/generate_fields()
+	..()
+	add_field(/datum/report_field/instruction, "CAPSA Billing Receipt")
+	add_field(/datum/report_field/date, "Date")
+	add_field(/datum/report_field/time, "Time")
+	add_field(/datum/report_field/simple_text, "You were served by:")
+	add_field(/datum/report_field/pencode_text, "You were provided services:")
+	add_field(/datum/report_field/simple_text, "Your Total:")
+	add_field(/datum/report_field/signature, "Signature")
 
 /////////////
 /* Generic */
