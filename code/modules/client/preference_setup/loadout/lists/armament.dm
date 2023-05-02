@@ -74,6 +74,10 @@
 	path = /obj/item/clothing/accessory/holster/saber/machete
 	cost = 2
 
+/datum/gear/armament/holster/saber/cheap
+	display_name = "generic scabbard"
+	path = /obj/item/clothing/accessory/holster/saber/machete/cheap
+
 /datum/gear/armament/holster/saber/cutlass
 	display_name = "cutlass sheath"
 	path = /obj/item/clothing/accessory/holster/saber/cutlass

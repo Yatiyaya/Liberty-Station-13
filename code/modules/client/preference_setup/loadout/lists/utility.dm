@@ -26,6 +26,10 @@
 	display_name = "crayon box"
 	path = /obj/item/storage/fancy/crayons
 
+/datum/gear/utility/crowbar
+	display_name = "crowbar"
+	path = /obj/item/tool/crowbar
+
 /datum/gear/utility/psi_juice
 	display_name = "cerebrix inhaler"
 	path = /obj/item/psi_injector
