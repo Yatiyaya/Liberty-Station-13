@@ -538,10 +538,6 @@
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor1north)
 "ail" = (
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
@@ -553,6 +549,10 @@
 	},
 /obj/machinery/power/terminal{
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
@@ -1155,7 +1155,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 9
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/hydroponics)
@@ -1320,6 +1320,7 @@
 "atA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/cargo,
+/obj/structure/reagent_dispensers/watertank/huge,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "atB" = (
@@ -1986,6 +1987,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/tcommsat/computer)
 "aDH" = (
@@ -2158,6 +2164,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/medbay/iso)
 "aFA" = (
@@ -3011,7 +3018,7 @@
 "aPH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -3108,6 +3115,12 @@
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/command/courtroom)
+"aQL" = (
+/obj/machinery/light/floor,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank/huge,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/crew_quarters/hydroponics)
 "aQQ" = (
 /obj/machinery/vending/fitness,
 /obj/machinery/alarm{
@@ -3451,6 +3464,13 @@
 /obj/random/mob/roaches,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor1west)
+"aVw" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "aVy" = (
 /obj/machinery/genetics/gene_analyzer,
 /turf/simulated/floor/tiled/white/techfloor,
@@ -3855,7 +3875,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -4495,6 +4515,11 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
@@ -5137,6 +5162,11 @@
 /area/liberty/rnd/xenobiology/xenoflora)
 "btp" = (
 /obj/item/modular_computer/console/preset/engineering/atmos,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "bts" = (
@@ -5740,11 +5770,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/tcommsat/computer)
 "bEu" = (
@@ -6609,6 +6634,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/side/f2section1)
 "bOA" = (
@@ -7060,11 +7086,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "bUB" = (
@@ -7588,6 +7609,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/multi_tile,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "caY" = (
@@ -8053,6 +8075,11 @@
 /obj/structure/scrap/medical,
 /turf/simulated/floor/industrial/grey_slates,
 /area/liberty/maintenance/undergroundfloor1east)
+"chl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_scrubber,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "chp" = (
 /obj/random/mob/roaches/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -8078,6 +8105,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "chL" = (
@@ -8093,9 +8121,9 @@
 /area/liberty/bonfire/chapel)
 "chO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/firealarm{
+/obj/machinery/alarm{
 	dir = 4;
-	pixel_x = -32
+	pixel_x = -25
 	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/rnd/docking)
@@ -8518,6 +8546,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "cmJ" = (
@@ -9389,13 +9418,12 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "cxw" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/danger,
-/area/liberty/command/tcommsat/computer)
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/crew_quarters/hydroponics)
 "cxS" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -9525,11 +9553,6 @@
 /area/shuttle/vasiliy_shuttle_area)
 "czJ" = (
 /obj/machinery/light,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "czT" = (
@@ -10053,6 +10076,24 @@
 	temperature = 80
 	},
 /area/liberty/command/tcommsat/computer)
+"cGY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "cHp" = (
 /obj/machinery/flasher{
 	dir = 4;
@@ -12205,6 +12246,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos/surface)
 "dih" = (
@@ -12660,6 +12702,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "doj" = (
@@ -12760,6 +12803,10 @@
 "dpQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 1;
+	target_pressure = 5000
+	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "dpV" = (
@@ -12843,11 +12890,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "dqX" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -12857,8 +12899,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/cyan{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
@@ -12884,6 +12926,18 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/steel/bar_flat,
 /area/liberty/crew_quarters/bar/vip)
+"drw" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "drC" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -12897,6 +12951,11 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "drD" = (
@@ -13448,6 +13507,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/maintenance/undergroundfloor1east)
+"dAC" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/mob/living/simple_animal/pig,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "dAH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel,
@@ -13550,7 +13616,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -13894,13 +13960,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "dHj" = (
@@ -14027,6 +14093,11 @@
 /obj/machinery/floodlight,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
+"dIE" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/golden/blattin,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "dIH" = (
 /obj/random/pack/machine,
 /turf/simulated/floor/industrial/fancy_slates,
@@ -14625,6 +14696,11 @@
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -32
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
@@ -15462,11 +15538,6 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "edZ" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/command/tcommsat/computer)
 "eei" = (
@@ -15687,9 +15758,18 @@
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/hallway/side/f2section1)
 "eiq" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/crew_quarters/hydroponics)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "eit" = (
 /obj/random/closet,
 /obj/effect/decal/cleanable/dirt,
@@ -16306,6 +16386,14 @@
 /obj/machinery/light_switch{
 	pixel_y = 32
 	},
+/obj/structure/table/rack/shelf,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/dropper,
+/obj/item/grenade/chem_grenade/antiweed,
+/obj/item/grenade/chem_grenade/antiweed,
+/obj/item/grenade/chem_grenade/antiweed,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/spray/plantbgone,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "erf" = (
@@ -17138,11 +17226,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
@@ -17460,6 +17543,7 @@
 	name = "Medbay Total Lockdown";
 	opacity = 0
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/chemistry)
 "eIu" = (
@@ -17545,7 +17629,7 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "eJf" = (
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
@@ -17763,27 +17847,15 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/meeting_room)
 "eLy" = (
-/obj/machinery/power/sensor{
-	light_range = 1;
-	name = "Powernet Sensor - Tcoms Subgrid";
-	name_tag = "Tcoms Subgrid"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
 	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/obj/structure/cable/cyan{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark/danger,
-/area/liberty/command/tcommsat/computer)
+/turf/simulated/floor/tiled/dark/bluecorner,
+/area/liberty/security/maingate)
 "eLB" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -18228,6 +18300,11 @@
 /area/liberty/maintenance/substation/servist)
 "eUO" = (
 /obj/item/modular_computer/console/preset/engineering/power,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "eUQ" = (
@@ -18995,6 +19072,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "ffV" = (
@@ -19209,6 +19289,19 @@
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/maintenance/undergroundfloor1east)
+"fjp" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "fjy" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -19224,11 +19317,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
 "fjP" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
@@ -19874,11 +19962,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
-	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -23040,6 +23123,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/hallway/surface/section1)
 "gjT" = (
@@ -23563,20 +23647,20 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "grL" = (
@@ -23697,9 +23781,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "gsU" = (
-/obj/machinery/vending/hydronutrients,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/crew_quarters/hydroponics)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "gti" = (
 /obj/structure/reagent_dispensers/fueltank/derelict,
 /obj/effect/decal/cleanable/dirt,
@@ -23726,11 +23812,6 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "gtM" = (
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/camera/network/command,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/command/tcommsat/computer)
@@ -24280,6 +24361,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "gCr" = (
@@ -24346,12 +24432,12 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "gDu" = (
@@ -24460,6 +24546,10 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
+"gEO" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "gES" = (
 /obj/structure/filingcabinet/security{
 	desc = "A large cabinet with hard copy security records.";
@@ -25522,6 +25612,13 @@
 	icon_state = "4,14"
 	},
 /area/shuttle/vasiliy_shuttle_area)
+"gST" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "gSZ" = (
 /obj/structure/catwalk,
 /obj/structure/railing,
@@ -25667,6 +25764,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/medical/chemistry)
 "gUz" = (
@@ -25940,6 +26038,13 @@
 	icon_state = "6,14"
 	},
 /area/shuttle/vasiliy_shuttle_area)
+"gYd" = (
+/obj/machinery/door/window/northleft,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "gYg" = (
 /obj/machinery/light{
 	dir = 1
@@ -26038,6 +26143,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor1west)
+"gZC" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "gZL" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -26194,6 +26309,18 @@
 /obj/machinery/vending/snack,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
+"hcP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/liberty/hallway/side/f2section1)
 "hcS" = (
 /obj/structure/table/reinforced,
 /obj/item/aiModule/eris,
@@ -26801,6 +26928,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/machinery/power/sensor{
+	light_range = 1;
+	name = "Powernet Sensor - Tcoms Subgrid";
+	name_tag = "Tcoms Subgrid"
+	},
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
 "hlq" = (
@@ -26904,6 +27040,9 @@
 "hnt" = (
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
@@ -27102,6 +27241,11 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Engine Power";
+	name_tag = "Engine Power"
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
@@ -27948,6 +28092,11 @@
 /obj/item/modular_computer/console/preset/engineering/alarms{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
 "hAD" = (
@@ -28303,11 +28452,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -28632,7 +28776,7 @@
 /area/liberty/quartermaster/office)
 "hKm" = (
 /obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Sci";
+	RCon_tag = "Substation - AI";
 	charge = 5e+006;
 	input_attempt = 1;
 	input_level = 125000;
@@ -28652,6 +28796,13 @@
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/maintenance/surface_maints_1)
+"hKq" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/mob/living/simple_animal/cow,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/crew_quarters/hydroponics)
 "hKy" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -29808,6 +29959,11 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "icS" = (
@@ -30408,11 +30564,6 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "imX" = (
@@ -30471,18 +30622,10 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/botanist)
 "inV" = (
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/bluegrid{
-	name = "Server Base";
-	nitrogen = 500;
-	oxygen = 0;
-	temperature = 80
-	},
-/area/liberty/command/tcommsat/computer)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/honey_extractor,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "inX" = (
 /obj/structure/table/steel,
 /obj/random/powercell/low_chance,
@@ -30988,7 +31131,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -31200,11 +31343,6 @@
 /turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor1west)
 "iwL" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
@@ -32862,6 +33000,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/hallway/surface/section1)
 "iVN" = (
@@ -33078,11 +33217,16 @@
 	name = "West APC";
 	pixel_x = -28
 	},
-/obj/structure/cable/yellow{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "iYq" = (
@@ -33587,19 +33731,12 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/inside_colony)
 "jem" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/black,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+/obj/machinery/door/airlock/glass_engineering{
+	name = "Fuel Room";
+	req_access = list(10)
 	},
-/turf/simulated/floor/bluegrid{
-	name = "Server Base";
-	nitrogen = 500;
-	oxygen = 0;
-	temperature = 80
-	},
-/area/liberty/command/tcommsat/computer)
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "jet" = (
 /obj/effect/window_lwall_spawn/smartspawn,
 /turf/simulated/floor/plating/under,
@@ -33653,11 +33790,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 10
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 500;
@@ -33704,7 +33836,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -33899,21 +34031,21 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/crew_quarters/toilet/public)
 "jiU" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/power/sensor{
 	long_range = 1;
 	name = "Powernet Sensor - Med Subgrid";
 	name_tag = "Med Subgrid"
 	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/medical)
 "jja" = (
@@ -34023,18 +34155,10 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1west)
 "jkJ" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/bluegrid{
-	name = "Server Base";
-	nitrogen = 500;
-	oxygen = 0;
-	temperature = 80
-	},
-/area/liberty/command/tcommsat/computer)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/crew_quarters/hydroponics)
 "jkR" = (
 /obj/structure/flora/tree/snow/five,
 /turf/simulated/floor/snow,
@@ -34690,14 +34814,14 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/engineering{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
@@ -34856,19 +34980,13 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/medical/genetics)
 "jxQ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/black,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/light/floor,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/floor/bluegrid{
-	name = "Server Base";
-	nitrogen = 500;
-	oxygen = 0;
-	temperature = 80
-	},
-/area/liberty/command/tcommsat/computer)
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/crew_quarters/hydroponics)
 "jxU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -35199,11 +35317,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "jCm" = (
@@ -35677,11 +35790,6 @@
 /area/liberty/rnd/robotics)
 "jJE" = (
 /obj/structure/closet/emcloset,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
 "jJF" = (
@@ -35733,11 +35841,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -36470,11 +36573,6 @@
 /area/liberty/engineering/engine_room)
 "jUQ" = (
 /obj/machinery/hologram/holopad,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
@@ -37058,6 +37156,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/bonfire/vectorrooms)
+"kbV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "kbW" = (
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
@@ -37231,6 +37336,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/side/f2section1)
 "keB" = (
@@ -38341,11 +38447,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "kue" = (
@@ -39971,11 +40072,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "kUi" = (
@@ -40145,18 +40241,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "kVL" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -25
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark/bluecorner,
-/area/liberty/command/tcommsat/computer)
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "kVQ" = (
 /obj/machinery/door/airlock/security{
 	name = "Armory";
@@ -40811,6 +40902,7 @@
 	name = "Command";
 	req_access = list(19)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "lgp" = (
@@ -41436,6 +41528,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "lpM" = (
@@ -42366,11 +42459,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "lCK" = (
@@ -42796,7 +42884,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -43801,6 +43889,11 @@
 /obj/machinery/camera/network/command{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "lWI" = (
@@ -43825,6 +43918,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/medical/chemistry)
 "lWJ" = (
@@ -43888,7 +43982,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -44236,7 +44330,7 @@
 /area/liberty/security/sechall)
 "mdo" = (
 /obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Civilian";
+	RCon_tag = "Substation - Bar and Dorms";
 	charge = 5e+006;
 	output_attempt = 1;
 	output_level = 200000;
@@ -44351,6 +44445,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/toilet/public)
 "meQ" = (
@@ -44487,6 +44582,11 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "mhm" = (
@@ -44796,11 +44896,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "mnU" = (
@@ -45080,12 +45175,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "msr" = (
@@ -45867,8 +45962,8 @@
 	dir = 1
 	},
 /obj/structure/cable/cyan{
-	d2 = 4;
-	icon_state = "0-4"
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
@@ -46188,13 +46283,17 @@
 /area/liberty/rnd/research)
 "mKV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/camera/network/engineering{
 	dir = 4
+	},
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Main Grid";
+	name_tag = "Main Grid"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/liberty/engineering/engine_room)
@@ -48736,11 +48835,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
@@ -48909,6 +49003,12 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
 "nvR" = (
@@ -48993,7 +49093,7 @@
 	output_attempt = 1;
 	output_level = 250000
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d2 = 2;
 	icon_state = "0-2"
 	},
@@ -49480,12 +49580,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "nDR" = (
@@ -49523,11 +49623,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -50399,6 +50494,7 @@
 /obj/machinery/door/airlock/glass,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/courtroom)
 "nQw" = (
@@ -52273,7 +52369,7 @@
 "ose" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/binary/passive_gate{
-	use_power = 1
+	unlocked = 1
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
@@ -52360,6 +52456,11 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "otD" = (
@@ -53285,8 +53386,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "oGp" = (
-/obj/machinery/honey_extractor,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "oGt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -54450,7 +54551,7 @@
 /area/liberty/quartermaster/disposaldrop)
 "oWs" = (
 /obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Marshals";
+	RCon_tag = "Substation - Sec";
 	charge = 5e+006;
 	output_attempt = 1;
 	output_level = 200000;
@@ -54725,8 +54826,7 @@
 /turf/simulated/floor/industrial/navy_slates,
 /area/liberty/maintenance/undergroundfloor1east)
 "paf" = (
-/obj/machinery/seed_extractor,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "pan" = (
 /obj/structure/dispenser/oxygen,
@@ -54982,6 +55082,7 @@
 /obj/machinery/door/airlock/maintenance_common{
 	req_access = list(12)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/hallway/surface/section1)
 "pdQ" = (
@@ -54989,15 +55090,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/power/sensor{
-	long_range = 1;
-	name = "Powernet Sensor - Service Subgrid";
-	name_tag = "Service Subgrid"
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
@@ -55155,7 +55247,7 @@
 /area/liberty/command/courtroom)
 "pgl" = (
 /obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Church";
+	RCon_tag = "Substation - Custodian";
 	charge = 5e+006;
 	input_attempt = 1;
 	input_level = 125000;
@@ -55354,17 +55446,17 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "pjr" = (
@@ -55502,7 +55594,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
@@ -55943,6 +56035,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos/surface)
 "prY" = (
@@ -57205,11 +57298,8 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/crew_quarters/botanist)
 "pJI" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/turf/simulated/floor/plating/under,
+/mob/living/simple_animal/chicken,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "pJJ" = (
 /turf/simulated/shuttle/wall/mining{
@@ -57457,9 +57547,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "pMG" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
 "pML" = (
@@ -58292,8 +58380,11 @@
 	},
 /area/liberty/maintenance/undergroundfloor1east)
 "pWa" = (
-/obj/structure/reagent_dispensers/watertank/huge,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
 "pWd" = (
 /obj/machinery/bluespacerelay,
@@ -58558,11 +58649,6 @@
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
@@ -58805,17 +58891,17 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "qdd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable/green,
 /obj/machinery/power/sensor{
 	long_range = 1;
-	name = "Powernet Sensor - Engine Power";
-	name_tag = "Engine Power"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	name = "Powernet Sensor - Engineering";
+	name_tag = "Engineering"
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
@@ -58939,17 +59025,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "qeO" = (
@@ -59332,6 +59418,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
@@ -60485,6 +60576,11 @@
 /obj/structure/scrap/food,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor1east)
+"qBz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/hydronutrients,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "qBZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -60898,7 +60994,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -61055,6 +61151,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "qIS" = (
@@ -61657,6 +61754,11 @@
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
+"qRm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "qRq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -62316,11 +62418,6 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/dungeon/outside/campground)
 "raT" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
 "raX" = (
@@ -62584,6 +62681,11 @@
 "rfk" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "rfl" = (
@@ -64204,6 +64306,7 @@
 /area/liberty/hallway/surface/section1)
 "rBU" = (
 /obj/machinery/door/unpowered/simple/wood/saloon,
+/obj/machinery/door/firedoor/multi_tile,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "rCb" = (
@@ -65256,6 +65359,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "rSW" = (
@@ -65769,6 +65873,11 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "sal" = (
@@ -66727,7 +66836,8 @@
 /obj/structure/invislight/outside,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1;
-	name = "External air gatherer"
+	name = "External air gatherer";
+	scrubbing_gas = list("carbon_dioxide","sleeping_agent","plasma","oxygen","nitrogen")
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
@@ -67356,11 +67466,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -68201,7 +68306,8 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "sDM" = (
 /obj/machinery/atmospherics/binary/pump/on{
-	dir = 1
+	dir = 1;
+	target_pressure = 5000
 	},
 /obj/machinery/camera/network/engineering{
 	dir = 4
@@ -68646,6 +68752,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/engineering/atmos/surface)
+"sJp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/hydroseeds{
+	slogan_delay = 700
+	},
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "sJv" = (
 /obj/structure/closet/l3closet,
 /obj/machinery/light/small{
@@ -69522,7 +69635,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals6,
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
@@ -69845,7 +69958,7 @@
 	name = "North APC";
 	pixel_y = 28
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
 	},
@@ -70060,6 +70173,7 @@
 /obj/machinery/door/airlock/glass,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/courtroom)
 "tex" = (
@@ -70293,6 +70407,7 @@
 	name = "Engineering Maintenance";
 	req_access = list(10)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/substation/cargo)
 "tib" = (
@@ -70836,7 +70951,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -71008,6 +71123,13 @@
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/sleeper)
+"trr" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/crew_quarters/hydroponics)
 "trR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/cyan{
@@ -71506,6 +71628,7 @@
 "tyA" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/courtroom)
 "tyR" = (
@@ -71697,7 +71820,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
 "tCt" = (
-/obj/structure/cable/cyan{
+/obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -71707,6 +71830,10 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
+"tCD" = (
+/obj/machinery/petrel_maker,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "tCK" = (
 /obj/random/booze,
 /obj/random/booze,
@@ -71727,10 +71854,8 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/dungeon/outside/burned_outpost)
 "tCM" = (
-/obj/machinery/vending/hydroseeds{
-	slogan_delay = 700
-	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "tCY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -71813,6 +71938,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor1west)
+"tEk" = (
+/obj/structure/table/bench/standard,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "tEl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
@@ -71868,7 +72003,6 @@
 	name = "Security Training"
 	})
 "tET" = (
-/obj/machinery/smartfridge/drying_rack,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "tEU" = (
@@ -71956,7 +72090,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -72097,14 +72231,14 @@
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/unary/vent_pump,
-/obj/structure/cable/yellow{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "West APC";
 	pixel_x = -28
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/foyer)
@@ -72198,13 +72332,12 @@
 /turf/simulated/floor/plating,
 /area/liberty/maintenance/substation/medical)
 "tIL" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/camera/network/engineering{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
-/area/liberty/command/tcommsat/computer)
+/obj/structure/reagent_dispensers/fueltank/huge,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "tJm" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/browndouble,
@@ -72942,7 +73075,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -73033,6 +73166,7 @@
 	name = "Medbay Total Lockdown";
 	opacity = 0
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/medical/chemistry)
 "tUl" = (
@@ -73407,6 +73541,11 @@
 /area/liberty/engineering/atmos)
 "tZM" = (
 /obj/item/modular_computer/console/preset/engineering/rcon,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "tZT" = (
@@ -73509,11 +73648,8 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/courtroom)
 "ubL" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/plating/under,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "ubP" = (
 /mob/living/carbon/superior_animal/roach/benzin,
@@ -73615,6 +73751,7 @@
 	dir = 8;
 	pixel_x = 26
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
 "udP" = (
@@ -73832,11 +73969,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -74033,6 +74165,7 @@
 /obj/machinery/door/airlock/glass,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/courtroom)
 "uie" = (
@@ -74177,6 +74310,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor1north)
+"ukO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "ukQ" = (
 /obj/structure/table/bar_special,
 /obj/machinery/recharger,
@@ -74210,15 +74348,11 @@
 /turf/simulated/floor/wood,
 /area/liberty/medical/psych)
 "ule" = (
-/obj/structure/table/rack/shelf,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/grenade/chem_grenade/antiweed,
-/obj/item/grenade/chem_grenade/antiweed,
-/obj/item/grenade/chem_grenade/antiweed,
-/obj/item/reagent_containers/spray/plantbgone,
-/obj/item/reagent_containers/dropper,
-/obj/item/reagent_containers/dropper,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "ulg" = (
 /obj/structure/disposalpipe/segment{
@@ -74265,11 +74399,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
-	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -74473,6 +74602,11 @@
 /area/liberty/pros/prep)
 "uoE" = (
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "uoZ" = (
@@ -74520,6 +74654,12 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/liberty/security/maingate)
@@ -75157,14 +75297,9 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenobiology/xenoflora)
 "uys" = (
-/obj/machinery/space_heater,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel/danger,
-/area/liberty/command/tcommsat/computer)
+/obj/structure/reagent_dispensers/fueltank/huge,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/engine_room)
 "uyt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -75464,6 +75599,7 @@
 /obj/machinery/door/airlock/maintenance_common{
 	req_access = list(12)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "uCe" = (
@@ -75963,6 +76099,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/grey_slates,
 /area/liberty/maintenance/undergroundfloor1east)
+"uKe" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark/monofloor,
+/area/liberty/command/bridge)
 "uKg" = (
 /obj/structure/table/marble,
 /obj/item/storage/box/donkpockets,
@@ -76322,8 +76467,10 @@
 /turf/simulated/floor/plating,
 /area/liberty/rnd/robotics)
 "uQB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark/gray_platform,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "uQC" = (
 /obj/effect/overlay/water,
@@ -76536,11 +76683,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/sleep/cryo2)
 "uTx" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
@@ -76551,6 +76693,11 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
@@ -76649,6 +76796,11 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "uVG" = (
 /obj/machinery/recharge_station,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/command/bridge)
 "uVJ" = (
@@ -76730,12 +76882,13 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "uXi" = (
@@ -77347,7 +77500,9 @@
 /turf/simulated/floor/plating,
 /area/liberty/command/tcommsat/computer)
 "vhK" = (
-/obj/machinery/atmospherics/unary/vent_pump,
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
 "vib" = (
@@ -78104,6 +78259,16 @@
 	},
 /turf/simulated/floor/industrial/navy_slates,
 /area/liberty/maintenance/undergroundfloor1north)
+"vsk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "vso" = (
 /obj/structure/table/rack/shelf,
 /obj/random/gun_cheap/low_chance,
@@ -78418,6 +78583,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/maingate)
@@ -79232,6 +79403,11 @@
 /obj/structure/table/standard,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "vIm" = (
@@ -80388,11 +80564,6 @@
 /obj/structure/table/rack,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/tool/multitool,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -80409,6 +80580,7 @@
 "vYe" = (
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/smartfridge/drying_rack,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
 "vYn" = (
@@ -80552,6 +80724,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
+"wah" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/smartfridge/drying_rack,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "wal" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -80570,7 +80747,7 @@
 /area/liberty/quartermaster/hangarsupply)
 "wax" = (
 /obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Cargo";
+	RCon_tag = "Substation -Med";
 	charge = 5e+006;
 	output_attempt = 1;
 	output_level = 200000;
@@ -80654,6 +80831,21 @@
 /obj/machinery/body_scanconsole,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/medical/morgue)
+"wbz" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/foyer)
 "wbJ" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
@@ -80980,10 +81172,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/command/bridge)
@@ -81150,6 +81342,11 @@
 "whL" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "whR" = (
@@ -81426,6 +81623,7 @@
 /area/liberty/command/bridge)
 "wmf" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics)
 "wml" = (
@@ -81792,11 +81990,6 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/genetics)
 "wry" = (
-/obj/machinery/power/sensor{
-	long_range = 1;
-	name = "Powernet Sensor - Main Grid";
-	name_tag = "Main Grid"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/yellow{
@@ -82668,11 +82861,6 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/tcommsat/computer)
 "wDm" = (
@@ -82779,7 +82967,8 @@
 /area/colony)
 "wEZ" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
-	dir = 8
+	dir = 8;
+	target_pressure = 300
 	},
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -82815,11 +83004,6 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "wFm" = (
@@ -84218,12 +84402,17 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Service Subgrid";
+	name_tag = "Service Subgrid"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/servist)
 "wZQ" = (
@@ -84450,6 +84639,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/foyer)
 "xcQ" = (
@@ -84605,15 +84799,6 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "xeS" = (
 /obj/machinery/space_heater,
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "West APC";
-	pixel_x = -28
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -84975,6 +85160,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/cable/green,
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Custodian Subgrid";
+	name_tag = "Cust Subgrid"
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "xjD" = (
@@ -85108,7 +85299,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "xlY" = (
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
 	},
@@ -85864,7 +86055,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -86141,11 +86332,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 500;
@@ -86396,10 +86582,24 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
 "xEt" = (
-/obj/structure/cable/cyan{
+/obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Science Subgrid";
+	name_tag = "Sci Subgrid"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "North APC";
+	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/science)
@@ -86420,9 +86620,8 @@
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
 "xEG" = (
-/obj/structure/reagent_dispensers/watertank/huge,
-/obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
 "xEK" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -87106,6 +87305,9 @@
 /obj/machinery/hologram/holopad,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
 "xQe" = (
@@ -87545,7 +87747,7 @@
 /area/liberty/security)
 "xUt" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -87913,6 +88115,11 @@
 /obj/effect/floor_decal/industrial/road/curvebig1,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/forest)
+"xZQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/seed_extractor,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/crew_quarters/hydroponics)
 "xZV" = (
 /obj/structure/multiz/stairs/enter/bottom,
 /obj/structure/railing{
@@ -88211,11 +88418,6 @@
 /area/liberty/crew_quarters)
 "yey" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 500;
@@ -88584,18 +88786,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/yellow{
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "yib" = (
@@ -88815,11 +89012,6 @@
 	},
 /obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -140391,8 +140583,8 @@ dTD
 ucr
 ixa
 lyz
-lYo
-fvP
+chl
+eiq
 dgr
 mij
 lvZ
@@ -140795,8 +140987,8 @@ jqB
 ucr
 ixa
 lyz
-lYo
-fvP
+gsU
+fjp
 suD
 lvZ
 sRV
@@ -142593,7 +142785,7 @@ fRI
 fRI
 yfy
 keo
-gGN
+hcP
 bOz
 yfy
 fRI
@@ -142614,7 +142806,7 @@ mPJ
 lRV
 hOG
 noo
-fvP
+cGY
 iTL
 fxT
 fxT
@@ -146408,7 +146600,7 @@ nJq
 uVG
 lWH
 icK
-tQV
+uKe
 osO
 lbw
 lbw
@@ -148219,7 +148411,7 @@ cQf
 qOq
 jHd
 vXV
-kVL
+dUh
 iwL
 ykE
 jHd
@@ -148828,8 +149020,8 @@ svw
 jHd
 ebc
 pZJ
-npe
-npe
+dUh
+dUh
 czJ
 jHd
 omv
@@ -149032,7 +149224,7 @@ xus
 gPw
 dQQ
 waY
-uys
+waY
 jHd
 jHd
 iTN
@@ -149222,7 +149414,7 @@ qZv
 jHd
 jHd
 jHd
-bGt
+lkd
 bGt
 xZa
 tPE
@@ -149234,7 +149426,7 @@ tax
 jHd
 jHd
 lkd
-bGt
+lkd
 jHd
 jHd
 iTN
@@ -149425,18 +149617,18 @@ jHd
 jHd
 jHd
 gtM
-eLy
-cxw
-tIL
-jkJ
-jkJ
+uRy
+uRy
+hZg
+vxQ
+vxQ
 jff
-jem
+fpW
 fpW
 afz
 aIk
 kLw
-jxQ
+fpW
 cVf
 jHd
 iTN
@@ -149633,11 +149825,11 @@ hZg
 ppT
 vxQ
 vxQ
-inV
+vxQ
 xBp
 edZ
-cxw
-tIL
+uRy
+hZg
 yey
 cGT
 jHd
@@ -151290,11 +151482,11 @@ iqZ
 iqZ
 wkj
 lKt
-lKt
+vsk
 dHi
 pjm
 gDr
-tFM
+wbz
 grH
 juL
 uXf
@@ -151492,7 +151684,7 @@ iqZ
 mNR
 mNR
 mNR
-mNR
+tEk
 jJW
 frR
 vXj
@@ -151690,7 +151882,7 @@ bps
 emu
 vXj
 pgy
-iqZ
+dIE
 tFx
 ylh
 hHk
@@ -151896,7 +152088,7 @@ iqZ
 mNR
 mNR
 mNR
-mNR
+tEk
 jJW
 xAt
 hAg
@@ -156128,11 +156320,11 @@ xcJ
 ldf
 lgp
 bps
-emu
-emu
+mPt
+mPt
 byl
 byl
-byl
+jem
 byl
 byl
 byl
@@ -156330,11 +156522,11 @@ iKS
 ldf
 lgp
 bps
-emu
-emu
-emu
-emu
-emu
+mPt
+gEO
+kbV
+bGT
+kVL
 byl
 xiE
 uBH
@@ -156532,11 +156724,11 @@ wYL
 ldf
 kJd
 bps
-emu
-emu
-emu
-emu
-emu
+mPt
+tCD
+uys
+uys
+tIL
 byl
 vJi
 tLD
@@ -156734,8 +156926,8 @@ bps
 ldf
 lgp
 bps
-emu
-emu
+mPt
+mPt
 nmR
 nmR
 nmR
@@ -182656,7 +182848,7 @@ ckW
 wSE
 neT
 uSe
-uSe
+eLy
 kFs
 mly
 iUk
@@ -188234,7 +188426,7 @@ unv
 fvc
 unv
 luq
-luq
+ukO
 veD
 saN
 sMP
@@ -188436,7 +188628,7 @@ qyw
 ory
 qyw
 lUi
-lUi
+drw
 uZJ
 lPe
 syS
@@ -188638,7 +188830,7 @@ unv
 oSW
 unv
 luq
-luq
+ukO
 veD
 saN
 sMP
@@ -188865,8 +189057,8 @@ qDZ
 jvb
 usE
 kwX
-eiq
-cIU
+vrM
+jkJ
 cIU
 cIU
 cIU
@@ -189067,9 +189259,9 @@ eww
 jvb
 usE
 eqK
-eiq
+vrM
 cIU
-cIU
+qRm
 vlc
 vlc
 wmf
@@ -189269,16 +189461,16 @@ xXE
 jvb
 usE
 cBT
-eiq
+vrM
 urU
-vlc
+tET
 xrs
 xrs
 xrs
 xrs
 xrs
-vlc
-cIU
+trr
+pWa
 aqW
 nbU
 bII
@@ -189471,17 +189663,17 @@ qDZ
 jvb
 usE
 rGP
-eiq
+vrM
 urU
-vlc
+tET
 xrs
 xrs
 xrs
 xrs
 xrs
-vlc
-cIU
-ubL
+cxw
+gZC
+dAC
 ule
 bII
 bhK
@@ -189673,7 +189865,7 @@ qDZ
 jvb
 usE
 mzt
-eiq
+vrM
 cIU
 dhH
 xrs
@@ -189681,10 +189873,10 @@ xrs
 cBk
 xrs
 xrs
-dhH
-cIU
-ubL
-gsU
+jxQ
+gYd
+xEG
+paf
 bII
 diE
 bhK
@@ -189875,16 +190067,16 @@ qDZ
 jvb
 usE
 iyk
-eiq
+vrM
 cIU
-vlc
+tET
 xrs
 xrs
 xrs
 xrs
 xrs
-vlc
-cIU
+cxw
+uQB
 ubL
 tCM
 bII
@@ -190077,17 +190269,17 @@ qDZ
 jvb
 usE
 gbL
-eiq
+vrM
 cIU
-vlc
+tET
 xrs
 xrs
 xrs
 xrs
 xrs
-vlc
-cIU
-ubL
+cxw
+gST
+pJI
 paf
 bII
 bhK
@@ -190279,9 +190471,9 @@ spW
 jvb
 usE
 atA
-eiq
+vrM
 cIU
-cIU
+qRm
 iWJ
 iWJ
 wmf
@@ -190481,18 +190673,18 @@ fGB
 jvb
 usE
 anR
-eiq
-cIU
-cIU
-cIU
-cIU
-cIU
-cIU
-cIU
-cIU
-cIU
 vrM
-pWa
+cIU
+cIU
+cIU
+cIU
+cIU
+cIU
+cIU
+cIU
+hKq
+tCM
+paf
 bII
 bhK
 bhK
@@ -190682,18 +190874,18 @@ auV
 kUb
 jvb
 usE
-dhH
-eiq
-cIU
-cIU
-cIU
-cIU
-vYe
-cIU
-cIU
-cIU
-cIU
+aQL
 vrM
+inV
+xZQ
+sJp
+qBz
+vYe
+wah
+cIU
+cIU
+aVw
+paf
 xEG
 bII
 bhK
