@@ -2,7 +2,7 @@
 
 /obj/item/spacecash
 	name = "0 scrip"
-	desc = "It's worth 0 scrip."
+	desc = "It's worth 0 scrips."
 	gender = PLURAL
 	icon = 'icons/obj/items.dmi'
 	icon_state = "1"
