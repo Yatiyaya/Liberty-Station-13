@@ -305,7 +305,7 @@ var/list/rank_prefix = list(\
 	"Medical Doctor" = "Doctor",\
 	"Paramedic" = "Paramedic",\
 	"Research Provost" = "Provost",\
-	"Casino Manager" = "Manager",\
+	"Club Manager" = "Manager",\
 	"Field Shepherd" = "Shepherd",\
 	"Oathpledge" = "Oathpledge",\
 	)
