@@ -46,15 +46,12 @@
 							 /datum/computer_file/program/shield_control,
 							 /datum/computer_file/program/reports)
 
-	description = "The Union Chief is the head of the Artificers Guild, a group of skilled engineers. This colony is your pride.<br>\
-	You are to keep the colony running and constantly improve it as much as you are able. Let none question the efficacy of your labors.<br>\
-	As a leader, it is far more efficient for you to delegate work than attempting to solve everything yourself - spread the labor.<br>\
-	Machinery across the colony is your responsibility. Let no outsiders interfere or intrude into your domain - even Command staff are no exception.<br>\
-	Treat every Guild member like your family. Keep them paid, fed, and safe. You may be a part of the wider colony, but your own come first."
+	description = "The Union Chief is the head of the local Terra-Therma Worker's Union Chapterhouse, and is responsible for the operation and oversight of all engineering and mining projects on the colony. They direct the Technicians, organising projects and work orders for the workers. It is your job to keep the colony running efficiently. You are the sole authority on Engineering matters, and thus are expected to competently handle repairs and power production across the colony as needed. You also command the Mining Technicians; make sure they are working well and are bringing back materials for the Union. As a leader, it is far more efficient for you to delegate work than attempting to solve everything yourself - spread the labour. Machinery across the colony is your Union's responsibility. Let no outsiders interfere or intrude upon your domain - even Command staff are no exception. Treat every Union member like your family. Keep them paid, fed and safe. The Workers' Union looks after its members, and you are all a fraternity. Your own comes first."
 
-	duties = "Manage the Guild Adepts - set tasks and areas of focus.<br>\
-	Strive to protect the rights of your Adepts, as well as their safety and health.<br>\
-	Conduct your own repairs and projects as required - especially when low staffed. "
+	duties = "Manage the Technicians, be they Mining Technicians or Mechanical Technicians.<br>\
+	Set tasks and areas of focus.<br>\
+	Strive to protect the rights of your Technicians, as well as their safety and health.<br>\
+	Conduct your own repairs and projects as required, especially when low staffed."
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
