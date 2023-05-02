@@ -139,6 +139,28 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	var/overcharge_rate = 1 //Base overcharge additive rate for the gun
 	var/overcharge_level = 0 //What our current overcharge level is. Peaks at overcharge_max
 	var/overcharge_max = 10
+	var/flashlight_attachment = FALSE // Do we have a flashlight attached to us?
+
+
+// HUD button for quick flashlight toggle
+/obj/item/gun/proc/toggle_light(mob/living/user)
+	set name = "Toggle Flashlight"
+
+	if(!flashlight_attachment || src != user.get_active_hand())
+		return
+
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.attack_self(user)
+			to_chat(user, SPAN_NOTICE("You toggle the attached flashlight [FL.on ? "on":"off"]."))
+			update_hud_actions()
+
+// Toggle flashlight verb, it will appear as a right click option on the gun it's attached to
+/obj/item/gun/proc/toggle_light_verb()
+	set name = "Toggle Flashlight"
+
+	toggle_light(usr)
+
 
 /obj/item/gun/wield(mob/user)
 	if(!wield_delay)
@@ -166,6 +188,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	. = ..()
 	initialize_firemodes()
 	initialize_scope()
+	initialize_flashlight()
 	//Properly initialize the default firing mode
 	if (firemodes.len)
 		set_firemode(sel_mode)
@@ -854,6 +877,23 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 		hud_actions -= action
 		qdel(action)
 
+/obj/item/gun/proc/initialize_flashlight()
+	var/obj/screen/item_action/action = locate(/obj/screen/item_action/top_bar/gun/flashlight) in hud_actions
+	if(flashlight_attachment)
+		if(!action)
+			action = new /obj/screen/item_action/top_bar/gun/flashlight
+			action.owner = src
+			hud_actions += action
+			if(ismob(loc))
+				var/mob/user = loc
+				user.client?.screen += action
+	else
+		if(ismob(loc))
+			var/mob/user = loc
+			user.client?.screen -= action
+		hud_actions -= action
+		qdel(action)
+
 /obj/item/gun/proc/add_firemode(var/list/firemode)
 	//If this var is set, it means spawn a specific subclass of firemode
 	if (firemode["mode_type"])
@@ -1011,8 +1051,6 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 
 /obj/item/gun/proc/toggle_safety_verb()
 	set name = "Toggle gun's safety"
-	set category = "Object"
-	set src in view(1)
 
 	toggle_safety(usr)
 
@@ -1119,6 +1157,9 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	move_delay = initial(move_delay)
 	muzzle_flash = initial(muzzle_flash)
 	silenced = initial(silenced)
+	flashlight_attachment = initial(flashlight_attachment)
+	verbs -= /obj/item/gun/proc/toggle_light_verb
+	verbs -= /obj/item/gun/proc/toggle_light
 	restrict_safety = initial(restrict_safety)
 	init_offset = initial(init_offset)
 	proj_damage_adjust = list()
@@ -1139,6 +1180,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	auto_eject = initial(auto_eject) //SoJ edit
 	initialize_scope()
 	initialize_firemodes()
+	initialize_flashlight()
 	//Let's refresh our name and prefixes
 	// FIXME: This sadly sometimes resets the gun from <prefixes><gun_name> to just the gun's name when storing it on a container.
 	name = initial(name)
@@ -1197,3 +1239,45 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	if(!sharp)
 		gun_tags |= SLOT_BAYONET
 */
+
+// Handles the directional lightning of the attached flashlight to wherever the mob is aiming at
+/obj/item/gun/container_dir_changed(new_dir)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.container_dir_changed(new_dir)
+
+// Handles updating light location from attached flashlight when the mob moves
+/obj/item/gun/moved(mob/user, old_loc)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.moved(user, old_loc)
+
+// Move the loc of the attached flashlight inside the container we stash the gun in as well
+/obj/item/gun/entered_with_container()
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.entered_with_container()
+
+// Handles switching the flashlight's light source from its position to the mob that picked it up
+/obj/item/gun/pre_pickup(mob/user)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.pre_pickup(user)
+
+// The inverse of the previous proc: Move the light source to the location of the dropped gun with the flashlight
+/obj/item/gun/dropped(mob/user as mob)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.dropped(user)
+
+/obj/item/gun/afterattack(atom/A, mob/user)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.afterattack(A, user)
+

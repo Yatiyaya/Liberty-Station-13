@@ -51,6 +51,9 @@
 	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
 		iconstring += "_slide"
 
+	if(flashlight_attachment)
+		iconstring += "_tac"
+
 	if (silenced)
 		iconstring += "_s"
 		itemstring += "_s"
