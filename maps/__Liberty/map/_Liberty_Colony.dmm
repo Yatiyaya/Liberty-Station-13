@@ -13744,10 +13744,6 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor1west)
-"dEg" = (
-/obj/machinery/reagentgrinder/industrial,
-/turf/simulated/floor/tiled/cafe,
-/area/liberty/crew_quarters/kitchen)
 "dEh" = (
 /obj/item/farmbot_arm_assembly,
 /obj/effect/decal/cleanable/liquid_fuel,
@@ -15536,6 +15532,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
 /obj/item/circuitboard/chicken,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
 "eez" = (
@@ -26425,6 +26422,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
 "hfI" = (
@@ -52569,6 +52567,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
 "ovp" = (
@@ -67591,6 +67590,7 @@
 /obj/structure/noticeboard/Skylight_supply{
 	pixel_x = -32
 	},
+/obj/machinery/reagentgrinder/industrial,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics)
 "suP" = (
@@ -77042,6 +77042,7 @@
 /obj/item/clothing/head/welding,
 /obj/item/clothing/glasses/welding,
 /obj/machinery/light,
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
 "vbb" = (
@@ -147650,7 +147651,7 @@ bOg
 bOg
 sbQ
 bzF
-dEg
+lJd
 qgP
 juf
 hXQ
