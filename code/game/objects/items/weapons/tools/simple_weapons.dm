@@ -87,11 +87,11 @@
 			P.die_off()
 
 /obj/item/tool/fireaxe/militia_tomahawk
-	name = "blackshield tactical tomahawk"
+	name = "tactical tomahawk"
 	desc = "For cutting, sawing, prying, and throwing at targets mid back-flip."
 	icon_state = "sec_tomahawk"
 	wielded_icon = "sec_tomahawk"
-	force = WEAPON_FORCE_ROBUST + 4 // Better than the cheap axe
+	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_LETHAL // Meant to be a throwing weapon
 	slot_flags = SLOT_BELT|SLOT_BACK
 	tool_qualities = list(QUALITY_CUTTING = 30, QUALITY_SAWING = 25, QUALITY_PRYING = 15)
@@ -178,28 +178,6 @@
 	origin_tech = list(TECH_COMBAT = 4)
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	max_upgrades = 2
-	tool_qualities = list(QUALITY_HAMMERING = 5)
-
-	has_alt_mode = TRUE
-	alt_mode_damagetype = HALLOSS
-	alt_mode_verbs = list("flogged", "whipped", "lashed", "disciplined")
-	alt_mode_toggle = "loosens their hand on the grip"
-	alt_mode_lossrate = 0.7
-
-/obj/item/tool/disciplinary_action
-	name = "Disciplinary Action"
-	desc = "A long whip of steel chains used by Blackshield for when someone acts out of line."
-	icon = 'icons/obj/weapons.dmi'
-	icon_state = "chain"
-	item_state = "chain"
-	flags = CONDUCT
-	slot_flags = SLOT_BELT
-	force = WEAPON_FORCE_PAINFUL
-	throwforce = WEAPON_FORCE_DANGEROUS
-	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_COMBAT = 2)
-	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
-	max_upgrades = 3
 	tool_qualities = list(QUALITY_HAMMERING = 5)
 
 	has_alt_mode = TRUE
@@ -440,23 +418,6 @@
 	price_tag = 300
 	alt_mode_verbs = list("bashes", "stunts", "hilts", "blunts")
 	alt_mode_toggle = "uses the broad side of their weapon"
-
-/obj/item/tool/sword/saber/militiacommander
-	name = "Officer's Saber"
-	desc = "A masterfully forged Saber to be carried by the Blackshield Commander, Despite it fact for Ceremonial use. It can also be used in combat, if they're crazy enough."
-	icon = 'icons/obj/weapons-blades.dmi'
-	icon_state = "saber"
-	item_state = "saber"
-	armor_penetration = ARMOR_PEN_SHALLOW
-	price_tag = 350
-
-/obj/item/tool/sword/saber/militiasergeant
-	name = "Sergeant's Saber"
-	desc = "An Saber made for the Senior Enlisted of Blackshield, Usually used for Ceremonial usage but can also be used in combat, Preferably used by a maniac who likes to charge into battle without helmet or armour."
-	icon_state = "cutlass"
-	item_state = "cutlass"
-	armor_penetration = ARMOR_PEN_SHALLOW
-	price_tag = 325
 
 /obj/item/tool/sword/handmade
 	name = "junkblade"

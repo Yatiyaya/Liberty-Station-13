@@ -261,128 +261,6 @@
  * Factions
  */
 
-//Blackshield helmets
-/obj/item/clothing/head/helmet/ballistic/militia
-	name = "blackshield helmet"
-	desc = "Standard military gear. Protects the head from impacts and shrapnel.\
-			This one bears the IFF stripes of the Blackshield."
-	icon_state = "helmet_mil_alt"
-
-/obj/item/clothing/head/helmet/ballistic/militia/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Blackshield Colours"] = "helmet_mil_alt"
-	options["Desert Combat"] = "helmet_tan_mil"
-	options["Woodlands Blackshield Combat"] = "helmet_green_mil"
-	options["Anthromorphic Blackshield Helmet"] = "helmet_mil_anthro"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/head/helmet/ballistic/militia/sergeant
-	name = "sergeant's ballistic gorget"
-	desc = "Standard military gear. A somewhat uncommon piece of equipment, despite its unusual appearance\n this piece of headgear provides much-needed protection to oft-neglected locations while not interfering unduly\
-	with the user's range of motion or ability to communicate."
-	icon_state = "sergeanthelm"
-	item_state = "sergeanthelm"
-	flags_inv = HIDEMASK
-
-/obj/item/clothing/head/helmet/ballistic/militia/sergeant/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["gorget in standard mode"] = ""
-	options["goggles on"] = "_goggle"
-	options["cap on"] = "_cap"
-	options["beret on"] = "_beret"
-	options["head-strap on"] = "_bane"
-	var/choice = input(M,"What do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		var/base = initial(icon_state)
-		base += options[choice]
-		icon_state = base
-		item_state = base
-		item_state_slots = null
-		to_chat(M, "You put your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/head/helmet/ballistic/militia/full
-	name = "blackshield full helm"
-	desc = "Standard military gear. A full-faced variant of the common ballistic helmet. This one bears a few\
-	key upgrades, notably the inclusion of a face-protecting plate and lit eyeshield."
-	icon_state = "bs_fullhelm"
-	item_state = "bs_fullhelm"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
-	obscuration = LIGHT_OBSCURATION
-	action_button_name = "Toggle Headlamp"
-	brightness_on = 4
-	light_overlay = "bsfullhelm_light"
-
-/obj/item/clothing/head/helmet/ballistic/militia/full/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Standard fullhelm"] = ""
-	options["Tan fullhelm"] = "_tan"
-	options["Green fullhelm"] = "_green"
-	options["Grey hooded fullhelm"] = "_gp"
-	options["Green hooeded fullhelm"] = "_grp"
-	options["Tan hooded fullhelm"] = "_tp"
-	options["Camo hooded fullhelm"] = "_cp"
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		var/base = initial(icon_state)
-		base += options[choice]
-		icon_state = base
-		item_state = base
-		item_state_slots = null
-		to_chat(M, "You adjust to the [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/head/helmet/ballistic/militia/full/corpsman
-	name = "corpsman full helm"
-	desc = "Standard military gear. A full-faced variant of the common ballistic helmet. This one bears a few\
-	key upgrades, including sterile materials and contaminant resistant sealing."
-	armor_list = list(melee = 30, bullet = 40, energy = 20, bomb = 30, bio = 75, rad = 0)
-	action_button_name = "Toggle Headlamp"
-	brightness_on = 4
-	light_overlay = "corpsmanfullhelm_light"
-
 //Marshals
 /obj/item/clothing/head/helmet/marshal
 	name = "marshal helmet"
@@ -969,30 +847,6 @@
 		rad = 0
 	)
 
-/obj/item/clothing/head/armor/helmet/frog/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Base Helmet"] = "helmet_frog"
-	options["Blackshield Helmet"] = "helmet_frog_mil"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		to_chat(M, "You adjusted your mask's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
 /*
  * Special helmets
  */
@@ -1013,18 +867,6 @@
 	)
 	price_tag = 250
 
-/obj/item/clothing/head/helmet/ballistic/bulletproof/militia
-	name = "blackshield bulletproof helmet"
-	icon_state = "bulletproof_bs"
-	desc = "Standard military gear. Protects exceptionally well from high-velocity solid projectiles \
-	This one bears the IFF stripes of the Blackshield."
-	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
-	armor_list = list(melee = 25, bullet = 60, energy = 25, bomb = 10, bio = 0, rad = 0)
-	action_button_name = "Toggle Headlamp"
-	brightness_on = 4
-	light_overlay = "bs_bulletproof"
-
 //Ablatives
 /obj/item/clothing/head/helmet/laserproof
 	name = "ablative helmet"
@@ -1041,18 +883,6 @@
 /obj/item/clothing/head/helmet/laserproof/marshal
 	icon_state = "ablative_ironhammer"
 	item_state = "ablative_ironhammer"
-
-/obj/item/clothing/head/helmet/laserproof/militia
-	name = "blackshield ablative helmet"
-	icon_state = "ablative_bs"
-	desc = "An outdated, energy resistant helmet in a distinctive style. Loved by politicians, loathed by taxpayers and tolerated by the \
-			local forces so often outfitted with it."
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
-	armor_list = list(melee = 25, bullet = 25, energy = 60, bomb = 10, bio = 0, rad = 0)
-	action_button_name = "Toggle Headlamp"
-	brightness_on = 4
-	light_overlay = "bs_ablative"
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
@@ -1485,11 +1315,6 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return 1
-
-/obj/item/clothing/head/helmet/faceshield/altyn/milisha
-	name = "blackshield maska helmet"
-	desc = "A maska helmet like any other but with nice camo options"
-	icon_state = "maska_bs"
 
 /obj/item/clothing/head/helmet/faceshield/altyn/milisha/toggle_style()
 	set name = "Adjust Style"

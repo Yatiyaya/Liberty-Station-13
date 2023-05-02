@@ -42,7 +42,7 @@
 	back = /obj/item/storage/backpack
 	backpack_contents = list(/obj/item/storage/firstaid/capsa = 1, /obj/item/modular_computer/tablet/moebius/preset = 1, /obj/item/gun/projectile/stinger/pepperball/sopo = 1, \
 							/obj/item/gun_upgrade/trigger/dnalock = 1, /obj/item/ammo_magazine/pistol_35/rubber = 2, /obj/item/bodybag/cryobag = 2, \
-							/obj/item/storage/firstaid/blackshield/large = 1, /obj/item/storage/firstaid/surgery/si = 1, /obj/item/roller/compact  = 1, /obj/item/device/defib_kit/compact/combat/adv/loaded = 1)
+							/obj/item/storage/firstaid/capsa/large = 1, /obj/item/storage/firstaid/surgery/si = 1, /obj/item/roller/compact  = 1, /obj/item/device/defib_kit/compact/combat/adv/loaded = 1)
 	l_pocket = /obj/item/card/id/emergency_response
 
 /decl/hierarchy/outfit/engi_ert

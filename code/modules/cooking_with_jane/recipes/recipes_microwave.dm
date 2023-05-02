@@ -1,4 +1,6 @@
-
+/*These are the old cooking system, use this if CWJ doesn't work cause this will wor kevery time, just remember the app
+doesn't show recipes put in here so you know slap them on wiki or ingame manual - Lamasmaster
+*/
 // see code/datums/recipe.dm
 
 /datum/recipe/dumplings
@@ -72,6 +74,14 @@
 	fruit = list("soybeans" = 1)
 	reagents = list("flour" = 10)
 	result = /obj/item/reagent_containers/food/snacks/soylenviridians
+
+/datum/recipe/cheesecake
+	items = list(
+		/obj/item/reagent_containers/food/snacks/sliceable/plaincake,
+		/obj/item/reagent_containers/food/snacks/cheesewedge,
+		/obj/item/reagent_containers/food/snacks/cheesewedge
+		)
+	result = /obj/item/reagent_containers/food/snacks/sliceable/cheesecake
 
 /datum/recipe/soylentgreen
 	reagents = list("flour" = 10)

@@ -96,7 +96,7 @@
 		Expand()
 
 /obj/item/reagent_containers/food/snacks/cube/roach/fuhrer
-	name = "Fuhrer Cube"
+	name = "Overlord Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -109,7 +109,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/fuhrer
 
 /obj/item/reagent_containers/food/snacks/cube/roach/jager
-	name = "Jager Cube"
+	name = "Hunter-Killer Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -122,7 +122,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/hunter
 
 /obj/item/reagent_containers/food/snacks/cube/roach/kraftwerk
-	name = "Kraftwerk Cube"
+	name = "Nanite Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -135,7 +135,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/nanite
 
 /obj/item/reagent_containers/food/snacks/cube/roach/roachling
-	name = "Roachling Cube"
+	name = "Small Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -148,7 +148,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/roachling
 
 /obj/item/reagent_containers/food/snacks/cube/roach/seuche
-	name = "Seuche Cube"
+	name = "Vapour Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -161,7 +161,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/support
 
 /obj/item/reagent_containers/food/snacks/cube/roach/panzer
-	name = "Panzer Cube"
+	name = "Exoskeleton Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -174,7 +174,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/tank
 
 /obj/item/reagent_containers/food/snacks/cube/roach/elektromagnetisch
-	name = "Elektromagnetisch Cube"
+	name = "Ion Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -187,7 +187,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/elektromagnetisch
 
 /obj/item/reagent_containers/food/snacks/cube/roach/glowing
-	name = "Gluhend Cube"
+	name = "Glowing Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -200,7 +200,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/glowing
 
 /obj/item/reagent_containers/food/snacks/cube/roach/grestrahlte
-	name = "Grestrahlte Cube"
+	name = "Radioactive Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
@@ -213,7 +213,7 @@
 	grow_into = /mob/living/carbon/superior_animal/roach/toxic
 
 /obj/item/reagent_containers/food/snacks/cube/roach/benzin
-	name = "Benzin Cube"
+	name = "Gasoline Roach Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'
