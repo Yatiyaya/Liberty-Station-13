@@ -55,11 +55,13 @@
 #define PERK_HANDYMAN /datum/perk/job/handyman
 #define PERK_INSPIRATION /datum/perk/job/inspiration
 #define PERK_ACTIVE_INSPIRATION /datum/perk/job/active_inspiration
-#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
-#define PERK_NEAT /datum/perk/job/neat
 
 // Service / Cargo Perks //PERK_TIMEISMONEY for later
 #define PERK_ARTIST /datum/perk/job/artist
+#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
+#define PERK_NEAT /datum/perk/job/neat
+#define PERK_CHEF /datum/perk/foodappraise
+#define PERK_CLUB /datum/perk/job/club
 
 // Military
 #define PERK_CODESPEAK /datum/perk/job/codespeak

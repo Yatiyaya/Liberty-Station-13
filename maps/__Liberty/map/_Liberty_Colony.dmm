@@ -4418,6 +4418,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "bje" = (
 /obj/structure/flora/ausbushes/sunnybush,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/medical/genetics)
 "bjh" = (
@@ -8819,6 +8820,15 @@
 	dir = 4
 	},
 /area/liberty/security/hut_cell2)
+"cqv" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio2";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "cqw" = (
 /turf/simulated/mineral,
 /area/liberty/outside/forest)
@@ -10831,6 +10841,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/robotics)
+"cSk" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "cSn" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -11827,6 +11846,15 @@
 /obj/structure/low_wall,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
+"ddE" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio6";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "ddF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -21800,6 +21828,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/quartermaster/disposaldrop)
+"fTk" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio1";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "fTm" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -22266,11 +22303,11 @@
 /area/liberty/maintenance/substation/bridge)
 "fZK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/multiz/stairs/active/bottom{
-	dir = 1
-	},
 /obj/structure/railing/grey{
 	dir = 8
+	},
+/obj/structure/multiz/stairs/enter/bottom{
+	dir = 1
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
@@ -24059,6 +24096,9 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "gys" = (
 /obj/machinery/genetics/cloner,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
 "gyw" = (
@@ -24563,6 +24603,9 @@
 /area/liberty/command/teleporter)
 "gHB" = (
 /obj/machinery/genetics/cloner,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/reinforced,
 /area/liberty/medical/genetics)
 "gHC" = (
@@ -25767,6 +25810,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai)
+"gWD" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/reinforced,
+/area/liberty/rnd/xenobiology)
 "gWG" = (
 /obj/structure/table/woodentable,
 /obj/item/device/lighting/toggleable/lamp,
@@ -29265,6 +29312,17 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
+"hUd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	name = "Mech Bay access";
+	pixel_x = -24;
+	req_access = list(29);
+	id = "Skynet_launch"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "hUz" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/box/matches,
@@ -32523,6 +32581,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
+"iRX" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/wall/r_wall,
+/area/liberty/medical/genetics)
 "iRZ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -38572,6 +38634,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "kyb" = (
 /obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
 "kyk" = (
@@ -38671,6 +38734,17 @@
 "kzm" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/burned_outpost)
+"kzv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	name = "Mech Bay access";
+	pixel_x = -24;
+	req_access = list(29);
+	id = "Skynet_launch"
+	},
+/turf/simulated/floor/tiled/white/techfloor,
+/area/liberty/rnd/robotics)
 "kzy" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
@@ -42556,6 +42630,10 @@
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/substation/cargo)
+"lHx" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/asteroid/grass,
+/area/liberty/medical/genetics)
 "lHz" = (
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 4
@@ -44952,10 +45030,10 @@
 /area/liberty/bonfire/chapel)
 "mry" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/multiz/stairs/active/bottom,
 /obj/structure/railing/grey{
 	dir = 8
 	},
+/obj/structure/multiz/stairs/enter/bottom,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
 "mrz" = (
@@ -45063,6 +45141,9 @@
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 2
 	},
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
@@ -45421,6 +45502,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/red,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/genetics)
 "myW" = (
@@ -48463,6 +48547,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "nqQ" = (
@@ -51371,6 +51458,9 @@
 	dir = 4
 	},
 /obj/machinery/light,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
 "ogL" = (
@@ -52055,6 +52145,7 @@
 	icon_state = "left";
 	name = "Containment Pen"
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "oqc" = (
@@ -52968,6 +53059,9 @@
 	icon_state = "left";
 	name = "Containment Pen";
 	req_access = newlist()
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
@@ -56855,6 +56949,7 @@
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
 "pGF" = (
@@ -58568,6 +58663,13 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/hut_cell2)
+"qbq" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/liberty/medical/genetics)
 "qbt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/glass,
@@ -66611,6 +66713,15 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
+"skT" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio8";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "skU" = (
 /obj/structure/catwalk,
 /obj/structure/invislight/outside,
@@ -69816,6 +69927,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
+"tcO" = (
+/obj/machinery/door/blast/regular/open{
+	id = "xenobio7";
+	name = "containment blast door"
+	},
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/liberty/rnd/xenobiology)
 "tcP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/scrap/sparse_weighted,
@@ -76659,6 +76779,11 @@
 /obj/item/folder/blue,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/meeting_room)
+"uYk" = (
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/reinforced,
+/area/liberty/medical/genetics)
 "uYy" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/sign/warningnew/danger{
@@ -82265,6 +82390,9 @@
 /obj/structure/disposaloutlet{
 	dir = 4
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/genetics)
 "wzv" = (
@@ -84436,6 +84564,7 @@
 	icon_state = "left";
 	name = "Containment Pen"
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/xenobiology)
 "xeG" = (
@@ -99692,16 +99821,16 @@ fLF
 sKG
 mtm
 pGC
-hWV
-iVe
+gWD
+ddE
 oDe
 pNR
 gUH
 xtZ
 bVs
 opY
-qvZ
-hWV
+cSk
+gWD
 kyb
 ogJ
 sKG
@@ -100500,16 +100629,16 @@ emu
 sKG
 mtm
 pGC
-hWV
-eAg
+gWD
+tcO
 nqP
 pNR
 bBo
 qEQ
 iJV
 xex
-rKu
-hWV
+cqv
+gWD
 kyb
 ogJ
 sKG
@@ -101308,16 +101437,16 @@ emu
 sKG
 mtm
 pGC
-hWV
-eME
+gWD
+skT
 oDe
 jrU
 hTq
 ilP
 iJV
 opY
-kfK
-hWV
+fTk
+gWD
 kyb
 ogJ
 sKG
@@ -103934,10 +104063,10 @@ emu
 emu
 dVA
 wzr
-dgU
-dgU
-vEh
-dTI
+lHx
+lHx
+uYk
+qbq
 dTI
 nnf
 nfF
@@ -104945,8 +105074,8 @@ eIM
 dVA
 myU
 bje
-dgU
-dVA
+lHx
+iRX
 gHB
 iKT
 nnf
@@ -142698,9 +142827,9 @@ lYo
 lYo
 lYo
 kcm
-lYo
+hUd
 bMv
-vKD
+kzv
 vKD
 vKD
 vKD
