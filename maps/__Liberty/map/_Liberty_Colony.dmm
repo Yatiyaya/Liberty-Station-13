@@ -34699,13 +34699,6 @@
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/maintenance/undergroundfloor1east)
-"jtU" = (
-/obj/machinery/door/airlock/glass{
-	name = "Hydroponics";
-	req_access = list(35)
-	},
-/turf/simulated/floor/plating,
-/area/liberty/crew_quarters/hydroponics)
 "jtW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -191085,7 +191078,7 @@ nag
 mBk
 usE
 bII
-jtU
+bII
 bII
 bII
 bII
