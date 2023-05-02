@@ -99,16 +99,13 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shield_control)
 
-	description = "The Mechanical Technician is a member of one of the greatest engineering guilds in the galaxy, contracted to maintain this colony.<br>\
-Your main priority is ensuring the setup and maintenance of the colonies power grid. Seek guidance on this complex task if untrained.<br>\
-Outside of this, you should devote time to learning and configuring various systems. Everything can be improved, and new constructs can be made.<br>\
-This upgrade culture extends to your own arsenal - mod and upgrade your tools with parts from maintenance, or purchased from Skylight or the Prospectors.<br>\
-Do not let outsiders, even Command Staff, interfere with the duties of the Guild. And remember - be ready to respond to emergency calls at any time."
-
-	duties = "Start up the solars and generators.<br>\
-	Repair anything and anyone that needs some maintenance.<br>\
+	description = "The Mechanical Technician is a member of the Terra-Therma Workers' Union, contracted to maintain, repair and power the colony. Your main priority is ensuring the setup and maintenance of the colony's power grid. Seek guidance on this complex task if untrained. You are also expected to ensure that the colony is structurally sound and safe, as well as making sure that it is heated. It's cold outside; make sure the cold doesn't creep in. Outside of this, you should devote time into learning and configuring various systems. Everything can be improved, and new constructs can be made. In your downtime, your arsenal can be improved with mods and different tools, either hand-crafted or made through the Matter NanoForge. Your NanoForge is the pride and joy of the Union; the objects created from it can be used to supplement your equipment or sold for profit. Do not let outsiders, even Command Staff, interfere with the duties of the Union. Be ready to respond to emergency calls at all time. You are the first, and maybe last, line of defense against structural damage."
+	
+	duties = "Start up the engines of the colony. Upgrade them when time permits.<br>\
+	Repair anything (and anyone who asks) that needs maintenance.<br>\
 	Respond to distress calls and patch breaches in the walls.<br>\
-	Keep every part of the colony powered, oxygenated, and ready to use."
+	Keep every part of the colony powered, oxygenated, warm and ready to use.<br>\
+	Assist the Union whenever needed. The Miners often have use for your crafts, and you depend on them for materials."
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
@@ -135,14 +132,11 @@ Do not let outsiders, even Command Staff, interfere with the duties of the Guild
 	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
-	description = "The Miner is a professional resource procurer, acquiring valuable minerals for Skylight Shipping Solutions.<br>\
-Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can.<br>\
-Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use.<br>\
-Whatever you dig up will go to the cargo department, and from then on it is the responsibility of others within Skylight to sell it.<br>\
-The deep tunnels are far less dangerous than the wilderness, but pack well - disappearances are not unheard of."
-
+	description = "The Mining Technician is a professional resource procurer, acquiring valuable minerals and materials for the Terra-Therma Workers' Union. Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can. Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use. Whatever you dig up will go to the Union, and from then on it is the responsibility of others within the Union to use or sell as needed. The deep tunnels are far less dangerous than the blisteringly cold wilderness, but pack well - disappearances are not unheard of."
+	
 	duties = "Dig up ores and minerals to be processed into usable material.<br>\
-	Locate other valuables within the tunnels that may be turned to profit."
+	Locate other valuables within the tunnels that may be sold off for profit.<br>\
+	Assist the Union whenever needed. The Maintenance Technicians require what you dig up for crafting and repairing the colony, and what they can produce will be invaluable for your work."
 
 	access = list(
 		access_eva, access_maint_tunnels, access_external_airlocks, access_mining, access_mining_office, access_mining_station
