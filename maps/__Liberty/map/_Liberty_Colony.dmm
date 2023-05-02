@@ -29312,6 +29312,17 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1south)
+"hUd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	name = "Mech Bay access";
+	pixel_x = -24;
+	req_access = list(29);
+	id = "Skynet_launch"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "hUz" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/box/matches,
@@ -38723,6 +38734,17 @@
 "kzm" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/burned_outpost)
+"kzv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	name = "Mech Bay access";
+	pixel_x = -24;
+	req_access = list(29);
+	id = "Skynet_launch"
+	},
+/turf/simulated/floor/tiled/white/techfloor,
+/area/liberty/rnd/robotics)
 "kzy" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
@@ -142805,9 +142827,9 @@ lYo
 lYo
 lYo
 kcm
-lYo
+hUd
 bMv
-vKD
+kzv
 vKD
 vKD
 vKD
