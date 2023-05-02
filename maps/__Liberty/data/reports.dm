@@ -13,6 +13,7 @@ GEN / COM / SKS / etc etc
 TFF
 (Shorthand of the name of the actual form so armory log would be ARL)
 
+Don't add : at end of the fields as the program does it automatically even during printing.
 */
 
 /datum/computer_file/report/recipient
@@ -25,30 +26,25 @@ TFF
 /* Command / Heads of Staff */
 //////////////////////////////
 
-/datum/computer_file/report/recipient/command
+/datum/computer_file/report/recipient/command/transfer
 	form_name = "FLC-COM-001-TFF"
 	title = "Command - Transfer Form"
-	logo = "\[logo\]"
 
-/datum/computer_file/report/recipient/command/New()
-	..()
-	set_access(access_heads)
-
-/datum/computer_file/report/recipient/command/generate_fields()
+/datum/computer_file/report/recipient/command/transfer/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Liberty Colony - High Council")
 	add_field(/datum/report_field/instruction, "Additional Access Form")
-	add_field(/datum/report_field/simple_text, "Name:")
-	add_field(/datum/report_field/simple_text, "Rank:")
+	add_field(/datum/report_field/simple_text, "Name")
+	add_field(/datum/report_field/simple_text, "Rank")
 	add_field(/datum/report_field/instruction, "Liberty Colony")
-	add_field(/datum/report_field/simple_text, "From Department:")
-	add_field(/datum/report_field/simple_text, "To Department:")
-	add_field(/datum/report_field/simple_text, "Requested Position:")
-	add_field(/datum/report_field/simple_text, "Reason:")
-	add_field(/datum/report_field/signature, "Signature:")
-	add_field(/datum/report_field/signature, "Signature of Transferring Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of Recieving Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
+	add_field(/datum/report_field/simple_text, "From Department")
+	add_field(/datum/report_field/simple_text, "To Department")
+	add_field(/datum/report_field/simple_text, "Requested Position")
+	add_field(/datum/report_field/simple_text, "Reason")
+	add_field(/datum/report_field/signature, "Signature")
+	add_field(/datum/report_field/signature, "Signature of Transferring Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of Recieving Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary")
 
 /datum/computer_file/report/recipient/command/reassignment
 	form_name = "FLC-COM-002-RGO"
@@ -58,12 +54,12 @@ TFF
 	..()
 	add_field(/datum/report_field/instruction, "Liberty Colony - High Council")
 	add_field(/datum/report_field/instruction, "Reassignment Order")
-	add_field(/datum/report_field/simple_text, "Employee:")
-	add_field(/datum/report_field/simple_text, "Original Position:")
-	add_field(/datum/report_field/simple_text, "New Position:")
-	add_field(/datum/report_field/simple_text, "Reason for Assignment:")
-	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
+	add_field(/datum/report_field/simple_text, "Employee")
+	add_field(/datum/report_field/simple_text, "Original Position")
+	add_field(/datum/report_field/simple_text, "New Position")
+	add_field(/datum/report_field/simple_text, "Reason for Assignment")
+	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -75,11 +71,11 @@ TFF
 	..()
 	add_field(/datum/report_field/instruction, "Liberty Colony - High Council")
 	add_field(/datum/report_field/instruction, "Access Change Order")
-	add_field(/datum/report_field/simple_text, "Employee:")
-	add_field(/datum/report_field/simple_text, "Original Position:")
-	add_field(/datum/report_field/simple_text, "Reason for Dismissal:")
-	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
+	add_field(/datum/report_field/simple_text, "Employee")
+	add_field(/datum/report_field/simple_text, "Original Position")
+	add_field(/datum/report_field/simple_text, "Reason for Dismissal")
+	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -114,12 +110,12 @@ TFF
 /datum/computer_file/report/recipient/command/awol/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "CD-14 Form: Colonist missing while on duty")
-	add_field(/datum/report_field/simple_text, "Name/Aliases:")
-	add_field(/datum/report_field/simple_text, "Assignment:")
-	add_field(/datum/report_field/simple_text, "Reason for Colonist missing from duty:")
-	add_field(/datum/report_field/simple_text, "What can be done to rectify this issue:")
-	add_field(/datum/report_field/simple_text, "Is executive action required:")
-	add_field(/datum/report_field/simple_text, "Head of Department:")
+	add_field(/datum/report_field/simple_text, "Name/Aliases")
+	add_field(/datum/report_field/simple_text, "Assignment")
+	add_field(/datum/report_field/simple_text, "Reason for Colonist missing from duty")
+	add_field(/datum/report_field/simple_text, "What can be done to rectify this issue")
+	add_field(/datum/report_field/simple_text, "Is executive action required")
+	add_field(/datum/report_field/simple_text, "Head of Department")
 	add_field(/datum/report_field/instruction, "Colonist delinquent of duty are governed by the  protocol 348-60-9, and the relevant faction withholds the right to perform any and all acts of reasonable punishment and repossession upon said employee under protocol 348-60-2. Colonist are at minimum docked of pay till such time as recommencement as governed by contract 24-5. Any and all losses caused by the employee colonist loss and excessive loss is defined within protocol 23-13B. The relevant faction withholds the right to deny, permit, override all concordant or orders of command staff from other factions except those given by a lawful order or council vote.")
 
 /datum/computer_file/report/recipient/command/access_change
@@ -129,11 +125,11 @@ TFF
 /datum/computer_file/report/recipient/command/access_change/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Access Change Order")
-	add_field(/datum/report_field/simple_text, "Employee:")
-	add_field(/datum/report_field/simple_text, "Access Added/Removed:")
-	add_field(/datum/report_field/simple_text, "Reasoning for Addition/Removal:")
-	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
+	add_field(/datum/report_field/simple_text, "Employee")
+	add_field(/datum/report_field/simple_text, "Access Added/Removed")
+	add_field(/datum/report_field/simple_text, "Reasoning for Addition/Removal")
+	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 
@@ -144,14 +140,14 @@ TFF
 /datum/computer_file/report/recipient/command/staff_assessment/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Shift Departmental Staff Assessment")
-	add_field(/datum/report_field/simple_text, "Department:")
-	add_field(/datum/report_field/simple_text, "Employee Name:")
-	add_field(/datum/report_field/simple_text, "Current Job:")
-	add_field(/datum/report_field/simple_text, "Current Duties:")
-	add_field(/datum/report_field/simple_text, "Does the staff member wear the correct uniform or protective gear:")
-	add_field(/datum/report_field/simple_text, "Rate the staff members performance, 1-10:")
-	add_field(/datum/report_field/simple_text, "Does the staff member require further training:")
-	add_field(/datum/report_field/simple_text, "Head of Department:")
+	add_field(/datum/report_field/simple_text, "Department")
+	add_field(/datum/report_field/simple_text, "Employee Name")
+	add_field(/datum/report_field/simple_text, "Current Job")
+	add_field(/datum/report_field/simple_text, "Current Duties")
+	add_field(/datum/report_field/simple_text, "Does the staff member wear the correct uniform or protective gear")
+	add_field(/datum/report_field/simple_text, "Rate the staff members performance, 1-10")
+	add_field(/datum/report_field/simple_text, "Does the staff member require further training")
+	add_field(/datum/report_field/simple_text, "Head of Department")
 	add_field(/datum/report_field/instruction, "Contained review materials are not representative of the views of the relevant faction. Said faction is not liable for any bias or offensive language contained within said review materials. The relevant faction in question withholds the right to action upon any information contained within this assessment.")
 
 /datum/computer_file/report/recipient/command/docked
@@ -255,10 +251,10 @@ TFF
 	add_field(/datum/report_field/people/from_manifest, "Name")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
-	add_field(/datum/report_field/simple_text, "Mech's Title:")
-	add_field(/datum/report_field/simple_text, "Mech's Type:")
-	add_field(/datum/report_field/simple_text, "Mech's Equipment:")
-	add_field(/datum/report_field/instruction, "These are non-negotiable, any modifications void this permit.")
+	add_field(/datum/report_field/simple_text, "Mech's Title")
+	add_field(/datum/report_field/simple_text, "Mech's Type")
+	add_field(/datum/report_field/simple_text, "Mech's Equipment")
+	add_field(/datum/report_field/instruction, "These are non-negotiable, any modifications to the Mech void this permit.")
 	add_field(/datum/report_field/signature, "Signature of Deputy Chief")
 	add_field(/datum/report_field/signature, "Signature of Board Secretary (if applicable)")
 	set_access(access_edit = access_security)
@@ -281,9 +277,9 @@ TFF
 	add_field(/datum/report_field/instruction, "Skylight Shipping Receipt")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
-	add_field(/datum/report_field/simple_text, "You were served by:")
-	add_field(/datum/report_field/pencode_text, "You bought the following items:")
-	add_field(/datum/report_field/simple_text, "Your Total:")
+	add_field(/datum/report_field/simple_text, "You were served by")
+	add_field(/datum/report_field/pencode_text, "You bought the following items")
+	add_field(/datum/report_field/simple_text, "Your Total")
 	add_field(/datum/report_field/signature, "Signature")
 
 /datum/computer_file/report/recipient/sks/shipping_invoice
@@ -293,12 +289,12 @@ TFF
 /datum/computer_file/report/recipient/sks/shipping_invoice/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Skylight Shipping Invoice")
-	add_field(/datum/report_field/simple_text, "Employee:")
-	add_field(/datum/report_field/simple_text, "Original Price of Item/Order:")
-	add_field(/datum/report_field/simple_text, "Item/Order sold:")
-	add_field(/datum/report_field/simple_text, "80% of the above is:")
-	add_field(/datum/report_field/simple_text, "The seller is entilted to a maximum amount of:")
-	add_field(/datum/report_field/simple_text, "The seller has taken:")
+	add_field(/datum/report_field/simple_text, "Employee")
+	add_field(/datum/report_field/simple_text, "Original Price of Item/Order")
+	add_field(/datum/report_field/simple_text, "Item/Order sold")
+	add_field(/datum/report_field/simple_text, "80% of the above is")
+	add_field(/datum/report_field/simple_text, "The seller is entilted to a maximum amount of")
+	add_field(/datum/report_field/simple_text, "The seller has taken")
 	add_field(/datum/report_field/instruction, "The seller is entitled to a maximum of 20% of the profits made. Going over is a breach of contract and will result in your demotion. The receipt of sale is required to be attached to this paperwork for it to be considered valid.")
 
 /datum/computer_file/report/recipient/sks/confirmation_form
@@ -308,27 +304,27 @@ TFF
 /datum/computer_file/report/recipient/sks/confirmation_form/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Confirmation Form")
-	add_field(/datum/report_field/simple_text, "Shipment Destination:")
-	add_field(/datum/report_field/instruction, "Ores/Material in this Shipment:")
-	add_field(/datum/report_field/simple_text, "Iron Ore:")
-	add_field(/datum/report_field/simple_text, "Metal:")
-	add_field(/datum/report_field/simple_text, "Plasteel:")
-	add_field(/datum/report_field/simple_text, "Sand:")
-	add_field(/datum/report_field/simple_text, "Glass:")
-	add_field(/datum/report_field/simple_text, "Reinforced Glass:")
-	add_field(/datum/report_field/simple_text, "Gold Ore:")
-	add_field(/datum/report_field/simple_text, "Gold Bars:")
-	add_field(/datum/report_field/simple_text, "Silver Ore:")
-	add_field(/datum/report_field/simple_text, "Silver Bars:")
-	add_field(/datum/report_field/simple_text, "Plasma Ore:")
-	add_field(/datum/report_field/simple_text, "Solid Plasma:")
-	add_field(/datum/report_field/simple_text, "Uranium Ore:")
-	add_field(/datum/report_field/simple_text, "Uranium:")
-	add_field(/datum/report_field/simple_text, "Diamond Ore:")
-	add_field(/datum/report_field/simple_text, "Diamonds:")
-	add_field(/datum/report_field/pencode_text, "Miscellaneous:")
-	add_field(/datum/report_field/signature, "Supply Personel Signature:")
-	add_field(/datum/report_field/signature, "Recipient Signature:")
+	add_field(/datum/report_field/simple_text, "Shipment Destination")
+	add_field(/datum/report_field/instruction, "Ores/Material in this Shipment")
+	add_field(/datum/report_field/simple_text, "Iron Ore")
+	add_field(/datum/report_field/simple_text, "Metal")
+	add_field(/datum/report_field/simple_text, "Plasteel")
+	add_field(/datum/report_field/simple_text, "Sand")
+	add_field(/datum/report_field/simple_text, "Glass")
+	add_field(/datum/report_field/simple_text, "Reinforced Glass")
+	add_field(/datum/report_field/simple_text, "Gold Ore")
+	add_field(/datum/report_field/simple_text, "Gold Bars")
+	add_field(/datum/report_field/simple_text, "Silver Ore")
+	add_field(/datum/report_field/simple_text, "Silver Bars")
+	add_field(/datum/report_field/simple_text, "Plasma Ore")
+	add_field(/datum/report_field/simple_text, "Solid Plasma")
+	add_field(/datum/report_field/simple_text, "Uranium Ore")
+	add_field(/datum/report_field/simple_text, "Uranium")
+	add_field(/datum/report_field/simple_text, "Diamond Ore")
+	add_field(/datum/report_field/simple_text, "Diamonds")
+	add_field(/datum/report_field/pencode_text, "Miscellaneous")
+	add_field(/datum/report_field/signature, "Supply Personel Signature")
+	add_field(/datum/report_field/signature, "Recipient Signature")
 	add_field(/datum/report_field/instruction, "By signing this form as recipient, you agree that all materials listed were present at the time of signing. You also agree that after signing, you and your department take full responsibility for the materials delivered.")
 
 //////////////////////////////////////
@@ -338,53 +334,43 @@ TFF
 /datum/computer_file/report/recipient/ttu
 	form_name = "FLC-TTU-001-MGR"
 	title = "Terra-Therma - Mining Report"
-	logo = "\[solcrest\]" //Placeholder until their actual logo
-
-/datum/computer_file/report/recipient/ttu/New()
-	..()
-	set_access(access_engine)
 
 /datum/computer_file/report/recipient/ttu/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Mining Report")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
-	add_field(/datum/report_field/simple_text, "Mined by:")
-	add_field(/datum/report_field/pencode_text, "Detailed amount of Materials after processing:")
-	add_field(/datum/report_field/simple_text, "Total Shipping Profits of All Materials (Standard Value):")
-	add_field(/datum/report_field/pencode_text, "What materials were sold to other departments?:")
-	add_field(/datum/report_field/simple_text, "Total amount of profit:")
-	add_field(/datum/report_field/simple_text, "The miner is entitled to:")
-	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?:")
-	add_field(/datum/report_field/simple_text, "The guard is entilted to:")
-	add_field(/datum/report_field/signature, "Buyer's Signature:")
-	add_field(/datum/report_field/signature, "Guard Signature(if applicable):")
+	add_field(/datum/report_field/simple_text, "Mined by")
+	add_field(/datum/report_field/pencode_text, "Detailed amount of Materials after processing")
+	add_field(/datum/report_field/simple_text, "Total Shipping Profits of All Materials (Standard Value)")
+	add_field(/datum/report_field/pencode_text, "What materials were sold to other departments?")
+	add_field(/datum/report_field/simple_text, "Total amount of profit")
+	add_field(/datum/report_field/simple_text, "The miner is entitled to")
+	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?")
+	add_field(/datum/report_field/simple_text, "The guard is entilted to")
+	add_field(/datum/report_field/signature, "Buyer's Signature")
+	add_field(/datum/report_field/signature, "Guard Signature(if applicable)")
 
 /////////////////////
 /* Research - PIRS */
 /////////////////////
 
-/datum/computer_file/report/recipient/pirs
+/datum/computer_file/report/recipient/pirs/excavation
 	form_name = "FLC-PRI-001-MGR"
 	title = "Phokorus Institute - Excavation Report"
-	logo = "\[solcrest\]" //Placeholder until their actual logo
 
-/datum/computer_file/report/recipient/pirs/New()
-	..()
-	set_access(access_research_equipment)
-
-/datum/computer_file/report/recipient/pirs/generate_fields()
+/datum/computer_file/report/recipient/pirs/excavation/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Excavation Report")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
-	add_field(/datum/report_field/simple_text, "Excavated by:")
-	add_field(/datum/report_field/simple_text, "Excavated item list:")
-	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?:")
-	add_field(/datum/report_field/simple_text, "The guard is entilted to:")
-	add_field(/datum/report_field/signature, "The guard's signature(if applicable):")
-	add_field(/datum/report_field/simple_text, "The employee is entitled to:")
-	add_field(/datum/report_field/signature, "The employee's signature: ")
+	add_field(/datum/report_field/simple_text, "Excavated by")
+	add_field(/datum/report_field/simple_text, "Excavated item list")
+	add_field(/datum/report_field/simple_text, "Was a guard present during mining operation?")
+	add_field(/datum/report_field/simple_text, "The guard is entilted to")
+	add_field(/datum/report_field/signature, "The guard's signature(if applicable)")
+	add_field(/datum/report_field/simple_text, "The employee is entitled to")
+	add_field(/datum/report_field/signature, "The employee's signature")
 
 /datum/computer_file/report/recipient/pirs/borging
 	form_name = "FLC-PRI-002-CRC"
@@ -412,21 +398,17 @@ TFF
 /datum/computer_file/report/recipient/cap
 	form_name = "FLC-CAP-001-BGR"
 	title = "CAPSA Group - Billing Receipt"
-	logo = "\[solcrest\]" //Placeholder until their actual logo
-
-/datum/computer_file/report/recipient/cap/New()
-	..()
-	set_access(access_medical)
 
 /datum/computer_file/report/recipient/cap/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "CAPSA Billing Receipt")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
-	add_field(/datum/report_field/simple_text, "You were served by:")
-	add_field(/datum/report_field/pencode_text, "You were provided services:")
-	add_field(/datum/report_field/simple_text, "Your Total:")
+	add_field(/datum/report_field/simple_text, "You were served by")
+	add_field(/datum/report_field/pencode_text, "You were provided services")
+	add_field(/datum/report_field/simple_text, "Your Total")
 	add_field(/datum/report_field/signature, "Signature")
+	add_field(/datum/report_field/instruction, "NOTE The below area to be stamped by a CAPSA Employee.")
 
 /////////////
 /* Generic */
@@ -473,15 +455,15 @@ TFF
 	add_field(/datum/report_field/instruction, "Requisition Approval Sheet")
 	add_field(/datum/report_field/instruction, "The following is to be filled out in order to facilitate the deliver process of requisitions from cargo. Only appoved requisitions are to be listed on this form. All requisitions listed on this form are to be attached to this form. Requisitions listed may be from a single individual or faction.")
 	add_field(/datum/report_field/instruction, "Requester Information")
-	add_field(/datum/report_field/simple_text, "Name:")
-	add_field(/datum/report_field/simple_text, "Department:")
-	add_field(/datum/report_field/pencode_text, "Ordered Items:")
-	add_field(/datum/report_field/simple_text, "Total Cost:")
-	add_field(/datum/report_field/simple_text, "Location of Delivery:")
+	add_field(/datum/report_field/simple_text, "Name")
+	add_field(/datum/report_field/simple_text, "Department")
+	add_field(/datum/report_field/pencode_text, "Ordered Items")
+	add_field(/datum/report_field/simple_text, "Total Cost")
+	add_field(/datum/report_field/simple_text, "Location of Delivery")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/instruction, "NOTE: Items may be delievered or picked up at cargo.")
-	add_field(/datum/report_field/signature, "Club Manager's/Fixer's Signature:")
-	add_field(/datum/report_field/signature, "Requesters Signature:")
+	add_field(/datum/report_field/signature, "Club Manager's/Fixer's Signature")
+	add_field(/datum/report_field/signature, "Requesters Signature")
 	add_field(/datum/report_field/instruction, "NOTE: The below area to be stamped by Skylight Employee.")
 
 /datum/computer_file/report/recipient/access_form
@@ -491,13 +473,13 @@ TFF
 /datum/computer_file/report/recipient/access_form/generate_fields()
 	..()
 	add_field(/datum/report_field/instruction, "Additional Access Form")
-	add_field(/datum/report_field/simple_text, "Name:")
-	add_field(/datum/report_field/simple_text, "Rank:")
+	add_field(/datum/report_field/simple_text, "Name")
+	add_field(/datum/report_field/simple_text, "Rank")
 	add_field(/datum/report_field/instruction, "Liberty Colony")
-	add_field(/datum/report_field/simple_text, "Requested Access:")
-	add_field(/datum/report_field/simple_text, "Reason:")
-	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff:")
-	add_field(/datum/report_field/signature, "Signature of the Board Secretary:")
+	add_field(/datum/report_field/simple_text, "Requested Access")
+	add_field(/datum/report_field/simple_text, "Reason")
+	add_field(/datum/report_field/signature, "Signature of relevant Head of Staff")
+	add_field(/datum/report_field/signature, "Signature of the Board Secretary")
 
 /////////////////////
 /* Generic - Faxes */
@@ -518,18 +500,18 @@ TFF
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 	add_field(/datum/report_field/instruction, "")
-	add_field(/datum/report_field/simple_text, "Origin:")
-	add_field(/datum/report_field/simple_text, "Department:")
-	add_field(/datum/report_field/simple_text, "Destination:")
-	add_field(/datum/report_field/simple_text, "Sender's Name:")
-	add_field(/datum/report_field/simple_text, "Sender's Rank:")
+	add_field(/datum/report_field/simple_text, "Origin")
+	add_field(/datum/report_field/simple_text, "Department")
+	add_field(/datum/report_field/simple_text, "Destination")
+	add_field(/datum/report_field/simple_text, "Sender's Name")
+	add_field(/datum/report_field/simple_text, "Sender's Rank")
 	add_field(/datum/report_field/instruction, "")
-	add_field(/datum/report_field/simple_text, "Priority:")
-	add_field(/datum/report_field/simple_text, "Subject:")
+	add_field(/datum/report_field/simple_text, "Priority")
+	add_field(/datum/report_field/simple_text, "Subject")
 	add_field(/datum/report_field/instruction, "")
-	add_field(/datum/report_field/pencode_text, "Message Body:")
-	add_field(/datum/report_field/signature, "Sender's Signature:")
-	add_field(/datum/report_field/signature, "Signatures of additional authorities:")
+	add_field(/datum/report_field/pencode_text, "Message Body")
+	add_field(/datum/report_field/signature, "Sender's Signature")
+	add_field(/datum/report_field/signature, "Signatures of additional authorities")
 	add_field(/datum/report_field/instruction, "Stamps of applicable authorities below this line.")
 
 /datum/computer_file/report/recipient/emergency_transmission
@@ -540,7 +522,7 @@ TFF
 	..()
 	add_field(/datum/report_field/instruction, "EMERGENCY TRANSMISSION")
 	add_field(/datum/report_field/instruction, "")
-	add_field(/datum/report_field/simple_text, "Sender:")
-	add_field(/datum/report_field/simple_text, "Position:")
-	add_field(/datum/report_field/pencode_text, "Message:")
-	add_field(/datum/report_field/signature, "Signed:")
+	add_field(/datum/report_field/simple_text, "Sender")
+	add_field(/datum/report_field/simple_text, "Position")
+	add_field(/datum/report_field/pencode_text, "Message")
+	add_field(/datum/report_field/signature, "Signed")
