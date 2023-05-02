@@ -218,6 +218,7 @@
 /datum/perk/foodappraise
 	name = "Spice up Food"
 	desc = "Your own special, secret touch in seasoning has anomalous properties that can enhance most food products."
+	icon_state = "spice"
 	active = FALSE
 	passivePerk = FALSE
 
