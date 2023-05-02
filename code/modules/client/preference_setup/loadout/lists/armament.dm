@@ -82,3 +82,8 @@
 	display_name = "katana \"Saya\" sheath"
 	path = /obj/item/clothing/accessory/holster/saber/saya
 
+/datum/gear/armament/cheap_melee
+	display_name = "cheap melee selection"
+	path = /obj/item/tool/cheap
+	cost = 3
+	flags = GEAR_HAS_TYPE_SELECTION
