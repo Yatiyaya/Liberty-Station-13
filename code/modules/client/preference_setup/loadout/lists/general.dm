@@ -52,6 +52,10 @@
 	path = /obj/item/reagent_containers/food/drinks/mug
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/multipen
+	display_name = "multipen"
+	path = /obj/item/pen/multi
+
 /datum/gear/guitar
 	display_name = "guitar"
 	path = /obj/item/device/synthesized_instrument/guitar

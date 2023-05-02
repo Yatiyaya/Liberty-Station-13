@@ -44,14 +44,13 @@
 	path = /obj/item/flame/lighter
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/utility/matchbook
+	display_name = "matchbook"
+	path = /obj/item/storage/box/matches
+
 /datum/gear/utility/lunchbox
 	display_name = "lunch box selection"
 	path = /obj/item/storage/lunchbox
-	flags = GEAR_HAS_TYPE_SELECTION
-
-/datum/gear/utility/multipen
-	display_name = "pen selection"
-	path = /obj/item/pen
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/utility/trackingimplanter
@@ -73,13 +72,23 @@
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced/golden
 	cost = 4
 
-/datum/gear/utility/matchbook
-	display_name = "matchbook"
-	path = /obj/item/storage/box/matches
-
 /datum/gear/utility/paicard
 	display_name = "personal AI device"
 	path = /obj/item/device/paicard
+
+/datum/gear/utility/powercellsmall
+	display_name = "power cell, small"
+	path = /obj/item/cell/small/high
+	cost = 2
+
+/datum/gear/utility/powercellmedium
+	display_name = "power cell, medium"
+	path = /obj/item/cell/medium/high
+	cost = 2
+
+/datum/gear/utility/flashlight
+	display_name = "flashlight"
+	path = /obj/item/device/lighting/toggleable/flashlight
 
 /datum/gear/utility/silvercoin
 	display_name = "silver coin"
