@@ -76,7 +76,7 @@
 ******************/
 //These departments can make their own money very easily
 /datum/department/church
-	name = "Custodians of Bonfires Collective Fund"
+	name = "Custodians of Bonfire Operation Funding"
 	id = DEPARTMENT_CHURCH
 	account_initial_balance = 10000 //Almost enough to last 4 hours without nepotism with all slots filled
 	jobs_in_department = list (JOBS_CHURCH)
