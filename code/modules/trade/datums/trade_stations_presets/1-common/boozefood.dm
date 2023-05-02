@@ -99,10 +99,10 @@
 	offer_types = list(
 		/obj/item/tool/knife = offer_data("spare knifes", 40, 20),
 		/obj/item/reagent_containers/food/snacks/grown = offer_data("spare grown food", 10, 120), //10 credits a grown item basicl
-		/obj/item/reagent_containers/food/snacks/kampferburger = offer_data("kampfer burger", 400, 3),
-		/obj/item/reagent_containers/food/snacks/panzerburger = offer_data("panzer burger", 500, 2),
-		/obj/item/reagent_containers/food/snacks/jagerburger = offer_data("jager burger", 500, 2),
-		/obj/item/reagent_containers/food/snacks/seucheburger = offer_data("seuche burger", 500, 2)
+		/obj/item/reagent_containers/food/snacks/kampferburger = offer_data("roach  burger", 400, 3),
+		/obj/item/reagent_containers/food/snacks/panzerburger = offer_data("exoskeleton roach burger", 500, 2),
+		/obj/item/reagent_containers/food/snacks/jagerburger = offer_data("hunter-killer roach burger", 500, 2),
+		/obj/item/reagent_containers/food/snacks/seucheburger = offer_data("vapour roach burger", 500, 2)
 	)
 
 /obj/structure/reagent_dispensers/beerkeg/cargo
