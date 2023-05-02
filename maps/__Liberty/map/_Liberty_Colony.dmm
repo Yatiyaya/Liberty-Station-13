@@ -69375,7 +69375,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/reagent_dispensers/fueltank/huge,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -70093,6 +70092,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/structure/reagent_dispensers/fueltank/huge,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "tdv" = (
