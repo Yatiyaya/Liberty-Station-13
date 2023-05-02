@@ -47,7 +47,7 @@
 	The scientists under your command are working on a range of projects. Direct them towards the best interests of the organization.<br>\
 	With oversight over the funds, you may also purchase scientific artifacts and anything else of research value - even funding away missions.<br>\
 	Even use your position to request support from other factions if required. Most colonists do not understand your work, but know its value.<br>\
-	Of course, remember that you are a scientist yourself - feel free to get into the lab and work on R&D or xeno-related research.
+	Of course, remember that you are a scientist yourself - feel free to get into the lab and work on R&D or xeno-related research."
 
 	duties = "Direct the scientists under your command towards the expansion of scientific knowledge and the enrichment of other's understanding of the natural world.<br>\
 	Ensure a healthy stock of research equipment through management of department funds.<br>\
