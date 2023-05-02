@@ -58078,6 +58078,10 @@
 	name = "East APC";
 	pixel_x = 28
 	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/security/tactical)
 "pSH" = (
@@ -78852,6 +78856,10 @@
 	},
 /obj/item/stack/material/plasma{
 	amount = 25
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/shuttle/floor/science{
 	icon_state = "4,5"
