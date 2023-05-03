@@ -507,7 +507,7 @@
 
 	if(weapon_upgrades[GUN_UPGRADE_FLASHLIGHT])
 		G.flashlight_attachment = TRUE
-		G.verbs += /obj/item/gun/proc/toggle_light
+		G.initialize_flashlight()
 
 	if(!isnull(weapon_upgrades[GUN_UPGRADE_FORCESAFETY]))
 		G.restrict_safety = TRUE

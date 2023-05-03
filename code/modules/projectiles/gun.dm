@@ -142,25 +142,28 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	var/flashlight_attachment = FALSE // Do we have a flashlight attached to us?
 
 
-// HUD button for quick flashlight toggle
-/obj/item/gun/proc/toggle_light(mob/living/user)
-	set name = "Toggle Flashlight"
-
-	if(!flashlight_attachment || src != user.get_active_hand())
-		return
-
-	if(flashlight_attachment)
-		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
-			FL.attack_self(user)
-			to_chat(user, SPAN_NOTICE("You toggle the attached flashlight [FL.on ? "on":"off"]."))
-			update_hud_actions()
-
-// Toggle flashlight verb, it will appear as a right click option on the gun it's attached to
 /obj/item/gun/proc/toggle_light_verb()
-	set name = "Toggle Flashlight"
+	set name = "Toggle gun's flashlight"
+	set category = "Object"
 
 	toggle_light(usr)
 
+// HUD button for quick flashlight toggle
+/obj/item/gun/proc/toggle_light(mob/living/user)
+
+	if(!flashlight_attachment)
+		to_chat(user, SPAN_NOTICE("This weapon dosnt have a flashlight."))
+		return
+
+	if(src != user.get_active_hand())
+		to_chat(user, SPAN_NOTICE("You must be holding the weapon to toggle its light."))
+		return
+
+	for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+		FL.attack_self(user)
+		to_chat(user, SPAN_NOTICE("You toggle the attached flashlight [FL.on ? "on":"off"]."))
+
+	update_hud_actions()
 
 /obj/item/gun/wield(mob/user)
 	if(!wield_delay)
@@ -884,15 +887,10 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 			action = new /obj/screen/item_action/top_bar/gun/flashlight
 			action.owner = src
 			hud_actions += action
-			if(ismob(loc))
-				var/mob/user = loc
-				user.client?.screen += action
 	else
-		if(ismob(loc))
-			var/mob/user = loc
-			user.client?.screen -= action
 		hud_actions -= action
 		qdel(action)
+	update_hud_actions()
 
 /obj/item/gun/proc/add_firemode(var/list/firemode)
 	//If this var is set, it means spawn a specific subclass of firemode
@@ -1032,6 +1030,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 /obj/item/gun/pickup(mob/user)
 	.=..()
 	update_firemode()
+	update_hud_actions()
 
 /obj/item/gun/dropped(mob/user)
 	// I really fucking hate this but this is how this is going to work.
@@ -1051,6 +1050,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 
 /obj/item/gun/proc/toggle_safety_verb()
 	set name = "Toggle gun's safety"
+	set category = "Object"
 
 	toggle_safety(usr)
 
@@ -1157,9 +1157,8 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	move_delay = initial(move_delay)
 	muzzle_flash = initial(muzzle_flash)
 	silenced = initial(silenced)
-	flashlight_attachment = initial(flashlight_attachment)
-	verbs -= /obj/item/gun/proc/toggle_light_verb
-	verbs -= /obj/item/gun/proc/toggle_light
+	if(flashlight_attachment)
+		flashlight_attachment = initial(flashlight_attachment)
 	restrict_safety = initial(restrict_safety)
 	init_offset = initial(init_offset)
 	proj_damage_adjust = list()
@@ -1180,7 +1179,6 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	auto_eject = initial(auto_eject) //SoJ edit
 	initialize_scope()
 	initialize_firemodes()
-	initialize_flashlight()
 	//Let's refresh our name and prefixes
 	// FIXME: This sadly sometimes resets the gun from <prefixes><gun_name> to just the gun's name when storing it on a container.
 	name = initial(name)
@@ -1217,6 +1215,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 		name = "[prefix] [name]"
 
 	update_icon()
+	initialize_flashlight()
 	//then update any UIs with the new stats
 	SSnano.update_uis(src)
 
