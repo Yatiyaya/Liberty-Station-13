@@ -17,7 +17,6 @@
 	department_account_access = TRUE
 	playtimerequired = 2500
 	health_modifier = 25
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/dc
 
@@ -77,7 +76,6 @@
 	minimum_character_age = 25
 	playtimerequired = 1200
 	health_modifier = 20
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/armorer
 
@@ -134,7 +132,6 @@
 	wage = WAGE_PROFESSIONAL
 	playtimerequired = 1200
 	health_modifier = 5
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/investigator
 
@@ -191,7 +188,6 @@
 	selection_color = "#a7bbc6"
 	wage = WAGE_LABOUR_HAZARD
 	health_modifier = 10
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/watchmen
 

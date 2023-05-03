@@ -157,48 +157,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
 	icon_state = "market_prof"
 
-//////////////////////
-/* Synthetics Perks */
-//////////////////////
-/datum/perk/background/reaper
-	name = "R34pR Chipset"
-	icon_state = "overheat"
-	desc = "You have been infected with REEP malware but fret not, it's not all so bad! \
-	Running extremely hot, you move faster at cost of increased fragility of your systems."
-
-/datum/perk/background/reaper/assign(mob/living/carbon/human/H)
-	if(..())
-		holder.burn_mod_perk += 0.30
-		holder.slowdown -= 0.3
-
-/datum/perk/background/reaper/remove()
-	if(holder)
-		holder.burn_mod_perk -= 0.30
-		holder.slowdown += 0.3
-	..()
-
-/datum/perk/background/equalizer
-	name = "Equalizer Chipset"
-	icon_state = "skills"
-	desc = "Whatever was your chassis original purpose is overwritten. \
-			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
-
-/datum/perk/background/equalizer/assign(mob/living/carbon/human/H)
-	if(!..())
-		return
-	var/maxstat = -INFINITY
-	var/maxstatname
-	spawn(1)
-		for(var/name in ALL_STATS_TO_IMPRINT)
-			if(holder.stats.getStat(name, TRUE) > maxstat)
-				maxstat = holder.stats.getStat(name, TRUE)
-				maxstatname = name
-		for(var/name in ALL_STATS_TO_IMPRINT)
-			if(name != maxstatname)
-				holder.stats.changeStat(name, 4)
-			else
-				holder.stats.changeStat(name, -10)
-
 ////////////////////////
 /* Sanity-Based Perks */
 ////////////////////////

@@ -17,7 +17,6 @@
 	minimum_character_age = 25
 	health_modifier = 5
 
-	disallow_species = list(FORM_UNBRANDED, FORM_PIRSYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief
 
 	access = list(
@@ -81,8 +80,6 @@
 		access_external_airlocks, access_construction, access_atmospherics
 	)
 
-	disallow_species = list(FORM_PIRSYNTH, FORM_LIBYNTH, FORM_NASHEF)
-
 
 	stat_modifiers = list(
 		STAT_MEC = 30,
@@ -100,7 +97,7 @@
 							 /datum/computer_file/program/shield_control)
 
 	description = "The Mechanical Technician is a member of the Terra-Therma Workers' Union, contracted to maintain, repair and power the colony. Your main priority is ensuring the setup and maintenance of the colony's power grid. Seek guidance on this complex task if untrained. You are also expected to ensure that the colony is structurally sound and safe, as well as making sure that it is heated. It's cold outside; make sure the cold doesn't creep in. Outside of this, you should devote time into learning and configuring various systems. Everything can be improved, and new constructs can be made. In your downtime, your arsenal can be improved with mods and different tools, either hand-crafted or made through the Matter NanoForge. Your NanoForge is the pride and joy of the Union; the objects created from it can be used to supplement your equipment or sold for profit. Do not let outsiders, even Command Staff, interfere with the duties of the Union. Be ready to respond to emergency calls at all time. You are the first, and maybe last, line of defense against structural damage."
-	
+
 	duties = "Start up the engines of the colony. Upgrade them when time permits.<br>\
 	Repair anything (and anyone who asks) that needs maintenance.<br>\
 	Respond to distress calls and patch breaches in the walls.<br>\
@@ -129,11 +126,10 @@
 	wage = WAGE_LABOUR_HAZARD
 	health_modifier = 5
 
-	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
 	description = "The Mining Technician is a professional resource procurer, acquiring valuable minerals and materials for the Terra-Therma Workers' Union. Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can. Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use. Whatever you dig up will go to the Union, and from then on it is the responsibility of others within the Union to use or sell as needed. The deep tunnels are far less dangerous than the blisteringly cold wilderness, but pack well - disappearances are not unheard of."
-	
+
 	duties = "Dig up ores and minerals to be processed into usable material.<br>\
 	Locate other valuables within the tunnels that may be sold off for profit.<br>\
 	Assist the Union whenever needed. The Maintenance Technicians require what you dig up for crafting and repairing the colony, and what they can produce will be invaluable for your work."
@@ -160,48 +156,3 @@
 	name = "Mining Technician"
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
-
-/* maybe they'll want it back in, idk
-/datum/job/janitor
-	title = "Sanitation Technician"
-	flag = JANITOR
-	department = DEPARTMENT_SERVICE
-	department_flag = SERVICE
-	faction = MAP_FACTION
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "Union Chief"
-	difficulty = "Easy."
-	selection_color = "#d5c88f"
-	alt_titles = list ("Janitor")
-	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
-	wage = WAGE_PROFESSIONAL
-	health_modifier = 5
-	outfit_type = /decl/hierarchy/outfit/job/engineering/janitor
-
-	perks = list(PERK_JINGLE_JANGLE, PERK_NEAT)
-
-	stat_modifiers = list(
-		STAT_ROB = 15,
-		STAT_TGH = 10,
-		STAT_VIG = 15,
-		STAT_COG = 10,
-	)
-
-
-	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
-	description = "The lowly Janitor, well paid but rarely respected, nevertheless provides a valuable service.<br>\
-	You will trundle around the colony, armed with your trusty janicart full of cleaning supplies, disposing of trash and pests.<br>\
-	Some minor maintenance also falls within your duties. Fix lights, correct broken vendors, replace floor tiles - ease the guild burden.<br>\
-	Although your status is miserable, your knowledge of maintenance may lead you to some valuable salvage for some extra cash."
-
-	duties = "Clean blood, dirt, rubble and messes. Don't clean up crime scenes!<br>\
-		Conduct minor repairs and maintenance when guild adepts aren't available.<br>\
-		Restock Newscasters to at lest 15 prints.<br>\
-		Deploy traps on burrows and do your best to handle the ongoing roach and spider problem."
-
-/obj/landmark/join/start/janitor
-	name = "Sanitation Technician"
-	icon_state = "player-black"
-	join_tag = /datum/job/janitor
-*/

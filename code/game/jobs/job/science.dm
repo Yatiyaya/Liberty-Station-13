@@ -12,7 +12,6 @@
 	selection_color = "#b39aaf"
 	req_admin_notify = 1
 	wage = WAGE_COMMAND
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	outfit_type = /decl/hierarchy/outfit/job/science/rp
@@ -75,7 +74,6 @@
 	noob_name = "PIRS Intern"
 	alt_titles = list("PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	software_on_spawn = list(/datum/computer_file/program/signaller, /datum/computer_file/program/chem_catalog)
 
@@ -123,7 +121,6 @@
 	selection_color = "#bdb1bb"
 	wage = WAGE_PROFESSIONAL
 	department_account_access = TRUE
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	outfit_type = /decl/hierarchy/outfit/job/science/roboticist

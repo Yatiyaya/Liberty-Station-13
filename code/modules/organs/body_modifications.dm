@@ -1,6 +1,6 @@
 var/global/list/body_modifications = list()
 var/global/list/modifications_types = list(
-	BP_CHEST = "",  "chest2" = "", BP_HEAD = "",   BP_GROIN = "",
+	BP_CHEST = "",  BP_BACK = "", BP_HEAD = "",   BP_GROIN = "",
 	BP_L_ARM  = "", BP_R_ARM  = "", BP_L_LEG  = "", BP_R_LEG  = "",
 	OP_HEART  = "", OP_LUNGS  = "", OP_LIVER  = "", OP_EYES   = "",
 	OP_KIDNEY_LEFT = "", OP_KIDNEY_RIGHT = "" , OP_STOMACH = "", BP_BRAIN = ""
@@ -128,7 +128,7 @@ var/global/list/modifications_types = list(
 	name = "Unbranded"
 	id = "prosthesis_basic"
 	desc = "A simple, brutal and reliable prosthesis."
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	replace_limb = /obj/item/organ/external/robotic
 	icon = 'icons/mob/human_races/cyberlimbs/generic.dmi'
 	nature = MODIFICATION_SILICON
@@ -196,41 +196,44 @@ var/global/list/modifications_types = list(
 	id = "prosthesis_frozen_star"
 	replace_limb = /obj/item/organ/external/robotic/frozen_star
 	icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/technomancer
 	id = "prosthesis_technomancer"
 	replace_limb = /obj/item/organ/external/robotic/technomancer
 	icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/junktech
 	id = "prosthesis_ghetto"
 	replace_limb = /obj/item/organ/external/robotic/junktech
 	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN)
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/synthskin
 	id = "prosthesis_full_body_prosthetic"
 	replace_limb = /obj/item/organ/external/robotic/synthskin
 	icon = 'icons/mob/human_races/cyberlimbs/fbp.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/moebius
 	id = "prosthesis_moebius"
 	replace_limb = /obj/item/organ/external/robotic/moebius
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	department_specific = list(DEPARTMENT_MEDICAL, DEPARTMENT_SCIENCE)
 
 /datum/body_modification/limb/prosthesis/blackshield
 	id = "prosthesis_blackshield"
 	replace_limb = /obj/item/organ/external/robotic/blackshield
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/blackshield.dmi'
 	department_specific = list(DEPARTMENT_SECURITY)
 
 /datum/body_modification/limb/prosthesis/church
 	id = "prosthesis_church"
 	replace_limb = /obj/item/organ/external/robotic/church
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 
 /datum/body_modification/limb/mutation/New()
@@ -256,21 +259,6 @@ var/global/list/modifications_types = list(
 		return new replace_limb(holder)
 	else
 		return new organ(holder)
-/* Commented out due to no way to differenciate them.
-/datum/body_modification/organ/assisted
-	name = "Assisted organ"
-	short_name = "P: assisted"
-	id = "assisted"
-	desc = "Assisted organ."
-	body_parts = list(OP_HEART, OP_LUNGS, OP_KIDNEY_LEFT, OP_KIDNEY_RIGHT, OP_STOMACH, BP_BRAIN, OP_LIVER, OP_EYES)
-
-/datum/body_modification/organ/assisted/create_organ(var/mob/living/carbon/holder, var/O, var/color)
-	var/obj/item/organ/I = ..(holder,O,color)
-	I.nature = MODIFICATION_ASSISTED
-	I.min_bruised_damage = 15
-	I.min_broken_damage = 35
-	return I
-*/
 
 /datum/body_modification/organ/robotize_organ
 	name = "Robotic organ"
