@@ -2,12 +2,12 @@
 /obj/item/stack/dinar
 	name = "Coalition Dinar"
 	desc = "The most common currency used around the galaxy, accepted by most non-Coalition traders. At least credits hold their value better than corporate scrip or coalition dinars."
-	icon = 'icons/obj/currency/spacebucks.dmi'
+	icon = 'icons/obj/currency/dinar.dmi'
 	icon_state = "cred"
 	w_class = ITEM_SIZE_TINY
 	amount = 1
 	max_amount = 10000
-	stacktype = /obj/item/stack/gal_cred
+	stacktype = /obj/item/stack/dinar
 	novariants = TRUE					// Skips base /obj/item/stack update_icon() checks
 	price_tag = 10						// 10-to-1 exchange rate with scrip
 
