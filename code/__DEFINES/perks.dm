@@ -170,11 +170,6 @@
 #define PERK_NANITE_AMMO /datum/perk/nanite_ammo
 #define PERK_NANITE_METAL_EATER /datum/perk/nanite_metal_drinker
 
-// Imprinter Perks
-#define PERK_SMARTLINK /datum/perk/smartlink
-#define PERK_COGENHANCE /datum/perk/cognitive_enhancer
-#define PERK_CHEMNEUTRAL /datum/perk/chemical_neutralizer
-
 // Nanite Chem Perks.
 #define PERK_NANITE_CHEM /datum/perk/nanite_chem
 #define PERK_NANITE_CHEM_IMPLANT /datum/perk/nanite_chem/implantoids
