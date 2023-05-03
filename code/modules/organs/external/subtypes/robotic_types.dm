@@ -285,7 +285,7 @@ obj/item/organ/external/robotic/synthskin/groin
 	desc = "Gold and black prosthetics designed by the Custodians."
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_CARBON_FIBER = 3)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIO_SILK = 30)
 	price_tag = 400
 
 /obj/item/organ/external/robotic/church/l_arm
