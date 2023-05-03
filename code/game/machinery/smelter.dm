@@ -215,8 +215,8 @@
 	var/ejected_amount = min(initial(stack_type.max_amount), round(stored_material[material]), storage_capacity)
 	var/remainder = ejected_amount - round(ejected_amount)
 	var/obj/item/stack/material/S = new stack_type(src, ejected_amount)
+	var/shard
 	if(remainder)
-		var/shard
 		shard = new /obj/item/material/shard(src, material, _amount = remainder)
 		if(shard)
 			eject(shard, output_side)
