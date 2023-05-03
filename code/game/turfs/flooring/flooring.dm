@@ -1163,3 +1163,193 @@ var/list/flooring_types
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/cafe_large
 
+/decl/flooring/rusted
+	icon = 'icons/turf/flooring/rusted.dmi'
+	icon_base = "tiles"
+	flags = TURF_CAN_BREAK | TURF_HAS_CORNERS | TURF_HAS_INNER_CORNERS
+	build_type = null
+	can_paint = 1
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/rusted/tiles
+	name = "rusty tiles"
+	desc = "floor long lost to the withering of time."
+	icon_base = "tiles"
+
+/decl/flooring/rusted/panels
+	name = "rusty panels"
+	desc = "floor long lost to the withering of time."
+	icon_base = "panels"
+
+/decl/flooring/rusted/techfloor
+	name = "rusty techfloor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor"
+
+/decl/flooring/rusted/techfloor_grid
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor_grid"
+
+/decl/flooring/rusted/brown_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_perforated"
+
+/decl/flooring/rusted/gray_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_perforated"
+
+/decl/flooring/rusted/cargo
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cargo"
+
+/decl/flooring/rusted/brown_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_platform"
+
+/decl/flooring/rusted/gray_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_platform"
+
+/decl/flooring/rusted/danger
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "danger"
+
+/decl/flooring/rusted/golden
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "golden"
+
+/decl/flooring/rusted/bluecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "bluecorner"
+
+/decl/flooring/rusted/orangecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "orangecorner"
+
+/decl/flooring/rusted/cyancorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cyancorner"
+
+/decl/flooring/rusted/violetcorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "violetcorner"
+
+/decl/flooring/rusted/monofloor
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "monofloor"
+	has_base_range = 15
+
+/decl/flooring/rusted2
+	icon = 'icons/turf/flooring/rusted2.dmi'
+	flags = TURF_CAN_BREAK | TURF_HAS_CORNERS | TURF_HAS_INNER_CORNERS
+	build_type = null
+	can_paint = 1
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/rusted2/tiles
+	name = "rusty tiles"
+	desc = "floor long lost to the withering of time."
+	icon_base = "tiles"
+
+/decl/flooring/rusted2/panels
+	name = "rusty panels"
+	desc = "floor long lost to the withering of time."
+	icon_base = "panels"
+
+/decl/flooring/rusted2/techfloor
+	name = "rusty techfloor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor"
+
+/decl/flooring/rusted2/techfloor_grid
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "techfloor_grid"
+
+/decl/flooring/rusted2/brown_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_perforated"
+
+/decl/flooring/rusted2/gray_perforated
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_perforated"
+
+/decl/flooring/rusted2/cargo
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cargo"
+
+/decl/flooring/rusted2/brown_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "brown_platform"
+
+/decl/flooring/rusted2/gray_platform
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "gray_platform"
+
+/decl/flooring/rusted2/danger
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "danger"
+
+/decl/flooring/rusted2/golden
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "golden"
+
+/decl/flooring/rusted2/bluecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "bluecorner"
+
+/decl/flooring/rusted2/orangecorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "orangecorner"
+
+/decl/flooring/rusted2/cyancorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "cyancorner"
+
+/decl/flooring/rusted2/violetcorner
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "violetcorner"
+
+/decl/flooring/rusted2/monofloor
+	name = "rusty floor"
+	desc = "floor long lost to the withering of time."
+	icon_base = "monofloor"
+	has_base_range = 15

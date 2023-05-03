@@ -496,8 +496,28 @@
 
 /obj/item/clothing/under/skylight_uniform
 	name = "skylight uniform"
-	desc = "A fancy neatly pressed white shirt and purple tie with charcoal black pants."
+	desc = "A neatly pressed fancy white shirt and purple tie with charcoal black pants."
 	icon_state = "skylight_uniform"
 	item_state = "skylight_uniform"
+
+/obj/item/clothing/under/skylight_sweater
+	name = "skylight sweater"
+	desc = "A sleek pressed black sweater and pants to keep you warm and looking sharp."
+	icon_state = "skylight_sweater"
+	item_state = "skylight_sweater"
+
+/obj/item/clothing/under/skylight_jumpsuit
+	name = "skylight jumpsuit"
+	desc = "A snug fitting jumpsuit for when things get a little bit, rowdy and messy."
+	icon_state = "skylight_jumpsuit"
+	item_state = "skylight_jumpsuit"
+
+/obj/item/clothing/under/skylight_outfit
+	name = "skylight fixer outfit"
+	desc = "A sturdy charcoal black long sleeves with skylight blue pants to make you look tough."
+	icon_state = "skylight_outfit"
+	item_state = "skylight_outfit"
+
+
 
 

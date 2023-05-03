@@ -375,6 +375,21 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.metabolism_effects.calculate_nsa()
 	..()
 
+/datum/perk/fate/paper_worm
+	name = "Paper Worm"
+	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \
+			You have lower stats all around, but have a higher chance to have increased stat growth on level up."
+	icon_state = "paper"
+
+/datum/perk/fate/paper_worm/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.positive_prob += 20
+
+/datum/perk/fate/paper_worm/remove()
+	if(holder)
+		holder.sanity.positive_prob -= 20
+	..()
+
 /////////////////
 /* Money Perks */
 /////////////////
@@ -409,21 +424,3 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/background/splicer/remove()
 	holder.unnatural_mutations.total_instability -= 20
 	..()
-
-////////////////
-/* Food Perks */
-////////////////
-
-/datum/perk/background/carnivore
-	name = "Carnivore"
-	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate carnivore. You get very little nutrition from standard nutriment, but gain alot from meat and protein \
-	based products."
-	passivePerk = TRUE
-	icon_state = "snack_carn"
-
-/datum/perk/background/herbivore
-	name = "Herbivore"
-	desc = "For whatever reason, be it genetics or racial inclination, you are an obligate herbivore. You get very little nutrition from standard protein, but gain alot from grown foods and glucose \
-	based products."
-	passivePerk = TRUE
-	icon_state = "snack_herb"

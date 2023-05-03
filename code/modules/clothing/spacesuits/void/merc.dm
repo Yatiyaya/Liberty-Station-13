@@ -100,44 +100,6 @@
 		usr.update_action_buttons()
 		return 1
 
-/obj/item/clothing/head/helmet/space/void/SCAF/blackshield
-	name = "blackshield SCAF helmet"
-	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. Features an inbuilt camera feed and helmet light."
-	icon_state = "scaf_mil"
-	item_state = "scaf_mil"
-	camera_networks = list(NETWORK_SECURITY)
-	light_overlay = "helmet_light_white"
-
-/obj/item/clothing/head/helmet/space/void/SCAF/blackshield/toggle_style()
-	set name = "Adjust Helmet Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Standard"] = "scaf_mil"
-	options["Cat eared"] = "skat_mil"
-
-	var/choice = input(M,"What kind of helmet style do you want to switch to?","Adjust style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your helmet's appearance into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/space/void/SCAF/blackshield
-	name = "blackshield SCAF suit"
-	desc = "A bulky antique suit of refurbished into elite infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. The blackshields answers to an all purpose mobile tank suit."
-	icon_state = "scaf_mil"
-	item_state = "scaf_mil"
-	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/blackshield
-
 //Voidsuit for contractors
 /obj/item/clothing/head/helmet/space/void/merc
 	name = "blood-red voidsuit helmet"

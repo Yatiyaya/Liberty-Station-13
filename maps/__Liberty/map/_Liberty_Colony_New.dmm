@@ -5264,7 +5264,7 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
 "bnF" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -28407,7 +28407,7 @@
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1north)
 "gGc" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/machinery/light,
 /obj/machinery/alarm{
 	dir = 1;
@@ -69702,7 +69702,7 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/techshop)
 "pZD" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/decal/cleanable/cobweb2,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
@@ -72862,11 +72862,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/rnd/xenobiology/ameridian)
 "qKt" = (
-/obj/item/clothing/accessory/ranks/brigadier,
 /obj/structure/table/rack/shelf,
-/obj/item/clothing/accessory/patches/blackshield_brigadier,
-/obj/item/clothing/suit/rank/brigdress,
-/obj/item/clothing/under/rank/brigservice,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/contraband/poster/placed/recruitment/blackshield{
@@ -80749,7 +80745,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "sAq" = (
-/obj/machinery/vending/kink,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
@@ -104116,7 +104111,6 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/security/armory_blackshield)
 "xPP" = (
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor1south)
 "xPS" = (

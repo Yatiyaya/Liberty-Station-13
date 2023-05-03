@@ -186,7 +186,7 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/seucheburger
-	name = "vapour burger"
+	name = "vapour roach burger"
 	desc = "A burger made out of a vapour roach. This can't be healthy."
 	icon_state = "seucheburger"
 	bitesize = 2
@@ -217,7 +217,7 @@
 	center_of_mass = list("x"=16, "y"=11)
 	nutriment_desc = list("bun" = 2)
 	nutriment_amt = 3
-	preloaded_reagents = list("protein" = 8, "Fuhrole" = 3)
+	preloaded_reagents = list("protein" = 8, "fuhrerole" = 3)
 	matter = list(MATERIAL_BIOMATTER = 20)
 	cooked = TRUE
 

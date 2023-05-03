@@ -1578,7 +1578,7 @@
 	},
 /obj/machinery/door/airlock/glass_mining{
 	name = "Mining Prep";
-	req_access = list(50)
+	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/lockers)

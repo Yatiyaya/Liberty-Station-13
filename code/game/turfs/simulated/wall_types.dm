@@ -52,6 +52,24 @@
 	base_color_override = "#FFFFFF"
 	reinf_color_override = "#FFFFFF"
 
+/turf/simulated/wall/rust_standard
+	name = "rusty wall"
+	desc = "A wall weathered away by the elements."
+	icon_state = "rust_standard"
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_base_override = "rust_standard"
+
+/turf/simulated/wall/rust_reinforced
+	name = "rusty reinforced wall"
+	desc = "A wall weathered away by the elements."
+	icon_state = "rust_reinforced"
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_base_override = "rust_reinforced"
+	icon_base_reinf_override = "rust_reinforced"
+
+/turf/simulated/wall/rust_reinforced/New(var/newloc)
+	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL)
+
 /turf/simulated/wall/church_reinforced/New(var/newloc)
 	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL) //3strong
 

@@ -1,5 +1,5 @@
 /obj/machinery/vending/weapon_machine
-	name = "Marshal Portable Armory"
+	name = "Liberty Watch Portable Armory"
 	desc = "A self-defense equipment vending machine. When you need to be tacticool."
 	product_slogans = "The best defense is good offense!;Buy for your whole family today!;Nobody can outsmart bullet!;Stupidity can be cured! By LEAD.;Remember, 'Stand your Ground' is applicable in a court of law!;Guns kill people, It's never your fault!;It's dangerous to go unarmed, take this!;Buy more ammo, you never know when you'll need it!" //Yes, It's a Zelda reference, fight me - Papalus
 	product_ads = "Stunning!;Take justice in your own hands!;LEADership!;Guns don't kill people, YOU do!;His fault for being in sights!;Serve them a cold plate of justice!;Justice in lead form!;Smell the gunpowder!;Better now than never!"
@@ -145,7 +145,7 @@
 	/obj/item/storage/box/smokes = 100)
 
 /obj/machinery/vending/security
-	name = "SecTech"
+	name = "MarsTek Security Equipment Vendor"
 	desc = "A security equipment vendor."
 	product_slogans = "Criminals don't commit crimes when they're already in prison!;Proper escalation? Who has time for that!;Criminal activity damns the criminal to hell. It's your job to send them there.;Remember, they were already beaten up when you got there.;Fuck the Non-Aggression Principle!"
 	product_ads = "Crack some skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?;Brutalize them!;Tag and bag!;Be quick, be robust."
@@ -305,7 +305,7 @@
 		..()
 
 /obj/machinery/vending/serbomat
-	name = "Revanchist's Dream"
+	name = "Astrakhan Winter Contingency Vendor"
 	desc = "A strange vending machine that looks very much out of place. Somehow still operational."
 	icon_state = "serbomat"
 	product_ads = "For Rodina.;Have you fulfilled your nutrition quota today?;Very nice!;We are simple people, for this is all we eat.;If there is a person, there is a problem. If there is no person, then there is no problem."

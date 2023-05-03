@@ -43,13 +43,6 @@
 	affect_ingest(M, alien, effect_multiplier * 1.2)
 
 /datum/reagent/organic/nutriment/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
-	if(ishuman(M))
-		if(M.stats.getPerk(PERK_HERBIVORE))
-			nutriment_factor = 7
-		if(M.stats.getPerk(PERK_CARNIVORE))
-			nutriment_factor = 1
-
-	// Small bodymass, more effect from lower volume.
 	M.adjustNutrition(nutriment_factor * (issmall(M) ? effect_multiplier * 2 : effect_multiplier)) // For hunger and fatness
 	M.add_chemical_effect(CE_BLOODRESTORE, 0.1 * (issmall(M) ? effect_multiplier * 2 : effect_multiplier))
 
@@ -60,8 +53,13 @@
 	taste_description = "sweetness"
 	color = "#FFFFFF"
 	scannable = TRUE
+	overdose = 50
 	injectable = 1
 	common = TRUE //It's basically sugar
+
+/datum/reagent/organic/nutriment/glucose/overdose(mob/living/carbon/human/user, alien)
+	var/obj/item/organ/internal/blood_vessel/user_vessel = user.random_organ_by_process(OP_BLOOD_VESSEL)
+	create_overdose_wound(user_vessel, user, /datum/component/internal_wound/organic/heavy_poisoning, "accumulation")
 
 /datum/reagent/organic/nutriment/protein
 	name = "Protein"
@@ -72,13 +70,6 @@
 	common = TRUE //Protein Shake
 
 /datum/reagent/organic/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
-	if(ishuman(M))
-		if(M.stats.getPerk(PERK_CARNIVORE))
-			nutriment_factor = 7
-		if(M.stats.getPerk(PERK_HERBIVORE))
-			nutriment_factor = 1
-
-	// Small bodymass, more effect from lower volume.
 	M.adjustNutrition(nutriment_factor * (issmall(M) ? effect_multiplier * 2 : effect_multiplier)) // For hunger and fatness
 	M.add_chemical_effect(CE_BLOODRESTORE, 0.1 * (issmall(M) ? effect_multiplier * 2 : effect_multiplier))
 
@@ -89,13 +80,13 @@
 	description = "A slurry of bland chemical preservatives that takes years, if not decades, to go bad."
 	color = "#440000"
 	common = TRUE //Snacks
-	nutriment_factor = 1
+	nutriment_factor = -1
 	regen_factor = 0.2
 
 /datum/reagent/organic/nutriment/preservatives/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
 	if(ishuman(M))
 		if(M.stats.getPerk(PERK_SNACKIVORE))
-			M.adjustNutrition(nutriment_factor * 10)
+			M.adjustNutrition(nutriment_factor * -10)
 			M.adjustOxyLoss(-0.3 * effect_multiplier)
 			M.heal_organ_damage(0.1 * effect_multiplier, 0.1 * effect_multiplier)
 			M.add_chemical_effect(CE_TOXIN, 1)
@@ -116,13 +107,18 @@
 	id = "honey"
 	description = "A golden yellow syrup, loaded with sugary sweetness."
 	taste_description = "sweetness"
-	nutriment_factor = 4
+	nutriment_factor = 1
+	overdose = 30
 	color = "#FFFF00"
 	common = TRUE
 
 /datum/reagent/organic/nutriment/honey/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
 	..()
 	M.add_chemical_effect(CE_ANTITOX, 0.5)
+
+/datum/reagent/organic/nutriment/honey/overdose(mob/living/carbon/human/user, alien)
+	var/obj/item/organ/internal/blood_vessel/user_vessel = user.random_organ_by_process(OP_BLOOD_VESSEL)
+	create_overdose_wound(user_vessel, user, /datum/component/internal_wound/organic/heavy_poisoning, "accumulation")
 
 /datum/reagent/organic/nutriment/flour
 	name = "flour"

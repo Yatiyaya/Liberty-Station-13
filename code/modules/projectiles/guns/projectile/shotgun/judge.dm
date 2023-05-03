@@ -28,7 +28,7 @@
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL, GUN_SIGHT)
 	init_firemodes = list(
 	SEMI_AUTO_NODELAY,
-	FULL_AUTO_150_NOLOSS)
+	BURST_2_ROUND_NOLOSS)
 	serial_type = "ML"
 	gun_parts = list(/obj/item/part/gun/frame/judge = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/shotgun = 1, /obj/item/part/gun/barrel/shotgun = 1)
 
@@ -42,7 +42,7 @@
 	mechanismvar = /obj/item/part/gun/mechanism/shotgun
 	barrelvars = list(/obj/item/part/gun/barrel/shotgun)
 
-/obj/item/gun/projectile/automatic/judge/update_icon()
+/obj/item/gun/projectile/shotgun/judge/update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)

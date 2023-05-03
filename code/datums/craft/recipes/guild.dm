@@ -188,7 +188,7 @@
 	name = "\"Little Helper\" Omnitool"
 	result = /obj/item/tool/engimultitool
 	steps = list(
-		list (/obj/item/tool/multitool_improvised, 1),
+		list (/obj/item/organ_module/active/simple/makeshift, 1),
 		list (QUALITY_SCREW_DRIVING, 20, 40),
 		list (QUALITY_WIRE_CUTTING, 20, 40),
 		list (CRAFT_MATERIAL, 1, MATERIAL_OSMIUM, 60),

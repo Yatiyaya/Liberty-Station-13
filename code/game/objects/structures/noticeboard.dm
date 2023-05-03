@@ -136,28 +136,6 @@
 	P.stamped &= STAMP_FACTION
 	src.contents += P
 
-/obj/structure/noticeboard/blackshield
-	name = "Blackshield bulletin board"
-	desc = "A board containing vital notices and official memos for the Blackshield Militia"
-	icon_state = "nboard02"
-	notices = 2
-
-/obj/structure/noticeboard/blackshield/New()
-	var/obj/item/paper/P = new()
-	P.name = "Memo RE: Equipment handling"
-	P.info = "<br>Officers and Troopers alike, remember to properly secure lockers and weaponry. This is not a daycare, you should not need to be reminded that duty-gear is not to be left lying around - Agent Sanja"
-	P.copy_overlays(list("paper_stamp-dots"), TRUE)
-	P.stamped &= STAMP_FACTION
-	src.contents += P
-
-	P = new()
-	P.name = "Memo RE: Gate procedure"
-	P.info = "<br>This is a firm reminder to all Blackshield Personnel to draw their attention to the Gate Operations section of S.O.P, <b>particularly</b> the section detailing proper bolting of the gate when present and \
-	<b><i>UNBOLTING</b></i> of the gate when NOT present. The next trooper to get a fax sent because he left the foreman bolted outside is going to be scrubbing the latrines with his toothbrust - Sgt Dansen"
-	P.copy_overlays(list("paper_stamp-dots"), TRUE)
-	P.stamped &= STAMP_FACTION
-	src.contents += P
-
 /obj/structure/noticeboard/medical
 	name = "Medical bulletin board"
 	desc = "A board containing vital notices and official memos for CAPSA Medical"

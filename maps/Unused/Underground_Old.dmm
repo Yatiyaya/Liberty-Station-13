@@ -12757,7 +12757,7 @@
 /obj/machinery/holoposter{
 	pixel_y = 32
 	},
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "aHh" = (
@@ -19626,7 +19626,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "aZA" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
@@ -63066,7 +63066,6 @@
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor2south)
 "cZx" = (
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor2south)
 "cZy" = (
@@ -80921,7 +80920,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1central)
 "dOC" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1central)
 "dOD" = (

@@ -1,5 +1,5 @@
 /obj/machinery/vending/medical
-	name = "MiniPharma Plus"
+	name = "MiniPharma Plus Vendor"
 	desc = "Medical drug dispenser."
 	icon_state = "med"
 	icon_deny = "med-deny"
@@ -32,7 +32,7 @@
 	give_discount_points = FALSE
 
 /obj/machinery/vending/wallmed
-	name = "MicroMed"
+	name = "MicroMed Vendor"
 	desc = "Wall-mounted medical dispenser."
 	density = FALSE //It is wall-mounted, and thus, not dense. --Superxpdude
 	icon_state = "wallmed"

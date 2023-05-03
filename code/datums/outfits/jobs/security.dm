@@ -14,16 +14,14 @@
 /decl/hierarchy/outfit/job/security/dc
 	name = OUTFIT_JOB_NAME("Liberty Watch - Deputy Chief")
 	l_ear = /obj/item/device/radio/headset/heads/bscom
-	uniform = /obj/item/clothing/under/rank/commander
-	suit = /obj/item/clothing/suit/armor/commander/militia
+	uniform = /obj/item/clothing/under/rank/warden
 	belt = /obj/item/gun/energy/taser
 	l_pocket = /obj/item/device/flash
 	gloves = /obj/item/clothing/gloves/stungloves
 	glasses = /obj/item/clothing/glasses/ballistic
 	id_type = /obj/item/card/id/hos
-	head = /obj/item/clothing/head/rank/milcom
 	pda_type = /obj/item/modular_computer/pda/heads/hos
-	backpack_contents = list(/obj/item/storage/hcases/ammo/blackmarket/co = 1)
+	backpack_contents = list(/obj/item/storage/hcases/ammo/ih/wo = 1)
 
 /decl/hierarchy/outfit/job/security/armorer
 	name = OUTFIT_JOB_NAME("Liberty Watch - Armorer")

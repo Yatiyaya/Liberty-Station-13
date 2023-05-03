@@ -46,7 +46,7 @@
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_tool,
 		/obj/item/organ/internal/psionic_tumor/proc/psychic_call,
 		/obj/item/organ/internal/psionic_tumor/proc/psychic_banish,
-		/obj/item/organ/internal/psionic_tumor/proc/journey_to_nowhere,
+		//obj/item/organ/internal/psionic_tumor/proc/journey_to_nowhere,
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_armor,
 		/obj/item/organ/internal/psionic_tumor/proc/kinetic_blaster
 	)
@@ -70,10 +70,10 @@
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_tool,
 		/obj/item/organ/internal/psionic_tumor/proc/psychic_call,
 		/obj/item/organ/internal/psionic_tumor/proc/psychic_banish,
-		/obj/item/organ/internal/psionic_tumor/proc/journey_to_nowhere,
+		//obj/item/organ/internal/psionic_tumor/proc/journey_to_nowhere,
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_armor,
 		/obj/item/organ/internal/psionic_tumor/proc/kinetic_blaster,
-		// Psych unique powers just for them. Do not add these to other lists. -Kaz
+		// Psych unique powers just for them.
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_heal_other,
 		/obj/item/organ/internal/psionic_tumor/proc/meditative_focus_other,
 		/obj/item/organ/internal/psionic_tumor/proc/psionic_heal_brain,

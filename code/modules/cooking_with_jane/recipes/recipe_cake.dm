@@ -24,18 +24,19 @@
 		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 1, base=1),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
-
+/* Broken
 /datum/cooking_with_jane/recipe/cheesecake
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/sliceable/cheesecake
 	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/sliceable/plaincake),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 1, base=1),
 		list(CWJ_USE_STOVE, J_MED, 30 SECONDS)
 	)
-
+*/
 /datum/cooking_with_jane/recipe/orangecake
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/sliceable/orangecake

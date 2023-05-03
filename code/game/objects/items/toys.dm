@@ -1252,12 +1252,18 @@
 	var/pokesound = null
 
 /obj/item/toy/plushie/fumo/marisa
+	name = "witch doll"
+	desc = "A doll in the dressings of a witch."
 	icon_state = "fumoplushie_marisa"
 
 /obj/item/toy/plushie/fumo/astolfo
+	name = "dressing doll"
+	desc = "A small doll with colourful cloathing dressed on it."
 	icon_state = "fumoplushie_astolfo"
 
 /obj/item/toy/plushie/fumo/cirno
+	name = "dressing doll"
+	desc = "A small doll with colourful cloathing dressed on it."
 	icon_state = "fumoplushie_cirno"
 
 /obj/item/toy/plushie/fumo/attack_self(mob/user as mob)

@@ -70,12 +70,6 @@
 	icon_state = "inspectorbadge"
 	item_state = "inspectorbadge"
 
-/obj/item/clothing/accessory/badge/holo/co
-	name = "holobadge"
-	desc = "This glowing red badge marks the holder as a member of blackshield."
-	icon_state = "sargebadge"
-	item_state = "sargebadge"
-
 /obj/item/clothing/accessory/badge/holo/warden
 	name = "holobadge"
 	desc = "This glowing cyan badge marks the holder as a member of security."
@@ -134,13 +128,6 @@
 	name = "Warrant officer's badge"
 	desc = "An immaculately polished gold Warrant Officer badge."
 	icon_state = "goldbadge"
-	slot_flags = SLOT_ACCESSORY_BUFFER
-
-/obj/item/clothing/accessory/badge/smc
-	name = "blackshield commander's badge"
-	desc = "An immaculately polished gold blackshield commander badge."
-	icon_state = "goldbadge"
-	badge_string = "Blackshield"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/badge/marshal

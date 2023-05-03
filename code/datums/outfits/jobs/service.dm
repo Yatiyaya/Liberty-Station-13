@@ -6,7 +6,7 @@
 /decl/hierarchy/outfit/job/service/clubmanager
 	name = OUTFIT_JOB_NAME("Skylight Syndicate - Club Manager")
 	l_ear = /obj/item/device/radio/headset/heads/clubmanager
-	uniform = /obj/item/clothing/under/skylight_uniform
+	uniform = /obj/item/clothing/under/skylight_sweater
 	suit = /obj/item/clothing/suit/storage/toggle/skylight_coat
 	head = /obj/item/clothing/head/fedora/feathered
 	id_type = /obj/item/card/id/white
@@ -14,21 +14,22 @@
 
 /decl/hierarchy/outfit/job/service/fixer
 	name = OUTFIT_JOB_NAME("Skylight Syndicate - Fixer")
-	uniform = /obj/item/clothing/under/skylight_uniform
+	uniform = /obj/item/clothing/under/skylight_outfit
 	suit = /obj/item/clothing/suit/storage/toggle/skylight_coat
-	id_type = /obj/item/card/id/white
-	pda_type = /obj/item/modular_computer/pda/club_worker
-
-/decl/hierarchy/outfit/job/service/bartender
-	name = OUTFIT_JOB_NAME("Skylight Syndicate - Bartender")
-	uniform = /obj/item/clothing/under/rank/bartender
-	head = /obj/item/clothing/head/tophat
 	id_type = /obj/item/card/id/white
 	pda_type = /obj/item/modular_computer/pda/club_worker
 
 /decl/hierarchy/outfit/job/service/waiter
 	name = OUTFIT_JOB_NAME("Skylight Syndicate - Waiter")
 	uniform = /obj/item/clothing/under/skylight_uniform
+	id_type = /obj/item/card/id/white
+	pda_type = /obj/item/modular_computer/pda/club_worker
+
+/* We need code to allow in alt_title loadouts
+/decl/hierarchy/outfit/job/service/bartender
+	name = OUTFIT_JOB_NAME("Skylight Syndicate - Bartender")
+	uniform = /obj/item/clothing/under/skylight_uniform
+	head = /obj/item/clothing/head/tophat
 	id_type = /obj/item/card/id/white
 	pda_type = /obj/item/modular_computer/pda/club_worker
 
@@ -47,3 +48,10 @@
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	id_type = /obj/item/card/id/hydro
 	pda_type = /obj/item/modular_computer/pda
+*/
+
+/decl/hierarchy/outfit/job/service/janitor
+	name = OUTFIT_JOB_NAME("Skylight Syndicate - Janitor")
+	uniform = /obj/item/clothing/under/skylight_jumpsuit
+	shoes = /obj/item/clothing/shoes/galoshesskylight
+	belt = /obj/item/keys/janitor

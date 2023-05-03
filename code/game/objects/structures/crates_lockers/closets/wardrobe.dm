@@ -209,68 +209,6 @@
 	new /obj/item/clothing/under/rank/bdu/marshal(src)
 	new /obj/item/clothing/under/rank/bdu/marshal(src)
 
-/obj/structure/closet/wardrobe/militia
-	name = "blackshield wardrobe"
-	icon_door = "militia"
-
-/obj/structure/closet/wardrobe/militia/populate_contents()
-	new /obj/item/clothing/under/rank/trooper/gorka(src)
-	new /obj/item/clothing/under/rank/trooper/gorka(src)
-	new /obj/item/clothing/under/rank/trooper/cadet(src)
-	new /obj/item/clothing/under/rank/trooper/cadet(src)
-	new /obj/item/clothing/under/rank/fatigues/green(src)
-	new /obj/item/clothing/under/rank/fatigues/green(src)
-	new /obj/item/clothing/under/rank/fatigues/grey(src)
-	new /obj/item/clothing/under/rank/fatigues/grey(src)
-	new /obj/item/clothing/under/rank/fatigues/navy(src)
-	new /obj/item/clothing/under/rank/fatigues/navy(src)
-	new /obj/item/clothing/under/rank/fatigues/tan(src)
-	new /obj/item/clothing/under/rank/fatigues/tan(src)
-	new /obj/item/clothing/under/rank/fatigues/camo(src)
-	new /obj/item/clothing/under/rank/fatigues/camo(src)
-	new /obj/item/clothing/under/rank/fatigues/kav(src)
-	new /obj/item/clothing/under/rank/fatigues/kav(src)
-	new /obj/item/clothing/under/rank/fatigues/kav/green(src)
-	new /obj/item/clothing/under/rank/fatigues/kav/green(src)
-	new /obj/item/clothing/under/rank/fatigues/kav/tan(src)
-	new /obj/item/clothing/under/rank/fatigues/kav/tan(src)
-
-/obj/structure/closet/wardrobe/militia/accessory
-	name = "blackshield accessory wardrobe"
-	icon_door = "militia"
-
-/obj/structure/closet/wardrobe/militia/accessory/populate_contents()
-	new /obj/item/clothing/accessory/holster/leg(src)
-	new /obj/item/clothing/accessory/holster/leg(src)
-	new /obj/item/clothing/accessory/holster/leg(src)
-	new /obj/item/clothing/accessory/holster/leg(src)
-	new /obj/item/clothing/shoes/jackboots(src)
-	new /obj/item/clothing/shoes/jackboots(src)
-	new /obj/item/clothing/shoes/jackboots(src)
-	new /obj/item/clothing/shoes/jackboots(src)
-	new /obj/item/clothing/mask/balaclava/tactical(src)
-	new /obj/item/clothing/mask/balaclava/tactical(src)
-	new /obj/item/clothing/mask/balaclava/tactical(src)
-	new /obj/item/clothing/mask/balaclava/tactical(src)
-	new /obj/item/clothing/accessory/bscloak(src)
-	new /obj/item/clothing/accessory/bscloak(src)
-	new /obj/item/clothing/accessory/bscloak/tan(src)
-	new /obj/item/clothing/accessory/bscloak/tan(src)
-	new /obj/item/clothing/accessory/bscloak/olive(src)
-	new /obj/item/clothing/accessory/bscloak/olive(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/green(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/green(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/tan(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/tan(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/camo(src)
-	new /obj/item/clothing/accessory/job/cape/blackshield/camo(src)
-	new /obj/item/clothing/glasses/ballistic(src)
-	new /obj/item/clothing/glasses/ballistic(src)
-	new /obj/item/clothing/glasses/ballistic(src)
-	new /obj/item/clothing/glasses/ballistic(src)
-
 /obj/structure/closet/wardrobe/job/science_white
 	name = "science wardrobe"
 	icon_door = "white"

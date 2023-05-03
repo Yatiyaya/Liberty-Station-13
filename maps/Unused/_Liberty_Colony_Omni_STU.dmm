@@ -908,7 +908,6 @@
 /turf/simulated/floor/beach/sand,
 /area/liberty/outside/inside_colony)
 "ahg" = (
-/obj/machinery/vending/kink,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2363,7 +2362,6 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "axb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/maintenance/undergroundfloor1north)
 "axf" = (
@@ -22179,7 +22177,7 @@
 	})
 "eto" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
@@ -36815,7 +36813,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/wooden,
-/obj/item/tool/knife/boot/blackshield,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
@@ -55358,7 +55355,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
 	},
@@ -55848,7 +55845,7 @@
 /area/liberty/crew_quarters/pool)
 "kPM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
 "kPS" = (
@@ -87660,7 +87657,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "rbl" = (
-/obj/machinery/vending/kink,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/maintenance/undergroundfloor1west)
 "rbm" = (
@@ -88028,7 +88024,7 @@
 	name = "Residential District Maintenance"
 	})
 "rei" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /obj/effect/floor_decal/spline/wood{
 	dir = 1
 	},

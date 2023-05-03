@@ -2199,7 +2199,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lI" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/citadel,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lJ" = (
