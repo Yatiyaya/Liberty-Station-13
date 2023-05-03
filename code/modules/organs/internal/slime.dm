@@ -9,8 +9,9 @@
 	organ_efficiency = list(OP_BONE = 100, OP_MUSCLE = 100, OP_NERVE = 100)
 	price_tag = 200
 	force = WEAPON_FORCE_NORMAL
-
+/*
 /obj/item/organ/internal/bone/slime/removed_mob()
 	..()
 	visible_message(SPAN_NOTICE("[src] lose cohesion and become a puddle of goo!"))
 	qdel(src)
+*/

@@ -202,45 +202,6 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	icon_state = "ammo_case_blackmarket"
 	desc = "A shady looking ammo can. Can hold ammo magazines, boxes, and bullets. Alt+click to open and close."
 
-/obj/item/storage/hcases/ammo/blackmarket/co
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/co/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/voucher/blackshield/COsecondary(src) // They don't spawn with a Lamia anymore, but come with their own secondary voucher.
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-	new /obj/item/clothing/accessory/badge/holo/co(src)
-
-/obj/item/storage/hcases/ammo/blackmarket/serg
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/serg/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
-
-/obj/item/storage/hcases/ammo/blackmarket/medspec
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/medspec/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
-/obj/item/storage/hcases/ammo/blackmarket/trooper
-	exspand_when_spawned = FALSE //No exspanding cheats
-
-/obj/item/storage/hcases/ammo/blackmarket/trooper/populate_contents()
-	new /obj/item/handcuffs(src)
-	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
-	new /obj/item/cell/small/high(src)
-	new /obj/item/tool/knife/boot/blackshield(src)
-
 /obj/item/storage/hcases/ammo/excel
 	icon_state = "ammo_case_excel"
 	desc = "The peoples ammo can! Can hold ammo magazines, boxes, and bullets. Alt+click to open and close."
@@ -480,7 +441,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		options["Kalashnikov - assault rifle"] = list(/obj/item/gun/projectile/automatic/ak47,/obj/item/ammo_magazine/rifle_75,/obj/item/ammo_magazine/rifle_75, /obj/item/ammo_magazine/rifle_75/rubber)
 		options["Galaxy - plasma & ion pistol"] = list(/obj/item/gun/energy/glock, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
-		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/automatic/judge, /obj/item/ammo_magazine/ammobox/shotgun, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
+		options["Sweeper - automatic combat shotgun"] = list(/obj/item/gun/projectile/shotgun/sweeper, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12/beanbag)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -506,7 +467,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		options["Federalist - assault rifle"] = list(/obj/item/gun/projectile/automatic/federalist,/obj/item/ammo_magazine/light_rifle_257,/obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber)
 		options["Sunrise - energy SMG"] = list(/obj/item/gun/energy/sunrise, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
-		options["Sweeper - automatic combat shotgun"] = list(/obj/item/gun/projectile/shotgun/sweeper, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12/beanbag)
+		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/judge, /obj/item/ammo_magazine/ammobox/shotgun, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -532,7 +493,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		var/list/options = list()
 		options["Wristbreaker - heavy revolver"] = list(/obj/item/gun/projectile/revolver/wristbreaker,/obj/item/ammo_magazine/speed_loader_rifle_75,/obj/item/ammo_magazine/speed_loader_rifle_75, /obj/item/ammo_magazine/speed_loader_rifle_75)
 		options["Sunrise - energy SMG"] = list(/obj/item/gun/energy/sunrise, /obj/item/cell/medium, /obj/item/cell/medium, /obj/item/cell/medium)
-		options["Sweeper - automatic combat shotgun"] = list(/obj/item/gun/projectile/shotgun/sweeper, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12, /obj/item/ammo_magazine/m12/beanbag)
+		options["Judge - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/judge, /obj/item/ammo_magazine/ammobox/shotgun, /obj/item/ammo_magazine/ammobox/shotgun/beanbags)
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]

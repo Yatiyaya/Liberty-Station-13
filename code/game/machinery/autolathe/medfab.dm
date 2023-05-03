@@ -11,10 +11,11 @@
 	active_power_usage = 1000
 	circuit = /obj/item/circuitboard/autolathe_medfab
 
-	storage_capacity = 120
+	storage_capacity = 240
 	speed = 3
 	mat_efficiency = 1
 
+	selectively_recycled_types = list(/obj/item/reagent_containers/food, /obj/item/clothing, /obj/item/organ,/obj/item/modification/organ)
 	//Should only contain things required to produce medical equipment
 	unsuitable_materials = list()
 	suitable_materials = list(MATERIAL_CLOTH, MATERIAL_WOOD, MATERIAL_STEEL, MATERIAL_GLASS, MATERIAL_PLASTIC, MATERIAL_SILVER, MATERIAL_BIOMATTER)

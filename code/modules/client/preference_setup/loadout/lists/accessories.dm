@@ -123,10 +123,6 @@
 	path = /obj/item/clothing/accessory/waistcoat/color
 	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/accessory/blackshieldpatch
-	display_name = "blackshield arm patch"
-	path = /obj/item/clothing/accessory/patches/blackshield
-
 /datum/gear/accessory/pilotharness
 	display_name = "pilot harness"
 	path = /obj/item/clothing/accessory/pilotwebbing

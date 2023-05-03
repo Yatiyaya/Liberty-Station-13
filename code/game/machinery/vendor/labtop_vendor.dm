@@ -1,7 +1,7 @@
 // A vendor machine for modular computer portable devices - Laptops and Tablets
 
 /obj/machinery/lapvend
-	name = "computer vendor"
+	name = "HexaOptimum Computer Vendor"
 	desc = "A vending machine with a built-in microfabricator, capable of dispensing various computers."
 	icon = 'icons/obj/vending.dmi'
 	icon_state = "robotics"

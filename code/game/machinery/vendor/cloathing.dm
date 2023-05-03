@@ -1,6 +1,6 @@
 //FOR ACTORS GUILD - mainly props that cannot be spawned otherwise
 /obj/machinery/vending/props
-	name = "Portable Stage"
+	name = "Portable Stage Vendor"
 	desc = "All the costumes a performer could need. Probably."
 	product_slogans = "Be witty!;Make them smile!;Honk!;Dress to impress!"
 	product_ads = "All animal costumes made out of real fur!;Now featuring our new history selection!;Want to cause a fright? Try our halloween selection!;Non-set costume pieces found in our surplus kits!"
@@ -134,7 +134,7 @@
 					/obj/item/clothing/mask/gas/big_shot = 25)
 
 /obj/machinery/vending/style
-	name = "Style vendor"
+	name = "Style Vendor"
 	desc = "Vendor selling probably salvaged stylish clothing."
 	product_slogans = "Highly stylish clothing for sale!;Latest fashion trends right here!"
 	product_ads = "Contact our consumer department for refunds, fees apply.;Coolness sold here.;Fashion over function!"
@@ -492,87 +492,8 @@
 		/obj/item/clothing/suit/storage/toggle/leather/midriff = 550,
 		)
 
-/obj/machinery/vending/kink
-	name = "KinkMate"
-	desc = "A vending machine for all your unmentionable desires."
-	icon_state = "kink"
-	product_slogans = "Kinky!;Sexy!;Check me out, big boy!"
-	product_ads = "We all need some relax time.;Feeling frisky?"
-	vend_reply = "Have fun, you shameless pervert!"
-	products = list(
-				/obj/item/clothing/suit/costume/kinky/alyson = 5,
-				/obj/item/clothing/under/costume/kinky/hadakapron = 5,
-				/obj/item/clothing/suit/tabard = 5,
-				/obj/item/clothing/suit/tabard/blacksilk = 5,
-				/obj/item/clothing/under/costume/kinky/latex_maid = 5,
-				/obj/item/clothing/under/sexymaid = 5,
-				/obj/item/clothing/head/maid = 5,
-				/obj/item/clothing/under/skintight = 5,
-				/obj/item/clothing/under/costume/kinky/leather = 5,
-				/obj/item/clothing/under/costume/kinky/sexy_clown = 5,
-				/obj/item/clothing/under/costume/kinky/sexy_mime = 5,
-				/obj/item/clothing/under/costume/kinky/stripper_green = 5,
-				/obj/item/clothing/under/costume/kinky/stripper_pink = 5,
-				/obj/item/clothing/suit/costume/kinky/sexy_engineer = 5,
-				/obj/item/clothing/suit/costume/kinky/sexy_internalaffairs = 5,
-				/obj/item/clothing/suit/costume/kinky/sexy_lumberjack = 5,
-				/obj/item/clothing/suit/costume/kinky/sexy_miner = 5,
-				/obj/item/clothing/suit/costume/kinky/sexy_scientist = 5,
-				/obj/item/clothing/mask/costume/kinky/sexy_clown = 5,
-				/obj/item/clothing/mask/costume/kinky/sexy_mime = 5,
-				/obj/item/clothing/suit/storage/toggle/labcoat/poofy = 3,
-				/obj/item/clothing/mask/muzzle = 5,
-				/obj/item/clothing/glasses/blindfold = 5,
-				/obj/item/handcuffs/fuzzy = 5,
-				/obj/item/tool/tape_roll = 5,
-				/obj/item/stack/cable_coil/random = 5,
-				/obj/item/clothing/suit/straight_jacket = 5,
-				/obj/item/legcuffs/fuzzy = 5)
-
-	contraband = list(/obj/item/clothing/under/costume/maid = 5, // plain, modest, humble clothing, you sick freak
-				/obj/item/clothing/suit/costume/job/nun = 5,
-				/obj/item/clothing/head/costume/job/nun = 5,
-				/obj/item/clothing/under/bride_white = 5,
-				/obj/item/clothing/glasses/regular = 5,
-				/obj/item/book/manual/religion/c_bible = 5)
-	prices = list(
-				/obj/item/clothing/suit/costume/kinky/alyson = 100,
-				/obj/item/clothing/under/costume/kinky/hadakapron = 75,
-				/obj/item/clothing/suit/tabard = 100,
-				/obj/item/clothing/suit/tabard/blacksilk = 100,
-				/obj/item/clothing/under/costume/kinky/latex_maid = 100,
-				/obj/item/clothing/under/sexymaid = 100,
-				/obj/item/clothing/head/maid = 100,
-				/obj/item/clothing/under/skintight = 100,
-				/obj/item/clothing/under/costume/kinky/leather = 100,
-				/obj/item/clothing/under/costume/kinky/sexy_clown = 100,
-				/obj/item/clothing/under/costume/kinky/sexy_mime = 100,
-				/obj/item/clothing/under/costume/kinky/stripper_green = 100,
-				/obj/item/clothing/under/costume/kinky/stripper_pink = 100,
-				/obj/item/clothing/suit/costume/kinky/sexy_engineer = 100,
-				/obj/item/clothing/suit/costume/kinky/sexy_internalaffairs = 100,
-				/obj/item/clothing/suit/costume/kinky/sexy_lumberjack = 100,
-				/obj/item/clothing/suit/costume/kinky/sexy_miner = 100,
-				/obj/item/clothing/suit/costume/kinky/sexy_scientist = 100,
-				/obj/item/clothing/mask/costume/kinky/sexy_clown = 100,
-				/obj/item/clothing/mask/costume/kinky/sexy_mime = 100,
-				/obj/item/clothing/suit/storage/toggle/labcoat/poofy = 200,
-				/obj/item/clothing/mask/muzzle = 100,
-				/obj/item/clothing/glasses/blindfold = 100,
-				/obj/item/handcuffs/fuzzy = 100,
-				/obj/item/tool/tape_roll = 50,
-				/obj/item/stack/cable_coil/random = 50,
-				/obj/item/clothing/suit/straight_jacket = 100,
-				/obj/item/legcuffs/fuzzy = 100,
-				/obj/item/clothing/under/costume/maid = 100,
-				/obj/item/clothing/suit/costume/job/nun = 100,
-				/obj/item/clothing/head/costume/job/nun = 100,
-				/obj/item/clothing/under/bride_white = 100,
-				/obj/item/clothing/glasses/regular = 100,
-				/obj/item/book/manual/religion/c_bible = 5)
-
 /obj/machinery/vending/drip
-	name = "Business Causal" // It's a pun on Causality, not a misspelling.
+	name = "Business Causal Vendor" // It's a pun on Causality, not a misspelling.
 	desc = "Vendor selling the most formal of clothes. Not just for lawyers!"
 	product_slogans = "The suit doesn't make you a CEO, but it sure does help you look like one!;Whatever you do in this life, it's not legendary unless you're doing it in a suit.;You can take on the world in a good suit."
 	product_ads = "Our clothes are guaranteed to suit you, make sure you suit the clothes as well.;The outfit doesn't make you, you make the outfit.;People will stare. Make it worth their while."
@@ -851,7 +772,7 @@
 	)
 
 /obj/machinery/vending/plushies
-	name = "Toys 4 You"
+	name = "Toys 4 You Vendor"
 	desc = "Sells toys of all kinds."
 	density = FALSE
 	light_color = COLOR_LIGHTING_GREEN_BRIGHT

@@ -122,8 +122,6 @@
 	var/fuel_name // uses reagent id to get the name
 	var/fuel_reagent_id = "fuel"
 
-	var/decl/sound_player/gensound
-
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
 	if(anchored)
@@ -147,13 +145,6 @@
 		handleInactive()
 		STOP_PROCESSING(SSmachines, src)
 	update_icon()
-	updatesound(active)
-
-/obj/machinery/power/port_gen/pacman/proc/updatesound(var/playing)
-	if(playing && !gensound)
-		gensound.play_looping(src, "generator", 'sound/machines/sound_machines_generator_generator_mid2.ogg', volume = 50*power_output)
-	else if(!playing && gensound)
-		QDEL_NULL(gensound)
 
 /obj/machinery/power/port_gen/pacman/RefreshParts()
 	var/temp_rating = 0
@@ -573,7 +564,6 @@
 	else if(!active && HasFuel() && !IsBroken())
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
-	updatesound(active)
 	update_icon()
 //diesel gen special ui_data
 /obj/machinery/power/port_gen/pacman/diesel/ui_data()

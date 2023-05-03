@@ -13,6 +13,7 @@
 
 	//Has a list of items that it can hold.
 	var/list/can_hold = list(
+		/obj/item/bodybag/cryobag,
 		/obj/item/extinguisher,
 		/obj/item/cell,
 		/obj/item/firealarm_electronics,
@@ -224,6 +225,7 @@
 		/obj/item/paper,
 		/obj/item/paper_bundle,
 		/obj/item/paper_bin,
+		/obj/item/paper_bin,
 		/obj/item/card/id,
 		/obj/item/book,
 		/obj/item/newspaper,
@@ -232,10 +234,15 @@
 		/obj/item/packageWrap,
 		/obj/item/device/destTagger,
 		/obj/item/smallDelivery,
+		/obj/item/pen,
+		/obj/item/stamp,
+		/obj/item/packageWrap,
+		/obj/item/device/destTagger,
+		/obj/item/smallDelivery,
 		/obj/item/photo,
 		/obj/item/spacecash,
 		/obj/item/coin,
-		/obj/item/device/toner
+		/obj/item/device/toner,
 		)
 
 /obj/item/gripper/research //A general usage gripper, used for toxins/robotics/xenobio/etc
@@ -244,6 +251,7 @@
 	desc = "A simple grasping tool suited to assist in a wide array of research applications."
 
 	can_hold = list(
+		/obj/item/bodybag/cryobag,
 		/obj/item/cell,
 		/obj/item/stock_parts,
 		/obj/item/device/mmi,
@@ -294,7 +302,7 @@
 		/obj/item/tank,
 		/obj/item/reagent_containers/food/snacks/meat, //For grinding up roaches
 		/obj/item/reagent_containers/food/snacks/grown, //For grinding up herbs
-
+		/obj/item/bodybag/cryobag,
 		/obj/item/stack/material/plasma
 		)
 

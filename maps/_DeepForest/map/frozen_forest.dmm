@@ -229,7 +229,7 @@
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "fz" = (
 /obj/structure/low_wall/onestar,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "fA" = (
 /obj/structure/table/rack/shelf,
@@ -776,9 +776,6 @@
 /obj/structure/flora/grass/brown,
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest)
-"rX" = (
-/turf/simulated/floor/rock/dark,
-/area/liberty/dungeon/outside/frozen_forest_caves)
 "sb" = (
 /obj/machinery/shower,
 /obj/structure/curtain/open/shower,
@@ -929,7 +926,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "ux" = (
-/obj/structure/invislightsmall/outside,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "uC" = (
@@ -1026,10 +1023,6 @@
 /obj/structure/flora/tree/snow/snow,
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest)
-"wR" = (
-/obj/structure/invislightsmall/outside,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest_house)
 "wX" = (
 /obj/structure/table/onestar,
 /obj/item/pen,
@@ -1645,7 +1638,7 @@
 "Ji" = (
 /obj/structure/low_wall/onestar,
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Jo" = (
 /obj/structure/salvageable/computer_os,
@@ -1855,7 +1848,7 @@
 "NG" = (
 /obj/structure/low_wall/onestar,
 /obj/item/stack/os_cash/random,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "NI" = (
 /obj/item/device/lighting/toggleable/lantern,
@@ -4829,8 +4822,8 @@ Fu
 Fu
 gE
 CX
-rX
-rX
+Fu
+Fu
 uL
 uL
 uL
@@ -4946,9 +4939,9 @@ uL
 uL
 uL
 uL
-rX
-rX
-rX
+Fu
+Fu
+Fu
 Fu
 Fu
 Fu
@@ -5082,7 +5075,7 @@ Fu
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -5104,14 +5097,14 @@ uL
 Fu
 Pj
 Fu
-rX
-rX
-rX
+Fu
+Fu
+Fu
 uL
 uL
 Fu
-rX
-rX
+Fu
+Fu
 Fu
 lT
 Fu
@@ -5357,8 +5350,8 @@ Fu
 Fu
 GT
 Fu
-rX
-rX
+Fu
+Fu
 uL
 uL
 lT
@@ -5610,7 +5603,7 @@ Fu
 Fu
 BS
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -5728,8 +5721,8 @@ Fu
 Fu
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 Fu
 uL
 uL
@@ -6097,7 +6090,7 @@ uL
 Fu
 CX
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -6118,8 +6111,8 @@ Pj
 Fu
 uL
 uL
-rX
-rX
+Fu
+Fu
 Fu
 lT
 uL
@@ -6187,9 +6180,9 @@ Fu
 Fu
 Fu
 Fu
-rX
-rX
-rX
+Fu
+Fu
+Fu
 Fu
 Fu
 IR
@@ -6349,7 +6342,7 @@ uL
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -6371,8 +6364,8 @@ Fu
 uL
 uL
 uL
-rX
-rX
+Fu
+Fu
 Fu
 uL
 uL
@@ -6603,7 +6596,7 @@ Fu
 Fu
 Gu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -6855,7 +6848,7 @@ Fu
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -7107,7 +7100,7 @@ Fu
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -7359,7 +7352,7 @@ uL
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -7705,7 +7698,7 @@ uL
 uL
 Fu
 Fu
-rX
+Fu
 Fu
 Fu
 uL
@@ -7824,7 +7817,7 @@ LL
 rf
 Fy
 rf
-EZ
+rf
 rf
 rf
 UK
@@ -7945,8 +7938,8 @@ Fu
 Fu
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 uL
 uL
 uL
@@ -7957,7 +7950,7 @@ uL
 uL
 Fu
 Fu
-rX
+Fu
 Fu
 Fu
 Fu
@@ -7980,9 +7973,9 @@ uL
 uL
 uL
 uL
-rX
-rX
-rX
+Fu
+Fu
+Fu
 Fu
 Fu
 Fu
@@ -8197,7 +8190,7 @@ Fu
 WF
 Ar
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -8375,7 +8368,7 @@ Fu
 Wb
 Fu
 GT
-rX
+Fu
 uL
 uL
 uL
@@ -8486,7 +8479,7 @@ uL
 uL
 uL
 uL
-rX
+Fu
 Fu
 Fu
 uQ
@@ -8627,9 +8620,9 @@ Fu
 Fu
 Fu
 Fu
-rX
-rX
-rX
+Fu
+Fu
+Fu
 uL
 uL
 Fu
@@ -8738,7 +8731,7 @@ uL
 uL
 uL
 uL
-rX
+Fu
 Fu
 Fu
 Fu
@@ -8960,7 +8953,7 @@ uL
 uL
 uL
 uL
-rX
+Fu
 Fu
 Fu
 Fu
@@ -9199,8 +9192,8 @@ Fu
 Fu
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 uL
 uL
 uL
@@ -9212,7 +9205,7 @@ uL
 uL
 uL
 uL
-rX
+Fu
 Fu
 Fu
 Fu
@@ -10489,7 +10482,7 @@ uL
 uL
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -10741,7 +10734,7 @@ Fu
 Fu
 Fu
 Fu
-rX
+Fu
 uL
 uL
 uL
@@ -10987,7 +10980,7 @@ Fu
 Ar
 Fu
 Fu
-rX
+Fu
 Fu
 Fu
 Fu
@@ -11122,7 +11115,7 @@ PG
 rq
 rq
 uL
-rX
+Fu
 Fu
 Fu
 Fu
@@ -11239,7 +11232,7 @@ Fu
 Fu
 Fu
 Fu
-rX
+Fu
 Fu
 Fu
 Fu
@@ -11374,8 +11367,8 @@ PG
 rq
 uL
 uL
-rX
-rX
+Fu
+Fu
 Fu
 Fu
 uL
@@ -11491,8 +11484,8 @@ uL
 uL
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 Fu
 Fu
 fn
@@ -12232,8 +12225,8 @@ Fu
 tf
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 Fu
 Fu
 Fu
@@ -12746,8 +12739,8 @@ aA
 aA
 Fu
 Fu
-rX
-rX
+Fu
+Fu
 uL
 uL
 uL
@@ -13770,8 +13763,8 @@ uL
 uL
 uL
 uL
-rX
-rX
+Fu
+Fu
 Fu
 Fu
 Fu
@@ -16612,8 +16605,8 @@ rf
 sx
 rf
 rf
-EZ
 rf
+EZ
 jY
 rf
 rf
@@ -18472,7 +18465,7 @@ rf
 rf
 rf
 rf
-EZ
+rf
 rf
 rf
 Fy
@@ -18822,7 +18815,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -21026,7 +21019,7 @@ rf
 rf
 rf
 rf
-EZ
+rf
 rf
 rf
 rf
@@ -21050,7 +21043,7 @@ rf
 rf
 rf
 Iq
-rf
+EZ
 si
 rf
 rf
@@ -22310,7 +22303,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -22721,7 +22714,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -23791,7 +23784,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -23988,7 +23981,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 Bk
 rf
 rf
@@ -24003,7 +23996,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -24502,7 +24495,7 @@ Fy
 rf
 rf
 Iq
-rf
+EZ
 Bk
 rf
 rf
@@ -26290,7 +26283,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 Bk
 rf
 rf
@@ -29515,7 +29508,7 @@ rf
 rf
 rf
 rf
-EZ
+rf
 rf
 rf
 rf
@@ -29769,7 +29762,7 @@ jY
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -30222,7 +30215,7 @@ rf
 lq
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -30490,7 +30483,7 @@ rf
 rf
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -31263,7 +31256,7 @@ rf
 jY
 rf
 rf
-rf
+EZ
 jY
 rf
 rf
@@ -55269,7 +55262,7 @@ ux
 rf
 ux
 rf
-rf
+ux
 rf
 ux
 rf
@@ -55516,7 +55509,7 @@ rf
 rf
 rf
 rf
-ux
+rf
 tJ
 tJ
 tJ
@@ -55768,7 +55761,7 @@ rf
 rf
 rf
 rf
-rf
+ux
 tJ
 qJ
 mP
@@ -56274,13 +56267,13 @@ rf
 rf
 ux
 tJ
-wR
+Pe
 Pe
 xd
 Ux
 Bx
 tJ
-rf
+ux
 rf
 rf
 rf
@@ -56526,13 +56519,13 @@ rf
 CA
 rf
 tJ
-ux
+rf
 dR
 dR
 WL
 WL
 tJ
-ux
+rf
 rf
 rf
 rf
@@ -56776,7 +56769,7 @@ rf
 rf
 rf
 rf
-rf
+ux
 tJ
 rf
 dR
@@ -56784,7 +56777,7 @@ dR
 WL
 WL
 tJ
-rf
+ux
 rf
 rf
 rf
@@ -57030,9 +57023,9 @@ rf
 rf
 rf
 jJ
-rf
 ux
-wR
+rf
+Pe
 Tv
 QN
 tJ
@@ -57280,7 +57273,7 @@ tJ
 tJ
 rf
 zu
-rf
+ux
 tJ
 rf
 rf
@@ -57534,7 +57527,7 @@ rf
 CA
 rf
 tJ
-ux
+rf
 Pe
 Pe
 qa
@@ -57784,15 +57777,15 @@ rf
 jJ
 rf
 rf
-ux
-tJ
-wR
-Pe
-Pe
-qa
-qa
-tJ
 rf
+tJ
+Pe
+Pe
+Pe
+qa
+qa
+tJ
+ux
 rf
 rf
 rf
@@ -58036,7 +58029,7 @@ AU
 tJ
 rf
 rf
-rf
+ux
 tJ
 Pe
 qa
@@ -58044,7 +58037,7 @@ Kd
 WU
 qJ
 tJ
-ux
+rf
 rf
 rf
 XQ
@@ -58288,7 +58281,7 @@ tJ
 tJ
 rf
 rf
-ux
+rf
 tJ
 Tv
 DP
@@ -58296,7 +58289,7 @@ qa
 qJ
 Qk
 tJ
-rf
+ux
 zu
 rf
 rf
@@ -58540,7 +58533,7 @@ rf
 rf
 rf
 rf
-rf
+ux
 tJ
 tJ
 tJ
@@ -58793,11 +58786,11 @@ rf
 rf
 rf
 rf
-rf
 ux
 rf
 ux
 rf
+ux
 rf
 ux
 rf

@@ -153,16 +153,6 @@
 	)
 	related_stats = list(STAT_COG)
 
-/datum/craft_recipe/storage/backpack/militia
-	name = "blackshield backpack"
-	result = /obj/item/storage/backpack/militia
-	icon_state = "clothing"
-	steps = list(
-		list(/obj/item/storage/backpack/ironhammer, 1, "time"= 30),
-		list(QUALITY_CUTTING,5, "time" = 5),
-		list(QUALITY_ADHESIVE, 10, "time" = 5)
-	)
-
 /datum/craft_recipe/box
 	category = "Storage"
 	name = "box"

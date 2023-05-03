@@ -34,15 +34,3 @@
 	icon_state = "security"
 	slot = "armband"
 
-/obj/item/clothing/accessory/armband/militia
-	name = "blackshield armband"
-	desc = "An armband displaying the IFF stripes of Blackshield, signifying a position amongst their ranks."
-	icon_state = "blackshield"
-	slot = "armband"
-
-/obj/item/clothing/accessory/armband/corpsman
-	name = "corpsman armband"
-	desc = "A blue and white armband signifying a Corpsman position."
-	icon_state = "corpsman"
-	slot = "armband"
-

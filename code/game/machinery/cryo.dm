@@ -21,6 +21,8 @@
 
 	var/current_heat_capacity = 50
 	var/autoeject = FALSE
+	var/stopped_deathtimer = FALSE
+	var/existing_degradation
 
 /obj/machinery/atmospherics/unary/cryo_cell/New()
 	..()
@@ -230,6 +232,13 @@
 	if(occupant)
 		//if(occupant.stat == DEAD)
 			//return
+
+		if(ishuman(occupant) && !stopped_deathtimer)
+			var/mob/living/carbon/human/H = occupant
+			if(H.timeofdeath)
+				src.existing_degradation = world.time - H.timeofdeath
+				stopped_deathtimer = TRUE
+
 		occupant.bodytemperature += 2*(air_contents.temperature - occupant.bodytemperature)*current_heat_capacity/(current_heat_capacity + air_contents.heat_capacity())
 		occupant.bodytemperature = max(occupant.bodytemperature, air_contents.temperature) // this is so ugly i'm sorry for doing it i'll fix it later i promise
 		//occupant.stat = UNCONSCIOUS
@@ -280,6 +289,12 @@
 /obj/machinery/atmospherics/unary/cryo_cell/proc/go_out()
 	if(!( occupant ))
 		return
+	if(ishuman(occupant) && stopped_deathtimer)
+		var/mob/living/carbon/human/H = occupant
+		if(H.timeofdeath && src.existing_degradation)
+			H.timeofdeath = world.time - src.existing_degradation
+			stopped_deathtimer = FALSE
+
 	//for(var/obj/O in src)
 	//	O.loc = loc
 	if (occupant.client)

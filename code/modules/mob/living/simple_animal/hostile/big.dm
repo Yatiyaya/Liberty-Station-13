@@ -92,6 +92,64 @@
 	meat_amount = 8
 	leather_amount = 24 //The amount of leather sheets dropped.
 
+/mob/living/simple_animal/hostile/agape
+	name = "agape"
+	desc = "A ferocious white shaggy furred beast, lean and muscular it towers over you as a huge mouth licks over dagger sharp teeth."
+	icon = 'icons/mob/agape.dmi'
+	icon_state = "agape"
+	icon_living = "agape"
+	icon_rest = "agape_sleep"
+	icon_dead = "agape_dead"
+	icon_gib = "agape_gib"
+	speed = 18
+	move_to_delay = 2
+	turns_per_move = 2
+	vision_range = 12
+	aggro_vision_range = 12
+	environment_smash = 2
+	break_stuff_probability = 95
+	attacktext = "mauled"
+	faction = "agape"
+	sanity_damage = 3
+
+	mob_size = MOB_LARGE
+
+	maxHealth = 550
+	health = 550
+	melee_damage_lower = 35
+	melee_damage_upper = 40
+
+	armor = list(melee = 35, bullet = 30, energy = 25, bomb = 5, bio = 10, rad = 25)
+
+	old_x = -16
+	old_y = 0
+	default_pixel_x = -16
+	pixel_x = -16
+	pixel_y = 0
+	attack_sound = 'sound/weapons/deathclawattack.ogg'
+	meat_amount = 6
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/agape
+	can_burrow = FALSE
+	mob_size = 3
+	leather_amount = 16
+	bones_amount = 20
+	has_special_parts = TRUE
+	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE)
+
+/mob/living/simple_animal/hostile/agape/FindTarget()
+	. = ..()
+	if(.)
+		visible_emote("lets out a deafening roar and charges at [.]!")
+		playsound(src, 'sound/voice/deathclaw_roar.ogg', 200, 1, -3)
+
+/mob/living/simple_animal/hostile/agape/death(gibbed, deathmessage = "lets out a guttural snarl before it crumbles to the ground dead!")
+	walk_to(src,0)
+	movement_target = null
+	icon_state = icon_dead
+	density = FALSE
+	return ..(gibbed,deathmessage)
+
 /mob/living/simple_animal/hostile/panther
 	name = "panther"
 	desc = "Runtime's larger, less cuddly cousin."

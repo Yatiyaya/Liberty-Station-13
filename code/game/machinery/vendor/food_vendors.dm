@@ -1,5 +1,5 @@
 /obj/machinery/vending/boozeomat
-	name = "Booze-O-Mat"
+	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor"
 	desc = "A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one."
 	icon_state = "boozeomat"	//24(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	icon_deny = "boozeomat-deny"
@@ -47,8 +47,8 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/coffee
-	name = "Hot Coffee"
-	desc = "A vending machine which dispenses hot drinks."
+	name = "Pallas White Stallion Drinks Vendor"
+	desc = "A vending machine which dispenses hot drinks. Courtesy of Pallas White Stallion Corporation."
 	product_slogans = "Care for a cup of hot joe?;Care for a cup of coffee?;How about a pick-me-upper?;Want a nice tea?;I hope you ask me for a bloody cup o' tea...;Only the finest!"
 	product_ads = "Have a drink!;Drink up!;It's good for you!;Would you like a hot joe?;I'd kill for some coffee!;The best beans in the galaxy.;Only the finest brew for you.;Mmmm. Nothing like a coffee.;I like coffee, don't you?;Coffee helps you work!;Try some tea.;We hope you like the best!;Try our hot chocolate!"
 	icon_state = "coffee"
@@ -60,7 +60,6 @@
 					/obj/item/reagent_containers/food/drinks/h_chocolate = 5,
 					/obj/item/reagent_containers/food/drinks/tea/black = 5,
 					/obj/item/reagent_containers/food/drinks/tea/green = 5,
-					/obj/item/reagent_containers/food/drinks/dry_ramen/premade = 2,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10)
 	contraband = list(/obj/item/reagent_containers/food/drinks/ice = 5,
@@ -71,27 +70,26 @@
 					/obj/item/reagent_containers/food/drinks/h_chocolate = 15,
 					/obj/item/reagent_containers/food/condiment/pack/hotsauce = 3,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 5,
-					/obj/item/reagent_containers/food/condiment/pack/milk = 5,
-					/obj/item/reagent_containers/food/drinks/dry_ramen/premade = 100)
+					/obj/item/reagent_containers/food/condiment/pack/milk = 5)
 
 /obj/machinery/vending/coffee/postvend_effect()
 	playsound(loc, 'sound/machines/vending_coffee.ogg', 100, 1)
 	return
 
 /obj/machinery/vending/snack
-	name = "Getmore Chocolate Corp"
-	desc = "A snack machine courtesy of the Getmore Chocolate Corporation."
+	name = "Solarian Snack Reserve & Chocolate Corp Vendor"
+	desc = "A snack machine courtesy of the Solarian Snack Reserve & Chocolate Corporation."
 	product_slogans = "Try our new nougat bar!;Twice the calories for half the price!;You know you want it!;So good, try it!;Why not have a treat?;Better than Kitchen's food!"
 	product_ads = "The healthiest!;Award-winning chocolate bars!;Mmm! So good!;Have a snack.;Snacks are good for you!;Have some more Getmore!;Best quality snacks straight from mars.;We love chocolate!;Try our new jerky!;Have a treat!;Crunchy!"
 	icon_state = "snack"
 	products = list(/obj/item/reagent_containers/food/snacks/candy = 2,
-					/obj/item/reagent_containers/food/snacks/openable/gamerchips = 1,
 					/obj/item/reagent_containers/food/snacks/openable/chips = 2,
+					/obj/item/reagent_containers/food/snacks/openable/gamerchips = 1,
 					/obj/item/reagent_containers/food/snacks/candy/pistachios_pack = 1,
 					/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds = 1,
-					/obj/item/reagent_containers/food/snacks/openable/tastybread = 3,
-					/obj/item/reagent_containers/food/drinks/dry_ramen = 1,
+					/obj/item/reagent_containers/food/snacks/openable/tastybread = 2,
 					/obj/item/reagent_containers/food/snacks/sosjerky = 2,
+					/obj/item/reagent_containers/food/drinks/dry_ramen = 1,
 					/obj/item/reagent_containers/food/snacks/openable/no_raisin = 2,
 					/obj/item/reagent_containers/food/snacks/openable/spacetwinkie = 2,
 					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 2,
@@ -99,38 +97,37 @@
 					/obj/item/reagent_containers/food/snacks/candy_drop_blue = 2,
 					/obj/item/storage/fancy/dogtreats = 2,)
 	contraband = list(/obj/item/reagent_containers/food/snacks/openable/syndicake = 6)
-	prices = list(/obj/item/reagent_containers/food/snacks/candy = 20,
-					/obj/item/reagent_containers/food/drinks/dry_ramen = 25,
-					/obj/item/reagent_containers/food/snacks/openable/chips = 20,
-					/obj/item/reagent_containers/food/snacks/sosjerky = 25,
-					/obj/item/reagent_containers/food/snacks/openable/no_raisin = 20,
-					/obj/item/reagent_containers/food/snacks/openable/spacetwinkie = 20,
-					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 20,
-					/obj/item/reagent_containers/food/snacks/openable/tastybread = 25,
-					/obj/item/reagent_containers/food/snacks/openable/syndicake = 30,
+	prices = list(	/obj/item/reagent_containers/food/snacks/candy = 40,
+					/obj/item/reagent_containers/food/snacks/openable/chips = 60,
+					/obj/item/reagent_containers/food/snacks/openable/gamerchips = 80,
+					/obj/item/reagent_containers/food/snacks/openable/tastybread = 50,
+					/obj/item/reagent_containers/food/snacks/sosjerky = 60,
+					/obj/item/reagent_containers/food/drinks/dry_ramen = 100,
+					/obj/item/reagent_containers/food/snacks/openable/no_raisin = 50,
+					/obj/item/reagent_containers/food/snacks/openable/spacetwinkie = 50,
+					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 50,
 					/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds = 60,
 					/obj/item/reagent_containers/food/snacks/candy/pistachios_pack = 60,
-					/obj/item/reagent_containers/food/snacks/chocolatebar = 75,
-					/obj/item/reagent_containers/food/snacks/openable/gamerchips = 80,
+					/obj/item/reagent_containers/food/snacks/chocolatebar = 70,
 					/obj/item/reagent_containers/food/snacks/candy_drop_blue = 90,
-					/obj/item/storage/fancy/dogtreats = 125)
+					/obj/item/storage/fancy/dogtreats = 125,
+					/obj/item/reagent_containers/food/snacks/openable/syndicake = 100)
 
 /obj/machinery/vending/cola
-	name = "Robust Softdrinks"
-	desc = "A softdrink vendor provided by Lone Star Solutions, LLC."
+	name = "Luna Astradrinks Vendor"
+	desc = "A softdrink vendor provided by Luna Astradrinks Incorporated."
 	icon_state = "Cola_Machine"
-	product_slogans = "Robust Softdrinks: More robust than a toolbox to the head!;Operating heavy machinery? Robust Softdrinks has you covered!;Just to fill your sweet tooth needs!;Don't believe the reports, It doesn't have that much sugar!;Thirsty? Why not have cola!;Get your sugarwater here!;The taste of freedom!"
+	product_slogans = "Luna Astradrinks: More robust than a toolbox to the head!;Operating heavy machinery? Luna Astradrinks has you covered!;Just to fill your sweet tooth needs!;Don't believe the reports, It doesn't have that much sugar!;Thirsty? Why not have cola!;Get your sugarwater here!;The taste of freedom!"
 	product_ads = "Refreshing!;Hope you're thirsty!;Over 1 million drinks sold!;Thirsty? Why not have some cola?;Please, have a drink!;Drink up!;The best drinks in this colony.;Treat yourself to what you deserve!"
-	products = list(/obj/item/reagent_containers/food/drinks/cans/cola = 10,
-					/obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 10,
-					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 10,
-					/obj/item/reagent_containers/food/drinks/cans/starkist = 10,
-					/obj/item/reagent_containers/food/drinks/cans/space_up = 10,
-					/obj/item/reagent_containers/food/drinks/cans/iced_tea = 10,
-					/obj/item/reagent_containers/food/drinks/cans/grape_juice = 10,
-					/obj/item/reagent_containers/food/drinks/cans/waterbottle = 10,)
-	contraband = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 5,
-						/obj/item/reagent_containers/food/snacks/openable/liquidfood = 6)
+	products = list(/obj/item/reagent_containers/food/drinks/cans/cola = 5,
+					/obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 5,
+					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 5,
+					/obj/item/reagent_containers/food/drinks/cans/starkist = 5,
+					/obj/item/reagent_containers/food/drinks/cans/space_up = 5,
+					/obj/item/reagent_containers/food/drinks/cans/iced_tea = 5,
+					/obj/item/reagent_containers/food/drinks/cans/grape_juice = 5,
+					/obj/item/reagent_containers/food/drinks/cans/waterbottle = 5,)
+	contraband = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 3)
 	prices = list(/obj/item/reagent_containers/food/drinks/cans/cola = 20,
 					/obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 20,
 					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 20,
@@ -139,8 +136,7 @@
 					/obj/item/reagent_containers/food/drinks/cans/space_up = 20,
 					/obj/item/reagent_containers/food/drinks/cans/iced_tea = 20,
 					/obj/item/reagent_containers/food/drinks/cans/grape_juice = 20,
-					/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 25,
-					/obj/item/reagent_containers/food/snacks/openable/liquidfood = 30)
+					/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 30)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
 /obj/machinery/vending/cola/postvend_effect()
@@ -148,7 +144,7 @@
 	return
 
 /obj/machinery/vending/hydronutrients
-	name = "NutriMax"
+	name = "NutriMax Vendor"
 	desc = "A plant nutrients vendor."
 	product_slogans = "Aren't you glad you don't have to fertilize the natural way?;Now with 50% less stink!;Plants are people too!;150% of the Effects, 0% of the smell!;We all like plants, don't we?;Remember to Never Underestimate Technology.;Take the spray and ROBUST THOSE PESTS!;Save your plants today!;Your plants deserve only the most Robust chemicals!"
 	product_ads = "We like plants!;Don't you want some?;The greenest thumbs ever.;We like big plants.;Soft soil..."
@@ -165,7 +161,7 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/hydroseeds
-	name = "MegaSeed Servitor"
+	name = "MegaSeed Vendor"
 	desc = "When you need seeds fast!"
 	product_slogans = "This is where the seeds live, git you some!;Hands down the best seed selection on the colony!;Also certain mushroom varieties available, more for experts! Get certified today!;Seeds? We got you covered.;Remember: Glowshrooms are bad for you.;I'm legally advised to tell you that Nettles are poisonous."
 	product_ads = "We like plants!;Grow some crops!;Grow, baby, growww!;Aw h'yeah son!;Just like your ancestors!"
@@ -265,7 +261,7 @@
 
 
 /obj/machinery/vending/dinnerware
-	name = "Delta Dinnerware Express"
+	name = "Delta Dinnerware Express Vendor"
 	desc = "A kitchen and restaurant equipment vendor."
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these...;Need knives? Got you covered."
 	icon_state = "dinnerware"
@@ -320,7 +316,7 @@
 	always_open = TRUE
 
 /obj/machinery/vending/dinnerware/cost //So we can place these around and charge people
-	name = "Dinnerware Express"
+	name = "Consumer Delta Dinnerware Express Vendor"
 	desc = "A kitchen and restaurant equipment vendor."
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these...;Need knives? Got you covered."
 	icon_state = "dinnerware"
@@ -422,34 +418,43 @@
 	always_open = FALSE
 
 
-/obj/machinery/vending/sovietsoda
-	name = "Napitki Starogo Sveta"
-	desc = "A machine filled with odd and strange pre-solfed drinks. Made fresh in the colony."
-	icon_state = "sovietsoda"
-	product_slogans = "For a little bit of home.;Ethnic drinks made fresh in the lower colony!"
-	product_ads = "Need a strange drink? Tired of that space cola? Try one of our Ethnic drinks!;Fresh drinks, all home made in the colony.;Homemade drinks for people who want something special."
-	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 10,
-					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 8,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10)
+/obj/machinery/vending/citadel
+	name = "HexaOptimum Premium Drink Vendor"
+	desc = "A machine filled with odd pre-space era drinks, smells of benzin. Provided for by HexaOptimum."
+	icon_state = "citadel"
+	icon_vend = "citadel-vend"
+	icon_deny = "citadel-deny"
+	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
+	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
+	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,
+					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 4,
+					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 5)
+	contraband = list(
+					/obj/item/reagent_containers/food/drinks/cans/monster_red = 10,
+					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 10,
+					/obj/item/reagent_containers/food/drinks/cans/energy = 10
+					)
 	prices = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 30,
-					/obj/item/reagent_containers/food/drinks/cans/melonsoda =20,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10)
-	contraband = list(/obj/item/reagent_containers/food/drinks/drinkingglass/cola = 20)
+					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 20,
+					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10,
+					/obj/item/reagent_containers/food/drinks/cans/monster_red = 40,
+					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 40,
+					/obj/item/reagent_containers/food/drinks/cans/energy = 75)
+
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 	auto_price = FALSE
 
-/obj/machinery/vending/sovietsoda/postvend_effect()
+/obj/machinery/vending/citadel/postvend_effect()
 	playsound(loc, 'sound/machines/vending_coffee.ogg', 100, 1)
 	return
 
 /obj/machinery/vending/fitness
-	name = "SweatMAX"
+	name = "SW0L3 SweatMAX Vendor"
 	desc = "Fueled by your inner inadequacy!"
 	product_ads = "Keep working on those gains!;No pain, no gain!;Don't weight - buy today!"
 	icon_state = "fitness"
 	products = list(
 		/obj/item/reagent_containers/food/snacks/candy/proteinbar = 2,
-		/obj/item/reagent_containers/food/snacks/openable/liquidfood = 3,
 		/obj/item/reagent_containers/food/drinks/milk/small = 3,
 		/obj/item/reagent_containers/food/drinks/cocamilk/small = 3,
 		/obj/item/reagent_containers/food/drinks/redmilk/small = 3,
@@ -459,8 +464,7 @@
 		/obj/item/reagent_containers/food/snacks/candy/energybar = 2,
 		/obj/item/towel/random = 8)
 	prices = list(
-		/obj/item/reagent_containers/food/snacks/candy/proteinbar = 20,
-		/obj/item/reagent_containers/food/snacks/openable/liquidfood = 20,
+		/obj/item/reagent_containers/food/snacks/candy/proteinbar = 70,
 		/obj/item/reagent_containers/food/drinks/milk/small = 15,
 		/obj/item/reagent_containers/food/drinks/cocamilk/small = 40,
 		/obj/item/reagent_containers/food/drinks/redmilk/small = 40,
@@ -471,7 +475,7 @@
 		/obj/item/towel/random = 10)
 
 /obj/machinery/vending/drink_showcase
-	name = "Bar Cocktail Showcase"
+	name = "Bar Cocktail Showcase Vendor"
 	desc = "A vending machine to showcase cocktails."
 	icon_state = "showcase"
 	var/icon_fill = "showcase-fill"
@@ -498,7 +502,7 @@
 		add_overlay(image(icon, icon_fill))
 
 /obj/machinery/vending/plant_gene
-	name = "Eugene's Plant Genes"
+	name = "Eugene's Plant Genes Vendor"
 	desc = "A vendor selling data disks with individual plant genes."
 	product_slogans = "Keep your plants on!;Get back to your roots!;Don't leaf me!"
 	product_ads = "Seed for yourself!;Green!;OMG! Only Modified Genetically!"

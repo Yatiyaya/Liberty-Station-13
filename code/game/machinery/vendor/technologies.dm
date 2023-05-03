@@ -1,7 +1,7 @@
 // The vendor that allow colonists to buy Build-a-Drones kits.
 
 /obj/machinery/vending/build_a_drone
-	name = "Build-a-Drone Kit Vendor"
+	name = "PIRS Build-a-Drone Kit Vendor"
 	desc = "A vendor selling customized drones for a hefty price. All profits goes to the Phokorus Institute."
 	icon_state = "wallresearch"
 	density = FALSE

@@ -33,7 +33,7 @@
 			/obj/item/organ/external/robotic/serbian/l_leg,
 			/obj/item/organ/external/robotic/serbian/r_leg
 		),
-		"Blackmarket Blackshield" = list(
+		"Blackmarket Watch" = list(
 			/obj/item/organ/external/robotic/blackshield/l_arm,
 			/obj/item/organ/external/robotic/blackshield/r_arm,
 			/obj/item/organ/external/robotic/blackshield/l_leg,

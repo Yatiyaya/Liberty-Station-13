@@ -29,8 +29,8 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	init_recoil = RIFLE_RECOIL(1.1)
 	price_tag = 3000
 	icon = 'icons/obj/guns/projectile/gatvolver.dmi'
-	icon_state = "overlord"
-	item_state = "overlord"
+	icon_state = "overlord_blue"
+	item_state = "overlord_blue"
 	serial_type = "Mastercraft"
 
 /obj/item/gun/projectile/revolver/ranger/gatvolver/New()

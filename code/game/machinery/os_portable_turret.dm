@@ -16,7 +16,7 @@
 
 	// Targeting
 	var/should_target_players = TRUE			// TRUE targets players, FALSE targets superior animals (roaches, golems, and spiders)
-	var/firing_range = 8								// Starts firing just out of player sight
+	var/firing_range = 7								// Starts firing just out of player sight
 	var/returning_fire = FALSE					// Will attempt to fire at the nearest target when attacked and no one is in range
 	var/last_target								//last target fired at, prevents turrets from erratically firing at all valid targets in range
 
@@ -42,7 +42,7 @@
 /obj/machinery/power/os_turret/laser
 	icon_state = "os_laser"
 	circuit = /obj/item/circuitboard/os_turret/laser
-	firing_range = 10
+	firing_range = 7
 	projectile = /obj/item/projectile/beam/os_turret
 	number_of_shots = 3
 	time_between_shots = 0.3 SECONDS

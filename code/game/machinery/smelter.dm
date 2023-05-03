@@ -221,9 +221,9 @@
 		if(shard)
 			eject(shard, output_side)
 	eject(S, output_side)
-	S.reset_plane_and_layer()
+	if(shard)
+		eject(shard, output_side)
 	stored_material[material] -= ejected_amount
-
 
 /obj/machinery/smelter/proc/eject_all_material(material = null)
 	if(!material)

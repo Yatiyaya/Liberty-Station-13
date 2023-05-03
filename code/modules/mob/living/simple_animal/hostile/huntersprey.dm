@@ -59,7 +59,7 @@
 		new /obj/item/gun/projectile/boltgun/rosefield (src.loc)
 		new	/obj/item/ammo_magazine/rifle_75 (src.loc)
 		new /obj/item/ammo_magazine/ammobox/rifle_75 (src.loc)
-		new /obj/item/clothing/suit/space/void/SCAF/blackshield (src.loc)
+		new /obj/item/clothing/suit/space/void/SCAF (src.loc)
 		qdel(src)
 		return
 	if(chancedrop == 3)

@@ -843,11 +843,6 @@
 	icon_state = "blue_long"
 	initial_flooring = /decl/flooring/industrial/blue_slates_long
 
-/turf/simulated/floor/industrial/brown_slates_long
-	name = "brown slates"
-	icon_state = "brown_long"
-	initial_flooring = /decl/flooring/industrial/blue_slates_long
-
 /turf/simulated/floor/industrial/grey_slates
 	name = "grey slates"
 	icon_state = "grey"
@@ -880,7 +875,7 @@
 
 /turf/simulated/floor/industrial/green_large_slates
 	name = "large green slates"
-	icon_state = "black_large"
+	icon_state = "green_large"
 	initial_flooring = /decl/flooring/industrial/green_large_slates
 
 /turf/simulated/floor/industrial/white_large_slates
@@ -898,3 +893,176 @@
 	icon_state = "cafe_large"
 	initial_flooring = /decl/flooring/industrial/cafe_large
 
+//rusted
+/turf/simulated/floor/rusted
+	name = "rusted tiles"
+	icon = 'icons/turf/flooring/rusted.dmi'
+	icon_state = "tiles"
+	initial_flooring = /decl/flooring/rusted
+
+/turf/simulated/floor/rusted/tiles
+	name = "rusted tiles"
+	icon_state = "tiles"
+	initial_flooring = /decl/flooring/rusted/tiles
+
+/turf/simulated/floor/rusted/panels
+	name = "rusted paneling"
+	icon_state = "panels"
+	initial_flooring = /decl/flooring/rusted/panels
+
+/turf/simulated/floor/rusted/techfloor
+	name = "rusted floor"
+	icon_state = "techfloor"
+	initial_flooring = /decl/flooring/rusted/techfloor
+
+/turf/simulated/floor/rusted/techfloor_grid
+	name = "rusted floor"
+	icon_state = "techfloor_grid"
+	initial_flooring = /decl/flooring/rusted/techfloor_grid
+
+/turf/simulated/floor/rusted/brown_perforated
+	name = "rusted floor"
+	icon_state = "brown_perforated"
+	initial_flooring = /decl/flooring/rusted/brown_perforated
+
+/turf/simulated/floor/rusted/gray_perforated
+	name = "rusted floor"
+	icon_state = "gray_perforated"
+	initial_flooring = /decl/flooring/rusted/gray_perforated
+
+/turf/simulated/floor/rusted/cargo
+	name = "rusted floor"
+	icon_state = "cargo"
+	initial_flooring = /decl/flooring/rusted/cargo
+
+/turf/simulated/floor/rusted/brown_platform
+	name = "rusted brown floor"
+	icon_state = "brown_platform"
+	initial_flooring = /decl/flooring/rusted/brown_platform
+
+/turf/simulated/floor/rusted/gray_platform
+	name = "rusted gray floor"
+	icon_state = "gray_platform"
+	initial_flooring = /decl/flooring/rusted/gray_platform
+
+/turf/simulated/floor/rusted/danger
+	name = "rusted floor"
+	icon_state = "danger"
+	initial_flooring = /decl/flooring/rusted/danger
+
+/turf/simulated/floor/rusted/golden
+	name = "rusted golden tiles"
+	icon_state = "golden"
+	initial_flooring = /decl/flooring/rusted/golden
+
+/turf/simulated/floor/rusted/bluecorner
+	name = "rusted blue tiles"
+	icon_state = "bluecorner"
+	initial_flooring = /decl/flooring/rusted/bluecorner
+
+/turf/simulated/floor/rusted/orangecorner
+	name = "rusted orange tiles"
+	icon_state = "orangecorner"
+	initial_flooring = /decl/flooring/rusted/orangecorner
+
+/turf/simulated/floor/rusted/cyancorner
+	name = "rusted cyan tiles"
+	icon_state = "cyancorner"
+	initial_flooring = /decl/flooring/rusted/cyancorner
+
+/turf/simulated/floor/rusted/violetcorner
+	name = "rusted violet tiles"
+	icon_state = "violetcorner"
+	initial_flooring = /decl/flooring/rusted/violetcorner
+
+/turf/simulated/floor/rusted/monofloor
+	name = "rusted monofloor"
+	icon_state = "monofloor"
+	initial_flooring = /decl/flooring/rusted/monofloor
+
+//rusted 2nd set
+/turf/simulated/floor/rusted2
+	name = "rusted tiles"
+	icon = 'icons/turf/flooring/rusted2.dmi'
+	icon_state = "tiles"
+	initial_flooring = /decl/flooring/rusted
+
+/turf/simulated/floor/rusted2/tiles
+	name = "rusted tiles"
+	icon_state = "tiles"
+	initial_flooring = /decl/flooring/rusted/tiles
+
+/turf/simulated/floor/rusted2/panels
+	name = "rusted paneling"
+	icon_state = "panels"
+	initial_flooring = /decl/flooring/rusted/panels
+
+/turf/simulated/floor/rusted2/techfloor
+	name = "rusted floor"
+	icon_state = "techfloor"
+	initial_flooring = /decl/flooring/rusted/techfloor
+
+/turf/simulated/floor/rusted2/techfloor_grid
+	name = "rusted floor"
+	icon_state = "techfloor_grid"
+	initial_flooring = /decl/flooring/rusted/techfloor_grid
+
+/turf/simulated/floor/rusted2/brown_perforated
+	name = "rusted floor"
+	icon_state = "brown_perforated"
+	initial_flooring = /decl/flooring/rusted/brown_perforated
+
+/turf/simulated/floor/rusted2/gray_perforated
+	name = "rusted floor"
+	icon_state = "gray_perforated"
+	initial_flooring = /decl/flooring/rusted/gray_perforated
+
+/turf/simulated/floor/rusted2/cargo
+	name = "rusted floor"
+	icon_state = "cargo"
+	initial_flooring = /decl/flooring/rusted/cargo
+
+/turf/simulated/floor/rusted2/brown_platform
+	name = "rusted brown floor"
+	icon_state = "brown_platform"
+	initial_flooring = /decl/flooring/rusted/brown_platform
+
+/turf/simulated/floor/rusted2/gray_platform
+	name = "rusted gray floor"
+	icon_state = "gray_platform"
+	initial_flooring = /decl/flooring/rusted/gray_platform
+
+/turf/simulated/floor/rusted2/danger
+	name = "rusted floor"
+	icon_state = "danger"
+	initial_flooring = /decl/flooring/rusted/danger
+
+/turf/simulated/floor/rusted2/golden
+	name = "rusted golden tiles"
+	icon_state = "golden"
+	initial_flooring = /decl/flooring/rusted/golden
+
+/turf/simulated/floor/rusted2/bluecorner
+	name = "rusted blue tiles"
+	icon_state = "bluecorner"
+	initial_flooring = /decl/flooring/rusted/bluecorner
+
+/turf/simulated/floor/rusted2/orangecorner
+	name = "rusted orange tiles"
+	icon_state = "orangecorner"
+	initial_flooring = /decl/flooring/rusted/orangecorner
+
+/turf/simulated/floor/rusted2/cyancorner
+	name = "rusted cyan tiles"
+	icon_state = "cyancorner"
+	initial_flooring = /decl/flooring/rusted/cyancorner
+
+/turf/simulated/floor/rusted2/violetcorner
+	name = "rusted violet tiles"
+	icon_state = "violetcorner"
+	initial_flooring = /decl/flooring/rusted/violetcorner
+
+/turf/simulated/floor/rusted2/monofloor
+	name = "rusted monofloor"
+	icon_state = "monofloor"
+	initial_flooring = /decl/flooring/rusted/monofloor

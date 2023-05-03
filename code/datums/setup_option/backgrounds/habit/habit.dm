@@ -1,21 +1,3 @@
-/datum/category_item/setup_option/background/habit/herbivore
-	name = "Grass Devourer"
-	desc = "When your teacher said 'Eat your greens' you took it quite literally and only ate those from then onwards. \
-	Or perhaps you just didn't ever have access to proper meat or just maybe your choresterol got too high. \
-	Whichever the case, you are now after minor gene therapy more accustomed to vegetables and fruit leaving meat as undesirable for your body."
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR)
-	perks = list(PERK_HERBIVORE)
-
-/datum/category_item/setup_option/background/habit/carnivore
-	name = "Red Meat Enjoyer"
-	desc = "Steak, meatball, kebab, sausage, name it and you want it, the taste of meat is insepperable from your pallete.\
-	Like your ancestors you are running on pure diet of red meat, two cans of coffee and cold mug of beer.\
-	After a minor gene therapy to make this possibility however your body completely rejects any idea of processing plant-based foods."
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR)
-	perks = list(PERK_CARNIVORE)
-
 /datum/category_item/setup_option/background/habit/chainsmoker
 	name = "Terminal Smoker"
 	desc = "Nicotine is way of life, nicotine is love, nicotine is your lifeline, without it you wouldn't be whole.\
@@ -53,6 +35,16 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 	stat_modifiers = list(STAT_ROB = -5, STAT_COG = 10, STAT_BIO = 5)
+
+/datum/category_item/setup_option/background/habit/paper_worm
+	name = "Paper Worm"
+	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \
+			Coffee is your blood, your mind is corporate slogans, and personal life is nonexistent. \
+			But here you are, on a spaceship flying to hell. There is something more to you, something that may come to light later."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	stat_modifiers = list(STAT_ROB = -10, STAT_TGH = -10, STAT_BIO = -10, STAT_MEC = -10, STAT_VIG = -10, STAT_COG = -10)
+	perks = list(PERK_PAPER_WORM)
 
 /*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
