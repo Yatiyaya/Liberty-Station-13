@@ -9,7 +9,7 @@
 	max_amount = 10000
 	stacktype = /obj/item/stack/dinar
 	novariants = TRUE					// Skips base /obj/item/stack update_icon() checks
-	price_tag = 10						// 10-to-1 exchange rate with scrip
+	price_tag = 0						// Less than a 1-to-1 exchange rate with scrip.
 
 /obj/item/stack/dinar/update_icon()
 	switch(amount)
