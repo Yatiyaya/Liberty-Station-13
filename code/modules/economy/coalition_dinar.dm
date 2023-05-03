@@ -65,7 +65,7 @@
 
 /obj/item/stack/dinar/random
 	rand_min = 50
-	rand_max = 2500
+	rand_max = 1000
 
 /obj/item/stack/dinar/full
 	amount = 10000

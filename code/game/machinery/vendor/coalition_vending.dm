@@ -15,7 +15,6 @@
 	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
 
 /obj/machinery/vending/carvan/guns
-	desc = "A vendor of the One Star variety typical made by SD. This one sells firearms of the SR variety."
 
 	products = list(
 		/obj/item/gun/projectile/automatic/duty = 3,

@@ -1950,6 +1950,7 @@
 #include "code\modules\economy\ATM.dm"
 #include "code\modules\economy\cash.dm"
 #include "code\modules\economy\cash_register.dm"
+#include "code\modules\economy\coalition_dinar.dm"
 #include "code\modules\economy\economy_misc.dm"
 #include "code\modules\economy\EFTPOS.dm"
 #include "code\modules\economy\Events.dm"
