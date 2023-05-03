@@ -125,7 +125,7 @@
 	selection_color = "#dddddd"
 	alt_titles = list ("Sanitation Worker")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR_HAZARD //No longer part of church you don't need this boy
 	health_modifier = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 
