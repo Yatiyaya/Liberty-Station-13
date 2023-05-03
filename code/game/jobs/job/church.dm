@@ -71,7 +71,7 @@
 	selection_color = "#ecd37d"
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
-	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
+	wage = WAGE_PROFESSIONAL //Specialist
 	stat_modifiers = list(
 		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
 		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
@@ -110,7 +110,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
@@ -154,7 +154,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR_DUMB
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
