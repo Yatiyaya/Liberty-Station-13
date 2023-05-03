@@ -2,7 +2,7 @@
 // Should spawn in bag or in hand
 
 /datum/gear/armament
-	display_name = "Unloaded 'Clarissa' 9mm compact pistol"
+	display_name = "Unloaded \"Clarissa\" 9mm compact pistol"
 	path = /obj/item/gun/projectile/clarissa
 	sort_category = "Armament"
 	slot = slot_in_backpack
@@ -14,7 +14,7 @@
 	cost = 1
 
 /datum/gear/armament/detective
-	display_name = "Unloaded 'Pocket Prince' 9mm revolver"
+	display_name = "Unloaded \"Pocket Prince\" 9mm revolver"
 	path = /obj/item/gun/projectile/revolver/detective
 	cost = 2
 
