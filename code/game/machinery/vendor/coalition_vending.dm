@@ -2,7 +2,7 @@
 	name = "Car-Van Coalition Vendor"
 	desc = "An armory vendor sporting Car-Van and Coalition symbols across it. It appears to be rusted with time; probably an old model for a dropship of some sort."
 	icon_state = "carvan"
-	icon_vend = "vendor_printing"
+	icon_vend = "carvan-vending"
 	product_slogans = "For unity, order, and peace!;Pre-paid by the Pallas Coalition!;Arm up and protect your family!"
 	product_ads = "A fair selection of assault rifles!;Coalition certified space suits!;Firearms better than the Federation's!"
 	vendor_department = DEPARTMENT_SIMILACRUM
