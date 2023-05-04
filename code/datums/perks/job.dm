@@ -118,6 +118,12 @@
 	perk_shared_ability = PERK_SHARED_SEE_ILLEGAL_REAGENTS
 	icon_state = "paper"
 
+/datum/perk/job/common_sense
+	name = "Common Sense"
+	desc = "You know what basic chemicals look like, from cleaning to cooking as well as the basics common chemicals."
+	perk_shared_ability = PERK_SHARED_SEE_COMMON_REAGENTS
+	icon_state = "paper"
+
 /datum/perk/job/junkborn
 	name = "Expert Scavenger"
 	desc = "One man's trash is another man's salary. Removing a trash pile has a chance of revealing a valuable item nobody else would find."
