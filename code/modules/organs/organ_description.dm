@@ -201,7 +201,7 @@
 	default_bone_type = /obj/item/organ/internal/bone/slime
 
 ////SYNTHETIC////
-//CAPSA
+//PIRS
 /datum/organ_description/chest/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
@@ -331,39 +331,6 @@
 /datum/organ_description/leg/left/church_synthetic/full
 	additional_limb_parts = BP_L_LEG_EXTRA
 /datum/organ_description/leg/right/church_synthetic/full
-	additional_limb_parts = BP_R_LEG_EXTRA
-
-//Nashef
-/datum/organ_description/chest/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-/datum/organ_description/groin/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-/datum/organ_description/head/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-	functions = null
-
-/datum/organ_description/arm/left/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-/datum/organ_description/arm/right/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-/datum/organ_description/leg/left/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-/datum/organ_description/leg/right/nashef_synthetic
-	default_type = /obj/item/organ/external/robotic/nashef
-
-//"Full" Body part descriptions. Allows icons to overlay on hands & feet correctly.
-/datum/organ_description/arm/left/nashef_synthetic/full
-	additional_limb_parts = BP_L_ARM_EXTRA
-/datum/organ_description/arm/right/nashef_synthetic/full
-	additional_limb_parts = BP_R_ARM_EXTRA
-/datum/organ_description/leg/left/nashef_synthetic/full
-	additional_limb_parts = BP_L_LEG_EXTRA
-/datum/organ_description/leg/right/nashef_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
 

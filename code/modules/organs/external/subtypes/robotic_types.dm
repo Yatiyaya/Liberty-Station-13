@@ -1,51 +1,3 @@
-/obj/item/organ/external/robotic/bishop
-	name = "Bishop"
-	desc = "Prosthesis with white polymer casing with blue holo-displays."
-	force_icon = 'icons/mob/human_races/cyberlimbs/bishop.dmi'
-	model = "bishop"
-	price_tag = 200
-
-/obj/item/organ/external/robotic/hesphaistos
-	name = "Hesphaistos"
-	desc = "Prosthesis with militaristic black and green casing with gold stripes."
-	force_icon = 'icons/mob/human_races/cyberlimbs/hesphaistos.dmi'
-	model = "hesphaistos"
-	price_tag = 200
-
-/obj/item/organ/external/robotic/hesphaistos/athena
-	name = "Hesphaistos Athena"
-	desc = "Prosthesis with a militaristic black and green casing"
-	force_icon = 'icons/mob/human_races/cyberlimbs/hesphaistos_alt.dmi'
-	model = "hesphaistos_alt"
-
-/obj/item/organ/external/robotic/zenghu
-	name = "Zeng-Hu"
-	desc = "Prosthesis with rubbery fleshtone covering with visible seams."
-	force_icon = 'icons/mob/human_races/cyberlimbs/zenghu.dmi'
-	model = "zenghu"
-	price_tag = 200
-
-/obj/item/organ/external/robotic/xion
-	name = "Xion"
-	desc = "Prosthesis with minimalist black and red casing."
-	force_icon = 'icons/mob/human_races/cyberlimbs/xion.dmi'
-	model = "xion"
-	price_tag = 200
-
-/obj/item/organ/external/robotic/ward
-	name = "Ward Takehashi"
-	desc = "Sleek prosthesis with white casing."
-	force_icon = 'icons/mob/human_races/cyberlimbs/ward.dmi'
-	model = "ward"
-	price_tag = 200
-
-/obj/item/organ/external/robotic/ward/spirit
-	name = "Ward Takehashi Spirit"
-	desc = "Prosthesis with a sleek black and white polymer finish."
-	force_icon = 'icons/mob/human_races/cyberlimbs/spirit.dmi'
-	model = "spirit"
-	price_tag = 200
-
 //Character setup prostheses
 
 /obj/item/organ/external/robotic/asters
@@ -203,7 +155,7 @@ obj/item/organ/external/robotic/synthskin/groin
 
 // CAPSA
 /obj/item/organ/external/robotic/moebius
-	name = "\"CAPSA\""
+	name = "\"PIRS\""
 	desc = "Reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
@@ -369,36 +321,4 @@ obj/item/organ/external/robotic/synthskin/groin
 	default_description = /datum/organ_description/leg/left
 
 /obj/item/organ/external/robotic/one_star/r_leg
-	default_description = /datum/organ_description/leg/right
-
-// Nashef
-/obj/item/organ/external/robotic/nashef
-	name = "Nashef-Agunabi"
-	desc = "A robotic limb crafted from metallic hydrogen and gold"
-	force_icon = 'icons/mob/human_races/cyberlimbs/nashef-agunabi.dmi'
-	model = "nashef-agunabi"
-	armor_list = list(melee = 20, bullet = 20, energy = 35, bomb = 30, bio = 0, rad = 100)
-	matter = list(MATERIAL_HYDROGEN = 5, MATERIAL_GOLD = 4, MATERIAL_PLATINUM = 2)
-	max_damage = 70
-	min_broken_damage = 50
-	price_tag = 1500 //Still gold, plus R A R E.
-
-/obj/item/organ/external/robotic/nashef/torso
-	name = "\"Nashef-Agunabi\" Torso"
-	default_description = /datum/organ_description/chest
-
-/obj/item/organ/external/robotic/nashef/head
-	name = "\"Nashef-Agunabi\" Head"
-	default_description = /datum/organ_description/head
-
-/obj/item/organ/external/robotic/nashef/l_arm
-	default_description = /datum/organ_description/arm/left
-
-/obj/item/organ/external/robotic/nashef/r_arm
-	default_description = /datum/organ_description/arm/right
-
-/obj/item/organ/external/robotic/nashef/l_leg
-	default_description = /datum/organ_description/leg/left
-
-/obj/item/organ/external/robotic/nashef/r_leg
 	default_description = /datum/organ_description/leg/right

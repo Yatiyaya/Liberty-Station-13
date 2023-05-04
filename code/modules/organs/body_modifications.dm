@@ -145,41 +145,6 @@ var/global/list/modifications_types = list(
 /datum/body_modification/limb/prosthesis/get_mob_icon(organ, body_build, color, gender, species)
 	return new/icon(icon, "[organ][gender == FEMALE ? "_f" : "_m"][body_build]")
 
-/datum/body_modification/limb/prosthesis/bishop
-	id = "prosthesis_bishop"
-	replace_limb = /obj/item/organ/external/robotic/bishop
-	icon = 'icons/mob/human_races/cyberlimbs/bishop.dmi'
-
-/datum/body_modification/limb/prosthesis/hesphaistos
-	id = "prosthesis_hesphaistos"
-	replace_limb = /obj/item/organ/external/robotic/hesphaistos
-	icon = 'icons/mob/human_races/cyberlimbs/hesphaistos.dmi'
-
-/datum/body_modification/limb/prosthesis/hesphaistos/alt
-	id = "prosthesis_hesphaistos_alt"
-	replace_limb = /obj/item/organ/external/robotic/hesphaistos/athena
-	icon = 'icons/mob/human_races/cyberlimbs/hesphaistos_alt.dmi'
-
-/datum/body_modification/limb/prosthesis/zenghu
-	id = "prosthesis_zenghu"
-	replace_limb = /obj/item/organ/external/robotic/zenghu
-	icon = 'icons/mob/human_races/cyberlimbs/zenghu.dmi'
-
-/datum/body_modification/limb/prosthesis/xion
-	id = "prosthesis_xion"
-	replace_limb = /obj/item/organ/external/robotic/xion
-	icon = 'icons/mob/human_races/cyberlimbs/xion.dmi'
-
-/datum/body_modification/limb/prosthesis/ward
-	id = "ward"
-	replace_limb = /obj/item/organ/external/robotic/ward
-	icon = 'icons/mob/human_races/cyberlimbs/ward.dmi'
-
-/datum/body_modification/limb/prosthesis/ward/spirit
-	id = "prosthesis_spirit"
-	replace_limb = /obj/item/organ/external/robotic/ward/spirit
-	icon = 'icons/mob/human_races/cyberlimbs/spirit.dmi'
-
 /datum/body_modification/limb/prosthesis/asters
 	id = "prosthesis_asters"
 	replace_limb = /obj/item/organ/external/robotic/asters
@@ -221,7 +186,7 @@ var/global/list/modifications_types = list(
 	replace_limb = /obj/item/organ/external/robotic/moebius
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
-	department_specific = list(DEPARTMENT_MEDICAL, DEPARTMENT_SCIENCE)
+	department_specific = list(DEPARTMENT_SCIENCE)
 
 /datum/body_modification/limb/prosthesis/blackshield
 	id = "prosthesis_blackshield"
