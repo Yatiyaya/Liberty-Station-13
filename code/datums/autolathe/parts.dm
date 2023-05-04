@@ -152,7 +152,7 @@
 /datum/design/autolathe/excelsior/manipulator
 	name = "excelsior manipulator"
 	build_path = /obj/item/stock_parts/manipulator/excelsior
-
+/*
 /datum/design/autolathe/prosthesis/excelsior/l_arm
 	build_path = /obj/item/organ/external/robotic/excelsior/l_arm
 
@@ -173,7 +173,7 @@
 
 /datum/design/autolathe/prosthesis/excelsior/head
 	build_path = /obj/item/organ/external/robotic/excelsior/head
-
+*/
 //Similacrum Robotics
 
 /datum/design/autolathe/part/similacrum/ai

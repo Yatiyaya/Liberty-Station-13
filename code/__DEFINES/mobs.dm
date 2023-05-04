@@ -253,7 +253,7 @@
 #define BP_L_HAND "l_hand"
 #define BP_R_HAND "r_hand"
 #define BP_HEAD   "head"
-#define BP_CHEST  "torso"
+#define BP_CHEST  "chest"
 #define BP_TORSO  "torso"
 #define BP_BACK   "back"
 #define BP_GROIN  "groin"

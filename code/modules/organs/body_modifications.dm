@@ -1,6 +1,6 @@
 var/global/list/body_modifications = list()
 var/global/list/modifications_types = list(
-	BP_CHEST = "",  BP_BACK = "", BP_HEAD = "",   BP_GROIN = "",
+	BP_CHEST = "",  "chest2" = "", BP_HEAD = "",   BP_GROIN = "",
 	BP_L_ARM  = "", BP_R_ARM  = "", BP_L_LEG  = "", BP_R_LEG  = "",
 	OP_HEART  = "", OP_LUNGS  = "", OP_LIVER  = "", OP_EYES   = "",
 	OP_KIDNEY_LEFT = "", OP_KIDNEY_RIGHT = "" , OP_STOMACH = "", BP_BRAIN = ""
@@ -33,9 +33,9 @@ var/global/list/modifications_types = list(
 	var/id = ""								// For savefile. Must be unique.
 	var/desc = ""							// Description.
 	var/list/body_parts = list(				// For sorting'n'selection optimization.
-		BP_CHEST, BP_BACK, BP_HEAD, BP_GROIN, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG,\
+		BP_CHEST, "chest2", BP_HEAD, BP_GROIN, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG,\
 		OP_HEART, OP_LUNGS, OP_LIVER, BP_BRAIN, OP_EYES, OP_KIDNEY_LEFT, OP_KIDNEY_RIGHT, OP_STOMACH)
-	var/list/allowed_species = list("Human")// Species restriction.
+	var/list/allowed_species = list(SPECIES_HUMAN)// Species restriction.
 	var/replace_limb = null					// To draw usual limb or not.
 	var/mob_icon = ""
 	var/icon/icon = 'icons/mob/human_races/body_modification.dmi'
@@ -151,12 +151,6 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/asters.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
-/datum/body_modification/limb/prosthesis/serbian
-	id = "prosthesis_serbian"
-	replace_limb = /obj/item/organ/external/robotic/serbian
-	icon = 'icons/mob/human_races/cyberlimbs/serbian.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-
 /datum/body_modification/limb/prosthesis/frozen_star
 	id = "prosthesis_frozen_star"
 	replace_limb = /obj/item/organ/external/robotic/frozen_star
@@ -175,25 +169,12 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
-/datum/body_modification/limb/prosthesis/synthskin
-	id = "prosthesis_full_body_prosthetic"
-	replace_limb = /obj/item/organ/external/robotic/synthskin
-	icon = 'icons/mob/human_races/cyberlimbs/fbp.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-
 /datum/body_modification/limb/prosthesis/moebius
 	id = "prosthesis_moebius"
 	replace_limb = /obj/item/organ/external/robotic/moebius
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	department_specific = list(DEPARTMENT_SCIENCE)
-
-/datum/body_modification/limb/prosthesis/blackshield
-	id = "prosthesis_blackshield"
-	replace_limb = /obj/item/organ/external/robotic/blackshield
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-	icon = 'icons/mob/human_races/cyberlimbs/blackshield.dmi'
-	department_specific = list(DEPARTMENT_SECURITY)
 
 /datum/body_modification/limb/prosthesis/church
 	id = "prosthesis_church"
