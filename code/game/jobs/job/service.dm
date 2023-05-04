@@ -42,8 +42,8 @@
 	department = DEPARTMENT_SERVICE
 	department_flag = SERVICE
 	faction = MAP_FACTION
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Club Manager"
 	difficulty = "Easy."
 	alt_titles = list("Hired Muscle")
