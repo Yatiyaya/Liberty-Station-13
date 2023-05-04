@@ -1,5 +1,5 @@
 /datum/craft_recipe/guild
-	category = "Guild"
+	category = "Terra-Therma"
 	time = 100
 	related_stats = list(STAT_MEC)
 	requiredPerk = PERK_HANDYMAN
