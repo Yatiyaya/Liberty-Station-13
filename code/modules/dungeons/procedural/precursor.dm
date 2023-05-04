@@ -157,7 +157,7 @@ var/turf/portal_turf = null
 
 		generate.setArea(locate(05, 27, z), locate(140, 171, z)) //actual dungeon area but not near the east wall (stops connection to the starter room)
 		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/large))
-		generate.setNumRooms(6) // 6 main rooms that we don't duplicate. Need miniumum of 6 before I can finish the pull code.
+		generate.setNumRooms(6) // 6 main rooms that we don't duplicate.
 		generate.setRoomMinSize(10)
 		generate.setRoomMaxSize(10)
 		generate.setExtraPaths(0)
