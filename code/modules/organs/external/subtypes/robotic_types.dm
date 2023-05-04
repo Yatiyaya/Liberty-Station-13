@@ -1,70 +1,8 @@
-//Character setup prostheses
+///////////////////////
+/* General FBP limbs */
+///////////////////////
 
-/obj/item/organ/external/robotic/asters
-	name = "Skylight \"Movement Lock\""
-	desc = "A generic gray prostesis for everyday use."
-	force_icon = 'icons/mob/human_races/cyberlimbs/asters.dmi' //Sprites were done by Kirov on request
-	model = "asters"
-	price_tag = 300
-
-/obj/item/organ/external/robotic/serbian
-	name = "\"Voidwolf Arms\""
-	desc = "A battle hardened green and brown prosthesis rebranded several times."
-	force_icon = 'icons/mob/human_races/cyberlimbs/serbian.dmi' //Sprites were done by Kirov on request
-	model = "serbian"
-	price_tag = 400
-
-/obj/item/organ/external/robotic/frozen_star
-	name = "\"HexaOptimum Augments\"" //We got no frozen star boyo
-	desc = "A tactical \"Holland & Sullivan\" blue and gray prosthesis for dangerous environment."
-	force_icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
-	model = "frozen_star"
-
-/obj/item/organ/external/robotic/frozen_star/l_arm
-	default_description = /datum/organ_description/arm/left
-
-/obj/item/organ/external/robotic/frozen_star/r_arm
-	default_description = /datum/organ_description/arm/right
-
-/obj/item/organ/external/robotic/frozen_star/l_leg
-	default_description = /datum/organ_description/leg/left
-
-/obj/item/organ/external/robotic/frozen_star/r_leg
-	default_description = /datum/organ_description/leg/right
-
-// Terra-Therma Worker's Union
-/obj/item/organ/external/robotic/technomancer
-	name = "Terra-Therma Worker's Union \"Homebrew\""
-	desc = "Terra-Therma Worker's Union \"branded\" \"functional\" prosthesis."
-	force_icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi' //Sprites were done by Kirov on request
-	model = "technomancer"
-	price_tag = 300
-
-/obj/item/organ/external/robotic/technomancer/l_arm
-	default_description = /datum/organ_description/arm/left
-
-/obj/item/organ/external/robotic/technomancer/r_arm
-	default_description = /datum/organ_description/arm/right
-
-/obj/item/organ/external/robotic/technomancer/l_leg
-	default_description = /datum/organ_description/leg/left
-
-/obj/item/organ/external/robotic/technomancer/r_leg
-	default_description = /datum/organ_description/leg/right
-
-/obj/item/organ/external/robotic/technomancer/groin
-	default_description = /datum/organ_description/groin
-	max_damage = 200
-
-/obj/item/organ/external/robotic/technomancer/torso
-	default_description = /datum/organ_description/chest
-	max_damage = 200
-
-/obj/item/organ/external/robotic/technomancer/head
-	default_description = /datum/organ_description/head
-	max_damage = 200
-
-// Junktech
+// Junktech - Full Body
 /obj/item/organ/external/robotic/junktech
 	name = "\"Junktech\""
 	desc = "Custom tooled and held together by hope and duct tape."
@@ -88,16 +26,124 @@
 /obj/item/organ/external/robotic/junktech/r_leg
 	default_description = /datum/organ_description/leg/right
 
-/obj/item/organ/external/robotic/makeshift/groin
+/obj/item/organ/external/robotic/junktech/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/makeshift/chest
+/obj/item/organ/external/robotic/junktech/chest
 	default_description = /datum/organ_description/chest
 
-// PIRS
+/obj/item/organ/external/robotic/junktech/head
+	default_description = /datum/organ_description/chest
+
+//Generic #1 - Full Body
+/obj/item/organ/external/robotic/asters
+	name = "\"Movement Lock\""
+	desc = "A generic gray prostesis for everyday use."
+	force_icon = 'icons/mob/human_races/cyberlimbs/asters.dmi' //Sprites were done by Kirov on request
+	model = "asters"
+	price_tag = 300
+
+//Generic #2 - Full Body
+/obj/item/organ/external/robotic/serbian
+	name = "\"Voidwolf Arms\""
+	desc = "A battle hardened green and brown prosthesis rebranded several times."
+	force_icon = 'icons/mob/human_races/cyberlimbs/serbian.dmi' //Sprites were done by Kirov on request
+	model = "serbian"
+	price_tag = 400
+
+//Generic #3 - Full Body
+/obj/item/organ/external/robotic/frozen_star
+	name = "\"HexaOptimum Augments\"" //We got no frozen star boyo
+	desc = "A tactical \"Citadel\" blue and gray prosthesis for dangerous environment."
+	force_icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
+	model = "frozen_star"
+
+/obj/item/organ/external/robotic/frozen_star/l_arm
+	default_description = /datum/organ_description/arm/left
+
+/obj/item/organ/external/robotic/frozen_star/r_arm
+	default_description = /datum/organ_description/arm/right
+
+/obj/item/organ/external/robotic/frozen_star/l_leg
+	default_description = /datum/organ_description/leg/left
+
+/obj/item/organ/external/robotic/frozen_star/r_leg
+	default_description = /datum/organ_description/leg/right
+
+/obj/item/organ/external/robotic/frozen_star/groin
+	default_description = /datum/organ_description/groin
+
+/obj/item/organ/external/robotic/frozen_star/chest
+	default_description = /datum/organ_description/chest
+
+/obj/item/organ/external/robotic/frozen_star/head
+	default_description = /datum/organ_description/chest
+
+//Astrakhan - Full Body
+/obj/item/organ/external/robotic/excelsior
+	name = "\"Astrakhan T-70\""
+	desc = "A heavy duty combat prosthetic made only for the most loyal citizens."
+	force_icon = 'icons/mob/human_races/cyberlimbs/excelsior.dmi'
+	model = "excelsior"
+
+/obj/item/organ/external/robotic/excelsior/l_arm
+	default_description = /datum/organ_description/arm/left
+
+/obj/item/organ/external/robotic/excelsior/r_arm
+	default_description = /datum/organ_description/arm/right
+
+/obj/item/organ/external/robotic/excelsior/l_leg
+	default_description = /datum/organ_description/leg/left
+
+/obj/item/organ/external/robotic/excelsior/r_leg
+	default_description = /datum/organ_description/leg/right
+
+/obj/item/organ/external/robotic/excelsior/groin
+	default_description = /datum/organ_description/groin
+
+/obj/item/organ/external/robotic/excelsior/chest
+	default_description = /datum/organ_description/chest
+
+/obj/item/organ/external/robotic/excelsior/head
+	default_description = /datum/organ_description/head
+
+////////////////////////////
+/* Departmental FBP limbs */
+////////////////////////////
+
+// Terra-Therma Worker's Union - Full Body
+/obj/item/organ/external/robotic/technomancer
+	name = "Terra-Therma Worker's Union \"Homebrew\""
+	desc = "Terra-Therma Worker's Union \"branded\" \"functional\" prosthesis."
+	force_icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi' //Sprites were done by Kirov on request
+	model = "technomancer"
+	price_tag = 300
+
+/obj/item/organ/external/robotic/technomancer/l_arm
+	default_description = /datum/organ_description/arm/left
+
+/obj/item/organ/external/robotic/technomancer/r_arm
+	default_description = /datum/organ_description/arm/right
+
+/obj/item/organ/external/robotic/technomancer/l_leg
+	default_description = /datum/organ_description/leg/left
+
+/obj/item/organ/external/robotic/technomancer/r_leg
+	default_description = /datum/organ_description/leg/right
+
+/obj/item/organ/external/robotic/technomancer/groin
+	default_description = /datum/organ_description/groin
+
+/obj/item/organ/external/robotic/technomancer/torso
+	default_description = /datum/organ_description/chest
+
+/obj/item/organ/external/robotic/technomancer/head
+	default_description = /datum/organ_description/head
+
+// PIRS - Full Body
 /obj/item/organ/external/robotic/moebius
 	name = "\"PIRS\""
-	desc = "Reinforced purple and white prosthesis designed for space exploration and light combat."
+	desc = "A reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
@@ -121,19 +167,16 @@
 
 /obj/item/organ/external/robotic/moebius/groin
 	default_description = /datum/organ_description/groin
-	max_damage = 200
 
 /obj/item/organ/external/robotic/moebius/torso
 	default_description = /datum/organ_description/chest
-	max_damage = 200
 
 /obj/item/organ/external/robotic/moebius/head
 	default_description = /datum/organ_description/head
-	max_damage = 200
 
-// Church of the Bonfire
+// Custodians of the Bonfire - Full Body
 /obj/item/organ/external/robotic/church
-	name = "\"Bonfire\""
+	name = "\"Emberblaze\""
 	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
@@ -154,17 +197,14 @@
 
 /obj/item/organ/external/robotic/church/groin
 	default_description = /datum/organ_description/groin
-	max_damage = 200
 
 /obj/item/organ/external/robotic/church/torso
 	default_description = /datum/organ_description/chest
-	max_damage = 200
 
 /obj/item/organ/external/robotic/church/head
 	default_description = /datum/organ_description/head
-	max_damage = 200
 
-// Similacrum
+// Similacrum - Only limbs
 /obj/item/organ/external/robotic/one_star
 	name = "Similacrum"
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."

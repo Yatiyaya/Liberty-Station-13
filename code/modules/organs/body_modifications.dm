@@ -145,6 +145,14 @@ var/global/list/modifications_types = list(
 /datum/body_modification/limb/prosthesis/get_mob_icon(organ, body_build, color, gender, species)
 	return new/icon(icon, "[organ][gender == FEMALE ? "_f" : "_m"][body_build]")
 
+//Generico
+
+/datum/body_modification/limb/prosthesis/junktech
+	id = "prosthesis_ghetto"
+	replace_limb = /obj/item/organ/external/robotic/junktech
+	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
 /datum/body_modification/limb/prosthesis/asters
 	id = "prosthesis_asters"
 	replace_limb = /obj/item/organ/external/robotic/asters
@@ -157,17 +165,26 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
+/datum/body_modification/limb/prosthesis/serbian
+	id = "prosthesis_serbian"
+	replace_limb = /obj/item/organ/external/robotic/serbian
+	icon = 'icons/mob/human_races/cyberlimbs/serbian.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
+/datum/body_modification/limb/prosthesis/excelsior
+	id = "prosthesis_excelsior"
+	replace_limb = /obj/item/organ/external/robotic/excelsior
+	icon = 'icons/mob/human_races/cyberlimbs/excelsior.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
+//Departments
+
 /datum/body_modification/limb/prosthesis/technomancer
 	id = "prosthesis_technomancer"
 	replace_limb = /obj/item/organ/external/robotic/technomancer
 	icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-
-/datum/body_modification/limb/prosthesis/junktech
-	id = "prosthesis_ghetto"
-	replace_limb = /obj/item/organ/external/robotic/junktech
-	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+	department_specific = list(DEPARTMENT_ENGINEERING)
 
 /datum/body_modification/limb/prosthesis/moebius
 	id = "prosthesis_moebius"
@@ -181,6 +198,7 @@ var/global/list/modifications_types = list(
 	replace_limb = /obj/item/organ/external/robotic/church
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 	icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
+	department_specific = list(DEPARTMENT_CHURCH)
 
 /datum/body_modification/limb/mutation/New()
 	short_name = "M: [name]"
