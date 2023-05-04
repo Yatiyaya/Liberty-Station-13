@@ -205,8 +205,6 @@
 /datum/organ_description/chest/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
-
-
 /datum/organ_description/groin/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius
 
