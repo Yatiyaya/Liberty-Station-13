@@ -56637,6 +56637,7 @@
 /area/liberty/engineering/atmos/storage)
 "pyC" = (
 /obj/machinery/light,
+/obj/machinery/space_heater,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "pyO" = (
@@ -64861,6 +64862,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1west)
+"rHW" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/bookcase,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/quartermaster/hangarsupply)
 "rIe" = (
 /obj/structure/closet/secure_closet/personal/security,
 /obj/effect/floor_decal/industrial/hatch,
@@ -84448,6 +84454,11 @@
 /area/liberty/security{
 	name = "Security Training"
 	})
+"wVQ" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/bookcase/guncase,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/quartermaster/hangarsupply)
 "wVT" = (
 /obj/machinery/computer/arcade,
 /obj/machinery/camera/network/prison,
@@ -110577,7 +110588,7 @@ sVF
 vtD
 lVa
 gnH
-vtD
+rHW
 mTN
 ija
 sZN
@@ -110779,7 +110790,7 @@ sVF
 vtD
 nNy
 sSn
-vtD
+wVQ
 mTN
 rhH
 fCi
