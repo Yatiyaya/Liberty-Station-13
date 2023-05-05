@@ -42,13 +42,13 @@
 	department = DEPARTMENT_SERVICE
 	department_flag = SERVICE
 	faction = MAP_FACTION
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Club Manager"
 	difficulty = "Easy."
-	alt_titles = list("Hired Muscle")
+	alt_titles = list("Sales Technician", "Trade Router", "Smuggler")
 	selection_color = "#dddddd"
-	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
+	access = list(access_cargo, access_bar)
 	initial_balance = 750
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
 	stat_modifiers = list(
@@ -86,7 +86,7 @@
 	alt_titles = list("Bartender", "Chef", "Gardener")
 	selection_color = "#dddddd"
 	health_modifier = -10
-	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen, access_cargo)
+	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
 	initial_balance = 750
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
 
