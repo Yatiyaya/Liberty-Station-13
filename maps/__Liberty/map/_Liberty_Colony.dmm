@@ -8906,6 +8906,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/hut_cell2)
 "cqv" = (
 /obj/machinery/door/blast/regular/open{
