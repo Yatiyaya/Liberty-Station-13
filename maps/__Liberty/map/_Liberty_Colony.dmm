@@ -13477,7 +13477,7 @@
 "dzG" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Front Desk";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -19508,7 +19508,7 @@
 "flG" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Bay";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -22961,7 +22961,7 @@
 "ggF" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Bay";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -55384,7 +55384,7 @@
 "peD" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Maintenance";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -63816,7 +63816,7 @@
 "rrp" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Bay";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -65715,7 +65715,7 @@
 "rSW" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Disposals";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -68919,7 +68919,7 @@
 "sGs" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Disposals";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -69230,7 +69230,7 @@
 "sKQ" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Maintenance";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -69525,7 +69525,7 @@
 "sPv" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Bay";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -74437,7 +74437,7 @@
 "ugz" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Maintenance";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -75905,7 +75905,7 @@
 "uAh" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Front Desk";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -84751,8 +84751,8 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "wYb" = (
 /obj/machinery/door/airlock/glass_mining{
-	name = "Cargo Front Desk";
-	req_one_access = list(50,48,26)
+	name = "Cargo Bay";
+	req_one_access = list(50,26)
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -89254,7 +89254,7 @@
 "yhx" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Maintenance";
-	req_one_access = list(50,48,26)
+	req_one_access = list(50,26)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
