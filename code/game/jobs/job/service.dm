@@ -20,7 +20,7 @@
 		STAT_VIG = 15,
 	)
 
-	perks = list(PERK_MARKET_PROF, PERK_CLUB)
+	perks = list(PERK_MARKET_PROF, PERK_CLUB, PERK_COMMON_SENSE)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/clubmanager //Re-using this.
 	description = "The Bartender runs the colony bar, providing colonists with drinks and entertainment.<br>\
@@ -56,7 +56,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_MARKET_PROF, PERK_CLUB)
+	perks = list(PERK_MARKET_PROF, PERK_CLUB, PERK_COMMON_SENSE)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/fixer
 	description = "The Fixer looks over the club, ensuring nobody skips on their bill or gets too handsy.<br>\
@@ -90,7 +90,7 @@
 	initial_balance = 750
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
 
-	perks = list(PERK_CLUB, PERK_CHEF)
+	perks = list(PERK_CLUB, PERK_CHEF, PERK_COMMON_SENSE)
 
 	stat_modifiers = list(
 		STAT_ROB = 10,
@@ -129,7 +129,7 @@
 	health_modifier = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 
-	perks = list(PERK_JINGLE_JANGLE, PERK_NEAT)
+	perks = list(PERK_JINGLE_JANGLE, PERK_NEAT, PERK_COMMON_SENSE)
 
 	stat_modifiers = list(
 		STAT_ROB = 15,

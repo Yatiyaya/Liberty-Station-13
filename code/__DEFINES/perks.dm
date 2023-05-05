@@ -62,6 +62,7 @@
 #define PERK_NEAT /datum/perk/job/neat
 #define PERK_CHEF /datum/perk/foodappraise
 #define PERK_CLUB /datum/perk/job/club
+#define PERK_COMMON_SENSE /datum/perk/job/common_sense
 
 // Military
 #define PERK_CODESPEAK /datum/perk/job/codespeak
