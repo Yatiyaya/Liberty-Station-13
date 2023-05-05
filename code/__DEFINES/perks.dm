@@ -20,7 +20,6 @@
 #define PERK_CUBAN_DELIGHT /datum/perk/background/cuban_delight
 #define PERK_MEDICAL_EXPERT /datum/perk/background/medicalexpertise
 #define PERK_KLUTZ /datum/perk/background/klutz
-#define PERK_MARKET_PROF /datum/perk/background/market_prof
 
 //Sanity
 #define PERK_VETERAN /datum/perk/background/veteran
@@ -58,6 +57,8 @@
 #define PERK_NEAT /datum/perk/job/neat
 #define PERK_CHEF /datum/perk/foodappraise
 #define PERK_CLUB /datum/perk/job/club
+#define PERK_COMMON_SENSE /datum/perk/job/common_sense
+#define PERK_MARKET_PROF /datum/perk/background/market_prof
 
 // Military
 #define PERK_CODESPEAK /datum/perk/job/codespeak
