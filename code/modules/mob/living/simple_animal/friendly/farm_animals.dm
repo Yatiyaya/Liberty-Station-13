@@ -353,7 +353,7 @@ var/global/chicken_count = 0
 
 /mob/living/simple_animal/pig/hog
 	name = "mycologist hog"
-	desc = "The result of crossing genetics of two into one! this breed of docile sus genus can asexual reproduction when fed mushrooms, raised chiefly for its meat."
+	desc = "The result of crossing genetics, two into one! this breed of docile sus genus can perform asexual reproduction when fed mushrooms, raised chiefly for its meat."
 	icon_state = "pighog"
 
 /mob/living/simple_animal/pig/hog/attackby(var/obj/item/O as obj, var/mob/user as mob)
