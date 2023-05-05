@@ -444,6 +444,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/landmark/join/start/enkindled,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "ahs" = (
@@ -1900,6 +1901,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "aBC" = (
@@ -2095,6 +2097,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/obj/landmark/join/start/clubworker,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
 "aEH" = (
@@ -3637,9 +3640,9 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/security/prisoncells)
 "aXH" = (
-/obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/tool/multitool,
+/obj/structure/table/woodentable,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "aYa" = (
@@ -5705,6 +5708,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
+"bBM" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/enkindled,
+/turf/simulated/floor/tiled/dark/golden,
+/area/liberty/bonfire/office)
 "bBP" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
@@ -6514,6 +6527,10 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1west)
+"bNu" = (
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/crew_quarters/toilet/public)
 "bNG" = (
 /obj/structure/jtb_pillar,
 /obj/effect/decal/cleanable/dirt,
@@ -6818,6 +6835,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/hangarsupply)
 "bRp" = (
@@ -7209,6 +7227,7 @@
 "bVt" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/medic,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/chemistry)
 "bVu" = (
@@ -7268,6 +7287,11 @@
 "bWq" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/security/sechall)
+"bWs" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/bookcase/guncase,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/quartermaster/hangarsupply)
 "bWz" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/fancy/candle_box,
@@ -7763,8 +7787,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "ccl" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
+/obj/structure/table/woodentable,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "ccq" = (
@@ -9191,6 +9214,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
+/obj/landmark/join/start/enkindled,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "cuC" = (
@@ -9226,6 +9250,11 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/turret_protected/ai_upload)
+"cuQ" = (
+/obj/structure/bed/chair,
+/obj/landmark/join/start/engineer,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/engine_room)
 "cuX" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -10502,6 +10531,11 @@
 /area/liberty/security/prisoncells{
 	name = "Interrogation"
 	})
+"cMF" = (
+/obj/item/stool,
+/obj/landmark/join/start/doctor,
+/turf/simulated/floor/tiled/white/techfloor,
+/area/liberty/medical/medeva)
 "cMR" = (
 /obj/effect/window_lwall_spawn/smartspawn,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -11230,6 +11264,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
+/obj/landmark/join/start/watchmen,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "cWA" = (
@@ -12714,6 +12749,7 @@
 "dnT" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/assistant,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "dnX" = (
@@ -13885,6 +13921,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/watchmen,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/security/sechall)
 "dFL" = (
@@ -15222,6 +15259,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/bonfire/skyyard)
+"dXO" = (
+/obj/structure/table/bench/standard,
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/engineer,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "dYa" = (
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -15874,9 +15917,11 @@
 /area/liberty/engineering/shield_generator)
 "ejA" = (
 /obj/structure/table/woodentable,
-/obj/item/hand_labeler,
 /obj/item/paper_bin,
+/obj/item/storage/fancy/crayons,
+/obj/item/storage/fancy/crayons,
 /obj/item/pen,
+/obj/item/hand_labeler,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "ejC" = (
@@ -16000,6 +16045,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/investigator,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/security/detectives_office)
 "ekG" = (
@@ -18066,9 +18112,9 @@
 /turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor1north)
 "ePf" = (
-/obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light/small,
+/obj/machinery/autolathe/artist_bench,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "ePG" = (
@@ -18929,6 +18975,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
+"fds" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/obj/landmark/join/start/medic,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/medical/reception)
 "fdx" = (
 /obj/structure/table/marble,
 /obj/effect/decal/cleanable/dirt,
@@ -24334,6 +24387,7 @@
 "gBG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
+/obj/landmark/join/start/doctor,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/medeva)
 "gBO" = (
@@ -26446,6 +26500,12 @@
 /obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/outside/forest)
+"heP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/clubmanager,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/barbackroom)
 "hfb" = (
 /obj/structure/flora/small/snow/rock1,
 /obj/structure/flora/bush,
@@ -26940,6 +27000,11 @@
 /obj/random/boxes/low_chance,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/maintenance/undergroundfloor1west)
+"hlI" = (
+/obj/structure/bed/chair,
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/hallway/side/f2section1)
 "hlP" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/wood/wild1,
@@ -28627,6 +28692,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/quartermaster/disposaldrop)
 "hHK" = (
@@ -29671,6 +29737,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1west)
+"hXo" = (
+/obj/landmark/join/start/scientist,
+/turf/simulated/floor/tiled/white/danger,
+/area/liberty/medical/genetics)
 "hXw" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
@@ -30905,6 +30975,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "irj" = (
@@ -32157,6 +32228,8 @@
 "iIu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber,
+/obj/structure/table/woodentable,
+/obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "iIz" = (
@@ -36792,6 +36865,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
+/obj/landmark/join/start/dc,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/command/swo/quarters)
 "jXB" = (
@@ -36854,6 +36928,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/armorer,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)
 "jYf" = (
@@ -37413,6 +37488,14 @@
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1west)
+"kfs" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/engineer,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "kfu" = (
 /obj/structure/catwalk,
 /obj/random/cluster/roaches/low_chance,
@@ -37650,6 +37733,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/clubworker,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
 "kiY" = (
@@ -38903,6 +38987,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
+/obj/landmark/join/start/oathpledge,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "kAf" = (
@@ -40524,6 +40609,7 @@
 	dir = 4;
 	pixel_x = 30
 	},
+/obj/landmark/join/start/janitor,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/janitor)
 "kYN" = (
@@ -41928,6 +42014,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/maintenance/undergroundfloor1east)
+"luR" = (
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/hallway/side/f2section1)
 "luU" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
@@ -42371,7 +42461,6 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/maingate)
 "lAn" = (
-/obj/structure/table/reinforced,
 /obj/item/stock_parts/manipulator,
 /obj/item/circuitboard/vending,
 /obj/item/tool/screwdriver,
@@ -42381,6 +42470,7 @@
 /obj/item/stock_parts/console_screen,
 /obj/item/stock_parts/matter_bin,
 /obj/item/stack/cable_coil/yellow,
+/obj/structure/table/woodentable,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "lAu" = (
@@ -42545,6 +42635,13 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/storage/primary)
+"lCX" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/hallway/side/f2section1)
 "lDc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -43861,6 +43958,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "lVi" = (
@@ -45243,6 +45341,7 @@
 /area/liberty/pros/prep)
 "msj" = (
 /obj/structure/bed/chair/office/dark,
+/obj/landmark/join/start/engineer,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/foyer)
 "msl" = (
@@ -46452,6 +46551,11 @@
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/maintenance/undergroundfloor1north)
+"mLR" = (
+/obj/structure/bed/chair/wood,
+/obj/landmark/join/start/enkindled,
+/turf/simulated/floor/carpet,
+/area/liberty/bonfire/vectorrooms)
 "mMh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -47753,6 +47857,10 @@
 /obj/random/structures/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1east)
+"neA" = (
+/obj/landmark/join/start/psychiatrist,
+/turf/simulated/floor/carpet/sblucarpet,
+/area/liberty/medical/psych)
 "neD" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -50197,6 +50305,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/landmark/join/start/assistant,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "nLQ" = (
@@ -50285,6 +50394,7 @@
 /obj/structure/closet/wall_mounted/emcloset{
 	pixel_x = 32
 	},
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/hangarsupply)
 "nNM" = (
@@ -51217,6 +51327,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
+"oaC" = (
+/obj/landmark/join/start/janitor,
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/liberty/crew_quarters/janitor)
 "oaD" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/breath,
@@ -51847,6 +51961,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
+/obj/landmark/join/start/watchmen,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/security/sechall)
 "ojP" = (
@@ -52539,6 +52654,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 8
 	},
+/obj/landmark/join/start/fixer,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "osO" = (
@@ -53120,6 +53236,7 @@
 	name = "South APC";
 	pixel_y = -28
 	},
+/obj/landmark/join/start/psychiatrist,
 /turf/simulated/floor/wood,
 /area/liberty/medical/psych)
 "oBe" = (
@@ -53703,6 +53820,7 @@
 "oIZ" = (
 /obj/structure/bed/chair/comfy/brown,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/investigator,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/security/detectives_office)
 "oJa" = (
@@ -54215,6 +54333,13 @@
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/fitness)
+"oPL" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/hallway/surface/section1)
 "oPM" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -55084,6 +55209,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
 "pch" = (
@@ -57009,6 +57135,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenobiology/xenoflora)
 "pDs" = (
@@ -58111,6 +58238,7 @@
 /obj/structure/bed/chair/wood{
 	dir = 8
 	},
+/obj/landmark/join/start/enkindled,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "pRr" = (
@@ -58510,6 +58638,7 @@
 "pVU" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/medic,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/organ_lab)
 "pVW" = (
@@ -60937,6 +61066,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/rnd/xenobiology/ameridian)
+"qDT" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/bookcase,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/quartermaster/hangarsupply)
 "qDV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -61378,6 +61512,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor1west)
+"qJr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/engineer,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "qJs" = (
 /obj/machinery/telecomms/bus/preset_three,
 /turf/simulated/floor/bluegrid{
@@ -62652,6 +62791,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "rby" = (
@@ -62727,6 +62867,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
+/obj/landmark/join/start/assistant,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/hallway/side/f2section1)
 "rdf" = (
@@ -63140,6 +63281,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/landmark/join/start/medic,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/cryo)
 "riV" = (
@@ -63259,6 +63401,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/quartermaster/disposaldrop)
+"rkJ" = (
+/obj/item/stool,
+/obj/landmark/join/start/mining,
+/turf/simulated/floor/tiled/white/techfloor,
+/area/liberty/quartermaster/miningdock)
 "rkS" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -64379,6 +64526,7 @@
 /obj/structure/bed/chair/comfy/teal{
 	dir = 1
 	},
+/obj/landmark/join/start/cso,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/command/cso)
 "rzY" = (
@@ -64678,6 +64826,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/rnd/lab)
 "rFH" = (
@@ -64800,6 +64949,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/watchmen,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/security/sechall)
 "rHf" = (
@@ -65958,6 +66108,18 @@
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "10,18"
 	},
+/area/liberty/hallway/surface/section1)
+"rYT" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/table/standard,
+/obj/machinery/newscaster{
+	dir = 8;
+	pixel_x = -30
+	},
+/obj/machinery/recharger,
+/turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "rZd" = (
 /turf/simulated/shuttle/wall/science{
@@ -69396,6 +69558,10 @@
 "sPV" = (
 /turf/simulated/wall/church_reinforced,
 /area/liberty/bonfire/chapel)
+"sQd" = (
+/obj/landmark/join/start/janitor,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/liberty/crew_quarters/janitor)
 "sQm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -73322,6 +73488,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/command/teleporter)
+"tSY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/cyborg,
+/turf/simulated/floor/tiled/white/techfloor,
+/area/liberty/rnd/robotics)
 "tTx" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/engineering/atmos/surface)
@@ -73580,6 +73751,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/landmark/join/start/scientist,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/rnd/lab)
 "tXF" = (
@@ -75309,6 +75481,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "uvr" = (
 /obj/item/stool,
+/obj/landmark/join/start/medic,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/medeva)
 "uvL" = (
@@ -75411,6 +75584,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/investigator,
 /turf/simulated/floor/tiled/white,
 /area/liberty/security/detectives_office)
 "uxu" = (
@@ -77001,6 +77175,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
+/obj/landmark/join/start/watchmen,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/security/sechall)
 "uUr" = (
@@ -78051,6 +78226,12 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
+"vly" = (
+/obj/item/stool,
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/white/gray_perforated,
+/area/liberty/crew_quarters/sleep/cryo2)
 "vlz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/maintenance_common{
@@ -82241,6 +82422,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/landmark/join/start/engineer,
 /turf/simulated/floor/plating,
 /area/liberty/engineering/engine_room)
 "wrK" = (
@@ -82328,6 +82510,7 @@
 	density = 0;
 	pixel_y = 20
 	},
+/obj/landmark/join/start/armorer,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "wsx" = (
@@ -83459,6 +83642,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
+"wHo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/storage/primary)
 "wHr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -85022,6 +85210,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/landmark/join/start/clubworker,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
 "xeJ" = (
@@ -86323,9 +86512,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/storage/fancy/crayons,
 /obj/structure/table/woodentable,
-/obj/item/storage/fancy/crayons,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -86340,6 +86527,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/machinery/recharger,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "xxe" = (
@@ -87257,6 +87445,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1north)
+"xKF" = (
+/obj/structure/bed/chair/wood{
+	dir = 1;
+	tag = "icon-wooden_chair (NORTH)"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/enkindled,
+/turf/simulated/floor/carpet,
+/area/liberty/bonfire/vectorrooms)
 "xKJ" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -88067,6 +88264,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/secretary,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
 "xUI" = (
@@ -89079,6 +89277,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
+"yhY" = (
+/obj/structure/bed/chair/comfy/black,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#0892d0"
+	},
+/obj/landmark/join/start/assistant,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/liberty/hallway/surface/section1)
 "yhZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -97651,7 +97858,7 @@ jKu
 wQQ
 wGA
 den
-let
+oaC
 eTO
 qyN
 gRM
@@ -97859,7 +98066,7 @@ yfl
 wtN
 yfl
 yfl
-yfl
+sQd
 qzz
 wGA
 dTD
@@ -107389,7 +107596,7 @@ bdw
 dVA
 kDt
 jTo
-toB
+hXo
 jku
 rzi
 dVA
@@ -110577,7 +110784,7 @@ sVF
 vtD
 lVa
 gnH
-vtD
+bWs
 mTN
 ija
 sZN
@@ -110779,7 +110986,7 @@ sVF
 vtD
 nNy
 sSn
-vtD
+qDT
 mTN
 rhH
 fCi
@@ -141478,7 +141685,7 @@ bYF
 iYu
 iYu
 iYu
-iYu
+wHo
 iYu
 iYu
 iYu
@@ -142713,7 +142920,7 @@ voQ
 dgr
 ddX
 oRf
-pse
+vly
 pgR
 bXb
 mhh
@@ -143727,10 +143934,10 @@ lYo
 fHz
 vKD
 vSQ
-vKD
-vKD
-vKD
-vKD
+tSY
+tSY
+tSY
+tSY
 vKD
 vKD
 byQ
@@ -147947,7 +148154,7 @@ sgV
 pDP
 sbQ
 bOg
-bOg
+heP
 bOg
 sbQ
 bzF
@@ -147992,7 +148199,7 @@ eOr
 kup
 rLe
 uvr
-uvr
+cMF
 wiq
 paS
 eOr
@@ -149368,9 +149575,9 @@ wdJ
 fRI
 cSt
 lIX
-onj
+hlI
 avj
-fQx
+lCX
 lIX
 wiQ
 fRI
@@ -149384,7 +149591,7 @@ aGO
 xdz
 gaD
 efC
-gaD
+fds
 wZb
 tBa
 rxW
@@ -149765,7 +149972,7 @@ wNJ
 mSH
 gmj
 tNy
-wNJ
+luR
 mSH
 gmj
 tNy
@@ -150973,7 +151180,7 @@ qkd
 iqZ
 iqZ
 iqZ
-iqZ
+qJr
 iqZ
 dUv
 ctw
@@ -151983,7 +152190,7 @@ jDt
 iqZ
 mNR
 mNR
-mNR
+dXO
 nQD
 jJW
 frR
@@ -152231,7 +152438,7 @@ eVZ
 cPW
 lBc
 sCE
-inb
+neA
 bIQ
 qSQ
 rnM
@@ -152387,7 +152594,7 @@ mJB
 iqZ
 mNR
 mNR
-mNR
+dXO
 nQD
 jJW
 xAt
@@ -153409,7 +153616,7 @@ rMk
 dKc
 vXj
 kRz
-sUc
+rkJ
 wJH
 wtD
 kJS
@@ -154207,7 +154414,7 @@ cbA
 pOZ
 drC
 ntq
-nLh
+kfs
 gnP
 vXj
 uUc
@@ -158043,7 +158250,7 @@ uxB
 xis
 nBU
 ovy
-nUa
+cuQ
 wrV
 wrV
 byl
@@ -182485,7 +182692,7 @@ jux
 jux
 jux
 nKT
-nKc
+oPL
 nKc
 bln
 jux
@@ -183487,7 +183694,7 @@ jfo
 jfo
 jfo
 jTM
-jiT
+bNu
 jiT
 psW
 jfo
@@ -187915,7 +188122,7 @@ dlU
 jux
 pvf
 beG
-vvO
+rYT
 col
 pvf
 nFK
@@ -189743,7 +189950,7 @@ rgr
 jux
 mZb
 glE
-fSn
+bBM
 rSM
 xXO
 tUJ
@@ -192172,7 +192379,7 @@ mBk
 mBk
 psQ
 cdM
-bgt
+mLR
 mRT
 mRT
 eVn
@@ -192377,7 +192584,7 @@ cdM
 bgt
 fEg
 etC
-eVn
+xKF
 cdM
 lOD
 utS
@@ -193367,7 +193574,7 @@ rQC
 rQC
 vCI
 jux
-wiS
+yhY
 bzZ
 bzZ
 bzZ
