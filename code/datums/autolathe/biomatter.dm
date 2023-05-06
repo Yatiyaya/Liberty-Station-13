@@ -108,51 +108,6 @@
 	materials = list(MATERIAL_BIOMATTER = 50)
 
 // This separates regular clothes designs from NT clothes designs //
-/datum/design/bioprinter/nt_clothes/armor_kit
-	name = "Armor Bundle"
-	build_path = /obj/item/gunbox/church
-	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 15)
-
-/datum/design/bioprinter/nt_clothes/acolyte_armor
-	name = "Vector Armor"
-	build_path = /obj/item/clothing/suit/armor/vest/acolyte
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 8)
-
-/datum/design/bioprinter/nt_clothes/agrolyte_armor
-	name = "Agrolyte Armor"
-	build_path = /obj/item/clothing/suit/armor/vest/botanist
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 8)
-
-/datum/design/bioprinter/nt_clothes/custodian_armor
-	name = "Custodian Armor"
-	build_path = /obj/item/clothing/suit/armor/vest/custodian
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 8)
-
-/datum/design/bioprinter/nt_clothes/rosaria_armor
-	name = "Rosaria Armor"
-	build_path = /obj/item/clothing/suit/armor/vest/rosaria
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 15)
-
-/datum/design/bioprinter/nt_clothes/acolyte_armor_helm
-	name = "Vector Helmet"
-	build_path = /obj/item/clothing/head/helmet/acolyte
-	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 3)
-
-/datum/design/bioprinter/nt_clothes/agrolyte_armor_helm
-	name = "Agrolyte Helmet"
-	build_path = /obj/item/clothing/head/helmet/botanist
-	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 3)
-
-/datum/design/bioprinter/nt_clothes/custodian_armor_helm
-	name = "Custodian Helmet"
-	build_path = /obj/item/clothing/head/helmet/custodian
-	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 3)
-
-/datum/design/bioprinter/nt_clothes/rosaria_armor_helm
-	name = "Rosaria Helmet"
-	build_path = /obj/item/clothing/head/helmet/rosaria
-	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 7)
-
 /datum/design/bioprinter/nt_clothes/sports_jacket
 	name = "Sports Jacket"
 	build_path = /obj/item/clothing/suit/storage/neotheosports
@@ -217,34 +172,19 @@
 	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 21)
 
 /datum/design/autolathe/nt/shield/nt_buckler
-	name = "Custodian Targe Shield"
+	name = "Custodian Heater Shield"
 	build_path = /obj/item/shield/buckler/nt
 	materials = list(MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 12)
-
-/datum/design/autolathe/nt/sword/nt_verutum
-	name = "OT Javelin"
-	build_path = /obj/item/stack/thrown/nt/verutum
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 3)
 
 /datum/design/autolathe/tool_upgrade/sanctifier
 	name = "NT Sanctifier"
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
 	materials = list(MATERIAL_CARBON_FIBER = 3)
 
-/datum/design/autolathe/sword/nt_warhammer
-	name = "NT Warhammer"
-	build_path = /obj/item/tool/sword/nt/warhammer
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 12)
-
 /datum/design/autolathe/sword/nt_flanged
 	name = "Emberblaze Warhammer"
 	build_path = /obj/item/tool/sword/nt/flanged
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 16)
-
-/datum/design/autolathe/sword/nt_power
-	name = "NT Forceblade"
-	build_path = /obj/item/tool/sword/nt/power
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 36)
 
 //[GRENADES]
 /datum/design/autolathe/grenade/nt_heatwave

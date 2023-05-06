@@ -30,7 +30,7 @@
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/tool/knife/dagger/ceremonial(src)
 	new /obj/item/clothing/accessory/holster/saber/occupied(src)
-	new /obj/item/clothing/accessory/cross(src)
+	new /obj/item/forgesigil(src)
 	new /obj/item/clothing/accessory/halfcape/premier(src)
 	new /obj/item/modular_computer/tablet/lease/preset/command(src)
 

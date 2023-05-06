@@ -251,6 +251,17 @@
 	name = "medal of exceptional heroism"
 	desc = "An extremely rare golden medal awarded only by faction owners. To recieve such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
 
+/*Cross*/
+
+/obj/item/clothing/accessory/cross
+	name = "tau cross necklace"
+	desc = "A heavy necklace resembling a Tau Cross."
+	icon = 'icons/inventory/accessory/icon.dmi'
+	icon_state = "cross"
+	item_state = ""	// No inhands
+	slot_flags = SLOT_ACCESSORY_BUFFER | SLOT_MASK
+	w_class = ITEM_SIZE_NORMAL // Chonky cross
+
 /*Capes*/
 
 /obj/item/clothing/accessory/cape

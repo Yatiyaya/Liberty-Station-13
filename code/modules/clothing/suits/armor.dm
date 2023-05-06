@@ -202,331 +202,47 @@
  * Factions
 */
 
-//Church
-/obj/item/clothing/suit/armor/vest/botanist
-	name = "botanist attire"
-	desc = "Every rose has its thorns."
-	icon_state = "botanist"
+//Custodians
+/obj/item/clothing/suit/armor/custodian
+	name = "base custodian armor item"
+	desc = "Not meant to appear in-game."
+	icon_state = "oathbound"
+	item_state = "oathbound"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 25, bomb = 20, bio = 100, rad = 80)
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 0)
+	max_upgrades = 2
 	flags_inv = HIDEJUMPSUIT
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = T0C - 20
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
 
-/obj/item/clothing/suit/armor/vest/botanist/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
+/obj/item/clothing/suit/armor/custodian/oathbound
+	name = "dark-silver oathbound armor"
+	desc = "Artwork of purity and might, protective and light to the feet, the plate armors of the Oathbounds shine ever so slightly and protect against the flames."
+	icon_state = "oathbound"
+	item_state = "oathbound"
 
-	if(!isliving(loc))
-		return
+/obj/item/clothing/suit/armor/custodian/forgemaster
+	name = "dark-silver forgemaster armor"
+	desc = "The hammer and fist of the Custodians, the Forgemasters are extremely important personnel - and as such are provided an armor of their own to tame the fire."
+	icon_state = "forgemaster"
+	item_state = "forgemaster"
 
-	var/mob/M = usr
-	var/list/options = list()
-	options["botanist default"] = "botanist"
-	options["cosine brigantine armor"] = "cosine_brigantine_armor"
+/obj/item/clothing/suit/armor/custodian/enkindled
+	name = "dark-silver enkindled armor"
+	desc = "The fire-resistant armor of the blood transmuters and alchemists of the Custodians, made in the image of forgotten legends of deranged plague-healers."
+	icon_state = "enkindled"
+	item_state = "enkindled"
 
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/acolyte
-	name = "vector armor"
-	desc = "Worn, heavy, steadfast in the name of God."
-	icon_state = "acolyte"
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 25, bomb = 25, bio = 100, rad = 80)
-	flags_inv = HIDEJUMPSUIT
-
-/obj/item/clothing/suit/armor/vest/acolyte/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["vector default"] = "acolyte"
-	options["tangent plate armor"] = "tangent_plate_armor"
-	options["greater heart armor"] = "greater_heart"
-	options["lemniscate armor"] = "lemniscate_armor"
-	options["factorial armor"] = "factorial_armor"
-	options["monomial armor"] = "monomial_armor"
-	options["divisor armor"] = "divisor_armor"
-	options["tessellate armor"] = "tessellate_armor"
-	options["vector breastplate"] = "absolute_breast"
-	options["vinculum dress garbs"] = "vinculum_cassock"
-	options["tessellate plague garbs"] = "tessellate_plague_garbs"
-	options["tessellate dark plague garbs"] = "tessellate_plague_garbs_dark"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/path //No path ?
-	name = "vinculum cassock"
-	desc = "A heavy Cassock meant for the Vectors that possess no vows. This sturdy armor is made entirely out of biomatter and have no metal inner layer, but at the same time this sturdy armor is the thickest of any other armor made out of cloth, even thicker than a gambeson. But this armor is often used for rituals more than it is using for fighting, keeping the defensive properties only for emergencies."
-	icon_state = "vinculum_cassock"
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 25, bomb = 25, bio = 100, rad = 80)
-	flags_inv = HIDEJUMPSUIT
-
-/obj/item/clothing/suit/armor/vest/path/divisor
-	name = "Divisor's Guardsmen Armor"
-	desc = "The armour of the church arms forces of old - coming from the now extinct military of New Byzantine. The inner layers has plates of biomatter-infused steel and chainmail, together with shoulder protection that elevates to protect the neck and fix it with the helmet of the same design."
-	icon_state = "divisor_guardsmen_armor"
-
-/obj/item/clothing/suit/armor/vest/path/divisor/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Divisor's Guardsmen Armor"] = "divisor_guardsmen_armor"
-	options["Divisor Plate Armor"] = "divisor_plate_armor"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/path/tessallate
-	name = "Tessellate Riding Habit"
-	desc = "The Tessellate Habit is an mixture of an well protective, efficient gambeson with inner chainmail that ensures the protection of it's user."
-	icon_state = "tessellate_riding_habit"
-
-/obj/item/clothing/suit/armor/vest/path/tessallate/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Tessellate Riding Habit"] = "tessellate_riding_habit"
-	options["Tessellate Doctor Garbs"] = "tessellate_doctor_garbs"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/path/lemniscate
-	name = "Lemniscate Garbs"
-	desc = "The well suited lemniscates garbs of new, made for the highest quality ceremonies by looking absurdly fancy.  It's protective values are quite close to the design of an pourpoint with inner chainmail with golden ridges and lines that only reinforces it's fanciness value."
-	icon_state = "lemniscate_garbs"
-
-/obj/item/clothing/suit/armor/vest/path/lemniscate/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Lemniscate Garbs"] = "lemniscate_garbs"
-	options["Lemniscate Caftan"] = "lemniscate_caftan"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/path/monomial
-	name = "Monomial Kasaya"
-	desc = "An old design of armor, often repainted, pieced together with minor plates overlapping on the shoulders, waist and legs, with an large plate protecting the chest and belly."
-	icon_state = "monomial_kasaya"
-
-/obj/item/clothing/suit/armor/vest/path/monomial/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Monomial Kasaya"] = "monomial_kasaya"
-	options["Monomial Gusoku"] = "monomial_gusoku"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/path/factorial
-	name = "Factorial powergarb"
-	desc = "A Factorial's best protection well working their duties on the colony and back in its day on New Byzantine, tends to have different attachments for a more personalized garb."
-	icon_state = "factorial_powergarb"
-
-/obj/item/clothing/suit/armor/vest/path/factorial/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Factorial powergarb"] = "factorial_powergarb"
-	options["Factorial Vesselcrew Armor"] = "factorial_vesselcrew_armor"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/rosaria
-	name = "rosaria armor"
-	desc = "The Rosaria protects."
-	icon_state = "rosaria_armor"
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 50, bio = 100, rad = 100)
-	flags_inv = HIDEJUMPSUIT
-	matter = list(MATERIAL_PLASTEEL = 60, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 5, MATERIAL_GOLD = 5)
-
-/obj/item/clothing/suit/armor/vest/rosaria/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["rosaria default"] = "rosaria_armor"
-	options["rosaria alt"] = "rosaria_alt_armor"
-
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/custodian
-	name = "custodian armor"
-	desc = "Someone's gotta clean this mess. While this armor is technically church property, Skylight custodians often use it on loan to protect themselves from the colonies various dangerous pests."
-	icon_state = "custodian"
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 25, bomb = 25, bio = 100, rad = 80)
-	flags_inv = HIDEJUMPSUIT
-
-/obj/item/clothing/suit/armor/vest/custodian/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["custodian default"] = "custodian"
-	options["sine armor robes"] = "sine_armor_robes"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/suit/armor/vest/prime
-	name = "prime armor"
-	desc = "Trust in god, but keep your armor on."
-	icon_state = "prime"
-	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 50, bio = 100, rad = 100)
-	flags_inv = HIDEJUMPSUIT
-	matter = list(MATERIAL_PLASTEEL = 60, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 5, MATERIAL_GOLD = 5)
-
-/obj/item/clothing/suit/armor/vest/prime/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["prime dark"] = "prime"
-	options["prime royal"] = "prime_alt"
-	options["prime saint"] = "prime_saint"
-	options["prime paladin"] = "prime_paladin"
-	options["prime paladin alt"] = "prime_paladin_alt"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
+/obj/item/clothing/suit/armor/custodian/oathpledge
+	name = "dark-silver oathpledge armor"
+	desc = "The formidable armor of the leaders and guides of the Custodians. A sturdy and fire-resistant design."
+	icon_state = "oathpledge"
+	item_state = "oathpledge"
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
 
 //Guild
 /obj/item/clothing/suit/armor/vest/technomancersuit

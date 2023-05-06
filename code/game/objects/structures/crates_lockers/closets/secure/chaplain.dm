@@ -1,3 +1,4 @@
+/*
 /obj/structure/closet/secure_closet/reinforced/preacher
 	name = "prime's locker"
 	req_access = list(access_chapel_office)
@@ -26,5 +27,5 @@
 	new /obj/item/clothing/head/helmet/prime(src)
 	new /obj/item/clothing/suit/storage/neotheosports(src)
 	new /obj/item/shield_projector/rectangle/church_personal(src)
-
+*/
 
