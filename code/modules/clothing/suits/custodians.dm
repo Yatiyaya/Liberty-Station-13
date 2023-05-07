@@ -6,7 +6,7 @@
 	item_state = "oathbound_garb"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor_list = list(melee = 20, bullet = 15, energy = 15, bomb = 10, bio = 100, rad = 0)
+	armor_list = list(melee = 20, bullet = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
 

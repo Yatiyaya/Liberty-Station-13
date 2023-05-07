@@ -147,16 +147,16 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	headset =/obj/item/device/radio/headset/headset_sci)
 
 	var/list/loadout_4 = list(
-	uniform = /obj/item/clothing/under/rank/acolyte,
-	hat = /obj/item/clothing/head/helmet/acolyte,
-	suit = /obj/item/clothing/suit/armor/vest/acolyte,
-	shoes = /obj/item/clothing/shoes/reinforced,
-	back = /obj/item/storage/backpack/satchel/neotheology,
-	gloves = /obj/item/clothing/gloves/thick,
-	mask = /obj/item/clothing/mask/gas/germanmask,
-	glasses = /obj/item/clothing/glasses/sunglasses,
-	gun = /obj/item/gun/energy/laser,
-	headset = /obj/item/device/radio/headset/church)
+	uniform = /obj/item/clothing/under/turtleneck/fontaine,
+	hat = /obj/item/clothing/head/helmet/handmade/scavengerhelmet,
+	suit = /obj/item/clothing/suit/storage/scavengerarmor,
+	shoes = /obj/item/clothing/shoes/jackboots/fontaine,
+	back = /obj/item/storage/backpack/satchel,
+	gloves = /obj/item/clothing/gloves/thick/fontaine,
+	mask = /obj/item/clothing/mask/gas/fontaine,
+	glasses = /obj/item/clothing/glasses/sunglasses/fontaine,
+	gun = /obj/item/gun/projectile/automatic/ak47/makeshift,
+	headset = /obj/item/device/radio/headset/headset_pro)
 
 /obj/item/clothing/under/chameleon/emp_act(severity)
 	name = "psychedelic"

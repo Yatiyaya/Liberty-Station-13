@@ -115,9 +115,9 @@
 
 
 /obj/structure/biomatter_tank
-	name = "biomatter tank"
-	icon = 'icons/obj/machines/bioreactor.dmi'
-	icon_state = "biotank"
+	name = "scorch slag tank"
+	icon = 'icons/obj/machines/bonfire.dmi'
+	icon_state = "scorchslagtank"
 	anchored = TRUE
 	density = TRUE
 	layer = ABOVE_MOB_LAYER + 0.05
@@ -146,7 +146,7 @@
 /obj/structure/biomatter_tank/update_icon()
 	cut_overlays()
 	if(canister && platform.pipes_opened)
-		var/image/pipe_overlay = image(icon = 'icons/obj/machines/bioreactor.dmi', icon_state = "port-pipe", pixel_y = -9)
+		var/image/pipe_overlay = image(icon = 'icons/obj/machines/bonfire.dmi', icon_state = "port-pipe", pixel_y = -9)
 		add_overlay(pipe_overlay)
 
 

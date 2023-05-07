@@ -391,7 +391,7 @@
 
 /obj/item/storage/belt/security/neotheology
 	name = "Bonfire tactical belt"
-	desc = "Can hold various military and security equipment for the awakened crusader or skilled divisor. Deus Vult."
+	desc = "A comfortable Custodian belt design that can hold a variety of items."
 	icon_state = "tactical_neotheology"
 	can_hold_extra = list(
 		/obj/item/book/ritual/cruciform,

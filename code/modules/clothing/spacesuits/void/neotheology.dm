@@ -93,14 +93,13 @@
 	unacidable = TRUE
 	helmet = /obj/item/clothing/head/helmet/space/void/custodian
 
-/obj/item/clothing/head/helmet/space/void/NTvoid
-	name = "angel voidsuit helmet"
-	desc = "A voidsuit helmet designed by the church with a most holy mix of biomatter and inorganic matter."
+/obj/item/clothing/head/helmet/space/void/huscarl
+	name = "huscarl voidsuit helmet"
+	desc = "A voidsuit helmet designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
 	icon_state = "ntvoidhelmet"
 	item_state = "ntvoidhelmet"
 	action_button_name = "Toggle Helmet Light"
 	brightness_on = 4 //luminosity when on
-	light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT //Holyer then thou!
 	armor_list = list(
 		melee = 40,
 		bullet = 30,
@@ -112,12 +111,12 @@
 	siemens_coefficient = 0.35
 	light_overlay = "helmet_light"
 
-/obj/item/clothing/suit/space/void/NTvoid
-	name = "angel voidsuit"
-	desc = "A voidsuit designed by the church with a most holy mix of biomatter and inorganic matter."
+/obj/item/clothing/suit/space/void/huscarl
+	name = "huscarl voidsuit"
+	desc = "A voidsuit designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
 	icon_state = "ntvoid"
 	item_state = "ntvoid"
-	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_STEEL = 10, MATERIAL_BIOMATTER = 29)
+	matter = list(MATERIAL_CARBON_FIBER = 8, MATERIAL_STEEL = 10, MATERIAL_BIO_SILK = 30)
 	slowdown = 0.15
 	armor_list = list(
 		melee = 40,
@@ -133,7 +132,7 @@
 	price_tag = 300
 
 
-	helmet = /obj/item/clothing/head/helmet/space/void/NTvoid
+	helmet = /obj/item/clothing/head/helmet/space/void/huscarl
 
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	flash_protection = FLASH_PROTECTION_MODERATE

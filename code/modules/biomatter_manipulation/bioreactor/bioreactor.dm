@@ -110,12 +110,12 @@
 		return
 	if(chamber_solution)
 		solution.icon_state = ""
-		flick("solution_pump_out", solution)
+		flick("solution_pump_out_temporary", solution)
 		for(var/obj/machinery/multistructure/bioreactor_part/platform/platform in platforms)
 			platform.set_light(0)
 	else
 		solution.icon_state = initial(solution.icon_state)
-		flick("solution_pump_in", solution)
+		flick("solution_pump_in_temporary", solution)
 		for(var/obj/machinery/multistructure/bioreactor_part/platform/platform in platforms)
 			platform.set_light(1, 3, COLOR_LIGHTING_ORANGE_DARK)
 	chamber_solution = !chamber_solution
@@ -124,7 +124,7 @@
 
 /obj/machinery/multistructure/bioreactor_part
 	name = "bioreactor part"
-	icon = 'icons/obj/machines/bioreactor.dmi'
+	icon = 'icons/obj/machines/bonfire.dmi'
 	icon_state = "biomassconsole1"
 	anchored = TRUE
 	density = TRUE
@@ -152,7 +152,7 @@
 
 /obj/effect/overlay/bioreactor_solution
 	name = "solution"
-	icon = 'icons/obj/machines/bioreactor.dmi'
-	icon_state = "solution"
+	icon = 'icons/obj/machines/bonfire.dmi'
+	icon_state = "solution_temporary"
 	layer = ABOVE_MOB_LAYER
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT

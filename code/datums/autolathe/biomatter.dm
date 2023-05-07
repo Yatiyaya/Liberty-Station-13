@@ -96,6 +96,7 @@
 /datum/design/bioprinter/belt/utility/neotheology
 	name = "Bonfire utility belt"
 	build_path = /obj/item/storage/belt/utility/neotheology
+	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
 
 /datum/design/bioprinter/belt/security/neotheology
 	name = "Bonfire tactical belt"
@@ -107,33 +108,83 @@
 	build_path = /obj/item/storage/belt/champion
 	materials = list(MATERIAL_BIOMATTER = 50)
 
-// This separates regular clothes designs from NT clothes designs //
-/datum/design/bioprinter/nt_clothes/sports_jacket
-	name = "Sports Jacket"
-	build_path = /obj/item/clothing/suit/storage/neotheosports
+// This separates regular clothes designs from custodian clothes designs //
+/datum/design/bioprinter/nt_clothes/oathbound
+	name = "Oathbound Underarmor"
+	build_path = /obj/item/clothing/under/custodian/oathbound
+	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/acolyte_uniform
-	name = "Vector Garment"
-	build_path = /obj/item/clothing/under/rank/acolyte
+/datum/design/bioprinter/nt_clothes/enkindled
+	name = "Enkindled Underarmor"
+	build_path = /obj/item/clothing/under/custodian/enkindled
+	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/church_uniform
-	name = "Church Garment"
-	build_path = /obj/item/clothing/under/rank/church
+/datum/design/bioprinter/nt_clothes/forgemaster
+	name = "Forgemaster Underarmor"
+	build_path = /obj/item/clothing/under/custodian/forgemaster
+	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/hermes_shoes
-	name = "Hermes Boots"
-	build_path = /obj/item/clothing/shoes/hermes_shoes
-	materials = list(MATERIAL_BIO_SILK = 4, MATERIAL_CARBON_FIBER = 2)
+/datum/design/bioprinter/nt_clothes/oathpledge
+	name = "Oathpledge Underarmor"
+	build_path = /obj/item/clothing/under/custodian/oathpledge
+	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/NTvoid
-	name = "Angel Voidsuit"
-	build_path = /obj/item/clothing/suit/space/void/NTvoid
+/datum/design/bioprinter/nt_clothes/custodian_boots
+	name = "Custodian Boots"
+	build_path = /obj/item/clothing/shoes/custodian
+	materials = list(MATERIAL_BIO_SILK = 5)
+
+/datum/design/bioprinter/nt_clothes/oathbound_armor
+	name = "Oathbound Armor"
+	build_path = /obj/item/clothing/suit/armor/custodian/oathbound
+	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+
+/datum/design/bioprinter/nt_clothes/oathbound_helmet
+	name = "Oathbound Helmet"
+	build_path = /obj/item/clothing/head/helmet/custodian/oathbound
+	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+
+/datum/design/bioprinter/nt_clothes/enkindled_armor
+	name = "Enkindled Armor"
+	build_path = /obj/item/clothing/suit/armor/custodian/enkindled
+	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+
+/datum/design/bioprinter/nt_clothes/enkindled_helmet
+	name = "Enkindled Helmet"
+	build_path = /obj/item/clothing/head/helmet/custodian/enkindled
+	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+
+/datum/design/bioprinter/nt_clothes/forgemaster_armor
+	name = "Forgemaster Armor"
+	build_path = /obj/item/clothing/suit/armor/custodian/forgemaster
+	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+
+/datum/design/bioprinter/nt_clothes/forgemaster_helmet
+	name = "Forgemaster Helmet"
+	build_path = /obj/item/clothing/head/helmet/custodian/forgemaster
+	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+
+/datum/design/bioprinter/nt_clothes/oathpledge_armor
+	name = "Oathpledge Armor"
+	build_path = /obj/item/clothing/suit/armor/custodian/oathpledge
+	materials = list(MATERIAL_BIO_SILK = 25, MATERIAL_CARBON_FIBER = 10)
+
+/datum/design/bioprinter/nt_clothes/oathpledge_helmet
+	name = "Oathpledge Helmet"
+	build_path = /obj/item/clothing/head/helmet/custodian/oathpledge
+	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 5)
+
+/datum/design/bioprinter/nt_clothes/huscarl
+	name = "Huscarl Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/huscarl
 	materials = list(MATERIAL_BIO_SILK = 18, MATERIAL_CARBON_FIBER = 18)
 
+/* Pending Custodian IRR sprites later
 /datum/design/bioprinter/nt_clothes/knight_rig
 	name = "Knight Hardsuit Module"
 	materials = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 100, MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 28)
 	build_path = /obj/item/rig/combat/knight
+*/
 
 //[MELEE]
 /datum/design/autolathe/sword/nt_sword
@@ -186,26 +237,26 @@
 	build_path = /obj/item/tool/sword/nt/flanged
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 16)
 
-//[GRENADES]
-/datum/design/autolathe/grenade/nt_heatwave
-	name = "NT HG \"Inferno\""
-	build_path = /obj/item/grenade/heatwave/nt
+//[ARMOR UPGRADES]
+/datum/design/autolathe/armor_upgrade
+	name = "base item, not seen in-game"
+	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 5)
 
-/datum/design/autolathe/grenade/nt_smokebomb
-	name = "NT SG \"Holy Fog\""
-	build_path = /obj/item/grenade/smokebomb/nt
+/datum/design/autolathe/armor_upgrade/melee
+	name = "Melee Armor Upgrade"
+	build_path = /obj/item/tool_upgrade/armor/melee
 
-/datum/design/autolathe/grenade/nt_frag
-	name = "NT DFG \"Holy Thunder\""
-	build_path = /obj/item/grenade/frag/nt
+/datum/design/autolathe/armor_upgrade/bullet
+	name = "Bullet Armor Upgrade"
+	build_path = /obj/item/tool_upgrade/armor/bullet
 
-/datum/design/autolathe/grenade/nt_flashbang
-	name = "NT FBG \"Holy Light\""
-	build_path = /obj/item/grenade/flashbang/nt
+/datum/design/autolathe/armor_upgrade/energy
+	name = "Energy Armor Upgrade"
+	build_path = /obj/item/tool_upgrade/armor/energy
 
-/datum/design/autolathe/grenade/nt_explosive
-	name = "NT OBG \"Holy Grail\""
-	build_path = /obj/item/grenade/explosive/nt
+/datum/design/autolathe/armor_upgrade/bomb
+	name = "Bomb Armor Upgrade"
+	build_path = /obj/item/tool_upgrade/armor/bomb
 
 //[/IMPLANTS]
 

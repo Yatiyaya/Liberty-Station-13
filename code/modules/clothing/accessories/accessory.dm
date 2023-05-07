@@ -1502,3 +1502,48 @@
 		if(t)
 			name = "nametag ([t])"
 
+//Custodians
+
+/obj/item/clothing/accessory/medallion/leather
+	name = "leather medallion"
+	desc = "A leather medallion."
+	icon_state = "leather_medallion"
+	item_state = "leather_medallion"
+
+/obj/item/clothing/accessory/medallion/copper
+	name = "copper medallion"
+	desc = "A copper medallion."
+	icon_state = "copper_medallion"
+	icon_state = "copper_medallion"
+
+/obj/item/clothing/accessory/medallion/silver
+	name = "silver medallion"
+	desc = "A silver medallion."
+	icon_state = "silver_medallion"
+	icon_state = "silver_medallion"
+
+/obj/item/clothing/accessory/medallion/gold
+	name = "gold medallion"
+	desc = "A gold medallion."
+	icon_state = "gold_medallion"
+	icon_state = "gold_medallion"
+
+/obj/item/clothing/accessory/raincoat
+	name = "light custodian raincoat"
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
+	icon_state = "custodian_raincoat_light"
+	item_state = "custodian_raincoat_light"
+	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
+
+/obj/item/clothing/accessory/raincoat/dark
+	name = "dark custodian raincoat"
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
+	icon_state = "custodian_raincoat_dark"
+	item_state = "custodian_raincoat_dark"
+
+/obj/item/clothing/accessory/surcoat
+	name = "custodian surcoat"
+	desc = "A patterned light coat designed to be draped over other clothing."
+	icon_state = "oathbound_surcoat"
+	item_state = "oathbound_surcoat"
+	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER

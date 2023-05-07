@@ -7,7 +7,7 @@ var/global/obj/machinery/power/eotp/eotp
 	by the church, disciples can obtain disks and other goods. The obelisk also provides various blessings and monitors areas protected by obelisks for potential threats to the colony, marked by its \
 	observation level, letting it warn primes and vectors ahead of time. Additionally, it passively gains power before unleashing various blessings to followers."
 	icon = 'icons/obj/eotp.dmi'
-	icon_state = "wotp"
+	icon_state = "eotp"
 
 	density = TRUE
 	anchored = TRUE

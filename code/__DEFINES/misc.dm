@@ -209,7 +209,6 @@
 #define CRUCIFORM_PRIEST /datum/core_module/rituals/cruciform/priest
 //#define CRUCIFORM_ACOLYTE /datum/core_module/rituals/cruciform/priest/acolyte
 #define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
-#define CRUCIFORM_CRUSADER /datum/core_module/rituals/cruciform/crusader
 #define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
 #define CRUCIFORM_REDLIGHT /datum/core_module/cruciform/red_light
 #define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning

@@ -14,14 +14,13 @@
 
 	designs = list(
 		//Misc
+		/datum/design/bioprinter/nt_clothes/oathbound,
+		/datum/design/bioprinter/nt_clothes/enkindled,
+		/datum/design/bioprinter/nt_clothes/forgemaster,
+		/datum/design/bioprinter/nt_clothes/oathpledge,
 		/datum/design/bioprinter/belt/utility/neotheology,
 		/datum/design/bioprinter/belt/security/neotheology,
-		/datum/design/bioprinter/nt_clothes/church_uniform,
-		/datum/design/bioprinter/nt_clothes/acolyte_uniform,
-		/datum/design/bioprinter/nt_clothes/sports_jacket,
-		/datum/design/bioprinter/sling,
-		/datum/design/bioprinter/botanic_leather,
-		/datum/design/bioprinter/nt_clothes/hermes_shoes,
+		/datum/design/bioprinter/nt_clothes/custodian_boots,
 		//backpacks
 		/datum/design/bioprinter/leather/storage/backpack/satchel/neotheology,
 		/datum/design/bioprinter/leather/storage/backpack/neotheology,
@@ -33,17 +32,16 @@
 		/datum/design/bioprinter/pouch/tubular,
 		/datum/design/bioprinter/pouch/tubular/vial,
 		//armor
-		/datum/design/bioprinter/nt_clothes/armor_kit,
-		/datum/design/bioprinter/nt_clothes/acolyte_armor_helm,
-		/datum/design/bioprinter/nt_clothes/acolyte_armor,
-		/datum/design/bioprinter/nt_clothes/agrolyte_armor_helm,
-		/datum/design/bioprinter/nt_clothes/agrolyte_armor,
-		/datum/design/bioprinter/nt_clothes/custodian_armor_helm,
-		/datum/design/bioprinter/nt_clothes/custodian_armor,
-		/datum/design/bioprinter/nt_clothes/rosaria_armor_helm,
-		/datum/design/bioprinter/nt_clothes/rosaria_armor,
-		/datum/design/bioprinter/nt_clothes/NTvoid,
-		/datum/design/bioprinter/nt_clothes/knight_rig,
+		/datum/design/bioprinter/nt_clothes/oathbound_armor,
+		/datum/design/bioprinter/nt_clothes/oathbound_helmet,
+		/datum/design/bioprinter/nt_clothes/enkindled_armor,
+		/datum/design/bioprinter/nt_clothes/enkindled_helmet,
+		/datum/design/bioprinter/nt_clothes/forgemaster_armor,
+		/datum/design/bioprinter/nt_clothes/forgemaster_helmet,
+		/datum/design/bioprinter/nt_clothes/oathpledge_armor,
+		/datum/design/bioprinter/nt_clothes/oathpledge_helmet,
+		/datum/design/bioprinter/nt_clothes/huscarl,
+//		/datum/design/bioprinter/nt_clothes/knight_rig, Pending Custodian IRR sprites later
 		//holsters
 		/datum/design/bioprinter/leather/holster/saber/greatsword/churchprint,
 		/datum/design/bioprinter/leather/holster,
@@ -74,6 +72,11 @@
 		/datum/design/bioprinter/ez,
 		/datum/design/bioprinter/l4z,
 		/datum/design/bioprinter/rh,
+		//armor upgrades
+		/datum/design/autolathe/armor_upgrade/melee,
+		/datum/design/autolathe/armor_upgrade/bullet,
+		/datum/design/autolathe/armor_upgrade/energy,
+		/datum/design/autolathe/armor_upgrade/bomb,
 		//utilities
 		/datum/design/bioprinter/holyvacuum,
 		/datum/design/autolathe/gun/nt_sprayer,
@@ -115,9 +118,7 @@
 		/datum/design/autolathe/sword/nt_halberd,
 		/datum/design/autolathe/sword/nt_scourge,
 		/datum/design/autolathe/sword/nt_spear,
-		/datum/design/autolathe/sword/nt_warhammer,
 		/datum/design/autolathe/sword/nt_flanged,
-		/datum/design/autolathe/sword/nt_power,
 		/datum/design/autolathe/nt/shield/nt_buckler,
 		/datum/design/autolathe/shield/nt_shield,
 		//mods
@@ -128,31 +129,6 @@
 /obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public
 	disk_name = "Bonfire Armory - Crusade Starter Kit"
 	license = 8
-
-/obj/item/computer_hardware/hard_drive/portable/design/nt_grenades
-	disk_name = "Bonfire Armory - Grenades Pack"
-	icon_state = "neotheology"
-	license = 12
-	designs = list(
-		/datum/design/autolathe/grenade/nt_explosive,
-		/datum/design/autolathe/grenade/nt_flashbang,
-		/datum/design/autolathe/grenade/nt_frag,
-		/datum/design/autolathe/grenade/nt_smokebomb,
-		/datum/design/autolathe/grenade/nt_heatwave
-	)
-
-//for the EOTP
-/obj/item/computer_hardware/hard_drive/portable/design/nt/grenades
-	disk_name = "Bonfire Armory - Grenades Pack Plus"
-	icon_state = "neotheology"
-	license = 16
-	designs = list(
-		/datum/design/autolathe/grenade/nt_explosive,
-		/datum/design/autolathe/grenade/nt_flashbang,
-		/datum/design/autolathe/grenade/nt_frag,
-		/datum/design/autolathe/grenade/nt_smokebomb,
-		/datum/design/autolathe/grenade/nt_heatwave
-	)
 
 //for the EOTP
 /obj/item/computer_hardware/hard_drive/portable/design/nt/new_guns

@@ -5,12 +5,12 @@
 /proc/biomatter_attack(mob/living/victim, var/damage = rand(2, 4))
 	if(istype(victim))
 		var/T = get_turf(victim)
-		var/hazard_damage = -100 + victim.getarmor(null, ARMOR_BIO)
+		var/hazard_damage = -100 + (victim.get_heat_protection() * 100)
 		if(hazard_damage >= 0)
 			return
 		hazard_damage *= -1
 		hazard_damage *= 0.003 //Are armor still does SMOTHING
-		heatwave(T, 0, 0, 80 * hazard_damage, 0, 0)
+		heatwave(T, 0, 0, 80 * hazard_damage, 3, 0)
 
 //this proc spill some biomass on the floor
 //dirs_to_spread - list with dirs where biomass should expand after creation
@@ -37,8 +37,8 @@
 
 
 /obj/effect/decal/cleanable/solid_biomass
-	name = "solid biomass"
-	desc = "An incredibly toxic and highly dangerous solidified biomass. Better not touch it, unless you want to die from toxic shock."
+	name = "solidified scorch"
+	desc = "A spill of scorch that's solidified, incredibly hot to the touch and dangerous to those not wearing protective gear."
 	icon = 'icons/obj/bioreactor_misc.dmi'
 	icon_state = "biomass-1"
 	anchored = TRUE
@@ -53,8 +53,8 @@
 	icon_state = "biomass-[rand(1, 3)]"
 
 /obj/effect/decal/cleanable/solid_biomass/aoe
-	name = "fresh solid biomass"
-	desc = "An incredibly toxic and highly dangerous solidified biomass. Better not be nere it it, unless you want to die from toxic shock."
+	name = "fresh solidified scorch"
+	desc = "A spill of scorch that's solidified, incredibly hot to the touch and dangerous to those not wearing protective gear. This one is fresh and is able to radiate heat in a small area."
 	icon = 'icons/obj/bioreactor_misc.dmi'
 	icon_state = "biomass-1"
 	anchored = TRUE

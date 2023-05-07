@@ -1,7 +1,7 @@
 /obj/machinery/autolathe/bioprinter
-	name = "church bioprinter"
-	desc = "A strange looking machine for printing things using biomass."
-	icon_state = "bioprinter"
+	name = "custodian flarelathe"
+	desc = "A forge design created by the Custodians that makes use of Radiance to smith their equipment."
+	icon_state = "flarelathe"
 	unsuitable_materials = list()
 	build_type = AUTOLATHE | BIOPRINTER
 	storage_capacity = 480

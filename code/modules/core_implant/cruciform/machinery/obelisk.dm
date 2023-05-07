@@ -1,10 +1,10 @@
 GLOBAL_LIST_EMPTY(all_obelisk)
 
 /obj/machinery/power/nt_obelisk
-	name = "Bonfire obelisk"
-	desc = "The obelisks of the church are said to protect and empower those bearing cruciforms, how it works is not truly known, perhaps it is faith?"
+	name = "Bonfire torchbearer"
+	desc = "The Torchbearer is an advanced piece of machinery that protects the bodies and calms the minds of the Hearthcore-implanted nearby."
 	icon = 'icons/obj/neotheology_machinery.dmi'
-	icon_state = "nt_obelisk"
+	icon_state = "torchbearer"
 	//TODO:
 	//circuit = /obj/item/electronics/circuitboard/nt_obelisk
 
@@ -164,4 +164,4 @@ GLOBAL_LIST_EMPTY(all_obelisk)
 
 
 /obj/machinery/power/nt_obelisk/update_icon()
-	icon_state = "nt_obelisk[active?"_on":""]"
+	icon_state = "nt_obelisk[active?"_activate":""]"

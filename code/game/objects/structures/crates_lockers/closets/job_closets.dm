@@ -81,3 +81,24 @@
 	new /obj/item/newspaper_stack(src)
 	new /obj/item/soap/deluxe(src)
 	new /obj/item/holyvacuum(src)
+
+//Custodians
+
+/obj/structure/closet/oathbound
+	name = "oathbound closet"
+	desc = "A closet for those that call themselves Oathbound."
+	icon_state = "acolyte"
+
+/obj/structure/closet/acolyte/populate_contents()
+	if(prob(25))
+		new /obj/item/storage/backpack/neotheology(src)
+	else if(prob(25))
+		new /obj/item/storage/backpack/sport/neotheology(src)
+	else
+		new /obj/item/storage/backpack/satchel/neotheology(src)
+	new /obj/item/clothing/under/custodian/oathbound(src)
+	new /obj/item/storage/belt/utility/neotheology(src)
+	new /obj/item/clothing/mask/gas/germanmask(src)
+	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/clothing/gloves/thick(src)
+	new /obj/item/tool/knife/dagger/nt(src)

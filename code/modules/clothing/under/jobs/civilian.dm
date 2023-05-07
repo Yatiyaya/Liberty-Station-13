@@ -81,7 +81,6 @@
 	desc = "A grey and orange Skylight jumpsuit to fit Skylight regulations."
 	icon_state = "cargotech"
 	item_state = "miner"
-
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/rank/cargoclerk
@@ -92,135 +91,29 @@
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
-/obj/item/clothing/under/rank/preacher
-	desc = "A dark ceremonial robe tailored for the Oathpledge."
-	name = "oathpledge 's robe"
-	icon_state = "preacher"
-	item_state = "w_suit"
+/obj/item/clothing/under/custodian/oathbound
+	name = "oathbound underarmor"
+	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
+	icon_state = "oathbound_underarmor"
+	item_state = "oathbound_underarmor"
 
+/obj/item/clothing/under/custodian/enkindled
+	name = "enkindled underarmor"
+	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
+	icon_state = "enkindled_underarmor"
+	item_state = "enkindled_underarmor"
 
-/obj/item/clothing/under/rank/preacher/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
+/obj/item/clothing/under/custodian/forgemaster
+	name = "forgemaster underarmor"
+	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
+	icon_state = "forgemaster_underarmor"
+	item_state = "forgemaster_underarmor"
 
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Preacher"] = "preacher"
-	options["Preacher Basic"] = "preacher_basic"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You roll your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/under/rank/acolyte
-	desc = "Ceremonial garb of the Bonfire's vectors."
-	name = "vector's vestments"
-	icon_state = "acolyte"
-	item_state = "acolyte"
-
-/obj/item/clothing/under/rank/acolyte/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Acolyte"] = "acolyte"
-	options["Acolyte Basic"] = "acolyte_basic"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You roll your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/under/rank/church
-	desc = "Smells like incense."
-	name = "church vestments"
-	icon_state = "church"
-	item_state = "church"
-
-/obj/item/clothing/under/rank/church/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Vestments"] = "church"
-	options["Vestments Basic"] = "church_basic"
-	options["Vestments Sports"] = "nt_sports"
-	options["Vestments Sports"] = "nt_sports"
-	options["Vestments Robe"] = "churchgrobe"
-	options["Vestments Ornate Robe"] = "nt_ornate"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You roll your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/under/rank/church/toga
-	desc = "Smells like laurel wreath."
-	name = "church toga"
-	icon_state = "numerical_garbs_red"
-
-/obj/item/clothing/under/rank/church/toga/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Red"] = "numerical_garbs_red"
-	options["Red Pauldronless"] = "churchtoga_alt"
-	options["Black"] = "churchtoga_black"
-	options["Black Pauldronless"] = "churchtoga_blackalt"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You roll your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
+/obj/item/clothing/under/custodian/oathpledge
+	name = "oathpledge underarmor"
+	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
+	icon_state = "oathpledge_underarmor"
+	item_state = "oathpledge_underarmor"
 
 /obj/item/clothing/under/rank/chef
 	desc = "A pleasant yet practical suit for professional kitchen staff."

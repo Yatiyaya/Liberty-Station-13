@@ -152,12 +152,6 @@
 	min_cost = 10
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
 
-/datum/armament/item/disk/nukes
-	name = "Disk - Holy Grenades"
-	cost = 25
-	min_cost = 20
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/grenades
-
 /datum/armament/item/disk/plasma_shell
 	name = "Disk - Plasma Ammo"
 	cost = 30

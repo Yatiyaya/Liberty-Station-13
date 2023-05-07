@@ -15515,7 +15515,6 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor1north)
 "ecH" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/light_switch{
 	pixel_y = 32
 	},
@@ -19118,7 +19117,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "ffy" = (
-/obj/structure/closet/custodial,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "ffC" = (
@@ -23303,7 +23301,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "glE" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
@@ -25556,10 +25553,6 @@
 	},
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/engineering/shield_generator)
-"gRp" = (
-/obj/structure/closet/acolyte,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
 "gRt" = (
 /obj/structure/shuttle_part/mining{
 	icon_state = "12,1"
@@ -28822,7 +28815,7 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/outside/forest)
 "hJR" = (
-/obj/structure/low_wall/church,
+/obj/structure/low_wall/custodian,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/vectorrooms)
 "hKc" = (
@@ -37622,7 +37615,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "khU" = (
 /obj/machinery/optable/altar,
-/obj/item/rig/combat/knight/equipped,
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
@@ -40775,7 +40767,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/machinery/composite_artificer,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "lbZ" = (
@@ -44840,10 +44831,6 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor1west)
-"miX" = (
-/obj/structure/closet/secure_closet/personal/agrolyte,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
 "mjb" = (
 /obj/machinery/keycard_auth{
 	pixel_y = -24
@@ -50170,7 +50157,6 @@
 /area/liberty/maintenance/surface_maints_1)
 "nJD" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/accessory/magatama,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "nJK" = (
@@ -57053,7 +57039,6 @@
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
 "pCA" = (
-/obj/structure/closet/secure_closet/reinforced/preacher,
 /obj/item/device/taperecorder,
 /obj/item/device/camera,
 /obj/item/device/camera_film,
@@ -75964,10 +75949,6 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/maintenance/undergroundfloor1east)
-"uBr" = (
-/obj/machinery/biomatter_solidifier,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "uBt" = (
 /obj/random/scrap/dense_weighted,
 /obj/effect/decal/cleanable/dirt,
@@ -78220,7 +78201,6 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor1west)
 "vlx" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/camera/network/church,
 /obj/structure/noticeboard/church{
 	pixel_y = 32
@@ -87050,7 +87030,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/science)
 "xEB" = (
-/obj/machinery/textials,
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
@@ -88447,7 +88426,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "xXO" = (
-/obj/structure/closet/custodial,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
@@ -187534,7 +187512,7 @@ fly
 ttZ
 xEB
 pqh
-uBr
+wtE
 hAG
 gch
 gWh
@@ -189546,10 +189524,10 @@ saN
 aRj
 jux
 mZb
-gRp
+ffy
 pvP
 cby
-miX
+ffy
 tUJ
 pCA
 ddi
@@ -189751,7 +189729,7 @@ mZb
 vlx
 fSn
 rSM
-miX
+ffy
 tUJ
 mWx
 mWx

@@ -354,15 +354,3 @@
 		on_bash(W, user)
 	else
 		..()
-
-/obj/item/tool/sword/crusader
-	name = "crusader great sword"
-	desc = "A traditional blade meeting the materials and design of the future. \
-	It's made from durasteel and the craftsmanship is of the highest quality. It bears the insignia of the Church. Deus Vult."
-	icon = 'icons/obj/weapons-blades.dmi'
-	icon_state = "crusader"
-	item_state = "crusader"
-	force = WEAPON_FORCE_LETHAL
-	armor_penetration = ARMOR_PEN_HALF
-	matter = list(MATERIAL_CARBON_FIBER = 120, MATERIAL_GOLD = 3)
-	price_tag = 10000

@@ -20,7 +20,7 @@
 /obj/item/forgesigil
 	name = "custodian forge sigil"
 	desc = "A radiance-infused emblem forged by the Custodians. It allows access to Hearthcore-locked machinery."
-	icon = 'icons/obj/bureaucracy.dmi'
+	icon = 'icons/obj/items.dmi'
 	icon_state = "forgesigil"
 	item_state = "forgesigil"
 	slot_flags = SLOT_BELT | SLOT_EARS

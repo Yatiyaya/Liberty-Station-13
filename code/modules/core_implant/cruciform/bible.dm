@@ -1,7 +1,9 @@
 /obj/item/book/ritual/cruciform
-	name = "Custodian guidance book"
-	desc = "Contains lectures for use by Custodians."
-	icon_state = "bible"
+	name = "Custodian hearth lantern"
+	desc = "Holds lectures for use by Custodians."
+	icon = 'icons/obj/nt_melee.dmi'
+	icon_state = "hearth_lantern"
+	item_state = "hearth_lantern"
 	price_tag = 150
 
 /*
@@ -20,7 +22,8 @@
 	icon_state = "biblep"*/
 
 /obj/item/book/ritual/cruciform/priest
-	name = "Oathpledge guidance book"
-	desc = "Contains lectures meant only for the Oathpledge."
-	icon_state = "biblep"
+	name = "Oathpledge hearth lantern"
+	desc = "Holds lectures meant only for the Oathpledge."
+	icon_state = "hearth_lantern_oathpledge"
+	item_state = "hearth_lantern_oathpledge"
 	price_tag = 250

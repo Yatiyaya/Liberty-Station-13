@@ -53,7 +53,7 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/storage
 		)
-
+/* Pending CustodianIRR sprites later
 /obj/item/rig/combat/knight
 	name = "hussar hardsuit control module"
 	desc = "A RIG module for a \"Hussar\" model hardsuit, jointly manufactured by Divisors and Numericals of the New Testament. \
@@ -107,3 +107,4 @@
 		bio = 100,
 		rad = 50
 	)
+*/

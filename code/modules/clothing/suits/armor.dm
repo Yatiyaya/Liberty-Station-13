@@ -210,7 +210,7 @@
 	item_state = "oathbound"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 0)
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
 	max_upgrades = 2
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -242,7 +242,7 @@
 	desc = "The formidable armor of the leaders and guides of the Custodians. A sturdy and fire-resistant design."
 	icon_state = "oathpledge"
 	item_state = "oathpledge"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 
 //Guild
 /obj/item/clothing/suit/armor/vest/technomancersuit
