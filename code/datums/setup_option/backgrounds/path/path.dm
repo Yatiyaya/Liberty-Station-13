@@ -58,7 +58,7 @@
 
 	perks = list(PERK_NEPOTISM) //You have defended the free market one too many times Harry, you are getting political again.
 
-	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5 STAT_COG = 15)
+	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5, STAT_COG = 15)
 
 /datum/category_item/setup_option/background/path/noble
 	name = "Impoverished Noble"
