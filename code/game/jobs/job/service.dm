@@ -51,12 +51,13 @@
 	access = list(access_cargo, access_bar)
 	initial_balance = 750
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
+	department_account_access = TRUE
 	stat_modifiers = list(
 		STAT_ROB = 10,
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_MARKET_PROF, PERK_CLUB, PERK_COMMON_SENSE)
+	perks = list(PERK_MARKET_PROF, PERK_COMMON_SENSE)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/fixer
 	description = "The Fixer looks over the club, ensuring nobody skips on their bill or gets too handsy.<br>\
