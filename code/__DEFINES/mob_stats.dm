@@ -10,7 +10,6 @@
 #define STAT_WIL			"Willpower"
 
 #define ALL_STATS	list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_TGH,STAT_VIG,STAT_WIL)
-#define ALL_STATS_FOR_LEVEL_UP	list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_TGH,STAT_VIG,STAT_WIL) //Cant naturally gain more ana
 #define ALL_STATS_TO_IMPRINT list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_VIG) //So that people stop memeing the imprinter
 
 #define STAT_LEVEL_NONE     0
