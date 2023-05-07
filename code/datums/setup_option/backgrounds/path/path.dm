@@ -22,9 +22,7 @@
 	desc = "You used to work as an EMT either in civilian or military sector. \
 	You have basics of first aid but not much else."
 
-	perks = list(PERK_MEDICAL_EXPERT)
-
-	stat_modifiers = list(STAT_ROB = -5, STAT_BIO = 10, STAT_MEC = -10, STAT_WIL = 5)
+	stat_modifiers = list(STAT_ROB = -5, STAT_BIO = 10, STAT_MEC = -5, STAT_COG = 5)
 
 /datum/category_item/setup_option/background/path/criminal //Former pirate is to be considered merged under this.
 	name = "Former Criminal"
