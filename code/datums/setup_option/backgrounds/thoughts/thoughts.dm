@@ -9,7 +9,7 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -10, STAT_TGH = 5)
+	stat_modifiers = list(STAT_COG = -10)
 
 /datum/category_item/setup_option/background/thoughts/composure
 	name = "Survivor Mindset"
@@ -21,8 +21,6 @@
 	perks = list(PERK_SURVIVOR)
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
-	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
 	name = "Living Computer"
@@ -48,8 +46,6 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_COG = -10)
-
 /datum/category_item/setup_option/background/thoughts/volition
 	name = "Wasteland of the Mind"
 	desc = "Nothing brings you true joy in life never experienced happiness either, about the only thing that only ever got near to that feeling was finding a penny lying on the street. \
@@ -60,8 +56,6 @@
 	perks = list(PERK_NIHILIST)
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
-	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
 	name = "Malfunctioning Motorics"
@@ -88,7 +82,7 @@
 
 	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
-	stat_modifiers = list(STAT_VIG = 10, STAT_TGH = -15)
+	stat_modifiers = list(STAT_VIG = 10, STAT_TGH = -10)
 
 /* - Psionics can't be started with currently. Until Psionics are reworked this will be disabled.
 /datum/category_item/setup_option/background/thoughts/inland_empire

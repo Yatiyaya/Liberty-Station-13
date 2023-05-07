@@ -1,11 +1,11 @@
 //Path of life you know the stuff you actually did in your life matters HERE. / The actual stats are gonna come later once I finished my sheet - Lamasmaster
-//20 points base / -5 points for every perk given by a background, keep the plus and minus equal on stats
+//As a rule of thumb, +5 points if no perk, equal points deducted + added if contains a perk
 /datum/category_item/setup_option/background/path/labourer
 	name = "Former Labourer"
 	desc = "You used to work in the labour sector as a miner, janitor or anything else you could think of. \
 	This made you stronger and skilled at practical things but not very smart."
 
-	stat_modifiers = list(STAT_ROB = 10, STAT_TGH = 5, STAT_BIO = -20, STAT_MEC = 10)
+	stat_modifiers = list(STAT_ROB = 5, STAT_BIO = -10, STAT_MEC = 10)
 
 /datum/category_item/setup_option/background/path/paper_worm
 	name = "Paper Worm"
@@ -13,9 +13,9 @@
 			Coffee is your blood, your mind is corporate slogans, and personal life is nonexistent. \
 			But here you are, on a spaceship flying to hell. There is something more to you, something that may come to light later."
 
-	perks = list(PERK_PAPER_WORM)
+	perks = list(PERK_PAPER_WORM) //Except here cause sanity memems
 
-	stat_modifiers = list(STAT_ROB = -10, STAT_TGH = -10, STAT_BIO = -10, STAT_MEC = -10, STAT_VIG = -10, STAT_COG = -10)
+	stat_modifiers = list(STAT_ROB = -10, STAT_TGH = -10, STAT_BIO = -10, STAT_MEC = -10, STAT_VIG = -10, STAT_WIL = -10)
 
 /datum/category_item/setup_option/background/path/medtech //This should be both civilian and military to cut down on the amount paths available
 	name = "Former Medical Technician"
@@ -24,7 +24,7 @@
 
 	perks = list(PERK_MEDICAL_EXPERT)
 
-	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_BIO = 10, STAT_MEC = -10,STAT_COG = 5)
+	stat_modifiers = list(STAT_ROB = -5, STAT_BIO = 10, STAT_MEC = -10, STAT_WIL = 5)
 
 /datum/category_item/setup_option/background/path/criminal //Former pirate is to be considered merged under this.
 	name = "Former Criminal"
@@ -33,7 +33,7 @@
 
 	perks = list(PERK_ATHLETE)
 
-	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_MEC = -20)
+	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_MEC = -15)
 
 /datum/category_item/setup_option/background/path/armed_forces //All ex militaries merged under here, also applies to cops like this.
 	name = "Former Armed Forces Member"
@@ -42,7 +42,7 @@
 
 	perks = list(PERK_VETERAN)
 
-	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 10, STAT_VIG = 10, STAT_BIO = -15, STAT_MEC = -15)
+	stat_modifiers = list(STAT_TGH = 5, STAT_VIG = 10, STAT_MEC = -15)
 
 /datum/category_item/setup_option/background/path/mercenary //different from armoed forces member, get perk but less points is the idea here
 	name = "Retired Mercenary"
@@ -51,7 +51,7 @@
 
 	perks = list(PERK_MERCENARY_GRIT)
 
-	stat_modifiers = list(STAT_TGH = 10, STAT_VIG = 5, STAT_BIO = -15, STAT_MEC = -5)
+	stat_modifiers = list(STAT_TGH = 10, STAT_VIG = 5, STAT_BIO = -15)
 
 /datum/category_item/setup_option/background/path/entrepreneur
 	name = "Free Market Shark"
@@ -60,7 +60,7 @@
 
 	perks = list(PERK_NEPOTISM) //You have defended the free market one too many times Harry, you are getting political again.
 
-	stat_modifiers = list(STAT_ROB = -5, STAT_VIG = -5, STAT_COG = 10)
+	stat_modifiers = list(STAT_ROB = -5, STAT_VIG = -5, STAT_COG = 15, STAT_WIL = -5)
 
 /datum/category_item/setup_option/background/path/noble
 	name = "Impoverished Noble"
@@ -69,7 +69,7 @@
 
 	perks = list(PERK_NOBLE)
 
-	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -10, STAT_BIO = 5, STAT_MEC = 5, STAT_COG = 10)
+	stat_modifiers = list(STAT_ROB = 10, STAT_COG = 5, STAT_VIG = -10, STAT_WIL = -5)
 
 /datum/category_item/setup_option/background/path/drug_addict
 	name = "Magnesium-Modus Vivendi"
@@ -78,7 +78,7 @@
 
 	perks = list(PERK_ADDICT)
 
-	stat_modifiers = list(STAT_TGH = 5, STAT_MEC = -5, STAT_COG = -15, STAT_WIL = 10)
+	stat_modifiers = list(STAT_TGH = -5, STAT_MEC = -10, STAT_WIL = 15)
 
 /datum/category_item/setup_option/background/path/razor_maniac
 	name = "Rookie Transhumanist"
@@ -87,7 +87,7 @@
 
 	racial_implants = (/obj/item/organ_module/active/simple/wolverine)
 
-	stat_modifiers = list(STAT_ROB = 15, STAT_TGH = -10, STAT_VIG = 5, STAT_MEC = -10)
+	stat_modifiers = list(STAT_ROB = 15, STAT_TGH = -5, STAT_MEC = -5)
 
 /datum/category_item/setup_option/background/path/linguist
 	name = "Aspiring Linguist"
