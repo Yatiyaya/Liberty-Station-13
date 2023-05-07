@@ -261,51 +261,30 @@
  * Factions
  */
 
-//Marshals
+//Watchmen
 /obj/item/clothing/head/helmet/marshal
 	name = "watchmen helmet"
 	desc = "Standard operator gear. Protects the head from impacts. Painted in Watchmen colors and features an eye shield"
-	icon_state = "helmet_ironhammer"
-	icon_state = "helmet_ironhammer"
+	icon_state = "watch_helmet"
+	icon_state = "watch_helmet"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
 	body_parts_covered = HEAD|EYES|EARS
-
-/obj/item/clothing/head/helmet/marshal_full
-	name = "watchmen full helmet"
-	desc = "A full helmet with a built in glow visor. While a weak light its better than nothing and the full cover design makes it ideal for general protection."
-	icon_state = "ironhammer_full"
-	item_state = "ironhammer_full"
-	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
-	action_button_name = "Toggle Headlamp"
-	brightness_on = 4
-
-/obj/item/clothing/head/helmet/marshal_full/update_icon()
-	if(on)
-		icon_state = "ironhammer_full_on"
-		set_light(2, 2, COLOR_LIGHTING_ORANGE_MACHINERY)
-	else
-		icon_state = "ironhammer_full"
-		set_light(0, 0)
-	update_wear_icon()
-	..()
 
 /obj/item/clothing/head/helmet/warrant_officer
 	name = "warrant officer full helmet"
 	desc = "A full helmet with a built in glow visor. This one appears to be fitted with new visor servos internally to protect from flashes as well as a bullet-proof reinforced mouth guard!"
-	icon_state = "ironhammer_wo_full"
-	item_state = "ironhammer_wo_full"
+	icon_state = "watch_deputy_helm"
+	item_state = "watch_deputy_helm"
 	flash_protection = FLASH_PROTECTION_MODERATE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 100, rad = 0)
 
 /obj/item/clothing/head/helmet/warrant_officer/update_icon()
 	if(on)
-		icon_state = "ironhammer_wo_full_on"
+		icon_state = "watch_deputy_helm_on"
 		set_light(2, 2, COLOR_LIGHTING_ORANGE_MACHINERY)
 	else
-		icon_state = "ironhammer_wo_full"
+		icon_state = "watch_deputy_helm"
 		set_light(0, 0)
 	update_wear_icon()
 	..()
@@ -881,8 +860,8 @@
 	obscuration = LIGHT_OBSCURATION
 
 /obj/item/clothing/head/helmet/laserproof/marshal
-	icon_state = "ablative_ironhammer"
-	item_state = "ablative_ironhammer"
+	icon_state = "watch_ablative"
+	item_state = "watch_ablative"
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
@@ -913,7 +892,8 @@
 /obj/item/clothing/head/helmet/riot_hud
 	name = "watchmen riot helmet"
 	desc = "Standard-issue liberty watch helmet with a basic HUD and targeting system included, produced by Seinemetall Defense GmbH after more classic riot helmets were not able to handle the day to day riots."
-	icon_state = "light_riot"
+	icon_state = "watch_riot"
+	item_state = "watch_riot"
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	armor_list = list(
@@ -984,20 +964,20 @@
 
 /obj/item/clothing/head/helmet/riot_hud/update_icon()
 	if(hud in src)
-		icon_state = "light_riot"
+		icon_state = "watch_riot"
 		set_light(0, 0)
 	else
-		icon_state = "light_riot_on"
+		icon_state = "watch_riot_on"
 		set_light(2, 2, COLOR_LIGHTING_ORANGE_MACHINERY)
 	update_wear_icon()
 	..()
 
 //Nightvision
 /obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg
-	name = "marshal tactical bulletproof helmet"
+	name = "watch tactical bulletproof helmet"
 	desc = "A bulletproof security helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent. \
 			Comes with inbuilt nightvision HUD."
-	icon_state = "bulletproof_ironhammer"
+	icon_state = "watch_nvg"
 	body_parts_covered = HEAD | EARS
 	flags_inv = NONE
 	action_button_name = "Toggle Night Vision"
@@ -1058,15 +1038,16 @@
 
 /obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg/update_icon()
 	if(hud in src)
-		icon_state = "bulletproof_ironhammer"
+		icon_state = "watch_nvg"
 		set_light(0, 0)
 	else
-		icon_state = "bulletproof_ironhammer_on"
+		icon_state = "watch_nvg_on"
 		set_light(1, 1, COLOR_LIGHTING_GREEN_MACHINERY)
 	update_wear_icon()
 	..()
 
-//Thermal
+//Thermal - No
+/*
 /obj/item/clothing/head/helmet/bulletproof/ironhammer_thermal
 	name = "marshal thermo-nightvision helmet"
 	desc = "A bulletproof security helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent. \
@@ -1139,7 +1120,7 @@
 		set_light(1, 1, COLOR_LIGHTING_RED_BRIGHT)
 	update_wear_icon()
 	..()
-
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
@@ -1275,8 +1256,7 @@
 		return 1
 
 /obj/item/clothing/head/helmet/faceshield/altyn/ironhammer
-	icon_state = "ironhammer_altyn"
-	item_state = "ironhammer_altyn"
+	icon_state = "watch_altyn"
 
 /obj/item/clothing/head/helmet/faceshield/altyn/maska
 	name = "maska helmet"
