@@ -262,13 +262,8 @@
 	desc = "Be pure! Be vigilant! But never behave. Having sharp eyes and nerves of steel improves your proficiency with guns and overcoming fear from creatures' roars, among other feats."
 
 /datum/stat/vivification
-	name = STAT_VIV
-	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs, be they helpful or harmful."
-
-/datum/stat/anatomy
-	name = STAT_ANA
-	desc = "The body itself; the more you know about how far you can push it, the easier it becomes to edge closer towards death's door."
-
+	name = STAT_WIL
+	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs and horrors of the world."
 
 // Use to perform stat checks
 /mob/proc/stat_check(stat_path, needed)

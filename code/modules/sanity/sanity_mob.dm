@@ -156,7 +156,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	activate_mobs_in_range(owner, SANITY_MOB_DISTANCE_ACTIVATION)
 	if(sanity_invulnerability)//Sorry, but that needed to be added here :C
 		return
-	var/cog = owner.stats.getStat(STAT_COG)
+	var/cog = owner.stats.getStat(STAT_WIL)
 	for(var/atom/A in view(owner.client ? owner.client : owner))
 		if(A.sanity_damage) //If this thing is not nice to behold
 			. += SANITY_DAMAGE_VIEW(A.sanity_damage, cog, get_dist(owner, A))
@@ -173,7 +173,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 		return 0
 	. = my_area.sanity.affect
 	if(. < 0)
-		. *= owner.stats.getStat(STAT_COG) / STAT_LEVEL_MAX //Mental state should matter more than your perception and agility
+		. *= owner.stats.getStat(STAT_WIL) / STAT_LEVEL_MAX //Mental state should matter more than your perception and agility
 
 /datum/sanity/proc/handle_breakdowns()
 	for(var/datum/breakdown/B in breakdowns)
@@ -373,7 +373,6 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 				resting = 0
 
 				LEGACY_SEND_SIGNAL(O, COMSIG_ODDITY_USED)
-				owner.give_health_via_stats()
 				for(var/mob/living/carbon/human/H in viewers(owner))
 					LEGACY_SEND_SIGNAL(H, COMSIG_HUMAN_ODDITY_LEVEL_UP, owner, O)
 
@@ -388,7 +387,6 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 
 			var/stat_pool = resting * 15
 			resting = 0
-			owner.give_health_via_stats()
 			while(stat_pool > 0)
 				stat_pool--
 				LAZYAPLUS(stat_change, pick(ALL_STATS_FOR_LEVEL_UP), 3)
@@ -403,33 +401,33 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	owner.pick_individual_objective()
 
 /datum/sanity/proc/onDamage(amount)
-	changeLevel(-SANITY_DAMAGE_HURT(amount, owner.stats.getStat(STAT_COG)))
+	changeLevel(-SANITY_DAMAGE_HURT(amount, owner.stats.getStat(STAT_WIL)))
 
 /datum/sanity/proc/onPsyDamage(amount)
-	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_COG)))
+	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_WIL)))
 
 /datum/sanity/proc/onSeeDeath(mob/M)
 	var/mob/living/carbon/human/H
 	if(ishuman(H))
-		var/penalty = -SANITY_DAMAGE_DEATH(owner.stats.getStat(STAT_COG))
+		var/penalty = -SANITY_DAMAGE_DEATH(owner.stats.getStat(STAT_WIL))
 		if(owner.stats.getPerk(PERK_NIHILIST))
 			var/effect_prob = rand(1, 100)
 			switch(effect_prob)
 				if(1 to 25)
-					M.stats.addTempStat(STAT_COG, 5, INFINITY, "Fate Nihilist")
+					M.stats.addTempStat(STAT_WIL, 5, INFINITY, "Fate Nihilist")
 				if(25 to 50)
-					M.stats.removeTempStat(STAT_COG, "Fate Nihilist")
+					M.stats.removeTempStat(STAT_WIL, "Fate Nihilist")
 				if(50 to 75)
 					penalty *= -1
 				if(75 to 100)
 					penalty *= 0
-		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && prob(100-owner.stats.getStat(STAT_COG)))
+		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && prob(100-owner.stats.getStat(STAT_WIL)))
 			setLevel(0)
 		else
 			changeLevel(penalty*death_view_multiplier)
 
 /datum/sanity/proc/onShock(amount)
-	changeLevel(-SANITY_DAMAGE_SHOCK(amount, owner.stats.getStat(STAT_COG)))
+	changeLevel(-SANITY_DAMAGE_SHOCK(amount, owner.stats.getStat(STAT_WIL)))
 
 /datum/sanity/proc/onAlcohol(datum/reagent/ethanol/E, multiplier)
 	changeLevel(E.sanity_gain_ingest * multiplier)

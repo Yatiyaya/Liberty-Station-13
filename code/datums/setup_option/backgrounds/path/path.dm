@@ -78,7 +78,7 @@
 
 	perks = list(PERK_ADDICT)
 
-	stat_modifiers = list(STAT_TGH = 5, STAT_MEC = -5, STAT_COG = -15, STAT_VIV = 10)
+	stat_modifiers = list(STAT_TGH = 5, STAT_MEC = -5, STAT_COG = -15, STAT_WIL = 10)
 
 /datum/category_item/setup_option/background/path/razor_maniac
 	name = "Rookie Transhumanist"
@@ -105,7 +105,7 @@
 
 	perks = list(PERK_CUBAN_DELIGHT)
 
-	stat_modifiers = list(STAT_TGH = -10, STAT_VIV = 10)
+	stat_modifiers = list(STAT_TGH = -10, STAT_WIL = 10)
 
 /*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
