@@ -1,4 +1,4 @@
-/obj/machinery/power/wall_obelisk
+/obj/machinery/power/sentinel
 	name = "sentinel"
 	desc = "A towering behemoth sculpted by the Custodians, when filled with biosilk as fuel, it lashes out at nearby foes."
 	icon = 'icons/obj/64_custodian.dmi'
@@ -21,24 +21,24 @@
 	var/biomatter_ammo = 10 //We attack 10 times before running out on map spawn
 	var/biomatter_use_per_shot = 1 //Modular way of making it so admins can tweak this mid round
 
-/obj/machinery/power/wall_obelisk/New()
+/obj/machinery/power/sentinel/New()
 	update_icon()
 	..()
 
-/obj/machinery/power/wall_obelisk/update_icon()
+/obj/machinery/power/sentinel/update_icon()
 	if(biomatter_ammo)
 		icon_state = initial(icon_state) + "_activate"
 	else
 		icon_state = initial(icon_state)
 
-/obj/machinery/power/wall_obelisk/attack_hand(mob/user)
+/obj/machinery/power/sentinel/attack_hand(mob/user)
 	return
 
-/obj/machinery/power/wall_obelisk/examine(mob/user)
+/obj/machinery/power/sentinel/examine(mob/user)
 	..()
 	to_chat(user, "<span class='info'>Level of stored biosilk: [biomatter_ammo]</span>")
 
-/obj/machinery/power/wall_obelisk/attackby(obj/item/I, mob/user as mob)
+/obj/machinery/power/sentinel/attackby(obj/item/I, mob/user as mob)
 	if (istype(I, /obj/item/stack/material/biopolymer_silk))
 		var/obj/item/stack/material/biopolymer_silk/B = I
 		if (B.amount)
@@ -60,7 +60,7 @@
 				to_chat(user, SPAN_WARNING("You can't insert [sheets_amount_to_transphere] in \the [name]."))
 			return
 
-/obj/machinery/power/wall_obelisk/Process()
+/obj/machinery/power/sentinel/Process()
 	..()
 	if(stat)
 		return

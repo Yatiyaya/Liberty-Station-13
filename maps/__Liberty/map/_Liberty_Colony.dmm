@@ -10808,9 +10808,6 @@
 	desc = "Ancient robotic frame, that is long deactivated and rusted solid. However, it still strikes am awesome pose, that somehow makes you think of justice and righteousness.";
 	name = "Statue of Judge Boopsky"
 	},
-/obj/machinery/power/wall_obelisk{
-	pixel_y = 32
-	},
 /obj/machinery/camera/network/command,
 /turf/simulated/floor/wood,
 /area/liberty/command/courtroom)
