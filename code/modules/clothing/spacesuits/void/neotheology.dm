@@ -96,8 +96,8 @@
 /obj/item/clothing/head/helmet/space/void/huscarl
 	name = "huscarl voidsuit helmet"
 	desc = "A voidsuit helmet designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
-	icon_state = "ntvoidhelmet"
-	item_state = "ntvoidhelmet"
+	icon_state = "huscarl_voidsuit_helmet"
+	item_state = "huscarl_voidsuit_helmet"
 	action_button_name = "Toggle Helmet Light"
 	brightness_on = 4 //luminosity when on
 	armor_list = list(
@@ -114,8 +114,8 @@
 /obj/item/clothing/suit/space/void/huscarl
 	name = "huscarl voidsuit"
 	desc = "A voidsuit designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
-	icon_state = "ntvoid"
-	item_state = "ntvoid"
+	icon_state = "huscarl_voidsuit"
+	item_state = "huscarl_voidsuit"
 	matter = list(MATERIAL_CARBON_FIBER = 8, MATERIAL_STEEL = 10, MATERIAL_BIO_SILK = 30)
 	slowdown = 0.15
 	armor_list = list(
