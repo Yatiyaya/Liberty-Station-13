@@ -1,4 +1,4 @@
-//Path of life you know the stuff you actually did in your life matters HERE. / The actual stats are gonna come later once I finished my sheet - Lamasmaster
+//Path of life you know the stuff you actually did in your life matters HERE.
 //As a rule of thumb, +5 points if no perk, equal points deducted + added if contains a perk
 /datum/category_item/setup_option/background/path/labourer
 	name = "Former Labourer"

@@ -151,12 +151,16 @@
 	desc = "Special training from senior Shipbreakers and your own experience has allowed you to instinctively know the effects of greater oddities. By examining an oddity that has become an anomaly, you can tell what its greater boon or curse may be."
 	icon_state = "treasure"
 
-/datum/perk/background/market_prof
+/datum/perk/job/market_prof
 	name = "Market Professional"
 	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
 	icon_state = "market_prof"
 
 //Medical perks - relates to surgery and all.
+/datum/perk/job/medicalexpertise
+	name = "Medical Expertise"
+	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
+	icon_state = "knowledge"
 
 /datum/perk/job/surgical_master
 	name = "Surgery Training"
@@ -226,14 +230,14 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
-/datum/perk/foodappraise
+/datum/perk/job/foodappraise
 	name = "Spice up Food"
 	desc = "Your own special, secret touch in seasoning has anomalous properties that can enhance most food products."
 	icon_state = "spice"
 	active = FALSE
 	passivePerk = FALSE
 
-/datum/perk/foodappraise/activate()
+/datum/perk/job/foodappraise/activate()
 	var/mob/living/carbon/human/user = usr
 	var/obj/item/reagent_containers/food/snacks/F = user.get_active_hand()
 	if(!istype(user))

@@ -130,11 +130,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = "Due to extensive smoker history in your family line or gene-therapy you are now afflicted with a sequence known as 'Cuban Delight' meaning you can slowly recover from effects of venom as long as nicotine is flowing through you."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/background/medicalexpertise
-	name = "Medical Expertise"
-	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
-	icon_state = "knowledge"
-
 /datum/perk/background/klutz
 	name = "Klutz"
 	desc = "You find a lot of tasks a little beyond your ability to perform such is using any type of weaponry, but being accident prone has at least made you used to getting hurt."
