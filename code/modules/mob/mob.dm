@@ -1421,6 +1421,6 @@ mob/proc/yank_out_object()
 //Liberty
 
 /mob/proc/give_health_via_stats()
-	if(stats)
+	if(stats && maxHealth > 33) //Sanity so you cant get below 30 max hp
 		health += src.stats.getStat(STAT_END)
 		maxHealth += src.stats.getStat(STAT_END)
