@@ -60,14 +60,13 @@
 	perks = list(PERK_MARKET_PROF, PERK_COMMON_SENSE)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/fixer
-	description = "The Fixer looks over the club, ensuring nobody skips on their bill or gets too handsy.<br>\
+	description = "The Fixer oversees sales within the cargo-wing of Skylight and aids the service side in daily operations as requested.<br>\
 	You will typically work closely with the Club Workers, keeping order, cleaning, and perhaps entertaining.<br>\
-	You are paid mainly through fulfilling requests for food and service, but your job is to protect the club foremost."
+	You are paid mainly through handling sales, providing aid to Club workers as requested, and other means deemed acceptable by the Club manager."
 
-	duties = "Protect the Skylight Club and it's staff.<br>\
-		Ensure the customers are well-fed and looked after.<br>\
+	duties = "Handle trades, requests, and sales within Cargo.<br>\
+		Help club staff in keeping customers entertained and catered to.<br>\
 		Take on odd jobs and pull connections to get people what they need securely."
-
 
 /obj/landmark/join/start/fixer
 	name = "Fixer"
