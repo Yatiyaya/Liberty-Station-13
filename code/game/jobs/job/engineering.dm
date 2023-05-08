@@ -17,7 +17,6 @@
 	minimum_character_age = 25
 	health_modifier = 5
 
-	disallow_species = list(FORM_UNBRANDED, FORM_PIRSYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief
 
 	access = list(
@@ -81,8 +80,6 @@
 		access_external_airlocks, access_construction, access_atmospherics
 	)
 
-	disallow_species = list(FORM_PIRSYNTH, FORM_LIBYNTH, FORM_NASHEF)
-
 
 	stat_modifiers = list(
 		STAT_MEC = 30,
@@ -129,7 +126,6 @@
 	wage = WAGE_LABOUR_HAZARD
 	health_modifier = 5
 
-	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
 	description = "The Mining Technician is a professional resource procurer, acquiring valuable minerals and materials for the Terra-Therma Workers' Union. Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can. Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use. Whatever you dig up will go to the Union, and from then on it is the responsibility of others within the Union to use or sell as needed. The deep tunnels are far less dangerous than the blisteringly cold wilderness, but pack well - disappearances are not unheard of."
@@ -160,5 +156,3 @@
 	name = "Mining Technician"
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
-
-//No we won't
