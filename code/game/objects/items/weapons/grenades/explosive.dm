@@ -34,8 +34,8 @@
 
 
 /obj/item/grenade/explosive/artileria
-	name = "Excelsior \"Artileria Flare\""
-	desc = "ARTILERIA! This is a standard artillery signaling flare used by Excelsior forces. Better stay well away from it!"
+	name = "legionary \"Artileria Flare\""
+	desc = "ARTILERIA! This is a standard artillery signaling flare used by the legion. Better stay well away from it!"
 	icon = 'icons/obj/lighting.dmi'
 	icon_state = "aflare-on"
 	item_state = "aflare-on"

@@ -5,7 +5,7 @@ var/global/excelsior_conscripts = 0
 var/global/excelsior_last_draft = 0
 
 /obj/machinery/complant_teleporter
-	name = "excelsior long-range teleporter"
+	name = "soviet long-range teleporter"
 	desc = "A powerful teleporter that allows shipping matter in and out. Takes a long time to charge."
 	density = TRUE
 	anchored = TRUE
@@ -50,7 +50,7 @@ var/global/excelsior_last_draft = 0
 		/obj/item/soap/syndie = 25,
 		/obj/item/circuitboard/excelsior_teleporter = 500,
 		/obj/item/circuitboard/excelsiorautolathe = 150,
-		/obj/item/circuitboard/excelsiorreconstructor = 150,
+	/*	/obj/item/circuitboard/excelsiorreconstructor = 150, */
 		/obj/item/circuitboard/excelsior_turret = 150,
 		/obj/item/circuitboard/excelsiorshieldwallgen = 150,
 		/obj/item/circuitboard/excelsior_boombox = 150,

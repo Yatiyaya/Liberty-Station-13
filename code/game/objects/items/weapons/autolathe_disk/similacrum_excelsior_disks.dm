@@ -163,7 +163,7 @@
 		/datum/design/autolathe/ammo/maxim,							//maxim ammo
 		/datum/design/autolathe/circuit/autolathe_excelsior,		//circuits
 		/datum/design/autolathe/circuit/shieldgen_excelsior,
-		/datum/design/autolathe/circuit/reconstructor_excelsior,
+	/*	/datum/design/autolathe/circuit/reconstructor_excelsior, */
 		/datum/design/autolathe/circuit/diesel_excelsior,
 		/datum/design/autolathe/circuit/turret_excelsior,
 		/datum/design/autolathe/circuit/recharger,

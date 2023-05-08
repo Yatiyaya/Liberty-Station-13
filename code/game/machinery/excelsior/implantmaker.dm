@@ -1,3 +1,4 @@
+/*
 /obj/machinery/complant_maker
 	name = "implant reconstructor"
 	desc = "This machine repurposes implants, robot components and bionics, reworking their circuitry into the Excelsior implant pattern which allows recruitment."
@@ -101,3 +102,4 @@
 
 	if(panel_open)
 		add_overlay(image(icon, "panel"))
+*/

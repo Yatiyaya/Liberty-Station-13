@@ -1,7 +1,7 @@
 
 //Sprite base by Près de l'oiseau#2625
 /obj/machinery/power/ex_bluespace_repairer
-	name = "excelsior bluespace aligner"
+	name = "soviet bluespace aligner"
 	desc = "A large tower-radio-like machinery that is used to align and repair bluespace, \
 	used mostly when the long-range teleporters start to destabilize local space. \
 	It can also warn people about a room's bluespace entropy levels."

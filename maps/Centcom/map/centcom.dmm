@@ -5989,7 +5989,6 @@
 /obj/item/circuitboard/excelsior_teleporter,
 /obj/item/circuitboard/excelsior_turret,
 /obj/item/circuitboard/excelsiorautolathe,
-/obj/item/circuitboard/excelsiorreconstructor,
 /obj/item/circuitboard/excelsiorshieldwallgen,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/centcom/evac)

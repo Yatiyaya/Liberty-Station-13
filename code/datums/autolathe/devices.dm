@@ -73,7 +73,7 @@
 	build_path = /obj/item/mine
 
 /datum/design/autolathe/device/excelsiormine
-	name = "excelsior mine"
+	name = "military mine"
 	build_path = /obj/item/mine/excelsior
 
 /datum/design/autolathe/device/propaganda_chip

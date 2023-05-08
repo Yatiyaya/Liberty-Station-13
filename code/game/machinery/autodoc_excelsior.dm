@@ -6,7 +6,7 @@
 #define AUTODOC_DEFAULT_PROCESSING_TIME 35
 
 /obj/machinery/excelsior_autodoc
-	name = "excelsior autodoc"
+	name = "soviet autodoc"
 	desc = "Medical care for everybody, free, and may no one be left behind!"
 	icon = 'icons/obj/machines/excelsior/autodoc.dmi'
 	icon_state = "base"

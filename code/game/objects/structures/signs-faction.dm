@@ -69,12 +69,12 @@
 
 /obj/structure/sign/faction/excelsior
 	name = "Excelsior"
-	desc = "A sign depicting the insignia of Excelsior, the communist cult."
+	desc = "A sign depicting the insignia of Excelsior, a long wiped out communist cult."
 	icon_state = "excelsior"
 
 /obj/structure/sign/faction/excelsior_old
 	name = "Excelsior"
-	desc = "A decaying sign depicting the insignia of Excelsior, the communist cult."
+	desc = "A decaying sign depicting the insignia of Excelsior, a long wiped out communist cult."
 	icon_state = "excelsior-old"
 
 /obj/structure/sign/faction/nanotrasen
@@ -83,8 +83,8 @@
 	icon_state = "NT"
 
 /obj/structure/sign/faction/solgov
-	name = "\improper Sol Federation"
-	desc = "A blue metal banner with a Sol Federation insignia."
+	name = "\improper Terran Federation"
+	desc = "A blue metal banner with a Terran Federation insignia."
 	icon_state = "solgovseal"
 
 /obj/structure/sign/faction/derelict1

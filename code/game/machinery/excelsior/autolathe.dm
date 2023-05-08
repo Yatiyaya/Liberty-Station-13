@@ -1,5 +1,5 @@
 /obj/machinery/autolathe/excelsior
-	name = "excelsior autolathe"
+	name = "astrakhan autolathe"
 	desc = "It produces items using metal and glass."
 	icon = 'icons/obj/machines/excelsior/autolathe.dmi'
 	icon_state = "stanok"
@@ -30,8 +30,8 @@
 
 //Putting this here because fuck making a new .dm for a single antag device
 /obj/machinery/excelsior_boombox
-	name = "excelsior boombox"
-	desc = "A powerful sound propagation system designed to boost Excelsior and lower enemy morale. Plays some sick tunes."
+	name = "astrakhan boombox"
+	desc = "A powerful sound propagation system designed to boost allied and lower enemy morale. Plays some sick tunes."
 	density = TRUE
 	anchored = TRUE
 	icon = 'icons/obj/machines/excelsior/boombox.dmi'
