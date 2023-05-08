@@ -164,4 +164,4 @@ GLOBAL_LIST_EMPTY(all_obelisk)
 
 
 /obj/machinery/power/nt_obelisk/update_icon()
-	icon_state = "nt_obelisk[active?"_activate":""]"
+	icon_state = "torchbearer[active?"_activate":""]"

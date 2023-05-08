@@ -1,6 +1,459 @@
 //////////////////////////////////////////////////
-/////////         TESSELLATE             /////////
+/////////         OATHBOUND             /////////
 //////////////////////////////////////////////////
+
+/datum/ritual/cruciform/oathbound
+	name = "cruciform"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Oathbound"
+	ignore_stuttering = TRUE
+
+/datum/ritual/targeted/cruciform/oathbound
+	name = "cruciform targeted"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Oathbound"
+	ignore_stuttering = TRUE
+
+//datum/ritual/cruciform/oathbound/fireball
+datum/ritual/cruciform/oathbound/fireball
+	name = "Manifestation of Flames"
+	phrase = "Oxidate Lecture: Manifestation of Flames"
+	desc = "Create a launchable fireball on a free hand."
+	power = 25
+
+/datum/ritual/cruciform/oathbound/fireball/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/custodian_fireball/flame = new /obj/item/gun/custodian_fireball(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand is covered in a fierce blue fireball.",
+		"A blue fireball completely covers one of your hands."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/custodian_fireball
+	name = "radiant fireball"
+	desc = "A summoned fireball that dissapears if dropped."
+	icon = 'icons/obj/nt_melee.dmi'
+	icon_state = "fireball_lecture"
+	item_state = "fireball_lecture"
+	origin_tech = list()
+	fire_sound = 'sound/weapons/wave.ogg'
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE
+
+/obj/item/gun/custodian_fireball/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/custodian_fireball/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/custodian_fireball/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("\the [src] fades into nothingness.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+/obj/item/projectile/custodian_fireball
+	name = "fireball"
+	icon_state = "fireball_lecture"
+	damage_types = list(BURN = WEAPON_FORCE_NORMAL)
+
+/obj/item/projectile/custodian_fireball/on_impact(atom/target)
+	biomatter_attack(target, 10)
+	return TRUE
+
+/* might exist eventually, might not
+
+/obj/item/gun/custodian_fireball/explosion
+	projectile_type = /obj/item/projectile/custodian_bigfireball
+
+/obj/item/projectile/custodian_bigfireball
+	name = "fireball"
+	icon_state = "fireball_lecture"
+	var/list/explosion_values = list(0, 1, 2, 4) // Explosions strengths, same value as a regular missile.
+
+/obj/item/projectile/custodian_bigfireball/on_impact(atom/target)
+	explosion(loc, explosion_values[1], explosion_values[2], explosion_values[3], explosion_values[4])
+	return TRUE
+
+datum/ritual/cruciform/oathbound/fireball_big
+	name = "Manifestation of Inferno"
+	phrase = "Oxidate Lecture: Manifestation of Inferno"
+	desc = "Create a launchable exploding fireball on a free hand."
+	power = 25
+
+/datum/ritual/cruciform/oathbound/fireball_big/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/custodian_fireball/explosion/flame = new /obj/item/gun/custodian_fireball/explosion(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand is covered in a fierce blue fireball.",
+		"A blue fireball completely covers one of your hands."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+*/
+
+/datum/ritual/cruciform/oathbound/eyeflare
+	name = "Eyeflare"
+	phrase = "Oxidate Lecture: Eyeflare"
+	desc = "This lecture causes a bright flash in a short radius around the user."
+	power = 20
+
+/datum/ritual/cruciform/oathbound/eyeflare/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
+	for(var/mob/living/carbon/M in viewers(2, null))
+		if(issuperioranimal(M))
+			M.Weaken(10)
+		var/safety = M.eyecheck()
+		if(safety < FLASH_PROTECTION_MINOR)
+			M.flash(3, FALSE, FALSE, TRUE)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/radiance_neural
+	name = "Radiance Neural Expression"
+	phrase = "Oxidate Lecture: Radiance Neural Expression"
+	desc = "You impart a portion of your inner peace on another, gifting them with insight beyond what they are normally capable of. In doing so, you sacrifice some of your own. Requires thirty minutes between uses."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "radiance_neural"
+	power = 90
+
+/datum/ritual/cruciform/oathbound/radiance_neural/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
+	if(!T)
+		fail("No target in front of you.", user, C)
+		return FALSE
+	to_chat(T, SPAN_NOTICE("You feel slightly better as your pain eases."))
+	to_chat(user, SPAN_NOTICE("You ease the pain of [T.name]."))
+
+	if(user.sanity.insight >= 25 && user.species?.reagent_tag != IS_SYNTHETIC && T.species?.reagent_tag != IS_SYNTHETIC)
+		user.sanity.insight -= 25
+		T.sanity.insight += 50
+		to_chat(user, "<span class='info'>You offer your insight to [T.name], your meditation boosting another, allowing them a glimpse at your perceptions.</span>")
+		to_chat(T, "<span class='info'>You feel inspired, a new perspective offered by another, showing you the same picture from a different angle.</span>")
+		set_personal_cooldown(user)
+	else
+		to_chat(user, SPAN_WARNING("You lack the personal insight to impart more to another, time and meditation will allow you to try again."))
+		return FALSE
+	return TRUE
+
+
+/datum/ritual/cruciform/oathbound/searing_of_torment
+	name = "Searing of Torment"
+	phrase = "Oxidate Lecture: Searing of Torment"
+	desc = "A short lecture that removes all pain and heals some damage, requires fifteen minutes between uses."
+	power = 50
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	cooldown_category = "searing"
+
+/datum/ritual/cruciform/oathbound/searing_of_torment/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
+	H.reagents.add_reagent("nepenthe", 10)
+	H.adjustBruteLoss(-10)
+	H.adjustFireLoss(-10)
+	H.adjustOxyLoss(-20)
+	H.adjustBrainLoss(-5)
+	H.updatehealth()
+	set_personal_cooldown(H)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/scorching_shell
+	name = "Scorching Shell"
+	phrase = "Oxidate Lecture: Scorching Shell"
+	desc = "A lecture fashioned after the idea that body and mind can be a fixed point. For five minutes, the speaker slows down drastically, but reduces all damage they \
+	may recieve by half, letting them remain as they are for longer."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "scorching_shell"
+	effect_time = 5 MINUTES
+	power = 90
+	var/brute_mod_oathbound
+	var/burn_mod_oathbound
+	var/toxin_mod_oathbound
+	var/oxygen_mod_oathbound
+
+/datum/ritual/cruciform/oathbound/scorching_shell/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	brute_mod_oathbound = (user.brute_mod_perk * 0.5)
+	user.brute_mod_perk -= brute_mod_oathbound
+
+	burn_mod_oathbound = (user.burn_mod_perk * 0.5)
+	user.burn_mod_perk -= burn_mod_oathbound
+
+	toxin_mod_oathbound = (user.toxin_mod_perk * 0.5)
+	user.toxin_mod_perk -= toxin_mod_oathbound
+
+	oxygen_mod_oathbound = (user.oxy_mod_perk * 0.5)
+	user.oxy_mod_perk -= oxygen_mod_oathbound
+
+	user.add_chemical_effect(CE_SLOWDOWN, 5, 5 MINUTES)
+
+	to_chat(user, SPAN_NOTICE("You feel your body stiffening, your stout refusal to change slowing down the world around you as you remain at a fixed point."))
+	set_personal_cooldown(user)
+	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/scorching_shell/proc/discard_effect(mob/living/carbon/human/user, amount)
+	user.brute_mod_perk -= brute_mod_oathbound
+	user.burn_mod_perk -= burn_mod_oathbound
+	user.toxin_mod_perk -= toxin_mod_oathbound
+	user.oxy_mod_perk -= oxygen_mod_oathbound
+
+/datum/ritual/cruciform/oathbound/scorching_smite
+	name = "Scorching Smite"
+	phrase = "Oxidate Lecture: Scorching Smite"
+	desc = "A short lecture activated in the middle of battle, empowers the user's melee strikes for thirty seconds. Takes five minutes to recharge."
+	cooldown = TRUE
+	cooldown_time = 5 MINUTES
+	cooldown_category = "scorching_smite"
+	effect_time = 30 SECONDS
+	power = 30
+	var/wrath_damage = 0.2
+
+/datum/ritual/cruciform/oathbound/scorching_smite/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	user.damage_multiplier += wrath_damage
+	to_chat(user, SPAN_NOTICE("You feel righteous wrath empowering you with immense but fleeting strength!"))
+	set_personal_cooldown(user)
+	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/scorching_smite/proc/discard_effect(mob/living/carbon/human/user, amount)
+	user.damage_multiplier -= wrath_damage
+
+/datum/ritual/cruciform/oathbound/restraint_conflagaration
+	name = "Restraint Conflagaration"
+	phrase = "Oxidate Lecture: Restraint Conflagaration"
+	desc = "A lecture that emboldens the body and muscles for fifteen minutes. Requires thirty minutes between uses."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "restraint_conflagaration"
+	effect_time = 15 MINUTES
+	power = 90
+
+/datum/ritual/cruciform/oathbound/restraint_conflagaration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	user.stats.changeStat(STAT_TGH, 10)
+	user.stats.changeStat(STAT_ROB, 10)
+	to_chat(user, SPAN_NOTICE("You feel emboldened, your body growing in strength and fortitude."))
+	set_personal_cooldown(user)
+	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/restraint_conflagaration/proc/discard_effect(mob/living/carbon/human/user, amount)
+	user.stats.changeStat(STAT_TGH, -10)
+	user.stats.changeStat(STAT_ROB, -10)
+
+/datum/ritual/cruciform/oathbound/ignite_flesh
+	name = "Ignite Flesh"
+	phrase = "Oxidate Lecture: Ignite Flesh"
+	desc = "Recite the lecture to ignite the surrounding bodies of those without a Hearthcore."
+	power = 90
+
+/datum/ritual/cruciform/oathbound/ignite_flesh/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	for(var/mob/living/carbon/M in viewers(2, null))
+		if(!M.get_core_implant(/obj/item/implant/core_implant/cruciform))
+			biomatter_attack(M, 10)
+	return TRUE
+
+/datum/ritual/cruciform/enkindled
+	name = "cruciform"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Enkindled"
+	ignore_stuttering = TRUE
+
+/datum/ritual/targeted/cruciform/enkindled
+	name = "cruciform targeted"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Enkindled"
+	ignore_stuttering = TRUE
+
+//datum/ritual/cruciform/enkindled/LITANY THAT HEALS OTHER PEOPLE NEARBY THAT WAS REMOVED?
+
+//datum/ritual/cruciform/enkindled/convalescence
+
+//datum/ritual/cruciform/enkindled/cauterization_hymn
+
+//datum/ritual/cruciform/enkindled/graceful_repose
+
+//datum/ritual/cruciform/enkindled/healing_word
+
+//datum/ritual/cruciform/enkindled/realignment
+
+//datum/ritual/cruciform/enkindled/blood_transmuting NOT FOR NOW
+
+//datum/ritual/cruciform/enkindled/revival_lecture
+
+/datum/ritual/cruciform/forgemaster
+	name = "cruciform"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Forgemaster"
+	ignore_stuttering = TRUE
+
+/datum/ritual/targeted/cruciform/forgemaster
+	name = "cruciform targeted"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Forgemaster"
+	ignore_stuttering = TRUE
+
+//datum/ritual/cruciform/forgemaster/empowering_flames
+
+//datum/ritual/cruciform/forgemaster/tools_of_bonfire
+
+//datum/ritual/cruciform/forgemaster/flame_guidance
+
+//datum/ritual/cruciform/forgemaster/weak_manifestation
+
+/datum/ritual/cruciform/forgemaster/nerve_learning
+	name = "Nerve Learning"
+	phrase = "Oxidate Lecture: Nerve Learning"
+	desc = "This lecture will command a Hearthcore upgrade to attach to a person's Hearthcore. They must lie on a Board of Opposites with the upgrade near them."
+	power = 20
+
+/datum/ritual/cruciform/forgemaster/nerve_learning/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/H = get_victim(user)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+	if(!CI)
+		fail("[H] doesn't have a Hearthcore installed.", user, C)
+		return FALSE
+	if(CI.upgrade)
+		fail("Hearthcore already has an upgrade installed.", user, C)
+		return FALSE
+
+	var/list/L = get_front(user)
+
+	var/obj/item/cruciform_upgrade/CU = locate(/obj/item/cruciform_upgrade) in L
+
+	if(!CU)
+		fail("There is no Hearthcore upgrade nearby.", user, C)
+		return FALSE
+
+	if(!(H in L))
+		fail("Hearthcore upgrade is too far from [H].", user, C)
+		return FALSE
+
+	if(CU.active)
+		fail("Hearthcore upgrade is already active.", user, C)
+		return FALSE
+
+	if(!H.lying || !locate(/obj/machinery/optable/altar) in L)
+		fail("[H] must lie on the Board.", user, C)
+		return FALSE
+
+	if(!CU.install(H, CI) || CU.wearer != H)
+		fail("Commitment failed.", user, C)
+		return FALSE
+
+	return TRUE
+
+//datum/ritual/cruciform/forgemaster/lecture_iron_will
+
+//datum/ritual/cruciform/forgemaster/medium_manifestation
+
+//datum/ritual/cruciform/forgemaster/strong_manifestation
+
+/datum/ritual/cruciform/oathpledge
+	name = "cruciform"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Oathpledge"
+	ignore_stuttering = TRUE
+
+/datum/ritual/targeted/cruciform/oathpledge
+	name = "cruciform targeted"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/cruciform
+	category = "Oathpledge"
+	ignore_stuttering = TRUE
+
+/datum/ritual/cruciform/oathpledge/scrying
+	name = "Scrying"
+	phrase = "Oxidate Lecture: Scrying"
+	desc = "Look into the world from the eyes of another Hearthcore user. Can only be maintained for half a minute and the target will sense they are being watched, but not by whom."
+	power = 100
+	category = "Oathpledge"
+
+/datum/ritual/cruciform/oathpledge/scrying/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	if(!user.client)
+		return FALSE
+
+	var/mob/living/M = pick_disciple_global(user, TRUE)
+	if (!M)
+		return FALSE
+
+	if(user == M)
+		fail("You feel stupid.",user,C,targets)
+		return FALSE
+
+	var/obj/item/implant/core_implant/cruciform/target = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	if (target.get_module(CRUCIFORM_ANTI_SCRYING))
+		to_chat(user, SPAN_NOTICE("That Hearthcore user has blocked Scrying attempts."))
+		return FALSE
+
+	to_chat(user, SPAN_NOTICE("Your vision shifts."))
+	to_chat(M, SPAN_NOTICE("You feel an odd presence in the back of your mind. A lingering sense that someone is watching you..."))
+
+	var/mob/observer/eye/god/eye = new/mob/observer/eye/god(M)
+	eye.target = M
+	eye.owner_mob = user
+	eye.owner_loc = user.loc
+	eye.owner = eye
+	user.reset_view(eye)
+
+	//After 30 seconds, your view is forced back to yourself
+	addtimer(CALLBACK(user, .mob/proc/reset_view, user), 300)
+
+	return TRUE
+
+//datum/ritual/cruciform/oathpledge/convalescence?? NEEDS NEW NAME I THINK
+
+//datum/ritual/cruciform/oathpledge/commitment
+
+//datum/ritual/cruciform/oathpledge/epiphany
+
+//datum/ritual/cruciform/oathpledge/deprivation
+
+//datum/ritual/cruciform/oathpledge/reconsecration
+
+//datum/ritual/cruciform/oathpledge/adoption
+
+//datum/ritual/cruciform/oathpledge/ordination
+
+//datum/ritual/cruciform/oathpledge/omission
+
+//datum/ritual/cruciform/oathpledge/pilgrim_path
+
+//datum/ritual/cruciform/oathpledge/sanctorium_of_life
+
+//datum/ritual/cruciform/oathpledge/torch_of_guidance
+
+//datum/ritual/cruciform/oathpledge/undying_phrases
+
+//datum/ritual/cruciform/oathpledge/inspiration
+
+//datum/ritual/cruciform/oathpledge/order_of_misery
+
+//datum/ritual/cruciform/oathpledge/disgrace
+
+//datum/ritual/cruciform/oathpledge/sight_of_bonfire
 
 /datum/ritual/cruciform/tessellate
 	name = "cruciform"
@@ -338,158 +791,6 @@
 	implant_type = /obj/item/implant/core_implant/cruciform/monomial
 	category = "Monomial"
 
-/datum/ritual/cruciform/monomial/ironskin
-	name = "Resolution"
-	phrase = "Dominus virtutem populo suo dabit; Dominus benedicet populo suo in pace."
-	desc = "A short litany that removes all pain, it is much stronger then the relief litany, but requires more power and has a five minute recharge time between uses."
-	power = 50
-	cooldown = TRUE
-	cooldown_time = 15 MINUTES
-	cooldown_category = "monopain"
-	ignore_stuttering = TRUE
-	nutri_cost = 50
-	blood_cost = 50
-
-/datum/ritual/cruciform/monomial/ironskin/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
-	if(H.species?.reagent_tag != IS_SYNTHETIC)
-		if(H.nutrition >= nutri_cost)
-			H.nutrition -= nutri_cost
-		else
-			to_chat(H, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			H.vessel.remove_reagent("blood",blood_cost)
-	H.reagents.add_reagent("nepenthe", 10)
-	H.adjustBruteLoss(-10)
-	H.adjustFireLoss(-10)
-	H.adjustOxyLoss(-20)
-	H.adjustBrainLoss(-5)
-	H.updatehealth()
-	set_personal_cooldown(H)
-	return TRUE
-
-/datum/ritual/cruciform/monomial/perfect_self
-	name = "Perfect Self"
-	phrase = "Quaerite primum regnum Dei et iustitiam eius, et haec omnia adicientur vobis."
-	desc = "A solemn prayer, often spoken in a whisper that allows a disciple of the monomial to focus inward and reach their full potential in both body and mind. This litany lasts fifteen minutes and takes over half an hour before it can be used again."
-	cooldown = TRUE
-	cooldown_time = 30 MINUTES
-	cooldown_category = "pself"
-	effect_time = 15 MINUTES
-	power = 90
-	nutri_cost = 50
-	blood_cost = 50
-
-/datum/ritual/cruciform/monomial/perfect_self/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	user.stats.changeStat(STAT_TGH, 10)
-	user.stats.changeStat(STAT_ROB, 10)
-	user.stats.changeStat(STAT_VIG, 10)
-	user.stats.changeStat(STAT_COG, 10)
-	user.stats.changeStat(STAT_BIO, 10)
-	user.stats.changeStat(STAT_MEC, 10)
-	to_chat(user, SPAN_NOTICE("You feel at peace with yourself, your body and mind going beyond its limits."))
-	set_personal_cooldown(user)
-	addtimer(CALLBACK(src, .proc/discard_effect, user), src.cooldown_time)
-	return TRUE
-
-/datum/ritual/cruciform/monomial/perfect_self/proc/discard_effect(mob/living/carbon/human/user, amount)
-	user.stats.changeStat(STAT_TGH, -10)
-	user.stats.changeStat(STAT_ROB, -10)
-	user.stats.changeStat(STAT_VIG, -10)
-	user.stats.changeStat(STAT_COG, -10)
-	user.stats.changeStat(STAT_BIO, -10)
-	user.stats.changeStat(STAT_MEC, -10)
-
-/datum/ritual/cruciform/monomial/inner_peace
-	name = "Inner Peace"
-	phrase = "Nolite iudicare, aut vos iudicabimini."
-	desc = "You impart a portion of your inner peace on another, gifting them with insight beyond what they are normally capable of. In doing so, you sacrifice some of your own. Requires ten minutes between uses."
-	cooldown = TRUE
-	cooldown_time = 30 MINUTES
-	cooldown_category = "inner_peace"
-	power = 90
-	nutri_cost = 25
-	blood_cost = 25
-
-/datum/ritual/cruciform/monomial/inner_peace/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
-	if(!T)
-		fail("No target in front of you.", user, C)
-		return FALSE
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	to_chat(T, SPAN_NOTICE("You feel slightly better as your pain eases."))
-	to_chat(user, SPAN_NOTICE("You ease the pain of [T.name]."))
-
-	if(user.sanity.insight >= 25 && user.species?.reagent_tag != IS_SYNTHETIC && T.species?.reagent_tag != IS_SYNTHETIC)
-		user.sanity.insight -= 25
-		T.sanity.insight += 50
-		to_chat(user, "<span class='info'>You offer your insight to [T.name], your meditation boosting another, allowing them a glimpse at your perceptions.</span>")
-		to_chat(T, "<span class='info'>You feel inspired, a new perspective offered by another, showing you the same picture from a different angle.</span>")
-		set_personal_cooldown(user)
-	else
-		to_chat(user, SPAN_WARNING("You lack the personal insight to impart more to another, time and meditation will allow you to try again."))
-
-	return TRUE
-
-/datum/ritual/cruciform/monomial/bulwark_of_harmony
-	name = "Bulwark of Harmony"
-	phrase = "Unde bella et lites inter vos? Nonne ex concupiscentiis vestris quae militant in vobis?"
-	desc = "A litany fashioned after the idea that body and mind can be a fixed point, resisting change in all ways. For a single minute, the speaker slows down drastically, but reduces all damage they \
-	may recieve by half, letting them remain as they are for longer."
-	cooldown = TRUE
-	cooldown_time = 30 MINUTES
-	cooldown_category = "bulwark_of_harmony"
-	effect_time = 5 MINUTES
-	power = 90
-	nutri_cost = 50
-	blood_cost = 50
-	var/brute_mod_monomial
-	var/burn_mod_monomial
-	var/toxin_mod_monomial
-	var/oxygen_mod_monomial
-
-/datum/ritual/cruciform/monomial/bulwark_of_harmony/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-
-	brute_mod_monomial = (user.brute_mod_perk * 0.5)
-	user.brute_mod_perk -= brute_mod_monomial
-
-	burn_mod_monomial = (user.burn_mod_perk * 0.5)
-	user.burn_mod_perk -= burn_mod_monomial
-
-	toxin_mod_monomial = (user.toxin_mod_perk * 0.5)
-	user.toxin_mod_perk -= toxin_mod_monomial
-
-	oxygen_mod_monomial = (user.oxy_mod_perk * 0.5)
-	user.oxy_mod_perk -= oxygen_mod_monomial
-
-	user.add_chemical_effect(CE_SLOWDOWN, 5, 1 MINUTES, "monomial_slow")
-
-	to_chat(user, SPAN_NOTICE("You feel your body stiffening, your stout refusal to change slowing down the world around you as you remain at a fixed point."))
-	set_personal_cooldown(user)
-	addtimer(CALLBACK(src, .proc/discard_effect, user), src.cooldown_time)
-	return TRUE
-
-/datum/ritual/cruciform/monomial/bulwark_of_harmony/proc/discard_effect(mob/living/carbon/human/user, amount)
-	user.brute_mod_perk -= brute_mod_monomial
-	user.burn_mod_perk -= burn_mod_monomial
-	user.toxin_mod_perk -= toxin_mod_monomial
-	user.oxy_mod_perk -= oxygen_mod_monomial
-
 //////////////////////////////////////////////////
 /////////         DIVISOR                /////////
 //////////////////////////////////////////////////
@@ -635,35 +936,6 @@
 		to_chat(H, SPAN_NOTICE("There is nothing here. You feel safe."))
 
 	return TRUE
-
-/datum/ritual/cruciform/divisor/divisor_smite
-	name = "Divine Smite"
-	phrase = "Vides quod homines ex eo quod faciunt, non sola fide justificantur."
-	desc = "A short litany spoken in the middle of battle. Considered tricky to use, as it only lasts 30 seconds, but gives the speaker additional power and strength when swinging a melee weapon. Takes five minutes to recharge."
-	cooldown = TRUE
-	cooldown_time = 5 MINUTES
-	cooldown_category = "divisor_smite"
-	effect_time = 30 SECONDS
-	power = 30
-	nutri_cost = 50
-	blood_cost = 50
-	var/wrath_damage = 0.2
-
-/datum/ritual/cruciform/divisor/divisor_smite/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	user.damage_multiplier += wrath_damage
-	to_chat(user, SPAN_NOTICE("You feel divine wrath empowering you with immense but fleeting strength!"))
-	set_personal_cooldown(user)
-	addtimer(CALLBACK(src, .proc/discard_effect, user), src.cooldown_time)
-	return TRUE
-
-/datum/ritual/cruciform/divisor/divisor_smite/proc/discard_effect(mob/living/carbon/human/user, amount)
-	user.damage_multiplier -= wrath_damage
 
 //////////////////////////////////////////////////
 /////////         FACTORIAL              /////////

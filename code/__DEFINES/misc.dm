@@ -204,10 +204,12 @@
 
 //Cruciform
 #define CRUCIFORM_COMMON /datum/core_module/rituals/cruciform/base
-//#define CRUCIFORM_AGROLYTE /datum/core_module/rituals/cruciform/agrolyte
-//#define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
-#define CRUCIFORM_PRIEST /datum/core_module/rituals/cruciform/priest
-//#define CRUCIFORM_ACOLYTE /datum/core_module/rituals/cruciform/priest/acolyte
+#define CRUCIFORM_OATHBOUND /datum/core_module/rituals/cruciform/oathbound
+#define CRUCIFORM_ENKINDLED /datum/core_module/rituals/cruciform/enkindled
+#define CRUCIFORM_FORGEMASTER /datum/core_module/rituals/cruciform/forgemaster
+#define CRUCIFORM_OATHPLEDGE /datum/core_module/rituals/cruciform/oathpledge
+#define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying
+
 #define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
 #define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
 #define CRUCIFORM_REDLIGHT /datum/core_module/cruciform/red_light

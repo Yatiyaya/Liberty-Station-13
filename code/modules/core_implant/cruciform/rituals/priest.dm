@@ -102,7 +102,7 @@
 	return TRUE
 
 /datum/ritual/cruciform/priest/heal_other
-	name = "Succour"
+	name = "Priest's Succour"
 	phrase = "Venite ad me, omnes qui laboratis, et onerati estis et ego reficiam vos."
 	desc = "Restore the sanity of another nearby disciple."
 	cooldown = TRUE
@@ -200,54 +200,6 @@
 	Scrying: Remotely look through someone's eyes. Global range, useful to find fugitives or corpses
 	Uses all of your power and has a limited duration
 */
-/datum/ritual/cruciform/priest/scrying
-	name = "Scrying"
-	phrase = "Ecce ego ad te et ad caelum. Scio omnes absconditis tuis. Vos can abscondere, tu es coram me: nudus."
-	desc = "Look into the world from the eyes of another believer. Strenuous and can only be maintained for half a minute. The target will sense they are being watched, but not by whom. This prayer requires power only primes and crusaders have."
-	power = 100
-	category = "Devotion"
-	nutri_cost = 50//high cost
-	blood_cost = 50//high cost
-
-/datum/ritual/cruciform/priest/scrying/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
-
-	if(!user.client)
-		return FALSE
-
-	var/mob/living/M = pick_disciple_global(user, TRUE)
-	if (!M)
-		return
-
-	if(user == M)
-		fail("You feel stupid.",user,C,targets)
-		return FALSE
-
-	to_chat(M, SPAN_NOTICE("You feel an odd presence in the back of your mind. A lingering sense that someone is watching you..."))
-
-	var/mob/observer/eye/god/eye = new/mob/observer/eye/god(M)
-	eye.target = M
-	eye.owner_mob = user
-	eye.owner_loc = user.loc
-	eye.owner = eye
-	user.reset_view(eye)
-
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-
-	//After 30 seconds, your view is forced back to yourself
-	addtimer(CALLBACK(user, .mob/proc/reset_view, user), 300)
-
-	return TRUE
-
-
-/datum/ritual/targeted/cruciform/priest/god_eye/process_target(var/index, var/obj/item/implant/core_implant/target, var/text)
-	if(index == 1 && target.address == text && target.active)
-		if(target.wearer && target.wearer.stat != DEAD)
-			return target
 
 /datum/ritual/cruciform/priest/epiphany
 	name = "Epiphany"
@@ -539,7 +491,7 @@
 		fail("Cruciform not found",user,C)
 		return FALSE
 
-	if(CI.get_module(CRUCIFORM_PRIEST) || CI.get_module(CRUCIFORM_INQUISITOR))
+	if(CI.get_module(CRUCIFORM_OATHBOUND) || CI.get_module(CRUCIFORM_ENKINDLED) || CI.get_module(CRUCIFORM_FORGEMASTER) || CI.get_module(CRUCIFORM_OATHPLEDGE))
 		fail("The target is already a devout.",user,C)
 		return FALSE
 
@@ -775,82 +727,6 @@
 	to_chat(CI.wearer, "<span class='info'>Your cruciform vibrates and warms up.</span>")
 
 	CI.activate()
-
-	return TRUE
-
-/datum/ritual/cruciform/priest/accelerated_growth
-	name = "Accelerated growth"
-	phrase = "Plantae crescere in divinum lumen tua."
-	desc = "This litany boosts the growth of all plants in sight for about 5 minutes."
-	cooldown = TRUE
-	cooldown_time = 5 MINUTES
-	effect_time = 5 MINUTES
-	cooldown_category = "accelerated_growth"
-	power = 30
-	category = "Vitae"
-	nutri_cost = 25//med cost
-	blood_cost = 25//med cost
-
-	var/boost_value = 1.5  // How much the aging process of the plant is sped up
-
-/datum/ritual/cruciform/priest/accelerated_growth/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-
-	var/list/plants_around = list()
-	for(var/obj/machinery/portable_atmospherics/hydroponics/H in view(user))
-		if(H.seed)  // if there is a plant in the hydroponics tray
-			plants_around.Add(H.seed)
-
-	if(plants_around.len > 0)
-		if(user.species?.reagent_tag != IS_SYNTHETIC)
-			if(user.nutrition >= nutri_cost)
-				user.nutrition -= nutri_cost
-			else
-				to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-				user.vessel.remove_reagent("blood",blood_cost)
-		to_chat(user, SPAN_NOTICE("You feel the air thrum with an inaudible vibration."))
-		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
-		for(var/datum/seed/S in plants_around)
-			give_boost(S)
-		set_global_cooldown()
-		return TRUE
-	else
-		fail("There is no plant around to hear your song.", user, C)
-		return FALSE
-
-/datum/ritual/cruciform/priest/accelerated_growth/proc/give_boost(datum/seed/S)
-	S.set_trait(TRAIT_BOOSTED_GROWTH, boost_value)
-	addtimer(CALLBACK(src, .proc/take_boost, S), effect_time)
-
-/datum/ritual/cruciform/priest/accelerated_growth/proc/take_boost(datum/seed/S, stat, amount)
-	// take_boost is automatically triggered by a callback function when the boost ends but the seed
-	// may have been deleted during the duration of the boost
-	if(S) // check if seed still exist otherwise we cannot read null.stats
-		S.set_trait(TRAIT_BOOSTED_GROWTH, 1)
-
-/datum/ritual/cruciform/priest/mercy
-	name = "Hand of mercy"
-	phrase = "Non est verus dolor."
-	desc = "Relieves the pain of a person in front of you."
-	power = 50
-	category = "Vitae"
-	nutri_cost = 25//med cost
-	blood_cost = 25//med cost
-
-/datum/ritual/cruciform/priest/mercy/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
-	if(!T)
-		fail("No target in front of you.", user, C)
-		return FALSE
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	to_chat(T, SPAN_NOTICE("You feel slightly better as your pain eases."))
-	to_chat(user, SPAN_NOTICE("You ease the pain of [T.name]."))
-
-	T.reagents.add_reagent("anodyne", 10)
 
 	return TRUE
 

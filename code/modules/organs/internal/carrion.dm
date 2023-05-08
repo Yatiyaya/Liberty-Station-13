@@ -494,22 +494,22 @@
 
 /obj/item/organ/internal/carrion/maw/proc/toxic_puddle()
 	set category = "Carrion"
-	set name = "Toxic puddle (10)"
+	set name = "Thermic puddle (10)"
 
 	var/turf/T = get_turf(owner)
 	if(locate(/obj/effect/decal/cleanable/carrion_puddle) in T)
-		to_chat(owner, SPAN_WARNING("There is already a toxic puddle here."))
+		to_chat(owner, SPAN_WARNING("There is already a thermic puddle here."))
 		return
 
 	if(owner.check_ability(10, TRUE))
 		playsound(src, 'sound/effects/blobattack.ogg', 50, 1)
 		new /obj/effect/decal/cleanable/carrion_puddle(T)
-		to_chat(owner, SPAN_NOTICE("You vomit a toxic puddle"))
+		to_chat(owner, SPAN_NOTICE("You vomit a thermic puddle"))
 
 /obj/effect/decal/cleanable/carrion_puddle
-	name = "toxic puddle"
+	name = "thermic puddle"
 	icon = 'icons/effects/effects.dmi'
-	desc = "It emits an abhorrent smell, you shouldn't step anywhere near it."
+	desc = "A fiercely bubbling puddle that radiates vibrant heat on contact."
 	icon_state = "toxic_puddle"
 	anchored = TRUE
 

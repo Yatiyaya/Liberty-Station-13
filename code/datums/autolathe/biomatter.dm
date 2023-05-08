@@ -187,44 +187,44 @@
 */
 
 //[MELEE]
-/datum/design/autolathe/sword/nt_sword
+/datum/design/autolathe/sword/custodian_sword
 	name = "Ulfberth"
-	build_path = /obj/item/tool/sword/nt/shortsword
+	build_path = /obj/item/tool/sword/custodian/shortsword
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 8)
 
-/datum/design/autolathe/sword/nt_longsword
+/datum/design/autolathe/sword/custodian_longsword
 	name = "Horseman Axe"
-	build_path = /obj/item/tool/sword/nt/longsword
+	build_path = /obj/item/tool/sword/custodian/horseaxe
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 12)
 
-/datum/design/autolathe/sword/nt_dagger
+/datum/design/autolathe/sword/custodian_dagger
 	name = "Custodian Seax"
-	build_path = /obj/item/tool/knife/dagger/nt
+	build_path = /obj/item/tool/knife/dagger/custodian
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 3)
 
-/datum/design/autolathe/sword/nt_halberd
+/datum/design/autolathe/sword/custodian_halberd
 	name = "Custodian Atgeir"
-	build_path = /obj/item/tool/spear/halberd
+	build_path = /obj/item/tool/spear/atgeir
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 18)
 
-/datum/design/autolathe/sword/nt_spear
+/datum/design/autolathe/sword/custodian_spear
 	name = "Custodian Francisca"
-	build_path = /obj/item/tool/sword/nt/spear
+	build_path = /obj/item/tool/sword/custodian/throwaxe
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 4)
 
-/datum/design/autolathe/sword/nt_scourge
+/datum/design/autolathe/sword/custodian_scourge
 	name = "Custodian Nagaika"
-	build_path = /obj/item/tool/sword/nt/scourge
+	build_path = /obj/item/tool/sword/custodian/whip
 	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 18)
 
 /datum/design/autolathe/shield/nt_shield
 	name = "Custodian Scutum Shield"
-	build_path = /obj/item/shield/riot/nt
+	build_path = /obj/item/shield/riot/custodian
 	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 21)
 
 /datum/design/autolathe/nt/shield/nt_buckler
 	name = "Custodian Heater Shield"
-	build_path = /obj/item/shield/buckler/nt
+	build_path = /obj/item/shield/buckler/custodian
 	materials = list(MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 12)
 
 /datum/design/autolathe/tool_upgrade/sanctifier
@@ -232,9 +232,9 @@
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
 	materials = list(MATERIAL_CARBON_FIBER = 3)
 
-/datum/design/autolathe/sword/nt_flanged
+/datum/design/autolathe/sword/custodian_flanged
 	name = "Emberblaze Warhammer"
-	build_path = /obj/item/tool/sword/nt/flanged
+	build_path = /obj/item/tool/sword/custodian/warhammer
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 16)
 
 //[ARMOR UPGRADES]

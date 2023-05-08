@@ -1,4 +1,4 @@
-#define REPAIR_DOOR_AMOUNT 10
+#define REPAIR_DOOR_AMOUNT 2
 
 /datum/ritual/cruciform/machines
 	name = "machines"
@@ -61,13 +61,13 @@
 /datum/ritual/cruciform/machines/repair_door
 	name = "Repair hatchway"
 	phrase = "Redde quod periit."
-	desc = "Repairs a nearby hatchway at the cost of some biomatter."
+	desc = "Repairs a nearby hatchway at the cost of some carbon fiber."
 
 /datum/ritual/cruciform/machines/repair_door/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/list/O = get_front(user)
 
 	var/obj/machinery/door/holy/door = locate(/obj/machinery/door/holy) in O
-	var/obj/item/stack/material/biomatter/consumable
+	var/obj/item/stack/material/carbon_fiber/consumable
 
 	if(!door)
 		fail("You fail to find a compatible hatchway here.", user, C)
@@ -80,13 +80,13 @@
 	var/turf/target_turf = get_step(user, user.dir)
 	var/turf/user_turf = get_turf(user)
 
-	for(var/obj/item/stack/material/biomatter/B in target_turf.contents)
+	for(var/obj/item/stack/material/carbon_fiber/B in target_turf.contents)
 		if(B.amount >= REPAIR_DOOR_AMOUNT)
 			consumable = B
 			break
 
 	if(!consumable)
-		for(var/obj/item/stack/material/biomatter/B in user_turf.contents)
+		for(var/obj/item/stack/material/carbon_fiber/B in user_turf.contents)
 			if(B.amount >= REPAIR_DOOR_AMOUNT)
 				consumable = B
 				break
@@ -102,7 +102,7 @@
 		effect.success()
 		return TRUE
 	else
-		fail("Not enough biomatter found to repair the hatchway, you need at least [REPAIR_DOOR_AMOUNT].", user, C)
+		fail("Not enough carbon fiber found to repair the hatchway, you need at least [REPAIR_DOOR_AMOUNT].", user, C)
 		return FALSE
 
 ////////////////////////SCORCH MULTI MACHINES RITUALS
@@ -111,9 +111,6 @@
 
 /datum/ritual/cruciform/machines/bioreactor
 	name = "Bonfire command"
-	nutri_cost = 10
-	blood_cost = 10
-
 
 /datum/ritual/cruciform/machines/bioreactor/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	var/obj/machinery/multistructure/bioreactor_part/console/bioreactor_screen = locate() in range(4, H)

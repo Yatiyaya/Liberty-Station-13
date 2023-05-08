@@ -39,10 +39,10 @@
 		if(!container)
 			abort("Container of liquid scorch required.")
 		else
-			if(!container.reagents.has_reagent("biomatter", SCORCH_PER_SILK))
+			if(!container.reagents.has_reagent("liquidscorch", SCORCH_PER_SILK))
 				abort("Insufficient amount of scorch.")
 			else
-				container.reagents.remove_reagent("biomatter", SCORCH_PER_SILK)
+				container.reagents.remove_reagent("liquidscorch", SCORCH_PER_SILK)
 				var/obj/item/stack/material/biopolymer_silk/current_stack
 				//if there any stacks here, let's check them
 				if(locate(/obj/item/stack/material/biopolymer_silk) in loc)
@@ -120,10 +120,10 @@
 		if(!container)
 			abort("Container of liquid scorch required.")
 		else
-			if(!container.reagents.has_reagent("biomatter", SCORCH_PER_FIBER))
+			if(!container.reagents.has_reagent("liquidscorch", SCORCH_PER_FIBER))
 				abort("Insufficient amount of scorch.")
 			else
-				container.reagents.remove_reagent("biomatter", SCORCH_PER_FIBER)
+				container.reagents.remove_reagent("liquidscorch", SCORCH_PER_FIBER)
 				var/obj/item/stack/material/carbon_fiber/current_stack
 				//if there any stacks here, let's check them
 				if(locate(/obj/item/stack/material/carbon_fiber) in loc)

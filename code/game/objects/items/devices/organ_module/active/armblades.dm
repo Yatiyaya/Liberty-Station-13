@@ -61,7 +61,7 @@
 	icon_state = "nt_longsword"
 	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_STEEL = 5)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
-	holding_type = /obj/item/tool/sword/nt/longsword
+	holding_type = /obj/item/tool/sword/custodian/horseaxe
 
 /obj/item/organ_module/active/simple/armblade/ritual
 	name = "Embedded Knife"

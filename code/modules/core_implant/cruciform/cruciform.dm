@@ -3,9 +3,9 @@
 var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform
-	name = "vinculum Hearthcore"
+	name = "Hearthcore"
 	icon_state = "hearthcore_green"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
+	desc = "A symbol and power core of every Custodian. With the proper measures, this can be implanted to induct a new member into the Custodians."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
 	layer = ABOVE_MOB_LAYER
@@ -61,25 +61,6 @@ var/list/disciples = list()
 		return
 	..()
 	add_module(new CRUCIFORM_COMMON)
-	if(path == "tess")
-		add_module(new CRUCIFORM_TESS)
-	if(path == "lemn")
-		add_module(new CRUCIFORM_LEMN)
-	if(path == "mono")
-		add_module(new CRUCIFORM_MONO)
-	if(path == "divi")
-		add_module(new CRUCIFORM_DIVI)
-	if(path == "fact")
-		add_module(new CRUCIFORM_FACT)
-	if(path == "omni")
-		add_module(new CRUCIFORM_TESS)
-		add_module(new CRUCIFORM_LEMN)
-		add_module(new CRUCIFORM_MONO)
-		add_module(new CRUCIFORM_DIVI)
-		add_module(new CRUCIFORM_FACT)
-		add_module(new CRUCIFORM_PRIEST)
-		add_module(new CRUCIFORM_INQUISITOR)
-		add_module(new CRUCIFORM_OMNI)
 	update_data()
 	disciples |= wearer
 	return TRUE
@@ -185,18 +166,18 @@ var/list/disciples = list()
 //////////////////////////
 
 /obj/item/implant/core_implant/cruciform/proc/make_common()
-	remove_modules(CRUCIFORM_PRIEST)
+	remove_modules(CRUCIFORM_OATHPLEDGE)
 	remove_modules(CRUCIFORM_INQUISITOR)
 	remove_modules(/datum/core_module/cruciform/red_light)
 	security_clearance = CLEARANCE_COMMON
 
 /obj/item/implant/core_implant/cruciform/proc/make_priest()
-	add_module(new CRUCIFORM_PRIEST)
+	add_module(new CRUCIFORM_OATHPLEDGE)
 	add_module(new CRUCIFORM_REDLIGHT)
 	security_clearance = CLEARANCE_CLERGY
 
 /obj/item/implant/core_implant/cruciform/proc/make_inquisitor()
-	add_module(new CRUCIFORM_PRIEST)
+	add_module(new CRUCIFORM_OATHPLEDGE)
 	add_module(new CRUCIFORM_INQUISITOR)
 	//add_module(new /datum/core_module/cruciform/uplink())
 	remove_modules(/datum/core_module/cruciform/red_light)
@@ -208,7 +189,7 @@ var/list/disciples = list()
 	add_module(new CRUCIFORM_MONO)
 	add_module(new CRUCIFORM_DIVI)
 	add_module(new CRUCIFORM_FACT)
-	add_module(new CRUCIFORM_PRIEST)
+	add_module(new CRUCIFORM_OATHPLEDGE)
 	add_module(new CRUCIFORM_INQUISITOR)
 	add_module(new CRUCIFORM_OMNI)
 	//add_module(new /datum/core_module/cruciform/uplink())

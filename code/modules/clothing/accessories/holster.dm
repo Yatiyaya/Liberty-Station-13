@@ -209,7 +209,7 @@ Sword holsters
 	icon_state = "crusader_holster"
 	overlay_state = "crusader"
 	can_hold = list(
-		/obj/item/tool/sword/nt,
+		/obj/item/tool/sword/custodian,
 		/obj/item/tool/sword/crusader
 		)
 

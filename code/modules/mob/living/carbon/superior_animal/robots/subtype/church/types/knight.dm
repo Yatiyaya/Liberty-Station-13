@@ -17,6 +17,6 @@
 	melee_damage_lower = 45
 	melee_damage_upper = 55
 	meat_type = /obj/item/stack/material/platinum/random
-	drop1 = /obj/item/tool/sword/nt/longsword
-	drop2 = /obj/item/shield/riot/nt
+	drop1 = /obj/item/tool/sword/custodian/horseaxe
+	drop2 = /obj/item/shield/riot/custodian
 	armor = list(melee = 50, bullet = 50, energy = 10, bomb = 15, bio = 100, rad = 100, agony = 100)

@@ -136,18 +136,21 @@
 
 //#####################################
 /obj/structure/reagent_dispensers/biomatter
-	name = "medium biomatter canister"
-	desc = "A biomatter canister. It is used to store high amounts of biomatter."
+	name = "scorch canister"
+	desc = "A canister used by the Custodians to transport volumes of Liquid Scorch."
 	icon = 'icons/obj/bioreactor_misc.dmi'
 	icon_state = "biomatter_tank_medium"
 	amount_per_transfer_from_this = 50
 	volume = 400
+	climbable = TRUE
 
 
 /obj/structure/reagent_dispensers/biomatter/large
-	name = "large biomatter canister"
+	name = "large scorch canister"
+	desc = "A large canister used by the Custodians to transport immense volumes of Liquid Scorch."
 	icon_state = "biomatter_tank_large"
 	volume = 800
+	climbable = null
 
 
 /obj/effect/overlay/bioreactor_solution

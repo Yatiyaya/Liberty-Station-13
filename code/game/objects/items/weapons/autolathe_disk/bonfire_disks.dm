@@ -112,13 +112,13 @@
 	license = -1
 	designs = list(
 		//weapons
-		/datum/design/autolathe/sword/nt_sword,
-		/datum/design/autolathe/sword/nt_longsword,
-		/datum/design/autolathe/sword/nt_dagger,
-		/datum/design/autolathe/sword/nt_halberd,
-		/datum/design/autolathe/sword/nt_scourge,
-		/datum/design/autolathe/sword/nt_spear,
-		/datum/design/autolathe/sword/nt_flanged,
+		/datum/design/autolathe/sword/custodian_sword,
+		/datum/design/autolathe/sword/custodian_longsword,
+		/datum/design/autolathe/sword/custodian_dagger,
+		/datum/design/autolathe/sword/custodian_halberd,
+		/datum/design/autolathe/sword/custodian_scourge,
+		/datum/design/autolathe/sword/custodian_spear,
+		/datum/design/autolathe/sword/custodian_flanged,
 		/datum/design/autolathe/nt/shield/nt_buckler,
 		/datum/design/autolathe/shield/nt_shield,
 		//mods

@@ -13,12 +13,12 @@
 	max_w_class = ITEM_SIZE_HUGE
 
 	can_hold = list(
-		/obj/item/tool/sword/nt,
+		/obj/item/tool/sword/custodian,
 		/obj/item/tool/sword/saber
 		)
 	cant_hold = list(
-		/obj/item/tool/knife/dagger/nt,
-		/obj/item/tool/spear/halberd
+		/obj/item/tool/knife/dagger/custodian,
+		/obj/item/tool/spear/atgeir
 		)
 	insertion_sound = 'sound/effects/sheathin.ogg'
 	extraction_sound = 'sound/effects/sheathout.ogg'

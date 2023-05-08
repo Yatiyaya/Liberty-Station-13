@@ -740,7 +740,7 @@
 	reagent_state = LIQUID
 	color = "#527f4f"
 	strength = 0.25
-	common = TRUE //Church should know if they actually have biomatter or something else.
+	common = TRUE
 	nerve_system_accumulations = 50
 
 /datum/reagent/toxin/biomatter/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
@@ -757,7 +757,32 @@
 	if(prob(5 - (4 * M.stats.getMult(STAT_TGH))))
 		M.vomit()
 
-/datum/reagent/toxin/biomatter/touch_turf(turf/T)
+/datum/reagent/toxin/liquid_scorch
+	name = "Liquid Scorch"
+	id = "liquidscorch"
+	description = "The hazardous hot slag used by the Custodians in their day-to-day activities."
+	taste_description = "your whole body burning"
+	reagent_state = LIQUID
+	color = "#49574a"
+	strength = 2
+	common = TRUE
+	nerve_system_accumulations = 50
+
+/datum/reagent/toxin/liquid_scorch/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	..()
+	M.take_organ_damage(0, effect_multiplier * strength)
+
+/datum/reagent/toxin/liquid_scorch/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	..()
+	if(prob(10 - (5 * M.stats.getMult(STAT_TGH))))
+		M.vomit()
+
+/datum/reagent/toxin/liquid_scorch/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
+	..()
+	if(prob(5 - (4 * M.stats.getMult(STAT_TGH))))
+		M.vomit()
+
+/datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
 	if(volume >= 5)
 		if(volume >= 45)
 			spill_biomass(T, alldirs)

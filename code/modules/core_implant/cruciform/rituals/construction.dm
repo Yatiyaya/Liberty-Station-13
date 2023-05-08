@@ -233,7 +233,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/cable_coil = 15,
 		/obj/item/stack/material/plasteel = 5,
 		/obj/item/stack/material/biomatter = 20,
-		/obj/item/tool/sword/nt/longsword = 1,
+		/obj/item/tool/sword/custodian/horseaxe = 1,
 		/obj/item/book/ritual/cruciform = 1 //Limiting factor
 	)
 	build_time = 20 SECONDS //We dont want to make these in combat
@@ -248,8 +248,8 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/cable_coil = 15,
 		/obj/item/stack/material/plasteel = 3,
 		/obj/item/stack/material/biomatter = 15,
-		/obj/item/tool/sword/nt/longsword = 1,
-		/obj/item/tool/sword/nt/shortsword = 1,
+		/obj/item/tool/sword/custodian/horseaxe = 1,
+		/obj/item/tool/sword/custodian/shortsword = 1,
 		/obj/item/paper = 1 //Limiting factor
 	)
 	build_time = 1 SECONDS //We do want to mid-comat summan these
@@ -361,37 +361,6 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 8 SECONDS
 */
 
-//generator
-/datum/nt_blueprint/machinery/biogen
-	name = "Biomatter Power Generator"
-	build_path = /obj/machinery/multistructure/biogenerator_part/generator
-	materials = list(
-		/obj/item/stack/material/plasteel = 5,
-		/obj/item/stack/material/gold = 5,
-		/obj/item/stack/material/steel = 20,
-		/obj/item/stack/material/biomatter = 5,
-		/obj/structure/reagent_dispensers/biomatter = 1
-	)
-	build_time = 15 SECONDS
-
-/datum/nt_blueprint/machinery/biogen_console
-	name = "Biomatter Power Generator: Console"
-	build_path = /obj/machinery/multistructure/biogenerator_part/console
-	materials = list(
-		/obj/item/stack/material/glass = 5,
-		/obj/item/stack/material/plastic = 15,
-		/obj/item/stack/cable_coil = 30 //! TODO: proper recipe
-	)
-	build_time = 6 SECONDS
-
-/datum/nt_blueprint/machinery/biogen_port
-	name = "Biomatter Power Generator: Port"
-	build_path = /obj/machinery/multistructure/biogenerator_part/port
-	materials = list(
-		/obj/item/stack/material/steel = 10,
-		/obj/item/reagent_containers/glass/bucket = 1
-	)
-	build_time = 5 SECONDS
 
 //bioreactor
 /datum/nt_blueprint/machinery/bioreactor_loader

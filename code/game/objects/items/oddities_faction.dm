@@ -524,8 +524,9 @@ No more of that.
 /*****************************/
 
 /obj/item/tool/sword/crusader/nt_sword_truth
-	name = "Joyeuse"
-	desc = "A sword made out of an unknown alloy, humming from an unknown power source."
+	name = "Sword of Damocles"
+	desc = "The words of philosopher Cicero had many meanings, but the one mostly understood was that the ever-present peril faced by those in positions of power was constant and imminent. \
+	Considering this, the Oathpledge is given a legendary sword of their own - a relic that must be protected at all costs."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "nt_sword_truth"
 	item_state = "nt_sword_truth"
@@ -617,8 +618,8 @@ No more of that.
 		embed_mult = initial(embed_mult)
 
 /obj/structure/nt_pedestal
-	name = "Pedestal of the Joyeuse"
-	desc = "Pedestal of the glorious weapon named: \"Joyeuse\"."
+	name = "Pedestal of Damocles"
+	desc = "Pedestal of the Sword of Damocles."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "nt_pedestal0"
 	anchored = TRUE
@@ -677,8 +678,8 @@ No more of that.
 	icon_state = "nt_pedestal[sword?"1":"0"]"
 
 /obj/item/storage/sheath/joyeuse
-	name = "\improper Joyeuse sheath"
-	desc = "A specially designed sheathe for the joyeuse, which is the only object that shall fit in it."
+	name = "\improper Damocles sheath"
+	desc = "A specially designed sheathe for the Sword of Damocles, which is the only object that shall fit in it."
 	can_hold = list(
 		/obj/item/tool/sword/crusader/nt_sword_truth
 		)

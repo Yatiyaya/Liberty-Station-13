@@ -85,11 +85,11 @@
 
 	hidden_inventory = list(
 		"Melee weapons" = list(
-			/obj/item/tool/sword/nt/shortsword,
-			/obj/item/tool/sword/nt/longsword = custom_good_amount_range(list(-1, 2)),
-			/obj/item/tool/knife/dagger/nt,
-			/obj/item/tool/sword/nt/spear,
-			/obj/item/shield/buckler/nt
+			/obj/item/tool/sword/custodian/shortsword,
+			/obj/item/tool/sword/custodian/horseaxe = custom_good_amount_range(list(-1, 2)),
+			/obj/item/tool/knife/dagger/custodian,
+			/obj/item/tool/sword/custodian/throwaxe,
+			/obj/item/shield/buckler/custodian
 		),
 		"Holy Grenades" = list(
 			/obj/item/grenade/smokebomb/nt = custom_good_amount_range(list(1, 4)),

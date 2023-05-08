@@ -1,9 +1,12 @@
+// Used by the Church before, not used by the Custodians
+//Commenting in case anyone ever wants to make this in-game and not reliant on litanies
 
 
 //Power biomatter generator
 //This machine use biomatter reagent and some of O2 to produce power (it also produce CO2)
 //It has a few components that can be weared out, so operator should check this machine from time o time and tinker it
 //In this case, our multistructure datum not just holder, but core of our machine and process by its own
+/*
 
 #define WEAROUT_CHANCE 10
 
@@ -503,3 +506,5 @@
 
 
 #undef WEAROUT_CHANCE
+
+*/

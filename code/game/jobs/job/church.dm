@@ -14,7 +14,7 @@
 	minimum_character_age = 25
 	playtimerequired = 1200
 	security_clearance = CLEARANCE_CLERGY
-	health_modifier = 10
+	health_modifier = 20
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
@@ -23,11 +23,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
 
 	stat_modifiers = list(
-		STAT_MEC = 30,
-		STAT_BIO = 15,
-		STAT_COG = 10,
-		STAT_VIG = 15,
-		STAT_TGH = 10,
+		STAT_COG = 15,
+		STAT_TGH = 45,
+		STAT_ROB = 45,
 	)
 
 	perks = list(PERK_CHANNELING)
@@ -36,8 +34,8 @@
 							 /datum/computer_file/program/reports)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST,
-		CRUCIFORM_REDLIGHT
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_OATHPLEDGE
 	)
 
 	description = "The Oathpledge serves as the head of the local branch of the Church of the Bonfire. <br>\
@@ -70,17 +68,22 @@
 	difficulty = "Easy."
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
+	health_modifier = 20
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
 	wage = WAGE_PROFESSIONAL //Specialist
 	stat_modifiers = list(
-		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
-		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+		STAT_MEC = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
 
 	//You need insperation to do your job.
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
+	core_upgrades = list(
+		CRUCIFORM_FORGEMASTER
+	)
 
 	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
 	software_on_spawn = list(
@@ -118,17 +121,17 @@
 	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_BIO = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
+
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_ENKINDLED
 	)
 
 	perks = list(PERK_CHANNELING)
@@ -163,17 +166,17 @@
 	wage = WAGE_LABOUR_DUMB
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_COG = 10,
+		STAT_TGH = 30,
+		STAT_ROB = 30,
 	)
+
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_OATHBOUND
 	)
 
 	perks = list(PERK_CHANNELING)

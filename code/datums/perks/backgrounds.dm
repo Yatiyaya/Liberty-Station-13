@@ -271,10 +271,10 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	var/obj/item/W
 	if(is_neotheology_disciple(holder) && prob(50))
 		W = pickweight(list(
-				/obj/item/tool/sword/nt/longsword = 0.5,
-				/obj/item/tool/sword/nt/shortsword = 0.5,
-				/obj/item/tool/sword/nt/scourge = 0.1,
-				/obj/item/tool/knife/dagger/nt = 0.5))
+				/obj/item/tool/sword/custodian/horseaxe = 0.5,
+				/obj/item/tool/sword/custodian/shortsword = 0.5,
+				/obj/item/tool/sword/custodian/whip = 0.1,
+				/obj/item/tool/knife/dagger/custodian = 0.5))
 	else
 		W = pickweight(list(
 				/obj/item/tool/hammer/mace = 0.2,

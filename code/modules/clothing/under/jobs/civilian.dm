@@ -91,6 +91,9 @@
 
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
+/obj/item/clothing/under/custodian
+	matter = list(MATERIAL_BIO_SILK = 5)
+
 /obj/item/clothing/under/custodian/oathbound
 	name = "oathbound underarmor"
 	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."

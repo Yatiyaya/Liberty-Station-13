@@ -162,6 +162,23 @@
 	/datum/ritual/group/cruciform,
 	/datum/ritual/cruciform/machines)
 
+/datum/core_module/rituals/cruciform/oathbound
+	ritual_types = list(/datum/ritual/cruciform/oathbound,
+	/datum/ritual/targeted/cruciform/oathbound)
+
+/datum/core_module/rituals/cruciform/enkindled
+	ritual_types = list(/datum/ritual/cruciform/enkindled,
+	/datum/ritual/targeted/cruciform/enkindled)
+
+/datum/core_module/rituals/cruciform/forgemaster
+	ritual_types = list(/datum/ritual/cruciform/forgemaster,
+	/datum/ritual/targeted/cruciform/forgemaster)
+
+/datum/core_module/rituals/cruciform/oathpledge
+	ritual_types = list(/datum/ritual/cruciform/oathpledge,
+	/datum/ritual/targeted/cruciform/oathpledge)
+
+/datum/core_module/rituals/cruciform/anti_scrying
 
 /datum/core_module/rituals/cruciform/priest
 	access = list(access_nt_disciple, access_nt_custodian, access_nt_agrolyte)

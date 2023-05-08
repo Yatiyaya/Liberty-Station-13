@@ -89,7 +89,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/biotank_platform/proc/take_amount(var/amount)
-	biotank.reagents.add_reagent("biomatter", amount)
+	biotank.reagents.add_reagent("liquidscorch", amount)
 	GLOB.biomatter_neothecnology_amt += amount
 
 

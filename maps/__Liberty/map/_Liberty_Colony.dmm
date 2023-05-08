@@ -21633,10 +21633,6 @@
 	icon_state = "6,3"
 	},
 /area/shuttle/rocinante_shuttle_area)
-"fOQ" = (
-/obj/machinery/multistructure/biogenerator_part/console,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "fOS" = (
 /obj/machinery/door/airlock/glass,
 /obj/machinery/door/firedoor,
@@ -37642,7 +37638,6 @@
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/organ_lab)
 "kiq" = (
-/obj/machinery/multistructure/biogenerator_part/generator,
 /obj/structure/cable/yellow{
 	d2 = 2;
 	icon_state = "0-2"
@@ -41359,10 +41354,6 @@
 /obj/structure/reagent_dispensers/fueltank/huge,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
-"ljV" = (
-/obj/machinery/multistructure/biogenerator_part/port,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "lkc" = (
 /obj/machinery/vending/engineering,
 /turf/simulated/floor/tiled/steel/brown_perforated,
@@ -186897,7 +186888,7 @@ jux
 ttZ
 nbu
 mad
-fOQ
+wtE
 rzR
 nQw
 gOY
@@ -187099,7 +187090,7 @@ jux
 ttZ
 qsu
 iNX
-ljV
+wtE
 kUp
 hEt
 ttZ
