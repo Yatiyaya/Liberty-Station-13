@@ -304,29 +304,34 @@ No more of that.
 				oddity_stats[STAT_BIO] += 3
 				oddity_stats[STAT_MEC] += 3
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else if(GLOB.all_faction_items[W] == GLOB.department_security)
 				oddity_stats[STAT_VIG] += 3
 				oddity_stats[STAT_TGH] += 3
 				oddity_stats[STAT_ROB] += 3
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else if(GLOB.all_faction_items[W] == GLOB.department_church)
 				oddity_stats[STAT_BIO] += 3
 				oddity_stats[STAT_COG] += 2
 				oddity_stats[STAT_VIG] += 2
 				oddity_stats[STAT_TGH] += 2
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else if(GLOB.all_faction_items[W] == GLOB.department_guild)
 				oddity_stats[STAT_COG] += 3
 				oddity_stats[STAT_MEC] += 3
 				oddity_stats[STAT_ROB] += 1
 				oddity_stats[STAT_VIG] += 2
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else if(GLOB.all_faction_items[W] == GLOB.department_engineering)
 				oddity_stats[STAT_MEC] += 5
 				oddity_stats[STAT_COG] += 2
 				oddity_stats[STAT_TGH] += 1
 				oddity_stats[STAT_VIG] += 1
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else if(GLOB.all_faction_items[W] == GLOB.department_command)
 				oddity_stats[STAT_ROB] += 2
 				oddity_stats[STAT_TGH] += 1
@@ -335,6 +340,7 @@ No more of that.
 				oddity_stats[STAT_VIG] += 3
 				oddity_stats[STAT_COG] += 1
 				oddity_stats[STAT_WIL] += 1
+				oddity_stats[STAT_END] += 1
 			else
 				CRASH("[W], incompatible department")
 
