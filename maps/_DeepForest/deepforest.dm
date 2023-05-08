@@ -1,4 +1,5 @@
 #include "map/frozen_forest.dmm"
+#include "map/frozen_crashsite.dmm"
 
 //#include "map/_Deep_Forest.dmm"
 //#include "map/_Beast_Cave.dmm"
@@ -14,6 +15,15 @@
 	is_accessable_level = FALSE
 	is_sealed = TRUE
 	height = 1
+	digsites = "TEMPLE"
+
+/obj/map_data/frozen_crashsight
+	name = "Frozen Crashsight"
+	is_player_level = TRUE
+	is_contact_level = FALSE
+	is_accessable_level = FALSE
+	is_sealed = TRUE
+	height = 2
 	digsites = "TEMPLE"
 
 /obj/map_data/nadezda_f
