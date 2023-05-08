@@ -45,7 +45,6 @@
 	return
 
 /obj/machinery/power/ex_bluespace_repairer/attackby(obj/item/I, mob/user)
-	log_and_message_admins(" - Exl Bluespace Aliner being used at \the [jumplink(src)] X:[src.x] Y:[src.y] Z:[src.z] User:[user]") //So we can go to it
 	if(default_deconstruction(I, user))
 		return
 	..()

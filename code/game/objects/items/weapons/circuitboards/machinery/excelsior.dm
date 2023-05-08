@@ -49,17 +49,6 @@
 		/obj/item/stock_parts/capacitor = 1
 	)
 
-/obj/item/circuitboard/excelsior_boombox
-	name = "circuit board astrakhan boombox"
-	build_name = ""
-	build_path = /obj/machinery/excelsior_boombox
-	board_type = "machine"
-	origin_tech = list(TECH_DATA = 3, TECH_ILLEGAL = 1)
-	req_components = list(
-		/obj/item/stock_parts/manipulator = 1,
-		/obj/item/stock_parts/console_screen = 1
-	)
-
 /obj/item/circuitboard/excelsior_teleporter
 	name = "circuit board soviet teleporter"
 	build_name = ""
