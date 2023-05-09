@@ -887,8 +887,16 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 			action = new /obj/screen/item_action/top_bar/gun/flashlight
 			action.owner = src
 			hud_actions += action
+			if(ismob(loc))
+				var/mob/user = loc
+				user.client?.screen += action
+			verbs += /obj/item/gun/proc/toggle_light_verb
 	else
+		if(ismob(loc))
+			var/mob/user = loc
+			user.client?.screen -= action
 		hud_actions -= action
+		verbs -= /obj/item/gun/proc/toggle_light_verb
 		qdel(action)
 	update_hud_actions()
 

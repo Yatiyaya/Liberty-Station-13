@@ -49,7 +49,7 @@
 		cell = new suitable_cell(src)
 */
 
-/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_on(var/mob/user)
+/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_on(var/mob/living/user)
 	if(!cell || !cell.check_charge(tick_cost))
 		playsound(loc, 'sound/machines/button.ogg', 50, 1)
 		to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
@@ -66,7 +66,7 @@
 	if (cell.percent() <= 25)
 		apply_power_deficiency()
 	calculate_dir()
-	if(. && user)
+	if(user)
 		START_PROCESSING(SSobj, src)
 		user.update_action_buttons()
 	if(turn_on_sound)
@@ -318,6 +318,8 @@
 /obj/item/gun_upgrade/tacticool_flashlight/MouseDrop(over_object)
 	if((src.loc == usr) && istype(over_object, /obj/screen/inventory/hand) && eject_item(cell, usr))
 		cell = null
+		if(on)
+			turn_off(over_object) // Cringe way to prevent an exploit.
 	else
 		return ..()
 
