@@ -1,5 +1,5 @@
 #include "map/frozen_forest.dmm"
-//#include "map/frozen_crashsite.dmm" - Uncommit me when you have sandbags coded in again
+#include "map/frozen_crashsite.dmm"
 
 //#include "map/_Deep_Forest.dmm"
 //#include "map/_Beast_Cave.dmm"

@@ -16065,6 +16065,9 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/bioreactor)
+"ekL" = (
+/turf/unsimulated/mineral/transition,
+/area/liberty/outside/forest)
 "ekT" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/decal/cleanable/dirt,
@@ -192710,7 +192713,7 @@ wgB
 aLW
 aLW
 rvQ
-kfM
+ekL
 vZK
 "}
 (111,1,3) = {"
@@ -192912,7 +192915,7 @@ aLW
 aLW
 aLW
 cGg
-kfM
+ekL
 vZK
 "}
 (112,1,3) = {"
@@ -206216,8 +206219,8 @@ cvY
 wgB
 wgB
 wgB
-wgB
-wgB
+mRv
+mRv
 cvY
 cyU
 cjO
@@ -206418,8 +206421,8 @@ wgB
 wgB
 wgB
 wgB
-dEP
-wgB
+mRv
+mRv
 wgB
 wgB
 wWt
@@ -206621,7 +206624,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+mRv
 wgB
 wgB
 wgB
@@ -206823,7 +206826,7 @@ wmI
 wgB
 wgB
 wgB
-wgB
+mRv
 wgB
 aHy
 wgB
@@ -207024,8 +207027,8 @@ wgB
 wgB
 wgB
 wgB
-cvY
 wgB
+mRv
 wgB
 wgB
 wgB
@@ -207227,7 +207230,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+mRv
 wgB
 wgB
 wgB
@@ -207428,8 +207431,8 @@ wgB
 wgB
 wgB
 wgB
-kAf
 wgB
+mRv
 wgB
 wgB
 wgB
@@ -207631,7 +207634,7 @@ wgB
 wgB
 wgB
 wgB
-wgB
+mRv
 wgB
 wgB
 wgB
@@ -208034,7 +208037,7 @@ wgB
 wgB
 wgB
 wgB
-cvY
+wgB
 wgB
 wgB
 wgB
@@ -208441,7 +208444,7 @@ wgB
 wgB
 wgB
 wgB
-fsf
+wgB
 wgB
 wgB
 dEP
@@ -209246,7 +209249,7 @@ wgB
 uIi
 wgB
 wgB
-wmI
+wgB
 wgB
 wgB
 wgB
@@ -209449,7 +209452,7 @@ wgB
 wgB
 wgB
 wgB
-fsf
+wgB
 gpO
 wgB
 wgB
@@ -209651,7 +209654,7 @@ wgB
 wgB
 cvY
 wgB
-wgB
+mRv
 wgB
 wgB
 kXR
@@ -209851,10 +209854,10 @@ wgB
 fsf
 wgB
 gpO
-wgB
-wgB
-wgB
-wgB
+qvP
+mRv
+mRv
+qvP
 wgB
 gno
 kfM
@@ -210256,9 +210259,9 @@ kfM
 kfM
 kfM
 kfM
-nUD
-dkF
-qwy
+ekL
+ekL
+kfM
 kfM
 kfM
 kfM

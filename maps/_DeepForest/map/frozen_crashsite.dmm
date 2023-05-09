@@ -421,6 +421,10 @@
 /obj/structure/multiz/ladder/burrow_hole,
 /turf/simulated/floor/industrial/sierra,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"fq" = (
+/obj/effect/decal/cleanable/dirt/snow,
+/turf/simulated/floor/rock/manmade/asphalt,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "fr" = (
 /obj/machinery/optable,
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -517,6 +521,7 @@
 "gw" = (
 /obj/landmark/join/late/dormitory_outsider,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "gx" = (
@@ -1131,7 +1136,7 @@
 /area/colony)
 "nb" = (
 /obj/structure/catwalk,
-/mob/living/carbon/superior_animal/human/balkan,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "nc" = (
@@ -1202,7 +1207,7 @@
 /turf/simulated/mineral/planet,
 /area/colony)
 "oe" = (
-/mob/living/carbon/superior_animal/human/balkan/sts,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/dungeon/outside/prepper)
 "oh" = (
@@ -1270,8 +1275,8 @@
 /turf/simulated/floor/snow,
 /area/colony)
 "pl" = (
-/mob/living/carbon/superior_animal/human/balkan/sts,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/dungeon/outside/prepper)
 "pn" = (
@@ -1334,10 +1339,8 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "pT" = (
-/mob/living/carbon/superior_animal/human/balkan,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/danger,
-/area/liberty/dungeon/outside/prepper)
+/turf/unsimulated/mineral,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "pU" = (
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
@@ -1408,7 +1411,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "qw" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/human/balkan/sts,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "qx" = (
@@ -1439,8 +1442,8 @@
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "qT" = (
-/mob/living/carbon/superior_animal/human/balkan/sts,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
 "qV" = (
@@ -1467,6 +1470,15 @@
 /obj/structure/flora/small/snow/rock3,
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"rj" = (
+/obj/machinery/computer/cryopod/dormitory{
+	icon_state = "shh";
+	icon_screen = "shh";
+	icon_keyboard = "shh";
+	icon = 'icons/obj/Cryogenic2.dmi'
+	},
+/turf/simulated/wall/wood_old,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "ro" = (
 /obj/effect/floor_decal/industrial/road/warning4,
 /obj/effect/decal/cleanable/dirt,
@@ -1815,8 +1827,8 @@
 	icon_state = "sandbag_0";
 	dir = 8
 	},
-/mob/living/carbon/superior_animal/human/balkan,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vh" = (
@@ -2057,7 +2069,7 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "xR" = (
-/mob/living/carbon/superior_animal/human/balkan,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
 "xV" = (
@@ -2503,8 +2515,8 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
 "Dt" = (
-/mob/living/carbon/superior_animal/human/balkan,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Du" = (
@@ -2702,6 +2714,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Fu" = (
 /obj/landmark/join/late/dormitory_outsider,
+/obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Fx" = (
@@ -2722,9 +2735,8 @@
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "FH" = (
-/mob/living/carbon/superior_animal/human/balkan,
-/turf/simulated/floor/rock/dark,
-/area/liberty/dungeon/outside/prepper/vault/entryway)
+/turf/unsimulated/mineral/transition,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "FI" = (
 /obj/machinery/microwave,
 /obj/structure/table/marble,
@@ -3063,6 +3075,7 @@
 /area/colony)
 "Jt" = (
 /obj/landmark/join/late/dormitory_outsider,
+/obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "Jv" = (
@@ -3071,7 +3084,7 @@
 /area/liberty/dungeon/outside/prepper)
 "JA" = (
 /obj/effect/decal/cleanable/dirt/snow,
-/mob/living/carbon/superior_animal/human/balkan/sts,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "JC" = (
@@ -3275,7 +3288,7 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Lg" = (
-/mob/living/carbon/superior_animal/human/balkan/sts,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Lh" = (
@@ -3422,7 +3435,7 @@
 "MI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/human/balkan/sts,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ML" = (
@@ -3581,6 +3594,16 @@
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"Oi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/cryopod/dormitory{
+	icon_state = "shh";
+	icon_screen = "shh";
+	icon_keyboard = "shh";
+	icon = 'icons/obj/Cryogenic2.dmi'
+	},
+/turf/simulated/floor/wood/wild4,
+/area/liberty/dungeon/outside/farm)
 "Op" = (
 /obj/structure/flora/pottedplant/stoutbush,
 /obj/effect/decal/cleanable/dirt,
@@ -4163,7 +4186,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
 "UB" = (
-/mob/living/carbon/superior_animal/human/balkan,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "UD" = (
@@ -4646,7 +4669,7 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ZO" = (
-/mob/living/carbon/superior_animal/human/balkan/bren,
+/obj/random/mob/space_balkan,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper)
 "ZY" = (
@@ -16118,7 +16141,7 @@ xo
 yA
 aE
 aE
-FH
+zs
 yA
 yA
 iv
@@ -45273,14 +45296,14 @@ na
 na
 na
 na
-na
-na
-na
-na
-na
-na
-na
-na
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
 na
 na
 na
@@ -45475,14 +45498,14 @@ na
 na
 na
 na
-na
-na
-na
-na
-na
-na
-na
-na
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
 na
 na
 na
@@ -45670,33 +45693,33 @@ na
 na
 na
 na
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
-Nm
+na
+na
+na
+na
+na
+na
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+na
+na
+na
+na
+na
+na
+na
+na
+jg
+jg
+jg
+na
 Nm
 Nm
 Nm
@@ -45872,7 +45895,18 @@ na
 na
 na
 na
-Nm
+na
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+jg
+FH
+FH
 jg
 jg
 jg
@@ -45887,18 +45921,7 @@ jg
 jg
 jg
 jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
-jg
+wI
 jg
 jg
 hD
@@ -46074,7 +46097,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -46097,8 +46120,8 @@ jg
 jg
 jg
 jg
-jg
 oT
+jg
 Yz
 Yz
 Yz
@@ -46276,7 +46299,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -46284,12 +46307,11 @@ jg
 jg
 jg
 jg
-jg
-Yz
-Yz
-Yz
-Yz
 oT
+Yz
+fq
+fq
+TP
 jg
 jg
 jg
@@ -46299,6 +46321,7 @@ jg
 jg
 jg
 jg
+wI
 Yz
 Yz
 Yz
@@ -46478,28 +46501,28 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
 jg
 jg
 jg
-jg
-Yz
-Yz
+wI
+fq
+fq
 TP
-Yz
-Yz
-Yz
+fq
+fq
+eW
 jg
 jg
-jg
-jg
-hf
+wI
 jg
 jg
 oT
+jg
+jg
 Yz
 Yz
 Yz
@@ -46680,23 +46703,23 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
 jg
 jg
-jg
+wI
+Yz
+Yz
+Yz
+fq
+fq
 Yz
 Yz
 Yz
 Yz
 Yz
-Yz
-Yz
-Yz
-jg
-hD
 Yz
 Yz
 Yz
@@ -46882,7 +46905,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -47084,18 +47107,18 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
 jg
-jg
+wI
 Yz
 TP
 Yz
 Yz
-Yz
-Yz
+fq
+fq
 Yz
 Yz
 Yz
@@ -47286,11 +47309,11 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
-Yz
+eW
 Co
 Yz
 Yz
@@ -47488,10 +47511,10 @@ na
 na
 na
 na
-Nm
 jg
-oT
-Yz
+jg
+jg
+wI
 Yz
 Yz
 Yz
@@ -47690,9 +47713,9 @@ na
 na
 na
 na
-Nm
 jg
-Yz
+jg
+oT
 Yz
 Yz
 Yz
@@ -47892,9 +47915,9 @@ na
 na
 na
 na
-Nm
 jg
-Yz
+jg
+jg
 Co
 eW
 Yz
@@ -48094,9 +48117,9 @@ na
 na
 na
 na
-Nm
 jg
-Yz
+jg
+jg
 Yz
 Yz
 Yz
@@ -48296,9 +48319,9 @@ na
 na
 na
 na
-Nm
 jg
-Yz
+jg
+wI
 Yz
 Yz
 Co
@@ -48498,7 +48521,7 @@ na
 na
 na
 na
-Nm
+jg
 jg
 jg
 Co
@@ -48700,10 +48723,10 @@ na
 na
 na
 na
-Nm
 jg
 jg
-hD
+jg
+jg
 Yz
 Yz
 Yz
@@ -48902,10 +48925,10 @@ na
 na
 na
 na
-Nm
 jg
 jg
 jg
+wI
 Yz
 Yz
 Yz
@@ -49104,7 +49127,7 @@ na
 na
 na
 na
-Nm
+jg
 jg
 jg
 jg
@@ -49306,9 +49329,9 @@ na
 na
 na
 na
-Nm
-jg
-jg
+na
+pT
+pT
 jg
 Yz
 Yz
@@ -49508,9 +49531,9 @@ na
 na
 na
 na
-Nm
-jg
-jg
+na
+pT
+pT
 oT
 Yz
 Yz
@@ -49710,8 +49733,8 @@ na
 na
 na
 na
-Nm
-jg
+na
+pT
 jg
 jg
 Yz
@@ -49912,7 +49935,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -50114,7 +50137,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -50316,7 +50339,7 @@ na
 na
 na
 na
-Nm
+na
 jg
 jg
 jg
@@ -64168,7 +64191,7 @@ xZ
 xZ
 xZ
 xZ
-tI
+Oi
 tI
 tI
 xZ
@@ -66681,7 +66704,7 @@ na
 Nm
 jg
 jg
-ef
+rj
 jz
 jz
 jz
@@ -76408,7 +76431,7 @@ Yz
 Yz
 Yz
 Yz
-UB
+Yz
 Yz
 Yz
 Yz
@@ -77018,7 +77041,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+UB
 Yz
 Yz
 CT
@@ -79677,7 +79700,7 @@ EY
 Yz
 Yz
 Yz
-UB
+Yz
 Sq
 Yz
 Yz
@@ -80686,7 +80709,7 @@ Co
 Eu
 hr
 Yz
-Yz
+UB
 Eu
 Yz
 Yz
@@ -81062,7 +81085,7 @@ Yz
 Yz
 Ci
 Ci
-UB
+Yz
 Yz
 In
 wY
@@ -83302,7 +83325,7 @@ Lw
 Lw
 Lw
 Lw
-pT
+qT
 Lw
 Vw
 Yz
@@ -83501,7 +83524,7 @@ dT
 QP
 Vw
 Lw
-pT
+qT
 QP
 wY
 dp
@@ -84301,7 +84324,7 @@ Lw
 Lw
 QB
 Lw
-pT
+qT
 Vw
 Vw
 Vw

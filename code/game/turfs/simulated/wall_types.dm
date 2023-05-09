@@ -8,7 +8,7 @@
 	icon_state = "cult"
 
 /turf/simulated/wall/cult/New(var/newloc)
-	..(newloc,"cult","cult2")
+	..(newloc,MATERIAL_STEEL,MATERIAL_STEEL)
 
 /turf/unsimulated/wall/cult
 	name = "cult wall"
