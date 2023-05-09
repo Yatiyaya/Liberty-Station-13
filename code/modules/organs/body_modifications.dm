@@ -163,6 +163,12 @@ var/global/list/modifications_types = list(
 	id = "prosthesis_frozen_star"
 	replace_limb = /obj/item/organ/external/robotic/frozen_star
 	icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+
+/datum/body_modification/limb/prosthesis/synthskin
+	id = "prosthesis_martin_huell"
+	replace_limb = /obj/item/organ/external/robotic/synthskin
+	icon = 'icons/mob/human_races/cyberlimbs/fbp.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/serbian
