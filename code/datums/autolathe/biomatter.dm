@@ -58,17 +58,17 @@
 	name = "Leather Satchel"
 	build_path = /obj/item/storage/backpack/satchel
 
-/datum/design/bioprinter/leather/storage/backpack/satchel/neotheology
+/datum/design/bioprinter/leather/storage/backpack/satchel/custodian
 	name = "Cruciform  Satchel"
-	build_path = /obj/item/storage/backpack/satchel/neotheology
+	build_path = /obj/item/storage/backpack/satchel/custodian
 
-/datum/design/bioprinter/leather/storage/backpack/neotheology
+/datum/design/bioprinter/leather/storage/backpack/custodian
 	name = "Cruciform Backpack"
-	build_path = /obj/item/storage/backpack/neotheology
+	build_path = /obj/item/storage/backpack/custodian
 
-/datum/design/bioprinter/leather/storage/backpack/sport/neotheology
+/datum/design/bioprinter/leather/storage/backpack/sport/custodian
 	name = "Cruciform Sport Backpack"
-	build_path = /obj/item/storage/backpack/sport/neotheology
+	build_path = /obj/item/storage/backpack/sport/custodian
 
 /datum/design/bioprinter/leather/holster
 	name = "shoulder holster"

@@ -50,7 +50,7 @@
 /obj/structure/low_wall/custodian
 	name = "stronghold low wall"
 	wall_color = "#FFFFFF"
-	icon_state = "custodian"
+	icon_state = "church_reinforced"
 
 //rusted low wall
 /obj/structure/low_wall/rusted

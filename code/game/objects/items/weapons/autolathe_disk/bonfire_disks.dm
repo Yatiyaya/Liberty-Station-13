@@ -22,9 +22,9 @@
 		/datum/design/bioprinter/belt/security/neotheology,
 		/datum/design/bioprinter/nt_clothes/custodian_boots,
 		//backpacks
-		/datum/design/bioprinter/leather/storage/backpack/satchel/neotheology,
-		/datum/design/bioprinter/leather/storage/backpack/neotheology,
-		/datum/design/bioprinter/leather/storage/backpack/sport/neotheology,
+		/datum/design/bioprinter/leather/storage/backpack/satchel/custodian,
+		/datum/design/bioprinter/leather/storage/backpack/custodian,
+		/datum/design/bioprinter/leather/storage/backpack/sport/custodian,
 		//pouches
 		/datum/design/bioprinter/pouch/janitor_supply,
 		/datum/design/bioprinter/pouch/medium_generic,

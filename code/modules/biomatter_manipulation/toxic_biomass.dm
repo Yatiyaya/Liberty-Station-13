@@ -37,10 +37,10 @@
 
 
 /obj/effect/decal/cleanable/solid_biomass
-	name = "solidified scorch"
-	desc = "A spill of scorch that's solidified, incredibly hot to the touch and dangerous to those not wearing protective gear."
+	name = "scorch puddle"
+	desc = "A dangerous scorch puddle, incredibly hot to the touch and dangerous to those not wearing protective gear."
 	icon = 'icons/obj/bioreactor_misc.dmi'
-	icon_state = "biomass-1"
+	icon_state = "scorch-1"
 	anchored = TRUE
 	layer = TURF_LAYER + 0.6
 
@@ -50,15 +50,11 @@
 
 /obj/effect/decal/cleanable/solid_biomass/Initialize()
 	. = ..()
-	icon_state = "biomass-[rand(1, 3)]"
+	icon_state = "scorch-[rand(1, 3)]"
 
 /obj/effect/decal/cleanable/solid_biomass/aoe
 	name = "fresh solidified scorch"
-	desc = "A spill of scorch that's solidified, incredibly hot to the touch and dangerous to those not wearing protective gear. This one is fresh and is able to radiate heat in a small area."
-	icon = 'icons/obj/bioreactor_misc.dmi'
-	icon_state = "biomass-1"
-	anchored = TRUE
-	layer = TURF_LAYER + 0.6
+	desc = "A dangerous scorch puddle, incredibly hot to the touch and dangerous to those not wearing protective gear. This one is fresh and is able to radiate heat in a small area."
 
 /obj/effect/decal/cleanable/solid_biomass/aoe/Initialize()
 	. = ..()

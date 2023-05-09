@@ -65,41 +65,7 @@
 		s.start()
 		return TRUE
 
-/*
-	Convalescence
-	Heals yourself a fair amount
-*/
 
-/datum/ritual/cruciform/priest/selfheal
-	name = "Convalescence"
-	phrase = "Dominus autem dirigat corda vestra in caritate Dei et patientia deus."
-	desc = "Recover from the ravages of wounds and pain."
-	cooldown = TRUE
-	cooldown_time = 5 MINUTES
-	power = 35 //Healing yourself is slightly easier than healing someone else
-	category = "Vitae"
-	nutri_cost = 50//high cost
-	blood_cost = 50//high cost
-
-/datum/ritual/cruciform/priest/selfheal/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
-	if(H.species?.reagent_tag != IS_SYNTHETIC)
-		if(H.nutrition >= nutri_cost)
-			H.nutrition -= nutri_cost
-		else
-			to_chat(H, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			H.vessel.remove_reagent("blood",blood_cost)
-	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
-		return FALSE
-	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
-	H.reagents.add_reagent("laudanum", 5)
-	H.adjustBruteLoss(-15)
-	H.adjustFireLoss(-15)
-	H.adjustOxyLoss(-20)
-	H.sanity.changeLevel(10)
-	H.updatehealth()
-	set_personal_cooldown(H)
-	return TRUE
 
 /datum/ritual/cruciform/priest/heal_other
 	name = "Priest's Succour"
@@ -151,50 +117,6 @@
 		H.updatehealth()
 		set_personal_cooldown(user)
 		return TRUE
-
-/datum/ritual/cruciform/priest/heal_heathen
-	name = "Divine Hymn"
-	phrase = "Ora pro nobis, qui non noverunt viam, hi sunt amissa, sed quia dilexit."
-	desc = "Heal every person who can see and hear for a small amount, even if they do not have a cruciform. Can only be done every quarter hour and requires alot of power. Using this prayer prevents other similar prayers from being used for awhile."
-	cooldown = TRUE
-	cooldown_time = 15 MINUTES
-	cooldown_category = "dhymn"
-	power = 50
-	category = "Vitae"
-	nutri_cost = 50//high cost
-	blood_cost = 50//high cost
-
-/datum/ritual/cruciform/priest/heal_heathen/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/list/people_around = list()
-	for(var/mob/living/carbon/human/H in view(user))
-		if(H != user && !isdeaf(H))
-			people_around.Add(H)
-
-	if(people_around.len > 0)
-		if(user.species?.reagent_tag != IS_SYNTHETIC)
-			if(user.nutrition >= nutri_cost)
-				user.nutrition -= nutri_cost
-			else
-				to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-				user.vessel.remove_reagent("blood",blood_cost)
-		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
-		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
-		for(var/mob/living/carbon/human/participant in people_around)
-			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
-			heal_other(participant)
-			add_effect(participant, FILTER_HOLY_GLOW, 25)
-		set_personal_cooldown(user)
-		return TRUE
-	else
-		fail("Your cruciform sings, alone, unto the void.", user, C)
-		return FALSE
-
-/datum/ritual/cruciform/priest/heal_heathen/proc/heal_other(mob/living/carbon/human/participant)
-		to_chat(participant, "<span class='info'>A sensation of relief bathes you, washing away your some of your pain.</span>")
-		participant.reagents.add_reagent("laudanum", 5, "bicaridine", 5, "kelotane", 5)
-		participant.adjustOxyLoss(-20)
-		participant.sanity.changeLevel(15)
-		participant.updatehealth()
 
 /*
 	Scrying: Remotely look through someone's eyes. Global range, useful to find fugitives or corpses

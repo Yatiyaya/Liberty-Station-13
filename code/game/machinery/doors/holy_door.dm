@@ -1,5 +1,5 @@
 /obj/machinery/door/holy
-	name = "custodian passageway"
+	name = "custodian hatchway"
 	desc = "A door crafted by the Custodians that requires no power and doesn't seem to have a panel you could open."
 	icon = 'icons/obj/doors/Door_holy.dmi'
 	icon_state = "door_closed"

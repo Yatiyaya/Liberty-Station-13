@@ -1,7 +1,7 @@
 
 /datum/category_item/setup_option/core_implant/cruciform
-	name = "Vinculum Cruciform"
-	desc = "The implant given to every disciple of the Bonfire. This one is a standard Vinculum design, having the base-line of a normal cruciform."
+	name = "Hearthcore"
+	desc = "The implant given to every member of the Bonfire. Uses the nanobot substance known as Radiance to perform various feats."
 	implant_type = /obj/item/implant/core_implant/cruciform
 	restricted_jobs = list(
 		/datum/job/clubmanager,
@@ -97,8 +97,4 @@
 	allow_modifications = TRUE
 	restricted_to_species = list(FORM_OPIFEX) // Opifex get their own fancy nanogate
 */
-/datum/category_item/setup_option/core_implant/cruciform
-	name = "Hearthcore"
-	desc = "The implant given to every member of the Bonfire. Uses the nanobot substance known as Radiance to perform various feats."
-	implant_type = /obj/item/implant/core_implant/cruciform
 

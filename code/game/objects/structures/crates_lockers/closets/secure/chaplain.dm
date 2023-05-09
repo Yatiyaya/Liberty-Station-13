@@ -6,11 +6,11 @@
 
 /obj/structure/closet/secure_closet/reinforced/preacher/populate_contents()
 	if(prob(25))
-		new /obj/item/storage/backpack/neotheology(src)
+		new /obj/item/storage/backpack/custodian(src)
 	else if(prob(25))
-		new /obj/item/storage/backpack/sport/neotheology(src)
+		new /obj/item/storage/backpack/sport/custodian(src)
 	else
-		new /obj/item/storage/backpack/satchel/neotheology(src)
+		new /obj/item/storage/backpack/satchel/custodian(src)
 	new /obj/item/clothing/under/rank/preacher(src)
 	new /obj/item/device/radio/headset/church(src)
 	new /obj/item/storage/belt/utility/neotheology(src)

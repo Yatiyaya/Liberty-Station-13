@@ -2,10 +2,10 @@ GLOBAL_VAR_INIT(miracle_points, 0)
 var/global/obj/machinery/power/eotp/eotp
 
 /obj/machinery/power/eotp
-	name = "Will of the Protector"
-	desc = "A specialized obelisk designed to supply the surface church with absolutist design disks and blessings from the lower temples. By making offerings of supplies or materials readily produced \
-	by the church, disciples can obtain disks and other goods. The obelisk also provides various blessings and monitors areas protected by obelisks for potential threats to the colony, marked by its \
-	observation level, letting it warn primes and vectors ahead of time. Additionally, it passively gains power before unleashing various blessings to followers."
+	name = "Embers of Theoretical Philosophy"
+	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and blessings from the lower stronghold. By making offerings of supplies or materials readily produced \
+	by the Custodians, members can obtain disks and other goods. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
+	observation level, letting it warn Custodians ahead of time. Additionally, it passively gains power before unleashing various blessings to Hearthcore users."
 	icon = 'icons/obj/eotp.dmi'
 	icon_state = "eotp"
 

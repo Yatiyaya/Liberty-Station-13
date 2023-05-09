@@ -17,7 +17,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Thumbspire"
 	phrase = "Oxidate Lecture: Thumbspire"
 	desc = "Create a small spark on your thumb that can be used to ignite things."
-	power = 25
+	power = 2
 
 /datum/ritual/cruciform/base/thumbspire/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/obj/item/flame/custodian_spark/flame = new /obj/item/flame/custodian_spark(src, lecturer)
@@ -76,7 +76,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Entreaty"
 	phrase = "Oxidate Lecture: Entreaty"
 	desc = "Call for help, allowing other cruciform bearers to hear your cries."
-	power = 25
+	power = 10
 
 /datum/ritual/cruciform/base/entreaty/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	for(var/mob/living/carbon/human/target in disciples)
@@ -93,10 +93,11 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/pyrelight
 	name = "Pyrelight"
 	phrase = "Oxidate Lecture: Pyrelight"
-	desc = "Lecture of wandering Custodians that creates a small immobile light for about twenty minutes."
-	power = 20 //Cost correlates to duration.
+	desc = "Lecture of wandering Custodians that creates a small immobile light for about twenty minutes. Has a two-minute cooldown."
+	power = 10 //Cost correlates to duration.
 	cooldown_time = 2 MINUTES
-	cooldown_category = "flare"
+	cooldown_category = "pyrelight"
+	cooldown = TRUE
 
 /datum/ritual/cruciform/base/pyrelight/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	playsound(H.loc, 'sound/effects/snap.ogg', 50, 1)
@@ -105,76 +106,44 @@ datum/ritual/cruciform/base/thumbspire
 	set_personal_cooldown(H)
 	return TRUE
 
-/*
-/datum/ritual/cruciform/base/reveal //LOOK AT LATER ON OTHER PATHS, NAYU MENTIONED SOMETHING ELSE HAVING THIS ALREADY?
-	name = "Reveal Adversaries"
-	phrase = "Et fumus tormentorum eorum ascendet in saecula saeculorum: nec habent requiem die ac nocte, qui adoraverunt bestiam, et imaginem ejus, et si quis acceperit caracterem nominis ejus."
-	desc = "Gain knowledge of your surroundings to reveal evil in people and places. This can tell you about hostile creatures around you, rarely can help you spot traps and sometimes let you sense a monster disguised as a person."
-	power = 35
-
-/datum/ritual/cruciform/base/reveal/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
-	var/was_triggired = FALSE
-	log_and_message_admins("[H.real_name] performed reveal litany")
-	if(prob(5)) //Additional fail chance that hidded from user
-		to_chat(H, SPAN_NOTICE("There is nothing there. You feel safe."))
-		return TRUE
-	for (var/mob/living/carbon/superior_animal/S in range(14, H))
-		if (S.stat != DEAD)
-			to_chat(H, SPAN_WARNING("Adversaries are near. You can feel something nasty and hostile."))
-			was_triggired = TRUE
-			break
-
-	if (!was_triggired)
-		for (var/mob/living/simple_animal/hostile/S in range(14, H))
-			if (S.stat != DEAD)
-				to_chat(H, SPAN_WARNING("Adversaries are near. You can feel something nasty and hostile."))
-				was_triggired = TRUE
-				break
-	if (prob(95) && (locate(/obj/structure/wire_splicing || /obj/item/mine || /obj/item/mine_old || /obj/item/spider_shadow_trap || /obj/item/beartrap) in view(7, H))) //Add more traps later
-		to_chat(H, SPAN_WARNING("Something is wrong with this area. Tread carefully."))
-		was_triggired = TRUE
-	if (prob(80))
-		for(var/mob/living/carbon/human/target in range(14, H))
-			for(var/organ in target.organs)
-				if (organ in subtypesof(/obj/item/organ/internal/carrion))
-					to_chat(H, SPAN_DANGER("A black terrible evil brushes against your mind suddenly, a horrible monstrous entity who's mere glancing ire is enough to leave you in a breathless cold sweat..."))
-				was_triggired = TRUE
-				break
-	if (!was_triggired)
-		to_chat(H, SPAN_NOTICE("There is nothing here. You feel safe."))
-	return TRUE
-*/
-
 /datum/ritual/cruciform/base/message
 	name = "Carrier Pigeon"
 	phrase = "Oxidate Lecture: Carrier Pigeon"
 	desc = "Create a pigeon of light to send a message to a person of your choice."
-	power = 30
+	power = 10
 
 /datum/ritual/cruciform/base/message/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
-	var/mob/living/carbon/human/H = pick_disciple_global(user, TRUE)
-	if (!H)
+	var/list/creatures = list()
+	for(var/mob/living/carbon/human/h in world)
+		if(!h.is_mannequin) // Can't talk mannequins
+			creatures += h // Add the player to the list we can talk to
+	var/mob/target = input("Who do you want to send a message to?") as null|anything in creatures
+
+	if (!target)
 		return FALSE
 
-	if(user == H)
+	if(user == target)
 		fail("You feel stupid.",user,C,targets)
 		return FALSE
 
 	var/text = input(user, "What message will you send to the target? Only they will be able to hear it.", "Sending a message") as text|null
 	if (!text)
 		return FALSE
-	to_chat(H, "<span class='notice'><b><font size='3px'><font color='#ffaa00'>A nearly imperceptible pigeon of light hovers near your ears and resonates with [user.real_name]'s voice: \"[text]\"</font><b></span>")
-	log_and_message_admins("[user.real_name] sent a message to [H] with text \"[text]\"")
+	to_chat(target, "<span class='notice'><b><font size='2px'><font color='#ffaa00'>A nearly imperceptible pigeon of light hovers near your ears and resonates with [user.real_name]'s voice: \"[text]\"</font><b></span>")
+	log_and_message_admins("[user.real_name] sent a message to [target] with text \"[text]\"")
 	playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
-	playsound(H, 'sound/machines/signal.ogg', 50, 1)
+	playsound(target, 'sound/machines/signal.ogg', 50, 1)
+	for(var/mob/observer/ghost/G in world)
+		G.show_message("<i>Message from <b>[src]</b> to <b>[target]</b>: [text]</i>")
 	return TRUE
 
 /datum/ritual/cruciform/base/revelation
 	name = "Revelation"
 	phrase = "Oxidate Lecture: Revelation"
-	desc = "A person close to you will recieve a fortifying effect to their psyche, letting them face greater horrors for thirty minutes."
+	desc = "A person close to you will recieve a fortifying effect to their psyche, letting them face greater horrors for thirty minutes. Has a five minute cooldown."
 	power = 50
 	cooldown_category = "revelation"
+	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	effect_time = 30 MINUTES
 
@@ -199,13 +168,13 @@ datum/ritual/cruciform/base/thumbspire
 
 //Give powah
 
-/datum/ritual/cruciform/base/recharge_others
+/datum/ritual/cruciform/base/empower
 	name = "Empower"
 	phrase = "Oxidate Lecture: Empower"
-	desc = "This ritual helps recharging a nearby person's Hearthcore."
+	desc = "This lecture transfers Radiance from your own Hearthcore to another Hearthcore user, draining 15 Radiance to grant 10."
 	power = 15
 
-/datum/ritual/cruciform/base/recharge_others/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+/datum/ritual/cruciform/base/empower/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
 
 	if(!CI || !CI.active || !CI.wearer)
@@ -230,7 +199,7 @@ datum/ritual/cruciform/base/thumbspire
 		if (!(T.Adjacent(get_turf(H))))
 			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
 			return FALSE
-		to_chat(H, "<span class='info'>Your cruciform sings a small tune as it gets charged.</span>")
+		to_chat(H, "<span class='info'>Your Hearthcore sings a small tune as it gets charged.</span>")
 
 		CI.restore_power(10)
 
@@ -239,12 +208,12 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/accelerated_growth
 	name = "Accelerated Growth"
 	phrase = "Oxidate Lecture: Accelerated Growth"
-	desc = "This lecture boosts the growth of all plants in sight for about 5 minutes."
+	desc = "This lecture boosts the growth of all plants in sight for about 5 minutes. Has a five minute cooldown."
+	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	effect_time = 5 MINUTES
 	cooldown_category = "accelerated_growth"
 	power = 30
-	category = "Vitae"
 
 	var/boost_value = 1.5  // How much the aging process of the plant is sped up
 
@@ -260,7 +229,7 @@ datum/ritual/cruciform/base/thumbspire
 		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 		for(var/datum/seed/S in plants_around)
 			give_boost(S)
-		set_global_cooldown()
+		set_personal_cooldown()
 		return TRUE
 	else
 		fail("There is no plant around to hear your song.", user, C)
@@ -280,8 +249,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Hand of Mercy"
 	phrase = "Oxidate Lecture: Hand of Mercy"
 	desc = "Relieves the pain of a person in front of you."
-	power = 50
-	category = "Vitae"
+	power = 25
 
 /datum/ritual/cruciform/base/mercy/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
@@ -295,53 +263,11 @@ datum/ritual/cruciform/base/thumbspire
 
 	return TRUE
 
-/datum/ritual/cruciform/base/heal_other
-	name = "Succour"
-	phrase = "Oxidate Lecture: Succour"
-	desc = "Heal a nearby member of the Custodians."
-	cooldown_time = 100
-	power = 35
-
-/datum/ritual/cruciform/base/heal_other/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
-	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
-
-	if(!CI || !CI.active || !CI.wearer)
-		fail("Hearthcore not found.", user, C)
-		return FALSE
-
-	var/mob/living/carbon/human/H = CI.wearer
-
-	if(!istype(H))
-		fail("Target not found.",user,C,targets)
-		return FALSE
-
-	//Checking turfs allows this to be done in unusual circumstances, like if both are inside the same mecha
-	var/turf/T = get_turf(user)
-	if (!(T.Adjacent(get_turf(H))))
-		to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
-		return FALSE
-
-	user.visible_message("[user] places their hands upon [H]", "You lay your hands upon [H]")
-	if (do_after(user, 40, H, TRUE))
-		T = get_turf(user)
-		if (!(T.Adjacent(get_turf(H))))
-			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
-			return FALSE
-		log_and_message_admins(" healed [CI.wearer] with Succour lecture")
-		to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain</span>")
-		H.add_chemical_effect(CE_PAINKILLER, 20)
-		H.adjustBruteLoss(-30)
-		H.adjustFireLoss(-30)
-		H.updatehealth()
-		set_personal_cooldown(user)
-		return TRUE
-
 /datum/ritual/cruciform/base/absolution
 	name = "Flames of Stability"
 	phrase = "Oxidate Lecture: Flames of Stability"
 	desc = "Stabilizes the health of a person in front of you."
-	power = 50
-	category = "Vitae"
+	power = 25
 
 /datum/ritual/cruciform/base/absolution/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
@@ -362,8 +288,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Word of Purification"
 	phrase = "Oxidate Lecture: Word of Purification"
 	desc = "Addictions are common afflictions among colony denizens. This lecture helps those people by easing or removing their addictions."
-	power = 50
-	category = "Vitae"
+	power = 30
 
 /datum/ritual/cruciform/base/purging/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)

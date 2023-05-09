@@ -17,7 +17,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/biotank_platform
-	name = "biomatter tank platform"
+	name = "scorchslag tank platform"
 	icon_state = "tank_platform"
 	layer = LOW_OBJ_LAYER
 	idle_power_usage = 120
@@ -124,7 +124,7 @@
 	pixel_y = 16
 	var/max_capacity = 10000
 	var/obj/machinery/multistructure/bioreactor_part/biotank_platform/platform
-	var/obj/structure/reagent_dispensers/biomatter/canister
+	var/obj/structure/reagent_dispensers/scorch/canister
 	var/default_position = 16
 	var/to_port_position = -20
 
@@ -178,7 +178,7 @@
 		if(QUALITY_BOLT_TURNING)
 			if(!platform.pipes_opened)
 				return
-			var/obj/structure/reagent_dispensers/biomatter/possible_canister = locate() in platform.MS_bioreactor.output_port.loc
+			var/obj/structure/reagent_dispensers/scorch/possible_canister = locate() in platform.MS_bioreactor.output_port.loc
 			if(!possible_canister)
 				to_chat(user, SPAN_WARNING("Nothing to connect to!"))
 				return

@@ -1,3 +1,5 @@
+#define REPAIR_COST 25
+
 //////////////////////////////////////////////////
 /////////         OATHBOUND             /////////
 //////////////////////////////////////////////////
@@ -16,7 +18,6 @@
 	category = "Oathbound"
 	ignore_stuttering = TRUE
 
-//datum/ritual/cruciform/oathbound/fireball
 datum/ritual/cruciform/oathbound/fireball
 	name = "Manifestation of Flames"
 	phrase = "Oxidate Lecture: Manifestation of Flames"
@@ -118,12 +119,13 @@ datum/ritual/cruciform/oathbound/fireball_big
 	power = 20
 
 /datum/ritual/cruciform/oathbound/eyeflare/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
-	for(var/mob/living/carbon/M in viewers(2, null))
+	for(var/mob/living/carbon/M in view(2, H))
 		if(issuperioranimal(M))
 			M.Weaken(10)
 		var/safety = M.eyecheck()
 		if(safety < FLASH_PROTECTION_MINOR)
 			M.flash(3, FALSE, FALSE, TRUE)
+	H.visible_message("A flash of light flares out of [H]!")
 	return TRUE
 
 /datum/ritual/cruciform/oathbound/radiance_neural
@@ -202,7 +204,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	oxygen_mod_oathbound = (user.oxy_mod_perk * 0.5)
 	user.oxy_mod_perk -= oxygen_mod_oathbound
 
-	user.add_chemical_effect(CE_SLOWDOWN, 5, 5 MINUTES)
+	user.slowdown += 1
 
 	to_chat(user, SPAN_NOTICE("You feel your body stiffening, your stout refusal to change slowing down the world around you as you remain at a fixed point."))
 	set_personal_cooldown(user)
@@ -210,10 +212,12 @@ datum/ritual/cruciform/oathbound/fireball_big
 	return TRUE
 
 /datum/ritual/cruciform/oathbound/scorching_shell/proc/discard_effect(mob/living/carbon/human/user, amount)
-	user.brute_mod_perk -= brute_mod_oathbound
-	user.burn_mod_perk -= burn_mod_oathbound
-	user.toxin_mod_perk -= toxin_mod_oathbound
-	user.oxy_mod_perk -= oxygen_mod_oathbound
+	user.brute_mod_perk += brute_mod_oathbound
+	user.burn_mod_perk += burn_mod_oathbound
+	user.toxin_mod_perk += toxin_mod_oathbound
+	user.oxy_mod_perk += oxygen_mod_oathbound
+	user.slowdown -= 1
+	to_chat(user, SPAN_NOTICE("Your body feels lighter, weaker, you've returned to normal."))
 
 /datum/ritual/cruciform/oathbound/scorching_smite
 	name = "Scorching Smite"
@@ -235,6 +239,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/scorching_smite/proc/discard_effect(mob/living/carbon/human/user, amount)
 	user.damage_multiplier -= wrath_damage
+	to_chat(user, SPAN_NOTICE("Your wrath subsides"))
 
 /datum/ritual/cruciform/oathbound/restraint_conflagaration
 	name = "Restraint Conflagaration"
@@ -257,6 +262,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/restraint_conflagaration/proc/discard_effect(mob/living/carbon/human/user, amount)
 	user.stats.changeStat(STAT_TGH, -10)
 	user.stats.changeStat(STAT_ROB, -10)
+	to_chat(user, SPAN_NOTICE("You no longer feel emboldened."))
 
 /datum/ritual/cruciform/oathbound/ignite_flesh
 	name = "Ignite Flesh"
@@ -265,10 +271,15 @@ datum/ritual/cruciform/oathbound/fireball_big
 	power = 90
 
 /datum/ritual/cruciform/oathbound/ignite_flesh/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	for(var/mob/living/carbon/M in viewers(2, null))
+	for(var/mob/living/carbon/M in view(2, user))
 		if(!M.get_core_implant(/obj/item/implant/core_implant/cruciform))
 			biomatter_attack(M, 10)
+	user.visible_message("A wave of flame radiates out from [user]!")
 	return TRUE
+
+//////////////////////////////////////////////////
+/////////         ENKINDLED             /////////
+//////////////////////////////////////////////////
 
 /datum/ritual/cruciform/enkindled
 	name = "cruciform"
@@ -284,21 +295,294 @@ datum/ritual/cruciform/oathbound/fireball_big
 	category = "Enkindled"
 	ignore_stuttering = TRUE
 
-//datum/ritual/cruciform/enkindled/LITANY THAT HEALS OTHER PEOPLE NEARBY THAT WAS REMOVED?
+/datum/ritual/cruciform/enkindled/succour
+	name = "Succour"
+	phrase = "Oxidate Lecture: Succour"
+	desc = "Heal a nearby Hearthcore user. Has a five minute cooldown"
+	cooldown = TRUE
+	cooldown_time = 5 MINUTES
+	cooldown_category = "succour"
+	power = 35
 
-//datum/ritual/cruciform/enkindled/convalescence
+/datum/ritual/cruciform/enkindled/succour/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
 
-//datum/ritual/cruciform/enkindled/cauterization_hymn
+	if(!CI || !CI.active || !CI.wearer)
+		fail("Hearthcore not found.", user, C)
+		return FALSE
 
-//datum/ritual/cruciform/enkindled/graceful_repose
+	var/mob/living/carbon/human/H = CI.wearer
 
-//datum/ritual/cruciform/enkindled/healing_word
+	if(!istype(H))
+		fail("Target not found.",user,C,targets)
+		return FALSE
 
-//datum/ritual/cruciform/enkindled/realignment
+	//Checking turfs allows this to be done in unusual circumstances, like if both are inside the same mecha
+	var/turf/T = get_turf(user)
+	if (!(T.Adjacent(get_turf(H))))
+		to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
+		return FALSE
+
+	user.visible_message("[user] places their hands upon [H]", "You lay your hands upon [H]")
+	if (do_after(user, 40, H, TRUE))
+		T = get_turf(user)
+		if (!(T.Adjacent(get_turf(H))))
+			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
+			return FALSE
+		log_and_message_admins(" healed [CI.wearer] with the Succour lecture")
+		to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain</span>")
+		H.add_chemical_effect(CE_PAINKILLER, 20)
+		H.adjustBruteLoss(-30)
+		H.adjustFireLoss(-30)
+		H.updatehealth()
+		set_personal_cooldown(user)
+		return TRUE
+
+/datum/ritual/cruciform/enkindled/convalescence
+	name = "Convalescence"
+	phrase = "Oxidate Lecture: Convalescence"
+	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 5 MINUTES
+	cooldown_category = "convalescence"
+	power = 35 //Healing yourself is slightly easier than healing someone else
+
+/datum/ritual/cruciform/enkindled/convalescence/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
+	if(H.species?.reagent_tag == IS_SYNTHETIC)
+		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
+		return FALSE
+	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
+	H.reagents.add_reagent("laudanum", 5)
+	H.adjustBruteLoss(-15)
+	H.adjustFireLoss(-15)
+	H.adjustOxyLoss(-20)
+	H.sanity.changeLevel(10)
+	H.updatehealth()
+	set_personal_cooldown(H)
+	return TRUE
+
+/datum/ritual/cruciform/enkindled/graceful_repose
+	name = "Graceful Repose"
+	phrase = "Oxidate Lecture: Graceful Repose"
+	desc = "A tricky litany that heals the mind and body of those around you from esoteric maladies such as genetic malignance or brain damage. Has a fifteen minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	cooldown_category = "grepose"
+	power = 60
+	nutri_cost = 50
+	blood_cost = 50
+
+/datum/ritual/cruciform/enkindled/graceful_repose/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/list/people_around = list()
+	for(var/mob/living/carbon/human/H in view(user))
+		people_around.Add(H)
+
+	if(people_around.len > 0)
+		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
+		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
+		for(var/mob/living/carbon/human/participant in people_around)
+			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
+			heal_other(participant)
+			add_effect(participant, FILTER_HOLY_GLOW, 25)
+		set_personal_cooldown(user)
+		return TRUE
+	else
+		fail("Your cruciform sings, alone, unto the void.", user, C)
+		return FALSE
+
+/datum/ritual/cruciform/enkindled/graceful_repose/proc/heal_other(mob/living/carbon/human/participant)
+		to_chat(participant, "<span class='info'>A sensation of relief bathes you, washing away your most of your pain in body and mind</span>")
+		participant.reagents.add_reagent("anodyne", 10)
+		participant.adjustCloneLoss(-20)
+		participant.adjustBrainLoss(-20)
+		participant.updatehealth()
+
+/datum/ritual/cruciform/enkindled/healing_word
+	name = "Healing Word"
+	phrase = "Oxidate Lecture: Healing Word"
+	desc = "Heal every person you can see for a fair amount. This lecture has a cooldown of 15 minutes."
+	cooldown = TRUE
+	power = 50
+	cooldown_time = 15 MINUTES
+	cooldown_category = "healingword" //Shares a cooldown because with the future tiered lecture system this should replace cauterization hymn
+
+/datum/ritual/cruciform/enkindled/healing_word/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/list/people_around = list()
+	for(var/mob/living/carbon/human/H in view(user))
+		people_around.Add(H)
+
+	if(people_around.len > 0)
+		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
+		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
+		for(var/mob/living/carbon/human/participant in people_around)
+			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
+			heal_other(participant)
+			add_effect(participant, FILTER_HOLY_GLOW, 25)
+		set_personal_cooldown(user)
+		return TRUE
+	else
+		fail("Your Hearthcore finds nobody to help.", user, C)
+		return FALSE
+
+/datum/ritual/cruciform/enkindled/healing_word/proc/heal_other(mob/living/carbon/human/participant)
+		to_chat(participant, "<span class='info'>A sensation of relief bathes you, washing away your some of your pain</span>")
+		participant.reagents.add_reagent("laudanum", 10)
+		participant.adjustBruteLoss(-20)
+		participant.adjustFireLoss(-20)
+		participant.adjustOxyLoss(-40)
+		participant.adjustBrainLoss(-5)
+		participant.updatehealth()
+
+/datum/ritual/cruciform/enkindled/realignment
+	name = "Realignment"
+	phrase = "Oxidate Lecture: Realignment"
+	desc = "Heals all toxins and liver damage, purges all toxic chemical reagents and stimulants in the blood stream, and slows down anyone in front of you while curing all addictions. Has a fifteen minute cooldown."
+	power = 50
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	cooldown_category = "realignment"
+
+/datum/ritual/cruciform/enkindled/realignment/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
+	if(!T)
+		fail("No target in front of you.", user, C)
+		return FALSE
+	to_chat(T, SPAN_NOTICE("You feel yourself growing more focused with each passing second."))
+	to_chat(user, SPAN_NOTICE("You grant [T.name] cleansing."))
+
+	T.reagents.add_reagent("alignitol", 10)
+	set_personal_cooldown(user)
+
+	return TRUE
 
 //datum/ritual/cruciform/enkindled/blood_transmuting NOT FOR NOW
 
-//datum/ritual/cruciform/enkindled/revival_lecture
+/datum/ritual/cruciform/enkindled/revival_lecture
+	name = "Revival"
+	phrase = "Oxidate Lecture: Revival"
+	desc = "Consume parts of a Hearthcore to jumpstart a deceased user's life functions, mending any present neural degeneration. Has a thirty minute cooldown."
+	power = 50
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "revival"
+
+/datum/ritual/cruciform/enkindled/revival_lecture/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/M = get_victim(user)
+	var/obj/item/implant/core_implant/cruciform/CI = M.get_core_implant(/obj/item/implant/core_implant/cruciform, FALSE)
+
+	if (!CI)
+		fail("[M] doesn't have a Hearthcore installed.", user, C)
+		return FALSE
+
+	if (CI.get_module(CRUCIFORM_DAMAGED))
+		fail("[M]'s Hearthcore is damaged from a previous Revival lecture.", user, C)
+		return FALSE
+
+	if(!M.client && !M.teleop)
+		for(var/mob/observer/ghost/ghost in GLOB.player_list)
+			if(ghost.mind == M.mind)
+				to_chat(ghost, "<b><font color = #330033><font size = 3>Someone is attempting to resuscitate you. Re-enter your body if you want to be revived!</b> (Verbs -> Ghost -> Re-enter corpse)</font></font>")
+		fail("[M]'s mind does not respond, continued attempts may bear fruit.", user, C)
+		return FALSE
+
+	GLOB.dead_mob_list.Remove(M)
+	GLOB.living_mob_list += M
+
+	M.adjustOxyLoss(-10) //Same as a regular defib
+	M.timeofdeath = 0
+	M.stat = UNCONSCIOUS //Life() can bring them back to consciousness if it needs to.
+	M.failed_last_breath = 0 //So mobs that died of oxyloss don't revive and have perpetual out of breath.
+
+	M.emote("gasp")
+	M.Weaken(rand(10,25))
+	M.updatehealth()
+
+	var/rngStatRemoved
+	switch(M.stats.getStat(STAT_MEC))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_MEC, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_MEC, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_MEC, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the MEC stat of [M]")
+	switch(M.stats.getStat(STAT_BIO))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_BIO, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_BIO, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_BIO, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the BIO stat of [M]")
+	switch(M.stats.getStat(STAT_COG))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_COG, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_COG, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_COG, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the COG stat of [M]")
+	switch(M.stats.getStat(STAT_ROB))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_ROB, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_ROB, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_ROB, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the ROB stat of [M]")
+	switch(M.stats.getStat(STAT_TGH))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_TGH, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_TGH, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_TGH, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the TGH stat of [M]")
+	switch(M.stats.getStat(STAT_VIG))
+		if(0 to 40)
+			rngStatRemoved = pick(1,2,3,4,5,6,7,8)
+			M.stats.changeStat(STAT_VIG, -rngStatRemoved)
+		if(40 to 60)
+			rngStatRemoved = pick(8,9,10,11,12)
+			M.stats.changeStat(STAT_VIG, -rngStatRemoved)
+		if(60 to INFINITY)
+			rngStatRemoved = pick(12,13,14,15,16,17,18,19,20)
+			M.stats.changeStat(STAT_VIG, -rngStatRemoved)
+	log_and_message_admins("Removed [-rngStatRemoved] to the VIG stat of [M]")
+
+	switch(M.stats.getStat(STAT_TGH)) //no advanced pads here, hit them with the harsh code
+		if(-200 to 40)
+			M.stats.addPerk(PERK_REZ_SICKNESS_FATAL)
+			log_and_message_admins("Added fatal rez sickness to [M].")
+		if(40 to 60)
+			M.stats.addPerk(PERK_REZ_SICKNESS_SEVERE)
+			log_and_message_admins("Added severe rez sickness to [M].")
+		if(60 to INFINITY)
+			M.stats.addPerk(PERK_REZ_SICKNESS)
+			log_and_message_admins("Added mild rez sickness to [M].")
+
+	CI.add_module(new CRUCIFORM_DAMAGED) //CRUCIFORM_DAMAGED is a module used to prevent using Revival on a person more than once without repairing the Hearthcore
+
+	return TRUE
+
+//////////////////////////////////////////////////
+/////////         FORGEMASTER             /////////
+//////////////////////////////////////////////////
 
 /datum/ritual/cruciform/forgemaster
 	name = "cruciform"
@@ -314,13 +598,59 @@ datum/ritual/cruciform/oathbound/fireball_big
 	category = "Forgemaster"
 	ignore_stuttering = TRUE
 
-//datum/ritual/cruciform/forgemaster/empowering_flames
+/datum/ritual/cruciform/forgemaster/empowering_flames
+	name = "Empowering Flames"
+	desc = "Consume some Radiance to charge a power cell you are holding."
+	phrase = "Oxidate Lecture: Empowering Flames"
+	cooldown = TRUE
+	cooldown_time = 0 MINUTES
+	cooldown_category = "charging"
+	power = 0 // Do not use the power in one shot
+	var/charge_used = 10 // Amount of cruciform energy used.
+	var/charge_rate = 20 // The delay between each charge? The number is in deciseconds, so 30 is equal to 3 seconds
 
-//datum/ritual/cruciform/forgemaster/tools_of_bonfire
+/datum/ritual/cruciform/forgemaster/empowering_flames/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	set_personal_cooldown(user)
+	var/inhand = user.get_active_hand()
+	if(istype(inhand, /obj/item/cell))
+		var/obj/item/cell/P = inhand
+		if(P.max_chargerate == 0) // Can we even charge the damn thing.
+			fail("This type of cell cannot be charged.", user, C)
+			return
+		to_chat(user, "You start charging the [P.name].")
+		while(C.power >= charge_used) // Keep going until we run out of power
+			if(!istype(user.get_active_hand(), /obj/item/cell)) // Check if we're still holding a cell. Because rigged cell explode when charging.
+				break
+			if(P.fully_charged()) // Leave the loop if the cell is charged.
+				break
+			if(do_after(user, charge_rate)) // Small delay where the user must stand still
+				C.power -= charge_used // We use some juicy cruciform power
+				P.give(charge_used * 10) // Charge the power cell
+			else
+				break // Leave the loop if we interrupt.
+		to_chat(user, "You finish charging the [P.name]. It is now [P.percent()]% charged.")
+	else
+		fail("You need a power cell in your active hand to charge it.", user, C)
 
-//datum/ritual/cruciform/forgemaster/flame_guidance
+/datum/ritual/cruciform/forgemaster/tools_of_bonfire
+	name = "Tools of Bonfire"
+	phrase = "Oxidate Lecture: Tools of Bonfire"
+	desc = "Channels the power of your Hearthcore into an incorporeal omnitool."
+	power = 40
+	cooldown = TRUE
+	cooldown_time = 2 MINUTES
+	cooldown_category = "omnitool_litany"
+	success_message = "Your hand glows with radiant light, and you feel more in tune with the machinery around you."
 
-//datum/ritual/cruciform/forgemaster/weak_manifestation
+/datum/ritual/cruciform/forgemaster/tools_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/obj/item/tool/factorial_omni/tool = new /obj/item/tool/factorial_omni(src, user)
+	usr.put_in_active_hand(tool)
+	set_personal_cooldown(user)
+	return TRUE
+
+//datum/ritual/cruciform/forgemaster/flame_guidance - Refer to code\modules\core_implant\cruciform\rituals\construction.dm
+
+//datum/ritual/cruciform/forgemaster/weak_manifestation - Refer to code\modules\core_implant\cruciform\rituals\construction.dm
 
 /datum/ritual/cruciform/forgemaster/nerve_learning
 	name = "Nerve Learning"
@@ -330,7 +660,11 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/nerve_learning/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/H = get_victim(user)
-	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+	if(!H)
+		fail("No target.", user, C)
+		return FALSE
+
 	if(!CI)
 		fail("[H] doesn't have a Hearthcore installed.", user, C)
 		return FALSE
@@ -364,11 +698,75 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 	return TRUE
 
-//datum/ritual/cruciform/forgemaster/lecture_iron_will
+/datum/ritual/cruciform/forgemaster/greater_empower
+	name = "Greater Empower"
+	phrase = "Oxidate Lecture: Greater Empower"
+	desc = "This lecture transfers Radiance from your own Hearthcore to another Hearthcore user, draining 20 Radiance to grant the same amount."
+	power = 20
 
-//datum/ritual/cruciform/forgemaster/medium_manifestation
+/datum/ritual/cruciform/forgemaster/greater_empower/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+	var/mob/living/carbon/human/H = get_victim(user)
 
-//datum/ritual/cruciform/forgemaster/strong_manifestation
+	if(!H)
+		fail("Target not found.",user,C,targets)
+		return FALSE
+
+	if(!CI || !CI.active || !CI.wearer)
+		fail("Hearthcore not found.", user, C)
+		return FALSE
+
+	user.visible_message("[user] places their hands upon [H]", "You lay your hands upon [H]")
+	if (do_after(user, 40, H, TRUE))
+		var/turf/T = get_turf(user)
+		if (!(T.Adjacent(get_turf(H))))
+			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
+			return FALSE
+		to_chat(H, "<span class='info'>Your cruciform sings a small tune as it gets charged.</span>")
+
+		CI.restore_power(20)
+
+		return TRUE
+
+/datum/ritual/cruciform/forgemaster/iron_will
+	name = "Lecture of Iron Will"
+	phrase = "Oxidate Lecture: Lecture of Iron Will"
+	desc = "Repair a mechanical creature in front of you."
+	power = 100
+
+/datum/ritual/cruciform/forgemaster/iron_will/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/target = get_victim(user)
+	var/synth = FALSE
+
+	if(!target)
+		fail("There's nothing there.",user,C)
+		return FALSE
+
+	if(issilicon(target))
+		target.adjustBruteLoss(-30)
+		add_effect(target, FILTER_HOLY_GLOW, 25) // Make them glow.
+		return TRUE
+
+	for(var/obj/item/organ/augmentic in target) // Run this loop for every organ the person has
+		if(augmentic.nature == MODIFICATION_SILICON) // Are the organ made of metal?
+			synth = TRUE
+			augmentic.heal_damage(20)
+			to_chat(target, "Your [augmentic.name] repairs itself!")
+
+	if(!synth)
+		fail("No mechanical organs or limbs found.",user,C)
+		return FALSE
+
+	add_effect(target, FILTER_HOLY_GLOW, 25)
+	return TRUE
+
+//datum/ritual/cruciform/forgemaster/medium_manifestation - Refer to code\modules\core_implant\cruciform\rituals\construction.dm
+
+//datum/ritual/cruciform/forgemaster/strong_manifestation - Refer to code\modules\core_implant\cruciform\rituals\construction.dm
+
+//////////////////////////////////////////////////
+/////////         OATHPLEDGE             /////////
+//////////////////////////////////////////////////
 
 /datum/ritual/cruciform/oathpledge
 	name = "cruciform"
@@ -389,7 +787,6 @@ datum/ritual/cruciform/oathbound/fireball_big
 	phrase = "Oxidate Lecture: Scrying"
 	desc = "Look into the world from the eyes of another Hearthcore user. Can only be maintained for half a minute and the target will sense they are being watched, but not by whom."
 	power = 100
-	category = "Oathpledge"
 
 /datum/ritual/cruciform/oathpledge/scrying/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	if(!user.client)
@@ -423,37 +820,389 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 	return TRUE
 
-//datum/ritual/cruciform/oathpledge/convalescence?? NEEDS NEW NAME I THINK
+/datum/ritual/cruciform/oathpledge/reimagining
+	name = "Reimagining"
+	phrase = "Oxidate Lecture: Reimagining"
+	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 5 MINUTES
+	cooldown_category = "reimagining"
+	power = 35 //Healing yourself is slightly easier than healing someone else
 
-//datum/ritual/cruciform/oathpledge/commitment
+/datum/ritual/cruciform/oathpledge/reimagining/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
+	if(H.species?.reagent_tag == IS_SYNTHETIC)
+		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
+		return FALSE
+	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
+	H.reagents.add_reagent("laudanum", 5)
+	H.adjustBruteLoss(-15)
+	H.adjustFireLoss(-15)
+	H.adjustOxyLoss(-20)
+	H.sanity.changeLevel(10)
+	H.updatehealth()
+	set_personal_cooldown(H)
+	return TRUE
 
-//datum/ritual/cruciform/oathpledge/epiphany
+/datum/ritual/cruciform/oathpledge/commitment
+	name = "Commitment"
+	phrase = "Oxidate Lecture: Commitment"
+	desc = "This lecture will command a Hearthcore to attach to a person lying on a Board of Opposites. The Hearthcore must lay near them, and will require the Epiphany lecture to fully activate."
 
-//datum/ritual/cruciform/oathpledge/deprivation
+/datum/ritual/cruciform/oathpledge/commitment/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/H = get_victim(user)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+	if(CI)
+		fail("[H] already has a Hearthcore installed.", user, C)
+		return FALSE
 
-//datum/ritual/cruciform/oathpledge/reconsecration
+	var/list/L = get_front(user)
 
-//datum/ritual/cruciform/oathpledge/adoption
+	CI = locate(/obj/item/implant/core_implant/cruciform) in L
 
-//datum/ritual/cruciform/oathpledge/ordination
+	if(!CI)
+		fail("There is no Hearthcore on this one", user, C)
+		return FALSE
 
-//datum/ritual/cruciform/oathpledge/omission
+	if (H.stat == DEAD)
+		fail("It is too late for this one, they are already dead.", user, C)
+		return FALSE
+
+	if(!(H in L))
+		fail("Hearthcore is too far from [H].", user, C)
+		return FALSE
+
+	if(CI.active)
+		fail("Hearthcore already active.", user, C)
+		return FALSE
+
+	if(!H.lying || !locate(/obj/machinery/optable/altar) in L)
+		fail("[H] must lie on the altar.", user, C)
+		return FALSE
+
+	if(!CI.install(H, BP_CHEST, user) || CI.wearer != H)
+		fail("Commitment failed.", user, C)
+		return FALSE
+
+	if(ishuman(H))
+		var/mob/living/carbon/human/M = H
+		var/obj/item/organ/external/E = M.organs_by_name[BP_CHEST]
+		for (var/i = 0; i < 5;i++)
+			E.take_damage(5, sharp = FALSE)
+			//Deal 25 damage in five hits. Using multiple small hits mostly prevents internal damage
+
+		M.custom_pain("You feel the nails of the Hearthcore drive deep into you!",1)
+		M.update_implants()
+		M.updatehealth()
+
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/epiphany
+	name = "Epiphany"
+	phrase = "Oxidate Lecture: Epiphany"
+	desc = "This lecture will command an unused Hearthcore to activate. The subject must lay on a Board of Opposites."
+
+/datum/ritual/cruciform/oathpledge/epiphany/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+
+	if(!CI)
+		fail("There is no Hearthcore on this one.", user, C)
+		return FALSE
+
+	if(!CI.wearer)
+		fail("Hearthcore is not installed.", user, C)
+		return FALSE
+
+	if(CI.activated || CI.active)
+		fail("This Hearthcore has been used before.", user, C)
+		return FALSE
+
+	if (CI.wearer.stat == DEAD)
+		fail("It is too late for this one, they are dead.", user, C)
+		return FALSE
+
+	log_and_message_admins("successfully baptized [CI.wearer]")
+	to_chat(CI.wearer, "<span class='info'>Your Hearthcore vibrates and warms up.</span>")
+
+	CI.activate()
+
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/deprivation
+	name = "Deprivation"
+	phrase = "Oxidate Lecture: Deprivation"
+	desc = "This litany will command a Hearthcore to detach from its bearer, if the one bearing it is dead."
+
+/datum/ritual/cruciform/oathpledge/deprivation/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+
+	if(!CI)
+		fail("There is no Hearthcore on this one", user, C)
+		return FALSE
+
+	if(!CI.wearer)
+		fail("Hearthcore is not installed.", user, C)
+		return FALSE
+
+	var/mob/M = CI.wearer
+
+	if(ishuman(M) && is_dead(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/external/E = H.organs_by_name[BP_CHEST]
+		E.take_damage(15)
+		H.custom_pain("You feel the Hearthcore ripping out of your chest!",1)
+		CI.name = "[M]'s Hearthcore"
+		CI.uninstall()
+		return TRUE
+
+	else if(ismob(M) && is_dead(M)) //Cruciforms can't normally be placed on non-humans, but this is still here for sanity purposes.
+		CI.name = "[M]'s Hearthcore"
+		CI.uninstall()
+		return TRUE
+
+	else
+		fail("Deprivation does not work upon the living.", user, C)
+		return FALSE
+
+
+/datum/ritual/cruciform/oathpledge/reconsecration
+	name = "Reconsecration"
+	phrase = "Oxidate Lecture: Reconsecration"
+	desc = "The ritual needed for the reactivation and repair of a Hearthcore that has been unwillingly separated from the body or damaged by the bearer's death. The process requires a Board of Opposites and the Hearthcore in question to be attached. \
+	If the Hearthcore has been damaged by the Revival lecture, 25 silver must be laid on the Board aswell, as raw material to reconstitute the Hearthcore."
+	power = 50
+
+/datum/ritual/cruciform/oathpledge/reconsecration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform, FALSE)
+	var/mob/living/carbon/human/H = get_victim(user)
+	var/list/front_contents = get_front(user)
+
+	if(!H.lying || !locate(/obj/machinery/optable/altar) in front_contents)
+		fail("[H] must lie on the Board.", user, C)
+		return FALSE
+
+	if(!CI)
+		fail("There is no Hearthcore on this one.", user, C)
+		return FALSE
+
+	if(!CI.wearer)
+		fail("Hearthcore is not installed.", user, C)
+		return FALSE
+
+	if(CI.active)
+		fail("This Hearthcore is already active.", user, C)
+		return FALSE
+
+	if (CI.wearer.stat == DEAD)
+		fail("The Hearthcore cannot be bound to a corpse.", user, C)
+		return FALSE
+
+	if (CI.get_module(CRUCIFORM_DAMAGED))
+		var/obj/item/stack/located = locate(/obj/item/stack/material/silver) in front_contents
+		if (!located)
+			fail("There is no silver present to repair such severe damage.", user, C)
+			return FALSE
+		if (!(located.can_use(REPAIR_COST)))
+			fail("There is not enough silver present to repair such severe damage.", user, C)
+			return FALSE
+		located.use(REPAIR_COST)
+
+	log_and_message_admins("successfully reconsecrated [CI.wearer]")
+	to_chat(CI.wearer, "<span class='info'>Your Hearthcore vibrates and reconstitutes itself.</span>")
+
+	CI.activate()
+	CI.remove_modules(CRUCIFORM_DAMAGED)
+
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/adoption
+	name = "Adoption"
+	phrase = "Oxidate Lecture: Adoption"
+	desc = "Grants a Hearthcore user in front of you access to Custodian Hatchways."
+	power = 15
+
+/datum/ritual/cruciform/oathpledge/adoption/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+
+	if(!CI || !CI.wearer || !ishuman(CI.wearer) || !CI.active)
+		fail("Hearthcore not found", user, C)
+		return FALSE
+
+	CI.security_clearance = CLEARANCE_COMMON
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/ordination
+	name = "Ordination"
+	phrase = "Oxidate Lecture: Ordination"
+	desc = "Grants a Hearthcore user in front of you access to Secure Custodian Hatchways."
+	power = 15
+
+/datum/ritual/cruciform/oathpledge/ordination/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+
+	if(!CI || !CI.wearer || !ishuman(CI.wearer) || !CI.active)
+		fail("Hearthcore not found", user, C)
+		return FALSE
+
+	CI.security_clearance = CLEARANCE_CLERGY
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/omission
+	name = "Omission"
+	phrase = "Oxidate Lecture: Omission"
+	desc = "Removes all access from target's Hearthcore."
+	power = 30
+
+/datum/ritual/cruciform/oathpledge/omission/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+
+	if(!CI || !CI.wearer || !ishuman(CI.wearer) || !CI.active)
+		fail("Hearthcore not found", user, C)
+		return FALSE
+
+	CI.security_clearance = CLEARANCE_NONE
+	return TRUE
 
 //datum/ritual/cruciform/oathpledge/pilgrim_path
 
 //datum/ritual/cruciform/oathpledge/sanctorium_of_life
 
-//datum/ritual/cruciform/oathpledge/torch_of_guidance
+/datum/ritual/cruciform/oathpledge/torch_of_guidance
+	name = "Torch of Guidance"
+	phrase = "Oxidate Lecture: Torch of Guidance"
+	desc = "A lecture designed to warn the user of danger, it will reveal the presence of hostile fauna, traps, and potentially monsters hiding as people."
+	power = 50
 
-//datum/ritual/cruciform/oathpledge/undying_phrases
+/datum/ritual/cruciform/oathpledge/torch_of_guidance/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
+	var/was_triggired = FALSE
+	log_and_message_admins("performed empowered reveal litany")
+	for(var/mob/living/carbon/superior_animal/S in range(14, H))
+		if (S.stat != DEAD)
+			to_chat(H, SPAN_WARNING("Adversaries are near. You can feel something nasty and hostile."))
+			was_triggired = TRUE
 
-//datum/ritual/cruciform/oathpledge/inspiration
+	if(!was_triggired)
+		for (var/mob/living/simple_animal/hostile/S in range(14, H))
+			if (S.stat != DEAD)
+				to_chat(H, SPAN_WARNING("A simple hostile brute is nearby, nasty and stupid."))
+				was_triggired = TRUE
 
-//datum/ritual/cruciform/oathpledge/order_of_misery
+	if(locate(/obj/structure/wire_splicing || /obj/item/mine || /obj/item/mine_old || /obj/item/spider_shadow_trap || /obj/item/beartrap || /obj/item/emp_mine) in view(7, H))
+		to_chat(H, SPAN_WARNING("Something is wrong with this area. Tread carefully, someone has laid a trap nearby."))
+		was_triggired = TRUE
 
-//datum/ritual/cruciform/oathpledge/disgrace
+	for(var/mob/living/carbon/human/target in range(14, H))
+		for(var/organ in target.organs)
+			if (organ in subtypesof(/obj/item/organ/internal/carrion))
+				to_chat(H, SPAN_DANGER("A black terrible evil brushes against your mind suddenly, a horrible monstrous entity who's mere glancing ire is enough to leave you in a breathless cold sweat..."))
+				was_triggired = TRUE
 
-//datum/ritual/cruciform/oathpledge/sight_of_bonfire
+	if(!was_triggired)
+		to_chat(H, SPAN_NOTICE("There is nothing here. You feel safe."))
+
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/undying_phrases
+	name = "Undying Phrases"
+	phrase = "Oxidate Lecture: Undying Phrases"
+	desc = "Transmit a message to all Hearthcore users."
+	power = 30
+
+/datum/ritual/cruciform/oathpledge/undying_phrases/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
+	var/text = input(user, "What message will you send? Only Hearthcore users will be able to hear it.", "Sending a message") as text|null
+
+	if (!text)
+		return FALSE
+
+	for (var/mob/living/L in disciples)
+		if(!(L == user))
+			to_chat(L, "<span class='notice'><b><font size='2px'><font color='#ffaa00'> [user.real_name]'s voice resonates from your Hearthcore: \"[text]\"</font><b></span>")
+	log_and_message_admins("[user.real_name] sent a message to all Hearthcore users with text \"[text]\"")
+	playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
+	for(var/mob/observer/ghost/G in world)
+		G.show_message("<i>Message from <b>[src]</b> to all Hearthcore users: [text]</i>")
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/inspiration
+	name = "Inspiration"
+	phrase = "Oxidate Lecture: Inspiration"
+	desc = "Increases the Sanity recovery rate of the person in front of you for fifteen minutes."
+	effect_time = 15 MINUTES
+	power = 30
+
+/datum/ritual/cruciform/oathpledge/inspiration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/target = get_victim(user)
+	if(!target)
+		fail("No target.", user, C)
+		return FALSE
+	give_sanity_recovery(target)
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/inspiration/proc/give_sanity_recovery(mob/living/carbon/human/target)
+	target.sanity.sanity_passive_gain_multiplier += 0.2
+	addtimer(CALLBACK(src, .proc/take_sanity_recovery, target), effect_time)
+	spawn(30)
+		to_chat(target, SPAN_NOTICE("You feel inspired."))
+
+/datum/ritual/cruciform/oathpledge/inspiration/proc/take_sanity_recovery(mob/living/carbon/human/target)
+	target.sanity.sanity_passive_gain_multiplier -= 0.2
+	to_chat(target, SPAN_NOTICE("You feel your inspiration draining."))
+
+/datum/ritual/cruciform/oathpledge/order_of_misery
+	name = "Order of Misery"
+	phrase = "Oxidate Lecture: Order of Misery"
+	desc = "Decreases the Sanity recovery rate of the person in front of you for fifteen minutes."
+	effect_time = 15 MINUTES
+	power = 30
+
+/datum/ritual/cruciform/oathpledge/order_of_misery/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/target = get_victim(user)
+	if(!target)
+		fail("No target.", user, C)
+		return FALSE
+	give_sanity_malus(target)
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/order_of_misery/proc/give_sanity_malus(mob/living/carbon/human/target)
+	target.sanity.sanity_passive_gain_multiplier -= 0.2
+	addtimer(CALLBACK(src, .proc/take_sanity_malus, target), effect_time)
+	spawn(30)
+		to_chat(target, SPAN_NOTICE("You feel miserable."))
+
+/datum/ritual/cruciform/oathpledge/order_of_misery/proc/take_sanity_malus(mob/living/carbon/human/target)
+	target.sanity.sanity_passive_gain_multiplier += 0.2
+	to_chat(target, SPAN_NOTICE("You don't feel so miserable anymore."))
+
+/datum/ritual/cruciform/oathpledge/disgrace
+	name = "Disgrace"
+	phrase = "Oxidate Lecture: Disgrace"
+	desc = "Inflict a harmful psychological effect on the person in front of you."
+	power = 30
+
+/datum/ritual/cruciform/oathpledge/disgrace/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/mob/living/carbon/human/target = get_victim(user)
+
+	if(!target)
+		fail("No target.", user, C)
+		return FALSE
+
+	target.sanity.changeLevel(-20)
+	return TRUE
+
+/datum/ritual/cruciform/oathpledge/sight_of_bonfire
+	name = "Sight of Bonfire"
+	phrase = "Oxidate Lecture: Sight of Bonfire"
+	desc = "Toggles revealing other Hearthcore users."
+
+/datum/ritual/cruciform/oathpledge/sight_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/datum/core_module/cruciform/neotheologyhud/hud_module = C.get_module(/datum/core_module/cruciform/neotheologyhud)
+	if(hud_module)
+		success_message = "Turning off Sight of Bonfire."
+		C.remove_module(hud_module)
+	else
+		success_message = "Turning on Sight of Bonfire."
+		C.add_module(new /datum/core_module/cruciform/neotheologyhud)
+	return TRUE
+
 
 /datum/ritual/cruciform/tessellate
 	name = "cruciform"
@@ -466,94 +1215,6 @@ datum/ritual/cruciform/oathbound/fireball_big
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform/tessellate
 	category = "Tessellate"
-
-/datum/ritual/cruciform/tessellate/heal_heathen_special
-	name = "Graceful Repose"
-	phrase = "Deum precor gratia exceperat."
-	desc = "A tricky litany that heals the mind and body of esoteric maladies such as genetic malignance or brain damage. However it requires them to be awake and able to hear you. This litany requires alot of power and needs a quarter of an hour to recharge."
-	cooldown = TRUE
-	cooldown_time = 15 MINUTES
-	cooldown_category = "grepose"
-	power = 60
-	nutri_cost = 50
-	blood_cost = 50
-
-/datum/ritual/cruciform/tessellate/heal_heathen_special/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/list/people_around = list()
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	for(var/mob/living/carbon/human/H in view(user))
-		if(H != user && !isdeaf(H))
-			people_around.Add(H)
-
-	if(people_around.len > 0)
-		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
-		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
-		for(var/mob/living/carbon/human/participant in people_around)
-			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
-			heal_other(participant)
-			add_effect(participant, FILTER_HOLY_GLOW, 25)
-		set_personal_cooldown(user)
-		return TRUE
-	else
-		fail("Your cruciform sings, alone, unto the void.", user, C)
-		return FALSE
-
-/datum/ritual/cruciform/tessellate/heal_heathen_special/proc/heal_other(mob/living/carbon/human/participant)
-		to_chat(participant, "<span class='info'>A sensation of relief bathes you, washing away your most of your pain in body and mind</span>")
-		participant.reagents.add_reagent("anodyne", 10)
-		participant.adjustCloneLoss(-20)
-		participant.adjustBrainLoss(-20)
-		participant.updatehealth()
-
-/datum/ritual/cruciform/tessellate/heal_heathen_improved
-	name = "Healing Word"
-	phrase = "Pastor gregem suum pascet, sive sciens sive ignarus gubernandum."
-	desc = "Heal every person who can see and hear you for a fair amount, even if they do not have a cruciform. This prayer uses alot of power and requires 15 minutes to pass before it can be used again."
-	cooldown = TRUE
-	power = 50
-	cooldown_time = 15 MINUTES
-	cooldown_category = "dhymn" //It shares a cooldown because it replaces divine hymn, not add atop it.
-	nutri_cost = 150//high cost
-	blood_cost = 50//high cost
-
-/datum/ritual/cruciform/tessellate/heal_heathen_improved/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/list/people_around = list()
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	for(var/mob/living/carbon/human/H in view(user))
-		if(H != user && !isdeaf(H))
-			people_around.Add(H)
-
-	if(people_around.len > 0)
-		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
-		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
-		for(var/mob/living/carbon/human/participant in people_around)
-			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
-			heal_other(participant)
-			add_effect(participant, FILTER_HOLY_GLOW, 25)
-		set_personal_cooldown(user)
-		return TRUE
-	else
-		fail("Your cruciform sings, alone, unto the void.", user, C)
-		return FALSE
-
-/datum/ritual/cruciform/tessellate/heal_heathen_improved/proc/heal_other(mob/living/carbon/human/participant)
-		to_chat(participant, "<span class='info'>A sensation of relief bathes you, washing away your some of your pain</span>")
-		participant.reagents.add_reagent("laudanum", 10)
-		participant.adjustBruteLoss(-20)
-		participant.adjustFireLoss(-20)
-		participant.adjustOxyLoss(-40)
-		participant.adjustBrainLoss(-5)
-		participant.updatehealth()
 
 /datum/ritual/cruciform/tessellate/desperate_calculation
 	name = "Desperate Calculation"
@@ -601,34 +1262,6 @@ datum/ritual/cruciform/oathbound/fireball_big
 		participant.adjustBrainLoss(-10)
 		participant.updatehealth()
 
-/datum/ritual/cruciform/tessellate/realignment
-	name = "Realignment"
-	phrase = "Quidvis facere licet, inquis, sed non omnia expediunt. Ius mihi faciendum est, sed non vincar ab aliquo."
-	desc = "Heals all toxins and liver damage, purges all toxic chemical reagents and stimulants in the blood stream, and slows down anyone in front of you while curing all addictions."
-	power = 50
-	nutri_cost = 25
-	blood_cost = 25
-	cooldown_time = 15 MINUTES
-	cooldown_category = "realignment"
-
-/datum/ritual/cruciform/tessellate/realignment/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
-	if(!T)
-		fail("No target in front of you.", user, C)
-		return FALSE
-	if(user.species?.reagent_tag != IS_SYNTHETIC)
-		if(user.nutrition >= nutri_cost)
-			user.nutrition -= nutri_cost
-		else
-			to_chat(user, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
-			user.vessel.remove_reagent("blood",blood_cost)
-	to_chat(T, SPAN_NOTICE("You feel yourself growing more focused with each passing second."))
-	to_chat(user, SPAN_NOTICE("You grant [T.name] cleansing."))
-
-	T.reagents.add_reagent("alignitol", 10)
-	set_personal_cooldown(user)
-
-	return TRUE
 
 //////////////////////////////////////////////////
 /////////         LEMNISCATE             /////////
@@ -954,41 +1587,6 @@ datum/ritual/cruciform/oathbound/fireball_big
 	implant_type = /obj/item/implant/core_implant/cruciform/factorial
 	category = "Factorial"
 
-// Battery Charge
-/datum/ritual/cruciform/factorial/charge
-	name = "Cant of the craft"
-	desc = "Use the energy in your cruciform to charge the power cell you are holding."
-	phrase = "Observationibus illustrare pio Sine aedificare seris, donec sacra studia cursus ultrices venas et indicia mitte rapinae elit."
-	cooldown = TRUE
-	cooldown_time = 0 MINUTES
-	cooldown_category = "charging"
-	power = 0 // Do not use the power in one shot
-	var/charge_used = 10 // Amount of cruciform energy used.
-	var/charge_rate = 20 // The delay between each charge? The number is in deciseconds, so 30 is equal to 3 seconds
-
-/datum/ritual/cruciform/factorial/charge/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	set_personal_cooldown(user)
-	var/inhand = user.get_active_hand()
-	if(istype(inhand, /obj/item/cell))
-		var/obj/item/cell/P = inhand
-		if(P.max_chargerate == 0) // Can we even charge the damn thing.
-			fail("This type of cell cannot be charged.", user, C)
-			return
-		to_chat(user, "You start charging the [P.name].")
-		while(C.power >= charge_used) // Keep going until we run out of power
-			if(!istype(user.get_active_hand(), /obj/item/cell)) // Check if we're still holding a cell. Because rigged cell explode when charging.
-				break
-			if(P.fully_charged()) // Leave the loop if the cell is charged.
-				break
-			if(do_after(user, charge_rate)) // Small delay where the user must stand still
-				C.power -= charge_used // We use some juicy cruciform power
-				P.give(charge_used * 10) // Charge the power cell
-			else
-				break // Leave the loop if we interrupt.
-		to_chat(user, "You finish charging the [P.name]. It is now [P.percent()]% charged.")
-	else
-		fail("You need a power cell in your active hand to charge it.", user, C)
-
 // Self-Repair
 /datum/ritual/cruciform/factorial/self_repair
 	name = "Litany of the iron soul"
@@ -1046,21 +1644,6 @@ datum/ritual/cruciform/oathbound/fireball_big
 		if(synth) // Did they have any prosthetics?
 			add_effect(H, FILTER_HOLY_GLOW, 25) // Make them glow.
 
-/datum/ritual/cruciform/factorial/omnitool
-	name = "Touch of the Engine-Speaker"
-	phrase = "Ferro, audi verba mea et tactum senties meum."
-	desc = "Channels the power of your cruciform into an incorporeal omnitool."
-	power = 40
-	cooldown = TRUE
-	cooldown_time = 2 MINUTES
-	cooldown_category = "omnitool_litany"
-	success_message = "Your hand glows with holy light, and you feel more in tune with the machinery around you."
-
-/datum/ritual/cruciform/factorial/omnitool/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/obj/item/tool/factorial_omni/tool = new /obj/item/tool/factorial_omni(src, user)
-	usr.put_in_active_hand(tool)
-	set_personal_cooldown(user)
-	return TRUE
 
 /datum/ritual/cruciform/factorial/mod_litany
 	name = "Hymn of the Engineer"
@@ -1176,3 +1759,5 @@ datum/ritual/cruciform/oathbound/fireball_big
 		return FALSE
 	anti_cheat = FALSE
 	return TRUE
+
+#undef REPAIR_COST

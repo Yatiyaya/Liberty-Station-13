@@ -11,7 +11,7 @@ var/list/disciples = list()
 	layer = ABOVE_MOB_LAYER
 	access = list(access_crematorium)
 	power = 0
-	max_power = 60
+	max_power = 100
 	power_regen = 0.5
 	price_tag = 10000
 	var/channeling_boost = 0  // used for the power regen boost if the wearer has the channeling perk
@@ -281,5 +281,4 @@ var/list/disciples = list()
 			if(mind)
 				C.install_default_modules_by_job(mind.assigned_job)
 				C.access.Add(mind.assigned_job.cruciform_access)
-				C.install_default_modules_by_path(mind.assigned_job)
 				C.security_clearance = C.security_clearance

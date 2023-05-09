@@ -18,7 +18,7 @@
 	active_power_usage = 300
 	var/active = FALSE
 	var/port_dir = NORTH
-	var/obj/structure/reagent_dispensers/biomatter/container
+	var/obj/structure/reagent_dispensers/scorch/container
 	var/last_time_used = 0
 
 /obj/machinery/sewing_artificer/New()
@@ -61,7 +61,7 @@
 					current_stack = new(loc)
 
 
-/obj/machinery/sewing_artificer/MouseDrop_T(obj/structure/reagent_dispensers/biomatter/tank, mob/user)
+/obj/machinery/sewing_artificer/MouseDrop_T(obj/structure/reagent_dispensers/scorch/tank, mob/user)
 	if(get_dir(loc, tank.loc) != port_dir)
 		to_chat(user, SPAN_WARNING("Doesn't connect. Port direction located at [dir2text(port_dir)] side of [src]"))
 		return

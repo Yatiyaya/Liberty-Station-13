@@ -204,11 +204,13 @@
 
 //Cruciform
 #define CRUCIFORM_COMMON /datum/core_module/rituals/cruciform/base
+#define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
 #define CRUCIFORM_OATHBOUND /datum/core_module/rituals/cruciform/oathbound
 #define CRUCIFORM_ENKINDLED /datum/core_module/rituals/cruciform/enkindled
 #define CRUCIFORM_FORGEMASTER /datum/core_module/rituals/cruciform/forgemaster
 #define CRUCIFORM_OATHPLEDGE /datum/core_module/rituals/cruciform/oathpledge
-#define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying
+#define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
+#define CRUCIFORM_DAMAGED /datum/core_module/rituals/cruciform/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
 
 #define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
 #define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink

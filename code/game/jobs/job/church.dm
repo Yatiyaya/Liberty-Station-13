@@ -35,7 +35,8 @@
 
 	core_upgrades = list(
 		CRUCIFORM_OATHBOUND,
-		CRUCIFORM_OATHPLEDGE
+		CRUCIFORM_OATHPLEDGE,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	description = "The Oathpledge serves as the head of the local branch of the Church of the Bonfire. <br>\
@@ -82,10 +83,11 @@
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_FORGEMASTER
+		CRUCIFORM_FORGEMASTER,
+		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
+	perks = list(PERK_STALKER, PERK_ARTIST, PERK_CHANNELING)
 	software_on_spawn = list(
 							 /datum/computer_file/program/scanner,
 							 /datum/computer_file/program/wordprocessor,
@@ -131,7 +133,8 @@
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_ENKINDLED
+		CRUCIFORM_ENKINDLED,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	perks = list(PERK_CHANNELING)
@@ -176,7 +179,8 @@
 	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_OATHBOUND
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	perks = list(PERK_CHANNELING)

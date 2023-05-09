@@ -6,6 +6,7 @@
 	implant_type = /obj/item/implant/core_implant/cruciform
 	fail_message = "The Cruciform feels cold against your chest."
 	category = "Machinery"
+	ignore_stuttering = TRUE
 
 /*
 //Cloning
@@ -38,8 +39,8 @@
 //Airlocks
 
 /datum/ritual/cruciform/machines/lock_door
-	name = "Activate hatchway"
-	phrase = "Inlaqueatus."
+	name = "Activate Hatchway"
+	phrase = "Oxidate Lecture: Activate Hatchway"
 	desc = "Commands a nearby hatchway to be locked or unlocked."
 
 /datum/ritual/cruciform/machines/lock_door/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -58,12 +59,12 @@
 	door.locked ? door.unlock() : door.lock()
 	return TRUE
 
-/datum/ritual/cruciform/machines/repair_door
-	name = "Repair hatchway"
-	phrase = "Redde quod periit."
+/datum/ritual/cruciform/forgemaster/repair_door
+	name = "Repair Hatchway"
+	phrase = "Oxidate Lecture: Repair Hatchway"
 	desc = "Repairs a nearby hatchway at the cost of some carbon fiber."
 
-/datum/ritual/cruciform/machines/repair_door/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+/datum/ritual/cruciform/forgemaster/repair_door/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/list/O = get_front(user)
 
 	var/obj/machinery/door/holy/door = locate(/obj/machinery/door/holy) in O
@@ -138,8 +139,8 @@
 ///////////////>Bioreactor pump solution ritual<//////////////////
 
 /datum/ritual/cruciform/machines/bioreactor/solution
-	name = "Bonfire solution pump's lullaby"
-	phrase = "Nihil igitur fieri de nihilo posse putandum est."
+	name = "Solution Pumping"
+	phrase = "Oxidate Lecture: Solution Pumping"
 	desc = "This lecture pumps solution in or out of the Bonfire. Requires you to be near its console."
 
 /datum/ritual/cruciform/machines/bioreactor/solution/perform_command(datum/multistructure/bioreactor/bioreactor)
@@ -156,8 +157,8 @@
 ///////////////>Bioreactor chamber opening song<////////////////
 
 /datum/ritual/cruciform/machines/bioreactor/chamber_doors
-	name = "Bonfire chamber's words"
-	phrase = "Constituit quoque ianitores in portis domus Domini ut non ingrederetur eam inmundus in omni."
+	name = "Chamber Word"
+	phrase = "Oxidate Lecture: Chamber Word"
 	desc = "This lecture opens or closes the Bonfire's chamber. You should stay nearby its screen."
 /datum/ritual/cruciform/machines/bioreactor/chamber_doors/perform_command(datum/multistructure/bioreactor/bioreactor)
 	if(bioreactor.chamber_solution)

@@ -162,6 +162,9 @@
 	/datum/ritual/group/cruciform,
 	/datum/ritual/cruciform/machines)
 
+/datum/core_module/rituals/cruciform/custodian
+	ritual_types = list(/datum/ritual/cruciform/custodian)
+
 /datum/core_module/rituals/cruciform/oathbound
 	ritual_types = list(/datum/ritual/cruciform/oathbound,
 	/datum/ritual/targeted/cruciform/oathbound)
@@ -179,6 +182,8 @@
 	/datum/ritual/targeted/cruciform/oathpledge)
 
 /datum/core_module/rituals/cruciform/anti_scrying
+
+/datum/core_module/rituals/cruciform/damaged
 
 /datum/core_module/rituals/cruciform/priest
 	access = list(access_nt_disciple, access_nt_custodian, access_nt_agrolyte)
