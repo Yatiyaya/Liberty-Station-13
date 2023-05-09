@@ -284,7 +284,7 @@
 	icon_state = "hostilemob-blue"
 	alpha = 128
 
-/obj/random/mob/space_balkan/item_to_spawn()
+/obj/random/mob/space_legion/item_to_spawn()
 	return pickweight(list(/mob/living/carbon/superior_animal/human/excelsior = 10,
 		/mob/living/carbon/superior_animal/human/excelsior/excel_ppsh = 5,
 		/mob/living/carbon/superior_animal/human/excelsior/excel_ak = 5,
