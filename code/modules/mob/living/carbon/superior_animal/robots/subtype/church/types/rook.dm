@@ -1,7 +1,7 @@
 /mob/living/carbon/superior_animal/robot/church/rook
 	name = "Rook Golem"
 	desc = "The Rook, a golem made by the Custodians and fashioned after the time honored game of chess. \
-	Slow, lumbering, but with the strength required to tear foes apart.
+	Slow, lumbering, but with the strength required to tear foes apart."
 	faction = "neutral"
 	icon_state = "rook_golem_new"
 	fleshcolor = "#964B00"
