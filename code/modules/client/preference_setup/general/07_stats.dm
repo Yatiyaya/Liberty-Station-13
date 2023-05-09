@@ -7,8 +7,8 @@
 	var/ROBMOD = 0
 	var/TGHMOD = 0
 	var/VIGMOD = 0
-	var/VIVMOD = 0
-	var/ANAMOD = 0
+	var/WILMOD = 0
+	var/ENDMOD = 0
 
 /datum/category_item/player_setup_item/background/education
 	name = "Skills"
@@ -21,8 +21,8 @@
 	from_file(S["ROBMOD"],pref.ROBMOD)
 	from_file(S["TGHMOD"],pref.TGHMOD)
 	from_file(S["VIGMOD"],pref.VIGMOD)
-	from_file(S["VIVMOD"],pref.VIVMOD)
-	from_file(S["ANAMOD"],pref.ANAMOD)
+	from_file(S["WILMOD"],pref.WILMOD)
+	from_file(S["ENDMOD"],pref.ENDMOD)
 
 /datum/category_item/player_setup_item/background/education/save_character(var/savefile/S)
 	to_file(S["BIOMOD"],pref.BIOMOD)
@@ -31,8 +31,8 @@
 	to_file(S["ROBMOD"],pref.ROBMOD)
 	to_file(S["TGHMOD"],pref.TGHMOD)
 	to_file(S["VIGMOD"],pref.VIGMOD)
-	to_file(S["VIVMOD"],pref.VIVMOD)
-	to_file(S["ANAMOD"],pref.ANAMOD)
+	to_file(S["WILMOD"],pref.WILMOD)
+	to_file(S["ENDMOD"],pref.ENDMOD)
 
 /datum/category_item/player_setup_item/background/education/sanitize_character()
 	pref.BIOMOD             = sanitize_integer(pref.BIOMOD, -10, 10, initial(pref.BIOMOD))
@@ -41,8 +41,8 @@
 	pref.ROBMOD             = sanitize_integer(pref.ROBMOD, -10, 10, initial(pref.ROBMOD))
 	pref.TGHMOD             = sanitize_integer(pref.TGHMOD, -10, 10, initial(pref.TGHMOD))
 	pref.VIGMOD             = sanitize_integer(pref.VIGMOD, -10, 10, initial(pref.VIGMOD))
-	pref.VIVMOD             = sanitize_integer(pref.VIVMOD, -10, 10, initial(pref.VIVMOD))
-	pref.ANAMOD             = sanitize_integer(pref.ANAMOD, -10, 10, initial(pref.ANAMOD))
+	pref.WILMOD             = sanitize_integer(pref.WILMOD, -10, 10, initial(pref.WILMOD))
+	pref.ENDMOD				= sanitize_integer(pref.ENDMOD, -10, 10, initial(pref.ENDMOD))
 	if(calculatetotalpoints() > 10)
 		pref.BIOMOD = 0
 		pref.COGMOD = 0
@@ -50,26 +50,26 @@
 		pref.ROBMOD = 0
 		pref.TGHMOD = 0
 		pref.VIGMOD = 0
-		pref.VIVMOD = 0
-		pref.ANAMOD = 0
+		pref.WILMOD = 0
+		pref.ENDMOD = 0
 
 /datum/category_item/player_setup_item/background/education/content(var/mob/user)
 	. = list()
 	. += "<br/><b>Skills</b>:<br/>"
-	. += "Biology: <a href='?src=\ref[src];biomod=1'>[pref.BIOMOD]</a><br>"
+	. += "Willpower:  <a href='?src=\ref[src];wilmod=1'>[pref.WILMOD]</a><br>"
 	. += "Cognition: <a href='?src=\ref[src];cogmod=1'>[pref.COGMOD]</a><br>"
+	. += "Biology: <a href='?src=\ref[src];biomod=1'>[pref.BIOMOD]</a><br>"
 	. += "Mechanical: <a href='?src=\ref[src];mecmod=1'>[pref.MECMOD]</a><br>"
 	. += "Robustness:  <a href='?src=\ref[src];robmod=1'>[pref.ROBMOD]</a><br>"
 	. += "Toughness:  <a href='?src=\ref[src];tghmod=1'>[pref.TGHMOD]</a><br>"
+	. += "Endurance:  <a href='?src=\ref[src];endmod=1'>[pref.ENDMOD]</a><br>"
 	. += "Vigilance:  <a href='?src=\ref[src];vigmod=1'>[pref.VIGMOD]</a><br>"
-	. += "Vivification:  <a href='?src=\ref[src];vivmod=1'>[pref.VIVMOD]</a><br>"
-	. += "Anatomy:  <a href='?src=\ref[src];anamod=1'>[pref.ANAMOD]</a><br>"
 	. += "<br/>"
-	. += "You have used [pref.BIOMOD + round(pref.COGMOD) + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + pref.VIVMOD  + round(pref.ANAMOD*5)] / 10 skill points"
+	. += "You have used [pref.BIOMOD + pref.COGMOD + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + round(pref.ENDMOD*5)] / 10 skill points"
 	. = jointext(.,null)
 
 /datum/category_item/player_setup_item/background/education/proc/calculatetotalpoints()
-	return (pref.BIOMOD + round(pref.COGMOD) + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + pref.VIVMOD + round(pref.ANAMOD*5))
+	return (pref.BIOMOD + pref.COGMOD + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + pref.WILMOD + round(pref.ENDMOD*5))
 
 /datum/category_item/player_setup_item/background/education/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["biomod"])
@@ -132,24 +132,24 @@
 				pref.VIGMOD = old_vig
 			return TOPIC_REFRESH
 
-	else if(href_list["vivmod"])
-		var/new_viv = 0
-		new_viv = input(user, "Enter a value between -10 and 10 for your vivification.", CHARACTER_PREFERENCE_INPUT_TITLE, pref.VIVMOD) as num
+	else if(href_list["wilmod"])
+		var/new_wil = 0
+		new_wil = input(user, "Enter a value between -10 and 10 for your willpower.", CHARACTER_PREFERENCE_INPUT_TITLE, pref.WILMOD) as num
 		if(CanUseTopic(user))
-			var/old_viv = pref.VIVMOD
-			pref.VIVMOD = max(min(round(new_viv), 10), -10)
+			var/old_viv = pref.WILMOD
+			pref.WILMOD = max(min(round(new_wil), 10), -10)
 			if(calculatetotalpoints() > 10)
-				pref.VIVMOD = old_viv
+				pref.WILMOD = old_viv
 			return TOPIC_REFRESH
 
-	else if(href_list["anamod"])
-		var/new_ana = 0
-		new_ana = input(user, "Enter a value between -3 and 5 for your anatomy  (Anatomy 500% the cost of other stats).", CHARACTER_PREFERENCE_INPUT_TITLE, pref.ANAMOD) as num
+	else if(href_list["endmod"])
+		var/new_end = 0
+		new_end = input(user, "Enter a value between -3 and 5 for your endurance  (Endurance 500% the cost of other stats).", CHARACTER_PREFERENCE_INPUT_TITLE, pref.ENDMOD) as num
 		if(CanUseTopic(user))
-			var/old_ana = pref.ANAMOD
-			pref.ANAMOD = max(min(round(new_ana), 5), -3)
+			var/old_end = pref.ENDMOD
+			pref.ENDMOD = max(min(round(new_end), 5), -3)
 			if(calculatetotalpoints() > 10)
-				pref.ANAMOD = old_ana
+				pref.ENDMOD = old_end
 			return TOPIC_REFRESH
 
 	return ..()

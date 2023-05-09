@@ -130,11 +130,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = "Due to extensive smoker history in your family line or gene-therapy you are now afflicted with a sequence known as 'Cuban Delight' meaning you can slowly recover from effects of venom as long as nicotine is flowing through you."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/background/medicalexpertise
-	name = "Medical Expertise"
-	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
-	icon_state = "knowledge"
-
 /datum/perk/background/klutz
 	name = "Klutz"
 	desc = "You find a lot of tasks a little beyond your ability to perform such is using any type of weaponry, but being accident prone has at least made you used to getting hurt."
@@ -216,7 +211,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	name = "Noble"
 	icon_state = "family" //https://game-icons.net
 	desc = "You came from a wealthy family of high stature, able to achieve a high education and spent most of your life capable of relaxing. \
-			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
+			Start with an heirloom, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
 
 /datum/perk/background/noble/assign(mob/living/carbon/human/H)
 	if(!..())
@@ -227,40 +222,8 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		return
 	var/turf/T = get_turf(holder)
 	var/obj/item/W
-	if(is_neotheology_disciple(holder) && prob(50))
-		W = pickweight(list(
-				/obj/item/tool/sword/nt/longsword = 0.5,
-				/obj/item/tool/sword/nt/shortsword = 0.5,
-				/obj/item/tool/sword/nt/scourge = 0.1,
-				/obj/item/tool/knife/dagger/nt = 0.5))
-	else
-		W = pickweight(list(
-				/obj/item/tool/hammer/mace = 0.2,
-				/obj/item/tool/knife/ritual = 0.5,
-				/obj/item/material/butterfly/switchblade = 0.5,
-				/obj/item/tool/sword/saber = 0.2,
-				/obj/item/tool/sword/katana = 0.2,
-				/obj/item/tool/knife/dagger = 0.5,
-				/obj/item/gun/projectile/colt = 0.2,
-				/obj/item/gun/projectile/revolver/detective = 0.1,
-				/obj/item/tool/knife/dagger/ceremonial = 0.4,
-				/obj/item/gun/projectile/revolver/frontier = 0.4))
-	holder.sanity.valid_inspirations += W
+	W = /obj/item/gunbox/heirloom
 	W = new W(T)
-	W.desc += " It has been inscribed with the \"[holder.name]\" family name."
-	W.name = "[W] of [holder.name]"
-	var/oddities = rand(2,4)
-	var/list/stats = ALL_STATS
-	var/list/final_oddity = list()
-	for(var/i = 0 to oddities)
-		var/stat = pick(stats)
-		stats.Remove(stat)
-		final_oddity += stat
-		final_oddity[stat] = rand(1,7)
-	W.AddComponent(/datum/component/inspiration, final_oddity, get_oddity_perk())
-	W.AddComponent(/datum/component/atom_sanity, 1, "") //sanity gain by area
-	W.sanity_damage -= 1 //damage by view
-	W.price_tag += rand(1000, 2500)
 	spawn(1)
 		holder.equip_to_storage_or_drop(W)
 
@@ -268,7 +231,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	if(holder)
 		holder.sanity.environment_cap_coeff += 1
 	..()
-
 
 /datum/perk/background/rejected_genius
 	name = "Rejected Genius"

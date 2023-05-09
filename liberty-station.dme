@@ -1262,6 +1262,7 @@
 #include "code\game\objects\items\weapons\storage\lunchbox.dm"
 #include "code\game\objects\items\weapons\storage\misc.dm"
 #include "code\game\objects\items\weapons\storage\part_replacer.dm"
+#include "code\game\objects\items\weapons\storage\perk_kits.dm"
 #include "code\game\objects\items\weapons\storage\pouches.dm"
 #include "code\game\objects\items\weapons\storage\secure.dm"
 #include "code\game\objects\items\weapons\storage\security_kits.dm"

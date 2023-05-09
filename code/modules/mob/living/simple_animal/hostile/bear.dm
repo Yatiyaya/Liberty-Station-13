@@ -40,7 +40,7 @@
 		playsound(src, 'sound/effects/creatures/bear.ogg', 100, 1, -3)
 		for(var/mob/living/carbon/human/H in range(5,src))
 			if(istype(H))
-				if(prob(100 - H.stats.getStat(STAT_COG))) //Kinda a hard check-ish but cant stack
+				if(prob(100 - H.stats.getStat(STAT_WIL))) //Kinda a hard check-ish but cant stack
 					H.stats.addTempStat(STAT_VIG, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
 					H.stats.addTempStat(STAT_COG, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
 					H.stats.addTempStat(STAT_BIO, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
