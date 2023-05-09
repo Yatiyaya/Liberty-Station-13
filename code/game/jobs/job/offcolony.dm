@@ -1,7 +1,7 @@
 /datum/job/outsider
 	title = "Outsider"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 10
+	spawn_positions = 10
 	flag = OUTSIDER
 	faction = MAP_FACTION
 	department = DEPARTMENT_INDEPENDENT
@@ -11,11 +11,11 @@
 	account_allowed = 0
 	create_record = 0
 	wage = WAGE_NONE
-//	minimal_access = list(access_maint_tunnels)
+	//minimal_access = list(access_maint_tunnels)	- No.
 	outfit_type = /decl/hierarchy/outfit/job/outsider
 	difficulty = "Impossible!"
 	has_id = FALSE
-	playtimerequired = 1200000
+	//playtimerequired = 1200000	- Not needed now.
 
 	stat_modifiers = list(
 		STAT_BIO = 5,

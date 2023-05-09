@@ -40777,6 +40777,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
+"lbR" = (
+/obj/effect/step_trigger/riverforest_to_crash_1_A,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "lbX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -71657,6 +71661,10 @@
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor1west)
+"tty" = (
+/obj/effect/step_trigger/riverforest_to_crash_1_B,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "ttN" = (
 /obj/structure/catwalk,
 /obj/random/cluster/spiders/low_chance,
@@ -205553,7 +205561,7 @@ omv
 omv
 omv
 omv
-fUn
+ias
 fUn
 omv
 omv
@@ -209842,8 +209850,8 @@ wgB
 wgB
 fsf
 wgB
-wgB
 gpO
+wgB
 wgB
 wgB
 wgB
@@ -210045,9 +210053,9 @@ hWE
 crj
 kfM
 nUD
-wgB
-gpO
-wgB
+kfM
+lbR
+tty
 kfM
 hWE
 kfM
