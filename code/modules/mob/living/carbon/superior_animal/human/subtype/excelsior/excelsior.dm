@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/human/excelsior
-	name = "Black Eagle legionary"
+	name = "legionary"
 	desc = "A member of the Black Eagle Legion, run of the mill cannon fodder equiped in salvaged armour of unknown origin."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "excel_makarov"
