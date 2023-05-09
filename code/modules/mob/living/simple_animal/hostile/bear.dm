@@ -130,8 +130,8 @@
 	icon_dead = "polarbear_dead"
 
 /mob/living/simple_animal/hostile/bear/excelsior
-	name = "excelsior armored bear"
-	desc = "A huge bear outfitted with armor and trained by the excelsior judging from the markings on his armor. Who comes up with this shit?"
+	name = "armored bear"
+	desc = "A huge bear outfitted with armor. Who comes up with this shit?"
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"

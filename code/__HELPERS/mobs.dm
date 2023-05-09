@@ -334,13 +334,6 @@ Proc for attack log creation, because really why not
 		return TRUE
 	return FALSE
 
-/proc/is_excelsior(var/mob/M)
-	var/obj/item/implant/excelsior/E = locate(/obj/item/implant/excelsior) in M
-	if (E && E.wearer == M)
-		return TRUE
-
-	return FALSE
-
 /proc/mob_hearers(var/atom/movable/heard_atom, var/range = world.view)
 	. = list()
 

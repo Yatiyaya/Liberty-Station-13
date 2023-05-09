@@ -1,7 +1,6 @@
 /mob/living/carbon/superior_animal/human/excelsior
-	name = "Excelsior Slave"
-	desc = "An excelsior rank and file, often converted unwillingly, making them nothing more than cannon fodder as they fight against the implant controlling them. These ones are too far gone, \
-	worn down from years of abuse, death is the only mercy they can have."
+	name = "Black Eagle legionary"
+	desc = "A member of the Black Eagle Legion, run of the mill cannon fodder equiped in salvaged armour of unknown origin."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "excel_makarov"
 	stop_automated_movement_when_pulled = 1

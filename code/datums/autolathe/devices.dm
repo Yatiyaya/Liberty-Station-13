@@ -73,12 +73,8 @@
 	build_path = /obj/item/mine
 
 /datum/design/autolathe/device/excelsiormine
-	name = "excelsior mine"
+	name = "military mine"
 	build_path = /obj/item/mine/excelsior
-
-/datum/design/autolathe/device/propaganda_chip
-	name = "propaganda chip"
-	build_path = /obj/item/device/propaganda_chip
 
 /datum/design/autolathe/device/grenade/nt_cleaner
 	name = "\"Cleanse Capsule\""

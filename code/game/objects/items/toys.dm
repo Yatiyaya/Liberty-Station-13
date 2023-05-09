@@ -721,8 +721,8 @@
 
 // Eris bobbleheads
 /obj/item/toy/figure/character/bobblehead/excelsior
-	name = "\"Excelsior\" figurine"
-	desc = "A curiously unbranded figurine of a Space Soviet, adorned in their iconic armor. There is still a price tag on the back of the base, six-hundred credits, people collect these things?"
+	name = "legionary figurine"
+	desc = "A curiously unbranded figurine of a Black Eagle legionary, adorned in their iconic armor. There is still a price tag on the back of the base, six-hundred credits, people collect these things?"
 	toysay = "\"Ever Upward!\""
 	icon_state = "excelsior"
 

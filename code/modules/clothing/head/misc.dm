@@ -389,7 +389,7 @@ obj/item/clothing/head/ribbon/red
 	icon_state = "rice_hat"
 
 /obj/item/clothing/head/exceslior/excelsior_officer
-	name = "excelsior officer cap"
+	name = "legionary officer cap"
 	desc = "A peaked commissar cap marked with a red hammer and gear emblem on an orange background at its front."
 	icon_state = "excelsior_officer"
 
