@@ -9,7 +9,7 @@
 	supervisors = "anyone who pays you"
 	difficulty = "Very Easy."
 	selection_color = "#dddddd"
-	initial_balance = 800
+	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_NONE //Get a job ya lazy bum
 	alt_titles = list("Freelancer")
 

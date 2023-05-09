@@ -11,7 +11,10 @@
 	difficulty = "Medium."
 	selection_color = "#dddddd"
 	access = list(access_merchant, access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	department_account_access = TRUE
 	playtimerequired = 1200
 	stat_modifiers = list(
@@ -49,8 +52,10 @@
 	alt_titles = list("Sales Technician", "Trade Router", "Smuggler")
 	selection_color = "#dddddd"
 	access = list(access_cargo, access_bar)
-	initial_balance = 750
+
+	initial_balance = INIT_BALANCE_MENIAL //Got department account access now
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
+
 	department_account_access = TRUE
 	stat_modifiers = list(
 		STAT_ROB = 10,
@@ -88,7 +93,8 @@
 	selection_color = "#dddddd"
 	health_modifier = -10
 	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
-	initial_balance = 750
+
+	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
 
 	perks = list(PERK_CLUB, PERK_CHEF, PERK_COMMON_SENSE)
@@ -126,7 +132,10 @@
 	selection_color = "#dddddd"
 	alt_titles = list ("Sanitation Worker")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD //No longer part of church you don't need this boy
+
 	health_modifier = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 

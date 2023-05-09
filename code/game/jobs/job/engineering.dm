@@ -12,7 +12,10 @@
 	selection_color = "#c7b97b"
 	req_admin_notify = 1
 	playtimerequired = 1200
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	ideal_character_age = 50
 	minimum_character_age = 25
 	health_modifier = 5
@@ -71,7 +74,10 @@
 	supervisors = "the Union Chief"
 	difficulty = "Medium."
 	selection_color = "#d5c88f"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	alt_titles = list("Electrical Technician", "Atmospheric Technician", "Technical Apprentice")
 	noob_name = "Technical Apprentice"
@@ -123,7 +129,10 @@
 	difficulty = "Easy."
 	alt_titles = list("Drill Technician", "Mining Apprentice")
 	selection_color = "#d5c88f"
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	health_modifier = 5
 
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
