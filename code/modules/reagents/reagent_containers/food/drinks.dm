@@ -227,7 +227,7 @@
 		icon_state = "cup"
 
 /obj/item/reagent_containers/food/drinks/dry_ramen
-	name = "Raving Ramen"
+	name = "\"Nightcall\" ramen"
 	desc = "A self-heating cup of ramen. Just add 10ml water."
 	icon_state = "ramen"
 	center_of_mass = list("x"=16, "y"=11)
@@ -242,7 +242,7 @@
 		icon_state = "ramen_e"
 
 /obj/item/reagent_containers/food/drinks/dry_ramen/premade
-	name = "Raving Ramen"
+	name = "\"Nightcall\" ramen"
 	desc = "A cup of ramen, with water, salt and even an egg already added."
 	icon_state = "ramen"
 	center_of_mass = list("x"=16, "y"=11)
