@@ -183,6 +183,7 @@
 
 /area/liberty/dungeon/outside/frozen_forest/crashsite
 	name = "Frozen Forest - Crashsite"
+	allows_weather_of_snow = TRUE
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
