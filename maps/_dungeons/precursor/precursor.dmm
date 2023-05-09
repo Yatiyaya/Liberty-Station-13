@@ -251,6 +251,7 @@
 /area/precursor/mini_base)
 "Ed" = (
 /obj/structure/table/reinforced,
+/obj/item/device/psionic_catalyst/dull,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor/mini_base)
 "Eq" = (

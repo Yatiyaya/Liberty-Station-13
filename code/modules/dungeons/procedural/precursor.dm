@@ -154,7 +154,15 @@ var/precursor_test = FALSE
 		precursor_controller.Pgenerate.unlink()
 		precursor_controller.reset()
 
-	//attackbyitem (item to restock uses) increases charges for uses. No reason to really have a limit on it.
+/obj/machinery/precursor_dungeon_device/attackby(obj/item/I, mob/user)
+	if(istype(I,/obj/item/device/psionic_catalyst/dull))
+		if(uses > 0)
+			to_chat(user, SPAN_NOTICE("The machine is already loaded and ready to go."))
+			return
+		else
+			to_chat(user, SPAN_NOTICE("You load the device into the [src]."))
+			uses += 1
+			return
 
 /obj/effect/portal/jtb/precursor
 	name = "ancient portal"
