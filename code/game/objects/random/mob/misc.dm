@@ -279,6 +279,19 @@
 		/mob/living/carbon/superior_animal/human/balkan/bren = 5
 		))
 
+/obj/random/mob/space_legion
+	name = "random legionary mob"
+	icon_state = "hostilemob-blue"
+	alpha = 128
+
+/obj/random/mob/space_legion/item_to_spawn()
+	return pickweight(list(/mob/living/carbon/superior_animal/human/excelsior = 10,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_ppsh = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_ak = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_vintorez = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_drozd = 1
+		))
+
 //local fauna - surface
 /obj/random/mob/tengolo
 	name = "random tengolo"
