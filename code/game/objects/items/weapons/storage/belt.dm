@@ -309,6 +309,8 @@
 		/obj/item/device/camera,
 		/obj/item/folder,
 		/obj/item/gun/energy/taser,
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/mask/gas,
 		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
@@ -365,8 +367,8 @@
 	new /obj/item/device/taperecorder(src)
 	new /obj/item/device/camera(src)
 	new /obj/item/folder(src)
-	new /obj/item/clothing/head/helmet/marshal_full(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/head/helmet/marshal(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/chem_grenade/teargas(src)
 	new /obj/item/grenade/frag/stinger(src)

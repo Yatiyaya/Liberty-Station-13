@@ -5,7 +5,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform
 	name = "vinculum Hearthcore"
 	icon_state = "hearthcore_green"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
 	layer = ABOVE_MOB_LAYER
@@ -94,8 +94,6 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/Process()
 	..()
-	if(active && round(world.time) % 5 == 0)
-		remove_cyber()
 	if(wearer && wearer.stat == DEAD || wearer.is_mannequin) //If were dead or a mannequin we do not actively process are cruciform
 		deactivate()
 	if(wearer && wearer.stats && wearer.stats.getPerk(PERK_CHANNELING) && round(world.time) % 5 == 0)
@@ -139,48 +137,11 @@ var/list/disciples = list()
 		if (activate())
 			return TRUE
 
-
-/obj/item/implant/core_implant/cruciform/proc/remove_cyber()
-	if(!wearer)
-		return
-	for(var/obj/O in wearer)
-/* //Our lore allows for church members to have synthetics so this area is commented out. -Kazkin
-		if(istype(O, /obj/item/organ/external))
-			var/obj/item/organ/external/R = O
-			if(!BP_IS_ROBOTIC(R))
-				continue
-
-			if(R.owner != wearer)
-				continue
-			wearer.visible_message(SPAN_DANGER("[wearer]'s [R.name] tears off."),
-			SPAN_DANGER("Your [R.name] tears off."))
-			R.droplimb()
-*/
-//This is the function to remove excelsior implants for cruciform bearers. Should only make cruciform bearers react badly to excelsior implants. -Kaz
-		if(istype(O, /obj/item/implant/excelsior))
-			if(O == src)
-				continue
-			var/obj/item/implant/excelsior/R = O
-			if(R.wearer != wearer)
-				continue
-			if(R.cruciform_resist)
-				continue
-			wearer.visible_message(SPAN_DANGER("[R.name] rips through [wearer]'s [R.part]."),\
-			SPAN_DANGER("[R.name] rips through your [R.part]."))
-			R.part.take_damage(rand(20,40))
-			R.uninstall()
-			R.malfunction = MALFUNCTION_PERMANENT
-			if(ishuman(wearer))
-				var/mob/living/carbon/human/H = wearer
-				H.update_implants()
-
-
 /obj/item/implant/core_implant/cruciform/proc/update_data()
 	if(!wearer)
 		return
 
 	add_module(new CRUCIFORM_CLONING)
-
 
 //////////////////////////
 //////////////////////////
@@ -228,7 +189,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/tessellate
 	name = "tessellate cruciform"
 	icon_state = "hearthcore_blue"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/tessellate
 	power = 0
 	max_power = 60
@@ -238,7 +199,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/lemniscate
 	name = "lemniscate cruciform"
 	icon_state = "hearthcore_red"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/lemniscate
 	//access = list(access_nt_disciple) //So they can try and recuit people - Correction people just cant stop abusing everything ever.
 	power = 0
@@ -249,7 +210,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/monomial
 	name = "monomial cruciform"
 	icon_state = "hearthcore_yellow"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/monomial
 	power = 0
 	max_power = 90
@@ -259,7 +220,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/divisor
 	name = "divisor cruciform"
 	icon_state = "hearthcore_orange"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/divisor
 	power = 0
 	max_power = 50
@@ -269,7 +230,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/factorial
 	name = "factorial cruciform"
 	icon_state = "hearthcore_cyan"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/factorial
 	power = 0
 	max_power = 50
@@ -279,7 +240,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/omni
 	name = "Omni-Cruciform"
 	icon_state = "hearthcore_omni"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/omni
 	power = 0
 	max_power = 200

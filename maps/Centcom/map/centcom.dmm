@@ -5985,11 +5985,9 @@
 /area/centcom/evac)
 "zP" = (
 /obj/structure/table/rack/shelf,
-/obj/item/circuitboard/excelsior_boombox,
 /obj/item/circuitboard/excelsior_teleporter,
 /obj/item/circuitboard/excelsior_turret,
 /obj/item/circuitboard/excelsiorautolathe,
-/obj/item/circuitboard/excelsiorreconstructor,
 /obj/item/circuitboard/excelsiorshieldwallgen,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/centcom/evac)
@@ -6044,7 +6042,6 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/centcom/raider_base)
 "Bj" = (
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/centcom/evac)
 "Bm" = (

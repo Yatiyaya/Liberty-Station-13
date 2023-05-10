@@ -92,6 +92,21 @@
 	icon_state = "lays_green"
 	trash = /obj/item/trash/chips_green
 
+/obj/item/reagent_containers/food/snacks/openable/liquidfood //No longer vendable
+	name = "\improper liquidfood ration"
+	desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Should this be crunchy?"
+	alt_desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Looking inside tends to loose your apatite."
+	icon_state = "liquidfood" //Sprite by Michiyamenotehifunana
+	trash = /obj/item/trash/liquidfood
+	filling_color = "#A8A8A8"
+	bitesize = 4
+	center_of_mass = list("x"=16, "y"=15)
+	nutriment_desc = list("chalk" = 6)
+	nutriment_amt = 20
+	preloaded_reagents = list("iron" = 3, "preservatives" = 5)
+	matter = list(MATERIAL_BIOMATTER = 8)
+	junk_food = TRUE
+
 /obj/item/reagent_containers/food/snacks/openable/mre
 	name = "mre"
 	desc = "A closed mre, ready to be opened."

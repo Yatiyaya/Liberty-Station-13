@@ -16,8 +16,8 @@
 	security_clearance = CLEARANCE_CLERGY
 	health_modifier = 10
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND //The church has deep pockets
 	department_account_access = TRUE
 	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
@@ -72,15 +72,13 @@
 	selection_color = "#ecd37d"
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
-	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
+
+	initial_balance = INIT_BALANCE_PROF
+	wage = WAGE_PROFESSIONAL //Specialist
 	stat_modifiers = list(
 		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
 		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
 	)
-
-	//You need insperation to do your job.
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
-
 
 	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
 	software_on_spawn = list(
@@ -115,7 +113,9 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
@@ -125,7 +125,6 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST
@@ -160,7 +159,9 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR_DUMB
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
@@ -170,7 +171,6 @@
 	STAT_VIG = 10,
 	STAT_TGH = 5,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
 		CRUCIFORM_PRIEST

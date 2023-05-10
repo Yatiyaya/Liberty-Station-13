@@ -231,7 +231,7 @@ obj/item/clothing/head/ribbon/red
 	desc = "A brown straw cowboy hat with a weathered shape."
 
 /obj/item/clothing/head/cowboy/marshal
-	name = "marshal cowboy hat"
+	name = "watchmen cowboy hat"
 	icon_state = "cowboymarshal"
 	desc = "A brown felt cowboy hat with a long flat brim."
 
@@ -389,7 +389,7 @@ obj/item/clothing/head/ribbon/red
 	icon_state = "rice_hat"
 
 /obj/item/clothing/head/exceslior/excelsior_officer
-	name = "excelsior officer cap"
+	name = "legionary officer cap"
 	desc = "A peaked commissar cap marked with a red hammer and gear emblem on an orange background at its front."
 	icon_state = "excelsior_officer"
 

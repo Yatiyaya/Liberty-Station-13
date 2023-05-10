@@ -11,12 +11,10 @@
 	difficulty = "Hard."
 	selection_color = "#97b0be"
 	req_admin_notify = 1
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
 	department_account_access = TRUE
 	health_modifier = 15
-
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
-
 
 	outfit_type = /decl/hierarchy/outfit/job/shepherd
 	playtimerequired = 1200
@@ -67,10 +65,10 @@
 	difficulty = "Medium."
 	noob_name = "Rookie Trapper"
 	selection_color = "#a7bbc6"
-	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round-start.
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_NONE
 
-	disallow_species = list(FORM_LIBYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/trapper
 
 	health_modifier = 5
@@ -114,10 +112,9 @@
 	difficulty = "Medium."
 	noob_name = "Rookie Shipbreaker"
 	selection_color = "#a7bbc6"
-	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round start.
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_NONE
 
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/shipbreaker
 	health_modifier = 10
 

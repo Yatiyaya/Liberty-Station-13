@@ -868,8 +868,8 @@
 	I.similacrum_moding = TRUE
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior
-	name = "excelsior nanointegrated AI"
-	desc = "An attempt by the excelsior to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from excelsior teleporation technology.\
+	name = "astrakhan nanointegrated AI"
+	desc = "An attempt by the Astrakhan R&D institute to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)

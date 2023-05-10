@@ -120,14 +120,14 @@
 
 /datum/perk/oddity/shell_shock/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_ROB, -5)
-	holder.stats.changeStat(STAT_TGH, -5)
-	holder.stats.changeStat(STAT_VIG, -5)
+	holder.stats.changeStat(STAT_ROB, -15)
+	holder.stats.changeStat(STAT_TGH, -15)
+	holder.stats.changeStat(STAT_VIG, -15)
 
 /datum/perk/oddity/shell_shock/remove()
-	holder.stats.changeStat(STAT_ROB, 5)
-	holder.stats.changeStat(STAT_TGH, 5)
-	holder.stats.changeStat(STAT_VIG, 5)
+	holder.stats.changeStat(STAT_ROB, 15)
+	holder.stats.changeStat(STAT_TGH, 15)
+	holder.stats.changeStat(STAT_VIG, 15)
 	..()
 
 /datum/perk/oddity/failing_mind
@@ -138,14 +138,14 @@
 
 /datum/perk/oddity/failing_mind/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_COG, -5)
-	holder.stats.changeStat(STAT_MEC, -5)
-	holder.stats.changeStat(STAT_BIO, -5)
+	holder.stats.changeStat(STAT_COG, -15)
+	holder.stats.changeStat(STAT_MEC, -15)
+	holder.stats.changeStat(STAT_BIO, -15)
 
 /datum/perk/oddity/failing_mind/remove()
-	holder.stats.changeStat(STAT_COG, 5)
-	holder.stats.changeStat(STAT_MEC, 5)
-	holder.stats.changeStat(STAT_BIO, 5)
+	holder.stats.changeStat(STAT_COG, 15)
+	holder.stats.changeStat(STAT_MEC, 15)
+	holder.stats.changeStat(STAT_BIO, 15)
 	..()
 
 /datum/perk/oddity/snackivore
@@ -163,14 +163,14 @@
 
 /datum/perk/oddity/sharp_mind/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_COG, 5)
-	holder.stats.changeStat(STAT_MEC, 5)
-	holder.stats.changeStat(STAT_BIO, 5)
+	holder.stats.changeStat(STAT_COG, 15)
+	holder.stats.changeStat(STAT_MEC, 15)
+	holder.stats.changeStat(STAT_BIO, 15)
 
 /datum/perk/oddity/sharp_mind/remove()
-	holder.stats.changeStat(STAT_COG, -5)
-	holder.stats.changeStat(STAT_MEC, -5)
-	holder.stats.changeStat(STAT_BIO, -5)
+	holder.stats.changeStat(STAT_COG, -15)
+	holder.stats.changeStat(STAT_MEC, -15)
+	holder.stats.changeStat(STAT_BIO, -15)
 	..()
 
 /datum/perk/oddity/strangth
@@ -181,14 +181,14 @@
 
 /datum/perk/oddity/strangth/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_ROB, 5)
-	holder.stats.changeStat(STAT_TGH, 5)
-	holder.stats.changeStat(STAT_VIG, 5)
+	holder.stats.changeStat(STAT_ROB, 15)
+	holder.stats.changeStat(STAT_TGH, 15)
+	holder.stats.changeStat(STAT_VIG, 15)
 
 /datum/perk/oddity/strangth/remove()
-	holder.stats.changeStat(STAT_ROB, -5)
-	holder.stats.changeStat(STAT_TGH, -5)
-	holder.stats.changeStat(STAT_VIG, -5)
+	holder.stats.changeStat(STAT_ROB, -15)
+	holder.stats.changeStat(STAT_TGH, -15)
+	holder.stats.changeStat(STAT_VIG, -15)
 	..()
 
 /datum/perk/oddity/iron_will

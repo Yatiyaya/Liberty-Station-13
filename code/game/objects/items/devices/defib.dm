@@ -475,7 +475,7 @@
 	if(H.isSynthetic())
 		H.setToxLoss(0)
 
-	H.apply_damage(burn_damage_amt, BURN, BP_TORSO)
+	H.apply_damage(burn_damage_amt, BURN, BP_CHEST)
 
 	error = can_revive(H)
 	if(error)

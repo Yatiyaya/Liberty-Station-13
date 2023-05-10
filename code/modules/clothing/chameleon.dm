@@ -124,7 +124,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 
 	var/list/loadout_2 = list(
 	uniform = /obj/item/clothing/under/rank/security,
-	hat = /obj/item/clothing/head/helmet/marshal_full,
+	hat = /obj/item/clothing/head/helmet/marshal,
 	suit = /obj/item/clothing/suit/armor/vest/ironhammer/full,
 	shoes = /obj/item/clothing/shoes/jackboots,
 	back = /obj/item/storage/backpack/satchel/security,
