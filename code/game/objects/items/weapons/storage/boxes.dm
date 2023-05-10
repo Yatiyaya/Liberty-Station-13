@@ -360,8 +360,8 @@
 		new /obj/item/grenade/chem_grenade/teargas(src)
 
 /obj/item/storage/box/emps
-	name = "box of EMP grenades"
-	desc = "A box containing five military grade EMP grenades.<br> WARNING: Do not use near unshielded electronics or biomechanical augmentations, death or permanent paralysis may occur."
+	name = "box of Ion grenades"
+	desc = "A box containing five military grade Ion grenades.<br> WARNING: Do not use near unshielded electronics or biomechanical augmentations, death or permanent paralysis may occur."
 	icon_state = "box_security"
 	illustration = "flashbang"
 
@@ -411,7 +411,7 @@
 
 /obj/item/storage/box/phosphorous
 	name = "box of white phosphorous grenades"
-	desc = "A box containing 7 antipersonnel incendiary  grenades.<br> WARNING: These devices are extremely dangerous and can cause severe burns and fires."
+	desc = "A box containing 7 antipersonnel incendiary grenades.<br> WARNING: These devices are extremely dangerous and can cause severe burns and fires."
 	icon_state = "box_security"
 	illustration = "flashbang"
 
