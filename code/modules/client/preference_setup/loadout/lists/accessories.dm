@@ -1,6 +1,6 @@
 /datum/gear/accessory
-	display_name = "wallet"
-	path = /obj/item/storage/wallet
+	display_name = "neck brace"
+	path = /obj/item/clothing/accessory/neckbrace
 	slot = slot_accessory_buffer
 	sort_category = "Accessories"
 	cost = 0
@@ -46,10 +46,6 @@
 	display_name = "UBAC selection"
 	path = /obj/item/clothing/accessory/tacticool
 	flags = GEAR_HAS_TYPE_SELECTION
-
-/datum/gear/accessory/neckbrace
-	display_name = "neck brace"
-	path = /obj/item/clothing/accessory/neckbrace
 
 /datum/gear/accessory/scarf
 	display_name = "scarf selection"
