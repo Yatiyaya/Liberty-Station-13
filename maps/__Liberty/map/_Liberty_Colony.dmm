@@ -15532,6 +15532,11 @@
 /area/liberty/security/sechall)
 "edn" = (
 /obj/structure/table/bar_special,
+/obj/structure/cyberplant{
+	emagged = 1;
+	name = "holodancer";
+	pixel_y = 12
+	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/bar)
 "edq" = (
@@ -17287,8 +17292,8 @@
 	name = "Engineering Hallway";
 	req_one_access = list(10)
 	},
-/obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -17296,6 +17301,11 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "eEz" = (
@@ -24384,6 +24394,15 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/armory)
+"gBk" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/structure/bed/chair/custom/wood{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/bar)
 "gBm" = (
 /obj/item/pizzabox/hawaiianpizza,
 /obj/structure/table/standard,
@@ -28136,7 +28155,9 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "hAo" = (
-/obj/structure/table/woodentable,
+/obj/structure/bed/chair/custom/wood{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/bar)
 "hAt" = (
@@ -47760,6 +47781,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
+"ndb" = (
+/obj/structure/table/gamblingtable,
+/turf/simulated/floor/tiled/steel/bar_light,
+/area/liberty/crew_quarters/bar)
 "ndd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
@@ -52354,10 +52379,6 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/medical/morgue)
 "opd" = (
@@ -55958,6 +55979,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/sleeper)
+"pnO" = (
+/obj/structure/bed/chair/custom/wood{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel/bar_light,
+/area/liberty/crew_quarters/bar)
 "pnR" = (
 /obj/structure/closet/crate/secure,
 /obj/item/flame/lighter/zippo/gold,
@@ -57007,6 +57034,14 @@
 /obj/structure/girder,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest)
+"pBq" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/structure/table/gamblingtable,
+/obj/item/dice,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/bar)
 "pBs" = (
 /obj/structure/table/rack,
 /obj/machinery/camera/network/colony_underground{
@@ -73224,6 +73259,12 @@
 /obj/structure/cable/blue,
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/shield_generator)
+"tPM" = (
+/obj/structure/morgue{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/liberty/medical/morgue)
 "tQg" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -85277,6 +85318,14 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/rnd/lab)
+"xeZ" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/structure/table/gamblingtable,
+/obj/item/deck/cards,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/bar)
 "xfa" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
@@ -86202,6 +86251,15 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/gmaster)
+"xsC" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/structure/bed/chair/custom/wood{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/bar)
 "xsL" = (
 /obj/machinery/alarm{
 	pixel_y = 32
@@ -87531,6 +87589,10 @@
 /obj/random/powercell,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/maintenance/undergroundfloor1north)
+"xLp" = (
+/obj/structure/table/gamblingtable,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/liberty/crew_quarters/bar)
 "xLH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 1
@@ -145958,9 +146020,9 @@ isu
 mwX
 htR
 jvq
-pBu
+xsC
 hAo
-iuw
+lLn
 sCV
 aco
 eUy
@@ -146160,8 +146222,8 @@ ina
 sIy
 bIP
 jvq
-pBu
-hAo
+xeZ
+ndb
 iuw
 sCV
 okn
@@ -146362,9 +146424,9 @@ yis
 acp
 isu
 jvq
-btF
-eLQ
-lLn
+pBu
+xLp
+iuw
 sCV
 rgp
 xsS
@@ -146564,8 +146626,8 @@ yis
 acp
 isu
 jvq
-pBu
-hAo
+pBq
+ndb
 iuw
 ayD
 rJc
@@ -146766,9 +146828,9 @@ yis
 acp
 isu
 jvq
-pBu
-hAo
-iuw
+gBk
+pnO
+lLn
 lOE
 vnb
 vPF
@@ -149238,9 +149300,9 @@ xDR
 cWt
 hhs
 xDR
-tJI
-tJI
-tJI
+tPM
+tPM
+tPM
 cIX
 dCm
 dTD
