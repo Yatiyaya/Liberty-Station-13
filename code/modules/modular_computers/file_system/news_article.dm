@@ -29,3 +29,7 @@
 	server_file_path = 'news_articles/Psionic_Ascension.html'
 	archived = 1
 */
+/datum/computer_file/data/news_article/lionel_interview
+	filename = "Lionel Interview"
+	server_file_path = 'news_articles/Lionel_interview.html'
+	archived = 1
