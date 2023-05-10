@@ -97,7 +97,7 @@
 	else
 		new /obj/item/storage/backpack/satchel/custodian(src)
 	new /obj/item/clothing/under/custodian/oathbound(src)
-	new /obj/item/storage/belt/utility/neotheology(src)
+	new /obj/item/storage/belt/utility/custodian(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
 	new /obj/item/device/radio/headset/church(src)
 	new /obj/item/clothing/gloves/thick(src)

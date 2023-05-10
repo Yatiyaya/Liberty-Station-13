@@ -27,7 +27,8 @@
 /obj/structure/railing/custodian
 	name = "custodian fence"
 	desc = "A Custodian-made fence, designs are engraved into the posts here and there."
-	icon_state = "custodian_fence0"
+	icon_modifier = "custodian_"
+	icon_state = "custodian_railing0"
 
 /obj/structure/railing/attack_generic(var/mob/user, var/damage, var/attack_verb)
 	if(istype(user))

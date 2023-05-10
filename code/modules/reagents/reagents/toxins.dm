@@ -764,23 +764,25 @@
 	taste_description = "your whole body burning"
 	reagent_state = LIQUID
 	color = "#49574a"
-	strength = 2
+	strength = 5
 	common = TRUE
 	nerve_system_accumulations = 50
 
 /datum/reagent/toxin/liquid_scorch/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	..()
-	M.take_organ_damage(0, effect_multiplier * strength)
+	if(istype(M))
+		M.adjustFireLoss(-5)
+		M.adjust_fire_stacks(5)
 
 /datum/reagent/toxin/liquid_scorch/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
 	..()
-	if(prob(10 - (5 * M.stats.getMult(STAT_TGH))))
-		M.vomit()
+	if(istype(M))
+		M.adjustFireLoss(-3)
+		M.adjust_fire_stacks(3)
 
 /datum/reagent/toxin/liquid_scorch/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
 	..()
-	if(prob(5 - (4 * M.stats.getMult(STAT_TGH))))
-		M.vomit()
+	biomatter_attack(M, 20)
 
 /datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
 	if(volume >= 5)

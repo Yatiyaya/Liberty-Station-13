@@ -8,7 +8,7 @@
 
 /datum/ritual/cruciform/custodian/offering
 	name = "Offerings"
-	power = 30
+	power = 25
 	var/list/req_offerings = list()
 	var/list/miracles = list(ALERT, INSPIRATION, STAT_BUFF, ENERGY_REWARD)
 
@@ -83,7 +83,6 @@
 	name = "Order Armaments"
 	phrase = "Oxidate Lecture: Order Armaments"
 	desc = "Allows you to spend favor to unlock disks from the lower stronghold."
-	power = 20
 
 /datum/ritual/cruciform/custodian/offering/buy_item/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	var/list/OBJS = get_front(H)

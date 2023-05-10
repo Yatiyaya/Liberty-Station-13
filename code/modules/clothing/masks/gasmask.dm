@@ -169,8 +169,8 @@
 	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/germanmask
-	name = "church gas mask"
-	desc = "A close-fitting tactical mask that can be connected to an air supply. Best for when you need to get out of here. This one bears a small tau cross, noting it as a church branded design."
+	name = "custodian gas mask"
+	desc = "A close-fitting tactical mask that can be connected to an air supply. This one bears typical Custodian design tells."
 	icon_state = "germangasmask"
 	siemens_coefficient = 0.7
 	price_tag = 50

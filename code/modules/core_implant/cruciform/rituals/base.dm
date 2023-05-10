@@ -75,7 +75,7 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/entreaty
 	name = "Entreaty"
 	phrase = "Oxidate Lecture: Entreaty"
-	desc = "Call for help, allowing other cruciform bearers to hear your cries."
+	desc = "Call for help, allowing other Hearthcore users to hear your cries."
 	power = 10
 
 /datum/ritual/cruciform/base/entreaty/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)

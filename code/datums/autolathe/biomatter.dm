@@ -95,12 +95,12 @@
 
 /datum/design/bioprinter/belt/utility/neotheology
 	name = "Bonfire utility belt"
-	build_path = /obj/item/storage/belt/utility/neotheology
+	build_path = /obj/item/storage/belt/utility/custodian
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
 
 /datum/design/bioprinter/belt/security/neotheology
 	name = "Bonfire tactical belt"
-	build_path = /obj/item/storage/belt/security/neotheology
+	build_path = /obj/item/storage/belt/security/custodian
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
 
 /datum/design/bioprinter/belt/misc/champion

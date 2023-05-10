@@ -41,8 +41,14 @@
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_EXTREME
 	w_class = ITEM_SIZE_BULKY
+	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 500
 	matter = list(MATERIAL_BIO_SILK = 75, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 5)
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "horsemans_axe"
+		)
 
 /obj/item/tool/knife/dagger/custodian
 	name = "custodian seax"
@@ -55,6 +61,13 @@
 	price_tag = 120
 	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 1)
 
+/obj/item/tool/knife/dagger/custodian/equipped(mob/living/M)
+	. = ..()
+	if(is_held() && is_neotheology_disciple(M))
+		embed_mult = 0.05
+	else
+		embed_mult = initial(embed_mult)
+
 /obj/item/tool/spear/atgeir
 	name = "custodian atgeir"
 	desc = "The polearm that anticipates bloodshed, serving in the battlefield as a multipurpose staff with a spearhead mixed with the blade of an axe. \
@@ -65,8 +78,21 @@
 	wielded_icon = "custodian_atgeir_wielded"
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_MASSIVE
+	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 600
 	matter = list(MATERIAL_BIO_SILK = 80, MATERIAL_STEEL = 8, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 2)
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "custodian_atgeir"
+		)
+
+/obj/item/tool/spear/atgeir/equipped(mob/living/M)
+	. = ..()
+	if(is_held() && is_neotheology_disciple(M))
+		embed_mult = 0.05
+	else
+		embed_mult = initial(embed_mult)
 
 /obj/item/tool/sword/custodian/whip
 	name = "custodian nagaika"
@@ -122,9 +148,7 @@
 /obj/item/tool/sword/custodian/whip/apply_hit_effect(mob/living/carbon/human/target, mob/living/user, hit_zone)
 	. = ..()
 	if(ishuman(target))
-		var/mob/living/carbon/human/O = target
 		target.stun_effect_act(stun, agony, hit_zone, src)
-		O.say(pick("LORD", "MERCY", "SPARE", "ME", "HAVE", "PLEASE"))
 
 /obj/item/tool/sword/custodian/throwaxe
 	name = "custodian francisca"
@@ -133,14 +157,11 @@
 	icon_state = "custodian_francisca"
 	item_state = "custodian_francisca"
 	force = WEAPON_FORCE_DANGEROUS
-	var/tipbroken = FALSE
-	w_class = ITEM_SIZE_HUGE
-	slot_flags = SLOT_BACK | SLOT_BELT
 	throwforce = WEAPON_FORCE_LETHAL * 1.5
-	armor_penetration = ARMOR_PEN_HALF
-	throw_speed = 3
+	armor_penetration = ARMOR_PEN_MODERATE
+	throw_speed = 4
 	price_tag = 150
-	matter = list(MATERIAL_BIO_SILK = 20, MATERIAL_CARBON_FIBER = 10) // More expensive, high-end spear
+	matter = list(MATERIAL_BIO_SILK = 20, MATERIAL_CARBON_FIBER = 10)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
 	. = ..()
@@ -152,22 +173,6 @@
 /obj/item/tool/sword/custodian/throwaxe/dropped(mob/living/W)
 	embed_mult = 600
 	..()
-
-/obj/item/tool/sword/custodian/throwaxe/on_embed(mob/user)
-	. = ..()
-	tipbroken = TRUE
-
-/obj/item/tool/sword/custodian/throwaxe/examine(mob/user)
-	. = ..()
-	if (tipbroken)
-		to_chat(user, SPAN_WARNING("\The [src] is broken. It looks like it could be repaired with a hammer."))
-
-/obj/item/tool/sword/custodian/throwaxe/attackby(obj/item/I, var/mob/user)
-	. = ..()
-	if (I.has_quality(QUALITY_HAMMERING))
-		if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_HAMMERING, FAILCHANCE_EASY, STAT_MEC))
-			to_chat(user, SPAN_NOTICE("You repair \the damaged spear-tip."))
-			tipbroken = FALSE
 
 /obj/item/tool/sword/custodian/warhammer
 	name = "emberblaze warhammer"
@@ -186,36 +191,120 @@
 	sharp = FALSE
 	embed_mult = 0
 	has_alt_mode = FALSE
+	var/effect_time = 5 MINUTES
 
 /obj/item/tool/sword/custodian/warhammer/attack_self(mob/user)
 	var/mob/living/carbon/human/theuser = user
 	var/obj/item/implant/core_implant/cruciform/CI = theuser.get_core_implant()
 	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform))
-		to_chat(user, SPAN_WARNING("You do not have a Hearthcore with which to light this beacon!"))
+		to_chat(user, SPAN_WARNING("You do not have an active Hearthcore with which to power this!"))
 		return
 	if(CI.power < 20)
-		to_chat(user, SPAN_WARNING("You do not have enough power to light up the beacon!"))
+		to_chat(user, SPAN_WARNING("You do not have enough power!"))
 		return
 	if(glowing)
 		to_chat(user, SPAN_WARNING("The warhammer is still lit up."))
 		return
 	else
-		set_light(l_range = 4, l_power = 2, l_color = COLOR_YELLOW)
-		to_chat(user, SPAN_WARNING("The warhammer has been lit!"))
-		glowing = TRUE
-		update_icon()
-		damtype = BURN
-		spawn(1200)
-			set_light(l_range = 0, l_power = 0, l_color = COLOR_YELLOW)
-			glowing = FALSE
-			damtype = initial(damtype)
-			update_icon()
+		heat_hammer()
+
+/obj/item/tool/sword/custodian/warhammer/proc/heat_hammer()
+	set_light(l_range = 4, l_power = 2, l_color = COLOR_YELLOW)
+	visible_message("The [src] radiates a searing heat!")
+	glowing = TRUE
+	heat = 1873
+	update_icon()
+	damtype = BURN
+	addtimer(CALLBACK(src, .proc/discard_effect, src), src.effect_time)
+	return TRUE
+
+/obj/item/tool/sword/custodian/warhammer/proc/discard_effect()
+	set_light(l_range = 0, l_power = 0, l_color = COLOR_BLUE)
+	glowing = FALSE
+	damtype = initial(damtype)
+	heat = initial(heat)
+	update_icon()
+	visible_message("The [src]'s heat dies down.")
 
 /obj/item/tool/sword/custodian/warhammer/update_icon()
 	if(glowing)
 		icon_state = initial(icon_state) + "_lit"
 	else
 		icon_state = initial(icon_state)
+	..()
+
+/obj/item/tool/sword/custodian/conflagration
+	name = "conflagration sword"
+	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance."
+	icon_state = "conflagrationsword"
+	item_state = "conflagrationsword"
+	force = WEAPON_FORCE_BRUTAL
+	armor_penetration = ARMOR_PEN_DEEP
+	w_class = ITEM_SIZE_BULKY
+	price_tag = 800
+	matter = list(MATERIAL_BIO_SILK = 100, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 20, MATERIAL_SILVER = 3)
+	tool_qualities = list(QUALITY_CUTTING = 10)
+	var/glowing = FALSE
+	slot_flags = SLOT_BACK | SLOT_BELT
+	has_alt_mode = FALSE
+	var/effect_time = 5 MINUTES
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "conflagarationsword"
+		)
+
+/obj/item/tool/sword/custodian/conflagration/attack_self(mob/user)
+	var/mob/living/carbon/human/theuser = user
+	var/obj/item/implant/core_implant/cruciform/CI = theuser.get_core_implant()
+	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform))
+		to_chat(user, SPAN_WARNING("You do not have an active Hearthcore with which to power this!"))
+		return
+	if(CI.power < 20)
+		to_chat(user, SPAN_WARNING("You do not have enough power!"))
+		return
+	if(glowing)
+		to_chat(user, SPAN_WARNING("The sword is still lit up."))
+		return
+	else
+		ignite_sword(user)
+
+/obj/item/tool/sword/custodian/conflagration/apply_hit_effect(mob/living/target, mob/living/user, hit_zone)
+	..()
+	if (glowing)
+		if (iscarbon(target))
+			biomatter_attack(target, 10)
+
+/obj/item/tool/sword/custodian/conflagration/proc/ignite_sword(mob/user)
+	set_light(l_range = 4, l_power = 2, l_color = COLOR_BLUE)
+	to_chat(user, SPAN_WARNING("The sword has been lit!"))
+	glowing = TRUE
+	heat = 1873
+	update_icon()
+	user.update_icons()
+	force = WEAPON_FORCE_LETHAL
+	armor_penetration = ARMOR_PEN_EXTREME
+	addtimer(CALLBACK(src, .proc/discard_effect, src), src.effect_time)
+	return TRUE
+
+/obj/item/tool/sword/custodian/conflagration/proc/discard_effect(var/mob/user)
+	user = get_holding_mob()
+	set_light(l_range = 0, l_power = 0, l_color = COLOR_BLUE)
+	glowing = FALSE
+	heat = initial(heat)
+	force = initial(force)
+	armor_penetration = initial(armor_penetration)
+	update_icon()
+	user.update_icons()
+	visible_message("The sword's flames subside.","You hear a flame going out.")
+
+/obj/item/tool/sword/custodian/conflagration/update_icon()
+	if(glowing)
+		icon_state = initial(icon_state) + "_radiant"
+		item_state = initial(item_state) + "_radiant"
+	else
+		icon_state = initial(icon_state)
+		item_state = initial(item_state)
 	..()
 
 /obj/item/shield/riot/custodian
@@ -239,7 +328,7 @@
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
-		slot_back_str = "nt_shield"
+		slot_back_str = "custodian_scutum"
 		)
 
 	var/obj/item/storage/internal/container

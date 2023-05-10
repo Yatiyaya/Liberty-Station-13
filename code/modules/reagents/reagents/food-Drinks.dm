@@ -1816,7 +1816,7 @@
 	name = "Bonfire Cahors Wine"
 	id = "ntcahors"
 	description = "Fortified dessert wine made from cabernet sauvignon, saperavi, and other grapes."
-	taste_description = "sweet charcoal"
+	taste_description = "purifying cinnamon relishness"
 	color = "#7E4043d0" // rgb: 126, 64, 67
 	strength = 30
 

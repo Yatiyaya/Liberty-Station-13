@@ -318,7 +318,8 @@
 	desc = "Not supposed to be seen in-game"
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 0)
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	max_upgrades = 2
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	obscuration = LIGHT_OBSCURATION
@@ -328,9 +329,18 @@
 	min_cold_protection_temperature = T0C - 20
 	matter = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
 
+/obj/item/clothing/head/helmet/custodian/firesuit
+	name = "flameshield helmet"
+	desc = "A helmet used by the Custodians to operate the Bonfire and to protect them from high heat sources. \
+	Flameshield suits are composed of specialized threads and porous foam that offer no protection whatsoever to physical trauma, energy weaponry, and other forms of damage."
+	icon_state = "custodian_firehelmet"
+	item_state = "custodian_firehelmet"
+	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	slowdown = 1.5
+
 /obj/item/clothing/head/helmet/custodian/oathbound
 	name = "oathbound helmet"
-	desc = "A forged helm made for the front lines of the Custodians, the Oathbound, the unique design and materials keep the fire at bay."
+	desc = "A forged helm made for the front lines of the Custodians, the Oathbound. The unique design and materials keep the fire at bay."
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
 
@@ -342,7 +352,7 @@
 
 /obj/item/clothing/head/helmet/custodian/forgemaster
 	name = "forgemaster helmet"
-	desc = "A helmet designed to keep hot sparks and searing heat at bay, made for the Forgemasters."
+	desc = "A helmet designed to keep the user safe from hot sparks and searing heat, made for the Forgemasters."
 	icon_state = "forgemaster_helmet"
 	item_state = "forgemaster_helmet"
 

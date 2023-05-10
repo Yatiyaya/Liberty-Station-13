@@ -131,9 +131,9 @@
 		/obj/item/device/lighting/glowstick/flare/torch
 	)
 
-/obj/item/storage/belt/utility/neotheology
+/obj/item/storage/belt/utility/custodian
 	name = "Bonfire utility belt"
-	desc = "Waist-held holy items."
+	desc = "Waist-held righteous items."
 	icon_state = "utility_neotheology"
 	can_hold_extra = list(
 		/obj/item/book/ritual/cruciform,
@@ -389,7 +389,7 @@
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/chem_grenade/teargas(src)
 
-/obj/item/storage/belt/security/neotheology
+/obj/item/storage/belt/security/custodian
 	name = "Bonfire tactical belt"
 	desc = "A comfortable Custodian belt design that can hold a variety of items."
 	icon_state = "tactical_neotheology"

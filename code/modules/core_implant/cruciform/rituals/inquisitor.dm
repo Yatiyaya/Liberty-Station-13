@@ -407,7 +407,7 @@
 	new /obj/item/tool/sword/crusader(usr.loc)
 	new /obj/item/clothing/accessory/holster/saber/greatsword(usr.loc)
 	new /obj/item/shield/riot/crusader(usr.loc)
-	new /obj/item/storage/belt/security/neotheology(usr.loc)
+	new /obj/item/storage/belt/security/custodian(usr.loc)
 	new /obj/item/clothing/suit/space/void/crusader(usr.loc)
 	if(user.species?.reagent_tag != IS_SYNTHETIC)
 		if(user.nutrition >= nutri_cost)

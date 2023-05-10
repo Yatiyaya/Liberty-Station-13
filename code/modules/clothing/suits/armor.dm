@@ -218,6 +218,42 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+	var/modifiable = TRUE
+
+/obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
+	if(modifiable )
+		if(!(QUALITY_WIRE_CUTTING in I.tool_qualities))
+			return ..()
+		var/options = list("Yes","No")
+		var/selection = input(user,"Remove Custodian markings from this armor?","Armor Modification") in options
+		if(selection == "Yes")
+			if(is_equipped())
+				to_chat(user, SPAN_NOTICE("You must drop the [src] before doing this."))
+				return
+			if(!do_after(user, 60, src))
+				return
+			name = "dark-silver armor"
+			desc = "A suit of plate armor with no discernable markings. Protective, fire-resistant, and easy to move in."
+			icon_state = initial(icon_state) + "_wirecutter"
+			item_state = initial(item_state) + "_wirecutter"
+			modifiable = FALSE
+			to_chat(user,"You cut and carve away all Custodian markings.")
+
+		else
+			to_chat(user,"You change your mind.")
+
+	return ..()
+
+/obj/item/clothing/suit/armor/custodian/firesuit
+	name = "flameshield suit"
+	desc = "A heavy suit used by the Custodians to operate the Bonfire and to protect them from high heat sources. \
+	Flameshield suits are composed of specialized threads and porous foam that offer no protection whatsoever to physical trauma, energy weaponry, and other forms of damage."
+	icon_state = "custodian_firesuit"
+	item_state = "custodian_firesuit"
+	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	stiffness = MEDIUM_STIFFNESS
+	slowdown = 1.5
+	modifiable = FALSE
 
 /obj/item/clothing/suit/armor/custodian/oathbound
 	name = "dark-silver oathbound armor"
@@ -243,6 +279,7 @@
 	icon_state = "oathpledge"
 	item_state = "oathpledge"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	modifiable = FALSE
 
 //Guild
 /obj/item/clothing/suit/armor/vest/technomancersuit

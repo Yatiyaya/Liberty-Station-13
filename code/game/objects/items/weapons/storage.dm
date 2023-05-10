@@ -1,6 +1,6 @@
 /obj/item/storage/sheath
 	name = "bonfire sheath"
-	desc = "Made to store only the swords of the Custodians."
+	desc = "Made to store only the weapons of the Custodians."
 	icon = 'icons/obj/sheath.dmi'
 
 	icon_state = "sheath"
@@ -13,12 +13,10 @@
 	max_w_class = ITEM_SIZE_HUGE
 
 	can_hold = list(
-		/obj/item/tool/sword/custodian,
-		/obj/item/tool/sword/saber
-		)
-	cant_hold = list(
-		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/tool/spear/atgeir
+		/obj/item/tool/sword/custodian/shortsword,
+		/obj/item/tool/sword/custodian/horseaxe,
+		/obj/item/tool/sword/custodian/whip,
+		/obj/item/tool/sword/custodian/conflagration,
 		)
 	insertion_sound = 'sound/effects/sheathin.ogg'
 	extraction_sound = 'sound/effects/sheathout.ogg'

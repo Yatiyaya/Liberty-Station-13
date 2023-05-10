@@ -22,7 +22,7 @@ datum/ritual/cruciform/oathbound/fireball
 	name = "Manifestation of Flames"
 	phrase = "Oxidate Lecture: Manifestation of Flames"
 	desc = "Create a launchable fireball on a free hand."
-	power = 25
+	power = 35
 
 /datum/ritual/cruciform/oathbound/fireball/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/obj/item/gun/custodian_fireball/flame = new /obj/item/gun/custodian_fireball(src, lecturer)
@@ -37,7 +37,7 @@ datum/ritual/cruciform/oathbound/fireball
 /obj/item/gun/custodian_fireball
 	name = "radiant fireball"
 	desc = "A summoned fireball that dissapears if dropped."
-	icon = 'icons/obj/nt_melee.dmi'
+	icon = 'icons/obj/guns/projectile/fireball.dmi'
 	icon_state = "fireball_lecture"
 	item_state = "fireball_lecture"
 	origin_tech = list()
@@ -67,7 +67,7 @@ datum/ritual/cruciform/oathbound/fireball
 
 /obj/item/gun/custodian_fireball/Process()
 	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
-		visible_message("\the [src] fades into nothingness.")
+		visible_message("The [src] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
@@ -78,7 +78,7 @@ datum/ritual/cruciform/oathbound/fireball
 	damage_types = list(BURN = WEAPON_FORCE_NORMAL)
 
 /obj/item/projectile/custodian_fireball/on_impact(atom/target)
-	biomatter_attack(target, 10)
+	biomatter_attack(target, 20)
 	return TRUE
 
 /* might exist eventually, might not
@@ -116,7 +116,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	name = "Eyeflare"
 	phrase = "Oxidate Lecture: Eyeflare"
 	desc = "This lecture causes a bright flash in a short radius around the user."
-	power = 20
+	power = 30
 
 /datum/ritual/cruciform/oathbound/eyeflare/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	for(var/mob/living/carbon/M in view(2, H))
@@ -135,7 +135,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
 	cooldown_category = "radiance_neural"
-	power = 90
+	power = 65
 
 /datum/ritual/cruciform/oathbound/radiance_neural/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
@@ -227,7 +227,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	cooldown_time = 5 MINUTES
 	cooldown_category = "scorching_smite"
 	effect_time = 30 SECONDS
-	power = 30
+	power = 25
 	var/wrath_damage = 0.2
 
 /datum/ritual/cruciform/oathbound/scorching_smite/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -241,17 +241,17 @@ datum/ritual/cruciform/oathbound/fireball_big
 	user.damage_multiplier -= wrath_damage
 	to_chat(user, SPAN_NOTICE("Your wrath subsides"))
 
-/datum/ritual/cruciform/oathbound/restraint_conflagaration
-	name = "Restraint Conflagaration"
-	phrase = "Oxidate Lecture: Restraint Conflagaration"
+/datum/ritual/cruciform/oathbound/restraint_conflagration
+	name = "Restraint Conflagration"
+	phrase = "Oxidate Lecture: Restraint Conflagration"
 	desc = "A lecture that emboldens the body and muscles for fifteen minutes. Requires thirty minutes between uses."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
-	cooldown_category = "restraint_conflagaration"
+	cooldown_category = "restraint_conflagration"
 	effect_time = 15 MINUTES
 	power = 90
 
-/datum/ritual/cruciform/oathbound/restraint_conflagaration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+/datum/ritual/cruciform/oathbound/restraint_conflagration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	user.stats.changeStat(STAT_TGH, 10)
 	user.stats.changeStat(STAT_ROB, 10)
 	to_chat(user, SPAN_NOTICE("You feel emboldened, your body growing in strength and fortitude."))
@@ -259,7 +259,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/restraint_conflagaration/proc/discard_effect(mob/living/carbon/human/user, amount)
+/datum/ritual/cruciform/oathbound/restraint_conflagration/proc/discard_effect(mob/living/carbon/human/user, amount)
 	user.stats.changeStat(STAT_TGH, -10)
 	user.stats.changeStat(STAT_ROB, -10)
 	to_chat(user, SPAN_NOTICE("You no longer feel emboldened."))
@@ -268,7 +268,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	name = "Ignite Flesh"
 	phrase = "Oxidate Lecture: Ignite Flesh"
 	desc = "Recite the lecture to ignite the surrounding bodies of those without a Hearthcore."
-	power = 90
+	power = 60
 
 /datum/ritual/cruciform/oathbound/ignite_flesh/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	for(var/mob/living/carbon/M in view(2, user))
@@ -345,7 +345,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	cooldown_category = "convalescence"
-	power = 35 //Healing yourself is slightly easier than healing someone else
+	power = 25 //Healing yourself is slightly easier than healing someone else
 
 /datum/ritual/cruciform/enkindled/convalescence/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
@@ -368,9 +368,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
 	cooldown_category = "grepose"
-	power = 60
-	nutri_cost = 50
-	blood_cost = 50
+	power = 50
 
 /datum/ritual/cruciform/enkindled/graceful_repose/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/list/people_around = list()
@@ -387,7 +385,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		set_personal_cooldown(user)
 		return TRUE
 	else
-		fail("Your cruciform sings, alone, unto the void.", user, C)
+		fail("Your Hearthcore sings, alone, unto the void.", user, C)
 		return FALSE
 
 /datum/ritual/cruciform/enkindled/graceful_repose/proc/heal_other(mob/living/carbon/human/participant)
@@ -461,7 +459,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	name = "Revival"
 	phrase = "Oxidate Lecture: Revival"
 	desc = "Consume parts of a Hearthcore to jumpstart a deceased user's life functions, mending any present neural degeneration. Has a thirty minute cooldown."
-	power = 50
+	power = 100
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
 	cooldown_category = "revival"
@@ -731,8 +729,8 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/forgemaster/iron_will
 	name = "Lecture of Iron Will"
 	phrase = "Oxidate Lecture: Lecture of Iron Will"
-	desc = "Repair a mechanical creature in front of you."
-	power = 100
+	desc = "Repair a person's mechanical organs and limbs or a mechanical creature in front of you."
+	power = 75
 
 /datum/ritual/cruciform/forgemaster/iron_will/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/target = get_victim(user)
@@ -820,14 +818,14 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 	return TRUE
 
-/datum/ritual/cruciform/oathpledge/reimagining
+/datum/ritual/cruciform/oathpledge/reimagining //re-named convalescence to give it to Enkindled and Oathpledge but not give the entire category
 	name = "Reimagining"
 	phrase = "Oxidate Lecture: Reimagining"
 	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	cooldown_category = "reimagining"
-	power = 35 //Healing yourself is slightly easier than healing someone else
+	power = 25 //Healing yourself is slightly easier than healing someone else
 
 /datum/ritual/cruciform/oathpledge/reimagining/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
@@ -1062,9 +1060,60 @@ datum/ritual/cruciform/oathbound/fireball_big
 	CI.security_clearance = CLEARANCE_NONE
 	return TRUE
 
-//datum/ritual/cruciform/oathpledge/pilgrim_path
+/datum/ritual/cruciform/oathpledge/pilgrim_path
+	name = "Pilgrim's Path"
+	phrase = "Oxidate Lecture: Pilgrim's Path"
+	desc = "A lecture that enhances the physical attributes of everyone around you for ten minutes. Has a thirty minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "pilgrim_path"
+	effect_time = 10 MINUTES
+	power = 75
 
-//datum/ritual/cruciform/oathpledge/sanctorium_of_life
+/datum/ritual/cruciform/oathbound/pilgrim_path/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	for(var/mob/living/carbon/human/H in view())
+		if(!(H == user))
+			H.stats.changeStat(STAT_TGH, 15)
+			H.stats.changeStat(STAT_ROB, 15)
+			H.stats.changeStat(STAT_VIG, 15)
+			to_chat(H, SPAN_NOTICE("You feel stronger, hardier, more agile."))
+			addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	set_personal_cooldown(user)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/pilgrim_path/proc/discard_effect(mob/living/carbon/human/user, amount)
+	user.stats.changeStat(STAT_TGH, -15)
+	user.stats.changeStat(STAT_ROB, -15)
+	user.stats.changeStat(STAT_VIG, -15)
+	to_chat(user, SPAN_NOTICE("You no longer feel so great."))
+
+/datum/ritual/cruciform/oathpledge/sanctorium_of_life
+	name = "Sanctorium of Life"
+	phrase = "Oxidate Lecture: Sanctorium of Life"
+	desc = "A lecture that enhances the mental attributes of everyone around you for ten minutes. Has a thirty minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	cooldown_category = "sanctorium"
+	effect_time = 10 MINUTES
+	power = 75
+
+/datum/ritual/cruciform/oathbound/sanctorium_of_life/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	for(var/mob/living/carbon/human/H in view())
+		if(!(H == user))
+			H.stats.changeStat(STAT_MEC, 15)
+			H.stats.changeStat(STAT_COG, 15)
+			H.stats.changeStat(STAT_BIO, 15)
+			to_chat(H, SPAN_NOTICE("You feel smarter, more mentally stable."))
+			addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	set_personal_cooldown(user)
+	return TRUE
+
+/datum/ritual/cruciform/oathbound/sanctorium_of_life/proc/discard_effect(mob/living/carbon/human/user, amount)
+	user.stats.changeStat(STAT_MEC, -15)
+	user.stats.changeStat(STAT_COG, -15)
+	user.stats.changeStat(STAT_BIO, -15)
+	to_chat(user, SPAN_NOTICE("You no longer feel so wise."))
+
 
 /datum/ritual/cruciform/oathpledge/torch_of_guidance
 	name = "Torch of Guidance"
@@ -1105,7 +1154,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	name = "Undying Phrases"
 	phrase = "Oxidate Lecture: Undying Phrases"
 	desc = "Transmit a message to all Hearthcore users."
-	power = 30
+	power = 25
 
 /datum/ritual/cruciform/oathpledge/undying_phrases/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	var/text = input(user, "What message will you send? Only Hearthcore users will be able to hear it.", "Sending a message") as text|null
@@ -1127,7 +1176,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	phrase = "Oxidate Lecture: Inspiration"
 	desc = "Increases the Sanity recovery rate of the person in front of you for fifteen minutes."
 	effect_time = 15 MINUTES
-	power = 30
+	power = 65
 
 /datum/ritual/cruciform/oathpledge/inspiration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/target = get_victim(user)
@@ -1152,7 +1201,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	phrase = "Oxidate Lecture: Order of Misery"
 	desc = "Decreases the Sanity recovery rate of the person in front of you for fifteen minutes."
 	effect_time = 15 MINUTES
-	power = 30
+	power = 65
 
 /datum/ritual/cruciform/oathpledge/order_of_misery/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/target = get_victim(user)
@@ -1176,7 +1225,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	name = "Disgrace"
 	phrase = "Oxidate Lecture: Disgrace"
 	desc = "Inflict a harmful psychological effect on the person in front of you."
-	power = 30
+	power = 35
 
 /datum/ritual/cruciform/oathpledge/disgrace/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/target = get_victim(user)
@@ -1454,7 +1503,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/targeted/cruciform/divisor/spawn_con/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	new /obj/item/gun/energy/taser(usr.loc)
 	new /obj/item/cell/medium(usr.loc)
-	new /obj/item/storage/belt/security/neotheology(usr.loc)
+	new /obj/item/storage/belt/security/custodian(usr.loc)
 	new /obj/item/clothing/head/rank/divisor(usr.loc)
 	new /obj/item/clothing/suit/greatcoat/divisor(usr.loc)
 	if(user.species?.reagent_tag != IS_SYNTHETIC)

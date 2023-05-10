@@ -64,7 +64,6 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Flame Guidance"
 	phrase = "Oxidate Lecture: Flame Guidance"
 	desc = "Learn the requirements for constructing a specific Custodian blueprint."
-	power = 5
 	category = "Construction"
 
 /datum/ritual/cruciform/forgemaster/flame_guidance/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
@@ -85,7 +84,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Uproot"
 	phrase = "Oxidate Lecture: Uproot"
 	desc = "Deconstruct a Custodian machine infront of you."
-	power = 40
+	power = 25
 
 /datum/ritual/cruciform/forgemaster/deconstruction/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
 	if(!GLOB.nt_constructs) //Makes sure the list we curated earlier actually exists
@@ -138,7 +137,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Weak Manifestation"
 	phrase = "Oxidate Lecture: Weak Manifestation"
 	desc = "Shape materials and components in front of you into a Custodian design."
-	power = 40
+	power = 25
 	category = "Construction"
 
 /datum/ritual/cruciform/forgemaster/construction/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
@@ -201,7 +200,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Medium Manifestation"
 	phrase = "Oxidate Lecture: Medium Manifestation"
 	desc = "Shape materials and components in front of you into a Custodian design."
-	power = 40
+	power = 30
 	category = "Construction"
 
 /datum/ritual/cruciform/forgemaster/construction/medium/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
@@ -246,7 +245,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Strong Manifestation"
 	phrase = "Oxidate Lecture: Strong Manifestation"
 	desc = "Shape materials and components in front of you into a Custodian design."
-	power = 40
+	power = 35
 	category = "Construction"
 
 /datum/ritual/cruciform/forgemaster/construction/strong/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
