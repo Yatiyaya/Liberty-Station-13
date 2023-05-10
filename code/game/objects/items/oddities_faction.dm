@@ -266,7 +266,7 @@
 	item_state = "techno_tribalism"
 	origin_tech = list(TECH_MATERIAL = 8, TECH_ENGINEERING = 7, TECH_POWER = 2)
 	price_tag = 20000
-	var/list/oddity_stats = list(STAT_MEC = 0, STAT_COG = 0, STAT_BIO = 0, STAT_ROB = 0, STAT_TGH = 0, STAT_VIG = 0, STAT_WIL = 0)
+	var/list/oddity_stats = list(STAT_MEC = 0, STAT_COG = 0, STAT_BIO = 0, STAT_ROB = 0, STAT_TGH = 0, STAT_VIG = 0, STAT_WIL = 0, STAT_END = 0)
 	var/last_produce = -30 MINUTES
 	var/items_count = 0
 /*
@@ -514,7 +514,7 @@ No more of that.
 /obj/item/maneki_neko/proc/destroy_lifes()
 	for(var/mob/living/carbon/human/H in followers)
 
-		for(var/stat in ALL_STATS)
+		for(var/stat in ALL_STATS_LEVEL)
 			H.stats.changeStat(stat, -10)
 		var/neko = uppertext(src.name)
 		to_chat(H, SPAN_DANGER(pick("LIFE IS RUINED FOR ME! I CANNOT FIND [neko]!", "WHO STOLE MY [neko]!", "WHERE IS [neko]?!", "WHY I CANNOT FIND [neko]?!")))
