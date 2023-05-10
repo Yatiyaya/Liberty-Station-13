@@ -1,44 +1,119 @@
-/obj/item/device/lighting/toggleable/flashlight
-	action_button_name = "Toggle Flashlight"
-	var/tick_cost = 0.2
+// This has become its own file because it's literally copypasting flashlight code over a gun mod
+// This is done so that attachable flashlights can be removed once installed as any gunmod would
+
+/obj/item/gun_upgrade/tacticool_flashlight
+	name = "Attachable flashlight"
+	desc = "A seclite that can be mounted into a firearm to provide directional light. Takes a small cell."
+	icon = 'icons/obj/lighting.dmi'
+	icon_state = "seclite"
+	item_state = "seclite"
+	flags = CONDUCT
+	slot_flags = SLOT_BELT
+	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1)
 	cell = null
 	suitable_cell = /obj/item/cell/small
 	dir = WEST
-
+	action_button_name = "Toggle Flashlight"
+	var/on = FALSE
+	var/brightness_on = 5
+	var/turn_on_sound = 'sound/effects/Custom_flashlight.ogg'
+	var/tick_cost = 0.2
 	var/obj/effect/effect/light/light_spot
-
 	var/radiance_power = 0.8
-	var/light_spot_power = 2
+	var/light_spot_power = 2.5
 	var/light_spot_radius = 3
-
 	var/light_spot_range = 3
-	var/spot_locked = FALSE		//this flag needed for lightspot to stay in place when player clicked on turf, will reset when moved or turned
-
+	var/spot_locked = FALSE
 	var/light_direction
 	var/lightspot_hitObstacle = FALSE
 
-	description_info = "Can be used on other people's eyes to check for brain damage, and if they're drugged or have the x-ray mutation"
-	description_antag = "Can be used to flash people on harm intent, provided they do not have any protection"
+/obj/item/gun_upgrade/tacticool_flashlight/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_FLASHLIGHT = TRUE,
+		UPGRADE_BULK = 1
+		)
+	I.gun_loc_tag = GUN_UNDERBARREL
+	I.breakable = FALSE
+	I.install_time = WORKTIME_NEAR_INSTANT
+	I.removal_time = WORKTIME_INSTANT // Doesn't matter because being unbreakable makes it instant regardless
+	I.removal_difficulty = FAILCHANCE_ZERO
+	I.prefix = "tactical" // With the removal of rail attachments, the baton is passed to the flashlight! - Seb
 
-/obj/item/device/lighting/toggleable/flashlight/Initialize()
+/*		On second thought, let's not give a free small cell exploit out of empty seclites.
+
+/obj/item/gun_upgrade/tacticool_flashlight/Initialize()
 	. = ..()
 	if(!cell && suitable_cell)
 		cell = new suitable_cell(src)
+*/
 
-/obj/item/device/lighting/toggleable/flashlight/Destroy()
+/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_on(mob/user)
+	if(!cell || !cell.check_charge(tick_cost))
+		playsound(loc, 'sound/machines/button.ogg', 50, 1)
+		to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
+		return FALSE
+	if(user && !isturf(user.loc))
+		to_chat(user, "You cannot turn the light on while in this [user.loc].")
+		return FALSE
+	set_light(2,radiance_power)
+	light_spot = new(get_turf(src),light_spot_radius, light_spot_power)
+	light_spot.icon = 'icons/effects/64x64.dmi'
+	light_spot.pixel_x = -16
+	light_spot.pixel_y = -16
+	light_spot.layer = ABOVE_OBJ_LAYER
+	if (cell.percent() <= 25)
+		apply_power_deficiency()
+	calculate_dir()
+	if(user)
+		START_PROCESSING(SSobj, src)
+		user.update_action_buttons()
+	if(turn_on_sound)
+		playsound(src.loc, turn_on_sound, 75, 1)
+	on = TRUE
+	update_icon()
+	return TRUE
+
+/obj/item/gun_upgrade/tacticool_flashlight/update_icon()
+	if(on)
+		icon_state = "[initial(icon_state)]-on"
+		set_light(brightness_on)
+	else
+		icon_state = "[initial(icon_state)]"
+		set_light(0)
+
+/obj/item/gun_upgrade/tacticool_flashlight/attack_self(mob/user)
+	if(on)
+		turn_off(user)
+	else
+		turn_on(user)
+
+/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_off(var/mob/living/user)
+	set_light(0)
+	if(turn_on_sound)
+		playsound(src.loc, turn_on_sound, 75, 1)
+	qdel(light_spot)
+	if(. && user)
+		user.update_action_buttons()
+	on = FALSE
+	update_icon()
+	return TRUE
+
+/obj/item/gun_upgrade/tacticool_flashlight/Destroy()
 	qdel(light_spot)
 	return ..()
 
-/obj/item/device/lighting/toggleable/flashlight/get_cell()
+/obj/item/gun_upgrade/tacticool_flashlight/get_cell()
 	return cell
 
-/obj/item/device/lighting/toggleable/flashlight/handle_atom_del(atom/A)
+/obj/item/gun_upgrade/tacticool_flashlight/handle_atom_del(atom/A)
 	..()
 	if(A == cell)
 		cell = null
 		update_icon()
 
-/obj/item/device/lighting/toggleable/flashlight/proc/calculate_dir(var/turf/old_loc)
+/obj/item/gun_upgrade/tacticool_flashlight/proc/calculate_dir(var/turf/old_loc)
 	if (istype(src.loc,/obj/item/storage) || istype(src.loc,/obj/structure/closet))
 		return
 	if (istype(src.loc,/mob/living))
@@ -62,13 +137,13 @@
 		else if (y_diff < 0)
 			set_dir(SOUTH)
 
-/obj/item/device/lighting/toggleable/flashlight/set_dir(new_dir)
-	var/turf/NT = get_turf(src)	//supposed location for lightspot
-	var/turf/L = get_turf(src)	//current location of flashlight in world
+/obj/item/gun_upgrade/tacticool_flashlight/set_dir(new_dir)
+	var/turf/NT = get_turf(src)
+	var/turf/L = get_turf(src)
 	var/hitSomething = FALSE
 	light_direction = new_dir
 
-	if (istype(src.loc,/obj/item/storage) || istype(src.loc,/obj/structure/closet))	//no point in finding spot for light if flashlight is inside container
+	if (istype(src.loc,/obj/item/storage) || istype(src.loc,/obj/structure/closet))
 		place_lightspot(NT)
 		return
 
@@ -124,14 +199,14 @@
 		if(!istype(G.loc,/mob/living))
 			dir = new_dir
 
-/obj/item/device/lighting/toggleable/flashlight/proc/place_lightspot(var/turf/T, var/angle = null)
+/obj/item/gun_upgrade/tacticool_flashlight/proc/place_lightspot(var/turf/T, var/angle = null)
 	if (light_spot && on && !T.is_space())
 		light_spot.forceMove(T)
 		light_spot.icon_state = "nothing"
 		light_spot.set_light(light_spot_radius, light_spot_power)
 
 		if (cell && cell.percent() <= 25)
-			apply_power_deficiency()	//onhit brightness increased there
+			apply_power_deficiency()
 		else if (lightspot_hitObstacle)
 			light_spot.set_light(light_spot_radius + 1, light_spot_power * 1.25)
 
@@ -150,7 +225,7 @@
 			light_spot.add_new_transformation(/datum/transform_type/modular, list(rotation = angle, flag = FLASHLIGHT_LIGHT_SPOT_ROTATION_TRANSFORM, priority = FLASHLIGHT_LIGHT_SPOT_ROTATION_TRANSFORM_PRIORITY, override = TRUE))
 		else
 			var/to_rotate = 0
-			switch(light_direction)	//icon pointing north by default
+			switch(light_direction)
 				if (NORTH)
 					to_rotate = 0
 				if(SOUTH)
@@ -162,12 +237,12 @@
 
 			light_spot.add_new_transformation(/datum/transform_type/modular, list(rotation = to_rotate, flag = FLASHLIGHT_LIGHT_SPOT_ROTATION_TRANSFORM, priority = FLASHLIGHT_LIGHT_SPOT_ROTATION_TRANSFORM_PRIORITY, override = TRUE))
 
-/obj/item/device/lighting/toggleable/flashlight/proc/lightSpotPassable(var/turf/T)
+/obj/item/gun_upgrade/tacticool_flashlight/proc/lightSpotPassable(var/turf/T)
 	if (is_opaque(T))
 		return FALSE
 	return TRUE
 
-/obj/item/device/lighting/toggleable/flashlight/proc/lightSpotPlaceable(var/turf/T)	//check if we can place icon there, light will be still applied
+/obj/item/gun_upgrade/tacticool_flashlight/proc/lightSpotPlaceable(var/turf/T)
 	if(T == get_turf(src) || !isfloor(T))
 		return FALSE
 	for(var/obj/O in T)
@@ -175,28 +250,28 @@
 			return FALSE
 	return TRUE
 
-/obj/item/device/lighting/toggleable/flashlight/moved(mob/user, old_loc)
+/obj/item/gun_upgrade/tacticool_flashlight/moved(mob/user, old_loc)
 	spot_locked = FALSE
 	calculate_dir(old_loc)
 
-/obj/item/device/lighting/toggleable/flashlight/entered_with_container()
+/obj/item/gun_upgrade/tacticool_flashlight/entered_with_container()
 	spot_locked = FALSE
 	calculate_dir()
 
-/obj/item/device/lighting/toggleable/flashlight/container_dir_changed(new_dir)
+/obj/item/gun_upgrade/tacticool_flashlight/container_dir_changed(new_dir)
 	spot_locked = FALSE
 	set_dir(new_dir)
 
-/obj/item/device/lighting/toggleable/flashlight/pre_pickup(mob/user)
+/obj/item/gun_upgrade/tacticool_flashlight/pre_pickup(mob/user)
 	calculate_dir()
 	dir = WEST
 	return ..()
 
-/obj/item/device/lighting/toggleable/flashlight/dropped(mob/user as mob)
+/obj/item/gun_upgrade/tacticool_flashlight/dropped(mob/user as mob)
 	if(light_direction)
 		set_dir(light_direction)
 
-/obj/item/device/lighting/toggleable/flashlight/afterattack(atom/A, mob/user)
+/obj/item/gun_upgrade/tacticool_flashlight/afterattack(atom/A, mob/user)
 	var/turf/T = get_turf(A)
 	if(can_see(user,T) && light_spot_range >= get_dist(get_turf(src),T))
 		lightspot_hitObstacle = FALSE
@@ -209,32 +284,7 @@
 		light_direction = get_dir(src,T)
 		place_lightspot(T,Get_Angle(get_turf(src),T))
 
-/obj/item/device/lighting/toggleable/flashlight/turn_on(mob/user)
-	if(!cell || !cell.check_charge(tick_cost))
-		playsound(loc, 'sound/machines/button.ogg', 50, 1)
-		to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
-		return FALSE
-	. = ..()
-	set_light(2,radiance_power)
-	light_spot = new(get_turf(src),light_spot_radius, light_spot_power)
-	light_spot.icon = 'icons/effects/64x64.dmi'
-	light_spot.pixel_x = -16
-	light_spot.pixel_y = -16
-	light_spot.layer = ABOVE_OBJ_LAYER
-	if (cell.percent() <= 25)
-		apply_power_deficiency()
-	calculate_dir()
-	if(. && user)
-		START_PROCESSING(SSobj, src)
-		user.update_action_buttons()
-
-/obj/item/device/lighting/toggleable/flashlight/turn_off(mob/user)
-	. = ..()
-	qdel(light_spot)
-	if(. && user)
-		user.update_action_buttons()
-
-/obj/item/device/lighting/toggleable/flashlight/proc/apply_power_deficiency()
+/obj/item/gun_upgrade/tacticool_flashlight/proc/apply_power_deficiency()
 	if (!cell || !light_spot)
 		return
 	var/hit_brightness_multiplier = 1
@@ -254,28 +304,30 @@
 			light_spot.set_light(max(2, round(light_spot_radius/100 * 70) + hit_radius_addition), light_spot_power/100 * 70 * hit_brightness_multiplier)
 			set_light(l_power = radiance_power/100 * 70)
 
-/obj/item/device/lighting/toggleable/flashlight/Process()
+/obj/item/gun_upgrade/tacticool_flashlight/Process()
 	if(on)
 		if(!spot_locked)
 			calculate_dir()
 		if(!cell || !cell.checked_use(tick_cost))
 			if(ismob(src.loc))
-				to_chat(src.loc, SPAN_WARNING("Your flashlight dies. You are alone now."))
+				to_chat(src.loc, SPAN_WARNING("The attached flashlight fades out, powerless."))
 			turn_off()
 		else if (cell.percent() <= 25)
 			apply_power_deficiency()
 
-/obj/item/device/lighting/toggleable/flashlight/MouseDrop(over_object)
+/obj/item/gun_upgrade/tacticool_flashlight/MouseDrop(over_object)
 	if((src.loc == usr) && istype(over_object, /obj/screen/inventory/hand) && eject_item(cell, usr))
 		cell = null
+		if(on)
+			turn_off(over_object) // Cringe way to prevent an exploit.
 	else
 		return ..()
 
-/obj/item/device/lighting/toggleable/flashlight/attackby(obj/item/C, mob/living/user)
+/obj/item/gun_upgrade/tacticool_flashlight/attackby(obj/item/C, mob/living/user)
 	if(istype(C, suitable_cell) && !cell && insert_item(C, user))
 		src.cell = C
 
-/obj/item/device/lighting/toggleable/flashlight/attack(mob/living/M, mob/living/user)
+/obj/item/gun_upgrade/tacticool_flashlight/attack(mob/living/M, mob/living/user)
 	add_fingerprint(user)
 	if(on && user.targeted_organ == BP_EYES)
 
@@ -331,45 +383,3 @@
 	else
 		return ..()
 
-/obj/item/device/lighting/toggleable/flashlight/pen
-	name = "penlight"
-	desc = "A pen-sized light, used by medical staff."
-	icon_state = "penlight"
-	item_state = ""
-	slot_flags = SLOT_EARS
-	radiance_power = 0.4
-	light_spot_radius = 2
-	light_spot_power = 2
-	light_spot_range = 1
-	w_class = ITEM_SIZE_TINY
-
-/obj/item/device/lighting/toggleable/flashlight/heavy
-	name = "heavy duty flashlight"
-	desc = "A hand-held heavy-duty light."
-	icon_state = "heavyduty"
-	item_state = "heavyduty"
-	radiance_power = 1
-	light_spot_radius = 4
-	light_spot_power = 3
-	light_spot_range = 4
-	tick_cost = 0.4
-	suitable_cell = /obj/item/cell/medium
-
-/obj/item/device/lighting/toggleable/flashlight/seclite
-	name = "security flashlight"
-	desc = "A hand-held security flashlight."
-	icon_state = "seclite"
-	item_state = "seclite"
-	light_spot_power = 2.5
-	price_tag = 8
-	tick_cost = 0.2
-
-/obj/item/device/lighting/toggleable/flashlight/seclite/update_icon()
-	. = ..()
-
-	if(on)
-		item_state = "[initial(icon_state)]-on"
-		update_wear_icon()
-	else
-		item_state = "[initial(icon_state)]"
-		update_wear_icon()
