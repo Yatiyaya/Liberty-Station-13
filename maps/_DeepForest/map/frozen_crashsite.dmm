@@ -1544,6 +1544,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"rP" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/random/mob/undergroundmob/low_chance,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "rR" = (
 /obj/item/material/shard,
 /turf/simulated/floor/industrial/green_large_slates,
@@ -1670,6 +1675,10 @@
 /obj/structure/grille/cult,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"tg" = (
+/obj/random/cluster/termite_no_despawn_swarm,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "ti" = (
 /turf/simulated/shuttle/wall/cargo{
 	icon_state = "cargoshwall25"
@@ -23305,10 +23314,10 @@ xo
 WD
 xo
 FG
-Rj
 FG
 FG
-Rj
+FG
+FG
 FG
 FG
 FG
@@ -23711,11 +23720,11 @@ FG
 xo
 xo
 xo
+la
 FG
 FG
 FG
 FG
-Rj
 FG
 FG
 FG
@@ -24114,7 +24123,7 @@ FG
 FG
 FG
 FG
-Rj
+FG
 zW
 zW
 xo
@@ -25118,7 +25127,7 @@ xo
 xo
 zW
 zW
-zW
+rP
 zW
 FG
 FG
@@ -25507,7 +25516,7 @@ xo
 zW
 zW
 FG
-zI
+FG
 FG
 FG
 aS
@@ -25719,7 +25728,7 @@ Ml
 xo
 xo
 zW
-FG
+zI
 FG
 FG
 xo
@@ -26114,7 +26123,7 @@ xo
 xo
 xo
 FG
-FG
+la
 FG
 FG
 zW
@@ -26314,7 +26323,7 @@ xo
 xo
 xo
 FG
-zI
+FG
 FG
 FG
 FG
@@ -26921,7 +26930,7 @@ xo
 FG
 FG
 FG
-zI
+FG
 FG
 zW
 xo
@@ -30813,7 +30822,7 @@ xo
 FG
 FG
 FG
-Tt
+FG
 FG
 FG
 xo
@@ -31410,8 +31419,8 @@ xo
 xo
 FG
 FG
-FG
-FG
+xo
+zW
 FG
 FG
 FG
@@ -31611,10 +31620,10 @@ xo
 xo
 xo
 FG
-FG
-FG
 zW
 zW
+zW
+FG
 zW
 zW
 FG
@@ -31813,11 +31822,11 @@ xo
 xo
 xo
 FG
-Tt
 FG
-zW
-xo
-xo
+FG
+FG
+tg
+FG
 xo
 zW
 zW
@@ -32014,12 +32023,12 @@ xo
 zW
 zW
 FG
-FG
-FG
-FG
 zW
 zW
-xo
+zW
+FG
+FG
+FG
 xo
 xo
 zW
@@ -32216,9 +32225,9 @@ WD
 zW
 FG
 FG
-FG
-FG
-FG
+zW
+xo
+zW
 FG
 FG
 zW
@@ -33013,8 +33022,8 @@ xo
 xo
 xo
 WD
-zW
-zW
+WD
+WD
 zW
 zW
 FG
@@ -33215,9 +33224,9 @@ xo
 xo
 xo
 WD
-zW
-zW
-zW
+WD
+WD
+WD
 zW
 zW
 zW
@@ -33416,11 +33425,11 @@ xo
 xo
 xo
 WD
-zW
-zW
-zW
-zW
-zW
+WD
+WD
+WD
+WD
+WD
 WD
 xo
 xo
