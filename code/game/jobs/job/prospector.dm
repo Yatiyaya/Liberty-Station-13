@@ -11,6 +11,7 @@
 	difficulty = "Hard."
 	selection_color = "#97b0be"
 	req_admin_notify = 1
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
 	department_account_access = TRUE
 	health_modifier = 15
@@ -64,7 +65,8 @@
 	difficulty = "Medium."
 	noob_name = "Rookie Trapper"
 	selection_color = "#a7bbc6"
-	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round-start.
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_NONE
 
 	outfit_type = /decl/hierarchy/outfit/job/trapper
@@ -110,7 +112,7 @@
 	difficulty = "Medium."
 	noob_name = "Rookie Shipbreaker"
 	selection_color = "#a7bbc6"
-	initial_balance = 500	//Should be enough to get by with basic meds, tools, and food round start.
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_NONE
 
 	outfit_type = /decl/hierarchy/outfit/job/shipbreaker

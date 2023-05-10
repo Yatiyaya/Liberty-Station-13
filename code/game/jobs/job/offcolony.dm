@@ -10,6 +10,7 @@
 	selection_color = "#191919"
 	account_allowed = 0
 	create_record = 0
+	initial_balance = INIT_BALANCE_NONE
 	wage = WAGE_NONE
 	//minimal_access = list(access_maint_tunnels)	- No.
 	outfit_type = /decl/hierarchy/outfit/job/outsider

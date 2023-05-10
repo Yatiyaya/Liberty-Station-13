@@ -11,6 +11,8 @@
 	difficulty = "Medium."
 	selection_color = "#b39aaf"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
 
 
@@ -70,7 +72,10 @@
 	supervisors = "the Research Provost"
 	difficulty = "Medium."
 	selection_color = "#bdb1bb"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	noob_name = "PIRS Intern"
 	alt_titles = list("PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
@@ -119,7 +124,10 @@
 	noob_name = "PIRS Roboticist Trainee"
 	alt_titles = list("PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
 	selection_color = "#bdb1bb"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	department_account_access = TRUE
 
 

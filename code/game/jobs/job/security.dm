@@ -11,7 +11,10 @@
 	difficulty = "Very Hard."
 	selection_color = "#97b0be"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	ideal_character_age = 40
 	minimum_character_age = 30
 	department_account_access = TRUE
@@ -72,7 +75,10 @@
 	alt_titles = list("Supply Specialist", "Quartermaster", "Warden")
 	selection_color = "#a7bbc6"
 	department_account_access = TRUE
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	minimum_character_age = 25
 	playtimerequired = 1200
 	health_modifier = 20
@@ -129,7 +135,10 @@
 	noob_name = "Criminal Profiler"
 	alt_titles = list("Forensics Specialist", "Crimescene Investigator", "Detective")
 	selection_color = "#a7bbc6"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	playtimerequired = 1200
 	health_modifier = 5
 
@@ -186,7 +195,10 @@
 	noob_name = "Watchmen Greenhorn"
 	alt_titles = list("Sentry", "Patrolman")
 	selection_color = "#a7bbc6"
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	health_modifier = 10
 
 	outfit_type = /decl/hierarchy/outfit/job/security/watchmen

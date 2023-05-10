@@ -11,7 +11,10 @@
 	difficulty = "Stressful."
 	selection_color = "#94a87f"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	outfit_type = /decl/hierarchy/outfit/job/medical/cso
 
 	access = list(
@@ -69,7 +72,10 @@
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	minimum_character_age = 25
 	alt_titles = list("Physician", "CAPSA Surgeon", "Nightingale")
 	noob_name = "Medical Intern"
@@ -121,7 +127,10 @@
 	noob_name = "First Aid Responder"
 	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 
 	health_modifier = 5
@@ -168,7 +177,10 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
