@@ -27,9 +27,6 @@ A small pool of thematically appropriate religious items that are generally chea
 	if (C.get_module(CRUCIFORM_INQUISITOR))
 		return TRUE
 
-	//Crusader is fine too
-	if (C.get_module(/datum/core_module/rituals/cruciform/crusader))
-		return TRUE
 
 	return FALSE
 
@@ -51,15 +48,6 @@ A small pool of thematically appropriate religious items that are generally chea
 	item_cost = 1
 	path = /obj/item/book/ritual/cruciform
 
-
-
-
-//A priest cruciform implant, allows field promotion of a disciple to a preacher.
-//This also requires an inquisitor ritual to complete the process, so it can't be done by anyone else
-/datum/uplink_item/item/neotheology/priest
-	name = "Oathpledge Ascension Kit"
-	item_cost = 3
-	path = /obj/item/coreimplant_upgrade/cruciform/priest
 
 
 //Ritual blade, for if you need a competent weapon, or for replacing one the preacher lost

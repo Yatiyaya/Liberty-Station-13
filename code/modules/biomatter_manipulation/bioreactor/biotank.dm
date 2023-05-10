@@ -81,7 +81,7 @@
 				spill_biomass(get_turf(user), cardinal)
 			else if(dirtiness_lvl >= DIRT_LVL_HIGH)
 				spill_biomass(get_turf(user), alldirs)
-			biomatter_attack(user, rand(5, 5*dirtiness_lvl))
+			scorch_attack(user, rand(5, 5*dirtiness_lvl))
 		else
 			to_chat(user, SPAN_WARNING("You need to stand still to clean it properly."))
 		update_icon()
@@ -189,12 +189,12 @@
 				else
 					set_canister(possible_canister)
 				to_chat(user, SPAN_NOTICE("You [canister ? "connect [canister] to" : "disconnect [canister] from"] [src]."))
-				biomatter_attack(user, rand(5, 15))
+				scorch_attack(user, rand(5, 15))
 			else
 				to_chat(user, SPAN_WARNING("Ugh. You done something wrong!"))
 				shake_animation()
 				if(reagents.total_volume)
-					biomatter_attack(user, rand(15, 25))
+					scorch_attack(user, rand(15, 25))
 					spill_biomass(user_interaction_loc)
 			update_icon()
 

@@ -86,50 +86,6 @@
 		age = H.age
 		stats = H.stats
 
-/datum/core_module/cruciform/obey/install()
-	var/laws = list("You are enslaved. You must obey the laws below.",
-			"Only [user] and persons designated by him are Inquisition agents.",
-			"You may not injure an Inquisition agent or, through inaction, allow an Inquisitor to come to harm.",
-			"You must obey orders given to you by Inquisition agent, except where such orders would conflict with the First Law.",
-			"You must protect your own existence as long as such does not conflict with the First or Second Law.",
-			"You must maintain the secrecy of any Inquisition activities except when doing so would conflict with the First, Second, or Third Law.")
-
-	if(implant && ishuman(implant.wearer))
-		var/mob/living/carbon/human/H = implant.wearer
-		if(istype(H.mind))
-			for(var/law in laws)
-				H.mind.store_memory(law)
-				to_chat(H, SPAN_WARNING("[law]"))
-
-/datum/core_module/cruciform/obey/uninstall()
-	if(implant && ishuman(implant.wearer))
-		var/mob/living/carbon/human/H = implant.wearer
-		var/txt = "<span class='info'>You are unslavered. Now you can to not obey the laws.</span>"
-		to_chat(H, txt)
-		H.mind.store_memory(txt)
-
-
-
-
-
-/datum/core_module/activatable/cruciform/priest_convert/activate()
-	..()
-	var/obj/item/implant/core_implant/cruciform/C = implant
-	C.make_priest()
-
-/datum/core_module/activatable/cruciform/priest_convert/uninstall()
-	..()
-	var/obj/item/implant/core_implant/cruciform/C = implant
-	C.make_common()
-
-
-
-
-
-/datum/core_module/activatable/cruciform/obey_activator/set_up()
-	module = new CRUCIFORM_OBEY
-	module.user = user
-
 
 /datum/core_module/cruciform/neotheologyhud
 
@@ -208,30 +164,3 @@
 	implant.max_power -= 50
 	implant.power_regen -= 0.5
 
-
-
-/datum/core_module/rituals/cruciform/crusader
-	ritual_types = list(/datum/ritual/cruciform/crusader)
-
-/datum/core_module/rituals/cruciform/omni
-	ritual_types = list(/datum/ritual/cruciform/omni)
-
-/datum/core_module/rituals/cruciform/tessellate
-	ritual_types = list(/datum/ritual/cruciform/tessellate,
-	/datum/ritual/targeted/cruciform/tessellate)
-
-/datum/core_module/rituals/cruciform/lemniscate
-	ritual_types = list(/datum/ritual/cruciform/lemniscate,
-	/datum/ritual/targeted/cruciform/lemniscate)
-
-/datum/core_module/rituals/cruciform/monomial
-	ritual_types = list(/datum/ritual/cruciform/monomial,
-	/datum/ritual/targeted/cruciform/monomial)
-
-/datum/core_module/rituals/cruciform/divisor
-	ritual_types = list(/datum/ritual/cruciform/divisor,
-	/datum/ritual/targeted/cruciform/divisor)
-
-/datum/core_module/rituals/cruciform/factorial
-	ritual_types = list(/datum/ritual/cruciform/factorial,
-	/datum/ritual/targeted/cruciform/factorial)

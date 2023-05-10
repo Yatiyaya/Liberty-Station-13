@@ -161,7 +161,7 @@
 		STOP_PROCESSING(SSobj, src)
 	restore_power(power_regen)
 
-/obj/item/implant/core_implant/proc/get_module(var/m_type)
+/obj/item/implant/core_implant/proc/get_module(var/m_type) //get specific module, if not present, FALSE, if present, return the module
 	if(!ispath(m_type))
 		return
 	for(var/datum/core_module/CM in modules)
@@ -169,7 +169,7 @@
 			return CM
 	process_modules()
 
-/obj/item/implant/core_implant/proc/add_module(var/datum/core_module/CM)
+/obj/item/implant/core_implant/proc/add_module(var/datum/core_module/CM) //formatted like add_module(new DEFINEGOESHERE)
 	if(!istype(src,CM.implant_type))
 		return FALSE
 
@@ -177,7 +177,7 @@
 		return FALSE
 
 	if(CM.unique)
-		for(var/datum/core_module/EM in modules)
+		for(var/datum/core_module/EM in modules) //cannot stack modules
 			if(EM.type == CM.type)
 				return FALSE
 
@@ -203,7 +203,7 @@
 		if(istype(CM,m_type))
 			remove_module(CM)
 
-/obj/item/implant/core_implant/proc/install_default_modules_by_job(datum/job/J)
+/obj/item/implant/core_implant/proc/install_default_modules_by_job(datum/job/J) //checks the job datum's core_upgrades list and adds those
 	for(var/module_type in J.core_upgrades)
 		add_module(new module_type)
 

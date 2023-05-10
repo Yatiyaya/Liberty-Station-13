@@ -247,17 +247,17 @@
 	var/glowing = FALSE
 	slot_flags = SLOT_BACK | SLOT_BELT
 	has_alt_mode = FALSE
-	var/effect_time = 5 MINUTES
+	var/effect_time = 5 MINUTES //used for the addtimer() proc
 	item_icons = list(
-		slot_back_str = 'icons/inventory/back/mob.dmi')
+		slot_back_str = 'icons/inventory/back/mob.dmi') //this is how to set the back sprite
 	item_state_slots = list(
-		slot_back_str = "conflagarationsword"
+		slot_back_str = "conflagrationsword"
 		)
 
 /obj/item/tool/sword/custodian/conflagration/attack_self(mob/user)
 	var/mob/living/carbon/human/theuser = user
 	var/obj/item/implant/core_implant/cruciform/CI = theuser.get_core_implant()
-	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform))
+	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform)) //Active hearthcore check
 		to_chat(user, SPAN_WARNING("You do not have an active Hearthcore with which to power this!"))
 		return
 	if(CI.power < 20)
@@ -270,10 +270,10 @@
 		ignite_sword(user)
 
 /obj/item/tool/sword/custodian/conflagration/apply_hit_effect(mob/living/target, mob/living/user, hit_zone)
-	..()
-	if (glowing)
+	..() //We first let the base apply_hit_effect() proc do its thing, attacking with the sword
+	if (glowing) //then we check if we burn the target
 		if (iscarbon(target))
-			biomatter_attack(target, 10)
+			scorch_attack(target, 10)
 
 /obj/item/tool/sword/custodian/conflagration/proc/ignite_sword(mob/user)
 	set_light(l_range = 4, l_power = 2, l_color = COLOR_BLUE)
@@ -281,10 +281,11 @@
 	glowing = TRUE
 	heat = 1873
 	update_icon()
-	user.update_icons()
+	user.update_inv_r_hand() // These two procs are needed to update the on-mob sprites, update_icons() is not it
+	user.update_inv_l_hand()
 	force = WEAPON_FORCE_LETHAL
 	armor_penetration = ARMOR_PEN_EXTREME
-	addtimer(CALLBACK(src, .proc/discard_effect, src), src.effect_time)
+	addtimer(CALLBACK(src, .proc/discard_effect, src), src.effect_time) //setn
 	return TRUE
 
 /obj/item/tool/sword/custodian/conflagration/proc/discard_effect(var/mob/user)
@@ -295,10 +296,11 @@
 	force = initial(force)
 	armor_penetration = initial(armor_penetration)
 	update_icon()
-	user.update_icons()
+	user.update_inv_r_hand() //Get rid of the radiant sprites
+	user.update_inv_l_hand()
 	visible_message("The sword's flames subside.","You hear a flame going out.")
 
-/obj/item/tool/sword/custodian/conflagration/update_icon()
+/obj/item/tool/sword/custodian/conflagration/update_icon() //Toggles the "turned on" icon and on-mob sprites based on the "glowing" var
 	if(glowing)
 		icon_state = initial(icon_state) + "_radiant"
 		item_state = initial(item_state) + "_radiant"
@@ -338,8 +340,7 @@
 		/obj/item/tool/sword/custodian/shortsword,
 		/obj/item/tool/sword/custodian/throwaxe,
 		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/tool/knife/neotritual,
-		/obj/item/book/ritual/cruciform
+		/obj/item/book/ritual/cruciform,
 		)
 
 /obj/item/shield/riot/custodian/New()

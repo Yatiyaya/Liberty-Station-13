@@ -4,7 +4,7 @@
 	implant_type = /obj/item/implant/core_implant/cruciform
 	fail_message = "The Hearthcore feels cold against your chest."
 	category = "Common"
-	ignore_stuttering = TRUE
+	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
 /datum/ritual/targeted/cruciform/base
 	name = "cruciform targeted"
@@ -43,21 +43,20 @@ datum/ritual/cruciform/base/thumbspire
 
 /obj/item/flame/custodian_spark/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
-	holder = lecturer
-	set_light(3)
-	START_PROCESSING(SSobj, src)
+	holder = lecturer //set the holder verb for Process()
+	set_light(3) //the spark glows
+	START_PROCESSING(SSobj, src) //start Process()ing
 
 /obj/item/flame/custodian_spark/Process()
 	if(isliving(loc))
-		var/mob/living/M = loc
+		var/mob/living/M = loc //standard lighter Process() for now
 		M.IgniteMob()
 	var/turf/location = get_turf(src)
 	burntime--
 	if(burntime < 1)
 		burn_out()
 		return
-	if(loc != holder) // We're no longer in the lecturer's hand
-		sleep(4)
+	if(loc != holder) // We're no longer in the lecturer's hand, delete self
 		visible_message("The [src.name] flickers away as the fire fades into nothingness")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
@@ -79,14 +78,14 @@ datum/ritual/cruciform/base/thumbspire
 	power = 10
 
 /datum/ritual/cruciform/base/entreaty/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
-	for(var/mob/living/carbon/human/target in disciples)
+	for(var/mob/living/carbon/human/target in disciples) //calls all hearthcore users
 		if(target == H)
 			continue
 
 		var/obj/item/implant/core_implant/cruciform/CI = target.get_core_implant()
-		var/area/t = get_area(H)
+		var/area/t = get_area(H) //get the area name
 
-		if((istype(CI) && CI.get_module(CRUCIFORM_COMMON)) || prob(50))
+		if((istype(CI) && CI.get_module(CRUCIFORM_COMMON)) || prob(50)) //if we found someone, 50/50 chance we print out a help message
 			to_chat(target, SPAN_DANGER("[H], faithful cruciform follower, cries for help at [t.name]!"))
 	return TRUE
 
@@ -94,7 +93,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Pyrelight"
 	phrase = "Oxidate Lecture: Pyrelight"
 	desc = "Lecture of wandering Custodians that creates a small immobile light for about twenty minutes. Has a two-minute cooldown."
-	power = 10 //Cost correlates to duration.
+	power = 10
 	cooldown_time = 2 MINUTES
 	cooldown_category = "pyrelight"
 	cooldown = TRUE
@@ -123,13 +122,13 @@ datum/ritual/cruciform/base/thumbspire
 		return FALSE
 
 	if(user == target)
-		fail("You feel stupid.",user,C,targets)
+		fail("You feel stupid.",user,C,targets) //dont message yourself
 		return FALSE
 
 	var/text = input(user, "What message will you send to the target? Only they will be able to hear it.", "Sending a message") as text|null
 	if (!text)
 		return FALSE
-	to_chat(target, "<span class='notice'><b><font size='2px'><font color='#ffaa00'>A nearly imperceptible pigeon of light hovers near your ears and resonates with [user.real_name]'s voice: \"[text]\"</font><b></span>")
+	to_chat(target, "<span class='notice'><b><font color='#ffaa00'>A nearly imperceptible pigeon of light hovers near your ears and resonates with [user.real_name]'s voice: \"[text]\"</font><b></span>")
 	log_and_message_admins("[user.real_name] sent a message to [target] with text \"[text]\"")
 	playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 	playsound(target, 'sound/machines/signal.ogg', 50, 1)
@@ -152,21 +151,18 @@ datum/ritual/cruciform/base/thumbspire
 	if(!lectured)
 		fail("No target.", H, C)
 		return FALSE
-	give_sanity_boost(lectured)
-	LEGACY_SEND_SIGNAL(H, COMSIG_RITUAL, src, lectured)
+	give_sanity_boost(lectured) //trigger boosting proc
+	LEGACY_SEND_SIGNAL(H, COMSIG_RITUAL, src, lectured) //not relevant to the lecture itself, just used for a personal objective if it exists
 	return TRUE
 
 /datum/ritual/cruciform/base/revelation/proc/give_sanity_boost(mob/living/carbon/human/lectured)
-	lectured.sanity.max_level += 20
-	addtimer(CALLBACK(src, .proc/take_sanity_boost, lectured), effect_time)
-	spawn(30)
-		to_chat(lectured, SPAN_NOTICE("Your mind feels fortified."))
+	lectured.sanity.max_level += 20 //increase max sanity level
+	addtimer(CALLBACK(src, .proc/take_sanity_boost, lectured), effect_time) //add timer for the removal proc
+	to_chat(lectured, SPAN_NOTICE("Your mind feels fortified."))
 
 /datum/ritual/cruciform/base/revelation/proc/take_sanity_boost(mob/living/carbon/human/lectured)
-	lectured.sanity.max_level -= 20
-	to_chat(lectured, SPAN_NOTICE("You feel your mental fortification crumbling."))
-
-//Give powah
+	lectured.sanity.max_level -= 20 //remove the boost
+	to_chat(lectured, SPAN_NOTICE("You feel your mental fortification crumbling.")) //always notify when buffs activate and de-activate
 
 /datum/ritual/cruciform/base/empower
 	name = "Empower"
@@ -178,24 +174,14 @@ datum/ritual/cruciform/base/thumbspire
 	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
 
 	if(!CI || !CI.active || !CI.wearer)
-		fail("Hearthcore not found.", user, C)
+		fail("Hearthcore not found.", user, C) //Hearthcore check
 		return FALSE
 
 	var/mob/living/carbon/human/H = CI.wearer
 
-	if(!istype(H))
-		fail("Target not found.",user,C,targets)
-		return FALSE
-
-	//Checking turfs allows this to be done in unusual circumstances, like if both are inside the same mecha
-	var/turf/T = get_turf(user)
-	if (!(T.Adjacent(get_turf(H))))
-		to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
-		return FALSE
-
 	user.visible_message("[user] places their hands upon [H]", "You lay your hands upon [H]")
 	if (do_after(user, 40, H, TRUE))
-		T = get_turf(user)
+		var/turf/T = get_turf(user)
 		if (!(T.Adjacent(get_turf(H))))
 			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
 			return FALSE
@@ -224,7 +210,7 @@ datum/ritual/cruciform/base/thumbspire
 		if(H.seed)  // if there is a plant in the hydroponics tray
 			plants_around.Add(H.seed)
 
-	if(plants_around.len > 0)
+	if(plants_around.len > 0) //if a plant was added to our list give boosts
 		to_chat(user, SPAN_NOTICE("You feel the air thrum with an inaudible vibration."))
 		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 		for(var/datum/seed/S in plants_around)
@@ -236,8 +222,8 @@ datum/ritual/cruciform/base/thumbspire
 		return FALSE
 
 /datum/ritual/cruciform/base/accelerated_growth/proc/give_boost(datum/seed/S)
-	S.set_trait(TRAIT_BOOSTED_GROWTH, boost_value)
-	addtimer(CALLBACK(src, .proc/take_boost, S), effect_time)
+	S.set_trait(TRAIT_BOOSTED_GROWTH, boost_value) //set the boost
+	addtimer(CALLBACK(src, .proc/take_boost, S), effect_time) //add the timer to take away the boost
 
 /datum/ritual/cruciform/base/accelerated_growth/proc/take_boost(datum/seed/S, stat, amount)
 	// take_boost is automatically triggered by a callback function when the boost ends but the seed
@@ -253,9 +239,10 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/mercy/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
-	if(!T)
+	if(!T) //anyone there?
 		fail("No target in front of you.", user, C)
 		return FALSE
+
 	to_chat(T, SPAN_NOTICE("You feel slightly better as your pain eases."))
 	to_chat(user, SPAN_NOTICE("You ease the pain of [T.name]."))
 
@@ -271,9 +258,10 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/absolution/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	var/mob/living/carbon/human/T = get_front_human_in_range(user, 1)
-	if(!T)
+	if(!T) //anyone there?
 		fail("No target in front of you.", user, C)
 		return FALSE
+
 	to_chat(T, SPAN_NOTICE("You feel a soothing sensation in your veins."))
 	to_chat(user, SPAN_NOTICE("You stabilize [T.name]'s health."))
 
@@ -295,7 +283,8 @@ datum/ritual/cruciform/base/thumbspire
 	if(!T)
 		fail("No target in front of you.", user, C)
 		return FALSE
-	if(T.metabolism_effects.addiction_list.len)
+
+	if(T.metabolism_effects.addiction_list.len) //does addictions_list have anything in it?
 		for(var/addiction in T.metabolism_effects.addiction_list)
 			var/datum/reagent/R = addiction
 			if(!R)
@@ -307,12 +296,15 @@ datum/ritual/cruciform/base/thumbspire
 			// it's a bad moment to go through but after 2 or 3 littany the addiction will be gone
 			// psychiatrist RP opportunity -> think about the sins that led you to this addiction
 
-	to_chat(T, SPAN_NOTICE("You feel weird as you progress through your addictions."))
-	to_chat(user, SPAN_NOTICE("You help [T.name] get rid of their addictions."))
+		to_chat(T, SPAN_NOTICE("You feel weird as you progress through your addictions."))
+		to_chat(user, SPAN_NOTICE("You help [T.name] get rid of their addictions."))
 
-	T.reagents.add_reagent("laudanum", 10)
+		T.reagents.add_reagent("laudanum", 10)
 
-	return TRUE
+		return TRUE
+
+	fail("No addictions found.", user, C)
+	return FALSE
 
 /datum/ritual/cruciform/base/records
 	name = "Philosophical Record"
@@ -339,13 +331,14 @@ datum/ritual/cruciform/base/thumbspire
 	phrase = "Oxidate Lecture: Anti-Scrying"
 	desc = "Toggle the Radiance behind your eyes to permit or deny Scrying attempts."
 
+// the ANTI_SCRYING module is checked in the Scrying lecture to let attempts go through or not, it functions much like a flag in that sense, this just toggles that module
 /datum/ritual/cruciform/base/anti_scrying/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	if(C.get_module(CRUCIFORM_ANTI_SCRYING))
+	if(C.get_module(CRUCIFORM_ANTI_SCRYING)) //if you already have the ANTI_SCRYING module, remove it
 		C.remove_modules(CRUCIFORM_ANTI_SCRYING)
 		to_chat(user, SPAN_NOTICE("You restore the Radiance behind your eyes, allowing Scrying attempts."))
 		return TRUE
 	else
-		C.add_module(new CRUCIFORM_ANTI_SCRYING)
+		C.add_module(new CRUCIFORM_ANTI_SCRYING) //if there's no ANTI_SCRYING module, add it
 		to_chat(user, SPAN_NOTICE("You remove the Radiance behind your eyes, denying Scrying attempts."))
 		return TRUE
 

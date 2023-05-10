@@ -6,7 +6,7 @@
 	autoclose = 1
 	var/next_beep_at = 0
 	var/locked = 0
-	var/minimal_holiness = CLEARANCE_COMMON // Compared with security_clearance on cruciform
+	var/minimal_holiness = CLEARANCE_COMMON // Compared with security_clearance on hearthcore
 	var/open_sound_powered = 'sound/machines/airlock_open.ogg'
 	var/close_sound = 'sound/machines/airlock_close.ogg'
 	var/open_sound_unpowered = 'sound/machines/airlock_creaking.ogg'
@@ -18,7 +18,7 @@
 	icon = 'icons/obj/doors/Door_holy_preacher.dmi'
 	minimal_holiness = CLEARANCE_CLERGY
 
-/obj/item/forgesigil
+/obj/item/forgesigil //This is an item that only serves as an all-access key for doors and a vendor or two for anyone
 	name = "custodian forge sigil"
 	desc = "A radiance-infused emblem forged by the Custodians. It allows access to Hearthcore-locked machinery."
 	icon = 'icons/obj/items.dmi'
@@ -295,7 +295,7 @@
 		else
 			playsound(loc, open_sound_unpowered, 70, 1, -1)
 	else
-		playsound(loc, open_sound_powered, 70, 1, -2)
+		playsound(loc, close_sound, 70, 1, -2)
 
 	tryingToLock = FALSE
 

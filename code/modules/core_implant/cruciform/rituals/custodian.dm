@@ -1,10 +1,10 @@
-/datum/ritual/cruciform/custodian
+/datum/ritual/cruciform/custodian //these are only available to the module CRUCIFORM_CUSTODIAN so all Custodian jobs have them
 	name = "cruciform"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	fail_message = "The Hearthcore feels cold against your chest."
 	category = "Custodian"
-	ignore_stuttering = TRUE
+	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
 /datum/ritual/cruciform/custodian/offering
 	name = "Offerings"

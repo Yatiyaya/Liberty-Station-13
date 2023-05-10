@@ -873,3 +873,16 @@
 	new /obj/item/clothing/accessory/medal/silver(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
+
+/obj/item/storage/box/oathpledge_set
+	name = "oathpledge armor box"
+	desc = "A box packaging a newly-made Custodian Oathpledge armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/oathpledge_set/New()
+	. = ..()
+
+/obj/item/storage/box/oathpledge_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/oathpledge
+	new /obj/item/clothing/head/helmet/custodian/oathpledge
+

@@ -44,7 +44,6 @@
 	if (is_preacher(owner.current))
 		was_priest = TRUE
 
-	C.make_inquisitor()
 	return TRUE
 
 

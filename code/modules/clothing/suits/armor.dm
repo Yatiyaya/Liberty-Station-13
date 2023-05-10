@@ -218,7 +218,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
-	var/modifiable = TRUE
+	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
 	if(modifiable )
@@ -244,7 +244,7 @@
 
 	return ..()
 
-/obj/item/clothing/suit/armor/custodian/firesuit
+/obj/item/clothing/suit/armor/custodian/firesuit //keeps the temperature protection, has no armor and is slow
 	name = "flameshield suit"
 	desc = "A heavy suit used by the Custodians to operate the Bonfire and to protect them from high heat sources. \
 	Flameshield suits are composed of specialized threads and porous foam that offer no protection whatsoever to physical trauma, energy weaponry, and other forms of damage."

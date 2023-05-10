@@ -236,7 +236,7 @@
 		to_chat(user, SPAN_NOTICE("You begin cleaning [src] with your [I]..."))
 		if(do_after(user, CLEANING_TIME * contamination_level, src))
 			to_chat(user, SPAN_NOTICE("You clean \the [src]."))
-			biomatter_attack(user, 5*contamination_level)
+			scorch_attack(user, 5*contamination_level)
 			apply_dirt(-contamination_level)
 			if(contamination_level >= 4)
 				spill_biomass(user.loc, cardinal)

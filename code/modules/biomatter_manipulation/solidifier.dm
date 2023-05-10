@@ -80,7 +80,7 @@
 				container.pixel_x -= CONTAINER_PIXEL_OFFSET
 		playsound(src, 'sound/machines/airlock_ext_close.ogg', 60, 1)
 		to_chat(user, SPAN_NOTICE("You attached [tank] to [src]."))
-		biomatter_attack(user)
+		scorch_attack(user)
 	else
 		if(container == tank)
 			container.pixel_y = initial(container.pixel_y)
@@ -89,7 +89,7 @@
 			playsound(src, 'sound/machines/airlock_ext_open.ogg', 60, 1)
 			to_chat(user, SPAN_NOTICE("You detached [tank] from [src]."))
 			container = null
-			biomatter_attack(user)
+			scorch_attack(user)
 		else
 			to_chat(user, SPAN_WARNING("There is already a connected container."))
 	update_icon()

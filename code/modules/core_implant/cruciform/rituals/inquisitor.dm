@@ -406,7 +406,7 @@
 /datum/ritual/targeted/cruciform/inquisitor/spawn_item/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
 	new /obj/item/tool/sword/crusader(usr.loc)
 	new /obj/item/clothing/accessory/holster/saber/greatsword(usr.loc)
-	new /obj/item/shield/riot/crusader(usr.loc)
+	new /obj/item/shield/riot(usr.loc)
 	new /obj/item/storage/belt/security/custodian(usr.loc)
 	new /obj/item/clothing/suit/space/void/crusader(usr.loc)
 	if(user.species?.reagent_tag != IS_SYNTHETIC)

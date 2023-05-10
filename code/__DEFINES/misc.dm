@@ -202,7 +202,7 @@
 //Core implants
 #define CORE_ACTIVATED /datum/core_module/activatable
 
-//Cruciform
+//Hearthcore modules, think of them like flags that can hold ritual types
 #define CRUCIFORM_COMMON /datum/core_module/rituals/cruciform/base
 #define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
 #define CRUCIFORM_OATHBOUND /datum/core_module/rituals/cruciform/oathbound
@@ -214,12 +214,7 @@
 
 #define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
 #define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
-#define CRUCIFORM_REDLIGHT /datum/core_module/cruciform/red_light
 #define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
-
-#define CRUCIFORM_OBEY /datum/core_module/cruciform/obey
-#define CRUCIFORM_PRIEST_CONVERT /datum/core_module/activatable/cruciform/priest_convert
-#define CRUCIFORM_OBEY_ACTIVATOR /datum/core_module/activatable/cruciform/obey_activator
 
 #define CUPGRADE_NATURES_BLESSING /obj/item/cruciform_upgrade/natures_blessing
 #define CUPGRADE_FAITHS_SHIELD /obj/item/cruciform_upgrade/faiths_shield
@@ -351,13 +346,6 @@
 
 //SoJ additions below
 #define MAP_FACTION "CEV Eris"
-//cruciform paths
-#define CRUCIFORM_TESS /datum/core_module/rituals/cruciform/tessellate
-#define CRUCIFORM_LEMN /datum/core_module/rituals/cruciform/lemniscate
-#define CRUCIFORM_MONO /datum/core_module/rituals/cruciform/monomial
-#define CRUCIFORM_DIVI /datum/core_module/rituals/cruciform/divisor
-#define CRUCIFORM_FACT /datum/core_module/rituals/cruciform/factorial
-#define CRUCIFORM_OMNI /datum/core_module/rituals/cruciform/omni
 
 // Bureaucracy Bitfields
 #define STAMP_GENERIC	0x1		//Most stamps should apply this.
