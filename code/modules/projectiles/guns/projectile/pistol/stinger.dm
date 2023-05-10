@@ -45,6 +45,9 @@
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
 
+	if (ammo_magazine)
+		iconstring += "_mag" // Returning this since I've done the sprites correctly
+
 	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
 		iconstring += "_slide"
 
