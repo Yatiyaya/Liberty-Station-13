@@ -119,3 +119,7 @@
 /datum/gear/utility/wheelchair
 	display_name = "wheelchair"
 	path = /obj/item/wheelchair
+
+/datum/gear/utility/wallet
+	display_name = "wallet"
+	path = /obj/item/storage/wallet
