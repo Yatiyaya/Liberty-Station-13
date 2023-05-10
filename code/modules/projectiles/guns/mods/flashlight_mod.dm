@@ -49,7 +49,7 @@
 		cell = new suitable_cell(src)
 */
 
-/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_on(var/mob/living/user)
+/obj/item/gun_upgrade/tacticool_flashlight/proc/turn_on(mob/user)
 	if(!cell || !cell.check_charge(tick_cost))
 		playsound(loc, 'sound/machines/button.ogg', 50, 1)
 		to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
