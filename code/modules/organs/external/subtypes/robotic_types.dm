@@ -51,7 +51,7 @@
 	model = "serbian"
 	price_tag = 400
 
-//Generic #3 - Full Body
+//Generic #3 - Limbs
 /obj/item/organ/external/robotic/frozen_star
 	name = "\"HexaOptimum Augments\"" //We got no frozen star boyo
 	desc = "A tactical \"Citadel\" blue and gray prosthesis for dangerous environment."
@@ -70,14 +70,34 @@
 /obj/item/organ/external/robotic/frozen_star/r_leg
 	default_description = /datum/organ_description/leg/right
 
-/obj/item/organ/external/robotic/frozen_star/groin
+//Generic #4 - Full Body
+/obj/item/organ/external/robotic/synthskin
+	name = "\"Martin-Huell Synthskin\""
+	desc = "A high grade Martin-Huell prosthetic feeling almost like the real thing."
+	force_icon = 'icons/mob/human_races/cyberlimbs/fbp.dmi'
+	model = "martin_huell"
+
+/obj/item/organ/external/robotic/synthskin/l_arm
+	default_description = /datum/organ_description/arm/left
+
+/obj/item/organ/external/robotic/synthskin/r_arm
+	default_description = /datum/organ_description/arm/right
+
+/obj/item/organ/external/robotic/synthskin/l_leg
+	default_description = /datum/organ_description/leg/left
+
+/obj/item/organ/external/robotic/synthskin/r_leg
+	default_description = /datum/organ_description/leg/right
+
+/obj/item/organ/external/robotic/synthskin/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/frozen_star/chest
+/obj/item/organ/external/robotic/synthskin/chest
 	default_description = /datum/organ_description/chest
 
-/obj/item/organ/external/robotic/frozen_star/head
-	default_description = /datum/organ_description/chest
+/obj/item/organ/external/robotic/synthskin/head
+	default_description = /datum/organ_description/head
+
 
 //Astrakhan - Full Body
 /obj/item/organ/external/robotic/excelsior
