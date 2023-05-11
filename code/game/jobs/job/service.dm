@@ -51,7 +51,7 @@
 	difficulty = "Easy."
 	alt_titles = list("Sales Technician", "Trade Router", "Smuggler")
 	selection_color = "#dddddd"
-	access = list(access_cargo, access_bar)
+	access = list(access_cargo, access_janitor)
 
 	initial_balance = INIT_BALANCE_MENIAL //Got department account access now
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
