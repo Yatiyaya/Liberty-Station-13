@@ -63,7 +63,7 @@
 	icon_state = "popcorn"
 
 /obj/item/trash/sosjerky
-	name = "empt jerky packet"
+	name = "empty jerky packet"
 	desc = "An empty packet of jerky. Trash."
 	icon_state = "sosjerky"
 
@@ -117,7 +117,7 @@
 	icon_state = "candle4"
 
 /obj/item/trash/liquidfood
-	name = "empty \"LiquidFood\" ration"
+	name = "empty liquid food ration"
 	desc = "An empty ration packet. Trash."
 	icon_state = "liquidfood" //Sprite by Michiyamenotehifunana
 
