@@ -321,14 +321,6 @@ Proc for attack log creation, because really why not
 		return TRUE
 	return FALSE
 
-/proc/is_inquisidor(mob/living/L)
-	if(!isliving(L))
-		return FALSE
-	var/obj/item/implant/core_implant/cruciform/C = L.get_core_implant(/obj/item/implant/core_implant/cruciform)
-	if(C && C.get_module(CRUCIFORM_INQUISITOR))
-		return TRUE
-	return FALSE
-
 /proc/is_carrion(mob/living/carbon/human/H)
 	if(istype(H) && (H.organ_list_by_process(BP_SPCORE)).len)
 		return TRUE

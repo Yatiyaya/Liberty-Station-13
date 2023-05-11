@@ -37,11 +37,13 @@
 	name = "Cardboard"
 	build_path = /obj/item/stack/material/cardboard/random // I guess it depends on the protein content.
 */
+
+/* Getting replaced with something else
 /datum/design/bioprinter/leather/holster/saber/greatsword/churchprint
 	name = "Custodian Scabbard"
 	build_path = /obj/item/clothing/accessory/holster/saber/greatsword/churchprint
 	materials = list(MATERIAL_BIO_SILK = 0.1, MATERIAL_CARBON_FIBER = 0.2)
-
+*/
 /datum/design/bioprinter/wallet
 	name = "Wallet"
 	build_path = /obj/item/storage/wallet

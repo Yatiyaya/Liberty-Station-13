@@ -1,58 +1,5 @@
 /datum/core_module/cruciform/implant_type = /obj/item/implant/core_implant/cruciform
 
-
-/datum/core_module/cruciform/red_light/install()
-	implant.icon_state = "hearthcore_purple"
-	implant.max_power += 50
-	implant.power_regen += 0.3
-
-	if(ishuman(implant.wearer))
-		var/mob/living/carbon/human/H = implant.wearer
-		H.update_implants()
-
-/datum/core_module/cruciform/red_light/uninstall()
-	implant.icon_state = "hearthcore_green"
-	implant.max_power -= 50
-	implant.power_regen -= 0.3
-
-	if(ishuman(implant.wearer))
-		var/mob/living/carbon/human/H = implant.wearer
-		H.update_implants()
-
-
-
-
-/*
-	contractor uplink hidden inside cruciform. Used for inquisitors and maybe other NT antags
-*/
-/*
-/datum/core_module/cruciform/uplink
-	var/telecrystals = 15
-	var/obj/item/device/uplink/hidden/uplink
-
-/datum/core_module/cruciform/uplink/install()
-
-
-	//Hook up the uplink with the mob wearing this implant
-	var/mob/living/M = implant.get_holding_mob()
-	if (M && M.mind)
-		uplink = new(implant, M.mind, telecrystals)
-		implant.hidden_uplink = uplink
-		uplink.uplink_owner = M.mind
-
-		//Update the nanodata after installation, to activate the neotheology category
-		uplink.update_nano_data()
-
-
-
-/datum/core_module/cruciform/uplink/uninstall()
-	telecrystals = uplink.uses
-	implant.hidden_uplink = null
-	QDEL_NULL(uplink)
-*/
-
-
-
 /datum/core_module/cruciform/cloning
 	var/datum/dna/dna = null
 	var/age = 30
@@ -141,13 +88,8 @@
 
 /datum/core_module/rituals/cruciform/damaged
 
-/datum/core_module/rituals/cruciform/priest
-	access = list(access_nt_disciple, access_nt_custodian, access_nt_agrolyte)
-	ritual_types = list(/datum/ritual/cruciform/priest,
-	/datum/ritual/targeted/cruciform/priest)
 
-
-
+/* keeping this around as reference for future modules that work to upgrade the hearthcore's power stats
 /datum/core_module/rituals/cruciform/inquisitor
 	access = list(access_nt_inquisitor)
 	ritual_types = list(/datum/ritual/cruciform/inquisitor,
@@ -163,4 +105,4 @@
 	..()
 	implant.max_power -= 50
 	implant.power_regen -= 0.5
-
+*/

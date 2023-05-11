@@ -114,15 +114,15 @@
 /datum/ritual/cruciform/custodian/offering/holy_guidance
 	name = "Sparking Guidance"
 	phrase = "Oxidate Lecture: Sparking Guidance"
-	desc = "Make an appeal to the Will of the Protector by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance regeneration among users. \
-	Your offering also increases the protectors armanents reserves."
+	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance regeneration among users. \
+	Your offering also increases the EOTP's armanents reserves."
 	req_offerings = list(/obj/item/oddity = 1, /obj/item/stack/material/biopolymer_silk = 40)
 	miracles = list(ENERGY_REWARD)
 
 /datum/ritual/cruciform/custodian/offering/alert
 	name = "Discern Malcontents"
 	phrase = "Oxidate Lecture: Discern Malcontents"
-	desc = "Make an appeal to the Will of the Protector by offering one hundred and twenty bio-silk and five carbon fiber to guide its power towards potentially discovering evil creatures. \
-	Your offering also increases the protectors armanents reserves."
+	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering one hundred and twenty bio-silk and five carbon fiber to guide its power towards potentially discovering evil creatures. \
+	Your offering also increases the EOTP's armanents reserves."
 	req_offerings = list(/obj/item/stack/material/biopolymer_silk = 120, /obj/item/stack/material/carbon_fiber = 20)
 	miracles = list(ALERT)

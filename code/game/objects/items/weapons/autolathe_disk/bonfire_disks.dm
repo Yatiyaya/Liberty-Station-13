@@ -43,7 +43,7 @@
 		/datum/design/bioprinter/nt_clothes/huscarl,
 //		/datum/design/bioprinter/nt_clothes/knight_rig, Pending Custodian IRR sprites later
 		//holsters
-		/datum/design/bioprinter/leather/holster/saber/greatsword/churchprint,
+//		/datum/design/bioprinter/leather/holster/saber/greatsword/churchprint, getting replaced
 		/datum/design/bioprinter/leather/holster,
 		/datum/design/bioprinter/leather/holster/armpit,
 		/datum/design/bioprinter/leather/holster/waist,

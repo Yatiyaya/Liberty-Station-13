@@ -1,10 +1,9 @@
 // The Knight Golem is between the Pawn and the Rook in term of durability, damage and speed.
 /mob/living/carbon/superior_animal/robot/church/knight
-	name = "Knight Golem"
-	desc = "The Knight, a golem made by the Custodians and fashioned after the time honored game of chess. Reliable, strong, and quite sturdy. \
-	The most prevalent out of the Custodian golems."
+	name = "Vassal Automaton"
+	desc = "The Vassal, an Automaton made by the Custodians and fashioned after a solemn warrior. Reliable, strong, and quite sturdy."
 	faction = "neutral"
-	icon_state = "knight_golem"
+	icon_state = "vassal_automaton"
 	attacktext = "strikes"
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"

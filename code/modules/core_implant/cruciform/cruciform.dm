@@ -167,5 +167,4 @@ var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform/proc/make_common()
 	remove_modules(CRUCIFORM_OATHPLEDGE)
-	remove_modules(CRUCIFORM_INQUISITOR)
 	security_clearance = CLEARANCE_COMMON

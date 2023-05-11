@@ -21,13 +21,6 @@ A small pool of thematically appropriate religious items that are generally chea
 	if (!C)
 		return FALSE
 
-	//Now lets check that cruciform for modules that indicate rank
-
-	//Inquisitor is okay
-	if (C.get_module(CRUCIFORM_INQUISITOR))
-		return TRUE
-
-
 	return FALSE
 
 

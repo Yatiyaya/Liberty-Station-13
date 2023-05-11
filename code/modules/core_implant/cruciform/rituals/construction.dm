@@ -477,7 +477,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 5 SECONDS
 
 /datum/custodian_blueprint/medium/knight
-	name = "Knight Golem"
+	name = "Vassal Golem"
 	build_path = /mob/living/carbon/superior_animal/robot/church/knight
 	materials = list(
 		/obj/item/stack/material/steel = 15,
@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 15 SECONDS
 
 /datum/custodian_blueprint/strong/rook
-	name = "Rook Golem"
+	name = "Suzerain Golem"
 	build_path = /mob/living/carbon/superior_animal/robot/church/rook
 	materials = list(
 		/obj/item/stack/material/steel = 15,

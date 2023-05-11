@@ -30,3 +30,17 @@
 	name = "oathpledge battleneuron"
 	desc = "A unique component given to Oathpledges in order to forge their armor."
 	icon_state = "oathpledge_battleneuron"
+
+/obj/item/mold_kit
+	name = "moldkit base item"
+	desc = "Not to be seen in-game."
+	icon = 'icons/obj/crafts.dmi'
+	icon_state = null//later
+	throw_range = 3
+
+
+/obj/item/mold_kit/blacksmithing
+
+/obj/item/mold_kit/masonry
+
+/obj/item/mold_kit/tailoring

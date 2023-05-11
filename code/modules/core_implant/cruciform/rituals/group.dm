@@ -8,7 +8,7 @@
 /datum/ritual/group/cruciform/pre_check(mob/living/carbon/human/user, obj/item/implant/core_implant/C, targets)
 	if(!..())
 		return FALSE
-	if(high_ritual && !C.get_module(CRUCIFORM_OATHPLEDGE) && !is_inquisidor(user))
+	if(high_ritual && !C.get_module(CRUCIFORM_OATHPLEDGE))
 		return FALSE
 	return TRUE
 

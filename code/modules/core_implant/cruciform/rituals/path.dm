@@ -691,6 +691,36 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 	return TRUE
 
+/* hash out specific details on how upgrading works  and who does it later
+/datum/ritual/cruciform/forgemaster/unupgrade
+	name = "Nerve Purging"
+	phrase = "Oxidate Lecture: Nerve Purging"
+	desc = "This lecture will remove any upgrade from the target's cruciform implant. The upgrade is lost and cannot be recovered."
+	power = 80
+
+/datum/ritual/cruciform/forgemaster/unupgrade/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	var/obj/item/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/cruciform)
+
+	if(!CI)
+		fail("There is no cruciform on this one.", user, C)
+		return FALSE
+
+	if(!CI.wearer)
+		fail("Cruciform is not installed.", user, C)
+		return FALSE
+
+	if(!istype(CI.upgrades) || length(CI.upgrades) <= 0)
+		fail("There is no upgrade on this one.", user, C)
+		return FALSE
+
+	for(var/obj/item/coreimplant_upgrade/CU in CI.upgrades)
+		CU.remove()
+		log_and_message_admins("removed upgrade from [C] cruciform with nerve purging lecture")
+		user.sanity.changeLevel(-50)
+
+	return TRUE
+*/
+
 /datum/ritual/cruciform/forgemaster/greater_empower
 	name = "Greater Empower"
 	phrase = "Oxidate Lecture: Greater Empower"

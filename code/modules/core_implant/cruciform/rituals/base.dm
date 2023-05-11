@@ -92,7 +92,7 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/pyrelight
 	name = "Pyrelight"
 	phrase = "Oxidate Lecture: Pyrelight"
-	desc = "Lecture of wandering Custodians that creates a small immobile light for about twenty minutes. Has a two-minute cooldown."
+	desc = "Lecture of wandering Custodians that creates a small immobile light for twenty minutes. Has a two-minute cooldown."
 	power = 10
 	cooldown_time = 2 MINUTES
 	cooldown_category = "pyrelight"

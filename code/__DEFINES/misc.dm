@@ -212,7 +212,6 @@
 #define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
 #define CRUCIFORM_DAMAGED /datum/core_module/rituals/cruciform/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
 
-#define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
 #define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
 #define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
 
