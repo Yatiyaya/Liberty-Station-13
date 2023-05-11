@@ -135,7 +135,7 @@
 	description = "The Enkindled are the blood transmuters specialized in the proto-science of traditions of biology - with the revolutionary custodian spin.<br>\
     The Enkindled are not proficient in surgery and lack the tools for it, but they are able to produce many different elixirs from the corpses of fallen creatures with varying effects - from healing tinctures, throwable flasks, poison needles, combat enhancers and status potions.<br>\
     Be aware, potions can be too strong to Oathbounds about to head into battle, in fact, many potions also possess negative qualities that the Oathbounds must be aware of before combat.<br>\
-	Hearthcore users cannot be clonned, so it falls to the Enkindled to bring them back to life with their Hearthcore, reborn with the neural nature of the radiance, bringing their brain back to life and allowing further organ revival to take place.<br>\
+	Hearthcore users cannot be cloned, so it falls to the Enkindled to bring them back to life with their Hearthcore, reborn with the neural nature of the radiance, bringing their brain back to life and allowing further organ revival to take place.<br>\
     Enkindled are known for being somewhat mentally derailed  - in a good and bad way. They are more than capable of recovering the sanity of others as much as they heal, with the last possibly causing sanity damage."
 
 	duties = "Provide medical support to other Oathbounds in battle and in rest - but do not get in the way of CAPSA. <br>\
@@ -186,8 +186,7 @@
 
 	duties = "Cleanse the insectoid plague from the halls and maintenance tunnels, but take care not to harm the Cht'mant next door.<br>\
 	Ensure that there's no religious entity putting Oathbounds's free will at risk, spread philosophical ideas around the colony.<br>\
-	Help other custodian roles to the best of your abilities as much as they help you, ask the Enkindled for their strongest potions, work the Bonfire and produce many textile and armor products to help the economy.<br>\
-	Do not sell Custodian weapons that can ignite people in blue flame to the non-Oathbound. (In red fire it is okay!)"
+	Help other custodian roles to the best of your abilities as much as they help you, ask the Enkindled for their strongest potions, work the Bonfire and produce many textile and armor products to help the economy."
 
 	setup_restricted = TRUE
 
