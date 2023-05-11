@@ -278,6 +278,11 @@
 "dO" = (
 /turf/simulated/wall/cult,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"dQ" = (
+/obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/asteroid/dirt/dust,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "dR" = (
 /obj/structure/table/bench/steel,
 /obj/effect/decal/cleanable/dirt,
@@ -2907,6 +2912,10 @@
 	},
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"GL" = (
+/obj/structure/invislight/outside,
+/turf/simulated/floor/asteroid/dirt/dust,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "GN" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3226,6 +3235,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"JY" = (
+/obj/effect/decal/cleanable/dirt/snow,
+/obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/asteroid/dirt/dust,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Kd" = (
 /obj/structure/boulder,
 /turf/simulated/floor/rock/grey,
@@ -39289,13 +39304,13 @@ bK
 jP
 bO
 Hx
-SN
+Sx
 Yz
 Yz
 Yz
 Yz
 Yz
-Yz
+vf
 Hx
 Hx
 zW
@@ -40108,7 +40123,7 @@ Yz
 SN
 Yz
 Yz
-Yz
+vf
 Hx
 FG
 zW
@@ -40707,7 +40722,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 CU
 Yz
 Yz
@@ -40916,7 +40931,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 Hx
 xo
 xo
@@ -41307,7 +41322,7 @@ zW
 zW
 MF
 Hx
-Co
+Qk
 Yz
 Yz
 Yz
@@ -41923,7 +41938,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 Hx
 zW
 MF
@@ -42523,7 +42538,7 @@ FG
 FG
 Hx
 Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -63526,7 +63541,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -63926,13 +63941,13 @@ Yz
 uW
 Yz
 PO
-Yz
+vf
 xZ
 vd
 fQ
 fQ
 xZ
-Yz
+vf
 Ud
 Yz
 mp
@@ -64122,11 +64137,11 @@ Yz
 Yz
 PO
 Yz
+vf
 Yz
 Yz
 Yz
-Yz
-TP
+iD
 Yz
 TP
 xZ
@@ -64538,7 +64553,7 @@ tI
 tI
 tI
 xZ
-Yz
+vf
 Yz
 Co
 Yz
@@ -64727,7 +64742,7 @@ CT
 Yz
 Yz
 Yz
-Yz
+vf
 xZ
 tI
 tI
@@ -65133,7 +65148,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 Yz
 xZ
 xZ
@@ -65339,14 +65354,14 @@ Yz
 Yz
 Yz
 Yz
-hk
+dQ
 TP
 Jm
 VU
 Vt
 VU
 Jm
-Yz
+vf
 Yz
 Yz
 Yz
@@ -65634,9 +65649,9 @@ Nm
 jg
 jg
 oT
+vf
 Yz
-Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -66042,7 +66057,7 @@ jz
 jz
 kc
 ef
-Yz
+vf
 Yz
 Yz
 Yz
@@ -66154,7 +66169,7 @@ Jm
 Jm
 Jm
 Jm
-Yz
+vf
 eW
 Yz
 Yz
@@ -66351,10 +66366,10 @@ Yz
 Yz
 hk
 Yz
-Co
+Qk
 Yz
 Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -66648,7 +66663,7 @@ jz
 jz
 jz
 ef
-Yz
+vf
 Yz
 Yz
 Co
@@ -66747,7 +66762,7 @@ jg
 jg
 xZ
 hk
-Yz
+vf
 Co
 Yz
 hk
@@ -67148,7 +67163,7 @@ hM
 oT
 jg
 Yz
-Yz
+vf
 xZ
 xZ
 xZ
@@ -67158,10 +67173,10 @@ hk
 Yz
 Yz
 TP
-hk
+dQ
 Yz
 Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -67456,7 +67471,7 @@ jz
 jz
 jz
 sU
-qK
+GL
 qK
 hk
 Yz
@@ -67552,13 +67567,13 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 xZ
 tI
 tI
 sV
 hk
-Mq
+JY
 Yz
 xZ
 tI
@@ -67971,7 +67986,7 @@ hk
 Yz
 gv
 Yz
-Yz
+vf
 PO
 Yz
 Yz
@@ -68059,9 +68074,9 @@ jg
 jg
 jg
 Yz
+vf
 Yz
-Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -68160,12 +68175,12 @@ Yz
 Yz
 Yz
 Yz
+vf
+vf
 Yz
 Yz
 Yz
-Yz
-Yz
-Yz
+vf
 xZ
 PJ
 xZ
@@ -68370,7 +68385,7 @@ TP
 Yz
 Yz
 Yz
-Yz
+vf
 Yz
 Yz
 TP

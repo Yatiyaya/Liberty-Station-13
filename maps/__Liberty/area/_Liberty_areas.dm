@@ -218,10 +218,12 @@
 	name = "Lost Farm"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen9.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambigen11.ogg', 'sound/ambience/ambigen12.ogg')
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/abandoned_outpost
 	name = "Lost Outpost"
 	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/zoo
 	name = "Abandoned Research Lab"
