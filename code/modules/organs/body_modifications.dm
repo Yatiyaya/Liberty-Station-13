@@ -145,30 +145,36 @@ var/global/list/modifications_types = list(
 /datum/body_modification/limb/prosthesis/get_mob_icon(organ, body_build, color, gender, species)
 	return new/icon(icon, "[organ][gender == FEMALE ? "_f" : "_m"][body_build]")
 
-//Generico
-
-/datum/body_modification/limb/prosthesis/junktech
-	id = "prosthesis_ghetto"
-	replace_limb = /obj/item/organ/external/robotic/junktech
-	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-
-/datum/body_modification/limb/prosthesis/asters
-	id = "prosthesis_asters"
-	replace_limb = /obj/item/organ/external/robotic/asters
-	icon = 'icons/mob/human_races/cyberlimbs/asters.dmi'
-	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-
+//Generic - Only limbs
 /datum/body_modification/limb/prosthesis/frozen_star
 	id = "prosthesis_frozen_star"
 	replace_limb = /obj/item/organ/external/robotic/frozen_star
 	icon = 'icons/mob/human_races/cyberlimbs/frozen_star.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
 
+//Generico - Full Body
 /datum/body_modification/limb/prosthesis/synthskin
 	id = "prosthesis_martin_huell"
 	replace_limb = /obj/item/organ/external/robotic/synthskin
 	icon = 'icons/mob/human_races/cyberlimbs/fbp.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
+/datum/body_modification/limb/prosthesis/spirit
+	id = "prosthesis_spirit"
+	replace_limb = /obj/item/organ/external/robotic/spirit
+	icon = 'icons/mob/human_races/cyberlimbs/spirit.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
+/datum/body_modification/limb/prosthesis/ward
+	id = "prosthesis_ward"
+	replace_limb = /obj/item/organ/external/robotic/ward
+	icon = 'icons/mob/human_races/cyberlimbs/ward.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
+/datum/body_modification/limb/prosthesis/asters
+	id = "prosthesis_asters"
+	replace_limb = /obj/item/organ/external/robotic/asters
+	icon = 'icons/mob/human_races/cyberlimbs/asters.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
 /datum/body_modification/limb/prosthesis/serbian
@@ -183,7 +189,20 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/excelsior.dmi'
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
 
+/datum/body_modification/limb/prosthesis/junktech
+	id = "prosthesis_ghetto"
+	replace_limb = /obj/item/organ/external/robotic/junktech
+	icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+
 //Departments
+
+/datum/body_modification/limb/prosthesis/watch
+	id = "prosthesis_watch"
+	replace_limb = /obj/item/organ/external/robotic/watch
+	icon = 'icons/mob/human_races/cyberlimbs/watch.dmi'
+	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
+	department_specific = list(DEPARTMENT_SECURITY)
 
 /datum/body_modification/limb/prosthesis/technomancer
 	id = "prosthesis_technomancer"

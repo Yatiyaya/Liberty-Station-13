@@ -33,7 +33,7 @@
 	default_description = /datum/organ_description/chest
 
 /obj/item/organ/external/robotic/junktech/head
-	default_description = /datum/organ_description/chest
+	default_description = /datum/organ_description/head
 
 //Generic #1 - Full Body
 /obj/item/organ/external/robotic/asters
@@ -98,6 +98,21 @@
 /obj/item/organ/external/robotic/synthskin/head
 	default_description = /datum/organ_description/head
 
+//Generic #5 - Full Body
+/obj/item/organ/external/robotic/spirit
+	name = "\"Spirit Bear\""
+	desc = "A white and pink chassis suited for low gravity work conditions."
+	force_icon = 'icons/mob/human_races/cyberlimbs/spirit.dmi'
+	model = "spirit"
+	price_tag = 400
+
+//Generic #6 - Full Body
+/obj/item/organ/external/robotic/ward
+	name = "\"Ward-Takahashi\""
+	desc = "A cheap alternative to many of the other brands."
+	force_icon = 'icons/mob/human_races/cyberlimbs/ward.dmi'
+	model = "ward"
+	price_tag = 400
 
 //Astrakhan - Full Body
 /obj/item/organ/external/robotic/excelsior
@@ -131,12 +146,28 @@
 /* Departmental FBP limbs */
 ////////////////////////////
 
+//Martian Logistics - Full Body
+/obj/item/organ/external/robotic/watch
+	name = "\"Sentry\""
+	desc = "A Liberty Watch prosthesis based upon the Martian Logistics model."
+	force_icon = 'icons/mob/human_races/cyberlimbs/watch.dmi'
+	model = "watch"
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
+	max_damage = 60
+	min_broken_damage = 40
+	min_malfunction_damage = 30
+	price_tag = 400
+
 // Terra-Therma Worker's Union - Full Body
 /obj/item/organ/external/robotic/technomancer
-	name = "Terra-Therma Worker's Union \"Homebrew\""
+	name = "\"Homebrew\""
 	desc = "Terra-Therma Worker's Union \"branded\" \"functional\" prosthesis."
 	force_icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi' //Sprites were done by Kirov on request
 	model = "technomancer"
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
+	max_damage = 60
+	min_broken_damage = 40
+	min_malfunction_damage = 30
 	price_tag = 300
 
 /obj/item/organ/external/robotic/technomancer/l_arm
@@ -154,7 +185,7 @@
 /obj/item/organ/external/robotic/technomancer/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/technomancer/torso
+/obj/item/organ/external/robotic/technomancer/chest
 	default_description = /datum/organ_description/chest
 
 /obj/item/organ/external/robotic/technomancer/head
@@ -188,7 +219,7 @@
 /obj/item/organ/external/robotic/moebius/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/moebius/torso
+/obj/item/organ/external/robotic/moebius/chest
 	default_description = /datum/organ_description/chest
 
 /obj/item/organ/external/robotic/moebius/head
@@ -201,6 +232,10 @@
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
+	max_damage = 60
+	min_broken_damage = 40
+	min_malfunction_damage = 30
 	price_tag = 400
 
 /obj/item/organ/external/robotic/church/l_arm
@@ -218,15 +253,19 @@
 /obj/item/organ/external/robotic/church/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/church/torso
+/obj/item/organ/external/robotic/church/chest
 	default_description = /datum/organ_description/chest
 
 /obj/item/organ/external/robotic/church/head
 	default_description = /datum/organ_description/head
 
+/////////////////////////
+/* Lootable Prosthetsis*/
+/////////////////////////
+
 // Similacrum - Only limbs
 /obj/item/organ/external/robotic/one_star
-	name = "Similacrum"
+	name = "\"Similacrum\""
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"
