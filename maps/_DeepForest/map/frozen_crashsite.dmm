@@ -529,7 +529,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "gw" = (
-/obj/landmark/join/late/dormitory_outsider,
+/obj/landmark/join/late/cryo/outsider,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
@@ -2790,7 +2790,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Fu" = (
-/obj/landmark/join/late/dormitory_outsider,
+/obj/landmark/join/late/cryo/outsider,
 /obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/abandoned_outpost)
@@ -3156,7 +3156,7 @@
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "Jt" = (
-/obj/landmark/join/late/dormitory_outsider,
+/obj/landmark/join/late/cryo/outsider,
 /obj/machinery/cryopod/dormitory,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
