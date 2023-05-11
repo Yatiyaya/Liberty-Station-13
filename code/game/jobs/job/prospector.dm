@@ -134,8 +134,8 @@
 
 	perks = list(PERK_STALKER, PERK_JUNKBORN)
 
-	description = "The Shipbreaker serves as hired muscle to the Field Shepard, positioned somewhere between meat shield and exterminator.<br>\
-	Your job is to keep the your co-workers safe and anyone else with you protected, handling the fighting and being the first to enter dangerous areas. <br>\
+	description = "The Shipbreaker serves as hired muscle to the Field Shepard, positioned somewhere between meat shield and salvager.<br>\
+	Your job is to keep the your co-workers safe and anyone else with you protected, handling the fighting and gathering all that you can for selling. <br>\
 	Your primary goal is to provide protection for co-workers while in the wilds and gather all the loot possible from outside the colony, or search in non-owned areas for loot."
 
 	duties = "Guard your peers from hostile creatures and other dangers that cross your path.<br>\
