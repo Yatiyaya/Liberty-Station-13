@@ -201,6 +201,7 @@
 	new /obj/item/storage/pill_bottle/dexalin_plus(src)
 	new /obj/item/storage/pill_bottle/antitox(src)
 	new /obj/item/bodybag/cryobag(src)
+	new /obj/item/extinguisher/mini(src)
 
 /obj/item/storage/belt/medical
 	name = "medical belt"
@@ -372,6 +373,7 @@
 	desc = "A black tactical belt made specifically for opifex to prevent any pulling or ruffling of feathers, slightly uncomfortable for anyone else but none can deny its quality. This harness is built specifically for combat, limiting its versatility."
 
 /obj/item/storage/belt/security/tactical/opifex/full/populate_contents()
+	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/tool/crowbar(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/device/lighting/toggleable/flashlight/heavy(src)
