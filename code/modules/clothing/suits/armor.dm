@@ -101,9 +101,9 @@
 	desc = "An armored vest of dubious quality. Provides decent protection against physical damage, for a piece of crap."
 	icon_state = "armor_handmade"
 	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
+		melee = 15,
+		bullet = 0,
+		energy = 0,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -140,14 +140,6 @@
 	item_state = "armor_handmade_fullbody"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
-	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
-		bomb = 10,
-		bio = 0,
-		rad = 0
-	) // No gaining stats, just coverage!
 
 /obj/item/clothing/suit/armor/vest/handmade/full/toggle_style()
 	set name = "Adjust Style"
@@ -183,6 +175,11 @@
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "watch_basic"
 
+/obj/item/clothing/suit/armor/vest/ironhammer/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 /obj/item/clothing/suit/armor/vest/ironhammer/full
 	name = "watchmen tactical unit armor"
 	desc = "An armored vest painted in Watchmen colors. This one has shoulderpads and kneepads included to protect all parts of the body."
@@ -208,6 +205,11 @@
 	desc = "An armored winter coat with vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
 	icon_state = "coatsecurity_long"
 
+/obj/item/clothing/suit/armor/vest/ironhammer_wintercoat/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
 	name = "watchmen bulletproof suit"
 	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
@@ -217,11 +219,21 @@
 	icon_state = "watch_bulletproof"
 	item_state = "watch_bulletproof"
 
+/obj/item/clothing/suit/armor/bulletproof/ironhammer/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 /obj/item/clothing/suit/armor/vest/ablative/ironhammer
 	name = "watchmen ablative armor"
 	desc = "A specialized armored plate carrier outfitted with light absorption and heat disperesion technology. This one has been done in Watchmen security colors."
 	icon_state = "watch_ablative"
 	item_state = "watch_ablative"
+
+/obj/item/clothing/suit/armor/vest/ablative/ironhammer/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 ////////////
 
@@ -574,6 +586,11 @@
 						 /obj/item/storage/toolbox)
 	flags_inv = HIDEJUMPSUIT
 
+/obj/item/clothing/suit/armor/vest/technomancersuit/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 //PIRS
 /obj/item/clothing/suit/armor/vest/pirssuit
 	name = "'Mark II' environmental protection suit"
@@ -594,6 +611,11 @@
 						 /obj/item/storage/toolbox)
 	matter = list(MATERIAL_STEEL = 40)
 
+/obj/item/clothing/suit/armor/vest/pirssuit/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 // CAPSA
 
 /obj/item/clothing/suit/armor/vest/capsa
@@ -608,6 +630,11 @@
 		bio = 50,
 		rad = 0
 	)
+
+/obj/item/clothing/suit/armor/vest/capsa/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 /obj/item/clothing/suit/armor/vest/capsa/fullbody
 	name = "full body CAPSA plate carrier"
@@ -718,6 +745,11 @@
 		rad = 0
 	)
 
+/obj/item/clothing/suit/armor/vest/iron_lock_security/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 /obj/item/clothing/suit/armor/vest/ablative
 	name = "ablative vest"
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
@@ -732,6 +764,10 @@
 		rad = 0
 	)
 
+/obj/item/clothing/suit/armor/vest/ablative/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflective armor vest"
@@ -1046,7 +1082,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier"
-	//options["Green"] = "platecarrier_green"
 	options["Winter"] = "platecarrier_snow"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -1079,7 +1114,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier_fullbody"
-	//options["Green"] = "platecarrier_green_fullbody"
 	options["Winter"] = "platecarrier_snow_fullbody"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -1101,6 +1135,11 @@
 	slowdown = 0.15
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/armor/platecarrier/hos/toggle_style()
+	var/mob/M = usr
+	to_chat(M, "This clothing has no alternative styles!")
+	return //Probably a better way to do this but I just don't care - Lamasmaster
+
 /*
 // Coats
 */
@@ -1119,35 +1158,6 @@
 		rad = 0
 	)
 	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/hos/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	/*options["Armored coat"] = "hos"
-	options["Alt armored coat"] = "new_wo"
-	options["Formal coat"] = "wo_formal"
-	options["Formal coat alt"] = "wo_formallong"
-	options["WO Greatcoat"] = "ihc_coat"
-	options["WO Cloaked Greatcoat"] = "ihc_coat_cloak"
-	options["WO Blue Greatcoat"] = "ihc_coat_blue"
-	options["WO Blue Cloaked Greatcoat"] = "ihc_coat_cloak_blue" - None are updated*/
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
 
 /obj/item/clothing/suit/armor/commander
 	name = "commander's armored coat"
