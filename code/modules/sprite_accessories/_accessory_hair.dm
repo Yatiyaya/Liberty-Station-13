@@ -470,6 +470,10 @@
 	name = "Jensen"
 	icon_state = "hair_jensen"
 
+/datum/sprite_accessory/hair/keanu
+	name = "Keanu"
+	icon_state = "keanu"
+
 //Ladylike
 /datum/sprite_accessory/hair/ladylike
 	name = "Ladylike"
