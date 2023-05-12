@@ -5,9 +5,9 @@
 	requiredPerk = PERK_CHANNELING
 	icon_state = "dischargemisc_mold"
 
-/datum/craft_recipe/custodians/oathbound_helmet
-	name = "Oathbound Helmet"
-	result = /obj/item/clothing/head/helmet/custodian/oathbound
+/datum/craft_recipe/custodians/oathbound_set
+	name = "Oathbound Armor Set"
+	result = /obj/item/storage/box/oathbound_set
 	icon_state = "dischargearmor_mold"
 	steps = list(
 		list(/obj/item/mold/armor, 1),
@@ -21,85 +21,18 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/mold_kit/blacksmithing, 1),
 		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_SAWING, 30, "time" = 10),
-	)
-
-/datum/craft_recipe/custodians/enkindled_helmet
-	name = "Enkindled Helmet"
-	result = /obj/item/clothing/head/helmet/custodian/enkindled
-	icon_state = "dischargearmor_mold"
-	steps = list(
-		list(/obj/item/mold/armor, 1),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(QUALITY_CUTTING, 30, "time" = 10),
-		list(QUALITY_PRYING, 20, "time" = 10),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_SAWING, 30, "time" = 10),
-	)
-
-/datum/craft_recipe/custodians/forgemaster_helmet
-	name = "Forgemaster Helmet"
-	result = /obj/item/clothing/head/helmet/custodian/forgemaster
-	icon_state = "dischargearmor_mold"
-	steps = list(
-		list(/obj/item/mold/armor, 1),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(QUALITY_CUTTING, 30, "time" = 10),
-		list(QUALITY_PRYING, 20, "time" = 10),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_SAWING, 30, "time" = 10),
-	)
-
-/datum/craft_recipe/custodians/oathbound_armor
-	name = "Oathbound Armor"
-	result = /obj/item/clothing/suit/armor/custodian/oathbound
-	icon_state = "dischargearmor_mold"
-	steps = list(
-		list(/obj/item/mold/armor, 1),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(QUALITY_CUTTING, 30, "time" = 10),
-		list(QUALITY_PRYING, 20, "time" = 10),
-		list(/obj/item/mold_kit/tailoring, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(/obj/item/mold_kit/blacksmithing, 1),
-		list(QUALITY_WELDING, 30, "time" = 10),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/mold_kit/blacksmithing, 1),
+		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
 	)
 
-/datum/craft_recipe/custodians/enkindled_armor
-	name = "Enkindled Armor"
-	result = /obj/item/clothing/suit/armor/custodian/enkindled
+/datum/craft_recipe/custodians/enkindled_set
+	name = "Enkindled Armor Set"
+	result = /obj/item/storage/box/enkindled_set
 	icon_state = "dischargearmor_mold"
 	steps = list(
 		list(/obj/item/mold/armor, 1),
@@ -113,16 +46,18 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/mold_kit/blacksmithing, 1),
 		list(QUALITY_WELDING, 30, "time" = 10),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/mold_kit/blacksmithing, 1),
+		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
 	)
 
-/datum/craft_recipe/custodians/forgemaster_armor
-	name = "Forgemaster Armor"
-	result = /obj/item/clothing/suit/armor/custodian/forgemaster
+/datum/craft_recipe/custodians/forgemaster_set
+	name = "Forgemaster Armor Set"
+	result = /obj/item/storage/box/forgemaster_set
 	icon_state = "dischargearmor_mold"
 	steps = list(
 		list(/obj/item/mold/armor, 1),
@@ -136,10 +71,12 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/mold_kit/blacksmithing, 1),
 		list(QUALITY_WELDING, 30, "time" = 10),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/mold_kit/blacksmithing, 1),
+		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
 	)
 

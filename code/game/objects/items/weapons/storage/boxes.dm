@@ -886,3 +886,39 @@
 	new /obj/item/clothing/suit/armor/custodian/oathpledge(src)
 	new /obj/item/clothing/head/helmet/custodian/oathpledge(src)
 
+/obj/item/storage/box/oathbound_set
+	name = "oathbound armor box"
+	desc = "A box packaging a newly-made Custodian Oathbound armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/oathbound_set/New()
+	. = ..()
+
+/obj/item/storage/box/oathbound_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/oathbound(src)
+	new /obj/item/clothing/head/helmet/custodian/oathbound(src)
+
+/obj/item/storage/box/enkindled_set
+	name = "enkindled armor box"
+	desc = "A box packaging a newly-made Custodian Enkindled armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/enkindled_set/New()
+	. = ..()
+
+/obj/item/storage/box/enkindled_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/enkindled(src)
+	new /obj/item/clothing/head/helmet/custodian/enkindled(src)
+
+/obj/item/storage/box/forgemaster_set
+	name = "forgemaster armor box"
+	desc = "A box packaging a newly-made Custodian Forgemaster armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/forgemaster_set/New()
+	. = ..()
+
+/obj/item/storage/box/forgemaster_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/forgemaster(src)
+	new /obj/item/clothing/head/helmet/custodian/forgemaster(src)
+

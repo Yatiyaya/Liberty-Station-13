@@ -217,7 +217,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 50, MATERIAL_PLASTIC = 20)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
 	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)

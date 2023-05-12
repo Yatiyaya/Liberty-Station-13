@@ -327,7 +327,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 40, MATERIAL_PLASTIC = 20)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
