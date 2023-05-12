@@ -5,7 +5,7 @@
 	icon = 'icons/obj/crafts.dmi'
 	icon_state = "dischargemisc_mold"
 	throw_range = 5
-	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 5)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_PLASTIC = 5)
 
 /obj/item/mold/weapon
 	name = "flareforged weapon nanomold"
@@ -35,12 +35,29 @@
 	name = "moldkit base item"
 	desc = "Not to be seen in-game."
 	icon = 'icons/obj/crafts.dmi'
-	icon_state = null//later
+	icon_state = "radiance_sigil"
 	throw_range = 3
 
+/obj/item/mold_kit/radiance_sigil
+	name = "radiance sigil"
+	desc = "A holding tray for Radiance used by the Custodians to make especially delicate adjustments to their nanomolds, the Radiance is consumed after their work is done."
+	icon_state = "radiance_sigil"
+	matter = list(MATERIAL_SILVER = 6)
 
 /obj/item/mold_kit/blacksmithing
-
-/obj/item/mold_kit/masonry
+	name = "blacksmithing kit"
+	desc = "A set of metalsmithing hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
+	icon_state = "blacksmithing_kit"
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8)
 
 /obj/item/mold_kit/tailoring
+	name = "tailoring kit"
+	desc = "A set of tailoring hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
+	icon_state = "tailoring_kit"
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
+
+/obj/item/mold_kit/masonry
+	name = "masonry kit"
+	desc = "A set of carving and sharpening hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
+	icon_state = "masonry_kit"
+	matter = list(MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)

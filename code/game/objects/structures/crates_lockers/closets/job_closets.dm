@@ -84,21 +84,36 @@
 
 //Custodians
 
-/obj/structure/closet/oathbound
-	name = "oathbound closet"
-	desc = "A closet for those that call themselves Oathbound."
+/obj/structure/closet/custodian
+	name = "custodian closet"
+	desc = "A closet for those that call themselves Custodians."
 	icon_state = "acolyte"
 
-/obj/structure/closet/oathbound/populate_contents()
+/obj/structure/closet/custodian/populate_contents()
 	if(prob(25))
 		new /obj/item/storage/backpack/custodian(src)
 	else if(prob(25))
 		new /obj/item/storage/backpack/sport/custodian(src)
 	else
 		new /obj/item/storage/backpack/satchel/custodian(src)
-	new /obj/item/clothing/under/custodian/oathbound(src)
-	new /obj/item/storage/belt/utility/custodian(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
 	new /obj/item/device/radio/headset/church(src)
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/tool/knife/dagger/custodian(src)
+
+/obj/structure/closet/oathpledge
+	name = "oathpledge closet"
+	desc = "A closet for the leaders and guides of the Custodians."
+	icon_state = "acolyte"
+
+/obj/structure/closet/oathpledge/populate_contents()
+	if(prob(25))
+		new /obj/item/storage/backpack/custodian(src)
+	else if(prob(25))
+		new /obj/item/storage/backpack/sport/custodian(src)
+	else
+		new /obj/item/storage/backpack/satchel/custodian(src)
+	new /obj/item/clothing/mask/gas/germanmask(src)
+	new /obj/item/device/radio/headset/heads/preacher(src)
+	new /obj/item/clothing/gloves/thick(src)
+	new /obj/item/tool/sword/custodian/shortsword(src)

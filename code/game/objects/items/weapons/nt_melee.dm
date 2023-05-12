@@ -19,9 +19,9 @@
 		embed_mult = initial(embed_mult)
 
 /obj/item/tool/sword/custodian/shortsword
-	name = "ulfberth"
-	desc = "As much as the swords may be underused by the Custodians in exchange for polearms and axes, many short swords are produced with a cheap price. \
-	The ulfberth are regarded as a work of art rather than a weapon - yet more effective than a machete nonetheless."
+	name = "ulfberht"
+	desc = "As much as swords may be underused by the Custodians in exchange for polearms and axes, many short swords are produced for a cheap price. \
+	The ulfberht are regarded as a work of art rather than a weapon - yet more effective than a machete nonetheless."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "ulfberth_sword"
 	item_state = "ulfberth_sword"
@@ -29,7 +29,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 300
-	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 10)
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
@@ -43,7 +43,7 @@
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 500
-	matter = list(MATERIAL_BIO_SILK = 75, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 5)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_CARBON_FIBER = 8)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -59,7 +59,7 @@
 	force = WEAPON_FORCE_PAINFUL
 	armor_penetration = ARMOR_PEN_MASSIVE
 	price_tag = 120
-	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 10)
 
 /obj/item/tool/knife/dagger/custodian/equipped(mob/living/M)
 	. = ..()
@@ -80,7 +80,7 @@
 	armor_penetration = ARMOR_PEN_MASSIVE
 	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 600
-	matter = list(MATERIAL_BIO_SILK = 80, MATERIAL_STEEL = 8, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 2)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -110,7 +110,7 @@
 	var/stun = 0
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 2)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 10)
 	has_alt_mode = FALSE
 
 /obj/item/tool/sword/custodian/whip/attack_self(mob/user)
@@ -161,7 +161,7 @@
 	armor_penetration = ARMOR_PEN_MODERATE
 	throw_speed = 4
 	price_tag = 150
-	matter = list(MATERIAL_BIO_SILK = 20, MATERIAL_CARBON_FIBER = 10)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 5)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
 	. = ..()
@@ -185,7 +185,7 @@
 	armor_penetration = ARMOR_PEN_MASSIVE
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 5, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_SILVER = 2)
 	tool_qualities = list(QUALITY_HAMMERING = 10) //Not designed for that fine nailing
 	var/glowing = FALSE
 	sharp = FALSE
@@ -242,7 +242,7 @@
 	armor_penetration = ARMOR_PEN_DEEP
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_BIO_SILK = 100, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 20, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_STEEL = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	var/glowing = FALSE
 	slot_flags = SLOT_BACK | SLOT_BELT
@@ -319,13 +319,13 @@
 	item_state = "custodian_scutum"
 	force = WEAPON_FORCE_DANGEROUS
 	armor_list = list(melee = 20, bullet = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 10, MATERIAL_GOLD = 5)
+	matter = list(MATERIAL_STEEL = 30, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	price_tag = 1000
 	base_block_chance = 60
 	item_flags = DRAG_AND_DROP_UNEQUIP
 
-	max_durability = 180
-	durability = 180
+	max_durability = 200
+	durability = 200
 
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
@@ -382,19 +382,18 @@
 	return base_block_chance
 
 /obj/item/shield/buckler/custodian
-	name = "custodian targe shield"
+	name = "custodian heater shield"
 	desc = "A small shield efficient for bashing enemies in the head as much as it allows the user to protect themselves from damage. \
 	Rather useless for the inexperienced, yet the ones who mastered the use of shields may have incredible capacity to protect themselves from harm."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "custodian_heater"
 	item_state = "custodian_heater"
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 2, MATERIAL_GOLD = 1)
-	//aspects = list(SANCTIFIED) todo:port this
+	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
 	price_tag = 300
 	base_block_chance = 45
 	item_flags = DRAG_AND_DROP_UNEQUIP
-	max_durability = 60 //So we can brake and need healing time to time
-	durability = 60
+	max_durability = 100 //So we can brake and need healing time to time
+	durability = 100
 	var/obj/item/storage/internal/container
 	var/storage_slots = 1
 	var/max_w_class = ITEM_SIZE_HUGE

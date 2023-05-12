@@ -298,8 +298,9 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Scorch Canister"
 	build_path = /obj/structure/reagent_dispensers/scorch
 	materials = list(
-		/obj/item/stack/material/steel = 8,
-		/obj/item/stack/material/plastic = 2
+		/obj/item/stack/material/steel = 4,
+		/obj/item/stack/material/plastic = 2,
+		/obj/item/mold_kit/masonry = 1,
 	)
 /datum/custodian_blueprint/weak/canister/large
 	name = "Large Scorch Canister"
@@ -307,7 +308,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/steel = 16,
 		/obj/item/stack/material/plastic = 4,
-		/obj/item/stack/material/plasteel = 2
+		/obj/item/mold_kit/masonry = 1,
 	)
 	build_time = 5 SECONDS
 
@@ -315,9 +316,11 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Torchbearer"
 	build_path = /obj/machinery/power/nt_obelisk
 	materials = list(
-		/obj/item/stack/material/plasteel = 10,
-		/obj/item/stack/material/gold = 5,
-		/CRUCIFORM_TYPE = 1
+		/obj/item/stack/material/biopolymer_silk = 10,
+		/obj/item/mold_kit/radiance_sigil = 1,
+		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/mold_kit/masonry = 2,
+		/obj/item/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
 
@@ -361,7 +364,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/steel = 5,
 		/obj/item/stack/material/biopolymer_silk = 20,
 		/obj/item/stack/material/silver = 2,
-		/obj/item/stack/material/gold = 1
+		/obj/item/mold_kit/masonry = 1,
 	)
 	build_time = 8 SECONDS
 
@@ -369,9 +372,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Secure Gate"
 	build_path = /obj/machinery/door/holy/preacher
 	materials = list(
-		/obj/item/stack/material/steel = 5,
 		/obj/item/stack/material/biopolymer_silk = 20,
-		/obj/item/stack/material/gold = 3
+		/obj/item/stack/material/silver = 3,
+		/obj/item/mold_kit/blacksmithing = 1,
+		/obj/item/mold_kit/masonry = 1,
 	)
 	build_time = 8 SECONDS
 
@@ -380,11 +384,26 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire Nullifer"
 	build_path = /obj/machinery/telesci_inhibitor/nt_bluespace_seer
 	materials = list(
-		/obj/item/stack/material/steel = 35,
-		/obj/item/stack/material/plastic = 30,
-		/obj/item/stack/material/biopolymer_silk = 120,
+		/obj/item/stack/material/plasteel = 6,
+		/obj/structure/reagent_dispensers/scorch = 1,
+		/obj/item/mold_kit/blacksmithing = 2,
+		/obj/item/mold_kit/tailoring = 3,
+		/obj/item/mold_kit/radiance_sigil = 1,
+		/obj/item/mold_kit/masonry = 4,
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/medium/sentinel
+	name = "Sentinel"
+	build_path = /obj/machinery/power/sentinel
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 10,
+		/obj/item/stack/material/biopolymer_silk = 30,
 		/obj/item/stack/material/silver = 10,
-		/obj/item/stack/material/gold = 5
+		/obj/item/mold_kit/masonry = 2,
+		/obj/item/mold_kit/blacksmithing = 2,
+		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
 
@@ -470,24 +489,23 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Artisan Table"
 	build_path = /obj/machinery/autolathe/artist_bench
 	materials = list(
-		/obj/item/stack/material/steel = 10,
-		/obj/item/stack/material/glass = 2,
-		/obj/item/stack/material/silver = 6,
+		/obj/item/stack/material/glass = 10,
+		/obj/item/mold_kit/masonry = 1,
+		/obj/item/mold_kit/tailoring = 1,
+		/obj/item/mold_kit/blacksmithing = 1,
 	)
 	build_time = 5 SECONDS
 
 /datum/custodian_blueprint/medium/knight
-	name = "Vassal Golem"
+	name = "Vassal Automaton"
 	build_path = /mob/living/carbon/superior_animal/robot/church/knight
 	materials = list(
-		/obj/item/stack/material/steel = 15,
-		/obj/item/stack/material/plastic = 10,
-		/obj/item/stack/material/gold = 10,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stack/material/plasteel = 5,
-		/obj/item/stack/material/biopolymer_silk = 20,
-		/obj/item/tool/sword/custodian/horseaxe = 1,
-		/obj/item/book/ritual/cruciform = 1 //Limiting factor
+		/obj/item/tool/sword/custodian/shortsword = 1,
+		/obj/item/stack/cable_coil = 20,
+		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/mold_kit/tailoring = 2,
+		/obj/item/mold_kit/masonry = 1,
+		/obj/item/mold_kit/blacksmithing = 1,
 	)
 	build_time = 20 SECONDS //We dont want to make these in combat
 
@@ -537,17 +555,18 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 15 SECONDS
 
 /datum/custodian_blueprint/strong/rook
-	name = "Suzerain Golem"
+	name = "Suzerain Automaton"
 	build_path = /mob/living/carbon/superior_animal/robot/church/rook
 	materials = list(
-		/obj/item/stack/material/steel = 15,
-		/obj/item/stack/material/plastic = 10,
-		/obj/item/stack/material/gold = 16,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stack/material/plasteel = 5,
-		/obj/item/stack/material/biopolymer_silk = 30,
 		/obj/item/stack/material/diamond = 1,
-		/obj/item/book/ritual/cruciform = 1 //Limiting factor
+		/obj/item/book/ritual/cruciform = 2,
+		/obj/item/stack/cable_coil = 30,
+		/obj/item/stack/cable_coil = 30,
+		/obj/item/stack/material/gold = 6,
+		/obj/item/mold_kit/radiance_sigil = 1,
+		/obj/item/mold_kit/blacksmithing = 5,
+		/obj/item/mold_kit/masonry = 3,
+		/obj/item/mold_kit/tailoring = 2,
 	)
 	build_time = 20 SECONDS //We dont want to make these in combat
 

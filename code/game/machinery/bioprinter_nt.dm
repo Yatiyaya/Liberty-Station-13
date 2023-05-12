@@ -31,10 +31,3 @@
 	name = "enhanced flarelathe"
 	desc = "A forge design created by the Custodians that makes use of Radiance to smith their equipment. This one has been enhanced by a Forgemaster, reducing material costs."
 	mat_efficiency = 0.5
-
-
-/obj/machinery/autolathe/flarelathe/disk
-	default_disk = /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter
-
-/obj/machinery/autolathe/flarelathe/public
-	default_disk = /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public

@@ -92,7 +92,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/custodian
-	matter = list(MATERIAL_BIO_SILK = 5)
+	matter = list(MATERIAL_BIO_SILK = 15)
 
 /obj/item/clothing/under/custodian/oathbound
 	name = "oathbound underarmor"

@@ -883,6 +883,6 @@
 	. = ..()
 
 /obj/item/storage/box/oathpledge_set/populate_contents()
-	new /obj/item/clothing/suit/armor/custodian/oathpledge
-	new /obj/item/clothing/head/helmet/custodian/oathpledge
+	new /obj/item/clothing/suit/armor/custodian/oathpledge(src)
+	new /obj/item/clothing/head/helmet/custodian/oathpledge(src)
 

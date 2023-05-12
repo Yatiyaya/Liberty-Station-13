@@ -116,7 +116,7 @@
 	desc = "A voidsuit designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
 	icon_state = "huscarl_voidsuit"
 	item_state = "huscarl_voidsuit"
-	matter = list(MATERIAL_CARBON_FIBER = 8, MATERIAL_STEEL = 10, MATERIAL_BIO_SILK = 30)
+	matter = list(MATERIAL_STEEL = 45, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 24, MATERIAL_BIO_SILK = 45, MATERIAL_PLASTIC = 30, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	slowdown = 0.15
 	armor_list = list(
 		melee = 40,

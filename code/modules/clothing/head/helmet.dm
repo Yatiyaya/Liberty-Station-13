@@ -327,7 +327,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 40, MATERIAL_PLASTIC = 20)
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
@@ -337,6 +337,7 @@
 	item_state = "custodian_firehelmet"
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 	slowdown = 1.5
+	matter = list(MATERIAL_BIO_SILK = 10)
 
 /obj/item/clothing/head/helmet/custodian/oathbound
 	name = "oathbound helmet"
@@ -362,6 +363,7 @@
 	icon_state = "oathpledge_helmet"
 	item_state = "oathpledge_helmet"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
+	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
 //Hunter's Lodge
 /obj/item/clothing/head/helmet/huntmaster_helmet

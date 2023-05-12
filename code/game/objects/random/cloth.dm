@@ -451,7 +451,6 @@
 				/obj/item/storage/belt/security = 4,
 				/obj/item/storage/belt/webbing = 6,
 				/obj/item/storage/belt/webbing/ih = 2,
-				/obj/item/storage/belt/security/custodian = 2,
 				/obj/item/storage/belt/utility = 8,
 				/obj/item/storage/belt/utility/custodian = 4))
 

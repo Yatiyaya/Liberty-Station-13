@@ -211,11 +211,7 @@
 					/obj/item/grenade/chem_grenade/antiweed/nt_antiweed = 5,
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 5,
 					/obj/item/tool/knife/dagger/custodian = 3,
-					/obj/item/tool/sword/custodian/shortsword = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 2)
+					/obj/item/tool/sword/custodian/shortsword = 3,)
 	contraband = list(/obj/item/tool/knife/neotritual = 3,
 					/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
@@ -242,10 +238,6 @@
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 50,
 					/obj/item/tool/knife/dagger/custodian = 50,
 					/obj/item/tool/sword/custodian/shortsword = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 800,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 400,
 					/obj/item/tool/knife/neotritual = 250,
 					/obj/item/gun/matter/launcher/nt_sprayer = 500)
 	custom_vendor = TRUE // So they can sell pouches and other printed goods, if they bother to stock them

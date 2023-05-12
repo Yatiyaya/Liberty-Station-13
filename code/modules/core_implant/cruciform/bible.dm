@@ -5,6 +5,7 @@
 	icon_state = "hearth_lantern"
 	item_state = "hearth_lantern"
 	price_tag = 150
+	matter = list(MATERIAL_SILVER = 2, MATERIAL_STEEL = 5)
 
 /obj/item/book/ritual/cruciform/New()
 	..()

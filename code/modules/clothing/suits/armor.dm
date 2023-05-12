@@ -217,7 +217,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 50, MATERIAL_PLASTIC = 20)
 	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
@@ -251,6 +251,7 @@
 	icon_state = "custodian_firesuit"
 	item_state = "custodian_firesuit"
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 20)
 	stiffness = MEDIUM_STIFFNESS
 	slowdown = 1.5
 	modifiable = FALSE
@@ -280,6 +281,7 @@
 	item_state = "oathpledge"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 	modifiable = FALSE
+	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
 //Guild
 /obj/item/clothing/suit/armor/vest/technomancersuit

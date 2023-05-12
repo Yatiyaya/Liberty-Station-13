@@ -23,6 +23,7 @@
 	icon_state = "custodian_jackboot_galoshes"
 	permeability_coefficient = 0.05
 	armor_list = list(melee = 15, bullet = 0, energy = 10, bomb = 0, bio = 25, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 25)
 	siemens_coefficient = 0
 	item_flags = NOSLIP
 	can_hold_knife = TRUE

@@ -132,9 +132,10 @@
 	)
 
 /obj/item/storage/belt/utility/custodian
-	name = "Bonfire utility belt"
+	name = "Bonfire knightly belt"
 	desc = "Waist-held righteous items."
 	icon_state = "utility_neotheology"
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 5)
 	can_hold_extra = list(
 		/obj/item/book/ritual/cruciform,
 		/obj/item/implant/core_implant/cruciform,
@@ -389,24 +390,6 @@
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/chem_grenade/teargas(src)
 
-/obj/item/storage/belt/security/custodian
-	name = "Bonfire tactical belt"
-	desc = "A comfortable Custodian belt design that can hold a variety of items."
-	icon_state = "tactical_neotheology"
-	can_hold_extra = list(
-		/obj/item/book/ritual/cruciform,
-		/obj/item/implant/core_implant/cruciform,
-		/obj/item/tool/knife/neotritual,
-		/obj/item/gun/energy/crossbow,
-		/obj/item/gun/energy/taser, //specially fitted to hold the counselor
-		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-		/obj/item/gun/projectile/boltgun/flare_gun,
-		/obj/item/ammo_casing/flare,
-		/obj/item/gun/energy/ntpistol,
-		/obj/item/device/binoculars
-	)
-
 /obj/item/storage/belt/champion
 	name = "championship belt"
 	desc = "Proves to the world that you are the strongest!"
@@ -417,11 +400,6 @@
 		/obj/item/clothing/mask/costume/job/luchador
 		)
 	price_tag = 50
-
-/obj/item/storage/belt/church
-	name = "bonfire belt"
-	desc = "Waist-held holy items."
-	icon_state = "ntbelt"
 
 /obj/item/storage/belt/webbing
 	name = "web harness"

@@ -249,10 +249,6 @@
 	name = "HEC MER \"Valkyrie\""
 	build_path = /obj/item/gun/energy/sniperrifle
 
-/datum/design/autolathe/gun/nt_sprayer
-	name = "LG cleansing carbine"
-	build_path = /obj/item/gun/matter/launcher/nt_sprayer
-
 /datum/design/autolathe/gun/similacrum_cog
 	name = "SR \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog

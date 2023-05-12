@@ -207,6 +207,7 @@
 	name = "custodian backpack"
 	desc = "A blue backpack with decorative flames."
 	icon_state = "backpack_custodian"
+	matter = list(MATERIAL_BIO_SILK = 20)
 
 /obj/item/storage/backpack/leather/security
 	name = "leather backpack"
@@ -284,6 +285,7 @@
 	name = "custodian sport backpack"
 	desc = "A sport backpack with a blue flame design."
 	icon_state = "backsport_custodian"
+	matter = list(MATERIAL_BIO_SILK = 20)
 
 /*
  * Satchel Types
@@ -375,6 +377,7 @@
 	name = "custodian satchel"
 	desc = "A more accesible storage medium with blue flames decorating it."
 	icon_state = "satchel_custodian"
+	matter = list(MATERIAL_BIO_SILK = 15)
 
 /*
  * Duffelbag Types

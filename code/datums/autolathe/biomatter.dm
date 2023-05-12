@@ -95,170 +95,98 @@
 /datum/design/bioprinter/belt
 	materials = list(MATERIAL_BIOMATTER = 20, MATERIAL_BIO_SILK = 1)
 
-/datum/design/bioprinter/belt/utility/neotheology
-	name = "Bonfire utility belt"
-	build_path = /obj/item/storage/belt/utility/custodian
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
-
-/datum/design/bioprinter/belt/security/neotheology
-	name = "Bonfire tactical belt"
-	build_path = /obj/item/storage/belt/security/custodian
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 0.5)
-
 /datum/design/bioprinter/belt/misc/champion
 	name = "Champion belt"
 	build_path = /obj/item/storage/belt/champion
 	materials = list(MATERIAL_BIOMATTER = 50)
 
-// This separates regular clothes designs from custodian clothes designs //
-/datum/design/bioprinter/nt_clothes/oathbound
+// All custodian disk designs //
+
+/datum/design/bioprinter/custodian_clothes
+	materials = null
+
+/datum/design/bioprinter/custodian_clothes/oathbound
 	name = "Oathbound Underarmor"
 	build_path = /obj/item/clothing/under/custodian/oathbound
-	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/enkindled
+/datum/design/bioprinter/custodian_clothes/enkindled
 	name = "Enkindled Underarmor"
 	build_path = /obj/item/clothing/under/custodian/enkindled
-	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/forgemaster
+/datum/design/bioprinter/custodian_clothes/forgemaster
 	name = "Forgemaster Underarmor"
 	build_path = /obj/item/clothing/under/custodian/forgemaster
-	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/oathpledge
+/datum/design/bioprinter/custodian_clothes/oathpledge
 	name = "Oathpledge Underarmor"
 	build_path = /obj/item/clothing/under/custodian/oathpledge
-	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/custodian_boots
+/datum/design/bioprinter/custodian_clothes/custodian_boots
 	name = "Custodian Boots"
 	build_path = /obj/item/clothing/shoes/custodian
-	materials = list(MATERIAL_BIO_SILK = 5)
 
-/datum/design/bioprinter/nt_clothes/oathbound_armor
-	name = "Oathbound Armor"
-	build_path = /obj/item/clothing/suit/armor/custodian/oathbound
-	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+/datum/design/bioprinter/custodian_clothes/firehelmet
+	name = "Flameshield Helmet"
+	build_path = /obj/item/clothing/head/helmet/custodian/firesuit
 
-/datum/design/bioprinter/nt_clothes/oathbound_helmet
-	name = "Oathbound Helmet"
-	build_path = /obj/item/clothing/head/helmet/custodian/oathbound
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+/datum/design/bioprinter/custodian_clothes/firesuit
+	name = "Flameshield Suit"
+	build_path = /obj/item/clothing/suit/armor/custodian/firesuit
 
-/datum/design/bioprinter/nt_clothes/enkindled_armor
-	name = "Enkindled Armor"
-	build_path = /obj/item/clothing/suit/armor/custodian/enkindled
-	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+/datum/design/bioprinter/belt/utility/neotheology
+	name = "Bonfire Knightly Belt"
+	build_path = /obj/item/storage/belt/utility/custodian
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/enkindled_helmet
-	name = "Enkindled Helmet"
-	build_path = /obj/item/clothing/head/helmet/custodian/enkindled
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+/datum/design/bioprinter/hearth_lantern
+	name = "Hearth Lantern"
+	build_path = /obj/item/book/ritual/cruciform
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/forgemaster_armor
-	name = "Forgemaster Armor"
-	build_path = /obj/item/clothing/suit/armor/custodian/forgemaster
-	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 5)
+/datum/design/bioprinter/weapon_mold
+	name = "Weapon Nanomold"
+	build_path = /obj/item/mold/weapon
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/forgemaster_helmet
-	name = "Forgemaster Helmet"
-	build_path = /obj/item/clothing/head/helmet/custodian/forgemaster
-	materials = list(MATERIAL_BIO_SILK = 5, MATERIAL_CARBON_FIBER = 3)
+/datum/design/bioprinter/armor_mold
+	name = "Armor Nanomold"
+	build_path = /obj/item/mold/armor
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/oathpledge_armor
-	name = "Oathpledge Armor"
-	build_path = /obj/item/clothing/suit/armor/custodian/oathpledge
-	materials = list(MATERIAL_BIO_SILK = 25, MATERIAL_CARBON_FIBER = 10)
+/datum/design/bioprinter/misc_mold
+	name = "Miscellaneous Nanomold"
+	build_path = /obj/item/mold/misc
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/oathpledge_helmet
-	name = "Oathpledge Helmet"
-	build_path = /obj/item/clothing/head/helmet/custodian/oathpledge
-	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 5)
+/datum/design/bioprinter/upgrade_mold
+	name = "Upgrade Nanomold"
+	build_path = /obj/item/mold/upgrade
+	materials = null
 
-/datum/design/bioprinter/nt_clothes/huscarl
-	name = "Huscarl Voidsuit"
-	build_path = /obj/item/clothing/suit/space/void/huscarl
-	materials = list(MATERIAL_BIO_SILK = 18, MATERIAL_CARBON_FIBER = 18)
+/datum/design/bioprinter/mold_kit
+	materials = null
 
-/* Pending Custodian IRR sprites later
-/datum/design/bioprinter/nt_clothes/knight_rig
-	name = "Knight Hardsuit Module"
-	materials = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 100, MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 28)
-	build_path = /obj/item/rig/combat/knight
-*/
+/datum/design/bioprinter/mold_kit/blacksmithing
+	name = "Blacksmithing Moldkit"
+	build_path = /obj/item/mold_kit/blacksmithing
 
-//[MELEE]
-/datum/design/autolathe/sword/custodian_sword
-	name = "Ulfberth"
-	build_path = /obj/item/tool/sword/custodian/shortsword
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 8)
+/datum/design/bioprinter/mold_kit/tailoring
+	name = "Tailoring Moldkit"
+	build_path = /obj/item/mold_kit/tailoring
 
-/datum/design/autolathe/sword/custodian_longsword
-	name = "Horseman Axe"
-	build_path = /obj/item/tool/sword/custodian/horseaxe
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 12)
+/datum/design/bioprinter/mold_kit/masonry
+	name = "Masonry Moldkit"
+	build_path = /obj/item/mold_kit/masonry
 
-/datum/design/autolathe/sword/custodian_dagger
-	name = "Custodian Seax"
-	build_path = /obj/item/tool/knife/dagger/custodian
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 3)
-
-/datum/design/autolathe/sword/custodian_halberd
-	name = "Custodian Atgeir"
-	build_path = /obj/item/tool/spear/atgeir
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 18)
-
-/datum/design/autolathe/sword/custodian_spear
-	name = "Custodian Francisca"
-	build_path = /obj/item/tool/sword/custodian/throwaxe
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 4)
-
-/datum/design/autolathe/sword/custodian_scourge
-	name = "Custodian Nagaika"
-	build_path = /obj/item/tool/sword/custodian/whip
-	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 18)
-
-/datum/design/autolathe/shield/nt_shield
-	name = "Custodian Scutum Shield"
-	build_path = /obj/item/shield/riot/custodian
-	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 21)
-
-/datum/design/autolathe/nt/shield/nt_buckler
-	name = "Custodian Heater Shield"
-	build_path = /obj/item/shield/buckler/custodian
-	materials = list(MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 12)
+/datum/design/bioprinter/mold_kit/radiance_sigil
+	name = "Radiance Sigil"
+	build_path = /obj/item/mold_kit/radiance_sigil
 
 /datum/design/autolathe/tool_upgrade/sanctifier
 	name = "NT Sanctifier"
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
-	materials = list(MATERIAL_CARBON_FIBER = 3)
 
-/datum/design/autolathe/sword/custodian_flanged
-	name = "Emberblaze Warhammer"
-	build_path = /obj/item/tool/sword/custodian/warhammer
-	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 16)
-
-//[ARMOR UPGRADES]
-/datum/design/autolathe/armor_upgrade
-	name = "base item, not seen in-game"
-	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 5)
-
-/datum/design/autolathe/armor_upgrade/melee
-	name = "Melee Armor Upgrade"
-	build_path = /obj/item/tool_upgrade/armor/melee
-
-/datum/design/autolathe/armor_upgrade/bullet
-	name = "Bullet Armor Upgrade"
-	build_path = /obj/item/tool_upgrade/armor/bullet
-
-/datum/design/autolathe/armor_upgrade/energy
-	name = "Energy Armor Upgrade"
-	build_path = /obj/item/tool_upgrade/armor/energy
-
-/datum/design/autolathe/armor_upgrade/bomb
-	name = "Bomb Armor Upgrade"
-	build_path = /obj/item/tool_upgrade/armor/bomb
+// end of Custodian disk designs //
 
 //[/IMPLANTS]
 
