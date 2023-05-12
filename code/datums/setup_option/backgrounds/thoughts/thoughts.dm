@@ -7,8 +7,6 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 	stat_modifiers = list(STAT_COG = -10)
 
 /datum/category_item/setup_option/background/thoughts/composure
@@ -20,8 +18,6 @@
 
 	perks = list(PERK_SURVIVOR)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 /datum/category_item/setup_option/background/thoughts/encyclopedia
 	name = "Living Computer"
 	desc = "Calling you a nerdy type is plain insult to your intelligence, gray matter sitting inside your cranial complex is more wrinkly than face of an elder. \
@@ -30,8 +26,6 @@
 	Sometimes there is nothing better for you then just let it all out at once, such is the reality of your mind."
 
 	perks = list(PERK_REJECTED_GENIUS)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = 10, STAT_ROB = -5, STAT_VIG = -5, STAT_TGH = -5)
 
@@ -44,8 +38,6 @@
 
 	perks = list(PERK_IDEALIST)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 /datum/category_item/setup_option/background/thoughts/volition
 	name = "Wasteland of the Mind"
 	desc = "Nothing brings you true joy in life never experienced happiness either, about the only thing that only ever got near to that feeling was finding a penny lying on the street. \
@@ -55,8 +47,6 @@
 
 	perks = list(PERK_NIHILIST)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
 	name = "Malfunctioning Motorics"
 	desc = "Your entire life can be sumarized up as series of accidents, from your conception all the way to where we are now.\
@@ -65,8 +55,6 @@
 	But every time you fail you become stronger, determined to prove to everyone that despite all of this you are still better than them."
 
 	perks = list(PERK_KLUTZ)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_VIG = -10, STAT_TGH = 10)
 
@@ -79,8 +67,6 @@
 	Your feet dance over most surfaces barely letting out a noise and on the off chance restraints try to wring around them, they will find it hard to stick to you."
 
 	perks = list(PERK_RAT)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_VIG = 10, STAT_ROB = -10, STAT_WIL = -5)
 
