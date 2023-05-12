@@ -63,7 +63,8 @@
 	spawn_positions = 2
 	supervisors = "the Field Shepherd"
 	difficulty = "Medium."
-	noob_name = "Rookie Trapper"
+/*	noob_name = "Rookie Trapper" */
+	alt_titles = list("Rookie Trapper")
 	selection_color = "#a7bbc6"
 
 	initial_balance = INIT_BALANCE_HAZARD
@@ -110,7 +111,8 @@
 	spawn_positions = 2
 	supervisors = "the Field Shepherd"
 	difficulty = "Medium."
-	noob_name = "Rookie Shipbreaker"
+/*	noob_name = "Rookie Shipbreaker" */
+	alt_titles = list("Rookie Shipbreaker")
 	selection_color = "#a7bbc6"
 	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_NONE

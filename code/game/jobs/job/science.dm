@@ -76,8 +76,8 @@
 	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
 
-	noob_name = "PIRS Intern"
-	alt_titles = list("PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
+/*	noob_name = "PIRS Intern" */
+	alt_titles = list("PIRS Intern", "PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
 
 	software_on_spawn = list(/datum/computer_file/program/signaller, /datum/computer_file/program/chem_catalog)
@@ -121,8 +121,8 @@
 	spawn_positions = 2
 	supervisors = "the Research Provost"
 	difficulty = "Medium."
-	noob_name = "PIRS Roboticist Trainee"
-	alt_titles = list("PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
+/*	noob_name = "PIRS Roboticist Trainee" */
+	alt_titles = list("PIRS Roboticist Trainee", "PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
 	selection_color = "#bdb1bb"
 
 	initial_balance = INIT_BALANCE_PROF
