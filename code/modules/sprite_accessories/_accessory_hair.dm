@@ -180,7 +180,7 @@
 //Braid
 /datum/sprite_accessory/hair/braid
 	name = "Braid"
-	icon_state = "hair_braid_floorlenght"
+	icon_state = "hair_braid_floorlength"
 
 /datum/sprite_accessory/hair/braid_grand
 	name = "Braid (Grande)"
