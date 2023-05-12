@@ -83,6 +83,8 @@
 	zoom_factors = list(0.8)
 	init_recoil = RIFLE_RECOIL(0.9)
 	saw_off = FALSE
+	
+	gun_parts = list(/obj/item/part/gun/frame/federalist = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
