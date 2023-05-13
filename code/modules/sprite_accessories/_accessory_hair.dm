@@ -406,7 +406,7 @@
 
 /datum/sprite_accessory/hair/gentle2_long_alt
 	name = "Gentle (Long - ALT)"
-	icon_state = "hair_gentle2_long_alt"
+	icon_state = "hair_gentle2_longalt"
 
 //Glossy
 /datum/sprite_accessory/hair/glossy
@@ -881,6 +881,10 @@
 	name = "Short Hair (4)"
 	icon_state = "hair_shorthair4"
 
+/datum/sprite_accessory/hair/shorthair5
+	name = "Short Hair (Pixie)"
+	icon_state = "hair_shorthair_pixie"
+
 //Sideswept
 /datum/sprite_accessory/hair/sideswept
 	name = "Sideswept"
@@ -978,12 +982,9 @@
 	name = "Wheeler"
 	icon_state = "hair_wheeler"
 
-/*
-//Messy
-/datum/sprite_accessory/hair/hitop
-	name = "Hitop"
-	icon_state = "hair_hitop"
-*/
+///////////
+/* ALIEN */
+///////////
 
 /datum/sprite_accessory/hair/una_hood
 	name = "Lizard Hood"
