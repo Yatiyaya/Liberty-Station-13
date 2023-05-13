@@ -611,10 +611,6 @@
 	name = "Overeye (Short)"
 	icon_state = "hair_overeye_short"
 
-/datum/sprite_accessory/hair/sabitsuki
-	name = "Sabitsuki"
-	icon_state = "sabitsuki"
-
 /datum/sprite_accessory/hair/overeye_vlong
 	name = "Overeye (Very Long)"
 	icon_state = "hair_overeye_verylong"
@@ -627,9 +623,13 @@
 	name = "Overeye (Very Short - ALT)"
 	icon_state = "hair_overeye_veryshort_alt"
 
+/datum/sprite_accessory/hair/overye_sabitsuki
+	name = "Overeye (Sabitsuki)"
+	icon_state = "hair_overeye_sabitsuki"
+
 /datum/sprite_accessory/hair/overeye_oxton
 	name = "Overeye (Oxton)"
-	icon_state = "hair_oxton"
+	icon_state = "hair_overeye_oxton"
 
 //Parted
 /datum/sprite_accessory/hair/parted
@@ -988,6 +988,11 @@
 /datum/sprite_accessory/hair/updo
 	name = "Updo"
 	icon_state = "hair_updo"
+
+//Very Long
+/datum/sprite_accessory/hair/vlong_fringe
+	name = "Very Long (Fringe)"
+	icon_state = "hair_vlong_fringe"
 
 //Wheeler
 /datum/sprite_accessory/hair/wheeler
