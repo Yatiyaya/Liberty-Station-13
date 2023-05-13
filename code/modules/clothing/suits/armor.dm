@@ -32,6 +32,7 @@
 	icon_state = "armor"
 	item_state = "armor"
 	blood_overlay_type = "armor"
+	var/has_alternative_armor_icon = TRUE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -47,6 +48,10 @@
 	set src in usr
 
 	if(!isliving(loc))
+		return
+
+	if(!has_alternative_armor_icon)
+		to_chat(M, "This clothing has no alternative styles!")
 		return
 
 	var/mob/M = usr
@@ -174,11 +179,7 @@
 	name = "watchmen armor vest"
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "watch_basic"
-
-/obj/item/clothing/suit/armor/vest/ironhammer/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
 	name = "watchmen tactical unit armor"
@@ -204,11 +205,7 @@
 	name = "security armored coat"
 	desc = "An armored winter coat with vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
 	icon_state = "coatsecurity_long"
-
-/obj/item/clothing/suit/armor/vest/ironhammer_wintercoat/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
 	name = "watchmen bulletproof suit"
@@ -218,22 +215,13 @@
 	slowdown = 0.6 // Heavier since it now covers more of the body
 	icon_state = "watch_bulletproof"
 	item_state = "watch_bulletproof"
-
-/obj/item/clothing/suit/armor/bulletproof/ironhammer/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/vest/ablative/ironhammer
 	name = "watchmen ablative armor"
 	desc = "A specialized armored plate carrier outfitted with light absorption and heat disperesion technology. This one has been done in Watchmen security colors."
 	icon_state = "watch_ablative"
 	item_state = "watch_ablative"
-
-/obj/item/clothing/suit/armor/vest/ablative/ironhammer/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 ////////////
 
@@ -572,6 +560,7 @@
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
 	icon_state = "technosuit"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 50, bio = 100, rad = 100)
@@ -586,17 +575,13 @@
 						 /obj/item/storage/toolbox)
 	flags_inv = HIDEJUMPSUIT
 
-/obj/item/clothing/suit/armor/vest/technomancersuit/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
-
 //PIRS
 /obj/item/clothing/suit/armor/vest/pirssuit
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "science_armor"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_upgrades = 2
@@ -611,17 +596,13 @@
 						 /obj/item/storage/toolbox)
 	matter = list(MATERIAL_STEEL = 40)
 
-/obj/item/clothing/suit/armor/vest/pirssuit/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
-
 // CAPSA
 
 /obj/item/clothing/suit/armor/vest/capsa
 	name = "CAPSA plate carrier"
 	desc = "A plate carrier with CAPSA stripes and a white cross on its back, denoting its wearer as medical personnel."
 	icon_state = "capsa_armor"
+	has_alternative_armor_icon = FALSE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -630,11 +611,6 @@
 		bio = 50,
 		rad = 0
 	)
-
-/obj/item/clothing/suit/armor/vest/capsa/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 /obj/item/clothing/suit/armor/vest/capsa/fullbody
 	name = "full body CAPSA plate carrier"
@@ -735,6 +711,7 @@
 	name = "outdated ablative vest"
 	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
 		melee = 15,
@@ -745,15 +722,11 @@
 		rad = 0
 	)
 
-/obj/item/clothing/suit/armor/vest/iron_lock_security/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
-
 /obj/item/clothing/suit/armor/vest/ablative
 	name = "ablative vest"
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 10)
 	armor_list = list(
 		melee = 15,
@@ -763,11 +736,6 @@
 		bio = 0,
 		rad = 0
 	)
-
-/obj/item/clothing/suit/armor/vest/ablative/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflective armor vest"
@@ -1132,13 +1100,10 @@
 	desc = "An armored vest carrying military grade trauma plates and advanced ballistic meshes."
 	icon_state = "watch_deputy_armor"
 	blood_overlay_type = "armor"
+	has_alternative_armor_icon = FALSE
 	slowdown = 0.15
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 0, rad = 0)
 
-/obj/item/clothing/suit/armor/platecarrier/hos/toggle_style()
-	var/mob/M = usr
-	to_chat(M, "This clothing has no alternative styles!")
-	return //Probably a better way to do this but I just don't care - Lamasmaster
 
 /*
 // Coats
