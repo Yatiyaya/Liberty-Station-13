@@ -317,7 +317,8 @@
 
 /datum/species/vox
 	name = "Opifex"
-	name_plural = "Opifexi"
+	name_plural = "Opifices"
+	aan = "n"
 	default_form = FORM_OPIFEX
 	obligate_form = TRUE
 	reagent_tag = IS_OPIFEX
@@ -334,11 +335,9 @@
 	spawn_flags = CAN_JOIN
 	hunger_factor = 0.5
 
-	stat_modifiers = list(
-		STAT_MEC = 5,
-		STAT_COG = 5
-	)
+	stat_modifiers = list(STAT_MEC = 10)
 
+	blood_color = "#04419c"
 	dark_color = "#dddddd"
 	light_color = "#dddddd"
 	darksight = 2
@@ -352,7 +351,34 @@
 		"Feathered Wings, Large"
 		)
 
+	cold_level_1 = 290 //Default 270
+	cold_level_2 = 265 //Default 230
+	cold_level_3 = 240  //Default 200
+
+	cold_discomfort_level = 290
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your feathers stands out in goosebumps."
+		)
+
+	heat_level_1 = 370 //Default 330
+	heat_level_2 = 410 //Default 380
+	heat_level_3 = 500 //Default 460
+
+	heat_discomfort_level = 370
+	heat_discomfort_strings = list(
+		"Your feathers prickle in the heat.",
+		"You feel uncomfortably warm.",
+		"Your overheated feathers itch."
+		)
+
 	perks = list(PERK_OPIFEX_TURRET, PERK_OPIFEX_PATCHKIT)
+	inherent_verbs = list(/mob/living/carbon/human/proc/leap_opifex, /mob/living/carbon/human/proc/opifex_gut)
+
+/datum/species/vox/equip_survival_gear(mob/living/carbon/human/H)
+	..()
+	H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/opifex(H), slot_wear_mask)
 
 /datum/species/vox/get_bodytype()
 	return "Opifex"
@@ -475,6 +501,13 @@
 	cold_level_2 = 265 //Default 230
 	cold_level_3 = 240  //Default 200
 
+	cold_discomfort_level = 290
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your chilly scales stands out in goosebumps."
+		)
+
 	heat_level_1 = 370 //Default 330
 	heat_level_2 = 410 //Default 380
 	heat_level_3 = 500 //Default 460
@@ -488,13 +521,6 @@
 
 	dark_color = "#660066"
 	light_color = "#660066"
-
-	cold_discomfort_level = 290
-	list/cold_discomfort_strings = list(
-		"You feel chilly.",
-		"You shiver suddenly.",
-		"Your chilly scales stands out in goosebumps."
-		)
 
 	has_process = list(    // which required-organ checks are conducted.
 		OP_HEART =    /obj/item/organ/internal/heart,

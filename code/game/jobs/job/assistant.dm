@@ -12,6 +12,7 @@
 	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_NONE //Get a job ya lazy bum
 	alt_titles = list("Freelancer")
+	access = list(access_maint_tunnels)
 
 	outfit_type = /decl/hierarchy/outfit/job/assistant
 

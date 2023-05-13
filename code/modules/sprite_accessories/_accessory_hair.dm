@@ -439,6 +439,10 @@
 	name = "Himecut (Long)"
 	icon_state = "hair_himecut_long"
 
+/datum/sprite_accessory/hair/mbraidalt
+	name = "Medium Braid"
+	icon_state = "mediumbraid"
+
 /datum/sprite_accessory/hair/himecut_long_pony
 	name = "Himecut (Long - Ponytail)"
 	icon_state = "hair_himecut_long_ponytail"
@@ -469,6 +473,10 @@
 /datum/sprite_accessory/hair/jensen
 	name = "Jensen"
 	icon_state = "hair_jensen"
+
+/datum/sprite_accessory/hair/keanu
+	name = "Keanu"
+	icon_state = "keanu"
 
 //Ladylike
 /datum/sprite_accessory/hair/ladylike
@@ -602,6 +610,10 @@
 /datum/sprite_accessory/hair/overeye_short
 	name = "Overeye (Short)"
 	icon_state = "hair_overeye_short"
+
+/datum/sprite_accessory/hair/sabitsuki
+	name = "Sabitsuki"
+	icon_state = "sabitsuki"
 
 /datum/sprite_accessory/hair/overeye_vlong
 	name = "Overeye (Very Long)"

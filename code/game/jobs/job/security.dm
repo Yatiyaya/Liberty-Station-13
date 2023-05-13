@@ -132,8 +132,8 @@
 	spawn_positions = 2
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Criminal Profiler"
-	alt_titles = list("Forensics Specialist", "Crimescene Investigator", "Detective")
+	/*noob_name = "Criminal Profiler"*/
+	alt_titles = list("Criminal Profiler","Forensics Specialist", "Crimescene Investigator", "Detective")
 	selection_color = "#a7bbc6"
 
 	initial_balance = INIT_BALANCE_PROF
@@ -192,8 +192,8 @@
 	spawn_positions = 6
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Watchmen Greenhorn"
-	alt_titles = list("Sentry", "Patrolman")
+	/*noob_name = "Watchmen Greenhorn"*/
+	alt_titles = list("Watchmen Greenhorn", "Sentry", "Patrolman")
 	selection_color = "#a7bbc6"
 
 	initial_balance = INIT_BALANCE_HAZARD

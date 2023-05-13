@@ -80,7 +80,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	alt_titles = list("Electrical Technician", "Atmospheric Technician", "Technical Apprentice")
-	noob_name = "Technical Apprentice"
+/*	noob_name = "Technical Apprentice" */
 	access = list(
 		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 		access_external_airlocks, access_construction, access_atmospherics

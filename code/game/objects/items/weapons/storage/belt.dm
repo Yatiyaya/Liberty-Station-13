@@ -172,18 +172,17 @@
 	storage_slots = 12
 
 /obj/item/storage/belt/utility/opifex/full/populate_contents()
-	new /obj/item/tool/crowbar/pneumatic(src)
-	new /obj/item/tool/hammer/deadblow(src)
-	new /obj/item/tool/multitool/advanced(src)
-	new /obj/item/tool/saw/circular/advanced(src)
-	new /obj/item/tool/screwdriver/electric(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/tool/hammer(src)
+	new /obj/item/tool/multitool(src)
+	new /obj/item/tool/saw/circular(src)
+	new /obj/item/tool/screwdriver(src)
 	new /obj/item/stack/cable_coil/random(src)
-	new /obj/item/tool/shovel/power(src)
-	new /obj/item/tool/tape_roll/fiber(src)
-	new /obj/item/tool/weldingtool/advanced(src)
-	new /obj/item/tool/wirecutters/armature(src)
-	new /obj/item/tool/wrench/big_wrench(src)
-	new /obj/item/tool/knife/dagger(src)
+	new /obj/item/tool/shovel(src)
+	new /obj/item/tool/tape_roll(src)
+	new /obj/item/tool/weldingtool(src)
+	new /obj/item/tool/wirecutters(src)
+	new /obj/item/tool/wrench(src)
 
 /obj/item/storage/belt/medical/opifex
 	name = "opifex black medical webbing"
@@ -194,11 +193,9 @@
 
 /obj/item/storage/belt/medical/opifex/full/populate_contents()
 	new /obj/item/device/scanner/health(src)
-	new /obj/item/reagent_containers/syringe/large/chronos(src)
-	new /obj/item/reagent_containers/syringe/large/tricordrazine(src)
-	new /obj/item/reagent_containers/syringe/large/inaprovaline(src)
+	new /obj/item/reagent_containers/syringe/tricordrazine(src)
+	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/storage/pill_bottle/prosurgeon(src)
 	new /obj/item/storage/pill_bottle/bicaridine(src)
 	new /obj/item/storage/pill_bottle/dermaline(src)
 	new /obj/item/storage/pill_bottle/dexalin_plus(src)
@@ -385,11 +382,9 @@
 	new /obj/item/gun/energy/gun(src)
 	new /obj/item/cell/medium/high(src)
 	new /obj/item/cell/medium/high(src)
-	new /obj/item/tool/knife/dagger/assassin(src)
 	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
 	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/chem_grenade/teargas(src)
+	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
 
 /obj/item/storage/belt/security/neotheology
 	name = "Bonfire tactical belt"

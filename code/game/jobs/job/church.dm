@@ -40,16 +40,15 @@
 		CRUCIFORM_REDLIGHT
 	)
 
-	description = "The Oathpledge serves as the head of the local branch of the Church of the Bonfire. <br>\
-	You represent the interest of the church and its disciples within the colony - identified by the cruciform implant upon their breast.<br>\
-	Your most pressing duty is as a spiritual leader. Preach to the flock, inspire faith and strength, and convert those seeking salvation.<br>\
-	While you are no trained psychologist, you can provide support and guidance to all - in both bright and dark times.<br>\
-	Additional duty may require holding funerals for the truly lost, or host parties and group praying.<br>\
-	The Crusader protocol may also be enacted under your command when facing a Hivemind threat. Use this boost, and your ritual book, to defeat evil."
+	description = "The Oathpledge is the leader and beacon of guidance of the main surface stronghold. One of many in both cases.<br>\
+	You represent the interests of the Custodians, their knights and their philosophical views - working together with purifying intentions against the many plagues that curse the colony.<br>\
+	Your major duty is to ensure that the Oaths are respected and followed by all Hearthcore users. You are the symbol of discipline being superior to mindwashing - different from your enemies - and are obligated to act as such.<br>\
+	You are capable of altering the neural data of Hearthcores and provide support to your knights in battle, allowing their mental boundaries to vanish and bring their purifying force into light, making demigods out of trained warriors. You have ways to know where an enemy is hiding.<br>\
+	Your role does not mean you are the highest in rank or the oldest member, but rather that you specialize in leadership, social capability, and financial spending."
 
-	duties = "Represent the interests of church disciples on the colony. Protect them from persecution and speak for them.<br>\
-		Hold mass, give sermons, preach to the faithful, and lead group ritual sessions.<br>\
-		Hold funerals for those who cannot be saved."
+	duties = "Provide guidance and discipline to Oathbounds and To-be Oathbounds.<br>\
+	Hold philosophical discussions and plan cleansing efforts against plague-infested places, the mutants, the brainwashers and the slavers.<br>\
+	Provide combative support to other Oathbounds and stay in watch against whatever may hurt the precious dogmas of the Custodians."
 
 	setup_restricted = TRUE
 
@@ -86,14 +85,14 @@
 							 /datum/computer_file/program/wordprocessor,
 							 /datum/computer_file/program/reports)
 
-	description = "The Artist serves as a versatile performance artist here to entertain the colony.<br>\
-	You may find your colleagues distracted by boring duties or senseless bickering, so work hard to bring them some real culture.<br>\
-	The CEO pays you a terrible retaining fee, so use your wits to sustain yourself - perhaps ask your audience for donations.<br>\
-	In addition you do not gain desires like other members of the colony, instead you spend your insight at your workbench to create expensive works of art worth selling."
+	description = "Where the Oathpledge discipline the Oathbounds, the Forgemaster discipline the fire - specialized in engineering and tinkering, the Forgemasters are the backbone of the Custodian’s supportive operations.<br>\
+    Artisans of marvels beyond normal comprehension, one uses the fist as a hammer and fire as fuel to discipline red hot steel into shape, creating statues, walls, machines, Hearthcore upgrades, artistic oddities and weapon mods.<br>\
+    Forgemasters may not have the fighting capability of the unspecialized Oathbounds, yet their creative mind provides financial support, combat prowess, equipment and upgrades to the Custodians.<br>\
+    In addition, you do not gain desires like other members of the colony, you spend your insight at your workbench to create expensive works of art fit to trade or to be used to recover the insight of the common people."
 
-	duties = "Provide (family-friendly) entertainment to the crew with your varied talents.<br>\
-		Create and sell valuable works of art in your artist bench.<br>\
-		Try to be a successful rather than starving artist. The costume vendor and equipment in your cramped studio may prove useful."
+	duties = "Create, use and sell valuable arts of your own making.<br>\
+	Ensure that the Stronghold is well protected against the insectoid plague, the mutants and mindcontrolled fiends."
+
 	setup_restricted = TRUE
 
 /obj/landmark/join/start/forgemaster
@@ -132,13 +131,15 @@
 
 	perks = list(PERK_CHANNELING)
 
-	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
-	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
-	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
+	description = "The Enkindled are the blood transmuters specialized in the proto-science of traditions of biology - with the revolutionary custodian spin.<br>\
+    The Enkindled are not proficient in surgery and lack the tools for it, but they are able to produce many different elixirs from the corpses of fallen creatures with varying effects - from healing tinctures, throwable flasks, poison needles, combat enhancers and status potions.<br>\
+    Be aware, potions can be too strong to Oathbounds about to head into battle, in fact, many potions also possess negative qualities that the Oathbounds must be aware of before combat.<br>\
+	Hearthcore users cannot be cloned, so it falls to the Enkindled to bring them back to life with their Hearthcore, reborn with the neural nature of the radiance, bringing their brain back to life and allowing further organ revival to take place.<br>\
+    Enkindled are known for being somewhat mentally derailed  - in a good and bad way. They are more than capable of recovering the sanity of others as much as they heal, with the last possibly causing sanity damage."
 
-	duties = "Operate the bioreactor and manage biomass for the church machines.<br>\
-		Maintain areas owned by the church, keeping the facilities functional and in good order.<br>\
-		Offer assistance to the faithful and non-faithful alike."
+	duties = "Provide medical support to other Oathbounds in battle and in rest - but do not get in the way of CAPSA. <br>\
+	Provide sanity recovery and enhancing services to those you deem fit.<br>\
+	Produce strong potions and don't sell it to ingenuous Oathbounds, throw a flask at a roach and watch it become an acidic glop for fun"
 
 	setup_restricted = TRUE
 
@@ -178,13 +179,14 @@
 
 	perks = list(PERK_CHANNELING)
 
-	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
-	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
-	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
+	description = "The Oathbounds are the combat units, footsoldiers of purity that burn down the plague inside and outside the colony, along with mutants and antagonistic entities that defy their dogmas.<br>\
+    Oathbounds can supply their forces in expeditions and help change the tide of battle with their high defensive capabilities and overall toughness in the frontlines, keeping the flimsy gun-users behind and protected, or ignite them on accident - to the disdain of their Oathpledge.<br>\
+    Oathbounds are meant to be well trained and reflect the strength of people in the times of old, when society did not weaken it's people, so one must act like such (See: Oaths and Custodian culture). They are not allowed to use firearms like all other custodians, but their blades, staves and throwing weapons of enhanced rudimentary technology proves highly competitive against the most common technology.<br>\
+    Oathbounds should work the machinery and provide the colony with Custodian products of textile and protective nature, but only non-igniting weapons can be sold."
 
-	duties = "Operate the bioreactor and manage biomass for the church machines.<br>\
-		Maintain areas owned by the church, keeping the facilities functional and in good order.<br>\
-		Offer assistance to the faithful and non-faithful alike."
+	duties = "Cleanse the insectoid plague from the halls and maintenance tunnels, but take care not to harm the Cht'mant next door.<br>\
+	Ensure that there's no religious entity putting Oathbounds's free will at risk, spread philosophical ideas around the colony.<br>\
+	Help other custodian roles to the best of your abilities as much as they help you, ask the Enkindled for their strongest potions, work the Bonfire and produce many textile and armor products to help the economy."
 
 	setup_restricted = TRUE
 
