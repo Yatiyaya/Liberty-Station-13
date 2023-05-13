@@ -46,6 +46,7 @@
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
+	var/mob/M = usr
 
 	if(!isliving(loc))
 		return
@@ -54,7 +55,6 @@
 		to_chat(M, "This clothing has no alternative styles!")
 		return
 
-	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "armor"
 	options["Security"] = "armor_security"
@@ -215,7 +215,6 @@
 	slowdown = 0.6 // Heavier since it now covers more of the body
 	icon_state = "watch_bulletproof"
 	item_state = "watch_bulletproof"
-	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/vest/ablative/ironhammer
 	name = "watchmen ablative armor"
@@ -1100,10 +1099,8 @@
 	desc = "An armored vest carrying military grade trauma plates and advanced ballistic meshes."
 	icon_state = "watch_deputy_armor"
 	blood_overlay_type = "armor"
-	has_alternative_armor_icon = FALSE
 	slowdown = 0.15
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 0, rad = 0)
-
 
 /*
 // Coats
