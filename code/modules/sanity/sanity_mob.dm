@@ -9,19 +9,19 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 #define SANITY_VIEW_DAMAGE_MOD (0.4 * GLOB.GLOBAL_SANITY_MOD)
 
 // Damage received from unpleasant stuff in view
-#define SANITY_DAMAGE_VIEW(damage, vig, dist) ((damage) * SANITY_VIEW_DAMAGE_MOD * (1.2 - (vig) / STAT_LEVEL_MAX) * (1 - (dist)/15))
+#define SANITY_DAMAGE_VIEW(damage, wil, dist) ((damage) * SANITY_VIEW_DAMAGE_MOD * (1.2 - (wil) / STAT_LEVEL_MAX) * (1 - (dist)/15))
 
 // Damage received from body damage
-#define SANITY_DAMAGE_HURT(damage, vig) (min((damage) / 5 * SANITY_DAMAGE_MOD * (1.2 - (vig) / STAT_LEVEL_MAX), 60))
+#define SANITY_DAMAGE_HURT(damage, wil) (min((damage) / 5 * SANITY_DAMAGE_MOD * (1.2 - (wil) / STAT_LEVEL_MAX), 60))
 
 // Damage received from shock
-#define SANITY_DAMAGE_SHOCK(shock, vig) ((shock) / 50 * SANITY_DAMAGE_MOD * (1.2 - (vig) / STAT_LEVEL_MAX))
+#define SANITY_DAMAGE_SHOCK(shock, wil) ((shock) / 50 * SANITY_DAMAGE_MOD * (1.2 - (wil) / STAT_LEVEL_MAX))
 
 // Damage received from psy effects
-#define SANITY_DAMAGE_PSY(damage, vig) (damage * SANITY_DAMAGE_MOD * (2 - (vig) / STAT_LEVEL_MAX))
+#define SANITY_DAMAGE_PSY(damage, wil) (damage * SANITY_DAMAGE_MOD * (2 - (wil) / STAT_LEVEL_MAX))
 
 // Damage received from seeing someone die
-#define SANITY_DAMAGE_DEATH(vig) (10 * SANITY_DAMAGE_MOD * (1 - (vig) / STAT_LEVEL_MAX))
+#define SANITY_DAMAGE_DEATH(wil) (10 * SANITY_DAMAGE_MOD * (1 - (wil) / STAT_LEVEL_MAX))
 
 #define SANITY_GAIN_SMOKE 0.05 // A full cig restores 300 times that
 #define SANITY_GAIN_SAY 1
@@ -53,7 +53,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	var/sanity_passive_gain_multiplier = 1
 	var/sanity_invulnerability = 0
 	var/level
-	var/max_level = 150 //Soj change to give a bit more breathing room
+	var/max_level = 200 //Soj change to give a bit more breathing room / from 150 to 200 let's see where this goes
 	var/level_change = 0
 
 	var/insight
@@ -156,15 +156,15 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	activate_mobs_in_range(owner, SANITY_MOB_DISTANCE_ACTIVATION)
 	if(sanity_invulnerability)//Sorry, but that needed to be added here :C
 		return
-	var/cog = owner.stats.getStat(STAT_WIL)
+	var/wil = owner.stats.getStat(STAT_WIL)
 	for(var/atom/A in view(owner.client ? owner.client : owner))
 		if(A.sanity_damage) //If this thing is not nice to behold
-			. += SANITY_DAMAGE_VIEW(A.sanity_damage, cog, get_dist(owner, A))
+			. += SANITY_DAMAGE_VIEW(A.sanity_damage, wil, get_dist(owner, A))
 
 		if(owner.stats.getPerk(PERK_IDEALIST) && ishuman(A)) //Moralists react negatively to people in distress
 			var/mob/living/carbon/human/H = A
 			if(H.sanity.level < 30 || H.health < 50)
-				. += SANITY_DAMAGE_VIEW(0.1, cog, get_dist(owner, A))
+				. += SANITY_DAMAGE_VIEW(0.1, wil, get_dist(owner, A))
 // Hold yourself together. Keep your Morale up.
 
 /datum/sanity/proc/handle_area()
@@ -173,7 +173,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 		return 0
 	. = my_area.sanity.affect
 	if(. < 0)
-		. *= owner.stats.getStat(STAT_WIL) / STAT_LEVEL_MAX //Mental state should matter more than your perception and agility
+		. *= owner.stats.getStat(STAT_COG) / STAT_LEVEL_MAX //Mental state should matter more than your perception and agility
 
 /datum/sanity/proc/handle_breakdowns()
 	for(var/datum/breakdown/B in breakdowns)
@@ -406,7 +406,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	changeLevel(-SANITY_DAMAGE_HURT(amount, owner.stats.getStat(STAT_WIL)))
 
 /datum/sanity/proc/onPsyDamage(amount)
-	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_WIL)))
+	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_COG)))
 
 /datum/sanity/proc/onSeeDeath(mob/M)
 	var/mob/living/carbon/human/H
