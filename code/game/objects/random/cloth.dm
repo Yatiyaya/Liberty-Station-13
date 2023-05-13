@@ -72,7 +72,7 @@
 
 /obj/random/cloth/suit/item_to_spawn()
 	return pickweight(list(/obj/item/clothing/suit/poncho = 10,
-				/obj/item/clothing/suit/storage/rank/ass_jacket = 10,
+				/obj/item/clothing/suit/storage/toggle/liberass_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/cargo_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/insp_trench = 5,
 				/obj/item/clothing/suit/storage/hazardvest = 10,

@@ -113,7 +113,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	var/list/loadout_1 = list(
 	uniform = /obj/item/clothing/under/rank/assistant,
 	hat = /obj/item/clothing/head/hardhat,
-	suit = /obj/item/clothing/suit/storage/rank/ass_jacket,
+	suit = /obj/item/clothing/suit/storage/toggle/liberass_jacket,
 	shoes = /obj/item/clothing/shoes/reinforced,
 	back = /obj/item/storage/backpack/satchel,
 	gloves = /obj/item/clothing/gloves/thick,

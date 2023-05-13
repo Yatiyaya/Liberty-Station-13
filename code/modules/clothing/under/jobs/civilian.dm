@@ -1,10 +1,17 @@
 //Alphabetical order of civilian jobs.
-
+/* Assistant - Archive
 /obj/item/clothing/under/rank/assistant
 	desc = "A standard-issue black and orange colonist uniform."
 	name = "colonist's uniform"
 	icon_state = "assistant"
 	item_state = "assistant"
+*/
+//Libery Assistant
+/obj/item/clothing/under/rank/assistant
+	name = "colonist's uniform"
+	desc = "A standard-issue black and brown colonist uniform.  Get up, there's work to be done, and we work for ourselves now."
+	icon_state = "liberassistant"
+	item_state = "liberassistant"
 
 /obj/item/clothing/under/rank/assistant/formal
 	name = "colonist's formal uniform"
