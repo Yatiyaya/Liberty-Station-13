@@ -77,8 +77,8 @@
 	wage = WAGE_PROFESSIONAL
 
 	minimum_character_age = 25
-	alt_titles = list("Physician", "CAPSA Surgeon", "Nightingale")
-	noob_name = "Medical Intern"
+	alt_titles = list("Medical Intern", "Physician", "CAPSA Surgeon", "Nightingale")
+/*	noob_name = "Medical Intern" */
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	department_account_access = TRUE
 
@@ -124,8 +124,8 @@
 	spawn_positions = 3
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Ungratifying."
-	noob_name = "First Aid Responder"
-	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
+/*	noob_name = "First Aid Responder" */
+	alt_titles = list("First Aid Responder", "Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
 
 	initial_balance = INIT_BALANCE_PROF
