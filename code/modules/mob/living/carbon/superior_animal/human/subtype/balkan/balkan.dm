@@ -10,7 +10,7 @@
 	maxHealth = 100
 	health = 100
 
-	armor = list(melee = 50, bullet = 50, energy = 45, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 40, energy = 35, bomb = 40, bio = 100, rad = 100)
 
 	casingtype = null
 
