@@ -195,6 +195,17 @@
 	dark_color = "#ff0000"
 	light_color = "#990000"
 
+	cold_level_1 = 240 //Default 270
+	cold_level_2 = 200 //Default 230
+	cold_level_3 = 170  //Default 200
+
+	cold_discomfort_level = 240
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your chilly flesh stands out in goosebumps."
+		)
+
 	spawn_flags = CAN_JOIN
 
 	stat_modifiers = list(
@@ -238,6 +249,7 @@
 /datum/species/akula
 	name = "Akula"
 	name_plural = "Akulas"
+	aan = "n"
 	default_form = FORM_AKULA
 	obligate_form = TRUE
 	reagent_tag = IS_AKULA
@@ -306,6 +318,17 @@
 	dark_color = "#ffff00"
 	light_color = "#ffff00"
 
+	cold_level_1 = 240 //Default 270
+	cold_level_2 = 200 //Default 230
+	cold_level_3 = 170  //Default 200
+
+	cold_discomfort_level = 240
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your chilly flesh stands out in goosebumps."
+		)
+
 	permitted_ears  = list("Naramad Ears", "Sleek Ears")
 	permitted_tail  = list("Naramad Tail", "Naramad Tail 2")
 	permitted_wings = list()
@@ -351,11 +374,11 @@
 		"Feathered Wings, Large"
 		)
 
-	cold_level_1 = 290 //Default 270
-	cold_level_2 = 265 //Default 230
-	cold_level_3 = 240  //Default 200
+	cold_level_1 = 270
+	cold_level_2 = 240 //Default 230
+	cold_level_3 = 210  //Default 200
 
-	cold_discomfort_level = 290
+	cold_discomfort_level = 270
 	list/cold_discomfort_strings = list(
 		"You feel chilly.",
 		"You shiver suddenly.",
@@ -411,6 +434,28 @@
 
 	dark_color = "#5ac18e"
 	light_color = "#5ac18e"
+
+	cold_level_1 = 270 //Default 270
+	cold_level_2 = 240 //Default 230
+	cold_level_3 = 210  //Default 200
+
+	cold_discomfort_level = 270
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your exoskeleton stands out in goosebumps."
+		)
+
+	heat_level_1 = 370 //Default 330
+	heat_level_2 = 410 //Default 380
+	heat_level_3 = 500 //Default 460
+
+	heat_discomfort_level = 370
+	heat_discomfort_strings = list(
+		"Your scales prickles in the heat.",
+		"You feel uncomfortably warm.",
+		"Your overheated exosleketon itches."
+		)
 
 	permitted_ears  = list("Bee Antennae",
 		"Citheronia Antennae",
@@ -497,11 +542,11 @@
 		STAT_TGH = 2
 	)
 
-	cold_level_1 = 290 //Default 270
-	cold_level_2 = 265 //Default 230
-	cold_level_3 = 240  //Default 200
+	cold_level_1 = 270 //Default 270
+	cold_level_2 = 240 //Default 230
+	cold_level_3 = 210  //Default 200
 
-	cold_discomfort_level = 290
+	cold_discomfort_level = 270
 	list/cold_discomfort_strings = list(
 		"You feel chilly.",
 		"You shiver suddenly.",
