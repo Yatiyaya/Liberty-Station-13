@@ -32,6 +32,7 @@
 	icon_state = "armor"
 	item_state = "armor"
 	blood_overlay_type = "armor"
+	var/has_alternative_armor_icon = TRUE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -45,11 +46,15 @@
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
+	var/mob/M = usr
 
 	if(!isliving(loc))
 		return
 
-	var/mob/M = usr
+	if(!has_alternative_armor_icon)
+		to_chat(M, "This clothing has no alternative styles!")
+		return
+
 	var/list/options = list()
 	options["Baseline"] = "armor"
 	options["Security"] = "armor_security"
@@ -101,9 +106,9 @@
 	desc = "An armored vest of dubious quality. Provides decent protection against physical damage, for a piece of crap."
 	icon_state = "armor_handmade"
 	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
+		melee = 15,
+		bullet = 0,
+		energy = 0,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -140,14 +145,6 @@
 	item_state = "armor_handmade_fullbody"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
-	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
-		bomb = 10,
-		bio = 0,
-		rad = 0
-	) // No gaining stats, just coverage!
 
 /obj/item/clothing/suit/armor/vest/handmade/full/toggle_style()
 	set name = "Adjust Style"
@@ -182,6 +179,7 @@
 	name = "watchmen armor vest"
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "watch_basic"
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
 	name = "watchmen tactical unit armor"
@@ -207,6 +205,7 @@
 	name = "security armored coat"
 	desc = "An armored winter coat with vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
 	icon_state = "coatsecurity_long"
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
 	name = "watchmen bulletproof suit"
@@ -560,6 +559,7 @@
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
 	icon_state = "technosuit"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 50, bio = 100, rad = 100)
@@ -580,6 +580,7 @@
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "science_armor"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_upgrades = 2
@@ -600,6 +601,7 @@
 	name = "CAPSA plate carrier"
 	desc = "A plate carrier with CAPSA stripes and a white cross on its back, denoting its wearer as medical personnel."
 	icon_state = "capsa_armor"
+	has_alternative_armor_icon = FALSE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -708,6 +710,7 @@
 	name = "outdated ablative vest"
 	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
 		melee = 15,
@@ -722,6 +725,7 @@
 	name = "ablative vest"
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 10)
 	armor_list = list(
 		melee = 15,
@@ -731,7 +735,6 @@
 		bio = 0,
 		rad = 0
 	)
-
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflective armor vest"
@@ -1046,7 +1049,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier"
-	//options["Green"] = "platecarrier_green"
 	options["Winter"] = "platecarrier_snow"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -1079,7 +1081,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier_fullbody"
-	//options["Green"] = "platecarrier_green_fullbody"
 	options["Winter"] = "platecarrier_snow_fullbody"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -1119,35 +1120,6 @@
 		rad = 0
 	)
 	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/hos/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	/*options["Armored coat"] = "hos"
-	options["Alt armored coat"] = "new_wo"
-	options["Formal coat"] = "wo_formal"
-	options["Formal coat alt"] = "wo_formallong"
-	options["WO Greatcoat"] = "ihc_coat"
-	options["WO Cloaked Greatcoat"] = "ihc_coat_cloak"
-	options["WO Blue Greatcoat"] = "ihc_coat_blue"
-	options["WO Blue Cloaked Greatcoat"] = "ihc_coat_cloak_blue" - None are updated*/
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
 
 /obj/item/clothing/suit/armor/commander
 	name = "commander's armored coat"
