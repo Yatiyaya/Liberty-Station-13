@@ -406,7 +406,7 @@
 
 /datum/sprite_accessory/hair/gentle2_long_alt
 	name = "Gentle (Long - ALT)"
-	icon_state = "hair_gentle2_long_alt"
+	icon_state = "hair_gentle2_longalt"
 
 //Glossy
 /datum/sprite_accessory/hair/glossy
@@ -611,10 +611,6 @@
 	name = "Overeye (Short)"
 	icon_state = "hair_overeye_short"
 
-/datum/sprite_accessory/hair/sabitsuki
-	name = "Sabitsuki"
-	icon_state = "sabitsuki"
-
 /datum/sprite_accessory/hair/overeye_vlong
 	name = "Overeye (Very Long)"
 	icon_state = "hair_overeye_verylong"
@@ -627,9 +623,13 @@
 	name = "Overeye (Very Short - ALT)"
 	icon_state = "hair_overeye_veryshort_alt"
 
+/datum/sprite_accessory/hair/overye_sabitsuki
+	name = "Overeye (Sabitsuki)"
+	icon_state = "hair_overeye_sabitsuki"
+
 /datum/sprite_accessory/hair/overeye_oxton
 	name = "Overeye (Oxton)"
-	icon_state = "hair_oxton"
+	icon_state = "hair_overeye_oxton"
 
 //Parted
 /datum/sprite_accessory/hair/parted
@@ -893,6 +893,10 @@
 	name = "Short Hair (4)"
 	icon_state = "hair_shorthair4"
 
+/datum/sprite_accessory/hair/shorthair5
+	name = "Short Hair (Pixie)"
+	icon_state = "hair_shorthair_pixie"
+
 //Sideswept
 /datum/sprite_accessory/hair/sideswept
 	name = "Sideswept"
@@ -985,17 +989,19 @@
 	name = "Updo"
 	icon_state = "hair_updo"
 
+//Very Long
+/datum/sprite_accessory/hair/vlong_fringe
+	name = "Very Long (Fringe)"
+	icon_state = "hair_vlong_fringe"
+
 //Wheeler
 /datum/sprite_accessory/hair/wheeler
 	name = "Wheeler"
 	icon_state = "hair_wheeler"
 
-/*
-//Messy
-/datum/sprite_accessory/hair/hitop
-	name = "Hitop"
-	icon_state = "hair_hitop"
-*/
+///////////
+/* ALIEN */
+///////////
 
 /datum/sprite_accessory/hair/una_hood
 	name = "Lizard Hood"
