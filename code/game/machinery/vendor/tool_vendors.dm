@@ -3,8 +3,8 @@
 	name = "HexaOptimum Assistant Vendor"
 	desc = "A HexaOptimum vendor providing components for your own simple bomb and remote control making."
 	product_slogans = "HexaOptimum is not responsible for any damage accumulated from using our products!;Come get your assemblies!;Did you ever want your own firecracker?"
-	icon_state = "citadel_assistant"
-	icon_vend = "citadel_assistant-vend"
+	icon_state = "citadel"
+	icon_vend = "citadel-vend"
 	icon_deny = "citadel-deny"
 	products = list(
 		/obj/item/device/assembly/prox_sensor = 10,
