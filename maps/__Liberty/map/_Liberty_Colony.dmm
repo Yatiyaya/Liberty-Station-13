@@ -22019,22 +22019,10 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/techshop)
 "fRq" = (
-/obj/structure/reagent_dispensers/biomatter/large,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
-/obj/effect/floor_decal/industrial/warningred/full,
-/obj/machinery/door/window/southleft{
-	dir = 1;
-	name = "Biomatter containment";
-	req_access = list(45)
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
+/obj/structure/table/glass,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
 "fRr" = (
