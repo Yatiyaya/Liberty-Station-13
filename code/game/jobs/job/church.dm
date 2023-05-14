@@ -18,7 +18,7 @@
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
 
 	initial_balance = INIT_BALANCE_COMMAND
-	wage = WAGE_COMMAND //The church has deep pockets
+	wage = WAGE_COMMAND
 	department_account_access = TRUE
 	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
 
@@ -72,8 +72,8 @@
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
 
-	initial_balance = INIT_BALANCE_PROF
-	wage = WAGE_PROFESSIONAL //Specialist
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR
 	stat_modifiers = list(
 		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
 		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
@@ -162,7 +162,7 @@
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
 
 	initial_balance = INIT_BALANCE_MENIAL
-	wage = WAGE_LABOUR_DUMB
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
 	health_modifier = 5
