@@ -139,8 +139,8 @@
 	icon_state = "policeberet"
 
 /obj/item/clothing/head/rank/commander
-	name = "warrant officer beret"
-	desc = "A grey warrant officer beret signifying a command position."
+	name = "chief deputy beret"
+	desc = "A grey chief deputy beret signifying a command position."
 	icon_state = "beret_navy_hos"
 
 /obj/item/clothing/head/rank/commander/verb/toggle_style()
@@ -153,9 +153,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["WO Beret"] = "beret_navy_hos"
-	options["WO Cap"] = "ihc_cap"
-	options["WO Default"] = "hoshat"
+	options["CD Beret"] = "beret_navy_hos"
+	options["CD Cap"] = "watch_deputy"
+	options["CD Default"] = "hoshat"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -169,8 +169,8 @@
 		return 1
 
 /obj/item/clothing/head/rank/warden/beret
-	name = "supply specialist beret"
-	desc = "A red watchmen beret signifying a supply specialist position."
+	name = "armorer beret"
+	desc = "A red watchmen beret signifying a armoer position."
 	icon_state = "beret_navy_warden"
 
 /obj/item/clothing/head/rank/engineering

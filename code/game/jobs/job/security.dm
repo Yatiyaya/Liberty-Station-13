@@ -11,13 +11,15 @@
 	difficulty = "Very Hard."
 	selection_color = "#97b0be"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	ideal_character_age = 40
 	minimum_character_age = 30
 	department_account_access = TRUE
 	playtimerequired = 2500
 	health_modifier = 25
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/dc
 
@@ -73,11 +75,13 @@
 	alt_titles = list("Supply Specialist", "Quartermaster", "Warden")
 	selection_color = "#a7bbc6"
 	department_account_access = TRUE
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	minimum_character_age = 25
 	playtimerequired = 1200
 	health_modifier = 20
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/armorer
 
@@ -128,13 +132,15 @@
 	spawn_positions = 2
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Criminal Profiler"
-	alt_titles = list("Forensics Specialist", "Crimescene Investigator", "Detective")
+	/*noob_name = "Criminal Profiler"*/
+	alt_titles = list("Criminal Profiler","Forensics Specialist", "Crimescene Investigator", "Detective")
 	selection_color = "#a7bbc6"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	playtimerequired = 1200
 	health_modifier = 5
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/investigator
 
@@ -186,12 +192,14 @@
 	spawn_positions = 6
 	supervisors = "the Deputy Chief"
 	difficulty = "Hard."
-	noob_name = "Watchmen Greenhorn"
-	alt_titles = list("Sentry", "Patrolman")
+	/*noob_name = "Watchmen Greenhorn"*/
+	alt_titles = list("Watchmen Greenhorn", "Sentry", "Patrolman")
 	selection_color = "#a7bbc6"
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	health_modifier = 10
-	disallow_species = list(FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_NASHEF)
 
 	outfit_type = /decl/hierarchy/outfit/job/security/watchmen
 

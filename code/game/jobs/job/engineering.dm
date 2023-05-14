@@ -12,12 +12,14 @@
 	selection_color = "#c7b97b"
 	req_admin_notify = 1
 	playtimerequired = 1200
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	ideal_character_age = 50
 	minimum_character_age = 25
 	health_modifier = 5
 
-	disallow_species = list(FORM_UNBRANDED, FORM_PIRSYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief
 
 	access = list(
@@ -72,16 +74,17 @@
 	supervisors = "the Union Chief"
 	difficulty = "Medium."
 	selection_color = "#d5c88f"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	alt_titles = list("Electrical Technician", "Atmospheric Technician", "Technical Apprentice")
-	noob_name = "Technical Apprentice"
+/*	noob_name = "Technical Apprentice" */
 	access = list(
 		access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 		access_external_airlocks, access_construction, access_atmospherics
 	)
-
-	disallow_species = list(FORM_PIRSYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 
 	stat_modifiers = list(
@@ -126,10 +129,12 @@
 	difficulty = "Easy."
 	alt_titles = list("Drill Technician", "Mining Apprentice")
 	selection_color = "#d5c88f"
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD
+
 	health_modifier = 5
 
-	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
 	description = "The Mining Technician is a professional resource procurer, acquiring valuable minerals and materials for the Terra-Therma Workers' Union. Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can. Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use. Whatever you dig up will go to the Union, and from then on it is the responsibility of others within the Union to use or sell as needed. The deep tunnels are far less dangerous than the blisteringly cold wilderness, but pack well - disappearances are not unheard of."
@@ -160,5 +165,3 @@
 	name = "Mining Technician"
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
-
-//No we won't

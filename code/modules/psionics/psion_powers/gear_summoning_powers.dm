@@ -101,7 +101,7 @@
 	var/timer = 10 SECONDS
 
 	if(pay_power_cost(psi_point_cost))
-		var/obj/item/shield_projector/line/psionic/shield = new(src, owner.stats.getStat(STAT_COG), owner.dir)
+		var/obj/item/shield_projector/line/psionic/shield = new(src, owner.stats.getStat(STAT_WIL), owner.dir)
 		owner.visible_message(
 			"[owner] stares ahead as a psychic barrier forms from thin air!",
 			"You focus your will and create an impassible barrier!"

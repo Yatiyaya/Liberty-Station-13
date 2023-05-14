@@ -57,7 +57,7 @@
 	build_path = /obj/item/gun/projectile/automatic/broz
 
 /datum/design/autolathe/gun/specialist
-	name = "ML 10mm \"Specialist\""
+	name = "ML 9mm \"Specialist\""
 	build_path = /obj/item/gun/projectile/automatic/specialist
 
 // 10mm S M G S

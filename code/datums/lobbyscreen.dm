@@ -26,13 +26,17 @@
 	possibleMusic = list(
 		'sound/music/lobby/Phokorus.ogg',
 		'sound/music/lobby/Liberty.ogg',
-		'sound/music/lobby/Richi.ogg'
+		'sound/music/lobby/Richi.ogg',
+		'sound/music/lobby/Richi2.ogg'
 	)
 
 /datum/lobbyscreen/liberty_therma
 	image_file = 'icons/title_screens/liberty_terra.png'
 	possibleMusic = list(
-		'sound/music/lobby/Phokorus.ogg'
+		'sound/music/lobby/Phokorus.ogg',
+		'sound/music/lobby/Liberty.ogg',
+		'sound/music/lobby/Richi.ogg',
+		'sound/music/lobby/Richi2.ogg'
 	)
 
 /datum/lobbyscreen/liberty_blondie
@@ -40,7 +44,8 @@
 	possibleMusic = list(
 		'sound/music/lobby/Phokorus.ogg',
 		'sound/music/lobby/Liberty.ogg',
-		'sound/music/lobby/Richi.ogg'
+		'sound/music/lobby/Richi.ogg',
+		'sound/music/lobby/Richi2.ogg'
 	)
 
 /datum/lobbyscreen/proc/play_music(client/C)

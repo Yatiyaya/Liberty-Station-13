@@ -916,3 +916,4 @@
 #define TRASH_GUNMODS list(/obj/item/gun_upgrade/trigger/faulty, /obj/item/gun_upgrade/barrel/faulty, \
 		/obj/item/gun_upgrade/muzzle/faulty, /obj/item/gun_upgrade/mechanism/faulty, \
 		/obj/item/gun_upgrade/scope/faulty, /obj/item/gun_upgrade/mechanism/faulty_trapped)
+

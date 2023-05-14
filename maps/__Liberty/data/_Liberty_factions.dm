@@ -52,7 +52,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/Skylight
-	name = "Skylight Syndiate - Robert Ryan"
+	name = "Skylight Syndiate - Evelyn Ross"
 
 	fax_alert = "Skylight REQUISITION FAX"
 	fax_response = "Skylights Reply"
@@ -61,7 +61,7 @@
 	darkcolor = "#be6602"
 	lightcolor = "#f9a94e"
 
-	stamptext = "This paper has been stamped with Robert Ryan's chairman Insignia."
+	stamptext = "This paper has been stamped with Evelyn Ross's chairman Insignia."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/prospectors

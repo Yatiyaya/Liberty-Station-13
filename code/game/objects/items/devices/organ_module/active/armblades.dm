@@ -27,6 +27,7 @@
 	icon_state = "wolverine"
 	name = "claws"
 	desc = "A set of claws deployed from the tips of your fingers. Great for cutting people into ribbons."
+	force = WEAPON_FORCE_NORMAL
 
 /obj/item/organ_module/active/simple/wolverine
 	name = "embedded claws"

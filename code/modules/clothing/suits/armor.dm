@@ -32,6 +32,7 @@
 	icon_state = "armor"
 	item_state = "armor"
 	blood_overlay_type = "armor"
+	var/has_alternative_armor_icon = TRUE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -45,11 +46,15 @@
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
+	var/mob/M = usr
 
 	if(!isliving(loc))
 		return
 
-	var/mob/M = usr
+	if(!has_alternative_armor_icon)
+		to_chat(M, "This clothing has no alternative styles!")
+		return
+
 	var/list/options = list()
 	options["Baseline"] = "armor"
 	options["Security"] = "armor_security"
@@ -101,9 +106,9 @@
 	desc = "An armored vest of dubious quality. Provides decent protection against physical damage, for a piece of crap."
 	icon_state = "armor_handmade"
 	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
+		melee = 15,
+		bullet = 0,
+		energy = 0,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -140,14 +145,6 @@
 	item_state = "armor_handmade_fullbody"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
-	armor_list = list(
-		melee = 30,
-		bullet = 20,
-		energy = 15,
-		bomb = 10,
-		bio = 0,
-		rad = 0
-	) // No gaining stats, just coverage!
 
 /obj/item/clothing/suit/armor/vest/handmade/full/toggle_style()
 	set name = "Adjust Style"
@@ -181,20 +178,49 @@
 /obj/item/clothing/suit/armor/vest/ironhammer
 	name = "watchmen armor vest"
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
-	icon_state = "armor_ironhammer"
+	icon_state = "watch_basic"
+	has_alternative_armor_icon = FALSE
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
 	name = "watchmen tactical unit armor"
 	desc = "An armored vest painted in Watchmen colors. This one has shoulderpads and kneepads included to protect all parts of the body."
-	icon_state = "armor_ih_fullbody"
-	item_state = "armor_ih_fullbody"
+	icon_state = "watch_basic_full"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
+
+/obj/item/clothing/suit/armor/vest/ironhammer/detective
+	name = "watchmen criminal investigator vest"
+	desc = "An armored vest that protects against some damage. This one appears to be in Watchmen colors and uses lighweight fibers; allowing for heavier armor without compromising on added weight."
+	icon_state = "watch_detective"
+	armor_list = list(
+		melee = 45,
+		bullet = 45,
+		energy = 45,
+		bomb = 20,
+		bio = 0,
+		rad = 0
+	)
 
 /obj/item/clothing/suit/armor/vest/ironhammer_wintercoat //pieced together thanks to Rebel's Supply spec coat - Dongels
 	name = "security armored coat"
 	desc = "An armored winter coat with vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
 	icon_state = "coatsecurity_long"
+	has_alternative_armor_icon = FALSE
+
+/obj/item/clothing/suit/armor/bulletproof/ironhammer
+	name = "watchmen bulletproof suit"
+	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	stiffness = LIGHT_STIFFNESS
+	slowdown = 0.6 // Heavier since it now covers more of the body
+	icon_state = "watch_bulletproof"
+	item_state = "watch_bulletproof"
+
+/obj/item/clothing/suit/armor/vest/ablative/ironhammer
+	name = "watchmen ablative armor"
+	desc = "A specialized armored plate carrier outfitted with light absorption and heat disperesion technology. This one has been done in Watchmen security colors."
+	icon_state = "watch_ablative"
+	item_state = "watch_ablative"
 
 ////////////
 
@@ -288,6 +314,7 @@
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
 	icon_state = "technosuit"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 50, bio = 100, rad = 100)
@@ -308,6 +335,7 @@
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
 	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "science_armor"
+	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_upgrades = 2
@@ -328,6 +356,7 @@
 	name = "CAPSA plate carrier"
 	desc = "A plate carrier with CAPSA stripes and a white cross on its back, denoting its wearer as medical personnel."
 	icon_state = "capsa_armor"
+	has_alternative_armor_icon = FALSE
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -430,21 +459,13 @@
 		usr.update_action_buttons()
 		return 1
 
-/obj/item/clothing/suit/armor/bulletproof/ironhammer
-	name = "watchmen bulletproof suit"
-	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	stiffness = LIGHT_STIFFNESS
-	slowdown = 0.6 // Heavier since it now covers more of the body
-	icon_state = "bulletproof_ironhammer"
-	item_state = "bulletproof_ironhammer"
-
 //Ablatives / Laserproof
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
 	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
 		melee = 15,
@@ -459,6 +480,7 @@
 	name = "ablative vest"
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
 	icon_state = "northtech"
+	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 10)
 	armor_list = list(
 		melee = 15,
@@ -468,11 +490,6 @@
 		bio = 0,
 		rad = 0
 	)
-
-/obj/item/clothing/suit/armor/vest/ablative/ironhammer
-	icon_state = "ablative_ironhammer"
-	item_state = "ablative_ironhammer"
-
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflective armor vest"
@@ -663,8 +680,7 @@
 /obj/item/clothing/suit/armor/heavy/riot/ironhammer
 	name = "watchmen riot suit"
 	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement. This one is produced by Seinemetall Defense GmbH."
-	icon_state = "riot_ironhammer"
-	item_state = "riot_ironhammer"
+	icon_state = "watch_riot"
 
 
 /*
@@ -703,7 +719,6 @@
 	name = "heavy armor vest"
 	desc = "A high-quality armor vest in a fetching tan. It is surprisingly flexible and light, even with the added webbing and armor plating."
 	icon_state = "mercwebvest"
-	item_state = "mercwebvest"
 	max_upgrades = 0 //No upgrading this one
 	tool_qualities = list()
 	price_tag = 300
@@ -725,7 +740,6 @@
 	far lighter and offering more protection than it's more common ceramic counterparts. \
 	Due to its jury-rigged yet robust design, it's able to take more armor plates than a standard heavy vest."
 	icon_state = "forehead_armor"
-	item_state = "forehead_armor"
 	max_upgrades = 2 //Like all scav armor, this means investing into these will be better but buying gear will still be viable
 	matter = list(MATERIAL_PLASTEEL = 24, MATERIAL_PLASTIC = 25, MATERIAL_SILVER = 8,  MATERIAL_STEEL = 40) //worth stealing
 	price_tag = 1200
@@ -776,7 +790,6 @@
 	name = "plate carrier"
 	desc = "An armored vest carrying trauma plates and light ballistic meshes."
 	icon_state = "platecarrier"
-	item_state = "platecarrier"
 	blood_overlay_type = "armor"
 	armor_list = list(melee = 35, bullet = 45, energy = 20, bomb = 10, bio = 0, rad = 0)
 
@@ -791,7 +804,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier"
-	//options["Green"] = "platecarrier_green"
 	options["Winter"] = "platecarrier_snow"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -809,7 +821,6 @@
 	name = "full body plate carrier"
 	desc = "An armored vest carrying trauma plates and light ballistic meshes. It has been improved by adding shoulderpads and kneepads for additional coverage."
 	icon_state = "platecarrier_fullbody"
-	item_state = "platecarrier_fullbody"
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
@@ -825,7 +836,6 @@
 	var/mob/M = usr
 	var/list/options = list()
 	options["Baseline"] = "platecarrier_fullbody"
-	//options["Green"] = "platecarrier_green_fullbody"
 	options["Winter"] = "platecarrier_snow_fullbody"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -840,10 +850,9 @@
 		return 1
 
 /obj/item/clothing/suit/armor/platecarrier/hos
-	name = "advanced plate carrier"
+	name = "chief deputy plate carrier"
 	desc = "An armored vest carrying military grade trauma plates and advanced ballistic meshes."
-	icon_state = "armorsec"
-	item_state = "armorsec"
+	icon_state = "watch_deputy_armor"
 	blood_overlay_type = "armor"
 	slowdown = 0.15
 	armor_list = list(melee = 50, bullet = 50, energy = 30, bomb = 10, bio = 0, rad = 0)
@@ -853,10 +862,9 @@
 */
 
 /obj/item/clothing/suit/armor/hos
-	name = "armored coat"
+	name = "chief deputy armored coat"
 	desc = "A greatcoat enhanced with a special alloy for some protection and style."
-	icon_state = "hos"
-	item_state = "hos"
+	icon_state = "watch_deputy"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor_list = list(
 		melee = 40,
@@ -867,35 +875,6 @@
 		rad = 0
 	)
 	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/hos/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Armored coat"] = "hos"
-	options["Alt armored coat"] = "new_wo"
-	options["Formal coat"] = "wo_formal"
-	options["Formal coat alt"] = "wo_formallong"
-	options["WO Greatcoat"] = "ihc_coat"
-	options["WO Cloaked Greatcoat"] = "ihc_coat_cloak"
-	options["WO Blue Greatcoat"] = "ihc_coat_blue"
-	options["WO Blue Cloaked Greatcoat"] = "ihc_coat_cloak_blue"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
 
 /obj/item/clothing/suit/armor/commander
 	name = "commander's armored coat"
@@ -919,8 +898,8 @@
 	item_state = "marshal_coat"
 
 /obj/item/clothing/suit/storage/armor/marshal_coat_ss
-	name = "supply specialist's jacket"
-	desc = "Supply Specialist's jacket with an armored weave. For formality, protection and style."
+	name = "armorer's jacket"
+	desc = "Armorer's jacket with an armored weave. For formality, protection and style."
 	armor_list = list(melee = 40, bullet = 40, energy = 20, bomb = 10, bio = 0, rad = 0)
 	icon_state = "marshal_coat_ss"
 	item_state = "marshal_coat_ss"

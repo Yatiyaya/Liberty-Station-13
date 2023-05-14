@@ -11,7 +11,10 @@
 	difficulty = "Medium."
 	selection_color = "#dddddd"
 	access = list(access_merchant, access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	department_account_access = TRUE
 	playtimerequired = 1200
 	stat_modifiers = list(
@@ -48,25 +51,27 @@
 	difficulty = "Easy."
 	alt_titles = list("Sales Technician", "Trade Router", "Smuggler")
 	selection_color = "#dddddd"
-	access = list(access_cargo, access_bar)
-	initial_balance = 750
+	access = list(access_cargo, access_janitor)
+
+	initial_balance = INIT_BALANCE_MENIAL //Got department account access now
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
+
+	department_account_access = TRUE
 	stat_modifiers = list(
 		STAT_ROB = 10,
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_MARKET_PROF, PERK_CLUB, PERK_COMMON_SENSE)
+	perks = list(PERK_MARKET_PROF, PERK_COMMON_SENSE)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/fixer
-	description = "The Fixer looks over the club, ensuring nobody skips on their bill or gets too handsy.<br>\
+	description = "The Fixer oversees sales within the cargo-wing of Skylight and aids the service side in daily operations as requested.<br>\
 	You will typically work closely with the Club Workers, keeping order, cleaning, and perhaps entertaining.<br>\
-	You are paid mainly through fulfilling requests for food and service, but your job is to protect the club foremost."
+	You are paid mainly through handling sales, providing aid to Club workers as requested, and other means deemed acceptable by the Club manager."
 
-	duties = "Protect the Skylight Club and it's staff.<br>\
-		Ensure the customers are well-fed and looked after.<br>\
+	duties = "Handle trades, requests, and sales within Cargo.<br>\
+		Help club staff in keeping customers entertained and catered to.<br>\
 		Take on odd jobs and pull connections to get people what they need securely."
-
 
 /obj/landmark/join/start/fixer
 	name = "Fixer"
@@ -87,7 +92,8 @@
 	selection_color = "#dddddd"
 	health_modifier = -10
 	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
-	initial_balance = 750
+
+	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
 
 	perks = list(PERK_CLUB, PERK_CHEF, PERK_COMMON_SENSE)
@@ -125,7 +131,10 @@
 	selection_color = "#dddddd"
 	alt_titles = list ("Sanitation Worker")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
+
+	initial_balance = INIT_BALANCE_HAZARD
 	wage = WAGE_LABOUR_HAZARD //No longer part of church you don't need this boy
+
 	health_modifier = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 

@@ -18,12 +18,7 @@
 #define PERK_LINGUIST /datum/perk/background/linguist
 #define PERK_ATHLETE /datum/perk/background/athlete
 #define PERK_CUBAN_DELIGHT /datum/perk/background/cuban_delight
-#define PERK_MEDICAL_EXPERT /datum/perk/background/medicalexpertise
 #define PERK_KLUTZ /datum/perk/background/klutz
-
-//Synthetics
-#define PERK_REAPER /datum/perk/background/reaper
-#define PERK_EQUALIZER /datum/perk/background/equalizer
 
 //Sanity
 #define PERK_VETERAN /datum/perk/background/veteran
@@ -59,10 +54,10 @@
 #define PERK_ARTIST /datum/perk/job/artist
 #define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
 #define PERK_NEAT /datum/perk/job/neat
-#define PERK_CHEF /datum/perk/foodappraise
+#define PERK_CHEF /datum/perk/job/foodappraise
 #define PERK_CLUB /datum/perk/job/club
 #define PERK_COMMON_SENSE /datum/perk/job/common_sense
-#define PERK_MARKET_PROF /datum/perk/background/market_prof
+#define PERK_MARKET_PROF /datum/perk/job/market_prof
 
 // Military
 #define PERK_CODESPEAK /datum/perk/job/codespeak
@@ -78,6 +73,7 @@
 // Medical
 #define PERK_CHEMIST /datum/perk/job/chemist
 #define PERK_SURGICAL_MASTER /datum/perk/job/surgical_master
+#define PERK_MEDICAL_EXPERT /datum/perk/job/medicalexpertise
 #define PERK_ADVANCED_MEDICAL /datum/perk/job/advanced_medical
 
 // Science

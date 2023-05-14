@@ -72,7 +72,7 @@
 
 /obj/random/cloth/suit/item_to_spawn()
 	return pickweight(list(/obj/item/clothing/suit/poncho = 10,
-				/obj/item/clothing/suit/storage/rank/ass_jacket = 10,
+				/obj/item/clothing/suit/storage/toggle/liberass_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/cargo_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/insp_trench = 5,
 				/obj/item/clothing/suit/storage/hazardvest = 10,
@@ -225,8 +225,7 @@
 				/obj/item/clothing/head/helmet/space/void/odst/blue = 1,
 				/obj/item/clothing/head/helmet/space/void/odst/orange = 1,
 				/obj/item/clothing/head/helmet/space/void/SCAF = 1,
-				/obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg = 1,
-				/obj/item/clothing/head/helmet/bulletproof/ironhammer_thermal = 0.3,))
+				/obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg = 1))
 
 /obj/random/cloth/helmet/low_chance
 	name = "low chance random helmet"

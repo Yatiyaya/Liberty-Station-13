@@ -181,6 +181,10 @@
 	requires_power = FALSE
 	turf_initializer = null
 
+/area/liberty/dungeon/outside/frozen_forest/crashsite
+	name = "Frozen Forest - Crashsite"
+	allows_weather_of_snow = TRUE
+
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
 	icon_state = "libertygreen"
@@ -214,10 +218,12 @@
 	name = "Lost Farm"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen9.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambigen11.ogg', 'sound/ambience/ambigen12.ogg')
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/abandoned_outpost
 	name = "Lost Outpost"
 	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/zoo
 	name = "Abandoned Research Lab"
@@ -1151,7 +1157,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/reception
 	name = "\improper Medbay Reception"
-	icon_state = "medbay"
+	icon_state = "medbay2"
 	ambience = list('sound/ambience/signal.ogg')
 
 /area/liberty/medical/psych
@@ -1249,7 +1255,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/sleeper
 	name = "\improper Emergency Treatment Centre"
-	icon_state = "exam_room"
+	icon_state = "medbay"
 
 /area/liberty/medical/chemstor
 	name = "Chemical Storage"
@@ -1262,7 +1268,7 @@ area/liberty/medical/medbaymeeting
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
 /area/liberty/medical/paramedic
-	name = "\improper Paramedic Closet"
+	name = "\improper Medical Locker room"
 	icon_state = "erisyellow"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
@@ -1271,8 +1277,8 @@ area/liberty/medical/medbaymeeting
 	icon_state = "erisgreen"
 
 /area/liberty/medical/medbay/uppercor
-	name = "Medbay Upper Coridor"
-	icon_state = "erisgreen"
+	name = "Medbay Coridors"
+	icon_state = "medbay2"
 
 /area/liberty/medical/organ_lab
 	name = "Organ Laboratory"
