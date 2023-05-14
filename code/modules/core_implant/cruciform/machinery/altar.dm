@@ -1,6 +1,6 @@
 /obj/machinery/optable/altar
-	name = "Bonfire altar"
-	desc = "The altar."
+	name = "Board of Opposites"
+	desc = "A flat, clean surface used for certain Custodian Lectures."
 	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "optable-idle"
 	y_offset = 10

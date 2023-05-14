@@ -510,6 +510,8 @@ No more of that.
 	icon = 'icons/obj/device.dmi'
 	icon_state = "nt_sword_truth"
 	item_state = "nt_sword_truth"
+	force = WEAPON_FORCE_LETHAL
+	armor_penetration = ARMOR_PEN_HALF
 	slot_flags = FALSE
 	origin_tech = list(TECH_COMBAT = 9, TECH_POWER = 9, TECH_MATERIAL = 9)
 	price_tag = 20000

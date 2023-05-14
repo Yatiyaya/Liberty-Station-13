@@ -227,6 +227,9 @@
 #define PERK_ULTRASURGEON /datum/perk/drug/ultrasurgeon
 #define PERK_NJOY /datum/perk/njoy
 
+//Temporary lecture perks
+#define PERK_SCORCHING_SHELL /datum/perk/lecture/scorching_shell
+
 //////////////////
 //Cooldown perks//
 //////////////////

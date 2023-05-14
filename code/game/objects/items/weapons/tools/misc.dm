@@ -244,9 +244,9 @@
 	heat = 2250
 
 /obj/item/tool/factorial_omni
-	name = "smithing touch"
+	name = "forging touch"
 	desc = "Through their lectures, Custodian Forgemasters are able to shape the world around them to their will."
-	icon_state = "fact_omni"
+	icon_state = "forging_touch"
 	force = WEAPON_FORCE_DANGEROUS
 	worksound = WORKSOUND_PULSING
 	w_class = ITEM_SIZE_HUGE

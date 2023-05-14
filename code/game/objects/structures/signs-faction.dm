@@ -33,24 +33,10 @@
 	desc = "A sign depicting the insignia of PIRS, the forefront of scientific progress."
 	icon_state = "moebius"
 
-/obj/structure/sign/faction/neotheology
-	name = "Bonfire"
-	desc = "A sign depicting the Tau Cross - the symbol of the Bonfire."
-	icon_state = "neotheology"
-
-/obj/structure/sign/faction/neotheology_old
-	name = "Bonfire"
-	desc = "A decaying sign depicting the Tau Cross - the symbol of the Bonfire."
-	icon_state = "neotheology-old"
-
-/obj/structure/sign/faction/neotheology_cross
-	name = "Bonfire Tau Cross"
-	desc = "The religious symbol of Bonfire - the Tau cross. This one appears to be decorative."
-	icon_state = "wall_cross_steel"
-
-/obj/structure/sign/faction/neotheology_cross/gold
-	desc = "The religious symbol of Bonfire - the Tau cross. This one appears to be decorative."
-	icon_state = "wall_cross_gold"
+/obj/structure/sign/faction/custodians
+	name = "Custodians of Bonfire"
+	desc = "A banner depicting the symbols of the Custodians of Bonfire. It looks to be maintained quite frequently."
+	icon_state = "custodians"
 
 /obj/structure/sign/faction/astersguild
 	name = "Skylight Corporation"

@@ -160,8 +160,8 @@
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH
 	faction = MAP_FACTION
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"

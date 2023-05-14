@@ -179,45 +179,23 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/scorching_shell
 	name = "Scorching Shell"
 	phrase = "Oxidate Lecture: Scorching Shell"
-	desc = "A lecture fashioned after the idea that body and mind can be a fixed point. For five minutes, the speaker slows down drastically, but reduces all damage they \
-	may recieve by half, letting them remain as they are for longer."
+	desc = "A lecture fashioned after the idea that body and mind can be a fixed point. For a minute, the speaker slows down drastically, but reduces all damage they recieve, letting them remain as they are for longer. Has a cooldown of fifteen minutes."
 	cooldown = TRUE
-	cooldown_time = 30 MINUTES
+	cooldown_time = 15 MINUTES
 	cooldown_category = "scorching_shell"
-	effect_time = 5 MINUTES
+	effect_time = 1 MINUTES
 	power = 90
-	var/brute_mod_oathbound
-	var/burn_mod_oathbound
-	var/toxin_mod_oathbound
-	var/oxygen_mod_oathbound
 
 /datum/ritual/cruciform/oathbound/scorching_shell/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	brute_mod_oathbound = (user.brute_mod_perk * 0.5) //takes current damage modifier and halves it, repeat for all four damage types
-	user.brute_mod_perk -= brute_mod_oathbound
-
-	burn_mod_oathbound = (user.burn_mod_perk * 0.5)
-	user.burn_mod_perk -= burn_mod_oathbound
-
-	toxin_mod_oathbound = (user.toxin_mod_perk * 0.5)
-	user.toxin_mod_perk -= toxin_mod_oathbound
-
-	oxygen_mod_oathbound = (user.oxy_mod_perk * 0.5)
-	user.oxy_mod_perk -= oxygen_mod_oathbound
-
-	user.slowdown += 2 //heavy damage reduction means a HEAVY slowdown
-
-	to_chat(user, SPAN_NOTICE("You feel your body stiffening, your stout refusal to change slowing down the world around you as you remain at a fixed point."))
+	user.stats.addPerk(PERK_SCORCHING_SHELL) //Adding a temporary perk due to the slowdown, simply adding slowdown via += will see it reset in seconds
 	set_personal_cooldown(user)
 	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/scorching_shell/proc/discard_effect(mob/living/carbon/human/user, amount)
-	user.brute_mod_perk += brute_mod_oathbound //revert our alterations
-	user.burn_mod_perk += burn_mod_oathbound
-	user.toxin_mod_perk += toxin_mod_oathbound
-	user.oxy_mod_perk += oxygen_mod_oathbound
-	user.slowdown -= 2
-	to_chat(user, SPAN_NOTICE("Your body feels lighter, weaker, you've returned to normal."))
+/datum/ritual/cruciform/oathbound/scorching_shell/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
+	user.stats.removePerk(PERK_SCORCHING_SHELL)
 
 /datum/ritual/cruciform/oathbound/scorching_smite
 	name = "Scorching Smite"
@@ -237,7 +215,9 @@ datum/ritual/cruciform/oathbound/fireball_big
 	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time) //set a timer to remove the buff
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/scorching_smite/proc/discard_effect(mob/living/carbon/human/user, amount)
+/datum/ritual/cruciform/oathbound/scorching_smite/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
 	user.damage_multiplier -= wrath_damage //remove the buff
 	to_chat(user, SPAN_NOTICE("Your wrath subsides"))
 
@@ -248,7 +228,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
 	cooldown_category = "restraint_conflagration"
-	effect_time = 15 MINUTES
+	effect_time = 5 MINUTES
 	power = 90
 
 /datum/ritual/cruciform/oathbound/restraint_conflagration/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -259,7 +239,9 @@ datum/ritual/cruciform/oathbound/fireball_big
 	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time) //set a timer
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/restraint_conflagration/proc/discard_effect(mob/living/carbon/human/user, amount)
+/datum/ritual/cruciform/oathbound/restraint_conflagration/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
 	user.stats.changeStat(STAT_TGH, -10)
 	user.stats.changeStat(STAT_ROB, -10) //remove alterations
 	to_chat(user, SPAN_NOTICE("You no longer feel emboldened."))
@@ -1110,7 +1092,9 @@ datum/ritual/cruciform/oathbound/fireball_big
 	set_personal_cooldown(user)
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/pilgrim_path/proc/discard_effect(mob/living/carbon/human/user, amount)
+/datum/ritual/cruciform/oathbound/pilgrim_path/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
 	user.stats.changeStat(STAT_TGH, -15)
 	user.stats.changeStat(STAT_ROB, -15)
 	user.stats.changeStat(STAT_VIG, -15)
@@ -1138,7 +1122,9 @@ datum/ritual/cruciform/oathbound/fireball_big
 	set_personal_cooldown(user)
 	return TRUE
 
-/datum/ritual/cruciform/oathbound/sanctorium_of_life/proc/discard_effect(mob/living/carbon/human/user, amount)
+/datum/ritual/cruciform/oathbound/sanctorium_of_life/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
 	user.stats.changeStat(STAT_MEC, -15)
 	user.stats.changeStat(STAT_COG, -15)
 	user.stats.changeStat(STAT_BIO, -15)
@@ -1223,6 +1209,8 @@ datum/ritual/cruciform/oathbound/fireball_big
 		to_chat(target, SPAN_NOTICE("You feel inspired."))
 
 /datum/ritual/cruciform/oathpledge/inspiration/proc/take_sanity_recovery(mob/living/carbon/human/target)
+	if(!target)
+		return
 	target.sanity.sanity_passive_gain_multiplier -= 0.2
 	to_chat(target, SPAN_NOTICE("You feel your inspiration draining."))
 
@@ -1248,6 +1236,8 @@ datum/ritual/cruciform/oathbound/fireball_big
 		to_chat(target, SPAN_NOTICE("You feel miserable."))
 
 /datum/ritual/cruciform/oathpledge/order_of_misery/proc/take_sanity_malus(mob/living/carbon/human/target)
+	if(!target)
+		return
 	target.sanity.sanity_passive_gain_multiplier += 0.2
 	to_chat(target, SPAN_NOTICE("You don't feel so miserable anymore."))
 

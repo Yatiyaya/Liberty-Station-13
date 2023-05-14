@@ -42,14 +42,6 @@ A small pool of thematically appropriate religious items that are generally chea
 	path = /obj/item/book/ritual/cruciform
 
 
-
-//Ritual blade, for if you need a competent weapon, or for replacing one the preacher lost
-/datum/uplink_item/item/neotheology/knife
-	name = "Ritual Blade"
-	item_cost = 2
-	path = /obj/item/tool/knife/neotritual
-
-
 /datum/uplink_item/item/neotheology/coat
 	name = "Preacher Coat"
 	item_cost = 3

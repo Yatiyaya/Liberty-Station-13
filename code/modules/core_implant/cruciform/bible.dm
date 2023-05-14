@@ -4,6 +4,7 @@
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "hearth_lantern"
 	item_state = "hearth_lantern"
+	w_class = ITEM_SIZE_SMALL
 	price_tag = 150
 	matter = list(MATERIAL_SILVER = 2, MATERIAL_STEEL = 5)
 

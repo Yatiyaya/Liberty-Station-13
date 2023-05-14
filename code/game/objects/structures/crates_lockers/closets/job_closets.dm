@@ -84,27 +84,78 @@
 
 //Custodians
 
-/obj/structure/closet/custodian
-	name = "custodian closet"
-	desc = "A closet for those that call themselves Custodians."
+/obj/structure/closet/oathbound
+	name = "oathbound locker"
+	desc = "A locker for the stalward shields and spears of the Custodians."
 	icon_state = "acolyte"
 
-/obj/structure/closet/custodian/populate_contents()
+/obj/structure/closet/oathbound/populate_contents()
 	if(prob(25))
 		new /obj/item/storage/backpack/custodian(src)
 	else if(prob(25))
 		new /obj/item/storage/backpack/sport/custodian(src)
 	else
 		new /obj/item/storage/backpack/satchel/custodian(src)
+	new /obj/item/clothing/under/custodian/oathbound(src)
+	new /obj/item/clothing/suit/storage/custodian/oathbound(src)
+	new /obj/item/clothing/head/custodian/oathbound(src)
+	new /obj/item/storage/fancy/candle_box(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
 	new /obj/item/device/radio/headset/church(src)
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/tool/knife/dagger/custodian(src)
+	new /obj/item/tool/sword/custodian/shortsword(src)
 
-/obj/structure/closet/oathpledge
-	name = "oathpledge closet"
-	desc = "A closet for the leaders and guides of the Custodians."
-	icon_state = "acolyte"
+/obj/structure/closet/forgemaster
+	name = "forgemaster locker"
+	desc = "A locker for the smiths and artists of the Custodians."
+	icon_state = "custodian"
+
+/obj/structure/closet/forgemaster/populate_contents()
+	if(prob(25))
+		new /obj/item/storage/backpack/custodian(src)
+	else if(prob(25))
+		new /obj/item/storage/backpack/sport/custodian(src)
+	else
+		new /obj/item/storage/backpack/satchel/custodian(src)
+	new /obj/item/clothing/under/custodian/forgemaster(src)
+	new /obj/item/clothing/suit/storage/custodian/forgemaster(src)
+	new /obj/item/clothing/head/custodian/forgemaster(src)
+	new /obj/item/clothing/mask/gas/germanmask(src)
+	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/clothing/gloves/insulated(src)
+	new /obj/item/tool_upgrade/productivity/waxcoat(src)
+
+/obj/structure/closet/enkindled
+	name = "enkindled locker"
+	desc = "A locker for the healers and alchemists of the Custodians."
+	icon_state = "botanist"
+
+/obj/structure/closet/enkindled/populate_contents()
+	if(prob(25))
+		new /obj/item/storage/backpack/custodian(src)
+	else if(prob(25))
+		new /obj/item/storage/backpack/sport/custodian(src)
+	else
+		new /obj/item/storage/backpack/satchel/custodian(src)
+	new /obj/item/clothing/under/custodian/enkindled(src)
+	new /obj/item/clothing/suit/storage/custodian/enkindled(src)
+	new /obj/item/clothing/head/custodian/enkindled(src)
+	new /obj/item/clothing/mask/gas/germanmask(src)
+	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/clothing/gloves/latex(src)
+	new /obj/item/storage/makeshift_grinder(src)
+	new /obj/item/device/makeshift_electrolyser(src)
+	new /obj/item/device/makeshift_centrifuge(src)
+	new /obj/item/storage/box/beakers(src)
+	new /obj/item/storage/box/syringes(src)
+	new /obj/item/reagent_containers/dropper(src)
+
+/obj/structure/closet/secure_closet/reinforced/oathpledge
+	name = "oathpledge locker"
+	desc = "A locker for the leaders and guides of the Custodians."
+	req_access = list(access_nt_preacher)
+	icon_state = "head_preacher"
 
 /obj/structure/closet/oathpledge/populate_contents()
 	if(prob(25))
@@ -113,7 +164,11 @@
 		new /obj/item/storage/backpack/sport/custodian(src)
 	else
 		new /obj/item/storage/backpack/satchel/custodian(src)
+	new /obj/item/clothing/under/custodian/oathpledge(src)
+	new /obj/item/clothing/suit/storage/custodian/oathpledge(src)
+	new /obj/item/clothing/head/custodian/oathpledge(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
 	new /obj/item/device/radio/headset/heads/preacher(src)
 	new /obj/item/clothing/gloves/thick(src)
-	new /obj/item/tool/sword/custodian/shortsword(src)
+	new /obj/item/tool/sword/custodian/horseaxe(src)
+	new /obj/item/forgesigil(src)

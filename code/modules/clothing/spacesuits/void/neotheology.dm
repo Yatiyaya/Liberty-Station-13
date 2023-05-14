@@ -60,7 +60,7 @@
 	)
 	helmet = /obj/item/clothing/head/helmet/space/void/agrolyte
 
-/obj/item/clothing/head/helmet/space/void/custodian
+/obj/item/clothing/head/helmet/space/void/janitor
 	name = "custodian helmet"
 	desc = "Cleaning floors is more dangerous than it looks."
 	icon_state = "custodian"
@@ -75,9 +75,9 @@
 	)
 	unacidable = TRUE
 
-/obj/item/clothing/suit/space/void/custodian
+/obj/item/clothing/suit/space/void/janitor
 	name = "custodian armor"
-	desc = "Someone's gotta clean this mess. While this armor is technically church property, Skylight custodians often use it on loan to protect themselves from the colonies various dangerous pests."
+	desc = "Someone's gotta clean this mess. Skylight janitors often use this armor to protect themselves from the colonies various dangerous pests."
 	icon_state = "custodian"
 	item_state = "custodian"
 	slowdown = 0.05
@@ -91,7 +91,7 @@
 		rad = 90
 	)
 	unacidable = TRUE
-	helmet = /obj/item/clothing/head/helmet/space/void/custodian
+	helmet = /obj/item/clothing/head/helmet/space/void/janitor
 
 /obj/item/clothing/head/helmet/space/void/huscarl
 	name = "huscarl voidsuit helmet"

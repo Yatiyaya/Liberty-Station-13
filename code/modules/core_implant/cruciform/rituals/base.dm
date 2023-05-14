@@ -161,6 +161,8 @@ datum/ritual/cruciform/base/thumbspire
 	to_chat(lectured, SPAN_NOTICE("Your mind feels fortified."))
 
 /datum/ritual/cruciform/base/revelation/proc/take_sanity_boost(mob/living/carbon/human/lectured)
+	if(!lectured)
+		return
 	lectured.sanity.max_level -= 20 //remove the boost
 	to_chat(lectured, SPAN_NOTICE("You feel your mental fortification crumbling.")) //always notify when buffs activate and de-activate
 
@@ -225,7 +227,7 @@ datum/ritual/cruciform/base/thumbspire
 	S.set_trait(TRAIT_BOOSTED_GROWTH, boost_value) //set the boost
 	addtimer(CALLBACK(src, .proc/take_boost, S), effect_time) //add the timer to take away the boost
 
-/datum/ritual/cruciform/base/accelerated_growth/proc/take_boost(datum/seed/S, stat, amount)
+/datum/ritual/cruciform/base/accelerated_growth/proc/take_boost(datum/seed/S)
 	// take_boost is automatically triggered by a callback function when the boost ends but the seed
 	// may have been deleted during the duration of the boost
 	if(S) // check if seed still exist otherwise we cannot read null.stats

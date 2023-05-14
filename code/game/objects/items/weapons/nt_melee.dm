@@ -21,7 +21,7 @@
 /obj/item/tool/sword/custodian/shortsword
 	name = "ulfberht"
 	desc = "As much as swords may be underused by the Custodians in exchange for polearms and axes, many short swords are produced for a cheap price. \
-	The ulfberht are regarded as a work of art rather than a weapon - yet more effective than a machete nonetheless."
+	The ulfberht are regarded as a work of art rather than a weapon - but are still a capable sidearm."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "ulfberth_sword"
 	item_state = "ulfberth_sword"
@@ -96,54 +96,18 @@
 
 /obj/item/tool/sword/custodian/whip
 	name = "custodian nagaika"
-	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protubing blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
+	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protuding blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
 	Good thing whoever wrote that only included “bullets”."
 	icon_state = "custodian_nagaika"
 	item_state = "custodian_nagaika"
-	force = WEAPON_FORCE_ROBUST
-	var/force_extended = WEAPON_FORCE_PAINFUL
+	force = WEAPON_FORCE_PAINFUL
 	armor_penetration = ARMOR_PEN_MASSIVE
-	var/armor_penetration_extended = ARMOR_PEN_HALF
-	var/extended = FALSE
-	var/agony = 20
-	var/agony_extended = 45 //Church harmbaton! This is legit better then a normal baton as it can be upgraded AND has base 15 damage
+	var/agony = 30
 	var/stun = 0
-	w_class = ITEM_SIZE_BULKY
+	w_class = ITEM_SIZE_SMALL
 	price_tag = 800
 	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 10)
 	has_alt_mode = FALSE
-
-/obj/item/tool/sword/custodian/whip/attack_self(mob/user)
-	if(extended)
-		unextend()
-	else
-		extend()
-
-/obj/item/tool/sword/custodian/whip/proc/extend()
-	extended = TRUE
-	force += (force_extended - initial(force))
-	armor_penetration += (armor_penetration_extended - initial(armor_penetration))
-	agony += (agony_extended - initial(agony))
-	slot_flags = null
-	w_class = ITEM_SIZE_HUGE
-	refresh_upgrades() //it's also sets all to default
-	update_icon()
-
-/obj/item/tool/sword/custodian/whip/proc/unextend()
-	extended = FALSE
-	w_class = initial(w_class)
-	agony = initial(agony)
-	slot_flags = initial(slot_flags)
-	armor_penetration = initial(armor_penetration)
-	refresh_upgrades() //it's also sets all to default
-	update_icon()
-
-/obj/item/tool/sword/custodian/whip/update_icon()
-	if(extended)
-		icon_state = initial(icon_state) + "_extended"
-	else
-		icon_state = initial(icon_state)
-	..()
 
 /obj/item/tool/sword/custodian/whip/apply_hit_effect(mob/living/carbon/human/target, mob/living/user, hit_zone)
 	. = ..()
@@ -237,7 +201,7 @@
 	name = "conflagration sword"
 	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance."
 	icon_state = "conflagrationsword"
-	item_state = "conflagrationsword"
+	item_state = "conflagrationsword_wielded"
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_DEEP
 	w_class = ITEM_SIZE_BULKY
@@ -283,8 +247,6 @@
 	update_icon()
 	user.update_inv_r_hand() // These two procs are needed to update the on-mob sprites, update_icons() is not it
 	user.update_inv_l_hand()
-	force = WEAPON_FORCE_LETHAL
-	armor_penetration = ARMOR_PEN_EXTREME
 	addtimer(CALLBACK(src, .proc/discard_effect, src), src.effect_time) //setn
 	return TRUE
 
@@ -293,12 +255,10 @@
 	set_light(l_range = 0, l_power = 0, l_color = COLOR_BLUE)
 	glowing = FALSE
 	heat = initial(heat)
-	force = initial(force)
-	armor_penetration = initial(armor_penetration)
 	update_icon()
 	user.update_inv_r_hand() //Get rid of the radiant sprites
 	user.update_inv_l_hand()
-	visible_message("The sword's flames subside.","You hear a flame going out.")
+	visible_message(SPAN_NOTICE("The sword's flames subside."))
 
 /obj/item/tool/sword/custodian/conflagration/update_icon() //Toggles the "turned on" icon and on-mob sprites based on the "glowing" var
 	if(glowing)
@@ -313,7 +273,7 @@
 	name = "custodian scutum shield"
 	desc = "A wall of a shield, oblong, convex and absurdly difficult to store, yet efficient to keep bullets and melee attacks at bay. \
 	The reinforcements of the shield allows major protection for an experienced user, yet its efficiency is limited for the inexperienced. \
-	It has leather straps behind it to store large equipment such as staves, throwing spears and others. This shield in specific constantly releases flames to light the way of it’s user."
+	It has leather straps behind it to store large equipment such as staves, throwing spears and others."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "custodian_scutum"
 	item_state = "custodian_scutum"
@@ -401,7 +361,6 @@
 		/obj/item/tool/sword/custodian/shortsword,
 		/obj/item/tool/sword/custodian/throwaxe, //Romans would have these with their shield to ware down their foe
 		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/tool/knife/neotritual,
 		/obj/item/book/ritual/cruciform
 		)
 

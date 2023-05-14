@@ -11,25 +11,25 @@
 	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/suit/storage/custodian/oathbound
-	name = "Oathbound coat"
+	name = "oathbound coat"
 	desc = "A basic Oathbound coat tailored for the front line of the Custodians."
 	icon_state = "oathbound_garb"
 	item_state = "oathbound_garb"
 
 /obj/item/clothing/suit/storage/custodian/oathpledge
-	name = "Oathpledge coat"
+	name = "oathpledge coat"
 	desc = "A sleek fiber weaved suit that bears the mark of the Oathpledge."
 	icon_state = "oathpledge_garb"
 	item_state = "oathpledge_garb"
 
 /obj/item/clothing/suit/storage/custodian/enkindled
-	name = "Enkindled coat"
+	name = "enkindled coat"
 	desc = "A victorian style silk coat made to protect those who call themselves Enkindled."
 	icon_state = "enkindled_garb"
 	item_state = "enkindled_garb"
 
 /obj/item/clothing/suit/storage/custodian/forgemaster
-	name = "Forgemaster coat"
+	name = "forgemaster coat"
 	desc = "A tough biosilk coat to keep Forgemasters protected and fashionable."
 	icon_state = "forgemaster_garb"
 	item_state = "forgemaster_garb"

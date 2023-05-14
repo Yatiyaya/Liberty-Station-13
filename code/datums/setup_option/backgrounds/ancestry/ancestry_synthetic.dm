@@ -227,7 +227,6 @@
 
 	restricted_to_species = list(FORM_CHURCHSYNTH)
 	racial_implants = (/obj/item/organ_module/active/simple/bible)
-	racial_implants_l = (/obj/item/organ_module/active/simple/armblade/ritual)
 	restricted_jobs = list(/datum/job/outsider)
 
 	stat_modifiers = list(

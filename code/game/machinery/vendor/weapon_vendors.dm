@@ -212,8 +212,7 @@
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 5,
 					/obj/item/tool/knife/dagger/custodian = 3,
 					/obj/item/tool/sword/custodian/shortsword = 3,)
-	contraband = list(/obj/item/tool/knife/neotritual = 3,
-					/obj/item/gun/matter/launcher/nt_sprayer = 3)
+	contraband = list(/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
 	prices = list(/obj/item/book/ritual/cruciform = 5,
 					/obj/item/storage/fancy/candle_box = 30,
@@ -238,7 +237,6 @@
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 50,
 					/obj/item/tool/knife/dagger/custodian = 50,
 					/obj/item/tool/sword/custodian/shortsword = 100,
-					/obj/item/tool/knife/neotritual = 250,
 					/obj/item/gun/matter/launcher/nt_sprayer = 500)
 	custom_vendor = TRUE // So they can sell pouches and other printed goods, if they bother to stock them
 
