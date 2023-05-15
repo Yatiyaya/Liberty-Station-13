@@ -22023,6 +22023,7 @@
 	light_color = "#b9e8ea"
 	},
 /obj/structure/table/glass,
+/obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
 "fRr" = (
@@ -72125,8 +72126,8 @@
 /obj/machinery/camera/network/medbay{
 	dir = 1
 	},
-/obj/structure/table/glass,
-/obj/item/reagent_containers/glass/bucket,
+/obj/machinery/biosculptor,
+/obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
 "tsw" = (
@@ -86006,6 +86007,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/liberty/maintenance/undergroundfloor1east)
+"xgg" = (
+/obj/effect/floor_decal/industrial/box,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/liberty/medical/genetics_cloning)
 "xgi" = (
 /obj/machinery/light{
 	dir = 4
@@ -154188,7 +154193,7 @@ sqG
 suC
 mwh
 eZy
-cQC
+xgg
 tsu
 sqG
 aPk
