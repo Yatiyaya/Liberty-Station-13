@@ -144,7 +144,7 @@
 /area/liberty/dungeon/outside/frozen_forest)
 "dM" = (
 /obj/structure/flora/tree/snow/snow,
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "dP" = (
@@ -1299,7 +1299,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "CD" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "CK" = (
