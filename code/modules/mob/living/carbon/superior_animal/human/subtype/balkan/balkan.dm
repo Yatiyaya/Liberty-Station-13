@@ -69,7 +69,7 @@
 
 /mob/living/carbon/superior_animal/human/balkan/sts
 	icon_state = "balkan_mercenary_sts"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 
 	//range/ammo stuff
 	rapid = TRUE
@@ -85,7 +85,7 @@
 
 /mob/living/carbon/superior_animal/human/balkan/bren
 	icon_state = "balkan_mercenary_bren"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 	maxHealth = 125 //More than a normal person.
 	health = 125
 
@@ -101,7 +101,7 @@
 /mob/living/carbon/superior_animal/human/balkan/space
 	icon_state = "balkan_space"
 	icon_dead = "balkan_dead"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 
 	maxHealth = 125 //More than a normal person.
 	health = 125
@@ -116,3 +116,7 @@
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = FALSE
 	mag_drop = FALSE
+	
+/mob/living/carbon/superior_animal/human/balkan/death()
+	..()
+	drop_death_loot()
