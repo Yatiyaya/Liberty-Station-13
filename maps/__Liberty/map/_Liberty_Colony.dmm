@@ -3902,7 +3902,6 @@
 /area/turret_protected/ai)
 "bbo" = (
 /obj/machinery/door/airlock/glass_medical{
-	id_tag = "medbay exit";
 	name = "Medbay";
 	req_access = newlist();
 	req_one_access = list(5,45)
@@ -13009,12 +13008,6 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "dpV" = (
-/obj/machinery/door/airlock/glass_medical{
-	id_tag = "medbay exit";
-	name = "Medbay";
-	req_access = newlist();
-	req_one_access = list(5,45)
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13024,6 +13017,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass_medical{
+	name = "Medbay";
+	req_access = newlist();
+	req_one_access = list(5,45)
+	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
 "dqe" = (
@@ -13228,18 +13226,17 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/miningdock)
 "dts" = (
-/obj/machinery/door/airlock/glass_medical{
-	id_tag = "medbay exit";
-	name = "Medbay";
-	req_access = newlist();
-	req_one_access = list(5,45)
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass_medical{
+	name = "Medbay";
+	req_access = newlist();
+	req_one_access = list(5,45)
+	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
 "dtu" = (
@@ -47941,12 +47938,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "mZD" = (
-/obj/machinery/door/airlock/glass_medical{
-	id_tag = "medbay exit";
-	name = "Medbay";
-	req_access = newlist();
-	req_one_access = list(5,45)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -47954,6 +47945,11 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass_medical{
+	name = "Medbay";
+	req_access = newlist();
+	req_one_access = list(5,45)
+	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
 "mZH" = (
