@@ -3,7 +3,7 @@
 	name = "Coalition Dinar"
 	desc = "The most common currency used around the galaxy, accepted by most non-Coalition traders. At least credits hold their value better than corporate scrip or coalition dinars."
 	icon = 'icons/obj/currency/dinar.dmi'
-	icon_state = "cred"
+	icon_state = "dinar"
 	w_class = ITEM_SIZE_TINY
 	amount = 1
 	max_amount = 10000
