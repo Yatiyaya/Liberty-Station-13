@@ -185,6 +185,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/clothing/accessory/badge/holo/inspector(src)
 	new /obj/item/cell/small/high(src)
+	new /obj/item/cell/medium/high(src)
 
 /obj/item/storage/hcases/ammo/ih/marshal_officer
 	exspand_when_spawned = FALSE //No exspanding cheats
