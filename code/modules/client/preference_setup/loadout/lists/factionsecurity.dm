@@ -14,7 +14,7 @@
 /datum/gear/factionsecurity/beretcommander
 	display_name = "beret, security head"
 	path = /obj/item/clothing/head/rank/commander
-	allowed_roles = list("Chief Deputy")
+	allowed_roles = list("Deputy Chief")
 	slot = slot_head
 	sort_category = "Faction: Security"
 

@@ -696,7 +696,7 @@
 /*Security*/
 
 /obj/item/toy/figure/character/ironhammer/hos
-	name = "chief deputy action figure"
+	name = "deputy chief action figure"
 	desc = "The most formidable force on the station. Watchmen 1/4."
 	icon_state = "hos"
 	toysay = "I'll be hugging my fax machine on my office if anyone needs me..."

@@ -1095,7 +1095,7 @@
 		return 1
 
 /obj/item/clothing/suit/armor/platecarrier/hos
-	name = "chief deputy plate carrier"
+	name = "deputy chief plate carrier"
 	desc = "An armored vest carrying military grade trauma plates and advanced ballistic meshes."
 	icon_state = "watch_deputy_armor"
 	blood_overlay_type = "armor"
@@ -1107,7 +1107,7 @@
 */
 
 /obj/item/clothing/suit/armor/hos
-	name = "chief deputy armored coat"
+	name = "deputy chief armored coat"
 	desc = "A greatcoat enhanced with a special alloy for some protection and style."
 	icon_state = "watch_deputy"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS

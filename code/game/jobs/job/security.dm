@@ -24,7 +24,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/security/dc
 
 	access = list(
-		access_security, access_eva, access_sec_doors, access_brig, access_armory, access_medspec,
+		access_security, access_eva, access_sec_doors, access_brig, access_armory, access_medspec, access_hos, access_tcomsat,
 		access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 		access_moebius, access_engine, access_mining, access_construction, access_mailsorting,
 		access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway,
@@ -106,12 +106,12 @@
 				 PERK_CHEM_CONTRABAND,
 				 PERK_GUNSMITH)
 
-	description = "The Armorer is the right hand of the Chief Deputy and the defacto controller of the armory and armory shop. <br>\
+	description = "The Armorer is the right hand of the Deputy Chief and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the colony or even the armory.<br>\
 	You will often be called to sell weaponry and armory to colonists, maintaining the stock of the equipment and tracking who has what.<br>\
 	You will also be often asked to watch or process prisoners. Perform regular checkups on anyone locked in the brig - breakouts are intolerable.<br>\
 	In quieter times, you serve as the on-site weapons instructor. Take the initiative to offer a variety of training drills, especially to junior operatives.<br>\
-	Remember that any Chief Deputy duties may be delegated to you if they wish and internal tasks will fall to you at times."
+	Remember that any Deputy Chief duties may be delegated to you if they wish and internal tasks will fall to you at times."
 
 	duties = "Manage a good balance of armory stock, and dispense responsibly with a paper trail and fair price.<br>\
 	Monitor prisoners in the brig to ensure their health and safety.<br>\
@@ -169,7 +169,7 @@
 	description = "The Criminal Investigator is the colony detective and field agent, taking on cases and suspects that aren't always what they seem.<br>\
 	Your job is to interrogate suspects, gather witness statements,  harvest evidence and reach a conclusion about the nature and culprit of a crime.<br>\
 	You are a higher ranking position than officers and operatives and can determine if charges are valid and may release individuals for lack of evidence. <br>\
-	However, you cannot give orders outside those pertaining to charges and arrests. The Chief Deputy still outranks you - bring all conflicts to them.<br>\
+	However, you cannot give orders outside those pertaining to charges and arrests. The Deputy Chief still outranks you - bring all conflicts to them.<br>\
 	When there are no outstanding cases, look for them. Mingle with civilians, interact and converse, sniff out leads about potential criminal activity."
 
 	duties = "Interview suspects and witnesses after a crime. Record important details of their statements, and look for inconsistencies.<br>\
