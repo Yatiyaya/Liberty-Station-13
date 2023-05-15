@@ -208,7 +208,7 @@
  * Ironhammer Commander
  */
 /obj/item/clothing/under/rank/ih_commander
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Chief Deputy\". It has additional armor to protect the wearer."
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Deputy Chief\". It has additional armor to protect the wearer."
 	name = "warrant officer's jumpsuit"
 	icon_state = "watch_deputy_uniform"
 	item_state = "r_suit"

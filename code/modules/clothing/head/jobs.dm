@@ -139,8 +139,8 @@
 	icon_state = "policeberet"
 
 /obj/item/clothing/head/rank/commander
-	name = "chief deputy beret"
-	desc = "A grey chief deputy beret signifying a command position."
+	name = "deputy chief beret"
+	desc = "A grey deputy chief beret signifying a command position."
 	icon_state = "beret_navy_hos"
 
 /obj/item/clothing/head/rank/commander/verb/toggle_style()
