@@ -635,6 +635,7 @@ BLIND     // can't see anything
 		/obj/item/device/radio,
 		/obj/item/clothing/mask,
 		/obj/item/storage/backpack/guncase,
+		/obj/item/book/ritual/cruciform,
 		/obj/item/implant/carrion_spider/holographic)
 	slot_flags = SLOT_OCLOTHING
 	var/blood_overlay_type = "suit"
@@ -646,7 +647,7 @@ BLIND     // can't see anything
 		/obj/item/tool/hammer/telekinetic_fist,
 		/obj/item/flame/pyrokinetic_spark,
 		/obj/item/tool/psionic_omnitool,
-		/obj/item/shield/riot/crusader/psionic,
+		/obj/item/shield/riot/psionic,
 		/obj/item/gun/kinetic_blaster
 		)
 	equip_delay = 1 SECONDS

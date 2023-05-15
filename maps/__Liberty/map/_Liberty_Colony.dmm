@@ -444,7 +444,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/landmark/join/start/enkindled,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "ahs" = (
@@ -3291,6 +3290,10 @@
 	dir = 4
 	},
 /area/liberty/security/vacantoffice2)
+"aRL" = (
+/obj/structure/sign/faction/custodians,
+/turf/simulated/wall/church_reinforced,
+/area/liberty/bonfire/storage)
 "aRM" = (
 /obj/structure/table/rack/shelf,
 /obj/random/cloth/head/low_chance,
@@ -3674,11 +3677,12 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/security/prisoncells)
 "aXH" = (
-/obj/item/storage/toolbox/mechanical,
-/obj/item/tool/multitool,
-/obj/structure/table/woodentable,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
+/area/liberty/bonfire/storage)
 "aYa" = (
 /obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/snow,
@@ -4856,9 +4860,6 @@
 "bnF" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/orangedouble,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_y = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm3)
@@ -5775,16 +5776,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
-"bBM" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/enkindled,
-/turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/office)
 "bBP" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
@@ -7693,6 +7684,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
+"can" = (
+/obj/structure/closet/oathbound,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/office)
 "cav" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10931,9 +10926,6 @@
 	desc = "Ancient robotic frame, that is long deactivated and rusted solid. However, it still strikes am awesome pose, that somehow makes you think of justice and righteousness.";
 	name = "Statue of Judge Boopsky"
 	},
-/obj/machinery/power/wall_obelisk{
-	pixel_y = 32
-	},
 /obj/machinery/camera/network/command,
 /turf/simulated/floor/wood,
 /area/liberty/command/courtroom)
@@ -11129,7 +11121,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/engine_room)
 "cSK" = (
-/obj/structure/nt_pedestal,
+/obj/structure/damocles_pedestal,
+/obj/item/tool/sword/custodians_damocles,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "cSP" = (
@@ -12069,14 +12062,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/bridge)
-"ddi" = (
-/obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
 "ddD" = (
 /obj/structure/low_wall,
 /turf/simulated/floor/plating/under,
@@ -12500,7 +12485,6 @@
 "diJ" = (
 /obj/effect/decal/cleanable/crayon,
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/item/tool/knife/neotritual,
 /obj/item/stack/material/silver,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /turf/simulated/floor/rock/manmade/concrete,
@@ -13603,12 +13587,6 @@
 /obj/item/trash/popcorn,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1west)
-"dzz" = (
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_x = 32
-	},
-/turf/simulated/wall/church_reinforced,
-/area/liberty/bonfire/storage)
 "dzC" = (
 /obj/structure/scrap/poor/large,
 /turf/simulated/floor/tiled/techmaint,
@@ -15672,10 +15650,10 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor1north)
 "ecH" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/light_switch{
 	pixel_y = 32
 	},
+/obj/structure/closet/oathbound,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "ecI" = (
@@ -16063,6 +16041,10 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/liberty/crew_quarters)
+"ejt" = (
+/obj/structure/sign/faction/custodians,
+/turf/simulated/wall/church_reinforced,
+/area/liberty/bonfire/chapel)
 "eju" = (
 /obj/structure/flora/tree/snow/three,
 /obj/structure/flora/small/snow/rock7,
@@ -18229,9 +18211,6 @@
 "eNS" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/orangedouble,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_y = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm4)
@@ -19340,7 +19319,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "ffy" = (
-/obj/structure/closet/custodial,
+/obj/structure/closet/forgemaster,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "ffC" = (
@@ -20224,7 +20203,7 @@
 /area/liberty/hallway/side/f2section1)
 "frm" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/coffin,
+/obj/machinery/suit_storage_unit/nt/flameshield,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "frp" = (
@@ -21872,10 +21851,6 @@
 	icon_state = "6,3"
 	},
 /area/shuttle/rocinante_shuttle_area)
-"fOQ" = (
-/obj/machinery/multistructure/biogenerator_part/console,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "fOS" = (
 /obj/machinery/door/airlock/glass,
 /obj/machinery/door/firedoor,
@@ -22044,22 +22019,11 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/crew_quarters/techshop)
 "fRq" = (
-/obj/structure/reagent_dispensers/biomatter/large,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
-/obj/effect/floor_decal/industrial/warningred/full,
-/obj/machinery/door/window/southleft{
-	dir = 1;
-	name = "Biomatter containment";
-	req_access = list(45)
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
+/obj/structure/table/glass,
+/obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
 "fRr" = (
@@ -23556,10 +23520,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "glE" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/structure/closet/oathbound,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "glN" = (
@@ -24209,11 +24173,6 @@
 /obj/effect/floor_decal/corner_techfloor_grid,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/crew_quarters/dorm3)
-"gvr" = (
-/obj/effect/decal/cleanable/solid_biomass,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/undergroundfloor1south)
 "gvt" = (
 /obj/machinery/light/floor,
 /obj/effect/floor_decal/steeldecal/steel_decals_central6{
@@ -25853,10 +25812,6 @@
 	},
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/engineering/shield_generator)
-"gRp" = (
-/obj/structure/closet/acolyte,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
 "gRt" = (
 /obj/structure/shuttle_part/mining{
 	icon_state = "12,1"
@@ -29139,7 +29094,7 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/outside/forest)
 "hJR" = (
-/obj/structure/low_wall/church,
+/obj/structure/low_wall/custodian,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/vectorrooms)
 "hKc" = (
@@ -31898,10 +31853,10 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/panic_room)
 "iyZ" = (
-/obj/structure/closet/coffin,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/dark/techfloor,
-/area/liberty/bonfire/storage)
+/obj/structure/bed/chair/wood,
+/obj/landmark/join/start/oathbound,
+/turf/simulated/floor/carpet,
+/area/liberty/bonfire/vectorrooms)
 "izd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -32690,9 +32645,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_x = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -32883,15 +32835,13 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "iNj" = (
-/obj/machinery/autolathe/bioprinter{
-	name = "Bioprinter"
-	},
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/autolathe/flarelathe,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "iNo" = (
@@ -36459,15 +36409,9 @@
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
 "jLC" = (
-/obj/structure/closet/secure_closet/freezer,
-/obj/random/junkfood/onlyburger,
-/obj/random/junkfood,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
+/obj/landmark/join/start/forgemaster,
+/turf/simulated/floor/tiled/dark/golden,
+/area/liberty/bonfire/storage)
 "jLG" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,3"
@@ -38000,7 +37944,6 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "khU" = (
 /obj/machinery/optable/altar,
-/obj/item/rig/combat/knight/equipped,
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
@@ -38048,7 +37991,6 @@
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/medical/organ_lab)
 "kiq" = (
-/obj/machinery/multistructure/biogenerator_part/generator,
 /obj/structure/cable/yellow{
 	d2 = 2;
 	icon_state = "0-2"
@@ -41006,6 +40948,7 @@
 /area/liberty/command/tcommsat/computer)
 "kYa" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/loading/white,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "kYv" = (
@@ -41202,7 +41145,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/machinery/composite_artificer,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "lbZ" = (
@@ -41804,10 +41746,6 @@
 /obj/structure/reagent_dispensers/fueltank/huge,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/engine_room)
-"ljV" = (
-/obj/machinery/multistructure/biogenerator_part/port,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "lkc" = (
 /obj/machinery/vending/engineering,
 /turf/simulated/floor/tiled/steel/brown_perforated,
@@ -44166,6 +44104,7 @@
 "lSv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/sewing_artificer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "lSz" = (
@@ -44478,6 +44417,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/landmark/join/start/enkindled,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
 "lWq" = (
@@ -45312,10 +45252,6 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor1west)
-"miX" = (
-/obj/structure/closet/secure_closet/personal/agrolyte,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
 "mjb" = (
 /obj/machinery/keycard_auth{
 	pixel_y = -24
@@ -46416,10 +46352,14 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "mCg" = (
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/glass/replenishing/chalice,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
+/obj/structure/bed/chair/wood{
+	dir = 1;
+	tag = "icon-wooden_chair (NORTH)"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/oathbound,
+/turf/simulated/floor/carpet,
+/area/liberty/bonfire/vectorrooms)
 "mCo" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/power/apc{
@@ -47028,11 +46968,6 @@
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/maintenance/undergroundfloor1north)
-"mLR" = (
-/obj/structure/bed/chair/wood,
-/obj/landmark/join/start/enkindled,
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/vectorrooms)
 "mMh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -49820,9 +49755,10 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "nxo" = (
-/obj/machinery/sewing_artificer,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
+/obj/structure/bed/chair/wood,
+/obj/landmark/join/start/forgemaster,
+/turf/simulated/floor/carpet,
+/area/liberty/bonfire/vectorrooms)
 "nxq" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -50077,15 +50013,11 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/outside/inside_colony)
 "nBc" = (
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/glass/urn/veteran{
-	pixel_x = 7
-	},
-/obj/item/oddity/nt/pyramid{
-	pixel_x = -9
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/industrial/loading/white,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/bioreactor)
 "nBo" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -50347,6 +50279,10 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
+"nFc" = (
+/obj/structure/closet/enkindled,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/office)
 "nFe" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -50425,7 +50361,7 @@
 /area/liberty/security/sechall)
 "nGq" = (
 /obj/effect/floor_decal/industrial/hatch,
-/obj/structure/reagent_dispensers/biomatter/large,
+/obj/structure/reagent_dispensers/scorch/large,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "nGr" = (
@@ -50672,7 +50608,6 @@
 /area/liberty/maintenance/surface_maints_1)
 "nJD" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/accessory/magatama,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "nJK" = (
@@ -50856,13 +50791,9 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/bioreactor)
 "nMJ" = (
-/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter{
-	pixel_x = 7
-	},
-/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms{
-	pixel_x = -6
-	},
 /obj/structure/table/woodentable,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textials,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "nMM" = (
@@ -52016,7 +51947,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/side/f2section1)
 "ocW" = (
-/obj/machinery/suit_storage_unit/nt/custodian,
+/obj/machinery/suit_storage_unit/nt/janitor,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/crew_quarters/janitor)
 "odh" = (
@@ -54800,15 +54731,6 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/engine_waste)
-"oOP" = (
-/obj/effect/overlay/water,
-/obj/effect/overlay/water/top,
-/obj/effect/decal/cleanable/solid_biomass,
-/turf/simulated/floor/beach/water/jungledeep{
-	desc = "Filthy, stinking bilge water.";
-	name = "murky water"
-	},
-/area/liberty/maintenance/undergroundfloor1west)
 "oOY" = (
 /obj/structure/shuttle_part/mining{
 	icon_state = "1,5"
@@ -55149,9 +55071,6 @@
 /area/liberty/quartermaster/disposaldrop)
 "oTj" = (
 /obj/machinery/vending/theomat,
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_x = 32
-	},
 /obj/machinery/camera/network/church{
 	dir = 8
 	},
@@ -56725,10 +56644,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
-"pqh" = (
-/obj/effect/floor_decal/industrial/loading/white,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "pqj" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -57618,11 +57533,7 @@
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
 "pCA" = (
-/obj/structure/closet/secure_closet/reinforced/preacher,
-/obj/item/device/taperecorder,
-/obj/item/device/camera,
-/obj/item/device/camera_film,
-/obj/item/clothing/mask/gas/germanmask,
+/obj/structure/closet/secure_closet/reinforced/oathpledge,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "pCD" = (
@@ -58262,9 +58173,6 @@
 "pKR" = (
 /obj/item/bedsheet/browndouble,
 /obj/structure/bed/double/padded,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_x = 32
-	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "pKT" = (
@@ -58814,7 +58722,7 @@
 /obj/structure/bed/chair/wood{
 	dir = 8
 	},
-/obj/landmark/join/start/enkindled,
+/obj/landmark/join/start/oathbound,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "pRr" = (
@@ -60415,9 +60323,6 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/rnd/lab)
 "qkz" = (
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_x = -32
-	},
 /obj/item/stool,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/office)
@@ -62099,9 +62004,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -62135,13 +62037,6 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/captain/quarters)
-"qJw" = (
-/obj/effect/decal/cleanable/solid_biomass,
-/turf/simulated/floor/beach/water/jungledeep{
-	desc = "Filthy, stinking bilge water.";
-	name = "murky water"
-	},
-/area/liberty/maintenance/undergroundfloor1south)
 "qJO" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/blast/regular{
@@ -62667,7 +62562,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/obj/machinery/suit_storage_unit/nt/flameshield,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "qRq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -62966,11 +62863,6 @@
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
-"qVW" = (
-/obj/effect/decal/cleanable/solid_biomass,
-/obj/effect/decal/cleanable/rubble,
-/turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/undergroundfloor1west)
 "qVZ" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/engineering/atmos/storage)
@@ -66188,10 +66080,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
 "rRu" = (
-/obj/structure/table/woodentable,
-/obj/item/device/lighting/toggleable/lantern/censer,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/sewing_artificer/composite_artificer,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/bioreactor)
 "rRv" = (
 /obj/machinery/door/airlock/command{
 	id_tag = "wobolt1";
@@ -66733,12 +66625,6 @@
 /area/shuttle/vasiliy_shuttle_area)
 "rZo" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
 "rZp" = (
@@ -68004,9 +67890,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/cola,
 /obj/item/reagent_containers/food/drinks/bottle/cola,
 /obj/item/reagent_containers/food/drinks/cans/grape_juice,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_y = 32
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "snM" = (
@@ -68968,9 +68851,6 @@
 /obj/effect/floor_decal/industrial/arrows/white{
 	dir = 1
 	},
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_y = -32
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -69415,9 +69295,6 @@
 "sFa" = (
 /obj/machinery/light{
 	dir = 1
-	},
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_y = 30
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -71662,6 +71539,10 @@
 	dir = 1;
 	pixel_y = -32
 	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/tool/saw,
+/obj/item/tool/hammer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "tlj" = (
@@ -71824,9 +71705,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/cola,
 /obj/item/reagent_containers/food/drinks/bottle/cola,
 /obj/item/reagent_containers/food/drinks/cans/grape_juice,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_y = 32
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "tng" = (
@@ -72248,8 +72126,8 @@
 /obj/machinery/camera/network/medbay{
 	dir = 1
 	},
-/obj/structure/table/glass,
-/obj/item/reagent_containers/glass/bucket,
+/obj/machinery/biosculptor,
+/obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
 "tsw" = (
@@ -72738,9 +72616,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/medical/reception)
 "tzL" = (
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_y = -32
-	},
 /obj/machinery/camera/network/church{
 	dir = 1
 	},
@@ -73387,9 +73262,6 @@
 "tJm" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/browndouble,
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_x = 32
-	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "tJo" = (
@@ -76669,10 +76541,6 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/maintenance/undergroundfloor1east)
-"uBr" = (
-/obj/machinery/biomatter_solidifier,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/bioreactor)
 "uBt" = (
 /obj/random/scrap/dense_weighted,
 /obj/effect/decal/cleanable/dirt,
@@ -78955,11 +78823,11 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor1west)
 "vlx" = (
-/obj/structure/closet/acolyte,
 /obj/machinery/camera/network/church,
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
+/obj/structure/closet/oathbound,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "vly" = (
@@ -79034,13 +78902,6 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/turret_protected/ai_upload)
-"vms" = (
-/obj/structure/sign/faction/neotheology_cross{
-	pixel_y = -32
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
-/area/liberty/bonfire/vectorrooms)
 "vmy" = (
 /obj/structure/table/woodentable,
 /obj/item/reagent_containers/food/snacks/candy,
@@ -79685,11 +79546,6 @@
 /obj/item/device/lighting/toggleable/lantern,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/crew_quarters/botanist)
-"vvf" = (
-/obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform/priest,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "vvh" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/condiment/peppermill,
@@ -85236,9 +85092,6 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/crew_quarters/bar)
 "wSg" = (
-/obj/structure/sign/faction/neotheology_cross/gold{
-	pixel_y = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/invislight/outside,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -86154,6 +86007,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/liberty/maintenance/undergroundfloor1east)
+"xgg" = (
+/obj/effect/floor_decal/industrial/box,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/liberty/medical/genetics_cloning)
 "xgi" = (
 /obj/machinery/light{
 	dir = 4
@@ -86925,7 +86782,7 @@
 /area/liberty/medical/genetics_cloning)
 "xqs" = (
 /obj/effect/floor_decal/industrial/hatch,
-/obj/structure/reagent_dispensers/biomatter,
+/obj/structure/reagent_dispensers/scorch,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "xqy" = (
@@ -87950,7 +87807,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/science)
 "xEB" = (
-/obj/machinery/textials,
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
@@ -88346,15 +88202,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1north)
-"xKF" = (
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	tag = "icon-wooden_chair (NORTH)"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/enkindled,
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/vectorrooms)
 "xKJ" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -89351,8 +89198,8 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "xXO" = (
-/obj/structure/closet/custodial,
 /obj/machinery/light,
+/obj/structure/closet/enkindled,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "xYl" = (
@@ -89786,12 +89633,6 @@
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/shuttle/surface_transport_lz)
-"ydR" = (
-/obj/item/tool/knife/neotritual,
-/obj/item/clothing/gloves/psionic_ring,
-/obj/structure/table/woodentable,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/command/prime)
 "yel" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
@@ -97580,7 +97421,7 @@ emu
 emu
 emu
 jnb
-qVW
+lhY
 ttS
 ttS
 lhY
@@ -99405,7 +99246,7 @@ kzy
 nuP
 kzy
 kzy
-oOP
+kzy
 nPk
 fLF
 kiA
@@ -99603,7 +99444,7 @@ kzy
 eXY
 cFC
 cFC
-oOP
+kzy
 kzy
 kzy
 cFC
@@ -100610,12 +100451,12 @@ emu
 mBx
 cFC
 kzy
-oOP
+kzy
 kzy
 mmQ
 kzy
 kzy
-oOP
+kzy
 kzy
 kzy
 nPk
@@ -105048,7 +104889,7 @@ eRh
 omv
 omv
 joC
-qJw
+cky
 cky
 cRb
 omv
@@ -105655,7 +105496,7 @@ rCV
 rCV
 joC
 cky
-qJw
+cky
 ogw
 omv
 emu
@@ -108895,7 +108736,7 @@ emu
 emu
 emu
 eRh
-gvr
+aNN
 aEZ
 aEZ
 aNN
@@ -154352,7 +154193,7 @@ sqG
 suC
 mwh
 eZy
-cQC
+xgg
 tsu
 sqG
 aPk
@@ -186228,13 +186069,13 @@ ttZ
 sPV
 vYU
 vYU
-sPV
+ejt
 sPV
 mRu
 cqx
 oPQ
 sPV
-sPV
+ejt
 cqx
 cqx
 sPV
@@ -187829,7 +187670,7 @@ jux
 ttZ
 nbu
 mad
-fOQ
+wtE
 rzR
 nQw
 gOY
@@ -187845,7 +187686,7 @@ eLt
 tZw
 kau
 jsP
-vvf
+uZA
 vwO
 vwO
 vwO
@@ -188031,7 +187872,7 @@ jux
 ttZ
 qsu
 iNX
-ljV
+wtE
 kUp
 hEt
 ttZ
@@ -188239,7 +188080,7 @@ fly
 nWs
 lbX
 lSv
-lSv
+nBc
 gMd
 wTS
 gix
@@ -188440,8 +188281,8 @@ nde
 fly
 ttZ
 xEB
-pqh
-uBr
+wtE
+wtE
 hAG
 gch
 gWh
@@ -188641,8 +188482,8 @@ tyk
 ttZ
 ttZ
 ttZ
-nxo
-kYa
+wtE
+rRu
 kYa
 vfq
 aZe
@@ -189648,8 +189489,8 @@ jvb
 unb
 unb
 dgW
-frm
-iyZ
+dgW
+dgW
 jvb
 jvb
 exD
@@ -190060,7 +189901,7 @@ jvb
 jvb
 iNj
 ahe
-dgW
+jLC
 ePf
 jvb
 rhK
@@ -190453,19 +190294,19 @@ saN
 aRj
 jux
 mZb
-gRp
+can
 pvP
 cby
-miX
+ffy
 tUJ
 pCA
-ddi
+nJD
 tUJ
 tUJ
 wgg
 vnh
 dgW
-phg
+aXH
 jvb
 rhK
 qDZ
@@ -190658,11 +190499,11 @@ mZb
 vlx
 fSn
 rSM
-miX
+ffy
 tUJ
 mWx
 mWx
-jLC
+mWx
 tUJ
 nsT
 eBu
@@ -190858,7 +190699,7 @@ rgr
 jux
 mZb
 glE
-bBM
+fSn
 rSM
 xXO
 tUJ
@@ -191062,7 +190903,7 @@ mZb
 ecH
 txN
 rTA
-ffy
+nFc
 tUJ
 wQC
 tBR
@@ -191261,7 +191102,7 @@ saN
 rgr
 jux
 mZb
-aXH
+ccl
 vSF
 muI
 lAn
@@ -191866,7 +191707,7 @@ veD
 saN
 rgr
 ryJ
-jvb
+aRL
 xJj
 cxs
 uCF
@@ -192270,7 +192111,7 @@ veD
 ngd
 rgr
 pPu
-jvb
+aRL
 xJj
 auV
 kUb
@@ -192690,7 +192531,7 @@ aBP
 pqg
 ibE
 uoZ
-vms
+cdM
 mBk
 mBk
 bhK
@@ -193081,14 +192922,14 @@ jux
 jvb
 jvb
 jvb
-dzz
+jvb
 mBk
 xwV
 tgI
-bgt
+nxo
 mRT
 mRT
-eVn
+mCg
 cdM
 dyF
 utS
@@ -193287,7 +193128,7 @@ mBk
 mBk
 psQ
 cdM
-mLR
+bgt
 mRT
 mRT
 eVn
@@ -193489,10 +193330,10 @@ giu
 brb
 jPl
 cdM
-bgt
+iyZ
 fEg
 etC
-xKF
+eVn
 cdM
 lOD
 utS
@@ -193694,7 +193535,7 @@ hko
 bgt
 rzh
 mRT
-eVn
+mCg
 cdM
 ejA
 utS
@@ -194104,7 +193945,7 @@ stC
 rOb
 gMI
 jrJ
-vms
+cdM
 mBk
 mBk
 bhK
@@ -194497,10 +194338,10 @@ mBk
 mBk
 rwB
 tUJ
-rRu
+nJD
 nJD
 osi
-ydR
+nJD
 tUJ
 wgO
 osL
@@ -194699,10 +194540,10 @@ cJC
 kbT
 jKQ
 tUJ
-mCg
+nJD
 mWx
 osi
-nBc
+nJD
 tUJ
 waD
 pRn

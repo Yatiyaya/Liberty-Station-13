@@ -14,7 +14,7 @@
 	minimum_character_age = 25
 	playtimerequired = 1200
 	security_clearance = CLEARANCE_CLERGY
-	health_modifier = 10
+	health_modifier = 20
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
 
 	initial_balance = INIT_BALANCE_COMMAND
@@ -23,11 +23,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
 
 	stat_modifiers = list(
-		STAT_MEC = 30,
-		STAT_BIO = 15,
-		STAT_COG = 10,
-		STAT_VIG = 15,
-		STAT_TGH = 10,
+		STAT_COG = 15,
+		STAT_TGH = 45,
+		STAT_ROB = 45,
 	)
 
 	perks = list(PERK_CHANNELING)
@@ -36,8 +34,9 @@
 							 /datum/computer_file/program/reports)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST,
-		CRUCIFORM_REDLIGHT
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_OATHPLEDGE,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	description = "The Oathpledge is the leader and beacon of guidance of the main surface stronghold. One of many in both cases.<br>\
@@ -69,15 +68,24 @@
 	difficulty = "Easy."
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
+	health_modifier = 20
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
 
 	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_LABOUR
 	stat_modifiers = list(
-		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
-		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+		STAT_MEC = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
+
+	core_upgrades = list(
+		CRUCIFORM_FORGEMASTER,
+		CRUCIFORM_CUSTODIAN,
+	)
+
+	perks = list(PERK_STALKER, PERK_ARTIST, PERK_CHANNELING)
 
 	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
 	software_on_spawn = list(
@@ -117,16 +125,16 @@
 	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_BIO = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_ENKINDLED,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	perks = list(PERK_CHANNELING)
@@ -154,8 +162,8 @@
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH
 	faction = MAP_FACTION
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
@@ -165,16 +173,16 @@
 	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_COG = 10,
+		STAT_TGH = 30,
+		STAT_ROB = 30,
 	)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_CUSTODIAN,
 	)
 
 	perks = list(PERK_CHANNELING)

@@ -62,16 +62,7 @@
 	icon_state = "nt_longsword"
 	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_STEEL = 5)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
-	holding_type = /obj/item/tool/sword/nt/longsword
-
-/obj/item/organ_module/active/simple/armblade/ritual
-	name = "Embedded Knife"
-	desc = "A ceremonial knife designed to be inserted into an arm, may The Bonfire have mercy."
-	verb_name = "Deploy knife"
-	icon_state = "neot-knife"
-	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_PLASTIC = 1)
-	allowed_organs = list(BP_R_ARM, BP_L_ARM)
-	holding_type = /obj/item/tool/knife/neotritual
+	holding_type = /obj/item/tool/sword/custodian/horseaxe
 
 /obj/item/organ_module/active/simple/armblade/energy_blade/deploy(mob/living/carbon/human/H, obj/item/organ/external/E)
 	..()

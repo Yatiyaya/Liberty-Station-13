@@ -244,9 +244,9 @@
 	heat = 2250
 
 /obj/item/tool/factorial_omni
-	name = "blessed touch"
-	desc = "Through the right litanies, a Factorial can coax bolts to turn and metal to join of their own accord, albeit not quite as effectively as actual tools."
-	icon_state = "fact_omni"
+	name = "forging touch"
+	desc = "Through their lectures, Custodian Forgemasters are able to shape the world around them to their will."
+	icon_state = "forging_touch"
 	force = WEAPON_FORCE_DANGEROUS
 	worksound = WORKSOUND_PULSING
 	w_class = ITEM_SIZE_HUGE

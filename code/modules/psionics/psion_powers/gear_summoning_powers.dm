@@ -69,7 +69,7 @@
 	psi_point_cost = 1
 
 	if(pay_power_cost(psi_point_cost))
-		var/obj/item/shield/riot/crusader/psionic/shield = new /obj/item/shield/riot/crusader/psionic(src, owner)
+		var/obj/item/shield/riot/psionic/shield = new /obj/item/shield/riot/psionic(src, owner)
 		owner.visible_message(
 			"[owner] clenches their fist, electricity crackling before a psy-shield forms in their hand!",
 			"You feel the rush of electric essence shocking your hand lightly before a psy-shield forms!"

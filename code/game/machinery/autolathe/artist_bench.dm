@@ -7,10 +7,10 @@
 #define ERR_NOINSIGHT "no insight"
 
 /obj/machinery/autolathe/artist_bench
-	name = "artist's bench"
+	name = "artisan's table"
 	desc = "Insert wood, steel, glass, plasteel, plastic and a bit of your soul to create a beautiful work of art."
 	icon = 'icons/obj/machines/autolathe.dmi'
-	icon_state = "bench"
+	icon_state = "artisantable"
 	circuit = /obj/item/circuitboard/artist_bench
 	have_disk = FALSE
 	have_reagents = FALSE

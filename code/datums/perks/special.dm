@@ -92,3 +92,28 @@
 	if(holder)
 		holder.sanity.insight_gain_multiplier *= 2
 	..()
+
+/////////////////
+//Lecture Perks//
+/////////////////
+
+/datum/perk/lecture/scorching_shell //Slowdown is 2.5 and is located in human_movement.dm, search "tally +="
+	name = "Scorching Shell"
+	desc = "Great burden comes to the protectors."
+	gain_text = "You feel your body stiffening, your stout refusal to change slowing down the world around you as you remain at a fixed point."
+	lose_text = "Your body feels lighter, weaker, you've returned to normal."
+	icon_state = "armor"
+
+/datum/perk/lecture/scorching_shell/assign(mob/living/carbon/human/H)
+	..()
+	holder.brute_mod_perk -= 0.2
+	holder.burn_mod_perk -= 0.2
+	holder.toxin_mod_perk -= 0.2
+	holder.oxy_mod_perk -= 0.2
+
+/datum/perk/lecture/scorching_shell/remove()
+	holder.brute_mod_perk += 0.2
+	holder.burn_mod_perk += 0.2
+	holder.toxin_mod_perk += 0.2
+	holder.oxy_mod_perk += 0.2
+	..()

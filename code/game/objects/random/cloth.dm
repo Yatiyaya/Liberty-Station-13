@@ -407,7 +407,7 @@
 				/obj/item/storage/backpack/industrial = 6,
 				/obj/item/storage/backpack/medical = 6,
 				/obj/item/storage/backpack/security = 6,
-				/obj/item/storage/backpack/neotheology = 2,
+				/obj/item/storage/backpack/custodian = 2,
 				/obj/item/storage/backpack/ironhammer = 2,
 				/obj/item/storage/backpack/military = 6,
 				/obj/item/storage/backpack/sport = 1,
@@ -417,7 +417,7 @@
 				/obj/item/storage/backpack/sport/green = 5,
 				/obj/item/storage/backpack/sport/orange = 5,
 				/obj/item/storage/backpack/sport/botanist = 4,
-				/obj/item/storage/backpack/sport/neotheology = 2,
+				/obj/item/storage/backpack/sport/custodian = 2,
 				/obj/item/storage/backpack/sport/ironhammer = 2,
 				/obj/item/storage/backpack/satchel = 1,
 				/obj/item/storage/backpack/satchel/white = 5,
@@ -432,7 +432,7 @@
 				/obj/item/storage/backpack/satchel/security = 6,
 				/obj/item/storage/backpack/satchel/leather/withwallet = 12,
 				/obj/item/storage/backpack/satchel/ironhammer = 4,
-				/obj/item/storage/backpack/satchel/neotheology = 4))
+				/obj/item/storage/backpack/satchel/custodian = 4))
 
 /obj/random/cloth/backpack/low_chance
 	name = "low chance random backpack"
@@ -450,9 +450,8 @@
 				/obj/item/storage/belt/security = 4,
 				/obj/item/storage/belt/webbing = 6,
 				/obj/item/storage/belt/webbing/ih = 2,
-				/obj/item/storage/belt/security/neotheology = 2,
 				/obj/item/storage/belt/utility = 8,
-				/obj/item/storage/belt/utility/neotheology = 4))
+				/obj/item/storage/belt/utility/custodian = 4))
 
 /obj/random/cloth/belt/low_chance
 	name = "low chance random belt"

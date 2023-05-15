@@ -893,13 +893,13 @@
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/chapel
-	name = "\improper Chapel"
+	name = "\improper Stronghold"
 	icon_state = "chapel"
 	ambience = list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg','sound/ambience/ambicha4.ogg')
 	sound_env = LARGE_ENCLOSED
 
 /area/liberty/bonfire/storage
-	name = "\improper Church Storage"
+	name = "\improper Custodian Storage"
 	icon_state = "erisyellow"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
@@ -909,22 +909,22 @@
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/bioreactor
-	name = "\improper Church Bioreactor Room"
+	name = "\improper Custodian Bonfire Room"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/vectorrooms
-	name = "\improper Church Vector Commons"
+	name = "\improper Custodian Commons"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/office
-	name = "\improper Chapel Office"
+	name = "\improper Stronghold Office"
 	icon_state = "chapeloffice"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
 
 /area/liberty/bonfire/chapelritualroom
-	name = "Chapel Rituals Room"
+	name = "Custodian Rituals Room"
 	icon_state = "erisgreen"
 
 //Engineering

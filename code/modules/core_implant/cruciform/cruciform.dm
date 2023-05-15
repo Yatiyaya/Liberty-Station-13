@@ -3,15 +3,15 @@
 var/list/disciples = list()
 
 /obj/item/implant/core_implant/cruciform
-	name = "vinculum Hearthcore"
+	name = "Hearthcore"
 	icon_state = "hearthcore_green"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
+	desc = "A symbol and power core of every Custodian. With the proper measures, this can be implanted to induct a new member into the Custodians."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
 	layer = ABOVE_MOB_LAYER
 	access = list(access_crematorium)
 	power = 0
-	max_power = 60
+	max_power = 100
 	power_regen = 0.5
 	price_tag = 10000
 	var/channeling_boost = 0  // used for the power regen boost if the wearer has the channeling perk
@@ -61,26 +61,6 @@ var/list/disciples = list()
 		return
 	..()
 	add_module(new CRUCIFORM_COMMON)
-	if(path == "tess")
-		add_module(new CRUCIFORM_TESS)
-	if(path == "lemn")
-		add_module(new CRUCIFORM_LEMN)
-	if(path == "mono")
-		add_module(new CRUCIFORM_MONO)
-	if(path == "divi")
-		add_module(new CRUCIFORM_DIVI)
-	if(path == "fact")
-		add_module(new CRUCIFORM_FACT)
-	if(path == "omni")
-		add_module(new CRUCIFORM_TESS)
-		add_module(new CRUCIFORM_LEMN)
-		add_module(new CRUCIFORM_MONO)
-		add_module(new CRUCIFORM_DIVI)
-		add_module(new CRUCIFORM_FACT)
-		add_module(new CRUCIFORM_PRIEST)
-		add_module(new CRUCIFORM_INQUISITOR)
-		add_module(new CRUCIFORM_CRUSADER)
-		add_module(new CRUCIFORM_OMNI)
 	update_data()
 	disciples |= wearer
 	return TRUE
@@ -107,15 +87,15 @@ var/list/disciples = list()
 	..()
 	var/datum/core_module/cruciform/cloning/data = get_module(CRUCIFORM_CLONING)
 	if(data?.mind) // if there is cloning data and it has a mind
-		to_chat(user, SPAN_NOTICE("This cruciform has been activated."))
+		to_chat(user, SPAN_NOTICE("This Hearthcore has been activated."))
 		if(isghost(user) || (user in disciples))
 			var/datum/mind/MN = data.mind
 			if(MN.name) // if there is a mind and it also has a name
-				to_chat(user, SPAN_NOTICE("This cruciform belongs to <b>[MN.name]</b>."))
+				to_chat(user, SPAN_NOTICE("This Hearthcore belongs to <b>[MN.name]</b>."))
 			else
 				to_chat(user, SPAN_DANGER("Something terrible has happened with this soul. Please notify somebody in charge."))
 	else // no cloning data
-		to_chat(user, "This cruciform has not yet been activated.")
+		to_chat(user, "This Hearthcore has not yet been activated.")
 
 /obj/item/implant/core_implant/cruciform/proc/transfer_soul()
 	if(!wearer || !activated)
@@ -147,121 +127,5 @@ var/list/disciples = list()
 //////////////////////////
 
 /obj/item/implant/core_implant/cruciform/proc/make_common()
-	remove_modules(CRUCIFORM_PRIEST)
-	remove_modules(CRUCIFORM_INQUISITOR)
-	remove_modules(/datum/core_module/cruciform/red_light)
+	remove_modules(CRUCIFORM_OATHPLEDGE)
 	security_clearance = CLEARANCE_COMMON
-
-/obj/item/implant/core_implant/cruciform/proc/make_priest()
-	add_module(new CRUCIFORM_PRIEST)
-	add_module(new CRUCIFORM_REDLIGHT)
-	security_clearance = CLEARANCE_CLERGY
-
-/obj/item/implant/core_implant/cruciform/proc/make_inquisitor()
-	add_module(new CRUCIFORM_PRIEST)
-	add_module(new CRUCIFORM_INQUISITOR)
-	//add_module(new /datum/core_module/cruciform/uplink())
-	remove_modules(/datum/core_module/cruciform/red_light)
-	security_clearance = CLEARANCE_CLERGY
-
-/obj/item/implant/core_implant/cruciform/proc/make_apostle()
-	add_module(new CRUCIFORM_TESS)
-	add_module(new CRUCIFORM_LEMN)
-	add_module(new CRUCIFORM_MONO)
-	add_module(new CRUCIFORM_DIVI)
-	add_module(new CRUCIFORM_FACT)
-	add_module(new CRUCIFORM_PRIEST)
-	add_module(new CRUCIFORM_INQUISITOR)
-	add_module(new CRUCIFORM_CRUSADER)
-	add_module(new CRUCIFORM_OMNI)
-	//add_module(new /datum/core_module/cruciform/uplink())
-	remove_modules(/datum/core_module/cruciform/red_light)
-	security_clearance = CLEARANCE_CLERGY
-
-	name = "omni cruciform"
-	icon_state = "hearthcore_omni"
-	max_power += 200
-	power_regen += 1
-
-	wearer.update_implants()
-
-//Path based cruciforms, these grant additional powers based on what path a cultist walks
-/obj/item/implant/core_implant/cruciform/tessellate
-	name = "tessellate cruciform"
-	icon_state = "hearthcore_blue"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/tessellate
-	power = 0
-	max_power = 60
-	power_regen = 0.8
-	path = "tess"
-
-/obj/item/implant/core_implant/cruciform/lemniscate
-	name = "lemniscate cruciform"
-	icon_state = "hearthcore_red"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/lemniscate
-	//access = list(access_nt_disciple) //So they can try and recuit people - Correction people just cant stop abusing everything ever.
-	power = 0
-	max_power = 50
-	power_regen = 1
-	path = "lemn"
-
-/obj/item/implant/core_implant/cruciform/monomial
-	name = "monomial cruciform"
-	icon_state = "hearthcore_yellow"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/monomial
-	power = 0
-	max_power = 90
-	power_regen = 0.2
-	path = "mono"
-
-/obj/item/implant/core_implant/cruciform/divisor
-	name = "divisor cruciform"
-	icon_state = "hearthcore_orange"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/divisor
-	power = 0
-	max_power = 50
-	power_regen = 0.4
-	path = "divi"
-
-/obj/item/implant/core_implant/cruciform/factorial
-	name = "factorial cruciform"
-	icon_state = "hearthcore_cyan"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/factorial
-	power = 0
-	max_power = 50
-	power_regen = 0.4
-	path = "fact"
-
-/obj/item/implant/core_implant/cruciform/omni
-	name = "Omni-Cruciform"
-	icon_state = "hearthcore_omni"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
-	implant_type = /obj/item/implant/core_implant/cruciform/omni
-	power = 0
-	max_power = 200
-	power_regen = 1
-	path = "omni"
-	security_clearance = CLEARANCE_CLERGY
-
-// This is used either by Augustine or an agent sent by her that has her authority (an apostle) and should be reserved for events. -Kaz
-/mob/proc/make_church_apostle()
-	var/mob/living/carbon/human/user = src
-	if(user.is_mannequin) //Quick return to stop them adding mages to mannequins
-		return
-	if(istype(user))
-		var/obj/item/organ/external/chest = user.get_organ(BP_CHEST)
-
-		if(chest)
-			var/obj/item/implant/core_implant/C = new /obj/item/implant/core_implant/cruciform/omni
-			C.install(src)
-			C.activate()
-			if(mind)
-				C.install_default_modules_by_job(mind.assigned_job)
-				C.access.Add(mind.assigned_job.cruciform_access)
-				C.install_default_modules_by_path(mind.assigned_job)
-				C.security_clearance = C.security_clearance

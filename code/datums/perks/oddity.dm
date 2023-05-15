@@ -283,11 +283,11 @@
 ///////////////////////////////////////
 
 /datum/perk/nt_oddity
-	gain_text = "The Bonfire chose you to expand its will."
+	gain_text = "You are filled with philosophical inspiration."
 
 /datum/perk/nt_oddity/holy_light
-	name = "Holy Light"
-	desc = "You have been blessed by the grace of the Bonfire. You now provide a weak healing aura, healing both brute and burn damage to any cruciform bearers nearby as well as yourself."
+	name = "Radiant Light"
+	desc = "You now provide a weak healing aura, healing both brute and burn damage to any Hearthcore users nearby as well as yourself."
 	icon_state = "third_eye"  //https://game-icons.net/1x1/lorc/third-eye.html
 	var/healing_power = 0.1
 	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.

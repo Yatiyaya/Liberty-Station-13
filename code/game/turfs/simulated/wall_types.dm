@@ -29,8 +29,8 @@
 	..(newloc, MATERIAL_STEEL)
 
 /turf/simulated/wall/church
-	name = "church wall"
-	desc = "A reinforced wall with golden triming, latin and with faithful depictions of tales told in images decorate the base."
+	name = "stronghold wall"
+	desc = "A reinforced wall decorated with blue trimming and dotted with symbols of the Custodians."
 	icon = 'icons/turf/wall_masks.dmi'
 	icon_state = "church_standard"
 	icon_base = "church_standard"
@@ -43,8 +43,8 @@
 	..(newloc, MATERIAL_STEEL)
 
 /turf/simulated/wall/church_reinforced
-	name = "church wall"
-	desc = "A reinforced wall with golden triming, latin and with faithful depictions of tales told in images decorate the base."
+	name = "stronghold wall"
+	desc = "A reinforced wall decorated with blue trimming and dotted with symbols of the Custodians."
 	icon_state = "church_reinforced"
 	icon_base_override = "church_standard"
 	icon_base_reinf_override = "church_reinforced"

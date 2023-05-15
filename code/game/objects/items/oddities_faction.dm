@@ -38,11 +38,6 @@
 		visible_message(SPAN_NOTICE("[name] drop [D]."))
 		last_produce = world.time
 
-/obj/item/biosyphon/attackby(obj/item/I, mob/living/user, params)
-	if(nt_sword_attack(I, user))
-		return
-	..()
-
 /*****************/
 /* PIRS ODDITIES */
 /*****************/
@@ -81,11 +76,6 @@
 		LEGACY_SEND_SIGNAL(H, COMSIG_OBJ_FACTION_ITEM_DESTROY, src)
 	GLOB.all_faction_items -= src
 	GLOB.moebius_faction_item_loss++
-	..()
-
-/obj/item/device/von_krabin/attackby(obj/item/I, mob/user, params)
-	if(nt_sword_attack(I, user))
-		return FALSE
 	..()
 
 /obj/item/device/von_krabin/attack_self()
@@ -161,11 +151,6 @@
 		LEGACY_SEND_SIGNAL(H, COMSIG_OBJ_FACTION_ITEM_DESTROY, src)
 	GLOB.all_faction_items -= src
 	GLOB.moebius_faction_item_loss++
-	..()
-
-/obj/item/reagent_containers/enricher/attackby(obj/item/I, mob/living/user, params)
-	if(nt_sword_attack(I, user))
-		return FALSE
 	..()
 
 /obj/item/reagent_containers/enricher/attack_self()
@@ -295,8 +280,6 @@ No more of that.
 	..()
 
 /obj/item/device/techno_tribalism/attackby(obj/item/W, mob/user, params)
-	if(nt_sword_attack(W, user))
-		return FALSE
 	if(items_count < max_count)
 		if(W in GLOB.all_faction_items)
 			if(GLOB.all_faction_items[W] == GLOB.department_moebius)
@@ -490,9 +473,6 @@ No more of that.
 		followers |= affected
 
 /obj/item/maneki_neko/attackby(obj/item/W, mob/user, params)
-	if(nt_sword_attack(W, user))
-		return FALSE
-
 	if(QUALITY_HAMMERING in W.tool_qualities)
 		if(W.use_tool(user, src, WORKTIME_INSTANT, QUALITY_HAMMERING, FAILCHANCE_EASY, required_stat = STAT_ROB))
 			playsound(src, "shatter", 70, 1)
@@ -523,12 +503,15 @@ No more of that.
 /* CUSTODIANS OF THE BONFIRE */
 /*****************************/
 
-/obj/item/tool/sword/crusader/nt_sword_truth
-	name = "Joyeuse"
-	desc = "A sword made out of an unknown alloy, humming from an unknown power source."
+/obj/item/tool/sword/custodians_damocles
+	name = "Sword of Damocles"
+	desc = "The words of philosopher Cicero had many meanings, but the one mostly understood was that the ever-present peril faced by those in positions of power was constant and imminent. \
+	Considering this, the Oathpledge is given a legendary sword of their own - a relic that must be protected at all costs."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "nt_sword_truth"
 	item_state = "nt_sword_truth"
+	force = WEAPON_FORCE_LETHAL
+	armor_penetration = ARMOR_PEN_HALF
 	slot_flags = FALSE
 	origin_tech = list(TECH_COMBAT = 9, TECH_POWER = 9, TECH_MATERIAL = 9)
 	price_tag = 20000
@@ -536,31 +519,26 @@ No more of that.
 	var/flash_cooldown = 1 MINUTES
 	var/last_use = 0
 
-/obj/item/tool/sword/crusader/nt_sword_truth/wield(mob/living/user)
+/obj/item/tool/sword/custodians_damocles/wield(mob/living/user)
 	..()
 	set_light(l_range = 4, l_power = 3)
 
-/obj/item/tool/sword/crusader/nt_sword_truth/unwield(mob/living/user)
+/obj/item/tool/sword/custodians_damocles/unwield(mob/living/user)
 	..()
 	set_light(l_range = 0, l_power = 0)
 
-/obj/item/tool/sword/nt_sword/New()
+/obj/item/tool/sword/custodians_damocles/New()
 	..()
 	GLOB.all_faction_items[src] = GLOB.department_church
 
-/obj/item/tool/sword/nt_sword/Destroy()
+/obj/item/tool/sword/custodians_damocles/Destroy()
 	for(var/mob/living/carbon/human/H in viewers(get_turf(src)))
 		LEGACY_SEND_SIGNAL(H, COMSIG_OBJ_FACTION_ITEM_DESTROY, src)
 	GLOB.all_faction_items -= src
 	GLOB.neotheology_faction_item_loss++
 	..()
 
-/obj/item/tool/sword/nt_sword/attackby(obj/item/I, mob/user, params)
-	if(nt_sword_attack(I, user))
-		return FALSE
-	..()
-
-/obj/item/tool/sword/crusader/nt_sword_truth/attack_self(mob/user)
+/obj/item/tool/sword/custodians_damocles/attack_self(mob/user)
 	if(!wielded)
 		to_chat(user, SPAN_WARNING("You cannot use [src] special ability with one hand!"))
 		return
@@ -609,29 +587,29 @@ No more of that.
 	last_use = world.time
 	return
 
-/obj/item/tool/sword/crusader/nt_sword_truth/equipped(mob/living/M)
+/obj/item/tool/sword/custodians_damocles/equipped(mob/living/M)
 	. = ..()
 	if(is_held() && is_neotheology_disciple(M))
 		embed_mult = 0.1
 	else
 		embed_mult = initial(embed_mult)
 
-/obj/structure/nt_pedestal
-	name = "Pedestal of the Joyeuse"
-	desc = "Pedestal of the glorious weapon named: \"Joyeuse\"."
+/obj/structure/damocles_pedestal
+	name = "Pedestal of Damocles"
+	desc = "Pedestal of the Sword of Damocles."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "nt_pedestal0"
 	anchored = TRUE
 	density = TRUE
 	breakable = FALSE
-	var/obj/item/tool/sword/crusader/nt_sword_truth/sword
+	var/obj/item/tool/sword/custodians_damocles/sword
 
-/obj/structure/nt_pedestal/New(var/loc, var/turf/anchor)
+/obj/structure/damocles_pedestal/New(var/loc, var/turf/anchor)
 	..()
-	sword = new /obj/item/tool/sword/crusader/nt_sword_truth(src)
+	sword = new /obj/item/tool/sword/custodians_damocles(src)
 	update_icon()
 
-/obj/structure/nt_pedestal/attackby(obj/item/I, mob/user)
+/obj/structure/damocles_pedestal/attackby(obj/item/I, mob/user)
 	if(I.has_quality(QUALITY_BOLT_TURNING))
 		if(!anchored)
 			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
@@ -641,7 +619,7 @@ No more of that.
 			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 				to_chat(user, SPAN_NOTICE("You've unsecured the [src] assembly!"))
 				anchored = FALSE
-	if(istype(I, /obj/item/tool/sword/crusader/nt_sword_truth))
+	if(istype(I, /obj/item/tool/sword/custodians_damocles))
 		if(sword)
 			to_chat(user, SPAN_WARNING("[src] already has a sword in it!"))
 		insert_item(I, user)
@@ -649,7 +627,7 @@ No more of that.
 		update_icon()
 		visible_message(SPAN_NOTICE("[user] placed [sword] into [src]."))
 
-/obj/structure/nt_pedestal/attack_hand(mob/user)
+/obj/structure/damocles_pedestal/attack_hand(mob/user)
 	..()
 	if(sword && istype(user, /mob/living/carbon))
 		var/mob/living/carbon/H = user
@@ -673,14 +651,14 @@ No more of that.
 		else
 			visible_message(SPAN_WARNING("[user] failed to remove [sword] from the [src]"))
 
-/obj/structure/nt_pedestal/update_icon()
+/obj/structure/damocles_pedestal/update_icon()
 	icon_state = "nt_pedestal[sword?"1":"0"]"
 
 /obj/item/storage/sheath/joyeuse
-	name = "\improper Joyeuse sheath"
-	desc = "A specially designed sheathe for the joyeuse, which is the only object that shall fit in it."
+	name = "\improper Damocles sheath"
+	desc = "A specially designed sheathe for the Sword of Damocles, which is the only object that shall fit in it."
 	can_hold = list(
-		/obj/item/tool/sword/crusader/nt_sword_truth
+		/obj/item/tool/sword/custodians_damocles
 		)
 
 /obj/item/reagent_containers/atomic_distillery
@@ -713,11 +691,6 @@ No more of that.
 
 /obj/item/reagent_containers/atomic_distillery/Process()
 	reagents.add_reagent("atomvodka", 1)
-
-/obj/item/reagent_containers/atomic_distillery/attackby(obj/item/I, mob/user, params)
-	if(nt_sword_attack(I, user))
-		return FALSE
-	..()
 
 /obj/item/reagent_containers/atomic_distillery/pre_attack(atom/A, mob/user, params)
 	if(user.a_intent == I_HURT)

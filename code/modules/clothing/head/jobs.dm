@@ -321,3 +321,37 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.9
 	armor_list = list(melee = 20, bullet = 20, energy = 20, bomb = 35, bio = 75, rad = 35)
+
+//Custodians
+
+/obj/item/clothing/head/custodian
+	name = "custodian hat base item"
+	desc = "Not supposed to be seen in-game"
+	icon_state = "oathbound_scarredhat"
+	item_state = "oathbound_scarredhat"
+	armor_list = list(melee = 20, bullet = 15, energy = 15, bomb = 15, bio = 100, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 3)
+
+/obj/item/clothing/head/custodian/oathbound
+	name = "oathbound scarred hat"
+	desc = "A scarred hat given to the Oathbound."
+	icon_state = "oathbound_scarredhat"
+	item_state = "oathbound_scarredhat"
+
+/obj/item/clothing/head/custodian/enkindled
+	name = "enkindled tophat"
+	desc = "A soft but durable top hat given to Enkindled."
+	icon_state = "enkindled_tophat"
+	item_state = "enkindled_tophat"
+
+/obj/item/clothing/head/custodian/forgemaster
+	name = "forgemaster tricorn"
+	desc = "A comfortable tricorn hat given to Forgemasters."
+	icon_state = "forgemaster_tricorn"
+	item_state = "forgemaster_tricorn"
+
+/obj/item/clothing/head/custodian/oathpledge
+	name = "oathpledge hat"
+	desc = "A wide-brim hat given to the Oathpledge."
+	icon_state = "oathpledge_hat"
+	item_state = "oathpledge_hat"

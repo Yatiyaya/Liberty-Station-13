@@ -694,7 +694,7 @@
 	name = "sanctifier"
 	icon_state = "sanctifier"
 	desc = "Recommended for crusades against mutants, wild life, and heretics. Does this device actually make a better weapon or is it something else? Regardless, it makes one more thoughtful during labor."
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_CARBON_FIBER = 3, MATERIAL_SILVER = 5)
 	price_tag = 20
 
 /obj/item/tool_upgrade/augment/sanctifier/New()
