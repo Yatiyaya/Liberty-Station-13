@@ -317,6 +317,17 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	icon_state = "bluetie"
 	item_state = "bluetie"
 	chameleon_type = "accessory"
+	
+/obj/item/gun/energy/chameleon
+	name = "\"Liberty\" pistol"
+	desc = "A hologram projector in the shape of a gun. There is a dial on the side to change the gun's disguise."
+	icon = 'icons/obj/guns/projectile/liberty.dmi'
+	icon_state = "liberty"
+	chameleon_type = "gun"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	projectile_type = /obj/item/projectile/chameleon
+	charge_meter = FALSE
+	charge_cost = 20
 
 
 /obj/item/gun/energy/chameleon/disguise(newtype, mob/user)
