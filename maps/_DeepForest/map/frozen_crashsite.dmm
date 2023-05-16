@@ -1668,7 +1668,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "tc" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/dark,
 /area/colony)
@@ -2290,7 +2290,7 @@
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "zJ" = (
-/obj/random/mob/render,
+/obj/random/mob/agape,
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "zP" = (
@@ -3019,7 +3019,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "HI" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "HO" = (

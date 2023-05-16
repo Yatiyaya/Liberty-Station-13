@@ -1,15 +1,15 @@
 //Random mob spawners unique to liberty, these should primarily be ones for the colony and surrounding areas.
 //renders
-/obj/random/mob/render
-	name = "random render"
+/obj/random/mob/agape
+	name = "random agape"
 	icon_state = "hostilemob-brown"
 	alpha = 128
 
-/obj/random/mob/render/item_to_spawn()
-	return pickweight(list(/mob/living/simple_animal/hostile/render))
+/obj/random/mob/agape/item_to_spawn()
+	return pickweight(list(/mob/living/simple_animal/hostile/agape))
 
-/obj/random/mob/render/low_chance
-	name = "low chance render 10%"
+/obj/random/mob/agape/low_chance
+	name = "low chance agape 10%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 90
 

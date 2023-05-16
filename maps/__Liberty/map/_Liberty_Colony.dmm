@@ -2340,7 +2340,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/side/f2section1)
 "aHh" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavehideout)
 "aHo" = (
@@ -21144,7 +21144,7 @@
 /turf/simulated/mineral,
 /area/colony)
 "fEK" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/campground)
 "fEN" = (
@@ -24958,7 +24958,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/hallway/surface/section1)
 "gHa" = (
-/obj/random/mob/render,
+/obj/random/mob/agape,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavehideout)
 "gHc" = (
