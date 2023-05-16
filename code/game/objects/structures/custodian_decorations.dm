@@ -41,16 +41,16 @@
 	anchored = TRUE
 
 /obj/structure/decor_inloved_1
-    name = "the inloved"
-    desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
+	name = "the inloved"
+	desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
 	icon = 'icons/obj/structures/64x64_decorations.dmi'
 	icon_state = "decor_the_inloved"
 	density = TRUE
 	anchored = TRUE
 
 /obj/structure/decor_inloved_2
-    name = "the inloved"
-    desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
+	name = "the inloved"
+	desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
 	icon = 'icons/obj/structures/64x64_decorations.dmi'
 	icon_state = "decor_the_inloved2"
 	density = TRUE
