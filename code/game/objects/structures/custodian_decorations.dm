@@ -40,6 +40,61 @@
 	icon_state = "decor_gazer"
 	anchored = TRUE
 
+/obj/structure/decor_inloved_1
+    name = "the inloved"
+    desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_inloved"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_inloved_2
+    name = "the inloved"
+    desc = "An statue reflecting Elohopean literature centered around strong emotional attachment. Love is portrayed both as a poison and as the fuel of life itself."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_inloved2"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_headless_1
+	name = "the headless"
+	desc = "A statue reflecting the change of power. Previously, these statues portrayed the holder of a chief position within the Stronghold leadership, but ever since the advent of the Oathpledge's rotational leadership, these statues have been left headless."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_headless"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_headless_2
+	name = "the headless"
+	desc = "A statue reflecting the change of power. Previously, these statues portrayed the holder of a chief position within the Stronghold leadership, but ever since the advent of the Oathpledge's rotational leadership, these statues have been left headless."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_headless2"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_headless_3
+	name = "the headless"
+	desc = "A statue reflecting the change of power. Previously, these statues portrayed the holder of a chief position within the Stronghold leadership, but ever since the advent of the Oathpledge's rotational leadership, these statues have been left headless."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_headless3"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_the_twins
+	name = "the twins"
+	desc = "This statue portrays the sense of unity in ancient Elohopean literature. No matter how different two Custodians may be, they could always rely on each other for safety."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_twins"
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/decor_the_purifier
+	name = "the purifier"
+	desc = "This statue portrays an old hero of the War of Elohopea - a relatively controversial figure known for granting no mercy during their many debt-slave freeing campaigns. All while using a metallic bat as a weapon rather than a blade."
+	icon = 'icons/obj/structures/64x64_decorations.dmi'
+	icon_state = "decor_the_purifier"
+	density = TRUE
+	anchored = TRUE
 
 /obj/structure/decor_light
 	name = "decor light base item"
