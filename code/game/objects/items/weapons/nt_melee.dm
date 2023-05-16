@@ -201,7 +201,7 @@
 	name = "conflagration sword"
 	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance."
 	icon_state = "conflagrationsword"
-	item_state = "conflagrationsword_wielded"
+	item_state = "conflagrationsword"
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_DEEP
 	w_class = ITEM_SIZE_BULKY
