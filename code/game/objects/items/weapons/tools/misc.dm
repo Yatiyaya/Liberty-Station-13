@@ -267,7 +267,7 @@
 /obj/item/tool/factorial_omni/Process()
 	..()
 	if(loc != holder) // We're no longer in the owner's hand.
-		visible_message("The [src.name] fades into nothingness.")
+		visible_message("[src.name] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return

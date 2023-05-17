@@ -156,6 +156,7 @@
 	embed_mult = 0
 	has_alt_mode = FALSE
 	var/effect_time = 5 MINUTES
+	hitsound = 'sound/weapons/blunthit.ogg'
 
 /obj/item/tool/sword/custodian/warhammer/attack_self(mob/user)
 	var/mob/living/carbon/human/theuser = user
@@ -174,7 +175,7 @@
 
 /obj/item/tool/sword/custodian/warhammer/proc/heat_hammer()
 	set_light(l_range = 4, l_power = 2, l_color = COLOR_YELLOW)
-	visible_message("The [src] radiates a searing heat!")
+	visible_message("[src] radiates a searing heat!")
 	glowing = TRUE
 	heat = 1873
 	update_icon()
@@ -188,7 +189,7 @@
 	damtype = initial(damtype)
 	heat = initial(heat)
 	update_icon()
-	visible_message("The [src]'s heat dies down.")
+	visible_message("[src]'s heat dies down.")
 
 /obj/item/tool/sword/custodian/warhammer/update_icon()
 	if(glowing)

@@ -86,8 +86,6 @@
 	)
 
 	perks = list(PERK_STALKER, PERK_ARTIST, PERK_CHANNELING)
-
-	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
 	software_on_spawn = list(
 							 /datum/computer_file/program/scanner,
 							 /datum/computer_file/program/wordprocessor,
