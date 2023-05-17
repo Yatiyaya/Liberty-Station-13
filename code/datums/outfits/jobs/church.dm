@@ -18,7 +18,7 @@
 	uniform = /obj/item/clothing/under/custodian/oathpledge
 	suit = /obj/item/clothing/suit/storage/custodian/oathpledge
 	head = /obj/item/clothing/head/custodian/oathpledge
-	backpack_contents = list(/obj/item/book/ritual/cruciform/priest = 1, /obj/item/forgesigil = 1, /obj/item/mold/oathpledge_neuron)
+	backpack_contents = list(/obj/item/book/ritual/cruciform/priest = 1, /obj/item/forgesigil = 1, /obj/item/mold/oathpledge_neuron = 1)
 
 /decl/hierarchy/outfit/job/church/forgemaster
 	name = OUTFIT_JOB_NAME("Custodians of Bonfires - Forgemaster")

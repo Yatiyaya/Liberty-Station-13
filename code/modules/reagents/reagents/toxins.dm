@@ -769,20 +769,20 @@
 	nerve_system_accumulations = 50
 
 /datum/reagent/toxin/liquid_scorch/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	M.adjustFireLoss(5)
+	M.adjust_fire_stacks(5)
+	M.fire_act()
 	..()
-	if(istype(M))
-		M.adjustFireLoss(-5)
-		M.adjust_fire_stacks(5)
 
 /datum/reagent/toxin/liquid_scorch/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	M.adjustFireLoss(3)
+	M.adjust_fire_stacks(3)
+	M.fire_act()
 	..()
-	if(istype(M))
-		M.adjustFireLoss(-3)
-		M.adjust_fire_stacks(3)
 
 /datum/reagent/toxin/liquid_scorch/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
-	..()
 	scorch_attack(M, 20)
+	..()
 
 /datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
 	if(volume >= 5)
