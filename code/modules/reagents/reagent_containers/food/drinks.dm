@@ -228,7 +228,7 @@
 
 /obj/item/reagent_containers/food/drinks/dry_ramen
 	name = "\"Nightcall\" ramen"
-	desc = "A self-heating cup of ramen. Just add 10ml water."
+	desc = "A self-heating cup of ramen. Just add 10u water."
 	icon_state = "ramen"
 	center_of_mass = list("x"=16, "y"=11)
 	base_icon = "cup"

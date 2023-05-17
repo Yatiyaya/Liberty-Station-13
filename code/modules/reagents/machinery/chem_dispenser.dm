@@ -423,6 +423,7 @@
 	name = "industrial chem dispenser"
 	icon = 'icons/obj/machines/chemistry.dmi'
 	icon_state = "industrial_dispenser"
+	base_state = "industrial_dispenser"
 	ui_title = "Industrial Dispenser 4835"
 	circuit = /obj/item/circuitboard/chemical_dispenser/industrial
 	level0 = list(
