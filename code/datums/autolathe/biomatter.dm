@@ -167,20 +167,20 @@
 	materials = null
 
 /datum/design/bioprinter/mold_kit/blacksmithing
-	name = "Blacksmithing Moldkit"
-	build_path = /obj/item/mold_kit/blacksmithing
+	name = "Blacksmithing Tools"
+	build_path = /obj/item/stack/mold_kit/blacksmithing
 
 /datum/design/bioprinter/mold_kit/tailoring
-	name = "Tailoring Moldkit"
-	build_path = /obj/item/mold_kit/tailoring
+	name = "Tailoring Tools"
+	build_path = /obj/item/stack/mold_kit/tailoring
 
 /datum/design/bioprinter/mold_kit/masonry
-	name = "Masonry Moldkit"
-	build_path = /obj/item/mold_kit/masonry
+	name = "Masonry Tools"
+	build_path = /obj/item/stack/mold_kit/masonry
 
 /datum/design/bioprinter/mold_kit/radiance_sigil
 	name = "Radiance Sigil"
-	build_path = /obj/item/mold_kit/radiance_sigil
+	build_path = /obj/item/stack/mold_kit/radiance_sigil
 
 /datum/design/autolathe/tool_upgrade/sanctifier
 	name = "NT Sanctifier"
