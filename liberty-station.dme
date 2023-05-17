@@ -1375,6 +1375,7 @@
 #include "code\game\objects\structures\coathanger.dm"
 #include "code\game\objects\structures\cryopod.dm"
 #include "code\game\objects\structures\curtains.dm"
+#include "code\game\objects\structures\custodian_decorations.dm"
 #include "code\game\objects\structures\cyberplants.dm"
 #include "code\game\objects\structures\diamond_gem.dm"
 #include "code\game\objects\structures\displaycase.dm"
