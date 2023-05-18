@@ -300,7 +300,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/steel = 4,
 		/obj/item/stack/material/plastic = 2,
-		/obj/item/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
 	)
 /datum/custodian_blueprint/weak/canister/large
 	name = "Large Scorch Canister"
@@ -308,7 +308,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/steel = 16,
 		/obj/item/stack/material/plastic = 4,
-		/obj/item/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
 	)
 	build_time = 5 SECONDS
 
@@ -317,10 +317,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/machinery/power/nt_obelisk
 	materials = list(
 		/obj/item/stack/material/biopolymer_silk = 10,
-		/obj/item/mold_kit/radiance_sigil = 1,
+		/obj/item/stack/mold_kit/radiance_sigil = 1,
 		/obj/item/book/ritual/cruciform = 1,
-		/obj/item/mold_kit/masonry = 2,
-		/obj/item/mold_kit/tailoring = 3,
+		/obj/item/stack/mold_kit/masonry = 2,
+		/obj/item/stack/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
 
@@ -364,7 +364,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/steel = 5,
 		/obj/item/stack/material/biopolymer_silk = 20,
 		/obj/item/stack/material/silver = 2,
-		/obj/item/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
 	)
 	build_time = 8 SECONDS
 
@@ -374,8 +374,8 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/biopolymer_silk = 20,
 		/obj/item/stack/material/silver = 3,
-		/obj/item/mold_kit/blacksmithing = 1,
-		/obj/item/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/blacksmithing = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
 	)
 	build_time = 8 SECONDS
 
@@ -386,10 +386,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/plasteel = 6,
 		/obj/structure/reagent_dispensers/scorch = 1,
-		/obj/item/mold_kit/blacksmithing = 2,
-		/obj/item/mold_kit/tailoring = 3,
-		/obj/item/mold_kit/radiance_sigil = 1,
-		/obj/item/mold_kit/masonry = 4,
+		/obj/item/stack/mold_kit/blacksmithing = 2,
+		/obj/item/stack/mold_kit/tailoring = 3,
+		/obj/item/stack/mold_kit/radiance_sigil = 1,
+		/obj/item/stack/mold_kit/masonry = 4,
 	)
 	build_time = 8 SECONDS
 
@@ -400,10 +400,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/carbon_fiber = 10,
 		/obj/item/stack/material/biopolymer_silk = 30,
 		/obj/item/stack/material/silver = 10,
-		/obj/item/mold_kit/masonry = 2,
-		/obj/item/mold_kit/blacksmithing = 2,
+		/obj/item/stack/mold_kit/masonry = 2,
+		/obj/item/stack/mold_kit/blacksmithing = 2,
 		/obj/item/book/ritual/cruciform = 1,
-		/obj/item/mold_kit/tailoring = 3,
+		/obj/item/stack/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
 
@@ -490,9 +490,9 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/machinery/autolathe/artist_bench
 	materials = list(
 		/obj/item/stack/material/glass = 10,
-		/obj/item/mold_kit/masonry = 1,
-		/obj/item/mold_kit/tailoring = 1,
-		/obj/item/mold_kit/blacksmithing = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/tailoring = 1,
+		/obj/item/stack/mold_kit/blacksmithing = 1,
 	)
 	build_time = 5 SECONDS
 
@@ -503,9 +503,9 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/tool/sword/custodian/shortsword = 1,
 		/obj/item/stack/cable_coil = 20,
 		/obj/item/book/ritual/cruciform = 1,
-		/obj/item/mold_kit/tailoring = 2,
-		/obj/item/mold_kit/masonry = 1,
-		/obj/item/mold_kit/blacksmithing = 1,
+		/obj/item/stack/mold_kit/tailoring = 2,
+		/obj/item/stack/mold_kit/masonry = 1,
+		/obj/item/stack/mold_kit/blacksmithing = 1,
 	)
 	build_time = 20 SECONDS //We dont want to make these in combat
 
@@ -559,14 +559,13 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /mob/living/carbon/superior_animal/robot/church/rook
 	materials = list(
 		/obj/item/stack/material/diamond = 1,
-		/obj/item/book/ritual/cruciform = 2,
-		/obj/item/stack/cable_coil = 30,
+		/obj/item/book/ritual/cruciform = 1,
 		/obj/item/stack/cable_coil = 30,
 		/obj/item/stack/material/gold = 6,
-		/obj/item/mold_kit/radiance_sigil = 1,
-		/obj/item/mold_kit/blacksmithing = 5,
-		/obj/item/mold_kit/masonry = 3,
-		/obj/item/mold_kit/tailoring = 2,
+		/obj/item/stack/mold_kit/radiance_sigil = 1,
+		/obj/item/stack/mold_kit/blacksmithing = 5,
+		/obj/item/stack/mold_kit/masonry = 3,
+		/obj/item/stack/mold_kit/tailoring = 2,
 	)
 	build_time = 20 SECONDS //We dont want to make these in combat
 

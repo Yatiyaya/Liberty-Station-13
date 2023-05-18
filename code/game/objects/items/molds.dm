@@ -31,33 +31,39 @@
 	desc = "A unique component given to Oathpledges in order to forge their armor."
 	icon_state = "oathpledge_battleneuron"
 
-/obj/item/mold_kit
-	name = "moldkit base item"
+/obj/item/stack/mold_kit
+	name = "moldkit stack base item"
 	desc = "Not to be seen in-game."
 	icon = 'icons/obj/crafts.dmi'
 	icon_state = "radiance_sigil"
 	throw_range = 3
+	max_amount = 10
+	amount = 1
 
-/obj/item/mold_kit/radiance_sigil
-	name = "radiance sigil"
+/obj/item/stack/mold_kit/radiance_sigil
+	name = "radiance sigils"
+	singular_name = "radiance sigil"
 	desc = "A holding tray for Radiance used by the Custodians to make especially delicate adjustments to their nanomolds, the Radiance is consumed after their work is done."
 	icon_state = "radiance_sigil"
 	matter = list(MATERIAL_SILVER = 6)
 
-/obj/item/mold_kit/blacksmithing
-	name = "blacksmithing kit"
+/obj/item/stack/mold_kit/blacksmithing
+	name = "blacksmithing toolset"
+	singular_name = "blacksmithing tool"
 	desc = "A set of metalsmithing hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "blacksmithing_kit"
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8)
 
-/obj/item/mold_kit/tailoring
-	name = "tailoring kit"
+/obj/item/stack/mold_kit/tailoring
+	name = "tailoring toolset"
+	singular_name = "tailoring tool"
 	desc = "A set of tailoring hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "tailoring_kit"
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
 
-/obj/item/mold_kit/masonry
-	name = "masonry kit"
+/obj/item/stack/mold_kit/masonry
+	name = "masonry toolset"
+	singular_name = "masonry tool"
 	desc = "A set of carving and sharpening hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "masonry_kit"
 	matter = list(MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
