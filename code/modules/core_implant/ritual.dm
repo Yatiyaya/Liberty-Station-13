@@ -34,7 +34,8 @@
 //ritual will be proceed only if this returns true
 /datum/ritual/proc/pre_check(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	if(cooldown && is_on_cooldown(H))
-		fail("Lectures of this type can't be spoken too often.", H, C)
+		var/time_left = (H.personal_ritual_cooldowns[src.cooldown_category] - world.time)
+		fail("Lectures of this type can't be spoken too often, [time2text(time_left,"mm:ss")] remaining.", H, C)
 		return FALSE
 	return TRUE
 
