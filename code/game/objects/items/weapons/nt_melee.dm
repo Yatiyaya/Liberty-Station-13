@@ -149,6 +149,7 @@
 	armor_penetration = ARMOR_PEN_MASSIVE
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
+	attack_verb = list("attacked", "smashed", "bludgeoned", "beaten")
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_SILVER = 2)
 	tool_qualities = list(QUALITY_HAMMERING = 10) //Not designed for that fine nailing
 	var/glowing = FALSE
