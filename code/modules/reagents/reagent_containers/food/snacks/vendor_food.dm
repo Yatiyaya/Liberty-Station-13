@@ -14,6 +14,18 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatebar
+	name = "chocolate bar"
+	desc = "Such sweet, fattening food."
+	icon_state = "chocolatebar"
+	filling_color = "#7D5F46"
+	bitesize = 2
+	center_of_mass = list("x"=15, "y"=15)
+	nutriment_amt = 1
+	nutriment_desc = list("chocolate" = 5)
+	preloaded_reagents = list("sugar" = 2, "coco" = 2, "preservatives" = 2)
+	junk_food = TRUE
+
+/obj/item/reagent_containers/food/snacks/chocolatebarvenus
 	name = "\"Venus\" chocolate bar"
 	desc = "Such sweet, fattening food."
 	icon_state = "chocolatebar"
