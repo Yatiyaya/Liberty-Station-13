@@ -14,13 +14,13 @@
 	cruciform = _cruciform
 	active = TRUE
 	OnInstall(target, _cruciform)
-	wearer.visible_message(SPAN_WARNING("[src] attaches itself to [wearer]'s cruciform."))
+	wearer.visible_message(SPAN_WARNING("[src] attaches itself to [wearer]'s Hearthcore."))
 	return active
 
 /obj/item/cruciform_upgrade/proc/uninstall()
 	forceMove(get_turf(wearer))
 	cruciform.upgrade = null
-	wearer.visible_message(SPAN_WARNING("[src] removes itself from [wearer]'s cruciform."))
+	wearer.visible_message(SPAN_WARNING("[src] removes itself from [wearer]'s Hearthcore."))
 	OnUninstall()
 	wearer = null
 	cruciform = null

@@ -154,7 +154,7 @@ var/global/obj/machinery/power/eotp/eotp
 					H.adjustOxyLoss(-50)
 					H.adjustBruteLoss(-15)
 					H.adjustFireLoss(-15)
-					to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your cruciform does a quick routine maintenance, patching any potential minor wounds across your body."))
+					to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your Hearthcore does a quick routine maintenance, patching any potential minor wounds across your body."))
 
 		else
 			for(var/mob/living/carbon/human/H in disciples)
@@ -186,7 +186,7 @@ var/global/obj/machinery/power/eotp/eotp
 		var/random_stat = pick(ALL_STATS_LEVEL)
 		for(var/mob/living/carbon/human/H in disciples)
 			if(H.stats)
-				to_chat(H, SPAN_NOTICE("You feel the blessing of the church upon you. You are enlightened, and gain deeper knowledge in [random_stat]; however, you can already feel this new-found knowledge is temporary."))
+				to_chat(H, SPAN_NOTICE("You feel enlightened, and gain deeper knowledge in [random_stat]; however, you can already feel this new-found knowledge is temporary."))
 				H.stats.addTempStat(random_stat, stat_buff_power, 20 MINUTES, "Eye_of_the_Protector")
 /*
 	else if(type_release == MATERIAL_REWARD)
@@ -201,7 +201,7 @@ var/global/obj/machinery/power/eotp/eotp
 		for(var/mob/living/carbon/human/H in disciples)
 			var/obj/item/implant/core_implant/cruciform/C = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
 			C.power_regen += initial(C.power_regen)
-			to_chat(H, SPAN_NOTICE("Your cruciform vibrates, its power regeneration enhancing temporarily."))
+			to_chat(H, SPAN_NOTICE("Your Hearthcore vibrates, its power regeneration enhancing temporarily."))
 
 	//for(var/disciple in disciples)
 	//	to_chat(disciple, SPAN_NOTICE("A miracle has occured at the [src]! May the Angels live forever!"))

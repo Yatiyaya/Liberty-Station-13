@@ -36,6 +36,8 @@ datum/ritual/cruciform/base/thumbspire
 	icon_state = "thumbspire"
 	var/burntime = 120
 	w_class = ITEM_SIZE_HUGE
+	force = 1
+	damtype = BURN
 	slot_flags = null
 	attack_verb = list("burnt", "singed")
 	lit = 1
@@ -57,7 +59,7 @@ datum/ritual/cruciform/base/thumbspire
 		burn_out()
 		return
 	if(loc != holder) // We're no longer in the lecturer's hand, delete self
-		visible_message("The [src.name] flickers away as the fire fades into nothingness")
+		visible_message("[src.name] flickers away as the fire fades into nothingness")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return

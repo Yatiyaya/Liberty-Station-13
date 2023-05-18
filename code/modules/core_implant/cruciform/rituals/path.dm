@@ -46,6 +46,7 @@ datum/ritual/cruciform/oathbound/fireball
 	max_upgrades = 0
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
 	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
 	var/use_amount = 1 // How many times can it be used
 	var/mob/living/carbon/holder // Used to delete when dropped
@@ -67,7 +68,7 @@ datum/ritual/cruciform/oathbound/fireball
 
 /obj/item/gun/custodian_fireball/Process()
 	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
-		visible_message("The [src] fades into nothingness.")
+		visible_message("[src] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
@@ -619,7 +620,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/tools_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/obj/item/tool/factorial_omni/tool = new /obj/item/tool/factorial_omni(src, user) //create the omni-tool
-	usr.put_in_active_hand(tool) //put it in the active hand
+	usr.put_in_hands(tool) //put it in the active hand
 	set_personal_cooldown(user)
 	return TRUE //refer to code\game\objects\items\weapons\tools\misc.dm for factorial_omni
 
