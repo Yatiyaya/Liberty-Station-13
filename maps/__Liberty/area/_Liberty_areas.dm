@@ -240,7 +240,6 @@
 /area/liberty/dungeon/outside/prepper/vault
 	name = "Vault Bunker"
 	icon_state = "erisblue"
-	requires_power = 1
 
 /area/liberty/dungeon/outside/safehouse
 	name = "Abandoned Safehouse"

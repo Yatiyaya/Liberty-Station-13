@@ -57,6 +57,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"aJ" = (
+/obj/structure/flora/grass/green,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "aK" = (
 /obj/structure/table/marble,
 /obj/machinery/cooking_with_jane/stove,
@@ -1131,6 +1136,7 @@
 	tag = "icon-railing0 (WEST)"
 	},
 /obj/structure/flora/grass/green,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "mu" = (
@@ -1526,6 +1532,7 @@
 /obj/effect/floor_decal/industrial/road/warning4,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "rq" = (
@@ -1702,6 +1709,12 @@
 /obj/structure/railing,
 /turf/simulated/floor/icewater,
 /area/colony)
+"tq" = (
+/obj/effect/floor_decal/industrial/road/warning4,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/rock/manmade/road,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "tr" = (
 /obj/structure/bookcase/guncase,
 /obj/item/ammo_casing/light_rifle_257/incend/prespawned,
@@ -1771,6 +1784,7 @@
 	dir = 4
 	},
 /obj/structure/flora/grass/brown,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "tW" = (
@@ -1949,6 +1963,14 @@
 	},
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/dungeon/outside/prepper/vault/floor2)
+"vM" = (
+/obj/structure/sandbags{
+	icon_state = "sandbag_0";
+	dir = 4
+	},
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vP" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -2476,6 +2498,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BE" = (
@@ -2619,6 +2642,7 @@
 /obj/effect/floor_decal/industrial/road/warning1,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "DC" = (
@@ -3106,6 +3130,7 @@
 	},
 /obj/effect/floor_decal/industrial/road/curvebig2,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "IV" = (
@@ -3153,6 +3178,12 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/colony)
+"Ji" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/catwalk,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/plating/under,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Jm" = (
 /obj/effect/window_lwall_spawn,
 /turf/simulated/floor/snow,
@@ -3183,6 +3214,13 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/dark,
 /area/colony)
+"JD" = (
+/obj/structure/sandbags{
+	icon_state = "sandbag_0"
+	},
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "JE" = (
 /obj/structure/table/steel,
 /obj/random/lowkeyrandom/low_chance,
@@ -4736,6 +4774,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/dirt/snow,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "YZ" = (
@@ -4746,8 +4785,17 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/invislight/outside,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/dungeon/outside/prepper)
+"Za" = (
+/obj/structure/sandbags{
+	icon_state = "sandbag_0";
+	dir = 1
+	},
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Zb" = (
 /obj/structure/curtain/open/shower,
 /obj/machinery/shower{
@@ -78617,9 +78665,9 @@ Yz
 Yz
 Yz
 Yz
+vf
 Yz
-Yz
-Yz
+vf
 Yz
 Yz
 Yz
@@ -78631,12 +78679,12 @@ jv
 Yz
 Yz
 Yz
+vf
 Yz
 Yz
+vf
 Yz
-Yz
-Yz
-Yz
+vf
 oT
 jg
 jg
@@ -78832,7 +78880,7 @@ Rh
 KN
 Yz
 Yz
-Yz
+vf
 Ac
 HP
 HP
@@ -79220,14 +79268,14 @@ Yz
 Yz
 Yz
 Yz
-Yz
+vf
 zQ
 Oy
 Oy
 Oy
 Oy
 OA
-Yz
+vf
 Yz
 Yz
 sk
@@ -79236,14 +79284,14 @@ pH
 sb
 Yz
 Yz
-Yz
+vf
 zQ
 Oy
 Oy
 Oy
 Oy
 Ac
-Eu
+aJ
 Co
 Yz
 Yz
@@ -79640,7 +79688,7 @@ Rh
 ix
 qw
 ix
-CD
+tq
 ez
 Oy
 Oy
@@ -80019,12 +80067,12 @@ jg
 jg
 jg
 hM
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
+vf
+vf
+vf
+vf
+vf
+vf
 hM
 jg
 jg
@@ -80045,12 +80093,12 @@ jv
 PO
 Yz
 yT
-Yz
+vf
 Yz
 Bx
 at
 Yz
-Yz
+vf
 Co
 Re
 Yz
@@ -80267,7 +80315,7 @@ Eu
 Yz
 bg
 qK
-qK
+GL
 Lg
 bg
 Yz
@@ -80466,13 +80514,13 @@ eW
 Yz
 Yz
 Yz
-Yz
+vf
 Ac
 Ac
 HP
 HP
 Ac
-Co
+Qk
 Yz
 Yz
 Yz
@@ -80626,30 +80674,30 @@ jg
 jg
 jg
 wI
-Co
-Yz
-Yz
-Eu
-Yz
+Qk
+vf
+vf
+aJ
+vf
 Yz
 Yz
 tL
 Ci
 Yz
 Yz
-Co
+Qk
 Eu
 Yz
 zU
-zU
-zU
+vM
+vM
 yT
 Mx
 yz
 yz
 RX
 Yz
-zU
+vM
 tV
 zU
 Yz
@@ -81078,7 +81126,7 @@ Oy
 Oy
 Oy
 OA
-Re
+Cy
 Yz
 uW
 Yz
@@ -81243,7 +81291,7 @@ Ci
 Ci
 Yz
 Yz
-In
+JD
 wY
 LO
 jC
@@ -81445,7 +81493,7 @@ Ci
 tL
 Eu
 mp
-In
+JD
 wY
 wz
 Xj
@@ -81462,7 +81510,7 @@ Lw
 qT
 Lw
 wY
-KD
+Za
 Yz
 PO
 Yz
@@ -81476,7 +81524,7 @@ Yz
 PO
 Yz
 Yz
-Yz
+vf
 Ac
 Sn
 Oy
@@ -81664,7 +81712,7 @@ Lw
 Lw
 wG
 wY
-KD
+Za
 NM
 Yz
 Yz
@@ -81684,7 +81732,7 @@ Ac
 fz
 fz
 Ac
-Yz
+vf
 Yz
 yT
 Yz
@@ -81883,7 +81931,7 @@ hM
 jg
 jg
 hM
-Yz
+vf
 Yz
 Yz
 Yz
@@ -82068,7 +82116,7 @@ Lw
 Lw
 Xj
 wY
-KD
+Za
 Yz
 Re
 Yz
@@ -82253,7 +82301,7 @@ Ci
 tL
 Yz
 Eu
-In
+JD
 wY
 LO
 Xj
@@ -82270,7 +82318,7 @@ qT
 Lw
 Xj
 wY
-KD
+Za
 Yz
 Yz
 Co
@@ -82455,7 +82503,7 @@ tL
 tL
 nG
 Yz
-In
+JD
 wY
 LO
 Xj
@@ -82857,7 +82905,7 @@ RS
 RS
 RS
 RS
-Tk
+Ji
 Vw
 Vw
 Vw
@@ -83080,7 +83128,7 @@ Vw
 wA
 wA
 Vw
-Co
+Qk
 Yz
 NM
 UB
@@ -83686,19 +83734,19 @@ wY
 dp
 Xx
 Vw
-NM
+fo
 Yz
 Yz
 Eu
 Yz
 tx
-Yz
+vf
 Yz
 hM
-Yz
+vf
 yT
 Yz
-Yz
+vf
 Yz
 Yz
 uW
@@ -84069,7 +84117,7 @@ iP
 Yz
 PO
 Yz
-Yz
+vf
 Vw
 QP
 QP
@@ -84102,7 +84150,7 @@ Oy
 Oy
 ZO
 Kn
-Yz
+vf
 Yz
 Yz
 Yz
@@ -84506,7 +84554,7 @@ Sn
 Oy
 ZO
 Kn
-Yz
+vf
 Yz
 Yz
 Yz
@@ -84675,7 +84723,7 @@ wI
 QD
 yT
 EY
-Yz
+vf
 Vw
 Lw
 jw
@@ -84702,7 +84750,7 @@ jg
 jg
 jg
 oT
-PO
+jI
 Ac
 Ac
 Ac
