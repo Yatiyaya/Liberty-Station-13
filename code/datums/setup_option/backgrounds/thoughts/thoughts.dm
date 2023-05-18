@@ -70,6 +70,16 @@
 
 	stat_modifiers = list(STAT_VIG = 10, STAT_ROB = -10, STAT_WIL = -5)
 
+/datum/category_item/setup_option/background/thoughts/reality_not
+	name = "Reality Rejector"
+	desc = "Reality itself can be rejected, you didn't get this far without learning it! When ever you have just a bad day or harsh time you \
+	reject it completely, rewrighting your history to have little to no hardships. Do to this you have learned to pick up on things and handle mental issues better \
+	at the cost of your body never seeking to improve."
+	perks = list(PERK_FORCEFUL_REJECTION)
+
+	stat_modifiers = list(STAT_VIG = 5, STAT_WIL = 5, STAT_TGH = -5, STAT_ROB = -5)
+
+
 /* - Psionics can't be started with currently. Until Psionics are reworked this will be disabled.
 /datum/category_item/setup_option/background/thoughts/inland_empire
 	name = "Empire of Nothingness"
