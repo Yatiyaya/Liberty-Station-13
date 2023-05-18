@@ -25,6 +25,7 @@
 	is_sealed = TRUE
 	height = 2
 	digsites = "TEMPLE"
+	generate_asteroid = TRUE
 
 /obj/map_data/nadezda_f
 	name = "Deep Forest"
