@@ -247,7 +247,7 @@
 	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
-	if(modifiable )
+	if(modifiable)
 		if(!(QUALITY_WIRE_CUTTING in I.tool_qualities))
 			return ..()
 		var/options = list("Yes","No")

@@ -116,8 +116,11 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/eyeflare
 	name = "Eyeflare"
 	phrase = "Oxidate Lecture: Eyeflare"
-	desc = "This lecture causes a bright flash in a short radius around the user."
+	desc = "This lecture causes a bright flash in a short radius around the user. Has a cooldown of three minutes."
 	power = 30
+	cooldown = TRUE
+	cooldown_time = 3 MINUTES
+	cooldown_category = "eyeflare"
 
 /datum/ritual/cruciform/oathbound/eyeflare/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	for(var/mob/living/carbon/M in view(2, H)) //get everything in a 2 tile radius, including the user
@@ -128,6 +131,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		if(safety < FLASH_PROTECTION_MINOR) //any amount of flash protection nullifies this
 			M.flash(3, FALSE, FALSE, TRUE)
 	H.visible_message("A flash of light flares out of [H]!")
+	set_personal_cooldown(H)
 	return TRUE
 
 /datum/ritual/cruciform/oathbound/radiance_neural
@@ -225,7 +229,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/restraint_conflagration
 	name = "Restraint Conflagration"
 	phrase = "Oxidate Lecture: Restraint Conflagration"
-	desc = "A lecture that emboldens the body and muscles for fifteen minutes. Requires thirty minutes between uses."
+	desc = "A lecture that emboldens the body and muscles for five minutes. Requires thirty minutes between uses."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
 	cooldown_category = "restraint_conflagration"
