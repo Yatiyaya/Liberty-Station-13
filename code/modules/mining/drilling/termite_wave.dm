@@ -57,8 +57,8 @@ GLOBAL_LIST_INIT(termite_waves, list(/datum/termite_wave/dormant,
 
 /datum/termite_wave/abnormal
 	burrow_count = 7
-	burrow_interval = 30 SECONDS
+	burrow_interval = 45 SECONDS
 	termite_spawn = 4
-	spawn_interval = 30 SECONDS
+	spawn_interval = 45 SECONDS
 	special_probability = 30
 	mineral_multiplier = 3.0
