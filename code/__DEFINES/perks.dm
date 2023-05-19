@@ -226,6 +226,9 @@
 //Temporary lecture perks
 #define PERK_SCORCHING_SHELL /datum/perk/lecture/scorching_shell
 
+//Task Perks
+#define PERK_FORCEFUL_REJECTION /datum/perk/forceful_rejection
+
 //////////////////
 //Cooldown perks//
 //////////////////
