@@ -153,17 +153,18 @@
 	return drop_from_inventory(I,Target)
 
 //Attemps to remove an object on a mob.
-/mob/proc/remove_from_mob(var/obj/O)
+/mob/proc/remove_from_mob(var/obj/O, drop = TRUE)
 	src.u_equip(O)
 	if (src.client)
 		src.client.screen -= O
 	O.layer = initial(O.layer)
 	O.set_plane(initial(O.plane))
 	O.screen_loc = null
-	if(istype(O, /obj/item))
+	if(isitem(O))
 		var/obj/item/I = O
-		I.forceMove(src.loc, MOVED_DROP)
 		I.dropped(src)
+		if(drop && !QDELING(O))
+			I.forceMove(get_turf(src), MOVED_DROP)
 	return TRUE
 
 //This function is an unsafe proc used to prepare an item for being moved to a slot, or from a mob to a container
