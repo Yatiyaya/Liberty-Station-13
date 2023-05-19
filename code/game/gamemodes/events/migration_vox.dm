@@ -63,11 +63,12 @@
 
 /datum/event/vox_migration/end()
 	for(var/mob/living/carbon/superior_animal/vox/v in spawned_vox)
-		if(!v.stat)
-			var/turf/T = get_turf(v)
-			if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
-				spawned_vox.Remove(v)
-				qdel(v)
-			if(istype(T, /turf/unsimulated/wall/jungle))
-				spawned_vox.Remove(v)
-				qdel(v)
+		if(prob(85)) //20% chance to stay
+			if(!v.stat)
+				var/turf/T = get_turf(v)
+				if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
+					spawned_vox.Remove(v)
+					qdel(v)
+				if(istype(T, /turf/unsimulated/wall/jungle))
+					spawned_vox.Remove(v)
+					qdel(v)

@@ -63,11 +63,12 @@
 
 /datum/event/ameridian_migration/end()
 	for(var/obj/structure/ameridian_crystal/a in spawned_ameridian)
-		if(!a.stat)
-			var/turf/T = get_turf(a)
-			if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
-				spawned_ameridian.Remove(a)
-				qdel(a)
-			if(istype(T, /turf/unsimulated/wall/jungle))
-				spawned_ameridian.Remove(a)
-				qdel(a)
+		if(prob(85)) //20% chance to stay
+			if(!a.stat)
+				var/turf/T = get_turf(a)
+				if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
+					spawned_ameridian.Remove(a)
+					qdel(a)
+				if(istype(T, /turf/unsimulated/wall/jungle))
+					spawned_ameridian.Remove(a)
+					qdel(a)
