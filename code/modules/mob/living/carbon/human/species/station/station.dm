@@ -36,8 +36,8 @@
 
 
 /datum/species/machine //Boilerplate as fuck.
-	name = "Mechanical"
-	name_plural = "Mechanicals" //CLANKUS
+	name = "Synthetic"
+	name_plural = "Synthetics" //CLANKUS
 	default_form = FORM_SYNTH
 	obligate_name = FALSE //So people can make 'FBPs' that dont suck if they choose.
 	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN
@@ -59,6 +59,7 @@
 	radiation_mod = 0
 	breath_type = null
 	poison_type = null
+	spawn_flags = CAN_JOIN
 
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,

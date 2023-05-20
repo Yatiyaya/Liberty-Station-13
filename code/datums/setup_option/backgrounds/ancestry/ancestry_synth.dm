@@ -51,3 +51,21 @@
 
 	racial_implants = (/obj/item/organ_module/active/simple/surgical)
 	stat_modifiers = list(STAT_ROB = -16, STAT_TGH = -16, STAT_MEC = -40, STAT_COG = 26, STAT_VIG = 18, STAT_BIO = 46) //Utterly reliant on engineering for repairs, horrible at combat in general.
+
+
+/datum/category_item/setup_option/background/ancestry/synth/computer //R&D
+	name = "Computational Synthetic"
+	desc = "These synthetics are bulky, with extra processing circuitry tangled throughout their bodies! This makes them incredibly fragile; and a jack-of-trades involving complex tasks. \
+	Usually found as prized PRIS employees, they are extremely expensive to maintain."
+
+
+	stat_modifiers = list(STAT_ROB = -30, STAT_TGH = -30, STAT_MEC = 22, STAT_COG = 60, STAT_VIG = 2, STAT_BIO = 22) //Jack of all trades, but really, really weak combat wise.
+
+
+/datum/category_item/setup_option/background/ancestry/synth/combat //Title
+	name = "Combat Synthetic"
+	desc = "These synthetics are bulky, with heavy plating - additional servos, and general aim-assist platforms. Made for combat; these pack a punch, and are relatively rare \
+	Outside of law enforcement and militaries."
+
+
+	stat_modifiers = list(STAT_ROB = 28, STAT_TGH = 28, STAT_MEC = -30, STAT_COG = -30, STAT_VIG = 42, STAT_BIO = -30) //Enjoy being able to do nothing but fight.
