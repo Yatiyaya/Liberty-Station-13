@@ -61,7 +61,7 @@
 	breath_type = null
 	poison_type = null
 	spawn_flags = CAN_JOIN
-	total_health = 75 //Significant health decrease.
+	total_health = 105 //A tad tankier across the board.
 
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
