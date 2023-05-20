@@ -301,7 +301,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.sanity.sanity_invulnerability += 1 //yep.
 		holder.sanity.insight_gain_multiplier *= 0.25 //yeowch
 
-/datum/perk/fate/unfeeling/remove()
+/datum/perk/unfeeling/remove()
 	if(holder)
 		holder.sanity.view_damage_threshold -= 600 //Synth trait.
 		holder.sanity.sanity_invulnerability -= 1 //yep.
