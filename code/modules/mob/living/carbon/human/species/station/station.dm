@@ -74,10 +74,12 @@
 		BP_R_LEG =  new /datum/organ_description/leg/right/robotic_normal/full
 		)
 
-	has_process = list(    // which required-process checks are conducted and default organs for them.
+	has_process = list(    // HOLY MOTHER OF GOD THIS IS CURSED
 		OP_CELL = /obj/item/organ/internal/cell,
 		BP_BRAIN = /obj/item/organ/internal/brain/synthetic,
-		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp
+		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp,
+		OP_MUSCLE = /obj/item/organ/internal/muscle/robotic,
+		OP_NERVE = /obj/item/organ/internal/nerve/robotic
 		)
 
 /datum/species/machine/get_bodytype()
