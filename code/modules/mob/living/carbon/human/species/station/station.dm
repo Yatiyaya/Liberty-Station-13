@@ -40,6 +40,7 @@
 	name_plural = "Synthetics" //CLANKUS
 	default_form = FORM_SYNTH
 	obligate_name = FALSE //So people can make 'FBPs' that dont suck if they choose.
+	obligate_form = TRUE
 	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN
 	reagent_tag = IS_SYNTHETIC
 	hunger_factor = 0
@@ -60,6 +61,7 @@
 	breath_type = null
 	poison_type = null
 	spawn_flags = CAN_JOIN
+	total_health = 75 //Significant health decrease.
 
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
