@@ -4,12 +4,14 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt
 	disk_name = "Bonfire Armory"
-	icon_state = "neotheology"
+	desc = "Forge me not without reason, wield me not without honor."
+	icon_state = "custodian_armory" // Sprites by Gundam Tanaka#9565
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/forging
 	disk_name = "Bonfire Forging & Molds"
-	icon_state = "neotheology_testament"
+	desc = "A disk containing everything for the aspiring and veteran Forgemaster alike."
+	icon_state = "custodian_forge"
 	designs = list(
 		/datum/design/bioprinter/hearth_lantern,
 		/datum/design/autolathe/tool_upgrade/sanctifier,
@@ -25,8 +27,10 @@
 		/datum/design/bioprinter/mold_kit/radiance_sigil,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/nt/textials
-	disk_name = "Bonfire Textials"
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textiles
+	disk_name = "Bonfire Textiles"
+	desc = "A disk containing an assortment of Custodian clothing and textile goods."
+	icon_state = "custodian_textile"
 	designs = list(
 		//clothes
 		/datum/design/bioprinter/custodian_clothes/firehelmet,
@@ -63,6 +67,19 @@
 		/datum/design/bioprinter/pouch/xbowquiver,
 	)
 
+/obj/item/computer_hardware/hard_drive/portable/design/nt/healing
+	disk_name = "Custodian Healing Supplies"
+	desc = "A disk containing specially crafted healing supplies by use of Custodian materials"
+	icon_state = "custodian_health"
+	designs = list(
+		/datum/design/bioprinter/custodian_healthpack,
+		/datum/design/bioprinter/pouch/ifak,
+		/datum/design/bioprinter/custodian_bruisepack,
+		/datum/design/bioprinter/custodian_ointment
+	)
+
+// Eris NeoTheo stuff. Mostly imbalanced and should not be accessible by players
+// Leaving it not commented out for adminspawn testing purposes.
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioaugment
 	disk_name = "Strange Disk"
 	desc = "Now,where did this come from?"

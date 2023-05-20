@@ -205,6 +205,7 @@
 	build_path = /obj/item/stack/medical/bruise_pack
 	materials = list(MATERIAL_CLOTH = 2)
 	chemicals = list("silicon" = 4, "ethanol" = 8)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/adv_gauze
 	name = "CAPSA medical gauze"
@@ -212,6 +213,7 @@
 	build_path = /obj/item/stack/medical/bruise_pack/capsa
 	materials = list(MATERIAL_CLOTH = 3, MATERIAL_BIOMATTER = 2)
 	chemicals = list("bicaridine" = 5, "quickclot" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/atk
 	name = "Advanced trauma kit"
@@ -219,6 +221,7 @@
 	build_path = /obj/item/stack/medical/bruise_pack/advanced
 	materials = list(MATERIAL_CLOTH = 2, MATERIAL_BIOMATTER = 1)
 	chemicals = list("quickclot" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/ointment
 	name = "Ointment"
@@ -226,6 +229,7 @@
 	build_path = /obj/item/stack/medical/ointment
 	materials = list(MATERIAL_PLASTIC = 5)
 	chemicals = list("silicon" = 4, "carbon" = 8)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/adv_ointment
 	name = "CAPSA branded ointment"
@@ -233,6 +237,7 @@
 	build_path = /obj/item/stack/medical/ointment/capsa
 	materials = list(MATERIAL_PLASTIC = 8, MATERIAL_BIOMATTER = 2)
 	chemicals = list("kelotane" = 5, "dermaline" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/abk
 	name = "Advanced burn kit"
@@ -240,18 +245,21 @@
 	build_path = /obj/item/stack/medical/ointment/advanced
 	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 1)
 	chemicals = list("dermaline" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/nanopaste
 	name = "Nanopaste"
 	desc = "A tube of paste containing swarms of repair nanites. Very effective in repairing mechanical body parts, organs, and smart purging of toxic buildup."
 	build_path = /obj/item/stack/nanopaste
 	chemicals = list("nanites" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/splints
 	name = "Splints"
 	desc = "Used to secure moving bones in place."
 	build_path = /obj/item/stack/medical/splint
 	materials = list(MATERIAL_WOOD = 5, MATERIAL_CLOTH = 2)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/bonegel
 	name = "CAPSA bone gel"
@@ -259,6 +267,13 @@
 	build_path = /obj/item/tool/tape_roll/bonegel/si
 	materials = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 3)
 	category = CAT_TOOLS
+
+/datum/design/research/item/medical/ifak
+	name = "Individual First-Aid Kit"
+	desc = "An attachable pouch that can hold supplies used to address immediate life-threatening conditions."
+	build_path = /obj/item/storage/firstaid/ifak/empty
+	materials = list(MATERIAL_BIOMATTER = 12)
+	category = CAT_MEDI
 
 //Brain stuff
 /datum/design/research/item/posibrain
