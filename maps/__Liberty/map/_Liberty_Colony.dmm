@@ -70613,7 +70613,7 @@
 /obj/structure/table/woodentable,
 /obj/item/rig/recovery_suit/equipped,
 /obj/item/tool/baton,
-/obj/item/computer_hardware/hard_drive/portable/design/medical/cmo,
+/obj/item/computer_hardware/hard_drive/portable/design/xenobio/rd,
 /obj/item/reagent_containers/enricher,
 /turf/simulated/floor/wood,
 /area/liberty/command/cso)
@@ -179900,7 +179900,7 @@ rQC
 rQC
 rQC
 rQC
-obA
+rQC
 jjF
 rQC
 rQC
@@ -181922,7 +181922,7 @@ gwv
 rQC
 rQC
 rQC
-obA
+rQC
 ogP
 rQC
 rQC
@@ -182514,7 +182514,7 @@ dyz
 uPc
 ogR
 rQC
-obA
+rQC
 jjF
 rQC
 rQC
@@ -182925,7 +182925,7 @@ rQC
 rQC
 rQC
 rQC
-obA
+rQC
 ogP
 rQC
 rQC
@@ -195031,7 +195031,7 @@ xSB
 rbg
 rQC
 rQC
-obA
+rQC
 rQC
 rQC
 rQC
@@ -198860,7 +198860,7 @@ rQC
 rQC
 gwv
 rQC
-obA
+rQC
 ghI
 rQC
 ryx

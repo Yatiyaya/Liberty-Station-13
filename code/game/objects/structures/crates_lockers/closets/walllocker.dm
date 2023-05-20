@@ -19,12 +19,12 @@
 	new /obj/item/tool/crowbar(src)
 	// Items to heat up in case of extreme cold
 	new /obj/item/clothing/suit/storage/toggle/liberass_jacket(src)
-	if (prob(10)) // Hot ramen, some water and hotsauce, jackpot!
+	if (prob(20)) // Hot ramen, some water and hotsauce, jackpot!
 		new /obj/item/reagent_containers/food/drinks/dry_ramen(src)
 		new /obj/item/reagent_containers/food/drinks/cans/waterbottle(src)
 		new /obj/item/reagent_containers/food/condiment/pack/hotsauce(src)
 	else
-		new /obj/item/reagent_containers/food/drinks/coffee(src)
+		new /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee(src)
 
 /obj/structure/closet/wall_mounted/emcloset/escape_pods
 	icon_state = "emerg-escape"

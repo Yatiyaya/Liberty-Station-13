@@ -80,13 +80,13 @@
 	)
 
 
-/obj/item/computer_hardware/hard_drive/portable/design/medical/cmo
+/obj/item/computer_hardware/hard_drive/portable/design/medical/cso
 	disk_name = "CAPSA Medical Factory"
-	license = -1 //Same disk, but for the CBO exclusively with endless uses.
+	license = -1 //Same disk, but for the CSO exclusively with endless uses.
 
-/obj/item/computer_hardware/hard_drive/portable/design/medical/advanced/cmo
+/obj/item/computer_hardware/hard_drive/portable/design/medical/advanced/cso
 	disk_name = "CAPSA Advanced Medical Designs Factory"
-	license = -1 //Same disk, but for the CBO exclusively with endless uses.
+	license = -1 //Same disk, but for the CSO exclusively with endless uses.
 
 /obj/item/computer_hardware/hard_drive/portable/design/medical/surgery
 	disk_name = "CAPSA Standard Organs"

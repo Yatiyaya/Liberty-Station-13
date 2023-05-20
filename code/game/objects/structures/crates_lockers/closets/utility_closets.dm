@@ -21,7 +21,7 @@
 	switch(pickweight(list("small" = 55, "tank" = 25, "aid" = 10, "both" = 5)))
 		if ("small")
 			new /obj/item/tank/emergency_oxygen(src)
-			new /obj/item/reagent_containers/food/drinks/coffee(src)
+			new /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/clothing/suit/space/emergency(src)
 			new /obj/item/clothing/head/helmet/space/emergency(src)
