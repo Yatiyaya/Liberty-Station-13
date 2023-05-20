@@ -407,7 +407,8 @@ SUBSYSTEM_DEF(job)
 		if(C)
 			C.install_default_modules_by_job(job)
 			C.access.Add(job.cruciform_access)
-			C.security_clearance = job.security_clearance
+			if(job.security_clearance)
+				C.security_clearance = job.security_clearance
 			//IDK were else to place this so it works when you late join and its active
 
 		//Occulus Edit, Right here! Custom skills.

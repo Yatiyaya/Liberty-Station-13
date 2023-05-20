@@ -167,24 +167,40 @@
 	materials = null
 
 /datum/design/bioprinter/mold_kit/blacksmithing
-	name = "Blacksmithing Moldkit"
-	build_path = /obj/item/mold_kit/blacksmithing
+	name = "Blacksmithing Tools"
+	build_path = /obj/item/stack/mold_kit/blacksmithing
 
 /datum/design/bioprinter/mold_kit/tailoring
-	name = "Tailoring Moldkit"
-	build_path = /obj/item/mold_kit/tailoring
+	name = "Tailoring Tools"
+	build_path = /obj/item/stack/mold_kit/tailoring
 
 /datum/design/bioprinter/mold_kit/masonry
-	name = "Masonry Moldkit"
-	build_path = /obj/item/mold_kit/masonry
+	name = "Masonry Tools"
+	build_path = /obj/item/stack/mold_kit/masonry
 
 /datum/design/bioprinter/mold_kit/radiance_sigil
 	name = "Radiance Sigil"
-	build_path = /obj/item/mold_kit/radiance_sigil
+	build_path = /obj/item/stack/mold_kit/radiance_sigil
 
 /datum/design/autolathe/tool_upgrade/sanctifier
 	name = "NT Sanctifier"
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
+
+// Total cost: 20 Bio silk, 5 steel, 5 plastic, 5 biomatter
+/datum/design/bioprinter/custodian_healthpack
+	name = "Bonfire Medkit"
+	build_path = /obj/item/storage/firstaid/nt
+
+// 5 bio silk each
+/datum/design/bioprinter/custodian_bruisepack
+	name = "Bonfire Bruisepack"
+	build_path = /obj/item/stack/medical/bruise_pack/advanced/nt
+
+// 5 bio silk each
+/datum/design/bioprinter/custodian_ointment
+	name = "Bonfire Burnpack"
+	build_path = /obj/item/stack/medical/ointment/advanced/nt
+
 
 // end of Custodian disk designs //
 
@@ -280,6 +296,10 @@
 /datum/design/bioprinter/pouch/janitor_supply
 	name = "Janitor supplies pouch"
 	build_path = /obj/item/storage/pouch/janitor_supply
+
+/datum/design/bioprinter/pouch/ifak
+	name = "Individual First-Aid Kit"
+	build_path = /obj/item/storage/firstaid/ifak/empty
 
 /datum/design/bioprinter/pouch/medium_generic
 	name = "Medium generic pouch"

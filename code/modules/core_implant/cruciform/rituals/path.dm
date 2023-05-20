@@ -46,6 +46,7 @@ datum/ritual/cruciform/oathbound/fireball
 	max_upgrades = 0
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
 	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
 	var/use_amount = 1 // How many times can it be used
 	var/mob/living/carbon/holder // Used to delete when dropped
@@ -67,7 +68,7 @@ datum/ritual/cruciform/oathbound/fireball
 
 /obj/item/gun/custodian_fireball/Process()
 	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
-		visible_message("The [src] fades into nothingness.")
+		visible_message("[src] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
@@ -115,8 +116,11 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/eyeflare
 	name = "Eyeflare"
 	phrase = "Oxidate Lecture: Eyeflare"
-	desc = "This lecture causes a bright flash in a short radius around the user."
+	desc = "This lecture causes a bright flash in a short radius around the user. Has a cooldown of three minutes."
 	power = 30
+	cooldown = TRUE
+	cooldown_time = 3 MINUTES
+	cooldown_category = "eyeflare"
 
 /datum/ritual/cruciform/oathbound/eyeflare/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	for(var/mob/living/carbon/M in view(2, H)) //get everything in a 2 tile radius, including the user
@@ -127,6 +131,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		if(safety < FLASH_PROTECTION_MINOR) //any amount of flash protection nullifies this
 			M.flash(3, FALSE, FALSE, TRUE)
 	H.visible_message("A flash of light flares out of [H]!")
+	set_personal_cooldown(H)
 	return TRUE
 
 /datum/ritual/cruciform/oathbound/radiance_neural
@@ -224,7 +229,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/restraint_conflagration
 	name = "Restraint Conflagration"
 	phrase = "Oxidate Lecture: Restraint Conflagration"
-	desc = "A lecture that emboldens the body and muscles for fifteen minutes. Requires thirty minutes between uses."
+	desc = "A lecture that emboldens the body and muscles for five minutes. Requires thirty minutes between uses."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
 	cooldown_category = "restraint_conflagration"
@@ -619,7 +624,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/tools_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/obj/item/tool/factorial_omni/tool = new /obj/item/tool/factorial_omni(src, user) //create the omni-tool
-	usr.put_in_active_hand(tool) //put it in the active hand
+	usr.put_in_hands(tool) //put it in the active hand
 	set_personal_cooldown(user)
 	return TRUE //refer to code\game\objects\items\weapons\tools\misc.dm for factorial_omni
 

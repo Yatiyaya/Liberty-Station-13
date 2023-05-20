@@ -11420,7 +11420,6 @@
 /area/liberty/engineering/engine_room)
 "cSK" = (
 /obj/structure/damocles_pedestal,
-/obj/item/tool/sword/custodians_damocles,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "cSP" = (
@@ -51826,8 +51825,9 @@
 /area/liberty/bonfire/bioreactor)
 "nMJ" = (
 /obj/structure/table/woodentable,
-/obj/item/computer_hardware/hard_drive/portable/design/nt/textials,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textiles,
 /obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/healing,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "nMM" = (

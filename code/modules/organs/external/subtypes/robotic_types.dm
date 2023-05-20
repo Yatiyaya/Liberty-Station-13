@@ -152,7 +152,6 @@
 	desc = "A Liberty Watch prosthesis based upon the Martian Logistics model."
 	force_icon = 'icons/mob/human_races/cyberlimbs/watch.dmi'
 	model = "watch"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
@@ -164,7 +163,6 @@
 	desc = "Terra-Therma Worker's Union \"branded\" \"functional\" prosthesis."
 	force_icon = 'icons/mob/human_races/cyberlimbs/technomancer.dmi' //Sprites were done by Kirov on request
 	model = "technomancer"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
@@ -197,7 +195,6 @@
 	desc = "A reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
 	max_damage = 60
 	min_broken_damage = 40

@@ -3,7 +3,7 @@
 	var/desc = "God made it quite clear this should not exist, Perhaps inform those above."
 	var/cost = 20
 	var/min_cost = 10 //absolute minimum it should cost
-	var/path = /obj/item/computer_hardware/hard_drive/portable/design/nt/textials //path to spawn
+	var/path = /obj/item/computer_hardware/hard_drive/portable/design/nt/textiles //path to spawn
 	var/purchase_count = 0 //how many times its bought
 	var/discount_increase = 5 //discount increase per purchase
 	var/discount = 0 //total discount to apply to the cost

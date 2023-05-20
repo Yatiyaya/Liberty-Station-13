@@ -39,6 +39,7 @@
 	icon = 'icons/obj/structures/custodian_decorations.dmi'
 	icon_state = "decor_gazer"
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_inloved_1
 	name = "the inloved"
@@ -47,6 +48,7 @@
 	icon_state = "decor_the_inloved"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_inloved_2
 	name = "the inloved"
@@ -55,6 +57,7 @@
 	icon_state = "decor_the_inloved2"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_headless_1
 	name = "the headless"
@@ -63,6 +66,7 @@
 	icon_state = "decor_the_headless"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_headless_2
 	name = "the headless"
@@ -71,6 +75,7 @@
 	icon_state = "decor_the_headless2"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_headless_3
 	name = "the headless"
@@ -79,6 +84,7 @@
 	icon_state = "decor_the_headless3"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_the_twins
 	name = "the twins"
@@ -87,6 +93,7 @@
 	icon_state = "decor_the_twins"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_the_purifier
 	name = "the purifier"
@@ -95,6 +102,7 @@
 	icon_state = "decor_the_purifier"
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/decor_light
 	name = "decor light base item"

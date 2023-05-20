@@ -87,12 +87,22 @@
 			/obj/item/reagent_containers/food/drinks/bottle/nanatsunoumi,
 			/obj/item/reagent_containers/food/drinks/bottle/redcandywine,
 			/obj/item/reagent_containers/food/drinks/bottle/small/kvass
-
 		),
 		"Kegs" = list(
-			/obj/structure/reagent_dispensers/beerkeg/cargo,
-			/obj/structure/reagent_dispensers/meadkeg/cargo,
-			/obj/structure/reagent_dispensers/premiumwhiskey/cargo
+			/obj/structure/reagent_dispensers/beerkeg,
+			/obj/structure/reagent_dispensers/meadkeg,
+			/obj/structure/reagent_dispensers/premiumwhiskey
+		),
+		"Energy Drinks" = list(
+			/obj/item/reagent_containers/food/drinks/cans/monster,
+			/obj/item/reagent_containers/food/drinks/cans/monster_no_sugar,
+			/obj/item/reagent_containers/food/drinks/cans/monster_orange,
+			/obj/item/reagent_containers/food/drinks/cans/monster_sol,
+			/obj/item/reagent_containers/food/drinks/cans/monster_blood,
+			/obj/item/reagent_containers/food/drinks/cans/monster_jungel,
+			/obj/item/reagent_containers/food/drinks/cans/monster_church,
+			/obj/item/reagent_containers/food/drinks/cans/monster_red,
+			/obj/item/reagent_containers/food/drinks/cans/monster_blue
 		)
 	)
 
@@ -104,23 +114,3 @@
 		/obj/item/reagent_containers/food/snacks/jagerburger = offer_data("hunter-killer roach burger", 500, 2),
 		/obj/item/reagent_containers/food/snacks/seucheburger = offer_data("vapour roach burger", 500, 2)
 	)
-
-/obj/structure/reagent_dispensers/beerkeg/cargo
-	price_tag = 1000
-
-/obj/structure/reagent_dispensers/beerkeg/cargo/New()
-	price_tag = 100
-
-/obj/structure/reagent_dispensers/meadkeg/cargo
-	price_tag = 3800
-
-/obj/structure/reagent_dispensers/meadkeg/cargo/New()
-	price_tag = 900
-
-/obj/structure/reagent_dispensers/premiumwhiskey/cargo
-	price_tag = 5000
-
-/obj/structure/reagent_dispensers/premiumwhiskey/cargo/New()
-	price_tag = 500
-
-

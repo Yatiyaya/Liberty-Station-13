@@ -130,6 +130,7 @@
 		/datum/design/research/item/medical/abk,
 		/datum/design/research/item/medical/splints,
 		/datum/design/research/item/medical/bonegel,
+		/datum/design/research/item/medical/ifak
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/computer

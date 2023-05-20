@@ -36,6 +36,8 @@ datum/ritual/cruciform/base/thumbspire
 	icon_state = "thumbspire"
 	var/burntime = 120
 	w_class = ITEM_SIZE_HUGE
+	force = 1
+	damtype = BURN
 	slot_flags = null
 	attack_verb = list("burnt", "singed")
 	lit = 1
@@ -57,7 +59,7 @@ datum/ritual/cruciform/base/thumbspire
 		burn_out()
 		return
 	if(loc != holder) // We're no longer in the lecturer's hand, delete self
-		visible_message("The [src.name] flickers away as the fire fades into nothingness")
+		visible_message("[src.name] flickers away as the fire fades into nothingness")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
@@ -92,17 +94,13 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/pyrelight
 	name = "Pyrelight"
 	phrase = "Oxidate Lecture: Pyrelight"
-	desc = "Lecture of wandering Custodians that creates a small immobile light for twenty minutes. Has a two-minute cooldown."
-	power = 10
-	cooldown_time = 2 MINUTES
-	cooldown_category = "pyrelight"
-	cooldown = TRUE
+	desc = "Lecture of wandering Custodians that creates a small immobile light for twenty minutes."
+	power = 20
 
 /datum/ritual/cruciform/base/pyrelight/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	playsound(H.loc, 'sound/effects/snap.ogg', 50, 1)
 	new /obj/effect/sparks(H.loc)
 	new /obj/effect/effect/smoke/illumination(H.loc, brightness=max(7), lifetime=12000) //Very bright light.
-	set_personal_cooldown(H)
 	return TRUE
 
 /datum/ritual/cruciform/base/message
@@ -217,7 +215,7 @@ datum/ritual/cruciform/base/thumbspire
 		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 		for(var/datum/seed/S in plants_around)
 			give_boost(S)
-		set_personal_cooldown()
+		set_personal_cooldown(user)
 		return TRUE
 	else
 		fail("There is no plant around to hear your song.", user, C)
@@ -236,7 +234,10 @@ datum/ritual/cruciform/base/thumbspire
 /datum/ritual/cruciform/base/mercy
 	name = "Hand of Mercy"
 	phrase = "Oxidate Lecture: Hand of Mercy"
-	desc = "Relieves the pain of a person in front of you."
+	desc = "Relieves the pain of a person in front of you. Has a three minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 3 MINUTES
+	cooldown_category = "hand_of_mercy"
 	power = 25
 
 /datum/ritual/cruciform/base/mercy/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -249,13 +250,17 @@ datum/ritual/cruciform/base/thumbspire
 	to_chat(user, SPAN_NOTICE("You ease the pain of [T.name]."))
 
 	T.reagents.add_reagent("anodyne", 10)
+	set_personal_cooldown(user)
 
 	return TRUE
 
 /datum/ritual/cruciform/base/absolution
 	name = "Flames of Stability"
 	phrase = "Oxidate Lecture: Flames of Stability"
-	desc = "Stabilizes the health of a person in front of you."
+	desc = "Stabilizes the health of a person in front of you. Has a three minute cooldown."
+	cooldown = TRUE
+	cooldown_time = 3 MINUTES
+	cooldown_category = "flames_of_stability"
 	power = 25
 
 /datum/ritual/cruciform/base/absolution/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
@@ -271,6 +276,7 @@ datum/ritual/cruciform/base/thumbspire
 	R.add_reagent("holyinaprovaline", 10)
 	R.add_reagent("holydexalinp", 10)
 	R.trans_to_mob(T, 20, CHEM_BLOOD)
+	set_personal_cooldown(user)
 
 	return TRUE
 
