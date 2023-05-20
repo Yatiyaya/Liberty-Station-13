@@ -50787,8 +50787,9 @@
 /area/liberty/bonfire/bioreactor)
 "nMJ" = (
 /obj/structure/table/woodentable,
-/obj/item/computer_hardware/hard_drive/portable/design/nt/textials,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textiles,
 /obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/healing,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "nMM" = (

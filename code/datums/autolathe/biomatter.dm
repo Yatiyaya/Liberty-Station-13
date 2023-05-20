@@ -186,6 +186,22 @@
 	name = "NT Sanctifier"
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
 
+// Total cost: 20 Bio silk, 5 steel, 5 plastic, 5 biomatter
+/datum/design/bioprinter/custodian_healthpack
+	name = "Bonfire Medkit"
+	build_path = /obj/item/storage/firstaid/nt
+
+// 5 bio silk each
+/datum/design/bioprinter/custodian_bruisepack
+	name = "Bonfire Bruisepack"
+	build_path = /obj/item/stack/medical/bruise_pack/advanced/nt
+
+// 5 bio silk each
+/datum/design/bioprinter/custodian_ointment
+	name = "Bonfire Burnpack"
+	build_path = /obj/item/stack/medical/ointment/advanced/nt
+
+
 // end of Custodian disk designs //
 
 //[/IMPLANTS]
@@ -280,6 +296,10 @@
 /datum/design/bioprinter/pouch/janitor_supply
 	name = "Janitor supplies pouch"
 	build_path = /obj/item/storage/pouch/janitor_supply
+
+/datum/design/bioprinter/pouch/ifak
+	name = "Individual First-Aid Kit"
+	build_path = /obj/item/storage/firstaid/ifak/empty
 
 /datum/design/bioprinter/pouch/medium_generic
 	name = "Medium generic pouch"
