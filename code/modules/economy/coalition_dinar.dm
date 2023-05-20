@@ -28,7 +28,7 @@
 		if(1000 to 4999)
 			icon_state = "[initial(icon_state)]1000"
 		if(5000 to 10001)
-			icon_state = "[initial(icon_state)]5000"
+			icon_state = "[initial(icon_state)]10000"
 
 	..()
 
