@@ -34,6 +34,52 @@
 /datum/species/human/get_bodytype()
 	return "Human"
 
+
+/datum/species/machine //Boilerplate as fuck.
+	name = "Mechanical"
+	name_plural = "Mechanicals" //CLANKUS
+	default_form = FORM_SYNTH
+	obligate_name = FALSE //So people can make 'FBPs' that dont suck if they choose.
+	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN
+	reagent_tag = IS_SYNTHETIC
+	hunger_factor = 0
+	virus_immune = TRUE
+	siemens_coefficient = 0.35 //Shock Absorbers to prevent static shocks from destroying components.
+	blurb = "A group of synthetics. Report if you see this."
+	num_alternate_languages = 2
+	name_language = null // Use the first-name last-name generator rather than a language scrambler
+	min_age = 18
+	max_age = 400 //About as old as a synthetic /can/ be and still be operational.
+	show_ssd = "appears to be inactive"
+
+	dark_color = "#ffffff"
+	light_color = "#000000"
+
+	darksight = 2
+	radiation_mod = 0
+	breath_type = null
+	poison_type = null
+
+	has_limbs = list(
+		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
+		BP_GROIN =  new /datum/organ_description/groin/robotic_normal,
+		BP_HEAD =   new /datum/organ_description/head/robotic_normal,
+		BP_L_ARM =  new /datum/organ_description/arm/left/robotic_normal/full,
+		BP_R_ARM =  new /datum/organ_description/arm/right/robotic_normal/full,
+		BP_L_LEG =  new /datum/organ_description/leg/left/robotic_normal/full,
+		BP_R_LEG =  new /datum/organ_description/leg/right/robotic_normal/full
+		)
+
+	has_process = list(    // which required-process checks are conducted and default organs for them.
+		OP_CELL = /obj/item/organ/internal/cell,
+		BP_BRAIN = /obj/item/organ/internal/brain/synthetic,
+		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp
+		)
+
+/datum/species/machine/get_bodytype()
+	return "Synthetic"
+
+
 /datum/species/sablekyne
 	name = "Sablekyne"
 	name_plural = "Sablekynes"

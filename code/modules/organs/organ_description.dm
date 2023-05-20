@@ -201,6 +201,38 @@
 	default_bone_type = /obj/item/organ/internal/bone/slime
 
 ////SYNTHETIC////
+//default
+/datum/organ_description/chest/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/groin/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/head/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+	functions = null
+
+/datum/organ_description/arm/left/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/arm/right/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/leg/left/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/leg/right/robotic_normal
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/arm/left/robotic_normal/full
+	additional_limb_parts = BP_L_ARM_EXTRA
+/datum/organ_description/arm/right/robotic_normal/full
+	additional_limb_parts = BP_R_ARM_EXTRA
+/datum/organ_description/leg/left/robotic_normal/full
+	additional_limb_parts = BP_L_LEG_EXTRA
+/datum/organ_description/leg/right/robotic_normal/full
+	additional_limb_parts = BP_R_LEG_EXTRA
+
 //PIRS
 /datum/organ_description/chest/capsa_synthetic
 	default_type = /obj/item/organ/external/robotic/moebius

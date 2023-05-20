@@ -290,6 +290,24 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.metabolism_effects.calculate_nsa()
 	..()
 
+/datum/perk/unfeeling
+	name = "Unfeeling"
+	desc = "Be it emotional supressors; a lack of programming, or simply not caring for organic damage - your mechanical nature has made you immune to the trials and tribulations of what the organics call 'the mind and soul'."
+	icon_state = "interfacing" // Disco Elysium Skills - Simplified	Art.
+
+/datum/perk/unfeeling/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.view_damage_threshold += 600 //Synth trait.
+		holder.sanity.sanity_invulnerability += 1 //yep.
+		holder.sanity.insight_gain_multiplier *= 0.25 //yeowch
+
+/datum/perk/fate/unfeeling/remove()
+	if(holder)
+		holder.sanity.view_damage_threshold -= 600 //Synth trait.
+		holder.sanity.sanity_invulnerability -= 1 //yep.
+		holder.sanity.insight_gain_multiplier *= 2 //so you arent softlocked
+	..()
+
 /datum/perk/fate/paper_worm
 	name = "Paper Worm"
 	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \

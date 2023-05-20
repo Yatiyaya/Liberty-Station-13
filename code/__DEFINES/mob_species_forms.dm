@@ -65,6 +65,7 @@
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
 #define FORM_AXOLOTL			"Axolotl"
+#define FORM_SYNTH				"Synthetic"
 
 #define FORM_BIRD				"Avian"
 
