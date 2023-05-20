@@ -40,8 +40,7 @@
 	name_plural = "Synthetics" //CLANKUS
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
 	default_form = FORM_SYNTH
-	obligate_name = FALSE //So people can make 'FBPs' that dont suck if they choose.
-	obligate_form = TRUE
+	obligate_name = TRUE //So people can make 'FBPs' that dont suck if they choose.
 	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN | NO_MINOR_CUT
 	reagent_tag = IS_SYNTHETIC
 	hunger_factor = 0
@@ -79,7 +78,8 @@
 		BP_BRAIN = /obj/item/organ/internal/brain/synthetic,
 		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp,
 		OP_MUSCLE = /obj/item/organ/internal/muscle/robotic,
-		OP_NERVE = /obj/item/organ/internal/nerve/robotic
+		OP_NERVE = /obj/item/organ/internal/nerve/robotic,
+		OP_BONE
 		)
 
 /datum/species/machine/get_bodytype()
