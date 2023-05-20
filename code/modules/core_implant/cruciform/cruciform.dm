@@ -9,6 +9,7 @@ var/list/disciples = list()
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
 	layer = ABOVE_MOB_LAYER
+	security_clearance = CLEARANCE_COMMON
 	access = list(access_crematorium)
 	power = 0
 	max_power = 100

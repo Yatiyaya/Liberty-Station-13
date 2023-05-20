@@ -1248,7 +1248,8 @@ var/list/rank_prefix = list(\
 				if(mind)
 					C.install_default_modules_by_job(mind.assigned_job)
 					C.access.Add(mind.assigned_job.cruciform_access)
-					C.security_clearance = mind.assigned_job.security_clearance
+					if(mind.assigned_job.security_clearance)
+						C.security_clearance = mind.assigned_job.security_clearance
 
 			switch(I.implant_organ_type)
 				if("psionic tumor")
@@ -1287,7 +1288,8 @@ var/list/rank_prefix = list(\
 					C.activate()
 					C.install_default_modules_by_job(mind.assigned_job)
 					C.access.Add(mind.assigned_job.cruciform_access)
-					C.security_clearance = mind.assigned_job.security_clearance
+					if(mind.assigned_job.security_clearance)
+						C.security_clearance = mind.assigned_job.security_clearance
 
 	for(var/obj/item/organ/internal/carrion/C in organs_to_readd)
 		C.replaced(get_organ(C.parent_organ_base))

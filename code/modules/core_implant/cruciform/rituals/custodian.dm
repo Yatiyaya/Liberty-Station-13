@@ -32,6 +32,7 @@
 
 	EOTP.current_rewards = miracles
 	EOTP.armaments_points = min(EOTP.armaments_points + 5, EOTP.max_armaments_points)
+	EOTP.visible_message("\icon[EOTP] <span class = 'notice'>The Embers resonate slightly as the offering is consumed.</span>")
 	return TRUE
 
 /datum/ritual/cruciform/custodian/offering/proc/make_offerings(list/offerings)
