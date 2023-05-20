@@ -38,10 +38,11 @@
 /datum/species/machine //Boilerplate as fuck.
 	name = "Synthetic"
 	name_plural = "Synthetics" //CLANKUS
+	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
 	default_form = FORM_SYNTH
 	obligate_name = FALSE //So people can make 'FBPs' that dont suck if they choose.
 	obligate_form = TRUE
-	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN
+	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN | NO_MINOR_CUT
 	reagent_tag = IS_SYNTHETIC
 	hunger_factor = 0
 	virus_immune = TRUE
