@@ -30,6 +30,7 @@
 #define PERK_RAT /datum/perk/background/rat
 #define PERK_SOLBORN /datum/perk/background/solborn
 #define PERK_PAPER_WORM /datum/perk/fate/paper_worm
+#define PERK_UNFEELING /datum/perk/unfeeling
 
 //Wage Perks
 #define PERK_NEPOTISM /datum/perk/background/nepotism

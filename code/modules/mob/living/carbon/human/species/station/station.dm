@@ -34,6 +34,64 @@
 /datum/species/human/get_bodytype()
 	return "Human"
 
+
+/datum/species/machine //Boilerplate as fuck.
+	name = "Synthetic"
+	name_plural = "Synthetics" //CLANKUS
+	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
+	default_form = FORM_SYNTH
+	obligate_name = TRUE //So people can make 'FBPs' that dont suck if they choose.
+	flags = NO_BREATHE | NO_BLOOD | NO_SCAN | NO_PAIN | NO_MINOR_CUT
+	reagent_tag = IS_SYNTHETIC
+	hunger_factor = 0
+	virus_immune = TRUE
+	siemens_coefficient = 0.35 //Shock Absorbers to prevent static shocks from destroying components.
+	blurb = "A group of synthetics. Report if you see this."
+	num_alternate_languages = 2
+	name_language = null // Use the first-name last-name generator rather than a language scrambler
+	min_age = 18
+	max_age = 400 //About as old as a synthetic /can/ be and still be operational.
+	show_ssd = "appears to be inactive"
+
+	dark_color = "#ffffff"
+	light_color = "#000000"
+
+	darksight = 2
+	radiation_mod = 0
+	breath_type = null
+	poison_type = null
+	spawn_flags = CAN_JOIN
+	total_health = 90 //Less tankier. Equivalent to doing a few bits of crayon magic in terms of maxHP lost. Significant against high damage projectiles.
+	has_limbs = list(
+		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
+		BP_GROIN =  new /datum/organ_description/groin/robotic_normal,
+		BP_HEAD =   new /datum/organ_description/head/robotic_normal,
+		BP_L_ARM =  new /datum/organ_description/arm/left/robotic_normal/full,
+		BP_R_ARM =  new /datum/organ_description/arm/right/robotic_normal/full,
+		BP_L_LEG =  new /datum/organ_description/leg/left/robotic_normal/full,
+		BP_R_LEG =  new /datum/organ_description/leg/right/robotic_normal/full
+		)
+
+	has_process = list(    // HOLY MOTHER OF GOD THIS IS CURSED. Force EVERYTHING to process.
+		OP_CELL = /obj/item/organ/internal/cell,
+		BP_BRAIN = /obj/item/organ/internal/brain/synthetic,
+		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp,
+		OP_MUSCLE = /obj/item/organ/internal/muscle/robotic,
+		OP_NERVE = /obj/item/organ/internal/nerve/robotic,
+		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
+		BP_GROIN =  new /datum/organ_description/groin/robotic_normal,
+		BP_HEAD =   new /datum/organ_description/head/robotic_normal,
+		BP_L_ARM =  new /datum/organ_description/arm/left/robotic_normal/full,
+		BP_R_ARM =  new /datum/organ_description/arm/right/robotic_normal/full,
+		BP_L_LEG =  new /datum/organ_description/leg/left/robotic_normal/full,
+		BP_R_LEG =  new /datum/organ_description/leg/right/robotic_normal/full,
+		OP_BONE
+		)
+
+/datum/species/machine/get_bodytype()
+	return "Synthetic"
+
+
 /datum/species/sablekyne
 	name = "Sablekyne"
 	name_plural = "Sablekynes"

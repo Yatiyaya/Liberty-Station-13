@@ -6,6 +6,7 @@
 #define SPECIES_TAJ				"Sablekyne"
 #define SPECIES_PROMETHEAN		"Promethean"
 #define SPECIES_VOX				"Vox"
+#define SPECIES_SYNTH			"Synthetic"
 
 #define SPECIES_AKULA			"Akula"
 #define SPECIES_ALRAUNE			"Seelie"
@@ -65,6 +66,7 @@
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
 #define FORM_AXOLOTL			"Axolotl"
+#define FORM_SYNTH				"Synthetic"
 
 #define FORM_BIRD				"Avian"
 

@@ -512,6 +512,7 @@
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_opifex.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_sablekyne.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_slime.dm"
+#include "code\datums\setup_option\backgrounds\ancestry\ancestry_synth.dm"
 #include "code\datums\setup_option\backgrounds\path\path.dm"
 #include "code\datums\setup_option\backgrounds\thoughts\thoughts.dm"
 #include "code\datums\stat_modifiers\mob_modifiers.dm"
