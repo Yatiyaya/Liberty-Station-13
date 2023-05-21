@@ -160,6 +160,9 @@
 								if("10mm barrel")
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/magnum)
 
+								else
+									return
+
 						if("Mechanisms")
 							required_resources = materials_smechanism
 							choice = input(user) as null|anything in list("Pistol mechanism", "Revolver mechanism", "SMG mechanism")
@@ -170,6 +173,13 @@
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/revolver)
 								if("SMG mechanism")
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/smg)
+
+
+								else
+									return
+
+						else
+							return
 
 				if("Long arms")
 					choice = input(user, "Which type of part do you want to craft?") as null|anything in list("Barrels", "Mechanisms")
@@ -184,6 +194,10 @@
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/lrifle)
 								if("Shotgun barrel")
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/shotgun)
+
+								else
+									return
+
 						if("Mechanisms")
 							required_resources = materials_lmechanism
 							choice = input(user) as null|anything in list("Self-loading mechanism", "Shotgun mechanism")
@@ -192,6 +206,13 @@
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/autorifle)
 								if("Shotgun mechanism")
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/shotgun)
+
+
+								else
+									return
+
+						else
+							return
 
 					//For now - lets try without Guild making AMRs. This will hurt the AMR economy.
 				/*if("Heavy parts")
@@ -225,6 +246,10 @@
 								if("Shotgun barrel")
 									required_resources = materials_lbarrel_steel
 									items_to_spawn = list("" = /obj/item/part/gun/barrel/shotgun/steel)
+
+								else
+									return
+
 						if("Mechanisms")
 							choice = input(user) as null|anything in list("Pistol mechanism", "Revolver mechanism", "SMG mechanism", "Bolt-action mechanism", "Self-loading mechanism", "Shotgun mechanism")
 							switch(choice)
@@ -247,6 +272,12 @@
 									required_resources = materials_lmechanism_steel
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/shotgun/steel)
 
+								else
+									return
+
+						else
+							return
+
 				if("Grips")
 					choice = input(user) as null|anything in list("Bakelite grip", "Plastic grip", "Wooden grip") //"Rubber grip", "Excelsior grip",
 					switch(choice)
@@ -259,6 +290,13 @@
 						if("Wooden grip")
 							required_resources = materials_wgrip
 							items_to_spawn = list("" = /obj/item/part/gun/grip/wood)
+
+						else
+							return
+
+
+				else
+					return
 
 		//For a future update when I'm not lazy as shit. - Rebel0
 		/*if("Armor parts")
