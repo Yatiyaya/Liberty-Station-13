@@ -79,11 +79,14 @@
 	item_state = "radstag_antler"
 	price_tag = 1000
 
-/obj/item/animal_part/wolf_tooth
-	name = "pristine animal fang"
+/obj/item/stack/wolf_tooth
+	name = "pristine animal fangs"
+	singular_name = "fang"
 	desc = "A rather generic animal fang from something predatory. While not that useful its small size and value in the kriosan market make it worthwhile to collect and export."
+	icon = 'icons/obj/animal_parts.dmi'
 	icon_state = "wolf_tooth"
 	item_state = "wolf_tooth"
+	max_amount = 10
 	price_tag = 300
 	w_class = ITEM_SIZE_TINY
 
