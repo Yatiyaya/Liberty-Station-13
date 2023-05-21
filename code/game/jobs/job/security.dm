@@ -39,6 +39,7 @@
 
 	perks = list(PERK_ASS_OF_CONCRETE,
 				 PERK_CODESPEAK,
+				 PERK_GUNSMITH,
 				 PERK_CHEM_CONTRABAND)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,

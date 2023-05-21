@@ -106,9 +106,9 @@
 	desc = "An armored vest of dubious quality. Provides decent protection against physical damage, for a piece of crap."
 	icon_state = "armor_handmade"
 	armor_list = list(
-		melee = 15,
-		bullet = 0,
-		energy = 0,
+		melee = 25, // Please don't modify values without looking at overall armor standardizing
+		bullet = 15,
+		energy = 10,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -338,6 +338,8 @@
 	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 	max_upgrades = 2
 	armor_list = list(melee = 35, bullet = 25, energy = 25, bomb = 30, bio = 50, rad = 50)
 	extra_allowed = list(/obj/item/extinguisher,
@@ -357,6 +359,8 @@
 	desc = "A plate carrier with CAPSA stripes and a white cross on its back, denoting its wearer as medical personnel."
 	icon_state = "capsa_armor"
 	has_alternative_armor_icon = FALSE
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = T0C - 20
 	armor_list = list(
 		melee = 35,
 		bullet = 35,
@@ -372,6 +376,8 @@
 	icon_state = "capsa_armor_fullbody"
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 	stiffness = LIGHT_STIFFNESS
 
 /obj/item/clothing/suit/armor/vest/pirssuit/cso
@@ -1026,9 +1032,9 @@
 	icon_state = "hm_woodvest"
 	item_state = "hm_woodvest"
 	armor_list = list(
-		melee = 25, //It's made of mostly wood and cloth, shittiest armor in the game easily, but does have bio and rad, giving it a rare but still possible boost over handmade. -Kaz
-		bullet = 15, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include steel. - Seb
-		energy = 10, // It's mostly made of wood, it will char easily.
+		melee = 20,
+		bullet = 10, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include steel. - Seb
+		energy = 0, // It's mostly made of wood, it will char easily.
 		bomb = 10,
 		bio = 25,
 		rad = 25

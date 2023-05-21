@@ -458,10 +458,11 @@ obj/item/clothing/head/ribbon/red
 
 /obj/item/clothing/head/outcasthood
 	name = "outcast's hood"
-	desc = "A raggedy hood from your trusty cloak, can be used to hide your face from the harmful looks of others."
+	desc = "A raggedy hood from your trusty cloak, can be used to hide your face from the harmful looks of others and protect it from the inclement weather."
 	icon_state = "ragged_hood"
 	item_state = "ragged_hood"
 	flags_inv = HIDEEARS|BLOCKHAIR
+	min_cold_protection_temperature = T0C - 20
 	armor_list = list(melee = 5, bullet = 0, energy = 10, bomb = 0, bio = 5, rad = 5)
 
 // hoods for the tacticool ponchos.

@@ -298,19 +298,28 @@
 	obscuration = LIGHT_OBSCURATION
 
 /obj/item/clothing/head/helmet/handmade/scavengerhelmet
-	name = "Shipbreaker helmet"
-	desc = "A sturdy, handcrafted helmet. It's well balanced and sits low on your head, with padding on the inside."
-	icon_state = "fontaine_visor"
-	item_state = "fontaine_visor"
-	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 0, rad = 0)
+	name = "Scavenged Helmet"
+	desc = "A combat helmet with improved inner lining and protection against hazards, including a visor and additional alloy plates. \
+			The drapes surrounding the neck area offer moderate protection against the cold as well."
+	icon_state = "scav_helm"
+	item_state = "scav_helm"
+	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 10, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
+	cold_protection = HEAD|FACE|EARS
+	min_cold_protection_temperature = T0C - 20
 	price_tag = 200
-	max_upgrades = 1 // Good baseline already
+	max_upgrades = 1
 	action_button_name = "Toggle Headlamp"
 	light_overlay = "technohelmet_light"
-	brightness_on = 5 //Slightly better do to the sear costs
+	brightness_on = 5
 	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/head/helmet/handmade/scavengerhelmet/fontaine
+	name = "Shipbreaker helmet"
+	desc = "A sleek and sturdy helmet in Fontaine colors. It's well balanced and sits low on your head, with padding on the inside."
+	icon_state = "fontaine_visor"
+	item_state = "fontaine_visor"
 
 /obj/item/clothing/head/trapper
 	name = "Trapper brimmed hat"

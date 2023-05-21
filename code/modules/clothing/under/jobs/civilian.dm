@@ -10,6 +10,8 @@
 /obj/item/clothing/under/rank/assistant
 	name = "colonist's uniform"
 	desc = "A standard-issue black and brown colonist uniform.  Get up, there's work to be done, and we work for ourselves now."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 	icon_state = "liberassistant"
 	item_state = "liberassistant"
 
@@ -164,6 +166,8 @@
 	desc = "A jury rugged set of baggy pants with leather reinforcement paddings and other fibers, as comfortable as clothes can get when made by whatever you scavenged off the land."
 	icon_state = "tactical_rags"
 	item_state = "tactical_rags"
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 	armor_list = list(melee = 5, bullet = 0, energy = 10, bomb = 0, bio = 0, rad = 5)
 
 /obj/item/clothing/under/rank/Skylight_gorka

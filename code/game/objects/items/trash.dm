@@ -171,6 +171,11 @@
 	icon_state = "icecreambowl"
 	matter = list(MATERIAL_GLASS = 1) // It is, after all, made of glass
 
+/obj/item/trash/selfheat_coffee
+	name = "empty self-heating coffee"
+	desc = "A crushed up can whose self-heating mechanism is spent. The faint smell of coffee still lingers inside."
+	icon_state = "selfheat_coffee"
+
 /obj/item/trash/mre/os
 	name = "gray cardboard takeout container"
 	desc = "A generic takeout container made of cardboard. Trash."

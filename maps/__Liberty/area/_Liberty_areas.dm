@@ -433,6 +433,13 @@
 //	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 	is_dungeon_lootable = FALSE
 
+/area/liberty/outside/range
+	name = "Public Firing Range"
+	icon_state = "erisgreen"
+	allows_weather_of_snow = TRUE
+	is_dungeon_lootable = FALSE
+	requires_power = FALSE
+
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)
 
 /area/liberty/maintenance/substation
