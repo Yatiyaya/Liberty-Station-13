@@ -457,6 +457,7 @@
 		/obj/item/melee,
 		/obj/item/tool/knife,
 		/obj/item/device/binoculars,
+		/obj/item/modular_computer/tablet,
 		/obj/item/tool/medmultitool // This is not a justification for Parameds to do surgery btw.
 	)
 
