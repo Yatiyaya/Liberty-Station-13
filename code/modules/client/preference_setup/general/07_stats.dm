@@ -65,7 +65,7 @@
 	. += "Endurance:  <a href='?src=\ref[src];endmod=1'>[pref.ENDMOD]</a><br>"
 	. += "Vigilance:  <a href='?src=\ref[src];vigmod=1'>[pref.VIGMOD]</a><br>"
 	. += "<br/>"
-	. += "You have used [pref.BIOMOD + pref.COGMOD + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + round(pref.ENDMOD*5)] / 10 skill points"
+	. += "You have used [pref.WILMOD + pref.BIOMOD + pref.COGMOD + pref.MECMOD + pref.ROBMOD + pref.TGHMOD + pref.VIGMOD + round(pref.ENDMOD*5)] / 10 skill points"
 	. = jointext(.,null)
 
 /datum/category_item/player_setup_item/background/education/proc/calculatetotalpoints()
