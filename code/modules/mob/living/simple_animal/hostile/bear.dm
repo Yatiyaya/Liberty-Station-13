@@ -23,7 +23,7 @@
 	attack_sound = 'sound/effects/creatures/maul.ogg'
 	leather_amount = 6
 	bones_amount = 4
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	faction = "russian"
 	inherent_mutations = list(MUTATION_EPILEPSY, MUTATION_THICK_FUR, MUTATION_IMBECILE, MUTATION_NERVOUSNESS)
 	var/horror_modifer = TRUE // For-admins to turn this off
@@ -144,7 +144,7 @@
 	health = 400
 	melee_damage_lower = 30
 	melee_damage_upper = 40
-	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)
 
 // Credit to scar#1579 for the sprite.
 /mob/living/simple_animal/hostile/bear/mukwah
@@ -161,4 +161,4 @@
 	leather_amount = 10
 	bones_amount = 10
 	pixel_x = -16
-	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)

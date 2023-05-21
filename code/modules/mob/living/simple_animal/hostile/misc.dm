@@ -22,7 +22,7 @@
 	mob_size = 10
 	resistance = 8
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 /mob/living/simple_animal/hostile/diyaab
 	name = "diyaab"
@@ -47,7 +47,7 @@
 	density = 0
 	mob_size = 3
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	clone_difficulty = CLONE_EASY
 	inherent_mutations = list(MUTATION_DWARFISM, MUTATION_EPILEPSY, MUTATION_UNBALANCED, MUTATION_IMBECILE)
 
@@ -74,7 +74,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/pork
 	meat_amount = 6 //Pigs are known for giving meat
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 /mob/living/simple_animal/yithian
 	name = "yithian"
@@ -138,7 +138,7 @@
 	faction = "pond"
 	var/attack_reagent = "toxin"
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_TOXIN_RESISTANCE, MUTATION_UNBALANCED, MUTATION_CLUMSY)
 
 /mob/living/simple_animal/hostile/snake/AttackingTarget()
@@ -179,7 +179,7 @@
 	break_stuff_probability = 0
 	var/attack_reagent = "toxin"
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	sanity_damage = -1
 
 /mob/living/simple_animal/hostile/tengbrute
@@ -212,7 +212,7 @@
 	leather_amount = 4
 	bones_amount = 4
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 /mob/living/simple_animal/hostile/tengstalker
 	name = "tengolo stalker"
@@ -244,7 +244,7 @@
 	leather_amount = 4
 	bones_amount = 4
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 /mob/living/simple_animal/hostile/tengcharge
 	name = "tengolo charger"
@@ -276,7 +276,7 @@
 	leather_amount = 4
 	bones_amount = 4
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 /mob/living/simple_animal/hostile/helldiver
 	name = "hell diver"

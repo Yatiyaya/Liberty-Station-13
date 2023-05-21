@@ -325,10 +325,6 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 3, MATERIAL_LEATHER, "time" = 60),
 		list(QUALITY_CUTTING, 15, "time" = 50),
-		list(/obj/item/animal_part/wolf_tooth, 1, "time" = 10),
-		list(/obj/item/animal_part/wolf_tooth, 1, "time" = 10),
-		list(/obj/item/animal_part/wolf_tooth, 1, "time" = 10),
-		list(/obj/item/animal_part/wolf_tooth, 1, "time" = 10),
-		list(/obj/item/animal_part/wolf_tooth, 1, "time" = 10),
+		list(/obj/item/stack/wolf_tooth, 5, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 15, "time" = 70)
 	)
