@@ -456,7 +456,12 @@
 		/obj/item/modular_computer/pda,
 		/obj/item/melee,
 		/obj/item/tool/knife,
-		/obj/item/device/binoculars
+		/obj/item/device/binoculars,
+		/obj/item/tool/medmultitool // This is not a justification for Parameds to do surgery btw.
+	)
+
+	cant_hold = list(
+		/obj/item/tool/medmultitool/medimplant	// Prevents sticking your implanted omnitool into the belt
 	)
 
 /obj/item/storage/belt/webbing/union
