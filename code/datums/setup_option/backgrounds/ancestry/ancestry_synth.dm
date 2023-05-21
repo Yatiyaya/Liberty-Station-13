@@ -14,7 +14,7 @@
 	perks = list(PERK_UNFEELING) //All synthetics will have this.
 
 
-	stat_modifiers = list(STAT_ROB = 16, STAT_TGH = 16, STAT_MEC = 4) //Decently high starting stats due to the fact they can basically never level up.
+	stat_modifiers = list(STAT_ROB = 4, STAT_TGH = 4, STAT_MEC = 4, STAT_VIG = -2) //Decently high starting stats due to the fact they can basically never level up.
 
 
 /datum/category_item/setup_option/background/ancestry/convert
@@ -27,7 +27,7 @@
 
 	//No perks. You shilled yourself out to become a synthetic; this is the price of it.
 
-	stat_modifiers = list(STAT_ROB = 4, STAT_TGH = 4, STAT_MEC = 8) //Decently high starting stats due to the fact they can level up, but aren't sanity immune.
+	stat_modifiers = list(STAT_ROB = 4, STAT_TGH = 4, STAT_MEC = 8, STAT_VIG = -10) //Clunky, And not immune to sanity.
 
 
 /datum/category_item/setup_option/background/ancestry/synth/engineering //Horrible for Med + Ranged Combat. They fuck shit up in CQC though.
@@ -38,7 +38,7 @@
 
 
 	racial_implants = (/obj/item/organ_module/active/simple/engineer)
-	stat_modifiers = list(STAT_ROB = 18, STAT_TGH = 14, STAT_MEC = 44, STAT_COG = 6, STAT_VIG = -30, STAT_BIO = -22) //104 MECH as Union Chief with statmax, 94 as PIRS Robo/Union Worker. Very bad with guns, but can flatten a person with their fists.
+	stat_modifiers = list(STAT_ROB = 18, STAT_TGH = 14, STAT_MEC = 46, STAT_COG = 6, STAT_VIG = -32, STAT_BIO = -62) //104 MECH as Union Chief with statmax, 94 as PIRS Robo/Union Worker. Very bad with guns, but can flatten a person with their fists.
 
 
 /datum/category_item/setup_option/background/ancestry/synth/medical //Horrible for Med + Melee. Actually decent with weapons, though.
@@ -50,7 +50,7 @@
 
 
 	racial_implants = (/obj/item/organ_module/active/simple/surgical)
-	stat_modifiers = list(STAT_ROB = -16, STAT_TGH = -16, STAT_MEC = -40, STAT_COG = 26, STAT_VIG = 18, STAT_BIO = 46) //Utterly reliant on engineering for repairs, horrible at combat in general.
+	stat_modifiers = list(STAT_ROB = -18, STAT_TGH = -18, STAT_MEC = -60, STAT_COG = 26, STAT_VIG = 18, STAT_BIO = 46) //Utterly reliant on engineering for repairs, horrible at combat in general.
 
 
 /datum/category_item/setup_option/background/ancestry/synth/computer //R&D
@@ -59,7 +59,7 @@
 	Usually found as prized PRIS employees, they are extremely expensive to maintain."
 
 
-	stat_modifiers = list(STAT_ROB = -30, STAT_TGH = -30, STAT_MEC = 22, STAT_COG = 60, STAT_VIG = 2, STAT_BIO = 22) //Jack of all trades, but really, really weak combat wise.
+	stat_modifiers = list(STAT_ROB = -40, STAT_TGH = -40, STAT_MEC = 22, STAT_COG = 60, STAT_VIG = -30, STAT_BIO = 22) //Jack of all trades, but really, really weak combat wise.
 
 
 /datum/category_item/setup_option/background/ancestry/synth/combat //Title
@@ -68,4 +68,4 @@
 	Outside of law enforcement and militaries."
 
 
-	stat_modifiers = list(STAT_ROB = 28, STAT_TGH = 28, STAT_MEC = -30, STAT_COG = -30, STAT_VIG = 42, STAT_BIO = -30) //Enjoy being able to do nothing but fight.
+	stat_modifiers = list(STAT_ROB = 28, STAT_TGH = 28, STAT_MEC = -36, STAT_COG = -36, STAT_VIG = 42, STAT_BIO = -36) //Enjoy being able to do nothing but fight.

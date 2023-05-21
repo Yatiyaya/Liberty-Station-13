@@ -61,8 +61,7 @@
 	breath_type = null
 	poison_type = null
 	spawn_flags = CAN_JOIN
-	total_health = 105 //A tad tankier across the board.
-
+	total_health = 90 //Less tankier. Equivalent to doing a few bits of crayon magic in terms of maxHP lost. Significant against high damage projectiles.
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
 		BP_GROIN =  new /datum/organ_description/groin/robotic_normal,
