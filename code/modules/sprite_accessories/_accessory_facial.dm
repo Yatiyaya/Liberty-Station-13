@@ -18,7 +18,8 @@
 		FORM_CHTMANT,
 		FORM_CINDAR,
 		FORM_NARAMAD,
-		FORM_OPIFEX
+		FORM_OPIFEX,
+		FORM_SYNTH
 		)
 
 /datum/sprite_accessory/facial_hair/shaved
