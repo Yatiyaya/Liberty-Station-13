@@ -27,7 +27,8 @@
 		'sound/music/lobby/Phokorus.ogg',
 		'sound/music/lobby/Liberty.ogg',
 		'sound/music/lobby/Richi.ogg',
-		'sound/music/lobby/Richi2.ogg'
+		'sound/music/lobby/Richi2.ogg',
+		'sound/music/lobby/Richi3.ogg'
 	)
 
 /datum/lobbyscreen/liberty_therma
