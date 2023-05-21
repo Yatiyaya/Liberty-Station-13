@@ -78,13 +78,6 @@
 		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp,
 		OP_MUSCLE = /obj/item/organ/internal/muscle/robotic,
 		OP_NERVE = /obj/item/organ/internal/nerve/robotic,
-		BP_CHEST,
-		BP_GROIN,
-		BP_HEAD,
-		BP_L_ARM,
-		BP_R_ARM,
-		BP_L_LEG,
-		BP_R_LEG,
 		OP_BONE
 		)
 
