@@ -78,13 +78,6 @@
 		OP_EYES = /obj/item/organ/internal/eyes/prosthetic/fbp,
 		OP_MUSCLE = /obj/item/organ/internal/muscle/robotic,
 		OP_NERVE = /obj/item/organ/internal/nerve/robotic,
-		BP_CHEST =  new /datum/organ_description/chest/robotic_normal,
-		BP_GROIN =  new /datum/organ_description/groin/robotic_normal,
-		BP_HEAD =   new /datum/organ_description/head/robotic_normal,
-		BP_L_ARM =  new /datum/organ_description/arm/left/robotic_normal/full,
-		BP_R_ARM =  new /datum/organ_description/arm/right/robotic_normal/full,
-		BP_L_LEG =  new /datum/organ_description/leg/left/robotic_normal/full,
-		BP_R_LEG =  new /datum/organ_description/leg/right/robotic_normal/full,
 		OP_BONE
 		)
 
