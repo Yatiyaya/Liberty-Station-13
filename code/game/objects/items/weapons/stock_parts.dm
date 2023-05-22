@@ -206,10 +206,10 @@
 	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
 	price_tag = 40
 
-//Guild stock parts (rating 4)
+//PIRS stock parts (rating 4) - DO NOT USE THESE. MAKE THEM CRAFT THEM.
 /obj/item/stock_parts/capacitor/guild
 	name = "ultra capacitor"
-	desc = "A guild tinkered super-high capacity capacitor used in the construction of a variety of devices."
+	desc = "A PIRS tinkered super-high capacity capacitor used in the construction of a variety of devices."
 	icon_state = "guild_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 4
@@ -252,51 +252,51 @@
 	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_GLASS = 1, MATERIAL_PLASMAGLASS = 1)
 	price_tag = 75
 
-//Guild stock parts (rating 5)
+//PIRS stock parts (rating 5)
 /obj/item/stock_parts/capacitor/handmade
-	name = "handcrafted ultra capacitor"
-	desc = "A guild tinkered super-high capacity capacitor used in the construction of a variety of devices. Being made by hand by the skilled Guild shows that they can out perform even a Nanoforge."
+	name = "experimental capacitor"
+	desc = "A PIRS tinkered super-high capacity capacitor used in the construction of a variety of devices. Being hand-tuned and impedence tested; along with extra-conductive wiring replacing the original connectors - these easily outperform their lathe-printed counterparts."
 	icon_state = "guild_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
-	price_tag = 200
+	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1) //Sorry, you want me to use 2 sheets of gold and silver for ONE capacitor? Fat chance.
+	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/scanning_module/handmade
-	name = "handcrafted over-tuned scanning module"
-	desc = "An over engineered and expensive yet compact, high resolution phasic scanning module used in the construction of certain devices. Being made by hand by the skilled Guild shows that they can out perform even a Nanoforge."
+	name = "over-tuned scanning module"
+	desc = "An over engineered and high resolution, yet compact phasic scanning module used in the construction of certain devices. Being tuned by hand to run at the optimum frequency for their scanning efforts; these easily blow lathe-fabricated ones out of the water.."
 	icon_state = "guild_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_RGLASS  = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
-	price_tag = 200
+	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_RGLASS  = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1)
+	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/manipulator/handmade
-	name = "handcrafted forged manipulator"
-	desc = "A buffed up pico manipulator with a added case to increase manipulation used in the construction of certain devices. Being made by hand by the skilled Guild shows that they can out perform even a Nanoforge."
+	name = "flexi-pico manipulator"
+	desc = "A beefed up picomanipulator - many un-neccessary parts that slowed previous fabrication efforts having been removed, slimmed down and redesigned from the ground-up. Such modifications make it many times better than a lathe-printed counterpart; and faster, too!"
 	icon_state = "guild_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 5
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 5)
-	price_tag = 200
+	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1) //Point and case.
+	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/micro_laser/handmade
-	name = "handcrafted perfected micro-laser"
+	name = "perfected ultra-high-power micro-laser"
 	icon_state = "guild_micro_laser"
-	desc = "An ultra-high micro laser with a perfected lens to increase productivity. Being made by hand by the skilled Guild shows that they can out perform even a Nanoforge."
+	desc = "An ultra-high micro laser with a compound lense to decrease beam divergence and increase peak power output. Being made by skilled tinkerers; this also features a better driver circuit, extra thermal coupling - and a more powerful diode, easily outperforming lathe counterparts."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_RGLASS = 1, MATERIAL_SILVER = 1)
-	price_tag = 200
+	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/matter_bin/handmade
-	name = "handcrafted cast matter bin"
-	desc = "A super matter bin with added compression cast onto the base itself for more effective storage. Being made by hand by the skilled Guild shows that they can out perform even a Nanoforge."
+	name = "giga matter bin"
+	desc = "A super matter bin combined with extra compression storage, faster cyclic speeds; and generally higher capacity per second. Such modifications increase the bulk by a decent bit - but they clearly blow their lathe-fabricated counterparts out of the water!"
 	icon_state = "guild_matter_bin"
 	origin_tech = list(TECH_MATERIAL = 5)
 	rating = 5
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_GLASS = 2, MATERIAL_STEEL = 1)
-	price_tag = 200
+	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 //excelsior stock parts (rating 5)
 /obj/item/stock_parts/capacitor/excelsior
