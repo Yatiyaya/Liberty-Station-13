@@ -6,6 +6,7 @@
 	At the beginning of the game, both players draw 3 cards + 1 fodder card.<BR>\n\
 	After drawing their initial cards, players may place any terrian or blocker cards anywhere on the field.<BR>\n\
 	At the beginning of each turn, a player may draw 1 fodder card or 1 card from their deck box. Players draw on their very first turn.<BR>\n\
+
 	Playing Cards:<BR>\n\
 	Some cards have an associated blood cost. This cost is paid by sacrificing a total amount of cards on the players field to equal the amount required. Unless otherwise stated, one card is one blood. \
 	Any excess blood disappears after a creature is played. You may not sacrifice additional cards while paying a blood cost i.e. if a wolf requires 2 blood, you cannot sacrifice 3 squirrels. \
@@ -14,6 +15,7 @@
 	gains 1 tally unless otherwise noted. When paying bones, a player must put an equal number of cards back into the deck box it was drawn from equal to the value of bones paid.<BR>\n\
 	Blood costs may NOT be paid using cards not on the field or in the discard pile.<BR>\n\
 	Bone costs may ONLY be paid using cards in the discard pile. All players share the same bone pile, allowing for bones to be paid using either player's discard counter/bone pile.<BR>\n\
+
 	Attacking:<BR>\n\
 	When a player ends their turn, all cards from left to right act. Left to right is determined by the attacking players position.<BR>\n\
 	Any card in the back row capable of moving to the first row does so, moving first and then attacking. Cards in the back row cannot attack.<BR>\n\
@@ -21,6 +23,8 @@
 	Cards in the back row cannot attack or move cards in the front row of their side of the field unless otherwise stated, even if that card is a blocker, obstacle, or pelt.<BR>\n\
 	When a card dies, it is placed inside the discard pile of the owner of the card unless otherwise stated.<BR>\n\
 	If a player were to deal 5 or more damage on turn one before the other one is able to play, reset the scale.<BR>\n\
+	If the defending player has unblocked, or otherwise attacking cards, that if they were to attack bring the scale below the losing threshhold, adjust scale to be the 1 point away from a loss. Cards in the back row do not move or attack in this calulation.<BR>\n\
+
 	Cards:<BR>\n\
 	All cards have health, power, and play requirements noted on the card. Some cards have special effects or rules that are also noted on the card or on the rules card.<BR>\n\
 	All cards follow the format of Health/Power. A wolf card with 2 health and 3 power is represented as H2/P3 on the card.<BR>\n\
@@ -414,6 +418,12 @@
 	desc = "A gilded pelt, layered in fine gold. H10/P0. Requires 6 bones. Pelt. Defender."
 	icon_state = "card_pelt"
 	current_health = 10
+
+/obj/item/card_carp/peltlice
+	name = "Pelt Lice"
+	desc = "Place over a pelt, killing the pelt, and removing it from the game H1/P1. Requires 1 Pelt. Pelt."
+	icon_state = "card_rabbit_pelt"
+	current_health = 1
 
 /////////////////////////////
 ///    TERRAIN CARDS     ////
