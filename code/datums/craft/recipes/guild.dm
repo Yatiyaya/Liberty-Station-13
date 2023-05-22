@@ -438,3 +438,55 @@
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(CRAFT_MATERIAL, 1, MATERIAL_SILVER)
 	)
+
+/datum/craft_recipe/terra/guild_capacitor
+	name = "Crafted Super Capacitor"
+	result = /obj/item/stock_parts/capacitor/super
+	steps = list(
+		list(/obj/item/stock_parts/capacitor, 1),
+		list(QUALITY_SCREW_DRIVING, 35, 70),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
+		list(QUALITY_BOLT_TURNING, 10, 70),
+		list(QUALITY_WELDING, 35),
+		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(QUALITY_SAWING, 30)
+	)
+
+/datum/craft_recipe/terra/guild_manip
+	name = "Crafted Pico Manipulator"
+	result = /obj/item/stock_parts/manipulator/pico
+	steps = list(
+		list(/obj/item/stock_parts/manipulator, 1),
+		list(QUALITY_SCREW_DRIVING, 35, 70),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
+		list(QUALITY_BOLT_TURNING, 10, 70),
+		list(QUALITY_WELDING, 35),
+		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(QUALITY_SAWING, 30)
+	)
+
+/datum/craft_recipe/terra/guild_matterbin
+	name = "Crafted Super Matterbin"
+	result = /obj/item/stock_parts/matter_bin/super
+	steps = list(
+		list(/obj/item/stock_parts/matter_bin, 1),
+		list(QUALITY_SCREW_DRIVING, 35, 70),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
+		list(QUALITY_BOLT_TURNING, 10, 70),
+		list(QUALITY_WELDING, 35),
+		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(QUALITY_SAWING, 30)
+	)
+
+/datum/craft_recipe/terra/guild_laser
+	name = "Crafted Ultra High Power Laser"
+	result = /obj/item/stock_parts/micro_laser/ultra
+	steps = list(
+		list(/obj/item/stock_parts/micro_laser, 1),
+		list(QUALITY_SCREW_DRIVING, 35, 70),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
+		list(QUALITY_BOLT_TURNING, 10, 70),
+		list(QUALITY_WELDING, 35),
+		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(QUALITY_SAWING, 30)
+	)

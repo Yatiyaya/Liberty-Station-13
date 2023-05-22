@@ -396,8 +396,8 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
-		list(QUALITY_HAMMERING, 40),
-		list(QUALITY_SAWING, 60)
+		list(QUALITY_HAMMERING, 30),
+		list(QUALITY_SAWING, 30)
 	)
 
 /datum/craft_recipe/pirs/guild_manip
@@ -411,8 +411,8 @@
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(/obj/item/stack/cable_coil, 10),
-		list(QUALITY_HAMMERING, 40),
-		list(QUALITY_SAWING, 60)
+		list(QUALITY_HAMMERING, 30),
+		list(QUALITY_SAWING, 30)
 	)
 
 /datum/craft_recipe/pirs/guild_laser
@@ -425,7 +425,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
-		list(QUALITY_SAWING, 60)
+		list(QUALITY_SAWING, 30)
 	)
 
 /datum/craft_recipe/pirs/guild_scanner
@@ -438,7 +438,7 @@
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(CRAFT_MATERIAL, 1, MATERIAL_SILVER),
-		list(QUALITY_SAWING, 60)
+		list(QUALITY_SAWING, 30)
 	)
 
 /datum/craft_recipe/pirs/guild_capacitor
@@ -451,7 +451,7 @@
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(CRAFT_MATERIAL, 1, MATERIAL_SILVER),
-		list(QUALITY_SAWING, 60)
+		list(QUALITY_SAWING, 30)
 	)
 /*
 /datum/craft_recipe/pirs/guild_manip_alt
