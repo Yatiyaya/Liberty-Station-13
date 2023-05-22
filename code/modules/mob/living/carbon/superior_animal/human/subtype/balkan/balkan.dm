@@ -10,6 +10,7 @@
 	maxHealth = 100
 	health = 100
 
+	flash_resistances = 10
 	armor = list(melee = 40, bullet = 40, energy = 35, bomb = 40, bio = 100, rad = 100)
 
 	casingtype = null
