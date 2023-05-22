@@ -254,7 +254,7 @@
 	list(/obj/item/tool_upgrade/augment/fuel_tank, 1, "time" = 30)
 	)
 
-/datum/craft_recipe/terra/bastion
+/datum/craft_recipe/terra/bastion //Terra can craft this without the shield
 	name = "Bastion Shield"
 	result = /obj/item/shield/riot/bastion
 	steps = list(
@@ -262,7 +262,7 @@
 	list(QUALITY_SAWING, 30, "time" = 60),
 	list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
 	list(QUALITY_WELDING, 40, "time"= 60),
-	list(/obj/item/shield/riot, 1, "time" = 30),
+	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
 	list(QUALITY_HAMMERING, 45, "time" = 40),
 	list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30)
 	)
@@ -339,20 +339,21 @@
 	steps = list(
 		list(/obj/item/storage/belt, 1, "time" = 30),
 		list(/obj/item/storage/belt, 1, "time" = 30),
-		list(/obj/item/stack/cable_coil, 30, "time" = 30)
+		list(/obj/item/stack/cable_coil, 30, "time" = 30),
+		list(/obj/item/storage/pouch/medium_generic, 1, "time" = 40)
 	)
 
-/datum/craft_recipe/terra/sheet_stacker
+/datum/craft_recipe/terra/sheet_stacker //Cheaper than the PIRS recipe.
 	name = "advanced sheet snatcher"
 	icon_state = "woodworking"
 	result = /obj/item/storage/bag/sheetsnatcher/guild
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD, "time" = 30),
+		list(CRAFT_MATERIAL, 4, MATERIAL_WOOD, "time" = 30),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 60),
 		list(QUALITY_ADHESIVE, 10, "time" = 60),
 		list(/obj/item/stack/cable_coil, 30, "time" = 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
 	)
 
 //Tool/Gun Mods ---------------------
@@ -362,7 +363,7 @@
 	name = "Rubber Mesh"
 	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 30), //Cheaper
+		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 30), //Cheaper
 		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
 	)
 
