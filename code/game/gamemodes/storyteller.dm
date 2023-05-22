@@ -93,9 +93,9 @@ GLOBAL_DATUM(storyteller, /datum/storyteller)
 
 	if(announce)
 		if(!engineer && !command)
-			to_chat(world, "<b><font color='[tcol]'>A Council Member and Guild Member are required to start the round.</font></b>")
+			to_chat(world, "<b><font color='[tcol]'>A Council Member and Union Member are required to start the round.</font></b>")
 		else if(!engineer)
-			to_chat(world, "<b><font color='[tcol]'>A Guild Member is required to start the round.</font></b>")
+			to_chat(world, "<b><font color='[tcol]'>A Union Member is required to start the round.</font></b>")
 		else if(!command)
 			to_chat(world, "<b><font color='[tcol]'>A Council Member is required to start the round.</font></b>")
 
