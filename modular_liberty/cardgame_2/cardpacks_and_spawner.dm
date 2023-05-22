@@ -90,6 +90,7 @@
 				/obj/item/card_carp/rpelt = 20,
 				/obj/item/card_carp/dpelt = 10,
 				/obj/item/card_carp/pinepelt = 5,
+				/obj/item/card_carp/peltlice = 3,
 				/obj/item/card_carp/gpelt = 1 //SO RARE
 				))
 
