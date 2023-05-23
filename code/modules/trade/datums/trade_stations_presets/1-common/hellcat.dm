@@ -33,8 +33,8 @@
 		"Projectile weapons" = list(
 			/obj/item/gun/projectile/clarissa,
 			/obj/item/gun/projectile/liberty,
-			/obj/item/gun/projectile/revolver/detective = good_data("Havelock revolver", list(2, 10), 300),
-			/obj/item/gun/projectile/automatic/ak47/sa = good_data("Yuri carbine", list(1, 3), 1000)
+			/obj/item/gun/projectile/revolver/detective = good_data("Pocket Prince revolver", list(2, 10), 300),
+			/obj/item/gun/projectile/automatic/ak47/sa = good_data("Ugil carbine", list(1, 3), 1000)
 		),
 		"Flame Thrower" = list(
 			/obj/item/gun/flamethrower,
