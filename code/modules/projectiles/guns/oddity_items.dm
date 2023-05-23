@@ -142,6 +142,8 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. \
 	A black and blue version of the defunct \"Serenity\" energy pistol, somehow despite looking just like a repainted job it conserves power unusually well."
 	icon_state = "ntpistol"
+	item_state = "ntpistol"
+	item_charge_meter = TRUE
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
 	charge_cost = 2
 	projectile_type = /obj/item/projectile/beam

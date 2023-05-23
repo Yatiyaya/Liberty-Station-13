@@ -306,9 +306,9 @@
 		/datum/design/autolathe/ammo/smg_magnum_40_lethal = 4
 		)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/thompson
+/obj/item/computer_hardware/hard_drive/portable/design/guns/umbani
 	disk_name = "No-Owner - 10mm Umbani SMG"
-	icon_state = "black"
+	icon_state = "freeworlds"
 
 	license = 12
 	designs = list(
@@ -403,19 +403,6 @@
 	license = 12
 	designs = list(
 		/datum/design/autolathe/gun/specialist = 3,
-		/datum/design/autolathe/ammo/smg_practice = 0,
-		/datum/design/autolathe/ammo/smg_rubber,
-		/datum/design/autolathe/ammo/smg,
-		/datum/design/autolathe/ammo/smg_lethal = 2,
-	)
-
-/obj/item/computer_hardware/hard_drive/portable/design/guns/umbani
-	disk_name = "No-Owner - 10mm Umbani SMG"
-	icon_state = "freeworlds"
-
-	license = 12
-	designs = list(
-		/datum/design/autolathe/gun/umbani = 3,
 		/datum/design/autolathe/ammo/smg_practice = 0,
 		/datum/design/autolathe/ammo/smg_rubber,
 		/datum/design/autolathe/ammo/smg,
