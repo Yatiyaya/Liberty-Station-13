@@ -1,4 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/structure/table/reinforced,
+/obj/random/gun_normal,
+/obj/machinery/recharger,
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor/mini_base)
 "aB" = (
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -122,6 +128,12 @@
 "no" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_cheap,
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor/mini_base)
+"np" = (
+/obj/structure/table/reinforced,
+/obj/random/gun_shotgun,
+/obj/machinery/recharger,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/precursor/mini_base)
 "nQ" = (
@@ -258,6 +270,11 @@
 /obj/structure/table/glass,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/precursor/mini_base)
+"Ca" = (
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/turf/simulated/floor/rock/manmade/ruin1,
+/area/precursor/mini_base)
 "Da" = (
 /obj/structure/table/marble,
 /obj/item/reagent_containers/food/snacks/openable/mre,
@@ -269,7 +286,6 @@
 /area/precursor/mini_base)
 "Ed" = (
 /obj/structure/table/reinforced,
-/obj/item/device/precursor/scan_capsule,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor/mini_base)
 "Eq" = (
@@ -345,7 +361,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/precursor/mini_base)
 "NU" = (
-/obj/machinery/door/airlock/vault/bolted,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/precursor/mini_base)
 "Op" = (
@@ -2516,7 +2531,7 @@ kP
 kP
 xI
 UM
-Ed
+Ca
 jf
 jf
 mD
@@ -3402,7 +3417,7 @@ WS
 YH
 WS
 WS
-Mg
+af
 zj
 mD
 MY
@@ -3756,7 +3771,7 @@ WS
 ki
 WS
 WS
-Op
+np
 zj
 DF
 tD
