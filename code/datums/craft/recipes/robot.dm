@@ -179,7 +179,7 @@
 	)
 
 //copypasted from PIRS craft code to here, Union can have it too
-/datum/craft_recipe/pirs/safety_clamp
+/datum/craft_recipe/robotic/safety_clamp
 	name = "Hydraulic clamp overclock: KILL CLAMP"
 	result = /obj/item/mecha_parts/mecha_equipment/tool/safety_clamp
 	steps = list(
@@ -194,7 +194,7 @@
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 60)
 	)
 
-/datum/craft_recipe/pirs/robotmelee //Lots of steps
+/datum/craft_recipe/robotic/robotmelee //Lots of steps
 	name = "robot mark v armor plating"
 	result = /obj/item/robot_parts/robot_component/armour/mkv
 	steps = list(

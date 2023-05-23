@@ -183,7 +183,7 @@
 
 //STOCK PARTS | PIRS and Union can both craft T3 and T4, but PIRS gets the bulk T4 craft.
 
-/datum/craft_recipe/pirs/guild_bin
+/datum/craft_recipe/pirs/handmade_bin
 	name = "Hand Giga Matter Bin"
 	result = /obj/item/stock_parts/matter_bin/handmade
 	steps = list(
@@ -197,7 +197,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_manip
+/datum/craft_recipe/pirs/handmade_manip
 	name = "Perfected Flexi-Pico Manipulator"
 	result = /obj/item/stock_parts/manipulator/handmade
 	steps = list(
@@ -212,7 +212,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_laser
+/datum/craft_recipe/pirs/handmade_laser
 	name = "Handmade Perfected Ultra High Power Micro-Lasers"
 	result = /obj/item/stock_parts/micro_laser/handmade
 	steps = list(
@@ -225,7 +225,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_scanner
+/datum/craft_recipe/pirs/handmade_scanner
 	name = "Overtuned Scanning Module"
 	result = /obj/item/stock_parts/scanning_module/handmade
 	steps = list(
@@ -238,7 +238,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_capacitor
+/datum/craft_recipe/pirs/handmade_capacitor
 	name = "Crafted Experimental Capacitor"
 	result = /obj/item/stock_parts/capacitor/handmade
 	steps = list(
@@ -251,9 +251,9 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_bin_box
+/datum/craft_recipe/pirs/handmade_bin_box
 	name = "Box of Giga Matter Bins"
-	result = /obj/item/storage/box/guild_bin
+	result = /obj/item/storage/box/handmade_bin
 	steps = list(
 		list(/obj/item/stock_parts/matter_bin/super, 4),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
@@ -266,9 +266,9 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/pirs/guild_manip_box
+/datum/craft_recipe/pirs/handmade_manip_box
 	name = "Box of Flexi-Pico Manipulators"
-	result = /obj/item/storage/box/guild_manip
+	result = /obj/item/storage/box/handmade_manip
 	steps = list(
 		list(/obj/item/stock_parts/manipulator/pico, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
@@ -282,9 +282,9 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/pirs/guild_laser_box
+/datum/craft_recipe/pirs/handmade_laser_box
 	name = "Box of Perfected Ultra High Power Micro-Lasers"
-	result = /obj/item/storage/box/guild_laser
+	result = /obj/item/storage/box/handmade_laser
 	steps = list(
 		list(/obj/item/stock_parts/micro_laser/ultra, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
@@ -296,9 +296,9 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/pirs/guild_scanner_box
+/datum/craft_recipe/pirs/handmade_scanner_box
 	name = "Box of Over-Tuned Scanning Modules"
-	result = /obj/item/storage/box/guild_scanner
+	result = /obj/item/storage/box/handmade_scanner
 	steps = list(
 		list(/obj/item/stock_parts/scanning_module/phasic, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
@@ -310,9 +310,9 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/pirs/guild_capacitor_box
+/datum/craft_recipe/pirs/handmade_capacitor_box
 	name = "Box of Crafted Experimental Capacitors"
-	result = /obj/item/storage/box/guild_capacitor
+	result = /obj/item/storage/box/handmade_capacitor
 	steps = list(
 		list(/obj/item/stock_parts/capacitor/super, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),

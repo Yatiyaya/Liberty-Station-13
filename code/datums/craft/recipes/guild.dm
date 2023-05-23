@@ -32,7 +32,7 @@
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 25, "time" = 40)
 	)
-
+/* Currently high end tool loot, and for Skylight
 /datum/craft_recipe/terra/omnitool
 	name = "Munchkin 5000"
 	result = /obj/item/tool/omnitool
@@ -45,7 +45,7 @@
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 25, "time" = 40)
 	)
-
+*/
 /datum/craft_recipe/terra/polytool
 	name = "\"jolly co-operation\" polytool"
 	result = /obj/item/tool/polytool
@@ -267,7 +267,7 @@
 	list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30)
 	)
 
-/datum/craft_recipe/pirs/safety_clamp
+/datum/craft_recipe/terra/safety_clamp
 	name = "Hydraulic clamp overclock: KILL CLAMP"
 	result = /obj/item/mecha_parts/mecha_equipment/tool/safety_clamp
 	steps = list(
@@ -442,60 +442,9 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_SILVER)
 	)
 
-/datum/craft_recipe/terra/guild_capacitor
-	name = "Crafted Super Capacitor"
-	result = /obj/item/stock_parts/capacitor/super
-	steps = list(
-		list(/obj/item/stock_parts/capacitor, 1),
-		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
-		list(QUALITY_BOLT_TURNING, 10, 70),
-		list(QUALITY_WELDING, 35),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
-		list(QUALITY_SAWING, 30)
-	)
-
-/datum/craft_recipe/terra/guild_manip
-	name = "Crafted Pico Manipulator"
-	result = /obj/item/stock_parts/manipulator/pico
-	steps = list(
-		list(/obj/item/stock_parts/manipulator, 1),
-		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
-		list(QUALITY_BOLT_TURNING, 10, 70),
-		list(QUALITY_WELDING, 35),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
-		list(QUALITY_SAWING, 30)
-	)
-
-/datum/craft_recipe/terra/guild_matterbin
-	name = "Crafted Super Matterbin"
-	result = /obj/item/stock_parts/matter_bin/super
-	steps = list(
-		list(/obj/item/stock_parts/matter_bin, 1),
-		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
-		list(QUALITY_BOLT_TURNING, 10, 70),
-		list(QUALITY_WELDING, 35),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
-		list(QUALITY_SAWING, 30)
-	)
-
-/datum/craft_recipe/terra/guild_laser
-	name = "Crafted Ultra High Power Laser"
-	result = /obj/item/stock_parts/micro_laser/ultra
-	steps = list(
-		list(/obj/item/stock_parts/micro_laser, 1),
-		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL),
-		list(QUALITY_BOLT_TURNING, 10, 70),
-		list(QUALITY_WELDING, 35),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
-		list(QUALITY_SAWING, 30)
-	)
 //T4 stock parts, if you want bulk crafts go to PIRS.
 
-/datum/craft_recipe/pirs/guild_bin
+/datum/craft_recipe/terra/handmade_bin
 	name = "Hand Giga Matter Bin"
 	result = /obj/item/stock_parts/matter_bin/handmade
 	steps = list(
@@ -509,7 +458,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_manip
+/datum/craft_recipe/terra/handmade_manip
 	name = "Perfected Flexi-Pico Manipulator"
 	result = /obj/item/stock_parts/manipulator/handmade
 	steps = list(
@@ -524,7 +473,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_laser
+/datum/craft_recipe/terra/handmade_laser
 	name = "Handmade Perfected Ultra High Power Micro-Lasers"
 	result = /obj/item/stock_parts/micro_laser/handmade
 	steps = list(
@@ -537,7 +486,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_scanner
+/datum/craft_recipe/terra/handmade_scanner
 	name = "Overtuned Scanning Module"
 	result = /obj/item/stock_parts/scanning_module/handmade
 	steps = list(
@@ -550,7 +499,7 @@
 		list(QUALITY_SAWING, 30)
 	)
 
-/datum/craft_recipe/pirs/guild_capacitor
+/datum/craft_recipe/terra/handmade_capacitor
 	name = "Crafted Experimental Capacitor"
 	result = /obj/item/stock_parts/capacitor/handmade
 	steps = list(
