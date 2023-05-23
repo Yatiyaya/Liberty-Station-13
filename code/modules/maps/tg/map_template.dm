@@ -181,7 +181,8 @@
 			for(var/atom/movable/AM in T)
 			//	++deleted_atoms
 				if(AM.type in playableMobs)
-					message_admins("\blue Almost annihilated a player!", 1)
+					//message_admins("\blue Almost annihilated a player!", 1)
+					return
 				else qdel(AM)
 	//admin_notice("<span class='danger'>Annihilated [deleted_atoms] objects.</span>", R_DEBUG)
 

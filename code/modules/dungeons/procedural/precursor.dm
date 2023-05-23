@@ -108,7 +108,7 @@ var/precursor_test = FALSE
 
 /obj/machinery/artifact_scanpad/precursor
 	name = "precursor jump pad"
-	desc = "A pad warped in thru bluespace to ensure a more stable portal."
+	desc = "A pad used to create a stable portal."
 	var/starter_room = FALSE
 
 /obj/item/device/precursor/scan_capsule
@@ -128,7 +128,6 @@ var/precursor_test = FALSE
 	var/uses = 1
 	var/obj/procedural/dungenerator/precursor/precursor_controller = null
 	var/last_use = 0
-	var/generated = FALSE
 
 /obj/machinery/precursor_dungeon_device/New()
 	 last_use = world.time
@@ -144,23 +143,40 @@ var/precursor_test = FALSE
 		to_chat(user, SPAN_NOTICE("The [src] is resetting its interface."))
 		return
 	last_use = world.time
-	if(precursor_controller.resetting || precursor_controller.generating)
+
+	//are we generating a dungeon?
+	if(precursor_controller.generating)
 		to_chat(user, SPAN_NOTICE("The [src] is still locating ruins!"))
 		return
-	if(!generated && uses > 0)
+
+	//are we resetting right now?
+	if(precursor_controller.resetting)
+		to_chat(user, SPAN_NOTICE("The [src] is currently resetting from the last connection."))
+		return
+
+	//do we have uses left?
+	if(uses < 1)
+		to_chat(user, SPAN_NOTICE("The machine dosn't have any data to work off of."))
+		return
+
+	//are we not generated yet?
+	if(!precursor_controller.generated)
 		to_chat(user, SPAN_NOTICE("The machine starts to search for a new set of ruins in the ice."))
 		uses -= 1
 		precursor_controller.make_me_dungeon()
-		generated = TRUE
+		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 		icon_state = "psionic_harvester_on"
 		return
-	if(generated)
+
+	//are we generated and ready to reset?
+	if(precursor_controller.generated)
 		for(var/mob/M in GLOB.player_list)
 			if(M.lastarea == /area/precursor)
 				to_chat(user, SPAN_NOTICE("You can't end the expidition right now, Someone is still out there!"))
 				return
 		to_chat(user, SPAN_NOTICE("The machine disconnects its links."))
 		icon_state = "psionic_harvester"
+		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 		precursor_controller.Pgenerate.unlink()
 		precursor_controller.reset()
 
@@ -175,6 +191,7 @@ var/precursor_test = FALSE
 			user.drop_item()
 			qdel(I)
 			return
+
 
 /obj/effect/portal/jtb/precursor
 	name = "ancient portal"
@@ -195,6 +212,7 @@ var/precursor_test = FALSE
 			Pgenerate = new /obj/procedural/jp_DungeonGenerator/precursor(src)
 		if(precursor_test)
 			message_admins("\blue precursor starter room generating now.")
+		generating = TRUE
 		Pgenerate.name = name
 		Pgenerate.setArea(locate(145, 27, z), locate(171, 45, z)) //bottom right corner
 		Pgenerate.setWallType(/turf/simulated/wall/ice)
@@ -278,11 +296,14 @@ var/precursor_test = FALSE
 		Pgenerate.open_up_inside() //done last so we don't open a portal in a still generating dungeon.
 		if(precursor_test)
 			message_admins("\blue Precursor generation finished.")
+		generating = FALSE
+		generated = TRUE
+		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 
 
 /obj/procedural/dungenerator/precursor/proc/reset() //replaces the dungeon with ice walls.
 	set background = 1
-	var/datum/map_template/frozone = new /datum/map_template/precursor_icewall_reset //set frozone to the mapclear we need. Its 8x7.
+	var/datum/map_template/frozone = null
 	var/turf/targetspot = locate(4, 26, src.z)
 	var/verticalstepcounter = 0 //so we can do the 7 iterations it takes each time before stepping right and doing it again.
 	var/horizontalstepcounter = 0 //so we can do the 7 other step cycles
@@ -290,6 +311,8 @@ var/precursor_test = FALSE
 	if(precursor_test)
 		message_admins("\blue precursor dungeon is resetting into ice walls now.")
 	resetting = TRUE
+	if(!frozone)
+		frozone = new /datum/map_template/precursor_icewall_reset //set frozone to the mapclear we need. Its 8x7.
 	while(horizontalstepcounter < 7 || targetspot.x < 172)
 		while(verticalstepcounter < 7 || targetspot.y < 172)
 			spawn()
@@ -303,6 +326,7 @@ var/precursor_test = FALSE
 	if(precursor_test)
 		message_admins("\blue Precursor reset proc has finished regenerating the ice walls.")
 	resetting = FALSE
+	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 
 
 /obj/procedural/dungenerator/precursor/New() //just a object placed on the map to generate it the first time.
