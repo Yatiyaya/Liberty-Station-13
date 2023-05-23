@@ -598,7 +598,7 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 	M.maxHealth -= 5
 	M.health -= 5
 	B.remove_self(20)
-	M.sanity.breakdown(TRUE)
+	M.sanity.breakdown()
 	M.sanity.changeLevel(30)
 	return
 
@@ -625,7 +625,7 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 	M.maxHealth -= 25
 	M.health -= 25
 	B.remove_self(100)
-	M.sanity.breakdown(TRUE)
+	M.sanity.breakdown()
 	sleep(30)
 	explosion(loc, 3, 5, 7, 5)
 	M.sanity.changeLevel(100)
@@ -640,7 +640,7 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 	to_chat(M, "<span class='warning'>The truth of the universe flashes before your eyes at a sickening speed, eldritch knowledge being forcefully vacuumed out of your psyche. The light! It burns! IT BURNS!!!</span>")
 	M.disabilities &= ~NEARSIGHTED | ~BLIND
 	B.remove_self(150)
-	M.sanity.breakdown(TRUE)
+	M.sanity.breakdown()
 	M.sanity.changeLevel(5)
 	for(var/datum/language/L in M.languages)
 		if(L.name == LANGUAGE_CULT)
@@ -1037,7 +1037,7 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 	for(var/obj/structure/reagent_dispensers/watertank/W in oview(1)) // Must be on the spell circle
 		to_chat(M, "<span class='info'>Thunder crackles as a miniature cloud of nothingness manifests itself. Blood begins pouring down, forming an omnious obsidian basin beneath it...</span>")
 		B.remove_self(100) // Basically pouring your blood into a container, insane
-		M.sanity.breakdown(TRUE) // If your blood got sucked and poured into a container you too would freak out
+		M.sanity.breakdown() // If your blood got sucked and poured into a container you too would freak out
 		M.sanity.changeLevel(-50)
 		var/obj/structure/sink/basion/crayon/N = new /obj/structure/sink/basion/crayon
 		N.loc = W.loc
@@ -1053,7 +1053,6 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 		if(istype(O, /obj/item/oddity/common/book_omega/closed))
 			to_chat(M, "<span class='info'>The book floats before you and opens, new information within being written as your eyes pour over it!</span>")
 			B.remove_self(80)
-			M.sanity.breakdown(TRUE) // You are driven insane
 			M.sanity.changeLevel(-30)
 			playsound(loc, 'sound/bureaucracy/bookopen.ogg')
 			new /obj/item/oddity/common/book_omega/opened(O.loc)
@@ -1061,7 +1060,6 @@ obj/item/scroll/attackby(obj/item/I, mob/living/carbon/human/M)
 		if(istype(O, /obj/item/oddity/common/book_unholy/closed))
 			to_chat(M, "<span class='info'>The book floats before you and opens, new information within being written as your eyes pour over it!</span>")
 			B.remove_self(80)
-			M.sanity.breakdown(TRUE) // You are driven insane
 			M.sanity.changeLevel(-30)
 			playsound(loc, 'sound/bureaucracy/bookopen.ogg')
 			new /obj/item/oddity/common/book_unholy/opened(O.loc)

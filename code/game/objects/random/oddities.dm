@@ -76,7 +76,7 @@
 				/obj/item/tool/saw/hyper/doombringer = 1,
 				/obj/item/material/butterfly/frenchman = 1,
 				//Misc - things that are not a "gun" but still good for this
-				/obj/item/oddity/nt/seal = 1,
+				/* /obj/item/oddity/nt/seal = 1, */ // No.
 				/obj/item/soap/bluespase = 0.5))
 
 /obj/random/uplink/low_chance

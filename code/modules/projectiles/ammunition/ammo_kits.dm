@@ -110,6 +110,11 @@
 			"30 points: EMPTY Rifle drum magazine" = list(30, /obj/item/ammo_magazine/rifle_75_drum/empty),
 			"20 points: EMPTY Rifle linked box" = list(20, /obj/item/ammo_magazine/rifle_75_linked_box/empty)
 			),
+		CAL_CLRIFLE = list(
+			"5 points, 10 ammo: 7mm caseless ammo pile" = list(5, /obj/item/ammo_casing/cl7mm/prespawned),
+			"15 points: EMPTY 7mm caseless magazine" = list(15, /obj/item/ammo_magazine/cl7mm/empty),
+			"30 points, 80 ammo: 7mm caseless, ammo packet" = list(30, /obj/item/ammo_magazine/ammobox/cl7mm_small)
+			),
 		CAL_ANTIM = list(
 			"5 points, 3 ammo: Scrap 14.5mm ammo pile" = list(5, /obj/item/ammo_casing/antim/scrap/prespawned),
 			"10 points, 5 ammo: Scrap 14.5mm ammo box" = list(10, /obj/item/ammo_magazine/ammobox/antim/scrap),

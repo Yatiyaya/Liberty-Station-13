@@ -17,7 +17,7 @@
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 20
-	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
+	fire_sound = 'sound/weapons/guns/fire/vintorez.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rifle_load.ogg'
 	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 15)
 	price_tag = 500
@@ -32,4 +32,4 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/clrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/clrifle = 1)

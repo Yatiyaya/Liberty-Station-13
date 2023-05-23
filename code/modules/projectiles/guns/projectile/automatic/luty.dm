@@ -11,6 +11,7 @@
 	caliber = CAL_PISTOL
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/pistol_35
+	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG|MAG_WELL_DRUM
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)

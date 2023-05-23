@@ -33,7 +33,7 @@
 
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/boltgun/gamer/sawn
 	name = "\"Big Game\" obrez boltgun"
@@ -55,4 +55,4 @@
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 4)
 	saw_off = FALSE
 	bolt_training = FALSE //Training didnt cover obrez
-	gun_parts = list(/obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)

@@ -186,7 +186,7 @@
 	name = "NT Sanctifier"
 	build_path = /obj/item/tool_upgrade/augment/sanctifier
 
-// Total cost: 20 Bio silk, 5 steel, 5 plastic, 5 biomatter
+// Total cost: 25 bio silk (stacks and kit itself), 5 biomatter (splints), 5 steel and 5 plastic (syrettes)
 /datum/design/bioprinter/custodian_healthpack
 	name = "Bonfire Medkit"
 	build_path = /obj/item/storage/firstaid/nt

@@ -120,8 +120,15 @@
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
 
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+		itemstring += "_full"
+
 	if(!folded)
 		iconstring += "_stock"
+
+	if(wielded)
+		itemstring += "_doble"
 
 	icon_state = iconstring
 	set_item_state(itemstring)

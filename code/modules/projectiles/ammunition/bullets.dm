@@ -279,13 +279,16 @@
 	desc = "A 7.62mm laser casing."
 	projectile_type = /obj/item/projectile/beam/weak/rifle_75
 
-///10mm caseless
+//7mm caseless
 /obj/item/ammo_casing/cl7mm
 	desc = "A 7mm caseless cartidge."
 	caliber = CAL_CLRIFLE
 	icon_state = "caseless"
 	projectile_type = /obj/item/projectile/bullet/cl7mm
 	is_caseless = TRUE
+
+/obj/item/ammo_casing/cl7mm/prespawned
+	amount = 10
 
 //Flare, .22
 /obj/item/ammo_casing/flare

@@ -56,7 +56,8 @@
 /area/mine/hallway)
 "al" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "13,15"
+	icon_state = "13,15";
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "am" = (
@@ -95,18 +96,21 @@
 /area/turbolift/Research/underground)
 "av" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,18"
+	icon_state = "7,18";
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "aw" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,6";
-	opacity = 0
+	opacity = 0;
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "ax" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,15"
+	icon_state = "10,15";
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "ay" = (
@@ -126,7 +130,8 @@
 /area/mine/hallway)
 "aA" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,10"
+	icon_state = "7,10";
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "aB" = (
@@ -146,12 +151,14 @@
 /area/mine/prep)
 "aF" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,18"
+	icon_state = "10,18";
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "aG" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "13,15"
+	icon_state = "13,15";
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "aH" = (
@@ -1222,7 +1229,8 @@
 /area/mine/lockers)
 "dL" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,18"
+	icon_state = "7,18";
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "dM" = (
@@ -1380,7 +1388,8 @@
 "em" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,6";
-	opacity = 0
+	opacity = 0;
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "en" = (
@@ -2270,7 +2279,8 @@
 /area/mine/hallway)
 "gz" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,15"
+	icon_state = "10,15";
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "gA" = (
@@ -2488,7 +2498,8 @@
 /area/mine/hallway)
 "hd" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,10"
+	icon_state = "7,10";
+	name = "Elevator"
 	},
 /area/liberty/rnd/outpostgeneral)
 "he" = (
@@ -2702,7 +2713,8 @@
 /area/mine/power)
 "hJ" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,18"
+	icon_state = "10,18";
+	name = "Elevator"
 	},
 /area/mine/hallway)
 "hK" = (
