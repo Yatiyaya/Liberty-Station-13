@@ -17934,11 +17934,13 @@
 "eCw" = (
 /obj/structure/sign/security/chief{
 	pixel_x = 7;
-	pixel_y = -32
+	pixel_y = -32;
+	name = "DEPUTY CHIEF OFFICE"
 	},
 /obj/structure/sign/security/chief/right{
 	pixel_x = 39;
-	pixel_y = -32
+	pixel_y = -32;
+	name = "DEPUTY CHIEF OFFICE"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/security{
@@ -68657,8 +68659,8 @@
 "rRv" = (
 /obj/machinery/door/airlock/command{
 	id_tag = "wobolt1";
-	name = "Warrant Officer";
-	req_access = list(58,61)
+	name = "Deputy Chief";
+	req_access = list(58)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
