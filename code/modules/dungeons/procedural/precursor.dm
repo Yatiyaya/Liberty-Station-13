@@ -326,6 +326,7 @@ var/precursor_test = FALSE
 	if(precursor_test)
 		message_admins("\blue Precursor reset proc has finished regenerating the ice walls.")
 	resetting = FALSE
+	generated = FALSE
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 
 
