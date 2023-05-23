@@ -222,6 +222,7 @@
 	heated_reagents = list("water" = 40)
 	matter = list(MATERIAL_BIOMATTER = 6)
 	can_warm = TRUE
+	volume = 90 //Little extra space for the nutriments
 
 // Keeping this just in case, fallback
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/feed_sound(var/mob/user)
