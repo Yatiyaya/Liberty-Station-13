@@ -448,6 +448,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 	if(!M.client && !M.teleop) //ghost, get in the body
 		for(var/mob/observer/ghost/ghost in GLOB.player_list)
 			if(ghost.mind == M.mind)
+				sound_to(ghost, 'sound/machines/defib_SafetyOn.ogg')
 				to_chat(ghost, "<b><font color = #330033><font size = 3>Someone is attempting to resuscitate you. Re-enter your body if you want to be revived!</b> (Verbs -> Ghost -> Re-enter corpse)</font></font>")
 
 	if(!do_after(user, 60, M, 0)) //start a lengthy do_after

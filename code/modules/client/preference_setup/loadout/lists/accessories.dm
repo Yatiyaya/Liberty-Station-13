@@ -10,6 +10,9 @@
 	path = /obj/item/clothing/accessory/armband
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/accessory/civexo
+	display_name = "medical support exoframe"
+	path = /obj/item/clothing/accessory/civexo
 /datum/gear/accessory/sash
 	display_name = "colorable sash"
 	path = /obj/item/clothing/accessory/sash/color

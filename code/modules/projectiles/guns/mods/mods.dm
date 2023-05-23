@@ -75,7 +75,7 @@
 //Decreases fire delay. Acquired through loot spawns or guild crafting
 /obj/item/gun_upgrade/barrel/forged
 	name = "Forged barrel"
-	desc = "Despite advancements in 3D printing, a properly forged plasteel barrel can still outperform anything that comes from an autolathe."
+	desc = "Despite advancements in 3D printing, a properly reinforced plasteel barrel can still outperform anything that comes from an autolathe."
 	icon_state = "Forged_barrel"
 	price_tag = 120
 
@@ -284,7 +284,7 @@
 //Adds +3 to the internal magazine of a weapon. Acquired through loot spawns.
 /obj/item/gun_upgrade/mechanism/overshooter
 	name = "\"Overshooter\" internal magazine kit"
-	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. An Terra-Therma Union favorite for revolvers and shotguns."
+	desc = "A method of overloading a weapon's internal magazine, fitting more ammunition within the weapon. A Rancher's favorite for revolvers and shotguns."
 	icon_state = "Overshooter"
 	price_tag = 230
 
@@ -682,8 +682,8 @@
 //	bad_type = /obj/item/gun_upgrade/scope
 
 /obj/item/gun_upgrade/scope/watchman
-	name = "Terra-Therma Union \"Watchman\" scope"
-	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Terra-Therma Union are known across the entire Solarian Federation for the quality they have and this one is no different."
+	name = "PIRS \"All Seeing\" scope"
+	desc = "In an age where lathe-printed parts are too common; these scopes stand out an oddity. From the PIRS Weapons Division; these are made with reinforced glass, with a plasteel frame - each one manually polished and made by 'hand', undoubtedly by lines of fabrication synthetics."
 	icon_state = "Watchman"
 	matter = list(MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 1)
 	price_tag = 40

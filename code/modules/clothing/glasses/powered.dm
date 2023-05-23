@@ -96,17 +96,18 @@
 	screenOverlay = global_hud.nvg
 
 /obj/item/clothing/glasses/powered/night/guild
-	name = "optimized night vision goggles"
-	desc = "Converted from boring mesons, this refined Guild design sports the benefits form the mesons power-saving making these last 20% longer than other NV goggles on the market!"
+	name = "optimized meson-NVG goggles"
+	desc = "Enhanced from boring mesons, this refined Union design sports the benefits from the mesons power-saving making these last ~40-60% longer than other NV goggles on the market!"
 	icon_state = "guild" // New sprites by Dromkii aka Ezoken#5894 !
 	item_state = "guild"
 	off_state = "deguild"
 	darkness_view = 7
+	vision_flags = SEE_TURFS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	origin_tech = list(TECH_MAGNET = 3)
 	price_tag = 350
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 2, MATERIAL_URANIUM = 1)
-	tick_cost = 0.33 // 20% more battery life so you have a reason to go to the guild and get these
+	tick_cost = 0.2 // ~40% more battery life so you have a reason to go to the guild and get these
 
 
 /obj/item/clothing/glasses/powered/night/guild/crafted
@@ -172,6 +173,69 @@
 				icon_state = "demesonpatch_left"
 			item_state = icon_state
 			to_chat(usr, "You flip the eyepatch to cover your left eye.")
+		update_wear_icon()
+		usr.update_action_buttons()
+
+/obj/item/clothing/glasses/powered/meson/unionscouter
+	name = "union scouter"
+	desc = "A slim fit lightweight device that displays simple material data in an optical matrix over one eye."
+	icon_state = "unionscouter"
+	item_state = "unionscouter"
+	off_state = "deunionscouter"
+	var/righteye = TRUE // For flipping the scouter
+
+/obj/item/clothing/glasses/powered/meson/unionscouter/toggle(mob/user, new_state = 0)
+	if(new_state)
+		if(!cell || !cell.check_charge(tick_cost) && user)
+			to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
+			return
+		if(righteye)
+			icon_state = initial(icon_state)
+		else
+			icon_state = "[initial(icon_state)]_left"
+		active = TRUE
+		flash_protection = initial(flash_protection)
+		tint = initial(tint)
+		if(user)
+			if(activation_sound)
+				user << activation_sound
+			to_chat(user, SPAN_NOTICE("[src]'s optical matrix activates."))
+	else
+		active = FALSE
+		if(righteye)
+			icon_state = off_state
+		else
+			icon_state = "[off_state]_left"
+		flash_protection = FLASH_PROTECTION_NONE
+		tint = TINT_NONE
+		if(user)
+			to_chat(user, SPAN_NOTICE("[src]'s optical matrix shuts down."))
+	if(user)
+		user.update_inv_glasses()
+		user.update_action_buttons()
+
+/obj/item/clothing/glasses/powered/meson/unionscouter/verb/switcheye()
+	set name = "Change scouter side"
+	set category = "Flip Scouter"
+	set src in usr
+
+	if(usr.canmove && !usr.stat && !usr.restrained())
+		if(!righteye)
+			righteye = !righteye
+			if(active)
+				icon_state = "unionscouter"
+			else
+				icon_state = "deunionscouter"
+			item_state = icon_state
+			to_chat(usr, "You flip the scouter to cover your right eye.")
+		else
+			righteye = !righteye
+			if(active)
+				icon_state = "unionscouter_left"
+			else
+				icon_state = "deunionscouter_left"
+			item_state = icon_state
+			to_chat(usr, "You flip the scouter to cover your left eye.")
 		update_wear_icon()
 		usr.update_action_buttons()
 

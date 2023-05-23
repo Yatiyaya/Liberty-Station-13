@@ -503,3 +503,20 @@
 				/obj/item/clothing/head/os_cap = 4,
 				/obj/item/clothing/head/helmet/space/os = 8,
 				/obj/item/clothing/suit/space/os = 8))
+
+/obj/random/cloth/bells
+	name = "random bell collar"
+	desc = "This is a random bell collar."
+	icon_state = "armor-grey"
+
+/obj/random/cloth/bells/item_to_spawn()
+	return pickweight(list(
+				/obj/item/clothing/accessory/choker/gold_bell_small_goth = 2,
+				/obj/item/clothing/accessory/choker/gold_bell_goth = 1,
+				/obj/item/clothing/accessory/choker/silver_bell_goth = 2,
+				/obj/item/clothing/accessory/choker/silver_bell_small_goth = 1,
+				/obj/item/clothing/accessory/choker/gold_bell = 2,
+				/obj/item/clothing/accessory/choker/gold_bell_small = 3,
+				/obj/item/clothing/accessory/choker/silver_bell = 2,
+				/obj/item/clothing/accessory/choker/silver_bell_small = 3
+				))

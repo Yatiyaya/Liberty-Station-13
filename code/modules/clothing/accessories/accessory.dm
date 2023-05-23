@@ -1043,6 +1043,11 @@
 	icon_state = "militarypilot"
 	item_state = "militarypilot"
 
+/obj/item/clothing/accessory/civexo
+	name = "medical support exoframe" //sprites by Albert7076
+	desc = "A lightweight support exoframe given to colonists unable to move in normal gravity, or to those who cannot move limbs without outside assistance. Cheaply designed, this frame and its design is provided for free to those who need it."
+	icon_state = "civ_exos_mob"
+	item_state = "civ_exos_mob"
 /* Kneepads */
 
 /obj/item/clothing/accessory/kneepads

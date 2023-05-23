@@ -102,7 +102,8 @@
 			/obj/item/reagent_containers/food/drinks/cans/monster_jungel,
 			/obj/item/reagent_containers/food/drinks/cans/monster_church,
 			/obj/item/reagent_containers/food/drinks/cans/monster_red,
-			/obj/item/reagent_containers/food/drinks/cans/monster_blue
+			/obj/item/reagent_containers/food/drinks/cans/monster_blue,
+			/obj/item/reagent_containers/food/drinks/cans/energy
 		)
 	)
 
