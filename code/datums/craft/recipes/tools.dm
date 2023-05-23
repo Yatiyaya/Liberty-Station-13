@@ -162,7 +162,7 @@
 		list(QUALITY_WIRE_CUTTING, 10, 20),
 		list(/obj/item/stack/rods, 2, 30)
 	)
-	
+
 /datum/craft_recipe/tool/improv_charger
 	name = "improvised crank charger"
 	result = /obj/item/device/manual_charger/improv
@@ -276,4 +276,12 @@
 			list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
 			list(QUALITY_WIRE_CUTTING, 10, 50),
 			list(/obj/item/stack/wax, 4, 4)
+	)
+//A rubber mesh to defend the sensitive bits
+/datum/craft_recipe/pirs/rubbermesh
+	name = "Rubber Mesh"
+	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 30),
+		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
 	)
