@@ -283,6 +283,28 @@
 	required_reagents = list("uranium" = 0.1, "espresso" = 3)
 	result_amount = 3
 
+/* Instant Coffee Reaction */
+
+/datum/chemical_reaction/insta_coffee_water
+	result = "coffee"
+	required_reagents = list("insta_coffee_powder" = 1, "water" = 1)
+	result_amount = 1
+
+/datum/chemical_reaction/insta_coffee_milk
+	result = "cafe_latte"
+	required_reagents = list("insta_coffee_powder" = 1, "milk" = 1)
+	result_amount = 1
+
+/datum/chemical_reaction/insta_coffee_soymilk
+	result = "soy_latte"
+	required_reagents = list("insta_coffee_powder" = 1, "soymilk" = 1)
+	result_amount = 1
+
+/datum/chemical_reaction/insta_coffee_ice
+	result = "icecoffee"
+	required_reagents = list("insta_coffee_powder" = 1, "ice" = 1)
+	result_amount = 1
+
 /* Alcohol */
 
 /datum/chemical_reaction/goldschlager
