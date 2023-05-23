@@ -88,15 +88,12 @@
 	},
 /obj/random/pack/tech_loot,
 /obj/random/psi_catalyst,
-/obj/item/device/psionic_catalyst/dull{
-	name = "teleporter catalyst";
-	desc = "A unique catalyst created to provide enough power to a teleporter for just one more portal, it humms with endless possibilities and endless horrors."
-	},
 /obj/structure/invislightsmall{
 	light_color = "#A666B1";
 	light_power = 2;
 	light_range = 9
 	},
+/obj/item/device/precursor/scan_capsule,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "E" = (

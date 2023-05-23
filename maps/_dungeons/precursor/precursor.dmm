@@ -3,6 +3,10 @@
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/precursor/mini_base)
+"aD" = (
+/obj/structure/anomaly_container,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor/mini_base)
 "aH" = (
 /obj/structure/table/woodentable,
 /obj/item/deck/cards,
@@ -148,6 +152,13 @@
 "qM" = (
 /turf/simulated/floor/wood/wild1,
 /area/precursor/mini_base)
+"re" = (
+/obj/structure/table/bench/wooden,
+/obj/item/clothing/head/helmet/space/anomaly,
+/obj/item/clothing/head/helmet/space/anomaly,
+/obj/item/clothing/head/helmet/space/anomaly,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor/mini_base)
 "rp" = (
 /obj/machinery/artifact_scanpad/precursor,
 /turf/simulated/floor/rock/manmade/ruin1,
@@ -200,6 +211,13 @@
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor/mini_base)
+"xA" = (
+/obj/structure/table/bench/wooden,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor/mini_base)
 "xI" = (
 /obj/structure/reagent_dispensers/fueltank/huge/derelict,
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt,
@@ -251,7 +269,7 @@
 /area/precursor/mini_base)
 "Ed" = (
 /obj/structure/table/reinforced,
-/obj/item/device/psionic_catalyst/dull,
+/obj/item/device/precursor/scan_capsule,
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor/mini_base)
 "Eq" = (
@@ -359,6 +377,13 @@
 /area/precursor/mini_base)
 "WS" = (
 /turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor/mini_base)
+"XJ" = (
+/obj/structure/table/bench/wooden,
+/obj/item/clothing/suit/space/anomaly,
+/obj/item/clothing/suit/space/anomaly,
+/obj/item/clothing/suit/space/anomaly,
+/turf/simulated/floor/tiled/steel/gray_perforated,
 /area/precursor/mini_base)
 "Yi" = (
 /mob/living/simple_animal/snail,
@@ -1258,7 +1283,7 @@ zj
 kv
 kv
 mD
-YO
+xA
 zj
 UM
 nQ
@@ -1435,7 +1460,7 @@ jf
 mD
 MY
 MY
-YO
+XJ
 zj
 UM
 nQ
@@ -1612,7 +1637,7 @@ jf
 tu
 MY
 MY
-YO
+re
 zj
 UM
 nQ
@@ -2851,7 +2876,7 @@ UM
 mD
 mD
 mD
-mD
+aD
 zj
 UM
 nQ
@@ -3028,7 +3053,7 @@ DF
 mD
 MY
 MY
-mD
+aD
 zj
 UM
 nQ
@@ -3205,7 +3230,7 @@ DF
 tu
 MY
 MY
-mD
+aD
 zj
 UM
 nQ
@@ -3382,7 +3407,7 @@ zj
 mD
 MY
 MY
-mD
+aD
 zj
 UM
 nQ
@@ -3559,7 +3584,7 @@ zj
 mD
 mD
 mD
-mD
+aD
 zj
 UM
 nQ

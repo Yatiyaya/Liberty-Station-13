@@ -111,11 +111,19 @@ var/precursor_test = FALSE
 	desc = "A pad warped in thru bluespace to ensure a more stable portal."
 	var/starter_room = FALSE
 
+/obj/item/device/precursor/scan_capsule
+	name = "P.S.D. positioning data"
+	desc = "A cube containing the data for another section of ice sheet."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "psi_catalyst"
+	item_state = "psi_catalyst"
+
 /obj/machinery/precursor_dungeon_device
 	name = "precursor systems device"
 	desc = "A advanced machine capable of finding ruins by vibrations in the ice sheets."
-	icon = 'icons/obj/virology.dmi'
-	icon_state = "isolator"
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "psionic_harvester"
+	density = 1
 
 	var/uses = 1
 	var/obj/procedural/dungenerator/precursor/precursor_controller = null
@@ -144,6 +152,7 @@ var/precursor_test = FALSE
 		uses -= 1
 		precursor_controller.make_me_dungeon()
 		generated = TRUE
+		icon_state = "psionic_harvester_on"
 		return
 	if(generated)
 		for(var/mob/M in GLOB.player_list)
@@ -151,17 +160,20 @@ var/precursor_test = FALSE
 				to_chat(user, SPAN_NOTICE("You can't end the expidition right now, Someone is still out there!"))
 				return
 		to_chat(user, SPAN_NOTICE("The machine disconnects its links."))
+		icon_state = "psionic_harvester"
 		precursor_controller.Pgenerate.unlink()
 		precursor_controller.reset()
 
 /obj/machinery/precursor_dungeon_device/attackby(obj/item/I, mob/user)
-	if(istype(I,/obj/item/device/psionic_catalyst/dull))
+	if(istype(I,/obj/item/device/precursor/scan_capsule))
 		if(uses > 0)
 			to_chat(user, SPAN_NOTICE("The machine is already loaded and ready to go."))
 			return
 		else
 			to_chat(user, SPAN_NOTICE("You load the device into the [src]."))
 			uses += 1
+			user.drop_item()
+			qdel(I)
 			return
 
 /obj/effect/portal/jtb/precursor
