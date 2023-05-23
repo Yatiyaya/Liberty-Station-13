@@ -409,19 +409,6 @@
 		/datum/design/autolathe/ammo/smg_lethal = 2,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/umbani
-	disk_name = "No-Owner - 10mm Umbani SMG"
-	icon_state = "freeworlds"
-
-	license = 12
-	designs = list(
-		/datum/design/autolathe/gun/umbani = 3,
-		/datum/design/autolathe/ammo/smg_practice = 0,
-		/datum/design/autolathe/ammo/smg_rubber,
-		/datum/design/autolathe/ammo/smg,
-		/datum/design/autolathe/ammo/smg_lethal = 2,
-	)
-
 // 6.5mm carbines
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/federalist
