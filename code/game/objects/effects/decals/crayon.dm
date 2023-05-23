@@ -250,20 +250,27 @@
 /obj/effect/decal/cleanable/crayon/proc/body_checks(mob/living/carbon/human/M, blind = FALSE)
 	var/pass = FALSE
 
+	//log_debug(" [M.name] is.")
+
+
 	//If we need to be blind, we dont want to check nearsighted.
 	if(M.disabilities&NEARSIGHTED && !blind)
+		//log_debug(" [M.name] checking for nearsighted and not blind.")
 		pass = TRUE
 
 	//We need to be blind and REQUIRE being blind.
 	if(M.disabilities&BLIND && blind)
+		//log_debug(" [M.name] checking for blind sighted and  blind.")
 		pass = TRUE
 
 	//These two races do not get the full consquences of action, weather it be blood or sanity, making them invailded.
-	if(M.species?.reagent_tag != IS_SYNTHETIC || M.species?.reagent_tag != IS_SLIME)
+	if(M.species?.reagent_tag == IS_SYNTHETIC || M.species?.reagent_tag == IS_SLIME)
+		//log_debug(" [M.name] checking synths and slimes.")
 		pass = FALSE
 
 	//We need materal to transmutate, even if it dosnt call for it, we still check for it.
 	if(M.get_blood_volume() < 50)
+		//log_debug(" [M.name] checking blood amount.")
 		pass = FALSE
 
 	if(M.maxHealth <= 30)
