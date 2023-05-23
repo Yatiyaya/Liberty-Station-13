@@ -266,7 +266,7 @@
 							/datum/design/research/item/weapon/toolmod/plating,
 							/datum/design/research/item/weapon/toolmod/guard,
 							/datum/design/research/item/weapon/toolmod/plasmablock,
-							/datum/design/research/item/weapon/toolmod/rubbermesh
+							//datum/design/research/item/weapon/toolmod/rubbermesh
 							)
 
 /datum/technology/productivity_toolmods
