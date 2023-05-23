@@ -278,7 +278,7 @@
 			list(/obj/item/stack/wax, 4, 4)
 	)
 //A rubber mesh to defend the sensitive bits
-/datum/craft_recipe/pirs/rubbermesh
+/datum/craft_recipe/tool/rubbermesh
 	name = "Rubber Mesh"
 	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
 	steps = list(
