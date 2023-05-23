@@ -742,54 +742,54 @@
 /obj/item/storage/box/data_disk/basic/empty/populate_contents()
 	return
 
-// Guild boxes, exclusively used to mass craft guild parts.
-/obj/item/storage/box/guild_manip
+// handmade boxes, exclusively used to mass craft handmade parts.
+/obj/item/storage/box/handmade_manip
 	name = "box of forged manipulators"
-	desc = "A box containing five forged manipulators, the best that Liberty can produce."
+	desc = "A box containing forged manipulators, the best that Liberty can produce."
 	icon_state = "box_of_doom"
 	illustration = "guild"
 
-/obj/item/storage/box/guild_manip/populate_contents()
+/obj/item/storage/box/handmade_manip/populate_contents()
 	for(var/i in 1 to 4)
 		new /obj/item/stock_parts/manipulator/handmade(src)
 
-/obj/item/storage/box/guild_bin
+/obj/item/storage/box/handmade_bin
 	name = "box of cast matter bins"
-	desc = "A box containing five cast matter bins, the best that Liberty can produce."
+	desc = "A box containing cast matter bins, the best that Liberty can produce."
 	icon_state = "box_of_doom"
 	illustration = "guild"
 
-/obj/item/storage/box/guild_bin/populate_contents()
+/obj/item/storage/box/handmade_bin/populate_contents()
 	for(var/i in 1 to 4)
 		new /obj/item/stock_parts/matter_bin/handmade(src)
 
-/obj/item/storage/box/guild_laser
+/obj/item/storage/box/handmade_laser
 	name = "box of perfected micro-lasers"
-	desc = "A box containing five perfected micro-lasers, the best that Liberty can produce."
+	desc = "A box containing perfected micro-lasers, the best that Liberty can produce."
 	icon_state = "box_of_doom"
 	illustration = "guild"
 
-/obj/item/storage/box/guild_laser/populate_contents()
+/obj/item/storage/box/handmade_laser/populate_contents()
 	for(var/i in 1 to 4)
 		new /obj/item/stock_parts/micro_laser/handmade(src)
 
-/obj/item/storage/box/guild_scanner
+/obj/item/storage/box/handmade_scanner
 	name = "box of perfected scanning modules"
-	desc = "A box containing five perfected scanning modules, the best that Liberty can produce."
+	desc = "A box containing perfected scanning modules, the best that Liberty can produce."
 	icon_state = "box_of_doom"
 	illustration = "guild"
 
-/obj/item/storage/box/guild_scanner/populate_contents()
+/obj/item/storage/box/handmade_scanner/populate_contents()
 	for(var/i in 1 to 4)
 		new /obj/item/stock_parts/scanning_module/handmade(src)
 
-/obj/item/storage/box/guild_capacitor
+/obj/item/storage/box/handmade_capacitor
 	name = "box of ultra capacitors"
-	desc = "A box containing five ultra capacitors, the best that Liberty can produce."
+	desc = "A box containing ultra capacitors, the best that Liberty can produce."
 	icon_state = "box_of_doom"
 	illustration = "guild"
 
-/obj/item/storage/box/guild_capacitor/populate_contents()
+/obj/item/storage/box/handmade_capacitor/populate_contents()
 	for(var/i in 1 to 4)
 		new /obj/item/stock_parts/capacitor/handmade(src)
 

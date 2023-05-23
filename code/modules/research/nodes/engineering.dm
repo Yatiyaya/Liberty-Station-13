@@ -265,7 +265,7 @@
 							/datum/design/research/item/weapon/toolmod/heatsink,
 							/datum/design/research/item/weapon/toolmod/plating,
 							/datum/design/research/item/weapon/toolmod/guard,
-							//datum/design/research/item/weapon/toolmod/plasmablock,
+							/datum/design/research/item/weapon/toolmod/plasmablock,
 							//datum/design/research/item/weapon/toolmod/rubbermesh
 							)
 
@@ -290,8 +290,8 @@
 							/datum/design/research/item/weapon/toolmod/oxyjet,
 							/datum/design/research/item/weapon/toolmod/motor,
 							/datum/design/research/item/weapon/toolmod/antistaining,
-							//datum/design/research/item/weapon/toolmod/booster,
-							//datum/design/research/item/weapon/toolmod/injector
+							/datum/design/research/item/weapon/toolmod/booster,
+							/datum/design/research/item/weapon/toolmod/injector
 							)
 
 /datum/technology/refinement_toolmods
