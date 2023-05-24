@@ -383,7 +383,7 @@
 	M.maxHealth -= 25
 	M.health -= 25
 	B.remove_self(100)
-	M.sanity.breakdown()
+	M.sanity.breakdown(TRUE)
 	sleep(30)
 	explosion(loc, 3, 5, 7, 5)
 	M.sanity.changeLevel(100)
