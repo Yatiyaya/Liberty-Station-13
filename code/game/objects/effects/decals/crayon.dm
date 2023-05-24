@@ -988,6 +988,44 @@ obj/item/scroll/proc/example_spell(mob/living/carbon/human/M) //testing spell
 		M.put_in_inactive_hand(needles)
 	ScrollBurn()
 
+// Gaia: Ever Mob seeable via the scroll when burned must past a language checks or be weaken 5:3
+/obj/item/scroll/proc/gaia_spell(mob/living/carbon/human/M)
+	var/datum/reagent/organic/blood/B = M.get_blood()
+	bluespace_entropy(5, get_turf(src))
+	B.remove_self(30)
+	var/gaia_pulls = 5
+	for(var/mob/T in oview(7))
+		for(var/datum/language/L in T.languages)
+			if(L.name == LANGUAGE_CULT)
+				gaia_pulls -= 3
+			if(L.name == LANGUAGE_OCCULT)
+				gaia_pulls -= 2
+		if(gaia_pulls)
+			T.Weaken(gaia_pulls)
+
+	if(M.get_inactive_hand() == src)
+		M.drop_from_inventory(src)
+	ScrollBurn()
+
+/obj/item/scroll/proc/eta_spell(mob/living/carbon/human/M)
+	var/datum/reagent/organic/blood/B = M.get_blood()
+	bluespace_entropy(5, get_turf(src))
+	B.remove_self(30)
+	var/iron_mind = FALSE
+	var/fling_back_direction = 1
+	for(var/mob/T in oview(7))
+		for(var/datum/language/L in T.languages)
+			if(L.name == LANGUAGE_CULT || L.name == LANGUAGE_OCCULT)
+				iron_mind = TRUE
+		if(!iron_mind)
+			fling_back_direction = reverse_dir[T.dir]
+			T.throw_at(get_edge_target_turf(src,fling_back_direction),rand(3,6),30)
+
+	if(M.get_inactive_hand() == src)
+		M.drop_from_inventory(src)
+	ScrollBurn()
+
+
 /****************************/
 /* CRAYON ITEMS AND DOODADS */
 /****************************/
@@ -1244,6 +1282,16 @@ obj/item/scroll/sealed
 		if(message == "Mightier.")
 			to_chat(M, "<span class='warning'>You ignite the scroll. It burns to ash with a world twisting aura.</span>")
 			mightier_spell(M)
+			return
+
+		if(message == "Gaia.")
+			to_chat(M, "<span class='warning'>You ignite the scroll. It burns the ashes sharply move downwards as the world's twisting aura straightens.</span>")
+			gaia_spell(M)
+			return
+
+		if(message == "Eta.")
+			to_chat(M, "<span class='warning'>You ignite the scroll. It burns to ash flying every direction away with a world pushing force.</span>")
+			eta_spell(M)
 			return
 
 // If we don't cast anything then we end up doing a normal burn.
