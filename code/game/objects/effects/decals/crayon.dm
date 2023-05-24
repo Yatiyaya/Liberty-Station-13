@@ -358,7 +358,7 @@
 	M.maxHealth -= 5
 	M.health -= 5
 	B.remove_self(20)
-	M.sanity.breakdown(FALSE)
+	M.sanity.breakdown(TRUE)
 	M.sanity.changeLevel(30)
 	return
 
