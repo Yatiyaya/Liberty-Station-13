@@ -151,10 +151,6 @@
 /obj/structure/low_wall/rusted,
 /turf/simulated/floor/snow,
 /area/precursor)
-"X" = (
-/obj/structure/low_wall/rusted,
-/turf/space,
-/area/precursor)
 "Y" = (
 /obj/effect/window_lwall_spawn/smartspawn,
 /obj/structure/low_wall/rusted,
@@ -192,7 +188,7 @@ a
 "}
 (3,1,1) = {"
 e
-X
+T
 e
 l
 Y
