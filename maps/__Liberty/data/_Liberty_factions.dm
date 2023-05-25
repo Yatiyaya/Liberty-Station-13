@@ -91,7 +91,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/church
-	name = "Bonfire Custodians"
+	name = "Bonfire Custodians - Liekki Korhonen"
 
 	fax_alert = "CHURCH FAX"
 	fax_response = "Church Decree"
