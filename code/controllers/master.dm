@@ -199,7 +199,8 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	if(delay)
 		sleep(delay)
-
+	if(tgs_prime)
+		world.TgsInitializationComplete()
 	if(init_sss)
 		init_subtypes(/datum/controller/subsystem, subsystems)
 
@@ -225,8 +226,6 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	if (!current_runlevel)
 		SetRunLevel(1)
-
-	world.TgsInitializationComplete()
 
 	// Sort subsystems by display setting for easy access.
 	sortTim(subsystems, /proc/cmp_subsystem_display)

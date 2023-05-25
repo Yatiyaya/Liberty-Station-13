@@ -82,6 +82,8 @@
 #include "code\__DEFINES\subsystems-priority.dm"
 #include "code\__DEFINES\subsystems.dm"
 #include "code\__DEFINES\targeting.dm"
+#include "code\__DEFINES\tgs.config.dm"
+#include "code\__DEFINES\tgs.dm"
 #include "code\__DEFINES\tgui.dm"
 #include "code\__DEFINES\tick.dm"
 #include "code\__DEFINES\time.dm"
@@ -3243,6 +3245,7 @@
 #include "code\modules\telesci\telepads.dm"
 #include "code\modules\telesci\teleporter_blocker.dm"
 #include "code\modules\telesci\telesci_computer.dm"
+#include "code\modules\tgs\includes.dm"
 #include "code\modules\tgui\external.dm"
 #include "code\modules\tgui\states.dm"
 #include "code\modules\tgui\status_composers.dm"
@@ -3393,6 +3396,4 @@
 #include "modular_liberty\task_master\human_helper.dm"
 #include "modular_liberty\task_master\task_helpers.dm"
 #include "modular_liberty\task_master\tasks.dm"
-#include "tgs_dmapi\tgs.dm"
-#include "tgs_dmapi\tgs\includes.dm"
 // END_INCLUDE
