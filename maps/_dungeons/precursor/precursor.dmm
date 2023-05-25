@@ -261,6 +261,7 @@
 /area/precursor/mini_base)
 "AG" = (
 /obj/map_data/precursor,
+/obj/marker/precursor,
 /turf/unsimulated/mineral,
 /area/precursor)
 "BH" = (

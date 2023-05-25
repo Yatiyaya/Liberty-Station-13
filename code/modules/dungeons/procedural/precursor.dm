@@ -118,6 +118,14 @@ var/precursor_test = FALSE
 	icon_state = "psi_catalyst"
 	item_state = "psi_catalyst"
 
+/obj/effect/portal/jtb/precursor
+	name = "ancient portal"
+	desc = "A portal to somewhere ancient."
+
+/obj/marker/precursor
+	name = "precursor marker"
+	desc = "helps us find the precursor z level code wise."
+
 /obj/machinery/precursor_dungeon_device
 	name = "precursor systems device"
 	desc = "A advanced machine capable of finding ruins by vibrations in the ice sheets."
@@ -128,6 +136,7 @@ var/precursor_test = FALSE
 	var/uses = 1
 	var/obj/procedural/dungenerator/precursor/precursor_controller = null
 	var/last_use = 0
+	var/obj/marker/precursor/target_level = null
 
 /obj/machinery/precursor_dungeon_device/New()
 	 last_use = world.time
@@ -139,6 +148,12 @@ var/precursor_test = FALSE
 		if(precursor_test)
 			message_admins("\blue new precursor generator created.")
 		precursor_controller = new /obj/procedural/dungenerator/precursor(src.loc)
+	if(!target_level)
+		for(var/obj/marker/precursor/target_me in world)
+			target_level = target_me
+			to_chat(user, SPAN_NOTICE("The [src] starts its initial boot up."))
+			playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
+			return
 	if(world.time < last_use + 5)
 		to_chat(user, SPAN_NOTICE("The [src] is resetting its interface."))
 		return
@@ -160,16 +175,16 @@ var/precursor_test = FALSE
 		return
 
 	//are we not generated yet?
-	if(!precursor_controller.generated)
+	if(!precursor_controller.generated && target_level)
 		to_chat(user, SPAN_NOTICE("The machine starts to search for a new set of ruins in the ice."))
 		uses -= 1
-		precursor_controller.make_me_dungeon()
+		precursor_controller.make_me_dungeon(target_level)
 		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 		icon_state = "psionic_harvester_on"
 		return
 
 	//are we generated and ready to reset?
-	if(precursor_controller.generated)
+	if(precursor_controller.generated && target_level)
 		for(var/mob/M in GLOB.player_list)
 			if(M.lastarea == /area/precursor)
 				to_chat(user, SPAN_NOTICE("You can't end the expidition right now, Someone is still out there!"))
@@ -178,7 +193,7 @@ var/precursor_test = FALSE
 		icon_state = "psionic_harvester"
 		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 		precursor_controller.Pgenerate.unlink()
-		precursor_controller.reset()
+		precursor_controller.reset(target_level)
 
 /obj/machinery/precursor_dungeon_device/attackby(obj/item/I, mob/user)
 	if(istype(I,/obj/item/device/precursor/scan_capsule))
@@ -193,10 +208,6 @@ var/precursor_test = FALSE
 			return
 
 
-/obj/effect/portal/jtb/precursor
-	name = "ancient portal"
-	desc = "A portal to somewhere ancient."
-
 /obj/procedural/dungenerator/precursor
 	name = "Precursor Gen"
 	var/resetting = FALSE
@@ -204,7 +215,7 @@ var/precursor_test = FALSE
 	var/generated = FALSE
 	var/obj/procedural/jp_DungeonGenerator/precursor/Pgenerate = null
 
-/obj/procedural/dungenerator/precursor/proc/make_me_dungeon()
+/obj/procedural/dungenerator/precursor/proc/make_me_dungeon(obj/marker/precursor/targetZ)
 	set background = 1
 	spawn()
 		//testing_variable(start, REALTIMEOFDAY)
@@ -214,7 +225,7 @@ var/precursor_test = FALSE
 			message_admins("\blue precursor starter room generating now.")
 		generating = TRUE
 		Pgenerate.name = name
-		Pgenerate.setArea(locate(145, 27, z), locate(171, 45, z)) //bottom right corner
+		Pgenerate.setArea(locate(145, 27, targetZ.z), locate(171, 45, targetZ.z)) //bottom right corner
 		Pgenerate.setWallType(/turf/simulated/wall/ice)
 		Pgenerate.setFloorType(/turf/simulated/floor/rock/manmade/ruin2)
 		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/starter))
@@ -236,7 +247,7 @@ var/precursor_test = FALSE
 
 		if(precursor_test)
 			message_admins("\blue precursor end room generating now.")
-		Pgenerate.setArea(locate(05, 140, z), locate(30, 170, z)) //upper left for the final room. 21 by 21 space for it. just short of the impassible.
+		Pgenerate.setArea(locate(05, 140, targetZ.z), locate(30, 170, targetZ.z)) //upper left for the final room. 21 by 21 space for it. just short of the impassible.
 		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/end))
 		Pgenerate.setNumRooms(1) // just the one
 		Pgenerate.setRoomMinSize(10)
@@ -256,7 +267,7 @@ var/precursor_test = FALSE
 
 		if(precursor_test)
 			message_admins("\blue precursor large rooms generating now.")
-		Pgenerate.setArea(locate(05, 27, z), locate(140, 171, z)) //actual dungeon area but not near the east wall (stops connection to the starter room)
+		Pgenerate.setArea(locate(05, 27, targetZ.z), locate(140, 171, targetZ.z)) //actual dungeon area but not near the east wall (stops connection to the starter room)
 		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/large))
 		Pgenerate.setNumRooms(6) // 6 main rooms that we don't duplicate.
 		Pgenerate.setRoomMinSize(10)
@@ -276,7 +287,7 @@ var/precursor_test = FALSE
 
 		if(precursor_test)
 			message_admins("\blue precursor small rooms generating now.")
-		Pgenerate.setArea(locate(05, 27, z), locate(171, 171, z)) //actual dungeon area.
+		Pgenerate.setArea(locate(05, 27, targetZ.z), locate(171, 171, targetZ.z)) //actual dungeon area.
 		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/normal))
 		Pgenerate.setNumRooms(30) // whole buncha rooms!
 		Pgenerate.setRoomMinSize(5)
@@ -301,10 +312,10 @@ var/precursor_test = FALSE
 		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 
 
-/obj/procedural/dungenerator/precursor/proc/reset() //replaces the dungeon with ice walls.
+/obj/procedural/dungenerator/precursor/proc/reset(obj/marker/precursor/targetZ) //replaces the dungeon with ice walls.
 	set background = 1
 	var/datum/map_template/frozone = null
-	var/turf/targetspot = locate(4, 26, src.z)
+	var/turf/targetspot = locate(4, 26, targetZ.z)
 	var/verticalstepcounter = 0 //so we can do the 7 iterations it takes each time before stepping right and doing it again.
 	var/horizontalstepcounter = 0 //so we can do the 7 other step cycles
 
