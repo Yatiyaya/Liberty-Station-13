@@ -3,7 +3,7 @@
 	desc = "A constructed language derived from humans predominantly from the 2nd and 3rd world of Earth, founded nearly over 300 years ago. Written commonly in a Cyrillic script. \
 			This language has seen the death of many Earth languages with its strong enforcement of a standard in Coalition space. Due to the merger of so many dialects it sounds.. rough."
 	colour = "rough"
-	key = "c"
+	key = "p" // P for Pallas
 	speech_verb = list("growls", "rasps")
 	ask_verb = list("crudely asks")
 	exclaim_verb = list("hollers")
