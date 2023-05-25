@@ -1007,6 +1007,7 @@ obj/item/scroll/proc/example_spell(mob/living/carbon/human/M) //testing spell
 		M.drop_from_inventory(src)
 	ScrollBurn()
 
+// Eta: Ever Mob seeable via the scroll when burned must past a language checks or be thrown backwards 6 to 12 spaces
 /obj/item/scroll/proc/eta_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	bluespace_entropy(5, get_turf(src))
@@ -1019,7 +1020,7 @@ obj/item/scroll/proc/example_spell(mob/living/carbon/human/M) //testing spell
 				iron_mind = TRUE
 		if(!iron_mind)
 			fling_back_direction = reverse_dir[T.dir]
-			T.throw_at(get_edge_target_turf(src,fling_back_direction),rand(3,6),30)
+			T.throw_at(get_edge_target_turf(src,fling_back_direction),rand(6,12),30)
 
 	if(M.get_inactive_hand() == src)
 		M.drop_from_inventory(src)
