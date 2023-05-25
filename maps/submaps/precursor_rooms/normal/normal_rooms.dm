@@ -1,7 +1,12 @@
-/*datum/map_template/precursor_template/normal/example
-	name = "example"
-	desc = "Example room for generation and testing."
-	mappath = 'maps/submaps/precursor_rooms/normal/example.dmm' */
+//Normal rooms should be 11x11. Never multiple Z levels.
+//Make sure its saved TGM style. And it should have precursor area.
+
+/*
+/datum/map_template/precursor_template/normal/example <---- This has to be unique. Its the unique identifier in code.
+	name = "example" <--- Dosn't actually matter but its viewable in view variable.
+	desc = "Example room for generation and testing." <--- Dosn't actually matter but its viewable in view variable.
+	mappath = 'maps/submaps/precursor_rooms/normal/example.dmm' <---- This has to be 1 for 1 exactly the path of the map your loading.
+*/
 
 /datum/map_template/precursor_template/normal/anomalysci
 	name = "example"
