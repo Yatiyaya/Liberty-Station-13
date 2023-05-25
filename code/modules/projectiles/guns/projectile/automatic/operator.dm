@@ -8,6 +8,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	can_dual = TRUE
 	caliber = CAL_CLRIFLE
+	fire_sound = 'sound/weapons/guns/fire/dp_fire.ogg'
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_RIFLE

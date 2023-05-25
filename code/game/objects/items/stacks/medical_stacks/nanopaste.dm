@@ -5,7 +5,7 @@
 	icon = 'icons/obj/stack/items.dmi'
 	icon_state = "nanopaste"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 0.2, MATERIAL_STEEL = 1)
-	preloaded_reagents = list("plasticide" = 4)
+	preloaded_reagents = list("nanites" = 1)
 	origin_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
 	amount = 5
 	consumable = FALSE

@@ -285,10 +285,9 @@
 	icon_state = "medical_supply"
 	item_state = "medical_supply"
 
-	w_class = ITEM_SIZE_SMALL
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_POCKET
 	storage_slots = 6
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NORMAL // So that you can put back the pill bottle inside of it
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_BIOMATTER = 12)
 	attack_verb = list("pouched")

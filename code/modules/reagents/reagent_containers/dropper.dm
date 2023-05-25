@@ -101,6 +101,11 @@
 		filling.color = reagents.get_color()
 		add_overlay(filling)
 
+/obj/item/reagent_containers/dropper/AltClick(mob/user)
+	if(!CanPhysicallyInteract(user))
+		return
+	set_APTFT()
+
 /obj/item/reagent_containers/dropper/industrial
 	name = "industrial dropper"
 	desc = "A large dropper. Transfers 10 units."

@@ -5,7 +5,7 @@
 	icon_state = "brutepack" //sprites by @LiLJard @Ajajumbo123
 	origin_tech = list(TECH_BIO = 1)
 	heal_brute = 10
-	preloaded_reagents = list("silicon" = 4, "ethanol" = 8)
+	preloaded_reagents = list("silicon" = 1, "ethanol" = 1)
 	fancy_icon = TRUE
 
 /obj/item/stack/medical/bruise_pack/attack(mob/living/carbon/M, mob/living/user)
@@ -132,8 +132,8 @@
 	automatic_charge_overlays = TRUE
 	consumable = FALSE	// Will the stack disappear entirely once the amount is used up?
 	splittable = FALSE	// Is the stack capable of being splitted?
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_BIOMATTER = 3)
-	preloaded_reagents = list("quickclot" = 5, "sterilizine" = 5)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_BIOMATTER = 1)
+	preloaded_reagents = list("quickclot" = 1, "sterilizine" = 1)
 	w_class = ITEM_SIZE_SMALL
 	perk_required = TRUE
 	needed_perk = PERK_MEDICAL_EXPERT
@@ -147,7 +147,7 @@
 	name = "large advanced trauma kit"
 	singular_name = "large advanced trauma kit"
 	icon = 'icons/obj/stack/medical_big.dmi'
-	matter = list(MATERIAL_PLASTIC = 4, MATERIAL_BIOMATTER = 6)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_BIOMATTER = 2)
 	amount = 10
 	max_amount = 10
 	charge_sections = 10
@@ -160,7 +160,7 @@
 	icon_state = "brahmin_tongue"
 	automatic_charge_overlays = FALSE
 	consumable = TRUE
-	matter = list(MATERIAL_BIOMATTER = 2.5)
+	matter = list(MATERIAL_BIOMATTER = 2) // It's nothing but flesh
 	natural_remedy = TRUE
 	perk_required = TRUE
 	needed_perk = PERK_BUTCHER
@@ -174,7 +174,7 @@
 	icon_state = "mending_ichor"
 	automatic_charge_overlays = FALSE
 	consumable = TRUE // Will the stack disappear entirely once the amount is used up?
-	matter = list(MATERIAL_BIOMATTER = 2.5)
+	matter = list(MATERIAL_BIOMATTER = 2)
 	natural_remedy = TRUE
 	fancy_icon = FALSE
 	perk_required = FALSE
@@ -187,7 +187,7 @@
 	singular_name = "non-sterile bandage"
 	desc = "Parts of cloth that can be wrapped around bloody stumps."
 	icon_state = "makeshiftbandaid" //Ezoken#5894 made the sprites
-	matter = list(MATERIAL_CLOTH = 5)
+	matter = list(MATERIAL_CLOTH = 1)
 	fancy_icon = TRUE
 
 /obj/item/stack/medical/bruise_pack/capsa
@@ -195,8 +195,8 @@
 	singular_name = "CAPSA medical gauze"
 	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would. Made, with love, by CAPSA Medical staff."
 	icon_state = "capsa_brutepack"
-	matter = list(MATERIAL_CLOTH = 4, MATERIAL_BIOMATTER = 4)
-	preloaded_reagents = list("bicaridine" = 5, "quickclot" = 5, "sterilizine" = 5)
+	matter = list(MATERIAL_CLOTH = 1, MATERIAL_BIOMATTER = 1)
+	preloaded_reagents = list("bicaridine" = 0.125, "quickclot" = 0.125, "sterilizine" = 0.125)
 	fancy_icon = TRUE
 	disinfectant  = TRUE
 	amount = 8
@@ -211,7 +211,8 @@
 	icon_state = "nt_traumakit"
 	heal_brute = 10
 	automatic_charge_overlays = FALSE
-	matter = list(MATERIAL_BIO_SILK = 5)
+	matter = list(MATERIAL_BIO_SILK = 1)
+	preloaded_reagents = list()
 	origin_tech = list(TECH_BIO = 4)
 	fancy_icon = TRUE
 	w_class = ITEM_SIZE_SMALL

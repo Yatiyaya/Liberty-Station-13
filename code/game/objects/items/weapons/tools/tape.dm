@@ -76,7 +76,7 @@
 	item_state = "bonegel"
 	w_class = ITEM_SIZE_TINY
 	worksound = NO_WORKSOUND
-	matter = list(MATERIAL_PLASTIC = 20)
+	matter = list(MATERIAL_BIOMATTER = 20)
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 3)
 	preloaded_reagents = list("milk" = 5)
 	tool_qualities = list(QUALITY_BONE_FIXING = 80)
@@ -89,7 +89,7 @@
 	desc = "An improved gel-like calcium composite formula used as an efficient surgical substitute for broken or missing bone pieces."
 	icon = 'icons/obj/stack/items.dmi'
 	icon_state = "bonegel_SI"
-	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_BIOMATTER = 30, MATERIAL_PLASTIC = 3)
 	tool_qualities = list(QUALITY_BONE_FIXING = 150)
 	max_stock = 500
 	preloaded_reagents = null

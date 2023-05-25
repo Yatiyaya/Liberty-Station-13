@@ -33,12 +33,12 @@
 	if(default_part_replacement(I, user))
 		return
 
-	if(istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical)) //IS this jank, yes, does it matter, no - Lamasmaster
-		insert_disk(user, I)
-
-	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
-		to_chat(user, SPAN_DANGER("[src] is only capable of replicating medical designs!"))
-		return
+	if(istype(I, /obj/item/computer_hardware/hard_drive/portable)) // No longer jank. - Seb
+		if(!istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical))
+			to_chat(user, SPAN_DANGER("[src] is only capable of replicating medical designs!"))
+			return
+		else
+			insert_disk(user, I)
 
 	// We devour medical equipment because the design is very human and very easy to use
 	if(istype(I, /obj/item/stack/medical) || istype(I, /obj/item/reagent_containers/syringe) || istype(I, /obj/item/storage/pill_bottle))
@@ -51,6 +51,33 @@
 
 	user.set_machine(src)
 	nano_ui_interact(user)
+
+/obj/machinery/autolathe/medfab/insert_disk(mob/living/user, obj/item/computer_hardware/hard_drive/portable/design/medical/inserted_disk)
+	if(!inserted_disk && istype(user))
+		inserted_disk = user.get_active_hand()
+
+	if(!istype(inserted_disk))
+		to_chat(user, SPAN_DANGER("[src] is only capable of replicating medical designs!"))
+		return
+
+	if(!Adjacent(user) && !Adjacent(inserted_disk))
+		return
+
+	if(!have_disk)
+		to_chat(user, SPAN_WARNING("[src] has no slot for a data disk."))
+		return
+
+	if(disk)
+		to_chat(user, SPAN_NOTICE("There's already \a [disk] inside [src]."))
+		return
+
+	if(istype(user) && (inserted_disk in user))
+		user.unEquip(inserted_disk, src)
+
+	inserted_disk.forceMove(src)
+	disk = inserted_disk
+	to_chat(user, SPAN_NOTICE("You insert \the [inserted_disk] into [src]."))
+	SSnano.update_uis(src)
 
 /obj/machinery/autolathe/medfab/loaded
 	default_disk = /obj/item/computer_hardware/hard_drive/portable/design/medical/medfab //We start loaded

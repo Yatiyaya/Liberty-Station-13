@@ -19,25 +19,21 @@
 	var/yminus	= -3	//Ditto for Y
 
 /obj/item/stamp/captain
-	name = "board secretary's rubber stamp"
+	name = "Board Secretary's rubber stamp"
 	icon_state = "stamp-cap"
 	xplus = 0
 	yminus = -1
 
 /obj/item/stamp/hos
-	name = "warrant officer's rubber stamp"
-	icon_state = "stamp-hos"
-
-/obj/item/stamp/hos2
-	name = "blackshield commander's rubber stamp"
-	icon_state = "stamp-hos"
+	name = "Deputy Chief's rubber stamp"
+	icon_state = "stamp-hop"
 
 /obj/item/stamp/ce
 	name = "Union Chief's rubber stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/pr
-	name = "oathpledge's rubber stamp"
+	name = "Oathpledge's rubber stamp"
 	icon_state = "stamp-pr"
 
 /obj/item/stamp/rd
@@ -59,11 +55,11 @@
 	stamp_flags = STAMP_GENERIC
 
 /obj/item/stamp/qm
-	name = "chief executive officer's stamp"
-	icon_state = "stamp-qm"
+	name = "Club Manager's stamp"
+	icon_state = "stamp-hos"
 
 /obj/item/stamp/fr
-	name = "shepherd's stamp"
+	name = "Field Shepherd's stamp"
 	icon_state = "stamp-fr"
 
 // Syndicate stamp to forge documents.

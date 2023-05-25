@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/colt
 	name = "\"Colt\" pistol"
-	desc = "An old repoduction of an M1911 produced by Marian Logistics. It doesn't feel great to use with its grip. Uses 10mm rounds."
+	desc = "An old repoduction of an M1911 produced by Martian Logistics. It doesn't feel great to use with its grip. Uses 10mm rounds."
 	icon = 'icons/obj/guns/projectile/colt.dmi'
 	icon_state = "colt"
 	item_state = "colt"
@@ -8,7 +8,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 5)
 	price_tag = 450
-	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
+	fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'
 	can_dual = TRUE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL
@@ -33,7 +33,6 @@
 	mag_well = MAG_WELL_PISTOL
 	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 8)
 	price_tag = 550
-	fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
 	init_recoil = HANDGUN_RECOIL(0.5)

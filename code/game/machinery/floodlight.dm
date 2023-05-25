@@ -152,3 +152,37 @@
 				cell = I
 				to_chat(user, SPAN_NOTICE("You insert the power cell."))
 		update_icon()
+
+// Version of the floodlights for the colony gates.
+// If a better coded or superior alternative comes, feel free to erase.
+// TODO: Make it have a directional light spot, akin to Flashlights, depending on its direction
+
+/obj/machinery/floodlight/gate
+	name = "Fence Floodlight"
+	desc = "A floodlight stationed on the fence lines to provide a certain level of visibility during night shifts."
+	icon_state = "gate00"
+	density = 0 // So that bullets can pass and it doesn't block fire or movement
+	anchored = 1 // Not moving this one from this spot no sir
+	brightness_on = 10
+	light_power = 5
+
+/obj/machinery/floodlight/gate/Initialize()
+	. = ..()
+	cell = new /obj/item/cell/large/similacrum(src) // Infinite lightning
+
+/obj/machinery/floodlight/gate/attackby(obj/item/I, mob/user)
+	return // No removing the cell out of these ones for a free Simulacrum cell
+	// Also not unwrenching or wrenching either for free infinite light anywhere.
+
+/obj/machinery/floodlight/update_icon()
+	cut_overlays()
+	icon_state = "gate0[on]"
+
+/obj/machinery/floodlight/gate/attack_hand(mob/user)
+	if(on)
+		turn_off(1)
+	else
+		if(!turn_on(1))
+			to_chat(user, "You try to turn on \the [src] but it does not work.")
+
+	update_icon()

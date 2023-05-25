@@ -72,6 +72,7 @@
 	if(!open)
 		open()
 		to_chat(user, SPAN_NOTICE("You open up \the [src]."))
+		playsound(src, 'sound/effects/Paper_Remove.ogg', 50, 1, 1)
 		return
 	if(warm)
 		to_chat(user, SPAN_NOTICE("You already crushed \the [src] and it's still heating up, be patient."))
@@ -80,10 +81,12 @@
 		user.visible_message(
 			SPAN_NOTICE("[user] crushes \the [src] package."),
 			"You crush \the [src] package and feel a comfortable heat build up.",
+			playsound(src, 'sound/effects/paper_crumpling.ogg', 50, 1, 1)
 		)
 		warm = TRUE
 		spawn(300)
 			to_chat(user, "You think \the [src] is ready to eat about now.")
+			playsound(src, 'sound/items/smoking.ogg', 50, 1, 1)
 			heat()
 
 /obj/item/reagent_containers/food/snacks/openable/chips_alt
@@ -157,6 +160,28 @@
 	matter = list(MATERIAL_BIOMATTER = 12)
 	can_warm = TRUE
 
+/obj/item/reagent_containers/food/snacks/openable/can/attack_self(mob/user)
+	if(!open)
+		open()
+		to_chat(user, SPAN_NOTICE("You open the tab on \the [src]."))
+		playsound(user.loc, 'sound/effects/canopen.ogg', rand(10,50), 1)
+		return
+
+	if(warm)
+		to_chat(user, SPAN_NOTICE("You already started the heat up process of \the [src], be patient until it's warm."))
+		return
+	if(can_warm)
+		user.visible_message(
+			SPAN_NOTICE("[user] gently twists \the [src]."),
+			"You gently twist the bottom of \the [src] and feel a comfortable heat build up.",
+			playsound(user.loc, 'sound/effects/insert.ogg', rand(10,50), 1)
+		)
+		warm = TRUE
+		spawn(300)
+			to_chat(user, "You think \the [src] is ready to eat about now.")
+			playsound(src, 'sound/items/smoking.ogg', 50, 1, 1)
+			heat()
+
 /obj/item/reagent_containers/food/snacks/openable/candy
 	name = "morale bar"
 	desc = "Some brand of non-melting military chocolate."
@@ -182,43 +207,129 @@
 	bitten_icon_alt = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee
-	name = "Self-Heating Coffee Can"
-	desc = "A can of pure black coffee with a self-heating mechanism. A survivalist's best friend, it requires no fire - just open up, shake and wait before drinking!"
-	alt_desc = "A can of pure black coffee, piping hot and ready to warm you up."
+	name = "Self-Heating Coffee Thermos Can"
+	desc = "A can-shaped thermos of pure black coffee with a self-heating mechanism. A survivalist's best friend, it requires no fire - just open up, shake and wait before drinking!"
+	alt_desc = "A can-shaped thermos of pure black coffee, piping hot and ready to warm you up."
 	icon_state = "selfheat_coffee"
 	trash = /obj/item/trash/selfheat_coffee
 	filling_color = "#482000d3"
-	preloaded_reagents = list() // Nothing
-	nutriment_amt = 10
-	nutriment_desc = list("tart black coffee" = 5, "bushcrafting" = 3, "warmth" = 2)
+	preloaded_reagents = list("insta_coffee_powder" = 15) // It's a can, it's not that big.
+	nutriment_amt = 6 // Minimum for 3 flavors to be felt
+	nutriment_desc = list("tart black coffee" = 3, "bushcrafting" = 2, "warmth" = 1)
 	cooked = TRUE
-	reagent_flags = NONE // No refilling no reusing
 	warm = FALSE
 	open = FALSE
-	heated_reagents = list("coffee" = 20) // 20 coffee + 10 nutriment regardless of warmed up or not
+	heated_reagents = list("water" = 15)
 	matter = list(MATERIAL_BIOMATTER = 6)
 	can_warm = TRUE
+	volume = 50 //Little extra space for the nutriments
 
-/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/attack_self(mob/user)
-	if(!open)
-		open()
-		to_chat(user, SPAN_NOTICE("You crack \the [src] open."))
-		return
-	if(warm)
-		to_chat(user, SPAN_NOTICE("You already started the heat up process of \the [src], be patient until it's warm."))
-		return
-	if(can_warm)
-		user.visible_message(
-			SPAN_NOTICE("[user] gently shakes \the [src]."),
-			"You gently shake \the [src] and feel a comfortable heat build up.",
-		)
-		warm = TRUE
-		spawn(300)
-			to_chat(user, "You think \the [src] is warm enough to drink now.")
-			heat()
+// Despite its code path, it's a drink, not a snacc!
+// Until food feeding is replaced with a generalized standard_mob_feed(), this needs to be here for the drink sound to play
+// And also for the custom feeding messages when hungry.
+// I'm sorry for this.
 
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/attack(mob/mob as mob, mob/user as mob, def_zone)
+	if(!reagents.total_volume)
+		to_chat(user, SPAN_DANGER("None of \the [src] left!")) // Should not happen, but left for sanity purposes
+		user.drop_from_inventory(src)
+		qdel(src)
+		return 0
+
+	if(iscarbon(mob))
+		var/mob/living/carbon/carbon = mob
+		var/mob/living/carbon/human/human = mob
+		var/fullness_modifier = 1
+		if(istype(human))
+			fullness_modifier = 100 / human.get_organ_efficiency(OP_STOMACH)
+		var/fullness = (carbon.nutrition + (carbon.reagents.get_reagent_amount("nutriment") * 25)) * fullness_modifier
+		if(carbon == user)
+			if(istype(human))
+				if(!human.check_has_mouth())
+					to_chat(user, "You cannot drink \the [src] without a mouth.")
+					return
+				var/obj/item/blocked = human.check_mouth_coverage()
+				if(blocked)
+					to_chat(user, SPAN_WARNING("\The [blocked] is in the way!"))
+					return
+
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+			if (fullness <= 50)
+				to_chat(carbon, SPAN_DANGER("You desperately take a chug out of \the [src]."))
+			if (fullness > 50 && fullness <= 150)
+				to_chat(carbon, SPAN_NOTICE("You quickly chug from \the [src]."))
+			if (fullness > 150 && fullness <= 350)
+				to_chat(carbon, SPAN_NOTICE("You drink from \the [src]."))
+			if (fullness > 350 && fullness <= 550)
+				to_chat(carbon, SPAN_NOTICE("You unwillingly drink from \the [src]."))
+			if (fullness > 550)
+				to_chat(carbon, SPAN_DANGER("You cannot force any more of the contents of \the [src] to go down your throat!"))
+				return 0
+		else
+			if(!mob.can_force_feed(user, src))
+				return
+
+			if (fullness <= 550)
+				user.visible_message(SPAN_DANGER("[user] attempts to feed [mob] with \the [src]."))
+			else
+				user.visible_message(SPAN_DANGER("[user] cannot force anymore of \the [src] down [mob]'s throat."))
+				return 0
+
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+			if(!do_mob(user, mob)) return
+
+			mob.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been fed [src.name] by [user.name] ([user.ckey]) Reagents: [reagents.log_list()]</font>")
+			user.attack_log += text("\[[time_stamp()]\] <font color='red'>Fed [src.name] by [mob.name] ([mob.ckey]) Reagents: [reagents.log_list()]</font>")
+			msg_admin_attack("[key_name(user)] fed [key_name(mob)] with [src.name] Reagents: [reagents.log_list()] (INTENT: [uppertext(user.a_intent)])")
+
+			user.visible_message(SPAN_DANGER("[user] feeds [mob] [src]."))
+
+		if(reagents)
+			playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1) // CURSE YOU FEED_SOUND() FOR NOT WORKING PROPERLY!!!
+			if(reagents.total_volume)
+				var/amount_eaten = min(reagents.total_volume, bitesize)
+				reagents.trans_to_mob(mob, amount_eaten, CHEM_INGEST)
+				if(istype(human))
+					human.sanity.onEat(src, amount_eaten)
+				bitecount++
+				On_Consume(mob, user)
+			return 1
+
+	else if (isanimal(mob))
+		var/mob/living/simple_animal/SA = mob
+		SA.scan_interval = SA.min_scan_interval
+
+		var/m_bitesize = bitesize * SA.bite_factor
+		var/amount_eaten = m_bitesize
+
+		if(reagents && SA.reagents)
+			m_bitesize = min(m_bitesize, reagents.total_volume)
+			if (!SA.can_eat() || ((user.reagents.maximum_volume - user.reagents.total_volume) < m_bitesize * 0.5))
+				amount_eaten = 0
+			else
+				amount_eaten = reagents.trans_to_mob(SA, m_bitesize, CHEM_INGEST)
+		else
+			return 0
+
+		if (amount_eaten)
+			playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1)
+			bitecount++
+			if (amount_eaten >= m_bitesize)
+				user.visible_message(SPAN_NOTICE("[user] feeds [src] to [mob]."))
+			else
+				user.visible_message(SPAN_NOTICE("[user] feeds [mob] a tiny sip of \the [src]. <b>It looks full.</b>"))
+				if (!istype(mob.loc, /turf))
+					to_chat(mob, SPAN_NOTICE("[user] feeds you a tiny bit of \the [src]. <b>You feel pretty full!</b>"))
+			On_Consume(mob, user)
+			return 1
+		else
+			to_chat(user, SPAN_WARNING("[mob.name] can't stomach anything more!"))
+
+	return 0
+
+// Keeping this just in case, fallback
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/feed_sound(var/mob/user)
-	playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1) // Despite its code path, it's a drink, not a snacc!
+	playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1)
 
 /obj/item/reagent_containers/food/snacks/openable/candy/os
 	desc = "SR branded non-melting chocolate."
@@ -479,7 +590,7 @@
 	nutriment_desc = list("salt" = 1, "cracker" = 2)
 	bitesize = 2
 	nutriment_amt = 1
-	preloaded_reagents = list("dexalinp" = 1, "nicotine" = 1)
+	preloaded_reagents = list("dexalinp" = 1, "iron" = 1)
 	matter = list(MATERIAL_BIOMATTER = 2)
 	junk_food = TRUE
 

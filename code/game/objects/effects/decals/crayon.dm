@@ -817,7 +817,7 @@
 	for(var/obj/structure/reagent_dispensers/watertank/W in oview(1)) // Must be on the spell circle
 		to_chat(M, "<span class='info'>Thunder crackles as a miniature cloud of nothingness manifests itself. Blood begins pouring down, forming an omnious obsidian basin beneath it...</span>")
 		B.remove_self(100) // Basically pouring your blood into a container, insane
-		M.sanity.breakdown(TRUE) // If your blood got sucked and poured into a container you too would freak out
+		M.sanity.breakdown(FALSE) // If your blood got sucked and poured into a container you too would freak out
 		M.sanity.changeLevel(-50)
 		var/obj/structure/sink/basion/crayon/N = new /obj/structure/sink/basion/crayon
 		N.loc = W.loc
@@ -825,15 +825,16 @@
 	return
 
 // Ascension: "Opens" your current book (Occult or Unholy) and "transforms" it into an improved version
-// Occult always has the Alchemist perk, Unholy has the Scribe perk
 // They have slightly better stats than their stock counterparts and can be used for rituals
+// They also look cool as hell being held on your hands!!!
+
 /obj/effect/decal/cleanable/crayon/proc/ascension_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/oddity/common/O in oview(1))
 		if(istype(O, /obj/item/oddity/common/book_omega/closed))
 			to_chat(M, "<span class='info'>The book floats before you and opens, new information within being written as your eyes pour over it!</span>")
 			B.remove_self(80)
-			M.sanity.breakdown(TRUE) // You are driven insane
+			M.sanity.breakdown() // You are driven insane
 			M.sanity.changeLevel(-30)
 			playsound(loc, 'sound/bureaucracy/bookopen.ogg')
 			new /obj/item/oddity/common/book_omega/opened(O.loc)
@@ -841,7 +842,7 @@
 		if(istype(O, /obj/item/oddity/common/book_unholy/closed))
 			to_chat(M, "<span class='info'>The book floats before you and opens, new information within being written as your eyes pour over it!</span>")
 			B.remove_self(80)
-			M.sanity.breakdown(TRUE) // You are driven insane
+			M.sanity.breakdown() // You are driven insane
 			M.sanity.changeLevel(-30)
 			playsound(loc, 'sound/bureaucracy/bookopen.ogg')
 			new /obj/item/oddity/common/book_unholy/opened(O.loc)

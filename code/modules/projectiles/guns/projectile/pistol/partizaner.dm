@@ -26,7 +26,7 @@
 
 /obj/item/part/gun/frame/partizaner
 	name = "Partizaner frame"
-	desc = "A Partizaner homemade pistol frame. Yid du partizner.."
+	desc = "A Partizaner homemade pistol frame. Yid du partizaner..."
 	icon_state = "frame_colt"
 	result = /obj/item/gun/projectile/partizaner
 	resultvars = list(/obj/item/gun/projectile/partizaner)

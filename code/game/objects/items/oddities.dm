@@ -620,6 +620,8 @@
 /obj/item/oddity/nt
 	random_stats = FALSE
 
+ /* // Commented out as it does not fit Bonfire lore, but might become repurposed in the future
+
 /obj/item/oddity/nt/seal
 	name = "Cartographer's Seal"
 	desc = "A badge carrying the seal of the cartographer of the Church of Bonfire, said to be marked with a tithe of blood as proof of its sacred nature. An extremely rare sight, as many of these seals are thought to be lost. Merely holding one is said to inspire divine right. The church would be immensely interested in this."
@@ -641,6 +643,8 @@
 	)
 	price_tag = 8000
 	perk = PERK_STRANGTH
+
+*/
 
 /obj/item/oddity/chimeric_fang_trophy
 	name = "Chimera Fang Trophy"

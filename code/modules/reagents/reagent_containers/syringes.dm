@@ -229,7 +229,10 @@
 				trans = reagents.trans_to(target, amount_per_transfer_from_this)
 			to_chat(user, SPAN_NOTICE("You inject [trans] units of the solution. [src] now contains [src.reagents.total_volume] units."))
 
-
+/obj/item/reagent_containers/syringe/AltClick(mob/user)
+	if(!CanPhysicallyInteract(user))
+		return
+	set_APTFT()
 
 /obj/item/reagent_containers/syringe/update_icon()
 	cut_overlays()

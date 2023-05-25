@@ -146,6 +146,17 @@
 	color = "#302000"
 	common = TRUE
 
+/datum/reagent/organic/nutriment/instant_coffee
+	name = "Instant Coffee Powder"
+	id = "insta_coffee_powder"
+	description = "A light powder that mixed with water or milk, makes coffee."
+	taste_description = "bitterness"
+	taste_mult = 1.1
+	reagent_state = SOLID
+	nutriment_factor = 1
+	color = "#302000"
+	common = TRUE
+
 /datum/reagent/organic/nutriment/soysauce
 	name = "Soysauce"
 	id = "soysauce"

@@ -138,6 +138,7 @@
 	icon_base = "buzzsaw"
 	icon_state = "buzzsaw"
 	item_state = "buzzsaw"
+	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	mag_well = MAG_WELL_LINKED_BOX|MAG_WELL_RIFLE
 	caliber = CAL_SRIFLE
 	damage_multiplier = 1.2

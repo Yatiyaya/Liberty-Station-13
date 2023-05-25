@@ -15,7 +15,7 @@
 	mag_well = MAG_WELL_RIFLE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 750
-	fire_sound = 'sound/weapons/guns/fire/ak.ogg'
+	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -78,12 +78,13 @@
 	desc = "A weapon of a True Solarian Federaltion patriot. A home-owners dream rifle. \
 			A copy of the famous \"Federalist\" carbine, chambered in 6.5mm. This variant appears to have lost its capability to switch to full-auto, but a better barrel and scope attached to compensate."
 	icon = 'icons/obj/guns/projectile/ar_scope.dmi'
+	fire_sound = 'sound/weapons/guns/fire/batrifle_fire.ogg'
 	price_tag = 800
 	extra_damage_mult_scoped = 0.4
 	zoom_factors = list(0.8)
 	init_recoil = RIFLE_RECOIL(0.9)
 	saw_off = FALSE
-	
+
 	gun_parts = list(/obj/item/part/gun/frame/federalist = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 	init_firemodes = list(

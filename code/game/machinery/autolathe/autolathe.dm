@@ -248,12 +248,12 @@
 	if(default_part_replacement(I, user))
 		return
 
-	if(istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical))
-		to_chat(user, SPAN_DANGER("[src] isn't capable of replicating medical designs!"))
-		return
-
 	if(istype(I, /obj/item/computer_hardware/hard_drive/portable))
-		insert_disk(user, I)
+		if(istype(I, /obj/item/computer_hardware/hard_drive/portable/design/medical))
+			to_chat(user, SPAN_DANGER("[src] isn't capable of replicating medical designs!"))
+			return
+		else
+			insert_disk(user, I)
 
 	// Some item types are consumed by default
 	if(istype(I, /obj/item/stack) || istype(I, /obj/item/trash) || istype(I, /obj/item/material/shard))
@@ -383,6 +383,11 @@
 		inserted_disk = user.get_active_hand()
 
 	if(!istype(inserted_disk))
+		return
+
+	// This is checked here as well because of the Href proc for inserting a disk not checking on type. - Seb
+	if(istype(inserted_disk, /obj/item/computer_hardware/hard_drive/portable/design/medical))
+		to_chat(user, SPAN_DANGER("[src] isn't capable of replicating medical designs!"))
 		return
 
 	if(!Adjacent(user) && !Adjacent(inserted_disk))

@@ -165,7 +165,7 @@
 
 /obj/item/clothing/suit/storage/greatcoat/overcoatblack/crimson // Saint's Row reference.
 	name = "red overcoat"
-	desc = "This coat costed more than Ryan's little crystal there in the vault."
+	desc = "This coat costed more than Skylight's little crystal there in the vault."
 	icon_state = "morningstar"
 	item_state = "morningstar"
 

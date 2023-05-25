@@ -32,6 +32,7 @@
 		/obj/item/tool/screwdriver,
 		/obj/item/computer_hardware/hard_drive/portable,
 		/obj/item/reagent_containers/syringe,
+		/obj/item/reagent_containers/hypospray/autoinjector, // Syringes fit, so do these.
 		/obj/item/genetics/purger,
 		/obj/item/genetics/sample,
 		/obj/item/genetics/mut_injector,

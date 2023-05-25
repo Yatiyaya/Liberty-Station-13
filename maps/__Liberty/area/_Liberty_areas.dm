@@ -645,14 +645,14 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/swo
-	name = "Warrant Officer's Office"
+	name = "Deputy Officer's Office"
 	icon_state = "hammerred"
 	flags = AREA_FLAG_CRITICAL
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/command/swo/quarters
-	name = "Warrant Officer's Quarters"
+	name = "Deputy Officer's Quarters"
 	icon_state = "hammerred"
 	sound_env = SMALL_SOFTFLOOR
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
@@ -905,7 +905,7 @@
 	sound_env = LARGE_ENCLOSED
 
 /area/liberty/bonfire/storage
-	name = "\improper Custodian Storage"
+	name = "\improper Stronghold Storage Wing"
 	icon_state = "erisyellow"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
@@ -915,23 +915,27 @@
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/bioreactor
-	name = "\improper Custodian Bonfire Room"
+	name = "\improper Stronghold Workshop" // TODO: Scrap bioreactor as they do not deal with biomatter
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/vectorrooms
-	name = "\improper Custodian Commons"
+	name = "\improper Stronghold Living Quarters"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/office
-	name = "\improper Stronghold Office"
+	name = "\improper Stronghold Barracks"
 	icon_state = "chapeloffice"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
 
 /area/liberty/bonfire/chapelritualroom
-	name = "Custodian Rituals Room"
+	name = "Stronghold Forge"
 	icon_state = "erisgreen"
+
+/area/liberty/bonfire/armory
+	name = "Stronghold Armory"
+	icon_state = "head_quarters"
 
 //Engineering
 

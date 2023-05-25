@@ -25,6 +25,13 @@
 	. = ..()
 	enable_computer()
 
+/obj/item/modular_computer/pda/CtrlShiftClick(mob/user)
+	. = ..()
+	if(!CanPhysicallyInteract(user))
+		return
+	if(stores_pen && istype(stored_pen))
+		remove_pen()
+
 /obj/item/modular_computer/pda/AltClick(var/mob/user)
 	if(!CanPhysicallyInteract(user))
 		return
