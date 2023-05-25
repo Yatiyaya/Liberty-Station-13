@@ -91,7 +91,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/church
-	name = "Church of Bonfire - Augstine Browne"
+	name = "Bonfire Custodians"
 
 	fax_alert = "CHURCH FAX"
 	fax_response = "Church Decree"
@@ -100,7 +100,7 @@
 	darkcolor = "#051d66"
 	lightcolor = "#5b83ff"
 
-	stamptext = "This paper has been stamped with the sanctified symbol of Cartographer Augustine Browne."
+	stamptext = "This paper has been stamped with the sanctified symbol of Spark Liekki Korhonen."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/voidwolves
