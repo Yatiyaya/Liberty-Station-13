@@ -130,8 +130,8 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	handle_breakdowns()
 	if(owner.stat == DEAD || owner.life_tick % life_tick_modifier || owner.in_stasis || (owner.species.lower_sanity_process && !owner.client))
 		return
-	if(owner.species.reagent_tag == IS_SYNTHETIC)
-		return
+//	if(owner.species.reagent_tag == IS_SYNTHETIC) //erm no? We can still have synths use sanity, ERIS...
+//		return
 	var/affect = SANITY_PASSIVE_GAIN * sanity_passive_gain_multiplier
 	if(owner.stat) //If we're unconscious
 		changeLevel(affect)
@@ -513,15 +513,15 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	changeLevel(SANITY_GAIN_SAY)
 
 /datum/sanity/proc/changeLevel(amount)
-	if(owner.species.reagent_tag == IS_SYNTHETIC)
-		return
+	//if(owner.species.reagent_tag == IS_SYNTHETIC)
+		//return
 	if(sanity_invulnerability && amount < 0)
 		return
 	updateLevel(level + amount)
 
 /datum/sanity/proc/setLevel(amount)
-	if(owner.species.reagent_tag == IS_SYNTHETIC)
-		return
+	//if(owner.species.reagent_tag == IS_SYNTHETIC)
+		//return
 	if(sanity_invulnerability)
 		restoreLevel(amount)
 		return
@@ -533,8 +533,8 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	updateLevel(amount)
 
 /datum/sanity/proc/updateLevel(new_level)
-	if(owner.species.reagent_tag == IS_SYNTHETIC)
-		return
+	//if(owner.species.reagent_tag == IS_SYNTHETIC)
+		//return
 	new_level = CLAMP(new_level, 0, max_level)
 	level_change += abs(new_level - level)
 	level = new_level
