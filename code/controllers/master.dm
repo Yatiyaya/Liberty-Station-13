@@ -200,7 +200,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	if(delay)
 		sleep(delay)
 	if(tgs_prime)
-		world.TgsInitializationComplete()
+		world.TgsInitializationComplete() // Required for TGS to function, do not under any circumstance delete this
 	if(init_sss)
 		init_subtypes(/datum/controller/subsystem, subsystems)
 

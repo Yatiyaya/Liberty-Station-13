@@ -105,7 +105,7 @@ var/game_id
 	load_mods()
 	//end-emergency fix
 
-	TgsNew()
+	TgsNew() // Required for TGS to function, do not under any circumstance delete this
 
 	generate_body_modification_lists()
 
@@ -166,7 +166,7 @@ var/world_topic_spam_protect_ip = "0.0.0.0"
 var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
-	TGS_TOPIC
+	TGS_TOPIC // Required for TGS to function, do not under any circumstance delete this
 	var/list/topic_handlers = WorldTopicHandlers()
 
 	var/list/input = params2list(T)
@@ -221,7 +221,7 @@ var/world_topic_spam_protect_time = world.timeofday
 		if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 			C << link("byond://[config.server]")
 
-	TgsReboot()
+	TgsReboot() // Required for TGS to function, do not under any circumstance delete this
 
 	#ifdef UNIT_TESTS
 	FinishTestRun()
