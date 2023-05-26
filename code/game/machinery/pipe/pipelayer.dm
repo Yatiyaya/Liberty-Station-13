@@ -54,7 +54,7 @@
 					var/obj/item/stack/material/steel/MM = new (get_turf(src))
 					MM.amount = m
 					user.visible_message(
-						SPAN_NOTICE("[user] removes [m] sheet\s of metal from the \the [src]."),
+						SPAN_NOTICE("[user] removes [m] sheet\s of metal from \the [src]."),
 						SPAN_NOTICE("You remove [m] sheet\s of metal from \the [src]"))
 			else
 				to_chat(user, "\The [src] is empty.")

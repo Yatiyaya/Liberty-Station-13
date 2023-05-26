@@ -65,7 +65,7 @@
 /obj/item/shield/attackby(obj/item/I, mob/user)
 	if(I.has_quality(QUALITY_ADHESIVE))
 		if(src.durability)
-			user.visible_message(SPAN_NOTICE("[user] begins repairing \the [src] with the [I]!"))
+			user.visible_message(SPAN_NOTICE("[user] begins repairing \the [src] with \the [I]!"))
 			if(I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_ADHESIVE, FAILCHANCE_EASY, required_stat = STAT_MEC))
 				src.adjustShieldDurability(src.max_durability * 0.8 + (user.stats.getStat(STAT_MEC)*0.2)*0.1, user)
 
@@ -83,11 +83,11 @@
 		else if (durability > max_durability * 0.20)
 			to_chat(user, SPAN_WARNING("It looks a bit cracked and worn."))
 		else if (durability > max_durability * 0.10)
-			to_chat(user, SPAN_WARNING("Whatever use this tool once had is fading fast."))
+			to_chat(user, SPAN_WARNING("It is lined up with cuts and badly bent."))
 		else if (durability > max_durability * 0.05)
-			to_chat(user, SPAN_WARNING("Attempting to use this thing as a tool is probably not going to work out well."))
+			to_chat(user, SPAN_WARNING("Attempting to use this mangled thing to block is probably going to be a bad idea."))
 		else
-			to_chat(user, SPAN_DANGER("It's falling apart. This is one slip away from just being a pile of assorted trash."))
+			to_chat(user, SPAN_DANGER("It's falling apart. Attempting to block with this is guaranteed to have it crumble in your hands."))
 
 /obj/item/shield/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 
@@ -115,11 +115,11 @@
 				else
 					adjustShieldDurability(-damage_received)
 				defender.adjustHalLoss(damage_received)
-				defender.visible_message(SPAN_DANGER("\The [defender] blocks [attack_text] with \the [src]!"))
+				defender.visible_message(SPAN_DANGER("\The [user] prevented being [attack_text] by blocking with \the [src]!"))
 				return 1
 	if(check_parry_arc(user, bad_arc, damage_source, attacker))
 		if(prob(get_block_chance(user, damage, damage_source, attacker)))
-			user.visible_message(SPAN_DANGER("\The [user] blocks [attack_text] with \the [src]!"))
+			user.visible_message(SPAN_DANGER("\The [user] prevented being [attack_text] by blocking with \the [src]!"))
 			return 1
 	return 0
 

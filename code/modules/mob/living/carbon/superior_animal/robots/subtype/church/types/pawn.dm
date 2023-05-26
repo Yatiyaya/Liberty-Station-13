@@ -4,7 +4,7 @@
 	their twin blades and light armor make them an extremely fast and heavy striker."
 	faction = "neutral"
 	icon_state = "pawn_golem"
-	attacktext = "duel strikes"
+	attacktext = "dual striken"
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"
 	move_to_delay = 2

@@ -12,7 +12,7 @@
 	melee_damage_upper = 30
 	emote_see = list("howls in a broken voice.", "wracks its claws against the ground.", "gnarls.")
 	turns_per_move = 3
-	attacktext = "carves"
+	attacktext = "carved"
 	faction = "daskvey"
 
 	colony_friend = FALSE
@@ -43,7 +43,7 @@
 	emote_see = list("looks left then right.", "breathes heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 3
-	attacktext = "cuts into"
+	attacktext = "cutted into"
 	faction = "daskvey"
 
 	chameleon_skill = 255
@@ -85,7 +85,7 @@
 	emote_see = list("sighs deeply")
 	turns_per_move = 1
 	move_to_delay = 1
-	attacktext = "rends apart"
+	attacktext = "rended apart"
 
 	armor_penetration = 35
 
@@ -179,7 +179,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
-	attacktext = "hacks"
+	attacktext = "hacked"
 
 
 	drop_items = list(/obj/item/tool/sword/cleaver/cult/deepmaints)
@@ -198,7 +198,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
-	attacktext = "bashes"
+	attacktext = "bashed"
 
 	drop_items = list(/obj/item/gun/energy/plasma/cassad/cult/deepmaints)
 
@@ -223,7 +223,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
-	attacktext = "bashes"
+	attacktext = "bashed"
 
 	viewRange = 20
 	comfy_range = 20
@@ -251,7 +251,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
-	attacktext = "bashes"
+	attacktext = "bashed"
 
 	drop_items = list(/obj/item/gun/projectile/automatic/greasegun/cult/deepmaints)
 
@@ -284,7 +284,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
-	attacktext = "bashes"
+	attacktext = "bashed"
 
 	drop_items = list(/obj/item/gun/projectile/automatic/sts/rifle/cult/deepmaints)
 
@@ -304,7 +304,7 @@
 	armor_penetration = 15
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/shield
-	name = "Daskveyian Juggernaut "
+	name = "Daskveyian Juggernaut"
 	desc = "A soul of strength and integrity, recovered from the ravages laid upon it. Outfitted in heavy armor, it protects those in its shadow with unbending steel, for they are the wall that holds back any that seek to harm their kin."
 	icon_state = "psi_juggernaut_glass_Shield"
 	icon_living = "psi_juggernaut_glass_Shield"
@@ -315,7 +315,7 @@
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 4
 	move_to_delay = 5
-	attacktext = "destablizes"
+	attacktext = "destablized"
 
 	drop_items = list()
 
@@ -347,7 +347,7 @@
 	emote_see = list("looks left then right", "breaths heavilly", "adjusts their armour")
 	turns_per_move = 4
 	move_to_delay = 5
-	attacktext = "hacks"
+	attacktext = "hacked"
 
 	drop_items = list()
 
@@ -366,7 +366,7 @@
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
-	attacktext = "punches"
+	attacktext = "punched"
 
 	drop_items = list()
 
@@ -385,7 +385,7 @@
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
-	attacktext = "punches"
+	attacktext = "punched"
 
 	drop_items = list()
 
@@ -425,7 +425,7 @@
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
-	attacktext = "punches"
+	attacktext = "punched"
 
 	drop_items = list()
 

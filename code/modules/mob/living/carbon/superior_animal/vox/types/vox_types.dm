@@ -129,7 +129,7 @@
 	melee_damage_lower = 23
 	melee_damage_upper = 20
 
-	attacktext = "slashes"
+	attacktext = "slashed"
 
 	knock_over_odds = 30
 

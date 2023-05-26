@@ -199,7 +199,7 @@
 		var/obj/item/shield/S = A
 		var/loss = round(S.durability / armor_penetration / 8)
 		block_damage(loss, A)
-		A.visible_message(SPAN_WARNING("\The [src] is weakened by the \the [A]!"))
+		A.visible_message(SPAN_WARNING("\The [src] is weakened by \the [A]!"))
 		playsound(A.loc, 'sound/weapons/shield/shielddissipate.ogg', 50, 1)
 		return TRUE
 	else if(istype(A, /obj/structure/barricade) || istype(A, /obj/structure/table) || istype(A, /obj/structure/low_wall))

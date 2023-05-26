@@ -13,7 +13,7 @@
 	see_in_dark = 10
 	speak_emote = list("buzzes loudly.")
 	emote_see = list("looks around for a target.")
-	attacktext = "stings"
+	attacktext = "stung"
 	meat_amount = 4
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
 	mob_size = MOB_MEDIUM

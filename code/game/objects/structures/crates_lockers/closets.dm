@@ -633,12 +633,12 @@
 	if(damage)
 		damage(damage)
 		attack_animation(user)
-		visible_message(SPAN_DANGER("[user] [attack_message] the [src]!"))
+		visible_message(SPAN_DANGER("\The [user] has [attack_message] \the [src]!"))
 		return 1
 	if(!damage || !wallbreaker)
 		return
 	attack_animation(user)
-	visible_message(SPAN_DANGER("[user] [attack_message] the [src]!"))
+	visible_message(SPAN_DANGER("\The [user] has [attack_message] \the [src]!"))
 	dump_contents()
 	spawn(1) qdel(src)
 	return 1

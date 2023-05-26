@@ -6,7 +6,7 @@
 	icon_state = "suzerain_automaton"
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"
-	attacktext = "pumbles"
+	attacktext = "pumbled"
 	move_to_delay = 5 //Slowdown!
 	turns_per_move = 5
 	meat_amount = 3 // Chunky boi

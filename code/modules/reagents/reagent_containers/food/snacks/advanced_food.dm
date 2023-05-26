@@ -148,8 +148,8 @@
 
 /obj/item/reagent_containers/food/snacks/openable/can
 	name = "ration can"
-	desc = "Can of stew meat, tab right on top for easy opening."
-	alt_desc = "An opened can of stewed meat, ready for consumption."
+	desc = "Can of stew meat, tab right on top for easy opening. Twist the bottom to start the self-heating process, becoming a better meal."
+	alt_desc = "An opened can of hot, stewed meat ready for consumption."
 	icon_state = "ration_can"
 	trash = /obj/item/trash/mre_can
 	filling_color = "#948051"
@@ -208,7 +208,7 @@
 
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee
 	name = "Self-Heating Coffee Thermos Can"
-	desc = "A can-shaped thermos of pure black coffee with a self-heating mechanism. A survivalist's best friend, it requires no fire - just open up, shake and wait before drinking!"
+	desc = "A can-shaped disposable thermos of pure black coffee with a self-heating mechanism. A survivalist's best friend, it requires no fire - just open up, twist the bottom and wait before drinking!"
 	alt_desc = "A can-shaped thermos of pure black coffee, piping hot and ready to warm you up."
 	icon_state = "selfheat_coffee"
 	trash = /obj/item/trash/selfheat_coffee
@@ -223,6 +223,39 @@
 	matter = list(MATERIAL_BIOMATTER = 6)
 	can_warm = TRUE
 	volume = 50 //Little extra space for the nutriments
+
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/examine(mob/user)
+	if(!..(user, get_dist(user, src)))
+		return
+	if (bitecount==0)
+		return
+	else if (bitecount==1)
+		to_chat(user, SPAN_NOTICE("Someone has drank a bit of \the [src]!"))
+	else if (bitecount<=3)
+		to_chat(user, SPAN_NOTICE("Someone has drank from \the [src] approximately [bitecount] time\s!"))
+	else
+		to_chat(user, SPAN_NOTICE("Looks like there's not much coffee left inside \the [src]!"))
+
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/attack_self(mob/user)
+	if(!open)
+		open()
+		to_chat(user, SPAN_NOTICE("You open the tab on \the [src]."))
+		playsound(src, 'sound/effects/canopen.ogg', 50, 1, 1)
+		return
+	if(warm)
+		to_chat(user, SPAN_NOTICE("You already started the heat up process of \the [src], be patient until it's warm."))
+		return
+	if(can_warm)
+		user.visible_message(
+			SPAN_NOTICE("[user] gently twists \the [src]."),
+			"You gently twist the bottom of \the [src] and feel a comfortable heat build up.",
+			playsound(src, 'sound/effects/insert.ogg', 50, 1, 1)
+		)
+		warm = TRUE
+		spawn(300)
+			to_chat(user, "You think \the [src] is hot enough to drink about now.")
+			playsound(src, 'sound/items/smoking.ogg', 50, 1, 1)
+			heat()
 
 // Despite its code path, it's a drink, not a snacc!
 // Until food feeding is replaced with a generalized standard_mob_feed(), this needs to be here for the drink sound to play
