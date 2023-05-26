@@ -91,7 +91,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/church
-	name = "Bonfire Custodians - Liekki Korhonen"
+	name = "Custodian Colonial Upper Assemblage"
 
 	fax_alert = "CHURCH FAX"
 	fax_response = "Church Decree"
@@ -100,7 +100,7 @@
 	darkcolor = "#051d66"
 	lightcolor = "#5b83ff"
 
-	stamptext = "This paper has been stamped with the sanctified symbol of Spark Liekki Korhonen."
+	stamptext = "This paper has been stamped with the sanctified symbol of Higher Custodian Assemblage."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/voidwolves
