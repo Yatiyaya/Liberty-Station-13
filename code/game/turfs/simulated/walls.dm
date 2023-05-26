@@ -236,7 +236,7 @@
 			Proj.damage_types[BRUTE] = round(Proj.damage_types[BRUTE] / 2 + Proj.damage_types[BRUTE] * ricochetchance / 200)
 			Proj.damage_types[BURN] = round(Proj.damage_types[BURN] / 2 + Proj.damage_types[BURN] * ricochetchance / 200)
 			if (!(Proj.testing))
-				visible_message("<span class='danger'>\The [Proj] ricochets from the surface of wall!</span>")
+				visible_message("<span class='danger'>\The [Proj] ricochets from the surface of the wall!</span>")
 			projectile_reflection(Proj)
 			take_damage(min(proj_damage - damagediff, 100))
 			if (!(Proj.testing))

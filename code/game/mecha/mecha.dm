@@ -2223,7 +2223,7 @@ assassination method if you time it right*/
 	if(!deflect_hit(is_melee=1))
 		src.hit_damage(damage, is_melee=1)
 		src.check_for_internal_damage(list(MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST))
-		visible_message(SPAN_DANGER("[user] [attack_message] [src]!"))
+		visible_message(SPAN_DANGER("\The [user] has [attack_message] \the [src]!"))
 		user.attack_log += text("\[[time_stamp()]\] <font color='red'>attacked [src.name]</font>")
 	else
 		src.log_append_to_last("Armor saved.")

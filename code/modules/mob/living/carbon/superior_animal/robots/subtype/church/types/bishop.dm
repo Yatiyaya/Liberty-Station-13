@@ -6,7 +6,7 @@
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"
 	icon_state = "bishop_golem"
-	attacktext = "glares"
+	attacktext = "glared at"
 	fire_verb = "casts a flarming ball of plasma"
 	ranged = TRUE
 	move_to_delay = 4

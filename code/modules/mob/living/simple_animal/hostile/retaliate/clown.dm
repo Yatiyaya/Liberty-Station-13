@@ -129,7 +129,7 @@
 	harm_intent_damage = 1
 	melee_damage_lower = 1
 	melee_damage_upper = 1
-	attacktext = "cheers up"
+	attacktext = "cheered up"
 
 /mob/living/simple_animal/hostile/retaliate/clown/stacked
 	name = "Clowns"
@@ -143,7 +143,7 @@
 	harm_intent_damage = 10
 	melee_damage_lower = 10
 	melee_damage_upper = 10
-	attacktext = "punches in unison"
+	attacktext = "punched in unison"
 	pixel_x = -20
 
 /mob/living/simple_animal/hostile/retaliate/clown/fleshclown
@@ -161,7 +161,7 @@
 	health = 300
 	speed = -5
 	melee_damage_upper = 15
-	attacktext = "limply slaps"
+	attacktext = "limply slapped"
 
 /mob/living/simple_animal/hostile/retaliate/clown/longface
 	name = "Longface"
@@ -181,7 +181,7 @@
 	speed = 10
 	harm_intent_damage = 5
 	melee_damage_lower = 5
-	attacktext = "YA-HONKs"
+	attacktext = "YA-HONKed"
 
 /mob/living/simple_animal/hostile/retaliate/clown/scary
 	name = "Copyright Infringement"
@@ -200,7 +200,7 @@
 	speed = 10
 	harm_intent_damage = 30
 	melee_damage_lower = 40
-	attacktext = "copyright claims"
+	attacktext = "copyright claimed"
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk
 	name = "Honk Hulk"
@@ -219,7 +219,7 @@
 	speed = 2
 	melee_damage_lower = 40
 	melee_damage_upper = 50
-	attacktext = "pummels"
+	attacktext = "pummeled"
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown
 	name = "Chlown"
@@ -236,7 +236,7 @@
 	speed = -2
 	melee_damage_lower = 20
 	melee_damage_upper = 25
-	attacktext = "steals the girlfriend of"
+	attacktext = "stolen the girlfriend out of"
 	attack_sound = 'sound/items/Airhorn.ogg'
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/honcmunculus
@@ -254,7 +254,7 @@
 	speed = -5
 	melee_damage_lower = 15
 	melee_damage_upper = 20
-	attacktext = "ferociously mauls"
+	attacktext = "ferociously mauled"
 	attack_reagent = "mindbreaker"
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/destroyer
@@ -270,7 +270,7 @@
 	speed = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 40
-	attacktext = "acts out divine vengeance on"
+	attacktext = "acted out divine vengeance upon"
 
 /mob/living/simple_animal/hostile/retaliate/clown/mutant
 	name = "Unknown"
@@ -290,7 +290,7 @@
 	speed = -5
 	melee_damage_lower = 10
 	melee_damage_upper = 20
-	attacktext = "awkwardly flails at"
+	attacktext = "awkwardly flailed at"
 
 /mob/living/simple_animal/hostile/retaliate/clown/mutant/blob
 	name = "Something that was once a clown"
@@ -303,6 +303,6 @@
 	health = 400
 	mob_size = MOB_LARGE
 	speed = 20
-	attacktext = "bounces off of"
+	attacktext = "bounced out of"
 	attack_reagent = "mindbreaker"
 

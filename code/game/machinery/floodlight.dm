@@ -174,7 +174,7 @@
 	return // No removing the cell out of these ones for a free Simulacrum cell
 	// Also not unwrenching or wrenching either for free infinite light anywhere.
 
-/obj/machinery/floodlight/update_icon()
+/obj/machinery/floodlight/gate/update_icon()
 	cut_overlays()
 	icon_state = "gate0[on]"
 

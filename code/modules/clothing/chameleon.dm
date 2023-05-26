@@ -21,7 +21,7 @@ GLOBAL_LIST_INIT(chameleon_blacklist, list(
 	/obj/item/clothing/under,
 	/obj/item/clothing/under/rank,
 	/obj/item/clothing/under/color,
-	/obj/item/clothing/accessory,
+	/obj/item/clothing/accessory/holster, // Lacks holster/sheath functionality
 	/obj/item/clothing/glasses/hud,
 	/obj/item/clothing/gloves/color,
 	/obj/item/clothing/head/armor,
@@ -32,7 +32,8 @@ GLOBAL_LIST_INIT(chameleon_blacklist, list(
 	/obj/item/clothing/suit/armor/laserproof,
 	/obj/item/clothing/suit/storage/vest,
 	/obj/item/clothing/suit/storage,
-	/obj/item/clothing/suit/storage/toggle))
+	/obj/item/clothing/suit/storage/toggle,
+	/obj/item/storage/sheath))
 
 
 GLOBAL_LIST_INIT(chameleon_key_to_path, list(
@@ -317,7 +318,29 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	icon_state = "bluetie"
 	item_state = "bluetie"
 	chameleon_type = "accessory"
-	
+
+/obj/item/clothing/accessory/chameleon/disguise(newtype, mob/user)
+	if(!user || user.incapacitated())
+		return
+
+	var/obj/item/clothing/accessory/copy = new newtype(null)
+
+	desc = copy.desc
+	name = copy.name
+	icon = copy.icon
+	icon_state = copy.icon_state
+	item_state = copy.item_state
+	inv_overlay = copy.inv_overlay // So that it changes once worn on the inventory HUD
+	mob_overlay = copy.mob_overlay // Needed for the overlay appearance on accesories
+	body_parts_covered = copy.body_parts_covered
+	flags_inv = copy.flags_inv
+	item_icons = copy.item_icons.Copy()
+	item_state_slots = copy.item_state_slots?.Copy()
+
+	update_wear_icon()
+
+	return copy
+
 /obj/item/gun/energy/chameleon
 	name = "\"Liberty\" pistol"
 	desc = "A hologram projector in the shape of a gun. There is a dial on the side to change the gun's disguise."

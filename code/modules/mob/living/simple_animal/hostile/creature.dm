@@ -43,7 +43,7 @@
 	maxHealth = 100
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	attacktext = "hits"
+	attacktext = "hit"
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/simple_animal/hostile/retaliate/spaceman/leader
@@ -58,7 +58,7 @@
 	maxHealth = 200
 	melee_damage_lower = 20
 	melee_damage_upper = 40
-	attacktext = "hits"
+	attacktext = "hit"
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/simple_animal/hostile/madminer
@@ -73,7 +73,7 @@
 	maxHealth = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	attacktext = "hits"
+	attacktext = "hit"
 	sanity_damage = 1
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 	attack_sound = 'sound/weapons/rapierhit.ogg'

@@ -231,7 +231,7 @@
 // CAPSA
 /obj/item/clothing/mask/gas/capsa
 	name = "CAPSA gas mask"
-	desc = "A sterile, industrial gas mask designed to keep temperature stable, and block harmful gasses from its wearer.\
+	desc = "A sterile, industrial gas mask designed to keep temperature stable, and block harmful gasses from its wearer. \
 			The visor provides excellent visibility even in snowstorms."
 	icon_state = "headhunter" // Katana ZERO reference. - Seb
 	flags_inv = HIDEEYES|HIDEFACE // Doesn't hide ears as it doesn't cover them

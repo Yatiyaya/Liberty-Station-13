@@ -168,7 +168,7 @@
 	*/
 
 	var/deathmessage = "dies."
-	var/attacktext = "bitten"
+	var/attacktext = "bitten" // For reference, these verbs should be worded in plusquamperfect as they will always be preceded by "has". E.g: "[attacker] has [attacktext] [target]" or "has blocked being [attack_verb] by [attacker]"
 	var/list/attack_sound = 'sound/weapons/spiderlunge.ogg'
 	var/attack_sound_chance = 100
 	var/attack_sound_volume = 90

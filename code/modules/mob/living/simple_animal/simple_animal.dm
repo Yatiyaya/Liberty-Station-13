@@ -73,9 +73,9 @@
 	var/min_n2 = 0
 	var/max_n2 = 0
 	var/unsuitable_atoms_damage = 2	//This damage is taken when atmos doesn't fit all the requirements above
-	var/speed = 2 //LETS SEE IF I CAN SET SPEEDS FOR SIMPLE MOBS WITHOUT DESTROYING EVERYTHING. Higher speed is slower, negative speed is faster
+	var/speed = 2 // Higher numbers are slower, negative numbers are faster
 
-	var/attacktext = "attacked"
+	var/attacktext = "attacked" // For reference, these verbs should be mostly worded in plusquamperfect as they will always be preceded by "has". E.g: "[attacker] has [attacktext] [target]" or "has blocked being [attack_verb] by [attacker]"
 	var/attack_sound = null
 	var/friendly = "nuzzles"
 	var/environment_smash = 0
