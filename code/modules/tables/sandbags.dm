@@ -60,7 +60,7 @@
 	if(damage)//Occulus edit
 		damage(damage)//Occulus Edit
 		attack_animation(user)
-		visible_message(SPAN_DANGER("[user] [attack_message] the [src]!"))
+		visible_message(SPAN_DANGER("\The [user] has [attack_message] \the [src]!"))
 		return 1
 
 /obj/structure/sandbags/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)

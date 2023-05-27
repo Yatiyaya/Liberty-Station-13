@@ -50,7 +50,7 @@ var/list/mechtoys = list(
 	if(damage)
 		damage(damage)
 		attack_animation(user)
-		visible_message(SPAN_DANGER("[user] [attack_message] the [src]!"))
+		visible_message(SPAN_DANGER("\The [user] has [attack_message] \the [src]!"))
 		return 1
 
 /obj/structure/plasticflaps/attackby(obj/item/I, mob/user)

@@ -378,7 +378,7 @@
 /obj/vehicle/attack_generic(var/mob/user, var/damage, var/attack_message)
 	if(!damage)
 		return
-	visible_message(SPAN_DANGER("\The [user] [attack_message] the \the [src]!"))
+	visible_message(SPAN_DANGER("The [user] has [attack_message] [src]!"))
 	if(istype(user))
 		user.attack_log += text("\[[time_stamp()]\] <font color='red'>attacked \the [src.name]</font>")
 		user.do_attack_animation(src)

@@ -240,13 +240,15 @@ var/list/flooring_types
 		if(M.stats.getPerk(PERK_KLUTZ) || our_trippah.stats.getStat(STAT_VIG) <= 0) //Negative Vig just makes you faceslam hard. This is equal to rolling uneven number with 1 Hand/Eye Coordination. Klutz is self explanatory
 			if(prob(60 - our_trippah.stats.getStat(STAT_VIG)))
 				to_chat(our_trippah, SPAN_WARNING("Your poor motorics made you slam hard into the plating!"))
+				playsound(M, 'sound/effects/bang.ogg', 50, 1)
 				our_trippah.adjustBruteLoss(15)
 				our_trippah.trip(src, 6)
 				return
 		if(M.stats.getPerk(PERK_SURE_STEP))//You trip even with this perk if klutz or vig below 0
 			return
 		if(prob(50 - our_trippah.stats.getStat(STAT_VIG)) && M.slip(null, 6)) //50 VIG makes you unable to trip
-			to_chat(our_trippah, SPAN_WARNING("You gently slam into the plating!"))
+			to_chat(M, SPAN_WARNING("You gently slam into the plating!"))
+			playsound(M, 'sound/weapons/pinground.ogg', 50, 1)
 			our_trippah.adjustBruteLoss(5)
 			our_trippah.trip(src, 6)
 			return
@@ -272,7 +274,7 @@ var/list/flooring_types
 	space_smooth = SMOOTH_NONE
 	smooth_movable_atom = SMOOTH_NONE
 
-//Hull can upgrade to underplating
+//Hull can downgrade to underplating
 /decl/flooring/reinforced/plating/hull/can_build_floor(var/decl/flooring/newfloor)
 	return FALSE //Not allowed to build directly on hull, you must first remove it and then build on the underplating
 

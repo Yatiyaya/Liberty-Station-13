@@ -4,7 +4,7 @@
 	desc = "The Vassal, an Automaton made by the Custodians and fashioned after a solemn warrior. Reliable, strong, and quite sturdy."
 	faction = "neutral"
 	icon_state = "vassal_automaton"
-	attacktext = "strikes"
+	attacktext = "striken"
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"
 	move_to_delay = 3

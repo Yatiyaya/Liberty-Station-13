@@ -8,7 +8,7 @@
 	faction = "similacrum"
 	layer = MOB_LAYER
 	var/obj/item/loot
-	var/attacktext = "drills"
+	var/attacktext = "drilled" // For reference, these verbs should be worded in plusquamperfect as they will always be preceded by "has". E.g: "[attacker] has [attacktext] [target]" or "has blocked being [attack_verb] by [attacker]"
 	var/environment_smash = 1
 
 /mob/living/bot/miningonestar/UnarmedAttack(var/atom/A, var/proximity)
