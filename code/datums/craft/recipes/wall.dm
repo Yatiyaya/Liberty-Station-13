@@ -71,6 +71,7 @@
 		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
 	)
 	related_stats = list(STAT_MEC)
+
 /datum/craft_recipe/wall/wooden_door
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	time = WORKTIME_LONG
