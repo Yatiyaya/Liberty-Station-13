@@ -143,9 +143,3 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
 	)
-/datum/craft_recipe/machinery/wooden_door
-	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
-	)
-	name = "wooden door"
-	result = /obj/machinery/door/unpowered/simple/wood
