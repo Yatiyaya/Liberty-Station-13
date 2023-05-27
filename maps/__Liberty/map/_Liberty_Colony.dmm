@@ -929,9 +929,11 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
 "ans" = (
-/obj/machinery/light,
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 4
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
@@ -3132,20 +3134,12 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/security/detectives_office)
 "aOV" = (
-/obj/structure/lattice,
-/obj/structure/catwalk,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+/obj/structure/closet/enkindled,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
 	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/plating/under,
-/area/liberty/engineering/engine_room)
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/office)
 "aPd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
@@ -4344,13 +4338,13 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/swo/quarters)
 "beQ" = (
-/obj/random/furniture/pottedplant,
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 5
 	},
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 6
 	},
+/obj/structure/decor_perfect_pillar,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "bfh" = (
@@ -4688,8 +4682,8 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/mop,
 /obj/item/soap/church,
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
@@ -5752,11 +5746,9 @@
 	icon_state = "BaptismFont_Water";
 	name = "Water Fountain"
 	},
-/obj/machinery/alarm{
-	dir = 1;
+/obj/structure/decor_light/wallcandle{
 	pixel_y = -32
 	},
-/obj/machinery/light,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/bonfire/chapelritualroom)
 "bxB" = (
@@ -8043,12 +8035,18 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "can" = (
-/obj/structure/closet/oathbound,
-/obj/machinery/alarm{
-	pixel_y = 32
+/obj/structure/railing{
+	dir = 1;
+	tag = "icon-railing0 (NORTH)"
 	},
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
+/obj/structure/catwalk,
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/engineering/engine_room)
 "cav" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8295,6 +8293,13 @@
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/quartermaster/hangarsupply)
+"ccQ" = (
+/obj/structure/closet/forgemaster,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/office)
 "cdn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -10826,11 +10831,11 @@
 /area/liberty/crew_quarters)
 "cJC" = (
 /obj/structure/toilet,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/steel/monofloor{
 	dir = 4
@@ -12576,9 +12581,6 @@
 "dep" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
-	},
-/obj/machinery/light_switch{
-	pixel_y = 32
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
@@ -15846,8 +15848,8 @@
 "dWg" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/palebush,
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/decor_light/wallcandle{
+	pixel_x = 32
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/bonfire/chapel)
@@ -16202,10 +16204,10 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor1north)
 "ecH" = (
-/obj/machinery/light_switch{
+/obj/structure/closet/oathbound,
+/obj/structure/decor_light/wallcandle{
 	pixel_y = 32
 	},
-/obj/structure/closet/oathbound,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/office)
 "ecI" = (
@@ -17408,6 +17410,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "euy" = (
@@ -17693,6 +17698,10 @@
 /area/liberty/security/maingate_outside)
 "exX" = (
 /obj/machinery/power/thermoelectric_control,
+/obj/structure/cable/yellow{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "eyn" = (
@@ -18963,8 +18972,10 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "ePf" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/light/small,
 /obj/machinery/autolathe/artist_bench,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapelritualroom)
 "ePG" = (
@@ -20630,7 +20641,6 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "fnR" = (
-/obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
@@ -21079,9 +21089,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
-	},
-/obj/effect/floor_decal/industrial/box/white/corners{
-	dir = 1
 	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
@@ -25107,11 +25114,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -30170,6 +30172,9 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/border/carpet/red,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
 "hJa" = (
@@ -33530,6 +33535,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
 "iFD" = (
+/obj/structure/decor_light/beacon,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/bonfire/chapel)
 "iFG" = (
@@ -34104,13 +34110,10 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "iNj" = (
-/obj/structure/noticeboard/church{
+/obj/machinery/autolathe/flarelathe,
+/obj/structure/decor_light/wallcandle{
 	pixel_y = 32
 	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/autolathe/flarelathe,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapelritualroom)
 "iNo" = (
@@ -34145,6 +34148,12 @@
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
+"iNZ" = (
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/command/prime)
 "iOr" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
@@ -36150,8 +36159,8 @@
 /area/liberty/quartermaster/disposaldrop)
 "jot" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/decor_light/wallcandle{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapel)
@@ -41871,6 +41880,9 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "kPc" = (
@@ -47297,6 +47309,9 @@
 "mod" = (
 /obj/structure/table/woodentable,
 /obj/effect/floor_decal/border/carpet/black,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/armory)
 "moh" = (
@@ -48240,6 +48255,13 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/liberty/engineering/atmos)
+"mEA" = (
+/obj/structure/table/woodentable,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
+/turf/simulated/floor/wood,
+/area/liberty/bonfire/vectorrooms)
 "mEB" = (
 /obj/structure/table/rack,
 /obj/item/towel,
@@ -50643,6 +50665,10 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/crew_quarters/bar)
+"nkE" = (
+/obj/structure/decor_edvard_statue,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/liberty/bonfire/chapel)
 "nkH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -54620,8 +54646,8 @@
 "ols" = (
 /obj/structure/flora/small/busha1,
 /obj/structure/flora/ausbushes/ywflowers,
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/bonfire/chapel)
@@ -58259,6 +58285,10 @@
 /obj/item/stack/material/steel/random,
 /obj/item/stack/material/glass/random,
 /obj/item/stack/material/plastic/random,
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapelritualroom)
 "phm" = (
@@ -59916,6 +59946,9 @@
 /obj/item/book/manual/fiction/rimeoftheancientmariner,
 /obj/item/book/manual/fiction/dracula,
 /obj/effect/floor_decal/border/carpet/red,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
 "pEh" = (
@@ -60037,14 +60070,12 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor1east)
 "pGz" = (
-/obj/structure/multiz/stairs/enter/bottom,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/table/woodentable,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/liberty/engineering/engine_room)
+/turf/simulated/floor/wood,
+/area/liberty/bonfire/vectorrooms)
 "pGC" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
@@ -62526,10 +62557,10 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "qjr" = (
-/obj/random/furniture/pottedplant,
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
+/obj/structure/decor_spark_statue,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapel)
 "qjw" = (
@@ -62686,6 +62717,10 @@
 /area/liberty/rnd/lab)
 "qkz" = (
 /obj/item/stool,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/office)
 "qkB" = (
@@ -64300,8 +64335,8 @@
 /area/liberty/crew_quarters/dorm1)
 "qIf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 1
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/bonfire/vectorrooms)
@@ -64671,12 +64706,14 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/gmaster)
 "qMJ" = (
-/obj/machinery/light/small,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "qMK" = (
@@ -64987,12 +65024,11 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#0892d0"
-	},
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 1
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
@@ -66542,8 +66578,8 @@
 /area/liberty/crew_quarters/dorm1)
 "rmT" = (
 /obj/structure/flora/big/bush1,
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/decor_light/wallcandle{
+	pixel_x = 32
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/bonfire/chapel)
@@ -67254,7 +67290,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/obj/machinery/light/small,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/bonfire/vectorrooms)
 "rwC" = (
@@ -67322,6 +67360,11 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/engine_room)
@@ -67796,6 +67839,9 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 1
 	},
+/obj/structure/noticeboard/church{
+	pixel_y = 32
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "rDO" = (
@@ -68030,6 +68076,16 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "rHp" = (
@@ -71997,9 +72053,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/swo/quarters)
 "sFa" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -72007,6 +72060,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
 	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
@@ -74643,6 +74699,9 @@
 /obj/structure/table/woodentable,
 /obj/machinery/camera/network/church{
 	dir = 1
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
 	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
@@ -78065,7 +78124,9 @@
 /area/liberty/medical/medbay/uppercor)
 "uiC" = (
 /obj/random/material,
-/obj/machinery/conveyor/east,
+/obj/machinery/conveyor/east{
+	id = "mining_internal"
+	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/miningdock)
 "uiJ" = (
@@ -83713,13 +83774,13 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "vKm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapel)
@@ -85675,6 +85736,9 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 1
 	},
+/obj/structure/decor_light/wallcandle{
+	pixel_y = 32
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/armory)
 "wjH" = (
@@ -86606,7 +86670,9 @@
 /area/liberty/outside/pond)
 "wvE" = (
 /obj/landmark/machinery/output,
-/obj/machinery/conveyor/southeast/ccw,
+/obj/machinery/conveyor/southeast/ccw{
+	id = "mining_internal"
+	},
 /obj/machinery/camera/network/engineering{
 	dir = 1
 	},
@@ -88982,7 +89048,6 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "xbN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
@@ -89027,12 +89092,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
 "xch" = (
-/obj/machinery/light/small,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "xcr" = (
@@ -89142,7 +89205,9 @@
 "xdM" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/flora/ausbushes/reedbush,
-/obj/machinery/light/small,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/bonfire/chapel)
 "xdX" = (
@@ -92591,10 +92656,18 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "xXO" = (
-/obj/machinery/light,
-/obj/structure/closet/enkindled,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/office)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/liberty/bonfire/vectorrooms)
 "xYl" = (
 /obj/machinery/multistructure/bioreactor_part/bioport,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -92968,13 +93041,13 @@
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor1west)
 "ycT" = (
-/obj/random/furniture/pottedplant,
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 8
 	},
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 10
 	},
+/obj/structure/decor_perfect_pillar,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "ycU" = (
@@ -123220,8 +123293,8 @@ wGR
 ozW
 pTH
 gwk
-pGz
-aOV
+xlj
+tjv
 eqA
 wef
 byl
@@ -124028,7 +124101,7 @@ oNH
 sjj
 exX
 rHi
-xoL
+can
 rxf
 rvg
 hJB
@@ -193698,10 +193771,10 @@ saN
 aRj
 sPV
 mZb
-can
+ecH
 pvP
 cby
-ffy
+ccQ
 tUJ
 pCA
 nJD
@@ -193905,7 +193978,7 @@ fSn
 rSM
 ffy
 tUJ
-mWx
+iNZ
 mWx
 mWx
 tUJ
@@ -194105,7 +194178,7 @@ mZb
 glE
 fSn
 rSM
-xXO
+nFc
 tUJ
 qjo
 kzW
@@ -194307,7 +194380,7 @@ mZb
 ecH
 txN
 rTA
-nFc
+aOV
 tUJ
 wQC
 tBR
@@ -194912,7 +194985,7 @@ sPV
 sPV
 qjr
 rnQ
-xDl
+nkE
 sPV
 tUJ
 tUJ
@@ -197148,7 +197221,7 @@ mBk
 mBk
 sFa
 tYy
-waD
+mEA
 mBk
 bhK
 bhK
@@ -197343,7 +197416,7 @@ kHV
 epz
 rOb
 iKO
-rOb
+xXO
 gWr
 stC
 rOb
@@ -197949,7 +198022,7 @@ kLD
 osi
 mod
 olM
-waD
+pGz
 pRn
 lXR
 eux
