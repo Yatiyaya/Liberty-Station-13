@@ -403,7 +403,7 @@
 
 /obj/item/ammo_magazine/ammobox/antim
 	name = "ammunition box (14.5mm AP)"
-	icon_state = "antim"
+	icon_state = "antim" // Sprites by Skyfire
 	desc = "A box of large 14.5×114mm antimateriel rounds."
 	matter = list(MATERIAL_CARDBOARD = 1)
 	w_class = ITEM_SIZE_BULKY
@@ -431,7 +431,7 @@
 
 /obj/item/ammo_magazine/ammobox/antim/scrap
 	name = "ammunition box (old 14.5mm Anti Materiel)"
-	icon_state = "antim_s"
+	icon_state = "antim_s" // Sprites by Skyfire
 	ammo_type = /obj/item/ammo_casing/antim/scrap
 	max_ammo = 5
 
