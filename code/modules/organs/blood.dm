@@ -72,12 +72,12 @@
 		for(var/datum/wound/W in temp.wounds)
 			if(W.bleeding())
 				if(W.internal)
-					var/removed = W.damage/75
+					var/removed = W.damage/85 //LIBERTY EDIT: ORIGINALLY 75. This was way too lethal
 					if(chem_effects[CE_BLOODCLOT])
 						removed *= 1 - chem_effects[CE_BLOODCLOT]
 					vessel.remove_reagent("blood", temp.wound_update_accuracy * removed)
-					if(prob(1 * temp.wound_update_accuracy))
-						custom_pain("You feel a stabbing pain in your [temp]!",1)
+					if(prob(3 * temp.wound_update_accuracy)) //LIBERTY EDIT: MORE COMMON PAIN MESSAGES
+						to_chat(src, SPAN_DANGER("You're not feeling good at all! Your heart clenches and writhes in pain; and a sickly liquid sensation fills your chest..."))
 				else
 					blood_max += W.damage * WOUND_BLEED_MULTIPLIER
 		if (temp.open)
