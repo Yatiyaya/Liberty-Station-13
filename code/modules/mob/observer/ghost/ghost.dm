@@ -446,42 +446,40 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 
 	if(!MayRespawn(1, ANIMAL))
-		return
-
-	if(!BC_IsKeyAllowedToConnect(usr.ckey) && !usr.client.holder)
-		usr  << SPAN_DANGER("Border Control is enabled, and you haven't been whitelisted!  You're welcome to observe, \
-			    but in order to play, you'll need to be whitelisted!  Please visit our discord to submit an access request!")
-		return
+		if(!check_rights(0, 0) || alert("Normal players must wait at least [ANIMAL_SPAWN_DELAY / 600] minutes to spawn as mouse! Would you like to bypass it?","Warning", "No", "Yes") != "Yes")
+			return
 
 	var/turf/T = get_turf(src)
 	if(!T || !(T.z in GLOB.maps_data.station_levels))
 		to_chat(src, "<span class='warning'>You may not spawn as a mouse on this Z-level.</span>")
 		return
 
-	var/response = alert(src, "Are you -sure- you want to become a mouse? This will not affect your crew or drone respawn time. You can choose to spawn near your ghost or at a random vent on this deck.","Are you sure you want to squeek?","Near Ghost", "Random","Cancel")
-	if(response == "Cancel") return  //Hit the wrong key...again.
-
-
-	//find a viable mouse candidate
 	var/mob/living/simple_animal/mouse/host
 	var/obj/machinery/atmospherics/unary/vent_pump/spawnpoint
-	if (response == "Random")
-		spawnpoint = find_mouse_random_spawnpoint(T.z)
-	else if (response == "Near Ghost")
-		spawnpoint = find_mouse_near_spawnpoint(T)
+
+	switch(alert(src, "Are you -sure- you want to become a mouse? This will not affect your crew or drone respawn time. You can choose to spawn near your ghost or at a random vent on this deck.","Are you sure you want to squeek?","Near Ghost", "Random","Cancel"))
+		if("Cancel")
+			return  //Hit the wrong key...again.
+		if ("Random")
+			spawnpoint = find_mouse_random_spawnpoint(T.z) //find a viable mouse spawn candidate.
+		if ("Near Ghost")
+			spawnpoint = find_mouse_near_spawnpoint(T)
+
+	if(!isobserver(src) || !src.ckey)
+		return //So we can't spawn infinite mice if we've already used this
 
 	if (spawnpoint)
 		host = new /mob/living/simple_animal/mouse(spawnpoint.loc)
 	else
-		to_chat(src, "<span class='warning'>Unable to find any safe, unwelded vents to spawn mice at. The colony must be quite a mess!  Trying again might work, if you think there's still a safe place. </span>")
+		to_chat(src, "<span class='warning'>Unable to find any safe, unwelded vents to spawn mice at. The ship must be quite a mess!  Trying again might work, if you think there's still a safe place. </span>")
 
 	if(host)
 		if(config.uneducated_mice)
 			host.universal_understand = 0
 		announce_ghost_joinleave(src, 0, "They are now a mouse.")
 		host.ckey = src.ckey
+		qdel(src) //This might not be needed
 		to_chat(host, "<span class='info'>You are now a mouse. Interact with players, cause mischief, avoid cats, find food, and try to survive!</span>")
-
 
 //Given an origin point to search around, attempts to find a safe vent as close as possible to that point
 /proc/find_mouse_near_spawnpoint(var/turf/T)
