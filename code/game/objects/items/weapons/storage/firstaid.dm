@@ -487,7 +487,7 @@
 	var/prespawn_item
 
 /obj/item/storage/pill_bottle/populate_contents()
-	if(prespawned_content_amount && prespawned_content_amount)
+	if(prespawn_item && prespawned_content_amount)
 		for(var/i in 1 to prespawned_content_amount)
 			new prespawn_item(src)
 
