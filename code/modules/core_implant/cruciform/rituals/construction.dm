@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/ritual/cruciform/forgemaster/flame_guidance
 	name = "Flame Guidance"
-	phrase = "Oxidate Lecture: Flame Guidance"
+	phrase = "Oxidate Lecture: Flame Guidance."
 	desc = "Learn the requirements for constructing a specific Custodian blueprint."
 	category = "Construction"
 
@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/ritual/cruciform/forgemaster/deconstruction
 	name = "Uproot"
-	phrase = "Oxidate Lecture: Uproot"
+	phrase = "Oxidate Lecture: Uproot."
 	desc = "Deconstruct a Custodian machine infront of you."
 	power = 25
 
@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/ritual/cruciform/forgemaster/construction
 	name = "Weak Manifestation"
-	phrase = "Oxidate Lecture: Weak Manifestation"
+	phrase = "Oxidate Lecture: Weak Manifestation."
 	desc = "Shape materials and components in front of you into a Custodian design."
 	power = 25
 	category = "Construction"
@@ -198,7 +198,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/ritual/cruciform/forgemaster/construction/medium
 	name = "Medium Manifestation"
-	phrase = "Oxidate Lecture: Medium Manifestation"
+	phrase = "Oxidate Lecture: Medium Manifestation."
 	desc = "Shape materials and components in front of you into a Custodian design."
 	power = 30
 	category = "Construction"
@@ -243,7 +243,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/ritual/cruciform/forgemaster/construction/strong
 	name = "Strong Manifestation"
-	phrase = "Oxidate Lecture: Strong Manifestation"
+	phrase = "Oxidate Lecture: Strong Manifestation."
 	desc = "Shape materials and components in front of you into a Custodian design."
 	power = 35
 	category = "Construction"

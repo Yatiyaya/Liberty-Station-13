@@ -20,7 +20,7 @@
 
 datum/ritual/cruciform/oathbound/fireball
 	name = "Manifestation of Flames"
-	phrase = "Oxidate Lecture: Manifestation of Flames"
+	phrase = "Oxidate Lecture: Manifestation of Flames."
 	desc = "Create a launchable fireball on a free hand."
 	power = 35
 
@@ -98,7 +98,7 @@ datum/ritual/cruciform/oathbound/fireball
 
 datum/ritual/cruciform/oathbound/fireball_big
 	name = "Manifestation of Inferno"
-	phrase = "Oxidate Lecture: Manifestation of Inferno"
+	phrase = "Oxidate Lecture: Manifestation of Inferno."
 	desc = "Create a launchable exploding fireball on a free hand."
 	power = 25
 
@@ -115,7 +115,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/eyeflare
 	name = "Eyeflare"
-	phrase = "Oxidate Lecture: Eyeflare"
+	phrase = "Oxidate Lecture: Eyeflare."
 	desc = "This lecture causes a bright flash in a short radius around the user. Has a cooldown of three minutes."
 	power = 30
 	cooldown = TRUE
@@ -136,7 +136,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/radiance_neural
 	name = "Radiance Neural Expression"
-	phrase = "Oxidate Lecture: Radiance Neural Expression"
+	phrase = "Oxidate Lecture: Radiance Neural Expression."
 	desc = "You impart a portion of your inner peace on another, gifting them with insight beyond what they are normally capable of. In doing so, you sacrifice some of your own. Requires thirty minutes between uses."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
@@ -164,7 +164,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/searing_of_torment
 	name = "Searing of Torment"
-	phrase = "Oxidate Lecture: Searing of Torment"
+	phrase = "Oxidate Lecture: Searing of Torment."
 	desc = "A short lecture that removes all pain and heals some damage, requires fifteen minutes between uses."
 	power = 50
 	cooldown = TRUE
@@ -183,7 +183,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/scorching_shell
 	name = "Scorching Shell"
-	phrase = "Oxidate Lecture: Scorching Shell"
+	phrase = "Oxidate Lecture: Scorching Shell."
 	desc = "A lecture fashioned after the idea that body and mind can be a fixed point. For a minute, the speaker slows down drastically, but reduces all damage they recieve, letting them remain as they are for longer. Has a cooldown of fifteen minutes."
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -204,7 +204,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/scorching_smite
 	name = "Scorching Smite"
-	phrase = "Oxidate Lecture: Scorching Smite"
+	phrase = "Oxidate Lecture: Scorching Smite."
 	desc = "A short lecture activated in the middle of battle, empowers the user's melee strikes for thirty seconds. Takes five minutes to recharge."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -228,7 +228,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/restraint_conflagration
 	name = "Restraint Conflagration"
-	phrase = "Oxidate Lecture: Restraint Conflagration"
+	phrase = "Oxidate Lecture: Restraint Conflagration."
 	desc = "A lecture that emboldens the body and muscles for five minutes. Requires thirty minutes between uses."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
@@ -253,7 +253,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathbound/ignite_flesh
 	name = "Ignite Flesh"
-	phrase = "Oxidate Lecture: Ignite Flesh"
+	phrase = "Oxidate Lecture: Ignite Flesh."
 	desc = "Recite the lecture to ignite the surrounding bodies of those without a Hearthcore."
 	power = 60
 
@@ -284,7 +284,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/succour
 	name = "Succour"
-	phrase = "Oxidate Lecture: Succour"
+	phrase = "Oxidate Lecture: Succour."
 	desc = "Heal a nearby Hearthcore user. Has a five minute cooldown"
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -317,7 +317,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/convalescence
 	name = "Convalescence"
-	phrase = "Oxidate Lecture: Convalescence"
+	phrase = "Oxidate Lecture: Convalescence."
 	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -340,7 +340,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/graceful_repose
 	name = "Graceful Repose"
-	phrase = "Oxidate Lecture: Graceful Repose"
+	phrase = "Oxidate Lecture: Graceful Repose."
 	desc = "A tricky litany that heals the mind and body of those around you from esoteric maladies such as genetic malignance or brain damage. Has a fifteen minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -374,7 +374,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/healing_word
 	name = "Healing Word"
-	phrase = "Oxidate Lecture: Healing Word"
+	phrase = "Oxidate Lecture: Healing Word."
 	desc = "Heal every person you can see for a fair amount. This lecture has a cooldown of 15 minutes."
 	cooldown = TRUE
 	power = 50
@@ -410,7 +410,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/realignment
 	name = "Realignment"
-	phrase = "Oxidate Lecture: Realignment"
+	phrase = "Oxidate Lecture: Realignment."
 	desc = "Heals all toxins and liver damage, purges all toxic chemical reagents and stimulants in the blood stream  while curing all addictions. Has a fifteen minute cooldown."
 	power = 50
 	cooldown = TRUE
@@ -434,7 +434,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/enkindled/revival_lecture
 	name = "Revival"
-	phrase = "Oxidate Lecture: Revival"
+	phrase = "Oxidate Lecture: Revival."
 	desc = "Consume parts of a Hearthcore to jumpstart a deceased user's life functions, mending any present neural degeneration in the process. Has a thirty minute cooldown."
 	power = 100
 	cooldown = TRUE
@@ -582,7 +582,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/forgemaster/empowering_flames
 	name = "Empowering Flames"
 	desc = "Consume some Radiance to charge a power cell you are holding."
-	phrase = "Oxidate Lecture: Empowering Flames"
+	phrase = "Oxidate Lecture: Empowering Flames."
 	cooldown = TRUE
 	cooldown_time = 0 MINUTES
 	cooldown_category = "charging"
@@ -615,7 +615,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/tools_of_bonfire
 	name = "Tools of Bonfire"
-	phrase = "Oxidate Lecture: Tools of Bonfire"
+	phrase = "Oxidate Lecture: Tools of Bonfire."
 	desc = "Channels the power of your Hearthcore into an incorporeal omnitool."
 	power = 40
 	cooldown = TRUE
@@ -635,7 +635,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/nerve_learning
 	name = "Nerve Learning"
-	phrase = "Oxidate Lecture: Nerve Learning"
+	phrase = "Oxidate Lecture: Nerve Learning."
 	desc = "This lecture will command a Hearthcore upgrade to attach to a person's Hearthcore. They must lie on a Board of Opposites with the upgrade near them."
 	power = 20
 
@@ -682,7 +682,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /* hash out specific details on how upgrading works  and who does it later
 /datum/ritual/cruciform/forgemaster/unupgrade
 	name = "Nerve Purging"
-	phrase = "Oxidate Lecture: Nerve Purging"
+	phrase = "Oxidate Lecture: Nerve Purging."
 	desc = "This lecture will remove any upgrade from the target's cruciform implant. The upgrade is lost and cannot be recovered."
 	power = 80
 
@@ -711,7 +711,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/greater_empower
 	name = "Greater Empower"
-	phrase = "Oxidate Lecture: Greater Empower"
+	phrase = "Oxidate Lecture: Greater Empower."
 	desc = "This lecture transfers Radiance from your own Hearthcore to another Hearthcore user, draining 20 Radiance to grant the same amount."
 	power = 20
 
@@ -741,7 +741,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/forgemaster/iron_will
 	name = "Lecture of Iron Will"
-	phrase = "Oxidate Lecture: Lecture of Iron Will"
+	phrase = "Oxidate Lecture: Lecture of Iron Will."
 	desc = "Repair a person's mechanical organs and limbs or a mechanical creature in front of you."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -798,7 +798,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/scrying
 	name = "Scrying"
-	phrase = "Oxidate Lecture: Scrying"
+	phrase = "Oxidate Lecture: Scrying."
 	desc = "Look into the world from the eyes of another Hearthcore user. Can only be maintained for half a minute and the target will sense they are being watched, but not by whom."
 	power = 100
 
@@ -836,7 +836,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/reimagining //re-named convalescence to give it to Enkindled and Oathpledge but not give the entire category
 	name = "Reimagining"
-	phrase = "Oxidate Lecture: Reimagining"
+	phrase = "Oxidate Lecture: Reimagining."
 	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -859,7 +859,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/commitment
 	name = "Commitment"
-	phrase = "Oxidate Lecture: Commitment"
+	phrase = "Oxidate Lecture: Commitment."
 	desc = "This lecture will command a Hearthcore to attach to a person lying on a Board of Opposites. The Hearthcore must lay near them, and will require the Epiphany lecture to fully activate."
 
 /datum/ritual/cruciform/oathpledge/commitment/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -912,7 +912,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/epiphany
 	name = "Epiphany"
-	phrase = "Oxidate Lecture: Epiphany"
+	phrase = "Oxidate Lecture: Epiphany."
 	desc = "This lecture will command an unused Hearthcore to activate. The subject must lay on a Board of Opposites."
 
 /datum/ritual/cruciform/oathpledge/epiphany/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -943,7 +943,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/deprivation
 	name = "Deprivation"
-	phrase = "Oxidate Lecture: Deprivation"
+	phrase = "Oxidate Lecture: Deprivation."
 	desc = "This litany will command a Hearthcore to detach from its bearer, if the one bearing it is dead."
 
 /datum/ritual/cruciform/oathpledge/deprivation/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
@@ -980,7 +980,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/reconsecration
 	name = "Reconsecration"
-	phrase = "Oxidate Lecture: Reconsecration"
+	phrase = "Oxidate Lecture: Reconsecration."
 	desc = "The ritual needed for the reactivation and repair of a Hearthcore that has been unwillingly separated from the body or damaged by the bearer's death. The process requires a Board of Opposites and the Hearthcore in question to be attached. \
 	If the Hearthcore has been damaged by the Revival lecture, 25 silver must be laid on the Board aswell, as raw material to reconstitute the Hearthcore."
 	power = 50
@@ -1030,7 +1030,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/adoption
 	name = "Adoption"
-	phrase = "Oxidate Lecture: Adoption"
+	phrase = "Oxidate Lecture: Adoption."
 	desc = "Grants a Hearthcore user in front of you access to Custodian Hatchways."
 	power = 15
 
@@ -1046,7 +1046,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/ordination
 	name = "Ordination"
-	phrase = "Oxidate Lecture: Ordination"
+	phrase = "Oxidate Lecture: Ordination."
 	desc = "Grants a Hearthcore user in front of you access to Secure Custodian Hatchways."
 	power = 15
 
@@ -1062,7 +1062,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/omission
 	name = "Omission"
-	phrase = "Oxidate Lecture: Omission"
+	phrase = "Oxidate Lecture: Omission."
 	desc = "Removes all access from target's Hearthcore."
 	power = 30
 
@@ -1078,7 +1078,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/pilgrim_path
 	name = "Pilgrim's Path"
-	phrase = "Oxidate Lecture: Pilgrim's Path"
+	phrase = "Oxidate Lecture: Pilgrim's Path."
 	desc = "A lecture that enhances the physical attributes of everyone around you for ten minutes. Has a thirty minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
@@ -1108,7 +1108,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/sanctorium_of_life
 	name = "Sanctorium of Life"
-	phrase = "Oxidate Lecture: Sanctorium of Life"
+	phrase = "Oxidate Lecture: Sanctorium of Life."
 	desc = "A lecture that enhances the mental attributes of everyone around you for ten minutes. Has a thirty minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 30 MINUTES
@@ -1139,7 +1139,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/torch_of_guidance
 	name = "Torch of Guidance"
-	phrase = "Oxidate Lecture: Torch of Guidance"
+	phrase = "Oxidate Lecture: Torch of Guidance."
 	desc = "A lecture designed to warn the user of danger, it will reveal the presence of hostile fauna, traps, and potentially monsters hiding as people."
 	power = 50
 
@@ -1174,7 +1174,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/undying_phrases
 	name = "Undying Phrases"
-	phrase = "Oxidate Lecture: Undying Phrases"
+	phrase = "Oxidate Lecture: Undying Phrases."
 	desc = "Transmit a message to all Hearthcore users."
 	power = 25
 
@@ -1195,7 +1195,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/inspiration
 	name = "Inspiration"
-	phrase = "Oxidate Lecture: Inspiration"
+	phrase = "Oxidate Lecture: Inspiration."
 	desc = "Increases the Sanity recovery rate of the person in front of you for fifteen minutes."
 	effect_time = 15 MINUTES
 	power = 65
@@ -1222,7 +1222,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/order_of_misery
 	name = "Order of Misery"
-	phrase = "Oxidate Lecture: Order of Misery"
+	phrase = "Oxidate Lecture: Order of Misery."
 	desc = "Decreases the Sanity recovery rate of the person in front of you for fifteen minutes."
 	effect_time = 15 MINUTES
 	power = 65
@@ -1249,7 +1249,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/disgrace
 	name = "Disgrace"
-	phrase = "Oxidate Lecture: Disgrace"
+	phrase = "Oxidate Lecture: Disgrace."
 	desc = "Inflict a harmful psychological effect on the person in front of you."
 	power = 35
 
@@ -1265,7 +1265,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 
 /datum/ritual/cruciform/oathpledge/sight_of_bonfire
 	name = "Sight of Bonfire"
-	phrase = "Oxidate Lecture: Sight of Bonfire"
+	phrase = "Oxidate Lecture: Sight of Bonfire."
 	desc = "Toggles revealing other Hearthcore users."
 
 /datum/ritual/cruciform/oathpledge/sight_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
