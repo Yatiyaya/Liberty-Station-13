@@ -1411,3 +1411,18 @@ ADMIN_VERB_ADD(/datum/admins/proc/spawn_artifact, R_ADMIN, FALSE)
 			A.secondary_effect.trigger = secondary_trigger
 		else
 			QDEL_NULL(A.secondary_effect)
+
+ADMIN_VERB_ADD(/datum/admins/proc/z_level_shooting, R_SERVER, FALSE)
+/datum/admins/proc/z_level_shooting()
+	set category = "Server"
+	set name = "Toggle shooting between z-levels"
+
+	if(!check_rights(R_ADMIN))
+		return
+
+	config.z_level_shooting = !(config.z_level_shooting)
+	if (config.z_level_shooting)
+		to_chat(world, "<B>Shooting between z-levels has been globally enabled! Use the lookup verb to shoot up, click on empty spaces to shoot down!</B>")
+	else
+		to_chat(world, "<B>Shooting between z-levels has been globally disabled!</B>")
+	log_and_message_admins("toggled z_level_shooting.")

@@ -61,3 +61,7 @@
 #define CAL_70 "19mm explosive"
 #define CAL_SCI "laser casings"
 */
+
+#define HEIGHT_LOW 1
+#define HEIGHT_CENTER 0
+#define HEIGHT_HIGH 2
