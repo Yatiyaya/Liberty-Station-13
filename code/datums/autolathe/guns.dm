@@ -92,6 +92,10 @@
 	name = "ML \"Judge\""
 	build_path = /obj/item/gun/projectile/shotgun/judge
 
+/datum/design/autolathe/gun/ks23
+	name = "Car-Van SG KS-23"
+	build_path = /obj/item/gun/projectile/shotgun/pump/ks
+
 //C A R B I N E S
 //6 . 5 m m
 

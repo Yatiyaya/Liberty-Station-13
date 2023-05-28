@@ -315,3 +315,15 @@
 		/datum/design/autolathe/ammo/rifle_ammobox,
 		/datum/design/autolathe/container/ammocan_excel
 	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ks
+	disk_name = "design disk KS-23 SG"
+	desc = "The back has a machine etching: \"Riot Control!.\""
+	icon_state = "excelsior"
+	license = -1
+	designs = list(
+		/datum/design/autolathe/gun/ks23,
+		/datum/design/autolathe/ammo/shotgun,
+		/datum/design/autolathe/ammo/shotgun_beanbag,
+		/datum/design/autolathe/ammo/shotgun_pellet
+	)
