@@ -102,7 +102,17 @@
 
 	area_type = /area
 	force_areas = TRUE
-	areas_affectares = list()
+	areas_affectares = list(/area/liberty/dungeon/outside/frozen_forest, \
+							/area/liberty/dungeon/outside/frozen_forest/crashsite, \
+							/area/liberty/outside/pond, \
+							/area/liberty/outside/lakeside, \
+							/area/liberty/outside/meadow, \
+							/area/liberty/outside/inside_colony, \
+							/area/liberty/outside/holes_in_mountain, \
+							/area/liberty/outside/range, \
+							/area/liberty/outside/forest, \
+							/area/liberty/security/maingate_outside
+							)
 
 	immunity_type = "cold" //Unused
 	var/snowstorm_temp = 233.15 //-40c
