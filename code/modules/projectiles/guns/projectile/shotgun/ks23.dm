@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump/ks
 	name = "\"Kerm Streak\" SG KS-23"
-	desc = "\"Kerm Streak\", designed by Car-Van for exspensive crowd control, said to be made with reused anti-aircraft barrels."
+	desc = "\"Kerm Streak\", designed by Car-Van for extensive crowd control, said to be made with reused anti-aircraft barrels."
 	icon = 'icons/obj/guns/projectile/ks23.dmi'
 	icon_state = "ks23"
 	item_state = "ks23"
