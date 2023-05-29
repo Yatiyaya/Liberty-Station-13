@@ -8374,12 +8374,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/liberty/security/detectives_office)
-"cez" = (
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "ceA" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "7,0"
@@ -17931,26 +17925,13 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/genetics)
 "eBu" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 10
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 9
-	},
-/turf/simulated/floor/carpet/bcarpet,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "eBG" = (
 /obj/structure/multiz/stairs/enter/bottom{
@@ -34264,7 +34245,8 @@
 /obj/item/computer_hardware/hard_drive/portable/design/nt/healing,
 /obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
 /obj/item/computer_hardware/hard_drive/portable/design/nt/textiles,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "iNo" = (
 /obj/machinery/door/airlock/vault{
@@ -34349,17 +34331,11 @@
 /obj/item/storage/box/matches,
 /turf/simulated/floor/wood,
 /area/colony)
-"iOV" = (
-/obj/machinery/door/holy{
-	name = "Forge Room"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/bonfire/chapelritualroom)
 "iOX" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "iPc" = (
@@ -38007,6 +37983,7 @@
 /area/liberty/medical/medbay/uppercor)
 "jLC" = (
 /obj/landmark/join/start/forgemaster,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "jLG" = (
@@ -52636,6 +52613,7 @@
 /area/liberty/bonfire/storage)
 "nGr" = (
 /obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "nGu" = (
@@ -53092,9 +53070,11 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/bioreactor)
 "nMJ" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/chapelritualroom)
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/bonfire/chapel)
 "nMM" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -62575,6 +62555,13 @@
 /obj/machinery/door/window/northleft,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/pros/prep)
+"qfI" = (
+/obj/machinery/door/holy{
+	name = "Forge Room"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/bonfire/chapelritualroom)
 "qfO" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/ornate,
@@ -64018,6 +64005,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/crew_quarters/janitor)
 "qzb" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "qzf" = (
@@ -193239,7 +193227,7 @@ blG
 jot
 kUb
 bVH
-cez
+nMJ
 jFM
 kUb
 kUb
@@ -193441,7 +193429,7 @@ jvb
 jvb
 exD
 dzz
-iOV
+qfI
 sGB
 ciF
 dzz
@@ -193643,7 +193631,7 @@ jvb
 bjh
 pfw
 dzz
-nMJ
+qzb
 wrh
 nGr
 jfm
