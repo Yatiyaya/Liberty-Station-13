@@ -3,29 +3,54 @@
 
 /obj/structure/ore_box
 	icon = 'icons/obj/mining.dmi'
-	icon_state = "union_mining_cart"
+	icon_state = "mining_cart" //sprites curtosy of Ezoken#5894 A.K.A. Dromkii
 	name = "mining cart"
 	desc = "A heavy cart used for storing ore."
 	density = 1
 	breakable = TRUE
-	parts = /obj/structure/ore_box/destroyed
-	health = 120 //we are a metal cart. We are pretty tanky.
+	health = 250 //we are a metal cart. We are pretty tanky.
+
+/obj/structure/ore_box/union
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "union_mining_cart"
+	name = "union mining cart"
+	desc = "A heavy union cart used for storing ore."
 
 /obj/structure/ore_box/destroyed
 	name = "broken mining cart"
 	desc = "A busted cart. This thing won't move anymore."
-	icon_state = "union_mining_cart_broken"
+	icon_state = "mining_cart_broken" //sprites curtosy of Ezoken#5894 A.K.A. Dromkii
 	parts = null
 	breakable = TRUE
 	anchored = 1
-	health = 30 //we are on our last legs. This is your last chance to empty the cart.
+	health = 50 //we are on our last legs. This is your last chance to empty the cart.
+
+/obj/structure/ore_box/destroyed/union
+	name = "broken union mining cart"
+	icon_state = "union_mining_cart_broken"
 
 /obj/structure/ore_box/Destroy()
+	var/obj/structure/ore_box/destroyed/target_cart = null
+	if(!src.loc)//stupid that this check is needed. But issues were coming up with no location runtimes.
+		return
+	if(istype(src, /obj/structure/ore_box/destroyed))//gotta make sure we arnt dupping our carts.
+		..()
+		return
+	if(istype(src, /obj/structure/ore_box) && !istype(src, /obj/structure/ore_box/union))
+		target_cart = new /obj/structure/ore_box/destroyed(src.loc)
+		if(target_cart && src.contents) //check for a cart and actual stuff to move.
+			for (var/obj/item/stack/ore/O in src.contents)
+				O.loc = target_cart
+		..()
+		return
+	if(istype(src, /obj/structure/ore_box/union))
+		target_cart = new /obj/structure/ore_box/destroyed/union(src.loc)
+		if(target_cart && src.contents) //check for a cart and actual stuff to move.
+			for (var/obj/item/stack/ore/O in src.contents)
+				O.loc = target_cart
+		..()
+		return
 	..()
-	var/target_cart = (/obj/structure/ore_box/destroyed in src.loc.contents)
-	if(target_cart) //if we got a broken cart we move the contents to it.
-		for (var/obj/item/stack/ore/O in src.contents)
-			O.loc = target_cart
 
 /obj/structure/ore_box/attackby(obj/item/W as obj, mob/user as mob)
 	if (istype(W, /obj/item/stack/ore))
@@ -39,8 +64,33 @@
 				S.remove_from_storage(O, src) //This will move the item to this item's contents
 			playsound(loc, S.use_sound, 50, 1, -5)
 			user.visible_message(SPAN_NOTICE("[user.name] empties the [S] into the box"), SPAN_NOTICE("You empty the [S] into the box."), SPAN_NOTICE("You hear a rustling sound"))
+			return
 		else
 			to_chat(user, SPAN_WARNING("There's no ore inside the [S] to empty into here"))
+			return
+	if(QUALITY_WELDING in W.tool_qualities)
+		if(istype(src, /obj/structure/ore_box/destroyed) && !istype(src, /obj/structure/ore_box/destroyed/union))
+			if(W.use_tool(user, src, WORKTIME_LONG, QUALITY_WELDING, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
+				var/obj/structure/ore_box/targetbox = new/obj/structure/ore_box(src.loc)
+				if(src.contents)
+					for (var/obj/item/stack/ore/O in src.contents)
+						O.loc = targetbox
+				qdel(src)
+				return
+		if(istype(src, /obj/structure/ore_box/destroyed/union))
+			if(W.use_tool(user, src, WORKTIME_LONG, QUALITY_WELDING, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
+				var/obj/structure/ore_box/union/targetbox = new/obj/structure/ore_box/union(src.loc)
+				if(src.contents)
+					for (var/obj/item/stack/ore/O in src.contents)
+						O.loc = targetbox
+				qdel(src)
+				return
+	else
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		if(W.damtype == BRUTE || W.damtype == BURN)
+			user.do_attack_animation(src)
+			playsound(loc, 'sound/effects/grillehit.ogg', 80, 1)
+			take_damage(W.force*W.structure_damage_factor)
 	return
 
 /obj/structure/ore_box/examine(mob/user)
