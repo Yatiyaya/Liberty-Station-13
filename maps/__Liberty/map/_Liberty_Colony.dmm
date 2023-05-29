@@ -8374,6 +8374,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/liberty/security/detectives_office)
+"cez" = (
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/bonfire/chapel)
 "ceA" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "7,0"
@@ -34343,6 +34349,13 @@
 /obj/item/storage/box/matches,
 /turf/simulated/floor/wood,
 /area/colony)
+"iOV" = (
+/obj/machinery/door/holy{
+	name = "Forge Room"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/liberty/bonfire/chapelritualroom)
 "iOX" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
@@ -42340,12 +42353,6 @@
 /obj/random/mob/roaches,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/surface_maints_1)
-"kTb" = (
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "kTl" = (
 /obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
@@ -193232,7 +193239,7 @@ blG
 jot
 kUb
 bVH
-kTb
+cez
 jFM
 kUb
 kUb
@@ -193434,7 +193441,7 @@ jvb
 jvb
 exD
 dzz
-sGB
+iOV
 sGB
 ciF
 dzz
