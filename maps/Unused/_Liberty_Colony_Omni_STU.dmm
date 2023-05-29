@@ -9172,7 +9172,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/maintenance/undergroundfloor1south)
 "bQx" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
 "bQE" = (
@@ -58749,7 +58749,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1west)
 "lru" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
@@ -60734,7 +60734,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "lNq" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
 "lNr" = (
@@ -65053,7 +65053,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/engineering/atmos)
 "mDe" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
@@ -107488,7 +107488,7 @@
 /obj/machinery/camera/network/propis{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/reinforced/foreman,
+/obj/structure/closet/secure_closet/reinforced/field_shepherd,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/pros/foreman)
 "uVe" = (
@@ -117935,7 +117935,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/inside_colony)
 "wTZ" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},

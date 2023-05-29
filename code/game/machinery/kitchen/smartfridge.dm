@@ -71,7 +71,7 @@
 /obj/machinery/smartfridge/kitchen/church
 	name = "\improper Church Fridge"
 	desc = "The panel says it won't allow anyone without access to the church."
-	req_one_access = list(access_nt_disciple)
+	req_one_access = list(access_bonfire_disciple)
 
 /obj/machinery/smartfridge/kitchen/church/public
 	name = "\improper Public Church Fridge"

@@ -1,25 +1,25 @@
 
-//Prospector gear, you'll notice it is immensely heavily randomized, this is intentional to add some replayibility to prospector starts.
+//Fontaine gear, you'll notice it is immensely heavily randomized, this is intentional to add some replayibility to Shipbreaker/Trapper starts.
 //To anyone editing this, I advise using if statements over switch to better have control of what loot spawns, it rolls each in order of success so you can better set the odds.
 //The lockers are set to personal to prevent prospectors from opening every locker in an effort to get the best gear rolls. -Kazkin
-/obj/structure/closet/secure_closet/personal/prospector
+/obj/structure/closet/secure_closet/personal/shipbreaker
 	name = "shipbreaker locker"
-	req_access = list(access_foreman)
-	access_occupy = list(access_prospector)
-	icon_state = "prospector" // Mixed dirt/jungle camo for the soul, since they usually brave the jungle a lot. - Seb
+	req_access = list(access_field_shepherd)
+	access_occupy = list(access_fontaine)
+	icon_state = "prospector" // TODO: Snow-themed locker sprite please
 	//var/main_weapon_cache
 	var/side_arm_cache
 	var/melee_cache
 	var/bag_cache
 
 
-/obj/structure/closet/secure_closet/personal/prospector/proc/gain_rng()
+/obj/structure/closet/secure_closet/personal/shipbreaker/proc/gain_rng()
 	//main_weapon_cache = pickweight(list("SMG" = 18, "SHOTGUN" = 8, "RIFLE" = 6, "EGUN" = 8))
 	side_arm_cache = pickweight(list("PISTOL" = 16, "REVOLVER" = 8, "EGUN_P" = 4))
 	melee_cache = pickweight(list("MACHETE" = 18, "KATANA" = 6, "PHAMMER" = 4))
 	bag_cache = pickweight(list("INDUSTRIAL" = 36, "DUFFEL" = 28, "MILI" = 16))
 
-/obj/structure/closet/secure_closet/personal/prospector/populate_contents()
+/obj/structure/closet/secure_closet/personal/shipbreaker/populate_contents()
 	gain_rng()
 
 	new /obj/item/device/radio/headset/headset_pro(src)
@@ -92,25 +92,22 @@
 	if(prob(15))
 		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
 
-
-//Salvager lockers have less potential combat power by capped potential while still balancing with the most likely to spawn gear.
-//In return they get tools and medical supplies depending on luck with the potential of getting some seriously good spawns. -Kaz
-/obj/structure/closet/secure_closet/personal/salvager
+/obj/structure/closet/secure_closet/personal/trapper
 	name = "trapper locker"
-	req_access = list(access_foreman)
-	access_occupy = list(access_prospector)
-	icon_state = "oldstyle" // Placeholder for lack of a better salvage-oriented looking locker.
+	req_access = list(access_field_shepherd)
+	access_occupy = list(access_fontaine)
+	icon_state = "oldstyle" // TODO: Better sprite
 	var/side_arm_cache
 	var/melee_cache
 	var/bag_cache
 
 
-/obj/structure/closet/secure_closet/personal/salvager/proc/gain_rng()
+/obj/structure/closet/secure_closet/personal/trapper/proc/gain_rng()
 	side_arm_cache = pickweight(list("PISTOL" = 6, "REVOLVER" = 12))
 	melee_cache = pickweight(list("MACHETE" = 12, "KATANA" = 8))
 	bag_cache = pickweight(list("INDUSTRIAL" = 24, "DUFFEL" = 16, "MILI" = 8))
 
-/obj/structure/closet/secure_closet/personal/salvager/populate_contents()
+/obj/structure/closet/secure_closet/personal/trapper/populate_contents()
 	gain_rng()
 
 	new /obj/item/device/radio/headset/headset_pro(src)
@@ -171,11 +168,9 @@
 	new /obj/item/device/radio/off(src)
 
 
-//Foremans can technically do the jobs of both prospectors and salvagers (but not as well) and as such have better odds on the gear they start with.
-//Still based on proability but hey, at least you get it all. -Kaz
-/obj/structure/closet/secure_closet/reinforced/foreman
+/obj/structure/closet/secure_closet/reinforced/field_shepherd
 	name = "field shepherds' locker"
-	req_access = list(access_foreman)
+	req_access = list(access_field_shepherd)
 	icon_state = "foreman"
 
 //Small note from Trilby: Forman loot picks are basically just the BEST versons of the scav lockers so theirs no doble coin flip
@@ -184,11 +179,11 @@
 	var/side_arm_cache
 	var/bag_cache
 
-/obj/structure/closet/secure_closet/reinforced/foreman/proc/gain_rng()
+/obj/structure/closet/secure_closet/reinforced/field_shepherd/proc/gain_rng()
 	side_arm_cache = pickweight(list("PISTOL" = 12, "REVOLVER" = 8,))
 	bag_cache = pickweight(list("INDUSTRIAL" = 24, "DUFFEL" = 16, "MILI" = 8, "BLUESPACE" = 1))
 
-/obj/structure/closet/secure_closet/reinforced/foreman/populate_contents()
+/obj/structure/closet/secure_closet/reinforced/field_shepherd/populate_contents()
 	gain_rng()
 
 	new /obj/item/device/radio/headset/heads/foreman(src)

@@ -16,7 +16,7 @@
 	name = "custodian secure gate"
 	desc = "A door crafted by the Custodians that requires no power and doesn't seem to have panel you could open. This one requires higher ranking in the Custodians to open."
 	icon = 'icons/obj/doors/Door_holy_preacher.dmi'
-	minimal_holiness = CLEARANCE_CLERGY
+	minimal_holiness = CLEARANCE_ORDER
 
 /obj/item/forgesigil //This is an item that only serves as an all-access key for doors and a vendor or two for anyone
 	name = "custodian forge sigil"

@@ -18456,7 +18456,7 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/rnd/xenobiology)
 "eqV" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
@@ -24423,7 +24423,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -24807,7 +24807,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/maintenance/undergroundfloor1west)
 "fOP" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "fOR" = (
@@ -28277,7 +28277,7 @@
 	dir = 8;
 	pixel_x = 32
 	},
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "gEi" = (
@@ -34366,7 +34366,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/command/bridge)
 "hYM" = (
-/obj/structure/closet/secure_closet/reinforced/foreman,
+/obj/structure/closet/secure_closet/reinforced/field_shepherd,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/foreman)
 "hYS" = (
@@ -53745,7 +53745,7 @@
 	name = "Residential District Maintenance"
 	})
 "mAj" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
@@ -55537,7 +55537,7 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "mVc" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "mVl" = (
@@ -81344,7 +81344,7 @@
 	},
 /obj/machinery/camera/network/propis,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "sIp" = (
@@ -85682,7 +85682,7 @@
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor1east)
 "tHR" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/machinery/camera/network/propis,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
@@ -86989,7 +86989,7 @@
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/command/swo/quarters)
 "tUS" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/light{
 	dir = 4
 	},

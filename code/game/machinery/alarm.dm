@@ -64,7 +64,7 @@
 
 /obj/machinery/alarm/server/New()
 	..()
-	req_access = list(access_rd, access_atmospherics, access_engine_equip)
+	req_access = list(access_rp, access_atmospherics, access_engine_equip)
 	TLV["oxygen"] =			list(-1.0, -1.0,-1.0,-1.0) // Partial pressure, kpa
 	TLV["carbon dioxide"] = list(-1.0, -1.0,   5,  10) // Partial pressure, kpa
 	TLV["plasma"] =			list(-1.0, -1.0, 0.01, 0.5) // Partial pressure, kpa

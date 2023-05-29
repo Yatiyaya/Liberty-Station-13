@@ -5,7 +5,7 @@
 	icon_state = "teleporter"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_BLUESPACE = 6)
-	//var/locking_access = access_rd
+	//var/locking_access = access_rp
 	var/silk_id = "" //using by snare controller to teleport user to controller's mark
 	price_tag = 250
 

@@ -13,9 +13,9 @@
 	ideal_character_age = 40
 	minimum_character_age = 25
 	playtimerequired = 1200
-	security_clearance = CLEARANCE_CLERGY
+	security_clearance = CLEARANCE_ORDER
 	health_modifier = 20
-	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
+	access = list(access_oathpledge, access_bonfire_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
 
 	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
@@ -69,7 +69,7 @@
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
 	health_modifier = 20
-	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
+	access = list(access_bonfire_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
 
 	initial_balance = INIT_BALANCE_MENIAL
@@ -117,7 +117,7 @@
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
-	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
+	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_bonfire_disciple)
 
 	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_LABOUR
@@ -165,7 +165,7 @@
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
-	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
+	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_bonfire_disciple)
 
 	initial_balance = INIT_BALANCE_MENIAL
 	wage = WAGE_LABOUR

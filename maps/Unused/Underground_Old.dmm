@@ -6721,7 +6721,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
 "arw" = (
-/obj/structure/closet/secure_closet/reinforced/foreman,
+/obj/structure/closet/secure_closet/reinforced/field_shepherd,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/pros/foreman)
 "arx" = (
@@ -9928,7 +9928,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "aAe" = (
@@ -27242,7 +27242,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "bsS" = (
@@ -36859,7 +36859,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/command/fo)
 "bPG" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "bPH" = (
@@ -39514,7 +39514,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "bVE" = (
@@ -40897,7 +40897,7 @@
 /area/liberty/medical/cryo)
 "bYN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "bYO" = (

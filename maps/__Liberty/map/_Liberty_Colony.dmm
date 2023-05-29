@@ -2862,7 +2862,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "aLS" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "aLU" = (
@@ -23508,7 +23508,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapel)
 "fZN" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -25679,7 +25679,7 @@
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor1north)
 "gDw" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -29627,7 +29627,7 @@
 /turf/simulated/mineral,
 /area/liberty/outside/forest)
 "hBY" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "hBZ" = (
@@ -37784,7 +37784,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "jLi" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -49470,7 +49470,7 @@
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavehideout)
 "mUI" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -63404,7 +63404,7 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "quM" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
@@ -79298,7 +79298,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/side/f2section1)
 "uzb" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
@@ -89356,7 +89356,7 @@
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/outside/pond)
 "xfq" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -93695,7 +93695,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "yjX" = (
-/obj/structure/closet/secure_closet/reinforced/foreman,
+/obj/structure/closet/secure_closet/reinforced/field_shepherd,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/foreman)
 "yko" = (

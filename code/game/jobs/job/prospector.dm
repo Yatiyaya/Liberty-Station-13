@@ -19,7 +19,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/shepherd
 	playtimerequired = 1200
 	access = list(
-		access_prospector, access_foreman, access_external_airlocks, access_eva, access_heads, access_sec_doors,
+		access_fontaine, access_field_shepherd, access_external_airlocks, access_eva, access_heads, access_sec_doors,
 		access_RC_announce, access_keycard_auth, access_maint_tunnels, access_medical_suits //for locating scav team dead bodies
 	)
 
@@ -75,7 +75,7 @@
 	health_modifier = 5
 
 	access = list(
-		access_prospector, access_external_airlocks, access_eva, access_maint_tunnels
+		access_fontaine, access_external_airlocks, access_eva, access_maint_tunnels
 	)
 
 	stat_modifiers = list(
@@ -121,7 +121,7 @@
 	health_modifier = 10
 
 	access = list(
-		access_prospector, access_external_airlocks, access_eva, access_maint_tunnels
+		access_fontaine, access_external_airlocks, access_eva, access_maint_tunnels
 	)
 
 	stat_modifiers = list(

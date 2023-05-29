@@ -150,24 +150,24 @@
 	switch(code)
 		if(ACCESS_REGION_ALL)
 			return "All"
-		if(ACCESS_REGION_SECURITY) //security
-			return "Security"
-		if(ACCESS_REGION_MEDBAY) //medbay
-			return "Medbay"
-		if(ACCESS_REGION_RESEARCH) //research
-			return "Research"
-		if(ACCESS_REGION_ENGINEERING) //engineering and maintenance
-			return "Engineering"
+		if(ACCESS_REGION_WATCH) //security
+			return "Liberty Watch"
+		if(ACCESS_REGION_CAPSA) //medbay
+			return "CAPSA (Medical)"
+		if(ACCESS_REGION_PIRS) //research
+			return "PIRS (Science)"
+		if(ACCESS_REGION_UNION) //engineering and maintenance
+			return "Terra-Therma Union"
 		if(ACCESS_REGION_COMMAND) //command
 			return "Command"
 		if(ACCESS_REGION_GENERAL) //station general
-			return "Station General"
-		if(ACCESS_REGION_SUPPLY) //supply
-			return "Supply"
-		if(ACCESS_REGION_CHURCH) //Neotheo
-			return "Church"
-		if(ACCESS_REGION_PROSPECTOR) //Prospectors
-			return "Prospector"
+			return "Liberty General"
+		if(ACCESS_REGION_SKYLIGHT) //supply
+			return "Skylight Syndicate"
+		if(ACCESS_REGION_CUSTODIANS) //Neotheo
+			return "Custodians of the Bonfire"
+		if(ACCESS_REGION_FONTAINE) //Prospectors
+			return "Fontaine Heavy Industries"
 
 /proc/get_access_desc(id)
 	var/list/AS = get_all_access_datums_by_id()
