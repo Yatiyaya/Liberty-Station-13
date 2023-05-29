@@ -30984,15 +30984,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black/corner{
-	dir = 5
-	},
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 6
+	},
+/obj/effect/floor_decal/border/carpet/black/corner{
+	dir = 10
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
@@ -33884,8 +33880,7 @@
 "iIu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber,
-/obj/structure/table/woodentable,
-/obj/machinery/recharger,
+/obj/machinery/autolathe/flarelathe,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "iIz" = (
@@ -34256,10 +34251,13 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "iNj" = (
-/obj/machinery/autolathe/flarelathe,
 /obj/structure/decor_light/wallcandle{
 	pixel_y = 32
 	},
+/obj/structure/table/woodentable,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/healing,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
+/obj/item/computer_hardware/hard_drive/portable/design/nt/textiles,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapelritualroom)
 "iNo" = (
@@ -37519,16 +37517,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
 /obj/effect/floor_decal/border/carpet/black,
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 6
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
@@ -38306,13 +38297,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
 "jQW" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -42347,6 +42340,12 @@
 /obj/random/mob/roaches,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/surface_maints_1)
+"kTb" = (
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/bonfire/chapel)
 "kTl" = (
 /obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
@@ -53086,10 +53085,7 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/bioreactor)
 "nMJ" = (
-/obj/structure/table/woodentable,
-/obj/item/computer_hardware/hard_drive/portable/design/nt/textiles,
-/obj/item/computer_hardware/hard_drive/portable/design/nt/forging,
-/obj/item/computer_hardware/hard_drive/portable/design/nt/healing,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/chapelritualroom)
 "nMM" = (
@@ -60047,12 +60043,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
+/obj/effect/floor_decal/border/carpet/black/corner{
+	dir = 9
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
+/obj/effect/floor_decal/border/carpet/black/corner{
+	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
@@ -85862,13 +85857,9 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/command/bridge)
 "wgg" = (
-/obj/structure/sign/faction/derelict1{
-	desc = "ATTENTION: The biogenerator is a dangerous device. All members of the church must wear there vests and coats to protect from the biohazards. Failure to do so will result in a swift death due to toxins and a new cruciform will need to be implanted. Do not use the biogenerator without protection.";
-	name = "NOTICE: Dangerous Biohazard";
-	pixel_y = 32
-	},
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/church,
+/obj/structure/table/woodentable,
+/obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "wgl" = (
@@ -91683,13 +91674,13 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/obj/effect/floor_decal/border/carpet/black,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
 "xEX" = (
 /turf/simulated/floor/rock,
@@ -193241,7 +193232,7 @@ blG
 jot
 kUb
 bVH
-kUb
+kTb
 jFM
 kUb
 kUb
@@ -193443,7 +193434,7 @@ jvb
 jvb
 exD
 dzz
-ciF
+sGB
 sGB
 ciF
 dzz
