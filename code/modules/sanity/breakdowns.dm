@@ -491,7 +491,7 @@
 	..()
 
 /datum/breakdown/negative/unsightly/can_occur()
-	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.stats.getPerk(PERK_NIHILIST)) //Syths cant really revolver
+	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.stats.getPerk(PERK_NIHILIST))
 		return FALSE
 	return TRUE
 
@@ -549,9 +549,9 @@
 				checker.adjustOxyLoss(20)
 
 /datum/breakdown/negative/gasping_breaths/can_occur()
-	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.species.reagent_tag == IS_OPIFEX) //Syths cant really revolver
+	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.species.reagent_tag == IS_OPIFEX)
 		return FALSE
-	if(holder.owner.stats.getPerk(PERK_LUNGS_OF_IRON)) //Syths cant really revolver
+	if(holder.owner.stats.getPerk(PERK_LUNGS_OF_IRON))
 		return FALSE
 	return TRUE
 
