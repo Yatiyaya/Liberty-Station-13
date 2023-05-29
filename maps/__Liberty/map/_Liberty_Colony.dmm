@@ -42833,6 +42833,11 @@
 	pixel_x = 30
 	},
 /obj/landmark/join/start/janitor,
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12;
+	pixel_y = 3
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/janitor)
 "kYN" = (
@@ -54098,6 +54103,10 @@
 /area/liberty/hallway/surface/section1)
 "oaC" = (
 /obj/landmark/join/start/janitor,
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -11
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/janitor)
 "oaD" = (
@@ -61631,6 +61640,11 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "pUn" = (
 /obj/structure/table/rack/shelf,
+/obj/item/storage/box/mousetraps,
+/obj/item/storage/box/mousetraps,
+/obj/item/storage/box/mousetraps,
+/obj/item/caution,
+/obj/item/caution,
 /obj/item/caution,
 /obj/item/caution,
 /obj/item/caution,
@@ -70344,13 +70358,10 @@
 /turf/simulated/floor/wood,
 /area/liberty/medical/exam_room)
 "sfV" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/mousetraps,
-/obj/item/storage/box/mousetraps,
-/obj/item/storage/box/mousetraps,
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
+/obj/structure/reagent_dispensers/watertank/huge/derelict,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/liberty/crew_quarters/janitor)
 "sfY" = (

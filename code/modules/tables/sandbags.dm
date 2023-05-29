@@ -118,7 +118,16 @@
 	if(!check_parry_arc(src, bad_arc, P)) // This is actually for mobs but it will work for our purposes as well.
 		return 1
 
+	if(config.z_level_shooting)
+		if(P.height == HEIGHT_HIGH)
+			return TRUE // Bullet is too high to hit
+		P.height = (P.height == HEIGHT_LOW) ? HEIGHT_LOW : HEIGHT_CENTER
+
 	var/chance = base_cover
+
+	if(P.height == HEIGHT_LOW)
+		chance += 30 //if your shooting upwards at this defence you will have a much harder time hitting
+
 	if((prob(chance)) && (!(P.testing)))
 		damage(P.get_structure_damage())
 		if (health > 0)

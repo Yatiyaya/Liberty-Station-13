@@ -483,195 +483,103 @@
 	use_sound = null
 	matter = list(MATERIAL_PLASTIC = 1)
 	max_storage_space = 32
+	var/prespawned_content_amount = 7 //this could be moved to master storage for spawning if wanted
+	var/prespawn_item
+
+/obj/item/storage/pill_bottle/populate_contents()
+	if(prespawn_item && prespawned_content_amount)
+		for(var/i in 1 to prespawned_content_amount)
+			new prespawn_item(src)
 
 /obj/item/storage/pill_bottle/antitox
 	icon_state = "pill_green"
 	name = "bottle of high-dose Dylovene pills"
 	desc = "Contains pills used to counter higher concentrations of toxins."
-
-/obj/item/storage/pill_bottle/antitox/populate_contents()
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
-	new /obj/item/reagent_containers/pill/antitox(src)
+	prespawn_item = /obj/item/reagent_containers/pill/antitox
 
 /obj/item/storage/pill_bottle/bicaridine
 	name = "bottle of Bicaridine pills"
 	icon_state = "pill_red"
 	desc = "Contains pills used to stabilize the severely injured."
-
-/obj/item/storage/pill_bottle/bicaridine/populate_contents()
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
-    new /obj/item/reagent_containers/pill/bicaridine(src)
+	prespawn_item = /obj/item/reagent_containers/pill/bicaridine
 
 /obj/item/storage/pill_bottle/dexalin_plus
 	name = "bottle of Dexalin Plus pills"
 	icon_state = "pill_blue"
 	desc = "Contains pills used to treat extreme cases of oxygen deprivation."
-
-/obj/item/storage/pill_bottle/dexalin_plus/populate_contents()
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
-    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+	prespawn_item = /obj/item/reagent_containers/pill/dexalin_plus
 
 /obj/item/storage/pill_bottle/dermaline
 	name = "bottle of Dermaline pills"
 	icon_state = "pill_orange"
 	desc = "Contains pills used to treat burn wounds."
-
-/obj/item/storage/pill_bottle/dermaline/populate_contents()
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
-    new /obj/item/reagent_containers/pill/dermaline(src)
+	prespawn_item = /obj/item/reagent_containers/pill/dermaline
 
 /obj/item/storage/pill_bottle/dylovene
 	name = "bottle of Dylovene pills"
 	icon_state = "pill_green"
 	desc = "Contains pills used to counteract toxic substances in the blood."
-
-/obj/item/storage/pill_bottle/dylovene/populate_contents()
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
-    new /obj/item/reagent_containers/pill/dylovene(src)
+	prespawn_item = /obj/item/reagent_containers/pill/dylovene
 
 /obj/item/storage/pill_bottle/carthatoline
 	name = "bottle of Carthatoline pills"
 	icon_state = "pill_green"
 	desc = "Contains pills used to counteract severe poisoning and liver failure."
-
-/obj/item/storage/pill_bottle/carthatoline/populate_contents()
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
-	new /obj/item/reagent_containers/pill/carthatoline(src)
+	prespawn_item = /obj/item/reagent_containers/pill/carthatoline
 
 /obj/item/storage/pill_bottle/inaprovaline
 	name = "bottle of Inaprovaline pills"
 	icon_state = "pill_blue"
 	desc = "Contains pills used to stabilize patients."
-
-/obj/item/storage/pill_bottle/inaprovaline/populate_contents()
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
-	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	prespawn_item = /obj/item/reagent_containers/pill/inaprovaline
 
 /obj/item/storage/pill_bottle/kelotane
 	name = "bottle of Kelotane pills"
 	icon_state = "pill_yellow"
 	desc = "Contains pills used to treat burns."
-
-/obj/item/storage/pill_bottle/kelotane/populate_contents()
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
-	new /obj/item/reagent_containers/pill/kelotane(src)
+	prespawn_item = /obj/item/reagent_containers/pill/kelotane
 
 /obj/item/storage/pill_bottle/spaceacillin
 	name = "bottle of Spaceacillin pills"
 	icon_state = "pill_white"
 	desc = "A theta-lactam antibiotic. Effective against many diseases likely to be encountered in space."
-
-/obj/item/storage/pill_bottle/spaceacillin/populate_contents()
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
-    new /obj/item/reagent_containers/pill/spaceacillin(src)
+	prespawn_item = /obj/item/reagent_containers/pill/spaceacillin
 
 /obj/item/storage/pill_bottle/tramadol
 	name = "bottle of Tramadol pills"
 	icon_state = "pill_pink"
 	desc = "Contains pills used to relieve pain."
-
-/obj/item/storage/pill_bottle/tramadol/populate_contents()
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
-	new /obj/item/reagent_containers/pill/tramadol(src)
+	prespawn_item = /obj/item/reagent_containers/pill/tramadol
 
 /obj/item/storage/pill_bottle/citalopram
 	name = "bottle of Citalopram pills"
 	icon_state = "pill_pink"
 	desc = "Contains pills used to stabilize a patient's mood."
-
-/obj/item/storage/pill_bottle/citalopram/populate_contents()
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
-	new /obj/item/reagent_containers/pill/citalopram(src)
+	prespawn_item = /obj/item/reagent_containers/pill/citalopram
 
 /obj/item/storage/pill_bottle/prosurgeon
 	name = "bottle of ProSurgeon pills"
 	icon_state = "pill_black"
 	desc = "Contains pills used to reduce hand tremors."
-
-/obj/item/storage/pill_bottle/prosurgeon/populate_contents()
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
-	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	prespawn_item = /obj/item/reagent_containers/pill/prosurgeon
 
 /obj/item/storage/pill_bottle/bloodregen
 	name = "bottle of Blood Deficiency supplements"
 	icon_state = "pill_dred"
 	desc = "Contains pills to help speed up natural blood generation."
+	prespawn_item = /obj/item/reagent_containers/pill/bloodregen
 
-/obj/item/storage/pill_bottle/bloodregen/populate_contents()
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-	new /obj/item/reagent_containers/pill/bloodregen(src)
-
+/obj/item/storage/pill_bottle/carbon
+	name = "bottle of Carbon pills"
+	desc = "Contains pills used to purge stomach contents."
+	prespawn_item = /obj/item/reagent_containers/pill/carbon
 
 /obj/item/storage/pill_bottle/njoy
 	name = "bottle of mixed Njoy pills"
 	desc = "Contains pills used help the mental states."
 	icon_state = "bottle_njoy_mix"
 
+//Do to having more then 1 spawning we use a snowflake spawn system for this
 /obj/item/storage/pill_bottle/njoy/populate_contents()
 	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/pill/suppressital(src)
@@ -685,28 +593,22 @@
 	name = "bottle of red Njoy pills"
 	desc = "Contains pills used help the mental states."
 	icon_state = "bottle_njoy_red"
-
-/obj/item/storage/pill_bottle/njoy/red/populate_contents()
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/pill/suppressital(src)
+	prespawned_content_amount = 3
+	prespawn_item = /obj/item/reagent_containers/pill/suppressital
 
 /obj/item/storage/pill_bottle/njoy/green
 	name = "bottle of green Njoy pills"
 	desc = "Contains pills used to stop the mental states."
 	icon_state = "bottle_njoy_green"
-
-/obj/item/storage/pill_bottle/njoy/green/populate_contents()
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/pill/suppressital/green(src)
+	prespawned_content_amount = 3
+	prespawn_item = /obj/item/reagent_containers/pill/suppressital/green
 
 /obj/item/storage/pill_bottle/njoy/blue
 	name = "bottle of blue Njoy pills"
 	desc = "Contains pills used to stop the mental states."
 	icon_state = "bottle_njoy_blue"
-
-/obj/item/storage/pill_bottle/njoy/blue/populate_contents()
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/pill/suppressital/blue(src)
+	prespawned_content_amount = 3
+	prespawn_item = /obj/item/reagent_containers/pill/suppressital/blue
 
 /*
  * Portable Freezers

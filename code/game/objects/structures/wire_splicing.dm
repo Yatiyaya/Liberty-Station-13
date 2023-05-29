@@ -54,7 +54,7 @@
 				best_score = turf_score
 				candidates.Cut()
 
-			candidates.Add(src)
+			candidates.Add(T)
 
 		//No nearby cables? Cancel
 		if (!candidates.len)

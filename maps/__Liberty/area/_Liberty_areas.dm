@@ -337,6 +337,8 @@
 	name = "Forest"
 	icon_state = "forest"
 	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+
 //	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
 
 /area/liberty/outside/forest/beast_cave_light

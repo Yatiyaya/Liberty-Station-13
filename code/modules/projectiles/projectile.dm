@@ -126,6 +126,8 @@
 	var/volume = 15 //Amount of reagents we can store
 	var/coated = FALSE
 
+	var/height // starts undefined, used for Zlevel shooting
+
 /obj/item/projectile/New()
 
 	penetration_holder = new /datum/penetration_holder
@@ -305,7 +307,7 @@
 
 	return FALSE
 
-//called to launch a projectile from a gun, not called by testing projectiles
+//called to launch a projectile from a gun
 /obj/item/projectile/proc/launch_from_gun(atom/target, mob/user, obj/item/gun/launcher, target_zone, x_offset=0, y_offset=0, angle_offset)
 	if(user == target) //Shooting yourself
 		user.bullet_act(src, target_zone)
@@ -314,12 +316,19 @@
 
 	loc = get_turf(user)
 
-	if(iscarbon(user))
-		var/mob/living/carbon/human/blanker = user
-		if(blanker.can_multiz_pb && (!isturf(target)))
-			loc = get_turf(blanker.client.eye)
-			if(!(loc.Adjacent(target)))
-				loc = get_turf(blanker)
+	if(isliving(user))
+		if(ishuman(user))
+			var/mob/living/carbon/human/H = user
+			if(H.can_multiz_pb && (!isturf(target)))
+				loc = get_turf(H.client.eye)
+				if(!(loc.Adjacent(target)))
+					loc = get_turf(H)
+			if(config.z_level_shooting && H.client.eye == H.shadow && !height) // Player is watching a higher zlevel
+				var/newTurf = get_turf(H.shadow)
+				if(!(locate(/obj/structure/catwalk) in newTurf)) // Can't shoot through catwalks
+					loc = newTurf
+					height = HEIGHT_HIGH // We are shooting from below, this protects resting players at the expense of windows
+					original = get_turf(original) // Aim at turfs instead of mobs, to ensure we don't hit players
 
 	firer = user
 	original_firer = firer
@@ -367,6 +376,10 @@
 	//roll to-hit
 	miss_modifier = 0
 	var/hit_zone = check_zone(def_zone)
+
+	if(config.z_level_shooting && height == HEIGHT_HIGH)
+		if(target_mob.resting == TRUE || target_mob.stat == TRUE)
+			return FALSE // Bullet flies overhead
 
 	var/result = PROJECTILE_FORCE_MISS
 	if(hit_zone)

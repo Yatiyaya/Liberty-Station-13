@@ -21,7 +21,8 @@
 	var/scale = 0.9
 
 	if(ishuman(src))
-		if(usr.stats.getPerk(PERK_PERFECT_SHOT))
+		var/mob/living/carbon/human/H = src
+		if(H.stats.getPerk(PERK_PERFECT_SHOT))
 			scale = 0.5 //less recoil build up
 
 	if(recoil <= base)

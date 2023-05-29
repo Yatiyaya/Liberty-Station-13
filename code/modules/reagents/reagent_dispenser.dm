@@ -230,8 +230,8 @@
 	starting_reagent = "condensedcapsaicin"
 
 /obj/structure/reagent_dispensers/ammonia
-	name = "ammonia dispenser"
-	desc = "Contains ammonia meant to clean things and mix to make spacecleaner."
+	name = "spacecleaner dispenser"
+	desc = "Contains ammonia mixed with water making spacecleaner."
 	icon_state = "ammoniatank"
 	anchored = 1
 	density = 0

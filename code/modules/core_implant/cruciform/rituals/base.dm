@@ -15,7 +15,7 @@
 
 datum/ritual/cruciform/base/thumbspire
 	name = "Thumbspire"
-	phrase = "Oxidate Lecture: Thumbspire"
+	phrase = "Oxidate Lecture: Thumbspire."
 	desc = "Create a small spark on your thumb that can be used to ignite things."
 	power = 2
 
@@ -75,7 +75,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/entreaty
 	name = "Entreaty"
-	phrase = "Oxidate Lecture: Entreaty"
+	phrase = "Oxidate Lecture: Entreaty."
 	desc = "Call for help, allowing other Hearthcore users to hear your cries."
 	power = 10
 
@@ -93,7 +93,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/pyrelight
 	name = "Pyrelight"
-	phrase = "Oxidate Lecture: Pyrelight"
+	phrase = "Oxidate Lecture: Pyrelight."
 	desc = "Lecture of wandering Custodians that creates a small immobile light for twenty minutes."
 	power = 20
 
@@ -105,7 +105,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/message
 	name = "Carrier Pigeon"
-	phrase = "Oxidate Lecture: Carrier Pigeon"
+	phrase = "Oxidate Lecture: Carrier Pigeon."
 	desc = "Create a pigeon of light to send a message to a person of your choice."
 	power = 10
 
@@ -136,7 +136,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/revelation
 	name = "Revelation"
-	phrase = "Oxidate Lecture: Revelation"
+	phrase = "Oxidate Lecture: Revelation."
 	desc = "A person close to you will recieve a fortifying effect to their psyche, letting them face greater horrors for thirty minutes. Has a five minute cooldown."
 	power = 50
 	cooldown_category = "revelation"
@@ -166,7 +166,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/empower
 	name = "Empower"
-	phrase = "Oxidate Lecture: Empower"
+	phrase = "Oxidate Lecture: Empower."
 	desc = "This lecture transfers Radiance from your own Hearthcore to another Hearthcore user, draining 15 Radiance to grant 10."
 	power = 15
 
@@ -193,7 +193,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/accelerated_growth
 	name = "Accelerated Growth"
-	phrase = "Oxidate Lecture: Accelerated Growth"
+	phrase = "Oxidate Lecture: Accelerated Growth."
 	desc = "This lecture boosts the growth of all plants in sight for about 5 minutes. Has a five minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
@@ -233,7 +233,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/mercy
 	name = "Hand of Mercy"
-	phrase = "Oxidate Lecture: Hand of Mercy"
+	phrase = "Oxidate Lecture: Hand of Mercy."
 	desc = "Relieves the pain of a person in front of you. Has a three minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 3 MINUTES
@@ -256,7 +256,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/absolution
 	name = "Flames of Stability"
-	phrase = "Oxidate Lecture: Flames of Stability"
+	phrase = "Oxidate Lecture: Flames of Stability."
 	desc = "Stabilizes the health of a person in front of you. Has a three minute cooldown."
 	cooldown = TRUE
 	cooldown_time = 3 MINUTES
@@ -282,7 +282,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/purging
 	name = "Word of Purification"
-	phrase = "Oxidate Lecture: Word of Purification"
+	phrase = "Oxidate Lecture: Word of Purification."
 	desc = "Addictions are common afflictions among colony denizens. This lecture helps those people by easing or removing their addictions."
 	power = 30
 
@@ -316,7 +316,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/records
 	name = "Philosophical Record"
-	phrase = "Oxidate Lecture: Philosophical Record"
+	phrase = "Oxidate Lecture: Philosophical Record."
 	desc = "Gathers a copy of the Custodians' local records from a Board of Opposites."
 	success_message = "On the verge of audibility you hear pleasant music, a piece of paper slides out from a slit in the board."
 
@@ -336,7 +336,7 @@ datum/ritual/cruciform/base/thumbspire
 
 /datum/ritual/cruciform/base/anti_scrying
 	name = "Anti-Scrying"
-	phrase = "Oxidate Lecture: Anti-Scrying"
+	phrase = "Oxidate Lecture: Anti-Scrying."
 	desc = "Toggle the Radiance behind your eyes to permit or deny Scrying attempts."
 
 // the ANTI_SCRYING module is checked in the Scrying lecture to let attempts go through or not, it functions much like a flag in that sense, this just toggles that module
@@ -350,6 +350,30 @@ datum/ritual/cruciform/base/thumbspire
 		to_chat(user, SPAN_NOTICE("You remove the Radiance behind your eyes, denying Scrying attempts."))
 		return TRUE
 
+
+/datum/ritual/cruciform/base/search
+	name = "Search"
+	phrase = "Oxidate Lecture: Search."
+	desc = "Find the location of disciple."
+	success_message = "On the verge of audibility you hear pleasant music with an encoded location in its notes."
+	fail_message = "Your calls have not been answered."
+	power = 25
+
+/datum/ritual/cruciform/priest/acolyte/search/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
+	var/list/OBJS = get_front(user)
+
+	var/obj/machinery/power/eotp/EOTP = locate(/obj/machinery/power/eotp) in OBJS
+	if(!EOTP)
+		fail("You must be in front of the Embers of Theoretical Philosophy.", user, C)
+		return FALSE
+
+	var/mob/living/carbon/human/H = pick_disciple_global(user, TRUE)
+	if (!H)
+		return
+	var/area/t = get_area(H)
+	log_game("[key_name(user)] locates [H] in [t] using Search litany.")
+	to_chat(user, span_info("[H] is currently at [t.name]."))
+	return TRUE
 
 //datum/ritual/cruciform/base/wardenpyre LATER
 
