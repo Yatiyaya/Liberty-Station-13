@@ -15,7 +15,7 @@
 		possibleNets["SS13"] = access_hos
 		possibleNets["Mining"] = access_mining
 		possibleNets["Cargo"] = access_merchant
-		possibleNets["Research"] = access_rd
+		possibleNets["Research"] = access_rp
 		possibleNets["Medbay"] = access_cso
 		..()
 

@@ -792,7 +792,7 @@
 /turf/simulated/floor,
 /area/space)
 "mp" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
@@ -2943,7 +2943,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "Wn" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},

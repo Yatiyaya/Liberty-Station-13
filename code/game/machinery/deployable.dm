@@ -33,7 +33,7 @@ for reference:
 	access_crematorium = 27
 	access_kitchen = 28
 	access_robotics = 29
-	access_rd = 30
+	access_rp = 30
 	access_cargo = 31
 	access_construction = 32
 	access_chemistry = 33

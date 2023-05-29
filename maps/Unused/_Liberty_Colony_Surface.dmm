@@ -5967,7 +5967,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/absolutism/bioreactor)
 "bjK" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
@@ -6419,7 +6419,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/pros/prep)
 "bDQ" = (
-/obj/structure/closet/secure_closet/personal/salvager,
+/obj/structure/closet/secure_closet/personal/trapper,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
 "bEP" = (
@@ -7477,7 +7477,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/pros/prep)
 "cEh" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
@@ -21536,7 +21536,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/campground)
 "qqm" = (
-/obj/structure/closet/secure_closet/personal/prospector,
+/obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/pros/prep)
 "qqH" = (
@@ -26627,7 +26627,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "vsb" = (
-/obj/structure/closet/secure_closet/reinforced/foreman,
+/obj/structure/closet/secure_closet/reinforced/field_shepherd,
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/pros/foreman)
 "vsf" = (

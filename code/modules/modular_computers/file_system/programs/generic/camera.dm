@@ -10,13 +10,13 @@
 		if(NETWORK_MINE)
 			return access_mailsorting // Cargo office - all cargo staff should have access here.
 		if(NETWORK_ROBOTS)
-			return access_rd
+			return access_rp
 		if(NETWORK_PRISON, NETWORK_GATE)
 			return access_security
 		if(NETWORK_PROP)
 			return access_eva
 		if(NETWORK_CHURCH)
-			return access_nt_disciple
+			return access_bonfire_disciple
 		if(NETWORK_ENGINEERING,NETWORK_ENGINE)
 			return access_engine
 		if(NETWORK_COMMAND)

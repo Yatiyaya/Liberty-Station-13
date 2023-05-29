@@ -1057,7 +1057,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		fail("Hearthcore not found", user, C)
 		return FALSE
 
-	CI.security_clearance = CLEARANCE_CLERGY
+	CI.security_clearance = CLEARANCE_ORDER
 	return TRUE
 
 /datum/ritual/cruciform/oathpledge/omission

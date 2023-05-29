@@ -267,7 +267,7 @@ Union RIG
 
 /obj/item/rig/hazmat/equipped
 
-	req_access = list(access_rd)
+	req_access = list(access_rp)
 
 	initial_modules = list(
 		/obj/item/rig_module/ai_container,

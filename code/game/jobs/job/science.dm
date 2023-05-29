@@ -19,7 +19,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/science/rp
 	playtimerequired = 1200
 	access = list(
-		access_rd, access_heads, access_tox, access_genetics, access_morgue,
+		access_rp, access_heads, access_tox, access_genetics, access_morgue,
 		access_tox_storage, access_teleporter, access_sec_doors,
 		access_moebius, access_medical_equip, access_chemistry, access_virology, access_surgery, access_psychiatrist,
 		access_robotics, access_xenobiology, access_ai_upload, access_tech_storage, access_eva, access_external_airlocks, access_medical_suits,

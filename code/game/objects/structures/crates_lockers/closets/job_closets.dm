@@ -87,7 +87,7 @@
 /obj/structure/closet/oathbound
 	name = "oathbound locker"
 	desc = "A locker for the stalward shields and spears of the Custodians."
-	icon_state = "acolyte"
+	icon_state = "oathbound"
 
 /obj/structure/closet/oathbound/populate_contents()
 	if(prob(25))
@@ -109,7 +109,7 @@
 /obj/structure/closet/forgemaster
 	name = "forgemaster locker"
 	desc = "A locker for the smiths and artists of the Custodians."
-	icon_state = "custodian"
+	icon_state = "forgemaster"
 
 /obj/structure/closet/forgemaster/populate_contents()
 	if(prob(25))
@@ -129,7 +129,7 @@
 /obj/structure/closet/enkindled
 	name = "enkindled locker"
 	desc = "A locker for the healers and alchemists of the Custodians."
-	icon_state = "botanist"
+	icon_state = "enkindled"
 
 /obj/structure/closet/enkindled/populate_contents()
 	if(prob(25))
@@ -154,8 +154,8 @@
 /obj/structure/closet/secure_closet/reinforced/oathpledge
 	name = "oathpledge locker"
 	desc = "A locker for the leaders and guides of the Custodians."
-	req_access = list(access_nt_preacher)
-	icon_state = "head_preacher"
+	req_access = list(access_oathpledge)
+	icon_state = "oathpledge"
 
 /obj/structure/closet/oathpledge/populate_contents()
 	if(prob(25))

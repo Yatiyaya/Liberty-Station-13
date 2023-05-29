@@ -1,6 +1,6 @@
 /obj/structure/closet/secure_closet/personal/scientist
 	name = "Phokorus Institute scientist's locker"
-	req_access = list(access_rd)
+	req_access = list(access_rp)
 	access_occupy = list(access_tox_storage)
 	icon_state = "science"
 
@@ -21,7 +21,7 @@
 
 /obj/structure/closet/secure_closet/reinforced/RD
 	name = "Phokorus Institute research overseer's locker"
-	req_access = list(access_rd)
+	req_access = list(access_rp)
 	icon_state = "rd"
 
 /obj/structure/closet/secure_closet/reinforced/RD/populate_contents()
