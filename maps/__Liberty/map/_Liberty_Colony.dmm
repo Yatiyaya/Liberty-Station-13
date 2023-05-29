@@ -4714,14 +4714,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
-"bjQ" = (
-/obj/structure/sign/security/chief/right{
-	pixel_x = 39;
-	pixel_y = -32
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/bluecorner,
-/area/liberty/security/sechall)
 "bka" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb2{
@@ -17941,19 +17933,19 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos)
 "eCw" = (
-/obj/structure/sign/security/chief{
-	pixel_x = 7;
-	pixel_y = -32;
-	name = "DEPUTY CHIEF OFFICE"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/network/security{
+	dir = 1
 	},
 /obj/structure/sign/security/chief/right{
 	pixel_x = 39;
 	pixel_y = -32;
 	name = "DEPUTY CHIEF OFFICE"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/security{
-	dir = 1
+/obj/structure/sign/security/chief{
+	pixel_x = 7;
+	pixel_y = -32;
+	name = "DEPUTY CHIEF OFFICE"
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
@@ -184075,7 +184067,7 @@ aOU
 aOU
 aOU
 qsD
-bjQ
+ayF
 qoj
 hQU
 wWN
