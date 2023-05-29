@@ -72,7 +72,7 @@
 
 /obj/item/reagent_containers/pill/cyanide
 	name = "Cyanide pill"
-	desc = "A pill to help people that breath to much."
+	desc = "A pill to help people that breath too much."
 	icon_state = "pill5"
 	preloaded_reagents = list("cyanide" = 50)
 
