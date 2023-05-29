@@ -163,7 +163,7 @@
 
 	start_messages = list(
 		"Your hands feel faster to swing!",
-		"You sence your hands ready for combat!",
+		"You steady your hands for combat!",
 		"You hands move in attack much quicker.",
 	)
 	end_messages = list(
@@ -185,8 +185,8 @@
 
 	start_messages = list(
 		"Your stomach feels full.",
-		"A knot in your stomach makes you feel not that hungery!",
-		"Weather it's the sight before you, or the acclamations of today you don't feel hungary.",
+		"Your stomach no longer growls, your hunger recedes!",
+		"Whether it's your surroundings distracting you, or a matter of focus, hunger is all but gone from you.",
 	)
 	end_messages = list(
 		"It would be hard to eat anything at this moment.",
@@ -208,12 +208,12 @@
 	restore_sanity_pre = 100
 
 	start_messages = list(
-		"Your mind clears letting you think of situations solution!",
+		"Your mind clears, letting you think of solutions to your current predicaments!",
 		"If you just think more you can make it through any problem",
-		"The mind can slove any problem thrown at it!",
+		"The mind can solve any problem thrown at it!",
 	)
 	end_messages = list(
-		"The world floods back losing any brute force thinking.",
+		"Your thoughts acclimate, calming down. Your sudden rush of inspiration finally fades.",
 	)
 
 /datum/breakdown/positive/fight_over_flight/occur()
@@ -434,12 +434,12 @@
 	restore_sanity_post = 50
 
 	start_messages = list(
-		"Your head fills will rushing throughs, all useless!",
-		"A loud echo fills your head losing any line of thought.",
-		"It's hard to consitrate with all the white noise of the situations around you!",
+		"Your head fills with rushing throughs, all useless!",
+		"A loud echo fills your head, making you lose any line of thought you had.",
+		"It's hard to focus with all this white noise! I NEED SILENCE!",
 	)
 	end_messages = list(
-		"The calmness comes back to your head.",
+		"Your thoughts finally calm down, the noise in your head recedes.",
 	)
 
 /datum/breakdown/negative/cogintive_shutdown/occur()
@@ -460,12 +460,12 @@
 	restore_sanity_post = 50
 
 	start_messages = list(
-		"The worlds heat leaves you!",
-		"The chill of the cold reality hits you like a sheet of ice.",
-		"Frost comes to the mind, leaving the body shivering!",
+		"You suddenly feel heat leave your body, hands freezing, body shivering! It's cold... so cold...",
+		"You feel a horrible chill down your spine...", // Terraria reference
+		"Your body shivers uncontrollably, has this place always been THIS cold?!",
 	)
 	end_messages = list(
-		"The warm from other sources is required to survive.",
+		"Maybe all this cold was just psychosomatic...?",
 	)
 
 /datum/breakdown/negative/cogintive_shutdown/conclude()
@@ -479,8 +479,8 @@
 
 	start_messages = list(
 		"The smells, the sights, its all to much for your weak stomach!",
-		"The reatched sights and smells leave you vomiting outwards.",
-		"The enviroment is to unpleasent for you.",
+		"The wretched sights and smells leave you vomiting outwards.",
+		"This is too much to handle! I'm feeling sick...!",
 	)
 	end_messages = list(
 		"You can't help but add to the mess yourself!",
@@ -501,9 +501,9 @@
 	restore_sanity_pre = 50
 
 	start_messages = list(
-		"Your arms feel weak, your legs shakey!",
+		"Your arms feel heavy, your knees are weak!",
 		"You feel like a wet noodle!",
-		"Your body feels like liquid and sways!",
+		"You feel like you can barely throw a punch around!",
 	)
 	end_messages = list(
 		"You feel more soild again and can fight a bit better.",
@@ -528,12 +528,12 @@
 	var/pick_time = 0
 
 	start_messages = list(
-		"The walls close in your mouth breaths heavily, you must keep your mouth free.",
+		"The walls close in, your mouth breaths heavily - everything around you seems bent on not letting you breathe, even what you wear...",
 		"Breathing is so hard, you must keep your mouth free from any objects blocking vital air!",
 		"The thin air makes anything obstructing your mouth feel like you will faint.",
 	)
 	end_messages = list(
-		"The air is thick again and you can give breath with easy."
+		"Your hypochondria fades away, your breaths steady themselves as you calm down."
 	)
 
 /datum/breakdown/negative/gasping_breaths/update()
