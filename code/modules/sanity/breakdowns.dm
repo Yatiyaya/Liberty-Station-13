@@ -506,7 +506,7 @@
 		"You feel like you can barely throw a punch around!",
 	)
 	end_messages = list(
-		"You feel more soild again and can fight a bit better.",
+		"Your fighting instincts are back to you.",
 	)
 
 /datum/breakdown/negative/fluid_fear/occur()
