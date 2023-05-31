@@ -245,6 +245,7 @@
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
+	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
 		slot_back_str = "Combat_back"
