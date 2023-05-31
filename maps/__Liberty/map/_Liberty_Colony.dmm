@@ -897,20 +897,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/security/tactical)
 "anb" = (
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 5
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 6
-	},
-/turf/simulated/floor/carpet/bcarpet,
+/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "ani" = (
 /obj/machinery/atmospherics/unary/vent_pump,
@@ -4343,13 +4330,10 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/swo/quarters)
 "beQ" = (
-/obj/effect/floor_decal/border/carpet/black/corner{
-	dir = 5
-	},
-/obj/effect/floor_decal/border/carpet/black/corner{
-	dir = 6
-	},
 /obj/structure/decor_perfect_pillar,
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 4
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "bfh" = (
@@ -7649,7 +7633,6 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos/storage)
 "bVH" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/church{
 	dir = 8
 	},
@@ -24561,7 +24544,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/shuttle)
 "gnE" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 1
 	},
@@ -37507,9 +37489,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 6
-	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapel)
 "jFP" = (
@@ -51599,7 +51578,7 @@
 	name = "North APC";
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "nsV" = (
 /obj/structure/bed/chair{
@@ -70553,9 +70532,6 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/botanist)
 "siG" = (
-/obj/machinery/door/holy{
-	name = "Old Bioreactor Room"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -70563,6 +70539,9 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/holy{
+	name = "Forge Room"
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "siN" = (
@@ -93372,15 +93351,15 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/outside/forest)
 "yaY" = (
-/obj/machinery/door/holy{
-	name = "Old Bioreactor Room"
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/holy{
+	name = "Forge Room"
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/bonfire/bioreactor)
 "ybb" = (
@@ -93489,13 +93468,10 @@
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor1west)
 "ycT" = (
-/obj/effect/floor_decal/border/carpet/black/corner{
+/obj/structure/decor_perfect_pillar,
+/obj/effect/floor_decal/border/carpet/black{
 	dir = 8
 	},
-/obj/effect/floor_decal/border/carpet/black/corner{
-	dir = 10
-	},
-/obj/structure/decor_perfect_pillar,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "ycU" = (
