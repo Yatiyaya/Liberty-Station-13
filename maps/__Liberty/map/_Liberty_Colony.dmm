@@ -4334,6 +4334,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "bfh" = (
@@ -13891,7 +13892,7 @@
 /obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "dws" = (
 /obj/machinery/door/airlock/glass_security{
@@ -14420,6 +14421,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 9
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "dDp" = (
@@ -35996,6 +35998,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "jku" = (
@@ -41565,6 +41568,7 @@
 "kJs" = (
 /obj/machinery/power/eotp,
 /obj/structure/invislight,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "kJG" = (
@@ -68162,6 +68166,7 @@
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "rDO" = (
@@ -79797,6 +79802,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 6
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "uAb" = (
@@ -83339,6 +83345,7 @@
 /area/liberty/engineering/shield_generator)
 "vyO" = (
 /obj/effect/floor_decal/border/carpet/black,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "vzi" = (
@@ -88498,6 +88505,7 @@
 /obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/chapelritualroom)
 "wOv" = (
@@ -93472,6 +93480,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "ycU" = (
