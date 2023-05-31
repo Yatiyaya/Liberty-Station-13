@@ -284,7 +284,7 @@
 	item_state_slots = list(
 		slot_back_str = "Diamond_back"
 		)
-	effective_faction = list("roach" "spiders") // Spiders are weak to crushing.//made the sword a bit better being able to bonk easier the fauna because is expensive as fuck make this shit
+	effective_faction = list("roach", "spiders") // Spiders are weak to crushing.//made the sword a bit better being able to bonk easier the fauna because is expensive as fuck make this shit
 	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift
