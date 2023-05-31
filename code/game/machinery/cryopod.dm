@@ -629,6 +629,7 @@
 			to_chat(occupant, SPAN_NOTICE("<b>If you ghost, log out or close your client now, your character will shortly be permanently removed from the round.</b>"))
 		if (occupant.in_good_health() && notifications)
 			to_chat(occupant, SPAN_NOTICE("<b>Your respawn time will be reduced by 20 minutes, allowing you to respawn as a crewmember much more quickly.</b>"))
+			new_occupant.set_respawn_bonus("CRYOSLEEP", CRYOPOD_SPAWN_BONUS)
 		else if (notifications)
 			to_chat(occupant, SPAN_DANGER("<b>Because you are not in good health, going into cryosleep will not reduce your crew respawn time. \
 			If you wish to respawn as a different crewmember, you should treat your injuries at medical first</b>"))
