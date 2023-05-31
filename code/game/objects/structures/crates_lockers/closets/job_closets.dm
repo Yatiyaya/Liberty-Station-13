@@ -157,7 +157,7 @@
 	req_access = list(access_oathpledge)
 	icon_state = "oathpledge"
 
-/obj/structure/closet/oathpledge/populate_contents()
+/obj/structure/closet/secure_closet/reinforced/oathpledge/populate_contents()
 	if(prob(25))
 		new /obj/item/storage/backpack/custodian(src)
 	else if(prob(25))
