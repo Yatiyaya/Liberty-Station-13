@@ -374,7 +374,7 @@
 /obj/item/clothing/accessory/halfcape/ceo
 	name = "affluent skylight holo-mantle"
 	desc = "A fancy holo-mantle made from light-toned silk and bearing the markings of a high ranking skylight representative. Made of fine alabaster silks and trimmed in gold , despite its design being so closely \
-	make to similar cloaks, its quality cannot be contested."
+	similar to low council cloaks, its quality cannot be contested."
 	icon_state = "half_ceo"
 
 /obj/item/clothing/accessory/halfcape/premier
