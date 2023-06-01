@@ -91,7 +91,6 @@
 	difficulty = "Easy."
 	alt_titles = list("Bartender", "Chef", "Gardener")
 	selection_color = "#dddddd"
-	health_modifier = -10
 	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
 
 	initial_balance = INIT_BALANCE_MENIAL
