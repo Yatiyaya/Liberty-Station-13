@@ -18,9 +18,6 @@
 	icon_state = "negative"
 	breakdown_sound = 'sound/sanity/insane.ogg'
 
-
-
-
 #define STALWART_THRESHOLD 30 // How damaged should owner be for Stalwart to be able to trigger
 
 /datum/breakdown/positive/stalwart
@@ -47,8 +44,6 @@
 	holder.owner.reagents.add_reagent("tramadol", 5) // the way this works is silly as all fuck and should probably be fixed at some point
 	..()
 
-
-
 /datum/breakdown/positive/adaptation
 	name = "Adaptation"
 	duration = 0
@@ -67,8 +62,6 @@
 	holder.negative_prob = max(holder.negative_prob - 5, 0)
 	holder.max_level = max(holder.max_level + 20, 0)
 	..()
-
-
 
 /datum/breakdown/positive/concentration
 	name = "Absolute Concentration"
@@ -94,8 +87,6 @@
 	--holder.sanity_invulnerability
 	..()
 
-
-
 /datum/breakdown/positive/determination
 	name = "Determination"
 	duration = 10 MINUTES
@@ -119,8 +110,6 @@
 	--holder.owner.shock_resist
 	..()
 
-
-
 /datum/breakdown/positive/lesson
 	name = "A Lesson Learnt"
 	duration = 0
@@ -137,6 +126,106 @@
 /datum/breakdown/positive/lesson/conclude()
 	for(var/stat in ALL_STATS_LEVEL)
 		holder.owner.stats.changeStat(stat, rand(1,3))
+	..()
+
+/datum/breakdown/positive/fight_over_flight
+	name = "Fight Over Flight"
+	duration = 15 MINUTES
+	restore_sanity_pre = 100
+
+	start_messages = list(
+		"You are ready to stand your ground!",
+		"You feel a rush of adrenaline in your veins!",
+		"You feel your able to fend off anything in your way!",
+	)
+	end_messages = list(
+		"The last drop of adrenaline leaves you. Reasoning floods back.",
+	)
+
+/datum/breakdown/positive/fight_over_flight/occur()
+	holder.owner.stats.changeStat(STAT_ROB, 15)
+	holder.owner.stats.changeStat(STAT_TGH, 15)
+	holder.owner.stats.changeStat(STAT_VIG, 15)
+	holder.owner.stats.changeStat(STAT_COG, -10)
+	return ..()
+
+/datum/breakdown/positive/fight_over_flight/conclude()
+	holder.owner.stats.changeStat(STAT_ROB, -15)
+	holder.owner.stats.changeStat(STAT_TGH, -15)
+	holder.owner.stats.changeStat(STAT_VIG, -15)
+	holder.owner.stats.changeStat(STAT_COG, 10)
+	..()
+
+/datum/breakdown/positive/speedy_attacks
+	name = "Faster Basher"
+	duration = 15 MINUTES
+	restore_sanity_pre = 100
+
+	start_messages = list(
+		"Your hands feel faster to swing!",
+		"You steady your hands for combat!",
+		"You hands move in attack much quicker.",
+	)
+	end_messages = list(
+		"Your movements are slowed back down to normal.",
+	)
+
+/datum/breakdown/positive/speedy_attacks/occur()
+	holder.owner.click_delay_addition -= 1
+	return ..()
+
+/datum/breakdown/positive/speedy_attacks/conclude()
+	holder.owner.click_delay_addition += 1
+	..()
+
+/datum/breakdown/positive/full_stomic
+	name = "Hungerless"
+	duration = 0
+	restore_sanity_pre = 100
+
+	start_messages = list(
+		"Your stomach feels full.",
+		"Your stomach no longer growls, your hunger recedes!",
+		"Whether it's your surroundings distracting you, or a matter of focus, hunger is all but gone from you.",
+	)
+	end_messages = list(
+		"It would be hard to eat anything at this moment.",
+	)
+
+/datum/breakdown/positive/full_stomic/conclude()
+	holder.owner.adjustNutrition(400)
+	..()
+
+/datum/breakdown/positive/full_stomic/can_occur()
+	if(holder.owner.species.reagent_tag == IS_SYNTHETIC) //Syths cant really lose hunger
+		return FALSE
+	return TRUE
+
+
+/datum/breakdown/positive/primatic_fix
+	name = "Thinking Through"
+	duration = 15 MINUTES
+	restore_sanity_pre = 100
+
+	start_messages = list(
+		"Your mind clears, letting you think of solutions to your current predicaments!",
+		"If you just think more you can make it through any problem",
+		"The mind can solve any problem thrown at it!",
+	)
+	end_messages = list(
+		"Your thoughts acclimate, calming down. Your sudden rush of inspiration finally fades.",
+	)
+
+/datum/breakdown/positive/fight_over_flight/occur()
+	holder.owner.stats.changeStat(STAT_BIO, 15)
+	holder.owner.stats.changeStat(STAT_MEC, 15)
+	holder.owner.stats.changeStat(STAT_COG, 15)
+	return ..()
+
+/datum/breakdown/positive/fight_over_flight/conclude()
+	holder.owner.stats.changeStat(STAT_BIO, -15)
+	holder.owner.stats.changeStat(STAT_MEC, -15)
+	holder.owner.stats.changeStat(STAT_COG, -15)
 	..()
 
 
@@ -250,8 +339,6 @@
 	--holder.owner.suppress_communication
 	..()
 
-
-
 /datum/breakdown/negative/delusion
 	name = "Delusion"
 	duration = 1 MINUTES
@@ -279,8 +366,6 @@
 		shake_camera(holder.owner, 2)
 	if(prob(10))
 		holder.owner.playsound_local(holder.owner, 'sound/effects/alert.ogg')
-
-
 
 /datum/breakdown/negative/fabric
 	name = "The Fabric"
@@ -343,6 +428,132 @@
 	holder.max_level = max(holder.max_level - 20, 0)
 	..()
 
+/datum/breakdown/negative/cogintive_shutdown
+	name = "Mind-Whited"
+	duration = 15 MINUTES
+	restore_sanity_post = 50
+
+	start_messages = list(
+		"Your head fills with rushing throughs, all useless!",
+		"A loud echo fills your head, making you lose any line of thought you had.",
+		"It's hard to focus with all this white noise! I NEED SILENCE!",
+	)
+	end_messages = list(
+		"Your thoughts finally calm down, the noise in your head recedes.",
+	)
+
+/datum/breakdown/negative/cogintive_shutdown/occur()
+	holder.owner.stats.changeStat(STAT_BIO, -15)
+	holder.owner.stats.changeStat(STAT_MEC, -15)
+	holder.owner.stats.changeStat(STAT_COG, -15)
+	return ..()
+
+/datum/breakdown/negative/cogintive_shutdown/conclude()
+	holder.owner.stats.changeStat(STAT_BIO, 15)
+	holder.owner.stats.changeStat(STAT_MEC, 15)
+	holder.owner.stats.changeStat(STAT_COG, 15)
+	..()
+
+/datum/breakdown/negative/cold_shock
+	name = "Cold Shock"
+	duration = 0
+	restore_sanity_post = 50
+
+	start_messages = list(
+		"You suddenly feel heat leave your body, hands freezing, body shivering! It's cold... so cold...",
+		"You feel a horrible chill down your spine...", // Terraria reference
+		"Your body shivers uncontrollably, has this place always been THIS cold?!",
+	)
+	end_messages = list(
+		"Maybe all this cold was just psychosomatic...?",
+	)
+
+/datum/breakdown/negative/cogintive_shutdown/conclude()
+	holder.owner.frost += 150
+	..()
+
+/datum/breakdown/negative/unsightly
+	name = "Sickening Sight"
+	duration = 0
+	restore_sanity_post = 50
+
+	start_messages = list(
+		"The smells, the sights, its all to much for your weak stomach!",
+		"The wretched sights and smells leave you vomiting outwards.",
+		"This is too much to handle! I'm feeling sick...!",
+	)
+	end_messages = list(
+		"You can't help but add to the mess yourself!",
+	)
+
+/datum/breakdown/negative/unsightly/conclude()
+	holder.owner.vomit()
+	..()
+
+/datum/breakdown/negative/unsightly/can_occur()
+	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.stats.getPerk(PERK_NIHILIST))
+		return FALSE
+	return TRUE
+
+/datum/breakdown/negative/fluid_fear
+	name = "Fluid Fear"
+	duration = 15 MINUTES
+	restore_sanity_pre = 50
+
+	start_messages = list(
+		"Your arms feel heavy, your knees are weak!",
+		"You feel like a wet noodle!",
+		"You feel like you can barely throw a punch around!",
+	)
+	end_messages = list(
+		"Your fighting instincts are back to you.",
+	)
+
+/datum/breakdown/negative/fluid_fear/occur()
+	holder.owner.stats.changeStat(STAT_ROB, -15)
+	holder.owner.stats.changeStat(STAT_TGH, -15)
+	return ..()
+
+/datum/breakdown/negative/fluid_fear/conclude()
+	holder.owner.stats.changeStat(STAT_ROB, 15)
+	holder.owner.stats.changeStat(STAT_TGH, 15)
+	..()
+
+#define GASPING_BREATHS_COOLDOWN rand(5 SECONDS, 15 SECONDS)
+
+/datum/breakdown/negative/gasping_breaths
+	name = "Gasping Breaths"
+	duration = 5 MINUTES
+	restore_sanity_post = 50
+	var/pick_time = 0
+
+	start_messages = list(
+		"The walls close in, your mouth breaths heavily - everything around you seems bent on not letting you breathe, even what you wear...",
+		"Breathing is so hard, you must keep your mouth free from any objects blocking vital air!",
+		"The thin air makes anything obstructing your mouth feel like you will faint.",
+	)
+	end_messages = list(
+		"Your hypochondria fades away, your breaths steady themselves as you calm down."
+	)
+
+/datum/breakdown/negative/gasping_breaths/update()
+	. = ..()
+	var/A = holder.owner
+
+	if(world.time >= pick_time)
+		pick_time = world.time + GASPING_BREATHS_COOLDOWN
+		if(ishuman(A))
+			var/mob/living/carbon/human/checker = A
+			if(checker.wear_mask)
+				to_chat(holder.owner, SPAN_NOTICE("Your mouth has something making you unable to breath, take it off!"))
+				checker.adjustOxyLoss(20)
+
+/datum/breakdown/negative/gasping_breaths/can_occur()
+	if(holder.owner.species.reagent_tag == IS_SYNTHETIC || holder.owner.species.reagent_tag == IS_OPIFEX)
+		return FALSE
+	if(holder.owner.stats.getPerk(PERK_LUNGS_OF_IRON))
+		return FALSE
+	return TRUE
 
 /datum/breakdown/common/power_hungry
 	name = "Power Hungry"
@@ -468,7 +679,6 @@
 	start_messages = list("Flesh is weak, you are disgusted by the weakness of your own body.")
 	end_messages = list("Nothing like a mechanical upgrade to feel like new.")
 
-
 /datum/breakdown/common/desire_for_chrome/can_occur()
 	for(var/obj/item/organ/external/Ex in holder.owner.organs)
 		if(!BP_IS_ROBOTIC(Ex))
@@ -485,7 +695,6 @@
 
 /datum/breakdown/common/desire_for_chrome/proc/check_organ()
 	finished = TRUE
-
 
 /datum/breakdown/common/false_nostalgy
 	name = "False Nostalgy"
