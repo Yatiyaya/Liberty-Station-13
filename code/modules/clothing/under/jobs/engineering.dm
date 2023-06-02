@@ -138,6 +138,7 @@
 	icon_state = "Terra_miner_icon"
 	item_state = "Terra_miner"
     armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 50, rad = 50)
+
 /obj/item/clothing/under/rank/miner/verb/toggle_style()
 	set name = "Adjust Style"
 	set category = "Object"
