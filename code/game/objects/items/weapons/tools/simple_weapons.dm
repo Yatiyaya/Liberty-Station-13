@@ -248,7 +248,7 @@
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
-		slot_back_str = "Combat_back"
+		slot_back_str = "Combat_sword"
 		)
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
@@ -283,7 +283,7 @@
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
-		slot_back_str = "Diamond_back"
+		slot_back_str = "Diamond_edge"
 		)
 	effective_faction = list("roach", "spiders") // Spiders are weak to crushing.//made the sword a bit better being able to bonk easier the fauna because is expensive as fuck make this shit
 	damage_mult = 1.5
