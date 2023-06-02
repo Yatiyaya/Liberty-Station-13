@@ -323,7 +323,7 @@
 	desc = "A black cloak with dark-blue lining."
 
 /obj/item/clothing/accessory/job/cape/gm
-	name = "club manager's cloak"
+	name = "skylight cloak"
 	icon_state = "gmcloak"
 	desc = "A brown cloak with yellow lining."
 
@@ -372,9 +372,9 @@
 	icon_state = "half_nt"
 
 /obj/item/clothing/accessory/halfcape/ceo
-	name = "club manager's holo-mantle"
-	desc = "A fancy holo-mantle made from light-toned silk and bearing the rank markings of the Club Manager. Fine alabaster silks and gold trim, despite its seemingly similar \
-	make to similar cloaks, its quality cannot be contested."
+	name = "affluent skylight holo-mantle"
+	desc = "A fancy holo-mantle made from light-toned silk and bearing the markings of a high ranking skylight representative. Made of fine alabaster silks and trimmed in gold , despite its design being so closely \
+	similar to low council cloaks, its quality cannot be contested."
 	icon_state = "half_ceo"
 
 /obj/item/clothing/accessory/halfcape/premier

@@ -7,8 +7,9 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "You"
+	supervisors = "Money."
 	difficulty = "Medium."
+	alt_titles = list("Chief Sales Officer", "Pusher", "Sales Manager")
 	selection_color = "#dddddd"
 	access = list(access_merchant, access_janitor, access_hydroponics, access_bar, access_kitchen, access_heads, access_cargo, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 
@@ -90,7 +91,6 @@
 	difficulty = "Easy."
 	alt_titles = list("Bartender", "Chef", "Gardener")
 	selection_color = "#dddddd"
-	health_modifier = -10
 	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
 
 	initial_balance = INIT_BALANCE_MENIAL
