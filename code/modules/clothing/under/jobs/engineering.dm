@@ -58,32 +58,6 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Snow Engineering Jumpsuit"] = "Terra_engineer"
-	options["Rolled Snow Engineering Jumpsuit"] = "Terra_engineer_alt"
-	options["Uniform Down"] = "Terra_engineer_pants"//sprites made by dromkii and coded by him please help i didn't read any guide
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		item_state_slots = null
-		to_chat(M, "You adjust your [choice].")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-
-/obj/item/clothing/under/rank/engineer/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
 	options["Adept Jumpsuit"] = "engine"
 	options["Adept Jumpsuit Padded"] = "artificer_armored_jumpsuit"
 	options["Adept Jumpskirt"] = "artificer_apprentice_skirt"
@@ -92,6 +66,9 @@
 	options["High Visiblity Two Piece"] = "adept_alt" // Sprites by Ezoken/Dromkii
 	options["High Visiblity Rolled sleeves"] = "adept_alt_rolled" // Sprites by Ezoken/Dromkii
 	options["High Visiblity Shirt down"] = "adept_alt_pants" // Sprites by Ezoken/Dromkii
+	options["Snow Engineering Jumpsuit"] = "Terra_engineer"
+	options["Rolled Snow Engineering Jumpsuit"] = "Terra_engineer_alt"
+	options["Uniform Down"] = "Terra_engineer_pants"//sprites made by dromkii and coded by him please help i didn't read any guide
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
