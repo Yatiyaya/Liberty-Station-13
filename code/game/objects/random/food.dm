@@ -142,6 +142,7 @@
 				/obj/item/reagent_containers/food/drinks/bottle/whiskey = 1,
 				/obj/item/reagent_containers/food/drinks/bottle/patron = 1,
 				/obj/item/reagent_containers/food/drinks/bottle/goldschlager = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/kitsunesake = 1,
 				/obj/item/reagent_containers/food/drinks/bottle/wine = 1,
 				/obj/item/reagent_containers/food/drinks/bottle/cognac = 1,
 				/obj/item/reagent_containers/food/drinks/bottle/vermouth = 1,

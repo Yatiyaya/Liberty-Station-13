@@ -797,6 +797,9 @@
 /area/liberty/crew_quarters/podrooms2
 	name = "\improper Lower Pod Dormitories"
 
+/area/liberty/crew_quarters/hotsprings
+	name = "\improper Indoors Hot Spring"
+
 /area/liberty/crew_quarters/sleep
 	name = "\improper Dormitories"
 

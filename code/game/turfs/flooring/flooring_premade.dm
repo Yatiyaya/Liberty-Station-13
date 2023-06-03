@@ -818,6 +818,11 @@
 	icon_state = "brick"
 	initial_flooring = /decl/flooring/industrial/bricks
 
+/turf/simulated/floor/industrial/greybricks
+	name = "grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial/greybricks
+
 /turf/simulated/floor/industrial/ornate
 	name = "ornate"
 	icon_state = "ornate"

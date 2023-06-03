@@ -1,7 +1,7 @@
 /obj/machinery/vending/boozeomat
 	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor"
 	desc = "A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one."
-	icon_state = "boozeomat"	//24(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
+	icon_state = "boozeomat"	//25(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	icon_deny = "boozeomat-deny"
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/gin = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/whiskey = 5,
@@ -17,6 +17,7 @@
 					/obj/item/reagent_containers/food/drinks/bottle/bluecuracao = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/redcandywine = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/nanatsunoumi = 2,
+					/obj/item/reagent_containers/food/drinks/bottle/kitsunesake = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/absinthe = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/small/beer = 6,
 					/obj/item/reagent_containers/food/drinks/bottle/small/ale = 6,

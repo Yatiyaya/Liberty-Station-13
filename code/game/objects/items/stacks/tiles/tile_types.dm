@@ -554,6 +554,11 @@
 	singular_name = "brick"
 	icon_state = "tile_slate"
 
+/obj/item/stack/tile/greybricks
+	name = "grey bricks"
+	singular_name = "grey brick"
+	icon_state = "mortar_bricks"
+
 /obj/item/stack/tile/ornate
 	name = "damaged painted slates"
 	singular_name = "painted slate"

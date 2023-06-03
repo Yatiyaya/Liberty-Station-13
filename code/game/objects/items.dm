@@ -649,6 +649,18 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/device
 	icon = 'icons/obj/device.dmi'
 
+
+// This is cringe, but the only way to make this work as an overlay that isn't an effect that dissipates.
+// This is meant to be used on top of water tiles to signify hotness of said water
+
+/obj/item/watervapor
+	name = "hot water steam"
+	desc = "If you can examine this, something went horribly wrong!" // Debug purposes
+	icon = 'icons/turf/flooring/decals.dmi'
+	icon_state = "steamy" // Very serviceable placeholder, if someone can make a better sprite to go along, I'd appreciate it.
+	mouse_opacity = 0 // Can see me but can't click me, we don't want targetting issues over water tiles
+	layer = FLY_LAYER // Convenient anime censoring (goes overlaid over mob)
+
 //Soj cringe
 
 /obj/item/proc/verb_alt_mode_activeate()
