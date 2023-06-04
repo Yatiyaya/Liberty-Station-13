@@ -7,14 +7,20 @@
 	icon_vend = "citadel-vend"
 	icon_deny = "citadel-deny"
 	products = list(
-		/obj/item/device/assembly/prox_sensor = 10,
-		/obj/item/device/assembly/igniter = 10,
-		/obj/item/device/assembly/signaler = 10,
+		/obj/item/device/assembly/signaler = 60,
+		/obj/item/device/assembly/prox_sensor = 25,
+		/obj/item/device/assembly/igniter = 25,
+		/obj/item/device/assembly/timer = 25,
+		/obj/item/device/assembly/infra = 25,
+		/obj/item/device/assembly/voice = 25,
+		/obj/item/device/transfer_valve = 25,
+		/obj/item/device/text_to_speech = 25,
+		/obj/item/tool/screwdriver = 6,
 		/obj/item/tool/wirecutters = 5,
 		/obj/item/tool/wirecutters/pliers = 5,
 		/obj/item/cartridge/signal = 10,
-		/obj/item/device/lighting/toggleable/flashlight = 5,
-		/obj/item/device/assembly/timer = 10,
+		/obj/item/device/debugger = 5,
+		/obj/item/device/lighting/toggleable/flashlight = 5
 		)
 	product_ads = "Only the finest!;Have some tools.;The most robust equipment.;The finest gear in space!"
 	shut_up = 1

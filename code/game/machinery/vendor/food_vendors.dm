@@ -428,9 +428,9 @@
 	icon_deny = "citadel-deny"
 	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
 	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
-	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,
-					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 4,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 5)
+	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 10,
+					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 10,
+					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10)
 	contraband = list(
 					/obj/item/reagent_containers/food/drinks/cans/monster_red = 10,
 					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 10,

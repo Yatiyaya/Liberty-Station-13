@@ -7858,6 +7858,7 @@
 /obj/structure/table/woodentable,
 /obj/item/storage/fancy/candle_box,
 /obj/structure/railing,
+/obj/item/reagent_containers/dropper,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/barbackroom)
 "bWA" = (
@@ -8149,21 +8150,8 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/dorm3)
 "bZI" = (
-/obj/effect/floor_decal/spline/snow_edge,
-/obj/effect/floor_decal/spline/snow_edge{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/snow_edge{
-	dir = 10
-	},
 /obj/structure/flora/small/snow/rock6,
-/obj/structure/flora/tree/snow/snow{
-	name = "Sakura tree";
-	desc = "A tall cherry tree with a bed of snow over its branches. The petals have all but vanished from it."
-	},
-/turf/simulated/floor/beach/water/coastwatercorner{
-	dir = 1
-	},
+/turf/simulated/floor/snow,
 /area/liberty/crew_quarters/hotsprings)
 "bZK" = (
 /obj/structure/cable/yellow{
@@ -9703,6 +9691,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/machinery/vending/one_star/food,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "crZ" = (
@@ -15389,7 +15378,7 @@
 	name = "Lower Public Toilet"
 	})
 "dKO" = (
-/obj/machinery/vending/dinnerware/cost,
+/obj/machinery/vending/citadel,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -23182,11 +23171,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/bonfire/skyyard)
 "fNR" = (
-/obj/random/tool_upgrade/low_chance,
-/obj/random/pack/tech_loot/low_chance,
-/obj/random/tool_upgrade/low_chance,
-/obj/random/toolbox,
-/obj/structure/table/marble,
+/obj/machinery/vending/integrated_electronics,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
 "fNW" = (
@@ -26116,12 +26101,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "gzd" = (
-/obj/machinery/constructable_frame/machine_frame,
-/obj/item/reagent_containers/food/snacks/badrecipe,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/dinnerware,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1east)
 "gzr" = (
@@ -29301,6 +29285,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "hnV" = (
@@ -31890,6 +31875,9 @@
 "hUE" = (
 /obj/random/pack/tech_loot/low_chance,
 /obj/structure/table/marble,
+/obj/random/tool_upgrade/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/toolbox,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
 "hUG" = (
@@ -36144,8 +36132,13 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "jaL" = (
-/obj/structure/flora/pottedplant/orientaltree,
-/turf/simulated/floor/snow,
+/obj/effect/floor_decal/spline/snow_edge,
+/obj/item/watervapor,
+/obj/structure/flora/church_tree{
+	pixel_x = -15;
+	pixel_y = -20
+	},
+/turf/simulated/floor/beach/water/coastwater,
 /area/liberty/crew_quarters/hotsprings)
 "jaM" = (
 /obj/effect/floor_decal/industrial/danger{
@@ -42489,7 +42482,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/machinery/vending/one_star/food,
+/obj/item/storage/deferred/crate/alcohol,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/barbackroom)
 "kHp" = (
@@ -50285,6 +50278,8 @@
 /obj/machinery/holoposter{
 	pixel_x = -30
 	},
+/obj/random/toolbox,
+/obj/random/tool_upgrade/low_chance,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
 "mMn" = (
@@ -50471,7 +50466,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/sechall)
 "mOi" = (
-/obj/machinery/vending/dinnerware/cost,
+/obj/machinery/vending/coffee,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor2east)
 "mOy" = (
@@ -51494,7 +51489,7 @@
 /area/liberty/medical/sleeper)
 "ncs" = (
 /obj/structure/railing,
-/obj/machinery/vending/cigarette,
+/obj/item/storage/deferred/crate/alcohol,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/crew_quarters/barbackroom)
 "nct" = (
@@ -69408,6 +69403,7 @@
 /obj/machinery/cooking_with_jane/grill,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/grill_grate,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/snacks/badrecipe,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor1east)
 "rxW" = (
@@ -84797,6 +84793,8 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "vss" = (
 /obj/structure/table/marble,
+/obj/random/tool_upgrade/low_chance,
+/obj/random/pack/tech_loot/low_chance,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
 "vst" = (
@@ -90975,10 +90973,7 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor2west)
 "wRh" = (
-/obj/machinery/recharger,
-/obj/random/tool_upgrade/low_chance,
-/obj/random/pack/tech_loot/low_chance,
-/obj/structure/table/marble,
+/obj/machinery/vending/integrated_electronics_cases,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
 "wRk" = (
@@ -108883,7 +108878,7 @@ kqF
 kqF
 dLo
 qrF
-ipP
+jaL
 kqF
 kqF
 dLo
@@ -109491,7 +109486,7 @@ vol
 qrF
 vol
 esO
-jaL
+moB
 oAM
 qrF
 fCm
@@ -148865,7 +148860,7 @@ iYu
 iYu
 lVs
 ivv
-vss
+bdj
 iYu
 iYu
 swc
@@ -149066,7 +149061,7 @@ rtc
 ndF
 fuj
 fTB
-bdj
+vss
 sZl
 iYu
 iYu
