@@ -42,7 +42,7 @@
 	A common place to find such units is working in close proximity to a robotics department."
 
 	racial_implants = (/obj/item/organ_module/active/simple/surgical)
-	stat_modifiers = list(STAT_ROB = -18, STAT_TGH = -18, STAT_MEC = -60, STAT_COG = 26, STAT_BIO = 46) //Utterly reliant on engineering for repairs, horrible at combat in general.
+	stat_modifiers = list(STAT_ROB = -18, STAT_TGH = -18, STAT_MEC = -60, STAT_COG = 32, STAT_BIO = 56) //Utterly reliant on engineering for repairs, horrible at combat in general.
 
 
 /datum/category_item/setup_option/background/ancestry/synth/computer //R&D
