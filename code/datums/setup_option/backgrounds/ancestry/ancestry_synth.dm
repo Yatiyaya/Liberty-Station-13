@@ -58,4 +58,4 @@
 	desc = "These synthetics are bulky, with heavy plating - additional servos, and general aim-assist platforms. Made for combat; these pack a punch, and are relatively rare \
 	Outside of law enforcement and militaries."
 
-	stat_modifiers = list(STAT_ROB = 28, STAT_TGH = 28, STAT_MEC = -16, STAT_VIG = 28, STAT_BIO = -16) //Enjoy being able to do nothing but fight.
+	stat_modifiers = list(STAT_ROB = 28, STAT_TGH = 28, STAT_MEC = -24, STAT_VIG = 28, STAT_BIO = -32) //Enjoy being able to do nothing but fight.
