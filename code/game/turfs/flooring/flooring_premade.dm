@@ -916,6 +916,16 @@
 	icon_state = "brick"
 	initial_flooring = /decl/flooring/industrial_pristine/bricks
 
+/turf/simulated/floor/industrial_pristine/greybricks
+	name = "pristine grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial_pristine/greybricks
+
+/turf/simulated/floor/industrial_pristine/greybricksfull
+	name = "pristine grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial_pristine/greybricksfull
+
 /turf/simulated/floor/industrial_pristine/ornate
 	name = "pristine ornate"
 	icon_state = "ornate"

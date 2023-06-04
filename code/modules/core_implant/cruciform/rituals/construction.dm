@@ -355,6 +355,14 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
+/datum/custodian_blueprint/weak/bricktiles
+	name = "Pristine brick stack"
+	build_path = /obj/item/stack/tile/greybricks_pristine/full
+	materials = list(
+		/obj/item/stack/ore = 10
+	)
+	build_time = 5 SECONDS
+
 /datum/custodian_blueprint/medium
 
 /datum/custodian_blueprint/medium/door_common

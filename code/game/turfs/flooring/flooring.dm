@@ -1051,7 +1051,7 @@ var/list/flooring_types
 	build_type = /obj/item/stack/tile/bricks
 
 /decl/flooring/industrial/greybricks
-	name = "greybricks"
+	name = "grey brick floor"
 	desc = "A bunch of stone bricks placed down as flooring."
 	icon_base = "mortar_bricks"
 	has_base_range = 8
@@ -1209,6 +1209,20 @@ var/list/flooring_types
 	icon_base = "concrete_bricks"
 	descriptor = "brick"
 	build_type = /obj/item/stack/tile/bricks_pristine
+
+/decl/flooring/industrial_pristine/greybricks
+	name = "grey bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "mortar_bricks"
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/greybricks_pristine
+
+/decl/flooring/industrial_pristine/greybricksfull
+	name = "grey bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "mortar_bricks"
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/greybricks_pristine/full
 
 /decl/flooring/industrial_pristine/ornate
 	name = "ornate flooring"

@@ -651,8 +651,20 @@
 
 /obj/item/stack/tile/bricks_pristine
 	name = "bricks"
+	desc = "A bunch of stone bricks used as flooring."
 	singular_name = "brick"
 	icon_state = "tile_slate"
+
+/obj/item/stack/tile/greybricks_pristine
+	name = "pristine grey bricks"
+	desc = "A bunch of polished grey stone bricks used as flooring."
+	singular_name = "grey brick"
+	icon_state = "mortar_bricks"
+
+// For the Custodian ritual to transform rocks into tiles
+// This unfortunately means I have to do a declare and turf for this children as well, pain peko. - Seb
+/obj/item/stack/tile/greybricks_pristine/full
+	amount = 60
 
 /obj/item/stack/tile/ornate_pristine
 	name = "painted slates"
