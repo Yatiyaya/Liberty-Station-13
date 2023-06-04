@@ -297,15 +297,34 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/unfeeling/assign(mob/living/carbon/human/H)
 	if(..())
-		holder.sanity.view_damage_threshold += 600 //Synth trait.
+		holder.sanity.view_damage_threshold += 40 //Synth trait.
 		holder.sanity.sanity_invulnerability += 1 //yep.
 		holder.sanity.insight_gain_multiplier *= 0.25 //yeowch
 
 /datum/perk/unfeeling/remove()
 	if(holder)
-		holder.sanity.view_damage_threshold -= 600 //Synth trait.
+		holder.sanity.view_damage_threshold -= 40 //Synth trait.
 		holder.sanity.sanity_invulnerability -= 1 //yep.
-		holder.sanity.insight_gain_multiplier *= 2 //so you arent softlocked
+		holder.sanity.insight_gain_multiplier *= 4 //Return us compltely, as removing this perk has a uniquic interation
+		holder.stats.addPerk(PERK_LESS_FEELING)
+	..()
+
+/datum/perk/less_feeling
+	name = "Less feeling"
+	desc = "Be it emotional supressors; a lackings of programming, or simply not caring less organic damage, your mind does not seem to full graps the soul or other emotion carings as easy."
+	icon_state = "interfacing" // Disco Elysium Skills - Simplified	Art.
+
+/datum/perk/less_feeling/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.view_damage_threshold += 10
+		holder.sanity.insight_gain_multiplier *= 0.5 //You gain insainly less sanity making you want to value stats
+		holder.sanity.positive_prob -= 10
+
+/datum/perk/less_feeling/remove()
+	if(holder)
+		holder.sanity.view_damage_threshold -= 10
+		holder.sanity.insight_gain_multiplier *= 2 //Return us completely
+		holder.sanity.positive_prob += 10
 	..()
 
 /datum/perk/fate/paper_worm
