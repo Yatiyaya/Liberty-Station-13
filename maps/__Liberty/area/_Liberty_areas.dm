@@ -105,6 +105,7 @@
 /area/liberty/maintenance/oldlibrary
 	name = "Abandoned Library"
 	icon_state = "erisgreen"
+	requires_power = FALSE
 
 /area/liberty/maintenance/undergroundfloor1south
 	name = "Surface South Maintenance"

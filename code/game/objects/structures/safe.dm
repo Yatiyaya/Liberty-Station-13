@@ -17,9 +17,9 @@ FLOOR SAFES
 	var/tumbler_1_open	//the tumbler position to open at- 0 to 72
 	var/tumbler_2_pos
 	var/tumbler_2_open
-	var/dial = 0		//where is the dial pointing?
-	var/space = 0		//the combined w_class of everything in the safe
-	var/maxspace = 24	//the maximum combined w_class of stuff in the safe
+	var/dial = 0		 //where is the dial pointing?
+	var/space = 0		 //the combined w_class of everything in the safe
+	var/maxspace = 99999 //the maximum combined w_class of stuff in the safe. Setting it high enough for the sake of highly weighted loot not properly getting inside.
 
 
 /obj/structure/safe/New()
