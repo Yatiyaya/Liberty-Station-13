@@ -41,7 +41,7 @@
 
 
 /obj/structure/closet/syndicate/nuclear
-	desc = "It's a storage unit for high operative gear."
+	desc = "It's a storage unit for specialized operative gear."
 
 /obj/structure/closet/syndicate/nuclear/populate_contents()
 	new /obj/item/storage/box/handcuffs(src)
@@ -56,7 +56,5 @@
 	new /obj/item/melee/energy/sword/sabre(src)
 	new /obj/item/clothing/gloves/thick/combat(src)
 	new /obj/item/clothing/mask/chameleon/voice(src)
-
-	var/obj/item/device/radio/uplink/U = new(src)
-	U.hidden_uplink.uses = 40
+	new /obj/item/device/radio/uplink(src)
 	return
