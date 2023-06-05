@@ -78,6 +78,8 @@
 	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
 
+	health_modifier = 5
+
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	alt_titles = list("Electrical Technician", "Atmospheric Technician", "Technical Apprentice")
 /*	noob_name = "Technical Apprentice" */
