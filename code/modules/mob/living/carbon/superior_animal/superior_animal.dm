@@ -304,7 +304,7 @@
 	var/can_see = TRUE
 	var/ran_see_check = FALSE
 	if(destroy_surroundings)
-		destroySurroundings()
+		DestroySurroundings()
 		already_destroying_surroundings = TRUE //setting this var prevents double destruction when handle_attacking_stance is called
 
 	var/mob/living/targetted_mob_real
@@ -356,7 +356,7 @@
 
 	retarget_rush_timer += ((world.time) + retarget_rush_timer_increment) //we put it here because we want mobs currently angry to be vigilant
 	if(destroy_surroundings && !already_destroying_surroundings) // the second check prevents handle_hostile_stance from causing double destruction
-		destroySurroundings()
+		DestroySurroundings()
 
 	if (!(isburrow(targetted_mob))) //we dont want mobs failing to use the burrows
 		// This block controls random retargetting

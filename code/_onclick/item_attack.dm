@@ -50,7 +50,10 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		user.do_attack_animation(src)
 		if (I.hitsound)
 			playsound(loc, I.hitsound, 50, 1, -1)
-		visible_message(SPAN_DANGER("[src] has been hit by [user] with [I]."))
+		var/weapon_mention
+		if(I.attack_message_name())
+			weapon_mention = " with [I.attack_message_name()]"
+		visible_message("<span class='warning'>[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"] [weapon_mention] by [user]!</span>")
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 /obj/item/attackby(obj/item/I, mob/living/user, var/params)

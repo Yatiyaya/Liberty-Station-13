@@ -368,6 +368,9 @@
 
 /obj/structure/closet/attackby(obj/item/I, mob/user)
 
+	if(user.a_intent == I_HURT && I.force)
+		return ..()
+
 	if (istype(I, /obj/item/gripper))
 		//Empty gripper attacks will call attack_AI
 		return FALSE
@@ -381,7 +384,7 @@
 	if(secure && locked)
 		usable_qualities += QUALITY_PULSING
 
-	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	var/tool_type = I?.get_tool_type(user, usable_qualities, src)
 	switch(tool_type)
 		if(QUALITY_WELDING)
 			if(!opened)

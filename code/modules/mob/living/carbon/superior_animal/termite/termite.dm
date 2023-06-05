@@ -103,8 +103,8 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 
 	// Poof
 	qdel(src)
-
-/mob/living/carbon/superior_animal/termite/destroySurroundings()
+/*
+/mob/living/carbon/superior_animal/termite/DestroySurroundings()
 	// Get next turf the golem wants to walk on
 	var/atom/targetted_mob = (target_mob?.resolve())
 	var/turf/T = get_step_towards(src, targetted_mob)
@@ -121,7 +121,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 		var/obj/structure/obstacle = locate(/obj/structure) in T
 		if(obstacle && !istype(obstacle, /obj/structure/termite_burrow))
 			obstacle.attack_generic(src, rand(surrounds_mult * melee_damage_lower, surrounds_mult * melee_damage_upper),pick(attacktext), TRUE)
-
+*/
 
 
 /mob/living/carbon/superior_animal/termite/handle_ai()

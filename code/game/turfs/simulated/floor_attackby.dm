@@ -34,7 +34,10 @@
 				playsound(src, I.hitsound, volume, 1, -1)
 
 			if (calc_damage > 0)
-				visible_message(SPAN_DANGER("[src] has been hit by [user] with [I]."))
+				var/weapon_mention
+				if(I.attack_message_name())
+					weapon_mention = " with [I.attack_message_name()]"
+				visible_message("<span class='warning'>[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"] [weapon_mention] by [user]!</span>")
 				take_damage(I.force*I.structure_damage_factor, I.damtype)
 			else
 				visible_message(SPAN_DANGER("[user] ineffectually hits [src] with [I]"))
