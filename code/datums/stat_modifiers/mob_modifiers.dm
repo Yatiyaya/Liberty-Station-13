@@ -95,10 +95,10 @@
 		if (melee_damage_lower_increment)
 			livingtarget.melee_damage_lower = ZERO_OR_MORE((livingtarget.melee_damage_lower + melee_damage_lower_increment))
 
-		var/mob/living/carbon/superior_animal/livingpotato = livingtarget
-		if(natural_weapon && istype(livingpotato, /mob/living/carbon/superior_animal))
-			livingpotato?.natural_weapon = natural_weapon
-		else if(natural_weapon && !istype(livingpotato, /mob/living/carbon/superior_animal))
+		if(natural_weapon && istype(livingtarget, /mob/living/carbon/superior_animal))
+			var/mob/living/carbon/superior_animal/livingpotato = livingtarget
+			livingpotato.natural_weapon = natural_weapon
+		else if(natural_weapon)
 			log_admin("stat_modifier attempted to apply [natural_weapon] onto [livingtarget].")
 
 		if (move_to_delay_mult)

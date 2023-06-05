@@ -320,5 +320,5 @@
 	var/pry_desc = "prying" //"X begins pry_desc the door!"
 
 	//What kind of weapon do they use? SET THIS OR DIE HORRIBLY//
-	var/obj/item/natural_weapon/natural_weapon = /obj/item/natural_weapon/bite
+	var/obj/item/natural_weapon/natural_weapon = /obj/item/natural_weapon
 	var/friendly = "nuzzles"

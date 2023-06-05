@@ -7,6 +7,7 @@
 	maxHealth = 200
 	melee_damage_lower = 40
 	melee_damage_upper = 50
+	natural_weapon = /obj/item/natural_weapon/punch/giant
 	move_to_delay = 2
 	armor = list(melee = 70, bullet = 60, energy = 80, bomb = 40, bio = 100, rad = 100) //We want to be gunned down, not lasered
 	drop_amount = 3

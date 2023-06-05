@@ -13,6 +13,7 @@
 	health = 30
 	melee_damage_lower = 5
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/bite/weak
 	poison_per_bite = 2
 	var/atom/cocoon_target
 	poison_type = "stoxin"
@@ -36,6 +37,7 @@
 	health = 50
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/bite
 	poison_per_bite = 4
 	egg_inject_chance = 5 //Yes
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/midwife
@@ -49,6 +51,7 @@
 	health = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/bite
 	poison_per_bite = 4
 	poison_type = "frostoil"
 	move_to_delay = 5 // Very slow
@@ -118,6 +121,7 @@
 	health = 200
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	natural_weapon = /obj/item/natural_weapon/bite/strong
 	poison_per_bite = 4
 	poison_type = "menace"
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/queen

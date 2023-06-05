@@ -8,6 +8,7 @@
 	health = 70
 	melee_damage_lower = 10
 	melee_damage_upper = 20
+	natural_weapon = /obj/item/natural_weapon/bite
 	poison_per_bite = 4
 	move_to_delay = 4.5
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/hunter
@@ -34,6 +35,7 @@
 	health = 100
 	melee_damage_lower = 20
 	melee_damage_upper = 25
+	natural_weapon = /obj/item/natural_weapon/bite/strong
 
 //bomb spider, very little toxins and not much health but explodes on reaching melee range.
 /mob/living/carbon/superior_animal/giant_spider/plasma
@@ -45,6 +47,7 @@
 	health = 30
 	melee_damage_lower = 5
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/bite/weak
 	poison_per_bite = 2
 	poison_type = "plasma"
 	move_to_delay = 4
@@ -68,6 +71,7 @@
 	health = 110
 	melee_damage_lower = 20
 	melee_damage_upper = 25
+	natural_weapon = /obj/item/natural_weapon/bite/strong
 	emote_see = list("chitters.","rubs its legs.","thumps its many legs on the ground.")
 	mob_size = MOB_LARGE
 	armor = list(melee = 15, bullet = 15, energy = 5, bomb = 5, bio = 10, rad = 25, agony = 0)
@@ -176,6 +180,7 @@
 	poison_per_bite = 0
 	melee_damage_lower = 35
 	melee_damage_upper = 40
+	natural_weapon = /obj/item/natural_weapon/bite/painful
 	poison_type = "aranecolmin" //Shockingly this is more deadly then normal as it makes metaball faster
 
 /mob/living/carbon/superior_animal/giant_spider/tarantula/burrowing
@@ -200,6 +205,7 @@
 	viewRange = 9
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	natural_weapon = /obj/item/natural_weapon/bite/strong
 	poison_per_bite = 4
 	flash_resistances = 3 //For balance against are speedy fello
 	poison_type = "party drops"
@@ -233,6 +239,7 @@
 	turns_per_move = 1
 	melee_damage_lower = 40
 	melee_damage_upper = 50
+	natural_weapon = /obj/item/natural_weapon/bite/grosse_schmerzen
 	flash_resistances = 100 //Many large eyes, flashing one doesn't blind the others
 	poison_per_bite = 6
 	poison_type = "stoxin"

@@ -37,6 +37,7 @@ God help us.
 	attack_verb = list("bitten")
 	hitsound = 'sound/weapons/bite.ogg'
 	force = 10
+	armor_penetration = 5
 	sharp = TRUE
 
 /obj/item/natural_weapon/bite/weak
@@ -50,6 +51,12 @@ God help us.
 
 /obj/item/natural_weapon/bite/strong
 	force = 20
+
+/obj/item/natural_weapon/bite/painful
+	force = 35
+
+/obj/item/natural_weapon/bite/grosse_schmerzen
+	force = 50
 
 /obj/item/natural_weapon/claws
 	name = "claws"
@@ -69,11 +76,6 @@ God help us.
 	name = "hooves"
 	attack_verb = list("kicked")
 	force = 5
-
-/obj/item/natural_weapon/punch
-	name = "fists"
-	attack_verb = list("punched")
-	force = 10
 
 /obj/item/natural_weapon/pincers
 	name = "pincers"
@@ -96,8 +98,20 @@ God help us.
 	force = 5
 	sharp = TRUE
 
-/obj/item/natural_weapon/large
+/obj/item/natural_weapon/punch
+	name = "fists"
+	attack_verb = list("punched")
+	force = 10
+
+/obj/item/natural_weapon/punch/large
 	force = 15
 
-/obj/item/natural_weapon/giant
+/obj/item/natural_weapon/punch/giant
 	force = 30
+
+/obj/item/natural_weapon/punch/mushroom
+	name = "big fists"
+	attack_verb = list("slammed")
+	hitsound = 'sound/weapons/bite.ogg'
+	force = 15
+
