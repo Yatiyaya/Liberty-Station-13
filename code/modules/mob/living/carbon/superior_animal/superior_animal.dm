@@ -48,6 +48,11 @@
 
 	target_mob = null
 
+	//if gibbed, no get
+	if(istype(natural_weapon))
+		QDEL_NULL(natural_weapon)
+	//Unless... Carving weapons off mobs?
+
 	LAZYCLEARLIST(objectsInView)
 	LAZYCLEARLIST(friends)
 

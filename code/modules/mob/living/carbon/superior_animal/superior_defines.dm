@@ -315,19 +315,14 @@
 												/obj/structure/railing)
 
 	var/can_pry = TRUE
-//time it takes for mob to pry open a door. Scales off var/destroy_hits for /obj/machinery/door. Defaults to 7 seconds
-	var/pry_time = 0.7 SECONDS
+//time it takes for mob to pry open a door. Scales off health/maxHealth for /obj/machinery/door. Defaults to 7 seconds
+	var/pry_time = 7 SECONDS
 	var/pry_desc = "prying" //"X begins pry_desc the door!"
 
 	//What kind of weapon do they use? SET THIS OR DIE HORRIBLY//
 	var/obj/item/natural_weapon/natural_weapon = /obj/item/natural_weapon/bite
 	var/friendly = "nuzzles"
 
-/mob/living/carbon/superior_animal/Destroy()
-	if(istype(natural_weapon))
-		QDEL_NULL(natural_weapon)
-	. = ..()
-	//But don't give it to people. Unless... Carving weapons off mobs?
 
 /obj/item/natural_weapon
 	name = "natural weapons"

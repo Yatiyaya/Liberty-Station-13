@@ -188,7 +188,7 @@
 						return
 					face_atom(obstacle)
 					//How damaged the door is scales how easily it's opened//
-					var/pry_time_holder = (obstacle.destroy_hits * pry_time)
+					var/pry_time_holder = ((obstacle.health/obstacle.maxHealth) * pry_time)
 					pry_door(src, pry_time_holder, obstacle)
 					return
 /*
@@ -205,6 +205,7 @@
 	visible_message("<span class='warning'>\The [user] begins [pry_desc] at \the [pesky_door]!</span>")
 	busy = TRUE
 	if(do_after(user, delay, pesky_door))
+		pesky_door.take_damage(round(pesky_door.health/pry_time))
 		pesky_door.open(1)
 		busy = FALSE
 	else
