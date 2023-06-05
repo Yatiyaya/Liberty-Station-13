@@ -8,7 +8,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_COG = 3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
+	stat_modifiers = list(STAT_COG = 5, STAT_BIO = 5, STAT_MEC = 5) //Pretty bad perk baked into this so
 
 	perks = list(PERK_SOLBORN)
 
@@ -20,7 +20,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_TGH = 3)
+	stat_modifiers = list(STAT_TGH = 5, STAT_ROB = 5, STAT_VIG = 5)
 
 /datum/category_item/setup_option/background/ancestry/human_pallatian
 	name = "Pallatian"
@@ -30,7 +30,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_ROB = 3, STAT_BIO = -3)
+	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 5, STAT_COG = 5)
 
 /datum/category_item/setup_option/background/ancestry/human_coalition
 	name = "Free Worlder"
@@ -40,7 +40,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_VIG = 3, STAT_COG = -3)
+	stat_modifiers = list(STAT_VIG = 5, STAT_ROB = 5,STAT_MEC = 5)
 
 /datum/category_item/setup_option/background/ancestry/human_vatgrown
 	name = "Vatgrown Humanoid"
@@ -52,6 +52,6 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_BIO = -3, STAT_MEC = 3, STAT_VIG = -3, STAT_COG = 3)
+	stat_modifiers = list(STAT_TGH = 5, STAT_MEC = 5, STAT_ROB = 5, STAT_WIL = 3)
 
 	perks = list(PERK_DEBTOR)
