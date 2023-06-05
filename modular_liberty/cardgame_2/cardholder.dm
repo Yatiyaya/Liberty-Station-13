@@ -25,6 +25,8 @@
 		card_target = pick(contents)
 		card_target.loc = T
 		card_target = /obj/item/card_carp //so we have vars
+		if(card_target.late_fodder)
+			card_target.cant_box = TRUE
 
 /obj/item/cardholder/attackby(obj/item/C, mob/user as mob)
 	..()

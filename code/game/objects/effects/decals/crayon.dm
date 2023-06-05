@@ -188,6 +188,10 @@
 					cards_to_life_spell(M)
 					continue
 
+				if(spell.message == "Life To Cards." && candle_amount >= 3)
+					life_to_card_spell(M)
+					continue
+
 				if(spell.message == "Cards." && candle_amount >= 3)
 					cards_spell(M)
 					continue
@@ -764,6 +768,31 @@
 		B.remove_self(50)
 		M.sanity.changeLevel(1)
 		qdel(carpy)
+
+// Life to Cards: Consumes a mob to turn into a uniquic card
+/obj/effect/decal/cleanable/crayon/proc/life_to_card_spell(mob/living/carbon/human/M)
+	var/datum/reagent/organic/blood/B = M.get_blood()
+	var/success = FALSE
+	for(var/mob/living/carbon/superior_animal/target in oview(1) )
+		B.remove_self(15)
+		success = TRUE
+		var/obj/item/card_carp/death_card
+		new /obj/item/card_carp/death_card(src.loc)
+		death_card.generate(target.maxHealth, target.meat_amount, target.melee_damage_lower, target.ranged, target.name)
+		to_chat(M, "<span class='warning'>The [target] sinks down into the ground leaving behind a small card?!</span>")
+
+	for(var/mob/living/simple_animal/simplemtarget in oview(1) )
+		B.remove_self(15)
+		success = TRUE
+		var/obj/item/card_carp/death_card
+		new /obj/item/card_carp/death_card(src.loc)
+		death_card.generate(simplemtarget.maxHealth, simplemtarget.meat_amount, simplemtarget.melee_damage_lower, 0, simplemtarget.name)
+		to_chat(M, "<span class='warning'>The [simplemtarget] sinks down into the ground leaving behind a small card?!</span>")
+
+
+	if(!success)
+		B.remove_self(15)
+		new /obj/item/card_carp/index/adved(src.loc)
 
 // Equalize: This spell pools together the entire average percentage of blood from all mobs in sight
 // and distributes it equally among the number of mobs, "equalizing" it.
