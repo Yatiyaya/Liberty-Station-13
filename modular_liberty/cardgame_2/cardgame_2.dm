@@ -537,7 +537,7 @@
 		greatest = list("Mending", "Hermit", "Hunter", "Sickly")
 
 
-	for(point_total >= 0)
+	while(point_total >= 0)
 		point_total -= 2
 		if(prob(50) && point_total >= 10 && greatest.len)
 			point_total -= 10

@@ -70,7 +70,7 @@
 			var/datum/reagent/organic/blood/B = M.get_blood()
 			var/candle_amount = 0
 			for(var/obj/item/flame/candle/mage_candle in oview(3))
-				if(!mage_candle.lit)
+				if(!mage_candle.lit && body_checks(M))
 					mage_candle.light(flavor_text = SPAN_NOTICE("\The [name] lights up."))
 					mage_candle.endless_burn = TRUE
 					B.remove_self(15)
@@ -168,7 +168,7 @@
 			var/datum/reagent/organic/blood/B = M.get_blood()
 			var/candle_amount = 0
 			for(var/obj/item/flame/candle/mage_candle in oview(3))
-				if(!mage_candle.lit)
+				if(!mage_candle.lit && body_checks(M))
 					mage_candle.light(flavor_text = SPAN_NOTICE("\The [name] lights up."))
 					mage_candle.endless_burn = TRUE
 					B.remove_self(15)
@@ -329,6 +329,10 @@
 /obj/effect/decal/cleanable/crayon/proc/life_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/mob/living/carbon/superior_animal/greater in oview(1)) // Must be on the spell circle
+
+		if(!body_checks(M))
+			return
+
 		if(M.maxHealth > 30)
 			to_chat(M, "<span class='warning'>Gung vf abg qrnq juvpu pna rgreany yvr, naq jvgu fgenatr nrbaf rira qrngu znl qvr.</span>") // Guess the language and the phrase.
 			greater.revive()
@@ -346,6 +350,10 @@
 		return
 
 	for(var/mob/living/simple_animal/lesser in oview(1)) // Must be on the spell circle
+
+		if(!body_checks(M))
+			return
+
 		if(M.maxHealth > 30)
 			to_chat(M, "<span class='info'>Gung vf abg qrnq juvpu pna rgreany yvr, naq jvgu fgenatr nrbaf rira qrngu znl qvr.</span>")
 			lesser.revive()
@@ -488,6 +496,10 @@
 	M.maxHealth -= 10
 	M.health -= 10
 	for(var/obj/item/reagent_containers/food/snacks/grown/G in oview(5))
+
+		if(!body_checks(M))
+			return
+
 		if(G.name == "sunflower") // Apply all costs ONLY if the plant is the correct one!!!
 			to_chat(M, "<span class='info'>Distant voices scream in agony from every direction: NOT THE BEES!</span>")
 			new /mob/living/carbon/superior_animal/vox/wasp(G.loc)
@@ -501,6 +513,10 @@
 /obj/effect/decal/cleanable/crayon/proc/pouch_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/storage/pill_bottle/dice/frodo in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		B.remove_self(50)
 		M.sanity.changeLevel(-50) //not always going to break you. But will tank your sanity.
 		to_chat(M, "<span class='warning'>The dice bag gives a loud pop.</span>")
@@ -513,6 +529,8 @@
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	var/mob/living/carbon/human/H = M
 	for(var/obj/item/paper/P in oview(1)) // Requires a paper
+		if(!body_checks(M))
+			return
 		if(H.stats.getPerk(PERK_ALCHEMY))
 			to_chat(M, SPAN_WARNING("The paths of the Scribe and the Alchemist are mutually exclusive."))
 			return
@@ -533,6 +551,10 @@
 /obj/effect/decal/cleanable/crayon/proc/awaken_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/tool/knife/ritual/knifey in oview(1)) // No ascending church knives
+
+		if(!body_checks(M))
+			return
+
 		if(istype(knifey, /obj/item/tool/knife/ritual) && !istype(knifey, /obj/item/tool/knife/ritual/sickle) && !istype(knifey, /obj/item/tool/knife/ritual/blade))
 			to_chat(M, "<span class='warning'>Your weapon twists its form, metal bending as if it were flesh with a sickening crunch!</span>")
 			playsound(loc, 'sound/items/biotransform.ogg', 50)
@@ -561,6 +583,10 @@
 /obj/effect/decal/cleanable/crayon/proc/recipe_spell(mob/living/carbon/human/M, alchemist = FALSE)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/paper/P in oview(1)) // Must be on the spell circle
+
+		if(!body_checks(M))
+			return
+
 		if(alchemist)
 			to_chat(M, "<span class='info'>The echoing sound of scribbling fills the air.</span>")
 			playsound(loc, 'sound/bureaucracy/pen1.ogg')
@@ -578,6 +604,10 @@
 /obj/effect/decal/cleanable/crayon/proc/satchel_spell(mob/living/carbon/human/M, alchemist = FALSE)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/storage/pouch/poumch in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		if(alchemist)
 			if(istype(poumch, /obj/item/storage/pouch) && !istype(poumch, /obj/item/storage/pouch/alchemy)) // Don't transmute your own satchel
 				to_chat(M, "<span class='warning'>The pouch bends and twists its form, becoming a portable flask holder!</span>")
@@ -625,6 +655,10 @@
 /obj/effect/decal/cleanable/crayon/proc/drain_spell(mob/living/carbon/human/M, able_to_cast = FALSE)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/mob/living/carbon/superior_animal/greater in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		to_chat(M, "<span class='warning'>The sacrifice vanishes to dust before you. You feel an ominous warm wind envelop your form as you absorb its lifeforce unto your own.</span>")
 		if(able_to_cast)
 			M.maxHealth += 1
@@ -636,6 +670,10 @@
 		return
 
 	for(var/mob/living/simple_animal/lesser in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		to_chat(M, "<span class='warning'>The sacrifice vanishes to dust before you. You feel an ominous warm wind envelop your form as you absorb its lifeforce unto your own.</span>")
 		if(able_to_cast)
 			M.maxHealth += 1
@@ -652,6 +690,10 @@
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	to_chat(M, "<span class='warning'>A voice whispers in front of you: Any foils?</span>")
 	for(var/obj/item/device/camera_film in oview(1)) // Must be on the spell circle
+
+		if(!body_checks(M))
+			return
+
 		B.remove_self(10)
 		new /obj/random/card_carp(src.loc)
 		M.sanity.changeLevel(-3)
@@ -665,6 +707,10 @@
 	var /mob/living/simple_animal/simplemob = /mob/living/simple_animal/hostile/creature
 	var /mob/living/carbon/superior_animal/superiormob = null
 	for(var/obj/item/card_carp/carpy in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		to_chat(M, "<span class='warning'>The card rotates 90 degrees then begins to fold, twisting untill it breaks open with a reality-ripping sound. Something crawls out of its interior!</span>")
 
 		// Nonhostile simplemobs. The pets of the colony.
@@ -773,7 +819,11 @@
 /obj/effect/decal/cleanable/crayon/proc/life_to_card_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	var/success = FALSE
-	for(var/mob/living/carbon/superior_animal/target in oview(1) )
+	for(var/mob/living/carbon/superior_animal/target in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		B.remove_self(15)
 		success = TRUE
 		var/obj/item/card_carp/death_card
@@ -781,7 +831,11 @@
 		death_card.generate(target.maxHealth, target.meat_amount, target.melee_damage_lower, target.ranged, target.name)
 		to_chat(M, "<span class='warning'>The [target] sinks down into the ground leaving behind a small card?!</span>")
 
-	for(var/mob/living/simple_animal/simplemtarget in oview(1) )
+	for(var/mob/living/simple_animal/simplemtarget in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		B.remove_self(15)
 		success = TRUE
 		var/obj/item/card_carp/death_card
@@ -844,6 +898,10 @@
 /obj/effect/decal/cleanable/crayon/proc/basin_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/structure/reagent_dispensers/watertank/W in oview(1)) // Must be on the spell circle
+
+		if(!body_checks(M))
+			return
+
 		to_chat(M, "<span class='info'>Thunder crackles as a miniature cloud of nothingness manifests itself. Blood begins pouring down, forming an omnious obsidian basin beneath it...</span>")
 		B.remove_self(100) // Basically pouring your blood into a container, insane
 		M.sanity.breakdown(FALSE) // If your blood got sucked and poured into a container you too would freak out
@@ -860,6 +918,10 @@
 /obj/effect/decal/cleanable/crayon/proc/ascension_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/oddity/common/O in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		if(istype(O, /obj/item/oddity/common/book_omega/closed))
 			to_chat(M, "<span class='info'>The book floats before you and opens, new information within being written as your eyes pour over it!</span>")
 			B.remove_self(80)
@@ -884,6 +946,10 @@
 /obj/effect/decal/cleanable/crayon/proc/veil_spell(mob/living/carbon/human/M)
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/obj/item/clothing/glasses/blindfold/G in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		to_chat(M, "<span class='info'>The blindfold glows for a moment before falling silent, forces unknown apparently strengthened its properties...</span>")
 		B.remove_self(80)
 		M.sanity.changeLevel(-10)
@@ -896,6 +962,10 @@
 /obj/effect/decal/cleanable/crayon/proc/scroll_spell(mob/living/carbon/human/M) // Able to be casted by all. But only filled out by scribes.
 	var/datum/reagent/organic/blood/B = M.get_blood()
 	for(var/mob/living/carbon/superior_animal/target in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		if(target.stat != DEAD) // Has to be dead. Use Drain if you want to super kill things.
 			return
 		B.remove_self(50) // Consume the blood cost only if it succeeds!!
@@ -903,6 +973,10 @@
 		new /obj/item/scroll(src.loc)
 		qdel(target)
 	for(var/mob/living/simple_animal/target in oview(1))
+
+		if(!body_checks(M))
+			return
+
 		if(target.stat != DEAD)
 			return
 		B.remove_self(50)
