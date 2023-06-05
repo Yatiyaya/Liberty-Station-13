@@ -22,6 +22,7 @@
 	var/obj/item/inventory_mask
 	possession_candidate = 1
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	sanity_damage = -1
 
 /mob/living/simple_animal/crab/Life()
@@ -66,6 +67,7 @@
 	density = 0
 	wander = 1
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	sanity_damage = -1
 
 /mob/living/simple_animal/hostile/ratking
@@ -119,4 +121,5 @@
 	faction = "pond"
 	density = 0
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	sanity_damage = -1
