@@ -829,7 +829,7 @@
 		var/obj/item/card_carp/death_card
 		new /obj/item/card_carp/death_card(src.loc)
 		death_card.generate(target.maxHealth, target.meat_amount, target.melee_damage_lower, target.ranged, target.name)
-		to_chat(M, "<span class='warning'>The [target] sinks down into the ground leaving behind a small card?!</span>")
+		to_chat(M, "<span class='warning'>\The [target] sinks down into the rune leaving behind... a small card?!</span>")
 
 	for(var/mob/living/simple_animal/simplemtarget in oview(1))
 
@@ -841,7 +841,7 @@
 		var/obj/item/card_carp/death_card
 		new /obj/item/card_carp/death_card(src.loc)
 		death_card.generate(simplemtarget.maxHealth, simplemtarget.meat_amount, simplemtarget.melee_damage_lower, 0, simplemtarget.name)
-		to_chat(M, "<span class='warning'>The [simplemtarget] sinks down into the ground leaving behind a small card?!</span>")
+		to_chat(M, "<span class='warning'>\The [simplemtarget] sinks down into the rune leaving behind... a small card?!</span>")
 
 
 	if(!success)
