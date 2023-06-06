@@ -692,7 +692,8 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
-		GUN_UPGRADE_OFFSET = 0.9,
+		GUN_UPGRADE_NVISION = TRUE, // So that it's not just a barely better ACOG. Would also not stack with thermals.
+		GUN_UPGRADE_OFFSET = 0.8,
 		GUN_UPGRADE_ZOOM = 1.2 // 9 extra tiles
 		)
 	I.gun_loc_tag = GUN_SCOPE

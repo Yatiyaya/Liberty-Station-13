@@ -482,6 +482,10 @@
 		if(istype(G.loc, /mob))
 			var/mob/user = G.loc
 			user.update_action_buttons()
+
+	if(weapon_upgrades[GUN_UPGRADE_NVISION])
+		G.vision_flags = SEE_INVISIBLE_NOLIGHTING
+
 	if(weapon_upgrades[GUN_UPGRADE_THERMAL])
 		G.vision_flags = SEE_MOBS
 

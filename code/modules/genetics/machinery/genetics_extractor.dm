@@ -23,7 +23,7 @@
 	var/pulping = FALSE //Whether or not the device is extracting genetics
 
 /obj/machinery/genetics/pulper/attackby(obj/item/I, mob/user)
-	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
 		to_chat(usr, SPAN_WARNING("The large operation pannel and data are a small bit complex to handle and theirs no clear operation to turn this on."))
 		return
 
@@ -102,7 +102,7 @@
 	if(stat & (NOPOWER|BROKEN))
 		to_chat(user, SPAN_WARNING("The pulper is inactive and blessedly silent."))
 		return
-	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 35) && !user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, 70)) //So someone that has basic chems or level up can be an assent
 		to_chat(usr, SPAN_WARNING("Your not quite sure how to use this with its complex data sheets and operations protocall without being versed in sciences or trainning."))
 		return
 	if(pulping)

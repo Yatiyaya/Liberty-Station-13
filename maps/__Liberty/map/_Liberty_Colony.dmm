@@ -44913,6 +44913,7 @@
 /obj/item/genetics/mut_injector,
 /obj/item/genetics/mut_injector,
 /obj/item/computer_hardware/hard_drive/portable/design/genetics_kit_public,
+/obj/item/device/science_tool,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/genetics)
 "loH" = (
@@ -67200,6 +67201,18 @@
 	},
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/security/maingate_outside)
+"qUO" = (
+/obj/effect/floor_decal/spline/fancy{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 26;
+	name = "thermostat";
+	target_temperature = 308.15;
+	desc = "Controls the temperature of both ambient and water for the hot springs."
+	},
+/turf/simulated/floor/wood,
+/area/liberty/crew_quarters/hotsprings)
 "qUV" = (
 /obj/machinery/reagentgrinder/industrial,
 /turf/simulated/floor/tiled/dark/danger,
@@ -108301,12 +108314,12 @@ jqQ
 nml
 rjq
 qrF
-aSs
+qUO
 aSs
 aSs
 aSs
 qrF
-aSs
+qUO
 aSs
 aSs
 aSs

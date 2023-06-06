@@ -2,7 +2,7 @@
 	category = "PIRS"
 	time = 100
 	related_stats = list(STAT_COG)
-	requiredPerk = PERK_SCIENCE // Todo, make a Science_Armorer perk or something so the CAPSA Overseers aren't omnicrafters
+	requiredPerk = PERK_ROBOTICS_EXPERT // Research Provost and Roboticist can craft these
 
 
 //Shields and Armor Mods | Gonna be expanded on later
@@ -177,7 +177,7 @@
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_GLASS, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_PLASMAGLASS, "time" = 30),
 		list(QUALITY_CUTTING, 25, "time" = 90)
 	)
 
