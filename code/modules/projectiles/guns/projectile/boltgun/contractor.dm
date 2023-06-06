@@ -1,6 +1,9 @@
-/obj/item/gun/projectile/boltgun/contractor
-	name = "\"Contractor\" caseless boltgun"
-	desc = "A strange design the internally suppressed caseless \"Contractor\" boltaction rifle is a high-end manufactured 'sporting' weapon. \
+//This gun is meant to be a boltgun bad sadly do to being a caseless gun,\
+it has to be automatic untill someone rewrights the code for how boltguns handle caseless ammo
+
+/obj/item/gun/projectile/automatic/contractor
+	name = "\"Contractor\" caseless auto boltgun"
+	desc = "A strange design the internally suppressed caseless \"Contractor\" autobolt action rifle is a high-end manufactured 'sporting' weapon. \
 			Chambered in 7mm, this weapon is perfect for stealthy assassins, scouting missions, and for rich people looking to say they hunt.."
 	icon = 'icons/obj/guns/projectile/contractor.dmi'
 	icon_state = "contractor"
@@ -33,3 +36,7 @@
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/clrifle = 1)
+
+/obj/item/gun/projectile/automatic/contractor/handle_post_fire()
+	..()
+	flick("anime", src)
