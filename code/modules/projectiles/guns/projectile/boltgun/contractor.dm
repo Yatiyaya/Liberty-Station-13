@@ -1,5 +1,5 @@
-//This gun is meant to be a boltgun bad sadly do to being a caseless gun,\
-it has to be automatic untill someone rewrights the code for how boltguns handle caseless ammo
+// This gun is meant to be a boltgun bad sadly do to being a caseless gun,
+// it has to be automatic untill someone rewrights the code for how boltguns handle caseless ammo
 
 /obj/item/gun/projectile/automatic/contractor
 	name = "\"Contractor\" caseless auto boltgun"
