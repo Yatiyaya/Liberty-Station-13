@@ -30,7 +30,7 @@
 /obj/item/clothing/under/rank/engineer
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Orange For the Engineers, It stills having Terra Fed Markings."
 	name = "Terra Union Engineer Jumpsuit"
-	icon_state = "Terra_engineer_icon"
+	icon_state = "Terra_engineer"
 	item_state = "Terra_engineer"
 	armor_list = list(
 		melee = 0,
@@ -40,6 +40,7 @@
 		bio = 50,
 		rad = 50
 	)
+	item_state_slots = null
 
 /obj/item/clothing/under/rank/engineer/verb/toggle_style()
 	set name = "Adjust Style"
@@ -70,7 +71,7 @@
 /obj/item/clothing/under/rank/miner
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Brown For the Miners, It stills having Terra Fed Markings."
 	name = "Terra Union Miner jumpsuit"
-	icon_state = "Terra_miner_icon"
+	icon_state = "Terra_miner"
 	item_state = "Terra_miner"
 	armor_list = list(
 		melee = 0,
@@ -80,6 +81,7 @@
 		bio = 50,
 		rad = 50
 	)
+	item_state_slots = null
 
 /obj/item/clothing/under/rank/miner/verb/toggle_style()
 	set name = "Adjust Style"
@@ -111,7 +113,7 @@
 /obj/item/clothing/under/rank/chief
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Navy Blue for the Chief, It stills having Terra Fed Markings."
 	name = "Terra Union Chief Jumpsuit"
-	icon_state = "Terra_chief_icon"
+	icon_state = "Terra_chief"
 	item_state = "Terra_chief"
 	armor_list = list(
 		melee = 0,
@@ -121,6 +123,7 @@
 		bio = 50,
 		rad = 50
 	)
+	item_state_slots = null
 
 /obj/item/clothing/under/rank/chief/verb/toggle_style()
 	set name = "Adjust Style"
