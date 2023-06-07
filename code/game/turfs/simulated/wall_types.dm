@@ -301,7 +301,7 @@
 	reinf_color_override = "#FFFFFF"
 
 /*
-	similacrum positronic/Alliance walls, for use on derelict stuff
+	Simulacrum positronic/Alliance walls, for use on derelict stuff
 */
 /turf/simulated/wall/untinted/onestar
 	icon_state = "onestar_standard"

@@ -204,10 +204,11 @@
 	name = "Phazon wreckage"
 	icon_state = "phazon-broken"
 
-/obj/effect/decal/mecha_wreckage/similacrum
-	name = "similacrum wreckage"
+// TODO: Make this wreckage contain Simulacrum weapons or unique mechs/upgrades stuff when crowbar salvaged
+/obj/effect/decal/mecha_wreckage/simulacrum
+	name = "Simulacrum mech wreckage"
 	icon = 'icons/mob/64x64.dmi'
-	icon_state = "similacrum_mech-broken"
+	icon_state = "simulacrum_boss_wrecked"
 
 /obj/effect/decal/mecha_wreckage/odysseus
 	name = "Odysseus wreckage"

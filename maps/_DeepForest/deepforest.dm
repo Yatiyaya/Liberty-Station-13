@@ -45,8 +45,8 @@
 	height = 1
 	digsites = "TEMPLE"
 
-/obj/map_data/similacrum_field_offices
-	name = "Similacrum Field Offices"
+/obj/map_data/simulacrum_field_offices
+	name = "Simulacrum Field Offices"
 	is_player_level = TRUE
 	is_contact_level = FALSE
 	is_accessable_level = FALSE

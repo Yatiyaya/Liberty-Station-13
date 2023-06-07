@@ -11,7 +11,7 @@
 #define TECH_DATA "programming"
 #define TECH_ILLEGAL "syndicate"
 #define TECH_ARCANE "arcane"
-#define TECH_GREYSON "similacrum"
+#define TECH_SIMULACRUM "simulacrum"
 
 //used in design to specify which machine can build it
 #define IMPRINTER		(1<<0)	//For circuits. Uses glass/chemicals.
@@ -31,7 +31,7 @@
 #define RESEARCH_BLUESPACE     /datum/tech/bluespace
 #define RESEARCH_ROBOTICS      /datum/tech/robotics
 #define RESEARCH_EXOSUIT	   /datum/tech/exosuit
-#define RESEARCH_SIMILACRUM    /datum/tech/similacrum
+#define RESEARCH_SIMULACRUM    /datum/tech/simulacrum
 #define RESEARCH_ILLEGAL       /datum/tech/illegal
 
 

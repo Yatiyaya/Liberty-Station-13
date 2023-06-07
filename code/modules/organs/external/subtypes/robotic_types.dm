@@ -260,9 +260,9 @@
 /* Lootable Prosthetsis*/
 /////////////////////////
 
-// Similacrum - Only limbs
+// Simulacrum - Only limbs
 /obj/item/organ/external/robotic/one_star
-	name = "\"Similacrum\""
+	name = "\"Simulacrum\""
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"

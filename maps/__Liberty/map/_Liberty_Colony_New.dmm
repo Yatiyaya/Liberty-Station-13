@@ -14814,7 +14814,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "dBb" = (
 /obj/structure/bed/chair/custom/onestar{
-	desc = "A steel chair manufactured by Similacrum Robotics. Doesn't look very comfortable.";
+	desc = "A steel chair manufactured by Simulacrum Robotics. Doesn't look very comfortable.";
 	dir = 4;
 	name = "stiff chair"
 	},
@@ -67575,7 +67575,7 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
 "pBF" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/boomba,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor1north)

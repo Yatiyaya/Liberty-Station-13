@@ -4,19 +4,19 @@
 	build_path = /obj/item/clothing/suit/space/void/excelsior
 
 /datum/design/autolathe/clothing/iron_lock_security_armor
-	name = "Similacrum Robotics Ablative Vest"
+	name = "Simulacrum Robotics Ablative Vest"
 	build_path = /obj/item/clothing/suit/armor/vest/iron_lock_security
 
 /datum/design/autolathe/clothing/iron_lock_security_helmet
-	name = "Similacrum Robotics Ablative Helmet"
+	name = "Simulacrum Robotics Ablative Helmet"
 	build_path = /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 
 /datum/design/autolathe/clothing/iron_lock_security_gloves
-	name = "Similacrum Robotics Ablative Gloves"
+	name = "Simulacrum Robotics Ablative Gloves"
 	build_path = /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 
 /datum/design/autolathe/clothing/iron_lock_security_boots
-	name = "Similacrum Robotics Ablative Boots"
+	name = "Simulacrum Robotics Ablative Boots"
 	build_path = /obj/item/clothing/shoes/ablasive/iron_lock_security
 
 /datum/design/autolathe/clothing/si_xenobio_hood

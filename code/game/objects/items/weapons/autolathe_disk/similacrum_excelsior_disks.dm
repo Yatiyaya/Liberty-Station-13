@@ -1,8 +1,8 @@
 // Disks formated as /designpath = pointcost , if no point cost is specified it defaults to 1.
 // To make a design unprotect use -1
-// similacrum positronic
+// simulacrum positronic
 /obj/item/computer_hardware/hard_drive/portable/design/onestar
-	disk_name = "Similacrum Robotics Tool Pack"
+	disk_name = "simulacrum Robotics Tool Pack"
 	icon_state = "onestar"
 	license = 5
 	designs = list(
@@ -18,32 +18,32 @@
 		/datum/design/autolathe/tool/onestar_shovel,
 		/datum/design/autolathe/tool/jackhammer_onestar,
 		/datum/design/autolathe/tool/drill_onestar,
-		/datum/design/autolathe/part/similacrum/ai = 3,
+		/datum/design/autolathe/part/simulacrum/ai = 3,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/stockparts
-	disk_name = "Similacrum Robotics Stock Parts Pack"
+	disk_name = "simulacrum Robotics Stock Parts Pack"
 	icon_state = "onestar"
 	license = 8
 	designs = list(
-		/datum/design/autolathe/similacrum/laser,
-		/datum/design/autolathe/similacrum/matter,
-		/datum/design/autolathe/similacrum/module,
-		/datum/design/autolathe/similacrum/capacitor,
-		/datum/design/autolathe/similacrum/manipulator,
+		/datum/design/autolathe/simulacrum/laser,
+		/datum/design/autolathe/simulacrum/matter,
+		/datum/design/autolathe/simulacrum/module,
+		/datum/design/autolathe/simulacrum/capacitor,
+		/datum/design/autolathe/simulacrum/manipulator,
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/cog
-	disk_name = "Similacrum Robotics - Cog"
+	disk_name = "simulacrum Robotics - Cog"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
-		/datum/design/autolathe/gun/similacrum_cog = 2,
+		/datum/design/autolathe/gun/simulacrum_cog = 2,
 		/datum/design/autolathe/cell/medium/high,
 	)
 /*
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/spring
-	disk_name = "Similacrum Robotics - Spring"
+	disk_name = "simulacrum Robotics - Spring"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -55,7 +55,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rivet
-	disk_name = "Similacrum Robotics - Rivet"
+	disk_name = "simulacrum Robotics - Rivet"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -67,7 +67,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/rebar
-	disk_name = "Similacrum Robotics - rebar"
+	disk_name = "simulacrum Robotics - rebar"
 	icon_state = "onestar"
 	license = 10
 	designs = list(
@@ -79,7 +79,7 @@
 		)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/nail_gun
-	disk_name = "Similacrum Robotics - Nail Gun"
+	disk_name = "simulacrum Robotics - Nail Gun"
 	icon_state = "onestar"
 	license = 16
 	designs = list(
@@ -95,7 +95,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/scaffold
-	disk_name = "Similacrum Robotics - Scaffold"
+	disk_name = "simulacrum Robotics - Scaffold"
 	icon_state = "onestar"
 	license = 6
 	designs = list(
@@ -105,7 +105,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/trouble_shooter
-	disk_name = "Similacrum Robotics - Trouble Shooter"
+	disk_name = "simulacrum Robotics - Trouble Shooter"
 	icon_state = "onestar"
 
 	license = 6
@@ -117,7 +117,7 @@
 	)
 */
 /obj/item/computer_hardware/hard_drive/portable/design/onestar/armor
-	disk_name = "Similacrum Robotics - Ablative Vest"
+	disk_name = "simulacrum Robotics - Ablative Vest"
 	icon_state = "onestar"
 	license = 6 //3 sets
 	designs = list(

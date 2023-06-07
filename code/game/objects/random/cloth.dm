@@ -480,18 +480,18 @@
 	icon_state = "armor-grey-low"
 	spawn_nothing_percentage = 60
 
-/obj/random/cloth/similacrum_clothing
-	name = "random similacrum clothing"
-	desc = "This is a random similacrum clothing."
+/obj/random/cloth/simulacrum_clothing
+	name = "random Simulacrum clothing"
+	desc = "This is a random Simulacrum clothing."
 	icon_state = "armor-grey"
 
-/obj/random/cloth/similacrum_clothing/low_chance
-	name = "low chance random similacrum clothing"
-	desc = "This is a random similacrum clothing."
+/obj/random/cloth/simulacrum_clothing/low_chance
+	name = "low chance random Simulacrum clothing"
+	desc = "This is a random Simulacrum clothing."
 	icon_state = "armor-grey-low"
 	spawn_nothing_percentage = 60
 
-/obj/random/cloth/similacrum_clothing/item_to_spawn()
+/obj/random/cloth/simulacrum_clothing/item_to_spawn()
 	return pickweight(list(/obj/item/clothing/under/os_jumpsuit = 8,
 				/obj/item/clothing/under/iron_lock_security = 5,
 				/obj/item/clothing/shoes/ablasive/iron_lock_security = 1,

@@ -1,7 +1,7 @@
 // More armor, HP and damage, but move slower
 /mob/living/carbon/superior_animal/handmade/sword
 	name = "Custom-made Sword Drone"
-	desc = "Built from the Phokorus Institute division's craftsmanship, and gathered designs of Similacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the Phokorus Institute division's craftsmanship, and gathered designs of Simulacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	icon_state = "pi_sword_handmade"
 	attack_sound = 'sound/weapons/blade1.ogg'
 	health = 500

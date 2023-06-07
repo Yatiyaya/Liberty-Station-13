@@ -63,17 +63,17 @@
 	desc = "A shitty rapid 'build-a-bot' grenade produced by Fontaine shipbreakers using designs 'borrowed' from the Phokorus Institute, handy for a build-a-bot guard or as a disposable decoy."
 	deliveryamt = 1
 	icon_state = "screamer"
-	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/junkbot
+	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/junkbot
 	matter = list(MATERIAL_STEEL = 5)
 	will_flash = FALSE
 
-//Similacrum spawner grenades
+//Simulacrum spawner grenades
 /obj/item/grenade/spawnergrenade/manhacks/roomba
 	name = "\improper SR-PI roomba grenade"
 	desc = "Deploys a roomba that will attack animals and non-colony humanoids nearby."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
-	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/roomba/allied
+	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/roomba/allied
 	matter = list(MATERIAL_STEEL = 5, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1)
 	will_flash = FALSE
 
@@ -82,7 +82,7 @@
 	desc = "Deploys an armored roomba that will attack animals and non-colony humanoids nearby."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
-	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/armored/allied
+	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/armored/allied
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1, MATERIAL_PLASTEEL = 6) //3 plasteel per baton
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/sword
@@ -90,7 +90,7 @@
 	desc = "Deploys a sword-bearing robot enhanced with incredible speed and augments that will attack animals and non-colony humanoids on sight."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_medium"
-	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied
+	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_SILVER = 6, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/mantis
@@ -98,5 +98,5 @@
 	desc = "Deploys a mantis blade-bearing robot enhanced with incredible speed and augments that will attack animals and non-colony humanoids on sight."
 	deliveryamt = 1
 	icon_state = "similacrum_nade_large"
-	spawner_type = /mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/advanced
+	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/advanced
 	matter = list(MATERIAL_STEEL = 25, MATERIAL_SILVER = 8, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 9)

@@ -64,7 +64,7 @@
 	price_tag = 2875
 
 /obj/item/tool/shovel/onestar_shovel
-	name = "Similacrum Robotics shovel"
+	name = "Simulacrum Robotics shovel"
 	desc = "A large tool for digging and moving dirt and rock with the finest engineering put into it for maximum lift and heaving."
 	icon_state = "one_star_shovel"
 	force = WEAPON_FORCE_DANGEROUS
@@ -75,7 +75,7 @@
 	degradation = 2
 	max_upgrades = 2
 	price_tag = 320 // Still just a shovel.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/tool/shovel/spade
 	name = "spade"

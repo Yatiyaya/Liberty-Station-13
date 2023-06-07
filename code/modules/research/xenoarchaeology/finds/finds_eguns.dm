@@ -8,7 +8,7 @@
 	charge_cost = 200
 	self_recharge = TRUE
 	projectile_type = /obj/item/projectile/beam/tesla/shotgun // thats right. Its a shotgun cog.
-	allow_similacrum_mods = FALSE
+	allow_simulacrum_mods = FALSE
 
 /obj/item/gun/energy/cog/xenoarch/refresh_upgrades()
 	return
@@ -34,7 +34,7 @@
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	item_state_slots = null
 	icon_contained = FALSE
-	allow_similacrum_mods = FALSE
+	allow_simulacrum_mods = FALSE
 
 /obj/item/gun/energy/captain/xenoarch/refresh_upgrades()
 	return

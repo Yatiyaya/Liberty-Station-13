@@ -253,7 +253,7 @@
 	name = "HEC MER \"Valkyrie\""
 	build_path = /obj/item/gun/energy/sniperrifle
 
-/datum/design/autolathe/gun/similacrum_cog
+/datum/design/autolathe/gun/simulacrum_cog
 	name = "SR \"Cog\" lasegun"
 	build_path = /obj/item/gun/energy/cog
 

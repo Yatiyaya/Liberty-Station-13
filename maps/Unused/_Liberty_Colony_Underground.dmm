@@ -15467,7 +15467,7 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor1east)
 "aFw" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "aFx" = (
@@ -19174,7 +19174,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1east)
 "aQM" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1east)
 "aQN" = (

@@ -1,7 +1,7 @@
 /datum/technology/SR_Cog_alt
-	name = "Similacrum Robotics Alternative Laser Carbine Designs"
+	name = "Simulacrum Robotics Alternative Laser Carbine Designs"
 	desc = "Further changes made to the already successful Cog design."
-	tech_type = RESEARCH_SIMILACRUM
+	tech_type = RESEARCH_SIMULACRUM
 
 	x = 0.1 //Top left corner
 	y = 0.9
@@ -11,12 +11,12 @@
 	required_tech_levels = list(RESEARCH_COMBAT = 14, RESEARCH_POWERSTORAGE = 5, RESEARCH_ILLEGAL = 2)
 	cost = 1000
 
-	unlocks_designs = list(/datum/design/research/item/similacrum/cog)
+	unlocks_designs = list(/datum/design/research/item/simulacrum/cog)
 
 /datum/technology/SR_roomba
-	name = "Similacrum Robotics Roomba Creation"
+	name = "Simulacrum Robotics Roomba Creation"
 	desc = "Small deployable kits for deploying Roomba's and SR FPBs."
-	tech_type = RESEARCH_SIMILACRUM
+	tech_type = RESEARCH_SIMULACRUM
 
 	x = 0.2 //Top left corner
 	y = 0.9
@@ -26,16 +26,16 @@
 	required_tech_levels = list(RESEARCH_ROBOTICS = 8)
 	cost = 1875
 
-	unlocks_designs = list(/datum/design/research/item/similacrum/manhacks_roomba,
-						   /datum/design/research/item/similacrum/manhacks_roomba_tripper,
-						   /datum/design/research/item/similacrum/manhacks_roomba_gunne,
-						   /datum/design/research/item/similacrum/manhacks_roomba_fbp
+	unlocks_designs = list(/datum/design/research/item/simulacrum/manhacks_roomba,
+						   /datum/design/research/item/simulacrum/manhacks_roomba_tripper,
+						   /datum/design/research/item/simulacrum/manhacks_roomba_gunne,
+						   /datum/design/research/item/simulacrum/manhacks_roomba_fbp
 						   )
 
 /datum/technology/SR_stockparts
-	name = "Similacrum Robotics Stock Parts"
+	name = "Simulacrum Robotics Stock Parts"
 	desc = "SR Manipulator, Laser, Matter Bin, Scanner and Capacitor"
-	tech_type = RESEARCH_SIMILACRUM
+	tech_type = RESEARCH_SIMULACRUM
 
 	x = 0.1 //Top left corner
 	y = 0.8
@@ -46,16 +46,16 @@
 	required_tech_levels = list(RESEARCH_ENGINEERING = 22)
 	cost = 5625
 
-	unlocks_designs = list(/datum/design/research/item/part/similacrum_laser,
-						   /datum/design/research/item/part/similacrum_matter,
-						   /datum/design/research/item/part/similacrum_module,
-						   /datum/design/research/item/part/similacrum_capacitor,
-						   /datum/design/research/item/part/similacrum_manipulator)
+	unlocks_designs = list(/datum/design/research/item/part/simulacrum_laser,
+						   /datum/design/research/item/part/simulacrum_matter,
+						   /datum/design/research/item/part/simulacrum_module,
+						   /datum/design/research/item/part/simulacrum_capacitor,
+						   /datum/design/research/item/part/simulacrum_manipulator)
 
 /datum/technology/SR_cells
-	name = "Similacrum Robotics Cells"
+	name = "Simulacrum Robotics Cells"
 	desc = "A mix of old cell manufacturing with a SR characteristics."
-	tech_type = RESEARCH_SIMILACRUM
+	tech_type = RESEARCH_SIMULACRUM
 
 	x = 0.2 //Top left corner
 	y = 0.8
@@ -66,16 +66,16 @@
 	cost = 5625
 
 	unlocks_designs = list(
-						/datum/design/research/item/powercell/large/similacrum,
-						/datum/design/research/item/powercell/medium/similacrum,
-						/datum/design/research/item/powercell/small/similacrum
+						/datum/design/research/item/powercell/large/simulacrum,
+						/datum/design/research/item/powercell/medium/simulacrum,
+						/datum/design/research/item/powercell/small/simulacrum
 						   )
 
 
 /datum/technology/SR_robotics
-	name = "Similacrum Robotics Positronics"
+	name = "Simulacrum Robotics prosthetics"
 	desc = "SR Robotic lims."
-	tech_type = RESEARCH_SIMILACRUM
+	tech_type = RESEARCH_SIMULACRUM
 
 	x = 0.1 //top left
 	y = 0.7
@@ -84,9 +84,9 @@
 	required_technologies = list(/datum/technology/prosthetic_organs)
 	required_tech_levels = list(RESEARCH_BIOTECH = 10, RESEARCH_ROBOTICS = 8) //Max bio and good robotics
 
-	unlocks_designs = list(/datum/design/research/item/mechfab/prosthesis_similacrum/r_arm,
-						   /datum/design/research/item/mechfab/prosthesis_similacrum/l_arm,
-						   /datum/design/research/item/mechfab/prosthesis_similacrum/r_leg,
-						   /datum/design/research/item/mechfab/prosthesis_similacrum/l_leg)
+	unlocks_designs = list(/datum/design/research/item/mechfab/prosthesis_simulacrum/r_arm,
+						   /datum/design/research/item/mechfab/prosthesis_simulacrum/l_arm,
+						   /datum/design/research/item/mechfab/prosthesis_simulacrum/r_leg,
+						   /datum/design/research/item/mechfab/prosthesis_simulacrum/l_leg)
 
 	cost = 5625

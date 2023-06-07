@@ -420,8 +420,8 @@ obj/item/clothing/head/ribbon/red
 	)
 
 /obj/item/clothing/head/os_cap
-	name = "Similacrum Robotics Cap"
-	desc = "A flat brim cap warn by Similacrum Robotics office workers to keep out light and sport their logo at the same time."
+	name = "Simulacrum Robotics Cap"
+	desc = "A flat brim cap warn by Simulacrum Robotics office workers to keep out light and sport their logo at the same time."
 	icon_state = "os_cap"
 	item_state = "os_cap"
 	armor_list = list(

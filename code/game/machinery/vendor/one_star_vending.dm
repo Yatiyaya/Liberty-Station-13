@@ -1,22 +1,22 @@
 /obj/machinery/vending/one_star
-	name = "Simalacrum Robotics General Vendor"
-	desc = "A vendor full of Similacrum Robotics products."
+	name = "Simulacrum Robotics General Vendor"
+	desc = "A vendor full of Simulacrum Robotics products."
 	icon = 'icons/obj/machines/one_star/vending.dmi'
 	icon_state = "vendor_guns"
 	icon_vend = "vendor_printing"
 	product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
 	product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
-	vendor_department = DEPARTMENT_SIMILACRUM
+	vendor_department = DEPARTMENT_SIMULACRUM
 	alt_currency_path = /obj/item/stack/gal_cred
 
 /obj/machinery/vending/one_star/Initialize()
 	. = ..()
 	set_light(1.4, 1, COLOR_LIGHTING_CYAN_BRIGHT)
-	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
+	earnings_account = department_accounts[DEPARTMENT_SIMULACRUM]
 
 /obj/machinery/vending/one_star/guns
-	name = "Simalacrum Robotics Weapon Vendor"
-	desc = "A vendor full of Similacrum Robotics products. This one sells firearms."
+	name = "Simulacrum Robotics Weapon Vendor"
+	desc = "A vendor full of Simulacrum Robotics products. This one sells firearms."
 	icon_state = "vendor_guns"
 
 	products = list(
@@ -28,8 +28,8 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	name = "Simalacrum Robotics Food Vendor"
-	desc = "A vendor full of Similacrum Robotics products. This one sells food."
+	name = "Simulacrum Robotics Food Vendor"
+	desc = "A vendor full of Simulacrum Robotics products. This one sells food."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"
 
@@ -62,8 +62,8 @@
 		)
 
 /obj/machinery/vending/one_star/health
-	name = "Simalacrum Robotics Medical Vendor"
-	desc = "A vendor full of Similacrum Robotics products. This one sells medical equipment and supplies."
+	name = "Simulacrum Robotics Medical Vendor"
+	desc = "A vendor full of Simulacrum Robotics products. This one sells medical equipment and supplies."
 	icon_state = "vendor_health"
 
 	products = list(

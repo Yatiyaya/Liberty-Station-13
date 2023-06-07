@@ -18,7 +18,7 @@
 	var/affinity // affinity of the junk field
 	var/list/affinities = list(
 		"Neutral" = 10,
-		"Similacrum" = 3,
+		"Simulacrum" = 3,
 		"Military" = 3,
 		"Void Wolf" = 3,
 		//"SpaceWrecks" = 0 caused runtimes and ci failures
@@ -910,7 +910,7 @@
 /obj/structure/jtb_pillar
 	name = "bluespace anchoring pylon"
 	desc = "An ominous pylon that can stabilize a short range of bluespace for a singular portal teleportation to nearby ship wrecks and astroid fields littered with potential salvage. \
-	While stable, it is not quite fully understood, being the product of Phokorus Institute's captured Similacrum Robotics AI, Brynn. For an unknown reason, the pylons only work in the presence of obelisks."
+	While stable, it is not quite fully understood, being the product of Phokorus Institute's reverse engineering of Simulacrum Robotics AI's designs."
 	icon = 'icons/obj/structures/junk_tractor_beam.dmi'
 	icon_state = "pillar"
 	layer = ABOVE_MOB_LAYER

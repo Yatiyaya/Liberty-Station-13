@@ -39,7 +39,7 @@
 
 /obj/item/clothing/glasses/powered/thermal/onestar
 	name = "type-73 zhenchayuan goggles"
-	desc = "Previously nothing more than a prototype, these Similacrum Robotics thermal goggles are incredibly battery-efficient."
+	desc = "Previously nothing more than a prototype, these Simulacrum Robotics thermal goggles are incredibly battery-efficient."
 	icon_state = "onestar_thermal"
 	off_state = "onestar_thermal"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_PLATINUM = 2) // SD tech all use platinum

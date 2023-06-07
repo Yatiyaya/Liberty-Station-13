@@ -1,8 +1,8 @@
 // OneStar patrol borg that defends OneStar facilities
 // Sprites by Keereere
-/mob/living/carbon/superior_animal/robot/similacrum/stalker
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker
 	name = "\"Iron Lock Security\" Stalker Mk1"
-	desc = "A ruthless patrol borg that defends Similacrum facilities. This one has a single \"Scaffold\" caseless rifle, still enough to kill pesky intruders."
+	desc = "A ruthless patrol borg that defends Simulacrum facilities. This one has a single \"Scaffold\" caseless rifle, still enough to kill pesky intruders."
 	icon_state = "stalker_mk1"
 	icon_living = "stalker_mk1"
 	pass_flags = PASSTABLE
@@ -12,7 +12,7 @@
 	maxHealth = 75
 	health = 75
 
-	faction = "similacrum"
+	faction = "simulacrum"
 
 	deathmessage = "suddenly shuts down, its eye light switching to a dim red."
 	attacktext = "bonked"
@@ -75,7 +75,7 @@
 	comfy_range = 5
 	range_telegraph = "'s servos begin to spool up, aiming at"
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/New()
 	. = ..()
 	pixel_x = 0
 	pixel_y = 0
@@ -84,9 +84,9 @@
 	if(prob(30) && (!cell_drop))
 		cell_drop = /obj/item/cell/large
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual
 	name = "\"Iron Lock Security\" Stalker Mk2"
-	desc = "A ruthless patrol borg that defends Similacrum facilities. This one is an upgraded version with dual \"Scaffold\" caseless rifles, don\'t stand in front of it for too long."
+	desc = "A ruthless patrol borg that defends Simulacrum facilities. This one is an upgraded version with dual \"Scaffold\" caseless rifles, don\'t stand in front of it for too long."
 	icon_state = "stalker_mk2"
 	icon_living = "stalker_mk2"
 	ranged_cooldown = 8
@@ -98,14 +98,14 @@
 	rapid_fire_shooting_amount = 3
 
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual/New()
 	. = ..()
 	if(prob(1) && (!drop2))
 		drop2 = /obj/item/gun/projectile/automatic/operator_rifle
 
 /obj/item/stalker_fuel_rod
 	name = "plasma fuel rod"
-	desc = "A similacrum-alloyed fuel rod, filled to the brim with plasma."
+	desc = "A Simulacrum-alloyed fuel rod, filled to the brim with plasma."
 
 	origin_tech = list(TECH_POWER = 6, TECH_PLASMA = 4, TECH_ENGINEERING = 4)
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASMA = 5, MATERIAL_PLASMAGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_PLATINUM = 1)
@@ -117,7 +117,7 @@
 
 /obj/item/stalker_fuel_rod/depleted
 	name = "spent fuel rod"
-	desc = "A empty similacrum-alloyed fuel rod, previously having contained some combustable substance. Presumably."
+	desc = "A empty Simulacrum-alloyed fuel rod, previously having contained some combustable substance. Presumably."
 
 	origin_tech = list(TECH_POWER = 3, TECH_PLASMA = 2, TECH_ENGINEERING = 2)
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASMAGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_PLATINUM = 1)
@@ -127,9 +127,9 @@
 	preloaded_reagents = null
 
 // mini-boss enemy that demands attention or else they will nuke someone. VERY POWERFUL
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual/plasma_cannon
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual/plasma_cannon
 	name = "\"Iron Lock Security\" Assault Stalker Mk2"
-	desc = "A ruthless patrol borg that defends Similacrum facilities. This one has a pair of massively oversized plasma cannons, and has been fitted with thick layers of ablative plating, as well as bomb shielding, although at the cost of it's mobility. This will destroy you."
+	desc = "A ruthless patrol borg that defends Simulacrum facilities. This one has a pair of massively oversized plasma cannons, and has been fitted with thick layers of ablative plating, as well as bomb shielding, although at the cost of it's mobility. This will destroy you."
 
 	range_charge_telegraph = "'s plasma cannons grow brighter, and it hums louder, preparing to fire at"
 	range_telegraph = "'s plasma cannons let out an eerie and TERRIFYING whine as it prepares to unleash it's devastating payload upon"
@@ -171,7 +171,7 @@
 
 	move_to_delay = 11 //slow as hell due to it's armor and weapons. also balance reasons.
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual/plasma_cannon/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual/plasma_cannon/New()
 	. = ..()
 
 	drop1 = null
@@ -184,13 +184,13 @@
 		drop2 = /obj/item/stack/material/plasteel/random
 
 	if (cell_drop)
-		cell_drop = /obj/item/cell/large/similacrum
+		cell_drop = /obj/item/cell/large/simulacrum
 
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual/plasma_cannon/ex_act(severity) // we dont want it to bomb itself
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual/plasma_cannon/ex_act(severity) // we dont want it to bomb itself
 	return FALSE
 
-/mob/living/carbon/superior_animal/robot/similacrum/stalker/dual/plasma_cannon/death()
+/mob/living/carbon/superior_animal/robot/simulacrum/stalker/dual/plasma_cannon/death()
 
 	explosion(src.loc, 0, 1, 2, 3)
 

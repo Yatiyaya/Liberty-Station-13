@@ -10,13 +10,13 @@
 
 
 // Global lists of the drones parts
-var/global/list/drone_chassis_options = list("Similacrum Chassis" = "drone_os",
+var/global/list/drone_chassis_options = list("Simulacrum Chassis" = "drone_os",
 											"Standard Chassis" = "drone_st")
 
-var/global/list/drone_radio_options = list(	"Similacrum Radio" = "radio_os",
+var/global/list/drone_radio_options = list(	"Simulacrum Radio" = "radio_os",
 											"Standard Radio" = "radio_st")
 
-var/global/list/drone_shell_options = list(	"Similacrum Shell" = "shell_os",
+var/global/list/drone_shell_options = list(	"Simulacrum Shell" = "shell_os",
 											"Grey Shell" = "shell_grey",
 											"White Shell" = "shell_white",
 											"Medical White Shell" = "shell_medical_white",
@@ -30,8 +30,8 @@ var/global/list/drone_shell_options = list(	"Similacrum Shell" = "shell_os",
 											"Dark Orange Shell" = "shell_orange_1",
 											"Orange Shell" = "shell_orange_2")
 
-var/global/list/drone_marks_options = list(	"Similacrum Markings" = "marks_os",
-											"Similacrum Medical Markings" = "marks_medic_os",
+var/global/list/drone_marks_options = list(	"Simulacrum Markings" = "marks_os",
+											"Simulacrum Medical Markings" = "marks_medic_os",
 											"Green Markings" = "marks_green",
 											"Green Medical Markings" = "marks_medic_green",
 											"Blue Markings" = "marks_blue",
@@ -49,16 +49,16 @@ var/global/list/drone_marks_options = list(	"Similacrum Markings" = "marks_os",
 											"Orange Markings" = "marks_orange_2",
 											"Orange Medical Markings" = "marks_medic_orange_2")
 
-var/global/list/drone_screen_options = list("Similacrum Screen" = "screen_os",
-											"Red Similacrum Screen" = "screen_os_red",
+var/global/list/drone_screen_options = list("Simulacrum Screen" = "screen_os",
+											"Red Simulacrum Screen" = "screen_os_red",
 											"Yellow Screen" = "screen_yellow",
 											"Cyan Screen" = "screen_cyan",
 											"Red Screen" = "screen_red",
 											"Pink Screen" = "screen_pink",
 											"Green Screen" = "screen_green")
 
-var/global/list/drone_scanner_options = list("Similacrum Scanner" = "scanner_os",
-											"Red Similacrum Scanner" = "scanner_os_red",
+var/global/list/drone_scanner_options = list("Simulacrum Scanner" = "scanner_os",
+											"Red Simulacrum Scanner" = "scanner_os_red",
 											"Yellow Scanner" = "scanner_yellow",
 											"Cyan Scanner" = "scanner_cyan",
 											"Red Scanner" = "scanner_red",
@@ -72,23 +72,23 @@ var/global/list/drone_left_weapon_type_options = list(	"Syringe" = TOOL_MEDIC,
 														"Flamer" = TOOL_FLAMER,
 														"Welder" = TOOL_WELDER)
 
-var/global/list/drone_laser_options = list(	"Similacrum Laser" = "tool_laser_os",
-											"Red Similacrum Laser" = "tool_laser_os_red",
+var/global/list/drone_laser_options = list(	"Simulacrum Laser" = "tool_laser_os",
+											"Red Simulacrum Laser" = "tool_laser_os_red",
 											"Yellow Laser" = "tool_laser_yellow",
 											"Cyan Laser" = "tool_laser_cyan",
 											"Red Laser" = "tool_laser_red",
 											"Pink Laser" = "tool_laser_pink",
 											"Green Laser" = "tool_laser_green")
 
-var/global/list/drone_medic_options = list(	"Similacrum Syringe" = "tool_medic_os",
-											"Red Similacrum Syringe" = "tool_medic_os_red",
+var/global/list/drone_medic_options = list(	"Simulacrum Syringe" = "tool_medic_os",
+											"Red Simulacrum Syringe" = "tool_medic_os_red",
 											"Yellow Syringe" = "tool_medic_yellow",
 											"Cyan Syringe" = "tool_medic_cyan",
 											"Red Syringe" = "tool_medic_red",
 											"Pink Syringe" = "tool_medic_pink",
 											"Green Syringe" = "tool_medic_green")
 
-var/global/list/drone_flamer_options = list("Similacrum Flamer" = "tool_flamer_os",
+var/global/list/drone_flamer_options = list("Simulacrum Flamer" = "tool_flamer_os",
 											"Green Flamer" = "tool_flamer_green",
 											"Blue Flamer" = "tool_flamer_blue",
 											"Cyan Flamer" = "tool_flamer_cyan",
@@ -98,7 +98,7 @@ var/global/list/drone_flamer_options = list("Similacrum Flamer" = "tool_flamer_o
 											"Dark Orange Flamer" = "tool_flamer_orange_1",
 											"Orange Flamer" = "tool_flamer_orange_2")
 
-var/global/list/drone_gun_options = list(	"Similacrum Gun" = "tool_mg_os",
+var/global/list/drone_gun_options = list(	"Simulacrum Gun" = "tool_mg_os",
 											"Green Gun" = "tool_mg_green",
 											"Blue Gun" = "tool_mg_blue",
 											"Cyan Gun" = "tool_mg_cyan",
@@ -108,8 +108,8 @@ var/global/list/drone_gun_options = list(	"Similacrum Gun" = "tool_mg_os",
 											"Dark Orange Gun" = "tool_mg_orange_1",
 											"Orange Gun" = "tool_mg_orange_2")
 
-var/global/list/drone_welder_options = list("Similacrum Welder" = "tool_welder_os",
-											"Red Similacrum Welder" = "tool_welder_os_red",
+var/global/list/drone_welder_options = list("Simulacrum Welder" = "tool_welder_os",
+											"Red Simulacrum Welder" = "tool_welder_os_red",
 											"Green Yellow Welder" = "tool_welder_green_yellow",
 											"Green Cyan Welder" = "tool_welder_green_cyan",
 											"Green Red Welder" = "tool_welder_green_red",

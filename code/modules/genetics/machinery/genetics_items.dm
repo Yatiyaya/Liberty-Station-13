@@ -3,7 +3,7 @@
 This is a bugtesting item, please forgive the memes.
 */
 /obj/item/device/scanner/belvoix_scanner
-	name = "CAPSA Gene Scanner"
+	name = "PIRS Gene Scanner"
 	desc = "A worryingly small device for extracting, analyzing and modifying genetic information. Never saw production in mass CAPSA, as it was deemed too humane and convenient for regular use."
 	icon_state = "spectrometer"
 	item_state = "analyzer"
@@ -496,7 +496,7 @@ Circuit boards for different Genetics Machines.
 	origin_tech = list(TECH_DATA = 2, TECH_BIO = 3)
 
 /obj/item/circuitboard/genetics/gene_analyzer
-	build_name = "CAPSA Genetic Analyzer"
+	build_name = "PIRS Genetic Analyzer"
 	build_path = /obj/machinery/genetics/gene_analyzer
 	board_type = "machine"
 	origin_tech = list(TECH_DATA = 2, TECH_BIO = 3)

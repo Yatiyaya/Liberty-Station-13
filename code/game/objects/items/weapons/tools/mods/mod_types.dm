@@ -614,10 +614,10 @@
 	I.prefix = "expanded"
 	I.req_fuel_cell = REQ_FUEL
 
-//Similacrum fuel mod
+//Simulacrum fuel mod
 /obj/item/tool_upgrade/augment/holding_tank
 	name = "expanded fuel tank of holding"
-	desc = "Rare relic of Similacrum uses the bluetech space to store additional 600 units of fuel at the cost of degradation."
+	desc = "Rare relic of Simulacrum Robotics, it uses bluetech space to store additional 600 units of fuel at the cost of degradation."
 	icon_state = "canister_holding"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 250
@@ -835,8 +835,8 @@
 
 /obj/item/tool_upgrade/augment/ai_tool
 	name = "nanointegrated AI"
-	desc = "A forgotten Similacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
-		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added its embeding into the object making it a permanent integration."
+	desc = "A forgotten Simulacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
+		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added, it's embedded into the object making it a permanent integration."
 	icon_state = "ai_tool"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
 	price_tag = 725
@@ -865,11 +865,11 @@
 	)
 	I.prefix = "intelligent"
 	I.req_fuel_cell = REQ_CELL
-	I.similacrum_moding = TRUE
+	I.simulacrum_moding = TRUE
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior
 	name = "astrakhan nanointegrated AI"
-	desc = "An attempt by the Astrakhan R&D institute to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
+	desc = "An attempt by the Astrakhan R&D institute to copy the superior Simulacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)
@@ -899,7 +899,7 @@
 
 /obj/item/tool_upgrade/augment/repair_nano
 	name = "repair nano"
-	desc = "Very rare tool mod from Similacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
+	desc = "Very rare tool mod from Simulacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
 	icon_state = "repair_nano"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 1)
 	price_tag = 325
@@ -911,7 +911,7 @@
 	UPGRADE_DEGRADATION_MULT = 0.01,
 	UPGRADE_HEALTH_THRESHOLD = 10
 	)
-	I.similacrum_moding = TRUE
+	I.simulacrum_moding = TRUE
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 	I.prefix = "self-repairing"
 

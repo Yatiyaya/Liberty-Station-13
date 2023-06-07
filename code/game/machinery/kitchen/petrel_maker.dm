@@ -1,7 +1,7 @@
 //Now were cooking with gas!
 /obj/machinery/petrel_maker
-	name = "Similacrum Petrol Pump"
-	desc = "A machine for petrol and refined scrap. Originally design by the Similacrum Robotics's AI then given to the Terra-Therma Union. \
+	name = "Simulacrum Petrol Pump"
+	desc = "A machine for petrol and refined scrap. Originally design by the Simulacrum Robotics's AI then given to the Terra-Therma Union. \
 	When enough plastic is stored inside, flip the switch on its side to produce a bottle of diesel, consuming a portion of stored plastic. \
 	Thanks to advanced blueprint designs by PI it can also take lumps of scrap to create refined scrap by simply adding them to the pump's storage."
 	description_info = "Try inserting a sandwich on it for a tasty (and very mechanically educational) snack."
@@ -22,7 +22,7 @@
 	idle_power_usage = 120 //Some drain
 
 /obj/item/circuitboard/petrel_maker
-	build_name = "similacrum petrol pump"
+	build_name = "simulacrum petrol pump"
 	build_path = /obj/machinery/petrel_maker
 	origin_tech = list(TECH_DATA = 16, TECH_ENGINEERING = 8, TECH_POWER = 14)
 	board_type = "machine"

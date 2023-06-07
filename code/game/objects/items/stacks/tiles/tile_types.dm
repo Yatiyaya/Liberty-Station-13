@@ -519,23 +519,23 @@
 
 
 /obj/item/stack/tile/derelict/white_red_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict1"
 
 /obj/item/stack/tile/derelict/white_small_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict2"
 
 /obj/item/stack/tile/derelict/red_white_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict3"
 
 /obj/item/stack/tile/derelict/white_big_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict4"
 
 //Industeral stuff
@@ -553,6 +553,11 @@
 	name = "damaged bricks"
 	singular_name = "brick"
 	icon_state = "tile_slate"
+
+/obj/item/stack/tile/greybricks
+	name = "grey bricks"
+	singular_name = "grey brick"
+	icon_state = "mortar_bricks"
 
 /obj/item/stack/tile/ornate
 	name = "damaged painted slates"
@@ -646,8 +651,20 @@
 
 /obj/item/stack/tile/bricks_pristine
 	name = "bricks"
+	desc = "A bunch of stone bricks used as flooring."
 	singular_name = "brick"
 	icon_state = "tile_slate"
+
+/obj/item/stack/tile/greybricks_pristine
+	name = "pristine grey bricks"
+	desc = "A bunch of polished grey stone bricks used as flooring."
+	singular_name = "grey brick"
+	icon_state = "mortar_bricks"
+
+// For the Custodian ritual to transform rocks into tiles
+// This unfortunately means I have to do a declare and turf for this children as well, pain peko. - Seb
+/obj/item/stack/tile/greybricks_pristine/full
+	amount = 60
 
 /obj/item/stack/tile/ornate_pristine
 	name = "painted slates"

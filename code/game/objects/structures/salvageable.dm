@@ -328,7 +328,7 @@ obj/structure/salvageable/bliss/Initialize()
 			return
 
 ////////////////////////////
-//// Similacrum Robotics ////
+//// Simulacrum Robotics ////
 ////////////////////////////
 
 /obj/structure/salvageable/machine_os
@@ -397,7 +397,7 @@ obj/structure/salvageable/bliss/Initialize()
 		/obj/item/stack/material/diamond{amount = 1} = 1,
 		/obj/item/gun_upgrade/mechanism/glass_widow = 5,
 		/obj/item/tool_upgrade/augment/randomizer = 20,
-		/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = 0.1 //1 in 1000
+		/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = 0.1 //1 in 1000
 	)
 
 

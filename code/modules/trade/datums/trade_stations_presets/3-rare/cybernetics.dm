@@ -9,7 +9,7 @@
 			/obj/item/organ/external/robotic/moebius/r_leg,
 			/obj/item/organ/external/robotic/moebius/groin
 		),
-		"Salvaged Similacrum Tech" = list(
+		"Salvaged Simulacrum Tech" = list(
 			/obj/item/organ/external/robotic/one_star/l_arm,
 			/obj/item/organ/external/robotic/one_star/r_arm,
 			/obj/item/organ/external/robotic/one_star/l_leg,
