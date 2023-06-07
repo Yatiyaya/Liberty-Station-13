@@ -19,6 +19,7 @@
 	emote_hear = list("wahs!","chitters.")
 	emote_see = list("trundles around","rears up onto their hind legs and pounces a bug")
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	sanity_damage = -1
 
 /mob/living/simple_animal/redpanda/fae
@@ -31,6 +32,7 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 /mob/living/simple_animal/penguin
 	name = "penguin"
@@ -87,6 +89,7 @@
 	inherent_mutations = list(MUTATION_HONK, MUTATION_IMBECILE, MUTATION_DEAF, MUTATION_NEARSIGHTED)
 	faction = "pond"
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 /mob/living/simple_animal/lizard
 	name = "lizard"
@@ -106,6 +109,7 @@
 	possession_candidate = 1
 	seek_speed = 0.75
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	sanity_damage = -1
 
 /mob/living/simple_animal/lizard/New()
@@ -135,6 +139,7 @@
 	emote_see = list("earflicks","sniffs at the ground")
 	inherent_mutations = list(MUTATION_DWARFISM, MUTATION_IMBECILE, MUTATION_TOURETTES)
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	faction = "pond"
 	sanity_damage = -1
 
