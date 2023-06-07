@@ -347,7 +347,7 @@ WEBHOOK_KEY testkey
 # tgs_discord_round_announce_round
 
 ## If Enabled TGS ping a role when announcing when a round re/starts requires tgs_discord_round_announce_round to be enabled
-# tgs_discord_round_announce_round
+# tgs_discord_round_announce_round_role
 
 ## The Role ID to mention when announcing round re/starts requires tgs_discord_round_announce_round_role to be enabled
 # tgs_discord_round_announce_round_role_tag <@123456789>
