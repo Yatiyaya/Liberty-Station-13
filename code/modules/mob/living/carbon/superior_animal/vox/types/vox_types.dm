@@ -41,6 +41,7 @@
 
 	melee_damage_lower = 18
 	melee_damage_upper = 20
+	natural_weapon = /obj/item/natural_weapon/claws/strong
 
 	reload_message = "picks up a rock!"
 
@@ -55,6 +56,7 @@
 
 	melee_damage_lower = 16
 	melee_damage_upper = 22
+	natural_weapon = /obj/item/natural_weapon/claws/strong
 	alpha = 50
 
 	knock_over_odds = 15
@@ -86,6 +88,7 @@
 
 	melee_damage_lower = 24
 	melee_damage_upper = 28
+	natural_weapon = /obj/item/natural_weapon/claws/chad
 
 	knock_over_odds = 35
 
@@ -118,6 +121,7 @@
 
 	melee_damage_lower = 32
 	melee_damage_upper = 35
+	natural_weapon =/obj/item/natural_weapon/claws/bananaman
 
 	knock_over_odds = 25
 
@@ -126,8 +130,9 @@
 	desc = "A small predator native to these lands. They are known for their limited craftsmanship and manipulation of objects. This one is caked with dirt and grime, with a shank in its hands and plates of crude scrap armor on its chest."
 	icon_state = "vox_brave"
 
-	melee_damage_lower = 23
-	melee_damage_upper = 20
+	melee_damage_lower = 20
+	melee_damage_upper = 23
+	natural_weapon = /obj/item/natural_weapon/claws/strong
 
 	attacktext = "slashed"
 

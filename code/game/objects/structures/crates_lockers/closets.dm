@@ -479,7 +479,7 @@
 				SPAN_NOTICE("You hear rustling of clothes.")
 			)
 			return
-		usr.unEquip(I, src.loc)
+		user.unEquip(I, src.loc)
 		return
 	else if(istype(I, /obj/item/stack/cable_coil))
 		var/obj/item/stack/cable_coil/C = I

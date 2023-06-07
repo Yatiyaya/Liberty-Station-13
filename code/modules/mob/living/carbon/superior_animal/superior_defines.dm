@@ -321,4 +321,6 @@
 
 	//What kind of weapon do they use? SET THIS OR DIE HORRIBLY//
 	var/obj/item/natural_weapon/natural_weapon = /obj/item/natural_weapon
+	var/poison_per_bite = 0
+	var/poison_type = ""
 	var/friendly = "nuzzles"

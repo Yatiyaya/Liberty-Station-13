@@ -101,9 +101,9 @@
 			var/mob/living/carbon/superior_animal/giant_spider/spider_target = holder
 
 			if (poison_per_bite_increment)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite - poison_per_bite_increment)
+				spider_target.natural_weapon.poison_per_bite = ZERO_OR_MORE(spider_target.natural_weapon.poison_per_bite - poison_per_bite_increment)
 			if (poison_per_bite_mult)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite / poison_per_bite_mult)
+				spider_target.natural_weapon.poison_per_bite = ZERO_OR_MORE(spider_target.natural_weapon.poison_per_bite / poison_per_bite_mult)
 
 		if (delay_for_range_adjustment)
 			superior_holder.delay_for_range = ZERO_OR_MORE(superior_holder.delay_for_range - delay_for_range_adjustment)
@@ -193,8 +193,8 @@
 			var/mob/living/carbon/superior_animal/giant_spider/spider_target = target
 
 			if (poison_per_bite_mult)
-				spider_target.poison_per_bite = ZERO_OR_MORE(SAFEMULT(spider_target.poison_per_bite, poison_per_bite_mult, poison_per_bite_zeroth))
+				spider_target.natural_weapon.poison_per_bite = ZERO_OR_MORE(SAFEMULT(spider_target.natural_weapon.poison_per_bite, poison_per_bite_mult, poison_per_bite_zeroth))
 			if (poison_per_bite_increment)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite + poison_per_bite_increment)
+				spider_target.natural_weapon.poison_per_bite = ZERO_OR_MORE(spider_target.natural_weapon.poison_per_bite + poison_per_bite_increment)
 
 	return ..(target, arguments, arguments_to_pass)

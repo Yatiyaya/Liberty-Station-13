@@ -43,7 +43,7 @@
 	melee_damage_lower = 12
 	melee_damage_upper = 17
 	armor_penetration = 5
-	natural_weapon = /obj/item/natural_weapon/bite
+	natural_weapon = /obj/item/natural_weapon/fang
 
 
 	min_breath_required_type = 3
@@ -52,8 +52,8 @@
 	fleshcolor = "#1E536E"
 	bloodcolor = "#1E536E"
 
-	var/poison_per_bite = 2
-	var/poison_type = "pararein"
+	poison_per_bite = 2
+	poison_type = "pararein"
 	faction = "spiders"
 
 	price_tag = 250 //in case you sell these???
