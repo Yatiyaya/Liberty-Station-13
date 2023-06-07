@@ -17,22 +17,24 @@
 
 /decl/hierarchy/outfit/job/engineering/chief
 	name = OUTFIT_JOB_NAME("Terra-Therma - Union Chief")
-	uniform = /obj/item/clothing/under/union_chief_jumpsuit
+	uniform = /obj/item/clothing/under/rank/chief
 	suit = /obj/item/clothing/suit/storage/toggle/union_chief_jacket
 	gloves = /obj/item/clothing/gloves/insulated/union
 	head = /obj/item/clothing/head/hardhatunion/union_chief_helmet
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/card/id/ce
 	pda_type = /obj/item/modular_computer/pda/heads/ce
+	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Terra-Therma - Engineer")
 	head = /obj/item/clothing/head/hardhatunion/union_engi_helmet
-	uniform = /obj/item/clothing/under/union_engi_jumpsuit
+	uniform = /obj/item/clothing/under/rank/engineer
 	suit = /obj/item/clothing/suit/storage/toggle/union_engi_jacket
 	gloves = /obj/item/clothing/gloves/insulated/union
 	id_type = /obj/item/card/id/engie
 	pda_type = /obj/item/modular_computer/pda/engineering
+	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Terra-Therma - Engineer Voidsuit")
@@ -41,7 +43,7 @@
 
 /decl/hierarchy/outfit/job/engineering/mining
 	name = OUTFIT_JOB_NAME("Terra-Therma - Miner")
-	uniform = /obj/item/clothing/under/union_miner_jumpsuit
+	uniform = /obj/item/clothing/under/rank/miner
 	suit = /obj/item/clothing/suit/storage/toggle/union_miner_jacket
 	gloves = /obj/item/clothing/gloves/insulated/union
 	head = /obj/item/clothing/head/hardhatunion/union_miner_helmet
@@ -49,6 +51,7 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/storage/bag/ore = 1)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
+	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/mining/void
 	name = OUTFIT_JOB_NAME("Terra-Therma - Miner Voidsuit")
