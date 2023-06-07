@@ -67,7 +67,7 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 
-/obj/item/clothing/under/rank/Miner
+/obj/item/clothing/under/rank/miner
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Brown For the Miners, It stills having Terra Fed Markings."
 	name = "Terra Union Miner jumpsuit"
 	icon_state = "Terra_miner_icon"
@@ -81,7 +81,7 @@
 		rad = 50
 	)
 
-/obj/item/clothing/under/rank/Miner/verb/toggle_style()
+/obj/item/clothing/under/rank/miner/verb/toggle_style()
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
