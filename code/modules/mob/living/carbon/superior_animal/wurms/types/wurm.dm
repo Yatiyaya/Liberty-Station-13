@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(wurms_special, list(/mob/living/carbon/superior_animal/wurm/osm
 	sanity_damage = 1
 
 	destroy_surroundings = TRUE
-	natural_weapon = /obj/item/natural_weapon/low
+	natural_weapon = /obj/item/natural_weapon/wurm/low
 
 	//inherent_mutations = list(MUTATION_BLINDNESS, MUTATION_DWARFISM, MUTATION_NERVOUSNESS, MUTATION_DEAF, MUTATION_IMBECILE) - Cant be used so dont track these
 

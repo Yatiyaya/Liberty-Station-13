@@ -206,7 +206,7 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 30
 	armor_penetration = 25
-	natural_weapon = /obj/item/natural_weapon/bite/strong
+	natural_weapon = /obj/item/natural_weapon/fang/tarantula/emperor
 	poison_per_bite = 4
 	flash_resistances = 3 //For balance against are speedy fello
 	poison_type = "party drops"
@@ -240,7 +240,7 @@
 	turns_per_move = 1
 	melee_damage_lower = 40
 	melee_damage_upper = 50
-	natural_weapon = /obj/item/natural_weapon/bite/grosse_schmerzen
+	natural_weapon = /obj/item/natural_weapon/fang/tarantula/grosse_schmerzen
 	flash_resistances = 100 //Many large eyes, flashing one doesn't blind the others
 	poison_per_bite = 6
 	poison_type = "stoxin"

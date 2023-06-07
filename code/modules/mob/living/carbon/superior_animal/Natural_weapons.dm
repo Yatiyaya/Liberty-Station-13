@@ -90,6 +90,9 @@ God help us.
 /obj/item/natural_weapon/fang/tarantula/emperor
 	force = 25
 	armor_penetration = 25
+
+/obj/item/natural_weapon/fang/tarantula/grosse_schmerzen
+	force = 45
 //END SPIDERS
 
 //WURM
