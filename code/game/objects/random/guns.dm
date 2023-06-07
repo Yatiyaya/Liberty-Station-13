@@ -300,7 +300,7 @@
 				/obj/item/gun_upgrade/scope/watchman = 0.7,
 				/obj/item/gun_upgrade/scope/killer = 0.7,
 				/obj/item/gun_upgrade/underbarrel/bipod = 1,
-				/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = 0.01))
+				/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = 0.01))
 
 /obj/random/dungeon_gun_mods/low_chance
 	name = "low chance random gun mod"

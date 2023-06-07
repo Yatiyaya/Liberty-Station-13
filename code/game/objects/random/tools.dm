@@ -149,7 +149,7 @@
 	spawn_nothing_percentage = 60
 
 /obj/random/tool/advanced/onestar
-	name = "random similacrum tool"
+	name = "random simulacrum tool"
 
 /obj/random/tool/advanced/onestar/item_to_spawn()
 	return pickweight(list(/obj/item/tool/crowbar/onestar = 1,

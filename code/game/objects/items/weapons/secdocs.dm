@@ -24,7 +24,7 @@
 				"It's labelled 'Summary of Faction Capabilities'.",
 				"It's labelled 'The Technology Behind Bonfire'.",
 				"It's labelled 'Sol Federation Research Ethics'.",
-				"It's labelled 'The Collapse of Similacrum Robotics'.",
+				"It's labelled 'The Collapse of Simulacrum Robotics'.",
 				"It's labelled 'Wanderer - A Dossier'.",
 				"It's labelled 'Ironhammer's Legacy: Our Potential Gain'.",
 				"It's labelled 'Evaluation of Liberty Council Efficiency'.",

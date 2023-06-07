@@ -1,5 +1,5 @@
-/mob/living/carbon/superior_animal/robot/similacrum/roomba
-	name = "Similacrum Robotics RMB-A unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba
+	name = "Simulacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. This one seems pretty harmless."
 	icon_state = "roomba"
 	move_to_delay = 3
@@ -19,8 +19,8 @@
 	)
 
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer
-	name = "Similacrum Robotics RMB-A unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer
+	name = "Simulacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. This one seems to have a knife taped to it..?"
 	icon_state = "roomba_knife"
 	health = 30
@@ -29,8 +29,8 @@
 	melee_damage_upper = 17
 	drop2 = /obj/item/tool/knife
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip
-	name = "Similacrum Robotics RMB-A unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip
+	name = "Simulacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. This one has a baton attached to it..."
 	icon_state = "roomba_batton"
 	health = 30
@@ -41,7 +41,7 @@
 	var/trip_odds = 15 //So admins can edit this
 	drop2 = /obj/item/melee/telebaton
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/UnarmedAttack(atom/A, proximity)
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/UnarmedAttack(atom/A, proximity)
 	if(isliving(A))
 		var/mob/living/L = A
 
@@ -53,8 +53,8 @@
 
 	. = ..()
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/armored
-	name = "Similacrum Robotics RMB-SEC unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/armored
+	name = "Simulacrum Robotics RMB-SEC unit"
 	desc = "A small blue round drone, usually tasked with carrying out menial tasks. This one has a baton attached to it and seems to have added armor..."
 	icon_state = "roomba_IH_batton"
 	health = 80
@@ -63,8 +63,8 @@
 	melee_damage_lower = 7
 	melee_damage_upper = 12
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/boomba
-	name = "Similacrum Robotics RMB-A unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba
+	name = "Simulacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. Is that a fucking anti-personel mine?!"
 	icon_state = "boomba"
 	health = 15
@@ -75,15 +75,15 @@
 
 	get_stat_modifier = FALSE // n o .
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/boomba/UnarmedAttack()
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba/UnarmedAttack()
 	. = ..()
 	if(.) // If we succeeded in hitting.
 		visible_message(SPAN_DANGER("\The [src] makes an odd warbling noise, fizzles, and explodes!"))
 		explosion(get_turf(loc), 0, 0, 2, 3)
 		death()
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba
-	name = "Similacrum Robotics RMB-A unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba
+	name = "Simulacrum Robotics RMB-A unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. And this one has a gun."
 	icon_state = "roomba_lmg"
 	health = 30
@@ -99,15 +99,15 @@
 	mags_left = 0
 	reload_message = "Beeps aggressively as it charges the gun!" //in case of addmins givng more then 1 load
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba/New()
 	..()
 	if(prob(10))
 		drop2 = /obj/item/gun/energy/cog
 	if(prob(10))
 		cell_drop = /obj/item/cell/medium
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba/plasma
-	name = "Similacrum Robotics RMB-SEC unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba/plasma
+	name = "Simulacrum Robotics RMB-SEC unit"
 	desc = "A small blue round drone, usually tasked with carrying out menial tasks. And this one has a overclocked gun."
 	icon_state = "roomba_lmg"
 	health = 50
@@ -117,8 +117,8 @@
 	rounds_left = 10 //takes more per shot!
 	projectiletype = /obj/item/projectile/plasma/light
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/gun_ba/armored
-	name = "Similacrum Robotics RMB-SEC unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba/armored
+	name = "Simulacrum Robotics RMB-SEC unit"
 	desc = "A small blue round drone, usually tasked with carrying out menial tasks. And this one has a gun and seems to have added armor."
 	icon_state = "roomba_IH_lmg"
 	health = 70
@@ -126,8 +126,8 @@
 	melee_damage_lower = 5
 	melee_damage_upper = 10
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/chemical
-	name = "Similacrum Robotics RMB-MED unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/chemical
+	name = "Simulacrum Robotics RMB-MED unit"
 	desc = "A small round drone, usually tasked with carrying out menial tasks. This one has a hypo on the top of it..."
 	icon_state = "roomba_drugs"
 	health = 20
@@ -137,7 +137,7 @@
 	var/injection_per_hit = 2
 	var/injection_type = "toxin"
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/chemical/UnarmedAttack(atom/A, proximity)
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/chemical/UnarmedAttack(atom/A, proximity)
 	. = ..()
 
 	if(isliving(A))
@@ -145,8 +145,8 @@
 		if(istype(L) && L.reagents)
 			L.reagents.add_reagent(injection_type, injection_per_hit)
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/chemical/med
-	name = "Similacrum Robotics RMB-MED unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/chemical/med
+	name = "Simulacrum Robotics RMB-MED unit"
 	desc = "A small white round drone, usually tasked with carrying out menial tasks. This one has a hypo on the top of it..."
 	icon_state = "roomba_medical_drugs"
 	health = 20
@@ -156,8 +156,8 @@
 	injection_per_hit = 1
 	injection_type = "chloralhydrate"
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/chemical/med/healer
-	name = "Similacrum Robotics RMB-MED unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/chemical/med/healer
+	name = "Simulacrum Robotics RMB-MED unit"
 	desc = "A small white round drone, usually tasked with carrying out menial tasks. This one has a hypo on the top of it..."
 	icon_state = "roomba_medical_drugs"
 	health = 20

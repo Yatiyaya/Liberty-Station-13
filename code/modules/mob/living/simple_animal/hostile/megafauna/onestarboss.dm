@@ -2,12 +2,12 @@
 	name = "Type - 0315"
 	desc = "Love and concrete."
 
-	faction = "similacrum"
+	faction = "simulacrum"
 
 	icon = 'icons/mob/64x64.dmi'
-	icon_state = "onestar_boss_unpowered"
-	icon_living = "onestar_boss_unpowered"
-	icon_dead = "onestar_boss_wrecked"
+	icon_state = "simulacrum_boss_unpowered"
+	icon_living = "simulacrum_boss_unpowered"
+	icon_dead = "simulacrum_boss_wrecked"
 	pixel_x = -16
 	ranged = TRUE
 
@@ -35,6 +35,7 @@
 		visible_message("<b>[src]</b> blows apart in an explosion!")
 		explosion(src.loc, 0,1,3)
 		new /obj/effect/decal/cleanable/blood/gibs/robot(src.loc)
+		new /obj/effect/decal/mecha_wreckage/simulacrum(src.loc)
 		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 		s.set_up(3, 1, src)
 		s.start()
@@ -60,7 +61,7 @@
 		vision_range = 30
 	. = ..()
 	if(.)
-		icon_state = "onestar_boss"
+		icon_state = "simulacrum_boss"
 	else
 		icon_state = initial(icon_state)
 
@@ -104,7 +105,7 @@
 	ranged_cooldown = world.time + 30
 	SSmove_manager.stop_looping(src)
 	telegraph()
-	icon_state = "onestar_boss"
+	icon_state = "simulacrum_boss"
 	if(prob(35))
 		shoot_rocket(targetted_mob.loc, rand(0,90))
 		move_to_delay = initial(move_to_delay)

@@ -217,7 +217,7 @@
 	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_simil_base
-	name = "Frozen Forest Similacrum Robotics Mining Entrence"
+	name = "Frozen Forest Simulacrum Robotics Mining Entrence"
 	allows_weather_of_snow = FALSE
 	requires_power = FALSE
 	turf_initializer = null
@@ -333,7 +333,7 @@
 	ship_area = FALSE
 
 /area/liberty/outside/one_star
-	name = "Similacrum Robotics Base"
+	name = "Simulacrum Robotics Base"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen13.ogg', 'sound/ambience/ambigen14.ogg', 'sound/ambience/ambimalf.ogg')
 	dynamic_lighting = TRUE
@@ -341,12 +341,12 @@
 	flags = AREA_FLAG_RAD_SHIELDED
 
 /area/liberty/outside/one_star/fo_outside
-	name = "Similacrum Grounds"
+	name = "Simulacrum Grounds"
 	icon_state = "erisgreen"
 	dynamic_lighting = FALSE
 
 /area/liberty/outside/one_star/fo_internal
-	name = "Similacrum Field Offices"
+	name = "Simulacrum Field Offices"
 	icon_state = "erisblue"
 	requires_power = FALSE
 

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/crossbow
 	name = "\"Syndicate\" energy crossbow"
-	desc = "A Simalacrum Positronics mini energy crossbow, currently produced only in small batches. Small, portable, and self-charging, it's great for wilderness survival."
+	desc = "A Simulacrum Robotics mini energy crossbow, currently produced only in small batches. Small, portable, and self-charging, it's great for wilderness survival."
 	icon = 'icons/obj/guns/energy/crossbow.dmi'
 	icon_state = "crossbow"
 	w_class = ITEM_SIZE_SMALL

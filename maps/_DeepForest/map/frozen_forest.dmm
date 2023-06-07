@@ -77,7 +77,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "bP" = (
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer,
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "bZ" = (
@@ -200,7 +200,7 @@
 /area/liberty/dungeon/outside/frozen_forest)
 "eT" = (
 /obj/structure/bed/chair/custom/onestar,
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "eW" = (
@@ -666,7 +666,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "oT" = (
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer,
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/frozen_forest)
 "oU" = (
@@ -709,7 +709,7 @@
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "qq" = (
 /obj/structure/bed/chair/custom/onestar,
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "qs" = (
@@ -1514,7 +1514,7 @@
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GB" = (
 /obj/structure/bed/chair/custom/onestar/red,
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GH" = (
@@ -1645,7 +1645,7 @@
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Jq" = (
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "JA" = (

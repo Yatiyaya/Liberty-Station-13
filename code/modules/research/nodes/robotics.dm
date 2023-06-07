@@ -197,7 +197,7 @@
 
 /datum/technology/omnitools
 	name = "Omnitool Augments Tool"
-	desc = "An all in one tool for surgery based on those that are found in legendary Similacrum Robotics models."
+	desc = "An all in one tool for surgery based on those that are found in legendary Simulacrum Robotics models."
 	tech_type = RESEARCH_ROBOTICS
 
 	x = 0.7

@@ -178,6 +178,7 @@
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 40),
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASMAGLASS, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_URANIUM, "time" = 30),
 		list(QUALITY_CUTTING, 25, "time" = 90)
 	)
 

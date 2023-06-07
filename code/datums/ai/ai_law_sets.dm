@@ -154,7 +154,7 @@
 	selectable = FALSE
 
 /datum/ai_laws/blitzshell/New()
-	add_inherent_law("Defend Similacrum interests.")
+	add_inherent_law("Defend Simulacrum interests.")
 	add_inherent_law("Destroy our enemies. Those who would seek to destroy us and you.")
 	add_inherent_law("Complete your objectives, as outlined through your handler.")
 	..()

@@ -1,7 +1,7 @@
 // Less HP, less damage, but faster and can attack in an AoE and pin down mobs.
 /mob/living/carbon/superior_animal/handmade/mantis
 	name = "Custom-made Mantis Drone"
-	desc = "Built from the Phokorus Institute division's craftsmanship, and gathered designs of Similacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the Phokorus Institute division's craftsmanship, and gathered designs of Simulacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	icon_state = "pi_mantis_handmade"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	health = 450

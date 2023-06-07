@@ -519,23 +519,23 @@
 
 
 /obj/item/stack/tile/derelict/white_red_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict1"
 
 /obj/item/stack/tile/derelict/white_small_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict2"
 
 /obj/item/stack/tile/derelict/red_white_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict3"
 
 /obj/item/stack/tile/derelict/white_big_edges
-	name = "similacrum positronic floor tile"
-	singular_name = "similacrum positronic floor tile"
+	name = "Simulacrum positronic floor tile"
+	singular_name = "Simulacrum positronic floor tile"
 	icon_state = "tile_derelict4"
 
 //Industeral stuff

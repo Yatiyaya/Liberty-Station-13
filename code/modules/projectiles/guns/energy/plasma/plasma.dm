@@ -44,7 +44,7 @@
 	charge_meter = FALSE
 	serial_type = "Astrakhan"
 	gun_tags = list(GUN_ENERGY, GUN_SCOPE)
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/gun/energy/plasma/destroyer
 	name = "\"Hunan\" plasma rifle"

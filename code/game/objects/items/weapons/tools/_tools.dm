@@ -892,7 +892,7 @@
 	item_flags = initial(item_flags)
 	name = initial(name)
 	max_upgrades = initial(max_upgrades)
-	allow_similacrum_mods = initial(allow_similacrum_mods)
+	allow_simulacrum_mods = initial(allow_simulacrum_mods)
 	color = initial(color)
 	sharp = initial(sharp)
 	prefixes = list()

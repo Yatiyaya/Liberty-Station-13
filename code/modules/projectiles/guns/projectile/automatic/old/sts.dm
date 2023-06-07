@@ -145,7 +145,7 @@
 		)
 
 	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/expansion = TRUE,
-							  /obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE,
+							  /obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = TRUE,
 							  /obj/item/tool_upgrade/productivity/ergonomic_grip = TRUE,
 							  /obj/item/tool_upgrade/refinement/stabilized_grip = TRUE)
 
@@ -168,7 +168,7 @@
 	serial_type = "NM"
 
 	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/expansion = TRUE,
-							  /obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE,
+							  /obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = TRUE,
 							  /obj/item/tool_upgrade/productivity/ergonomic_grip = TRUE,
 							  /obj/item/tool_upgrade/refinement/stabilized_grip = TRUE)
 

@@ -63,7 +63,7 @@
 		available_chemicals += level1
 	if(man_rating >= 4) //Needs both manips to be level 3 - Pico (6 - 2)
 		available_chemicals += level2
-	if(man_rating >= 6) //Needs both manips to be level 4 - Similacrum (8 - 2)
+	if(man_rating >= 6) //Needs both manips to be level 4 - Simulacrum (8 - 2)
 		available_chemicals += level3
 	if(man_rating >= 8) //Needs both manips to be level 5 - Excel (10 - 2)
 		available_chemicals += level4

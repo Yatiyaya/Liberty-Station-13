@@ -1,6 +1,6 @@
-/datum/trade_station/similacrum_printer_ship
+/datum/trade_station/simulacrum_printer_ship
 	icon_states = list("similacrum_frigate", "ship")
-	uid = "similacrum_printer"
+	uid = "simulacrum_printer"
 	tree_x = 0.66
 	tree_y = 0.6
 	start_discovered = FALSE
@@ -12,7 +12,7 @@
 	hidden_inv_threshold = 2000
 	recommendation_threshold = 4000
 	regain_stock = FALSE
-	name_pool = list("Dayinji" = "A still functioning, heavily armed similacrum ship that still produces and offers wares, likely entirely unaware of Similacrum Robotics collapse given its \
+	name_pool = list("Dayinji" = "A still functioning, heavily armed Simulacrum ship that still produces and offers wares, likely entirely unaware of Simulacrum Robotics collapse given its \
 	automated. It's a wonder it hasn't been raided, but then again its protected by a massive army of still functioning combat drones. This one specializes in a wide variety of interesting goods.")
 	inventory = list(
 		"Sheji pan" = list(
@@ -63,7 +63,7 @@
 			/obj/item/tool_upgrade/augment/ai_tool = custom_good_nameprice("SR Nano AI", list(-100, -50)),
 			//Guns are tools too
 			/obj/item/gun_upgrade/mechanism/glass_widow = custom_good_nameprice("SR Glass Widow", list(-100, -50)),
-			/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = custom_good_nameprice("SR \"Master Unmaker\" infuser", list(-100, -50))
+			/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = custom_good_nameprice("SR \"Master Unmaker\" infuser", list(-100, -50))
 		)
 	)
 

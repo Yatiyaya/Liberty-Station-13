@@ -229,7 +229,7 @@
 	var/datum/effect/effect/system/spark_spread/spark_system
 
 /obj/structure/annomlies_diet/ball_lightning/New()
-	lighting_in_a_bottle = new /obj/item/cell/large/similacrum(src)
+	lighting_in_a_bottle = new /obj/item/cell/large/simulacrum(src)
 	addtimer(CALLBACK(src, .proc/wings), movement_activity)
 	spark_system = new()
 	spark_system.set_up(5, 0, src)

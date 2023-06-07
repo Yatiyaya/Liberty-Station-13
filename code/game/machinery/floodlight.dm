@@ -168,7 +168,7 @@
 
 /obj/machinery/floodlight/gate/Initialize()
 	. = ..()
-	cell = new /obj/item/cell/large/similacrum(src) // Infinite lightning
+	cell = new /obj/item/cell/large/simulacrum(src) // Infinite lightning
 
 /obj/machinery/floodlight/gate/attackby(obj/item/I, mob/user)
 	return // No removing the cell out of these ones for a free Simulacrum cell

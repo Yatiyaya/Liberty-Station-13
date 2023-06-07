@@ -38,7 +38,7 @@
 	price_tag = 5
 
 /obj/item/tool/crowbar/onestar
-	name = "Similacrum Robotics crowbar"
+	name = "Simulacrum Robotics crowbar"
 	desc = "Looks like a classic one, but more durable."
 	icon_state = "one_star_crowbar"
 	item_state = "onestar_crowbar"
@@ -48,7 +48,7 @@
 	degradation = 2
 	workspeed = 1.2
 	price_tag = 180 // Fancy but still just a crowbar.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 	alt_mode_toggle = "flips the bend of the bar, unlocking its true potential"
 	alt_mode_lossrate = 1.5
