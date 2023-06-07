@@ -42,7 +42,7 @@
 				/obj/item/card_carp/ratking = 3,
 				/obj/item/card_carp/plaguerat = 5,
 				/obj/item/card_carp/kangaroorat = 3,
-				/obj/random/card_carp/terrain = 3,
+				/obj/random/card_carp/terrain = 4,
 				/obj/random/card_carp/rare = 1 //Rare is rare
 				))
 
