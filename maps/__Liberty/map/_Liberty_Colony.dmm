@@ -9661,11 +9661,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/machinery/vending/one_star/food{
-	vendor_department = "Skylight Syndicate";
-	name = "Repurposed Simulacrum Robotics Food Vendor";
-	desc = "A smuggled vendor full of Simulacrum Robotics products linked to the Skylight account. This one sells food."
-	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "crZ" = (
@@ -24648,10 +24643,10 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/structure/cyberplant,
 /obj/effect/floor_decal/steeldecal/steel_decals_central6{
 	pixel_y = -7
 	},
+/obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "gfI" = (
@@ -29293,7 +29288,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "hnV" = (
