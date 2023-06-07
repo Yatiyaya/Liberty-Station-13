@@ -92,7 +92,7 @@
 	new /obj/item/stack/cable_coil/random(src)
 	new /obj/item/cell/medium(src)
 
-	/obj/item/storage/belt/hunter
+/obj/item/storage/belt/hunter
 	name = "hunting belt"
 	desc = "Can hold various tools fit for a trapper."
 	icon_state = "hunting"

@@ -57,7 +57,7 @@
 
 	options["Terra engineer"] = "Terra_engineer" // Sprites by Ezoken/Dromkii
 	options["Terra engineer Rolled down"] = "Terra_engineer_alt" // Sprites by Ezoken/Dromkii
-        options["Terra engineer down"] = "Terra_engineer_pants" // Sprites by Ezoken/Dromkii
+	options["Terra engineer down"] = "Terra_engineer_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -97,7 +97,7 @@
 
 	options["Terra Miner"] = "Terra_miner" // Sprites by Ezoken/Dromkii
 	options["Terra Miner Rolled down"] = "Terra_miner_alt" // Sprites by Ezoken/Dromkii
-        options["Terra Miner down"] = "Terra_miner_pants" // Sprites by Ezoken/Dromkii
+	options["Terra Miner down"] = "Terra_miner_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -111,7 +111,7 @@
 		usr.update_action_buttons()
 		return 1
 
-			obj/item/clothing/under/rank/chief
+/obj/item/clothing/under/rank/chief
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Navy Blue for the Chief, It stills having Terra Fed Markings."
 	name = "Terra Union Chief Jumpsuit"
 	icon_state = "Terra_chief_icon"
