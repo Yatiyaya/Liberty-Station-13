@@ -160,7 +160,7 @@
 
 /datum/design/autolathe/gun/contractor
 	name = "Car-Van 7mm Caseless \"Contractor\""
-	build_path = /obj/item/gun/projectile/boltgun/contractor
+	build_path = /obj/item/gun/projectile/automatic/contractor
 
 
 /datum/design/autolathe/gun/operator_rifle

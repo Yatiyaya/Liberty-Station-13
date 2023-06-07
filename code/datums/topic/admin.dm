@@ -913,7 +913,7 @@
 
 /datum/admin_topic/adminobservejump
 	keyword = "adminobservejump"
-	require_perms = list(R_MENTOR|R_MOD|R_ADMIN)
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG)
 
 /datum/admin_topic/adminobservejump/Run(list/input)
 	var/mob/M = locate(input["adminobservejump"])
@@ -927,7 +927,7 @@
 
 /datum/admin_topic/adminplayerobservecoodjump
 	keyword = "adminplayerobservecoodjump"
-	require_perms = list(R_ADMIN)
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG) //Poor souls.
 
 /datum/admin_topic/adminplayerobservecoodjump/Run(list/input)
 	var/x = text2num(input["X"])
@@ -1011,7 +1011,7 @@
 
 /datum/admin_topic/adminspawncookie
 	keyword = "adminspawncookie"
-	require_perms = list(R_ADMIN|R_FUN)
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG)
 
 /datum/admin_topic/adminspawncookie/Run(list/input)
 	var/mob/living/carbon/human/H = locate(input["adminspawncookie"])
@@ -1079,6 +1079,7 @@
 
 /datum/admin_topic/adminfaxview
 	keyword = "AdminFaxView"
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG) //Anyone could use this if they had a rank datum.
 
 /datum/admin_topic/adminfaxview/Run(list/input)
 	var/obj/item/fax = locate(input["AdminFaxView"])
@@ -1123,6 +1124,7 @@
 
 /datum/admin_topic/faxreply
 	keyword = "FaxReply"
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG) //Ditto. Stops nukepaper griefing.
 
 /datum/admin_topic/faxreply/Run(list/input)
 	var/mob/sender = locate(input["FaxReply"])
@@ -1175,7 +1177,7 @@
 
 /datum/admin_topic/jumpto
 	keyword = "jumpto"
-	require_perms = list(R_ADMIN)
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG)
 
 /datum/admin_topic/jumpto/Run(list/input)
 	var/mob/M = locate(input["jumpto"])
@@ -1184,7 +1186,7 @@
 
 /datum/admin_topic/getmob
 	keyword = "getmob"
-	require_perms = list(R_ADMIN)
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG)
 
 /datum/admin_topic/getmob/Run(list/input)
 	if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")
@@ -1195,7 +1197,7 @@
 
 /datum/admin_topic/narrateto
 	keyword = "narrateto"
-	require_perms = list(R_ADMIN)
+	require_perms = list(R_ADMIN|R_MOD)
 
 /datum/admin_topic/narrateto/Run(list/input)
 	var/mob/M = locate(input["narrateto"])
@@ -1438,6 +1440,7 @@
 
 /datum/admin_topic/admincaster
 	keyword = "admincaster"
+	require_perms = list(R_ADMIN|R_MOD|R_DEBUG)
 
 /datum/admin_topic/admincaster/Run(list/input)
 	switch(input["admincaster"])

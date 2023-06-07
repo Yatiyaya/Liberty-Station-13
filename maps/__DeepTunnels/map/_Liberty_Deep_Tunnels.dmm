@@ -3613,6 +3613,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/machinery/artifact_scanpad/precursor,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolthree)
 "jW" = (
@@ -3957,20 +3958,16 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/rnd/outpostbotany)
 "kR" = (
-/obj/structure/table/standard,
-/obj/item/device/lighting/toggleable/lamp,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/anomalisolthree)
+/obj/machinery/precursor_dungeon_device,
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
 "kT" = (
-/obj/machinery/artifact_scanpad,
-/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolthree)
 "kU" = (
 /obj/machinery/artifact_harvester,
-/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/anomalisolthree)
+/area/liberty/rnd/anomalisolfour)
 "kV" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -7773,13 +7770,6 @@
 /obj/item/clothing/head/helmet/space/anomaly,
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
-"tZ" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/white/violetcorener,
-/area/liberty/rnd/outpostgeneral)
 "ua" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled/white/violetcorener,
@@ -8887,7 +8877,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/mine/hallway)
 "MR" = (
-/obj/machinery/psionic_harvester,
+/obj/machinery/artifact_scanpad,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfour)
 "MT" = (
@@ -9368,6 +9358,8 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/mixing)
 "Yj" = (
+/obj/structure/table/standard,
+/obj/item/device/lighting/toggleable/lamp,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfour)
 "Ym" = (
@@ -10048,12 +10040,12 @@ ti
 ti
 ti
 jE
-kR
+kT
 jU
 kh
 kB
-jH
-tZ
+kR
+rw
 ua
 qN
 mW
@@ -10452,7 +10444,7 @@ ti
 ti
 ti
 jE
-kU
+kT
 jW
 kg
 kD
@@ -11260,7 +11252,7 @@ hs
 hs
 hs
 jF
-Yj
+kU
 BR
 Cf
 kG

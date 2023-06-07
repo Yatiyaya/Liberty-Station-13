@@ -624,7 +624,7 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 
 
 	var/power = min(apc.terminal.powernet.avail/2, damage_cap * power_damage_ratio) //Drains based on ALL available power on an APC's grid
-	current_power_area.removeStaticPower(power, power_channel)
+	current_power_area.use_power(power, power_channel)
 	//apc.terminal.powernet.draw_power(power) //Alternative if it doesn't draw enough
 	playsound(src, 'sound/effects/lightningshock.ogg', 100, 1, extrarange = 5)
 
