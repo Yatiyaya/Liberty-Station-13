@@ -30,7 +30,7 @@
 
 
 
-obj/item/clothing/under/rank/engineer
+	obj/item/clothing/under/rank/engineer
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Orange For the Engineers, It stills having Terra Fed Markings."
 	name = "Terra Union Engineer Jumpsuit"
 	icon_state = "Terra_engineer_icon"
@@ -70,7 +70,7 @@ obj/item/clothing/under/rank/engineer
 		update_wear_icon()
 		usr.update_action_buttons()
 
-obj/item/clothing/under/rank/Miner
+	obj/item/clothing/under/rank/Miner
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Brown For the Miners, It stills having Terra Fed Markings."
 	name = "Terra Union Miner jumpsuit"
 	icon_state = "Terra_miner_icon"
@@ -111,7 +111,7 @@ obj/item/clothing/under/rank/Miner
 		usr.update_action_buttons()
 		return 1
 
-		obj/item/clothing/under/rank/chief
+			obj/item/clothing/under/rank/chief
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Navy Blue for the Chief, It stills having Terra Fed Markings."
 	name = "Terra Union Chief Jumpsuit"
 	icon_state = "Terra_chief_icon"
