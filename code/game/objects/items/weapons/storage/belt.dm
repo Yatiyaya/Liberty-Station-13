@@ -85,12 +85,11 @@
 /obj/item/storage/belt/utility/full/union/populate_contents()
 	new /obj/item/tool/hammer(src)
 	new /obj/item/tool/wrench(src)
-	new /obj/item/tool/baton/arcwelder(src)
+	new /obj/item/tool/weldingtool(src)
 	new /obj/item/tool/crowbar(src)
 	new /obj/item/tool/wirecutters(src)
 	new /obj/item/tool/saw(src)
 	new /obj/item/stack/cable_coil/random(src)
-	new /obj/item/cell/medium(src)
 
 /obj/item/storage/belt/hunter
 	name = "hunting belt"
