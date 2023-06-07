@@ -27,10 +27,7 @@
 	item_state = "chiefengineeradv"
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 30)
 
-
-
-
-	obj/item/clothing/under/rank/engineer
+/obj/item/clothing/under/rank/engineer
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Orange For the Engineers, It stills having Terra Fed Markings."
 	name = "Terra Union Engineer Jumpsuit"
 	icon_state = "Terra_engineer_icon"
@@ -84,7 +81,7 @@
 		rad = 50
 	)
 
-/obj/item/clothing/under/rank/engineer/verb/toggle_style()
+/obj/item/clothing/under/rank/Miner/verb/toggle_style()
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
@@ -125,7 +122,7 @@
 		rad = 50
 	)
 
-/obj/item/clothing/under/rank/engineer/verb/toggle_style()
+/obj/item/clothing/under/rank/chief/verb/toggle_style()
 	set name = "Adjust Style"
 	set category = "Object"
 	set src in usr
