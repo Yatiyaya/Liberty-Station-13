@@ -70,7 +70,7 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 
-	obj/item/clothing/under/rank/Miner
+/obj/item/clothing/under/rank/Miner
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Brown For the Miners, It stills having Terra Fed Markings."
 	name = "Terra Union Miner jumpsuit"
 	icon_state = "Terra_miner_icon"
@@ -138,7 +138,7 @@
 
 	options["Terra Chief"] = "Terra_chief" // Sprites by Ezoken/Dromkii
 	options["Terra Chief Rolled down"] = "Terra_chief_alt" // Sprites by Ezoken/Dromkii
-        options["Terra Chief down"] = "Terra_chief_pants" // Sprites by Ezoken/Dromkii
+	options["Terra Chief down"] = "Terra_chief_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
