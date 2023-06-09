@@ -31142,7 +31142,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/asteroid,
+/turf/simulated/floor/plating/under,
 /area/liberty/engineering/engine_room)
 "hJF" = (
 /obj/machinery/atmospherics/unary/vent_pump,
