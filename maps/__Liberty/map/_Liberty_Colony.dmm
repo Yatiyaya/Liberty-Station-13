@@ -37863,6 +37863,9 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
+/obj/structure/sign/levels/stairsup{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/engineering/atmos/storage)
 "jwB" = (
@@ -49813,6 +49816,9 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1
+	},
+/obj/structure/sign/levels/stairsup{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/engineering/atmos/storage)
@@ -69739,7 +69745,8 @@
 /obj/machinery/light_switch{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/dark/techfloor_grid,
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/plating,
 /area/liberty/engineering/workshop)
 "rAl" = (
 /obj/structure/table/woodentable,
@@ -74893,10 +74900,12 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "sMa" = (
 /obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/mecha_parts/mecha_equipment/tool/extinguisher,
+/obj/item/mecha_parts/mecha_equipment/tool/drill,
+/obj/item/mecha_parts/mecha_equipment/tool/safety_clamp,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "sMb" = (
@@ -86794,6 +86803,10 @@
 /obj/machinery/camera/network/propis,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
+"vOI" = (
+/obj/structure/sign/levels/stairsdown,
+/turf/simulated/wall/r_wall,
+/area/liberty/engineering/engine_room)
 "vON" = (
 /obj/structure/boulder,
 /turf/simulated/floor/beach/water/jungledeep{
@@ -96742,7 +96755,6 @@
 /area/liberty/hallway/side/f2section1)
 "ylh" = (
 /obj/structure/table/standard,
-/obj/item/device/psionic_catalyst/dull,
 /obj/item/circuitboard/puncher,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
@@ -166242,8 +166254,8 @@ nmR
 emu
 emu
 byl
-byl
-byl
+vOI
+vOI
 byl
 emu
 emu
