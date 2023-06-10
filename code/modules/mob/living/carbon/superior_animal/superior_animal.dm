@@ -262,10 +262,9 @@
 	var/atom/targetted_mob
 	if (target_mob)
 		targetted_mob = (target_mob?.resolve())
-	if (!targetted_mob) //will be false if there is no target_mob or if the resolved value is null
+	else if (!targetted_mob || targetted_mob?.check_if_alive(FALSE)) //will be false if there is no target_mob or if the resolved value is null
 		loseTarget()
-	else if (!targetted_mob.check_if_alive(TRUE)) //else if because we dont want a runtime
-		loseTarget()
+
 
 	switch(stance)
 		if(HOSTILE_STANCE_IDLE)
@@ -434,7 +433,7 @@
 			patience = patience_initial
 		// This block controls our attack/range logic
 		var/atom/targetted = targetted_mob
-		if (!(targetted_mob.check_if_alive(TRUE)))
+		if (!(targetted_mob?.check_if_alive(TRUE)))
 			loseTarget()
 			return
 		if (lost_sight)

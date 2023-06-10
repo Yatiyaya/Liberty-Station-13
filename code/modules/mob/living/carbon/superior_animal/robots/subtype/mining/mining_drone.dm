@@ -13,6 +13,7 @@
 	maxHealth = 75
 	melee_damage_lower = 20 // Diamond-tipped drill.
 	melee_damage_upper = 30
+	natural_weapon = /obj/item/natural_weapon/mining_drill
 	viewRange = 6
 	move_to_delay = 3
 	randpixel = 0

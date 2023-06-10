@@ -10,6 +10,8 @@
 	attack_sound = 'sound/weapons/bigcut.ogg'
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	armor_penetration = 25 //Sharp bones
+
 	emote_see = list("howls in a broken voice.", "wracks its claws against the ground.", "gnarls.")
 	turns_per_move = 3
 	attacktext = "carved"
@@ -20,10 +22,6 @@
 
 	has_special_parts = TRUE //var for checking during the butcher process.
 	special_parts = list(/obj/item/animal_part/chimera_fang)
-
-
-	armor_penetration = 25 //Sharp bones
-
 
 	//Good stats baseline in case admins dont edit these
 	armor = list(melee = 45, bullet = 15, energy = 45, bomb = 10, bio = 100, rad = 100, agony = 70)
@@ -40,10 +38,12 @@
 	attack_sound = 'sound/weapons/slice.ogg'
 	melee_damage_lower = 26
 	melee_damage_upper = 26
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower
 	emote_see = list("looks left then right.", "breathes heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 3
-	attacktext = "cutted into"
+	attacktext = "cuts into"
 	faction = "daskvey"
 
 	chameleon_skill = 255
@@ -53,8 +53,6 @@
 
 	colony_friend = FALSE
 	friendly_to_colony = FALSE
-
-	armor_penetration = 15
 
 	color = "#49D6F2"
 
@@ -82,12 +80,13 @@
 	attack_sound = 'sound/weapons/slice.ogg'
 	melee_damage_lower = 40
 	melee_damage_upper = 60
+	armor_penetration = 35
+	natural_weapon = /obj/item/natural_weapon/daskvey
+
 	emote_see = list("sighs deeply")
 	turns_per_move = 1
 	move_to_delay = 1
 	attacktext = "rended apart"
-
-	armor_penetration = 35
 
 	color = null
 
@@ -176,6 +175,8 @@
 	health = 250
 	melee_damage_lower = 33
 	melee_damage_upper = 33
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/cleaver
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
@@ -184,7 +185,7 @@
 
 	drop_items = list(/obj/item/tool/sword/cleaver/cult/deepmaints)
 
-	armor_penetration = 15
+
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/plasma
 	name = "Daskveyian Plasma Caster"
@@ -195,6 +196,8 @@
 	health = 250
 	melee_damage_lower = 8
 	melee_damage_upper = 10
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/gunner
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
@@ -209,7 +212,7 @@
 	comfy_range = 6
 	projectiletype = /obj/item/projectile/plasma/aoe/heat
 
-	armor_penetration = 15
+
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/laser
 	name = "Daskveyian Las-Gunner"
@@ -220,6 +223,7 @@
 	health = 250
 	melee_damage_lower = 8
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/gunner
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
@@ -248,6 +252,7 @@
 	health = 250
 	melee_damage_lower = 8
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/gunner
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
@@ -281,6 +286,7 @@
 	health = 250
 	melee_damage_lower = 8
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/gunner
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 3
 	move_to_delay = 4
@@ -312,6 +318,8 @@
 	health = 300
 	melee_damage_lower = 20
 	melee_damage_upper = 25
+	armor_penetration = 0
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/shielder
 	emote_see = list("looks left then right.", "breaths heavily.", "adjusts their armour.")
 	turns_per_move = 4
 	move_to_delay = 5
@@ -319,7 +327,7 @@
 
 	drop_items = list()
 
-	armor_penetration = 0
+
 	armor = list(melee = 60, bullet = 60, energy = 60, bomb = 100, bio = 100, rad = 90)
 	var/knockdown_odds = 30
 
@@ -344,14 +352,14 @@
 	health = 280
 	melee_damage_lower = 33
 	melee_damage_upper = 33
+	armor_penetration = 30
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/halberd
 	emote_see = list("looks left then right", "breaths heavilly", "adjusts their armour")
 	turns_per_move = 4
 	move_to_delay = 5
 	attacktext = "hacked"
 
 	drop_items = list()
-
-	armor_penetration = 30
 	armor = list(melee = 60, bullet = 60, energy = 60, bomb = 100, bio = 100, rad = 90)
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/weakling
@@ -363,6 +371,8 @@
 	health = 150
 	melee_damage_lower = 15
 	melee_damage_upper = 15
+	armor_penetration = 0
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/weakling
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
@@ -370,7 +380,7 @@
 
 	drop_items = list()
 
-	armor_penetration = 0
+
 	armor = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/orb_shooter
@@ -382,6 +392,8 @@
 	health = 150
 	melee_damage_lower = 15
 	melee_damage_upper = 15
+	armor_penetration = 0
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/weakling
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
@@ -389,7 +401,6 @@
 
 	drop_items = list()
 
-	armor_penetration = 0
 	armor = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 	rounds_per_fire = 1
@@ -422,6 +433,8 @@
 	health = 150
 	melee_damage_lower = 15
 	melee_damage_upper = 15
+	armor_penetration = 0
+	natural_weapon = /obj/item/natural_weapon/daskvey_follower/weakling
 	emote_see = list("looks left then right.", "breathes softly.", "adjusts their robes.")
 	turns_per_move = 1
 	move_to_delay = 2
@@ -429,7 +442,6 @@
 
 	drop_items = list()
 
-	armor_penetration = 0
 	armor = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 	rounds_per_fire = 1

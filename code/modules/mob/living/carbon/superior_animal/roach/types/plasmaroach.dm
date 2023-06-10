@@ -13,6 +13,7 @@
 
 	melee_damage_lower = 3
 	melee_damage_upper = 5
+	natural_weapon = /obj/item/natural_weapon/bite/roachling
 	move_to_delay = 4
 
 /mob/living/carbon/superior_animal/roach/plasmaroach/UnarmedAttack(atom/A, proximity)

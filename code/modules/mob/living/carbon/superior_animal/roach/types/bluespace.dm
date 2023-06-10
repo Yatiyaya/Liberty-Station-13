@@ -7,6 +7,8 @@
 	meat_type = /obj/item/bluespace_crystal
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	armor_penetration = 100 //We teleport past the armor
+	natural_weapon = /obj/item/natural_weapon/bite/bluespace
 	sanity_damage = 1
 
 /* TODO: Make these a threat and not free loot
@@ -15,7 +17,6 @@
 */
 	price_tag = 1500
 	flash_resistances = 15 //We are the light
-	armor_penetration = 100 //We teleport past the armor
 
 	//spawn_blacklisted = TRUE
 	var/change_tele_to_mob = 25

@@ -6,6 +6,7 @@
 	maxHealth = 25
 	health = 25
 	melee_damage_upper = 3
+	natural_weapon = /obj/item/natural_weapon/bite/roachling
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat/benzin
 	meat_amount = 3
 

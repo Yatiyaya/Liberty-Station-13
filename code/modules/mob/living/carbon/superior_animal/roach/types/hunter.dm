@@ -13,7 +13,9 @@
 	knockdown_odds = 5
 	melee_damage_lower = 15
 	melee_damage_upper = 15
-
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/bite/hunter
+	
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager
 	meat_amount = 3
-	armor_penetration = 15
+

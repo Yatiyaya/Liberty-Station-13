@@ -10,6 +10,7 @@
 	deathmessage = "pulses violently as it dies!"
 	melee_damage_lower = 12
 	melee_damage_upper = 15 //Rare
+	natural_weapon = /obj/item/natural_weapon/bite/medium
 	armor_penetration = 50
 
 	mob_size = MOB_MEDIUM

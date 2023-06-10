@@ -30,6 +30,7 @@
 	melee_damage_lower = 15
 	melee_damage_upper = 25
 	armor_penetration = 50
+	natural_weapon = /obj/item/natural_weapon/psi_monster/ploge
 	ranged = TRUE
 
 	pixel_x = 0

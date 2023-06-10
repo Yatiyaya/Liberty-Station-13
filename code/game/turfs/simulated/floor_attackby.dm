@@ -22,7 +22,7 @@
 	//Attempting to damage floors with things
 	//This has a lot of potential to break things, so it's limited to harm intent.
 	//This supercedes all construction, deconstruction and similar actions. So change your intent out of harm if you don't want to smack the floor
-	if (usr.a_intent == I_HURT && user.Adjacent(src))
+	if (user.a_intent == I_HURT && user.Adjacent(src))
 		if(!(I.flags & NOBLUDGEON))
 			user.do_attack_animation(src)
 			var/calc_damage = (I.force*I.structure_damage_factor) - flooring.resistance

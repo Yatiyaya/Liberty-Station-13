@@ -21,13 +21,15 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 	deathmessage = "splatters into gore."
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
+	armor_penetration = 5
+	natural_weapon = /obj/item/natural_weapon/termite
+
 	faction = "wurm"
 	fire_verb = "spits"
 	see_in_dark = 10
 
 	fleshcolor = "#7C90B8"
 	bloodcolor = "#7C90B8"
-	armor_penetration = 5
 
 	destroy_surroundings = TRUE
 	friendly_to_colony = FALSE
@@ -160,6 +162,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_MED
 	melee_damage_upper = TERMITE_DMG_MED
+	natural_weapon = /obj/item/natural_weapon/termite/medium
 
 //Armor related variables
 	armor = list(melee = 20, bullet = 35, energy = 35, bomb = 50, bio = 100, rad = 0)
@@ -186,6 +189,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_HIGH
 	melee_damage_upper = TERMITE_DMG_HIGH
+	natural_weapon = /obj/item/natural_weapon/termite/high
 
 //Armor related variables
 	armor = list(melee = 35, bullet = 59, energy = 20, bomb = 50, bio = 100, rad = 0)
@@ -215,6 +219,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_LOW
 	melee_damage_upper = TERMITE_DMG_LOW
+//	natural_weapon = default termite damage is low
 
 //Armor related variables
 	armor = list(melee = 50, bullet = 35, energy = 20, bomb = 50, bio = 100, rad = 0)
@@ -241,6 +246,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_MED
 	melee_damage_upper = TERMITE_DMG_MED
+	natural_weapon = /obj/item/natural_weapon/termite/medium
 
 //Armor related variables
 	armor = list(melee = 20, bullet = 30, energy = 50, bomb = 50, bio = 100, rad = 0)
@@ -268,6 +274,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_HIGH
 	melee_damage_upper = TERMITE_DMG_HIGH
+	natural_weapon = /obj/item/natural_weapon/termite/high
 
 //Armor related variables
 	armor = list(melee = 25, bullet = 40, energy = 50, bomb = 50, bio = 100, rad = 0)
@@ -298,6 +305,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_LOW
 	melee_damage_upper = TERMITE_DMG_LOW
+//	natural_weapon = Default termite damage is low
 
 	ranged = TRUE
 

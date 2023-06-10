@@ -14,6 +14,7 @@
 	melee_damage_lower = 3
 	melee_damage_upper = 7 //Weaker than hunter
 	armor_penetration = 35
+	natural_weapon = /obj/item/natural_weapon/bite/tazntz
 
 /mob/living/carbon/superior_animal/roach/toxic/UnarmedAttack(atom/A, proximity)
 	. = ..()

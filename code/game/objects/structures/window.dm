@@ -242,7 +242,7 @@
 		user.do_attack_animation(src)
 		shatter(TRUE,TRUE)
 
-	else if (usr.a_intent == I_HURT)
+	else if (user.a_intent == I_HURT)
 
 		if (ishuman(usr))
 			var/mob/living/carbon/human/H = usr
