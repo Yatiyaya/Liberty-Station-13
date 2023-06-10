@@ -5,7 +5,6 @@
 	icon_state = "golem_ameridian_blue"
 	health = 30
 	maxHealth = 30
-	natural_weapon = /obj/item/natural_weapon/punch
 	move_to_delay = 1 // Very fast
 	armor = list(melee = 20, bullet = 10, energy = 25, bomb = 15, bio = 100, rad = 100) //We want to be gunned down, not lasered
 	drop_amount = 1

@@ -29,7 +29,7 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 25
 	armor_penetration = 25
-	natural_weapon = /obj/item/natural_weapon/psi_monster/hovering_nightmare
+
 	emote_see = list("begins to melt, blackened skin sloughing down its form until it pulls taut.", "howls, \"Birth, flesh, death, decay, birth, flesh, death, decay!\"", "howls in agony!")
 	turns_per_move = 10
 	leach_on_odds = 10
@@ -50,7 +50,6 @@
 	melee_damage_lower = 14
 	melee_damage_upper = 18
 	armor_penetration = 45
-	natural_weapon = /obj/item/natural_weapon/psi_monster/hovering_nightmare
 	emote_see = list("extends its tongue to the floor.", "chitters, whipping its tail wildly about!", "hisses with barely contained rage.")
 	turns_per_move = 8
 	poison_per_bite = 3
@@ -69,6 +68,7 @@
 	melee_damage_lower = 12
 	melee_damage_upper = 31
 	armor_penetration = 15
+	//Has weird damage. randomized on attack() instead of New()
 	natural_weapon = /obj/item/natural_weapon/psi_monster/memory
 	emote_see = list("screams, \"They did this they did this!\"", "howls, \"They could have done something!\"", "whispers, \"I could have done something...\"", "groans, \"Kill me, please...\"", "weeps, \"It will never end.\"")
 	speak_chance = 15
@@ -90,7 +90,7 @@
 	health = 100
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	natural_weapon = /obj/item/natural_weapon/psi_monster/flesh_tower
+
 	emote_see = list("flexes!", "wriggles lewdly!", "oozes goo.")
 	anchored = TRUE
 	wander = FALSE

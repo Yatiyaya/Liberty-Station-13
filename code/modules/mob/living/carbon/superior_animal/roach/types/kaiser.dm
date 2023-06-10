@@ -24,7 +24,6 @@ Has ability of every roach.
 	melee_damage_lower = 25
 	melee_damage_upper = 35
 	armor_penetration = 75
-	natural_weapon = /obj/item/natural_weapon/bite/kaiser
 	move_to_delay = 8
 	mob_size =  3  // The same as Hivemind Tyrant
 	status_flags = 0

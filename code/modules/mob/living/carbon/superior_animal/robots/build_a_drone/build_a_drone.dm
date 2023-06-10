@@ -8,7 +8,7 @@
 	maxHealth = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	natural_weapon = /obj/item/natural_weapon/drone/custom
+
 	faction = "neutral"
 	cleaning = FALSE
 	drop1 = null

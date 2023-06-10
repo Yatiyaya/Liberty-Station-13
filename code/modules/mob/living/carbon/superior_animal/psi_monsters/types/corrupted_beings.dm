@@ -11,6 +11,8 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 30
 	armor_penetration = 25 //Sharp bones
+	//whatever, take your special weapon... Maybe we can do something with it later
+	natural_weapon = /obj/item/natural_weapon/shell_hound
 
 	emote_see = list("howls in a broken voice.", "wracks its claws against the ground.", "gnarls.")
 	turns_per_move = 3

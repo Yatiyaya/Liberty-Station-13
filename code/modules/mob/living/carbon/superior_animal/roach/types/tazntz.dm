@@ -14,7 +14,6 @@
 	melee_damage_lower = 8
 	melee_damage_upper = 12
 	armor_penetration = 35
-	natural_weapon = /obj/item/natural_weapon/bite/tazntz
 	armor = list(melee = 15, bullet = 10, energy = 5, bomb = 5, bio = 20, rad = 0, agony = 0)
 
 

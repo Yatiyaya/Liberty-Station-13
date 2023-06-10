@@ -10,7 +10,6 @@
 	projectiletype = /obj/item/projectile/ameridian_shard/golem
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	natural_weapon = /obj/item/natural_weapon/punch/large
 
 	allowed_stat_modifiers = list(
 		/datum/stat_modifier/mob/living/carbon/superior_animal/durable = 5,

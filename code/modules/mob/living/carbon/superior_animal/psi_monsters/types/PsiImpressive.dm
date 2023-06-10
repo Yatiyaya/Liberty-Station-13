@@ -56,7 +56,7 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 	armor_penetration = 50
-	natural_weapon = /obj/item/natural_weapon/psi_monster/ash_wendigo
+
 	emote_see = list("crackles and pops as its head burns!", "looses a haunting scream!", "claws at its head, trying to put out the flames!")
 	burn_attack_text = "The ash wendigo wreathes its claws in fire before striking!"
 	burn_attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
@@ -112,7 +112,7 @@
 	armor = list(melee = 20, bullet = 10, energy = 5, bomb = 30, bio = 100, rad = 100)
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn)
 	armor_penetration = 50
-	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce/crimson_jelly
+	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce
 
 /mob/living/carbon/superior_animal/psi_monster/wasonce/crimson_jelly/pitch_horror
 	name = "pitch horror"
@@ -126,7 +126,7 @@
 	knockdown_odds = 30
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn, /obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn)
 	armor_penetration = 70
-	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce/crimson_jelly/pitch_horror
+	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce
 
 // King's Court. Special named psi mobs with better stats and custom voice lines, they are spawned whenever the king of the hound journey.
 /mob/living/carbon/superior_animal/psi_monster/flesh_behemoth/baron

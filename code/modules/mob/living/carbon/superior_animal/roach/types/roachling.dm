@@ -11,7 +11,6 @@
 	knockdown_odds = 3
 	melee_damage_lower = 2
 	melee_damage_upper = 3
-	natural_weapon = /obj/item/natural_weapon/bite/roachling
 
 	armor = list(melee = 5, bullet = 0, energy = 0, bomb = 0, bio = 5, rad = 0, agony = 0)
 

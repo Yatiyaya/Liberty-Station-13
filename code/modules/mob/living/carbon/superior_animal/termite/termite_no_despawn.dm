@@ -14,6 +14,8 @@
 	deathmessage = "splatters into a bloody mess."
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
+	melee_damage_lower = TERMITE_DMG_LOW
+	melee_damage_upper = TERMITE_DMG_LOW
 	armor_penetration = 15
 	natural_weapon = /obj/item/natural_weapon/termite
 
@@ -94,7 +96,6 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_MED
 	melee_damage_upper = TERMITE_DMG_MED
-	natural_weapon = /obj/item/natural_weapon/termite/medium
 
 //Armor related variables
 	armor = list(melee = 20, bullet = 35, energy = 35, bomb = 50, bio = 100, rad = 0)
@@ -122,7 +123,6 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_HIGH
 	melee_damage_upper = TERMITE_DMG_HIGH
-	natural_weapon = /obj/item/natural_weapon/termite/high
 
 //Armor related variables
 	armor = list(melee = 35, bullet = 59, energy = 20, bomb = 50, bio = 100, rad = 0)
@@ -181,7 +181,6 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_MED
 	melee_damage_upper = TERMITE_DMG_MED
-	natural_weapon = /obj/item/natural_weapon/termite/medium
 
 //Armor related variables
 	armor = list(melee = 20, bullet = 30, energy = 50, bomb = 50, bio = 100, rad = 0)
@@ -210,7 +209,6 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_HIGH
 	melee_damage_upper = TERMITE_DMG_HIGH
-	natural_weapon = /obj/item/natural_weapon/termite/high
 
 //Armor related variables
 	armor = list(melee = 25, bullet = 40, energy = 50, bomb = 50, bio = 100, rad = 0)

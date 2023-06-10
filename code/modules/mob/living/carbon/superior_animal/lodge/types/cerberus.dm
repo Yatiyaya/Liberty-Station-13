@@ -60,6 +60,7 @@
 	health = 300
 	melee_damage_lower = 30
 	melee_damage_upper = 35
+	natural_weapon = /obj/item/natural_weapon/bite
 	leather_amount = 6 //The amount of leather sheets dropped.
 	bones_amount = 6 //The amount of bone sheets dropped.
 	has_special_parts = TRUE //var for checking during the butcher process.

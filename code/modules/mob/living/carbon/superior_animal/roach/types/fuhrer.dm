@@ -12,7 +12,6 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 	armor_penetration = 25
-	natural_weapon = /obj/item/natural_weapon/bite/fuhrer
 	move_to_delay = 8
 	mob_size = MOB_MEDIUM
 	var/distress_level = 0

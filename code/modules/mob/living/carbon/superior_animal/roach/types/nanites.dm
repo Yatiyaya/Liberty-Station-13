@@ -13,7 +13,6 @@
 	melee_damage_lower = 1
 	melee_damage_upper = 3 //He's a ranged roach
 	armor_penetration = 50
-	natural_weapon = /obj/item/natural_weapon/bite/roachling
 
 	blattedin_revives_left = 1
 

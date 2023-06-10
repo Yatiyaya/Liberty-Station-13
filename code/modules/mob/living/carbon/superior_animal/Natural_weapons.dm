@@ -10,15 +10,19 @@ God help us.
 	name = "natural weapons"
 	gender = PLURAL
 	attack_verb = list("attacked")
-	force = 5
-	armor_penetration = ARMOR_PEN_GRAZING
+	//Gives all mobs a randomized value between their upper-lower
+	force = 0
+	armor_penetration = 0	//adds monster armor_pen or grazing
+	damtype = BRUTE
 	sharp = FALSE
 	edge = FALSE
+
 	// Honestly, I don't know how this would conceptually work...
 	// Set at your own risk.
 	embed_mult = 0
-	damtype = BRUTE
 	canremove = FALSE
+
+	// These two are important
 	flags = CONDUCT
 	unacidable = 1
 	// whether should we show up in attack message, e.g. 'urist has been bit with teeth by carp' vs 'urist has been bit by carp'
@@ -28,10 +32,15 @@ God help us.
 	var/poison_per_bite = 0
 	var/poison_type = ""
 
-/obj/item/natural_weapon/New(var/mob/living/carbon/superior_animal/M)
-	if(M && M.poison_type)
-		poison_per_bite += M.poison_per_bite
-		poison_type = M.poison_type
+	New(mob/living/user)
+		var/mob/living/carbon/superior_animal/M = user
+		if(M && (M == user))
+			//For cleanliness, add instead of replace... Incase we make a mob without upper/lower/armor_penetration
+			force += rand(M.melee_damage_lower, M.melee_damage_upper)
+			armor_penetration += max(ARMOR_PEN_GRAZING, M.armor_penetration)
+			// Hopefully works with stat_modifiers
+			poison_per_bite += M?.poison_per_bite
+			poison_type = M?.poison_type
 
 /obj/item/natural_weapon/attack_message_name()
 	return show_in_message ? ..() : FALSE
@@ -67,76 +76,34 @@ God help us.
 	name = "fangs"
 	attack_verb = list("bitten")
 	hitsound = 'sound/weapons/spiderlunge.ogg'
-	force = 14.5
+
 	sharp = TRUE
-
-/obj/item/natural_weapon/fang/nurse
-	force = 7.5
-
-/obj/item/natural_weapon/fang/nurse/midwife
-	force = 12.5
-
-/obj/item/natural_weapon/fang/nurse/recluse
-	force = 4
-	armor_penetration = 70
-
-/obj/item/natural_weapon/fang/hunter/viper
-	force = 22.5
-
-/obj/item/natural_weapon/fang/tarantula/pit
-	force = 37.5
-
-/obj/item/natural_weapon/fang/nurse/queen
-	force = 25
-	armor_penetration = 35
-
-/obj/item/natural_weapon/fang/tarantula/emperor
-	force = 25
-	armor_penetration = 25
-
-/obj/item/natural_weapon/fang/tarantula/grosse_schmerzen
-	force = 45
 //END SPIDERS
 
+//////////
+
 //WURM
-/obj/item/natural_weapon/wurm
+/obj/item/natural_weapon/wurm //wurms default to low when not set
 	name = "teeth"
 	attack_verb = list("chomped")
 	hitsound = 'sound/weapons/bite.ogg'
-	force = 25
-	armor_penetration = 5
+
 	sharp = TRUE
-
-/obj/item/natural_weapon/wurm/low
-	force = 15
-
-/obj/item/natural_weapon/wurm/high
-	force = 40
-
-/obj/item/natural_weapon/wurm/ultra
-	force = 55
 //*end wurm
+
+//////////
 
 //NOT-VOX
 /obj/item/natural_weapon/claws
 	name = "claws"
-	attack_verb = list("clawed", "scratched")
-	force = 14
+	attack_verb = list("mauled", "clawed", "slashed")
+
 	sharp = TRUE
 	edge = TRUE
 
-/obj/item/natural_weapon/claws/strong
-	force = 19
-	attack_verb = list("mauled", "clawed", "slashed")
-
-/obj/item/natural_weapon/claws/chad
-	force = 26
-	attack_verb = list("mauled", "clawed", "slashed")
-
-/obj/item/natural_weapon/claws/bananaman
-	force = 33.5
-	attack_verb = list("mauled", "clawed", "slashed")
 //*End of NOT-VOX
+
+//////////
 
 //PSI-THINGS
 /obj/item/natural_weapon/psi_monster
@@ -146,86 +113,48 @@ God help us.
 	force = 12.5
 
 /obj/item/natural_weapon/psi_monster/ponderous
+	hitsound = list(
+	'sound/weapons/punch1.ogg','sound/weapons/punch2.ogg','sound/weapons/punch3.ogg','sound/weapons/punch4.ogg'
+	)
 	attack_verb = list("punched")
-	force = 16.5
-	armor_penetration = ARMOR_PEN_MASSIVE
-
-/obj/item/natural_weapon/psi_monster/hovering_nightmare
-	force = 22.5
-	armor_penetration = ARMOR_PEN_EXTREME
-
-/obj/item/natural_weapon/psi_monster/hovering_nightmare
-	force = 16
-	armor_penetration = 45
 
 /obj/item/natural_weapon/psi_monster/memory
-	armor_penetration = 15
+	//Stupid snowflake damage
 
 /obj/item/natural_weapon/psi_monster/memory/attack(obj/item/I, mob/living/user, params)
 	force = rand(12,31)
 	. = ..()
 
-/obj/item/natural_weapon/psi_monster/flesh_tower
-	force = 7.5
-
-/obj/item/natural_weapon/psi_monster/ploge
-	force = WEAPON_FORCE_DANGEROUS
-	armor_penetration = ARMOR_PEN_HALF
-
 /obj/item/natural_weapon/psi_monster/flesh_behemoth
 	hitsound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	attack_verb = list("carved")
-	force = 35
-	armor_penetration = ARMOR_PEN_MODERATE
 
 /obj/item/natural_weapon/psi_monster/mind_gazer
 	attack_verb = list("rammed")
-	force = 27.5
-	armor_penetration = ARMOR_PEN_DEEP
-
-/obj/item/natural_weapon/psi_monster/ash_wendigo
-	force = 27.5
-	armor_penetration = ARMOR_PEN_HALF
 
 /obj/item/natural_weapon/psi_monster/cerebral_crusher
 	hitsound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	attack_verb = list("slammed")
-	force = 35
-	armor_penetration = 35
 
 /obj/item/natural_weapon/psi_monster/wasonce
 	hitsound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	attack_verb = list("delivered a crushing blow to")
-	force = 32.5
-
-/obj/item/natural_weapon/psi_monster/wasonce/crimson_jelly
-	armor_penetration = ARMOR_PEN_HALF
-
-/obj/item/natural_weapon/psi_monster/wasonce/crimson_jelly/pitch_horror
-	armor_penetration = 70
 
 /obj/item/natural_weapon/psi_monster/Dreaming
 	name = "???"
 	hitsound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	attack_verb = list("delivered a devastating blow to")
-	force = 55
-	armor_penetration = 65
-
 
 /obj/item/natural_weapon/shell_hound
 	name = "sharpened bone"
 	attack_verb = list("carved")
 	hitsound = 'sound/weapons/bigcut.ogg'
-	force = 25
-	armor_penetration = ARMOR_PEN_EXTREME
 
 /obj/item/natural_weapon/daskvey_follower
 	name = "deepblue blade"
 	hitsound = 'sound/weapons/rapidslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	damtype = BURN
-	force = 26
-	armor_penetration = ARMOR_PEN_MODERATE
 	sharp = TRUE
 	edge = TRUE
 	show_in_message = FALSE
@@ -233,14 +162,13 @@ God help us.
 /obj/item/natural_weapon/daskvey_follower/cleaver
 	name = "solar eclipse"
 	hitsound = 'sound/weapons/slice.ogg'
-	force = 33
+
 
 /obj/item/natural_weapon/daskvey_follower/gunner
 	name = "\"Blue Moon\" psi-plasma rifle"
 	hitsound = 'sound/weapons/blunthit.ogg'
 	attack_verb = list("bashes", "butts", "thwacks")
 	damtype = BRUTE
-	force = 9
 	sharp = FALSE
 	edge = FALSE
 
@@ -249,20 +177,17 @@ God help us.
 	hitsound = 'sound/weapons/blunthit.ogg'
 	attack_verb = list("destablizes", "ruins", "wrecks")
 	damtype = BRUTE
-	force = 22.5
+
 
 /obj/item/natural_weapon/daskvey_follower/halberd
 	name = "daskvey halberd"
 	hitsound = 'sound/weapons/slice.ogg'
 	damtype = BRUTE
-	force = 33
-	armor_penetration = ARMOR_PEN_MASSIVE
 
 /obj/item/natural_weapon/daskvey_follower/weakling
 	name = "daskvey fists"
 	hitsound = list('sound/weapons/punch1.ogg','sound/weapons/punch2.ogg','sound/weapons/punch3.ogg','sound/weapons/punch4.ogg'
 					)
-	force = 15
 	sharp = FALSE
 	edge = FALSE
 
@@ -283,12 +208,12 @@ God help us.
 	name = "Daskvey's toe-beans"
 	attack_verb = list("mauled", "clawed", "slashed", "slammed", "rended", "cleaved", "skewered")
 	hitsound = 'sound/weapons/renderslash.ogg'
-	force = 50
-	armor_penetration = 35
 	sharp = TRUE
 	edge = TRUE
 	show_in_message = FALSE
 //*end Psi-Things
+
+//////////
 
 /*
 #define TERMITE_DMG_LOW 15
@@ -301,17 +226,13 @@ God help us.
 	name = "mandibles"
 	attack_verb = list("chomped")
 	hitsound = 'sound/weapons/bite.ogg'
-	force = 15 //much ouch, very pen.
-	armor_penetration = 15
+	// Very pain, much ouch. Limbs go REEEE
 	sharp = TRUE
 	edge = TRUE
 
-/obj/item/natural_weapon/termite/medium
-	force = 25
-
-/obj/item/natural_weapon/termite/high
-	force = 40
 //*end TERMITE
+
+//////////
 
 //ROBOTS
 /obj/item/natural_weapon/drone
@@ -319,103 +240,32 @@ God help us.
 	gender = NEUTER
 	attack_verb = list("hit", "pierced", "sliced", "attacked")
 	hitsound = 'sound/weapons/slice.ogg' //So we dont make bite sounds
-	force = 7.5
 	damtype = BRUTE
-	edge = TRUE
-	show_in_message = FALSE
-
-//For build-a-drone... Maybe do something with it later
-/obj/item/natural_weapon/drone/custom
-	force = 12.5
-
-//spanish inquisition
-/obj/item/natural_weapon/church/bishop //Bonk them with the scorch
-	name = "staff"
-	gender = NEUTER
-	attack_verb = list("slapped")
-	hitsound = null
-	force = 6.5
-	armor_penetration = ARMOR_PEN_EXTREME
-	damtype = BURN
-	show_in_message = TRUE
-
-/obj/item/natural_weapon/church/knight //uses the custodian shortsword. Inherits it's AP.
-	name = "ulfberht"
-	gender = NEUTER
-	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	hitsound = 'sound/weapons/bladeslice.ogg'
-	force = 50
-	armor_penetration = ARMOR_PEN_DEEP
 	sharp = TRUE
-	edge = TRUE
-	show_in_message = TRUE
-
-/obj/item/natural_weapon/church/pawn //knights have shortsword, so pawn has axe. Inherits it's AP.
-	name = "horseman axe"
-	gender = NEUTER
-	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	hitsound = 'sound/weapons/bladeslice.ogg'
-	force = 35
-	armor_penetration = ARMOR_PEN_EXTREME
-	sharp = TRUE
-	edge = TRUE
-	show_in_message = TRUE
-
-/obj/item/natural_weapon/church/rook
-	name = "man hands"
-	attack_verb = list("slammed")
-	hitsound = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg')
-	force = 65
-	sharp = FALSE
 	edge = FALSE
 	show_in_message = FALSE
-
-/obj/item/natural_weapon/church/rook/apply_hit_effect(mob/living/target, mob/living/user, hit_zone, var/query = null, var/accelerant = 0)
-	. = ..()
-	//We don't trash the dead. First hit never crunches
-	if(!(query == target))
-		query = target
-		accelerant = 0
-	if(is_dead(target))
-		accelerant = 0
-	accelerant++
-	if(prob(accelerant*5))
-		if(accelerant >= 5)
-			for(var/atom/movable/AM in target.loc)
-				if(AM != src)
-					AM.ex_act(accelerant/2)
-			target.loc.ex_act(accelerant/5)
-		target.fall_impact(0, accelerant)
-		playsound(user, 'sound/xenomorph/alien_bite2.ogg',65,1)
-		accelerant = 0
-
-
 
 /obj/item/natural_weapon/mining_drill
 	name = "diamond-point mining drill"
 	attack_verb = list("hit", "pierced", "sliced", "attacked")
 	hitsound = 'sound/weapons/sharphit.ogg'
-	force = WEAPON_FORCE_DANGEROUS * 1.15
 	armor_penetration = ARMOR_PEN_EXTREME
 	sharp = TRUE
 	edge = FALSE
 
 /obj/item/natural_weapon/mining_drill/similacrum //mining drone's big brother
 	hitsound = 'sound/mecha/mechdrill.ogg'
-	force = 42.5
 
+// Let's... Not give a custodian sharp or edge.
 /obj/item/natural_weapon/similacrum/custodian
 	name = "bucket"
 	force = 9
 	show_in_message = FALSE
 
-/obj/item/natural_weapon/similacrum/allied
+/obj/item/natural_weapon/drone/allied
 	name = "Problem Be-Goner"
-	attack_verb = list("hit", "pierced", "sliced", "attacked")
 	hitsound = 'sound/weapons/sharphit.ogg'
-	force = 12.5
-	armor_penetration = ARMOR_PEN_SHALLOW
-	sharp = TRUE
+	edge = TRUE
 
 /obj/item/natural_weapon/similacrum/phazon
 	name = "power fist"
@@ -439,45 +289,128 @@ God help us.
 	hitsound = 'sound/effects/woodhit.ogg'
 	force = 9.5
 	structure_damage_factor = STRUCTURE_DAMAGE_BLUNT
+
+//spanish inquisition
+/obj/item/natural_weapon/church/bishop //Bonk them with the scorch
+	name = "staff"
+	gender = NEUTER
+	attack_verb = list("slapped")
+	hitsound = 'sound/effects/woodhit.ogg'
+	armor_penetration = ARMOR_PEN_EXTREME
+	damtype = BURN
+	show_in_message = TRUE
+
+/obj/item/natural_weapon/church/knight //uses the custodian shortsword. Inherits it's AP.
+	name = "ulfberht"
+	gender = NEUTER
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	armor_penetration = ARMOR_PEN_DEEP
+	sharp = TRUE
+	edge = TRUE
+	show_in_message = TRUE
+
+/obj/item/natural_weapon/church/pawn //knights have shortsword, so pawn has axe. Inherits it's AP.
+	name = "horseman axe"
+	gender = NEUTER
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	armor_penetration = ARMOR_PEN_EXTREME
+	sharp = TRUE
+	edge = TRUE
+	show_in_message = TRUE
+
+/obj/item/natural_weapon/church/rook
+	name = "man hands"
+	attack_verb = list("slammed")
+	hitsound = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg')
+	sharp = FALSE
+	edge = FALSE
+	show_in_message = FALSE
+
+/obj/item/natural_weapon/church/rook/apply_hit_effect(mob/living/target, mob/living/user, hit_zone, var/query = null, var/accelerant = 0)
+	. = ..()
+	//We don't trash the dead. First hit never crunches
+	if(!(query == target))
+		query = target
+		accelerant = 0
+	if(is_dead(target))
+		accelerant = 0
+	accelerant++
+	if(prob(accelerant*5))
+		if(accelerant >= 5)
+			for(var/atom/movable/AM in target.loc)
+				if(AM != src)
+					AM.ex_act(accelerant/2)
+			target.loc.ex_act(accelerant/5)
+		target.fall_impact(0, accelerant)
+		playsound(user, 'sound/xenomorph/alien_bite2.ogg',65,1)
+		accelerant = 0
 //*end ROBOTS
 
+//////////
+
 //ROACHEM
-/obj/item/natural_weapon/bite/weak //sharp teeth enjoy armor
+/obj/item/natural_weapon/bite //sharp teeth enjoy armor
 	name = "teeth"
 	attack_verb = list("bitten")
 	hitsound = 'sound/weapons/bite.ogg'
-	force = 7.5
-	armor_penetration = ARMOR_PEN_MODERATE
 	sharp = TRUE
+//*end roachem
 
-/obj/item/natural_weapon/bite/tazntz
-	force = 10
-	armor_penetration = 35
+//////////
 
-/obj/item/natural_weapon/bite/roachling
-	force = 2
-	armor_penetration = ARMOR_PEN_HALF
-	attack_verb = list("nibbled")
-	hitsound = null
+//Lodge a complaint
+/obj/item/natural_weapon/beak
+	name = "beak"
+	gender = NEUTER
+	attack_verb = list("pecked", "jabbed", "poked")
+	sharp = TRUE
+//*end lodge
 
-/obj/item/natural_weapon/bite/medium
-	force = 12.5
+//////////
 
-/obj/item/natural_weapon/bite/hunter
-	force = WEAPON_FORCE_PAINFUL
+//*HOOMINS
+/obj/item/natural_weapon/punch
+	name = "fists"
+	hitsound = list(
+	'sound/weapons/punch1.ogg','sound/weapons/punch2.ogg','sound/weapons/punch3.ogg','sound/weapons/punch4.ogg'
+	)
+	attack_verb = list("punched")
+
+/obj/item/natural_weapon/punch/mushroom
+	name = "big fists"
+	attack_verb = list("slammed")
+	hitsound = 'sound/weapons/bite.ogg'
 
 
-/obj/item/natural_weapon/bite/bluespace
-	force = 25
-	armor_penetration = 100
+/obj/item/natural_weapon/gunner
+	name = "GUN.tm"
+	hitsound = 'sound/weapons/blunthit.ogg'
+	attack_verb = list("bashes", "butts", "thwacks")
+	damtype = BRUTE
+	sharp = FALSE
+	edge = FALSE
 
-/obj/item/natural_weapon/bite/fuhrer
-	force = 27.5
+/obj/item/natural_weapon/knife
+	name = "KNIFE.tm"
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
 	armor_penetration = ARMOR_PEN_EXTREME
+	sharp = TRUE
+	edge = TRUE
 
-/obj/item/natural_weapon/bite/kaiser
-	force = 30
-	armor = 75
+/obj/item/natural_weapon/shielder
+	name = "SHIELD.tm"
+	hitsound = 'sound/weapons/blunthit.ogg'
+	attack_verb = list("destablizes", "ruins", "wrecks")
+
+/obj/item/natural_weapon/welder
+	name = "WELDER.tm"
+	hitsound = 'sound/items/Welder.ogg'
+	attack_verb = list("burnt", "scorched")
+	damtype = BURN
+
 
 ///////////////////////////////////////////////////////////////////
 
@@ -495,27 +428,4 @@ God help us.
 	force = 5
 	attack_verb = list("snipped", "pinched")
 
-/obj/item/natural_weapon/beak
-	name = "beak"
-	gender = NEUTER
-	attack_verb = list("pecked", "jabbed", "poked")
-	force = 5
-	sharp = TRUE
-
-/obj/item/natural_weapon/punch
-	name = "fists"
-	attack_verb = list("punched")
-	force = 10
-
-/obj/item/natural_weapon/punch/large
-	force = 15
-
-/obj/item/natural_weapon/punch/giant
-	force = 30
-
-/obj/item/natural_weapon/punch/mushroom
-	name = "big fists"
-	attack_verb = list("slammed")
-	hitsound = 'sound/weapons/bite.ogg'
-	force = 15
 

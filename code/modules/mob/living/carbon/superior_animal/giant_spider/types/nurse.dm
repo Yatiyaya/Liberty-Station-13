@@ -13,7 +13,7 @@
 	health = 30
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	natural_weapon = /obj/item/natural_weapon/fang/nurse
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 2
 	var/atom/cocoon_target
 	poison_type = "stoxin"
@@ -39,7 +39,7 @@
 	health = 50
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	natural_weapon = /obj/item/natural_weapon/fang/nurse/midwife
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	egg_inject_chance = 5 //Yes
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/midwife
@@ -53,7 +53,7 @@
 	health = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	natural_weapon = /obj/item/natural_weapon/fang/nurse/midwife
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	poison_type = "frostoil"
 	move_to_delay = 5 // Very slow
@@ -106,7 +106,7 @@
 	melee_damage_lower = 3
 	melee_damage_upper = 5
 	armor_penetration = 70
-	natural_weapon = /obj/item/natural_weapon/fang/nurse/recluse
+	natural_weapon = /obj/item/natural_weapon/fang
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/recluse
 	meat_amount = 2
 	egg_inject_chance = 15 //Defiently
@@ -126,7 +126,7 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 30
 	armor_penetration = 35
-	natural_weapon = /obj/item/natural_weapon/fang/nurse/queen
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	poison_type = "menace"
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/queen
