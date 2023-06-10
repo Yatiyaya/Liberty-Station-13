@@ -44,6 +44,29 @@
 		icon_state = "open"
 		layer = SIGN_LAYER
 
+/obj/structure/curtain/onsen/toggle()
+	var/iconstring = initial(icon_state)
+
+	opacity = !opacity
+
+	if(opacity)
+		iconstring += "_closed"
+		layer = WALL_OBJ_LAYER
+	else
+		iconstring += "_open"
+		layer = SIGN_LAYER
+
+	icon_state = iconstring
+/obj/structure/curtain/onsen/men
+	name = "Hot Springs (Men)"
+	desc = "A cloth curtain that works as an entryway for the men's bath."
+	icon_state = "onsen_men"
+
+/obj/structure/curtain/onsen/women
+	name = "Hot Springs (Women)"
+	desc = "A cloth curtain that works as an entryway for the women's bath."
+	icon_state = "onsen_women"
+
 /obj/structure/curtain/black
 	name = "black curtain"
 	color = "#222222"

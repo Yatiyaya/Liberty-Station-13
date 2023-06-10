@@ -42,7 +42,7 @@
 
 //Derelict tileset
 /obj/structure/low_wall/onestar
-	name = "Similacrum low wall"
+	name = "Simulacrum low wall"
 	wall_color = "#FFFFFF"
 	icon_state = "greyson"
 

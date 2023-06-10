@@ -236,6 +236,12 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 
 	var/allow_ic_printing = TRUE
 
+	// TGS Integration
+	var/tgs_discord_round_announce_tag // The DMAPI Tag to use to determine what channel to send general announcements to
+	var/tgs_discord_round_announce_round = 0 // If 1 TGS will announce when a round re/starts
+	var/tgs_discord_round_announce_round_role = 0 // If 1 TGS ping a role when announcing when a round re/starts
+	var/tgs_discord_round_announce_round_role_tag // The Role ID to mention when announcing round re/starts
+
 /datum/configuration/New()
 	fill_storyevents_list()
 
@@ -764,6 +770,20 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 
 				if("webhook_url")
 					config.webhook_url = value
+
+				// TGS Integration
+				if("tgs_discord_round_announce_tag")
+					config.tgs_discord_round_announce_tag = value
+
+				if("tgs_discord_round_announce_round")
+					config.tgs_discord_round_announce_round = 1
+
+				if("tgs_discord_round_announce_round_role")
+					config.tgs_discord_round_announce_round_role = 1
+
+				if("tgs_discord_round_announce_round_role_tag")
+					config.tgs_discord_round_announce_round_role_tag = value
+
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
 

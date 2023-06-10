@@ -104,6 +104,7 @@
 #define GUN_UPGRADE_RIGGED "rigged"
 #define GUN_UPGRADE_AUTOEJECT "autoeject"
 #define GUN_UPGRADE_CELLMINUS "small cell adapter"
+#define GUN_UPGRADE_NVISION "nightvision scope"
 #define GUN_UPGRADE_THERMAL "thermal scope"
 #define GUN_UPGRADE_DNALOCK "biocoded"
 #define GUN_UPGRADE_FOREGRIP "foregrip" // Makes a gun unable to be braced

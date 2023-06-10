@@ -3,7 +3,7 @@
 /obj/machinery/bulletfabricator
 	name = "Bullet Fabricator"
 	desc = "A machine for producing ammo magazines, speed loaders, ammo boxes, and exotic munitions using any type of materials converted into an unknown state, \
-	with rare or valuable materials having greater point values. Originally a scavenged design from the Similacrum Robotics repurposed by the Terra-Therma Union. \
+	with rare or valuable materials having greater point values. Originally a scavenged design from the Simulacrum Robotics repurposed by the Terra-Therma Union. \
 	How it works? Nobody is quite sure. The time it takes to fabricate munitions varies by cost and the machine parts used."
 	icon = 'icons/obj/machines/autolathe.dmi'
 	icon_state = "ammolathe"

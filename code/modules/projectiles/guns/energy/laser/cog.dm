@@ -4,7 +4,7 @@
 	icon_state = "cog"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "A Similacrum Robotics design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made. They are ubiquitous."
+	desc = "A Simulacrum Robotics design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made. They are ubiquitous."
 	fire_sound = 'sound/weapons/energy/Laser.ogg' // Leaving the OG sound as it's not only iconic but also fitting for an old gun
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
@@ -23,7 +23,7 @@
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.2 // 20 vig
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 	saw_off = TRUE
 	sawn = /obj/item/gun/energy/cog/sawn
@@ -31,7 +31,7 @@
 /obj/item/gun/energy/cog/sawn
 	name = "sawn \"Cog\" laser carbine"
 	icon = 'icons/obj/guns/energy/obrez_retro.dmi'
-	desc = "A Similacrum Robotics design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made. They are ubiquitous.\
+	desc = "A Simulacrum Robotics design, cheap and widely produced. In the distant past - this was the main weapon of low-rank police forces, billions of copies of this gun were made. They are ubiquitous.\
 			This model appears to have been sawn down. While it appears to have lost one of its focusing lens, it at least fits in a holster now."
 	icon_state = "shorty"
 	item_state = "shorty"
@@ -46,5 +46,5 @@
 	twohanded = FALSE
 	init_recoil = HANDGUN_RECOIL(0.2)
 	serial_type = "SR"
-	allow_similacrum_mods = FALSE
+	allow_simulacrum_mods = FALSE
 

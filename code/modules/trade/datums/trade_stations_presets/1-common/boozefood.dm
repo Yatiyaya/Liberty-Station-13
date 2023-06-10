@@ -85,6 +85,7 @@
 			/obj/item/reagent_containers/food/drinks/bottle/neulandschnapps,
 			/obj/item/reagent_containers/food/drinks/bottle/fernet,
 			/obj/item/reagent_containers/food/drinks/bottle/nanatsunoumi,
+			/obj/item/reagent_containers/food/drinks/bottle/kitsunesake,
 			/obj/item/reagent_containers/food/drinks/bottle/redcandywine,
 			/obj/item/reagent_containers/food/drinks/bottle/small/kvass
 		),

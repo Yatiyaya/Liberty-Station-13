@@ -281,18 +281,18 @@
 
 /obj/item/clothing/under/iron_lock_security
 	name = "Iron Lock Security Uniform"
-	desc = "An outdated uniform of a now extinct corporation \"Iron Lock Security\". A private security firm that got its start centuries ago subcontracted by Similacrum Robotics before being phased out."
+	desc = "An outdated uniform of a now extinct corporation \"Iron Lock Security\". A private security firm that got its start centuries ago subcontracted by Simulacrum Robotics before being phased out."
 	icon_state = "northtech"
 	has_sensor = 0
 
 /obj/item/clothing/under/os_jumpsuit
-	name = "Similacrum Robotics jumpsuit"
-	desc = "An uniform that was produced by Similacrum Robotics, cleaning to enginering this over engineered suit was used. Surprisingly the suit senors still work."
+	name = "Simulacrum Robotics jumpsuit"
+	desc = "An uniform that was produced by Simulacrum Robotics, cleaning to enginering this over engineered suit was used. Surprisingly the suit senors still work."
 	icon_state = "os_jumpsuit"
 
 /obj/item/clothing/under/os_jumpsuit/bdu
-	name = "Similacrum Robotics jumpsuit"
-	desc = "A Battle Dress Uniform produced by Similacrum Robotics for their more style oriented personnel"
+	name = "Simulacrum Robotics jumpsuit"
+	desc = "A Battle Dress Uniform produced by Simulacrum Robotics for their more style oriented personnel"
 	icon_state = "bdusimilacrum"
 
 /obj/item/clothing/under/os_jumpsuit/bdu/verb/toggle_style()

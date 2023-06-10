@@ -4,7 +4,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 
 //Non-hostile to regular colonists.
 //Roomba
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/allied
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/allied
 	name = "PI Combat Roomba"
 	desc = "A small round Phokorus Institute branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat."
 	faction = "neutral"
@@ -22,7 +22,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	get_stat_modifier = FALSE
 
 // For repairing damage to the synths.
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/allied/attackby(obj/item/W as obj, mob/user as mob)
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/allied/attackby(obj/item/W as obj, mob/user as mob)
 	var/obj/item/T // Define the tool variable early on to avoid compilation problem and to allow us to use tool-unique variables
 	if(user.a_intent == I_HELP) // Are we helping ?
 
@@ -48,7 +48,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	// If nothing was ever triggered, continue as normal
 	..()
 
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/armored/allied
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/armored/allied
 	name = "PI Armored Roomba"
 	desc = "A small round Phokorus Institute branded research drone, usually tasked with menial work. For whatever reason, this one has been tasked for combat and given additional armor."
 	faction = "neutral"
@@ -63,7 +63,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	cant_be_pulled = FALSE
 
 // For repairing damage to the synths.
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip/armored/allied/attackby(obj/item/W as obj, mob/user as mob)
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/armored/allied/attackby(obj/item/W as obj, mob/user as mob)
 	var/obj/item/T // Define the tool variable early on to avoid compilation problem and to allow us to use tool-unique variables
 	if(user.a_intent == I_HELP) // Are we helping ?
 
@@ -90,7 +90,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	..()
 
 //Robots
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied
 	name = "PI Sword Drone"
 	desc = "A Phokorus Institute branded sword drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
 	faction = "neutral"
@@ -112,7 +112,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	get_stat_modifier = FALSE
 
 // For repairing damage to the synths.
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/attackby(obj/item/W as obj, mob/user as mob)
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/attackby(obj/item/W as obj, mob/user as mob)
 	var/obj/item/T // Define the tool variable early on to avoid compilation problem and to allow us to use tool-unique variables
 	if(user.a_intent == I_HELP) // Are we helping ?
 
@@ -139,13 +139,13 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	// If nothing was ever triggered, continue as normal
 	..()
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/doTargetMessage()
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/doTargetMessage()
 	. = ..()
 
 	visible_emote("lets out a buzz as it detects a target!")
 	playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 1, -3)
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/advanced
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/advanced
 	name = "PI Mantis Drone"
 	desc = "A Phokorus Institute branded heavily armored mantis drone, fully robotic and carrying out its combat duty by slaying animals and non-colony humanoids on sight."
 	icon_state = "pi_mantis"
@@ -156,7 +156,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	colony_friend = TRUE
 	friendly_to_colony = TRUE
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/allied/junkbot
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/junkbot
 	name = "Fontaine Junkbot"
 	desc = "A Fontaine forged robot, its made from spare parts, love, and duct tape. Using designs 'borrowed' from the Phokorus Institute the Fontaine shipbreakers made these bots to function as disposable shields or \
 	to guard specific locations since they do not wander. While lightweight, fast, and capable of a wickedly damaging slash with its armblade, they are not that durable."

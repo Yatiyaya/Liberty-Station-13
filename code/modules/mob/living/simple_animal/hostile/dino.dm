@@ -43,12 +43,13 @@
 	a trait that often gets it hunted by older renders to kill potential developing rivals. His older brother, Killa, is said to be a legendary render. \
 	Something tells you he absolutely hates Blackshield."
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	speed = 1
 	health = 1200
 	maxHealth = 1200
 	melee_damage_lower = 40
 	melee_damage_upper = 45
-	friendly_to_colony = TRUE
+
 	sanity_damage = -1
 
 /mob/living/simple_animal/hostile/dino/tagilla/FindTarget()

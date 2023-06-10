@@ -21,6 +21,7 @@
 	mob_size = MOB_SMALL
 	possession_candidate = 1
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	inherent_mutations = list(MUTATION_CAT_EYES, MUTATION_RAND_UNSTABLE, MUTATION_NERVOUSNESS)
 
 	scan_range = 3//less aggressive about stealing food

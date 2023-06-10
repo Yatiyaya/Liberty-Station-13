@@ -55,8 +55,8 @@
 	workspeed = 1.1
 
 /obj/item/tool/pickaxe/onestar
-	name = "Similacrum Robotics Pickaxe"
-	desc = "A standard Similacrum Robotics digging tool. Whatever secrets they used to make this so powerful and cheap is a mystery."
+	name = "Simulacrum Robotics Pickaxe"
+	desc = "A standard Simulacrum Robotics digging tool. Whatever secrets they used to make this so powerful and cheap is a mystery."
 	icon_state = "one_star_pickaxe"
 	item_state = "pickaxe"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 2, MATERIAL_DIAMOND = 2)
@@ -70,7 +70,7 @@
 	degradation = 2
 	workspeed = 1.2
 	use_power_cost = 0
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/tool/pickaxe/onestar/turn_on(mob/user)
 	..(null, TRUE)
@@ -104,8 +104,8 @@
 	price_tag = 60
 
 /obj/item/tool/pickaxe/jackhammer/onestar
-	name = "Similacrum Robotics Jackhammer"
-	desc = "A heavy Similacrum Robotics tool that cracks rocks with blasts, perfect for killing capitalist pigs."
+	name = "Simulacrum Robotics Jackhammer"
+	desc = "A heavy Simulacrum Robotics tool that cracks rocks with blasts, perfect for killing capitalist pigs."
 	icon_state = "one_star_jackhammer"
 	item_state = "jackhammer"
 	matter = list(MATERIAL_STEEL = 7, MATERIAL_PLATINUM = 2)
@@ -135,7 +135,7 @@
 	price_tag = 90
 
 /obj/item/tool/pickaxe/drill/onestar
-	name = "Similacrum Robotics mining drill"
+	name = "Simulacrum Robotics mining drill"
 	desc = "Yours is the drill that will pierce through the worker, metaphorically."
 	icon_state = "one_star_drill"
 	tool_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_DRILLING = 20)

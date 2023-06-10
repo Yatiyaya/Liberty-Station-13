@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/handmade/roomba
 	name = "Custom-Made Roomba Drone"
-	desc = "Built from the Phokorus Institute robotics division's craftsmanship, and gathered designs of Similacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the Phokorus Institute robotics division's craftsmanship, and gathered designs of Simulacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	faction = "neutral"
 	icon_state = "roomba"
 	melee_damage_lower = 10

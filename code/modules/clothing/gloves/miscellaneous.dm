@@ -124,7 +124,7 @@
 
 /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 	name = "outdated gloves"
-	desc = "A pair of \"Iron Lock Security\" ablative gloves with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Similacrum Robotics."
+	desc = "A pair of \"Iron Lock Security\" ablative gloves with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Simulacrum Robotics."
 
 /obj/item/clothing/gloves/thick/swat/militia
 	name = "militia bulletproof gloves"

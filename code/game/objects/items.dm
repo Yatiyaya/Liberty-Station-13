@@ -91,7 +91,7 @@
 	var/list/initialized_upgrades = list()
 
 	var/max_upgrades = 3
-	var/allow_similacrum_mods = FALSE
+	var/allow_simulacrum_mods = FALSE
 	prefixes = list()
 	var/list/blacklist_upgrades = list() //Zebra list. /item/upgrade/thing = TRUE means it IS  blacklisted, /item/upgrade/thing/subtype = FALSE means it won't b blacklisted. subtypes go first.
 	var/my_fuel = "fuel" //If we use fuel, what do we use?
@@ -225,8 +225,8 @@
 	for(var/Q in tool_qualities)
 		message += "\n<blue>It possesses [tool_qualities[Q]] tier of [Q] quality.<blue>"
 
-	if(allow_similacrum_mods)
-		message += "\n<blue>This allows for Similacrum Robotics based mods to be integrated without normal constraints.<blue>"
+	if(allow_simulacrum_mods)
+		message += "\n<blue>This allows for Simulacrum Robotics based mods to be integrated without normal constraints.<blue>"
 
 
 	if(ishuman(user))
@@ -625,7 +625,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	item_flags = initial(item_flags)
 	name = initial(name)
 	max_upgrades = initial(max_upgrades)
-	allow_similacrum_mods = initial(allow_similacrum_mods)
+	allow_simulacrum_mods = initial(allow_simulacrum_mods)
 	color = initial(color)
 	sharp = initial(sharp)
 	prefixes = list()
@@ -648,6 +648,18 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/device
 	icon = 'icons/obj/device.dmi'
+
+
+// This is cringe, but the only way to make this work as an overlay that isn't an effect that dissipates.
+// This is meant to be used on top of water tiles to signify hotness of said water
+
+/obj/item/watervapor
+	name = "hot water steam"
+	desc = "If you can examine this, something went horribly wrong!" // Debug purposes
+	icon = 'icons/turf/flooring/decals.dmi'
+	icon_state = "steamy" // Very serviceable placeholder, if someone can make a better sprite to go along, I'd appreciate it.
+	mouse_opacity = 0 // Can see me but can't click me, we don't want targetting issues over water tiles
+	layer = FLY_LAYER // Convenient anime censoring (goes overlaid over mob)
 
 //Soj cringe
 

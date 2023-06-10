@@ -3597,6 +3597,7 @@
 "jT" = (
 /obj/structure/table/reinforced,
 /obj/item/modular_computer/tablet/lease/preset/medical,
+/obj/item/reagent_containers/dropper,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/rnd/outpostbotany)
 "jU" = (
@@ -3648,13 +3649,16 @@
 /area/liberty/rnd/mixing)
 "jZ" = (
 /obj/machinery/portable_atmospherics/powered/scrubber/huge,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/mixing)
 "ka" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/lattice,
 /turf/simulated/mineral/random,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "kb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -3749,13 +3753,10 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/rnd/outpostbotany)
 "kl" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
-/obj/structure/disposaloutlet,
-/obj/structure/lattice,
-/turf/simulated/floor/asteroid,
-/area/liberty/rnd/outpostgeneral)
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/mineral/random,
+/area/liberty/rnd/outpoststorage)
 "km" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3801,7 +3802,7 @@
 /area/liberty/rnd/outpostbotany)
 "ks" = (
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "kt" = (
 /obj/machinery/atmospherics/unary/freezer{
 	cooling = 5;
@@ -4076,6 +4077,7 @@
 /area/liberty/rnd/outpostbotany)
 "li" = (
 /obj/machinery/chem_heater,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/rnd/outpostbotany)
 "lj" = (
@@ -4100,6 +4102,7 @@
 /area/liberty/rnd/outpostbotany)
 "lm" = (
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/outpostbotany)
 "ln" = (
@@ -4448,7 +4451,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "mg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -4532,6 +4535,7 @@
 /area/liberty/rnd/outpostbotany)
 "mt" = (
 /obj/machinery/door/airlock/glass,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/rnd/outpostbotany)
 "mu" = (
@@ -5064,7 +5068,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/outpostbreakroom)
 "nw" = (
 /obj/machinery/disposal,
@@ -5171,7 +5177,6 @@
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "nH" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
 	req_access = list(5)
@@ -5545,10 +5550,12 @@
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "oi" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
 	req_access = list(5)
+	},
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/mixing)
@@ -5679,6 +5686,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "oy" = (
@@ -5690,6 +5698,7 @@
 /area/liberty/rnd/outpostbreakroom)
 "oA" = (
 /obj/structure/table/woodentable,
+/obj/item/storage/box/donkpockets,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/rnd/outpostbreakroom)
 "oB" = (
@@ -5765,6 +5774,7 @@
 	name = "Artifact Harvester";
 	req_access = list(65)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/outpostgeneral)
 "oN" = (
@@ -5780,6 +5790,7 @@
 	name = "Isolation Two";
 	req_access = list(65)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/rnd/anomalisoltwo)
 "oP" = (
@@ -5795,15 +5806,16 @@
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "oR" = (
-/obj/machinery/vending/snack,
-/turf/simulated/floor/wood,
+/obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/outpostbreakroom)
 "oS" = (
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -28
 	},
-/obj/machinery/vending/fitness,
+/obj/machinery/vending/snack,
 /turf/simulated/floor/wood,
 /area/liberty/rnd/outpostbreakroom)
 "oT" = (
@@ -5811,8 +5823,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/table/woodentable,
-/obj/item/storage/box/donkpockets,
+/obj/machinery/vending/fitness,
 /turf/simulated/floor/wood,
 /area/liberty/rnd/outpostbreakroom)
 "oU" = (
@@ -5863,16 +5874,17 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/mixing)
 "pb" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_x = -32
+	},
+/obj/effect/floor_decal/industrial/box/red/corners,
+/obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
@@ -5943,7 +5955,6 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/anomalisoltwo)
 "pj" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
 	},
@@ -5953,6 +5964,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/anomalisoltwo)
 "pk" = (
@@ -6001,6 +6013,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/outpostgeneral)
 "pp" = (
@@ -6009,6 +6022,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
 	},
+/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/mixing)
 "pq" = (
@@ -6036,6 +6050,9 @@
 "pt" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
+/obj/machinery/light{
+	light_color = "#b9e8ea"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/mixing)
 "pu" = (
@@ -6112,8 +6129,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/anomalisoltwo)
 "pD" = (
-/obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/anomalisoltwo)
 "pE" = (
@@ -6334,6 +6351,7 @@
 	name = "Anomaly Research";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/rnd/outpostgeneral)
 "qj" = (
@@ -6477,6 +6495,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/anomalisolone)
 "qz" = (
@@ -6534,6 +6553,7 @@
 	name = "Isolation One";
 	req_access = list(65)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/rnd/anomalisolone)
 "qF" = (
@@ -6542,6 +6562,7 @@
 	name = "Rest Pod 1";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/liberty/rnd/outpostgeneral)
 "qG" = (
@@ -6550,6 +6571,7 @@
 	name = "Rest Pod 2";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/liberty/rnd/outpostgeneral)
 "qH" = (
@@ -6578,6 +6600,7 @@
 "qK" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/anomalisolone)
 "qL" = (
@@ -6593,6 +6616,7 @@
 /area/liberty/rnd/outpostgeneral)
 "qN" = (
 /obj/effect/window_lwall_spawn/smartspawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/outpostgeneral)
 "qO" = (
@@ -6614,6 +6638,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/box/white,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "qS" = (
@@ -6669,6 +6694,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/outpostgeneral)
 "ra" = (
@@ -6712,6 +6738,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "re" = (
@@ -6751,11 +6778,12 @@
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "rj" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
+/obj/machinery/recycler,
+/obj/machinery/conveyor/east{
+	id = "rndoutpost"
 	},
-/turf/simulated/floor/tiled/white/violetcorener,
-/area/liberty/rnd/outpostgeneral)
+/turf/simulated/floor/asteroid,
+/area/liberty/rnd/outpoststorage)
 "rk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
@@ -6795,6 +6823,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/box/white,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rr" = (
@@ -6805,11 +6834,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "rs" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/white/violetcorener,
-/area/liberty/rnd/outpostgeneral)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "rt" = (
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/outpostgeneral)
@@ -6835,12 +6864,14 @@
 /obj/effect/window_lwall_spawn/smartspawn,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/outpostgeneral)
 "ry" = (
 /obj/machinery/door/airlock/glass_research{
 	name = "Medical Outpost"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "rz" = (
@@ -6850,6 +6881,7 @@
 	},
 /obj/item/device/defib_kit/loaded,
 /obj/structure/table/rack,
+/obj/item/cell/large/hyper,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rA" = (
@@ -6860,10 +6892,16 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rC" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 24
-	},
 /obj/effect/floor_decal/industrial/warningred{
+	dir = 4
+	},
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_x = 32
+	},
+/obj/effect/floor_decal/industrial/box/red/corners{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
@@ -6878,9 +6916,9 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rE" = (
-/obj/structure/closet/secure_closet/anesthetics{
-	locked = 0
-	},
+/obj/structure/closet/secure_closet/freezer/blood,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rF" = (
@@ -6983,14 +7021,6 @@
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/o2,
-/obj/item/reagent_containers/blood/OMinus{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/obj/item/reagent_containers/blood/OMinus{
-	pixel_x = -5;
-	pixel_y = -1
-	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rS" = (
@@ -7007,6 +7037,7 @@
 	name = "Emergency NanoMed";
 	pixel_y = -32
 	},
+/obj/effect/floor_decal/industrial/arrows/white,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rU" = (
@@ -7442,6 +7473,7 @@
 	name = "Rest Pod 3";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/liberty/rnd/outpostgeneral)
 "sX" = (
@@ -7574,19 +7606,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/anomalisolone)
 "tt" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/camera/network/research{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white/violetcorener,
-/area/liberty/rnd/outpostgeneral)
+/turf/unsimulated/mask,
+/area/liberty/rnd/outpoststorage)
 "tu" = (
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
-/obj/machinery/space_heater,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
 "tv" = (
@@ -7683,6 +7711,7 @@
 	name = "Research Outpost";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor/multi_tile,
 /turf/simulated/floor/tiled/white/danger,
 /area/liberty/rnd/outpostgeneral)
 "tN" = (
@@ -7690,8 +7719,16 @@
 	name = "Deep Tunnel Entrance";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor/multi_tile,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/liberty/rnd/outpostgeneral)
+"tO" = (
+/obj/machinery/suit_storage_unit/engineering/atmos,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/liberty/rnd/mixing)
 "tP" = (
 /obj/machinery/light{
 	dir = 8
@@ -7879,6 +7916,7 @@
 /area/liberty/rnd/mixing)
 "uy" = (
 /obj/structure/table/reinforced,
+/obj/item/device/science_tool,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/rnd/mixing)
 "uz" = (
@@ -7915,7 +7953,6 @@
 	name = "Gas Storage";
 	req_access = list(5)
 	},
-/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/outpostgeneral)
 "uE" = (
@@ -8148,7 +8185,9 @@
 	name = "Gas Storage";
 	req_access = list(5)
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/outpostgeneral)
 "vi" = (
@@ -8267,12 +8306,21 @@
 	name = "Anomaly Research";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/violetcorener,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "yi" = (
 /obj/machinery/artifact_scanpad,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfive)
+"yn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "ys" = (
 /obj/machinery/suit_storage_unit/engineering/atmos,
 /turf/simulated/floor/reinforced,
@@ -8316,6 +8364,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/mixing)
+"AB" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
 "AD" = (
 /obj/structure/lattice,
 /obj/structure/flora/ausbushes/stalkybush,
@@ -8329,7 +8381,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "BG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/mining,
@@ -8359,6 +8411,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfour)
+"BZ" = (
+/obj/structure/catwalk,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "Cb" = (
 /obj/machinery/door/airlock/external{
 	req_access = list(48)
@@ -8529,6 +8588,10 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
+"Fx" = (
+/obj/machinery/floodlight,
+/turf/simulated/floor/tiled/white/gray_perforated,
+/area/liberty/rnd/outpostgeneral)
 "FA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 10
@@ -8565,8 +8628,9 @@
 	name = "Anomaly Research";
 	req_access = list(5)
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "Gz" = (
 /turf/simulated/mineral,
 /area/liberty/rnd/mixing)
@@ -8575,7 +8639,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "GW" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
@@ -8629,7 +8693,7 @@
 "HY" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "Iz" = (
 /obj/structure/lattice,
 /obj/structure/flora/ausbushes/pointybush,
@@ -8643,6 +8707,12 @@
 /obj/item/device/lighting/toggleable/lamp,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfive)
+"Jy" = (
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
+/turf/simulated/floor/wood,
+/area/liberty/rnd/outpostbreakroom)
 "JH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8672,6 +8742,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/anomalisolfour)
+"JY" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/obj/structure/catwalk,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "Kn" = (
 /obj/structure/catwalk,
 /obj/structure/window/reinforced/plasma{
@@ -8770,6 +8849,7 @@
 	id = "Toxins_Pad";
 	name = "Toxins launch-pad"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/mixing)
 "LS" = (
@@ -8808,6 +8888,18 @@
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
+"Nw" = (
+/obj/machinery/camera/network/research{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
+"Nz" = (
+/obj/machinery/conveyor/east{
+	id = "rndoutpost"
+	},
+/turf/simulated/floor/asteroid,
+/area/liberty/rnd/outpoststorage)
 "Ol" = (
 /obj/structure/catwalk,
 /obj/structure/window/reinforced/plasma{
@@ -8858,7 +8950,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "OY" = (
 /obj/structure/catwalk,
 /obj/structure/window/reinforced/plasma{
@@ -8875,6 +8967,12 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/mixing)
+"Pb" = (
+/obj/machinery/alarm{
+	pixel_y = 26
+	},
+/turf/simulated/floor/tiled/white,
+/area/liberty/rnd/outpoststorage)
 "Pj" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 8
@@ -8888,8 +8986,15 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/rnd/outpostgeneral)
+"Px" = (
+/obj/structure/catwalk,
+/obj/structure/closet/crate/bin,
+/obj/item/storage/bag/trash,
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "PS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -8902,11 +9007,21 @@
 	},
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/rnd/mixing)
+"QD" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
 "QF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel/danger,
 /area/mine/hallway)
+"QM" = (
+/obj/structure/invislightsmall,
+/turf/simulated/floor/asteroid,
+/area/mine/unexplored)
 "QN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -8999,7 +9114,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "SE" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9037,6 +9152,21 @@
 /obj/effect/floor_decal/industrial/hatch/red,
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/mixing)
+"TB" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/conveyor/east{
+	id = "rndoutpost"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "TS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/structure/lattice,
@@ -9062,7 +9192,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "Um" = (
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
@@ -9077,6 +9207,30 @@
 	},
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/rnd/mixing)
+"Uo" = (
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_y = -32
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/effect/floor_decal/industrial/box/red/corners{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/box/red/corners{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
+"Uy" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/conveyor_switch{
+	id = "rndoutpost"
+	},
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/liberty/rnd/outpoststorage)
 "UL" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9124,6 +9278,10 @@
 	},
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/rnd/mixing)
+"Wg" = (
+/obj/machinery/space_heater,
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/liberty/rnd/outpostgeneral)
 "Wh" = (
 /obj/machinery/atmospherics/binary/pump/high_power,
 /turf/simulated/floor/tiled/white/techfloor_grid,
@@ -9131,9 +9289,6 @@
 "Wk" = (
 /obj/machinery/light{
 	dir = 8
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -9156,8 +9311,8 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/asteroid,
-/area/liberty/rnd/outpostgeneral)
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "Xq" = (
 /obj/machinery/light{
 	dir = 1
@@ -9169,7 +9324,7 @@
 /area/liberty/rnd/outpostgeneral)
 "XA" = (
 /turf/simulated/floor/tiled/dark,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "XH" = (
 /turf/simulated/floor/fixed/hydrotile/shallowcoolant,
 /area/liberty/rnd/mixing)
@@ -9216,7 +9371,7 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/outpostgeneral)
+/area/liberty/rnd/outpoststorage)
 "Yp" = (
 /obj/machinery/light{
 	dir = 4
@@ -9266,6 +9421,7 @@
 /area/liberty/rnd/mixing)
 "Za" = (
 /obj/effect/window_lwall_spawn/smartspawnplasma,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/mixing)
 "Zb" = (
@@ -9286,6 +9442,14 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/anomalisolfive)
+"Zv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/rnd/outpoststorage)
 "Zz" = (
 /turf/simulated/floor/beach/water/swamp,
 /area/liberty/rnd/mixing)
@@ -9696,12 +9860,12 @@ pS
 pS
 lz
 ih
-ih
-ih
-ih
-ih
-ih
-ih
+ig
+ig
+ig
+ig
+ig
+ig
 aa
 "}
 (3,1,1) = {"
@@ -9903,7 +10067,7 @@ HY
 Uf
 BD
 OR
-ih
+ig
 aa
 "}
 (4,1,1) = {"
@@ -10105,7 +10269,7 @@ XA
 XA
 XA
 rr
-ih
+ig
 aa
 "}
 (5,1,1) = {"
@@ -10307,7 +10471,7 @@ XA
 XA
 XA
 Ym
-ih
+ig
 aa
 "}
 (6,1,1) = {"
@@ -10509,7 +10673,7 @@ XA
 XA
 XA
 rr
-ih
+ig
 aa
 "}
 (7,1,1) = {"
@@ -10711,7 +10875,7 @@ XA
 XA
 XA
 OR
-ih
+ig
 aa
 "}
 (8,1,1) = {"
@@ -10908,12 +11072,12 @@ mb
 qU
 ri
 ih
-ih
-ih
+ig
+ig
 Gv
-ih
-ih
-ih
+ig
+ig
+ig
 aa
 "}
 (9,1,1) = {"
@@ -11107,15 +11271,15 @@ pV
 pV
 pV
 lX
-qj
+jH
 jH
 jH
 yd
 GQ
 XA
 ks
-lz
-lz
+tt
+tt
 aa
 "}
 (10,1,1) = {"
@@ -11309,15 +11473,15 @@ pW
 ql
 qk
 pU
-qV
-rj
-rs
-ih
+jH
+qj
+jH
+ig
 ks
 ks
 ks
-lz
-lz
+tt
+tt
 aa
 "}
 (11,1,1) = {"
@@ -11511,15 +11675,15 @@ pX
 qm
 qB
 qB
-qW
 jH
+qV
 tu
-ih
-lz
+ig
+tt
 ks
 ks
 ks
-lz
+tt
 aa
 "}
 (12,1,1) = {"
@@ -11714,14 +11878,14 @@ qn
 qC
 qL
 qX
-jH
+qW
 tY
-ih
-lz
+ig
+tt
 ks
 ks
-lz
-lz
+tt
+tt
 aa
 "}
 (13,1,1) = {"
@@ -11905,7 +12069,7 @@ lu
 jH
 mD
 mX
-jH
+Wg
 nY
 ox
 oN
@@ -11918,12 +12082,12 @@ qM
 qY
 rk
 ru
-ih
-lz
+ig
+tt
 ks
-ks
-lz
-lz
+rs
+rs
+rs
 aa
 "}
 (14,1,1) = {"
@@ -12120,12 +12284,12 @@ qN
 qZ
 ih
 ih
-ih
-lz
+ig
+tt
 ks
-ks
-lz
-lz
+Zv
+Uy
+rs
 aa
 "}
 (15,1,1) = {"
@@ -12322,12 +12486,12 @@ jH
 ra
 jH
 ih
-ih
-lz
+ig
+tt
 ks
-ks
-ks
-lz
+yn
+TB
+BZ
 aa
 "}
 (16,1,1) = {"
@@ -12524,12 +12688,12 @@ xX
 ra
 jH
 ih
-lz
-lz
-lz
-ks
-ks
-ks
+tt
+tt
+tt
+yn
+Nz
+BZ
 aa
 "}
 (17,1,1) = {"
@@ -12721,7 +12885,7 @@ Lw
 SE
 qa
 Lw
-tt
+rm
 Hq
 rb
 rl
@@ -12729,9 +12893,9 @@ rv
 ka
 ka
 kl
-ks
-ks
-ks
+JY
+rj
+BZ
 aa
 "}
 (18,1,1) = {"
@@ -12917,7 +13081,7 @@ ih
 mY
 nv
 oa
-oy
+Jy
 oR
 mY
 ih
@@ -12928,12 +13092,12 @@ tW
 jH
 jH
 ih
-lz
-lz
-lz
-ks
+tt
+tt
+tt
+rs
 Xo
-ks
+Px
 aa
 "}
 (19,1,1) = {"
@@ -13128,7 +13292,7 @@ ih
 ih
 jN
 jH
-jH
+Nw
 ih
 ih
 ih
@@ -13331,11 +13495,11 @@ ih
 tX
 jH
 jH
+AB
+jH
+QD
 tm
-jH
-jH
-rw
-jH
+QD
 jH
 ih
 aa
@@ -13533,12 +13697,12 @@ qF
 jH
 jH
 jH
+AB
 jH
 jH
 jH
 jH
-jH
-jH
+Uo
 ih
 aa
 "}
@@ -13735,7 +13899,7 @@ ih
 jH
 jH
 jH
-jH
+AB
 jH
 jH
 jH
@@ -13920,7 +14084,7 @@ jH
 MY
 Co
 ih
-iu
+Pb
 pR
 sG
 GW
@@ -14946,7 +15110,7 @@ qs
 ih
 jH
 jH
-jH
+Nw
 ih
 dL
 em
@@ -15348,7 +15512,7 @@ sb
 qc
 qq
 ih
-tk
+jH
 jH
 jH
 ih
@@ -17141,7 +17305,7 @@ tK
 tK
 tK
 tK
-tK
+QM
 tM
 iD
 SZ
@@ -17343,7 +17507,7 @@ tK
 tK
 tK
 tK
-tK
+QM
 ij
 rH
 iT
@@ -17755,7 +17919,7 @@ ih
 kd
 rt
 rt
-rt
+Fx
 jA
 jA
 jA
@@ -20382,7 +20546,7 @@ ti
 ti
 ti
 jA
-pf
+tO
 oD
 oD
 qu

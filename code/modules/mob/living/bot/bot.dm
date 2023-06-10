@@ -19,6 +19,7 @@
 	var/list/req_one_access = list()
 	mob_classification = CLASSIFICATION_SYNTHETIC
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 /mob/living/bot/New()
 	..()

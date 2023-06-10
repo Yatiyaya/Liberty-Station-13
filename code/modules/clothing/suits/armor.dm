@@ -469,7 +469,7 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Similacrum Robotics."
+	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Simulacrum Robotics."
 	icon_state = "northtech"
 	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
@@ -742,7 +742,7 @@
 	name = "armored rig"
 	desc = "A simple plate carrier modified for personal use, additional pouches have been attached to its front, \
 	with matching knee and arm pads to protect limbs without hindering movement. \
-	Opening the plate pouch would reveal a sheet of some Similacrum alloy, welded and forced into shape for the vest, \
+	Opening the plate pouch would reveal a sheet of some Simulacrum alloy, welded and forced into shape for the vest, \
 	far lighter and offering more protection than it's more common ceramic counterparts. \
 	Due to its jury-rigged yet robust design, it's able to take more armor plates than a standard heavy vest."
 	icon_state = "forehead_armor"

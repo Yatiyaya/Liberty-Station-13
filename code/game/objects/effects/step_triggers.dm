@@ -295,7 +295,7 @@ var/list/obj/effect/step_trigger/STEP_TELEPORTERS = list()
 	id = "monster_to_beast_2_B"
 	id_target = "monster_to_beast_1_B"
 
-//Similacrum base to field offices
+//Simulacrum base to field offices
 /obj/effect/step_trigger/gbase_to_gfoffices_1_A
 	id = "gbase_to_gfoffices_1_A"
 	id_target = "gbase_to_gfoffices_2_A"

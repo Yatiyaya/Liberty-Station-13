@@ -8,7 +8,7 @@
 #define MENU_ANALYZE_RESULT 8
 /*
 =========================================================================================================================================
-CAPSA Genetic Analyzer
+PIRS Genetic Analyzer
 
 This is the workhorse of the department. Every other machine in the department is built to eventually allow genetic sample plates to be
 loaded into this device for analysis. Without this machine, players are left in the dark about which mutations are being produced, and
@@ -17,7 +17,7 @@ cannot isolate or combine desired genes.
 
 */
 /obj/machinery/genetics/gene_analyzer
-	name = "CAPSA Genetic Analyzer"
+	name = "PIRS Genetic Analyzer"
 	desc = "An extremely complex device made to analyze the patterns in DNA and apply them to other creatures."
 	density = TRUE
 	anchored = TRUE
@@ -83,7 +83,7 @@ cannot isolate or combine desired genes.
 	max_plates = (bin_rating+1)
 
 /obj/machinery/genetics/gene_analyzer/attackby(obj/item/I, mob/user)
-	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 60))
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, 60))
 		to_chat(usr, SPAN_WARNING("After looking at the blinking lights and tons of toggles you relise you have no idea what to do."))
 		return
 	if(default_deconstruction(I, user))
@@ -116,7 +116,7 @@ cannot isolate or combine desired genes.
 		. = ..()
 
 /obj/machinery/genetics/gene_analyzer/attack_hand(mob/user)
-	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_CHEMIST) && !usr.stat_check(STAT_BIO, 60))
+	if(!user.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80) &&!user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, 60))
 		to_chat(usr, SPAN_WARNING("The analyzer is to complex to use without trainning or being well versed in general biology or sciences."))
 		return
 	if(..())

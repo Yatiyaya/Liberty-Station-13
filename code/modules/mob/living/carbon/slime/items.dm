@@ -45,6 +45,7 @@
 	pet.name = newname
 	pet.real_name = newname
 	pet.colony_friend = TRUE //Hardcode hack to make sure
+	pet.friendly_to_colony = TRUE
 	usedup(src)
 
 /obj/item/slime_potion/slime_docile_adult
@@ -76,6 +77,7 @@
 	pet.name = newname
 	pet.real_name = newname
 	pet.colony_friend = TRUE //Hardcode hack to make sure
+	pet.friendly_to_colony = TRUE
 	usedup(src)
 
 

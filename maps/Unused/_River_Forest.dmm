@@ -353,7 +353,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/river_forest_light)
 "ee" = (
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/rifle,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol/rifle,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "ei" = (
@@ -1197,7 +1197,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/river_forest_light)
 "pb" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "pf" = (
@@ -1434,7 +1434,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/hunter_cabin)
 "rs" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "rt" = (
@@ -1602,7 +1602,7 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/dungeon/outside/hunter_cabin)
 "sH" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "sJ" = (
@@ -1824,7 +1824,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/river_forest_cabin)
 "va" = (
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/epistol/esmg,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol/esmg,
 /turf/simulated/floor/asteroid/grass/colonialjungle2,
 /area/liberty/outside/forest/river_forest_light)
 "vc" = (
@@ -3888,7 +3888,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/river_forest_light)
 "Ph" = (
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic,
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "Pj" = (
@@ -4260,7 +4260,7 @@
 /turf/simulated/floor/rock/alt,
 /area/liberty/outside/forest/river_forest_dark)
 "TI" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/trip,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "TK" = (
@@ -4276,7 +4276,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_dark)
 "TO" = (
-/mob/living/carbon/superior_animal/robot/similacrum/custodian,
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "TP" = (
@@ -4563,7 +4563,7 @@
 /area/liberty/outside/forest/river_forest_light)
 "Wy" = (
 /obj/structure/mopbucket,
-/mob/living/carbon/superior_animal/robot/similacrum/custodian,
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
 "WA" = (

@@ -21,7 +21,7 @@
 	tool_qualities = list(QUALITY_SAWING = 100, QUALITY_CUTTING = 100, QUALITY_WIRE_CUTTING = 100)
 
 /obj/item/tool/saw/onestar_saw
-	name = "Similacrum Robotics saw"
+	name = "Simulacrum Robotics saw"
 	desc = "A rather robust hand saw for cutting down trees quickly and cleanly."
 	icon_state = "one_star_metal_saw"
 	force = WEAPON_FORCE_PAINFUL
@@ -31,7 +31,7 @@
 	max_upgrades = 2
 	workspeed = 1.2
 	price_tag = 500 //Still just a saw.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/tool/saw/improvised
 	name = "choppa"

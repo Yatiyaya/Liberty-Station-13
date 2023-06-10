@@ -1,6 +1,6 @@
 /obj/machinery/power/port_gen/os_generator
 	name = "fusion microgenerator"
-	desc = "A Similacrum Robotics portable fusion microgenerator rather complicated and hard to use on top of needing a certification to operate one quickly led to only inhouse use rather then market success."
+	desc = "A Simulacrum Robotics portable fusion microgenerator rather complicated and hard to use on top of needing a certification to operate one quickly led to only inhouse use rather then market success."
 	icon = 'icons/obj/machines/one_star/machines.dmi'
 	icon_state = "generator" // sprite by Infrared Baron
 	circuit = /obj/item/circuitboard/os_generator

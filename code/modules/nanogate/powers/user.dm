@@ -129,7 +129,7 @@ List of powers in this page :
 						/obj/item/gun_upgrade/mechanism/clock_block,//Brass and unknown tech
 						/obj/item/gun_upgrade/trigger/boom,			//Illegal
 						/obj/item/gun_upgrade/scope/watchman,
-						/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst,
+						/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst,
 						/obj/item/gun_upgrade/trigger/honker,
 						/obj/item/gun_upgrade/mechanism/bikehorn,
 						/obj/item/gun_upgrade/mechanism/faulty_trapped,
