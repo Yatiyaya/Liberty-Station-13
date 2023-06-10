@@ -125,6 +125,9 @@ Class Procs:
 
 	var/blue_ink_tk_blocker = FALSE
 
+	var/list/processing_parts // Component parts queued for processing by the machine. Expected type: /obj/item/stock_parts
+	var/processing_flags         // What is being processed
+
 /obj/machinery/attack_tk(mob/user)
 	if(blue_ink_tk_blocker)
 		to_chat(usr, SPAN_WARNING("\blue Your psionic power has been inhibited by a force."))
@@ -137,11 +140,11 @@ Class Procs:
 	if(d)
 		set_dir(d)
 	InitCircuit()
-	GLOB.machines += src
-	START_PROCESSING(SSmachines, src)
+	START_PROCESSING_MACHINE(src, MACHINERY_PROCESS_SELF) // It's safe to remove machines from here, but only if base machinery/Process returned PROCESS_KILL.
+	SSmachines.machinery += src // All machines should remain in this list, always.
 
 /obj/machinery/Destroy()
-	STOP_PROCESSING(SSmachines, src)
+	STOP_PROCESSING_MACHINE(src, MACHINERY_PROCESS_ALL)
 	if(component_parts)
 		for(var/atom/A in component_parts)
 			qdel(A)
@@ -152,9 +155,22 @@ Class Procs:
 	set_power_use(NO_POWER_USE)
 	return ..()
 
+/obj/machinery/proc/ProcessAll(var/wait)
+	SHOULD_NOT_SLEEP(TRUE)
+	if(processing_flags & MACHINERY_PROCESS_COMPONENTS)
+		for(var/thing in processing_parts)
+			var/obj/item/stock_parts/part = thing
+			if(part.machine_process(src) == PROCESS_KILL)
+				part.stop_processing()
 
-/obj/machinery/Process()//If you dont use process or power why are you here
-	return PROCESS_KILL
+	if((processing_flags & MACHINERY_PROCESS_SELF) && Process(wait) == PROCESS_KILL)
+		STOP_PROCESSING_MACHINE(src, MACHINERY_PROCESS_SELF)
+
+/obj/machinery/Process()
+	return PROCESS_KILL // Only process if you need to.
+
+// Hook to get updates.
+/obj/machinery/proc/component_stat_change(var/obj/item/stock_parts/part, old_stat, flag)
 
 /obj/machinery/emp_act(severity)
 	if(use_power && !stat)

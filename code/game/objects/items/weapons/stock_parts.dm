@@ -5,7 +5,9 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 100
+	var/part_flags = PART_FLAG_LAZY_INIT | PART_FLAG_HAND_REMOVE
 	var/rating = 1
+	var/status = 0               // Flags using PART_STAT defines.
 
 /obj/item/stock_parts/New()
 	src.pixel_x = rand(-5.0, 5)
@@ -14,6 +16,49 @@
 
 /obj/item/stock_parts/get_item_cost(export)
 	. = ..() * rating
+
+/obj/item/stock_parts/proc/start_processing(var/obj/machinery/machine)
+	if(istype(machine))
+		LAZYDISTINCTADD(machine.processing_parts, src)
+		START_PROCESSING_MACHINE(machine, MACHINERY_PROCESS_COMPONENTS)
+		set_status(machine, PART_STAT_PROCESSING)
+
+/obj/item/stock_parts/proc/stop_processing(var/obj/machinery/machine)
+	if(istype(machine))
+		LAZYREMOVE(machine.processing_parts, src)
+		if(!LAZYLEN(machine.processing_parts))
+			STOP_PROCESSING_MACHINE(machine, MACHINERY_PROCESS_COMPONENTS)
+		unset_status(machine, PART_STAT_PROCESSING)
+
+/obj/item/stock_parts/proc/machine_process(var/obj/machinery/machine)
+	return PROCESS_KILL
+
+/obj/item/stock_parts/proc/set_status(var/obj/machinery/machine, var/flag)
+	var/old_stat = status
+	status |= flag
+	if(old_stat != status)
+		if(!machine)
+			machine = loc
+		if(istype(machine))
+			machine.component_stat_change(src, old_stat, flag)
+
+/obj/item/stock_parts/proc/unset_status(var/obj/machinery/machine, var/flag)
+	var/old_stat = status
+	status &= ~flag
+	if(old_stat != status)
+		if(!machine)
+			machine = loc
+		if(istype(machine))
+			machine.component_stat_change(src, old_stat, flag)
+
+/obj/item/stock_parts/proc/on_install(var/obj/machinery/machine)
+	set_status(machine, PART_STAT_INSTALLED)
+
+/obj/item/stock_parts/proc/on_uninstall(var/obj/machinery/machine, var/temporary = FALSE)
+	unset_status(machine, PART_STAT_INSTALLED)
+	stop_processing(machine)
+	if(!temporary && (part_flags & PART_FLAG_QDEL))
+		qdel(src)
 
 //Rank 1
 

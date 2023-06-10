@@ -67,9 +67,21 @@ var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called
 var/list/restricted_camera_networks = list(NETWORK_MERCENARY, "Secret")
 
 // Machinery process flags, for use with START_PROCESSING_MACHINE
-#define MACHINERY_PROCESS_SELF          (1<<0)
-#define MACHINERY_PROCESS_COMPONENTS    (1<<1)
-#define MACHINERY_PROCESS_ALL           (MACHINERY_PROCESS_SELF | MACHINERY_PROCESS_COMPONENTS)
+#define MACHINERY_PROCESS_SELF       1
+#define MACHINERY_PROCESS_COMPONENTS 2
+#define MACHINERY_PROCESS_ALL        (MACHINERY_PROCESS_SELF | MACHINERY_PROCESS_COMPONENTS)
+
+// obj/item/stock_parts status flags
+#define PART_STAT_INSTALLED  1
+#define PART_STAT_PROCESSING 2
+#define PART_STAT_ACTIVE     4
+#define PART_STAT_CONNECTED  8
+
+// part_flags
+#define PART_FLAG_LAZY_INIT   1 // Will defer init on stock parts until machine is destroyed or parts are otherwise queried.
+#define PART_FLAG_QDEL        2 // Will delete on uninstall
+#define PART_FLAG_HAND_REMOVE 4 // Can be removed by hand
+#define PART_FLAG_NODAMAGE    8 // Cannot be damaged
 
 // Machinery init flag masks
 #define INIT_MACHINERY_PROCESS_SELF         0x1

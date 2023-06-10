@@ -48,6 +48,17 @@ if(Datum.is_processing) {\
 	}\
 }
 
+// For SSmachines, use these instead
+
+#define START_PROCESSING_MACHINE(machine, flag)\
+	if(!istype(machine, /obj/machinery)) CRASH("A non-machine [log_info_line(machine)] was queued to process on the machinery subsystem.");\
+	machine.processing_flags |= flag;\
+	START_PROCESSING(SSmachines, machine)
+
+#define STOP_PROCESSING_MACHINE(machine, flag)\
+	machine.processing_flags &= ~flag;\
+	if(machine.processing_flags == 0) STOP_PROCESSING(SSmachines, machine)
+
 /// Returns true if the MC is initialized and running.
 /// Optional argument init_stage controls what stage the mc must have initializted to count as initialized. Defaults to INITSTAGE_MAX if not specified.
 #define MC_RUNNING(INIT_STAGE...) (Master && Master.processing > 0 && Master.current_runlevel && Master.init_stage_completed == (max(min(INITSTAGE_MAX, ##INIT_STAGE), 1)))
