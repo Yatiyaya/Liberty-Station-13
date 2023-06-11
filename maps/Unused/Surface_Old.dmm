@@ -157,7 +157,7 @@
 /area/liberty/security/armory)
 "aav" = (
 /obj/machinery/mech_recharger,
-/obj/mecha/combat/dreadnought/security,
+/obj/mecha/combat/juggernaut/security,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/armory)
 "aaw" = (

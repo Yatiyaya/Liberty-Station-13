@@ -1334,9 +1334,9 @@
 /area/liberty/outside/forest/beast_cave_light)
 "fM" = (
 /obj/structure/flora/small/grassa4,
-/obj/random/mecha_equipment/low_chance,
-/obj/random/mecha_equipment/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
+/obj/random/mecha_utility/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/item/trash/cigbutt,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/beast_cave_light)

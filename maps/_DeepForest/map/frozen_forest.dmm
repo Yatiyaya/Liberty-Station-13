@@ -1501,7 +1501,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Gi" = (
-/obj/random/gun_fancy/alawys_spawn,
+/obj/random/gun_fancy/always_spawn,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "Gu" = (

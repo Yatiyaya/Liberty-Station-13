@@ -206,7 +206,7 @@
 
 /datum/design/research/item/mecha/plasma_generator
 	desc = "Plasma reactor"
-	build_path = /obj/item/mecha_parts/mecha_equipment/generator
+	build_path = /obj/item/mecha_parts/mecha_equipment/mech_gen
 
 /datum/design/research/item/mecha/energy_relay
 	name = "Energy relay"
@@ -220,4 +220,4 @@
 /datum/design/research/item/mecha/generator_nuclear
 	name = "Nuclear reactor"
 	desc = "Exosuit-held nuclear reactor. Converts uranium and everyone's health to energy."
-	build_path = /obj/item/mecha_parts/mecha_equipment/generator/nuclear
+	build_path = /obj/item/mecha_parts/mecha_equipment/mech_gen/nuclear

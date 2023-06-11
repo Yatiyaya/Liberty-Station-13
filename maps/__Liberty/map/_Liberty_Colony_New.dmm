@@ -4312,7 +4312,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "bch" = (
 /obj/structure/table/rack/shelf,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
@@ -6553,7 +6553,7 @@
 	},
 /obj/random/gun_energy_cheap,
 /obj/random/gun_energy_cheap,
-/obj/random/gun_fancy/alawys_spawn,
+/obj/random/gun_fancy/always_spawn,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/armoryshop)
 "bDz" = (
@@ -32046,7 +32046,7 @@
 /area/liberty/security/sechall)
 "hzs" = (
 /obj/structure/table/rack/shelf,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
@@ -43516,7 +43516,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor1south)
 "keb" = (
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "ked" = (
@@ -53556,7 +53556,7 @@
 /area/liberty/engineering/engine_room)
 "mxV" = (
 /obj/machinery/constructable_frame/machine_frame/vertical,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/machinery/light/small{
 	dir = 1
 	},

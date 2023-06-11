@@ -2138,7 +2138,7 @@
 /area/liberty/pros/prep)
 "afK" = (
 /obj/machinery/constructable_frame/machine_frame/vertical,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -6678,7 +6678,7 @@
 	pixel_x = 0
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/cavehideout)
 "arr" = (
@@ -7394,7 +7394,7 @@
 "atr" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -7646,7 +7646,7 @@
 "auc" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -7718,7 +7718,7 @@
 /area/liberty/engineering/engine_room)
 "auk" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/maintenance/undergroundfloor1oldconstruction)
@@ -8155,7 +8155,7 @@
 "avs" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/voidsuit/damaged/low_chance,
 /turf/simulated/floor/tiled/techmaint_perforated,
@@ -8511,7 +8511,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool_upgrade/low_chance,
@@ -11597,7 +11597,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/gun_shotgun/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /obj/machinery/light/small{
@@ -13512,7 +13512,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/gun_shotgun/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /obj/random/rig_module/low_chance,
@@ -13533,7 +13533,7 @@
 /obj/random/gun_cheap/low_chance,
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /obj/random/rig_module/low_chance,
@@ -13551,7 +13551,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/gun_shotgun/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /obj/random/rig_module/low_chance,
@@ -13569,7 +13569,7 @@
 /obj/random/gun_cheap/low_chance,
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /obj/random/rig_module/low_chance,
@@ -22614,7 +22614,7 @@
 /obj/structure/boulder,
 /obj/structure/flora/small/trailrocka3,
 /obj/effect/decal/cleanable/rubble,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "bgv" = (
@@ -22863,7 +22863,7 @@
 /obj/structure/flora/small/trailrocka1,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "bhf" = (
@@ -23614,7 +23614,7 @@
 /area/liberty/maintenance/northcave)
 "biZ" = (
 /obj/structure/boulder,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "bja" = (
@@ -54838,7 +54838,7 @@
 	},
 /obj/random/tool,
 /obj/item/storage/belt/utility,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/storage/primary)
 "cFd" = (
@@ -55651,7 +55651,7 @@
 /obj/random/tool/advanced/low_chance,
 /obj/random/tool/low_chance,
 /obj/item/storage/belt/utility,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/storage/primary)
 "cHe" = (
@@ -55660,7 +55660,7 @@
 	},
 /obj/random/techpart/low_chance,
 /obj/item/storage/belt/utility,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/toolbox,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/storage/primary)
@@ -60085,7 +60085,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/gun_shotgun/low_chance,
 /obj/random/lathe_disk/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/rig_module/rare/low_chance,
 /turf/simulated/floor/tiled/steel/danger,
@@ -83059,7 +83059,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/storage/primary)
 "dTm" = (
