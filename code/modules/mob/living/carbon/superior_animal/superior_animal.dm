@@ -429,7 +429,7 @@
 			patience = patience_initial
 		// This block controls our attack/range logic
 		var/atom/targetted = targetted_mob
-		if (!(targetted_mob.check_if_alive(TRUE)))
+		if (!(targetted_mob?.check_if_alive(TRUE)))
 			loseTarget()
 			return
 		if (lost_sight)
@@ -564,6 +564,9 @@
 
 /mob/living/carbon/superior_animal/Life()
 	ticks_processed++
+	if(client)// Was always calling, but requires client to do anything. So, cull it here.
+		handle_hud_icons()
+		handle_vision()
 
 	if(!reagent_immune)
 		handle_chemicals_in_body() //not under ai_inactive, because of shit like blattedin
@@ -572,7 +575,6 @@
 		if (!AI_inactive)
 			handle_status_effects()
 			update_lying_buckled_and_verb_status()
-			handle_vision() // If we aren't active, why do we care?
 
 		if(!never_stimulate_air)
 			var/datum/gas_mixture/environment = loc.return_air_for_internal_lifeform()
@@ -602,17 +604,16 @@
 
 	if(life_cycles_before_sleep)
 		life_cycles_before_sleep--
-		if(!(AI_inactive && life_cycles_before_sleep)) // Why were we asking this every time?
-			AI_inactive = TRUE
 		return TRUE
+	if(!(AI_inactive && life_cycles_before_sleep))
+		AI_inactive = TRUE
 
 	if(life_cycles_before_scan)
 		life_cycles_before_scan--
 		return FALSE
 	if(AI_inactive)
 		for(var/mob/M in oview(src))
-			if(!(M.stat < DEAD) && M.faction == list("neutral", "station", "CEV Eris") && M.faction != faction) // TIME KOMPRESSION
-//	if(check_surrounding_area(viewRange))
+			if(!(M.stat < DEAD) && M.faction == ("neutral"||"station"||"CEV Eris") && M.faction != faction)// TIME KOMPRESSION
 				activate_ai()
 				life_cycles_before_scan = initial(life_cycles_before_scan)/6
 				return TRUE

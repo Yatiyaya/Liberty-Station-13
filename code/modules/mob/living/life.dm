@@ -10,8 +10,7 @@
 				life_cycles_before_scan--
 			else
 				for(var/mob/M in oview(src))
-					if(!(M.stat < DEAD) && M.faction == list("neutral", "station", "CEV Eris") && M.faction != faction) // TIME KOMPRESSION
-//				if(check_surrounding_area(7))
+					if(!(M.stat < DEAD) && M.faction == ("neutral"||"station"||"CEV Eris") && M.faction != faction) // TIME KOMPRESSION
 						activate_ai()
 						life_cycles_before_scan = 29 //So it doesn't fall asleep just to wake up the next tick
 					else
