@@ -273,6 +273,12 @@
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/skyyard)
+"aeY" = (
+/obj/structure/sign/misc/loan{
+	name = "Bank"
+	},
+/turf/simulated/wall,
+/area/liberty/maintenance/undergroundfloor2south)
 "afr" = (
 /obj/random/gun_parts,
 /turf/simulated/floor/rock,
@@ -3819,11 +3825,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenobiology/xenoflora)
 "aWw" = (
-/obj/structure/flora/pottedplant/dead{
-	oldified = 1;
-	pixel_y = 16
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor2north)
 "aWz" = (
@@ -4634,9 +4637,9 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "bhg" = (
-/obj/item/contraband/poster/placed/recruitment/engineering,
+/obj/structure/sign/levels/stairsdown,
 /turf/simulated/wall,
-/area/liberty/maintenance/undergroundfloor2south)
+/area/liberty/maintenance/undergroundfloor1east)
 "bhj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable/green{
@@ -20419,12 +20422,20 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "fbo" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 4
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/blucarpet,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/sign/departmentold/mining{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor2south)
 "fbv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -25064,6 +25075,15 @@
 /obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
 /area/liberty/security/maingate_outside)
+"ggb" = (
+/obj/structure/table/standard,
+/obj/machinery/light/small,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/work_for_a_future{
+	pixel_y = -32
+	},
+/turf/simulated/floor/industrial/grey_slates_long,
+/area/liberty/maintenance/undergroundfloor2north)
 "ggn" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -27621,6 +27641,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/virology)
+"gMT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/report_crimes{
+	desc = "A poster encouraging the swift reporting of crime or seditious behavior to colony security.";
+	pixel_x = 32
+	},
+/turf/simulated/floor/industrial/black_large_slates,
+/area/liberty/maintenance/undergroundfloor1north)
 "gMX" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "6,10"
@@ -31525,16 +31553,15 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "hJB" = (
-/obj/structure/railing{
-	dir = 8
+/obj/item/contraband/poster,
+/obj/item/contraband/poster,
+/obj/structure/table/rack/shelf,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/popculture/wasteland{
+	pixel_y = 32
 	},
-/obj/structure/railing{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor/plating/under,
-/area/liberty/engineering/engine_room)
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/liberty/maintenance/undergroundfloor2south)
 "hJF" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/wood/wild1,
@@ -31855,7 +31882,9 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/maintenance/sunkenclub)
 "hOX" = (
-/obj/item/contraband/poster/placed/recruitment/engineering,
+/obj/item/contraband/poster/placed/recruitment/engineering{
+	name = "Terra-Therma recruitment poster"
+	},
 /turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor3north)
 "hPa" = (
@@ -32528,6 +32557,11 @@
 "hWV" = (
 /turf/simulated/floor/reinforced,
 /area/liberty/rnd/xenobiology)
+"hWY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/mob/roaches/low_chance,
+/turf/simulated/floor/industrial/grey_slates_long,
+/area/liberty/maintenance/undergroundfloor2north)
 "hXd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
@@ -33698,6 +33732,7 @@
 	dir = 1;
 	pixel_y = -32
 	},
+/obj/random/structures/low_chance,
 /turf/simulated/floor/plating,
 /area/liberty/maintenance/substation/medical)
 "ioz" = (
@@ -34397,9 +34432,9 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "iwK" = (
-/obj/item/contraband/poster/placed/recruitment/deathsquad,
+/obj/structure/sign/levels/stairsup,
 /turf/simulated/wall,
-/area/liberty/maintenance/undergroundfloor2south)
+/area/liberty/maintenance/undergroundfloor2north)
 "iwL" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
@@ -40127,6 +40162,9 @@
 "jTC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
+/obj/item/contraband/poster/placed/recruitment/rebels{
+	pixel_y = 32
+	},
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor2south)
 "jTG" = (
@@ -47317,14 +47355,16 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/crew_quarters/bar)
 "lLq" = (
-/obj/structure/filingcabinet/filingcabinet,
-/obj/structure/flora/pottedplant/dead{
-	oldified = 1;
-	pixel_y = 16
+/obj/machinery/power/thermoelectric{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/blucarpet,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/structure/lattice,
+/obj/structure/cable/yellow,
+/turf/simulated/floor/fixed/hydrotile{
+	name = "Thermoelectric Engine Coolant";
+	desc = "A freezing cold solution to help the Thermoelectric engines not overheat from prolonged use."
+	},
+/area/liberty/engineering/engine_room)
 "lLt" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -47785,10 +47825,11 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/hallway/side/f2section1)
 "lQE" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant/dead{
+	oldified = 1;
+	pixel_y = 16
+	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "lQF" = (
@@ -50138,6 +50179,9 @@
 /obj/item/paper_bin,
 /obj/structure/table/standard,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/obey{
+	pixel_y = 32
+	},
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor2north)
 "myw" = (
@@ -50370,6 +50414,17 @@
 	},
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/vectorrooms)
+"mCm" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/do_not_question{
+	pixel_y = 32
+	},
+/obj/random/mob/roaches/low_chance,
+/turf/simulated/floor/industrial/grey_slates_long,
+/area/liberty/maintenance/undergroundfloor2north)
 "mCo" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/power/apc{
@@ -58336,6 +58391,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
+"oBi" = (
+/obj/structure/table/standard,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/work_for_a_future{
+	pixel_y = -32
+	},
+/turf/simulated/floor/industrial/grey_slates_long,
+/area/liberty/maintenance/undergroundfloor2north)
 "oBn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/material_rare,
@@ -62023,10 +62086,11 @@
 /area/liberty/maintenance/undergroundfloor2west)
 "pxB" = (
 /obj/structure/table/standard,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/oddity/common/paper_bundle,
+/obj/item/contraband/poster/placed/generic/work_for_a_future{
+	pixel_y = -32
+	},
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor2north)
 "pxH" = (
@@ -63338,6 +63402,10 @@
 	pixel_y = 16
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/atmosia{
+	pixel_y = 32;
+	name = "Prospectors declaration of secesion"
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/undergroundfloor2south)
 "pNv" = (
@@ -70937,9 +71005,13 @@
 /turf/simulated/floor/plating,
 /area/liberty/crew_quarters/fitness)
 "rEz" = (
-/obj/item/oddity/common/paper_bundle,
+/obj/structure/table/standard,
+/obj/random/lowkeyrandom/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/blucarpet,
+/obj/item/contraband/poster/placed/generic/work_for_a_future{
+	pixel_y = -32
+	},
+/turf/simulated/floor/industrial/grey_slates_long,
 /area/liberty/maintenance/undergroundfloor2north)
 "rEB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -73040,10 +73112,9 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/panic_room)
 "sfA" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 1
-	},
+/obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/remains/mummy2,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "sfK" = (
@@ -75984,6 +76055,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/get_your_legs{
+	pixel_x = 32
+	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "sNu" = (
@@ -76537,6 +76611,10 @@
 	},
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
+"sUK" = (
+/obj/structure/sign/departmentold/cargo2,
+/turf/simulated/wall,
+/area/liberty/maintenance/undergroundfloor2north)
 "sUL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/wood/wild3,
@@ -76710,6 +76788,10 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/anniversary_vintage_reprint{
+	pixel_y = -32
+	},
+/obj/item/remains/mummy2,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "sWS" = (
@@ -80064,6 +80146,13 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/pros/prep)
+"tOK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled/steel,
+/area/liberty/maintenance/undergroundfloor2north)
 "tOP" = (
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 8
@@ -81317,6 +81406,9 @@
 	pixel_y = 28
 	},
 /obj/effect/decal/cleanable/vomit,
+/obj/item/contraband/poster/placed/generic/cleanliness{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor3south)
 "ueU" = (
@@ -85748,10 +85840,9 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "vnX" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/dark,
+/obj/item/remains/mummy2,
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "vnY" = (
@@ -86098,6 +86189,9 @@
 /obj/random/tool/advanced/low_chance,
 /obj/random/toolbox/low_chance,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/build{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "vss" = (
@@ -88270,6 +88364,11 @@
 /obj/random/junk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/recruitment/deathsquad{
+	desc = "A poster advertising positions in the Ironhammer reserve forces.";
+	name = "Ebony Aegis recruitment poster";
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor2south)
 "vTa" = (
@@ -88813,9 +88912,10 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/storage/primary)
 "wan" = (
-/obj/item/contraband/poster/placed/popculture/wasteland,
-/turf/simulated/wall,
-/area/liberty/maintenance/undergroundfloor2south)
+/obj/effect/decal/cleanable/dirt,
+/obj/random/mob/roaches/low_chance,
+/turf/simulated/floor/carpet/blucarpet,
+/area/liberty/maintenance/undergroundfloor2north)
 "wap" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/effect/floor_decal/industrial/stand_clear/white{
@@ -91171,6 +91271,9 @@
 /obj/item/paper_bin,
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/item/contraband/poster/placed/generic/work_for_a_future{
+	pixel_x = -32
 	},
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -93876,6 +93979,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/recruitment/engineering{
+	name = "Terra-Therma recruitment poster";
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor2south)
 "xlc" = (
@@ -94604,10 +94711,17 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2east)
 "xuJ" = (
-/obj/random/mob/roaches/low_chance,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/blucarpet,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/machinery/power/thermoelectric{
+	dir = 1
+	},
+/obj/structure/lattice,
+/obj/structure/cable/yellow,
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/turf/simulated/floor/fixed/hydrotile{
+	name = "Thermoelectric Engine Coolant";
+	desc = "A freezing cold solution to help the Thermoelectric engines not overheat from prolonged use."
+	},
+/area/liberty/engineering/engine_room)
 "xuL" = (
 /obj/structure/sink{
 	dir = 4;
@@ -96845,7 +96959,7 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/engine_room)
 "xYl" = (
@@ -97774,6 +97888,9 @@
 /obj/random/common_oddities/low_chance,
 /obj/random/melee/low_chance,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/tools{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2east)
 "yir" = (
@@ -126904,8 +127021,8 @@ xta
 mNM
 xoL
 fcP
-eDX
-hJB
+lLq
+xXX
 byl
 omv
 omv
@@ -127308,7 +127425,7 @@ umO
 wtx
 fGi
 vbE
-eDX
+xuJ
 xXX
 byl
 omv
@@ -127915,7 +128032,7 @@ nDg
 hEA
 aht
 eDX
-hJB
+xXX
 byl
 omv
 omv
@@ -148353,11 +148470,11 @@ uCy
 goy
 xiS
 xiS
-bhg
+xiS
 ckB
 ckB
 ckB
-iwK
+xiS
 xiS
 xiS
 aRc
@@ -148957,8 +149074,8 @@ goy
 goy
 goy
 goy
-wan
-jCb
+xiS
+hJB
 fZi
 pRe
 fZi
@@ -149987,7 +150104,7 @@ sxo
 tvp
 imI
 xiS
-iso
+fbo
 kJn
 xiS
 emu
@@ -150290,8 +150407,8 @@ vpu
 yiQ
 yiQ
 mZd
-cUp
-cEN
+sfA
+rEz
 eIB
 emu
 emu
@@ -150593,7 +150710,7 @@ imI
 imI
 imI
 xiS
-iso
+fbo
 kJn
 xiS
 omv
@@ -150692,7 +150809,7 @@ cHu
 jjZ
 kWZ
 yiQ
-yiQ
+hWY
 hSB
 gmN
 uFw
@@ -150895,8 +151012,8 @@ jjZ
 kWZ
 yiQ
 yiQ
-lQE
 mZd
+vnX
 pxB
 eIB
 emu
@@ -151097,7 +151214,7 @@ jjZ
 kWZ
 aWw
 yiQ
-rEz
+mZd
 mZd
 pSz
 eIB
@@ -151298,7 +151415,7 @@ cHu
 jjZ
 eIB
 gcR
-yiQ
+hWY
 hSB
 mxY
 cEN
@@ -151503,7 +151620,7 @@ myt
 yiQ
 mZd
 sfA
-vQl
+oBi
 eIB
 emu
 emu
@@ -151702,7 +151819,7 @@ cHu
 mxw
 kWZ
 sSZ
-aKr
+yiQ
 mZd
 mZd
 pSz
@@ -152105,11 +152222,11 @@ bzq
 sbf
 fSi
 kWZ
-aWw
-aKr
+yiQ
+yiQ
 mZd
-fbo
-uFw
+sfA
+ggb
 eIB
 emu
 emu
@@ -152511,7 +152628,7 @@ jjZ
 eIB
 yiQ
 yiQ
-lQE
+mZd
 mZd
 cEN
 eIB
@@ -153117,9 +153234,9 @@ mxw
 eIB
 yiQ
 qTg
+lQE
 mZd
-mZd
-lLq
+hSB
 eIB
 emu
 emu
@@ -153319,7 +153436,7 @@ jjZ
 eIB
 yiQ
 qTg
-xuJ
+mZd
 xCZ
 svn
 eIB
@@ -153519,9 +153636,9 @@ qPe
 cHu
 qwc
 eIB
-bAx
+mCm
 fEv
-mZd
+wan
 glg
 sWQ
 eIB
@@ -153725,7 +153842,7 @@ hVt
 qTg
 mZd
 qXq
-xuJ
+mZd
 eIB
 fnE
 fnE
@@ -153923,11 +154040,11 @@ cHu
 lwx
 jjZ
 eIB
-hVt
+tOK
 qTg
-mZd
+lQE
 sNp
-vnX
+mZd
 eIB
 fnE
 fnE
@@ -161306,7 +161423,7 @@ jTT
 sjd
 gJq
 inX
-xiS
+aeY
 usj
 xuZ
 xuZ
@@ -162417,10 +162534,10 @@ emu
 emu
 emu
 emu
-eIB
+iwK
 cHu
 cHu
-eIB
+sUK
 eIB
 eIB
 eIB
@@ -186030,7 +186147,7 @@ vvK
 laZ
 laZ
 ohv
-laZ
+gMT
 iit
 aEm
 cHz
@@ -202819,8 +202936,8 @@ omv
 omv
 omv
 bps
-bps
-bps
+bhg
+bhg
 bps
 jux
 apT

@@ -40,7 +40,6 @@
 		bio = 50,
 		rad = 50
 	)
-	item_state_slots = null
 
 /obj/item/clothing/under/rank/engineer/verb/toggle_style()
 	set name = "Adjust Style"
@@ -62,7 +61,9 @@
 	if(src && choice && !M.incapacitated() && Adjacent(M))
 		icon_state = options[choice]
 		item_state = options[choice]
-		item_state_slots = null
+		item_state_slots = list(
+			slot_back_str = options[choice]
+		)
 		to_chat(M, "You adjust your [choice].")
 		update_icon()
 		update_wear_icon()
@@ -81,7 +82,6 @@
 		bio = 50,
 		rad = 50
 	)
-	item_state_slots = null
 
 /obj/item/clothing/under/rank/miner/verb/toggle_style()
 	set name = "Adjust Style"
@@ -103,7 +103,9 @@
 	if(src && choice && !M.incapacitated() && Adjacent(M))
 		icon_state = options[choice]
 		item_state = options[choice]
-		item_state_slots = null
+		item_state_slots = list(
+			slot_back_str = options[choice]
+		)
 		to_chat(M, "You adjust your [choice].")
 		update_icon()
 		update_wear_icon()
@@ -123,7 +125,6 @@
 		bio = 50,
 		rad = 50
 	)
-	item_state_slots = null
 
 /obj/item/clothing/under/rank/chief/verb/toggle_style()
 	set name = "Adjust Style"
@@ -145,7 +146,9 @@
 	if(src && choice && !M.incapacitated() && Adjacent(M))
 		icon_state = options[choice]
 		item_state = options[choice]
-		item_state_slots = null
+		item_state_slots = list(
+			slot_back_str = options[choice]
+		)
 		to_chat(M, "You adjust your [choice].")
 		update_icon()
 		update_wear_icon()
