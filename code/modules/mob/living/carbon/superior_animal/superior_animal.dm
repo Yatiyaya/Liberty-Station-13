@@ -617,6 +617,11 @@
 				activate_ai()
 				life_cycles_before_scan = initial(life_cycles_before_scan)/6
 				return TRUE
+		for(var/obj/mecha/potential_mech in oview(src)) // I hate mech code
+			if(potential_mech.get_mob())
+				activate_ai()
+				life_cycles_before_scan = initial(life_cycles_before_scan)/6
+				return TRUE
 	life_cycles_before_scan = initial(life_cycles_before_scan)
 	return FALSE
 
