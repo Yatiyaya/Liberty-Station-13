@@ -454,7 +454,7 @@
 /obj/item/storage/pouch/baton_holster/telebaton
 
 /obj/item/storage/pouch/baton_holster/telebaton/populate_contents()
-	new /obj/item/melee/telebaton (src)
+	new /obj/item/melee/telebaton(src)
 	update_icon()
 
 /obj/item/storage/pouch/baton_holster/update_icon()
