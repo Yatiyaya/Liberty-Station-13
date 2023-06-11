@@ -579,5 +579,5 @@
 //Tells everyone thats living and is a SSmobs to wake up their AI when aplicable
 /proc/activate_mobs_in_range(atom/caller , distance)
 	for(var/mob/living/M in orange(distance, caller))
-		if(!isdead(M))
+		if(!is_dead(M))
 			M.try_activate_ai()
