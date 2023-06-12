@@ -55,6 +55,9 @@ ty ilu - bear
 /area/deepmaint
 	narrate = "The twisted labyrinth of deep maints. A demented worn down ruin where things that never should have been shamble in the dust and darkness. Do you hear it? Music echoes in the halls, building to a crescendo we never see."
 
+/area/liberty/maintenance/hideout
+	narrate = "An abandoned shed, the former home of a once known local terrorist long since dead. The smell of gunpowder is still fresh, and faint beeping can be heard from its moldy insides. Famous ramblings of his can be found written on blood and feces on the walls, something about the Industrial Autolathe and its disastrous consequences to the recycling economy..."
+
 //Outside abandoned structures
 
 /area/colony/exposedsun/crashed_shop

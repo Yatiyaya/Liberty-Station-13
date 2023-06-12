@@ -336,7 +336,7 @@
 /area/mine/hallway)
 "bl" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/mine/hallway)
@@ -945,7 +945,7 @@
 /area/mine/atmos)
 "cT" = (
 /obj/random/structures,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/mine/atmos)
 "cU" = (
@@ -1430,7 +1430,7 @@
 /turf/simulated/floor/plating,
 /area/mine/atmos)
 "es" = (
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/plating,
 /area/mine/atmos)
 "et" = (

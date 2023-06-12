@@ -660,6 +660,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	icon_state = "steamy" // Very serviceable placeholder, if someone can make a better sprite to go along, I'd appreciate it.
 	mouse_opacity = 0 // Can see me but can't click me, we don't want targetting issues over water tiles
 	layer = FLY_LAYER // Convenient anime censoring (goes overlaid over mob)
+	anchored = TRUE
 
 //Soj cringe
 

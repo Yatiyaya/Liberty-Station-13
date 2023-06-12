@@ -151,7 +151,7 @@
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "cD" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/gun_fancy/alawys_spawn,
+/obj/random/gun_fancy/always_spawn,
 /obj/random/gun_fancy,
 /obj/random/gun_fancy,
 /obj/random/gun_combat,

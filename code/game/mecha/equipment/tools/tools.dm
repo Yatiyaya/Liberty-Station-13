@@ -13,8 +13,8 @@
  * /obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster
  * /obj/item/mecha_parts/mecha_equipment/repair_droid
  * /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
- * /obj/item/mecha_parts/mecha_equipment/generator
- * /obj/item/mecha_parts/mecha_equipment/generator/nuclear
+ * /obj/item/mecha_parts/mecha_equipment/mech_gen
+ * /obj/item/mecha_parts/mecha_equipment/mech_gen/nuclear
  * /obj/item/mecha_parts/mecha_equipment/tool/safety_clamp
  * /obj/item/mecha_parts/mecha_equipment/tool/passenger
  * /obj/item/mecha_parts/mecha_equipment/thruster
@@ -827,7 +827,7 @@
 
 
 
-/obj/item/mecha_parts/mecha_equipment/generator
+/obj/item/mecha_parts/mecha_equipment/mech_gen
 	name = "plasma generator"
 	desc = "Generates power using solid plasma as fuel. Pollutes the environment."
 	icon_state = "plasma"
@@ -939,7 +939,7 @@
 
 /datum/global_iterator/mecha_generator
 
-	Process(var/obj/item/mecha_parts/mecha_equipment/generator/EG)
+	Process(var/obj/item/mecha_parts/mecha_equipment/mech_gen/EG)
 		if(!EG.chassis)
 			stop()
 			EG.set_ready_state(1)
@@ -965,7 +965,7 @@
 		return 1
 
 
-/obj/item/mecha_parts/mecha_equipment/generator/nuclear
+/obj/item/mecha_parts/mecha_equipment/mech_gen/nuclear
 	name = "\improper ExoNuclear reactor"
 	desc = "Generates power using uranium recklessly. Radiates the environment."
 	icon_state = "uranium"
@@ -989,7 +989,7 @@
 
 /datum/global_iterator/mecha_generator/nuclear
 
-	Process(var/obj/item/mecha_parts/mecha_equipment/generator/nuclear/EG)
+	Process(var/obj/item/mecha_parts/mecha_equipment/mech_gen/nuclear/EG)
 		if(..())
 			for(var/mob/living/carbon/M in view(EG.chassis))
 				if(ishuman(M))
