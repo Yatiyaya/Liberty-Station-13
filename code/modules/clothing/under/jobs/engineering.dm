@@ -30,8 +30,8 @@
 /obj/item/clothing/under/rank/engineer
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Orange For the Engineers, It stills having Terra Fed Markings."
 	name = "Terra Union Engineer Jumpsuit"
-	icon_state = "Terra_engineer"
-	item_state = "Terra_engineer"
+	icon_state = "terra_engineer"
+	item_state = "terra_engineer"
 	armor_list = list(
 		melee = 0,
 		bullet = 0,
@@ -52,9 +52,9 @@
 	var/mob/M = usr
 	var/list/options = list()
 
-	options["Terra engineer"] = "Terra_engineer" // Sprites by Ezoken/Dromkii
-	options["Terra engineer Rolled down"] = "Terra_engineer_alt" // Sprites by Ezoken/Dromkii
-	options["Terra engineer down"] = "Terra_engineer_pants" // Sprites by Ezoken/Dromkii
+	options["standard"] = "terra_engineer" // Sprites by Ezoken/Dromkii
+	options["rolled sleeves"] = "terra_engineer_alt" // Sprites by Ezoken/Dromkii
+	options["pants"] = "terra_engineer_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -64,7 +64,7 @@
 		item_state_slots = list(
 			slot_back_str = options[choice]
 		)
-		to_chat(M, "You adjust your [choice].")
+		to_chat(M, "You adjust your jumpsuit to the [choice] style.")
 		update_icon()
 		update_wear_icon()
 		usr.update_action_buttons()
@@ -72,8 +72,8 @@
 /obj/item/clothing/under/rank/miner
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Brown For the Miners, It stills having Terra Fed Markings."
 	name = "Terra Union Miner jumpsuit"
-	icon_state = "Terra_miner"
-	item_state = "Terra_miner"
+	icon_state = "terra_miner"
+	item_state = "terra_miner"
 	armor_list = list(
 		melee = 0,
 		bullet = 0,
@@ -94,9 +94,9 @@
 	var/mob/M = usr
 	var/list/options = list()
 
-	options["Terra Miner"] = "Terra_miner" // Sprites by Ezoken/Dromkii
-	options["Terra Miner Rolled down"] = "Terra_miner_alt" // Sprites by Ezoken/Dromkii
-	options["Terra Miner down"] = "Terra_miner_pants" // Sprites by Ezoken/Dromkii
+	options["standard"] = "terra_miner" // Sprites by Ezoken/Dromkii
+	options["rolled sleeves"] = "terra_miner_alt" // Sprites by Ezoken/Dromkii
+	options["pants"] = "terra_miner_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -106,7 +106,7 @@
 		item_state_slots = list(
 			slot_back_str = options[choice]
 		)
-		to_chat(M, "You adjust your [choice].")
+		to_chat(M, "You adjust your jumpsuit to the [choice] style.")
 		update_icon()
 		update_wear_icon()
 		usr.update_action_buttons()
@@ -115,8 +115,8 @@
 /obj/item/clothing/under/rank/chief
 	desc = "A Robust Snow Jumpsuit, this one is Made by Terra-Therma in Navy Blue for the Chief, It stills having Terra Fed Markings."
 	name = "Terra Union Chief Jumpsuit"
-	icon_state = "Terra_chief"
-	item_state = "Terra_chief"
+	icon_state = "terra_chief"
+	item_state = "terra_chief"
 	armor_list = list(
 		melee = 0,
 		bullet = 0,
@@ -137,9 +137,9 @@
 	var/mob/M = usr
 	var/list/options = list()
 
-	options["Terra Chief"] = "Terra_chief" // Sprites by Ezoken/Dromkii
-	options["Terra Chief Rolled down"] = "Terra_chief_alt" // Sprites by Ezoken/Dromkii
-	options["Terra Chief down"] = "Terra_chief_pants" // Sprites by Ezoken/Dromkii
+	options["standard"] = "terra_chief" // Sprites by Ezoken/Dromkii
+	options["rolled sleeves"] = "terra_chief_alt" // Sprites by Ezoken/Dromkii
+	options["pants"] = "terra_chief_pants" // Sprites by Ezoken/Dromkii
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -149,7 +149,7 @@
 		item_state_slots = list(
 			slot_back_str = options[choice]
 		)
-		to_chat(M, "You adjust your [choice].")
+		to_chat(M, "You adjust your jumpsuit to the [choice] style.")
 		update_icon()
 		update_wear_icon()
 		usr.update_action_buttons()
