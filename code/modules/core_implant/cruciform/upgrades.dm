@@ -1,6 +1,6 @@
 /obj/item/cruciform_upgrade
-	name = "Base Cruciform Upgrade"
-	desc = "Cruciform upgrade, is now part of our reality."
+	name = "Base Hearthcore Upgrade"
+	desc = "Hearthcore upgrade, is now part of our reality."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "core_upgrade"
 	var/mob/living/carbon/human/wearer

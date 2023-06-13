@@ -3,7 +3,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/console
-	name = "bioreactor metrics"
+	name = "bonfire metrics"
 	icon_state = "screen"
 	layer = ABOVE_MOB_LAYER + 0.1
 	idle_power_usage = 350

@@ -525,7 +525,7 @@
 	for(var/mob/living/creature in living_mobs_in_view(1, src))
 		if(creature.faction == "spiders")
 			continue
-		scorch_attack(creature, rand(1, 3))
+		scorch_attack(creature)
 
 /obj/effect/decal/cleanable/scorch_puddle/attackby(var/obj/item/I, var/mob/user)
 	if(istype(I, /obj/item/mop) || istype(I, /obj/item/soap))

@@ -781,7 +781,7 @@
 	..()
 
 /datum/reagent/toxin/liquid_scorch/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
-	scorch_attack(M, 20)
+	scorch_attack(M)
 	..()
 
 /datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
