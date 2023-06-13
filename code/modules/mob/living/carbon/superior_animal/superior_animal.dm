@@ -612,11 +612,11 @@
 		life_cycles_before_scan--
 		return FALSE
 	if(AI_inactive)
-		for(var/mob/M in oview(src))
-			if(!(M.stat < DEAD) && M.faction == ("neutral"||"station"||"CEV Eris") && M.faction != faction)// TIME KOMPRESSION
-				activate_ai()
-				life_cycles_before_scan = initial(life_cycles_before_scan)/6
-				return TRUE
+//		for(var/mob/M in oview(src))
+//			if(!(M.stat < DEAD) && M.faction == ("neutral"||"station"||"CEV Eris") && M.faction != faction)// TIME KOMPRESSION
+//				activate_ai()
+//				life_cycles_before_scan = initial(life_cycles_before_scan)/6
+//				return TRUE
 		for(var/obj/mecha/potential_mech in oview(src)) // I hate mech code
 			if(potential_mech.get_mob())
 				activate_ai()
