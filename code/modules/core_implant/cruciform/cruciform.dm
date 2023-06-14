@@ -38,7 +38,7 @@ var/list/disciples = list()
 	if(!ishuman(wearer))
 		return
 	var/mob/living/carbon/human/H = wearer
-	name = "[H]'s Cruciform" //This is included here to make it obvious who a cruciform belonged to if it was surgically removed
+	name = "[H]'s Hearthcore" //This is included here to make it obvious who a Hearthcore belonged to if it was surgically removed
 	if(H.stat == DEAD)
 		return
 	if(!active)

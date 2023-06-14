@@ -5,7 +5,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/platform
-	name = "bioreactor platform"
+	name = "bonfire platform"
 	icon_state = "platform_5"
 	density = FALSE
 	layer = LOW_OBJ_LAYER
