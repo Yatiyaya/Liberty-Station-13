@@ -623,7 +623,7 @@
 	name = "reinforced plasma window"
 	desc = "A borosilicate alloy window, with rods supporting it. It seems to be very strong."
 	basestate = "rpwindow"
-	icon_state = "plasmarwindow"
+	icon_state = "rpwindow"
 	shardtype = /obj/item/material/shard/plasma
 	glasstype = /obj/item/stack/material/glass/plasmarglass
 	maximal_heat = T0C + 99453 // Safe use temperature at 100,000 kelvin. I think?

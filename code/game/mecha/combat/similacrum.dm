@@ -33,5 +33,5 @@
 	ME = new /obj/item/mecha_parts/mecha_equipment/ranged_weapon/ballistic/missile_rack/explosive(src)
 	ME.attach(src)
 
-/obj/mecha/combat/dreadnought/hephaestus_do_not_use_only_for_events/add_cell()
+/obj/mecha/combat/juggernaut/hephaestus_do_not_use_only_for_events/add_cell()
 	cell = new /obj/item/cell/large/moebius/omega(src)

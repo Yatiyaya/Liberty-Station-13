@@ -55,7 +55,7 @@
 	area_light_color = COLOR_LIGHTING_MAINT_DARK
 
 /area/liberty/maintenance/guild
-	name = "Guild Maintence"
+	name = "Terra-Therma Union Maintence"
 
 /area/liberty/maintenance/junk
 	name = "Junk Beacon"
@@ -105,6 +105,12 @@
 /area/liberty/maintenance/oldlibrary
 	name = "Abandoned Library"
 	icon_state = "erisgreen"
+	requires_power = FALSE
+
+// Required for the turrets to work
+/area/liberty/maintenance/oldarmory
+	name = "Derelict Armory Shop"
+	icon_state = "Warden"
 	requires_power = FALSE
 
 /area/liberty/maintenance/undergroundfloor1south
@@ -1077,7 +1083,7 @@
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/liberty/engineering/dorm
-	name = "\improper Guild Dorm"
+	name = "\improper Solar Panels Control Room"
 	icon_state = "engineering_break"
 	sound_env = MEDIUM_SOFTFLOOR
 
@@ -1567,7 +1573,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "mining"
 
 /area/liberty/quartermaster/mining_outside_doc
-	name = "\improper Cargo Mining Area"
+	name = "Union Mining Outpost Exterior"
 	icon_state = "mining"
 
 /area/liberty/quartermaster/disposaldrop

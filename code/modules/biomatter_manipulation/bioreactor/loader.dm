@@ -4,7 +4,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/loader
-	name = "bioreactor input"
+	name = "bonfire input"
 	icon_state = "loader"
 	idle_power_usage = 120
 	active_power_usage = 300

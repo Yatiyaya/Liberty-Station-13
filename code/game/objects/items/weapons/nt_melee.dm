@@ -28,8 +28,9 @@
 	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
-	price_tag = 300
+	price_tag = 650
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 10)
+	alt_mode_lossrate = 0.7
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
@@ -42,7 +43,8 @@
 	armor_penetration = ARMOR_PEN_EXTREME
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BACK | SLOT_BELT
-	price_tag = 500
+	price_tag = 850
+	alt_mode_lossrate = 0.7
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_CARBON_FIBER = 8)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
@@ -58,7 +60,7 @@
 	item_state = "custodian_seax"
 	force = WEAPON_FORCE_PAINFUL
 	armor_penetration = ARMOR_PEN_MASSIVE
-	price_tag = 120
+	price_tag = 300
 	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 10)
 
 /obj/item/tool/knife/dagger/custodian/equipped(mob/living/M)
@@ -79,7 +81,7 @@
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_MASSIVE
 	slot_flags = SLOT_BACK | SLOT_BELT
-	price_tag = 600
+	price_tag = 850
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
@@ -124,7 +126,8 @@
 	throwforce = WEAPON_FORCE_LETHAL * 1.5
 	armor_penetration = ARMOR_PEN_MODERATE
 	throw_speed = 4
-	price_tag = 150
+	price_tag = 400
+	alt_mode_lossrate = 0.7
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 5)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
@@ -156,7 +159,8 @@
 	sharp = FALSE
 	embed_mult = 0
 	has_alt_mode = FALSE
-	var/effect_time = 5 MINUTES
+	var/effect_time = 3 MINUTES
+	var/power_cost = 20
 	hitsound = 'sound/weapons/blunthit.ogg'
 
 /obj/item/tool/sword/custodian/warhammer/attack_self(mob/user)
@@ -165,18 +169,19 @@
 	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform))
 		to_chat(user, SPAN_WARNING("You do not have an active Hearthcore with which to power this!"))
 		return
-	if(CI.power < 20)
+	if(CI.power < power_cost)
 		to_chat(user, SPAN_WARNING("You do not have enough power!"))
 		return
 	if(glowing)
 		to_chat(user, SPAN_WARNING("The warhammer is still lit up."))
 		return
 	else
+		CI.use_power(power_cost)
 		heat_hammer()
 
 /obj/item/tool/sword/custodian/warhammer/proc/heat_hammer()
 	set_light(l_range = 4, l_power = 2, l_color = COLOR_YELLOW)
-	visible_message("[src] radiates a searing heat!")
+	visible_message(SPAN_NOTICE("[src] radiates a searing heat!"))
 	glowing = TRUE
 	heat = 1873
 	update_icon()
@@ -190,7 +195,7 @@
 	damtype = initial(damtype)
 	heat = initial(heat)
 	update_icon()
-	visible_message("[src]'s heat dies down.")
+	visible_message(SPAN_NOTICE("[src]'s heat dies down."))
 
 /obj/item/tool/sword/custodian/warhammer/update_icon()
 	if(glowing)
@@ -207,13 +212,15 @@
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_DEEP
 	w_class = ITEM_SIZE_BULKY
-	price_tag = 800
+	price_tag = 1200
+	alt_mode_lossrate = 0.7
 	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_STEEL = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	var/glowing = FALSE
 	slot_flags = SLOT_BACK | SLOT_BELT
 	has_alt_mode = FALSE
-	var/effect_time = 5 MINUTES //used for the addtimer() proc
+	var/effect_time = 1 MINUTES //used for the addtimer() proc
+	var/power_cost = 45
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi') //this is how to set the back sprite
 	item_state_slots = list(
@@ -226,24 +233,25 @@
 	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform)) //Active hearthcore check
 		to_chat(user, SPAN_WARNING("You do not have an active Hearthcore with which to power this!"))
 		return
-	if(CI.power < 20)
+	if(CI.power < power_cost)
 		to_chat(user, SPAN_WARNING("You do not have enough power!"))
 		return
 	if(glowing)
 		to_chat(user, SPAN_WARNING("The sword is still lit up."))
 		return
 	else
+		CI.use_power(power_cost)
 		ignite_sword(user)
 
 /obj/item/tool/sword/custodian/conflagration/apply_hit_effect(mob/living/target, mob/living/user, hit_zone)
 	..() //We first let the base apply_hit_effect() proc do its thing, attacking with the sword
 	if (glowing) //then we check if we burn the target
 		if (iscarbon(target))
-			scorch_attack(target, 10)
+			scorch_attack(target, 20)
 
 /obj/item/tool/sword/custodian/conflagration/proc/ignite_sword(mob/user)
 	set_light(l_range = 4, l_power = 2, l_color = COLOR_BLUE)
-	to_chat(user, SPAN_WARNING("The sword has been lit!"))
+	visible_message(SPAN_NOTICE("[user] infuses Radiance into [src]"))
 	glowing = TRUE
 	heat = 1873
 	update_icon()
@@ -260,7 +268,7 @@
 	update_icon()
 	user.update_inv_r_hand() //Get rid of the radiant sprites
 	user.update_inv_l_hand()
-	visible_message(SPAN_NOTICE("The sword's flames subside."))
+	visible_message(SPAN_NOTICE("[src]'s flames subside."))
 
 /obj/item/tool/sword/custodian/conflagration/update_icon() //Toggles the "turned on" icon and on-mob sprites based on the "glowing" var
 	if(glowing)
@@ -351,11 +359,11 @@
 	icon_state = "custodian_heater"
 	item_state = "custodian_heater"
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
-	price_tag = 300
+	price_tag = 500
 	base_block_chance = 45
 	item_flags = DRAG_AND_DROP_UNEQUIP
-	max_durability = 100 //So we can brake and need healing time to time
-	durability = 100
+	max_durability = 150 //So we can brake and need healing time to time
+	durability = 150
 	var/obj/item/storage/internal/container
 	var/storage_slots = 1
 	var/max_w_class = ITEM_SIZE_HUGE

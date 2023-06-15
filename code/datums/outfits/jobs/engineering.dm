@@ -1,6 +1,6 @@
 /decl/hierarchy/outfit/job/engineering
 	hierarchy_type = /decl/hierarchy/outfit/job/engineering
-	belt = /obj/item/storage/belt/utility/full/union
+	belt = /obj/item/storage/pouch/engineering_tools/union
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	r_ear = /obj/item/tool/screwdriver
 	shoes = /obj/item/clothing/shoes/workboots
@@ -24,7 +24,6 @@
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/card/id/ce
 	pda_type = /obj/item/modular_computer/pda/heads/ce
-	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Terra-Therma - Engineer")
@@ -34,7 +33,6 @@
 	gloves = /obj/item/clothing/gloves/insulated/union
 	id_type = /obj/item/card/id/engie
 	pda_type = /obj/item/modular_computer/pda/engineering
-	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Terra-Therma - Engineer Voidsuit")
@@ -51,7 +49,6 @@
 	suit_store = null
 	backpack_contents = list(/obj/item/storage/bag/ore = 1)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
-	belt = /obj/item/storage/pouch/engineering_tools
 
 /decl/hierarchy/outfit/job/engineering/mining/void
 	name = OUTFIT_JOB_NAME("Terra-Therma - Miner Voidsuit")

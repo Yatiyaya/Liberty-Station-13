@@ -186,7 +186,7 @@
 	icon_state = "11,23"
 
 /turf/simulated/shuttle/wall/science
-	name = "Science Shuttle"
+	name = "The Vasiliy"
 	icon = 'icons/turf/shuttlescience.dmi'
 	icon_state = "6,18"
 
@@ -214,7 +214,7 @@
 	icon_state = "11,23"
 
 /obj/structure/shuttle_part/science
-	name = "Science Shuttle"
+	name = "The Vasiliy"
 	icon = 'icons/turf/shuttlescience.dmi'
 	icon_state = "6,18"
 

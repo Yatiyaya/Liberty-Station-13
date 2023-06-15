@@ -200,9 +200,9 @@
 /area/liberty/dungeon/outside/prepper)
 "and" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
 "anr" = (
@@ -7595,8 +7595,8 @@
 "iFs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -12187,8 +12187,8 @@
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -15567,7 +15567,7 @@
 /area/liberty/outside/meadow)
 "rcK" = (
 /obj/effect/decal/cleanable/generic,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "rcL" = (
@@ -18042,7 +18042,7 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/asteroid/rogue)
 "tVv" = (
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "tVJ" = (
@@ -18106,8 +18106,8 @@
 "tZw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -20707,7 +20707,7 @@
 /turf/simulated/floor/beach/sand/desert,
 /area/liberty/dungeon/outside/zoo)
 "wQF" = (
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "wQJ" = (

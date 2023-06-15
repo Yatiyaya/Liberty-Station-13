@@ -465,6 +465,11 @@
 	name = "Hitop"
 	icon_state = "hair_hitop"
 
+// Idol
+/datum/sprite_accessory/hair/niconiconii
+	name = "Idol"
+	icon_state = "begone"
+
 //Jade
 /datum/sprite_accessory/hair/jade
 	name = "Jade"
@@ -474,6 +479,15 @@
 /datum/sprite_accessory/hair/jensen
 	name = "Jensen"
 	icon_state = "hair_jensen"
+
+// Jill Stingray
+/datum/sprite_accessory/hair/jillian
+	name = "Jill"
+	icon_state = "jill"
+
+/datum/sprite_accessory/hair/joestar
+	name = "Joestar"
+	icon_state = "joestar"
 
 /datum/sprite_accessory/hair/keanu
 	name = "Keanu"

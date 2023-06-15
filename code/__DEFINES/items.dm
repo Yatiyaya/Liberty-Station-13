@@ -143,7 +143,7 @@
 					/obj/item/storage/firstaid/regular = 2,\
 					/obj/random/medical/always_spawn = 5,\
 					/obj/random/gun_normal/always_spawn = 3,\
-					/obj/random/gun_fancy/alawys_spawn = 2,\
+					/obj/random/gun_fancy/always_spawn = 2,\
 					/obj/random/lathe_disk/advanced = 2,\
 					/obj/item/cell/small/moebius/nuclear = 1,\
 					/obj/item/cell/medium/moebius/hyper = 1,\

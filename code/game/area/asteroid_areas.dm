@@ -10,32 +10,32 @@
 	name = "Union Mining Prep"
 
 /area/mine/processing
-	name = "Union Ore Processing"
+	name = "Mining Outpost Ore Processing"
 
 /area/mine/hallway
-	name = "Union General"
+	name = "Union Mining Outpost"
 
 /area/mine/medical
-	name = "Union Triage"
+	name = "Mining Triage"
 
 /area/mine/livingarea
-	name = "Union Quarters"
+	name = "Union Mining Quarters"
 
 /area/mine/atmos
-	name = "Union Atmos"
+	name = "Mining Outpost Atmos room"
 
 /area/mine/power
-	name = "Union Machine Room"
+	name = "Mining Outpost Substation"
 
 /area/mine/lockers
-	name = "Union Locker Room"
+	name = "Union Mining Lockers"
 
 /area/mine/explored
-	name = "Mine"
+	name = "Mines"
 	icon_state = "explored"
 
 /area/mine/unexplored
-	name = "Mine"
+	name = "Mines"
 	icon_state = "unexplored"
 	turf_initializer = new /datum/turf_initializer/mining()
 

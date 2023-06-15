@@ -21337,7 +21337,7 @@
 /area/liberty/command/prime)
 "ekF" = (
 /obj/structure/table/rack/shelf,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
@@ -33349,7 +33349,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "gyu" = (
 /obj/structure/table/rack/shelf,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "gyw" = (
@@ -49797,7 +49797,7 @@
 "jIn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/voidsuit/damaged/low_chance,
 /turf/simulated/floor/tiled/techmaint_perforated,
@@ -55243,7 +55243,7 @@
 /area/liberty/command/teleporter)
 "kKm" = (
 /obj/machinery/constructable_frame/machine_frame/vertical,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -57771,7 +57771,7 @@
 "lhQ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -75919,7 +75919,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool_upgrade/low_chance,
@@ -89321,7 +89321,7 @@
 "rru" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -93694,7 +93694,7 @@
 /area/liberty/security/tactical_blackshield)
 "shK" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/maintenance/undergroundfloor1east)
@@ -119419,7 +119419,7 @@
 /area/liberty/engineering/workshop)
 "xju" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;

@@ -1,6 +1,6 @@
-/obj/mecha/combat/dreadnought
+/obj/mecha/combat/juggernaut
 	desc = "Heavy-duty, combat exosuit, developed after the Durand model. Rarely found among civilian populations."
-	name = "Dreadnought"
+	name = "Juggernaut"
 	icon_state = "marauder"
 	initial_icon = "marauder"
 	step_in = 3
@@ -24,7 +24,7 @@
 	force = 45
 	max_equip = 10
 
-/obj/mecha/combat/dreadnought/seraph
+/obj/mecha/combat/juggernaut/seraph
 	desc = "Heavy-duty, command-type exosuit. This is a custom model, utilized only by high-ranking military personnel."
 	name = "Seraph"
 	icon_state = "seraph"
@@ -38,14 +38,14 @@
 	max_equip = 10
 	cargo_capacity = 10
 
-/obj/mecha/combat/dreadnought/seraph/hellbrute
+/obj/mecha/combat/juggernaut/seraph/hellbrute
 	desc = "Heavy-duty, combat exosuit, developed off of the existing seraph model. Usually found in the hands of a void wolf reavers. As rare as it is powerful."
 	name = "Hell Brute"
 	icon_state = "mauler"
 	initial_icon = "mauler"
 	wreckage = /obj/effect/decal/mecha_wreckage/mauler
 
-/obj/mecha/combat/dreadnought/New()
+/obj/mecha/combat/juggernaut/New()
 	..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/ranged_weapon/energy/pulse(src)
 	ME.attach(src)
@@ -70,7 +70,7 @@
 	return
 
 
-/obj/mecha/combat/dreadnought/seraph/New()
+/obj/mecha/combat/juggernaut/seraph/New()
 	..()//Let it equip whatever is needed.
 	var/obj/item/mecha_parts/mecha_equipment/ME
 	if(equipment.len)//Now to remove it and equip anew.
@@ -99,11 +99,11 @@
 	ME.attach(src)
 	return
 
-/obj/mecha/combat/dreadnought/Destroy()
+/obj/mecha/combat/juggernaut/Destroy()
 	qdel(smoke_system)
 	. = ..()
 
-/obj/mecha/combat/dreadnought/relaymove(mob/user,direction)
+/obj/mecha/combat/juggernaut/relaymove(mob/user,direction)
 	if(user != src.occupant) //While not "realistic", this piece is player friendly.
 		user.loc = get_turf(src)
 		to_chat(user, "You climb out from [src]")
@@ -150,7 +150,7 @@
 	return 0
 
 
-/obj/mecha/combat/dreadnought/verb/toggle_thrusters()
+/obj/mecha/combat/juggernaut/verb/toggle_thrusters()
 	set category = "Exosuit Interface"
 	set name = "Toggle thrusters"
 	set src = usr.loc
@@ -165,7 +165,7 @@
 	return
 
 
-/obj/mecha/combat/dreadnought/verb/smoke()
+/obj/mecha/combat/juggernaut/verb/smoke()
 	set category = "Exosuit Interface"
 	set name = "Smoke"
 	set src = usr.loc
@@ -181,7 +181,7 @@
 	return
 
 //TODO replace this with zoom code that doesn't increase peripherial vision
-/obj/mecha/combat/dreadnought/verb/zoom()
+/obj/mecha/combat/juggernaut/verb/zoom()
 	set category = "Exosuit Interface"
 	set name = "Zoom"
 	set src = usr.loc
@@ -200,7 +200,7 @@
 	return
 
 
-/obj/mecha/combat/dreadnought/go_out()
+/obj/mecha/combat/juggernaut/go_out()
 	if(src.occupant && src.occupant.client)
 		src.occupant.client.view = world.view
 		src.zoom = 0
@@ -208,7 +208,7 @@
 	return
 
 
-/obj/mecha/combat/dreadnought/get_stats_part()
+/obj/mecha/combat/juggernaut/get_stats_part()
 	var/output = ..()
 	output += {"<b>Smoke:</b> [smoke]
 					<br>
@@ -217,7 +217,7 @@
 	return output
 
 
-/obj/mecha/combat/dreadnought/get_commands()
+/obj/mecha/combat/juggernaut/get_commands()
 	var/output = {"<div class='wr'>
 						<div class='header'>Special</div>
 						<div class='links'>
@@ -230,7 +230,7 @@
 	output += ..()
 	return output
 
-/obj/mecha/combat/dreadnought/Topic(href, href_list)
+/obj/mecha/combat/juggernaut/Topic(href, href_list)
 	..()
 	if (href_list["toggle_thrusters"])
 		src.toggle_thrusters()

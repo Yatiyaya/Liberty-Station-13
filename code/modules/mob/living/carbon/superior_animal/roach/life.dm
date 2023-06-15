@@ -90,7 +90,7 @@
 									var/obj/item/implant/core_implant/cruciform/CI = H.get_core_implant(/obj/item/implant/core_implant/cruciform, FALSE)
 									if (CI)
 										var/mob/N = CI.wearer
-										CI.name = "[N]'s Cruciform"
+										CI.name = "[N]'s Hearthcore"
 										CI.uninstall()
 									// Gib victim but remove non synthetic organs
 									for(var/obj/item/W in H)

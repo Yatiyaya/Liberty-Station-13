@@ -4,7 +4,7 @@
 	name = "machines"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
-	fail_message = "The Cruciform feels cold against your chest."
+	fail_message = "The Hearthcore feels cold against your chest."
 	category = "Machinery"
 	ignore_stuttering = TRUE
 

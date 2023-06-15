@@ -123,7 +123,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part
-	name = "bioreactor part"
+	name = "bonfire part"
 	icon = 'icons/obj/machines/bonfire.dmi'
 	icon_state = "biomassconsole1"
 	anchored = TRUE

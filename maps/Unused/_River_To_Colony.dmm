@@ -2244,7 +2244,7 @@
 /area/colony/exposedsun/crashed_shop)
 "Xa" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/gun_fancy/alawys_spawn,
+/obj/random/gun_fancy/always_spawn,
 /obj/random/gun_fancy,
 /obj/random/gun_fancy,
 /obj/random/gun_combat,

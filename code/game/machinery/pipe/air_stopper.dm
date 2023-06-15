@@ -3,6 +3,8 @@
 	name = "Air Restictor"
 	desc = "An simple air system that prevents proper ciculation bettewn itself making a almost perfect air door, requires a bit of power to maintain."
 	icon_state = null
+	mouse_opacity = 0 // BYOND innate, prevents being targeted or interacted with
+	anchored = TRUE // Prevents it being dragged out of position by Haul verb
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 1000
 	active_power_usage = 2000
