@@ -494,11 +494,10 @@ default behaviour is:
 	if (buckled)
 		return
 
-	if(!ishuman(src))
-		// Anything that observes us moving, try to activate.
-		for(var/mob/living/M in oviewers(world.view, src))
-			if(!(M.stat < DEAD) && M.faction != faction)// TIME KOMPRESSION
-				M.try_activate_ai()
+	// Anything that observes us moving, try to activate.
+	for(var/mob/living/M in oviewers(world.view, src))
+		if(!(M.stat < DEAD) && M.faction != faction)// TIME KOMPRESSION
+			M.try_activate_ai()
 
 	if (restrained())
 		stop_pulling()
