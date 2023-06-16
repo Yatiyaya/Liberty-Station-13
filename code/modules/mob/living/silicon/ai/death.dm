@@ -8,7 +8,7 @@
 
 	remove_ai_verbs(src)
 
-	stop_malf(0) // Remove AI's malfunction status, that will fix all hacked APCs, etc.
+//	stop_malf(0) // Remove AI's malfunction status, that will fix all hacked APCs, etc.
 
 	for(var/obj/machinery/ai_status_display/O in world)
 		O.mode = 2
@@ -19,6 +19,6 @@
 
 	for (var/mob/living/silicon/robot/R in connected_robots)
 		to_chat(R, "<span class='notice'>You lost signal from your master [src.name].</span>")
-		
+
 	. = ..(gibbed,"gives one shrill beep before falling lifeless.")
 	density = 1

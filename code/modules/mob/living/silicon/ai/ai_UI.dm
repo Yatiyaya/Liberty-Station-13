@@ -46,7 +46,7 @@
 	getElementByID("Email").setClickProc(/mob/living/silicon/verb/show_email, _observer.mob)
 	getElementByID("Show Alerts").setClickProc(/mob/living/silicon/verb/show_alerts, _observer.mob)
 	getElementByID("Crew Manifest").setClickProc(/mob/living/silicon/ai/proc/ai_roster, _observer.mob)
-	getElementByID("State Laws").setClickProc(/mob/living/silicon/ai/proc/ai_checklaws, _observer.mob)
+//	getElementByID("State Laws").setClickProc(/mob/living/silicon/ai/proc/ai_checklaws, _observer.mob)
 
 	getElementByID("AI Core").setClickProc(/mob/living/silicon/ai/proc/core, _observer.mob)
 	getElementByID("Move upwards").setClickProc(/mob/living/silicon/ai/proc/ai_movement_up, _observer.mob)

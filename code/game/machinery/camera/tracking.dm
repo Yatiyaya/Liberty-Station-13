@@ -239,7 +239,8 @@
 /mob/living/silicon/robot/tracking_status()
 	. = ..()
 	if(. == TRACKING_NO_COVERAGE)
-		return camera && camera.can_use() ? TRACKING_POSSIBLE : TRACKING_NO_COVERAGE
+		if(isOnStationLevel(src))
+			return TRACKING_POSSIBLE
 
 /mob/living/carbon/human/tracking_status()
 	//Cameras can't track people wearing an agent card or a ninja hood.
@@ -260,14 +261,14 @@ mob/living/proc/tracking_initiated()
 
 mob/living/silicon/robot/tracking_initiated()
 	tracking_entities++
-	if(tracking_entities == 1 && has_zeroth_law())
+	if(tracking_entities == 1)
 		to_chat(src, SPAN_WARNING("Internal camera is currently being accessed."))
 
 mob/living/proc/tracking_cancelled()
 
 mob/living/silicon/robot/tracking_initiated()
 	tracking_entities--
-	if(!tracking_entities && has_zeroth_law())
+	if(!tracking_entities)
 		to_chat(src, SPAN_NOTICE("Internal camera is no longer being accessed."))
 
 

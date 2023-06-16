@@ -50,7 +50,7 @@ var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called
 #define NETWORK_MINE "Fontaine Shuttle - The Rocinante"
 #define NETWORK_RESEARCH "Research"
 #define NETWORK_RESEARCH_OUTPOST "Research Outpost"
-#define NETWORK_ROBOTS "Robots"
+//#define NETWORK_ROBOTS "Robots"
 #define NETWORK_PRISON "Prison"
 #define NETWORK_SECURITY "Security"
 #define NETWORK_PLASMA_TAG "Plasma Tag Area"

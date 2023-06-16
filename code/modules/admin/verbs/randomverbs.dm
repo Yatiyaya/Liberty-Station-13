@@ -581,7 +581,7 @@ ADMIN_VERB_ADD(/client/proc/respawn_character, R_ADMIN, FALSE)
 	to_chat(new_character, "You have been fully respawned. Enjoy the game.")
 	AnnounceArrival(new_character, new_character.mind.assigned_role, spawnpoint.message)	//will not broadcast if there is no message
 	return new_character
-
+/*
 ADMIN_VERB_ADD(/client/proc/cmd_admin_add_freeform_ai_law, R_FUN, FALSE)
 /client/proc/cmd_admin_add_freeform_ai_law()
 	set category = "Fun"
@@ -609,7 +609,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_add_freeform_ai_law, R_FUN, FALSE)
 	var/show_log = alert(src, "Show ion message?", "Message", "Yes", "No")
 	if(show_log == "Yes")
 		command_announcement.Announce("Ion storm detected in Colony vicinity. Please check all AI-controlled equipment for errors.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')
-
+*/
 
 ADMIN_VERB_ADD(/client/proc/cmd_admin_rejuvenate, R_ADMIN|R_MOD, FALSE)
 /client/proc/cmd_admin_rejuvenate(mob/living/M as mob in SSmobs.mob_list)

@@ -35,7 +35,7 @@
 		if(c.can_use())
 			cameras += c
 	..()
-
+/*
 /mob/living/silicon/proc/provides_camera_vision()
 	return 0
 
@@ -44,6 +44,6 @@
 
 /mob/living/silicon/robot/provides_camera_vision()
 	return src.camera && src.camera.network.len
-
+*/
 /mob/living/silicon/ai/proc/seen_camera_turfs()
 	return seen_turfs_in_range(src, world.view)

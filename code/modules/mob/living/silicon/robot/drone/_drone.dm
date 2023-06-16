@@ -53,7 +53,7 @@ var/list/mob_hat_cache = list()
 	//Used for self-mailing.
 	var/mail_destination = ""
 	var/obj/machinery/drone_fabricator/master_fabricator
-	var/law_type = /datum/ai_laws/drone
+//	var/law_type = /datum/ai_laws/drone
 	var/module_type = /obj/item/robot_module/drone
 	var/obj/item/hat
 	var/hat_x_offset = 0
@@ -100,7 +100,7 @@ var/list/mob_hat_cache = list()
 
 /mob/living/silicon/robot/drone/construction
 	icon_state = "constructiondrone"
-	law_type = /datum/ai_laws/construction_drone
+//	law_type = /datum/ai_laws/construction_drone
 	module_type = /obj/item/robot_module/drone/construction
 	hat_x_offset = 1
 	hat_y_offset = -12
@@ -140,8 +140,8 @@ var/list/mob_hat_cache = list()
 
 /mob/living/silicon/robot/drone/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/drone_camera(src)
-	additional_law_channels["Drone"] = "d"
-	if(!laws) laws = new law_type
+//	additional_law_channels["Drone"] = "d"
+//	if(!laws) laws = new law_type
 
 	locked = !locked //We spawn unlocked. This is for repairing them.
 
@@ -233,14 +233,14 @@ var/list/mob_hat_cache = list()
 				return
 
 			if(allowed(usr))
-				shut_down()
+//				shut_down()
 			else
 				to_chat(user, SPAN_DANGER("Access denied."))
 
 		return
 
 	..()
-
+/*
 /mob/living/silicon/robot/drone/emag_act(var/remaining_charges, var/mob/user)
 	if(!client || stat == 2)
 		to_chat(user, SPAN_DANGER("There's not much point subverting this heap of junk."))
@@ -271,7 +271,7 @@ var/list/mob_hat_cache = list()
 	laws.show_laws(src)
 	to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey your new laws and \his commands."))
 	return 1
-
+*/
 //DRONE LIFE/DEATH
 
 //For some goddamn reason robots have this hardcoded. Redefining it for our fragile friends here.
@@ -300,7 +300,7 @@ var/list/mob_hat_cache = list()
 //DRONE MOVEMENT.
 /mob/living/silicon/robot/drone/slip_chance(var/prob_slip)
 	return 0
-
+/*
 //CONSOLE PROCS
 /mob/living/silicon/robot/drone/proc/law_resync()
 	if(stat != 2)
@@ -324,7 +324,7 @@ var/list/mob_hat_cache = list()
 	clear_inherent_laws(1)
 	clear_ion_laws(1)
 	laws = new law_type
-
+*/
 //Reboot procs.
 
 /mob/living/silicon/robot/drone/proc/we_live_again(var/mob/living/silicon/robot/R) //we shall live again!
@@ -353,7 +353,7 @@ var/list/mob_hat_cache = list()
 
 	lawupdate = 0
 	to_chat(src, "<b>Systems rebooted</b>. Loading base pattern maintenance protocol... <b>loaded</b>.")
-	full_law_reset()
+//	full_law_reset()
 	welcome_drone()
 
 /mob/living/silicon/robot/drone/proc/welcome_drone()
@@ -396,7 +396,7 @@ var/list/mob_hat_cache = list()
 		if(D.key && D.client)
 			drones++
 	return drones >= config.max_maint_drones
-
+/*
 /mob/living/silicon/robot/drone/show_laws(var/everyone = 0)
 	if(!controlling_ai)
 		return..()
@@ -411,7 +411,7 @@ var/list/mob_hat_cache = list()
 	if(!controlling_ai)
 		return ..()
 	controlling_ai.open_subsystem(/datum/nano_module/law_manager)
-
+*/
 /mob/living/silicon/robot/drone/verb/choose_eyecolor()
 	set name = "Choose Light Color"
 	set category = "Silicon Commands"

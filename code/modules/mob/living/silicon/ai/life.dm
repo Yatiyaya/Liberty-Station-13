@@ -1,3 +1,25 @@
+// Cleaner proc for creating powersupply for an AI.
+/mob/living/silicon/ai/proc/create_powersupply()
+	if(psupply)
+		qdel(psupply)
+	psupply = new/obj/machinery/ai_powersupply(src)
+
+// Returns percentage of AI's remaining backup capacitor charge (maxHealth - oxyloss).
+/mob/living/silicon/ai/proc/backup_capacitor()
+	return ((200 - getOxyLoss()) / 2)
+
+// Returns percentage of AI's remaining hardware integrity (maxHealth - (bruteloss + fireloss))
+/mob/living/silicon/ai/proc/hardware_integrity()
+	return (health-HEALTH_THRESHOLD_DEAD)/2
+
+// Shows capacitor charge and hardware integrity information to the AI in Status tab.
+/mob/living/silicon/ai/show_system_integrity()
+	if(!src.stat)
+		stat("Hardware integrity", "[hardware_integrity()]%")
+		stat("Internal capacitor", "[backup_capacitor()]%")
+	else
+		stat("Systems nonfunctional")
+
 /mob/living/silicon/ai/Life()
 	if (src.stat == DEAD)
 		return
@@ -32,11 +54,11 @@
 		handle_stunned()	// Handle EMP-stun
 		lying = 0			// Handle lying down
 
-		malf_process()
+//		malf_process()
 
-		if(APU_power && (hardware_integrity() < 50))
-			to_chat(src, SPAN_NOTICE("<b>APU GENERATOR FAILURE! (System Damaged)</b>"))
-			stop_apu(1)
+//		if(APU_power && (hardware_integrity() < 50))
+//			to_chat(src, SPAN_NOTICE("<b>APU GENERATOR FAILURE! (System Damaged)</b>"))
+//			stop_apu(1)
 
 		if (!is_blinded())
 			if (aiRestorePowerRoutine==2)
@@ -118,8 +140,8 @@
 									theAPC.equipment = 3
 									theAPC.update()
 									aiRestorePowerRoutine = 3
-									to_chat(src, "Here are your current laws:")
-									show_laws()
+//									to_chat(src, "Here are your current laws:")
+//									show_laws()
 									updateicon()
 							sleep(50)
 							theAPC = null

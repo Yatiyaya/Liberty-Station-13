@@ -35,7 +35,7 @@
 		return 1
 
 	// Following actions can only be used by non-silicon users, as they involve manipulation of laws.
-	if(issilicon(usr))
+/*	if(issilicon(usr))
 		return 0
 	if(href_list["PRG_purgeAiLaws"])
 		A.laws.clear_zeroth_laws()
@@ -60,7 +60,7 @@
 		A.add_supplied_law(sector, law_to_add)
 		to_chat(A, "<span class='danger'>Custom law uploaded to sector [sector]: [law_to_add].</span>")
 		return 1
-
+*/
 
 /datum/computer_file/program/aidiag/process_tick()
 	var/mob/living/silicon/ai/A = get_ai()
@@ -111,7 +111,7 @@
 		data["ai_capacitor"] = A.backup_capacitor()
 		data["ai_isdamaged"] = (A.hardware_integrity() < 100) || (A.backup_capacitor() < 100)
 		data["ai_isdead"] = (A.stat == DEAD)
-
+/*
 		var/list/all_laws[0]
 		for(var/datum/ai_law/L in A.laws.all_laws())
 			all_laws.Add(list(list(
@@ -120,7 +120,7 @@
 			)))
 
 		data["ai_laws"] = all_laws
-
+*/
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "aidiag.tmpl", "AI Maintenance Utility", 600, 400, state = state)

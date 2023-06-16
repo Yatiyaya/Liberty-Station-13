@@ -106,22 +106,6 @@
 		if(!shutup)
 			to_chat(src, "Shutting down APU... DONE")
 
-// Returns percentage of AI's remaining backup capacitor charge (maxHealth - oxyloss).
-/mob/living/silicon/ai/proc/backup_capacitor()
-	return ((200 - getOxyLoss()) / 2)
-
-// Returns percentage of AI's remaining hardware integrity (maxHealth - (bruteloss + fireloss))
-/mob/living/silicon/ai/proc/hardware_integrity()
-	return (health-HEALTH_THRESHOLD_DEAD)/2
-
-// Shows capacitor charge and hardware integrity information to the AI in Status tab.
-/mob/living/silicon/ai/show_system_integrity()
-	if(!src.stat)
-		stat("Hardware integrity", "[hardware_integrity()]%")
-		stat("Internal capacitor", "[backup_capacitor()]%")
-	else
-		stat("Systems nonfunctional")
-
 // Shows AI Malfunction related information to the AI.
 /mob/living/silicon/ai/show_malf_ai()
 	if(!check_special_role(ROLE_MALFUNCTION))

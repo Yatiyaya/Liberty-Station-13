@@ -66,7 +66,7 @@
 	var/obj/item/device/radio/borg/radio = null
 	var/mob/living/silicon/ai/connected_ai = null
 	var/obj/item/cell/large/cell
-	var/obj/machinery/camera/camera = null
+//	var/obj/machinery/camera/camera = null
 	var/obj/item/tank/jetpack/synthetic/jetpack = null
 
 	var/cell_emp_mult = 2
@@ -74,7 +74,7 @@
 	// Components are basically robot organs.
 	var/list/components = list()
 	var/vtech_added_speed = 0 //How much speed is added by vtech?
-	var/obj/item/device/mmi/mmi = null
+	var/obj/item/device/mmi/digital/robot/mmi = null
 
 	var/obj/item/stock_parts/matter_bin/storage = null
 
@@ -108,7 +108,7 @@
 
 	var/list/robot_verbs_default = list(
 		/mob/living/silicon/robot/proc/sensor_mode,
-		/mob/living/silicon/robot/proc/robot_checklaws
+//		/mob/living/silicon/robot/proc/robot_checklaws
 	)
 
 /mob/living/silicon/robot/proc/AddTrait(trait_type)
@@ -173,14 +173,14 @@
 
 	radio = new /obj/item/device/radio/borg(src)
 	common_radio = radio
-
+/*
 	if(!scrambledcodes && !camera)
 		camera = new /obj/machinery/camera(src)
 		camera.c_tag = real_name
 		camera.replace_networks(list(NETWORK_CEV_ERIS,NETWORK_ROBOTS))
 		if(wires.IsIndexCut(BORG_WIRE_CAMERA))
 			camera.status = 0
-
+*/
 	init()
 	initialize_components()
 	//if(!unfinished)
@@ -225,13 +225,13 @@
 
 /mob/living/silicon/robot/proc/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/robot_camera(src)
-	laws = new /datum/ai_laws/eris()
+//	laws = new /datum/ai_laws/eris()
 	var/new_ai = select_active_ai_with_fewest_borgs()
 	if(new_ai)
-		lawupdate = TRUE
+//		lawupdate = TRUE
 		connect_to_ai(new_ai)
-	else
-		lawupdate = FALSE
+//	else
+//		lawupdate = FALSE
 
 	playsound(loc, 'sound/voice/liveagain.ogg', 75, 1)
 	AddMovementHandler(/datum/movement_handler/robot/use_power, /datum/movement_handler/mob/space)
@@ -242,7 +242,7 @@
 
 /mob/living/silicon/robot/proc/sync()
 	if(lawupdate && connected_ai)
-		lawsync()
+//		lawsync()
 		photosync()
 
 /mob/living/silicon/robot/drain_power(var/drain_check, var/surge, var/amount = 0)
@@ -382,8 +382,8 @@
 	name = real_name
 
 	//We also need to update name of internal camera.
-	if (camera)
-		camera.c_tag = changed_name
+//	if (camera)
+//		camera.c_tag = changed_name
 
 	if(!custom_sprite) //Check for custom sprite
 		set_custom_sprite()
@@ -1077,8 +1077,8 @@
 	canmove = TRUE
 	scrambledcodes = 1
 	//Disconnect it's camera so it's not so easily tracked.
-	if(camera)
-		camera.clear_all_networks()
+//	if(camera)
+//		camera.clear_all_networks()
 
 
 /mob/living/silicon/robot/proc/ResetSecurityCodes()
@@ -1254,7 +1254,7 @@
 		connected_ai.connected_robots |= src
 		notify_ai(ROBOT_NOTIFICATION_NEW_UNIT)
 		sync()
-
+/*
 /mob/living/silicon/robot/emag_act(var/remaining_charges, var/mob/user)
 	if(!opened)//Cover is closed
 		if(locked)
@@ -1320,7 +1320,7 @@
 				to_chat(user, "You fail to hack [src]'s interface.")
 				to_chat(src, "Hack attempt detected.")
 			return TRUE
-
+*/
 /mob/living/silicon/robot/incapacitated(var/incapacitation_flags = INCAPACITATION_DEFAULT)
 	if ((incapacitation_flags & INCAPACITATION_FORCELYING) && (lockcharge || !is_component_functioning("actuator")))
 		return TRUE

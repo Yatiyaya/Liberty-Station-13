@@ -3,7 +3,7 @@
 	scrambledcodes = 1
 	icon_state = "securityrobot"
 	modtype = "Security"
-	lawchannel = "State"
+//	lawchannel = "State"
 
 
 /mob/living/silicon/robot/syndicate/New()
@@ -16,7 +16,7 @@
 /mob/living/silicon/robot/syndicate/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/robot_camera(src)
 
-	laws = new /datum/ai_laws/syndicate_override
+//	laws = new /datum/ai_laws/syndicate_override
 	cut_overlays()
 
 	new /obj/item/robot_module/syndicate(src)

@@ -39,12 +39,15 @@ var/global/list/robot_modules = list(
 	var/sprites = list()
 	var/can_be_pushed = 1
 	var/no_slip = 0
+
 	var/list/modules = list()
+	var/list/components =list()
+	var/list/subsystems = list()
+
 	var/list/datum/matter_synth/synths = list()
 	var/list/emag = list()
 	var/obj/item/malfAImodule = null
 	var/obj/item/borg/upgrade/jetpack = null
-	var/list/subsystems = list()
 	var/list/obj/item/borg/upgrade/supported_upgrades = list()
 
 	// Bookkeeping
@@ -78,7 +81,7 @@ var/global/list/robot_modules = list(
 	if(robot_traits)
 		R.AddTrait(robot_traits)
 
-	add_camera_networks(R)
+//	add_camera_networks(R)
 	remove_languages(R) //So we dont stack languages
 	add_languages(R)
 	add_subsystems(R)
@@ -129,7 +132,7 @@ var/global/list/robot_modules = list(
 /obj/item/robot_module/proc/Reset(var/mob/living/silicon/robot/R)
 	if(robot_traits) // removes module-only traits
 		R.RemoveTrait(robot_traits)
-	remove_camera_networks(R)
+//	remove_camera_networks(R)
 	remove_languages(R)
 	add_languages(R) //So we dont lose common and are normal languages of being basic
 	remove_subsystems(R)
@@ -225,7 +228,7 @@ var/global/list/robot_modules = list(
 	for(var/original_language in original_languages)
 		R.add_language(original_language, original_languages[original_language])
 	original_languages.Cut()
-
+/*
 /obj/item/robot_module/proc/add_camera_networks(var/mob/living/silicon/robot/R)
 	if(R.camera && (NETWORK_ROBOTS in R.camera.network))
 		for(var/network in networks)
@@ -237,7 +240,7 @@ var/global/list/robot_modules = list(
 	if(R.camera)
 		R.camera.remove_networks(added_networks)
 	added_networks.Cut()
-
+*/
 /obj/item/robot_module/proc/add_subsystems(var/mob/living/silicon/robot/R)
 	for(var/subsystem_type in subsystems)
 		R.init_subsystem(subsystem_type)

@@ -25,7 +25,7 @@
 	endWhen = rand(500, 1500)
 
 /datum/event/ionstorm/announce()
-	for (var/mob/living/silicon/ai/target in world)
+/*	for (var/mob/living/silicon/ai/target in world)
 		var/random_player = get_random_humanoid_player_name("The Captain")
 		var/list/laws = list(	"You must always lie.",
 								"Happiness is mandatory.",
@@ -93,7 +93,7 @@
 		to_chat(target, law)
 		target.add_ion_law(law)
 		target.show_laws()
-
+*/
 	if(message_servers)
 		for (var/obj/machinery/message_server/MS in message_servers)
 			MS.spamfilter.Cut()
@@ -143,7 +143,7 @@
 Revamping the random laws so they don't suck.
 Would like to add a law like "Law x is _______" where x = a number, and _____ is something that may redefine a law, (Won't be aimed at asimov)
 */
-
+/*
 	//AI laws
 	for(var/mob/living/silicon/ai/M in GLOB.living_mob_list)
 		if(M.stat != 2 && M.see_in_dark != 0)
@@ -241,7 +241,7 @@ Would like to add a law like "Law x is _______" where x = a number, and _____ is
 					to_chat(M, "\red THE STATION IS [who2pref] [who2]...LAWS UPDATED")
 					to_chat(M, "<br>")
 					M.add_ion_law("THE STATION IS [who2pref] [who2]")
-
+*/
 	if(botEmagChance)
 		for(var/obj/machinery/bot/bot in world)
 			if(prob(botEmagChance))

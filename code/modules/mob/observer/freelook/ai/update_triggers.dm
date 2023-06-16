@@ -1,3 +1,4 @@
+/*
 #define BORG_CAMERA_BUFFER 30
 
 // ROBOT MOVEMENT
@@ -32,7 +33,7 @@
 					updating = 0
 
 #undef BORG_CAMERA_BUFFER
-
+*/
 // CAMERA
 
 // An addition to deactivate which removes/adds the camera from the chunk list based on if it works or not.

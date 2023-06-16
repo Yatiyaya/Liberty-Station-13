@@ -2,6 +2,7 @@
 * AI-specific *
 **************/
 /obj/item/device/camera/siliconcam
+	track
 	var/in_camera_mode = 0
 	var/photos_taken = 0
 	var/list/obj/item/photo/aipictures = list()

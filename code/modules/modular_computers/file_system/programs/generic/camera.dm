@@ -9,8 +9,8 @@
 			return access_moebius
 		if(NETWORK_MINE)
 			return access_mailsorting // Cargo office - all cargo staff should have access here.
-		if(NETWORK_ROBOTS)
-			return access_rp
+//		if(NETWORK_ROBOTS)
+//			return access_rp
 		if(NETWORK_PRISON, NETWORK_GATE)
 			return access_security
 		if(NETWORK_PROP)

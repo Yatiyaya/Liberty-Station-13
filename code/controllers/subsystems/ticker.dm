@@ -502,7 +502,7 @@ SUBSYSTEM_DEF(ticker)
 				else
 					to_chat(Player, "<font color='red'><b>You did not survive today's events on the [station_name()]...</b></font>")
 	to_chat(world, "<br>")
-
+/*
 	for(var/mob/living/silicon/ai/aiPlayer in SSmobs.mob_list)
 		if(aiPlayer.stat != DEAD)
 			to_chat(world, "<b>[aiPlayer.name] (Played by: [aiPlayer.key])'s laws at the end of the round were:</b>")
@@ -528,7 +528,7 @@ SUBSYSTEM_DEF(ticker)
 	var/dronecount = GLOB.drones.len
 	if(dronecount)
 		to_chat(world, "<b>There [dronecount>1 ? "were" : "was"] [dronecount] industrious maintenance [dronecount>1 ? "drones" : "drone"] at the end of this round.</b>")
-
+*/
 	GLOB.storyteller.declare_completion()//To declare normal completion.
 	scoreboard()//scores
 	//Ask the event manager to print round end information
