@@ -653,3 +653,96 @@
 		to_chat(SPAN_WARNING("[src] won't seem to fit!"))
 		return FALSE
 	..() */ //super doesn't work lol
+
+/obj/item/clothing/UNION//obj/item/clothing/suit/space/void/atmos
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof, this model has been reinforced with extra layers of armor giving it a better defense in critical areas of the body."
+	icon_state = "heavy_engineer_suit"
+	name = "Terra Engineer Heavy Protection Suit"
+	item_state = "heavy_engineer_suit"
+	slowdown = 0.35
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/atmos
+	stiffness = MEDIUM_STIFFNESS
+
+/obj/item/clothing/suit/space/void/security/equipped
+	tank = /obj/item/tank/jetpack/oxygen
+	/obj/item/clothing/UNION/suit/space/void/atmos
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof while keeps his lightweight."
+	icon_state = "engineer_suit"
+	name = "Terra Engineer Protection Suit"
+	item_state = "engineer_suit"
+	slowdown = 0.20
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/atmos
+	stiffness = MEDIUM_STIFFNESS
+
+/obj/item/clothing/suit/space/void/security/equipped
+	tank = /obj/item/tank/jetpack/oxygen
+
+/obj/item/clothing/UNION/head/helmet/space/void/atmos
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight."
+	name = "Terra Engineer Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "engineer_helmet"
+	item_state = "engineer_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = MEDIUM_OBSCURATION
+
+	/obj/item/clothing/UNION/head/helmet/space/void/atmos
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model seems to have been modified to become a heavy armored helmet."
+	name = "Terra Engineer Heavy Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "heavy_engineer_helmet"
+	item_state = "heavy_engineer_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 50,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = MEDIUM_OBSCURATION

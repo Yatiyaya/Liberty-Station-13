@@ -520,3 +520,5 @@
 				/obj/item/clothing/accessory/choker/silver_bell = 2,
 				/obj/item/clothing/accessory/choker/silver_bell_small = 3
 				))
+	/obj/item/clothing/UNION
+		spawn_nothing_percentage = 0

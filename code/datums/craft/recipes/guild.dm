@@ -300,12 +300,12 @@
 	)
 
 /datum/craft_recipe/terra/technosuit
-	name = "'Mark V' environmental protection suit"
-	result = /obj/item/clothing/suit/armor/vest/technomancersuit
+	name = "'Terra Engineer Protection Suit"
+	result = /obj/item/clothing/UNION/suit/space/void/atmos
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SAWING, 60, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
@@ -316,19 +316,19 @@
 	)
 
 /datum/craft_recipe/terra/technohelmet
-	name = "'Mark V' environmental protection helmet"
-	result = /obj/item/clothing/head/helmet/technomancersuit
+	name = "'Terra Engineer Protection Helmet"
+	result = /obj/item/clothing/UNION/head/helmet/space/void/atmos
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SAWING, 60, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
-		list(/obj/item/stack/cable_coil, 15, "time" = 20),
+		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS), "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
+		list(QUALITY_SCREW_DRIVING, 35, "time" = 60),
+		list(QUALITY_BOLT_TURNING, 35, "time" = 40)
 	)
 
 /datum/craft_recipe/terra/swat_yellow
