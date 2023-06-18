@@ -73,8 +73,7 @@
 	path = /obj/item/clothing/accessory/job/cape/service
 	slot = slot_wear_suit
 
-/datum/gear/factionservice/winterbootsbotany
+/datum/gear/faction_skylight/winterbootsbotany
 	display_name = "winter boots, botany"
 	path = /obj/item/clothing/shoes/winter/botany
-	allowed_roles = list("Gardener")
 	slot = slot_shoes
