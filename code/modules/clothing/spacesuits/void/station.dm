@@ -8,8 +8,8 @@
 	brightness_on = 4 //luminosity when on
 	light_overlay = "hardhat_light"
 
-	icon_state = "union worker hat"
-	item_state = "union worker hat"
+	icon_state = "technohelmet"
+	item_state = "technohelmet"
 	light_overlay = "technohelmet_light"
 	item_state_slots = list(
 		slot_l_hand_str = "eng_helm",
@@ -34,8 +34,8 @@
 /obj/item/clothing/suit/space/void/engineering
 	name = "engineering voidsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
-	icon_state = "union worker"
-	item_state = "union worker"
+	icon_state = "technosuit"
+	item_state = "technosuit"
 	armor_list = list(
 		melee = 35,
 		bullet = 30,
@@ -148,8 +148,8 @@
 	brightness_on = 6 //luminosity when on
 	light_overlay = "hardhat_light"
 
-	icon_state = "mining_helmet"
-	item_state = "mining_helmet"
+	icon_state = "miner_voidsuit_helmet"
+	item_state = "miner_voidsuit_helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "mining_helm",
 		slot_r_hand_str = "mining_helm",
@@ -167,8 +167,8 @@
 /obj/item/clothing/suit/space/void/mining
 	name = "mining voidsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
-	item_state = "miner_suit"
-	icon_state = "miner_suit"
+	item_state = "miner_voidsuit"
+	icon_state = "miner_voidsuit"
 	slowdown = 0.35
 	armor_list = list(
 		melee = 50,
