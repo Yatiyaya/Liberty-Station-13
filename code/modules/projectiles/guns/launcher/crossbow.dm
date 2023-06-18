@@ -52,7 +52,7 @@
 	fire_delay = 25
 	slot_flags = SLOT_BACK
 	safety = FALSE
-	twohanded = TRUE
+	twohanded = FALSE // Let's give it an edge over bows, easier reload too.
 	load_method = SINGLE_CASING
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/rod_bolt
@@ -195,7 +195,7 @@
 	fire_sound = 'sound/weapons/rail.ogg' // Basically a downgraded myrmidon.
 	slot_flags = null
 	draw_time = 7.5
-	superheat_cost = 150 //guild design, more efficient or something
+	superheat_cost = 150
 	var/stored_matter = 0
 	var/max_stored_matter = 60
 	var/boltcost = 5
@@ -214,6 +214,7 @@
 		flick("[icon_state]-empty", src)
 
 /obj/item/gun/projectile/crossbow/RCD/attack_self(mob/living/user as mob)
+
 	if(tension)
 		user.visible_message("[user] relaxes the tension on [src]'s string.","You relax the tension on [src]'s string.")
 		if(chambered)
@@ -231,18 +232,36 @@
 		draw(user)
 
 /obj/item/gun/projectile/crossbow/RCD/attackby(obj/item/W as obj, mob/user as mob)
+
 	var/obj/item/stack/material/M = W
+
 	if(istype(M) && M.material.name == MATERIAL_COMPRESSED_MATTER)
 		var/amount = min(M.get_amount(), round(max_stored_matter - stored_matter))
 		if(M.use(amount) && stored_matter < max_stored_matter)
 			stored_matter += amount
 			playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
-			to_chat(user, "<span class='notice'>You load [amount] Compressed Matter into \the [src].</span>. The RXD now holds [stored_matter]/[max_stored_matter] matter-units.")
+			to_chat(user, "<span class='notice'>You load [amount * 2] Compressed Matter into \the [src].</span> The RXD now holds [stored_matter]/[max_stored_matter] matter-units.")
 			update_icon()	//Updates the ammo counter
 		if (M.use(amount) && stored_matter >= max_stored_matter)
 			to_chat(user, "<span class='notice'>The RXD is full.")
+
+	// Alternatively, load it with steel sheets
+	if(istype(M, /obj/item/stack/material/steel))
+		var/metal_amount = min(M.get_amount(), round(max_stored_matter - stored_matter))
+		if(M.use(metal_amount) && stored_matter < max_stored_matter)
+			stored_matter += metal_amount
+			playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
+			to_chat(user, "<span class='notice'>You load [metal_amount * 2] metal sheets into \the [src].</span> The RXD now holds [stored_matter]/[max_stored_matter] matter-units.")
+			update_icon()
+
+		if (M.use(metal_amount) && stored_matter >= max_stored_matter)
+			to_chat(user, "<span class='notice'>The RXD is full.")
+			return
+
 	else
-		..()
+		..() // Load a rod and use as a normal crossbow.
+
+	// Reclaim a forged bolt and get back 5 compressed matter
 	if(istype(W, /obj/item/arrow/rcd))
 		var/obj/item/arrow/rcd/A = W
 		if((stored_matter + 5) > max_stored_matter)

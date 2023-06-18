@@ -73,6 +73,16 @@
 	path = /obj/item/clothing/suit/gorka/toggle/gorka_ih
 	slot = slot_wear_suit
 
+/datum/gear/factionsecurity/afghanka_pants
+	display_name = "afghanka pants, security"
+	path = /obj/item/clothing/under/rank/security/afghanka_pants
+	slot = slot_w_uniform
+
+/datum/gear/factionsecurity/afghanka_jacket
+	display_name = "afghanka jacket, security"
+	path = /obj/item/clothing/suit/storage/toggle/afghanka_watch
+	slot = slot_wear_suit
+
 /datum/gear/factionsecurity/gorkasecurity
 	display_name = "gorka jumpsuit, security"
 	path = /obj/item/clothing/under/rank/security/gorka_ih

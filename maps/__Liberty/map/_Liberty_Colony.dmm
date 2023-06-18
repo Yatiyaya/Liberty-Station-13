@@ -8685,6 +8685,8 @@
 /obj/item/remains/human,
 /obj/item/tool/weldingtool/improvised,
 /obj/item/clothing/glasses/blindfold/tape,
+/obj/structure/invislightsmall,
+/obj/item/clothing/mask/gas/hox,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor3north)
 "ceH" = (
@@ -15682,10 +15684,11 @@
 /turf/simulated/floor/industrial/blue_slates,
 /area/liberty/maintenance/undergroundfloor2north)
 "dLO" = (
-/obj/machinery/gibber,
 /obj/effect/decal/cleanable/dirt,
-/obj/random/cluster/roaches/low_chance,
-/turf/simulated/floor/industrial/cafe_large,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "dLS" = (
 /obj/machinery/light{
@@ -15945,6 +15948,14 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/sec)
+"dOW" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	id = "ProspShop"
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/pros/prep)
 "dOY" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/tiled/techmaint_perforated,
@@ -20218,7 +20229,7 @@
 "eXY" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
-/mob/living/simple_animal/hostile/jelly/bloat,
+/mob/living/simple_animal/hostile/carp/baby,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -25544,10 +25555,11 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "gmh" = (
-/obj/structure/catwalk,
-/mob/living/simple_animal/hostile/jelly,
-/turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3south)
+/obj/machinery/light/streetlight{
+	pixel_y = 11
+	},
+/turf/simulated/floor/snow,
+/area/liberty/outside/range)
 "gmj" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark,
@@ -26541,9 +26553,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "gzd" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/freezer/kitchen/mining,
 /obj/item/storage/fancy/egg_box,
@@ -26552,6 +26561,7 @@
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/condiment/sugar,
+/obj/structure/invislight,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "gzr" = (
@@ -26608,7 +26618,9 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "gAa" = (
-/obj/machinery/door/airlock/glass_security,
+/obj/machinery/door/airlock/security{
+	name = "Anatoli's Armaments"
+	},
 /obj/structure/barricade,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/oldarmory)
@@ -32269,6 +32281,7 @@
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/board,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/knife,
+/obj/machinery/light/small,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "hSR" = (
@@ -34047,6 +34060,9 @@
 	blood_color = "#A10808"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "isd" = (
@@ -36183,6 +36199,7 @@
 /obj/item/remains/human,
 /obj/structure/boulder,
 /obj/item/tool/shovel/improvised,
+/obj/item/clothing/mask/gas/cha,
 /turf/simulated/floor/rock,
 /area/colony)
 "iUk" = (
@@ -36410,6 +36427,7 @@
 /obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
 /obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
 /obj/item/ammo_magazine/speed_loader_magnum_40/highvelocity,
+/obj/item/gun/projectile/revolver/wristbreaker,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "iXI" = (
@@ -45626,6 +45644,7 @@
 /obj/effect/decal/cleanable/ash,
 /obj/item/stash_spawner,
 /obj/landmark/storyevent/midgame_stash_spawn,
+/obj/item/clothing/mask/gas/dal,
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/liberty/maintenance/oldarmory)
 "lmO" = (
@@ -48665,8 +48684,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "maN" = (
-/obj/item/contraband/poster/placed/advertisement/eat,
-/turf/simulated/wall,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/advertisement/eat{
+	pixel_y = -32
+	},
+/turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "maQ" = (
 /obj/structure/shuttle_part/science{
@@ -49425,7 +49447,7 @@
 "mmQ" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
-/mob/living/simple_animal/hostile/jelly,
+/mob/living/simple_animal/hostile/carp,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
@@ -52680,7 +52702,9 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nge" = (
-/obj/machinery/light/streetlight,
+/obj/machinery/light/streetlight{
+	pixel_y = 11
+	},
 /obj/effect/floor_decal/steeldecal/steel_decals_central7,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/hallway/surface/section1)
@@ -57099,7 +57123,6 @@
 "oko" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
-/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "okq" = (
@@ -58371,6 +58394,8 @@
 	amount = 5
 	},
 /obj/item/remains/human,
+/obj/item/reagent_containers/food/snacks/meat/human,
+/obj/item/reagent_containers/food/snacks/meat/human,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "oAB" = (
@@ -59631,7 +59656,9 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/hallway/surface/section1)
 "oPM" = (
-/obj/machinery/door/airlock/multi_tile/glass,
+/obj/machinery/door/airlock/multi_tile/glass{
+	name = "Unisex Showers"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/maintenance/undergroundfloor3north)
 "oPN" = (
@@ -60686,7 +60713,6 @@
 "pdy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/dinnerware,
-/obj/structure/invislight,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
@@ -60950,7 +60976,7 @@
 /turf/simulated/floor/beach/water/shallow,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "pgD" = (
-/obj/structure/table/steel,
+/obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/food/condiment/peppermill,
 /obj/item/reagent_containers/food/drinks/dry_ramen,
 /obj/effect/decal/cleanable/dirt,
@@ -65684,6 +65710,7 @@
 /area/liberty/quartermaster/disposaldrop)
 "qlD" = (
 /obj/structure/closet/secure_closet/personal/hydroponics,
+/obj/item/circuitboard/biogenerator,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "qlI" = (
@@ -65975,6 +66002,10 @@
 /obj/random/traps/low_chance,
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor2south)
+"qpQ" = (
+/obj/random/cluster/termite_no_despawn/low_chance,
+/turf/simulated/floor/asteroid/dirt/dust,
+/area/liberty/maintenance/undergroundfloor1oldgarden)
 "qpW" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "6,1";
@@ -67027,7 +67058,7 @@
 /area/liberty/hallway/side/f2section1)
 "qDW" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jelly,
+/mob/living/simple_animal/hostile/sargoyle,
 /turf/simulated/floor/industrial/white_large_slates,
 /area/liberty/maintenance/undergroundfloor3south)
 "qDY" = (
@@ -70574,6 +70605,9 @@
 /obj/machinery/cooking_with_jane/oven,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/oven,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/pot,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "rxW" = (
@@ -71429,7 +71463,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/rnd/xenobiology)
 "rKy" = (
-/obj/structure/table/steel,
+/obj/structure/table/steel_reinforced,
 /obj/structure/noticeboard{
 	pixel_y = 28
 	},
@@ -72155,7 +72189,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/junkfood/rotten,
-/obj/item/contraband/poster/placed/advertisement/sun_kist{
+/obj/item/contraband/poster/placed/advertisement/eat{
 	pixel_y = 32
 	},
 /turf/simulated/floor/industrial/cafe_large,
@@ -74876,9 +74910,10 @@
 /turf/simulated/floor/plating/under,
 /area/turret_protected/ai)
 "szL" = (
-/mob/living/simple_animal/hostile/jelly,
-/turf/simulated/floor/rock,
-/area/liberty/maintenance/undergroundfloor3south)
+/mob/living/simple_animal/hostile/retaliate/croakerlord,
+/obj/item/clothing/mask/costume/animal/frog,
+/turf/simulated/floor/beach/water/jungledeep,
+/area/liberty/maintenance/caveameridian)
 "szT" = (
 /obj/structure/bed/psych{
 	desc = "It can be a bit noisy, but still serves well.";
@@ -77019,7 +77054,7 @@
 /area/liberty/outside/forest)
 "sYD" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jelly,
+/mob/living/simple_animal/hostile/sargoyle,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "sYE" = (
@@ -77939,6 +77974,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/invislightsmall,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/maintenance/undergroundfloor3north)
 "tlQ" = (
@@ -80939,9 +80975,14 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/crew_quarters)
 "tXN" = (
-/obj/random/mob/croaker/low_chance,
-/turf/simulated/floor/beach/water/jungledeep,
-/area/liberty/maintenance/caveameridian)
+/obj/effect/overlay/water,
+/obj/effect/overlay/water/top,
+/mob/living/simple_animal/hostile/carp/pike,
+/turf/simulated/floor/beach/water/jungledeep{
+	desc = "Filthy, stinking bilge water.";
+	name = "murky water"
+	},
+/area/liberty/maintenance/undergroundfloor3south)
 "tXZ" = (
 /obj/random/ammo,
 /mob/living/carbon/superior_animal/giant_spider/tarantula/emperor,
@@ -81886,6 +81927,10 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/rnd/xenobiology/xenoflora)
+"ujr" = (
+/mob/living/simple_animal/hostile/helldiver,
+/turf/simulated/floor/asteroid/dirt/dark,
+/area/liberty/maintenance/undergroundfloor3south)
 "ujv" = (
 /obj/structure/shuttle_part/mining{
 	icon_state = "17,17"
@@ -83186,7 +83231,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/chapelritualroom)
 "uAb" = (
-/obj/structure/table/steel,
+/obj/structure/table/steel_reinforced,
 /obj/random/knife/low_chance,
 /obj/machinery/light/small,
 /turf/simulated/floor/industrial/checker_large,
@@ -85231,7 +85276,7 @@
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "vfe" = (
 /obj/structure/table/woodentable,
-/obj/item/flame/lighter/zippo/engraved,
+/obj/item/flame/lighter/zippo/moff,
 /obj/random/rations/roachcube,
 /turf/simulated/floor/rock/manmade/concrete,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -87902,7 +87947,9 @@
 /area/liberty/bonfire/skyyard)
 "vMQ" = (
 /obj/effect/floor_decal/steeldecal/steel_decals_central7,
-/obj/machinery/light/streetlight,
+/obj/machinery/light/streetlight{
+	pixel_y = 11
+	},
 /obj/structure/railing{
 	dir = 8;
 	tag = "icon-railing0 (WEST)"
@@ -88632,7 +88679,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jelly,
+/mob/living/simple_animal/hostile/sargoyle,
 /turf/simulated/floor/industrial/white_large_slates,
 /area/liberty/maintenance/undergroundfloor3south)
 "vVS" = (
@@ -89351,6 +89398,7 @@
 /obj/random/credits/low_chance,
 /obj/random/gun_combat,
 /obj/item/clothing/gloves/dusters/gold,
+/obj/item/flame/lighter/zippo/royal,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor3west)
 "weW" = (
@@ -93800,7 +93848,7 @@
 /area/liberty/command/gmaster)
 "xiB" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jelly,
+/mob/living/simple_animal/hostile/sargoyle,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -94015,7 +94063,9 @@
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor3north)
 "xkG" = (
-/obj/machinery/door/airlock/glass_security,
+/obj/machinery/door/airlock/security{
+	name = "Anatoli's Armaments"
+	},
 /obj/structure/barricade,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/oldarmory)
@@ -96369,6 +96419,7 @@
 "xQk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
+/obj/item/remains/mouse,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "xQt" = (
@@ -105326,7 +105377,7 @@ emu
 fCm
 lhY
 ttS
-ttS
+ujr
 lhY
 wYt
 uRQ
@@ -105858,7 +105909,7 @@ mbZ
 vmY
 wsV
 bOV
-tXN
+bOV
 bOV
 bOV
 wsV
@@ -106061,7 +106112,7 @@ vmY
 wsV
 umf
 bOV
-bOV
+szL
 bOV
 wsV
 vmY
@@ -107756,7 +107807,7 @@ kzy
 kzy
 kzy
 cFC
-szL
+mBx
 mBx
 rob
 eWc
@@ -107945,14 +107996,14 @@ cTb
 byw
 gws
 tng
-gmh
+tng
 asZ
 mBx
 kzy
 kzy
 nuP
 kzy
-kzy
+tXN
 nuP
 cFC
 kzy
@@ -108759,7 +108810,7 @@ uRQ
 mBx
 mBx
 kzy
-mmQ
+eXY
 kzy
 kzy
 kzy
@@ -116180,7 +116231,7 @@ emu
 mjh
 cUo
 vGD
-dLO
+uzz
 mjh
 emu
 emu
@@ -116381,8 +116432,8 @@ mjh
 mjh
 mjh
 mjh
-mjh
 xiO
+mjh
 mjh
 mjh
 emu
@@ -116781,14 +116832,14 @@ nNP
 omv
 omv
 omv
-maN
-bQm
+mjh
+dLO
 bQm
 xsI
 bQm
 bQm
 hSD
-maN
+mjh
 emu
 mjh
 hjw
@@ -117799,7 +117850,7 @@ eNj
 bQm
 bQm
 bQm
-bQm
+maN
 mjh
 emu
 emu
@@ -118173,7 +118224,7 @@ wxu
 tKR
 fgN
 jMV
-mhe
+lxm
 mjh
 emu
 emu
@@ -142884,7 +142935,7 @@ vvb
 xXB
 nPP
 wWO
-jSG
+qpQ
 nPP
 wWO
 jSG
@@ -203043,7 +203094,7 @@ jux
 veD
 ngd
 rgr
-rnw
+dOW
 xGh
 iJK
 aSy
@@ -203245,7 +203296,7 @@ jux
 veD
 ngd
 rgr
-rnw
+dOW
 bcu
 bcu
 bNZ
@@ -203649,7 +203700,7 @@ jux
 veD
 ngd
 rgr
-rnw
+dOW
 kpg
 kPC
 uzy
@@ -204701,7 +204752,7 @@ ryx
 iVo
 ryx
 rNg
-iyl
+gmh
 gwv
 rQC
 eEA

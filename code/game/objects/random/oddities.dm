@@ -74,7 +74,7 @@
 				/obj/item/tool/nailstick/ogre = 1,
 				/obj/item/tool/wrench/big_wrench/freedom = 1,
 				/obj/item/tool/saw/hyper/doombringer = 1,
-				/obj/item/material/butterfly/frenchman = 1,
+				/* /obj/item/material/butterfly/frenchman = 1, */ // Enough of this meme. This ain't bluecross worthy.
 				//Misc - things that are not a "gun" but still good for this
 				/* /obj/item/oddity/nt/seal = 1, */ // No.
 				/obj/item/soap/bluespase = 0.5))

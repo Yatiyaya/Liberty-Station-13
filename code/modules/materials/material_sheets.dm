@@ -348,6 +348,11 @@
 	default_type = MATERIAL_LEATHER
 	price_tag = 10
 
+// For recycling purposes, very low quantity so that Trappers are still way better at this.
+/obj/item/stack/material/leather/random
+	rand_min = 1
+	rand_max = 4
+
 /obj/item/stack/material/bone
 	name = "bones"
 	desc = "A collection of random bones and bits."

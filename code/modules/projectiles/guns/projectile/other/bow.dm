@@ -3,7 +3,7 @@
 
 /obj/item/gun/projectile/bow
 	name = "simple bow"
-	desc = "A incredibly basic bow. Fires arrows."
+	desc = "An incredibly basic bow. Fires arrows."
 	icon = 'icons/obj/guns/bow.dmi'
 	icon_state = "bow"
 	item_state = "bow"
@@ -20,7 +20,7 @@
 	overcharge_timer_step = 7.5
 	price_tag = 100
 	init_firemodes = list(
-			list(mode_name="normal", mode_desc="Draw the bow to fire a shot", mode_type = /datum/firemode/charge, icon="charge")
+			list(mode_name="normal", mode_desc="Hold the string drawn, and release to fire an arrow", mode_type = /datum/firemode/charge, icon="charge")
 			)
 	serial_type = null
 	twohanded = TRUE
@@ -71,7 +71,7 @@
 
 
 /obj/item/gun/projectile/bow/begin_charge(mob/living/user)
-	to_chat(user, SPAN_NOTICE("You begin drawing back the string on [src]."))
+	to_chat(user, SPAN_NOTICE("You begin drawing back the string on \the [src]."))
 	playsound(loc, 'sound/weapons/bow_draw.ogg', 50, 1)
 	overcharge_timer = addtimer(CALLBACK(src, .proc/add_charge, user), overcharge_timer_step, TIMER_STOPPABLE)
 
@@ -79,7 +79,7 @@
 	deltimer(overcharge_timer)
 	if(get_holding_mob() == user && chambered)
 		overcharge_level = min(overcharge_level + 1 + get_overcharge_add(user), overcharge_max)
-		to_chat(user, SPAN_NOTICE("You continue drawing the bow back..."))
+		to_chat(user, SPAN_NOTICE("You continue drawing the string back..."))
 		update_icon()
 		if(overcharge_level < overcharge_max)
 			overcharge_timer = addtimer(CALLBACK(src, .proc/add_charge, user), overcharge_timer_step, TIMER_STOPPABLE)
@@ -105,7 +105,7 @@
 	matter = list(MATERIAL_BONE = 10, MATERIAL_WOOD = 10, MATERIAL_PLASTIC = 5)
 	penetration_multiplier = 1.5
 	gun_tags = list(ARROW_FIRING)
-	zoom_factors = list(2.0)
+	zoom_factors = list(1.0) // Let's not get out of hand here.
 	extra_damage_mult_scoped = 0.2
 	overcharge_timer_step = 4
 	price_tag = 1200
@@ -115,7 +115,7 @@
 /obj/item/gun/projectile/bow/xbow
 	name = "\"Whaler\" heavy compound bow"
 	desc = "A heavy compound bow made from plastic, with a plasteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
-	A modified \"Watchman\" scope is attached to the riser, with arrow drop markers for various weights of arrow present."
+	A scope is attached to the riser, with arrow drop markers for various weights of arrow present."
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_PLASMAGLASS = 2)
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2

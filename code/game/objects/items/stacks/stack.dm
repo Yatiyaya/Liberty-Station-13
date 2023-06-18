@@ -340,6 +340,7 @@
 	if (transfer && src.use(transfer))
 		var/obj/item/stack/S = new src.type(loc, transfer)
 		S.color = color
+		S.update_icon()
 		if (prob(transfer/orig_amount * 100))
 			transfer_fingerprints_to(S)
 			if(blood_DNA)
@@ -382,6 +383,7 @@
 		var/transfer = src.transfer_to(item)
 		if (transfer)
 			to_chat(user, SPAN_NOTICE("You add a new [item.singular_name] to the stack. It now contains [item.amount] [item.singular_name]\s."))
+			update_icon()
 		if(!amount)
 			break
 

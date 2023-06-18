@@ -162,13 +162,13 @@
 			return
 
 		//Override for somatoray projectiles.
-		if(istype(Proj ,/obj/item/projectile/energy/floramut) && prob(20))
-			mutate(prob(25) ? 3 : 1)
+		if(istype(Proj ,/obj/item/projectile/energy/floramut) && prob(25))
+			mutate(prob(75) ? 3 : 1) // Let's not be so punishing
 			return
-		else if(istype(Proj ,/obj/item/projectile/energy/florayield) && prob(20))
+		else if(istype(Proj ,/obj/item/projectile/energy/florayield) && prob(25))
 			yield_mod = min(10,yield_mod+rand(1,2))
 			return
-		else if(istype(Proj ,/obj/item/projectile/energy/floraevolve) && prob(20))
+		else if(istype(Proj ,/obj/item/projectile/energy/floraevolve) && prob(25))
 			mutate(4)
 			return
 

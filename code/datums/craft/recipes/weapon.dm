@@ -52,18 +52,6 @@
 		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL)
 	)
 
-/datum/craft_recipe/weapon/crossbow
-	name = "crossbow"
-	result = /obj/item/gun/projectile/crossbow
-	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD), //old frame recipe
-		list(/obj/item/stack/rods, 3, "time" = 20),
-		list(QUALITY_WELDING, 10, "time" = 30),
-		list(/obj/item/stack/cable_coil, 10, "time" = 10),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 10),
-		list(QUALITY_SCREW_DRIVING, 5, 10,"time" = 3)
-	)
-
 /datum/craft_recipe/weapon/flamethrower
 	name = "flamethrower"
 	result = /obj/item/flamethrower
@@ -124,8 +112,8 @@
 	name = "handmade tray shield"
 	result = /obj/item/shield/riot/tray
 	steps = list(
-		list(/obj/item/tray, 1),
-		list(/obj/item/storage/belt, 1, "time" = 10)
+		list(/obj/item/trash/tray, 1), // Better use of trash rather than functional trays
+		list(/obj/item/stack/cable_coil, 30, "time" = 10) // Previously took any kind of belt
 	)
 
 /datum/craft_recipe/weapon/dozershield
