@@ -280,7 +280,7 @@
 /turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor2south)
 "afr" = (
-/obj/random/gun_parts,
+/obj/random/gun_parts/frames/better_spawns,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "afz" = (
@@ -18447,6 +18447,17 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
+"eyh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/pork,
+/obj/item/reagent_containers/food/snacks/meat/pork,
+/obj/item/reagent_containers/food/snacks/meat/pork,
+/turf/simulated/floor/industrial/cafe_large,
+/area/liberty/maintenance/undergroundfloor3north)
 "eyn" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible/blue,
 /obj/machinery/meter,
@@ -26560,8 +26571,7 @@
 /obj/item/reagent_containers/food/condiment/enzyme,
 /obj/item/reagent_containers/food/drinks/milk,
 /obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/structure/invislight,
+/obj/structure/invislightsmall,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "gzr" = (
@@ -36662,8 +36672,7 @@
 /obj/item/reagent_containers/food/snacks/meat/carp,
 /obj/item/reagent_containers/food/snacks/meat/carp,
 /obj/item/reagent_containers/food/snacks/meat/carp,
-/obj/item/reagent_containers/food/snacks/meat/carp,
-/obj/item/reagent_containers/food/snacks/meat/carp,
+/obj/item/reagent_containers/food/snacks/meat/bearmeat,
 /obj/item/reagent_containers/food/snacks/meat/bearmeat,
 /obj/item/reagent_containers/food/snacks/meat/bearmeat,
 /turf/simulated/floor/industrial/cafe_large,
@@ -66841,7 +66850,7 @@
 	isRevealed = 1;
 	name = "strange cracks"
 	},
-/obj/random/gun_energy_cheap,
+/obj/random/gun_fancy,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "qBZ" = (
@@ -69906,7 +69915,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/maintenance/undergroundfloor3west)
 "roS" = (
-/obj/random/gun_parts,
+/obj/random/gun_parts/frames/better_spawns,
 /obj/item/spider_shadow_trap{
 	pixel_x = -16;
 	pixel_y = -8
@@ -81928,7 +81937,9 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/rnd/xenobiology/xenoflora)
 "ujr" = (
-/mob/living/simple_animal/hostile/helldiver,
+/mob/living/simple_animal/hostile/helldiver{
+	name = "Steve"
+	},
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/maintenance/undergroundfloor3south)
 "ujv" = (
@@ -116231,7 +116242,7 @@ emu
 mjh
 cUo
 vGD
-uzz
+eyh
 mjh
 emu
 emu

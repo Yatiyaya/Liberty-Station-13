@@ -27,19 +27,27 @@
 		to_chat(user, "The charge meter reads [round(cell.percent())]%.")
 
 /obj/machinery/recharger/attackby(obj/item/I, mob/user)
-	if(default_deconstruction(I, user))
-		return
+
+	// Allows multiquality items like the combi drill to pop a menu on which quality to use
+	var/tool_type = I.get_tool_type(user, list(QUALITY_SCREW_DRIVING, QUALITY_BOLT_TURNING), src)
+
+	switch(tool_type)
+
+		if(QUALITY_SCREW_DRIVING)
+			default_deconstruction(I, user)
+			return
+
+		if(QUALITY_BOLT_TURNING)
+			if(portable)
+				if(charging)
+					to_chat(user, SPAN_WARNING("Remove [charging] first!"))
+					return
+			anchored = !anchored
+			to_chat(user, "You [anchored ? "attached" : "detached"] [src].")
+			playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
+			return
 
 	if(default_part_replacement(I, user))
-		return
-
-	if(portable && I.has_quality(QUALITY_BOLT_TURNING))
-		if(charging)
-			to_chat(user, SPAN_WARNING("Remove [charging] first!"))
-			return
-		anchored = !anchored
-		to_chat(user, "You [anchored ? "attached" : "detached"] [src].")
-		playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
 		return
 
 	else if (istype(I, /obj/item/gripper))//Code for allowing cyborgs to use rechargers
