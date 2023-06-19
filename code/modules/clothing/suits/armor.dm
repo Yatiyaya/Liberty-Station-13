@@ -313,7 +313,8 @@
 /obj/item/clothing/suit/armor/vest/technomancersuit
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
-	icon_state = "technosuit"
+	icon_state = "union worker"
+	item_state = "union worker"
 	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
