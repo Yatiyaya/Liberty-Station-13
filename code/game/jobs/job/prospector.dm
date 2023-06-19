@@ -80,7 +80,7 @@
 
 	stat_modifiers = list(
 		STAT_MEC = 20,
-		STAT_COG = 10,
+		STAT_BIO = 10, // Needed for butchering a bit faster
 		STAT_TGH = 10,
 		STAT_VIG = 10,
 		STAT_ROB = 10

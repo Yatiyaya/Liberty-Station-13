@@ -364,6 +364,29 @@
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/feed_sound(var/mob/user)
 	playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1)
 
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/On_Consume(var/mob/eater, var/mob/feeder = null)
+	if(!reagents.total_volume)
+		eater.visible_message(
+			SPAN_NOTICE("[eater] finishes drinking \the [src]."),
+			SPAN_NOTICE("You finish drinking \the [src].")
+		)
+
+		if (!feeder)
+			feeder = eater
+
+		feeder.drop_from_inventory(src)
+
+		if(trash)
+			if(ispath(trash,/obj/item))
+				var/obj/item/TrashItem = new trash(feeder)
+				if(isanimal(feeder))
+					TrashItem.forceMove(loc)
+				else
+					feeder.put_in_hands(TrashItem)
+			else if(istype(trash,/obj/item))
+				feeder.put_in_hands(trash)
+		qdel(src)
+
 /obj/item/reagent_containers/food/snacks/openable/candy/os
 	desc = "SR branded non-melting chocolate."
 	alt_desc = "SR branded non-melting chocolate. This one is open, and still unmelted."

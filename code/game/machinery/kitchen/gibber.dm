@@ -79,24 +79,38 @@
 		startgibbing(user)
 
 /obj/machinery/gibber/attackby(obj/item/I, mob/user)
+
+	var/tool_type = I.get_tool_type(user, list(QUALITY_PULSING, QUALITY_BOLT_TURNING), src)
+
+	switch(tool_type)
+
+		if(QUALITY_PULSING)
+			user.visible_message(
+			SPAN_WARNING("[user] picks in wires of the [name] with a multitool"), \
+			SPAN_WARNING("[pick("Picking wires in [name] lock", "Hacking [name] security systems", "Pulsing in locker controller")].")
+			)
+			if(I.use_tool(user, src, WORKTIME_LONG, QUALITY_PULSING, FAILCHANCE_HARD, required_stat = STAT_MEC))
+				if(hack_stage < hack_require)
+					playsound(loc, 'sound/items/glitch.ogg', 60, 1, -3)
+					hack_stage++
+					to_chat(user, SPAN_NOTICE("Multitool blinks <b>([hack_stage]/[hack_require])</b> on screen."))
+				else if(hack_stage >= hack_require)
+					emagged = !emagged
+					update_icon()
+					user.visible_message(
+					SPAN_WARNING("[user] [emagged?"disable":"enable"] the safety guard of [name] with a multitool,"), \
+					SPAN_WARNING("You [emagged? "disable" : "enable"] the safety guard of [name] with multitool")
+					)
+		if(QUALITY_BOLT_TURNING)
+			if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
+				to_chat(user, SPAN_NOTICE("You [anchored? "un" : ""]secured \the [src]!"))
+				anchored = !anchored
+				power_change()
+			return
+
+		if(ABORT_CHECK)
+			return
 	..()
-	if(QUALITY_PULSING in I.tool_qualities)
-		user.visible_message(
-		SPAN_WARNING("[user] picks in wires of the [name] with a multitool"), \
-		SPAN_WARNING("[pick("Picking wires in [name] lock", "Hacking [name] security systems", "Pulsing in locker controller")].")
-		)
-		if(I.use_tool(user, src, WORKTIME_LONG, QUALITY_PULSING, FAILCHANCE_HARD, required_stat = STAT_MEC))
-			if(hack_stage < hack_require)
-				playsound(loc, 'sound/items/glitch.ogg', 60, 1, -3)
-				hack_stage++
-				to_chat(user, SPAN_NOTICE("Multitool blinks <b>([hack_stage]/[hack_require])</b> on screen."))
-			else if(hack_stage >= hack_require)
-				emagged = !emagged
-				update_icon()
-				user.visible_message(
-				SPAN_WARNING("[user] [emagged?"disable":"enable"] the safety guard of [name] with a multitool,"), \
-				SPAN_WARNING("You [emagged? "disable" : "enable"] the safety guard of [name] with multitool")
-				)
 
 /obj/machinery/gibber/examine()
 	..()
@@ -185,7 +199,7 @@
 	visible_message(SPAN_DANGER("You hear a loud squelchy grinding sound."))
 	playsound(loc, 'sound/machines/juicer.ogg', 50, 1)
 	operating = TRUE
-	
+
 
 	var/slab_name = occupant.name
 	var/slab_count = 0
@@ -250,13 +264,13 @@
 			if(ishuman(occupant))
 				src.occupant.ghostize()
 
-		
+
 			ishuman(occupant) ? occupant.gib(3, TRUE) : occupant.gib()
 
 			var/mob/living/to_delete = occupant
 			occupant = null
 			qdel(to_delete)
-			
+
 
 			playsound(src.loc, 'sound/effects/splat.ogg', 50, 1)
 			operating = FALSE

@@ -97,7 +97,7 @@
 	var/my_fuel = "fuel" //If we use fuel, what do we use?
 
 	var/list/effective_faction = list() // Which faction the item is effective against.
-	var/damage_mult = 1 // The damage multiplier the item get when attacking that faction.
+	var/damage_mult = 0 // The damage multiplier the item get when attacking that faction.
 	//Stolen things form tool qualities
 	var/eye_hazard = FALSE
 	var/use_power_cost = 0
