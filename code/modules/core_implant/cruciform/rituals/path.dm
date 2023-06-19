@@ -79,7 +79,7 @@ datum/ritual/cruciform/oathbound/fireball
 	damage_types = list(BURN = WEAPON_FORCE_NORMAL) //deal 10 burn
 
 /obj/item/projectile/custodian_fireball/on_impact(atom/target)
-	scorch_attack(target, 20) //now that you've hit something, trigger a scorch attack of 20 damage
+	scorch_attack(target) //now that you've hit something, trigger a scorch attack of 20 damage
 	return TRUE
 
 /* might exist eventually, might not
@@ -260,7 +260,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 /datum/ritual/cruciform/oathbound/ignite_flesh/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	for(var/mob/living/M in view(2, user)) //get everything alive
 		if(!M.get_core_implant(/obj/item/implant/core_implant/cruciform)) //no hearthcore users
-			scorch_attack(M, 10) //trigger scorch attack
+			scorch_attack(M) //trigger scorch attack
 	user.visible_message(SPAN_DANGER("A wave of flame radiates out from [user]!"))
 	return TRUE
 
@@ -618,15 +618,11 @@ datum/ritual/cruciform/oathbound/fireball_big
 	phrase = "Oxidate Lecture: Tools of Bonfire."
 	desc = "Channels the power of your Hearthcore into an incorporeal omnitool."
 	power = 40
-	cooldown = TRUE
-	cooldown_time = 2 MINUTES
-	cooldown_category = "omnitool_lecture"
 	success_message = "Your hand glows with radiant light, and you feel more in tune with the machinery around you."
 
 /datum/ritual/cruciform/forgemaster/tools_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/obj/item/tool/factorial_omni/tool = new /obj/item/tool/factorial_omni(src, user) //create the omni-tool
 	usr.put_in_hands(tool) //put it in the active hand
-	set_personal_cooldown(user)
 	return TRUE //refer to code\game\objects\items\weapons\tools\misc.dm for factorial_omni
 
 //datum/ritual/cruciform/forgemaster/flame_guidance - Refer to code\modules\core_implant\cruciform\rituals\construction.dm
@@ -968,7 +964,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		CI.uninstall()
 		return TRUE
 
-	else if(ismob(M) && is_dead(M)) //Cruciforms can't normally be placed on non-humans, but this is still here for sanity purposes.
+	else if(ismob(M) && is_dead(M)) //Hearthcores can't normally be placed on non-humans, but this is still here for sanity purposes.
 		CI.name = "[M]'s Hearthcore"
 		CI.uninstall()
 		return TRUE

@@ -15467,7 +15467,7 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor1east)
 "aFw" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "aFx" = (
@@ -16684,7 +16684,7 @@
 /obj/structure/boulder,
 /obj/structure/flora/small/trailrocka3,
 /obj/effect/decal/cleanable/rubble,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1south)
 "aJd" = (
@@ -16799,7 +16799,7 @@
 /obj/structure/flora/small/trailrocka1,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1south)
 "aJw" = (
@@ -17214,7 +17214,7 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "aKC" = (
 /obj/structure/boulder,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor1south)
 "aKD" = (
@@ -18271,7 +18271,7 @@
 "aNS" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -18413,7 +18413,7 @@
 "aOq" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool/low_chance,
@@ -18483,7 +18483,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "aOA" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/maintenance/undergroundfloor1south)
@@ -18570,7 +18570,7 @@
 "aOR" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/voidsuit/damaged/low_chance,
 /turf/simulated/floor/tiled/techmaint_perforated,
@@ -18737,7 +18737,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/random/rig/low_chance,
 /obj/random/rig_module/low_chance,
 /obj/random/tool_upgrade/low_chance,
@@ -19174,7 +19174,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1east)
 "aQM" = (
-/mob/living/carbon/superior_animal/robot/similacrum/roomba/slayer,
+/mob/living/carbon/superior_animal/robot/simulacrum/roomba/slayer,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/maintenance/undergroundfloor1east)
 "aQN" = (
@@ -25212,7 +25212,7 @@
 /area/liberty/quartermaster/hangarsupply)
 "bhJ" = (
 /obj/machinery/constructable_frame/machine_frame/vertical,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -25348,7 +25348,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
 "bie" = (
@@ -25592,7 +25592,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/colony)
 "biS" = (
@@ -25883,7 +25883,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "bjM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -28325,7 +28325,7 @@
 	dir = 4
 	},
 /obj/machinery/mech_recharger,
-/obj/mecha/combat/dreadnought/security,
+/obj/mecha/combat/juggernaut/security,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)
 "bqf" = (

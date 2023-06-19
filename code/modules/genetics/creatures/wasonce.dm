@@ -94,7 +94,7 @@ Has ability of every roach.
 			var/obj/item/implant/core_implant/cruciform/CI = h_victim.get_core_implant(/obj/item/implant/core_implant/cruciform, FALSE)
 			if (CI)
 				var/mob/N = CI.wearer
-				CI.name = "[N]'s Cruciform"
+				CI.name = "[N]'s Hearthcore"
 				CI.uninstall()
 
 		akira.loc = src

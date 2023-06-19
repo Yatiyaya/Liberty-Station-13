@@ -216,7 +216,7 @@
 	)
 
 /obj/item/clothing/suit/greatcoat/os
-	name = "Similacrum Robotics greatcoat"
+	name = "Simulacrum Robotics greatcoat"
 	desc = "A thick, heavy coat for workers form pipework to welding."
 	icon_state = "os_overcoat"
 	item_state = "os_overcoat"

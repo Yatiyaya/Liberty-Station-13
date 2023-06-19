@@ -226,6 +226,7 @@
 	desc = "A small, twin-bladed machine capable of inflicting very deadly lacerations. This model has functional colony-locked IFF and thus only targets non-colony humanoids and animals."
 	faction = "neutral"
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 /mob/living/simple_animal/hostile/elitemercenary
 	name = "\improper Elite operative"

@@ -67,8 +67,8 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
-	armor_list = list( //thicker material so +5 boost (from base 10) to armor values, but lower rad/same bomb since not metal lined. Maybe add in minor slowdown if needed -Dongels
-		melee = 15,
+	armor_list = list(
+		melee = 30, // Made with quite some steel, good against creatures you hunt but not much else.
 		bullet = 15,
 		energy = 15,
 		bomb = 10,

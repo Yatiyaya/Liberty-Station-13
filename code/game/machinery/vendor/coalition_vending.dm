@@ -5,13 +5,13 @@
 	icon_vend = "carvan-vending"
 	product_slogans = "For unity, order, and peace!;Pre-paid by the Pallas Coalition!;Arm up and protect your family!"
 	product_ads = "A fair selection of assault rifles!;Coalition certified space suits!;Firearms better than the Federation's!"
-	vendor_department = DEPARTMENT_SIMILACRUM
+	vendor_department = DEPARTMENT_SIMULACRUM
 	alt_currency_path = /obj/item/stack/dinar
 
 /obj/machinery/vending/carvan/Initialize()
 	. = ..()
 	set_light(1.4, 1, COLOR_LIGHTING_CYAN_BRIGHT)
-	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
+	earnings_account = department_accounts[DEPARTMENT_SIMULACRUM]
 
 /obj/machinery/vending/carvan/guns
 

@@ -71,12 +71,22 @@
 	related_stats = list(STAT_COG)
 
 /datum/craft_recipe/cloth_stripe
-	name = "salvage cloth"
+	name = "salvage cloth from clothing" // Recycle every single clothing article!
 	result = /obj/item/stack/material/cloth/random
 	icon_state = "clothing"
 	steps = list(
-		list(/obj/item/clothing/under, 1, "time" = 25),
+		list(/obj/item/clothing, 1, "time" = 20),
 		list(QUALITY_CUTTING, 10, "time" = 30)
+	)
+
+// Recycle shoes into small amounts of leather strips. Inspired by CDDA/Project Zomboid (mods).
+/datum/craft_recipe/recycle_shoes
+	name = "salvage leather from shoes"
+	result = /obj/item/stack/material/leather/random
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/shoes, 1, "time" = 20),
+		list(QUALITY_CUTTING, 15, "time" = 30)
 	)
 
 /datum/craft_recipe/ameridian_spire
@@ -96,6 +106,13 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
 	)
 
+// Leaving the following commented out until Consumer crafts are finally coded
+// This otherwise created an entire new tab for just one item, furthering crafting tab bloat
+// Once the code for consumer goods and their items/recipes are finally coded,
+// re-enable this and make every recipe a child of craft_recipe/consumer. - Seb
+
+/*
+
 // Consume!! Makes it's own tab. Not a big deal I guess.
 
 /datum/craft_recipe/consumer
@@ -103,9 +120,9 @@
 	time = 200
 	related_stats = list(STAT_MEC)
 	icon_state = "device"
+*/
 
-
-/datum/craft_recipe/consumer/toaster
+/datum/craft_recipe/toaster
 	name = "toaster"
 	result = /obj/item/toy/consumer/product/toaster
 	steps = list(
@@ -115,3 +132,4 @@
 		list(QUALITY_SCREW_DRIVING, 35, "time" = 170),
 		list(QUALITY_PRYING, 35, "time" = 170)
 	)
+

@@ -126,6 +126,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "aL" = (
@@ -276,17 +277,20 @@
 /area/liberty/outside/mountainsolars)
 "bl" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,18"
+	icon_state = "10,18";
+	name = "Elevator"
 	},
 /area/liberty/outside/mountainsolars)
 "bm" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "13,15"
+	icon_state = "13,15";
+	name = "Elevator"
 	},
 /area/liberty/outside/mountainsolars)
 "bn" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,18"
+	icon_state = "7,18";
+	name = "Elevator"
 	},
 /area/liberty/outside/mountainsolars)
 "bo" = (
@@ -302,17 +306,20 @@
 "bq" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,6";
+	name = "Elevator";
 	opacity = 0
 	},
 /area/liberty/outside/mountainsolars)
 "br" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "10,15"
+	icon_state = "10,15";
+	name = "Elevator"
 	},
 /area/liberty/outside/mountainsolars)
 "bs" = (
 /turf/simulated/shuttle/wall/mining{
-	icon_state = "7,10"
+	icon_state = "7,10";
+	name = "Elevator"
 	},
 /area/liberty/outside/mountainsolars)
 "bt" = (
@@ -404,7 +411,8 @@
 /area/liberty/outside/mountainsolars)
 "bI" = (
 /obj/structure/cable/ender{
-	id = "mountain to engineering"
+	id = "mountain to engineering";
+	name = "Grid to Colony"
 	},
 /obj/structure/cable{
 	d2 = 4;
@@ -642,6 +650,7 @@
 /area/liberty/outside/mountainsolars)
 "dL" = (
 /obj/effect/window_lwall_spawn/smartspawnplasma,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "dM" = (
@@ -652,6 +661,7 @@
 	dir = 6
 	},
 /obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "dR" = (
@@ -754,6 +764,7 @@
 	dir = 5
 	},
 /obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "gS" = (
@@ -999,6 +1010,11 @@
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
+"nR" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating/under,
+/area/liberty/outside/mountainsolars)
 "nW" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/empty,
@@ -1237,6 +1253,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "vb" = (
@@ -1377,6 +1394,7 @@
 	dir = 4
 	},
 /obj/effect/window_lwall_spawn/smartspawnplasma,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "yG" = (
@@ -1532,9 +1550,11 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "DU" = (
-/obj/machinery/door/airlock/hatch{
-	req_one_access = list(24,10)
+/obj/machinery/door/airlock/highsecurity{
+	req_one_access = list(24,10);
+	name = "Supermatter Chamber"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/outside/mountainsolars)
 "DV" = (
@@ -1933,6 +1953,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 5
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/mountainsolars)
 "NK" = (
@@ -2132,7 +2153,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "Tz" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/plasma{
 	dir = 4
 	},
 /turf/simulated/floor/plating/under,
@@ -2380,6 +2401,7 @@
 	dir = 4
 	},
 /obj/effect/window_lwall_spawn/smartspawnplasma,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/outside/mountainsolars)
 "YM" = (
@@ -8957,7 +8979,7 @@ qX
 Es
 mN
 ac
-mN
+nR
 Tz
 dL
 lW
@@ -9263,7 +9285,7 @@ bi
 bi
 VW
 wZ
-mN
+nR
 bw
 bi
 yC

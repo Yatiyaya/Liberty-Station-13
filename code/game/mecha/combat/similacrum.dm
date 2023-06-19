@@ -1,5 +1,5 @@
-/obj/mecha/combat/similacrum
-	desc = "One of Similacrum's deadliest machines, converted into an exosuit by Phokorus Institute."
+/obj/mecha/combat/simulacrum
+	desc = "One of Simulacrum's deadliest machines, converted into an exosuit by Phokorus Institute."
 	name = "Type"
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "similacrum_mech"
@@ -21,7 +21,7 @@
 	pixel_x = -16 // Make the mech centered
 	pixel_y = -16
 
-/obj/mecha/combat/similacrum/New()
+/obj/mecha/combat/simulacrum/New()
 	..()
 	name += " [rand(0, 9)][rand(0, 9)][rand(0, 9)][rand(0, 9)]" // Random numbers for the name
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/ranged_weapon/ballistic/ultracannon/loaded(src)
@@ -33,5 +33,5 @@
 	ME = new /obj/item/mecha_parts/mecha_equipment/ranged_weapon/ballistic/missile_rack/explosive(src)
 	ME.attach(src)
 
-/obj/mecha/combat/dreadnought/hephaestus_do_not_use_only_for_events/add_cell()
+/obj/mecha/combat/juggernaut/hephaestus_do_not_use_only_for_events/add_cell()
 	cell = new /obj/item/cell/large/moebius/omega(src)

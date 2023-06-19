@@ -337,6 +337,21 @@ BORDER_CONTROL 0
 WEBHOOK_URL http://localhost:44303/webhook/en
 WEBHOOK_KEY testkey
 
+## TGS Integration ##
+## Uncomment to enable the features
+
+## The DMAPI Tag to use to determine what channel to send general announcements to
+# tgs_discord_round_announce_tag exampletag
+
+## If Enabled TGS will announce when a round re/starts
+# tgs_discord_round_announce_round
+
+## If Enabled TGS ping a role when announcing when a round re/starts requires tgs_discord_round_announce_round to be enabled
+# tgs_discord_round_announce_round_role
+
+## The Role ID to mention when announcing round re/starts requires tgs_discord_round_announce_round_role to be enabled
+# tgs_discord_round_announce_round_role_tag <@123456789>
+
 ## Text-to-speech stuff ##
 #TTS_BEARER Bearer *lotsa symbols*
 #TTS_ENABLED 1

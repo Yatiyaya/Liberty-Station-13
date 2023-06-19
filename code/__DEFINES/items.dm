@@ -104,6 +104,7 @@
 #define GUN_UPGRADE_RIGGED "rigged"
 #define GUN_UPGRADE_AUTOEJECT "autoeject"
 #define GUN_UPGRADE_CELLMINUS "small cell adapter"
+#define GUN_UPGRADE_NVISION "nightvision scope"
 #define GUN_UPGRADE_THERMAL "thermal scope"
 #define GUN_UPGRADE_DNALOCK "biocoded"
 #define GUN_UPGRADE_FOREGRIP "foregrip" // Makes a gun unable to be braced
@@ -142,7 +143,7 @@
 					/obj/item/storage/firstaid/regular = 2,\
 					/obj/random/medical/always_spawn = 5,\
 					/obj/random/gun_normal/always_spawn = 3,\
-					/obj/random/gun_fancy/alawys_spawn = 2,\
+					/obj/random/gun_fancy/always_spawn = 2,\
 					/obj/random/lathe_disk/advanced = 2,\
 					/obj/item/cell/small/moebius/nuclear = 1,\
 					/obj/item/cell/medium/moebius/hyper = 1,\

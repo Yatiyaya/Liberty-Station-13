@@ -82,7 +82,7 @@
 	price_tag = 400
 
 //Positronic Big
-/obj/item/cell/large/similacrum
+/obj/item/cell/large/simulacrum
 	name = "SR-PI \"Posi-cell 13000L\""
 	desc = "SR-PI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "similacrum_b_omega"
@@ -217,7 +217,7 @@
 	price_tag = 200
 
 //Positronic Medium
-/obj/item/cell/medium/similacrum
+/obj/item/cell/medium/simulacrum
 	name = "SR-PI \"Posi-cell 1000M\""
 	desc = "SR-PI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "similacrum_m_omega"
@@ -347,7 +347,7 @@
 	price_tag = 65
 
 //Positronic Small
-/obj/item/cell/small/similacrum
+/obj/item/cell/small/simulacrum
 	name = "SR-PI \"Posi-cell 300S\""
 	desc = "SR-PI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "similacrum_s_omega"

@@ -119,6 +119,7 @@
 	icon_state = "mesonpatch"
 	item_state = "mesonpatch"
 	off_state = "demesonpatch"
+	prescription = TRUE
 	var/righteye = TRUE // For flipping the eyepatch
 
 /obj/item/clothing/glasses/powered/meson/eyepatch/toggle(mob/user, new_state = 0) // Snowflake rewrite of toggle proc so that it doesn't switch to right side default on activating.

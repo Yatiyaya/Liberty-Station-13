@@ -24,29 +24,22 @@
 /datum/lobbyscreen/liberty_final
 	image_file = 'icons/title_screens/liberty_final.png'
 	possibleMusic = list(
-		'sound/music/lobby/Phokorus.ogg',
 		'sound/music/lobby/Liberty.ogg',
-		'sound/music/lobby/Richi.ogg',
-		'sound/music/lobby/Richi2.ogg',
-		'sound/music/lobby/Richi3.ogg'
+		'sound/music/lobby/Richi.ogg'
 	)
 
 /datum/lobbyscreen/liberty_therma
 	image_file = 'icons/title_screens/liberty_terra.png'
 	possibleMusic = list(
 		'sound/music/lobby/Phokorus.ogg',
-		'sound/music/lobby/Liberty.ogg',
-		'sound/music/lobby/Richi.ogg',
 		'sound/music/lobby/Richi2.ogg'
 	)
 
-/datum/lobbyscreen/liberty_blondie
-	image_file = 'icons/title_screens/liberty_blondie.png'
+/datum/lobbyscreen/liberty_antag
+	image_file = 'icons/title_screens/liberty_antag.png'
 	possibleMusic = list(
-		'sound/music/lobby/Phokorus.ogg',
-		'sound/music/lobby/Liberty.ogg',
 		'sound/music/lobby/Richi.ogg',
-		'sound/music/lobby/Richi2.ogg'
+		'sound/music/lobby/Richi3.ogg'
 	)
 
 /datum/lobbyscreen/proc/play_music(client/C)

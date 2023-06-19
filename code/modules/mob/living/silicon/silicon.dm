@@ -35,6 +35,7 @@
 	#define MED_HUD 2 //Medical HUD mode
 	mob_classification = CLASSIFICATION_SYNTHETIC
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 	status_flags = CANWEAKEN|CANSTUN|CANPUSH
 

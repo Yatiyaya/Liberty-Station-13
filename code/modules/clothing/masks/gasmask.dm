@@ -380,31 +380,37 @@
 	name = "sleek grey rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user." // take that Skylight, no longer will you have a monopoly on cool facewear -Mus
 	icon_state = "srebreath"
+	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/bigguy/sleekblueguy
 	name = "sleek blue rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is blue and has a CAPSA Medical marking"
 	icon_state = "srebreath_blue"
+	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/bigguy/sleekgoldguy
 	name = "sleek gold rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is gold and has a Skylight marking."
 	icon_state = "srebreath_gold"
+	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/bigguy/sleekorangeguy
 	name = "sleek orange rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is orange and has a Guild marking."
 	icon_state = "srebreath_orange"
+	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/bigguy/sleekmarshalguy
 	name = "sleek Watch rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one carries Watch colors and has thicker filters."
 	icon_state = "srebreath_marshal"
+	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/bigguy/sleekpurpleguy
 	name = "sleek purple rebreather"
 	desc = "A small, CAPSA-brand rebreather designed to regulate the flux of gasses fed to its user. This one is purple and has a Phokorus Institute Research marking."
 	icon_state = "srebreath_purple"
+	is_alts = FALSE
 
 //Fontaine Logistics
 /obj/item/clothing/mask/gas/fontaine
@@ -412,3 +418,4 @@
 	desc = "A Fontaine-brand gas mask; completed with a rebreather and a green visor."
 	icon_state = "smask_fontaine"
 	item_state = "smask_fontaine"
+	is_alts = FALSE

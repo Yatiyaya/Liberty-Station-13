@@ -95,7 +95,7 @@ datum/ritual/cruciform/base/thumbspire
 	name = "Pyrelight"
 	phrase = "Oxidate Lecture: Pyrelight."
 	desc = "Lecture of wandering Custodians that creates a small immobile light for twenty minutes."
-	power = 20
+	power = 10
 
 /datum/ritual/cruciform/base/pyrelight/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
 	playsound(H.loc, 'sound/effects/snap.ogg', 50, 1)
@@ -126,7 +126,10 @@ datum/ritual/cruciform/base/thumbspire
 	var/text = input(user, "What message will you send to the target? Only they will be able to hear it.", "Sending a message") as text|null
 	if (!text)
 		return FALSE
+	user.visible_message("[user] forms a small pigeon of light and releases it, the bird flying off at incredible speeds.")
+	to_chat(user, SPAN_NOTICE("You send a message to [target]: \"text\""))
 	to_chat(target, "<span class='notice'><b><font color='#ffaa00'>A nearly imperceptible pigeon of light hovers near your ears and resonates with [user.real_name]'s voice: \"[text]\"</font><b></span>")
+	target.visible_message("A tiny pigeon of light flies in and floats near [target]'s head, vibrates, and fades into nothingness.")
 	log_and_message_admins("[user.real_name] sent a message to [target] with text \"[text]\"")
 	playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 	playsound(target, 'sound/machines/signal.ogg', 50, 1)

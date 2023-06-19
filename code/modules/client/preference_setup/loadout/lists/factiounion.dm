@@ -38,6 +38,11 @@
 	slot = slot_wear_suit
 	sort_category = "Faction: Union"
 
+/datum/gear/faction_union/cloakminer
+	display_name = "cloak, Union miner"
+	path = /obj/item/clothing/accessory/job/cape/mining
+	slot = slot_wear_suit
+
 /datum/gear/faction_union/cloakte
 	display_name = "cloak, Union Chief"
 	path = /obj/item/clothing/accessory/job/cape/te

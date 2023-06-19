@@ -55,7 +55,7 @@
 	area_light_color = COLOR_LIGHTING_MAINT_DARK
 
 /area/liberty/maintenance/guild
-	name = "Guild Maintence"
+	name = "Terra-Therma Union Maintence"
 
 /area/liberty/maintenance/junk
 	name = "Junk Beacon"
@@ -105,6 +105,13 @@
 /area/liberty/maintenance/oldlibrary
 	name = "Abandoned Library"
 	icon_state = "erisgreen"
+	requires_power = FALSE
+
+// Required for the turrets to work
+/area/liberty/maintenance/oldarmory
+	name = "Derelict Armory Shop"
+	icon_state = "Warden"
+	requires_power = FALSE
 
 /area/liberty/maintenance/undergroundfloor1south
 	name = "Surface South Maintenance"
@@ -216,7 +223,7 @@
 	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_simil_base
-	name = "Frozen Forest Similacrum Robotics Mining Entrence"
+	name = "Frozen Forest Simulacrum Robotics Mining Entrence"
 	allows_weather_of_snow = FALSE
 	requires_power = FALSE
 	turf_initializer = null
@@ -332,7 +339,7 @@
 	ship_area = FALSE
 
 /area/liberty/outside/one_star
-	name = "Similacrum Robotics Base"
+	name = "Simulacrum Robotics Base"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/ambigen13.ogg', 'sound/ambience/ambigen14.ogg', 'sound/ambience/ambimalf.ogg')
 	dynamic_lighting = TRUE
@@ -340,12 +347,12 @@
 	flags = AREA_FLAG_RAD_SHIELDED
 
 /area/liberty/outside/one_star/fo_outside
-	name = "Similacrum Grounds"
+	name = "Simulacrum Grounds"
 	icon_state = "erisgreen"
 	dynamic_lighting = FALSE
 
 /area/liberty/outside/one_star/fo_internal
-	name = "Similacrum Field Offices"
+	name = "Simulacrum Field Offices"
 	icon_state = "erisblue"
 	requires_power = FALSE
 
@@ -797,6 +804,9 @@
 /area/liberty/crew_quarters/podrooms2
 	name = "\improper Lower Pod Dormitories"
 
+/area/liberty/crew_quarters/hotsprings
+	name = "\improper Indoors Hot Spring"
+
 /area/liberty/crew_quarters/sleep
 	name = "\improper Dormitories"
 
@@ -1073,7 +1083,7 @@
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/liberty/engineering/dorm
-	name = "\improper Guild Dorm"
+	name = "\improper Solar Panels Control Room"
 	icon_state = "engineering_break"
 	sound_env = MEDIUM_SOFTFLOOR
 
@@ -1563,7 +1573,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "mining"
 
 /area/liberty/quartermaster/mining_outside_doc
-	name = "\improper Cargo Mining Area"
+	name = "Union Mining Outpost Exterior"
 	icon_state = "mining"
 
 /area/liberty/quartermaster/disposaldrop

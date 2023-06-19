@@ -99,7 +99,7 @@
 	)
 	serial_type = "SR"
 	gun_tags = list(GUN_PROJECTILE, GUN_LASER, GUN_ENERGY, GUN_SCOPE)
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 //Re-wrote this to be it's own standalone gun to prevent cooling issues.
 /obj/item/gun/energy/laser/railgun/railrifle
@@ -130,7 +130,7 @@
 
 	//Blacklisting now works!
 	blacklist_upgrades = list(/obj/item/gun_upgrade/mechanism/battery_shunt = TRUE,
-							/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = TRUE)
+							/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = TRUE)
 
 /obj/item/gun/energy/laser/railgun/railrifle/consume_next_projectile(mob/user)
 	if(!cell)

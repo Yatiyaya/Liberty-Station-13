@@ -9,7 +9,8 @@
 	)
 
 /obj/item/circuitboard/os_turret
-	build_name = "Similacrum Robotics gauss turret"
+	build_name = "Simulacrum Robotics gauss turret"
+	build_path = /obj/machinery/power/os_turret
 	board_type = "machine"
 	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 5)
 	req_components = list(
@@ -22,7 +23,7 @@
 	var/target_superior_mobs = FALSE
 
 /obj/item/circuitboard/os_turret/laser
-	build_name = "Similacrum Robotics laser turret"
+	build_name = "Simulacrum Robotics laser turret"
 	build_path = /obj/machinery/power/os_turret/laser
 	board_type = "machine"
 	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 5)

@@ -24,6 +24,7 @@ var/global/clucker_count = 0
 	has_special_parts = TRUE //var for checking during the butcher process.
 	special_parts = list(/obj/item/animal_part/clucker_feather)
 	colony_friend = TRUE
+	friendly_to_colony = TRUE
 
 /mob/living/carbon/superior_animal/lodge/clucker/New()
 	..()

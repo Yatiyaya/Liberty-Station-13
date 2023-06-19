@@ -58,6 +58,7 @@
 /obj/item/clothing/glasses/eyepatch/medpatch
 	name = "MediHUD eyepatch"
 	desc = "An eyepatch worn to cover a single eye, with a built-in heads-up display that scans the humans in view and provides accurate data about their health status."
+	prescription = TRUE
 	icon_state = "hudpatch"
 	item_state = "hudpatch"
 
@@ -69,6 +70,7 @@
 	desc = "An eyepatch worn to cover a single eye, with a built-in heads-up display for combat and security information."
 	icon_state = "secpatch"
 	item_state = "secpatch"
+	prescription = TRUE
 	flash_protection = FLASH_PROTECTION_MINOR // They cover just one eye!
 
 /obj/item/clothing/glasses/eyepatch/secpatch/process_hud(var/mob/M)
@@ -105,7 +107,7 @@
 	desc = "Standard glasses that correct and enhance vision."
 	icon_state = "glasses"
 	item_state = "glasses"
-	prescription = 1
+	prescription = TRUE
 	body_parts_covered = 0
 
 /obj/item/clothing/glasses/regular/hipster
@@ -342,16 +344,16 @@
 	icon_state = "fontaine_goggles"
 	item_state = "fontaine_goggles"
 	darkness_view = -1
-	prescription = 1
+	prescription = TRUE
 	flash_protection = FLASH_PROTECTION_MINOR
 	obscuration = LIGHT_OBSCURATION
 
 /obj/item/clothing/glasses/sunglasses/esquimal
-	name = "esquimal goggles"
+	name = "eskimo goggles"
 	desc = "A pair of specialized winter goggles, specialized for snowy weather. Manufactured by Fontaine Logistics."
 	icon_state = "esquimal_goggles"
 	item_state = "esquimal_goggles"
 	darkness_view = -1
-	prescription = 1
+	prescription = TRUE
 	flash_protection = FLASH_PROTECTION_MINOR
 	obscuration = LIGHT_OBSCURATION

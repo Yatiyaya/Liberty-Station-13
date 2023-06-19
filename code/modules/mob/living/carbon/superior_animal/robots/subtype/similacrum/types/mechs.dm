@@ -1,5 +1,5 @@
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley
-	name = "Similacrum Robotics Ripley unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley
+	name = "Simulacrum Robotics Ripley unit"
 	desc = "An AI controlled autonomous power loading unit equipped with a diamond tipped drill."
 	icon_state = "similacrum_ripley"
 	attacktext = "drilled"
@@ -22,11 +22,11 @@
 		/datum/stat_modifier/mob/living/carbon/superior_animal/young/robotic = 5,
 	)
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley/slip(slipped_on,stun_duration=8)
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley/slip(slipped_on,stun_duration=8)
 	return FALSE
 // Big stompers can't be slipped!
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley/attack_hand(mob/living/carbon/M as mob)
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley/attack_hand(mob/living/carbon/M as mob)
 	..()
 	var/mob/living/carbon/human/H = M
 
@@ -101,8 +101,8 @@
 
 				return TRUE
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley/phazon
-	name = "Similacrum Robotics Phazon unit"
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley/phazon
+	name = "Simulacrum Robotics Phazon unit"
 	desc = "An AI controlled phazon mecha equipped with reinforced armor, a power fist the size of a giant spider, and a modified phazing drive that lets it move far faster than its bulk should allow."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "similacrum_phazon"
@@ -116,7 +116,7 @@
 	attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	armor = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 
-/mob/living/carbon/superior_animal/robot/similacrum/synthetic/ripley/phazon/Initialize(mapload)
+/mob/living/carbon/superior_animal/robot/simulacrum/synthetic/ripley/phazon/Initialize(mapload)
 
 	allowed_stat_modifiers -= /datum/stat_modifier/mob/living/carbon/superior_animal/aggressive/savage/robotic // no speed buffs please
 	allowed_stat_modifiers -= /datum/stat_modifier/mob/living/carbon/superior_animal/young

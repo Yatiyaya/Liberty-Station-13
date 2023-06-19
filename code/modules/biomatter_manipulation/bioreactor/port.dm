@@ -4,7 +4,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/bioport
-	name = "biomatter port"
+	name = "scorchslag port"
 	icon_state = "port"
 	layer = LOW_OBJ_LAYER
 	density = FALSE

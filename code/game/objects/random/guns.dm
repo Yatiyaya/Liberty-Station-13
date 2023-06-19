@@ -107,12 +107,14 @@
 	spawn_nothing_percentage = 80
 
 /obj/random/gun_fancy
-	name = "random fancy gun"
-	icon_state = "gun-blue"
+	name = "high chance random fancy gun"
+	icon_state = "gun-blue-low"
 	spawn_nothing_percentage = 30
 
-/obj/random/gun_fancy/alawys_spawn
-	name = "random always spawn fancy gun"
+/obj/random/gun_fancy/always_spawn
+	name = "always spawn random fancy gun"
+	icon_state = "gun-blue"
+	spawn_nothing_percentage = 0
 
 /obj/random/gun_fancy/item_to_spawn()
 	return pickweight(list(/obj/item/part/gun/frame/makarov = 0.5,
@@ -300,7 +302,7 @@
 				/obj/item/gun_upgrade/scope/watchman = 0.7,
 				/obj/item/gun_upgrade/scope/killer = 0.7,
 				/obj/item/gun_upgrade/underbarrel/bipod = 1,
-				/obj/item/gun_upgrade/mechanism/similacrum_master_catalyst = 0.01))
+				/obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst = 0.01))
 
 /obj/random/dungeon_gun_mods/low_chance
 	name = "low chance random gun mod"

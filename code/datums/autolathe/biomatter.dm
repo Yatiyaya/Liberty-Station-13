@@ -61,15 +61,15 @@
 	build_path = /obj/item/storage/backpack/satchel
 
 /datum/design/bioprinter/leather/storage/backpack/satchel/custodian
-	name = "Cruciform  Satchel"
+	name = "Custodian Satchel"
 	build_path = /obj/item/storage/backpack/satchel/custodian
 
 /datum/design/bioprinter/leather/storage/backpack/custodian
-	name = "Cruciform Backpack"
+	name = "Custodian Backpack"
 	build_path = /obj/item/storage/backpack/custodian
 
 /datum/design/bioprinter/leather/storage/backpack/sport/custodian
-	name = "Cruciform Sport Backpack"
+	name = "Custodian Sport Backpack"
 	build_path = /obj/item/storage/backpack/sport/custodian
 
 /datum/design/bioprinter/leather/holster

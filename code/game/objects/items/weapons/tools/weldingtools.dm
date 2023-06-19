@@ -88,8 +88,8 @@
 	switched_on_qualities = list(QUALITY_WELDING = 100, QUALITY_CAUTERIZING = 100, QUALITY_WIRE_CUTTING = 100)
 
 /obj/item/tool/weldingtool/onestar
-	name = "\improper Similacrum Robotics welding tool"
-	desc = "An old and legendary Similacrum Robotics welding tool. Very powerful and reliable, but its compact design causes it to suffer from a lack of both fuel storage and efficiency, requiring regular maintenance."
+	name = "\improper Simulacrum Robotics welding tool"
+	desc = "An old and legendary Simulacrum Robotics welding tool. Very powerful and reliable, but its compact design causes it to suffer from a lack of both fuel storage and efficiency, requiring regular maintenance."
 	icon_state = "one_star_welder"
 	item_state = "welder"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 2)
@@ -103,7 +103,7 @@
 	max_upgrades = 2
 	workspeed = 1.5
 	price_tag = 900
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 //Alchemy thingy
 /obj/item/tool/weldingtool/oil_burner

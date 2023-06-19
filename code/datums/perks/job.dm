@@ -68,10 +68,10 @@
 	return ..()
 
 /datum/perk/job/sanityboost
-	name = "True Faith"
-	desc = "When near an obelisk, you feel your mind at ease. Your body is strengthened by its presence, resisting all forms of damage."
-	gain_text = "You feel the protection of the nearby obelisk."
-	lose_text = "You no longer feel the protection of an obelisk."
+	name = "Inspiring Flame"
+	desc = "When near a Torchbearer, you feel your mind at ease. Your body is strengthened by its presence, resisting all forms of damage."
+	gain_text = "You feel the warmth of a nearby torchbearer."
+	lose_text = "The warmth from the torchbearer fades away."
 	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost/assign(mob/living/carbon/human/H)
