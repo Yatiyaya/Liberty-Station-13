@@ -68,7 +68,7 @@
 	tank = /obj/item/tank/jetpack/oxygen
 
 //Scav
-/obj/item/clothing/head/space/void/riggedvoidsuit
+/obj/
 	name = "makeshift armored helmet"
 	desc = "A makeshift armored helmet you can see the glue holding it, just close enough to be airtight."
 	icon_state = "makeshift_void"
@@ -659,7 +659,7 @@
 	icon_state = "engineer_suit"
 	name = "Terra Engineer Protection Suit"
 	item_state = "engineer_suit"
-	slowdown = 0.1
+	slowdown = 0.5
 	armor_list = list(
 		melee = 30,
 		bullet = 30,
@@ -683,6 +683,229 @@
 
 	icon_state = "engineer_helmet"
 	item_state = "engineer_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/suit/space/void/union
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
+	icon_state = "engineer_heavy_suit"
+	name = "Terra Engineer Heavy Protection Suit"
+	item_state = "engineer_heavy_suit"
+	slowdown = 0.20
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/union
+	stiffness = LIGHT_STIFFNESS
+
+
+/obj/item/clothing/head/helmet/space/void/union
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model seems to have been higly modified with extra layers of armor to have more chances at keep the brain inside."
+	name = "Terra Engineer Heavy Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "engineer_heavy_helmet"
+	item_state = "engineer_heavy_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = LIGHT_OBSCURATION
+
+	bj/item/clothing/suit/space/void/union/tminer_suit
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Mining model designed to even be space proof while keeps his lightweight."
+	icon_state = "tminer_suit"
+	name = "Terra Miner Protection Suit"
+	item_state = "tminer_suit"
+	slowdown = 0.5
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/union
+	stiffness = LIGHT_STIFFNESS
+
+
+/obj/item/clothing/head/helmet/space/void/union/tminer_helmet
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight."
+	name = "Terra Engineer Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "tminer_helmet"
+	item_state = "tminer_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/suit/space/void/union/heavy_tminer_suit
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Mining model designed to even be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
+	icon_state = "heavy_tminer_suit"
+	name = "Terra Miner Heavy Protection Suit"
+	item_state = "heavy_tminer_suit"
+	slowdown = 0.20
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/union
+	stiffness = LIGHT_STIFFNESS
+
+
+/obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this Mining model seems to have been higly modified with extra layers of armor to have more chances at keep the brain inside."
+	name = "Terra Miner Heavy Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "heavy_tminer_helmet"
+	item_state = "heavy_tminer_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	light_overlay = "hardhatunion_light"
+	obscuration = LIGHT_OBSCURATION
+
+	/obj/item/clothing/suit/space/void/union
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
+	icon_state = "chief_heavy_suit"
+	name = "Terra Chief Heavy Protection Suit"
+	item_state = "chief_heavy_suit"
+	slowdown = 0.20
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/union
+	stiffness = LIGHT_STIFFNESS
+
+
+/obj/item/clothing/head/helmet/space/void/union/heavy_chief_helmet
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model seems to have been higly modified with extra layers of armor to have more chances at keep the of the brain of the chief inside."
+	name = "Terra Chief Heavy Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "chief_heavy_helmet"
+	item_state = "chief_heavy_helmet"
+	item_state_slots = list(
+		slot_l_hand_str = "engineer_helmet",
+		slot_r_hand_str = "engineer_helmet",
+		)
+	armor_list = list(
+		melee = 45,
+		bullet = 35,
+		energy = 35,
+		bomb = 60,
+		bio = 100,
+		rad = 100
+	)
+
+	obj/item/clothing/suit/space/void/union/chief_suit
+	desc = "A Special Protection suit designed by Terra-Therma Worker Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight."
+	icon_state = "chief_suit"
+	name = "Terra Chief Protection Suit"
+	item_state = "chief_suit"
+	slowdown = 0.5
+	armor_list = list(
+		melee = 30,
+		bullet = 30,
+		energy = 30,
+		bomb = 40,
+		bio = 100,
+		rad = 100
+	)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	helmet = /obj/item/clothing/head/helmet/space/void/union
+	stiffness = LIGHT_STIFFNESS
+
+
+/obj/item/clothing/head/helmet/space/void/union/chief_helmet
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model has been painted in the colours of the chief to show who is in charge of the protection of the colony and the union workers."
+	name = "Terra Chief Protection Helmet"
+
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "hardhatunion_light"
+
+	icon_state = "chief_helmet"
+	item_state = "chief_helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "engineer_helmet",
 		slot_r_hand_str = "engineer_helmet",
