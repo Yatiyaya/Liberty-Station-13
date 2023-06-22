@@ -817,8 +817,8 @@
 	brightness_on = 6 //luminosity when on
 	light_overlay = "hardhatunion_light"
 
-	icon_state = "heavy_tminer_helmet"
-	item_state = "heavy_tminer_helmet"
+	icon_state = "Heavy_miner_helmet"
+	item_state = "Heavy_miner_helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "engineer_helmet",
 		slot_r_hand_str = "engineer_helmet",
@@ -883,8 +883,8 @@
 /obj/item/clothing/suit/space/void/union/heavy/chief
 	name = "Terra Chief Heavy Protection Suit"
 	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
-	icon_state = "chief_heavy_suit"
-	item_state = "chief_heavy_suit"
+	icon_state = "heavy_chief_suit"
+	item_state = "heavy_chief_suit"
 	slowdown = 0.2
 	armor_list = list(
 		melee = 45,
@@ -906,8 +906,8 @@
 	brightness_on = 8 //luminosity when on
 	light_overlay = "hardhatunion_light"
 
-	icon_state = "chief_heavy_helmet"
-	item_state = "chief_heavy_helmet"
+	icon_state = "heavy_chief_helmet"
+	item_state = "heavy_chief_helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "engineer_helmet",
 		slot_r_hand_str = "engineer_helmet",

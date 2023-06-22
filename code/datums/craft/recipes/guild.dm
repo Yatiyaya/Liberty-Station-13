@@ -325,6 +325,7 @@
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
+		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS, "time" = 20),
 		list(/obj/item/stack/cable_coil, 15, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
 		list(QUALITY_BOLT_TURNING, 35, "time" = 40),
