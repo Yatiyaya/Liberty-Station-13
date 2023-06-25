@@ -190,7 +190,7 @@
 	product_ads = "Praise!;Pray!;Only for the faithful!;Ascend!;Seek a new life!;Better living through technology!"
 	icon_state = "teomat"
 	vendor_department = DEPARTMENT_CHURCH
-	products = list(/obj/item/book/ritual/cruciform = 10,
+	products = list(/obj/item/book/ritual/hearthlantern = 10,
 					/obj/item/storage/fancy/candle_box = 10,
 					/obj/item/storage/fancy/cigarettes/faith = 10,
 					/obj/item/tool_upgrade/augment/sanctifier = 5,
@@ -214,7 +214,7 @@
 					/obj/item/tool/sword/custodian/shortsword = 3,)
 	contraband = list(/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
-	prices = list(/obj/item/book/ritual/cruciform = 5,
+	prices = list(/obj/item/book/ritual/hearthlantern = 5,
 					/obj/item/storage/fancy/candle_box = 30,
 					/obj/item/storage/fancy/cigarettes/faith = 65, //Some healing chems
 					/obj/item/tool_upgrade/augment/sanctifier = 80,

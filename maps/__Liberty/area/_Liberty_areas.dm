@@ -152,6 +152,7 @@
 /area/liberty/maintenance/hideout
 	name = "Abandoned Maintenance Shed"
 	icon_state = "section2deck3starboard"
+	requires_power = FALSE
 
 /area/liberty/maintenance/oldmining
 	name = "Abandoned Mine Shaft East"

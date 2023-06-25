@@ -969,12 +969,12 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "cP" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "cQ" = (

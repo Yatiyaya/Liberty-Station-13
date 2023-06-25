@@ -741,19 +741,23 @@
 	amount = 10
 
 /obj/item/ammo_casing/rod_bolt
-	name = "metal rod"
-	desc = "Wait a second, this is a bullet!"
-	icon = 'icons/obj/stack/items.dmi'
-	icon_state = "rods"
-	caliber = "rod" //not a define
+	name = "crude bolt"
+	desc = "A metal rod crudely shaped to work as a crossbow bolt."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "metal-rod"
+	caliber = "crude bolts" //not a define
 	projectile_type = /obj/item/projectile/bullet/reusable/rod_bolt
 	matter = list(MATERIAL_STEEL = 1)
-	maxamount = 1
+	maxamount = 10
 	is_caseless = TRUE
+
+/obj/item/ammo_casing/rod_bolt/bulk
+	amount = 10
 
 /obj/item/ammo_casing/rod_bolt/rcd
 	name = "flashforged rod"
-	desc = "Wait a second, this is a flashforged bullet!"
+	desc = "Compressed matter shapen into a crossbow bolt with a sharp tip via flash forging."
+	icon_state = "bolt"
 	projectile_type = /obj/item/projectile/bullet/reusable/rod_bolt/rcd
 
 //arrows

@@ -108,7 +108,7 @@
 
 /obj/item/reagent_containers/food/snacks/muffinegg
 	name = "muffin egg sandwich"
-	desc = "A muffin sandwich consisting of fried egg and nadezhdian bacon, a good breakfast takeaway choice."
+	desc = "A muffin sandwich consisting of a round fried egg and locally sourced bacon, a good breakfast takeaway choice."
 	icon_state = "muffinegg"
 	bitesize = 2
 	nutriment_desc = list("bacon" = 5, "runny fried egg" = 5, "muffin" = 2)

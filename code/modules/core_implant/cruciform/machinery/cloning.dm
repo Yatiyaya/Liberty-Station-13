@@ -361,8 +361,8 @@
 		to_chat(user, SPAN_NOTICE("Filled to [reagents.total_volume]/[biomass_capacity]."))
 
 /obj/machinery/neotheology/biomass_container/attackby(obj/item/I, mob/user as mob)
-	if (istype(I, /obj/item/stack/material/biomatter))
-		var/obj/item/stack/material/biomatter/B = I
+	if (istype(I, /obj/item/stack))
+		var/obj/item/stack/B = I
 		if (B.biomatter_in_sheet && B.amount)
 			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Biomatter melting", 1) as num
 			if(sheets_amount_to_transphere > B.amount || sheets_amount_to_transphere < 1) //No cheating!

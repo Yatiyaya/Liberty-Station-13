@@ -992,10 +992,11 @@
 
 /obj/item/reagent_containers/food/snacks/benedict
 	name = "eggs benedict"
-	desc = "A perfectly poached runny egg sitting atop a bedding of Nadezhdian bacon and muffin, with hollandaise sauce generously spread on top. The best breakfast you'll ever have."
+	desc = "A perfectly poached runny egg sitting atop a bedding of bacon and muffin, with hollandaise sauce generously spread on top. The best breakfast you'll ever have."
 	icon_state = "benedict"
 	bitesize = 5
-	preloaded_reagents = list("protein" = 15, "sodiumchloride" = 1, "blackpepper" = 1)
+	nutriment_amt = 5
+	preloaded_reagents = list("protein" = 10, "sodiumchloride" = 1, "blackpepper" = 1)
 	nutriment_desc = list("ham" = 5, "poached egg" = 5, "hollandaise sauce" = 3)
 
 /obj/item/reagent_containers/food/snacks/tonkatsu
@@ -1003,8 +1004,9 @@
 	desc = "Salted cutlets covered in breadcrumbs and deep fried, presented into thick slices. Crispy outside, juicy and tender inside."
 	icon_state = "katsu"
 	bitesize = 2
-	preloaded_reagents = list("protein" = 10, "sodiumchloride" = 1)
-	nutriment_desc = list("fried pork" = 5, "panko breadcrumb" = 2)
+	preloaded_reagents = list("protein" = 5)
+	nutriment_amt = 5
+	nutriment_desc = list("fried pork" = 5, "panko breadcrumbs" = 2)
 
 /obj/item/reagent_containers/food/snacks/spacylibertyduff
 	name = "spacy liberty duff"
@@ -1459,7 +1461,7 @@
 
 /obj/item/reagent_containers/food/snacks/icecream
 	name = "icecream"
-	desc = "A luxurious yet simple iced cream, the most refreshing dessert after a trip through the humid Amethian forest."
+	desc = "A luxurious yet simple iced cream, a most exquisite dessert no matter how cold it is out there."
 	icon_state = "vanillaicecream"
 	trash = /obj/item/trash/icecreambowl
 	bitesize = 3
@@ -1506,7 +1508,7 @@
 	desc = "A luscious milk chocolate piece filled with gooey dulce de leche."
 	icon_state =  "chocolatepiece"
 	filling_color = "#7D5F46"
-	nutriment_amt = 1
+	nutriment_amt = 3
 	nutriment_desc = list("chocolate" = 3, "dulce de leche" = 2, "lusciousness" = 1)
 	bitesize = 2
 	matter = list(MATERIAL_BIOMATTER = 5)

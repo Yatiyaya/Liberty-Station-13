@@ -57,6 +57,8 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/rod_bolt
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE)
+	is_crossbow = TRUE // We are a crossbow
+	muzzle_flash = 0 // No gunpowder present
 	var/obj/item/projectile/superheat_type = /obj/item/projectile/bullet/reusable/rod_bolt/superheated
 	var/tension = 0                         // Current draw on the bow.
 	var/max_tension = 5                     // Highest possible tension.
@@ -87,6 +89,8 @@
 /obj/item/gun/projectile/crossbow/attack_self(mob/living/user as mob)
 	if(tension)
 		user.visible_message("[user] relaxes the tension on [src]'s string and unloads it.","You relax the tension on [src]'s string and unload it.")
+		user.put_in_hands(chambered) // Eject the bolt in our hands, except it's a rod
+		chambered = null // Empty the contents
 		tension = 0
 		update_icon()
 	else
@@ -134,9 +138,22 @@
 			chambered = new /obj/item/ammo_casing/rod_bolt(src)
 			chambered.fingerprintslast = src.fingerprintslast
 			update_icon()
-			user.visible_message("[user] jams a [R] into [src].","You jam a [R] into [src].")
+			user.visible_message("[user] nocks a metal rod into [src].","You nock a metal rod into [src], and it shapes into a crude bolt.")
 			superheat_rod(user)
 
+	else if(istype(I, /obj/item/ammo_casing/rod_bolt) && !chambered)
+		var/obj/item/ammo_casing/rod_bolt/RB = I
+		var/amount = RB.amount
+		if(amount == 1)
+			qdel(RB)
+		else
+			RB.amount -= 1
+			RB.update_icon()
+		chambered = new /obj/item/ammo_casing/rod_bolt(src)
+		chambered.fingerprintslast = src.fingerprintslast
+		update_icon()
+		user.visible_message("[user] nocks a crude bolt into [src].","You jam a crude bolt into [src].")
+		superheat_rod(user)
 
 	else if(istype(I, /obj/item/cell/large))
 		if(!cell)
@@ -148,14 +165,15 @@
 
 	else if(I.get_tool_type(user, list(QUALITY_BOLT_TURNING), src))
 		if(cell)
+			to_chat(user, SPAN_NOTICE("You remove the cell from \the [src]."))
 			eject_item(cell, user)
 			cell = null
 		else
 			to_chat(user, SPAN_NOTICE("[src] doesn't have a cell installed."))
 	else if(chambered)
 		user.visible_message("[user] relaxes the tension on [src]'s string and removes [chambered].","You relax the tension on [src]'s string and remove [chambered].")
-		new /obj/item/stack/rods(get_turf(src))
-		QDEL_NULL(chambered)
+		user.put_in_hands(chambered) // Eject the bolt in our hands, except it's a rod
+		chambered = null // Empty the contents
 		tension = 0
 		update_icon()
 
@@ -183,6 +201,11 @@
 	else
 		icon_state = "crossbow"
 
+/obj/item/gun/projectile/crossbow/examine(mob/user)
+	..()
+	if(cell)
+		to_chat(user, SPAN_NOTICE("\The [src] has a cell installed with [round(cell.charge / superheat_cost)] use\s remaining."))
+
 /*////////////////////////////
 //	Rapid Crossbow Device	//
 */////////////////////////////
@@ -195,6 +218,7 @@
 	fire_sound = 'sound/weapons/rail.ogg' // Basically a downgraded myrmidon.
 	slot_flags = null
 	draw_time = 7.5
+	muzzle_flash = 1
 	superheat_cost = 150
 	var/stored_matter = 0
 	var/max_stored_matter = 60

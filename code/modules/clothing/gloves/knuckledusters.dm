@@ -5,6 +5,7 @@
 	description_info = "Have to be worn in your gloves slot to increase your punch damage."
 	icon_state = "dusters"
 	item_state = "dusters"
+	min_cold_protection_temperature = null // They don't protect you from the cold at all!
 	var/punch_increase = 5
 	var/dusters_givith = FALSE
 	var/to_remove_givith = FALSE
@@ -35,13 +36,14 @@
 	price_tag = 20
 
 /obj/item/clothing/gloves/dusters/scav_gloves
-	name = "scavenger gloves"
+	name = "scavenged gloves"
 	desc = "A pair of fluffy, reinforced combat gloves with plasteel knuckle dusters. \
 			A jury-rigged work of art for those that value protection from whatever \
 			they can scrap on the field, and throwing deadlier punches."
 	icon_state = "scav_gloves"
 	item_state = "scav_gloves"
-	punch_increase = 8 //Armored so this should be weaker then the plasteel dust
+	min_cold_protection_temperature = T0C - 5 // Gloves, not just dusters
+	punch_increase = 10 // They're an upgrade, but let's not get out of hand.
 	armor_list = list(
 		melee = 35, // 10 more than combat, Plasteel reinforced
 		bullet = 15,
@@ -57,7 +59,7 @@
 	desc = "More pain for them, more style for you."
 	icon_state = "dusters_gold"
 	item_state = "dusters_gold"
-	punch_increase = 12
+	punch_increase = 10
 	price_tag = 50
 
 /obj/item/clothing/gloves/dusters/platinum
@@ -65,7 +67,7 @@
 	desc = "Hurt like hell, and stylish as well."
 	icon_state = "dusters_platinum"
 	item_state = "dusters_platinum"
-	punch_increase = 15
+	punch_increase = 15 // Made of platinum and are crafted with spikes, extra damage.
 	price_tag = 30
 
 /obj/item/clothing/gloves/dusters/gloves
@@ -74,9 +76,10 @@
 	These have plasteel powder sewn into the knuckles, adding more kinetic energy to your punches."
 	icon_state = "knuckles"
 	item_state = "knuckles"
+	min_cold_protection_temperature = T0C - 5 // Gloves, not just dusters
 	punch_increase = 10
 	armor = list(
-		melee = 10, //Just a litttttle bit of armor so your not defenceless
+		melee = 10, // Just a litttttle bit of armor so you're not defenseless
 		bullet = 5,
 		energy = 0,
 		bomb = 0,
@@ -104,3 +107,4 @@
 			user.punch_damage_increase -= punch_increase
 			dusters_givith = FALSE
 			to_remove_givith = FALSE
+

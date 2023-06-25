@@ -126,6 +126,7 @@ var/last_chew = 0
 
 /obj/item/handcuffs/fuzzy
 	name = "fuzzy cuffs"
+	desc = "These are rather comfortable for handcuffs."
 	icon_state = "fuzzycuff"
 	breakouttime = 200
 	desc = "Use this to keep... 'prisoners' in line."

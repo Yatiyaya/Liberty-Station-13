@@ -7598,7 +7598,7 @@
 /area/liberty/medical/sleeper)
 "byE" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/crematorium)
 "byF" = (
@@ -24856,7 +24856,7 @@
 /area/liberty/quartermaster/miningdock)
 "eUn" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "eUo" = (
@@ -36187,12 +36187,12 @@
 /area/liberty/outside/forest)
 "gYB" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /obj/item/oddity/common/book_bible,
 /obj/item/book/manual/religion/h_book,
 /obj/item/book/manual/religion/c_bible,
@@ -38349,10 +38349,10 @@
 /area/liberty/engineering/atmos/storage)
 "huC" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "huN" = (
@@ -67642,9 +67642,9 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "ned" = (
@@ -72236,7 +72236,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/crematorium)
 "nZo" = (
@@ -76745,12 +76745,12 @@
 /area/liberty/dungeon/outside/burned_outpost)
 "oQZ" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "oRa" = (
@@ -81093,12 +81093,12 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "pLW" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/undergroundfloor1west)
 "pMa" = (
@@ -87123,12 +87123,12 @@
 /area/liberty/maintenance/undergroundfloor1west)
 "qVZ" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /obj/item/book/manual/fiction/dracula,
 /obj/item/book/manual/fiction/littlewomen,
 /obj/item/book/manual/fiction/aroundtheworld,
@@ -122557,10 +122557,10 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
@@ -124651,7 +124651,7 @@
 /area/liberty/rnd/xenobiology/xenoflora)
 "ykE" = (
 /obj/structure/table/standard,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "ykH" = (

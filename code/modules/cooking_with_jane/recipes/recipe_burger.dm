@@ -9,6 +9,18 @@
 		list(CWJ_USE_OVEN, J_HI, 5 SECONDS)
 	)
 
+/datum/cooking_with_jane/recipe/breakfast_muffin
+	cooking_container = PAN // Toasting the english muffins and heating the whole thing.
+	product_type = /obj/item/reagent_containers/food/snacks/muffinegg
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/bun),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/bacon),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 5,base=5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/friedegg),
+		list(CWJ_USE_OVEN, J_LO, 15 SECONDS)
+	)
+
 /datum/cooking_with_jane/recipe/burger
 	cooking_container = CUTTING_BOARD
 	product_type = /obj/item/reagent_containers/food/snacks/monkeyburger
@@ -51,20 +63,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/human)
 	)
 
-/datum/cooking_with_jane/recipe/burger_xeno
-	cooking_container = CUTTING_BOARD
-	product_type = /obj/item/reagent_containers/food/snacks/xenoburger
-
-	replace_reagents = TRUE
-
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/bun),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/xenomeat)
-	)
-
 /datum/cooking_with_jane/recipe/burger_fish
 	cooking_container = CUTTING_BOARD
 	product_type = /obj/item/reagent_containers/food/snacks/fishburger
@@ -76,7 +74,7 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/carp)
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/carp, exclude_reagents=list("carpotoxin"))
 	)
 
 /datum/cooking_with_jane/recipe/burger_tofu
@@ -168,7 +166,7 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kampfer),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kampfer, exclude_reagents=list("blattedin", "diplopterum")),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge)
 	)
 
@@ -183,7 +181,7 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer, exclude_reagents=list("blattedin", "diplopterum", "starkellin")),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge)
 	)
 
@@ -198,7 +196,7 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager, exclude_reagents=list("blattedin", "diplopterum", "gewaltine")),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge)
 	)
 
@@ -213,7 +211,7 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche, exclude_reagents=list("blattedin", "diplopterum", "seligitillin")),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge)
 	)
 
@@ -228,8 +226,8 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer)
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer, exclude_reagents=list("seligitillin", "fuhrerole", "diplopterum")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer, exclude_reagents=list("seligitillin", "fuhrerole", "diplopterum"))
 	)
 
 /datum/cooking_with_jane/recipe/burger_roach_hivelord
@@ -243,8 +241,8 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser)
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser, exclude_reagents=list("blattedin", "fuhrerole", "seligitillin", "diplopterum", "starkellin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/kaiser, exclude_reagents=list("blattedin", "fuhrerole", "seligitillin", "diplopterum", "starkellin"))
 	)
 
 /datum/cooking_with_jane/recipe/burger_roach_big
@@ -258,8 +256,23 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager)
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat, exclude_reagents=list("blattedin", "diplopterum")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche, exclude_reagents=list("blattedin", "diplopterum", "seligitillin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer, exclude_reagents=list("blattedin", "diplopterum", "starkellin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager, exclude_reagents=list("blattedin", "diplopterum", "gewaltine"))
 	)
+
+/datum/cooking_with_jane/recipe/burger_xeno
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/xenoburger
+
+	replace_reagents = TRUE
+
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/bun),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "tomato", reagent_skip=TRUE),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/xenomeat, exclude_reagents=list("pacid"))
+	)
+

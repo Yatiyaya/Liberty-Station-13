@@ -11920,12 +11920,12 @@
 /area/liberty/crew_quarters/hydroponics/garden)
 "gXE" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "gXO" = (
@@ -12693,7 +12693,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/crematorium)
 "hHc" = (
@@ -13643,9 +13643,9 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "iwX" = (
@@ -18725,10 +18725,10 @@
 /area/liberty/hallway/surface/section1)
 "nRs" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "nRw" = (
@@ -20099,7 +20099,7 @@
 /area/liberty/dungeon/outside/campground)
 "pfH" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/crematorium)
 "pfK" = (
@@ -21154,7 +21154,7 @@
 /area/liberty/dungeon/outside/burned_outpost)
 "qai" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "qas" = (
@@ -27904,10 +27904,10 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)

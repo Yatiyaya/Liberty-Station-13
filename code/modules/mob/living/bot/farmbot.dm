@@ -385,6 +385,7 @@
 			wTank.loc = S
 			S.tank = wTank
 		S.name = created_name
+		S.locked = FALSE // Spawn unlocked so that anyone can configure
 		user.remove_from_mob(W)
 		qdel(W)
 		qdel(src)

@@ -87,6 +87,16 @@
 		list(QUALITY_CUTTING, 40, "time" = 5)
 	)
 
+/datum/craft_recipe/gun/crossbow_bolts
+	name = "crude crossbow bolts"
+	result = /obj/item/ammo_casing/rod_bolt/bulk
+	icon_state = "gun_part_7"
+	steps = list(
+		list(/obj/item/stack/rods, 10, "time" = 1),
+		list(QUALITY_SAWING, 10, "time" = 5),
+		list(QUALITY_HAMMERING, 10, "time" = 5)
+	)
+
 /datum/craft_recipe/gun/tacticool_flashlight
 	name = "Gun mod: Attachable Flashlight"
 	result = /obj/item/gun_upgrade/tacticool_flashlight

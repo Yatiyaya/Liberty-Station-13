@@ -21425,15 +21425,15 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/crew_quarters/cafeteria)
 "bdU" = (
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
 /obj/item/book/ritual,
 /obj/item/book/ritual,
 /obj/item/book/ritual,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},

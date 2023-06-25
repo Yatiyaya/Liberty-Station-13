@@ -153,6 +153,125 @@
 	..()
 	icon_state = "snowgrassall[rand(1, 3)]"
 
+// Start of Walther sprites
+
+/obj/structure/flora/snowgrass
+	name = "grass"
+	desc = "Even in this weather, grass will find a way to grow."
+	icon = 'icons/obj/flora/snowflora.dmi'
+	icon_state = "grass1"
+	anchored = 1
+
+/obj/structure/flora/snowgrass/attackby(obj/item/I, mob/user)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if(!istype(user.loc, /turf))
+		return
+	var/list/usable_qualities = list(QUALITY_CUTTING)
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	if(tool_type==QUALITY_CUTTING)
+		to_chat(user, SPAN_NOTICE("You start to cut the grass, harvesting some clippings..."))
+		if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, tool_type, FAILCHANCE_ZERO, required_stat = STAT_MEC))
+			new /obj/plant_spawner/grass(get_turf(src))
+			to_chat(user, SPAN_NOTICE("You harvest some clippings."))
+			qdel(src)
+			return
+		return
+
+/obj/structure/flora/snowgrass/grass
+	icon_state = "grass1"
+
+/obj/structure/flora/snowgrass/grass/New()
+	..()
+	icon_state = "grass[rand(1,3)]"
+
+/obj/structure/flora/snowgrass/vegetation
+	name = "snowy vegetation"
+	icon_state = "veg1"
+
+/obj/structure/flora/snowgrass/vegetation/New()
+	..()
+	icon_state = "veg[rand(1,3)]"
+
+/obj/structure/flora/snowgrass/rockandgrass
+	name = "collection of rocks and grass"
+	icon_state = "rockandgrass1"
+
+/obj/structure/flora/snowgrass/rockandgrass/New()
+	..()
+	icon_state = "rockandgrass[rand(1,3)]"
+
+// Walther snowy bushes
+
+/obj/structure/flora/snowbush
+	name = "arctic bush"
+	desc = "Strange, alien bushes that have found a way to grow above snow level."
+	icon = 'icons/obj/flora/snowflora.dmi'
+	icon_state = "bush_a1"
+	anchored = 1
+
+/obj/structure/flora/snowbush/attackby(obj/item/I, mob/user)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if(!istype(user.loc, /turf))
+		return
+	var/list/usable_qualities = list(QUALITY_CUTTING)
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	if(tool_type==QUALITY_CUTTING)
+		to_chat(user, SPAN_NOTICE("You start to cut the plant, harvesting some clippings..."))
+		if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, tool_type, FAILCHANCE_ZERO, required_stat = STAT_MEC))
+			to_chat(user, SPAN_NOTICE("You harvest some clippings,"))
+			new /obj/plant_spawner/grass(get_turf(src))
+			new /obj/plant_spawner/grass(get_turf(src))
+			if(prob(20))
+				new /obj/plant_spawner/towercaps(get_turf(src))
+				to_chat(user, SPAN_NOTICE("Even got a log out of it too!"))
+			qdel(src)
+			return
+		return
+
+/obj/structure/flora/snowbush/sapling
+	icon_state = "bush_a1"
+
+/obj/structure/flora/snowbush/sapling/New()
+	..()
+	icon_state = "bush_a[rand(1,4)]"
+
+/obj/structure/flora/snowbush/youngtree
+	name = "young tree"
+	desc = "A relatively young sapling of an indeterminate species, growing boldly against the inclement weather."
+	icon_state = "pointybush_1"
+
+/obj/structure/flora/snowbush/youngtree/New()
+	..()
+	icon_state = "pointybush_[rand(1,2)]"
+
+// Flowers
+
+/obj/structure/flora/winterflowers
+	name = "winter flowers"
+	desc = "A collection of pretty tundra flowers growing amidst the snow."
+	icon = 'icons/obj/flora/snowflora.dmi'
+	icon_state = "winterflowers"
+
+/obj/structure/flora/winterflowers/attackby(obj/item/I, mob/user)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if(!istype(user.loc, /turf))
+		return
+	var/list/usable_qualities = list(QUALITY_CUTTING)
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	if(tool_type==QUALITY_CUTTING)
+		to_chat(user, SPAN_NOTICE("You start to cut the plant, harvesting some clippings..."))
+		if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, tool_type, FAILCHANCE_ZERO, required_stat = STAT_MEC))
+			new /obj/plant_spawner/grass(get_turf(src))
+			new /obj/plant_spawner/grass(get_turf(src))
+			new /obj/plant_spawner/harebells(get_turf(src))
+			to_chat(user, SPAN_NOTICE("You harvest some clippings. Got a flower out of it too!"))
+			qdel(src)
+			return
+		return
+
+/* END OF WALTHER FLORA SPRITES */
+
+
 
 //bushes
 /obj/structure/flora/bush
@@ -187,7 +306,7 @@
 			new /obj/plant_spawner/grass(get_turf(src))
 			if(prob(20))
 				new /obj/plant_spawner/towercaps(get_turf(src))
-				to_chat(user, SPAN_NOTICE("Even got a towercap log out of it too!"))
+				to_chat(user, SPAN_NOTICE("Even got a log out of it too!"))
 			qdel(src)
 			return
 		return

@@ -475,7 +475,7 @@
 				M.visible_message("\red [M] missed \the [src]")
 			else
 				if (istype(M))
-					damage += max(0, (M.stats.getStat(STAT_ROB) / 10))
+					damage += max(0, (M.stats.getStat(STAT_ROB) / 10) + H.punch_damage_increase)
 					if (HULK in M.mutations)
 						damage *= 2
 

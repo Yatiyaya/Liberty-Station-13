@@ -16,6 +16,6 @@
 	melee_damage_upper = 75
 	meat_type = /obj/item/stack/material/gold/random
 	drop1 = /obj/item/stack/material/gold/random
-	drop2 = /obj/item/book/ritual/cruciform
+	drop2 = /obj/item/book/ritual/hearthlantern
 	armor = list(melee = 75, bullet = 25, energy = 20, bomb = 30, bio = 100, rad = 100, agony = 100)
 	target_dummy = TRUE

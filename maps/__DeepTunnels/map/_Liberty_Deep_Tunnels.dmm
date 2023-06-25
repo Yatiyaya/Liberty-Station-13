@@ -4739,7 +4739,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
-	req_access = list(7)
+	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/rnd/mixing)
@@ -8266,6 +8266,13 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/rnd/mixing)
+"xf" = (
+/obj/structure/closet/secure_closet/xenoarchaeologist,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/rnd/outpoststorage)
 "xj" = (
 /obj/structure/lattice,
 /turf/simulated/floor/beach/water/jungledeep{
@@ -9126,7 +9133,7 @@
 "SI" = (
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
-	req_access = list(7)
+	req_access = list(5)
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/sign/department/toxins{
@@ -9196,7 +9203,7 @@
 "Um" = (
 /obj/machinery/door/airlock/glass_research{
 	name = "Toxins Lab";
-	req_access = list(7)
+	req_access = list(5)
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -9268,6 +9275,13 @@
 	},
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
+"VD" = (
+/obj/structure/closet/secure_closet/xenoarchaeologist,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/rnd/outpoststorage)
 "VU" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 5;
@@ -16499,7 +16513,7 @@ kK
 kK
 kK
 ig
-iu
+VD
 iu
 jy
 um
@@ -16701,7 +16715,7 @@ ti
 ti
 ti
 ig
-iu
+xf
 iu
 mQ
 iu

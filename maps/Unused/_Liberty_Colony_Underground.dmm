@@ -2588,7 +2588,7 @@
 /area/liberty/quartermaster/miningdock)
 "afT" = (
 /obj/structure/table/standard,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "afU" = (
@@ -30915,12 +30915,12 @@
 /area/liberty/crew_quarters/podrooms)
 "dbc" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/undergroundfloor1north)
 "dbC" = (
@@ -56147,7 +56147,7 @@
 /obj/item/book/manual/engineering_guide,
 /obj/item/book/manual/security_space_law,
 /obj/item/book/manual/wiki/medical_guide,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "txt" = (

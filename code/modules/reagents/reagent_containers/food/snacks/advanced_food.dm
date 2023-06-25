@@ -572,7 +572,7 @@
 
 		if("soylent_apple")
 			desc = "A SR SoyPack, this one has added green apple flavouring."
-			alt_desc = "A SR SoyPack, this one has added green apple flavour. The smell of cinnamon is stronger then apple..."
+			alt_desc = "A SR SoyPack, this one has added green apple flavour. The smell of cinnamon is stronger than apple..."
 			icon_state = "soylent_apple"
 			icon_pointer = "soylent_apple"
 			preloaded_reagents = list("soymilk" = 3, "cinnamonpowder" = 2, "milk" = 5)
