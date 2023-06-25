@@ -1,0 +1,61 @@
+//#include "map/_event_map_engi.dmm"
+
+
+/obj/map_data/event_map_engi
+	name = "rebuildable outpost map_data"
+	is_player_level = TRUE
+	is_contact_level = TRUE
+	is_accessable_level = TRUE
+	height = 2
+
+/obj/effect/shuttle_landmark/engi_outpost
+	name = "Project Landing zone"
+	icon_state = "shuttle-green"
+	landmark_tag = "nav_engi_outpost"
+	base_area = /area/event_engi
+	base_turf = /turf/simulated/floor/asteroid
+
+/area/event_engi
+	dynamic_lighting = FALSE
+	name = "Outpost Outdoors"
+	icon_state = "hammerblue"
+
+/area/event_engi/building_main
+	dynamic_lighting = TRUE
+	name = "Outpost Main"
+	icon_state = "hammerblue"
+
+/area/event_engi/building_upper
+	dynamic_lighting = TRUE
+	name = "Outpost Upper Area"
+	icon_state = "hammerblue"
+
+/area/event_engi/building_medical
+	dynamic_lighting = TRUE
+	name = "Outpost Upper Medical"
+	icon_state = "hammerblue"
+
+/area/event_engi/rooms
+	dynamic_lighting = TRUE
+	name = "Outpost Dormitory"
+	icon_state = "hammerblue"
+
+/area/event_engi/fud
+	dynamic_lighting = TRUE
+	name = "Outpost Kitchen"
+	icon_state = "hammerblue"
+
+/area/event_engi/bathroom
+	dynamic_lighting = TRUE
+	name = "Outpost Restrooms"
+	icon_state = "hammerblue"
+
+/area/event_engi/supply
+	name = "Outpost Supply"
+	icon_state = "hammerblue"
+	requires_power = FALSE
+
+/area/event_engi/trash
+	name = "Outpost Trash Area"
+	icon_state = "hammerblue"
+	requires_power = FALSE
