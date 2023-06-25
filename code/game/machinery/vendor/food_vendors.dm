@@ -366,6 +366,8 @@
 					/obj/item/reagent_containers/food/drinks/mug = 3,
 					/obj/item/reagent_containers/food/drinks/mug/white = 3,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 1,
+					/obj/item/reagent_containers/food/condiment/peppermill = 1,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,

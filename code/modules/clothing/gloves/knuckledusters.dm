@@ -114,7 +114,7 @@
 			You feel like wearing it might make you able to brawl against the hordes of hell itself."
 	icon_state = "berserk_pack"
 	item_state = "berserk_pack"
-	punch_increase = WEAPON_FORCE_GODLIKE // Same as the chainsaw
+	punch_increase = 50 // Still VERY high, this is FLAT damage.
 	price_tag = 666
 
 // Maybe applying a red overlay to the screen would be too much.
