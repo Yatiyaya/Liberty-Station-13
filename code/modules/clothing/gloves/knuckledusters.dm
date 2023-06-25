@@ -11,6 +11,26 @@
 	var/to_remove_givith = FALSE
 	price_tag = 10
 
+/obj/item/clothing/gloves/dusters/dropped(var/mob/M)
+	..()
+	update_dusters(M)
+
+/obj/item/clothing/gloves/dusters/equipped(var/mob/M)
+	.=..()
+	update_dusters(M)
+
+
+/obj/item/clothing/gloves/dusters/proc/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+
 /obj/item/clothing/gloves/dusters/silver
 	name = "silver knuckle dusters"
 	desc = "More pain for them, more bling for you. Said to help protect the mind."
@@ -77,7 +97,6 @@
 	icon_state = "knuckles"
 	item_state = "knuckles"
 	min_cold_protection_temperature = T0C - 5 // Gloves, not just dusters
-	punch_increase = 10
 	armor = list(
 		melee = 10, // Just a litttttle bit of armor so you're not defenseless
 		bullet = 5,
@@ -88,23 +107,45 @@
 	)
 	price_tag = 100
 
-/obj/item/clothing/gloves/dusters/dropped(var/mob/M)
+/obj/item/clothing/gloves/dusters/berserk_pack
+	name = "bloodied knuckleduster"
+	desc = "A single, bloodied knuckleduster emanating a strong, anomalous and ominous aura of murder and rage. \
+			Whatever it previous owner killed, its blood still stains the spikes at its tip. \
+			You feel like wearing it might make you able to brawl against the hordes of hell itself."
+	icon_state = "berserk_pack"
+	item_state = "berserk_pack"
+	punch_increase = WEAPON_FORCE_GODLIKE // Same as the chainsaw
+	price_tag = 666
+
+// Maybe applying a red overlay to the screen would be too much.
+/obj/item/clothing/gloves/dusters/berserk_pack/equipped(var/mob/M)
 	..()
-	update_dusters(M)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(H.gloves == src)
+			to_chat(H, SPAN_WARNING("\red <font size=3><b>Rip and Tear, until it is DONE!</b></font>")) // Berserk pack active!
 
-/obj/item/clothing/gloves/dusters/equipped(var/mob/M)
-	.=..()
-	update_dusters(M)
+//But what if we want to wear it on our left hand?
+/obj/item/clothing/gloves/dusters/berserk_pack/verb/swap_hands()
+	set name = "Swap Hands"
+	set category = "Object"
+	set src in usr
 
+	if(!isliving(loc))
+		return
 
-/obj/item/clothing/gloves/dusters/proc/update_dusters(mob/living/carbon/human/user)
-	if(istype(user))
-		if(user.gloves == src && !dusters_givith)
-			user.punch_damage_increase += punch_increase
-			dusters_givith = TRUE
-			to_remove_givith = TRUE
-		if(to_remove_givith && !(user.gloves == src))
-			user.punch_damage_increase -= punch_increase
-			dusters_givith = FALSE
-			to_remove_givith = FALSE
+	var/mob/M = usr
+	var/list/options = list()
+	options["right hand"] = "berserk_pack"
+	options["left hand"] = "berserk_pack_left"
 
+	var/choice = input(M,"What hand do you want to wear it on?","Swap hands") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		item_state = options[choice]
+		to_chat(M, "You decide to wear your singular knuckleduster in your [choice].")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return TRUE

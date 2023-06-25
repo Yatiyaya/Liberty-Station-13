@@ -286,7 +286,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 
 /obj/item/tool/wrench/big_wrench/freedom
 	name = "\"Freedom\" wrench"
-	desc = "A strange weapon produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
+	desc = "A strange tool produced by some sort of unknown weaponsmith or long-gone company, likely one of only a few ever made. \
 			The sign of a man is someone who can build and who can break, with a wrench like this, you'll do both."
 	icon_state = "freedom_wrench"
 	w_class = ITEM_SIZE_NORMAL

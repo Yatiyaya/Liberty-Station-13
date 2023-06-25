@@ -8,6 +8,10 @@
 	icon_state = "pigrat"
 	icon_living = "pigrat"
 	icon_dead = "pigrat_dead"
+	maxHealth = 200 // Sturdier than a Hell Diver
+	health = 200
+	melee_damage_lower = 25
+	melee_damage_upper = 30
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/pork
 	meat_amount = 3
 	leather_amount = 4 //The amount of leather sheets dropped.
@@ -59,7 +63,7 @@
 	maxHealth = 300
 	health = 300
 	melee_damage_lower = 30
-	melee_damage_upper = 35
+	melee_damage_upper = 40
 	leather_amount = 6 //The amount of leather sheets dropped.
 	bones_amount = 6 //The amount of bone sheets dropped.
 	has_special_parts = TRUE //var for checking during the butcher process.

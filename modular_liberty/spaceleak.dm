@@ -9,7 +9,7 @@
 	var/list/clean_items = list(
 		/obj/item/vacuum_cleaner,
 		/obj/item/soap/church,
-		/obj/item/soap/bluespase,
+		/obj/item/soap/bluespace,
 		/obj/item/bluespace_harpoon
 	)
 
