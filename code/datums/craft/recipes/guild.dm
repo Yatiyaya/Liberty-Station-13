@@ -296,7 +296,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_URANIUM, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 20),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 60)
 	)
 
 /datum/craft_recipe/terra/technosuit
@@ -305,7 +305,7 @@
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SAWING, 60, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
@@ -321,14 +321,113 @@
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_SAWING, 60, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
+		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS, "time" = 20),
 		list(/obj/item/stack/cable_coil, 15, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
-		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
+		list(QUALITY_BOLT_TURNING, 35, "time" = 40),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 60)
+	)
+
+/datum/craft_recipe/terra/union_suit
+	name = "Terra Engineer Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/armor/vest/technomancersuit, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/clothing/head/helmet/technomancersuit, 1, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+	)
+
+/datum/craft_recipe/terra/union_suit_heavy
+	name = "Terra Engineer Heavy Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union/heavy
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/tool_upgrade/armor/melee, 1, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+	)
+
+/datum/craft_recipe/terra/union_miner_suit
+	name = "Terra Miner Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union/tminer_suit
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
+		list(/obj/item/gun_upgrade/tacticool_flashlight, 1, "time" = 20),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+	)
+
+/datum/craft_recipe/terra/union_miner_suit_heavy
+	name = "Terra Miner Heavy Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union/heavy_tminer_suit
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/space/void/union/tminer_suit, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 5),
+		list(/obj/item/tool_upgrade/reinforcement/stick, 1, "time" = 5),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 5),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+	)
+
+/datum/craft_recipe/terra/union_chief_suit
+	name = "Terra Chief Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union/chief_suit
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_GOLD, "time" = 5),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 5),
+		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(/obj/item/gun_upgrade/tacticool_flashlight, 1, "time" = 20),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/clothing/gloves/insulated/union, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_SILVER, "time" = 5),
+		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+	)
+
+/datum/craft_recipe/terra/union_heavy_chief_suit
+	name = "Terra Chief Heavy Protection Suit"
+	result = /obj/item/clothing/suit/space/void/union/heavy/chief
+	icon_state = "clothing"
+	steps = list(
+		list(/obj/item/clothing/suit/space/void/union/chief_suit, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_GOLD, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_SILVER, "time" = 5),
+		list(QUALITY_WELDING, 40, "time" = 15),
+		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(/obj/item/tool_upgrade/augment/cell_mount, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASMA, "time" = 5),
+		list(QUALITY_WIRE_CUTTING, 40, 5),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
 	)
 
 /datum/craft_recipe/terra/swat_yellow
@@ -382,6 +481,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 30),
 		list(QUALITY_BOLT_TURNING, 20, "time" = 40)
 	)
+
 /*
 //Traps
 /datum/craft_recipe/terra/guild_mine_trap
