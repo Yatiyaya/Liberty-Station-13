@@ -59,3 +59,35 @@
 	name = "Outpost Trash Area"
 	icon_state = "hammerblue"
 	requires_power = FALSE
+
+//////////////////////////////////////////////////////////
+
+#include "map/_event_map_bridge.dmm"
+
+
+/obj/map_data/event_map_bridge
+	name = "rebuildable outpost map_data"
+	is_player_level = TRUE
+	is_contact_level = TRUE
+	is_accessable_level = TRUE
+	height = 1
+
+/obj/effect/shuttle_landmark/event_map_bridge
+	name = "Project Landing zone"
+	icon_state = "shuttle-green"
+	landmark_tag = "nav_brige_outpost"
+	base_area = /area/event_bridge
+	base_turf = /turf/simulated/floor/asteroid
+
+/area/event_bridge
+	dynamic_lighting = FALSE
+	name = "Roadblocked Bridge"
+	icon_state = "hammerblue"
+
+/area/event_bridge/merc_outpost
+	name = "Hostile Outpost"
+	icon_state = "hammerblue"
+
+/area/event_bridge/misc
+	name = "Hostile Wildlands"
+	icon_state = "hammerblue"
