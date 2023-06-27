@@ -1063,7 +1063,7 @@
 /turf/simulated/floor/icewater,
 /area/event_bridge)
 "Nz" = (
-/obj/map_data/event_map_bridge,
+/obj/effect/shuttle_landmark/event_map_bridge,
 /turf/simulated/floor/asteroid,
 /area/event_bridge)
 "NL" = (

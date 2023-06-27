@@ -66,7 +66,7 @@
 
 
 /obj/map_data/event_map_bridge
-	name = "rebuildable outpost map_data"
+	name = "event bridge map"
 	is_player_level = TRUE
 	is_contact_level = TRUE
 	is_accessable_level = TRUE
