@@ -62,7 +62,7 @@
 	move_to_delay = 3
 	maxHealth = 300
 	health = 300
-	melee_damage_upper = 35
+	melee_damage_lower = 35
 	melee_damage_upper = 40
 	natural_weapon = /obj/item/natural_weapon/bite
 	leather_amount = 6 //The amount of leather sheets dropped.
