@@ -280,7 +280,7 @@
 
 /mob/living/simple_animal/hostile/helldiver
 	name = "hell diver"
-	desc = "One of the local fauna native to the planet, nicknamed hell diver by Skylight miners. They're usually friendly and highly valued by \
+	desc = "One of the local fauna native to the planet's underground caves, nicknamed Hell Diver by Union miners. They're usually friendly and highly valued by \
 	miners as potential companions as they don't mind being led around, love food, and tend to rush after hostile life before a miner can see it. They have \
 	peerless eyesight in the dark and are quite skilled at killing hostile fauna, more than their small size suggests."
 	faction = "neutral"

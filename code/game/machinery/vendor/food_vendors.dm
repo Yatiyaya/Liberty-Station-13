@@ -150,7 +150,8 @@
 	product_slogans = "Aren't you glad you don't have to fertilize the natural way?;Now with 50% less stink!;Plants are people too!;150% of the Effects, 0% of the smell!;We all like plants, don't we?;Remember to Never Underestimate Technology.;Take the spray and ROBUST THOSE PESTS!;Save your plants today!;Your plants deserve only the most Robust chemicals!"
 	product_ads = "We like plants!;Don't you want some?;The greenest thumbs ever.;We like big plants.;Soft soil..."
 	icon_state = "nutri"
-	products = list(/obj/item/reagent_containers/glass/fertilizer/ez = 6,
+	products = list(/obj/item/device/scanner/plant = 5,
+					/obj/item/reagent_containers/glass/fertilizer/ez = 6,
 					/obj/item/reagent_containers/glass/fertilizer/l4z = 4,
 					/obj/item/reagent_containers/glass/fertilizer/rh = 4,
 					/obj/item/plantspray/pests = 20,
@@ -307,6 +308,8 @@
 					/obj/item/reagent_containers/food/drinks/mug/brit = 3,
 					/obj/item/reagent_containers/food/drinks/mug/moebius = 3,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 1,
+					/obj/item/reagent_containers/food/condiment/peppermill = 1,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,
@@ -363,6 +366,8 @@
 					/obj/item/reagent_containers/food/drinks/mug = 3,
 					/obj/item/reagent_containers/food/drinks/mug/white = 3,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 1,
+					/obj/item/reagent_containers/food/condiment/peppermill = 1,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,
@@ -409,6 +414,8 @@
 					/obj/item/reagent_containers/food/drinks/mug/brit = 6,
 					/obj/item/reagent_containers/food/drinks/mug/moebius = 7,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 10,
+					/obj/item/reagent_containers/food/condiment/peppermill = 10,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 3,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 3,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 3,

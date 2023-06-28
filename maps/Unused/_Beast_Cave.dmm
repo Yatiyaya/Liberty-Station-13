@@ -2729,7 +2729,7 @@
 "kV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /obj/item/book/manual/fiction/theinvisibleman,
 /obj/item/book/manual/fiction/frankenstein,
 /obj/item/book/manual/fiction/dracula,

@@ -389,9 +389,24 @@
 
 /obj/item/gun/projectile/examine(mob/user)
 	..(user)
+
+	if(is_crossbow)
+		if(chambered)
+			to_chat(user, "It has \a [chambered.name] loaded.")
+		else
+			to_chat(user, "It is empty.")
+
+
 	if(ammo_magazine)
 		to_chat(user, "It has \a [ammo_magazine] loaded.")
-	to_chat(user, "Has [get_ammo()] round\s remaining.")
+
+	if(loaded.len)
+		to_chat(user, "Has [get_ammo()] round\s remaining.")
+
+	else
+		if(!is_crossbow)
+			to_chat(user, "It is empty.")
+
 	return
 
 /obj/item/gun/projectile/proc/get_ammo()

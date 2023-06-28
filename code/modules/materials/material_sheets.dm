@@ -412,7 +412,7 @@
 	icon_state = "sheet-biomatter"
 	default_type = MATERIAL_BIOMATTER
 	price_tag = 1 //to keep biomatter in the player economy as the church and science use it.
-	var/biomatter_in_sheet = 1
+	biomatter_in_sheet = 1
 	novariants = FALSE
 
 /obj/item/stack/material/biomatter/random

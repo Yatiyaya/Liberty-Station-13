@@ -132,7 +132,7 @@
 
 
 /obj/effect/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/mop) || istype(I, /obj/item/soap) || istype(I, /obj/item/holyvacuum))
+	if(istype(I, /obj/item/mop) || istype(I, /obj/item/soap) || istype(I, /obj/item/vacuum_cleaner))
 		return
 	..()
 

@@ -318,7 +318,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/stack/material/biopolymer_silk = 10,
 		/obj/item/stack/mold_kit/radiance_sigil = 1,
-		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/book/ritual/hearthlantern = 1,
 		/obj/item/stack/mold_kit/masonry = 2,
 		/obj/item/stack/mold_kit/tailoring = 3,
 	)
@@ -410,7 +410,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/silver = 10,
 		/obj/item/stack/mold_kit/masonry = 2,
 		/obj/item/stack/mold_kit/blacksmithing = 2,
-		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/book/ritual/hearthlantern = 1,
 		/obj/item/stack/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
@@ -510,7 +510,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	materials = list(
 		/obj/item/tool/sword/custodian/shortsword = 1,
 		/obj/item/stack/cable_coil = 20,
-		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/book/ritual/hearthlantern = 1,
 		/obj/item/stack/mold_kit/tailoring = 2,
 		/obj/item/stack/mold_kit/masonry = 1,
 		/obj/item/stack/mold_kit/blacksmithing = 1,
@@ -567,7 +567,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /mob/living/carbon/superior_animal/robot/church/rook
 	materials = list(
 		/obj/item/stack/material/diamond = 1,
-		/obj/item/book/ritual/cruciform = 1,
+		/obj/item/book/ritual/hearthlantern = 1,
 		/obj/item/stack/cable_coil = 30,
 		/obj/item/stack/material/gold = 6,
 		/obj/item/stack/mold_kit/radiance_sigil = 1,
@@ -651,7 +651,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/cable_coil = 15,
 		/obj/item/stack/material/plasteel = 10,
 		/obj/item/stack/material/biopolymer_silk = 60,
-		/obj/item/book/ritual/cruciform/priest = 1 //Limiting factor
+		/obj/item/book/ritual/hearthlantern/priest = 1 //Limiting factor
 	)
 	build_time = 60 SECONDS //These need a lot of prep
 

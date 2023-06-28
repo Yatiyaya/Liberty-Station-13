@@ -94,7 +94,7 @@
 /datum/armament/item
 	name = "item summoning"
 	desc = "item"
-	path = /obj/item/book/ritual/cruciform
+	path = /obj/item/book/ritual/hearthlantern
 
 //Im really lazy, some one else can make fitting descriptions
 /datum/armament/item/New()

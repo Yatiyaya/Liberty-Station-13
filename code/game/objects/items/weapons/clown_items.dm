@@ -183,7 +183,7 @@
 	else
 		icon_state = "soaproach_red"
 
-/obj/item/soap/bluespase
+/obj/item/soap/bluespace
 	desc = "An anomalous bar of blue soap created by an unknown person (or group?), their work marked by a blue cross.\
 	These items are known to vanish and reappear when left alone. Smells of bluespace and hospitals."
 	icon_state = "soapbluespace"
@@ -194,7 +194,7 @@
 	matter = list(MATERIAL_BIOMATTER = 10, MATERIAL_PLASMA = 3, MATERIAL_GOLD = 3, MATERIAL_SILVER = 3, MATERIAL_DIAMOND = 3)
 	cleaning_reagent = "sterilizine" //We use something that removes blood
 
-/obj/item/soap/bluespase/New()
+/obj/item/soap/bluespace/New()
 	..()
 	item_flags |= BLUESPACE
 	bluespace_entropy(5, get_turf(src))

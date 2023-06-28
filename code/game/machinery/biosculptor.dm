@@ -46,7 +46,7 @@
 	var/found_biomatter = FALSE
 	for(var/obj/target_item in get_step(src, input_side)) //find any item
 		if(has_biomatter(target_item)) //has biomattter? start eating, set the expected output
-			if(istype(target_item,/obj/item/stack/material/biomatter)) //did we just find some biomatter sheets?
+			if(istype(target_item,/obj/item/stack)) //did we just find some sheets?
 				var/obj/item/stack/found_sheets = target_item //get a /stack var, set it to the sheets we found
 				output_amount = found_sheets.amount //set the output to be the amount var of the sheets we found
 			found_biomatter = TRUE //used to determine whether to flash the DENIED alarm or not

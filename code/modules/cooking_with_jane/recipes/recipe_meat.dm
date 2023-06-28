@@ -147,10 +147,10 @@
 		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", reagent_skip=TRUE),
 		CWJ_END_EXCLUSIVE_OPTIONS,
 		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
-		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The pork was Spiced with chili powder."),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "pineapplejuice", 5, remain_percent=0.1, base=5, prod_desc="The pork was rosted in pineapple juice."),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The pork was spiced with chili powder."),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "pineapplejuice", 5, remain_percent=0.1, base=5, prod_desc="The pork was roasted in pineapple juice."),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 5, remain_percent=0.1 ,base=3, prod_desc="The pork was glazed with honey"),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "bbqsauce", 3, remain_percent=0.5 ,base=8, prod_desc="The pork was layered with BBQ sauce"),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "bbqsauce", 3, remain_percent=0.5 ,base=8, prod_desc="The pork was slathered with BBQ sauce"),
 		CWJ_END_EXCLUSIVE_OPTIONS,
 		list(CWJ_USE_GRILL, J_MED, 30 SECONDS)
 	)
@@ -205,7 +205,7 @@
 		list(CWJ_ADD_REAGENT, "cornoil", 1),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 1, base=1, prod_desc="The bacon strips have been caramelized."),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)
 
@@ -286,3 +286,84 @@
 		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
 */
+
+/datum/cooking_with_jane/recipe/friedchikin
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/friedchikin
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/chicken),
+		list(CWJ_ADD_REAGENT, "flour", 5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "egg", 3, base=1, prod_desc="The fried poultry has an extra crispy batter coating."),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The fried poultry was spiced up with chili powder."),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_USE_STOVE, J_MED, 15 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/tonkatsu
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/tonkatsu
+	step_builder = list(
+		list(CWJ_ADD_REAGENT, "flour", 5),
+		list(CWJ_ADD_REAGENT, "egg", 3),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/pork),
+		list(CWJ_USE_TOOL_OPTIONAL, QUALITY_HAMMERING, 15, prod_desc="The pork meat is soft and tenderized."),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_USE_STOVE, J_HI, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/katsudon
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/katsudon
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/boiledrice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tonkatsu),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "cabbage"),
+		list(CWJ_ADD_REAGENT, "egg", 3),
+		list(CWJ_ADD_REAGENT, "soysauce", 5)
+	)
+
+/datum/cooking_with_jane/recipe/cubancarp
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/cubancarp
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/carp, exclude_reagents=list("carpotoxin")),
+		list(CWJ_ADD_PRODUCE, "chili"),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1, base=1),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough),
+		list(CWJ_USE_STOVE, J_MED, 15 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/enchiladas
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/enchiladas
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cutlet, exclude_reagents=list("carpotoxin", "blattedin", "pacid")),
+		list(CWJ_ADD_PRODUCE, "chili"),
+		list(CWJ_ADD_PRODUCE, "chili"),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=5),
+		list(CWJ_ADD_PRODUCE, "corn"),
+		list(CWJ_USE_OVEN, J_MED, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/fishfingers
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/fishfingers
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/carp, exclude_reagents=list("carpotoxin")),
+		list(CWJ_USE_TOOL_OPTIONAL, QUALITY_HAMMERING, 15, prod_desc="The fish fingers are soft and tenderized."),
+		list(CWJ_ADD_REAGENT, "flour", 5),
+		list(CWJ_ADD_REAGENT, "egg", 3),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_USE_STOVE, J_HI, 5 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/fish_n_chips
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/fishandchips
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/fishfingers),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "ketchup", 1, base=1),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/fries)
+	)

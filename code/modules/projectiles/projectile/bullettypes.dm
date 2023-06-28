@@ -1104,7 +1104,7 @@
 
 // Crossbow Bolts. Higher penetration due to more tension.
 /obj/item/projectile/bullet/reusable/rod_bolt
-	name = "metal rod"
+	name = "crude bolt"
 	icon_state = "bolt"
 	damage_types = list(BRUTE = 2) // Damage values are multiplied by tension with a max of 5, thus 5 damage.
 	armor_penetration = 15
@@ -1115,7 +1115,7 @@
 	penetrating = 1
 	affective_damage_range = 7
 	affective_ap_range = 7
-	create_type = /obj/item/stack/rods
+	create_type = /obj/item/ammo_casing/rod_bolt // Let's keep it the same for the sake of consistency.
 
 /obj/item/projectile/bullet/reusable/rod_bolt/superheated
 	name = "superheated metal rod"
@@ -1142,6 +1142,7 @@
 	affective_ap_range = 7
 	create_type = /obj/item/arrow/rcd
 	recoil = 6 //Scrap verson
+	nocap_structures = TRUE // Reflecting the fact it's made from a literal RCD
 
 /obj/item/projectile/bullet/reusable/rod_bolt/rcd/superhot
 	name = "flashforged superheated bolt"
@@ -1154,7 +1155,6 @@
 	affective_damage_range = 7
 	affective_ap_range = 7
 	create_type = null
-	nocap_structures = TRUE
 
 // Arrows. Lower penetration, and good only against living creatures, but can compensate damage by special bow modifications or specialized ammo.
 

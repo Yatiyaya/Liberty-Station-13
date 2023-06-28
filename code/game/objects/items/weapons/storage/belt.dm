@@ -137,7 +137,7 @@
 	icon_state = "utility_neotheology"
 	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 5)
 	can_hold_extra = list(
-		/obj/item/book/ritual/cruciform,
+		/obj/item/book/ritual/hearthlantern,
 		/obj/item/implant/core_implant/cruciform,
 		/obj/item/soap,
 		/obj/item/reagent_containers/spray/cleaner,

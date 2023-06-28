@@ -39,7 +39,7 @@ A small pool of thematically appropriate religious items that are generally chea
 /datum/uplink_item/item/neotheology/bible
 	name = "Ritual Book"
 	item_cost = 1
-	path = /obj/item/book/ritual/cruciform
+	path = /obj/item/book/ritual/hearthlantern
 
 
 /datum/uplink_item/item/neotheology/coat

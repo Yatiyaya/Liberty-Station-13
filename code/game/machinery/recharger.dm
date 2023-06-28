@@ -27,15 +27,31 @@
 		to_chat(user, "The charge meter reads [round(cell.percent())]%.")
 
 /obj/machinery/recharger/attackby(obj/item/I, mob/user)
-
 	// Allows multiquality items like the combi drill to pop a menu on which quality to use
-	var/tool_type = I.get_tool_type(user, list(QUALITY_SCREW_DRIVING, QUALITY_BOLT_TURNING), src)
+
+	var/qualities = list(QUALITY_SCREW_DRIVING, QUALITY_BOLT_TURNING)
+
+	if(panel_open && circuit)
+		qualities += QUALITY_PRYING
+
+	var/tool_type = I.get_tool_type(user, qualities, src)
 
 	switch(tool_type)
 
 		if(QUALITY_SCREW_DRIVING)
-			default_deconstruction(I, user)
-			return
+			var/used_sound = panel_open ? 'sound/machines/Custom_screwdriveropen.ogg' :  'sound/machines/Custom_screwdriverclose.ogg'
+			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC, instant_finish_tier = 30, forced_sound = used_sound))
+				updateUsrDialog()
+				panel_open = !panel_open
+				to_chat(user, SPAN_NOTICE("You [panel_open ? "open" : "close"] the maintenance hatch of \the [src] with [I]."))
+				update_icon()
+			return TRUE
+
+		if(QUALITY_PRYING)
+			if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_HARD, required_stat = STAT_MEC))
+				to_chat(user, SPAN_NOTICE("You remove the components of \the [src] with [I]."))
+				dismantle()
+			return TRUE
 
 		if(QUALITY_BOLT_TURNING)
 			if(portable)
@@ -46,6 +62,9 @@
 			to_chat(user, "You [anchored ? "attached" : "detached"] [src].")
 			playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
 			return
+
+		if(ABORT_CHECK)
+			return TRUE
 
 	if(default_part_replacement(I, user))
 		return
@@ -106,6 +125,8 @@
 		user.unEquip(I, src)
 		charging = I
 		update_icon()
+
+	return FALSE
 
 /obj/machinery/recharger/attack_hand(mob/user)
 	if(issilicon(user))

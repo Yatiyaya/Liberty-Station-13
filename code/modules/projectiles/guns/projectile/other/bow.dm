@@ -26,6 +26,8 @@
 	twohanded = TRUE
 	safety = FALSE
 	restrict_safety = TRUE
+	muzzle_flash = 0
+	is_crossbow = TRUE // Not a crossbow but still needs a description to not state it's empty when it's not.
 	var/arrow_x_offset_per_tension = -1
 	var/arrow_y_offset_per_tension = 1
 

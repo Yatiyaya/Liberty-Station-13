@@ -35,12 +35,15 @@
 /// bandaid until new inventorycode
 	var/mid_delete = FALSE
 
-
+// This is used by the biomass container to transform directly into liquid biomatter. See cloning.dm
+// Value of this var is multiplied per amount of sheets on succesful insertion.
+	var/biomatter_in_sheet = null
 
 /obj/item/stack/New(var/loc, var/amount=null)
 	.=..()
 	if (amount)
 		src.amount = amount
+		update_icon() // Mats ejected from anywhere will automatically look equal to their amount.
 
 /obj/item/stack/Initialize()
 	.=..()

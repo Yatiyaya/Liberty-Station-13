@@ -34,8 +34,8 @@
 
 	step_builder = list(
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawsticks),
-		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
 		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)
 
@@ -47,7 +47,7 @@
 
 	step_builder = list(
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/fries),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)

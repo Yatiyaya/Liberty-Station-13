@@ -143,7 +143,7 @@
 	result = null
 	required_reagents = list("egg" = 3, "flour" = 10)
 	result_amount = 1
-	blacklist_containers = list(/mob, /obj/machinery/microwave)
+	blacklist_containers = list(/mob, /obj/machinery/microwave, /obj/item/reagent_containers/cooking_with_jane/cooking_container)
 	mix_message = "You coax the mixture into a taut ball of dough."
 
 /datum/chemical_reaction/dough/on_reaction(var/datum/reagents/holder, var/created_volume)

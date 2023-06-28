@@ -302,7 +302,7 @@
 /datum/reagent/other/viroputine
 	name = "Viroputine"
 	id = "viroputine"
-	description = "A horrific compound that is capable of creating other chemicals. vary bad withdrawels."
+	description = "A horrific compound that is capable of creating other chemicals. Very bad withdrawal."
 	taste_description = "chalky backwash"
 	reagent_state = LIQUID
 	color = "#A5F0EE"
