@@ -242,7 +242,7 @@
 /datum/shuttle/autodock/multi/vasiliy
 	name = "The Vasiliy"
 	move_time = (7 MINUTES) / (1 SECOND)
-	shuttle_area = /area/shuttle/rocinante_shuttle_area
+	shuttle_area = /area/shuttle/vasiliy_shuttle_area
 	current_location = "nav_vasiliy_homebase"
 	landmark_transition = "nav_vasiliy_transit"
 	destination_tags = list("nav_vasiliy_homebase", "nav_vasiliy_deep_forest", "nav_vasiliy_swamps", "nav_vasiliy_river_forest") //, "nav_vasiliy_spacefort"
