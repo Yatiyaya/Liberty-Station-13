@@ -62,7 +62,7 @@
 
 //////////////////////////////////////////////////////////
 
-#include "map/_event_map_bridge.dmm"
+//#include "map/_event_map_bridge.dmm"
 
 
 /obj/map_data/event_map_bridge
