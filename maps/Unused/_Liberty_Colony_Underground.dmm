@@ -1105,7 +1105,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "acK" = (
 /obj/effect/window_lwall_spawn,
 /obj/structure/cable/green{
@@ -1114,7 +1114,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "acL" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/blast/shutters{
@@ -1152,7 +1152,7 @@
 /obj/effect/window_lwall_spawn/smartspawn,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "acP" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -1673,7 +1673,7 @@
 /area/liberty/engineering/atmos)
 "adR" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "adS" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -2588,7 +2588,7 @@
 /area/liberty/quartermaster/miningdock)
 "afT" = (
 /obj/structure/table/standard,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "afU" = (
@@ -3587,7 +3587,7 @@
 /obj/machinery/portable_atmospherics/canister,
 /obj/effect/floor_decal/spline/fancy/three_quarters,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ahP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -3787,7 +3787,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aih" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
@@ -3795,7 +3795,7 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aii" = (
 /obj/structure/table/reinforced,
 /obj/item/pen{
@@ -3803,11 +3803,11 @@
 	pixel_y = 3
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aij" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aik" = (
 /obj/machinery/computer/rdconsole/robotics,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -3856,7 +3856,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aip" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -3907,14 +3907,14 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aiv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/research{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aiw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -4032,7 +4032,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aiG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/oil,
@@ -4614,7 +4614,7 @@
 	},
 /obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "akb" = (
 /obj/machinery/door/airlock/glass{
 	name = "Circuit Lab"
@@ -5438,7 +5438,7 @@
 /obj/structure/table/standard,
 /obj/machinery/chem_heater,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "alL" = (
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/hangarsupply)
@@ -5479,7 +5479,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "alQ" = (
 /obj/machinery/light{
 	dir = 1
@@ -5515,7 +5515,7 @@
 /obj/machinery/chem_master,
 /obj/machinery/camera/network/research,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "alV" = (
 /obj/structure/closet/secure_closet/personal/hydroponics{
 	name = "gardener's locker";
@@ -8401,7 +8401,7 @@
 /obj/structure/table/standard,
 /obj/machinery/centrifuge,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "arg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/cyan{
@@ -12467,7 +12467,7 @@
 /obj/structure/table/standard,
 /obj/machinery/electrolyzer,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "awW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/landmark/join/start/cyborg,
@@ -12482,7 +12482,7 @@
 "awY" = (
 /obj/machinery/smartfridge/drying_rack,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "awZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -13120,7 +13120,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ayM" = (
 /obj/structure/flora/small/trailrockb2,
 /turf/simulated/floor/asteroid/dirt/mud,
@@ -17875,7 +17875,7 @@
 "aMC" = (
 /obj/machinery/smartfridge,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aMD" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/plating,
@@ -19061,7 +19061,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "aQt" = (
 /obj/structure/table/glass,
 /obj/random/toy,
@@ -24838,7 +24838,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "bgA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -28905,7 +28905,7 @@
 "bGr" = (
 /obj/machinery/reagentgrinder/industrial,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "bGs" = (
 /obj/structure/sign/atmos/atmos_waste{
 	pixel_y = 32
@@ -29284,7 +29284,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "bTD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2
@@ -29887,7 +29887,7 @@
 	tag = "icon-intact (NORTHEAST)"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "con" = (
 /obj/structure/table/woodentable,
 /obj/item/oddity/common/book_omega,
@@ -30915,12 +30915,12 @@
 /area/liberty/crew_quarters/podrooms)
 "dbc" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/ritual/hearthlantern/priest,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/undergroundfloor1north)
 "dbC" = (
@@ -31209,7 +31209,7 @@
 /obj/machinery/smartfridge/chemistry,
 /obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "diT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -31461,7 +31461,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "duh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -31696,7 +31696,7 @@
 /obj/random/tool/low_chance,
 /obj/random/tool/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "dFA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -31719,7 +31719,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "dGy" = (
 /obj/machinery/light{
 	dir = 4
@@ -31868,7 +31868,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "dMp" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/wall/r_wall,
@@ -32035,7 +32035,7 @@
 	tag = "icon-intact (SOUTHEAST)"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "dQw" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -32315,7 +32315,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ebS" = (
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -32615,7 +32615,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ekN" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -32727,7 +32727,7 @@
 	},
 /obj/machinery/camera/network/research,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "enW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -33112,7 +33112,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "exX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -33772,7 +33772,7 @@
 /obj/structure/disposalpipe/trunk,
 /obj/effect/floor_decal/industrial/box/red,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "eUI" = (
 /obj/structure/table/standard,
 /obj/item/storage/fancy/vials,
@@ -34301,7 +34301,7 @@
 	pixel_x = -11
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "fon" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -34844,7 +34844,7 @@
 	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "fDI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -35313,7 +35313,7 @@
 	name = "Clearing Pump"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "fRR" = (
 /obj/structure/bookcase,
 /turf/simulated/floor/wood/wild1,
@@ -35452,7 +35452,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "fWz" = (
 /turf/simulated/mineral,
 /area/liberty/engineering/atmos)
@@ -35671,7 +35671,7 @@
 	dir = 2
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gdn" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -35727,7 +35727,7 @@
 "gdZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall/r_wall,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "geq" = (
 /obj/machinery/washing_machine,
 /turf/simulated/floor/tiled/cafe,
@@ -36003,7 +36003,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gnN" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	dir = 8;
@@ -36275,7 +36275,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gBd" = (
 /turf/simulated/wall,
 /area/liberty/crew_quarters/bar)
@@ -36349,7 +36349,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gDw" = (
 /turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor1south)
@@ -36859,7 +36859,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gTr" = (
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/tiled/steel,
@@ -36908,7 +36908,7 @@
 	name = "Input Connector"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "gVf" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -37230,7 +37230,7 @@
 	pixel_y = 30
 	},
 /turf/simulated/wall/r_wall,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "hgX" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawnplasma,
@@ -37420,7 +37420,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/steeldecal/steel_decals6,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "hmj" = (
 /obj/machinery/door/airlock/glass_engineering{
 	name = "Engineering Lobby Access";
@@ -37709,7 +37709,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "hvj" = (
 /obj/random/junk/low_chance,
 /obj/machinery/light/small{
@@ -37979,7 +37979,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "hCQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -38193,7 +38193,7 @@
 	dir = 2
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "hLO" = (
 /obj/machinery/door/airlock/command{
 	name = "CBO's Office";
@@ -38732,7 +38732,7 @@
 	pixel_y = 4
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "icO" = (
 /obj/item/storage/box/teargas{
 	pixel_x = -5;
@@ -38887,7 +38887,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "igJ" = (
 /obj/machinery/flasher{
 	id = "AI";
@@ -39949,7 +39949,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "jaA" = (
 /obj/structure/table/reinforced,
 /obj/item/newspaper,
@@ -39981,7 +39981,7 @@
 /area/liberty/quartermaster/office)
 "jbj" = (
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "jbU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/table/reinforced,
@@ -40558,7 +40558,7 @@
 "jwk" = (
 /obj/machinery/seed_storage/xenobotany,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "jwE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -41594,7 +41594,7 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/floor_decal/spline/fancy/three_quarters,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "khx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -41837,7 +41837,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "kqM" = (
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/command/panic_room)
@@ -41870,7 +41870,7 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ksF" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
@@ -42021,7 +42021,7 @@
 	icon_state = "box_corners_red"
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "kya" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -43034,7 +43034,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "lhE" = (
 /obj/machinery/newscaster{
 	pixel_y = -34
@@ -43147,7 +43147,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "lly" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -43457,7 +43457,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "lvy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -43558,7 +43558,7 @@
 /obj/effect/window_lwall_spawn/smartspawn,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "lxD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
@@ -43879,7 +43879,7 @@
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "lFJ" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/decal/cleanable/dirt,
@@ -45221,7 +45221,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "mvN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -45787,7 +45787,7 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "mLH" = (
 /obj/machinery/telecomms/processor/preset_two,
 /obj/machinery/camera/network/command,
@@ -45815,7 +45815,7 @@
 /obj/item/storage/box/botanydisk,
 /obj/item/storage/box/botanydisk,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "mMq" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/effect/decal/cleanable/dirt,
@@ -46245,7 +46245,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "nea" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/bed/chair/office/light{
@@ -46894,7 +46894,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "nzc" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -48014,7 +48014,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "okA" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
@@ -48528,7 +48528,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "oED" = (
 /obj/structure/table/reinforced,
 /obj/item/melee/baton,
@@ -48947,7 +48947,7 @@
 "oPU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/brown_perforated,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "oQq" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
@@ -49015,7 +49015,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "oSj" = (
 /obj/random/lowkeyrandom/low_chance,
 /turf/simulated/floor/plating/under,
@@ -49160,7 +49160,7 @@
 "oXm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "oXC" = (
 /obj/random/tool_upgrade/rare,
 /turf/simulated/floor/plating/under,
@@ -49796,7 +49796,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ptC" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -50690,7 +50690,7 @@
 "qdG" = (
 /obj/machinery/botany/extractor,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "qee" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
@@ -51384,7 +51384,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "qAt" = (
 /obj/item/device/radio/intercom{
 	dir = 1;
@@ -51424,7 +51424,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "qCN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -52481,7 +52481,7 @@
 	},
 /obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "roI" = (
 /obj/structure/flora/pottedplant/dead{
 	oldified = 1;
@@ -52585,7 +52585,7 @@
 	},
 /obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "rqx" = (
 /obj/machinery/door/airlock/maintenance_common,
 /obj/structure/catwalk,
@@ -52718,7 +52718,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/smartfridge/secure/medbay,
 /turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "ruS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/floodlight{
@@ -53299,7 +53299,7 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "rMI" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -53337,7 +53337,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/biogenerator,
 /turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "rNl" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/junk/low_chance,
@@ -53440,7 +53440,7 @@
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "rQz" = (
 /obj/structure/bed/psych{
 	desc = "It can be a bit noisy, but still serves well.";
@@ -53624,7 +53624,7 @@
 "rWG" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "rWT" = (
 /obj/structure/table/woodentable,
 /obj/item/book/manual/wiki/security_ironparagraphs,
@@ -54049,7 +54049,7 @@
 	categories = 3
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "skh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/camera/network/engineering{
@@ -55485,7 +55485,7 @@
 "teD" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "teY" = (
 /obj/machinery/light_switch{
 	pixel_y = 30
@@ -56147,7 +56147,7 @@
 /obj/item/book/manual/engineering_guide,
 /obj/item/book/manual/security_space_law,
 /obj/item/book/manual/wiki/medical_guide,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/ritual/hearthlantern,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "txt" = (
@@ -56347,7 +56347,7 @@
 	pixel_y = 10
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "tEH" = (
 /obj/structure/toilet{
 	dir = 4
@@ -57587,7 +57587,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "uvl" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -59462,7 +59462,7 @@
 	pixel_y = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "vEn" = (
 /obj/machinery/flasher/portable,
 /obj/effect/floor_decal/industrial/box/white,
@@ -60746,7 +60746,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "wAW" = (
 /obj/effect/spider/stickyweb,
 /obj/effect/spider/stickyweb,
@@ -62249,7 +62249,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "xvN" = (
 /obj/structure/table/rack/shelf,
 /obj/item/reagent_containers/spray/cleaner,
@@ -62361,7 +62361,7 @@
 	name = "Output Pump"
 	},
 /turf/simulated/floor/tiled/steel,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "xzO" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawnplasma,
@@ -62524,7 +62524,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/liberty/rnd/xenobiology/xenoflora)
+/area/liberty/rnd/xenoflora)
 "xFC" = (
 /obj/machinery/camera/network/security{
 	dir = 4

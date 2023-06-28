@@ -437,7 +437,8 @@
 /obj/item/clothing/head/helmet/technomancersuit
 	name = "'Mark V' environmental protection helmet"
 	desc = "You feel like this helmet is rare, for some reason."
-	icon_state = "technohelmet"
+	icon_state = "union worker hat"
+	item_state = "union worker hat"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 60, bio = 100, rad = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
@@ -458,7 +459,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Environmental Default Helmet"] = "technohelmet"
+	options["Environmental Default Helmet"] = "union worker hat"
+	options["Old Environmental Default Helmet"] = "technohelmet"
 	options["Anthro Helmet"] = "technohelmet_anthro"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options

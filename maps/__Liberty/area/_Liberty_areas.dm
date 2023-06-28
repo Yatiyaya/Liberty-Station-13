@@ -152,6 +152,7 @@
 /area/liberty/maintenance/hideout
 	name = "Abandoned Maintenance Shed"
 	icon_state = "section2deck3starboard"
+	requires_power = FALSE
 
 /area/liberty/maintenance/oldmining
 	name = "Abandoned Mine Shaft East"
@@ -1658,11 +1659,11 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Xenobiology Lab"
 	icon_state = "xeno_lab"
 
-/area/liberty/rnd/xenobiology/xenoflora_storage
+/area/liberty/rnd/xenoflora_storage
 	name = "\improper Xenoflora Storage"
 	icon_state = "xeno_f_store"
 
-/area/liberty/rnd/xenobiology/xenoflora
+/area/liberty/rnd/xenoflora
 	name = "\improper Xenoflora Lab"
 	icon_state = "xeno_f_lab"
 

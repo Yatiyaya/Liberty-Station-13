@@ -6563,7 +6563,7 @@
 "LO" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/fancy/crayons,
-/obj/item/soap/bluespase,
+/obj/item/soap/bluespace,
 /turf/simulated/floor/wood/wild1,
 /area/centcom/evac)
 "Mb" = (

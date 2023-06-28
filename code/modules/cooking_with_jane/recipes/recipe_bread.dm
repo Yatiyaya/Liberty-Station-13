@@ -156,6 +156,16 @@
 		list(CWJ_USE_TOOL, QUALITY_CUTTING, 1)
 	)
 
+// RP alternative to people that don't want to simply slap a slice of butter on a bread slice.
+/datum/cooking_with_jane/recipe/buttertoast
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/butterbread
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/breadslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/butterslice),
+		list(CWJ_USE_TOOL, QUALITY_CUTTING, 1)
+	)
+
 /datum/cooking_with_jane/recipe/grilledcheese
 	cooking_container = GRILL
 	product_type = /obj/item/reagent_containers/food/snacks/grilledcheese
@@ -175,3 +185,27 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/butterslice),
 		list(CWJ_USE_GRILL, J_LO, 15 SECONDS)
 	)
+
+/datum/cooking_with_jane/recipe/honeybuns
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/honeybuns
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/butterslice),
+		list(CWJ_ADD_REAGENT, "sugar", 3),
+		list(CWJ_ADD_REAGENT, "honey", 5, base=5),
+		list(CWJ_ADD_REAGENT, "cream", 5),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/creamcheese_bread
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/sliceable/creamcheesebread
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough),
+		list(CWJ_ADD_ITEM_OPTIONAL, /obj/item/reagent_containers/food/snacks/butterslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
+		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
+	)
+

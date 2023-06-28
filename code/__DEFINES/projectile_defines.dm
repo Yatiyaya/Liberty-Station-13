@@ -16,7 +16,7 @@
 #define CAL_GRENADE "grenade"
 #define CAL_FLARE "flare shell"
 #define CAL_CROSSBOW "bolt"
-#define CAL_ARROW "arrow"
+#define CAL_ARROW "arrows"
 
 //Mech Caliber Defines
 #define CAL_MECH_MACHINEGUN 	"25mm"

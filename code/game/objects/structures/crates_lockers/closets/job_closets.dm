@@ -80,7 +80,7 @@
 	new /obj/item/reagent_containers/spray/cleaner(src)
 	new /obj/item/newspaper_stack(src)
 	new /obj/item/soap/deluxe(src)
-	new /obj/item/holyvacuum(src)
+	new /obj/item/vacuum_cleaner(src)
 
 //Custodians
 

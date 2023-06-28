@@ -59,12 +59,13 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chickenburger
-	name = "poultry fried steak sandwich"
+	name = "fried poultry burger"
 	desc =	"A burger consisting of crispy fried poultry instead of a patty, a classic alternative for those who prefer chicken or whatever tastes closest to it."
 	icon_state = "chickenburger"
 	bitesize = 3
 	preloaded_reagents = list("protein" = 6)
-	nutriment_desc = list("crispy fried poultry" = 10, "bun" = 2)
+	nutriment_amt = 10
+	nutriment_desc = list("crispy fried poultry" = 8, "fluffy bun" = 2)
 	matter = list(MATERIAL_BIOMATTER = 14)
 	cooked = TRUE
 

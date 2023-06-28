@@ -140,7 +140,7 @@
 
 /datum/design/bioprinter/hearth_lantern
 	name = "Hearth Lantern"
-	build_path = /obj/item/book/ritual/cruciform
+	build_path = /obj/item/book/ritual/hearthlantern
 	materials = null
 
 /datum/design/bioprinter/weapon_mold
@@ -327,8 +327,8 @@
 	name = "New Testament \"EXCRUCIATOR\" giga lens"
 	build_path = /obj/item/gun_upgrade/barrel/excruciator
 
-/datum/design/bioprinter/holyvacuum
-	name = "\"Tersus\" Vacuum Cleaner"
-	build_path = /obj/item/holyvacuum
-	materials = list(MATERIAL_BIO_SILK = 2)
+/datum/design/bioprinter/vacuum_cleaner
+	name = "\"Swift 200\" vacuum cleaner"
+	build_path = /obj/item/vacuum_cleaner
+
 

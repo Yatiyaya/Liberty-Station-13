@@ -348,6 +348,11 @@
 	default_type = MATERIAL_LEATHER
 	price_tag = 10
 
+// For recycling purposes, very low quantity so that Trappers are still way better at this.
+/obj/item/stack/material/leather/random
+	rand_min = 1
+	rand_max = 4
+
 /obj/item/stack/material/bone
 	name = "bones"
 	desc = "A collection of random bones and bits."
@@ -407,7 +412,7 @@
 	icon_state = "sheet-biomatter"
 	default_type = MATERIAL_BIOMATTER
 	price_tag = 1 //to keep biomatter in the player economy as the church and science use it.
-	var/biomatter_in_sheet = 1
+	biomatter_in_sheet = 1
 	novariants = FALSE
 
 /obj/item/stack/material/biomatter/random

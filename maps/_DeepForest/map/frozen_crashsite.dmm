@@ -40,6 +40,9 @@
 /obj/item/ammo_magazine/rifle_75,
 /obj/item/ammo_magazine/rifle_75,
 /obj/machinery/door/window/northleft,
+/obj/random/dungeon_armor_mods,
+/obj/random/dungeon_armor_mods,
+/obj/random/dungeon_armor_mods,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper)
 "aE" = (
@@ -99,6 +102,11 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/colony)
+"aT" = (
+/obj/structure/table/steel,
+/obj/item/storage/firstaid/combat,
+/turf/simulated/floor/industrial/green_large_slates,
+/area/liberty/dungeon/outside/prepper/vault/floor3)
 "aV" = (
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 4
@@ -336,8 +344,21 @@
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ep" = (
+/obj/item/ammo_casing/flare/prespawn,
+/obj/item/ammo_casing/flare/prespawn,
+/obj/item/ammo_casing/flare/prespawn,
+/obj/item/ammo_casing/flare/old/prespawn,
+/obj/item/ammo_casing/flare/old/prespawn,
+/obj/item/ammo_casing/flare/old/prespawn,
+/obj/item/ammo_casing/flare/green/prespawn,
+/obj/item/ammo_casing/flare/green/prespawn,
+/obj/item/ammo_casing/flare/green/prespawn,
+/obj/item/ammo_casing/flare/blue/prespawn,
+/obj/item/ammo_casing/flare/blue/prespawn,
+/obj/item/ammo_casing/flare/blue/prespawn,
+/obj/item/ammo_magazine/ammobox/shotgun/flashshells,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel,
-/obj/random/knife,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "eq" = (
@@ -348,6 +369,11 @@
 	},
 /turf/simulated/floor/industrial/blue_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"es" = (
+/obj/structure/table/steel,
+/obj/item/storage/firstaid/combat,
+/turf/simulated/floor/tiled/dark/danger,
+/area/liberty/dungeon/outside/prepper)
 "et" = (
 /obj/structure/flora/small/snow/rock6,
 /turf/simulated/floor/beach/water/ice,
@@ -397,21 +423,13 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "eV" = (
-/obj/structure/bookcase/guncase,
-/obj/item/ammo_casing/flare/prespawn,
-/obj/item/ammo_casing/flare/prespawn,
-/obj/item/ammo_casing/flare/prespawn,
-/obj/item/ammo_casing/flare/old/prespawn,
-/obj/item/ammo_casing/flare/old/prespawn,
-/obj/item/ammo_casing/flare/old/prespawn,
-/obj/item/ammo_casing/flare/green/prespawn,
-/obj/item/ammo_casing/flare/green/prespawn,
-/obj/item/ammo_casing/flare/green/prespawn,
-/obj/item/ammo_casing/flare/blue/prespawn,
-/obj/item/ammo_casing/flare/blue/prespawn,
-/obj/item/ammo_casing/flare/blue/prespawn,
-/obj/item/ammo_magazine/ammobox/shotgun/flashshells,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/guncase,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "eW" = (
@@ -486,6 +504,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "fP" = (
 /obj/machinery/door/unpowered/simple/wood,
+/obj/structure/grille/cult,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "fQ" = (
@@ -632,6 +651,10 @@
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"hq" = (
+/obj/structure/flora/snowbush/sapling,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "hr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -687,6 +710,10 @@
 "hM" = (
 /obj/structure/flora/tree/snow/three,
 /turf/unsimulated/wall/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
+"hN" = (
+/mob/living/carbon/superior_animal/lodge/tatonka,
+/turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "hS" = (
 /obj/structure/table/standard,
@@ -844,6 +871,7 @@
 	pixel_y = -6
 	},
 /obj/machinery/door/window/eastright,
+/obj/random/dungeon_gun_energy,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper)
 "jI" = (
@@ -1248,7 +1276,9 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/dungeon/outside/prepper)
 "oh" = (
-/obj/machinery/door/airlock/vault/bolted,
+/obj/machinery/door/airlock/vault/bolted{
+	name = "Armory"
+	},
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper)
 "oj" = (
@@ -1264,6 +1294,12 @@
 /obj/random/material_ore/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/colony)
+"oq" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/catwalk,
+/obj/random/ammo,
+/turf/simulated/floor/plating/under,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "or" = (
 /obj/landmark/corpse/generic/prisoner,
 /turf/simulated/floor/tiled/dark/danger,
@@ -1333,6 +1369,13 @@
 	},
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"po" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/item/clothing/suit/storage/surgical_apron,
+/obj/item/clothing/head/surgery,
+/obj/item/remains/human,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "pr" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/scrap/dense_weighted/low_chance,
@@ -1364,7 +1407,7 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "pJ" = (
 /obj/structure/table/steel,
-/obj/item/storage/firstaid/surgery,
+/obj/item/storage/firstaid/surgery/traitor,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "pL" = (
@@ -1421,6 +1464,7 @@
 	},
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/organ/internal/blood_vessel,
+/obj/item/modification/organ/internal/special/on_item_examine/brainloss,
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "qj" = (
@@ -1556,6 +1600,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"rK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/mob/space_balkan,
+/turf/simulated/floor/industrial/green_large_slates,
+/area/liberty/dungeon/outside/prepper/vault/floor3)
 "rP" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/mob/undergroundmob/low_chance,
@@ -1641,6 +1690,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"sF" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/scarybat/cult,
+/turf/simulated/floor/wood_old,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "sG" = (
 /obj/landmark/join/start/outsider,
 /obj/effect/decal/cleanable/dirt,
@@ -1717,11 +1771,19 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "tr" = (
 /obj/structure/bookcase/guncase,
-/obj/item/ammo_casing/light_rifle_257/incend/prespawned,
-/obj/item/ammo_casing/light_rifle_257/incend/prespawned,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
+/obj/random/gun_parts/high_end,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"ts" = (
+/obj/item/modification/organ/internal/special/on_pickup/shock,
+/obj/structure/grille/cult,
+/turf/simulated/floor/wood_old,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "tu" = (
 /obj/structure/table/rack/shelf,
 /obj/item/gun/projectile/makarov/preloaded,
@@ -1755,6 +1817,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
+"tJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/prepper,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/liberty/dungeon/outside/prepper)
 "tL" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -1984,6 +2051,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"vW" = (
+/obj/structure/flora/snowgrass/rockandgrass,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vY" = (
 /obj/structure/barricade,
 /turf/simulated/floor/rock/grey,
@@ -2086,7 +2158,7 @@
 /obj/item/clothing/under/tactical,
 /obj/item/storage/belt/security/tactical,
 /obj/item/gun/projectile/revolver/wristbreaker,
-/obj/item/ammo_magazine/ammobox/light_rifle_257_small/hv,
+/obj/item/ammo_magazine/ammobox/rifle_75_small/hv,
 /obj/item/clothing/suit/armor/vest/full,
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt,
@@ -2121,6 +2193,10 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "xo" = (
 /turf/simulated/mineral/planet,
+/area/colony)
+"xr" = (
+/mob/living/carbon/superior_animal/lodge/cerberus/chimera,
+/turf/simulated/floor/rock/dark,
 /area/colony)
 "xu" = (
 /obj/structure/flora/small/snow/rock1,
@@ -2161,6 +2237,10 @@
 /obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
+"xU" = (
+/obj/structure/flora/snowgrass/vegetation,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "xV" = (
 /obj/structure/table/steel,
 /obj/random/material_resources,
@@ -2365,6 +2445,10 @@
 /obj/random/structures,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"Al" = (
+/obj/structure/flora/snowgrass/rockandgrass,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "An" = (
 /obj/structure/salvageable/autolathe,
 /turf/simulated/floor/industrial/navy_large_slates,
@@ -2512,6 +2596,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"BJ" = (
+/mob/living/carbon/superior_animal/lodge/clucker,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BL" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall19"
@@ -2525,12 +2613,21 @@
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"BW" = (
+/mob/living/carbon/superior_animal/lodge/cerberus,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "BY" = (
 /obj/random/structures/low_chance,
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"BZ" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/item/storage/firstaid/combat,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "Ca" = (
 /turf/simulated/floor/rock/grey,
 /area/liberty/dungeon/outside/monster_cave)
@@ -2834,7 +2931,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Fz" = (
 /obj/structure/flora/small/snow/rock3,
-/obj/structure/flora/grass/brown,
+/obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "FG" = (
@@ -2848,6 +2945,12 @@
 /obj/structure/table/marble,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/dungeon/outside/prepper/vault/floor2)
+"FK" = (
+/obj/structure/table/steel,
+/obj/item/material/shard,
+/obj/random/dungeon_gun_ballistic,
+/turf/simulated/floor/industrial/black_large_slates,
+/area/liberty/dungeon/outside/prepper/vault/floor3)
 "FN" = (
 /obj/machinery/microwave/burnbarrel,
 /obj/structure/sandbags{
@@ -2993,6 +3096,11 @@
 	},
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"Hi" = (
+/obj/structure/flora/snowbush/sapling,
+/obj/structure/invislight/outside,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Hn" = (
 /obj/random/firstaid/low_chance,
 /obj/structure/table/steel,
@@ -3046,6 +3154,10 @@
 /obj/random/mob/agape/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/colony)
+"HJ" = (
+/mob/living/carbon/superior_animal/lodge/tatonka/tangu,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "HO" = (
 /obj/random/mob/space_balkan,
 /turf/simulated/floor/industrial/blue_slates_long,
@@ -3102,7 +3214,7 @@
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Iv" = (
-/mob/living/simple_animal/hostile/helldiver,
+/mob/living/carbon/superior_animal/lodge/baby_cerberus,
 /obj/item/storage/hcases/med/scrap/has_items_spawn,
 /turf/simulated/floor/rock/dark,
 /area/colony)
@@ -3122,6 +3234,12 @@
 /obj/structure/flora/small/snow/rock2,
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
+"IL" = (
+/obj/structure/catwalk,
+/obj/structure/table/steel_reinforced,
+/obj/random/ammo,
+/turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "IQ" = (
 /obj/structure/sandbags{
@@ -3435,15 +3553,20 @@
 "Lj" = (
 /obj/structure/table/rack/shelf,
 /obj/machinery/door/window/northright,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
-/obj/item/ammo_magazine/highcap_pistol_35,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_gun_mods,
+/obj/random/dungeon_gun_mods,
+/obj/random/dungeon_gun_mods,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper)
+"Lm" = (
+/turf/simulated/wall/r_wall,
+/area/colony)
 "Lo" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/industrial/navy_slates,
@@ -3492,7 +3615,8 @@
 "LM" = (
 /obj/structure/table/steel,
 /obj/random/gun_handmade/willspawn,
-/obj/random/gun_parts/high_end,
+/obj/item/ammo_casing/light_rifle_257/incend/prespawned,
+/obj/item/ammo_casing/light_rifle_257/incend/prespawned,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "LO" = (
@@ -3651,7 +3775,7 @@
 /area/colony)
 "Nx" = (
 /obj/structure/table/steel,
-/obj/random/lowkeyrandom/low_chance,
+/obj/random/dungeon_gun_energy,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "NC" = (
@@ -3749,6 +3873,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
+"Oq" = (
+/obj/structure/catwalk,
+/obj/structure/table/steel_reinforced,
+/obj/random/gun_normal,
+/turf/simulated/floor/plating/under,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Ov" = (
 /obj/structure/barricade,
 /obj/effect/decal/cleanable/rubble,
@@ -4059,7 +4189,7 @@
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "RO" = (
-/obj/structure/flora/small/snow/rock3,
+/obj/structure/flora/snowgrass/grass,
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
@@ -4102,10 +4232,10 @@
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "Sm" = (
 /obj/structure/table/steel,
-/obj/random/ammo_lowcost/low_chance,
-/obj/random/ammo_lowcost/low_chance,
-/obj/random/dungeon_ammo/really_low_chance,
-/obj/random/dungeon_ammo/really_low_chance,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
+/obj/random/dungeon_ammo,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "Sn" = (
@@ -4194,7 +4324,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "Tf" = (
 /obj/structure/table/woodentable,
-/obj/item/toy/weapon/cultsword,
+/obj/item/tool/sword/cult,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Ti" = (
@@ -4235,6 +4365,10 @@
 "Ty" = (
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/dirt/burned,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
+"Tz" = (
+/obj/random/mob/tahca/low_chance,
+/turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "TD" = (
 /obj/landmark/corpse/doctor,
@@ -4292,6 +4426,10 @@
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/wall/r_wall,
 /area/liberty/dungeon/outside/prepper)
+"TZ" = (
+/obj/item/storage/firstaid/combat,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "Uc" = (
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
@@ -4352,6 +4490,10 @@
 /obj/random/mob/space_balkan,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"UC" = (
+/obj/structure/flora/winterflowers,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "UD" = (
 /obj/structure/cryofeed{
 	dir = 4;
@@ -4359,6 +4501,10 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/dungeon/outside/abandoned_outpost)
+"UF" = (
+/obj/structure/flora/snowbush/youngtree,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "UP" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/mob/termite_no_despawn/low_chance,
@@ -4404,6 +4550,10 @@
 "Ve" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial/green_large_slates,
+/area/liberty/dungeon/outside/prepper/vault/floor3)
+"Vg" = (
+/obj/random/aberrant_machine,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "Vh" = (
@@ -4458,6 +4608,7 @@
 	},
 /obj/structure/table/rack/shelf,
 /obj/machinery/door/window/eastleft,
+/obj/random/dungeon_gun_ballistic,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper)
 "VE" = (
@@ -4524,8 +4675,7 @@
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "WA" = (
-/obj/structure/flora/small/snow/rock8,
-/obj/structure/invislight/outside,
+/obj/structure/flora/snowgrass/grass,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "WB" = (
@@ -4702,6 +4852,11 @@
 /obj/random/lowkeyrandom/low_chance,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
+"Yc" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/item/storage/firstaid/surgery/combat,
+/turf/simulated/floor/rock/dark,
+/area/colony)
 "Yf" = (
 /obj/machinery/power/port_gen/pacman/diesel/anchored,
 /turf/simulated/floor/industrial/navy_large_slates,
@@ -4710,6 +4865,11 @@
 /mob/living/carbon/superior_animal/human/balkan/space,
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
+"Yh" = (
+/obj/item/modification/organ/internal/special/on_pickup/shock/powerful,
+/obj/structure/grille/cult,
+/turf/simulated/floor/wood_old,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "Yi" = (
 /obj/structure/flora/small/snow/rock1,
 /obj/structure/flora/tree/snow/five,
@@ -10436,8 +10596,8 @@ xo
 WD
 aS
 IY
-FG
-Zf
+TZ
+po
 FG
 Zl
 zW
@@ -10638,7 +10798,7 @@ WD
 WD
 aS
 aS
-zW
+Yc
 zW
 FG
 FG
@@ -11917,7 +12077,7 @@ dc
 Vc
 dc
 lE
-tP
+aT
 Zh
 na
 na
@@ -12116,10 +12276,10 @@ zx
 Ve
 dc
 dc
-dc
+rK
 dc
 zx
-tA
+Vg
 Zh
 na
 na
@@ -14348,7 +14508,7 @@ dc
 dc
 dc
 dc
-SC
+FK
 hC
 JX
 Wm
@@ -17465,7 +17625,7 @@ dO
 xn
 GF
 GF
-tf
+ts
 HG
 HG
 oL
@@ -17668,7 +17828,7 @@ Gv
 Fy
 GF
 HG
-HG
+sF
 HG
 RI
 EE
@@ -18068,7 +18228,7 @@ na
 na
 na
 dO
-tf
+Yh
 GF
 GF
 dO
@@ -18679,7 +18839,7 @@ It
 GF
 HG
 GF
-HG
+sF
 HG
 GV
 GF
@@ -27659,7 +27819,7 @@ xo
 xo
 WD
 FT
-zW
+BZ
 WD
 xo
 xo
@@ -31841,7 +32001,7 @@ xo
 xo
 zW
 FG
-Mn
+BW
 FG
 xo
 xo
@@ -32849,7 +33009,7 @@ xo
 xo
 xo
 vz
-Mn
+xr
 CK
 xo
 xo
@@ -39758,7 +39918,7 @@ nf
 Yz
 Yz
 Yz
-Eu
+WA
 Yz
 Yz
 Yz
@@ -40365,7 +40525,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Yz
@@ -40563,7 +40723,7 @@ Gm
 SR
 Kl
 yy
-PO
+WA
 Yz
 SN
 Yz
@@ -40775,7 +40935,7 @@ CU
 Yz
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Hx
@@ -40972,7 +41132,7 @@ Co
 Yz
 Yz
 Yz
-Eu
+WA
 Yz
 Yz
 Yz
@@ -41582,7 +41742,7 @@ Yz
 Yz
 Yz
 mp
-Eu
+xU
 Yz
 Yz
 qr
@@ -41781,7 +41941,7 @@ Yz
 Co
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Yz
@@ -41978,10 +42138,10 @@ zW
 zW
 MF
 Hx
-Eu
+WA
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -42385,7 +42545,7 @@ zW
 Hx
 Yz
 Yz
-Eu
+xU
 Yz
 Yz
 Yz
@@ -46536,7 +46696,7 @@ TP
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 jg
@@ -46934,7 +47094,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+UF
 Yz
 eW
 Yz
@@ -47124,7 +47284,7 @@ Yz
 Co
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -47139,7 +47299,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -47521,7 +47681,7 @@ eW
 Co
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -47551,7 +47711,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -47733,11 +47893,11 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Co
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -47746,7 +47906,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -47941,7 +48101,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 CT
 Yz
@@ -48128,7 +48288,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -48327,7 +48487,7 @@ jg
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -48362,7 +48522,7 @@ jg
 jg
 oT
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -48745,7 +48905,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -49350,7 +49510,7 @@ Yz
 Yz
 Co
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -49548,7 +49708,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+UF
 Yz
 Yz
 Yz
@@ -49578,7 +49738,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -49774,7 +49934,7 @@ Yz
 Yz
 Co
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -50755,7 +50915,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -51175,7 +51335,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -51396,7 +51556,7 @@ CT
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -51577,7 +51737,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -51777,8 +51937,14 @@ Yz
 Yz
 Co
 Yz
+WA
 Yz
 Yz
+Yz
+eW
+Yz
+Yz
+WA
 Yz
 Yz
 eW
@@ -51786,13 +51952,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
-eW
-Yz
-Yz
-Yz
-Yz
-Yz
+WA
 Yz
 Yz
 Co
@@ -52171,7 +52331,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+WA
 Yz
 Yz
 eW
@@ -52981,7 +53141,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -53406,7 +53566,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -54190,7 +54350,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+WA
 Yz
 eW
 Yz
@@ -54405,7 +54565,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Ud
@@ -56005,7 +56165,7 @@ Yz
 Yz
 CT
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -56030,7 +56190,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -56246,7 +56406,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -57459,7 +57619,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -57626,7 +57786,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -57856,7 +58016,7 @@ jg
 jg
 jg
 jg
-Yz
+UF
 Yz
 Yz
 Yz
@@ -58400,7 +58560,7 @@ xo
 xo
 xo
 xo
-PO
+Al
 NM
 xo
 xo
@@ -58604,7 +58764,7 @@ NM
 vf
 vf
 vf
-jI
+vW
 NM
 xo
 xo
@@ -58813,7 +58973,7 @@ up
 Oe
 Sx
 vf
-Yq
+Hi
 xo
 xo
 xo
@@ -59002,9 +59162,9 @@ xo
 xo
 xo
 xo
-jI
+vW
 vf
-ub
+UF
 Yz
 mp
 Yz
@@ -59283,7 +59443,7 @@ jg
 jg
 jg
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -59403,11 +59563,11 @@ xo
 xo
 Sx
 vf
-jI
-Yq
+vW
+Hi
 Yz
 Yz
-PO
+Al
 YR
 Bd
 Bd
@@ -59464,7 +59624,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -59505,7 +59665,7 @@ vf
 vf
 Yz
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -59803,7 +59963,7 @@ xo
 xo
 Wi
 vf
-jI
+vW
 Yz
 Yz
 YR
@@ -59825,7 +59985,7 @@ Uc
 Uc
 Uc
 Bd
-Yq
+Hi
 xo
 na
 na
@@ -59894,7 +60054,7 @@ Yz
 CT
 Yz
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -60003,7 +60163,7 @@ xo
 xo
 xo
 SN
-Yq
+Hi
 Yz
 Yz
 Se
@@ -60105,7 +60265,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -60293,7 +60453,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -60405,8 +60565,8 @@ xo
 xo
 xo
 xo
-PO
-ub
+Al
+hq
 Yz
 Bd
 Bd
@@ -60513,7 +60673,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -60609,7 +60769,7 @@ xo
 xo
 Sx
 Yz
-PO
+Al
 Bd
 Uc
 Uc
@@ -61238,7 +61398,7 @@ Uc
 Uc
 Uc
 Bd
-PO
+Al
 Sx
 xo
 xo
@@ -61258,7 +61418,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -61328,7 +61488,7 @@ Yz
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -61671,7 +61831,7 @@ CT
 Yz
 Yz
 Yz
-Yz
+UF
 Yz
 Yz
 Yz
@@ -61764,7 +61924,7 @@ Yz
 Yz
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Mj
@@ -61823,7 +61983,7 @@ OE
 OE
 FW
 vf
-PO
+Al
 Yz
 Yz
 Bd
@@ -61894,7 +62054,7 @@ Yz
 Yz
 Co
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -61928,7 +62088,7 @@ Yz
 Co
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -61961,7 +62121,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -62008,7 +62168,7 @@ jg
 jg
 Yz
 NM
-ub
+hq
 Yz
 Yz
 wI
@@ -62026,7 +62186,7 @@ xo
 bt
 vx
 vf
-PO
+Al
 Yz
 YR
 Bd
@@ -62167,7 +62327,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 PO
 Yz
@@ -62230,7 +62390,7 @@ XN
 Wi
 vf
 fo
-ub
+hq
 Yz
 Bd
 Bd
@@ -62317,7 +62477,7 @@ Yz
 su
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -62431,7 +62591,7 @@ xo
 xo
 xo
 Co
-Yq
+Hi
 Fr
 Yz
 Yz
@@ -62450,7 +62610,7 @@ Bd
 Bd
 YR
 Yz
-Yq
+Hi
 vf
 xo
 xo
@@ -62620,7 +62780,7 @@ NM
 Yz
 CT
 Yz
-PO
+Al
 vf
 YI
 xo
@@ -62635,7 +62795,7 @@ xo
 xo
 at
 vf
-jI
+vW
 vf
 vf
 xo
@@ -62709,7 +62869,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 Yz
@@ -62722,7 +62882,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 qx
 qx
 qx
@@ -62738,7 +62898,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -62815,7 +62975,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -62845,9 +63005,9 @@ xo
 xo
 xo
 fo
-jI
+vW
 vf
-Yq
+Hi
 Yq
 vf
 vf
@@ -62904,7 +63064,7 @@ jg
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -62919,7 +63079,7 @@ Yz
 TP
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -62934,7 +63094,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -62943,7 +63103,7 @@ qx
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -63002,7 +63162,7 @@ CT
 Yz
 Yz
 NM
-Yz
+UF
 Yz
 Yz
 Mj
@@ -63012,7 +63172,7 @@ jg
 jg
 wI
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -63023,7 +63183,7 @@ Yz
 uW
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 vf
@@ -63081,7 +63241,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -63215,7 +63375,7 @@ oT
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63228,7 +63388,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63318,11 +63478,11 @@ qx
 wH
 qx
 qx
+xU
 Yz
 Yz
 Yz
 Yz
-Yz
 qx
 qx
 qx
@@ -63331,7 +63491,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -63406,7 +63566,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63422,7 +63582,7 @@ Yz
 NM
 Yz
 TP
-PO
+Al
 Yz
 Yz
 Yz
@@ -63525,7 +63685,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -63569,12 +63729,12 @@ Yz
 TP
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 TP
@@ -63611,7 +63771,7 @@ mp
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63627,7 +63787,7 @@ Yz
 Yz
 Yz
 TP
-PO
+Al
 Yz
 jg
 hM
@@ -63812,7 +63972,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63824,7 +63984,7 @@ mp
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -63837,7 +63997,7 @@ jg
 Ud
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -63942,7 +64102,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -64011,17 +64171,17 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
 NM
-ub
+UF
 Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -64113,7 +64273,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -64231,7 +64391,7 @@ jg
 NM
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -64352,7 +64512,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Co
 Yz
 Yz
@@ -64374,12 +64534,12 @@ Yz
 Yz
 Yz
 mp
-Yz
+xU
 qx
 qx
 qx
 qx
-Yz
+xU
 TP
 Yz
 Yz
@@ -64415,12 +64575,12 @@ jg
 jg
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
 mp
-PO
+Al
 Yz
 Yz
 Yz
@@ -64436,7 +64596,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Mp
@@ -64446,7 +64606,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -64541,7 +64701,7 @@ Yz
 Yz
 CT
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -64643,7 +64803,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -64652,7 +64812,7 @@ Yz
 Yz
 eW
 Yz
-PO
+WA
 Yz
 Mp
 jg
@@ -64709,7 +64869,7 @@ hM
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -64920,7 +65080,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -64939,7 +65099,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Co
@@ -64953,12 +65113,12 @@ oT
 Yz
 Yz
 Yz
+UF
 Yz
 Yz
 Yz
 Yz
-Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -65129,7 +65289,7 @@ qx
 qx
 qx
 uW
-Yz
+WA
 Yz
 Yz
 Yz
@@ -65226,7 +65386,7 @@ jg
 jg
 mp
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -65244,10 +65404,10 @@ Mp
 TP
 Yz
 Yz
-ub
+hq
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 ub
@@ -65260,8 +65420,8 @@ Yz
 Yz
 CT
 Yz
-PO
-Yz
+WA
+UC
 Yz
 Yz
 jg
@@ -65391,7 +65551,7 @@ Yz
 Yz
 Yz
 PO
-Yz
+UF
 Yz
 Co
 Yz
@@ -65459,7 +65619,7 @@ jg
 wI
 Yz
 Yz
-PO
+WA
 Yz
 ub
 Yz
@@ -65468,7 +65628,7 @@ Yz
 Yz
 Yz
 Yz
-WA
+nG
 xo
 xo
 xo
@@ -65502,6 +65662,7 @@ Yz
 eW
 Yz
 Yz
+WA
 Yz
 Yz
 Yz
@@ -65512,8 +65673,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -65527,7 +65687,7 @@ Yz
 Yz
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -65537,13 +65697,13 @@ TP
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -65579,13 +65739,13 @@ Yz
 Yz
 Yz
 ub
-Yz
-Yz
+mp
+xU
 qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -65663,17 +65823,17 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Tz
 Yz
 Yz
 Yz
 mp
 Yz
+UC
 Yz
-vf
-vf
-Oe
-WA
+Yz
+mp
+nG
 xo
 xo
 xo
@@ -65763,7 +65923,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -65781,7 +65941,7 @@ Co
 Ud
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -65872,12 +66032,12 @@ CT
 Yz
 PO
 Yz
-Yz
+UC
 Yz
 CT
-vf
-jI
-vf
+Yz
+PO
+Yz
 jg
 wI
 jg
@@ -65922,7 +66082,7 @@ Yz
 Yz
 qx
 xd
-Yz
+xU
 Re
 Yz
 Yz
@@ -65968,7 +66128,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 jg
@@ -65986,7 +66146,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -66035,7 +66195,7 @@ wI
 NM
 NM
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -66076,10 +66236,10 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Tz
 Yz
 uW
-Yz
+UC
 Yz
 Yz
 jg
@@ -66142,7 +66302,7 @@ Yz
 Yz
 Yz
 TP
-Yz
+xU
 qx
 qx
 qx
@@ -66264,7 +66424,7 @@ jg
 jg
 wI
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -66272,14 +66432,14 @@ Yz
 Yz
 eW
 Yz
-Yz
+UC
 Co
 Yz
-ub
+UF
 Yz
+UC
 Yz
-Yz
-PO
+xU
 Yz
 Yz
 nG
@@ -66311,7 +66471,7 @@ Yz
 Yz
 Yz
 Yz
-eW
+UF
 Yz
 Yz
 Yz
@@ -66383,7 +66543,7 @@ Yz
 ub
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -66459,7 +66619,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 wI
@@ -66477,15 +66637,15 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Tz
 Yz
 Yz
 mp
 Yz
 Yz
-PO
+xU
 Yz
-Yz
+Tz
 Yz
 Yz
 oT
@@ -66510,7 +66670,7 @@ jz
 Md
 ef
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -66566,7 +66726,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -66671,11 +66831,11 @@ Yz
 Co
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -66684,7 +66844,7 @@ Co
 Yz
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Yz
@@ -66728,7 +66888,7 @@ Yz
 xd
 qx
 qx
-Yz
+xU
 qx
 qx
 Yz
@@ -66740,7 +66900,7 @@ Yz
 Yz
 CT
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -66784,7 +66944,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -66864,7 +67024,7 @@ Yz
 PO
 Yz
 Co
-PO
+Al
 Yz
 Yz
 TP
@@ -66883,8 +67043,8 @@ Yz
 CT
 Yz
 Yz
-PO
-PO
+WA
+Yz
 Yz
 eW
 Yz
@@ -67048,7 +67208,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -67058,7 +67218,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -67072,26 +67232,26 @@ Yz
 Yz
 uW
 Yz
-ub
+xU
+Yz
+UC
 Yz
 Yz
 Yz
 Yz
 Yz
+UC
 Yz
 Yz
-Yz
-Yz
-Yz
-Yz
+UC
 uW
 Yz
+BJ
 Yz
 Yz
+BJ
 Yz
-Yz
-Yz
-Yz
+Tz
 Co
 Yz
 Yz
@@ -67137,7 +67297,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Co
 Yz
 Yz
@@ -67155,7 +67315,7 @@ uW
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -67275,11 +67435,11 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
-Yz
+Tz
 Co
 Yz
 Yz
@@ -67323,6 +67483,7 @@ Yz
 Yz
 Yz
 Yz
+WA
 Yz
 Yz
 Yz
@@ -67331,10 +67492,9 @@ Yz
 Yz
 Yz
 Yz
+WA
 Yz
-Yz
-Yz
-Yz
+UF
 Yz
 Yz
 eW
@@ -67387,13 +67547,13 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Co
@@ -67433,7 +67593,7 @@ eW
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 CT
@@ -67444,7 +67604,7 @@ Mp
 rd
 oC
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -67480,12 +67640,12 @@ Yz
 Yz
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Yz
 eW
-PO
+WA
 Yz
 Yz
 mp
@@ -67634,7 +67794,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -67652,13 +67812,13 @@ Yz
 Yz
 Yz
 Co
-ub
+UF
 Yz
 Yz
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -67688,14 +67848,14 @@ Yz
 Yz
 Yz
 Yz
+UC
 Yz
 Yz
+UC
 Yz
 Yz
-Yz
-Yz
-Yz
-Yz
+hN
+UC
 Yz
 Yz
 Yz
@@ -67790,12 +67950,12 @@ Yz
 Co
 Yz
 Co
-Yz
+xU
 qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -67850,7 +68010,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -67889,20 +68049,20 @@ jg
 oT
 Yz
 Yz
-ub
+hq
 Yz
 Yz
+Tz
 Yz
 Yz
-Yz
-PO
+WA
 Yz
 Yz
 Yz
 Yz
 CT
-Yz
-Yz
+UC
+Tz
 Yz
 Yz
 hM
@@ -68035,7 +68195,7 @@ Yz
 gv
 Yz
 vf
-PO
+WA
 Yz
 Yz
 Yz
@@ -68096,11 +68256,11 @@ Co
 Yz
 Yz
 Yz
-ub
+hq
 Yz
+Tz
 Yz
-Yz
-Yz
+UC
 Yz
 Yz
 Yz
@@ -68196,7 +68356,7 @@ Yz
 Yz
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -68240,7 +68400,7 @@ Yz
 CT
 Yz
 Yz
-PO
+Al
 Yz
 TP
 Yz
@@ -68250,7 +68410,7 @@ Yz
 Yz
 CT
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -68280,7 +68440,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 wI
@@ -68302,7 +68462,7 @@ Yz
 Co
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 eW
@@ -68334,7 +68494,7 @@ Yz
 Yz
 Ud
 Yz
-Yz
+WA
 Yz
 qx
 qx
@@ -68464,7 +68624,7 @@ uW
 Yz
 Yz
 NM
-PO
+Al
 Yz
 Yz
 Yz
@@ -68497,19 +68657,19 @@ jg
 jg
 hM
 Yz
+UC
 Yz
 Yz
 Yz
+BJ
+Yz
+UC
 Yz
 Yz
+UC
 Yz
 Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -68642,7 +68802,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -68658,7 +68818,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -68712,10 +68872,10 @@ Yz
 Yz
 CT
 Yz
+Tz
 Yz
 Yz
-Yz
-PO
+xU
 Vr
 na
 "}
@@ -68735,7 +68895,7 @@ eW
 Yz
 Yz
 Yz
-CT
+UF
 Yz
 Yz
 Yz
@@ -68745,7 +68905,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -68764,7 +68924,7 @@ jg
 jg
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -68859,7 +69019,7 @@ Yz
 TP
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 mp
@@ -68910,14 +69070,14 @@ Yz
 NM
 Yz
 Yz
-Yz
+UC
 Yz
 Yz
 Yz
 Yz
 Co
 Yz
-Yz
+HJ
 oT
 na
 "}
@@ -69052,7 +69212,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -69110,12 +69270,12 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Tz
 Co
+hN
+BJ
 Yz
-Yz
-Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -69251,7 +69411,7 @@ TP
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 PO
 Yz
@@ -69311,14 +69471,14 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
-ub
+hq
 Yz
 NM
 Yz
 Yz
-Yz
+BJ
 Yz
 oT
 jg
@@ -69394,7 +69554,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 oT
@@ -69512,9 +69672,9 @@ jg
 jg
 wI
 Co
+BJ
 Yz
-Yz
-Yz
+hN
 Yz
 Yz
 eW
@@ -69720,7 +69880,7 @@ NM
 Yz
 Yz
 Yz
-Yz
+UC
 Yz
 wI
 jg
@@ -69920,7 +70080,7 @@ jg
 Yz
 Yz
 mp
-Yz
+Tz
 Yz
 Yz
 Yz
@@ -69954,7 +70114,7 @@ Yz
 Yz
 Yz
 qx
-Yz
+xU
 qx
 qx
 qx
@@ -70065,8 +70225,8 @@ Yz
 Yz
 CT
 Yz
-PO
-ub
+Al
+hq
 Yz
 Yz
 Yz
@@ -70162,18 +70322,7 @@ qx
 sg
 qx
 qx
-Yz
-Yz
-Yz
-eW
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
+xU
 Yz
 Yz
 eW
@@ -70181,6 +70330,17 @@ Yz
 Yz
 Yz
 Yz
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
+eW
+Yz
+Yz
+Yz
+WA
 Yz
 Yz
 Yz
@@ -70667,7 +70827,7 @@ Yz
 jg
 oC
 Yz
-PO
+WA
 Yz
 Co
 Yz
@@ -70986,7 +71146,7 @@ Yz
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -71072,7 +71232,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -71178,7 +71338,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Co
 Yz
@@ -71220,7 +71380,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -71269,13 +71429,13 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
 NM
 Yz
-ub
+hq
 Yz
 Yz
 wI
@@ -71371,7 +71531,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -71384,7 +71544,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -71669,10 +71829,10 @@ jg
 oT
 Yz
 Yz
+Al
 Yz
 Yz
-Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -71878,10 +72038,10 @@ Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -71968,7 +72128,7 @@ jg
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Bd
@@ -71989,7 +72149,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+xU
 qx
 qx
 qx
@@ -72010,7 +72170,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -72079,7 +72239,7 @@ CT
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -72090,7 +72250,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -72273,12 +72433,12 @@ Yz
 NM
 Yz
 oC
-PO
+Al
 Yz
 Yz
 Yz
 Yz
-PO
+WA
 Yz
 Yz
 Yz
@@ -72294,7 +72454,7 @@ Yz
 Ud
 Yz
 mp
-ub
+hq
 Yz
 HF
 Yz
@@ -72400,7 +72560,7 @@ qx
 qx
 qx
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -72435,7 +72595,7 @@ Yz
 Yz
 Co
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -72488,7 +72648,7 @@ Yz
 mp
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -72585,7 +72745,7 @@ Uc
 Bd
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -72681,7 +72841,7 @@ Yz
 Yz
 PO
 Yz
-ub
+UF
 Yz
 NM
 Yz
@@ -72799,7 +72959,7 @@ qx
 qx
 wH
 qx
-Yz
+xU
 Yz
 Yz
 Yz
@@ -72813,7 +72973,7 @@ Yz
 Yz
 Co
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -72893,7 +73053,7 @@ Yz
 Yz
 Yz
 Ud
-PO
+Al
 Yz
 Yz
 Yz
@@ -73005,6 +73165,7 @@ Yz
 Yz
 Yz
 Yz
+Al
 Yz
 Yz
 Yz
@@ -73018,8 +73179,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -73405,7 +73565,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -73434,7 +73594,7 @@ Yz
 CT
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -73442,6 +73602,26 @@ Yz
 eW
 Yz
 Yz
+Al
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
+hM
+jg
+jg
+jg
+jg
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
 Yz
 Yz
 Yz
@@ -73454,26 +73634,6 @@ jg
 jg
 jg
 jg
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-hM
-jg
-jg
-jg
-jg
 jg
 jg
 jg
@@ -73482,7 +73642,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -73691,7 +73851,7 @@ Yz
 uW
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -73807,7 +73967,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -73890,7 +74050,7 @@ Yz
 PO
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -74044,7 +74204,7 @@ Yz
 eW
 Co
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -74095,7 +74255,7 @@ Yz
 Yz
 TP
 Yz
-PO
+Al
 Yz
 Yz
 wI
@@ -74203,7 +74363,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+WA
 Yz
 Yz
 CT
@@ -74496,7 +74656,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -74646,7 +74806,7 @@ jg
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -74658,7 +74818,7 @@ Yz
 Co
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -75004,7 +75164,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Co
@@ -75210,7 +75370,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -75495,7 +75655,7 @@ Re
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -75510,7 +75670,7 @@ jg
 oT
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -76052,7 +76212,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -76120,7 +76280,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -76658,7 +76818,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -76718,7 +76878,7 @@ Yz
 Yz
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -76848,7 +77008,7 @@ Yz
 Yz
 eW
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -76929,7 +77089,7 @@ Yz
 uW
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
@@ -77127,7 +77287,7 @@ Yz
 Re
 Yz
 Yz
-ub
+hq
 TP
 Yz
 Re
@@ -77240,7 +77400,7 @@ Yz
 eW
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -77470,7 +77630,7 @@ FN
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -77658,7 +77818,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 hk
@@ -78141,7 +78301,7 @@ Eu
 TP
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -78274,7 +78434,7 @@ Rh
 jv
 Yz
 Yz
-Yz
+WA
 Yz
 Yz
 Yz
@@ -78351,7 +78511,7 @@ Eu
 Yz
 Yz
 Yz
-ub
+hq
 vf
 ok
 xo
@@ -78670,7 +78830,7 @@ Yz
 vf
 Yz
 Yz
-Yz
+WA
 Yz
 sk
 pH
@@ -79081,7 +79241,7 @@ pH
 Rh
 KN
 Yz
-Yz
+WA
 Yz
 zQ
 ZO
@@ -79358,7 +79518,7 @@ Bd
 Bd
 Yz
 Yz
-ub
+hq
 Yz
 Yz
 Yz
@@ -79499,7 +79659,7 @@ Eu
 Yz
 Yz
 Yz
-Eu
+WA
 Yz
 NM
 Yz
@@ -79704,7 +79864,7 @@ yT
 Yz
 Yz
 Yz
-Eu
+WA
 Yz
 Yz
 bg
@@ -79908,7 +80068,7 @@ Yz
 Sq
 Yz
 Yz
-Eu
+WA
 bg
 qK
 qK
@@ -79941,7 +80101,7 @@ Yz
 Yz
 jg
 oT
-ub
+hq
 Yz
 Yz
 Yz
@@ -80104,11 +80264,11 @@ Re
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 Yz
 Yz
-PO
+Al
 Re
 Yz
 hk
@@ -80169,7 +80329,7 @@ gm
 Bd
 VW
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -80311,7 +80471,7 @@ Yz
 Co
 Yz
 TP
-Eu
+WA
 Yz
 bg
 qK
@@ -80350,7 +80510,7 @@ Yz
 TP
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 cu
@@ -80528,7 +80688,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -80707,7 +80867,7 @@ Yz
 Co
 Yz
 Yz
-PO
+Al
 Yz
 Ci
 Yz
@@ -80906,7 +81066,7 @@ Vw
 Vw
 Yz
 uW
-PO
+Al
 Yz
 Yz
 Co
@@ -81102,7 +81262,7 @@ Ij
 Vw
 Xj
 Xj
-Xj
+es
 Xj
 ID
 Vw
@@ -81512,7 +81672,7 @@ Lw
 wY
 Za
 Yz
-PO
+Al
 Yz
 Yz
 Eu
@@ -81734,7 +81894,7 @@ fz
 Ac
 vf
 Yz
-yT
+WA
 Yz
 Yz
 CT
@@ -81919,10 +82079,10 @@ Yz
 Yz
 Yz
 Sq
-PO
+Al
 NM
 Ci
-PO
+WA
 Yz
 yT
 Yz
@@ -82172,7 +82332,7 @@ Yz
 Yz
 Yz
 Eu
-ub
+UF
 Yz
 Yz
 VW
@@ -82523,7 +82683,7 @@ wY
 KD
 Yz
 CT
-PO
+Al
 Yz
 Yz
 Yz
@@ -82545,7 +82705,7 @@ Yz
 Yz
 Yz
 Yz
-Yz
+Al
 Yz
 Yz
 Yz
@@ -82557,7 +82717,7 @@ Yz
 Yz
 Yz
 CT
-ub
+hq
 Yz
 Yz
 Yz
@@ -82727,7 +82887,7 @@ Eu
 Yz
 Yz
 Yz
-PO
+Al
 Yz
 hr
 Yz
@@ -83100,14 +83260,14 @@ jg
 jg
 PO
 NI
-Tk
+oq
 nb
 RS
 GZ
 RS
 nb
 RS
-Tk
+oq
 Vw
 or
 Lw
@@ -83303,10 +83463,10 @@ jg
 eW
 NI
 Tk
-GZ
+Oq
 RS
-GZ
-GZ
+IL
+Oq
 GZ
 RS
 Tk
@@ -83334,7 +83494,7 @@ Yz
 Yz
 Yz
 Yz
-PO
+Al
 tx
 Yz
 PO
@@ -83788,7 +83948,7 @@ Re
 Yz
 Yz
 Yz
-ub
+UF
 Yz
 Yz
 Yz
@@ -84750,7 +84910,7 @@ jg
 jg
 jg
 oT
-jI
+vW
 Ac
 Ac
 Ac
@@ -84940,7 +85100,7 @@ na
 na
 Vw
 Vw
-Vw
+tJ
 Vw
 Vw
 Er
@@ -85142,7 +85302,7 @@ na
 na
 na
 na
-na
+Lm
 na
 Vw
 Vw

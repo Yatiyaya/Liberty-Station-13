@@ -35,12 +35,15 @@
 /// bandaid until new inventorycode
 	var/mid_delete = FALSE
 
-
+// This is used by the biomass container to transform directly into liquid biomatter. See cloning.dm
+// Value of this var is multiplied per amount of sheets on succesful insertion.
+	var/biomatter_in_sheet = null
 
 /obj/item/stack/New(var/loc, var/amount=null)
 	.=..()
 	if (amount)
 		src.amount = amount
+		update_icon() // Mats ejected from anywhere will automatically look equal to their amount.
 
 /obj/item/stack/Initialize()
 	.=..()
@@ -340,6 +343,7 @@
 	if (transfer && src.use(transfer))
 		var/obj/item/stack/S = new src.type(loc, transfer)
 		S.color = color
+		S.update_icon()
 		if (prob(transfer/orig_amount * 100))
 			transfer_fingerprints_to(S)
 			if(blood_DNA)
@@ -382,6 +386,7 @@
 		var/transfer = src.transfer_to(item)
 		if (transfer)
 			to_chat(user, SPAN_NOTICE("You add a new [item.singular_name] to the stack. It now contains [item.amount] [item.singular_name]\s."))
+			update_icon()
 		if(!amount)
 			break
 

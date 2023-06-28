@@ -198,10 +198,10 @@
 		for(var/damage_type in P.damage_types)
 			var/damage = P.damage_types[damage_type]
 			var/dmult = 1
-			if(LAZYLEN(P.effective_faction))
-				if(faction in P.effective_faction)
+			for(var/proj_effective_faction in P.effective_faction)
+				if(faction == proj_effective_faction)
 					dmult += P.damage_mult
-			if(LAZYLEN(P.supereffective_types))
+			for(var/proj_effective_types in P.supereffective_types)
 				if(is_type_in_list(src, P.supereffective_types, TRUE))
 					dmult += P.supereffective_mult
 			damage *= dmult

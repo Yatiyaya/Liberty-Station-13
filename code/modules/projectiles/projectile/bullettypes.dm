@@ -1063,8 +1063,8 @@
 /obj/item/projectile/bullet/crossbow_bolt
 	name = "bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 22.5)
-	armor_penetration = 15
+	damage_types = list(BRUTE = 30)
+	armor_penetration = 20
 	knockback = 0 //Bug doups hits
 	step_delay = 0.9
 	affective_damage_range = 7
@@ -1074,7 +1074,7 @@
 /obj/item/projectile/bullet/crossbow_bolt/lethal
 	name = "bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 23.5)
+	damage_types = list(BRUTE = 45)
 	agony = 29
 	armor_penetration = 5
 	step_delay = 0.9
@@ -1083,7 +1083,7 @@
 /obj/item/projectile/bullet/crossbow_bolt/hv
 	name = "bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 23.5)
+	damage_types = list(BRUTE = 25)
 	armor_penetration = 55
 	penetrating = 3
 	hitscan = TRUE
@@ -1092,7 +1092,7 @@
 	nocap_structures = TRUE //Can do well againt walls and doors
 	recoil = 5
 
-//reusable
+// Reusable ammo. Ammo that can be retrieved again once fired, unless stated.
 /obj/item/projectile/bullet/reusable
 	var/obj/item/create_type
 	muzzle_type = null
@@ -1102,21 +1102,24 @@
 	if(create_type && !testing)
 		new create_type(get_turf(src))
 
+// Crossbow Bolts. Higher penetration due to more tension.
 /obj/item/projectile/bullet/reusable/rod_bolt
-	name = "metal rod"
+	name = "crude bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 5) //This is multiplied by tension when fired, so it's actually 25 damage.
+	damage_types = list(BRUTE = 2) // Damage values are multiplied by tension with a max of 5, thus 5 damage.
 	armor_penetration = 15
+	supereffective_types = list(/mob/living/carbon/human = FALSE, /mob/living = TRUE) // Strong against everything that isn't a human. Superior than arrows in that aspect.
+	supereffective_mult = 1.5 // Massive damage increase still.
 	step_delay = 0.9
 	embed = FALSE
 	penetrating = 1
 	affective_damage_range = 7
 	affective_ap_range = 7
-	create_type = /obj/item/stack/rods
+	create_type = /obj/item/ammo_casing/rod_bolt // Let's keep it the same for the sake of consistency.
 
 /obj/item/projectile/bullet/reusable/rod_bolt/superheated
 	name = "superheated metal rod"
-	damage_types = list(BRUTE = 5, BURN = 2.5) //This is multiplied by tension when fired, so it's actually 37.5 damage.
+	damage_types = list(BRUTE = 3, BURN = 1) // 30 damage, combined with the burn.
 	armor_penetration = 20
 	step_delay = 0.6
 	embed = TRUE
@@ -1128,9 +1131,9 @@
 
 
 /obj/item/projectile/bullet/reusable/rod_bolt/rcd
-	name = "flashforged rod"
+	name = "flashforged bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 5) //This is multiplied by tension when fired, so it's actually 25 damage. Slightly worse, but it's faster and has higher AP.
+	damage_types = list(BRUTE = 2) // Same damage, but it's faster and has higher AP.
 	armor_penetration = 30
 	step_delay = 0.6
 	embed = FALSE
@@ -1139,11 +1142,12 @@
 	affective_ap_range = 7
 	create_type = /obj/item/arrow/rcd
 	recoil = 6 //Scrap verson
+	nocap_structures = TRUE // Reflecting the fact it's made from a literal RCD
 
 /obj/item/projectile/bullet/reusable/rod_bolt/rcd/superhot
-	name = "flashforged superheated rod"
+	name = "flashforged superheated bolt"
 	icon_state = "bolt"
-	damage_types = list(BRUTE = 5, BURN = 2.5) //This is multiplied by tension when fired, so it's actually 57.5 damage. Slightly worse, but it's faster and has higher AP.
+	damage_types = list(BRUTE = 3, BURN = 2) // 40 damage. Slightly better than normal crossbow.
 	armor_penetration = 30
 	step_delay = 0.2
 	embed = TRUE
@@ -1152,14 +1156,17 @@
 	affective_ap_range = 7
 	create_type = null
 
+// Arrows. Lower penetration, and good only against living creatures, but can compensate damage by special bow modifications or specialized ammo.
 
 /obj/item/projectile/bullet/reusable/arrow
 	name = "arrow"
 	icon_state = "arrow"
-	damage_types = list(BRUTE = 2) //Multiplied by 10 when fired.
-	armor_penetration = 2
-	effective_faction = list("wurm", "roach", "spider", "vox_tribe", "russian", "tengo") //good against common colony mobs
-	damage_mult = 2 // Turns out arrows always sucked
+	damage_types = list(BRUTE = 2) //Multiplied by max tension of 10 when fired, thus 20 damage ceiling.
+	armor_penetration = 5
+	// Good against colony mobs.
+	// Drones and Xeno are there for Horizon Zero Dawn and Predator references.
+	effective_faction = list("carp", "wurm", "roach", "spiders", "vox_tribe", "russian", "tengo", "xenomorph", "agape", "sargoyle", "nightmare", "malf_drone")
+	damage_mult = 1.5 // Double damage to everything in the above factions
 	embed = FALSE //don't want to embed and drop an arrow, that would be weird
 	check_armour = ARMOR_MELEE
 	step_delay = 0.9
@@ -1168,51 +1175,56 @@
 	create_type = /obj/item/ammo_casing/arrow
 	recoil = 0 //arrow moment
 
-/obj/item/projectile/bullet/reusable/arrow/serrated //Lower base damage, higher embed rate, higher AP. Arrow HV's, though not as good as the Lodge's.
+//Lower base damage, higher embed rate, higher AP. Arrow HV's, though not as good as the Trappers' arrows.
+/obj/item/projectile/bullet/reusable/arrow/serrated
 	name = "serrated arrow"
 	icon_state = "arrow"
 	embed = TRUE
-	damage_types = list(BRUTE = 1.5) // 15 damage at max pull
-	damage_mult = 1.5 // Less bonus damage against effective faction
+	damage_types = list(BRUTE = 1) // 10 damage at max pull
 	embed_mult = 3 //we are going to try really hard to embed
-	armor_penetration = 7 // Crossbow bolts are better, however this should not penetrate armor the same as a bullet (if not MORE).
+	armor_penetration = 15 // Without high pen these are worthless besides hitscan
 	hitscan = TRUE // As every HV ammo
 	affective_damage_range = 8
 	affective_ap_range = 8
 	create_type = null
 	shrapnel_type = /obj/item/ammo_casing/arrow/serrated //the ENTIRE arrow!
 
+//Very good base damage, negligible (5) AP, but no embedding. Think of this as arrow-hollowpoints.
 /obj/item/projectile/bullet/reusable/arrow/broadhead
 	name = "broadhead arrow"
 	icon_state = "arrow-broad"
-	post_penetration_dammult = 1.1
-	damage_types = list(BRUTE = 4.5) //Very good base damage, negligible (5) AP, but no embedding. Think of it as arrow-hollowpoints.
+	damage_types = list(BRUTE = 3)
+	post_penetration_dammult = 1.5
 	embed = FALSE
 	armor_penetration = 0.5
 	create_type = /obj/item/ammo_casing/arrow/broadhead
 
+// Trapper exclusive crafted arrows below. Good for the hunt.
 /obj/item/projectile/bullet/reusable/arrow/hunting
 	name = "hunting arrow"
 	icon_state = "arrow-bone"
 	damage_types = list(BRUTE = 1) //Multiplied by 10 when fired.
-	supereffective_types = list(/mob/living/carbon/human = FALSE, /mob/living = TRUE)
-	supereffective_mult = 5 //we do 10 damage base, up to 50 against SE mobs, then with 50 AP on should do ~100. Slow to fire, unwieldly, slow projectiles (but reusable), so I'll say this is fair?
-	armor_penetration = 10 //high ap to take advantage of overpen on mobs
+	effective_faction = list() // Have to null this so it doesn't become a 400 damage arrow.
+	damage_mult = 0 // Same as above.
+	supereffective_types = list(/mob/living/carbon/human = FALSE, /mob/living = TRUE) // Strong against everything that isn't a human, as it's a hunting arrow.
+	supereffective_mult = 2 // Double damage to all that is not human
+	armor_penetration = 10 // Higher ap than normal to take advantage of overpen on mobs
 	step_delay = 0.7 // 20% faster than normal arrows
-	affective_damage_range = 8 //worse than the baroque, but better than regular arrows
+	affective_damage_range = 8
 	affective_ap_range = 8
 	create_type = /obj/item/ammo_casing/arrow/hunting
 
+// Non-reusable high-tier Trapper arrow.
 /obj/item/projectile/bullet/reusable/arrow/hunting/heavy
 	name = "fragmenting hunting arrow"
 	icon_state = "arrow-bone"
 	damage_types = list(BRUTE = 2) //Multiplied by 10 when fired.
 	embed = TRUE
 	hitscan = TRUE // Sniping round, fast
-	supereffective_mult = 18 //we do 20 damage base, up to 360 against SE mobs, then with 55 (+5 hunting bow) AP on should do ~410. Baroque is around ~430 vs mobs, so roughly baroque-tier vs mobs, with the same wieldliness and different ammo costs (bone/leather/metal/plastic vs metal/cardboard).
-	affective_damage_range = 10 // Worse than Baroque, better than its predecesor arrow
+	supereffective_mult = 3 // Let's not get out of hand here.
+	affective_damage_range = 10 // Higher range, to synergize with the recurve bow's scope
 	affective_ap_range = 10
-	create_type = null //NOT reusable.
+	create_type = null // Do remember this is NOT reusable. Much like bullets.
 
 /obj/item/projectile/bullet/reusable/arrow/reagent
 	name = "chemical arrow"
@@ -1250,7 +1262,7 @@
 /obj/item/projectile/bullet/reusable/arrow/practice
 	name = "training arrow"
 	icon_state = "arrow-practice"
-	damage_types = list(HALLOSS = 0.1)
+	damage_types = list(HALLOSS = 0.5)
 	embed = FALSE
 	nodamage = TRUE
 	armor_penetration = 0

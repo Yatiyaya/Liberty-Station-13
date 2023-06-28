@@ -183,7 +183,7 @@
 
 /obj/item/clothing/suit/greatcoat/cossackcoat
 	name = "jaeger riding coat"
-	desc = "A traditional riding coat often worn by Jaegers, typically inherited or tailored as an expensive practical gift. The design is murder in the humid Phokorus forests, but is a time-honored and comfortable jacket for irregulars who served on Krios, where they dressed like woodsmen in their ambush patrols on Sol-Fed regulars in the cold forests and swamps of home."
+	desc = "A traditional riding coat often worn by Jaegers, typically inherited or tailored as an expensive practical gift. The design is very comfortable for the inclement weather on Phokorus, a time-honored and comfortable jacket for irregulars who served on Krios, where they dressed like woodsmen in their ambush patrols on Terran regulars in the cold forests and swamps of home."
 	icon_state = "cossackcoat"
 	item_state = "cossackcoat"
 	blood_overlay_type = "coat"

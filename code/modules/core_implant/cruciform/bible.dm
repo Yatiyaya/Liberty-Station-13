@@ -1,4 +1,4 @@
-/obj/item/book/ritual/cruciform
+/obj/item/book/ritual/hearthlantern
 	name = "Custodian hearth lantern"
 	desc = "Holds lectures for use by Custodians."
 	icon = 'icons/obj/nt_melee.dmi'
@@ -8,11 +8,11 @@
 	price_tag = 150
 	matter = list(MATERIAL_SILVER = 2, MATERIAL_STEEL = 5)
 
-/obj/item/book/ritual/cruciform/New()
+/obj/item/book/ritual/hearthlantern/New()
 	..()
 	set_light(5)
 
-/obj/item/book/ritual/cruciform/nano_ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = NANOUI_FOCUS)
+/obj/item/book/ritual/hearthlantern/nano_ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = NANOUI_FOCUS)
 	var/list/data = nano_ui_data(user, ui_key)
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
@@ -26,7 +26,7 @@
 		ui.open()
 
 
-/obj/item/book/ritual/cruciform/priest
+/obj/item/book/ritual/hearthlantern/priest
 	name = "Oathpledge hearth lantern"
 	desc = "Holds lectures meant only for the Oathpledge."
 	icon_state = "hearth_lantern_oathpledge"

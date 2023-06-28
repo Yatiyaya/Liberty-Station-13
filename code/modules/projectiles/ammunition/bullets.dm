@@ -741,19 +741,23 @@
 	amount = 10
 
 /obj/item/ammo_casing/rod_bolt
-	name = "metal rod"
-	desc = "Wait a second, this is a bullet!"
-	icon = 'icons/obj/stack/items.dmi'
-	icon_state = "rods"
-	caliber = "rod" //not a define
+	name = "crude bolt"
+	desc = "A metal rod crudely shaped to work as a crossbow bolt."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "metal-rod"
+	caliber = "crude bolts" //not a define
 	projectile_type = /obj/item/projectile/bullet/reusable/rod_bolt
 	matter = list(MATERIAL_STEEL = 1)
-	maxamount = 1
+	maxamount = 10
 	is_caseless = TRUE
+
+/obj/item/ammo_casing/rod_bolt/bulk
+	amount = 10
 
 /obj/item/ammo_casing/rod_bolt/rcd
 	name = "flashforged rod"
-	desc = "Wait a second, this is a flashforged bullet!"
+	desc = "Compressed matter shapen into a crossbow bolt with a sharp tip via flash forging."
+	icon_state = "bolt"
 	projectile_type = /obj/item/projectile/bullet/reusable/rod_bolt/rcd
 
 //arrows
@@ -766,12 +770,12 @@
 	force = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_GRAZING
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow
-	matter = list(MATERIAL_STEEL = 0.5, MATERIAL_WOOD = 0.5, MATERIAL_PLASTIC= 0.5)
-	maxamount = 3
+	matter = list(MATERIAL_STEEL = 0.2, MATERIAL_WOOD = 0.2, MATERIAL_CARDBOARD = 0.2)
+	maxamount = 5
 	is_caseless = TRUE
 
 /obj/item/ammo_casing/arrow/bulk
-	amount = 3
+	amount = 5
 
 /obj/item/ammo_casing/arrow/hunting
 	name = "hunting arrow"
@@ -780,7 +784,7 @@
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/hunting
 
 /obj/item/ammo_casing/arrow/hunting/bulk
-	amount = 3
+	amount = 5
 
 /obj/item/ammo_casing/arrow/hunting/heavy
 	name = "broadhead hunting arrow"
@@ -789,7 +793,7 @@
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/hunting/heavy
 
 /obj/item/ammo_casing/arrow/hunting/heavy/bulk
-	amount = 3
+	amount = 5
 
 /obj/item/ammo_casing/arrow/broadhead
 	name = "broadhead arrow"
@@ -799,6 +803,9 @@
 	desc = "A good-quality handmade arrow, with a metal head and plastic fletching. This one has quite a broad head, capable of causing severe damage to unarmored targets, but reducing its ability to penetrate armor."
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/broadhead
 
+/obj/item/ammo_casing/arrow/broadhead/bulk
+	amount = 5
+
 /obj/item/ammo_casing/arrow/serrated
 	name = "serrated arrow"
 	icon_state = "arrow-serrated"
@@ -806,6 +813,9 @@
 	armor_penetration = 0
 	desc = "A good-quality handmade aerodinamic arrow, with a metal head and plastic fletching. This one has wicked sharp serrated blades along its head, letting it stick in wounds easily, penetrating thick hide and armor alike at fast speeds."
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/serrated
+
+/obj/item/ammo_casing/arrow/serrated/bulk
+	amount = 5
 
 /obj/item/ammo_casing/arrow/reagent
 	name = "vial arrow"

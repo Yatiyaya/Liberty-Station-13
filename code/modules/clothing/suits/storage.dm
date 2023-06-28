@@ -905,8 +905,6 @@ obj/item/clothing/suit/storage/toggle/peacoat
 		bio = 0,
 		rad = 0)
 
-/obj/item/clothing/suit/storage/puffy
-
 /*Helltaker drip - Seb*/
 /obj/item/clothing/suit/storage/wcoat/helltaker // Refactoring waistcoat stats into this one as it's meant to be more a worn suit than an attachable waistcoat. - Seb
 	name = "charming waistcoat"
@@ -1228,6 +1226,18 @@ obj/item/clothing/suit/sweater/blue
 	item_state = "black_trench"
 	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/toggle/afghanka
+	name = "tan afghanka"
+	desc = "A warm, comfortable afghanka jacket for combat operations in tan colors. Usually accompanied by combat pants as part of a standard uniform."
+	icon_state = "afghanka_open"
+	item_state = "afghanka_open"
+	icon_open = "afghanka_open"
+	icon_closed = "afghanka_closed"
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+// Costumes and references
 
 /obj/item/clothing/suit/storage/suitjacket/livesey // The word Rum and the word Death should mean the same to you. - Seb
 	name = "Naval Surgeon jacket"

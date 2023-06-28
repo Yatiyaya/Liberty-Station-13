@@ -168,6 +168,9 @@
 	var/mob/living/silicon/robot/R = parentmob
 	icon_state = lowertext(R.modtype)
 
+	//Small sanity so we dont get nulled
+	if(!icon_state)
+		icon_state = "nomod"
 
 
 /obj/screen/silicon/glasses_overlay

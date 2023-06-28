@@ -18,7 +18,7 @@
 
 /datum/chemical_reaction/lively_concoxion
 	result = "lively_concoxion"
-	required_reagents = list("detox" = 1, "viroputine" = 1, "citalopram" = 1)
+	required_reagents = list("detox" = 1, "virusfood" = 1, "citalopram" = 1)
 	result_amount = 1
 	require_containers = list(/obj/item/reagent_containers/glass/beaker/flask_alchemy)
 

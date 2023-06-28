@@ -364,6 +364,29 @@
 /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/feed_sound(var/mob/user)
 	playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1)
 
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/On_Consume(var/mob/eater, var/mob/feeder = null)
+	if(!reagents.total_volume)
+		eater.visible_message(
+			SPAN_NOTICE("[eater] finishes drinking \the [src]."),
+			SPAN_NOTICE("You finish drinking \the [src].")
+		)
+
+		if (!feeder)
+			feeder = eater
+
+		feeder.drop_from_inventory(src)
+
+		if(trash)
+			if(ispath(trash,/obj/item))
+				var/obj/item/TrashItem = new trash(feeder)
+				if(isanimal(feeder))
+					TrashItem.forceMove(loc)
+				else
+					feeder.put_in_hands(TrashItem)
+			else if(istype(trash,/obj/item))
+				feeder.put_in_hands(trash)
+		qdel(src)
+
 /obj/item/reagent_containers/food/snacks/openable/candy/os
 	desc = "SR branded non-melting chocolate."
 	alt_desc = "SR branded non-melting chocolate. This one is open, and still unmelted."
@@ -549,7 +572,7 @@
 
 		if("soylent_apple")
 			desc = "A SR SoyPack, this one has added green apple flavouring."
-			alt_desc = "A SR SoyPack, this one has added green apple flavour. The smell of cinnamon is stronger then apple..."
+			alt_desc = "A SR SoyPack, this one has added green apple flavour. The smell of cinnamon is stronger than apple..."
 			icon_state = "soylent_apple"
 			icon_pointer = "soylent_apple"
 			preloaded_reagents = list("soymilk" = 3, "cinnamonpowder" = 2, "milk" = 5)

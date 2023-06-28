@@ -296,7 +296,7 @@
 		to_chat(user, "This book is completely blank!")
 
 /obj/item/book/attackby(obj/item/I, mob/user)
-	if(istype(src, /obj/item/book/ritual/cruciform))
+	if(istype(src, /obj/item/book/ritual/hearthlantern))
 		..()
 		return
 

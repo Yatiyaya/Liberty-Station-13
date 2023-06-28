@@ -74,10 +74,9 @@
 				/obj/item/tool/nailstick/ogre = 1,
 				/obj/item/tool/wrench/big_wrench/freedom = 1,
 				/obj/item/tool/saw/hyper/doombringer = 1,
-				/obj/item/material/butterfly/frenchman = 1,
+				/obj/item/clothing/gloves/dusters/berserk_pack = 1,
 				//Misc - things that are not a "gun" but still good for this
-				/* /obj/item/oddity/nt/seal = 1, */ // No.
-				/obj/item/soap/bluespase = 0.5))
+				/obj/item/soap/bluespace = 0.5))
 
 /obj/random/uplink/low_chance
 	name = "really really really low chance random uplink"

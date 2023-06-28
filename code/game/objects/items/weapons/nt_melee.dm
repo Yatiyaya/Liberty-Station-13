@@ -310,7 +310,7 @@
 		/obj/item/tool/sword/custodian/shortsword,
 		/obj/item/tool/sword/custodian/throwaxe,
 		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/book/ritual/cruciform,
+		/obj/item/book/ritual/hearthlantern,
 		)
 
 /obj/item/shield/riot/custodian/New()
@@ -371,7 +371,7 @@
 		/obj/item/tool/sword/custodian/shortsword,
 		/obj/item/tool/sword/custodian/throwaxe, //Romans would have these with their shield to ware down their foe
 		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/book/ritual/cruciform
+		/obj/item/book/ritual/hearthlantern
 		)
 
 /obj/item/shield/buckler/custodian/New()

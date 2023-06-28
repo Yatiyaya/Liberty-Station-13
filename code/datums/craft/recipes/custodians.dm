@@ -268,7 +268,7 @@
 		list(/obj/item/stack/mold_kit/tailoring, 1),
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 1),
-		list(/obj/item/book/ritual/cruciform, 1),
+		list(/obj/item/book/ritual/hearthlantern, 1),
 		list(QUALITY_HAMMERING, 30, "time" = 10),
 	)
 

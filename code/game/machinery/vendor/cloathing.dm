@@ -69,6 +69,19 @@
 					/obj/item/clothing/mask/gas/colony = 2,
 					/obj/item/clothing/mask/gas/big_shot = 2
 					)
+
+	contraband = list(
+					/obj/item/handcuffs/fuzzy = 5,
+					/obj/item/clothing/suit/costume/kinky/alyson = 5,
+					/obj/item/clothing/under/costume/kinky/sexy_clown = 5,
+					/obj/item/clothing/under/costume/kinky/latex_maid = 5,
+					/obj/item/clothing/under/costume/kinky/leather = 5,
+					/obj/item/clothing/under/costume/kinky/sexy_mime = 5,
+					/obj/item/clothing/under/costume/kinky/hadakapron = 5,
+					/obj/item/clothing/under/costume/kinky/stripper_green = 5,
+					/obj/item/clothing/under/costume/kinky/stripper_pink = 5
+					)
+
 	prices = list(/obj/item/storage/box/costume/bandit = 100,
 					/obj/item/storage/box/costume/bunny = 100,
 					/obj/item/storage/box/costume/cardborg = 100,
@@ -131,7 +144,17 @@
 					/obj/item/clothing/mask/gas/hox = 50,
 					/obj/item/clothing/mask/gas/cha = 50,
 					/obj/item/clothing/mask/gas/colony = 25,
-					/obj/item/clothing/mask/gas/big_shot = 25)
+					/obj/item/clothing/mask/gas/big_shot = 25,
+					// Contraband
+					/obj/item/handcuffs/fuzzy = 50,
+					/obj/item/clothing/suit/costume/kinky/alyson = 100,
+					/obj/item/clothing/under/costume/kinky/sexy_clown = 100,
+					/obj/item/clothing/under/costume/kinky/latex_maid = 100,
+					/obj/item/clothing/under/costume/kinky/leather = 100,
+					/obj/item/clothing/under/costume/kinky/sexy_mime = 100,
+					/obj/item/clothing/under/costume/kinky/hadakapron = 100,
+					/obj/item/clothing/under/costume/kinky/stripper_green = 100,
+					/obj/item/clothing/under/costume/kinky/stripper_pink = 100)
 
 /obj/machinery/vending/style
 	name = "Style Vendor"
