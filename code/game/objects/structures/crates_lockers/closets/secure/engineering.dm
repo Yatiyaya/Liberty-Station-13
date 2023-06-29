@@ -40,6 +40,9 @@
 	new /obj/item/hand_labeler(src)
 	new /obj/item/storage/briefcase(src)
 	new /obj/item/storage/lunchbox(src)
+	new /obj/item/clothing/head/helmet/space/void/union/chief_helmet
+	new /obj/item/clothing/suit/space/void/union/chief_suit
+
 
 /obj/structure/closet/secure_closet/engineering_electrical
 	name = "electrical supplies"
@@ -107,6 +110,7 @@
 	new /obj/item/device/t_scanner/advanced(src)
 	new /obj/item/storage/hcases/parts(src)
 	new /obj/item/storage/hcases/engi(src)
-	new /obj/item/storage/pouch/engineering_tools(src)
 	new /obj/item/storage/belt/utility/full/union(src)
 	new /obj/item/rpd(src)
+	new /obj/item/clothing/head/helmet/space/void/union
+	new /obj/item/clothing/suit/space/void/union
