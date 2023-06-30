@@ -27,10 +27,10 @@
 	var/turf/Tsrc = get_turf(src)
 	if(Tsrc)
 		Tsrc.ChangeTurf(change_floor_to_path)
+		new /atom/movable/lighting_overlay(src.loc)
 	if(loc)
 		new change_floor_to_path(src.loc)
-
-	new /atom/movable/lighting_overlay(src.loc)
+		new /atom/movable/lighting_overlay(src.loc)
 	return
 
 /obj/effect/flooring_type_spawner/proc/activate()
