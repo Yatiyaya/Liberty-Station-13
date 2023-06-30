@@ -348,7 +348,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/extra_pay
 	name = "Valued Employee"
-	desc = "Do to one reason or another like, hard work, \negotiations, nepotism, ect you earn about 30% more incom then your fellow peers."
+	desc = "Do to one reason or another like, hard work, negotiations, nepotism, ect you earn about 30% more incom then your fellow peers."
 	gain_text = "You feel comforted, knowing the amount of money coming your way."
 	icon_state = "nepotism"
 
