@@ -7,7 +7,7 @@
 	var/change_floor_to_path = /turf/simulated/floor/plating/under
 	var/activated = FALSE
 
-/obj/effect/flooring_type_spawner/Initialize()
+/obj/effect/flooring_type_spawner/Initialize(mapload)
 	. = ..()
 	if(!change_floor_to_path)
 		return
