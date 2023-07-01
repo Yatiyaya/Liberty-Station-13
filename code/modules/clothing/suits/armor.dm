@@ -318,7 +318,7 @@
 	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 25, bullet = 25, energy = 25, bomb = 30, bio = 100, rad = 100)
+	armor_list = list(melee = 35, bullet = 30, energy = 30, bomb = 50, bio = 100, rad = 100)
 	max_upgrades = 2
 	extra_allowed = list(/obj/item/extinguisher,
 						 /obj/item/tool,
