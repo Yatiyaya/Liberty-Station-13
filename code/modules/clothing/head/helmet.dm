@@ -439,7 +439,7 @@
 	desc = "You feel like this helmet is rare, for some reason."
 	icon_state = "union worker hat"
 	item_state = "union worker hat"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 60, bio = 100, rad = 100)
+	armor_list = list(melee = 25, bullet = 25, energy = 25, bomb = 30, bio = 100, rad = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	flash_protection = FLASH_PROTECTION_MODERATE

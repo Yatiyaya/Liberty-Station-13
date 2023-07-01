@@ -29,8 +29,8 @@
 	new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
-	new /obj/item/clothing/suit/space/void/union/heavy_tminer_suit
-	new /obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet
+	new /obj/item/clothing/suit/space/void/union/tminer_suit(src)
+	new /obj/item/clothing/head/helmet/space/void/union/tminer_helmet(src)
 
 /******************************Lantern*******************************/
 

@@ -40,8 +40,8 @@
 	new /obj/item/hand_labeler(src)
 	new /obj/item/storage/briefcase(src)
 	new /obj/item/storage/lunchbox(src)
-	new /obj/item/clothing/head/helmet/space/void/union/chief_helmet
-	new /obj/item/clothing/suit/space/void/union/chief_suit
+	new /obj/item/clothing/head/helmet/space/void/union/chief_helmet(src)
+	new /obj/item/clothing/suit/space/void/union/chief_suit(src)
 
 
 /obj/structure/closet/secure_closet/engineering_electrical
@@ -112,5 +112,5 @@
 	new /obj/item/storage/hcases/engi(src)
 	new /obj/item/storage/belt/utility/full/union(src)
 	new /obj/item/rpd(src)
-	new /obj/item/clothing/head/helmet/space/void/union
-	new /obj/item/clothing/suit/space/void/union
+	new /obj/item/clothing/head/helmet/space/void/union(src)
+	new /obj/item/clothing/suit/space/void/union(src)

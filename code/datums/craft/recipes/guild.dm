@@ -299,18 +299,52 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60)
 	)
 
-/datum/craft_recipe/terra/union_suit//this is the armor made from 0, every other protection suit is made from this one but with different colours and maybe upgraded to protect more
+//Base union suit that all suits are crafted from
+/datum/craft_recipe/terra/technosuit
+	name = "'Mark V' environmental protection suit"
+	result = /obj/item/clothing/suit/armor/vest/technomancersuit
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 40),
+		list(QUALITY_HAMMERING, 45, "time" = 40),
+		list(/obj/item/stack/cable_coil, 15, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 30),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
+	)
+
+/datum/craft_recipe/terra/technohelmet
+	name = "'Mark V' environmental protection helmet"
+	result = /obj/item/clothing/head/helmet/technomancersuit
+	icon_state = "clothing"
+	steps = list(
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
+		list(QUALITY_SAWING, 35, "time" = 60),
+		list(QUALITY_WELDING, 40, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 40),
+		list(QUALITY_HAMMERING, 45, "time" = 40),
+		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS, "time" = 20),
+		list(/obj/item/stack/cable_coil, 15, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 30),
+		list(QUALITY_BOLT_TURNING, 35, "time" = 40),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 60)
+	)
+
+/datum/craft_recipe/terra/union_suit
 	name = "Terra Engineer Protection Suit"
 	result = /obj/item/clothing/suit/space/void/union
 	icon_state = "clothing"
 	steps = list(
-		list(/obj/item/clothing/suit/space/void/riggedvoidsuit, 1, "time" = 20),
+		list(/obj/item/clothing/suit/armor/vest/technomancersuit, 1, "time" = 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 5),
 		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
-		list(/obj/item/clothing/head/space/void/riggedvoidsuit, 1, "time" = 20),
+		list(/obj/item/clothing/head/helmet/technomancersuit, 1, "time" = 20),
 		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 5),
 		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, "time" = 5),
 		list(/obj/item/device/lighting/toggleable/flashlight/heavy, 1, "time" = 20),
@@ -326,7 +360,7 @@
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
-			list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 35, "time" = 10),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),//someone forgot that the union can't craft melee armor upgrades
@@ -340,10 +374,12 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 5),//idk why it requires materials since is the same armor but with different colours
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 35, "time" = 10),
 		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
+		list(/obj/item/gun_upgrade/tacticool_flashlight, 1, "time" = 20),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
 	)
