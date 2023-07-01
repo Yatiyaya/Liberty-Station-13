@@ -56,7 +56,7 @@
 	desc = "You were or perhaps still are an investor and entrepreneur. \
 	This leaves you with extra income from other sources."
 
-	perks = list(PERK_NEPOTISM) //You have defended the free market one too many times Harry, you are getting political again.
+	perks = list(PERK_EXTRA_PAY) //You have defended the free market one too many times Harry, you are getting political again.
 
 	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5, STAT_COG = 10)
 

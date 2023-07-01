@@ -7,7 +7,7 @@
 	var/change_floor_to_path = /turf/simulated/floor/plating/under
 	var/activated = FALSE
 
-/obj/effect/flooring_type_spawner/Initialize()
+/obj/effect/flooring_type_spawner/Initialize(mapload)
 	. = ..()
 	if(!change_floor_to_path)
 		return
@@ -27,8 +27,10 @@
 	var/turf/Tsrc = get_turf(src)
 	if(Tsrc)
 		Tsrc.ChangeTurf(change_floor_to_path)
+		new /atom/movable/lighting_overlay(src.loc)
 	if(loc)
 		new change_floor_to_path(src.loc)
+		new /atom/movable/lighting_overlay(src.loc)
 	return
 
 /obj/effect/flooring_type_spawner/proc/activate()

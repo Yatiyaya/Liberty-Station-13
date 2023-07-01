@@ -34,7 +34,7 @@
 #define PERK_LESS_FEELING /datum/perk/less_feeling
 
 //Wage Perks
-#define PERK_NEPOTISM /datum/perk/background/nepotism
+#define PERK_EXTRA_PAY /datum/perk/background/extra_pay
 #define PERK_DEBTOR /datum/perk/background/debtor
 
 //Genetics Perks
