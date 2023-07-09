@@ -11,6 +11,11 @@
 	affective_damage_range = 1
 	affective_ap_range = 1
 
+/obj/item/projectile/bullet/rock/ice
+	name = "sharp ice"
+	damage_types = list(BRUTE = 18)
+	var/temperature = 200
+
 /obj/item/projectile/bullet/spear
 	name = "rock fragements"
 	damage_types = list(BRUTE = 24) //Same as a .40
