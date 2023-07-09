@@ -81,7 +81,7 @@
 	move_to_delay = 7
 
 /mob/living/carbon/superior_animal/liberty/oculamia
-	name = "antagonized Oculamia"
+	name = "antagonized creature"						//Medi suggested this be unnamed for now
 	desc = "A strange serpentoid creature with three visible arms topped with curved hard tips, its fourth arm is broken off or otherwise malformed."
 	icon_state = "oculamia"
 	icon_dead = "oculamia_dead"
@@ -100,8 +100,8 @@
 	move_to_delay = 7
 
 /mob/living/carbon/superior_animal/liberty/corrupted_pirs
-	name = "corrupted PIRS Neurophyta"
-	desc = "A strange amalgimation of flesh and machine, sporting pieces of what looks like an PIRS employee merged with one of their own scientific creations."
+	name = "Polluted PIRS scientist"
+	desc = "An unknown amalgamation of flesh and exotic flora, the corpse seemingly belonging to an PIRS employee. The flora completely took over the scientist's brain, replacing it with a scythe-like blade made of bones."
 	icon_state = "neurophyta_pirs"
 	icon_dead = "neurophyta_pirs_dead"
 	attacktext = "slashed"
@@ -114,8 +114,8 @@
 	health = 125
 
 /mob/living/carbon/superior_animal/liberty/corrupted_watch
-	name = "corrupted Watchman Neurophyta"
-	desc = "A strange amalgimation of flesh, sporting pieces of what looks like an member of the colony's Watch. Albiet near bursting from its armor with the strange new flesh it sports."
+	name = "Polluted  Watchman Neurophyta"
+	desc = "A strange amalgamation of flesh and exotic flora, the body seemingly belonging to an member of the Colony's watch. Whatever may be taking over the body of this man or woman, it somehow takes advantage of the user's experience with guns."
 	icon_state = "neurophyta_watch"
 	icon_dead = "neurophyta_watch_dead"
 
@@ -128,8 +128,8 @@
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 
 /mob/living/carbon/superior_animal/liberty/corrupted_fontaine
-	name = "corrupted Fontaine Neurophyta"
-	desc = "A strange amalgimation of flesh, sporting pieces of what looks like an employee of Fontaine. Its right arm has grown massively in size while its left has become limp!"
+	name = "Polluted Fontaine Neurophyta"
+	desc = "An unknown amalgamation of flesh and exotic flora, the corpse seemingly belonging to an fontaine employee. The right arm was absorbed and enlarged beyond recognition, putting too much weight on the entire body."
 	icon_state = "neurophyta_fontaine"
 	icon_dead = "neurophyta_fontaine_dead"
 
@@ -143,8 +143,8 @@
 	move_to_delay = 6
 
 /mob/living/carbon/superior_animal/liberty/corrupted_custodian
-	name = "corrupted Custodian turret"
-	desc = "A strange amalgimation of flesh over atop a still burning Custodian turret. This mutated creature taking hold of the turret appears to let it move some; but more importatly re-program the turret!"
+	name = "Polluted DarkSilver Turret"
+	desc = "A  strange amalgamation of flesh and exotic flora, the corpse belonging to a Custodian knight or Dark Silver armored mercenary. The Hearthcore of the deceased tries to fight back against the usurper, reflecting blue plasma everywhere. There is no brain control as far you can see."
 	icon_state = "neurophyta_custodianturret"
 	icon_dead = "neurophyta_custodianturret_dead"
 
