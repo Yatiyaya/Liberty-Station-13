@@ -100,7 +100,7 @@
 	move_to_delay = 7
 
 /mob/living/carbon/superior_animal/liberty/corrupted_pirs
-	name = "Polluted PIRS scientist"
+	name = "Pollinated PIRS scientist"
 	desc = "An unknown amalgamation of flesh and exotic flora, the corpse seemingly belonging to an PIRS employee. The flora completely took over the scientist's brain, replacing it with a scythe-like blade made of bones."
 	icon_state = "neurophyta_pirs"
 	icon_dead = "neurophyta_pirs_dead"
@@ -114,7 +114,7 @@
 	health = 125
 
 /mob/living/carbon/superior_animal/liberty/corrupted_watch
-	name = "Polluted  Watchman Neurophyta"
+	name = "Pollinated  Watchman Neurophyta"
 	desc = "A strange amalgamation of flesh and exotic flora, the body seemingly belonging to an member of the Colony's watch. Whatever may be taking over the body of this man or woman, it somehow takes advantage of the user's experience with guns."
 	icon_state = "neurophyta_watch"
 	icon_dead = "neurophyta_watch_dead"
@@ -128,7 +128,7 @@
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 
 /mob/living/carbon/superior_animal/liberty/corrupted_fontaine
-	name = "Polluted Fontaine Neurophyta"
+	name = "Pollinated Fontaine Neurophyta"
 	desc = "An unknown amalgamation of flesh and exotic flora, the corpse seemingly belonging to an fontaine employee. The right arm was absorbed and enlarged beyond recognition, putting too much weight on the entire body."
 	icon_state = "neurophyta_fontaine"
 	icon_dead = "neurophyta_fontaine_dead"
@@ -143,7 +143,7 @@
 	move_to_delay = 6
 
 /mob/living/carbon/superior_animal/liberty/corrupted_custodian
-	name = "Polluted DarkSilver Turret"
+	name = "Pollinated DarkSilver Turret"
 	desc = "A  strange amalgamation of flesh and exotic flora, the corpse belonging to a Custodian knight or Dark Silver armored mercenary. The Hearthcore of the deceased tries to fight back against the usurper, reflecting blue plasma everywhere. There is no brain control as far you can see."
 	icon_state = "neurophyta_custodianturret"
 	icon_dead = "neurophyta_custodianturret_dead"
