@@ -310,6 +310,3 @@ proc/n_ceil(var/num)
 	// means that one unit is 1 kJ.
 	return display_joules(energy_to_joules(units) WATTS)
 
-//Liberty maths
-#define ISEVEN(x) !((x) % 2)
-#define ISODD(x)   ((x) % 2)
