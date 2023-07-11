@@ -342,6 +342,17 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.sanity.positive_prob -= 20
 	..()
 
+
+/////////////////
+/* Misc Perks */
+/////////////////
+
+/datum/perk/no_obsucation
+	name = "Ranked Skills"
+	desc = "Unlike most people you can fully visulise your states, giving them a more to your understanding grasp."
+	icon_state = "obsucation_ranking"
+
+
 /////////////////
 /* Money Perks */
 /////////////////
