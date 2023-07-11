@@ -281,7 +281,7 @@
 			return "Hopeless"
 		if (-50 to -25)
 			return "Inept"
-		if (-25 to STAT_LEVEL_NONE)
+		if (-25 to -1)
 			return "Missenformed"
 		if (STAT_LEVEL_NONE to STAT_LEVEL_BASIC)
 			return "Untrained"

@@ -86,7 +86,7 @@
 
 		else
 			to_chat(occupant, SPAN_NOTICE("You did become stronger, you think... But not permanently. Perhaps you need to rest first?"))
-			occupant.stats.addTempStat(stat_used, 15, 10 MINUTES)
+			occupant.stats.addTempStat(stat_used, 15, 10 MINUTES, "Improved Guns[generate_gun_serial(pick(3,4,5,6,7,8))]") //This is so that we properly add are temp stats - reuses gun serial code for easy, and the joke
 			occupant.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/gym_goer, "GYM_GOER", skill_gained = 1, learner = occupant)
 
 		last_stats = occupant.stats.getStat(stat_used,pure = TRUE)
@@ -155,6 +155,33 @@
 		occupant_image.overlays = occupant.overlays
 		add_overlay (occupant_image)
 		icon_state = "vigilance_active"
+
+/obj/machinery/gym/cognition/update_icon() // Vigilance animation
+	cut_overlays()
+	icon_state = (stat & (NOPOWER|BROKEN)) ? "cognition_off" : "cognition"
+	if(occupant)
+		var/image/occupant_image = image(occupant.icon, loc, occupant.icon_state, 4, NORTH)
+		occupant_image.overlays = occupant.overlays
+		add_overlay (occupant_image)
+		icon_state = "cognition_active"
+
+/obj/machinery/gym/bio/update_icon() // Vigilance animation
+	cut_overlays()
+	icon_state = (stat & (NOPOWER|BROKEN)) ? "bio_off" : "bio"
+	if(occupant)
+		var/image/occupant_image = image(occupant.icon, loc, occupant.icon_state, 4, NORTH)
+		occupant_image.overlays = occupant.overlays
+		add_overlay (occupant_image)
+		icon_state = "bio_active"
+
+/obj/machinery/gym/mec/update_icon() // Vigilance animation
+	cut_overlays()
+	icon_state = (stat & (NOPOWER|BROKEN)) ? "mec_off" : "mec"
+	if(occupant)
+		var/image/occupant_image = image(occupant.icon, loc, occupant.icon_state, 4, NORTH)
+		occupant_image.overlays = occupant.overlays
+		add_overlay (occupant_image)
+		icon_state = "mec_active"
 
 /obj/machinery/gym/toughness/update_icon() // Toughness animation
 	cut_overlays()

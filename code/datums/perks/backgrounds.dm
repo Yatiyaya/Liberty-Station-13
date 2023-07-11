@@ -348,8 +348,10 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /////////////////
 
 /datum/perk/no_obsucation
-	name = "Ranked Skills"
-	desc = "Unlike most people you can fully visulise your states, giving them a more to your understanding grasp."
+	name = "Exact Values"
+	desc = "Unlike most people you can fully visulise your states, giving them a more to your understanding grasp. \
+	This is with addition to knowing how likely you are to fail after failing some tasks. \
+	This does not give you detailed view of wounds or other medical issues."
 	icon_state = "obsucation_ranking"
 
 
