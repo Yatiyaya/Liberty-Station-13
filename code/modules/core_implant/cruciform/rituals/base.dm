@@ -1,5 +1,5 @@
 /datum/ritual/cruciform/base
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	fail_message = "The Hearthcore feels cold against your chest."
@@ -7,7 +7,7 @@
 	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
 /datum/ritual/targeted/cruciform/base
-	name = "cruciform targeted"
+	name = "Hearthcore targeted"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Common"

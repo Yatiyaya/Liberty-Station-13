@@ -838,12 +838,12 @@
 			silent = 0
 			return 1
 		if(health <= death_threshold) //No health = death
-			if(stats.getPerk(PERK_LAZARUS_PROTOCOL) && prob(33)) //Unless you have this perk
+			if(stats.getPerk(PERK_PHOENIX) && prob(33)) //Unless you have this perk
 				heal_organ_damage(20, 20)
 				adjustOxyLoss(-100)
 				AdjustSleeping(rand(20,30))
 				updatehealth()
-				stats.removePerk(PERK_LAZARUS_PROTOCOL)
+				stats.removePerk(PERK_PHOENIX)
 				learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
 			else
 				death()

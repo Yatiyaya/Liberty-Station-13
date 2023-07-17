@@ -4,72 +4,6 @@
 	related_stats = list(STAT_COG)
 	requiredPerk = PERK_ROBOTICS_EXPERT // Research Provost and Roboticist can craft these
 
-
-//Shields and Armor Mods | Gonna be expanded on later
-/datum/craft_recipe/pirs/melee
-	name = "melee plating"
-	result = /obj/item/tool_upgrade/armor/melee
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
-		list(QUALITY_WELDING, 35, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 35, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/pirs/bullet
-	name = "ballistic plating"
-	result = /obj/item/tool_upgrade/armor/bullet
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC , "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 20),
-		list(QUALITY_WELDING, 35, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_SCREW_DRIVING, 35, "time" = 90),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/pirs/energy
-	name = "energy plating"
-	result = /obj/item/tool_upgrade/armor/energy
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLATINUM, "time" = 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC , "time" = 30),
-		list(QUALITY_WELDING, 35, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 35, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
-/datum/craft_recipe/pirs/bomb
-	name = "bomb proofing"
-	result = /obj/item/tool_upgrade/armor/bomb
-	icon_state = "clothing"
-	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
-		list(QUALITY_WELDING, 35, "time" = 60),
-		list(QUALITY_CUTTING, 30, "time" = 180),
-		list(QUALITY_HAMMERING, 30, "time" = 180),
-		list(QUALITY_SCREW_DRIVING, 35, "time" = 90),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
-		list(QUALITY_SAWING, 30, "time" = 60)
-	)
-
 /datum/craft_recipe/pirs/bastion
 	name = "Bastion Shield"
 	result = /obj/item/shield/riot/bastion
@@ -82,97 +16,66 @@
 	list(QUALITY_HAMMERING, 45, "time" = 40),
 	list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30)
 	)
-//Gun Mods
-/datum/craft_recipe/pirs/weintraub
-	name = "\"Hurricane\" full auto kit"
-	result = /obj/item/gun_upgrade/mechanism/weintraub
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_SCREW_DRIVING, 25, "time" = 90)
-	)
 
-/datum/craft_recipe/pirs/overshooter
-	name = "\"Overshooter\" internal magazine kit"
-	result = /obj/item/gun_upgrade/mechanism/overshooter
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_SCREW_DRIVING, 25, "time" = 90)
-	)
+// High-end toolmods
+// These are no longer researched, just handcrafted.
 
-/datum/craft_recipe/pirs/dangerzone
-	name = "\"Danger Zone\" Trigger"
-	result = /obj/item/gun_upgrade/trigger/dangerzone
-	icon_state = "gun"
+/datum/craft_recipe/pirs/booster
+	name = "Booster"
+	result = /obj/item/tool_upgrade/productivity/booster
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
-	)
-
-/datum/craft_recipe/pirs/forged
-	name = "Reinforced Barrel"
-	result = /obj/item/gun_upgrade/barrel/forged
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
+		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+		list(QUALITY_HAMMERING, 30, "time" = 40),
+		list(/obj/item/circuitboard, 1),
+		list(QUALITY_SCREW_DRIVING, 25, "time" = 90),
+		list(/obj/item/stack/cable_coil, 5, "time" = 30),
+		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
+		list(/obj/item/stock_parts/micro_laser/ultra, 1, "time" = 30),
+		list(QUALITY_PULSING, 15, "time" = 30),
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
+		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 30),
+		list(QUALITY_BOLT_TURNING, 20, "time" = 40)
 	)
 
-/datum/craft_recipe/pirs/heavy_barrel
-	name = "Heavy barrel"
-	result = /obj/item/gun_upgrade/barrel/bore
-	icon_state = "gun"
+/datum/craft_recipe/pirs/plasma_inject
+	name = "plasma injector"
+	result = /obj/item/tool_upgrade/productivity/injector
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(QUALITY_DRILLING, 60, "time" = 90),
-		list(/obj/item/tool_upgrade/refinement/ported_barrel, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 30),
+		list(QUALITY_DRILLING, 30, "time" = 40),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+		list(QUALITY_HAMMERING, 30, "time" = 40),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30),
+		list(QUALITY_WELDING, 30, "time" = 40),
+		list(/obj/item/stock_parts/capacitor/super, 1, "time" = 30),
+		list(QUALITY_SCREW_DRIVING, 25, "time" = 90),
+		list(QUALITY_PULSING, 15, "time" = 30),
+		list(/obj/item/stack/cable_coil, 5, "time" = 30),
+		list(QUALITY_WIRE_CUTTING, 30, "time" = 10)
 	)
 
-/datum/craft_recipe/pirs/silencer
-	name = "Silencer"
-	result = /obj/item/gun_upgrade/muzzle/silencer
-	icon_state = "gun"
+/datum/craft_recipe/pirs/rocket_engine
+	name = "rocket engine"
+	result = /obj/item/tool_upgrade/productivity/rocket_engine
+	icon_state = "electronic"
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
-		list(QUALITY_SAWING, 30, "time" = 60),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_CUTTING, 25, "time" = 90)
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 20),
+		list(QUALITY_CUTTING, 30, "time" = 40),
+		list(QUALITY_HAMMERING, 30, "time" = 40),
+		list(/obj/item/stack/cable_coil, 10, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 40, 30),
+		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
+		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
+// NV scope. Really high tech. Requires an ACOG and borosilicate.
 /datum/craft_recipe/pirs/watchman
 	name = "PIRS \"All Seeing\" scope"
 	result = /obj/item/gun_upgrade/scope/watchman
 	icon_state = "gun"
 	steps = list(
+		list(/obj/item/gun_upgrade/scope/acog, 1), // So we rely upon Watch or a sec disk to make
 		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),

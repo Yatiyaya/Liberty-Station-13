@@ -195,7 +195,7 @@
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "cb" = (
-/mob/living/simple_animal/hostile/madminer/cultist,
+/mob/living/carbon/superior_animal/human/lighteater_cultist,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
@@ -570,8 +570,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "gz" = (
 /obj/structure/table/woodentable,
-/obj/item/organ/internal/blood_vessel,
-/obj/item/organ/internal/bone,
+/obj/item/organ/internal/nerve/sensitive_nerve,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "gB" = (
@@ -671,6 +670,7 @@
 "hu" = (
 /obj/structure/table/woodentable,
 /obj/item/organ/internal/bone/chest,
+/obj/item/organ/internal/lungs/long,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "hw" = (
@@ -1329,7 +1329,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "oL" = (
 /obj/structure/table/woodentable,
-/obj/item/organ/internal/heart,
+/obj/item/organ/internal/heart/huge,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
@@ -1349,6 +1349,10 @@
 /obj/structure/flora/tree/snow/four,
 /turf/unsimulated/wall/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"oX" = (
+/mob/living/carbon/superior_animal/human/lighteater_cultist/ranged,
+/turf/simulated/floor/wood_old,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "pc" = (
 /obj/structure/flora/tree/snow/two,
 /obj/structure/invislight/outside,
@@ -1463,7 +1467,6 @@
 	name = "Strange Alter"
 	},
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/item/organ/internal/blood_vessel,
 /obj/item/modification/organ/internal/special/on_item_examine/brainloss,
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/dungeon/outside/abandoned_outpost)
@@ -1792,6 +1795,8 @@
 /obj/item/gun/projectile/makarov/preloaded,
 /obj/item/gun/projectile/makarov/preloaded,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/noslipmodule,
+/obj/item/noslipmodule,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper)
 "tx" = (
@@ -2188,7 +2193,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "xn" = (
-/mob/living/simple_animal/hostile/madminer/cultist,
+/mob/living/carbon/superior_animal/human/lighteater_cultist,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "xo" = (
@@ -2653,7 +2658,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "Cm" = (
 /obj/structure/table/woodentable,
-/obj/item/organ/internal/appendix,
+/obj/item/organ/internal/stomach/improved,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Co" = (
@@ -2844,9 +2849,8 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/prepper/vault/floor1)
 "EE" = (
-/obj/item/organ/internal/blood_vessel,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood_old,
+/mob/living/carbon/superior_animal/human/lighteater_cultist/ranged,
+/turf/simulated/floor/industrial/ornate,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "EF" = (
 /obj/structure/table/bench/steel,
@@ -4021,6 +4025,7 @@
 "Qm" = (
 /obj/structure/table/woodentable,
 /obj/item/organ/internal/bone/l_arm,
+/obj/item/organ/internal/muscle/super_muscle,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Qn" = (
@@ -17622,7 +17627,7 @@ na
 na
 na
 dO
-xn
+oX
 GF
 GF
 ts
@@ -17831,7 +17836,7 @@ HG
 sF
 HG
 RI
-EE
+HG
 HG
 HG
 dO
@@ -18434,11 +18439,11 @@ HG
 GF
 GF
 dO
-xn
+oX
 GF
 HG
 GF
-xn
+oX
 HG
 gz
 dO
@@ -19045,7 +19050,7 @@ HG
 GF
 GF
 It
-fO
+GF
 GF
 fP
 zW
@@ -20654,7 +20659,7 @@ ra
 qi
 ra
 fp
-ra
+EE
 ra
 kV
 Bl

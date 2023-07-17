@@ -78,6 +78,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			continue
 		listed_components += list("[blueprint.materials[placeholder]] [initial(placeholder.name)]")
 	to_chat(user, SPAN_NOTICE("[blueprint.name] requires: [english_list(listed_components)]."))
+	to_chat(user, SPAN_NOTICE("It is constructed through a [blueprint.manifestation_tier] Manifestation lecture."))
 	return TRUE
 
 /datum/ritual/cruciform/forgemaster/deconstruction
@@ -291,6 +292,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	var/build_path
 	var/list/materials
 	var/build_time = 3 SECONDS
+	var/manifestation_tier = "Weak" // What tier of manifest lecture are we?
 
 /datum/custodian_blueprint/weak
 
@@ -364,6 +366,44 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 5 SECONDS
 
 /datum/custodian_blueprint/medium
+	manifestation_tier = "Medium"
+
+/datum/custodian_blueprint/medium/melee_armor
+	name = "Carbon Fiber Melee Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/melee
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 60
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/ballistic_armor
+	name = "Silk Polymer Bullet Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/bullet
+	materials = list(
+		/obj/item/stack/material/biopolymer_silk = 40,
+		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/plastic = 10
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/energy_armor
+	name = "Dark Silver Energy Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/energy
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 30,
+		/obj/item/stack/material/biopolymer_silk = 15,
+		/obj/item/stack/material/plastic = 15
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/fireproof_armor
+	name = "Fire and Pressure Proof Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/fireproofing
+	materials = list(
+		/obj/item/stack/material/biopolymer_silk = 30,
+		/obj/item/stack/material/biomatter = 30
+	)
+	build_time = 20 SECONDS
 
 /datum/custodian_blueprint/medium/door_common
 	name = "Common Hatchway"
@@ -441,7 +481,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/steel = 2,
 		/obj/item/stack/material/silver = 5,
 		/obj/item/stack/material/glass = 4,
-		/obj/item/stack/cable_coil = 30 //! TODO: proper recipe
+		/obj/item/stack/cable_coil = 30
 	)
 	build_time = 7 SECONDS
 
@@ -538,6 +578,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 8 SECONDS
 
 /datum/custodian_blueprint/strong
+	manifestation_tier = "strong"
 
 /datum/custodian_blueprint/strong/flarelathe_upgrade
 	name = "Enhanced Flarelathe"

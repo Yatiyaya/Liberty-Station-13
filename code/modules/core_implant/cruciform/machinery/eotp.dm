@@ -174,7 +174,7 @@ var/global/obj/machinery/power/eotp/eotp
 				H.adjustOxyLoss(-50)
 				H.adjustBruteLoss(-15)
 				H.adjustFireLoss(-15)
-				to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your cruciform does a quick routine maintenance, patching any potential minor wounds across your body."))
+				to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your Hearthcore does a quick routine maintenance, patching any potential minor wounds across your body."))
 /*
 	else if(type_release == ODDITY)
 		var/oddity_reward = pick(subtypesof(/obj/item/oddity/nt))

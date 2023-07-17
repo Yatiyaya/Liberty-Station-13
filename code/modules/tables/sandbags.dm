@@ -1,16 +1,20 @@
-// Are these technically a table? No. This should be relocated somewhere else at some point; but I'm too lazy to make a new file-list rn.
-// Why are they here? Because I need these to act similar to a flipped table. So - yeah.
+// Sandbag structures that work like tables, in the sense that projectiles can go through them,
+// and offer below waist coverage against them, while allowing guns to be braced on top
+// These are built exclusively through the "sandbags" material sheets (a badly implemented idea tbh)
+// by using said mats in hand through the pop up menu (using the build_windows() proc)
+// Attacking them with an empty hand will collapse them back into two sandbags worth for repositioning
+// TODO: ADD BARBED WIRE AND WOODEN BARRICADES ON THIS FILE, SPRITES ALREADY PRESENT IN barricades.dmi
 
 /obj/structure/sandbags
 	name = "sandbag fortification"
 	desc = "A half-wall of sandbags piled to act as a fortification."
 	icon = 'icons/obj/structures/barricades.dmi'
-	icon_state = "sandbags"
-	density = 1
-	anchored = 1
-	climbable = 1
+	icon_state = "sandbag_0"
+	density = TRUE
+	anchored = TRUE
+	climbable = TRUE
 	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
-	throwpass = 1
+	throwpass = TRUE
 	maxHealth = 50
 	health = 50
 
@@ -18,22 +22,55 @@
 
 	var/base_blocking = 50
 	var/base_cover = 50
+	var/ini_dir = null
+
+/obj/structure/sandbags/New(Loc, start_dir=null)
+	..()
+	if(start_dir)
+		set_dir(start_dir)
+	health = maxHealth
+	ini_dir = dir
+	update_icon()
 
 /obj/structure/sandbags/update_icon()
-	icon_state = "sandbag_0"
+	var/obj/structure/sandbags/S
+	if(S.health < 40)
+		icon_state = "sandbag_0"
+	if(S.health < 30)
+		icon_state = "sandbag_1"
+	if(S.health < 20)
+		icon_state = "sandbag_2"
+	if(S.health < 10)
+		icon_state = "sandbag_3"
+
+/obj/structure/sandbags/verb/compact(mob/living/user)
+	set src in oview(1)
+	set category = "Object"
+	set name = "Take down"
+
+	if(!user || !Adjacent(user) || !usr.canmove || usr.stat || usr.restrained())
+		return
+
+	if(ishuman(usr) || isrobot(usr)) // So that borgs can also take them down
+		if(do_after(user, 30, src)) // Takes some time to collapse
+			visible_message("[usr] folds \the [src] into portable stacks.")
+			new /obj/item/stack/material/sandbag(get_turf(src))
+			new /obj/item/stack/material/sandbag(get_turf(src))
+			qdel(src)
 
 /obj/structure/sandbags/proc/damage(damage)
 	health -= damage
-	if(health < 40)
-		icon_state = "sandbag_0"
-	if(health < 30)
-		icon_state = "sandbag_1"
-	if(health < 20)
-		icon_state = "sandbag_2"
-	if(health < 10)
-		icon_state = "sandbag_3"
+	update_icon()
 	if(health < 1)
 		qdel(src)
+
+/obj/structure/sandbags/attack_hand(mob/user)
+	if(ishuman(user) || isrobot(user))
+		compact(user)
+
+/obj/structure/sandbags/attack_robot(var/mob/user)
+	if(Adjacent(user))
+		attack_hand(user)
 
 // Rest of this code is copied from the Bastion Shield object. Mild changes are made, however, such as how to repair this structure vs the Shield.
 /obj/structure/sandbags/attackby(obj/item/I, mob/living/user)
@@ -42,7 +79,8 @@
 		var/obj/item/gun/G = I
 		G.gun_brace(user, src)
 		return
-	if(attackby(/obj/item/stack/material/sandbag))
+	if(istype(I, /obj/item/stack/material/sandbag))
+		var/obj/item/stack/material/sandbag/S
 		if(health == maxHealth)
 			to_chat(user, SPAN_NOTICE("\The [src] is already fully repaired!"))
 			return
@@ -50,6 +88,7 @@
 			to_chat(user, SPAN_NOTICE("You start reparing \the [src]."))
 			if(do_after(user, 30))
 				health = maxHealth
+				S.use(1) // Consume at least one sandbag to repair fully, no cheating
 				to_chat(user, SPAN_NOTICE("\The [src] is now fully repaired!"))
 				return
 	if(I.has_quality(QUALITY_BOLT_TURNING))

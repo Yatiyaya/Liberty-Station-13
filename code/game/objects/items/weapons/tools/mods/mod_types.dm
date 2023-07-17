@@ -325,8 +325,9 @@
 	I.prefix = "anti-stain coated"
 
 /obj/item/tool_upgrade/productivity/booster
-	name = "booster"
-	desc = "When you do not care about energy comsumption and just want to get shit done quickly. This device shunts the power safeties of your tool whether it uses fuel or electricity."
+	name = "PI \"Booster\" overclock module"
+	desc = "This handcrafted device shunts the power safeties of a tool, massively increasing its workspeed at the cost of fuel or power efficiency. \
+			It can also be installed on energy weaponry for more concentrated blasts at the cost of cell efficiency."
 	icon_state = "booster"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1)
 	price_tag = 230
@@ -350,8 +351,9 @@
 	I.req_gun_tags = list(GUN_ENERGY)
 
 /obj/item/tool_upgrade/productivity/injector
-	name = "plasma injector"
-	desc = "If the words \"safety regulations\" do not mean anything to you, you may consider installing this fine piece of technology on your tool. It injects small amounts of plasma in the fuel mix before combustion to greatly increase its power output, making all kinds of tasks easier to perform. If you're insane, you could attach it to an energy weapon's barrel."
+	name = "PI plasma injector"
+	desc = "This handcrafted device injects small amounts of plasma in the fuel mix of a tool before combustion to greatly increase its power output, making all kinds of tasks easier to perform. \
+			It can also be installed on energy weapons for laser combining with ionized plasma, granting an extra kick to your shots."
 	icon_state = "injector"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 2)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
@@ -377,7 +379,7 @@
 	I.req_gun_tags = list(GUN_ENERGY)
 
 /obj/item/tool_upgrade/productivity/rocket_engine
-	name = "rocket engine"
+	name = "PI rocket engine"
 	desc = "A singular rocket engine, used in assisted ballistics, tools, and once in a blue moon its intended purpose."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "rocket_engine"
@@ -429,8 +431,9 @@
 // 	 REFINEMENT: INCREASES PRECISION
 //------------------------------------------------
 /obj/item/tool_upgrade/refinement/laserguide
-	name = "\improper Skylights \"Guiding Light\" laser guide"
-	desc = "A small visible laser which can be strapped onto any tool, giving an accurate representation of its target. Helps improve precision."
+	name = "\"Guiding Light\" laser guide"
+	desc = "A small visible laser which can be strapped onto any tool, giving an accurate representation of its target. \
+			Helps improve precision. Can also be installed on firearms to assist with aiming."
 	icon_state = "laser_guide"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_URANIUM = 1)
 	preloaded_reagents = list("plasticide" = 3, "radium" = 5, "phosphorus" = 15)
@@ -519,7 +522,8 @@
 
 /obj/item/tool_upgrade/refinement/compensatedbarrel // More accurate tool but slower, faster gun but less hitting
 	name = "gravity compensated barrel"
-	desc = "A barrel extension for welding tools that integrates a miniaturized gravity generator that help keep the torch steady by compensating the weight of the tool. It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
+	desc = "A barrel extension for welding tools that integrates a miniaturized gravity generator that help keep the torch steady by compensating the weight of the tool. \
+			It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
 	icon_state = "compensatedbarrel"
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
 	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)

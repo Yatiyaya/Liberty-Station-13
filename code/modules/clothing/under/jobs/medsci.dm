@@ -143,6 +143,7 @@
 	permeability_coefficient = 0.50
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 	armor_list = list(
 		melee = 10,
@@ -161,6 +162,7 @@
 	permeability_coefficient = 0.50
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/under/rank/paramedic/bdu/verb/toggle_style()
@@ -221,6 +223,7 @@
 	permeability_coefficient = 0.50
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/under/rank/capsa_pants
@@ -231,5 +234,6 @@
 	permeability_coefficient = 0.25 // Half clothing!
 	body_parts_covered = LOWER_TORSO|LEGS
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5 // Half coverage!
 

@@ -19,15 +19,17 @@
 	/obj/item/tool_upgrade/refinement/laserguide = 1,
 	/obj/item/tool_upgrade/refinement/stabilized_grip = 1,
 	/obj/item/tool_upgrade/refinement/magbit = 0.75,
-	/obj/item/tool_upgrade/refinement/ported_barrel = 0.5,
+	/obj/item/tool_upgrade/refinement/ported_barrel = 0.75,
+	/obj/item/tool_upgrade/refinement/compensatedbarrel = 0.5,
 	/obj/item/tool_upgrade/augment/cell_mount = 0.75,
 	/obj/item/tool_upgrade/augment/fuel_tank = 1,
 	/obj/item/tool_upgrade/augment/expansion = 0.25,
 	/obj/item/tool_upgrade/augment/spikes = 1,
-	//obj/item/tool_upgrade/augment/hammer_addon = 0.75,
 	/obj/item/tool_upgrade/augment/dampener = 0.5,
 	/obj/item/tool_upgrade/reinforcement/rubbermesh = 0.5,
-	/obj/item/tool_upgrade/productivity/booster = 0.5))
+	/obj/item/tool_upgrade/productivity/booster = 0.25,
+	/obj/item/tool_upgrade/productivity/injector = 0.25)
+	)
 
 /obj/random/tool_upgrade/low_chance
 	name = "low chance random tool upgrade"
@@ -61,6 +63,7 @@
 	/obj/item/tool_upgrade/reinforcement/plasmablock = 1,
 	/obj/item/tool_upgrade/productivity/antistaining = 1,
 	/obj/item/tool_upgrade/productivity/injector = 1,
+	/obj/item/tool_upgrade/productivity/booster = 1,
 	/obj/item/tool_upgrade/augment/hydraulic = 0.5))
 
 /obj/random/tool_upgrade/rare/low_chance

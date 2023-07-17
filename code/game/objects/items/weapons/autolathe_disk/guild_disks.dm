@@ -88,7 +88,6 @@
 		/datum/design/research/item/weapon/toolmod/antistaining,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
-		/datum/design/research/item/weapon/toolmod/injector,
 		/datum/design/research/item/weapon/toolmod/plasmablock,
 	)
 
@@ -231,7 +230,6 @@
 		/datum/design/research/item/weapon/toolmod/antistaining,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
-		/datum/design/research/item/weapon/toolmod/injector,
 		/datum/design/research/item/weapon/toolmod/plasmablock,
 		// From Light
 		/datum/design/autolathe/misc/tube,
@@ -352,7 +350,6 @@
 	/datum/design/research/item/weapon/toolmod/antistaining,
 	/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 	/datum/design/research/item/weapon/toolmod/hydraulic,
-	/datum/design/research/item/weapon/toolmod/injector,
 	/datum/design/research/item/weapon/toolmod/plasmablock,
 	//We then do ciruit boards
 	/datum/design/autolathe/circuit/airlockmodule,

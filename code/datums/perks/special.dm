@@ -13,7 +13,7 @@
 /datum/perk/special/true_name/activate()
 	..()
 	if(anti_cheat)
-		to_chat(holder, "You can only keep up so many personallitys.")
+		to_chat(holder, "You can only keep up so many personalities.")
 		return FALSE
 	anti_cheat = TRUE
 	var/mob/M = usr
@@ -147,27 +147,27 @@
 	if(!istype(user))
 		return ..()
 	if(anti_cheat)
-		to_chat(usr, SPAN_NOTICE("You cant reject well rejecting!"))
+		to_chat(usr, SPAN_NOTICE("There's just so much missfortune you can pretend never happened!"))
 		return FALSE
 
 	anti_cheat = TRUE
 
 	if(user.stats.perks.len ==0)
-		to_chat(user, "Creature has no perks to remove, not sure how thats possable")
+		to_chat(user, "You have no perks to remove, perhaps due to cloning or other anomalous circumstances.")
 		return
-	to_chat(user, SPAN_NOTICE("Rejecting reality, but what aspect to remove?"))
-	var/datum/perk/perkname = input("What perk do you want to reject?") as null|anything in user.stats.perks
+	to_chat(user, SPAN_NOTICE("Rejecting missfortune, but what aspect to remove?"))
+	var/datum/perk/perkname = input("What perk do you want to remove?") as null|anything in user.stats.perks
 	if (!perkname)
 		anti_cheat = FALSE
 		to_chat(user, SPAN_NOTICE("No need to reject some of my past."))
 		return
 	if(QDELETED(user))
-		to_chat(user, "You cant reject being removed from this plane of reality...")
+		to_chat(user, "You can't reject being removed from this plane of existance...")
 		return
 	anti_cheat = FALSE
 	user.stats.removePerk(perkname.type)
 	user.stats.removePerk(PERK_FORCEFUL_REJECTION)
-	message_admins("\blue [key_name(user)] removed the perk [perkname] from using forceful rejection.", 1)
+	message_admins("\blue [key_name(user)] removed the perk [perkname] from using Forceful Rejection.", 1)
 
 
 	return ..()

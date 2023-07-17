@@ -17,7 +17,7 @@
 		to_chat(owner_mob, SPAN_WARNING("[wearer] is dead"))
 		return
 	if(is_neotheology_disciple(wearer))
-		to_chat(owner_mob, SPAN_WARNING("[wearer]'s cruciform prevents activation"))
+		to_chat(owner_mob, SPAN_WARNING("[wearer]'s hearthcore prevents activation"))
 		return
 
 	if(is_carrion(wearer))

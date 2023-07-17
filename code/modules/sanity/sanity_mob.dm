@@ -190,7 +190,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	if(resting < max_resting && insight >= 100)
 		if(!rest_timer_active)//Prevent any exploits(timer is only active for one minute tops)
 			give_resting(1)
-			if(owner.stats.getPerk(PERK_ARTIST))
+			if(owner.stats.getPerk(PERK_ARTIFICER))
 				to_chat(owner, SPAN_NOTICE("You have gained insight.[resting ? " Now you need to make art. You cannot gain more insight before you do." : null]"))
 			else
 				to_chat(owner, SPAN_NOTICE("You have gained insight.[resting ? " Now you need to rest and rethink your life choices." : " Your previous insight has been discarded, shifting your desires for new ones."]"))
@@ -306,7 +306,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 /datum/sanity/proc/finish_rest()
 	desires.Cut()
 	if(!rest_timer_active)
-		to_chat(owner, "<font color='purple'>[owner.stats.getPerk(PERK_ARTIST) ? "You have created art." : "You have rested well."]\
+		to_chat(owner, "<font color='purple'>[owner.stats.getPerk(PERK_ARTIFICER) ? "You have created art." : "You have rested well."]\
 					<br>Select what you wish to do with your fulfilled insight <a HREF=?src=\ref[src];here_and_now=TRUE>here and now</a> or get to safety first if you are in danger.\
 					<br>The prompt will appear in one minute.</font>")
 		rest_timer_active = TRUE
@@ -322,7 +322,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 		)
 
 	if(rest == "Focus on an oddity")
-		if(owner.stats.getPerk(PERK_ARTIST))
+		if(owner.stats.getPerk(PERK_ARTIFICER))
 			to_chat(owner, SPAN_NOTICE("Your artistic mind prevents you from using an oddity."))
 			rest = "Internalize your recent experiences"
 		else

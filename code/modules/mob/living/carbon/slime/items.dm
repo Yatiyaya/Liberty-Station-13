@@ -155,7 +155,7 @@
 
 	to_chat(user, "The tonic works it magic!")
 	C.max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	C.item_flags = STOPPRESSUREDAMAGE
+	C.item_flags |= STOPPRESSUREDAMAGE
 	C.color = "#ff9900"
 	usedup(src)
 

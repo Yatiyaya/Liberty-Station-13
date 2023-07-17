@@ -21,16 +21,16 @@
 	holder.stats.removeTempStat(STAT_MEC, "Exotic Inspiration")
 	..()
 
-/datum/perk/job/artist
-	name = "Artist"
-	desc = "You have a lot of expertise in making works of art. You gain more insight from all sources but can only increase \
-			your stats by creating works of art."
+/datum/perk/job/artificer
+	name = "Artificer"
+	desc = "The fiery might grants boundless ingenuity - awe inspiring craftsmanship where every spark carries the promises of untamed power. \
+			You gain more insight from all sources but can only increase your stats by crafting on an artisan's table."
 	icon_state = "paintbrush"
 	var/old_max_insight = INFINITY
 	var/old_max_resting = INFINITY
 	var/old_insight_rest_gain_multiplier = 1
 
-/datum/perk/job/artist/assign(mob/living/carbon/human/H)
+/datum/perk/job/artificer/assign(mob/living/carbon/human/H)
 	..()
 	old_max_insight = holder.sanity.max_insight
 	old_max_resting = holder.sanity.max_resting
@@ -40,14 +40,14 @@
 	holder.sanity.max_resting = 1
 	holder.sanity.insight_rest_gain_multiplier = 0
 
-/datum/perk/job/artist/remove()
+/datum/perk/job/artificer/remove()
 	holder.sanity.max_insight += old_max_insight - 100
 	holder.sanity.insight_gain_multiplier /= 1.5
 	holder.sanity.max_resting += old_max_resting - 1
 	holder.sanity.insight_rest_gain_multiplier += old_insight_rest_gain_multiplier
 	..()
 
-/datum/perk/job/timeismoney // TODO: A perk that doesn't involve a free Chronos injection, specially for the Skylight CEO equivalent.
+/datum/perk/job/timeismoney // TODO! A perk that doesn't involve a free Chronos injection, specially for the Skylight CEO equivalent.
 	name = "Chronos Injection"
 	desc = "A standard issue injector hidden away that is designed for Chief Executive Officers that contains a small on-demand injection of Chronos. The injector itself is unable to be seen by prying scanners and comes in both \
 	metal and organic material designs to aid in remaining hidden. While useful, the chemical storage takes time to recharge after use."
@@ -88,9 +88,11 @@
 	desc = "Training (and an ear implant) given to you as a Ranger makes it hard for secrets to escape your ears. Beware, loud noises are especially dangerous to you as a side effect."
 	icon_state = "ear" // https://game-icons.net
 
-/datum/perk/job/lazarus_protocol
-	name = "Lazarus Protocol"
-	desc = "Your cruciform is more than just a symbol of faith. Should you ever perish, it will attempt an emergency revival that may restore your body after a short time, in which you'll be unconscious."
+// TODO: Make this revival perk obtainable through Hearthcore upgrades once implemented
+/datum/perk/job/phoenix_rekindlement
+	name = "Phoenix Rekindlement"
+	desc = "Your Hearthcore is more than just an emblem of knighthood. \
+			Should you ever perish, it will attempt an emergency revival that may restore your body after a short time, in which you'll be unconscious."
 	icon_state = "regrowth" // https://game-icons.net/1x1/delapouite/stump-regrowth.html
 
 /datum/perk/job/chemist
@@ -291,12 +293,19 @@
 	..()
 
 
-/datum/perk/job/channeling
-	name = "Channeling"
-	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
-			during group rituals, and have an increased regeneration of cruciform energy."
+/datum/perk/job/radiance
+	name = "Radiance Gentry"
+	desc = "The Hearthcore is the heraldic of your knighthood ceremony, emblazed upon your back, igniting righteous fervor. \
+			You are among the silver-bloodied, and the Radiance serves and sacrifices itself for you. You have an increased regeneration of Radiance."
 	icon_state = "channeling"
 
+// TODO: Custodian "alchemy" perk. WIP for now!
+/datum/perk/job/apothecary
+	name = "Apothecary"
+	desc = "The aromantic symphony unfolds, tendrils of steam from concoctions whose essence \
+			ignites a sensory dance on once dormant powers, trascending the ordinary - \
+			all within a single vial."
+	icon_state = "spice"
 
 /datum/perk/job/codespeak
 	name = "Codespeak"

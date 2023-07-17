@@ -124,7 +124,7 @@
 	build_path = /obj/item/gun/projectile/boltgun/rosefield
 
 /datum/design/autolathe/gun/wristbreaker
-	name = "LG 6.5x39mm \"Wrist Breaker\""
+	name = "LG 7.62x39mm \"Wrist Breaker\""
 	build_path = /obj/item/gun/projectile/revolver/wristbreaker
 
 ///R I F L E S

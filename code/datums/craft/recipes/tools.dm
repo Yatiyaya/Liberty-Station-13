@@ -36,7 +36,7 @@
 	result = /obj/item/tool/wirecutters/improvised
 	steps = list(
 		list(/obj/item/stack/rods, 2, "time" = 60),
-		list(QUALITY_PRYING, 20, "time" = 140),
+		list(QUALITY_PRYING, 20, "time" = 70),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 70)
 	)
 
@@ -60,7 +60,7 @@
 		list(QUALITY_ADHESIVE, 15, 100)
 	)
 
-// A solution for all the multitool lacking Colonists, Outsiders and Prospectors
+// A solution for all the multitool lacking Colonists, Outsiders and Shipbreakers
 /datum/craft_recipe/tool/improv_multi
 	name = "wire frier"
 	result = /obj/item/tool/multitool/improvised
@@ -91,7 +91,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
 		list(/obj/item/stack/rods, 1, 30),
-		list(QUALITY_ADHESIVE, 15, 150)
+		list(QUALITY_ADHESIVE, 15, 85)
 	)
 
 // For when you want everything in a single arm.
@@ -110,6 +110,16 @@
 		list(/obj/item/tool/saw/improvised, 1),
 		list(/obj/item/tool/weldingtool/improvised, 1),
 		list(QUALITY_ADHESIVE, 15, 70)
+	)
+
+// In case you want it in your hands and not implanted
+/datum/craft_recipe/tool/makeshift_omnitool
+	name = "Improvised omnitool"
+	result = /obj/item/tool/multitool_improvised
+	steps = list(
+		list(/obj/item/organ_module/active/simple/makeshift, 1),
+		list(QUALITY_PULSING, 20),
+		list(QUALITY_PRYING, 20, "time" = 140)
 	)
 
 //Outsider tape more or less

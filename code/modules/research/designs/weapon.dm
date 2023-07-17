@@ -363,6 +363,8 @@
 	build_path = /obj/item/tool_upgrade/productivity/antistaining
 	sort_string = "TAAAN"
 
+// Commented out due to being hand crafted now.
+/*
 /datum/design/research/item/weapon/toolmod/booster
 	name = "Booster"
 	build_path = /obj/item/tool_upgrade/productivity/booster
@@ -372,6 +374,7 @@
 	name = "Plasma Injector"
 	build_path = /obj/item/tool_upgrade/productivity/injector
 	sort_string = "TAAAP"
+*/
 
 /datum/design/research/item/weapon/toolmod/laserguide
 	name = "Skylight \"Guiding Light\" Laser Guide"

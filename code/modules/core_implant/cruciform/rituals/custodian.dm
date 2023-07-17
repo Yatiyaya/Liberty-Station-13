@@ -1,5 +1,5 @@
 /datum/ritual/cruciform/custodian //these are only available to the module CRUCIFORM_CUSTODIAN so all Custodian jobs have them
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	fail_message = "The Hearthcore feels cold against your chest."

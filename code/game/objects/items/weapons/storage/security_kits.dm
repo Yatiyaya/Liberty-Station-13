@@ -80,10 +80,10 @@
 
 	populate_contents()
 		new /obj/item/gun/projectile/revolver/wristbreaker(src)
-		new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
-		new /obj/item/ammo_magazine/speed_loader_light_rifle_257(src)
-		new /obj/item/ammo_magazine/ammobox/light_rifle_257_small(src)
-		new /obj/item/ammo_magazine/ammobox/light_rifle_257_small/rubber(src)
+		new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
+		new /obj/item/ammo_magazine/speed_loader_rifle_75(src)
+		new /obj/item/ammo_magazine/ammobox/rifle_75_small(src)
+		new /obj/item/ammo_magazine/ammobox/rifle_75_small/rubber(src)
 
 /obj/item/storage/box/m_kit/operator_rifle
 	name = "Operator rifle Kit"

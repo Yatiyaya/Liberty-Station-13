@@ -244,6 +244,8 @@
 	icon_state = "earmuffs"
 	item_state = "earmuffs"
 	slot_flags = SLOT_EARS | SLOT_TWOEARS
+	cold_protection = EARS
+	heat_protection = EARS
 
 
 /obj/item/clothing/ears/earmuffs/mp3
@@ -323,6 +325,8 @@ BLIND     // can't see anything
 	icon = 'icons/inventory/eyes/icon.dmi'
 	w_class = ITEM_SIZE_SMALL
 	body_parts_covered = EYES
+	heat_protection = EYES
+	cold_protection = EYES
 	slot_flags = SLOT_EYES
 	var/vision_flags = 0
 	var/darkness_view = 0//Base human is 2
@@ -342,6 +346,7 @@ BLIND     // can't see anything
 	var/clipped = 0
 	body_parts_covered = ARMS
 	cold_protection = ARMS
+	heat_protection = ARMS
 	min_cold_protection_temperature = T0C - 5
 	armor_list = list(melee = 10, bullet = 0, energy = 15, bomb = 0, bio = 0, rad = 0)
 	slot_flags = SLOT_GLOVES
@@ -377,6 +382,7 @@ BLIND     // can't see anything
 		)
 	body_parts_covered = HEAD
 	cold_protection = HEAD|EARS
+	heat_protection = HEAD|EARS
 	slot_flags = SLOT_HEAD
 	w_class = ITEM_SIZE_SMALL
 
@@ -471,6 +477,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_MASK
 	body_parts_covered = FACE|EYES
 	cold_protection = FACE|EYES
+	heat_protection = FACE|EYES
 	min_cold_protection_temperature = T0C - 5
 	var/muffle_voice = FALSE
 	var/voicechange = FALSE
@@ -490,6 +497,7 @@ BLIND     // can't see anything
 	siemens_coefficient = 0.9
 	body_parts_covered = LEGS
 	cold_protection = LEGS
+	heat_protection = LEGS
 	min_cold_protection_temperature = T0C - 10
 	slot_flags = SLOT_FEET
 
@@ -613,7 +621,8 @@ BLIND     // can't see anything
 	name = "suit"
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS // Adjust as necessary
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS // Adjust as necessary
 	min_cold_protection_temperature = T0C - 15
 	allowed = list(
 		/obj/item/clipboard,
@@ -684,6 +693,7 @@ BLIND     // can't see anything
 		)
 	name = "under"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS // Adjust as necessary for pants
 	min_cold_protection_temperature = T0C - 10
 	permeability_coefficient = 0.90

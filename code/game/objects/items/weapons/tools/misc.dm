@@ -236,7 +236,7 @@
 	degradation = 1.5
 	workspeed = 0.8
 
-	max_upgrades = 3
+	max_upgrades = 6 // As with all improv tools so it can be modded tf out
 
 	sparks_on_use = TRUE
 	eye_hazard = TRUE //USE SAFTY GEAR NOT SQUINTS >:T

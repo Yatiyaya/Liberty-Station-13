@@ -1,6 +1,6 @@
 /obj/item/grenade/frag
-	name = "ML DFG \"Pitbull\""
-	desc = "A military-grade defensive fragmentation grenade, designed to be thrown from cover."
+	name = "\"Pitbull\" Fragmentation Grenade"
+	desc = "A military-grade Defensive Fragmentation Grenade, designed to be thrown from cover."
 	icon_state = "frag"
 	item_state = "frggrenade"
 	loadable = TRUE
@@ -36,6 +36,8 @@
 
 	qdel(src)
 
+ // Old NeoTheo leftover grenade
+ /*
 /obj/item/grenade/frag/nt
 	name = "NT DF grenade \"Holy Thunder\""
 	desc = "A military-grade defensive fragmentation grenade, designed to be thrown from cover."
@@ -44,10 +46,11 @@
 	matter = list(MATERIAL_BIOMATTER = 75)
 	fragment_damage = 7
 	damage_step = 3
+*/
 
 /obj/item/grenade/frag/stinger
-	name = "MT RFG \"Stinger\""
-	desc = "A repurposed fragmentation grenade loaded in rubbers fragments, ready to serve the public trust. Lethal if used ontop of someone."
+	name = "\"Stinger\" Rubber Fragmentation Grenade"
+	desc = "A repurposed fragmentation grenade loaded with rubber pellets, ready to serve the public trust. Still lethal if caught in its epicenter."
 	icon_state = "stinger"
 	item_state = "stinger"
 	loadable = TRUE
@@ -56,17 +59,17 @@
 
 /obj/item/grenade/frag/pipebomb
 	name = "improvised pipebomb"
-	desc = "A jury rigged medium cell filled with plasma. Throw at authorities."
+	desc = "A jury rigged small cell filled with plasma. Throw at authorities."
 	icon_state = "frag_pipebomb"
 	item_state = "fraggrenade_pipebomb"
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 2, MATERIAL_PLASMA = 2, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 2)
-	num_fragments = 25
+	num_fragments = 65 // Almost half the normal one, to not be worthless
 	fragment_damage = 10
 	damage_step = 5
 
 /obj/item/grenade/frag/white_phosphorous
-	name = "AT WPG \"Sabac\""
-	desc = "A modernized incendiary hailing popular use within assault troops of all kinds. Use with care, highly flammable."
+	name = "\"Sabac\" Incendiary Grenade"
+	desc = "A modernized incendiary grenade, carrying a dangerous pyrophoric payload. Use with care, highly flammable."
 	icon_state = "white_phos"
 	item_state = "fraggrenade"
 	fragment_type = /obj/item/projectile/bullet/pellet/fragment/ember

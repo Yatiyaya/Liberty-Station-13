@@ -100,7 +100,8 @@
 	name = "yoga pants"
 	desc = "A pair of tight-fitting white yoga pants."
 	icon_state = "yogapants"
-	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5 // Half coverage for all pants
 
 /obj/item/clothing/under/pants/chapsblack
@@ -235,6 +236,7 @@
 	desc = "A pair of baggy, two-tone military style cargo pants featuring an elastic waistband and leg cuffs."
 	icon_state = "gorka_pants_tan"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/gorkapants/gorkacamo
@@ -286,6 +288,7 @@
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband and leg cuffs."
 	icon_state = "gorka_pants_ih"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medspec/gorkapantsihmed
@@ -293,6 +296,7 @@
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband, leg cuffs, and Corpsman markings."
 	icon_state = "gorka_pants_ih_med"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medical/gorkapantscrewmed
@@ -300,6 +304,7 @@
 	desc = "A pair of baggy, two-tone utility pants featuring an elastic waistband and leg cuffs, and medical liverly."
 	icon_state = "gorka_pants_crew_med"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 // Factions Afghankas
@@ -307,10 +312,14 @@
 /obj/item/clothing/under/rank/fontaine/afghanka_pants
 	name = "fontaine afghanka pants"
 	desc = "A pair of warm afghanka pants for combat situations, in Fontaine colors."
+	heat_protection = LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LEGS
 	icon_state = "afghanka_pants_fontaine"
 
 /obj/item/clothing/under/rank/security/afghanka_pants
 	name = "watch afghanka pants"
 	desc = "A pair of warm afghanka pants for combat situations, in Liberty Watch colors."
 	icon_state = "afghanka_pants_watch"
+	heat_protection = LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LEGS
 

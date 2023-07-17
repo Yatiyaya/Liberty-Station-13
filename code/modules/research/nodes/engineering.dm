@@ -289,9 +289,7 @@
 							/datum/design/research/item/weapon/toolmod/dblade,
 							/datum/design/research/item/weapon/toolmod/oxyjet,
 							/datum/design/research/item/weapon/toolmod/motor,
-							/datum/design/research/item/weapon/toolmod/antistaining,
-							/datum/design/research/item/weapon/toolmod/booster,
-							/datum/design/research/item/weapon/toolmod/injector
+							/datum/design/research/item/weapon/toolmod/antistaining
 							)
 
 /datum/technology/refinement_toolmods

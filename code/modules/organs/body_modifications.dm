@@ -82,7 +82,7 @@ var/global/list/modifications_types = list(
 				return FALSE
 
 	if(!allow_nt && H?.get_core_implant(/obj/item/implant/core_implant/cruciform))
-		to_chat(usr, "Your cruciform prevents you from using this modification.")
+		to_chat(usr, "Your hearthcore prevents you from using this modification.")
 		return FALSE
 
 	return TRUE

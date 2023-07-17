@@ -28,7 +28,7 @@
 		STAT_ROB = 45,
 	)
 
-	perks = list(PERK_CHANNELING)
+	perks = list(PERK_RADIANCE)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
@@ -85,7 +85,7 @@
 		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_STALKER, PERK_ARTIST, PERK_CHANNELING)
+	perks = list(PERK_STALKER, PERK_ARTIFICER, PERK_RADIANCE)
 	software_on_spawn = list(
 							 /datum/computer_file/program/scanner,
 							 /datum/computer_file/program/wordprocessor,
@@ -135,7 +135,7 @@
 		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_CHANNELING)
+	perks = list(PERK_RADIANCE, /*PERK_APOTHECARY*/) // Perk is still a WIP, leaving it prepared here for when all is coded.
 
 	description = "The Enkindled are the blood transmuters specialized in the proto-science of traditions of biology - with the revolutionary custodian spin.<br>\
     The Enkindled are not proficient in surgery and lack the tools for it, but they are able to produce many different elixirs from the corpses of fallen creatures with varying effects - from healing tinctures, throwable flasks, poison needles, combat enhancers and status potions.<br>\
@@ -183,7 +183,7 @@
 		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_CHANNELING)
+	perks = list(PERK_RADIANCE)
 
 	description = "The Oathbounds are the combat units, footsoldiers of purity that burn down the plague inside and outside the colony, along with mutants and antagonistic entities that defy their dogmas.<br>\
     Oathbounds can supply their forces in expeditions and help change the tide of battle with their high defensive capabilities and overall toughness in the frontlines, keeping the flimsy gun-users behind and protected, or ignite them on accident - to the disdain of their Oathpledge.<br>\

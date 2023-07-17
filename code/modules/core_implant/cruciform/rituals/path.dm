@@ -5,14 +5,14 @@
 //////////////////////////////////////////////////
 
 /datum/ritual/cruciform/oathbound
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Oathbound"
 	ignore_stuttering = TRUE
 
 /datum/ritual/targeted/cruciform/oathbound
-	name = "cruciform targeted"
+	name = "Hearthcore targeted"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Oathbound"
@@ -269,14 +269,14 @@ datum/ritual/cruciform/oathbound/fireball_big
 //////////////////////////////////////////////////
 
 /datum/ritual/cruciform/enkindled
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Enkindled"
 	ignore_stuttering = TRUE
 
 /datum/ritual/targeted/cruciform/enkindled
-	name = "cruciform targeted"
+	name = "Hearthcore targeted"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Enkindled"
@@ -566,14 +566,14 @@ datum/ritual/cruciform/oathbound/fireball_big
 //////////////////////////////////////////////////
 
 /datum/ritual/cruciform/forgemaster
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Forgemaster"
 	ignore_stuttering = TRUE
 
 /datum/ritual/targeted/cruciform/forgemaster
-	name = "cruciform targeted"
+	name = "Hearthcore targeted"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Forgemaster"
@@ -729,7 +729,7 @@ datum/ritual/cruciform/oathbound/fireball_big
 		if (!(T.Adjacent(get_turf(H))))
 			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
 			return FALSE
-		to_chat(H, "<span class='info'>Your cruciform sings a small tune as it gets charged.</span>")
+		to_chat(H, "<span class='info'>Your Hearthcore billows as it gets charged.</span>")
 
 		CI.restore_power(20)
 
@@ -779,14 +779,14 @@ datum/ritual/cruciform/oathbound/fireball_big
 //////////////////////////////////////////////////
 
 /datum/ritual/cruciform/oathpledge
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Oathpledge"
 	ignore_stuttering = TRUE
 
 /datum/ritual/targeted/cruciform/oathpledge
-	name = "cruciform targeted"
+	name = "Hearthcore targeted"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
 	category = "Oathpledge"
