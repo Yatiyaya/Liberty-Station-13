@@ -135,7 +135,7 @@
 		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_RADIANCE, /*PERK_APOTHECARY*/) // Perk is still a WIP, leaving it prepared here for when all is coded.
+	perks = list(PERK_RADIANCE) //   /*PERK_APOTHECARY*/  Perk is still a WIP, leaving it prepared here for when all is coded.
 
 	description = "The Enkindled are the blood transmuters specialized in the proto-science of traditions of biology - with the revolutionary custodian spin.<br>\
     The Enkindled are not proficient in surgery and lack the tools for it, but they are able to produce many different elixirs from the corpses of fallen creatures with varying effects - from healing tinctures, throwable flasks, poison needles, combat enhancers and status potions.<br>\
