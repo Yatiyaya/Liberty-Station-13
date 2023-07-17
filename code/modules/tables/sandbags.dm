@@ -33,14 +33,13 @@
 	update_icon()
 
 /obj/structure/sandbags/update_icon()
-	var/obj/structure/sandbags/S
-	if(S.health < 40)
+	if(health < 40)
 		icon_state = "sandbag_0"
-	if(S.health < 30)
+	if(health < 30)
 		icon_state = "sandbag_1"
-	if(S.health < 20)
+	if(health < 20)
 		icon_state = "sandbag_2"
-	if(S.health < 10)
+	if(health < 10)
 		icon_state = "sandbag_3"
 
 /obj/structure/sandbags/verb/compact(mob/living/user)
