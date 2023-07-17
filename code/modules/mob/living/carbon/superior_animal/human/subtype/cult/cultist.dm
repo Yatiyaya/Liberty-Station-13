@@ -23,7 +23,7 @@
 	rush_target_telegraph = "groggily snaps their aim towards"
 	meat_amount = 4 // For genetics purposes they will be encouraged to bring back flesh samples
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human // They were human to begin with...
-	inherent_mutations = list(MUTATION_G_SAC, MUTATION_HEART, MUTATION_G_LUNG, MUTATION_G_LIVER, MUTATION_E_BLOOD_VESSEL, MUTATION_S_MUSCLES, MUTATION_S_NERVES)
+	inherent_mutations = list(MUTATION_RAND_UNSTABLE, MUTATION_BLOOD_BANK, MUTATION_G_SAC, MUTATION_HEART, MUTATION_G_LUNG, MUTATION_G_LIVER, MUTATION_E_BLOOD_VESSEL, MUTATION_S_MUSCLES, MUTATION_S_NERVES, MUTATION_ECHOLOCATION)
 	get_stat_modifier = TRUE // They won't receive quickening modifiers for balance purposes, shotguns are too strong
 	allowed_stat_modifiers = list(
 		/datum/stat_modifier/mob/living/carbon/superior_animal/durable = 5,
@@ -39,7 +39,7 @@
 		/datum/stat_modifier/mob/living/carbon/superior_animal/slowaimed = 5,
 		/datum/stat_modifier/mob/living/carbon/superior_animal/slowdraw = 10,
 	)
-	viewRange = 6 // Reduced vision, you don't want them to get near you
+	viewRange = 6 // Reduced vision, they can locate you through other means...
 	comfy_range = 5 // We wield shotguns, we want to be as close up and personal as possible.
 	delay_for_range = 2.0 SECONDS
 	breath_required_type = 0 // Balance purposes, considering cold air would hurt them.
@@ -91,6 +91,7 @@
 	attack_sound = 'sound/weapons/blunthit.ogg' // Hitting you with the shotgun once empty
 	deathmessage = "emits an agonizing scream as it falls to the floor and dies!"
 	ranged = TRUE
+	inherent_mutations = list(MUTATION_RAND_UNSTABLE, MUTATION_G_SAC, MUTATION_HEART, MUTATION_G_LUNG, MUTATION_G_LIVER, MUTATION_E_BLOOD_VESSEL, MUTATION_S_MUSCLES, MUTATION_S_NERVES, MUTATION_CAT_EYES)
 	ranged_cooldown = 5 // Shotguns are strong, need a longer delay
 	projectiletype = /obj/item/projectile/bullet/pellet/shotgun
 	drop_items = list(/obj/item/gun/projectile/boltgun/lever/shotgun)
