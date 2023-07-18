@@ -94,7 +94,7 @@
 
 	if(consumable)
 		consumable.use(REPAIR_DOOR_AMOUNT)
-		var/obj/effect/overlay/nt_construction/effect = new(target_turf, 50)
+		var/obj/effect/overlay/knight_construction/effect = new(target_turf, 50)
 		sleep(50)
 		door.stat -= BROKEN
 		door.health = door.maxHealth

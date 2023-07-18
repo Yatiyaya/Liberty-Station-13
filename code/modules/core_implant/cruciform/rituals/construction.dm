@@ -108,7 +108,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 	user.visible_message(SPAN_NOTICE("[user] stretches a hand forward."),SPAN_NOTICE("You start reclaiming."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, 5 SECONDS)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, 5 SECONDS)
 
 	if(!do_after(user, 5 SECONDS, target_turf)) //"Sit still" timer
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -154,7 +154,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -217,7 +217,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
