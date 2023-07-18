@@ -286,6 +286,7 @@
 				/obj/item/gun_upgrade/barrel/overheat = 1,
 				/obj/item/gun_upgrade/mechanism/bikehorn = 0.1,
 				/obj/item/gun_upgrade/barrel/excruciator = 1,
+				/obj/item/tool_upgrade/augment/sanctifier = 1,
 				/obj/item/gun_upgrade/trigger/dangerzone = 1,
 				/obj/item/gun_upgrade/trigger/cop_block = 0.5,
 				/obj/item/gun_upgrade/magwell/auto_eject = 0.5,

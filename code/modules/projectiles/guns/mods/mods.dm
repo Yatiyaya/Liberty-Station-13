@@ -179,7 +179,7 @@
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "boogalooed"
 
-//For energy weapons, increases the damage output, but also the charge cost. Acquired from church bioprinter.
+//For energy weapons, increases the damage output, but also the charge cost. Currently just dungeon loot as it's from a non-Liberty faction.
 /obj/item/gun_upgrade/barrel/excruciator
 	name = "New Testament \"EXCRUCIATOR\" giga lens"
 	desc = "It's time for us to shine."

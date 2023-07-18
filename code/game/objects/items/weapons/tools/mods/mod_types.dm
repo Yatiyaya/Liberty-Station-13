@@ -123,7 +123,6 @@
 	desc = "A rubber mesh that can wrapped around sensitive parts of a tool to protecting them from impacts and debris."
 	icon_state = "rubbermesh"
 	matter = list(MATERIAL_PLASTIC = 3)
-	preloaded_reagents = list("plasticide" = 8)
 	price_tag = 60
 
 /obj/item/tool_upgrade/reinforcement/rubbermesh/New()
@@ -550,6 +549,28 @@
 	I.prefix = "gravity-compensated"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 
+/obj/item/tool_upgrade/refinement/gravenhancer
+	name = "SR Microgravity Stabilizer"
+	desc = "Strange contraption of Simulacrum Robotics making, it appears to manipulate gravity around it, \
+			to make a weapon or tool more stable at the cost of increasing its size."
+	icon_state = "grav_enhancer"
+	matter = list(MATERIAL_PLASTIC = 8, MATERIAL_URANIUM = 3)
+	price_tag = 1500
+
+/obj/item/tool_upgrade/refinement/gravenhancer/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.tool_upgrades = list(
+	UPGRADE_PRECISION = 25,
+	UPGRADE_WORKSPEED = 0.1,
+	UPGRADE_BULK = 1,
+	)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_RECOIL = 0.5,
+		UPGRADE_BULK = 1,
+		)
+	I.prefix = "gravity-stabilized"
+
 // 		AUGMENTS: MISCELLANEOUS AND UTILITY
 //------------------------------------------------
 
@@ -720,36 +741,6 @@
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "sanctified"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
-
-/*
-/obj/item/tool_upgrade/augment/sanctifier_plus
-	name = "overclocked sanctifier"
-	icon_state = "sanctifier_plus"
-	desc = "Recommended for crusades against mutants, wild life, and heretics. Does this device actually make a better weapon or is it something else? Regardless, it makes one more thoughtful during labor. \
-	This one has been overclocked by members of the factortial path, increasing both its benefits and its drawbacks."
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 2)
-	price_tag = 20
-
-/obj/item/tool_upgrade/augment/sanctifier_plus/New()
-	..()
-	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
-	I.tool_upgrades = list(
-	UPGRADE_SANCTIFY = TRUE,
-	UPGRADE_FORCE_MOD = 12,
-	UPGRADE_PRECISION = 15,
-	UPGRADE_DEGRADATION_MULT = 0.7,
-	UPGRADE_WORKSPEED = -0.75
-	)
-	I.weapon_upgrades = list(
-	GUN_UPGRADE_RECOIL = 0.6,
-	GUN_UPGRADE_FIRE_DELAY_MULT = 1.3,
-	GUN_UPGRADE_MOVE_DELAY_MULT = 1.3,
-	GUN_UPGRADE_CHARGECOST = 0.7
-	)
-	I.gun_loc_tag = GUN_MECHANISM
-	I.prefix = "over sanctified"
-	I.req_fuel_cell = REQ_FUEL_OR_CELL
-*/
 
 /obj/item/tool_upgrade/augment/holy_oils
 	name = "holy oils"
@@ -942,7 +933,7 @@
 
 // Randomizes a bunch of weapon stats on application - stats are set on creation of the item to prevent people from re-rolling until they get what they want
 /obj/item/tool_upgrade/augment/randomizer
-	name = "BSL \"Randomizer\" tool polish"
+	name = "SR \"Randomizer\" tool polish"
 	desc = "This unidentified tar-like stable liquid warps and bends reality around it. Applying it to a tool may have unexpected results."
 	icon_state = "randomizer"
 	matter = list(MATERIAL_PLASMA = 4, MATERIAL_URANIUM = 4)
@@ -963,8 +954,8 @@
 	bluespace_entropy(1, get_turf(src))
 
 /obj/item/tool_upgrade/artwork_tool_mod
-	name = "Weird Revolver"
-	desc = "This is an artistically-made tool mod."
+	name = "strange gizmo"
+	desc = "This is a bizarrely crafted tool mod, from an artisan's whim and inspiration."
 	icon_state = "artmod_1"
 	price_tag = 200
 

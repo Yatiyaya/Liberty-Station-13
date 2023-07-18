@@ -881,6 +881,7 @@
 /obj/item/tool_upgrade
 	name = "tool upgrade"
 	icon = 'icons/obj/tool_upgrades.dmi'
+	icon_state = "placeholder" // Eris fix
 	force = WEAPON_FORCE_HARMLESS
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 200

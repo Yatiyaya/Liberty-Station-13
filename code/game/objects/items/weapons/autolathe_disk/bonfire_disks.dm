@@ -14,7 +14,6 @@
 	icon_state = "custodian_forge"
 	designs = list(
 		/datum/design/bioprinter/hearth_lantern,
-		/datum/design/autolathe/tool_upgrade/sanctifier,
 		//molds
 		/datum/design/bioprinter/weapon_mold,
 		/datum/design/bioprinter/armor_mold,
