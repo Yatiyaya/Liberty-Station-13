@@ -513,7 +513,7 @@
 	shield_health = 300
 	max_shield_health = 300
 	offset_from_center = 1
-	high_color = "#668C8D"
+	high_color = "#FFFFFF"
 
 /obj/item/shield_projector/line/custodian_aegis/create_shield(var/newloc, var/new_dir)
 	var/obj/effect/directional_shield/escutcheon/S = new(newloc, src)
