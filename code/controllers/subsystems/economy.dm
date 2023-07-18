@@ -64,12 +64,12 @@ SUBSYSTEM_DEF(economy)
 
 		var/datum/computer_file/report/crew_record/R = get_crewmember_record(A.owner_name)
 
-		//Modify their wage based on nepotism modifier
-		var/nepotism = 1
+		//Modify their wage based on extra_pay modifier
+		var/extra_pay = 1
 		if(R)
-			nepotism = R.get_nepotismMod()
+			extra_pay = R.get_extra_payMod()
 
-		var/amount_to_pay = A.debt + (A.wage * nepotism)
+		var/amount_to_pay = A.debt + (A.wage * extra_pay)
 
 		if(amount_to_pay <= 0)
 			continue
@@ -87,8 +87,8 @@ SUBSYSTEM_DEF(economy)
 			if(R)
 				payroll_mail_account_holder(R, "[ED.name] account", amount_to_pay)
 		else
-			A.debt += (A.wage * nepotism)
-			ED.total_debt += (A.wage * nepotism)
+			A.debt += (A.wage * extra_pay)
+			ED.total_debt += (A.wage * extra_pay)
 			// payroll_mail_where_is_my_money
 
 	// Mail commanding officers and politely ask "Where's the fucking money, shithead?"

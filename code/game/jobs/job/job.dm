@@ -152,13 +152,13 @@
 	if(!account_allowed || (H.mind && H.mind.initial_account))
 		return
 
-	var/nepotism = 1
-	if(H && H.stats.getPerk(PERK_NEPOTISM))
-		nepotism += 0.3
+	var/extra_pay = 1
+	if(H && H.stats.getPerk(PERK_EXTRA_PAY))
+		extra_pay += 0.3
 	if(H && H.stats.getPerk(PERK_DEBTOR))
-		nepotism -= 0.5
+		extra_pay -= 0.5
 
-	var/money_amount = one_time_payment(nepotism)
+	var/money_amount = one_time_payment(extra_pay)
 	var/datum/money_account/M = create_account(H.real_name, money_amount, null, department, wage, aster_guild_member)
 	if(H.mind)
 		var/remembered_info = ""

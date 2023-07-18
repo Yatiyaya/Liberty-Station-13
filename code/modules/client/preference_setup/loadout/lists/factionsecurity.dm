@@ -1,4 +1,12 @@
 /datum/gear/factionsecurity
+	display_name = "Armored Ushanka"
+	path = /obj/item/clothing/head/helmet/marshal/ushanka
+	allowed_roles = list(JOBS_SECURITY)
+	slot = slot_head
+	sort_category = "Faction: Security"
+	cost = 0
+
+/datum/gear/factionsecurity
 	display_name = "winter coat, security"
 	path = /obj/item/clothing/suit/hooded/wintercoat/security
 	allowed_roles = list(JOBS_SECURITY)

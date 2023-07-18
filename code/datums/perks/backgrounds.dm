@@ -342,13 +342,26 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.sanity.positive_prob -= 20
 	..()
 
+
+/////////////////
+/* Misc Perks */
+/////////////////
+
+/datum/perk/no_obsucation
+	name = "Exact Values"
+	desc = "Unlike most people you can fully visulise your states, giving them a more to your understanding grasp. \
+	This is with addition to knowing how likely you are to fail after failing some tasks. \
+	This does not give you detailed view of wounds or other medical issues."
+	icon_state = "obsucation_ranking"
+
+
 /////////////////
 /* Money Perks */
 /////////////////
 
-/datum/perk/background/nepotism
-	name = "Nepotism"
-	desc = "You earn about 30% higher pay than your fellow peers- The spirit of capitalism smiles upon you."
+/datum/perk/background/extra_pay
+	name = "Valued Employee"
+	desc = "Do to one reason or another like, hard work, negotiations, nepotism, ect you earn about 30% more incom then your fellow peers."
 	gain_text = "You feel comforted, knowing the amount of money coming your way."
 	icon_state = "nepotism"
 

@@ -351,6 +351,7 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60)
 	)
 
+//Base union suit that all suits are crafted from
 /datum/craft_recipe/terra/technosuit
 	name = "'Mark V' environmental protection suit"
 	result = /obj/item/clothing/suit/armor/vest/technomancersuit
@@ -390,12 +391,18 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/armor/vest/technomancersuit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
 		list(/obj/item/clothing/head/helmet/technomancersuit, 1, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 40, 5),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, "time" = 5),
+		list(/obj/item/device/lighting/toggleable/flashlight/heavy, 1, "time" = 20),
+		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS),
+		list(QUALITY_WIRE_CUTTING, 30, 5),
+		list(QUALITY_SCREW_DRIVING, 30, "time" = 20)
 	)
 
 /datum/craft_recipe/terra/union_suit_heavy
@@ -405,11 +412,12 @@
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
-		list(QUALITY_HAMMERING, 45, "time" = 10),
-		list(/obj/item/tool_upgrade/armor/melee, 1, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 40, 5),
-		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
+		list(QUALITY_HAMMERING, 35, "time" = 10),
+		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),//someone forgot that the union can't craft melee armor upgrades
+		list(QUALITY_WIRE_CUTTING, 30, 5),
+		list(QUALITY_SCREW_DRIVING, 30, "time" = 20)
 	)
 
 /datum/craft_recipe/terra/union_miner_suit
@@ -418,10 +426,9 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
-		list(QUALITY_HAMMERING, 45, "time" = 10),
+		list(QUALITY_HAMMERING, 35, "time" = 10),
 		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
 		list(/obj/item/gun_upgrade/tacticool_flashlight, 1, "time" = 20),
 		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 20),
@@ -435,13 +442,11 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union/tminer_suit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 5),
-		list(/obj/item/tool_upgrade/reinforcement/stick, 1, "time" = 5),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 5),
 		list(QUALITY_WIRE_CUTTING, 40, 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
 	)
@@ -452,14 +457,10 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_GOLD, "time" = 5),
-		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1, "time" = 5),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
-		list(/obj/item/gun_upgrade/tacticool_flashlight, 1, "time" = 20),
-		list(QUALITY_HAMMERING, 45, "time" = 10),
-		list(/obj/item/clothing/gloves/insulated/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_SILVER, "time" = 5),
+		list(/obj/item/device/lighting/toggleable/flashlight/heavy, 1, "time" = 20),//why someone previously added a flashlight that isn't craftable by the union
+		list(QUALITY_HAMMERING, 45, "time" = 10),,
 		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
@@ -471,13 +472,11 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union/chief_suit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 10, MATERIAL_GOLD, "time" = 5),
-		list(CRAFT_MATERIAL, 10, MATERIAL_SILVER, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
-		list(/obj/item/tool_upgrade/augment/cell_mount, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASMA, "time" = 5),
+		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20)
 	)
