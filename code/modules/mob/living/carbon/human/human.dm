@@ -122,7 +122,7 @@
 		var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
 		if(C)
 			stat("Radiance", "[C.power]/[C.max_power]")
-			stat("Channeling Boost", "[C.channeling_boost]")
+			stat("Radiance generation multiplier", "[C.channeling_boost]")
 
 		var/obj/item/organ/internal/psionic_tumor/B = random_organ_by_process(BP_PSION)
 		if(B)
@@ -130,7 +130,7 @@
 
 		var/obj/item/organ/internal/nanogate/N = random_organ_by_process(BP_NANOGATE)
 		if(N)
-			stat("Nanites Point", "[N.nanite_points]")
+			stat("Nanite Points", "[N.nanite_points]")
 
 	else if(statpanel("Perks"))
 		for(var/obj/effect/statclick/perkHolder in src.stats.perk_stats)

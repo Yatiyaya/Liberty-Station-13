@@ -109,6 +109,8 @@
 		var/obj/_item = new path(get_turf(eotp))
 		eotp.visible_message(SPAN_NOTICE("The [_item.name] appears out of bluespace near the [eotp]!"))
 
+//TODO: Disks with custodian designs for actual NON-GUN weapons, perhaps ranged bows/crossbows?
+
 /datum/armament/item/disk
 	name = "disk"
 	cost = 15
@@ -122,44 +124,10 @@
 		if (text)
 			desc = text
 
-/datum/armament/item/disk/counselor
-	name = "Disk - Counselor"
-	cost = 5
-	min_cost = 5
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/counselor
-
-/datum/armament/item/disk/halicon
-	name = "Disk - Halicon"
-	cost = 15
-	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
-
-/datum/armament/item/disk/halicon
-	name = "Disk - Halicon"
-	cost = 15
-	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/halicon
-
-/datum/armament/item/disk/protector
-	name = "Disk - Protector"
-	cost = 15
-	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/protector
-
-/datum/armament/item/disk/nt_lightfall
-	name = "Disk - Kalmyk"
-	cost = 15
-	min_cost = 10
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
-
-/datum/armament/item/disk/purger
-	name = "Disk - Hunan"
-	cost = 40
-	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/purger
-
-/datum/armament/item/disk/dominion
-	name = "Disk - Shenyang"
-	cost = 80
+// Personal shield. Only way to obtain, for now.
+/datum/armament/item/sash
+	name = "Shielding sash"
+	cost = 100
+	discount_increase = 5
 	min_cost = 80
-	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
+	path = /obj/item/shield_projector/line/custodian_aegis
