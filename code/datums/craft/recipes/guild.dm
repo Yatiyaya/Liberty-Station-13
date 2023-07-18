@@ -548,8 +548,8 @@
 	result = /obj/item/plastique
 	icon_state = "gun_part_7"
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC),
-		list(/obj/item/rdx_block, 1),
+		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 30),
+		list(/obj/item/rdx_block, 1, "time" = 30),
 		list(CRAFT_MATERIAL, 5, MATERIAL_CARDBOARD, "time" = 30),
 		list(/obj/item/device/assembly/igniter, 1),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
@@ -589,7 +589,7 @@
 	result = /obj/item/grenade/flashbang
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
 		list(CRAFT_MATERIAL, 5, MATERIAL_SILVER, "time" = 30),
 		list(/obj/item/device/assembly/timer, 1),
@@ -603,7 +603,7 @@
 	result = /obj/item/grenade/frag/stinger
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
 		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1), // Repurpose the rubber into pellets
 		list(QUALITY_CUTTING, 20, "time" = 30),
@@ -618,7 +618,7 @@
 	result = /obj/item/grenade/explosive
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/rdx_block, 1),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30),
 		list(/obj/item/device/assembly/timer, 1),
@@ -632,7 +632,7 @@
 	result = /obj/item/grenade/frag
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/rdx_block, 1),
 		list(/obj/item/tool_upgrade/augment/spikes, 1), // Serves as the shrapnel
 		list(/obj/item/device/assembly/timer, 1),
@@ -646,9 +646,9 @@
 	result = /obj/item/grenade/heatwave
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
-		list(/obj/item/tool_upgrade/augment/fuel_tank, 1),
+		list(/obj/item/tool_upgrade/augment/fuel_tank, 1, "time" = 30),
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 30),
@@ -660,7 +660,7 @@
 	result = /obj/item/grenade/frag/white_phosphorous
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
 		list(/obj/item/tool_upgrade/augment/fuel_tank, 1),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30), // Very lethal
@@ -675,7 +675,7 @@
 	result = /obj/item/grenade/empgrenade
 	icon_state = "gun_part_7"
 	steps = list(
-		list(/obj/item/grenade/chem_grenade/large/moebius, 1),
+		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
 		list(CRAFT_MATERIAL, 5, MATERIAL_OSMIUM, "time" = 30), // Balance purposes
 		list(/obj/item/device/assembly/timer, 1),

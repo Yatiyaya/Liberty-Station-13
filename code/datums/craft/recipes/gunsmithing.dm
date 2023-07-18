@@ -32,7 +32,7 @@
 	name = "Handmade Rubber Grip"
 	result = /obj/item/part/gun/grip/rubber
 	steps = list(
-		list(/obj/item/part/gun/grip, 1), // ANY grip
+		list(/obj/item/part/gun/grip, 1, "time" = 20), // ANY grip
 		list(QUALITY_SAWING, 20),
 		list(QUALITY_HAMMERING, 20),
 		list(/datum/craft_recipe/tool/rubbermesh, 1), // Rubber!
@@ -43,7 +43,7 @@
 	name = "Handmade Machinegun Mechanism"
 	result = /obj/item/part/gun/mechanism/machinegun
 	steps = list(
-		list(/obj/item/part/gun/mechanism/autorifle, 1), // Printing is better as it costs the same plasteel
+		list(/obj/item/part/gun/mechanism/autorifle, 1, "time" = 20), // Printing is better as it costs the same plasteel
 		list(QUALITY_DRILLING, 20),
 		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_WELDING, 20),
