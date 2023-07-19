@@ -219,8 +219,8 @@
 	Qi = "mgf"
 
 /obj/item/spice_plant/yerbamate
-	name = "yerbamate branch"
-	desc = "A small branch of a yerbamate, can be used for brewing."
+	name = "yerba mate branch"
+	desc = "A small branch of yerba mate, can be used for brewing."
 	icon_state = "marigold"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -229,7 +229,7 @@
 
 /obj/item/spice_plant/coriander
 	name = "coriander leaf"
-	desc = "A small leaves of a coriander bed, can be used for brewing as culitivation of this plant has made its ediblecity questionable."
+	desc = "A small handful of leaves from a coriander bed, can be used for brewing as cultivation methods of this plant has rendered its edibility questionable."
 	icon_state = "marigold"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -237,8 +237,8 @@
 	Qi = "cad"
 
 /obj/item/spice_plant/gourd
-	name = "gourd blump"
-	desc = "A large gourd blump, can be cut open to use as a glass, poke a whole as a flask or even converted with some silk into a payload."
+	name = "gourd bulb"
+	desc = "A large gourd bulb, can be cut open to use as a glass, poke a hole as a flask or even converted with some silk into a payload."
 	icon_state = "marigold"
 	amount_to_harvest = 4
 	growthrate = 15
@@ -352,8 +352,8 @@
 
 
 /obj/machinery/potionmaker
-	name = "culitivation pot"
-	desc = "A massive cooking pot for culitivation and potion brewing."
+	name = "cultivation pot"
+	desc = "A massive cooking pot for cultivation and potion brewing."
 	icon = 'icons/obj/neotheology_spicebed.dmi'
 	icon_state = "spice_pot"
 	density = TRUE
