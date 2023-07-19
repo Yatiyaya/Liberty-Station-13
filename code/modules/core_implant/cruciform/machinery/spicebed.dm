@@ -52,7 +52,6 @@
 		to_chat(user, "<span class='warning'>You can see some [planted_item.name] growing, looks like [get_growth_prefex()].")
 
 /obj/machinery/spicebed/proc/get_growth_prefex(mob/user)
-	..()
 	if(!planted_item)
 		return "nothing is growing"
 	else
