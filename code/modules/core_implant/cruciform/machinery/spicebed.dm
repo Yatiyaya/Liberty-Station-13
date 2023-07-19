@@ -1,6 +1,6 @@
 /obj/machinery/spicebed
 	name = "spicebed grower"
-	desc = "A complex hydroponic try designed to grow a selected rare few herbs that normally could never been cultivated."
+	desc = "A complex hydroponic tray designed to grow selected, rare herbs that normally could have never been cultivated by traditional methods."
 	icon = 'icons/obj/neotheology_spicebed.dmi'
 	icon_state = "spice_pot"
 	density = TRUE
@@ -58,7 +58,7 @@
 		var/grabbed_number = growth_to_percent()
 		switch(grabbed_number)
 			if(0)
-				return "it's jsut been planted"
+				return "it has just been planted"
 			if(1)
 				return "the seedling has sprouted and is growing"
 			if(2)
@@ -78,7 +78,8 @@
 	if(istype(I, /obj/item/spice_plant))
 		if(!planted_item)
 			planted_item = I
-			to_chat(user, "<span class='warning'>You plant [I.name] in [src] without issue.")
+			qdel(I)
+			to_chat(user, "<span class='warning'>You plant \the [I.name] in \the [src].")
 		else
 			to_chat(user, "<span class='warning'>The [src] already has a plant inside.")
 		return
@@ -372,10 +373,10 @@
 		active = TRUE
 		addtimer(CALLBACK(src, .proc/repice_index), cooktime)
 	if(active)
-		to_chat(user, "Somthings already cooking...")
+		to_chat(user, "Something's already brewing...")
 		return
 
-	to_chat(user, "Their is nothing inside the pot to cook.")
+	to_chat(user, "There is nothing inside the pot to brew.")
 
 /obj/machinery/potionmaker/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/cut_gourd))
