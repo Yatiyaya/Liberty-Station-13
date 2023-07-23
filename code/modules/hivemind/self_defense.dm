@@ -111,12 +111,12 @@
 	var/squad = pick("defiler", "twins", "zeus", "swarm", GLOB.hive_data_bool["allow_tyrant_spawn"] ? "tyrant" : "defiler")
 	switch(squad)
 		if("defiler")
-			champion_path = /mob/living/simple_animal/hostile/hivemind/mechiver
+			champion_path = /mob/living/simple_animal/hostile/hivemind/midrib
 			champ_names += "Defiler"
 		if("twins")
 			champ_names = list("Twin Alpha", "Twin Beta", "Twin Gamma")
 			amount = 3
-			champion_path = /mob/living/simple_animal/hostile/hivemind/himan
+			champion_path = /mob/living/simple_animal/hostile/hivemind/stipule
 		if("zeus")
 			champ_names = list("Zeus", "Thor")
 			champion_path = /mob/living/simple_animal/hostile/hivemind/hiborg
