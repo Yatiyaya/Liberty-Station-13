@@ -393,8 +393,6 @@
 	switch(index_leaser)
 		if("debug" || "debugdebug")
 			new /obj/item/stack/thrown/gourd(src.loc)
-
-
 		else
 			new /obj/effect/decal/cleanable/ash(src.loc)
 

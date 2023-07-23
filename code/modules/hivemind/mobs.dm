@@ -74,9 +74,9 @@
 	stance = HOSTILE_STANCE_IDLE //it give us some kind of stun effect
 	target_mob = null
 	SSmove_manager.stop_looping(src)
-	var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
-	sparks.set_up(3, 3, loc)
-	sparks.start()
+	//var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
+	//sparks.set_up(3, 3, loc)
+	//sparks.start()
 	anim_shake(src)
 	if(prob(30))
 		say(pick("Running diagnostics.", "Organ damaged. Aquire replacement.", "Seek new organic components.", "New muscles needed."))
@@ -525,7 +525,7 @@
 					"I will sever your spine."))
 
 
-/////////////////////////////////////HIMAN////////////////////////////////////
+/////////////////////////////////////Stipule////////////////////////////////////
 //Hive + Man
 //Special ability: Shriek, that stuns victims
 //Can fool his enemies and pretend to be dead
@@ -534,11 +534,11 @@
 //Appears from dead human corpses
 //////////////////////////////////////////////////////////////////////////////
 
-/mob/living/simple_animal/hostile/hivemind/himan
-	name = "Himan"
-	desc = "Once a man, now metal plates and tubes weave in and out of their oozing sores."
-	icon_state = "himan"
-	icon_dead = "himan-dead"
+/mob/living/simple_animal/hostile/hivemind/stipule
+	name = "Stipule"
+	desc = "A bloated creature with numerous glandular structures constantly secreting a peculiar mog. Its eye-like feature is actually a reflective white flower, while its mouth resembles a cavity filled with iron-oxide infused thorns."
+	icon_state = "neurophyta_stipule"
+	icon_dead = "neurophyta_stipuledead"
 	health = 250
 	maxHealth = 250
 	melee_damage_lower = 20
@@ -571,7 +571,7 @@
 						)
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/Life()
+/mob/living/simple_animal/hostile/hivemind/stipule/Life()
 	. = ..()
 
 	var/mob/living/targetted_mob = (target_mob?.resolve())
@@ -590,18 +590,18 @@
 		stop_automated_movement = TRUE
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/speak()
+/mob/living/simple_animal/hostile/hivemind/stipule/speak()
 	if(!fake_dead)
 		..()
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/mulfunction()
+/mob/living/simple_animal/hostile/hivemind/stipule/mulfunction()
 	if(fake_dead)
 		return
 	..()
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/MoveToTarget()
+/mob/living/simple_animal/hostile/hivemind/stipule/MoveToTarget()
 	if(!fake_dead)
 		..()
 	else
@@ -615,7 +615,7 @@
 				stance = HOSTILE_STANCE_ATTACKING
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/AttackingTarget()
+/mob/living/simple_animal/hostile/hivemind/stipule/AttackingTarget()
 	if(fake_dead)
 
 		var/mob/living/targetted_mob = (target_mob?.resolve())
@@ -632,7 +632,7 @@
 
 
 //Shriek stuns our victims and make them deaf for a while
-/mob/living/simple_animal/hostile/hivemind/himan/special_ability()
+/mob/living/simple_animal/hostile/hivemind/stipule/special_ability()
 	visible_emote("screams!")
 	playsound(src, 'sound/hallucinations/veryfar_noise.ogg', 90, 1)
 	for(var/mob/living/victim in view(src))
@@ -650,7 +650,7 @@
 
 
 //Insidiously
-/mob/living/simple_animal/hostile/hivemind/himan/proc/fake_death()
+/mob/living/simple_animal/hostile/hivemind/stipule/proc/fake_death()
 	src.visible_message("<b>[src]</b> dies!")
 	destroy_surroundings = FALSE
 	fake_dead = TRUE
@@ -659,7 +659,7 @@
 	fake_dead_wait_time = world.time + 10 SECONDS
 
 
-/mob/living/simple_animal/hostile/hivemind/himan/proc/awake()
+/mob/living/simple_animal/hostile/hivemind/stipule/proc/awake()
 	var/mob/living/targetted_mob = (target_mob?.resolve())
 
 	var/mob/living/L = targetted_mob
@@ -677,7 +677,7 @@
 
 
 
-/////////////////////////////////////MECHIVER/////////////////////////////////
+/////////////////////////////////////MIDRIB/////////////////////////////////
 //Mech + Hive + Driver
 //Special ability: Picking up a victim. Sends hallucinations and harm sometimes, then release
 //Can picking up corpses too, rebuild them to living hive mobs, like it wires do
@@ -686,12 +686,11 @@
 //Rarely can appear from infested machinery (with a circuit board, like an Autholate)
 //////////////////////////////////////////////////////////////////////////////
 
-/mob/living/simple_animal/hostile/hivemind/mechiver
-	name = "Mechiver"
-	desc = "Once an exosuit, this hulking amalgamation of flesh and machine drips fresh blood out of the pilot's hatch."
-	icon = 'icons/mob/hivemind.dmi'
-	icon_state = "mechiver-closed"
-	icon_dead = "mechiver-dead"
+/mob/living/simple_animal/hostile/hivemind/midrib
+	name = "Midrib"
+	desc = "A massive plant mass fused with a bloated human or alien bone structure. Its surface resembles prominent leaf veins. The scent of pollen is intoxicating."
+	icon_state = "neurophyta_midrib"
+	icon_dead = "neurophyta_midribdead"
 	health = 1000
 	maxHealth = 1000
 	melee_damage_lower = 30
@@ -747,7 +746,7 @@
 						"Will you release me?")
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/Life()
+/mob/living/simple_animal/hostile/hivemind/midrib/Life()
 	. = ..()
 	update_icon()
 
@@ -777,7 +776,7 @@
 				break
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/speak()
+/mob/living/simple_animal/hostile/hivemind/midrib/speak()
 	if(!client && prob(speak_chance) && speak.len)
 		if(pilot)
 
@@ -795,7 +794,7 @@
 
 //animations
 //updates every life tick
-/mob/living/simple_animal/hostile/hivemind/mechiver/update_icon()
+/mob/living/simple_animal/hostile/hivemind/midrib/update_icon()
 
 	var/mob/living/targetted_mob = (target_mob?.resolve())
 
@@ -804,23 +803,23 @@
 			return
 		cut_overlays()
 		if(pilot)
-			flick("mechiver-opening", src)
-			icon_state = "mechiver-chief"
-			add_overlay("mechiver-hands")
+			flick("neurophyta_midribopening", src)
+			icon_state = "neurophyta_midrib"
+			//add_overlay("mechiver-hands")
 		else
-			flick("mechiver-opening_wires", src)
-			icon_state = "mechiver-welcome"
-			add_overlay("mechiver-wires")
+			flick("neurophyta_midribopening", src)
+			icon_state = "neurophyta_midribopening"
+			add_overlay("neurophyta_midrib-wires")
 		hatch_closed = FALSE
 	else
 		cut_overlays()
 		hatch_closed = TRUE
-		icon_state = "mechiver-closed"
+		icon_state = "neurophyta_midrib"
 		if(passenger)
-			add_overlay("mechiver-process")
+			add_overlay("midrib-process")
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/AttackingTarget()
+/mob/living/simple_animal/hostile/hivemind/midrib/AttackingTarget()
 
 	var/mob/living/targetted_mob = (target_mob?.resolve())
 
@@ -834,14 +833,15 @@
 
 
 //picking up our victim for good 20 seconds of best road trip ever
-/mob/living/simple_animal/hostile/hivemind/mechiver/special_ability(mob/living/target)
+/mob/living/simple_animal/hostile/hivemind/midrib/special_ability(mob/living/target)
 	var/mob/living/targetted_mob = (target_mob?.resolve())
 
 	if(!targetted_mob && hatch_closed) //when we picking up corpses
 		if(pilot)
-			flick("mechiver-opening", src)
+			flick("neurophyta_midribopening", src)
+		/*
 		else
-			flick("mechiver-opening_wires", src)
+			flick("mechiver-opening_wires", src)*/
 	passenger = target
 	target.loc = src
 	target.canmove = FALSE
@@ -851,12 +851,12 @@
 
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/proc/release_passenger(var/safely = FALSE)
+/mob/living/simple_animal/hostile/hivemind/midrib/proc/release_passenger(var/safely = FALSE)
 	if(passenger)
 		if(pilot)
-			flick("mechiver-opening", src)
-		else
-			flick("mechiver-opening_wires", src)
+			flick("neurophyta_midribopening", src)
+		/*else
+			flick("mechiver-opening_wires", src)*/
 
 		if(istype(passenger, /mob/living/carbon/human))
 			if(!safely) //that was stressful
@@ -880,14 +880,14 @@
 		playsound(src, 'sound/effects/blobattack.ogg', 70, 1)
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/proc/dead_body_restoration(mob/living/corpse)
+/mob/living/simple_animal/hostile/hivemind/midrib/proc/dead_body_restoration(mob/living/corpse)
 	var/picked_mob
 	if(passenger.mob_size <= MOB_SMALL && !client && prob(50))
 		picked_mob = pick(/mob/living/simple_animal/hostile/hivemind/stinger, /mob/living/simple_animal/hostile/hivemind/bomber)
 	else
 		if(pilot)
 			if(istype(corpse, /mob/living/carbon/human))
-				picked_mob = /mob/living/simple_animal/hostile/hivemind/himan
+				picked_mob = /mob/living/simple_animal/hostile/hivemind/stipule
 			else if(istype(corpse, /mob/living/silicon/robot))
 				picked_mob = /mob/living/simple_animal/hostile/hivemind/hiborg
 	if(picked_mob)
@@ -898,7 +898,7 @@
 	destroy_passenger()
 
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/proc/destroy_passenger()
+/mob/living/simple_animal/hostile/hivemind/midrib/proc/destroy_passenger()
 	if(GLOB.hive_data_bool["gibbing_dead"])
 		qdel(passenger)
 	else
@@ -907,11 +907,11 @@
 
 
 //we're not forgot to release our victim safely after death
-/mob/living/simple_animal/hostile/hivemind/mechiver/Destroy()
+/mob/living/simple_animal/hostile/hivemind/midrib/Destroy()
 	release_passenger(TRUE)
 	return ..()
 
-/mob/living/simple_animal/hostile/hivemind/mechiver/death()
+/mob/living/simple_animal/hostile/hivemind/midrib/death()
 	release_passenger(TRUE)
 	. = ..()
 	gibs(loc, null, /obj/effect/gibspawner/robot)
