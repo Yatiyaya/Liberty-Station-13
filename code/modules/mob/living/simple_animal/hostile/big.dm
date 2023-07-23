@@ -135,7 +135,7 @@
 	bones_amount = 20
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)
-	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE)
+	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE, MUTATION_NO_PAIN)
 
 /mob/living/simple_animal/hostile/agape/FindTarget()
 	. = ..()

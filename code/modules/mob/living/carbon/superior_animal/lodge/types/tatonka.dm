@@ -31,6 +31,7 @@
 	var/datum/reagents/udder = null
 	var/offspring_left = 0
 	var/milk_type = "tatonka_milk"
+	inherent_mutations = list(MUTATION_COW_SKIN, MUTATION_IMBECILE, MUTATION_MOO)
 
 /mob/living/carbon/superior_animal/lodge/tatonka/New()
 	udder = new(50)
@@ -112,6 +113,7 @@
 	desc = "Adorable! Four sets of big brown eyes and cute little horns."
 	icon = 'icons/mob/64x64.dmi'
 	icon_state = "brahmin"
+	inherent_mutations = list(MUTATION_COW_SKIN, MUTATION_IMBECILE, MUTATION_MOO)
 	speak_emote = list("moos","moos hauntingly")
 	emote_see = list("shakes its heads.","snuffles.","clacks its horns together.")
 	speak_chance = 2
@@ -158,6 +160,7 @@
 	leather_amount = 10
 	bones_amount = 12
 	has_special_parts = TRUE
+	inherent_mutations = list(MUTATION_COW_SKIN, MUTATION_IMBECILE, MUTATION_MOO, MUTATION_ROBUST_MILK)
 	milk_type = "tangu_milk"
 	special_parts = list(/obj/item/animal_part/tatonka_tongue,
 		/obj/item/animal_part/tatonka_tongue,

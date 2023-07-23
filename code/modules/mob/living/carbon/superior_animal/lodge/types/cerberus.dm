@@ -22,6 +22,7 @@
 	colony_friend = TRUE
 	friendly_to_colony = TRUE
 	randpixel = 0
+	reagent_immune = TRUE // Testing with recluses has been pain, no chem processing for you buddy.
 
 /mob/living/carbon/superior_animal/lodge/cerberus/Life()
 	. = ..()
@@ -76,6 +77,35 @@
 	. =..()
 	default_pixel_x = -16
 	pixel_x = -16
+
+
+// IT'S STEVE! SQUEEE!!!
+/mob/living/carbon/superior_animal/lodge/cerberus/chimera/steve
+	name = "Steve"
+	desc = "It's Steve, the domesticated Hell Diver. He might've gotten separated from his master and is now lost. \
+			Loyal to whoever keeps him fed and orders him to follow, he will relentlessly charge at any threats in the vicinity."
+	icon = 'icons/mob/mobs-domestic.dmi'
+	icon_state = "tunneler"
+	icon_living = "tunneler"
+	icon_dead = "tunneler_dead"
+	gender = "male"
+	move_to_delay = 2
+	armor = list(melee = 30, bullet = 20, energy = 20, bomb = 5, bio = 100, rad = 100)
+	special_parts = list(/obj/item/animal_part/helldiver_tooth, /obj/item/animal_part/chimera_fang)
+	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR, MUTATION_BLINDNESS, MUTATION_ECHOLOCATION, MUTATION_RAD_PROTECTION)
+	default_pixel_x = 0
+	pixel_x = 0
+
+/mob/living/carbon/superior_animal/lodge/cerberus/chimera/steve/Life()
+	. =..()
+	default_pixel_x = 0
+	pixel_x = 0
+
+// HISS
+/mob/living/carbon/superior_animal/lodge/cerberus/chimera/steve/doTargetMessage()
+	. = ..()
+	visible_emote("lets out a guttural snarl in warning!")
+	playsound(src, 'sound/voice/hiss4.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/lodge/cerberus/chimera/moon
 	name = "Luna"

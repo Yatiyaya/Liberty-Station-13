@@ -84,12 +84,12 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 /datum/ritual/cruciform/forgemaster/deconstruction
 	name = "Uproot"
 	phrase = "Oxidate Lecture: Uproot."
-	desc = "Deconstruct a Custodian machine infront of you."
+	desc = "Deconstruct a Custodian machine in front of you."
 	power = 25
 
 /datum/ritual/cruciform/forgemaster/deconstruction/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
 	if(!GLOB.nt_constructs) //Makes sure the list we curated earlier actually exists
-		fail("You have no idea what constitutes a church construct.",user,C,targets)
+		fail("You have no idea what constitutes a Custodian construct.",user,C,targets)
 		return
 
 	var/obj/reclaimed //Variable to be defined later as the removed construct
@@ -103,7 +103,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			break
 
 	if(isnull(loot))
-		fail("There is nothing to remove here.",user,C,targets)
+		fail("There is no Custodian machinery to remove here.",user,C,targets)
 		return
 
 	user.visible_message(SPAN_NOTICE("[user] stretches a hand forward."),SPAN_NOTICE("You start reclaiming."))
@@ -129,7 +129,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			scrap = new scrap(target_turf)
 
 	effect.success()
-	user.visible_message(SPAN_NOTICE("Clanking of parts hit the floor as [user] finishes the machine falls apart."),SPAN_NOTICE("The machine falls apart into it's components."))
+	user.visible_message(SPAN_NOTICE("Clanking of parts hit the floor as [user] finishes, the machine falling apart at their touch."),SPAN_NOTICE("The machine falls apart into its components."))
 
 	qdel(reclaimed)
 	return TRUE
@@ -149,10 +149,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
 	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
@@ -212,10 +212,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
 	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
@@ -257,10 +257,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
 	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 

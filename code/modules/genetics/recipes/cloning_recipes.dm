@@ -148,17 +148,50 @@
 	return new_mutation
 
 //======================================================================
+//Snek!!!
+
+/datum/genetics/mutation_recipe/irradiation/snek
+	required_on_clone_types = list(/mob/living/simple_animal/hostile/snake)
+	required_mutations = list(MUTATION_FRIENDLY)
+
+/datum/genetics/mutation_recipe/irradiation/snek/get_result()
+	var/datum/genetics/mutation/new_mutation = new /datum/genetics/mutation/copy_mob(/mob/living/simple_animal/hostile/dsnake, "Snek")
+	return new_mutation
+
+//======================================================================
+//Diyaab evolutions
+
+/datum/genetics/mutation_recipe/irradiation/diyaab
+	required_on_clone_types = list(/mob/living/simple_animal/hostile/diyaab)
+
+/datum/genetics/mutation_recipe/irradiation/diyaab/get_result()
+	var/list/random_diyaab = pick(
+		list("type" = /mob/living/simple_animal/schlorgo, "name" = "Schlorgo"),
+		list("type" = /mob/living/simple_animal/hostile/shantak, "name" = "Shantak"),
+		list("type" = /mob/living/simple_animal/hostile/samak, "name" = "Samak"))
+	return new /datum/genetics/mutation/copy_mob(random_diyaab["type"], random_diyaab["name"])
+
+//======================================================================
+// Increase pig FURTHER.
+
+/datum/genetics/mutation_recipe/combination/hog
+	required_on_clone_types = list(/mob/living/simple_animal/pig, /mob/living/simple_animal/pig)
+
+/datum/genetics/mutation_recipe/combination/hog/get_result()
+	var/datum/genetics/mutation/new_mutation = new /datum/genetics/mutation/copy_mob(/mob/living/simple_animal/pig/hog, "mycologist hog")
+	return new_mutation
+
+//======================================================================
 //Doggos
 /datum/genetics/mutation_recipe/irradiation/cerberus
-	required_on_clone_types = list(/mob/living/simple_animal/pig)
+	required_on_clone_types = list(/mob/living/simple_animal/corgi) // Domesticated animal evolution
 
 /datum/genetics/mutation_recipe/irradiation/cerberus/get_result()
 	var/datum/genetics/mutation/new_mutation = new /datum/genetics/mutation/copy_mob(/mob/living/carbon/superior_animal/lodge/cerberus, "cerberus")
 	return new_mutation
 
 /datum/genetics/mutation_recipe/combination/chimera
-	required_on_clone_types = list(/mob/living/carbon/superior_animal/lodge/cerberus)
-	required_mutations = list(MUTATION_NERVOUSNESS)
+	required_on_clone_types = list(/mob/living/carbon/superior_animal/lodge/cerberus, /mob/living/simple_animal/hostile/snake) // You know why.
 
 /datum/genetics/mutation_recipe/combination/chimera/get_result()
 	var/datum/genetics/mutation/new_mutation = new /datum/genetics/mutation/copy_mob(/mob/living/carbon/superior_animal/lodge/cerberus/chimera, "chimera")
@@ -173,9 +206,18 @@
 	return new /datum/genetics/mutation/copy_mob(/mob/living/carbon/superior_animal/lodge/clucker, "Clucker")
 
 //======================================================================
+// Cow + Goat = Tahca
+
+/datum/genetics/mutation_recipe/combination/tahca
+	required_on_clone_types = list(/mob/living/simple_animal/cow, /mob/living/simple_animal/hostile/retaliate/goat)
+
+/datum/genetics/mutation_recipe/combination/tahca/get_result()
+	return new /datum/genetics/mutation/copy_mob(/mob/living/simple_animal/hostile/retaliate/tahca, "Tahca")
+
+//======================================================================
 //Tengolos
 /datum/genetics/mutation_recipe/irradiation/tengolo
-	required_on_clone_types = list(/mob/living/simple_animal/hostile/diyaab)
+	required_on_clone_types = list(/mob/living/simple_animal/pig) // Evolved boars
 
 /datum/genetics/mutation_recipe/irradiation/tengolo/get_result()
 	var/list/random_tengolo = pick(

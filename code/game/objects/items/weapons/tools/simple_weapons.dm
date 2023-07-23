@@ -179,6 +179,7 @@
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	max_upgrades = 2
 	tool_qualities = list(QUALITY_HAMMERING = 5)
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Can't attach a plate to a chain.
 
 	has_alt_mode = TRUE
 	alt_mode_damagetype = HALLOSS

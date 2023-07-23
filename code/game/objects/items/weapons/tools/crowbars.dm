@@ -12,6 +12,7 @@
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 	hitsound = 'sound/weapons/smash.ogg'
 	tool_qualities = list(QUALITY_PRYING = 35, QUALITY_DIGGING = 10, QUALITY_HAMMERING = 10)
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // No.
 	price_tag = 15
 
 	has_alt_mode = TRUE

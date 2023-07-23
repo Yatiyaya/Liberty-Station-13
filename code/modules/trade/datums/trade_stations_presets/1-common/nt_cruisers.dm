@@ -20,7 +20,7 @@
 		"Biomatter products" = list(
 			/obj/item/reagent_containers/food/snacks/meat,
 			/obj/item/reagent_containers/food/drinks/milk,
-			/obj/item/soap/church,
+			/obj/item/soap/bonfire,
 			/obj/item/storage/pouch/medium_generic,
 			/obj/item/storage/pouch/large_generic,
 			/obj/item/storage/pouch/medical_supply,

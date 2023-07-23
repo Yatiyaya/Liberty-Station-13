@@ -226,7 +226,7 @@
 	I.prefix = "sharpened"
 
 /obj/item/tool_upgrade/productivity/diamond_blade
-	name = "Skylights \"Gleaming Edge\": diamond blade"
+	name = "Terra Therma's \"Gleaming Edge\" diamond blade"
 	desc = "An adaptable industrial grade cutting disc, with diamond dust worked into the metal. Exceptionally durable. Works for both cutting tools and rifle bayonets."
 	icon_state = "diamond_blade"
 	price_tag = 300
@@ -789,24 +789,27 @@
 		)
 	I.prefix = "righteous"
 
-/*
+
 /obj/item/tool_upgrade/augment/hammer_addon
-	name = "flat surface"
-	icon_state = "hammer_addon"
-	desc = "A attachment that fits on almost everything to create a simple flat surface for hammering."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2)
+	name = "spiked plate"
+	icon_state = "spiked_plate" // Bit of a lazy placeholder I know
+	desc = "A crude attachment of diamond-tipped spikes that fits on most flat hammer heads and maces, \
+			granting an extra oomph behind every swing, but making it unwieldy and unfit as a tool.\nOnce soldered, it cannot be removed."
+	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2, MATERIAL_DIAMOND = 1)
+	can_remove = FALSE
 
 /obj/item/tool_upgrade/augment/hammer_addon/New()
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.tool_upgrades = list(
-	UPGRADE_WORKSPEED = -0.5,
-	UPGRADE_HEALTH_THRESHOLD = 5,
-	tool_qualities = list(QUALITY_HAMMERING = 10)
+	UPGRADE_FORCE_MULT = 2.25, // Can only be applied to hammers/maces, combined damage of whetstone+diamond edge but unlike them, it has downsides.
+	UPGRADE_BULK = 1, // Heavier...
+	UPGRADE_WORKSPEED = -0.5, // ...and thus, slower.
+	UPGRADE_PRECISION = -15, // Spikes at the end make it impossible to be used as a proper hammer anymore
+	UPGRADE_HEALTH_THRESHOLD = 5 // Becomes an extra part of the hammer it's attached to.
 	)
-	I.prefix = "flattened"
-	I.required_qualities = list(QUALITY_BOLT_TURNING, QUALITY_PULSING, QUALITY_PRYING, QUALITY_WELDING, QUALITY_SCREW_DRIVING, QUALITY_WIRE_CUTTING, QUALITY_SHOVELING, QUALITY_DIGGING, QUALITY_EXCAVATION, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_RETRACTING, QUALITY_DRILLING, QUALITY_HAMMERING, QUALITY_SAWING, QUALITY_CUTTING)
-*/
+	I.prefix = "spike-plated"
+	I.required_qualities = list(QUALITY_HAMMERING) // JUST hammers and ONLY to hammers! (and power fists) Has been blacklisted accordingly!
 
 //Vastly reduces tool sounds, for stealthy hacking
 /obj/item/tool_upgrade/augment/dampener

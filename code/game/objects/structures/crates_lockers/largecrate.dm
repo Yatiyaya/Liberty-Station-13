@@ -90,6 +90,11 @@
 	held_count = 5
 	held_type = /mob/living/simple_animal/chick
 
+/obj/structure/largecrate/animal/snake
+	name = "snakes on a crate"
+	held_count = 5
+	held_type = /mob/living/simple_animal/hostile/snake
+
 /obj/structure/largecrate/animal/giant_spider
 	name = "Giant Spider crate"
 	held_type = /mob/living/carbon/superior_animal/giant_spider

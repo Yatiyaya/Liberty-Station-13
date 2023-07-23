@@ -128,6 +128,7 @@
 
 /obj/item/soap/deluxe
 	name = "deluxe soap"
+	desc = "A luxury brand bar of soap. Smells faintly of peaches."
 	icon_state = "soapdeluxe"
 	clean_speed = 40
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 5
@@ -137,14 +138,15 @@
 	desc = "A deluxe Skylight-brand bar of soap. Smells of [pick("lavender", "vanilla", "strawberry", "chocolate" ,"space")]."
 	..()
 
-/obj/item/soap/church
-	name = "holy soap" // Be clean or be dead
-	desc = "An Bonfire-brand bar of soap. It has a faithful smell."
-	icon_state = "soapchurch"
+/obj/item/soap/bonfire
+	name = "bonfire soap"
+	desc = "A bar of soap made by the Custodians of the Bonfire. To cleanse away the impurities by fire, or rather, soap."
+	icon_state = "soapbonfire"
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 6
 	clean_speed = 45
 	reagent_storage = 25 //we can clean 5 more tiles before needing more water
-	cleaning_reagent = "holywater"
+	matter = list(MATERIAL_BIOMATTER = 6, MATERIAL_BIO_SILK = 6)
+	cleaning_reagent = "sterilizine"
 	bless_tile = TRUE
 	price_tag = 30
 

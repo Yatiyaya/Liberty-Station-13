@@ -192,7 +192,7 @@
 	vendor_department = DEPARTMENT_CHURCH
 	products = list(/obj/item/book/ritual/hearthlantern = 10,
 					/obj/item/storage/fancy/candle_box = 10,
-					/obj/item/soap/church = 5,
+					/obj/item/soap/bonfire = 5,
 					/obj/item/storage/wallet = 5,
 					/obj/item/storage/belt/utility/custodian = 5,
 					/obj/item/storage/backpack/duffelbag = 5,
@@ -214,7 +214,7 @@
 
 	prices = list(/obj/item/book/ritual/hearthlantern = 5,
 					/obj/item/storage/fancy/candle_box = 30,
-					/obj/item/soap/church = 50,
+					/obj/item/soap/bonfire = 50,
 					/obj/item/storage/wallet = 15,
 					/obj/item/storage/belt/utility/custodian = 20,
 					/obj/item/storage/backpack/duffelbag = 75,

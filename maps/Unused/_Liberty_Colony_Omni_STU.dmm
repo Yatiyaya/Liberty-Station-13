@@ -57978,7 +57978,7 @@
 /obj/structure/mopbucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/mop,
-/obj/item/soap/church,
+/obj/item/soap/bonfire,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/storage)
 "ljw" = (
@@ -109970,7 +109970,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 5
 	},
-/obj/item/soap/church,
+/obj/item/soap/bonfire,
 /obj/item/stack/cable_coil/random,
 /obj/item/clothing/head/welding,
 /turf/simulated/floor/tiled/dark/gray_platform,

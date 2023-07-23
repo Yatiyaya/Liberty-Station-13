@@ -71,6 +71,7 @@
 	desc = "A disk containing specially crafted healing supplies by use of Custodian materials"
 	icon_state = "custodian_health"
 	designs = list(
+		/datum/design/bioprinter/custodian_soap,
 		/datum/design/bioprinter/custodian_healthpack,
 		/datum/design/bioprinter/pouch/ifak,
 		/datum/design/bioprinter/custodian_bruisepack,

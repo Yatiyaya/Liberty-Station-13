@@ -35,7 +35,7 @@
 	icon_state = "xenolab"
 
 /obj/structure/sign/department/anomaly
-	name = "ANOMALYLAB"
+	name = "ANOMALY LAB"
 	icon_state = "anomaly"
 
 /obj/structure/sign/department/dock
@@ -83,7 +83,7 @@
 	icon_state = "bridge"
 
 /obj/structure/sign/department/telecoms
-	name = "TELECOMS"
+	name = "TELECOMMS"
 	icon_state = "telecoms"
 
 /obj/structure/sign/department/conference_room
@@ -127,7 +127,7 @@
 	icon_state = "atmos"
 
 /obj/structure/sign/department/shield
-	name = "SHIELDGEN"
+	name = "SHIELD GENERATORS"
 	icon_state = "shield"
 
 /obj/structure/sign/department/drones
@@ -139,11 +139,11 @@
 	icon_state = "interrogation"
 
 /obj/structure/sign/department/commander
-	name = "IHS COMMANDER"
+	name = "DEPUTY CHIEF"
 	icon_state = "commander"
 
 /obj/structure/sign/department/armory
-	name = "IHS ARMORY"
+	name = "ARMORY"
 	icon_state = "armory"
 
 /obj/structure/sign/department/prison

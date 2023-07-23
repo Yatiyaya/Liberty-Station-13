@@ -203,7 +203,7 @@
 
 //Metal rods reinforced with regular tape
 /datum/craft_recipe/tool/brace
-	name = "tool mod: brace bar"
+	name = "brace bar"
 	result = /obj/item/tool_upgrade/reinforcement/stick
 	steps = list(
 		list(/obj/item/stack/rods, 3, 30),
@@ -213,7 +213,7 @@
 
 //Welding backpack disassembled into a smaller tank
 /datum/craft_recipe/tool/fuel_tank
-	name = "tool mod: expanded fuel tank"
+	name = "expanded fuel tank"
 	result = /obj/item/tool_upgrade/augment/fuel_tank
 
 	steps = list(
@@ -241,7 +241,7 @@
 //An improvised adapter to fit a larger power cell. This is pretty fancy as crafted items go
 //Requires an APC frame, a fuckton of wires, a large cell, and several tools
 /datum/craft_recipe/tool/cell_mount
-	name = "tool mod: heavy cell mount"
+	name = "heavy cell mount"
 	result = /obj/item/tool_upgrade/augment/cell_mount
 	icon_state = "electronic"
 	steps = list(
@@ -258,7 +258,7 @@
 
 //A metal plate with bolts drilled and wrenched into it
 /datum/craft_recipe/tool/plate
-	name = "tool mod: reinforcement plate"
+	name = "reinforced plate"
 	result = /obj/item/tool_upgrade/reinforcement/plating
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
@@ -267,31 +267,47 @@
 		list(QUALITY_BOLT_TURNING, 10, 150)
 	)
 
+//A rubber mesh to defend the sensitive bits
+/datum/craft_recipe/tool/rubbermesh
+	name = "rubber mesh"
+	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 30),
+		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
+	)
+
 
 //An array of sharpened bits of metal to turn a tool into more of a weapon
 /datum/craft_recipe/tool/spikes
-	name = "tool mod: spikes"
+	name = "spikes tool mod"
 	result = /obj/item/tool_upgrade/augment/spikes
 	steps = list(
 		list(/obj/item/stack/rods, 2, 30),
-		list(QUALITY_WELDING, 10, 150),
-		list(QUALITY_HAMMERING, 15, 150),
-		list(QUALITY_SAWING, 15, 150)
+		list(QUALITY_WELDING, 10, 75),
+		list(QUALITY_HAMMERING, 15, 75),
+		list(QUALITY_SAWING, 15, 75)
 	)
+
+// A damage addon for hammer-type blunt weapons to stay competitive versus whetstone/diamond blade
+/datum/craft_recipe/tool/hammer_addon
+	name = "spiked plate"
+	result = /obj/item/tool_upgrade/augment/hammer_addon
+	steps = list(
+		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(QUALITY_HAMMERING, 20, 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(/obj/item/tool_upgrade/augment/spikes, 1, 30), // The spikes!
+		list(QUALITY_WELDING, 20, 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_DIAMOND), // Even sharper tips!
+	)
+
 //A bucket of wax to be applied to tools
 /datum/craft_recipe/tool/waxcoat
-	name = "tool mod: wax coating"
+	name = "wax coating"
 	result = /obj/item/tool_upgrade/productivity/waxcoat
 	steps = list(
 			list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
 			list(QUALITY_WIRE_CUTTING, 10, 50),
 			list(/obj/item/stack/wax, 4, 4)
 	)
-//A rubber mesh to defend the sensitive bits
-/datum/craft_recipe/tool/rubbermesh
-	name = "Rubber Mesh"
-	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
-	)
+

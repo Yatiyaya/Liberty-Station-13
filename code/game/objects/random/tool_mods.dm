@@ -25,6 +25,7 @@
 	/obj/item/tool_upgrade/augment/fuel_tank = 1,
 	/obj/item/tool_upgrade/augment/expansion = 0.25,
 	/obj/item/tool_upgrade/augment/spikes = 1,
+	/obj/item/tool_upgrade/augment/hammer_addon = 1,
 	/obj/item/tool_upgrade/augment/dampener = 0.5,
 	/obj/item/tool_upgrade/reinforcement/rubbermesh = 0.5,
 	/obj/item/tool_upgrade/productivity/booster = 0.25,

@@ -124,7 +124,7 @@
 			if(H.nutrition >= nutri_cost)
 				H.nutrition -= nutri_cost
 			else
-				to_chat(H, SPAN_WARNING("You manage to cast the litany at a cost. The physical body consumes itself..."))
+				to_chat(H, SPAN_WARNING("You manage to cast the lecture at a cost. Your Hearthcore takes its toll in blood..."))
 				H.vessel.remove_reagent("blood",blood_cost)
 		return success
 
@@ -141,7 +141,7 @@
 /datum/ritual/cruciform/machines/bioreactor/solution
 	name = "Solution Pumping"
 	phrase = "Oxidate Lecture: Solution Pumping."
-	desc = "This lecture pumps solution in or out of the Bonfire. Requires you to be near its console."
+	desc = "This lecture pumps scorch solution in or out of the Bonfire. Requires you to be near its console."
 
 /datum/ritual/cruciform/machines/bioreactor/solution/perform_command(datum/multistructure/bioreactor/bioreactor)
 	if(!bioreactor.chamber_closed)

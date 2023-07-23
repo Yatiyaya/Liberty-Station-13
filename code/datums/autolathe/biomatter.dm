@@ -13,7 +13,7 @@
 
 /datum/design/bioprinter/soap
 	name = "Soap"
-	build_path = /obj/item/soap/church
+	build_path = /obj/item/soap/bonfire
 
 //[NUTRIMENTS]
 /datum/design/bioprinter/ez
@@ -197,6 +197,9 @@
 	name = "Bonfire Burnpack"
 	build_path = /obj/item/stack/medical/ointment/advanced/nt
 
+/datum/design/bioprinter/custodian_soap
+	name = "Bonfire Soap"
+	build_path = /obj/item/soap/bonfire
 
 // end of Custodian disk designs //
 

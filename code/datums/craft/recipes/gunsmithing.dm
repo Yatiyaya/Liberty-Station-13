@@ -35,7 +35,7 @@
 		list(/obj/item/part/gun/grip, 1, "time" = 20), // ANY grip
 		list(QUALITY_SAWING, 20),
 		list(QUALITY_HAMMERING, 20),
-		list(/datum/craft_recipe/tool/rubbermesh, 1), // Rubber!
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1), // Rubber!
 		list(QUALITY_WELDING, 20)
 	)
 

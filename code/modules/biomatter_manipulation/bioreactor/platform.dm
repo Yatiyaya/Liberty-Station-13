@@ -179,6 +179,8 @@
 	name = "bonfire glass"
 	icon = 'icons/obj/machines/bonfire.dmi'
 	layer = ABOVE_MOB_LAYER
+	maxHealth = 200
+	resistance = RESISTANCE_TOUGH
 	var/contamination_level = 0
 	var/max_contamination_lvl = 5
 
@@ -187,15 +189,15 @@
 	..()
 	switch(contamination_level)
 		if(1)
-			to_chat(user, SPAN_NOTICE("There are a few stains on it. Except this, [src] looks pretty clean."))
+			to_chat(user, SPAN_NOTICE("There are only a few stains on it. Nonetheless, \the [src] looks pretty clean."))
 		if(2)
-			to_chat(user, SPAN_NOTICE("You see signs of biomatter on this [src]. Better to clean it up."))
+			to_chat(user, SPAN_NOTICE("You see signs of scorch on this [src]. Best to clean it up."))
 		if(3)
-			to_chat(user, SPAN_WARNING("This [src] has clear signs and stains of biomatter."))
+			to_chat(user, SPAN_WARNING("\The [src] has clear signs and stains of scorch."))
 		if(4)
-			to_chat(user, SPAN_WARNING("You see a high amount of biomatter on \the [src]. It's dirty as hell."))
+			to_chat(user, SPAN_WARNING("You see a high amount of scorch on \the [src]. It's dirty as hell."))
 		if(5)
-			to_chat(user, SPAN_WARNING("Now it's hard to see what's inside. Better to clean this [src]."))
+			to_chat(user, SPAN_WARNING("Now it's hard to see what's inside. Better to clean this up before it causes issues."))
 		else
 			to_chat(user, SPAN_NOTICE("This [src] is so clean, that you can see your reflection. Is that something green in your teeth?"))
 

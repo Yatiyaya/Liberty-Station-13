@@ -2,7 +2,7 @@
 	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
-	fail_message = "The Hearthcore feels cold against your chest."
+	fail_message = "The Hearthcore feels cold against your back."
 	category = "EOTP"
 	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
@@ -83,7 +83,7 @@
 /datum/ritual/cruciform/custodian/offering/buy_item
 	name = "Order Armaments"
 	phrase = "Oxidate Lecture: Order Armaments"
-	desc = "Allows you to spend favor to unlock disks from the lower stronghold."
+	desc = "Allows you to spend armament reserves to order specialized weaponry from the lower Stronghold."
 
 /datum/ritual/cruciform/custodian/offering/buy_item/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	var/list/OBJS = get_front(H)
