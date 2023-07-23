@@ -1909,6 +1909,7 @@
 #include "code\modules\core_implant\cruciform\machinery\obelisk.dm"
 #include "code\modules\core_implant\cruciform\machinery\onlooker.dm"
 #include "code\modules\core_implant\cruciform\machinery\sentinel.dm"
+#include "code\modules\core_implant\cruciform\machinery\spicebed.dm"
 #include "code\modules\core_implant\cruciform\machinery\textials.dm"
 #include "code\modules\core_implant\cruciform\rituals\base.dm"
 #include "code\modules\core_implant\cruciform\rituals\construction.dm"
