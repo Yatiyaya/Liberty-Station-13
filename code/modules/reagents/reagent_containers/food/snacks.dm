@@ -82,8 +82,8 @@
 			companions = TRUE
 	if(companions)
 		sanity_gain_per_bite += base_sanity_gain_per_bite * 0.3
-		message += " The food tastes much better in the company of others."
-		if(view_death && !eater.stats.getPerk(PERK_NIHILIST))
+		message += " Food tastes much better in the company of others."
+		if(view_death && !eater.stats.getPerk(PERK_NIHILIST) && !eater.stats.getPerk(PERK_SURVIVOR))
 			message = "Your gaze falls on the cadaver. Your food doesn't taste so good anymore."
 			sanity_gain_per_bite = 0
 			return list(sanity_gain_per_bite, SPAN_WARNING(message))
@@ -175,7 +175,7 @@
 
 /obj/item/reagent_containers/food/snacks/attack(mob/mob as mob, mob/user as mob, def_zone)
 	if(!reagents.total_volume)
-		to_chat(user, SPAN_DANGER("None of [src] left!"))
+		to_chat(user, SPAN_DANGER("None of \the [src] left!"))
 		user.drop_from_inventory(src)
 		qdel(src)
 		return 0
@@ -233,9 +233,10 @@
 			playsound(mob.loc,pick(mob.eat_sounds), rand(10,50), 1)
 			if(reagents.total_volume)
 				var/amount_eaten = min(reagents.total_volume, bitesize)
+				var/list/sanity_vars = get_sanity_gain(mob)
 				reagents.trans_to_mob(mob, amount_eaten, CHEM_INGEST)
 				if(istype(human))
-					human.sanity.onEat(src, amount_eaten)
+					human.sanity.onEat(src, sanity_vars[1], sanity_vars[2])
 				bitecount++
 				On_Consume(mob, user)
 			return 1

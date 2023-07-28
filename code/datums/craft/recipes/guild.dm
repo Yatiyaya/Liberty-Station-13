@@ -97,7 +97,7 @@
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 25, "time" = 40)
 	)
-/* Currently high end tool loot, and for Skylight
+/* Currently high end tool loot, and ordered through Skylight
 /datum/craft_recipe/terra/omnitool
 	name = "Munchkin 5000"
 	result = /obj/item/tool/omnitool
@@ -158,13 +158,12 @@
 	name = "\"Little Helper\" Omnitool"
 	result = /obj/item/tool/engimultitool
 	steps = list(
-		list(/obj/item/storage/toolbox, 1),
-		list(/obj/item/circuitboard, 1), // Same as improv multitool, need a base
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 60),
+		list(QUALITY_WELDING, 30, 20),
+		list(/obj/item/circuitboard, 1),
 		list(QUALITY_SCREW_DRIVING, 20, 40),
 		list(QUALITY_WIRE_CUTTING, 20, 40),
-		list(CRAFT_MATERIAL, 1, MATERIAL_OSMIUM, 60),
-		list(QUALITY_WELDING, 30, 20),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 20),
+		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, 20),
 		list(QUALITY_BOLT_TURNING, 30, 40),
 		list(QUALITY_HAMMERING, 30, 20),
 		list(/obj/item/stack/cable_coil, 30, 20),

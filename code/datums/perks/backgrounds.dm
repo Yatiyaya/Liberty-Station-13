@@ -330,7 +330,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 /datum/perk/fate/paper_worm
 	name = "Paper Worm"
 	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \
-			You have lower stats all around, but have a higher chance to have increased stat growth on level up."
+			You have lower stats all around, but have a higher chance to have positive mental breakdowns."
 	icon_state = "paper"
 
 /datum/perk/fate/paper_worm/assign(mob/living/carbon/human/H)
@@ -349,7 +349,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/no_obsucation
 	name = "Exact Values"
-	desc = "Unlike most people you can fully visulise your states, giving them a more to your understanding grasp. \
+	desc = "Unlike most people you can fully visualize your states, giving your self understanding a more thorough grasp. \
 	This is with addition to knowing how likely you are to fail after failing some tasks. \
 	This does not give you detailed view of wounds or other medical issues."
 	icon_state = "obsucation_ranking"
@@ -361,7 +361,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/extra_pay
 	name = "Valued Employee"
-	desc = "Do to one reason or another like, hard work, negotiations, nepotism, ect you earn about 30% more incom then your fellow peers."
+	desc = "Due to one reason or another, like hard work, negotiations, or nepotism, you earn about 30% more income than your fellow peers."
 	gain_text = "You feel comforted, knowing the amount of money coming your way."
 	icon_state = "nepotism"
 

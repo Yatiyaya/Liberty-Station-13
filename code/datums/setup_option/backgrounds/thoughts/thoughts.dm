@@ -7,7 +7,7 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
-	stat_modifiers = list(STAT_COG = -10)
+	stat_modifiers = list(STAT_COG = -10, STAT_TGH = 5, STAT_ROB = 5)
 
 /datum/category_item/setup_option/background/thoughts/composure
 	name = "Survivor Mindset"
@@ -15,7 +15,7 @@
 	Never did you lose your composure in front of others, uttered a singular tear in your entire life, you are the definition of a hard-ass. \
 	But this left you emotionally stunted, unable to feel any empathy for others or being able to relate to simplest emotions besides your own will to survive. \
 	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan."
-
+	stat_modifiers = list(STAT_WIL = 10, STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_COG = -10)
 	perks = list(PERK_SURVIVOR)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
@@ -27,7 +27,7 @@
 
 	perks = list(PERK_REJECTED_GENIUS)
 
-	stat_modifiers = list(STAT_COG = 10, STAT_ROB = -5, STAT_VIG = -5, STAT_TGH = -5)
+	stat_modifiers = list(STAT_COG = 10, STAT_ROB = -5, STAT_WIL = -5, STAT_TGH = -5)
 
 /datum/category_item/setup_option/background/thoughts/authority
 	name = "Baron of Conscience"
@@ -35,7 +35,7 @@
 	Merely standing in presence of such unfortunate individuals lifts their spirit right back up allowing them to go on throught with another day.\
 	This idea is rarity among the many disillusioned spacefarers making your idealist stance on life even more refreshing to see.\
 	Keep in mind however that even the most resillient people can snap and that it's not possible to help everyone."
-
+	stat_modifiers = list(STAT_WIL = 10, STAT_COG = -5, STAT_BIO = -5)
 	perks = list(PERK_IDEALIST)
 
 /datum/category_item/setup_option/background/thoughts/volition
@@ -44,7 +44,7 @@
 	Everything is bleak in your eyes, colourless and without purpose wishing for it all to go down into dust. \
 	On the flipside you never get to feel the immesurable dissapointment most individuals go through if you didn't even ever have any expectations in the first place. \
 	Bitterness shields you against the horrors of this world, in face of death you merely smirk without care in the world."
-
+	stat_modifiers = list(STAT_COG = -10, STAT_ROB = -5, STAT_MEC = 5, STAT_BIO = 5, STAT_TGH = 5)
 	perks = list(PERK_NIHILIST)
 
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
@@ -68,7 +68,7 @@
 
 	perks = list(PERK_RAT)
 
-	stat_modifiers = list(STAT_VIG = 10, STAT_ROB = -10, STAT_WIL = -5)
+	stat_modifiers = list(STAT_VIG = 10, STAT_ROB = -10, STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/reality_not
 	name = "Reality Rejector"
@@ -81,7 +81,7 @@
 
 /datum/category_item/setup_option/background/thoughts/true_data
 	name = "3rd Eye"
-	desc = "Do to being more intonement with what you are and whats around you things that were once hidden behind probability or guessing are shown to you as factual odds."
+	desc = "Due to being more intoned with what you are and what's around you, things that were once hidden behind probability or guessing are shown to you as factual odds."
 	perks = list(PERK_NO_OBSUCATION)
 
 	stat_modifiers = list(STAT_VIG = 5, STAT_WIL = -5, STAT_COG = 5, STAT_MEC = -5)

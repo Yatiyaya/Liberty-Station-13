@@ -239,7 +239,7 @@
 
 /datum/stat/vivification
 	name = STAT_WIL
-	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs and horrors of the world."
+	desc = "Both body and mind can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle both drugs' effects and the horrors of the world."
 
 /datum/stat/cognition
 	name = STAT_COG

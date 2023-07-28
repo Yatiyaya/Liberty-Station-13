@@ -96,10 +96,10 @@
 
 // For when you want everything in a single arm.
 /datum/craft_recipe/tool/toolimplant
-	name = "Improvised multitool implant"
+	name = "\improper Improvised omnitool implant"
 	result = /obj/item/organ_module/active/simple/makeshift
 	steps = list(
-		list(/obj/item/storage/toolbox, 1),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, 20),
 		list(/obj/item/circuitboard, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(/obj/item/tool/screwdriver/improvised, 1),
@@ -114,7 +114,7 @@
 
 // In case you want it in your hands and not implanted
 /datum/craft_recipe/tool/makeshift_omnitool
-	name = "Improvised omnitool"
+	name = "\improper Improvised omnitool"
 	result = /obj/item/tool/multitool_improvised
 	steps = list(
 		list(/obj/item/organ_module/active/simple/makeshift, 1),

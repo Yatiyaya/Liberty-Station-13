@@ -155,15 +155,15 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	. = 0
 	if(sanity_invulnerability)//Sorry, but that needed to be added here :C
 		return
-	var/wil = owner.stats.getStat(STAT_WIL)
+	var/cog = owner.stats.getStat(STAT_COG)
 	for(var/atom/A in view(owner.client ? owner.client : owner))
 		if(A.sanity_damage) //If this thing is not nice to behold
-			. += SANITY_DAMAGE_VIEW(A.sanity_damage, wil, get_dist(owner, A))
+			. += SANITY_DAMAGE_VIEW(A.sanity_damage, cog, get_dist(owner, A))
 
 		if(owner.stats.getPerk(PERK_IDEALIST) && ishuman(A)) //Moralists react negatively to people in distress
 			var/mob/living/carbon/human/H = A
 			if(H.sanity.level < 30 || H.health < 50)
-				. += SANITY_DAMAGE_VIEW(0.1, wil, get_dist(owner, A))
+				. += SANITY_DAMAGE_VIEW(0.1, cog, get_dist(owner, A))
 // Hold yourself together. Keep your Morale up.
 
 /datum/sanity/proc/handle_area()
