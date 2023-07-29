@@ -457,7 +457,7 @@
 	center_of_mass = list("x"=16, "y"=13)
 	nutriment_amt = 1
 	nutriment_desc = list("chocolate" = 5)
-	preloaded_reagents = list("sugar" = 2, "chocolate" = 3, "preservatives" = 2)
+	preloaded_reagents = list("sugar" = 2, "coco" = 3, "preservatives" = 2)
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatecoin
@@ -1449,10 +1449,9 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#FFFF00"
 	center_of_mass = list("x"=16, "y"=18)
-	nutriment_desc = list("apple" = 8)
+	nutriment_desc = list("extremely luxurious apples" = 5, "puff pastry" = 3)
 	nutriment_amt = 8
 	bitesize = 3
-	preloaded_reagents = list("extremely luxurious apples" = 5, "puff pastry" = 3)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 20)
 
