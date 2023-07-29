@@ -30875,18 +30875,17 @@
 /area/liberty/maintenance/caveameridian)
 "hwE" = (
 /obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/snacks/candy,
 /obj/item/flame/candle{
 	pixel_y = 20
 	},
-/obj/item/oddity/common/book_omega/closed,
-/obj/effect/decal/cleanable/crayon{
-	color = "#FF0000"
-	},
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/burrow{
+	deepmaint_entry_point = 1;
+	isRevealed = 1;
+	name = "ominous cracks";
+	desc = "Cracks on the floor that emanate an undescribable, otherworldly color. The faint grotesque, eldritch screeches that seep from the places between awakens primal fear running down your spine..."
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/oldlibrary)
 "hwI" = (
@@ -67541,12 +67540,6 @@
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
 "qBH" = (
-/obj/structure/burrow{
-	deepmaint_entry_point = 1;
-	desc = "Cracks on the floor, yet you can see shifting lights and hear the tick of crawling clawed beasts below...";
-	isRevealed = 1;
-	name = "strange cracks"
-	},
 /obj/random/gun_fancy,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
@@ -77473,15 +77466,6 @@
 "sUd" = (
 /turf/unsimulated/mineral,
 /area/liberty/maintenance/undergroundfloor3south)
-"sUf" = (
-/obj/structure/burrow{
-	deepmaint_entry_point = 1;
-	desc = "Cracks on the floor, yet you can see shifting lights and hear the tick of crawling clawed beasts below...";
-	isRevealed = 1;
-	name = "strange cracks"
-	},
-/turf/simulated/floor/rock,
-/area/liberty/maintenance/caveagape)
 "sUq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/material/metal,
@@ -86748,7 +86732,14 @@
 /area/turret_protected/ai_upload)
 "vmy" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/candy,
+/obj/item/oddity/common/book_omega/closed,
+/obj/effect/decal/cleanable/crayon{
+	color = "#FF0000"
+	},
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/oldlibrary)
@@ -121581,7 +121572,7 @@ ozS
 ozS
 ozS
 quf
-sUf
+quf
 quf
 quf
 ltt

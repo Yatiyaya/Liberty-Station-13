@@ -418,7 +418,7 @@
 		))
 
 /obj/random/mob/vox/low_chance
-	name = "low chance nightmare 50%"
+	name = "low chance random vox 50%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 50 //Coin flip
 

@@ -208,14 +208,22 @@
 
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
+	icon_state = "green"
 	allows_weather_of_snow = TRUE
 	turf_initializer = null
+
+/area/liberty/dungeon/outside/frozen_forest_lake
+	name = "Frozen Forest Lake"
+	allows_weather_of_snow = TRUE
+	icon_state = "erisblue"
+	ambience = list('sound/ambience/frozenlake.ogg')
 
 /area/liberty/dungeon/outside/frozen_forest_caves
 	name = "Frozen Forest Cave system"
 	dynamic_lighting = TRUE
 	allows_weather_of_snow = FALSE
 	is_dungeon_lootable = TRUE
+	ambience = list('sound/ambience/maintambience.ogg', 'sound/ambience/arctic_cave.ogg')
 
 /area/liberty/dungeon/outside/frozen_forest_house
 	name = "Frozen Forest Ruined House"
@@ -224,19 +232,40 @@
 	is_dungeon_lootable = TRUE
 
 /area/liberty/dungeon/outside/frozen_forest_simil_base
-	name = "Frozen Forest Simulacrum Robotics Mining Entrence"
+	name = "Simulacrum Robotics Mining Offices"
 	allows_weather_of_snow = FALSE
 	requires_power = FALSE
+	icon_state = "erisred"
 	turf_initializer = null
 
 /area/liberty/dungeon/outside/frozen_forest/crashsite
 	name = "Frozen Forest - Crashsite"
 	allows_weather_of_snow = TRUE
+	icon_state = "green"
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/dungeon/outside/frozen_forest/crashsite_lakes
+	name = "Crashsite lakes"
+	allows_weather_of_snow = TRUE
+	icon_state = "erisblue"
+	ambience = list('sound/ambience/frozenlake.ogg')
+
+/area/liberty/dungeon/outside/frozen_forest/crashsite_cave
+	name = "Crashsite Caves"
+	icon_state = "erisyellow"
+	dynamic_lighting = TRUE
+	ambience = list('sound/ambience/arctic_cave.ogg')
+
+/area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under
+	name = "Crashsite Caves - Underground"
+	dynamic_lighting = TRUE
+	icon_state = "erisyellow"
+	ambience = list('sound/ambience/maintambience.ogg')
 
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
 	icon_state = "libertygreen"
-	ambience = list('sound/ambience/ambigen9.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambigen11.ogg', 'sound/ambience/ambigen12.ogg')
+	ambience = list('sound/ambience/maintambience.ogg', 'sound/ambience/arctic_cave.ogg')
 	dynamic_lighting = TRUE
 
 /area/liberty/dungeon/outside/abandoned_solars
@@ -250,6 +279,7 @@
 /area/liberty/dungeon/outside/burned_outpost
 	name = "Burned Outpost"
 	icon_state = "erisgreen"
+	ambience = list('sound/ambience/arctic_cave.ogg')
 
 /area/liberty/dungeon/outside/hunter_cabin
 	name = "Abandoned Hunter Cabin"
@@ -268,26 +298,40 @@
 	ambience = list('sound/ambience/ambigen9.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambigen11.ogg', 'sound/ambience/ambigen12.ogg')
 	dynamic_lighting = TRUE
 
-/area/liberty/dungeon/outside/abandoned_outpost
-	name = "Lost Outpost"
+/area/liberty/dungeon/outside/shuttle_crash
+	name = "Crashed Emergency Shuttle"
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
+
+/area/liberty/dungeon/outside/abandoned_outpost
+	name = "%!#ERR0R$?&" // Cultist interference with GPS.
+	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
+	ambience = list('sound/ambience/occ_scaryambie.ogg') // Deep maint entrance spoilers.
 
 /area/liberty/dungeon/outside/zoo
 	name = "Abandoned Research Lab"
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
 
-/area/liberty/dungeon/outside/prepper
-	name = "Prepper Base"
+/area/liberty/dungeon/outside/prison_exterior
+	name = "Occupied Prison Complex"
 	icon_state = "erisgreen"
-	ambience = list('sound/ambience/ambimo1.ogg', 'sound/ambience/ambimo2.ogg')
+	ambience = list('sound/ambience/sovietcheer.ogg') // If this and the warning signs ain't enough of a warning then I don't know.
+	dynamic_lighting = TRUE
+	allows_weather_of_snow = TRUE // It's the surrounding exterior areas.
+
+/area/liberty/dungeon/outside/prison_interior
+	name = "Occupied Prison Complex Interior"
+	icon_state = "erisred"
 	dynamic_lighting = TRUE
 	requires_power = 0
 
-/area/liberty/dungeon/outside/prepper/vault
-	name = "Vault Bunker"
+/area/liberty/dungeon/outside/mercenary_base
+	name = "Mercenaries Bunker"
 	icon_state = "erisblue"
+	dynamic_lighting = TRUE
+	requires_power = 0
 
 /area/liberty/dungeon/outside/safehouse
 	name = "Abandoned Safehouse"
@@ -298,17 +342,24 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 //This is put here because the floors are seperated by power needs, the reason being if not powering 1 floor lags the server to hell and back. -Kaz
-/area/liberty/dungeon/outside/prepper/vault/floor1
+/area/liberty/dungeon/outside/mercenary_base/floor1
+	name = "Underground Mercenaries Bunker - Workshop"
 
-/area/liberty/dungeon/outside/prepper/vault/floor2
+/area/liberty/dungeon/outside/mercenary_base/floor2
+	name = "Mercenaries Bunker - Kitchen"
 
-/area/liberty/dungeon/outside/prepper/vault/floor3
+/area/liberty/dungeon/outside/mercenary_base/floor3
+	name = "Underground Mercenaries Bunker"
 
-/area/liberty/dungeon/outside/prepper/vault/floor4
+/area/liberty/dungeon/outside/mercenary_base/floor4
+	name = "Mercenaries Bunker - Vault"
 
-/area/liberty/dungeon/outside/prepper/vault/floor5
+/area/liberty/dungeon/outside/mercenary_base/floor5
+	name = "Underground Mercenaries Bunker - Medical"
 
-/area/liberty/dungeon/outside/prepper/vault/entryway
+/area/liberty/dungeon/outside/mercenary_base/entryway
+	name = "Mercenary Bunker - Entrance"
+	ambience = list('sound/ambience/sovietcheer.ogg') // Foreshadowing.
 
 /area/liberty/dungeon/outside/monster_cave
 	name = "Monster Cave"
@@ -361,6 +412,7 @@
 	name = "Tengolo Cave East"
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
+	ambience = list('sound/ambience/arctic_cave.ogg')
 
 /area/liberty/outside/fnest
 	name = "Fennec Nest"
@@ -369,13 +421,15 @@
 /area/liberty/outside/pond
 	name = "Pond"
 	icon_state = "erisgreen"
-//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+	forced_ambience = list('sound/ambience/frozenlake.ogg')
+	icon_state = "erisblue"
 	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/bcave
 	name = "Tengolo Cave West"
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
+	ambience = list('sound/ambience/arctic_cave.ogg')
 
 /area/liberty/outside/scave
 	name = "Spider Cave"
@@ -386,8 +440,7 @@
 	icon_state = "forest"
 	sound_env = FOREST
 	allows_weather_of_snow = TRUE
-
-//	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+	ambience = list('sound/ambience/winterwind.ogg')
 
 /area/liberty/outside/forest/beast_cave_light
 	name = "Swamp Caves"
@@ -454,14 +507,14 @@
 	name = "Lakeside"
 	icon_state = "erisblue"
 	sound_env = MOUNTAINS
-//	forced_ambience = list('sound/ambience/lakeamb1.ogg', 'sound/ambience/lakeamb2.ogg', 'sound/ambience/lakeamb3.ogg')
+	forced_ambience = list('sound/ambience/frozenlake.ogg')
 	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/meadow
 	name = "Deep Forest"
 	icon_state = "meadow"
 	sound_env = MOUNTAINS
-//	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
+	forced_ambience = list('sound/ambience/winterwind.ogg')
 	allows_weather_of_snow = TRUE
 
 /area/liberty/outside/inside_colony
@@ -945,7 +998,7 @@
 	name =  "Vacant Tech shops"
 	icon_state = "construction"
 
-//Church
+// Custodians of Bonfire
 
 /area/liberty/bonfire
 	icon_state = "erisgreen"
@@ -954,7 +1007,7 @@
 /area/liberty/bonfire/chapel
 	name = "\improper Stronghold"
 	icon_state = "chapel"
-	ambience = list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg','sound/ambience/ambicha4.ogg')
+	ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
 	sound_env = LARGE_ENCLOSED
 
 /area/liberty/bonfire/storage
@@ -968,7 +1021,7 @@
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
 /area/liberty/bonfire/bioreactor
-	name = "\improper Stronghold Workshop" // TODO: Scrap bioreactor as they do not deal with biomatter
+	name = "\improper Stronghold Workshop"
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
@@ -1278,7 +1331,6 @@ area/liberty/medical/medbaymeeting
 /area/liberty/medical/morgue
 	name = "\improper Morgue"
 	icon_state = "morgue"
-	ambience = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
 
 /area/liberty/medical/chemistry
 	name = "\improper Chemistry"

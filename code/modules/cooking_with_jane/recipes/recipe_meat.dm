@@ -65,31 +65,50 @@
 	)
 
 /datum/cooking_with_jane/recipe/chickensteak
-	cooking_container = OVEN
+	cooking_container = PAN
 	product_type = /obj/item/reagent_containers/food/snacks/chickensteak
 
 	replace_reagents = TRUE
 
 	step_builder = list(
-		CWJ_BEGIN_OPTION_CHAIN,
-		list(CWJ_ADD_ITEM_OPTIONAL, /obj/item/reagent_containers/food/snacks/butterslice, base=10, reagent_skip=TRUE),
-		list(CWJ_USE_STOVE_OPTIONAL, J_LO, 10 SECONDS),
-		CWJ_END_OPTION_CHAIN,
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/chickenbreast, exclude_reagents=list("carpotoxin", "blattedin")),
 		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
 		list(CWJ_ADD_REAGENT, "blackpepper", 1),
 		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "mushrooms", reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "reishi", reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "amanita", reagent_skip=TRUE),
-		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", reagent_skip=TRUE),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "mushrooms", reagent_skip=TRUE, prod_desc="It has sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "reishi", reagent_skip=TRUE, prod_desc="It has extra sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "amanita", reagent_skip=TRUE, prod_desc="It has more sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", reagent_skip=TRUE, prod_desc="At this point it is more mushroom sautee than poultry steak."), // THERE IS CLEARLY A POINT TO STOP
 		CWJ_END_EXCLUSIVE_OPTIONS,
-		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 3, base=3),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 3, base=3, prod_desc="The poultry has been glazed over with honey."),
 		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
-		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The chicken was Spiced with chili powder."),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "lemonjuice", 5, remain_percent=0.1 ,base=3, prod_desc="The chicken was sauteed in lemon juice"),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The poultry was spiced with chili powder."),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "lemonjuice", 5, remain_percent=0.1 ,base=3, prod_desc="The poultry has fresh lemon juiced poured on top."),
 		CWJ_END_EXCLUSIVE_OPTIONS,
-		list(CWJ_USE_STOVE, J_MED, 30 SECONDS)
+		list(CWJ_USE_GRILL, J_MED, 30 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/bearsteak
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/bearsteak
+
+	replace_reagents = TRUE
+
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/bearmeat, exclude_reagents=list("carpotoxin", "blattedin")),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
+		list(CWJ_ADD_REAGENT, "blackpepper", 1),
+		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "mushrooms", reagent_skip=TRUE, prod_desc="It has sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "reishi", reagent_skip=TRUE, prod_desc="It has extra sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "amanita", reagent_skip=TRUE, prod_desc="It has more sauteed mushrooms poured on top."),
+		list(CWJ_ADD_PRODUCE_OPTIONAL, "plumphelmet", reagent_skip=TRUE, prod_desc="At this point it is more mushroom sautee than poultry steak."), // AND WE HAVE ALREADY PASSED IT
+		CWJ_END_EXCLUSIVE_OPTIONS,
+		list(CWJ_ADD_REAGENT_OPTIONAL, "honey", 3, base=3, prod_desc="The bear meat has been glazed over with honey."),
+		CWJ_BEGIN_EXCLUSIVE_OPTIONS,
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The bear meat was spiced with chili powder."),
+		CWJ_END_EXCLUSIVE_OPTIONS,
+		list(CWJ_USE_GRILL, J_MED, 30 SECONDS)
 	)
 
 /datum/cooking_with_jane/recipe/beefcurry

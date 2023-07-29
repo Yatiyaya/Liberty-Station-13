@@ -285,11 +285,11 @@
 
 /datum/perk/job/club/assign(mob/living/carbon/human/H)
 	if(..())
-		holder.sanity_damage -= 2
+		holder.sanity_damage -= 3
 
 /datum/perk/job/club/remove()
 	if(holder)
-		holder.sanity_damage += 2
+		holder.sanity_damage += 3
 	..()
 
 

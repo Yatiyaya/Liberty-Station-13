@@ -15,7 +15,7 @@
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/renderslash.ogg'
 	wander = TRUE
-	turns_per_move = 5 // Groggy and slow by nature, but strong in melee
+	turns_per_move = 4 // Groggy and slow by nature, but strong in melee
 	sanity_damage = 4 // It's a demoralizing abomination of man and crab
 	casingtype = null
 	deathmessage = "emits an agonizing scream as it falls to its knees and dies!"
@@ -24,7 +24,7 @@
 	meat_amount = 4 // For genetics purposes they will be encouraged to bring back flesh samples
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human // They were human to begin with...
 	inherent_mutations = list(MUTATION_RAND_UNSTABLE, MUTATION_BLOOD_BANK, MUTATION_G_SAC, MUTATION_HEART, MUTATION_G_LUNG, MUTATION_G_LIVER, MUTATION_E_BLOOD_VESSEL, MUTATION_S_MUSCLES, MUTATION_S_NERVES, MUTATION_ECHOLOCATION)
-	get_stat_modifier = TRUE // They won't receive quickening modifiers for balance purposes, shotguns are too strong
+	get_stat_modifier = TRUE // They won't receive quickening modifiers for balance purposes, shotguns are too strong and ballistic mobs are cancer, pun intended
 	allowed_stat_modifiers = list(
 		/datum/stat_modifier/mob/living/carbon/superior_animal/durable = 5,
 		/datum/stat_modifier/health/flat/negative/low = 5,
@@ -67,7 +67,7 @@
 
 /mob/living/carbon/superior_animal/human/lighteater_cultist/doTargetMessage()
 	. = ..()
-	visible_emote("yells, \"[pick("Consume...","Assimilate...","Blot out the light...", "CRUDUX CRUO!!!", "Must...eat...", "Louhi opasta minua!")]")
+	visible_emote("yells, \"[pick("Consume...","Assimilate...","Blot out the light...", "CRUDUX CRUO!!!", "Join us...", "Louhi opasta minua!")]")
 	playsound(src, 'sound/items/biotransform.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/human/lighteater_cultist/death()
@@ -92,7 +92,7 @@
 	deathmessage = "emits an agonizing scream as it falls to the floor and dies!"
 	ranged = TRUE
 	inherent_mutations = list(MUTATION_RAND_UNSTABLE, MUTATION_G_SAC, MUTATION_HEART, MUTATION_G_LUNG, MUTATION_G_LIVER, MUTATION_E_BLOOD_VESSEL, MUTATION_S_MUSCLES, MUTATION_S_NERVES, MUTATION_CAT_EYES)
-	ranged_cooldown = 5 // Shotguns are strong, need a longer delay
+	ranged_cooldown = 4 // Shotguns are strong, need a longer delay
 	projectiletype = /obj/item/projectile/bullet/pellet/shotgun
 	drop_items = list(/obj/item/gun/projectile/boltgun/lever/shotgun)
 	limited_ammo = TRUE

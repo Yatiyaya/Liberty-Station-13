@@ -465,9 +465,9 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 		invisibility = 0
 		icon_state = "hole"
 		name = "burrow"
-		desc = "Some sort of hole that leads inside a wall. It's full of hardened resin and secretions. Collapsing this would require some heavy digging tools."
+		desc = "A hole on the floor used by insects and burrowers as a transit point. It's full of hardened resin and secretions. Collapsing this would require some heavy digging tools."
 		if(deepmaint_entry_point)
-			desc = "Entrance hidden by bricks and rubble. Collapsing this would require some heavy digging tools."
+			desc = "An ominous burrow that emanates an undescribable, otherworldly color. The faint, grotesque eldritch screeches that seep from its seemingly endless exit point awakens primal fear running down your spine..."
 		var/turf/simulated/floor/F = loc
 		if (istype(F) && F.flooring)
 			//This should never be false

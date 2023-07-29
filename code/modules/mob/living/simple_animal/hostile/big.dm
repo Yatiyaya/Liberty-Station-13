@@ -128,7 +128,7 @@
 	pixel_y = 0
 	attack_sound = 'sound/weapons/deathclawattack.ogg'
 	meat_amount = 6
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/agape
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/bearmeat/agape
 	can_burrow = FALSE
 	mob_size = 3
 	leather_amount = 16

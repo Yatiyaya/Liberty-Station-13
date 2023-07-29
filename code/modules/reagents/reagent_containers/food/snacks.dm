@@ -430,7 +430,7 @@
 	filling_color = "#468C00"
 	center_of_mass = list("x"=17, "y"=11)
 	nutriment_amt = 8
-	nutriment_desc = list("apples" = 3,"salad" = 5)
+	nutriment_desc = list("salad" = 5, "apples" = 3)
 	preloaded_reagents = list("doctorsdelight" = 8, "tricordrazine" = 8)
 	matter = list(MATERIAL_BIOMATTER = 13)
 	bitesize = 3
@@ -444,8 +444,9 @@
 	bitesize = 1
 	center_of_mass = list("x"=17, "y"=18)
 	nutriment_amt = 1
-	nutriment_desc = list("sweetness" = 3, "cookie" = 2)
+	nutriment_desc = list("cookie with chocolate chips" = 3)
 	preloaded_reagents = list("preservatives" = 1)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolateegg
 	name = "chocolate egg"
@@ -456,7 +457,8 @@
 	center_of_mass = list("x"=16, "y"=13)
 	nutriment_amt = 1
 	nutriment_desc = list("chocolate" = 5)
-	preloaded_reagents = list("sugar" = 2, "coco" = 2, "preservatives" = 2)
+	preloaded_reagents = list("sugar" = 2, "chocolate" = 3, "preservatives" = 2)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatecoin
 	name = "chocolate coin"
@@ -492,9 +494,11 @@
 	icon_state = "dumplings"
 	trash = /obj/item/trash/waffles
 	bitesize = 5 // Five on the tray
-	preloaded_reagents = list("protein" = 10)
-	nutriment_desc = list("soft minced meat" = 5, "cabbage" = 2, "moist steamed buns" = 3)
+	nutriment_amt = 5
+	preloaded_reagents = list("protein" = 5)
+	nutriment_desc = list("moist steamed buns" = 3, "soft minced meat" = 5, "cabbage" = 2)
 	matter = list(MATERIAL_BIOMATTER = 10)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/egg
 	name = "egg"
@@ -577,7 +581,9 @@
 	filling_color = "#FFDF78"
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=14)
+	nutriment_amt = 3
 	preloaded_reagents = list("protein" = 3, "sodiumchloride" = 1, "blackpepper" = 1, "cornoil" = 1)
+	nutriment_desc = list("fried egg = 3")
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 10)
 
@@ -586,7 +592,9 @@
 	desc = "A hard boiled egg."
 	icon_state = "egg"
 	filling_color = "#FFFFFF"
+	nutriment_amt = 2
 	preloaded_reagents = list("protein" = 2)
+	nutriment_desc = list("boiled egg = 3")
 	matter = list(MATERIAL_BIOMATTER = 9)
 
 /obj/item/reagent_containers/food/snacks/tofu
@@ -599,6 +607,7 @@
 	nutriment_amt = 3
 	nutriment_desc = list("tofu" = 3, "goeyness" = 3)
 	matter = list(MATERIAL_BIOMATTER = 12)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/tofurkey
 	name = "tofurkey"
@@ -608,8 +617,7 @@
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=8)
 	nutriment_amt = 12
-	nutriment_desc = list("turkey" = 3, "tofu" = 5, "goeyness" = 4)
-	preloaded_reagents = list("stoxin" = 3)
+	nutriment_desc = list("\"turkey\"" = 3, "tofu" = 5, "goeyness" = 4)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 20)
 
@@ -621,8 +629,9 @@
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=10)
 	nutriment_amt = 3
-	nutriment_desc = list("dryness" = 2, "bread" = 2)
+	nutriment_desc = list("breadcrumbs" = 2, "pepper" = 2)
 	matter = list(MATERIAL_BIOMATTER = 13)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/fishfingers
 	name = "fish fingers"
@@ -631,7 +640,9 @@
 	filling_color = "#FFDEFE"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=13)
+	nutriment_amt = 8
 	preloaded_reagents = list("protein" = 8)
+	nutriment_desc = list("fried fish" = 5)
 	matter = list(MATERIAL_BIOMATTER = 8)
 	cooked = TRUE
 
@@ -643,7 +654,8 @@
 	bitesize = 2
 	nutriment_amt = 4
 	preloaded_reagents = list("protein" = 4)
-	nutriment_desc = list("raw fish" = 2, "soy sauce" = 2)
+	nutriment_desc = list("raw fish" = 5, "soy sauce" = 2)
+	cooked = TRUE // Ironic since it's raw fish but it's for sanity per bite purposes
 
 /obj/item/reagent_containers/food/snacks/hugemushroomslice
 	name = "huge mushroom slice"
@@ -653,7 +665,7 @@
 	bitesize = 6
 	center_of_mass = list("x"=17, "y"=16)
 	nutriment_amt = 3
-	nutriment_desc = list("raw" = 2, "mushroom" = 2)
+	nutriment_desc = list("mushroom umami" = 5)
 	preloaded_reagents = list("psilocybin" = 3)
 	matter = list(MATERIAL_BIOMATTER = 11)
 
@@ -665,7 +677,7 @@
 	bitesize = 6
 	center_of_mass = list("x"=17, "y"=16)
 	nutriment_amt = 3
-	nutriment_desc = list("raw" = 2, "tomato" = 3)
+	nutriment_desc = list("tomato" = 5)
 	matter = list(MATERIAL_BIOMATTER = 9)
 
 /obj/item/reagent_containers/food/snacks/meatball
@@ -675,8 +687,11 @@
 	filling_color = "#DB0000"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=16)
+	nutriment_amt = 3
+	nutriment_desc = list("minced meat" = 5, "breadcrumbs" = 3)
 	preloaded_reagents = list("protein" = 3)
 	matter = list(MATERIAL_BIOMATTER = 3)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/sausage
 	name = "sausage"
@@ -685,8 +700,11 @@
 	filling_color = "#DB0000"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=16)
+	nutriment_amt = 3
+	nutriment_desc = list("an undistinguishable blend of meats" = 5)
 	preloaded_reagents = list("protein" = 6)
 	matter = list(MATERIAL_BIOMATTER = 7)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/omelette
 	name = "omelette du fromage"
@@ -696,6 +714,8 @@
 	filling_color = "#FFF9A8"
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=13)
+	nutriment_amt = 8
+	nutriment_desc = list("eggs" = 5, "cheese" = 3, "french" = 1)
 	preloaded_reagents = list("protein" = 8, "cornoil" = 2)
 	matter = list(MATERIAL_BIOMATTER = 15)
 	cooked = TRUE
@@ -707,7 +727,7 @@
 	filling_color = "#E0CF9B"
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=4)
-	nutriment_desc = list("sweetness" = 3, "muffin" = 3)
+	nutriment_desc = list("buttery, soft and extra fluffy muffin" = 3)
 	nutriment_amt = 6
 	matter = list(MATERIAL_BIOMATTER = 5)
 	cooked = TRUE
@@ -719,7 +739,7 @@
 	trash = /obj/item/trash/waffles
 	filling_color = "#E6DEB5"
 	center_of_mass = list("x"=15, "y"=11)
-	nutriment_desc = list("waffle" = 8)
+	nutriment_desc = list("waffles" = 8)
 	nutriment_amt = 8
 	bitesize = 2
 	matter = list(MATERIAL_BIOMATTER = 6)
@@ -746,7 +766,7 @@
 	filling_color = "#B8E6B5"
 	bitesize = 2
 	center_of_mass = list("x"=15, "y"=11)
-	preloaded_reagents = list("protein" = 10)
+	preloaded_reagents = list("protein" = 10) // No nutriment, this is demoralizing
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 25)
 
@@ -772,8 +792,11 @@
 	filling_color = "#43DE18"
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=9)
+	nutriment_amt = 6
+	nutriment_desc = list("minced alien meat" = 5, "soy sauce" = 3)
 	preloaded_reagents = list("protein" = 6)
 	matter = list(MATERIAL_BIOMATTER = 5)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/human/kabob
 	name = "-kabob"
@@ -794,8 +817,11 @@
 	filling_color = "#A85340"
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=15)
+	nutriment_amt = 4
+	nutriment_desc = list("meat" = 5)
 	preloaded_reagents = list("protein" = 8)
 	matter = list(MATERIAL_BIOMATTER = 16)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/tofukabob
 	name = "tofu-kabob"
@@ -822,6 +848,7 @@
 	nutriment_amt = 2
 	matter = list(MATERIAL_BIOMATTER = 2)
 	bitesize = 0.1 //this snack is supposed to be eating during looooong time. And this it not dinner food! --rastaf0
+	cooked = TRUE // It is, even if you can get it through vending machines.
 
 /obj/item/reagent_containers/food/snacks/popcorn/Initialize(mapload)
 	. = ..()
@@ -835,12 +862,12 @@
 
 /obj/item/reagent_containers/food/snacks/loadedbakedpotato
 	name = "loaded baked potato"
-	desc = "Totally baked."
+	desc = "Beautifully baked whole potato loaded with melty cheese."
 	icon_state = "loadedbakedpotato"
 	filling_color = "#9C7A68"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("baked potato" = 3)
+	nutriment_desc = list("baked potato" = 3, "cheese" = 2)
 	nutriment_amt = 3
 	preloaded_reagents = list("protein" = 3)
 	matter = list(MATERIAL_BIOMATTER = 12)
@@ -854,7 +881,7 @@
 	filling_color = "#EDDD00"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("fresh fries" = 4)
+	nutriment_desc = list("fried potato" = 5)
 	nutriment_amt = 4
 	matter = list(MATERIAL_BIOMATTER = 4)
 	cooked = TRUE
@@ -867,7 +894,7 @@
 	filling_color = "#C4BF76"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("slime" = 2, "soy" = 2)
+	nutriment_desc = list("slimy soy" = 2, "sadness" = 1)
 	nutriment_amt = 2
 	matter = list(MATERIAL_BIOMATTER = 6)
 
@@ -878,7 +905,7 @@
 	filling_color = "#EDDD00"
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=16)
-	nutriment_desc = list("noodles" = 2)
+	nutriment_desc = list("raw pasta" = 2)
 	nutriment_amt = 1
 	matter = list(MATERIAL_BIOMATTER = 3)
 
@@ -890,7 +917,7 @@
 	filling_color = "#EDDD00"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("fresh fries" = 3, "cheese" = 3)
+	nutriment_desc = list("fried potato" = 5, "cheese" = 3)
 	nutriment_amt = 4
 	preloaded_reagents = list("protein" = 2)
 	cooked = TRUE
@@ -905,6 +932,7 @@
 	center_of_mass = list("x"=15, "y"=14)
 	nutriment_desc = list("fortune cookie" = 2)
 	nutriment_amt = 3
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/badrecipe
 	name = "burned mess"
@@ -917,26 +945,43 @@
 
 /obj/item/reagent_containers/food/snacks/meatsteak
 	name = "meat steak"
-	desc = "A piece of hot meat, lightly seasoned with salt and pepper."
+	desc = "A steak of hot bovine-like meat, lightly seasoned with salt and pepper."
 	icon_state = "meatsteak"
 	trash = /obj/item/trash/plate
 	filling_color = "#7A3D11"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=13)
-	preloaded_reagents = list("protein" = 9, "sodiumchloride" = 1, "blackpepper" = 1)
+	nutriment_amt = 5
+	nutriment_desc = list("juicy meat" = 5, "salt" = 2, "pepper" = 2)
+	preloaded_reagents = list("protein" = 9)
 	matter = list(MATERIAL_BIOMATTER = 11)
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chickensteak
 	name = "chicken steak"
-	desc = "Poultry breasts, cooked juicy and tender, lightly seasoned with salt and pepper." // Don't ask how they get grill marks on a microwave tho - Seb
+	desc = "Poultry breasts, cooked juicy and tender, lightly seasoned with salt and pepper."
 	icon_state = "chickenbreast_cooked"
 	trash = /obj/item/trash/plate
 	filling_color = "#7A3D11"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=13)
-	preloaded_reagents = list("protein" = 8, "sodiumchloride" = 1, "blackpepper" = 1)
-	nutriment_desc = list("juicy poultry" = 10, "salt" = 2, "pepper" = 2)
+	preloaded_reagents = list("protein" = 4)
+	nutriment_amt = 4
+	nutriment_desc = list("juicy poultry" = 5, "salt" = 2, "pepper" = 2)
+	matter = list(MATERIAL_BIOMATTER = 11)
+	cooked = TRUE
+
+/obj/item/reagent_containers/food/snacks/bearsteak
+	name = "ursine steak"
+	desc = "A slab of hot ursine-like meat, lightly seasoned with salt and pepper."
+	icon_state = "bearcook"
+	trash = /obj/item/trash/plate
+	filling_color = "#7A3D11"
+	bitesize = 3
+	center_of_mass = list("x"=16, "y"=13)
+	nutriment_amt = 10
+	nutriment_desc = list("gamey meat" = 5, "salt" = 3, "pepper" = 2)
+	preloaded_reagents = list("protein" = 10)
 	matter = list(MATERIAL_BIOMATTER = 11)
 	cooked = TRUE
 
@@ -946,8 +991,9 @@
 	icon_state = "chimken"
 	trash = /obj/item/trash/tray
 	bitesize = 6
-	preloaded_reagents = list("protein" = 10, "sodiumchloride" = 1, "blackpepper" = 1)
-	nutriment_desc = list("juicy roasted poultry" = 10, "salt" = 2, "pepper" = 2)
+	preloaded_reagents = list("protein" = 5, "sodiumchloride" = 1, "blackpepper" = 1)
+	nutriment_amt = 5
+	nutriment_desc = list("juicy roasted poultry" = 5, "salt" = 2, "pepper" = 2)
 	matter = list(MATERIAL_BIOMATTER = 12)
 	cooked = TRUE
 
@@ -956,7 +1002,8 @@
 	desc = "Crunchy on the exterior but juicy and soft on the inside, a piece of poultry that has been fried to mouthwatering perfection."
 	icon_state = "friedchicken"
 	bitesize = 3
-	preloaded_reagents = list("protein" = 8, "cornoil" = 5)
+	preloaded_reagents = list("protein" = 4)
+	nutriment_amt = 4
 	nutriment_desc = list("fried poultry" = 10, "spicy fried batter" = 3)
 	matter = list(MATERIAL_BIOMATTER = 11)
 	cooked = TRUE
@@ -967,8 +1014,10 @@
 	icon = 'icons/obj/food_ingredients.dmi' // Refactored into here for consistency.
 	icon_state = "bacon"
 	bitesize = 2
-	preloaded_reagents = list("protein" = 3, "cornoil" = 5)
-	nutriment_desc = list("artery clogging freedom" = 10, "bacon fat" = 3)
+	preloaded_reagents = list("protein" = 3)
+	nutriment_amt = 3
+	nutriment_desc = list("artery-clogging freedom" = 5, "bacon fat" = 3)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/porkchops
 	name = "glazed pork chops"
@@ -979,7 +1028,9 @@
 	filling_color = "#7A3D11"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=13)
-	preloaded_reagents = list("protein" = 8, "sodiumchloride" = 1, "blackpepper" = 1, "bbqsauce" = 5)
+	preloaded_reagents = list("protein" = 8)
+	nutriment_amt = 8
+	nutriment_desc = list("porcine meat" = 5, "barbecue sauce" = 3, "salt" = 1, "pepper" = 1)
 	matter = list(MATERIAL_BIOMATTER = 11)
 	cooked = TRUE
 
@@ -988,8 +1039,10 @@
 	desc = "A classic breakfast combo of fried, sunny-side eggs, with bacon strips on the side." // Wakey wakey.
 	icon_state = "baconegg"
 	bitesize = 4
-	preloaded_reagents = list("protein" = 6, "cornoil" = 3)
+	preloaded_reagents = list("protein" = 6)
+	nutriment_amt = 6
 	nutriment_desc = list("bacon" = 5, "fried eggs" = 5)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/benedict
 	name = "eggs benedict"
@@ -997,8 +1050,9 @@
 	icon_state = "benedict"
 	bitesize = 5
 	nutriment_amt = 5
-	preloaded_reagents = list("protein" = 10, "sodiumchloride" = 1, "blackpepper" = 1)
+	preloaded_reagents = list("protein" = 10)
 	nutriment_desc = list("ham" = 5, "poached egg" = 5, "hollandaise sauce" = 3)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/tonkatsu
 	name = "tonkatsu"
@@ -1008,6 +1062,7 @@
 	preloaded_reagents = list("protein" = 5)
 	nutriment_amt = 5
 	nutriment_desc = list("fried pork" = 5, "panko breadcrumbs" = 2)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/spacylibertyduff
 	name = "spacy liberty duff"
@@ -1057,28 +1112,30 @@
 
 /obj/item/reagent_containers/food/snacks/enchiladas
 	name = "enchiladas"
-	desc = "Viva La Mexico!"
+	desc = "A dish of various tortilla wraps in spicy sauce."
 	icon_state = "enchiladas"
 	trash = /obj/item/trash/tray
 	filling_color = "#A36A1F"
 	bitesize = 4
 	center_of_mass = list("x"=16, "y"=13)
-	nutriment_desc = list("tortilla" = 3, "corn" = 3)
-	nutriment_amt = 2
+	nutriment_desc = list("tortilla" = 3, "spicy sauce" = 3)
+	nutriment_amt = 4
 	preloaded_reagents = list("protein" = 6, "capsaicin" = 6)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 15)
 
 /obj/item/reagent_containers/food/snacks/monkeysdelight
 	name = "monkey's delight"
-	desc = "Eeee Eee!"
+	desc = "Uma delicia."
 	icon_state = "monkeysdelight"
 	trash = /obj/item/trash/tray
 	filling_color = "#5C3C11"
 	bitesize = 6
 	center_of_mass = list("x"=16, "y"=13)
-	preloaded_reagents = list("protein" = 10, "banana" = 5, "blackpepper" = 1, "sodiumchloride" = 1)
-	cooked = TRUE
+	preloaded_reagents = list("protein" = 10)
+	nutriment_amt = 5
+	nutriment_desc = list("macaco" = 5)
+	cooked = TRUE // This is so cruel.
 	matter = list(MATERIAL_BIOMATTER = 33)
 
 /obj/item/reagent_containers/food/snacks/baguette
@@ -1101,22 +1158,22 @@
 	filling_color = "#E3D796"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=16)
-	nutriment_desc = list("salt" = 1, "chips" = 3)
-	nutriment_amt = 3
+	nutriment_desc = list("fried fish" = 5, "chips" = 3)
+	nutriment_amt = 9
 	preloaded_reagents = list("protein" = 10)
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/rofflewaffles
 	name = "roffle waffles"
-	desc = "Waffles from Roffle. Co."
+	desc = "A stack of spiked up waffles patented by the Roffle. Co. syndicate."
 	icon_state = "rofflewaffles"
 	trash = /obj/item/trash/waffles
 	filling_color = "#FF00F7"
 	bitesize = 4
 	center_of_mass = list("x"=15, "y"=11)
-	nutriment_desc = list("waffle" = 7, "sweetness" = 1)
+	nutriment_desc = list("waffle" = 7, "suspicious sweetness" = 1)
 	nutriment_amt = 8
-	preloaded_reagents = list("psilocybin" = 8)
+	preloaded_reagents = list("psilocybin" = 8) // Like pot brownies, but waffle version
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 13)
 
@@ -1128,9 +1185,10 @@
 	filling_color = "#B572AB"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=8)
-	nutriment_desc = list("toasted bread" = 2)
-	nutriment_amt = 1
+	nutriment_desc = list("toasted bread" = 3, "sweet jam" = 1)
+	nutriment_amt = 4
 	matter = list(MATERIAL_BIOMATTER = 4)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/jelliedtoast/cherry
 	preloaded_reagents = list("cherryjelly" = 5)
@@ -1140,49 +1198,52 @@
 
 /obj/item/reagent_containers/food/snacks/stewedsoymeat
 	name = "stewed soy meat"
-	desc = "Even non-vegetarians will LOVE this!"
+	desc = "A vegetarian option for those looking for protein without the whole animal cruelty."
 	icon_state = "stewedsoymeat"
 	trash = /obj/item/trash/plate
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
 	nutriment_desc = list("soy" = 4, "tomato" = 4)
 	nutriment_amt = 8
+	preloaded_reagents = list("protein" = 2) // Still not as good as a steak.
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 13)
 
 /obj/item/reagent_containers/food/snacks/boiledspagetti
 	name = "boiled spaghetti"
-	desc = "A plain dish of noodles, this sucks."
+	desc = "A plain dish of noodles, mostly flavorless without sauce."
 	icon_state = "spagettiboiled"
 	trash = /obj/item/trash/plate
 	filling_color = "#FCEE81"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("noodles" = 2)
+	nutriment_desc = list("salty noodles but not much else" = 3)
 	nutriment_amt = 2
 	matter = list(MATERIAL_BIOMATTER = 9)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/boiledrice
 	name = "boiled rice"
-	desc = "A boring dish of boring rice."
+	desc = "Fluffy, steamed white rice. A staple and versatile side dish for everything."
 	icon_state = "boiledrice"
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#FFFBDB"
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=11)
-	nutriment_desc = list("rice" = 2)
-	nutriment_amt = 2
+	nutriment_desc = list("steamed rice" = 3)
+	nutriment_amt = 3
 	matter = list(MATERIAL_BIOMATTER = 9)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/ricepudding
 	name = "rice pudding"
-	desc = "Where's the jam?"
+	desc = "Apply your favorite jam for flavor."
 	icon_state = "rpudding"
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#FFFBDB"
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=11)
-	nutriment_desc = list("rice" = 2)
+	nutriment_desc = list("glutinous rice" = 3)
 	nutriment_amt = 4
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 12)
@@ -1194,7 +1255,9 @@
 	trash = /obj/item/trash/snack_bowl
 	bitesize = 4
 	preloaded_reagents = list("protein" = 8, "capsaicin" = 2)
+	nutriment_amt = 8
 	nutriment_desc = list("beef" = 5, "curry" = 5, "spicyness" = 2)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chickencurry
 	name = "poultry curry"
@@ -1203,7 +1266,9 @@
 	trash = /obj/item/trash/snack_bowl
 	bitesize = 4
 	preloaded_reagents = list("protein" = 8, "capsaicin" = 2)
-	nutriment_desc = list("chicken" = 5, "curry" = 5, "spicyness" = 2)
+	nutriment_amt = 8
+	nutriment_desc = list("chicken" = 5, "curry" = 3, "spicyness" = 2)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/mashpotatoes
 	name = "mashed potatoes"
@@ -1223,7 +1288,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#FFFBDB"
 	bitesize = 5
-	nutriment_desc = list("a mother's cooking" = 10, "rice" = 5, "katsu sauce" = 2)
+	nutriment_desc = list("a mother's cooking" = 6, "rice" = 2, "katsu sauce" = 2)
 	nutriment_amt = 10
 	preloaded_reagents = list("protein" = 12, "soysauce" =5, "egg" = 3)
 	cooked = TRUE
@@ -1231,13 +1296,13 @@
 
 /obj/item/reagent_containers/food/snacks/pastatomato
 	name = "spaghetti"
-	desc = "Spaghetti and crushed tomatoes. Just like your abusive father used to make!"
+	desc = "Spaghetti with a simple sauce made of crushed tomatoes."
 	icon_state = "pastatomato"
 	trash = /obj/item/trash/plate
 	filling_color = "#DE4545"
 	bitesize = 4
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("tomato" = 3, "noodles" = 3)
+	nutriment_desc = list("pasta" = 3, "tomato sauce" = 3)
 	nutriment_amt = 6
 	preloaded_reagents = list("tomatojuice" = 10)
 	cooked = TRUE
@@ -1245,28 +1310,28 @@
 
 /obj/item/reagent_containers/food/snacks/meatballspagetti
 	name = "spaghetti & meatballs"
-	desc = "Now thats a nic'e meatball!"
+	desc = "Now that's a nice meatball!"
 	icon_state = "meatballspagetti"
 	trash = /obj/item/trash/plate
 	filling_color = "#DE4545"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("noodles" = 4)
-	nutriment_amt = 4
+	nutriment_desc = list("pasta" = 3, "tomato sauce" = 3, "meatballs" = 3)
+	nutriment_amt = 9
 	preloaded_reagents = list("protein" = 4)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 18)
 
 /obj/item/reagent_containers/food/snacks/spesslaw
 	name = "spesslaw"
-	desc = "A lawyers favourite."
+	desc = "Spaghetti with extra meatballs. A lawyer's favourite, for some reason."
 	icon_state = "spesslaw"
 	filling_color = "#DE4545"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
-	nutriment_desc = list("noodles" = 4)
-	nutriment_amt = 4
-	preloaded_reagents = list("protein" = 4)
+	nutriment_amt = 9
+	nutriment_desc = list("pasta" = 3, "tomato sauce" = 3, "meatballs" = 5) // More meatballs!
+	preloaded_reagents = list("protein" = 8)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 28)
 
@@ -1278,7 +1343,7 @@
 	filling_color = "#FAA005"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("carrot" = 3, "salt" = 1)
+	nutriment_desc = list("fried carrots" = 3, "salt" = 1)
 	nutriment_amt = 3
 	preloaded_reagents = list("imidazoline" = 3)
 	cooked = TRUE
@@ -1312,6 +1377,8 @@
 	bitesize = 1
 	center_of_mass = list("x"=16, "y"=14)
 	preloaded_reagents = list("mint" = 2, "preservatives" = 1)
+	nutriment_amt = 2
+	nutriment_desc = list("mint freshness" = 5)
 	matter = list(MATERIAL_BIOMATTER = 2)
 
 /obj/item/reagent_containers/food/snacks/plumphelmetbiscuit
@@ -1321,7 +1388,7 @@
 	filling_color = "#CFB4C4"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=13)
-	nutriment_desc = list("mushroom" = 4)
+	nutriment_desc = list("mushroom" = 5, "biscuit" = 2)
 	nutriment_amt = 5
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 9)
@@ -1342,6 +1409,8 @@
 	filling_color = "#F0F2E4"
 	bitesize = 1
 	center_of_mass = list("x"=17, "y"=10)
+	nutriment_amt = 5
+	nutriment_desc = list("mushroom" = 3, "custard" = 1, "soy sauce" = 1)
 	preloaded_reagents = list("protein" = 5)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 13)
@@ -1353,7 +1422,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#76B87F"
 	center_of_mass = list("x"=17, "y"=11)
-	nutriment_desc = list("salad" = 2, "tomato" = 2, "carrot" = 2, "apple" = 2)
+	nutriment_desc = list("lettuce" = 2, "tomato" = 2, "carrot" = 2, "apple" = 2)
 	nutriment_amt = 8
 	bitesize = 3
 	cooked = TRUE
@@ -1366,7 +1435,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#76B87F"
 	center_of_mass = list("x"=17, "y"=11)
-	nutriment_desc = list("100% real salad" = 2)
+	nutriment_desc = list("100% real salad" = 6)
 	nutriment_amt = 6
 	bitesize = 3
 	preloaded_reagents = list("protein" = 2)
@@ -1383,7 +1452,7 @@
 	nutriment_desc = list("apple" = 8)
 	nutriment_amt = 8
 	bitesize = 3
-	preloaded_reagents = list("gold" = 5)
+	preloaded_reagents = list("extremely luxurious apples" = 5, "puff pastry" = 3)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 20)
 
@@ -1393,7 +1462,7 @@
 	icon_state = "pudding"
 	filling_color = "#FFFF00"
 	center_of_mass = list("x"=16, "y"=18)
-	nutriment_desc = list("bitter cocoa powder" = 1, "sweet gooey honey" = 2)
+	nutriment_desc = list("sweet gooey honey" = 5, "bitter cocoa powder" = 3)
 	nutriment_amt = 8
 	bitesize = 3
 	preloaded_reagents = list("honey" = 5)
@@ -1406,7 +1475,7 @@
 	icon_state = "honeybuns"
 	filling_color = "#FFFF00"
 	center_of_mass = list("x"=16, "y"=18)
-	nutriment_desc = list("honey" = 8, "pastry" = 3)
+	nutriment_desc = list("honey" = 5, "pastry" = 3)
 	nutriment_amt = 8
 	bitesize = 3
 	preloaded_reagents = list("sugar" = 5, "honey" = 2)
@@ -1420,10 +1489,10 @@
 	trash = /obj/item/trash/icecreambowl
 	filling_color = "#FFFF00"
 	center_of_mass = list("x"=16, "y"=18)
-	nutriment_desc = list("cream" = 3, "honey" = 2)
+	nutriment_desc = list("iced honey" = 10, "ice" = 2)
 	nutriment_amt = 12
 	bitesize = 3
-	preloaded_reagents = list("cream" = 5, "honey" = 5)
+	preloaded_reagents = list("honey" = 5)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 12)
 
@@ -1444,7 +1513,7 @@
 	filling_color = "#F7FFE0"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("tofu" = 10)
+	nutriment_desc = list("tofu" = 15, "bread" = 15)
 	nutriment_amt = 30
 	matter = list(MATERIAL_BIOMATTER = 10)
 
@@ -1457,7 +1526,7 @@
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=13)
 	nutriment_amt = 6
-	nutriment_desc = list("tofu" = 2)
+	nutriment_desc = list("tofu" = 3, "bread" = 3)
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/icecream
@@ -1467,15 +1536,18 @@
 	trash = /obj/item/trash/icecreambowl
 	bitesize = 3
 	nutriment_amt = 6
-	nutriment_desc = list("vanilla" = 10, "sweetness" = 5, "refreshing cold" = 5)
+	nutriment_desc = list("vanilla" = 3, "sweetness" = 2, "refreshing cold" = 1)
 	matter = list(MATERIAL_BIOMATTER = 6)
 
-/obj/item/reagent_containers/food/snacks/icecream/attackby(obj/item/W as obj, mob/user as mob) // No way we're microwaving two cookies to make an ICECREAM sandwich. - Seb
+// Moved to a cutting board recipe for neatness.
+/*
+/obj/item/reagent_containers/food/snacks/icecream/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/reagent_containers/food/snacks/brownieslice)) // Fits better than a cookie for the sandwich
 		new /obj/item/reagent_containers/food/snacks/icecreamsandwich(src)
 		to_chat(user, "You sandwich the icecream between the brownies.")
 		qdel(W)
 		qdel(src)
+*/
 
 /obj/item/reagent_containers/food/snacks/chocoicecream
 	name = "chocolate icecream"
@@ -1496,13 +1568,6 @@
 	nutriment_amt = 8
 	nutriment_desc = list("strawberry" = 10, "sweetness" = 5, "refreshing cold" = 5)
 	matter = list(MATERIAL_BIOMATTER = 6)
-
-/obj/item/reagent_containers/food/snacks/strawberryicecream/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/reagent_containers/food/snacks/cookie))
-		new /obj/item/reagent_containers/food/snacks/strawberrysandwich(src)
-		to_chat(user, "You sandwich the icecream between the cookies.")
-		qdel(W)
-		qdel(src)
 
 /obj/item/reagent_containers/food/snacks/chocolatepiece
 	name = "chocolate piece"
