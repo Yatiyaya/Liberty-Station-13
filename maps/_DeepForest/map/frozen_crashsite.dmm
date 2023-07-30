@@ -5637,11 +5637,6 @@
 	},
 /turf/simulated/floor/industrial/green_large_slates,
 /area/liberty/dungeon/outside/mercenary_base/floor3)
-"VQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/flame/candle/pre_lit/eternal,
-/turf/simulated/floor/wood_old,
-/area/liberty/dungeon/outside/abandoned_outpost)
 "VS" = (
 /obj/structure/flora/small/snow/rock6,
 /turf/simulated/floor/snow,
@@ -20145,7 +20140,7 @@ na
 na
 dO
 HG
-VQ
+HG
 fO
 GF
 GF
