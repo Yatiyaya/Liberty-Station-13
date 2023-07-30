@@ -65,6 +65,7 @@
 /obj/machinery/light/floor{
 	dir = 8
 	},
+/obj/item/clothing/accessory/stethoscope,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prison_interior)
 "aE" = (
@@ -255,6 +256,13 @@
 /mob/living/carbon/superior_animal/shell_hound,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"cr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark/cargo,
+/area/liberty/dungeon/outside/prison_interior)
 "cu" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/structure/flora/grass/brown,
@@ -1221,6 +1229,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/mercenary_base)
+"lt" = (
+/obj/machinery/vending/dinnerware,
+/turf/simulated/floor/industrial/checker_large,
+/area/liberty/dungeon/outside/mercenary_base/floor2)
 "lu" = (
 /obj/structure/scrap/medical,
 /obj/effect/decal/cleanable/rubble,
@@ -1449,7 +1461,13 @@
 /area/liberty/dungeon/outside/mercenary_base)
 "nn" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/dinnerware,
+/obj/structure/closet/secure_closet/freezer/kitchen/mining,
+/obj/machinery/button/remote/blast_door{
+	dir = 8;
+	id = "prison";
+	name = "kitchen shutters";
+	pixel_x = 22
+	},
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
 "no" = (
@@ -1818,7 +1836,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prison_interior)
 "qU" = (
-/obj/structure/table/steel,
+/obj/random/closet_syndieloot/low_chance,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -1949,6 +1967,15 @@
 /obj/structure/flora/small/snow/rock7,
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_lakes)
+"sv" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	name = "shutter";
+	id = "prison"
+	},
+/turf/simulated/floor/tiled/dark/danger,
+/area/liberty/dungeon/outside/prison_interior)
 "sy" = (
 /obj/structure/flora/pottedplant/clockcult,
 /turf/simulated/floor/wood_old,
@@ -2673,6 +2700,16 @@
 /obj/item/frame/apc,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/dungeon/outside/mercenary_base/floor1)
+"xW" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/cooking_with_jane/cooking_container/bowl,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	name = "shutter";
+	id = "prison"
+	},
+/turf/simulated/floor/industrial/cafe_large,
+/area/liberty/dungeon/outside/prison_interior)
 "xZ" = (
 /turf/simulated/wall/wood_old,
 /area/liberty/dungeon/outside/farm)
@@ -2685,6 +2722,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
 /obj/machinery/cooking_with_jane/stove,
+/obj/item/reagent_containers/cooking_with_jane/cooking_container/pan,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
 "yk" = (
@@ -2977,6 +3015,7 @@
 /obj/machinery/cooking_with_jane/grill,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/grill_grate,
 /obj/item/reagent_containers/food/snacks/badrecipe,
+/obj/item/spatula,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
 "AN" = (
@@ -3142,6 +3181,13 @@
 "Ca" = (
 /turf/simulated/floor/rock/grey,
 /area/liberty/dungeon/outside/monster_cave)
+"Cg" = (
+/obj/structure/table/steel,
+/obj/random/firstaid,
+/obj/random/firstaid,
+/obj/random/firstaid,
+/turf/simulated/floor/tiled/dark/danger,
+/area/liberty/dungeon/outside/prison_interior)
 "Ch" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/tree/snow/four,
@@ -3308,9 +3354,11 @@
 /area/liberty/dungeon/outside/mercenary_base)
 "DX" = (
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/cooking_with_jane/cooking_container/board,
 /obj/machinery/door/blast/shutters{
 	dir = 2;
-	name = "shutter"
+	name = "shutter";
+	id = "prison"
 	},
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
@@ -4050,7 +4098,7 @@
 /turf/simulated/floor/rock/grey,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
 "JR" = (
-/obj/structure/reagent_dispensers/watertank/derelict,
+/obj/structure/closet/secure_closet/freezer/kitchen/mining,
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/dungeon/outside/mercenary_base/floor2)
 "JS" = (
@@ -4268,6 +4316,9 @@
 /obj/random/dungeon_gun_mods,
 /obj/random/dungeon_gun_mods,
 /obj/random/dungeon_gun_mods,
+/obj/item/ammo_magazine/light_rifle_257,
+/obj/item/ammo_magazine/light_rifle_257,
+/obj/item/ammo_magazine/light_rifle_257,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prison_interior)
 "Lm" = (
@@ -4279,11 +4330,8 @@
 /area/liberty/dungeon/outside/mercenary_base/floor5)
 "Lr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/remote/blast_door{
-	dir = 1;
-	id = "prison";
-	name = "kitchen shutters";
-	pixel_y = -22
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_y = -32
 	},
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
@@ -4933,7 +4981,7 @@
 	},
 /obj/structure/invislightsmall,
 /turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/area/liberty/dungeon/outside/prison_exterior)
 "QP" = (
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prison_interior)
@@ -5238,6 +5286,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/mercenary_base)
+"To" = (
+/obj/random/mob/space_balkan,
+/turf/simulated/floor/industrial/cafe_large,
+/area/liberty/dungeon/outside/prison_interior)
 "Tq" = (
 /obj/landmark/corpse/antagonist/syndicate/commando,
 /obj/effect/decal/cleanable/dirt,
@@ -5424,6 +5476,14 @@
 /obj/random/mob/termite_no_despawn/low_chance,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
+"UQ" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/random/mob/space_balkan,
+/turf/simulated/floor/tiled/dark/danger,
+/area/liberty/dungeon/outside/prison_interior)
 "UR" = (
 /obj/machinery/body_scanconsole,
 /obj/machinery/light{
@@ -5527,9 +5587,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "VB" = (
-/obj/item/gun/projectile/automatic/nationale{
-	pixel_y = 6
-	},
+/obj/item/gun/projectile/automatic/federalist/homemaker,
 /obj/item/gun/projectile/automatic/nationale{
 	pixel_y = -6
 	},
@@ -6013,6 +6071,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cooking_with_jane/oven,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/oven,
+/obj/item/reagent_containers/cooking_with_jane/cooking_container/pot,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/dungeon/outside/prison_interior)
 "Zn" = (
@@ -53901,7 +53960,7 @@ Uv
 vt
 hY
 lZ
-lZ
+lt
 hX
 aZ
 nj
@@ -74832,11 +74891,11 @@ BN
 Nm
 Nm
 QO
-Yz
-Yz
-Yz
-eW
-Yz
+mK
+mK
+mK
+Uk
+mK
 QO
 Yz
 Yz
@@ -75854,7 +75913,7 @@ Nm
 Nm
 GG
 mK
-Yz
+mK
 Al
 Yz
 Yz
@@ -76029,11 +76088,11 @@ Nm
 Yz
 Yz
 QO
-Yz
-Yz
-Yz
-Yz
-Yz
+mK
+mK
+mK
+mK
+mK
 QO
 Nm
 Nm
@@ -76057,7 +76116,7 @@ BN
 mK
 mK
 mK
-Yz
+mK
 Yz
 Yz
 Ud
@@ -76260,7 +76319,7 @@ mK
 mK
 mK
 mK
-Yz
+mK
 Yz
 Yz
 Yz
@@ -76463,7 +76522,7 @@ mK
 mK
 Sg
 mK
-Yz
+mK
 Yz
 Yz
 Yz
@@ -80725,12 +80784,12 @@ Nm
 Nm
 BN
 QO
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
+mK
+mK
+mK
+mK
+mK
+mK
 Yz
 by
 Nm
@@ -80933,7 +80992,7 @@ mK
 Sg
 mK
 QO
-Yz
+mK
 wN
 Nm
 Nm
@@ -82706,14 +82765,14 @@ JD
 wY
 wz
 Xj
-hg
+UQ
 Lw
 MV
 Vw
-dT
+cr
 WW
 Vw
-mG
+Cg
 QP
 qT
 Lw
@@ -83111,7 +83170,7 @@ Vw
 Os
 KI
 KM
-xR
+QP
 Vw
 nO
 KY
@@ -83159,7 +83218,7 @@ mK
 mK
 Nm
 QO
-Yz
+mK
 Yz
 Yz
 CT
@@ -83309,7 +83368,7 @@ Ci
 mK
 mK
 In
-wY
+sv
 af
 ZP
 Jx
@@ -83360,8 +83419,8 @@ Sg
 mK
 mK
 mK
-Yz
-Yz
+mK
+mK
 Yz
 Yz
 Yz
@@ -83511,10 +83570,10 @@ tL
 mK
 MD
 JD
-wY
-DX
-DX
+sv
 DN
+DX
+xW
 cE
 Vw
 Cp
@@ -83562,8 +83621,8 @@ mK
 mK
 mK
 mK
-Yz
-Yz
+mK
+mK
 Yz
 Yz
 Yz
@@ -83713,9 +83772,9 @@ tL
 ak
 mK
 JD
-wY
+sv
 FR
-FR
+To
 FR
 Lr
 Vw
@@ -83764,8 +83823,8 @@ mK
 mK
 mK
 mK
-Yz
-CT
+mK
+kL
 hq
 Yz
 Yz
@@ -83929,7 +83988,7 @@ TY
 Jv
 qU
 qF
-Xj
+mG
 Vw
 mK
 MD
@@ -83966,8 +84025,8 @@ mK
 Uk
 mK
 mK
-Yz
-Yz
+mK
+mK
 Yz
 Yz
 Yz
@@ -84168,8 +84227,8 @@ mK
 mK
 mK
 mK
-Yz
-Yz
+mK
+mK
 Yz
 uW
 Yz
@@ -84370,8 +84429,8 @@ mK
 mK
 mK
 Uk
-Yz
-TP
+mK
+DY
 Yz
 Yz
 Yz
