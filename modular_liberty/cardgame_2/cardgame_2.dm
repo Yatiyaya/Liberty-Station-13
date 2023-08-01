@@ -487,33 +487,18 @@
 /////////////////////////////
 
 /obj/item/card_carp/death_card
-	name = ""
-	desc = ""
+	name = "CardCarp Second Generation"
+	desc = "An newer generation of CardCarp Cards, said to be randomly balanced."
 	icon_state = "cardblank"
 	current_health = 0
 
-/obj/item/card_carp/proc/generate(health, meat, attack, ranged, name)
+/obj/item/card_carp/proc/generate(points, new_name)
+	points += 10 //10 free points
+	var/health = rand(1,5)
+	var/damage = rand(0,3)
+	var/descadd
 
-	if(health >= 10)
-		health *= 0.01
-
-	if(health >= 10)
-		health = 10
-
-	attack *= 0.1
-
-	var/point_total = health + meat + attack
-	var/director_desc = "A trapped [name], not yet balanced by CardCarpCo."
-	var/added_descs
-	var/base_descs
-	if(ranged)
-		point_total *= 2
-
-	point_total = round(point_total)
-
-	name = name
-
-	base_descs += "H[rand(1, 6)]/P[rand(0, 3)]. Requires [rand(0, 2)] Blood, [rand(0, 3)] Bones, [rand(0, 1)] Player Health."
+	descadd += " H[health]/P[damage]"
 
 	var/list/greatest		= list("Starvation", "Upheaval", "Grace", "Aduit")
 	var/list/good			= list("Opportunistic", "Shreader", "Conqueror")
@@ -521,44 +506,33 @@
 	var/list/bad			= list("Fast Ageing", "Cowardly", "Bounded", "Traitor")
 	var/list/over_draw		= list("Mending", "Hermit", "Hunter", "Sickly")
 
-	if(!greatest.len)
-		greatest = list("Starvation", "Upheaval", "Grace", "Aduit")
 
-	if(!good.len)
-		greatest = list("Opportunistic", "Shreader", "Conqueror")
-
-	if(!speedbased.len)
-		greatest = list("Slowish", "Fastish", "Reflectes")
-
-	if(!bad.len)
-		greatest = list("Fast Ageing", "Cowardly", "Bounded", "Traitor")
-
-	if(!over_draw.len)
-		greatest = list("Mending", "Hermit", "Hunter", "Sickly")
+	points -= health
+	points -= damage
 
 
-	while(point_total >= 0)
-		point_total -= 2
-		if(prob(50) && point_total >= 10 && greatest.len)
-			point_total -= 10
-			added_descs += ", [pick_n_take(greatest)]"
+	if(prob(50) && points >= 10 && greatest.len)
+		points -= 10
+		descadd += ", [pick(greatest)]"
 
-		if(prob(20) && good.len)
-			point_total -= 4
-			added_descs += ", [pick_n_take(good)]"
+	if(prob(20) && good.len)
+		points -= 4
+		descadd += ", [pick(good)]"
 
-		if(prob(60) && speedbased.len)
-			point_total -= 2
-			added_descs += ", [pick_n_take(speedbased)]"
+	if(prob(60) && speedbased.len)
+		points -= 2
+		descadd += ", [pick(speedbased)]"
 
-		if(0 > point_total && bad.len)
-			added_descs += ", [pick_n_take(bad)]"
-			if(prob(50))
-				added_descs += ", Fodder"
-				late_fodder = TRUE
+	if(0 > points && bad.len)
+		descadd += ", [pick(bad)]"
+		if(prob(50))
+			descadd += ", Fodder"
+			late_fodder = TRUE
 
-		if(prob(15) && over_draw.len) //Just goodluck
-			added_descs += ", [pick_n_take(over_draw)]"
+	if(prob(15) && over_draw.len) //Just goodluck
+		descadd += ", [pick(over_draw)]"
 
-	director_desc = "[director_desc] [base_descs] [added_descs]"
+	desc += descadd
 
+	if(new_name)
+		name = "Redink [new_name]"

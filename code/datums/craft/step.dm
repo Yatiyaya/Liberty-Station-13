@@ -133,6 +133,10 @@
 			to_chat(user, SPAN_WARNING("Wrong item!"))
 			building = FALSE
 			return
+		if(I.contents.len > 0)
+			to_chat(user, SPAN_WARNING("Their is something inside \the [I] that must be removed before using it to craft!"))
+			building = FALSE
+			return
 		if(!is_valid_to_consume(I, user))
 			to_chat(user, SPAN_WARNING("That item can't be used for crafting!"))
 			building = FALSE
