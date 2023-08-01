@@ -260,19 +260,19 @@
 	icon_state = "cautiontiny"
 
 /obj/structure/sign/warning/nosmoking
-	name = "\improper NO SMOKING"
+	name = "\improper NO SMOKING sign"
 	icon_state = "nosmoking"
 
 /obj/structure/sign/warning/nosmoking/small
-	name = "\improper NO SMOKING"
+	name = "\improper NO SMOKING sign"
 	icon_state = "nosmokingsmall"
 
 /obj/structure/sign/warning/nosmoking/large
-	name = "\improper NO SMOKING"
+	name = "\improper NO SMOKING sign"
 	icon_state = "nosmoking2"
 
 /obj/structure/sign/warning/nosmoking/largeburnt
-	name = "\improper NO SMOKING"
+	name = "\improper NO SMOKING sign"
 	icon_state = "nosmoking2_b"
 
 /obj/structure/sign/warning/safety
@@ -280,11 +280,11 @@
 	icon_state = "safetyplease"
 
 /obj/structure/sign/warning/smoking
-	name = "\improper SMOKING AREA"
+	name = "\improper SMOKING AREA sign"
 	icon_state = "smokingallowed"
 
 /obj/structure/sign/warning/smoking/small
-	name = "\improper SMOKINGAREA"
+	name = "\improper SMOKING AREA sign"
 	icon_state = "smokingallowedsmall"
 
 /obj/structure/sign/warning/pods

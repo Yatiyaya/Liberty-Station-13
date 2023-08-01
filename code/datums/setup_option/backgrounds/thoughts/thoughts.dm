@@ -82,7 +82,7 @@
 /datum/category_item/setup_option/background/thoughts/true_data
 	name = "3rd Eye"
 	desc = "Due to being more intoned with what you are and what's around you, things that were once hidden behind probability or guessing are shown to you as factual odds."
-	perks = list(PERK_NO_OBSUCATION)
+	perks = list(PERK_NO_OBFUSCATION)
 
 	stat_modifiers = list(STAT_VIG = 5, STAT_WIL = -5, STAT_COG = 5, STAT_MEC = -5)
 

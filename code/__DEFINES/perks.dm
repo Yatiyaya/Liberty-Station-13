@@ -233,7 +233,7 @@
 #define PERK_FORCEFUL_REJECTION /datum/perk/forceful_rejection
 
 //Misc Perks
-#define PERK_NO_OBSUCATION /datum/perk/no_obsucation
+#define PERK_NO_OBFUSCATION /datum/perk/no_obfuscation
 
 //////////////////
 //Cooldown perks//

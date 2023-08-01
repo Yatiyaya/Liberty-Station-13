@@ -25,7 +25,7 @@
 	name = "Artificer"
 	desc = "The fiery might grants boundless ingenuity - awe inspiring craftsmanship where every spark carries the promises of untamed power. \
 			You gain more insight from all sources but can only increase your stats by crafting on an artisan's table."
-	icon_state = "paintbrush"
+	icon_state = "blacksmith" // https://game-icons.net/1x1/delapouite/blacksmith.html
 	var/old_max_insight = INFINITY
 	var/old_max_resting = INFINITY
 	var/old_insight_rest_gain_multiplier = 1
@@ -72,7 +72,7 @@
 	desc = "When near a Torchbearer, you feel your mind at ease. Your body is strengthened by its presence, resisting all forms of damage."
 	gain_text = "You feel the warmth of a nearby torchbearer."
 	lose_text = "The warmth from the torchbearer fades away."
-	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
+	icon_state = "torchbearer" // https://game-icons.net/1x1/lorc/fire-silhouette.html
 
 /datum/perk/active_sanityboost/assign(mob/living/carbon/human/H)
 	if(..())
@@ -93,14 +93,14 @@
 	name = "Phoenix Rekindlement"
 	desc = "Your Hearthcore is more than just an emblem of knighthood. \
 			Should you ever perish, it will attempt an emergency revival that may restore your body after a short time, in which you'll be unconscious."
-	icon_state = "regrowth" // https://game-icons.net/1x1/delapouite/stump-regrowth.html
+	icon_state = "phoenix" // https://game-icons.net/1x1/lorc/condor-emblem.html
 
 /datum/perk/job/chemist
 	name = "Periodic Table"
 	desc = "You know what the atoms around you react to and in what way they do. You are used to making organic substitutes and using them. \
 			You get quarter more NSA than a normal person. You can also see all reagents in beakers."
 	perk_shared_ability = PERK_SHARED_SEE_REAGENTS
-	icon_state = "selfmedicated"
+	icon_state = "chemistry" // https://game-icons.net/1x1/skoll/atom.html
 
 /datum/perk/job/chemist/assign(mob/living/carbon/human/H)
 	..()
@@ -118,13 +118,13 @@
 	name = "Illegal Substance Training"
 	desc = "For reasons either fair or foul, you know how to easily identify certain kinds of illegal chemical contraband."
 	perk_shared_ability = PERK_SHARED_SEE_ILLEGAL_REAGENTS
-	icon_state = "paper"
+	icon_state = "selfmedicated"
 
 /datum/perk/job/common_sense
 	name = "Common Sense"
 	desc = "You know what basic chemicals look like, from cleaning to cooking as well as the basics common chemicals."
 	perk_shared_ability = PERK_SHARED_SEE_COMMON_REAGENTS
-	icon_state = "paper"
+	icon_state = "knowledge"
 
 /datum/perk/job/junkborn
 	name = "Expert Scavenger"
@@ -134,12 +134,12 @@
 /datum/perk/job/sommelier
 	name = "Sommelier"
 	desc = "You know how to handle even the strongest alcohol in the universe and doing so improves your toughness."
-	icon_state = "drinking"
+	icon_state = "sommelier" // https://game-icons.net/1x1/lorc/martini.html
 
 /datum/perk/job/handyman
 	name = "Handyman"
 	desc = "Training by the Terra-Therma Union has granted you the knowledge of how to take apart machines in the most efficient way possible, finding materials and supplies most people would miss. This training is taken further the more mechanically skilled or cognitively capable you are."
-	icon_state = "guild"
+	icon_state = "engie" // https://game-icons.net/1x1/lorc/tinker.html
 
 /datum/perk/job/handyman/assign(mob/living/carbon/human/H)
 	..()
@@ -151,7 +151,7 @@
 /datum/perk/job/stalker
 	name = "Anomaly Hunter"
 	desc = "Special training from senior Shipbreakers and your own experience has allowed you to instinctively know the effects of greater oddities. By examining an oddity that has become an anomaly, you can tell what its greater boon or curse may be."
-	icon_state = "treasure"
+	icon_state = "inspect" // https://game-icons.net/1x1/lorc/lightning-tear.html
 
 /datum/perk/job/market_prof
 	name = "Market Professional"
@@ -162,22 +162,23 @@
 /datum/perk/job/medicalexpertise
 	name = "Medical Expertise"
 	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
-	icon_state = "knowledge"
+	icon_state = "capsa" // https://game-icons.net/1x1/delapouite/rod-of-asclepius.html
 
 /datum/perk/job/surgical_master
 	name = "Surgery Training"
 	desc = "While you may not know the more advanced medical procedures, your mandatory training on surgery for implantation purposes allows you to perform basic surgical procedures with ease."
-	icon_state = "surgery"
+	icon_state = "anatomy" // https://game-icons.net/1x1/lorc/anatomy.html
 
 /datum/perk/job/advanced_medical
 	name = "Advanced Surgical Techniques"
-	desc = "Your surgical training and experience have tempered your special techniques for treating patients, enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
-	icon_state = "surgery"
+	desc = "Your surgical training and experience have tempered your special techniques for treating patients, \
+			enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
+	icon_state = "scalpel" // https://game-icons.net/1x1/lorc/scalpel.html
 
 /datum/perk/job/robotics_expert
-	name = "Robotics Expert"
+	name = "Techno Tinkerer"
 	desc = "Your formal training and experience in advanced mech construction and complex devices has made you more adept at working with them."
-	icon_state = "robotics"
+	icon_state = "tinker"  // https://game-icons.net/1x1/lorc/auto-repair.html
 
 /datum/perk/job/robotics_expert/assign(mob/living/carbon/human/H)
 	..()
@@ -188,13 +189,17 @@
 
 /datum/perk/job/jingle_jangle
 	name = "Key Smith"
-	desc = "You have been granted a multitude of specially crafted electronic 'keys' for opening most airlocks around the colony, and the knowledge on how to use them has been solely been passed on to you. Don't get discouraged, you will eventually find the right one..."
+	desc = "You have been granted a multitude of specially crafted electronic 'keys' \
+			for opening most airlocks around the colony, and the knowledge \
+			on how to use them has been solely been passed on to you. \
+			Don't get discouraged, you will eventually find the right one..."
 	icon_state = "keysmith"
 
 /datum/perk/job/butcher
 	name = "Master Butcher"
-	desc = "Your skill as a butcher is unmatched, be it through your training or accumulated field experience. You can harvest additional valuable parts from animals you cut up, nothing shall be wasted."
-	icon_state = "knowledge"
+	desc = "Your skill as a butcher is unmatched, be it through your training or accumulated field experience. \
+			You can harvest additional valuable parts from animals you cut up, nothing shall be wasted."
+	icon_state = "butcher" // https://game-icons.net/1x1/lorc/meat-cleaver.html
 
 
 /datum/perk/job/butcher/assign(mob/living/carbon/human/H)
@@ -205,16 +210,17 @@
 
 /datum/perk/job/master_herbalist
 	name = "Naturalist"
-	desc = "The secrets of natural remedies have been unlocked by the lodge after special training from folken tribes, given their alliance. This has granted you the ability to make better \
-	use of grown plants to harvest more fruit and more properly manage the use of medical supplies like blood tongues or powder pouches. As an added bonus, when harvesting soil \
-	or plant trays you always harvest an additional bonus! You are also a capable surgeon, able to perform surgical steps a lot more easily, to the point of rivaling real surgeons."
+	desc = "Experience in the field as a gatherer of food and resources in inclement weather has made you proficient \
+			in harvesting strange plants that others would normally discard as useless. \
+			You are also quite adept at making and efficiently using poultices and natural remedies, \
+			and can recognise all reagents on a container while also having a natural talent for harvesting more produce out of plants."
 	perk_shared_ability = PERK_SHARED_SEE_REAGENTS
-	icon_state = "regrowth"
+	icon_state = "nature" // https://game-icons.net/1x1/lorc/daisy.html
 
 /datum/perk/job/science
 	name = "Science Training"
 	desc = "You know how to use RnD core consoles and Exosuit Fabs."
-	icon_state = "knowledge"
+	icon_state = "circuitry" // https://game-icons.net/1x1/lorc/circuitry.html
 
 /datum/perk/job/neat
 	name = "Humble Cleanser"
@@ -281,7 +287,7 @@
 /datum/perk/job/club
 	name = "Raising the bar"
 	desc = "You know how to mix drinks and change lives. People near you recover sanity."
-	icon_state = "inspiration"
+	icon_state = "sanity_aura" // https://game-icons.net/1x1/lorc/beams-aura.html
 
 /datum/perk/job/club/assign(mob/living/carbon/human/H)
 	if(..())
@@ -297,7 +303,7 @@
 	name = "Radiance Gentry"
 	desc = "The Hearthcore is the heraldic of your knighthood ceremony, emblazed upon your back, igniting righteous fervor. \
 			You are among the silver-bloodied, and the Radiance serves and sacrifices itself for you. You have an increased regeneration of Radiance."
-	icon_state = "channeling"
+	icon_state = "energy" // https://game-icons.net/1x1/lorc/fire-silhouette.html
 
 // TODO: Custodian "alchemy" perk. WIP for now!
 /datum/perk/job/apothecary
@@ -305,7 +311,7 @@
 	desc = "The aromantic symphony unfolds, tendrils of steam from concoctions whose essence \
 			ignites a sensory dance on once dormant powers, trascending the ordinary - \
 			all within a single vial."
-	icon_state = "spice"
+	icon_state = "alchemy"
 
 /datum/perk/job/codespeak
 	name = "Codespeak"
@@ -359,4 +365,4 @@
 	name = "Gunsmith Master"
 	desc = "You are a professional gunsmith, your knowledge allows to not only repair firearms but expertly craft them. \
 			This includes the machines required to do so, including the bullet fabricator."
-	icon_state = "knowledge"
+	icon_state = "guns" // https://game-icons.net/1x1/delapouite/shotgun-rounds.html

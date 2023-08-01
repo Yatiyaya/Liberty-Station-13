@@ -6,7 +6,6 @@
 	var/required_tool_quality = null
 	var/target_organ_type = /obj/item/organ/external
 	var/perk_i_need = PERK_ADVANCED_MEDICAL					//Basically set up to check for specific surgery perks.
-	var/perk_i_need_alt = PERK_MASTER_HERBALIST
 	var/perk_drug = PERK_ULTRASURGEON
 
 	var/difficulty = FAILCHANCE_HARD
@@ -101,7 +100,7 @@
 	var/datum/surgery_step/S = GLOB.surgery_steps[step_type]
 
 	if(S.requires_perk)
-		if(!(user.stats.getPerk(S.perk_i_need) || user.stats.getPerk(S.perk_i_need_alt) || user.stats.getPerk(S.perk_drug) || user.stats.getStat(STAT_BIO) >= 50))
+		if(!(user.stats.getPerk(S.perk_i_need) || user.stats.getPerk(S.perk_drug) || user.stats.getStat(STAT_BIO) >= 50))
 			to_chat(user, SPAN_WARNING("You do not have the necessary training to do this surgery!"))
 			return FALSE
 
@@ -140,11 +139,7 @@
 	var/time_adjust = 0
 
 	if(user.stats.getPerk(PERK_SURGICAL_MASTER) && !S.is_robotic)
-		difficulty_adjust = -90
-		time_adjust = -130
-
-	if(user.stats.getPerk(PERK_MASTER_HERBALIST) && !S.is_robotic)
-		difficulty_adjust = -80 // Negates the difficulty of most basic surgical steps, but not as good as a professional at this
+		difficulty_adjust = -80
 		time_adjust = -100
 
 	// Self-surgery increases failure chance

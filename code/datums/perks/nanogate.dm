@@ -7,7 +7,7 @@
 	it detects in the body, which can be harmful when combined with fast-acting genetic modifications."
 	gain_text = "Your head aches for a moment, the effects of your spine having been seperated and an advanced machine slotted inbetween leaving you with a dull pain that is quickly cured \
 	by your nanites."
-	icon_state = "circuitry"
+	icon_state = "nanogate" // https://game-icons.net/1x1/lorc/processor.html
 
 /datum/perk/nanogate/assign(mob/living/carbon/human/H)
 	if(..())
@@ -23,14 +23,14 @@
 	desc = "You configure your nanite matrix to begin aiding in your natural healing."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
 	var/regen_rate = 0.5 //This seems low but this is per human handle_chemicals_in_body meaning this is rather robust
-	icon_state = "circuitry"
+	icon_state = "healing"
 
 /datum/perk/nanite_muscle
 	name = "Nanofiber Muscle Therapy"
 	desc = "Through the use of pain killers, implanted nanofibers, and small dispersed drug therapy to critical areas your nanogate has enhanced your physical movement speed and endurance, allowing you to run for \
 	longer stretches at a faster pace without tiring. Though you feel that all this strain might make your slightly weaker to physical trauma."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
-	icon_state = "circuitry"
+	icon_state = "riotshield"
 
 /datum/perk/nanite_muscle/assign(mob/living/carbon/human/H)
 	..()
@@ -45,7 +45,7 @@
 	desc = "Through the use of reactive nanites designed to plate together into a shield your machines can reform at a lightning pace to let you physically resist incoming damage by forming a \
 	mesh weave shield just before a strike connects."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
-	icon_state = "circuitry"
+	icon_state = "shield"
 
 /datum/perk/nanite_armor/assign(mob/living/carbon/human/H)
 	..()
@@ -61,13 +61,13 @@
 	name = "Nanite Metal Drinker"
 	desc = "Allows the user to drink metals (like Gold/Silver/Iron/Potassium and more) to regain nutrition."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
-	icon_state = "circuitry"
+	icon_state = "drinking"
 
 /datum/perk/nanite_chem
 	name = "Nanite Chemicals"
 	desc = "You programmed and set aside a specific subset of nanites who have a singular purpose that you can call upon at any time to engage their effect, but this only works once."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
-	icon_state = "circuitry"
+	icon_state = "selfmedicated"
 	active = FALSE
 	passivePerk = FALSE
 	var/chem_id = "nanites"
@@ -125,7 +125,7 @@
 	desc = "You programmed and set aside a specific subset of nanites whose singular purpose is to reconstruct themselves into ammunition boxes. The process is quite intensive and requires \
 	half an hour between uses."
 	gain_text = "You feel a dull ache as your nanogate releases newly configured nanites into your body."
-	icon_state = "circuitry"
+	icon_state = "ammo_box"
 	active = FALSE
 	passivePerk = FALSE
 	var/cooldown = 30 MINUTES

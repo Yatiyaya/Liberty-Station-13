@@ -1209,7 +1209,7 @@ mob/proc/yank_out_object()
 	var/list/S = list()
 	for(var/TS in ALL_STATS)
 		var/points = user.stats.getStat(TS,pure = TRUE)
-		if(!user.stats.getPerk(PERK_NO_OBSUCATION))
+		if(!user.stats.getPerk(PERK_NO_OBFUSCATION))
 			S += "<td>[TS]<td> [statPointsToLevel(points)]"
 		else
 			S += "<td>[TS]<td> [points] ([statPointsToLevel(points)])"

@@ -422,7 +422,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 					penalty *= -1
 				if(75 to 100)
 					penalty *= 0
-		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && prob(100-owner.stats.getStat(STAT_WIL)))
+		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && !owner.stats.getPerk(PERK_NIHILIST) &&  !owner.stats.getPerk(PERK_SURVIVOR) && prob(70-owner.stats.getStat(STAT_WIL)))
 			setLevel(0)
 		else
 			changeLevel(penalty*death_view_multiplier)

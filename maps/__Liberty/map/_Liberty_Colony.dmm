@@ -24350,23 +24350,6 @@
 /obj/random/mob/roaches,
 /turf/simulated/floor/industrial/white_large_slates,
 /area/liberty/maintenance/undergroundfloor1south)
-"fUj" = (
-/obj/effect/window_lwall_spawn/reinforced,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
-	id = "TechShop";
-	name = "Tech Shop Shutters";
-	opacity = 0
-	},
-/obj/structure/sign/warning/smoking/small{
-	pixel_x = -32;
-	pixel_y = -32
-	},
-/turf/simulated/floor/plating/under,
-/area/liberty/crew_quarters/techshop)
 "fUn" = (
 /turf/simulated/floor/rock,
 /area/liberty/outside/dcave)
@@ -153062,7 +153045,7 @@ fxT
 kMC
 fxT
 fxT
-fUj
+fxT
 dgr
 dgr
 fDL

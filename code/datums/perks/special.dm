@@ -36,7 +36,7 @@
 	desc = "Whether from fun study or natural talent in the field of brewing random things together you know how to gather basic chemical compounds. \
 			Your NSA also has been slightly improved due to self experimentation. You can also see all reagents in beakers."
 	perk_shared_ability = PERK_SHARED_SEE_REAGENTS
-	icon_state = "alch"
+	icon_state = "alchemy" // https://game-icons.net/1x1/darkzaitzev/apothecary.html
 
 /datum/perk/alchemist/assign(mob/living/carbon/human/H)
 	..()
@@ -53,7 +53,7 @@
 /datum/perk/scribe
 	name = "Scribe"
 	desc = "Your ability to turn experiences into words knows no bounds. Paper at this point is hardly able to hold the power of your writing."
-	icon_state = "knowledge"
+	icon_state = "scribe" // https://game-icons.net/1x1/delapouite/scroll-quill.html
 
 /datum/perk/scribe/assign(mob/living/carbon/human/H)
 	..()

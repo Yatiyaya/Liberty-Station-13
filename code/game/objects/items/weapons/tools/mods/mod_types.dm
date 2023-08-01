@@ -792,7 +792,7 @@
 
 /obj/item/tool_upgrade/augment/hammer_addon
 	name = "spiked plate"
-	icon_state = "spiked_plate" // Bit of a lazy placeholder I know
+	icon_state = "spiked_plate" // Sprite by Nayu, thank you so much!!!
 	desc = "A crude attachment of diamond-tipped spikes that fits on most flat hammer heads and maces, \
 			granting an extra oomph behind every swing, but making it unwieldy and unfit as a tool.\nOnce soldered, it cannot be removed."
 	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2, MATERIAL_DIAMOND = 1)
@@ -802,7 +802,7 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.tool_upgrades = list(
-	UPGRADE_FORCE_MULT = 2.25, // Can only be applied to hammers/maces, combined damage of whetstone+diamond edge but unlike them, it has downsides.
+	UPGRADE_FORCE_MULT = 1.35, // Can only be applied to hammers/maces, combined damage of whetstone+diamond edge but unlike them, it has downsides.
 	UPGRADE_BULK = 1, // Heavier...
 	UPGRADE_WORKSPEED = -0.5, // ...and thus, slower.
 	UPGRADE_PRECISION = -15, // Spikes at the end make it impossible to be used as a proper hammer anymore
