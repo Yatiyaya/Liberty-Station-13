@@ -152,7 +152,7 @@
 /datum/perk/racial/squid_alien_nerves
 	name = "Adapted Nervous System"
 	desc = "A mar'qua's nervous system has long since adapted to the use of stimulants, chemicals, and different toxins. Unlike lesser races, you can handle a wide variety of chemicals before showing any side effects and you'll never become addicted."
-	icon = "squid" // https://game-icons.net/1x1/lorc/squid-head.html
+	icon_state = "squid" // https://game-icons.net/1x1/lorc/squid-head.html
 
 /datum/perk/racial/squid_alien_nerves/assign(mob/living/carbon/human/H)
 	..()
