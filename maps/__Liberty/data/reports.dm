@@ -19,7 +19,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient
 	form_name = "FLC-TEST-000-ERR"
 	title = "INDEX - ERROR PLEASE CONTACT ADMINISTRATOR"
-	logo = "\[logo\]"
+	logo = "\[liberty\]"
 	available_on_ntnet = 1
 
 //////////////////////////////
@@ -182,7 +182,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient/sec
 	form_name = "FLC-FLW-001-SIR"
 	title = "Liberty Watch - Security Incident Report"
-	logo = "\[solcrest\]" //Placeholder until their actual logo
+	logo = "\[watchlogo\]"
 
 /datum/computer_file/report/recipient/sec/New()
 	..()
@@ -266,7 +266,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient/sks
 	form_name = "FLC-SKS-001-SPR"
 	title = "Skylight - Shipping Receipt"
-	logo = "\[solcrest\]" //Placeholder until their actual logo
+	logo = "\[syndie\]"
 
 /datum/computer_file/report/recipient/sks/New()
 	..()
@@ -334,6 +334,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient/ttu
 	form_name = "FLC-TTU-001-MGR"
 	title = "Terra-Therma - Mining Report"
+	logo = "\[terralogo\]"
 
 /datum/computer_file/report/recipient/ttu/generate_fields()
 	..()
@@ -358,6 +359,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient/pirs/excavation
 	form_name = "FLC-PRI-001-MGR"
 	title = "Phokorus Institute - Excavation Report"
+	logo = "\[pirslogo\]"
 
 /datum/computer_file/report/recipient/pirs/excavation/generate_fields()
 	..()
@@ -398,6 +400,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 /datum/computer_file/report/recipient/cap
 	form_name = "FLC-CAP-001-BGR"
 	title = "CAPSA Group - Billing Receipt"
+	logo = "\[capsalogo\]"
 
 /datum/computer_file/report/recipient/cap/generate_fields()
 	..()
