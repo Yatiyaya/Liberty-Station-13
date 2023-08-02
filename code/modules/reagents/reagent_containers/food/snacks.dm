@@ -1859,6 +1859,8 @@
 	bitesize = 2
 	center_of_mass = list("x"=17, "y"=20)
 	preloaded_reagents = list("protein" = 3)
+	nutriment_amt = 3
+	nutriment_desc = list("tender skirt steak" = 3)
 	matter = list(MATERIAL_BIOMATTER = 3)
 
 /obj/item/reagent_containers/food/snacks/rawcutlet/attackby(obj/item/W as obj, mob/user as mob)
