@@ -1537,6 +1537,7 @@
 	nutriment_amt = 6
 	nutriment_desc = list("vanilla" = 3, "sweetness" = 2, "refreshing cold" = 1)
 	matter = list(MATERIAL_BIOMATTER = 6)
+	cooked = TRUE
 
 // Moved to a cutting board recipe for neatness.
 /*
@@ -1557,6 +1558,7 @@
 	nutriment_amt = 8
 	nutriment_desc = list("velvety chocolate" = 10, "sweetness" = 5, "refreshing cold" = 5)
 	matter = list(MATERIAL_BIOMATTER = 6)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/strawberryicecream
 	name = "strawberry icecream"
@@ -1567,6 +1569,7 @@
 	nutriment_amt = 8
 	nutriment_desc = list("strawberry" = 10, "sweetness" = 5, "refreshing cold" = 5)
 	matter = list(MATERIAL_BIOMATTER = 6)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatepiece
 	name = "chocolate piece"
@@ -1576,6 +1579,7 @@
 	nutriment_amt = 3
 	nutriment_desc = list("chocolate" = 3, "dulce de leche" = 2, "lusciousness" = 1)
 	bitesize = 2
+	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 5)
 
 /obj/item/reagent_containers/food/snacks/chocolatepiece/white
@@ -1584,6 +1588,7 @@
 	icon_state = "chocolatepiece_white"
 	filling_color = "#E2DAD3"
 	nutriment_desc = list("white chocolate" = 3, "creaminess" = 1)
+	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 5)
 
 /obj/item/reagent_containers/food/snacks/chocolatepiece/truffle
@@ -1591,6 +1596,7 @@
 	desc = "A bite-sized milk chocolate truffle that could buy anyone's love."
 	icon_state = "chocolatepiece_truffle"
 	nutriment_desc = list("chocolate" = 3, "undying devotion" = 3)
+	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 8)
 
 /obj/item/reagent_containers/food/snacks/sliceable/cheesewheel
@@ -1604,6 +1610,7 @@
 	center_of_mass = list("x"=16, "y"=10)
 	nutriment_desc = list("cheese" = 10)
 	nutriment_amt = 10
+	cooked = TRUE
 	preloaded_reagents = list("protein" = 10)
 	matter = list(MATERIAL_BIOMATTER = 15)
 
@@ -1614,7 +1621,10 @@
 	filling_color = "#FFF700"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=10)
+	nutriment_amt = 3
+	preloaded_reagents = list("protein" = 3)
 	matter = list(MATERIAL_BIOMATTER = 3)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/watermelonslice
 	name = "watermelon slice"
@@ -1659,6 +1669,7 @@
 	icon_state = "cinnamonroll"
 	bitesize = 3
 	nutriment_amt = 6
+	cooked = TRUE
 	nutriment_desc = list("cinnamon" = 10, "buttery goodness" = 5, "cream cheese" = 3)
 	preloaded_reagents = list("cinnamonpowder" = 5, "sugar" = 10)
 
@@ -1804,7 +1815,8 @@
 	icon_state = "medialuna"
 	bitesize = 3
 	nutriment_amt = 6
-	nutriment_desc = list("crunchy pastry" = 5, "buttery goodness" = 5)
+	nutriment_desc = list("crunchy pastry" = 3, "buttery goodness" = 3)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/tortilla
 	name = "tortilla"
@@ -1861,6 +1873,7 @@
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "rawbacon"
 	bitesize = 2
+	nutriment_amt = 2
 	preloaded_reagents = list("protein" = 2)
 	matter = list(MATERIAL_BIOMATTER = 2)
 
@@ -1881,7 +1894,10 @@
 	icon_state = "patty"
 	bitesize = 3
 	center_of_mass = list("x"=17, "y"=20)
+	nutriment_amt = 3
+	nutriment_desc = list("meat patty")
 	preloaded_reagents = list("protein" = 3) // It's cooked
+	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 3)
 
 /obj/item/reagent_containers/food/snacks/chickenbreast
@@ -1908,8 +1924,11 @@
 	icon_state = "hotdog"
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=17)
+	nutriment_amt = 6
+	nutriment_desc = list("grilled hotdog" = 6)
 	preloaded_reagents = list("protein" = 6)
 	matter = list(MATERIAL_BIOMATTER = 8)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/flatbread
 	name = "flatbread"
