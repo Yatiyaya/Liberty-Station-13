@@ -183,6 +183,13 @@
 		projector.adjust_health(amount) // Projector will kill the shield if needed.
 	// If the shield lacks a projector, then it was probably spawned in by an admin for bus, so it's indestructable.
 
+/obj/effect/directional_shield/escutcheon
+	name = "Custodian Escutcheon"
+	desc = "A wide shield, which has the property to block incoming projectiles but allow outgoing projectiles to pass it.  \
+	Slower moving objects are not blocked, so people can walk in and out of the barrier, and things can be thrown into and out \
+	of it."
+	icon_state = "escutcheon"
+
 // This actually creates the shields.  It's an item so that it can be carried, but it could also be placed inside a stationary object if desired.
 // It should work inside the contents of any mob.
 /obj/item/shield_projector
@@ -490,6 +497,28 @@
 	// Finished.
 	update_shield_colors()
 	return TRUE
+
+/obj/item/shield_projector/line/custodian_aegis
+	name = "sash of the Radiant Vanguard"
+	desc = "A venerable artifact of the Custodians, this sash is said to have held an escutcheon fast \
+			to the stump of an arm of a legendary Oathpledge as he lead a corageous forlorn hope \
+			against the Great Anthrophyte Menace of Elohopea, inspiring his oathbounds to glory. \n\
+			Creates a line shield in front of its wearer on activation, to shield against projectiles \
+			while letting other bodies pass through the beams."
+	icon_state = "custodian_sash"
+	item_state = "custodian_sash"
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_BIOMATTER = 4)
+	slot_flags = SLOT_BELT
+	price_tag = 1000 // It's a relic, don't you dare sell it.
+	shield_health = 300
+	max_shield_health = 300
+	offset_from_center = 1
+	high_color = "#FFFFFF"
+
+/obj/item/shield_projector/line/custodian_aegis/create_shield(var/newloc, var/new_dir)
+	var/obj/effect/directional_shield/escutcheon/S = new(newloc, src)
+	S.dir = new_dir
+	active_shields += S
 
 /obj/item/shield_projector/line/exosuit //Variant for Exosuit design.
 	name = "linear exosuit shield projector"

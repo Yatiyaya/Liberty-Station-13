@@ -13,7 +13,7 @@
 
 /datum/design/bioprinter/soap
 	name = "Soap"
-	build_path = /obj/item/soap/church
+	build_path = /obj/item/soap/bonfire
 
 //[NUTRIMENTS]
 /datum/design/bioprinter/ez
@@ -182,10 +182,6 @@
 	name = "Radiance Sigil"
 	build_path = /obj/item/stack/mold_kit/radiance_sigil
 
-/datum/design/autolathe/tool_upgrade/sanctifier
-	name = "NT Sanctifier"
-	build_path = /obj/item/tool_upgrade/augment/sanctifier
-
 // Total cost: 25 bio silk (stacks and kit itself), 5 biomatter (splints), 5 steel and 5 plastic (syrettes)
 /datum/design/bioprinter/custodian_healthpack
 	name = "Bonfire Medkit"
@@ -201,6 +197,9 @@
 	name = "Bonfire Burnpack"
 	build_path = /obj/item/stack/medical/ointment/advanced/nt
 
+/datum/design/bioprinter/custodian_soap
+	name = "Bonfire Soap"
+	build_path = /obj/item/soap/bonfire
 
 // end of Custodian disk designs //
 
@@ -322,10 +321,6 @@
 /datum/design/bioprinter/sling
 	name = "Universal sling"
 	build_path = /obj/item/clothing/suit/sling
-
-/datum/design/autolathe/gun_upgrade/barrel/excruciator
-	name = "New Testament \"EXCRUCIATOR\" giga lens"
-	build_path = /obj/item/gun_upgrade/barrel/excruciator
 
 /datum/design/bioprinter/vacuum_cleaner
 	name = "\"Swift 200\" vacuum cleaner"

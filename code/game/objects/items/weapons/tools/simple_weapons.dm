@@ -179,6 +179,7 @@
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	max_upgrades = 2
 	tool_qualities = list(QUALITY_HAMMERING = 5)
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Can't attach a plate to a chain.
 
 	has_alt_mode = TRUE
 	alt_mode_damagetype = HALLOSS
@@ -710,6 +711,7 @@
 /obj/item/tool/cheap/axe
 	name = "cheap tomahawk"
 	desc = "A tomahawk of acceptable quality, mass-produced by Skylight. Just expensive enough to be called tactical."
+	throwforce = WEAPON_FORCE_ROBUST // Tomahawks are meant to be thrown
 	icon_state = "cheap_axe"
 	item_state = "cheap_axe"
 	attack_verb = list("attacked", "slashed", "chopped", "sliced", "torn", "ripped", "diced", "cut")
@@ -717,6 +719,7 @@
 /obj/item/tool/cheap/katana
 	name = "cheap katana"
 	desc = "A katana of acceptable quality, mass-produced by Skylight. Easily their best-selling product from this lineup."
+	armor_penetration = ARMOR_PEN_MODERATE // Something something sharper
 	icon_state = "katana_old"
 	item_state = "katana"
 
@@ -727,7 +730,7 @@
 	item_state = "cheap_spear"
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_BELT
-	throwforce = WEAPON_FORCE_BRUTAL
+	throwforce = WEAPON_FORCE_ROBUST // Not as strong as a crafted plasteel one. Shouldn't be.
 	throw_speed = 3
 	embed_mult = 1.5
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK

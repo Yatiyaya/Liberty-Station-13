@@ -3,48 +3,40 @@ carp
 bear
 cockroach
 spider
-vagabond
-megacarp
+freelancer
+pike
+shark
 bee
 alien
-Nar-Sie
-redditor
-jager
-fuhrer
-panzer
+hunter
+overlord
+exoskeleton
 robot
 borg
 ai
 bot
 secbot
-floorbot
-drillbot
-ed-209
 farmbot
 cleanbot
 medbot
-captain
+secretary
 slime
 brain
-fuhrer roach
-jager roach
-kraftwerk roach
-panzer roach
-gestrahlte roach
+overlord roach
+hunter roach
+nanite roach
+exoskeleton roach
+radioactive roach
 cat
-Iriska
 Runtime
 Ian
+Lisa
 Pun-Pun
 Betsy
 Clucky
-alien larva
-golem
 monkey
 xeno
 xenomorph
-necromorph
-changeling
 android
 gynoid
 angel
@@ -52,40 +44,33 @@ devil
 demon
 borer
 mouse
-Memo
 parrot
 worm
 kitty
 corgi
 dog
 crab
-headcrab
 lizard
 shroom
 mushroom
 spiderbot
 goat
 cow
-cock
 bat
 doomba
 roomba
-hivebot
-mimic
 drone
-pirate
-russian
-ukrainian
-english person
-american
+Libertalia pirate
+Free Worlder
+Astrakhan
+Pallatian
+Terran
 creature
 human
 god
 God
-hivemind tyrant
 scientist
 engineer
-shitsec
 detective
 criminal
 officer
@@ -93,21 +78,16 @@ preacher
 cleric
 fighter
 knight
-wizard
-witch
-druid
+enkindled
+forgemaster
+oathbound
+oathpledge
 cyborg
-german
-serbian
+kriosan
 wolf
 soldier
-dutch person
-french person
-mummy
-vampire
 elf
 dwarf
-halfling
 orc
 plant
 tree

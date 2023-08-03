@@ -369,7 +369,7 @@
 
 /obj/item/storage/fancy/cigarettes/faith
 	name = "\improper TempleOS packet"
-	desc = "A packet of six TempleOS cigarettes. A proper brand for those of faith and those who want to see Sol-fed agents glowing in the dark."
+	desc = "A packet of six TempleOS cigarettes. A proper brand for those of faith, or those who want to run over glowing Terran agents with their hoverpods."
 	icon_state = "FaithsCigPacket"
 	item_state = "FaithsCigPacket"
 

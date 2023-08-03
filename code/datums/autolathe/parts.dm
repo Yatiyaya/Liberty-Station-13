@@ -132,6 +132,10 @@
 	name = "Oxyjet Canister"
 	build_path = /obj/item/tool_upgrade/productivity/oxyjet
 
+/datum/design/autolathe/part/hammer_addon
+	name = "Spiked Plate"
+	build_path = /obj/item/tool_upgrade/augment/hammer_addon
+
 //Excelsior shit
 /datum/design/autolathe/excelsior/laser
 	name = "astrakhan micro-laser"

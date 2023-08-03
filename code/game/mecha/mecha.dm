@@ -1489,9 +1489,9 @@ assassination method if you time it right*/
 		src.log_append_to_last("[H] moved in as pilot.")
 		src.update_icon()
 		set_dir(dir_in)
-		playsound(src, 'sound/machines/windowdoor.ogg', 50, 1)
+		playsound(src, 'sound/weapons/guns/interact/chaingun_open.ogg', 50, 1)
 		if(!hasInternalDamage())
-			src.occupant << sound('sound/mecha/nominal.ogg',volume=50)
+			src.occupant << sound('sound/mecha/mechstart.ogg',volume=50)
 		return 1
 	else
 		return 0

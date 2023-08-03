@@ -106,3 +106,14 @@
 		user.Weaken(1)
 		return
 	return ..()
+
+// A mallet to use for the optional steps that require it.
+/obj/item/tool/hammer/tenderizer
+	name = "meat tenderizer"
+	desc = "A small hammer-like utensil meant to be used to soften up meat for tenderness and even frying."
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "tenderizer"
+	worksound = 'sound/weapons/meat_hammer.ogg' // Snowflake!
+	max_upgrades = 0 // No.
+	tool_qualities = list(QUALITY_HAMMERING = 10)
+

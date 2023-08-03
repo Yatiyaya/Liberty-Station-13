@@ -204,7 +204,6 @@
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
 
-/*
 /datum/craft_recipe/trapper/powder_pouch
 	name = "Tatonka powder pouch"
 	result = /obj/item/stack/medical/ointment/advanced/powder_pouch
@@ -214,7 +213,6 @@
 		list(/obj/item/animal_part/tatonka_horn, 1, "time" = 20),
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
-*/
 
 /datum/craft_recipe/trapper/tangu_juice
 	name = "Tangu Extract"

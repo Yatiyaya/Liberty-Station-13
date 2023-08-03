@@ -73,7 +73,6 @@
 	/obj/item/tool/saw/hyper = 1,
 	/obj/item/tool/pickaxe/diamonddrill = 2,
 	/obj/item/gun_upgrade/mechanism/glass_widow = 1,
-	/obj/item/gun_upgrade/barrel/excruciator = 1,
 	/obj/item/device/destTagger = 1,
 	/obj/item/device/makeshift_electrolyser = 1,
 	/obj/item/device/makeshift_centrifuge = 1

@@ -59,6 +59,7 @@
 #define UPGRADE_STIFFNESS_ARMOR "stiffness" // Recoil caused by moving while shooting and wearing this
 #define UPGRADE_OBSCURATION_ARMOR "obscuration" // Accuracy decreased while wearing this
 #define UPGRADE_SLOWDOWN_ARMOR "slowdown" // How slower we move while wearing this. Negative values reduce slowdown.
+#define UPGRADE_ARMOR_PYRORES "max_heat_protection_temperature" // Takes a value in Kelvin to protect against in terms of hot temperature
 
 
 /**************************/

@@ -312,6 +312,8 @@
 		T.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		T.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		T.max_heat_protection_temperature += tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		T.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 
@@ -332,6 +334,8 @@
 		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		R.max_heat_protection_temperature += tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	R.prefixes -= prefix
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
@@ -355,6 +359,8 @@
 		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		R.max_heat_protection_temperature -= tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	R.prefixes -= prefix
 	R.updateArmor()
 
@@ -611,7 +617,8 @@
 		to_chat(user, SPAN_NOTICE("Changes slowdown by [tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]]"))
 	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
 		to_chat(user, SPAN_NOTICE("Changes stiffness by [tool_upgrades[UPGRADE_STIFFNESS_ARMOR]]"))
-
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		to_chat(user, SPAN_NOTICE("Makes the clothing space and fireproof"))
 	if(tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS])
 		to_chat(user, SPAN_NOTICE("This mod allows you to install Simulacrum Robotics mods"))
 //tool/gun related examines
@@ -874,6 +881,7 @@
 /obj/item/tool_upgrade
 	name = "tool upgrade"
 	icon = 'icons/obj/tool_upgrades.dmi'
+	icon_state = "placeholder" // Eris fix
 	force = WEAPON_FORCE_HARMLESS
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 200

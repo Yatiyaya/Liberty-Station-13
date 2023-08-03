@@ -20,6 +20,7 @@
 	)
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
@@ -35,6 +36,7 @@
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10, MATERIAL_PLATINUM = 2)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO
 	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/suit/storage/scavengerarmor/fontaine/fullbody
@@ -44,6 +46,7 @@
 	item_state = "fontaine_fullbody_platecarrier"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	max_upgrades = 1
 	armor_list = list(
 		melee = 50, //A bit worse than riot armour

@@ -111,6 +111,11 @@
 	build_path = /obj/item/tool_upgrade/augment/repair_nano
 	category = CAT_TOOLMODS
 
+/datum/design/research/item/simulacrum/grav_enhancer
+	name = "SR Microgravity Stabilizer"
+	build_path = /obj/item/tool_upgrade/refinement/gravenhancer
+	category = CAT_TOOLMODS
+
 /datum/design/research/item/simulacrum/ai_tool
 	name = "SR Nano-integrated AI Tool Upgrade"
 	build_path = /obj/item/tool_upgrade/augment/ai_tool

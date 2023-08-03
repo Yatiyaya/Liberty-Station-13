@@ -15,14 +15,14 @@
 	var/list/usable_qualities = list(QUALITY_CUTTING)
 	var/tool_type = I.get_tool_type(user, usable_qualities, src)
 	if(tool_type==QUALITY_CUTTING && user.stats.getPerk(PERK_MASTER_HERBALIST))
-		to_chat(user, SPAN_NOTICE("You start to harvest the [src]."))
+		to_chat(user, SPAN_NOTICE("You start to carefully harvest from \the [src]."))
 		if(I.use_tool(user, src, WORKTIME_QUICK, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 			new fruit(get_turf(src))
-			to_chat(user, SPAN_NOTICE("You harvest the [src]."))
+			to_chat(user, SPAN_NOTICE("You succesfully harvest from \the [src]."))
 			qdel(src)
 			return
 	else
-		to_chat(user, SPAN_NOTICE("You don't know how to harvest this!"))
+		to_chat(user, SPAN_NOTICE("You aren't sure how to properly harvest this plant without destroying it."))
 		return
 
 /obj/structure/flora/wild/bruteloss

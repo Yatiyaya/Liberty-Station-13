@@ -1,9 +1,9 @@
 /datum/ritual/cruciform/custodian //these are only available to the module CRUCIFORM_CUSTODIAN so all Custodian jobs have them
-	name = "cruciform"
+	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/cruciform
-	fail_message = "The Hearthcore feels cold against your chest."
-	category = "Custodian"
+	fail_message = "The Hearthcore feels cold against your back."
+	category = "EOTP"
 	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
 /datum/ritual/cruciform/custodian/offering
@@ -83,7 +83,7 @@
 /datum/ritual/cruciform/custodian/offering/buy_item
 	name = "Order Armaments"
 	phrase = "Oxidate Lecture: Order Armaments"
-	desc = "Allows you to spend favor to unlock disks from the lower stronghold."
+	desc = "Allows you to spend armament reserves to order specialized weaponry from the lower Stronghold."
 
 /datum/ritual/cruciform/custodian/offering/buy_item/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	var/list/OBJS = get_front(H)
@@ -100,7 +100,7 @@
 	name = "Call for Arms"
 	phrase = "Oxidate Lecture: Call for Arms"
 	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering ten carbon fiber, twenty steel, and sixty bio-silk to guide its power towards inspiring Hearthcore users. \
-	Your offering also increases the EOTP's armanents reserves."
+	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/stack/material/carbon_fiber = 10, /obj/item/stack/material/steel = 20, /obj/item/stack/material/biopolymer_silk = 60)
 	miracles = list(INSPIRATION)
 
@@ -108,7 +108,7 @@
 	name = "Righteous Intervention"
 	phrase = "Oxidate Lecture: Righteous Intervention"
 	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering two hundred and forty bio-silk to guide its power towards enhancing the abilities of Hearthcore users. \
-	Your offering also increases the EOTP's armanents reserves."
+	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/stack/material/biopolymer_silk = 240)
 	miracles = list(STAT_BUFF)
 
@@ -116,7 +116,7 @@
 	name = "Sparking Guidance"
 	phrase = "Oxidate Lecture: Sparking Guidance."
 	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance regeneration among users. \
-	Your offering also increases the EOTP's armanents reserves."
+	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/oddity = 1, /obj/item/stack/material/biopolymer_silk = 40)
 	miracles = list(ENERGY_REWARD)
 
@@ -124,6 +124,6 @@
 	name = "Discern Malcontents"
 	phrase = "Oxidate Lecture: Discern Malcontents."
 	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering one hundred and twenty bio-silk and five carbon fiber to guide its power towards potentially discovering evil creatures. \
-	Your offering also increases the EOTP's armanents reserves."
+	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/stack/material/biopolymer_silk = 120, /obj/item/stack/material/carbon_fiber = 20)
 	miracles = list(ALERT)

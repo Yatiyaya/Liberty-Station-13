@@ -35,20 +35,20 @@
 	stat_used = STAT_TGH
 
 /obj/machinery/gym/cognition
-	name = "Crazy Jakes Puzzel Box"
-	desc = "A 4D puzzel box designed to test your mind in every way known to humanity, shockingly it's party mode has been made into party games for decades."
+	name = "Crazy Jakes Puzzle Box"
+	desc = "A 4D puzzle box designed to test your mind in every way known to humanity. Shockingly, its party mode has been made into party games for decades."
 	icon_state = "cognition"
 	stat_used = STAT_COG
 
 /obj/machinery/gym/bio
 	name = "Dr. Terry Advanced Advenctures"
-	desc = "A seemingly endless quest of medical misshaps and common to avdanced misstakes, well its boring for a lot of people, it has a cult following leading to it being rather successful in most locations."
+	desc = "A seemingly endless quest of medical misshaps and common-to-advanced mistakes, while it's boring for a lot of people, it has a cult following leading to it being rather successful in most locations."
 	icon_state = "bio"
 	stat_used = STAT_BIO
 
 /obj/machinery/gym/mec
 	name = "Shapers Of Atoms"
-	desc = "An informational game found in many schools teaching things from welding to fine crafting of delicate items with rare materals. Shockingly this collection of knowlage is still update and maintained making it a invaulable resource for any up and coming crafter"
+	desc = "An informational game found in many schools teaching things from welding to fine crafting of delicate items with rare materials. Shockingly this collection of knowledge is still updated and maintained making it a invaluable resource for any up-and-coming handyman."
 	icon_state = "mec"
 	stat_used = STAT_MEC
 

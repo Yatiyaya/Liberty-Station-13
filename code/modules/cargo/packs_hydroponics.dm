@@ -70,6 +70,13 @@
 	crate_name = "polar bear crate"
 	group = "Hydroponics"
 
+/datum/supply_pack/snakes
+	name = "Snakes on a Crate"
+	cost = 500
+	containertype = /obj/structure/largecrate/animal/snake
+	crate_name = "snakes on a crate"
+	group = "Hydroponics"
+
 /datum/supply_pack/goat
 	name = "Goat Crate"
 	cost = 200

@@ -83,12 +83,12 @@
 		/datum/design/autolathe/part/fuel_tank,
 		/datum/design/autolathe/part/oxyjet,
 		/datum/design/autolathe/part/expansion,
+		/datum/design/autolathe/part/hammer_addon,
 		/datum/design/autolathe/part/spikes,
 		/datum/design/autolathe/part/dampener,
 		/datum/design/research/item/weapon/toolmod/antistaining,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
-		/datum/design/research/item/weapon/toolmod/injector,
 		/datum/design/research/item/weapon/toolmod/plasmablock,
 	)
 
@@ -226,12 +226,12 @@
 		/datum/design/autolathe/part/fuel_tank,
 		/datum/design/autolathe/part/oxyjet,
 		/datum/design/autolathe/part/expansion,
+		/datum/design/autolathe/part/hammer_addon,
 		/datum/design/autolathe/part/spikes,
 		/datum/design/autolathe/part/dampener,
 		/datum/design/research/item/weapon/toolmod/antistaining,
 		/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 		/datum/design/research/item/weapon/toolmod/hydraulic,
-		/datum/design/research/item/weapon/toolmod/injector,
 		/datum/design/research/item/weapon/toolmod/plasmablock,
 		// From Light
 		/datum/design/autolathe/misc/tube,
@@ -347,12 +347,12 @@
 	/datum/design/autolathe/part/fuel_tank,
 	/datum/design/autolathe/part/oxyjet,
 	/datum/design/autolathe/part/expansion,
+	/datum/design/autolathe/part/hammer_addon,
 	/datum/design/autolathe/part/spikes,
 	/datum/design/autolathe/part/dampener,
 	/datum/design/research/item/weapon/toolmod/antistaining,
 	/datum/design/research/item/weapon/toolmod/compensatedbarrel,
 	/datum/design/research/item/weapon/toolmod/hydraulic,
-	/datum/design/research/item/weapon/toolmod/injector,
 	/datum/design/research/item/weapon/toolmod/plasmablock,
 	//We then do ciruit boards
 	/datum/design/autolathe/circuit/airlockmodule,
@@ -387,7 +387,7 @@
 	/datum/design/autolathe/container/hcase_engi,
 	/datum/design/autolathe/part/consolescreen,
 	/*
-	These are gone due to being strong and making start-of-game T4 upgrades. Removes any struggle. Go to Fontaine, Cargo, or Sci.
+	These are gone due to being strong and making start-of-game T4 upgrades. Removes any struggle. Scrap machines or buy T3 parts from PIRS to handcraft.
 
 	/datum/design/autolathe/part/guild_capa,
 	/datum/design/autolathe/part/guild_scanning,

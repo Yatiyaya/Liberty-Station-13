@@ -95,7 +95,7 @@
 
 	prefix = "Young"
 
-	description = "This one seems to be more active and energetic than the others, but somewhat smaller. It's likely to be more fragile, but quicker."
+	description = "This one seems to be more active and energetic than the others, but somewhat younger. It's likely to be more fragile, but quicker."
 
 /// slower, deadlier, significantly tanker -- a significant buff
 /datum/stat_modifier/mob/living/carbon/superior_animal/brutal

@@ -240,9 +240,9 @@
 
 
 /obj/item/grenade/chem_grenade/metalfoam
-	name = "Skylight \"Stop-Space\""
+	name = "Terra-Therma \"Stop-Space\""
 	icon_state = "foam"
-	desc = "Used for emergency sealing of air breaches."
+	desc = "A metallic foam grenade used for emergency sealing of air breaches on spaceships and space stations."
 	can_be_modified = FALSE
 	path = 1
 	stage = READY
@@ -263,7 +263,7 @@
 
 /obj/item/grenade/chem_grenade/incendiary
 	name = "MT IG \"Martian Cocktail\""
-	desc = "Used for clearing rooms of living things."
+	desc = "A crude, chemical incendiary grenade used for clearing rooms of living things."
 	icon_state = "incendiary"
 	can_be_modified = FALSE
 	path = 1
@@ -310,13 +310,13 @@
 
 /obj/item/grenade/chem_grenade/antiweed/nt_antiweed
 	name = "Bonfire \"Kudzu Killer\""
-	desc = "Church brand weedkiller grenades. Designed to deal with Kudzu infestations. Mixes toxic biomatter with plasticides for great results"
+	desc = "Custodians-brand weedkiller grenades. Designed to deal with vine infestations."
 	icon_state = "foam"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_BIO_SILK = 5)
 	matter_reagents = list("water" = 30)
 
 /obj/item/grenade/chem_grenade/cleaner
-	name = "Skylight \"Shit-Be-Gone\""
+	name = "Skylight \"Shit-B-Gone\""
 	icon_state = "foam"
 	desc = "Dirt? Grime? Blood and criminal evidence? Say good-fucking-bye to all of those things with one simple throw!"
 	can_be_modified = FALSE
@@ -325,7 +325,7 @@
 
 /obj/item/grenade/chem_grenade/cleaner/nt_cleaner
 	name = "Bonfire \"Cleanse Capsule\""
-	desc = "Church brand cleaner grenades. Designed to deal with biogenerator accidents and the aftermaths of wildlife hordes in the colony."
+	desc = "Custodians-brand cleaner grenades. Designed to deal with scorch accidents and the aftermaths of wildlife hordes in the colony."
 	icon_state = "foam"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 5)
 	matter_reagents = list("water" = 30)
@@ -346,7 +346,7 @@
 
 /obj/item/grenade/chem_grenade/teargas
 	name = "MT TGG \"Strike-buster\""
-	desc = "Concentrated Capsaicin. Contents under pressure. Use with caution."
+	desc = "Concentrated Capsaicin teargas grenade. Contents under pressure. Use with caution."
 	can_be_modified = FALSE
 	icon_state = "grenade"
 	stage = READY

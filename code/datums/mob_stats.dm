@@ -239,7 +239,7 @@
 
 /datum/stat/vivification
 	name = STAT_WIL
-	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs and horrors of the world."
+	desc = "Both body and mind can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle both drugs' effects and the horrors of the world."
 
 /datum/stat/cognition
 	name = STAT_COG
@@ -282,14 +282,14 @@
 		if (-50 to -25)
 			return "Inept"
 		if (-25 to -1)
-			return "Missenformed"
+			return "Misinformed"
 		if (STAT_LEVEL_NONE to STAT_LEVEL_BASIC)
 			return "Untrained"
 		if (STAT_LEVEL_BASIC to STAT_LEVEL_ADEPT)
-			return "Basic"
+			return "Amateur"
 		if (STAT_LEVEL_ADEPT to STAT_LEVEL_EXPERT)
-			return "Adept"
+			return "Competent"
 		if (STAT_LEVEL_EXPERT to STAT_LEVEL_PROF)
 			return "Expert"
 		if (STAT_LEVEL_PROF to INFINITY)
-			return "Master"
+			return "Professional"

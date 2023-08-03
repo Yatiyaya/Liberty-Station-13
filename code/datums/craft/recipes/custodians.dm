@@ -2,7 +2,7 @@
 	category = "Custodians"
 	time = 100
 	related_stats = list(STAT_MEC)
-	requiredPerk = PERK_CHANNELING
+	requiredPerk = PERK_RADIANCE
 	icon_state = "dischargemisc_mold"
 
 /datum/craft_recipe/custodians/oathbound_set

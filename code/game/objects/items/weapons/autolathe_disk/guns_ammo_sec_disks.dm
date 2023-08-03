@@ -465,7 +465,7 @@
 // 7.62mm Revolver
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/wristbreaker
-	disk_name = "ML - 7.62mm Wristbreaker Revolver"
+	disk_name = "LG - 7.62mm Wristbreaker Revolver"
 	icon_state = "martian"
 
 	license = 6	//Stops a lot of wristbreakers going all around.

@@ -8,6 +8,7 @@
 /datum/perk/racial/human_will
 	name = "Will to Survive"
 	desc = "Your determination to survive and push on takes precedent before your other instincs making you ignore some of your pain and letting your body recover faster."
+	icon_state = "healing" // https://game-icons.net/1x1/delapouite/healing.html
 	active = FALSE
 	passivePerk = FALSE
 
@@ -27,6 +28,7 @@
 /datum/perk/racial/human_battlecry
 	name = "Inspiring Battlecry"
 	desc = "Life has taught you that beyond sheer force of will, what made your kind conquer the stars was also a sense of camaraderie and cooperation among your battle brothers and sisters. Your heroic warcry can inspire yourself and others to better performance in combat."
+	icon_state = "howl" // https://game-icons.net/1x1/lorc/wolf-howl.html
 	active = FALSE
 	passivePerk = FALSE
 
@@ -65,6 +67,7 @@
 /datum/perk/racial/human_tenacity
 	name = "Tenacity"
 	desc = "Humans were always resilient, not letting anything or anyone to get in way of their goals. Due to this your body is way more adapted to anything thrown it's way letting you push onward for just a little bit longer than others."
+	icon_state = "tenacity" // https://game-icons.net/1x1/lorc/spartan.html
 
 /////////////////////
 /* Sablekyne Perks */
@@ -75,6 +78,7 @@
 	desc = "As a sablekyne your body is a tank, through will and biology you can ignore pain entirely for a short amount of time."
 	active = FALSE
 	passivePerk = FALSE
+	icon_state = "sablekynerage" // https://game-icons.net/1x1/delapouite/saber-toothed-cat-head.html
 
 /datum/perk/racial/sable_laststand/activate()
 	var/mob/living/carbon/human/user = usr
@@ -92,12 +96,12 @@
 /datum/perk/racial/sable_bone
 	name = "Bone Plated"
 	desc = "All sablekyne are covered in bone-like plating across various parts of the body, this layer of natural armor along the shins, thighs, fore-arms, and shoulders allow you to absorb impacts better than anyone, adding a further tolerance to pain."
-	//icon_state = "" // - No icon, suggestion - Riot Shield?
+	icon_state = "golem"
 
 /datum/perk/racial/sable_brawn
 	name = "Brawny Build"
 	desc = "All sablekyne are stocky and built wide, your brawny build and low center of gravity gives you exceptional balance. Few beasts can knock you down and not even the strongest men can push you over."
-	//icon_state = "muscular" // https://game-icons.net
+	icon_state = "muscular"
 
 /datum/perk/racial/sable_brawn/assign(mob/living/carbon/human/H)
 	..()
@@ -116,6 +120,7 @@
 	desc = "Your intelligence is above the 'lesser races' and even the humblest of Mar'qua can prove it easily in moments of focus. Use this to center your thoughts and increase all your mental abilities."
 	active = FALSE
 	passivePerk = FALSE
+	icon_state = "inspiration_active"
 
 /datum/perk/racial/squid_suddenbrilliance/activate()
 	var/mob/living/carbon/human/user = usr
@@ -133,6 +138,7 @@
 /datum/perk/racial/squid_inspired
 	name = "Inspired Intellect"
 	desc = "Even the most humble Mar'qua is capable of study and extrapolation, your natural intellect allows you to become gain inspiration more easily."
+	icon_state = "sharp_mind"
 
 /datum/perk/racial/squid_inspired/assign(mob/living/carbon/human/H)
 	if(..())
@@ -146,6 +152,7 @@
 /datum/perk/racial/squid_alien_nerves
 	name = "Adapted Nervous System"
 	desc = "A mar'qua's nervous system has long since adapted to the use of stimulants, chemicals, and different toxins. Unlike lesser races, you can handle a wide variety of chemicals before showing any side effects and you'll never become addicted."
+	icon_state = "squid" // https://game-icons.net/1x1/lorc/squid-head.html
 
 /datum/perk/racial/squid_alien_nerves/assign(mob/living/carbon/human/H)
 	..()
@@ -168,6 +175,7 @@
 	desc = "You're a predator at heart and have the senses to match, for a short time your body toughens and your aim improves drastically as your senses enhance."
 	active = FALSE
 	passivePerk = FALSE
+	icon_state = "whatthedogdoin" // https://game-icons.net/1x1/lorc/hound.html
 
 /datum/perk/racial/kriosan_senses/activate()
 	var/mob/living/carbon/human/user = usr
@@ -185,17 +193,18 @@
 /datum/perk/racial/kriosan_instincs
 	name = "Instinctual Skill"
 	desc = "All kriosans understand the dynamics of shooting, to such a degree that guns are more extensions to one's hand than weapon. You take no penalty when firing any range weapon one handed."
+	icon_state = "guns"
 
 /datum/perk/racial/kriosan_bolt_reflect
 	name = "Bolt Action Rifle Training"
 	desc = "Through intense and repetitive training with bolt-action and lever-action rifles, you will always chamber a new round instantly after firing."
-	icon_state = "skills"
+	icon_state = "gunslinger"
 
 /datum/perk/racial/kriosan_command
 	name = "Commanding Presence"
 	desc = "You know just what to say to people and are able to inspire the best - or even worst - in others. \
 			People around you regain their sanity quicker."
-	icon_state = "inspiration"
+	icon_state = "woof" // https://game-icons.net/1x1/lorc/wolf-head.html
 
 /datum/perk/racial/kriosan_command/assign(mob/living/carbon/human/H)
 	if(..())
@@ -216,6 +225,7 @@
 	and often times will leave your body weaker for a short time."
 	active = FALSE
 	passivePerk = FALSE
+	icon_state = "akula" // Shork
 
 /datum/perk/racial/akula_frenzy/activate()
 	var/mob/living/carbon/human/user = usr
@@ -234,6 +244,7 @@
 /datum/perk/racial/akula_iron_flesh
 	name = "Iron Flesh"
 	desc = "Akula scales are not only tough and resistant to damage but exceptionally skilled at naturally forcing out embedded objects that somehow punch through. You'll never get a bullet nor object stuck inside when hit."
+	icon_state = "shield"
 
 
 ////////////////////
@@ -292,7 +303,7 @@
 	return ..()
 
 /datum/perk/racial/cindarite_purge_infection
-	name = "Uncanny Resiliance"
+	name = "Uncanny Resilience"
 	desc = "Your body is adept not only at curing toxins and regulating its blood flow but also fighting off infections and disease in any form. All infections within you are slowly cured and diseases progression slowed if not outright cured, similar to as if you were injected with spaceacillin. Severe infections or late stage diseases may still need additional medical aid and this cannot restore necrotic tissue."
 	active = FALSE
 	passivePerk = FALSE

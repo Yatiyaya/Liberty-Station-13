@@ -842,5 +842,65 @@ var/list/name_to_material
 	name = MATERIAL_SANDBAG
 	stack_type = /obj/item/stack/material/sandbag
 	icon_colour = "#7a7800"
-	sheet_singular_name = "sandbag"
-	sheet_plural_name = "sandbags"
+	sheet_singular_name = "sack"
+	sheet_plural_name = "sacks"
+	window_options = list("Sandbag Fortification" = 2)
+	created_window = /obj/structure/sandbags
+
+/material/sandbag/build_windows(var/mob/living/user, var/obj/item/stack/used_stack)
+
+	if(!user || !used_stack || !created_window || !window_options.len)
+		return 0
+
+	if(!user.IsAdvancedToolUser())
+		to_chat(user, SPAN_WARNING("This task is too complex for your clumsy hands."))
+		return 1
+
+	var/turf/T = user.loc
+	if(!istype(T))
+		to_chat(user, SPAN_WARNING("You must be standing on open flooring to pile the sandbags."))
+		return 1
+
+	var/title = "Sandbags - ([used_stack.get_amount()] sandbag\s left)"
+	var/choice = input(title, "What would you like to construct?") as null|anything in window_options
+
+	if(!choice || !used_stack || !user || used_stack.loc != user || user.stat || user.loc != T)
+		return 1
+
+	// Get the closest available dir to the user's current facing.
+	var/build_dir = SOUTH // By default, looking down
+	if(choice in list("Sandbag Fortification"))
+		var/list/possible_directions = cardinal.Copy()
+		var/sandbag_count = 0
+		for (var/obj/structure/sandbags/check_sandbag in user.loc)
+			sandbag_count++
+			possible_directions  -= check_sandbag.dir
+		var/failed_to_build
+		if(sandbag_count >= 4)
+			failed_to_build = 1
+		else
+			if(possible_directions.len)
+				for(var/direction in list(user.dir, turn(user.dir,90), turn(user.dir,180), turn(user.dir,270) ))
+					if(direction in possible_directions)
+						build_dir = direction
+						break
+			else
+				failed_to_build = 1
+		if(failed_to_build)
+			to_chat(user, SPAN_WARNING("There is no room in this location."))
+			return 1
+	var/build_path = /obj/structure/sandbags
+	var/sheets_needed = window_options[choice]
+	if(choice == "Sandbag Fortification")
+		build_path = created_window
+		build_dir = user.dir
+	if(used_stack.get_amount() < sheets_needed)
+		to_chat(user, SPAN_WARNING("You need at least two sandbags to pile up a fortification."))
+		return 1
+
+	// Build the structure and update sheet count etc.
+	used_stack.use(sheets_needed)
+	var/obj/O = new build_path(T, build_dir)
+	if(do_after(user, 30, T)) // Takes some time to set them down, prevents easy spam
+		O.Created(user)
+		return 1

@@ -1,5 +1,4 @@
 very static
-dull
 action-packed
 cluttered
 sparse
@@ -9,5 +8,5 @@ modern
 organic
 arboreal
 traditional
-untraditional
+unorthodox
 innovating

@@ -71,10 +71,14 @@
 		\[grid\] - \[/grid\] : Table without visible borders, for layouts.
 		\[row\] - New table row.
 		\[cell\] - New table cell.
-		\[logo\] - Inserts corporate logo image.
-		\[bluelogo\] - Inserts blue corporate logo image.
-		\[solcrest\] - Inserts SCG crest image.
-		\[terraseal\] - Inserts TCC seal"}
+		\[liberty\] - Inserts Liberty Group logo image.
+		\[watchlogo\] - Inserts Liberty Watch logo image.
+		\[bonfireseal\] - Inserts Custodians of Bonfire logo image.
+		\[capsalogo\] - Inserts CAPSA logo image.
+		\[pirslogo\] - Inserts PIRS logo image.
+		\[fontaine\] - Inserts Fontaine Logistics logo image.
+		\[terralogo\] - Inserts Terra-Therma logo image.
+		\[syndie\] - Inserts Skylight Syndicate logo image."}
 
 		to_chat(usr, help)
 		return TRUE

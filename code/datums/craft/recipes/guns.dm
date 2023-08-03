@@ -38,7 +38,7 @@
 	)
 
 /datum/craft_recipe/gun/arrows
-	name = "crude arrows"
+	name = "Crude arrows (x5)"
 	result = /obj/item/ammo_casing/arrow/bulk
 	icon_state = "woodworking"
 	flags = CRAFT_BATCH
@@ -49,7 +49,7 @@
 	)
 
 /datum/craft_recipe/gun/arrows/practice
-	name = "training arrows"
+	name = "Training arrows (x10)"
 	result = /obj/item/ammo_casing/arrow/practice/bulk
 	icon_state = "woodworking"
 	steps = list(
@@ -57,7 +57,7 @@
 	)
 
 /datum/craft_recipe/gun/arrows/broad
-	name = "broadhead arrows"
+	name = "Broadhead arrows (x5)"
 	result = /obj/item/ammo_casing/arrow/broadhead/bulk
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
@@ -67,7 +67,7 @@
 	)
 
 /datum/craft_recipe/gun/arrows/serrated
-	name = "serrated arrows"
+	name = "Serrated arrows (x5)"
 	result = /obj/item/ammo_casing/arrow/serrated/bulk
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
@@ -76,14 +76,14 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 10),
 	)
 
-/datum/craft_recipe/gun/payload_arrow
-	name = "single empty payload arrow"
-	result = /obj/item/ammo_casing/arrow/empty_payload
+/datum/craft_recipe/gun/payload_arrows
+	name = "payload arrows (x4)" // Quadrupling the mats needed so that it's not a chore
+	result = /obj/item/ammo_casing/arrow/empty_payload/bulk
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 1),
+		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 1),
 		list(QUALITY_WELDING, 40, "time" = 5),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 1),
+		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTIC, "time" = 1),
 		list(QUALITY_CUTTING, 40, "time" = 5)
 	)
 

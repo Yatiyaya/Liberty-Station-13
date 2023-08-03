@@ -36,7 +36,7 @@
 	result = /obj/item/tool/wirecutters/improvised
 	steps = list(
 		list(/obj/item/stack/rods, 2, "time" = 60),
-		list(QUALITY_PRYING, 20, "time" = 140),
+		list(QUALITY_PRYING, 20, "time" = 70),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 70)
 	)
 
@@ -60,7 +60,7 @@
 		list(QUALITY_ADHESIVE, 15, 100)
 	)
 
-// A solution for all the multitool lacking Colonists, Outsiders and Prospectors
+// A solution for all the multitool lacking Colonists, Outsiders and Shipbreakers
 /datum/craft_recipe/tool/improv_multi
 	name = "wire frier"
 	result = /obj/item/tool/multitool/improvised
@@ -91,15 +91,15 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
 		list(/obj/item/stack/rods, 1, 30),
-		list(QUALITY_ADHESIVE, 15, 150)
+		list(QUALITY_ADHESIVE, 15, 85)
 	)
 
 // For when you want everything in a single arm.
 /datum/craft_recipe/tool/toolimplant
-	name = "Improvised multitool implant"
+	name = "\improper Improvised omnitool implant"
 	result = /obj/item/organ_module/active/simple/makeshift
 	steps = list(
-		list(/obj/item/storage/toolbox, 1),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, 20),
 		list(/obj/item/circuitboard, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(/obj/item/tool/screwdriver/improvised, 1),
@@ -110,6 +110,16 @@
 		list(/obj/item/tool/saw/improvised, 1),
 		list(/obj/item/tool/weldingtool/improvised, 1),
 		list(QUALITY_ADHESIVE, 15, 70)
+	)
+
+// In case you want it in your hands and not implanted
+/datum/craft_recipe/tool/makeshift_omnitool
+	name = "\improper Improvised omnitool"
+	result = /obj/item/tool/multitool_improvised
+	steps = list(
+		list(/obj/item/organ_module/active/simple/makeshift, 1),
+		list(QUALITY_PULSING, 20),
+		list(QUALITY_PRYING, 20, "time" = 140)
 	)
 
 //Outsider tape more or less
@@ -193,7 +203,7 @@
 
 //Metal rods reinforced with regular tape
 /datum/craft_recipe/tool/brace
-	name = "tool mod: brace bar"
+	name = "brace bar"
 	result = /obj/item/tool_upgrade/reinforcement/stick
 	steps = list(
 		list(/obj/item/stack/rods, 3, 30),
@@ -203,7 +213,7 @@
 
 //Welding backpack disassembled into a smaller tank
 /datum/craft_recipe/tool/fuel_tank
-	name = "tool mod: expanded fuel tank"
+	name = "expanded fuel tank"
 	result = /obj/item/tool_upgrade/augment/fuel_tank
 
 	steps = list(
@@ -231,7 +241,7 @@
 //An improvised adapter to fit a larger power cell. This is pretty fancy as crafted items go
 //Requires an APC frame, a fuckton of wires, a large cell, and several tools
 /datum/craft_recipe/tool/cell_mount
-	name = "tool mod: heavy cell mount"
+	name = "heavy cell mount"
 	result = /obj/item/tool_upgrade/augment/cell_mount
 	icon_state = "electronic"
 	steps = list(
@@ -248,7 +258,7 @@
 
 //A metal plate with bolts drilled and wrenched into it
 /datum/craft_recipe/tool/plate
-	name = "tool mod: reinforcement plate"
+	name = "reinforced plate"
 	result = /obj/item/tool_upgrade/reinforcement/plating
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
@@ -257,31 +267,47 @@
 		list(QUALITY_BOLT_TURNING, 10, 150)
 	)
 
+//A rubber mesh to defend the sensitive bits
+/datum/craft_recipe/tool/rubbermesh
+	name = "rubber mesh"
+	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 30),
+		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
+	)
+
 
 //An array of sharpened bits of metal to turn a tool into more of a weapon
 /datum/craft_recipe/tool/spikes
-	name = "tool mod: spikes"
+	name = "spikes tool mod"
 	result = /obj/item/tool_upgrade/augment/spikes
 	steps = list(
 		list(/obj/item/stack/rods, 2, 30),
-		list(QUALITY_WELDING, 10, 150),
-		list(QUALITY_HAMMERING, 15, 150),
-		list(QUALITY_SAWING, 15, 150)
+		list(QUALITY_WELDING, 10, 75),
+		list(QUALITY_HAMMERING, 15, 75),
+		list(QUALITY_SAWING, 15, 75)
 	)
+
+// A damage addon for hammer-type blunt weapons to stay competitive versus whetstone/diamond blade
+/datum/craft_recipe/tool/hammer_addon
+	name = "spiked plate"
+	result = /obj/item/tool_upgrade/augment/hammer_addon
+	steps = list(
+		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(QUALITY_HAMMERING, 20, 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(/obj/item/tool_upgrade/augment/spikes, 1, 30), // The spikes!
+		list(QUALITY_WELDING, 20, 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_DIAMOND), // Even sharper tips!
+	)
+
 //A bucket of wax to be applied to tools
 /datum/craft_recipe/tool/waxcoat
-	name = "tool mod: wax coating"
+	name = "wax coating"
 	result = /obj/item/tool_upgrade/productivity/waxcoat
 	steps = list(
 			list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
 			list(QUALITY_WIRE_CUTTING, 10, 50),
 			list(/obj/item/stack/wax, 4, 4)
 	)
-//A rubber mesh to defend the sensitive bits
-/datum/craft_recipe/tool/rubbermesh
-	name = "Rubber Mesh"
-	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 30),
-		list(QUALITY_WIRE_CUTTING, 20, "time" = 90)
-	)
+

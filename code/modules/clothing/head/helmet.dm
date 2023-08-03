@@ -1169,6 +1169,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20) // TODO: Add silk fibroin matter once it's coded in
+	matter = list(MATERIAL_STEEL = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 

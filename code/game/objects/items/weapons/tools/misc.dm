@@ -236,7 +236,7 @@
 	degradation = 1.5
 	workspeed = 0.8
 
-	max_upgrades = 3
+	max_upgrades = 6 // As with all improv tools so it can be modded tf out
 
 	sparks_on_use = TRUE
 	eye_hazard = TRUE //USE SAFTY GEAR NOT SQUINTS >:T
@@ -287,7 +287,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	worksound = WORKSOUND_DRIVER_TOOL
 	switched_on_qualities = list(QUALITY_SCREW_DRIVING = 30, QUALITY_BOLT_TURNING = 30, QUALITY_DRILLING = 30, QUALITY_PRYING = 30, QUALITY_WIRE_CUTTING = 30, QUALITY_HAMMERING = 30, QUALITY_SHOVELING = 30, QUALITY_SAWING = 30, QUALITY_CUTTING = 30)
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 3)
 	price_tag = 1400
 	use_power_cost = 2
 	suitable_cell = /obj/item/cell/medium

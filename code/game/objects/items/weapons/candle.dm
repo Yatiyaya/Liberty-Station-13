@@ -1,6 +1,6 @@
 /obj/item/flame/candle
 	name = "red candle"
-	desc = "a small pillar candle. Its specially-formulated fuel-oxidizer wax mixture allows continued combustion in airless environments."
+	desc = "A small pillar candle. Its specially-formulated fuel-oxidizer wax mixture allows continued combustion in airless environments."
 	icon = 'icons/obj/candle.dmi'
 	icon_state = "candle1"
 	item_state = "candle1"
@@ -86,13 +86,13 @@
 		set_light(0)
 		sanity_damage = 0
 
-/obj/item/flame/candle/eternal
+/obj/item/flame/candle/pre_lit/eternal
 	name = "eternal candle"
-	desc = "A ceremonial candle produced by the Church's Numericals division as a reflection of the eternal nature of the soul and the infinite mercy of the divine. No matter how much it burns, it never goes out, though it's only supposed to be lit for ceremonies."
+	desc = "A strange and bizarre candle of unknown composition, its mesmerizig flame seemingly never goes out..."
 	icon_state = "candle_eternal"
-	light_color = COLOR_LIGHTING_CYAN_BRIGHT
+	light_color = COLOR_LIGHTING_PURPLE_BRIGHT
 	endless_burn = TRUE
-	lit_sanity_damage = -1
+	lit_sanity_damage = 0.5 // Bad candle
 
 /obj/item/flame/candle/eternal/update_icon()
 	var/i

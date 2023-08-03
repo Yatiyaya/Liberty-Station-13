@@ -78,17 +78,18 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			continue
 		listed_components += list("[blueprint.materials[placeholder]] [initial(placeholder.name)]")
 	to_chat(user, SPAN_NOTICE("[blueprint.name] requires: [english_list(listed_components)]."))
+	to_chat(user, SPAN_NOTICE("It is constructed through a [blueprint.manifestation_tier] Manifestation lecture."))
 	return TRUE
 
 /datum/ritual/cruciform/forgemaster/deconstruction
 	name = "Uproot"
 	phrase = "Oxidate Lecture: Uproot."
-	desc = "Deconstruct a Custodian machine infront of you."
+	desc = "Deconstruct a Custodian machine in front of you."
 	power = 25
 
 /datum/ritual/cruciform/forgemaster/deconstruction/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C, list/targets)
 	if(!GLOB.nt_constructs) //Makes sure the list we curated earlier actually exists
-		fail("You have no idea what constitutes a church construct.",user,C,targets)
+		fail("You have no idea what constitutes a Custodian construct.",user,C,targets)
 		return
 
 	var/obj/reclaimed //Variable to be defined later as the removed construct
@@ -102,12 +103,12 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			break
 
 	if(isnull(loot))
-		fail("There is nothing to remove here.",user,C,targets)
+		fail("There is no Custodian machinery to remove here.",user,C,targets)
 		return
 
 	user.visible_message(SPAN_NOTICE("[user] stretches a hand forward."),SPAN_NOTICE("You start reclaiming."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, 5 SECONDS)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, 5 SECONDS)
 
 	if(!do_after(user, 5 SECONDS, target_turf)) //"Sit still" timer
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -128,7 +129,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 			scrap = new scrap(target_turf)
 
 	effect.success()
-	user.visible_message(SPAN_NOTICE("Clanking of parts hit the floor as [user] finishes the machine falls apart."),SPAN_NOTICE("The machine falls apart into it's components."))
+	user.visible_message(SPAN_NOTICE("Clanking of parts hit the floor as [user] finishes, the machine falling apart at their touch."),SPAN_NOTICE("The machine falls apart into its components."))
 
 	qdel(reclaimed)
 	return TRUE
@@ -148,12 +149,12 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -211,12 +212,12 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -256,12 +257,12 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		fail("You decided not to construct anything.",user,C,targets)
 		return
 	if(!items_check(user, target_turf, blueprint))
-		fail("Something is missing.",user,C,targets)
+		fail("Not enough materials for this manifestation.",user,C,targets)
 		return
 
-	user.visible_message(SPAN_NOTICE("You see as [user] passes his hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
+	user.visible_message(SPAN_NOTICE("You see as [user] passes [user.identifying_gender == "male" ? "his" : user.identifying_gender == "female" ? "her" : "their"] hands over something."),SPAN_NOTICE("You concentrate on the [blueprint.name]'s image."))
 
-	var/obj/effect/overlay/nt_construction/effect = new(target_turf, blueprint.build_time)
+	var/obj/effect/overlay/knight_construction/effect = new(target_turf, blueprint.build_time)
 
 	if(!do_after(user, blueprint.build_time, target_turf))
 		fail("You feel something is judging you upon your impatience",user,C,targets)
@@ -291,6 +292,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	var/build_path
 	var/list/materials
 	var/build_time = 3 SECONDS
+	var/manifestation_tier = "Weak" // What tier of manifest lecture are we?
 
 /datum/custodian_blueprint/weak
 
@@ -364,6 +366,44 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 5 SECONDS
 
 /datum/custodian_blueprint/medium
+	manifestation_tier = "Medium"
+
+/datum/custodian_blueprint/medium/melee_armor
+	name = "Carbon Fiber Melee Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/melee
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 60
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/ballistic_armor
+	name = "Silk Polymer Bullet Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/bullet
+	materials = list(
+		/obj/item/stack/material/biopolymer_silk = 40,
+		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/plastic = 10
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/energy_armor
+	name = "Dark Silver Energy Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/energy
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 30,
+		/obj/item/stack/material/biopolymer_silk = 15,
+		/obj/item/stack/material/plastic = 15
+	)
+	build_time = 20 SECONDS
+
+/datum/custodian_blueprint/medium/fireproof_armor
+	name = "Fire and Pressure Proof Plating"
+	build_path = /obj/item/tool_upgrade/custodian/armor/fireproofing
+	materials = list(
+		/obj/item/stack/material/biopolymer_silk = 30,
+		/obj/item/stack/material/biomatter = 30
+	)
+	build_time = 20 SECONDS
 
 /datum/custodian_blueprint/medium/door_common
 	name = "Common Hatchway"
@@ -441,7 +481,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/steel = 2,
 		/obj/item/stack/material/silver = 5,
 		/obj/item/stack/material/glass = 4,
-		/obj/item/stack/cable_coil = 30 //! TODO: proper recipe
+		/obj/item/stack/cable_coil = 30
 	)
 	build_time = 7 SECONDS
 
@@ -538,6 +578,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_time = 8 SECONDS
 
 /datum/custodian_blueprint/strong
+	manifestation_tier = "strong"
 
 /datum/custodian_blueprint/strong/flarelathe_upgrade
 	name = "Enhanced Flarelathe"

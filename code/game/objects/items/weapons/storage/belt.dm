@@ -91,6 +91,15 @@
 	new /obj/item/tool/saw(src)
 	new /obj/item/stack/cable_coil/random(src)
 
+/obj/item/storage/belt/utility/full/union_chief/populate_contents()
+	new /obj/item/tool/screwdriver/electric(src)
+	new /obj/item/tool/wrench/big_wrench(src)
+	new /obj/item/tool/wirecutters/armature(src)
+	new /obj/item/tool/crowbar/pneumatic(src)
+	new /obj/item/tool/weldingtool/advanced(src)
+	new /obj/item/tool/hammer/deadblow(src)
+	new /obj/item/tool/multitool/advanced(src)
+
 /obj/item/storage/belt/hunter
 	name = "hunting belt"
 	desc = "Can hold various tools fit for a trapper."

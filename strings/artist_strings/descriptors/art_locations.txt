@@ -1,41 +1,31 @@
-bar
-ship
-Voidwolf ship
-rage cage
+Libertalia ship
 garden
 farm
 hydroponics farm
-village
-city
-skyscraper
-shuttle
+kitchen
 muddy trench
 snowy trench
 prison cell
 engine compartment
-escape pod
-CAPSA
+CAPSA Hospital
 PIRS
 Skylight Syndicate
 Terra-Therma Workers Union
 Liberty Watch
 Custodians of Bonfire
+Simulacrum Robotics
 Vasily Dokuchaev
-Mining hulk
+Rocinante
 Liberty
 Bar
-Brig of a ship
-Engineering Department
-Medical Department
-Cargo Department
-Research Department
-Security Department
+Prison
+Stronghold
+Firing range
 Primary tool storage
 Maintenance
-Deep maintenance
+Pond
 Bluespace
 cyberspace
 mountains
 pool
-dump
-madness
+forest

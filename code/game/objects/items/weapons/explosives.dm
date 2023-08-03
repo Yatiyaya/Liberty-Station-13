@@ -1,6 +1,34 @@
+// Items required to craft certain explosives, for Terra Therma.
+
+/obj/item/wp_block
+	name = "white phosphorus block"
+	desc = "A block of stable, oxidized white phosphorus. A staple in the manufacture of incendiary amunition and grenades."
+	icon = 'icons/obj/stack/material.dmi'
+	icon_state = "white_p_block"
+	force = WEAPON_FORCE_HARMLESS
+	w_class = ITEM_SIZE_SMALL
+	price_tag = 400
+	matter = list(MATERIAL_BIOMATTER = 20)
+	preloaded_reagents = list("phosphorus"=40)
+
+/obj/item/rdx_block
+	name = "stick of hexogen"
+	desc = "A malleable block of clay-like consistency, generally used in the making of explosives like C4. \
+			Safe to store at room temperature and safer for transfer, it is resistant to even small arms fire \
+			and requires a proper detonator to explode. It, however, should still be handled with care."
+	icon = 'icons/obj/stack/material.dmi'
+	icon_state = "rdx_block"
+	w_class = ITEM_SIZE_SMALL
+	force = WEAPON_FORCE_HARMLESS
+	price_tag = 400
+	matter = list(MATERIAL_BIOMATTER = 20)
+	preloaded_reagents = list("ethanol" = 10, "plasticide" = 5, "water" = 1)
+
+// Start of C-4 code.
+
 /obj/item/plastique
 	name = "plastic explosive"
-	desc = "Used to make holes in specific areas without too much extra hole."
+	desc = "A breaching charge of C-4 composition explosive, shaped to contain the explosive force towards a desired point of entry."
 	gender = PLURAL
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "plastic-explosive0"
@@ -11,7 +39,7 @@
 	var/datum/wires/explosive/c4/wires = null
 	var/timer = 10
 	var/atom/target = null
-	var/open_panel = 0
+	var/open_panel = FALSE
 	var/image_overlay = null
 
 /obj/item/plastique/New()
@@ -28,7 +56,7 @@
 	if(QUALITY_SCREW_DRIVING in I.tool_qualities)
 		if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_SCREW_DRIVING, FAILCHANCE_EASY, required_stat = STAT_MEC))
 			open_panel = !open_panel
-			to_chat(user, "<span class='notice'>You [open_panel ? "open" : "close"] the wire panel.</span>")
+			to_chat(user, "<span class='notice'>You [open_panel ? "close" : "open"] the wire panel.</span>")
 	else if(istype(I, /obj/item/tool))
 		wires.Interact(user)
 	else
@@ -65,7 +93,7 @@
 			log_game("[key_name(user)] planted [src.name] on [target.name] at ([target.x],[target.y],[target.z]) with [timer] second fuse")
 
 		target.add_overlay(image_overlay)
-		to_chat(user, "Bomb has been planted. Timer is counting down from [timer].")
+		to_chat(user, "Bomb has been planted. Timer is counting down from [timer] seconds.")
 		spawn(timer*10)
 			explode(get_turf(target))
 
@@ -95,4 +123,5 @@
 	qdel(src)
 
 /obj/item/plastique/attack(mob/M as mob, mob/user as mob, def_zone)
-	return
+	return // No slapping C4 on other people
+

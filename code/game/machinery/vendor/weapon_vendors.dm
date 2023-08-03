@@ -186,15 +186,13 @@
 /obj/machinery/vending/theomat
 	name = "Custodian Vendo-Mat"
 	desc = "A Custodian dispensary for both new and established members."
-	product_slogans = "Find peace through faith.;Help humanity ascend, join your brethren today!;Come and seek a new life!;Safety in brotherhood!"
-	product_ads = "Praise!;Pray!;Only for the faithful!;Ascend!;Seek a new life!;Better living through technology!"
+	product_slogans = "Find peace through hardship.;Help humanity perfect itself, join your brethren today!;Come and seek a new life!;Safety in brotherhood!"
+	product_ads = "Toil!;Perfect yourself!;Through discipline shall we prosper!;Enlighten yourself!;Seek a better life!;Better living through self improvement!"
 	icon_state = "teomat"
 	vendor_department = DEPARTMENT_CHURCH
 	products = list(/obj/item/book/ritual/hearthlantern = 10,
 					/obj/item/storage/fancy/candle_box = 10,
-					/obj/item/storage/fancy/cigarettes/faith = 10,
-					/obj/item/tool_upgrade/augment/sanctifier = 5,
-					/obj/item/soap/church = 5,
+					/obj/item/soap/bonfire = 5,
 					/obj/item/storage/wallet = 5,
 					/obj/item/storage/belt/utility/custodian = 5,
 					/obj/item/storage/backpack/duffelbag = 5,
@@ -216,9 +214,7 @@
 
 	prices = list(/obj/item/book/ritual/hearthlantern = 5,
 					/obj/item/storage/fancy/candle_box = 30,
-					/obj/item/storage/fancy/cigarettes/faith = 65, //Some healing chems
-					/obj/item/tool_upgrade/augment/sanctifier = 80,
-					/obj/item/soap/church = 50,
+					/obj/item/soap/bonfire = 50,
 					/obj/item/storage/wallet = 15,
 					/obj/item/storage/belt/utility/custodian = 20,
 					/obj/item/storage/backpack/duffelbag = 75,
@@ -299,7 +295,7 @@
 //For the propis loot
 /obj/machinery/vending/propis_loot_box
 	name = "Fontaine 'Git-yer-Shit' Vendor"
-	desc = "Fontaine's much loved 'Git-yer-Shit' a machine meant to sap the credits... 'reward' people for playing a lottery like system for boxes of items. Please spend responsibly."
+	desc = "Fontaine's much loved 'Git-yer-Shit' a machine meant to sap the cred- 'reward' people for playing a lottery-like system for boxes of items. Please spend responsibly."
 	icon_state = "MagiVend"
 	product_slogans = list("Imagine the rare stuff and buy more!", "Rare stuff if you buy more!", "Buy and get random items!", "Don't quit, buy more!", "Its not a lootbox, its surprise mechanics!")
 	vendor_department = DEPARTMENT_PROSPECTOR

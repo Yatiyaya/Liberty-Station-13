@@ -140,7 +140,7 @@ GLOBAL_LIST_EMPTY(all_obelisk)
 				var/prev_stat
 				for(var/stat in ALL_STATS)
 					var/datum/stat_mod/SM = mob.stats.getTempStat(stat, "nt_obelisk")
-					//if(mob.stats && mob.stats.getPerk(PERK_CHANNELING))
+					//if(mob.stats && mob.stats.getPerk(PERK_RADIANCE))
 					//	buff_power = buff_power * 2  // Channeling gives +1 stat point per disciple so it amounts to * 2
 					if(stat == stat_buff)
 						if(!SM)

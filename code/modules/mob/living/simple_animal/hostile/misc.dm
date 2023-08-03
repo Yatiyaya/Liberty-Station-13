@@ -320,12 +320,13 @@
 	bones_amount = 6
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/helldiver_tooth)
-	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR)
+	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR, MUTATION_BLINDNESS, MUTATION_ECHOLOCATION, MUTATION_RAD_PROTECTION)
+	target_dummy = TRUE
 
 /mob/living/simple_animal/hostile/helldiver/FindTarget()
 	. = ..()
 	if(.)
-		visible_emote("lets out a gutteral chitter in warning!")
+		visible_emote("lets out a guttural snarl in warning!")
 		playsound(src, 'sound/voice/hiss4.ogg', 50, 1, -3)
 
 /mob/living/simple_animal/hostile/retaliate/hakhma

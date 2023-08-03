@@ -220,7 +220,8 @@
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("protein" = 25, "tramadol" = 5)
 
-/obj/item/reagent_containers/food/snacks/meat/agape
+// Refactored as bear meat so that it works for cooking.
+/obj/item/reagent_containers/food/snacks/meat/bearmeat/agape
 	name = "agape meat"
 	desc = "A massive slab of meat containing a massive amount of protein, the smell is abominable."
 	icon_state = "bearmeat"

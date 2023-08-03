@@ -906,7 +906,7 @@ ADMIN_VERB_ADD(/client/proc/spawn_disciple, R_DEBUG, FALSE)
 /client/proc/spawn_disciple()
 	set category = "Debug"
 	set name = "Spawn Disciple"
-	set desc = "Spawns a human with a cruciform, for ritual testing"
+	set desc = "Spawns a human with a Hearthcore, for lecture testing"
 	if (!mob)
 		return
 

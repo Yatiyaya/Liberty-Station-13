@@ -2,13 +2,13 @@
 
 
 /datum/ritual
-	var/name = "ritual"
-	var/desc = "Basic ritual that does nothing."
+	var/name = "lecture"
+	var/desc = "Basic lecture that does nothing."
 	var/phrase = ""
 	var/power = 0
 	var/chance = 100
-	var/success_message = "Ritual successful."
-	var/fail_message = "Ritual failed."
+	var/success_message = "Lecture successful."
+	var/fail_message = "Lecture failed."
 	var/implant_type = /obj/item/implant/core_implant
 	var/category = "???"
 

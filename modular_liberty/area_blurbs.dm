@@ -98,16 +98,16 @@ ty ilu - bear
 	narrate = "What was once a humble plot of harrowed land tended perhaps by a local hunter that decided to settle down has, at some point, been overrun by aggressive ursine fauna. With labor and dedication enough, you might make these lands a profitable farmstead once more..."
 
 /area/liberty/dungeon/outside/abandoned_outpost
-	narrate = "The earliest traces of sentient technological settlement on the planet can be found in what's left of this haphazardly built outpost, now fallen to ruin. Be wary of the roaches and spiders that have claimed it as their nest."
+	narrate = "\red <font size=3><b>COME HITHER... EMBRACE ASCENSION...</b></font>"
 
 /area/liberty/dungeon/outside/zoo
 	narrate = "Sounds of different fauna, feral growls and cute squeaks of all kinds, can be heard echoing through the otherwise silent emptiness of this abandoned facility. Their purpose unknown, its maintainers nowhere to be seen, it now stands as the ruins of an animal-holding facility colloquially dubbed as 'The zoo'."
 
-/area/liberty/dungeon/outside/prepper
+/area/liberty/dungeon/outside/prison_interior
 	narrate = "A base of operations fallen into disrepair, its former inhabitants hoarding all manner of gear for survival have long since left it to the care of their defensive security systems, now gone haywire. From its insides, a chittering that's definitely not robotic in nature can faintly be heard..."
 
-/area/liberty/dungeon/outside/prepper/vault/entryway
-	narrate = "The ruins of a civilization long lost to unknown causes, nothing but a deafening echo of silence can be heard through the immense hallways of this now abandoned habitational complex. That is, until its synthetic denizens and burrowed spiders start their staked feud for the ownership of this den..."
+/area/liberty/dungeon/outside/mercenary_base/entryway
+	narrate = "Sounds of gunfire and interslavic cheers and curses echo from the inside of that bunker over yonder. If you aim to raid it for its riches, be ready to receive a warm welcome... in lead."
 
 /area/liberty/dungeon/outside/smuggler_zone
 	narrate = "An outpost of heavily reinforced walls stands strong and imposing, erected in the middle of the forest. Guarded closely by hordes of armed vatgrown void wolves, their low unintelligible grunting a mockery of sapiant life." // It's Caramelldansen.

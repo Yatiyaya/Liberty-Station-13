@@ -275,7 +275,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	structure_damage_factor = STRUCTURE_DAMAGE_DESTRUCTIVE
 	tool_qualities = list(QUALITY_HAMMERING = 20)
 	max_upgrades = 3
-	price_tag = 3500 // It has durasteel spikes
+	price_tag = 3500 // It has carbon fiber spikes
 	matter = list(MATERIAL_WOOD = 4, MATERIAL_CARBON_FIBER = 1)
 
 /obj/item/tool/knife/dagger/assassin/ubersaw //Waiting for code to be done to deal blood damage/take % of blood

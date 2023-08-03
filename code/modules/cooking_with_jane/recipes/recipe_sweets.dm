@@ -141,3 +141,30 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/butterslice),
 		list(CWJ_USE_OVEN, J_LO, 15 SECONDS)
 	)
+
+// Icecream sandwich assembly
+
+/datum/cooking_with_jane/recipe/stock_icecream_sandwich
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/icecreamsandwich
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/brownieslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/icecream)
+	)
+
+/datum/cooking_with_jane/recipe/strawberry_icecream_sandwich
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/strawberrysandwich
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cookie),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/strawberryicecream)
+	)
+
+/datum/cooking_with_jane/recipe/chocolate_icecream_sandwich
+	cooking_container = CUTTING_BOARD
+	product_type = /obj/item/reagent_containers/food/snacks/chocolatesandwich
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/brownieslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/chocoicecream)
+	)
+

@@ -23,11 +23,9 @@ var/list/disciples = list()
 	. = ..()
 	if(.)
 		target.stats.addPerk(PERK_SANITYBOOST)
-		target.stats.addPerk(PERK_LAZARUS_PROTOCOL)
 
 /obj/item/implant/core_implant/cruciform/uninstall()
 	wearer.stats.removePerk(PERK_SANITYBOOST)
-	wearer.stats.addPerk(PERK_LAZARUS_PROTOCOL)
 	return ..()
 
 /obj/item/implant/core_implant/cruciform/get_mob_overlay(gender, form)
@@ -77,7 +75,7 @@ var/list/disciples = list()
 	..()
 	if(wearer && wearer.stat == DEAD || wearer.is_mannequin) //If were dead or a mannequin we do not actively process are cruciform
 		deactivate()
-	if(wearer && wearer.stats && wearer.stats.getPerk(PERK_CHANNELING) && round(world.time) % 5 == 0)
+	if(wearer && wearer.stats && wearer.stats.getPerk(PERK_RADIANCE) && round(world.time) % 5 == 0)
 		power_regen -= channeling_boost  // Removing the previous channeling boost since the number of disciples may have changed
 		//wearer.visible_message(SPAN_DANGER("Old [channeling_boost]"))
 		channeling_boost = 0.2 * disciples.len  // Proportional to the number of cruciformed people on board
