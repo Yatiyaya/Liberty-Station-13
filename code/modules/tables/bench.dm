@@ -10,6 +10,7 @@
 /obj/structure/table/bench/update_desc()
 	if(material)
 		name = "[material.display_name] bench"
+		color = material.icon_colour
 	else
 		name = "bench frame"
 

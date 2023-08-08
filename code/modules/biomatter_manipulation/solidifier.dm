@@ -21,6 +21,10 @@
 	var/obj/structure/reagent_dispensers/scorch/container
 	var/last_time_used = 0
 
+/obj/machinery/sewing_artificer/examine(mob/user)
+	..()
+	to_chat(user, "<span class='info'>Place a scorch canister behind it, then click-drag it to the machine to connect it. Use an empty hand on the machine to start it up.</span>")
+
 /obj/machinery/sewing_artificer/New()
 	. = ..()
 	add_overlay(image(icon = src.icon, icon_state = "tube", layer = LOW_OBJ_LAYER, dir = port_dir))
@@ -114,6 +118,10 @@
 	desc = "A unique Custodian design that stabilizes, solidifies, and forges Scorch into Carbon Fiber."
 	icon = 'icons/obj/machines/simple_nt_machines.dmi'
 	icon_state = "composite_artificer"
+
+/obj/machinery/sewing_artificer/composite_artificer/examine(mob/user)
+	..()
+	to_chat(user, "<span class='info'>Place a scorch canister behind it, then click-drag it to the machine to connect it. Use an empty hand on the machine to start it up.</span>")
 
 /obj/machinery/sewing_artificer/composite_artificer/Process()
 	if(active)

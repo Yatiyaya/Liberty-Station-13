@@ -91,6 +91,12 @@
 	stacktype = /obj/item/stack/tile/wood
 	build_type = /obj/item/stack/tile/wood
 
+/obj/item/stack/tile/wood/tatami
+	name = "tatami mat"
+	desc = "Soft, pliable tatami mats used as ornamental decoration."
+	singular_name = "tatami mat"
+	icon_state = "tatami"
+
 /*
  * Carpets
  */

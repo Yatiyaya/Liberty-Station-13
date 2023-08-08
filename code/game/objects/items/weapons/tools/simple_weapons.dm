@@ -184,7 +184,7 @@
 	has_alt_mode = TRUE
 	alt_mode_damagetype = HALLOSS
 	alt_mode_verbs = list("flogged", "whipped", "lashed", "disciplined")
-	alt_mode_toggle = "loosens their hand on the grip"
+	alt_mode_toggle = "relaxes the anger behind their grip"
 	alt_mode_lossrate = 0.7
 
 //Swords
@@ -229,6 +229,7 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_SHALLOW
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -254,7 +255,8 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_DEEP
-	effective_faction = list("spider") // Spiders are weak to crushing.
+	effective_faction = list("xenomorph", "balkan") // The factions mentioned on the blade's description
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
@@ -281,12 +283,13 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_SHALLOW
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
 		slot_back_str = "Diamond_edge"
 		)
-	effective_faction = list("roach", "spiders") // Spiders are weak to crushing.//made the sword a bit better being able to bonk easier the fauna because is expensive as fuck make this shit
+	effective_faction = list("xenomorph", "balkan", "circhosian") // Same as the combat sword, but also cultists
 	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift
@@ -298,6 +301,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_SHALLOW
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	price_tag = 40
 
 /obj/item/tool/sword/katana/nano
@@ -413,7 +417,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "switches their stance to avoid using the blade of their weapon"
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	alt_mode_lossrate = 0.6
 
 /obj/item/tool/sword/saber/cutlass
@@ -423,7 +427,7 @@
 	item_state = "cutlass"
 	price_tag = 300
 	alt_mode_verbs = list("bashes", "stunts", "hilts", "blunts")
-	alt_mode_toggle = "uses the broad side of their weapon"
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
 /obj/item/tool/sword/handmade
 	name = "junkblade"
@@ -439,7 +443,7 @@
 	price_tag = 100 // Made with plasteel
 
 /obj/item/tool/sword/foreman
-	name = "\"Render Slayer\" Greatsword"
+	name = "\"Maw Opener\" Greatsword"
 	desc = "This thing is too big to be called a sword. \
 			Too big, too thick, too heavy, and too rough, \
 			it is more like a large hunk of plasteel. \nA \
@@ -450,7 +454,7 @@
 	force = WEAPON_FORCE_BRUTAL + 2 // 35 damage
 	slot_flags = SLOT_BELT|SLOT_BACK
 	armor_penetration = ARMOR_PEN_MASSIVE // Sharp edge
-	effective_faction = list("deathclaw") // Called like this for a reason
+	effective_faction = list("agape") // Called like this for a reason
 	damage_mult = 2
 	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_STEEL = 5)
 	w_class = ITEM_SIZE_BULKY
@@ -489,6 +493,7 @@
 	item_state = "machete"
 	tool_qualities = list(QUALITY_CUTTING = 10,  QUALITY_SAWING = 20) //So we can cut down trees
 	force = WEAPON_FORCE_ROBUST
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	w_class = ITEM_SIZE_NORMAL
 	price_tag = 120
 
@@ -522,6 +527,7 @@
 	origin_tech = list(TECH_COMBAT = 5)
 	attack_verb = list("clawed", "scratched", "lacerated", "slashed")
 	price_tag = 200
+	alt_mode_toggle = "retracts the claws to strike with a closed fist"
 
 /obj/item/tool/power_fist
 	name = "power fist"
@@ -574,7 +580,8 @@
 	item_state = "spear_glass"
 	wielded_icon = "spear_glass_wielded"
 	name = "shard spear"
-	desc = "A spiky bit of material tied onto a metal pole with some wire. It's an insult to spears across the galaxy - but it can still do some nasty damage and has some decent armor-piercing capabilities. Spears like these are often seen in the hands of vagrants, muggers, or desperate militias. Due to this weapon - if you could call it that - being so long, you're able to attack enemies from up to a tile away."
+	desc = "A spiky bit of material tied onto a metal pole with some wire. \
+			It's an insult to spears across the galaxy - but it can still do some nasty damage as a thrown weapon."
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	throw_speed = 3
@@ -605,7 +612,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "switches their stance to strike at targets with the shaft"
+	alt_mode_toggle = "switches their stance to strike with the shaft"
 	alt_mode_lossrate = 0.4
 
 
@@ -664,6 +671,7 @@
 	armor_penetration = ARMOR_PEN_SHALLOW
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	matter = list(MATERIAL_STEEL = 5)
+	alt_mode_toggle = "flips the halberd to its broad side"
 
 /obj/item/tool/spear/hunter_halberd
 	name = "halberd"
@@ -705,7 +713,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "switches their stance to avoid using the blade of their weapon"
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	alt_mode_lossrate = 0.9 //Little loss so people can use these in real gimmics
 
 /obj/item/tool/cheap/axe

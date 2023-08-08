@@ -20,7 +20,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "loosens their grip on the handle of their weapon"
+	alt_mode_toggle = "relaxes the anger behind their grip"
 	alt_mode_lossrate = 0.4
 
 
@@ -50,6 +50,8 @@
 	switched_on_qualities = list(QUALITY_HAMMERING = 45)
 	switched_off_qualities = list(QUALITY_HAMMERING = 30)
 	toggleable = TRUE
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.2 // 20% increase, it's already good.
 	armor_penetration = ARMOR_PEN_EXTREME // Retains AP when turned off - it's a hammer.
 	degradation = 0.7
 	use_power_cost = 2
@@ -87,6 +89,7 @@
 	switched_on_forcemult = 2.6 // 39 total
 	armor_penetration = ARMOR_PEN_EXTREME // Retains AP when turned off - it's a hammer.
 	structure_damage_factor = STRUCTURE_DAMAGE_DESTRUCTIVE
+	damage_mult = 1.1 // Let's not go overboard
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 3, MATERIAL_DIAMOND = 3)
 	price_tag = 860
 	switched_on_qualities = list(QUALITY_HAMMERING = 60)
@@ -109,6 +112,8 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	armor_penetration = ARMOR_PEN_EXTREME
 	throwforce = WEAPON_FORCE_LETHAL
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.2 // 20% increase, it's already good.
 	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_PLASTIC = 5)
 	throw_speed = 1
 	throw_range = 7
@@ -127,6 +132,8 @@
 	item_state = "homewrecker0"
 	wielded_icon = "homewrecker1"
 	armor_penetration = ARMOR_PEN_EXTREME
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 2
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_ROBUST
@@ -145,6 +152,8 @@
 	wielded_icon = "iron_hammer_wielded"
 	w_class = ITEM_SIZE_HUGE
 	armor_penetration = ARMOR_PEN_DEEP
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.2
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_LETHAL
 	structure_damage_factor = STRUCTURE_DAMAGE_BORING
@@ -163,7 +172,8 @@
 	item_state = "Combat_mace"
 	matter = list(MATERIAL_STEEL = 10)
 	price_tag = 30
-
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.5
 	armor_penetration = ARMOR_PEN_DEEP
 	force = WEAPON_FORCE_DANGEROUS
 
@@ -174,9 +184,9 @@
 	desc = "Some metal attached to the end of a stick, for applying blunt force trauma to a roach."
 	icon_state = "ghetto_mace"
 	item_state = "ghetto_mace"
-
 	force = WEAPON_FORCE_PAINFUL
-
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 2
 	tool_qualities = list(QUALITY_HAMMERING = 15)
 	price_tag = 20
 	degradation = 5 //This one breaks REALLY fast
@@ -192,6 +202,8 @@
 	tool_qualities = list(QUALITY_HAMMERING = 5)
 	matter = list(MATERIAL_STEEL = 3)
 	max_upgrades = 3
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 2
 	armor_penetration = ARMOR_PEN_GRAZING
 	force = WEAPON_FORCE_PAINFUL
 	w_class = ITEM_SIZE_HUGE

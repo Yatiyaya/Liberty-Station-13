@@ -63,6 +63,10 @@ var/list/floor_decals = list()
 	name = "spline - plain"
 	icon_state = "spline_plain_full"
 
+/obj/effect/floor_decal/spline/plain/corner
+	name = "spline - plain"
+	icon_state = "spline_plain_corner"
+
 /obj/effect/floor_decal/spline/fancy
 	name = "spline - fancy"
 	icon_state = "spline_fancy"
@@ -89,6 +93,10 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/spline/wood/three_quarters
 	icon_state = "spline_fancy_full"
+
+/obj/effect/floor_decal/wood/tatami
+	name = "tatami mats"
+	icon_state = "tatami_edges"
 
 /obj/effect/floor_decal/industrial/warning
 	name = "hazard stripes"

@@ -1159,7 +1159,7 @@
 	id = "atomicoffee"
 	description = "Every possible microgram of caffeine and flavor has been carefully extracted for your enjoyment, using the power of the atom. The perfect drink for those that wish to stay awake for days."
 	taste_description = "liquid tar"
-	color =  "#393815" // rgb: 57, 56, 21
+	color = "#393815" // rgb: 57, 56, 21
 	overdose = REAGENTS_OVERDOSE + 1 // A whole cup and a unit more.
 
 	glass_icon_state = "atomicoffee"

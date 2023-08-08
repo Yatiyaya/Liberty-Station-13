@@ -90,6 +90,11 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood/wood_old
 
+/turf/simulated/floor/wood/tatami
+	name = "tatami mat"
+	icon_state = "tatami_full"
+	initial_flooring = /decl/flooring/wood/tatami
+
 /*Tiled*/
 
 /turf/simulated/floor/tiled

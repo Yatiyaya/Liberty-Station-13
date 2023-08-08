@@ -17,6 +17,11 @@
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	default_material = MATERIAL_STEEL
+	has_alt_mode = TRUE
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
+	alt_mode_lossrate = 1
+	alt_mode_sharp = FALSE
+	is_material_weapon = TRUE
 
 /obj/item/material/sword/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_parry_check(user, attacker, damage_source) && prob(50))

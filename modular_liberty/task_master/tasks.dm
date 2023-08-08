@@ -109,7 +109,7 @@
 	key = "GYM_GOER"
 	desc = "Nothing beats hitting the gym."
 	gain_text = "Feels great to be fit."
-	level_threshholds = 3 //Gym has long cooldowns and costs a bit
+	level_threshholds = 2 //Gym has long cooldowns and costs a bit
 
 /datum/task_master/task/gym_goer/activate_affect()
 	forwards_refence.stats.changeStat(STAT_WIL, (level + 2))
@@ -133,7 +133,7 @@
 	key = "PROPER_SEALER"
 	desc = "Properly sealing burrows with a trusty shovel and hammering away those cracks makes for tougher and more tool-savvy hands."
 	gain_text = "Making the colony a safer place sure is fulfilling work."
-	level_threshholds = 5 //Theirs so many borrows...
+	level_threshholds = 5 //Theirs so many burrows...
 
 /datum/task_master/task/proper_sealer/activate_affect()
 	forwards_refence.stats.changeStat(STAT_MEC, (level + 1))
@@ -172,3 +172,19 @@
 
 /datum/task_master/task/poors/activate_affect()
 	forwards_refence.stats.addPerk(PERK_FORCEFUL_REJECTION)
+
+// Training melee with dummies makes you stronger!
+
+/datum/task_master/task/martial_prowess
+	name = "Martial Prowess"
+	key = "MARTIAL_ARTS"
+	desc = "Fear not the combatant who has mastered 300 punches once, but the one that mastered one punch 300 times."
+	gain_text = "Carry on training and perfect yourself through the art, no matter the obstacle."
+	level_threshholds = 50 // Fifty punches to a training dummy per level might seem like not enough, but it has increased punch cooldown.
+	unlocked = TRUE // Let's not make the first fifty punches do nothing, it's a lot of exercise.
+
+/datum/task_master/task/martial_prowess/activate_affect()
+	forwards_refence.stats.changeStat(STAT_ROB, (level + 2))
+	forwards_refence.stats.changeStat(STAT_TGH, (level + 2)) // So that it's worth sitting there repeatedly clicking on a dummy.
+	forwards_refence.stats.changeStat(STAT_WIL, (level + 2)) // Body and mind.
+

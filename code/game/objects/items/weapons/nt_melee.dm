@@ -31,6 +31,7 @@
 	price_tag = 650
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 10)
 	alt_mode_lossrate = 0.7
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
@@ -45,6 +46,7 @@
 	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 850
 	alt_mode_lossrate = 0.7
+	alt_mode_toggle = "flips the axe to its broad side"
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_CARBON_FIBER = 8)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
@@ -128,6 +130,7 @@
 	throw_speed = 4
 	price_tag = 400
 	alt_mode_lossrate = 0.7
+	alt_mode_toggle = "flips the axe to its broad side"
 	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 5)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
@@ -150,6 +153,8 @@
 	wielded_icon = "emberblaze_warhammer_wielded"
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_MASSIVE
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 1.5
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
 	attack_verb = list("attacked", "smashed", "bludgeoned", "beaten")
@@ -287,12 +292,15 @@
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "custodian_scutum"
 	item_state = "custodian_scutum"
-	force = WEAPON_FORCE_DANGEROUS
+	force = WEAPON_FORCE_ROBUST
+	throwforce = WEAPON_FORCE_ROBUST
+	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
 	armor_list = list(melee = 20, bullet = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	price_tag = 1000
 	base_block_chance = 60
 	item_flags = DRAG_AND_DROP_UNEQUIP
+	alt_mode_lossrate = 0.9
 
 	max_durability = 200
 	durability = 200
@@ -364,6 +372,10 @@
 	item_flags = DRAG_AND_DROP_UNEQUIP
 	max_durability = 150 //So we can brake and need healing time to time
 	durability = 150
+	force = WEAPON_FORCE_ROBUST
+	throwforce = WEAPON_FORCE_BRUTAL // Captain America would be proud
+	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
+	alt_mode_lossrate = 0.6
 	var/obj/item/storage/internal/container
 	var/storage_slots = 1
 	var/max_w_class = ITEM_SIZE_HUGE

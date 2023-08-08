@@ -185,7 +185,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/random/toolbox,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "adh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/under,
@@ -206,7 +206,7 @@
 	},
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "adG" = (
 /obj/structure/grille,
 /obj/structure/grille,
@@ -266,7 +266,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "aeY" = (
 /obj/structure/sign/misc/loan{
 	name = "Bank"
@@ -391,7 +391,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "agk" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -477,7 +477,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "ahs" = (
 /obj/structure/table/rack/shelf,
 /obj/item/tool/shovel{
@@ -684,7 +684,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ajl" = (
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/dungeon/outside/burned_outpost)
@@ -919,7 +919,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "ani" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/wood/wild3,
@@ -1303,7 +1303,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/maintenance/undergroundfloor2east)
 "ari" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
@@ -1312,10 +1311,10 @@
 	dir = 9
 	},
 /obj/structure/decor_edvard_statue,
-/turf/simulated/floor/industrial/greybricks{
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "arj" = (
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
@@ -1641,13 +1640,12 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/medical/sleeper)
 "auL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "auP" = (
 /obj/effect/window_lwall_spawn/smartspawnplasma,
 /turf/simulated/floor/plating/under,
@@ -1969,7 +1967,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "azP" = (
 /obj/machinery/light{
 	dir = 8
@@ -2534,7 +2532,7 @@
 /obj/effect/floor_decal/industrial/arrows,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "aGX" = (
 /obj/structure/railing/grey,
 /obj/structure/flora/ausbushes/brflowers,
@@ -3001,16 +2999,20 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
 "aMj" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
 	},
-/obj/machinery/light{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/effect/floor_decal/spline/plain/corner{
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
-/area/liberty/hallway/surface/section1)
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "aMo" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/alarm{
@@ -3070,7 +3072,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "aMZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3177,7 +3179,7 @@
 	},
 /obj/effect/floor_decal/spline/fancy/corner,
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "aOb" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -3186,19 +3188,26 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "aOf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/plain/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/corner,
+/obj/effect/floor_decal/spline/fancy/corner{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "aOt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
@@ -3542,13 +3551,6 @@
 	dir = 4
 	},
 /area/liberty/security/vacantoffice2)
-"aRL" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "aRM" = (
 /obj/structure/table/rack/shelf,
 /obj/random/cloth/head/low_chance,
@@ -3944,7 +3946,7 @@
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "aXN" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -4148,6 +4150,9 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "baG" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "bonfire"
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "baJ" = (
@@ -4520,7 +4525,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "bfh" = (
 /obj/structure/flora/small/grassb3,
 /turf/simulated/floor/asteroid/grass,
@@ -4632,7 +4637,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bgt" = (
 /obj/structure/bed/chair/wood,
 /obj/effect/floor_decal/border/carpet/red{
@@ -4743,7 +4748,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bhp" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -4794,7 +4799,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bhE" = (
 /obj/structure/girder,
 /obj/item/material/shard/shrapnel/scrap,
@@ -4836,7 +4841,7 @@
 "bil" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bio" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -4854,7 +4859,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "biz" = (
 /obj/random/flora/wild/low,
 /turf/simulated/floor/snow,
@@ -5372,6 +5377,19 @@
 /obj/item/book/manual/security_space_law,
 /turf/simulated/floor/wood,
 /area/liberty/command/swo/quarters)
+"boT" = (
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/tool/hammer/makeshift_staff,
+/obj/item/tool/hammer/makeshift_staff,
+/obj/item/tool/hammer/makeshift_staff,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 4
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "bpb" = (
 /obj/machinery/door/airlock/vault{
 	name = "Skylight Vault";
@@ -5398,7 +5416,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bpn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/material/butterfly/switchblade,
@@ -6011,7 +6029,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/white/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "bxB" = (
 /obj/structure/railing{
 	dir = 4
@@ -6184,7 +6202,7 @@
 "bAb" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bAn" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -6231,17 +6249,20 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/oldarmory)
 "bAQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/structure/table/bench/wooden,
+/obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 6
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
 	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bAS" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 6
@@ -6322,7 +6343,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bCi" = (
 /obj/machinery/holoposter{
 	pixel_y = -32
@@ -6332,7 +6353,7 @@
 	},
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bCx" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
@@ -6858,16 +6879,6 @@
 	},
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/hallway/surface/section1)
-"bIx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/hologram/holopad,
-/obj/effect/floor_decal/spline/fancy{
-	dir = 8
-	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
 "bID" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -7244,7 +7255,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bNL" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/tiled/dark,
@@ -7543,7 +7554,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bQm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/checker_large,
@@ -7765,7 +7776,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "bSU" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -8019,7 +8030,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bVK" = (
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/structure/multiz/ladder/up,
@@ -8203,7 +8214,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "bXX" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/junction{
 	dir = 4;
 	icon_state = "pipe-j2"
@@ -8211,10 +8221,14 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "bXZ" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/reinforced,
@@ -8508,7 +8522,7 @@
 "cbg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cbh" = (
 /obj/machinery/door/airlock/hatch,
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -8752,7 +8766,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cdM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -8968,15 +8982,19 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/rnd/xenoflora)
 "cgx" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/church{
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy,
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/table/bench/wooden,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cgz" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -9074,13 +9092,23 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/guestpass{
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/industrial/ornate,
-/area/liberty/bonfire/chapel)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "chN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/nightmare/low_chance,
@@ -9169,7 +9197,7 @@
 /obj/effect/window_lwall_spawn/smartspawn/church,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "ciJ" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -9241,7 +9269,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cjU" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
@@ -9399,7 +9427,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/plating/under,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "clC" = (
 /obj/machinery/power/port_gen/pacman/diesel,
 /obj/effect/decal/cleanable/dirt,
@@ -9777,7 +9805,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cpN" = (
 /obj/machinery/holoposter{
 	pixel_x = 32
@@ -9838,7 +9866,7 @@
 "cqx" = (
 /obj/effect/window_lwall_spawn/smartspawn/church,
 /turf/simulated/floor/plating,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cqF" = (
 /obj/machinery/light{
 	dir = 1
@@ -9985,7 +10013,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "csD" = (
 /obj/structure/table/rack/shelf,
 /obj/effect/decal/cleanable/dirt,
@@ -10284,15 +10312,14 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "cwa" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 10
 	},
 /obj/structure/decor_spark_statue,
-/turf/simulated/floor/industrial/greybricks{
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cwe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -10456,7 +10483,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cxw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -10787,7 +10814,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild3,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cBT" = (
 /obj/structure/closet/crate/hydroponics,
 /obj/item/tool/shovel/spade,
@@ -10920,7 +10947,7 @@
 	tag = "icon-railing0 (NORTH)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cEo" = (
 /obj/structure/flora/small/snow/boulder1,
 /turf/simulated/floor/snow,
@@ -11049,6 +11076,14 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor3south)
+"cFH" = (
+/obj/structure/railing/grey,
+/obj/effect/floor_decal/wood/tatami,
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "cFV" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "10,1"
@@ -11065,7 +11100,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cGb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -11095,7 +11130,7 @@
 "cGe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cGg" = (
 /obj/effect/step_trigger/surface_to_forest_1_B,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -11826,17 +11861,6 @@
 /obj/machinery/air_stopper,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2west)
-"cPb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 6
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "cPc" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -12381,7 +12405,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cVr" = (
 /obj/structure/invislight/outside,
 /obj/effect/floor_decal/industrial/stand_clear{
@@ -12493,15 +12517,18 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "cWJ" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -12549,6 +12576,12 @@
 "cXs" = (
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/oldlibrary)
+"cXu" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 4
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "cXw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -12610,7 +12643,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "cYm" = (
 /obj/machinery/microwave,
 /obj/structure/table/standard,
@@ -13299,14 +13332,18 @@
 /turf/simulated/floor/plating,
 /area/liberty/medical/cryo)
 "deQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
+/obj/structure/railing/grey{
 	dir = 4
 	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
+/obj/structure/table/rack,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 4
 	},
-/area/liberty/bonfire/chapel)
+/obj/item/tool/hammer/mace/makeshift,
+/obj/item/tool/hammer/mace/makeshift,
+/obj/item/tool/hammer/mace/makeshift,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "deW" = (
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/steel,
@@ -13540,7 +13577,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "dhs" = (
 /obj/random/spider_trap_burrowing/low_chance,
 /turf/simulated/floor/snow,
@@ -13877,7 +13914,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "dlh" = (
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Breakroom";
@@ -14000,7 +14037,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "dmR" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light,
@@ -14386,6 +14423,20 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
+"drL" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "drR" = (
 /obj/structure/bed/chair/comfy/black,
 /obj/effect/decal/cleanable/dirt,
@@ -14624,7 +14675,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "dws" = (
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Post";
@@ -14872,7 +14923,7 @@
 /area/liberty/security/maingate)
 "dzz" = (
 /turf/simulated/wall/church_reinforced,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "dzC" = (
 /obj/structure/scrap/poor/large,
 /turf/simulated/floor/tiled/techmaint,
@@ -15016,7 +15067,7 @@
 "dBc" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "dBj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15165,7 +15216,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "dDp" = (
 /obj/random/flora/small_jungle_tree,
 /turf/simulated/floor/asteroid/grass,
@@ -15178,7 +15229,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "dDA" = (
 /obj/structure/table/rack/shelf,
 /obj/item/clothing/accessory/hawaiian/vice,
@@ -15983,6 +16034,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
+"dMJ" = (
+/obj/effect/floor_decal/spline/fancy{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "dMK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/spiders/low_chance,
@@ -16690,7 +16750,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "dVY" = (
 /obj/machinery/light/small,
 /obj/structure/table/standard,
@@ -16705,7 +16765,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "dWh" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -16803,7 +16863,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "dXO" = (
 /obj/structure/table/bench/standard,
 /obj/effect/decal/cleanable/dirt,
@@ -17259,7 +17319,7 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /obj/effect/floor_decal/border/carpet/red,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "ege" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -17326,7 +17386,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "ehi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/roaches/low_chance,
@@ -17343,7 +17403,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ehv" = (
 /obj/machinery/hologram/holopad{
 	name = "meeting room holopad"
@@ -17486,7 +17546,10 @@
 /turf/simulated/floor/industrial/ceramic,
 /area/liberty/maintenance/undergroundfloor2north)
 "ejq" = (
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -17507,7 +17570,7 @@
 "ejt" = (
 /obj/structure/sign/faction/custodians,
 /turf/simulated/wall/church_reinforced,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "eju" = (
 /obj/structure/flora/tree/snow/three,
 /obj/structure/flora/small/snow/rock7,
@@ -17987,11 +18050,6 @@
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/security/tactical)
-"epc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "epd" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/steel/brown_perforated,
@@ -18495,7 +18553,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "ewA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch{
@@ -18836,7 +18894,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "eBG" = (
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 8
@@ -19262,7 +19320,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "eGK" = (
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
@@ -19370,7 +19428,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "eIc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -19696,10 +19754,15 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/structure/table/bench/wooden,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "eLw" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -19789,7 +19852,7 @@
 /area/liberty/maintenance/undergroundfloor2south)
 "eNd" = (
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "eNi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -19976,7 +20039,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "ePG" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -20208,21 +20271,20 @@
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/liberty/crew_quarters/janitor)
 "eTS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
+	dir = 4
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "eTY" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -20708,19 +20770,22 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/crew_quarters/kitchen)
 "fbw" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 4;
-	name = "Church - Bio Generator";
-	sortType = "Church - Bio Generator"
+	name = "Custodians - Bonfire processing";
+	sortType = "Custodians - Bonfire processing"
 	},
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "fbx" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -20812,14 +20877,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/command/teleporter)
-"fbS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "fcb" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/tiled/white/cargo,
@@ -21341,7 +21398,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "fiI" = (
 /obj/machinery/conveyor/east{
 	dir = 2;
@@ -21573,7 +21630,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "flK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cargo,
@@ -22354,17 +22411,6 @@
 /area/liberty/security/prisoncells{
 	name = "Interrogation"
 	})
-"fva" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 10
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "fvc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -22392,7 +22438,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "fvt" = (
 /obj/structure/table/standard,
 /obj/structure/extinguisher_cabinet{
@@ -22657,9 +22703,19 @@
 	dir = 8;
 	pixel_x = 32
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 4
+	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/ornate,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "fzb" = (
 /obj/structure/flora/big/bush2,
 /turf/simulated/floor/asteroid/grass/jungle,
@@ -23055,20 +23111,14 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "fDZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+/obj/structure/railing/grey{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+/obj/effect/floor_decal/wood/tatami{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "fEb" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/violetcorener,
@@ -23263,7 +23313,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "fGF" = (
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/steel/random,
@@ -23470,7 +23520,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "fIZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/wood{
@@ -23808,7 +23858,7 @@
 	},
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "fNR" = (
 /obj/machinery/vending/integrated_electronics,
 /turf/simulated/floor/tiled/dark/brown_perforated,
@@ -23968,7 +24018,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "fPD" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
@@ -24821,18 +24871,22 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/substation/bridge)
 "fZK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing/grey{
-	dir = 8
-	},
-/obj/structure/multiz/stairs/enter/bottom{
-	dir = 1
-	},
 /obj/structure/decor_light/wallcandle{
 	pixel_x = 32
 	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "fZL" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -24855,7 +24909,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "fZN" = (
 /obj/structure/closet/secure_closet/personal/shipbreaker,
 /obj/structure/window/reinforced{
@@ -25069,12 +25123,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/oldlibrary)
-"gcs" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "gct" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -25131,7 +25179,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gcL" = (
 /obj/structure/flora/small/trailrockb5,
 /obj/structure/reagent_dispensers/fueltank/derelict,
@@ -25364,20 +25412,6 @@
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
-"gfI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 5
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "gfM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -25755,7 +25789,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gkQ" = (
 /obj/structure/closet/l3closet/security,
 /obj/effect/floor_decal/industrial/hatch,
@@ -25955,7 +25989,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "gnH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -26134,14 +26168,18 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gqG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/danger{
@@ -26184,7 +26222,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "gra" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
@@ -26274,7 +26312,7 @@
 	tag = "icon-railing0 (NORTH)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "grL" = (
 /obj/structure/table/woodentable,
 /obj/random/toolbox/low_chance,
@@ -26561,10 +26599,7 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/crew_quarters/barbackroom)
 "gwj" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
+/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
@@ -26718,14 +26753,9 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/turret_protected/ai_upload)
 "gxv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "gxw" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -26962,7 +26992,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gBb" = (
 /obj/effect/floor_decal/industrial/road/straight2,
 /obj/effect/decal/cleanable/dirt,
@@ -27096,7 +27126,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "gCz" = (
 /obj/random/scrap/sparse_weighted/low_chance,
 /turf/simulated/floor/plating/under,
@@ -27263,7 +27293,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gEM" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -27344,7 +27374,7 @@
 "gGj" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "gGl" = (
 /obj/structure/closet/wall_mounted/firecloset{
 	pixel_y = -32
@@ -28094,14 +28124,6 @@
 	},
 /turf/simulated/floor/carpet/turcarpet,
 /area/liberty/command/cso)
-"gNX" = (
-/obj/machinery/optable/altar,
-/obj/machinery/hologram/holopad,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "gNY" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 6;
@@ -28380,6 +28402,12 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/crew_quarters/barbackroom)
+"gRW" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 10
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "gRX" = (
 /obj/effect/floor_decal/industrial/box/red,
 /obj/machinery/disposal,
@@ -28484,7 +28512,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gSZ" = (
 /obj/structure/catwalk,
 /obj/structure/railing,
@@ -28501,17 +28529,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/command/bridge)
 "gTq" = (
-/obj/structure/disposalpipe/junction{
-	dir = 2;
-	icon_state = "pipe-j2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
+/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "gTt" = (
@@ -28742,6 +28765,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
+"gVR" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 1
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "gVU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -29038,7 +29068,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "gYF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -29177,6 +29207,20 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/maintenance/undergroundfloor2north)
+"haP" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/effect/floor_decal/spline/plain/corner,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "haV" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
@@ -29473,7 +29517,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "hfX" = (
 /obj/random/traps/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -29818,15 +29862,14 @@
 /turf/simulated/floor/wood,
 /area/liberty/medical/psych)
 "hkb" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 32
-	},
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "hkf" = (
 /obj/structure/railing{
 	dir = 8
@@ -29860,7 +29903,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "hkp" = (
 /obj/structure/noticeboard/medical,
 /turf/simulated/wall/r_wall,
@@ -31407,6 +31450,16 @@
 /obj/item/storage/box/flashbangs,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/tactical)
+"hCQ" = (
+/obj/effect/floor_decal/spline/fancy,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "hCV" = (
 /turf/simulated/floor/snow,
 /area/liberty/security/maingate_outside)
@@ -31477,7 +31530,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "hEc" = (
 /obj/structure/railing/grey,
 /obj/structure/flora/small/busha1,
@@ -31918,7 +31971,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "hJa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -32037,7 +32090,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "hLl" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -32520,18 +32573,19 @@
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
+/obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/structure/table/bench/wooden,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "hRA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
@@ -32643,7 +32697,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "hSU" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger,
@@ -33127,15 +33181,8 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/substation/science)
 "hZB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "hZW" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
@@ -33167,7 +33214,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ias" = (
 /turf/simulated/mineral,
 /area/liberty/outside/dcave)
@@ -33215,23 +33262,20 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "ibr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/junction{
+/obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 2;
-	icon_state = "pipe-j2"
+	name = "Custodians - Workshop";
+	sortType = "Custodians - Workshop"
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/black{
+/obj/effect/floor_decal/spline/plain,
+/obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 5
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
 	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "ibu" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -33633,7 +33677,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ihl" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -33700,7 +33744,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iiQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -34435,7 +34479,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "isf" = (
 /obj/structure/flora/small/snow/rock1,
 /turf/simulated/floor/snow,
@@ -34501,7 +34545,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "itd" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 2
@@ -34844,7 +34888,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iwD" = (
 /obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/snow,
@@ -35101,7 +35145,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "izh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -35250,7 +35294,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iBv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -35418,7 +35462,7 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iDR" = (
 /obj/structure/flora/tree/snow/five,
 /obj/structure/flora/small/snow/rock1,
@@ -35520,10 +35564,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "iFk" = (
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iFo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 1
@@ -35544,15 +35588,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
-"iFD" = (
-/obj/structure/decor_light/beacon,
-/obj/effect/floor_decal/spline/fancy{
-	dir = 4
-	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
 "iFG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -35737,7 +35772,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "iIo" = (
 /obj/structure/bed/padded,
 /turf/simulated/floor/tiled/dark,
@@ -35765,7 +35800,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "iIz" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -35793,7 +35828,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "iIM" = (
 /obj/structure/table/rack,
 /obj/machinery/door/window/southleft{
@@ -35937,6 +35972,12 @@
 /obj/machinery/computer/genetics/clone_console,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/medical/genetics)
+"iKY" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 5
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "iLg" = (
 /obj/machinery/camera/network/medbay{
 	dir = 4
@@ -36009,7 +36050,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "iLO" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
@@ -36053,13 +36094,6 @@
 /obj/structure/grille,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor2east)
-"iMH" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "iMI" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/janitorialcart,
@@ -36148,7 +36182,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "iNo" = (
 /obj/machinery/door/airlock/vault{
 	locked = 1;
@@ -36232,7 +36266,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "iPc" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/rnd/xenobiology/ameridian)
@@ -36242,7 +36276,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "iPm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/structures/low_chance,
@@ -36870,17 +36904,11 @@
 /area/liberty/security/armoryshop)
 "iYg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 6
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "iYi" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -36906,18 +36934,15 @@
 	name = "Lower Public Toilet"
 	})
 "iYl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/sortjunction/flipped{
-	dir = 2;
-	name = "Church - Workshop";
-	sortType = "Church - Workshop"
+/obj/structure/disposalpipe/segment,
+/obj/structure/railing/grey{
+	dir = 1
 	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
+/obj/effect/floor_decal/wood/tatami{
+	dir = 1
 	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "iYn" = (
 /obj/random/furniture/pottedplant,
 /obj/machinery/power/apc{
@@ -37067,7 +37092,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "jac" = (
 /obj/structure/bed/chair/sofa/black/corner{
 	dir = 4;
@@ -37226,7 +37251,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "jbw" = (
 /obj/structure/table/glass,
 /obj/item/phone{
@@ -37377,20 +37402,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/bridge)
 "jdn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/red,
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/obj/landmark/join/start/oathbound,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "jdo" = (
 /obj/structure/flora/snowgrass/vegetation,
 /turf/simulated/floor/snow,
@@ -37494,22 +37512,15 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/oldmining)
 "jeJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
+	dir = 4
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/plain,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jeQ" = (
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/lab)
@@ -37543,7 +37554,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "jfo" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/toilet/public)
@@ -37707,28 +37718,18 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/oldlibrary)
 "jhX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/red,
-/obj/effect/floor_decal/border/carpet/red{
+/obj/structure/railing/grey{
 	dir = 8
 	},
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 9
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 10
+/obj/machinery/power/nt_obelisk,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 8
 	},
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "jhZ" = (
 /obj/random/boxes,
 /obj/random/gun_energy_cheap/low_chance,
@@ -37949,7 +37950,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "jku" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -38271,7 +38272,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jov" = (
 /obj/random/cluster/roaches,
 /obj/effect/decal/cleanable/dirt,
@@ -38607,13 +38608,6 @@
 	},
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/sleep/cryo2)
-"jsP" = (
-/obj/machinery/power/nt_obelisk,
-/obj/machinery/floor_light{
-	anchored = 1
-	},
-/turf/simulated/floor/tiled/steel/bar_light,
-/area/liberty/bonfire/chapel)
 "jsV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
@@ -38904,7 +38898,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jxp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -39121,13 +39115,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1west)
 "jzX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
+/obj/structure/railing/grey,
+/obj/effect/floor_decal/wood/tatami,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "jAe" = (
 /obj/structure/flora/tree/pine,
 /turf/unsimulated/wall/snow,
@@ -39532,7 +39523,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jFP" = (
 /obj/structure/table/steel,
 /obj/machinery/door/blast/shutters/glass,
@@ -39621,7 +39612,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "jGN" = (
 /obj/structure/bed/padded,
 /obj/random/medical_lowcost_handmade,
@@ -39791,7 +39782,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "jJa" = (
 /obj/structure/bed/chair/wood{
 	dir = 1
@@ -40047,7 +40038,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "jLG" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "15,3"
@@ -40143,17 +40134,17 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/maintenance/undergroundfloor3north)
 "jMN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/structure/railing/grey{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/effect/floor_decal/wood/tatami{
+	dir = 1
+	},
+/obj/structure/railing/grey{
+	dir = 8
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "jMQ" = (
 /obj/structure/table/rack/shelf,
 /obj/effect/decal/cleanable/dirt,
@@ -40363,7 +40354,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jQe" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
@@ -40408,7 +40399,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jQW" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
 /obj/machinery/door/firedoor,
@@ -40598,7 +40589,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "jTc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -40693,7 +40684,9 @@
 /obj/item/target/clown,
 /obj/item/target/syndicate,
 /obj/item/target/syndicate,
-/obj/structure/closet/crate,
+/obj/structure/closet/crate{
+	name = "target dummies"
+	},
 /obj/effect/floor_decal/industrial/box/white,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/range)
@@ -41002,7 +40995,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "jXD" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Permanent Holding";
@@ -41259,12 +41252,6 @@
 	},
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/crew_quarters)
-"kau" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
 "kax" = (
 /obj/structure/boulder,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -41510,7 +41497,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kdI" = (
 /obj/structure/table/steel,
 /obj/random/lowkeyrandom/low_chance,
@@ -41844,7 +41831,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kiq" = (
 /obj/effect/floor_decal/spline/fancy,
 /obj/structure/decor_inloved_1,
@@ -41936,7 +41923,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kjb" = (
 /obj/structure/catwalk,
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -41994,7 +41981,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kjX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -42081,6 +42068,15 @@
 /obj/machinery/door/airlock/maintenance_common,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
+"kls" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/spline/fancy{
+	dir = 9
+	},
+/turf/simulated/floor/industrial/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "klv" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/spline/fancy/three_quarters,
@@ -42387,22 +42383,23 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/maintenance/arcade)
 "koY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 4
 	},
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 8
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kpg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -42866,7 +42863,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kvc" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -43045,7 +43042,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kxl" = (
 /obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
@@ -43087,28 +43084,12 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/surface/section1)
 "kxu" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/red,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 5
-	},
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 6
-	},
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "kxA" = (
 /obj/structure/table/steel,
 /obj/random/lowkeyrandom/low_chance,
@@ -43165,7 +43146,7 @@
 	},
 /obj/effect/floor_decal/spline/fancy/corner,
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kyo" = (
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
@@ -43517,7 +43498,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kDN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
@@ -43686,6 +43667,16 @@
 /obj/random/mob/roaches/low_chance,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/maintenance/undergroundfloor1north)
+"kGI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/effect/floor_decal/spline/plain,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "kGJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -43886,7 +43877,7 @@
 /obj/structure/invislight,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "kJG" = (
 /obj/structure/sign/faction/derelict1{
 	desc = "ATTENTION: This teleporter is a highly dangerous piece of equipment, we recommend caution when using it. The device can and will take you to a section of nearby space to salvage equipment, however you will need a void suit and weapons to avoid hostile life forms among the ruins and derelicts. We suggest bringing a team!";
@@ -43895,7 +43886,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kJL" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/tiled/dark,
@@ -43955,7 +43946,7 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kKw" = (
 /obj/structure/spider_nest,
 /obj/effect/spider/stickyweb,
@@ -44299,7 +44290,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kOw" = (
 /obj/machinery/light_switch{
 	pixel_y = 32
@@ -44435,7 +44426,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "kQl" = (
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "kQw" = (
 /obj/machinery/computer/shuttle_control/multi/rocinante{
 	dir = 4
@@ -44618,12 +44609,15 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/armory)
 "kSm" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy,
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kSN" = (
 /obj/landmark/join/start/triai,
 /obj/item/device/radio/intercom/private{
@@ -44669,8 +44663,8 @@
 "kTJ" = (
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
-	name = "Prospector - Shop";
-	sortType = "Prospector - Shop"
+	name = "Fontaine offices";
+	sortType = "Fontaine offices"
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -44698,7 +44692,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kUf" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -45006,7 +45000,7 @@
 	},
 /obj/effect/floor_decal/border/carpet/red,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "kWu" = (
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/tiled/white/brown_perforated,
@@ -45539,7 +45533,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "leW" = (
 /obj/item/reagent_containers/syringe,
 /obj/effect/decal/cleanable/dirt,
@@ -45615,6 +45609,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/bridge)
+"lfX" = (
+/obj/effect/window_lwall_spawn/smartspawn/church,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/liberty/bonfire/stronghold)
 "lgj" = (
 /obj/random/scrap/sparse_even/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -45733,7 +45734,7 @@
 	},
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lha" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -46050,6 +46051,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
+"llh" = (
+/obj/machinery/atmospherics/unary/vent_pump,
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "lli" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -46520,7 +46531,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "lse" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
@@ -46722,7 +46733,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lvg" = (
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/rnd/xenobiology)
@@ -47078,7 +47089,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lzz" = (
 /obj/structure/multiz/stairs/enter,
 /obj/structure/window/reinforced{
@@ -47133,7 +47144,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lzW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -47528,7 +47539,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lFP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -47845,7 +47856,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "lKj" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/disposalpipe/segment,
@@ -48398,11 +48409,6 @@
 /obj/machinery/door/blast/shutters/glass,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor2north)
-"lPF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/enkindled,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "lPM" = (
 /obj/machinery/air_sensor{
 	frequency = 1441;
@@ -48505,7 +48511,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/border/carpet/red,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "lRp" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -48548,6 +48554,9 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "lSv" = (
 /obj/machinery/sewing_artificer,
+/obj/machinery/conveyor/south{
+	id = "bonfire"
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "lSz" = (
@@ -48665,7 +48674,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "lTP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -48891,7 +48900,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "lWq" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
@@ -49097,7 +49106,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "lYh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atm{
@@ -49348,7 +49357,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "mbD" = (
 /obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/spline/fancy,
@@ -49500,7 +49509,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "mdT" = (
 /obj/machinery/atm{
 	dir = 4;
@@ -49684,7 +49693,7 @@
 "mfH" = (
 /obj/structure/flora/small/grassb5,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "mgd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -49858,19 +49867,14 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/barbackroom)
 "miP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/effect/floor_decal/wood/tatami{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/red,
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "miU" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
@@ -50364,18 +50368,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
-"mry" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing/grey{
-	dir = 8
-	},
-/obj/structure/multiz/stairs/enter/bottom,
-/obj/structure/decor_light/wallcandle{
-	pixel_x = 32
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "mrz" = (
 /obj/structure/table/standard,
 /obj/random/lowkeyrandom/low_chance,
@@ -50965,6 +50958,10 @@
 /obj/random/traps/low_chance,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/maintenance/hideout)
+"mAo" = (
+/obj/structure/multiz/stairs/enter/bottom,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "mAt" = (
 /obj/structure/table/rack,
 /obj/item/device/techno_tribalism,
@@ -51893,7 +51890,7 @@
 "mNr" = (
 /obj/structure/sign/security/teleporter/right,
 /turf/simulated/wall/r_wall,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "mNs" = (
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/hallway/side/f2section1)
@@ -51917,17 +51914,18 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "mNJ" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/structure/railing/grey{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/red{
-	dir = 1
+/obj/structure/decor_light/pyre,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 5
 	},
-/obj/effect/floor_decal/border/carpet/red,
-/turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "mNL" = (
 /obj/machinery/light,
 /turf/simulated/floor/snow,
@@ -52159,14 +52157,14 @@
 	name = "Church Foyer"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/industrial/greybricks{
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "mRv" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/rock/manmade/asphalt,
@@ -52448,7 +52446,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "mUL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
@@ -52526,6 +52524,12 @@
 /obj/machinery/air_stopper,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/hallway/surface/section1)
+"mVB" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 8
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "mVJ" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -52596,7 +52600,7 @@
 /area/liberty/engineering/engine_room)
 "mWo" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "mWx" = (
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
@@ -53642,7 +53646,7 @@
 "nkE" = (
 /obj/structure/decor_edvard_statue,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "nkH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -53913,15 +53917,18 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/storage/primary)
 "nnD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "nnS" = (
 /obj/random/closet_tech,
 /obj/machinery/light/small{
@@ -54345,7 +54352,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "nsV" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -54569,17 +54576,12 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/maingate)
 "nvR" = (
-/obj/machinery/atmospherics/unary/vent_scrubber{
-	dir = 1
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "nvX" = (
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/structure/multiz/ladder,
@@ -54687,7 +54689,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "nxo" = (
 /obj/structure/bed/chair/wood,
 /obj/effect/floor_decal/border/carpet/red{
@@ -54712,7 +54714,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "nxr" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -55235,13 +55237,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
-"nDR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
 "nEw" = (
 /obj/structure/bed/chair/comfy/black,
 /turf/simulated/floor/carpet/bcarpet,
@@ -55402,7 +55397,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "nGu" = (
 /obj/machinery/power/sensor{
 	long_range = 1;
@@ -55883,7 +55878,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "nMM" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -56325,7 +56320,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "nRm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -56754,6 +56749,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
+"nWX" = (
+/obj/effect/floor_decal/spline/fancy,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "nXe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -56930,7 +56935,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "nZI" = (
 /obj/effect/window_lwall_spawn/smartspawn/church,
 /turf/simulated/floor/plating,
@@ -57841,7 +57846,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "olM" = (
 /turf/simulated/wall/church_reinforced,
 /area/liberty/bonfire/armory)
@@ -57929,7 +57934,7 @@
 /obj/machinery/light/small,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "onj" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/steel/bar_dance,
@@ -58269,7 +58274,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "orj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/spiders/low_chance,
@@ -58498,7 +58503,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ouc" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/flora/big/bush1,
@@ -58627,18 +58632,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/campground)
-"ovA" = (
-/obj/structure/sink{
-	density = 1;
-	desc = "A small fountain of polished stone and has a small pump at the bottom that helps push fresh water.";
-	icon_state = "BaptismFont_Water";
-	name = "Water Fountain"
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "ovC" = (
 /obj/item/reagent_containers/blood/AMinus,
 /obj/item/reagent_containers/blood/APlus,
@@ -58766,7 +58759,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "owZ" = (
 /turf/simulated/floor/snow,
 /area/liberty/maintenance/caveameridian)
@@ -59193,7 +59186,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "oCd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -59898,7 +59891,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "oKO" = (
 /obj/structure/ameridian_crystal,
 /turf/simulated/floor/snow,
@@ -60209,6 +60202,15 @@
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
+"oOl" = (
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/effect/floor_decal/wood/tatami{
+	dir = 4
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "oOn" = (
 /obj/random/oddity_guns,
 /turf/simulated/floor/rock,
@@ -60334,18 +60336,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/industrial/greybricks{
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "oPY" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -60508,7 +60504,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "oSf" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -60617,7 +60613,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "oTn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy,
@@ -60630,7 +60626,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "oTs" = (
 /obj/structure/table/woodentable,
 /obj/item/flame/candle{
@@ -60832,7 +60828,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "oWM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -61026,7 +61022,7 @@
 "oZc" = (
 /obj/structure/sign/security/teleporter,
 /turf/simulated/wall/r_wall,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "oZh" = (
 /obj/structure/table/rack/shelf,
 /obj/item/plantspray/pests,
@@ -61286,7 +61282,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pcw" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -61387,8 +61383,13 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/obj/effect/floor_decal/spline/fancy{
+	dir = 5
+	},
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "pdG" = (
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/dirt/dark,
@@ -61670,7 +61671,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "phm" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/blast/regular{
@@ -61694,7 +61695,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "phJ" = (
 /obj/machinery/atmospherics/unary/heater{
 	dir = 8;
@@ -62209,7 +62210,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ppv" = (
 /obj/machinery/smartfridge/chemistry,
 /obj/machinery/door/window/westright{
@@ -62380,6 +62381,12 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2south)
+"prG" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 1
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "prT" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/structure/railing{
@@ -62577,7 +62584,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild3,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pun" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
@@ -62800,7 +62807,7 @@
 	},
 /obj/machinery/space_heater,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pxd" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/barbackroom)
@@ -62969,7 +62976,7 @@
 	tag = "icon-railing0 (NORTH)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "pzd" = (
 /obj/structure/flora/ausbushes/fernybush,
 /turf/simulated/floor/asteroid/grass,
@@ -63103,14 +63110,18 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor3north)
 "pAO" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pAR" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -63148,7 +63159,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pBl" = (
 /obj/structure/bed/chair/sofa/black/left{
 	dir = 4
@@ -63381,7 +63392,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pEh" = (
 /obj/machinery/alarm{
 	desc = "This one has no access lock to allow for the vents to be turned on and off when needed.";
@@ -63885,7 +63896,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "pKx" = (
 /obj/random/ammo,
 /turf/simulated/floor/rock,
@@ -64598,7 +64609,6 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/lab)
 "pSb" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -64606,10 +64616,15 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/structure/table/bench/wooden,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "pSd" = (
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/burned_outpost)
@@ -64808,11 +64823,6 @@
 /obj/machinery/computer/robotics,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
-"pUe" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "pUh" = (
 /obj/machinery/light/small,
 /obj/structure/disposalpipe/up{
@@ -64896,17 +64906,14 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/inside_colony)
 "pUW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "pVi" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -65111,7 +65118,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "pXW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -65583,13 +65590,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/liberty/command/gmaster)
-"qdu" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "qdx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -65793,7 +65793,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "qfO" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -65984,7 +65984,7 @@
 /area/turret_protected/ai_upload)
 "qhR" = (
 /turf/simulated/mineral,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "qhS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -66145,7 +66145,7 @@
 	},
 /obj/structure/decor_spark_statue,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "qjw" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/cleanable/dirt,
@@ -66173,6 +66173,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor3north)
+"qjJ" = (
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "qjN" = (
 /obj/random/scrap/sparse_even/low_chance,
 /obj/random/structures/low_chance,
@@ -66916,16 +66931,13 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/range)
 "qtp" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/window_lwall_spawn/smartspawn/church,
+/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
+	dir = 4
 	},
-/obj/effect/floor_decal/spline/fancy/corner,
-/turf/simulated/floor/industrial/greybricks{
-	dir = 1
-	},
-/area/liberty/bonfire/chapel)
+/turf/simulated/floor/plating,
+/area/liberty/bonfire/stronghold)
 "qtr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -66944,6 +66956,25 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/maintenance/sunkenclub)
+"qty" = (
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/structure/railing/grey,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 6
+	},
+/obj/structure/railing/grey{
+	dir = 8
+	},
+/obj/structure/closet/crate{
+	name = "target dummies"
+	},
+/obj/item/training_dummy,
+/obj/item/training_dummy,
+/obj/item/training_dummy,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "qtD" = (
 /obj/machinery/light{
 	dir = 1
@@ -67159,7 +67190,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "qwc" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -67223,7 +67254,7 @@
 	},
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "qwG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -67345,7 +67376,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "qzf" = (
 /obj/machinery/light/small,
 /obj/random/traps/low_chance,
@@ -67516,7 +67547,7 @@
 /obj/structure/table/woodentable,
 /obj/item/storage/fancy/candle_box,
 /turf/simulated/floor/tiled/white/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "qBw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/scrap/food,
@@ -67624,13 +67655,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
-"qDa" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "qDb" = (
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenoflora)
@@ -67749,15 +67773,6 @@
 	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
-"qDZ" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "qEb" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	frequency = 1380;
@@ -67906,7 +67921,7 @@
 	name = "The Purifier"
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "qGz" = (
 /turf/simulated/shuttle/wall/mining{
 	icon_state = "2,7"
@@ -68773,8 +68788,12 @@
 /obj/structure/decor_light/wallcandle{
 	pixel_y = 32
 	},
+/obj/landmark/join/start/enkindled,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "qQB" = (
 /obj/structure/bed/chair/wood{
 	dir = 1
@@ -69116,7 +69135,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "qVz" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/engineering/foyer)
@@ -69157,7 +69176,7 @@
 /turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "qVQ" = (
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
@@ -69182,6 +69201,13 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/rnd/xenoflora)
+"qWl" = (
+/obj/effect/floor_decal/spline/fancy,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "qWo" = (
 /obj/structure/table/rack,
 /obj/machinery/door/window/southleft{
@@ -69311,7 +69337,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "qXV" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -69673,7 +69699,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rbS" = (
 /obj/structure/plushie/drone,
 /turf/simulated/wall/r_wall,
@@ -70348,7 +70374,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "rlw" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/blue_slates_long,
@@ -70440,7 +70466,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rmU" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
@@ -70560,7 +70586,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rnV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -70881,18 +70907,20 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/outside/inside_colony)
 "rtw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rtB" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -70933,7 +70961,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rtF" = (
 /obj/random/scrap/sparse_weighted,
 /obj/effect/decal/cleanable/dirt,
@@ -71147,7 +71175,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "rvJ" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -71549,11 +71577,6 @@
 /obj/machinery/mech_recharger,
 /turf/simulated/floor/plating,
 /area/liberty/engineering/workshop)
-"rAl" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/border/carpet/black,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "rAs" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -71804,7 +71827,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "rDO" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -72563,6 +72586,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/ceramic,
 /area/liberty/maintenance/oldpool)
+"rPk" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 9
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "rPn" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -72632,7 +72661,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "rQu" = (
 /obj/machinery/gibber,
 /obj/effect/decal/cleanable/blood,
@@ -72700,6 +72729,9 @@
 "rRu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/sewing_artificer/composite_artificer,
+/obj/machinery/conveyor/south{
+	id = "bonfire"
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "rRv" = (
@@ -72726,7 +72758,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "rRG" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -73155,19 +73187,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/sechall)
-"rXl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 4
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 5
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "rXn" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/maintenance/undergroundfloor3north)
@@ -73319,7 +73338,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "rZp" = (
 /obj/item/flame/candle,
 /turf/simulated/floor/rock/manmade/concrete,
@@ -73675,16 +73694,18 @@
 /area/liberty/pros/prep)
 "scx" = (
 /obj/machinery/light,
-/obj/machinery/alarm{
-	dir = 1;
-	pixel_y = -32
-	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy,
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/table/bench/wooden,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "scC" = (
 /obj/structure/bed/chair/sofa/teal/corner{
 	dir = 1
@@ -73819,6 +73840,12 @@
 /mob/living/simple_animal/pig/hog,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics)
+"sdm" = (
+/obj/effect/floor_decal/wood/tatami{
+	dir = 6
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "sdI" = (
 /obj/structure/table/woodentable,
 /obj/item/device/camera,
@@ -74876,7 +74903,7 @@
 /obj/structure/table/rack,
 /obj/item/flame/lighter/zippo/bonfire,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "spL" = (
 /obj/machinery/door/blast/regular{
 	id = "Cell 3b";
@@ -74914,7 +74941,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "spV" = (
 /obj/machinery/autolathe/mechfab/loaded,
 /obj/structure/boulder,
@@ -74939,7 +74966,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "spZ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -75116,7 +75143,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ssD" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
@@ -75426,7 +75453,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "swY" = (
 /obj/structure/railing{
 	dir = 8
@@ -75656,7 +75683,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "szK" = (
 /obj/machinery/porta_turret{
 	dir = 1
@@ -75804,7 +75831,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "sBf" = (
 /obj/item/device/radio/beacon,
 /obj/structure/closet/wall_mounted/emcloset{
@@ -75843,7 +75870,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "sBq" = (
 /obj/structure/reagent_dispensers/premiumwhiskey,
 /turf/simulated/floor/tiled/white/brown_platform,
@@ -76061,7 +76088,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "sDA" = (
 /obj/machinery/atm{
 	dir = 4;
@@ -76317,7 +76344,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "sFL" = (
 /obj/random/junk/low_chance,
 /obj/item/contraband/poster/placed/generic/walk{
@@ -76399,7 +76426,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "sGJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -76953,6 +76980,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/item/flame/candle,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -77084,7 +77112,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "sPz" = (
 /obj/machinery/genetics/pulper,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -77105,7 +77133,7 @@
 /area/liberty/maintenance/sunkenclub)
 "sPV" = (
 /turf/simulated/wall/church_reinforced,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "sQd" = (
 /obj/landmark/join/start/janitor,
 /turf/simulated/floor/tiled/steel/gray_platform,
@@ -77731,6 +77759,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
+"sXH" = (
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/material/baseballbat/metal,
+/obj/item/material/baseballbat/metal,
+/obj/item/material/baseballbat/metal,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 4
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "sXK" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/asteroid/grass,
@@ -77992,7 +78033,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tbA" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 4;
@@ -78024,6 +78065,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
+"tcC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/plain,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "tcI" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -78149,27 +78203,12 @@
 /obj/random/scrap/sparse_weighted,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
-"teg" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 9
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "teh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tej" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -78726,7 +78765,7 @@
 /obj/item/tool/saw,
 /obj/item/tool/hammer,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "tlj" = (
 /obj/structure/flora/small/snow/rock2,
 /obj/structure/flora/tree/snow/five,
@@ -79300,7 +79339,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "trV" = (
 /obj/structure/table/rack/shelf,
 /obj/random/handmade_tool/low_chance,
@@ -79948,7 +79987,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tAf" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/effect/decal/cleanable/dirt,
@@ -80173,7 +80212,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tDC" = (
 /obj/machinery/atmospherics/pipe/zpipe/down,
 /obj/structure/cable/green{
@@ -80474,7 +80513,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tGz" = (
 /obj/effect/floor_decal/industrial/danger/corner{
 	dir = 8
@@ -80494,6 +80533,27 @@
 /obj/item/ammo_casing/pistol_35/hv/spent,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/range)
+"tGV" = (
+/obj/structure/railing/grey{
+	dir = 1
+	},
+/obj/structure/railing/grey{
+	dir = 8
+	},
+/obj/effect/floor_decal/wood/tatami{
+	dir = 9
+	},
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/structure/closet/crate{
+	name = "target dummies"
+	},
+/obj/item/training_dummy/cultist,
+/obj/item/training_dummy/merc,
+/obj/item/training_dummy/wingchun,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "tGY" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible/yellow,
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -80631,6 +80691,10 @@
 /obj/machinery/door/airlock/multi_tile/metal/mait,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/oldmining)
+"tIX" = (
+/obj/effect/floor_decal/wood/tatami,
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "tJm" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/browndouble,
@@ -80748,6 +80812,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
+"tJQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled/steel/orangecorner,
+/area/liberty/hallway/surface/section1)
 "tKi" = (
 /obj/structure/barricade,
 /turf/simulated/floor/snow,
@@ -81336,7 +81410,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "tRt" = (
 /obj/effect/floor_decal/industrial/outline,
 /obj/structure/bed/roller,
@@ -81928,14 +82002,7 @@
 /area/liberty/medical/psych)
 "tZw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 10
 	},
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 8
@@ -81943,10 +82010,14 @@
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 4
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "tZD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/colony_underground{
@@ -82514,6 +82585,13 @@
 	icon_state = "1,17"
 	},
 /area/shuttle/rocinante_shuttle_area)
+"ugU" = (
+/obj/effect/floor_decal/spline/plain,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "uhb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/newscaster{
@@ -82554,7 +82632,7 @@
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uht" = (
 /obj/machinery/door/airlock{
 	id_tag = "toilet3";
@@ -82590,17 +82668,17 @@
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/maintenance/undergroundfloor3west)
 "uhK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "uhM" = (
 /turf/simulated/wall,
 /area/liberty/crew_quarters/dorm4)
@@ -82896,7 +82974,7 @@
 "ulv" = (
 /obj/structure/dispenser/oxygen,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ulE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -83240,18 +83318,22 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/maintenance/sunkenclub)
 "uqB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/effect/floor_decal/spline/fancy/corner,
+/obj/effect/floor_decal/spline/plain/corner{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/spline/fancy/corner,
-/turf/simulated/floor/industrial/greybricks{
+/obj/effect/floor_decal/spline/fancy/corner{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "uqL" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4;
@@ -83388,7 +83470,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "usE" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/hydroponics)
@@ -83887,7 +83969,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uyJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/white_large_slates,
@@ -83983,6 +84065,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor3north)
+"uzA" = (
+/obj/structure/railing/grey{
+	dir = 1
+	},
+/obj/effect/floor_decal/wood/tatami{
+	dir = 1
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "uzD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -84049,7 +84140,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "uAb" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/knife/low_chance,
@@ -84114,7 +84205,7 @@
 "uAq" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uAr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light/small{
@@ -84251,7 +84342,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "uCJ" = (
 /obj/structure/catwalk,
 /obj/random/structures/low_chance,
@@ -84291,7 +84382,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "uDy" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
@@ -84717,7 +84808,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uJD" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -84786,7 +84877,7 @@
 "uKx" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uKC" = (
 /obj/structure/low_wall,
 /obj/machinery/door/blast/regular{
@@ -85510,7 +85601,7 @@
 /obj/structure/jtb_pillar,
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "uVz" = (
 /turf/simulated/mineral/planet,
 /area/liberty/maintenance/undergroundfloor3north)
@@ -85707,19 +85798,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/oldlibrary)
-"uZA" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 9
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "uZJ" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -86102,7 +86180,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vfc" = (
 /obj/machinery/light{
 	dir = 8
@@ -86331,6 +86409,13 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/crew_quarters/dorm3)
+"vif" = (
+/obj/effect/floor_decal/wood/tatami,
+/obj/structure/multiz/stairs/enter/bottom{
+	dir = 1
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "vii" = (
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
@@ -86799,7 +86884,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "vnk" = (
 /obj/machinery/atmospherics/pipe/tank/air{
 	dir = 1
@@ -87210,7 +87295,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "vsB" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/structure/railing{
@@ -87600,7 +87685,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vwl" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
@@ -87667,10 +87752,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/wall/r_wall,
 /area/liberty/pros/prep)
-"vwO" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "vwX" = (
 /obj/structure/catwalk,
 /obj/machinery/light{
@@ -87789,7 +87870,7 @@
 /obj/effect/floor_decal/border/carpet/black,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "vyT" = (
 /obj/machinery/power/nt_obelisk{
 	pixel_y = 5
@@ -87901,6 +87982,17 @@
 /obj/structure/barricade,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2east)
+"vBn" = (
+/obj/effect/floor_decal/spline/fancy,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/table/bench/wooden,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "vBx" = (
 /obj/structure/table/bar_special,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -88652,7 +88744,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "vKg" = (
 /obj/structure/table/rack,
 /obj/random/contraband/low_chance,
@@ -88685,7 +88777,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vKo" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood/wild1,
@@ -88862,7 +88954,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "vMQ" = (
 /obj/effect/floor_decal/steeldecal/steel_decals_central7,
 /obj/machinery/light/streetlight{
@@ -88880,12 +88972,22 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/hallway/surface/section1)
 "vMZ" = (
-/obj/machinery/atmospherics/unary/vent_pump,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/industrial/greybricks{
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vNf" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass/jungle,
@@ -89072,7 +89174,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vOF" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -89123,7 +89225,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vPh" = (
 /obj/machinery/door/window/brigdoor/southright,
 /obj/effect/decal/cleanable/dirt,
@@ -89515,7 +89617,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "vUE" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -89841,7 +89943,7 @@
 /obj/effect/window_lwall_spawn/smartspawn/church,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "vYW" = (
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/tiled/techmaint,
@@ -90473,7 +90575,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "wgl" = (
 /obj/structure/table/gamblingtable,
 /obj/machinery/light/small{
@@ -90800,7 +90902,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "wkf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -91035,19 +91137,6 @@
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/oldpool)
-"wnq" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 8
-	},
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 10
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "wny" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -91125,7 +91214,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "woh" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 9
@@ -91358,7 +91447,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "wri" = (
 /obj/structure/flora/small/bushb1,
 /turf/simulated/floor/asteroid/grass,
@@ -91586,7 +91675,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "wtD" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/quartermaster/miningdock)
@@ -91745,7 +91834,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "wvD" = (
 /obj/structure/flora/tree/snow/snow,
 /turf/simulated/floor/snow,
@@ -91783,6 +91872,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
+"wvT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "wvV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard,
@@ -92860,7 +92963,7 @@
 "wJg" = (
 /obj/structure/disposalpipe/tagger{
 	dir = 4;
-	sort_tag = "Church - Bio Generator"
+	sort_tag = "Custodians - Bonfire processing"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -93021,7 +93124,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "wLe" = (
 /obj/structure/table/woodentable,
 /obj/item/reagent_containers/food/snacks/meat/corgi,
@@ -93043,7 +93146,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "wLz" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "5,6"
@@ -93263,15 +93366,6 @@
 /obj/random/cluster/spiders/low_chance,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/maintenance/undergroundfloor2east)
-"wOg" = (
-/obj/structure/table/bench/padded,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
 "wOj" = (
 /obj/structure/mopbucket,
 /obj/item/mop,
@@ -93322,7 +93416,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "wOv" = (
 /obj/structure/disposalpipe/junction{
 	dir = 4
@@ -93503,14 +93597,16 @@
 	},
 /area/liberty/crew_quarters/hotsprings)
 "wQl" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 6
 	},
-/turf/simulated/floor/industrial/greybricks{
+/obj/machinery/vending/fitness{
+	shut_up = 1
+	},
+/turf/simulated/floor/industrial_pristine/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "wQp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -93722,7 +93818,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/security/prisoncells)
 "wSR" = (
-/obj/structure/table/woodentable,
+/obj/machinery/power/nt_obelisk,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 32
@@ -93730,7 +93826,6 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 6
 	},
-/obj/item/flame/candle,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -93910,12 +94005,16 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/shuttle)
 "wVg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/border/carpet/black{
-	dir = 1
+/obj/structure/railing/grey{
+	dir = 8
 	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/obj/structure/railing/grey,
+/obj/structure/decor_light/pyre,
+/obj/effect/floor_decal/wood/tatami{
+	dir = 10
+	},
+/turf/simulated/floor/wood/tatami,
+/area/liberty/bonfire/stronghold)
 "wVj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -94519,7 +94618,7 @@
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/asteroid/grass,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xdX" = (
 /obj/structure/bed/double/padded,
 /obj/random/furniture/bedsheetdouble,
@@ -94744,7 +94843,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xgK" = (
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/dark,
@@ -95163,7 +95262,7 @@
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xlG" = (
 /obj/effect/floor_decal/industrial/outline,
 /obj/machinery/conveyor_switch/oneway{
@@ -95175,7 +95274,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monofloor,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xlI" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/blast/regular{
@@ -95355,7 +95454,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xou" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -95813,7 +95912,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xtY" = (
 /obj/structure/bed/chair/custom/wood{
 	dir = 4
@@ -96030,7 +96129,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xwU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -96485,7 +96584,7 @@
 "xDl" = (
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xDv" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1
@@ -96662,7 +96761,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xEX" = (
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
@@ -96962,7 +97061,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xJo" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -97216,7 +97315,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xNd" = (
 /obj/structure/table/standard,
 /obj/structure/flora/pottedplant/mysterious,
@@ -97481,7 +97580,7 @@
 /obj/structure/scrap_beacon,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xQQ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -97957,7 +98056,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "xVz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -98089,7 +98188,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "xXJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -98438,7 +98537,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
 "ybm" = (
 /obj/structure/table/reinforced,
 /obj/machinery/alarm{
@@ -98513,7 +98612,19 @@
 	},
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/bonfire/skyyard)
+/area/liberty/crew_quarters/skyyard)
+"ycD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/stronghold)
 "ycO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/arrows/white{
@@ -98533,7 +98644,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
-/area/liberty/bonfire/chapelritualroom)
+/area/liberty/bonfire/forge)
 "ycU" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/blucarpet,
@@ -98572,7 +98683,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet,
-/area/liberty/bonfire/chapel)
+/area/liberty/bonfire/stronghold)
 "ydg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/effect/decal/cleanable/dirt,
@@ -194640,15 +194751,15 @@ rst
 pra
 rst
 rst
-rst
-rst
-rst
 fDU
+rst
+rst
+drL
 ejq
 gTq
 gwj
-jBW
-jBW
+nvR
+tJQ
 jBW
 jBW
 jBW
@@ -194842,15 +194953,15 @@ luq
 bOl
 luq
 luq
-luq
+iYg
 luq
 vXS
-rgr
+auL
+iYg
+kxu
+vXS
 luq
-ngd
-aMj
-lXh
-lXh
+fcp
 lXh
 lXh
 cga
@@ -195044,11 +195155,11 @@ sPV
 sPV
 sPV
 vYU
-vYU
+qtp
 ejt
 sPV
 mRu
-cqx
+lfX
 oPQ
 sPV
 ejt
@@ -195245,17 +195356,17 @@ yhb
 kbk
 ttZ
 ari
-nnD
-nnD
+haP
+vMZ
 nnD
 cWA
 koY
-bIx
+qjJ
 tZw
 gqC
 pAO
 pAO
-pAO
+aMj
 cwa
 sPV
 fFw
@@ -195447,17 +195558,17 @@ ucc
 wfd
 frp
 fbw
-teg
-qDZ
-qDZ
-wnq
-kau
+kGI
+tGV
+fDZ
+fDZ
+fDZ
 jhX
 fDZ
-teg
-qDZ
-qDZ
-wnq
+fDZ
+fDZ
+wVg
+ycD
 kSm
 vYU
 luq
@@ -195649,17 +195760,17 @@ jZR
 aXi
 ttZ
 pSb
-wVg
-vwO
-epc
-pUe
-vMZ
-mNJ
-nvR
-wVg
-epc
-vwO
-pUe
+qWl
+mAo
+rPk
+mVB
+mVB
+miP
+mVB
+mVB
+gRW
+jzX
+pUW
 cgx
 sPV
 luq
@@ -195851,18 +195962,18 @@ qbD
 pTB
 ocL
 bXX
-wOg
-gcs
-gcs
-aRL
-kau
+ugU
+jMN
+prG
+rPk
+mVB
 miP
-deQ
-wOg
-gcs
-gcs
-aRL
-kSm
+mVB
+gRW
+tIX
+jzX
+pUW
+nWX
 vYU
 jbn
 mtD
@@ -196055,15 +196166,15 @@ ttZ
 hRx
 ibr
 iYl
+gVR
+gVR
 gxv
-iYg
-nDR
 jdn
 hZB
-gfI
-fbS
-fbS
-bAQ
+tIX
+tIX
+jzX
+llh
 scx
 sPV
 knM
@@ -196256,17 +196367,17 @@ rdY
 lpM
 rtw
 jeJ
-jMN
-jzX
-jzX
-jzX
-kxu
-auL
-jzX
-jzX
-jzX
+uzA
+prG
+iKY
+cXu
+cXu
+cXu
+sdm
+tIX
+cFH
 pUW
-kSm
+nWX
 vYU
 ojp
 hJI
@@ -196457,18 +196568,18 @@ trZ
 aKZ
 ttZ
 eLt
-eTS
-qtp
-iFD
-uZA
-qdu
-gNX
-ovA
-fva
-iFD
-nxn
-uhK
-kSm
+jeJ
+uzA
+iKY
+cXu
+cXu
+cXu
+cXu
+cXu
+sdm
+vif
+dMJ
+vBn
 sPV
 cTd
 hJI
@@ -196658,19 +196769,19 @@ tqt
 dGm
 qof
 lpM
-eLt
-aOf
-kSm
-jsP
-iMH
-vwO
-lPF
-vwO
-rAl
-jsP
-dVX
+eTS
+tcC
+mNJ
+oOl
+oOl
+boT
+deQ
+sXH
+oOl
+oOl
+qty
 uhK
-kSm
+hCQ
 vYU
 ojp
 hJI
@@ -196864,12 +196975,12 @@ pdE
 aOf
 chL
 fZK
-rXl
-qDa
-qDa
-qDa
-cPb
-mry
+bAQ
+wvT
+bAQ
+wvT
+bAQ
+fZK
 fyT
 uqB
 wQl
@@ -197264,7 +197375,7 @@ gch
 gWh
 nME
 ttZ
-dVX
+kls
 azE
 sPV
 sPV

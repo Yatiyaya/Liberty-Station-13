@@ -365,6 +365,40 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
+/datum/custodian_blueprint/weak/training_dummy
+	name = "Wooden Training Dummy"
+	build_path = /obj/item/training_dummy
+	materials = list(
+		/obj/item/stack/material/wood = 20
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/weak/wing_chun_dummy
+	name = "Unarmed Training Dummy"
+	build_path = /obj/item/training_dummy/wingchun
+	materials = list(
+		/obj/item/stack/material/wood = 20
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/weak/cult_training_dummy
+	name = "Training Dummy (cultist)"
+	build_path = /obj/item/training_dummy/cultist
+	materials = list(
+		/obj/item/stack/material/wood = 20,
+		/obj/item/stack/material/steel = 10
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/weak/merc_training_dummy
+	name = "Training Dummy (mercenary)"
+	build_path = /obj/item/training_dummy/merc
+	materials = list(
+		/obj/item/stack/material/wood = 20,
+		/obj/item/stack/material/steel = 10
+	)
+	build_time = 8 SECONDS
+
 /datum/custodian_blueprint/medium
 	manifestation_tier = "Medium"
 

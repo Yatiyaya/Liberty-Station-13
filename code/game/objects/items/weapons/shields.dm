@@ -37,7 +37,9 @@
 	var/max_durability = 200 //So we can brake and need healing time to time
 	var/durability = 200
 	var/can_block_proj = TRUE
-
+	var/coverage_switch = FALSE // Is the shield able to switch coverage? Used for examine text
+	var/break_sound = 'sound/items/electronic_assembly_emptying.ogg' // Sound made when metal shields break, change this for wooden ones
+	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg' // Actual shield bash sound!
 	has_alt_mode = TRUE
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
@@ -47,11 +49,14 @@
 
 /obj/item/shield/proc/breakShield(mob/user)
 	if(user)
+		if(ishuman(user)) // At least give us the breaking stuff task
+			var/mob/living/carbon/human/H = user
+			H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/tool_breaker, "TOOL_BREAKER", skill_gained = 1, learner = H)
 		to_chat(user, SPAN_DANGER("Your [src] broke!"))
 		new /obj/item/material/shard/shrapnel(user.loc)
 	else
 		new /obj/item/material/shard/shrapnel(get_turf(src))
-	playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1 -3)
+	playsound(get_turf(src), break_sound, 50, 1 -3)
 	spawn(2) qdel(src)
 	return
 
@@ -72,6 +77,10 @@
 /obj/item/shield/examine(mob/user)
 	if(!..(user,2))
 		return
+
+	// Tooltip for people that don't know how this mechanic works.
+	if(coverage_switch)
+		to_chat(user, SPAN_WARNING("To switch between raising or lowering your shield, swap it to your empty hand or pick it up while walking for full coverage, or running to cover only the arm holding it."))
 
 	if (durability)
 		if (durability > max_durability * 0.95)
@@ -187,7 +196,7 @@
 
 /obj/item/shield/buckler
 	name = "tactical shield"
-	desc = "A compact personal shield made of pre-preg aramid fibres designed to stop or deflect bullets without slowing down its wielder."
+	desc = "A compact personal shield made of pre-preg aramid fibers designed to stop or deflect bullets without slowing down its wielder."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "tactical" //by CeUvi we thx thy
 	item_state = "tactical"
@@ -195,6 +204,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_PAINFUL
 	throwforce = WEAPON_FORCE_PAINFUL
+	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	throw_speed = 2
 	throw_range = 6
 	w_class = ITEM_SIZE_BULKY
@@ -254,8 +264,9 @@
 	item_state = "riot"
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	force = WEAPON_FORCE_PAINFUL
+	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_PAINFUL
+	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
@@ -265,6 +276,7 @@
 	base_block_chance = 60
 	attack_verb = list("shoved", "bashed")
 	armor_list = list(melee = 15, bullet = 35, energy = 10, bomb = 20, bio = 0, rad = 0)
+	coverage_switch = TRUE
 	var/cooldown = 0 //shield bash cooldown. based on world.time
 	var/picked_by_human = FALSE
 	var/mob/living/carbon/human/picking_human
@@ -341,7 +353,7 @@
 		visible_message("[picking_human] lowers their [src.name].")
 	else
 		item_state = "[initial(item_state)]_walk"
-		visible_message("[picking_human] raises their [src.name] to cover themself!")
+		visible_message("[picking_human] raises their [src.name] to cover themselves!")
 	update_wear_icon()
 
 /obj/item/shield/riot/attackby(obj/item/W as obj, mob/user as mob)
@@ -366,6 +378,8 @@
 	throw_range = 2
 	durability = 70
 	matter = list(MATERIAL_STEEL = 8)
+	force = WEAPON_FORCE_DANGEROUS
+	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	base_block_chance = 40
 	max_durability = 70 //So we can brake and need healing time to time
 	item_icons = list(
@@ -381,7 +395,7 @@
 	item_state = "dozershield"
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	force = WEAPON_FORCE_DANGEROUS
+	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_DANGEROUS
 	throw_speed = 1
 	throw_range = 4
@@ -406,8 +420,9 @@
 	item_state = "hardshield"
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	force = WEAPON_FORCE_PAINFUL
+	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_PAINFUL
+	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
@@ -494,6 +509,10 @@
 	throw_range = 6
 	matter = list(MATERIAL_STEEL = 6)
 	base_block_chance = 40
+	force = WEAPON_FORCE_PAINFUL
+	throwforce = WEAPON_FORCE_PAINFUL
+	hitsound = 'sound/weapons/shield/shieldbash_wood.ogg'
+	break_sound = 'sound/weapons/shield/shielddestroy.ogg'
 	armor_list = list(melee = 15, bullet = 2, energy = 10, bomb = 0, bio = 0, rad = 0)
 	max_durability = 100 //So we can brake and need healing time to time
 	durability = 100
@@ -521,6 +540,9 @@
 	throw_speed = 2
 	throw_range = 6
 	armor_list = list(melee = 30, bullet = 15, energy = 20, bomb = 10, bio = 0, rad = 0)
+	force = WEAPON_FORCE_DANGEROUS
+	throwforce = WEAPON_FORCE_DANGEROUS
+	hitsound = 'sound/weapons/shield/shieldbash_wood.ogg'
 	matter = list(MATERIAL_BONE = 6)
 	base_block_chance = 50
 	max_durability = 130 //So we can brake and need healing time to time
@@ -538,6 +560,9 @@
 	icon_state = "tray_shield"
 	item_state = "tray_shield"
 	flags = CONDUCT
+	force = WEAPON_FORCE_DANGEROUS
+	throwforce = WEAPON_FORCE_DANGEROUS
+	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
 	throw_speed = 2
 	throw_range = 4
 	matter = list(MATERIAL_STEEL = 4)
@@ -574,8 +599,9 @@
 	icon_state = "eshield0" // eshield1 for expanded
 	item_state  = "eshield" // eshield1 for expanded
 	flags = CONDUCT
-	force = 3
-	throwforce = 5
+	force = WEAPON_FORCE_HARMLESS
+	throwforce = WEAPON_FORCE_WEAK
+	hitsound = 'sound/weapons/blade1.ogg' // Esword sound
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_SMALL
@@ -584,7 +610,7 @@
 	var/active = 0
 	max_durability = 80 //So we can brake and need healing time to time
 	durability = 80
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_POCKET
 
 /obj/item/shield/buckler/energy/handle_shield(mob/user)
 	if(!active)
@@ -611,16 +637,18 @@
 		user.Weaken(3)
 	active = !active
 	if (active)
-		force = WEAPON_FORCE_PAINFUL
+		force = WEAPON_FORCE_DANGEROUS
 		update_icon()
 		w_class = ITEM_SIZE_BULKY
+		slot_flags = SLOT_BELT
 		playsound(user, 'sound/weapons/saberon.ogg', 50, 1)
 		to_chat(user, SPAN_NOTICE("\The [src] is now active."))
 
 	else
-		force = 3
+		force = WEAPON_FORCE_HARMLESS
 		update_icon()
 		w_class = ITEM_SIZE_TINY
+		slot_flags = SLOT_BELT|SLOT_POCKET
 		playsound(user, 'sound/weapons/saberoff.ogg', 50, 1)
 		to_chat(user, SPAN_NOTICE("\The [src] can now be concealed."))
 
@@ -641,6 +669,9 @@
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere. This one was created for void wolves, generally employed by reavers."
 	icon_state = "voidwolfshield0" // eshield1 for expanded
 	item_state = "voidwolfshield"
+	max_durability = 120
+	durability = 120
+
 
 /obj/item/shield/buckler/energy/reaver/damaged
 
@@ -665,7 +696,7 @@
 	item_state = "dagger"
 	flags = CONDUCT
 	w_class = ITEM_SIZE_SMALL
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_POCKET
 	force = WEAPON_FORCE_NORMAL
 	throwforce = WEAPON_FORCE_DANGEROUS
 	throw_speed = 2

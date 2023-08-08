@@ -52,7 +52,7 @@
 	min_air_pressure = 0
 	min_bodytemperature = 0
 	never_stimulate_air = TRUE
-	faction = "circhosian_cult" // From Circhos, a misstranslation of half-crab men in scandinavian myth
+	faction = "circhosian" // From Circhos, a misstranslation of half-crab men in scandinavian myth
 
 /mob/living/carbon/superior_animal/human/lighteater_cultist/handle_environment(var/datum/gas_mixture/environment)
 	return // Chitinous armor as strong as a voidsuit

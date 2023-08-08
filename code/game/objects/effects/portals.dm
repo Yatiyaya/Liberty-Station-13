@@ -1,6 +1,6 @@
 /obj/effect/portal
 	name = "portal"
-	desc = "Looks unstable. Best to test it with the clown."
+	desc = "A rift in bluespace opening up to a far away place. Traverse with caution."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "portal"
 	var/mask = "portal_mask"
