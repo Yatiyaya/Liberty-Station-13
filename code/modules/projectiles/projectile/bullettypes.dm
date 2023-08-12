@@ -893,7 +893,7 @@
 	recoil = 6
 
 /obj/item/projectile/bullet/pellet/shotgun/scrap
-		damage_types = list(BRUTE = 4)
+	damage_types = list(BRUTE = 4)
 	base_spread = 90
 	range_step = 8		//projectile will lose a fragment each time it travels this distance.
 	agony = 3
