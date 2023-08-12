@@ -893,10 +893,18 @@
 	recoil = 6
 
 /obj/item/projectile/bullet/pellet/shotgun/scrap
-	damage_types = list(BRUTE = 7.5)
-	affective_damage_range = 4
-	affective_ap_range = 4
-	recoil = 4
+		damage_types = list(BRUTE = 4)
+	base_spread = 90
+	range_step = 8		//projectile will lose a fragment each time it travels this distance.
+	agony = 3
+	pellets = 7
+	range_step = 1
+	spread_step = 10
+	knockback = 0 //We do not knockback do to issues with bullet douping
+	step_delay = 0.9
+	affective_damage_range = 5
+	affective_ap_range = 2
+	recoil = 11
 
 //Railgun
 /obj/item/projectile/bullet/shotgun/railgun
@@ -987,15 +995,17 @@
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	icon_state = "birdshot-1"
-	damage_types = list(BRUTE = 11)
-	agony = 5
-	pellets = 4
+	damage_types = list(BRUTE = 6.5)
+	base_spread = 90
+	range_step = 8		//projectile will lose a fragment each time it travels this distance.
+	agony = 3
+	pellets = 7
 	range_step = 1
 	spread_step = 10
 	knockback = 0 //We do not knockback do to issues with bullet douping
 	step_delay = 0.9
-	affective_damage_range = 2
-	affective_ap_range = 2
+	affective_damage_range = 1
+	affective_ap_range = 8
 	recoil = 11
 
 /obj/item/projectile/bullet/pellet/shotgun/Initialize()
