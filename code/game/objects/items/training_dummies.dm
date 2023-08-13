@@ -158,13 +158,13 @@
 				user.do_attack_animation(src)
 				var/damage = rand(1, I.force * I.structure_damage_factor) // Making it semi-impossible to break
 				playsound(src, dummy_sound, 85, 1) // Prevents sounds that have blood splashes, etc
-				user.visible_message(SPAN_NOTICE("[user] has landed a blow on \the [src] with their [I]!"), SPAN_NOTICE("You landed a blow on \the [src] with your [I]."), "You hear bashing.")
+				user.visible_message(SPAN_NOTICE("[user] has landed a blow on \the [src] with [I]!"), SPAN_NOTICE("You landed a blow on \the [src] with [I]."), "You hear bashing.")
 				if(user && user.stats) // Sanity. Prevents statless mobs from runtiming when adding the task for stats.
 					user.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/martial_prowess, "MARTIAL_ARTS", skill_gained = 1, learner = user)
 				take_damage(damage)
 				user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN * 1.5) // Prevents spam and learning the task too fast
 			else // Keep trying. You'll hit it, eventually.
-				user.visible_message(SPAN_NOTICE("[user] has whiffed their blow on \the [src]."), SPAN_NOTICE("You whiffed your hit on \the [src] with your [I]. Focus and try again."), "You hear the wind being cut.")
+				user.visible_message(SPAN_NOTICE("[user] has whiffed their blow on \the [src]."), SPAN_NOTICE("You whiffed your hit on \the [src]. Focus and try again."), "You hear the wind being cut.")
 				playsound(src, 'sound/weapons/punchmiss.ogg', 50, 1) // Morrowind melee moment
 				user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN * 1.5)
 				return

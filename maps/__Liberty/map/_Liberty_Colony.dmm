@@ -2865,11 +2865,11 @@
 "aKZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/obj/machinery/alarm{
+/obj/effect/floor_decal/spline/fancy,
+/obj/machinery/light_switch{
 	dir = 1;
 	pixel_y = -32
 	},
-/obj/effect/floor_decal/spline/fancy,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -3896,7 +3896,7 @@
 /area/liberty/maintenance/oldpool)
 "aXi" = (
 /obj/machinery/light,
-/obj/machinery/light_switch{
+/obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -32
 	},
@@ -4153,6 +4153,7 @@
 /obj/machinery/conveyor_switch/oneway{
 	id = "bonfire"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "baJ" = (
@@ -5225,6 +5226,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/corner,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -10194,6 +10196,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -15268,6 +15271,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -16263,6 +16267,7 @@
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -17074,6 +17079,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 9
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -32696,6 +32702,7 @@
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "hSU" = (
@@ -39522,6 +39529,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 6
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "jFP" = (
@@ -40398,6 +40406,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 9
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "jQW" = (
@@ -41317,19 +41326,20 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/obj/structure/closet/wall_mounted/firecloset{
-	pixel_y = -32
-	},
-/obj/effect/floor_decal/industrial/warningred,
-/obj/effect/floor_decal/industrial/box/red/corners{
+/obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 8
 	},
-/obj/effect/floor_decal/industrial/box/red/corners{
+/obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 4
 	},
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 1
 	},
+/obj/structure/closet/wall_mounted/emcloset{
+	pixel_y = -32
+	},
+/obj/effect/floor_decal/industrial/warningwhite,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -51991,6 +52001,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks,
 /area/liberty/bonfire/bioreactor)
 "mOZ" = (
@@ -55029,6 +55040,7 @@
 /area/liberty/outside/inside_colony)
 "nBc" = (
 /obj/effect/floor_decal/industrial/loading/white,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "nBo" = (
@@ -55479,7 +55491,8 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/bar)
 "nHb" = (
-/obj/effect/floor_decal/spline/fancy{
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/loading/white{
 	dir = 4
 	},
 /turf/simulated/floor/industrial/greybricks{
@@ -55877,6 +55890,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 5
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "nMM" = (
@@ -57197,6 +57211,7 @@
 /area/liberty/hallway/surface/section1)
 "ody" = (
 /obj/landmark/join/start/forgemaster,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "odC" = (
@@ -61524,6 +61539,7 @@
 /obj/effect/floor_decal/spline/fancy/cee{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -63158,6 +63174,7 @@
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 5
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "pBl" = (
@@ -68724,6 +68741,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -77260,20 +77278,10 @@
 	name = "Security Training"
 	})
 "sRU" = (
-/obj/structure/closet/wall_mounted/emcloset{
-	pixel_y = 32
-	},
 /obj/machinery/conveyor_switch/oneway{
 	convdir = -1;
 	id = "junk_to_bioreactor"
 	},
-/obj/effect/floor_decal/industrial/warningwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/box/white/corners{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/box/white/corners,
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
@@ -78114,6 +78122,16 @@
 	temperature = 80
 	},
 /area/liberty/rnd/server)
+"tcU" = (
+/obj/effect/floor_decal/industrial/loading/white{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/industrial/greybricks{
+	dir = 1
+	},
+/area/liberty/bonfire/bioreactor)
 "tcV" = (
 /obj/structure/bed/chair/office/light,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -78179,6 +78197,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -79191,6 +79210,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -79354,6 +79374,10 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "trZ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -84702,6 +84726,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -85199,6 +85224,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -90485,6 +90511,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 5
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -91681,6 +91708,16 @@
 /area/liberty/quartermaster/miningdock)
 "wtE" = (
 /obj/effect/floor_decal/spline/fancy,
+/obj/effect/floor_decal/industrial/warningred,
+/obj/structure/closet/wall_mounted/firecloset{
+	pixel_y = -32
+	},
+/obj/effect/floor_decal/industrial/box/red/corners{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/box/red/corners{
+	dir = 4
+	},
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -96718,6 +96755,7 @@
 /obj/structure/noticeboard/church{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/bioreactor)
 "xEE" = (
@@ -96760,6 +96798,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/stronghold)
 "xEX" = (
@@ -99056,6 +99095,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks,
 /area/liberty/bonfire/bioreactor)
 "yhc" = (
@@ -99435,6 +99475,10 @@
 /obj/machinery/camera/network/mining,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/shuttle/rocinante_shuttle_area)
+"ylx" = (
+/mob/living/carbon/superior_animal/lord_foog,
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/command/prime)
 "ylB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -196157,7 +196201,7 @@ nrl
 nWs
 bne
 nHb
-nHb
+tcU
 nbo
 trZ
 xIn
@@ -196564,7 +196608,7 @@ jqZ
 jqZ
 vIk
 cuz
-trZ
+bYC
 aKZ
 ttZ
 eLt
@@ -199590,7 +199634,7 @@ ffy
 tUJ
 iNZ
 mWx
-mWx
+ylx
 tUJ
 nsT
 eBu

@@ -838,13 +838,21 @@
 			silent = 0
 			return 1
 		if(health <= death_threshold) //No health = death
-			if(stats.getPerk(PERK_PHOENIX) && prob(33)) //Unless you have this perk
-				heal_organ_damage(20, 20)
-				adjustOxyLoss(-100)
-				AdjustSleeping(rand(20,30))
-				updatehealth()
-				stats.removePerk(PERK_PHOENIX)
-				learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
+			if(stats.getPerk(PERK_PHOENIX)) //Unless you have this perk
+				var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+				if(C && C.active)
+					var/obj/item/cruciform_upgrade/upgrade = C.upgrade
+					if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_PHOENIX_EDICT))
+						var/obj/item/cruciform_upgrade/phoenix_edict/phoenix = upgrade
+						visible_message(SPAN_DANGER("\The [C] burns bright as the sun!"))
+						qdel(phoenix) // Destroy the cruciform upgrade.
+						C.upgrade = null // Set our upgrade to nothing.
+						stats.removePerk(PERK_PHOENIX) // Just in case the perk was not removed by the deletion of the upgrade above.
+						heal_organ_damage(20, 20)
+						adjustOxyLoss(-100)
+						Weaken(5)
+						updatehealth()
+						learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
 			else
 				death()
 				blinded = 1

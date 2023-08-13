@@ -124,6 +124,13 @@
 		if (text)
 			desc = text
 
+/datum/armament/item/disk/hearthcore_upgrades
+	name = "Hearthcore Upgrades Disk"
+	cost = 70
+	discount_increase = 5
+	min_cost = 50
+	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/upgrades
+
 // Personal shield. Only way to obtain, for now.
 /datum/armament/item/sash
 	name = "Shielding sash"
@@ -131,3 +138,10 @@
 	discount_increase = 5
 	min_cost = 80
 	path = /obj/item/shield_projector/line/custodian_aegis
+
+/datum/armament/item/foog_armor
+	name = "Foog Bloodline Armor"
+	cost = 80
+	min_cost = 80
+	discount_increase = 0
+	path = /obj/item/dog_armor

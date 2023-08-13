@@ -235,28 +235,32 @@
 	materials = list(MATERIAL_CARBON_FIBER = 24)
 
 /datum/design/autolathe/cruciform_upgrade/natures_blessing
-	name = "Natures blessing"
+	name = "Nature's blessing"
 	build_path = /obj/item/cruciform_upgrade/natures_blessing
 
-/datum/design/autolathe/cruciform_upgrade/faiths_shield
-	name = "Faiths shield"
-	build_path = /obj/item/cruciform_upgrade/faiths_shield
+/datum/design/autolathe/cruciform_upgrade/blazing_aegis
+	name = "Blazing Aegis"
+	build_path = /obj/item/cruciform_upgrade/blazing_aegis
 
-/datum/design/autolathe/cruciform_upgrade/cleansing_presence
-	name = "Cleansing presence"
-	build_path = /obj/item/cruciform_upgrade/cleansing_presence
+/datum/design/autolathe/cruciform_upgrade/cleansing_flames
+	name = "Cleansing Flames"
+	build_path = /obj/item/cruciform_upgrade/cleansing_flames
 
 /datum/design/autolathe/cruciform_upgrade/martyr_gift
-	name = "Martyr gift"
+	name = "Martyr's gift"
 	build_path = /obj/item/cruciform_upgrade/martyr_gift
 
-/datum/design/autolathe/cruciform_upgrade/wrath_of_god
+/datum/design/autolathe/cruciform_upgrade/burning_fury
 	name = "Wrath of god"
-	build_path = /obj/item/cruciform_upgrade/wrath_of_god
+	build_path = /obj/item/cruciform_upgrade/burning_fury
 
-/datum/design/autolathe/cruciform_upgrade/speed_of_the_chosen
+/datum/design/autolathe/cruciform_upgrade/embers_of_swiftness
 	name = "Speed of the chosen"
-	build_path = /obj/item/cruciform_upgrade/speed_of_the_chosen
+	build_path = /obj/item/cruciform_upgrade/embers_of_swiftness
+
+/datum/design/autolathe/cruciform_upgrade/phoenix_edict
+	name = "Phoenix Edict"
+	build_path = /obj/item/cruciform_upgrade/phoenix_edict
 
 //[/POUCHES]
 /datum/design/bioprinter/pouch

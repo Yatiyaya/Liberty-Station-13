@@ -216,11 +216,12 @@
 #define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
 
 #define CUPGRADE_NATURES_BLESSING /obj/item/cruciform_upgrade/natures_blessing
-#define CUPGRADE_FAITHS_SHIELD /obj/item/cruciform_upgrade/faiths_shield
-#define CUPGRADE_CLEANSING_PSESENCE /obj/item/cruciform_upgrade/cleansing_presence
+#define CUPGRADE_BLAZING_AEGIS /obj/item/cruciform_upgrade/blazing_aegis
+#define CUPGRADE_CLEANSING_PSESENCE /obj/item/cruciform_upgrade/cleansing_flames
 #define CUPGRADE_MARTYR_GIFT /obj/item/cruciform_upgrade/martyr_gift
-#define CUPGRADE_WRATH_OF_GOD /obj/item/cruciform_upgrade/wrath_of_god
-#define CUPGRADE_SPEED_OF_THE_CHOSEN /obj/item/cruciform_upgrade/speed_of_the_chosen
+#define CUPGRADE_BURNING_FURY /obj/item/cruciform_upgrade/burning_fury
+#define CUPGRADE_EMBERS_OF_SWIFTNESS /obj/item/cruciform_upgrade/embers_of_swiftness
+#define CUPGRADE_PHOENIX_EDICT /obj/item/cruciform_upgrade/phoenix_edict
 
 //https://secure.byond.com/docs/ref/info.html#/atom/var/mouse_opacity
 #define MOUSE_OPACITY_TRANSPARENT 0

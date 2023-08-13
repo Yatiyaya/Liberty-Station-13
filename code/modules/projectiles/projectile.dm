@@ -1130,7 +1130,7 @@
 	yo = null
 	xo = null
 	var/result = 0 //To pass the message back to the gun.
-
+	mob_hit_sound = list() // NO SOUND ON HITTING WE ARE SUPPOSED TO NOT EXIST.
 	testing = TRUE
 
 /obj/item/projectile/test/Bump(atom/A as mob|obj|turf|area, forced)

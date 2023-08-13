@@ -9,11 +9,11 @@
 	/obj/item/implant/core_implant/cruciform,
 	/obj/item/cruciform_upgrade,
 	/obj/item/cruciform_upgrade/natures_blessing,
-	/obj/item/cruciform_upgrade/faiths_shield,
-	/obj/item/cruciform_upgrade/cleansing_presence,
+	/obj/item/cruciform_upgrade/blazing_aegis,
+	/obj/item/cruciform_upgrade/cleansing_flames,
 	/obj/item/cruciform_upgrade/martyr_gift,
-	/obj/item/cruciform_upgrade/wrath_of_god,
-	/obj/item/cruciform_upgrade/speed_of_the_chosen
+	/obj/item/cruciform_upgrade/burning_fury,
+	/obj/item/cruciform_upgrade/embers_of_swiftness
 	)
 	var/list/available_slots = list()
 

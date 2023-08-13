@@ -78,6 +78,22 @@
 		/datum/design/bioprinter/custodian_ointment
 	)
 
+// EOTP exclusive disk. For when no Forgemaster and you desperately want Hearthcore upgrades.
+/obj/item/computer_hardware/hard_drive/portable/design/nt/upgrades
+	disk_name = "Custodian Hearthcore Upgrades"
+	desc = "A disk from the lower Stronghold, containing advanced Forgemaster designs for upgrades to be applied to a Hearthcore with powerful effects."
+	icon_state = "custodian_armory"
+	designs = list(
+		/datum/design/autolathe/cruciform_upgrade/cleansing_flames,
+		/datum/design/autolathe/cruciform_upgrade/natures_blessing,
+		/datum/design/autolathe/cruciform_upgrade/embers_of_swiftness,
+		/datum/design/autolathe/cruciform_upgrade/blazing_aegis,
+		/datum/design/autolathe/cruciform_upgrade/burning_fury,
+		/datum/design/autolathe/cruciform_upgrade/martyr_gift,
+		/datum/design/autolathe/cruciform_upgrade/phoenix_edict
+	)
+
+
 // Eris NeoTheo stuff. Mostly imbalanced and should not be accessible by players
 // Leaving it not commented out for adminspawn testing purposes.
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioaugment

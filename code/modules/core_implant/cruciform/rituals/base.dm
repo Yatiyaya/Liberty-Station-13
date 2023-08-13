@@ -40,7 +40,7 @@ datum/ritual/cruciform/base/thumbspire
 	damtype = BURN
 	slot_flags = null
 	attack_verb = list("burnt", "singed")
-	lit = 1
+	lit = TRUE
 	var/mob/living/carbon/holder
 
 /obj/item/flame/custodian_spark/New(var/loc, var/mob/living/carbon/lecturer)

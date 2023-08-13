@@ -32,7 +32,7 @@
 /obj/item/cruciform_upgrade/proc/OnUninstall()
 
 /obj/item/cruciform_upgrade/natures_blessing
-	name = "Natures blessing"
+	name = "Nature's blessing"
 	desc = "This upgrade stabilizes the Faithful and nurtures the plants near the follower. Useful for the aspiring Agrolytes."
 	icon_state = "natures_blessing"
 	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
@@ -68,39 +68,39 @@
 			if(H.getFireLoss() > 50)
 				H.adjustFireLoss(-0.2)
 
-/obj/item/cruciform_upgrade/faiths_shield
-	name = "Faiths shield"
-	desc = "This upgrade will slightly increase a followers resistance to physical and burn damage from any source."
-	icon_state = "faiths_shield"
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 10)
+/obj/item/cruciform_upgrade/blazing_aegis
+	name = "Blazing Aegis"
+	desc = "This upgrade will slightly increase a Custodian's resistance to physical trauma and burns from any source."
+	icon_state = "blazing_aegis"
+	matter = list(MATERIAL_CARBON_FIBER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 10)
 	var/shield_mod = 0.1
 
-/obj/item/cruciform_upgrade/faiths_shield/OnInstall(var/disciple, var/_cruciform)
+/obj/item/cruciform_upgrade/blazing_aegis/OnInstall(var/disciple, var/_cruciform)
 	..()
 	wearer.species.brute_mod -= shield_mod
 	wearer.species.burn_mod -= shield_mod
 
-/obj/item/cruciform_upgrade/faiths_shield/OnUninstall()
+/obj/item/cruciform_upgrade/blazing_aegis/OnUninstall()
 	..()
 	wearer.species.brute_mod += shield_mod
 	wearer.species.burn_mod += shield_mod
 
-/obj/item/cruciform_upgrade/cleansing_presence
-	name = "Cleansing presence"
-	desc = "This upgrade cleans tiles that the follower walks upon. Will slowly cause space vines and maint-shrooms to wither and die in the follower’s presence. Useful for the cleanly."
-	icon_state = "cleansing_presence"
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_SILVER = 5, MATERIAL_PLASTEEL = 5)
+/obj/item/cruciform_upgrade/cleansing_flames
+	name = "Cleansing Flames"
+	desc = "This upgrade cleans tiles that the Custodian walks upon. Will slowly cause space vines and maint-shrooms to wither and die in the follower's presence."
+	icon_state = "cleansing_flames"
+	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_SILVER = 5, MATERIAL_PLASTEEL = 5)
 	var/area_radius = 5
 
-/obj/item/cruciform_upgrade/cleansing_presence/OnInstall(var/disciple, var/_cruciform)
+/obj/item/cruciform_upgrade/cleansing_flames/OnInstall(var/disciple, var/_cruciform)
 	..()
 	START_PROCESSING(SSobj, src)
 
-/obj/item/cruciform_upgrade/cleansing_presence/OnUninstall()
+/obj/item/cruciform_upgrade/cleansing_flames/OnUninstall()
 	..()
 	STOP_PROCESSING(SSobj, src)
 
-/obj/item/cruciform_upgrade/cleansing_presence/Process()
+/obj/item/cruciform_upgrade/cleansing_flames/Process()
 	wearer.clean_blood()
 	var/list/affected = range(area_radius, src)
 	for(var/obj/effect/plant/shroom in affected)
@@ -109,21 +109,21 @@
 			shroom.check_health()
 
 /obj/item/cruciform_upgrade/martyr_gift
-	name = "Martyrs gift"
-	desc = "This upgrade causes a follower to cause a healing burst upon dying. It will heal for a massive amount to all humanoid creatures, even those without cruciforms. However, in process of doing so, this upgrade destroys itself."
+	name = "Martyr's gift"
+	desc = "This upgrade causes a Custodian to cause a healing burst upon dying. It will heal for a massive amount to all humanoid creatures, even those without hearthcores. However, in the process of doing so, this upgrade destroys itself."
 	icon_state = "martyr_gift"
 	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5, MATERIAL_PLASMA = 5)
 	var/damage_healed = 50 //Heals everyone and every mob around it
 
-/obj/item/cruciform_upgrade/wrath_of_god
-	name = "Wrath of god"
-	desc = "This upgrade make the follower deal more damage in melee, but also receive a slightly more damage from almost all sources."
-	icon_state = "wrath_of_god"
+/obj/item/cruciform_upgrade/burning_fury
+	name = "Burning Fury"
+	desc = "The flame that burns twice as bright burns half as long. This upgrade make the follower deal more damage in melee, but also receive a slightly more damage from almost all sources."
+	icon_state = "burning_fury"
 	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 15)
-	var/damage_mod = 0.1 //10% more damage in melee attacking
-	var/receive_damage_mod = 0.2 //20% more damage form all sources other then clone
+	var/damage_mod = 0.2 //20% more damage in melee attacking
+	var/receive_damage_mod = 0.2 //20% more damage form all sources other than clone
 
-/obj/item/cruciform_upgrade/wrath_of_god/OnInstall(var/disciple, var/_cruciform)
+/obj/item/cruciform_upgrade/burning_fury/OnInstall(var/disciple, var/_cruciform)
 	..()
 	wearer.damage_multiplier += damage_mod
 	wearer.species.brute_mod += receive_damage_mod
@@ -132,7 +132,7 @@
 	wearer.species.toxins_mod += receive_damage_mod
 	wearer.species.radiation_mod += receive_damage_mod
 
-/obj/item/cruciform_upgrade/wrath_of_god/OnUninstall()
+/obj/item/cruciform_upgrade/burning_fury/OnUninstall()
 	..()
 	wearer.damage_multiplier -= damage_mod
 	wearer.species.brute_mod -= receive_damage_mod
@@ -141,9 +141,26 @@
 	wearer.species.toxins_mod -= receive_damage_mod
 	wearer.species.radiation_mod -= receive_damage_mod
 
-/obj/item/cruciform_upgrade/speed_of_the_chosen
-	name = "Angel Aclarity"
-	desc = "This upgrade increases the movement speed of the follower."
-	icon_state = "speed_of_the_chosen"
-	matter = list(MATERIAL_BIOMATTER = 120, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
+/obj/item/cruciform_upgrade/embers_of_swiftness
+	name = "Embers of Swiftness"
+	desc = "This upgrade increases the movement speed of the Custodian."
+	icon_state = "embers_swiftness"
+	matter = list(MATERIAL_BIO_SILK = 70, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 10, MATERIAL_GOLD = 3, MATERIAL_PLASMA = 1)
 	var/speed_increase = 0.1 //10% faster, stacks with other sorces so its to be balanced with that
+
+/obj/item/cruciform_upgrade/phoenix_edict
+	name = "Phoenix Edict"
+	desc = "This upgrade is a powerful limiter removal that allows a Custodian to resucitate instantly after death. \
+			The massive strain on the Hearthcore, however, vaporizes the upgrade once used."
+	icon_state = "cruciform_upgrade" // Placeholder.
+	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_PLATINUM = 10) // Rare and costly
+
+
+/obj/item/cruciform_upgrade/phoenix_edict/OnInstall(var/disciple, var/_cruciform)
+	..()
+	wearer.stats.addPerk(PERK_PHOENIX)
+
+/obj/item/cruciform_upgrade/cleansing_flames/OnUninstall()
+	..()
+	wearer.stats.removePerk(PERK_PHOENIX)
+

@@ -578,35 +578,22 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
-/datum/custodian_blueprint/medium/knight
-	name = "Vassal Automaton"
-	build_path = /mob/living/carbon/superior_animal/robot/church/knight
-	materials = list(
-		/obj/item/tool/sword/custodian/shortsword = 1,
-		/obj/item/stack/cable_coil = 20,
-		/obj/item/book/ritual/hearthlantern = 1,
-		/obj/item/stack/mold_kit/tailoring = 2,
-		/obj/item/stack/mold_kit/masonry = 1,
-		/obj/item/stack/mold_kit/blacksmithing = 1,
-	)
-	build_time = 20 SECONDS //We dont want to make these in combat
-
 /datum/custodian_blueprint/medium/natures_blessing
-	name = "Hearthcore: Nature's Blessing Upgrade"
+	name = "Hearthcore Upgrade - \"Nature's Blessing\""
 	build_path = /obj/item/cruciform_upgrade/natures_blessing
 	materials = list(
+		/obj/item/stack/material/biomatter = 100,
 		/obj/item/stack/material/plasteel = 5,
-		/obj/item/stack/material/biopolymer_silk = 120,
 		/obj/item/stack/material/gold = 5
 	)
 	build_time = 8 SECONDS
 
-/datum/custodian_blueprint/medium/cleansing_presence
-	name = "Hearthcore: Cleansing Presence Upgrade"
-	build_path = /obj/item/cruciform_upgrade/cleansing_presence
+/datum/custodian_blueprint/medium/cleansing_flames
+	name = "Hearthcore Upgrade - \"Cleansing Flames\""
+	build_path = /obj/item/cruciform_upgrade/cleansing_flames
 	materials = list(
-		/obj/item/stack/material/plasteel = 10,
-		/obj/item/stack/material/biopolymer_silk = 70,
+		/obj/item/stack/material/biopolymer_silk = 50,
+		/obj/item/stack/material/plasteel = 5,
 		/obj/item/stack/material/silver = 5
 	)
 	build_time = 8 SECONDS
@@ -637,55 +624,41 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 15 SECONDS
 
-/datum/custodian_blueprint/strong/rook
-	name = "Suzerain Automaton"
-	build_path = /mob/living/carbon/superior_animal/robot/church/rook
+/datum/custodian_blueprint/strong/blazing_aegis
+	name = "Hearthcore Upgrade - \"Blazing Aegis\""
+	build_path = /obj/item/cruciform_upgrade/blazing_aegis
 	materials = list(
-		/obj/item/stack/material/diamond = 1,
-		/obj/item/book/ritual/hearthlantern = 1,
-		/obj/item/stack/cable_coil = 30,
-		/obj/item/stack/material/gold = 6,
-		/obj/item/stack/mold_kit/radiance_sigil = 1,
-		/obj/item/stack/mold_kit/blacksmithing = 5,
-		/obj/item/stack/mold_kit/masonry = 3,
-		/obj/item/stack/mold_kit/tailoring = 2,
-	)
-	build_time = 20 SECONDS //We dont want to make these in combat
-
-/datum/custodian_blueprint/strong/faiths_shield
-	name = "Hearthcore Faiths shield Upgrade"
-	build_path = /obj/item/cruciform_upgrade/faiths_shield
-	materials = list(
-		/obj/item/stack/material/plasteel = 15,
-		/obj/item/stack/material/biopolymer_silk = 120,
+		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/carbon_fiber = 100,
 		/obj/item/stack/material/gold = 5
 	)
 	build_time = 8 SECONDS
 
 /datum/custodian_blueprint/strong/martyr_gift
-	name = "Hearthcore Martyr Gift Upgrade"
+	name = "Hearthcore Upgrade - \"Martyr's Gift\""
 	build_path = /obj/item/cruciform_upgrade/martyr_gift
 	materials = list(
-		/obj/item/stack/material/plasteel = 15,
-		/obj/item/stack/material/biopolymer_silk = 120,
+		/obj/item/stack/material/plasteel = 5,
+		/obj/item/stack/material/biomatter = 100, // Heals, thus, biomatter.
 		/obj/item/stack/material/gold = 5,
-		/obj/item/stack/material/plasma = 10
+		/obj/item/stack/material/plasma = 5
 	)
 	build_time = 8 SECONDS
 
 /datum/custodian_blueprint/strong/wrath_of_god
-	name = "Hearthcore Wrath of god Upgrade"
-	build_path = /obj/item/cruciform_upgrade/wrath_of_god
+	name = "Hearthcore Upgrade - \"Burning Fury\""
+	build_path = /obj/item/cruciform_upgrade/burning_fury
 	materials = list(
 		/obj/item/stack/material/plasteel = 10,
-		/obj/item/stack/material/biopolymer_silk = 70,
+		/obj/item/stack/material/biopolymer_silk = 50,
+		/obj/item/stack/material/carbon_fiber = 50,
 		/obj/item/stack/material/silver = 5
 	)
 	build_time = 8 SECONDS
 
-/datum/custodian_blueprint/strong/speed_of_the_chosen
-	name = "Hearthcore Speed of the chosen Upgrade"
-	build_path = /obj/item/cruciform_upgrade/speed_of_the_chosen
+/datum/custodian_blueprint/strong/embers_of_swiftness
+	name = "Hearthcore Upgrade - \"Embers of Swiftness\""
+	build_path = /obj/item/cruciform_upgrade/embers_of_swiftness
 	//Speed is king, so we requires a kings randsom to make!
 	materials = list(
 		/obj/item/stack/material/plasteel = 10,
@@ -696,74 +669,15 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 8 SECONDS
 
-/*
-//For making mobs
-/datum/custodian_blueprint/mob
-
-/datum/custodian_blueprint/mob/pawn
-	name = "Pawn Golem"
-	build_path = /mob/living/carbon/superior_animal/robot/church/pawm
+/datum/custodian_blueprint/strong/phoenix_edict
+	name = "Hearthcore Upgrade - \"Phoenix Edict\""
+	build_path = /obj/item/cruciform_upgrade/phoenix_edict
 	materials = list(
-		/obj/item/stack/material/steel = 10,
-		/obj/item/stack/material/plastic = 5,
-		/obj/item/stack/material/silver = 8,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stack/material/plasteel = 3,
-		/obj/item/stack/material/biopolymer_silk = 15,
-		/obj/item/tool/sword/custodian/horseaxe = 1,
-		/obj/item/tool/sword/custodian/shortsword = 1,
-		/obj/item/paper = 1 //Limiting factor
-	)
-	build_time = 1 SECONDS //We do want to mid-comat summan these
-
-/datum/custodian_blueprint/mob/bishop
-	name = "Bishop Golem"
-	build_path = /mob/living/carbon/superior_animal/robot/church/bishop
-	materials = list(
-		/obj/item/stack/material/steel = 15,
-		/obj/item/stack/material/plastic = 15,
-		/obj/item/stack/material/gold = 8,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stack/material/plasteel = 10,
-		/obj/item/stack/material/biopolymer_silk = 60,
-		/obj/item/book/ritual/hearthlantern/priest = 1 //Limiting factor
-	)
-	build_time = 60 SECONDS //These need a lot of prep
-
-//Notice: We don't use them on Soj but its kept here for posterity. -Kaz
-//cloner
-
-/datum/custodian_blueprint/machinery/cloner
-	name = "Cloner Pod"
-	build_path = /obj/machinery/neotheology/cloner
-	materials = list(
-		/obj/item/stack/material/glass = 15,
-		/obj/item/stack/material/plasteel = 10,
-		/obj/item/stack/material/gold = 5,
-		/obj/item/stack/material/glass/reinforced = 10,
-	)
-	build_time = 10 SECONDS
-
-/datum/custodian_blueprint/machinery/reader
-	name = "Cruciform Reader"
-	build_path = /obj/machinery/neotheology/reader
-	materials = list(
-		/obj/item/stack/material/steel = 10,
-		/obj/item/stack/material/plasteel = 5,
-		/obj/item/stack/material/silver = 10,
-		/CRUCIFORM_TYPE = 1
-	)
-	build_time = 10 SECONDS
-
-/datum/custodian_blueprint/machinery/biocan
-	name = "Biomass tank"
-	build_path = /obj/machinery/neotheology/biomass_container
-	materials = list(
-		/obj/item/stack/material/gold = 5,
-		/obj/item/stack/material/plasteel = 5,
-		/obj/structure/reagent_dispensers/scorch/large = 1
+		/obj/item/stack/material/biomatter = 100,
+		/obj/item/stack/material/biopolymer_silk = 50,
+		/obj/item/stack/material/carbon_fiber = 50,
+		/obj/item/stack/material/platinum = 10
 	)
 	build_time = 8 SECONDS
-*/
 
 #undef CRUCIFORM_TYPE
