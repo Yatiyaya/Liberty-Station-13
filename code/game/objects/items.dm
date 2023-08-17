@@ -667,7 +667,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 //Soj cringe
 
 /obj/item/proc/verb_alt_mode_activeate()
-	set name = "Weapon: Toggle Nonlethal Mode"
+	set name = "Weapon: Toggle Alt Mode" //Not all alt modes are nonlethal
 	set category = "Object"
 	set src in usr
 
