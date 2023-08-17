@@ -49,7 +49,7 @@ Bullet also tend to have more armor against them do to this and can be douged un
 
 /obj/item/projectile/bullet/check_penetrate(var/atom/A)
 	var/datum/penetration_holder/holder = penetration_holder
-	if(!A || !A.density)
+	if((!A || !A.density) && !istype(A, /obj/item/shield))
 		return TRUE //if whatever it was got destroyed when we hit it, then I guess we can just keep going
 
 	if(istype(A, /obj/mecha))
@@ -83,7 +83,7 @@ Bullet also tend to have more armor against them do to this and can be douged un
 	else if(istype(A, /obj/machinery) || istype(A, /obj/structure))
 		chance = damage
 
-	if(prob(chance) || (A in holder.force_penetration_on))
+	if(prob(chance) || (A in holder.force_penetration_on)) // TODO!: Sometimes holder is nulled before this check and runtimes, find out why
 		if(A.opacity || istype(A, /obj/item/shield))
 			//display a message so that people on the other side aren't so confused
 			A.visible_message(SPAN_WARNING("\The [src] pierces through \the [A]!"))

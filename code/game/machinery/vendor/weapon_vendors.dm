@@ -190,7 +190,7 @@
 	product_ads = "Toil!;Perfect yourself!;Through discipline shall we prosper!;Enlighten yourself!;Seek a better life!;Better living through self improvement!"
 	icon_state = "teomat"
 	vendor_department = DEPARTMENT_CHURCH
-	products = list(/obj/item/book/ritual/hearthlantern = 10,
+	products = list(/obj/item/book/lectures/hearthlantern = 10,
 					/obj/item/storage/fancy/candle_box = 10,
 					/obj/item/soap/bonfire = 5,
 					/obj/item/storage/wallet = 5,
@@ -212,7 +212,7 @@
 					/obj/item/tool/sword/custodian/shortsword = 3,)
 	contraband = list(/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
-	prices = list(/obj/item/book/ritual/hearthlantern = 5,
+	prices = list(/obj/item/book/lectures/hearthlantern = 5,
 					/obj/item/storage/fancy/candle_box = 30,
 					/obj/item/soap/bonfire = 50,
 					/obj/item/storage/wallet = 15,
@@ -240,7 +240,7 @@
 	var/bingo = TRUE //SoJ tweak, were always true, sadly for us church likes non-churchies (lame I know)
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(is_neotheology_disciple(H))
+		if(is_custodian_of_bonfire(H))
 			bingo = TRUE
 
 		else if(istype(H.get_active_hand(), /obj/item/forgesigil))

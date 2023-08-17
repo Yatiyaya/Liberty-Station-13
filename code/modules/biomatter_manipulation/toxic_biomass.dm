@@ -12,7 +12,7 @@
 
 //this proc spill some biomass on the floor
 //dirs_to_spread - list with dirs where biomass should expand after creation
-/proc/spill_biomass(turf/target_location, var/dirs_to_spread = null)
+/proc/spill_scorch(turf/target_location, var/dirs_to_spread = null)
 	if(locate(/obj/effect/decal/cleanable/scorch_puddle) in target_location)
 		return
 	new /obj/effect/decal/cleanable/scorch_puddle/aoe(target_location)
@@ -37,7 +37,7 @@
 /obj/effect/decal/cleanable/scorch_puddle
 	name = "scorch puddle"
 	desc = "A dangerous scorch puddle, incredibly hot to the touch and dangerous to those not wearing protective gear."
-	icon = 'icons/obj/bioreactor_misc.dmi'
+	icon = 'icons/obj/bonfire_misc.dmi'
 	icon_state = "scorch-1"
 	anchored = TRUE
 	layer = TURF_LAYER + 0.6

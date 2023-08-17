@@ -1001,13 +1001,13 @@
 /area/liberty/crew_quarters/skyyard
 	name = "\improper Junk Sky Field Teleporter"
 	icon_state = "erisyellow"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 // Custodians of Bonfire
 
 /area/liberty/bonfire
 	icon_state = "erisgreen"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/stronghold
 	name = "\improper Stronghold"
@@ -1018,24 +1018,24 @@
 /area/liberty/bonfire/storage
 	name = "\improper Stronghold Storage Wing"
 	icon_state = "erisyellow"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/bioreactor
 	name = "\improper Stronghold Workshop"
 	icon_state = "erisblue"
 	ambience = list('sound/ambience/stronghold.ogg')
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/vectorrooms
 	name = "\improper Stronghold Living Quarters"
 	icon_state = "erisblue"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
 	icon_state = "chapeloffice"
 	ambience = list('sound/ambience/stronghold.ogg')
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
 /area/liberty/bonfire/forge
 	name = "Stronghold Forge"

@@ -144,9 +144,22 @@
 
 /mob/living/carbon/superior_animal/liberty/corrupted_custodian
 	name = "Pollinated DarkSilver Turret"
-	desc = "A  strange amalgamation of flesh and exotic flora, the corpse belonging to a Custodian knight or Dark Silver armored mercenary. The Hearthcore of the deceased tries to fight back against the usurper, reflecting blue plasma everywhere. There is no brain control as far you can see."
+	desc = "A strange amalgamation of flesh and exotic flora, the corpse belonging to a Custodian knight or Dark Silver armored mercenary. The Hearthcore of the deceased tries to fight back against the usurper, reflecting blue plasma everywhere. There is no brain control as far you can see."
 	icon_state = "neurophyta_custodianturret"
 	icon_dead = "neurophyta_custodianturret_dead"
+	// No modifiers that say muscle or something, and no Aggressive as that would make it chase after people
+	allowed_stat_modifiers = list(
+		/datum/stat_modifier/mob/living/carbon/superior_animal/durable = 5,
+		/datum/stat_modifier/health/flat/negative/low = 5,
+		/datum/stat_modifier/health/flat/positive/low = 5,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/armor/mult/negative/low = 5,
+		/datum/stat_modifier/mob/living/damage/negative/mixed/flat/low = 5,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/deadeye = 5,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/slowaimed = 5,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/triggerfinger = 15,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/quickdraw = 5,
+		/datum/stat_modifier/mob/living/carbon/superior_animal/slowdraw = 10,
+	)
 
 	range_telegraph = "takes aim at"
 	ranged = TRUE
@@ -155,5 +168,12 @@
 	ranged_cooldown = 3
 	projectiletype = /obj/item/projectile/flamer_lob		//For funny burning
 	projectilesound = 'sound/weapons/energy/vaporize.ogg'
+	wander = FALSE // Don't move from your spot, you are a turret
+	advance = FALSE // Don't chase after people
+	advance_if_cant_see = FALSE // If they go out of sight, don't go after them
+	wander_if_lost_sight = FALSE // We are a turret, we don't move
+	move_to_delay = 10000		// Keeping this just in case it somehow still moves.
 
-	move_to_delay = 10000		//Someone needs to properly somehow set this thing as unable to move. Not sure how to do this off-hand in a rush like this.
+/mob/living/carbon/superior_animal/liberty/corrupted_custodian/advance_towards(var/atom/target)
+	return // Don't move from your spot even if you target, you are a turret
+

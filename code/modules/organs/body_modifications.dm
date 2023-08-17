@@ -81,7 +81,7 @@ var/global/list/modifications_types = list(
 				to_chat(usr, "This body-mod does not match your highest-priority department.")
 				return FALSE
 
-	if(!allow_nt && H?.get_core_implant(/obj/item/implant/core_implant/cruciform))
+	if(!allow_nt && H?.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		to_chat(usr, "Your hearthcore prevents you from using this modification.")
 		return FALSE
 

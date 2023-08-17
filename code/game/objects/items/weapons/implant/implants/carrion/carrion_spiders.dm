@@ -9,7 +9,7 @@
 	icon = 'icons/obj/carrion_spiders.dmi'
 	icon_state = "spiderling"
 	allowed_organs = list(BP_HEAD, BP_CHEST, BP_GROIN)
-	cruciform_resist = TRUE
+	hearthcore_resist = TRUE
 	var/hidden = FALSE
 	var/ready_to_attack = FALSE
 	var/spider_price = 15

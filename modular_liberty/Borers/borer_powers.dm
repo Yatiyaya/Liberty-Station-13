@@ -83,7 +83,7 @@
 	var/infestation_delay = 2.5 SECONDS
 
 	// It's harder for a borer to infest NTs
-	if(is_neotheology_disciple(M))
+	if(is_custodian_of_bonfire(M))
 		to_chat(src, SPAN_DANGER("A nanofiber mesh implant inside [M]'s head tries to cut you off on your way in. You can work around it, but it will take time."))
 		infestation_delay *= 3
 

@@ -106,7 +106,7 @@
 		),
 		"Wine" = list(
 			/obj/item/reagent_containers/food/drinks/cans/cahors/cargo,
-			/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo
+			/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo
 		),
 		"Seeds and Exodic Seeds" = list(
 			/obj/item/seeds/chiliseed,
@@ -145,8 +145,8 @@
 /obj/item/reagent_containers/food/drinks/cans/cahors/cargo/New()
 	price_tag = 60
 
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo
 	price_tag = 1200
 
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo/New()
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo/New()
 	price_tag = 100

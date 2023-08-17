@@ -152,12 +152,12 @@
 	return
 
 /obj/structure/training_dummy/attackby(obj/item/I as obj, mob/living/user as mob)
-	if(user.a_intent == I_HURT && user.Adjacent(src))
-		if(!(I.flags & NOBLUDGEON) || I.force <= WEAPON_FORCE_NORMAL) // Prevents using stupid things to train with it
+	if(!user.a_intent == I_HELP && user.Adjacent(src)) // Makes disarm intent practice with practice weapons possible.
+		if(!I.force <= WEAPON_FORCE_NORMAL || !(I.flags & NOBLUDGEON)) // Prevents using stupid things to train with it
 			if(prob(40 + user.stats.getStat(STAT_ROB))) // Yes we can totally fail an attack on a stationary dummy. Balance purposes too.
 				user.do_attack_animation(src)
 				var/damage = rand(1, I.force * I.structure_damage_factor) // Making it semi-impossible to break
-				playsound(src, dummy_sound, 85, 1) // Prevents sounds that have blood splashes, etc
+				playsound(src, dummy_sound, 60, 1) // Prevents sounds that have blood splashes, etc
 				user.visible_message(SPAN_NOTICE("[user] has landed a blow on \the [src] with [I]!"), SPAN_NOTICE("You landed a blow on \the [src] with [I]."), "You hear bashing.")
 				if(user && user.stats) // Sanity. Prevents statless mobs from runtiming when adding the task for stats.
 					user.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/martial_prowess, "MARTIAL_ARTS", skill_gained = 1, learner = user)

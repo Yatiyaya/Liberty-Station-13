@@ -168,8 +168,8 @@
 	name = "Combat Mace"
 	desc = "A heavy Combat Mace reinforced with plasteel, a design seen commonly in the galaxy in hands of almost anyone with competent welding skills."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "Combat_mace"
-	item_state = "Combat_mace"
+	icon_state = "combat_mace"
+	item_state = "combat_mace"
 	matter = list(MATERIAL_STEEL = 10)
 	price_tag = 30
 	effective_faction = list("spider") // Spiders are weak to crushing.

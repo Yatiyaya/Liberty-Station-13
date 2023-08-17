@@ -1,4 +1,4 @@
-// Lord Foog The Third, departmental pet of the Custodians of Bonfire.
+// Lord Foog The Third, departmental pet of the Custodians of Bonfire and loyal pet of the Oathpledge.
 
 /mob/living/carbon/superior_animal/lord_foog
 	name = "Lord Foog"
@@ -15,35 +15,68 @@
 	move_to_delay = 2
 	follow_distance = 2
 	target_dummy = TRUE
-	can_burrow = FALSE // Testing with this off has been hilarious, but no.
+	can_burrow = FALSE // I forgot to assign this and it was hilarious on testing, but no.
 	see_in_dark = 10
 	maxHealth = 400
 	health = 400
 	melee_damage_lower = 30
 	melee_damage_upper = 40
 	stop_automated_movement_when_pulled = TRUE
-	sanity_damage = -5 // As with every aspect of Custodians, boosts morale and calms insanity.
-	obey_friends = TRUE // We only respond to the Oathpledge.
+	sanity_damage = -5 // As with every aspect of Custodians, boosts morale and keeps insanity at bay.
+	obey_friends = TRUE // We only respond to the Oathpledge, and those they ordain to.
 	friendly_to_colony = TRUE
 	colony_friend = TRUE
 	cold_protection = TRUE // Long hair, tundra dog
 	reagent_immune = TRUE
+	pixel_x = 0
+	pixel_y = 0
+	default_pixel_x = 0
+	default_pixel_y = 0
 	known_languages = list(LANGUAGE_COMMON) // Sanity purposes
 	mob_classification = CLASSIFICATION_ORGANIC // Does this even modify anything?
+	follow_message = "perks up his ears and starts following you."
+	stop_message = "huffs, stopping in place."
+	deathmessage = "whimpers in agony, its knees trembling before falling to the ground, quiet and lifeless."
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
 	var/list/true_boss = list() // The only one who can assign new followers
 	var/mob/living/carbon/human/owner // Holder of the human friend mob
 	var/befriend_job = "Oathpledge" // The title of the job we can befriend. From simplemob code.
+	var/weapon = null // Used when armored so that it drops the sword it holds on its maw.
+	var/deathsound = 'sound/effects/creatures/foog_death.ogg' // The sound we make once dead. Used only once then nulled, hence the need for the var.
+
+/mob/living/carbon/superior_animal/lord_foog/New(loc)
+	..(loc)
+	pixel_x = 0
+	pixel_y = 0
+	default_pixel_x = 0
+	default_pixel_y = 0
+	stats.addPerk(PERK_TERRIBLE_FATE) // His death is demoralizing to all Custodians. Or people with feelings.
 
 /mob/living/carbon/superior_animal/lord_foog/Life()
 	..()
 	if(owner)
 		check_owner_health()
 
+/mob/living/carbon/superior_animal/lord_foog/death()
+	..()
+	if(deathsound)
+		playsound(loc, deathsound, 50, 1) // Pain peko
+		deathsound = null // So that it doesn't cry again, while dead, when gibbed/butchered
+	if(weapon)
+		new weapon (src.loc)
+		weapon = null // So that butchering him doesn't dupe a sword.
+
 /mob/living/carbon/superior_animal/lord_foog/doTargetMessage()
 	. = ..()
 	visible_emote("growls sharply in warning!")
 	playsound(src, 'sound/effects/creatures/foog_growl.ogg', 50, 0, -3)
+
+/mob/living/carbon/superior_animal/lord_foog/examine(mob/user)
+	..()
+	// Display a very necessary tooltip so that people don't have to codedive for this
+	to_chat(user, SPAN_NOTICE("Say \"Obey\" followed by a character's name to have him obey that person's \"Follow\" and \"Stop\" commands \
+								or \"Ignore\" (name) to remove them from the list of people he obeys. You must first use the \
+								\"Become Friends\" verb via right click for him to obey you. Only Oathpledge can use said verb."))
 
 /mob/living/carbon/superior_animal/lord_foog/UnarmedAttack(atom/A, proximity)
 	if(isliving(A))
@@ -59,18 +92,28 @@
 /mob/living/carbon/superior_animal/lord_foog/attackby(obj/item/I, mob/living/user, params)
 	..()
 	if(istype(I, /obj/item/dog_armor))
-		var/old_friends = src.friends.Copy()
-		var/old_owner = src.owner
-		var/the_boss = list(src.true_boss)
-		var/old_health = src.health // If he was hurt before this, carry over the previous Foog's CURRENT health value
-		to_chat(user, SPAN_NOTICE("You apply \the [I] to [src]. He huffs in approval, clutching the blade on his muzzle."))
-		var/mob/living/carbon/superior_animal/lord_foog/editme = new /mob/living/carbon/superior_animal/lord_foog/armored(src.loc)
-		editme.friends += old_friends // Carry over our friends list
-		editme.owner = old_owner // Respect our previous owner
-		editme.true_boss = the_boss // He is the true (Big) Boss.
-		editme.health = old_health
-		qdel(src)
-		qdel(I)
+		if(stat != DEAD)
+			var/old_friends = src.friends.Copy()
+			var/old_owner = src.owner
+			var/the_boss = list(src.true_boss)
+			var/old_health_perc = round((src.health * 100) / src.maxHealth, 1) // If he was hurt before this, carry over the previous Foog's CURRENT health percentage...
+			to_chat(user, SPAN_NOTICE("You apply the [I] to [src]. He huffs in approval, clutching the blade on his muzzle."))
+			var/mob/living/carbon/superior_animal/lord_foog/editme = new /mob/living/carbon/superior_animal/lord_foog/armored(src.loc)
+			editme.stats.addPerk(PERK_TERRIBLE_FATE)
+			editme.pixel_x = 0
+			editme.pixel_y = 0
+			editme.default_pixel_x = 0 // I hate this but for some reason, the dog starts at x-7 and some extra so just to make sure
+			editme.default_pixel_y = 0
+			editme.friends += old_friends // Carry over our friends list
+			editme.owner = old_owner // Respect our previous owner
+			editme.true_boss = the_boss // He is the true (Big) Boss.
+			editme.adjustBruteLoss(round(editme.maxHealth - (editme.maxHealth * (old_health_perc / 100)))) // ...And apply the same total health percentage as BRUTE DAMAGE to our current health.
+			editme.updatehealth() // This is for examine text purposes.
+			qdel(src)
+			qdel(I)
+		else
+			to_chat(user, SPAN_WARNING("He is not a Cid. It is pointless to don the armor on a dead dog."))
+			return
 
 /mob/living/carbon/superior_animal/lord_foog/proc/check_owner_health()
 	if(get_dist(src, owner) >= 2)
@@ -111,7 +154,7 @@
 
 	if(ishuman(usr))
 		var/mob/living/carbon/human/H = usr
-		if(H.job == befriend_job && H.get_core_implant(/obj/item/implant/core_implant/cruciform)) // Needs a functional hearthcore installed, no cheesing
+		if(H.job == befriend_job && H.get_core_implant(/obj/item/implant/core_implant/hearthcore)) // Needs a functional hearthcore installed, no cheesing
 			friends += usr // We are part of the list, required for him to obey our commands
 			owner = usr // We are the one they cling to emotionally
 			true_boss += usr // Acknowledge us as the one that can assign more friends for the dog to follow
@@ -120,7 +163,7 @@
 			playsound(loc, 'sound/voice/bark2.ogg', 50, 1)
 			return
 
-	to_chat(usr, SPAN_NOTICE("[src] tilts his head to the side, totally ignoring your unworthiness."))
+	to_chat(usr, SPAN_NOTICE("[src] snubs at you, turning his muzzle away, ignoring your unworthiness."))
 	return
 
 /mob/living/carbon/superior_animal/lord_foog/armored
@@ -138,4 +181,6 @@
 	cold_protection = TRUE
 	heat_protection = TRUE // Fireproof armor
 	attacktext = "slashed"
+	attack_sound = 'sound/weapons/renderslash.ogg' // Sword on his mouth.
+	weapon = /obj/item/tool/sword/custodian/shortsword
 

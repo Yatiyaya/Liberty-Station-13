@@ -364,10 +364,10 @@ var/const/NO_EMAG_ACT = -50
 	group = "greenone"
 	icon_state = "id_hydro"
 
-/obj/item/card/id/chaplain
+/obj/item/card/id/oathpledge
 	icon_state = "id_chaplain"
 
-/obj/item/card/id/church
+/obj/item/card/id/bonfire
 	icon_state = "id_nt"
 
 /obj/item/card/id/black

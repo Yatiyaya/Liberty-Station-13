@@ -839,13 +839,13 @@
 			return 1
 		if(health <= death_threshold) //No health = death
 			if(stats.getPerk(PERK_PHOENIX)) //Unless you have this perk
-				var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+				var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 				if(C && C.active)
-					var/obj/item/cruciform_upgrade/upgrade = C.upgrade
+					var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
 					if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_PHOENIX_EDICT))
-						var/obj/item/cruciform_upgrade/phoenix_edict/phoenix = upgrade
+						var/obj/item/hearthcore_upgrade/phoenix_edict/phoenix = upgrade
 						visible_message(SPAN_DANGER("\The [C] burns bright as the sun!"))
-						qdel(phoenix) // Destroy the cruciform upgrade.
+						qdel(phoenix) // Destroy the Hearthcore upgrade.
 						C.upgrade = null // Set our upgrade to nothing.
 						stats.removePerk(PERK_PHOENIX) // Just in case the perk was not removed by the deletion of the upgrade above.
 						heal_organ_damage(20, 20)
@@ -966,9 +966,9 @@
 
 	// now handle what we see on our screen
 
-	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C)
-		var/datum/core_module/cruciform/neotheologyhud/NT_hud = C.get_module(/datum/core_module/cruciform/neotheologyhud)
+		var/datum/core_module/hearthcore/neotheologyhud/NT_hud = C.get_module(/datum/core_module/hearthcore/neotheologyhud)
 		if(NT_hud)
 			NT_hud.update_crucihud()
 

@@ -48,13 +48,13 @@
 
 //RITUAL HOLDER
 
-/datum/core_module/rituals
+/datum/core_module/lectures
 	unique = TRUE
-	var/list/module_rituals = list()
+	var/list/module_lectures = list()
 	implant_type = /obj/item/implant/core_implant
 
-/datum/core_module/rituals/install()
-	implant.update_rituals()
+/datum/core_module/lectures/install()
+	implant.update_lectures()
 
-/datum/core_module/rituals/uninstall()
-	implant.update_rituals()
+/datum/core_module/lectures/uninstall()
+	implant.update_lectures()

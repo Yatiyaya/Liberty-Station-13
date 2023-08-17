@@ -113,7 +113,7 @@
 		else if (health < maxHealth * 0.80)
 			to_chat(user, SPAN_WARNING("It has had minor damage done to it."))
 		else if (health < maxHealth)
-			to_chat(user, SPAN_WARNING("It has a few cuts and bruses."))
+			to_chat(user, SPAN_WARNING("It has a few cuts and bruises."))
 
 /mob/living/carbon/superior_animal/nanobot/death()
 	if(controller) // Is there someone currently controlling the bot when it died?

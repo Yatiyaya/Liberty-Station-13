@@ -149,11 +149,7 @@
 				else
 					current_stack = new(loc)
 
-/////////////////////
-
-/obj/machinery/neotheology
-	icon = 'icons/obj/neotheology_machinery.dmi'
-
 #undef CONTAINER_PIXEL_OFFSET
 #undef SCORCH_PER_SILK
 #undef SCORCH_PER_FIBER
+

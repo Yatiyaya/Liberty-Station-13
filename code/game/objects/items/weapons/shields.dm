@@ -202,8 +202,8 @@
 	item_state = "tactical"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT|SLOT_BACK
-	force = WEAPON_FORCE_PAINFUL
-	throwforce = WEAPON_FORCE_PAINFUL
+	force = WEAPON_FORCE_DANGEROUS
+	throwforce = WEAPON_FORCE_ROBUST
 	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	throw_speed = 2
 	throw_range = 6
@@ -697,7 +697,7 @@
 	flags = CONDUCT
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT|SLOT_POCKET
-	force = WEAPON_FORCE_NORMAL
+	force = WEAPON_FORCE_PAINFUL
 	throwforce = WEAPON_FORCE_DANGEROUS
 	throw_speed = 2
 	throw_range = 6

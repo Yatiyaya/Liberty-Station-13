@@ -28,11 +28,11 @@
 	if(stats.getPerk(PERK_SCORCHING_SHELL))
 		tally += 2.5
 
-	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C && C.active)
-		var/obj/item/cruciform_upgrade/upgrade = C.upgrade
+		var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
 		if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_EMBERS_OF_SWIFTNESS))
-			var/obj/item/cruciform_upgrade/embers_of_swiftness/sotc = upgrade
+			var/obj/item/hearthcore_upgrade/embers_of_swiftness/sotc = upgrade
 			tally -= sotc.speed_increase
 
 	var/health_deficiency = (maxHealth - health)

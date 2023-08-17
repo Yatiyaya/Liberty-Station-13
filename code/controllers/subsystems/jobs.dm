@@ -406,7 +406,7 @@ SUBSYSTEM_DEF(job)
 		var/obj/item/implant/core_implant/C = H.get_core_implant()
 		if(C)
 			C.install_default_modules_by_job(job)
-			C.access.Add(job.cruciform_access)
+			C.access.Add(job.stronghold_access)
 			if(job.security_clearance)
 				C.security_clearance = job.security_clearance
 			//IDK were else to place this so it works when you late join and its active

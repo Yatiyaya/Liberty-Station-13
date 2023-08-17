@@ -7,7 +7,7 @@
 	external = TRUE
 	var/implant_type = /obj/item/implant/core_implant
 	var/active = FALSE
-	var/activated = FALSE			//true, if cruciform was activated once
+	var/activated = FALSE			//true, if hearthcore was activated once
 
 	var/security_clearance = CLEARANCE_NONE
 	var/address = null
@@ -15,8 +15,8 @@
 	var/max_power = 0
 	var/power_regen = 0.5
 	var/success_modifier = 1
-	var/list/known_rituals = list() //A list of names of rituals which are recorded in this cruciform
-	//These are used to retrieve the actual ritual datums from the global all_rituals list
+	var/list/known_lectures = list() //A list of names of lectures which are recorded in this hearthcore
+	//These are used to retrieve the actual lecture datums from the global all_lectures list
 
 	var/list/modules = list()
 	var/list/upgrades = list()
@@ -41,8 +41,8 @@
 		return
 	active = TRUE
 	activated = TRUE
-	add_ritual_verbs()
-	update_rituals()
+	add_lecture_verbs()
+	update_lectures()
 	START_PROCESSING(SSobj, src)
 	add_hearing()
 
@@ -51,32 +51,32 @@
 		return
 	remove_hearing()
 	active = FALSE
-	remove_ritual_verbs()
+	remove_lecture_verbs()
 	STOP_PROCESSING(SSobj, src)
 
-/obj/item/implant/core_implant/proc/update_rituals()
-	known_rituals = list()
-	for(var/datum/core_module/rituals/M in modules)
+/obj/item/implant/core_implant/proc/update_lectures()
+	known_lectures = list()
+	for(var/datum/core_module/lectures/M in modules)
 		if(istype(src,M.implant_type))
-			for(var/R in M.module_rituals)
-				known_rituals |= R
+			for(var/R in M.module_lectures)
+				known_lectures |= R
 
-/obj/item/implant/core_implant/proc/add_ritual_verbs()
+/obj/item/implant/core_implant/proc/add_lecture_verbs()
 	if(!wearer || !active)
 		return
 
-	for(var/r in known_rituals)
-		if(ispath(r,/datum/ritual/mind))
-			var/datum/ritual/mind/m = r
+	for(var/r in known_lectures)
+		if(ispath(r,/datum/lecture/mind))
+			var/datum/lecture/mind/m = r
 			wearer.verbs |= initial(m.activator_verb)
 
-/obj/item/implant/core_implant/proc/remove_ritual_verbs()
+/obj/item/implant/core_implant/proc/remove_lecture_verbs()
 	if(!wearer || !active)
 		return
 
-	for(var/r in known_rituals)
-		if(ispath(r,/datum/ritual/mind))
-			var/datum/ritual/mind/m = r
+	for(var/r in known_lectures)
+		if(ispath(r,/datum/lecture/mind))
+			var/datum/lecture/mind/m = r
 			wearer.verbs.Remove(initial(m.activator_verb))
 
 /obj/item/implant/core_implant/malfunction()
@@ -95,7 +95,7 @@
 		return
 
 	var/area/A = get_area(src)
-	if(istype(loc, /obj/machinery/neotheology))
+	if(istype(loc, /obj/machinery/capsa))
 		address = "[loc.name] in [strip_improper(A.name)]"
 		return
 
@@ -112,17 +112,17 @@
 	return L
 
 /obj/item/implant/core_implant/hear_talk(mob/living/carbon/human/H, message, verb, datum/language/speaking, speech_volume, message_pre_problems)
-	var/group_ritual_leader = FALSE
-	for(var/datum/core_module/group_ritual/GR in src.modules)
+	var/group_lecture_leader = FALSE
+	for(var/datum/core_module/group_lecture/GR in src.modules)
 		GR.hear(H, message)
-		group_ritual_leader = TRUE
+		group_lecture_leader = TRUE
 
 	if(wearer != H)
-		if(H.get_core_implant() && !group_ritual_leader)
+		if(H.get_core_implant() && !group_lecture_leader)
 			addtimer(CALLBACK(src, .proc/hear_other, H, message), 0) // let H's own implant hear first
 	else
-		for(var/RT in known_rituals)
-			var/datum/ritual/R = GLOB.all_rituals[RT]
+		for(var/RT in known_lectures)
+			var/datum/lecture/R = GLOB.all_lectures[RT]
 			var/ture_message = message
 			if(R.ignore_stuttering)
 				ture_message = message_pre_problems
@@ -137,12 +137,12 @@
 				return
 
 /obj/item/implant/core_implant/proc/hear_other(mob/living/carbon/human/H, message)
-	var/datum/core_module/group_ritual/GR = H.get_core_implant().get_module(/datum/core_module/group_ritual)
-	if(GR?.ritual.name in known_rituals)
+	var/datum/core_module/group_lecture/GR = H.get_core_implant().get_module(/datum/core_module/group_lecture)
+	if(GR?.lecture.name in known_lectures)
 		if(message == GR.phrases[1])
 			if(do_after(wearer, length(message)*0.25))
 				if(GR)
-					GR.ritual.set_personal_cooldown(wearer)
+					GR.lecture.set_personal_cooldown(wearer)
 				wearer.say(message)
 
 
@@ -213,4 +213,4 @@
 			CM.uninstall()
 
 /obj/item/implant/core_implant/proc/get_rituals()
-	return known_rituals
+	return known_lectures

@@ -133,14 +133,14 @@
 	name = "Flameshield Suit"
 	build_path = /obj/item/clothing/suit/armor/custodian/firesuit
 
-/datum/design/bioprinter/belt/utility/neotheology
+/datum/design/bioprinter/belt/utility/custodian_belt
 	name = "Bonfire Knightly Belt"
 	build_path = /obj/item/storage/belt/utility/custodian
 	materials = null
 
 /datum/design/bioprinter/hearth_lantern
 	name = "Hearth Lantern"
-	build_path = /obj/item/book/ritual/hearthlantern
+	build_path = /obj/item/book/lectures/hearthlantern
 	materials = null
 
 /datum/design/bioprinter/weapon_mold
@@ -228,39 +228,39 @@
 	name = "Organic muscle implant"
 	build_path = /obj/item/biogoop/muscle
 
-//[/CRUCIFORM UPGRAED]
+//[HEARTHCORE UPGRADES]
 
-/datum/design/autolathe/cruciform_upgrade
-	build_path = /obj/item/cruciform_upgrade
+/datum/design/autolathe/hearthcore_upgrade
+	build_path = /obj/item/hearthcore_upgrade
 	materials = list(MATERIAL_CARBON_FIBER = 24)
 
-/datum/design/autolathe/cruciform_upgrade/natures_blessing
+/datum/design/autolathe/hearthcore_upgrade/natures_blessing
 	name = "Nature's blessing"
-	build_path = /obj/item/cruciform_upgrade/natures_blessing
+	build_path = /obj/item/hearthcore_upgrade/natures_blessing
 
-/datum/design/autolathe/cruciform_upgrade/blazing_aegis
+/datum/design/autolathe/hearthcore_upgrade/blazing_aegis
 	name = "Blazing Aegis"
-	build_path = /obj/item/cruciform_upgrade/blazing_aegis
+	build_path = /obj/item/hearthcore_upgrade/blazing_aegis
 
-/datum/design/autolathe/cruciform_upgrade/cleansing_flames
+/datum/design/autolathe/hearthcore_upgrade/cleansing_flames
 	name = "Cleansing Flames"
-	build_path = /obj/item/cruciform_upgrade/cleansing_flames
+	build_path = /obj/item/hearthcore_upgrade/cleansing_flames
 
-/datum/design/autolathe/cruciform_upgrade/martyr_gift
+/datum/design/autolathe/hearthcore_upgrade/martyr_gift
 	name = "Martyr's gift"
-	build_path = /obj/item/cruciform_upgrade/martyr_gift
+	build_path = /obj/item/hearthcore_upgrade/martyr_gift
 
-/datum/design/autolathe/cruciform_upgrade/burning_fury
+/datum/design/autolathe/hearthcore_upgrade/burning_fury
 	name = "Wrath of god"
-	build_path = /obj/item/cruciform_upgrade/burning_fury
+	build_path = /obj/item/hearthcore_upgrade/burning_fury
 
-/datum/design/autolathe/cruciform_upgrade/embers_of_swiftness
+/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness
 	name = "Speed of the chosen"
-	build_path = /obj/item/cruciform_upgrade/embers_of_swiftness
+	build_path = /obj/item/hearthcore_upgrade/embers_of_swiftness
 
-/datum/design/autolathe/cruciform_upgrade/phoenix_edict
+/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
 	name = "Phoenix Edict"
-	build_path = /obj/item/cruciform_upgrade/phoenix_edict
+	build_path = /obj/item/hearthcore_upgrade/phoenix_edict
 
 //[/POUCHES]
 /datum/design/bioprinter/pouch

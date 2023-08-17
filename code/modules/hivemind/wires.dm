@@ -334,8 +334,8 @@
 			//We we dont touch the dead via are controler we dont want to pk people form the round
 				return
 
-			//if our target has cruciform, let's just leave it
-			if(is_neotheology_disciple(L))
+			//if our target has a Hearthcore, let's just leave it
+			if(is_custodian_of_bonfire(L))
 				return
 
 			for(var/obj/item/W in L)

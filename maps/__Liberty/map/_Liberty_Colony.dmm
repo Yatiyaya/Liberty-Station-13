@@ -444,7 +444,7 @@
 /turf/simulated/floor/industrial/grey_slates,
 /area/liberty/maintenance/undergroundfloor2east)
 "agT" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3299,6 +3299,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -5384,12 +5385,13 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
-/obj/item/tool/hammer/makeshift_staff,
-/obj/item/tool/hammer/makeshift_staff,
-/obj/item/tool/hammer/makeshift_staff,
 /obj/effect/floor_decal/wood/tatami{
 	dir = 4
 	},
+/obj/item/melee_training/foil,
+/obj/item/melee_training/foil,
+/obj/item/melee_training/sword,
+/obj/item/melee_training/sword,
 /turf/simulated/floor/wood/tatami,
 /area/liberty/bonfire/stronghold)
 "bpb" = (
@@ -9291,7 +9293,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/lab)
 "ckk" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -32
@@ -10419,10 +10421,14 @@
 /area/shuttle/vasiliy_shuttle_area)
 "cxb" = (
 /obj/structure/cable/cyan{
-	d1 = 4;
+	d1 = 2;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "2-8"
 	},
+/obj/machinery/alarm{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "cxe" = (
@@ -10443,8 +10449,18 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/tactical)
 "cxm" = (
-/obj/machinery/power/terminal,
-/obj/structure/cable/cyan,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/spline/fancy,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "cxq" = (
@@ -11303,6 +11319,7 @@
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -13342,9 +13359,10 @@
 /obj/effect/floor_decal/wood/tatami{
 	dir = 4
 	},
-/obj/item/tool/hammer/mace/makeshift,
-/obj/item/tool/hammer/mace/makeshift,
-/obj/item/tool/hammer/mace/makeshift,
+/obj/item/melee_training/axe,
+/obj/item/melee_training/axe,
+/obj/item/melee_training/axe,
+/obj/item/melee_training/axe,
 /turf/simulated/floor/wood/tatami,
 /area/liberty/bonfire/stronghold)
 "deW" = (
@@ -13549,6 +13567,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -13634,7 +13653,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "dhY" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/sign/faction/custodians{
 	pixel_y = 32
 	},
@@ -14491,7 +14510,7 @@
 /obj/structure/table/standard,
 /obj/item/pen,
 /obj/item/paper_bin,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "dsS" = (
@@ -16275,7 +16294,7 @@
 "dPI" = (
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/holy/preacher{
+/obj/machinery/door/bonfire/secure{
 	name = "Custodians Vault"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -16304,8 +16323,14 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/meeting_room)
 "dPR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark/golden,
+/obj/machinery/potionmaker,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/obj/structure/decor_light/wallcandle{
+	pixel_x = -32
+	},
+/turf/simulated/floor/asteroid/dirt/flood/plough,
 /area/liberty/bonfire/storage)
 "dPY" = (
 /obj/effect/floor_decal/spline/fancy{
@@ -16373,7 +16398,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "dQF" = (
-/obj/machinery/neotheology/biomass_container,
+/obj/machinery/capsa/biomass_container,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -16556,7 +16581,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/cargo)
 "dTC" = (
-/obj/machinery/multistructure/bioreactor_part/biotank_platform,
+/obj/machinery/multistructure/bonfire_part/scorchtank_platform,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "dTD" = (
@@ -17278,7 +17303,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/crew_quarters)
 "eeL" = (
@@ -18609,7 +18634,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/panic_room)
 "exD" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Cleaning supplies"
 	},
 /obj/machinery/door/firedoor,
@@ -21568,7 +21593,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/engine_room)
 "flu" = (
-/obj/machinery/door/holy/preacher{
+/obj/machinery/door/bonfire/secure{
 	name = "Oathpledge Quarters"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -26281,7 +26306,7 @@
 /area/liberty/security/detectives_office)
 "grw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/hallway/side/f2section1)
 "grH" = (
@@ -28173,7 +28198,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "gOY" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Custodians substation"
 	},
 /obj/machinery/door/firedoor,
@@ -29227,6 +29252,25 @@
 	dir = 1
 	},
 /area/liberty/bonfire/stronghold)
+"haR" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/obj/effect/floor_decal/border/carpet/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/bonfire/storage)
 "haV" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
@@ -30606,9 +30650,9 @@
 /area/liberty/crew_quarters/bar)
 "htT" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /obj/item/book/manual/fiction/dracula,
 /obj/item/book/manual/fiction/littlewomen,
 /obj/item/book/manual/fiction/aroundtheworld,
@@ -31553,7 +31597,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "hEk" = (
-/obj/machinery/multistructure/bioreactor_part/unloader,
+/obj/machinery/multistructure/bonfire_part/unloader,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "hEo" = (
@@ -32459,6 +32503,13 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/border/carpet/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/storage)
 "hQy" = (
@@ -37731,7 +37782,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/floor_decal/wood/tatami{
 	dir = 8
 	},
@@ -38459,7 +38510,7 @@
 /turf/simulated/floor/plating/under,
 /area/turret_protected/ai)
 "jqZ" = (
-/obj/machinery/multistructure/bioreactor_part/platform{
+/obj/machinery/multistructure/bonfire_part/platform{
 	make_glasswalls_after_creation = 1
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -38558,6 +38609,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -39176,6 +39228,19 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/cavenightmare)
+"jAM" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/border/carpet/black{
+	dir = 1
+	},
+/obj/effect/floor_decal/border/carpet/black,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet/bcarpet,
+/area/liberty/bonfire/storage)
 "jAP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -40189,7 +40254,7 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/hallway/surface/section1)
 "jNn" = (
-/obj/machinery/neotheology/reader,
+/obj/machinery/capsa/reader,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/genetics_cloning)
 "jNN" = (
@@ -41404,20 +41469,22 @@
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
 "kcb" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/power/smes/buildable{
+	RCon_tag = "Substation - Custodian";
+	charge = 5e+006;
+	input_attempt = 1;
+	input_level = 125000;
+	output_attempt = 1;
+	output_level = 100000
 	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
-/obj/machinery/firealarm{
-	pixel_y = 32
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/storage)
 "kcd" = (
 /obj/machinery/button/remote/airlock{
@@ -43804,7 +43871,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
 "kIu" = (
-/obj/machinery/multistructure/bioreactor_part/loader,
+/obj/machinery/multistructure/bonfire_part/loader,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "kID" = (
@@ -44728,6 +44795,15 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "kUp" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/sink/basion,
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "kUv" = (
@@ -48284,7 +48360,7 @@
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 9
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/vectorrooms)
 "lOE" = (
@@ -48433,6 +48509,27 @@
 	},
 /turf/simulated/floor/industrial/bricks,
 /area/liberty/maintenance/undergroundfloor2north)
+"lQo" = (
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/sensor{
+	long_range = 1;
+	name = "Powernet Sensor - Custodian Subgrid";
+	name_tag = "Cust Subgrid"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/golden,
+/area/liberty/bonfire/storage)
 "lQp" = (
 /obj/machinery/light{
 	dir = 8
@@ -49188,13 +49285,11 @@
 /area/liberty/hallway/side/f2section1)
 "mad" = (
 /obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "mai" = (
@@ -50076,7 +50171,7 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/medical/organ_lab)
 "mnp" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Custodian Barracks"
 	},
 /obj/structure/cable/green{
@@ -50389,10 +50484,11 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/crew_quarters/bar/vip)
 "mrD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
+/obj/machinery/portable_atmospherics/hydroponics/soil,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/turf/simulated/floor/asteroid/dirt/flood/plough,
 /area/liberty/bonfire/storage)
 "mrK" = (
 /obj/structure/bed/chair,
@@ -52017,7 +52113,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/maintenance/undergroundfloor3west)
 "mPd" = (
-/obj/machinery/neotheology/reader,
+/obj/machinery/capsa/reader,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -52915,12 +53011,10 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/bioreactor)
 "nbu" = (
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+/obj/machinery/firealarm{
+	pixel_y = 32
 	},
-/obj/machinery/camera/network/church,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "nbw" = (
@@ -53869,12 +53963,10 @@
 /turf/simulated/floor/tiled/dark/greencorner,
 /area/liberty/medical/genetics)
 "nnh" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "nnn" = (
 /obj/effect/decal/cleanable/generic,
@@ -54238,10 +54330,13 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor3north)
 "nrl" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
 /area/liberty/bonfire/storage)
 "nry" = (
 /obj/structure/catwalk,
@@ -54742,6 +54837,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -54756,7 +54852,7 @@
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 5
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/vectorrooms)
 "nxD" = (
@@ -55876,6 +55972,9 @@
 /obj/item/pen,
 /obj/structure/table/woodentable,
 /obj/effect/floor_decal/spline/fancy,
+/obj/structure/decor_light/wallcandle{
+	pixel_y = -32
+	},
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -56242,13 +56341,11 @@
 /area/liberty/command/courtroom)
 "nQw" = (
 /obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 1
 	},
@@ -56265,6 +56362,7 @@
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/storage)
 "nQy" = (
@@ -58094,7 +58192,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "ooX" = (
-/obj/machinery/neotheology/biomass_container,
+/obj/machinery/capsa/biomass_container,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/genetics_cloning)
 "ooZ" = (
@@ -61606,19 +61704,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
 "pgl" = (
-/obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Custodian";
-	charge = 5e+006;
-	input_attempt = 1;
-	input_level = 125000;
-	output_attempt = 1;
-	output_level = 100000
-	},
 /obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark/techfloor_grid,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/greybricks{
+	dir = 1
+	},
 /area/liberty/bonfire/storage)
 "pgv" = (
 /obj/effect/decal/cleanable/dirt,
@@ -62333,7 +62427,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/glass/bucket{
 	desc = "It's a bucket. It looks.. stained.";
-	name = "suspicous bucket"
+	name = "suspicious bucket"
 	},
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/dungeon/outside/campground)
@@ -63583,6 +63677,10 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
+"pGV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber,
+/turf/simulated/floor/tiled/dark/golden,
+/area/liberty/bonfire/storage)
 "pGX" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/o2,
@@ -64381,7 +64479,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/hallway/surface/section1)
 "pPv" = (
@@ -65803,7 +65901,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/pros/prep)
 "qfI" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Forge Room"
 	},
 /obj/machinery/door/firedoor,
@@ -66377,7 +66475,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/panic_room)
 "qlf" = (
-/obj/machinery/neotheology/implantprinter,
+/obj/machinery/capsa/implantprinter,
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/genetics_cloning)
@@ -66914,6 +67012,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -68648,7 +68747,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "qOU" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Storage"
 	},
 /obj/machinery/door/firedoor,
@@ -69187,7 +69286,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/rnd/lab)
 "qVN" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/floor_decal/spline/fancy/cee{
 	dir = 1
 	},
@@ -69681,9 +69780,13 @@
 /obj/effect/floor_decal/border/carpet/black/corner{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/storage)
 "rby" = (
@@ -71482,7 +71585,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/sechall)
 "ryJ" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/hallway/surface/section1)
 "ryO" = (
@@ -71568,6 +71671,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/storage)
@@ -73161,6 +73270,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -73355,6 +73465,9 @@
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 5
 	},
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/stronghold)
 "rZp" = (
@@ -73769,7 +73882,7 @@
 /obj/effect/floor_decal/industrial/danger,
 /obj/item/reagent_containers/glass/bucket{
 	desc = "It's a bucket. It looks.. stained.";
-	name = "suspicous bucket"
+	name = "suspicious bucket"
 	},
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/engineering/engine_waste)
@@ -74288,7 +74401,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Forge Room"
 	},
 /turf/simulated/floor/industrial/greybricks{
@@ -75045,14 +75158,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "sre" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
 /obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d2 = 2;
+	icon_state = "0-2"
 	},
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/camera/network/church,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "srf" = (
@@ -75314,7 +75427,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2south)
 "suC" = (
-/obj/machinery/neotheology/cloner,
+/obj/machinery/capsa/cloner,
 /obj/effect/floor_decal/steeldecal/steel_decals_central3,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/genetics_cloning)
@@ -76423,7 +76536,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/shuttle/surface_transport_lz)
 "sGB" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Forge Room"
 	},
 /obj/structure/disposalpipe/segment{
@@ -76994,11 +77107,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "sNx" = (
-/obj/structure/table/woodentable,
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
-/obj/item/flame/candle,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -77772,12 +77883,13 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
-/obj/item/material/baseballbat/metal,
-/obj/item/material/baseballbat/metal,
-/obj/item/material/baseballbat/metal,
 /obj/effect/floor_decal/wood/tatami{
 	dir = 4
 	},
+/obj/item/melee_training/staff,
+/obj/item/melee_training/staff,
+/obj/item/melee_training/spear,
+/obj/item/melee_training/spear,
 /turf/simulated/floor/wood/tatami,
 /area/liberty/bonfire/stronghold)
 "sXK" = (
@@ -77788,6 +77900,7 @@
 /turf/unsimulated/mask,
 /area/liberty/maintenance/oldmining)
 "sYa" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -79052,6 +79165,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 5
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -79871,7 +79985,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Custodians substation"
 	},
 /obj/machinery/door/firedoor,
@@ -80148,8 +80262,22 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3west)
 "tCt" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
+/obj/effect/floor_decal/spline/fancy,
+/obj/structure/closet/crate/hydroponics,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/device/scanner/plant,
+/obj/item/tool/wirecutters,
+/obj/item/plantspray/pests,
+/obj/item/tool/shovel/spade,
+/obj/item/tool/minihoe,
+/obj/item/reagent_containers/glass/fertilizer/rh,
+/obj/item/storage/bag/produce,
+/obj/item/storage/makeshift_grinder,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
@@ -80638,7 +80766,7 @@
 /turf/simulated/floor/tiled/white,
 /area/liberty/maintenance/undergroundfloor2north)
 "tHv" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "tHH" = (
@@ -81489,6 +81617,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -82502,9 +82631,16 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
 "ufE" = (
-/obj/machinery/atmospherics/unary/vent_scrubber{
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/effect/floor_decal/spline/fancy/corner{
 	dir = 8
 	},
+/obj/effect/floor_decal/spline/fancy,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "ufJ" = (
@@ -87898,7 +88034,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/bonfire/forge)
 "vyT" = (
-/obj/machinery/power/nt_obelisk{
+/obj/machinery/power/torchbearer{
 	pixel_y = 5
 	},
 /obj/effect/floor_decal/spline/wood{
@@ -88591,7 +88727,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "vIk" = (
-/obj/machinery/multistructure/bioreactor_part/console,
+/obj/machinery/multistructure/bonfire_part/console,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "vIl" = (
@@ -90052,12 +90188,11 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/medical/chemistry)
 "vZR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -32
+/obj/machinery/spicebed,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/dark/golden,
+/turf/simulated/floor/asteroid/dirt/flood/plough,
 /area/liberty/bonfire/storage)
 "vZY" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -90561,10 +90696,20 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/dorm4)
 "wfK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 4
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/spline/fancy/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "wfL" = (
@@ -90750,6 +90895,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -92038,6 +92184,8 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -93148,7 +93296,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/maintenance/undergroundfloor2east)
 "wLb" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Custodians Stronghold"
 	},
 /obj/structure/disposalpipe/segment,
@@ -93855,7 +94003,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/security/prisoncells)
 "wSR" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 32
@@ -95160,6 +95308,7 @@
 /obj/effect/floor_decal/spline/fancy/corner{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -95170,19 +95319,8 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "xjC" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green,
-/obj/machinery/power/sensor{
-	long_range = 1;
-	name = "Powernet Sensor - Custodian Subgrid";
-	name_tag = "Cust Subgrid"
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
@@ -95282,7 +95420,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/engineering/engine_room)
 "xlm" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Custodians Stronghold"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -95380,6 +95518,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/greybricks{
 	dir = 1
 	},
@@ -98263,7 +98402,8 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/engine_room)
 "xYl" = (
-/obj/machinery/multistructure/bioreactor_part/bioport,
+/obj/machinery/multistructure/bonfire_part/port,
+/obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/bonfire/bioreactor)
 "xYp" = (
@@ -98547,7 +98687,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Forge Room"
 	},
 /turf/simulated/floor/industrial/greybricks{
@@ -99353,15 +99493,11 @@
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/foreman)
 "yko" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/light,
+/obj/machinery/smartfridge/kitchen/custodians,
+/obj/effect/floor_decal/spline/fancy{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/storage)
 "ykx" = (
@@ -196195,8 +196331,8 @@ sPV
 jvb
 cxb
 ufE
-yif
-yif
+nrl
+nrl
 nrl
 nWs
 bne
@@ -196399,7 +196535,7 @@ kcb
 cxm
 pgl
 nnh
-xjC
+nnh
 nWs
 qPJ
 jqZ
@@ -196599,7 +196735,7 @@ sPV
 jvb
 sre
 wfK
-yif
+lQo
 kUp
 yko
 ttZ
@@ -197003,8 +197139,8 @@ sPV
 jvb
 bmN
 yif
-hQx
-kUp
+haR
+yif
 hEt
 ttZ
 bhp
@@ -197204,9 +197340,9 @@ aRj
 sPV
 jvb
 qsu
-yif
+pGV
 hQx
-kUp
+xjC
 wuv
 nWs
 xNP
@@ -197407,7 +197543,7 @@ sPV
 jvb
 kiq
 yif
-hQx
+jAM
 nde
 fly
 ttZ

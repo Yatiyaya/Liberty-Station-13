@@ -172,7 +172,7 @@
 
 
 /obj/item/stack/medical/proc/check_faith_of_healing(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/obj/item/implant/core_implant/cruciform/CI = user.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/CI = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 //	log_debug("check_faith_of_healing 0, I have started user = [user]")
 	if(!CI || !CI.active || !CI.wearer)
 		return FALSE
@@ -180,7 +180,7 @@
 	return TRUE
 
 /obj/item/stack/medical/proc/check_faith_of_healer(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/obj/item/implant/core_implant/cruciform/CI = user.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/CI = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 
 //	log_debug("check_faith_of_healer 0, I have started user = [user]")
 	if(!CI || !CI.active || !CI.wearer)
@@ -189,13 +189,13 @@
 	return TRUE
 
 /obj/item/stack/medical/proc/check_for_healer_plus(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	var/obj/item/implant/core_implant/cruciform/CI = user.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/CI = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 
 //	log_debug("check_faith_of_healer 0, I have started user = [user]")
 	if(!CI || !CI.active || !CI.wearer)
 		return FALSE
 
-	if (CI.get_module(CRUCIFORM_ENKINDLED))
+	if (CI.get_module(HEARTHCORE_ENKINDLED))
 		return TRUE
 
 	return FALSE

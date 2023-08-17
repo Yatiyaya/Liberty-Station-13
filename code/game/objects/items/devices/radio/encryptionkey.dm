@@ -60,8 +60,8 @@
 	channels = list("Terra" = 1, "PIRS" = 1)
 */
 
-/obj/item/device/encryptionkey/headset_church
-	name = "custodian radio encryption key"
+/obj/item/device/encryptionkey/headset_bonfire
+	name = "bonfire custodian radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Custodians" = 1)
 
@@ -129,7 +129,7 @@
 	icon_state = "qm_cypherkey"
 	channels = list("Skylight" = 1, "Board" = 1)
 
-/obj/item/device/encryptionkey/heads/preacher
+/obj/item/device/encryptionkey/heads/oathpledge
 	name = "oathpledge radio encryption key"
 	icon_state = "preach_cypherkey"
 	channels = list("Custodians" = 1, "Board" = 1)

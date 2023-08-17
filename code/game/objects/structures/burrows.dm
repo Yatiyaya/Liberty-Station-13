@@ -69,7 +69,7 @@
 /obj/structure/burrow/New(var/loc, turf/anchor)
 	.=..()
 	GLOB.all_burrows.Add(src)
-	var/obj/machinery/power/nt_obelisk/obelisk = locate(/obj/machinery/power/nt_obelisk) in range(7, src)
+	var/obj/machinery/power/torchbearer/obelisk = locate(/obj/machinery/power/torchbearer) in range(7, src)
 	if(obelisk && obelisk.active)
 		qdel(src)
 		return

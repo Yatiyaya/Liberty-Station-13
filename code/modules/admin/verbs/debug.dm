@@ -911,7 +911,7 @@ ADMIN_VERB_ADD(/client/proc/spawn_disciple, R_DEBUG, FALSE)
 		return
 
 	var/mob/living/carbon/human/H = new (get_turf(mob))
-	var/obj/item/implant/core_implant/cruciform/C = new /obj/item/implant/core_implant/cruciform(H)
+	var/obj/item/implant/core_implant/hearthcore/C = new /obj/item/implant/core_implant/hearthcore(H)
 
 	C.install(H)
 	C.activate()

@@ -300,24 +300,24 @@ Proc for attack log creation, because really why not
 	return FALSE
 
 
-/proc/is_neotheology_disciple(mob/living/L)
-	if(istype(L) && L.get_core_implant(/obj/item/implant/core_implant/cruciform))
+/proc/is_custodian_of_bonfire(mob/living/L)
+	if(istype(L) && L.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		return TRUE
 	return FALSE
 
-/proc/is_acolyte(mob/living/L)
+/proc/is_custodian(mob/living/L)
 	if(!isliving(L))
 		return FALSE
-	var/obj/item/implant/core_implant/cruciform/C = L.get_core_implant(/obj/item/implant/core_implant/cruciform)
-	if(C && C.get_module(CRUCIFORM_COMMON))
+	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+	if(C && C.get_module(HEARTHCORE_COMMON))
 		return TRUE
 	return FALSE
 
-/proc/is_preacher(mob/living/L)
+/proc/is_oathpledge(mob/living/L)
 	if(!isliving(L))
 		return FALSE
-	var/obj/item/implant/core_implant/cruciform/C = L.get_core_implant(/obj/item/implant/core_implant/cruciform)
-	if(C && C.get_module(CRUCIFORM_OATHPLEDGE))
+	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+	if(C && C.get_module(HEARTHCORE_OATHPLEDGE))
 		return TRUE
 	return FALSE
 

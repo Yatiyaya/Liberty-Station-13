@@ -1,5 +1,5 @@
 /obj/item/clothing
-	name = "clothing"
+	name = "any piece of clothing" // Named like this for crafting purposes
 	siemens_coefficient = 0.9
 	item_flags = DRAG_AND_DROP_UNEQUIP
 	var/flash_protection = FLASH_PROTECTION_NONE	// Sets the item's level of flash protection.
@@ -321,7 +321,7 @@ SEE_PIXELS// if an object is located on an unlit area, but some of its pixels ar
 BLIND     // can't see anything
 */
 /obj/item/clothing/glasses
-	name = "glasses"
+	name = "any glasses"
 	icon = 'icons/inventory/eyes/icon.dmi'
 	w_class = ITEM_SIZE_SMALL
 	body_parts_covered = EYES
@@ -337,7 +337,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Gloves
 /obj/item/clothing/gloves
-	name = "gloves"
+	name = "any pair of gloves"
 	gender = PLURAL //Carn: for grammarically correct text-parsing
 	w_class = ITEM_SIZE_SMALL
 	icon = 'icons/inventory/hands/icon.dmi'
@@ -374,7 +374,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Head
 /obj/item/clothing/head
-	name = "head"
+	name = "any headgear"
 	icon = 'icons/inventory/head/icon.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand_hats.dmi',
@@ -471,7 +471,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Mask
 /obj/item/clothing/mask
-	name = "mask"
+	name = "any mask"
 	icon = 'icons/inventory/face/icon.dmi'
 	body_parts_covered = HEAD
 	slot_flags = SLOT_MASK
@@ -490,7 +490,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Shoes
 /obj/item/clothing/shoes
-	name = "shoes"
+	name = "any pair of shoes"
 	icon = 'icons/inventory/feet/icon.dmi'
 	desc = "Comfortable-looking shoes."
 	gender = PLURAL //Carn: for grammarically correct text-parsing
@@ -618,7 +618,7 @@ BLIND     // can't see anything
 //Suit
 /obj/item/clothing/suit
 	icon = 'icons/inventory/suit/icon.dmi'
-	name = "suit"
+	name = "any suit" // Named like this for crafting purposes
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -652,7 +652,7 @@ BLIND     // can't see anything
 		/obj/item/device/radio,
 		/obj/item/clothing/mask,
 		/obj/item/storage/backpack/guncase,
-		/obj/item/book/ritual/hearthlantern,
+		/obj/item/book/lectures/hearthlantern,
 		/obj/item/vacuum_cleaner,
 		/obj/item/implant/carrion_spider/holographic)
 	slot_flags = SLOT_OCLOTHING
@@ -686,6 +686,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Under clothing
 /obj/item/clothing/under
+	name = "any kind of jumpsuit"
 	icon = 'icons/inventory/uniform/icon.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand_uniforms.dmi',

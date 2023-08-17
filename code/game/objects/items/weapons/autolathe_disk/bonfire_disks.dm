@@ -38,7 +38,7 @@
 		/datum/design/bioprinter/custodian_clothes/enkindled,
 		/datum/design/bioprinter/custodian_clothes/forgemaster,
 		/datum/design/bioprinter/custodian_clothes/oathpledge,
-		/datum/design/bioprinter/belt/utility/neotheology,
+		/datum/design/bioprinter/belt/utility/custodian_belt,
 		/datum/design/bioprinter/custodian_clothes/custodian_boots,
 		//backpacks
 		/datum/design/bioprinter/leather/storage/backpack/satchel/custodian,
@@ -84,13 +84,13 @@
 	desc = "A disk from the lower Stronghold, containing advanced Forgemaster designs for upgrades to be applied to a Hearthcore with powerful effects."
 	icon_state = "custodian_armory"
 	designs = list(
-		/datum/design/autolathe/cruciform_upgrade/cleansing_flames,
-		/datum/design/autolathe/cruciform_upgrade/natures_blessing,
-		/datum/design/autolathe/cruciform_upgrade/embers_of_swiftness,
-		/datum/design/autolathe/cruciform_upgrade/blazing_aegis,
-		/datum/design/autolathe/cruciform_upgrade/burning_fury,
-		/datum/design/autolathe/cruciform_upgrade/martyr_gift,
-		/datum/design/autolathe/cruciform_upgrade/phoenix_edict
+		/datum/design/autolathe/hearthcore_upgrade/cleansing_flames,
+		/datum/design/autolathe/hearthcore_upgrade/natures_blessing,
+		/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness,
+		/datum/design/autolathe/hearthcore_upgrade/blazing_aegis,
+		/datum/design/autolathe/hearthcore_upgrade/burning_fury,
+		/datum/design/autolathe/hearthcore_upgrade/martyr_gift,
+		/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
 	)
 
 

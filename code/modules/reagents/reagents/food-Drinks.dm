@@ -1823,15 +1823,15 @@
 	glass_desc = "A very classy looking drink."
 	glass_center_of_mass = list("x"=15, "y"=7)
 
-/datum/reagent/ethanol/ntcahors
+/datum/reagent/ethanol/bonfirebrew
 	name = "Custodian Brew"
-	id = "ntcahors"
+	id = "bonfirebrew"
 	description = "A hearty cinnamon drink that purges the body of toxins, but causes severe impairment."
 	taste_description = "purifying cinnamon relishness"
 	color = "#2725afd0"
 	strength = 30
 
-/datum/reagent/ethanol/ntcahors/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
+/datum/reagent/ethanol/bonfirebrew/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
 	..()
 	M.adjust_hallucination(-0.9 * effect_multiplier)
 	M.add_chemical_effect(CE_TOXIN, -2.5 * effect_multiplier)

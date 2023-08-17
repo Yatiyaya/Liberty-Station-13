@@ -32,7 +32,7 @@
 	mouse_opacity = 0
 	embed_mult = 1
 
-	var/datum/penetration_holder/penetration_holder
+	var/datum/penetration_holder/penetration_holder = new
 
 	/// If true, all damage, messages, visuals, sounds, effects, etc. will not occur. used for trace testing. IT IS REALLY!! GODDAMN IMPORTANT!! THAT YOU MAKE SURE YOU MAKE YOUR EFFECTS NOT HAPPEN IF THIS IS TRUE!!!
 	var/testing = FALSE
@@ -136,15 +136,15 @@
 	. = ..()
 
 /obj/item/projectile/Destroy()
-
-	if (!testing)
+	firer = null
+	original = null
+	starting = null
+	LAZYCLEARLIST(permutated)
+	QDEL_NULL(attached_effect)
+	if(!testing)
 		QDEL_NULL(penetration_holder)
 
-	QDEL_NULL(attached_effect)
-
-	firer = null
-
-	. = ..()
+	return ..()
 
 /obj/item/projectile/is_hot()
 	if (damage_types[BURN])
@@ -213,7 +213,7 @@
 		impact_effect(effect_transform)
 		if(luminosity_ttl && attached_effect)
 			spawn(luminosity_ttl)
-			qdel(attached_effect)
+			QDEL_NULL(attached_effect)
 
 		if(!ismob(A))
 			playsound(src, hitsound_wall, 50, 1, -2)

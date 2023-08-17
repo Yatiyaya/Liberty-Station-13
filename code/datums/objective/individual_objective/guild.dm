@@ -164,7 +164,7 @@
 	units_requested = rand(2000, 5000)
 	desc = "Some of your relative asked you to procure and provide this account number: \"[target.account_number]\" with sum of [units_requested][CREDITS]. \
 			You dont know exactly why, but this is important."
-	RegisterSignal(owner.initial_account, COMSIG_TRANSATION, .proc/task_completed)
+	RegisterSignal(owner.initial_account, COMSIG_TRANSACTION, .proc/task_completed)
 
 /datum/individual_objective/transfer/task_completed(datum/money_account/S, datum/money_account/T, amount)
 	if(S == owner.initial_account && T == target)
@@ -172,5 +172,5 @@
 
 /datum/individual_objective/transfer/completed()
 	if(completed) return
-	UnregisterSignal(owner.initial_account, COMSIG_TRANSATION)
+	UnregisterSignal(owner.initial_account, COMSIG_TRANSACTION)
 	..()
