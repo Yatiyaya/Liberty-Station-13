@@ -141,9 +141,6 @@
 	starting = null
 	LAZYCLEARLIST(permutated)
 	QDEL_NULL(attached_effect)
-	if(!testing)
-		QDEL_NULL(penetration_holder)
-
 	return ..()
 
 /obj/item/projectile/is_hot()
@@ -723,7 +720,6 @@
 		else
 			visible_message(SPAN_DANGER("\The [target_mob] is hit by \the [src] in the [parse_zone(def_zone)]!"))//X has fired Y is now given by the guns so you cant tell who shot you if you could not see the shooter
 	*/
-	playsound(target_mob, pick(mob_hit_sound), 40, 1)
 
 		//admin logs
 	if(!no_attack_log)
@@ -743,6 +739,7 @@
 		return FALSE
 
 	if (!testing)
+		playsound(target_mob, pick(mob_hit_sound), 40, 1)
 		if(target_mob.mob_classification & CLASSIFICATION_ORGANIC)
 			var/turf/target_loca = get_turf(target_mob)
 			var/mob/living/L = target_mob
