@@ -27,3 +27,13 @@
 						else
 							visible_emote("tilts his head, confused. It seems he never obeyed [target.name] to begin with.")
 
+// Scoop up that dog
+/mob/living/carbon/superior_animal/lord_foog/MouseDrop(atom/over_object)
+	if(holder_type && !anchored)
+		var/mob/living/carbon/H = over_object
+		if(!istype(H) || !Adjacent(H))
+			return ..()
+		get_scooped(H, usr)
+		return
+	return ..()
+

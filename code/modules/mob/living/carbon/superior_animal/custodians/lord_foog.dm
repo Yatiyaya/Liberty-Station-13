@@ -38,6 +38,7 @@
 	stop_message = "huffs, stopping in place."
 	deathmessage = "whimpers in agony, its knees trembling before falling to the ground, quiet and lifeless."
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
+	holder_type = /obj/item/holder/lord_foog
 	var/list/true_boss = list() // The only one who can assign new followers
 	var/mob/living/carbon/human/owner // Holder of the human friend mob
 	var/befriend_job = "Oathpledge" // The title of the job we can befriend. From simplemob code.
@@ -166,6 +167,34 @@
 	to_chat(usr, SPAN_NOTICE("[src] snubs at you, turning his muzzle away, ignoring your unworthiness."))
 	return
 
+/obj/item/holder/lord_foog
+	name = "Lord Foog"
+	desc = "He looks so afraid... maybe he's acrophobic?"
+	icon = 'icons/mob/lord_foog.dmi'
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/items/lefthand_holder.dmi',
+		slot_r_hand_str = 'icons/mob/items/righthand_holder.dmi',
+		slot_back_str = 'icons/inventory/back/mob.dmi',
+	)
+	item_state_slots = list(
+		slot_back_str = "lordfoog", slot_l_hand_str = "lordfoog", slot_r_hand_str = "lordfoog"
+		)
+	icon_state = "lordfoog_holder"
+	icon_state_dead = "lordfoog_dead"
+	item_state = "lordfoog"
+	w_class = ITEM_SIZE_HUGE // NO PUTTING HIM ON BACKPACKS, HE'S MASSIVE.
+	slot_flags = SLOT_BACK
+
+/obj/item/holder/lord_foog/armored
+	desc = "Ouch oof, heavy doggo made even heavier by armor!"
+	icon_state = "lordfoog_holder_armor"
+	icon_state_dead = "lordfoog_armored_dead"
+	item_state_slots = list(
+		slot_back_str = "lordfoog_armored", slot_l_hand_str = "lordfoog_armored", slot_r_hand_str = "lordfoog_armored"
+		)
+	slowdown_hold = 1.5 // Gigantic ARMORED Borzoi
+	slowdown = 0.5 // Carrying him on your back is comfier for you.
+
 /mob/living/carbon/superior_animal/lord_foog/armored
 	desc = "A dark-silver armored hunting dog hailing from a cherished breed by the Custodians. \
 			The true menace of maintenance, protector of colonists and the true warden of the Stronghold, \
@@ -177,10 +206,11 @@
 	health = 500
 	melee_damage_lower = 40
 	melee_damage_upper = 50 // Sharp knife on his mouth
-	armor = list(melee = 30, bullet = 20, energy = 30, bomb = 10, bio = 100, rad = 100) // Armored doggo!
+	armor = list(melee = 50, bullet = 20, energy = 30, bomb = 10, bio = 100, rad = 100) // Armored doggo!
 	cold_protection = TRUE
-	heat_protection = TRUE // Fireproof armor
+	heat_protection = TRUE // Fireproof armor, custodian artifice
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/renderslash.ogg' // Sword on his mouth.
-	weapon = /obj/item/tool/sword/custodian/shortsword
+	weapon = /obj/item/tool/sword/custodian/shortsword // If he dies, it will fall off his mouth.
+	holder_type = /obj/item/holder/lord_foog/armored // I feel sorry for the back of whoever carries this dog.
 
