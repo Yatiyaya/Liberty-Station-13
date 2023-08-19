@@ -307,7 +307,7 @@
 	name = "%!#ERR0R$?&" // Cultist interference with GPS.
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
-	ambience = list('sound/ambience/occ_scaryambie.ogg') // Deep maint entrance spoilers.
+	forced_ambience = list('sound/ambience/occ_scaryambie.ogg') // Deep maint entrance spoilers.
 
 /area/liberty/dungeon/outside/zoo
 	name = "Abandoned Research Lab"
@@ -998,13 +998,18 @@
 	name =  "Vacant Tech shops"
 	icon_state = "construction"
 
+/area/liberty/crew_quarters/skyyard
+	name = "\improper Junk Sky Field Teleporter"
+	icon_state = "erisyellow"
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
+
 // Custodians of Bonfire
 
 /area/liberty/bonfire
 	icon_state = "erisgreen"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
-/area/liberty/bonfire/chapel
+/area/liberty/bonfire/stronghold
 	name = "\improper Stronghold"
 	icon_state = "chapel"
 	ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
@@ -1013,34 +1018,33 @@
 /area/liberty/bonfire/storage
 	name = "\improper Stronghold Storage Wing"
 	icon_state = "erisyellow"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
-
-/area/liberty/bonfire/skyyard
-	name = "\improper Junk Sky Field Teleporter"
-	icon_state = "erisyellow"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/bioreactor
 	name = "\improper Stronghold Workshop"
 	icon_state = "erisblue"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	ambience = list('sound/ambience/stronghold.ogg')
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/vectorrooms
 	name = "\improper Stronghold Living Quarters"
 	icon_state = "erisblue"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
 	icon_state = "chapeloffice"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
+	ambience = list('sound/ambience/stronghold.ogg')
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
-/area/liberty/bonfire/chapelritualroom
+/area/liberty/bonfire/forge
 	name = "Stronghold Forge"
+	ambience = list('sound/ambience/stronghold.ogg')
 	icon_state = "erisgreen"
 
 /area/liberty/bonfire/armory
 	name = "Stronghold Armory"
+	ambience = list('sound/ambience/stronghold.ogg')
 	icon_state = "head_quarters"
 
 //Engineering

@@ -787,11 +787,11 @@
 /datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
 	if(volume >= 5)
 		if(volume >= 45)
-			spill_biomass(T, alldirs)
+			spill_scorch(T, alldirs)
 		else if(volume >= 25)
-			spill_biomass(T, cardinal)
+			spill_scorch(T, cardinal)
 		else
-			spill_biomass(T)
+			spill_scorch(T)
 		remove_self(volume)
 		return TRUE
 

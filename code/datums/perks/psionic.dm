@@ -2,7 +2,7 @@
 	name = "Psionic"
 	desc = "You have, through some method you may or may not understand, delved into the secrets of psionic ascension and gained powers beyond your understanding. While your mind has become far stronger, \
 	your body has weakened slightly. You take increased damage from all sources and require a bit more food to support the specialized organs you've developed. Additionally, you must always maintain \
-	purity of body, any implants, cruciforms, or synthetics will be violently rejected as long as your psionic organ is in your head."
+	purity of body, any implants, hearthcore, or synthetics will be violently rejected as long as your psionic organ is in your head."
 	gain_text = "You suddenly get a splitting headache before your vision blurs painfully. By the time its over, you feel like a whole new world of possibilities has opened for you."
 	icon_state = "psionic" // https://game-icons.net/1x1/lorc/frontal-lobe.html
 

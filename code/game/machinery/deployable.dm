@@ -85,7 +85,7 @@ for reference:
 	health -= amount
 	if(health <= 0)
 		visible_message(SPAN_WARNING("\The [src] breaks down!"))
-		playsound(loc, 'sound/effects/grillehit.ogg', 50, 1)
+		playsound(loc, 'sound/weapons/shield/shielddestroy.ogg', 50, 1)
 		dismantle()
 		qdel(src)
 
@@ -118,6 +118,7 @@ for reference:
 				return
 		return
 	else
+		user.do_attack_animation(src)
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		switch(W.damtype)
 			if("fire")
@@ -127,6 +128,7 @@ for reference:
 			else
 		if(health <= 0)
 			visible_message(SPAN_DANGER("The barricade is smashed apart!"))
+			playsound(loc, 'sound/weapons/shield/shielddestroy.ogg', 50, 1)
 			dismantle()
 			qdel(src)
 			return
@@ -227,7 +229,7 @@ for reference:
 	health -= amount
 	if(health <= 0)
 		visible_message(SPAN_WARNING("\The [src] breaks down!"))
-		playsound(loc, 'sound/effects/grillehit.ogg', 50, 1)
+		playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1)
 		dismantle()
 		qdel(src)
 

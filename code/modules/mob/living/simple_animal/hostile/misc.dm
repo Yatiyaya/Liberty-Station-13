@@ -358,9 +358,9 @@
 
 /mob/living/simple_animal/hostile/retaliate/tahca
 	name = "tahca"
-	desc = "A bovine creature, not surprisingly native in it's shaggy white coat of hair.  Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Hunters value \
+	desc = "A bovine creature, not surprisingly native in it's shaggy white coat of hair.  Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Trappers value \
 	these beasts for their tongues, both as medicine of value and for food."
-	faction = "tahca"
+	faction = "neutral"
 	icon = 'icons/mob/mobs-domestic.dmi'
 	icon_state = "tahca"
 	icon_living = "tahca"
@@ -385,4 +385,6 @@
 	bones_amount = 6
 	mob_size = 20
 	has_special_parts = TRUE
+	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	special_parts = list(/obj/item/animal_part/tahca_tongue)

@@ -331,7 +331,7 @@
 	desc = "The money must always flow but you must also prevent fees from ruining you.  \
 			Make a back transfer from you personal to \"[target.account_number]\" account for amount of [units_requested][CREDITS].\
 			Back transfer meaning adding the [units_requested][CREDITS] must be added account \"[target.account_number]\""
-	RegisterSignal(owner.initial_account, COMSIG_TRANSATION, .proc/task_completed)
+	RegisterSignal(owner.initial_account, COMSIG_TRANSACTION, .proc/task_completed)
 
 /datum/individual_objective/economy/task_completed(datum/money_account/S, datum/money_account/T, amount)
 	if(S == owner.initial_account && amount >= units_requested && T != S)
@@ -339,7 +339,7 @@
 
 /datum/individual_objective/economy/completed()
 	if(completed) return
-	UnregisterSignal(owner.initial_account, COMSIG_TRANSATION)
+	UnregisterSignal(owner.initial_account, COMSIG_TRANSACTION)
 	..()
 
 //Back transfer but removes credits form the game to make people want to sell things or make money
@@ -369,7 +369,7 @@
 	target = pick(valids_targets)
 	units_requested = rand(1000, 2000) //Housing water and power, shouldnt be cheap
 	desc = "The bills must be payed or you could be without housing, or other normal luxuries, provide this account number: \"[target.account_number]\" with the sum of [units_requested][CREDITS]..."
-	RegisterSignal(owner.initial_account, COMSIG_TRANSATION, .proc/task_completed)
+	RegisterSignal(owner.initial_account, COMSIG_TRANSACTION, .proc/task_completed)
 
 /datum/individual_objective/bills/task_completed(datum/money_account/S, datum/money_account/T, amount)
 	if(S == owner.initial_account && amount >= units_requested && T != S)
@@ -377,5 +377,5 @@
 
 /datum/individual_objective/bills/completed()
 	if(completed) return
-	UnregisterSignal(owner.initial_account, COMSIG_TRANSATION)
+	UnregisterSignal(owner.initial_account, COMSIG_TRANSACTION)
 	..()

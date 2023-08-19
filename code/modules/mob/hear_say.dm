@@ -23,7 +23,7 @@
 
 	if(verb == "reports")
 		var/cop_code
-		if(is_neotheology_disciple(src))
+		if(is_custodian_of_bonfire(src))
 			cop_code = get_cop_code(holy = TRUE)
 		else
 			cop_code = get_cop_code()
@@ -84,7 +84,7 @@
 
 	if(rverb == "reports")
 		var/cop_code
-		if(is_neotheology_disciple(src))
+		if(is_custodian_of_bonfire(src))
 			cop_code = get_cop_code(holy = TRUE)
 		else
 			cop_code = get_cop_code()

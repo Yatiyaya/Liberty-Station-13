@@ -512,7 +512,7 @@
 
 	if(isbroken)
 		var/T = get_turf(src)
-		log_debug("breakTool 1, I [src.name] am broken and was called more then once, or am sticking around illegal! [jumplink(T)] User:[src]")
+		log_debug("breakTool 1, I [src.name] am broken and was called more than once, or I am still in the world when I should've been deleted! [jumplink(T)] User:[src]")
 		return //We already ran through this once, if we stick around then thats a issue
 
 	isbroken = TRUE
@@ -524,7 +524,7 @@
 
 		to_chat(user, SPAN_DANGER("Your [src] broke!"))
 		new /obj/item/material/shard/shrapnel(user.loc)
-		playsound(get_turf(src), 'sound/effects/impacts/thud1.ogg', 50, 1 -3)
+		playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1, -3)
 		user.unEquip(src)
 		qdel(src)
 		return
@@ -533,7 +533,7 @@
 	if(istype(loc, /obj/machinery/door/airlock))
 		var/obj/machinery/door/airlock/AD = loc
 		AD.take_out_wedged_item()
-	playsound(get_turf(src), 'sound/effects/impacts/thud1.ogg', 50, 1 -3)
+	playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1, -3)
 	qdel(src)
 
 /******************************

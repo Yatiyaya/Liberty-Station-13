@@ -17,7 +17,7 @@
 	var/list/allowed_organs = list()
 	var/position_flag = 0
 	var/external = FALSE
-	var/cruciform_resist = FALSE
+	var/hearthcore_resist = FALSE
 	var/is_metal = TRUE
 	var/scanner_hidden = FALSE
 	var/is_deathalarm = FALSE
@@ -163,7 +163,7 @@
 	return TRUE
 
 /obj/item/implant/proc/clean_of_hearthcore()
-	if(locate(/obj/item/implant/core_implant/cruciform) in wearer.contents)
+	if(locate(/obj/item/implant/core_implant/hearthcore) in wearer.contents)
 		return FALSE
 	else
 		return TRUE

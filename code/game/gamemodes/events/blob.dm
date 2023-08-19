@@ -508,7 +508,7 @@
 /obj/structure/multiz
 	unacidable = 1
 
-/obj/machinery/multistructure/bioreactor_part
+/obj/machinery/multistructure/bonfire_part
 	unacidable = 1
 
 //Stepping on a blob is bad for your health.

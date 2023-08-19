@@ -250,7 +250,7 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 
 	if (difficulty)
 		if(ishuman(user))
-			var/mob/living/carbon/human/H
+			var/mob/living/carbon/human/H = user
 			if(!H.stats.getPerk(PERK_NO_OBFUSCATION))
 				to_chat(H, SPAN_NOTICE("You failed to release the trap. There was a [round(100 - difficulty)]% chance of success"))
 			else

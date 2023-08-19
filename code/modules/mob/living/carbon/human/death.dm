@@ -65,7 +65,7 @@
 	learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/rebound_case, "REBOUND_CASE", skill_gained = 1, learner = src)
 
 	if(stats.getPerk(PERK_TERRIBLE_FATE))
-		visible_message(SPAN_WARNING("their inert body emits a strange sensation and a cold invades your body. Their screams before dying recount in your mind."))
+		visible_message(SPAN_WARNING("their inert body emits a strange sensation and a cold invades your body. Their screams before dying echo in your mind."))
 
 	. = ..(gibbed,form.death_message)
 	if(!gibbed)
@@ -76,11 +76,11 @@
 			playsound(loc, form.death_sound, 80, 1, 1)
 	handle_hud_list()
 
-	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C && C.active)
-		var/obj/item/cruciform_upgrade/upgrade = C.upgrade
+		var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
 		if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_MARTYR_GIFT))
-			var/obj/item/cruciform_upgrade/martyr_gift/martyr = upgrade
+			var/obj/item/hearthcore_upgrade/martyr_gift/martyr = upgrade
 			visible_message(SPAN_DANGER("The [C] emit a massive light!"))
 			var/damage_healed
 			for(var/mob/living/L in oviewers(6, src))

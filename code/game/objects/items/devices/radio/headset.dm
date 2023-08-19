@@ -228,12 +228,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/clubmanager
 
-/obj/item/device/radio/headset/heads/preacher
-	name = "oathbound's headset"
-	desc = "The headset of the man who leads the local chapter of the Custodians"
+/obj/item/device/radio/headset/heads/oathpledge
+	name = "oathpledge's headset"
+	desc = "The headset of the one who leads the local chapter of the Custodians."
 	icon_state = "nt_com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/heads/preacher
+	ks2type = /obj/item/device/encryptionkey/heads/oathpledge
 
 /obj/item/device/radio/headset/headset_cargo
 	name = "supply radio headset"
@@ -272,12 +272,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
-/obj/item/device/radio/headset/church
-	name = "church headset"
-	desc = "If you listen closely you can hear God."
+/obj/item/device/radio/headset/bonfire
+	name = "bonfire custodian headset"
+	desc = "For comunication within the chapter through long distances."
 	icon_state = "nt_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_church
+	ks2type = /obj/item/device/encryptionkey/headset_bonfire
 
 /obj/item/device/radio/headset/bluetag
 	name = "blue plasmatag team headset"

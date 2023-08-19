@@ -80,7 +80,7 @@
 		else if (health < maxHealth * 0.80)
 			to_chat(user, SPAN_WARNING("It has had minor damage done to it."))
 		else if (health < maxHealth)
-			to_chat(user, SPAN_WARNING("It has a few cuts and bruses."))
+			to_chat(user, SPAN_WARNING("It has a few cuts and bruises."))
 
 /mob/living/carbon/superior_animal/handmade/Move(NewLoc, Dir = 0, step_x = 0, step_y = 0, var/glide_size_override = 0) //WE CLEAN!
 	. = ..()

@@ -4404,12 +4404,12 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "Xz" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "XA" = (

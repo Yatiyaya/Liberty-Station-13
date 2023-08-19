@@ -203,24 +203,25 @@
 #define CORE_ACTIVATED /datum/core_module/activatable
 
 //Hearthcore modules, think of them like flags that can hold ritual types
-#define CRUCIFORM_COMMON /datum/core_module/rituals/cruciform/base
-#define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
-#define CRUCIFORM_OATHBOUND /datum/core_module/rituals/cruciform/oathbound
-#define CRUCIFORM_ENKINDLED /datum/core_module/rituals/cruciform/enkindled
-#define CRUCIFORM_FORGEMASTER /datum/core_module/rituals/cruciform/forgemaster
-#define CRUCIFORM_OATHPLEDGE /datum/core_module/rituals/cruciform/oathpledge
-#define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
-#define CRUCIFORM_DAMAGED /datum/core_module/rituals/cruciform/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
+#define HEARTHCORE_COMMON /datum/core_module/lectures/hearthcore/base
+#define HEARTHCORE_CUSTODIAN /datum/core_module/lectures/hearthcore/custodian
+#define HEARTHCORE_OATHBOUND /datum/core_module/lectures/hearthcore/oathbound
+#define HEARTHCORE_ENKINDLED /datum/core_module/lectures/hearthcore/enkindled
+#define HEARTHCORE_FORGEMASTER /datum/core_module/lectures/hearthcore/forgemaster
+#define HEARTHCORE_OATHPLEDGE /datum/core_module/lectures/hearthcore/oathpledge
+#define HEARTHCORE_ANTI_SCRYING /datum/core_module/lectures/hearthcore/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
+#define HEARTHCORE_DAMAGED /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
 
-#define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
-#define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
+#define HEARTHCORE_UPLINK /datum/core_module/hearthcore/uplink
+#define HEARTHCORE_CLONING /datum/core_module/hearthcore/cloning
 
-#define CUPGRADE_NATURES_BLESSING /obj/item/cruciform_upgrade/natures_blessing
-#define CUPGRADE_FAITHS_SHIELD /obj/item/cruciform_upgrade/faiths_shield
-#define CUPGRADE_CLEANSING_PSESENCE /obj/item/cruciform_upgrade/cleansing_presence
-#define CUPGRADE_MARTYR_GIFT /obj/item/cruciform_upgrade/martyr_gift
-#define CUPGRADE_WRATH_OF_GOD /obj/item/cruciform_upgrade/wrath_of_god
-#define CUPGRADE_SPEED_OF_THE_CHOSEN /obj/item/cruciform_upgrade/speed_of_the_chosen
+#define CUPGRADE_NATURES_BLESSING /obj/item/hearthcore_upgrade/natures_blessing
+#define CUPGRADE_BLAZING_AEGIS /obj/item/hearthcore_upgrade/blazing_aegis
+#define CUPGRADE_CLEANSING_PSESENCE /obj/item/hearthcore_upgrade/cleansing_flames
+#define CUPGRADE_MARTYR_GIFT /obj/item/hearthcore_upgrade/martyr_gift
+#define CUPGRADE_BURNING_FURY /obj/item/hearthcore_upgrade/burning_fury
+#define CUPGRADE_EMBERS_OF_SWIFTNESS /obj/item/hearthcore_upgrade/embers_of_swiftness
+#define CUPGRADE_PHOENIX_EDICT /obj/item/hearthcore_upgrade/phoenix_edict
 
 //https://secure.byond.com/docs/ref/info.html#/atom/var/mouse_opacity
 #define MOUSE_OPACITY_TRANSPARENT 0

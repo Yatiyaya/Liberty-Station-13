@@ -6,12 +6,12 @@
 /obj/item/organ/internal/psionic_tumor/proc/psionic_telepathy()
 	set category = "Psionic powers"
 	set name = "Telepathic projection (1)"
-	set desc = "Expend a single point of your psi essence to send a message to someone. Cruciform users are shielded from this heresy and synthetics lack the flesh for it."
+	set desc = "Expend a single point of your psi essence to send a message to someone. Hearthcore bearers are shielded from this action and synthetics lack the flesh for it."
 	psi_point_cost = 1
 
 	var/list/creatures = list() // Who we can talk to
 	for(var/mob/living/carbon/human/h in world) // Check every players in the game
-		if(!h.species?.reagent_tag != IS_SYNTHETIC && !h.get_core_implant(/obj/item/implant/core_implant/cruciform) && !h.is_mannequin) // Can't talk to robots or people with cruciforms or mannequins
+		if(!h.species?.reagent_tag != IS_SYNTHETIC && !h.get_core_implant(/obj/item/implant/core_implant/hearthcore) && !h.is_mannequin) // Can't talk to robots or people with hearthcores or mannequins
 			creatures += h // Add the player to the list we can talk to
 	var/mob/living/carbon/human/target = input("Who do you want to project your mind to ?") as null|anything in creatures
 	if (isnull(target))

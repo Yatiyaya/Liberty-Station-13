@@ -554,7 +554,7 @@ No more of that.
 	for(var/obj/structure/closet/L in hear(7, get_turf(src)))
 		if(locate(/mob/living/carbon/, L))
 			for(var/mob/living/carbon/M in L)
-				var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
+				var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 				if(I && I.active && I.wearer)
 					continue
 				M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_ADEPT, 45 SECONDS)
@@ -566,7 +566,7 @@ No more of that.
 				flashbang_bang(get_turf(src), M, bang_text)
 
 	for(var/mob/living/carbon/M in hear(7, get_turf(src)))
-		var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/cruciform)
+		var/obj/item/implant/core_implant/I = M.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(I && I.active && I.wearer)
 			continue
 		M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_ADEPT, 45 SECONDS)
@@ -589,7 +589,7 @@ No more of that.
 
 /obj/item/tool/sword/custodians_damocles/equipped(mob/living/M)
 	. = ..()
-	if(is_held() && is_neotheology_disciple(M))
+	if(is_held() && is_custodian_of_bonfire(M))
 		embed_mult = 0.1
 	else
 		embed_mult = initial(embed_mult)
@@ -631,7 +631,7 @@ No more of that.
 	..()
 	if(sword && istype(user, /mob/living/carbon))
 		var/mob/living/carbon/H = user
-		var/obj/item/implant/core_implant/I = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
+		var/obj/item/implant/core_implant/I = H.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(I && I.active && I.wearer)
 			H.put_in_hands(sword)
 			visible_message(SPAN_NOTICE("[user] removed [sword] from the [src]."))

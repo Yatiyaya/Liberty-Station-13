@@ -95,9 +95,9 @@ GLOBAL_LIST_EMPTY(all_faction_items)
 //faction_items
 GLOBAL_LIST_EMPTY(individual_objectives)
 
-//NeoTheology
-GLOBAL_LIST_EMPTY(all_rituals)//List of all rituals
-GLOBAL_LIST_EMPTY(global_ritual_cooldowns) // internal lists. Use ritual's cooldown_category
+//Custodian lectures and their cooldowns
+GLOBAL_LIST_EMPTY(all_lectures)//List of all lectures
+GLOBAL_LIST_EMPTY(global_lecture_cooldowns) // internal lists. Use lectures' cooldown_category
 
 //Preferences stuff
 	//Body Sprites
@@ -344,14 +344,14 @@ var/global/list/hair_gradients_list = list(
 		var/datum/hud/C = new T
 		GLOB.HUDdatums[C.name] = C
 
-	//Rituals
-	paths = typesof(/datum/ritual)
+	//Lectures
+	paths = typesof(/datum/lecture)
 	for(var/T in paths)
-		var/datum/ritual/R = new T
+		var/datum/lecture/R = new T
 
-		//Rituals which are just categories for subclasses will have a null phrase
+		//Lectures which are just categories for subclasses will have a null phrase
 		if (R.phrase)
-			GLOB.all_rituals[R.name] = R
+			GLOB.all_lectures[R.name] = R
 
 	return 1
 

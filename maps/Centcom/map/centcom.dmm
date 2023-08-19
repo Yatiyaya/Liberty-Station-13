@@ -6854,7 +6854,7 @@
 /area/centcom/evac)
 "QI" = (
 /obj/structure/table/woodentable,
-/obj/item/implant/core_implant/cruciform,
+/obj/item/implant/core_implant/hearthcore,
 /turf/simulated/floor/carpet/oracarpet,
 /area/centcom/evac)
 "QK" = (

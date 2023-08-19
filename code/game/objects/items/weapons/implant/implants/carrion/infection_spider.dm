@@ -16,7 +16,7 @@
 	if(wearer.stat == DEAD)
 		to_chat(owner_mob, SPAN_WARNING("[wearer] is dead"))
 		return
-	if(is_neotheology_disciple(wearer))
+	if(is_custodian_of_bonfire(wearer))
 		to_chat(owner_mob, SPAN_WARNING("[wearer]'s hearthcore prevents activation"))
 		return
 
@@ -32,7 +32,7 @@
 	to_chat(owner_mob, SPAN_NOTICE("\The [src] is active"))
 
 	spawn(15 MINUTES)
-		if(wearer && istype(wearer) && !(wearer.stat == DEAD) && !is_neotheology_disciple(wearer) && active && !is_carrion(wearer))
+		if(wearer && istype(wearer) && !(wearer.stat == DEAD) && !is_custodian_of_bonfire(wearer) && active && !is_carrion(wearer))
 			to_chat(wearer, SPAN_DANGER("The transformation is complete, you are not human anymore, you are something more"))
 			to_chat(owner_mob, SPAN_NOTICE("\The [src] was succesfull"))
 			wearer.make_carrion()

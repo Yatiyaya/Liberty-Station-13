@@ -72,9 +72,9 @@
 
 				bloodDNA = null
 
-			var/obj/item/implant/core_implant/cruciform/C = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
+			var/obj/item/implant/core_implant/hearthcore/C = H.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 			if(C && C.active)
-				var/obj/item/cruciform_upgrade/upgrade = C.upgrade
+				var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
 				if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_CLEANSING_PSESENCE))
 					clean_ultimate(H)
 

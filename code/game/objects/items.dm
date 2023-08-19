@@ -120,6 +120,7 @@
 	var/alt_mode_toggle = ""
 	var/alt_mode_lossrate = 0.5
 	var/alt_mode_sharp = FALSE
+	var/is_material_weapon = FALSE // Are we a material weapon?
 
 /obj/item/Initialize()
 
@@ -623,11 +624,12 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	force = initial(force)
 	armor_penetration = initial(armor_penetration)
 	item_flags = initial(item_flags)
-	name = initial(name)
 	max_upgrades = initial(max_upgrades)
 	allow_simulacrum_mods = initial(allow_simulacrum_mods)
-	color = initial(color)
 	sharp = initial(sharp)
+	if(!is_material_weapon) // Don't do this for material based weapons since it ruins them
+		name = initial(name)
+		color = initial(color)
 	prefixes = list()
 
 	extra_bulk = initial(extra_bulk)
@@ -665,7 +667,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 //Soj cringe
 
 /obj/item/proc/verb_alt_mode_activeate()
-	set name = "Weapon: Toggle Alt Mode"
+	set name = "Weapon: Toggle Alt Mode" //Not all alt modes are nonlethal
 	set category = "Object"
 	set src in usr
 
@@ -677,7 +679,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	if(alt_mode_active)
 		visible_message(SPAN_DANGER("[user] [alt_mode_toggle]."))
 	else
-		visible_message(SPAN_DANGER("[user] beings to use their weapon in a more standard way."))
+		visible_message(SPAN_DANGER("[user] begins to use their weapon in a more standard way."))
 
 /obj/item/proc/alt_mode_activeate_two()
 	damtype = alt_mode_damagetype
