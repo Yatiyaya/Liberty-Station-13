@@ -399,6 +399,8 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
+/obj/item/clothing/suit/storage/toggle/skylight_coat,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "agi" = (
@@ -1251,6 +1253,14 @@
 	name = "Elevator"
 	},
 /area/liberty/hallway/surface/section1)
+"aqj" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "aqn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2495,11 +2505,18 @@
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
 /obj/effect/overlay/water/top,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/beach/water/jungledeep{
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor3south)
+"aFv" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "aFy" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3993,6 +4010,12 @@
 	},
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/storage/primary)
+"aWr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/item/stack/thrown/throwing_knife,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "aWs" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8;
@@ -4351,7 +4374,7 @@
 "bbj" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/simulated/wall/rust_standard,
 /area/liberty/maintenance/undergroundfloor3south)
 "bbn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4532,6 +4555,7 @@
 /obj/structure/table/standard,
 /obj/random/booze,
 /obj/random/cigarettes,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "bdd" = (
@@ -6546,10 +6570,7 @@
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
 /obj/effect/overlay/water/top,
-/turf/simulated/floor/beach/water/jungledeep{
-	desc = "Filthy, stinking bilge water.";
-	name = "murky water"
-	},
+/turf/simulated/wall/rust_standard,
 /area/liberty/maintenance/undergroundfloor3south)
 "bCh" = (
 /obj/effect/floor_decal/industrial/stand_clear{
@@ -7038,6 +7059,9 @@
 "bHH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/mask/gas/old,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/head,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "bHL" = (
@@ -7383,6 +7407,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/hallway/surface/section1)
+"bMs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3south)
 "bMv" = (
 /obj/machinery/door/blast/shutters{
 	id = "Skynet_launch";
@@ -9285,6 +9315,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "cgz" = (
@@ -9958,7 +9989,9 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/cheap/saber,
-/obj/item/clothing/head/fedora/feathered,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/chest,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "cnV" = (
@@ -10283,6 +10316,10 @@
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
+"crO" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/wall/rust_reinforced,
+/area/liberty/maintenance/undergroundfloor3north)
 "crV" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -10515,6 +10552,9 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "cum" = (
@@ -13803,6 +13843,7 @@
 "dfk" = (
 /mob/living/carbon/superior_animal/roach/fuhrer,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "dfs" = (
@@ -14277,6 +14318,11 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/hallway/side/f2section1)
+"djX" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3south)
 "dkc" = (
 /obj/structure/low_wall,
 /obj/structure/low_wall,
@@ -15022,6 +15068,14 @@
 /obj/structure/flora/tree/snow/snow,
 /turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
+"duy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/item/storage/deferred/crate/uniform_light,
+/obj/random/scrap/sparse_even,
+/obj/random/scrap/dense_weighted,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "duK" = (
 /obj/structure/railing/grey{
 	dir = 4
@@ -15063,6 +15117,7 @@
 /obj/random/cloth/belt,
 /obj/random/cloth/belt,
 /obj/item/storage/deferred/crate/uniform_flak,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "dvw" = (
@@ -15526,8 +15581,9 @@
 /obj/item/storage/deferred/crate/iron_lock_security_uniform,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/device/radio/headset,
-/obj/item/clothing/head/helmet/space/void/merc/xanorath,
-/obj/item/gun/projectile/makarov/preloaded,
+/obj/effect/floor_decal/rust,
+/obj/item/gun/projectile/revolver/longboi,
+/obj/item/clothing/head/fedora/feathered,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "dAB" = (
@@ -17335,6 +17391,7 @@
 "dWi" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/maintenance/undergroundfloor3south)
 "dWj" = (
@@ -17342,6 +17399,8 @@
 /obj/structure/flora/small/trailrocka3,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "dWm" = (
@@ -17415,6 +17474,7 @@
 /obj/item/tool/cheap/saber,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "dXJ" = (
@@ -18929,6 +18989,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
 "esO" = (
@@ -19009,6 +19070,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/knife/boot,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "etP" = (
@@ -19153,6 +19215,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/sofa/teal/corner,
 /obj/random/medical_lowcost_handmade,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "evo" = (
@@ -20294,6 +20357,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/liberty/maintenance/undergroundfloor2west)
+"eJs" = (
+/obj/structure/catwalk,
+/obj/structure/boulder,
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3south)
 "eJw" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
@@ -20921,10 +20990,11 @@
 /turf/simulated/floor/rock,
 /area/colony)
 "eRQ" = (
-/obj/item/clothing/mask/gas/old,
-/obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/maintenance/undergroundfloor3north)
+/obj/structure/grille/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint_perforated,
+/area/liberty/maintenance/undergroundfloor3south)
 "eRS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/contraband/poster/placed/eris/irresponsiblemedical{
@@ -21993,6 +22063,7 @@
 /area/liberty/maintenance/oldmining)
 "fgE" = (
 /obj/structure/showcase/horrific_experiment_cryo,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "fgN" = (
@@ -22712,6 +22783,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor3south)
 "foE" = (
@@ -23362,6 +23434,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
 /obj/structure/grille/broken,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "fwZ" = (
@@ -24468,6 +24541,14 @@
 /obj/random/material_rare/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/research)
+"fKR" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "fKU" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
@@ -25879,6 +25960,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/baton/cattleprod,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/l_leg,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "gbu" = (
@@ -25981,6 +26064,7 @@
 	name = "Skylight Vault";
 	req_access = list(41)
 	},
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "gcp" = (
@@ -27558,6 +27642,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/engine_room)
+"gwn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/rock/alt,
+/area/liberty/maintenance/undergroundfloor3north)
 "gws" = (
 /obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/snow,
@@ -27911,6 +28000,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/head/helmet/faceshield/altyn/milisha,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "gAa" = (
@@ -28281,6 +28371,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/flakvest/full,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "gEJ" = (
@@ -28458,6 +28550,7 @@
 "gGZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cloth/helmet,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "gHa" = (
@@ -30230,6 +30323,11 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/command/tcommsat/computer)
+"haj" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/liberty/maintenance/undergroundfloor3south)
 "har" = (
 /obj/structure/flora/big/rocks1,
 /turf/simulated/floor/asteroid/dirt/dark,
@@ -30525,6 +30623,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/cheap/saber,
 /obj/random/booze,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "hew" = (
@@ -31384,6 +31484,7 @@
 /obj/structure/table/standard,
 /obj/random/booze,
 /obj/random/cigarettes,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "hoF" = (
@@ -32100,6 +32201,8 @@
 /obj/machinery/floodlight,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "hxA" = (
@@ -34001,6 +34104,7 @@
 	name = "Skylight Vault";
 	req_access = list(41)
 	},
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "hUz" = (
@@ -34826,6 +34930,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "ifI" = (
@@ -35016,6 +35121,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/hunter,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
 "iiQ" = (
@@ -36368,6 +36475,9 @@
 /obj/item/stack/ore/gold,
 /obj/effect/decal/cleanable/rubble,
 /obj/item/tool/cheap/axe,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/random/cluster/roaches,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "iyu" = (
@@ -36722,6 +36832,7 @@
 /obj/machinery/suit_storage_unit/merc,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "iCA" = (
@@ -37567,6 +37678,9 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/sechall)
+"iNY" = (
+/turf/simulated/wall/rust_reinforced,
+/area/liberty/maintenance/undergroundfloor3north)
 "iNZ" = (
 /obj/structure/decor_light/wallcandle{
 	pixel_y = 32
@@ -37949,6 +38063,8 @@
 /obj/item/stack/ore/gold,
 /obj/item/shield/buckler/energy,
 /obj/random/booze,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "iTA" = (
@@ -38903,6 +39019,12 @@
 /obj/structure/multiz/stairs/enter/bottom,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/range)
+"jek" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/item/remains/human,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "jem" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -39487,6 +39609,7 @@
 "jll" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/fuhrer,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "jlo" = (
@@ -40646,6 +40769,12 @@
 "jzt" = (
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/tactical)
+"jzu" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust/color_rusted,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "jzE" = (
 /obj/structure/toilet{
 	dir = 4
@@ -40861,6 +40990,7 @@
 "jCs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/scrap,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/maintenance/undergroundfloor3south)
 "jCx" = (
@@ -41804,6 +41934,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/knife/boot,
 /mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/machinery/door/airlock/vault{
+	name = "Skylight Vault";
+	req_access = list(41)
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "jNN" = (
@@ -42303,6 +42439,14 @@
 	name = "murky water"
 	},
 /area/liberty/maintenance/undergroundfloor2south)
+"jTw" = (
+/obj/structure/boulder,
+/obj/machinery/door/airlock/vault{
+	name = "Skylight Vault";
+	req_access = list(41)
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "jTC" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock,
@@ -42344,6 +42488,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "jUd" = (
@@ -42354,6 +42500,8 @@
 /mob/living/carbon/superior_animal/roach/tank,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "jUm" = (
@@ -42387,10 +42535,12 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "jUK" = (
-/obj/item/clothing/mask/gas/old,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/toxic,
 /obj/item/ammo_magazine/smg_35/hv/empty,
+/obj/item/clothing/mask/gas/old,
+/obj/effect/floor_decal/rust,
+/mob/living/carbon/superior_animal/roach/tazntz,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "jUN" = (
@@ -42754,6 +42904,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/vest,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/r_leg,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "jYW" = (
@@ -44158,6 +44310,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
 /obj/random/cigarettes,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "kpg" = (
@@ -45658,6 +45811,7 @@
 /obj/random/closet_syndieloot/low_chance,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "kJd" = (
@@ -45724,6 +45878,8 @@
 "kJT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/ammo,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/l_arm,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "kJU" = (
@@ -46761,6 +46917,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
+"kVM" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/remains/human,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "kVQ" = (
 /obj/machinery/door/airlock/security{
 	name = "Armory";
@@ -48306,6 +48468,7 @@
 /obj/random/pack/rare,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "lpM" = (
@@ -49976,6 +50139,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/random/cluster/roaches,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "lLg" = (
@@ -50201,6 +50365,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/fuhrer,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "lNt" = (
@@ -50345,6 +50511,10 @@
 /obj/machinery/recharger,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm4)
+"lOG" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/rust_reinforced,
+/area/liberty/maintenance/undergroundfloor3north)
 "lOH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
@@ -52116,6 +52286,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/cheap/axe,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "mmA" = (
@@ -52756,6 +52928,12 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/panic_room)
+"mvk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/item/remains/human,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "mvl" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -53126,6 +53304,9 @@
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "mAt" = (
@@ -53921,6 +54102,7 @@
 "mMb" = (
 /obj/random/closet_syndieloot,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "mMh" = (
@@ -54143,7 +54325,7 @@
 "mNY" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/simulated/wall/rust_reinforced,
 /area/liberty/maintenance/undergroundfloor3north)
 "mOb" = (
 /obj/structure/shuttle_part/mining{
@@ -56942,6 +57124,12 @@
 /obj/landmark/join/start/doctor,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/organ_lab)
+"nwF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "nwK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -57538,6 +57726,13 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
+"nDO" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "nDR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -57692,6 +57887,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/human,
 /obj/item/device/radio/headset,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "nGf" = (
@@ -58120,6 +58316,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
+"nLo" = (
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "nLp" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -58719,6 +58927,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/cryo)
+"nRD" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/boulder,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "nRH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
@@ -61859,6 +62074,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/glowing,
 /mob/living/carbon/superior_animal/roach/support,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "oEu" = (
@@ -62496,6 +62712,11 @@
 "oLR" = (
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/engineering/shield_generator)
+"oLU" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/r_wall,
+/area/liberty/maintenance/undergroundfloor3north)
 "oLY" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/smartfridge/drying_rack,
@@ -62652,6 +62873,12 @@
 	},
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/engineering/shield_generator)
+"oNl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/r_wall,
+/area/liberty/maintenance/undergroundfloor3north)
 "oNs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -63211,6 +63438,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/hunter,
 /obj/structure/catwalk,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
 "oUt" = (
@@ -64571,6 +64799,12 @@
 	},
 /turf/simulated/floor/tiled/steel/panels,
 /area/liberty/crew_quarters/dorm3)
+"plO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/item/storage/pouch/kniferig,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "pma" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/tiled/techmaint,
@@ -64736,6 +64970,10 @@
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
+"pos" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/simulated/wall/rust_standard,
+/area/liberty/maintenance/undergroundfloor3south)
 "poz" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -64997,10 +65235,16 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2south)
+"prM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "prO" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "prT" = (
@@ -68037,6 +68281,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/fuhrer,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qaw" = (
@@ -68066,6 +68312,7 @@
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/toxic,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qaR" = (
@@ -68182,6 +68429,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/machinery/door/airlock/vault{
+	name = "Skylight Vault";
+	req_access = list(41)
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qcf" = (
@@ -68584,6 +68837,7 @@
 	},
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qgz" = (
@@ -69398,6 +69652,10 @@
 	icon_state = "11,19"
 	},
 /area/shuttle/rocinante_shuttle_area)
+"qoW" = (
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall,
+/area/liberty/maintenance/undergroundfloor3south)
 "qoZ" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
@@ -70197,6 +70455,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
 /obj/structure/grille/broken,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "qzD" = (
@@ -70276,6 +70535,7 @@
 /obj/structure/table/standard,
 /obj/random/booze,
 /obj/random/cigarettes,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qAz" = (
@@ -71734,6 +71994,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/human,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/obj/item/robot_parts/r_arm,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "qSP" = (
@@ -72937,7 +73200,7 @@
 "rhn" = (
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
-/turf/simulated/wall,
+/turf/simulated/wall/rust_standard,
 /area/liberty/maintenance/undergroundfloor3south)
 "rhy" = (
 /obj/effect/floor_decal/spline/wood{
@@ -73647,8 +73910,14 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
+"rqE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/r_wall,
+/area/liberty/maintenance/undergroundfloor3north)
 "rqG" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -74018,6 +74287,8 @@
 /obj/item/remains/mouse,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "rvk" = (
@@ -74548,6 +74819,8 @@
 "rAO" = (
 /obj/random/scrap/sparse_even,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/random/scrap/dense_weighted,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "rBb" = (
@@ -74798,6 +75071,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/vest/handmade/full,
+/obj/effect/damagedfloor/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "rEo" = (
@@ -75682,6 +75956,8 @@
 /mob/living/carbon/superior_animal/roach/nanite,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /obj/random/cigarettes,
+/obj/effect/floor_decal/rust,
+/obj/random/closet_syndieloot,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "rRi" = (
@@ -75796,6 +76072,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/human,
 /obj/item/device/radio/headset,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "rSp" = (
@@ -76313,9 +76591,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/command/panic_room)
 "rYR" = (
-/obj/item/remains/mouse,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/rust_reinforced,
 /area/liberty/maintenance/undergroundfloor3north)
 "rYS" = (
 /turf/simulated/shuttle/wall/mining{
@@ -77399,6 +77677,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/floodlight,
+/obj/item/clothing/mask/gas/old,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "sjv" = (
@@ -77647,6 +77927,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/deferred/crate/alcohol,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "smK" = (
@@ -77663,6 +77944,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/gun_cheap,
 /obj/random/melee,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "snj" = (
@@ -78263,6 +78545,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor2east)
+"stj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3south)
 "stk" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -78390,6 +78677,7 @@
 "suW" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/item/scrap_lump,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/maintenance/undergroundfloor3south)
 "suX" = (
@@ -78734,6 +79022,11 @@
 	},
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/hallway/surface/section1)
+"szd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/liberty/maintenance/undergroundfloor3south)
 "szg" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 4;
@@ -80624,6 +80917,13 @@
 "sUd" = (
 /turf/unsimulated/mineral,
 /area/liberty/maintenance/undergroundfloor3south)
+"sUg" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/fuhrer,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "sUq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/material/metal,
@@ -81571,6 +81871,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/projectile/shotgun/doublebarrel,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "tgE" = (
@@ -81802,8 +82103,8 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor3east)
 "tjl" = (
-/obj/item/remains/mouse,
-/turf/simulated/wall,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/r_wall,
 /area/liberty/maintenance/undergroundfloor3north)
 "tjr" = (
 /obj/machinery/photocopier,
@@ -82542,11 +82843,21 @@
 	},
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/security/maingate_outside)
+"trB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3south)
 "trP" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/boulder,
+/obj/machinery/door/airlock/vault{
+	name = "Skylight Vault";
+	req_access = list(41)
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "trR" = (
@@ -82715,6 +83026,7 @@
 /area/liberty/maintenance/oldpool)
 "ttm" = (
 /obj/structure/showcase/horrific_experiment_cloning,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "tty" = (
@@ -83455,6 +83767,8 @@
 /obj/random/scrap,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "tDx" = (
@@ -84542,6 +84856,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/nanite,
 /mob/living/carbon/superior_animal/roach/tazntz,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "tQw" = (
@@ -85011,9 +85326,8 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2south)
 "tWh" = (
-/mob/living/carbon/superior_animal/roach/tazntz,
-/obj/structure/low_wall,
-/turf/simulated/floor/tiled/techmaint,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/rust_reinforced,
 /area/liberty/maintenance/undergroundfloor3north)
 "tWj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -85615,6 +85929,7 @@
 /obj/random/cloth/backpack,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/deferred/crate/uniform_flak,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "udP" = (
@@ -87028,6 +87343,7 @@
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/toxic,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "uuR" = (
@@ -88663,6 +88979,13 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/shuttle)
+"uQg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed,
+/obj/structure/boulder,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "uQi" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	name = "fridge"
@@ -89731,6 +90054,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1north)
+"vfK" = (
+/obj/effect/decal/cleanable/dirt/snow,
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/asteroid/dirt/mud,
+/area/liberty/maintenance/undergroundfloor3north)
 "vfM" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -90902,6 +91230,13 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
+"vtM" = (
+/obj/random/scrap/sparse_even/low_chance,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3south)
 "vtS" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -91043,7 +91378,7 @@
 /area/liberty/medical/genetics_cloning)
 "vuR" = (
 /obj/structure/boulder,
-/turf/simulated/wall,
+/turf/simulated/wall/rust_standard,
 /area/liberty/maintenance/undergroundfloor3south)
 "vuW" = (
 /obj/structure/table/reinforced,
@@ -91243,6 +91578,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
+"vwt" = (
+/obj/random/scrap,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3south)
 "vwy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -91524,6 +91866,10 @@
 	},
 /turf/simulated/floor/snow,
 /area/liberty/hallway/surface/section1)
+"vAW" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/rust_standard,
+/area/liberty/maintenance/undergroundfloor3south)
 "vBc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -91770,6 +92116,7 @@
 /obj/item/circuitboard/autodoc,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "vEa" = (
@@ -92984,6 +93331,14 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/oldpool)
+"vRC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/item/storage/deferred/crate/uniform_flak,
+/obj/random/scrap/sparse_even,
+/obj/random/scrap/dense_weighted,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "vRF" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -93412,8 +93767,13 @@
 /obj/item/toy/figure/character/bobblehead/roach,
 /obj/effect/decal/cleanable/rubble,
 /mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
+"vWs" = (
+/turf/simulated/wall/rust_standard,
+/area/liberty/maintenance/undergroundfloor3south)
 "vWt" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
@@ -94482,6 +94842,7 @@
 /obj/item/storage/deferred/crate/exc_gear,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/toxic,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "wiQ" = (
@@ -96018,6 +96379,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/roaches,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "wBv" = (
@@ -96674,6 +97037,12 @@
 /obj/random/furniture/pottedplant,
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
+"wIC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
+/turf/simulated/wall/rust_reinforced,
+/area/liberty/maintenance/undergroundfloor3north)
 "wIE" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -96707,6 +97076,7 @@
 /mob/living/carbon/superior_animal/roach/tazntz,
 /mob/living/carbon/superior_animal/roach/tazntz,
 /obj/item/tool/cheap/katana,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "wIZ" = (
@@ -97063,6 +97433,10 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cloth/helmet,
+/obj/effect/floor_decal/rust,
+/obj/item/storage/deferred/crate/ak,
+/obj/random/scrap/sparse_even,
+/obj/random/scrap/dense_weighted,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "wNa" = (
@@ -97552,6 +97926,14 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/security/vacantoffice2)
+"wRL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
+/obj/item/remains/human,
+/obj/item/clothing/under/skylight_outfit,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "wRR" = (
 /obj/structure/bed/chair/sofa/black/left{
 	dir = 1
@@ -98085,7 +98467,8 @@
 /obj/item/reagent_containers/syringe/large/antitoxin,
 /obj/item/ammo_magazine/ammobox/shotgun/flash,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/showcase/cyborg_old,
+/obj/effect/floor_decal/rust,
+/obj/random/closet_syndieloot,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "wZp" = (
@@ -98264,6 +98647,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/grille/broken,
 /obj/random/cluster/roaches,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "xbN" = (
@@ -98322,6 +98706,7 @@
 "xcn" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/support,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "xcr" = (
@@ -98768,6 +99153,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/roach/tank,
+/obj/effect/floor_decal/rust,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "xhu" = (
@@ -101387,6 +101774,8 @@
 "xOn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/sofa/yellow,
+/obj/effect/floor_decal/rust,
+/obj/item/storage/fancy/cigarettes/skylight,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "xOw" = (
@@ -101440,6 +101829,7 @@
 "xPk" = (
 /obj/structure/ore_box,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3north)
 "xPw" = (
@@ -102834,6 +103224,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/surface/section1)
+"yfg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/floor_decal/rust,
+/obj/item/tool/knife/dagger,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3north)
 "yfl" = (
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/crew_quarters/janitor)
@@ -103483,6 +103880,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/liberty/command/courtroom)
+"ylX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/rust,
+/obj/item/storage/deferred/crate/uniform_light,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "ylZ" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -111533,20 +111936,20 @@ ids
 fCm
 fCm
 fCm
+vWs
 fCm
 fCm
-fCm
-fCm
-hpm
+vWs
+pos
 gWo
+vWs
+fCm
+vWs
+fCm
+vWs
 fCm
 fCm
-fCm
-fCm
-fCm
-fCm
-fCm
-fCm
+vWs
 fCm
 fCm
 fCm
@@ -111738,7 +112141,7 @@ qml
 usP
 uss
 qWK
-euh
+vAW
 lXI
 slu
 aPi
@@ -112149,13 +112552,13 @@ pHF
 esN
 aPi
 tfG
-euh
+vAW
 foC
-fTH
-fTH
+vtM
+vtM
 moM
 qjN
-fCm
+vWs
 emu
 emu
 oac
@@ -112344,17 +112747,17 @@ pdH
 mKc
 uDB
 uDB
-euh
+vAW
 duS
 adi
 uEv
-dAf
+trB
 kla
 vyP
 euh
 qxy
 tDo
-tDo
+vwt
 fTH
 qAO
 fCm
@@ -112559,7 +112962,7 @@ prO
 prO
 vzx
 pdl
-fCm
+vWs
 emu
 rdo
 rdo
@@ -112748,17 +113151,17 @@ xOa
 hiv
 xOa
 xOa
-euh
-euh
+vAW
+vAW
 jMA
-xOB
+eRQ
 hiv
 xOa
 euh
-euh
+vAW
+eRQ
 xOB
-xOB
-xOB
+eRQ
 gdF
 xOa
 hQc
@@ -113155,7 +113558,7 @@ oEq
 xcn
 uzu
 rqz
-byw
+stj
 pHk
 ksa
 dAf
@@ -113164,7 +113567,7 @@ kla
 gHP
 oTJ
 iiK
-byw
+bMs
 fCm
 oac
 rdo
@@ -113356,17 +113759,17 @@ fCm
 lkA
 fCm
 fCm
+vWs
 fCm
 fCm
+vWs
 fCm
+vWs
 fCm
-fCm
-fCm
-fCm
-fCm
-fCm
-fCm
-fCm
+vWs
+qoW
+vWs
+vWs
 fCm
 emu
 rdo
@@ -114544,19 +114947,19 @@ byw
 fCm
 uRQ
 ids
+vWs
+vWs
 fCm
-fCm
-fCm
-fCm
+vWs
 adj
 nZw
 lCA
 nZw
 dKv
-fCm
+vWs
 qpv
-euh
-fCm
+vAW
+vWs
 uRQ
 ids
 sKG
@@ -114745,20 +115148,20 @@ afR
 nYL
 fCm
 uRQ
-fCm
-fCm
+vWs
+vWs
 iJR
 thi
 iJR
-fCm
+vWs
 nZw
 lCA
 orZ
-euh
+vAW
 pwc
 asA
 pxO
-fCm
+vWs
 uRQ
 ids
 sKG
@@ -114951,7 +115354,7 @@ fCm
 rXn
 aRk
 cfr
-cfr
+haj
 bWv
 orZ
 xhz
@@ -115351,7 +115754,7 @@ hFN
 byw
 fCm
 uRQ
-fCm
+vWs
 yeG
 jEC
 hQc
@@ -115360,11 +115763,11 @@ vFG
 tfG
 shl
 tfG
-fCm
+vWs
 eIL
 joC
-fCm
-fCm
+vWs
+vWs
 uRQ
 ids
 sKG
@@ -115563,10 +115966,10 @@ tfG
 tng
 tfG
 fhA
-fCm
+vWs
 iLY
-euh
-fCm
+vAW
+vWs
 uRQ
 ids
 sKG
@@ -115755,16 +116158,16 @@ lLI
 byw
 fCm
 uRQ
+vWs
 fCm
-fCm
-cfr
+haj
 wuW
-fCm
+vWs
 tfG
 dAf
 tng
 tfG
-euh
+vAW
 xOZ
 asA
 jCs
@@ -115878,9 +116281,9 @@ uJl
 sIe
 uJl
 uJl
+uJl
 sIe
-sIe
-sIe
+uJl
 uKZ
 uKZ
 uKZ
@@ -115957,8 +116360,8 @@ lLI
 xLP
 fCm
 uRQ
-fCm
-fCm
+vWs
+vWs
 ttS
 cJY
 iJR
@@ -115966,11 +116369,11 @@ tfG
 shl
 tfG
 eNY
-euh
+vAW
 kZE
 fls
 mKq
-hpm
+pos
 uRQ
 ids
 sKG
@@ -116081,8 +116484,8 @@ uJl
 jpR
 uJl
 sIe
-sIe
-sIe
+uJl
+uJl
 sIe
 sIe
 sIe
@@ -116170,7 +116573,7 @@ tfG
 meb
 hYT
 eSR
-sPS
+szd
 fls
 fCm
 uRQ
@@ -116283,12 +116686,12 @@ uJl
 uJl
 uJl
 sIe
-sIe
-sIe
-sIe
-sIe
 uJl
 uJl
+uJl
+sIe
+uJl
+jpR
 uJl
 sIe
 sIe
@@ -116373,7 +116776,7 @@ sPS
 fCm
 nTd
 joC
-fCm
+vWs
 fCm
 uRQ
 ids
@@ -116466,20 +116869,20 @@ uKZ
 sIe
 sIe
 sIe
-mjh
-clx
-mjh
-jJj
+iNY
+crO
+iTN
+jTw
 yhI
-mjh
-mjh
+iNY
+iNY
 uJl
 uJl
 sIe
 sIe
 oLZ
 uJl
-sIe
+uJl
 sIe
 sIe
 uJl
@@ -116487,8 +116890,8 @@ uJl
 koD
 uJl
 uJl
-sIe
-sIe
+uJl
+uJl
 uJl
 uJl
 uJl
@@ -116563,7 +116966,7 @@ uZc
 byw
 fCm
 uRQ
-fCm
+vWs
 jEC
 wbc
 aHg
@@ -116668,7 +117071,7 @@ uKZ
 sIe
 sIe
 sIe
-mjh
+iNY
 dOS
 vWp
 iyt
@@ -116682,7 +117085,7 @@ sIe
 oLZ
 uJl
 uJl
-sIe
+uJl
 sIe
 sIe
 uJl
@@ -116767,9 +117170,9 @@ fCm
 uRQ
 fCm
 hQc
-fCm
+vWs
 shl
-fCm
+vWs
 vFG
 shl
 tfG
@@ -116870,13 +117273,13 @@ uKZ
 lQe
 uJl
 sIe
-lNh
+txy
 bYO
 xht
 gEv
 rSk
 udK
-lNh
+rYR
 mvI
 mvI
 mvI
@@ -116967,20 +117370,20 @@ iez
 bGP
 fCm
 uRQ
-fCm
+vWs
 jCG
 hQc
-cfr
+haj
 uRQ
 tfG
-lCA
+eJs
 tfG
 iTC
-hpm
+pos
 mTT
 vxe
 oVc
-hpm
+pos
 uRQ
 ids
 omv
@@ -117072,7 +117475,7 @@ qUk
 uJl
 lQe
 lQe
-lNh
+lOG
 oKx
 jUc
 hep
@@ -117091,7 +117494,7 @@ xKU
 joI
 ulk
 joI
-joI
+mvI
 mvI
 mvI
 mvI
@@ -117169,13 +117572,13 @@ afR
 pba
 fCm
 uRQ
-fCm
+vWs
 eaV
 jCG
 cfr
-cfr
+haj
 tfG
-shl
+djX
 tfG
 uEv
 shl
@@ -117275,13 +117678,13 @@ uJl
 mAX
 mAX
 joI
-lNh
-lNh
-lNh
+lOG
+oNl
+wIC
 qce
-lNh
-lNh
-lNh
+prM
+rqE
+lOG
 joI
 mvI
 xYA
@@ -117292,7 +117695,7 @@ mvI
 joI
 mvI
 mvI
-joI
+mvI
 joI
 joI
 joI
@@ -117307,13 +117710,13 @@ ulk
 joI
 joI
 fbo
-lNh
-lNh
-lNh
-lNh
-lNh
-lNh
-lNh
+lOG
+txy
+txy
+lOG
+txy
+lOG
+lOG
 rGx
 ugM
 fXP
@@ -117371,7 +117774,7 @@ hQc
 bGP
 fCm
 uRQ
-fCm
+vWs
 nSR
 rXn
 hQc
@@ -117380,11 +117783,11 @@ tfG
 tng
 vFG
 jeU
-fCm
+vWs
 rCV
 joC
 fCm
-fCm
+vWs
 ids
 ids
 omv
@@ -117477,10 +117880,10 @@ rTW
 xHm
 uJl
 mvI
-lNh
+lOG
 hxp
 qao
-cue
+nLo
 kIX
 lpK
 mNY
@@ -117579,14 +117982,14 @@ nTd
 gdG
 jCG
 vFG
-shl
+djX
 tfG
 jeU
 fCm
 iJR
 cum
 iJR
-fCm
+vWs
 ids
 ids
 emu
@@ -117682,34 +118085,34 @@ mvI
 cnq
 mAj
 wBn
-jgJ
+fKR
 cue
 mms
 ljL
 sTv
-eAh
+nRD
 ojR
 rvi
 ojR
-tOc
-ojR
+sTv
+kVM
 bBV
 ojR
-ojR
+aFv
 ojR
 tOc
 ojR
-ojR
+aFv
 bBV
 tOc
-ojR
-ojR
+aFv
+nDO
 ojR
 tOc
 tOc
 jgJ
 owI
-ojR
+aFv
 juq
 kid
 eWG
@@ -117718,7 +118121,7 @@ rEf
 tSv
 fWf
 tOc
-xRh
+vfK
 mWL
 mWL
 ecs
@@ -117775,10 +118178,10 @@ hQc
 cky
 fCm
 ids
-fCm
+vWs
 lnO
 qKA
-cfr
+haj
 aEu
 orZ
 tng
@@ -117788,7 +118191,7 @@ cum
 lhY
 ttS
 fRs
-fCm
+vWs
 ids
 ids
 emu
@@ -117891,27 +118294,27 @@ trP
 eAh
 cbm
 tOc
-ojR
-ojR
+aFv
+aFv
 bBV
-ojR
+aFv
 tWZ
-ojR
+aFv
 ojR
 bBV
-qao
+sUg
 tOc
 ojR
-eAh
+nRD
 tOc
 ojR
 sug
-ojR
+jzu
 qzx
-owI
+aqj
 cbm
 tOc
-ojR
+nDO
 iak
 sTv
 tDx
@@ -117985,7 +118388,7 @@ adj
 tfG
 lCA
 tfG
-euh
+vAW
 fRs
 niK
 mhm
@@ -118083,19 +118486,19 @@ hzr
 mAX
 uJl
 mvI
-lNh
+lOG
 vDZ
 iCy
 cgy
 nGc
 ify
-mNY
+oLU
 jpp
 yjO
 jNT
 mrW
 ctv
-yjO
+mco
 ctv
 yjO
 bBV
@@ -118179,7 +118582,7 @@ shl
 joC
 fCm
 ids
-fCm
+vWs
 pND
 uFY
 oMq
@@ -118187,7 +118590,7 @@ axt
 tfG
 tng
 dnR
-euh
+vAW
 mBx
 fRs
 fwB
@@ -118285,13 +118688,13 @@ jpR
 rrL
 mAX
 mvI
-lNh
-lNh
-lNh
+lOG
+rYR
+rYR
 smH
 jNp
-lNh
-lNh
+rqE
+txy
 joI
 tfe
 mvI
@@ -118303,8 +118706,8 @@ joI
 joI
 mvI
 mvI
-joI
-joI
+mvI
+mvI
 joI
 joI
 mvI
@@ -118317,13 +118720,13 @@ ulk
 mvI
 joI
 fbo
-lNh
-lNh
-lNh
+lOG
+lOG
+txy
 icQ
-lNh
-lNh
-lNh
+lOG
+lOG
+lOG
 daA
 pNk
 mWL
@@ -118379,9 +118782,9 @@ hie
 daZ
 rcF
 kzf
-fCm
+vWs
 ids
-fCm
+vWs
 vKG
 jCq
 cky
@@ -118392,7 +118795,7 @@ sLS
 lHS
 uEv
 pHF
-fCm
+vWs
 shl
 fCm
 ids
@@ -118488,12 +118891,12 @@ nlV
 rBL
 gBd
 joI
-lNh
+rYR
 xPk
 wIV
 kJT
 wMW
-lNh
+lOG
 joI
 joI
 mvI
@@ -118505,10 +118908,10 @@ joI
 ulk
 pFn
 ulk
+mvI
 joI
 joI
-joI
-joI
+mvI
 lzy
 mvI
 mvI
@@ -118521,12 +118924,12 @@ joI
 fbo
 fbo
 fbo
-lNh
+lOG
 alr
 syR
-lNh
-lNh
-mjh
+txy
+lOG
+iNY
 qVh
 pNk
 dRb
@@ -118581,7 +118984,7 @@ pSH
 daZ
 kzf
 mKH
-fCm
+vWs
 rCV
 rCV
 joC
@@ -118690,12 +119093,12 @@ ryL
 oEL
 gZj
 joI
-lNh
+rqE
 wZo
 bHH
 gbg
-mMb
-lNh
+duy
+lOG
 joI
 joI
 mvI
@@ -118710,8 +119113,8 @@ jvn
 joI
 joI
 joI
-joI
-joI
+mvI
+mvI
 mvI
 mvI
 mvI
@@ -118722,13 +119125,13 @@ joI
 joI
 fbo
 fbo
-lNh
+lOG
 qcX
 uIf
 uIf
-jZf
-lxm
-mjh
+yfg
+mvk
+iNY
 xIO
 dRb
 pNk
@@ -118797,7 +119200,7 @@ jvH
 hYT
 rxm
 rob
-fCm
+vWs
 uRQ
 uRQ
 uRQ
@@ -118892,12 +119295,12 @@ lQe
 qqj
 akE
 joI
-lNh
+rYR
 qAx
 qSN
 jYM
-mMb
-lNh
+vRC
+lOG
 joI
 joI
 mvI
@@ -118912,9 +119315,9 @@ joI
 joI
 joI
 joI
-joI
-joI
-joI
+mvI
+mvI
+mvI
 joI
 kQZ
 mvI
@@ -118924,13 +119327,13 @@ joI
 joI
 fbo
 fbo
-lNh
+lOG
 xOn
-jZf
+nwF
 hdm
 jZf
 jll
-mjh
+iNY
 uVz
 dRb
 xIO
@@ -119094,12 +119497,12 @@ sIe
 uJl
 joI
 joI
-lNh
+rqE
 bdb
 hoA
 gGZ
 rAO
-lNh
+lOG
 joI
 mvI
 joI
@@ -119114,9 +119517,9 @@ mvI
 mvI
 joI
 joI
-joI
-joI
-joI
+mvI
+mvI
+mvI
 joI
 mvI
 mvI
@@ -119126,13 +119529,13 @@ joI
 fbo
 fbo
 fbo
-lNh
+lOG
 evk
-hdm
+jek
 jll
-hdm
-hdm
-mjh
+plO
+aWr
+iTN
 uVz
 dRb
 dRb
@@ -119296,12 +119699,12 @@ uJl
 qUk
 mvI
 joI
-lNh
-lNh
+rYR
+rYR
 xbC
 hUf
-lNh
-lNh
+rqE
+lOG
 joI
 mvI
 joI
@@ -119321,20 +119724,20 @@ joI
 joI
 joI
 joI
+joI
+joI
 fbo
 fbo
 fbo
 fbo
 fbo
-fbo
-fbo
-lNh
-kyL
-mvI
-jZf
-jZf
+txy
+ylX
+gwn
+nwF
+wRL
 slC
-mjh
+iTN
 uVz
 bDE
 bDE
@@ -119498,11 +119901,11 @@ uJl
 qUk
 qUk
 sIe
-mjh
+tWh
 rQY
 dAw
 dXv
-mjh
+tWh
 sIe
 sIe
 jpR
@@ -119511,7 +119914,7 @@ sIe
 uJl
 uJl
 uJl
-uJl
+wok
 uJl
 uJl
 sIe
@@ -119530,13 +119933,13 @@ uVz
 uVz
 uVz
 uVz
-mjh
-qjF
+iNY
+uQg
 neH
 qjF
 neH
 neH
-mjh
+iNY
 uVz
 uVz
 uVz
@@ -119704,14 +120107,14 @@ qzA
 koZ
 agc
 tQs
-mjh
+tWh
 sIe
 uJl
 uJl
 uJl
 uJl
 uJl
-uJl
+wok
 sIe
 sIe
 sIe
@@ -119732,13 +120135,13 @@ jPU
 uVz
 uVz
 uVz
-mjh
-mjh
-mjh
-mjh
-mjh
-mjh
-mjh
+iNY
+iTN
+iTN
+iNY
+iTN
+iNY
+iNY
 uVz
 uVz
 uVz
@@ -119906,7 +120309,7 @@ fwV
 sjo
 jUK
 dfk
-mjh
+tWh
 sIe
 sIe
 sIe
@@ -120104,11 +120507,11 @@ sIe
 sIe
 sIe
 sIe
-mjh
 tWh
-eRQ
+tWh
+tWh
 gcn
-mjh
+tWh
 sIe
 sIe
 sIe
@@ -120306,11 +120709,11 @@ sIe
 sIe
 sIe
 sIe
-mjh
+tWh
 wiL
 qaM
 uuz
-mjh
+tWh
 sIe
 sIe
 sIe
@@ -120508,11 +120911,11 @@ sIe
 sIe
 sIe
 sIe
-mjh
+tWh
 fgE
 ttm
 ttm
-mjh
+tWh
 sIe
 sIe
 sIe
@@ -120710,11 +121113,11 @@ sIe
 sIe
 sIe
 sIe
-mjh
-mjh
-mjh
-mjh
-mjh
+iNY
+iNY
+iNY
+iNY
+iNY
 sIe
 sIe
 sIe
