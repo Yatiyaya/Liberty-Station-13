@@ -2318,16 +2318,6 @@
 	name = "Mining Bay";
 	req_one_access = list(48)
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "aEG" = (
@@ -3326,11 +3316,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -7838,15 +7823,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/cafe_large,
 /area/liberty/maintenance/undergroundfloor2north)
-"bTc" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
 "bTe" = (
 /obj/random/scrap/dense_weighted,
 /turf/simulated/floor/asteroid/dirt/dark,
@@ -8343,16 +8319,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/rnd/lab)
 "bYK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
+/obj/structure/table/reinforced,
+/obj/random/rig_module/low_chance,
+/obj/random/techpart/low_chance,
+/obj/random/techpart/low_chance,
+/obj/random/science/low_chance,
+/obj/random/tool/low_chance,
+/obj/random/tool/low_chance,
+/obj/random/tool/low_chance,
+/obj/random/rig_module/low_chance,
+/obj/random/powercell/low_chance,
+/obj/random/science/low_chance,
+/obj/random/rig/damaged/low_chance,
+/obj/random/tool_upgrade/low_chance,
+/obj/random/tool_upgrade/low_chance,
+/obj/item/stack/material/cardboard/random,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/liberty/engineering/workshop)
 "bYT" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/invislight/outside,
@@ -14635,11 +14618,6 @@
 	name = "Mining Prep";
 	req_one_access = list(48)
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/wall/r_wall,
 /area/liberty/quartermaster/miningdock)
 "dvM" = (
@@ -18499,15 +18477,6 @@
 	},
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2west)
-"evs" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/workshop)
 "evy" = (
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
@@ -23049,11 +23018,6 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
@@ -25763,16 +25727,6 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/medical/cryo)
-"giV" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/workshop)
 "gjm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -31335,14 +31289,6 @@
 /obj/random/mecha_ammo/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2south)
-"hAg" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/engineering/workshop)
 "hAh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel,
@@ -31548,16 +31494,6 @@
 "hCV" = (
 /turf/simulated/floor/snow,
 /area/liberty/security/maingate_outside)
-"hDb" = (
-/obj/machinery/light/floor,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
 "hDe" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "6,1"
@@ -38962,15 +38898,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/hotsprings)
-"jvF" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
 "jvQ" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/snow,
@@ -46473,11 +46400,6 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -48527,15 +48449,6 @@
 "lPt" = (
 /turf/unsimulated/wall/snow,
 /area/liberty/maintenance/caveameridian)
-"lPu" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
 "lPy" = (
 /obj/machinery/flasher{
 	id = "AI";
@@ -48659,19 +48572,6 @@
 /obj/item/oddity/common/book_bible,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/oldlibrary)
-"lQU" = (
-/obj/machinery/door/airlock/glass_engineering{
-	name = "Engineering";
-	req_access = list(10)
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/workshop)
 "lRk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -58337,11 +58237,6 @@
 	name = "Mining Prep";
 	req_one_access = list(48)
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
 "opm" = (
@@ -61831,6 +61726,12 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "pgy" = (
 /obj/structure/bookcase/guncase,
+/obj/random/ammo_lowcost,
+/obj/random/ammo_lowcost,
+/obj/random/ammo_lowcost,
+/obj/random/gun_handmade,
+/obj/random/gun_handmade,
+/obj/random/gun_handmade,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "pgA" = (
@@ -73409,11 +73310,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/miningdock)
@@ -81102,15 +80998,6 @@
 	icon_state = "7,3"
 	},
 /area/shuttle/vasiliy_shuttle_area)
-"tLt" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
-/area/liberty/quartermaster/miningdock)
 "tLw" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/industrial/grey_slates_long,
@@ -83696,6 +83583,7 @@
 /obj/machinery/holoposter{
 	pixel_y = -32
 	},
+/obj/item/stack/material/cardboard/random,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "usP" = (
@@ -89824,20 +89712,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/bonfire/skyyard)
-"vUy" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/liberty/engineering/workshop)
 "vUE" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -161684,7 +161558,7 @@ mNp
 tQG
 idK
 nLh
-bHN
+bYK
 qVz
 qVz
 xcO
@@ -162284,7 +162158,7 @@ gyo
 emu
 vXj
 jDt
-iqZ
+rMk
 mNR
 mNR
 dXO
@@ -162305,7 +162179,7 @@ qVz
 wtD
 tLN
 uzD
-bYK
+tjG
 ebX
 xlY
 wtD
@@ -162507,7 +162381,7 @@ vJZ
 wtD
 jaK
 lFh
-jvF
+llC
 llC
 rHL
 yby
@@ -162694,22 +162568,22 @@ mNR
 dXO
 nQD
 jJW
-vUy
-hAg
-lQU
-evs
-evs
-giV
-evs
-lQU
-tLt
+xAt
+tuH
+heX
+iqZ
+iqZ
+nbS
+iqZ
+heX
+llC
 rXE
 fCX
 lpG
 aEz
 bHO
 nMr
-hDb
+ezm
 wqF
 inv
 omy
@@ -162911,7 +162785,7 @@ ebX
 kxm
 llC
 llC
-jvF
+llC
 rHL
 yby
 wtD
@@ -163311,11 +163185,11 @@ vXj
 rNI
 ebX
 qGY
-lPu
+llC
 opl
-lPu
-lPu
-bTc
+llC
+llC
+llC
 lPA
 wtD
 wZp
