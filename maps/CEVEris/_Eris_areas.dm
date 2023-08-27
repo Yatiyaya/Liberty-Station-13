@@ -525,8 +525,8 @@
 
 /area/eris/neotheology
 	icon_state = "erisgreen"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
-	holomap_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
+	holomap_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
 /area/eris/neotheology/chapel
 	name = "\improper Chapel"
@@ -537,17 +537,17 @@
 /area/eris/neotheology/storage
 	name = "\improper Church Storage"
 	icon_state = "erisyellow"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/eris/neotheology/bioreactor
 	name = "\improper Church Bioreactor Room"
 	icon_state = "erisblue"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/eris/neotheology/office
 	name = "\improper Chapel Office"
 	icon_state = "chapeloffice"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_DARK
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
 /area/eris/neotheology/chapelritualroom
 	name = "Chapel Rituals Room"
@@ -556,7 +556,7 @@
 /area/eris/neotheology/biogenerator
 	name = "\improper Church Biogenerator Room"
 	icon_state = "erisred"
-	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/eris/neotheology/churchbarracks
 	name = "Church Barracks"

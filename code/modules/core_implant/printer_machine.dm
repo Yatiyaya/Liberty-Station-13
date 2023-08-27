@@ -19,12 +19,15 @@ PLANNED FEATURES
 #define WORK "work"
 #define DONE "done"
 
-/obj/machinery/neotheology/implantprinter
+// Parent of all CAPSA machinery, including cloner
+/obj/machinery/capsa
+	icon = 'icons/obj/capsa_machinery.dmi'
+
+/obj/machinery/capsa/implantprinter
 	name = "Implant Fabricator"
 	desc = "This unique piece of technology can be fed biomatter, plasteel, silver, and gold in order to print various implants. \
 			All implants produced by this machine are licenced or produced by CAPSA, subsidiary of Liberty Group. \
 			Due to this machine's complexity, only CAPSA personnel are trained in its usage."
-	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "implantforge"
 
 	density = TRUE
@@ -46,7 +49,7 @@ PLANNED FEATURES
 	var/list/options = list("Print Item", "Pick A Print")
 	var/list/what_to_print = list("Death Alarm", "Conciousness Backup Implant", "Psionic Tumour")
 
-/obj/machinery/neotheology/implantprinter/Initialize()
+/obj/machinery/capsa/implantprinter/Initialize()
 	. = ..()
 
 	image_load = new(src)
@@ -54,7 +57,7 @@ PLANNED FEATURES
 	for(var/_material in needed_material)
 		stored_material[_material] = rand(1, 10)
 
-/obj/machinery/neotheology/implantprinter/attack_hand(mob/living/carbon/human/user as mob)
+/obj/machinery/capsa/implantprinter/attack_hand(mob/living/carbon/human/user as mob)
 	if(!usr.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, STAT_LEVEL_PROF) && !usr.stat_check(STAT_COG, 120))
 		to_chat(user, SPAN_NOTICE("You're not sure how to use this without proper medical training or being able to read the advanced mumbo jumbo."))
 		return
@@ -94,7 +97,7 @@ PLANNED FEATURES
 		else
 			return
 
-/obj/machinery/neotheology/implantprinter/examine(user)
+/obj/machinery/capsa/implantprinter/examine(user)
 	. = ..()
 
 	var/list/matter_count_need = list()
@@ -107,13 +110,13 @@ PLANNED FEATURES
 
 	to_chat(user, SPAN_NOTICE("Materials required: [english_list(matter_count_need)].\nIt contains: [english_list(matter_count)]."))
 
-/obj/machinery/neotheology/implantprinter/attackby(obj/item/I, mob/user)
+/obj/machinery/capsa/implantprinter/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack))
 		eat(user, I)
 		return
 	. = ..()
 
-/obj/machinery/neotheology/implantprinter/proc/produce()
+/obj/machinery/capsa/implantprinter/proc/produce()
 	if(!perform())
 		return
 	for(var/_material in needed_material)
@@ -126,7 +129,7 @@ PLANNED FEATURES
 
 	START_PROCESSING(SSmachines, src)
 
-/obj/machinery/neotheology/implantprinter/proc/perform(mob/user)
+/obj/machinery/capsa/implantprinter/proc/perform(mob/user)
 	if(working)
 		to_chat(user, SPAN_NOTICE("[src] is already working!"))
 		return FALSE
@@ -146,7 +149,7 @@ PLANNED FEATURES
 
 	return TRUE
 
-/obj/machinery/neotheology/implantprinter/Process()
+/obj/machinery/capsa/implantprinter/Process()
 	if(!working)
 		STOP_PROCESSING(SSmachines, src)
 		return
@@ -157,7 +160,7 @@ PLANNED FEATURES
 		working = FALSE
 		STOP_PROCESSING(SSmachines, src)
 
-/obj/machinery/neotheology/implantprinter/proc/eat(mob/living/user, obj/item/eating)
+/obj/machinery/capsa/implantprinter/proc/eat(mob/living/user, obj/item/eating)
 
 	if(!eating && istype(user))
 		eating = user.get_active_hand()
@@ -211,7 +214,7 @@ PLANNED FEATURES
 	to_chat(user, SPAN_NOTICE("You add [total_used] stack\s of [stack] to \the [src]."))
 
 
-/obj/machinery/neotheology/implantprinter/proc/flick_anim(var/animation)
+/obj/machinery/capsa/implantprinter/proc/flick_anim(var/animation)
 
 	if(animation == WORK)
 		flick("[initial(icon_state)]_start", src)

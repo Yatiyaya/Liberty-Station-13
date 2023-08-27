@@ -86,8 +86,8 @@
 								if ((istype(M, /mob/living/carbon/human)) && (M.icon)) // Eating a human
 									// Icon check is to check if another roach has already finished eating this human
 									var/mob/living/carbon/human/H = M
-									// Process Cruciform
-									var/obj/item/implant/core_implant/cruciform/CI = H.get_core_implant(/obj/item/implant/core_implant/cruciform, FALSE)
+									// Process Hearthcore
+									var/obj/item/implant/core_implant/hearthcore/CI = H.get_core_implant(/obj/item/implant/core_implant/hearthcore, FALSE)
 									if (CI)
 										var/mob/N = CI.wearer
 										CI.name = "[N]'s Hearthcore"

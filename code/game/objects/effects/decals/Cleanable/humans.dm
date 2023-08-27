@@ -136,9 +136,9 @@ var/global/list/image/splatter_cache=list()
 		add_fingerprint(user)
 		if (user.gloves)
 			return FALSE
-		var/taken = rand(1,amount)
+		var/taken = max(1,amount) // No more rolling dice, this was terrible.
 		amount -= taken
-		to_chat(user, SPAN_NOTICE("You get some of \the [src] on your hands."))
+		to_chat(user, SPAN_NOTICE("You dip your fingers into \the [src], smearing your hands with blood."))
 		if (!user.blood_DNA)
 			user.blood_DNA = list()
 		user.blood_DNA |= blood_DNA.Copy()

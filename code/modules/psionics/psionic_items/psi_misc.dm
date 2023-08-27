@@ -110,9 +110,13 @@
             return TRUE
     return FALSE
 
+// Commenting out in case Custodians want a repurposed psi-blocking ring or something.
+/*
 /obj/item/clothing/gloves/psionic_ring
 	name = "Ring of Dispelling"
 	desc = "A sacred ring of metal, said to have been used in the production of the original cruciform prototypes. The Cartographer has blessed it, giving it powerful anti-psionic properties, and bestowed it to the upper church for use in psionic crises. It is irreplacable."
 	icon_state = "ring_of_dispel"
 	price_tag = 1000
 	psi_blocking = 50
+*/
+

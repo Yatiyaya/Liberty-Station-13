@@ -408,7 +408,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 	changeLevel(-SANITY_DAMAGE_PSY(amount, owner.stats.getStat(STAT_COG)))
 
 /datum/sanity/proc/onSeeDeath(mob/M)
-	var/mob/living/carbon/human/H
+	var/mob/living/carbon/human/H = M
 	if(ishuman(H))
 		var/penalty = -SANITY_DAMAGE_DEATH(owner.stats.getStat(STAT_WIL))
 		if(owner.stats.getPerk(PERK_NIHILIST))
@@ -422,10 +422,13 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 					penalty *= -1
 				if(75 to 100)
 					penalty *= 0
-		if(M.stats.getPerk(PERK_TERRIBLE_FATE) && !owner.stats.getPerk(PERK_NIHILIST) &&  !owner.stats.getPerk(PERK_SURVIVOR) && prob(70-owner.stats.getStat(STAT_WIL)))
+		if(M.stats?.getPerk(PERK_TERRIBLE_FATE) && !owner.stats?.getPerk(PERK_NIHILIST) &&  !owner.stats?.getPerk(PERK_SURVIVOR) && prob(70-owner.stats?.getStat(STAT_WIL)))
 			setLevel(0)
 		else
 			changeLevel(penalty*death_view_multiplier)
+	else
+		if(M.stats?.getPerk(PERK_TERRIBLE_FATE) && !owner.stats?.getPerk(PERK_NIHILIST) &&  !owner.stats?.getPerk(PERK_SURVIVOR) && prob(70-owner.stats?.getStat(STAT_WIL)))
+			setLevel(0)
 
 /datum/sanity/proc/onShock(amount)
 	changeLevel(-SANITY_DAMAGE_SHOCK(amount, owner.stats.getStat(STAT_WIL)))

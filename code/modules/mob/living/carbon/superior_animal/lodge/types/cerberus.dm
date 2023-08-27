@@ -90,6 +90,8 @@
 	icon_dead = "tunneler_dead"
 	gender = "male"
 	move_to_delay = 2
+	maxHealth = 400
+	health = 400
 	armor = list(melee = 30, bullet = 20, energy = 20, bomb = 5, bio = 100, rad = 100)
 	special_parts = list(/obj/item/animal_part/helldiver_tooth, /obj/item/animal_part/chimera_fang)
 	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR, MUTATION_BLINDNESS, MUTATION_ECHOLOCATION, MUTATION_RAD_PROTECTION)

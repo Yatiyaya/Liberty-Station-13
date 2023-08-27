@@ -36,7 +36,7 @@
 	heat_protection = 1
 	var/cleaning = TRUE
 	var/emp_damage = TRUE // Does EMP & Ion weapons cause damage?
-	var/termiation = TRUE
+	var/termination = TRUE // Does our body get qdeleted once dead? If set to FALSE, we leave behind a corpse.
 
 	can_burrow = FALSE
 	colony_friend = FALSE
@@ -104,7 +104,7 @@
 	if(cell_drop)
 		new cell_drop (loc)
 		cell_drop = null
-	if(termiation)
+	if(termination)
 		qdel(src)
 	return
 

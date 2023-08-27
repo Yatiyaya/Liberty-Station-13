@@ -93,6 +93,8 @@
 	if(prob(planted_item.growth_chance))
 		growth += planted_item.growthrate
 		update_icon()
+		if(growth >= 100)
+			can_harvest = TRUE
 
 /obj/machinery/spicebed/proc/tool_use(obj/item/I, mob/user)
 	//Little gross of a proc but this should allow us to with many tools remove the plant
@@ -221,7 +223,7 @@
 /obj/item/spice_plant/yerbamate
 	name = "yerba mate branch"
 	desc = "A small branch of yerba mate, can be used for brewing."
-	icon_state = "marigold"
+	icon_state = "yerbamate"
 	amount_to_harvest = 3
 	growthrate = 5
 	growth_chance = 80
@@ -230,7 +232,7 @@
 /obj/item/spice_plant/coriander
 	name = "coriander leaf"
 	desc = "A small handful of leaves from a coriander bed, can be used for brewing as cultivation methods of this plant has rendered its edibility questionable."
-	icon_state = "marigold"
+	icon_state = "coriander"
 	amount_to_harvest = 3
 	growthrate = 5
 	growth_chance = 80
@@ -239,7 +241,7 @@
 /obj/item/spice_plant/gourd
 	name = "gourd bulb"
 	desc = "A large gourd bulb, can be cut open to use as a glass, poke a hole as a flask or even converted with some silk into a payload."
-	icon_state = "marigold"
+	icon_state = "gourd"
 	amount_to_harvest = 4
 	growthrate = 15
 	growth_chance = 90
@@ -289,10 +291,10 @@
 	desc = "A gourd blump cut directly in half to use as a bowl for potion brewing base."
 	icon = 'icons/obj/neotheology_spicebed.dmi'
 	icon_state = "cut_gourd"
-	var/slot_one
-	var/slot_two
-	var/slot_three
-	var/slot_four
+	var/slot_one = ""
+	var/slot_two = ""
+	var/slot_three = ""
+	var/slot_four = ""
 	var/anti_cheat = FALSE
 
 /obj/item/cut_gourd/attackby(obj/item/I, mob/user)
@@ -348,14 +350,17 @@
 
 		else
 			to_chat(user, "You add [plant_to_add.name] into the none of the slots.")
+			anti_cheat = FALSE
 			return
+
+	anti_cheat = FALSE
 
 
 /obj/machinery/potionmaker
 	name = "cultivation pot"
 	desc = "A massive cooking pot for cultivation and potion brewing."
 	icon = 'icons/obj/neotheology_spicebed.dmi'
-	icon_state = "spice_pot"
+	icon_state = "potionmaker"
 	density = TRUE
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
@@ -368,33 +373,34 @@
 	var/cooktime = 30 SECONDS
 
 /obj/machinery/potionmaker/attack_hand(mob/living/user as mob)
+	if(active)
+		to_chat(user, "Something's already brewing...")
+		return
 	if(cg && !active)
 		icon_state = "potionmaker_active"
 		active = TRUE
 		addtimer(CALLBACK(src, .proc/repice_index), cooktime)
-	if(active)
-		to_chat(user, "Something's already brewing...")
-		return
 
 	to_chat(user, "There is nothing inside the pot to brew.")
 
 /obj/machinery/potionmaker/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/cut_gourd))
-		I.forceMove(contents)
+		user.drop_from_inventory(I, src)
 		cg = I
 		return
 	..()
 
-/obj/machinery/potionmaker/proc/repice_index(obj/item/cut_gourd/cg)
+/obj/machinery/potionmaker/proc/repice_index()
 	var/index_leaser = "[cg.slot_one][cg.slot_two][cg.slot_three][cg.slot_four]"
 	if(!index_leaser)
+		active = FALSE
 		return
 	QDEL_NULL(cg)
 	switch(index_leaser)
-		if("debug" || "debugdebug")
+		if("debug", "debugdebug")
 			new /obj/item/stack/thrown/gourd(src.loc)
 		else
 			new /obj/effect/decal/cleanable/ash(src.loc)
 
 	active = FALSE
-	icon_state = "spice_pot"
+	icon_state = "potionmaker"

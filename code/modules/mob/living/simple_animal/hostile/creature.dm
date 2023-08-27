@@ -16,7 +16,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/simple_animal/hostile/creature/cult
-	faction = "circhosian_cult" // To prevent them from attacking cultists
+	faction = "circhosian" // To prevent them from attacking cultists
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 	min_oxy = 0
 	max_oxy = 0

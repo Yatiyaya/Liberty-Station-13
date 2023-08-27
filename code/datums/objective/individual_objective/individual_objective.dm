@@ -7,7 +7,7 @@
 		if(!IO.can_assign(src))
 			continue
 		var/multiplier = 10
-		if(!IO.limited_antag && (IO.req_department.len || IO.req_cruciform))
+		if(!IO.limited_antag && (IO.req_department.len || IO.req_hearthcore))
 			multiplier *= 2 //priorize faction objectives
 		valid_objectives[npath] = multiplier/IO.rarity
 	for(var/datum/individual_objective/objective in mind.individual_objectives)
@@ -34,8 +34,8 @@
 	var/units_requested = 1
 	var/completed = FALSE
 	var/list/req_department = list()
-	var/req_cruciform = FALSE
-	var/allow_cruciform = TRUE
+	var/req_hearthcore = FALSE
+	var/allow_hearthcore = TRUE
 	var/allow_psion = TRUE
 	var/based_time = FALSE
 	var/limited_antag = FALSE
@@ -100,7 +100,7 @@
 			continue
 		if(!ignore_departmen && H.mind.assigned_job && (H.mind.assigned_job.department in GLOB.all_faction_items[faction_item]))
 			continue
-		if(!ignore_departmen && GLOB.all_faction_items[faction_item] == GLOB.department_church && is_neotheology_disciple(H))
+		if(!ignore_departmen && GLOB.all_faction_items[faction_item] == GLOB.department_church && is_custodian_of_bonfire(H))
 			continue
 		if(!locate(faction_item.type))
 			continue
@@ -116,14 +116,14 @@
 		return FALSE
 	if(!L || !L.mind || (L.mind && player_is_antag(L.mind)))
 		return FALSE
-	if(is_neotheology_disciple(L))
-		if(!allow_cruciform)
+	if(is_custodian_of_bonfire(L))
+		if(!allow_hearthcore)
 			return FALSE
 	if(L.stats.getPerk(PERK_PSION))
 		if(!allow_psion)
 			return FALSE
 	else
-		if(req_cruciform)
+		if(req_hearthcore)
 			return FALSE
 	if(req_department.len && (!L.mind.assigned_job || !(L.mind.assigned_job.department in req_department)))
 		return FALSE
@@ -132,7 +132,7 @@
 /datum/individual_objective/proc/update_faction_score()
 	if(owner)
 		owner.individual_objectives_completed++
-	if(req_cruciform || (DEPARTMENT_CHURCH in req_department))
+	if(req_hearthcore || (DEPARTMENT_CHURCH in req_department))
 		GLOB.neotheology_objectives_completed++
 	else if(DEPARTMENT_SECURITY in req_department)
 		GLOB.ironhammer_objectives_completed++

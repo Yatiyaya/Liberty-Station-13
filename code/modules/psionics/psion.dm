@@ -37,7 +37,7 @@
 			return
 	..(affected)
 
-// Main process, this runs through all the needed checks for a psion. Removal of implants like cruciforms and synthetics are called here.
+// Main process, this runs through all the needed checks for a psion. Removal of implants like Hearthcores and synthetics are called here.
 // This also handles psi points limits and regeneration, the effect is dynamic so increases to cognition through things like stims and chems will update accordingly.
 /obj/item/organ/internal/psionic_tumor/Process()
 	..()

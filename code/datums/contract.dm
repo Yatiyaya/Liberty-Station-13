@@ -32,7 +32,7 @@ GLOBAL_LIST_INIT(excel_item_targets,list(
 		"a Nationale rifle" = /obj/item/gun/projectile/automatic/nationale,
 		"a Colt handgun" = /obj/item/gun/projectile/colt,
 		"a RCD" = /obj/item/rcd,
-		"a cruciform" = /obj/item/implant/core_implant/cruciform,
+		"a hearthcore implant" = /obj/item/implant/core_implant/hearthcore,
 		"a bluespace Harpoon" = /obj/item/bluespace_harpoon,
 		"Destiny antique laser gun" = /obj/item/gun/energy/captain
 
@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		if((player_is_antag_id(candidate_mind, ROLE_CONTRACTOR) || player_is_antag_id(candidate_mind, ROLE_CARRION)) && prob(75))
 			continue
 
-		// No check for cruciform because the spying implant can bypass it
+		// No check for Hearthcore because the spying implant can bypass it
 		var/mob/living/carbon/human/H = candidate_mind.current
 		if(!istype(H) || H.stat == DEAD || !isOnStationLevel(H))
 			continue
@@ -254,7 +254,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		if(!istype(H) || H.stat == DEAD || !isOnStationLevel(H))
 			candidates -= target_mind
 			continue
-		target = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
+		target = H.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(!target)
 			target = H.organs_by_name[BP_HEAD]
 		desc = "Assassinate [target_mind.current.real_name] and dispatch their [target.name] via BSDM as a proof."
@@ -450,10 +450,10 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 
 // Mandates that target specific crew members
 /datum/antag_contract/excel/targeted  //Base targeted contract is mobilize
-	name = "Moblize"
+	name = "Mobilize"
 	reward = 1200
 	var/datum/mind/target_mind
-	var/cruciform_check = FALSE
+	var/hearthcore_check = FALSE
 	var/desc_text = "by stuffing them alive in the teleporter" // Text for the end of desc, a bit hacky
 	var/command_bias = 15 //Bonus chance for targeting heads and sec
 
@@ -479,9 +479,9 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 			if(!(candidate_mind.assigned_role in list(JOBS_COMMAND + JOBS_SECURITY)))
 				continue
 
-		if (cruciform_check)
-			var/cruciform = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
-			if(cruciform)
+		if (hearthcore_check)
+			var/hearthcore = H.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+			if(hearthcore)
 				continue
 
 		target_mind = candidate_mind
@@ -505,7 +505,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 /datum/antag_contract/excel/targeted/liberate
 	name = "Liberate"
 	reward = 800
-	cruciform_check = TRUE
+	hearthcore_check = TRUE
 	desc_text = "by converting them to excelsior."
 
 /datum/antag_contract/excel/propaganda

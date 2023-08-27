@@ -331,7 +331,7 @@
 /area/asteroid/rogue)
 "mL" = (
 /obj/structure/table/marble,
-/obj/item/book/ritual,
+/obj/item/book/lectures,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/asteroid/rogue)
 "mT" = (
@@ -1207,7 +1207,7 @@
 "PR" = (
 /obj/structure/bookcase,
 /obj/item/oddity/common/book_bible,
-/obj/item/book/ritual,
+/obj/item/book/lectures,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/asteroid/rogue)
 "PV" = (
@@ -1323,7 +1323,7 @@
 "Un" = (
 /obj/structure/bookcase,
 /obj/item/oddity/common/book_eyes,
-/obj/item/book/ritual,
+/obj/item/book/lectures,
 /obj/item/oddity/common/book_unholy/closed,
 /obj/item/oddity/common/paper_crumpled,
 /turf/simulated/floor/rock/manmade/ruin3,

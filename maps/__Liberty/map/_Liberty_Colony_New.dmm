@@ -2557,7 +2557,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5015,7 +5015,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "bjR" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5471,7 +5471,7 @@
 /obj/structure/table/standard,
 /obj/item/pen,
 /obj/item/paper_bin,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/hut_cell1)
 "bpP" = (
@@ -6600,7 +6600,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/dorm1)
 "bEi" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -11680,7 +11680,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/maintenance/undergroundfloor1west)
 "cPF" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -12572,7 +12572,7 @@
 /area/liberty/engineering/atmos/surface)
 "cZK" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "cZM" = (
@@ -20363,7 +20363,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "eOg" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/crew_quarters/hydroponics/garden)
 "eOn" = (
@@ -21918,7 +21918,7 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/engine_room)
 "fhe" = (
-/obj/machinery/multistructure/bioreactor_part/console,
+/obj/machinery/multistructure/bonfire_part/console,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "fhg" = (
@@ -23335,7 +23335,7 @@
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
 "fwd" = (
-/obj/machinery/door/holy/preacher{
+/obj/machinery/door/bonfire/secure{
 	name = "Chapel Office"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -30367,7 +30367,7 @@
 	name = "\improper Clinic"
 	})
 "heQ" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/door/blast/regular/open{
@@ -32003,7 +32003,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor1east)
 "hzd" = (
-/obj/machinery/door/holy/preacher{
+/obj/machinery/door/bonfire/secure{
 	name = "Chapel Office"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -34150,7 +34150,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/liberty/quartermaster/miningdock)
 "hXk" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/structure/disposalpipe/segment{
@@ -37105,12 +37105,12 @@
 /area/liberty/quartermaster/hangarsupply)
 "iEQ" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/undergroundfloor1north)
 "iEV" = (
@@ -39439,10 +39439,10 @@
 /area/liberty/absolutism/storage)
 "jhM" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 32
@@ -40905,7 +40905,7 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/maintenance/undergroundfloor1east)
 "jyx" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/skyyard)
 "jyz" = (
@@ -43665,7 +43665,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
 "kfF" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = 32
 	},
@@ -45974,7 +45974,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "kGc" = (
-/obj/machinery/multistructure/bioreactor_part/loader,
+/obj/machinery/multistructure/bonfire_part/loader,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "kGd" = (
@@ -46470,7 +46470,7 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/pros/shuttle)
 "kNw" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/command/prime)
 "kNN" = (
@@ -48391,9 +48391,9 @@
 /obj/random/junkfood/onlyburger,
 /obj/random/junkfood,
 /obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "lnW" = (
@@ -49477,10 +49477,10 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
@@ -59903,7 +59903,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -68715,7 +68715,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/crematorium)
 "pOx" = (
@@ -68953,7 +68953,7 @@
 	name = "Residential District Maintenance"
 	})
 "pRn" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/door/firedoor,
@@ -69133,7 +69133,7 @@
 /turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/side/f2section1)
 "pTl" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "pTn" = (
@@ -69780,7 +69780,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -70700,7 +70700,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1south)
 "qmz" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/structure/disposalpipe/segment{
@@ -70778,7 +70778,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/server)
 "qmW" = (
-/obj/machinery/smartfridge/kitchen/church,
+/obj/machinery/smartfridge/kitchen/custodians,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "qmY" = (
@@ -71327,7 +71327,7 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/medical/sleeper)
 "qsX" = (
-/obj/machinery/door/holy/preacher{
+/obj/machinery/door/bonfire/secure{
 	name = "Chapel Office"
 	},
 /turf/simulated/floor/wood/wild3,
@@ -74348,7 +74348,7 @@
 	name = "Residential District Maintenance"
 	})
 "rer" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -74965,9 +74965,9 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "rlk" = (
@@ -77672,15 +77672,15 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
 "rRq" = (
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual,
-/obj/item/book/ritual,
-/obj/item/book/ritual,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures,
+/obj/item/book/lectures,
+/obj/item/book/lectures,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
@@ -77992,7 +77992,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/crew_quarters/clownoffice)
 "rWc" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/door/firedoor,
@@ -78565,7 +78565,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/security/hut_cell1)
 "sbI" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/storage)
 "sbJ" = (
@@ -78651,7 +78651,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -80014,7 +80014,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -80291,7 +80291,7 @@
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai)
 "svD" = (
-/obj/machinery/smartfridge/kitchen/church/public,
+/obj/machinery/smartfridge/kitchen/custodians/public,
 /obj/structure/railing{
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
@@ -81144,12 +81144,12 @@
 /area/liberty/hallway/surface/section1)
 "sFn" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /obj/item/book/manual/fiction/dracula,
 /obj/item/book/manual/fiction/littlewomen,
 /obj/item/book/manual/fiction/aroundtheworld,
@@ -82340,7 +82340,7 @@
 /turf/simulated/floor/carpet,
 /area/liberty/command/merchant)
 "sUD" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/door/blast/regular/open{
@@ -82824,7 +82824,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -83442,7 +83442,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/rnd/xenoflora)
 "thW" = (
-/obj/machinery/multistructure/bioreactor_part/platform{
+/obj/machinery/multistructure/bonfire_part/platform{
 	make_glasswalls_after_creation = 1
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -83515,7 +83515,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1east)
 "tiz" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/door/blast/regular/open{
@@ -84170,7 +84170,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/absolutism/bioreactor)
 "trq" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -89266,7 +89266,7 @@
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor1north)
 "uus" = (
-/obj/machinery/multistructure/bioreactor_part/unloader,
+/obj/machinery/multistructure/bonfire_part/unloader,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "uuC" = (
@@ -93258,7 +93258,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1east)
 "vnM" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/structure/cable/green{
@@ -93761,7 +93761,7 @@
 /area/liberty/hallway/surface/section1)
 "vtR" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/crematorium)
 "vtS" = (
@@ -94982,12 +94982,12 @@
 /area/liberty/pros/prep)
 "vIW" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /obj/item/oddity/common/book_bible,
 /obj/item/book/manual/religion/h_book,
 /obj/item/book/manual/religion/c_bible,
@@ -95657,7 +95657,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "vQU" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/absolutism/bioreactor)
 "vQX" = (
@@ -98858,7 +98858,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
@@ -98877,12 +98877,12 @@
 /area/liberty/crew_quarters)
 "wBS" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
-/obj/item/book/ritual/hearthlantern/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "wBX" = (
@@ -102825,7 +102825,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "xAL" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/camera/network/church{
 	dir = 8
 	},
@@ -104801,7 +104801,7 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/rnd/research)
 "xXi" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "xXq" = (
@@ -104826,7 +104826,7 @@
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/surgery)
 "xXv" = (
-/obj/machinery/multistructure/bioreactor_part/biotank_platform,
+/obj/machinery/multistructure/bonfire_part/scorchtank_platform,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "xXy" = (
@@ -104935,7 +104935,7 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/medical/sleeper)
 "xYN" = (
-/obj/machinery/door/holy{
+/obj/machinery/door/bonfire{
 	name = "Church"
 	},
 /obj/structure/disposalpipe/segment{
@@ -105311,7 +105311,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1west)
 "ydj" = (
-/obj/machinery/multistructure/bioreactor_part/bioport,
+/obj/machinery/multistructure/bonfire_part/port,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "ydk" = (

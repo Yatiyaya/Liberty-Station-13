@@ -24,7 +24,7 @@
 		else if(access_hop in held_card.access || (access_captain in held_card.access))
 			return 1
 
-	proc/create_transation(target, reason, amount)
+	proc/create_transaction(target, reason, amount)
 		return new /datum/transaction(amount, target, reason, machine_id)
 
 	proc/accounting_letterhead(report_name)
@@ -148,7 +148,7 @@
 					station_account.money -= starting_funds
 
 					//create a transaction log entry
-					var/trx = create_transation(account_name, "New account activation", "([starting_funds])")
+					var/trx = create_transaction(account_name, "New account activation", "([starting_funds])")
 					station_account.transaction_log.Add(trx)
 
 					creating_new_account = 0
@@ -182,8 +182,8 @@
 
 			if("revoke_payroll")
 				var/funds = detailed_account_view.money
-				var/account_trx = create_transation(station_account.owner_name, "Revoke payroll", "([funds])")
-				var/station_trx = create_transation(detailed_account_view.owner_name, "Revoke payroll", funds)
+				var/account_trx = create_transaction(station_account.owner_name, "Revoke payroll", "([funds])")
+				var/station_trx = create_transaction(detailed_account_view.owner_name, "Revoke payroll", funds)
 
 				station_account.money += funds
 				detailed_account_view.money = 0

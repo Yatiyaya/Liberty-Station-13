@@ -610,7 +610,7 @@
 /turf/simulated/floor/hull,
 /area/space)
 "bW" = (
-/obj/item/book/ritual,
+/obj/item/book/lectures,
 /obj/landmark/join/late/cryo,
 /turf/simulated/floor,
 /area/testing/first)

@@ -103,8 +103,11 @@ ty ilu - bear
 /area/liberty/dungeon/outside/zoo
 	narrate = "Sounds of different fauna, feral growls and cute squeaks of all kinds, can be heard echoing through the otherwise silent emptiness of this abandoned facility. Their purpose unknown, its maintainers nowhere to be seen, it now stands as the ruins of an animal-holding facility colloquially dubbed as 'The zoo'."
 
+/area/liberty/dungeon/outside/prison_exterior
+	narrate = "An old prison complex for high profile criminals, deep into the forest lays abandoned... or is it? Faint sounds of distant gunfire and interslavic cheer echo in the plains surrounding it, giving a hint of the fate that befell its previous inhabitants..."
+
 /area/liberty/dungeon/outside/prison_interior
-	narrate = "A base of operations fallen into disrepair, its former inhabitants hoarding all manner of gear for survival have long since left it to the care of their defensive security systems, now gone haywire. From its insides, a chittering that's definitely not robotic in nature can faintly be heard..."
+	narrate = "The inside of this prison complex is delerict and with signs of long abandonment, but that does not mean it is completely devoid of life... What could be the reason for these men to take over it? Tread carefully, and find out."
 
 /area/liberty/dungeon/outside/mercenary_base/entryway
 	narrate = "Sounds of gunfire and interslavic cheers and curses echo from the inside of that bunker over yonder. If you aim to raid it for its riches, be ready to receive a warm welcome... in lead."

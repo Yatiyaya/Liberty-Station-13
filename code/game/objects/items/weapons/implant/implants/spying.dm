@@ -9,7 +9,7 @@
 	is_legal = FALSE
 	var/timer
 	var/datum/mind/owner
-	cruciform_resist = TRUE
+	hearthcore_resist = TRUE
 
 	overlay_icon = "uplink"
 
@@ -32,4 +32,4 @@
 		if(C.completed)
 			continue
 		C.check(src)
-	cruciform_resist = FALSE
+	hearthcore_resist = FALSE

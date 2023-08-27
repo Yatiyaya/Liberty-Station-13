@@ -91,6 +91,12 @@
 	stacktype = /obj/item/stack/tile/wood
 	build_type = /obj/item/stack/tile/wood
 
+/obj/item/stack/tile/wood/tatami
+	name = "tatami mat"
+	desc = "Soft, pliable tatami mats used as ornamental decoration."
+	singular_name = "tatami mat"
+	icon_state = "tatami"
+
 /*
  * Carpets
  */
@@ -661,7 +667,7 @@
 	singular_name = "grey brick"
 	icon_state = "mortar_bricks"
 
-// For the Custodian ritual to transform rocks into tiles
+// For the Custodian Lecture to transform rocks into tiles
 // This unfortunately means I have to do a declare and turf for this children as well, pain peko. - Seb
 /obj/item/stack/tile/greybricks_pristine/full
 	amount = 60
