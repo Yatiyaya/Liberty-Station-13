@@ -895,7 +895,7 @@
 /obj/item/projectile/bullet/pellet/shotgun/scrap
 	damage_types = list(BRUTE = 4)
 	base_spread = 90
-	range_step = 8		//projectile will lose a fragment each time it travels this distance.
+	range_step = 2		//projectile will lose a fragment each time it travels this distance.
 	agony = 3
 	pellets = 7
 	range_step = 1
@@ -997,7 +997,7 @@
 	icon_state = "birdshot-1"
 	damage_types = list(BRUTE = 6.5)
 	base_spread = 90
-	range_step = 8		//projectile will lose a fragment each time it travels this distance.
+	range_step = 2		//projectile will lose a fragment each time it travels this distance.
 	agony = 3
 	pellets = 7
 	range_step = 1
