@@ -90,6 +90,11 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood/wood_old
 
+/turf/simulated/floor/wood/tatami
+	name = "tatami mat"
+	icon_state = "tatami_full"
+	initial_flooring = /decl/flooring/wood/tatami
+
 /*Tiled*/
 
 /turf/simulated/floor/tiled
@@ -658,7 +663,7 @@
 
 /turf/simulated/floor/asteroid/dirt
 	name = "dirt"
-	desc = "Course and unpleasent."
+	desc = "Coarse and unpleasant."
 	icon = 'icons/turf/flooring/dirt.dmi'
 	icon_state = "dirt"
 	initial_flooring = /decl/flooring/dirt

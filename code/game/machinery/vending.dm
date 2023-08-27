@@ -519,7 +519,7 @@
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
 			if(currently_vending.price)
-				var/points_rewarded = (currently_vending.price / 100) //Shockingly this is MORE fair then a flat value as it rewards better for high spenders well still punishing low value endless transations
+				var/points_rewarded = (currently_vending.price / 100) //Shockingly this is MORE fair then a flat value as it rewards better for high spenders well still punishing low value endless transactions
 				H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/vender_e_shopper, "VENDER_E_SHOPPER", skill_gained = points_rewarded, learner = H)
 			//Small order of operations here to prevent first time buyers being SCAMMED out of point rewards and such.
 			var/task_level = H.learnt_tasks.get_task_mastery_level("VENDER_E_SHOPPER")

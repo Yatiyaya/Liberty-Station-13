@@ -1508,6 +1508,11 @@
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
+"nV" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/item/clothing/head/hairflower,
+/turf/simulated/floor/rock/dark,
+/area/liberty/dungeon/outside/abandoned_outpost)
 "nZ" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall12"
@@ -1635,7 +1640,6 @@
 	},
 /obj/item/remains/human,
 /obj/item/reagent_containers/food/snacks/meat/fungi,
-/obj/item/clothing/head/hairflower,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "pr" = (
@@ -19949,7 +19953,7 @@ GF
 GF
 GF
 fP
-GE
+nV
 Dq
 pb
 FG

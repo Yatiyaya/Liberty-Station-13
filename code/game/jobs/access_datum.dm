@@ -407,35 +407,21 @@
 	desc = "Security Shop"
 	region = ACCESS_REGION_WATCH
 
-/**************
-* NeoTheology *
-***************/
+/************************
+* Custodians of Bonfire *
+************************/
 /var/const/access_bonfire_disciple = 70
 /datum/access/nt_disciple
 	id = access_bonfire_disciple
-	desc = "Bonfire Vector"
+	desc = "Stronghold access"
 	region = ACCESS_REGION_CUSTODIANS
 
-/var/const/access_nt_acolyte = 71
-/datum/access/nt_acolyte
-	id = access_nt_acolyte
-	desc = "Bonfire Vector"
-	region = ACCESS_REGION_CUSTODIANS
-
-/var/const/access_nt_custodian = 72
-/datum/access/nt_custodian
-	id = access_nt_custodian
-	desc = "Janitorial"
-	region = ACCESS_REGION_GENERAL
-
-/var/const/access_nt_agrolyte = 73
-/datum/access/nt_agrolyte
-	id = access_nt_agrolyte
-	desc = "Botany"
-	region = ACCESS_REGION_GENERAL
+// /var/const/free_access_id = 71
+// /var/const/free_access_id = 72
+// /var/const/free_access_id = 73
 
 /var/const/access_oathpledge = 74
-/datum/access/nt_preacher
+/datum/access/oathpledge
 	id = access_oathpledge
 	desc = "Bonfire Oathpledge"
 	region = ACCESS_REGION_CUSTODIANS

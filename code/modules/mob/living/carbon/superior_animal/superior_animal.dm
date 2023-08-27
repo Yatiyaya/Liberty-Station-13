@@ -111,7 +111,7 @@
 	else if (health < maxHealth * 0.80)
 		to_chat(user, SPAN_WARNING("It has had minor damage done to it."))
 	else if (health < maxHealth)
-		to_chat(user, SPAN_WARNING("It has a few cuts and bruses."))
+		to_chat(user, SPAN_WARNING("It has a few cuts and bruises."))
 
 /**
  * To be used when we attempt to target a mob outside of view_range.

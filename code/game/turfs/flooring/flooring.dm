@@ -667,6 +667,14 @@ var/list/flooring_types
 	icon_base = "wood"
 	build_type = /obj/item/stack/tile/wood/wood_old
 
+/decl/flooring/wood/tatami
+	name = "tatami mat"
+	desc = "A set of soft tatami mats covering the floor."
+	icon_base = "tatami_full"
+	descriptor = "tatami mats"
+	footstep_sound = "carpet"
+	build_type = /obj/item/stack/tile/wood/tatami
+
 /decl/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel rods."

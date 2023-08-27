@@ -75,6 +75,14 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
 	)
 
+/datum/craft_recipe/floor/tatami
+	name = "tatami mats"
+	result = /obj/item/stack/tile/wood/tatami
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
 /datum/craft_recipe/floor/cafe
 	name = "cafe floor tile"
 	result = /obj/item/stack/tile/floor/cafe

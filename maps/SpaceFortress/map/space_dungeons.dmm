@@ -6012,7 +6012,7 @@
 	pixel_y = -32
 	},
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood,
 /area/outpost/abandoned_fortress/powered)
 "EP" = (

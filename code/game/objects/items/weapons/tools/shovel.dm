@@ -24,7 +24,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "switches their stance to avoid using the blade of their weapon"
+	alt_mode_toggle = "relaxes the anger behind their grip"
 	alt_mode_lossrate = 0.9
 
 

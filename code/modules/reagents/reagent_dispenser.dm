@@ -312,7 +312,7 @@
 	desc = "Barrel a day - keeps the liver away."
 	icon_state = "barrel_blue"
 	volume = 1000
-	starting_reagent = "ntcahors"
+	starting_reagent = "bonfirebrew"
 	price_tag = 25
 	contents_cost = 950
 

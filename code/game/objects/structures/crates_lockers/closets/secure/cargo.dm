@@ -27,6 +27,7 @@
 	icon_state = "cargo"
 
 /obj/structure/closet/secure_closet/personal/cargotech/populate_contents()
+	new /obj/item/clothing/under/costume/kinky/leather(src)
 	new /obj/item/clothing/under/skylight_outfit(src)
 	new /obj/item/clothing/suit/storage/toggle/skylight_coat(src)
 	new /obj/item/clothing/shoes/color/black(src)

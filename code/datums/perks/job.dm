@@ -69,7 +69,7 @@
 
 /datum/perk/job/sanityboost
 	name = "Inspiring Flame"
-	desc = "When near a Torchbearer, you feel your mind at ease. Your body is strengthened by its presence, resisting all forms of damage."
+	desc = "When near a Torchbearer, you feel your mind at ease. You inner flame is strengthened by its presence, for within their fiery embrace lies not just warmth, but a solace that soothes the mind."
 	gain_text = "You feel the warmth of a nearby torchbearer."
 	lose_text = "The warmth from the torchbearer fades away."
 	icon_state = "torchbearer" // https://game-icons.net/1x1/lorc/fire-silhouette.html

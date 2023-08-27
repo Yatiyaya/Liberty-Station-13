@@ -142,19 +142,23 @@
 
 /obj/item/storage/belt/utility/custodian
 	name = "Bonfire knightly belt"
-	desc = "Waist-held righteous items."
-	icon_state = "utility_neotheology"
+	desc = "Waist-held utility for the prepared knight."
+	icon_state = "bonfire_belt"
 	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 5)
 	can_hold_extra = list(
-		/obj/item/book/ritual/hearthlantern,
-		/obj/item/implant/core_implant/cruciform,
+		/obj/item/book/lectures, // Parent so that off duty Custodians can make use of it.
+		/obj/item/implant/core_implant/hearthcore,
 		/obj/item/soap,
 		/obj/item/reagent_containers/spray/cleaner,
 		/obj/item/tool/knife/dagger/custodian,
-		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+		/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+		/obj/item/reagent_containers/food/drinks/flask/gourdflask,
+		/obj/item/stack/thrown/gourd,
+		/obj/item/cut_gourd,
+		/obj/item/stack/mold_kit,
+		/obj/item/mold,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
-		/obj/item/gun/energy/ntpistol,
 		/obj/item/device/binoculars
 	)
 
