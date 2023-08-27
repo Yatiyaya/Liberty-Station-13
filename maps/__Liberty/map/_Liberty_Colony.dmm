@@ -2916,12 +2916,9 @@
 /area/liberty/outside/range)
 "aLI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
+/obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "aLK" = (
@@ -8851,17 +8848,6 @@
 	icon_state = "7,0"
 	},
 /area/shuttle/vasiliy_shuttle_area)
-"ceC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/transit,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "ceF" = (
 /obj/structure/toilet,
 /obj/effect/decal/cleanable/filth,
@@ -11865,11 +11851,6 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office{
 	dir = 4
@@ -11881,7 +11862,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon  Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous  Oxide","waste_sensor"="Gas  Mix  Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -12032,11 +12013,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
 "cPW" = (
@@ -13283,10 +13259,8 @@
 "dcZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/transit,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
@@ -13630,11 +13604,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
 "dgI" = (
@@ -13650,15 +13619,6 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
-"dgT" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "dgU" = (
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/medical/genetics)
@@ -17624,10 +17584,9 @@
 "eij" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/sign/neon/beer{
+	pixel_y = 32;
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
@@ -20359,17 +20318,6 @@
 /area/colony)
 "eRA" = (
 /turf/simulated/floor/fixed/fdirt,
-/area/liberty/crew_quarters/barbackroom)
-"eRO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/transit,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "eRS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28363,16 +28311,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/rnd/xenoflora)
 "gOj" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/transit,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "gOt" = (
@@ -28642,13 +28582,6 @@
 "gRU" = (
 /obj/machinery/newscaster{
 	pixel_y = 34
-	},
-/obj/structure/multiz/stairs/active{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/crew_quarters/barbackroom)
@@ -31719,15 +31652,6 @@
 /obj/item/storage/box/flashbangs,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/tactical)
-"hCP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "hCQ" = (
 /obj/effect/floor_decal/spline/fancy,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -31926,7 +31850,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon  Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous  Oxide","waste_sensor"="Gas  Mix  Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -34553,11 +34477,6 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "ioT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/floor_decal/industrial/transit{
 	dir = 1
 	},
@@ -36321,11 +36240,6 @@
 "iLn" = (
 /obj/item/contraband/poster/placed/recruitment/mercenary{
 	pixel_x = -27
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
@@ -40280,10 +40194,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/liberty/security/detectives_office)
-"jKF" = (
-/obj/machinery/holoposter,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/barbackroom)
 "jKJ" = (
 /obj/random/cluster/termite_no_despawn_swarm,
 /obj/effect/decal/cleanable/dirt,
@@ -47891,11 +47801,6 @@
 	name = "Cargo Maintenance";
 	req_one_access = list(50,26)
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "lFh" = (
@@ -51202,10 +51107,6 @@
 /obj/structure/cyberplant,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
-"mxc" = (
-/obj/structure/sign/neon/beer,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/barbackroom)
 "mxd" = (
 /obj/machinery/door/unpowered/simple/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -52061,19 +51962,6 @@
 /obj/random/pack/junk_machine,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
-"mKO" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/multiz/stairs/active{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 8;
-	tag = "icon-railing0 (WEST)"
-	},
-/turf/simulated/floor/tiled/steel/bar_dance,
-/area/liberty/crew_quarters/barbackroom)
 "mKQ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
@@ -53688,15 +53576,6 @@
 	},
 /turf/simulated/floor/industrial/checker_large,
 /area/liberty/maintenance/undergroundfloor3north)
-"neW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "neY" = (
 /obj/machinery/autolathe/loaded,
 /obj/machinery/light{
@@ -55533,12 +55412,7 @@
 /area/liberty/engineering/atmos)
 "nBw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "nBz" = (
@@ -59558,11 +59432,6 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
 "oAI" = (
@@ -59813,16 +59682,6 @@
 /obj/item/modular_computer/console/preset/trade,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/merchant)
-"oDR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/multiz/stairs/active/bottom{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "oDY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -64121,11 +63980,6 @@
 "pGT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
@@ -69329,8 +69183,8 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/engineering/engine_waste)
 "qPS" = (
-/obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "qPT" = (
@@ -86808,17 +86662,6 @@
 /obj/machinery/floodlight/gate,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/maingate_outside)
-"vdT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/multiz/stairs/active/bottom{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/crew_quarters/barbackroom)
 "vec" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
@@ -90056,11 +89899,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/transit{
 	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
@@ -93679,11 +93517,6 @@
 /turf/simulated/floor/wood,
 /area/liberty/bonfire/vectorrooms)
 "wIr" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office{
 	dir = 4
@@ -95107,6 +94940,7 @@
 "wZV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/drinks/cans/sodawater,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "xac" = (
@@ -97791,11 +97625,6 @@
 /obj/effect/floor_decal/rust/steel_decals_rusted2{
 	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/crew_quarters/barbackroom)
 "xIn" = (
@@ -99965,11 +99794,6 @@
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
@@ -115417,13 +115241,13 @@ aLr
 aLr
 geT
 iTN
-wZV
+aLI
 bQP
 rKk
 bQP
 bQP
 bQP
-mxc
+pxd
 ijh
 rye
 yjd
@@ -115619,14 +115443,14 @@ aLr
 aLr
 aLr
 iTN
-aLI
+xpG
 wIr
 wIr
 wIr
 cNX
 iLn
-neW
-xpG
+pww
+eij
 pww
 yjd
 taT
@@ -115821,13 +115645,13 @@ aLr
 woK
 aLr
 iTN
-dgT
+pww
 xKk
 xKk
 xKk
 xKk
 xKk
-dgT
+pww
 xpG
 xpG
 qPS
@@ -116023,7 +115847,7 @@ jPm
 aLr
 lsO
 iTN
-eRO
+tLJ
 duY
 oUG
 oUG
@@ -116436,7 +116260,7 @@ bcg
 vPS
 yeS
 xpG
-pww
+nBw
 taT
 dCI
 dCI
@@ -116629,7 +116453,7 @@ iNE
 reI
 aLr
 lEA
-ceC
+tLJ
 rlZ
 szo
 eRA
@@ -116638,7 +116462,7 @@ bcg
 xIk
 phf
 pww
-oDR
+pww
 cyq
 cyq
 cyq
@@ -116840,7 +116664,7 @@ fMH
 ioT
 phf
 pww
-vdT
+pww
 cyq
 jbR
 pfR
@@ -117039,9 +116863,9 @@ kEc
 kEc
 kEc
 mzh
-nBw
-hCP
-neW
+xpG
+pww
+pww
 pww
 cyq
 oDQ
@@ -117243,7 +117067,7 @@ pSM
 daa
 xjw
 xzh
-eij
+xpG
 iCP
 cyq
 hOc
@@ -117442,7 +117266,7 @@ eTf
 bbu
 eTf
 pxd
-jKF
+pxd
 isO
 iQE
 lFe
@@ -157038,7 +156862,7 @@ lYo
 fvP
 noo
 pxd
-mKO
+jXL
 eji
 ncs
 qSX
