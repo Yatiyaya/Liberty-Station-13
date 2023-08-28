@@ -898,6 +898,13 @@ default behaviour is:
 	if(T)
 		update_z(T.z)
 
+	if(!ishuman(src))
+		if(hud_type)
+			hud = new hud_type()
+		else
+			hud = new()
+
+
 /mob/living/Destroy()
 
 	for (var/obj/effect/bmode/buildholder/selector in selected_by)

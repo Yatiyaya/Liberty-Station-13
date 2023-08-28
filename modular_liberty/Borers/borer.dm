@@ -24,6 +24,9 @@
 	hunger_enabled = FALSE
 	pass_flags = PASSTABLE
 	universal_understand = 1
+
+	defaultHUD = "BorerStyle"
+
 	//holder_type = /obj/item/holder/borer //Theres no inhand sprites for holding borers, it turns you into a pink square
 
 	var/borer_level = 0			// Level of borer.
@@ -98,6 +101,90 @@
 
 	truename = "[pick("Primary","Secondary","Tertiary","Quaternary")] [rand(1000,9999)]"
 	if(!roundstart) request_player()
+	create_HUD()
+
+/mob/living/simple_animal/borer/create_HUD()
+
+	create_HUDneed()
+	create_HUDfrippery()
+	create_HUDtech()
+//	create_HUDinventory()
+
+	show_HUD()
+
+	return
+
+/mob/living/simple_animal/borer/create_HUDneed()
+	var/mob/living/simple_animal/borer/H = src
+	var/datum/hud/borer/HUDdatum = GLOB.HUDdatums[H.defaultHUD]
+	for (var/HUDname in HUDdatum.HUDneed)
+		var/HUDtype = HUDdatum.HUDneed[HUDname]["type"]
+
+		var/obj/screen/HUD = new HUDtype(HUDname, H,\
+		HUDdatum.HUDneed[HUDname]["icon"] ? HUDdatum.HUDneed[HUDname]["icon"] : HUDdatum.icon,\
+		HUDdatum.HUDneed[HUDname]["icon_state"] ? HUDdatum.HUDneed[HUDname]["icon_state"] : null)
+
+		HUD.screen_loc = HUDdatum.HUDneed[HUDname]["loc"]
+
+		H.HUDneed[HUD.name] += HUD
+		if (HUD.process_flag)
+			H.HUDprocess += HUD
+	return
+
+/mob/living/simple_animal/borer/create_HUDinventory()
+	var/mob/living/simple_animal/borer/H = src
+	var/datum/hud/borer/HUDdatum = GLOB.HUDdatums[H.defaultHUD]
+
+	for (var/gear_slot in hud.gear)
+		if (!HUDdatum.slot_data.Find(gear_slot))
+			log_debug("[usr] try take inventory data for [gear_slot], but HUDdatum not have it!")
+			to_chat(H, "Sorry, but something went wrong with creating inventory slots, we recommend changing HUD type or call admins")
+			return
+		else
+			var/HUDtype
+			if(HUDdatum.slot_data[gear_slot]["type"])
+				HUDtype = HUDdatum.slot_data[gear_slot]["type"]
+			else
+				HUDtype = /obj/screen/inventory
+
+			var/obj/screen/inventory/inv_box = new HUDtype(gear_slot,\
+			hud.gear[gear_slot],\
+			HUDdatum.icon, HUDdatum.slot_data[gear_slot]["state"], H)
+
+			if(HUDdatum.slot_data[gear_slot]["hideflag"])
+				inv_box.hideflag = HUDdatum.slot_data[gear_slot]["hideflag"]
+
+			H.HUDinventory += inv_box
+	return
+
+/mob/living/simple_animal/borer/create_HUDfrippery()
+	var/mob/living/simple_animal/borer/H = src
+	var/datum/hud/borer/HUDdatum = GLOB.HUDdatums[H.defaultHUD]
+
+	for (var/list/whistle in HUDdatum.HUDfrippery)
+		var/obj/screen/frippery/F = new (whistle["icon_state"],whistle["loc"],H)
+		F.icon = HUDdatum.icon
+		if(whistle["hideflag"])
+			F.hideflag = whistle["hideflag"]
+		H.HUDfrippery += F
+	return
+
+/mob/living/simple_animal/borer/create_HUDtech()
+	var/mob/living/simple_animal/borer/H = src
+	var/datum/hud/borer/HUDdatum = GLOB.HUDdatums[H.defaultHUD]
+
+	for (var/techobject in HUDdatum.HUDoverlays)
+		var/HUDtype = HUDdatum.HUDoverlays[techobject]["type"]
+
+		var/obj/screen/HUD = new HUDtype(techobject,H,\
+		 HUDdatum.HUDoverlays[techobject]["icon"] ? HUDdatum.HUDoverlays[techobject]["icon"] : null,\
+		 HUDdatum.HUDoverlays[techobject]["icon_state"] ? HUDdatum.HUDoverlays[techobject]["icon_state"] : null)
+		HUD.layer = FLASH_LAYER
+
+		H.HUDtech[HUD.name] += HUD
+		if (HUD.process_flag)
+			H.HUDprocess += HUD
+	return
 
 /mob/living/simple_animal/borer/proc/ghost_enter(mob/user)
 	if(stat || key)
@@ -109,6 +196,8 @@
 		to_chat(user, SPAN_WARNING("Someone is already occupying this body."))
 		return TRUE
 	key = user.key
+
+	show_HUD()
 	return TRUE
 
 /mob/living/simple_animal/borer/attack_ghost(mob/user)
@@ -272,6 +361,7 @@
 
 		if(!host.lastKnownIP)
 			host.lastKnownIP = b2h_ip
+		show_HUD()
 
 	qdel(host_brain)
 

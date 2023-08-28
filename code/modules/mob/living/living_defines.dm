@@ -139,3 +139,7 @@
 	var/on_fire = 0 //The "Are we on fire?" var
 	var/fire_stacks
 	var/next_onfire_brn = 0 //burn
+
+	// HUD data vars.
+	var/datum/hud_data/hud
+	var/hud_type

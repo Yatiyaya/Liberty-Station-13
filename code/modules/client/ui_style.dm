@@ -13,14 +13,13 @@
 	set category = "OOC"
 	set desc = "Minimize or maximaze you UI"
 
-	if(!ishuman(usr))
-		to_chat(usr, SPAN_WARNING("You must be human to use this verb."))
-		return
-
+//	if(!ishuman(usr))
+//		to_chat(usr, SPAN_WARNING("You must be human to use this verb."))
+//		return
 
 	prefs.UI_compact_style = !prefs.UI_compact_style
 
-	var/mob/living/carbon/human/H = src.mob
+	var/mob/living/H = src.mob
 	H.minimalize_HUD()
 
 /client/verb/change_ui()

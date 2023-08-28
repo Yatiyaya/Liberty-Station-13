@@ -3387,6 +3387,7 @@
 #include "modular_liberty\Borers\borer.dm"
 #include "modular_liberty\Borers\borer_powers.dm"
 #include "modular_liberty\Borers\carbon_powers.dm"
+#include "modular_liberty\Borers\interface.dm"
 #include "modular_liberty\Borers\say.dm"
 #include "modular_liberty\Borers\__ADMIN SHIT\antagonist.dm"
 #include "modular_liberty\Borers\__ADMIN SHIT\ghost_trap.dm"

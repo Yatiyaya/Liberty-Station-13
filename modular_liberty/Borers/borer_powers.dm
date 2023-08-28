@@ -448,7 +448,7 @@
 			to_chat(src, SPAN_NOTICE("You learned [english_list(copied_languages)]."))
 
 		to_chat(host, SPAN_DANGER("Your head spins, your memories thrown in disarray!"))
-		H.adjustBrainLoss(copied_amount * 4)
+		host.adjustBrainLoss(copied_amount * 4)
 		H?.sanity.onPsyDamage(copied_amount * 4)
 
 		host.make_dizzy(copied_amount * 4)

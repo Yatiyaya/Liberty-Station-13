@@ -365,19 +365,20 @@
 /obj/screen/health/update_icon()
 	if(parentmob:stat != DEAD)
 		cut_overlays()
-		if (parentmob:analgesic >= 100)
+		if (iscarbon(parentmob) && parentmob:analgesic >= 100)
 //			icon_state = "health_numb"
 			add_overlay( ovrls["health0"])
 		else
 			var/mob/living/carbon/parentmobC = parentmob	// same parent mob but in correct type for accessing to species
-			switch(100 - ((parentmobC.species.flags & NO_PAIN) ? 0 : parentmob.traumatic_shock))
-				if(100 to INFINITY)		add_overlay( ovrls["health0"])
-				if(80 to 100)			add_overlay( ovrls["health1"])
-				if(60 to 80)			add_overlay( ovrls["health2"])
-				if(40 to 60)			add_overlay( ovrls["health3"])
-				if(20 to 40)			add_overlay( ovrls["health4"])
-				if(0 to 20)				add_overlay( ovrls["health5"])
-				else					add_overlay( ovrls["health6"])
+			if(iscarbon(parentmobC))
+				switch(100 - ((parentmobC.species.flags & NO_PAIN) ? 0 : parentmob.traumatic_shock))
+					if(100 to INFINITY)		add_overlay( ovrls["health0"])
+					if(80 to 100)			add_overlay( ovrls["health1"])
+					if(60 to 80)			add_overlay( ovrls["health2"])
+					if(40 to 60)			add_overlay( ovrls["health3"])
+					if(20 to 40)			add_overlay( ovrls["health4"])
+					if(0 to 20)				add_overlay( ovrls["health5"])
+					else					add_overlay( ovrls["health6"])
 
 /obj/screen/health/DEADelize()
 	cut_overlays()
@@ -548,6 +549,9 @@
 	set src in usr.client.screen
 	cut_overlays()
 	var/mob/living/carbon/human/H = parentmob
+
+	if(!ishuman(H)) return
+
 	if(H.species.reagent_tag == IS_SYNTHETIC)
 		return
 	switch(H.nutrition)
@@ -594,13 +598,13 @@
 /obj/screen/bodytemp/update_icon()
 	//TODO: precalculate all of this stuff when the species datum is created
 	var/mob/living/carbon/parentmobC = parentmob	// same parent mob but in correct type for accessing to species
-	var/base_temperature = parentmobC.species.body_temperature
-	if(base_temperature == null) //some species don't have a set metabolic temperature
+	var/base_temperature = iscarbon(parentmobC) ? parentmobC.species.body_temperature : parentmobC.bodytemperature
+	if(base_temperature == null && parentmobC.species) //some species don't have a set metabolic temperature
 		base_temperature = (parentmobC.species.heat_level_1 + parentmobC.species.cold_level_1)/2
 
 	var/temp_step
 	cut_overlays()
-	if (parentmob:bodytemperature >= base_temperature)
+	if (iscarbon(parentmobC) && parentmob:bodytemperature >= base_temperature)
 		temp_step = (parentmobC.species.heat_level_1 - base_temperature)/4
 
 		if (parentmob:bodytemperature >= parentmobC.species.heat_level_1)
@@ -661,7 +665,8 @@
 	var/mob/living/carbon/human/H = parentmob
 //	icon_state = "pressure[H.pressure_alert]"
 	cut_overlays()
-	add_overlay( ovrls["pressure[H.pressure_alert]"])
+	if(ishuman(H))
+		add_overlay( ovrls["pressure[H.pressure_alert]"])
 
 /obj/screen/pressure/DEADelize()
 	cut_overlays()
@@ -689,7 +694,7 @@
 /obj/screen/toxin/update_icon()
 	var/mob/living/carbon/human/H = parentmob
 	cut_overlays()
-	if(H.plasma_alert)
+	if(ishuman(H) && H.plasma_alert)
 		add_overlay( ovrls["tox1"])
 //		icon_state = "tox1"
 //	else
@@ -723,7 +728,7 @@
 /obj/screen/oxygen/update_icon()
 	var/mob/living/carbon/human/H = parentmob
 	cut_overlays()
-	if(H.oxygen_alert)
+	if(ishuman(H) && H.oxygen_alert)
 		add_overlay( ovrls["oxy1"])
 //		icon_state = "oxy1"
 //	else
@@ -887,7 +892,7 @@ obj/screen/fire/DEADelize()
 
 /obj/screen/internal/update_icon()
 	cut_overlays()
-	if(parentmob:internal)
+	if(iscarbon(parentmob) && parentmob:internal)
 		add_overlay( ovrls["internal1"])
 	else
 		add_overlay( ovrls["internal0"])
