@@ -2692,6 +2692,16 @@
 /obj/structure/flora/big/bush2,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/side/f2section1)
+"aHc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial_plant/steel_grate_warning,
+/obj/structure/barricade,
+/obj/structure/girder,
+/obj/structure/sandbags{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/maintenance/undergroundfloor3north)
 "aHh" = (
 /obj/random/mob/agape/low_chance,
 /turf/simulated/floor/rock,
@@ -6214,10 +6224,11 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "bwr" = (
-/obj/structure/table/bench/steel,
-/obj/random/junkfood/rotten,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "bws" = (
 /obj/structure/sign/warning/smoking/small{
 	pixel_y = 30
@@ -7107,9 +7118,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3south)
 "bHA" = (
-/obj/structure/lattice,
-/obj/random/junkfood/rotten,
-/obj/effect/decal/cleanable/dirt,
+/obj/item/tool_upgrade/augment/fuel_tank,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "bHC" = (
@@ -8238,11 +8247,10 @@
 /turf/simulated/floor/snow,
 /area/liberty/maintenance/caveameridian)
 "bTC" = (
+/obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial_plant/steel_grate_warning,
-/obj/structure/barricade,
-/obj/structure/girder,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/obj/random/traps/low_chance,
+/turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "bTH" = (
 /obj/structure/table/onestar,
@@ -9175,6 +9183,11 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/panic_room)
+"cdC" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/girder,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "cdF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced,
@@ -12936,6 +12949,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/medical/reception)
+"cUJ" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/random/traps/low_chance,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "cUN" = (
 /obj/structure/table/standard,
 /obj/item/reagent_containers/glass/beaker/vial/vape/nicotine,
@@ -19597,11 +19615,13 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/engine_room)
 "exH" = (
-/obj/structure/table/bench/steel,
-/obj/item/reagent_containers/food/snacks/stew,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/stack/rods/random,
+/obj/item/mop,
+/obj/structure/mopbucket,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "exI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall/wood_barrel,
@@ -19850,8 +19870,8 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/genetics)
 "eBt" = (
-/obj/random/traps/low_chance,
 /obj/structure/girder,
+/obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "eBu" = (
@@ -20665,11 +20685,13 @@
 /turf/simulated/floor/industrial/navy_slates,
 /area/liberty/maintenance/undergroundfloor3west)
 "eKB" = (
-/obj/structure/lattice,
-/obj/machinery/light/small,
-/obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating/under,
+/obj/structure/barricade,
+/obj/structure/girder,
+/obj/structure/sandbags{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor3north)
 "eKC" = (
 /obj/effect/floor_decal/spline/wood,
@@ -22505,6 +22527,11 @@
 	},
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/skyyard)
+"fiD" = (
+/obj/structure/catwalk,
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "fiI" = (
 /obj/machinery/conveyor/east{
 	dir = 2;
@@ -22636,6 +22663,12 @@
 /obj/item/stack/ore/gold/small,
 /turf/simulated/floor/rock,
 /area/colony)
+"fkw" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "fkx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -22703,6 +22736,16 @@
 /obj/structure/decor_light/beacon,
 /turf/simulated/floor/tiled/dark/panels,
 /area/liberty/bonfire/storage)
+"flC" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/obj/item/tool/pickaxe,
+/obj/item/device/scanner/gas,
+/obj/structure/catwalk,
+/obj/item/tool/shovel,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "flG" = (
 /obj/machinery/door/airlock/glass_mining{
 	name = "Cargo Bay";
@@ -27221,6 +27264,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/medical/cryo)
+"gmz" = (
+/obj/item/stack/rods/random,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "gmK" = (
 /obj/effect/floor_decal/industrial/danger,
 /obj/effect/decal/cleanable/blood/oil,
@@ -29241,7 +29288,10 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/maintenance/undergroundfloor1north)
 "gKU" = (
-/obj/machinery/microwave/burnbarrel,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "gLg" = (
@@ -29858,6 +29908,11 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor3west)
+"gRy" = (
+/obj/machinery/light/small,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "gRD" = (
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
@@ -36388,7 +36443,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mecha_armor,
 /obj/structure/boulder,
-/turf/space,
+/turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
 "itd" = (
 /obj/machinery/door/airlock/multi_tile/glass{
@@ -36882,11 +36937,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/security/nuke_storage)
 "iye" = (
-/obj/item/trash/liquidfood,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
+/obj/structure/ore_box/destroyed/union,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "iyf" = (
@@ -39916,11 +39972,11 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/inside_colony)
 "jjT" = (
-/obj/structure/lattice,
-/obj/random/cluster/roaches/low_chance,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "jjV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/roaches/low_chance,
@@ -40804,9 +40860,10 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/hallway/surface/section1)
 "juA" = (
-/obj/structure/bonfire/permanent,
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/toilet,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "juL" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/disposalpipe/segment,
@@ -45073,8 +45130,8 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "kue" = (
-/obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "kul" = (
@@ -45335,6 +45392,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/stronghold)
+"kxf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank/huge/derelict,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "kxl" = (
 /obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
@@ -51063,6 +51125,11 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/reinforced/oxygen,
 /area/liberty/engineering/atmos)
+"lPX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/caution/cone,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/maintenance/undergroundfloor3north)
 "lPY" = (
 /obj/machinery/door/airlock/maintenance_common{
 	req_access = list(12)
@@ -54697,6 +54764,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/atmos)
+"mNj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "mNo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/washing_machine,
@@ -57738,6 +57810,11 @@
 	dir = 1
 	},
 /area/liberty/bonfire/storage)
+"nxs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "nxy" = (
 /obj/effect/floor_decal/border/carpet/red{
 	dir = 1
@@ -58904,6 +58981,11 @@
 	dir = 4
 	},
 /area/liberty/hallway/surface/section1)
+"nMf" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "nMg" = (
 /obj/machinery/conveyor/south{
 	id = "mining_internal"
@@ -59033,9 +59115,10 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/medical/reception)
 "nNY" = (
-/obj/structure/lattice,
-/obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/sandbags{
+	dir = 1
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "nOe" = (
@@ -59132,8 +59215,8 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest)
 "nOP" = (
-/obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/tool/weldingtool,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "nOW" = (
@@ -59927,6 +60010,11 @@
 /obj/machinery/photocopier,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/captain)
+"nXx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "nXz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/cyan{
@@ -62344,10 +62432,11 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/barbackroom)
 "oAI" = (
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/rubble,
+/obj/structure/table/standard,
+/obj/structure/catwalk,
+/obj/item/toy/figure/character/technomancer/engineer,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "oAJ" = (
 /obj/machinery/light_switch{
 	pixel_y = 32
@@ -64042,9 +64131,6 @@
 /turf/simulated/floor/tiled/white/golden,
 /area/liberty/bonfire/vectorrooms)
 "oUC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade,
-/obj/structure/girder,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor3north)
 "oUG" = (
@@ -65008,9 +65094,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "pfQ" = (
-/obj/structure/table/steel,
-/obj/item/reagent_containers/food/condiment/flour,
-/turf/simulated/floor/plating/under,
+/obj/item/contraband/poster/placed/pinup/engineering,
+/turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor3north)
 "pfR" = (
 /obj/structure/table/reinforced,
@@ -65066,12 +65151,12 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "pgy" = (
 /obj/structure/bookcase/guncase,
-/obj/random/ammo_lowcost,
-/obj/random/ammo_lowcost,
-/obj/random/ammo_lowcost,
 /obj/random/gun_handmade,
 /obj/random/gun_handmade,
 /obj/random/gun_handmade,
+/obj/item/ammo_kit,
+/obj/item/ammo_kit,
+/obj/item/ammo_kit,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "pgA" = (
@@ -66841,8 +66926,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/quartermaster/hangarsupply)
 "pDd" = (
-/obj/random/junkfood/rotten,
 /obj/effect/decal/cleanable/rubble,
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "pDn" = (
@@ -69707,10 +69792,11 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/maintenance/undergroundfloor1oldgarden)
 "qiY" = (
-/obj/structure/table/steel,
-/obj/item/reagent_containers/food/snacks/twobread,
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
+/obj/machinery/floodlight,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "qjc" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -71490,6 +71576,11 @@
 	},
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
+"qEp" = (
+/obj/item/stack/rods/random,
+/obj/structure/girder,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "qEt" = (
 /obj/structure/table/standard,
 /obj/item/reagent_containers/food/snacks/meat{
@@ -71569,6 +71660,12 @@
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/hallway/side/f2section1)
+"qFG" = (
+/obj/structure/sandbags{
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/undergroundfloor3north)
 "qFM" = (
 /obj/effect/floor_decal/spline/snow_edge{
 	dir = 8
@@ -73757,9 +73854,8 @@
 /turf/simulated/wall/rust_reinforced,
 /area/colony)
 "reQ" = (
-/obj/structure/lattice,
-/obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "reS" = (
@@ -73975,9 +74071,8 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/prisoncells)
 "rhF" = (
-/obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/device/synthesized_instrument/guitar,
+/obj/item/flamethrower,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "rhG" = (
@@ -74220,6 +74315,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/liberty/maintenance/undergroundfloor2east)
+"rkz" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "rkD" = (
 /obj/structure/railing,
 /obj/effect/floor_decal/industrial/danger,
@@ -76331,7 +76433,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/medical/paramedic)
 "rLg" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/machinery/pipedispenser,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "rLu" = (
@@ -80004,7 +80106,7 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/engine_room)
 "sAF" = (
-/obj/random/junkfood/rotten,
+/obj/item/clothing/head/welding,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "sAG" = (
@@ -81756,6 +81858,7 @@
 /obj/machinery/camera/network/engineering{
 	dir = 4
 	},
+/obj/item/storage/box/flares,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/engineering/workshop)
 "sUd" = (
@@ -83967,8 +84070,10 @@
 /turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
 "tuH" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/engineering/workshop)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/rods/random,
+/turf/simulated/floor/plating/under,
+/area/colony)
 "tuK" = (
 /obj/structure/disposalpipe/junction{
 	dir = 4
@@ -85597,12 +85702,10 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/xenobiology)
 "tNv" = (
-/obj/structure/lattice,
-/obj/random/junk/low_chance,
-/obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank/derelict,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "tNy" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -88891,11 +88994,10 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "uAv" = (
-/obj/structure/lattice,
-/obj/random/junkfood/rotten,
-/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/tool/pickaxe/drill,
 /turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor3north)
+/area/colony)
 "uAL" = (
 /obj/structure/sign/warning/nosmoking/small,
 /turf/simulated/wall/r_wall,
@@ -90372,6 +90474,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/turret_protected/ai_upload)
+"uWg" = (
+/obj/machinery/door/airlock/glass_engineering{
+	name = "Engineering";
+	req_access = list(10)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/engineering/workshop)
 "uWp" = (
 /obj/random/traps/low_chance,
 /obj/machinery/door/airlock/multi_tile/metal/mait{
@@ -91902,8 +92012,8 @@
 /turf/simulated/floor/plating,
 /area/liberty/maintenance/undergroundfloor1east)
 "vqx" = (
-/obj/structure/table/steel,
-/obj/random/junkfood/rotten,
+/obj/structure/catwalk,
+/obj/vehicle/train/cargo/engine,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "vqB" = (
@@ -92427,9 +92537,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "vvF" = (
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "shutter"
+/obj/structure/girder,
+/obj/structure/barricade,
+/obj/structure/sandbags{
+	dir = 1
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
@@ -92989,6 +93100,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/techmaint,
+/area/colony)
+"vCQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/oddity/common/blueprint,
+/obj/structure/table/standard,
+/turf/simulated/floor/plating/under,
 /area/colony)
 "vCT" = (
 /obj/structure/salvageable/data,
@@ -100910,9 +101027,10 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/security/detectives_office)
 "xqY" = (
-/obj/structure/lattice,
-/obj/random/junk/low_chance,
-/turf/simulated/floor/plating/under,
+/obj/structure/sandbags{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor3north)
 "xrb" = (
 /obj/structure/table/standard,
@@ -104032,8 +104150,8 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/command/armory)
 "ybo" = (
-/obj/structure/table/steel,
-/obj/item/reagent_containers/food/snacks/tomatomeat,
+/obj/structure/catwalk,
+/obj/random/junk/low_chance,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3north)
 "ybw" = (
@@ -114437,12 +114555,12 @@ aLr
 aLr
 aLr
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
+nxs
+fkw
+nxs
+wqN
+cdC
+qEp
 emu
 uhM
 bcB
@@ -114639,13 +114757,13 @@ aLr
 iNE
 aLr
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+tuH
+goe
+msG
+goe
+msG
+goe
 uhM
 bcB
 aMc
@@ -114841,13 +114959,13 @@ tqK
 oXs
 oXs
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+rXn
+oAI
+flC
+fiD
+rXn
+goe
 uhM
 uhM
 xfa
@@ -115043,13 +115161,13 @@ eWq
 tqK
 aLr
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+rXn
+rXn
+qiY
+mDT
+rXn
+goe
 emu
 uhM
 uhM
@@ -115245,14 +115363,14 @@ tdw
 aLr
 aLr
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+puB
+uAv
+msG
+vCQ
+nMf
+gmz
+goe
 uhM
 tHm
 mUL
@@ -115447,13 +115565,13 @@ aLr
 aLr
 lsO
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+goe
+juA
+tNv
+bwr
+rXn
+goe
 emu
 uhM
 mUL
@@ -115649,13 +115767,13 @@ fIY
 grh
 geT
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+goe
+msG
+juA
+wqN
+jjT
+rXn
+goe
 emu
 uhM
 eNS
@@ -115851,13 +115969,13 @@ eZB
 tdw
 eos
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+puB
+rXn
+juA
+exH
+kxf
+rXn
+goe
 emu
 bCx
 bCx
@@ -116053,13 +116171,13 @@ owu
 fIY
 axv
 mjh
-emu
-emu
-emu
-emu
-emu
-emu
-emu
+puB
+goe
+rXn
+rkz
+mDT
+msG
+goe
 emu
 pLd
 pLd
@@ -116255,12 +116373,12 @@ uMS
 aLr
 oXs
 mjh
-mjh
-mjh
-mjh
+xEs
+bHA
+gRy
 clx
-mjh
-mjh
+gKU
+nsG
 mjh
 pLd
 pLd
@@ -116457,12 +116575,12 @@ nsG
 pWp
 iNE
 mjh
-oAI
+xEs
 pDd
-exH
+kyL
 iye
-faS
-bHA
+nsG
+kyL
 mjh
 pLd
 qXQ
@@ -116657,14 +116775,14 @@ emu
 nZf
 qVQ
 iVU
-tOc
-cXl
+bTC
+vvF
 nNY
 rLg
-gKU
+nsG
 vqx
-pfQ
-reQ
+nsG
+nsG
 mjh
 pLd
 qXQ
@@ -116858,15 +116976,15 @@ emu
 emu
 nZf
 nsG
-iVU
+ybo
 uMS
-cXl
-lNR
-oAI
+vvF
+qFG
+xEs
 rhF
-tNv
-jjT
-bHA
+pWp
+kyL
+kyL
 mjh
 pLd
 pLd
@@ -117061,14 +117179,14 @@ emu
 nZf
 qVQ
 iVU
-nsG
-jJj
-uAv
+cXl
+vvF
+nNY
 kyL
-qiY
-ybo
-juA
-reQ
+nsG
+jyT
+nsG
+nXx
 mjh
 emu
 pLd
@@ -117263,14 +117381,14 @@ uqq
 mjh
 uEa
 iVU
-xEs
+cUJ
 mjh
-xqY
+lNR
 sAF
 xEs
 kue
-bwr
-nOP
+nsG
+kyL
 mjh
 emu
 pLd
@@ -117467,12 +117585,12 @@ geT
 qvl
 iyP
 mjh
-mjh
-oAI
+pfQ
+xEs
 nOP
 reQ
-eKB
-mjh
+tOc
+nsG
 mjh
 emu
 pLd
@@ -117671,10 +117789,10 @@ axv
 bwT
 mjh
 eEb
-nOP
 kyL
+reQ
 kyL
-mjh
+nsG
 mjh
 emu
 pLd
@@ -117874,9 +117992,9 @@ bwT
 mjh
 mjh
 eBt
-vvF
-mjh
-mjh
+iVU
+eBt
+eBt
 mjh
 poB
 poB
@@ -118072,12 +118190,12 @@ csI
 oHe
 aLr
 oHe
-aLr
-geT
+eKB
+xqY
 aLr
 oUC
+lPX
 aLr
-agL
 agL
 mjh
 poB
@@ -118274,10 +118392,10 @@ csI
 eWq
 jSK
 aLr
-iNE
-aLr
-aLr
-bTC
+aHc
+xqY
+lPX
+oUC
 aLr
 aLr
 mCR
@@ -118475,9 +118593,9 @@ guc
 ggK
 aLr
 aLr
-kyL
-kyL
-aLr
+mNj
+eKB
+xqY
 aLr
 oUC
 aLr
@@ -121908,9 +122026,9 @@ omv
 emu
 emu
 emu
-guc
+goe
 emu
-emu
+mPt
 wZV
 lKg
 enA
@@ -122109,8 +122227,8 @@ emu
 guc
 emu
 emu
-mYu
-guc
+ecj
+goe
 bWm
 emu
 vry
@@ -122311,8 +122429,8 @@ mjh
 bWm
 guc
 guc
-guc
-mYu
+goe
+ecj
 guc
 emu
 efV
@@ -122513,8 +122631,8 @@ mjh
 guc
 mYu
 guc
-guc
-guc
+goe
+goe
 emu
 emu
 efV
@@ -122715,8 +122833,8 @@ mjh
 bWm
 guc
 guc
-guc
-guc
+goe
+goe
 mjh
 mjh
 mjh
@@ -122918,7 +123036,7 @@ bWm
 mYu
 guc
 guc
-guc
+goe
 jJj
 hjw
 mjh
@@ -167982,8 +168100,8 @@ dXO
 nQD
 jJW
 xAt
-tuH
-lPu
+rMk
+uWg
 iqZ
 iqZ
 eOf
@@ -168184,8 +168302,8 @@ nPW
 msl
 nEB
 xAt
-tuH
-lPu
+rMk
+uWg
 iqZ
 eOf
 iqZ
