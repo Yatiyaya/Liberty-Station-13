@@ -4310,6 +4310,16 @@
 /obj/item/tool/hammer/dumbbell,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/fitness)
+"aZW" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "West APC";
+	pixel_x = -28
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "aZX" = (
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
@@ -11127,6 +11137,19 @@
 	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/command/meeting_room)
+"czn" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant/bush_bullet,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "czo" = (
 /obj/structure/table/standard,
 /obj/item/clothing/accessory/stethoscope,
@@ -38527,6 +38550,19 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/crew_quarters/janitor)
+"iRK" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant/barrel_cactus,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "iRN" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -45203,6 +45239,23 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/undergroundfloor1east)
+"ktz" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "ktA" = (
 /obj/effect/window_lwall_spawn/smartspawnplasma,
 /obj/machinery/door/firedoor,
@@ -89811,6 +89864,18 @@
 /obj/structure/salvageable/personal,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
+"uFD" = (
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant/barrel_cactus,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "uFE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel,
@@ -105445,6 +105510,11 @@
 	icon_state = "spline_fancy_corner"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "yji" = (
@@ -118952,8 +119022,8 @@ dyl
 kgA
 aMc
 alV
-iRZ
-pfQ
+bQP
+uFD
 iDV
 fhy
 bPd
@@ -119154,8 +119224,8 @@ ggT
 nxs
 aMc
 alV
-iRZ
-pBl
+aZW
+czn
 iDV
 fhy
 uaD
@@ -119357,7 +119427,7 @@ eAC
 tEU
 dGT
 iRZ
-pfQ
+iRK
 iDV
 fhy
 aAl
@@ -119559,7 +119629,7 @@ iRZ
 bHA
 hOO
 gBn
-pBl
+czn
 iDV
 fhy
 aAl
@@ -119963,7 +120033,7 @@ lHf
 lHf
 afF
 sCs
-lej
+ktz
 cZM
 orH
 iDV
