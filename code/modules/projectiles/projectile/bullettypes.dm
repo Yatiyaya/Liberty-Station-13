@@ -895,15 +895,14 @@
 /obj/item/projectile/bullet/pellet/shotgun/scrap
 	damage_types = list(BRUTE = 4)
 	base_spread = 90
-	range_step = 2		//projectile will lose a fragment each time it travels this distance.
 	agony = 3
-	pellets = 7
+	pellets = 6
 	range_step = 1
 	spread_step = 10
 	knockback = 0 //We do not knockback do to issues with bullet douping
 	step_delay = 0.9
 	affective_damage_range = 5
-	affective_ap_range = 2
+	affective_ap_range = 5
 	recoil = 11
 
 //Railgun
@@ -991,21 +990,20 @@
 	recoil = 38
 
 //Should do about 68 damage at 1 tile distance (adjacent), and 40 damage at 3 tiles distance.
-//Overall less damage than slugs in exchange for more damage at very close range and more embedding
+//Overall less damage than slugs in exchange for more damage at very close range and more embedding//now should work like an weak 9mm being shot 6 times, the old damage type was never used by the players
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	icon_state = "birdshot-1"
 	damage_types = list(BRUTE = 6.5)
 	base_spread = 90
-	range_step = 2		//projectile will lose a fragment each time it travels this distance.
 	agony = 3
-	pellets = 7
+	pellets = 6
 	range_step = 1
 	spread_step = 10
 	knockback = 0 //We do not knockback do to issues with bullet douping
 	step_delay = 0.9
-	affective_damage_range = 1
-	affective_ap_range = 8
+	affective_damage_range = 5
+	affective_ap_range = 5
 	recoil = 11
 
 /obj/item/projectile/bullet/pellet/shotgun/Initialize()
