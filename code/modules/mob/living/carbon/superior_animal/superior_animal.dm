@@ -563,6 +563,8 @@
 	*/
 
 /mob/living/carbon/superior_animal/Life()
+	. = ..()
+
 	ticks_processed++
 	handle_regular_hud_updates()
 	if(!reagent_immune)
@@ -608,6 +610,9 @@
 				SSmove_manager.stop_looping(src)
 				last_followed = null // this exists so we only stop the following once, no need to constantly end our walk
 
+/*	life_cycles_before_sleep and life_cycles_before_scan are already handled on /mob/living/Life()
+	So, why is any of this even here?
+
 	if(life_cycles_before_sleep)
 		life_cycles_before_sleep--
 		return TRUE
@@ -623,6 +628,7 @@
 		return TRUE
 	life_cycles_before_scan = initial(life_cycles_before_scan)
 	return FALSE
+*/
 
 /**
  *  Handles telegraphing attacks, and attack delays. It does not handle the attacks themselves.
