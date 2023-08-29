@@ -203,7 +203,10 @@ While it would be entirely possible to check the mob's move handlers list for th
 	var/list/HUDfrippery = list()//flavor
 	var/list/HUDprocess = list() //What HUD object need process
 	var/list/HUDtech = list()
+
+	var/datum/hud_data/hud
 	var/defaultHUD = "" //Default mob hud
+	var/hud_type
 
 	var/list/progressbars = null
 

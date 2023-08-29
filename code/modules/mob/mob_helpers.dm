@@ -1,3 +1,17 @@
+//Find HUD position on screen
+/mob/proc/find_inv_position(var/slot_id)
+	for(var/obj/screen/inventory/HUDinv in HUDinventory)
+		if (HUDinv.slot_id == slot_id)
+			return (HUDinv.invisibility == 101) ? null : HUDinv.screen_loc
+	log_admin("[src] try find_inv_position a [slot_id], but not have that slot!")
+	to_chat(src, "Some problem has occurred, change UI style please or call admins.")
+	return "7,7"
+
+//Mannequins have no hud, this was causing a lot of spam in the logs
+/mob/living/carbon/human/dummy/mannequin/find_inv_position(var/slot_id)
+	return "7,7"
+
+
 // fun if you want to typecast humans/monkeys/etc without writing long path-filled lines.
 /*
 /proc/isxenomorph(A)
@@ -347,18 +361,7 @@ var/list/intents = list(I_HELP,I_DISARM,I_GRAB,I_HURT)
 	set name = "a-intent"
 	set hidden = 1
 
-	if(ishuman(src) || isbrain(src) || isslime(src))
-		switch(input)
-			if(I_HELP,I_DISARM,I_GRAB,I_HURT)
-				a_intent = input
-			if("right")
-				a_intent = intent_numeric((intent_numeric(a_intent)+1) % 4)
-			if("left")
-				a_intent = intent_numeric((intent_numeric(a_intent)+3) % 4)
-//		if(hud_used && hud_used.action_intent)
-//			hud_used.action_intent.icon_state = "intent_[a_intent]"
-
-	else if(isrobot(src))
+	if(isrobot(src))
 		switch(input)
 			if(I_HELP)
 				a_intent = I_HELP
@@ -371,6 +374,17 @@ var/list/intents = list(I_HELP,I_DISARM,I_GRAB,I_HURT)
 				hud_used.action_intent.icon_state = I_HURT
 			else
 				hud_used.action_intent.icon_state = I_HELP*/
+
+	else
+		switch(input)
+			if(I_HELP,I_DISARM,I_GRAB,I_HURT)
+				a_intent = input
+			if("right")
+				a_intent = intent_numeric((intent_numeric(a_intent)+1) % 4)
+			if("left")
+				a_intent = intent_numeric((intent_numeric(a_intent)+3) % 4)
+//		if(hud_used && hud_used.action_intent)
+//			hud_used.action_intent.icon_state = "intent_[a_intent]"
 	if (HUDneed.Find("intent"))
 		var/obj/screen/intent/I = HUDneed["intent"]
 		I.update_icon()

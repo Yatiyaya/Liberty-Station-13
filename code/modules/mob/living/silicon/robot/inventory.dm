@@ -219,7 +219,7 @@
 
 	return
 
-/mob/living/silicon/robot/proc/find_inv_position(var/invnum)
+/mob/living/silicon/robot/find_inv_position(var/invnum)
 	if (!src.HUDinventory.len)
 		return
 	var/obj/screen/silicon/module/inv

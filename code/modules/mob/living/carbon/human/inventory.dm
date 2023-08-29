@@ -43,20 +43,6 @@ This saves us from having to call add_fingerprint() any time something is put in
 	W.add_fingerprint(src)
 	return equip_to_slot_if_possible(W, slot_r_hand)
 
-
-//Find HUD position on screen
-/mob/living/carbon/human/proc/find_inv_position(var/slot_id)
-	for(var/obj/screen/inventory/HUDinv in HUDinventory)
-		if (HUDinv.slot_id == slot_id)
-			return (HUDinv.invisibility == 101) ? null : HUDinv.screen_loc
-	log_admin("[src] try find_inv_position a [slot_id], but not have that slot!")
-	to_chat(src, "Some problem has occurred, change UI style please or call admins.")
-	return "7,7"
-
-//Mannequins have no hud, this was causing a lot of spam in the logs
-/mob/living/carbon/human/dummy/mannequin/find_inv_position(var/slot_id)
-	return "7,7"
-
 /mob/living/carbon/human/proc/equip_in_one_of_slots(obj/item/W, list/slots, del_on_fail = 1)
 	for (var/slot in slots)
 		if (equip_to_slot_if_possible(W, slots[slot]))
