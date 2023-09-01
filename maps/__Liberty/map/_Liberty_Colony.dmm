@@ -8787,7 +8787,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "CR1";
+	name = "Room 1"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/dorm1)
 "bZi" = (
@@ -8967,7 +8970,6 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/skyyard)
 "cbh" = (
-/obj/machinery/door/airlock/hatch,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
 "cbn" = (
@@ -11083,7 +11085,7 @@
 "cyL" = (
 /obj/machinery/button/remote/airlock{
 	dir = 8;
-	id = "CR1";
+	id = "CR2";
 	name = "Door Bolt Control";
 	pixel_x = 23;
 	specialfunctions = 4
@@ -30022,7 +30024,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "CR2";
+	name = "Room 2"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/dorm2)
 "gRD" = (
@@ -42667,7 +42672,7 @@
 "jOT" = (
 /obj/machinery/button/remote/airlock{
 	dir = 8;
-	id = "CR1";
+	id = "CR4";
 	name = "Door Bolt Control";
 	pixel_x = 23;
 	specialfunctions = 4
@@ -62594,7 +62599,7 @@
 "oxU" = (
 /obj/machinery/button/remote/airlock{
 	dir = 8;
-	id = "CR1";
+	id = "CR5";
 	name = "Door Bolt Control";
 	pixel_x = 23;
 	specialfunctions = 4
@@ -63156,7 +63161,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "CR5";
+	name = "Room 5"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/dorm5)
 "oEu" = (
@@ -70749,7 +70757,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "CR3";
+	name = "Room 3"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/dorm3)
 "qnV" = (
@@ -86962,7 +86973,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "CR4";
+	name = "Room 4"
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/dorm4)
 "tWX" = (
@@ -91908,7 +91922,7 @@
 "vic" = (
 /obj/machinery/button/remote/airlock{
 	dir = 8;
-	id = "CR1";
+	id = "CR3";
 	name = "Door Bolt Control";
 	pixel_x = 23;
 	specialfunctions = 4
