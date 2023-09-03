@@ -317,9 +317,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/event_games/outside)
-"eP" = (
-/turf/simulated/wall/wood_barrel,
-/area/event_games/outside)
 "eZ" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
@@ -382,6 +379,9 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/wood/wild1,
 /area/event_games/inside)
+"fC" = (
+/turf/simulated/wall/wood_barrel,
+/area/event_games/inside)
 "fG" = (
 /obj/structure/flora/small/snow/rock4,
 /turf/simulated/floor/snow,
@@ -428,9 +428,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/event_games/inside)
-"gs" = (
-/turf/simulated/floor/wood,
-/area/event_games/underground)
 "gH" = (
 /obj/effect/floor_decal/industrial/box/white/corners{
 	dir = 8
@@ -527,16 +524,6 @@
 	},
 /turf/simulated/floor/industrial_pristine,
 /area/event_games/underground)
-"in" = (
-/obj/machinery/power/apc/hyper/critical{
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/tiled/dark/orangecorner,
-/area/event_games/inside)
 "ir" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/snow,
@@ -714,6 +701,9 @@
 	},
 /turf/simulated/floor/wood/wild3,
 /area/event_games/inside)
+"lK" = (
+/turf/simulated/wall/wood_barrel,
+/area/event_games/outside)
 "mi" = (
 /obj/machinery/light{
 	dir = 8
@@ -773,14 +763,6 @@
 "na" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
-/area/event_games/inside)
-"ng" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark/orangecorner,
 /area/event_games/inside)
 "nn" = (
 /obj/machinery/light{
@@ -864,15 +846,6 @@
 /obj/effect/floor_decal/spline/wood/corner,
 /turf/simulated/floor/wood/wild1,
 /area/event_games/underground)
-"ox" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark/orangecorner,
-/area/event_games/inside)
 "oM" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
@@ -886,6 +859,14 @@
 /obj/structure/table/marble,
 /obj/machinery/microwave,
 /turf/simulated/floor/industrial_pristine/cafe_large,
+/area/event_games/inside)
+"oS" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark/orangecorner,
 /area/event_games/inside)
 "oV" = (
 /obj/structure/closet/lasertag/red,
@@ -1139,16 +1120,6 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/event_games/inside)
-"sz" = (
-/obj/machinery/power/apc/hyper/critical{
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/industrial_pristine,
-/area/event_games/underground)
 "sC" = (
 /obj/structure/table/woodentable,
 /obj/item/deck/cah/black,
@@ -1269,10 +1240,6 @@
 /obj/machinery/smartfridge/drying_rack,
 /turf/simulated/floor/wood,
 /area/event_games/inside)
-"uv" = (
-/obj/map_data/event_map_games,
-/turf/unsimulated/mineral,
-/area/event_games/underground)
 "uB" = (
 /obj/structure/table/woodentable,
 /obj/item/deck/cards,
@@ -1343,6 +1310,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood/wild1,
+/area/event_games/underground)
+"wa" = (
+/obj/structure/reagent_dispensers/fueltank/huge/derelict,
+/obj/item/reagent_containers/glass/bucket,
+/turf/simulated/floor/industrial_pristine,
 /area/event_games/underground)
 "wd" = (
 /obj/structure/table/rack,
@@ -1531,10 +1503,6 @@
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/event_games/inside)
-"za" = (
-/obj/structure/flora/small/snow/rock5,
-/turf/simulated/floor/snow,
-/area/event_games/outside)
 "zd" = (
 /obj/structure/flora/tree/snow/four,
 /turf/simulated/floor/snow,
@@ -1669,6 +1637,14 @@
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/item/trash/chips_green,
 /turf/simulated/floor/asteroid/dirt,
+/area/event_games/outside)
+"Bo" = (
+/obj/structure/flora/small/snow/rock8,
+/obj/machinery/portable_atmospherics/powered/scrubber/yggdrasil{
+	density = 0;
+	icon_state = "shhh"
+	},
+/turf/simulated/floor/snow,
 /area/event_games/outside)
 "Bp" = (
 /obj/structure/extinguisher_cabinet{
@@ -2057,6 +2033,16 @@
 	},
 /turf/simulated/floor/wood/wild1,
 /area/event_games/inside)
+"HQ" = (
+/obj/machinery/power/apc/hyper/critical{
+	pixel_y = -32
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/event_games/inside)
 "HT" = (
 /obj/structure/bed/chair/custom/wood{
 	dir = 4
@@ -2098,6 +2084,14 @@
 	},
 /turf/simulated/floor/wood,
 /area/event_games/inside)
+"IJ" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/port_gen/pacman/diesel/anchored,
+/turf/simulated/floor/industrial_pristine,
+/area/event_games/underground)
 "IR" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -2354,27 +2348,11 @@
 	},
 /turf/simulated/floor/carpet/turcarpet,
 /area/event_games/inside)
-"LV" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark/orangecorner,
-/area/event_games/inside)
 "LW" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/ash,
 /turf/simulated/floor/asteroid/dirt,
 /area/event_games/outside)
-"Md" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/port_gen/pacman/diesel/anchored,
-/turf/simulated/floor/industrial_pristine,
-/area/event_games/underground)
 "Mm" = (
 /obj/machinery/chem_master/condimaster,
 /turf/simulated/floor/industrial_pristine/cafe_large,
@@ -2383,9 +2361,6 @@
 /obj/structure/reagent_dispensers/fueltank/huge,
 /turf/simulated/floor/wood/wild2,
 /area/event_games/inside)
-"Mx" = (
-/turf/simulated/floor/wood/wild1,
-/area/event_games/underground)
 "MC" = (
 /obj/structure/sign/neon/bar_alt{
 	pixel_y = 32
@@ -2443,6 +2418,9 @@
 /obj/effect/floor_decal/spline/fancy/corner,
 /turf/simulated/floor/rock/manmade/road,
 /area/event_games/outside)
+"Nq" = (
+/turf/simulated/floor/wood/wild2,
+/area/event_games/underground)
 "Ns" = (
 /obj/structure/flora/pottedplant/bush_bullet,
 /obj/structure/sign/department/medbay{
@@ -2501,6 +2479,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/bluecorner,
+/area/event_games/underground)
+"Oa" = (
+/turf/simulated/floor/wood,
 /area/event_games/underground)
 "Oi" = (
 /obj/structure/table/rack/shelf,
@@ -2788,11 +2769,6 @@
 	},
 /turf/simulated/floor/wood/wild1,
 /area/event_games/inside)
-"Ri" = (
-/obj/structure/reagent_dispensers/fueltank/huge/derelict,
-/obj/item/reagent_containers/glass/bucket,
-/turf/simulated/floor/industrial_pristine,
-/area/event_games/underground)
 "Rk" = (
 /obj/structure/reagent_dispensers/watertank/huge,
 /obj/effect/floor_decal/industrial/warningwhite/box,
@@ -2866,6 +2842,10 @@
 	},
 /turf/simulated/floor/wood/wild2,
 /area/event_games/underground)
+"So" = (
+/obj/map_data/event_map_games,
+/turf/unsimulated/mineral,
+/area/event_games/underground)
 "Sp" = (
 /obj/machinery/body_scanconsole,
 /obj/effect/floor_decal/industrial/hatch,
@@ -2930,9 +2910,6 @@
 /obj/effect/floor_decal/industrial/loading/white,
 /turf/simulated/floor/tiled/white,
 /area/event_games/inside)
-"Tl" = (
-/turf/simulated/floor/wood/wild2,
-/area/event_games/underground)
 "Tq" = (
 /obj/structure/sink{
 	dir = 8;
@@ -3033,6 +3010,19 @@
 /obj/structure/flora/snowgrass/grass,
 /turf/simulated/floor/snow,
 /area/event_games/outside)
+"VF" = (
+/turf/simulated/floor/wood/wild1,
+/area/event_games/underground)
+"VO" = (
+/obj/machinery/power/apc/hyper/critical{
+	pixel_y = -32
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/industrial_pristine,
+/area/event_games/underground)
 "VV" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/dirt/snow,
@@ -3056,6 +3046,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/event_games/inside)
+"Wh" = (
+/obj/structure/flora/small/snow/rock5,
+/turf/simulated/floor/snow,
+/area/event_games/outside)
 "Wq" = (
 /obj/machinery/gym/cognition,
 /turf/simulated/floor/tiled/white/gray_perforated,
@@ -3084,9 +3078,6 @@
 "WO" = (
 /obj/machinery/vending/powermat,
 /turf/simulated/floor/wood/wild2,
-/area/event_games/inside)
-"WT" = (
-/turf/simulated/wall/wood_barrel,
 /area/event_games/inside)
 "Xa" = (
 /turf/simulated/floor/tiled/dark/cargo,
@@ -3414,7 +3405,7 @@ vh
 vh
 vh
 vh
-uv
+So
 "}
 (2,1,1) = {"
 vh
@@ -3736,9 +3727,9 @@ YL
 ry
 ry
 ry
-Md
 qd
 qd
+IJ
 ry
 ry
 ry
@@ -3788,9 +3779,9 @@ YL
 ry
 ry
 ry
-sz
 qd
 qd
+VO
 ry
 ry
 ry
@@ -3840,9 +3831,9 @@ YL
 ry
 ry
 ry
-Ri
 qd
 qd
+wa
 ry
 ry
 ry
@@ -5088,7 +5079,7 @@ fR
 cE
 Wr
 OP
-Tl
+Nq
 Wr
 Kr
 xD
@@ -5146,10 +5137,10 @@ ZD
 Wr
 Wr
 Am
-Mx
-Mx
-Mx
-Mx
+VF
+VF
+VF
+VF
 dy
 Wr
 YL
@@ -5198,10 +5189,10 @@ ST
 vi
 vi
 bz
-Mx
-Mx
-Mx
-Mx
+VF
+VF
+VF
+VF
 fk
 Wr
 YL
@@ -5252,8 +5243,8 @@ kk
 kk
 Fx
 Gb
-Mx
-Mx
+VF
+VF
 Tx
 Wr
 YL
@@ -5305,7 +5296,7 @@ Wr
 Wr
 ad
 sC
-Mx
+VF
 Tx
 Wr
 YL
@@ -5348,9 +5339,9 @@ Wr
 sR
 Lg
 dL
-gs
+Oa
 Wr
-gs
+Oa
 Nc
 Rv
 XC
@@ -6072,7 +6063,7 @@ Yq
 (3,1,2) = {"
 Yq
 EB
-Hk
+Bo
 Td
 Td
 Td
@@ -6117,7 +6108,7 @@ Td
 Td
 Td
 Td
-za
+Wh
 HG
 Yq
 "}
@@ -6233,39 +6224,39 @@ Td
 Td
 KW
 Td
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
 xb
 xb
 xb
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
 Td
 fG
 Td
@@ -6285,23 +6276,23 @@ Td
 Td
 Td
 Td
-WT
+fC
 jV
 Nf
 mN
 RC
-WT
+fC
 ht
 Fs
 ml
 ml
-WT
+fC
 Nu
 bR
 Tq
 bR
 ko
-WT
+fC
 KX
 ZI
 HO
@@ -6317,7 +6308,7 @@ ZI
 ZI
 HO
 aZ
-WT
+fC
 Td
 Td
 Td
@@ -6337,12 +6328,12 @@ Td
 VD
 Td
 Td
-WT
+fC
 fb
 Wb
 EH
 Xz
-WT
+fC
 PE
 mS
 gN
@@ -6353,7 +6344,7 @@ bR
 bR
 bR
 Nb
-WT
+fC
 DC
 ZI
 ZI
@@ -6369,7 +6360,7 @@ ZI
 ZI
 ZI
 ZI
-WT
+fC
 Td
 Td
 dq
@@ -6389,17 +6380,17 @@ Td
 Td
 Td
 Td
-WT
+fC
 yW
 yi
 OY
 yi
-WT
+fC
 PO
 rv
 as
 It
-WT
+fC
 AP
 bR
 bR
@@ -6421,7 +6412,7 @@ ZI
 ZI
 ZI
 KD
-WT
+fC
 BG
 Td
 Td
@@ -6441,17 +6432,17 @@ Td
 Td
 Td
 Td
-WT
+fC
 wx
 wh
 wh
 qb
-WT
+fC
 TI
 rv
 as
 Si
-WT
+fC
 kD
 bR
 bR
@@ -6473,7 +6464,7 @@ ZI
 ZI
 ZI
 hT
-WT
+fC
 Td
 Td
 WA
@@ -6493,17 +6484,17 @@ Td
 Td
 Td
 VD
-WT
+fC
 xO
 wh
 wh
 xO
-WT
+fC
 nr
 rv
 as
 Si
-WT
+fC
 jp
 bR
 bR
@@ -6525,7 +6516,7 @@ ZI
 ZI
 ZI
 qL
-WT
+fC
 Td
 Td
 Td
@@ -6545,17 +6536,17 @@ Da
 Td
 Td
 Td
-WT
+fC
 Xu
 wh
 wh
 vP
-WT
+fC
 nS
 rv
 as
 Si
-WT
+fC
 px
 bR
 bR
@@ -6577,7 +6568,7 @@ ZI
 ZI
 ZI
 Rp
-WT
+fC
 Td
 Td
 zI
@@ -6597,23 +6588,23 @@ Td
 Td
 qu
 Td
-WT
+fC
 xO
 wh
 wh
 xO
-WT
+fC
 aL
 Kd
 YW
 Si
-WT
+fC
 Mm
 bR
 bR
 oQ
 bR
-WT
+fC
 QU
 ZI
 ZI
@@ -6629,7 +6620,7 @@ ZI
 ZI
 ZI
 qL
-WT
+fC
 Td
 Td
 Td
@@ -6649,23 +6640,23 @@ Td
 KW
 Td
 Td
-WT
+fC
 ZH
 wh
 wh
 xs
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
 Dg
 bR
 bR
 bR
 Nb
-WT
+fC
 ic
 ZI
 ZI
@@ -6681,7 +6672,7 @@ ZI
 ZI
 ZI
 zQ
-WT
+fC
 Td
 Td
 Td
@@ -6701,7 +6692,7 @@ Td
 Td
 Td
 Td
-WT
+fC
 xS
 wh
 wh
@@ -6733,7 +6724,7 @@ ZI
 ZI
 ZI
 KD
-WT
+fC
 Td
 dq
 Td
@@ -6753,7 +6744,7 @@ Td
 Td
 hq
 Td
-WT
+fC
 Pc
 wh
 wh
@@ -6785,7 +6776,7 @@ ZI
 ZI
 ZI
 ZI
-WT
+fC
 Td
 Td
 Td
@@ -6805,7 +6796,7 @@ Td
 VD
 Td
 Td
-WT
+fC
 sq
 wh
 Iy
@@ -6821,7 +6812,7 @@ bR
 bR
 bR
 ZM
-WT
+fC
 GS
 ZI
 ZI
@@ -6837,7 +6828,7 @@ ZI
 ZI
 Eo
 Ly
-WT
+fC
 Td
 Td
 Td
@@ -6857,39 +6848,39 @@ Td
 Td
 Td
 Td
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
 xb
 xb
 xb
-WT
-WT
+fC
+fC
 xb
 xb
 xb
-WT
-WT
+fC
+fC
 fl
 YG
-WT
-WT
+fC
+fC
 xb
 xb
 xb
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
 Td
 VD
 Td
@@ -6909,17 +6900,17 @@ Td
 Td
 VD
 Td
-WT
+fC
 HK
 ya
-WT
+fC
 eZ
 fr
 XA
 Xv
 Ga
 dM
-WT
+fC
 KW
 dY
 Iw
@@ -6961,10 +6952,10 @@ Ki
 Td
 Td
 Td
-WT
+fC
 LI
 rE
-WT
+fC
 lC
 rE
 rE
@@ -7013,7 +7004,7 @@ Td
 Td
 Td
 Td
-WT
+fC
 fe
 rE
 OQ
@@ -7023,7 +7014,7 @@ rE
 rE
 GU
 Du
-WT
+fC
 MC
 VD
 VD
@@ -7048,12 +7039,12 @@ Td
 Td
 Td
 Td
-WT
-WT
-WT
+fC
+fC
+fC
 uY
-WT
-WT
+fC
+fC
 Yq
 Yq
 "}
@@ -7065,7 +7056,7 @@ Td
 Td
 Td
 Td
-WT
+fC
 hw
 rE
 Lr
@@ -7100,24 +7091,24 @@ Td
 Td
 VD
 Td
-WT
+fC
 pe
 RA
 AV
 zv
-WT
+fC
 Yq
 Yq
 "}
 (23,1,2) = {"
 Yq
 Yq
-eP
-eP
-eP
+lK
+lK
+lK
 WA
 Td
-WT
+fC
 BN
 rE
 Lr
@@ -7155,21 +7146,21 @@ rG
 xb
 Ej
 Ej
-ox
-ng
-WT
+Ej
+oS
+fC
 Yq
 Yq
 "}
 (24,1,2) = {"
 Yq
 Yq
-eP
+lK
 pa
 vc
 Td
 Td
-WT
+fC
 yC
 rE
 TD
@@ -7179,7 +7170,7 @@ rE
 rE
 rE
 CY
-WT
+fC
 MC
 Td
 Td
@@ -7204,27 +7195,27 @@ Td
 Td
 Td
 Td
-WT
-in
-LV
-ng
+fC
 Ej
-WT
+Ej
+Ej
+HQ
+fC
 Yq
 Yq
 "}
 (25,1,2) = {"
 Yq
 Yq
-eP
-eP
-eP
+lK
+lK
+lK
 WA
 Td
-WT
+fC
 LI
 rE
-WT
+fC
 lC
 rE
 rE
@@ -7261,7 +7252,7 @@ Ej
 Ej
 Ej
 gH
-WT
+fC
 Yq
 Yq
 "}
@@ -7273,17 +7264,17 @@ Td
 Td
 Td
 Td
-WT
+fC
 Ab
 rE
-WT
+fC
 ON
 QK
 tb
 Xv
 Yt
 ZS
-WT
+fC
 Td
 Td
 Td
@@ -7308,12 +7299,12 @@ Zp
 Td
 Td
 Td
-WT
+fC
 Ej
 Ej
 Ej
 Ej
-WT
+fC
 Yq
 Yq
 "}
@@ -7325,17 +7316,17 @@ Td
 Td
 Td
 Td
-WT
-WT
+fC
+fC
 aQ
-WT
-WT
+fC
+fC
 xb
 xb
 xb
-WT
-WT
-WT
+fC
+fC
+fC
 Td
 Td
 Td
@@ -7365,7 +7356,7 @@ Ej
 Ej
 Ej
 Rk
-WT
+fC
 Yq
 Yq
 "}
@@ -7412,12 +7403,12 @@ Td
 Td
 Td
 Td
-WT
+fC
 db
 Ej
 Ej
 GC
-WT
+fC
 Yq
 Yq
 "}
@@ -7464,12 +7455,12 @@ Td
 dq
 Td
 Td
-WT
-WT
+fC
+fC
 xb
 xb
-WT
-WT
+fC
+fC
 Yq
 Yq
 "}
@@ -7602,23 +7593,23 @@ Td
 Sw
 En
 Td
-WT
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
+fC
 Ja
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
 Td
 Td
 Td
@@ -7654,11 +7645,11 @@ Td
 Sw
 En
 Td
-WT
+fC
 ZE
 Hq
 jB
-WT
+fC
 rA
 Bw
 Bw
@@ -7670,7 +7661,7 @@ ey
 PW
 ey
 fW
-WT
+fC
 Td
 Td
 VD
@@ -7706,7 +7697,7 @@ cm
 Sw
 En
 cm
-WT
+fC
 ZI
 ZI
 ZI
@@ -7722,7 +7713,7 @@ Sp
 fW
 Sp
 fW
-WT
+fC
 Td
 VD
 dq
@@ -7758,7 +7749,7 @@ Td
 Sw
 En
 Td
-WT
+fC
 Jv
 ZI
 ZI
@@ -7768,13 +7759,13 @@ Bw
 Bw
 Bw
 DM
-WT
+fC
 yu
 ol
 fW
 ol
 na
-WT
+fC
 Td
 Td
 Td
@@ -7810,7 +7801,7 @@ VD
 Sw
 En
 Td
-WT
+fC
 ZI
 ZI
 ZI
@@ -7826,7 +7817,7 @@ fW
 fW
 fW
 rV
-WT
+fC
 Td
 Td
 Td
@@ -7862,23 +7853,23 @@ Td
 Sw
 En
 Td
-WT
+fC
 eE
 eE
 eE
-WT
+fC
 JA
 Bw
 Ky
 Bw
 Ns
-WT
+fC
 yu
 fW
 fW
 fW
 na
-WT
+fC
 Td
 Td
 Td
@@ -7914,23 +7905,23 @@ Td
 Sw
 En
 WA
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
 Bc
-WT
+fC
 Ja
 VX
-WT
+fC
 cj
 ja
 fW
 ja
 fW
-WT
+fC
 Td
 Td
 Td
@@ -7966,23 +7957,23 @@ Td
 Sw
 En
 Td
-WT
+fC
 gS
 JO
 qV
 JO
 JO
 JO
-WT
+fC
 gq
 Zh
-WT
+fC
 LP
 Yl
 Yh
 Yl
 We
-WT
+fC
 Td
 Td
 Td
@@ -8018,23 +8009,23 @@ Td
 Sw
 En
 Td
-WT
+fC
 UF
 JO
 JO
 JO
 JO
 JO
-WT
+fC
 Fc
 Zh
-WT
+fC
 Vq
-WT
-WT
-WT
+fC
+fC
+fC
 Vq
-WT
+fC
 Td
 Td
 VD
@@ -8070,23 +8061,23 @@ hq
 Sw
 En
 Td
-WT
+fC
 RQ
 JO
 JO
 JO
 JO
 aE
-WT
+fC
 aX
 Qx
-WT
+fC
 fW
 ig
 PU
 ig
 We
-WT
+fC
 Td
 Td
 dq
@@ -8122,23 +8113,23 @@ Qp
 VV
 Xk
 Td
-WT
+fC
 PP
 JO
 JO
 JO
 JO
 Na
-WT
+fC
 cd
 Zs
-WT
+fC
 jC
 Jy
 Al
 Jy
 wX
-WT
+fC
 Td
 Td
 Td
@@ -8174,23 +8165,23 @@ bJ
 kW
 sn
 Td
-WT
+fC
 WO
 JO
 JO
 JO
 JO
 JO
-WT
+fC
 uW
 GO
-WT
+fC
 oe
 Jy
 Dc
 Jy
 bt
-WT
+fC
 Td
 Td
 Td
@@ -8226,23 +8217,23 @@ Td
 Td
 Td
 WA
-WT
+fC
 qz
 JO
 ld
 Bq
 Vs
 Mt
-WT
+fC
 kv
 yh
-WT
+fC
 BO
 zy
 tW
 gd
 HE
-WT
+fC
 Td
 Td
 Td
@@ -8278,23 +8269,23 @@ VD
 VD
 Td
 Td
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
-WT
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
+fC
 Td
 zd
 Td
@@ -8405,7 +8396,7 @@ Td
 Td
 dq
 Td
-aY
+Td
 EB
 Yq
 "}
