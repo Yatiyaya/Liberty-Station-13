@@ -1,6 +1,5 @@
 //#include "map/_event_map_engi.dmm"
 
-
 /obj/map_data/event_map_engi
 	name = "rebuildable outpost map_data"
 	is_player_level = TRUE
@@ -90,4 +89,41 @@
 
 /area/event_bridge/misc
 	name = "Hostile Wildlands"
+	icon_state = "hammerblue"
+
+///////////////////////////////////////////////////////////
+
+#include "map/_event_games.dmm"
+
+/obj/map_data/event_map_games
+	name = "games map_data"
+	is_player_level = TRUE
+	is_contact_level = TRUE
+	is_accessable_level = TRUE
+	height = 2
+
+/obj/effect/shuttle_landmark/games_outpost
+	name = "Games Landing zone"
+	icon_state = "shuttle-green"
+	landmark_tag = "nav_games"
+	base_area = /area/event_games/outside
+	base_turf = /turf/simulated/floor/tiled/dark/cargo
+
+/area/event_games
+	dynamic_lighting = TRUE
+	name = "Away Area"
+	icon_state = "hammerblue"
+
+/area/event_games/outside
+	dynamic_lighting = FALSE
+	name = "Outside Area"
+	icon_state = "hammerblue"
+
+/area/event_games/inside
+	name = "Inside Area"
+	icon_state = "hammerblue"
+
+/area/event_games/underground
+	dynamic_lighting = FALSE
+	name = "Unground Area"
 	icon_state = "hammerblue"
