@@ -3816,6 +3816,9 @@
 	pixel_x = -28
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "aTx" = (
@@ -5296,6 +5299,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
 	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "bll" = (
@@ -6752,6 +6758,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
 	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "bEj" = (
@@ -8000,9 +8009,6 @@
 	dir = 5
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/item/material/ashtray{
 	material = "steel";
 	icon_state = "ashtray"
@@ -12447,7 +12453,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -13078,6 +13084,9 @@
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/item/contraband/poster/placed/eris/responsiblemedical3{
+	pixel_y = 32
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
@@ -18346,6 +18355,9 @@
 	},
 /obj/structure/flora/pottedplant/bush_bullet,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "egH" = (
@@ -20492,7 +20504,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/pottedplant/barrel_cactus,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "eHr" = (
@@ -21064,9 +21076,6 @@
 /area/liberty/medical/cryo)
 "eNS" = (
 /obj/structure/table/woodentable,
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/item/reagent_containers/glass/rag,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
@@ -22849,9 +22858,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/light{
-	light_color = "#b9e8ea"
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "flG" = (
@@ -24535,6 +24541,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
 	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "fFb" = (
@@ -24827,9 +24836,6 @@
 "fIJ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
 "fIL" = (
@@ -25174,9 +25180,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/light{
-	light_color = "#b9e8ea"
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "fNy" = (
@@ -30955,6 +30958,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "hbe" = (
@@ -33481,7 +33487,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -37260,9 +37266,6 @@
 	dir = 5
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/item/material/ashtray{
 	material = "steel";
 	icon_state = "ashtray"
@@ -41002,9 +41005,6 @@
 	dir = 5
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/item/material/ashtray{
 	material = "steel";
 	icon_state = "ashtray"
@@ -43171,11 +43171,15 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/command/tcommsat/computer)
 "jUV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
 	},
-/turf/simulated/floor/wood/wild1,
-/area/liberty/crew_quarters/dorm2)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/eris/responsiblemedical1{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "jVd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -43702,6 +43706,9 @@
 /obj/item/reagent_containers/food/snacks/sosjerky,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
 	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
@@ -46104,13 +46111,8 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/sleeper)
 "kDQ" = (
-/obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "West APC";
-	pixel_x = -28
-	},
+/obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "kDR" = (
@@ -49096,9 +49098,6 @@
 "loH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "loN" = (
@@ -49284,9 +49283,6 @@
 "lrw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "lrC" = (
@@ -51190,10 +51186,10 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "lNR" = (
-/obj/structure/closet/crate,
 /obj/item/clothing/shoes/sandal,
 /obj/item/towel,
 /obj/item/clothing/under/bathrobe,
+/obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "lNV" = (
@@ -51440,6 +51436,9 @@
 /obj/item/reagent_containers/food/snacks/sosjerky,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
 	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
@@ -53616,15 +53615,16 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "mtA" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 28
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 28
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/comfy/brown,
+/obj/item/contraband/poster/placed/generic/fireextinguisher{
+	pixel_y = 32
 	},
-/obj/item/contraband/poster/placed/generic/fireextinguisher,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm2)
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "mtD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -56186,12 +56186,12 @@
 	},
 /obj/machinery/camera/network/colony_underground,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 30
+	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 1
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "nbo" = (
@@ -58480,10 +58480,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor3south)
-"nBo" = (
-/obj/item/contraband/poster/placed/eris/responsiblemedical4,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm5)
 "nBr" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 10
@@ -60356,10 +60352,10 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/command/captain)
 "nXx" = (
-/obj/structure/closet/crate,
 /obj/item/clothing/shoes/sandal,
 /obj/item/towel,
 /obj/item/clothing/under/bathrobe,
+/obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "nXz" = (
@@ -62393,7 +62389,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/reagent_dispensers/water_cooler,
+/obj/item/contraband/poster/placed/generic/firesafety{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "ovU" = (
@@ -62484,6 +62482,11 @@
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "North APC";
+	pixel_y = 28
 	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
@@ -64017,9 +64020,8 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2south)
 "oNP" = (
-/obj/item/contraband/poster/placed/generic/firesafety,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm2)
+/turf/simulated/mineral/planet,
+/area/liberty/crew_quarters/dorm5)
 "oNU" = (
 /obj/random/mecha/low_chance,
 /obj/machinery/mech_recharger,
@@ -66158,9 +66160,6 @@
 "poB" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "poI" = (
@@ -72086,10 +72085,10 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "qEp" = (
-/obj/structure/closet/crate,
 /obj/item/clothing/shoes/sandal,
 /obj/item/towel,
 /obj/item/clothing/under/bathrobe,
+/obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
 "qEt" = (
@@ -74862,9 +74861,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/light{
-	light_color = "#b9e8ea"
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "rkD" = (
@@ -75029,9 +75025,8 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "rmQ" = (
-/obj/item/contraband/poster/placed/eris/responsiblemedical1,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm5)
+/turf/simulated/mineral/planet,
+/area/liberty/crew_quarters/dorm3)
 "rmT" = (
 /obj/structure/flora/ausbushes/leafybush,
 /obj/machinery/light{
@@ -75163,9 +75158,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/light{
-	light_color = "#b9e8ea"
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "rnX" = (
@@ -75220,10 +75212,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "roG" = (
-/obj/structure/closet/crate,
 /obj/item/clothing/shoes/sandal,
 /obj/item/towel,
 /obj/item/clothing/under/bathrobe,
+/obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "roH" = (
@@ -76341,9 +76333,6 @@
 "rCy" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "rCz" = (
@@ -80849,10 +80838,10 @@
 /turf/simulated/floor/wood,
 /area/liberty/medical/psych)
 "sCH" = (
-/obj/structure/closet/crate,
 /obj/item/clothing/shoes/sandal,
 /obj/item/towel,
 /obj/item/clothing/under/bathrobe,
+/obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "sCN" = (
@@ -83964,9 +83953,6 @@
 	dir = 5
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/item/material/ashtray{
 	material = "steel";
 	icon_state = "ashtray"
@@ -87042,6 +87028,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "tXE" = (
@@ -87966,9 +87955,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/light{
-	light_color = "#b9e8ea"
-	},
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
 "uhO" = (
@@ -89624,9 +89610,6 @@
 	dir = 5
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/item/material/ashtray{
 	material = "steel";
 	icon_state = "ashtray"
@@ -100581,9 +100564,15 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/command/tcommsat/computer)
 "xdh" = (
-/obj/item/contraband/poster/placed/eris/responsiblemedical2,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm5)
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/eris/responsiblemedical4{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "xdl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/multi_tile/glass{
@@ -102393,9 +102382,15 @@
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/liberty/crew_quarters/bar/vip)
 "xyW" = (
-/obj/item/contraband/poster/placed/eris/responsiblemedical3,
-/turf/simulated/wall/r_wall,
-/area/liberty/crew_quarters/dorm5)
+/obj/effect/floor_decal/spline/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/eris/responsiblemedical2{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/wild3,
+/area/liberty/crew_quarters)
 "xza" = (
 /obj/structure/catwalk,
 /obj/structure/railing,
@@ -104135,6 +104130,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/pottedplant/bush_bullet,
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters)
 "xTw" = (
@@ -114469,8 +114467,8 @@ aLr
 aLr
 aLr
 iTN
-mPt
-mPt
+emu
+emu
 ucr
 vGh
 mKW
@@ -114671,8 +114669,8 @@ aLr
 aLr
 gRd
 vWZ
-mPt
-mPt
+emu
+emu
 ucr
 wfq
 fOJ
@@ -114682,10 +114680,10 @@ yhL
 fOJ
 lBB
 ucr
-mPt
-mPt
-mPt
-mPt
+emu
+emu
+emu
+emu
 tuH
 wgX
 let
@@ -114873,8 +114871,8 @@ aLr
 qoe
 geT
 iTN
-mPt
-mPt
+emu
+emu
 ucr
 kgg
 wLK
@@ -114883,11 +114881,11 @@ uFk
 gRw
 fOJ
 ucr
-mPt
-mPt
-mPt
-mPt
-mPt
+ucr
+emu
+emu
+emu
+emu
 tuH
 pUn
 kYB
@@ -115075,8 +115073,8 @@ aLr
 aLr
 eos
 iTN
-yeE
-yeE
+rmQ
+rmQ
 yeE
 yeE
 yeE
@@ -115085,10 +115083,10 @@ xfa
 xfa
 xfa
 jKb
-nMf
-nMf
-nMf
-nMf
+oNP
+oNP
+oNP
+oNP
 nMf
 tuH
 tuH
@@ -115897,8 +115895,8 @@ bcB
 tHm
 bnF
 tqj
-rmQ
-kZM
+nMf
+jUV
 iDV
 gmV
 rjq
@@ -116301,8 +116299,8 @@ qcn
 exH
 iIq
 kaq
-xdh
-kZM
+nMf
+xyW
 iDV
 gmV
 rjq
@@ -116705,7 +116703,7 @@ qCO
 exH
 nUs
 bCx
-xyW
+nMf
 cVj
 iDV
 wOv
@@ -117109,8 +117107,8 @@ nMf
 wgJ
 oEj
 nMf
-nBo
-kZM
+nMf
+xdh
 iDV
 tAj
 caJ
@@ -118518,12 +118516,12 @@ nlR
 oAI
 sbk
 qiY
+vCQ
 mtA
-dyl
 kgA
 aMc
 alV
-iRZ
+kDQ
 pfQ
 iDV
 fhy
@@ -118725,7 +118723,7 @@ naS
 iDV
 iDV
 alV
-iRZ
+kDQ
 pBl
 iDV
 fhy
@@ -118919,10 +118917,10 @@ pcw
 lPX
 lMW
 pDd
-jUV
+wSA
 qfs
 bDZ
-oNP
+vCQ
 ovQ
 iDV
 iDV
@@ -119331,7 +119329,7 @@ ggT
 nxs
 aMc
 alV
-kDQ
+iRZ
 iBf
 iDV
 fhy
