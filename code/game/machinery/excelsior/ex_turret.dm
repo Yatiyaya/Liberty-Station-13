@@ -143,21 +143,18 @@
 
 //Guild brand auto turrets.
 /obj/machinery/porta_turret/Union
-	icon = 'icons/obj/machines/excelsior/turret_gun_art'
+	icon = 'icons/obj/machines/excelsior/turret_carbine_union.dmi'
 	name = "Union turret"
 	desc = "A fully automated battery powered self-repairing anti-wildlife armored turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
 	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 6.5mm rounds and holds up to 200."
-	icon_state = "turret_legs_terra"
+	icon_state = "turret_legs_terra.dmi"
 	density = TRUE
 	lethal = TRUE
 	raised = TRUE
 	colony_allied_turret = TRUE
 	circuit = /obj/item/circuitboard/artificer_turret
 	installation = null
-	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_magazine/ammobox/light_rifle_257/scrap//it can be reloaded with scrap ammo kits of 6.5, the peashooter experience
-	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_casing/light_rifle_257/rubber
-	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_magazine/ammobox/light_rifle_257//got nerfed fr fr
-	var/obj/item/ammo_magazine/ammo_box =/obj/item/ammo_magazine/speed_loader_light_rifle_257//with this should be able to reload every bullet if is on a stripper clip
+	var/obj/item/ammo_magazine/ammo_box = list(/obj/item/ammo_magazine/ammobox/light_rifle_257/scrap,/obj/item/ammo_magazine/ammobox/light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257,  /obj/item/ammo_casing/light_rifle_257/rubber)
 	var/ammo = 0 // number of bullets left.
 	var/ammo_max = 200
 	var/obj/item/cell/large/cell = null
@@ -390,7 +387,7 @@
 	cut_overlays()
 
 	if(!(stat & BROKEN))
-		add_overlay(image("turret_gun_art"))
+		add_overlay(image("turret_carbine_union"))
 
 /obj/machinery/porta_turret/Union/launch_projectile()
 	ammo--
