@@ -143,7 +143,7 @@
 
 //Guild brand auto turrets.
 /obj/machinery/porta_turret/Union
-	icon = 'icons/obj/machines/excelsior/turret_carbine_union'
+	icon = 'icons/obj/machines/excelsior/turret.dmi'
 	name = "Union turret"
 	desc = "A fully automated battery powered self-repairing anti-wildlife armored turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
 	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 6.5mm rounds and holds up to 200."
