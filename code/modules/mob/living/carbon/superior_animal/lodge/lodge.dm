@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/lodge
 	name = "Lodge Farming Animals"
-	desc = "Report to Kaz if you see this"
+	desc = "Report to Trilby if you see this"
 	icon = 'icons/mob/mobs-domestic.dmi'
 	faction = "neutral"
 	pass_flags = PASSTABLE

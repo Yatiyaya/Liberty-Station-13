@@ -1,4 +1,4 @@
-<!-- 
+<!--
 
  -->
 <div class="item">
@@ -11,7 +11,7 @@
 			<div class="itemContent">
 				{{for data.tool_qualities}}
 					<div>
-						{{:value.name}}: 
+						{{:value.name}}:
 						{{:helper.displayBar(value.number, 0, 100, null, value.number)}}
 					</div>
 				{{/for}}
@@ -43,7 +43,7 @@
 		<div class="itemContent">
 			{{:helper.displayBar(data.workspeed, 0, data.workspeed_max, data.workspeed_state, data.workspeed)}}
 		</div>
-		
+
 		{{if data.use_power_cost}}
 			<h4>Power:</h4>
 			{{if data.cell_charge}}
@@ -101,10 +101,10 @@
 
 		{{if data.extra_volume}}
 			<div class="itemLabel">
-				Extra tank volume:
+				Size modifier:
 			</div>
 			<div class="itemContent">
-				{{:data.extra_volume}}u
+				{{:data.extra_volume}}kg
 			</div>
 		{{/if}}
 	</div>

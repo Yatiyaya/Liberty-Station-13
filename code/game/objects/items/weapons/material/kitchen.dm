@@ -91,12 +91,17 @@
 
 /obj/item/material/kitchen/rollingpin
 	name = "rolling pin"
-	desc = "Used to knock out the Bartender."
+	desc = "Universally used to chase after unfaithful husbands. Oh, and kneading dough too..."
 	icon_state = "rolling_pin"
 	attack_verb = list("bashed", "battered", "bludgeoned", "thrashed", "whacked")
 	default_material = "wood"
 	force_divisor = 0.7 // 10 when wielded with weight 15 (wood)
 	thrown_force_divisor = 1 // as above
+	has_alt_mode = TRUE
+	alt_mode_toggle = "relaxes the anger behind their grip"
+	alt_mode_lossrate = 1
+	alt_mode_sharp = FALSE
+	is_material_weapon = TRUE
 
 /obj/item/material/kitchen/rollingpin/attack(mob/living/M as mob, mob/living/user as mob)
 	if ((CLUMSY in user.mutations) && prob(15))
@@ -106,3 +111,14 @@
 		user.Weaken(1)
 		return
 	return ..()
+
+// A mallet to use for the optional steps that require it.
+/obj/item/tool/hammer/tenderizer
+	name = "meat tenderizer"
+	desc = "A small hammer-like utensil meant to be used to soften up meat for tenderness and even frying."
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "tenderizer"
+	worksound = 'sound/weapons/meat_hammer.ogg' // Snowflake!
+	max_upgrades = 0 // No.
+	tool_qualities = list(QUALITY_HAMMERING = 10)
+

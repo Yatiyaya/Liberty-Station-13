@@ -3,7 +3,7 @@
 	//The name of the job
 	var/title = "NOPE"
 	var/list/access = list()				// Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
-	var/list/cruciform_access = list()		// Assign this access into cruciform if target has it
+	var/list/stronghold_access = list()		// Assign this access into hearthcore if target has it
 	var/security_clearance = null			// Hearthcore access, if null, takes Hearthcore's default access, else, sets it to the jobs' value
 	var/list/software_on_spawn = list()		// Defines the software files that spawn on tablets and labtops
 	var/list/core_upgrades = list()			// Defines the upgrades that would be installed into core implant on spawn, if any.
@@ -152,13 +152,13 @@
 	if(!account_allowed || (H.mind && H.mind.initial_account))
 		return
 
-	var/nepotism = 1
-	if(H && H.stats.getPerk(PERK_NEPOTISM))
-		nepotism += 0.3
+	var/extra_pay = 1
+	if(H && H.stats.getPerk(PERK_EXTRA_PAY))
+		extra_pay += 0.3
 	if(H && H.stats.getPerk(PERK_DEBTOR))
-		nepotism -= 0.5
+		extra_pay -= 0.5
 
-	var/money_amount = one_time_payment(nepotism)
+	var/money_amount = one_time_payment(extra_pay)
 	var/datum/money_account/M = create_account(H.real_name, money_amount, null, department, wage, aster_guild_member)
 	if(H.mind)
 		var/remembered_info = ""

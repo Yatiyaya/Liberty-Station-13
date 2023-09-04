@@ -19,7 +19,7 @@
 	result = /obj/item/ammo_casing/crossbow_bolts/fragment/bulk
 	steps = list(
 		list(/obj/item/stack/rods, 5),
-		list(/obj/item/stack/ore, 1)
+		list(/obj/item/stack/ore, 1) // Rocks, anything
 	)
 
 /datum/craft_recipe/trapper/crossbow_bolts/speed
@@ -38,18 +38,18 @@
 	time = 0
 	flags = CRAFT_BATCH
 	steps = list(
-		list(/obj/item/stack/rods, 3),
+		list(/obj/item/stack/rods, 5),
 		list(CRAFT_MATERIAL, 2, MATERIAL_BONE, "time" = 1), //Takes a second
-		list(/obj/item/reagent_containers/food/snacks/grown, 3, "time" = 1) //Takes a second
+		list(/obj/item/reagent_containers/food/snacks/grown, 3, "time" = 1) // Grass clippings
 	)
 
 /datum/craft_recipe/trapper/arrow_hunting/heavy
 	name = "broadhead hunting arrows"
 	result = /obj/item/ammo_casing/arrow/hunting/heavy/bulk
 	steps = list(
-		list(/obj/item/stack/rods, 3),
-		list(CRAFT_MATERIAL, 3, MATERIAL_BONE, "time" = 1), //Takes a second
-		list(/obj/item/reagent_containers/food/snacks/grown, 3, "time" = 1) //Takes a second
+		list(/obj/item/stack/rods, 5),
+		list(/obj/item/stack/wolf_tooth, 5, "time" = 1), // Really good arrows, but these are decently easy to come by.
+		list(/obj/item/reagent_containers/food/snacks/grown, 3, "time" = 1) // Grass clippings
 	)
 
 /datum/craft_recipe/trapper/recurve_bow
@@ -204,7 +204,6 @@
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
 
-/*
 /datum/craft_recipe/trapper/powder_pouch
 	name = "Tatonka powder pouch"
 	result = /obj/item/stack/medical/ointment/advanced/powder_pouch
@@ -214,7 +213,6 @@
 		list(/obj/item/animal_part/tatonka_horn, 1, "time" = 20),
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
-*/
 
 /datum/craft_recipe/trapper/tangu_juice
 	name = "Tangu Extract"

@@ -8,5 +8,5 @@
 		/obj/item/tool/shovel/spade,
 		/obj/item/reagent_containers/glass/bucket,
 		/obj/item/storage/bag/produce,
-		/obj/item/soap/church,
+		/obj/item/soap/bonfire,
 	)

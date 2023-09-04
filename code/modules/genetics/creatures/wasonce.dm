@@ -91,10 +91,10 @@ Has ability of every roach.
 		name = "Was once [akira]"
 		if ((istype(akira, /mob/living/carbon/human)))
 			var/mob/living/carbon/human/h_victim = akira
-			var/obj/item/implant/core_implant/cruciform/CI = h_victim.get_core_implant(/obj/item/implant/core_implant/cruciform, FALSE)
+			var/obj/item/implant/core_implant/hearthcore/CI = h_victim.get_core_implant(/obj/item/implant/core_implant/hearthcore, FALSE)
 			if (CI)
 				var/mob/N = CI.wearer
-				CI.name = "[N]'s Cruciform"
+				CI.name = "[N]'s Hearthcore"
 				CI.uninstall()
 
 		akira.loc = src

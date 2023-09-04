@@ -27,7 +27,7 @@
 	alt_mode_damagetype = HALLOSS
 	alt_mode_sharp = FALSE
 	alt_mode_verbs = list("bashes", "stunts", "wacks", "blunts")
-	alt_mode_toggle = "switches their stance to avoid using the blade of their weapon"
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	alt_mode_lossrate = 0.7
 
 /obj/item/tool/knife/resolve_attackby(atom/target, mob/user)
@@ -146,6 +146,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "skinning"
 	item_state = "skinning"
+	force = WEAPON_FORCE_DANGEROUS // Sharpened with a whetstone and high cutting quality
 	armor_penetration = ARMOR_PEN_DEEP
 	tool_qualities = list(QUALITY_CUTTING = 50)
 	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_WOOD = 2, MATERIAL_DIAMOND = 3) // 5 plasteel + 2 wood, then +3 plasteel +3 diamond from whetstone.

@@ -1,7 +1,7 @@
 // Targets, the things that actually get shot!
 /obj/item/target
 	name = "shooting target"
-	desc = "A shooting target."
+	desc = "A shooting target. Bullet holes can be repaired with a welder."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "target_h"
 	density = 0

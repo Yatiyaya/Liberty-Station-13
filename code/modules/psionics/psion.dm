@@ -37,7 +37,7 @@
 			return
 	..(affected)
 
-// Main process, this runs through all the needed checks for a psion. Removal of implants like cruciforms and synthetics are called here.
+// Main process, this runs through all the needed checks for a psion. Removal of implants like Hearthcores and synthetics are called here.
 // This also handles psi points limits and regeneration, the effect is dynamic so increases to cognition through things like stims and chems will update accordingly.
 /obj/item/organ/internal/psionic_tumor/Process()
 	..()
@@ -76,9 +76,9 @@
 		if(owner.stats.getPerk(PERK_PSI_PSYCHOLOGIST))
 			psi_max_bonus += 5
 
-		max_psi_points = round(clamp((owner.stats.getStat(STAT_WIL) * 0.1), 1, 30)) + psi_max_bonus
+		max_psi_points = round(clamp((owner.stats.getStat(STAT_COG) * 0.1), 1, 30)) + psi_max_bonus // Cognition dictates how much max PSI points we get
 
-		cognitive_potential = round(clamp((owner.stats.getStat(STAT_WIL) * 0.2), 0, 5))
+		cognitive_potential = round(clamp((owner.stats.getStat(STAT_WIL) * 0.2), 0, 5)) // Willpower decreases the time it takes for us to regen points
 
 
 		if(owner.stats.getPerk(PERK_PSI_GRACE))

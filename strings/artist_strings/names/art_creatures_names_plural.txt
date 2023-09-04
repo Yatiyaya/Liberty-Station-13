@@ -3,41 +3,36 @@ carps
 bears
 cockroaches
 spiders
-vagabonds
-megacarps
+freelancers
+sharks
+pikes
 bees
 aliens
-nar-sies
-redditors
-jagers
-fuhrers
-panzers
+hunters
+overlords
+exoskeletons
 robots
 borgs
 ais
 bots
 secbots
-floorbots
-drillbots
 farmbots
 cleanbots
 medbots
-captains
+secretaries
 slimes
 brains
-fuhrer roaches
-jager roaches
-kraftwerk roaches
-panzer roaches
-gestrahlte roaches
+overlord roaches
+hunter roaches
+nanite roaches
+exoskeleton roaches
+radioactive roaches
 cats
 alien larvas
 golems
 monkeys
 xenos
 xenomorphs
-necromorphs
-changelings
 androids
 gynoids
 angels
@@ -45,39 +40,32 @@ devils
 demons
 borers
 mice
-memes
 parrots
 worms
 kitties
 corgis
 dogs
 crabs
-headcrabs
 lizards
 shrooms
 mushrooms
 spiderbots
 goats
 cows
-cocks
 bats
 doombas
 roombas
-hivebots
-mimics
 drones
-pirates
-russians
-ukrainians
-englishmen
-americans
+Libertalian pirates
+Free Worlders
+Astrakhans
+Pallatians
+Terrans
 creatures
 men
 gods
-hiveminds
 scientists
 engineers
-shitsecs
 detectives
 criminals
 officers
@@ -85,18 +73,14 @@ preachers
 clerics
 fighters
 knights
-wizards
-witches
-druids
+enkindleds
+forgemasters
+oathbounds
+oathpledges
 cyborgs
-germans
-dutchmen
-frenchmen
-mummies
-vampires
+kriosans
 elves
 dwarves
-halfling
 orcs
 moths
 blobs

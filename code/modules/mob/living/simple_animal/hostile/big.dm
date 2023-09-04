@@ -128,14 +128,14 @@
 	pixel_y = 0
 	attack_sound = 'sound/weapons/deathclawattack.ogg'
 	meat_amount = 6
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/agape
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/bearmeat/agape
 	can_burrow = FALSE
 	mob_size = 3
 	leather_amount = 16
 	bones_amount = 20
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)
-	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE)
+	inherent_mutations = list(MUTATION_NEARSIGHTED, MUTATION_GIGANTISM, MUTATION_IMBECILE, MUTATION_NEARSIGHTED, MUTATION_RAND_UNSTABLE, MUTATION_NO_PAIN)
 
 /mob/living/simple_animal/hostile/agape/FindTarget()
 	. = ..()

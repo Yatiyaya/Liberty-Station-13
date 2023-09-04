@@ -69,7 +69,7 @@
 //Common - you can find those everywhere
 /obj/item/oddity/common/blueprint
 	name = "strange blueprint"
-	desc = "There's no telling what this design is supposed to be. Whatever could be built from this likely wouldn't work yet the Similacrum Robotics logo near the top makes one wonder."
+	desc = "There's no telling what this design is supposed to be. Whatever could be built from this likely wouldn't work yet the Simulacrum Robotics logo near the top makes one wonder."
 	icon_state = "blueprint"
 	prob_perk = 10 //Old blueprints nothing much to manifest on
 	oddity_stats = list(
@@ -152,7 +152,7 @@
 
 /obj/item/oddity/common/paper_omega
 	name = "collection of obscure reports"
-	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Similacrum, Phokorus Institute, or an independent group."
+	desc = "Even the authors seem to be rather skeptical about their findings. The reports are not connected to each other, but their results are similar. The logo is faded, making it hard to tell if this was Simulacrum, Phokorus Institute, or an independent group."
 	icon_state = "reports1"
 	prob_perk = 45 //The skeptical mind of the inker helps keep it grounded but it shows something unable to be shaken out of the mind
 	oddity_stats = list(
@@ -202,6 +202,7 @@
 		STAT_ROB = 9,
 		STAT_VIG = 9
 	)
+	perk = PERK_NO_OBFUSCATION // The book opens your third eye when ascended
 
 /obj/item/oddity/common/broken_key
 	name = "broken key"
@@ -448,6 +449,7 @@
 		STAT_COG = 6,
 		STAT_MEC = 9
 	)
+	perk = PERK_NO_OBFUSCATION // The book opens your third eye when awakened
 
 /obj/item/oddity/common/photo_crime
 	name = "crime scene photo"
@@ -670,13 +672,7 @@
 	)
 	perk = PERK_SHARP_MIND //TODO: fix /datum/perk/bluespace
 
-/obj/item/oddity/si_bluespace_scanner/examine(mob/living/user, distance)
-	. = ..()
-	if(!iscarbon(user) || !issilicon(user))
-		return//Prevents ghosts form making a runtime
-	if(!user.stats?.getPerk(PERK_SCIENCE) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
-		to_chat(usr, SPAN_WARNING("This tool is far too complex for you to comprehend how to even use it. The data and formulas displayed look like complete alien gibberish."))
-		return
+/obj/item/oddity/si_bluespace_scanner/attack_self(mob/user as mob)
 	var/area/my_area = get_area(src)
 	if(my_area.bluespace_entropy)
 		to_chat(user, SPAN_NOTICE("The Tuning Device measures bluespace entropy in this room to be [my_area.bluespace_entropy] zeframs.")) // Considering Bluespace Entropy the same as Subspace Distortion, and not making the reference more obvious than it is.
@@ -697,14 +693,14 @@
 	perk = PERK_CODESPEAK
 
 /obj/item/oddity/chem_book
-	name = "Chemistry Reference Table"
-	desc = "A heavy book with details and translations of chemistry and its affects on the body, even has some guides on how to properly use chemicals."
-	icon_state = "instructional_bio"
+	name = "Asclepian Introduction to Medicine"
+	desc = "A set of moral and ethical guidelines that every CAPSA medic ascribes to. It is accompanied by a lengthy instructional manual for the basics of emergency triage and health management."
+	icon_state = "instructional_bio_aid"
 	oddity_stats = list(
-		STAT_BIO = 6
+		STAT_BIO = 8
 	)
-	price_tag = 3200 //So we have a reason for stealing it
-	perk = PERK_CHEMIST
+	price_tag = 3200 // Justified by being unique + the perk it gives is invaluable
+	perk = PERK_MEDICAL_EXPERT // This is to help the CSO give paramedic perk to voluntary recruits that are either off duty or on another job
 
 //Skylight
 //Oddities that are only orderable through Skylight cargo

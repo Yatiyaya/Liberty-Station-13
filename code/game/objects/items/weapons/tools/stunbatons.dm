@@ -20,6 +20,7 @@
 	hitcost = 100
 	switched_on_qualities = list(QUALITY_HAMMERING = 10, QUALITY_PULSING = 20)
 	switched_off_qualities = list(QUALITY_HAMMERING = 10)
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // NO!!!
 	use_power_cost = 0.8
 	suitable_cell = /obj/item/cell/medium
 	glow_color = COLOR_LIGHTING_ORANGE_BRIGHT
@@ -49,6 +50,7 @@
 	hitcost = 1000
 	switched_on_qualities = list(QUALITY_HAMMERING = 20, QUALITY_PULSING = 30)
 	switched_off_qualities = list(QUALITY_HAMMERING = 20)
+	blacklist_upgrades = list() // You, however, get a pass; you are hammer-y enough.
 	use_power_cost = 0.8
 	suitable_cell = /obj/item/cell/large
 	glow_color = COLOR_LIGHTING_ORANGE_BRIGHT

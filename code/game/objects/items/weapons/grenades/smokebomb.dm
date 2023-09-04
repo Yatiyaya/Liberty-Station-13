@@ -1,5 +1,5 @@
 /obj/item/grenade/smokebomb
-	name = "ML SG \"Mastiff\""
+	name = "\"Mastiff\" Smoke Grenade"
 	desc = "Smoke grenade, used to create a cloud of smoke providing cover and hiding movement."
 	det_time = 20
 	icon_state = "smokegrenade"

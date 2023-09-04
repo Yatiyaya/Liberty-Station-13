@@ -80,7 +80,7 @@
 	new /obj/item/reagent_containers/spray/cleaner(src)
 	new /obj/item/newspaper_stack(src)
 	new /obj/item/soap/deluxe(src)
-	new /obj/item/holyvacuum(src)
+	new /obj/item/vacuum_cleaner(src)
 
 //Custodians
 
@@ -101,7 +101,7 @@
 	new /obj/item/clothing/head/custodian/oathbound(src)
 	new /obj/item/storage/fancy/candle_box(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
-	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/device/radio/headset/bonfire(src)
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/tool/knife/dagger/custodian(src)
 	new /obj/item/tool/sword/custodian/shortsword(src)
@@ -122,7 +122,7 @@
 	new /obj/item/clothing/suit/storage/custodian/forgemaster(src)
 	new /obj/item/clothing/head/custodian/forgemaster(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
-	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/device/radio/headset/bonfire(src)
 	new /obj/item/clothing/gloves/insulated(src)
 	new /obj/item/tool_upgrade/productivity/waxcoat(src)
 
@@ -142,7 +142,7 @@
 	new /obj/item/clothing/suit/storage/custodian/enkindled(src)
 	new /obj/item/clothing/head/custodian/enkindled(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
-	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/device/radio/headset/bonfire(src)
 	new /obj/item/clothing/gloves/latex(src)
 	new /obj/item/storage/makeshift_grinder(src)
 	new /obj/item/device/makeshift_electrolyser(src)
@@ -168,7 +168,7 @@
 	new /obj/item/clothing/suit/storage/custodian/oathpledge(src)
 	new /obj/item/clothing/head/custodian/oathpledge(src)
 	new /obj/item/clothing/mask/gas/germanmask(src)
-	new /obj/item/device/radio/headset/heads/preacher(src)
+	new /obj/item/device/radio/headset/heads/oathpledge(src)
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/tool/sword/custodian/horseaxe(src)
 	new /obj/item/forgesigil(src)

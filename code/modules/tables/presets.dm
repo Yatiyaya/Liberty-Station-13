@@ -82,7 +82,7 @@
 	icon_state = "bar_table_preview"
 	New()
 		material = get_material_by_name(MATERIAL_STEEL)
-		custom_appearance = custom_table_appearance["Bar - special"] //bar table
+		custom_appearance = custom_table_appearance["Bar"] //bar table
 		reinforced = get_material_by_name(MATERIAL_STEEL)
 		..()
 
@@ -90,9 +90,9 @@
 	icon_state = "onestar_preview"
 	New()
 		material = get_material_by_name(MATERIAL_STEEL)
-		custom_appearance = custom_table_appearance["Onestar"] //one star table
+		custom_appearance = custom_table_appearance["Simulacrum"] //one star table
 		reinforced = get_material_by_name(MATERIAL_STEEL)
-		name = "similacrum table"
+		name = "simulacrum table"
 		..()
 
 //BENCH PRESETS
@@ -102,6 +102,7 @@
 
 /obj/structure/table/bench/standard/New()
 	material = get_material_by_name(MATERIAL_PLASTIC)
+	color = material.icon_colour
 	..()
 
 /obj/structure/table/bench/steel
@@ -110,6 +111,7 @@
 
 /obj/structure/table/bench/steel/New()
 	material = get_material_by_name(MATERIAL_STEEL)
+	color = material.icon_colour
 	..()
 
 
@@ -119,6 +121,7 @@
 
 /obj/structure/table/bench/marble/New()
 	material = get_material_by_name(MATERIAL_MARBLE)
+	color = "#CCCCCC"
 	..()
 
 /obj/structure/table/bench/wooden
@@ -127,6 +130,7 @@
 
 /obj/structure/table/bench/wooden/New()
 	material = get_material_by_name(MATERIAL_WOOD)
+	color = "#824B28"
 	..()
 
 /obj/structure/table/bench/padded
@@ -135,7 +139,7 @@
 
 /obj/structure/table/bench/padded/New()
 	material = get_material_by_name(MATERIAL_CARPET)
-
+	color = "#760B0B"
 	..()
 
 /obj/structure/table/bench/glass
@@ -145,4 +149,5 @@
 
 /obj/structure/table/bench/glass/New()
 	material = get_material_by_name(MATERIAL_GLASS)
+	color = "#00E1FF"
 	..()

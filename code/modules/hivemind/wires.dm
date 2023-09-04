@@ -302,7 +302,7 @@
 		if(istype(subject, /obj/machinery))
 			var/obj/machinery/victim = subject
 			if(prob(15) && victim.circuit)
-				new /mob/living/simple_animal/hostile/hivemind/mechiver(get_turf(subject))
+				new /mob/living/simple_animal/hostile/hivemind/midrib(get_turf(subject))
 				new victim.circuit.type(get_turf(subject))
 				qdel(subject)
 				return
@@ -334,13 +334,13 @@
 			//We we dont touch the dead via are controler we dont want to pk people form the round
 				return
 
-			//if our target has cruciform, let's just leave it
-			if(is_neotheology_disciple(L))
+			//if our target has a Hearthcore, let's just leave it
+			if(is_custodian_of_bonfire(L))
 				return
 
 			for(var/obj/item/W in L)
 				L.drop_from_inventory(W)
-			var/M = pick(/mob/living/simple_animal/hostile/hivemind/himan, /mob/living/simple_animal/hostile/hivemind/phaser)
+			var/M = pick(/mob/living/simple_animal/hostile/hivemind/stipule, /mob/living/simple_animal/hostile/hivemind/phaser)
 			new M(loc)
 		//robot corpses
 		else if(issilicon(subject))

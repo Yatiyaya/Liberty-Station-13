@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/automatic/triage
 	name = "\"Triage\" Compact SMG"
 	desc = "A bullpup SMG chambered in 10mm. \
-	Created in collaboration with the Phokorus Institute R&D division using jury-rigged similacrum miniaturization designs to create a compact and lightweight SMG. \
+	Created in collaboration with the Phokorus Institute R&D division using jury-rigged Simulacrum miniaturization designs to create a compact and lightweight SMG. \
 	Perfect for the corpsmen who travels light."
 	icon = 'icons/obj/guns/projectile/triage.dmi'
 	icon_state = "triage"

@@ -31,9 +31,10 @@
 #define PERK_SOLBORN /datum/perk/background/solborn
 #define PERK_PAPER_WORM /datum/perk/fate/paper_worm
 #define PERK_UNFEELING /datum/perk/unfeeling
+#define PERK_LESS_FEELING /datum/perk/less_feeling
 
 //Wage Perks
-#define PERK_NEPOTISM /datum/perk/background/nepotism
+#define PERK_EXTRA_PAY /datum/perk/background/extra_pay
 #define PERK_DEBTOR /datum/perk/background/debtor
 
 //Genetics Perks
@@ -51,8 +52,7 @@
 #define PERK_INSPIRATION /datum/perk/job/inspiration
 #define PERK_ACTIVE_INSPIRATION /datum/perk/job/active_inspiration
 
-// Service / Cargo Perks //PERK_TIMEISMONEY for later
-#define PERK_ARTIST /datum/perk/job/artist
+// Service / Cargo Perks
 #define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
 #define PERK_NEAT /datum/perk/job/neat
 #define PERK_CHEF /datum/perk/job/foodappraise
@@ -66,10 +66,12 @@
 #define PERK_GUNSMITH /datum/perk/job/gunsmith
 #define PERK_CHEM_CONTRABAND /datum/perk/job/chem_contraband
 
-// Religion
+// Custodians
 #define PERK_SANITYBOOST /datum/perk/job/sanityboost
-#define PERK_CHANNELING /datum/perk/job/channeling
-#define PERK_LAZARUS_PROTOCOL /datum/perk/job/lazarus_protocol
+#define PERK_RADIANCE /datum/perk/job/radiance
+#define PERK_APOTHECARY /datum/perk/job/apothecary
+#define PERK_ARTIFICER /datum/perk/job/artificer
+#define PERK_PHOENIX /datum/perk/job/phoenix_rekindlement
 
 // Medical
 #define PERK_CHEMIST /datum/perk/job/chemist
@@ -229,6 +231,9 @@
 
 //Task Perks
 #define PERK_FORCEFUL_REJECTION /datum/perk/forceful_rejection
+
+//Misc Perks
+#define PERK_NO_OBFUSCATION /datum/perk/no_obfuscation
 
 //////////////////
 //Cooldown perks//

@@ -38,53 +38,63 @@
 	)
 
 /datum/craft_recipe/gun/arrows
-	name = "crude arrows"
+	name = "Crude arrows (x5)"
 	result = /obj/item/ammo_casing/arrow/bulk
 	icon_state = "woodworking"
 	flags = CRAFT_BATCH
 	steps = list(
-		list(/obj/item/stack/rods, 3, "time" = 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD, "time" = 10)
 	)
 
 /datum/craft_recipe/gun/arrows/practice
-	name = "training arrows"
+	name = "Training arrows (x10)"
 	result = /obj/item/ammo_casing/arrow/practice/bulk
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 60)
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 30)
 	)
 
 /datum/craft_recipe/gun/arrows/broad
-	name = "broadhead arrow"
-	result = /obj/item/ammo_casing/arrow/broadhead
+	name = "Broadhead arrows (x5)"
+	result = /obj/item/ammo_casing/arrow/broadhead/bulk
 	steps = list(
-		list(/obj/item/stack/rods, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 20),
-		list(QUALITY_DRILLING, 10, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 20),
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(QUALITY_HAMMERING, 10, "time" = 20), // Flatten the tip so it's broad
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 10),
 	)
 
 /datum/craft_recipe/gun/arrows/serrated
-	name = "serrated arrow"
-	result = /obj/item/ammo_casing/arrow/serrated
+	name = "Serrated arrows (x5)"
+	result = /obj/item/ammo_casing/arrow/serrated/bulk
 	steps = list(
-		list(/obj/item/stack/rods, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 20),
-		list(QUALITY_CUTTING, 10, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 20),
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(QUALITY_SAWING, 10, "time" = 20), // Serrate the tip so that it penetrates better
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 10),
 	)
 
-/datum/craft_recipe/gun/payload_arrow
-	name = "single empty payload arrow"
-	result = /obj/item/ammo_casing/arrow/empty_payload
+/datum/craft_recipe/gun/payload_arrows
+	name = "payload arrows (x4)" // Quadrupling the mats needed so that it's not a chore
+	result = /obj/item/ammo_casing/arrow/empty_payload/bulk
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 1),
+		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 1),
 		list(QUALITY_WELDING, 40, "time" = 5),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 1),
+		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTIC, "time" = 1),
 		list(QUALITY_CUTTING, 40, "time" = 5)
+	)
+
+/datum/craft_recipe/gun/crossbow_bolts
+	name = "crude crossbow bolts"
+	result = /obj/item/ammo_casing/rod_bolt/bulk
+	icon_state = "gun_part_7"
+	steps = list(
+		list(/obj/item/stack/rods, 10, "time" = 1),
+		list(QUALITY_SAWING, 10, "time" = 5),
+		list(QUALITY_HAMMERING, 10, "time" = 5)
 	)
 
 /datum/craft_recipe/gun/tacticool_flashlight
@@ -96,8 +106,59 @@
 		list(QUALITY_ADHESIVE, 15, 30) // Tape it together
 	)
 
+// Ranged weaponry start here, from basic to laser.
+
+/datum/craft_recipe/gun/bow
+	name = "Simple Bow"
+	result = /obj/item/gun/projectile/bow
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD, "time" = 20),
+		list(QUALITY_SAWING, 10, "time" = 20),
+		list(QUALITY_HAMMERING, 10, "time" = 20),
+		list(/obj/item/stack/cable_coil, 10, "time" = 10),
+		list(QUALITY_WIRE_CUTTING, 10, "time" = 10)
+	)
+
+/datum/craft_recipe/weapon/crossbow
+	name = "Crossbow"
+	result = /obj/item/gun/projectile/crossbow
+	steps = list(
+		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
+		list(/obj/item/stack/rods, 3, "time" = 20),
+		list(QUALITY_WELDING, 10, "time" = 30),
+		list(/obj/item/stack/cable_coil, 10, "time" = 10),
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 5, 10,"time" = 3)
+	)
+
+/datum/craft_recipe/gun/rxd
+	name = "RXD - Rapid Crossbow Device"
+	result = /obj/item/gun/projectile/crossbow/RCD
+	steps = list(
+		list(/obj/item/rcd, 1, "time" = 30),
+		list(QUALITY_SCREW_DRIVING, 10, 30),
+		list(QUALITY_SAWING, 10, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
+		list(QUALITY_WELDING, 10, "time" = 30),
+		list(/obj/item/stack/cable_coil, 2, "time" = 10)
+	)
+
+// Same as above, using a mech mounted RCD. Recycling!
+/datum/craft_recipe/gun/rxd_mech
+	name = "Rapid Crossbow Device (Alt)"
+	result = /obj/item/gun/projectile/crossbow/RCD
+	steps = list(
+		list(/obj/item/mecha_parts/mecha_equipment/tool/rcd, 1, "time" = 30),
+		list(QUALITY_SCREW_DRIVING, 10, 30),
+		list(QUALITY_SAWING, 10, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
+		list(QUALITY_WELDING, 10, "time" = 30),
+		list(/obj/item/stack/cable_coil, 2, "time" = 10)
+	)
+
 /datum/craft_recipe/gun/handmaderevolver
-	name = "handmade revolver"
+	name = "Handmade Revolver"
 	result = /obj/item/gun/projectile/revolver/handmade
 	steps = list(
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
@@ -106,82 +167,6 @@
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
-/datum/craft_recipe/gun/handmaderifle
-	name = "Handmade bolt action rifle"
-	result = /obj/item/gun/projectile/boltgun/handmade
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
-		list(QUALITY_WELDING, 10, 20),
-		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
-		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
-/datum/craft_recipe/gun/makeshiftgl
-	name = "makeshift grenade launcher"
-	result = /obj/item/gun/projectile/shotgun/pump/china/makeshift
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
-		list(QUALITY_WELDING, 10, 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
-		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
-/datum/craft_recipe/gun/slidebarrelshotgun
-	name = "slide barrel shotgun"
-	result = /obj/item/gun/projectile/shotgun/slidebarrel
-	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
-		list(QUALITY_WELDING, 10, 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
-		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
-/datum/craft_recipe/gun/maresleg
-	name = "\"Mares Leg\" lever shotgun"
-	result = /obj/item/gun/projectile/boltgun/lever/shotgun
-	steps = list(
-		list(/obj/item/gun/projectile/boltgun/lever, 1, time = 60),
-		list(QUALITY_ADHESIVE, 10, 60),
-		list(QUALITY_SCREW_DRIVING, 10),
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
-		list(QUALITY_BOLT_TURNING, 20, 30),
-		list(QUALITY_WELDING, 10, 20)
-	)
-
-/datum/craft_recipe/gun/makeshiftlaser
-	name = "makeshift laser carbine"
-	result = /obj/item/gun/energy/laser/makeshift
-	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
-		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
-		list(QUALITY_WELDING, 10, 20),
-		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC),
-		list(/obj/item/stock_parts/micro_laser , 4),
-		list(QUALITY_SCREW_DRIVING, 10)
-	)
-
-/datum/craft_recipe/gun/shrapnelcannon
-	name = "\"Shellshock\" scrap rifle"
-	result = /obj/item/gun/energy/shrapnel
-	icon_state = "gun"
-	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 8, MATERIAL_STEEL, "time" = 60),
-		list(QUALITY_CUTTING, 20, "time" = 40),
-		list(QUALITY_HAMMERING, 20, "time" = 40),
-		list(/obj/item/stack/cable_coil, 10, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 20, 30),
-		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
 /datum/craft_recipe/gun/partizaner
@@ -223,6 +208,30 @@
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 
+/datum/craft_recipe/gun/slidebarrelshotgun
+	name = "slide barrel shotgun"
+	result = /obj/item/gun/projectile/shotgun/slidebarrel
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(QUALITY_ADHESIVE, 15, 70),
+		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(QUALITY_WELDING, 10, 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
+		list(QUALITY_SCREW_DRIVING, 10)
+	)
+
+/datum/craft_recipe/gun/handmaderifle
+	name = "Handmade bolt action rifle"
+	result = /obj/item/gun/projectile/boltgun/handmade
+	steps = list(
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(QUALITY_ADHESIVE, 15, 70),
+		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(QUALITY_WELDING, 10, 20),
+		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
+		list(QUALITY_SCREW_DRIVING, 10)
+	)
+
 /datum/craft_recipe/gun/kalash
 	name = "Makeshift 7.62 \"Kalash\""
 	result = /obj/item/gun/projectile/automatic/ak47/makeshift
@@ -238,29 +247,44 @@
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 
-/datum/craft_recipe/gun/rxd
-	name = "RXD - rapid crossbow device"
-	result = /obj/item/gun/projectile/crossbow/RCD
+/datum/craft_recipe/gun/makeshiftgl
+	name = "makeshift grenade launcher"
+	result = /obj/item/gun/projectile/shotgun/pump/china/makeshift
 	steps = list(
-		list(/obj/item/rcd, 1, "time" = 30),
-		list(QUALITY_SCREW_DRIVING, 10, 30),
-		list(QUALITY_SAWING, 10, "time" = 60),
-		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD), //same as the old crossbow frame
-		list(QUALITY_WELDING, 10, "time" = 30),
-		list(/obj/item/stack/cable_coil, 2, "time" = 10)
+		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(QUALITY_ADHESIVE, 15, 70),
+		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(QUALITY_WELDING, 10, 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
+		list(QUALITY_SCREW_DRIVING, 10)
 	)
 
-/datum/craft_recipe/gun/bow
-	name = "simple bow"
-	result = /obj/item/gun/projectile/bow
-	icon_state = "woodworking"
+/datum/craft_recipe/gun/shrapnelcannon
+	name = "\"Shellshock\" scrap rifle"
+	result = /obj/item/gun/energy/shrapnel
+	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD, "time" = 20),
-		list(QUALITY_SAWING, 10, "time" = 20),
-		list(QUALITY_HAMMERING, 10, "time" = 20),
-		list(QUALITY_CUTTING, 10, "time" = 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_CLOTH, "time" = 40),
-		list(QUALITY_WIRE_CUTTING, 10, "time" = 10)
+		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 8, MATERIAL_STEEL, "time" = 60),
+		list(QUALITY_CUTTING, 20, "time" = 40),
+		list(QUALITY_HAMMERING, 20, "time" = 40),
+		list(/obj/item/stack/cable_coil, 10, "time" = 20),
+		list(QUALITY_WIRE_CUTTING, 20, 30),
+		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
+		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
+	)
+
+/datum/craft_recipe/gun/makeshiftlaser
+	name = "makeshift laser carbine"
+	result = /obj/item/gun/energy/laser/makeshift
+	steps = list(
+		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
+		list(QUALITY_ADHESIVE, 15, 70),
+		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(QUALITY_WELDING, 10, 20),
+		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC),
+		list(/obj/item/stock_parts/micro_laser , 4),
+		list(QUALITY_SCREW_DRIVING, 10)
 	)
 
 /datum/craft_recipe/gun/multi_laser

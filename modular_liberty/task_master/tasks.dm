@@ -44,7 +44,7 @@
 /datum/task_master/task/self_value
 	name = "Self Motivation"
 	key = "MASTER_QUEST_COMPLETER"
-	desc = "Completing your own set goals inspirers you to continue your self improvements."
+	desc = "Completing your own set goals inspirers you to continue your self improvement."
 	gain_text = "Setting your own missions is rewarding."
 	level_threshholds = 5 //Rewarding people that do their personal objectives with some reason to do this
 
@@ -69,7 +69,7 @@
 	name = "Vender Point Shopper"
 	key = "VENDER_E_SHOPPER"
 	desc = "Paper bills, coins they all suck! The Card with your bank account attached to it is clearly the best way to shop!"
-	gain_text = "Shopping with an Ecard sure is the way to go."
+	gain_text = "Shopping with an E-card sure is the way to go."
 	level_threshholds = 10 //So people dont game this as easy
 
 /datum/task_master/task/vender_e_shopper/activate_affect()
@@ -79,7 +79,7 @@
 /datum/task_master/task/return_to_sender
 	name = "Return To Sender"
 	key = "RETURN_TO_SENDER"
-	desc = "I was dead! Pulled back? Returned to this place this life?!"
+	desc = "I was dead! But now I'm pulled back? Returned to this place, this life?!"
 	gain_text = "Walking again?"
 	level_threshholds = 1
 	unlocked = TRUE //Morality
@@ -92,7 +92,7 @@
 /datum/task_master/task/rebound_case
 	name = "Rebound Case"
 	key = "REBOUND_CASE"
-	desc = "Alive, dead, alive dead. Put back together time and time again..."
+	desc = "Alive, dead, alive again. Put back together time and time again..."
 	gain_text = "Back again."
 	level_threshholds = 2
 	unlocked = TRUE //Immorality
@@ -109,7 +109,7 @@
 	key = "GYM_GOER"
 	desc = "Nothing beats hitting the gym."
 	gain_text = "Feels great to be fit."
-	level_threshholds = 3 //Gym has long cooldowns and costs a bit
+	level_threshholds = 2 //Gym has long cooldowns and costs a bit
 
 /datum/task_master/task/gym_goer/activate_affect()
 	forwards_refence.stats.changeStat(STAT_WIL, (level + 2))
@@ -120,7 +120,7 @@
 /datum/task_master/task/dr_floor
 	name = "Dr. Floor"
 	key = "DR_FLOOR"
-	desc = "Either do to drug withdraw, or hope, its hard to denie that this helps build up resistance."
+	desc = "Either due to overcoming drug withdrawal, or still lingering addiction, it's hard to deny your bad habits at least help build up character."
 	gain_text = "Self prescription..."
 	level_threshholds = 5 //Tons of wallet/floor pills
 
@@ -131,9 +131,9 @@
 /datum/task_master/task/proper_sealer
 	name = "Proper Sealer"
 	key = "PROPER_SEALER"
-	desc = "Taking the hardway on sealing up borrows leaves tougher hands and more knowings on how to repair."
+	desc = "Properly sealing burrows with a trusty shovel and hammering away those cracks makes for tougher and more tool-savvy hands."
 	gain_text = "Making the colony a safer place sure is fulfilling work."
-	level_threshholds = 5 //Theirs so many borrows...
+	level_threshholds = 5 //Theirs so many burrows...
 
 /datum/task_master/task/proper_sealer/activate_affect()
 	forwards_refence.stats.changeStat(STAT_MEC, (level + 1))
@@ -143,7 +143,7 @@
 /datum/task_master/task/tool_breaker
 	name = "Tool Consumer"
 	key = "TOOL_BREAKER"
-	desc = "Sometimes things just break. At lest its a good learning experience..."
+	desc = "Sometimes things just break. At lest, it's a good learning experience on tool maintenance..."
 	gain_text = "Oops."
 	level_threshholds = 2 //This unlike most stat is meant to be leveled up a bit to shine
 
@@ -153,7 +153,7 @@
 /datum/task_master/task/proper_area_smoker
 	name = "Smoking Area"
 	key = "PROPER_AREA_SMOKER"
-	desc = "Do to smoking in the proper area helps make you feel more connected to the community."
+	desc = "Smoking on designated areas makes you feel more connected to the community."
 	gain_text = "Smoking in a proper area is rather soothing."
 	level_threshholds = 10
 
@@ -162,9 +162,9 @@
 
 //Taking bad perks should not be all bad!
 /datum/task_master/task/poors
-	name = "When it rains"
+	name = "When it rains..."
 	key = "POORS"
-	desc = "Just bad luck with getting the right items..."
+	desc = "...it pours. You seem to have really bad luck when reflecting upon oddities, but you can pretend at least one never happened to you..."
 	gain_text = "Unlucky day huh..."
 	level_threshholds = 1
 	alt_scaling_number = 2 // 1 2 4 8 ect,
@@ -172,3 +172,19 @@
 
 /datum/task_master/task/poors/activate_affect()
 	forwards_refence.stats.addPerk(PERK_FORCEFUL_REJECTION)
+
+// Training melee with dummies makes you stronger!
+
+/datum/task_master/task/martial_prowess
+	name = "Martial Prowess"
+	key = "MARTIAL_ARTS"
+	desc = "Fear not the combatant who has mastered 300 punches once, but the one that mastered one punch 300 times."
+	gain_text = "Carry on training and perfect yourself through the art, no matter the obstacle."
+	level_threshholds = 50 // Fifty punches to a training dummy per level might seem like not enough, but it has increased punch cooldown.
+	unlocked = TRUE // Let's not make the first fifty punches do nothing, it's a lot of exercise.
+
+/datum/task_master/task/martial_prowess/activate_affect()
+	forwards_refence.stats.changeStat(STAT_ROB, (level + 2))
+	forwards_refence.stats.changeStat(STAT_TGH, (level + 2)) // So that it's worth sitting there repeatedly clicking on a dummy.
+	forwards_refence.stats.changeStat(STAT_WIL, (level + 2)) // Body and mind.
+

@@ -22,7 +22,7 @@
 	desc = "You used to work as an EMT either in civilian or military sector. \
 	You have basics of first aid but not much else."
 
-	stat_modifiers = list(STAT_BIO = 15, STAT_MEC = -10)
+	stat_modifiers = list(STAT_BIO = 15, STAT_TGH = 5, STAT_MEC = -10, STAT_ROB = 5, STAT_VIG = 5)
 
 /datum/category_item/setup_option/background/path/criminal //Former pirate is to be considered merged under this.
 	name = "Former Criminal"
@@ -56,7 +56,7 @@
 	desc = "You were or perhaps still are an investor and entrepreneur. \
 	This leaves you with extra income from other sources."
 
-	perks = list(PERK_NEPOTISM) //You have defended the free market one too many times Harry, you are getting political again.
+	perks = list(PERK_EXTRA_PAY) //You have defended the free market one too many times Harry, you are getting political again.
 
 	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5, STAT_COG = 10)
 

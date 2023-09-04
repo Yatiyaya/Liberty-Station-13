@@ -18,7 +18,7 @@
 	damage_multiplier = 0.8
 	init_recoil = CARBINE_RECOIL(0.2)
 	projectile_type = /obj/item/projectile/beam
-	cell_type = /obj/item/cell/small
+	cell_type = /obj/item/cell/medium
 	charge_cost = 40
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE)
 	init_firemodes = list(

@@ -29,6 +29,8 @@
 	new /obj/item/ammo_magazine/speed_loader_shotgun/empty(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
 	new /obj/item/ammo_magazine/ammobox/shotgun/buckshot(src)
+	new /obj/item/clothing/suit/space/void/union/tminer_suit(src)
+	new /obj/item/clothing/head/helmet/space/void/union/tminer_helmet(src)
 
 /******************************Lantern*******************************/
 
@@ -43,7 +45,7 @@
 	name = "censer"
 	icon_state = "censer"
 	item_state = "censer"
-	desc = "A silver-gold incense burner that releases a sweet, comforting perfume. Sometimes used in consecration ceremonies by the Church, where the incense is said to clean and purify the air so prayers may better reach the Bonfire."
+	desc = "A silver-gold incense burner that releases a sweet, comforting perfume. Sometimes used in consecration ceremonies, where the incense is said to clean and purify the air so prayers may better reach the Heavens."
 	brightness_on = 3			// luminosity when on
 	turn_on_sound = 'sound/effects/Custom_flare.ogg'
 

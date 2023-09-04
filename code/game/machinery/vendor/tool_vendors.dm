@@ -1,20 +1,25 @@
 
 /obj/machinery/vending/assist
 	name = "HexaOptimum Assistant Vendor"
-	desc = "A HexaOptimum vendor providing components for your own simple bomb and remote control making."
-	product_slogans = "HexaOptimum is not responsible for any damage accumulated from using our products!;Come get your assemblies!;Did you ever want your own firecracker?"
+	desc = "A HexaOptimum vendor providing components for your own electronic assemblies necessities."
+	product_slogans = "The only limit is your imagination!;Come get your assemblies!;Don't forget your screwdriver!"
 	icon_state = "citadel"
 	icon_vend = "citadel-vend"
 	icon_deny = "citadel-deny"
 	products = list(
-		/obj/item/device/assembly/prox_sensor = 10,
-		/obj/item/device/assembly/igniter = 10,
-		/obj/item/device/assembly/signaler = 10,
+		/obj/item/device/assembly/signaler = 60,
+		/obj/item/device/assembly/prox_sensor = 25,
+		/obj/item/device/assembly/igniter = 25,
+		/obj/item/device/assembly/timer = 25,
+		/obj/item/device/assembly/infra = 25,
+		/obj/item/device/assembly/voice = 25,
+		/obj/item/device/text_to_speech = 25,
+		/obj/item/tool/screwdriver = 6,
 		/obj/item/tool/wirecutters = 5,
 		/obj/item/tool/wirecutters/pliers = 5,
 		/obj/item/cartridge/signal = 10,
-		/obj/item/device/lighting/toggleable/flashlight = 5,
-		/obj/item/device/assembly/timer = 10,
+		/obj/item/device/debugger = 5,
+		/obj/item/device/lighting/toggleable/flashlight = 5
 		)
 	product_ads = "Only the finest!;Have some tools.;The most robust equipment.;The finest gear in space!"
 	shut_up = 1
@@ -121,8 +126,6 @@
 					/obj/item/storage/bag/sheetsnatcher/guild = 6,
 					/obj/item/tool_upgrade/reinforcement/plasmablock = 6,
 					/obj/item/tool_upgrade/reinforcement/rubbermesh = 6,
-					/obj/item/tool_upgrade/productivity/booster = 6,
-					/obj/item/tool_upgrade/productivity/injector = 6,
 					/obj/item/stock_parts/scanning_module = 5,
 					/obj/item/stock_parts/micro_laser = 5,
 					/obj/item/stock_parts/matter_bin = 5,
@@ -159,8 +162,6 @@
 					/obj/item/storage/bag/sheetsnatcher/guild = 600,
 					/obj/item/tool_upgrade/reinforcement/plasmablock = 950,
 					/obj/item/tool_upgrade/reinforcement/rubbermesh = 950,
-					/obj/item/tool_upgrade/productivity/booster = 950,
-					/obj/item/tool_upgrade/productivity/injector = 950,
 					/obj/item/stock_parts/scanning_module = 40,
 					/obj/item/stock_parts/micro_laser = 40,
 					/obj/item/stock_parts/matter_bin = 40,
@@ -263,11 +264,13 @@
 					/obj/item/clothing/suit/bio_suit = 6,
 					/obj/item/clothing/head/bio_hood = 6,
 					/obj/item/clothing/suit/storage/toggle/labcoat/poofy = 6,
-					/obj/item/device/transfer_valve = 6,
-					/obj/item/device/assembly/timer = 6,
-					/obj/item/device/assembly/signaler = 6,
-					/obj/item/device/assembly/prox_sensor = 6,
-					/obj/item/device/assembly/igniter = 6)
+					/obj/item/device/assembly/signaler = 60,
+					/obj/item/device/transfer_valve = 60, // Allows room for a lot of trial and error... as long as you can get canisters!
+					/obj/item/device/assembly/timer = 25,
+					/obj/item/device/assembly/prox_sensor = 25,
+					/obj/item/device/assembly/igniter = 25,
+					/obj/item/device/assembly/voice = 25
+					)
 	auto_price = FALSE
 	give_discounts = FALSE
 	give_discount_points = FALSE

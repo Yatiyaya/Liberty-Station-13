@@ -1330,8 +1330,8 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "hm" = (
@@ -1368,7 +1368,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "hz" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "hA" = (
@@ -3033,12 +3033,12 @@
 /area/liberty/outside/forest/hunting_lodge)
 "ST" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "SW" = (

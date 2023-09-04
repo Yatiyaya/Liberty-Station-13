@@ -281,7 +281,7 @@
 			<i>\"Iron binds with tungsten, but needs to be recondensed with salt. Hardens the body, but at what cost...?\"</i><br><br>\
 			<i>\"Ammonia dissolves carbon - crystalize with salt. Be careful of potent toxicity.\"</i><br><br>\
 			<i>\"Water and carbon can be mixed with salt to cure the eyes.\"</i><br><br>\
-			<i>\"Detox can be purified when mixed with viroputine and citalopram into an elixir of health.\"</i><br><br>\
+			<i>\"Virus food can be purified when mixed with detox and citalopram into an elixir of health.\"</i><br><br>\
 			<i>\"Citalopram and purger bring out the purest essence of detox...\"</i><br><br>\
 			<i>\"Iron and silicon, ground into flakes, and enriched with salt...Pocket sand?\"</i><br><br>\
 			<i>\"Suspend salt in oil, and stir in iron shavings...mind the exotermic reaction when exposed to skin!\"</i><br><br>\

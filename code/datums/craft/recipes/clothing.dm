@@ -360,13 +360,16 @@
 	name = "insulated combat gloves"
 	result = /obj/item/clothing/gloves/thick/swat/insulated
 	steps = list(
-		list(/obj/item/clothing/gloves/thick/swat, 1, "time" = 30),
+		list(/obj/item/clothing/gloves/thick, 1, "time" = 30),
 		list(QUALITY_CUTTING, 15, 30),
-		list(/obj/item/clothing/gloves/insulated, 1, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 30), // We plate the gloves to justify its armor values
+		list(QUALITY_WELDING, 10, "time" = 30), // Melt the metal, then...
+		list(QUALITY_HAMMERING, 15, 10), // ...harden into shape
+		list(/obj/item/clothing/gloves/insulated, 1, "time" = 30), // This means it can also take budget insuls
 		list(QUALITY_CUTTING, 15, 30),
 		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC), //So if we use buget we have a reason to think its really shock proof
-		list(QUALITY_WELDING, 10, "time" = 30), //melt down things
-		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
+		list(QUALITY_ADHESIVE, 10, "time" = 30)
 	)
 
 // Nuckle Dusters and melee based things

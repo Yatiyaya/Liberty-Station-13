@@ -325,6 +325,17 @@
 	if(!tank)
 		new /obj/structure/reagent_dispensers/watertank(src)
 
+/obj/item/farmbot_arm_assembly/examine(mob/user)
+	..()
+	switch("[build_step]")
+		if("0")
+			to_chat(user, "<span class='info'>To continue assembling the Farmbot, attach a Plant Analyzer to it.</span>")
+		if("1")
+			to_chat(user, "<span class='info'>To continue assembling the Farmbot, attach a Bucket to it.</span>")
+		if("2")
+			to_chat(user, "<span class='info'>To continue assembling the Farmbot, attach a Mini Hoe to it.</span>")
+		if("3")
+			to_chat(user, "<span class='info'>It is almost complete! Attach a Proximity Sensor to finish.</span>")
 
 /obj/structure/reagent_dispensers/watertank/attackby(var/obj/item/robot_parts/S, mob/user as mob)
 	if ((!istype(S, /obj/item/robot_parts/l_arm)) && (!istype(S, /obj/item/robot_parts/r_arm)))
@@ -374,6 +385,7 @@
 			wTank.loc = S
 			S.tank = wTank
 		S.name = created_name
+		S.locked = FALSE // Spawn unlocked so that anyone can configure
 		user.remove_from_mob(W)
 		qdel(W)
 		qdel(src)

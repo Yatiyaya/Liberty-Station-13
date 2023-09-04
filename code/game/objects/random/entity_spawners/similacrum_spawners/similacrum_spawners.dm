@@ -1,6 +1,6 @@
-/obj/entity_spawner/similacrum //basetype, dont use
-	name = "Similacrum Robotics robot dispenser"
-	desc = "What appears to be a heavily modified robotics exofab made in the distinctive bronze of similacrum alloys."
+/obj/entity_spawner/simulacrum //basetype, dont use
+	name = "Simulacrum Robotics robot dispenser"
+	desc = "What appears to be a heavily modified robotics exofab made in the distinctive bronze of Simulacrum alloys."
 
 	death_message = "'s lights dim, ceasing function as it falls apart!"
 
@@ -21,7 +21,7 @@
 				/obj/machinery/constructable_frame/machine_frame = 100
 	)
 
-/obj/entity_spawner/similacrum/disassemble()
+/obj/entity_spawner/simulacrum/disassemble()
 
 	do_sparks(1, FALSE, src)
 

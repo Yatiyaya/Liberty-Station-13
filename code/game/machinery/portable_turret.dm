@@ -73,7 +73,7 @@
 	var/overridden = FALSE				//if the security override is 0, security protocols are on. if 1, protocols are broken.
 
 /obj/machinery/porta_turret/One_star
-	name = "similacrum positronic turret"
+	name = "Simulacrum Robotics turret"
 	installation = /obj/item/gun/energy/cog
 
 /obj/machinery/porta_turret/crescent

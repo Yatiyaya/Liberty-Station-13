@@ -143,7 +143,7 @@
 	result = null
 	required_reagents = list("egg" = 3, "flour" = 10)
 	result_amount = 1
-	blacklist_containers = list(/mob, /obj/machinery/microwave)
+	blacklist_containers = list(/mob, /obj/machinery/microwave, /obj/item/reagent_containers/cooking_with_jane/cooking_container)
 	mix_message = "You coax the mixture into a taut ball of dough."
 
 /datum/chemical_reaction/dough/on_reaction(var/datum/reagents/holder, var/created_volume)
@@ -902,7 +902,7 @@
 
 /datum/chemical_reaction/drinks/saint_pio
 	result = "saint_pio"
-	required_reagents = list("water" = 3, "blood" = 1, "ntcahors" = 1)
+	required_reagents = list("water" = 3, "blood" = 1, "wine" = 1) // Unrelated to Custodians.
 	result_amount = 5
 
 /datum/chemical_reaction/drinks/rusty_special

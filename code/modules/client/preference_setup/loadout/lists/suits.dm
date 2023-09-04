@@ -77,6 +77,10 @@
 	display_name = "old Terran military jacket"
 	path = /obj/item/clothing/suit/storage/toggle/miljacket_soyfed
 
+/datum/gear/suit/afghanka
+	display_name = "tan afghanka jacket"
+	path = /obj/item/clothing/suit/storage/toggle/afghanka
+
 /datum/gear/suit/punk_vest
 	display_name = "punk vest"
 	path = /obj/item/clothing/suit/storage/punkvest

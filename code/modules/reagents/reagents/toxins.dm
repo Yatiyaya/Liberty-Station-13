@@ -781,17 +781,17 @@
 	..()
 
 /datum/reagent/toxin/liquid_scorch/affect_touch(mob/living/carbon/M, alien, effect_multiplier)
-	scorch_attack(M, 20)
+	scorch_attack(M)
 	..()
 
 /datum/reagent/toxin/liquid_scorch/touch_turf(turf/T)
 	if(volume >= 5)
 		if(volume >= 45)
-			spill_biomass(T, alldirs)
+			spill_scorch(T, alldirs)
 		else if(volume >= 25)
-			spill_biomass(T, cardinal)
+			spill_scorch(T, cardinal)
 		else
-			spill_biomass(T)
+			spill_scorch(T)
 		remove_self(volume)
 		return TRUE
 

@@ -71,6 +71,6 @@
 	result = /obj/item/gun/projectile/colt
 	gripvars = list(/obj/item/part/gun/grip/wood, /obj/item/part/gun/grip/black)
 	mechanismvar = /obj/item/part/gun/mechanism/pistol
-	barrelvars = list(/obj/item/part/gun/barrel/pistol, /obj/item/part/gun/barrel/magnum)
+	barrelvars = list(/obj/item/part/gun/barrel/magnum) // Both guns are 10mm, no cheating
 	resultvars = list(/obj/item/gun/projectile/colt, /obj/item/gun/projectile/colt/freedom)
 

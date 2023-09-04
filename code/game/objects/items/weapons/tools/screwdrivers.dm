@@ -64,7 +64,7 @@
 
 
 /obj/item/tool/screwdriver/combi_driver/onestar
-	name = "Similacrum Robotics combination drill"
+	name = "Simulacrum Robotics combination drill"
 	desc = "Does better than the standard combination drivers on the market, but has less slots for tool mods."
 	icon_state = "one_star_combidriver"
 	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLATINUM = 3)
@@ -76,4 +76,4 @@
 	suitable_cell = /obj/item/cell/small
 	max_upgrades = 2
 	price_tag = 1200 // Very prized.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE

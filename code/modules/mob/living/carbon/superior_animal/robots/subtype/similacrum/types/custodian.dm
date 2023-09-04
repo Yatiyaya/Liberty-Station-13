@@ -1,6 +1,6 @@
-/mob/living/carbon/superior_animal/robot/similacrum/custodian
-	name = "Similacrum Robotics Custodial Drone"
-	desc = "Old and weathered Similacrum Robotics drone. It seems to be malfunctioning and hostile."
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian
+	name = "Simulacrum Robotics Custodial Drone"
+	desc = "Old and weathered Simulacrum Robotics drone. It seems to be malfunctioning and hostile."
 	icon = 'icons/mob/build_a_drone.dmi'
 	icon_state = "drone_os"
 	attacktext = "zapped"
@@ -36,7 +36,7 @@
 	var/tool = "laser"
 	var/tooltype = "os"
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/New()
 	. = ..()
 	marks_type = pick("green", "blue", "pink", "orange", "cyan", "red", "os")
 	screen_type = pick("green", "os_red", "yellow", "cyan", "red", "os")
@@ -50,7 +50,7 @@
 	if(prob(10))
 		cell_drop = /obj/item/cell/medium
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/update_icon()
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/update_icon()
 	. = ..()
 	cut_overlays()
 	var/image/shell_I = image(icon, src, "shell_[shell_type]")
@@ -64,7 +64,7 @@
 	add_overlay(tool_I)
 	add_overlay(radio_I)
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/death()
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/death()
 	..()
 	visible_message("<b>[src]</b> blows apart!")
 	new /obj/effect/decal/cleanable/blood/gibs/robot(src.loc)
@@ -83,9 +83,9 @@
 	qdel(src)
 	return
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/chef
-	name = "Similacrum Robotics Service Drone"
-	desc = "Old and weathered Similacrum Robotics drone. This one looks like it used to cook. It seems to be malfunctioning and hostile."
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/chef
+	name = "Simulacrum Robotics Service Drone"
+	desc = "Old and weathered Simulacrum Robotics drone. This one looks like it used to cook. It seems to be malfunctioning and hostile."
 	tool = "flamer"
 	fire_verb = "lobs flame"
 	screen_type = "os_red"
@@ -109,7 +109,7 @@
 		/datum/stat_modifier/mob/living/carbon/superior_animal/lambertian = 10,
 	)
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/chef/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/chef/New()
 	. = ..()
 	if(prob(5))
 		drop2 = /obj/item/oddity/common/old_radio
@@ -121,15 +121,15 @@
 		cell_drop = /obj/item/cell/medium
 
 /* - This made them have natural armor against lasers that stacked, not that good also they get full fire proof as they are a robot
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/chef/adjustFireLoss(var/amount)
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/chef/adjustFireLoss(var/amount)
 	if(status_flags & GODMODE)
 		return FALSE	//godmode
 	fireloss = min(max(fireloss + amount/2, 0),(maxHealth*2)) //Slightly resistant to fire, because it would blow apart otherwise
 */
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer
-	name = "Similacrum Robotics Engineering Drone"
-	desc = "Old and weathered Similacrum Robotics drone. This one has a laser welder. It seems to be malfunctioning and hostile."
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer
+	name = "Simulacrum Robotics Engineering Drone"
+	desc = "Old and weathered Simulacrum Robotics drone. This one has a laser welder. It seems to be malfunctioning and hostile."
 	tool = "laser"
 	tooltype = "os_red"
 	screen_type = "yellow"
@@ -141,14 +141,14 @@
 	cleaning = FALSE
 	range_telegraph = "turns it's laser welder to"
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer/emp_act(severity)
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer/emp_act(severity)
 	..()
 	if(rapid)
 		rapid = FALSE
 	if(prob(95) && ranged)
 		ranged = FALSE
 
-/mob/living/carbon/superior_animal/robot/similacrum/custodian/engineer/New()
+/mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer/New()
 	. = ..()
 	if(prob(5))
 		drop2 = /obj/random/tool_upgrade/rare

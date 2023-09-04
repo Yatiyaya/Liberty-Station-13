@@ -48,6 +48,10 @@
 	//TODO: seperate this out
 	// update the current life tick, can be used to e.g. only do something every 4 ticks
 	life_tick++
+	if(client && life_tick%5)
+		for(var/mob/living/M in oviewers(world.view, client.mob))
+			if(!(is_dead(M)) && !(M.faction == src.faction) && (M.AI_inactive == 1))
+				M.AI_inactive = 0
 
 	// This is not an ideal place for this but it will do for now.
 	if(wearing_rig && wearing_rig.offline)
@@ -834,13 +838,21 @@
 			silent = 0
 			return 1
 		if(health <= death_threshold) //No health = death
-			if(stats.getPerk(PERK_LAZARUS_PROTOCOL) && prob(33)) //Unless you have this perk
-				heal_organ_damage(20, 20)
-				adjustOxyLoss(-100)
-				AdjustSleeping(rand(20,30))
-				updatehealth()
-				stats.removePerk(PERK_LAZARUS_PROTOCOL)
-				learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
+			if(stats.getPerk(PERK_PHOENIX)) //Unless you have this perk
+				var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
+				if(C && C.active)
+					var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
+					if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_PHOENIX_EDICT))
+						var/obj/item/hearthcore_upgrade/phoenix_edict/phoenix = upgrade
+						visible_message(SPAN_DANGER("\The [C] burns bright as the sun!"))
+						qdel(phoenix) // Destroy the Hearthcore upgrade.
+						C.upgrade = null // Set our upgrade to nothing.
+						stats.removePerk(PERK_PHOENIX) // Just in case the perk was not removed by the deletion of the upgrade above.
+						heal_organ_damage(20, 20)
+						adjustOxyLoss(-100)
+						Weaken(5)
+						updatehealth()
+						learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/return_to_sender, "RETURN_TO_SENDER", skill_gained = 1, learner = src)
 			else
 				death()
 				blinded = 1
@@ -954,9 +966,9 @@
 
 	// now handle what we see on our screen
 
-	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C)
-		var/datum/core_module/cruciform/neotheologyhud/NT_hud = C.get_module(/datum/core_module/cruciform/neotheologyhud)
+		var/datum/core_module/hearthcore/neotheologyhud/NT_hud = C.get_module(/datum/core_module/hearthcore/neotheologyhud)
 		if(NT_hud)
 			NT_hud.update_crucihud()
 

@@ -77,10 +77,10 @@ var/list/dreams = list(
 	"a legless being","an armless being","a winged being","a tailed being","a fellow soldier","a superior","a subordinate",
 
 //Creatures & Hostiles
-	"a alien drone","a alien sentinel","a alien queen","a bear","a space carp","a space pike","a creature",
-	"a diyaab","a similacrum positronic autonomous drone","a similacrum positronic autonomous sentinel","a hivemind probe","a hivemind cyborg",
+	"an alien drone","an alien sentinel","an alien queen","a bear","a space carp","a space pike","a creature",
+	"a diyaab","a Simulacrum Robotics autonomous drone","a Simulacrum Robotics autonomous sentinel","a hivemind probe","a hivemind cyborg",
 	"a hivemind zombie","a hivemind maneater","a hivemind warped","a hivemind marionette","a hivemind stinger",
-	"a hivemind tyrant","a similacrum positronic type 0315","a mimic","a nanite infested miniroach cluster","a scavenger",
+	"a hivemind tyrant","a Simulacrum Robotics type 0315","a mimic","a nanite infested miniroach cluster","a scavenger",
 	"a clown","a goat","a combat drone","a russian soldier","a samak","a bat swarm","a shantak","a mercenary",
 	"a sentient tree","a viscerator","a vox armalis","a slime","a cortical borer","a cat","a chick","a chicken",
 	"a corgi","a cow","a crab","a fennec","a goose","a lizard","a mouse","a sentient mushroom","a parrot","a penguin",
@@ -89,8 +89,8 @@ var/list/dreams = list(
 	"a seuche roach","a panzer roach","a gestrahlte roach","a disembodied brain","a monkey","a shadekin",
 
 //Factions/Groups
-	"the marshals","the blackshield","Fontaine","the excelsior institute","Skylight shipping solutions",
-	"the artificers guild","the liberty council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
+	"the Watch","Fontaine","the Phokorus institute","Skylight Syndicate", "a CAPSA hospital",
+	"Terra-Therma Union","the liberty council","mercenary groups","scavenger gangs","terrorist groups","outside forces",
 
 //Station Locations
 	"the gate","the bar","the emergency storage","the transfer shuttle","the tool storage","the bar","the chapel",

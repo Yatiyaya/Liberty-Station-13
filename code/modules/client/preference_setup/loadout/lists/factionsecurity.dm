@@ -1,4 +1,12 @@
 /datum/gear/factionsecurity
+	display_name = "Armored Ushanka"
+	path = /obj/item/clothing/head/helmet/marshal/ushanka
+	allowed_roles = list(JOBS_SECURITY)
+	slot = slot_head
+	sort_category = "Faction: Security"
+	cost = 0
+
+/datum/gear/factionsecurity
 	display_name = "winter coat, security"
 	path = /obj/item/clothing/suit/hooded/wintercoat/security
 	allowed_roles = list(JOBS_SECURITY)
@@ -71,6 +79,16 @@
 /datum/gear/factionsecurity/gorka_ih
 	display_name = "gorka jacket, security"
 	path = /obj/item/clothing/suit/gorka/toggle/gorka_ih
+	slot = slot_wear_suit
+
+/datum/gear/factionsecurity/afghanka_pants
+	display_name = "afghanka pants, security"
+	path = /obj/item/clothing/under/rank/security/afghanka_pants
+	slot = slot_w_uniform
+
+/datum/gear/factionsecurity/afghanka_jacket
+	display_name = "afghanka jacket, security"
+	path = /obj/item/clothing/suit/storage/toggle/afghanka_watch
 	slot = slot_wear_suit
 
 /datum/gear/factionsecurity/gorkasecurity

@@ -409,6 +409,28 @@
 
 /* Solidification */
 
+/datum/chemical_reaction/white_phos_block
+	result = null
+	required_reagents = list("phosphorus" = 4, "carbon" = 1, "oil" = 1)
+	maximum_temperature = 425
+	minimum_temperature = 380
+	result_amount = 1
+	mix_message = "The solution solidifies into a pale, yellowy block."
+
+/datum/chemical_reaction/white_phos_block/on_reaction(var/datum/reagents/holder, var/created_volume)
+	new /obj/item/wp_block(get_turf(holder.my_atom), created_volume)
+	return
+
+/datum/chemical_reaction/hexogen
+	result = null
+	required_reagents = list("ethanol" = 10, "plasticide" = 0.5, "water" = 0.1)
+	result_amount = 1
+	mix_message = "The solution solidifies into a malleable block."
+
+/datum/chemical_reaction/hexogen/on_reaction(var/datum/reagents/holder, var/created_volume)
+	new /obj/item/rdx_block(get_turf(holder.my_atom), created_volume)
+	return
+
 /datum/chemical_reaction/plasmasolidification
 	result = null
 	required_reagents = list("iron" = 5, "frostoil" = 5, "plasma" = 20)

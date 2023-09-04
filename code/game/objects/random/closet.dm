@@ -105,3 +105,19 @@
 				/obj/structure/closet/random_medsupply = 3,
 				/obj/structure/closet/random_hostilemobs/beacon = 8
 			))
+
+/obj/random/closet_syndieloot
+	name = "random syndicate locker"
+	icon_state = "closet-red"
+	has_postspawn = TRUE
+
+/obj/random/closet_syndieloot/item_to_spawn()
+	return pickweight(list(/obj/structure/closet/syndicate/suit = 8,
+				/obj/structure/closet/syndicate/personal = 5,
+				/obj/structure/closet/syndicate/nuclear = 3,))
+
+/obj/random/closet_syndieloot/low_chance
+	name = "low chance random syndicate locker"
+	icon_state = "closet-red-low"
+	spawn_nothing_percentage = 60
+

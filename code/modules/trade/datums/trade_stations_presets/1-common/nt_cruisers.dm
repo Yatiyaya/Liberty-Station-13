@@ -2,8 +2,8 @@
 	icon_states = "nt_cruiser"
 	markup = RARE_GOODS	// dept-specific stuff should be more expensive for guild
 	name_pool = list(
-		"CAV 'Faith'" = "Church of Bonfire Vessel 'Faith': \"We are currently resupplying from Liberty, but we can sell a few items from our stock.\"",
-		"CAV 'Hope'" = "Church of Bonfire Vessel 'Hope': \"We're in the system for the next few hours before we make a round trip to the confederacy, we're certainly willing to sell our goods.\""
+		"CAV 'Faith'" = "Absolutism Vessel 'Faith': \"We are currently resupplying from Liberty, but we can sell a few items from our stock.\"",
+		"CAV 'Hope'" = "Absolutism Vessel 'Hope': \"We're in the system for the next few hours before we make a round trip to the confederacy, we're certainly willing to sell our goods.\""
 		)
 	icon_states = list("nt_frigate", "ship")
 	uid = "nt_basic"
@@ -20,7 +20,7 @@
 		"Biomatter products" = list(
 			/obj/item/reagent_containers/food/snacks/meat,
 			/obj/item/reagent_containers/food/drinks/milk,
-			/obj/item/soap/church,
+			/obj/item/soap/bonfire,
 			/obj/item/storage/pouch/medium_generic,
 			/obj/item/storage/pouch/large_generic,
 			/obj/item/storage/pouch/medical_supply,
@@ -106,7 +106,7 @@
 		),
 		"Wine" = list(
 			/obj/item/reagent_containers/food/drinks/cans/cahors/cargo,
-			/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo
+			/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo
 		),
 		"Seeds and Exodic Seeds" = list(
 			/obj/item/seeds/chiliseed,
@@ -145,8 +145,8 @@
 /obj/item/reagent_containers/food/drinks/cans/cahors/cargo/New()
 	price_tag = 60
 
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo
 	price_tag = 1200
 
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo/New()
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew/cargo/New()
 	price_tag = 100

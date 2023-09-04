@@ -143,6 +143,16 @@
 		/obj/item/ammo_casing/flare
 		)
 
+/obj/item/storage/pouch/engineering_tools/union
+
+/obj/item/storage/pouch/engineering_tools/union/populate_contents()
+	new /obj/item/device/lighting/toggleable/flashlight(src)
+	new /obj/item/cell/small(src)
+	new /obj/item/extinguisher/mini(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/clothing/head/welding(src)
+	new /obj/item/tool/weldingtool(src)
+
 /obj/item/storage/pouch/janitor_supply
 	name = "janitorial supply pouch"
 	desc = "Can hold janitorial equipment, but only about six pieces of them."
@@ -217,7 +227,6 @@
 	name = "vial pouch"
 	desc = "Can hold seven cylindrical and small items, including but not limiting to flares, glowsticks, syringes and even hatton tubes or rockets. Tho the branding on this wants you to only really use it with vial."
 
-
 /obj/item/storage/pouch/tubular/update_icon()
 	..()
 	cut_overlays()
@@ -238,9 +247,6 @@
 		/obj/item/reagent_containers/food/snacks/cube/gun,
 		)
 
-/obj/item/storage/pouch/grow_a_gun/New()
-	populate_contents()
-
 /obj/item/storage/pouch/grow_a_gun/populate_contents()
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/food/snacks/cube/gun(src)
@@ -251,7 +257,6 @@
 	cut_overlays()
 	if(contents.len)
 		add_overlay(image('icons/inventory/pockets/icon.dmi', "grow_[contents.len]"))
-
 
 /obj/item/storage/pouch/pistol_holster
 	name = "pistol holster"
@@ -448,10 +453,9 @@
 
 /obj/item/storage/pouch/baton_holster/telebaton
 
-/obj/item/storage/pouch/baton_holster/telebaton/New()
-	new/obj/item/melee/telebaton(src)
+/obj/item/storage/pouch/baton_holster/telebaton/populate_contents()
+	new /obj/item/melee/telebaton(src)
 	update_icon()
-	. = ..()
 
 /obj/item/storage/pouch/baton_holster/update_icon()
 	..()

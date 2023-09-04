@@ -2,7 +2,7 @@
 /datum/individual_objective/bad_technology
 	name = "Heretical Technology"
 	limited_antag = TRUE
-	req_cruciform = TRUE
+	req_hearthcore = TRUE
 	rarity = 4
 	var/obj/item/target
 
@@ -31,7 +31,7 @@
 /datum/individual_objective/convert
 	name = "Convert"
 	limited_antag = TRUE
-	req_cruciform = TRUE
+	req_hearthcore = TRUE
 	rarity = 4
 	var/mob/living/carbon/human/target
 
@@ -40,7 +40,7 @@
 		return FALSE
 	var/list/candidates = (GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - L
 	for(var/mob/living/carbon/human/H in candidates)
-		if(!is_neotheology_disciple(H))
+		if(!is_custodian_of_bonfire(H))
 			return TRUE
 	return FALSE
 
@@ -48,7 +48,7 @@
 	..()
 	var/list/valid_targets = list()
 	for(var/mob/living/carbon/human/H in ((GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - mind_holder))
-		if(is_neotheology_disciple(H))
+		if(is_custodian_of_bonfire(H))
 			continue
 		valid_targets += H
 	target = pick(valid_targets)
@@ -56,7 +56,7 @@
 	RegisterSignal(target, COMSIG_HUMAN_INSTALL_IMPLANT, .proc/task_completed)
 
 /datum/individual_objective/convert/task_completed(mob/living/carbon/human/H, obj/item/implant)
-	if(H == target && istype(implant, /obj/item/implant/core_implant/cruciform))
+	if(H == target && istype(implant, /obj/item/implant/core_implant/hearthcore))
 		completed()
 
 /datum/individual_objective/convert/completed()
@@ -66,9 +66,9 @@
 */
 /datum/individual_objective/spread
 	name = "Spread the Word"
-	req_cruciform = TRUE
+	req_hearthcore = TRUE
 	req_department = list(DEPARTMENT_CHURCH)
-	var/datum/ritual/ritual
+	var/datum/lecture/ritual
 	var/ritual_name = "Revelation"
 	var/mob/living/carbon/human/target
 
@@ -77,7 +77,7 @@
 		return FALSE
 	var/list/candidates = (GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - L
 	for(var/mob/living/carbon/human/H in candidates)
-		if(!is_neotheology_disciple(H))
+		if(!is_custodian_of_bonfire(H))
 			return TRUE
 	return FALSE
 
@@ -85,27 +85,27 @@
 	..()
 	var/list/valid_targets = list()
 	for(var/mob/living/carbon/human/H in ((GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - mind_holder))
-		if(is_neotheology_disciple(H))
+		if(is_custodian_of_bonfire(H))
 			continue
 		valid_targets += H
 	target = pick(valid_targets)
 	desc = "[target] may need spiritual guidance, using [ritual_name] will give peace of mind to you and hopefully them."
-	ritual = GLOB.all_rituals[ritual_name]
-	RegisterSignal(mind_holder, COMSIG_RITUAL, .proc/task_completed)
+	ritual = GLOB.all_lectures[ritual_name]
+	RegisterSignal(mind_holder, COMSIG_LECTURE, .proc/task_completed)
 
-/datum/individual_objective/spread/task_completed(datum/ritual/cruciform/R, mob/M)
+/datum/individual_objective/spread/task_completed(datum/lecture/hearthcore/R, mob/M)
 	if(R.type == ritual.type && M == target)
 		completed()
 
 /datum/individual_objective/spread/completed()
 	if(completed) return
-	UnregisterSignal(mind_holder, COMSIG_RITUAL)
+	UnregisterSignal(mind_holder, COMSIG_LECTURE)
 	..()
 
 /datum/individual_objective/sanctify
 	name = "Sanctify"
 	req_department = list(DEPARTMENT_CHURCH)
-	req_cruciform = TRUE
+	req_hearthcore = TRUE
 	var/area/target_area
 
 /datum/individual_objective/sanctify/assign()

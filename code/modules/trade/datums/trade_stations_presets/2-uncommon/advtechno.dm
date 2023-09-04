@@ -58,11 +58,11 @@
 	)
 	offer_types = list(
 		/obj/item/oddity/techno = offer_data("unknown technological part", 1600, 2),
-		/obj/item/tool/crowbar/onestar = offer_data("similacrum crowbar", 1500, 3),
-		/obj/item/tool/pickaxe/onestar = offer_data("similacrum pickaxe", 1500, 3),
-		/obj/item/tool/pickaxe/jackhammer/onestar = offer_data("similacrum jackhammer", 1500, 3),
-		/obj/item/tool/screwdriver/combi_driver/onestar = offer_data("similacrum combi driver", 2000, 3),
-		/obj/item/tool/weldingtool/onestar  = offer_data("similacrum welding tool", 2000, 3),
+		/obj/item/tool/crowbar/onestar = offer_data("simulacrum crowbar", 1500, 3),
+		/obj/item/tool/pickaxe/onestar = offer_data("simulacrum pickaxe", 1500, 3),
+		/obj/item/tool/pickaxe/jackhammer/onestar = offer_data("simulacrum jackhammer", 1500, 3),
+		/obj/item/tool/screwdriver/combi_driver/onestar = offer_data("simulacrum combi driver", 2000, 3),
+		/obj/item/tool/weldingtool/onestar  = offer_data("simulacrum welding tool", 2000, 3),
 		/obj/item/tool_upgrade/augment/repair_nano = offer_data("repair nano", 5000, 1),
-		/obj/item/organ/external/robotic/one_star = offer_data("similacrum external prosthetic", 2700, 4)			// base price: 900
+		/obj/item/organ/external/robotic/one_star = offer_data("simulacrum external prosthetic", 2700, 4)			// base price: 900
 	)

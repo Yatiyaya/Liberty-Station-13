@@ -157,7 +157,7 @@
 /area/liberty/security/armory)
 "aav" = (
 /obj/machinery/mech_recharger,
-/obj/mecha/combat/dreadnought/security,
+/obj/mecha/combat/juggernaut/security,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/armory)
 "aaw" = (
@@ -5947,7 +5947,7 @@
 /turf/simulated/floor/tiled/steel/violetcorener,
 /area/liberty/pros/shuttle)
 "amY" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/floor_decal/industrial/outline,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
@@ -6471,7 +6471,7 @@
 	name = "Science Expedition prep"
 	})
 "aoe" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/bioreactor)
 "aof" = (
@@ -9855,7 +9855,7 @@
 	dir = 9;
 	pixel_y = 0
 	},
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "awe" = (
@@ -12826,7 +12826,7 @@
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "aCz" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "aCA" = (
@@ -13443,13 +13443,13 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/hallway/surface/section2)
 "aDR" = (
-/obj/machinery/multistructure/bioreactor_part/platform{
+/obj/machinery/multistructure/bonfire_part/platform{
 	make_glasswalls_after_creation = 1
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aDS" = (
-/obj/machinery/multistructure/bioreactor_part/unloader,
+/obj/machinery/multistructure/bonfire_part/unloader,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aDT" = (
@@ -13470,9 +13470,9 @@
 /obj/random/junkfood,
 /obj/random/junkfood,
 /obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "aDV" = (
@@ -13590,7 +13590,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "aEm" = (
-/obj/machinery/multistructure/bioreactor_part/biotank_platform,
+/obj/machinery/multistructure/bonfire_part/scorchtank_platform,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aEn" = (
@@ -13707,7 +13707,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "aED" = (
-/obj/machinery/multistructure/bioreactor_part/loader,
+/obj/machinery/multistructure/bonfire_part/loader,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aEE" = (
@@ -13720,11 +13720,11 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/crew_quarters/hydroponics/garden)
 "aEF" = (
-/obj/machinery/multistructure/bioreactor_part/console,
+/obj/machinery/multistructure/bonfire_part/console,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aEG" = (
-/obj/machinery/multistructure/bioreactor_part/bioport,
+/obj/machinery/multistructure/bonfire_part/port,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "aEH" = (
@@ -13822,7 +13822,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/closet/wall_mounted/firecloset{
 	pixel_y = 32
 	},
@@ -14515,12 +14515,12 @@
 /area/liberty/crew_quarters/hydroponics/garden)
 "aGB" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aGC" = (
@@ -14646,9 +14646,9 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "aGT" = (
@@ -14842,19 +14842,19 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "aHq" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "aHr" = (
@@ -15385,7 +15385,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/absolutism/vectorrooms)
 "aIF" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27;
 	pixel_y = 0
@@ -16484,7 +16484,7 @@
 /area/liberty/hallway/surface/section2)
 "aLk" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "aLl" = (
@@ -17267,7 +17267,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aMN" = (
@@ -17979,7 +17979,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "aOA" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/command/prime)
 "aOB" = (
@@ -18295,7 +18295,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "aPt" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/chapel)
 "aPu" = (
@@ -20622,7 +20622,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/farm)
 "aXL" = (
-/obj/machinery/smartfridge/kitchen/church,
+/obj/machinery/smartfridge/kitchen/custodians,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "aXM" = (
@@ -22148,7 +22148,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "bcB" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/hydroponics/garden)
 "bcC" = (
@@ -22458,7 +22458,7 @@
 	name = "Interrogation"
 	})
 "bdu" = (
-/obj/machinery/smartfridge/kitchen/church/public,
+/obj/machinery/smartfridge/kitchen/custodians/public,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/hydroponics/garden)
 "bdv" = (
@@ -23183,7 +23183,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "bft" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/crew_quarters/hydroponics/garden)
 "bfu" = (
@@ -25062,7 +25062,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "bmv" = (
@@ -26823,7 +26823,7 @@
 /area/liberty/command/crematorium)
 "bsE" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/crematorium)
 "bsF" = (
@@ -32215,7 +32215,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/crematorium)
 "huA" = (
@@ -32561,7 +32561,7 @@
 	dir = 1;
 	pixel_y = 0
 	},
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -33267,7 +33267,7 @@
 /area/liberty/medical/medeva)
 "ooa" = (
 /obj/structure/table/standard,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/security/hut_cell2)
 "oyA" = (
@@ -33444,7 +33444,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/security/tactical)
 "pvF" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/chapel)
@@ -33940,7 +33940,7 @@
 /area/liberty/security/laber_area)
 "sVU" = (
 /obj/structure/table/standard,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/security/hut_cell1)
 "sYp" = (
@@ -34095,7 +34095,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/laber_area)
 "ufb" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = 32
 	},

@@ -1,6 +1,6 @@
-/datum/trade_station/similacrum_ship
+/datum/trade_station/simulacrum_ship
 	icon_states = list("similacrum_frigate", "ship")
-	uid = "similacrum"
+	uid = "simulacrum"
 	tree_x = 0.66
 	tree_y = 0.7
 	start_discovered = FALSE
@@ -9,8 +9,8 @@
 	recommendations_needed = 2
 	hidden_inv_threshold = 2000
 	recommendation_threshold = 4000
-	stations_recommended = list("similacrum_printer")
-	name_pool = list("Tuixiaoayuan" = "A still functioning, heavily armed similacrum ship that still produces and offers wares, likely entirely unaware of Similacrum Robotics collapse given its \
+	stations_recommended = list("simulacrum_printer")
+	name_pool = list("Tuixiaoayuan" = "A still functioning, heavily armed Simulacrum ship that still produces and offers wares, likely entirely unaware of Simulacrum Robotics collapse given its \
 	automated. It's a wonder it hasn't been raided, but then again it has guns that could level a planet on it. Plus, it hardly offers things of real value...")
 	inventory = list(
 		"Fuzhuang" = list(

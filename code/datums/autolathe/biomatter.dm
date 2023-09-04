@@ -13,7 +13,7 @@
 
 /datum/design/bioprinter/soap
 	name = "Soap"
-	build_path = /obj/item/soap/church
+	build_path = /obj/item/soap/bonfire
 
 //[NUTRIMENTS]
 /datum/design/bioprinter/ez
@@ -61,15 +61,15 @@
 	build_path = /obj/item/storage/backpack/satchel
 
 /datum/design/bioprinter/leather/storage/backpack/satchel/custodian
-	name = "Cruciform  Satchel"
+	name = "Custodian Satchel"
 	build_path = /obj/item/storage/backpack/satchel/custodian
 
 /datum/design/bioprinter/leather/storage/backpack/custodian
-	name = "Cruciform Backpack"
+	name = "Custodian Backpack"
 	build_path = /obj/item/storage/backpack/custodian
 
 /datum/design/bioprinter/leather/storage/backpack/sport/custodian
-	name = "Cruciform Sport Backpack"
+	name = "Custodian Sport Backpack"
 	build_path = /obj/item/storage/backpack/sport/custodian
 
 /datum/design/bioprinter/leather/holster
@@ -133,14 +133,14 @@
 	name = "Flameshield Suit"
 	build_path = /obj/item/clothing/suit/armor/custodian/firesuit
 
-/datum/design/bioprinter/belt/utility/neotheology
+/datum/design/bioprinter/belt/utility/custodian_belt
 	name = "Bonfire Knightly Belt"
 	build_path = /obj/item/storage/belt/utility/custodian
 	materials = null
 
 /datum/design/bioprinter/hearth_lantern
 	name = "Hearth Lantern"
-	build_path = /obj/item/book/ritual/cruciform
+	build_path = /obj/item/book/lectures/hearthlantern
 	materials = null
 
 /datum/design/bioprinter/weapon_mold
@@ -182,10 +182,6 @@
 	name = "Radiance Sigil"
 	build_path = /obj/item/stack/mold_kit/radiance_sigil
 
-/datum/design/autolathe/tool_upgrade/sanctifier
-	name = "NT Sanctifier"
-	build_path = /obj/item/tool_upgrade/augment/sanctifier
-
 // Total cost: 25 bio silk (stacks and kit itself), 5 biomatter (splints), 5 steel and 5 plastic (syrettes)
 /datum/design/bioprinter/custodian_healthpack
 	name = "Bonfire Medkit"
@@ -201,6 +197,9 @@
 	name = "Bonfire Burnpack"
 	build_path = /obj/item/stack/medical/ointment/advanced/nt
 
+/datum/design/bioprinter/custodian_soap
+	name = "Bonfire Soap"
+	build_path = /obj/item/soap/bonfire
 
 // end of Custodian disk designs //
 
@@ -229,35 +228,39 @@
 	name = "Organic muscle implant"
 	build_path = /obj/item/biogoop/muscle
 
-//[/CRUCIFORM UPGRAED]
+//[HEARTHCORE UPGRADES]
 
-/datum/design/autolathe/cruciform_upgrade
-	build_path = /obj/item/cruciform_upgrade
+/datum/design/autolathe/hearthcore_upgrade
+	build_path = /obj/item/hearthcore_upgrade
 	materials = list(MATERIAL_CARBON_FIBER = 24)
 
-/datum/design/autolathe/cruciform_upgrade/natures_blessing
-	name = "Natures blessing"
-	build_path = /obj/item/cruciform_upgrade/natures_blessing
+/datum/design/autolathe/hearthcore_upgrade/natures_blessing
+	name = "Nature's blessing"
+	build_path = /obj/item/hearthcore_upgrade/natures_blessing
 
-/datum/design/autolathe/cruciform_upgrade/faiths_shield
-	name = "Faiths shield"
-	build_path = /obj/item/cruciform_upgrade/faiths_shield
+/datum/design/autolathe/hearthcore_upgrade/blazing_aegis
+	name = "Blazing Aegis"
+	build_path = /obj/item/hearthcore_upgrade/blazing_aegis
 
-/datum/design/autolathe/cruciform_upgrade/cleansing_presence
-	name = "Cleansing presence"
-	build_path = /obj/item/cruciform_upgrade/cleansing_presence
+/datum/design/autolathe/hearthcore_upgrade/cleansing_flames
+	name = "Cleansing Flames"
+	build_path = /obj/item/hearthcore_upgrade/cleansing_flames
 
-/datum/design/autolathe/cruciform_upgrade/martyr_gift
-	name = "Martyr gift"
-	build_path = /obj/item/cruciform_upgrade/martyr_gift
+/datum/design/autolathe/hearthcore_upgrade/martyr_gift
+	name = "Martyr's gift"
+	build_path = /obj/item/hearthcore_upgrade/martyr_gift
 
-/datum/design/autolathe/cruciform_upgrade/wrath_of_god
+/datum/design/autolathe/hearthcore_upgrade/burning_fury
 	name = "Wrath of god"
-	build_path = /obj/item/cruciform_upgrade/wrath_of_god
+	build_path = /obj/item/hearthcore_upgrade/burning_fury
 
-/datum/design/autolathe/cruciform_upgrade/speed_of_the_chosen
+/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness
 	name = "Speed of the chosen"
-	build_path = /obj/item/cruciform_upgrade/speed_of_the_chosen
+	build_path = /obj/item/hearthcore_upgrade/embers_of_swiftness
+
+/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
+	name = "Phoenix Edict"
+	build_path = /obj/item/hearthcore_upgrade/phoenix_edict
 
 //[/POUCHES]
 /datum/design/bioprinter/pouch
@@ -323,12 +326,8 @@
 	name = "Universal sling"
 	build_path = /obj/item/clothing/suit/sling
 
-/datum/design/autolathe/gun_upgrade/barrel/excruciator
-	name = "New Testament \"EXCRUCIATOR\" giga lens"
-	build_path = /obj/item/gun_upgrade/barrel/excruciator
+/datum/design/bioprinter/vacuum_cleaner
+	name = "\"Swift 200\" vacuum cleaner"
+	build_path = /obj/item/vacuum_cleaner
 
-/datum/design/bioprinter/holyvacuum
-	name = "\"Tersus\" Vacuum Cleaner"
-	build_path = /obj/item/holyvacuum
-	materials = list(MATERIAL_BIO_SILK = 2)
 

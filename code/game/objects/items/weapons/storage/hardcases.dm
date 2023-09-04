@@ -429,8 +429,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 
 /obj/item/gunbox/chief //credit goes to Hestia both for the idea of loadout gun box and for the code, and sprite.
-	name = "Deputy Cheif's equipment kit"
-	desc = "A secure box containing the Warrant Officers primary weapon."
+	name = "Deputy Chief's equipment kit"
+	desc = "A secure box containing the Deputy Chief's primary weapon."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "rifle_case"
 

@@ -1134,8 +1134,8 @@
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -1149,8 +1149,8 @@
 "fE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -1158,8 +1158,8 @@
 "fO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
+/obj/random/mecha_utility,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -2591,7 +2591,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "on" = (
-/obj/random/mecha_equipment,
+/obj/random/mecha_utility,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "oo" = (
@@ -7364,7 +7364,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "GD" = (
 /obj/effect/decal/cleanable/generic,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "GE" = (
@@ -7447,7 +7447,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "GR" = (
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "GS" = (

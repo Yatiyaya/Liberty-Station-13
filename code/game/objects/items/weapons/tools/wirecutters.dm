@@ -52,7 +52,7 @@
 	price_tag = 20
 
 /obj/item/tool/wirecutters/onestar_pliers //hybrid of wirecutters, wrench and cautery now in plat!
-	name = "Similacrum Robotics pliers"
+	name = "Simulacrum Robotics pliers"
 	desc = "A multitool from the world of maintenance. Useful for pinching, clamping, and occasional bolt turning. \
 			Being slightly magnetized, the metal coating and refined tip help for balance, making all who use \
 			it know why its considered the best pair of plies to exist in the in the market to date "
@@ -65,7 +65,7 @@
 	max_upgrades = 2
 	workspeed = 1.5
 	price_tag = 300
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/tool/wirecutters/attack(mob/living/carbon/C as mob, mob/user as mob)
 	if(istype(C) && user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))

@@ -267,7 +267,7 @@
 /obj/item/integrated_circuit/output/text_to_speech/direct_message
 	name = "personal message circuit"
 	desc = "Takes any string as an input and will connect to brain/borg brain via antennas in body to sends message to person, if they are near"
-	extended_desc = "This unit is more advanced than the plain speaker circuit, able to transpose any valid text to speech, but person need to have cruciform inside his head"
+	extended_desc = "This unit is more advanced than the plain speaker circuit, able to transpose any valid text to speech, but person needs to have a Hearthcore implanted"
 	complexity = 14
 	inputs = list(
 		"to speech" = IC_PINTYPE_STRING,
@@ -295,7 +295,7 @@
 		message_before_tts = "Your antenna reciving signal: "
 	if(ishuman(L))
 		var/mob/living/carbon/human/h = L
-		var/obj/item/implant/core_implant/cruciform/S = h.get_core_implant(/obj/item/implant/core_implant/cruciform)
+		var/obj/item/implant/core_implant/hearthcore/S = h.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(S)
 			message_before_tts = "Your [S] reciving signal: "
 	if(istext(message_before_tts))

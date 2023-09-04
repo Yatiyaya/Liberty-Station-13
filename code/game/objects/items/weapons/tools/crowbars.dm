@@ -12,6 +12,7 @@
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 	hitsound = 'sound/weapons/smash.ogg'
 	tool_qualities = list(QUALITY_PRYING = 35, QUALITY_DIGGING = 10, QUALITY_HAMMERING = 10)
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // No.
 	price_tag = 15
 
 	has_alt_mode = TRUE
@@ -38,7 +39,7 @@
 	price_tag = 5
 
 /obj/item/tool/crowbar/onestar
-	name = "Similacrum Robotics crowbar"
+	name = "Simulacrum Robotics crowbar"
 	desc = "Looks like a classic one, but more durable."
 	icon_state = "one_star_crowbar"
 	item_state = "onestar_crowbar"
@@ -48,7 +49,7 @@
 	degradation = 2
 	workspeed = 1.2
 	price_tag = 180 // Fancy but still just a crowbar.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 	alt_mode_toggle = "flips the bend of the bar, unlocking its true potential"
 	alt_mode_lossrate = 1.5

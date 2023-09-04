@@ -3,7 +3,7 @@
 	name = "alien machine"
 	desc = "It's some kind of pod with strange wires and gadgets all over it."
 	icon = 'icons/obj/xenoarchaeology.dmi'
-	icon_state = "borgcharger0(old)"
+	icon_state = "ano120"
 	density = 1
 
 	idle_power_usage = 100
@@ -107,7 +107,7 @@
 
 			if(!spawning_types.len || !stored_materials.len)
 				use_power = IDLE_POWER_USE
-				icon_state = "borgcharger0(old)"
+				icon_state = "ano120"
 
 		else if(prob(5))
 			src.visible_message("\blue \icon[src] [src] [pick("clicks","whizzes","whirrs","whooshes","clanks","clongs","clonks","bangs")].")
@@ -145,6 +145,6 @@
 				spawning_types.Add(construction[construction[index]])
 				spawn_progress_time = 0
 				use_power = 2
-				icon_state = "borgcharger1(old)"
+				icon_state = "ano120"
 			else
 				src.visible_message(fail_message)

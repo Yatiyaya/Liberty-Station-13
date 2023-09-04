@@ -67,3 +67,12 @@
 	desc = "A set of carving and sharpening hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "masonry_kit"
 	matter = list(MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+
+/obj/item/dog_armor
+	name = "Foog bloodline armor"
+	desc = "An elohopean design used to protect dogs during urban combat in the past, \
+			in which dogs were crucial to recover the lost and wounded under artillery fire. \
+			Currently, this design is used by the borzois under the Foog bloodline."
+	icon = 'icons/mob/lord_foog.dmi'
+	icon_state = "foog_armor"
+

@@ -1,20 +1,18 @@
 //burning biomass and a few procs used by biomatter manipulation machines
 
 
-//biomatter attack proc, it's used for attacking people with checking their armor
-/proc/scorch_attack(mob/living/victim, var/damage = rand(2, 4))
+//scorch attack proc, used to deal burn damage and firestacks through armor only checking for heat protection
+/proc/scorch_attack(mob/living/victim, var/damage = rand(20, 25))
 	if(istype(victim))
 		var/T = get_turf(victim)
-		var/hazard_damage = -100 + (victim.get_heat_protection() * 100)
+		var/hazard_damage = -100 + (victim.get_heat_protection() * 100) //get heat protection flags, if fully protected, don't trigger an attack
 		if(hazard_damage >= 0)
 			return
-		hazard_damage *= -1
-		hazard_damage *= 0.003 //Are armor still does SMOTHING
-		heatwave(T, 0, 0, 80 * hazard_damage, 3, 0)
+		heatwave(T, 0, 0, damage, 3, 0) //heatwave() already handles damage reduction based on heat protection flags
 
 //this proc spill some biomass on the floor
 //dirs_to_spread - list with dirs where biomass should expand after creation
-/proc/spill_biomass(turf/target_location, var/dirs_to_spread = null)
+/proc/spill_scorch(turf/target_location, var/dirs_to_spread = null)
 	if(locate(/obj/effect/decal/cleanable/scorch_puddle) in target_location)
 		return
 	new /obj/effect/decal/cleanable/scorch_puddle/aoe(target_location)
@@ -39,7 +37,7 @@
 /obj/effect/decal/cleanable/scorch_puddle
 	name = "scorch puddle"
 	desc = "A dangerous scorch puddle, incredibly hot to the touch and dangerous to those not wearing protective gear."
-	icon = 'icons/obj/bioreactor_misc.dmi'
+	icon = 'icons/obj/bonfire_misc.dmi'
 	icon_state = "scorch-1"
 	anchored = TRUE
 	layer = TURF_LAYER + 0.6

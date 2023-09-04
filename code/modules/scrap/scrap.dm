@@ -373,7 +373,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/material_ore,
 		/obj/random/pack/rare = 0.3,
 		/obj/random/tool_upgrade = 1,
-		/obj/random/mecha_equipment = 2
+		/obj/random/mecha_utility = 2
 	)
 
 /obj/structure/scrap/food
@@ -401,7 +401,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	loot_list = list(
 		/obj/random/pack/gun_loot = 8,
 		/obj/random/powercell,
-		/obj/random/mecha_equipment = 2,
+		/obj/random/mecha_utility = 2,
 		/obj/item/material/shard,
 		/obj/item/stack/material/steel/random,
 		/obj/item/stack/material/plasteel/random = 0.6,
@@ -425,7 +425,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/common_oddities = 0.5,
 		/obj/random/pack/rare,//No weight on this, rare loot is pretty likely to appear in scientific scrap
 		/obj/random/tool_upgrade,
-		/obj/random/mecha_equipment)
+		/obj/random/mecha_utility)
 
 /obj/structure/scrap/cloth
 	icontype = "cloth"

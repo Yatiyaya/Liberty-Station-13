@@ -289,6 +289,19 @@
 	update_wear_icon()
 	..()
 
+/obj/item/clothing/head/helmet/marshal/ushanka
+	name = "watchmen Armored Ushanka"
+	desc = "Standard operator gear. an security ushanka with skull protector made out of plasteel and scale armor in the exterior, features an eye shield"
+	icon_state = "LWushanka"
+	icon_state = "LWushanka"
+	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
+	body_parts_covered = HEAD|EYES|EARS
+
+/obj/item/clothing/head/helmet/marshal/ushanka/verb/toggle_style()
+	var/list/options = list()
+	options["Ushanka"] = "LWushanka"
+	options["Ushanka Alt"] = "LWushanka_alt"
+
 //Custodians
 
 
@@ -437,8 +450,9 @@
 /obj/item/clothing/head/helmet/technomancersuit
 	name = "'Mark V' environmental protection helmet"
 	desc = "You feel like this helmet is rare, for some reason."
-	icon_state = "technohelmet"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 60, bio = 100, rad = 100)
+	icon_state = "union worker hat"
+	item_state = "union worker hat"
+	armor_list = list(melee = 35, bullet = 30, energy = 30, bomb = 50, bio = 100, rad = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	flash_protection = FLASH_PROTECTION_MODERATE
@@ -458,7 +472,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["Environmental Default Helmet"] = "technohelmet"
+	options["Environmental Default Helmet"] = "union worker hat"
+	options["Old Environmental Default Helmet"] = "technohelmet"
 	options["Anthro Helmet"] = "technohelmet_anthro"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
@@ -570,7 +585,7 @@
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
-	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Similacrum Robotics"
+	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Simulacrum Robotics"
 	icon_state = "ablative"
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
@@ -923,8 +938,8 @@
 	name = "altyn helmet"
 	desc = "A titanium helmet of serbian origin. Still widely used despite being discontinued."
 	icon_state = "altyn"
-	armor_up = list(melee = 20, bullet = 15, energy = 0, bomb = 15, bio = 0, rad = 0)
-	armor_list = list(melee = 40, bullet = 45, energy = 10, bomb = 35, bio = 0, rad = 0)
+	armor_up = list(melee = 20, bullet = 15, energy = 15, bomb = 15, bio = 0, rad = 0)
+	armor_list = list(melee = 40, bullet = 45, energy = 20, bomb = 35, bio = 0, rad = 0)//was totally weird see a metal helmet without laser protection so it gets a bit
 	siemens_coefficient = 1
 	up = TRUE
 
@@ -967,7 +982,7 @@
 	name = "maska helmet"
 	desc = "\"I do not know who I am, I don\'t know why I\'m here. All I know is that I must kill.\""
 	icon_state = "maska"
-	armor_list = list(melee = 55, bullet = 55, energy = 0, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers
+	armor_list = list(melee = 55, bullet = 55, energy = 20, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers//got the stats changed because made no sense lmao
 
 
 /obj/item/clothing/head/helmet/faceshield/altyn/maska/toggle_style()
@@ -1154,6 +1169,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20) // TODO: Add silk fibroin matter once it's coded in
+	matter = list(MATERIAL_STEEL = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 

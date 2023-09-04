@@ -14,9 +14,9 @@ A small pool of thematically appropriate religious items that are generally chea
 	if (!U || !U.uplink_owner || !U.uplink_owner.current)
 		return FALSE
 
-	//Get the mob and their cruciform implant
+	//Get the mob and their hearthcore implant
 	var/mob/living/L = U.uplink_owner.current
-	var/obj/item/implant/core_implant/cruciform/C = L.get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
 
 	if (!C)
 		return FALSE
@@ -28,18 +28,18 @@ A small pool of thematically appropriate religious items that are generally chea
 /datum/uplink_item/item/neotheology
 	category = /datum/uplink_category/neotheology
 
-//A single blank cruciform implant, nothing special about it. Useful for field baptism
+//A single blank hearthcore implant, nothing special about it. Useful for field baptism
 /datum/uplink_item/item/neotheology/cruciform
-	name = "Cruciform Implant"
+	name = "Hearthcore Implant"
 	item_cost = 1
-	path = /obj/item/implant/core_implant/cruciform
+	path = /obj/item/implant/core_implant/hearthcore
 
 
-//A ritual book, for if you lose your own. Note that all books are the same, the rituals are stored in the cruciform implant
+//A lantern for lectures, for if you lose your own. Note that all books are the same, the lectures are stored in the hearthcore implant
 /datum/uplink_item/item/neotheology/bible
-	name = "Ritual Book"
+	name = "Hearthcore Lantern"
 	item_cost = 1
-	path = /obj/item/book/ritual/cruciform
+	path = /obj/item/book/lectures/hearthlantern
 
 
 /datum/uplink_item/item/neotheology/coat

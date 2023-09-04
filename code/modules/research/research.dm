@@ -259,10 +259,10 @@ Procs:
 	shortname = "Exosuits"
 	desc = "Research into the exosuit fabrication."
 
-/datum/tech/similacrum
-	name = "Similacrum Robotics"
-	shortname = "Similacrum Robotics"
-	desc = "Research into the Similacrum Robotics blueprints and mimicry of their tech"
+/datum/tech/simulacrum
+	name = "Simulacrum Robotics"
+	shortname = "Simulacrum Robotics"
+	desc = "Research into the Simulacrum Robotics blueprints and mimicry of their tech"
 	rare = 5
 	//shown = FALSE
 	//item_tech_req = TECH_ARCANE //So we will never be shown ^_^

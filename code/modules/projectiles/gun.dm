@@ -140,6 +140,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	var/overcharge_level = 0 //What our current overcharge level is. Peaks at overcharge_max
 	var/overcharge_max = 10
 	var/flashlight_attachment = FALSE // Do we have a flashlight attached to us?
+	var/is_crossbow = FALSE // Is the weapon a crossbow? This is for chambering purposes on examine text.
 
 
 /obj/item/gun/proc/toggle_light_verb()

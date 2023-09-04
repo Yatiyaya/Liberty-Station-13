@@ -11,13 +11,8 @@
 	path = /obj/item/clothing/accessory/job/cape/guild
 	slot = slot_wear_suit
 
-/datum/gear/faction_skylight/cloakguildminer
-	display_name = "cloak, Skylight miner"
-	path = /obj/item/clothing/accessory/job/cape/mining
-	slot = slot_wear_suit
-
 /datum/gear/faction_skylight/cloakgm
-	display_name = "cloak, CEO"
+	display_name = "cloak, Club Manager"
 	path = /obj/item/clothing/accessory/job/cape/gm
 	allowed_roles = list("Chief Executive Officer")
 	slot = slot_wear_suit
@@ -67,3 +62,18 @@
 	display_name = "old Skylight jacket"
 	path = /obj/item/clothing/suit/storage/rank/cargo_jacket
 	slot = slot_wear_suit
+
+/datum/gear/faction_skylight/wintercoat
+	display_name = "winter coat, botany"
+	path = /obj/item/clothing/suit/hooded/wintercoat/botany
+	slot = slot_wear_suit
+
+/datum/gear/faction_skylight/cloak
+	display_name = "cloak, service"
+	path = /obj/item/clothing/accessory/job/cape/service
+	slot = slot_wear_suit
+
+/datum/gear/faction_skylight/winterbootsbotany
+	display_name = "winter boots, botany"
+	path = /obj/item/clothing/shoes/winter/botany
+	slot = slot_shoes

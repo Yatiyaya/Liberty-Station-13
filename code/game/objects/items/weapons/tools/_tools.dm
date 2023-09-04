@@ -481,7 +481,10 @@
 		fail_chance = 0
 
 	if(fail_chance >= 100)
-		to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! Considering your skills and this tool, it is impossible."))
+		if(!user.stats.getPerk(PERK_NO_OBFUSCATION))
+			to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! Considering your skills and this tool, it is impossible."))
+		else
+			to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! The odds of succes are [fail_chance], this is infact impossible."))
 		return TOOL_USE_FAIL
 	if(prob(fail_chance))
 		var/chanceMessage = "near imposible"
@@ -495,7 +498,12 @@
 			chanceMessage = "small"
 		else if(fail_chance < 95)
 			chanceMessage = "tiny"
-		to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! There was a [chanceMessage] chance to succeed."))
+
+		if(!user.stats.getPerk(PERK_NO_OBFUSCATION))
+			to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! There was a [chanceMessage] chance to succeed."))
+		else
+			to_chat(user, SPAN_WARNING("You failed to finish your task with [src.name]! There was a [fail_chance]% chance to fail."))
+
 		return TOOL_USE_FAIL
 
 	return TOOL_USE_SUCCESS
@@ -504,7 +512,7 @@
 
 	if(isbroken)
 		var/T = get_turf(src)
-		log_debug("breakTool 1, I [src.name] am broken and was called more then once, or am sticking around illegal! [jumplink(T)] User:[src]")
+		log_debug("breakTool 1, I [src.name] am broken and was called more than once, or I am still in the world when I should've been deleted! [jumplink(T)] User:[src]")
 		return //We already ran through this once, if we stick around then thats a issue
 
 	isbroken = TRUE
@@ -516,7 +524,7 @@
 
 		to_chat(user, SPAN_DANGER("Your [src] broke!"))
 		new /obj/item/material/shard/shrapnel(user.loc)
-		playsound(get_turf(src), 'sound/effects/impacts/thud1.ogg', 50, 1 -3)
+		playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1, -3)
 		user.unEquip(src)
 		qdel(src)
 		return
@@ -525,7 +533,7 @@
 	if(istype(loc, /obj/machinery/door/airlock))
 		var/obj/machinery/door/airlock/AD = loc
 		AD.take_out_wedged_item()
-	playsound(get_turf(src), 'sound/effects/impacts/thud1.ogg', 50, 1 -3)
+	playsound(get_turf(src), 'sound/items/electronic_assembly_emptying.ogg', 50, 1, -3)
 	qdel(src)
 
 /******************************
@@ -892,7 +900,7 @@
 	item_flags = initial(item_flags)
 	name = initial(name)
 	max_upgrades = initial(max_upgrades)
-	allow_similacrum_mods = initial(allow_similacrum_mods)
+	allow_simulacrum_mods = initial(allow_simulacrum_mods)
 	color = initial(color)
 	sharp = initial(sharp)
 	prefixes = list()

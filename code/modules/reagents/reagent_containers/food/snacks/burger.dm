@@ -10,7 +10,7 @@
 	icon_state = "hburger"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	preloaded_reagents = list("protein" = 6)
+	preloaded_reagents = list("protein" = 10)
 	matter = list(MATERIAL_BIOMATTER = 16)
 
 /obj/item/reagent_containers/food/snacks/cheeseburger
@@ -19,8 +19,9 @@
 	icon_state = "cheeseburger"
 	center_of_mass = list("x"=16, "y"=11)
 	nutriment_desc = list("cheese" = 2, "bun" = 2)
-	nutriment_amt = 2
-	preloaded_reagents = list("protein" = 2)
+	nutriment_amt = 10
+	nutriment_desc = list("meaty perfection" = 4, "cheese" = 3, "fluffy buns" = 1)
+	preloaded_reagents = list("protein" = 8)
 	matter = list(MATERIAL_BIOMATTER = 12)
 	cooked = TRUE
 
@@ -32,8 +33,9 @@
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
 	nutriment_desc = list("bun" = 2)
-	nutriment_amt = 3
-	preloaded_reagents = list("protein" = 3)
+	nutriment_amt = 10
+	nutriment_desc = list("meaty perfection" = 5, "fluffy buns" = 2, "veggies" = 1)
+	preloaded_reagents = list("protein" = 8)
 	matter = list(MATERIAL_BIOMATTER = 13)
 	cooked = TRUE
 
@@ -45,6 +47,8 @@
 	bitesize = 3
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("protein" = 6)
+	nutriment_amt = 6
+	nutriment_desc = list("fried fish" = 3, "fluffy buns" = 3)
 	matter = list(MATERIAL_BIOMATTER = 14)
 	cooked = TRUE
 
@@ -53,18 +57,20 @@
 	desc = "What makes a burger even more perfect? The addition of bacon, of course."
 	icon_state = "baconburger"
 	bitesize = 3
-	preloaded_reagents = list("protein" = 6)
-	nutriment_desc = list("meaty perfection" = 10, "bun" = 2)
+	preloaded_reagents = list("protein" = 8)
+	nutriment_amt = 10
+	nutriment_desc = list("meaty perfection" = 5, "bacon" = 3)
 	matter = list(MATERIAL_BIOMATTER = 14)
 	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/chickenburger
-	name = "poultry fried steak sandwich"
+	name = "fried poultry burger"
 	desc =	"A burger consisting of crispy fried poultry instead of a patty, a classic alternative for those who prefer chicken or whatever tastes closest to it."
 	icon_state = "chickenburger"
 	bitesize = 3
 	preloaded_reagents = list("protein" = 6)
-	nutriment_desc = list("crispy fried poultry" = 10, "bun" = 2)
+	nutriment_amt = 8
+	nutriment_desc = list("crispy fried poultry" = 5, "fluffy buns" = 3)
 	matter = list(MATERIAL_BIOMATTER = 14)
 	cooked = TRUE
 
@@ -100,7 +106,7 @@
 	icon_state = "spellburger"
 	filling_color = "#D505FF"
 	bitesize = 2
-	nutriment_desc = list("magic" = 3, "buns" = 3)
+	nutriment_desc = list("magic" = 3, "fluffy buns" = 3)
 	nutriment_amt = 6
 	matter = list(MATERIAL_BIOMATTER = 13)
 
@@ -111,7 +117,7 @@
 	filling_color = "#B572AB"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("buns" = 5)
+	nutriment_desc = list("fluffy buns" = 5)
 	nutriment_amt = 5
 	matter = list(MATERIAL_BIOMATTER = 8)
 
@@ -123,26 +129,30 @@
 
 /obj/item/reagent_containers/food/snacks/bigbiteburger
 	name = "big bite burger"
-	desc = "Forget the Big Mac. THIS is the future! It has big \"R\" stamped on it's bun."
+	desc = "For when a single burger ain't gonna cut it for your hunger."
 	icon_state = "bigbiteburger"
 	filling_color = "#E3D681"
-	bitesize = 3
+	bitesize = 2
 	center_of_mass = list("x"=16, "y"=11)
-	nutriment_desc = list("buns" = 4)
-	nutriment_amt = 4
+	nutriment_desc = list("fluffy buns" = 4)
+	nutriment_amt = 10
 	preloaded_reagents = list("protein" = 10)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 60)
 
 /obj/item/reagent_containers/food/snacks/superbiteburger
 	name = "super bite burger"
-	desc = "This is a mountain of a burger. FOOD!"
+	desc = "A double, triple Bossy Deluxe, on a raft, four-by-four animal-style, \
+			extra shingles with a shimmy and a squeeze, light axle grease, made to cry, \
+			burned, and left to swim. A monstruosity of an order that only the most starved \
+			colonist would be able to eat properly."
 	icon_state = "superbiteburger"
 	filling_color = "#CCA26A"
-	bitesize = 10
+	bitesize = 1 // Eat this slow, it's enormous.
 	center_of_mass = list("x"=16, "y"=3)
-	nutriment_desc = list("buns" = 25)
+	nutriment_desc = list("fluffy buns" = 25)
 	nutriment_amt = 25
+	nutriment_desc = list("artery clogging burgers" = 10, "onion jam" = 5, "onion, lettuce and tomato" = 5, "pickles" = 5)
 	preloaded_reagents = list("protein" = 40) // CALORIES GALORE! Changing to reflect the materials used and complexity of the recipe - Seb
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 40)

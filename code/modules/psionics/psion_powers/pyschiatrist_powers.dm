@@ -19,7 +19,7 @@
 
 
 	if(pay_power_cost(psi_point_cost))
-		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/cruciform) && L.species?.reagent_tag != IS_SYNTHETIC)
+		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/hearthcore) && L.species?.reagent_tag != IS_SYNTHETIC)
 			usr.visible_message(
 					SPAN_DANGER("[usr] places a hand on [L], their wounds cleanly sealing and healing!"),
 					SPAN_DANGER("You place your hand upon [L], focusing your thoughts and carefully reconstructing each injury with your talented mind!")
@@ -48,14 +48,14 @@
 		return
 
 	if(pay_power_cost(psi_point_cost))
-		if(isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/cruciform) && L.species?.reagent_tag != IS_SYNTHETIC && L.sanity.level >= (L.sanity.max_level - 10))
+		if(isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/hearthcore) && L.species?.reagent_tag != IS_SYNTHETIC && L.sanity.level >= (L.sanity.max_level - 10))
 			psi_points += psi_point_cost //Refunds?
 			usr.visible_message(
 					"[usr] places a hand on [L], a soft hum raidates around them and quickly fades away",
 					"You place your hand upon [L], concentrating [L]'s thoughts... but their mind is already calm."
 					)
 			return
-		else if(isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/cruciform) && L.species?.reagent_tag != IS_SYNTHETIC && L.sanity.level < (L.sanity.max_level - 10))
+		else if(isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/hearthcore) && L.species?.reagent_tag != IS_SYNTHETIC && L.sanity.level < (L.sanity.max_level - 10))
 			usr.visible_message(
 					"[usr] places a hand on [L], a soft hum raidates around them",
 					"You place your hand upon [L], calming [L]'s thoughts!"
@@ -83,7 +83,7 @@
 		usr.show_message(SPAN_DANGER("Your head pulsates with pain as your mind bashes against an unbreakable barrier!"))
 		return
 	if(pay_power_cost(psi_point_cost))
-		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/cruciform) && L.species?.reagent_tag != IS_SYNTHETIC)
+		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/hearthcore) && L.species?.reagent_tag != IS_SYNTHETIC)
 			usr.visible_message(
 					SPAN_DANGER("[usr] places a hand on [L], the air seeming to shimmer for a moment!"),
 					SPAN_DANGER("You place your hand upon [L], focusing your thoughts as you carefully reconstruct any brain damage!")
@@ -111,7 +111,7 @@
 		return
 
 	if(pay_power_cost(psi_point_cost))
-		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/cruciform) && L.species?.reagent_tag != IS_SYNTHETIC)
+		if(L && isliving(L) && !L.get_core_implant(/obj/item/implant/core_implant/hearthcore) && L.species?.reagent_tag != IS_SYNTHETIC)
 			if(L && L.stats.getPerk(PERK_PSION))
 				usr.visible_message(
 						SPAN_DANGER("[usr] places a hand on [L], the air seeming to shimmer for a moment!"),

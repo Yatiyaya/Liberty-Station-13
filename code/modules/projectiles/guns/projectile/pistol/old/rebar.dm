@@ -16,7 +16,7 @@
 	init_recoil = HANDGUN_RECOIL(1)
 	penetration_multiplier = 2
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL, GUN_CALIBRE_12MM, GUN_SILENCABLE)
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 	fire_sound = 'sound/weapons/guns/fire/deckard_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/hpistol_magout.ogg'

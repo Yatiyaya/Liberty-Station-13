@@ -18,10 +18,10 @@
 
 /obj/item/projectile/ameridian_shard
 	name = "ameridian shard"
-	damage_types = list(BRUTE = 30) //Were a bit better then 10mm to stay competitive
+	damage_types = list(BRUTE = 21) //Were a bit better then 10mm HP to stay competitive
 	irradiate = 10
-	armor_penetration = 15
-	check_armour = ARMOR_BULLET
+	armor_penetration = 10
+	check_armour = ARMOR_MELEE //We throw a rock not a bullet (makes riot/miner armor valueable)
 	embed = TRUE
 	shrapnel_type = /obj/item/material/shard/ameridian
 	affective_damage_range = 2

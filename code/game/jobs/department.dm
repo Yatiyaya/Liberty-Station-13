@@ -50,25 +50,25 @@
 /datum/department/liberty_watch
 	name = "Liberty Watch Surface Account"
 	id = DEPARTMENT_SECURITY
-	account_initial_balance = 16000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled.
+	account_initial_balance = 16000 //Rounded up to last 4 hours for entire department without extra pay with all slots filled.
 	jobs_in_department = list(JOBS_SECURITY)
 
 /datum/department/terra_therma
 	name = "Terra-Therma Union Operation Funding"
 	id = DEPARTMENT_ENGINEERING
-	account_initial_balance = 15500 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
+	account_initial_balance = 15500 //Rounded up to last 4 hours for entire department without extra pay with all slots filled
 	jobs_in_department = list(JOBS_ENGINEERING)
 
 /datum/department/medical
 	name = "Chirurgeons And Pharmaceutical Sciences Association Operation Funding"
 	id = DEPARTMENT_MEDICAL
-	account_initial_balance = 19000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
+	account_initial_balance = 19000 //Rounded up to last 4 hours for entire department without extra pay with all slots filled
 	jobs_in_department = list(JOBS_MEDICAL)
 
 /datum/department/research
 	name = "Phokorus Science Institute Operation Funding"
 	id = DEPARTMENT_SCIENCE
-	account_initial_balance = 15000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
+	account_initial_balance = 15000 //Rounded up to last 4 hours for entire department without extra pay with all slots filled
 	jobs_in_department = list(JOBS_SCIENCE)
 
 /******************
@@ -78,13 +78,13 @@
 /datum/department/church
 	name = "Custodians of Bonfire Operation Funding"
 	id = DEPARTMENT_CHURCH
-	account_initial_balance = 10000 //Almost enough to last 4 hours without nepotism with all slots filled
+	account_initial_balance = 10000 //Almost enough to last 4 hours without extra pay with all slots filled
 	jobs_in_department = list (JOBS_CHURCH)
 
 /datum/department/service
 	name = "Skylight Syndicate Central Account"
 	id = DEPARTMENT_SERVICE
-	account_initial_balance = 8000 //Almost enough to last 4 hours without nepotism with all slots filled
+	account_initial_balance = 8000 //Almost enough to last 4 hours without extra pay with all slots filled
 	jobs_in_department = list(JOBS_SERVICE)
 
 /datum/department/prospector
@@ -109,9 +109,9 @@
 	id = DEPARTMENT_INDEPENDENT
 	jobs_in_department = list("/datum/job/assistant")
 
-/datum/department/similacrum_positronic
-	name = "Similacrum Robotics"
-	id = DEPARTMENT_SIMILACRUM
+/datum/department/simulacrum_positronic
+	name = "Simulacrum Robotics"
+	id = DEPARTMENT_SIMULACRUM
 	jobs_in_department = list()
 
 

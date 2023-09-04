@@ -174,6 +174,7 @@
 
 /obj/machinery/door/unpowered/simple/wood/New(var/newloc,var/material_name)
 	..(newloc, MATERIAL_WOOD)
+	color = "#824B28"
 
 /obj/machinery/door/unpowered/simple/wood/saloon
 	autoclose = 1
@@ -181,5 +182,6 @@
 
 /obj/machinery/door/unpowered/simple/wood/saloon/New(var/newloc,var/material_name)
 	..(newloc, MATERIAL_WOOD)
+	color = "#824B28"
 	//glass = 1
 	//set_opacity(0)

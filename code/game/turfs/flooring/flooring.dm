@@ -667,6 +667,14 @@ var/list/flooring_types
 	icon_base = "wood"
 	build_type = /obj/item/stack/tile/wood/wood_old
 
+/decl/flooring/wood/tatami
+	name = "tatami mat"
+	desc = "A set of soft tatami mats covering the floor."
+	icon_base = "tatami_full"
+	descriptor = "tatami mats"
+	footstep_sound = "carpet"
+	build_type = /obj/item/stack/tile/wood/tatami
+
 /decl/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel rods."
@@ -1050,6 +1058,14 @@ var/list/flooring_types
 	descriptor = "brick"
 	build_type = /obj/item/stack/tile/bricks
 
+/decl/flooring/industrial/greybricks
+	name = "grey brick floor"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "mortar_bricks"
+	has_base_range = 8
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/greybricks
+
 /decl/flooring/industrial/ornate
 	name = "ornate flooring"
 	desc = "Dark tiles with some painting on it."
@@ -1201,6 +1217,20 @@ var/list/flooring_types
 	icon_base = "concrete_bricks"
 	descriptor = "brick"
 	build_type = /obj/item/stack/tile/bricks_pristine
+
+/decl/flooring/industrial_pristine/greybricks
+	name = "grey bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "mortar_bricks"
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/greybricks_pristine
+
+/decl/flooring/industrial_pristine/greybricksfull
+	name = "grey bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "mortar_bricks"
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/greybricks_pristine/full
 
 /decl/flooring/industrial_pristine/ornate
 	name = "ornate flooring"

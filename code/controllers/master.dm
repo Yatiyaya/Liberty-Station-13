@@ -199,8 +199,6 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	if(delay)
 		sleep(delay)
-	if(tgs_prime)
-		world.TgsInitializationComplete() // Required for TGS to function, do not under any circumstance delete this
 	if(init_sss)
 		init_subtypes(/datum/controller/subsystem, subsystems)
 
@@ -226,6 +224,14 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	if (!current_runlevel)
 		SetRunLevel(1)
+
+	world.TgsInitializationComplete() // Required for TGS to function, do not under any circumstance delete this
+	// Checks if announcing rounds is enabled and if its going to ping a role or not and if so what the role is
+	if(config.tgs_discord_round_announce_round)
+		if(config.tgs_discord_round_announce_round_role)
+			tgs_announce("Initializations complete within [time] second[time == 1 ? "" : "s"]! [config.tgs_discord_round_announce_round_role_tag]")
+		else
+			tgs_announce("Initializations complete within [time] second[time == 1 ? "" : "s"]!")
 
 	// Sort subsystems by display setting for easy access.
 	sortTim(subsystems, /proc/cmp_subsystem_display)

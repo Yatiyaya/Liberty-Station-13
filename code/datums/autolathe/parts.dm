@@ -132,6 +132,10 @@
 	name = "Oxyjet Canister"
 	build_path = /obj/item/tool_upgrade/productivity/oxyjet
 
+/datum/design/autolathe/part/hammer_addon
+	name = "Spiked Plate"
+	build_path = /obj/item/tool_upgrade/augment/hammer_addon
+
 //Excelsior shit
 /datum/design/autolathe/excelsior/laser
 	name = "astrakhan micro-laser"
@@ -174,30 +178,30 @@
 /datum/design/autolathe/prosthesis/excelsior/head
 	build_path = /obj/item/organ/external/robotic/excelsior/head
 
-//Similacrum Robotics
+//Simulacrum Robotics
 
-/datum/design/autolathe/part/similacrum/ai
+/datum/design/autolathe/part/simulacrum/ai
 	name = "nano-integrated AI"
 	build_path = /obj/item/tool_upgrade/augment/ai_tool
 
-/datum/design/autolathe/similacrum/laser
-	name = "similacrum positronic micro-laser"
+/datum/design/autolathe/simulacrum/laser
+	name = "simulacrum positronic micro-laser"
 	build_path = /obj/item/stock_parts/micro_laser/one_star
 
-/datum/design/autolathe/similacrum/matter
-	name = "similacrum positronic matter bin"
+/datum/design/autolathe/simulacrum/matter
+	name = "simulacrum positronic matter bin"
 	build_path = /obj/item/stock_parts/matter_bin/one_star
 
-/datum/design/autolathe/similacrum/module
-	name = "similacrum positronic scanning module"
+/datum/design/autolathe/simulacrum/module
+	name = "simulacrum positronic scanning module"
 	build_path = /obj/item/stock_parts/scanning_module/one_star
 
-/datum/design/autolathe/similacrum/capacitor
-	name = "similacrum positronic capacitor"
+/datum/design/autolathe/simulacrum/capacitor
+	name = "simulacrum positronic capacitor"
 	build_path = /obj/item/stock_parts/capacitor/one_star
 
-/datum/design/autolathe/similacrum/manipulator
-	name = "similacrum positronic manipulator"
+/datum/design/autolathe/simulacrum/manipulator
+	name = "simulacrum positronic manipulator"
 	build_path = /obj/item/stock_parts/manipulator/one_star
 
 /datum/design/autolathe/part/guild_capa

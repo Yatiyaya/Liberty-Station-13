@@ -119,10 +119,10 @@
 		if(maw_efficiency > 1)
 			stat("Gnawing hunger", "[carrion_hunger]/[round(maw_efficiency/10)]")
 
-		var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+		var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(C)
 			stat("Radiance", "[C.power]/[C.max_power]")
-			stat("Channeling Boost", "[C.channeling_boost]")
+			stat("Radiance regeneration multiplier", "[C.channeling_boost]")
 
 		var/obj/item/organ/internal/psionic_tumor/B = random_organ_by_process(BP_PSION)
 		if(B)
@@ -130,7 +130,7 @@
 
 		var/obj/item/organ/internal/nanogate/N = random_organ_by_process(BP_NANOGATE)
 		if(N)
-			stat("Nanites Point", "[N.nanite_points]")
+			stat("Nanite Points", "[N.nanite_points]")
 
 	else if(statpanel("Perks"))
 		for(var/obj/effect/statclick/perkHolder in src.stats.perk_stats)
@@ -1033,9 +1033,9 @@ var/list/rank_prefix = list(\
 	data["rest"] = sanity.resting
 	data["insight_rest"] = sanity.insight_rest
 
-	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
+	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C)
-		data["cruciform"] = TRUE
+		data["hearthcore"] = TRUE
 		//data["righteous_life"] = C.righteous_life
 
 	return data
@@ -1194,9 +1194,9 @@ var/list/rank_prefix = list(\
 			organs_to_readd += C
 
 	var/obj/item/implant/core_implant/CI = get_core_implant()
-	var/checkprefcruciform = FALSE	// To reset the cruciform to original form
+	var/checkprefhearthcore = FALSE	// To reset the hearthcore to original form
 	if(CI)
-		checkprefcruciform = TRUE
+		checkprefhearthcore = TRUE
 		qdel(CI)
 
 	if(from_preference)
@@ -1247,7 +1247,7 @@ var/list/rank_prefix = list(\
 				C.activate()
 				if(mind)
 					C.install_default_modules_by_job(mind.assigned_job)
-					C.access.Add(mind.assigned_job.cruciform_access)
+					C.access.Add(mind.assigned_job.stronghold_access)
 					if(mind.assigned_job.security_clearance)
 						C.security_clearance = mind.assigned_job.security_clearance
 
@@ -1279,7 +1279,7 @@ var/list/rank_prefix = list(\
 				continue
 			new organ_type(src)
 
-		if(checkprefcruciform)
+		if(checkprefhearthcore)
 			if(client)
 				var/datum/category_item/setup_option/core_implant/I = client.prefs.get_option("Core implant")
 				if(I.implant_type && (!mind || mind.assigned_role != "Robot"))
@@ -1287,7 +1287,7 @@ var/list/rank_prefix = list(\
 					C.install(src)
 					C.activate()
 					C.install_default_modules_by_job(mind.assigned_job)
-					C.access.Add(mind.assigned_job.cruciform_access)
+					C.access.Add(mind.assigned_job.stronghold_access)
 					if(mind.assigned_job.security_clearance)
 						C.security_clearance = mind.assigned_job.security_clearance
 

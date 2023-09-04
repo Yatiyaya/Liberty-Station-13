@@ -64,5 +64,5 @@
 			L.visible_message(SPAN_DANGER("\the [src] swarms all over \the [L]!"))
 
 /mob/living/simple_animal/hostile/scarybat/cult
-	faction = "cult"
+	faction = "circhosian" // To prevent them from attacking cultists
 	supernatural = 1

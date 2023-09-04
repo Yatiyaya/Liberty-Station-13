@@ -69,7 +69,7 @@
 	icon_state = "pda-robot"
 
 
-/obj/item/modular_computer/pda/church
+/obj/item/modular_computer/pda/bonfire
 	icon_state = "pda-neo"
 
 

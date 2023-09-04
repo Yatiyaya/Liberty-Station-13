@@ -1,5 +1,5 @@
 /obj/item/clothing
-	name = "clothing"
+	name = "any piece of clothing" // Named like this for crafting purposes
 	siemens_coefficient = 0.9
 	item_flags = DRAG_AND_DROP_UNEQUIP
 	var/flash_protection = FLASH_PROTECTION_NONE	// Sets the item's level of flash protection.
@@ -244,6 +244,8 @@
 	icon_state = "earmuffs"
 	item_state = "earmuffs"
 	slot_flags = SLOT_EARS | SLOT_TWOEARS
+	cold_protection = EARS
+	heat_protection = EARS
 
 
 /obj/item/clothing/ears/earmuffs/mp3
@@ -319,10 +321,12 @@ SEE_PIXELS// if an object is located on an unlit area, but some of its pixels ar
 BLIND     // can't see anything
 */
 /obj/item/clothing/glasses
-	name = "glasses"
+	name = "any glasses"
 	icon = 'icons/inventory/eyes/icon.dmi'
 	w_class = ITEM_SIZE_SMALL
 	body_parts_covered = EYES
+	heat_protection = EYES
+	cold_protection = EYES
 	slot_flags = SLOT_EYES
 	var/vision_flags = 0
 	var/darkness_view = 0//Base human is 2
@@ -333,7 +337,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Gloves
 /obj/item/clothing/gloves
-	name = "gloves"
+	name = "any pair of gloves"
 	gender = PLURAL //Carn: for grammarically correct text-parsing
 	w_class = ITEM_SIZE_SMALL
 	icon = 'icons/inventory/hands/icon.dmi'
@@ -342,6 +346,7 @@ BLIND     // can't see anything
 	var/clipped = 0
 	body_parts_covered = ARMS
 	cold_protection = ARMS
+	heat_protection = ARMS
 	min_cold_protection_temperature = T0C - 5
 	armor_list = list(melee = 10, bullet = 0, energy = 15, bomb = 0, bio = 0, rad = 0)
 	slot_flags = SLOT_GLOVES
@@ -369,7 +374,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Head
 /obj/item/clothing/head
-	name = "head"
+	name = "any headgear"
 	icon = 'icons/inventory/head/icon.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand_hats.dmi',
@@ -377,6 +382,7 @@ BLIND     // can't see anything
 		)
 	body_parts_covered = HEAD
 	cold_protection = HEAD|EARS
+	heat_protection = HEAD|EARS
 	slot_flags = SLOT_HEAD
 	w_class = ITEM_SIZE_SMALL
 
@@ -465,12 +471,13 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Mask
 /obj/item/clothing/mask
-	name = "mask"
+	name = "any mask"
 	icon = 'icons/inventory/face/icon.dmi'
 	body_parts_covered = HEAD
 	slot_flags = SLOT_MASK
 	body_parts_covered = FACE|EYES
 	cold_protection = FACE|EYES
+	heat_protection = FACE|EYES
 	min_cold_protection_temperature = T0C - 5
 	var/muffle_voice = FALSE
 	var/voicechange = FALSE
@@ -483,13 +490,14 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Shoes
 /obj/item/clothing/shoes
-	name = "shoes"
+	name = "any pair of shoes"
 	icon = 'icons/inventory/feet/icon.dmi'
 	desc = "Comfortable-looking shoes."
 	gender = PLURAL //Carn: for grammarically correct text-parsing
 	siemens_coefficient = 0.9
 	body_parts_covered = LEGS
 	cold_protection = LEGS
+	heat_protection = LEGS
 	min_cold_protection_temperature = T0C - 10
 	slot_flags = SLOT_FEET
 
@@ -610,10 +618,11 @@ BLIND     // can't see anything
 //Suit
 /obj/item/clothing/suit
 	icon = 'icons/inventory/suit/icon.dmi'
-	name = "suit"
+	name = "any suit" // Named like this for crafting purposes
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS // Adjust as necessary
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS // Adjust as necessary
 	min_cold_protection_temperature = T0C - 15
 	allowed = list(
 		/obj/item/clipboard,
@@ -643,7 +652,8 @@ BLIND     // can't see anything
 		/obj/item/device/radio,
 		/obj/item/clothing/mask,
 		/obj/item/storage/backpack/guncase,
-		/obj/item/book/ritual/cruciform,
+		/obj/item/book/lectures/hearthlantern,
+		/obj/item/vacuum_cleaner,
 		/obj/item/implant/carrion_spider/holographic)
 	slot_flags = SLOT_OCLOTHING
 	var/blood_overlay_type = "suit"
@@ -676,6 +686,7 @@ BLIND     // can't see anything
 ///////////////////////////////////////////////////////////////////////
 //Under clothing
 /obj/item/clothing/under
+	name = "any kind of jumpsuit"
 	icon = 'icons/inventory/uniform/icon.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand_uniforms.dmi',
@@ -683,6 +694,7 @@ BLIND     // can't see anything
 		)
 	name = "under"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS // Adjust as necessary for pants
 	min_cold_protection_temperature = T0C - 10
 	permeability_coefficient = 0.90

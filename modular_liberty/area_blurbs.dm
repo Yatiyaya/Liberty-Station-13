@@ -55,6 +55,9 @@ ty ilu - bear
 /area/deepmaint
 	narrate = "The twisted labyrinth of deep maints. A demented worn down ruin where things that never should have been shamble in the dust and darkness. Do you hear it? Music echoes in the halls, building to a crescendo we never see."
 
+/area/liberty/maintenance/hideout
+	narrate = "An abandoned shed, the former home of a once known local terrorist long since dead. The smell of gunpowder is still fresh, and faint beeping can be heard from its moldy insides. Famous ramblings of his can be found written on blood and feces on the walls, something about the Industrial Autolathe and its disastrous consequences to the recycling economy..."
+
 //Outside abandoned structures
 
 /area/colony/exposedsun/crashed_shop
@@ -95,16 +98,19 @@ ty ilu - bear
 	narrate = "What was once a humble plot of harrowed land tended perhaps by a local hunter that decided to settle down has, at some point, been overrun by aggressive ursine fauna. With labor and dedication enough, you might make these lands a profitable farmstead once more..."
 
 /area/liberty/dungeon/outside/abandoned_outpost
-	narrate = "The earliest traces of sentient technological settlement on the planet can be found in what's left of this haphazardly built outpost, now fallen to ruin. Be wary of the roaches and spiders that have claimed it as their nest."
+	narrate = "\red <font size=3><b>COME HITHER... EMBRACE ASCENSION...</b></font>"
 
 /area/liberty/dungeon/outside/zoo
 	narrate = "Sounds of different fauna, feral growls and cute squeaks of all kinds, can be heard echoing through the otherwise silent emptiness of this abandoned facility. Their purpose unknown, its maintainers nowhere to be seen, it now stands as the ruins of an animal-holding facility colloquially dubbed as 'The zoo'."
 
-/area/liberty/dungeon/outside/prepper
-	narrate = "A base of operations fallen into disrepair, its former inhabitants hoarding all manner of gear for survival have long since left it to the care of their defensive security systems, now gone haywire. From its insides, a chittering that's definitely not robotic in nature can faintly be heard..."
+/area/liberty/dungeon/outside/prison_exterior
+	narrate = "An old prison complex for high profile criminals, deep into the forest lays abandoned... or is it? Faint sounds of distant gunfire and interslavic cheer echo in the plains surrounding it, giving a hint of the fate that befell its previous inhabitants..."
 
-/area/liberty/dungeon/outside/prepper/vault/entryway
-	narrate = "The ruins of a civilization long lost to unknown causes, nothing but a deafening echo of silence can be heard through the immense hallways of this now abandoned habitational complex. That is, until its synthetic denizens and burrowed spiders start their staked feud for the ownership of this den..."
+/area/liberty/dungeon/outside/prison_interior
+	narrate = "The inside of this prison complex is delerict and with signs of long abandonment, but that does not mean it is completely devoid of life... What could be the reason for these men to take over it? Tread carefully, and find out."
+
+/area/liberty/dungeon/outside/mercenary_base/entryway
+	narrate = "Sounds of gunfire and interslavic cheers and curses echo from the inside of that bunker over yonder. If you aim to raid it for its riches, be ready to receive a warm welcome... in lead."
 
 /area/liberty/dungeon/outside/smuggler_zone
 	narrate = "An outpost of heavily reinforced walls stands strong and imposing, erected in the middle of the forest. Guarded closely by hordes of armed vatgrown void wolves, their low unintelligible grunting a mockery of sapiant life." // It's Caramelldansen.

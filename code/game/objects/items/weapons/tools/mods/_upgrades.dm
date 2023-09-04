@@ -39,7 +39,7 @@
 	var/destroy_on_removal = FALSE
 	var/unique_removal = FALSE 		//Flag for unique removals.
 	var/unique_removal_type 		//What slot do we remove when this is removed? Used for rails.
-	var/similacrum_moding = FALSE
+	var/simulacrum_moding = FALSE
 
 /datum/component/item_upgrade/RegisterWithParent()
 	RegisterSignal(parent, COMSIG_IATTACK, .proc/attempt_install)
@@ -127,7 +127,7 @@
 				return FALSE
 
 	//Bypasses any other checks.
-	if(similacrum_moding && T.allow_similacrum_mods)
+	if(simulacrum_moding && T.allow_simulacrum_mods)
 		return TRUE
 
 	if((req_fuel_cell & REQ_FUEL) && !T.use_fuel_cost)
@@ -228,7 +228,7 @@
 			return FALSE
 
 	//Bypasses any other checks.
-	if(similacrum_moding && G.allow_similacrum_mods)
+	if(simulacrum_moding && G.allow_simulacrum_mods)
 		return TRUE
 
 	for(var/I in req_gun_tags)
@@ -312,6 +312,8 @@
 		T.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		T.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		T.max_heat_protection_temperature += tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		T.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
 
@@ -332,6 +334,8 @@
 		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		R.max_heat_protection_temperature += tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	R.prefixes -= prefix
 	if(tool_upgrades[UPGRADE_ITEMFLAGPLUS])
 		R.item_flags |= tool_upgrades[UPGRADE_ITEMFLAGPLUS]
@@ -355,6 +359,8 @@
 		R.obscuration += tool_upgrades[UPGRADE_OBSCURATION_ARMOR]
 	if(tool_upgrades[UPGRADE_SLOWDOWN_ARMOR])
 		R.slowdown += tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		R.max_heat_protection_temperature -= tool_upgrades[UPGRADE_ARMOR_PYRORES]
 	R.prefixes -= prefix
 	R.updateArmor()
 
@@ -362,7 +368,7 @@
 	if(tool_upgrades[UPGRADE_SANCTIFY])
 		T.aspects += list(SANCTIFIED)
 	if(tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS])
-		T.allow_similacrum_mods = tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS]
+		T.allow_simulacrum_mods = tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS]
 	if(tool_upgrades[UPGRADE_PRECISION])
 		T.precision += tool_upgrades[UPGRADE_PRECISION]
 	if(tool_upgrades[UPGRADE_WORKSPEED])
@@ -414,7 +420,7 @@
 
 /datum/component/item_upgrade/proc/apply_values_gun(var/obj/item/gun/G)
 	if(weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS])
-		G.allow_similacrum_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS]
+		G.allow_simulacrum_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS]
 	if(weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT])
 		G.damage_multiplier *= weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT]
 	if(weapon_upgrades[GUN_UPGRADE_PAIN_MULT])
@@ -482,6 +488,10 @@
 		if(istype(G.loc, /mob))
 			var/mob/user = G.loc
 			user.update_action_buttons()
+
+	if(weapon_upgrades[GUN_UPGRADE_NVISION])
+		G.vision_flags = SEE_INVISIBLE_NOLIGHTING
+
 	if(weapon_upgrades[GUN_UPGRADE_THERMAL])
 		G.vision_flags = SEE_MOBS
 
@@ -607,9 +617,10 @@
 		to_chat(user, SPAN_NOTICE("Changes slowdown by [tool_upgrades[UPGRADE_SLOWDOWN_ARMOR]]"))
 	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
 		to_chat(user, SPAN_NOTICE("Changes stiffness by [tool_upgrades[UPGRADE_STIFFNESS_ARMOR]]"))
-
+	if(tool_upgrades[UPGRADE_ARMOR_PYRORES])
+		to_chat(user, SPAN_NOTICE("Makes the clothing space and fireproof"))
 	if(tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS])
-		to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
+		to_chat(user, SPAN_NOTICE("This mod allows you to install Simulacrum Robotics mods"))
 //tool/gun related examines
 	if(required_qualities.len)
 		to_chat(user, SPAN_WARNING("Requires a tool with one of the following qualities:"))
@@ -776,7 +787,7 @@
 			to_chat(user, SPAN_WARNING("Adds a scope slot."))
 
 		if(weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS])
-			to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
+			to_chat(user, SPAN_NOTICE("This mod allows you to install Simulacrum Robotics mods"))
 
 		if(weapon_upgrades[GUN_UPGRADE_ZOOM])
 			var/amount = weapon_upgrades[GUN_UPGRADE_ZOOM]
@@ -870,6 +881,7 @@
 /obj/item/tool_upgrade
 	name = "tool upgrade"
 	icon = 'icons/obj/tool_upgrades.dmi'
+	icon_state = "placeholder" // Eris fix
 	force = WEAPON_FORCE_HARMLESS
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 200

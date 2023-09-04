@@ -57,10 +57,10 @@
 
 
 /area/turbolift/Mining/underground
-	name = "Liberty Mining - Mining"
+	name = "Mining Lift - Mines"
 	lift_floor_label = "Liberty Mining"
 	lift_floor_name = "Mining"
-	lift_announce_str = "Transition complete. Welcome to Mining.  Please stay safe!"
+	lift_announce_str = "Transition complete. Welcome to the deep mines. Please stay safe!"
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Mining/midlevelOne
@@ -79,7 +79,7 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Mining/colony
-	name = "Liberty Mining - Colony"
+	name = "Mining Lift - Colony Underground"
 	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Colony"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Colony Underground."
@@ -169,17 +169,17 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/mountain/colony
-	name = "Guild Solars - Colony"
+	name = "Union Solars Elevator - Colony"
 	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Engine Room"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Colony Underground."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/mountain/solars
-	name = "Guild Solars - Mountain Top"
+	name = "Union Solars Elevator - Mountain Top"
 	lift_floor_label = "Liberty Mountain Top"
 	lift_floor_name = "Solars"
-	lift_announce_str = "Transition complete. Welcome to the mountain top. Please stay safe!"
+	lift_announce_str = "Transition complete. Welcome to the mountain top solars. Please stay safe!"
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 //RESEARCH ELEVATOR
@@ -217,17 +217,17 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Research/colony
-	name = "Liberty Research - Colony"
+	name = "Phokorus Research Lift - Colony"
 	lift_floor_label = "Liberty Colony"
 	lift_floor_name = "Research Colony"
-	lift_announce_str = "Transition complete."
+	lift_announce_str = "Transition complete. You are now on the Research Wing."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/Research/underground
-	name = "Liberty Research - Underground"
+	name = "Phokorus Research Lift - Underground"
 	lift_floor_label = "Liberty Research"
 	lift_floor_name = "Research Underground"
-	lift_announce_str = "Transition complete"
+	lift_announce_str = "Transition complete. Welcome to the Deep Underground Research Outpost. Have a very safe day."
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 
@@ -237,7 +237,7 @@
 
 //colony
 /area/turbolift/ElevatorOne/underground
-	name = "Liberty Underground"
+	name = "Elevator - Colony Underground"
 	lift_floor_label = "Liberty Underground"
 	lift_floor_name = "Floor Two"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Underground."
@@ -259,7 +259,7 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorOne/surface
-	name = "Liberty Surface"
+	name = "Elevator - Colony Surface"
 	lift_floor_label = "Liberty Surface"
 	lift_floor_name = "Floor One"
 	lift_announce_str = "Transition complete. Welcome to the Surface."
@@ -269,7 +269,7 @@
 
 
 /area/turbolift/ElevatorTwo/underground
-	name = "Liberty Underground"
+	name = "Elevator - Colony Underground"
 	lift_floor_label = "Liberty Underground"
 	lift_floor_name = "Floor Two"
 	lift_announce_str = "Transition complete. Welcome to the Liberty Underground."
@@ -291,7 +291,7 @@
 	base_turf = /turf/simulated/shuttle/floor/mining
 
 /area/turbolift/ElevatorTwo/surface
-	name = "Liberty Surface"
+	name = "Elevator - Colony Surface"
 	lift_floor_label = "Liberty Surface"
 	lift_floor_name = "Floor One"
 	lift_announce_str = "Transition complete. Welcome to the Surface."

@@ -7,8 +7,8 @@
 	filling_color = "#FFE396"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("bread" = 6)
-	nutriment_amt = 6
+	nutriment_desc = list("bread" = 5)
+	nutriment_amt = 5 // One per slice
 	matter = list(MATERIAL_BIOMATTER = 5)
 
 /obj/item/reagent_containers/food/snacks/breadslice
@@ -18,8 +18,10 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#D27332"
 	nutriment_amt = 1
+	nutriment_desc = list("bread" = 1)
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=4)
+	matter = list(MATERIAL_BIOMATTER = 1)
 
 /obj/item/reagent_containers/food/snacks/butterbread
 	name = "buttered toast"
@@ -27,7 +29,7 @@
 	icon_state = "buttertoast"
 	bitesize = 3
 	nutriment_amt = 3
-	nutriment_desc = list("bread" = 6, "butter" = 3)
+	nutriment_desc = list("toasted bread" = 2, "butter" = 1)
 
 /obj/item/reagent_containers/food/snacks/sliceable/creamcheesebread
 	name = "cream cheese bread"
@@ -37,7 +39,7 @@
 	slices_num = 5
 	filling_color = "#FFF896"
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("bread" = 6, "cream" = 3, "cheese" = 3)
+	nutriment_desc = list("bread" = 3, "cream cheese" = 2)
 	nutriment_amt = 5
 	bitesize = 2
 	preloaded_reagents = list("protein" = 15)
@@ -51,20 +53,22 @@
 	filling_color = "#FFF896"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=13)
+	nutriment_amt = 1
+	nutriment_desc = list("bread with cream cheese" = 1)
 	preloaded_reagents = list("protein" = 3)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 2)
 
 /obj/item/reagent_containers/food/snacks/sliceable/meatbread
 	name = "meatbread loaf"
-	desc = "The culinary base of every self-respecting eloquen/tg/entleman."
+	desc = "A loaf of bread with a platitude of meat on the inside."
 	icon_state = "meatbread"
 	slice_path = /obj/item/reagent_containers/food/snacks/meatbreadslice
 	slices_num = 5
 	filling_color = "#FF7575"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("bread" = 10)
+	nutriment_desc = list("meat" = 5, "bread" = 5)
 	nutriment_amt = 10
 	preloaded_reagents = list("protein" = 20)
 	matter = list(MATERIAL_BIOMATTER = 20)
@@ -77,7 +81,9 @@
 	filling_color = "#FF7575"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=13)
-	preloaded_reagents = list("protein" = 4, "nutriment" = 2)
+	preloaded_reagents = list("protein" = 4)
+	nutriment_desc = list("meat" = 1, "bread" = 1)
+	nutriment_amt = 2
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 4)
 
@@ -90,7 +96,7 @@
 	filling_color = "#8AFF75"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("bread" = 10)
+	nutriment_desc = list("xeno meat" = 5, "bread" = 5)
 	nutriment_amt = 10
 	preloaded_reagents = list("protein" = 20)
 	matter = list(MATERIAL_BIOMATTER = 20)
@@ -103,8 +109,8 @@
 	filling_color = "#8AFF75"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=13)
+	nutriment_desc = list("xeno meat" = 1, "bread" = 1)
 	nutriment_amt = 2
-	nutriment_desc = list("bread" = 2)
 	preloaded_reagents = list("protein" = 4)
 	matter = list(MATERIAL_BIOMATTER = 4)
 
@@ -117,7 +123,7 @@
 	filling_color = "#EDE5AD"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=9)
-	nutriment_desc = list("bread" = 10)
+	nutriment_desc = list("banana" = 5, "bread" = 5)
 	nutriment_amt = 10
 	preloaded_reagents = list("banana" = 20)
 	matter = list(MATERIAL_BIOMATTER = 10)
@@ -130,6 +136,8 @@
 	filling_color = "#EDE5AD"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=8)
-	preloaded_reagents = list("banana" = 4, "nutriment" = 4)
+	preloaded_reagents = list("banana" = 4)
+	nutriment_desc = list("banana" = 1, "bread" = 1)
+	nutriment_amt = 2
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 2)

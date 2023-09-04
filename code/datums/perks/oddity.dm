@@ -6,8 +6,8 @@
 /datum/perk/oddity/terrible_fate
 	name = "Terrible Fate"
 	desc = "You realize the painful truth of death. You don't want to die and despise death - dying is a unmistakable horror to you. \
-			Anyone who is around you at the moment of your death must roll a Vigilance sanity check. If they fail, their sanity will instantly be dropped to 0."
-	icon_state = "murder" // https://game-icons.net/1x1/delapouite/chalk-outline-murder.html
+			Anyone who is around you at the moment of your death must roll a Willpower sanity check. If they fail, their sanity will instantly be dropped to 0."
+	icon_state = "terrible_fate" // https://game-icons.net/1x1/lorc/death-zone.html
 
 /datum/perk/oddity/toxic_revenger
 	name = "Fungal Host"
@@ -44,7 +44,7 @@
 	name = "Gunslinger"
 	desc = "The latent effects of an oddity have granted you an insight into firing bullets faster than anyone else; a shame it doesn't make you immune to recoil."
 	gain_text = "Your trigger finger feels more relaxed than ever..."
-	icon_state = "dual_shot" // https://game-icons.net/1x1/delapouite/bullet-impacts.html
+	icon_state = "gunslinger" // https://game-icons.net/1x1/delapouite/reload-gun-barrel.html
 
 /datum/perk/oddity/balls_of_plasteel
 	name = "True Grit"
@@ -56,7 +56,7 @@
 	name = "Springheel"
 	desc = "You're sure of your movements now, slow and steady may win the race but you can prove them wrong."
 	gain_text = "You feel your pace quickening, your thoughts barely catching up with your stride..."
-	icon_state = "fast" // https://game-icons.net/1x1/delapouite/fast-forward-button.html
+	icon_state = "sprint" // https://game-icons.net/1x1/lorc/sprint.html
 
 /datum/perk/oddity/fast_walker/assign(mob/living/carbon/human/H)
 	..()
@@ -67,7 +67,7 @@
 	name = "Natural Armor"
 	desc = "Your skin has become harder, more durable, able to accept blunt force and endure."
 	gain_text = "After all you've endured, you can't help but feel tougher than normal, your skin feels like iron."
-	icon_state = "armor" // - No icon, suggestion - Riot Shield?
+	icon_state = "armor" // This one is good enough. Abs of steel.
 
 /datum/perk/oddity/harden/assign(mob/living/carbon/human/H)
 	..()
@@ -85,7 +85,7 @@
 	name = "Thin Skin"
 	desc = "The anomaly has weakened your skin, making you less resistant to blunt trauma."
 	gain_text = "You feel yourself growing softer...Did everything always hurt this much?"
-	icon_state = "thin" // - No icon, suggestion - Paper?
+	icon_state = "broken" // https://game-icons.net/1x1/lorc/broken-shield.html
 
 /datum/perk/oddity/thin_skin/assign(mob/living/carbon/human/H)
 	..()
@@ -105,7 +105,7 @@
 	name = "Toxic Resistance"
 	desc = "You've been exposed to something toxic, yet your body fought it off and is now strengthened against poisoning as a result."
 	gain_text = "What doesn't kill you, helps you survive it better."
-	icon_state = "Hazman" // - No icon, suggestion - Anti toxin needle?
+	icon_state = "toxins" // https://game-icons.net/1x1/delapouite/hazmat-suit.html
 
 /datum/perk/oddity/better_toxins/assign(mob/living/carbon/human/H)
 	..()
@@ -119,7 +119,7 @@
 	name = "Shell Shock"
 	desc = "Why are you not getting better at fighting? Why do mere roaches keep tumbling you down? Your body is weakened by self doubt and despair..."
 	gain_text = "Things just get harder and harder..."
-	icon_state = "eye" // - No icon, suggestion, old knife?
+	icon_state = "shellshock" // https://game-icons.net/1x1/lorc/tear-tracks.html
 
 /datum/perk/oddity/shell_shock/assign(mob/living/carbon/human/H)
 	..()
@@ -139,7 +139,7 @@
 	name = "Failing Mind"
 	desc = "The mind fogs, blanking out, always distracted. Did that anomaly make you dumber, or where you always like this?"
 	gain_text = "The world is not as clear as it once was."
-	icon_state = "brainrot" // - No icon, suggestion, old newspaper?
+	icon_state = "dumbness" // https://game-icons.net/1x1/delapouite/brain-dump.html
 
 /datum/perk/oddity/failing_mind/assign(mob/living/carbon/human/H)
 	..()
@@ -166,7 +166,7 @@
 	name = "Sharpened Mind"
 	desc = "Narrowing in and extrapolating the inner workings of the world has never felt so much easier."
 	gain_text = "The mind can over come any puzzle thrown at it!"
-	icon_state = "generic" // - No icon, suggestion, detective glass?
+	icon_state = "brain_up" // Modified version of https://game-icons.net/1x1/delapouite/brain-dump.html
 
 /datum/perk/oddity/sharp_mind/assign(mob/living/carbon/human/H)
 	..()
@@ -184,7 +184,7 @@
 	name = "Inner Strength"
 	desc = "You're more keenly aware of your own abilities for combat. You feel more confident on your punches thrown, a bit tougher against those thrown at you, and you're starting to get the hang of shooting that one bulky gun..."
 	gain_text = "The blood pumps, the muscles harden, and your trigger finger feels easier than ever..."
-	icon_state = "generic" // - No icon, suggestion, detective glass?
+	icon_state = "strong" // https://game-icons.net/1x1/lorc/strong.html
 
 /datum/perk/oddity/strangth/assign(mob/living/carbon/human/H)
 	..()
@@ -201,7 +201,7 @@
 /datum/perk/oddity/iron_will
 	name = "Will of Iron"
 	desc = "The body is able to succumb to many negative affects but the mind can simply ignore them. Getting addicted to things is much harder and you can stomach more chemicals."
-	icon_state = "generic" // https://game-icons.net/1x1/lorc/underdose.html
+	icon_state = "sharp_mind" // https://game-icons.net/1x1/lorc/spiked-halo.html
 
 /datum/perk/oddity/iron_will/assign(mob/living/carbon/human/H)
 	..()
@@ -251,7 +251,7 @@
 	var/init_sight
 	var/init_flash
 	var/obj/screen/lightOverlay = null
-	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
+	icon_state = "nightvision" // https://game-icons.net/1x1/delapouite/night-vision.html
 
 /datum/perk/oddity/nightcrawler/assign(mob/living/carbon/human/H)
 	..()
@@ -307,7 +307,7 @@
 /datum/perk/nt_oddity/holy_light/on_process()
 	if(!..())
 		return
-	if(!holder.get_core_implant(/obj/item/implant/core_implant/cruciform))
+	if(!holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		return
 	if(world.time < initial_time + cooldown)
 		return
@@ -315,7 +315,7 @@
 	for(var/mob/living/L in viewers(holder, 7))
 		if(ishuman(L))
 			var/mob/living/carbon/human/H = L
-			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/cruciform)))
+			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/hearthcore)))
 				continue
 			H.adjustBruteLoss(-healing_power)
 			H.adjustFireLoss(-healing_power)
@@ -361,7 +361,7 @@
 	name = "Blackbox Tinkering"
 	desc = "It's sleek contours, the expert craftsmanship... The best of hand-made mechanical genius."
 	gain_text = "What wondrous possibilities..."
-	icon_state = "inspiration_active" // - No icon, suggestion, detective glass?
+	icon_state = "blackbox_tinker" // https://game-icons.net/1x1/lorc/gears.html
 
 /datum/perk/guild/blackbox_insight/assign(mob/living/carbon/human/H)
 	..()

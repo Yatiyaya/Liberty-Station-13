@@ -29,9 +29,9 @@
 	tool_qualities = list(QUALITY_PULSING = 100)
 
 /obj/item/tool/multitool/advanced/onestar
-	name = "Similacrum Robotics multitool"
+	name = "Simulacrum Robotics multitool"
 	desc = "Used for pulsing wires to test which to cut. You can use this on airlocks or APCs to try to hack them. \
-			The advanced and precise engineering allows for more DIY improvements than most Similacrum Robotics tools ."
+			The advanced and precise engineering allows for more DIY improvements than most Simulacrum Robotics tools ."
 	icon_state = "one_star_multitool"
 	tool_qualities = list(QUALITY_PULSING = 60)
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 1, MATERIAL_DIAMOND = 1)
@@ -41,7 +41,7 @@
 	workspeed = 1.6
 	max_upgrades = 5 //UNLIMITED MODS!
 	price_tag = 1500 // Diamond and super fancy/rare.
-	allow_similacrum_mods = TRUE
+	allow_simulacrum_mods = TRUE
 
 /obj/item/tool/multitool/advanced
 	name = "advanced multitool"

@@ -673,8 +673,8 @@
 /area/outpost/abandoned_fortress/powered)
 "dq" = (
 /obj/structure/table/rack,
-/obj/random/mecha_equipment/low_chance,
-/obj/random/mecha_equipment/low_chance,
+/obj/random/mecha_utility/low_chance,
+/obj/random/mecha_utility/low_chance,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "ds" = (
@@ -6012,7 +6012,7 @@
 	pixel_y = -32
 	},
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood,
 /area/outpost/abandoned_fortress/powered)
 "EP" = (

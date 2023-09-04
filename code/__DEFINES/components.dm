@@ -58,8 +58,8 @@
 #define COMSIG_SHUTTLE_SUPPLY "shuttle_supply"  //form sell()
 #define COMSIG_TRADE_BEACON "trade_beacon"
 
-#define COMSIG_RITUAL "ritual"
-#define COMSIG_TRANSATION "transation"          //from transfer_funds()
+#define COMSIG_LECTURE "lecture"
+#define COMSIG_TRANSACTION "transaction"          //from transfer_funds()
 
 /// from datum ui_act (usr, action)
 #define COMSIG_UI_ACT "COMSIG_UI_ACT"

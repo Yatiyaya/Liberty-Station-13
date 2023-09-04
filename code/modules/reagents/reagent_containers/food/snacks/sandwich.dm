@@ -13,14 +13,19 @@
 
 	..()
 
+// No intrinsic nutriment value since this is a skeleton sandwich
+// that will take reagents from whatever is stacked on it
 /obj/item/reagent_containers/food/snacks/csandwich
 	name = "sandwich"
 	desc = "The best thing since sliced bread."
 	icon_state = "breadslice"
 	trash = /obj/item/trash/plate
 	bitesize = 2
+	cooked = TRUE
 
 	var/list/ingredients = list()
+	var/shard_limit = 3 // How many shards can we slap on the sandwich?
+	var/shard_amt = 0 // How many shards are already in the sandwich?
 
 /obj/item/reagent_containers/food/snacks/csandwich/attackby(obj/item/W as obj, mob/user as mob)
 
@@ -30,17 +35,23 @@
 			sandwich_limit += 4
 
 	if(src.contents.len > sandwich_limit)
-		to_chat(user, "\red If you put anything else on \the [src] it's going to collapse.")
+		to_chat(user, SPAN_WARNING("If you put anything else on \the [src] it's going to collapse."))
 		return
 	else if(istype(W,/obj/item/material/shard))
-		to_chat(user, SPAN_NOTICE("You hide [W] in \the [src]."))
-		user.drop_from_inventory(W, src)
-		update()
-		return
+		if(shard_limit == 0)
+			to_chat(user, SPAN_NOTICE("You cannot sneak any more shards in \the [src] without making it obvious."))
+			return
+		else
+			to_chat(user, SPAN_NOTICE("You hide \a [W] in \the [src]."))
+			user.drop_from_inventory(W, src)
+			shard_limit -= 1
+			shard_amt += 1
+			update()
+			return
 	else if(istype(W,/obj/item/reagent_containers/food/snacks))
-		to_chat(user, SPAN_NOTICE("You layer [W] over \the [src]."))
+		to_chat(user, SPAN_NOTICE("You add \a [W] between \the [src]'s breads."))
 		var/obj/item/reagent_containers/F = W
-		F.reagents.trans_to_obj(src, F.reagents.total_volume)
+		F.reagents.trans_to_obj(src, F.reagents.total_volume) // This will also transfer nutriment taste description.
 		user.drop_from_inventory(W, src)
 		ingredients += W
 		update()
@@ -99,20 +110,24 @@
 	if(isliving(M))
 		H = M
 
-	if(H && shard && M == user) //This needs a check for feeding the food to other people, but that could be abusable.
-		to_chat(H, SPAN_WARNING("You lacerate your mouth on a [shard.name] in the sandwich!"))
-		H.adjustBruteLoss(5) //TODO: Target head if human.
+	if(H && shard_amt >= 1 && M == user) //This needs a check for feeding the food to other people, but that could be abusable.
+		to_chat(H, SPAN_WARNING("You lacerate your mouth with [shard_amt] [shard.name]\s that [shard_amt == 1 ? "was" : "were"] hidden in the sandwich!"))
+		H.damage_through_armor(shard_amt * 5, BRUTE, BP_HEAD, ARMOR_MELEE)
+		H.emote("painscream") // OUCH OOF MY TEEF
+		qdel(shard)
+		shard_amt = 0 // (prevents masochism)
 	..()
 
-//None custom sandwiches
+// Pre-made sandwiches
 
 /obj/item/reagent_containers/food/snacks/muffinegg
 	name = "muffin egg sandwich"
-	desc = "A muffin sandwich consisting of fried egg and nadezhdian bacon, a good breakfast takeaway choice."
+	desc = "A muffin sandwich consisting of a round fried egg and locally sourced bacon, a good breakfast takeaway choice."
 	icon_state = "muffinegg"
 	bitesize = 2
-	nutriment_desc = list("bacon" = 5, "runny fried egg" = 5, "muffin" = 2)
-	nutriment_amt = 6
+	nutriment_desc = list("bacon" = 4, "runny fried egg" = 3, "muffin" = 2)
+	nutriment_amt = 9
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/sandwich
 	name = "sandwich"
@@ -134,8 +149,8 @@
 	filling_color = "#D9BE29"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=4)
-	nutriment_desc = list("toasted bread" = 3, "cheese" = 3)
-	nutriment_amt = 3
+	nutriment_desc = list("toasted bread" = 4, "cheese" = 1, "butter" = 1)
+	nutriment_amt = 6
 	preloaded_reagents = list("protein" = 6) // Who thought putting carbon on a FOOD was a good idea?!
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 17)
@@ -147,8 +162,8 @@
 	filling_color = "#D9BE29"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=4)
-	nutriment_desc = list("toasted bread" = 3, "cheese" = 3, "delux toasted sandwich" = 5)
-	nutriment_amt = 3
+	nutriment_desc = list("exquisitely toasted bread" = 4, "cheese" = 2)
+	nutriment_amt = 6
 	preloaded_reagents = list("protein" = 3, "greaser" = 3, "glucose" = 2)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 23)
@@ -165,19 +180,20 @@
 	icon_state = "toastedsandwich"
 	filling_color = "#D9BE29"
 	bitesize = 2
-	nutriment_desc = list("toasted bread" = 3, "cheese" = 3)
-	nutriment_amt = 3
+	nutriment_desc = list("toasted bread" = 2, "cheese" = 2)
+	nutriment_amt = 4
 	preloaded_reagents = list("protein" = 4)
 	cooked = TRUE
 	matter = list(MATERIAL_BIOMATTER = 20)
 
 /obj/item/reagent_containers/food/snacks/blt
-	name = "BLT"
+	name = "\proper BLT"
 	desc = "A classic sandwich composed of nothing more than bacon, lettuce and tomato."
 	icon_state = "blt"
 	bitesize = 2
-	nutriment_desc = list("toasted bread" = 3, "bacon" = 3, "tomato" = 2)
-	nutriment_amt = 3
+	nutriment_desc = list("toasted bread" = 2, "bacon" = 2, "tomato" = 2)
+	nutriment_amt = 6
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/twobread
 	name = "two bread"
@@ -188,7 +204,7 @@
 	center_of_mass = list("x"=15, "y"=12)
 	nutriment_desc = list("sourness" = 2, "bread" = 2)
 	nutriment_amt = 2
-	cooked = TRUE
+	//cooked = TRUE		Classic bri'ish cuisine is sad and you should gain no sanity from this
 	matter = list(MATERIAL_BIOMATTER = 5)
 
 /obj/item/reagent_containers/food/snacks/jellysandwich
@@ -225,18 +241,30 @@
 
 /obj/item/reagent_containers/food/snacks/icecreamsandwich
 	name = "icecream sandwich"
-	desc = "A classic icecream sandwiched between two chocolate cookies, an essential dessert to have by the dozen."
+	desc = "A classic icecream sandwiched between two brownies, an essential dessert to have by the dozen."
 	icon_state = "icecreamsandwich"
 	bitesize = 4
-	nutriment_amt = 8
-	nutriment_desc = list("icecream" = 10, "cookies" = 5, "perfection" = 15)
-	matter = list(MATERIAL_BIOMATTER = 8)
+	nutriment_amt = 10
+	nutriment_desc = list("soft icecream" = 2, "bownies" = 2, "perfection" = 6)
+	matter = list(MATERIAL_BIOMATTER = 10)
+	cooked = TRUE
 
 /obj/item/reagent_containers/food/snacks/strawberrysandwich
 	name = "strawberry icecream sandwich"
 	desc = "A classic strawberry icecream sandwiched between two vanilla cookies, an essential treat to have by the dozen."
 	icon_state = "icecreamsandwich_sb"
 	bitesize = 4
-	nutriment_amt = 8
-	nutriment_desc = list("strawberry icecream" = 10, "cookies" = 5, "perfection" = 15)
-	matter = list(MATERIAL_BIOMATTER = 8)
+	nutriment_amt = 10
+	nutriment_desc = list("strawberry icecream" = 2, "cookies" = 2, "perfection" = 6)
+	matter = list(MATERIAL_BIOMATTER = 10)
+	cooked = TRUE
+
+/obj/item/reagent_containers/food/snacks/chocolatesandwich
+	name = "chocolate icecream sandwich"
+	desc = "A classic chocolate icecream sandwiched between two brownies, for those who want an extra chocolatey flavor to their perfection."
+	icon_state = "icecreamsandwich_ch"
+	bitesize = 4
+	nutriment_amt = 10
+	nutriment_desc = list("chocolate icecream" = 2, "bownies" = 2, "perfection" = 6)
+	matter = list(MATERIAL_BIOMATTER = 10)
+	cooked = TRUE

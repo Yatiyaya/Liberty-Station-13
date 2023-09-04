@@ -4,8 +4,8 @@
 
 
 /obj/machinery/power/os_turret
-	name = "Similacrum Robotics turret"
-	desc = "A turret of the Similacrum Robotics variety."
+	name = "Simulacrum Robotics turret"
+	desc = "A turret of the Simulacrum Robotics variety."
 	icon = 'icons/obj/machines/one_star/machines.dmi'
 	icon_state = "os_gauss" // sprite by Infrared Baron
 	circuit = /obj/item/circuitboard/os_turret
@@ -122,7 +122,7 @@
 			secondarytargets += L
 
 /obj/machinery/power/os_turret/proc/assess_living(var/mob/living/L) //TODO: optimize
-	if(L.faction == "similacrum") //The cheatcode
+	if(L.faction == "simulacrum") //The cheatcode
 		return TURRET_NOT_TARGET
 
 	if(!istype(L))

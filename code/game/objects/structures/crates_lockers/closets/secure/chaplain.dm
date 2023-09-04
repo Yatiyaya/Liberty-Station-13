@@ -12,7 +12,7 @@
 	else
 		new /obj/item/storage/backpack/satchel/custodian(src)
 	new /obj/item/clothing/under/rank/preacher(src)
-	new /obj/item/device/radio/headset/church(src)
+	new /obj/item/device/radio/headset/bonfire(src)
 	new /obj/item/storage/belt/utility/custodian(src)
 	new /obj/item/clothing/shoes/reinforced(src)
 	new /obj/item/clothing/suit/storage/chaplain(src)

@@ -280,7 +280,7 @@
 
 /mob/living/simple_animal/hostile/helldiver
 	name = "hell diver"
-	desc = "One of the local fauna native to the planet, nicknamed hell diver by Skylight miners. They're usually friendly and highly valued by \
+	desc = "One of the local fauna native to the planet's underground caves, nicknamed Hell Diver by Union miners. They're usually friendly and highly valued by \
 	miners as potential companions as they don't mind being led around, love food, and tend to rush after hostile life before a miner can see it. They have \
 	peerless eyesight in the dark and are quite skilled at killing hostile fauna, more than their small size suggests."
 	faction = "neutral"
@@ -320,12 +320,13 @@
 	bones_amount = 6
 	has_special_parts = TRUE
 	special_parts = list(/obj/item/animal_part/helldiver_tooth)
-	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR)
+	inherent_mutations = list(MUTATION_MKNEWAIFUHAIR, MUTATION_BLINDNESS, MUTATION_ECHOLOCATION, MUTATION_RAD_PROTECTION)
+	target_dummy = TRUE
 
 /mob/living/simple_animal/hostile/helldiver/FindTarget()
 	. = ..()
 	if(.)
-		visible_emote("lets out a gutteral chitter in warning!")
+		visible_emote("lets out a guttural snarl in warning!")
 		playsound(src, 'sound/voice/hiss4.ogg', 50, 1, -3)
 
 /mob/living/simple_animal/hostile/retaliate/hakhma
@@ -357,9 +358,9 @@
 
 /mob/living/simple_animal/hostile/retaliate/tahca
 	name = "tahca"
-	desc = "A bovine creature, not surprisingly native in it's shaggy white coat of hair.  Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Hunters value \
+	desc = "A bovine creature, not surprisingly native in it's shaggy white coat of hair.  Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Trappers value \
 	these beasts for their tongues, both as medicine of value and for food."
-	faction = "tahca"
+	faction = "neutral"
 	icon = 'icons/mob/mobs-domestic.dmi'
 	icon_state = "tahca"
 	icon_living = "tahca"
@@ -384,4 +385,6 @@
 	bones_amount = 6
 	mob_size = 20
 	has_special_parts = TRUE
+	colony_friend = TRUE
+	friendly_to_colony = TRUE
 	special_parts = list(/obj/item/animal_part/tahca_tongue)

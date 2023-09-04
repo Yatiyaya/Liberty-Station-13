@@ -906,12 +906,12 @@ ADMIN_VERB_ADD(/client/proc/spawn_disciple, R_DEBUG, FALSE)
 /client/proc/spawn_disciple()
 	set category = "Debug"
 	set name = "Spawn Disciple"
-	set desc = "Spawns a human with a cruciform, for ritual testing"
+	set desc = "Spawns a human with a Hearthcore, for lecture testing"
 	if (!mob)
 		return
 
 	var/mob/living/carbon/human/H = new (get_turf(mob))
-	var/obj/item/implant/core_implant/cruciform/C = new /obj/item/implant/core_implant/cruciform(H)
+	var/obj/item/implant/core_implant/hearthcore/C = new /obj/item/implant/core_implant/hearthcore(H)
 
 	C.install(H)
 	C.activate()

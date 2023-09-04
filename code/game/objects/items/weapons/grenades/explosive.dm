@@ -1,5 +1,5 @@
 /obj/item/grenade/explosive
-    name = "ML OBG \"Bulldog\""
+    name = "\"Bulldog\" High-Explosive Grenade"
     desc = "A military-grade offensive blast grenade, designed to be thrown by assaulting troops."
     icon_state = "explosive"
     loadable = TRUE

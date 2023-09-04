@@ -40,4 +40,8 @@
 
 /mob/living/carbon/superior_animal/roach/benzin/death()
 	. = ..()
-	new /obj/effect/decal/cleanable/liquid_fuel(loc, reagents.get_reagent_amount("fuel"), 1)
+	var/fuel_amount = 1
+	if(reagents)
+		fuel_amount += reagents.get_reagent_amount("fuel")
+	new /obj/effect/decal/cleanable/liquid_fuel(src.loc, fuel_amount, 1)
+

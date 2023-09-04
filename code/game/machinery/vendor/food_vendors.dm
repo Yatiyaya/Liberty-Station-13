@@ -1,7 +1,7 @@
 /obj/machinery/vending/boozeomat
 	name = "Damien-Kazan Alcohol & Bartending Supplies Vendor"
 	desc = "A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one."
-	icon_state = "boozeomat"	//24(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
+	icon_state = "boozeomat"	//25(+2) drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	icon_deny = "boozeomat-deny"
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/gin = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/whiskey = 5,
@@ -17,6 +17,7 @@
 					/obj/item/reagent_containers/food/drinks/bottle/bluecuracao = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/redcandywine = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/nanatsunoumi = 2,
+					/obj/item/reagent_containers/food/drinks/bottle/kitsunesake = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/absinthe = 2,
 					/obj/item/reagent_containers/food/drinks/bottle/small/beer = 6,
 					/obj/item/reagent_containers/food/drinks/bottle/small/ale = 6,
@@ -149,7 +150,8 @@
 	product_slogans = "Aren't you glad you don't have to fertilize the natural way?;Now with 50% less stink!;Plants are people too!;150% of the Effects, 0% of the smell!;We all like plants, don't we?;Remember to Never Underestimate Technology.;Take the spray and ROBUST THOSE PESTS!;Save your plants today!;Your plants deserve only the most Robust chemicals!"
 	product_ads = "We like plants!;Don't you want some?;The greenest thumbs ever.;We like big plants.;Soft soil..."
 	icon_state = "nutri"
-	products = list(/obj/item/reagent_containers/glass/fertilizer/ez = 6,
+	products = list(/obj/item/device/scanner/plant = 5,
+					/obj/item/reagent_containers/glass/fertilizer/ez = 6,
 					/obj/item/reagent_containers/glass/fertilizer/l4z = 4,
 					/obj/item/reagent_containers/glass/fertilizer/rh = 4,
 					/obj/item/plantspray/pests = 20,
@@ -271,6 +273,7 @@
 					/obj/item/material/kitchen/utensil/spoon = 6,
 					/obj/item/material/kitchen/utensil/skewer = 8,
 					/obj/item/material/kitchen/rollingpin = 3,
+					/obj/item/tool/hammer/tenderizer = 3,
 					/obj/item/spatula = 6,
 					/obj/item/reagent_containers/dropper = 3,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 6,
@@ -306,6 +309,8 @@
 					/obj/item/reagent_containers/food/drinks/mug/brit = 3,
 					/obj/item/reagent_containers/food/drinks/mug/moebius = 3,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 1,
+					/obj/item/reagent_containers/food/condiment/peppermill = 1,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,
@@ -327,6 +332,7 @@
 					/obj/item/tool/knife = 6,
 					/obj/item/material/kitchen/utensil/spoon = 6,
 					/obj/item/material/kitchen/rollingpin = 3,
+					/obj/item/tool/hammer/tenderizer = 3,
 					/obj/item/spatula = 6,
 					/obj/item/reagent_containers/dropper = 3,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 6,
@@ -362,6 +368,8 @@
 					/obj/item/reagent_containers/food/drinks/mug = 3,
 					/obj/item/reagent_containers/food/drinks/mug/white = 3,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 1,
+					/obj/item/reagent_containers/food/condiment/peppermill = 1,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 10,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 10,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 10,
@@ -374,6 +382,7 @@
 					/obj/item/tool/knife = 35,
 					/obj/item/material/kitchen/utensil/spoon = 3,
 					/obj/item/material/kitchen/rollingpin = 9,
+					/obj/item/tool/hammer/tenderizer = 10,
 					/obj/item/spatula = 12,
 					/obj/item/reagent_containers/dropper = 10,
 					/obj/item/reagent_containers/cooking_with_jane/cooking_container/board = 15,
@@ -408,6 +417,8 @@
 					/obj/item/reagent_containers/food/drinks/mug/brit = 6,
 					/obj/item/reagent_containers/food/drinks/mug/moebius = 7,
 					/obj/item/reagent_containers/food/drinks/mug/teacup = 10,
+					/obj/item/reagent_containers/food/condiment/saltshaker = 10,
+					/obj/item/reagent_containers/food/condiment/peppermill = 10,
 					/obj/item/reagent_containers/food/condiment/pack/ketchup = 3,
 					/obj/item/reagent_containers/food/condiment/pack/milk = 3,
 					/obj/item/reagent_containers/food/condiment/pack/sugar = 3,
@@ -427,9 +438,9 @@
 	icon_deny = "citadel-deny"
 	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
 	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
-	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,
-					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 4,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 5)
+	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 10,
+					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 10,
+					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10)
 	contraband = list(
 					/obj/item/reagent_containers/food/drinks/cans/monster_red = 10,
 					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 10,

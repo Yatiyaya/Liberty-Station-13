@@ -156,13 +156,13 @@
 	matter = list(MATERIAL_BIOMATTER = 15)
 
 /obj/item/grenade/flashbang/nt/flashbang_without_the_bang(turf/T, mob/living/carbon/M)
-	if(M.get_core_implant(/obj/item/implant/core_implant/cruciform))
+	if(M.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		to_chat(M, span_singing("You are blinded by the Bonfire\' light!"))
 		M.flash(0, FALSE, FALSE , FALSE, 0) // angel light , non-harmfull other than the overlay
 		return
 	..()
 
 /obj/item/grenade/flashbang/nt/flashbang_bang(var/turf/T, var/mob/living/carbon/M, var/explosion_text = "BANG", var/stat_reduction = TRUE, var/intensity = FALSE)
-	if(M.get_core_implant(/obj/item/implant/core_implant/cruciform))
+	if(M.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		intensity += 1
 	..()

@@ -2,7 +2,7 @@
 	category = "Custodians"
 	time = 100
 	related_stats = list(STAT_MEC)
-	requiredPerk = PERK_CHANNELING
+	requiredPerk = PERK_RADIANCE
 	icon_state = "dischargemisc_mold"
 
 /datum/craft_recipe/custodians/oathbound_set
@@ -268,7 +268,7 @@
 		list(/obj/item/stack/mold_kit/tailoring, 1),
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 1),
-		list(/obj/item/book/ritual/cruciform, 1),
+		list(/obj/item/book/lectures/hearthlantern, 1),
 		list(QUALITY_HAMMERING, 30, "time" = 10),
 	)
 

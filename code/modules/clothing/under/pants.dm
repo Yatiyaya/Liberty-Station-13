@@ -1,4 +1,11 @@
-/*Pants*/
+/*Jeans*/
+
+/obj/item/clothing/under/jeans
+	name = "trendy baggy jeans"
+	desc = "A pair of baggy trendy jeans."
+	icon_state = "baggy_jeansyoungfolks"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5 // Half coverage for all pants
 
 /obj/item/clothing/under/jeans/black
 	name = "black jeans"
@@ -87,12 +94,15 @@
 	desc = "A pair of flashy jeans belonging to an asian gangster of sorts."
 	icon_state = "tojopants"
 
-/obj/item/clothing/under/jeans
-	name = "trendy baggy jeans"
-	desc = "A pair of baggy trendy jeans."
-	icon_state = "baggy_jeansyoungfolks"
-
 /*Pants*/
+
+/obj/item/clothing/under/pants
+	name = "yoga pants"
+	desc = "A pair of tight-fitting white yoga pants."
+	icon_state = "yogapants"
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5 // Half coverage for all pants
 
 /obj/item/clothing/under/pants/chapsblack
 	name = "black chaps"
@@ -214,15 +224,20 @@
 	desc = "A pair of tight-fitting leopard print leggings."
 	icon_state = "rawrxdleggings"
 
-/obj/item/clothing/under/pants
-	name = "yoga pants"
-	desc = "A pair of tight-fitting white yoga pants."
-	icon_state = "yogapants"
-	cold_protection = LOWER_TORSO|LEGS
-	min_cold_protection_temperature = T0C - 5 // Half coverage for all pants
-
+/obj/item/clothing/under/pants/afghanka
+	name = "afghanka pants"
+	desc = "A pair of warm, tan afghanka pants for combat situations."
+	icon_state = "afghanka_pants"
 
 /*Gorka Pants*/
+
+/obj/item/clothing/under/gorkapants
+	name = "tan gorka pants"
+	desc = "A pair of baggy, two-tone military style cargo pants featuring an elastic waistband and leg cuffs."
+	icon_state = "gorka_pants_tan"
+	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/gorkapants/gorkacamo
 	name = "camo gorka pants"
@@ -265,12 +280,6 @@
 	desc = "A pair of baggy, two-tone utility pants featuring an elastic waistband and leg cuffs, and dark grey liverly."
 	icon_state = "gorka_pants_ih"
 
-/obj/item/clothing/under/gorkapants
-	name = "tan gorka pants"
-	desc = "A pair of baggy, two-tone military style cargo pants featuring an elastic waistband and leg cuffs."
-	icon_state = "gorka_pants_tan"
-	cold_protection = LOWER_TORSO|LEGS
-	min_cold_protection_temperature = T0C - 5
 
 /*Gorka Pants Factions*/
 
@@ -279,6 +288,7 @@
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband and leg cuffs."
 	icon_state = "gorka_pants_ih"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medspec/gorkapantsihmed
@@ -286,6 +296,7 @@
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband, leg cuffs, and Corpsman markings."
 	icon_state = "gorka_pants_ih_med"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medical/gorkapantscrewmed
@@ -293,4 +304,22 @@
 	desc = "A pair of baggy, two-tone utility pants featuring an elastic waistband and leg cuffs, and medical liverly."
 	icon_state = "gorka_pants_crew_med"
 	cold_protection = LOWER_TORSO|LEGS
+	heat_protection = LOWER_TORSO|LEGS
 	min_cold_protection_temperature = T0C - 5
+
+// Factions Afghankas
+
+/obj/item/clothing/under/rank/fontaine/afghanka_pants
+	name = "fontaine afghanka pants"
+	desc = "A pair of warm afghanka pants for combat situations, in Fontaine colors."
+	heat_protection = LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LEGS
+	icon_state = "afghanka_pants_fontaine"
+
+/obj/item/clothing/under/rank/security/afghanka_pants
+	name = "watch afghanka pants"
+	desc = "A pair of warm afghanka pants for combat situations, in Liberty Watch colors."
+	icon_state = "afghanka_pants_watch"
+	heat_protection = LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LEGS
+

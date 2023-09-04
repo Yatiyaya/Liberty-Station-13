@@ -2777,7 +2777,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/crew_quarters/toilet/public)
 "agz" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/machinery/power/wall_obelisk{
 	pixel_y = 22
 	},
@@ -4801,7 +4801,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/absolutism/skyyard)
 "alh" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/skyyard)
 "ali" = (
@@ -5325,7 +5325,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "aED" = (
@@ -5514,7 +5514,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/security/laber_area)
 "aOv" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/chapel)
 "aOF" = (
@@ -7495,7 +7495,7 @@
 /turf/unsimulated/wall/jungle,
 /area/liberty/outside/forest)
 "cEF" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = 32
 	},
@@ -9986,7 +9986,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "fbb" = (
-/obj/machinery/multistructure/bioreactor_part/biotank_platform,
+/obj/machinery/multistructure/bonfire_part/scorchtank_platform,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "fbr" = (
@@ -10735,7 +10735,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "fTA" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/command/prime)
 "fTI" = (
@@ -11920,12 +11920,12 @@
 /area/liberty/crew_quarters/hydroponics/garden)
 "gXE" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "gXO" = (
@@ -12693,7 +12693,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/crematorium)
 "hHc" = (
@@ -12847,7 +12847,7 @@
 	dir = 1;
 	pixel_y = 0
 	},
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -13643,9 +13643,9 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "iwX" = (
@@ -15403,7 +15403,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "klo" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/crew_quarters/hydroponics/garden)
 "kly" = (
@@ -16354,14 +16354,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/vectorrooms)
 "lpz" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/crew_quarters/hydroponics/garden)
 "lpB" = (
@@ -17792,9 +17792,9 @@
 /obj/random/junkfood,
 /obj/random/junkfood,
 /obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
+/obj/item/reagent_containers/food/drinks/bottle/bonfirebrew,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "mMw" = (
@@ -18514,7 +18514,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 9
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "nEP" = (
@@ -18575,7 +18575,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "nHI" = (
-/obj/machinery/multistructure/bioreactor_part/bioport,
+/obj/machinery/multistructure/bonfire_part/port,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "nIo" = (
@@ -18725,10 +18725,10 @@
 /area/liberty/hallway/surface/section1)
 "nRs" = (
 /obj/structure/bookcase,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform/priest,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern/oathpledge,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "nRw" = (
@@ -19263,7 +19263,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "otl" = (
-/obj/machinery/smartfridge/kitchen/church,
+/obj/machinery/smartfridge/kitchen/custodians,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "otp" = (
@@ -19920,7 +19920,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "oXR" = (
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27;
 	pixel_y = 0
@@ -20099,7 +20099,7 @@
 /area/liberty/dungeon/outside/campground)
 "pfH" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/command/crematorium)
 "pfK" = (
@@ -21154,7 +21154,7 @@
 /area/liberty/dungeon/outside/burned_outpost)
 "qai" = (
 /obj/structure/table/woodentable,
-/obj/item/book/ritual/cruciform/priest,
+/obj/item/book/lectures/hearthlantern/oathpledge,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "qas" = (
@@ -22445,7 +22445,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/absolutism/bioreactor)
 "rsg" = (
-/obj/machinery/multistructure/bioreactor_part/loader,
+/obj/machinery/multistructure/bonfire_part/loader,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "rsy" = (
@@ -22990,7 +22990,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "rOs" = (
-/obj/machinery/multistructure/bioreactor_part/console,
+/obj/machinery/multistructure/bonfire_part/console,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "rOG" = (
@@ -27152,7 +27152,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "vTa" = (
-/obj/machinery/multistructure/bioreactor_part/unloader,
+/obj/machinery/multistructure/bonfire_part/unloader,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "vTg" = (
@@ -27904,10 +27904,10 @@
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
 	},
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
-/obj/item/book/ritual/cruciform,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
+/obj/item/book/lectures/hearthlantern,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
@@ -28076,7 +28076,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "wND" = (
-/obj/machinery/smartfridge/kitchen/church/public,
+/obj/machinery/smartfridge/kitchen/custodians/public,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/hydroponics/garden)
 "wOl" = (
@@ -28224,7 +28224,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/dungeon/outside/abandoned_solars)
 "wTT" = (
-/obj/machinery/multistructure/bioreactor_part/platform{
+/obj/machinery/multistructure/bonfire_part/platform{
 	make_glasswalls_after_creation = 1
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -28916,7 +28916,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/power/nt_obelisk,
+/obj/machinery/power/torchbearer,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/storage)
 "xSw" = (

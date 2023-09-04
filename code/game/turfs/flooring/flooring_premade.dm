@@ -90,6 +90,11 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood/wood_old
 
+/turf/simulated/floor/wood/tatami
+	name = "tatami mat"
+	icon_state = "tatami_full"
+	initial_flooring = /decl/flooring/wood/tatami
+
 /*Tiled*/
 
 /turf/simulated/floor/tiled
@@ -658,7 +663,7 @@
 
 /turf/simulated/floor/asteroid/dirt
 	name = "dirt"
-	desc = "Course and unpleasent."
+	desc = "Coarse and unpleasant."
 	icon = 'icons/turf/flooring/dirt.dmi'
 	icon_state = "dirt"
 	initial_flooring = /decl/flooring/dirt
@@ -818,6 +823,11 @@
 	icon_state = "brick"
 	initial_flooring = /decl/flooring/industrial/bricks
 
+/turf/simulated/floor/industrial/greybricks
+	name = "grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial/greybricks
+
 /turf/simulated/floor/industrial/ornate
 	name = "ornate"
 	icon_state = "ornate"
@@ -910,6 +920,16 @@
 	name = "pristine bricks"
 	icon_state = "brick"
 	initial_flooring = /decl/flooring/industrial_pristine/bricks
+
+/turf/simulated/floor/industrial_pristine/greybricks
+	name = "pristine grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial_pristine/greybricks
+
+/turf/simulated/floor/industrial_pristine/greybricksfull
+	name = "pristine grey bricks"
+	icon_state = "mortar_bricks"
+	initial_flooring = /decl/flooring/industrial_pristine/greybricksfull
 
 /turf/simulated/floor/industrial_pristine/ornate
 	name = "pristine ornate"

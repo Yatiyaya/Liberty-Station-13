@@ -123,7 +123,6 @@
 	desc = "A rubber mesh that can wrapped around sensitive parts of a tool to protecting them from impacts and debris."
 	icon_state = "rubbermesh"
 	matter = list(MATERIAL_PLASTIC = 3)
-	preloaded_reagents = list("plasticide" = 8)
 	price_tag = 60
 
 /obj/item/tool_upgrade/reinforcement/rubbermesh/New()
@@ -227,7 +226,7 @@
 	I.prefix = "sharpened"
 
 /obj/item/tool_upgrade/productivity/diamond_blade
-	name = "Skylights \"Gleaming Edge\": diamond blade"
+	name = "Terra Therma's \"Gleaming Edge\" diamond blade"
 	desc = "An adaptable industrial grade cutting disc, with diamond dust worked into the metal. Exceptionally durable. Works for both cutting tools and rifle bayonets."
 	icon_state = "diamond_blade"
 	price_tag = 300
@@ -325,8 +324,9 @@
 	I.prefix = "anti-stain coated"
 
 /obj/item/tool_upgrade/productivity/booster
-	name = "booster"
-	desc = "When you do not care about energy comsumption and just want to get shit done quickly. This device shunts the power safeties of your tool whether it uses fuel or electricity."
+	name = "PI \"Booster\" overclock module"
+	desc = "This handcrafted device shunts the power safeties of a tool, massively increasing its workspeed at the cost of fuel or power efficiency. \
+			It can also be installed on energy weaponry for more concentrated blasts at the cost of cell efficiency."
 	icon_state = "booster"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1)
 	price_tag = 230
@@ -350,8 +350,9 @@
 	I.req_gun_tags = list(GUN_ENERGY)
 
 /obj/item/tool_upgrade/productivity/injector
-	name = "plasma injector"
-	desc = "If the words \"safety regulations\" do not mean anything to you, you may consider installing this fine piece of technology on your tool. It injects small amounts of plasma in the fuel mix before combustion to greatly increase its power output, making all kinds of tasks easier to perform. If you're insane, you could attach it to an energy weapon's barrel."
+	name = "PI plasma injector"
+	desc = "This handcrafted device injects small amounts of plasma in the fuel mix of a tool before combustion to greatly increase its power output, making all kinds of tasks easier to perform. \
+			It can also be installed on energy weapons for laser combining with ionized plasma, granting an extra kick to your shots."
 	icon_state = "injector"
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 2)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
@@ -377,7 +378,7 @@
 	I.req_gun_tags = list(GUN_ENERGY)
 
 /obj/item/tool_upgrade/productivity/rocket_engine
-	name = "rocket engine"
+	name = "PI rocket engine"
 	desc = "A singular rocket engine, used in assisted ballistics, tools, and once in a blue moon its intended purpose."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "rocket_engine"
@@ -429,8 +430,9 @@
 // 	 REFINEMENT: INCREASES PRECISION
 //------------------------------------------------
 /obj/item/tool_upgrade/refinement/laserguide
-	name = "\improper Skylights \"Guiding Light\" laser guide"
-	desc = "A small visible laser which can be strapped onto any tool, giving an accurate representation of its target. Helps improve precision."
+	name = "\"Guiding Light\" laser guide"
+	desc = "A small visible laser which can be strapped onto any tool, giving an accurate representation of its target. \
+			Helps improve precision. Can also be installed on firearms to assist with aiming."
 	icon_state = "laser_guide"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_URANIUM = 1)
 	preloaded_reagents = list("plasticide" = 3, "radium" = 5, "phosphorus" = 15)
@@ -519,7 +521,8 @@
 
 /obj/item/tool_upgrade/refinement/compensatedbarrel // More accurate tool but slower, faster gun but less hitting
 	name = "gravity compensated barrel"
-	desc = "A barrel extension for welding tools that integrates a miniaturized gravity generator that help keep the torch steady by compensating the weight of the tool. It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
+	desc = "A barrel extension for welding tools that integrates a miniaturized gravity generator that help keep the torch steady by compensating the weight of the tool. \
+			It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
 	icon_state = "compensatedbarrel"
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
 	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)
@@ -545,6 +548,28 @@
 	I.required_qualities = list(QUALITY_WELDING)
 	I.prefix = "gravity-compensated"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
+
+/obj/item/tool_upgrade/refinement/gravenhancer
+	name = "SR Microgravity Stabilizer"
+	desc = "Strange contraption of Simulacrum Robotics making, it appears to manipulate gravity around it, \
+			to make a weapon or tool more stable at the cost of increasing its size."
+	icon_state = "grav_enhancer"
+	matter = list(MATERIAL_PLASTIC = 8, MATERIAL_URANIUM = 3)
+	price_tag = 1500
+
+/obj/item/tool_upgrade/refinement/gravenhancer/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.tool_upgrades = list(
+	UPGRADE_PRECISION = 25,
+	UPGRADE_WORKSPEED = 0.1,
+	UPGRADE_BULK = 1,
+	)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_RECOIL = 0.5,
+		UPGRADE_BULK = 1,
+		)
+	I.prefix = "gravity-stabilized"
 
 // 		AUGMENTS: MISCELLANEOUS AND UTILITY
 //------------------------------------------------
@@ -614,10 +639,10 @@
 	I.prefix = "expanded"
 	I.req_fuel_cell = REQ_FUEL
 
-//Similacrum fuel mod
+//Simulacrum fuel mod
 /obj/item/tool_upgrade/augment/holding_tank
 	name = "expanded fuel tank of holding"
-	desc = "Rare relic of Similacrum uses the bluetech space to store additional 600 units of fuel at the cost of degradation."
+	desc = "Rare relic of Simulacrum Robotics, it uses bluetech space to store additional 600 units of fuel at the cost of degradation."
 	icon_state = "canister_holding"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 250
@@ -717,36 +742,6 @@
 	I.prefix = "sanctified"
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 
-/*
-/obj/item/tool_upgrade/augment/sanctifier_plus
-	name = "overclocked sanctifier"
-	icon_state = "sanctifier_plus"
-	desc = "Recommended for crusades against mutants, wild life, and heretics. Does this device actually make a better weapon or is it something else? Regardless, it makes one more thoughtful during labor. \
-	This one has been overclocked by members of the factortial path, increasing both its benefits and its drawbacks."
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 2)
-	price_tag = 20
-
-/obj/item/tool_upgrade/augment/sanctifier_plus/New()
-	..()
-	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
-	I.tool_upgrades = list(
-	UPGRADE_SANCTIFY = TRUE,
-	UPGRADE_FORCE_MOD = 12,
-	UPGRADE_PRECISION = 15,
-	UPGRADE_DEGRADATION_MULT = 0.7,
-	UPGRADE_WORKSPEED = -0.75
-	)
-	I.weapon_upgrades = list(
-	GUN_UPGRADE_RECOIL = 0.6,
-	GUN_UPGRADE_FIRE_DELAY_MULT = 1.3,
-	GUN_UPGRADE_MOVE_DELAY_MULT = 1.3,
-	GUN_UPGRADE_CHARGECOST = 0.7
-	)
-	I.gun_loc_tag = GUN_MECHANISM
-	I.prefix = "over sanctified"
-	I.req_fuel_cell = REQ_FUEL_OR_CELL
-*/
-
 /obj/item/tool_upgrade/augment/holy_oils
 	name = "holy oils"
 	icon_state = "oils" //yes it's a recoloured teapot
@@ -794,24 +789,27 @@
 		)
 	I.prefix = "righteous"
 
-/*
+
 /obj/item/tool_upgrade/augment/hammer_addon
-	name = "flat surface"
-	icon_state = "hammer_addon"
-	desc = "A attachment that fits on almost everything to create a simple flat surface for hammering."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2)
+	name = "spiked plate"
+	icon_state = "spiked_plate" // Sprite by Nayu, thank you so much!!!
+	desc = "A crude attachment of diamond-tipped spikes that fits on most flat hammer heads and maces, \
+			granting an extra oomph behind every swing, but making it unwieldy and unfit as a tool.\nOnce soldered, it cannot be removed."
+	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2, MATERIAL_DIAMOND = 1)
+	can_remove = FALSE
 
 /obj/item/tool_upgrade/augment/hammer_addon/New()
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.tool_upgrades = list(
-	UPGRADE_WORKSPEED = -0.5,
-	UPGRADE_HEALTH_THRESHOLD = 5,
-	tool_qualities = list(QUALITY_HAMMERING = 10)
+	UPGRADE_FORCE_MULT = 1.35, // Can only be applied to hammers/maces, combined damage of whetstone+diamond edge but unlike them, it has downsides.
+	UPGRADE_BULK = 1, // Heavier...
+	UPGRADE_WORKSPEED = -0.5, // ...and thus, slower.
+	UPGRADE_PRECISION = -15, // Spikes at the end make it impossible to be used as a proper hammer anymore
+	UPGRADE_HEALTH_THRESHOLD = 5 // Becomes an extra part of the hammer it's attached to.
 	)
-	I.prefix = "flattened"
-	I.required_qualities = list(QUALITY_BOLT_TURNING, QUALITY_PULSING, QUALITY_PRYING, QUALITY_WELDING, QUALITY_SCREW_DRIVING, QUALITY_WIRE_CUTTING, QUALITY_SHOVELING, QUALITY_DIGGING, QUALITY_EXCAVATION, QUALITY_CLAMPING, QUALITY_CAUTERIZING, QUALITY_RETRACTING, QUALITY_DRILLING, QUALITY_HAMMERING, QUALITY_SAWING, QUALITY_CUTTING)
-*/
+	I.prefix = "spike-plated"
+	I.required_qualities = list(QUALITY_HAMMERING) // JUST hammers and ONLY to hammers! (and power fists) Has been blacklisted accordingly!
 
 //Vastly reduces tool sounds, for stealthy hacking
 /obj/item/tool_upgrade/augment/dampener
@@ -835,8 +833,8 @@
 
 /obj/item/tool_upgrade/augment/ai_tool
 	name = "nanointegrated AI"
-	desc = "A forgotten Similacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
-		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added its embeding into the object making it a permanent integration."
+	desc = "A forgotten Simulacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
+		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added, it's embedded into the object making it a permanent integration."
 	icon_state = "ai_tool"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
 	price_tag = 725
@@ -865,11 +863,11 @@
 	)
 	I.prefix = "intelligent"
 	I.req_fuel_cell = REQ_CELL
-	I.similacrum_moding = TRUE
+	I.simulacrum_moding = TRUE
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior
 	name = "astrakhan nanointegrated AI"
-	desc = "An attempt by the Astrakhan R&D institute to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
+	desc = "An attempt by the Astrakhan R&D institute to copy the superior Simulacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)
@@ -899,7 +897,7 @@
 
 /obj/item/tool_upgrade/augment/repair_nano
 	name = "repair nano"
-	desc = "Very rare tool mod from Similacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
+	desc = "Very rare tool mod from Simulacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
 	icon_state = "repair_nano"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 1)
 	price_tag = 325
@@ -911,7 +909,7 @@
 	UPGRADE_DEGRADATION_MULT = 0.01,
 	UPGRADE_HEALTH_THRESHOLD = 10
 	)
-	I.similacrum_moding = TRUE
+	I.simulacrum_moding = TRUE
 	I.req_fuel_cell = REQ_FUEL_OR_CELL
 	I.prefix = "self-repairing"
 
@@ -938,7 +936,7 @@
 
 // Randomizes a bunch of weapon stats on application - stats are set on creation of the item to prevent people from re-rolling until they get what they want
 /obj/item/tool_upgrade/augment/randomizer
-	name = "BSL \"Randomizer\" tool polish"
+	name = "SR \"Randomizer\" tool polish"
 	desc = "This unidentified tar-like stable liquid warps and bends reality around it. Applying it to a tool may have unexpected results."
 	icon_state = "randomizer"
 	matter = list(MATERIAL_PLASMA = 4, MATERIAL_URANIUM = 4)
@@ -959,8 +957,8 @@
 	bluespace_entropy(1, get_turf(src))
 
 /obj/item/tool_upgrade/artwork_tool_mod
-	name = "Weird Revolver"
-	desc = "This is an artistically-made tool mod."
+	name = "strange gizmo"
+	desc = "This is a bizarrely crafted tool mod, from an artisan's whim and inspiration."
 	icon_state = "artmod_1"
 	price_tag = 200
 

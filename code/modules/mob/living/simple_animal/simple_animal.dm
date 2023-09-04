@@ -38,7 +38,7 @@
 	var/blood_from_harvest = /obj/effect/decal/cleanable/blood/splatter
 	//Lodge related products
 	var/leather_amount = 1 //The amount of leather sheets dropped.
-	var/bones_amount = 1 //The amount of bone sheets dropped.
+	var/bones_amount = 2 //The amount of bone sheets dropped. Mind that this amount gets divided by two, so always use round numbers.
 	var/has_special_parts = FALSE //var for checking during the butcher process.
 	var/list/special_parts = list()//Any special body parts.
 
@@ -234,7 +234,7 @@
 	else if (health < maxHealth * 0.80)
 		to_chat(user, SPAN_WARNING("It has had minor damage done to it."))
 	else if (health < maxHealth)
-		to_chat(user, SPAN_WARNING("It has a few cuts and bruses."))
+		to_chat(user, SPAN_WARNING("It has a few cuts and bruises."))
 
 /mob/living/simple_animal/Life()
 	.=..()
@@ -407,8 +407,8 @@
 	for(var/damage_type in Proj.damage_types)
 		var/damage = Proj.damage_types[damage_type]
 		var/dmult = 1
-		if(LAZYLEN(Proj.effective_faction))
-			if(faction in Proj.effective_faction)
+		for(var/proj_effective_faction in Proj.effective_faction)
+			if(faction == proj_effective_faction)
 				dmult += Proj.damage_mult
 		if(LAZYLEN(Proj.supereffective_types))
 			if(is_type_in_list(src, Proj.supereffective_types, TRUE))
@@ -475,7 +475,7 @@
 				M.visible_message("\red [M] missed \the [src]")
 			else
 				if (istype(M))
-					damage += max(0, (M.stats.getStat(STAT_ROB) / 10))
+					damage += max(0, (M.stats.getStat(STAT_ROB) / 10) + M.punch_damage_increase)
 					if (HULK in M.mutations)
 						damage *= 2
 

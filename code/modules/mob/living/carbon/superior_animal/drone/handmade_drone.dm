@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/handmade
 	name = "Custom-made Drone"
-	desc = "Built from the Phokorus Institute robotics division's craftsmanship, and gathered designs of Similacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
+	desc = "Built from the Phokorus Institute robotics division's craftsmanship, and gathered designs of Simulacrum Robotics, each of these fully robotic automatons is a unique, handmade, heavily armored assembly."
 	icon = 'icons/mob/custom_bot.dmi'
 	faction = "neutral"
 	pass_flags = PASSTABLE
@@ -80,7 +80,7 @@
 		else if (health < maxHealth * 0.80)
 			to_chat(user, SPAN_WARNING("It has had minor damage done to it."))
 		else if (health < maxHealth)
-			to_chat(user, SPAN_WARNING("It has a few cuts and bruses."))
+			to_chat(user, SPAN_WARNING("It has a few cuts and bruises."))
 
 /mob/living/carbon/superior_animal/handmade/Move(NewLoc, Dir = 0, step_x = 0, step_y = 0, var/glide_size_override = 0) //WE CLEAN!
 	. = ..()

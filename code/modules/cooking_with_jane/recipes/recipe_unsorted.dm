@@ -54,3 +54,30 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
 		list(CWJ_USE_OVEN, J_LO, 15 SECONDS)
 	)
+
+/datum/cooking_with_jane/recipe/dumplings
+	cooking_container = PAN
+	product_type = /obj/item/reagent_containers/food/snacks/dumplings
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon),
+		list(CWJ_ADD_PRODUCE, "cabbage", reagent_skip=TRUE),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
+		list(CWJ_ADD_REAGENT, "blackpepper", 1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "capsaicin", 5, base=6, prod_desc="The dumplings have been dipped in spicy chili oil."),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
+		list(CWJ_ADD_REAGENT, "blackpepper", 1),
+		list(CWJ_ADD_REAGENT, "cornoil", 1),
+		list(CWJ_USE_STOVE, J_LO, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/honeypudding
+	cooking_container = POT
+	product_type = /obj/item/reagent_containers/food/snacks/honeypudding
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/chocolatebar),
+		list(CWJ_ADD_REAGENT, "sugar", 3),
+		list(CWJ_ADD_REAGENT, "honey", 15, base=5),
+		list(CWJ_ADD_REAGENT, "cream", 5),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1),
+		list(CWJ_USE_STOVE, J_MED, 15 SECONDS)
+	)

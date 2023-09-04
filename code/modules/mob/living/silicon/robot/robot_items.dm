@@ -423,6 +423,7 @@
 						  QUALITY_DIGGING = 40,
 						  QUALITY_SCREW_DRIVING = 40)
 	force = WEAPON_FORCE_PAINFUL
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Not a real hammer.
 	use_power_cost = 0
 	suitable_cell = null
 	degradation = 0
@@ -439,6 +440,7 @@
 						  QUALITY_DIGGING = 40,
 						  QUALITY_SCREW_DRIVING = 40)
 	force = WEAPON_FORCE_PAINFUL
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Not a real hammer.
 	use_power_cost = 0
 	suitable_cell = null
 	degradation = 0
@@ -454,6 +456,7 @@
 						  QUALITY_SAWING = 30,
 						  QUALITY_SCREW_DRIVING = 40)
 	force = WEAPON_FORCE_PAINFUL
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Not a real hammer.
 	use_power_cost = 0
 	suitable_cell = null
 	degradation = 0
@@ -469,6 +472,7 @@
 						  QUALITY_CUTTING = 150, //So were faster at cutting up boddies
 						  QUALITY_DIGGING = 40)
 	force = WEAPON_FORCE_PAINFUL
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // Not a real hammer.
 	use_power_cost = 0
 	suitable_cell = null
 	degradation = 0
@@ -508,6 +512,7 @@
 /obj/item/tool/crowbar/robotic
 	icon = 'icons/obj/robot_items.dmi'
 	tool_qualities = list(QUALITY_PRYING = 40, QUALITY_HAMMERING = 10) //We can dig but not that fast!
+	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/hammer_addon = TRUE) // No.
 	degradation = 0
 
 /obj/item/tool/wrench/robotic

@@ -14,7 +14,6 @@
 	icon_state = "custodian_forge"
 	designs = list(
 		/datum/design/bioprinter/hearth_lantern,
-		/datum/design/autolathe/tool_upgrade/sanctifier,
 		//molds
 		/datum/design/bioprinter/weapon_mold,
 		/datum/design/bioprinter/armor_mold,
@@ -39,7 +38,7 @@
 		/datum/design/bioprinter/custodian_clothes/enkindled,
 		/datum/design/bioprinter/custodian_clothes/forgemaster,
 		/datum/design/bioprinter/custodian_clothes/oathpledge,
-		/datum/design/bioprinter/belt/utility/neotheology,
+		/datum/design/bioprinter/belt/utility/custodian_belt,
 		/datum/design/bioprinter/custodian_clothes/custodian_boots,
 		//backpacks
 		/datum/design/bioprinter/leather/storage/backpack/satchel/custodian,
@@ -72,11 +71,28 @@
 	desc = "A disk containing specially crafted healing supplies by use of Custodian materials"
 	icon_state = "custodian_health"
 	designs = list(
+		/datum/design/bioprinter/custodian_soap,
 		/datum/design/bioprinter/custodian_healthpack,
 		/datum/design/bioprinter/pouch/ifak,
 		/datum/design/bioprinter/custodian_bruisepack,
 		/datum/design/bioprinter/custodian_ointment
 	)
+
+// EOTP exclusive disk. For when no Forgemaster and you desperately want Hearthcore upgrades.
+/obj/item/computer_hardware/hard_drive/portable/design/nt/upgrades
+	disk_name = "Custodian Hearthcore Upgrades"
+	desc = "A disk from the lower Stronghold, containing advanced Forgemaster designs for upgrades to be applied to a Hearthcore with powerful effects."
+	icon_state = "custodian_armory"
+	designs = list(
+		/datum/design/autolathe/hearthcore_upgrade/cleansing_flames,
+		/datum/design/autolathe/hearthcore_upgrade/natures_blessing,
+		/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness,
+		/datum/design/autolathe/hearthcore_upgrade/blazing_aegis,
+		/datum/design/autolathe/hearthcore_upgrade/burning_fury,
+		/datum/design/autolathe/hearthcore_upgrade/martyr_gift,
+		/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
+	)
+
 
 // Eris NeoTheo stuff. Mostly imbalanced and should not be accessible by players
 // Leaving it not commented out for adminspawn testing purposes.

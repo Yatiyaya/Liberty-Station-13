@@ -42,7 +42,7 @@
 		rad = 0
 	)
 
-//Guild Technician
+// Skylight Syndicate
 /obj/item/clothing/suit/storage/rank/cargo_jacket
 	name = "skylight jacket"
 	desc = "Stylish jacket lined with pockets. It seems have a little protection from physical harm."
@@ -119,9 +119,9 @@
 		usr.update_action_buttons()
 		return 1
 
-//Quartermaster
+// Currently random loot only.
 /obj/item/clothing/suit/storage/rank/qm_coat
-	name = "executive officer coat"
+	name = "smuggler's coat"
 	desc = "An ideal choice for a smuggler. This coat seems have good impact resistance, and is made from resistant and expensive materials."
 	icon_state = "qm_coat"
 	item_state = "qm_coat"
@@ -137,7 +137,20 @@
 	)
 	siemens_coefficient = 0.8
 
-//Botonist
+// Club Manager
+/obj/item/clothing/suit/storage/toggle/club
+	name = "chief executive officer's jacket"
+	desc = "A well tailored and rich jacket for the Chief Executive Officer."
+	icon_state = "cm_coat"
+	item_state = "cm_coat"
+	icon_open = "cm_coat_open"
+	icon_closed = "cm_coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+// Botanist apron, holdover code
 /obj/item/clothing/suit/rank/botanist
 	name = "apron"
 	desc = "A basic yellow apron."
@@ -151,20 +164,7 @@
 		/obj/item/weedkiller
 	)
 
-//Civillian
-/obj/item/clothing/suit/storage/toggle/club
-	name = "chief executive officer's jacket"
-	desc = "A well tailored and rich jacket for the Chief Executive Officer."
-	icon_state = "cm_coat"
-	item_state = "cm_coat"
-	icon_open = "cm_coat_open"
-	icon_closed = "cm_coat"
-	body_parts_covered = UPPER_TORSO|ARMS
-	cold_protection = UPPER_TORSO|ARMS
-	min_cold_protection_temperature = T0C - 20
-	siemens_coefficient = 0.7
-
-//Artist
+// Former Artist clothing
 /obj/item/clothing/suit/artist
 	name = "Complicated Vest"
 	desc = "The tubes don't even do anything."
@@ -350,6 +350,7 @@
 		rad = 0
 	)
 
+// Medical
 /obj/item/clothing/suit/storage/surgical_apron
 	name = "surgical apron"
 	desc = "A sterile blue apron used to take the brunt of blood from surgeries."
@@ -369,3 +370,26 @@
 	)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	price_tag = 50
+
+// Afghankas, sprites by Nayu
+
+/obj/item/clothing/suit/storage/toggle/afghanka_fontaine
+	name = "Fontaine afghanka"
+	desc = "A warm, comfortable military jacket in Fontaine colors."
+	icon_state = "afghanka_fontaine_open"
+	item_state = "afghanka_fontaine_open"
+	icon_open = "afghanka_fontaine_open"
+	icon_closed = "afghanka_fontaine_closed"
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/toggle/afghanka_watch
+	name = "Watch afghanka"
+	desc = "A warm, comfortable military jacket in Liberty Watch colors. A white stripe adorns its right arm sleeve."
+	icon_state = "afghanka_watch_open"
+	item_state = "afghanka_watch_open"
+	icon_open = "afghanka_watch_open"
+	icon_closed = "afghanka_watch_closed"
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+

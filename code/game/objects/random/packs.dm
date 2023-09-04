@@ -51,7 +51,7 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/material = 4,
 					/obj/random/material_rare = 3,
 					/obj/random/material_resources = 8,
-					/obj/random/mecha_equipment = 3,
+					/obj/random/mecha_utility = 3,
 					/obj/random/powercell = 8,
 					/obj/random/techpart = 10,
 					/obj/random/tool = 20,
@@ -67,7 +67,7 @@ They generally give more random result and can provide more divercity in spawn.
 
 
 /obj/random/pack/tech_loot/onestar
-	name = "Random technical similacrum positronic loot"
+	name = "Random technical simulacrum positronic loot"
 	icon_state = "tool-red"
 	desc = "This is a random technical loot."
 
@@ -134,7 +134,7 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/tool_upgrade/rare = 4,
 					/obj/random/rig_module/rare = 4,
 					/obj/random/credits/c500 = 3,
-					/obj/random/mecha_equipment = 3,
+					/obj/random/mecha_utility = 3,
 					/obj/random/cloth/holster = 4,
 					/obj/item/stash_spawner = 4 //Creates a stash of goodies for a scavenger hunt
 	))
