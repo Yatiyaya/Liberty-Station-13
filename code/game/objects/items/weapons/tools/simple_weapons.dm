@@ -279,7 +279,7 @@
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
+	force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
 	armor_penetration =  ARMOR_PEN_EXTREME//seriously someone buffed this too much so im nerfing it on other swords.- dromkii
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
