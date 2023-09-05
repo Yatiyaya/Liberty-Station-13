@@ -154,7 +154,7 @@
 	colony_allied_turret = TRUE
 	circuit = /obj/item/circuitboard/artificer_turret
 	installation = null
-	var/obj/item/ammo_magazine/ammo_box = list(/obj/item/ammo_magazine/ammobox/light_rifle_257/scrap,/obj/item/ammo_magazine/ammobox/light_rifle_257, /obj/item/ammo_magazine/speed_loader_light_rifle_257,  /obj/item/ammo_casing/light_rifle_257/rubber)
+	var/obj/item/ammo_magazine/ammo_box = list(/obj/item/ammo_magazine/ammobox/light_rifle_257, obj/item/ammo_magazine/ammobox/light_rifle_257_small, /obj/item/ammo_casing/light_rifle_257)
 	var/ammo = 0 // number of bullets left.
 	var/ammo_max = 200
 	var/obj/item/cell/large/cell = null
