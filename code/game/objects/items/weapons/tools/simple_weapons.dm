@@ -287,8 +287,8 @@
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("xenomorph", "balkan", "circhosian") // Same as the combat sword, but also cultists
-	damage_mult = 1.5
+	effective_faction = list("xenomorph", "balkan") // Same as the combat sword
+	damage_mult = 1.2
 
 /obj/item/tool/sword/katana_makeshift
 	name = "makeshift katana"

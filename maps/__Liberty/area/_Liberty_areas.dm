@@ -837,20 +837,20 @@
 	icon_state = "libertyyellow"
 
 /area/liberty/crew_quarters/dorm1
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom One"
 	icon_state = "Sleep"
 
 /area/liberty/crew_quarters/dorm2
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Two"
 
 /area/liberty/crew_quarters/dorm3
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Three"
 
 /area/liberty/crew_quarters/dorm4
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Four"
 
 /area/liberty/crew_quarters/dorm5
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Five"
 
 /area/liberty/crew_quarters/podrooms
 	name = "\improper Upper Pod Dormitories"
@@ -1650,9 +1650,9 @@ area/liberty/medical/medbaymeeting
 	name = "Supply Shuttle Dock"
 	icon_state = "erisgreen"
 
-/area/liberty/quartermaster/misc
-	name = "\improper Cargo Barracks"
-	icon_state = "libertyyellow"
+/area/liberty/quartermaster/fightclub
+	name = "\proper The Rage Cage"
+	icon_state = "erisblue"
 
 /area/liberty/quartermaster/supplydock
 	name = "\improper Cargo Delivery Dock"
