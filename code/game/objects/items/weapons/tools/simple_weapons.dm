@@ -240,7 +240,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_sword"//new sprites by dromki.
 	item_state = "combat_sword"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_STEEL = 15)//who the hell gave 15 plas and 5 plastic??-dromki
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
@@ -251,9 +251,9 @@
 		slot_back_str = "combat_sword"
 		)
 	worksound = WORKSOUND_HARD_SLASH
-	force = WEAPON_FORCE_ROBUST
-	armor_penetration = ARMOR_PEN_DEEP
-	effective_faction = list("xenomorph", "balkan") // The factions mentioned on the blade's description
+	force = WEAPON_FORCE_NORMAL
+	armor_penetration = ARMOR_PEN_MODERATE
+	effective_faction = list("roach", "termite") // The factions mentioned on the blade's description//the sword was designed to bonk bugs not xenomorph aliens or mercs.
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
@@ -279,15 +279,15 @@
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = WEAPON_FORCE_BRUTAL
-	armor_penetration = ARMOR_PEN_MASSIVE
+	force = force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
+	armor_penetration =  ARMOR_PEN_EXTREME//seriously someone buffed this too much so im nerfing it on other swords.- dromkii
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("xenomorph", "balkan", "circhosian") // Same as the combat sword, but also cultists
+	effective_faction = list("roach", "spider") // Same as the combat sword, but also cultists//who made that was crazy buffing the sword more than already was-dromkii
 	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift
