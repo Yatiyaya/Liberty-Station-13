@@ -5523,7 +5523,6 @@
 /obj/random/gun_handmade/willspawn,
 /obj/random/gun_cheap,
 /obj/item/rocket_engine,
-/obj/item/tool/sword/union,
 /obj/item/shield/parrying,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
@@ -34742,7 +34741,6 @@
 /obj/random/gun_handmade/willspawn,
 /obj/item/rocket_engine,
 /obj/random/gun_cheap,
-/obj/item/tool/sword/union,
 /obj/item/shield/parrying,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
@@ -89209,6 +89207,12 @@
 /obj/item/storage/hcases/parts/has_items_spawn,
 /obj/item/tape/engineering,
 /obj/item/tape/engineering,
+/obj/item/cell/medium,
+/obj/item/cell/medium,
+/obj/item/cell/small,
+/obj/item/cell/small,
+/obj/item/cell/large/high,
+/obj/item/cell/large/high,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "utP" = (
