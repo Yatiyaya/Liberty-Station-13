@@ -13,7 +13,7 @@
 /decl/hierarchy/outfit/job/trapper
 	name = OUTFIT_JOB_NAME("Fontaine Heavy Industries - Trapper")
 	uniform = /obj/item/clothing/under/turtleneck/fontaine/trapper
-	head = /obj/item/clothing/head/trapper
+	head = /obj/item/clothing/head/hood/trapper
 	suit = /obj/item/clothing/suit/greatcoat/trapper
 	glasses = /obj/item/clothing/glasses/sunglasses/esquimal
 	gloves = /obj/item/clothing/gloves/thick/fontaine

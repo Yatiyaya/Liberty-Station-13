@@ -838,6 +838,20 @@ var/list/name_to_material
 	sheet_singular_name = "piece"
 	sheet_plural_name = "pieces"
 
+/material/darkbone
+	name = MATERIAL_DARKBONE
+	stack_type = /obj/item/stack/material/darkbone
+	icon_colour = "#3a3b33"
+	sheet_singular_name = "dark bone"
+	sheet_plural_name = "dark bones"
+
+/material/chitin
+	name = MATERIAL_CHITIN
+	stack_type = /obj/item/stack/material/chitin
+	icon_colour = "#363636"
+	sheet_singular_name = "chitin"
+	sheet_plural_name = "chitin"
+
 /material/sandbag
 	name = MATERIAL_SANDBAG
 	stack_type = /obj/item/stack/material/sandbag

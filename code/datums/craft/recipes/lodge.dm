@@ -110,8 +110,8 @@
 
 // Armor --------------------
 /datum/craft_recipe/trapper/hunter_hood
-	name = "Trappers's hat"
-	result = /obj/item/clothing/head/trapper
+	name = "Trappers's hood"
+	result = /obj/item/clothing/head/hood/trapper
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_LEATHER, "time" = 60),
@@ -122,7 +122,7 @@
 	)
 
 /datum/craft_recipe/trapper/hunter_armor_basic
-	name = "Trapper coat"
+	name = "Trapper furcoat"
 	result = /obj/item/clothing/suit/greatcoat/trapper
 	icon_state = "clothing"
 	steps = list(
