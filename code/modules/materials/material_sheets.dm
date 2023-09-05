@@ -488,7 +488,7 @@
 
 /obj/item/stack/material/chitin
 	name = MATERIAL_CHITIN
-	desc = "A strange textured piece of an large incests exoskeleton, acting as an organic polymer material."
+	desc = "A strange textured piece of an large insects exoskeleton, acting as an organic polymer material."
 	singular_name = "chitin"
 	icon_state = "chitin"
 	default_type = MATERIAL_CHITIN
