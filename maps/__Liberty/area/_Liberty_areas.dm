@@ -1063,10 +1063,10 @@
 	ambience = list('sound/ambience/stronghold.ogg')
 	icon_state = "erisgreen"
 
-/area/liberty/bonfire/armory
-	name = "Stronghold Armory"
+/area/liberty/bonfire/alchemist
+	name = "Stronghold Brewing Room"
 	ambience = list('sound/ambience/stronghold.ogg')
-	icon_state = "head_quarters"
+	icon_state = "hammerblue"
 
 //Engineering
 

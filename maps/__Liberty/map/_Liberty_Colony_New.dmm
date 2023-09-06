@@ -6327,7 +6327,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/hydroponics/garden)
 "bAs" = (
@@ -10143,7 +10143,7 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "cyz" = (
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
 	},
@@ -10807,7 +10807,7 @@
 /area/liberty/maintenance/substation/cargo)
 "cFU" = (
 /obj/structure/flora/ausbushes/pointybush,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
@@ -12775,7 +12775,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 4
 	},
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/outside/inside_colony)
@@ -18034,7 +18034,7 @@
 	pixel_x = -32;
 	pixel_y = -10
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -24755,7 +24755,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "fNP" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/skyyard)
 "fNQ" = (
@@ -26294,7 +26294,7 @@
 /obj/structure/sign/faction/neotheology{
 	pixel_x = 32
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/crew_quarters/hydroponics/garden)
 "ggh" = (
@@ -30578,7 +30578,7 @@
 	pixel_x = 4;
 	pixel_y = -28
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -30840,7 +30840,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/cafe,
@@ -31383,7 +31383,7 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/engineering/engine_room)
 "hrS" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -33737,7 +33737,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
 "hTt" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -35338,7 +35338,7 @@
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = -32
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/wood/wild3,
@@ -37606,7 +37606,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "iLk" = (
@@ -38905,7 +38905,7 @@
 /obj/structure/closet/wall_mounted{
 	pixel_x = -32
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/wood/wild3,
@@ -39292,7 +39292,7 @@
 /area/liberty/maintenance/undergroundfloor1south)
 "jfL" = (
 /obj/structure/table/bench/padded,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /turf/simulated/floor/carpet,
@@ -43475,7 +43475,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -45758,7 +45758,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/machinery/light_switch{
@@ -46577,7 +46577,7 @@
 	},
 /area/liberty/maintenance/undergroundfloor1west)
 "kPe" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -47299,7 +47299,7 @@
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/maintenance/undergroundfloor1north)
 "kXU" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass,
@@ -49567,7 +49567,7 @@
 /area/liberty/outside/inside_colony)
 "lCC" = (
 /obj/structure/catwalk,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/plating/under,
@@ -51883,7 +51883,7 @@
 /obj/effect/floor_decal/industrial/loading/white{
 	dir = 4
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /obj/machinery/holoposter{
@@ -57460,7 +57460,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -61681,7 +61681,7 @@
 /obj/item/reagent_containers/food/snacks/meat,
 /obj/item/reagent_containers/food/drinks/bottle/cream,
 /obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/absolutism/vectorrooms)
 "okN" = (
@@ -61934,7 +61934,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -63659,7 +63659,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -65601,7 +65601,7 @@
 "peU" = (
 /obj/structure/table/woodentable,
 /obj/structure/reagent_dispensers/cahorsbarrel,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "peV" = (
@@ -65985,7 +65985,7 @@
 /obj/structure/sign/faction/neotheology_cross{
 	pixel_y = 30
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/storage)
 "pja" = (
@@ -67225,7 +67225,7 @@
 /area/liberty/rnd/robotics)
 "pxW" = (
 /obj/structure/catwalk,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /obj/machinery/light_switch{
 	pixel_y = 32
 	},
@@ -70240,7 +70240,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/machinery/light_switch{
@@ -71349,7 +71349,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor1west)
 "qtq" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "qtt" = (
@@ -75922,7 +75922,7 @@
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/chapel)
 "rwy" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -76419,7 +76419,7 @@
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
 	},
@@ -76580,7 +76580,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -80254,7 +80254,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -81342,7 +81342,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/personal/shipbreaker,
 /turf/simulated/floor/tiled/dark,
@@ -84373,7 +84373,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 10
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -85683,7 +85683,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "tHR" = (
 /obj/structure/closet/secure_closet/personal/shipbreaker,
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "tHS" = (
@@ -86696,7 +86696,7 @@
 /obj/structure/sign/faction/neotheology{
 	pixel_x = -30
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/crew_quarters/hydroponics/garden)
 "tRG" = (
@@ -91187,7 +91187,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
@@ -95260,7 +95260,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/security/barracks)
 "vLI" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
@@ -99203,7 +99203,7 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/maintenance/undergroundfloor1east)
 "wGv" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/crew_quarters/hydroponics/garden)
@@ -102826,7 +102826,7 @@
 /area/liberty/crew_quarters/bar)
 "xAL" = (
 /obj/machinery/power/torchbearer,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -103834,7 +103834,7 @@
 /obj/structure/reagent_dispensers/cahorsbarrel,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
@@ -104299,7 +104299,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,

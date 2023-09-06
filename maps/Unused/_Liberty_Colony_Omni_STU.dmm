@@ -2500,7 +2500,7 @@
 /turf/simulated/floor/plating,
 /area/liberty/engineering/shield_generator)
 "azb" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/crew_quarters/hydroponics/garden)
 "azh" = (
@@ -2544,7 +2544,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "azO" = (
@@ -4553,7 +4553,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "aUn" = (
 /obj/random/furniture/pottedplant,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/absolutism/bioreactor)
 "aUp" = (
@@ -7375,7 +7375,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "bwG" = (
 /obj/structure/railing,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/dirt/dust,
@@ -8127,7 +8127,7 @@
 	name = "\improper Upper Research Hallway"
 	})
 "bFp" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8839,7 +8839,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -9313,7 +9313,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/medical/psych)
 "bRX" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -11248,7 +11248,7 @@
 /area/liberty/engineering/atmos/storage)
 "cnh" = (
 /obj/structure/catwalk,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/plating/under,
 /area/liberty/command/crematorium)
 "cny" = (
@@ -14137,7 +14137,7 @@
 /area/liberty/hallway/side/f2section1)
 "cOY" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/structure/table/rack,
@@ -18765,7 +18765,7 @@
 "dKJ" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/toolbox,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/danger,
@@ -20751,7 +20751,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/dcave)
 "eee" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/absolutism/bioreactor)
 "eeq" = (
@@ -20870,7 +20870,7 @@
 "efu" = (
 /obj/structure/catwalk,
 /obj/structure/invislight,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/inside_colony)
 "efv" = (
@@ -23555,7 +23555,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "eIV" = (
 /obj/random/furniture/pottedplant,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -26785,7 +26785,7 @@
 "fmU" = (
 /obj/structure/table/bench/padded,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
@@ -28559,7 +28559,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -35635,7 +35635,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "gUr" = (
@@ -35701,7 +35701,7 @@
 	convdir = -1;
 	id = "churchgardenCon"
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/hydroponics/garden)
 "gVg" = (
@@ -37907,7 +37907,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/hydroponics/garden)
 "hqt" = (
@@ -51626,7 +51626,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "kaj" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/wood/wild3,
@@ -52755,7 +52755,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -56409,7 +56409,7 @@
 /obj/machinery/power/wall_obelisk{
 	pixel_y = 22
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/crew_quarters/hydroponics/garden)
 "kUU" = (
@@ -57386,7 +57386,7 @@
 /area/liberty/command/RP)
 "leh" = (
 /obj/machinery/vending/containers,
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "lei" = (
@@ -60122,7 +60122,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/tactical)
 "lGk" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -69114,7 +69114,7 @@
 /area/liberty/command/panic_room)
 "nsn" = (
 /obj/structure/dispenser/oxygen,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -70280,7 +70280,7 @@
 "nFH" = (
 /obj/structure/flora/small/rock3,
 /obj/structure/invislight,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/asteroid/dirt,
@@ -73999,7 +73999,7 @@
 "opN" = (
 /obj/structure/table/woodentable,
 /obj/machinery/recharger,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -80257,7 +80257,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 4
 	},
 /turf/simulated/floor/plating/under,
@@ -86578,7 +86578,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/bioreactor)
 "qQO" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = 32
 	},
@@ -87009,7 +87009,7 @@
 	})
 "qUT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /turf/simulated/floor/carpet,
@@ -87699,7 +87699,7 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
@@ -90445,7 +90445,7 @@
 /area/liberty/command/bridge)
 "rBK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -92104,7 +92104,7 @@
 "rRY" = (
 /obj/machinery/autolathe,
 /obj/structure/catwalk,
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -94750,7 +94750,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -95235,7 +95235,7 @@
 /area/liberty/maintenance/surface_maints_1)
 "sxY" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/inside_colony)
 "syb" = (
@@ -98677,7 +98677,7 @@
 /area/liberty/outside/forest)
 "tjE" = (
 /obj/machinery/power/torchbearer,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
@@ -100149,7 +100149,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/bioreactor)
 "tzo" = (
@@ -104368,7 +104368,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "usk" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 4
 	},
 /obj/machinery/alarm{
@@ -105479,7 +105479,7 @@
 /turf/simulated/floor/beach/water/jungledeep,
 /area/liberty/maintenance/undergroundfloor1east)
 "uBy" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -105991,7 +105991,7 @@
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/dungeon/outside/burned_outpost)
 "uGA" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -107485,7 +107485,7 @@
 	dir = 8;
 	pixel_x = 27
 	},
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/reinforced/field_shepherd,
@@ -107874,7 +107874,7 @@
 /area/liberty/outside/pond)
 "uYT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/structure/sign/faction/neotheology_cross/gold{
@@ -107910,7 +107910,7 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/dungeon/outside/abandoned_solars)
 "uZv" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -111795,7 +111795,7 @@
 /obj/machinery/vending/cigarette,
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/effect/floor_decal/industrial/outline,
-/obj/machinery/camera/network/propis,
+/obj/machinery/camera/network/fontaine,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "vLu" = (
@@ -114038,7 +114038,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/box/red,
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -116466,7 +116466,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -117118,7 +117118,7 @@
 	req_access = list(78)
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/propis{
+/obj/machinery/camera/network/fontaine{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -119064,7 +119064,7 @@
 /area/liberty/rnd/docking)
 "xfb" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/liberty/outside/inside_colony)
 "xfc" = (
@@ -120729,7 +120729,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/golden,
@@ -121148,7 +121148,7 @@
 /turf/simulated/floor/tiled/steel/greencorner,
 /area/liberty/hallway/main/stairwell)
 "xBq" = (
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/wood,
 /area/liberty/absolutism/vectorrooms)
 "xBr" = (
@@ -121377,7 +121377,7 @@
 /obj/structure/sign/faction/neotheology_cross{
 	pixel_y = 30
 	},
-/obj/machinery/camera/network/church,
+/obj/machinery/camera/network/custodians,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/inside_colony)
 "xDL" = (
@@ -122090,7 +122090,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/quartermaster/miningdock)
 "xKz" = (
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 1
 	},
 /obj/structure/sign/faction/neotheology_cross/gold{
@@ -124767,7 +124767,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 6
 	},
-/obj/machinery/camera/network/church{
+/obj/machinery/camera/network/custodians{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/golden,

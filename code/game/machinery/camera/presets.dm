@@ -3,8 +3,8 @@ var/global/list/station_networks = list(
 	NETWORK_COLONY_SURFACE,
 	NETWORK_COLONY_UNDERGROUND,
 	NETWORK_COLONY_TRANSITION,
-	NETWORK_CHURCH,
-	NETWORK_PROP,
+	NETWORK_BONFIRE,
+	NETWORK_FONTAINE,
 	NETWORK_COMMAND,
 	NETWORK_ENGINE,
 	NETWORK_ENGINEERING,
@@ -44,11 +44,11 @@ var/global/list/engineering_networks = list(
 /obj/machinery/camera/network/colony_transition
 	network = list(NETWORK_COLONY_TRANSITION)
 
-/obj/machinery/camera/network/church
-	network = list(NETWORK_CHURCH)
+/obj/machinery/camera/network/custodians
+	network = list(NETWORK_BONFIRE)
 
-/obj/machinery/camera/network/propis
-	network = list(NETWORK_PROP)
+/obj/machinery/camera/network/fontaine
+	network = list(NETWORK_FONTAINE)
 
 /obj/machinery/camera/network/plasma_tag
 	network = list(NETWORK_PLASMA_TAG)

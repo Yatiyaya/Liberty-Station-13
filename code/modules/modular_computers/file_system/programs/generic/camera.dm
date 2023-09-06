@@ -13,9 +13,9 @@
 			return access_rp
 		if(NETWORK_PRISON, NETWORK_GATE)
 			return access_security
-		if(NETWORK_PROP)
+		if(NETWORK_FONTAINE)
 			return access_eva
-		if(NETWORK_CHURCH)
+		if(NETWORK_BONFIRE)
 			return access_bonfire_disciple
 		if(NETWORK_ENGINEERING,NETWORK_ENGINE)
 			return access_engine
