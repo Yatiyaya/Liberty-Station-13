@@ -240,7 +240,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_sword"//new sprites by dromki.
 	item_state = "combat_sword"
-	matter = list(MATERIAL_STEEL = 15)//who the hell gave 15 plas and 5 plastic??-dromki
+	matter = list(MATERIAL_STEEL = 15)
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
@@ -253,7 +253,7 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_MODERATE
-	effective_faction = list("roach", "termite") // The factions mentioned on the blade's description//the sword was designed to bonk bugs not xenomorph aliens or mercs.
+	effective_faction = list("roach", "termite") // The factions mentioned on the blade's description
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
@@ -280,14 +280,14 @@
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
-	armor_penetration =  ARMOR_PEN_EXTREME//seriously someone buffed this too much so im nerfing it on other swords.- dromkii
+	armor_penetration =  ARMOR_PEN_EXTREME
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("roach", "spider") // Same as the combat sword, but also cultists//who made that was crazy buffing the sword more than already was-dromkii
+	effective_faction = list("roach", "spider", "balkan", "circhosian") // Same as the combat sword, but also cultists and balkan as its fancy
 	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift
