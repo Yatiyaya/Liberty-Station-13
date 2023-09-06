@@ -71,7 +71,7 @@
 	icon_state = "disposal"
 
 /area/liberty/maintenance/northcave
-	name = "Caves"
+	name = "Underground Floor 2 North Caves"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/disposal
@@ -105,7 +105,7 @@
 /area/liberty/maintenance/oldlibrary
 	name = "Abandoned Library"
 	icon_state = "erisgreen"
-	requires_power = FALSE
+	requires_power = FALSE // Eerie power surrounding the rituals powers the place
 
 // Required for the turrets to work
 /area/liberty/maintenance/oldarmory
@@ -143,7 +143,7 @@
 
 /area/liberty/maintenance/sunkenclub
 	name = "Abandoned Club"
-	icon_state = "section2deck3port"
+	icon_state = "cafeteria"
 
 /area/liberty/maintenance/constructionarea
 	name = "Construction Area"
@@ -157,8 +157,9 @@
 /area/liberty/maintenance/oldmining
 	name = "Abandoned Mine Shaft East"
 	icon_state = "section2deck2starboard"
+	requires_power = FALSE
 
-/area/liberty/maintenance/oldmining
+/area/liberty/maintenance/oldminingwest
 	name = "Abandoned Mine Shaft West"
 	icon_state = "section2deck2starboard"
 
@@ -167,15 +168,15 @@
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/caveameridian
-	name = "Maintenance North Caves"
+	name = "Underground Floor 2 North Anomalous Cave"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/cavenightmare
-	name = "Maintenance East Caves"
+	name = "Underground Floor 2 East Caves"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/caveagape
-	name = "Maintenance South Caves"
+	name = "Underground Floor 2 South Caves"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/undergroundfloor3south
@@ -192,6 +193,22 @@
 
 /area/liberty/maintenance/undergroundfloor3west
 	name = "Underground Floor 2 West Maintenance"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/oldkitchen
+	name = "Abandoned Kitchen"
+	icon_state = "hammerblue"
+
+/area/liberty/maintenance/bank
+	name = "Abandoned Bank"
+	icon_state = "hammerred"
+
+/area/liberty/maintenance/maint_merc
+	name = "Derelict Mercenary Base"
+	icon_state = "syndie-elite"
+
+/area/liberty/maintenance/saloon
+	name = "Abandoned Hairdresser Saloon"
 	icon_state = "erisblue"
 
 //Outside abandoned structures
@@ -538,7 +555,7 @@
 
 /area/liberty/outside/range
 	name = "Public Firing Range"
-	icon_state = "erisgreen"
+	icon_state = "firingrange"
 	allows_weather_of_snow = TRUE
 	is_dungeon_lootable = FALSE
 	requires_power = FALSE
@@ -824,13 +841,12 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/crew_quarters/toilet
-	name = "\improper Dormitory Toilets"
+	name = "Surface Public Toilets"
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 
 /area/liberty/crew_quarters/toilet/public
-	name = "Public Toilet"
-	icon_state = "libertyyellow"
+	name = "Floor 2 Public Toilet"
 
 /area/liberty/crew_quarters/toilet/medbay
 	name = "Medbay Toilet"
@@ -838,19 +854,23 @@
 
 /area/liberty/crew_quarters/dorm1
 	name = "\improper Dormitory Bedroom One"
-	icon_state = "Sleep"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm2
 	name = "\improper Dormitory Bedroom Two"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm3
 	name = "\improper Dormitory Bedroom Three"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm4
 	name = "\improper Dormitory Bedroom Four"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm5
 	name = "\improper Dormitory Bedroom Five"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/podrooms
 	name = "\improper Upper Pod Dormitories"
@@ -860,6 +880,7 @@
 
 /area/liberty/crew_quarters/hotsprings
 	name = "\improper Indoors Hot Spring"
+	icon_state = "purple"
 
 /area/liberty/crew_quarters/sleep
 	name = "\improper Dormitories"
@@ -936,7 +957,7 @@
 
 /area/liberty/crew_quarters/bar/vip
 	name = "\improper VIP Room"
-	icon_state = "bar"
+	icon_state = "cafeteria"
 
 /area/liberty/crew_quarters/outerspess
 	name = "\improper Shuttle Room"
@@ -944,7 +965,7 @@
 
 /area/liberty/crew_quarters/barbackroom
 	name = "Bar Backroom"
-	icon_state = "erisgreen"
+	icon_state = "maint_bar"
 
 /area/liberty/crew_quarters/theatre
 	name = "\improper Theatre"
@@ -1011,7 +1032,7 @@
 
 /area/liberty/bonfire/stronghold
 	name = "\improper Stronghold"
-	icon_state = "chapel"
+	icon_state = "hammerblue"
 	ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
 	sound_env = LARGE_ENCLOSED
 
@@ -1033,7 +1054,7 @@
 
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
-	icon_state = "chapeloffice"
+	icon_state = "hamerred"
 	ambience = list('sound/ambience/stronghold.ogg')
 	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
@@ -1388,7 +1409,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/paramedic
 	name = "\improper Medical Locker room"
-	icon_state = "erisyellow"
+	icon_state = "medbay3"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
 /area/liberty/medical/medbay/iso
@@ -1401,6 +1422,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/organ_lab
 	name = "Organ Laboratory"
+	icon_state = "medbay4"
 
 //Security
 
@@ -1474,7 +1496,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/security/nuke_storage
 	name = "\improper Vault"
-	icon_state = "nuke_storage"
+	icon_state = "hammerred"
 
 /area/liberty/security/checkpoint
 	name = "\improper Security Checkpoint"
