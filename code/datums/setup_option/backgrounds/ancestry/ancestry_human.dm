@@ -8,7 +8,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_COG = 5, STAT_BIO = 10, STAT_MEC = 10) //Pretty bad perk baked into this so
+	stat_modifiers = list(STAT_COG = 5, STAT_BIO = 5, STAT_VIG = 5) //Pretty bad perk baked into this so//pretty unbalanced start for a character so is going with 5 as every other ancestry.
 
 	perks = list(PERK_SOLBORN)
 
