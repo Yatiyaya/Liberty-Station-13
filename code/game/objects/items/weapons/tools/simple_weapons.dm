@@ -236,7 +236,7 @@
 
 /obj/item/tool/sword/union
 	name = "Combat Sword"
-	desc = "A Sturdy Combat Sword, seen in many conflicts around the galaxy and ideal to fight alien lifeforms, raiders or as a nice gardering tool, this one has a special design and a knuckleduster on it."
+	desc = "A Sturdy Combat Sword, seen in many conflicts around the galaxy and ideal to fight overgrown insect lifeforms, raiders or as a nice gardering tool, this one has a special design and a knuckleduster on it."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_sword"//new sprites by dromki.
 	item_state = "combat_sword"
@@ -273,8 +273,8 @@
 
 /obj/item/tool/sword/katana/union
 	name = "Diamond Edge Sword"
-	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries,duelists or well paid Bodyguards this sword is special in design, balance and made for a true fighter, if said fighter can afford a weapon like this."
-	icon_state = "diamond_edge" // New sprite courtesy of nayu//replaced by dromki with new design and mob sprites.
+	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries, duelists or well paid Bodyguards that specialize in insect eradication, balance and made for a true fighter, if said fighter can afford a weapon like this."
+	icon_state = "diamond_edge" //replaced by dromki with new design and mob sprites.
 	item_state = "diamond_edge"
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
