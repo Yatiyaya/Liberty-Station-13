@@ -300,7 +300,7 @@
 /obj/item/clothing/head/helmet/marshal/ushanka/verb/toggle_style()
 	var/list/options = list()
 	options["Ushanka"] = "LWushanka"
-	options["Ushanka Alt"] = "LWshanka_alt"
+	options["Ushanka Alt"] = "LWushanka_alt"
 
 //Custodians
 
