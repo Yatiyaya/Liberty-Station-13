@@ -93,7 +93,7 @@
 
 ///////////////////////////////////////////////////////////
 
-#include "map/_event_games.dmm"
+//#include "map/_event_games.dmm"
 
 /obj/map_data/event_map_games
 	name = "games map_data"

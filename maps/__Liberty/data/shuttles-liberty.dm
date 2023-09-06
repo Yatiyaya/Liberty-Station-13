@@ -6,7 +6,7 @@
 	shuttle_area = /area/shuttle/surface_transport_lz
 	current_location = "nav_pad_surface_transport"
 	landmark_transition = "nav_transit_surface_transport"
-	destination_tags = list("nav_pad_surface_transport", "nav_hunting_lodge", "nav_deep_forest", "nav_swamps", "nav_river_forest", "nav_games")
+	destination_tags = list("nav_pad_surface_transport", "nav_hunting_lodge", "nav_deep_forest", "nav_swamps", "nav_river_forest")
 
 /obj/effect/shuttle_landmark/surface_transport
 	name = "Surface Transport Shuttle Pad"
