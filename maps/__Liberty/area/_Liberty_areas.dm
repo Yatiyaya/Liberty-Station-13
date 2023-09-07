@@ -1054,7 +1054,7 @@
 
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
-	icon_state = "hamerred"
+	icon_state = "hammerred"
 	ambience = list('sound/ambience/stronghold.ogg')
 	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
@@ -1490,18 +1490,6 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Security - Tactical Equipment"
 	icon_state = "Tactical"
 
-/area/liberty/security/tactical_blackshield
-	name = "\improper Blackshield - Tactical Equipment"
-	icon_state = "Tactical"
-
-/area/liberty/security/nuke_storage
-	name = "\improper Vault"
-	icon_state = "hammerred"
-
-/area/liberty/security/checkpoint
-	name = "\improper Security Checkpoint"
-	icon_state = "checkpoint1"
-
 /area/liberty/security/maingate
 	name = "\improper Security - Main Gate"
 	icon_state = "security"
@@ -1515,100 +1503,20 @@ area/liberty/medical/medbaymeeting
 	allows_weather_of_snow = TRUE
 //	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 
-
-/area/liberty/security/checkpoint/supply
-	name = "Security Post - Cargo Bay"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/engineering
-	name = "Security Post - Engineering"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/medical
-	name = "Security Post - Medbay"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/science
-	name = "Security Post - Science"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/cryo
-	name = "Security Post - Cryogenics"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/triage
-	name = "\improper Security Triage"
-	icon_state = "security"
-
-/area/liberty/security/triage_blackshield
-	name = "\improper Blackshield Triage"
-	icon_state = "security"
-
 /area/liberty/security/vacantoffice2
 	name = "\improper Vacant Office"
 	icon_state = "security"
-
-/area/liberty/security/inspectors_office
-	name = "Inspectors Office"
-	icon_state = "hammerblue"
-	area_light_color = COLOR_LIGHTING_CREW_SOFT
-
-/area/liberty/security/disposal
-	name = "Security Disposal"
-	flags = AREA_FLAG_RAD_SHIELDED
-	icon_state = "hammerblue"
-	is_maintenance = TRUE
-
-/area/liberty/security/barracks
-	name = "Barracks"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm1
-	name = "Security Dormitory 1"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm2
-	name = "Security Dormitory 2"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm3
-	name = "Security Dormitory 3"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm4
-	name = "Security Dormitory 4"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm5
-	name = "Security Dormitory 5"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm6
-	name = "Security Dormitory 6"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm7
-	name = "Security Dormitory 7"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm8
-	name = "Security Dormitory 8"
-	icon_state = "hammerblue"
 
 /area/liberty/security/prisoncells
 	name = "Prison Cells"
 	icon_state = "hammerblue"
 
-/area/liberty/security/laber_area
-	name = "Labor Transfer"
-	icon_state = "hammerblue"
-
 /area/liberty/security/hut_cell1
-	name = "HuT Cell 1"
+	name = "Permanent Holding"
 	icon_state = "hammerblue"
 
 /area/liberty/security/hut_cell2
-	name = "HuT Cell 2"
+	name = "Solitary Confinement"
 	icon_state = "hammerblue"
 
 /area/liberty/security/evidencestorage
@@ -1616,16 +1524,9 @@ area/liberty/medical/medbaymeeting
 	icon_state = "hammerred"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
-/area/liberty/security/exerooms
-	name = "Executive Rooms"
+/area/liberty/security/eva_sec
+	name = "Watch E.V.A. Storage"
 	icon_state = "hammerred"
-	area_light_color = COLOR_LIGHTING_SCI_DARK
-
-/area/liberty/security/maintpost
-	name = "Maintenance Post"
-	flags = AREA_FLAG_RAD_SHIELDED
-	icon_state = "hammerred"
-	is_maintenance = TRUE
 
 //Cargo
 
@@ -1681,6 +1582,9 @@ area/liberty/medical/medbaymeeting
 	icon_state = "erisgreen"
 	base_turf = /turf/simulated/floor/tiled/dark/cargo
 
+/area/liberty/quartermaster/vault
+	name = "Skylight Vault"
+	icon_state = "hammerred"
 
 //Research and Development
 

@@ -87,7 +87,7 @@
 			var/mob/living/carbon/human/H = O
 			if(!H.eyecheck() <= 0)
 				continue
-			O.flash(strength, FALSE , TRUE , TRUE , 10)
+			O.flash(strength, TRUE , TRUE , TRUE , 10)
 		else
 			if(isrobot(O))
 				var/mob/living/silicon/robot/robo = O

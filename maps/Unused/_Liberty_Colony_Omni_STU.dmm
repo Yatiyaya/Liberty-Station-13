@@ -5691,7 +5691,7 @@
 	},
 /obj/effect/floor_decal/industrial/arrows/white,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "bfA" = (
@@ -6264,7 +6264,7 @@
 /obj/random/material_rare/low_chance,
 /obj/random/material_rare/low_chance,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "blB" = (
 /obj/effect/spider/stickyweb,
 /obj/machinery/light/small{
@@ -6862,7 +6862,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "brf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9715,7 +9715,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "bWA" = (
@@ -13974,7 +13974,7 @@
 /obj/random/material_rare/low_chance,
 /obj/random/material_rare/low_chance,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "cNt" = (
 /obj/structure/table/bench/standard,
 /turf/simulated/floor/tiled/white/cargo,
@@ -16822,7 +16822,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "drr" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/asteroid/grass,
@@ -27139,7 +27139,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "fpY" = (
@@ -29110,7 +29110,7 @@
 "fHC" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "fHK" = (
@@ -30283,7 +30283,7 @@
 "fUm" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "fUp" = (
@@ -30823,7 +30823,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "fZL" = (
@@ -32706,7 +32706,7 @@
 /area/liberty/outside/forest)
 "gqw" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "gqD" = (
@@ -32907,7 +32907,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "gsr" = (
@@ -33297,7 +33297,7 @@
 /area/liberty/quartermaster/hangarsupply)
 "gxH" = (
 /turf/simulated/mineral,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "gxQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/constructable_frame/machine_frame,
@@ -33323,7 +33323,7 @@
 /obj/item/roller,
 /obj/item/roller,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "gyi" = (
@@ -35027,7 +35027,7 @@
 	},
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "gNr" = (
@@ -35325,7 +35325,7 @@
 /area/turret_protected/ai)
 "gQt" = (
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "gQL" = (
@@ -35862,7 +35862,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "gWK" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 4
@@ -36847,7 +36847,7 @@
 	},
 /obj/machinery/autodoc,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "hfJ" = (
@@ -38951,7 +38951,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "hBs" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
@@ -39426,7 +39426,7 @@
 "hHv" = (
 /obj/landmark/storyevent/hidden_vent_antag,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "hHD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/coffee,
@@ -50244,7 +50244,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "jNc" = (
@@ -50937,7 +50937,7 @@
 "jTU" = (
 /obj/item/modular_computer/console/preset/trade,
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "jTV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light/small{
@@ -51739,7 +51739,7 @@
 "kbk" = (
 /obj/effect/floor_decal/industrial/loading/white,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "kbl" = (
@@ -53458,7 +53458,7 @@
 	pixel_x = 28
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "krK" = (
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
@@ -54797,7 +54797,7 @@
 /obj/item/storage/secure/briefcase,
 /obj/item/storage/secure/briefcase,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "kFe" = (
 /obj/structure/table/standard,
 /obj/item/folder/red,
@@ -58246,7 +58246,7 @@
 /obj/structure/table/standard,
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "lmC" = (
@@ -61289,7 +61289,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "lSp" = (
 /obj/machinery/vending/snack,
 /turf/simulated/floor/tiled/white/cargo,
@@ -64452,7 +64452,7 @@
 /obj/structure/table/standard,
 /obj/item/stack/medical/splint,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "mxB" = (
@@ -65623,7 +65623,7 @@
 /area/liberty/dungeon/outside/abandoned_solars)
 "mIx" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "mIB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -67637,7 +67637,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "ndF" = (
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ndM" = (
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
@@ -69378,7 +69378,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "nvW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/bcarpet,
@@ -72980,7 +72980,7 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "ofT" = (
@@ -73863,7 +73863,7 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "oou" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass,
@@ -75370,7 +75370,7 @@
 "oDg" = (
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "oDq" = (
@@ -77352,7 +77352,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "oZv" = (
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "oZA" = (
 /obj/structure/flora/rock/variant2,
 /turf/simulated/floor/beach/sand,
@@ -81687,7 +81687,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "pRs" = (
 /obj/structure/catwalk,
 /obj/effect/spider/stickyweb,
@@ -83308,7 +83308,7 @@
 "qjR" = (
 /obj/structure/medical_stand,
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "qjY" = (
@@ -84549,7 +84549,7 @@
 /obj/machinery/body_scanconsole,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "qww" = (
@@ -85980,7 +85980,7 @@
 	},
 /obj/random/medical_lowcost,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "qKJ" = (
@@ -86249,7 +86249,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "qNk" = (
 /turf/simulated/shuttle/wall/escpod{
 	icon_state = "escpodwall21";
@@ -87252,7 +87252,7 @@
 	},
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "qXf" = (
@@ -87913,7 +87913,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "rdn" = (
 /obj/machinery/camera/network/engineering{
 	dir = 4
@@ -87954,7 +87954,7 @@
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals10,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "rdw" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -88863,7 +88863,7 @@
 /obj/item/device/camera,
 /obj/item/pen/multi,
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "rmM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -89230,7 +89230,7 @@
 "rqu" = (
 /obj/item/device/assembly/prox_sensor,
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "rqx" = (
 /obj/structure/grille{
 	desc = "Keeps the ruffians out. Hopefully.";
@@ -94579,7 +94579,7 @@
 "sqI" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "sqS" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -95616,7 +95616,7 @@
 "sDn" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "sDr" = (
@@ -108030,7 +108030,7 @@
 	},
 /obj/machinery/camera/network/colony_surface,
 /turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "vam" = (
@@ -113548,7 +113548,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/reinforced,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "wbX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -116773,7 +116773,7 @@
 	pixel_x = -30
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "wGk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
@@ -118321,7 +118321,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "wYo" = (
@@ -119438,7 +119438,7 @@
 /area/liberty/engineering/atmos/storage)
 "xjG" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "xjM" = (
@@ -121199,7 +121199,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white/greencorner,
-/area/liberty/security/nuke_storage{
+/area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
 "xBY" = (
