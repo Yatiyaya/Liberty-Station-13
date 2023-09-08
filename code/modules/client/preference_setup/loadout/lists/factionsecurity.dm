@@ -1,5 +1,5 @@
 /datum/gear/factionsecurity
-	display_name = "Armored Ushanka"
+	display_name = "Armored watch Ushanka"
 	path = /obj/item/clothing/head/helmet/marshal/ushanka
 	allowed_roles = list(JOBS_SECURITY)
 	slot = slot_head
