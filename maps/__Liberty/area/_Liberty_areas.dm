@@ -956,7 +956,7 @@
 	sound_env = LARGE_SOFTFLOOR
 
 /area/liberty/crew_quarters/bar/vip
-	name = "\improper VIP Room"
+	name = "\improper Bar VIP Room"
 	icon_state = "cafeteria"
 
 /area/liberty/crew_quarters/outerspess
@@ -1436,8 +1436,12 @@ area/liberty/medical/medbaymeeting
 	icon_state = "security"
 
 /area/liberty/security/sechall
-	name = "\improper Security Hallway"
+	name = "Liberty Watch Security Wing"
 	icon_state = "security"
+
+// So that prisoners can escape the whole security wing
+/area/liberty/security/sechall/prison_break()
+	..()
 
 /area/liberty/security/brig
 	name = "\improper Security - Brig"
@@ -1455,10 +1459,6 @@ area/liberty/medical/medbaymeeting
 	icon_state = "sec_prison"
 
 /area/liberty/security/prison/prison_break()
-	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
-		temp_closet.set_locked(FALSE)
-	for(var/obj/machinery/door_timer/temp_timer in src)
-		temp_timer.releasetime = 1
 	..()
 
 /area/liberty/security/warden
@@ -1467,10 +1467,6 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/security/armory
 	name = "\improper Security - Armory"
-	icon_state = "Warden"
-
-/area/liberty/security/armory_blackshield
-	name = "\improper Blackshield - Armory"
 	icon_state = "Warden"
 
 /area/liberty/security/armoryshop
@@ -1511,22 +1507,57 @@ area/liberty/medical/medbaymeeting
 	name = "Prison Cells"
 	icon_state = "hammerblue"
 
+/area/liberty/security/prisoncells/prison_break()
+	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
+		temp_closet.set_locked(FALSE)
+	for(var/obj/machinery/door_timer/temp_timer in src)
+		temp_timer.releasetime = 1
+	..()
+
 /area/liberty/security/hut_cell1
 	name = "Permanent Holding"
 	icon_state = "hammerblue"
+
+/area/liberty/security/hut_cell1/prison_break()
+	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
+		temp_closet.set_locked(FALSE)
+	..()
 
 /area/liberty/security/hut_cell2
 	name = "Solitary Confinement"
 	icon_state = "hammerblue"
 
+/area/liberty/security/hut_cell2/prison_break()
+	..()
+
 /area/liberty/security/evidencestorage
-	name = "Evidence Storage"
+	name = "Security - Evidence Storage"
 	icon_state = "hammerred"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
 /area/liberty/security/eva_sec
-	name = "Watch E.V.A. Storage"
+	name = "Security - E.V.A. Storage"
 	icon_state = "hammerred"
+
+/area/liberty/security/landing_pad
+	name = "Security - Landing Pad"
+	icon_state = "hammerred"
+
+/area/liberty/security/mess_hall
+	name = "Security - Mess Hall"
+	icon_state = "hammerblue"
+
+/area/liberty/security/eye_pod
+	name = "Security - E.Y.E. Pod"
+	icon_state = "hammerblue"
+
+/area/liberty/security/interrogation
+	name = "Security - Interrogation Room"
+	icon_state = "hammerblue"
+
+/area/liberty/security/showers
+	name = "Security - Showers"
+	icon_state = "hammerblue"
 
 //Cargo
 
