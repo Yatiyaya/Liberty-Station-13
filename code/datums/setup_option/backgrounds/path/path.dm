@@ -22,7 +22,7 @@
 	desc = "You used to work as an EMT either in civilian or military sector. \
 	You have basics of first aid but not much else."
 
-	stat_modifiers = list(STAT_BIO = 15, STAT_TGH = 5, STAT_MEC = -10)//the medic path was too unbalanced with the previous stats so is going down, the "combat medic" can be part of the character background and can be "created" using selected stat points, doesn't need to have extra points in these areas if they can spend 5 points to get these points and 10 points more, resulting in an +15 rob/vig+ medic skills.
+	stat_modifiers = list(STAT_BIO = 15, STAT_TGH = 5, STAT_MEC = -10) 
 
 /datum/category_item/setup_option/background/path/criminal //Former pirate is to be considered merged under this.
 	name = "Former Criminal"

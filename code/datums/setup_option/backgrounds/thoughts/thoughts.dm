@@ -15,7 +15,7 @@
 	Never did you lose your composure in front of others, uttered a singular tear in your entire life, you are the definition of a hard-ass. \
 	But this left you emotionally stunted, unable to feel any empathy for others or being able to relate to simplest emotions besides your own will to survive. \
 	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan."
-	stat_modifiers = list(STAT_WIL = 5, STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_COG = -10)//the willpower is a strong stat and shouldn't be that high on the start of shift
+	stat_modifiers = list(STAT_WIL = 10, STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_COG = -10) // High willpower on a perk designed to freak out less at death
 	perks = list(PERK_SURVIVOR)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia
@@ -35,7 +35,7 @@
 	Merely standing in presence of such unfortunate individuals lifts their spirit right back up allowing them to go on throught with another day.\
 	This idea is rarity among the many disillusioned spacefarers making your idealist stance on life even more refreshing to see.\
 	Keep in mind however that even the most resillient people can snap and that it's not possible to help everyone."
-	stat_modifiers = list(STAT_WIL = 5, STAT_COG = -5, STAT_BIO = -5)
+	stat_modifiers = list(STAT_WIL = 10, STAT_COG = -5, STAT_BIO = -5)
 	perks = list(PERK_IDEALIST)
 
 /datum/category_item/setup_option/background/thoughts/volition
