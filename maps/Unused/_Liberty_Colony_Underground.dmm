@@ -234,7 +234,7 @@
 /obj/random/material_rare,
 /obj/random/material_rare,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aaG" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
@@ -253,7 +253,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aaI" = (
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1";
@@ -287,7 +287,7 @@
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals10,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aaL" = (
 /obj/random/closet_tech/low_chance,
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -2543,7 +2543,7 @@
 /obj/random/material_rare,
 /obj/random/material_rare,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "afN" = (
 /obj/structure/bed/chair/comfy/beige,
 /obj/landmark/join/start/mining,
@@ -2580,7 +2580,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "afS" = (
 /obj/structure/ore_box,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -3685,7 +3685,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ahY" = (
 /obj/machinery/door/blast/regular{
 	id = "Armoury";
@@ -4543,7 +4543,7 @@
 /obj/random/material_rare,
 /obj/random/material_rare,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ajS" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass,
@@ -4727,7 +4727,7 @@
 "akp" = (
 /obj/landmark/storyevent/hidden_vent_antag,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "akq" = (
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -5535,7 +5535,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "alX" = (
 /turf/simulated/wall/r_wall,
 /area/liberty/command/meeting_room)
@@ -5614,7 +5614,7 @@
 /obj/item/storage/secure/briefcase,
 /obj/item/storage/secure/briefcase,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ami" = (
 /obj/machinery/papershredder,
 /obj/structure/disposalpipe/segment{
@@ -5641,7 +5641,7 @@
 /area/liberty/command/bridge)
 "amk" = (
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aml" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -6527,7 +6527,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "anR" = (
 /obj/machinery/conveyor_switch{
 	id = "QMLoad2"
@@ -15269,7 +15269,7 @@
 	pixel_x = -30
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aEQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4;
@@ -16056,7 +16056,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aHg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -16153,7 +16153,7 @@
 	pixel_x = 28
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aHs" = (
 /obj/random/contraband/low_chance,
 /obj/random/contraband/low_chance,
@@ -17757,7 +17757,7 @@
 "aMh" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aMi" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/barricade,
@@ -18035,7 +18035,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aNe" = (
 /obj/structure/railing{
 	dir = 4
@@ -20043,7 +20043,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "aTr" = (
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techmaint_panels,
@@ -59541,7 +59541,7 @@
 /area/liberty/engineering/atmos)
 "vGx" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "vGQ" = (
 /obj/effect/floor_decal/spline/plain,
 /obj/machinery/light{

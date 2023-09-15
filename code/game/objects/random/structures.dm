@@ -39,7 +39,7 @@
 				/obj/structure/salvageable/computer_os = 8,\
 				/obj/structure/salvageable/console_broken_os = 8,\
 				/obj/structure/salvageable/console_os = 5,\
-				/obj/machinery/power/port_gen/os_generator = 1,\
+				/*/obj/machinery/power/port_gen/os_generator = 1,\*/ // Always manually spawn this as the random structure and high skill check can literally softblock area entrances
 				/obj/structure/salvageable/os/power = 4, \
 				/obj/structure/computerframe = 3,\
 				/obj/machinery/constructable_frame/machine_frame = 3))

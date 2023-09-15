@@ -2900,7 +2900,7 @@
 /obj/structure/closet/crate/secure,
 /obj/machinery/camera/motion,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ahR" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -2916,7 +2916,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "ahT" = (
 /obj/machinery/atmospherics/omni/mixer{
 	active_power_usage = 7500;
@@ -38146,7 +38146,7 @@
 	pixel_x = -22
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "bSn" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -38809,7 +38809,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "bTW" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -39262,7 +39262,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "bUX" = (
 /obj/structure/table/standard,
 /obj/item/paper_bin{
@@ -39482,7 +39482,7 @@
 	pixel_x = -22
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "bVB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -72077,7 +72077,7 @@
 /area/liberty/crew_quarters/podrooms)
 "duh" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dui" = (
 /obj/structure/table/woodentable,
 /obj/item/modular_computer/telescreen/preset/generic{
@@ -72155,7 +72155,7 @@
 "dur" = (
 /obj/structure/closet/crate/secure,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dus" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/flora/small/trailrocka2,
@@ -72698,12 +72698,12 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dvw" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/secure/briefcase,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dvx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -72719,7 +72719,7 @@
 /area/liberty/engineering/foyer)
 "dvy" = (
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dvz" = (
 /turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/reception)
@@ -73137,7 +73137,7 @@
 "dww" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dwx" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -73207,7 +73207,7 @@
 "dwE" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dwF" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -73260,7 +73260,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dwK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -73381,7 +73381,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dwW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -73569,7 +73569,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dxn" = (
 /obj/machinery/camera/network/research{
 	dir = 1
@@ -73581,13 +73581,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dxp" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/secure/briefcase,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dxq" = (
 /obj/structure/multiz/ladder,
 /turf/simulated/floor/tiled/techmaint,
@@ -74913,7 +74913,7 @@
 	req_access = list(41)
 	},
 /turf/simulated/floor/tiled/dark,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dAB" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 8
@@ -74954,7 +74954,7 @@
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark/golden,
-/area/liberty/security/nuke_storage)
+/area/liberty/quartermaster/vault)
 "dAE" = (
 /obj/machinery/door/airlock/command{
 	name = "Guild Merchant's Office";

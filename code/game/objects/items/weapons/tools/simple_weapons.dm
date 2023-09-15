@@ -273,8 +273,8 @@
 
 /obj/item/tool/sword/katana/union
 	name = "Diamond Edge Sword"
-	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries, duelists or well paid Bodyguards that specialize in insect eradication, balance and made for a true fighter, if said fighter can afford a weapon like this."
-	icon_state = "diamond_edge" //replaced by dromki with new design and mob sprites.
+	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries, duelists or well paid Bodyguards this sword is special in design, balance and made for a true fighter, if said fighter can afford a weapon like this."
+	icon_state = "diamond_edge" //by dromki with new design and mob sprites.
 	item_state = "diamond_edge"
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
@@ -287,8 +287,8 @@
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("roach", "spider", "balkan", "circhosian") // Same as the combat sword, but also cultists and balkan as its fancy
-	damage_mult = 1.5
+	effective_faction = list("roach", "termite", "balkan") // Same as the combat sword, but also balkan as its fancy
+	damage_mult = 1.2 // Higher base damage, less damage bonus
 
 /obj/item/tool/sword/katana_makeshift
 	name = "makeshift katana"
