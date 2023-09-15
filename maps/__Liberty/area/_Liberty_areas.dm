@@ -71,7 +71,7 @@
 	icon_state = "disposal"
 
 /area/liberty/maintenance/northcave
-	name = "Caves"
+	name = "Underground Floor 2 North Caves"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/disposal
@@ -105,7 +105,7 @@
 /area/liberty/maintenance/oldlibrary
 	name = "Abandoned Library"
 	icon_state = "erisgreen"
-	requires_power = FALSE
+	requires_power = FALSE // Eerie power surrounding the rituals powers the place
 
 // Required for the turrets to work
 /area/liberty/maintenance/oldarmory
@@ -143,7 +143,7 @@
 
 /area/liberty/maintenance/sunkenclub
 	name = "Abandoned Club"
-	icon_state = "section2deck3port"
+	icon_state = "cafeteria"
 
 /area/liberty/maintenance/constructionarea
 	name = "Construction Area"
@@ -157,8 +157,9 @@
 /area/liberty/maintenance/oldmining
 	name = "Abandoned Mine Shaft East"
 	icon_state = "section2deck2starboard"
+	requires_power = FALSE
 
-/area/liberty/maintenance/oldmining
+/area/liberty/maintenance/oldminingwest
 	name = "Abandoned Mine Shaft West"
 	icon_state = "section2deck2starboard"
 
@@ -167,15 +168,15 @@
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/caveameridian
-	name = "Maintenance North Caves"
+	name = "Underground Floor 2 North Anomalous Cave"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/cavenightmare
-	name = "Maintenance East Caves"
+	name = "Underground Floor 2 East Caves"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/caveagape
-	name = "Maintenance South Caves"
+	name = "Underground Floor 2 South Caves"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/undergroundfloor3south
@@ -192,6 +193,22 @@
 
 /area/liberty/maintenance/undergroundfloor3west
 	name = "Underground Floor 2 West Maintenance"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/oldkitchen
+	name = "Abandoned Kitchen"
+	icon_state = "hammerblue"
+
+/area/liberty/maintenance/bank
+	name = "Abandoned Bank"
+	icon_state = "hammerred"
+
+/area/liberty/maintenance/maint_merc
+	name = "Derelict Mercenary Base"
+	icon_state = "syndie-elite"
+
+/area/liberty/maintenance/saloon
+	name = "Abandoned Hairdresser Saloon"
 	icon_state = "erisblue"
 
 //Outside abandoned structures
@@ -538,7 +555,7 @@
 
 /area/liberty/outside/range
 	name = "Public Firing Range"
-	icon_state = "erisgreen"
+	icon_state = "firingrange"
 	allows_weather_of_snow = TRUE
 	is_dungeon_lootable = FALSE
 	requires_power = FALSE
@@ -824,33 +841,36 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/liberty/crew_quarters/toilet
-	name = "\improper Dormitory Toilets"
+	name = "Surface Public Toilets"
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 
 /area/liberty/crew_quarters/toilet/public
-	name = "Public Toilet"
-	icon_state = "libertyyellow"
+	name = "Floor 2 Public Toilet"
 
 /area/liberty/crew_quarters/toilet/medbay
 	name = "Medbay Toilet"
 	icon_state = "libertyyellow"
 
 /area/liberty/crew_quarters/dorm1
-	name = "\improper Dormitories"
-	icon_state = "Sleep"
+	name = "\improper Dormitory Bedroom One"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm2
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Two"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm3
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Three"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm4
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Four"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/dorm5
-	name = "\improper Dormitories"
+	name = "\improper Dormitory Bedroom Five"
+	icon_state = "restrooms"
 
 /area/liberty/crew_quarters/podrooms
 	name = "\improper Upper Pod Dormitories"
@@ -860,6 +880,7 @@
 
 /area/liberty/crew_quarters/hotsprings
 	name = "\improper Indoors Hot Spring"
+	icon_state = "purple"
 
 /area/liberty/crew_quarters/sleep
 	name = "\improper Dormitories"
@@ -935,8 +956,8 @@
 	sound_env = LARGE_SOFTFLOOR
 
 /area/liberty/crew_quarters/bar/vip
-	name = "\improper VIP Room"
-	icon_state = "bar"
+	name = "\improper Bar VIP Room"
+	icon_state = "cafeteria"
 
 /area/liberty/crew_quarters/outerspess
 	name = "\improper Shuttle Room"
@@ -944,7 +965,7 @@
 
 /area/liberty/crew_quarters/barbackroom
 	name = "Bar Backroom"
-	icon_state = "erisgreen"
+	icon_state = "maint_bar"
 
 /area/liberty/crew_quarters/theatre
 	name = "\improper Theatre"
@@ -1011,7 +1032,7 @@
 
 /area/liberty/bonfire/stronghold
 	name = "\improper Stronghold"
-	icon_state = "chapel"
+	icon_state = "hammerblue"
 	ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
 	sound_env = LARGE_ENCLOSED
 
@@ -1033,7 +1054,7 @@
 
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
-	icon_state = "chapeloffice"
+	icon_state = "hammerred"
 	ambience = list('sound/ambience/stronghold.ogg')
 	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
@@ -1042,10 +1063,10 @@
 	ambience = list('sound/ambience/stronghold.ogg')
 	icon_state = "erisgreen"
 
-/area/liberty/bonfire/armory
-	name = "Stronghold Armory"
+/area/liberty/bonfire/alchemist
+	name = "Stronghold Brewing Room"
 	ambience = list('sound/ambience/stronghold.ogg')
-	icon_state = "head_quarters"
+	icon_state = "hammerblue"
 
 //Engineering
 
@@ -1388,7 +1409,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/paramedic
 	name = "\improper Medical Locker room"
-	icon_state = "erisyellow"
+	icon_state = "medbay3"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
 /area/liberty/medical/medbay/iso
@@ -1401,6 +1422,7 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/medical/organ_lab
 	name = "Organ Laboratory"
+	icon_state = "medbay4"
 
 //Security
 
@@ -1414,8 +1436,12 @@ area/liberty/medical/medbaymeeting
 	icon_state = "security"
 
 /area/liberty/security/sechall
-	name = "\improper Security Hallway"
+	name = "Liberty Watch Security Wing"
 	icon_state = "security"
+
+// So that prisoners can escape the whole security wing
+/area/liberty/security/sechall/prison_break()
+	..()
 
 /area/liberty/security/brig
 	name = "\improper Security - Brig"
@@ -1433,10 +1459,6 @@ area/liberty/medical/medbaymeeting
 	icon_state = "sec_prison"
 
 /area/liberty/security/prison/prison_break()
-	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
-		temp_closet.set_locked(FALSE)
-	for(var/obj/machinery/door_timer/temp_timer in src)
-		temp_timer.releasetime = 1
 	..()
 
 /area/liberty/security/warden
@@ -1445,10 +1467,6 @@ area/liberty/medical/medbaymeeting
 
 /area/liberty/security/armory
 	name = "\improper Security - Armory"
-	icon_state = "Warden"
-
-/area/liberty/security/armory_blackshield
-	name = "\improper Blackshield - Armory"
 	icon_state = "Warden"
 
 /area/liberty/security/armoryshop
@@ -1468,18 +1486,6 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Security - Tactical Equipment"
 	icon_state = "Tactical"
 
-/area/liberty/security/tactical_blackshield
-	name = "\improper Blackshield - Tactical Equipment"
-	icon_state = "Tactical"
-
-/area/liberty/security/nuke_storage
-	name = "\improper Vault"
-	icon_state = "nuke_storage"
-
-/area/liberty/security/checkpoint
-	name = "\improper Security Checkpoint"
-	icon_state = "checkpoint1"
-
 /area/liberty/security/maingate
 	name = "\improper Security - Main Gate"
 	icon_state = "security"
@@ -1493,117 +1499,65 @@ area/liberty/medical/medbaymeeting
 	allows_weather_of_snow = TRUE
 //	forced_ambience = list('sound/ambience/meadowamb1.ogg', 'sound/ambience/meadowamb2.ogg', 'sound/ambience/meadowamb3.ogg', 'sound/ambience/meadowamb4.ogg')
 
-
-/area/liberty/security/checkpoint/supply
-	name = "Security Post - Cargo Bay"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/engineering
-	name = "Security Post - Engineering"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/medical
-	name = "Security Post - Medbay"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/science
-	name = "Security Post - Science"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/checkpoint/cryo
-	name = "Security Post - Cryogenics"
-	icon_state = "checkpoint1"
-
-/area/liberty/security/triage
-	name = "\improper Security Triage"
-	icon_state = "security"
-
-/area/liberty/security/triage_blackshield
-	name = "\improper Blackshield Triage"
-	icon_state = "security"
-
 /area/liberty/security/vacantoffice2
 	name = "\improper Vacant Office"
 	icon_state = "security"
-
-/area/liberty/security/inspectors_office
-	name = "Inspectors Office"
-	icon_state = "hammerblue"
-	area_light_color = COLOR_LIGHTING_CREW_SOFT
-
-/area/liberty/security/disposal
-	name = "Security Disposal"
-	flags = AREA_FLAG_RAD_SHIELDED
-	icon_state = "hammerblue"
-	is_maintenance = TRUE
-
-/area/liberty/security/barracks
-	name = "Barracks"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm1
-	name = "Security Dormitory 1"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm2
-	name = "Security Dormitory 2"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm3
-	name = "Security Dormitory 3"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm4
-	name = "Security Dormitory 4"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm5
-	name = "Security Dormitory 5"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm6
-	name = "Security Dormitory 6"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm7
-	name = "Security Dormitory 7"
-	icon_state = "hammerblue"
-
-/area/liberty/security/dorm8
-	name = "Security Dormitory 8"
-	icon_state = "hammerblue"
 
 /area/liberty/security/prisoncells
 	name = "Prison Cells"
 	icon_state = "hammerblue"
 
-/area/liberty/security/laber_area
-	name = "Labor Transfer"
-	icon_state = "hammerblue"
+/area/liberty/security/prisoncells/prison_break()
+	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
+		temp_closet.set_locked(FALSE)
+	for(var/obj/machinery/door_timer/temp_timer in src)
+		temp_timer.releasetime = 1
+	..()
 
 /area/liberty/security/hut_cell1
-	name = "HuT Cell 1"
+	name = "Permanent Holding"
 	icon_state = "hammerblue"
+
+/area/liberty/security/hut_cell1/prison_break()
+	for(var/obj/structure/closet/secure_closet/brig/temp_closet in src)
+		temp_closet.set_locked(FALSE)
+	..()
 
 /area/liberty/security/hut_cell2
-	name = "HuT Cell 2"
+	name = "Solitary Confinement"
 	icon_state = "hammerblue"
 
+/area/liberty/security/hut_cell2/prison_break()
+	..()
+
 /area/liberty/security/evidencestorage
-	name = "Evidence Storage"
+	name = "Security - Evidence Storage"
 	icon_state = "hammerred"
 	area_light_color = COLOR_LIGHTING_SCI_DARK
 
-/area/liberty/security/exerooms
-	name = "Executive Rooms"
+/area/liberty/security/eva_sec
+	name = "Security - E.V.A. Storage"
 	icon_state = "hammerred"
-	area_light_color = COLOR_LIGHTING_SCI_DARK
 
-/area/liberty/security/maintpost
-	name = "Maintenance Post"
-	flags = AREA_FLAG_RAD_SHIELDED
+/area/liberty/security/landing_pad
+	name = "Security - Landing Pad"
 	icon_state = "hammerred"
-	is_maintenance = TRUE
+
+/area/liberty/security/mess_hall
+	name = "Security - Mess Hall"
+	icon_state = "hammerblue"
+
+/area/liberty/security/eye_pod
+	name = "Security - E.Y.E. Pod"
+	icon_state = "hammerblue"
+
+/area/liberty/security/interrogation
+	name = "Security - Interrogation Room"
+	icon_state = "hammerblue"
+
+/area/liberty/security/showers
+	name = "Security - Showers"
+	icon_state = "hammerblue"
 
 //Cargo
 
@@ -1650,15 +1604,18 @@ area/liberty/medical/medbaymeeting
 	name = "Supply Shuttle Dock"
 	icon_state = "erisgreen"
 
-/area/liberty/quartermaster/misc
-	name = "\improper Cargo Barracks"
-	icon_state = "libertyyellow"
+/area/liberty/quartermaster/fightclub
+	name = "\proper The Rage Cage"
+	icon_state = "erisblue"
 
 /area/liberty/quartermaster/supplydock
 	name = "\improper Cargo Delivery Dock"
 	icon_state = "erisgreen"
 	base_turf = /turf/simulated/floor/tiled/dark/cargo
 
+/area/liberty/quartermaster/vault
+	name = "Skylight Vault"
+	icon_state = "hammerred"
 
 //Research and Development
 

@@ -27,8 +27,16 @@
 		new /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee(src)
 
 /obj/structure/closet/wall_mounted/emcloset/escape_pods
+	desc = "A wall mounted locker with emergency softsuits in case of ship depressurization."
 	icon_state = "emerg-escape"
 
+/obj/structure/closet/wall_mounted/emcloset/escape_pods/populate_contents()
+	new /obj/item/tank/emergency_oxygen/double(src) // Usually mounted on spaceships, need as much we can get to stay alive
+	new /obj/item/clothing/mask/breath(src)
+	new /obj/item/clothing/suit/space/emergency(src)
+	new /obj/item/clothing/head/helmet/space/emergency(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/device/radio/off(src)
 
 /obj/structure/closet/wall_mounted/firecloset
 	name = "fire-safety closet"

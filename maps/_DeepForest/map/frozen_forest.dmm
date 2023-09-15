@@ -938,8 +938,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "ti" = (
-/obj/structure/table/onestar,
-/obj/item/tool/crowbar/onestar,
+/obj/machinery/power/port_gen/os_generator,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "tn" = (
@@ -1113,6 +1112,7 @@
 "wJ" = (
 /obj/structure/table/onestar,
 /obj/item/tool/weldingtool/onestar,
+/obj/item/tool/crowbar/onestar,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "wQ" = (
