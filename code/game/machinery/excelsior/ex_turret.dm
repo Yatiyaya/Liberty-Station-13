@@ -9,8 +9,10 @@
 	density = TRUE
 	lethal = TRUE
 	raised = TRUE
+	check_id = FALSE
 	circuit = /obj/item/circuitboard/excelsior_turret
 	installation = null
+	var/turret_caliber = CAL_RIFLE
 	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_magazine/ammobox/rifle_75
 	var/ammo = 0 // number of bullets left.
 	var/ammo_max = 160
@@ -53,6 +55,17 @@
 	data["locked"] = locked
 	data["enabled"] = enabled
 
+	var/settings[0]
+	settings[++settings.len] = list("category" = "Neutralize All Non-Synthetics", "setting" = "check_synth", "value" = check_synth)
+	settings[++settings.len] = list("category" = "Check Weapon Authorization", "setting" = "check_weapons", "value" = check_weapons)
+	settings[++settings.len] = list("category" = "Check Security Records", "setting" = "check_records", "value" = check_records)
+	settings[++settings.len] = list("category" = "Check Arrest Status", "setting" = "check_arrest", "value" = check_arrest)
+	settings[++settings.len] = list("category" = "Check Access Authorization", "setting" = "check_access", "value" = check_access)
+	settings[++settings.len] = list("category" = "Check misc. Lifeforms", "setting" = "check_anomalies", "value" = check_anomalies)
+	settings[++settings.len] = list("category" = "Check ID. Check for a present ID", "setting" = "check_id", "value" = check_id)
+	data["settings"] = settings
+
+
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "turret_control.tmpl", "Turret Controls", 500, 300)
@@ -78,6 +91,7 @@
 			if(ammo == ammo_max)
 				break
 		to_chat(user, SPAN_NOTICE("You loaded [transfered_ammo] bullets into [src]. It now contains [ammo] ammo."))
+		I.update_icon()
 	else
 		..()
 
@@ -112,6 +126,13 @@
 	if(L.faction == "excelsior") //Dont target colony pets if were allied with them
 		return TURRET_NOT_TARGET
 
+	if(check_id)
+		var/id = L.GetIdCard()
+		if(id && istype(id, /obj/item/card/id))
+			return TURRET_NOT_TARGET
+		else
+			return TURRET_SECONDARY_TARGET
+
 	if(L.lying)
 		return TURRET_SECONDARY_TARGET
 
@@ -145,20 +166,22 @@
 /obj/machinery/porta_turret/Union
 	icon = 'icons/obj/machines/excelsior/turret.dmi'
 	name = "Union turret"
-	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
-	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 7.62mm rounds and holds up to 180."
-	icon_state = "turret_legs"
+	desc = "A fully automated battery powered self-repairing anti-wildlife armored turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
+	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 6.5mm rounds and holds up to 200."
+	icon_state = "turret_legs_terra"
 	density = TRUE
 	lethal = TRUE
 	raised = TRUE
 	colony_allied_turret = TRUE
+	check_id = TRUE
 	circuit = /obj/item/circuitboard/artificer_turret
 	installation = null
-	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_magazine/ammobox/rifle_75
+	var/obj/item/ammo_magazine/ammo_box = /obj/item/ammo_magazine/ammobox/light_rifle_257 //This is used for preloading
+	var/turret_caliber = CAL_SRIFLE
 	var/ammo = 0 // number of bullets left.
-	var/ammo_max = 180
+	var/ammo_max = 200
 	var/obj/item/cell/large/cell = null
-	health = 150
+	health = 175//to compensate the damage nerf now has a bit more of health and legs with extra armor and size
 	auto_repair = 1
 	shot_delay = 3
 	use_power = 1
@@ -193,8 +216,8 @@
 	var/obj/item/ammo_casing/AM = initial(ammo_box.ammo_type)
 	projectile = initial(AM.projectile_type)
 	eprojectile = projectile
-	shot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
-	eshot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
+	shot_sound = 'sound/weapons/guns/fire/carbine.ogg'
+	eshot_sound = 'sound/weapons/guns/fire/carbine.ogg'
 
 /obj/machinery/porta_turret/Union/isLocked(mob/user)
 	if(ishuman(user))
@@ -209,6 +232,18 @@
 	data["cell"] = cell ? capitalize(cell.name) : null
 	data["cellCharge"] = cell ? cell.charge : 0
 	data["cellMaxCharge"] = cell ? cell.maxcharge : 1
+
+	var/settings[0]
+	settings[++settings.len] = list("category" = "Neutralize All Non-Synthetics", "setting" = "check_synth", "value" = check_synth)
+	settings[++settings.len] = list("category" = "Check Weapon Authorization", "setting" = "check_weapons", "value" = check_weapons)
+	settings[++settings.len] = list("category" = "Check Security Records", "setting" = "check_records", "value" = check_records)
+	settings[++settings.len] = list("category" = "Check Arrest Status", "setting" = "check_arrest", "value" = check_arrest)
+	settings[++settings.len] = list("category" = "Check Access Authorization", "setting" = "check_access", "value" = check_access)
+	settings[++settings.len] = list("category" = "Check misc. Lifeforms", "setting" = "check_anomalies", "value" = check_anomalies)
+	settings[++settings.len] = list("category" = "Check misc. Alliement To Local PI Systems", "setting" = "colony_allied_turret", "value" = colony_allied_turret)
+	settings[++settings.len] = list("category" = "Check ID. Check for a present ID", "setting" = "check_id", "value" = check_id)
+	data["settings"] = settings
+
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
@@ -293,25 +328,32 @@
 				to_chat(user, "<span class='notice'>You install a cell in \the [src].</span>")
 			return TRUE //No whacking the turret with cells on help intent
 
-		else if(istype(I, ammo_box) && I?:stored_ammo?:len)
-			var/obj/item/ammo_magazine/A = I
-			if(ammo >= ammo_max)
-				to_chat(user, SPAN_NOTICE("You cannot load more than [ammo_max] ammo."))
-				return TRUE //No whacking the turret with ammo boxes on help intent
-
-			var/transfered_ammo = 0
-			for(var/obj/item/ammo_casing/AC in A.stored_ammo)
-				A.stored_ammo -= AC
-				qdel(AC)
-				ammo++
-				transfered_ammo++
-				if(ammo == ammo_max)
-					break
-			to_chat(user, SPAN_NOTICE("You loaded [transfered_ammo] bullets into [src]. It now contains [ammo] ammo."))
-			return TRUE //No whacking the turret with ammo boxes on help intent
-
+		else if(istype(I, /obj/item/ammo_magazine))
+			return load_ammo(I, user)
 	else
 		..()
+
+/obj/machinery/porta_turret/Union/proc/load_ammo(obj/item/ammo_magazine/I, mob/user)
+	var/obj/item/ammo_magazine/A = I
+
+	if(A.caliber != turret_caliber)
+		to_chat(user, SPAN_NOTICE("This turret does not use this caliber!"))
+		return TRUE
+
+	if(ammo >= ammo_max)
+		to_chat(user, SPAN_NOTICE("You cannot load more than [ammo_max] ammo."))
+		return TRUE //No whacking the turret with ammo boxes on help intent
+
+	var/transfered_ammo = 0
+	for(var/obj/item/ammo_casing/AC in A.stored_ammo)
+		A.stored_ammo -= AC
+		qdel(AC)
+		ammo++
+		transfered_ammo++
+		if(ammo == ammo_max)
+			break
+	to_chat(user, SPAN_NOTICE("You loaded [transfered_ammo] bullets into [src]. It now contains [ammo] ammo."))
+	return TRUE //No whacking the turret with ammo boxes on help intent
 
 /obj/machinery/porta_turret/Union/Process()
 	if(!powered())
@@ -338,14 +380,18 @@
 	if(L.stat == DEAD)
 		return TURRET_NOT_TARGET
 
+	if(check_id)
+		var/id = L.GetIdCard()
+		if(id && istype(id, /obj/item/card/id))
+			return TURRET_NOT_TARGET
+		else
+			return TURRET_SECONDARY_TARGET
+
 	if(!emagged && colony_allied_turret && L.colony_friend) //Dont target colony pets if were allied with them
 		return TURRET_NOT_TARGET
 
 	if(emagged)	// If emagged not even the dead get a rest
 		return TURRET_PRIORITY_TARGET
-
-	if(ishuman(L))
-		return TURRET_NOT_TARGET
 
 	if(L.faction == "neutral")
 		return TURRET_NOT_TARGET
@@ -387,7 +433,7 @@
 	cut_overlays()
 
 	if(!(stat & BROKEN))
-		add_overlay(image("turret_gun_art"))
+		add_overlay(image("turret_carbine_union"))
 
 /obj/machinery/porta_turret/Union/launch_projectile()
 	ammo--
