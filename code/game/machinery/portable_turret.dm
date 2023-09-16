@@ -50,6 +50,8 @@
 	var/check_access = TRUE	//if this is active, the turret shoots everything that does not meet the access requirements
 	var/check_anomalies = TRUE	//checks if it can shoot at unidentified lifeforms (ie xenos)
 	var/check_synth	 = FALSE 	//if active, will shoot at anything not an AI or cyborg
+	var/check_id = FALSE 	//Only checks if their is a vaid id card on them, even if its blank
+
 	var/ailock = FALSE 			// AI cannot use this
 
 	var/attacked = FALSE		//if set to 1, the turret gets pissed off and shoots at people nearby (unless they have sec access!)
@@ -96,6 +98,7 @@
 	check_weapons = FALSE
 	check_anomalies = TRUE
 	colony_allied_turret = TRUE
+	check_id = TRUE
 	installation = /obj/item/gun/energy/cog
 
 /obj/machinery/porta_turret/stationary
@@ -237,6 +240,8 @@ var/list/turret_icons
 		settings[++settings.len] = list("category" = "Check Access Authorization", "setting" = "check_access", "value" = check_access)
 		settings[++settings.len] = list("category" = "Check misc. Lifeforms", "setting" = "check_anomalies", "value" = check_anomalies)
 		settings[++settings.len] = list("category" = "Check misc. Alliement To Local PI Systems", "setting" = "colony_allied_turret", "value" = colony_allied_turret)
+		settings[++settings.len] = list("category" = "Check ID. Check for a present ID", "setting" = "check_id", "value" = check_id)
+
 		data["settings"] = settings
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
@@ -290,6 +295,8 @@ var/list/turret_icons
 			check_anomalies = value
 		else if(href_list["command"] == "colony_allied_turret")
 			colony_allied_turret = value
+		else if(href_list["command"] == "check_id")
+			check_id = value
 
 		return 1
 
@@ -654,12 +661,18 @@ var/list/turret_icons
 	//if(isxenomorph(L) || isalien(L)) // Xenos are dangerous
 	//	return check_anomalies ? TURRET_PRIORITY_TARGET	: TURRET_NOT_TARGET
 
-	if(ishuman(L))	//if the target is a human, analyze threat level
-		if(assess_perp(L) < 4)
-			return TURRET_NOT_TARGET	//if threat level < 4, keep going
-
 	if(L.lying)		//if the perp is lying down, it's still a target but a less-important target
 		return lethal ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
+
+	if(ishuman(L))	//if the target is a human, analyze threat level
+		//If we check cards then we do will always attack people without them. Reagress of assess_perp
+		if(check_id)
+			var/id = L.GetIdCard()
+			if(!id || !istype(id, /obj/item/card/id))
+				return TURRET_SECONDARY_TARGET
+
+		if(assess_perp(L) < 4)
+			return TURRET_NOT_TARGET	//if threat level < 4, keep going
 
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
 
