@@ -94,6 +94,10 @@
 	name = "Surface East Maintenance"
 	icon_state = "erisgreen"
 
+/area/liberty/maintenance/undergroundfloor2plague
+	name = "Plagued Colony"
+	icon_state = "erisgreen"
+
 /area/liberty/maintenance/undergroundfloor1central
 	name = "Surface Central Maintenance"
 	icon_state = "erisblue"
