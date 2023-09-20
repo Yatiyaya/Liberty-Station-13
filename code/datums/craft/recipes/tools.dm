@@ -112,16 +112,17 @@
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
 
-// In case you want it in your hands and not implanted
+/* In case you want it in your hands and not implanted
+Disabled as this is meant to be implant not free floating
 /datum/craft_recipe/tool/makeshift_omnitool
 	name = "\improper Improvised omnitool"
-	result = /obj/item/organ_module/active/simple/makeshift
+	result = /obj/item/tool/multitool_improvised
 	steps = list(
 		list(/obj/item/organ_module/active/simple/makeshift, 1),
 		list(QUALITY_PULSING, 20),
 		list(QUALITY_PRYING, 20, "time" = 140)
 	)
-
+*/
 //Outsider tape more or less
 /datum/craft_recipe/tool/webtape
 	name = "web tape"
