@@ -115,7 +115,7 @@
 // In case you want it in your hands and not implanted
 /datum/craft_recipe/tool/makeshift_omnitool
 	name = "\improper Improvised omnitool"
-	result = /obj/item/tool/multitool_improvised
+	result = /obj/item/organ_module/active/simple/makeshift
 	steps = list(
 		list(/obj/item/organ_module/active/simple/makeshift, 1),
 		list(QUALITY_PULSING, 20),
