@@ -44,7 +44,7 @@
 // Generator used for the junk tractor beam level
 //////////////////////////////
 /obj/jtb_generator
-	name = "junk tractor beam generator"
+	name = "gateway generator"
 	icon = 'icons/mob/screen1.dmi'
 	icon_state = "x3"
 	alpha = 120
@@ -671,7 +671,7 @@
 //////////////////////////////
 
 /obj/machinery/computer/jtb_console
-	name = "junk tractor beam control console"
+	name = "Lesser Gatepyre control console"
 	icon_state = "computer"
 	icon_keyboard = "teleport_key"
 	icon_screen = "teleport"
@@ -686,22 +686,22 @@
 	if(!has_been_init)
 		jtb_gen = locate(/obj/jtb_generator)  // Find junk field generator object
 		if(!jtb_gen)
-			admin_notice("Could not find junk tractor beam generator.")
-			log_world("Could not find junk tractor beam generator.")
+			admin_notice("Could not find the gateway generator.")
+			log_world("Could not find the gateway generator.")
 		else
 			if(!(locate(/obj/effect/portal/jtb) in get_turf(locate(x+5, y, z))) && can_release())  // If portal not already created and junk field is ready
 				jtb_gen.create_link_portal(get_turf(locate(x+5, y, z)))
 			has_been_init = TRUE
 	if(!jtb_gen)
 		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Critical error. No tractor beam detected.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Critical error. No tractor beam detected.'</span>")
 		return
 	nano_ui_interact(user)
 
 /obj/machinery/computer/jtb_console/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	if(!jtb_gen)
 		playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Critical error. No tractor beam detected.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Critical error. No tractor beam detected.'</span>")
 		return
 
 	var/data[0]
@@ -719,7 +719,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "jtb_console.tmpl", "Junk Tractor Beam Control", 380, 530)
+		ui = new(user, src, ui_key, "jtb_console.tmpl", "Lesser Wormhole Gatepyre Control", 380, 530)
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(1)
@@ -744,7 +744,7 @@
 			JF = input("Choose Junk Field", "Junk Field") as null|anything in possible_fields
 		else
 			playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
-			src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: No junk field in range.'</span>")
+			src.audible_message("<span class='warning'>The lesser gateway beeps: 'NOTICE: No junk field in range.'</span>")
 		possible_fields = get_possible_fields()
 		if(CanInteract(usr,GLOB.default_state) && (JF in possible_fields))
 			set_field(possible_fields[JF])
@@ -781,24 +781,24 @@
 /obj/machinery/computer/jtb_console/proc/field_capture()
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 	if(check_pillars())
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Starting capture of targeted junk field.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Starting capture of targeted junk field.'</span>")
 		jtb_gen.field_capture(get_turf(locate(x+5, y, z)))
 	else
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Interference dampening pillars not detected.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Interference dampening pillars not detected.'</span>")
 	return
 
 /obj/machinery/computer/jtb_console/proc/field_cancel()
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
-	src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Canceling capture of junk field.'</span>")
+	src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Canceling capture of junk field.'</span>")
 	jtb_gen.field_cancel()
 	return
 
 /obj/machinery/computer/jtb_console/proc/field_release()
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 	if(check_biosignature())
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Sentient signature detected in junk field. Release blocked by security protocols.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Sentient signature detected in junk field. Release blocked by security protocols.'</span>")
 	else
-		src.audible_message("<span class='warning'>The junk tractor beam console beeps: 'NOTICE: Releasing captured junk field.'</span>")
+		src.audible_message("<span class='warning'>The lesser gateway console beeps: 'NOTICE: Releasing captured junk field.'</span>")
 		jtb_gen.field_release()
 	return
 
@@ -844,7 +844,7 @@
 
 /turf/simulated/jtb_edge
 	name = "junk field edge"
-	desc = "A blue wall of energy that stabilizes the junk field."
+	desc = "A blue wall of energy that stabilizes the Lesser Wormhole Gatepyre. It has been altered to not instantly burn non-hearthcore users."
 	density = FALSE
 	blocks_air = TRUE
 	dynamic_lighting = FALSE
@@ -908,9 +908,9 @@
 // Machinery that stabilizes the portal
 //////////////////////////////
 /obj/structure/jtb_pillar
-	name = "bluespace anchoring pylon"
-	desc = "An ominous pylon that can stabilize a short range of bluespace for a singular portal teleportation to nearby ship wrecks and astroid fields littered with potential salvage. \
-	While stable, it is not quite fully understood, being the product of Phokorus Institute's reverse engineering of Simulacrum Robotics AI's designs."
+	name = "Lesser Wormhole Gatepyre"
+	desc = "This machine under custodian autonomy employs wormhole gateway technology. it generates and stabilizes micro-wormholes, while avoiding matter encoding by injecting unbroken matter into a gravitational field generator, utilizing the wormhole as a conduit between entry and destination. \
+	The technology has been granted by the Gatepyre order to the Bonfire Order. Thus, it is far less powerful than the original."
 	icon = 'icons/obj/structures/junk_tractor_beam.dmi'
 	icon_state = "pillar"
 	layer = ABOVE_MOB_LAYER

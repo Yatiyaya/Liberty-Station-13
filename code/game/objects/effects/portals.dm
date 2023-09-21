@@ -256,7 +256,7 @@ Basically a portal without time limit and failchance
 */
 /obj/effect/portal/jtb
 	name = "junk field portal"
-	desc = "A portal stabilized by heavy-duty machinery. It is safe to cross."
+	desc = "A Wormhole stabilized by repulsive gravitational effects, counteracting the attractive forces that would naturally tend to collapse it. As long it is avoiding singularities (points of infinite curvature), It is safe to cross ."
 	failchance = 0
 	entropy_value = 0
 

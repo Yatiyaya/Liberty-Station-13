@@ -21,7 +21,7 @@
 datum/lecture/hearthcore/oathbound/fireball
 	name = "Manifestation of Flames"
 	phrase = "Oxidate Lecture: Manifestation of Flames."
-	desc = "Create a launchable fireball on a free hand."
+	desc = "Allows your radiance to spread to the surface of your skin, creating a protective layer before releasing concentrated, launchable plasma."
 	power = 35
 
 /datum/lecture/hearthcore/oathbound/fireball/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
@@ -191,7 +191,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/oathbound/scorching_shell
 	name = "Scorching Shell"
 	phrase = "Oxidate Lecture: Scorching Shell."
-	desc = "A lecture fashioned after the idea that body and mind can be a fixed point. For a minute, the speaker slows down drastically, but reduces all damage they recieve. Has a cooldown of fifteen minutes."
+	desc = "A lecture that channels radiance by the bloodstream, enveloping the skin in a silvery layer. The speaker bear the substantial burden of radiance covering their skin, yet the protection diminishes all harm inflicted upon them. This lecture has a cooldown of fifteen minutes, so the radiance can replenish."
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
 	cooldown_category = "scorching_shell"
@@ -212,7 +212,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/oathbound/scorching_smite
 	name = "Scorching Smite"
 	phrase = "Oxidate Lecture: Scorching Smite."
-	desc = "A short lecture activated in the middle of battle, it empowers the user's melee strikes for thirty seconds. Takes five minutes to recharge."
+	desc = "A short lecture activated in the middle of battle, it empowers the user's muscular fast-twitch fibers and oxigenation, allowing far stronger strikes for thirty seconds. Takes five minutes to recharge - to avoid harming the user from overuse."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	cooldown_category = "scorching_smite"
@@ -369,7 +369,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		set_personal_cooldown(user)
 		return TRUE
 	else //you are alone
-		fail("Your Hearthcore sings, alone, unto the void.", user, C)
+		fail("No one's around to help. Your hearthcore sings alone in this god-forsaken world.", user, C)
 		return FALSE
 
 /datum/lecture/hearthcore/enkindled/graceful_repose/proc/heal_other(mob/living/carbon/human/participant)
@@ -403,7 +403,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		set_personal_cooldown(user)
 		return TRUE
 	else
-		fail("Your Hearthcore finds nobody to help.", user, C)
+		fail("No one's around to help. Your hearthcore sings alone in this god-forsaken world.", user, C)
 		return FALSE
 
 /datum/lecture/hearthcore/enkindled/healing_word/proc/heal_other(mob/living/carbon/human/participant)
@@ -418,7 +418,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/enkindled/realignment
 	name = "Realignment"
 	phrase = "Oxidate Lecture: Realignment."
-	desc = "Heals all toxins and liver damage, purges all toxic chemical reagents and stimulants in the blood stream  while curing all addictions. Has a fifteen minute cooldown."
+	desc = "Recovers all damage from toxin exposure, purges all chemical and stimulants reagents with toxic effects in the bloodstream, while curing addictions and healing damaged liver tissues. The radiance needs to recover itself for five minutes after oxidated"
 	power = 50
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -714,7 +714,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/forgemaster/greater_empower
 	name = "Greater Empower"
 	phrase = "Oxidate Lecture: Greater Empower."
-	desc = "This lecture transfers Radiance from your own Hearthcore to another Hearthcore user, draining 20 Radiance to grant the same amount."
+	desc = "This lecture uses Radiance from your own Hearthcore to another Hearthcore user by feeding their own silvery compounds, draining 20 Radiance to grant the same amount."
 	power = 20
 
 /datum/lecture/hearthcore/forgemaster/greater_empower/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C,list/targets)
@@ -735,7 +735,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		if (!(T.Adjacent(get_turf(H))))
 			to_chat(user, SPAN_DANGER("[H] is beyond your reach.."))
 			return FALSE
-		to_chat(H, "<span class='info'>Your Hearthcore billows as it gets charged.</span>")
+		to_chat(H, "<span class='info'>Your Hearthcore billows as your radiance practices mitosis with the newfound silvery nutrition.</span>")
 
 		CI.restore_power(20)
 
@@ -744,7 +744,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/forgemaster/iron_will
 	name = "Lecture of Iron Will"
 	phrase = "Oxidate Lecture: Lecture of Iron Will."
-	desc = "Repair a person's mechanical organs and limbs or a mechanical creature in front of you."
+	desc = "Enforces the repairship of a person's mechanical organs and limbs or a mechanical creature in front of you by using radiance. The Radiance will use itself as a modular silvery tape, but will need five minutes of mitosis."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	cooldown_category = "iron_will"
@@ -770,7 +770,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			to_chat(target, "Your [augmentic.name] repairs itself!")
 
 	if(!synth)
-		fail("No mechanical organs or limbs found.",user,C)
+		fail("You watch as the radiance struggles to find mechanical bits on the organic mesh. Now your patient is glowing in thin flex tape.",user,C)
 		return FALSE
 
 	add_effect(target, FILTER_HOLY_GLOW, 25)
@@ -813,7 +813,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		return FALSE //no target? cancel
 
 	if(user == M)
-		fail("You feel stupid.",user,C,targets) //yourself? cancel
+		fail("You feel your own radiance overcoming one of your eyes as you hear the sounds of machinery zooming like a camera. Honestly, it changes absolutely nothing beyond allowing you to see with two eyes, in case you lacked just one.",user,C,targets) //yourself? cancel
 		return FALSE
 
 	var/obj/item/implant/core_implant/hearthcore/target = M.get_core_implant(/obj/item/implant/core_implant/hearthcore)
@@ -822,7 +822,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		return FALSE
 
 	to_chat(user, SPAN_NOTICE("Your vision shifts.")) //all checks are good, proceed
-	to_chat(M, SPAN_NOTICE("You feel an odd presence in the back of your mind. A lingering sense that someone is watching you..."))
+	to_chat(M, SPAN_NOTICE("You feel your own radiance overcoming one of your eyes as you hear the sounds of machinery zooming like a camera. Whatever you may be looking at - there is someone else doing the same..."))
 
 	var/mob/observer/eye/god/eye = new/mob/observer/eye/god(M)
 	eye.target = M
@@ -839,7 +839,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/oathpledge/reimagining //re-named convalescence to give it to Enkindled and Oathpledge but not give the entire category
 	name = "Reimagining"
 	phrase = "Oxidate Lecture: Reimagining."
-	desc = "Recover from the ravages of wounds and pain, has a five minute cooldown."
+	desc = "Guides the radiance to knit and weave wounds, while soothing the nerves. The oxidization needs five minutes of recovery before having to be used again."
 	cooldown = TRUE
 	cooldown_time = 5 MINUTES
 	cooldown_category = "reimagining"
@@ -847,9 +847,9 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 /datum/lecture/hearthcore/oathpledge/reimagining/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
+		to_chat(H, SPAN_WARNING("Amusing. You witnessed the radiance falter, attempting to ment your injuries. The freshly formed monocryl slides off your mechanical bits."))
 		return FALSE
-	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
+	to_chat(H, "<span class='info'>A sharp pain which soon subsides, followed by your wounds now knitted by the hard working radiance with a absorbable material.</span>")
 	H.reagents.add_reagent("laudanum", 5)
 	H.adjustBruteLoss(-15)
 	H.adjustFireLoss(-15)
@@ -860,15 +860,15 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	return TRUE
 
 /datum/lecture/hearthcore/oathpledge/commitment
-	name = "Commitment"
-	phrase = "Oxidate Lecture: Commitment."
-	desc = "This lecture will command a Hearthcore to attach to a person lying on a Board of Opposites. The Hearthcore must lay near them, and will require the Epiphany lecture to fully activate."
+	name = "Accolade"
+	phrase = "Oxidate Lecture: Accolade"
+	desc = "the central act in the rite of knighthood - which should come together with a ceremony - that will command a Hearthcore to attach to a person lying on a Board of Opposites. The Hearthcore must lay near them, and will require the Epiphany lecture to fully activate."
 
 /datum/lecture/hearthcore/oathpledge/commitment/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/mob/living/carbon/human/H = get_victim(user)
 	var/obj/item/implant/core_implant/hearthcore/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/hearthcore, FALSE)
 	if(CI)
-		fail("[H] already has a Hearthcore installed.", user, C)
+		fail("[H] is already a knight with a Hearthcore installed.", user, C)
 		return FALSE
 
 	var/list/L = get_front(user)
@@ -876,27 +876,27 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	CI = locate(/obj/item/implant/core_implant/hearthcore) in L
 
 	if(!CI)
-		fail("There is no Hearthcore on this one", user, C)
+		fail("This one lacks a hearthcore - or lacks a spine for it to attach, on both senses of the word.)", user, C)
 		return FALSE
 
 	if (H.stat == DEAD)
-		fail("It is too late for this one, they are already dead.", user, C)
+		fail("Your radiance, the neural cells of your second brain, informs you that you've either mistakenly tried to transform a corpse into a knight for an inexplicable reason, or you've forgotten that the ceremonial sword is intended for tapping on the shoulders, not for decapitation. The fact you understood it from chemical reactions is no short of surprising - but at this point you are more likely just as dumb.", user, C)
 		return FALSE
 
 	if(!(H in L))
-		fail("Hearthcore is too far from [H].", user, C)
+		fail("Hearthcore can't reach [H], it is too far away.", user, C)
 		return FALSE
 
 	if(CI.active)
-		fail("Hearthcore already active.", user, C)
+		fail("This person is already knighted, together with a active hearthcore.", user, C)
 		return FALSE
 
 	if(!H.lying || !locate(/obj/machinery/optable/altar) in L)
-		fail("[H] must lie on the altar.", user, C)
+		fail("[H] must lie on the board of opposites.", user, C)
 		return FALSE
 
 	if(!CI.install(H, BP_CHEST, user) || CI.wearer != H)
-		fail("Commitment failed.", user, C)
+		fail("Accolade failed.", user, C)
 		return FALSE
 
 	if(ishuman(H))
@@ -906,7 +906,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			E.take_damage(5, sharp = FALSE)
 			//Deal 25 damage in five hits. Using multiple small hits mostly prevents internal damage
 
-		M.custom_pain("You feel the nails of the Hearthcore drive deep into you!",1)
+		M.custom_pain("You feel the wings of the Hearthcore driving deep into your back, wrapping warm metal around all the extension of the spine! Why you suddently created sensitivity in places you never felt before?!",1)
 		M.update_implants()
 		M.updatehealth()
 
@@ -915,13 +915,13 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/oathpledge/epiphany
 	name = "Epiphany"
 	phrase = "Oxidate Lecture: Epiphany."
-	desc = "This lecture will command an unused Hearthcore to activate. The subject must lay on a Board of Opposites."
+	desc = "This lecture will command an Hearthcore with sleeping radiance to awake. The subject must lay on a Board of Opposites."
 
 /datum/lecture/hearthcore/oathpledge/epiphany/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/obj/item/implant/core_implant/hearthcore/CI = get_implant_from_victim(user, /obj/item/implant/core_implant/hearthcore, FALSE)
 
 	if(!CI)
-		fail("There is no Hearthcore on this one.", user, C)
+		fail("This one is no knight, but a yeoman or squire.", user, C)
 		return FALSE
 
 	if(!CI.wearer)
@@ -933,11 +933,11 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		return FALSE
 
 	if (CI.wearer.stat == DEAD)
-		fail("It is too late for this one, they are dead.", user, C)
+		fail("This person is dead. You should, perhaps, bring them to CAPSA instead? Corpses makes no knights, nor the radiance will be compatible with the dead.", user, C)
 		return FALSE
 
-	log_and_message_admins("successfully baptized [CI.wearer]")
-	to_chat(CI.wearer, "<span class='info'>Your Hearthcore vibrates and warms up.</span>")
+	log_and_message_admins("successfully knighted [CI.wearer]")
+	to_chat(CI.wearer, "<span class='info'>The warm flow of silvery radiance spreads wide on your bloodstream. Your servants craves for oxidation.</span>")
 
 	CI.activate()
 
@@ -965,7 +965,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		var/mob/living/carbon/human/H = M
 		var/obj/item/organ/external/E = H.organs_by_name[BP_CHEST]
 		E.take_damage(15)
-		H.custom_pain("You feel the Hearthcore ripping out of your chest!",1)
+		H.custom_pain("You feel the Hearthcore being ripped out of your spine as you feel a portion of you dying instantly!",1)
 		CI.name = "[M]'s Hearthcore"
 		CI.uninstall()
 		return TRUE
@@ -1023,7 +1023,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		located.use(REPAIR_COST)
 
 	log_and_message_admins("successfully reconsecrated [CI.wearer]")
-	to_chat(CI.wearer, "<span class='info'>Your Hearthcore vibrates and reconstitutes itself.</span>")
+	to_chat(CI.wearer, "<span class='info'>Your Hearthcore vibrates as your radiance comes back to life. You feel whole once again.</span>")
 
 	CI.activate()
 	CI.remove_modules(HEARTHCORE_DAMAGED) //repair process removes the DAMAGED module
@@ -1094,7 +1094,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			H.stats.changeStat(STAT_TGH, 15)
 			H.stats.changeStat(STAT_ROB, 15)
 			H.stats.changeStat(STAT_VIG, 15)
-			to_chat(H, SPAN_NOTICE("You feel stronger, hardier, more agile."))
+			to_chat(H, SPAN_NOTICE("You feel your muscles contract, oxygenated from a unknown source. now fearless, strong and agile."))
 			add_effect(H, FILTER_HOLY_GLOW, 25)
 			addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time) //start removal timer
 	set_personal_cooldown(user)
@@ -1106,7 +1106,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	user.stats.changeStat(STAT_TGH, -15)
 	user.stats.changeStat(STAT_ROB, -15)
 	user.stats.changeStat(STAT_VIG, -15)
-	to_chat(user, SPAN_NOTICE("You no longer feel so great."))
+	to_chat(user, SPAN_NOTICE("Your muscles relax, deprived of oxygen. The imagined battle music in your mind has fallen silent, leaving you demoralized."))
 
 /datum/lecture/hearthcore/oathpledge/sanctorium_of_life
 	name = "Sanctorium of Life"
@@ -1124,7 +1124,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			H.stats.changeStat(STAT_MEC, 15)
 			H.stats.changeStat(STAT_COG, 15)
 			H.stats.changeStat(STAT_BIO, 15)
-			to_chat(H, SPAN_NOTICE("You feel smarter, more mentally stable."))
+			to_chat(H, SPAN_NOTICE("Your mind turns inwards - everything becomes clear. You feel smarter, mentally capable."))
 			add_effect(H, FILTER_HOLY_GLOW, 25)
 			addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
 	set_personal_cooldown(user)
@@ -1136,13 +1136,13 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	user.stats.changeStat(STAT_MEC, -15)
 	user.stats.changeStat(STAT_COG, -15)
 	user.stats.changeStat(STAT_BIO, -15)
-	to_chat(user, SPAN_NOTICE("You no longer feel so wise."))
+	to_chat(user, SPAN_NOTICE("Your mind has become less responsive, as if something has slipped from your memory."))
 
 
 /datum/lecture/hearthcore/oathpledge/torch_of_guidance
 	name = "Torch of Guidance"
 	phrase = "Oxidate Lecture: Torch of Guidance."
-	desc = "A lecture designed to warn the user of danger, it will reveal the presence of hostile fauna, traps, and potentially monsters hiding as people."
+	desc = "A lecture intricately aligned with the neural links to forewarn the user of perfil. The radiance will inspect and unveil the presence of plague, hostile fauna, monstrous entity hiding as people and traps."
 	power = 50
 
 /datum/lecture/hearthcore/oathpledge/torch_of_guidance/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
@@ -1150,23 +1150,23 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	log_and_message_admins("performed empowered reveal lecture")
 	for(var/mob/living/carbon/superior_animal/S in range(14, H))
 		if (S.stat != DEAD)
-			to_chat(H, SPAN_WARNING("Adversaries are near. You can feel something nasty and hostile.")) //prints this for every superior_animal found in 14 tiles
+			to_chat(H, SPAN_WARNING("The radiance quivers in antecipation. Foes draw near. You sense a palpable, malevolent presence - a worthy adversary.")) //prints this for every superior_animal found in 14 tiles
 			was_triggired = TRUE
 
 	if(!was_triggired)
 		for (var/mob/living/simple_animal/hostile/S in range(14, H)) //prints this for every hostile simple_animal found in 14 tiles
 			if (S.stat != DEAD)
-				to_chat(H, SPAN_WARNING("A simple hostile brute is nearby, nasty and stupid."))
+				to_chat(H, SPAN_WARNING("The radiance breaths in disappointment. A simple hostile brute is nearby, stupid and most likely unworthy of a fight."))
 				was_triggired = TRUE
 
 	if(locate(/obj/structure/wire_splicing || /obj/item/mine || /obj/item/mine_old || /obj/item/spider_shadow_trap || /obj/item/beartrap || /obj/item/emp_mine) in view(7, H)) //prints this only once if a trap was found in the user's view
-		to_chat(H, SPAN_WARNING("Something is wrong with this area. Tread carefully, someone has laid a trap nearby."))
+		to_chat(H, SPAN_WARNING("The radiance triggers you a chemical warning. You must tread carefully, someone has laid curses and traps nearby."))
 		was_triggired = TRUE
 
 	for(var/mob/living/carbon/human/target in range(14, H)) //prints this for every implanted carrion organ found in 14 tiles
 		for(var/organ in target.organs)
 			if (organ in subtypesof(/obj/item/organ/internal/carrion))
-				to_chat(H, SPAN_DANGER("A black terrible evil brushes against your mind suddenly, a horrible monstrous entity who's mere glancing ire is enough to leave you in a breathless cold sweat..."))
+				to_chat(H, SPAN_DANGER("The radiance shivers in disgust, now running boiling hot on your bloodstream to prepare you for what is to come. You feel danger, yet never afraid. The presence of a terrible plague is nearby."))
 				was_triggired = TRUE
 
 	if(!was_triggired) //nothing was triggered? print this
@@ -1214,13 +1214,13 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	target.sanity.sanity_passive_gain_multiplier += 0.2
 	addtimer(CALLBACK(src, .proc/take_sanity_recovery, target), effect_time)//start the timer to remove the buff
 	spawn(30)
-		to_chat(target, SPAN_NOTICE("You feel inspired."))
+		to_chat(target, SPAN_NOTICE("Gentle whispers, their meanings convoluted, evokes a profound sense of nostalgia that washes over you, no longer ensared by the clutches of a restless mind - only solace."))
 
 /datum/lecture/hearthcore/oathpledge/inspiration/proc/take_sanity_recovery(mob/living/carbon/human/target)
 	if(!target)
 		return
 	target.sanity.sanity_passive_gain_multiplier -= 0.2
-	to_chat(target, SPAN_NOTICE("You feel your inspiration draining."))
+	to_chat(target, SPAN_NOTICE("The gentle whispers subsized - your mind exposed to the old, intrusive thoughts. Yearning for that nostalgic peace, you crave its return..."))
 
 /datum/lecture/hearthcore/oathpledge/order_of_misery
 	name = "Order of Misery"
@@ -1241,13 +1241,13 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	target.sanity.sanity_passive_gain_multiplier -= 0.2
 	addtimer(CALLBACK(src, .proc/take_sanity_malus, target), effect_time)//start the timer to remove the debuff
 	spawn(30)
-		to_chat(target, SPAN_NOTICE("You feel miserable."))
+		to_chat(target, SPAN_NOTICE("Something enter your mind, intrusive thoughts that was beyond your previous imagination. Anywhere you look - everything seems to be briefly melting."))
 
 /datum/lecture/hearthcore/oathpledge/order_of_misery/proc/take_sanity_malus(mob/living/carbon/human/target)
 	if(!target)
 		return
 	target.sanity.sanity_passive_gain_multiplier += 0.2
-	to_chat(target, SPAN_NOTICE("You don't feel so miserable anymore."))
+	to_chat(target, SPAN_NOTICE("You no longer feel the world melting as the intrusive thoughts weakens, yet it has long damaged your mind."))
 
 /datum/lecture/hearthcore/oathpledge/disgrace
 	name = "Disgrace"
@@ -1259,24 +1259,24 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	var/mob/living/carbon/human/target = get_victim(user)
 
 	if(!target)
-		fail("No target.", user, C)
+		fail("No target to curse, at least not as easily.", user, C)
 		return FALSE
 
 	target.sanity.changeLevel(-20)//get target using get_victim(), if there is a target, lower sanity, otherwise? cancel
 	return TRUE
 
 /datum/lecture/hearthcore/oathpledge/sight_of_bonfire
-	name = "Sight of Bonfire"
-	phrase = "Oxidate Lecture: Sight of Bonfire."
+	name = "Knight Sight"
+	phrase = "Oxidate Lecture: Knight Sight."
 	desc = "Toggles revealing other Hearthcore users."
 
 /datum/lecture/hearthcore/oathpledge/sight_of_bonfire/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
 	var/datum/core_module/hearthcore/neotheologyhud/hud_module = C.get_module(/datum/core_module/hearthcore/neotheologyhud)
 	if(hud_module) //toggles an already existing church HUD module that shows a little icon on Hearthcore users
-		success_message = "Turning off Sight of Bonfire."
+		success_message = "Turning off Sight of Knights."
 		C.remove_module(hud_module)
 	else
-		success_message = "Turning on Sight of Bonfire."
+		success_message = "Turning on Sight of Knights."
 		C.add_module(new /datum/core_module/hearthcore/neotheologyhud)
 	return TRUE
 

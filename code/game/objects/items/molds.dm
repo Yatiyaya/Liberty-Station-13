@@ -76,3 +76,21 @@
 	icon = 'icons/mob/lord_foog.dmi'
 	icon_state = "foog_armor"
 
+/obj/item/stack/custodian_neural
+	name = "Custodian Neural Link"
+	singular_name = "Custodian Neuron"
+	desc = "You were totally not supposed to see this. Go awaaaay."
+	icon = 'icons/obj/neural_link.dmi'
+	icon_state = "raw_ectoderm"
+	throw_range = 5
+	matter = list(MATERIAL_SILVER = 1, MATERIAL_BIOMATTER = 5)
+
+/obj/item/stack/custodian_neural/ectoderm
+	name = "Raw Ectoderm"
+	singular_name = "Pile of Raw Ectoderm "
+	desc = "The result of purification. The Brain, ganglia and many nerves. \
+			Sterilized by flames, now dry, denied of degradation and coated in silver. \
+			Ectoderm is used to produce new radiance nerves without being genetically bound to their previous owner."
+	icon_state = "raw_ectoderm"
+
+

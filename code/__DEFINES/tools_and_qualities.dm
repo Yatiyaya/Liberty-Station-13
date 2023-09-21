@@ -16,6 +16,7 @@
 #define QUALITY_ADHESIVE				"adhesive"
 #define QUALITY_SEALING					"sealing"
 #define QUALITY_HAMMERING				"hammering"
+#define QUALITY_PURIFY				    "purification" //This is my first actual attempt on making a code that is actually of my own mental resource. Likely to be ultra bad. I seriously hope Gundam will help me into actually enhancing this -Monochrome
 
 //Biological Qualities
 #define QUALITY_CLAMPING				"clamping"

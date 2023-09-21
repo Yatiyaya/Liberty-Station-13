@@ -210,7 +210,7 @@
 #define HEARTHCORE_FORGEMASTER /datum/core_module/lectures/hearthcore/forgemaster
 #define HEARTHCORE_OATHPLEDGE /datum/core_module/lectures/hearthcore/oathpledge
 #define HEARTHCORE_ANTI_SCRYING /datum/core_module/lectures/hearthcore/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
-#define HEARTHCORE_DAMAGED /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
+#define HEARTHCORE_DAMAGED /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
 
 #define HEARTHCORE_UPLINK /datum/core_module/hearthcore/uplink
 #define HEARTHCORE_CLONING /datum/core_module/hearthcore/cloning
