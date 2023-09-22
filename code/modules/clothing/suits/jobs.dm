@@ -426,7 +426,7 @@
 	desc = "Jacket produced out of custodian biopolymers with the respective softness and warmth coming from the highest quality, non-vegan silk in the market. This one is red coloured."
 	icon_state = "redsilk_jacket"
 	item_state = "redsilk_jacket"
-	icon_open = "redsilk_jacket_openn"
+	icon_open = "redsilk_jacket_open"
 	icon_closed = "redsilk_jacket"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
