@@ -9,9 +9,9 @@
 	if(!check_HUDdatum())//check client prefs
 		log_debug("[H] try check a HUD, but HUDdatums not have \"[H.client.prefs.UI_style]!\"")
 		to_chat(H, "Some problem has occurred, use default HUD type")
-		H.defaultHUD = "ErisStyle"
+		H.defaultHUD = "LibertyStyle"
 		recreate_flag = TRUE
-	else if (H.client.prefs.UI_style != H.defaultHUD)//Если стиль у МОБА не совпадает со стилем у клинета
+	else if (H.client.prefs.UI_style != H.defaultHUD)
 		H.defaultHUD = H.client.prefs.UI_style
 		recreate_flag = TRUE
 
