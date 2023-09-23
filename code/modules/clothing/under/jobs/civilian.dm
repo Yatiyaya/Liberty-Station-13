@@ -108,28 +108,24 @@
 	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
 	icon_state = "oathbound_underarmor"
 	item_state = "oathbound_underarmor"
-	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/custodian/enkindled
 	name = "enkindled underarmor"
 	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
 	icon_state = "enkindled_underarmor"
 	item_state = "enkindled_underarmor"
-	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/custodian/forgemaster
 	name = "forgemaster underarmor"
 	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
 	icon_state = "forgemaster_underarmor"
 	item_state = "forgemaster_underarmor"
-	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/custodian/oathpledge
 	name = "oathpledge underarmor"
 	desc = "A comfortable Custodian underarmor that's easy to move in and reduces chafing when wearing their signature suits of armor."
 	icon_state = "oathpledge_underarmor"
 	item_state = "oathpledge_underarmor"
-	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/rank/chef
 	desc = "A pleasant yet practical suit for professional kitchen staff."
