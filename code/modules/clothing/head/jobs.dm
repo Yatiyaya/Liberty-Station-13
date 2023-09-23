@@ -364,3 +364,48 @@
 	desc = "A wide-brim hat given to the Oathpledge."
 	icon_state = "oathpledge_hat"
 	item_state = "oathpledge_hat"
+
+
+/obj/item/clothing/head/purifierhat
+	name = "Purifier Team Hat"
+	desc = "The hat from the Elohopean baseball team. Sturdy, yet not very armored at all."
+	icon_state = "purifier_sporthat"
+	item_state = "purifier_sporthat"
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 50, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 5)
+
+/obj/item/clothing/head/fencinghelmet
+	name = "Fencing Helmet"
+	desc = "The fencing helmet, developed to protect the face against custodian training weapons. Training weapons only."
+	icon_state = "fencing_helmet"
+	item_state = "fencing_helmet"
+	matter = list(MATERIAL_BIO_SILK = 5)
+	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/head/squire_bearskin
+	name = "Squire Bearskin"
+	desc = "The Bearskin used by Squires of the custodians of the Bonfire order, mostly effective to soak sweat during training, but very unlikely to be used in battle."
+	icon_state = "squire_bearskin"
+	item_state = "squire_bearskin"
+	matter = list(MATERIAL_BIO_SILK = 5)
+
+/obj/item/clothing/head/ladyhat
+	name = "Dark Ladyhat"
+	desc = "The fashionable hat normally used by female custodians. These hats tends to be decorated with flowers and feathers."
+	icon_state = "dark_ladyhat"
+	item_state = "dark_ladyhat"
+	matter = list(MATERIAL_BIO_SILK = 5)
+
+/obj/item/clothing/head/ladyhat/redladyhat
+	name = "Red Ladyhat"
+	desc = "The fashionable hat normally used by female custodians. These hats tends to be decorated with flowers and feathers."
+	icon_state = "red_ladyhat"
+	item_state = "red_ladyhat"
+	matter = list(MATERIAL_BIO_SILK = 5)
+
+/obj/item/clothing/head/ladyhat/blueladyhat
+	name = "Blue Ladyhat"
+	desc = "The fashionable hat normally used by female custodians. These hats tends to be decorated with flowers and feathers."
+	icon_state = "light_ladyhat"
+	item_state = "light_ladyhat"
+	matter = list(MATERIAL_BIO_SILK = 5)

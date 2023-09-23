@@ -175,3 +175,91 @@
 	desc = "A gorka suit painted over with Skylight orange and black."
 	icon_state = "ls_gorka"
 	item_state = "ls_gorka"
+
+/obj/item/clothing/under/custodian/attires
+	name = "Colonial gentry attire"
+	desc = "Exquisite silken attire crafted for the colonial knights, intended for those whose blood boasts flaming silver."
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "gentry_attire_colonial"
+	item_state = "gentry_attire_colonial"
+
+/obj/item/clothing/under/custodian/attires/formalred
+	name = "Elohopean gentry attire"
+	desc = "Exquisite silken attire crafted for the elohopean knights, intended for those whose blood boasts flaming silver."
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "gentry_attire_elohopean"
+	item_state = "gentry_attire_elohopean"
+
+/obj/item/clothing/under/custodian/attires/formalnobles
+	name = "Nobility attire"
+	desc = "Exquisite silken attire crafted for the Elohopean-born currently living in the colony. Not like being noble on this colony means much as it would in Elohopea."
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "noblewear"
+	item_state = "noblewear"
+
+/obj/item/clothing/under/custodian/oathturtleneck
+	name = "Dark Oathbound Turtleneck"
+	desc = "Warm, comfortable turtleneck first granted to the refugees of Elohopea wars back in the day, nowadays it is a clothing well used by all oathbounds as pajamas. This one comes in dark colors."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "oathbound_turtleneck"
+	item_state = "oathbound_turtleneck"
+
+/obj/item/clothing/under/custodian/oathturtleneck/oathbound_lightturtleneck
+	name = "Light Oathbound Turtleneck"
+	desc = "Warm, comfortable turtleneck first granted to the refugees of Elohopea wars back in the day, nowadays it is a clothing well used by all oathbounds as pajamas. This one comes in light colors."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "oathbound_lightturtleneck"
+	item_state = "oathbound_lightturtleneck"
+
+/obj/item/clothing/under/custodian/orderturtleneck
+	name = "Bonfire Order Turtleneck"
+	desc = "Luxuriously smooth sweater with a high, close-fitting collar that covers the neck, allowing the skin to breath while still remaining warm. Stylish and with a fine texture - perfect for sleeping and working in the snow. This one comes with symbols and color of the Bonfire order on the silk."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "bonfire_turtleneck"
+	item_state = "bonfire_turtleneck"
+
+/obj/item/clothing/under/custodian/orderturtleneck/gatepyre_turtleneck
+	name = "Gatepyre Order Turtleneck"
+	desc = "Luxuriously smooth sweater with a high, close-fitting collar that covers the neck, allowing the skin to breath while still remaining warm. Stylish and with a fine texture - perfect for sleeping and working in the snow. This one comes with symbols and color of the Gatepyre order on the silk."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "gatepyre_turtleneck"
+	item_state = "gatepyre_turtleneck"
+
+/obj/item/clothing/under/custodian/orderturtleneck/apothefire_turtleneck
+	name = "Apothefire Order Turtleneck"
+	desc = "Luxuriously smooth sweater with a high, close-fitting collar that covers the neck, allowing the skin to breath while still remaining warm. Stylish and with a fine texture - perfect for sleeping and working in the snow. This one comes with symbols and color of the Apothefire order on the silk."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "apothefire_turtleneck"
+	item_state = "apothefire_turtleneck"
+
+/obj/item/clothing/under/custodian/orderturtleneck/ashenforge_turtleneck
+	name = "Ashenforge Order Turtleneck"
+	desc = "Luxuriously smooth sweater with a high, close-fitting collar that covers the neck, allowing the skin to breath while still remaining warm. Stylish and with a fine texture - perfect for sleeping and working in the snow. This one comes with symbols and color of the Ashenforge order on the silk."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "ashenforge_turtleneck"
+	item_state = "ashenforge_turtleneck"
+
+/obj/item/clothing/under/custodian/purifiergear
+	name = "Purifier Baseball Uniform"
+	desc = "The white uniform donned by the Elohopean Purifiers baseball team, transcended beyond its sporting origins - now a revered emblem of Custodian unbreakable spirit after the wars in Elohopea, used by early custodian rebels."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "purifier_light"
+	item_state = "purifier_light"
+
+/obj/item/clothing/under/custodian/purifiergear/on
+	name = "Dark Purifier Baseball Uniform"
+	desc = "The dark uniform donned by the Elohopean Purifiers baseball team, transcended beyond its sporting origins - now a revered emblem of Custodian unbreakable spirit after the wars in Elohopea, used by early custodian rebels."
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "purifier_dark"
+	item_state = "purifier_dark"

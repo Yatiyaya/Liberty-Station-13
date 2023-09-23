@@ -5,7 +5,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/hearthcore
 	name = "Hearthcore"
 	icon_state = "hearthcore_green"
-	desc = "A symbol and power core of every Custodian. With the proper measures, this can be implanted to induct a new member into the Custodians."
+	desc = "This symbol and power core of knighthood resides at the very heart of Custodian accolades, a silver implant that marks the initiation of a new knight."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/hearthcore
 	layer = ABOVE_MOB_LAYER
@@ -92,7 +92,7 @@ var/list/disciples = list()
 			if(MN.name) // if there is a mind and it also has a name
 				to_chat(user, SPAN_NOTICE("This Hearthcore belongs to <b>[MN.name]</b>."))
 			else
-				to_chat(user, SPAN_DANGER("Something terrible has happened with this soul. Please notify somebody in charge."))
+				to_chat(user, SPAN_DANGER("Something terrible has happened with these radiances. Please notify your superiors in the lower colonies."))
 	else // no cloning data
 		to_chat(user, "This Hearthcore has not yet been activated.")
 

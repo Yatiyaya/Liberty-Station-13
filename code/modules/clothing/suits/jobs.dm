@@ -393,3 +393,187 @@
 	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 	min_cold_protection_temperature = T0C - 20
 
+/obj/item/clothing/suit/storage/toggle/silkjackets
+	name = "Dark Silk Jacket"
+	desc = "Jacket produced out of custodian biopolymers with the respective softness and warmth coming from the highest quality, non-vegan silk in the market. This one is dark coloured."
+	icon_state = "darksilk_jacket"
+	item_state = "darksilk_jacket"
+	icon_open = "darksilk_jacket_open"
+	icon_closed = "darksilk_jacket"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 10, bullet = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/toggle/silkjackets/lightsilk
+	name = "Light Silk Jacket"
+	desc = "Jacket produced out of custodian biopolymers with the respective softness and warmth coming from the highest quality, non-vegan silk in the market. This one is light coloured."
+	icon_state = "lightsilk_jacket"
+	item_state = "lightsilk_jacket"
+	icon_open = "lightsilk_jacket_open"
+	icon_closed = "lightsilk_jacket"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 10, bullet = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/toggle/silkjackets/redsilk
+	name = "Red Silk Jacket"
+	desc = "Jacket produced out of custodian biopolymers with the respective softness and warmth coming from the highest quality, non-vegan silk in the market. This one is red coloured."
+	icon_state = "redsilk_jacket"
+	item_state = "redsilk_jacket"
+	icon_open = "redsilk_jacket_open"
+	icon_closed = "redsilk_jacket"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 10, bullet = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/anorak
+	name = "Custodian Anorak"
+	desc = "Sturdy, thick and warm. Not quite comfortable due to how it keeps the heat from leaving the anorak, barely letting the skin breath, but that the reason someone would wear this clothing."
+	icon_state = "custodian_anorak"
+	item_state = "custodian_anorak"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/chokha
+	name = "Order of Bonfire Chokha"
+	desc = "The traditional coats of men belonging to the Custodians of Bonfire as a order itself, with silk extending from the shoulders to below the thighs, loose-fitting everywhere but on the waist, which it is worn tightly around it. This one uses the traditional colors."
+	icon_state = "custodian_chokha"
+	item_state = "custodian_chokha"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/chokha/squire_chokha
+	name = "Squire Chokha"
+	desc = "The traditional coats of men belonging to the Custodians of Bonfire as a order itself, with silk extending from the shoulders to below the thighs, loose-fitting everywhere but on the waist, which it is worn tightly around it. This one uses the colours of Squires."
+	icon_state = "squire_chokha"
+	item_state = "squire_chokha"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/squire_caftan
+	name = "Brass Caftan"
+	desc = "Loose, flowing garment worn like a long tunic with wide sleeves and with brass patterns on its design. Normally used by squires."
+	icon_state = "squire_caftan"
+	item_state = "squire_caftan"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse/vintage_darkpelisse
+	name = "Dark Short Pelisse"
+	desc = "Outer garment typically worn by women with long sleeves and with a large length, with fashionable minor accssories. This clothing was a popular choice during the late 18th century."
+	icon_state = "vintage_darkpelisse"
+	item_state = "vintage_darkpelisse"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse/vintage_redpelisse
+	name = "Red Short Pelisse"
+	desc = "Outer garment typically worn by women with long sleeves and with a large length, with fashionable minor accssories. This clothing was a popular choice during the late 18th century."
+	icon_state = "vintage_redpelisse"
+	item_state = "vintage_redpelisse"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/polonaisedress
+	name = "Polonaise Dress"
+	desc = "Polonaise dress - or robe à la polonaise - is normally used for Elohopean dances based on traditional polish roots. Fashionable, flexible and decorated, these dress goes swiftly to those who dances with sabers."
+	icon_state = "polonaisedress"
+	item_state = "polonaisedress"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse
+	name = "Black Large Pelisse"
+	desc = "Outer garment typically worn by women with long sleeves and with a large length, with fashionable minor accssories. This clothing was a popular choice during the late 18th century."
+	icon_state = "custodian_blackpelisse"
+	item_state = "custodian_blackpelisse"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse/custodian_redpelisse
+	name = "Red Large Pelisse"
+	desc = "Outer garment typically worn by women with long sleeves and with a large length, with fashionable minor accssories. This clothing was a popular choice during the late 18th century."
+	icon_state = "custodian_redpelisse"
+	item_state = "custodian_redpelisse"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse/custodian_bluepelisse
+	name = "Blue Large Pelisse"
+	desc = "Outer garment typically worn by women with long sleeves and with a large length, with fashionable minor accssories. This clothing was a popular choice during the late 18th century."
+	icon_state = "custodian_bluepelisse"
+	item_state = "custodian_bluepelisse"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/pelisse/openskirt_pelisse
+	name = "Pelisse Gown"
+	desc = "Rather seductive, large pelisse with cloth that has straps covering the neck like a collar."
+	icon_state = "openskirtgown"
+	item_state = "openskirtgown"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/training
+	name = "Custodian Judogui"
+	desc = "Traditional attire for custodians in training and martial artists just alike. The suit has the Uwagi, Zubon, obi and many custodian patches of obvious affiliations to the order and Judo"
+	icon_state = "custodian_judogui"
+	item_state = "custodian_judogui"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/storage/training/fencing_fullbody
+	name = "Fencing Attire"
+	desc = "Fencing gear that provides protection to fencers while allowing freedom of movement. Made of rough fabric resistant to puncture, it's ddesigned to withstand the force of a training fencing blade. Do not try it with actual swords."
+	icon_state = "fencing_fullbody"
+	item_state = "fencing_fullbody"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.7
+	armor_list = list(melee = 5, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	min_cold_protection_temperature = T0C - 20
