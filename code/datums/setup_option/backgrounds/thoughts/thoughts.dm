@@ -15,7 +15,7 @@
 	Never did you lose your composure in front of others, uttered a singular tear in your entire life, you are the definition of a hard-ass. \
 	But this left you emotionally stunted, unable to feel any empathy for others or being able to relate to simplest emotions besides your own will to survive. \
 	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan."
-	stat_modifiers = list(STAT_WIL = 10, STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_COG = -10)
+	stat_modifiers = list(STAT_WIL = 10, STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_COG = -10) // High willpower on a perk designed to freak out less at death
 	perks = list(PERK_SURVIVOR)
 
 /datum/category_item/setup_option/background/thoughts/encyclopedia

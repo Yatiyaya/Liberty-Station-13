@@ -19,7 +19,7 @@
 
 /obj/effect/window_lwall_spawn/smartspawn/church
 	wall_path = /obj/structure/low_wall/custodian
-	icon_state = "sp_church_full_window"
+	icon_state = "sp_custodian_full_window"
 
 // stops ZAS expanding zones past us, the windows will block the zone anyway
 /obj/effect/window_lwall_spawn/CanPass()

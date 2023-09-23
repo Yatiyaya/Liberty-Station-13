@@ -236,11 +236,11 @@
 
 /obj/item/tool/sword/union
 	name = "Combat Sword"
-	desc = "A Sturdy Combat Sword, seen in many conflicts around the galaxy and ideal to fight alien lifeforms, raiders or as a nice gardering tool, this one has a special design and a knuckleduster on it."
+	desc = "A Sturdy Combat Sword, seen in many conflicts around the galaxy and ideal to fight overgrown insect lifeforms, raiders or as a nice gardering tool, this one has a special design and a knuckleduster on it."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_sword"//new sprites by dromki.
 	item_state = "combat_sword"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_STEEL = 15)
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
@@ -251,9 +251,9 @@
 		slot_back_str = "combat_sword"
 		)
 	worksound = WORKSOUND_HARD_SLASH
-	force = WEAPON_FORCE_ROBUST
-	armor_penetration = ARMOR_PEN_DEEP
-	effective_faction = list("xenomorph", "balkan") // The factions mentioned on the blade's description
+	force = WEAPON_FORCE_NORMAL
+	armor_penetration = ARMOR_PEN_MODERATE
+	effective_faction = list("roach", "termite") // The factions mentioned on the blade's description
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
@@ -273,22 +273,22 @@
 
 /obj/item/tool/sword/katana/union
 	name = "Diamond Edge Sword"
-	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries,duelists or well paid Bodyguards this sword is special in design, balance and made for a true fighter, if said fighter can afford a weapon like this."
-	icon_state = "diamond_edge" // New sprite courtesy of nayu//replaced by dromki with new design and mob sprites.
+	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries, duelists or well paid Bodyguards this sword is special in design, balance and made for a true fighter, if said fighter can afford a weapon like this."
+	icon_state = "diamond_edge" //by dromki with new design and mob sprites.
 	item_state = "diamond_edge"
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = WEAPON_FORCE_BRUTAL
-	armor_penetration = ARMOR_PEN_MASSIVE
+	force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
+	armor_penetration =  ARMOR_PEN_EXTREME
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("xenomorph", "balkan", "circhosian") // Same as the combat sword, but also cultists
-	damage_mult = 1.5
+	effective_faction = list("roach", "termite", "balkan") // Same as the combat sword, but also balkan as its fancy
+	damage_mult = 1.2 // Higher base damage, less damage bonus
 
 /obj/item/tool/sword/katana_makeshift
 	name = "makeshift katana"
