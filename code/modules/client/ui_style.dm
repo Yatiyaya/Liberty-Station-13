@@ -33,11 +33,13 @@
 		to_chat(usr, SPAN_WARNING("You must be human to use this verb."))
 		return
 
-/* Currently disabled do to issues with layering more then one hud
 	var/UI_style_new = input(usr, "Select a style.") as null|anything in all_ui_styles
 	if(UI_style_new)
 		prefs.UI_style = UI_style_new
-*/
+		if(ishuman(mob))
+			var/mob/living/carbon/human/human = mob
+			human.check_HUD()
+
 
 	to_chat(usr, SPAN_WARNING("If you wish to change UI tpyes you must do so in the prefence menu."))
 
