@@ -23,6 +23,7 @@ Has ability of every roach.
 	knockdown_odds = 10
 	melee_damage_lower = 25
 	melee_damage_upper = 35
+	chitin_amount = 20	//Fair bit of chitin since it's a big and tough mob.
 	move_to_delay = 8
 	mob_size =  3  // The same as Hivemind Tyrant
 	status_flags = 0

@@ -11,6 +11,7 @@
 	knockdown_odds = 5
 	melee_damage_lower = 25
 	melee_damage_upper = 30
+	chitin_amount = 4	//Lil' bit of chitin for your efforts.
 	move_to_delay = 8
 	mob_size = MOB_MEDIUM
 	var/distress_level = 0

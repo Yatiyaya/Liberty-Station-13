@@ -178,6 +178,8 @@
 	//Lodge related products
 	var/leather_amount = 0 //The amount of leather sheets dropped.
 	var/bones_amount = 0 //The amount of bone sheets dropped.
+	var/darkbones_amount = 0 //The amount of dark-bone sheets dropped.
+	var/chitin_amount = 0 //The amount of chitin sheets dropped.
 	var/has_special_parts = FALSE //var for checking during the butcher process.
 	var/special_parts = list() //Any special body parts.
 

@@ -63,6 +63,7 @@
 	icon_dead = "ventrofacius_dead"
 	melee_damage_lower = 15
 	melee_damage_upper = 20
+	chitin_amount = 6	//Lil' bit of chitin for your efforts. Crob.
 	maxHealth = 75 //Less health than a noraml person.
 	health = 75
 	move_to_delay = 3
@@ -95,6 +96,7 @@
 
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	darkbones_amount = 4	//Not very big, so not a lot of bones. Spineless..........
 	maxHealth = 125 //More health than a noraml person.
 	health = 125
 	move_to_delay = 7

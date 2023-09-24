@@ -10,6 +10,7 @@
 	attack_sound = 'sound/weapons/bigcut.ogg'
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	darkbones_amount = 6	//Shell moment
 	emote_see = list("howls in a broken voice.", "wracks its claws against the ground.", "gnarls.")
 	turns_per_move = 3
 	attacktext = "carved"
