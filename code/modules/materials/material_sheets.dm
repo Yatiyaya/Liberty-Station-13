@@ -490,7 +490,7 @@
 	name = MATERIAL_CHITIN
 	desc = "A strange textured piece of an large insects exoskeleton, acting as an organic polymer material."
 	singular_name = "chitin"
-	icon_state = "chitin"
+	icon_state = "sheet_chitin"
 	default_type = MATERIAL_CHITIN
 	novariants = TRUE
 	price_tag = 10
@@ -504,7 +504,7 @@
 	name = MATERIAL_DARKBONE
 	desc = "A strange blackened bone, dried yet still somehow sturdy. Unlike a normal bone of various creatures it does not appear as brittle, strong and with a certain flexibilty to it."
 	singular_name = "dark bone"
-	icon_state = "darkbone"
+	icon_state = "sheet_darkbones"
 	default_type = MATERIAL_DARKBONE
 	novariants = TRUE
 	price_tag = 14		//'Rarer' type of bone, crafts better stuff - therefor slightly more valuable in the long-run.
