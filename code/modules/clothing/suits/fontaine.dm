@@ -72,11 +72,11 @@
 	siemens_coefficient = 0.7
 	armor_list = list(
 		melee = 20,
-        bullet = 20,
-        energy = 20,
-        bomb = 20,
-        bio = 70,
-        rad = 30
+		bullet = 20,
+		energy = 20,
+		bomb = 20,
+		bio = 70,
+		rad = 30
 	)
 
 /obj/item/clothing/suit/greatcoat/trapper/bone
@@ -85,12 +85,12 @@
 	icon_state = "furcoat_bones"
 	item_state = "furcoat_bones"
 	armor_list = list(
-        melee = 25,
-        bullet = 55,
-        energy = 25,
-        bomb = 10,
-        bio = 100,
-        rad = 50
+		melee = 25,
+		bullet = 55,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
 	)
 
 /obj/item/clothing/suit/greatcoat/trapper/shell
@@ -99,12 +99,12 @@
 	icon_state = "furcoat_chitin"
 	item_state = "furcoat_chitin"
 	armor_list = list(
-        melee = 55,
-        bullet = 25,
-        energy = 25,
-        bomb = 10,
-        bio = 100,
-        rad = 50
+		melee = 55,
+		bullet = 25,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
 	)
 /*		Todo - Sprite in works; enable when it's done.
 /obj/item/clothing/suit/greatcoat/trapper/prismatic
@@ -113,12 +113,12 @@
 	icon_state = "furcoat_ameridian"
 	item_state = "furcoat_ameridian"
 	armor_list = list(
-        melee = 55,
-        bullet = 25,
-        energy = 25,
-        bomb = 10,
-        bio = 100,
-        rad = 50
+		melee = 55,
+		bullet = 25,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
 	)
 */
 /obj/item/clothing/suit/armor/shepherd
