@@ -1146,12 +1146,12 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "anl" = (
-/obj/structure/cable/green{
+/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/pros/shuttle)
 "ann" = (
@@ -12942,19 +12942,9 @@
 "cAF" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "North APC";
-	pixel_y = 28
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
@@ -19001,6 +18991,15 @@
 /obj/random/scrap/dense_weighted/low_chance,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2west)
+"dIx" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/pros/shuttle)
 "dIA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -25131,12 +25130,7 @@
 /area/liberty/maintenance/substation/science)
 "eWU" = (
 /obj/machinery/floodlight,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -25199,11 +25193,6 @@
 /area/liberty/maintenance/undergroundfloor2west)
 "eXL" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/industrial/grey_slates,
 /area/liberty/pros/shuttle)
 "eXO" = (
@@ -26273,6 +26262,7 @@
 	pixel_x = -32
 	},
 /obj/vehicle/train/cargo/trolley,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "fix" = (
@@ -40736,6 +40726,7 @@
 "hYi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/vehicle/train/cargo/trolley,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "hYl" = (
@@ -52783,6 +52774,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
+"ktV" = (
+/obj/machinery/door/blast/shutters{
+	id = "(SH1)";
+	name = "interior hangar shutters"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/liberty/pros/shuttle)
 "ktZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -53833,11 +53836,12 @@
 "kFw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/inactive{
+/obj/machinery/power/apc{
+	dir = 8;
 	name = "West APC";
 	pixel_x = -28
 	},
@@ -58752,12 +58756,12 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/skyyard)
 "lFL" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
@@ -59498,6 +59502,7 @@
 /area/liberty/rnd/xenobiology)
 "lMN" = (
 /obj/vehicle/train/cargo/engine,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "lMO" = (
@@ -64508,6 +64513,11 @@
 	dir = 4
 	},
 /obj/structure/invislight/outside,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "mQN" = (
@@ -69558,6 +69568,18 @@
 	},
 /turf/simulated/floor/industrial/ceramic,
 /area/liberty/maintenance/oldpool)
+"nPg" = (
+/obj/machinery/door/blast/shutters{
+	name = "exterior hangar shutters";
+	id = "(SH2)"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/liberty/pros/shuttle)
 "nPj" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -73939,6 +73961,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
@@ -81923,13 +81950,13 @@
 "qiI" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/glass/reinforced,
-/obj/structure/cable/green{
+/obj/item/clothing/mask/smokable/cigarette/toha,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/clothing/mask/smokable/cigarette/toha,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/pros/shuttle)
 "qiK" = (
@@ -82009,6 +82036,12 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
+"qjp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/pros/shuttle)
 "qjr" = (
 /obj/machinery/alarm{
 	pixel_y = 32
@@ -82370,6 +82403,7 @@
 "qmD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/vehicle/train/cargo/engine,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "qmJ" = (
@@ -85953,14 +85987,14 @@
 /area/liberty/security/armory)
 "qWr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/beartrap/makeshift/armed,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint,
-/area/liberty/maintenance/undergroundfloor1west)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/liberty/pros/shuttle)
 "qWt" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -87283,7 +87317,7 @@
 /area/liberty/security/landing_pad)
 "rka" = (
 /obj/structure/catwalk,
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -90541,6 +90575,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "rSS" = (
@@ -95095,6 +95130,11 @@
 /obj/structure/invislight/outside,
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
@@ -104052,10 +104092,10 @@
 "uyj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
+/obj/structure/cable{
+	d1 = 2;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
@@ -104847,13 +104887,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/maint_merc)
 "uGc" = (
-/obj/structure/cable/green{
+/obj/item/tool/tape_roll/glue,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/tool/tape_roll/glue,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/pros/shuttle)
 "uGi" = (
@@ -112831,6 +112871,11 @@
 	dir = 6
 	},
 /obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "wki" = (
@@ -122977,6 +123022,11 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/shuttle)
 "ygQ" = (
@@ -205518,7 +205568,7 @@ nxE
 iNI
 gHF
 czo
-eIa
+qjp
 kFw
 bwF
 hYi
@@ -205720,7 +205770,7 @@ gNv
 lPQ
 jUm
 czo
-lPQ
+czo
 rka
 rOo
 lMN
@@ -206126,9 +206176,9 @@ jUm
 tYh
 uJZ
 anl
-jUm
-jUm
-lPQ
+rOo
+rOo
+czo
 czo
 trV
 rnJ
@@ -206732,7 +206782,7 @@ jUm
 uJZ
 hJw
 eWU
-jUm
+rOo
 rOo
 czo
 czo
@@ -206934,16 +206984,16 @@ jUm
 czo
 sAS
 uyj
-czo
-lPQ
-lPQ
-czo
-rOo
-rnJ
-rOo
-rOo
-ryW
-rOo
+lFL
+qWr
+qWr
+lFL
+cAF
+ktV
+cAF
+cAF
+nPg
+dIx
 qvm
 wVB
 upq
@@ -207135,7 +207185,7 @@ czo
 rOo
 czo
 czo
-lFL
+dlr
 dlr
 rOo
 czo
@@ -207145,7 +207195,7 @@ rnJ
 jES
 rOo
 ryW
-rOo
+rka
 qvm
 uHO
 upq
@@ -207337,12 +207387,12 @@ qhH
 qJq
 tpi
 eIa
-uyj
 czo
-lPQ
+czo
+czo
 rSQ
 czo
-jUm
+rOo
 sLD
 qhH
 qhH
@@ -207549,7 +207599,7 @@ jnb
 eRh
 eRh
 vnt
-rOo
+rka
 upq
 uHO
 upq
@@ -207741,7 +207791,7 @@ dTD
 dTD
 eTN
 dTD
-qWr
+jdP
 sNC
 dTD
 dTD
@@ -207751,7 +207801,7 @@ eTN
 mza
 jqS
 lFy
-rOo
+rka
 upq
 uHO
 upq
@@ -207943,7 +207993,7 @@ xrd
 xrd
 fGS
 xrd
-oZK
+xrd
 xrd
 nAy
 xrd
@@ -210175,7 +210225,7 @@ eRh
 tbV
 mza
 lFy
-cAF
+oHk
 upq
 mFU
 hLU
