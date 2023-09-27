@@ -19,7 +19,7 @@
 	area_type = /area
 	protected_areas = list(/area/asteroid/rogue, /area/shuttle/mining, /area/deepmaint, /area/shuttle/escape, /area/shuttle/escape_pod1, /area/shuttle/escape_pod2, /area/shuttle/escape_pod3, \
 	/area/shuttle/escape_pod5, /area/shuttle/specops/centcom, /area/shuttle/mercenary, /area/shuttle/administration, /area/liberty/maintenance, \
-	/area/liberty/crew_quarters/sleep/cryo, /area/liberty/security/disposal, /area/liberty/security/maintpost, /area/liberty/rnd/anomalisolone, \
+	/area/liberty/crew_quarters/sleep/cryo, /area/liberty/rnd/anomalisolone, \
 	/area/liberty/rnd/anomalisoltwo, /area/liberty/rnd/anomalisolthree, /area/liberty/rnd/server)
 
 	immunity_type = "rad"

@@ -6,9 +6,10 @@
 	icon_state = "mirror"
 	density = 0
 	anchored = 1
-	var/shattered = 0
+	var/shattered = FALSE // Are we broken?
 	var/list/ui_users = list()
-	var/appearance_changer_flags = APPEARANCE_ALL_HAIR
+	var/appearance_changer_flags = APPEARANCE_ALL_HAIR // The character flags you are allowed to change when using it
+	var/broken_state = "mirror_broke" // How it looks when broken
 
 //A variant which allows changing every aspect of appearance. Including bodyshape and name
 //Intended for use by antags and only spawns in antag bases, to allow them to setup their character before going to eris
@@ -21,7 +22,8 @@
 
 /obj/structure/mirror/attack_hand(mob/user as mob)
 
-	if(shattered)	return
+	if(shattered)
+		return
 
 	if(ishuman(user))
 		var/datum/nano_module/appearance_changer/AC = ui_users[user]
@@ -33,9 +35,10 @@
 		AC.nano_ui_interact(user)
 
 /obj/structure/mirror/proc/shatter()
-	if(shattered)	return
-	shattered = 1
-	icon_state = "mirror_broke"
+	if(shattered)
+		return
+	shattered = TRUE
+	icon_state = broken_state
 	playsound(src, "shatter", 70, 1)
 	desc = "Oh no, seven years of bad luck!"
 
@@ -81,6 +84,12 @@
 		qdel(AC)
 	ui_users.Cut()
 	. = ..()
+
+/obj/structure/mirror/huge
+	name = "full body mirror"
+	desc = "A big, SalonPro brand mirror. You can see your entire body on it!"
+	icon_state = "full_mirror"
+	broken_state = "full_mirror_broke"
 
 /obj/item/mirror
 	name = "mirror"

@@ -2,8 +2,8 @@
 	name = "core implant"
 	icon = 'icons/obj/device.dmi'
 	w_class = ITEM_SIZE_SMALL
-	origin_tech = list(TECH_MATERIAL = 9, TECH_BIO = 9, TECH_DATA = 9, TECH_ENGINEERING = 12, TECH_COMBAT = 8, TECH_BLUESPACE  = 7, TECH_PLASMA = 6)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GOLD = 4, MATERIAL_SILVER = 4, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 3, MATERIAL_URANIUM = 5, MATERIAL_GLASS = 1, MATERIAL_BIOMATTER = 3, MATERIAL_DIAMOND = 10)
+	origin_tech = list(TECH_MATERIAL = 9, TECH_BIO = 9, TECH_DATA = 9, TECH_ENGINEERING = 12, TECH_COMBAT = 8)
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_SILVER = 25, MATERIAL_CARBON_FIBER = 40, MATERIAL_BIO_SILK = 20)//changing materials to be more relatable to the current material-esque of hearthcores. I just hope this does force-include all other augments. I didn't found anywhere else to implement hearthcore-only materials. -Monochrome
 	external = TRUE
 	var/implant_type = /obj/item/implant/core_implant
 	var/active = FALSE
@@ -128,10 +128,10 @@
 				ture_message = message_pre_problems
 			if(R.compare(ture_message))
 				if(R.power > src.power)
-					to_chat(H, SPAN_DANGER("Not enough energy for the [R.name]."))
+					to_chat(H, SPAN_DANGER("Your radiance are far too exhausted or low in numbers for the [R.name]."))
 					return
 				if(!R.is_allowed(src))
-					to_chat(H, SPAN_DANGER("You are not allowed to perform [R.name]."))
+					to_chat(H, SPAN_DANGER("Your neural link struggles to perform [R.name], it doesn't feel natural to you, it feels the same as struggling to see a completely new color."))
 					return
 				R.activate(H, src, R.get_targets(ture_message))
 				return
