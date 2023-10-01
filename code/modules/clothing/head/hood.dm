@@ -86,7 +86,49 @@
 		energy = 0,
 		bomb = 0,
 		bio = 100,
-		rad = 0
+		rad = 0,
 	)
 	icon_state = "absolutecloakhood"
 	item_state = "absolutecloakhood"
+
+/obj/item/clothing/head/hood/trapper
+	name = "trapper hood"
+	desc = "A captivating blend of warmth and intrigue from trappers, to trappers. This headgear is fashioned from animal skin, fleece lining, and furs, just enough to be life saving against the cold - but don't offer much protection against damage."
+	icon_state = "hood_trapper"
+	item_state = "hood_trapper"
+	armor_list = list(
+		melee = 20,
+		bullet = 20,
+		energy = 20,
+		bomb = 35,
+		bio = 75,
+		rad = 35
+	)
+
+/obj/item/clothing/head/hood/trapper/bone
+	name = "boneplated hood"
+	desc = "A warm, handmade woolen hood adorned with the emblem of Fontaine and reinforced with dark bones from this planet's fauna due to the well know hardness and ability to dissipate energy from the creature's bones."
+	icon_state = "hood_bones"
+	item_state = "hood_bones"
+	armor_list = list(
+		melee = 25,
+		bullet = 45,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
+	)
+
+/obj/item/clothing/head/hood/trapper/shell
+	name = "Shellclad Hood"
+	desc = "A handcrafted, warm woolen hood bearing the emblem of Fontaine, reinforced with unnatural shells designed to absorb impacts and thwart blade penetration. Everything will turn into alien crab one day, and the user of this hood is far too clueless about it."
+	icon_state = "hood_chitin"
+	item_state = "hood_chitin"
+	armor_list = list(
+		melee = 45,
+		bullet = 25,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
+	)

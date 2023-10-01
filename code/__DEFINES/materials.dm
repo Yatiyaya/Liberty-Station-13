@@ -36,6 +36,8 @@
 #define MATERIAL_AMERIDIAN "ameridian"
 #define MATERIAL_RSCRAP "refined scrap"
 #define MATERIAL_SANDBAG "sandbag"
+#define MATERIAL_DARKBONE "dark bone"
+#define MATERIAL_CHITIN "chitin"
 
 #define MATERIAL_LIST list(\
 	MATERIAL_STEEL,\
@@ -71,7 +73,9 @@
 	MATERIAL_COMPRESSED_MATTER, \
 	MATERIAL_AMERIDIAN, \
 	MATERIAL_RSCRAP, \
-	MATERIAL_SANDBAG)
+	MATERIAL_SANDBAG, \
+	MATERIAL_CHITIN, \
+	MATERIAL_DARKBONE)
 
 #define PLASTEEL_COLOUR "#8e9799"
 //Color to exactly match concept art #b0bcbe

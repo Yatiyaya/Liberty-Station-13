@@ -59,10 +59,10 @@
 	slowdown = 0.9
 
 /obj/item/clothing/suit/greatcoat/trapper
-	name = "Fontaine trapper greatcoat"
-	desc = "A Fontaine branded woolen coat made of fleece, hide, and wool of hunted or domesticated animals. It sports some light plating material between its layers, providing some basic protection. At least it's pretty warm though!"
-	icon_state = "trapper_coat"
-	item_state = "trapper_coat"
+	name = "trapper furcoat"
+	desc = "A warm woolen coat, adorned with the band of Fontaine, fleece, hide, and wool sourced from what is likely to be a hunted animal. Boiled leather is integrated between its layers for protection. This coat has been designed to withstand the harsh cold of the planet."
+	icon_state = "furcoat_trapper"
+	item_state = "furcoat_trapper"
 	blood_overlay_type = "coat"
 	permeability_coefficient = 0.50
 	max_upgrades = 2
@@ -71,14 +71,56 @@
 	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
 	armor_list = list(
-		melee = 30, // Made with quite some steel, good against creatures you hunt but not much else.
-		bullet = 15,
-		energy = 15,
+		melee = 20,
+		bullet = 20,
+		energy = 20,
+		bomb = 20,
+		bio = 70,
+		rad = 30
+	)
+
+/obj/item/clothing/suit/greatcoat/trapper/bone
+	name = "Boneplated Furred Coat"
+	desc = "A warm, dark bone-reinforced woolen coat adorned with the emblem of Fontaine. The silicon carbide-rich bones provide the user with handmade protection against bullets, almost rivaling proper industrial ceramic armor."
+	icon_state = "furcoat_bones"
+	item_state = "furcoat_bones"
+	armor_list = list(
+		melee = 25,
+		bullet = 55,
+		energy = 25,
 		bomb = 10,
 		bio = 100,
 		rad = 50
 	)
 
+/obj/item/clothing/suit/greatcoat/trapper/shell
+	name = "Shellclad Furred Coat"
+	desc = "A warm, chitin-reinforced woolen coat adorned with the emblem of Fontaine. Reinforced with the unique fibrous material coming from the exoskeleton of this planets fauna that has suffered mysterious effects of carcinization."
+	icon_state = "furcoat_chitin"
+	item_state = "furcoat_chitin"
+	armor_list = list(
+		melee = 55,
+		bullet = 25,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
+	)
+/*		Todo - Sprite in works; enable when it's done.
+/obj/item/clothing/suit/greatcoat/trapper/prismatic
+	name = "Prismatic Furred Coat"
+	desc = "A warm, crystal-embellished woolen coat adorned with the emblem of Fontaine. The crystals ability to bend/disperse light and absorb plasma beams is far too great to not be used even if the armor itself looks horrible to wear. This amerydian armor has been properly sterilized to avoid spreading. Do not hug people while using this if you want to avoid getting people free acupuncture."
+	icon_state = "furcoat_ameridian"
+	item_state = "furcoat_ameridian"
+	armor_list = list(
+		melee = 55,
+		bullet = 25,
+		energy = 25,
+		bomb = 10,
+		bio = 100,
+		rad = 50
+	)
+*/
 /obj/item/clothing/suit/armor/shepherd
 	name = "Fontaine shepherd armored coat"
 	desc = "A Fontaine branded armored coat made of fleece, synthetic material and lined with light-weight armored fabric. It sports some advanced plating ."

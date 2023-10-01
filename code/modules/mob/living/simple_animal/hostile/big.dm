@@ -118,6 +118,7 @@
 	health = 550
 	melee_damage_lower = 35
 	melee_damage_upper = 40
+	darkbones_amount = 10	//Bit boney given his size.
 
 	armor = list(melee = 35, bullet = 30, energy = 25, bomb = 5, bio = 10, rad = 25)
 
@@ -257,6 +258,7 @@
 	icon_dead = "arachnid_dead"
 	melee_damage_lower = 30
 	melee_damage_upper = 35
+	darkbones_amount = 10	//Big mob, so extra bones.
 	maxHealth = 300
 	health = 300
 	move_to_delay = 2

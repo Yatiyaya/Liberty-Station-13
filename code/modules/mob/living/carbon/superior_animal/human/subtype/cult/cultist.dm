@@ -11,6 +11,7 @@
 	armor = list(melee = 40, bullet = 10, energy = 5, bomb = 40, bio = 100, rad = 100)
 	melee_damage_lower = 40
 	melee_damage_upper = 50 // VERY hard hitting, beware!
+	chitin_amount = 3	//Crobby???? Mayhaps.
 	min_air_pressure = 0 // Chitinous crab structure makes them spaceproof, but they can be poisoned as normal humans
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/renderslash.ogg'
@@ -87,6 +88,7 @@
 	health = 100
 	melee_damage_lower = 25
 	melee_damage_upper = 30 // They hit you with the butt of their shotgun but still hurt so that they're not useless
+	chitin_amount = 3	//Crobby???? Mayhaps.
 	attacktext = "bashed"
 	attack_sound = 'sound/weapons/blunthit.ogg' // Hitting you with the shotgun once empty
 	deathmessage = "emits an agonizing scream as it falls to the floor and dies!"

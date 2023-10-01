@@ -485,3 +485,31 @@
 
 /obj/item/stack/material/sandbag/full
 	amount = 10
+
+/obj/item/stack/material/chitin
+	name = MATERIAL_CHITIN
+	desc = "A strange textured piece of an large insects exoskeleton, acting as an organic polymer material."
+	singular_name = "chitin"
+	icon_state = "sheet_chitin"
+	default_type = MATERIAL_CHITIN
+	novariants = TRUE
+	price_tag = 10
+	max_amount = 50
+
+/obj/item/stack/material/chitin/random
+	rand_min = 1
+	rand_max = 4
+
+/obj/item/stack/material/darkbone
+	name = MATERIAL_DARKBONE
+	desc = "A strange blackened bone, dried yet still somehow sturdy. Unlike a normal bone of various creatures it does not appear as brittle, strong and with a certain flexibilty to it."
+	singular_name = "dark bone"
+	icon_state = "sheet_darkbones"
+	default_type = MATERIAL_DARKBONE
+	novariants = TRUE
+	price_tag = 14		//'Rarer' type of bone, crafts better stuff - therefor slightly more valuable in the long-run.
+	max_amount = 50
+
+/obj/item/stack/material/darkbone/random
+	rand_min = 1
+	rand_max = 4

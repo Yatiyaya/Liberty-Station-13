@@ -3,14 +3,22 @@
 	var/actual_meat_amount = max(1,(meat_amount/2))
 	var/actual_leather_amount = max(0,(leather_amount/2))
 	var/actual_bones_amount = max(0,(bones_amount/2))
+	var/actual_darkbones_amount = max(0,(darkbones_amount/2))
+	var/actual_chitin_amount = max(0,(chitin_amount/2))
 
 	if(user.stats.getPerk(PERK_BUTCHER)) // Master Butcher will now give full amounts defined in the creature's variables. Otherwise, it's only half, and no special items.
 		actual_leather_amount = max(0,(leather_amount))
 		actual_meat_amount = max(1,(meat_amount))
 		actual_bones_amount = max(0,(bones_amount))
+		actual_darkbones_amount = max(0,(darkbones_amount))
+		actual_chitin_amount = max(0,(chitin_amount))
 		if(has_special_parts)
 			for(var/animal_part in special_parts)
 				new animal_part(get_turf(src))
+
+	if(actual_chitin_amount > 0 && (stat == DEAD))
+		for(var/i=0;i<actual_chitin_amount;i++)
+			new /obj/item/stack/material/chitin(get_turf(src))
 
 	if(actual_leather_amount > 0 && (stat == DEAD))
 		for(var/i=0;i<actual_leather_amount;i++)
@@ -19,6 +27,10 @@
 	if(actual_bones_amount > 0 && (stat == DEAD))
 		for(var/i=0;i<actual_bones_amount;i++)
 			new /obj/item/stack/material/bone(get_turf(src))
+
+	if(actual_darkbones_amount > 0 && (stat == DEAD))
+		for(var/i=0;i<actual_darkbones_amount;i++)
+			new /obj/item/stack/material/darkbone(get_turf(src))
 
 	if(meat_type && actual_meat_amount > 0 && (stat == DEAD))
 		for(var/i=0;i<actual_meat_amount;i++)
