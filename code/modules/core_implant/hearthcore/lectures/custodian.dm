@@ -31,7 +31,7 @@
 		return FALSE
 
 	EOTP.current_rewards = miracles
-	EOTP.armaments_points = min(EOTP.armaments_points + 5, EOTP.max_armaments_points)
+	EOTP.armaments_points = min(EOTP.armaments_points + 10, EOTP.max_armaments_points)
 	EOTP.visible_message("\icon[EOTP] <span class = 'notice'>The Embers resonate slightly as the offering is consumed.</span>")
 	return TRUE
 
@@ -97,11 +97,11 @@
 	return TRUE
 
 /datum/lecture/hearthcore/custodian/offering/call_for_arms
-	name = "Call for Arms"
-	phrase = "Oxidate Lecture: Call for Arms"
-	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering ten carbon fiber, twenty steel, and sixty bio-silk to guide its power towards inspiring Hearthcore users. \
-	Your offering also increases the EOTP's armaments reserves."
-	req_offerings = list(/obj/item/stack/material/carbon_fiber = 10, /obj/item/stack/material/steel = 20, /obj/item/stack/material/biopolymer_silk = 60)
+	name = "Neural Crest Formation"
+	phrase = "Oxidate Lecture: Neural Implementation"
+	desc = "Allow the Ectoderm to formate Radiant Neural Crests, highly migratory and in constant recovery of data, it plays a crucial role on development of peripheral systems for custodians armors, hearthcore upgrade and some weapons. \
+	It increases the EOTP neural reserves and inspire all active knights users." //There will be two ways to adquire neural points. This is the first one I am making while being a novice in coding. -Monochrome
+	req_offerings = list(/obj/item/stack/custodian_neural/ectoderm = 1)
 	miracles = list(INSPIRATION)
 
 /datum/lecture/hearthcore/custodian/offering/divine_intervention

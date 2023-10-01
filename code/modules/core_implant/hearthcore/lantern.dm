@@ -1,11 +1,12 @@
 /obj/item/book/lectures/hearthlantern
-	name = "Custodian hearth lantern"
-	desc = "Holds lectures for use by Custodians."
+	name = "Knight hearth lantern"
+	desc = "A lantern bestowed to all knights who have embraced the accolade. The radiance-infused fire within the lantern serves as both a teacher and purifier, as long as the knight reflects upon it."
 	icon_state = "hearth_lantern"
 	item_state = "hearth_lantern"
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	price_tag = 150
+	tool_qualities = list(QUALITY_PURIFY = 25)
 	matter = list(MATERIAL_SILVER = 2, MATERIAL_STEEL = 5)
 
 /obj/item/book/lectures/hearthlantern/nano_ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = NANOUI_FOCUS)
@@ -24,9 +25,11 @@
 
 /obj/item/book/lectures/hearthlantern/oathpledge
 	name = "Oathpledge hearth lantern"
-	desc = "Holds lectures meant only for the Oathpledge."
+	desc = "The lantern of custodian veterans, just as efficient as teaching as any other hearth lantern - but storing way more radiance, allowing best outcomes from purification expeditions."
 	icon_state = "hearth_lantern_oathpledge"
 	item_state = "hearth_lantern_oathpledge"
 	price_tag = 250
 	slot_flags = SLOT_BELT
+	tool_qualities = list(QUALITY_PURIFY = 40)
+	matter = list(MATERIAL_SILVER = 5, MATERIAL_STEEL = 5)
 

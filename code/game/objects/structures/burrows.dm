@@ -511,16 +511,37 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 		var/obj/item/stack/G = I
 
 		user.visible_message("[user] starts covering [src] with the [I]", "You start covering [src] with \the [I]")
-		if(do_after(user, 20, src))
+		if(do_after(user, 120, src))
 			if(G.use(1))
 				playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
 				collapse(clean = TRUE)
 				dug_out = FALSE
+	if(ishuman(user) && I.has_quality(QUALITY_PURIFY) && !isSealed)
+		var/mob/living/carbon/human/H = user
+		if(!H.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+			to_chat(user, SPAN_NOTICE("The fire crackles, yet you see no sparking. The burrow remains corrupt and disgraceful"))
+			return
+		H.visible_message("[H] starts igniting \the [src] with the [I]. \
+							The constant shrieks coming from the creatures inside \the [src] warns you of purification in progress...", \
+							"You start purifying \the [src] with \the [I]")
+		flick("burrow_burning", src) // Show a cool icon of the burrow being lit on fire
+		playsound(src.loc, 'sound/voice/shriek1.ogg', 100, 1, 8, 8) // ROACHES SCREAMING WHILE BEING PUT IN FIRE
 
+		// Triggering flight or fight on roaches
+		// they might not want to have molten liquid poured on top and will come out to murder you.
+		if(prob(25))
+			distress()
+
+		if(do_after(H, 120, src)) // 30 ticks is around three seconds, adjust higher for balance. //Monochrome: Got the ticks higher because of the animation. Thank you Gundam for telling me what 2 do
+			H.visible_message("[H] quiets \the [src] down with pure hellfire, \the [I]'s radiant light twitching in desire for more bloodshed.",\
+								 "You purify \the [src] with \the [I]. The radiance chemically tells you that many hearts beats no longer. Euphoric")
+			dug_out = TRUE // Give us that task to foster doing this more often
+			collapse(clean = TRUE) // We leave at least the cracks to be sealed properly
+			new /obj/item/stack/custodian_neural/ectoderm(get_turf(user)) //CHANGE HERE FOR THE ITEM INSTEAD
 	if(!I.has_quality(QUALITY_DIGGING) && isSealed)
 		return
 	user.visible_message("[user] starts breaking and collapsing [src] with \the [I]", "You start breaking and collapsing [src] with \the [I]")
-
+	
 	//Attempting to collapse a burrow may trigger reinforcements.
 	//Not immediate so they will take some time to arrive.
 	//Enough time to finish one attempt at breaking the burrow.

@@ -21,17 +21,13 @@
 	H.show_HUD()
 	return recreate_flag
 
-
 /mob/living/silicon/robot/check_HUDdatum()//correct a datum?
 	var/mob/living/silicon/robot/H = src
 
-	if (H.defaultHUD == "BorgStyle") //если у клиента моба прописан стиль\тип ХУДа
-		if(GLOB.HUDdatums.Find(H.defaultHUD))//Если существует такой тип ХУДА
+	if (H.defaultHUD == "BorgStyle")
+		if(GLOB.HUDdatums.Find(H.defaultHUD))
 			return TRUE
 	return FALSE
-
-
-
 
 /mob/living/silicon/robot/create_HUD() //EKUDZA HAS HERE
 //	var/mob/living/silicon/robot/H = src
@@ -43,11 +39,6 @@
 	create_HUDtech()
 	show_HUD()
 	return
-
-
-
-
-
 
 /mob/living/silicon/robot/create_HUDinventory()
 	var/mob/living/silicon/robot/H = src

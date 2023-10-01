@@ -1,7 +1,7 @@
 
 /datum/category_item/setup_option/core_implant/hearthcore
 	name = "Hearthcore"
-	desc = "The implant given to every member of the Bonfire. Uses the nanobot substance known as Radiance to perform various feats."
+	desc = "The modular implant of knighthood from the four elohopean orders — bestowed to those with unwavering dedication to the colony. It integrates with the spine and brain. It harness the powers of radiance to cleanse the colonial lands."
 	implant_type = /obj/item/implant/core_implant/hearthcore
 	restricted_jobs = list(
 		/datum/job/clubmanager,

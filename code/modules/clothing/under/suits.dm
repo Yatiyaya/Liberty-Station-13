@@ -446,36 +446,6 @@
 	icon_state = "hakama_bb"
 	item_state = "hakama_bb"
 
-/obj/item/clothing/under/custodian_oathpledge_tn
-	name = "oathpledge turtleneck"
-	desc = "A formal, turtleneck that oathpledge's wear."
-	icon_state = "oathpledge_turtleneck"
-	item_state = "oathpledge_turtleneck"
-
-/obj/item/clothing/under/custodian_forgemaster_tn
-	name = "forgemaster turtleneck"
-	desc = "A formal, turtleneck that forgemaster's wear."
-	icon_state = "forgemaster_turtleneck"
-	item_state = "forgemaster_turtleneck"
-
-/obj/item/clothing/under/custodian_oathbound_tn
-	name = "oathbound turtleneck"
-	desc = "A formal, turtleneck that oathbound's wear."
-	icon_state = "oathbound_turtleneck"
-	item_state = "oathbound_turtleneck"
-
-/obj/item/clothing/under/custodian_enkindled_tn
-	name = "enkindled turtleneck"
-	desc = "A formal, A formal, turtleneck that enkindled's wear."
-	icon_state = "enkindled_turtleneck"
-	item_state = "enkindled_turtleneck"
-
-/obj/item/clothing/under/custodian_enkindled_tn
-	name = "enkindled turtleneck"
-	desc = "A formal, A formal, turtleneck that enkindled's wear."
-	icon_state = "enkindled_turtleneck"
-	item_state = "enkindled_turtleneck"
-
 /obj/item/clothing/under/union_chief_jumpsuit
 	name = "union chief jumpsuit"
 	desc = "A red and dark navy jumpsuit, this one is for the union chief."
