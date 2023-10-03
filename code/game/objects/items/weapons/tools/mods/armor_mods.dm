@@ -159,3 +159,25 @@
 	I.prefix = "antipyretic"
 	I.required_qualities = list(QUALITY_ARMOR)
 
+	/obj/item/tool_upgrade/armor/handmade
+	name = "Handmade Armor Upgrade kit"//is the replacement for every armor plating the union can make, its pretty weak but will do the work of be an armor upgrade even if its shitty, the guys with quality are the custodians, plus they can mass produce cheap armor upgrades if some miner is providing plasteel.
+	desc = "A Very improvised set of armor plates and tiny metal reinforcements made out with metal remains by someone with knowledge of metalworking, it that can be bolted onto any armor to lightly enhance its general resistance in desperate times or times with low budget."
+	icon_state = "handmade_plating"
+	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 5)
+	price_tag = 150
+
+/obj/item/tool_upgrade/armor/handmade/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.tool_upgrades = list(
+	UPGRADE_MELEE_ARMOR = 8,
+	UPGRADE_ENERGY_ARMOR = 8,
+	UPGRADE_BALLISTIC_ARMOR = 8,
+	UPGRADE_BOMB_ARMOR = 10,// best armor quality here due to being mostly plasteel and steel welded together
+	UPGRADE_SLOWDOWN_ARMOR = 0.2,
+	UPGRADE_STIFFNESS_ARMOR = 0.1
+//	UPGRADE_OBSCURATION_ARMOR = 0.1 this is here just so anyone can see that it actually works easier
+	)
+	I.prefix = "Metal Plated"
+	I.required_qualities = list(QUALITY_ARMOR)
+
