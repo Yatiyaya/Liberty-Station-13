@@ -365,7 +365,6 @@
 	icon_state = "oathpledge_hat"
 	item_state = "oathpledge_hat"
 
-
 /obj/item/clothing/head/purifierhat
 	name = "Purifier Team Hat"
 	desc = "The hat from the Elohopean baseball team. Sturdy, yet not very armored at all."

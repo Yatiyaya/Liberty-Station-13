@@ -3340,8 +3340,9 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/simulated/floor/industrial/blue_slates,
 /area/liberty/maintenance/undergroundfloor3south)
@@ -14188,7 +14189,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -37480,8 +37481,9 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/random/closet_tech,
 /turf/simulated/shuttle/floor/mining{
@@ -38563,7 +38565,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -41501,6 +41503,10 @@
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
+"ilJ" = (
+/obj/structure/flora/tree/snow/five,
+/turf/unsimulated/floor/snow,
+/area/liberty/outside/inside_colony)
 "ilL" = (
 /obj/machinery/atm{
 	pixel_y = 30
@@ -46563,7 +46569,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/snow,
+/turf/unsimulated/floor/snow,
 /area/liberty/hallway/surface/section1)
 "jnF" = (
 /obj/landmark/costume/butler,
@@ -53709,6 +53715,10 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2east)
+"kJg" = (
+/obj/structure/flora/tree/snow/four,
+/turf/unsimulated/floor/snow,
+/area/liberty/outside/inside_colony)
 "kJi" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/rubble,
@@ -83680,8 +83690,9 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "9,23"
@@ -92454,8 +92465,9 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1central)
@@ -96588,6 +96600,10 @@
 	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/maintenance/hideout)
+"tjZ" = (
+/obj/structure/flora/tree/snow/five,
+/turf/unsimulated/floor/snow,
+/area/liberty/outside/forest)
 "tka" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock,
@@ -110129,6 +110145,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/security/detectives_office)
+"vTG" = (
+/turf/unsimulated/floor/snow,
+/area/liberty/outside/inside_colony)
 "vTH" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/danger{
@@ -117382,8 +117401,9 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1north)
@@ -118845,8 +118865,9 @@
 "xDz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/inactive{
-	name = "North APC";
-	pixel_y = 28
+	name = "Northwards APC";
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/structure/cable/green{
 	d2 = 8;
@@ -207928,7 +207949,7 @@ dwp
 dwp
 nAR
 cOr
-rQC
+vTG
 omv
 omv
 omv
@@ -209077,7 +209098,7 @@ wgB
 cvY
 wgB
 wgB
-fsf
+tjZ
 wgB
 wgB
 wgB
@@ -209860,7 +209881,7 @@ rQC
 cGG
 rQC
 rQC
-ogP
+kJg
 rQC
 rQC
 rQC
@@ -229843,7 +229864,7 @@ byg
 rQC
 rQC
 rQC
-jkR
+ilJ
 rQC
 ubS
 ulo
