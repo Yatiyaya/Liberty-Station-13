@@ -3281,6 +3281,11 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2south)
+"aJf" = (
+/obj/random/material_ore,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2north)
 "aJj" = (
 /obj/structure/bed/chair/wood{
 	dir = 1
@@ -4810,6 +4815,7 @@
 /obj/random/material_ore,
 /obj/item/tool/knife/tacknife,
 /obj/effect/decal/cleanable/blood/writing,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "aYu" = (
@@ -5041,6 +5047,11 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/medbay/uppercor)
+"bbs" = (
+/obj/structure/scrap/poor,
+/obj/random/material_ore,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2north)
 "bbu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/contraband/poster/placed/generic/masked_men{
@@ -7444,6 +7455,12 @@
 	desc = "Filthy, stinking bilge water.";
 	name = "murky water"
 	},
+/area/liberty/maintenance/undergroundfloor2north)
+"bzL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "bzQ" = (
 /obj/structure/table/rack/shelf,
@@ -9898,6 +9915,7 @@
 "bXC" = (
 /obj/random/cluster/termite_no_despawn_hoard,
 /obj/effect/decal/cleanable/blood/writing,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "bXH" = (
@@ -14512,6 +14530,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/engine_room)
+"cQT" = (
+/obj/effect/decal/cleanable/blood/writing,
+/obj/random/material_ore,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2north)
 "cQW" = (
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/industrial/fancy_slates,
@@ -18366,6 +18389,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/shoes/ablasive/iron_lock_security,
+/mob/living/carbon/superior_animal/termite/uranium,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "dCU" = (
@@ -22471,6 +22495,7 @@
 /obj/item/remains/human,
 /obj/item/clothing/under/iron_lock_security,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/termite/uranium,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "euL" = (
@@ -24638,6 +24663,8 @@
 	color = "#A10808"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sandbags,
+/mob/living/carbon/superior_animal/termite/uranium,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "eRz" = (
@@ -26699,6 +26726,11 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/substation/sec)
+"fna" = (
+/obj/random/material_ore,
+/obj/random/material_ore,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2north)
 "fnd" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/nonfiction/ageofreason,
@@ -40645,6 +40677,7 @@
 /area/liberty/medical/cryo)
 "hZq" = (
 /obj/effect/decal/cleanable/blood/gibs,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "hZv" = (
@@ -41651,7 +41684,6 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/maintenance/undergroundfloor2north)
 "ilq" = (
-/obj/structure/barricade,
 /obj/effect/decal/cleanable/blood/drip{
 	blood_color = "#A10808";
 	color = "#A10808"
@@ -41773,6 +41805,11 @@
 /obj/item/modular_computer/console/preset/engineering,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/engineering/engine_room)
+"imP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sandbags,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "imU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -46205,8 +46242,9 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/oldlibrary)
 "jhR" = (
-/obj/item/part/gun/grip/wood,
-/turf/simulated/floor/tiled/steel,
+/obj/item/ammo_magazine/cl7mm,
+/obj/random/material_ore,
+/turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "jhX" = (
 /obj/structure/railing/grey{
@@ -50419,8 +50457,11 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "jYP" = (
-/obj/structure/barricade,
-/turf/simulated/floor/tiled/dark,
+/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
+	icon_state = "rabochiy_gore"
+	},
+/obj/random/material_ore,
+/turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "jYW" = (
 /obj/structure/disposalpipe/segment,
@@ -51791,7 +51832,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
 /obj/item/beartrap/armed,
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "kmA" = (
 /obj/structure/cable/cyan{
@@ -55920,6 +55961,7 @@
 /area/liberty/security/sechall)
 "ldC" = (
 /obj/item/clothing/accessory/medal/bronze_heart,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "ldD" = (
@@ -56046,6 +56088,7 @@
 /obj/item/clothing/suit/space/void/odst,
 /obj/item/storage/belt/security/tactical,
 /obj/effect/decal/cleanable/blood/gibs,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "lfm" = (
@@ -57188,6 +57231,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/termite/uranium,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "lrV" = (
@@ -60432,8 +60476,10 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/pros/shuttle)
 "lYV" = (
-/obj/structure/barricade,
-/turf/simulated/floor/tiled/techmaint,
+/obj/random/material_ore,
+/obj/random/material_ore,
+/obj/item/storage/pouch/medical_supply,
+/turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "lZf" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -68830,6 +68876,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
+"nLL" = (
+/obj/random/material_ore,
+/obj/random/material_ore,
+/obj/item/storage/pouch/ammo,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2north)
 "nLQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -70354,6 +70406,7 @@
 	color = "#A10808"
 	},
 /obj/item/clothing/accessory/holster/hip,
+/obj/structure/sandbags,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "obj" = (
@@ -76387,6 +76440,7 @@
 "pjq" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/item/clothing/mask/balaclava/tactical,
+/obj/random/material_ore,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "pjr" = (
@@ -76603,6 +76657,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/beartrap/armed,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "plH" = (
@@ -86296,8 +86351,11 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "reY" = (
 /obj/item/remains/human,
-/obj/item/gun/projectile/automatic/operator_rifle,
 /obj/effect/decal/cleanable/blood/gibs,
+/obj/random/material_ore,
+/obj/item/part/gun/frame/operator_rifle,
+/obj/item/part/gun/barrel/clrifle,
+/obj/item/part/gun/mechanism/autorifle,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "rfa" = (
@@ -88846,6 +88904,13 @@
 /obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/reinforced,
 /area/shuttle/rocinante_shuttle_area)
+"rDX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/shoes/ablasive/iron_lock_security,
+/mob/living/carbon/superior_animal/termite/uranium,
+/obj/structure/sandbags,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "rEd" = (
 /obj/structure/table/rack/shelf,
 /obj/random/junkfood/rotten,
@@ -89216,6 +89281,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "rIA" = (
@@ -95619,10 +95685,14 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2west)
 "sVj" = (
+/obj/effect/decal/cleanable/blood/drip{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_magazine/magnum_40/empty,
-/turf/simulated/floor/plating/under,
+/mob/living/carbon/superior_animal/termite/uranium,
+/obj/structure/sandbags,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "sVk" = (
 /obj/random/furniture/pottedplant,
@@ -101316,6 +101386,7 @@
 /obj/effect/decal/cleanable/filth{
 	icon_state = "gib3"
 	},
+/obj/structure/boulder,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "ucc" = (
@@ -105218,6 +105289,7 @@
 /area/liberty/maintenance/maint_merc)
 "uQY" = (
 /obj/effect/decal/cleanable/blood/writing,
+/obj/structure/boulder,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "uQZ" = (
@@ -185073,7 +185145,7 @@ lkQ
 peA
 vAB
 hVt
-gkW
+wkv
 fzz
 wkv
 ked
@@ -185275,7 +185347,7 @@ hwk
 vKS
 hVt
 xUZ
-gkW
+wkv
 fzz
 wkv
 tbI
@@ -185467,7 +185539,7 @@ rWz
 gAP
 hVt
 jeB
-qDQ
+hVt
 tNQ
 wHP
 vVQ
@@ -185475,9 +185547,9 @@ xtu
 woc
 tbI
 tKC
-qDQ
-gkW
-gkW
+hVt
+wkv
+wkv
 rtx
 gkW
 ked
@@ -186463,7 +186535,7 @@ daZ
 xrZ
 pDa
 thb
-jhR
+hVt
 gEo
 eIB
 nFD
@@ -190920,7 +190992,7 @@ eIB
 eIB
 eIB
 aeN
-fbo
+tbI
 eIB
 eIB
 tRN
@@ -191917,7 +191989,7 @@ uKZ
 uKZ
 nLc
 rhT
-cOJ
+aJf
 sOf
 nLc
 nLc
@@ -192339,7 +192411,7 @@ xXp
 xXp
 xXp
 xXp
-bTJ
+fbo
 fbo
 pap
 pap
@@ -192523,15 +192595,15 @@ uKZ
 uKZ
 nLc
 cOJ
-rhT
+bbs
+nLL
+jYP
+jYP
 cOJ
-vom
-vom
-sOf
 sOf
 eIB
+ahF
 pap
-eHk
 pap
 pap
 pwf
@@ -192725,11 +192797,11 @@ uKZ
 uKZ
 nLc
 sOf
-vom
-kmP
+jYP
+jhR
 pjq
-cOJ
-cOJ
+lYV
+fna
 sOf
 hTL
 ahF
@@ -192931,7 +193003,7 @@ hZq
 reY
 bXC
 aYs
-qkm
+cQT
 qkm
 uQY
 hhg
@@ -193129,11 +193201,11 @@ uKZ
 uKZ
 nLc
 cOJ
-vom
+jYP
 ldC
 lfh
-vom
-sOf
+jYP
+cOJ
 sOf
 hTL
 ahF
@@ -194997,7 +195069,7 @@ nFD
 dUj
 grb
 grb
-liN
+eRS
 ydY
 ydY
 wOe
@@ -195578,7 +195650,7 @@ pap
 tvf
 tYS
 wkK
-sVj
+tvf
 pbG
 wkK
 eIB
@@ -196180,7 +196252,7 @@ vmR
 lPf
 wwz
 pap
-pap
+ghL
 tvf
 lKm
 wkK
@@ -196207,7 +196279,7 @@ eIB
 nFD
 nFD
 fbo
-mIF
+czk
 fbo
 eIB
 eIB
@@ -196583,7 +196655,7 @@ rdq
 iRF
 aNf
 sTT
-pap
+leN
 uuw
 dpX
 aLb
@@ -197993,7 +198065,7 @@ oDx
 oDx
 hlp
 kJp
-eRx
+sVj
 mMa
 vxp
 sMk
@@ -198195,11 +198267,11 @@ mYs
 sOf
 xwQ
 maR
-jYP
+pap
 pap
 plD
-eHk
-dUj
+pap
+bzL
 dUj
 nTa
 dyd
@@ -198397,10 +198469,10 @@ pbG
 isB
 hUk
 sNt
-uPd
+fbo
 tbI
 dUQ
-mIF
+czk
 gvQ
 gvQ
 hPC
@@ -198599,8 +198671,8 @@ pbG
 pbG
 rkL
 lks
-sSq
-lYV
+rDX
+pap
 fbo
 puv
 pap
@@ -198804,7 +198876,7 @@ sNt
 obf
 ilq
 fbo
-mIF
+czk
 kmu
 tbI
 wkK
@@ -198816,7 +198888,7 @@ dyd
 fbo
 tbI
 fbo
-eHk
+pap
 dUj
 wWe
 nmA
@@ -199009,7 +199081,7 @@ chY
 nFD
 nFE
 tbI
-lqB
+mfM
 dUj
 jPW
 tbI
@@ -199205,12 +199277,12 @@ cLh
 qLv
 xIH
 dzS
-nmi
+imP
 bxY
 tbI
 fbo
 gvQ
-lqB
+mfM
 dUj
 grb
 grb
@@ -199406,7 +199478,7 @@ uqf
 xyN
 rbX
 wZj
-jYP
+pap
 eRx
 pVI
 uqf
@@ -199416,7 +199488,7 @@ mIF
 rIy
 mIF
 mIF
-eHk
+pap
 mIF
 wXu
 grb
