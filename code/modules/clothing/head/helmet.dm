@@ -585,8 +585,8 @@
 
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security
 	name = "outdated ablative helmet"
-	desc = "A \"Iron Lock Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by Simulacrum Robotics"
-	icon_state = "ablative"
+	desc = "A \"Iron Eagle Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by The Terran Federation."
+	icon_state = "ablative_new"
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
