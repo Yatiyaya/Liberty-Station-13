@@ -292,7 +292,7 @@
 	desc = "A moderately sized crate full of gear from an old volunteer force."
 	icon_state = "northtech_deferred"
 	initial_contents = list(
-	obj/item/clothing/mask/gas = 1,
+	/obj/item/clothing/mask/gas = 1,
 	/obj/item/clothing/shoes/ablasive/iron_lock_security = 1,
 	/obj/item/clothing/gloves/thick/ablasive/iron_lock_security  = 1,
 	/obj/item/clothing/head/soft/iron_lock_security = 1,
