@@ -14284,7 +14284,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -18407,7 +18407,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor2north)
 "dDa" = (
-/mob/living/simple_animal/hostile/hell_pig/wendigo,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
 "dDc" = (
@@ -38769,7 +38769,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon    Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous    Oxide","waste_sensor"="Gas    Mix    Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon        Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous        Oxide","waste_sensor"="Gas        Mix        Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -48380,6 +48380,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2east)
+"jEb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/boulder,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2east)
 "jEd" = (
 /obj/effect/overlay/water,
 /obj/structure/window/reinforced/crescent{
@@ -55498,6 +55505,7 @@
 /obj/item/trash/liquidfood,
 /obj/item/remains/human,
 /obj/item/clothing/shoes/jackboots/german,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
 "kXk" = (
@@ -71539,8 +71547,8 @@
 /turf/simulated/wall/r_wall,
 /area/liberty/rnd/server)
 "onu" = (
-/obj/item/trash/candle,
-/mob/living/simple_animal/hostile/hell_pig/wendigo,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
 "onz" = (
@@ -97472,6 +97480,12 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/liberty/quartermaster/vault)
+"toa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/boulder,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/undergroundfloor2east)
 "tod" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -103339,6 +103353,10 @@
 /obj/item/stool,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/medical/paramedic)
+"uvx" = (
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
+/turf/simulated/floor/beach/water/jungledeep,
+/area/liberty/maintenance/cavenightmare)
 "uvL" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/effect/floor_decal/industrial/warningwhite/corner{
@@ -147964,14 +147982,14 @@ uKZ
 uKZ
 lzo
 hKA
-dLX
+uvx
 iqt
 rYr
-dDa
+xEX
 eGU
 ntm
 xKs
-dDa
+xEX
 tMA
 tMA
 lzo
@@ -148377,7 +148395,7 @@ oHG
 kyk
 xEX
 cRb
-dDa
+xEX
 tMA
 gdv
 lzo
@@ -148766,10 +148784,10 @@ gdv
 lzo
 xEX
 pwb
-xEX
+dDa
 xEX
 dTF
-dDa
+xEX
 xEX
 npv
 hzG
@@ -148972,7 +148990,7 @@ xEX
 xEX
 lzo
 xEX
-xEX
+dDa
 vyY
 yiZ
 dXo
@@ -149180,7 +149198,7 @@ rNd
 lwT
 gWJ
 gXc
-jJh
+onu
 gXH
 pIY
 tMA
@@ -149189,7 +149207,7 @@ kyk
 eCt
 xEX
 owX
-dDa
+xEX
 kAY
 uIR
 uIR
@@ -149386,12 +149404,12 @@ uUy
 nas
 cUo
 tMA
+xEX
 dDa
 xEX
 xEX
-xEX
 owX
-xEX
+dDa
 emu
 orP
 uIR
@@ -149571,7 +149589,7 @@ uKZ
 uKZ
 lzo
 pRQ
-onu
+yiZ
 dLX
 dLX
 lzo
@@ -149581,7 +149599,7 @@ xEX
 lzo
 tMA
 wac
-dDa
+xEX
 fDC
 fDC
 tMA
@@ -192639,7 +192657,7 @@ eIB
 eIB
 eIB
 eIB
-sOf
+dXm
 gzr
 bzq
 pap
@@ -193650,7 +193668,7 @@ imt
 qYV
 eIB
 nFD
-wcf
+qJG
 bzq
 pap
 dUj
@@ -194091,7 +194109,7 @@ gyo
 kDr
 kDr
 kDr
-kDr
+wDP
 gyo
 gyo
 gyo
@@ -194495,7 +194513,7 @@ gyo
 rTY
 rTY
 iwg
-fje
+jEb
 gyo
 emu
 emu
@@ -194861,7 +194879,7 @@ eIB
 wpN
 uHo
 eIB
-wcf
+qJG
 pbG
 wcf
 dvS
@@ -195098,7 +195116,7 @@ csF
 wOe
 fje
 aNq
-fje
+jEb
 aNq
 iak
 pIJ
@@ -195277,13 +195295,13 @@ hnK
 jDT
 uEZ
 eYL
-uEZ
+blN
 rTY
 rTY
 vPg
 vPg
 uEZ
-ppN
+toa
 eYL
 fje
 vfE
@@ -195291,7 +195309,7 @@ wgY
 wgY
 rTY
 eYL
-fje
+jEb
 eYL
 pOV
 uhO
@@ -195674,7 +195692,7 @@ pbG
 wcf
 dUj
 tbI
-gvQ
+jGl
 klD
 wOe
 wOe
@@ -195872,7 +195890,7 @@ eIB
 eIB
 eIB
 eIB
-wcf
+qJG
 ffa
 gvQ
 dUj
@@ -195892,7 +195910,7 @@ vfE
 wgY
 uEZ
 eYL
-uEZ
+blN
 jDT
 wgY
 jDT
@@ -196885,7 +196903,7 @@ lqL
 eIB
 nFD
 qrx
-tbI
+tKC
 dUj
 eIB
 hqU
@@ -198096,7 +198114,7 @@ eIB
 eIB
 nFD
 nFD
-wkK
+pRI
 kpT
 tvf
 eyh
@@ -198299,7 +198317,7 @@ nFD
 nFD
 nFD
 grb
-tbI
+tKC
 grb
 fzz
 ogb
