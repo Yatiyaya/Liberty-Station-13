@@ -19,7 +19,7 @@
 	name = "ablative jackboots"
 	desc = "A thick pair of boots that excels in protecting the wearer against energy projectiles."
 	armor_list = list(melee = 10, bullet = 10, energy = 70, bomb = 30, bio = 10, rad = 0)
-	icon_state = "swat"
+	icon_state = "jackboots_ironhammer"
 	force = WEAPON_FORCE_WEAK
 	siemens_coefficient = 0.6
 	can_hold_knife = TRUE
@@ -27,7 +27,7 @@
 
 /obj/item/clothing/shoes/ablasive/iron_lock_security
 	name = "outdated jackboots"
-	desc = "An \"Iron Lock Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Simulacrum Robotics."
+	desc = "An \"Iron Eagle Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time a lot of people improved its design originally produced in mass by the Terran Federation."
 
 /obj/item/clothing/shoes/swat
 	name = "\improper SWAT shoes"

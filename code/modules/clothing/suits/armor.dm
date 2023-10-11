@@ -470,8 +470,8 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Lock Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by Simulacrum Robotics."
-	icon_state = "northtech"
+	desc = "An \"Iron Eagle Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by the Terran Federation."
+	icon_state = "northtech_new"
 	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(

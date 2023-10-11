@@ -117,7 +117,7 @@
 
 /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 	name = "outdated gloves"
-	desc = "A pair of \"Iron Lock Security\" ablative gloves with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Simulacrum Robotics."
+	desc = "A pair of \"Iron Eagle Security\" ablative gloves with plates designed to absorb energy projectiles, even after all this time almost everyone was able to improve its design made by the Terran Federation."
 
 /obj/item/clothing/gloves/thick/combat //Combined effect of SWAT gloves and insulated gloves
 	desc = "A pair of fire, shock-proof, and impact-resistant combat gloves."

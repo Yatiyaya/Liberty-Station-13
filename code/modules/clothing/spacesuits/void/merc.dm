@@ -249,3 +249,53 @@
 
 /obj/item/clothing/suit/space/void/ronin/boxed
 	tank = /obj/item/tank/emergency_oxygen/double
+
+/obj/item/clothing/head/helmet/space/void/hunt//technohunter faction armor and helmet, this one is for the basic hired pirates, being a reskinned blood red suit
+	name = "Techno pirate upgraded helmet"
+	desc = "An Highly developed Combat helmet of unknown manufacturer that somehow is more robust than their standard military models."
+	icon_state = "technopirate"
+	item_state = "technopirate"
+	armor_list = list(
+		melee = 50,
+		bullet = 40,
+		energy = 30,
+		bomb = 50,
+		bio = 100,
+		rad = 75
+	)
+	siemens_coefficient = 0.35
+	species_restricted = list("Human")
+	camera_networks = list(NETWORK_MERCENARY)
+	light_overlay = "technopirate_light"
+	obscuration = 0
+
+/obj/item/clothing/head/helmet/space/void/hunt/update_icon()
+	..()
+	if(on)
+		icon_state = "technopirate"
+	else
+		icon_state = initial(icon_state)
+	return
+
+/obj/item/clothing/suit/space/void/hunt
+	icon_state = "technopirate"
+	name = "technopirate"
+	desc = "An Robust looking combat suit of unknown manufacturer, seems to be made with cheap materials and somehow feels better than the standard military models."
+	item_state = "technopirate"
+	armor_list = list(
+		melee = 50,
+		bullet = 40,
+		energy = 30,
+		bomb = 50,
+		bio = 100,
+		rad = 75
+	)
+	siemens_coefficient = 0.35
+	species_restricted = list("Human")
+	helmet = /obj/item/clothing/head/helmet/space/void/hunt
+	stiffness = MEDIUM_STIFFNESS
+
+/obj/item/clothing/suit/space/void/merc/equipped
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+

@@ -280,8 +280,8 @@
 	item_state = "genericr"
 
 /obj/item/clothing/under/iron_lock_security
-	name = "Iron Lock Security Uniform"
-	desc = "An outdated uniform of a now extinct corporation \"Iron Lock Security\". A private security firm that got its start centuries ago subcontracted by Simulacrum Robotics before being phased out."
+	name = "Iron Eagle Security Uniform"
+	desc = "An outdated uniform of a now almost extinct volunteer force \"Iron Eagle Security\". A private security force mainly formed by volunteers to work in the frontier of the known galaxy, or just by vatborns \"donated\" to work as guards that got its start centuries ago being \"menaged\" by the Terran Federation to support new colonies."
 	icon_state = "northtech"
 	has_sensor = 0
 

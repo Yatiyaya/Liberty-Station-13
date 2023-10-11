@@ -119,7 +119,7 @@ Advanced Voidsuit: Union Chief
 	name = "advanced hardsuit control module"
 	suit_type = "advanced hardsuit"
 	desc = "An advanced hardsuit that protects against hazardous, low pressure environments. Shines with a high polish."
-	icon_state = "ce_rig"
+	icon_state = "union_rig"
 	armor_list = list(
 		melee = 40,
 		bullet = 40,
@@ -175,11 +175,11 @@ Advanced Voidsuit: Union Chief
 /***************************************
 Union RIG
 ***************************************/
-/obj/item/rig/techno
+/obj/item/rig/techno/union
 	name = "Terra-Therma Worker's Union suit control module"
 	suit_type = "Terra-Therma Worker's Union RIG suit"
 	desc = "An advanced RIG suit that protects against hazardous, low pressure and high temperature environments."
-	icon_state = "techno_rig"
+	icon_state = "union_rig"
 	armor_list = list(
 		melee = 30,
 		bullet = 30,
@@ -196,8 +196,8 @@ Union RIG
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 	helm_type = /obj/item/clothing/head/helmet/space/rig/techno
-	glove_type = /obj/item/clothing/gloves/rig/techno
-	boot_type = /obj/item/clothing/shoes/magboots/rig/techno
+	glove_type = /obj/item/clothing/gloves/rig/techno/union
+	boot_type = /obj/item/clothing/shoes/magboots/rig/union
 
 	extra_allowed = list(
 		/obj/item/storage/toolbox,
@@ -215,12 +215,12 @@ Union RIG
 		/obj/item/rig_module/cargo_clamp,
 		)
 
-/obj/item/clothing/gloves/rig/techno
+/obj/item/clothing/gloves/rig/techno/union
 	name = "insulated gloves"
 	siemens_coefficient = 0
 
 
-/obj/item/clothing/shoes/magboots/rig/techno
+/obj/item/clothing/shoes/magboots/rig/union
 	name = "advanced magboots"
 	desc = "Advanced magnetic boots that have a lighter magnetic pull, placing less burden on the wearer."
 	mag_slow = 1

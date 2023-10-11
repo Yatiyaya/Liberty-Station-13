@@ -130,8 +130,8 @@
 
 // M I N O R   F A C T I O N S //
 /obj/item/clothing/head/soft/iron_lock_security
-	name = "Iron Lock Security cap"
-	initial_name = "Iron Lock Security cap"
-	desc = "It's a field cap in red colors with \"Iron Lock Security\" logo on it."
-	icon_state = "redsecsoft" // Placeholder until real northtech sprite exists
+	name = "Iron Eagle Security cap"
+	initial_name = "Iron Eagle Security cap"
+	desc = "It's a field cap in blue and yellow colors with \"Iron Eagle Security\" logo on it."
+	icon_state = "ironeagle" // sprites by dromkii, iron lock gets replaced by iron eagle
 
