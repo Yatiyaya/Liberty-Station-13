@@ -195,8 +195,8 @@ Union RIG
 
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
-	helm_type = /obj/item/clothing/head/helmet/space/rig/union
-	glove_type = /obj/item/clothing/gloves/rig/union
+	helm_type = /obj/item/clothing/head/helmet/space/rig/techno
+	glove_type = /obj/item/clothing/gloves/rig/techno/union
 	boot_type = /obj/item/clothing/shoes/magboots/rig/union
 
 	extra_allowed = list(
