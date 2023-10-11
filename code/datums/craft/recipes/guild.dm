@@ -6,7 +6,27 @@
 
 // Armor platings back because they belong here more than with science
 
-/datum/craft_recipe/terra/melee
+/datum/craft_recipe/terra/handmade
+	name = "Union Improvised Armor Upgrade Kit"
+	result = /obj/item/tool_upgrade/armor/handmade
+	icon_state = "armor_frame"
+	steps = list(
+		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL, "time" = 40),
+		list(QUALITY_WELDING, 35, "time" = 60),
+		list(QUALITY_CUTTING, 30, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 40),
+		list(QUALITY_WELDING, 35, "time" = 40),
+		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),
+		list(QUALITY_WELDING, 35, "time" = 60),
+		list(QUALITY_HAMMERING, 30, "time" = 60),
+		list(QUALITY_SCREW_DRIVING, 35, "time" = 20),
+		list(/obj/item/tool_upgrade/reinforcement/rubbermesh, 1),
+		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
+		list(QUALITY_HAMMERING, 30, "time" = 60),
+		list(QUALITY_ADHESIVE, 10, "time" = 20),
+	)
+
+/*/datum/craft_recipe/terra/melee//deleted recipes due to balance
 	name = "melee plating"
 	result = /obj/item/tool_upgrade/armor/melee
 	icon_state = "clothing"
@@ -69,7 +89,7 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 120),
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
-
+*/
 //Material Craft ------------------
 
 /datum/craft_recipe/terra/plasma_glass

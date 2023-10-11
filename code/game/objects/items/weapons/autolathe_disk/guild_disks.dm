@@ -346,7 +346,8 @@
 	/datum/design/autolathe/part/cell_mout,
 	/datum/design/autolathe/part/fuel_tank,
 	/datum/design/autolathe/part/oxyjet,
-	/datum/design/autolathe/part/expansion,
+	/*/datum/design/autolathe/part/expansion,//removed due to being the best upgrade
+	*/
 	/datum/design/autolathe/part/hammer_addon,
 	/datum/design/autolathe/part/spikes,
 	/datum/design/autolathe/part/dampener,

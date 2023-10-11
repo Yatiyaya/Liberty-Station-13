@@ -253,7 +253,7 @@
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_MODERATE
-	effective_faction = list("roach", "termite") // The factions mentioned on the blade's description
+	effective_faction = list("roach") // The factions mentioned on the blade's description
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	damage_mult = 1.5
 	throwforce = WEAPON_FORCE_NORMAL
@@ -287,7 +287,7 @@
 	item_state_slots = list(
 		slot_back_str = "diamond_edge"
 		)
-	effective_faction = list("roach", "termite", "balkan") // Same as the combat sword, but also balkan as its fancy
+	effective_faction = list("roach") // Same as the combat sword, but also balkan as its fancy//nerfed due to it being extremely good(fairly superior to fontaine sledge/sword)
 	damage_mult = 1.2 // Higher base damage, less damage bonus
 
 /obj/item/tool/sword/katana_makeshift
