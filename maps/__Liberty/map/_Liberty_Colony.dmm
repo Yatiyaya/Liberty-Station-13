@@ -96839,6 +96839,7 @@
 "thb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/part/gun/frame/maxim,
+/obj/item/part/gun/mechanism/machinegun,
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor2north)
 "thg" = (
@@ -102397,6 +102398,9 @@
 "ulB" = (
 /obj/structure/table/rack,
 /obj/item/tool/tape_roll/glue,
+/obj/item/rig/techno/union,
+/obj/item/rig/techno/union,
+/obj/item/rig/techno/union,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "ulD" = (
