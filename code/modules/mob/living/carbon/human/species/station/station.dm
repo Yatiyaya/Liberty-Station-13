@@ -192,7 +192,7 @@
 		"You shiver suddenly.",
 		"Your chilly flesh stands out in goosebumps."
 		)
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 
 	stat_modifiers = list(
 		STAT_BIO = 10,
@@ -325,7 +325,7 @@
 		"You shiver suddenly.",
 		"Your chilly flesh stands out in goosebumps."
 		)
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 
 	dark_color = "#0000ff"
 	light_color = "#0000ff"
@@ -357,7 +357,7 @@
 	blurb = "no."
 	darksight = 2
 
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 
 	stat_modifiers = list(
 		STAT_TGH = 10,
@@ -406,7 +406,7 @@
 	poison_type = "oxygen"                        // Poisonous air.
 	exhale_type = "carbon_dioxide"
 	siemens_coefficient = 0.5
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 	hunger_factor = 0.5
 
 	stat_modifiers = list(STAT_MEC = 10)
@@ -470,7 +470,7 @@
 	max_age = 120
 	blurb = "no."
 	flags = NO_PAIN
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 	taste_sensitivity = TASTE_HYPERSENSITIVE
 	darksight = 4
 
@@ -581,7 +581,7 @@
 	name_language = null
 	min_age = 18
 	max_age = 90
-	spawn_flags = CAN_JOIN
+	spawn_flags = IS_RESTRICTED
 	total_health = 110                   // Burn damage multiplier.
 	radiation_mod = 0
 	darksight = 3
