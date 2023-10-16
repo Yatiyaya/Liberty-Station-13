@@ -37,6 +37,10 @@
 	wield_delay_factor = 0.2 // 20 vig
 	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
+	//Lib changes
+	perk_plusone_eligible = TRUE
+	alt_plus_one_loading = TRUE
+
 /obj/item/gun/projectile/boltgun/sawn //subtype for code
 	name = "\"Mosin\" obrez boltgun"
 	desc = "A crudly mangled and sawn-down 7.62mm bolt action rifle. The rifle was fine."
@@ -119,6 +123,7 @@
 					chambered.forceMove(get_turf(src))
 					loaded -= chambered
 					chambered = null
+					side_loading(M)
 			else
 				if(eject_animatio && loaded.len) // Our bullet animation check
 					if(silenced)

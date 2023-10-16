@@ -48,6 +48,10 @@
 	var/spray
 	var/give_reagents = FALSE
 
+	//Lib sideloading additions
+	var/perk_plusone_eligible = FALSE //Incase we get shotguns that we dont want to get the oddity interaction
+	var/alt_plus_one_loading = FALSE
+
 
 /obj/item/gun/projectile/loadAmmoBestGuess()
 	var/obj/item/ammo_magazine/chosenMag = null
@@ -110,7 +114,7 @@
 		return chambered.BB
 	return null
 
-/obj/item/gun/projectile/handle_post_fire()
+/obj/item/gun/projectile/handle_post_fire(mob/user)
 	..()
 	if(chambered)
 		chambered.expend()
@@ -121,7 +125,11 @@
 			loaded += ammo_magazine.stored_ammo[1]
 			ammo_magazine.stored_ammo -= loaded
 
-/obj/item/gun/projectile/handle_click_empty()
+	//Lib edits
+	if(!alt_plus_one_loading)
+		side_loading(user)
+
+/obj/item/gun/projectile/handle_click_empty(mob/user)
 	..()
 	process_chambered()
 
@@ -130,6 +138,9 @@
 			loaded += ammo_magazine.stored_ammo[1]
 			ammo_magazine.stored_ammo -= loaded
 
+	//Lib edits
+	if(!alt_plus_one_loading)
+		side_loading(user)
 
 /obj/item/gun/projectile/proc/process_chambered()
 	if (!chambered) return
@@ -407,6 +418,12 @@
 		if(!is_crossbow)
 			to_chat(user, "It is empty.")
 
+	//Sideloading Lib changes
+	if(perk_plusone_eligible)
+		if(ishuman(user))
+			if(user.stats.getPerk(PERK_SIDE_LOADING))
+				to_chat(user, SPAN_NOTICE("[name] is eligible for sideloading.")) // Feedback that we can do this
+
 	return
 
 /obj/item/gun/projectile/proc/get_ammo()
@@ -496,3 +513,22 @@
 			to_chat(user, SPAN_WARNING("You cut down the stock, barrel, and anything else nice from \the [src], ruining a perfectly good weapon for no good reason!"))
 	else
 		..()
+
+
+//Lib chnages
+/obj/item/gun/projectile/proc/side_loading(mob/user)
+	if(!perk_plusone_eligible && !ishuman(user))
+		return
+
+	var/mob/living/carbon/human/H = user
+	if(!H.stats.getPerk(PERK_SIDE_LOADING))
+		return
+
+	var/otherhands_object = H.get_inactive_hand()
+	if(istype(otherhands_object, /obj/item/ammo_casing))
+		var/obj/item/ammo_casing/autoload = otherhands_object
+		if(autoload.caliber == caliber)
+			if(!ammo_magazine)
+				load_ammo(autoload, H)
+			else
+				ammo_magazine.attackby(autoload, user)
