@@ -123,7 +123,6 @@
 					chambered.forceMove(get_turf(src))
 					loaded -= chambered
 					chambered = null
-					side_loading(M)
 			else
 				if(eject_animatio && loaded.len) // Our bullet animation check
 					if(silenced)
@@ -135,6 +134,8 @@
 					print_string = "You work the bolt open, ejecting [B]!"
 					B.forceMove(get_turf(src))
 					loaded -= B
+		//Lib edit
+		side_loading(user)
 
 		to_chat(user, SPAN_NOTICE(print_string))
 	else
