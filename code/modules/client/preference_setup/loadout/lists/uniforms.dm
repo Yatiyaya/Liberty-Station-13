@@ -1,4 +1,11 @@
 // Uniform slot
+
+/datum/gear/rank/assistant
+	desc = "An Tough Snow Jumpsuit designed for the unhospitable planet, generally sold almost anywhere in offer!"
+	name = "Liberty style Gray Jumpsuit"
+	icon_state = "Snow_Jumpsuit_gray"
+	item_state = "Snow_Jumpsuit_gray"
+
 /datum/gear/uniform
 	display_name = "wedding dress"
 	path = /obj/item/clothing/under/bride_white

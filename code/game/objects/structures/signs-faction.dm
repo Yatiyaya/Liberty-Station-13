@@ -4,13 +4,13 @@
 	icon = 'icons/obj/decals-faction.dmi'
 
 /obj/structure/sign/faction/ironhammer
-	name = "Ironhammer Mercenaries"
-	desc = "A sign depicting the insignia of the Ironhammer Security, a mercenary group. This poster looks quite old, this group likely isn't around anymore."
+	name = "Liberty Watch Banner"
+	desc = "A banner depicting the insignia of Liberty Watch, the poster looks quite cheap."
 	icon_state = "ironhammer"
 
 /obj/structure/sign/faction/ironhammer_banner
-	name = "Ironhammer Mercenaries"
-	desc = "A banner depicting the insignia of Ironhammer Security, a mercenary group. This poster looks quite old, this group likely isn't around anymore."
+	name = "Old Iron Eagle Banner"
+	desc = "An Old banner depicting the insignia of Iron Eagle, a Terran Volunteer Force that came as reinforcements after the Colony Crash, they fought back the plagues, thieves and raiders for a good while until their numbers got so low they fell and got replaced by the Watchmen's."
 	icon_state = "ironhammerold"
 
 /obj/structure/sign/faction/one_star
@@ -45,7 +45,7 @@
 
 /obj/structure/sign/faction/technomancers
 	name = "Terra-Therma Union"
-	desc = "A sign depicting the insignia of the Terra-Therma Worker's Union, the clan of mechanists, engineers, and technicians."
+	desc = "A sign depicting the insignia of the Terra-Therma Worker's Union, the Union of mechanists, engineers, and technicians."
 	icon_state = "technomancers"
 
 /obj/structure/sign/faction/capsa

@@ -193,6 +193,26 @@
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 
+/obj/item/clothing/suit/greatcoat/liberty_coat
+	name = "liberty Style Coat"
+	desc = "A Tough Heavy Thermal Coat designed to withstand the cold climates of the planet while also gives you certain protection against any scratch, even scratch properly your back!."
+	icon_state = "liberty_coat"
+	item_state = "liberty_coat"
+	blood_overlay_type = "coat"
+	permeability_coefficient = 0.50
+	armor_list = list(
+		melee = 10,
+		bullet = 10,
+		energy = 5,
+		bomb = 5,
+		bio = 10,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
 /obj/item/clothing/suit/greatcoat/cossackcoat/edgelord
 	name = "jaeger service coat"
 	desc = " A tailored Jaeger dress-coat, kept to collect dust in a wardrobe all-year until the time of a village's ceremony or celebration. It is rigidly stitched and chokes the torso and arms to stiffen the chest and announce one's posture."
