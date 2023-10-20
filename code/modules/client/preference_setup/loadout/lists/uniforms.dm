@@ -1,6 +1,6 @@
 // Uniform slot
 
-/datum/gear/rank/assistant
+/datum/gear/uniform/snowjump
 	desc = "An Tough Snow Jumpsuit designed for the unhospitable planet, generally sold almost anywhere in offer!"
 	name = "Liberty style Gray Jumpsuit"
 	icon_state = "Snow_Jumpsuit_gray"
