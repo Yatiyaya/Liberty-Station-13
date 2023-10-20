@@ -263,4 +263,3 @@
 	min_cold_protection_temperature = T0C - 20
 	icon_state = "purifier_dark"
 	item_state = "purifier_dark"
-
