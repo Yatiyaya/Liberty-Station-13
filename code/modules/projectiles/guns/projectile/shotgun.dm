@@ -5,3 +5,7 @@
 
 	wield_delay = 2 SECOND
 	wield_delay_factor = 0.5// 50 vig
+
+	//Lib changes
+	perk_plusone_eligible = TRUE
+	alt_plus_one_loading = TRUE
