@@ -522,9 +522,10 @@
 	item_state = "sports"
 
 /obj/item/clothing/under/snowjump
+	name = "Liberty style Gray Jumpsuit"
 	desc = "An Tough Snow Jumpsuit designed for the unhospitable planet, generally sold almost anywhere in offer!"
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	name = "Liberty style Gray Jumpsuit"
+	min_cold_protection_temperature = T0C - 20
 	icon_state = "Snow_Jumpsuit_gray"
 	item_state = "Snow_Jumpsuit_gray"
 
