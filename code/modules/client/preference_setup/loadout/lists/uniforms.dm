@@ -1,10 +1,9 @@
 // Uniform slot
 
 /datum/gear/uniform/snowjump
-	desc = "An Tough Snow Jumpsuit designed for the unhospitable planet, generally sold almost anywhere in offer!"
-	name = "Liberty style Gray Jumpsuit"
-	icon_state = "Snow_Jumpsuit_gray"
-	item_state = "Snow_Jumpsuit_gray"
+	display_name = "gray snow jumpsuit"
+	path = /obj/item/clothing/under/snowjump
+	slot = slot_w_uniform
 
 /datum/gear/uniform
 	display_name = "wedding dress"
