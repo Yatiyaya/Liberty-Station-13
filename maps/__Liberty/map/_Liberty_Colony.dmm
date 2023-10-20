@@ -3084,6 +3084,10 @@
 "aHl" = (
 /obj/item/clothing/under/iron_lock_security,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2north)
 "aHo" = (
@@ -19282,6 +19286,10 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/crew_quarters/barbackroom)
+"dLx" = (
+/obj/structure/sign/faction/ironhammer,
+/turf/simulated/wall/r_wall,
+/area/liberty/security/armory)
 "dLy" = (
 /obj/random/furniture/pottedplant,
 /obj/effect/floor_decal/industrial/arrows/white,
@@ -27838,9 +27846,6 @@
 	icon_state = "gib2"
 	},
 /obj/effect/decal/cleanable/filth,
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "fxQ" = (
@@ -40278,11 +40283,9 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/engineering/atmos/surface)
 "hTL" = (
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
-/turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/structure/sign/faction/technomancers,
+/turf/simulated/wall/r_wall,
+/area/liberty/maintenance/substation/servist)
 "hTM" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white/gray_perforated,
@@ -40506,8 +40509,13 @@
 /turf/simulated/floor/rock/alt,
 /area/liberty/maintenance/undergroundfloor3east)
 "hWq" = (
-/obj/structure/sign/misc/enlist,
-/turf/simulated/wall,
+/obj/item/remains/human,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "hWw" = (
 /turf/simulated/shuttle/wall/science{
@@ -44779,6 +44787,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roaches,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2north)
 "iRG" = (
@@ -50608,12 +50620,12 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "jYP" = (
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
-/obj/random/material_ore,
-/turf/simulated/floor/rock,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/rack/shelf,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
+/turf/simulated/floor/tiled/techmaint,
+/area/liberty/maintenance/undergroundfloor3west)
 "jYW" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -52153,11 +52165,20 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/crew_quarters/bar)
 "knZ" = (
-/obj/item/contraband/poster/placed/recruitment/engineering{
-	name = "Terra-Therma recruitment poster"
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/helmet/laserproof/iron_lock_security,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "vomit_4"
 	},
-/turf/simulated/wall/r_wall,
-/area/liberty/engineering/foyer)
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "mfloor6"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "koa" = (
 /obj/random/junk/nondense,
 /obj/effect/decal/cleanable/dirt,
@@ -53493,6 +53514,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /obj/item/clothing/accessory/holster/hip,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "kCi" = (
@@ -61663,6 +61688,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
+"mkY" = (
+/obj/structure/sign/faction/ironhammer,
+/turf/simulated/wall/r_wall,
+/area/liberty/command/swo/quarters)
 "mlc" = (
 /obj/machinery/space_heater,
 /obj/structure/sign/painting/paintingsunset{
@@ -65572,9 +65601,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/storage/primary)
 "ncT" = (
-/obj/structure/sign/misc/enlist,
-/turf/simulated/wall,
-/area/liberty/maintenance/undergroundfloor2south)
+/obj/structure/sign/faction/ironhammer,
+/turf/simulated/wall/r_wall,
+/area/liberty/security/tactical)
 "ndb" = (
 /obj/structure/table/gamblingtable,
 /turf/simulated/floor/tiled/steel/bar_light,
@@ -68722,16 +68751,9 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/maintenance/oldlibrary)
 "nHU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/filth{
-	icon_state = "gib2"
-	},
-/obj/effect/decal/cleanable/filth,
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/structure/sign/faction/technomancers,
+/turf/simulated/wall/r_wall,
+/area/liberty/command/gmaster)
 "nHV" = (
 /obj/effect/spider/stickyweb,
 /obj/machinery/power/apc/inactive{
@@ -69375,9 +69397,9 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "nOW" = (
-/obj/structure/sign/faction/ironhammer,
-/turf/simulated/wall/iron,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/structure/sign/faction/technomancers,
+/turf/simulated/wall/r_wall,
+/area/liberty/engineering/foyer)
 "nOZ" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -80689,6 +80711,10 @@
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
+"pXY" = (
+/obj/structure/sign/misc/enlist,
+/turf/simulated/wall/r_wall,
+/area/liberty/security/eye_pod)
 "pYa" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -82874,6 +82900,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
+"quG" = (
+/obj/structure/sign/faction/ironhammer,
+/turf/simulated/wall/r_wall,
+/area/liberty/security/armoryshop)
 "quK" = (
 /obj/structure/table/rack,
 /obj/item/storage/briefcase/inflatable,
@@ -84633,6 +84663,10 @@
 /obj/effect/decal/cleanable/filth,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/part/gun/grip/black,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "qLC" = (
@@ -86446,6 +86480,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_magazine/magnum_40,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2north)
 "rdH" = (
@@ -88265,6 +88303,10 @@
 	},
 /obj/item/remains/human,
 /obj/item/part/gun/frame/federalist,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "rvQ" = (
@@ -92146,6 +92188,7 @@
 "sjE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/iron_lock_security,
+/obj/item/ammo_magazine/light_rifle_257,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "sjJ" = (
@@ -93872,6 +93915,11 @@
 /obj/item/remains/human,
 /obj/item/clothing/under/iron_lock_security,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "mfloor6"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "sAY" = (
@@ -96549,14 +96597,9 @@
 	},
 /area/liberty/engineering/atmos)
 "tbB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/filth,
-/obj/effect/decal/cleanable/filth,
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
-/turf/simulated/floor/plating/under,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/structure/sign/faction/technomancers,
+/turf/simulated/wall/r_wall,
+/area/liberty/maintenance/undergroundfloor3west)
 "tbD" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -103584,6 +103627,17 @@
 "uuw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/human,
+/obj/item/gun/projectile/automatic/federalist,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "vomit_3"
+	},
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "mfloor6"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "uuR" = (
@@ -107661,10 +107715,8 @@
 /turf/simulated/floor/snow,
 /area/liberty/crew_quarters/hotsprings)
 "vom" = (
-/mob/living/carbon/superior_animal/termite_no_despawn/plasma{
-	icon_state = "rabochiy_gore"
-	},
-/turf/simulated/floor/rock,
+/obj/structure/sign/misc/enlist,
+/turf/simulated/wall,
 /area/liberty/maintenance/undergroundfloor2north)
 "vop" = (
 /obj/machinery/light{
@@ -112474,6 +112526,10 @@
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/medical/paramedic)
+"wis" = (
+/obj/structure/sign/faction/technomancers,
+/turf/simulated/wall,
+/area/liberty/maintenance/undergroundfloor2east)
 "wit" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -119142,6 +119198,10 @@
 /obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/part/gun/frame/federalist,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "xwR" = (
@@ -121444,6 +121504,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/human,
 /obj/item/clothing/under/iron_lock_security,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor2north)
 "xTL" = (
@@ -132430,8 +132494,8 @@ wLK
 xQe
 uFk
 gRw
-fOJ
-ucr
+jYP
+tbB
 ucr
 emu
 emu
@@ -173689,7 +173753,7 @@ xiS
 ckB
 ckB
 ckB
-ncT
+xiS
 xiS
 xiS
 aRc
@@ -175465,7 +175529,7 @@ iYu
 scf
 dGZ
 sXx
-hOG
+hTL
 hOG
 fRI
 fRI
@@ -185972,8 +186036,8 @@ vXj
 qVz
 qVz
 qVz
+nOW
 qVz
-knZ
 qVz
 qVz
 qVz
@@ -191192,7 +191256,7 @@ eDq
 dYN
 dYN
 dYN
-gyo
+wis
 wJS
 kDr
 kDr
@@ -191413,7 +191477,7 @@ emu
 nmR
 xgl
 woW
-nmR
+nHU
 nmR
 aNW
 nmR
@@ -192946,8 +193010,8 @@ nLc
 cOJ
 bbs
 nLL
-jYP
-jYP
+cOJ
+sOf
 cOJ
 sOf
 eIB
@@ -193146,13 +193210,13 @@ uKZ
 uKZ
 nLc
 sOf
-jYP
+cOJ
 jhR
 pjq
 lYV
 fna
 sOf
-hTL
+fbo
 ahF
 wGW
 wGW
@@ -193550,13 +193614,13 @@ uKZ
 uKZ
 nLc
 cOJ
-jYP
+cOJ
 ldC
 lfh
-jYP
+cOJ
 cOJ
 sOf
-hTL
+fbo
 ahF
 xWo
 xTw
@@ -193753,14 +193817,14 @@ uKZ
 nLc
 rhT
 sOf
-vom
+sOf
 hfX
 nLc
 sOf
 nFD
 eIB
 cSd
-nHU
+xTw
 mMm
 sLc
 lRZ
@@ -194167,7 +194231,7 @@ xTw
 xgN
 vpe
 lqB
-tbB
+vGV
 vGd
 eSO
 xXp
@@ -194366,7 +194430,7 @@ nFD
 nFD
 eIB
 wqk
-nHU
+xTw
 eiU
 pap
 vGV
@@ -194978,8 +195042,8 @@ oOg
 oOg
 wwz
 wwz
-sTT
 wwz
+sTT
 wwz
 bIO
 eIB
@@ -196392,7 +196456,7 @@ kZZ
 bnb
 vPm
 opS
-nOW
+wwz
 grF
 vCW
 ssP
@@ -196601,7 +196665,7 @@ vmR
 lPf
 wwz
 pap
-ghL
+pap
 tvf
 lKm
 wkK
@@ -197004,7 +197068,7 @@ rdq
 iRF
 aNf
 sTT
-leN
+knZ
 uuw
 dpX
 aLb
@@ -197200,7 +197264,7 @@ wwz
 wwz
 dHG
 wwz
-wwz
+kZZ
 wwz
 nSh
 pgw
@@ -198210,8 +198274,8 @@ wwz
 wwz
 fzz
 eIB
+vom
 eIB
-hWq
 wwz
 wwz
 wwz
@@ -199019,7 +199083,7 @@ pbG
 pbG
 pbG
 rkL
-lks
+hWq
 rDX
 pap
 fbo
@@ -209965,7 +210029,7 @@ sJJ
 omv
 omv
 yib
-yib
+ncT
 wNS
 hYN
 ahM
@@ -212196,7 +212260,7 @@ mLr
 rix
 cGd
 wpZ
-joH
+pXY
 qLW
 dRd
 gvm
@@ -213022,7 +213086,7 @@ hzj
 hzj
 hzj
 hzj
-hzj
+mkY
 hzj
 hzj
 hzj
@@ -219270,7 +219334,7 @@ cwr
 cwr
 cwr
 cwr
-cwr
+quG
 cwr
 cwr
 fXf
@@ -219463,7 +219527,7 @@ hDO
 nzj
 hDO
 hDO
-hDO
+dLx
 hDO
 hrO
 hrO

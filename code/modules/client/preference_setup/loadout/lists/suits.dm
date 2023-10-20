@@ -6,6 +6,10 @@
 	sort_category = "Suits and Overwear"
 	cost = 0
 
+/datum/gear/suit/greatcoat/liberty_coat
+	display_name="Liberty Style Coat"
+	path= /obj/item/clothing/suit/greatcoat/liberty_coat
+
 /datum/gear/suit/hell_apron
 	display_name = "Skylight black apron"
 	path = /obj/item/clothing/suit/storage/helltaker_apron

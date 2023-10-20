@@ -37,7 +37,7 @@
 	desc = "Protects the head from damage while you are in a mech or joy riding the cargo trolley."
 	icon_state = "tanker_helmet"
 	item_flags = THICKMATERIAL
-	flags_inv = HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEEARS
 	siemens_coefficient = 1
 	price_tag = 160
 	armor_list = list(
@@ -291,7 +291,7 @@
 
 /obj/item/clothing/head/helmet/marshal/ushanka
 	name = "watchmen Armored Ushanka"
-	desc = "Standard operator gear. an security ushanka with skull protector made out of plasteel and scale armor in the exterior, features an eye shield"
+	desc = "Standard operator gear. an security ushanka with skull protector made out of plasteel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
 	icon_state = "LWushanka"
 	icon_state = "LWushanka"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)

@@ -1,4 +1,10 @@
 // Uniform slot
+
+/datum/gear/uniform/snowjump
+	display_name = "gray snow jumpsuit"
+	path = /obj/item/clothing/under/snowjump
+	slot = slot_w_uniform
+
 /datum/gear/uniform
 	display_name = "wedding dress"
 	path = /obj/item/clothing/under/bride_white

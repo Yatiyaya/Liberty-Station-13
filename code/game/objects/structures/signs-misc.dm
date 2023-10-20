@@ -9,8 +9,8 @@
 	icon_state = "arcade"
 
 /obj/structure/sign/misc/enlist
-	name = "enlistment sign"
-	desc = "A battered military recruitment sign."
+	name = "old iron eagle sign"
+	desc = "A battered Iron Eagle recruitment sign, they were the first ones in fight back the plagues and raiders from phokorus colony, now they are a memory from past times."
 	icon_state = "enlist"
 
 /obj/structure/sign/misc/ntmining

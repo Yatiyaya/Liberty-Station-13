@@ -520,3 +520,37 @@
 	desc = "Sweat stains not included."
 	icon_state = "sports"
 	item_state = "sports"
+
+/obj/item/clothing/under/snowjump
+	name = "Liberty style Gray Jumpsuit"
+	desc = "An Tough Snow Jumpsuit designed for the unhospitable planet, generally sold almost anywhere in offer!"
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	icon_state = "Snow_Jumpsuit_gray"
+	item_state = "Snow_Jumpsuit_gray"
+
+/obj/item/clothing/under/snowjump/verb/toggle_style()
+	set name = "Adjust Style"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Snow Jumpsuit"] = "Snow_Jumpsuit_gray"
+	options["Rolled Sleeves"] = "Snow_Jumpsuit_gray_alt"
+	options["Rolled Down"] = "Snow_jumpsuit_gray_pants"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		item_state = options[choice]
+		item_state_slots = null
+		to_chat(M, "You adjust your [choice].")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1

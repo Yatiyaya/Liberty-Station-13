@@ -162,7 +162,7 @@
 	/obj/item/tool_upgrade/armor/handmade
 	name = "Handmade Armor Upgrade kit"//is the replacement for every armor plating the union can make, its pretty weak but will do the work of be an armor upgrade even if its shitty, the guys with quality are the custodians, plus they can mass produce cheap armor upgrades if some miner is providing plasteel.
 	desc = "A Very improvised set of armor plates and tiny metal reinforcements made out with metal remains by someone with knowledge of metalworking, it that can be bolted onto any armor to lightly enhance its general resistance in desperate times or times with low budget."
-	icon_state = "handmade_plating"
+	icon_state = "metal_plating"
 	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 5)
 	price_tag = 150
 

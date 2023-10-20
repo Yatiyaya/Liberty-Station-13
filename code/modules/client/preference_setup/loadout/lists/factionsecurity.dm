@@ -4,7 +4,6 @@
 	allowed_roles = list(JOBS_SECURITY)
 	slot = slot_head
 	sort_category = "Faction: Security"
-	cost = 0
 
 /datum/gear/factionsecurity
 	display_name = "winter coat, security"
