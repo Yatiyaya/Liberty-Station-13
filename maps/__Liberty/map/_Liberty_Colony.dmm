@@ -17670,13 +17670,6 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/eva_sec)
-"dvL" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Mining Prep";
-	req_one_access = list(48)
-	},
-/turf/simulated/wall/r_wall,
-/area/liberty/quartermaster/miningdock)
 "dvM" = (
 /turf/simulated/floor/tiled/dark,
 /area/liberty/medical/morgue)
@@ -186853,7 +186846,7 @@ ahs
 meR
 wtD
 wtD
-dvL
+dEL
 wtD
 wtD
 wtD
