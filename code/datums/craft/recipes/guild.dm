@@ -9,7 +9,7 @@
 /datum/craft_recipe/terra/handmade
 	name = "Union Improvised Armor Upgrade Kit"
 	result = /obj/item/tool_upgrade/armor/handmade
-	icon_state = "armor_frame"
+	icon_state = "armor_part"
 	steps = list(
 		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 60),
