@@ -326,7 +326,7 @@
 	color = "#A10808";
 	icon_state = "splatter3"
 	},
-/obj/item/gun/projectile/revolver/ranger,
+/obj/random/gun_cheap,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "bT" = (
@@ -412,6 +412,8 @@
 "cx" = (
 /obj/structure/closet/cabinet,
 /obj/item/ammo_magazine/ammobox/shotgun/buckshot,
+/obj/random/ammo_lowcost,
+/obj/random/ammo_lowcost,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "cz" = (
@@ -538,12 +540,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor3)
 "dk" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/lattice,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/turf/simulated/mineral/planet,
+/area/liberty/dungeon/outside/mercenary_base/floor4)
 "dl" = (
 /obj/item/frame/light/small{
 	dir = 4
@@ -917,9 +915,9 @@
 "fi" = (
 /obj/random/pouch/hardcase_ammo/low_chance,
 /obj/item/storage/toolbox/electrical,
-/obj/item/cell/large/potato,
-/obj/item/cell/large/potato,
-/obj/item/cell/large/potato,
+/obj/random/powercell/medium_safe_Skylight,
+/obj/random/powercell/medium_safe_Skylight,
+/obj/random/powercell/medium_safe_Skylight,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor1)
 "fl" = (
@@ -970,7 +968,7 @@
 	color = "#A10808";
 	icon_state = "splatter5"
 	},
-/obj/item/gun/energy/stunrevolver,
+/obj/item/gun/projectile/revolver/detective,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "fw" = (
@@ -1157,8 +1155,6 @@
 /obj/structure/table/rack/shelf,
 /obj/item/grenade/chem_grenade/incendiary,
 /obj/item/grenade/chem_grenade/incendiary,
-/obj/item/grenade,
-/obj/item/grenade,
 /obj/machinery/door/window/northleft,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -1682,7 +1678,8 @@
 /obj/item/gun/projectile/makarov,
 /obj/item/gun/projectile/makarov,
 /obj/item/gun/projectile/makarov,
-/obj/item/gun/projectile/makarov,
+/obj/item/ammo_magazine/pistol_35,
+/obj/item/ammo_magazine/pistol_35,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor4)
 "jy" = (
@@ -2124,7 +2121,6 @@
 "lJ" = (
 /obj/structure/table/rack/shelf,
 /obj/item/rig/combat,
-/obj/item/rig/combat,
 /obj/machinery/door/window/northright,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor4)
@@ -2190,11 +2186,6 @@
 "lZ" = (
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/mercenary_base/floor2)
-"ma" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_magazine/ammobox/rifle_75,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/mercenary_base/floor4)
 "mb" = (
 /obj/structure/invislight/outside,
 /turf/simulated/mineral/planet,
@@ -2548,9 +2539,8 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/mercenary_base)
 "nJ" = (
-/obj/structure/lattice,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/turf/simulated/mineral/planet,
+/area/liberty/dungeon/outside/mercenary_base)
 "nK" = (
 /obj/structure/flora/tree/snow/four,
 /obj/effect/decal/cleanable/blood{
@@ -2791,7 +2781,7 @@
 "oP" = (
 /obj/random/oddity_guns,
 /turf/simulated/floor/rock/grey,
-/area/colony)
+/area/liberty/dungeon/outside/monster_cave)
 "oQ" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -2973,9 +2963,14 @@
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/mercenary_base/floor5)
 "pK" = (
-/obj/structure/flora/small/snow/rock1,
-/turf/simulated/wall/wood_old,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/obj/structure/low_wall/rusted,
+/obj/structure/sandbags{
+	icon_state = "sandbag_0";
+	dir = 1
+	},
+/obj/item/flame/lighter/zippo/black,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/mercenary_base/entryway)
 "pL" = (
 /obj/machinery/light{
 	dir = 8
@@ -3189,6 +3184,7 @@
 "qT" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/snowjump,
+/obj/random/ammo_lowcost,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "qU" = (
@@ -3397,7 +3393,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "se" = (
-/obj/item/gun/projectile/revolver/frontier,
+/obj/random/gun_cheap,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "sf" = (
@@ -3412,10 +3408,7 @@
 "sk" = (
 /obj/structure/table/rack/shelf,
 /obj/item/ammo_magazine/ammobox/shotgun/buckshot,
-/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 /obj/item/ammo_magazine/ammobox/shotgun,
-/obj/item/ammo_magazine/ammobox/shotgun,
-/obj/item/ammo_magazine/speed_loader_shotgun,
 /obj/item/ammo_magazine/speed_loader_shotgun,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor4)
@@ -4074,11 +4067,6 @@
 /obj/item/ammo_magazine/rifle_75_short/empty,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/mercenary_base)
-"vs" = (
-/obj/item/remains/human,
-/obj/structure/lattice,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vt" = (
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/food/condiment/enzyme,
@@ -4302,12 +4290,6 @@
 /obj/random/mob/space_balkan,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base)
-"wy" = (
-/obj/item/ammo_casing/magnum_40{
-	amount = 6
-	},
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "wz" = (
 /obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
@@ -4416,11 +4398,6 @@
 "xa" = (
 /obj/machinery/door/unpowered/simple/wood,
 /obj/machinery/door/unpowered/simple/wood,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
-"xb" = (
-/obj/item/material/shard,
-/obj/item/cell/small/moebius/omega,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "xc" = (
@@ -4690,7 +4667,6 @@
 /obj/random/tool_upgrade,
 /obj/random/tool/advanced/always_spawn,
 /obj/item/tool/tape_roll/glue,
-/obj/item/tool/tape_roll/flextape,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base)
@@ -5609,8 +5585,6 @@
 "Dy" = (
 /obj/structure/table/rack/shelf,
 /obj/item/ammo_magazine/ammobox/pistol_35,
-/obj/item/ammo_magazine/ammobox/pistol_35,
-/obj/item/ammo_magazine/ammobox/pistol_35/hv,
 /obj/item/ammo_magazine/ammobox/pistol_35/hv,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base/floor4)
@@ -6526,11 +6500,10 @@
 /obj/item/storage/backpack/guncase,
 /obj/item/storage/backpack/guncase,
 /obj/item/gun/projectile/automatic/federalist,
-/obj/item/gun/projectile/automatic/federalist/homemaker,
-/obj/item/gun/projectile/shotgun/judge,
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/item/gun/projectile/shotgun/judge/sawn,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base)
 "IA" = (
@@ -6591,6 +6564,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/snowjump,
+/obj/random/ammo_lowcost,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "IT" = (
@@ -6957,7 +6931,7 @@
 	dir = 1;
 	tag = "icon-railing0 (NORTH)"
 	},
-/obj/item/flame/lighter/zippo/gold,
+/obj/item/flame/lighter/zippo/red,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "KA" = (
@@ -7059,7 +7033,7 @@
 	icon_state = "sandbag_0";
 	dir = 1
 	},
-/obj/item/flame/lighter/zippo/gold,
+/obj/item/flame/lighter/zippo/brass,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/mercenary_base/entryway)
 "KZ" = (
@@ -7480,7 +7454,7 @@
 	icon_state = "sandbag_0";
 	dir = 8
 	},
-/obj/random/credits/c1000,
+/obj/random/credits/c100,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "MV" = (
@@ -7601,10 +7575,7 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/dungeon/outside/mercenary_base/floor3)
 "Nz" = (
-/obj/item/gun/projectile/revolver/frontier,
-/obj/item/ammo_casing/magnum_40{
-	amount = 6
-	},
+/obj/item/gun/projectile/revolver/detective,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "NC" = (
@@ -7743,10 +7714,10 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Oa" = (
-/obj/item/gun/projectile/boltgun/lever/shotgun/sawn,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/random/gun_shotgun/low_chance,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Oc" = (
@@ -8415,11 +8386,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
 "Rn" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/structure/lattice,
+/obj/random/credits/c100,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Ro" = (
@@ -8588,9 +8555,6 @@
 	color = "#A10808"
 	},
 /obj/item/clothing/suit/gorka/toggle/gorka/dark,
-/obj/item/ammo_casing/magnum_40{
-	amount = 6
-	},
 /obj/item/clothing/accessory/scarf/furblack,
 /obj/item/clothing/under/snowjump,
 /turf/simulated/floor/wood/wild4,
@@ -9623,8 +9587,6 @@
 /obj/item/clothing/shoes/workboots,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/gloves/thick/swat/insulated,
-/obj/item/clothing/gloves/thick/swat/insulated,
-/obj/item/clothing/gloves/thick/swat/insulated,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/mercenary_base)
 "WQ" = (
@@ -9850,8 +9812,7 @@
 /area/liberty/dungeon/outside/mercenary_base)
 "XP" = (
 /obj/structure/table/woodentable,
-/obj/item/gun/projectile/revolver/frontier,
-/obj/random/credits/c1000,
+/obj/random/gun_cheap,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "XQ" = (
@@ -56273,9 +56234,9 @@ oJ
 gJ
 cg
 cg
-cg
-cg
-cg
+dk
+dk
+dk
 xo
 xo
 xo
@@ -56479,7 +56440,7 @@ cg
 cg
 cg
 cg
-cg
+dk
 xo
 xo
 xo
@@ -56681,7 +56642,7 @@ MP
 sk
 cg
 cg
-cg
+dk
 xo
 xo
 xo
@@ -56883,7 +56844,7 @@ jw
 jw
 gr
 cg
-cg
+dk
 xo
 xo
 xo
@@ -57085,7 +57046,7 @@ rE
 RL
 cg
 cg
-cg
+dk
 xo
 xo
 xo
@@ -57287,7 +57248,7 @@ fX
 jw
 jx
 cg
-cg
+dk
 wS
 wS
 wS
@@ -57485,11 +57446,11 @@ yO
 aZ
 vy
 WB
-ma
+jw
 jw
 Dy
 cg
-cg
+dk
 wS
 DR
 Lb
@@ -57691,7 +57652,7 @@ aH
 BE
 cg
 cg
-cg
+dk
 wS
 wS
 wS
@@ -57893,7 +57854,7 @@ jj
 IC
 lJ
 cg
-cg
+dk
 wS
 DR
 Lb
@@ -58095,7 +58056,7 @@ cg
 cg
 cg
 cg
-cg
+dk
 wS
 cI
 cI
@@ -58289,15 +58250,15 @@ yO
 yO
 yO
 mE
-mE
-mE
-cg
-cg
-cg
-cg
-cg
-cg
-cg
+nJ
+nJ
+dk
+dk
+dk
+dk
+dk
+dk
+dk
 wS
 DR
 Lb
@@ -58491,8 +58452,8 @@ yO
 yO
 aZ
 mE
-mE
-mE
+nJ
+nJ
 wS
 wS
 wS
@@ -58693,8 +58654,8 @@ aZ
 yO
 WQ
 mE
-mE
-mE
+nJ
+nJ
 wS
 NF
 yO
@@ -59075,7 +59036,7 @@ or
 aZ
 aZ
 aZ
-Nw
+FN
 Ai
 mE
 xo
@@ -59277,7 +59238,7 @@ yO
 ks
 jy
 jy
-mE
+Nw
 mE
 mE
 xo
@@ -59477,10 +59438,10 @@ na
 mE
 yO
 mE
-na
-xo
-xo
-xo
+mE
+mE
+mE
+mE
 xo
 xo
 hX
@@ -59679,9 +59640,9 @@ na
 mE
 yO
 mE
-mE
-mE
-mE
+LW
+nb
+Jx
 mE
 xo
 xo
@@ -59916,8 +59877,8 @@ gt
 wS
 wS
 wS
+wS
 aO
-yO
 km
 wS
 xo
@@ -60492,7 +60453,7 @@ VZ
 Fk
 mE
 xo
-mE
+nJ
 hX
 hX
 hX
@@ -60694,7 +60655,7 @@ yO
 yO
 mE
 xo
-mE
+nJ
 mE
 aZ
 QE
@@ -60705,7 +60666,7 @@ aZ
 yO
 aZ
 tj
-mE
+nJ
 xo
 xo
 xo
@@ -60896,7 +60857,7 @@ La
 yl
 mE
 xo
-mE
+nJ
 mE
 yO
 iH
@@ -60907,7 +60868,7 @@ yO
 yO
 Ig
 mE
-mE
+nJ
 xo
 xo
 xo
@@ -61109,7 +61070,7 @@ yV
 YJ
 ED
 mE
-mE
+nJ
 xo
 xo
 xo
@@ -61311,7 +61272,7 @@ yO
 YJ
 jt
 mE
-mE
+nJ
 xo
 xo
 xo
@@ -61513,7 +61474,7 @@ aZ
 Ez
 eU
 mE
-mE
+nJ
 xo
 xo
 xo
@@ -61704,7 +61665,7 @@ yO
 yO
 fK
 xo
-mE
+nJ
 mE
 mE
 mE
@@ -61715,7 +61676,7 @@ mE
 mE
 mE
 mE
-mE
+nJ
 xo
 xo
 xo
@@ -61906,18 +61867,18 @@ Iz
 sX
 mE
 xo
-mE
-mE
-mE
-mE
-mE
-mE
-mE
-mE
-mE
-mE
-mE
-mE
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
+nJ
 xo
 xo
 xo
@@ -67379,7 +67340,7 @@ KN
 Yz
 Yz
 NM
-KY
+pK
 nl
 vM
 vM
@@ -81816,7 +81777,7 @@ oQ
 Yz
 Yz
 OS
-pK
+pf
 Yz
 Yz
 xU
@@ -83014,7 +82975,7 @@ mK
 Yz
 pf
 AS
-vs
+Uk
 bF
 sR
 sR
@@ -83221,7 +83182,7 @@ wW
 sR
 sR
 sU
-nJ
+sR
 sU
 Yz
 Yz
@@ -84441,7 +84402,7 @@ Yz
 pf
 ny
 rU
-Rn
+iP
 sR
 sR
 sR
@@ -84629,7 +84590,7 @@ Yz
 Yz
 Yz
 pf
-nJ
+sR
 sR
 sR
 pf
@@ -84645,7 +84606,7 @@ Rf
 Uk
 Rf
 iP
-nJ
+sR
 LO
 Mv
 Es
@@ -84993,7 +84954,7 @@ mv
 gw
 gw
 gw
-na
+gw
 xo
 na
 na
@@ -85195,8 +85156,8 @@ mv
 mv
 mv
 mv
-na
-na
+gw
+gw
 na
 na
 na
@@ -85397,8 +85358,8 @@ Ca
 cJ
 mv
 mv
-xo
-xo
+mv
+mv
 na
 na
 na
@@ -85599,8 +85560,8 @@ cJ
 Ca
 cJ
 GH
-xo
-xo
+mv
+mv
 na
 na
 na
@@ -85655,7 +85616,7 @@ pf
 dl
 Mx
 ri
-nJ
+sR
 QP
 kZ
 GI
@@ -85802,7 +85763,7 @@ GH
 Ca
 SK
 oP
-xo
+mv
 na
 na
 na
@@ -86003,8 +85964,8 @@ mv
 mv
 SK
 Ca
-xo
-xo
+mv
+mv
 na
 na
 na
@@ -86048,7 +86009,7 @@ dz
 KD
 wD
 sR
-nJ
+sR
 sR
 Mx
 XB
@@ -86205,8 +86166,8 @@ TW
 Ca
 Ca
 mv
-xo
-na
+mv
+gw
 na
 na
 na
@@ -86241,7 +86202,7 @@ YR
 YR
 Ww
 pf
-sR
+Rn
 Or
 Xy
 AE
@@ -86407,8 +86368,8 @@ mv
 Ca
 Cw
 mv
-xo
-na
+mv
+gw
 na
 na
 na
@@ -86609,8 +86570,8 @@ Ca
 Ca
 mv
 mv
-xo
-na
+mv
+gw
 na
 na
 na
@@ -86655,7 +86616,7 @@ rz
 pf
 rQ
 sR
-Rn
+iP
 pf
 eB
 Lt
@@ -86855,7 +86816,7 @@ sR
 ng
 ix
 sU
-wy
+sR
 XK
 HH
 sU
@@ -87066,11 +87027,11 @@ qU
 rI
 pf
 Ev
-nJ
+sR
 pF
 sR
 pf
-dk
+Zx
 sR
 Rh
 pf
@@ -89198,7 +89159,7 @@ na
 na
 na
 gw
-mv
+gw
 gw
 mv
 mv
@@ -89400,7 +89361,7 @@ na
 na
 na
 gw
-mv
+gw
 gw
 gw
 mv
@@ -89602,8 +89563,8 @@ na
 na
 na
 gw
-mv
-mv
+gw
+gw
 gw
 gw
 mv
@@ -89678,7 +89639,7 @@ sR
 ri
 sR
 vS
-xb
+Tu
 On
 Tu
 sR
@@ -89804,9 +89765,9 @@ na
 na
 na
 gw
-kr
-mv
-mv
+gw
+gw
+gw
 gw
 mv
 mv
@@ -90006,9 +89967,9 @@ na
 na
 na
 gw
-wz
-mv
-mv
+gw
+gw
+gw
 gw
 gw
 mv
