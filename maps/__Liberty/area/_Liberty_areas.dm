@@ -1037,8 +1037,14 @@
 /area/liberty/bonfire/stronghold
 	name = "\improper Stronghold"
 	icon_state = "hammerblue"
-	ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
+	ambience = list('sound/ambience/honorguard.ogg') // Under Sebs allowance, the soundtrack for the Custodians has been changed. This song is COPYRIGHT FREE and has been only slightly modified. Music by <a href="https://pixabay.com/users/dstechnician-26430546/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">DSTechnician</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">Pixabay</a>
 	sound_env = LARGE_ENCLOSED
+
+// /area/liberty/bonfire/stronghold 
+//		name = "\improper Stronghold"
+//		icon_state = "hammerblue"
+//		ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
+//		sound_env = LARGE_ENCLOSED
 
 /area/liberty/bonfire/storage
 	name = "\improper Stronghold Storage Wing"
@@ -1048,7 +1054,7 @@
 /area/liberty/bonfire/bioreactor
 	name = "\improper Stronghold Workshop"
 	icon_state = "erisblue"
-	ambience = list('sound/ambience/stronghold.ogg')
+	ambience = list('sound/ambience/honorguard.ogg')
 	area_light_color = COLOR_LIGHTING_CUSTODIANS_BRIGHT
 
 /area/liberty/bonfire/vectorrooms
@@ -1059,17 +1065,17 @@
 /area/liberty/bonfire/office
 	name = "\improper Stronghold Barracks"
 	icon_state = "hammerred"
-	ambience = list('sound/ambience/stronghold.ogg')
+	ambience = list('sound/ambience/honorguard.ogg')
 	area_light_color = COLOR_LIGHTING_CUSTODIANS_DARK
 
 /area/liberty/bonfire/forge
 	name = "Stronghold Forge"
-	ambience = list('sound/ambience/stronghold.ogg')
+	ambience = list('sound/ambience/honorguard.ogg')
 	icon_state = "erisgreen"
 
 /area/liberty/bonfire/alchemist
 	name = "Stronghold Brewing Room"
-	ambience = list('sound/ambience/stronghold.ogg')
+	ambience = list('sound/ambience/honorguard.ogg')
 	icon_state = "hammerblue"
 
 //Engineering
