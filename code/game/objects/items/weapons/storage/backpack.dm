@@ -419,6 +419,6 @@
 	icon_state = "exobag_medical"
 
 /obj/item/storage/backpack/exosatchel/leather
-		name = "Leather exoskeleton satchel"
+	name = "Leather exoskeleton satchel"
 	desc = "A Leather satchel modified to adjust the slings into exoskeletons and armors in a more comfortable way."
 	icon_state = "exobag_leather"
