@@ -726,7 +726,7 @@
 	brightness_on = 6 //luminosity when on
 	light_overlay = "hardhatunion_light"
 
-	icon_state = "engineer_heavy_helmet"
+	icon_state = "heavy_engineer_helmet"
 	item_state = "heavy_engineer_helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "engineer_helmet",
