@@ -1252,13 +1252,6 @@
 "aoh" = (
 /obj/effect/floor_decal/corner_techfloor_grid/diagonal,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/obj/structure/mirror{
-	pixel_x = 28
-	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/pros/prep)
 "aoi" = (
@@ -3609,7 +3602,9 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/quartermaster/office)
 "aLS" = (
-/obj/structure/closet/secure_closet/personal/trapper,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/rack/shelf,
+/obj/item/tool/tape_roll,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "aLU" = (
@@ -5545,6 +5540,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/pros/prep)
 "bfK" = (
@@ -6199,13 +6195,13 @@
 /turf/simulated/floor/tiled/white/golden,
 /area/liberty/bonfire/vectorrooms)
 "bml" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Shipbreaker Storage";
-	req_access = list(78)
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 2;
+	name = "Black Bolt Storage";
+	req_access = list(78)
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/pros/prep)
 "bmp" = (
@@ -13952,6 +13948,10 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/liberty/security/sechall)
+"cKm" = (
+/obj/effect/floor_decal/corner_techfloor_grid/diagonal,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/pros/prep)
 "cKt" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial,
@@ -14387,8 +14387,8 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
 "cNZ" = (
-/obj/item/stool,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/stool,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/prep)
 "cOb" = (
@@ -14842,6 +14842,11 @@
 	name = "Colony Lockdown"
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/curtain/open/bed{
+	name = "Privacy curtain";
+	opacity = 1;
+	icon_state = "closed"
+	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/pros/prep)
 "cSU" = (
@@ -19795,6 +19800,11 @@
 /obj/machinery/door/blast/regular{
 	id = "ProspShop"
 	},
+/obj/structure/curtain/open/bed{
+	name = "Privacy curtain";
+	opacity = 1;
+	icon_state = "closed"
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/prep)
 "dOY" = (
@@ -21552,7 +21562,7 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "eiX" = (
 /obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
+	name = "Black Bolt Logistics Prep";
 	req_access = list(78)
 	},
 /obj/machinery/door/firedoor,
@@ -23273,10 +23283,10 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/hallway/surface/section1)
 "eBM" = (
-/obj/machinery/autolathe,
 /obj/machinery/camera/network/mining{
 	dir = 4
 	},
+/obj/structure/table/rack/shelf,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
 	},
@@ -24128,6 +24138,12 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "eJU" = (
 /obj/structure/table/steel,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "eJZ" = (
@@ -32838,6 +32854,7 @@
 /area/liberty/rnd/xenoflora)
 "gvx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/rocinante_shuttle_area)
 "gvA" = (
@@ -33701,6 +33718,13 @@
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/board,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/crew_quarters/kitchen)
+"gEa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/rack/shelf,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
+/area/shuttle/rocinante_shuttle_area)
 "gEg" = (
 /obj/machinery/conveyor/northwest{
 	id = "QMLoad2"
@@ -36537,7 +36561,7 @@
 /area/liberty/maintenance/undergroundfloor2south)
 "hgj" = (
 /obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
+	name = "Black Bolt Logistics Prep";
 	req_access = list(78)
 	},
 /obj/machinery/door/firedoor,
@@ -37188,6 +37212,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/pros/prep)
 "hmD" = (
@@ -38769,7 +38794,14 @@
 /turf/simulated/mineral,
 /area/liberty/outside/forest)
 "hBY" = (
-/obj/structure/closet/secure_closet/personal/shipbreaker,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/rack/shelf,
+/obj/item/tank/emergency_oxygen/double,
+/obj/item/tank/emergency_oxygen/double,
+/obj/item/tank/emergency_oxygen/double,
+/obj/item/tank/emergency_oxygen/double,
+/obj/item/tank/emergency_oxygen/double,
+/obj/item/tank/emergency_oxygen/double,
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/liberty/pros/prep)
 "hBZ" = (
@@ -38831,12 +38863,12 @@
 /area/liberty/outside/forest)
 "hCM" = (
 /obj/structure/table/rack/shelf,
-/obj/item/clothing/suit/armor/bulletproof/ironhammer,
-/obj/item/clothing/suit/armor/bulletproof/ironhammer,
-/obj/item/clothing/suit/armor/bulletproof/ironhammer,
 /obj/item/clothing/head/helmet/faceshield/altyn/ironhammer,
 /obj/item/clothing/head/helmet/faceshield/altyn/ironhammer,
 /obj/item/clothing/head/helmet/faceshield/altyn/ironhammer,
+/obj/item/clothing/suit/armor/bulletproof/full/ironhammer,
+/obj/item/clothing/suit/armor/bulletproof/full/ironhammer,
+/obj/item/clothing/suit/armor/bulletproof/full/ironhammer,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/security/tactical)
 "hCQ" = (
@@ -44478,6 +44510,7 @@
 /obj/machinery/holoposter{
 	pixel_x = -32
 	},
+/obj/random/gun_shotgun/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "iJQ" = (
@@ -50568,6 +50601,7 @@
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/warningwhite/full,
 /obj/machinery/light,
+/obj/random/gun_parts/frames,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "jVL" = (
@@ -51665,6 +51699,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1central)
+"kfx" = (
+/obj/effect/floor_decal/corner_techfloor_grid/diagonal,
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/pros/prep)
 "kfB" = (
 /obj/structure/table/woodentable,
 /obj/random/junkfood/low_chance,
@@ -52240,7 +52282,6 @@
 /area/liberty/maintenance/maint_merc)
 "kme" = (
 /obj/structure/table/rack/shelf,
-/obj/random/gun_shotgun,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "kmh" = (
@@ -53128,8 +53169,9 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor1south)
 "kuC" = (
+/obj/machinery/autolathe,
 /turf/simulated/shuttle/floor/mining{
-	icon_state = "9,11"
+	icon_state = "8,23"
 	},
 /area/shuttle/rocinante_shuttle_area)
 "kuF" = (
@@ -54778,16 +54820,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
-	req_access = list(78)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/airlock/mining,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/pros/prep)
 "kMj" = (
@@ -56768,6 +56807,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
+/obj/random/gun_shotgun,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "lgQ" = (
@@ -59946,7 +59986,6 @@
 "lOH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
-/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "lOP" = (
@@ -63310,7 +63349,10 @@
 /area/shuttle/rocinante_shuttle_area)
 "mAx" = (
 /obj/machinery/light,
-/turf/simulated/shuttle/floor/mining,
+/obj/structure/table/rack/shelf,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
 /area/shuttle/rocinante_shuttle_area)
 "mAC" = (
 /obj/structure/catwalk,
@@ -63858,6 +63900,16 @@
 /obj/machinery/seed_extractor,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/security/prisoncells)
+"mHv" = (
+/obj/structure/closet/wall_mounted/emcloset/escape_pods{
+	dir = 8;
+	pixel_x = -32
+	},
+/obj/structure/closet/crate,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
+/area/shuttle/rocinante_shuttle_area)
 "mHx" = (
 /obj/machinery/vending/snack,
 /turf/simulated/floor/industrial/navy_large_slates,
@@ -64791,6 +64843,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/rocinante_shuttle_area)
 "mRj" = (
@@ -65307,6 +65360,7 @@
 "mWb" = (
 /obj/item/stool,
 /obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/pros/prep)
 "mWf" = (
@@ -68957,6 +69011,7 @@
 	dir = 1;
 	pixel_x = 16
 	},
+/obj/landmark/join/start/shipbreaker,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/pros/prep)
 "nGE" = (
@@ -71481,6 +71536,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/landmark/join/start/trapper,
 /turf/simulated/floor/carpet/sblucarpet,
 /area/liberty/pros/prep)
 "ogw" = (
@@ -72960,6 +73016,16 @@
 /obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/rnd/robotics)
+"ovm" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/curtain/open/bed{
+	name = "Privacy curtain";
+	opacity = 1;
+	icon_state = "closed"
+	},
+/turf/simulated/floor/plating/under,
+/area/liberty/pros/prep)
 "ovp" = (
 /obj/structure/table/rack/shelf,
 /obj/random/circuitboard/low_chance,
@@ -73231,7 +73297,6 @@
 /area/liberty/maintenance/undergroundfloor3west)
 "oxv" = (
 /obj/item/stool,
-/obj/landmark/join/start/trapper,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "oxB" = (
@@ -73434,7 +73499,7 @@
 "ozK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
+	name = "Black Bolt Logistics Prep";
 	req_access = list(78)
 	},
 /obj/machinery/air_stopper,
@@ -81976,7 +82041,7 @@
 "qgH" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
+	name = "Black Bolt Logistics Prep";
 	req_access = list(78)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -82591,11 +82656,19 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/eva_sec)
 "qkC" = (
-/obj/structure/table/steel,
-/turf/simulated/shuttle/floor/mining{
-	icon_state = "8,23"
+/obj/structure/mirror{
+	pixel_x = 28
 	},
-/area/shuttle/rocinante_shuttle_area)
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/obj/effect/floor_decal/corner_techfloor_grid/diagonal,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/pros/prep)
 "qkQ" = (
 /obj/structure/closet/crate/internals,
 /obj/effect/decal/cleanable/dirt,
@@ -83401,10 +83474,12 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "quM" = (
-/obj/structure/closet/secure_closet/personal/trapper,
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
+/obj/structure/closet,
+/obj/item/tank/oxygen,
+/obj/item/clothing/mask/breath,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/shuttle/rocinante_shuttle_area)
 "quN" = (
@@ -84888,10 +84963,6 @@
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/northcave)
 "qIR" = (
-/obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
-	req_access = list(78)
-	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -84901,6 +84972,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/mining,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "qIS" = (
@@ -90789,7 +90861,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/mining{
-	name = "Fontaine Prep";
+	name = "Black Bolt Logistics Prep";
 	req_access = list(78)
 	},
 /obj/structure/disposalpipe/segment,
@@ -92427,6 +92499,12 @@
 /obj/item/pen,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/undergroundfloor1north)
+"sgM" = (
+/obj/item/stool,
+/obj/effect/decal/cleanable/dirt,
+/obj/landmark/join/start/shipbreaker,
+/turf/simulated/floor/carpet/sblucarpet,
+/area/liberty/pros/prep)
 "sgN" = (
 /obj/structure/lattice,
 /obj/machinery/light,
@@ -95922,7 +96000,10 @@
 	dir = 8;
 	pixel_x = -32
 	},
-/turf/simulated/shuttle/floor/mining,
+/obj/structure/table/rack/shelf,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
 /area/shuttle/rocinante_shuttle_area)
 "sNJ" = (
 /obj/effect/decal/cleanable/rubble,
@@ -95940,6 +96021,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/stool,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/prep)
 "sNP" = (
@@ -96579,6 +96661,8 @@
 /obj/structure/table/onestar,
 /obj/item/clothing/accessory/stethoscope,
 /obj/item/storage/firstaid/regular,
+/obj/item/storage/pill_bottle/bloodregen,
+/obj/item/storage/pill_bottle/inaprovaline,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/shuttle/rocinante_shuttle_area)
 "sVz" = (
@@ -99823,7 +99907,7 @@
 /area/liberty/maintenance/undergroundfloor3north)
 "tDf" = (
 /obj/machinery/door/airlock/mining{
-	name = "Field Shepherd Quarters";
+	name = "Expeditionary Leader Quarters";
 	req_access = list(79)
 	},
 /obj/structure/disposalpipe/segment{
@@ -103485,7 +103569,6 @@
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/liberty/maintenance/oldpool)
 "unl" = (
-/obj/item/stool,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/fontaine,
 /turf/simulated/floor/tiled/steel/brown_platform,
@@ -107904,9 +107987,7 @@
 "vjS" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger,
-/turf/simulated/shuttle/floor/mining{
-	icon_state = "8,23"
-	},
+/turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "vjY" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -110767,6 +110848,13 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/crew_quarters/techshop)
+"vKh" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner_techfloor_grid/diagonal,
+/obj/item/oddity/ls/magazine,
+/obj/item/newspaper,
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/liberty/pros/prep)
 "vKk" = (
 /obj/item/tank/plasma,
 /obj/item/clothing/mask/breath/medical,
@@ -119489,10 +119577,11 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/crew_quarters/bar)
 "xsU" = (
-/obj/landmark/join/start/trapper,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/pros/prep)
+/obj/structure/closet/crate,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
+/area/shuttle/rocinante_shuttle_area)
 "xsX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
@@ -123961,6 +124050,7 @@
 /area/liberty/maintenance/maint_merc)
 "yjX" = (
 /obj/structure/closet/secure_closet/reinforced/field_shepherd,
+/obj/item/clothing/suit/space/void/riggedvoidsuit,
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/liberty/pros/foreman)
 "yko" = (
@@ -123993,7 +124083,10 @@
 	dir = 8;
 	pixel_x = -32
 	},
-/turf/simulated/shuttle/floor/mining,
+/obj/structure/closet/crate,
+/turf/simulated/shuttle/floor/mining{
+	icon_state = "8,23"
+	},
 /area/shuttle/rocinante_shuttle_area)
 "ykE" = (
 /obj/structure/closet/wall_mounted/firecloset{
@@ -229705,8 +229798,8 @@ veD
 ngd
 rgr
 mkt
-rnw
-rnw
+ovm
+ovm
 kMh
 cTn
 cTn
@@ -229721,7 +229814,7 @@ fZN
 mkt
 dDN
 txd
-mWb
+sgM
 hHQ
 cSP
 diE
@@ -230722,7 +230815,7 @@ cbw
 cWY
 mkt
 jdr
-xsU
+cAq
 fAD
 sNu
 bcu
@@ -230924,9 +231017,9 @@ iRG
 uaR
 mkt
 aYe
-xsU
+cAq
 hSd
-msb
+kme
 kme
 sra
 cAq
@@ -230936,8 +231029,8 @@ mkt
 mkt
 mkt
 mkt
-mkt
-mkt
+cKm
+kfx
 mkt
 dwp
 dwp
@@ -231126,10 +231219,10 @@ bHE
 uiZ
 rnw
 gGX
-xsU
+cAq
 hSd
 sra
-sra
+kme
 msb
 cAq
 cAq
@@ -231138,9 +231231,9 @@ wvp
 sNN
 eJU
 mkt
-uKZ
-uKZ
-dwp
+qkC
+vKh
+lmB
 dwp
 kde
 jAg
@@ -231340,9 +231433,9 @@ unl
 cNZ
 yaL
 mkt
-uKZ
-uKZ
-dwp
+mkt
+mkt
+lmB
 cOr
 byg
 rQC
@@ -233762,11 +233855,11 @@ cmd
 les
 cHK
 pDs
-sNI
-mUu
+mHv
+xsU
 ykz
 eBM
-smA
+gEa
 mUu
 sNI
 qdc
@@ -233965,11 +234058,11 @@ cIQ
 xND
 tkK
 cvN
-mUu
-hxU
-qkC
 jTG
-mUu
+hxU
+jTG
+jTG
+jTG
 kuC
 xcQ
 dIQ
@@ -234167,7 +234260,7 @@ xhU
 oVl
 deW
 fqH
-mUu
+jTG
 dQp
 vjS
 jTG
