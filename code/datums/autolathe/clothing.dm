@@ -29,15 +29,15 @@
 
 /datum/design/autolathe/clothing/formanhat
 	name = "Salvaged Helmet"
-	build_path = /obj/item/clothing/head/helmet/shepherd
+/obj/item/clothing/head/helmet/blackbolt/leader
 
 /datum/design/autolathe/clothing/formansuit
 	name = "Armored Rig"
 	build_path = /obj/item/clothing/suit/storage/vest/scav
 
 /datum/design/autolathe/clothing/scav_armor
-	name = "Fontaine Plate Carrier"
-	build_path = /obj/item/clothing/suit/storage/scavengerarmor/fontaine
+	name = "Black Bolt Coat"
+	build_path = /obj/item/clothing/suit/storage/scavengerarmor/blackbolt
 	materials = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10, MATERIAL_PLATINUM = 1) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_armor_void

@@ -179,23 +179,37 @@
 	name = "watchmen armor vest"
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "watch_basic"
-	has_alternative_armor_icon = FALSE
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 30, bullet = 35, energy = 30, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
-	name = "watchmen tactical unit armor"
+	name = "watchmen tactical unit armor"//equivalent to FLAK or so
 	desc = "An armored vest painted in Watchmen colors. This one has shoulderpads and kneepads included to protect all parts of the body."
 	icon_state = "watch_basic_full"
+	blood_overlay_type = "armor"
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 40, bullet = 45, energy = 45, bomb = 35, bio = 0, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	stiffness = LIGHT_STIFFNESS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
+	slowdown = 0.6 // Heavier since it now covers more of the body
+
 
 /obj/item/clothing/suit/armor/vest/ironhammer/detective
-	name = "watchmen criminal investigator vest"
+	name = "watchmen surplus vest"
 	desc = "An armored vest that protects against some damage. This one appears to be in Watchmen colors and uses lighweight fibers; allowing for heavier armor without compromising on added weight."
 	icon_state = "watch_detective"
 	armor_list = list(
-		melee = 45,
-		bullet = 45,
-		energy = 45,
+		melee = 35,
+		bullet = 35,
+		energy = 35,
 		bomb = 20,
 		bio = 0,
 		rad = 0
@@ -207,7 +221,7 @@
 	icon_state = "coatsecurity_long"
 	has_alternative_armor_icon = FALSE
 
-/obj/item/clothing/suit/armor/bulletproof/ironhammer
+/obj/item/clothing/suit/armor/bulletproof/full/ironhammer
 	name = "watchmen bulletproof suit"
 	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -221,6 +235,14 @@
 	desc = "A specialized armored plate carrier outfitted with light absorption and heat disperesion technology. This one has been done in Watchmen security colors."
 	icon_state = "watch_ablative"
 	item_state = "watch_ablative"
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 25, bullet = 25, energy = 60, bomb = 30, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
+	slowdown = 0.6 // Heavier since it now covers more of the body
 
 ////////////
 

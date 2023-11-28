@@ -1040,7 +1040,7 @@
 	ambience = list('sound/ambience/honorguard.ogg') // Under Sebs allowance, the soundtrack for the Custodians has been changed. This song is COPYRIGHT FREE and has been only slightly modified. Music by <a href="https://pixabay.com/users/dstechnician-26430546/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">DSTechnician</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">Pixabay</a>
 	sound_env = LARGE_ENCLOSED
 
-// /area/liberty/bonfire/stronghold 
+// /area/liberty/bonfire/stronghold
 //		name = "\improper Stronghold"
 //		icon_state = "hammerblue"
 //		ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
@@ -1782,18 +1782,18 @@ area/liberty/medical/medbaymeeting
 	icon_state = "server"
 
 
-//Fontaine
+//Fontaine//Black Bolt
 
 /area/liberty/pros/dorm
-	name = "\improper Fontaine Dorm"
+	name = "\improper Black Bolt Dorms"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prep
-	name = "\improper Fontaine Prep"
+	name = "\improper Black Bolt Prep"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/foreman
-	name = "\improper Field Shepherd Office"
+	name = "\improper Expeditionary Leader Office"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/shuttle
@@ -1806,7 +1806,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prostorage
-	name = "\improper Fontaine Storage"
+	name = "\improper Black Bolt Storage"
 	icon_state = "erisgreen"
 
 //Storage

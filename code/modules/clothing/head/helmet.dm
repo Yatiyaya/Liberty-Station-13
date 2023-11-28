@@ -938,8 +938,8 @@
 	name = "altyn helmet"
 	desc = "A titanium helmet of serbian origin. Still widely used despite being discontinued."
 	icon_state = "altyn"
-	armor_up = list(melee = 20, bullet = 15, energy = 15, bomb = 15, bio = 0, rad = 0)
-	armor_list = list(melee = 40, bullet = 45, energy = 20, bomb = 35, bio = 0, rad = 0)//was totally weird see a metal helmet without laser protection so it gets a bit
+	armor_up = list(melee = 40, bullet = 45, energy = 25, bomb = 35, bio = 0, rad = 0)// swapped the stats i wrote them wrong T_T
+	armor_list = list(melee = 35, bullet = 25, energy = 15, bomb = 15, bio = 0, rad = 0)//was totally weird see a metal helmet without laser protection so it gets a bit
 	siemens_coefficient = 1
 	up = TRUE
 
@@ -982,7 +982,7 @@
 	name = "maska helmet"
 	desc = "\"I do not know who I am, I don\'t know why I\'m here. All I know is that I must kill.\""
 	icon_state = "maska"
-	armor_list = list(melee = 55, bullet = 55, energy = 20, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers//got the stats changed because made no sense lmao
+	armor_list = list(melee = 55, bullet = 55, energy = 25, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers//got the stats changed because made no sense lmao//added 25 laser armor because is below a scrap helmet in laser
 
 
 /obj/item/clothing/head/helmet/faceshield/altyn/maska/toggle_style()
