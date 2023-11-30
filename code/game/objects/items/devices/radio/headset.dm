@@ -253,7 +253,7 @@
 	name = "Black Bolt radio headset"
 	desc = "A headset used by Black Bolt Scavengers. This has a small symbol denoting its built-in backup transmitter."
 	icon_state = "blackbolt_headset"
-	item_state = "headset"
+	item_state = "blackbolt_headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/headset_pro
 
@@ -261,7 +261,7 @@
 	name = "Expeditionary Leader radio headset"
 	desc = "A headset used by the Leader of Scavengers. This has a small symbol denoting its built-in backup transmitter."
 	icon_state = "blackbolt_bowman"
-	item_state = "headset"
+	item_state = "blackbolt_bowman"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/heads/foreman
 
