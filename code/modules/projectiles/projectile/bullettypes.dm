@@ -999,7 +999,7 @@
 	base_spread = 90
 	agony = 3
 	pellets = 6
-	range_step = 5
+	range_step = 1
 	spread_step = 10
 	knockback = 0 //We do not knockback do to issues with bullet douping
 	step_delay = 0.9

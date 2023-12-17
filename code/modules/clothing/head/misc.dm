@@ -445,7 +445,6 @@ obj/item/clothing/head/ribbon/red
 	min_cold_protection_temperature = T0C - 20
 
 // No more bulky ushanka, no need for this.//gets changed habibi, ushanka drip supremacy is back.
-/
 /obj/item/clothing/head/ushanka/attack_self(mob/user as mob)
 	if(src.icon_state == "ushankadown_old")
 		src.icon_state = "ushankaup_old"
