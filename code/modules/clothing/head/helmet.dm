@@ -297,7 +297,7 @@
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
 	body_parts_covered = HEAD|EYES|EARS
 
-/obj/item/clothing/head/helmet/marshal/LWushanka/verb/toggle_style()
+/obj/item/clothing/head/helmet/marshal/ushanka/verb/toggle_style()
 	var/list/options = list()
 	options["Ushanka"] = "LWushanka"
 	options["Ushanka Alt"] = "LWushanka_alt"
