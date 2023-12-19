@@ -2316,11 +2316,11 @@
 /area/liberty/security/sechall)
 "azq" = (
 /obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/shotgun/judge/sawn,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/random/gun_shotgun,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "azs" = (
@@ -12876,10 +12876,10 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/pros/shuttle)
 "czz" = (
-/obj/structure/sign/department/armory,
-/obj/structure/mirror,
-/turf/simulated/wall/iron,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/item/trash/liquidfood,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/cavenightmare)
 "czH" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -14352,7 +14352,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                                Oxide","waste_sensor"="Gas                                Mix                                Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -14755,6 +14755,11 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/liberty/hallway/side/f2section1)
+"cSx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/rubber_ammo/low_chance,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "cSy" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/simulated/floor/rock,
@@ -21017,6 +21022,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/asteroid/dirt/mud,
 /area/liberty/maintenance/undergroundfloor3north)
+"ecv" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/superior_animal/roach/golden/blattin,
+/turf/simulated/floor/tiled/steel,
+/area/liberty/engineering/workshop)
 "ecE" = (
 /obj/machinery/vending/hydroseeds{
 	shut_up = 1;
@@ -24879,7 +24889,6 @@
 /area/liberty/medical/cryo)
 "eRx" = (
 /obj/item/ammo_magazine/ammobox/light_rifle_257{
-	stored_ammo = 0;
 	initial_ammo = 0
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -34333,6 +34342,10 @@
 /obj/random/cloth/suit,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/maintenance/undergroundfloor1north)
+"gKT" = (
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
+/turf/simulated/floor/rock,
+/area/liberty/maintenance/cavenightmare)
 "gKU" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -39088,7 +39101,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                                Oxide","waste_sensor"="Gas                                Mix                                Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -39909,6 +39922,12 @@
 /obj/item/tool/knife/butch,
 /turf/simulated/floor/wood,
 /area/liberty/maintenance/undergroundfloor2north)
+"hOr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/handcuffs,
+/obj/random/rubber_ammo/low_chance,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "hOu" = (
 /obj/effect/window_lwall_spawn/smartspawn,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -40390,6 +40409,12 @@
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/blucarpet,
+/area/liberty/maintenance/undergroundfloor2north)
+"hSQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/rubber_ammo/low_chance,
+/turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "hSR" = (
 /obj/structure/flora/tree/snow/four,
@@ -51263,16 +51288,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/liberty/maintenance/undergroundfloor2north)
 "kbH" = (
-/obj/item/ammo_magazine/ammobox/light_rifle_257{
-	stored_ammo = 0;
-	initial_ammo = 0
-	},
 /obj/machinery/light/small{
 	dir = 8;
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/remains/ribcage,
+/obj/item/ammo_magazine/ammobox/light_rifle_257{
+	initial_ammo = 0
+	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "kbL" = (
@@ -54004,6 +54028,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/rubber_ammo/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "kEp" = (
@@ -55959,7 +55984,6 @@
 /obj/item/trash/liquidfood,
 /obj/item/remains/human,
 /obj/item/clothing/shoes/jackboots/german,
-/mob/living/simple_animal/hostile/hell_pig/wendigo,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
 "kXk" = (
@@ -90702,6 +90726,7 @@
 /area/liberty/crew_quarters/sleep/cryo2)
 "rPI" = (
 /obj/item/clothing/suit/armor/vest/handmadewooden,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
 "rPL" = (
@@ -100504,9 +100529,8 @@
 /turf/simulated/floor/plating,
 /area/liberty/maintenance/substation/medical)
 "tIL" = (
-/obj/item/device/lighting/glowstick/flare/torch,
-/mob/living/simple_animal/hostile/hell_pig/wendigo,
-/turf/simulated/floor/rock,
+/mob/living/simple_animal/hostile/hell_pig/slepnir,
+/turf/simulated/floor/beach/water/jungledeep,
 /area/liberty/maintenance/cavenightmare)
 "tIO" = (
 /obj/machinery/door/airlock/multi_tile/metal/mait,
@@ -102280,6 +102304,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/medical/reception)
+"ubu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/rubber_ammo/low_chance,
+/turf/simulated/floor/tiled/dark,
+/area/liberty/maintenance/undergroundfloor2north)
 "uby" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
@@ -131922,7 +131953,7 @@ qTN
 umf
 bOV
 szL
-bOV
+umf
 wsV
 vmY
 nSo
@@ -149052,7 +149083,7 @@ uKZ
 uKZ
 lzo
 hKA
-dLX
+tIL
 iqt
 rYr
 xEX
@@ -150059,8 +150090,8 @@ xEX
 xEX
 xEX
 lzo
-rdE
 xEX
+gKT
 vyY
 yiZ
 dXo
@@ -150273,7 +150304,7 @@ gXH
 pIY
 tMA
 hzG
-tIL
+kyk
 eCt
 xEX
 owX
@@ -150675,7 +150706,7 @@ fDC
 tMA
 cUo
 tMA
-aSp
+czz
 nLC
 ruS
 lzo
@@ -151066,7 +151097,7 @@ lzo
 dLX
 lzo
 lzo
-xEX
+gKT
 xEX
 lzo
 xEX
@@ -186901,7 +186932,7 @@ gyo
 emu
 vXj
 pgy
-iqZ
+ecv
 tFx
 ylh
 iqZ
@@ -199348,7 +199379,7 @@ nFD
 eIB
 kEn
 pap
-pap
+cSx
 uNZ
 kKW
 aVK
@@ -199549,7 +199580,7 @@ nLc
 nLc
 eIB
 qrQ
-wkK
+hSQ
 pap
 wwz
 eKc
@@ -199749,7 +199780,7 @@ sOf
 cOJ
 nLc
 nLc
-czz
+nSh
 tKB
 wkK
 flZ
@@ -200156,7 +200187,7 @@ nLc
 wwz
 azq
 qQU
-dVy
+ubu
 gOA
 wwz
 vmR
@@ -200357,7 +200388,7 @@ sOf
 nLc
 wwz
 mZc
-gfv
+hOr
 kKK
 dUQ
 wwz
