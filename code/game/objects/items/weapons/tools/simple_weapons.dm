@@ -432,6 +432,7 @@
 	desc = "Hack and slash!"
 	icon_state = "msword"
 	item_state = "msword"
+	force = WEAPON_FORCE_PAINFUL//nerfs it a bit because it was better than a katana?
 	slot_flags = SLOT_BELT|SLOT_BACK
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 2) // 2 rods, 5 plasteel
 	armor_penetration = ARMOR_PEN_MODERATE

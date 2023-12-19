@@ -492,15 +492,15 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Eagle Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by the Terran Federation."
+	desc = "An antique \"Iron Eagle Security\" ablative vest with plates designed to absorb Energy Proyectiles, this armor wasn't Designed to protect the troopers from the ganger's or the local fauna, either the cold climates you sure you want to use this? Produced by the Terran Federation."
 	icon_state = "northtech_new"
 	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
 	armor_list = list(
-		melee = 15,
-		bullet = 15,
+		melee = 20,
+		bullet = 20,
 		energy = 50,
-		bomb = 0,
+		bomb = 20,
 		bio = 0,
 		rad = 0
 	)

@@ -84,9 +84,9 @@
 	fire_sound = 'sound/weapons/guns/fire/GLfire.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3, TECH_BIO = 8, TECH_ILLEGAL = 1)
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
-	matter_type = MATERIAL_WOOD
+	matter_type = MATERIAL_COMPRESSED_MATTER//this way it might be used more often
 
 	stored_matter = 0
 	projectile_cost = 1
 	projectile_type = /obj/item/arrow/reclaiming
-	serial_type = "AG"
+	serial_type = "Terra"
