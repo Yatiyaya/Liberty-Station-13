@@ -446,7 +446,7 @@
 	desc = "This thing is too big to be called a sword. \
 			Too big, too thick, too heavy, and too rough, \
 			it is more like a large hunk of plasteel. \nA \
-			Shepherd's weapon of choice when bashing is not enough; \
+			Leader's weapon of choice when bashing is not enough; \
 			you have to cleave through the hordes to survive, and keep struggling."
 	icon_state = "renderslayer"
 	item_state = "renderslayer"
